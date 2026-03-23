@@ -1,0 +1,552 @@
+{
+  "PM-1.1": {
+    "id": "PM-1.1",
+    "name": "Ruta Macrotemática",
+    "phase": 1,
+    "prompt_template": "pm-1.1.md",
+    "dependencies": [],
+    "is_per_unit": false,
+    "checkpoint": null,
+    "max_output_tokens": 4096,
+    "archetypes": null
+  },
+  "PM-1.2": {
+    "id": "PM-1.2",
+    "name": "Scope & Sequence + Curación",
+    "phase": 1,
+    "prompt_template": "pm-1.2.md",
+    "dependencies": ["PM-1.1"],
+    "is_per_unit": true,
+    "checkpoint": "G1",
+    "max_output_tokens": 4096,
+    "archetypes": null,
+    "inputs": {
+      "required": {
+        "program_config": "ProgramConfig",
+        "unit_spec": "UnitSpec",
+        "universe": "NarrativeUniverse"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Guide Design DNA", "Content Core", "Key Vocabulary", "Integrative Task", "Evaluation Matrix"]
+      },
+      "gfpi_section": {
+        "tag": "1-IDENTIFICACION,2-PRESENTACION,5-GLOSARIO,6-REFERENTES",
+        "content_type": "scope_and_sequence"
+      }
+    }
+  },
+  "PM-2.1": {
+    "id": "PM-2.1",
+    "name": "The Spark — Reflexión Inicial",
+    "phase": 2,
+    "conjunto": "apertura",
+    "prompt_template": "pm-2.1.md",
+    "dependencies": ["PM-1.2"],
+    "is_per_unit": true,
+    "checkpoint": "G2",
+    "max_output_tokens": 6000,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "stories": "list[Story]",
+        "grammar_targets": "list[str]",
+        "key_vocabulary": "list[VocabTerm]",
+        "universe": "NarrativeUniverse"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Survival Words", "The Question", "Explore", "Engage", "Discover", "Bridge to Unit"]
+      },
+      "gfpi_section": {
+        "tag": "3.1-REFLEXION",
+        "content_type": "actividad_reflexion"
+      }
+    }
+  },
+  "PM-2.2": {
+    "id": "PM-2.2",
+    "name": "Gap Analysis — Contextualización",
+    "phase": 2,
+    "conjunto": "apertura",
+    "prompt_template": "pm-2.2.md",
+    "dependencies": ["PM-1.2"],
+    "is_per_unit": true,
+    "checkpoint": "G2",
+    "max_output_tokens": 6000,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "stories": "list[Story]",
+        "grammar_targets": "list[str]",
+        "key_vocabulary": "list[VocabTerm]"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Survival Words", "Self-Assessment", "Diagnostic", "Group Activity", "Learning Contract"]
+      },
+      "gfpi_section": {
+        "tag": "3.2-CONTEXTUALIZACION",
+        "content_type": "actividad_diagnostico"
+      }
+    }
+  },
+  "PM-2.3": {
+    "id": "PM-2.3",
+    "name": "Reading — The Master Anchor",
+    "phase": 2,
+    "conjunto": "A",
+    "prompt_template": "pm-2.3.md",
+    "dependencies": ["PM-1.2"],
+    "is_per_unit": true,
+    "checkpoint": "G2",
+    "max_output_tokens": 6000,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "stories": "list[Story]",
+        "grammar_targets": "list[str]",
+        "key_vocabulary": "list[VocabTerm]"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Pre-Reading", "The Anchor Text", "While-Reading Tasks", "Post-Reading Activities", "Answer Key"]
+      },
+      "gfpi_section": {
+        "tag": "3.3-APROPIACION-READING",
+        "content_type": "lectura"
+      }
+    }
+  },
+  "PM-2.4": {
+    "id": "PM-2.4",
+    "name": "Writing — Task-Based Production",
+    "phase": 2,
+    "conjunto": "A",
+    "prompt_template": "pm-2.4.md",
+    "dependencies": ["PM-2.3"],
+    "is_per_unit": true,
+    "checkpoint": "G2",
+    "max_output_tokens": 6000,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "stories": "list[Story]",
+        "grammar_targets": "list[str]",
+        "key_vocabulary": "list[VocabTerm]",
+        "reading_output": "str"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Grammar Formula", "Controlled Practice", "Writing Task", "Self-Assessment", "Answer Key"]
+      },
+      "gfpi_section": {
+        "tag": "3.3-APROPIACION-WRITING",
+        "content_type": "escritura"
+      }
+    }
+  },
+  "PM-2.5": {
+    "id": "PM-2.5",
+    "name": "Literacy & Vocabulary Skills",
+    "phase": 2,
+    "conjunto": "A",
+    "prompt_template": "pm-2.5.md",
+    "dependencies": ["PM-1.2"],
+    "is_per_unit": true,
+    "checkpoint": "G2",
+    "max_output_tokens": 6000,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "key_vocabulary": "list[VocabTerm]",
+        "grammar_targets": "list[str]"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Key Vocabulary Master List", "Match & Categorize", "Card Game", "Sentence Building", "Vocabulary Self-Check"]
+      },
+      "gfpi_section": {
+        "tag": "3.3-APROPIACION-VOCABULARY",
+        "content_type": "vocabulario"
+      }
+    }
+  },
+  "PM-2.6": {
+    "id": "PM-2.6",
+    "name": "Listening — The Auditory Anchor",
+    "phase": 2,
+    "conjunto": "B",
+    "prompt_template": "pm-2.6.md",
+    "dependencies": ["PM-1.2"],
+    "is_per_unit": true,
+    "checkpoint": "G2",
+    "max_output_tokens": 6000,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "stories": "list[Story]",
+        "grammar_targets": "list[str]",
+        "key_vocabulary": "list[VocabTerm]"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Pre-Listening", "Listening Phases", "Post-Listening", "Audio Script (Teacher Reference)", "Answer Key"]
+      },
+      "gfpi_section": {
+        "tag": "3.3-APROPIACION-LISTENING",
+        "content_type": "escucha"
+      }
+    }
+  },
+  "PM-2.7": {
+    "id": "PM-2.7",
+    "name": "Pronunciation & Speaking Skills",
+    "phase": 2,
+    "conjunto": "B",
+    "prompt_template": "pm-2.7.md",
+    "dependencies": ["PM-2.6"],
+    "is_per_unit": true,
+    "checkpoint": "G2",
+    "max_output_tokens": 6000,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "key_vocabulary": "list[VocabTerm]",
+        "grammar_targets": "list[str]"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Warm-Up Sounds", "Chunking", "Shadowing Drills", "Pair Practice", "Self-Assessment"]
+      },
+      "gfpi_section": {
+        "tag": "3.3-APROPIACION-PRONUNCIATION",
+        "content_type": "pronunciacion"
+      }
+    }
+  },
+  "PM-2.8": {
+    "id": "PM-2.8",
+    "name": "Speaking Production & Simulation",
+    "phase": 2,
+    "conjunto": "B",
+    "prompt_template": "pm-2.8.md",
+    "dependencies": ["PM-2.7"],
+    "is_per_unit": true,
+    "checkpoint": "G2",
+    "max_output_tokens": 6000,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "stories": "list[Story]",
+        "grammar_targets": "list[str]",
+        "key_vocabulary": "list[VocabTerm]",
+        "all_phase2_outputs": "dict[str,str]"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Scenario", "Role Cards", "Simulation Rounds", "Scoring Sheet", "Multimedia Recording"]
+      },
+      "gfpi_section": {
+        "tag": "3.4-TRANSFERENCIA-SPEAKING",
+        "content_type": "habla"
+      }
+    }
+  },
+  "PM-2.9": {
+    "id": "PM-2.9",
+    "name": "Language Functions — Communicative Competence",
+    "phase": 2,
+    "conjunto": "C",
+    "prompt_template": "pm-2.9.md",
+    "dependencies": ["PM-2.1", "PM-2.2", "PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.7", "PM-2.8"],
+    "is_per_unit": true,
+    "is_transversal": true,
+    "checkpoint": "G3",
+    "max_output_tokens": 3000,
+    "archetypes": null,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "key_vocabulary": "list[VocabTerm]",
+        "grammar_targets": "list[str]",
+        "functions": "list[str]",
+        "all_phase2_outputs": "dict[str,str]"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Functions with Structures", "Chunk Bank", "Injection Schedule", "Assessment Integration"]
+      },
+      "gfpi_section": {
+        "tag": null,
+        "content_type": "transversal"
+      }
+    }
+  },
+  "PM-2.10": {
+    "id": "PM-2.10",
+    "name": "Grammar — Structure Use",
+    "phase": 2,
+    "conjunto": "C",
+    "prompt_template": "pm-2.10.md",
+    "dependencies": ["PM-1.2"],
+    "is_per_unit": true,
+    "checkpoint": "G2",
+    "max_output_tokens": 6000,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "grammar_targets": "list[str]",
+        "key_vocabulary": "list[VocabTerm]"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Discovery", "Controlled Practice", "Communicative Activity", "Error Analysis", "Answer Key"]
+      },
+      "gfpi_section": {
+        "tag": "3.3-APROPIACION-GRAMMAR",
+        "content_type": "gramatica"
+      }
+    }
+  },
+  "PM-3.1": {
+    "id": "PM-3.1",
+    "name": "Playbook Outline — Session Map",
+    "phase": 3,
+    "prompt_template": "pm-3.1.md",
+    "dependencies": ["PM-2.1", "PM-2.2", "PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.7", "PM-2.8", "PM-2.9", "PM-2.10"],
+    "is_per_unit": false,
+    "checkpoint": null,
+    "max_output_tokens": 8000,
+    "inputs": {
+      "required": {
+        "all_unit_specs": "list[UnitSpec]",
+        "all_pm2_outputs": "dict[str,PMOutput]"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Overview Table", "Session Maps", "Skills Progression", "Autonomous Work Map", "Materials List"]
+      },
+      "gfpi_section": {
+        "tag": null,
+        "content_type": "playbook"
+      }
+    }
+  },
+  "PM-3.2": {
+    "id": "PM-3.2",
+    "name": "Playbook Build-Out",
+    "phase": 3,
+    "prompt_template": "pm-3.2.md",
+    "dependencies": ["PM-3.1"],
+    "is_per_unit": false,
+    "checkpoint": null,
+    "max_output_tokens": 8000,
+    "inputs": {
+      "required": {
+        "playbook_outline": "str",
+        "all_pm2_outputs": "dict[str,PMOutput]"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Materials Checklist", "Board Plan", "Minute Timeline", "SET-UP", "WHILE", "WRAP-UP", "Answer Key", "Differentiation"]
+      },
+      "gfpi_section": {
+        "tag": null,
+        "content_type": "build_out"
+      }
+    }
+  },
+  "PM-3.3": {
+    "id": "PM-3.3",
+    "name": "Canva Deck — Visual Support",
+    "phase": 3,
+    "prompt_template": "pm-3.3.md",
+    "dependencies": ["PM-3.1"],
+    "is_per_unit": false,
+    "checkpoint": null,
+    "max_output_tokens": 4096,
+    "inputs": {
+      "required": {
+        "playbook_outline": "str",
+        "all_pm2_outputs": "dict[str,PMOutput]"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Slide Specs", "Design Rules", "Image Recommendations"]
+      },
+      "gfpi_section": {
+        "tag": null,
+        "content_type": "canva_spec"
+      }
+    }
+  },
+  "PM-3.4": {
+    "id": "PM-3.4",
+    "name": "Workbook — Autonomous Work",
+    "phase": 3,
+    "prompt_template": "pm-3.4.md",
+    "dependencies": ["PM-3.1"],
+    "is_per_unit": false,
+    "checkpoint": null,
+    "max_output_tokens": 8000,
+    "inputs": {
+      "required": {
+        "playbook_outline": "str",
+        "all_pm2_outputs": "dict[str,PMOutput]",
+        "key_vocabulary": "list[VocabTerm]",
+        "grammar_targets": "list[str]"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Chapter Structure", "REINFORCE", "EXTEND", "PREPARE", "Answer Key"]
+      },
+      "gfpi_section": {
+        "tag": null,
+        "content_type": "workbook"
+      }
+    }
+  },
+  "PM-3.5": {
+    "id": "PM-3.5",
+    "name": "Final Mission — Integrative Task",
+    "phase": 3,
+    "prompt_template": "pm-3.5.md",
+    "dependencies": ["PM-2.1", "PM-2.2", "PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.7", "PM-2.8", "PM-2.9", "PM-2.10"],
+    "is_per_unit": true,
+    "checkpoint": "G4",
+    "max_output_tokens": 4096,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "all_phase2_outputs": "dict[str,str]",
+        "grammar_targets": "list[str]",
+        "key_vocabulary": "list[VocabTerm]",
+        "universe": "NarrativeUniverse"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Mission Brief", "Observation Checklist", "Product Rubric"]
+      },
+      "gfpi_section": {
+        "tag": "3.4-TRANSFERENCIA-MISSION",
+        "content_type": "mision_final"
+      }
+    }
+  },
+  "PM-3.6": {
+    "id": "PM-3.6",
+    "name": "GFPI-F-135 Integrator",
+    "phase": 3,
+    "prompt_template": "pm-3.6.md",
+    "dependencies": ["PM-1.2", "PM-2.1", "PM-2.2", "PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.7", "PM-2.8", "PM-2.9", "PM-2.10", "PM-3.5", "PM-4.1", "PM-4.2"],
+    "is_per_unit": true,
+    "checkpoint": "G5",
+    "max_output_tokens": 8000,
+    "inputs": {
+      "required": {
+        "all_gfpi_sections": "dict[str,str]",
+        "program_config": "ProgramConfig",
+        "unit_spec": "UnitSpec"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["GFPI-F-135 Complete", "Coherence Report"]
+      },
+      "gfpi_section": {
+        "tag": "FULL",
+        "content_type": "gfpi_complete"
+      }
+    }
+  },
+  "PM-4.1": {
+    "id": "PM-4.1",
+    "name": "Evaluación Formativa",
+    "phase": 4,
+    "prompt_template": "pm-4.1.md",
+    "dependencies": ["PM-2.8", "PM-3.5"],
+    "is_per_unit": true,
+    "checkpoint": null,
+    "max_output_tokens": 6000,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "speaking_output": "str",
+        "final_mission": "str"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Observation Checklist", "Product Rubric", "Feedback Loop"]
+      },
+      "gfpi_section": {
+        "tag": "4-EVIDENCIAS",
+        "content_type": "evaluacion"
+      }
+    }
+  },
+  "PM-4.2": {
+    "id": "PM-4.2",
+    "name": "Cuestionario Técnico — Evidencia de Conocimiento",
+    "phase": 4,
+    "prompt_template": "pm-4.2.md",
+    "dependencies": ["PM-2.3", "PM-2.6", "PM-2.10"],
+    "is_per_unit": true,
+    "checkpoint": null,
+    "max_output_tokens": 6000,
+    "inputs": {
+      "required": {
+        "unit_spec": "UnitSpec",
+        "grammar_targets": "list[str]",
+        "key_vocabulary": "list[VocabTerm]",
+        "reading_output": "str",
+        "listening_output": "str"
+      }
+    },
+    "outputs": {
+      "worksheet": {
+        "format": "markdown",
+        "sections": ["Reading Comprehension", "Writing Task", "Listening Comprehension", "Vocabulary HOTS", "Grammar HOTS", "Answer Key"]
+      },
+      "gfpi_section": {
+        "tag": "4-EVIDENCIAS",
+        "content_type": "cuestionario"
+      }
+    }
+  }
+}

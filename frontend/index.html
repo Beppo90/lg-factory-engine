@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LG Factory Engine</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #242836;
+    --border: #2e3348;
+    --text: #e1e4ed;
+    --text-dim: #8b90a5;
+    --accent: #6c8cff;
+    --accent-dim: #4a62b3;
+    --green: #4ade80;
+    --yellow: #fbbf24;
+    --red: #f87171;
+    --orange: #fb923c;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', monospace;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .container { max-width: 960px; margin: 0 auto; padding: 24px 16px; }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+  }
+  header h1 { font-size: 18px; font-weight: 600; }
+  header h1 span { color: var(--accent); }
+  .health-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--green);
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  .section { margin-bottom: 32px; }
+  .section-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-dim);
+    margin-bottom: 12px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 8px;
+  }
+
+  /* Programs */
+  .program-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .program-info { flex: 1; }
+  .program-name { font-weight: 600; font-size: 14px; }
+  .program-meta { font-size: 12px; color: var(--text-dim); }
+
+  /* Buttons */
+  .btn {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .btn-primary {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .btn-primary:hover { background: var(--accent-dim); }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  /* Form controls */
+  select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 12px;
+  }
+
+  /* Run card */
+  .run-card { position: relative; }
+  .run-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .run-id {
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .status-badge {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .status-running { background: rgba(108,140,255,0.15); color: var(--accent); }
+  .status-complete { background: rgba(74,222,128,0.15); color: var(--green); }
+  .status-error { background: rgba(248,113,113,0.15); color: var(--red); }
+  .status-validating { background: rgba(251,191,36,0.15); color: var(--yellow); }
+  .status-exporting { background: rgba(251,146,60,0.15); color: var(--orange); }
+
+  .run-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .stat { font-size: 12px; }
+  .stat-label { color: var(--text-dim); }
+  .stat-value { font-weight: 600; }
+
+  .progress-bar {
+    height: 4px;
+    background: var(--surface2);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: width 0.5s;
+  }
+
+  .pm-indicator {
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+
+  .error-log {
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--red);
+    background: rgba(248,113,113,0.08);
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  .files-section { margin-top: 12px; }
+  .file-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 4px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .file-row:last-child { border-bottom: none; }
+  .file-name { color: var(--text); }
+  .file-size { color: var(--text-dim); }
+  .file-download {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 11px;
+  }
+  .file-download:hover { text-decoration: underline; }
+
+  /* Upload form */
+  .upload-area {
+    border: 2px dashed var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 13px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .upload-area:hover { border-color: var(--accent); }
+  .upload-area input[type="file"] { display: none; }
+
+  .hidden { display: none; }
+  .empty-state {
+    text-align: center;
+    color: var(--text-dim);
+    padding: 32px;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1><span>LG</span> Factory Engine</h1>
+    <div>
+      <span class="health-dot" id="healthDot"></span>
+      <span style="font-size:12px;color:var(--text-dim)" id="healthText">checking...</span>
+    </div>
+  </header>
+
+  <!-- New Run -->
+  <div class="section">
+    <div class="section-title">Start New Run</div>
+    <div class="card">
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+        <select id="programSelect"><option value="">Loading programs...</option></select>
+        <select id="providerSelect">
+          <option value="anthropic">Anthropic (Claude)</option>
+          <option value="google">Google (Gemini)</option>
+        </select>
+        <select id="profileSelect">
+          <option value="">Profile (default: manual)</option>
+          <option value="balanced">Balanced</option>
+          <option value="production">Production</option>
+          <option value="engagement">Engagement</option>
+          <option value="manual">Manual</option>
+        </select>
+        <label style="font-size:12px;display:flex;align-items:center;gap:4px">
+          <input type="checkbox" id="dryRunCheck"> Dry run
+        </label>
+        <button class="btn btn-primary" id="startBtn" onclick="startRun()">Start Pipeline</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Active Run -->
+  <div class="section hidden" id="activeRunSection">
+    <div class="section-title">Active Run</div>
+    <div class="card run-card" id="activeRunCard"></div>
+  </div>
+
+  <!-- Upload Program -->
+  <div class="section">
+    <div class="section-title">Upload Program</div>
+    <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()">
+      Drop a program JSON file here or click to browse
+      <input type="file" id="fileInput" accept=".json" onchange="uploadProgram(event)">
+    </div>
+  </div>
+
+  <!-- Recent Runs -->
+  <div class="section">
+    <div class="section-title">Recent Runs</div>
+    <div id="runsList">
+      <div class="empty-state">No runs yet</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = window.location.origin + '/api';
+let pollTimer = null;
+let activeRunId = null;
+
+// ─── Health Check ───────────────────────────────────────────────
+async function checkHealth() {
+  try {
+    const r = await fetch(`${API}/health`);
+    if (r.ok) {
+      document.getElementById('healthDot').style.background = 'var(--green)';
+      document.getElementById('healthText').textContent = 'connected';
+    }
+  } catch {
+    document.getElementById('healthDot').style.background = 'var(--red)';
+    document.getElementById('healthText').textContent = 'offline';
+  }
+}
+
+// ─── Load Programs ──────────────────────────────────────────────
+async function loadPrograms() {
+  try {
+    const r = await fetch(`${API}/programs`);
+    const programs = await r.json();
+    const sel = document.getElementById('programSelect');
+    sel.innerHTML = programs.length
+      ? programs.map(p => `<option value="${p.id}">${p.id} — ${p.name} (${p.cefr_level}, ${p.units} units)</option>`).join('')
+      : '<option value="">No programs available</option>';
+  } catch {
+    document.getElementById('programSelect').innerHTML = '<option value="">Failed to load programs</option>';
+  }
+}
+
+// ─── Start Run ──────────────────────────────────────────────────
+async function startRun() {
+  const programId = document.getElementById('programSelect').value;
+  if (!programId) return;
+
+  const btn = document.getElementById('startBtn');
+  btn.disabled = true;
+  btn.textContent = 'Starting...';
+
+  try {
+    const body = {
+      program_id: programId,
+      dry_run: document.getElementById('dryRunCheck').checked,
+      profile: document.getElementById('profileSelect').value || null,
+      provider: document.getElementById('providerSelect').value,
+    };
+    const r = await fetch(`${API}/runs`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(body),
+    });
+    const data = await r.json();
+    activeRunId = data.run_id;
+    startPolling(data.run_id);
+    loadRuns();
+  } catch (e) {
+    alert('Failed to start run: ' + e.message);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Start Pipeline';
+  }
+}
+
+// ─── Polling ────────────────────────────────────────────────────
+function startPolling(runId) {
+  activeRunId = runId;
+  document.getElementById('activeRunSection').classList.remove('hidden');
+  if (pollTimer) clearInterval(pollTimer);
+  pollRun(runId);
+  pollTimer = setInterval(() => pollRun(runId), 3000);
+}
+
+async function pollRun(runId) {
+  try {
+    const r = await fetch(`${API}/runs/${runId}`);
+    const data = await r.json();
+    renderActiveRun(data);
+
+    if (['complete', 'error'].includes(data.status)) {
+      clearInterval(pollTimer);
+      pollTimer = null;
+      loadRuns();
+    }
+  } catch {}
+}
+
+function renderActiveRun(data) {
+  const card = document.getElementById('activeRunCard');
+  const statusClass = `status-${data.status}`;
+  const progress = data.total_units > 0 ? (data.units_completed / data.total_units * 100) : 0;
+
+  let errorsHtml = '';
+  if (data.errors && data.errors.length > 0) {
+    errorsHtml = `<div class="error-log">${data.errors.map(e => `${e.pm_id || '?'}: ${e.message}`).join('<br>')}</div>`;
+  }
+
+  card.innerHTML = `
+    <div class="run-header">
+      <span class="run-id">${data.run_id.slice(0, 8)}</span>
+      <span class="status-badge ${statusClass}">${data.status}</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:${progress}%"></div></div>
+    <div class="run-stats">
+      <div class="stat"><span class="stat-label">Program:</span> <span class="stat-value">${data.program_id}</span></div>
+      <div class="stat"><span class="stat-label">Units:</span> <span class="stat-value">${data.units_completed}/${data.total_units}</span></div>
+      <div class="stat"><span class="stat-label">PM:</span> <span class="stat-value">${data.current_pm || '—'}</span></div>
+      <div class="stat"><span class="stat-label">Tokens:</span> <span class="stat-value">${data.total_tokens.toLocaleString()}</span></div>
+      <div class="stat"><span class="stat-label">API calls:</span> <span class="stat-value">${data.total_api_calls}</span></div>
+      <div class="stat"><span class="stat-label">Cost:</span> <span class="stat-value">$${data.cost_estimate_usd.toFixed(4)}</span></div>
+    </div>
+    ${data.status === 'running' ? `<div class="pm-indicator">Executing ${data.current_pm || '...'} on unit ${data.current_unit || '...'}</div>` : ''}
+    ${errorsHtml}
+    ${data.status === 'complete' ? renderFiles(data.run_id) : ''}
+  `;
+}
+
+function renderFiles(runId) {
+  return `<div class="files-section">
+    <button class="btn" onclick="loadFiles('${runId}', this)">Show Output Files</button>
+    <div id="files-${runId}"></div>
+  </div>`;
+}
+
+async function loadFiles(runId, btn) {
+  btn.disabled = true;
+  btn.textContent = 'Loading...';
+  try {
+    const r = await fetch(`${API}/runs/${runId}/files`);
+    const data = await r.json();
+    const container = document.getElementById(`files-${runId}`);
+    if (data.files.length === 0) {
+      container.innerHTML = '<div style="font-size:12px;color:var(--text-dim);margin-top:8px">No files</div>';
+    } else {
+      container.innerHTML = `<div style="margin-top:8px">${data.files.map(f => `
+        <div class="file-row">
+          <span class="file-name">${f.name}</span>
+          <span class="file-size">${(f.size / 1024).toFixed(1)} KB</span>
+          <a class="file-download" href="${API}/runs/${runId}/files/${f.name}" download>Download</a>
+        </div>
+      `).join('')}</div>`;
+    }
+  } catch (e) {
+    btn.textContent = 'Error';
+  }
+}
+
+// ─── Recent Runs ────────────────────────────────────────────────
+async function loadRuns() {
+  try {
+    const r = await fetch(`${API}/runs`);
+    const runs = await r.json();
+    const container = document.getElementById('runsList');
+
+    if (runs.length === 0) {
+      container.innerHTML = '<div class="empty-state">No runs yet</div>';
+      return;
+    }
+
+    container.innerHTML = runs.slice(0, 10).map(run => {
+      const statusClass = `status-${run.status}`;
+      return `<div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <span class="run-id">${run.run_id.slice(0, 8)}</span>
+            <span style="font-size:12px;color:var(--text-dim);margin-left:8px">${run.program_id}</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="font-size:11px;color:var(--text-dim)">${run.created_at ? run.created_at.slice(0, 19) : ''}</span>
+            <span class="status-badge ${statusClass}">${run.status}</span>
+          </div>
+        </div>
+      </div>`;
+    }).join('');
+  } catch {}
+}
+
+// ─── Upload Program ─────────────────────────────────────────────
+async function uploadProgram(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const area = document.getElementById('uploadArea');
+  area.textContent = 'Uploading...';
+
+  try {
+    const text = await file.text();
+    const data = JSON.parse(text);
+
+    const r = await fetch(`${API}/programs`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data),
+    });
+
+    if (r.ok) {
+      area.textContent = `Uploaded: ${data.id}`;
+      loadPrograms();
+    } else {
+      const err = await r.json();
+      area.textContent = `Error: ${err.detail || 'Upload failed'}`;
+    }
+  } catch (e) {
+    area.textContent = `Error: ${e.message}`;
+  }
+
+  setTimeout(() => {
+    area.textContent = 'Drop a program JSON file here or click to browse';
+  }, 3000);
+}
+
+// ─── Drag and Drop ──────────────────────────────────────────────
+const uploadArea = document.getElementById('uploadArea');
+uploadArea.addEventListener('dragover', e => { e.preventDefault(); uploadArea.style.borderColor = 'var(--accent)'; });
+uploadArea.addEventListener('dragleave', () => { uploadArea.style.borderColor = 'var(--border)'; });
+uploadArea.addEventListener('drop', e => {
+  e.preventDefault();
+  uploadArea.style.borderColor = 'var(--border)';
+  const file = e.dataTransfer.files[0];
+  if (file && file.name.endsWith('.json')) {
+    const input = document.getElementById('fileInput');
+    const dt = new DataTransfer();
+    dt.items.add(file);
+    input.files = dt.files;
+    uploadProgram({target: input});
+  }
+});
+
+// ─── Init ───────────────────────────────────────────────────────
+checkHealth();
+loadPrograms();
+loadRuns();
+setInterval(checkHealth, 30000);
+</script>
+</body>
+</html>
