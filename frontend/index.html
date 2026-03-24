@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LG Factory Engine</title>
+<title>LG Factory — Learning Guide Generator</title>
 <style>
   :root {
     --bg: #0f1117;
@@ -34,7 +34,7 @@
     justify-content: space-between;
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
-    margin-bottom: 24px;
+    margin-bottom: 8px;
   }
   header h1 { font-size: 18px; font-weight: 600; }
   header h1 span { color: var(--accent); }
@@ -43,6 +43,14 @@
     background: var(--green);
     display: inline-block;
     margin-right: 8px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
   }
 
   .section { margin-bottom: 32px; }
@@ -61,17 +69,6 @@
     padding: 16px;
     margin-bottom: 8px;
   }
-
-  /* Programs */
-  .program-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-  }
-  .program-info { flex: 1; }
-  .program-name { font-weight: 600; font-size: 14px; }
-  .program-meta { font-size: 12px; color: var(--text-dim); }
 
   /* Buttons */
   .btn {
@@ -202,6 +199,25 @@
   .upload-area:hover { border-color: var(--accent); }
   .upload-area input[type="file"] { display: none; }
 
+  /* Programs list */
+  .program-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .program-info { flex: 1; }
+  .program-name { font-weight: 600; font-size: 14px; }
+  .program-meta { font-size: 12px; color: var(--text-dim); }
+  .program-tag {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: rgba(108,140,255,0.12);
+    color: var(--accent);
+    font-weight: 600;
+  }
+
   .hidden { display: none; }
   .empty-state {
     text-align: center;
@@ -209,63 +225,126 @@
     padding: 32px;
     font-size: 13px;
   }
+
+  /* Tabs */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0;
+  }
+  .tab {
+    padding: 8px 16px;
+    font-size: 13px;
+    font-family: inherit;
+    color: var(--text-dim);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
 </style>
 </head>
 <body>
 <div class="container">
   <header>
-    <h1><span>LG</span> Factory Engine</h1>
+    <h1><span>LG</span> Factory</h1>
     <div>
       <span class="health-dot" id="healthDot"></span>
       <span style="font-size:12px;color:var(--text-dim)" id="healthText">checking...</span>
     </div>
   </header>
+  <div class="subtitle">Automated Learning Guide Generator — Create ESP curriculum for any program, any domain.</div>
 
-  <!-- New Run -->
-  <div class="section">
-    <div class="section-title">Start New Run</div>
-    <div class="card">
-      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-        <select id="programSelect"><option value="">Loading programs...</option></select>
-        <select id="providerSelect">
-          <option value="anthropic">Anthropic (Claude)</option>
-          <option value="google">Google (Gemini)</option>
-        </select>
-        <select id="profileSelect">
-          <option value="">Profile (default: manual)</option>
-          <option value="balanced">Balanced</option>
-          <option value="production">Production</option>
-          <option value="engagement">Engagement</option>
-          <option value="manual">Manual</option>
-        </select>
-        <label style="font-size:12px;display:flex;align-items:center;gap:4px">
-          <input type="checkbox" id="dryRunCheck"> Dry run
-        </label>
-        <button class="btn btn-primary" id="startBtn" onclick="startRun()">Start Pipeline</button>
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('generate')">Generate</button>
+    <button class="tab" onclick="switchTab('programs')">Programs</button>
+    <button class="tab" onclick="switchTab('runs')">Runs</button>
+  </div>
+
+  <!-- TAB 1: Generate -->
+  <div class="tab-content active" id="tab-generate">
+
+    <!-- Program Selector -->
+    <div class="section">
+      <div class="section-title">Select Program</div>
+      <div class="card">
+        <div id="programCards">
+          <div class="empty-state">Loading programs...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Run Config (shown after program selection) -->
+    <div class="section hidden" id="runConfigSection">
+      <div class="section-title">Run Configuration</div>
+      <div class="card">
+        <div style="margin-bottom:12px">
+          <span style="font-size:14px;font-weight:600" id="selectedProgramName"></span>
+          <span style="font-size:12px;color:var(--text-dim);margin-left:8px" id="selectedProgramMeta"></span>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <select id="providerSelect">
+            <option value="anthropic">Anthropic (Claude)</option>
+            <option value="google">Google (Gemini)</option>
+          </select>
+          <select id="profileSelect">
+            <option value="">Profile (default: manual)</option>
+            <option value="balanced">Balanced</option>
+            <option value="production">Production</option>
+            <option value="engagement">Engagement</option>
+            <option value="manual">Manual</option>
+          </select>
+          <label style="font-size:12px;display:flex;align-items:center;gap:4px">
+            <input type="checkbox" id="dryRunCheck"> Dry run
+          </label>
+          <button class="btn btn-primary" id="startBtn" onclick="startRun()">Generate Learning Guides</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Run -->
+    <div class="section hidden" id="activeRunSection">
+      <div class="section-title">Active Run</div>
+      <div class="card run-card" id="activeRunCard"></div>
+    </div>
+  </div>
+
+  <!-- TAB 2: Programs -->
+  <div class="tab-content" id="tab-programs">
+    <div class="section">
+      <div class="section-title">Available Programs</div>
+      <div id="programsFullList">
+        <div class="empty-state">Loading...</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Add New Program</div>
+      <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()">
+        Drop a program JSON file here or click to browse
+        <input type="file" id="fileInput" accept=".json" onchange="uploadProgram(event)">
       </div>
     </div>
   </div>
 
-  <!-- Active Run -->
-  <div class="section hidden" id="activeRunSection">
-    <div class="section-title">Active Run</div>
-    <div class="card run-card" id="activeRunCard"></div>
-  </div>
-
-  <!-- Upload Program -->
-  <div class="section">
-    <div class="section-title">Upload Program</div>
-    <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()">
-      Drop a program JSON file here or click to browse
-      <input type="file" id="fileInput" accept=".json" onchange="uploadProgram(event)">
-    </div>
-  </div>
-
-  <!-- Recent Runs -->
-  <div class="section">
-    <div class="section-title">Recent Runs</div>
-    <div id="runsList">
-      <div class="empty-state">No runs yet</div>
+  <!-- TAB 3: Runs -->
+  <div class="tab-content" id="tab-runs">
+    <div class="section">
+      <div class="section-title">All Runs</div>
+      <div id="runsList">
+        <div class="empty-state">No runs yet</div>
+      </div>
     </div>
   </div>
 </div>
@@ -274,6 +353,19 @@
 const API = window.location.origin + '/api';
 let pollTimer = null;
 let activeRunId = null;
+let selectedProgramId = null;
+let programsCache = [];
+
+// ─── Tabs ────────────────────────────────────────────────────────
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.getElementById(`tab-${name}`).classList.add('active');
+  event.target.classList.add('active');
+
+  if (name === 'runs') loadRuns();
+  if (name === 'programs') renderFullProgramList();
+}
 
 // ─── Health Check ───────────────────────────────────────────────
 async function checkHealth() {
@@ -293,20 +385,71 @@ async function checkHealth() {
 async function loadPrograms() {
   try {
     const r = await fetch(`${API}/programs`);
-    const programs = await r.json();
-    const sel = document.getElementById('programSelect');
-    sel.innerHTML = programs.length
-      ? programs.map(p => `<option value="${p.id}">${p.id} — ${p.name} (${p.cefr_level}, ${p.units} units)</option>`).join('')
-      : '<option value="">No programs available</option>';
+    programsCache = await r.json();
+    renderProgramCards();
+    renderFullProgramList();
   } catch {
-    document.getElementById('programSelect').innerHTML = '<option value="">Failed to load programs</option>';
+    document.getElementById('programCards').innerHTML = '<div class="empty-state">Failed to load programs</div>';
   }
+}
+
+function renderProgramCards() {
+  const container = document.getElementById('programCards');
+  if (programsCache.length === 0) {
+    container.innerHTML = `<div class="empty-state">
+      No programs yet. Go to the <a href="#" onclick="switchTab('programs');return false" style="color:var(--accent)">Programs</a> tab to upload one.
+    </div>`;
+    return;
+  }
+
+  container.innerHTML = programsCache.map(p => `
+    <div class="card program-card" style="cursor:pointer;margin-bottom:4px;${selectedProgramId === p.id ? 'border-color:var(--accent)' : ''}"
+         onclick="selectProgram('${p.id}')">
+      <div class="program-info">
+        <div class="program-name">${p.name}</div>
+        <div class="program-meta">${p.domain} — ${p.units} units</div>
+      </div>
+      <div style="display:flex;gap:6px;align-items:center">
+        <span class="program-tag">${p.cefr_level}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderFullProgramList() {
+  const container = document.getElementById('programsFullList');
+  if (programsCache.length === 0) {
+    container.innerHTML = '<div class="empty-state">No programs uploaded yet. Use the form below to add one.</div>';
+    return;
+  }
+
+  container.innerHTML = programsCache.map(p => `
+    <div class="card program-card">
+      <div class="program-info">
+        <div class="program-name">${p.name}</div>
+        <div class="program-meta">${p.id} — ${p.domain} — ${p.units} units</div>
+      </div>
+      <div style="display:flex;gap:6px;align-items:center">
+        <span class="program-tag">${p.cefr_level}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function selectProgram(id) {
+  selectedProgramId = id;
+  const p = programsCache.find(x => x.id === id);
+  if (!p) return;
+
+  document.getElementById('selectedProgramName').textContent = p.name;
+  document.getElementById('selectedProgramMeta').textContent = `${p.domain} — ${p.cefr_level} — ${p.units} units`;
+  document.getElementById('runConfigSection').classList.remove('hidden');
+  renderProgramCards();
 }
 
 // ─── Start Run ──────────────────────────────────────────────────
 async function startRun() {
-  const programId = document.getElementById('programSelect').value;
-  if (!programId) return;
+  if (!selectedProgramId) return;
 
   const btn = document.getElementById('startBtn');
   btn.disabled = true;
@@ -314,7 +457,7 @@ async function startRun() {
 
   try {
     const body = {
-      program_id: programId,
+      program_id: selectedProgramId,
       dry_run: document.getElementById('dryRunCheck').checked,
       profile: document.getElementById('profileSelect').value || null,
       provider: document.getElementById('providerSelect').value,
@@ -332,7 +475,7 @@ async function startRun() {
     alert('Failed to start run: ' + e.message);
   } finally {
     btn.disabled = false;
-    btn.textContent = 'Start Pipeline';
+    btn.textContent = 'Generate Learning Guides';
   }
 }
 
@@ -383,7 +526,7 @@ function renderActiveRun(data) {
       <div class="stat"><span class="stat-label">API calls:</span> <span class="stat-value">${data.total_api_calls}</span></div>
       <div class="stat"><span class="stat-label">Cost:</span> <span class="stat-value">$${data.cost_estimate_usd.toFixed(4)}</span></div>
     </div>
-    ${data.status === 'running' ? `<div class="pm-indicator">Executing ${data.current_pm || '...'} on unit ${data.current_unit || '...'}</div>` : ''}
+    ${data.status === 'running' ? `<div class="pm-indicator">Generating ${data.current_pm || '...'} for unit ${data.current_unit || '...'}</div>` : ''}
     ${errorsHtml}
     ${data.status === 'complete' ? renderFiles(data.run_id) : ''}
   `;
@@ -427,20 +570,22 @@ async function loadRuns() {
     const container = document.getElementById('runsList');
 
     if (runs.length === 0) {
-      container.innerHTML = '<div class="empty-state">No runs yet</div>';
+      container.innerHTML = '<div class="empty-state">No runs yet. Go to Generate to create your first learning guides.</div>';
       return;
     }
 
-    container.innerHTML = runs.slice(0, 10).map(run => {
+    container.innerHTML = runs.slice(0, 20).map(run => {
       const statusClass = `status-${run.status}`;
-      return `<div class="card">
+      const p = programsCache.find(x => x.id === run.program_id);
+      const programLabel = p ? p.name : run.program_id;
+      return `<div class="card" style="cursor:pointer" onclick="${run.status === 'running' ? `startPolling('${run.run_id}');switchTab('generate')` : ''}">
         <div style="display:flex;justify-content:space-between;align-items:center">
           <div>
             <span class="run-id">${run.run_id.slice(0, 8)}</span>
-            <span style="font-size:12px;color:var(--text-dim);margin-left:8px">${run.program_id}</span>
+            <span style="font-size:12px;color:var(--text-dim);margin-left:8px">${programLabel}</span>
           </div>
           <div style="display:flex;align-items:center;gap:8px">
-            <span style="font-size:11px;color:var(--text-dim)">${run.created_at ? run.created_at.slice(0, 19) : ''}</span>
+            <span style="font-size:11px;color:var(--text-dim)">${run.created_at ? new Date(run.created_at).toLocaleString() : ''}</span>
             <span class="status-badge ${statusClass}">${run.status}</span>
           </div>
         </div>
@@ -468,7 +613,7 @@ async function uploadProgram(event) {
     });
 
     if (r.ok) {
-      area.textContent = `Uploaded: ${data.id}`;
+      area.textContent = `Uploaded: ${data.name || data.id}`;
       loadPrograms();
     } else {
       const err = await r.json();
