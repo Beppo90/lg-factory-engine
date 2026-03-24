@@ -1,6 +1,6 @@
 """
-LG Factory Engine — Data Models
-Based on SPEC-002: Data Models & PM Contracts.
+LG Factory Engine — Data Models v0.2
+Based on SPEC-002: Data Models & PM Contracts (FLOW-v2 update).
 
 All types are defined as dataclasses with validation.
 These are the contracts between components.
@@ -14,7 +14,7 @@ from typing import Optional
 from uuid import uuid4
 
 
-# ─── ENUMS (SPEC-002 §2) ────────────────────────────────────────
+# ─── ENUMS (SPEC-002 §2 — FLOW-v2) ─────────────────────────────
 
 class CEFRLevel(str, Enum):
     A1_1 = "A1.1"
@@ -65,6 +65,7 @@ class PMId(str, Enum):
 
 
 class GateId(str, Enum):
+    G0 = "G0"
     G1 = "G1"
     G2 = "G2"
     G3 = "G3"
@@ -77,6 +78,7 @@ class RunStatus(str, Enum):
     INITIALIZING = "initializing"
     RUNNING = "running"
     WAITING_HUMAN = "waiting_human"
+    WAITING_CONFIRMATION = "waiting_confirmation"
     VALIDATING = "validating"
     EXPORTING = "exporting"
     COMPLETE = "complete"
@@ -127,12 +129,23 @@ class DecisionType(str, Enum):
     APPROVAL = "approval"
     REJECTION = "rejection"
     OVERRIDE = "override"
+    MACROTHEME_SELECTION = "macrotheme_selection"
 
 
 class DecisionSource(str, Enum):
     HUMAN = "human"
     PROFILE_AUTO = "profile_auto"
     PROFILE_OVERRIDE = "profile_override"
+
+
+class ProductCategory(str, Enum):
+    ACHIEVERS_OUTPUT = "achievers_output"
+    INSTRUCTOR_PLAYBOOK = "instructor_playbook"
+
+
+class ProgramType(str, Enum):
+    TECNICA = "técnica"
+    TECNOLOGIA = "tecnología"
 
 
 # ─── CORE DATA MODELS (SPEC-002 §3-14) ──────────────────────────
@@ -220,6 +233,8 @@ class ProgramConfig:
     competencia: Optional[str] = None
     resultado_aprendizaje: Optional[str] = None
     universe: Optional[NarrativeUniverse] = None
+    program_type: Optional[ProgramType] = None
+    macrotheme: Optional[str] = None
     sessions_per_unit: int = 8
     hours_per_session: int = 3
     skip_pm_1_1: bool = False
@@ -283,6 +298,12 @@ class PMDefinition:
     is_per_unit: bool = True
     version: Optional[VersionInfo] = None
     max_output_tokens: int = 6000
+    # FLOW-v2 new fields
+    optional: bool = False
+    auto_generate: bool = False
+    product_category: Optional[ProductCategory] = None
+    auto_archetype_rule: Optional[str] = None
+    insert_locations: list[str] = field(default_factory=lambda: ["learning_guide"])
 
 
 @dataclass
@@ -375,10 +396,16 @@ class RunState:
     created_at: datetime
     program: Optional[ProgramConfig] = None
     updated_at: Optional[datetime] = None
+    current_moment: int = 1  # FLOW-v2: 1-6
     current_unit: Optional[int] = None
     current_pm: Optional[str] = None
     unit_states: dict[str, UnitState] = field(default_factory=dict)
+    completed_pms: dict[str, PMOutput] = field(default_factory=dict)  # global PMs
     decisions: list[HumanDecision] = field(default_factory=list)
+    # FLOW-v2: optional product tracking
+    confirmed_products: list[str] = field(default_factory=list)
+    asked_products: list[str] = field(default_factory=list)
+    rejected_products: list[str] = field(default_factory=list)
     validation: Optional[ValidationReport] = None
     metering: Optional[MeteringRecord] = None
     error_log: list[ErrorEntry] = field(default_factory=list)
@@ -392,6 +419,7 @@ class RunState:
             status=RunStatus.INITIALIZING,
             created_at=now,
             updated_at=now,
+            current_moment=1,
             metering=MeteringRecord(
                 run_id="",
                 user_id="default",
@@ -420,7 +448,8 @@ class LLMResponse:
 
 @dataclass
 class NextAction:
-    type: str  # "run_pm" | "checkpoint" | "validate" | "export" | "done"
+    type: str  # "run_pm" | "checkpoint" | "confirm_optional" | "validate" | "export" | "done"
     pm_id: Optional[str] = None
     unit: Optional[int] = None
     gate: Optional[GateId] = None
+    confirmation_id: Optional[str] = None  # FLOW-v2: "C-1" through "C-5"
