@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG Factory — Diagrama 6-Moment Flow</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #0f1117;
+            color: #e1e4e8;
+            min-height: 100vh;
+            padding: 32px;
+        }
+        h1 { text-align: center; font-size: 1.8rem; margin-bottom: 8px; color: #f0f6fc; }
+        .subtitle { text-align: center; color: #8b949e; font-size: 0.95rem; margin-bottom: 32px; }
+        .diagram-container {
+            background: #161b22; border: 1px solid #30363d; border-radius: 12px;
+            padding: 24px; margin-bottom: 32px; overflow-x: auto;
+        }
+        .diagram-container h2 { font-size: 1.1rem; color: #58a6ff; margin-bottom: 16px; border-bottom: 1px solid #30363d; padding-bottom: 8px; }
+        .mermaid { display: flex; justify-content: center; }
+        .legend { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-bottom: 32px; }
+        .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; }
+        .legend-color { width: 16px; height: 16px; border-radius: 4px; }
+        .table-section { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+        .table-section h3 { color: #58a6ff; margin-bottom: 12px; font-size: 1rem; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #21262d; }
+        th { color: #8b949e; font-weight: 600; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px; }
+        td { color: #c9d1d9; }
+        .pm-code { color: #f0883e; font-weight: 600; font-family: monospace; }
+        .moment-tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.7rem; font-weight: 600; }
+        .m1 { background: #1f3a5f; color: #58a6ff; }
+        .m2 { background: #1b4332; color: #3fb950; }
+        .m3 { background: #3b2f1a; color: #d29922; }
+        .m4 { background: #3b1f2a; color: #f85149; }
+        .m5 { background: #2a1a3e; color: #bc8cff; }
+        .m6 { background: #1a3329; color: #3fb950; }
+        .gate { color: #f0883e; font-weight: 600; }
+        .optional { color: #8b949e; font-style: italic; }
+        .auto { color: #3fb950; font-size: 0.75rem; }
+        .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+
+<h1>🏭 LG Factory Engine — Flujo de 6 Momentos</h1>
+<p class="subtitle">FLUJO v2 · Conversational Step-by-Step · 22 PMs · 52 Arquetipos · Gates G0-G6 + Confirmaciones C-1-C-5</p>
+
+<div class="legend">
+    <div class="legend-item"><div class="legend-color" style="background:#58a6ff;"></div> M1 — Topic Creation</div>
+    <div class="legend-item"><div class="legend-color" style="background:#3fb950;"></div> M2 — Setting the Universe</div>
+    <div class="legend-item"><div class="legend-color" style="background:#d29922;"></div> M3 — Building the LG</div>
+    <div class="legend-item"><div class="legend-color" style="background:#f85149;"></div> M4 — Achiever's Outputs</div>
+    <div class="legend-item"><div class="legend-color" style="background:#bc8cff;"></div> M5 — Instructor's Playbook</div>
+    <div class="legend-item"><div class="legend-color" style="background:#3fb950;"></div> M6 — Validation & Export</div>
+    <div class="legend-item"><div class="legend-color" style="background:#f0883e;"></div> Gates (obligatorios)</div>
+    <div class="legend-item"><div class="legend-color" style="background:#8b949e;"></div> Confirmaciones (opcionales)</div>
+</div>
+
+<!-- DIAGRAM 1: 6-MOMENT OVERVIEW -->
+<div class="diagram-container">
+    <h2>Vista General — Flujo de 6 Momentos</h2>
+    <pre class="mermaid">
+    graph TB
+        subgraph M1["<b>MOMENTO 1 — TOPIC CREATION</b>"]
+            PM11["PM-1.1<br/><i>Ruta Macrotemática</i><br/><small>Input: programa, ficha, tipo, temas</small><br/><small>Output: 6 o 10 macrotemas sugeridos</small>"]
+            G0{{"G0<br/><b>Selección Macrotema</b><br/><small>Obligatorio</small>"}}
+            PM11 --> G0
+        end
+
+        subgraph M2["<b>MOMENTO 2 — SETTING THE UNIVERSE</b>"]
+            PM12["PM-1.2<br/><i>Scope & Sequence + Curación</i><br/><small>Input: nombre, ficha, macrotema, CEFR</small><br/><small>Output: 3 fuentes auténticas</small>"]
+            G1{{"G1<br/><b>Selección Textos (4 Cs)</b><br/><small>Obligatorio</small>"}}
+            PM12 --> G1
+        end
+
+        subgraph M3["<b>MOMENTO 3 — BUILDING THE LG</b>"]
+            direction TB
+            PM21["PM-2.1<br/><b>The Spark</b><br/><i>5 arquetipos</i>"]
+            PM22["PM-2.2<br/><b>Gap Analysis</b><br/><i>5 arquetipos</i>"]
+            subgraph A["CONJUNTO A — ESCRITURA"]
+                direction LR
+                PM23["PM-2.3<br/><b>Reading</b><br/><i>6 arquetipos</i>"]
+                PM24["PM-2.4<br/><b>Writing</b><br/><i>5 arquetipos</i>"]
+                PM25["PM-2.5<br/><b>Literacy</b><br/><i>5 arquetipos</i>"]
+                PM23 --> PM24 --> PM25
+            end
+            subgraph B["CONJUNTO B — ORAL"]
+                direction LR
+                PM26["PM-2.6<br/><b>Listening</b><br/><i>6 arquetipos</i>"]
+                PM27["PM-2.7<br/><b>Pronunciation</b><br/><i>5 arquetipos</i>"]
+                PM28["PM-2.8<br/><b>Speaking</b><br/><i>5 arquetipos</i>"]
+                PM26 --> PM27 --> PM28
+            end
+            subgraph C["CONJUNTO C — SISTEMAS"]
+                direction LR
+                PM29["PM-2.9<br/><b>Functions</b><br/><i>Transversal</i>"]
+                PM210["PM-2.10<br/><b>Grammar</b><br/><i>5 arquetipos</i>"]
+            end
+            PM41["PM-4.1<br/><b>Instrumentos Eval.</b><br/><small>Checklist + Rúbrica</small><br/><small>VA DENTRO DE LA LG</small>"]
+            PM21 & PM22 & PM25 & PM28 & PM210 --> PM41
+        end
+
+        subgraph LG["<b>📚 PRODUCTO: GUÍA DE APRENDIZAJE</b><br/><small>9 worksheets + PM-4.1</small>"]
+        end
+
+        subgraph M4["<b>MOMENTO 4 — ACHIEVER'S OUTPUTS (opcionales)</b>"]
+            C1{{"C-1<br/>¿Quiere Canva?"}}
+            C2{{"C-2<br/>¿Quiere Workbook?"}}
+            C3{{"C-3<br/>¿Quiere Quiz?"}}
+            PM33["PM-3.3<br/><i>Canva Deck Text</i>"]
+            PM34["PM-3.4<br/><i>Workbook Autónomo</i><br/><small>Auto: 2 arq/PM de 2.3-2.10</small>"]
+            PM42["PM-4.2<br/><i>Cuestionario IE-01</i><br/><small>Auto: 1 arq/PM de 2.3-2.10</small>"]
+            C1 -->|Sí| PM33
+            C2 -->|Sí| PM34
+            C3 -->|Sí| PM42
+        end
+
+        subgraph M5["<b>MOMENTO 5 — INSTRUCTOR'S PLAYBOOK (opcional)</b>"]
+            C4{{"C-4<br/>¿Quiere Playbook?"}}
+            C5{{"C-5<br/>¿Quiere Build-Out?"}}
+            PM31["PM-3.1<br/><i>Playbook Outline</i><br/><small>Incluye PM-4.1</small>"]
+            PM32["PM-3.2<br/><i>Playbook Build-Out</i>"]
+            C4 -->|Sí| PM31
+            C5 -->|Sí| PM32
+            PM31 --> C5
+        end
+
+        subgraph M6["<b>MOMENTO 6 — VALIDATION & EXPORT</b>"]
+            VAL["VALIDATOR<br/><small>8 coherencia checks</small>"]
+            G5{{"G5<br/><b>Review Report</b>"}}
+            G6{{"G6<br/><b>Confirm Export</b>"}}
+            EXP["EXPORTER<br/><small>Achiever's + Playbook + GFPI</small>"]
+            VAL --> G5 --> G6 --> EXP
+        end
+
+        G0 ==>|"macrotema elegido"| PM12
+        G1 ==>|"textos elegidos"| PM21
+        PM41 ==>|"LG completa"| C1
+        PM41 ==>|"LG completa"| C2
+        PM41 ==>|"LG completa"| C3
+        PM33 & PM34 & PM42 ==>|"Achiever's listo"| C4
+        PM32 ==>|"Playbook listo"| VAL
+
+        style M1 fill:#1c2d4a,stroke:#58a6ff,color:#58a6ff
+        style M2 fill:#1a3329,stroke:#3fb950,color:#3fb950
+        style M3 fill:#332a18,stroke:#d29922,color:#d29922
+        style LG fill:#1a3329,stroke:#3fb950,color:#3fb950
+        style M4 fill:#331a24,stroke:#f85149,color:#f85149
+        style M5 fill:#2a1a3e,stroke:#bc8cff,color:#bc8cff
+        style M6 fill:#1a3329,stroke:#3fb950,color:#3fb950
+        style A fill:#0d1f15,stroke:#238636,color:#238636
+        style B fill:#0d1f15,stroke:#238636,color:#238636
+        style C fill:#0d1f15,stroke:#238636,color:#238636
+    </pre>
+</div>
+
+<!-- DIAGRAM 2: PRODUCTS ECOSYSTEM -->
+<div class="diagram-container">
+    <h2>Ecosistema de Productos — Achiever's vs Instructor's</h2>
+    <pre class="mermaid">
+    graph LR
+        subgraph ACH["<b>ACHIEVER'S OUTPUTS</b><br/><small>Lo que recibe el aprendiz</small>"]
+            LG2["📚 Guía de Aprendizaje<br/><small>PM-2.1 a PM-2.10 + PM-4.1</small><br/><small><b>Obligatorio</b></small>"]
+            CV["🎨 Canva Deck Text<br/><small>PM-3.3</small><br/><small>Opcional</small>"]
+            WB["📖 Workbook Autónomo<br/><small>PM-3.4 · REINFORCE+EXTEND+PREPARE</small><br/><small>Opcional · Auto-generado</small>"]
+            QT["📝 Cuestionario IE-01<br/><small>PM-4.2 · 50 puntos + Answer Key</small><br/><small>Opcional · Auto-generado</small>"]
+        end
+
+        subgraph INST["<b>INSTRUCTOR'S PLAYBOOK</b><br/><small>Lo que usa el instructor</small>"]
+            PO["📋 Playbook Outline<br/><small>PM-3.1 · Session Map</small><br/><small>Opcional · Incluye PM-4.1</small>"]
+            PB["📋 Playbook Build-Out<br/><small>PM-3.2 · Step by Step</small><br/><small>Opcional · Requiere PM-3.1</small>"]
+        end
+
+        style ACH fill:#1a3329,stroke:#3fb950,color:#3fb950
+        style INST fill:#332a18,stroke:#d29922,color:#d29922
+    </pre>
+</div>
+
+<!-- DIAGRAM 3: GATES & CONFIRMATIONS -->
+<div class="diagram-container">
+    <h2>Gates (Obligatorios) y Confirmaciones (Opcionales)</h2>
+    <pre class="mermaid">
+    graph LR
+        subgraph GATES["<b>GATES — OBLIGATORIOS</b>"]
+            G0D["G0<br/>Selección Macrotema<br/><small>Post PM-1.1</small>"]
+            G1D["G1<br/>Selección Textos<br/><small>Post PM-1.2</small>"]
+            G2D["G2<br/>Selección Arquetipo<br/><small>Pre cada PM-2.x</small>"]
+            G3D["G3<br/>Aprobar Mapa Funciones<br/><small>Post PM-2.9</small>"]
+            G5D["G5<br/>Revisar Coherencia<br/><small>Post Validación</small>"]
+            G6D["G6<br/>Confirmar Export<br/><small>Pre Exportación</small>"]
+        end
+
+        subgraph CONF["<b>CONFIRMACIONES — OPCIONALES</b>"]
+            C1D["C-1<br/>¿Canva?<br/><small>PM-3.3</small>"]
+            C2D["C-2<br/>¿Workbook?<br/><small>PM-3.4</small>"]
+            C3D["C-3<br/>¿Quiz?<br/><small>PM-4.2</small>"]
+            C4D["C-4<br/>¿Playbook?<br/><small>PM-3.1</small>"]
+            C5D["C-5<br/>¿Build-Out?<br/><small>PM-3.2</small>"]
+        end
+
+        style GATES fill:#3b2f1a,stroke:#f0883e,color:#f0883e
+        style CONF fill:#21262d,stroke:#8b949e,color:#8b949e
+    </pre>
+</div>
+
+<!-- INVENTORY TABLE -->
+<div class="table-section">
+    <h3>📋 Inventario Completo — 22 PMs por Momento</h3>
+    <table>
+        <thead>
+            <tr><th>PM</th><th>Nombre</th><th>Momento</th><th>Gate/Conf</th><th>Categoría</th><th>Opcional</th><th>Auto</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><span class="pm-code">PM-1.1</span></td><td>Ruta Macrotemática</td><td><span class="moment-tag m1">M1</span></td><td class="gate">G0</td><td>—</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-1.2</span></td><td>Scope & Sequence + Curación</td><td><span class="moment-tag m2">M2</span></td><td class="gate">G1</td><td>—</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-2.1</span></td><td>The Spark — Reflexión Inicial</td><td><span class="moment-tag m3">M3</span></td><td class="gate">G2</td><td>Achiever's</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-2.2</span></td><td>Gap Analysis — Contextualización</td><td><span class="moment-tag m3">M3</span></td><td class="gate">G2</td><td>Achiever's</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-2.3</span></td><td>Reading — Master Anchor</td><td><span class="moment-tag m3">M3</span></td><td class="gate">G2</td><td>Achiever's</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-2.4</span></td><td>Writing — Task-Based</td><td><span class="moment-tag m3">M3</span></td><td class="gate">G2</td><td>Achiever's</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-2.5</span></td><td>Literacy & Vocabulary</td><td><span class="moment-tag m3">M3</span></td><td class="gate">G2</td><td>Achiever's</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-2.6</span></td><td>Listening — Auditory Anchor</td><td><span class="moment-tag m3">M3</span></td><td class="gate">G2</td><td>Achiever's</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-2.7</span></td><td>Pronunciation & Speaking</td><td><span class="moment-tag m3">M3</span></td><td class="gate">G2</td><td>Achiever's</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-2.8</span></td><td>Speaking Production</td><td><span class="moment-tag m3">M3</span></td><td class="gate">G2</td><td>Achiever's</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-2.9</span></td><td>Language Functions (Transversal)</td><td><span class="moment-tag m3">M3</span></td><td class="gate">G3</td><td>Achiever's</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-2.10</span></td><td>Grammar — Structure Use</td><td><span class="moment-tag m3">M3</span></td><td class="gate">G2</td><td>Achiever's</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-4.1</span></td><td>Instrumentos de Evaluación</td><td><span class="moment-tag m3">M3</span></td><td>—</td><td>Achiever's + Playbook</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-3.3</span></td><td>Canva Deck — Visual Support</td><td><span class="moment-tag m4">M4</span></td><td class="optional">C-1</td><td>Achiever's</td><td><span class="optional">Sí</span></td><td>No</td></tr>
+            <tr><td><span class="pm-code">PM-3.4</span></td><td>Workbook — Autonomous Work</td><td><span class="moment-tag m4">M4</span></td><td class="optional">C-2</td><td>Achiever's</td><td><span class="optional">Sí</span></td><td class="auto">✓ 2 arq/PM</td></tr>
+            <tr><td><span class="pm-code">PM-4.2</span></td><td>Cuestionario IE-01</td><td><span class="moment-tag m4">M4</span></td><td class="optional">C-3</td><td>Achiever's</td><td><span class="optional">Sí</span></td><td class="auto">✓ 1 arq/PM</td></tr>
+            <tr><td><span class="pm-code">PM-3.1</span></td><td>Playbook Outline</td><td><span class="moment-tag m5">M5</span></td><td class="optional">C-4</td><td>Instructor's</td><td><span class="optional">Sí</span></td><td>No</td></tr>
+            <tr><td><span class="pm-code">PM-3.2</span></td><td>Playbook Build-Out</td><td><span class="moment-tag m5">M5</span></td><td class="optional">C-5</td><td>Instructor's</td><td><span class="optional">Sí</span></td><td>No</td></tr>
+            <tr><td><span class="pm-code">PM-3.5</span></td><td>Final Mission</td><td><span class="moment-tag m3">M3</span></td><td class="gate">G4</td><td>Achiever's</td><td>No</td><td>—</td></tr>
+            <tr><td><span class="pm-code">PM-3.6</span></td><td>GFPI-F-135 Integrator</td><td><span class="moment-tag m6">M6</span></td><td class="gate">G5</td><td>—</td><td>No</td><td>—</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: 'dark',
+        themeVariables: {
+            primaryColor: '#1f6feb',
+            primaryTextColor: '#e1e4e8',
+            primaryBorderColor: '#30363d',
+            lineColor: '#58a6ff',
+            secondaryColor: '#161b22',
+            tertiaryColor: '#21262d',
+            fontSize: '14px'
+        },
+        flowchart: { htmlLabels: true, curve: 'basis', padding: 20, nodeSpacing: 30, rankSpacing: 40 }
+    });
+</script>
+
+</body>
+</html>
