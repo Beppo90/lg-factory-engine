@@ -1,15 +1,38 @@
 {
   "PM-1.1": {
     "id": "PM-1.1",
-    "name": "Ruta Macrotemática",
+    "name": "Ruta Macrotemática — Topic Creation",
     "phase": 1,
     "prompt_template": "pm-1.1.md",
     "dependencies": [],
     "is_per_unit": false,
-    "checkpoint": null,
+    "is_transversal": false,
+    "checkpoint": "G0",
     "max_output_tokens": 4096,
-    "archetypes": null
+    "archetypes": null,
+    "optional": false,
+    "auto_generate": false,
+    "product_category": null,
+    "inputs": {
+      "required": {
+        "program_name": "Nombre del programa de formación",
+        "ficha": "Código de ficha del programa",
+        "program_type": "técnica | tecnología",
+        "themes_input": "Temas técnicos y funcionales del diseño curricular (insumo base)"
+      }
+    },
+    "outputs": {
+      "macrothemes": {
+        "format": "list[string]",
+        "count_by_type": {
+          "técnica": 6,
+          "tecnología": 10
+        }
+      }
+    },
+    "gate_description": "G0: El instructor selecciona un macrotema de los sugeridos o ingresa uno libre"
   },
+
   "PM-1.2": {
     "id": "PM-1.2",
     "name": "Scope & Sequence + Curación",
@@ -20,11 +43,19 @@
     "checkpoint": "G1",
     "max_output_tokens": 4096,
     "archetypes": null,
+    "optional": false,
+    "auto_generate": false,
+    "product_category": null,
     "inputs": {
       "required": {
-        "program_config": "ProgramConfig",
-        "unit_spec": "UnitSpec",
-        "universe": "NarrativeUniverse"
+        "program_name": "Nombre del programa",
+        "ficha": "Código de ficha",
+        "macrotheme": "Macrotema elegido en G0 o libre",
+        "cefr_level": "Beginner | Elementary | Pre-intermediate | Intermediate"
+      },
+      "optional": {
+        "competencia": "Competencia del programa",
+        "rap": "Resultado de Aprendizaje"
       }
     },
     "outputs": {
@@ -35,9 +66,15 @@
       "gfpi_section": {
         "tag": "1-IDENTIFICACION,2-PRESENTACION,5-GLOSARIO,6-REFERENTES",
         "content_type": "scope_and_sequence"
+      },
+      "curated_sources": {
+        "format": "list[CuratedSource]",
+        "count": 3
       }
-    }
+    },
+    "gate_description": "G1: El instructor selecciona textos auténticos que cumplen las 4 Cs (Content, Communication, Cognition, Culture)"
   },
+
   "PM-2.1": {
     "id": "PM-2.1",
     "name": "The Spark — Reflexión Inicial",
@@ -48,6 +85,10 @@
     "is_per_unit": true,
     "checkpoint": "G2",
     "max_output_tokens": 6000,
+    "archetypes": ["A", "B", "C", "D", "E"],
+    "optional": false,
+    "auto_generate": false,
+    "product_category": "achievers_output",
     "inputs": {
       "required": {
         "unit_spec": "UnitSpec",
@@ -68,6 +109,7 @@
       }
     }
   },
+
   "PM-2.2": {
     "id": "PM-2.2",
     "name": "Gap Analysis — Contextualización",
@@ -78,6 +120,10 @@
     "is_per_unit": true,
     "checkpoint": "G2",
     "max_output_tokens": 6000,
+    "archetypes": ["A", "B", "C", "D", "E"],
+    "optional": false,
+    "auto_generate": false,
+    "product_category": "achievers_output",
     "inputs": {
       "required": {
         "unit_spec": "UnitSpec",
@@ -97,6 +143,7 @@
       }
     }
   },
+
   "PM-2.3": {
     "id": "PM-2.3",
     "name": "Reading — The Master Anchor",
@@ -107,6 +154,10 @@
     "is_per_unit": true,
     "checkpoint": "G2",
     "max_output_tokens": 6000,
+    "archetypes": ["A", "B", "C", "D", "E", "F"],
+    "optional": false,
+    "auto_generate": false,
+    "product_category": "achievers_output",
     "inputs": {
       "required": {
         "unit_spec": "UnitSpec",
@@ -126,6 +177,7 @@
       }
     }
   },
+
   "PM-2.4": {
     "id": "PM-2.4",
     "name": "Writing — Task-Based Production",
@@ -136,6 +188,10 @@
     "is_per_unit": true,
     "checkpoint": "G2",
     "max_output_tokens": 6000,
+    "archetypes": ["A", "B", "C", "D", "E"],
+    "optional": false,
+    "auto_generate": false,
+    "product_category": "achievers_output",
     "inputs": {
       "required": {
         "unit_spec": "UnitSpec",
@@ -156,6 +212,7 @@
       }
     }
   },
+
   "PM-2.5": {
     "id": "PM-2.5",
     "name": "Literacy & Vocabulary Skills",
@@ -166,6 +223,10 @@
     "is_per_unit": true,
     "checkpoint": "G2",
     "max_output_tokens": 6000,
+    "archetypes": ["A", "B", "C", "D", "E"],
+    "optional": false,
+    "auto_generate": false,
+    "product_category": "achievers_output",
     "inputs": {
       "required": {
         "unit_spec": "UnitSpec",
@@ -184,6 +245,7 @@
       }
     }
   },
+
   "PM-2.6": {
     "id": "PM-2.6",
     "name": "Listening — The Auditory Anchor",
@@ -194,6 +256,10 @@
     "is_per_unit": true,
     "checkpoint": "G2",
     "max_output_tokens": 6000,
+    "archetypes": ["A", "B", "C", "D", "E", "F"],
+    "optional": false,
+    "auto_generate": false,
+    "product_category": "achievers_output",
     "inputs": {
       "required": {
         "unit_spec": "UnitSpec",
@@ -213,6 +279,7 @@
       }
     }
   },
+
   "PM-2.7": {
     "id": "PM-2.7",
     "name": "Pronunciation & Speaking Skills",
@@ -223,6 +290,10 @@
     "is_per_unit": true,
     "checkpoint": "G2",
     "max_output_tokens": 6000,
+    "archetypes": ["A", "B", "C", "D", "E"],
+    "optional": false,
+    "auto_generate": false,
+    "product_category": "achievers_output",
     "inputs": {
       "required": {
         "unit_spec": "UnitSpec",
@@ -241,6 +312,7 @@
       }
     }
   },
+
   "PM-2.8": {
     "id": "PM-2.8",
     "name": "Speaking Production & Simulation",
@@ -251,6 +323,10 @@
     "is_per_unit": true,
     "checkpoint": "G2",
     "max_output_tokens": 6000,
+    "archetypes": ["A", "B", "C", "D", "E"],
+    "optional": false,
+    "auto_generate": false,
+    "product_category": "achievers_output",
     "inputs": {
       "required": {
         "unit_spec": "UnitSpec",
@@ -271,6 +347,7 @@
       }
     }
   },
+
   "PM-2.9": {
     "id": "PM-2.9",
     "name": "Language Functions — Communicative Competence",
@@ -283,6 +360,9 @@
     "checkpoint": "G3",
     "max_output_tokens": 3000,
     "archetypes": null,
+    "optional": false,
+    "auto_generate": false,
+    "product_category": "achievers_output",
     "inputs": {
       "required": {
         "unit_spec": "UnitSpec",
@@ -303,6 +383,7 @@
       }
     }
   },
+
   "PM-2.10": {
     "id": "PM-2.10",
     "name": "Grammar — Structure Use",
@@ -313,6 +394,10 @@
     "is_per_unit": true,
     "checkpoint": "G2",
     "max_output_tokens": 6000,
+    "archetypes": ["A", "B", "C", "D", "E"],
+    "optional": false,
+    "auto_generate": false,
+    "product_category": "achievers_output",
     "inputs": {
       "required": {
         "unit_spec": "UnitSpec",
@@ -331,19 +416,25 @@
       }
     }
   },
+
   "PM-3.1": {
     "id": "PM-3.1",
     "name": "Playbook Outline — Session Map",
     "phase": 3,
     "prompt_template": "pm-3.1.md",
-    "dependencies": ["PM-2.1", "PM-2.2", "PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.7", "PM-2.8", "PM-2.9", "PM-2.10"],
+    "dependencies": ["PM-2.1", "PM-2.2", "PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.7", "PM-2.8", "PM-2.9", "PM-2.10", "PM-4.1"],
     "is_per_unit": false,
     "checkpoint": null,
     "max_output_tokens": 8000,
+    "archetypes": null,
+    "optional": true,
+    "auto_generate": false,
+    "product_category": "instructor_playbook",
     "inputs": {
       "required": {
         "all_unit_specs": "list[UnitSpec]",
-        "all_pm2_outputs": "dict[str,PMOutput]"
+        "all_pm2_outputs": "dict[str,PMOutput]",
+        "pm_4_1_output": "PMOutput"
       }
     },
     "outputs": {
@@ -355,8 +446,10 @@
         "tag": null,
         "content_type": "playbook"
       }
-    }
+    },
+    "note": "Incluye los Instrumentos de Evaluación (PM-4.1: Quiz + Checklist + Rúbrica) dentro del Playbook del instructor"
   },
+
   "PM-3.2": {
     "id": "PM-3.2",
     "name": "Playbook Build-Out",
@@ -366,6 +459,10 @@
     "is_per_unit": false,
     "checkpoint": null,
     "max_output_tokens": 8000,
+    "archetypes": null,
+    "optional": true,
+    "auto_generate": false,
+    "product_category": "instructor_playbook",
     "inputs": {
       "required": {
         "playbook_outline": "str",
@@ -381,20 +478,25 @@
         "tag": null,
         "content_type": "build_out"
       }
-    }
+    },
+    "note": "Solo se genera si el instructor confirmó PM-3.1"
   },
+
   "PM-3.3": {
     "id": "PM-3.3",
     "name": "Canva Deck — Visual Support",
     "phase": 3,
     "prompt_template": "pm-3.3.md",
-    "dependencies": ["PM-3.1"],
+    "dependencies": ["PM-2.1", "PM-2.2", "PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.7", "PM-2.8", "PM-2.9", "PM-2.10"],
     "is_per_unit": false,
     "checkpoint": null,
     "max_output_tokens": 4096,
+    "archetypes": null,
+    "optional": true,
+    "auto_generate": false,
+    "product_category": "achievers_output",
     "inputs": {
       "required": {
-        "playbook_outline": "str",
         "all_pm2_outputs": "dict[str,PMOutput]"
       }
     },
@@ -407,20 +509,26 @@
         "tag": null,
         "content_type": "canva_spec"
       }
-    }
+    },
+    "note": "Texto descriptivo para crear Canva Deck / PPTX / NotebookLM. Opcional — el instructor confirma si lo quiere."
   },
+
   "PM-3.4": {
     "id": "PM-3.4",
     "name": "Workbook — Autonomous Work",
     "phase": 3,
     "prompt_template": "pm-3.4.md",
-    "dependencies": ["PM-3.1"],
+    "dependencies": ["PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.7", "PM-2.8", "PM-2.9", "PM-2.10"],
     "is_per_unit": false,
     "checkpoint": null,
     "max_output_tokens": 8000,
+    "archetypes": null,
+    "optional": true,
+    "auto_generate": true,
+    "product_category": "achievers_output",
+    "auto_archetype_rule": "2 arquetipos cualquiera por cada PM (de PM-2.3 a PM-2.10)",
     "inputs": {
       "required": {
-        "playbook_outline": "str",
         "all_pm2_outputs": "dict[str,PMOutput]",
         "key_vocabulary": "list[VocabTerm]",
         "grammar_targets": "list[str]"
@@ -435,8 +543,10 @@
         "tag": null,
         "content_type": "workbook"
       }
-    }
+    },
+    "note": "Generación automática. Se usan PM-2.3 a PM-2.10, seleccionando 2 arquetipos por PM automáticamente (sin gate humano). Opcional — el instructor confirma si lo quiere."
   },
+
   "PM-3.5": {
     "id": "PM-3.5",
     "name": "Final Mission — Integrative Task",
@@ -446,6 +556,10 @@
     "is_per_unit": true,
     "checkpoint": "G4",
     "max_output_tokens": 4096,
+    "archetypes": ["A", "B", "C", "D", "E"],
+    "optional": false,
+    "auto_generate": false,
+    "product_category": "achievers_output",
     "inputs": {
       "required": {
         "unit_spec": "UnitSpec",
@@ -466,6 +580,7 @@
       }
     }
   },
+
   "PM-3.6": {
     "id": "PM-3.6",
     "name": "GFPI-F-135 Integrator",
@@ -475,6 +590,10 @@
     "is_per_unit": true,
     "checkpoint": "G5",
     "max_output_tokens": 8000,
+    "archetypes": null,
+    "optional": false,
+    "auto_generate": false,
+    "product_category": null,
     "inputs": {
       "required": {
         "all_gfpi_sections": "dict[str,str]",
@@ -493,20 +612,25 @@
       }
     }
   },
+
   "PM-4.1": {
     "id": "PM-4.1",
-    "name": "Evaluación Formativa",
-    "phase": 4,
+    "name": "Instrumentos de Evaluación Formativa",
+    "phase": 2,
     "prompt_template": "pm-4.1.md",
-    "dependencies": ["PM-2.8", "PM-3.5"],
+    "dependencies": ["PM-2.1", "PM-2.2", "PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.7", "PM-2.8", "PM-2.9", "PM-2.10"],
     "is_per_unit": true,
     "checkpoint": null,
     "max_output_tokens": 6000,
+    "archetypes": null,
+    "optional": false,
+    "auto_generate": false,
+    "product_category": "achievers_output",
+    "insert_locations": ["learning_guide", "instructor_playbook"],
     "inputs": {
       "required": {
         "unit_spec": "UnitSpec",
-        "speaking_output": "str",
-        "final_mission": "str"
+        "all_phase2_outputs": "dict[str,str]"
       }
     },
     "outputs": {
@@ -518,24 +642,29 @@
         "tag": "4-EVIDENCIAS",
         "content_type": "evaluacion"
       }
-    }
+    },
+    "note": "Se genera como parte de Phase 2 (NO como paso separado post-Phase 2). Se inserta en DOS lugares: la Guía de Aprendizaje del aprendiz Y el Playbook Outline del instructor (si se genera PM-3.1)."
   },
+
   "PM-4.2": {
     "id": "PM-4.2",
-    "name": "Cuestionario Técnico — Evidencia de Conocimiento",
-    "phase": 4,
+    "name": "Cuestionario Técnico — Evidencia de Conocimiento (IE-01)",
+    "phase": 3,
     "prompt_template": "pm-4.2.md",
-    "dependencies": ["PM-2.3", "PM-2.6", "PM-2.10"],
-    "is_per_unit": true,
+    "dependencies": ["PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.7", "PM-2.8", "PM-2.9", "PM-2.10"],
+    "is_per_unit": false,
     "checkpoint": null,
     "max_output_tokens": 6000,
+    "archetypes": null,
+    "optional": true,
+    "auto_generate": true,
+    "product_category": "achievers_output",
+    "auto_archetype_rule": "1 arquetipo por cada PM (de PM-2.3 a PM-2.10)",
     "inputs": {
       "required": {
-        "unit_spec": "UnitSpec",
+        "all_pm2_outputs": "dict[str,PMOutput]",
         "grammar_targets": "list[str]",
-        "key_vocabulary": "list[VocabTerm]",
-        "reading_output": "str",
-        "listening_output": "str"
+        "key_vocabulary": "list[VocabTerm]"
       }
     },
     "outputs": {
@@ -547,6 +676,7 @@
         "tag": "4-EVIDENCIAS",
         "content_type": "cuestionario"
       }
-    }
+    },
+    "note": "Generación automática. Se usan PM-2.3 a PM-2.10, seleccionando 1 arquetipo por PM automáticamente (sin gate humano). Answer Key va al final del cuestionario. Opcional — el instructor confirma si lo quiere."
   }
 }
