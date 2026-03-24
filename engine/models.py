@@ -239,6 +239,9 @@ class ProgramConfig:
     hours_per_session: int = 3
     skip_pm_1_1: bool = False
     archetype_profile: ArchetypeProfile = ArchetypeProfile.MANUAL
+    # Conversational flow fields
+    ficha: Optional[str] = None
+    themes_input: Optional[str] = None
 
 
 @dataclass

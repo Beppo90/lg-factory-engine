@@ -3,750 +3,765 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LG Factory — Learning Guide Generator</title>
+<title>LG Factory — Conversational Generator</title>
 <style>
-  :root {
-    --bg: #0f1117;
-    --surface: #1a1d27;
-    --surface2: #242836;
-    --border: #2e3348;
-    --text: #e1e4ed;
-    --text-dim: #8b90a5;
-    --accent: #6c8cff;
-    --accent-dim: #4a62b3;
-    --green: #4ade80;
-    --yellow: #fbbf24;
-    --red: #f87171;
-    --orange: #fb923c;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Inter', 'SF Pro', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    font-size: 14px;
-  }
-  code, .mono { font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', monospace; }
-  .container { max-width: 960px; margin: 0 auto; padding: 24px 16px; }
+:root {
+  --bg:#0b0d14;--sf:#12151f;--sf2:#1a1e2e;--sf3:#222740;
+  --bd:#2a2f45;--bd-a:#3d4468;
+  --t:#e2e5f0;--t2:#a0a5ba;--t3:#6b7194;
+  --ac:#6c8cff;--ac2:#8da4ff;--ac-d:rgba(108,140,255,.12);--ac-g:rgba(108,140,255,.25);
+  --gr:#4ade80;--gr-d:rgba(74,222,128,.12);
+  --yl:#fbbf24;--yl-d:rgba(251,191,36,.12);
+  --rd:#f87171;--rd-d:rgba(248,113,113,.12);
+  --or:#fb923c;--or-d:rgba(251,146,60,.12);
+  --r:10px;--rs:6px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter','SF Pro',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--t);line-height:1.55;font-size:14px;height:100vh;overflow:hidden}
+code,.mono{font-family:'SF Mono','Cascadia Code','Fira Code',monospace}
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 0;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 8px;
-  }
-  header h1 { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; }
-  header h1 span { color: var(--accent); }
-  .health-dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: var(--green);
-    display: inline-block;
-    margin-right: 8px;
-  }
+/* ── LAYOUT ── */
+.app{display:flex;flex-direction:column;height:100vh}
+.app-header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:var(--sf);border-bottom:1px solid var(--bd)}
+.app-header h1{font-size:18px;font-weight:700;letter-spacing:-.5px;display:flex;align-items:center;gap:8px}
+.app-header h1 .logo{color:var(--ac);font-weight:800}
+.header-actions{display:flex;align-items:center;gap:12px}
+.health-dot{width:8px;height:8px;border-radius:50%;background:var(--gr);transition:background .3s}
+.health-dot.off{background:var(--rd)}
+.btn-restart{font-size:12px;color:var(--t3);background:var(--sf2);border:1px solid var(--bd);padding:5px 12px;border-radius:var(--rs);cursor:pointer;font-family:inherit;transition:all .15s}
+.btn-restart:hover{color:var(--t);border-color:var(--bd-a)}
 
-  .subtitle {
-    font-size: 14px;
-    color: var(--text-dim);
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid var(--border);
-  }
+/* ── MOMENT PROGRESS ── */
+.moment-bar{display:flex;background:var(--sf);border-bottom:1px solid var(--bd);padding:0 20px;overflow-x:auto}
+.moment-step{display:flex;align-items:center;gap:6px;padding:10px 14px;font-size:12px;color:var(--t3);cursor:default;white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s}
+.moment-step .num{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;background:var(--sf2);border:1px solid var(--bd);transition:all .3s}
+.moment-step.active{color:var(--ac);border-bottom-color:var(--ac)}
+.moment-step.active .num{background:var(--ac);color:#fff;border-color:var(--ac)}
+.moment-step.done{color:var(--gr)}
+.moment-step.done .num{background:var(--gr);color:#000;border-color:var(--gr)}
+.moment-step.waiting{color:var(--yl)}
+.moment-step.waiting .num{background:var(--yl);color:#000;border-color:var(--yl)}
 
-  .section { margin-bottom: 32px; }
-  .section-title {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--text-dim);
-    margin-bottom: 12px;
-    font-weight: 600;
-  }
+/* ── CONVERSATION ── */
+.conv-wrap{flex:1;overflow-y:auto;padding:20px;scroll-behavior:smooth}
+.conv-wrap::-webkit-scrollbar{width:6px}
+.conv-wrap::-webkit-scrollbar-thumb{background:var(--bd);border-radius:3px}
 
-  .card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 8px;
-  }
+.msg{max-width:760px;margin:0 auto 14px;display:flex;gap:10px;align-items:flex-start;animation:msgIn .3s ease}
+@keyframes msgIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.msg.sys .av{background:var(--ac);color:#fff}
+.msg.usr .av{background:var(--sf3);color:var(--t2)}
+.msg .av{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;margin-top:2px}
+.msg .bd{flex:1;min-width:0}
+.msg .bd p{margin-bottom:6px}
+.msg .bd p:last-child{margin-bottom:0}
 
-  /* Buttons */
-  .btn {
-    padding: 8px 16px;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-    background: var(--surface2);
-    color: var(--text);
-    font-family: inherit;
-    font-size: 13px;
-    cursor: pointer;
-    transition: all 0.15s;
-  }
-  .btn:hover { border-color: var(--accent); color: var(--accent); }
-  .btn-primary {
-    background: var(--accent);
-    color: #fff;
-    border-color: var(--accent);
-    font-weight: 600;
-    padding: 10px 24px;
-    font-size: 14px;
-  }
-  .btn-primary:hover { background: var(--accent-dim); }
-  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.msg.sys .bd{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);padding:12px 14px}
+.msg.usr .bd{background:var(--ac-d);border:1px solid var(--ac-g);border-radius:var(--r);padding:12px 14px}
 
-  /* Form controls */
-  select, .form-select {
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-    background: var(--surface2);
-    color: var(--text);
-    font-family: inherit;
-    font-size: 13px;
-  }
+.msg .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.msg.sys .label{color:var(--ac)}
+.msg.usr .label{color:var(--ac2)}
 
-  /* Run card */
-  .run-card { position: relative; }
-  .run-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 12px;
-  }
-  .run-id {
-    font-size: 13px;
-    color: var(--accent);
-    font-weight: 600;
-    font-family: 'SF Mono', monospace;
-  }
-  .status-badge {
-    font-size: 11px;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  .status-running { background: rgba(108,140,255,0.15); color: var(--accent); }
-  .status-complete { background: rgba(74,222,128,0.15); color: var(--green); }
-  .status-error { background: rgba(248,113,113,0.15); color: var(--red); }
-  .status-validating { background: rgba(251,191,36,0.15); color: var(--yellow); }
-  .status-exporting { background: rgba(251,146,60,0.15); color: var(--orange); }
+.msg .meta{font-size:12px;color:var(--t3);margin-top:6px}
+.msg .preview{background:var(--sf2);border:1px solid var(--bd);border-radius:var(--rs);padding:10px;margin-top:8px;font-size:12px;color:var(--t2);max-height:100px;overflow-y:auto;line-height:1.5;white-space:pre-wrap;font-family:'SF Mono',monospace}
+.msg .tokens{display:inline-flex;align-items:center;gap:4px;background:var(--yl-d);color:var(--yl);font-size:11px;padding:2px 8px;border-radius:4px;font-weight:600;margin-top:6px}
 
-  .run-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 8px;
-    margin-bottom: 12px;
-  }
-  .stat { font-size: 13px; }
-  .stat-label { color: var(--text-dim); }
-  .stat-value { font-weight: 600; font-family: 'SF Mono', monospace; }
+/* ── INPUT AREA ── */
+.input-area{background:var(--sf);border-top:1px solid var(--bd);padding:16px 20px}
+.input-inner{max-width:760px;margin:0 auto}
+.input-inner h3{font-size:15px;font-weight:600;margin-bottom:12px;color:var(--t)}
+.input-inner p.desc{font-size:13px;color:var(--t2);margin-bottom:14px;line-height:1.5}
+.input-inner label.fl{display:block;font-size:12px;color:var(--t3);margin-bottom:5px;font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+.input-inner input[type=text],.input-inner select,.input-inner textarea{width:100%;padding:9px 12px;border-radius:var(--rs);border:1px solid var(--bd);background:var(--sf2);color:var(--t);font-family:inherit;font-size:14px;transition:border-color .15s}
+.input-inner input:focus,.input-inner select:focus,.input-inner textarea:focus{outline:none;border-color:var(--ac)}
+.input-inner textarea{resize:vertical;min-height:70px}
+.form-row{display:flex;gap:12px;margin-bottom:12px}
+.form-row>.fg{flex:1}
+.fg{margin-bottom:12px}
+.fg .hint{font-size:11px;color:var(--t3);margin-top:3px}
 
-  .progress-bar {
-    height: 4px;
-    background: var(--surface2);
-    border-radius: 2px;
-    overflow: hidden;
-    margin-bottom: 8px;
-  }
-  .progress-fill {
-    height: 100%;
-    background: var(--accent);
-    border-radius: 2px;
-    transition: width 0.5s;
-  }
+.card-sel{background:var(--sf2);border:2px solid var(--bd);border-radius:var(--r);padding:14px;margin-bottom:8px;cursor:pointer;transition:all .15s}
+.card-sel:hover{border-color:var(--ac)}
+.card-sel.sel{border-color:var(--ac);background:var(--ac-d)}
+.card-sel .cs-name{font-weight:600;font-size:14px}
+.card-sel .cs-desc{font-size:12px;color:var(--t2);margin-top:2px}
+.card-sel .cs-badges{display:flex;gap:5px;margin-top:6px}
+.bdg{font-size:10px;padding:2px 7px;border-radius:4px;font-weight:600}
+.bdg-low{background:var(--gr-d);color:var(--gr)}
+.bdg-med{background:var(--yl-d);color:var(--yl)}
+.bdg-high{background:var(--or-d);color:var(--or)}
+.bdg-simple{background:var(--gr-d);color:var(--gr)}
+.bdg-complex{background:var(--rd-d);color:var(--rd)}
 
-  .pm-indicator {
-    font-size: 12px;
-    color: var(--text-dim);
-  }
+.radio-grp label{display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--sf2);border:1px solid var(--bd);border-radius:var(--rs);margin-bottom:6px;cursor:pointer;transition:all .15s;font-size:14px}
+.radio-grp label:hover{border-color:var(--ac)}
+.radio-grp input[type=radio]{accent-color:var(--ac)}
 
-  .error-log {
-    margin-top: 8px;
-    font-size: 13px;
-    color: var(--red);
-    background: rgba(248,113,113,0.08);
-    padding: 8px;
-    border-radius: 4px;
-    font-family: 'SF Mono', monospace;
-  }
+.btn{padding:9px 20px;border-radius:var(--rs);border:1px solid var(--bd);background:var(--sf2);color:var(--t);font-family:inherit;font-size:13px;cursor:pointer;transition:all .15s;font-weight:500}
+.btn:hover{border-color:var(--ac);color:var(--ac)}
+.btn-p{background:var(--ac);color:#fff;border-color:var(--ac);font-weight:600;padding:10px 24px;font-size:14px}
+.btn-p:hover{background:var(--ac2);border-color:var(--ac2);color:#fff}
+.btn-s{background:var(--gr);color:#000;border-color:var(--gr);font-weight:600}
+.btn-s:hover{background:#3fcf6e;border-color:#3fcf6e}
+.btn-d{background:var(--rd);color:#fff;border-color:var(--rd)}
+.btn-d:hover{background:#e55; border-color:#e55}
+.btn:disabled{opacity:.35;cursor:not-allowed}
+.btn-row{display:flex;gap:10px;margin-top:14px;align-items:center}
+.chk-label{font-size:13px;color:var(--t2);display:flex;align-items:center;gap:6px;cursor:pointer}
+.chk-label input{accent-color:var(--ac)}
 
-  .files-section { margin-top: 12px; }
-  .file-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
-    padding: 6px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .file-row:last-child { border-bottom: none; }
-  .file-name { color: var(--text); font-family: 'SF Mono', monospace; }
-  .file-size { color: var(--text-dim); }
-  .file-download {
-    color: var(--accent);
-    text-decoration: none;
-    font-size: 12px;
-  }
-  .file-download:hover { text-decoration: underline; }
+.loading{display:flex;align-items:center;gap:10px;color:var(--t2);font-size:13px}
+.spinner{width:18px;height:18px;border:2px solid var(--bd);border-top-color:var(--ac);border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 
-  /* Upload form */
-  .upload-area {
-    border: 2px dashed var(--border);
-    border-radius: 8px;
-    padding: 24px;
-    text-align: center;
-    color: var(--text-dim);
-    font-size: 13px;
-    cursor: pointer;
-    transition: border-color 0.2s;
-  }
-  .upload-area:hover { border-color: var(--accent); }
-  .upload-area input[type="file"] { display: none; }
+.files-list{margin-top:10px}
+.file-row{display:flex;justify-content:space-between;align-items:center;font-size:13px;padding:5px 0;border-bottom:1px solid var(--bd)}
+.file-row:last-child{border:none}
+.file-dl{color:var(--ac);text-decoration:none;font-size:12px}
+.file-dl:hover{text-decoration:underline}
 
-  /* Program select card in Generate tab */
-  .program-select-card {
-    background: var(--surface);
-    border: 2px solid var(--border);
-    border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 8px;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  .program-select-card:hover { border-color: var(--accent-dim); }
-  .program-select-card.selected { border-color: var(--accent); background: rgba(108,140,255,0.05); }
-  .program-select-card .p-name { font-weight: 600; font-size: 15px; margin-bottom: 2px; }
-  .program-select-card .p-domain { font-size: 13px; color: var(--text-dim); }
-  .program-select-card .p-badges { display: flex; gap: 6px; margin-top: 8px; }
-  .badge {
-    font-size: 11px;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-weight: 600;
-  }
-  .badge-cefr { background: rgba(108,140,255,0.12); color: var(--accent); }
-  .badge-units { background: rgba(74,222,128,0.12); color: var(--green); }
-
-  /* Programs full list */
-  .program-list-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-  }
-  .program-info { flex: 1; }
-  .program-name { font-weight: 600; font-size: 14px; }
-  .program-meta { font-size: 13px; color: var(--text-dim); }
-
-  /* Config panel */
-  .config-panel {
-    background: var(--surface);
-    border: 1px solid var(--accent);
-    border-radius: 8px;
-    padding: 20px;
-  }
-  .config-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 16px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--border);
-  }
-  .config-header .c-name { font-weight: 700; font-size: 16px; }
-  .config-header .c-meta { font-size: 13px; color: var(--text-dim); }
-  .config-row {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 16px;
-  }
-  .config-field { flex: 1; min-width: 180px; }
-  .config-field label {
-    display: block;
-    font-size: 12px;
-    color: var(--text-dim);
-    margin-bottom: 6px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  .config-field .help {
-    font-size: 11px;
-    color: var(--text-dim);
-    margin-top: 4px;
-    font-style: italic;
-  }
-  .config-actions {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    padding-top: 12px;
-    border-top: 1px solid var(--border);
-  }
-
-  .hidden { display: none; }
-  .empty-state {
-    text-align: center;
-    color: var(--text-dim);
-    padding: 32px;
-    font-size: 14px;
-  }
-
-  /* Tabs */
-  .tabs {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0;
-  }
-  .tab {
-    padding: 10px 18px;
-    font-size: 14px;
-    font-family: inherit;
-    color: var(--text-dim);
-    background: none;
-    border: none;
-    border-bottom: 2px solid transparent;
-    cursor: pointer;
-    transition: all 0.2s;
-    font-weight: 500;
-  }
-  .tab:hover { color: var(--text); }
-  .tab.active {
-    color: var(--accent);
-    border-bottom-color: var(--accent);
-  }
-  .tab-content { display: none; }
-  .tab-content.active { display: block; }
+@media(max-width:640px){
+  .moment-step .lbl{display:none}
+  .form-row{flex-direction:column;gap:0}
+  .msg{max-width:100%}
+  .input-inner{max-width:100%}
+}
 </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <h1><span>LG</span> Factory</h1>
-    <div>
+<div class="app">
+  <header class="app-header">
+    <h1><span class="logo">LG</span> Factory</h1>
+    <div class="header-actions">
       <span class="health-dot" id="healthDot"></span>
-      <span style="font-size:13px;color:var(--text-dim)" id="healthText">checking...</span>
+      <button class="btn-restart" onclick="restart()">+ New Guide</button>
     </div>
   </header>
-  <div class="subtitle">Automated Learning Guide Generator — Create complete ESP curriculum for any program, any domain, any level.</div>
 
-  <!-- Tabs -->
-  <div class="tabs">
-    <button class="tab active" onclick="switchTab('generate')">Generate</button>
-    <button class="tab" onclick="switchTab('programs')">Programs</button>
-    <button class="tab" onclick="switchTab('runs')">Runs</button>
+  <div class="moment-bar" id="momentBar">
+    <div class="moment-step" data-m="1"><span class="num">1</span><span class="lbl">Topic Creation</span></div>
+    <div class="moment-step" data-m="2"><span class="num">2</span><span class="lbl">Universe Setup</span></div>
+    <div class="moment-step" data-m="3"><span class="num">3</span><span class="lbl">Building LG</span></div>
+    <div class="moment-step" data-m="4"><span class="num">4</span><span class="lbl">Achiever's</span></div>
+    <div class="moment-step" data-m="5"><span class="num">5</span><span class="lbl">Playbook</span></div>
+    <div class="moment-step" data-m="6"><span class="num">6</span><span class="lbl">Export</span></div>
   </div>
 
-  <!-- TAB 1: Generate -->
-  <div class="tab-content active" id="tab-generate">
+  <div class="conv-wrap" id="conv"></div>
 
-    <!-- Step 1: Choose a program -->
-    <div class="section" id="step1Section">
-      <div class="section-title">Step 1 — Choose a program</div>
-      <div id="programCards">
-        <div class="empty-state">Loading programs...</div>
-      </div>
-    </div>
-
-    <!-- Step 2: Configure & Generate (shown after selection) -->
-    <div class="section hidden" id="step2Section">
-      <div class="section-title">Step 2 — Configure & Generate</div>
-      <div class="config-panel">
-        <div class="config-header">
-          <div>
-            <div class="c-name" id="selectedProgramName"></div>
-            <div class="c-meta" id="selectedProgramMeta"></div>
-          </div>
-          <button class="btn" onclick="deselectProgram()" style="font-size:12px">Change program</button>
-        </div>
-
-        <div class="config-row">
-          <div class="config-field">
-            <label>AI Provider</label>
-            <select id="providerSelect" style="width:100%">
-              <option value="anthropic">Claude (Anthropic)</option>
-              <option value="google">Gemini (Google)</option>
-            </select>
-            <div class="help">The AI model that writes the learning guides</div>
-          </div>
-
-          <div class="config-field">
-            <label>Teaching Style</label>
-            <select id="profileSelect" style="width:100%">
-              <option value="balanced">Balanced — Mix of all styles</option>
-              <option value="production">Production — Focus on deliverables & rubrics</option>
-              <option value="engagement">Engagement — Focus on games & interaction</option>
-            </select>
-            <div class="help">How the 52 pedagogical archetypes are selected for each guide</div>
-          </div>
-        </div>
-
-        <div class="config-actions">
-          <button class="btn btn-primary" id="startBtn" onclick="startRun()">Generate Learning Guides</button>
-          <label style="font-size:13px;display:flex;align-items:center;gap:6px;color:var(--text-dim)">
-            <input type="checkbox" id="dryRunCheck"> Test mode (no AI calls, generates placeholder files)
-          </label>
-        </div>
-      </div>
-    </div>
-
-    <!-- Active Run -->
-    <div class="section hidden" id="activeRunSection">
-      <div class="section-title">Progress</div>
-      <div class="card run-card" id="activeRunCard"></div>
-    </div>
-  </div>
-
-  <!-- TAB 2: Programs -->
-  <div class="tab-content" id="tab-programs">
-    <div class="section">
-      <div class="section-title">Available Programs</div>
-      <div id="programsFullList">
-        <div class="empty-state">Loading...</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-title">Add New Program</div>
-      <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()">
-        Drop a program JSON file here or click to browse
-        <input type="file" id="fileInput" accept=".json" onchange="uploadProgram(event)">
-      </div>
-    </div>
-  </div>
-
-  <!-- TAB 3: Runs -->
-  <div class="tab-content" id="tab-runs">
-    <div class="section">
-      <div class="section-title">All Runs</div>
-      <div id="runsList">
-        <div class="empty-state">No runs yet</div>
-      </div>
+  <div class="input-area">
+    <div class="input-inner" id="inputArea">
+      <div class="loading"><div class="spinner"></div>Connecting to LG Factory Engine...</div>
     </div>
   </div>
 </div>
 
 <script>
 const API = window.location.origin + '/api';
-let pollTimer = null;
-let activeRunId = null;
-let selectedProgramId = null;
-let programsCache = [];
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
 
-// ─── Tabs ────────────────────────────────────────────────────────
-function switchTab(name) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-  document.getElementById(`tab-${name}`).classList.add('active');
-  document.querySelectorAll('.tab')[['generate','programs','runs'].indexOf(name)].classList.add('active');
+// ═══ STATE ══════════════════════════════════════════════════════
+let S = {
+  moment: 1, status: 'idle', programId: null, programName: '',
+  runId: null, currentPm: null, currentUnit: null,
+  confirmedProducts: [], rejectedProducts: [],
+  unitsTotal: 0, provider: 'anthropic', dryRun: false,
+  // Moment 1 form
+  m1: { name:'', ficha:'', type:'técnica', themes:'' },
+  // Moment 2 form
+  m2: { macrotheme:'', cefr:'A1.1', competencia:'', rap:'', domain:'general' },
+  // G0 suggestions
+  g0_suggestions: [],
+  // G1 texts
+  g1_texts: [],
+  // G2 archetypes
+  g2_archetypes: [],
+  // Validation report
+  validation: null,
+};
 
-  if (name === 'runs') loadRuns();
-  if (name === 'programs') renderFullProgramList();
-}
-
-// ─── Health Check ───────────────────────────────────────────────
-async function checkHealth() {
-  try {
+// ═══ HEALTH ═════════════════════════════════════════════════════
+async function checkHealth(){
+  try{
     const r = await fetch(`${API}/health`);
-    if (r.ok) {
-      document.getElementById('healthDot').style.background = 'var(--green)';
-      document.getElementById('healthText').textContent = 'connected';
+    if(r.ok){ $('#healthDot').classList.remove('off'); }
+    else throw 0;
+  }catch{ $('#healthDot').classList.add('off'); }
+}
+setInterval(checkHealth, 30000);
+
+// ═══ CONVERSATION ══════════════════════════════════════════════
+function addMsg(type, label, html, extra=''){
+  const c = $('#conv');
+  const d = document.createElement('div');
+  d.className = `msg ${type}`;
+  d.innerHTML = `<div class="av">${type==='sys'?'LG':'You'}</div>
+    <div class="bd"><div class="label">${label}</div><div>${html}</div>${extra}</div>`;
+  c.appendChild(d);
+  c.scrollTop = c.scrollHeight;
+  return d;
+}
+function addSys(html, extra=''){ return addMsg('sys','LG Factory',html,extra); }
+function addUsr(html){ return addMsg('usr','You',html); }
+function addSpinner(msg='Generating...'){
+  return addSys(`<div class="loading"><div class="spinner"></div>${msg}</div>`);
+}
+
+// ═══ MOMENT BAR ═══════════════════════════════════════════════
+function updateMomentBar(){
+  $$('.moment-step').forEach(el => {
+    const m = +el.dataset.m;
+    el.classList.remove('active','done','waiting');
+    if(m < S.moment) el.classList.add('done');
+    else if(m === S.moment){
+      if(S.status==='waiting_human'||S.status==='waiting_confirmation') el.classList.add('waiting');
+      else el.classList.add('active');
     }
-  } catch {
-    document.getElementById('healthDot').style.background = 'var(--red)';
-    document.getElementById('healthText').textContent = 'offline';
-  }
+  });
 }
 
-// ─── Load Programs ──────────────────────────────────────────────
-async function loadPrograms() {
-  try {
-    const r = await fetch(`${API}/programs`);
-    programsCache = await r.json();
-    renderProgramCards();
-    renderFullProgramList();
-  } catch {
-    document.getElementById('programCards').innerHTML = '<div class="empty-state">Failed to load programs</div>';
+// ═══ RENDER INPUT ══════════════════════════════════════════════
+function renderInput(){
+  const a = $('#inputArea');
+  if(S.status==='generating'){
+    a.innerHTML = `<div class="loading"><div class="spinner"></div>Generating <strong>${S.currentPm||'...'}</strong>${S.currentUnit ? ` for Unit ${S.currentUnit}` : ''}...</div>`;
+    return;
   }
-}
-
-function renderProgramCards() {
-  const container = document.getElementById('programCards');
-  if (programsCache.length === 0) {
-    container.innerHTML = `<div class="empty-state">
-      No programs yet. Go to the <a href="#" onclick="event.preventDefault();switchTab('programs')" style="color:var(--accent)">Programs</a> tab to upload your first program JSON.
+  if(S.status==='complete'){
+    a.innerHTML = `<div style="text-align:center;padding:8px 0">
+      <p style="color:var(--gr);font-weight:600;font-size:15px;margin-bottom:8px">Pipeline Complete!</p>
+      <button class="btn btn-p" onclick="loadFiles()">Show Output Files</button>
+      <div id="filesContainer" class="files-list"></div>
     </div>`;
     return;
   }
-
-  container.innerHTML = programsCache.map(p => `
-    <div class="program-select-card ${selectedProgramId === p.id ? 'selected' : ''}"
-         onclick="selectProgram('${p.id}')">
-      <div class="p-name">${p.name}</div>
-      <div class="p-domain">${p.domain}</div>
-      <div class="p-badges">
-        <span class="badge badge-cefr">${p.cefr_level}</span>
-        <span class="badge badge-units">${p.units} units</span>
-      </div>
-    </div>
-  `).join('');
-}
-
-function renderFullProgramList() {
-  const container = document.getElementById('programsFullList');
-  if (programsCache.length === 0) {
-    container.innerHTML = '<div class="empty-state">No programs uploaded yet. Use the form below to add one.</div>';
-    return;
+  switch(S.moment){
+    case 1: renderMoment1(a); break;
+    case 2: renderMoment2(a); break;
+    case 3: renderMoment3(a); break;
+    case 4: renderMoment4(a); break;
+    case 5: renderMoment5(a); break;
+    case 6: renderMoment6(a); break;
+    default: a.innerHTML = '';
   }
+}
 
-  container.innerHTML = programsCache.map(p => `
-    <div class="card program-list-card">
-      <div class="program-info">
-        <div class="program-name">${p.name}</div>
-        <div class="program-meta"><span class="mono">${p.id}</span> — ${p.domain} — ${p.units} units</div>
-      </div>
-      <div style="display:flex;gap:6px;align-items:center">
-        <span class="badge badge-cefr">${p.cefr_level}</span>
-      </div>
+// ── MOMENT 1: Topic Creation ──────────────────────────────────
+function renderMoment1(a){
+  a.innerHTML = `
+    <h3>Topic Creation</h3>
+    <p class="desc">Tell us about your SENA program. The engine will generate macrotheme suggestions.</p>
+    <div class="form-row">
+      <div class="fg"><label class="fl">Program Name</label>
+        <input type="text" id="f_name" value="${S.m1.name}" placeholder="e.g. Inglés Marítimo y Portuario"></div>
+      <div class="fg"><label class="fl">Ficha Code</label>
+        <input type="text" id="f_ficha" value="${S.m1.ficha}" placeholder="e.g. 2567890"></div>
     </div>
-  `).join('');
+    <div class="form-row">
+      <div class="fg"><label class="fl">Program Type</label>
+        <select id="f_type">
+          <option value="técnica" ${S.m1.type==='técnica'?'selected':''}>Técnica (6 macrothemes)</option>
+          <option value="tecnología" ${S.m1.type==='tecnología'?'selected':''}>Tecnología (10 macrothemes)</option>
+        </select></div>
+      <div class="fg"><label class="fl">AI Provider</label>
+        <select id="f_provider" onchange="S.provider=this.value">
+          <option value="anthropic" ${S.provider==='anthropic'?'selected':''}>Claude (Anthropic)</option>
+          <option value="google" ${S.provider==='google'?'selected':''}>Gemini (Google)</option>
+        </select></div>
+    </div>
+    <div class="fg"><label class="fl">Base Themes / Curriculum Input</label>
+      <textarea id="f_themes" placeholder="Describe the technical and functional themes from the curriculum design...">${S.m1.themes}</textarea></div>
+    <div class="btn-row">
+      <label class="chk-label"><input type="checkbox" id="f_dry" ${S.dryRun?'checked':''} onchange="S.dryRun=this.checked"> Test mode (no AI calls)</label>
+      <div style="flex:1"></div>
+      <button class="btn btn-p" onclick="submitMoment1()">Generate Macrothemes</button>
+    </div>`;
 }
+async function submitMoment1(){
+  S.m1.name = $('#f_name').value.trim();
+  S.m1.ficha = $('#f_ficha').value.trim();
+  S.m1.type = $('#f_type').value;
+  S.m1.themes = $('#f_themes').value.trim();
+  if(!S.m1.name || !S.m1.ficha || !S.m1.themes){ alert('Please fill in all required fields.'); return; }
 
-function selectProgram(id) {
-  selectedProgramId = id;
-  const p = programsCache.find(x => x.id === id);
-  if (!p) return;
+  addUsr(`<p><strong>${S.m1.name}</strong> (${S.m1.type}) — Ficha ${S.m1.ficha}</p><p>${S.m1.themes}</p>`);
 
-  document.getElementById('selectedProgramName').textContent = p.name;
-  document.getElementById('selectedProgramMeta').textContent = `${p.domain} — ${p.cefr_level} — ${p.units} units`;
-  document.getElementById('step2Section').classList.remove('hidden');
-  renderProgramCards();
-
-  // Scroll to config
-  document.getElementById('step2Section').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-}
-
-function deselectProgram() {
-  selectedProgramId = null;
-  document.getElementById('step2Section').classList.add('hidden');
-  renderProgramCards();
-}
-
-// ─── Start Run ──────────────────────────────────────────────────
-async function startRun() {
-  if (!selectedProgramId) return;
-
-  const btn = document.getElementById('startBtn');
-  btn.disabled = true;
-  btn.textContent = 'Starting...';
-
-  try {
-    const body = {
-      program_id: selectedProgramId,
-      dry_run: document.getElementById('dryRunCheck').checked,
-      profile: document.getElementById('profileSelect').value || 'balanced',
-      provider: document.getElementById('providerSelect').value,
-    };
-    const r = await fetch(`${API}/runs`, {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(body),
+  // Create program
+  const spinner = addSpinner('Creating program configuration...');
+  try{
+    const r = await fetch(`${API}/programs/create-from-form`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ program_name:S.m1.name, ficha:S.m1.ficha, program_type:S.m1.type, themes_input:S.m1.themes }),
     });
     const data = await r.json();
-    activeRunId = data.run_id;
-    startPolling(data.run_id);
-    loadRuns();
-  } catch (e) {
-    alert('Failed to start run: ' + e.message);
-  } finally {
-    btn.disabled = false;
-    btn.textContent = 'Generate Learning Guides';
+    S.programId = data.program_id;
+    S.programName = data.program_name;
+    spinner.remove();
+    addSys(`<p>Program created: <strong>${data.program_name}</strong></p><p>Now generating macrotheme suggestions...</p>`);
+
+    // Step: run PM-1.1
+    S.status = 'generating';
+    renderInput();
+    const step = await stepRun();
+    spinner.remove();
+    handleStepResponse(step);
+  }catch(e){
+    spinner.remove();
+    addSys(`<p style="color:var(--rd)">Error: ${e.message}</p>`);
+    S.status = 'idle';
+    renderInput();
   }
 }
 
-// ─── Polling ────────────────────────────────────────────────────
-function startPolling(runId) {
-  activeRunId = runId;
-  document.getElementById('activeRunSection').classList.remove('hidden');
-  if (pollTimer) clearInterval(pollTimer);
-  pollRun(runId);
-  pollTimer = setInterval(() => pollRun(runId), 3000);
+// ── G0: Macrotheme Selection ──────────────────────────────────
+function renderG0(a){
+  const suggestions = S.g0_suggestions;
+  a.innerHTML = `
+    <h3>Select Macrotheme</h3>
+    <p class="desc">Choose one of the suggested macrothemes, or enter your own.</p>
+    <div class="radio-grp" id="g0radios">
+      ${suggestions.map((s,i)=>`<label><input type="radio" name="macrotheme" value="${s}" ${i===0?'checked':''}> ${s}</label>`).join('')}
+      <label><input type="radio" name="macrotheme" value="__custom" id="g0custom_radio"> Custom:</label>
+    </div>
+    <div class="fg" style="margin-top:6px"><input type="text" id="g0custom" placeholder="Enter your own macrotheme..." onfocus="document.getElementById('g0custom_radio').checked=true"></div>
+    <div class="btn-row"><div style="flex:1"></div>
+      <button class="btn btn-p" onclick="submitG0()">Confirm Macrotheme</button>
+    </div>`;
+}
+async function submitG0(){
+  const checked = document.querySelector('input[name=macrotheme]:checked');
+  if(!checked) return;
+  let val = checked.value;
+  if(val==='__custom') val = $('#g0custom').value.trim();
+  if(!val){ alert('Please select or enter a macrotheme.'); return; }
+
+  S.m2.macrotheme = val;
+  addUsr(`<p>Macrotheme: <strong>${val}</strong></p>`);
+
+  await fetch(`${API}/runs/${S.runId}/gate/G0`, {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ macrotheme: val }),
+  });
+
+  S.moment = 2; S.status = 'idle';
+  updateMomentBar();
+  addSys(`<p>Macrotheme set. Now let's define the program universe and scope.</p>`);
+  renderInput();
 }
 
-async function pollRun(runId) {
-  try {
-    const r = await fetch(`${API}/runs/${runId}`);
-    const data = await r.json();
-    renderActiveRun(data);
+// ── MOMENT 2: Universe Setup ──────────────────────────────────
+function renderMoment2(a){
+  a.innerHTML = `
+    <h3>Setting the Universe</h3>
+    <p class="desc">Define the CEFR level, competency, and program scope. The engine will generate the scope & sequence and curate authentic texts.</p>
+    <div class="form-row">
+      <div class="fg"><label class="fl">CEFR Level</label>
+        <select id="f_cefr">
+          ${['A1.1','A1.2','A2.1','A2.2','B1.1','B1.2','B2.1','B2.2'].map(c=>
+            `<option value="${c}" ${S.m2.cefr===c?'selected':''}>${c}</option>`).join('')}
+        </select></div>
+      <div class="fg"><label class="fl">Domain</label>
+        <input type="text" id="f_domain" value="${S.m2.domain}" placeholder="e.g. maritime, logistics, tourism"></div>
+    </div>
+    <div class="fg"><label class="fl">Competencia (optional)</label>
+      <input type="text" id="f_comp" value="${S.m2.competencia}" placeholder="Program competency statement"></div>
+    <div class="fg"><label class="fl">Resultado de Aprendizaje (optional)</label>
+      <input type="text" id="f_rap" value="${S.m2.rap}" placeholder="Learning outcome statement"></div>
+    <div class="btn-row"><div style="flex:1"></div>
+      <button class="btn btn-p" onclick="submitMoment2()">Generate Scope & Sequence</button>
+    </div>`;
+}
+async function submitMoment2(){
+  S.m2.cefr = $('#f_cefr').value;
+  S.m2.domain = $('#f_domain').value.trim() || 'general';
+  S.m2.competencia = $('#f_comp').value.trim();
+  S.m2.rap = $('#f_rap').value.trim();
 
-    if (['complete', 'error'].includes(data.status)) {
-      clearInterval(pollTimer);
-      pollTimer = null;
-      loadRuns();
+  addUsr(`<p>CEFR: <strong>${S.m2.cefr}</strong> | Domain: <strong>${S.m2.domain}</strong></p>`);
+
+  // Update program config
+  const spinner = addSpinner('Updating program configuration...');
+  await fetch(`${API}/programs/${S.programId}/update-universe`, {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({
+      macrotheme: S.m2.macrotheme, cefr_level: S.m2.cefr,
+      competencia: S.m2.competencia||null, rap: S.m2.rap||null,
+      domain: S.m2.domain,
+    }),
+  });
+  spinner.remove();
+
+  addSys(`<p>Configuration saved. Generating scope & sequence (PM-1.2)...</p>`);
+  S.status = 'generating';
+  renderInput();
+  const step = await stepRun();
+  handleStepResponse(step);
+}
+
+// ── G1: Text Selection ────────────────────────────────────────
+function renderG1(a){
+  const texts = S.g1_texts;
+  a.innerHTML = `
+    <h3>Select Authentic Texts</h3>
+    <p class="desc">Choose the texts that will anchor your learning guides. These should pass the 4 Cs: Content, Communication, Cognition, Culture.</p>
+    <div class="radio-grp" id="g1radios">
+      ${texts.map((t,i)=>`<label><input type="checkbox" name="g1text" value="${t.id||i}" ${i<2?'checked':''}> <div><strong>${t.title||t.name||`Text ${i+1}`}</strong><br><span style="font-size:12px;color:var(--t2)">${t.genre||t.description||''}</span></div></label>`).join('')}
+    </div>
+    <div class="btn-row"><div style="flex:1"></div>
+      <button class="btn btn-p" onclick="submitG1()">Confirm Text Selection</button>
+    </div>`;
+}
+async function submitG1(){
+  const checked = [...document.querySelectorAll('input[name=g1text]:checked')].map(e=>e.value);
+  if(checked.length===0){ alert('Please select at least one text.'); return; }
+  addUsr(`<p>Selected ${checked.length} text(s)</p>`);
+
+  await fetch(`${API}/runs/${S.runId}/gate/G1`, {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ selected_texts: checked }),
+  });
+
+  S.moment = 3; S.status = 'idle';
+  updateMomentBar();
+  addSys(`<p>Texts selected! Now building the Learning Guide — this is the main content generation phase.</p>
+    <p style="font-size:12px;color:var(--t3);margin-top:4px">Generating PM-2.1 through PM-2.10 for each unit, plus evaluation instruments.</p>`);
+  renderInput();
+  // Auto-advance
+  advanceStep();
+}
+
+// ── MOMENT 3: Building LG ─────────────────────────────────────
+function renderMoment3(a){
+  if(S.status==='waiting_human' && S.currentGate==='G2'){
+    renderG2(a); return;
+  }
+  a.innerHTML = `
+    <h3>Building the Learning Guide</h3>
+    <p class="desc">The engine is generating PM-2.1 through PM-2.10 plus PM-4.1 for each unit. ${S.unitsTotal>0?`(${S.unitsTotal} units)`:''}</p>
+    <div class="btn-row"><div style="flex:1"></div>
+      <button class="btn btn-p" onclick="advanceStep()">Continue Generation</button>
+    </div>`;
+}
+// G2: Archetype Selection
+function renderG2(a){
+  const archs = S.g2_archetypes;
+  a.innerHTML = `
+    <h3>Choose Teaching Style</h3>
+    <p class="desc">Select the archetype for <strong>${S.currentPm}</strong>${S.currentUnit?` (Unit ${S.currentUnit})`:''}.</p>
+    <div id="g2cards">
+      ${archs.map((ar,i)=>`
+        <div class="card-sel ${i===0?'sel':''}" onclick="selectArchetype(this,'${ar.id}')" data-id="${ar.id}">
+          <div class="cs-name">${ar.name}</div>
+          <div class="cs-desc">${ar.description}</div>
+          <div class="cs-badges">
+            <span class="bdg bdg-${ar.interactivity||'med'}">${ar.interactivity||'medium'}</span>
+            <span class="bdg bdg-${ar.generation_complexity||'simple'}">${ar.generation_complexity||'moderate'}</span>
+          </div>
+        </div>`).join('')}
+    </div>
+    <div class="btn-row"><div style="flex:1"></div>
+      <button class="btn btn-p" id="g2submit" onclick="submitG2()">Confirm Archetype</button>
+    </div>`;
+}
+function selectArchetype(el, id){
+  $$('#g2cards .card-sel').forEach(c=>c.classList.remove('sel'));
+  el.classList.add('sel');
+  el.dataset.selected = '1';
+}
+async function submitG2(){
+  const sel = $('#g2cards .card-sel.sel');
+  if(!sel) return;
+  const archId = sel.dataset.id;
+  addUsr(`<p>Archetype: <strong>${archId}</strong> for ${S.currentPm}</p>`);
+
+  await fetch(`${API}/runs/${S.runId}/gate/G2/${S.currentPm}`, {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ archetype_id: archId }),
+  });
+
+  S.status = 'idle';
+  renderInput();
+  advanceStep();
+}
+
+// ── MOMENT 4: Achiever's Outputs ──────────────────────────────
+function renderMoment4(a){
+  a.innerHTML = `
+    <h3>Achiever's Outputs</h3>
+    <p class="desc">${S.currentMessage||'The engine can generate additional materials for students.'}</p>
+    <div class="btn-row">
+      <button class="btn btn-s" onclick="confirmProduct(true)">Yes, generate it</button>
+      <button class="btn" onclick="confirmProduct(false)">Skip this one</button>
+    </div>`;
+}
+
+// ── MOMENT 5: Instructor's Playbook ───────────────────────────
+function renderMoment5(a){
+  a.innerHTML = `
+    <h3>Instructor's Playbook</h3>
+    <p class="desc">${S.currentMessage||'Optional instructor materials.'}</p>
+    <div class="btn-row">
+      <button class="btn btn-s" onclick="confirmProduct(true)">Yes, generate it</button>
+      <button class="btn" onclick="confirmProduct(false)">Skip this one</button>
+    </div>`;
+}
+
+// ── MOMENT 6: Validation & Export ─────────────────────────────
+function renderMoment6(a){
+  if(S.validation){
+    a.innerHTML = `
+      <h3>Validation Report</h3>
+      <p class="desc">${S.validation}</p>
+      <div class="btn-row">
+        <button class="btn btn-p" onclick="advanceStep()">Continue to Export</button>
+      </div>`;
+  } else {
+    a.innerHTML = `
+      <h3>Final Export</h3>
+      <p class="desc">Ready to export all generated files.</p>
+      <div class="btn-row">
+        <button class="btn btn-p" onclick="advanceStep()">Generate Export</button>
+      </div>`;
+  }
+}
+
+// ═══ API CALLS ════════════════════════════════════════════════
+async function stepRun(){
+  try{
+    const r = await fetch(`${API}/runs/step`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        program_id: S.programId, dry_run: S.dryRun,
+        profile: 'balanced', provider: S.provider,
+      }),
+    });
+    return await r.json();
+  }catch(e){ return { action:'error', status:'error', message:e.message }; }
+}
+
+function handleStepResponse(step){
+  if(step.action==='run_pm'){
+    S.currentPm = step.pm_id;
+    S.currentUnit = step.unit;
+    const preview = step.preview ? `<div class="preview">${escHtml(step.preview)}...</div>` : '';
+    const tokens = step.tokens_used ? `<div class="tokens">${step.tokens_used.toLocaleString()} tokens</div>` : '';
+    addSys(`<p>${step.message}</p>${preview}${tokens}`);
+  }
+  else if(step.action==='checkpoint'){
+    S.status = step.status;
+    S.currentGate = step.gate;
+    S.currentPm = step.pm_id;
+    addSys(`<p>${step.message}</p>`);
+
+    if(step.gate==='G0'){
+      // Extract suggestions from the PM-1.1 output
+      extractMacrothemeSuggestions();
+      S.moment = 1; // Still in moment 1 until G0 is resolved
     }
-  } catch {}
-}
-
-function renderActiveRun(data) {
-  const card = document.getElementById('activeRunCard');
-  const statusClass = `status-${data.status}`;
-  const progress = data.total_units > 0 ? (data.units_completed / data.total_units * 100) : 0;
-  const p = programsCache.find(x => x.id === data.program_id);
-  const programLabel = p ? p.name : data.program_id;
-
-  let errorsHtml = '';
-  if (data.errors && data.errors.length > 0) {
-    errorsHtml = `<div class="error-log">${data.errors.map(e => `${e.pm_id || '?'}: ${e.message}`).join('<br>')}</div>`;
+    else if(step.gate==='G1'){
+      S.g1_texts = extractTextSuggestions();
+      S.moment = 2;
+    }
+    else if(step.gate==='G2'){
+      fetchArchetypes(step.pm_id);
+      S.moment = 3;
+    }
+    updateMomentBar();
   }
-
-  card.innerHTML = `
-    <div class="run-header">
-      <div>
-        <span class="run-id">${data.run_id.slice(0, 8)}</span>
-        <span style="font-size:13px;color:var(--text-dim);margin-left:8px">${programLabel}</span>
-      </div>
-      <span class="status-badge ${statusClass}">${data.status}</span>
-    </div>
-    <div class="progress-bar"><div class="progress-fill" style="width:${progress}%"></div></div>
-    <div class="run-stats">
-      <div class="stat"><span class="stat-label">Units:</span> <span class="stat-value">${data.units_completed}/${data.total_units}</span></div>
-      <div class="stat"><span class="stat-label">Current PM:</span> <span class="stat-value">${data.current_pm || '—'}</span></div>
-      <div class="stat"><span class="stat-label">Tokens:</span> <span class="stat-value">${data.total_tokens.toLocaleString()}</span></div>
-      <div class="stat"><span class="stat-label">API calls:</span> <span class="stat-value">${data.total_api_calls}</span></div>
-      <div class="stat"><span class="stat-label">Cost:</span> <span class="stat-value">$${data.cost_estimate_usd.toFixed(4)}</span></div>
-    </div>
-    ${data.status === 'running' ? `<div class="pm-indicator">Generating ${data.current_pm || '...'} for unit ${data.current_unit || '...'}</div>` : ''}
-    ${errorsHtml}
-    ${data.status === 'complete' ? renderFiles(data.run_id) : ''}
-  `;
-}
-
-function renderFiles(runId) {
-  return `<div class="files-section">
-    <button class="btn" onclick="loadFiles('${runId}', this)">Show Output Files</button>
-    <div id="files-${runId}"></div>
-  </div>`;
-}
-
-async function loadFiles(runId, btn) {
-  btn.disabled = true;
-  btn.textContent = 'Loading...';
-  try {
-    const r = await fetch(`${API}/runs/${runId}/files`);
-    const data = await r.json();
-    const container = document.getElementById(`files-${runId}`);
-    if (data.files.length === 0) {
-      container.innerHTML = '<div style="font-size:13px;color:var(--text-dim);margin-top:8px">No files</div>';
+  else if(step.action==='confirm_optional'){
+    S.status = step.status;
+    S.currentConfirmation = step.confirmation_id;
+    S.currentPm = step.pm_id;
+    S.currentMessage = step.message;
+    if(step.pm_id.startsWith('PM-3.3')||step.pm_id.startsWith('PM-3.4')||step.pm_id.startsWith('PM-4.2')){
+      S.moment = 4;
     } else {
-      container.innerHTML = `<div style="margin-top:8px">${data.files.map(f => `
-        <div class="file-row">
-          <span class="file-name">${f.name}</span>
-          <span class="file-size">${(f.size / 1024).toFixed(1)} KB</span>
-          <a class="file-download" href="${API}/runs/${runId}/files/${f.name}" download>Download</a>
-        </div>
-      `).join('')}</div>`;
+      S.moment = 5;
     }
-  } catch (e) {
-    btn.textContent = 'Error';
+    updateMomentBar();
+    addSys(`<p>${step.message}</p>`);
+  }
+  else if(step.action==='validate'){
+    S.validation = step.message;
+    S.moment = 6;
+    updateMomentBar();
+    addSys(`<p>${step.message}</p>`);
+  }
+  else if(step.action==='export'){
+    S.moment = 6;
+    S.status = 'complete';
+    updateMomentBar();
+    addSys(`<p style="color:var(--gr)">${step.message}</p>`);
+  }
+  else if(step.action==='done'){
+    S.status = 'complete';
+    addSys(`<p style="color:var(--gr)">${step.message}</p>`);
+  }
+  else if(step.action==='error'){
+    S.status = 'error';
+    addSys(`<p style="color:var(--rd)">Error: ${step.message}</p>`);
+  }
+  renderInput();
+}
+
+async function advanceStep(){
+  S.status = 'generating';
+  renderInput();
+  const step = await stepRun();
+  handleStepResponse(step);
+}
+
+async function confirmProduct(confirmed){
+  const confId = S.currentConfirmation;
+  const pmId = S.currentPm;
+  addUsr(`<p>${confirmed ? 'Yes, generate' : 'Skip'} <strong>${pmId}</strong></p>`);
+
+  // Map confirmation to endpoint
+  const confMap = {'C-1':'C-1','C-2':'C-2','C-3':'C-3','C-4':'C-4','C-5':'C-5'};
+  const endpoint = confMap[confId] || confId;
+
+  await fetch(`${API}/runs/${S.runId}/confirm/${endpoint}`, {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ confirmed }),
+  });
+
+  if(confirmed){
+    S.confirmedProducts.push(pmId);
+    addSys(`<p>Generating ${S.currentPm}...</p>`);
+    S.status = 'generating';
+    renderInput();
+    const step = await stepRun();
+    handleStepResponse(step);
+  } else {
+    S.rejectedProducts.push(pmId);
+    addSys(`<p>Skipped. Moving on...</p>`);
+    S.status = 'idle';
+    renderInput();
+    advanceStep();
   }
 }
 
-// ─── Recent Runs ────────────────────────────────────────────────
-async function loadRuns() {
-  try {
-    const r = await fetch(`${API}/runs`);
-    const runs = await r.json();
-    const container = document.getElementById('runsList');
+// ═══ HELPERS ══════════════════════════════════════════════════
+async function fetchArchetypes(pmId){
+  try{
+    const r = await fetch(`${API}/archetypes/${pmId}`);
+    const data = await r.json();
+    S.g2_archetypes = data.archetypes || [];
+  }catch{ S.g2_archetypes = []; }
+}
 
-    if (runs.length === 0) {
-      container.innerHTML = '<div class="empty-state">No runs yet. Go to Generate to create your first learning guides.</div>';
+function extractMacrothemeSuggestions(){
+  // Try to extract from PM-1.1 output
+  // In a real implementation, the backend would return these
+  // For now, generate reasonable defaults based on program type
+  if(S.m1.type==='tecnología'){
+    S.g0_suggestions = [
+      'Industry 4.0 and Digital Transformation',
+      'Supply Chain Optimization',
+      'Quality Management Systems',
+      'Environmental Sustainability',
+      'Project Management Fundamentals',
+      'Data Analytics for Business',
+      'Customer Experience Design',
+      'Lean Manufacturing',
+      'Safety and Risk Management',
+      'Innovation and Entrepreneurship',
+    ];
+  } else {
+    S.g0_suggestions = [
+      'Workplace Communication',
+      'Safety Protocols and Procedures',
+      'Technical Documentation',
+      'Customer Service Excellence',
+      'Team Collaboration',
+      'Industry Standards and Compliance',
+    ];
+  }
+  renderG0($('#inputArea'));
+}
+
+function extractTextSuggestions(){
+  return [
+    { id:'text-1', title:'Introduction to the Domain', genre:'Technical Article', description:'Foundational overview of key concepts' },
+    { id:'text-2', title:'Workplace Scenarios', genre:'Authentic Dialogues', description:'Real-world communication examples' },
+    { id:'text-3', title:'Technical Manual Excerpt', genre:'Reference Material', description:'Procedures and instructions' },
+  ];
+}
+
+function escHtml(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+async function loadFiles(){
+  try{
+    const r = await fetch(`${API}/runs/${S.runId}/files`);
+    const data = await r.json();
+    const c = $('#filesContainer');
+    if(!data.files||data.files.length===0){
+      c.innerHTML = '<p style="font-size:13px;color:var(--t3);margin-top:8px">No files found.</p>';
       return;
     }
-
-    container.innerHTML = runs.slice(0, 20).map(run => {
-      const statusClass = `status-${run.status}`;
-      const p = programsCache.find(x => x.id === run.program_id);
-      const programLabel = p ? p.name : run.program_id;
-      return `<div class="card" style="cursor:pointer" onclick="${run.status === 'running' ? `startPolling('${run.run_id}')` : ''}">
-        <div style="display:flex;justify-content:space-between;align-items:center">
-          <div>
-            <span class="run-id">${run.run_id.slice(0, 8)}</span>
-            <span style="font-size:13px;color:var(--text-dim);margin-left:8px">${programLabel}</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:8px">
-            <span style="font-size:12px;color:var(--text-dim)">${run.created_at ? new Date(run.created_at).toLocaleString() : ''}</span>
-            <span class="status-badge ${statusClass}">${run.status}</span>
-          </div>
-        </div>
-      </div>`;
-    }).join('');
-  } catch {}
+    c.innerHTML = data.files.map(f=>`
+      <div class="file-row">
+        <span class="mono" style="font-size:12px">${f.name}</span>
+        <span style="font-size:12px;color:var(--t3)">${(f.size/1024).toFixed(1)} KB</span>
+        <a class="file-dl" href="${API}/runs/${S.runId}/files/${f.name}" download>Download</a>
+      </div>`).join('');
+  }catch(e){
+    $('#filesContainer').innerHTML = `<p style="font-size:13px;color:var(--rd)">Error loading files: ${e.message}</p>`;
+  }
 }
 
-// ─── Upload Program ─────────────────────────────────────────────
-async function uploadProgram(event) {
-  const file = event.target.files[0];
-  if (!file) return;
+// ═══ INIT ═════════════════════════════════════════════════════
+function restart(){
+  S = {
+    moment:1, status:'idle', programId:null, programName:'',
+    runId:null, currentPm:null, currentUnit:null,
+    confirmedProducts:[], rejectedProducts:[],
+    unitsTotal:0, provider:'anthropic', dryRun:false,
+    m1:{name:'',ficha:'',type:'técnica',themes:''},
+    m2:{macrotheme:'',cefr:'A1.1',competencia:'',rap:'',domain:'general'},
+    g0_suggestions:[], g1_texts:[], g2_archetypes:[], validation:null,
+  };
+  $('#conv').innerHTML = '';
+  updateMomentBar();
+  init();
+}
 
-  const area = document.getElementById('uploadArea');
-  area.textContent = 'Uploading...';
+async function init(){
+  checkHealth();
+  addSys(`<p>Welcome to <strong>LG Factory</strong> — your automated ESP curriculum generator for SENA.</p>
+    <p>I'll guide you through <strong>6 moments</strong> to create a complete GFPI-F-135 compliant learning guide:</p>
+    <ol style="margin:10px 0 0 18px;font-size:13px;color:var(--t2)">
+      <li><strong>Topic Creation</strong> — Define your program and generate macrotheme suggestions</li>
+      <li><strong>Universe Setup</strong> — Set CEFR level, domain, and scope & sequence</li>
+      <li><strong>Building the LG</strong> — Generate all 10 pedagogical modules per unit</li>
+      <li><strong>Achiever's Outputs</strong> — Optional: Canva deck, workbook, quiz</li>
+      <li><strong>Instructor's Playbook</strong> — Optional: Session mapping and build-out</li>
+      <li><strong>Validation & Export</strong> — Coherence check and file export</li>
+    </ol>
+    <p style="margin-top:12px;font-size:13px;color:var(--t3)">Let's start with your program details.</p>`);
 
-  try {
-    const text = await file.text();
-    const data = JSON.parse(text);
-
-    const r = await fetch(`${API}/programs`, {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(data),
-    });
-
-    if (r.ok) {
-      area.textContent = `Uploaded: ${data.name || data.id}`;
-      loadPrograms();
-    } else {
-      const err = await r.json();
-      area.textContent = `Error: ${err.detail || 'Upload failed'}`;
+  // Check for existing runs
+  try{
+    const r = await fetch(`${API}/runs`);
+    const runs = await r.json();
+    const active = runs.find(r=>r.status==='running'||r.status==='waiting_human'||r.status==='waiting_confirmation');
+    if(active){
+      S.runId = active.run_id;
+      S.programId = active.program_id;
+      S.moment = active.current_moment || 1;
+      updateMomentBar();
+      addSys(`<p style="color:var(--yl)">Found an active run (${active.run_id.slice(0,8)}). Continuing from Moment ${S.moment}.</p>`);
+      advanceStep();
+      return;
     }
-  } catch (e) {
-    area.textContent = `Error: ${e.message}`;
-  }
+  }catch{}
 
-  setTimeout(() => {
-    area.textContent = 'Drop a program JSON file here or click to browse';
-  }, 3000);
+  renderInput();
 }
 
-// ─── Drag and Drop ──────────────────────────────────────────────
-const uploadArea = document.getElementById('uploadArea');
-uploadArea.addEventListener('dragover', e => { e.preventDefault(); uploadArea.style.borderColor = 'var(--accent)'; });
-uploadArea.addEventListener('dragleave', () => { uploadArea.style.borderColor = 'var(--border)'; });
-uploadArea.addEventListener('drop', e => {
-  e.preventDefault();
-  uploadArea.style.borderColor = 'var(--border)';
-  const file = e.dataTransfer.files[0];
-  if (file && file.name.endsWith('.json')) {
-    const input = document.getElementById('fileInput');
-    const dt = new DataTransfer();
-    dt.items.add(file);
-    input.files = dt.files;
-    uploadProgram({target: input});
-  }
-});
-
-// ─── Init ───────────────────────────────────────────────────────
-checkHealth();
-loadPrograms();
-loadRuns();
-setInterval(checkHealth, 30000);
+init();
 </script>
 </body>
 </html>
