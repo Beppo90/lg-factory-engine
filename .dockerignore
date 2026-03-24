@@ -1,10 +1,40 @@
-__pycache__
-*.pyc
-.env
+# Git
 .git
 .gitignore
-.DS_Store
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Output data (mounted as volume)
 output/
-tests/
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.venv
+venv
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docs (not needed in container)
 *.md
-!requirements.txt
+specs/
+master-prompts/
+tests/
+
+# Docker (avoid recursive builds)
+docker-compose*.yml
+nginx*.conf
+setup-ssl.sh

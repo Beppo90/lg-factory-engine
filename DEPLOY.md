@@ -92,6 +92,8 @@ gcloud compute scp --recurse lg-factory-engine lg-factory:~/
 
 ### Option B: FileZilla (SFTP)
 
+> **Prerequisite:** You must run `gcloud compute ssh lg-factory` at least once from your Mac terminal first. This auto-generates the SSH key pair at `~/.ssh/google_compute_engine` that FileZilla needs. If you haven't installed `gcloud` yet, follow Option A's install steps first.
+
 1. In GCP Console → **Compute Engine → VM instances**
 2. Click the **SSH** dropdown arrow → **View gcloud command**
 3. Copy the command, it shows your username and external IP
@@ -104,8 +106,6 @@ gcloud compute scp --recurse lg-factory-engine lg-factory:~/
 | **Port** | `22` |
 | **Logon type** | Key file |
 | **Key file** | `~/.ssh/google_compute_engine` |
-
-> GCP auto-generates SSH keys. The private key is at `~/.ssh/google_compute_engine` on your Mac.
 
 5. Upload the `lg-factory-engine` folder to the remote home directory (`/home/username/`)
 
@@ -172,9 +172,11 @@ Test in browser: open `http://YOUR_VPS_IP` — you should see the LG Factory das
 
 ---
 
-## Step 8: Open Firewall Ports (GCP Console)
+## Step 8: Verify Firewall Ports (GCP Console)
 
-GCP has its own firewall — you configure it in the console, not via `ufw`.
+If you checked **"Allow HTTP traffic"** and **"Allow HTTPS traffic"** in Step 2, ports 80 and 443 are already open. Verify by going to **VPC Network → Firewall** — you should see `default-allow-http` and `default-allow-https` rules.
+
+If you forgot to check those boxes, create a rule manually:
 
 1. Go to **VPC Network → Firewall** (or search "Firewall" in the top bar)
 2. Click **Create Firewall Rule**
