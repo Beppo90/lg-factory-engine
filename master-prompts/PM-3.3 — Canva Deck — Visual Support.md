@@ -131,6 +131,7 @@ Para CADA slide genera:
 [colores, énfasis, imágenes sugeridas]
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Máximo 7 líneas de texto por slide
 - Diseño consistente en toda la presentación
 - Contraste alto, fuente ≥24pt

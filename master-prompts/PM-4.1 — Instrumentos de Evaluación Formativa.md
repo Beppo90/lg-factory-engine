@@ -282,6 +282,7 @@ Genera:
 - Reglas de uso
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Bilingüe donde aplique
 - Zero Meta-Talk en los instrumentos
 - Conciso — cada instrumento cabe en 1 página

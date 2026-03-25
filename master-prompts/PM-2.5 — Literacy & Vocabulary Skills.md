@@ -202,8 +202,9 @@ E) INTERACTIVE LITERACY — Jigsaw Reading, Read-Pair-Share, Info Gap
 4. Genera APLICACIÓN: transferencia a contexto nuevo
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Nivel CEFR estricto A1.1-A1.2
-- Bilingüe, Zero Meta-Talk
+- Bilingüe Unificada: Instrucción una sola vez en inglés con traducción al español en cursiva. Ejemplo: Read the scenario (*Lee el escenario*). PROHIBIDO usar bloques repeditivos de 'Instrucciones'.
 - Coherencia con PM-2.3 y PM-2.4 (Conjunto A)
 ```
 

@@ -488,8 +488,9 @@ F) HOTS FOCUS — Pensamiento superior (Divergent Questions, Evaluation of Consi
    - F: Producción HOTS (preguntas divergentes, evaluación de consistencia, feedback reflexivo, finales alternativos)
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Nivel CEFR estricto A1.1-A1.2
-- Bilingüe: instrucciones en inglés simple + español en paréntesis
+- Bilingüe Unificada: Instrucción una sola vez en inglés con traducción al español en cursiva. Ejemplo: Read the scenario (*Lee el escenario*). PROHIBIDO usar bloques repeditivos de 'Instrucciones'.
 - Zero Meta-Talk: output listo para imprimir
 - El texto ancla es la FUENTE de todo el reciclaje en PM-2.4 a PM-2.9
 - Coherencia con arquetipos de PM-2.1 y PM-2.2

@@ -282,6 +282,7 @@ Usa esta agrupación como modelo base (ajustable según intensidad):
 Si la guía tiene menos de 24 horas, comprime las sesiones fusionando bloques afines. Si tiene más de 24 horas, expande Reading y Speaking (los más densos).
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Nivel CEFR estricto: el Teacher Talk respeta el nivel de la guía
 - Bilingüe: Teacher Talk en inglés con soporte español si nivel ≤ A1.1
 - Zero Meta-Talk: el output es el playbook operativo, no un ensayo pedagógico

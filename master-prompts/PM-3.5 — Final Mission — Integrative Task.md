@@ -286,6 +286,7 @@ E) GAMIFIED — Misión con mecánicas de juego (Escape Room, Challenge, Competi
    - Vinculada a la Rúbrica Analítica PM-4.1
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Nivel CEFR estricto A1.1-A1.2
 - El escenario es FAMILIAR (no nuevo) — el aprendiz ya conoce el universo
 - El producto es CONSECUENTE de la tarea oral (no ejercicio aislado)

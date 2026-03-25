@@ -411,8 +411,9 @@ E) GENRE-BASED — Dominio de géneros textuales (Genre Analysis, Genre Transfor
    - Rúbrica visible: Format (4) + Grammar (6) + Vocabulary (6) + Clarity (4)
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Nivel CEFR estricto A1.1-A1.2
-- Bilingüe: instrucciones en inglés simple + español en paréntesis
+- Bilingüe Unificada: Instrucción una sola vez en inglés con traducción al español en cursiva. Ejemplo: Read the scenario (*Lee el escenario*). PROHIBIDO usar bloques repeditivos de 'Instrucciones'.
 - Zero Meta-Talk: output listo para imprimir
 - El Language Bank y la Rúbrica son visibles para el aprendiz
 - Coherencia con arquetipos de PM-2.1, PM-2.2, PM-2.3

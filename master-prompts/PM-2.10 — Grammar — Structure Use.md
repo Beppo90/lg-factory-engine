@@ -356,8 +356,9 @@ E) EDITING & ERROR ANALYSIS — Corregir y auto-corregir (Peer Review, Error Ana
 3. Genera TRANSFERENCIA: conexión con funciones de PM-2.9
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Nivel CEFR estricto A1.1-A1.2
-- Bilingüe, Zero Meta-Talk
+- Bilingüe Unificada: Instrucción una sola vez en inglés con traducción al español en cursiva. Ejemplo: Read the scenario (*Lee el escenario*). PROHIBIDO usar bloques repeditivos de 'Instrucciones'.
 - Coherencia con PM-2.9 (Conjunto C) y Conjuntos A y B
 ```
 

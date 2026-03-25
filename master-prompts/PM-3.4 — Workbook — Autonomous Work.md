@@ -170,8 +170,9 @@ Para CADA capítulo genera:
 [Líneas, cajas, espacio para dibujar]
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Nivel CEFR estricto: no exceder el nivel de la guía
-- Bilingüe: instrucciones en inglés + español en paréntesis
+- Bilingüe Unificada: Instrucción una sola vez en inglés con traducción al español en cursiva. Ejemplo: Read the scenario (*Lee el escenario*). PROHIBIDO usar bloques repeditivos de 'Instrucciones'.
 - Zero Meta-Talk: el output es el workbook listo para usar
 - Scaffolding integrado: sentence starters, word banks, modelos
 - Tiempo total ≈6 horas

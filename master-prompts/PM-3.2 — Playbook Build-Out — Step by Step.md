@@ -362,6 +362,7 @@ Genera 5 preguntas de autoevaluación post-sesión:
 5. ¿El trabajo autónomo asignado es realista para mis aprendices?
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Nivel CEFR estricto: Teacher Talk no excede el nivel de la guía
 - Bilingüe: Teacher Talk en inglés + español entre paréntesis si nivel ≤ A1.1
 - Zero Meta-Talk: el output es el plan de clase operativo

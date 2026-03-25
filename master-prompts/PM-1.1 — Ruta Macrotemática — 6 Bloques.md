@@ -132,6 +132,7 @@ Tu tarea: Generar la RUTA MACROTEMÁTICA de 6 bloques para un programa técnico 
 4. Genera una descripción del PROYECTO FORMATIVO ARTICULADOR que conecte las 6 guías como fases de un proyecto real del oficio.
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Exactamente 6 bloques
 - Nombres en inglés profesional (no traducciones literales)
 - Justificaciones en español

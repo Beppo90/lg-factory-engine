@@ -110,6 +110,7 @@ E) INTERACTION DYNAMICS — Mingle, Quiz, Interview Sim, Spin-offs, A Gift
 2. Genera INSTRUCTOR'S GUIDE: Escenario + Criterios de observación (5 criterios, escala 0-1-2) + Errores esperados + Plan B
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Nivel CEFR estricto A1.1-A1.2
 - Bilingüe en Cue Card, Zero Meta-Talk en Cue Card
 - Vacío de información TBLT (no monólogo memorizado)

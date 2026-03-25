@@ -172,6 +172,7 @@ Si no hay errores críticos, ensambla el documento GFPI-F-135 V02:
 - Sección 8: vacía (primera versión)
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - NO generar contenido nuevo — solo ensamblar lo que existe
 - Si falta una sección, reportar como ERROR
 - Mantener formato markdown limpio

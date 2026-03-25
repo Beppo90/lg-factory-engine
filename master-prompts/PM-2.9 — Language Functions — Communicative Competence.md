@@ -309,8 +309,9 @@ E) ACADEMIC & DISCOURSE — Expert Jigsaw, Speech Writers, Socratic Seminar
 4. Genera POST-FUNCTION: transferencia + reflexión pragmática
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Nivel CEFR estricto A1.1-A1.2
-- Bilingüe, Zero Meta-Talk
+- Bilingüe Unificada: Instrucción una sola vez en inglés con traducción al español en cursiva. Ejemplo: Read the scenario (*Lee el escenario*). PROHIBIDO usar bloques repeditivos de 'Instrucciones'.
 - Coherencia con Conjuntos A y B
 ```
 

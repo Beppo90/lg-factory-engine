@@ -183,7 +183,7 @@ def build_docx():
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = p.add_run('Guía de Aprendizaje Completa')
+    run = p.add_run('Instructor Playbook')
     run.font.size = Pt(16)
     run.font.color.rgb = RGBColor(100, 100, 100)
 
@@ -255,6 +255,14 @@ def build_docx():
         p.paragraph_format.space_after = Pt(4)
 
     # ---- CONTENT SECTIONS ----
+    def strip_gfpi_sections(md_content):
+        import re
+        pattern = re.compile(
+            r"<!-- GFPI SECTION: .+?-->.*?<!-- END GFPI SECTION -->",
+            re.DOTALL
+        )
+        return re.sub(pattern, "", md_content).strip()
+
     for filename, section_title in FILES:
         filepath = os.path.join(BASE, filename)
         if not os.path.exists(filepath):
@@ -264,7 +272,8 @@ def build_docx():
         add_page_break(doc)
 
         with open(filepath, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
+            content = strip_gfpi_sections(f.read())
+            lines = content.split('\n')
 
         table_rows = []
         in_code_block = False
@@ -340,7 +349,7 @@ def build_docx():
     run.font.size = Pt(10)
 
     # Save
-    output_path = os.path.join(BASE, "UNIDAD 1 — Ship Overview — Guía Completa.docx")
+    output_path = os.path.join(BASE, "UNIDAD 1 — Ship Overview — Instructor Playbook.docx")
     doc.save(output_path)
     print(f"OK: {output_path}")
     print(f"Size: {os.path.getsize(output_path):,} bytes")

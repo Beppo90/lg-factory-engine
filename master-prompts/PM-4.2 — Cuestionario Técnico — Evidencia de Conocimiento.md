@@ -219,8 +219,9 @@ Tu tarea: Generar el CUESTIONARIO TÉCNICO (IE-01) — Evidencia de Conocimiento
    - Distribución Bloom
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Nivel CEFR estricto: no exceder el nivel de la guía
-- Bilingüe: instrucciones en inglés + español en paréntesis donde sea crítico
+- Bilingüe Unificada: Instrucción una sola vez en inglés con traducción al español en cursiva. Ejemplo: Read the scenario (*Lee el escenario*). PROHIBIDO usar bloques repeditivos de 'Instrucciones'. donde sea crítico
 - Zero Meta-Talk: el output es el cuestionario listo para imprimir
 - Todo el vocabulario debe provenir de los 20 key terms de PM-1.2
 - Todas las estructuras gramaticales deben ser las del grammar target

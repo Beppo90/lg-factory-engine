@@ -300,6 +300,7 @@ Después de ver las 3 fichas, elige 2 stories ganadoras y asigna roles.
 A partir de esas 2 stories se levantará TODO el universo narrativo de la guía.
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Vocabulario: exactamente 20 términos (idealmente extraídos de las stories)
 - Nivel CEFR: A1.1-A1.2
 - Las 3 fuentes DEBEN ser de géneros textuales diferentes

@@ -174,6 +174,15 @@ def markdown_to_docx(doc, md_content: str):
         flush_table(doc, table_rows)
 
 
+def strip_gfpi_sections(md_content: str) -> str:
+    """Remove GFPI sections and their content for the Instructor Playbook."""
+    pattern = re.compile(
+        r"<!-- GFPI SECTION: .+?-->.*?<!-- END GFPI SECTION -->",
+        re.DOTALL
+    )
+    return re.sub(pattern, "", md_content).strip()
+
+
 def generate_unit_docx(unit_outputs: dict, program_name: str, unit_name: str,
                         unit_number: str, cefr: str, grammar_targets: list,
                         key_vocabulary: list, output_path: Path) -> Path:
@@ -211,7 +220,7 @@ def generate_unit_docx(unit_outputs: dict, program_name: str, unit_name: str,
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = p.add_run('Guía de Aprendizaje Completa')
+    run = p.add_run('Instructor Playbook')
     run.font.size = Pt(16)
     run.font.color.rgb = RGBColor(100, 100, 100)
 
@@ -258,7 +267,8 @@ def generate_unit_docx(unit_outputs: dict, program_name: str, unit_name: str,
         if not content:
             continue
         doc.add_page_break()
-        markdown_to_docx(doc, content)
+        clean_content = strip_gfpi_sections(content)
+        markdown_to_docx(doc, clean_content)
 
     # Footer
     doc.add_page_break()

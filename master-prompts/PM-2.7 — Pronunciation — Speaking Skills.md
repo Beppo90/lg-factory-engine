@@ -391,8 +391,9 @@ E) MINIMAL PAIRS — Discriminación (Minimal Pair Drills, Odd One Out, Same or 
    - Tongue Twisters técnicos o oraciones con vocabulario de la guía
 
 ### RESTRICCIONES:
+- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
 - Nivel CEFR estricto A1.1-A1.2
-- Bilingüe: instrucciones en inglés simple + español en paréntesis
+- Bilingüe Unificada: Instrucción una sola vez en inglés con traducción al español en cursiva. Ejemplo: Read the scenario (*Lee el escenario*). PROHIBIDO usar bloques repeditivos de 'Instrucciones'.
 - Zero Meta-Talk: output listo para imprimir
 - Solo fonemas presentes en el vocabulario de esta guía
 - Enfoque en INTELIGIBILIDAD, no acento perfecto
