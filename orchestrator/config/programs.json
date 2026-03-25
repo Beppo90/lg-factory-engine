@@ -1,0 +1,132 @@
+{
+  "programs": {
+    "maritime": {
+      "name": "Inglés Marítimo y Portuario",
+      "code": "MARITIME-001",
+      "domain": "maritime",
+      "cefr": "A1.1-A1.2",
+      "intensity": { "direct_hours": 24, "autonomous_hours": 6 },
+      "session_duration_min": 180,
+      "num_sessions": 8,
+      "universe": {
+        "company": "Caribbean Maritime Lines (CML)",
+        "location": "Cartagena, Colombia",
+        "characters": [
+          "Capitán Rodrigo Herrera — Master, 25 años de experiencia",
+          "Chief Officer Ana Lucía Vargas — Segundo de a bordo",
+          "Third Engineer Pedro Suárez — Ingeniero junior",
+          "Bosun Jorge Martínez — Contramaestre",
+          "Port Agent Diana Castillo — Agente naviero",
+          "VTS Operator Carlos Mendoza — Operador tráfico marítimo"
+        ]
+      },
+      "units": {
+        "1": {
+          "name": "Ship Overview",
+          "grammar_targets": ["demonstratives", "verb_to_be"],
+          "grammar_constraint": {
+            "structures": ["this/that + is", "these/those + are", "subject + is/are + complement"],
+            "restricted": ["present_simple", "imperative", "present_progressive", "modals", "quantifiers"]
+          },
+          "key_vocabulary": [
+            "bridge", "engine room", "deck", "hull", "bow", "stern",
+            "port side", "starboard side", "container ship", "bulk carrier",
+            "tanker", "lifeboat", "life jacket", "fire extinguisher",
+            "gangway", "mooring lines", "hatch", "hold", "superstructure", "propeller"
+          ],
+          "functions": ["describing", "classifying", "locating", "identifying"],
+          "integrative_task": {
+            "name": "The Vessel Inspection",
+            "oral": "PSC inspection simulation",
+            "product": "Vessel Inspection Report"
+          },
+          "authentic_sources": {
+            "story_a": {
+              "title": "PSC Focus: Lifeboats remain a challenging item on ship inspections",
+              "source": "Safety4Sea",
+              "url": "https://safety4sea.com/psc-focus-lifeboats-remain-a-challenging-item-on-ship-inspections/",
+              "genre": "industry_analysis",
+              "role": "reading"
+            },
+            "story_b": {
+              "title": "Parts of a Ship: A Beginner's Tour of the Vessel",
+              "source": "TheSeafarer.com",
+              "url": "https://www.theseafarer.com/seamanship/parts-of-a-ship/",
+              "genre": "educational_guide",
+              "role": "listening"
+            },
+            "story_c": {
+              "title": "Types of Ships: Commercial Vessels Guide",
+              "source": "AM Nautical",
+              "url": "https://www.amnautical.com/blogs/the-mariners-blog/a-guide-to-types-of-ships",
+              "genre": "industry_guide",
+              "role": "backup"
+            }
+          }
+        },
+        "2": {
+          "name": "The Crew",
+          "grammar_targets": ["present_simple", "imperative"],
+          "grammar_constraint": {
+            "structures": ["subject + V(s/es)", "don't + V", "imperative base form"],
+            "restricted": ["demonstratives", "present_progressive", "modals", "quantifiers"]
+          },
+          "key_vocabulary": [
+            "captain", "chief officer", "second officer", "third officer",
+            "chief engineer", "bosun", "able seaman", "ordinary seaman",
+            "deck department", "engine department", "watch-keeping",
+            "safety rounds", "muster roll", "crew list", "command",
+            "maintain", "navigate", "secure", "report", "inspect"
+          ],
+          "functions": ["describing_duties", "giving_orders", "identifying_roles", "reporting_routines"]
+        },
+        "3": {
+          "name": "Places in Port and Position",
+          "grammar_targets": ["present_progressive", "tag_questions"],
+          "key_vocabulary": [
+            "quay", "berth", "pier", "jetty", "dry dock", "terminal",
+            "crane", "gantry crane", "container yard", "anchorage area",
+            "navigation channel", "approach", "berth", "mooring", "unmooring",
+            "alongside", "buoy", "beacon", "VTS", "gangway"
+          ],
+          "functions": ["describing_ongoing", "confirming", "locating_facilities", "reporting_position"]
+        },
+        "4": {
+          "name": "In Port",
+          "grammar_targets": ["quantifiers", "modals"],
+          "key_vocabulary": [
+            "loading", "unloading", "stowage", "lashing", "TEU",
+            "bulk cargo", "containerized cargo", "hazardous cargo",
+            "bill of lading", "cargo manifest", "customs declaration",
+            "port clearance", "pilotage", "towage", "bunkering",
+            "port regulations", "ISPS code", "crane", "hold", "hatch"
+          ],
+          "functions": ["describing_quantities", "expressing_obligation", "making_requests", "giving_advice"]
+        },
+        "5": {
+          "name": "IMO SMCP",
+          "grammar_targets": ["smcp_phrases", "reported_commands", "conditionals"],
+          "key_vocabulary": [
+            "MAYDAY", "PAN PAN", "SECURITÉ", "distress", "urgency",
+            "VHF radio", "channel 16", "position report", "course alteration",
+            "heading", "speed", "anchorage", "man overboard", "fire drill",
+            "abandon ship", "pilot", "tugboat", "VTS", "COLREGS", "GMDSS"
+          ],
+          "functions": ["requesting_information", "requesting_action", "reporting", "acknowledging", "distress_calling"]
+        }
+      }
+    },
+    "adso": {
+      "name": "Análisis y Desarrollo de Software",
+      "code": "228118",
+      "domain": "software_development",
+      "cefr": "A1.1-A1.2",
+      "units": {
+        "1": {
+          "name": "The Hardware Specialist",
+          "grammar_targets": ["verb_to_be", "have_has", "demonstratives", "adjectives"]
+        }
+      }
+    }
+  }
+}

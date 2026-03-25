@@ -1,0 +1,205 @@
+{
+  "pm_chain": [
+    {
+      "phase": "INITIAL",
+      "pm": "PM-1.2",
+      "name": "Scope & Sequence + Curación",
+      "execution": "once_per_unit",
+      "inputs": ["program_config", "unit_config"],
+      "outputs": ["scope_sequence", "curated_sources", "gfpi_sections:1,2,5,6"],
+      "gfpi_sections": ["1-IDENTIFICACION", "2-PRESENTACION", "5-GLOSARIO", "6-REFERENTES"],
+      "handler": "pm_1_2"
+    },
+    {
+      "phase": "FASE2",
+      "pm": "PM-2.1",
+      "name": "The Spark",
+      "execution": "once_per_unit",
+      "archetype_options": 5,
+      "inputs": ["scope_sequence", "curated_sources", "archetype_selection"],
+      "outputs": ["spark_worksheet", "gfpi_section:3.1"],
+      "gfpi_sections": ["3.1-REFLEXION"],
+      "handler": "pm_2_x"
+    },
+    {
+      "phase": "FASE2",
+      "pm": "PM-2.2",
+      "name": "Gap Analysis",
+      "execution": "once_per_unit",
+      "archetype_options": 5,
+      "inputs": ["scope_sequence", "spark_worksheet", "archetype_selection"],
+      "outputs": ["gap_analysis_worksheet", "gfpi_section:3.2"],
+      "gfpi_sections": ["3.2-CONTEXTUALIZACION"],
+      "handler": "pm_2_x"
+    },
+    {
+      "phase": "FASE2",
+      "pm": "PM-2.3",
+      "name": "Reading — The Master Anchor",
+      "execution": "once_per_unit",
+      "archetype_options": 6,
+      "inputs": ["scope_sequence", "story_a", "archetype_selection"],
+      "outputs": ["reading_worksheet", "gfpi_section:3.3-READING"],
+      "gfpi_sections": ["3.3-APROPIACION-READING"],
+      "handler": "pm_2_x"
+    },
+    {
+      "phase": "FASE2",
+      "pm": "PM-2.4",
+      "name": "Writing",
+      "execution": "once_per_unit",
+      "archetype_options": 5,
+      "inputs": ["scope_sequence", "reading_worksheet", "grammar_targets", "archetype_selection"],
+      "outputs": ["writing_worksheet", "gfpi_section:3.3-WRITING"],
+      "gfpi_sections": ["3.3-APROPIACION-WRITING"],
+      "handler": "pm_2_x"
+    },
+    {
+      "phase": "FASE2",
+      "pm": "PM-2.5",
+      "name": "Literacy & Vocabulary",
+      "execution": "once_per_unit",
+      "archetype_options": 5,
+      "inputs": ["scope_sequence", "key_vocabulary", "archetype_selection"],
+      "outputs": ["vocab_worksheet", "gfpi_section:3.3-VOCABULARY"],
+      "gfpi_sections": ["3.3-APROPIACION-VOCABULARY"],
+      "handler": "pm_2_x"
+    },
+    {
+      "phase": "FASE2",
+      "pm": "PM-2.6",
+      "name": "Listening — The Auditory Anchor",
+      "execution": "once_per_unit",
+      "archetype_options": 6,
+      "inputs": ["scope_sequence", "story_b", "archetype_selection"],
+      "outputs": ["listening_worksheet", "audio_script", "gfpi_section:3.3-LISTENING"],
+      "gfpi_sections": ["3.3-APROPIACION-LISTENING"],
+      "handler": "pm_2_x"
+    },
+    {
+      "phase": "FASE2",
+      "pm": "PM-2.7",
+      "name": "Pronunciation",
+      "execution": "once_per_unit",
+      "archetype_options": 5,
+      "inputs": ["scope_sequence", "key_vocabulary", "archetype_selection"],
+      "outputs": ["pronunciation_worksheet", "gfpi_section:3.3-PRONUNCIATION"],
+      "gfpi_sections": ["3.3-APROPIACION-PRONUNCIATION"],
+      "handler": "pm_2_x"
+    },
+    {
+      "phase": "FASE2",
+      "pm": "PM-2.8",
+      "name": "Speaking — Production",
+      "execution": "once_per_unit",
+      "archetype_options": 5,
+      "inputs": ["scope_sequence", "reading_worksheet", "vocab_worksheet", "archetype_selection"],
+      "outputs": ["speaking_worksheet", "gfpi_section:3.4-SPEAKING"],
+      "gfpi_sections": ["3.4-TRANSFERENCIA-SPEAKING"],
+      "handler": "pm_2_x"
+    },
+    {
+      "phase": "FASE2",
+      "pm": "PM-2.9",
+      "name": "Language Functions — Transversal",
+      "execution": "once_per_unit",
+      "archetype_options": 0,
+      "inputs": ["scope_sequence", "functions"],
+      "outputs": ["functions_material", "injection_schedule"],
+      "gfpi_sections": [],
+      "handler": "pm_2_9"
+    },
+    {
+      "phase": "FASE2",
+      "pm": "PM-2.10",
+      "name": "Grammar",
+      "execution": "once_per_unit",
+      "archetype_options": 5,
+      "inputs": ["scope_sequence", "grammar_targets", "grammar_constraint", "archetype_selection"],
+      "outputs": ["grammar_worksheet", "gfpi_section:3.3-GRAMMAR"],
+      "gfpi_sections": ["3.3-APROPIACION-GRAMMAR"],
+      "handler": "pm_2_x"
+    },
+    {
+      "phase": "FASE3",
+      "pm": "PM-3.5",
+      "name": "Final Mission",
+      "execution": "once_per_unit",
+      "archetype_options": 5,
+      "inputs": ["all_worksheets", "archetype_selection"],
+      "outputs": ["mission_brief", "observation_checklist", "product_rubric", "gfpi_section:3.4-MISSION"],
+      "gfpi_sections": ["3.4-TRANSFERENCIA-MISSION"],
+      "handler": "pm_3_5"
+    },
+    {
+      "phase": "FASE3",
+      "pm": "PM-3.1",
+      "name": "Playbook Outline",
+      "execution": "once_for_program",
+      "inputs": ["all_unit_worksheets", "program_config"],
+      "outputs": ["playbook_outline"],
+      "gfpi_sections": [],
+      "handler": "pm_3_1"
+    },
+    {
+      "phase": "FASE3",
+      "pm": "PM-3.2",
+      "name": "Playbook Build-Out",
+      "execution": "once_per_session",
+      "inputs": ["playbook_outline", "session_worksheets"],
+      "outputs": ["build_out"],
+      "gfpi_sections": [],
+      "handler": "pm_3_2"
+    },
+    {
+      "phase": "FASE3",
+      "pm": "PM-3.3",
+      "name": "Canva Deck",
+      "execution": "once_per_unit",
+      "inputs": ["playbook_outline", "build_outs", "worksheets"],
+      "outputs": ["canva_spec"],
+      "gfpi_sections": [],
+      "handler": "pm_3_3"
+    },
+    {
+      "phase": "FASE3",
+      "pm": "PM-3.4",
+      "name": "Workbook",
+      "execution": "once_per_unit",
+      "inputs": ["playbook_outline", "all_worksheets", "key_vocabulary", "grammar_targets"],
+      "outputs": ["workbook", "workbook_answer_key"],
+      "gfpi_sections": [],
+      "handler": "pm_3_4"
+    },
+    {
+      "phase": "FASE3",
+      "pm": "PM-3.6",
+      "name": "GFPI Integrator",
+      "execution": "once_per_unit",
+      "inputs": ["all_gfpi_sections", "program_config"],
+      "outputs": ["gfpi_f_135_complete"],
+      "gfpi_sections": ["FULL"],
+      "handler": "pm_3_6"
+    },
+    {
+      "phase": "FASE4",
+      "pm": "PM-4.1",
+      "name": "Evaluación Formativa",
+      "execution": "once_per_unit",
+      "inputs": ["all_worksheets", "final_mission"],
+      "outputs": ["observation_checklist_final", "product_rubric_final", "feedback_loop"],
+      "gfpi_sections": ["4-EVIDENCIAS"],
+      "handler": "pm_4_1"
+    },
+    {
+      "phase": "FASE4",
+      "pm": "PM-4.2",
+      "name": "Cuestionario Técnico",
+      "execution": "once_per_unit",
+      "inputs": ["scope_sequence", "reading_worksheet", "listening_worksheet", "grammar_targets", "key_vocabulary"],
+      "outputs": ["questionnaire", "answer_key"],
+      "gfpi_sections": ["4-EVIDENCIAS"],
+      "handler": "pm_4_2"
+    }
+  ]
+}

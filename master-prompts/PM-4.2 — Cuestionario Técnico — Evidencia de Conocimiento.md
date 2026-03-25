@@ -27,8 +27,8 @@ Este prompt necesita los outputs de TODOS los prompts anteriores de la guía:
 | Nombre del programa, código, guía, macro-temática | PM-1.2 (Scope & Sequence) |
 | Vocabulario clave (20 términos) | PM-1.2 (Key Vocabulary Table) |
 | Texto ancla de Reading (para generar texto PARALELO, no idéntico) | PM-2.3 (The Master Anchor) |
-| Script de Listening (para generar audio PARALELO, no idéntico) | PM-2.4 (The Auditory Anchor) |
-| Grammar targets (estructuras gramaticales de la guía) | PM-2.7 (Grammar & Structure Use) |
+| Script de Listening (para generar audio PARALELO, no idéntico) | PM-2.6 (The Auditory Anchor) |
+| Grammar targets (estructuras gramaticales de la guía) | PM-2.10 (Grammar & Structure Use) |
 | Communicative functions (describing, classifying, comparing, etc.) | PM-1.2 (Content Core) |
 | Universo narrativo (empresa, personajes, contexto ESP) | Coherencia del ecosistema de la guía |
 | Nivel CEFR | Parámetro estándar (default A1.1-A1.2) |
@@ -165,7 +165,7 @@ Tu tarea: Generar el CUESTIONARIO TÉCNICO (IE-01) — Evidencia de Conocimiento
 - Universo narrativo: [empresa, sector, contexto]
 - Personaje principal de la guía: [nombre y rol — NO reutilizar]
 - Vocabulario clave: [20 términos de PM-1.2]
-- Grammar targets: [estructuras de PM-2.7]
+- Grammar targets: [estructuras de PM-2.10]
 - Communicative functions: [funciones de PM-1.2]
 - Género textual de Reading en la guía: [email, memo, report, etc.]
 - Género textual de Listening en la guía: [phone call, voicemail, etc.]
@@ -235,11 +235,11 @@ Tu tarea: Generar el CUESTIONARIO TÉCNICO (IE-01) — Evidencia de Conocimiento
 |----------|--------|-------------|
 | **Depende de** | PM-1.2 | Vocabulario, functions, grammar targets, universo narrativo |
 | **Depende de** | PM-2.3 | Referencia del género textual de Reading (para crear paralelo) |
-| **Depende de** | PM-2.4 | Referencia del género textual de Listening (para crear paralelo) |
-| **Depende de** | PM-2.7 | Grammar targets específicos |
+| **Depende de** | PM-2.6 | Referencia del género textual de Listening (para crear paralelo) |
+| **Depende de** | PM-2.10 | Grammar targets específicos |
 | **Alimenta a** | PM-4.1§5 | El resultado del cuestionario alimenta el Feedback Loop |
 | **Se ubica en** | GFPI-F-135 Sección 3.4 | Actividades de Transferencia |
-| **Triada SENA** | Evidencia de Conocimiento | Complementa Desempeño (PM-2.9 Speaking) y Producto (PM-2.8 Writing) |
+| **Triada SENA** | Evidencia de Conocimiento | Complementa Desempeño (PM-2.8 Speaking) y Producto (PM-2.4 Writing) |
 
 ---
 

@@ -24,8 +24,8 @@
 |-------|--------|
 | Playbook Outline (panorama de sesiones + slides asignados) | PM-3.1 |
 | Build-Out de cada sesión (qué se muestra en cada momento) | PM-3.2 |
-| Worksheets (contenido visual: tablas, diagrams, textos) | PM-2.1 a PM-2.9 |
-| Vocabulario, grammar formulas, chunks | PM-1.2, PM-2.5, PM-2.7 |
+| Worksheets (contenido visual: tablas, diagrams, textos) | PM-2.1 a PM-2.10 |
+| Vocabulario, grammar formulas, chunks | PM-1.2, PM-2.5, PM-2.10 |
 | Universo narrativo (empresa, personajes, colores) | PM-1.2 |
 
 ---

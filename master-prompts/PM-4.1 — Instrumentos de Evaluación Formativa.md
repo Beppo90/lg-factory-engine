@@ -39,7 +39,7 @@ PM-4.1 contiene DOS instrumentos de evaluación formativa:
 | **Instrumento** | Checklist de Observación |
 | **Evidencia SENA** | Desempeño |
 | **Técnica** | Observación directa |
-| **Uso** | Durante la Speaking Simulation (Session 6 — PM-2.9) |
+| **Uso** | Durante la Speaking Simulation (Session 6 — PM-2.8) |
 | **Evaluador** | Instructor |
 | **Evaluado** | Aprendiz (individual, durante la simulación en pares) |
 
@@ -49,11 +49,11 @@ PM-4.1 contiene DOS instrumentos de evaluación formativa:
 
 | Input | Fuente |
 |-------|--------|
-| Speaking Simulation (escenario, roles, tarjetas) | PM-2.9 |
-| Skeleton Script (frases clave) | PM-2.9 |
+| Speaking Simulation (escenario, roles, tarjetas) | PM-2.8 |
+| Skeleton Script (frases clave) | PM-2.8 |
 | Criterios de observación del Build-Out | PM-3.2 (Session 6) |
 | Vocabulario clave (20 términos) | PM-1.2 |
-| Grammar targets | PM-2.7 |
+| Grammar targets | PM-2.10 |
 | Nivel CEFR | PM-1.2 |
 
 ---
@@ -293,11 +293,12 @@ Genera:
 
 | Relación | Prompt | Descripción |
 |----------|--------|-------------|
-| **Depende de** | PM-2.9 | Speaking Simulation (contexto de observación) |
+| **Depende de** | PM-2.8 | Speaking Simulation (contexto de observación) |
 | **Depende de** | PM-4.2 | Resultados del cuestionario (input del feedback) |
 | **Depende de** | PM-2.2 | Learning Contract y Blind Spots originales |
 | **Se relaciona con** | PM-3.2 (Session 6) | Build-Out ya incluye Observation Criteria |
 | **Se relaciona con** | PM-3.2 (Session 7) | Build-Out ya incluye feedback colectivo |
+| **Se complementa con** | PM-3.5 | Final Mission genera Observation Checklist (tarea integradora) + Product Rubric — instrumentos distintos a §3 (que evalúa speaking) pero complementarios en la triada SENA |
 | **Se ubica en** | GFPI-F-135 Sección 3.3 | Evaluación (instrumentos formativos) |
 
 ---

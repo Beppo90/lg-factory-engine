@@ -15,12 +15,12 @@
 | **Programa** | Análisis y Desarrollo de Software (ADSO) — 228118 |
 | **Guía** | Guía 1: The Hardware Specialist |
 | **Session** | 4: Say It Right, Build It Right |
-| **Worksheets** | PM-2.6 (Pronunciation & Speaking Skills) + PM-2.7 (Grammar & Structure Use) |
+| **Worksheets** | PM-2.10 (Pronunciation & Speaking Skills) + PM-2.10 (Structure Use & Grammar) |
 | **Duración** | 180 minutos |
 | **Habilidades foco** | P● G● |
 | **Habilidades soporte** | V○ |
 | **Trabajo autónomo** | Workbook Ch. 4 — Grammar Drill (45 min) |
-| **Siguiente sesión** | Session 5: Write It Right (PM-2.8 — Writing) |
+| **Siguiente sesión** | Session 5: Write It Right (PM-2.4 — Writing) |
 
 ---
 
@@ -28,8 +28,8 @@
 
 Marcar ANTES de entrar al aula:
 
-- [ ] PM-2.6: Pronunciation worksheet — impresos (1 por estudiante + 2 extras)
-- [ ] PM-2.7: Grammar worksheet — impresos (1 por estudiante + 2 extras)
+- [ ] PM-2.10: Pronunciation worksheet — impresos (1 por estudiante + 2 extras)
+- [ ] PM-2.10: Grammar worksheet — impresos (1 por estudiante + 2 extras)
 - [ ] Canva slides 15-22 abiertas y listas
 - [ ] Proyector encendido y funcionando
 - [ ] Tablero preparado según Board Plan (abajo)
@@ -143,7 +143,7 @@ Preparar ANTES de que lleguen los aprendices:
 
 ### BLOQUE A — PRONUNCIATION (50 min) — 0:15 a 1:05
 
-**Worksheet:** PM-2.6 (Pronunciation & Speaking Skills)
+**Worksheet:** PM-2.7 (Pronunciation & Speaking Skills)
 **Agrupación:** Plenary → Individual → Pairs
 **Objetivo del bloque:** Los aprendices pronuncian 10 palabras técnicas con sílabas y estrés correctos, y producen chunks fluidos para uso en speaking.
 
@@ -263,7 +263,7 @@ Instructor toma nota de:
 
 ### BLOQUE B — GRAMMAR (60 min) — 1:20 a 2:35
 
-**Worksheet:** PM-2.7 (Grammar & Structure Use)
+**Worksheet:** PM-2.10 (Grammar & Structure Use)
 **Agrupación:** Plenary → Individual → Pairs → Plenary
 **Objetivo del bloque:** Los aprendices dominan las 3 estructuras gramaticales (To Be, Have/Has, Demonstratives) a través de identificación de errores, práctica controlada y producción aplicada.
 
@@ -278,7 +278,7 @@ Instructor toma nota de:
 1. Instructor presenta las 3 estructuras, una por una. Para CADA una:
    - Escribe la fórmula en el tablero (Grammar Formulas zone)
    - Da 2 ejemplos en voz alta
-   - Los aprendices copian la fórmula y los ejemplos en su PM-2.7 worksheet (Syntax Blueprint section)
+   - Los aprendices copian la fórmula y los ejemplos en su PM-2.10 worksheet (Syntax Blueprint section)
 
 **Structure 1: VERB TO BE (Definitions)**
 *"Formula: [Component] + IS + [definition or adjective]. Example: 'The CPU is the brain of the computer.' 'The monitor is small.' Write it."*
@@ -408,7 +408,7 @@ Instructor toma nota de:
 
 ### BLOQUE C — INTEGRATION (20 min) — 2:35 a 2:55
 
-**Worksheet:** PM-2.6 Activity 3 (reused) + PM-2.7 Activity 3 (reused)
+**Worksheet:** PM-2.7 Activity 3 (reused) + PM-2.10 Activity 3 (reused)
 **Agrupación:** Pairs → Plenary
 **Objetivo del bloque:** Los aprendices integran pronunciación y gramática en producción oral fluida.
 
@@ -492,7 +492,7 @@ Ejemplos válidos:
 
 ## ANSWER KEY CONSOLIDADO
 
-### PM-2.6 — Pronunciation & Speaking Skills
+### PM-2.7 — Pronunciation & Speaking Skills
 
 | Actividad | Ítem | Respuesta Correcta |
 |-----------|------|---------------------|
@@ -504,7 +504,7 @@ Ejemplos válidos:
 | Activity 1 | UP-GRADE | 2 syllables, stress on ÓP (1st) |
 | Activity 3 | Intelligibility | YES / PARTIALLY / NO (dependent on delivery) |
 
-### PM-2.7 — Grammar & Structure Use
+### PM-2.10 — Grammar & Structure Use
 
 | Actividad | Ítem | Respuesta Correcta | Explicación |
 |-----------|------|---------------------|-------------|

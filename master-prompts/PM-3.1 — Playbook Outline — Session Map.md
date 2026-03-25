@@ -27,12 +27,14 @@ Este prompt necesita la **Guía de Aprendizaje completa** (Producción Fase 2) c
 | Reflexión Inicial — The Spark | PM-2.1 |
 | Contextualización — The Gap Analysis | PM-2.2 |
 | Reading — The Master Anchor | PM-2.3 |
-| Listening — The Auditory Anchor | PM-2.4 |
+| Listening — The Auditory Anchor | PM-2.6 |
 | Vocabulary & Language Function | PM-2.5 |
-| Pronunciation & Speaking Skills | PM-2.6 |
-| Grammar & Structure Use | PM-2.7 |
-| Writing Skills & Pragmatics | PM-2.8 |
-| Speaking Production & Simulation — The Mission | PM-2.9 |
+| Pronunciation & Speaking Skills | PM-2.7 |
+| Structure Use & Grammar | PM-2.10 |
+| Writing Skills & Pragmatics | PM-2.4 |
+| Speaking Production & Simulation — The Mission | PM-2.8 |
+| Language Functions & Communicative Competence | PM-2.9 (material transversal, no sesión propia) |
+| Final Mission — Integrative Task | PM-3.5 |
 | Cuestionario Técnico (IE-01) | PM-4.2 (si ya fue generado) |
 | Intensidad horaria de la guía | PM-1.2 (default: 24h directa + 6h autónoma) |
 | Duración estándar de sesión presencial | Parámetro institucional (default: 3 horas) |
@@ -79,10 +81,10 @@ Los 9 worksheets NO se reparten "1 worksheet = 1 sesión." Se agrupan por afinid
 |-------------------|------------|-------|
 | **Apertura y diagnóstico** | PM-2.1 + PM-2.2 | Ambos son pre-input: motivación + diagnóstico = una sola sesión de apertura |
 | **Input receptivo pesado** | PM-2.3 (solo) | El Reading Anchor es denso: necesita pre-reading, while-reading y post-reading completos |
-| **Input auditivo + léxico** | PM-2.4 + PM-2.5 | El Listening alimenta directamente el vocabulario — fluyen naturalmente juntos |
-| **Forma lingüística** | PM-2.6 + PM-2.7 | Pronunciación y gramática comparten el enfoque en accuracy — se complementan |
-| **Producción escrita** | PM-2.8 (solo) | Writing necesita el ciclo completo: model analysis → drafting → peer review → final draft |
-| **Producción oral** | PM-2.9 (solo) | La simulación necesita preparación, rehearsal y performance con retroalimentación |
+| **Input auditivo + léxico** | PM-2.6 + PM-2.5 | El Listening alimenta directamente el vocabulario — fluyen naturalmente juntos |
+| **Forma lingüística** | PM-2.7 + PM-2.10 | Pronunciación y gramática comparten el enfoque en accuracy — se complementan |
+| **Producción escrita** | PM-2.4 (solo) | Writing necesita el ciclo completo: model analysis → drafting → peer review → final draft |
+| **Producción oral + Misión Final** | PM-2.8 + PM-3.5 | Speaking practice + tarea integradora (desempeño + producto) |
 | **Evaluación y cierre** | PM-4.2 + Feedback | El cuestionario + retroalimentación + cierre circular de la guía |
 
 Esto genera un modelo base de **7-8 sesiones**, con la sesión restante (si hay 8) como buffer para ajuste, recuperación, o extensión del Speaking.
@@ -109,7 +111,7 @@ Cada sesión incluye un cuadro de logística:
 
 | Campo | Ejemplo |
 |-------|---------|
-| **Worksheets usados** | PM-2.4 (Listening) + PM-2.5 (Vocabulary) |
+| **Worksheets usados** | PM-2.6 (Listening) + PM-2.5 (Vocabulary) |
 | **Materiales adicionales** | Audio file (TTS), speakers/headphones, projector |
 | **Agrupación dominante** | Individual → Pairs → Plenary |
 | **Recursos Canva** | Slides 8-12 (Listening visuals) |
@@ -175,13 +177,14 @@ Eres un diseñador instruccional especializado en formación bilingüe ESP (Engl
 - PM-2.1: [descripción breve del Spark y las 3 actividades de reflexión]
 - PM-2.2: [descripción del diagnóstico visual, saberes previos, blind spots, learning contract]
 - PM-2.3: [género del texto ancla, personaje, tema, extensión]
-- PM-2.4: [género del audio, personaje, situación, extensión]
+- PM-2.6: [género del audio, personaje, situación, extensión]
 - PM-2.5: [20 términos clave, actividades de vocabulario]
-- PM-2.6: [fonemas o letras foco, tipo de drills]
-- PM-2.7: [grammar targets, número de estructuras, tipo de práctica]
-- PM-2.8: [género de escritura, modelo, tipo de tarea final]
-- PM-2.9: [tipo de simulación, roles, materiales de soporte (cue cards, etc.)]
-- PM-4.2: [si existe — cuestionario técnico, 50 pts, 5 secciones]
+- PM-2.7: [fonemas o letras foco, tipo de drills]
+- PM-2.10: [grammar targets, número de estructuras, tipo de práctica]
+- PM-2.4: [género de escritura, modelo, tipo de tarea final]
+- PM-2.8: [tipo de simulación, roles, cue cards]
+- PM-2.9: [material transversal — funciones comunicativas inyectadas en sesiones]
+- PM-3.5: [misión final — tipo de tarea integradora, producto esperado]
 
 ### INSTRUCCIONES DE GENERACIÓN:
 
@@ -294,7 +297,7 @@ Si la guía tiene menos de 24 horas, comprime las sesiones fusionando bloques af
 | Relación | Prompt | Descripción |
 |----------|--------|-------------|
 | **Depende de** | PM-1.2 | Intensidad, vocabulario, grammar targets, functions |
-| **Depende de** | PM-2.1 a PM-2.9 | Los 9 worksheets que se distribuyen en sesiones |
+| **Depende de** | PM-2.1 a PM-2.10 + PM-3.5 | Los worksheets + misión final que se distribuyen en sesiones |
 | **Depende de** | PM-4.2 | El Cuestionario que se ubica en la sesión de evaluación |
 | **Alimenta a** | PM-3.2 | El Build-Out toma UNA sesión del Outline y la desarrolla en detalle completo |
 | **Alimenta a** | PM-3.3 | El template Canva se organiza según el orden de sesiones del Outline |
@@ -317,12 +320,14 @@ Si la guía tiene menos de 24 horas, comprime las sesiones fusionando bloques af
 - PM-2.1: Spark — escenario del developer sin PC funcional, debate sobre qué hardware pedir
 - PM-2.2: Gap Analysis — diagnóstico visual hardware, blind spots, learning contract
 - PM-2.3: Reading — Internal Tech Request Email de Carlos Ramírez (Junior Developer)
-- PM-2.4: Listening — Phone call entre Carlos y soporte técnico pidiendo componentes
+- PM-2.6: Listening — Phone call entre Carlos y soporte técnico pidiendo componentes
 - PM-2.5: Vocabulary — 20 hardware terms (CPU, RAM, GPU...) + toolbelt + gap fill
-- PM-2.6: Pronunciation — /æ/ vs /ʌ/, fonética para latinos, chunking drill
-- PM-2.7: Grammar — To Be + Have/Has + Demonstratives + Adjectives, syntax bugs, fill ticket
-- PM-2.8: Writing — Tech Request email, blueprint + drafting + auditor's checklist
-- PM-2.9: Speaking — Help Desk simulation, problem cards + stock cards
+- PM-2.7: Pronunciation — /æ/ vs /ʌ/, fonética para latinos, chunking drill
+- PM-2.10: Grammar — To Be + Have/Has + Demonstratives + Adjectives, syntax bugs, fill ticket
+- PM-2.4: Writing — Tech Request email, blueprint + drafting + auditor's checklist
+- PM-2.8: Speaking — Help Desk simulation, cue cards
+- PM-2.9: Language Functions — material transversal inyectado en sesiones 2-5
+- PM-3.5: Final Mission — tarea integradora (desempeño oral + producto Spec Sheet)
 - PM-4.2: Cuestionario 50 pts (Laura Méndez QA, Miguel Torres, IT voicemail)
 
 **Output generado (panorama):**
@@ -331,16 +336,16 @@ Si la guía tiene menos de 24 horas, comprime las sesiones fusionando bloques af
 |---------|--------|------------|------|-------------|
 | 1 | The Wake-Up Call | PM-2.1 + PM-2.2 | Motivación: el developer sin PC + diagnóstico de saberes previos | — |
 | 2 | Read the Request | PM-2.3 | Input pesado: Tech Request Email de Carlos Ramírez | R● V○ |
-| 3 | Tuning In | PM-2.4 + PM-2.5 | Listening de la llamada + trabajo de vocabulario hardware | L● V● R○ |
-| 4 | Say It Right, Build It Right | PM-2.6 + PM-2.7 | Pronunciación + gramática: To Be, Have/Has, Demonstratives | P● G● V○ |
-| 5 | Write It Right | PM-2.8 | Producción escrita: redactar Tech Request propio | W● G○ V○ R○ |
-| 6 | The Help Desk | PM-2.9 | Simulación oral: Help Desk con problem + stock cards | S● V○ G○ |
+| 3 | Tuning In | PM-2.6 + PM-2.5 | Listening de la llamada + trabajo de vocabulario hardware | L● V● R○ |
+| 4 | Say It Right, Build It Right | PM-2.7 + PM-2.10 | Pronunciación + gramática: To Be, Have/Has, Demonstratives | P● G● V○ |
+| 5 | Write It Right | PM-2.4 | Producción escrita: redactar Tech Request propio | W● G○ V○ R○ |
+| 6 | The Help Desk — Final Mission | PM-2.8 + PM-3.5 | Simulación oral integradora + entrega de producto (Spec Sheet) | S● V○ G○ W○ |
 | 7 | Prove What You Know | PM-4.2 | Cuestionario Técnico (50 pts) + retroalimentación | R● L● V● G● W● |
 | 8 | The Full Circle | Review + Closure | Recuperación, extensión, cierre circular, feedback loop | — |
 
 **Ejemplo de sesión detallada — Session 3: Tuning In**
 
-**Worksheets:** PM-2.4 (Listening) + PM-2.5 (Vocabulary)
+**Worksheets:** PM-2.6 (Listening) + PM-2.5 (Vocabulary)
 **Duración:** 180 minutos
 **Habilidades foco:** L● V● | **Soporte:** R○
 

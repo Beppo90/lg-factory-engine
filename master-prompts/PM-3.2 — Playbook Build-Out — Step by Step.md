@@ -38,9 +38,11 @@ Este prompt necesita DOS fuentes:
 |-------|--------|
 | Contenido completo de cada worksheet referenciado | PM-2.x (Producción Fase 2) |
 | Texto ancla de Reading (si aplica en esta sesión) | PM-2.3 |
-| Script de Listening (si aplica en esta sesión) | PM-2.4 |
-| Vocabulario, pronunciación, gramática (según sesión) | PM-2.5, PM-2.6, PM-2.7 |
-| Writing task y Speaking simulation (según sesión) | PM-2.8, PM-2.9 |
+| Script de Listening (si aplica en esta sesión) | PM-2.6 |
+| Vocabulario, pronunciación, gramática (según sesión) | PM-2.5, PM-2.7, PM-2.10 |
+| Writing task y Speaking simulation (según sesión) | PM-2.4, PM-2.8 |
+| Language Functions (material transversal) | PM-2.9 |
+| Final Mission (si es sesión integradora) | PM-3.5 |
 | Cuestionario Técnico (si es sesión de evaluación) | PM-4.2 |
 | Nivel CEFR y universo narrativo | PM-1.2 |
 
@@ -378,7 +380,7 @@ Genera 5 preguntas de autoevaluación post-sesión:
 | Relación | Prompt | Descripción |
 |----------|--------|-------------|
 | **Depende de** | PM-3.1 | La sesión específica, sus tiempos, bloques y worksheets asignados |
-| **Depende de** | PM-2.1 a PM-2.9 | El contenido real de los worksheets para esa sesión |
+| **Depende de** | PM-2.1 a PM-2.10 + PM-3.5 | El contenido real de los worksheets para esa sesión |
 | **Depende de** | PM-4.2 | Si es sesión de evaluación (cuestionario) |
 | **Depende de** | PM-1.2 | Nivel CEFR, vocabulario, grammar targets, universo narrativo |
 | **Alimenta a** | PM-3.3 | Las referencias a slides Canva (números y contenido) orientan el diseño de la presentación |
@@ -394,7 +396,7 @@ Genera 5 preguntas de autoevaluación post-sesión:
 - Guía 1: The Hardware Specialist
 - Session 3: Tuning In
 - Duración: 180 min
-- Worksheets: PM-2.4 (Listening) + PM-2.5 (Vocabulary)
+- Worksheets: PM-2.6 (Listening) + PM-2.5 (Vocabulary)
 - Habilidades foco: L● V● | Soporte: R○
 - Trabajo autónomo: Workbook Ch. 3 — Vocabulary Reinforcement (60 min)
 - Nivel CEFR: A1.1-A1.2
@@ -408,7 +410,7 @@ Genera 5 preguntas de autoevaluación post-sesión:
 ADSO — GUÍA 1: The Hardware Specialist — Build-Out
 
 **MATERIALS CHECKLIST:**
-- [ ] PM-2.4 Listening worksheet (1 por estudiante) — IMPRESO
+- [ ] PM-2.6 Listening worksheet (1 por estudiante) — IMPRESO
 - [ ] PM-2.5 Vocabulary worksheet (1 por estudiante) — IMPRESO
 - [ ] Audio file: Phone Call TTS (0.85x speed, 2 voices) — VERIFICAR que funciona
 - [ ] Speakers / headphones — VERIFICAR sonido

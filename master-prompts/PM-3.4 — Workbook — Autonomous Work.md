@@ -24,11 +24,14 @@
 |-------|--------|
 | Mapa de trabajo autónomo (qué capítulo va después de qué sesión) | PM-3.1 (Playbook Outline) |
 | Asignaciones detalladas por capítulo (qué hacer, cuánto tiempo) | PM-3.2 (Build-Out, sección WRAP-UP) |
-| Contenido de los worksheets que el autónomo refuerza | PM-2.1 a PM-2.9 (Producción Fase 2) |
+| Contenido de los worksheets que el autónomo refuerza | PM-2.3 a PM-2.10 (Producción Fase 2) |
+| **Arquetipos elegidos en Fase 2** | **PM-2.3 a PM-2.10 — los mismos arquetipos alimentan Guía + Workbook + Examen** |
 | Texto ancla de Reading (para actividades de extensión) | PM-2.3 |
 | Vocabulario clave (20 términos) | PM-1.2 |
-| Grammar targets | PM-2.7 |
+| Grammar targets | PM-2.10 |
 | Nivel CEFR | PM-1.2 |
+
+> **NOTA:** Los PM-2.3 a PM-2.10 tienen TRIPLE PROPÓSITO. Los arquetipos que el instructor elige en Fase 2 no solo construyen la Guía de Aprendizaje — también alimentan el Workbook (REINFORCE/EXTEND/PREPARE) y el examen escrito. Un solo conjunto de arquetipos genera los 3 productos del estudiante.
 
 ---
 
@@ -148,8 +151,8 @@ Eres un diseñador de materiales didácticos para formación bilingüe ESP en el
 **Contenido relevante de los worksheets (de PM-2.x):**
 - Texto ancla de Reading (PM-2.3) — para actividades de extensión
 - 20 términos clave (PM-1.2) — para categorización y práctica
-- Grammar targets (PM-2.7) — para drills
-- Writing model (PM-2.8) — para revisión guiada
+- Grammar targets (PM-2.10) — para drills
+- Writing model (PM-2.4) — para revisión guiada
 
 ### INSTRUCCIONES DE GENERACIÓN:
 

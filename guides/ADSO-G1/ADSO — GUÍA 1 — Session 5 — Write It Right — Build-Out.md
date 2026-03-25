@@ -15,12 +15,12 @@
 | **Programa** | Análisis y Desarrollo de Software (ADSO) — 228118 |
 | **Guía** | Guía 1: The Hardware Specialist |
 | **Session** | 5: Write It Right |
-| **Worksheets** | PM-2.8 (Writing Skills & Pragmatics) |
+| **Worksheets** | PM-2.4 (Writing Skills & Pragmatics) |
 | **Duración** | 180 minutos |
 | **Habilidades foco** | W● |
 | **Habilidades soporte** | G○ V○ R○ |
 | **Trabajo autónomo** | Workbook Ch. 5 — Writing Draft (60 min) |
-| **Siguiente sesión** | Session 6: The Help Desk (PM-2.9 — Speaking Simulation) |
+| **Siguiente sesión** | Session 6: The Help Desk — Final Mission (PM-2.8 + PM-3.5) |
 
 ---
 
@@ -28,7 +28,7 @@
 
 Marcar ANTES de entrar al aula:
 
-- [ ] PM-2.8: Writing worksheet — impresos (1 por estudiante + 2 extras)
+- [ ] PM-2.4: Writing worksheet — impresos (1 por estudiante + 2 extras)
 - [ ] Canva slides 23-27 abiertas y listas
 - [ ] Proyector encendido y funcionando
 - [ ] Tablero preparado según Board Plan (abajo)
@@ -145,7 +145,7 @@ Preparar ANTES de que lleguen los aprendices:
 
 ### BLOQUE A — DECONSTRUCT (30 min) — 0:15 a 0:45
 
-**Worksheet:** PM-2.8, Activity 1 + Blueprint Model
+**Worksheet:** PM-2.4, Activity 1 + Blueprint Model
 **Agrupación:** Plenary → Individual → Pairs → Plenary
 **Objetivo del bloque:** Los aprendices analizan la estructura pragmática del email de Carlos para identificar las convenciones de género que replicarán en su propia escritura.
 
@@ -217,7 +217,7 @@ Instructor toma nota de:
 
 ### BLOQUE B — GUIDED DRAFTING (35 min) — 1:00 a 1:35
 
-**Worksheet:** PM-2.8, Activity 2
+**Worksheet:** PM-2.4, Activity 2
 **Agrupación:** Plenary → Individual → Plenary
 **Objetivo del bloque:** Los aprendices practican el formato escribiendo un email guiado (con blanks) antes de escribir el suyo propio.
 
@@ -291,7 +291,7 @@ Instructor toma nota de:
 
 ### BLOQUE C — THE FINAL TASK (50 min) — 1:35 a 2:25
 
-**Worksheet:** PM-2.8, Activity 3
+**Worksheet:** PM-2.4, Activity 3
 **Agrupación:** Individual (instructor circulates)
 **Objetivo del bloque:** Los aprendices escriben un email completo de Tech Request sobre un computador real que usan, aplicando todas las estructuras, vocabulario y formato aprendidos.
 
@@ -318,7 +318,7 @@ Instructor toma nota de:
 7. *"Time. Now — the Auditor's Checklist. Look at the bottom of your worksheet. Self-check BEFORE you give it to your partner. 2 minutes."*
 8. Timer: 2 minutos. Individual.
 
-**El Auditor's Checklist (PM-2.8):**
+**El Auditor's Checklist (PM-2.4):**
 - [ ] I used **"is"** to describe a problem (Ej: "The CPU is old")
 - [ ] I used **"has"** to describe a feature (Ej: "It has a VGA port")
 - [ ] I used **"I need"** to make my request
@@ -398,7 +398,7 @@ Instructor toma nota de:
 
 ## ANSWER KEY CONSOLIDADO
 
-### PM-2.8 — Writing Skills & Pragmatics
+### PM-2.4 — Writing Skills & Pragmatics
 
 | Actividad | Ítem | Respuesta Correcta | Alternativas aceptables |
 |-----------|------|---------------------|-------------------------|

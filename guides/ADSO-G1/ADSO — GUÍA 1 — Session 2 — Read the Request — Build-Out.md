@@ -20,7 +20,7 @@
 | **Habilidades foco** | R● |
 | **Habilidades soporte** | V○ |
 | **Trabajo autónomo** | Workbook Ch. 2 — Reading Extension (45 min) |
-| **Siguiente sesión** | Session 3: Tuning In (PM-2.4 + PM-2.5 — Listening + Vocabulary) |
+| **Siguiente sesión** | Session 3: Tuning In (PM-2.6 + PM-2.5 — Listening + Vocabulary) |
 
 ---
 

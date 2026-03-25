@@ -15,12 +15,12 @@
 | **Programa** | Análisis y Desarrollo de Software (ADSO) — 228118 |
 | **Guía** | Guía 1: The Hardware Specialist |
 | **Session** | 3: Tuning In |
-| **Worksheets** | PM-2.4 (The Auditory Anchor — Listening) + PM-2.5 (Vocabulary & Language Function) |
+| **Worksheets** | PM-2.6 (The Auditory Anchor — Listening) + PM-2.5 (Literacy & Vocabulary) |
 | **Duración** | 180 minutos |
 | **Habilidades foco** | L● V● |
 | **Habilidades soporte** | R○ |
 | **Trabajo autónomo** | Workbook Ch. 3 — Vocabulary Reinforcement (45 min) |
-| **Siguiente sesión** | Session 4: Say It Right, Build It Right (PM-2.6 + PM-2.7) |
+| **Siguiente sesión** | Session 4: Say It Right, Build It Right (PM-2.7 + PM-2.10) |
 | **Plan B** | Si audio no disponible: instructor lee el script en voz alta, estudiantes siguen transcripción impresa |
 
 ---
@@ -29,7 +29,7 @@
 
 Marcar ANTES de entrar al aula:
 
-- [ ] PM-2.4: Listening worksheet — impresos (1 por estudiante + 2 extras)
+- [ ] PM-2.6: Listening worksheet — impresos (1 por estudiante + 2 extras)
 - [ ] PM-2.5: Vocabulary worksheet — impresos (1 por estudiante + 2 extras)
 - [ ] Audio file: Phone Call TTS (0.85x speed, 2 voices) — REPRODUCIR una vez antes de clase para verificar
 - [ ] Speakers o auriculares individuales — VERIFICAR que funcionan
@@ -169,7 +169,7 @@ Si >30% thumbs down: *"Carlos's CPU is old (i3). His RAM is only 4 GB. His HDD i
 
 ### BLOQUE A — LISTENING (75 min) — 0:20 a 1:35
 
-**Worksheet:** PM-2.4 (The Auditory Anchor)
+**Worksheet:** PM-2.6 (The Auditory Anchor)
 **Agrupación:** Plenary → Individual → Pairs → Plenary
 **Objetivo del bloque:** Los aprendices comprenden un audio de llamada telefónica sobre hardware, extraen información específica y identifican chunks reutilizables para producción oral.
 
@@ -190,7 +190,7 @@ Si >30% thumbs down: *"Carlos's CPU is old (i3). His RAM is only 4 GB. His HDD i
 **Punto 3: "is" vs "has" sound similar**
 *"This is IMPORTANT. 'Is' and 'has' sound VERY similar when people talk fast. 'The CPU is old' and 'The laptop has a problem' — listen carefully for the difference. We'll practice this."*
 
-3. Después de los 3 puntos: *"Write these 3 notes on your PM-2.4 worksheet — at the top, in the Audio Cues section. You have 2 minutes."*
+3. Después de los 3 puntos: *"Write these 3 notes on your PM-2.6 worksheet — at the top, in the Audio Cues section. You have 2 minutes."*
 4. Timer: 2 minutos. Individual.
 
 💡 *Los aprendices A1 pueden no entender la importancia de "is" vs "has" en audio. Dígales: "If you hear 'is,' the next word is an ADJECTIVE (old, slow, broken). If you hear 'has,' the next word is a THING (a problem, 4 GB, a VGA port). The grammar helps your ear."*
@@ -521,7 +521,7 @@ Ejemplos válidos:
 
 ## ANSWER KEY CONSOLIDADO
 
-### PM-2.4 — The Auditory Anchor (Listening)
+### PM-2.6 — The Auditory Anchor (Listening)
 
 | Actividad | Ítem | Respuesta Correcta | Alternativas aceptables |
 |-----------|------|---------------------|-------------------------|

@@ -30,10 +30,10 @@
 |---------|--------|------------|------|-------------|----------|
 | 1 | The Wake-Up Call | PM-2.1 + PM-2.2 | Motivación: el developer sin PC + diagnóstico de saberes previos | — | Workbook Ch. 1: My Hardware Profile (45 min) |
 | 2 | Read the Request | PM-2.3 | Input pesado: Tech Request Email de Carlos Ramírez | R● V○ | Workbook Ch. 2: Reading Extension (45 min) |
-| 3 | Tuning In | PM-2.4 + PM-2.5 | Listening de la llamada + trabajo de vocabulario hardware | L● V● R○ | Workbook Ch. 3: Vocabulary Reinforcement (45 min) |
-| 4 | Say It Right, Build It Right | PM-2.6 + PM-2.7 | Pronunciación + gramática: To Be, Have/Has, Demonstratives | P● G● V○ | Workbook Ch. 4: Grammar Drill (45 min) |
-| 5 | Write It Right | PM-2.8 | Producción escrita: redactar Tech Request propio | W● G○ V○ R○ | Workbook Ch. 5: Writing Draft (60 min) |
-| 6 | The Help Desk | PM-2.9 | Simulación oral: Help Desk con problem + stock cards | S● V○ G○ | Workbook Ch. 6: Simulation Prep (45 min) |
+| 3 | Tuning In | PM-2.6 + PM-2.5 | Listening de la llamada + trabajo de vocabulario hardware | L● V● R○ | Workbook Ch. 3: Vocabulary Reinforcement (45 min) |
+| 4 | Say It Right, Build It Right | PM-2.7 + PM-2.10 | Pronunciación + gramática: To Be, Have/Has, Demonstratives | P● G● V○ | Workbook Ch. 4: Grammar Drill (45 min) |
+| 5 | Write It Right | PM-2.4 | Producción escrita: redactar Tech Request propio | W● G○ V○ R○ | Workbook Ch. 5: Writing Draft (60 min) |
+| 6 | The Help Desk — Final Mission | PM-2.8 + PM-3.5 | Simulación oral integradora + entrega de producto (Spec Sheet) | S● V○ G○ W○ | Workbook Ch. 6: Simulation Prep (45 min) |
 | 7 | Prove What You Know | PM-4.2 | Cuestionario Técnico (50 pts) + retroalimentación | R● L● V● G● W● | Workbook Ch. 7: Post-Quiz Review (30 min) |
 | 8 | The Full Circle | Review + Closure | Recuperación, extensión, cierre circular, feedback loop | — | — |
 
@@ -123,7 +123,7 @@
 
 ### SESSION 3: TUNING IN
 
-**Worksheets:** PM-2.4 (The Auditory Anchor — Listening) + PM-2.5 (Vocabulary & Language Function)
+**Worksheets:** PM-2.6 (The Auditory Anchor — Listening) + PM-2.5 (Literacy & Vocabulary)
 **Duración:** 180 minutos
 **Habilidades foco:** L● V● | **Soporte:** R○
 
@@ -151,7 +151,7 @@
 
 | Campo | Detalle |
 |-------|---------|
-| Worksheets | PM-2.4 (printed) + PM-2.5 (printed) |
+| Worksheets | PM-2.6 (printed) + PM-2.5 (printed) |
 | Materiales | Audio file (TTS at 0.85x), speakers or individual headphones |
 | Agrupación | Individual → Pairs → Small groups → Plenary |
 | Recursos Canva | Slides 8-14 (Listening visuals + vocabulary images + categorization chart) |
@@ -161,7 +161,7 @@
 
 ### SESSION 4: SAY IT RIGHT, BUILD IT RIGHT
 
-**Worksheets:** PM-2.6 (Pronunciation & Speaking Skills) + PM-2.7 (Grammar & Structure Use)
+**Worksheets:** PM-2.7 (Pronunciation & Speaking Skills) + PM-2.10 (Structure Use & Grammar)
 **Duración:** 180 minutos
 **Habilidades foco:** P● G● | **Soporte:** V○
 
@@ -189,7 +189,7 @@
 
 | Campo | Detalle |
 |-------|---------|
-| Worksheets | PM-2.6 (printed) + PM-2.7 (printed) |
+| Worksheets | PM-2.7 (printed) + PM-2.10 (printed) |
 | Materiales | Whiteboard/markers, printed worksheets, Canva slides with phonetic guides |
 | Agrupación | Plenary → Individual → Pairs → Plenary |
 | Recursos Canva | Slides 15-22 (Phonetic toolbox, chunking drill, grammar formulas, Syntax Bugs) |
@@ -199,7 +199,7 @@
 
 ### SESSION 5: WRITE IT RIGHT
 
-**Worksheets:** PM-2.8 (Writing Skills & Pragmatics)
+**Worksheets:** PM-2.4 (Writing Skills & Pragmatics)
 **Duración:** 180 minutos
 **Habilidades foco:** W● | **Soporte:** G○ V○ R○
 
@@ -229,7 +229,7 @@
 
 | Campo | Detalle |
 |-------|---------|
-| Worksheets | PM-2.8 (printed) |
+| Worksheets | PM-2.4 (printed) |
 | Materiales | Whiteboard/markers, printed worksheet, projector (Blueprint Model) |
 | Agrupación | Individual → Pairs → Plenary → Individual → Pairs |
 | Recursos Canva | Slides 23-27 (Blueprint Model, Language Bank, Skeleton Structure, Auditor's Checklist) |
@@ -237,43 +237,45 @@
 
 ---
 
-### SESSION 6: THE HELP DESK
+### SESSION 6: THE HELP DESK — FINAL MISSION
 
-**Worksheets:** PM-2.9 (Speaking Production & Simulation — The Mission)
+**Worksheets:** PM-2.8 (Speaking — The Mission) + PM-3.5 (Final Mission — Integrative Task)
 **Duración:** 180 minutos
-**Habilidades foco:** S● | **Soporte:** V○ G○
+**Habilidades foco:** S● | **Soporte:** V○ G○ W○
+
+> **NOTA SOBRE PM-2.9 (Language Functions):** PM-2.9 no tiene sesión propia. Las funciones comunicativas (describir, quejarse, parafrasear, etc.) se activan transversalmente a lo largo de las sesiones 2-5 dentro de las actividades de los conjuntos A y B. El material generado por PM-2.9 (Spot the Difference, Endless Complaints, Paraphrasing Relay, etc.) se inyecta como técnica dentro de las sesiones existentes.
 
 **SET-UP (20 min)**
-- Warm-up: "Chunk Recall" — Students recall the speaking chunks from Session 3 (PM-2.4, Activity 3): Greet, Describe Problem, Confirm Solution. Write them on the board from memory. Then: review the Skeleton Script from PM-2.9 (Opening, Describing, Asking for Details, Confirming, Closing). Practice each chunk as a class — instructor says the function, students say the phrase.
-- Objective: "Today you will have a REAL phone conversation in English. You are either a Developer with a problem or IT Support with the solution. The problem only gets solved when BOTH people agree."
-- Teacher Talk: "Good morning everyone. Today is simulation day. You've read, listened, learned vocabulary, practiced pronunciation, written an email — now you TALK. The goal is NOT perfect English. The goal is: your partner UNDERSTANDS and the problem GETS SOLVED."
+- Warm-up: "Chunk Recall" — Students recall the speaking chunks from Session 3 (PM-2.6, Activity 3): Greet, Describe Problem, Confirm Solution. Write them on the board from memory. Then: review the Cue Card from PM-2.8 (Opening, Describing, Asking for Details, Confirming, Closing). Practice each chunk as a class — instructor says the function, students say the phrase.
+- Objective: "Today is your Final Mission. You will SOLVE a real problem using English — by SPEAKING to your team and PRODUCING a Spec Sheet document. This is everything you've learned, applied together."
+- Teacher Talk: "Good morning everyone. Today is simulation day. You've read, listened, learned vocabulary, practiced pronunciation, written an email — now you put it ALL together. The goal is NOT perfect English. The goal is: your team UNDERSTANDS, the problem GETS SOLVED, and you LEAVE with a document."
 
 **WHILE (145 min)**
 
-- Bloque A (20 min): Briefing — Instructor distributes Problem Cards and Stock Cards. Explain roles (Role A: Developer, Role B: IT Support). Read the Skeleton Script together. Rules: (1) Problem solved only when both agree, (2) Try English first, (3) Can use gestures, point to images, or ask in Spanish if stuck. Demonstrate one round with a volunteer (instructor plays IT Support). Agrupación: Plenary (briefing + demo).
+- Bloque A (20 min): Mission Briefing (PM-3.5) — Instructor distributes the Mission Brief: "Your company needs a new workstation. You are the Hardware Specialist team. Your task: (1) SPEAK with your team to decide the specs, (2) PRODUCE a Technical Spec Sheet document." Roles: Team Lead (presents orally), Recorder (writes the Spec Sheet), Auditor (checks accuracy). Distribute Cue Cards (PM-2.8). Rules: English first, gestures OK, Spanish if completely stuck. Agrupación: Groups of 3.
 
-- Bloque B (50 min): Round 1 — Cue Cards FACE-UP (students can look at their cards). Pairs perform the simulation. Instructor circulates, listens, takes notes on observation criteria. After 10 min, pairs that finish early help other pairs. Minimum 2 rounds per pair (swap cards). Agrupación: Pairs.
+- Bloque B (50 min): Phase 1 — Team Discussion (PM-2.8, Speaking). Teams discuss the workstation requirements using their Cue Cards. They must: describe components needed, compare options, make decisions, justify choices. All discussion in English. Instructor circulates with Observation Checklist. After discussion, teams outline their Spec Sheet on paper. Agrupación: Groups of 3.
 
-- Bloque C (15 min): Break / Debrief Round 1. Teacher Talk: "Good work. What was HARD? What was EASY?" Collect 3-4 responses on board. Quick correction of 2-3 common errors heard during circulation.
+- Bloque C (15 min): Break / Transition. Teacher Talk: "Good discussions. Now document your decisions. The Spec Sheet is your PRODUCT."
 
-- Bloque D (40 min): Round 2 — Cue Cards FACE-DOWN (from memory). New pairs. Same roles or swap. This time no card support — rely on memory and the Skeleton Script learned. Instructor observes and notes improvement. Agrupación: Pairs.
+- Bloque D (45 min): Phase 2 — Spec Sheet Production (PM-3.5, Product). Teams produce the Technical Spec Sheet: list of 5+ components, specs for each (speed, capacity, type), category (Input/Output/Storage/Internal), justification for each choice. Recorder writes, Team Lead and Auditor review. Must use vocabulary and grammar from the guide. Agrupación: Groups of 3.
 
-- Bloque E (20 min): Round 3 — Role Swap. Developers become IT Support, IT Support becomes Developers. New cards distributed. Final round with face-down cards for challenge. Agrupación: Pairs.
+- Bloque E (15 min): Phase 3 — Oral Presentation. Each Team Lead presents their Spec Sheet to the class (2-3 min per team). Other teams listen and can ask 1 question. Instructor evaluates with Observation Checklist. Agrupación: Plenary (presentation).
 
 **WRAP-UP (15 min)**
-- Exit Ticket: The Communication Deliverable checklist — students self-assess: ✓ Developer described ALL problems, ✓ IT Support asked at least ONE clarifying question, ✓ Both agreed on NOW vs. ORDER, ✓ Conversation had Greeting → Problem → Details → Solution → Closing.
-- Teacher Talk: "You did it. You had a real phone conversation in English about hardware. Next session — the quiz. Prove what you know."
-- Trabajo Autónomo: Workbook Ch. 6 — Simulation Prep: write a reflection paragraph (5 sentences) about what was easy and what was hard in the simulation. Also: review ALL vocabulary and grammar for the quiz next session. (45 min estimado)
+- Exit Ticket: The Communication Deliverable checklist — students self-assess: ✓ Team discussed ALL components needed, ✓ Spec Sheet has 5+ items with specs, ✓ Presentation was intelligible, ✓ Grammar and vocabulary used correctly.
+- Teacher Talk: "You did it. You had real conversations in English, made real decisions, and produced a real document. That's what a Hardware Specialist does. Next session — the quiz."
+- Trabajo Autónomo: Workbook Ch. 6 — Simulation Prep: write a reflection paragraph (5 sentences) about what was easy and what was hard in the mission. Also: review ALL vocabulary and grammar for the quiz next session. (45 min estimado)
 
 **LOGISTICS BOX**
 
 | Campo | Detalle |
 |-------|---------|
-| Worksheets | PM-2.9 (printed: Problem Cards + Stock Cards + Skeleton Script) |
-| Materiales | Printed cue cards (cut before class), timer visible on screen |
-| Agrupación | Plenary → Pairs → Pairs → Pairs |
-| Recursos Canva | Slides 28-31 (Mission brief, Skeleton Script, observation criteria for instructor) |
-| Plan B | If class is too large for pair simulation: Use 'fishbowl' format — 2 volunteers perform while the rest observe with checklist. Rotate volunteers every 5 min. |
+| Worksheets | PM-2.8 (Cue Cards printed) + PM-3.5 (Mission Brief printed) |
+| Materiales | Printed cue cards, Spec Sheet template, timer visible on screen |
+| Agrupación | Plenary → Groups of 3 → Groups of 3 → Plenary |
+| Recursos Canva | Slides 28-31 (Mission brief, Cue Card, Spec Sheet example, observation criteria) |
+| Plan B | If class is too large: Use 'fishbowl' format — 2 teams perform while the rest observe with checklist. Rotate teams every 10 min. |
 
 ---
 
@@ -392,19 +394,18 @@
 - PM-2.1: The Spark (1 por estudiante)
 - PM-2.2: The Gap Analysis (1 por estudiante)
 - PM-2.3: The Master Anchor — Reading (1 por estudiante)
-- PM-2.4: The Auditory Anchor — Listening (1 por estudiante)
-- PM-2.5: Vocabulary & Language Function (1 por estudiante)
-- PM-2.6: Pronunciation & Speaking Skills (1 por estudiante)
-- PM-2.7: Grammar & Structure Use (1 por estudiante)
-- PM-2.8: Writing Skills & Pragmatics (1 por estudiante)
-- PM-2.9: Problem Cards (3 diseños, cortar antes de clase) — 1 set por pareja
-- PM-2.9: Stock Cards (3 diseños, cortar antes de clase) — 1 set por pareja
-- PM-2.9: Skeleton Script (1 por estudiante)
+- PM-2.4: Writing — Task-Based (1 por estudiante)
+- PM-2.5: Literacy & Vocabulary (1 por estudiante)
+- PM-2.6: The Auditory Anchor — Listening (1 por estudiante)
+- PM-2.7: Pronunciation & Speaking Skills (1 por estudiante)
+- PM-2.8: Cue Cards — Speaking (1 por estudiante)
+- PM-3.5: Mission Brief — Final Mission (1 por estudiante)
+- PM-3.5: Spec Sheet Template (1 por equipo de 3)
 - PM-4.2: Cuestionario Técnico (1 por estudiante)
 - Guide Feedback Forms — Session 8 (1 por estudiante)
 
 ### Digitales
-- Audio file PM-2.4: Phone call TTS (0.85x speed, 2 voices, pauses)
+- Audio file PM-2.6: Phone call TTS (0.85x speed, 2 voices, pauses)
 - Audio file PM-4.2 Section 3: Listening TTS (0.85x speed)
 - Canva presentation (38 slides total, por sesión)
 
