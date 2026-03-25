@@ -35,18 +35,20 @@ export default function Dashboard() {
         <main className="animate-fade-in">
           <section className="glass-panel" style={{ textAlign: 'center', padding: '4rem 2rem', marginBottom: '2rem' }}>
             <div style={{ 
-              width: '64px', height: '64px', background: 'var(--accent-primary)', 
+              width: '64px', height: '64px', background: 'white', 
               borderRadius: '50%', display: 'flex', alignItems: 'center', 
               justifyContent: 'center', margin: '0 auto 1.5rem',
               boxShadow: 'var(--shadow-glow)'
             }}>
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-              </svg>
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/8/83/Sena_Colombia_logo.svg" 
+                alt="SENA" 
+                style={{ width: '40px', height: '40px', objectFit: 'contain' }} 
+              />
             </div>
-            <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Start Generation Pipeline</h2>
+            <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Design your LG with IA.</h2>
             <p style={{ color: 'var(--text-muted)', maxWidth: '500px', margin: '0 auto 2rem' }}>
-              Enter the target Program ID. Ensure its configuration file exists in the \`config/programs/\` directory.
+              Escribe el identificador de tu programa de formación (Ej: <strong>software-dev</strong>). La Inteligencia Artificial adaptará todo el currículo y el vocabulario a esa especialidad.
             </p>
             
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '1rem' }}>
