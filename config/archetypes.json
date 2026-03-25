@@ -1,0 +1,121 @@
+{
+  "profiles": {
+    "balanced": {
+      "description": "Rotates archetypes to maximize variety across PMs",
+      "rules": {
+        "PM-2.1": ["C", "B", "A", "D", "E"],
+        "PM-2.2": ["A", "B", "E", "C", "D"],
+        "PM-2.3": ["D", "A", "F", "C", "B", "E"],
+        "PM-2.4": ["E", "C", "D", "B", "A"],
+        "PM-2.5": ["B", "E", "D", "C", "A"],
+        "PM-2.6": ["C", "A", "D", "F", "B", "E"],
+        "PM-2.7": ["D", "C", "E", "B", "A"],
+        "PM-2.8": ["B", "C", "E", "A", "D"],
+        "PM-2.10": ["A", "E", "C", "D", "B"]
+      }
+    },
+    "production": {
+      "description": "Selects fastest-to-generate archetypes",
+      "rules": {
+        "PM-2.1": ["D", "A", "E", "C", "B"],
+        "PM-2.2": ["C", "A", "B", "E", "D"],
+        "PM-2.3": ["E", "A", "D", "C", "B", "F"],
+        "PM-2.4": ["D", "E", "A", "B", "C"],
+        "PM-2.5": ["D", "B", "E", "C", "A"],
+        "PM-2.6": ["A", "B", "C", "D", "E", "F"],
+        "PM-2.7": ["A", "E", "D", "C", "B"],
+        "PM-2.8": ["E", "A", "B", "D", "C"],
+        "PM-2.10": ["B", "A", "D", "E", "C"]
+      }
+    },
+    "engagement": {
+      "description": "Selects highest-interactivity archetypes",
+      "rules": {
+        "PM-2.1": ["E", "C", "B", "A", "D"],
+        "PM-2.2": ["E", "B", "A", "C", "D"],
+        "PM-2.3": ["D", "A", "F", "C", "B", "E"],
+        "PM-2.4": ["C", "E", "D", "B", "A"],
+        "PM-2.5": ["E", "B", "D", "C", "A"],
+        "PM-2.6": ["C", "F", "E", "D", "A", "B"],
+        "PM-2.7": ["C", "D", "B", "E", "A"],
+        "PM-2.8": ["B", "E", "C", "A", "D"],
+        "PM-2.10": ["C", "E", "D", "A", "B"]
+      }
+    }
+  },
+
+  "archetypes": {
+    "PM-2.1": [
+      {"id": "A", "name": "Crisis", "description": "Real-world crisis scenario hook", "interactivity": "high", "generation_complexity": "complex"},
+      {"id": "B", "name": "Debate", "description": "Provocative question with argumentation", "interactivity": "high", "generation_complexity": "moderate"},
+      {"id": "C", "name": "News", "description": "Real industry news as starting point", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "D", "name": "Personal", "description": "Self-assessment of prior knowledge", "interactivity": "low", "generation_complexity": "simple"},
+      {"id": "E", "name": "Competition", "description": "Challenge or game-based hook", "interactivity": "high", "generation_complexity": "moderate"}
+    ],
+    "PM-2.2": [
+      {"id": "A", "name": "Visual", "description": "Visual diagnostic with diagrams", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "B", "name": "Scenario", "description": "Realistic scenario for diagnosis", "interactivity": "high", "generation_complexity": "moderate"},
+      {"id": "C", "name": "Scale", "description": "Self-rating scale assessment", "interactivity": "low", "generation_complexity": "simple"},
+      {"id": "D", "name": "Prediction", "description": "Predict and compare activity", "interactivity": "medium", "generation_complexity": "simple"},
+      {"id": "E", "name": "Group Map", "description": "Collaborative mapping activity", "interactivity": "high", "generation_complexity": "moderate"}
+    ],
+    "PM-2.3": [
+      {"id": "A", "name": "TBLT Cycle", "description": "Task-based reading with non-linguistic outcome", "interactivity": "high", "generation_complexity": "complex"},
+      {"id": "B", "name": "Comprehension Strategies", "description": "K-W-L, DRTA, or Reciprocal Teaching", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "C", "name": "Information Gap", "description": "Different texts, exchange information", "interactivity": "high", "generation_complexity": "complex"},
+      {"id": "D", "name": "Cooperative Jigsaw", "description": "Each member reads a section, teaches others", "interactivity": "high", "generation_complexity": "moderate"},
+      {"id": "E", "name": "Multimodal", "description": "Reading with images or audio support", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "F", "name": "HOTS Focus", "description": "Divergent questions and critical thinking", "interactivity": "medium", "generation_complexity": "complex"}
+    ],
+    "PM-2.4": [
+      {"id": "A", "name": "Exploratory", "description": "Free writing with sentence starters", "interactivity": "low", "generation_complexity": "simple"},
+      {"id": "B", "name": "Academic/Formal", "description": "Structured report with template", "interactivity": "low", "generation_complexity": "moderate"},
+      {"id": "C", "name": "Collaborative TBLT", "description": "Team writing with scaffolded task", "interactivity": "high", "generation_complexity": "complex"},
+      {"id": "D", "name": "AI-Mediated", "description": "Skeleton structure completion", "interactivity": "medium", "generation_complexity": "simple"},
+      {"id": "E", "name": "Genre-Based", "description": "Specific genre writing (checklist, report)", "interactivity": "medium", "generation_complexity": "moderate"}
+    ],
+    "PM-2.5": [
+      {"id": "A", "name": "Phonics & Spelling", "description": "Phonetic focus on domain terms", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "B", "name": "Vocabulary Development", "description": "Categorization and word relationships", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "C", "name": "Reading Fluency", "description": "Guided reading aloud for fluency", "interactivity": "low", "generation_complexity": "simple"},
+      {"id": "D", "name": "Writing Scaffolding", "description": "Sentence building with vocabulary", "interactivity": "low", "generation_complexity": "simple"},
+      {"id": "E", "name": "Interactive Literacy", "description": "Matching games and card activities", "interactivity": "high", "generation_complexity": "moderate"}
+    ],
+    "PM-2.6": [
+      {"id": "A", "name": "Micro-Skills", "description": "Focus on specific listening micro-skills", "interactivity": "low", "generation_complexity": "moderate"},
+      {"id": "B", "name": "Phase-Based", "description": "Pre-listening → gist → detail → task", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "C", "name": "TBLT", "description": "Listen and complete a non-linguistic task", "interactivity": "high", "generation_complexity": "complex"},
+      {"id": "D", "name": "Bloom Progression", "description": "Remember → understand → analyze", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "E", "name": "Advanced", "description": "Extract specific information from audio", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "F", "name": "Multimedia", "description": "Video with graduated subtitle support", "interactivity": "high", "generation_complexity": "complex"}
+    ],
+    "PM-2.7": [
+      {"id": "A", "name": "Phoneme Focus", "description": "Target specific phonemes problematic for L1", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "B", "name": "Prosody & Rhythm", "description": "Intonation and stress patterns", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "C", "name": "Shadowing & Repetition", "description": "Repeat after model audio", "interactivity": "high", "generation_complexity": "simple"},
+      {"id": "D", "name": "Chunking & Fluency", "description": "Natural pause groups for fluency", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "E", "name": "Minimal Pairs", "description": "Distinguish similar sounds", "interactivity": "high", "generation_complexity": "simple"}
+    ],
+    "PM-2.8": [
+      {"id": "A", "name": "Gap Tasks", "description": "Information gap between partners", "interactivity": "high", "generation_complexity": "complex"},
+      {"id": "B", "name": "Role-Based", "description": "Professional role play simulation", "interactivity": "high", "generation_complexity": "moderate"},
+      {"id": "C", "name": "Multimedia Output", "description": "Record audio/podcast", "interactivity": "high", "generation_complexity": "moderate"},
+      {"id": "D", "name": "Rehearsal & Scaffolding", "description": "Guided → semi-guided → free production", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "E", "name": "Interaction Dynamics", "description": "Chain or relay speaking activities", "interactivity": "high", "generation_complexity": "simple"}
+    ],
+    "PM-2.10": [
+      {"id": "A", "name": "Discovery", "description": "Inductive rule finding from examples", "interactivity": "medium", "generation_complexity": "complex"},
+      {"id": "B", "name": "Controlled Practice", "description": "Repetitive drills with scaffolding", "interactivity": "low", "generation_complexity": "simple"},
+      {"id": "C", "name": "Communicative Grammar", "description": "Grammar through meaningful tasks", "interactivity": "high", "generation_complexity": "complex"},
+      {"id": "D", "name": "Creative Production", "description": "Use grammar in creative writing", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "E", "name": "Editing & Error Analysis", "description": "Find and correct errors", "interactivity": "medium", "generation_complexity": "moderate"}
+    ],
+    "PM-3.5": [
+      {"id": "A", "name": "Professional Simulation", "description": "Full professional scenario", "interactivity": "high", "generation_complexity": "complex"},
+      {"id": "B", "name": "Problem-Solution", "description": "Diagnose and solve a real problem", "interactivity": "high", "generation_complexity": "complex"},
+      {"id": "C", "name": "Production", "description": "Create a deliverable artifact", "interactivity": "medium", "generation_complexity": "moderate"},
+      {"id": "D", "name": "Collaborative Project", "description": "Team-based project with roles", "interactivity": "high", "generation_complexity": "complex"},
+      {"id": "E", "name": "Gamified", "description": "Game-based challenge or escape room", "interactivity": "high", "generation_complexity": "moderate"}
+    ]
+  }
+}

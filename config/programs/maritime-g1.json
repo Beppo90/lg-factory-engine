@@ -1,0 +1,193 @@
+{
+  "id": "maritime-g1",
+  "name": "Inglés Marítimo y Portuario",
+  "code": "123456",
+  "institution": {
+    "name": "SENA",
+    "center": "Centro de Comercio y Servicios — Regional Bolívar",
+    "format": "gfpi-f-135",
+    "instructor": {
+      "name": "Sergio Cortés Perdomo",
+      "role": "Instructor de Bilingüismo",
+      "email": "sergiocoper@gmail.com"
+    }
+  },
+  "domain": "maritime",
+  "cefr_level": "A1.2",
+  "competencia": "Comunicarse en tareas sencillas y habituales que requieren un intercambio simple y directo de información sobre actividades y áreas de necesidad inmediata, en contextos marítimos y portuarios.",
+  "resultado_aprendizaje": "Leer textos muy breves y sencillos del ámbito marítimo y portuario, identificar información específica predecible, y producir textos cortos y simples usando estructuras básicas del inglés.",
+
+  "universe": {
+    "company": "Caribbean Maritime Lines (CML)",
+    "location": "Cartagena, Colombia",
+    "vessel": "MV Caribbean Star",
+    "characters": [
+      {"name": "Capitán Rodrigo Herrera", "role": "Master", "description": "25 años de experiencia, mentor de jóvenes oficiales"},
+      {"name": "Ana Lucía Vargas", "role": "Chief Officer", "description": "Segundo de a bordo, especialista en carga"},
+      {"name": "Pedro Suárez", "role": "Third Engineer", "description": "Ingeniero junior, primer contrato"},
+      {"name": "Jorge Martínez", "role": "Bosun", "description": "Contramaestre, jefe de cubierta"},
+      {"name": "Diana Castillo", "role": "Port Agent", "description": "Agente naviero en el puerto de Cartagena"},
+      {"name": "Carlos Mendoza", "role": "VTS Operator", "description": "Operador del sistema de tráfico marítimo"}
+    ],
+    "scenarios": [
+      "Llegada y salida de puerto",
+      "Operaciones de carga y descarga",
+      "Comunicaciones con VTS y práctico",
+      "Inspecciones de Estado Rector del Puerto",
+      "Emergencias y simulacros"
+    ]
+  },
+
+  "units": [
+    {
+      "number": 1,
+      "name": "Ship Overview",
+      "grammar_targets": ["Demonstratives (this/that/these/those)", "Verb To Be (is/are)"],
+      "theme": "Partes del buque, tipos de embarcaciones, equipo de seguridad",
+      "vocabulary": [
+        {"term": "bridge", "definition": "The command station on top of the ship", "spanish": "puente de mando"},
+        {"term": "engine room", "definition": "Where the main engine is located", "spanish": "sala de máquinas"},
+        {"term": "deck", "definition": "The working surface of the ship", "spanish": "cubierta"},
+        {"term": "hull", "definition": "The body of the ship in the water", "spanish": "casco"},
+        {"term": "bow", "definition": "The front of the ship", "spanish": "proa"},
+        {"term": "stern", "definition": "The back of the ship", "spanish": "popa"},
+        {"term": "port side", "definition": "The left side of the ship", "spanish": "babor"},
+        {"term": "starboard side", "definition": "The right side of the ship", "spanish": "estribor"},
+        {"term": "container ship", "definition": "A vessel that carries standard boxes (TEUs)", "spanish": "buque portacontenedor"},
+        {"term": "bulk carrier", "definition": "A vessel that carries loose cargo like grain or ore", "spanish": "buque granelero"},
+        {"term": "tanker", "definition": "A vessel that carries liquid cargo like oil", "spanish": "petrolero"},
+        {"term": "lifeboat", "definition": "Small boat on the ship for emergencies", "spanish": "bote salvavidas"},
+        {"term": "life jacket", "definition": "Wearable flotation device — orange vest", "spanish": "chaleco salvavidas"},
+        {"term": "fire extinguisher", "definition": "Red cylinder that puts out fires", "spanish": "extintor de incendios"},
+        {"term": "gangway", "definition": "The walkway to board the ship from the quay", "spanish": "pasarela"},
+        {"term": "mooring lines", "definition": "Ropes that tie the ship to the dock", "spanish": "amarras"},
+        {"term": "hatch", "definition": "Opening on the deck to access the hold", "spanish": "escotilla"},
+        {"term": "hold", "definition": "Cargo space below the deck", "spanish": "bodega"},
+        {"term": "superstructure", "definition": "The building on top of the deck (bridge, cabins)", "spanish": "superestructura"},
+        {"term": "propeller", "definition": "Turning device at the stern that moves the ship", "spanish": "hélice"}
+      ],
+      "stories": []
+    },
+    {
+      "number": 2,
+      "name": "The Crew",
+      "grammar_targets": ["Present Simple", "Imperative"],
+      "theme": "Roles y funciones de la tripulación, cadena de mando",
+      "vocabulary": [
+        {"term": "captain", "definition": "The person who commands the vessel", "spanish": "capitán"},
+        {"term": "chief officer", "definition": "Second in command on the ship", "spanish": "primer oficial"},
+        {"term": "second officer", "definition": "Third in command, responsible for navigation", "spanish": "segundo oficial"},
+        {"term": "third officer", "definition": "Fourth in command, junior deck officer", "spanish": "tercer oficial"},
+        {"term": "chief engineer", "definition": "Head of the engine department", "spanish": "ingeniero jefe"},
+        {"term": "bosun", "definition": "Boss of the deck workers", "spanish": "contramaestre"},
+        {"term": "able seaman", "definition": "Experienced deck worker (AB)", "spanish": "marinero de primera"},
+        {"term": "ordinary seaman", "definition": "Junior deck worker (OS)", "spanish": "marinero ordinario"},
+        {"term": "deck department", "definition": "Team that works on the deck", "spanish": "departamento de cubierta"},
+        {"term": "engine department", "definition": "Team that maintains the engine", "spanish": "departamento de máquinas"},
+        {"term": "watch-keeping", "definition": "Working on a schedule to look after the ship", "spanish": "guardia"},
+        {"term": "safety rounds", "definition": "Regular checks of safety equipment", "spanish": "rondas de seguridad"},
+        {"term": "muster roll", "definition": "List of all crew members on board", "spanish": "rol de tripulación"},
+        {"term": "crew list", "definition": "Official document listing the crew", "spanish": "lista de tripulación"},
+        {"term": "command", "definition": "To give orders or lead", "spanish": "comandar"},
+        {"term": "maintain", "definition": "To keep in good working condition", "spanish": "mantener"},
+        {"term": "navigate", "definition": "To direct the course of the ship", "spanish": "navegar"},
+        {"term": "secure", "definition": "To make fast or safe", "spanish": "asegurar"},
+        {"term": "report", "definition": "To give information to a superior", "spanish": "informar"},
+        {"term": "inspect", "definition": "To check carefully", "spanish": "inspeccionar"}
+      ],
+      "stories": []
+    },
+    {
+      "number": 3,
+      "name": "Places in Port and Position",
+      "grammar_targets": ["Present Progressive", "Tag Questions"],
+      "theme": "Instalaciones portuarias, amarre, posicionamiento del buque",
+      "vocabulary": [
+        {"term": "quay", "definition": "A solid structure for loading and unloading ships", "spanish": "muelle"},
+        {"term": "berth", "definition": "A place where a ship is tied up", "spanish": "atraque"},
+        {"term": "pier", "definition": "A structure extending into the water", "spanish": "embarcadero"},
+        {"term": "jetty", "definition": "A structure protecting a harbor", "spanish": "espigón"},
+        {"term": "dry dock", "definition": "A dock where water is removed for ship repair", "spanish": "dique seco"},
+        {"term": "terminal", "definition": "A facility for loading/unloading cargo", "spanish": "terminal"},
+        {"term": "crane", "definition": "Machine for lifting heavy cargo", "spanish": "grúa"},
+        {"term": "gantry crane", "definition": "Large crane for containers", "spanish": "grúa pórtico"},
+        {"term": "container yard", "definition": "Area for storing containers", "spanish": "patio de contenedores"},
+        {"term": "anchorage area", "definition": "Place where ships drop anchor", "spanish": "zona de fondeo"},
+        {"term": "navigation channel", "definition": "Path for ships to enter/exit port", "spanish": "canal de navegación"},
+        {"term": "approach", "definition": "The act of moving toward the berth", "spanish": "aproximación"},
+        {"term": "berth", "definition": "To bring a ship to its position", "spanish": "atracar"},
+        {"term": "mooring", "definition": "Tying the ship to the dock", "spanish": "amarre"},
+        {"term": "unmooring", "definition": "Untying the ship from the dock", "spanish": "desatraque"},
+        {"term": "alongside", "definition": "Next to the quay or another vessel", "spanish": "al costado"},
+        {"term": "buoy", "definition": "Floating marker in the water", "spanish": "boya"},
+        {"term": "beacon", "definition": "Fixed light or signal for navigation", "spanish": "baliza"},
+        {"term": "VTS", "definition": "Vessel Traffic Service — controls ship movement in port", "spanish": "servicio de tráfico marítimo"},
+        {"term": "gangway", "definition": "Walkway between ship and quay", "spanish": "pasarela"}
+      ],
+      "stories": []
+    },
+    {
+      "number": 4,
+      "name": "In Port",
+      "grammar_targets": ["Quantifiers", "Modals (can/could/should/must)"],
+      "theme": "Operaciones portuarias, carga/descarga, documentación",
+      "vocabulary": [
+        {"term": "loading", "definition": "Putting cargo on the ship", "spanish": "carga"},
+        {"term": "unloading", "definition": "Taking cargo off the ship", "spanish": "descarga"},
+        {"term": "stowage", "definition": "How cargo is arranged in the hold", "spanish": "estiba"},
+        {"term": "lashing", "definition": "Securing cargo with ropes or chains", "spanish": "trincaje"},
+        {"term": "TEU", "definition": "Twenty-foot Equivalent Unit — standard container size", "spanish": "unidad equivalente de veinte pies"},
+        {"term": "bulk cargo", "definition": "Loose cargo like grain, ore, or coal", "spanish": "carga a granel"},
+        {"term": "containerized cargo", "definition": "Cargo in standard containers", "spanish": "carga containerizada"},
+        {"term": "hazardous cargo", "definition": "Dangerous goods requiring special handling", "spanish": "carga peligrosa"},
+        {"term": "bill of lading", "definition": "Document proving cargo ownership", "spanish": "conocimiento de embarque"},
+        {"term": "cargo manifest", "definition": "List of all cargo on the ship", "spanish": "manifiesto de carga"},
+        {"term": "customs declaration", "definition": "Document for customs clearance", "spanish": "declaración aduanera"},
+        {"term": "port clearance", "definition": "Permission to leave the port", "spanish": "permiso de salida"},
+        {"term": "pilotage", "definition": "Service of a pilot to guide the ship", "spanish": "practicaje"},
+        {"term": "towage", "definition": "Service of tugboats to move the ship", "spanish": "remolque"},
+        {"term": "bunkering", "definition": "Refueling the ship", "spanish": "abastecimiento de combustible"},
+        {"term": "port regulations", "definition": "Rules of the port", "spanish": "regulaciones portuarias"},
+        {"term": "ISPS code", "definition": "International Ship and Port Facility Security Code", "spanish": "código ISPS"},
+        {"term": "crane", "definition": "Machine for lifting cargo", "spanish": "grúa"},
+        {"term": "hold", "definition": "Cargo space below deck", "spanish": "bodega"},
+        {"term": "hatch", "definition": "Opening on deck to access the hold", "spanish": "escotilla"}
+      ],
+      "stories": []
+    },
+    {
+      "number": 5,
+      "name": "IMO SMCP",
+      "grammar_targets": ["SMCP Standard Phrases", "Reported Commands", "Conditionals (emergencies)"],
+      "theme": "Frases estandarizadas IMO SMCP para comunicaciones marítimas",
+      "vocabulary": [
+        {"term": "MAYDAY", "definition": "Distress signal — immediate danger to life/vessel", "spanish": "señal de socorro"},
+        {"term": "PAN PAN", "definition": "Urgency signal — serious situation, no immediate danger", "spanish": "señal de urgencia"},
+        {"term": "SECURITÉ", "definition": "Safety signal — navigational warning", "spanish": "señal de seguridad"},
+        {"term": "distress", "definition": "A situation of immediate danger", "spanish": "socorro"},
+        {"term": "urgency", "definition": "A serious situation requiring attention", "spanish": "urgencia"},
+        {"term": "VHF radio", "definition": "Very High Frequency radio for ship communications", "spanish": "radio VHF"},
+        {"term": "channel 16", "definition": "International distress and calling frequency", "spanish": "canal 16"},
+        {"term": "position report", "definition": "Communication giving ship's location", "spanish": "informe de posición"},
+        {"term": "course alteration", "definition": "Change of ship's direction", "spanish": "cambio de rumbo"},
+        {"term": "heading", "definition": "Direction the ship is pointing", "spanish": "rumbo"},
+        {"term": "speed", "definition": "Rate of movement of the vessel", "spanish": "velocidad"},
+        {"term": "anchorage", "definition": "Place where a ship drops anchor", "spanish": "fondeadero"},
+        {"term": "man overboard", "definition": "Person has fallen from the ship into the water", "spanish": "hombre al agua"},
+        {"term": "fire drill", "definition": "Practice for fire emergency", "spanish": "simulacro de incendio"},
+        {"term": "abandon ship", "definition": "To leave the vessel in an emergency", "spanish": "abandonar el buque"},
+        {"term": "pilot", "definition": "Person who guides ships in/out of port", "spanish": "práctico"},
+        {"term": "tugboat", "definition": "Small powerful boat that helps move big ships", "spanish": "remolcador"},
+        {"term": "VTS", "definition": "Vessel Traffic Service", "spanish": "servicio de tráfico marítimo"},
+        {"term": "COLREGS", "definition": "International Regulations for Preventing Collisions at Sea", "spanish": "reglamento internacional"},
+        {"term": "GMDSS", "definition": "Global Maritime Distress and Safety System", "spanish": "sistema mundial de socorro"}
+      ],
+      "stories": []
+    }
+  ],
+
+  "sessions_per_unit": 8,
+  "hours_per_session": 3,
+  "skip_pm_1_1": true,
+  "archetype_profile": "balanced"
+}
