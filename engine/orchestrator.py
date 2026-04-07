@@ -510,6 +510,29 @@ def run_pipeline(
             state.status = RunStatus.COMPLETE
             state_manager.save(state)
             break
+            
+        # ─── ZERO-TO-HERO PARSER BRIDGE ───
+        if state.current_moment == 3 and state.program and not state.program.units:
+            if "PM-1.2" in state.completed_pms:
+                from engine.parsers.scope_parser import extract_units_from_scope
+                print(f"\n  → Running Zero-to-Hero Scope Parser Bridge...")
+                try:
+                    parsed_units = extract_units_from_scope(state.completed_pms["PM-1.2"].worksheet)
+                    state.program.units = parsed_units
+                    state_manager.save(state)
+                    
+                    # Persist the programmatic model back to disk for permanence
+                    import json
+                    from pathlib import Path
+                    config_path = Path(__file__).parent.parent / "config" / "programs" / f"{state.program.id}.json"
+                    if config_path.exists():
+                        from pydantic import BaseModel
+                        if isinstance(state.program, BaseModel):
+                            config_path.write_text(json.dumps(state.program.model_dump(), indent=2, ensure_ascii=False), encoding="utf-8")
+                    
+                    print(f"    Successfully parsed {len(parsed_units)} unit(s) and persisted config.")
+                except Exception as e:
+                    print(f"    ERROR PARSING SCOPE: {e}")
 
         # ─── RUN PM ──────────────────────────────────────
         if action.type == "run_pm":
