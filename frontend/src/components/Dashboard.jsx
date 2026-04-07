@@ -67,33 +67,23 @@ export default function Dashboard() {
             </p>
             
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '1rem' }}>
-              {availablePrograms.length > 0 ? (
-                <select 
-                  value={programId} 
-                  onChange={(e) => setProgramId(e.target.value)}
-                  style={{
-                    padding: '0.75rem 1rem', borderRadius: 'var(--radius-md)',
-                    border: '1px solid var(--panel-border)', background: 'rgba(0,0,0,0.5)',
-                    color: 'white', fontSize: '1.1rem', width: '250px', outline: 'none'
-                  }}
-                >
-                  {availablePrograms.map(p => (
-                    <option key={p.id} value={p.id}>{p.name} ({p.id})</option>
-                  ))}
-                </select>
-              ) : (
-                <input 
-                  type="text" 
-                  value={programId} 
-                  onChange={(e) => setProgramId(e.target.value)} 
-                  placeholder="e.g. maritime-g1"
-                  style={{
-                    padding: '0.75rem 1rem', borderRadius: 'var(--radius-md)',
-                    border: '1px solid var(--panel-border)', background: 'rgba(0,0,0,0.5)',
-                    color: 'white', fontSize: '1.1rem', width: '250px', outline: 'none'
-                  }}
-                />
-              )}
+              <input 
+                type="text" 
+                list="programs-list"
+                value={programId} 
+                onChange={(e) => setProgramId(e.target.value)} 
+                placeholder="Ej. software-dev o soldadura"
+                style={{
+                  padding: '0.75rem 1rem', borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--panel-border)', background: 'rgba(0,0,0,0.5)',
+                  color: 'white', fontSize: '1.1rem', width: '280px', outline: 'none'
+                }}
+              />
+              <datalist id="programs-list">
+                {availablePrograms.map(p => (
+                  <option key={p.id} value={p.id}>{p.name}</option>
+                ))}
+              </datalist>
               <button 
                 className="btn-primary" 
                 style={{ fontSize: '1.1rem' }} 
