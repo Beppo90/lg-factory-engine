@@ -239,6 +239,13 @@ def resolve_next(state: RunState, registry: dict) -> NextAction:
         if state.validation is None:
             return NextAction(type="validate")
         if state.validation.status != "critical_errors":
+            # PM-3.6: GFPI-F-135 Integrator (per unit)
+            if state.program:
+                for unit_spec in state.program.units:
+                    unit_key = str(unit_spec.number)
+                    if unit_key in state.unit_states:
+                        if "PM-3.6" not in state.unit_states[unit_key].completed_pms:
+                            return NextAction(type="run_pm", pm_id="PM-3.6", unit=unit_spec.number)
             return NextAction(type="export")
 
     return NextAction(type="done")
@@ -314,6 +321,18 @@ def resolve_inputs(
             if "PM-4.1" in us.completed_pms:
                 pm41_outputs[f"unit_{us.unit_number}"] = us.completed_pms["PM-4.1"].worksheet[:1000]
         inputs["pm_4_1_output"] = json.dumps(pm41_outputs, indent=2)
+
+    # GFPI sections for PM-3.6
+    if pm_def.id == "PM-3.6":
+        gfpi_sections = {}
+        for pid, pout in state.completed_pms.items():
+            if pout.gfpi_section:
+                gfpi_sections[f"Global_{pid}"] = pout.gfpi_section
+        if unit_state:
+            for pid, pout in unit_state.completed_pms.items():
+                if pout.gfpi_section:
+                    gfpi_sections[f"Unit_{pid}"] = pout.gfpi_section
+        inputs["all_gfpi_sections"] = json.dumps(gfpi_sections, indent=2)
 
     return inputs
 
@@ -748,14 +767,59 @@ def run_pipeline(
             state.status = RunStatus.EXPORTING
             state_manager.save(state)
 
-            # Build file manifest
+            from engine.docx_exporter import generate_unit_docx, generate_gfpi_docx
+
             manifest = []
+            out_dir = Path(state_manager.get_run_dir(state.program_id, state.run_id))
+
+            # Build DOCX Instructor Playbooks & GFPI Learner Guides per unit
+            if state.program:
+                for unit_spec in state.program.units:
+                    unit_key = str(unit_spec.number)
+                    if unit_key not in state.unit_states:
+                        continue
+                    us = state.unit_states[unit_key]
+
+                    # Instructor Playbook DOCX
+                    unit_outputs_md = {pid: pout.worksheet for pid, pout in us.completed_pms.items()}
+                    pb_path = out_dir / f"Instructor-Playbook-Unit{unit_spec.number}.docx"
+                    try:
+                        generate_unit_docx(
+                            unit_outputs=unit_outputs_md,
+                            program_name=state.program.name,
+                            unit_name=unit_spec.name,
+                            unit_number=str(unit_spec.number),
+                            cefr=state.program.cefr_level.value if hasattr(state.program.cefr_level, 'value') else str(state.program.cefr_level),
+                            grammar_targets=unit_spec.grammar_targets,
+                            key_vocabulary=[v.term for v in unit_spec.vocabulary],
+                            output_path=pb_path
+                        )
+                        manifest.append(str(pb_path))
+                    except Exception as e:
+                        print(f"  Failed to build Playbook Docx: {e}")
+
+                    # GFPI Learner Guide DOCX (from PM-3.6 output)
+                    if "PM-3.6" in us.completed_pms:
+                        gfpi_path = out_dir / f"GFPI-F-135-Learner-Unit{unit_spec.number}.docx"
+                        try:
+                            generate_gfpi_docx(
+                                gfpi_content=us.completed_pms["PM-3.6"].worksheet,
+                                program_name=state.program.name,
+                                unit_name=unit_spec.name,
+                                unit_number=str(unit_spec.number),
+                                output_path=gfpi_path
+                            )
+                            manifest.append(str(gfpi_path))
+                        except Exception as e:
+                            print(f"  Failed to build GFPI Docx: {e}")
+
+            # Append fallback markdown paths
             for us in state.unit_states.values():
                 for po in us.completed_pms.values():
-                    if po.file_path:
+                    if po.file_path and po.file_path not in manifest:
                         manifest.append(po.file_path)
             for po in state.completed_pms.values():
-                if po.file_path:
+                if po.file_path and po.file_path not in manifest:
                     manifest.append(po.file_path)
 
             if manifest and not skip_checkpoints:
