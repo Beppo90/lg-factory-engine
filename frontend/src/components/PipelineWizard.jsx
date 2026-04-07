@@ -33,8 +33,8 @@ export default function PipelineWizard() {
       case 'G2': return <Gate2Archetype runId={activeRun.run_id} pmId={activeRun.pm_id} />;
       case 'G3': return <Gate3Transversal runId={activeRun.run_id} />;
       case 'G4': return <Gate4Mission runId={activeRun.run_id} />;
-      case 'G5': return <Gate5Validation runId={activeRun.run_id} />;
-      case 'G6': return <Gate6Export runId={activeRun.run_id} />;
+      case 'G5': return <Gate5Validation runId={activeRun.run_id} report={activeRun.validation_report} />;
+      case 'G6': return <Gate6Export runId={activeRun.run_id} manifest={activeRun.manifest} />;
       default:
         return (
           <div className="glass-panel animate-fade-in">

@@ -89,42 +89,110 @@ class NullCheckpointHandler(CheckpointHandler):
 
 class WebCheckpointHandler(CheckpointHandler):
     """
-    Instead of CLI prompts, this handler sets state to waiting_human
-    and lets the API endpoints resolve the decision.
+    Sets state to waiting_human and polls the API for decisions.
     """
 
-    def __init__(self, state_manager: StateManager):
+    def __init__(self, state_manager: StateManager, run_id: str):
         self.sm = state_manager
+        self.run_id = run_id
 
-    def _wait_for_decision(self, state, gate_id: str, default=None):
-        """Poll state until a decision is recorded or timeout."""
+    def _get_current_state(self):
+        from engine.state import _deserialize_runstate
+        import json
+        run_dir = self.sm.data_dir / f"run-{self.run_id[:8]}"
+        state_file = run_dir / "state.json"
+        if not state_file.exists():
+            return None
+        data = json.loads(state_file.read_text(encoding='utf-8'))
+        return _deserialize_runstate(data)
+
+    def _wait_for_decision(self, gate_id: str, default=None):
         import time
         for _ in range(3600):  # 1 hour max
-            self.sm.reload(state)
+            state = self._get_current_state()
+            if not state:
+                time.sleep(1)
+                continue
             for d in state.decisions:
-                if d.gate.value == gate_id:
+                g_val = d.gate.value if hasattr(d.gate, 'value') else d.gate
+                if g_val == gate_id:
                     return d.value
             time.sleep(1)
         return default
 
+    def present_validation_report(self, report):
+        state = self._get_current_state()
+        state.validation = report
+        state.pending_gate = GateId.G5
+        state.status = RunStatus.WAITING_HUMAN
+        self.sm.save(state)
+
+        val = self._wait_for_decision("G5", "approve")
+
+        state = self._get_current_state()
+        state.pending_gate = None
+        state.status = RunStatus.RUNNING
+        self.sm.save(state)
+        return val
+
+    def present_export_preview(self, manifest):
+        state = self._get_current_state()
+        state.pending_gate = GateId.G6
+        state.status = RunStatus.WAITING_HUMAN
+        self.sm.save(state)
+
+        val = self._wait_for_decision("G6", "confirmed")
+
+        state = self._get_current_state()
+        state.pending_gate = None
+        state.status = RunStatus.RUNNING
+        self.sm.save(state)
+        return val == "confirmed"
+
+    def ask_optional_product(self, pm_id, pm_name, category):
+        state = self._get_current_state()
+        conf_id = {
+            "PM-3.3": "C-1", "PM-3.4": "C-2", "PM-4.2": "C-3",
+            "PM-3.1": "C-4", "PM-3.2": "C-5",
+        }.get(pm_id, "C-1")
+        state.pending_confirmation = conf_id
+        state.pending_pm_id = pm_id
+        state.status = RunStatus.WAITING_CONFIRMATION
+        self.sm.save(state)
+
+        import time
+        confirmed = True
+        for _ in range(3600):
+            s = self._get_current_state()
+            if not s:
+                time.sleep(1)
+                continue
+            if pm_id in s.confirmed_products:
+                confirmed = True
+                break
+            if pm_id in s.rejected_products:
+                confirmed = False
+                break
+            time.sleep(1)
+
+        state = self._get_current_state()
+        state.pending_confirmation = None
+        state.pending_pm_id = None
+        state.status = RunStatus.RUNNING
+        self.sm.save(state)
+        return confirmed
+
+    # Auto-approve earlier gates to unblock validation testing
     def present_macrotheme_selection(self, suggested, program_type):
         return suggested[0] if suggested else "Default"
-
     def present_story_selection(self, curated_sources):
         return [s.get("id", f"story-{i}") for i, s in enumerate(curated_sources[:2])]
-
     def present_archetype_selection(self, pm_id, pm_name, archetypes, unit_name, profile_suggestion=None):
         from engine.models import ArchetypeSelection as AS
-        return AS(pm_id=pm_id, unit_number=0,
-                  archetype_id=profile_suggestion or (archetypes[0].id if archetypes else "A"),
-                  source=DecisionSource.PROFILE_AUTO)
-
+        return AS(pm_id=pm_id, unit_number=0, archetype_id=profile_suggestion or (archetypes[0].id if archetypes else "A"), source=DecisionSource.PROFILE_AUTO)
     def present_transversal_map(self, m): return True
     def present_final_mission(self, m): return True
-    def present_validation_report(self, r): return "approve"
-    def present_export_preview(self, f): return True
     def ask_retry(self, pm_id, e): return False
-    def ask_optional_product(self, pm_id, name, cat): return True
 
 
 # ─── Pydantic Models ─────────────────────────────────────────────
@@ -161,6 +229,12 @@ class RunStatusResponse(BaseModel):
     errors: list[dict] = []
     created_at: Optional[str] = None
     updated_at: Optional[str] = None
+    # Checkpoint tracking fields
+    pending_gate: Optional[str] = None
+    pending_confirmation: Optional[str] = None
+    pending_pm: Optional[str] = None
+    validation_report: Optional[dict] = None
+    manifest: list[str] = []
 
 
 class ProgramListItem(BaseModel):
@@ -360,6 +434,21 @@ def _serialize_run_status(state, raw_data: dict = None) -> RunStatusResponse:
             "message": e.get("message"), "pm_id": e.get("pm_id"),
         })
 
+    manifest = []
+    if raw_data:
+        for us in raw_data.get("unit_states", {}).values():
+            for pm_id, pm_out in us.get("completed_pms", {}).items():
+                if pm_out.get("file_path"):
+                    manifest.append(pm_out["file_path"].split("/")[-1])
+
+    val_report = None
+    if getattr(state, "validation", None):
+        from dataclasses import asdict
+        try:
+            val_report = asdict(state.validation)
+        except Exception:
+            pass
+
     return RunStatusResponse(
         run_id=state.run_id,
         program_id=state.program_id,
@@ -378,6 +467,11 @@ def _serialize_run_status(state, raw_data: dict = None) -> RunStatusResponse:
         errors=errors,
         created_at=state.created_at.isoformat() if state.created_at else None,
         updated_at=state.updated_at.isoformat() if state.updated_at else None,
+        pending_gate=state.pending_gate.value if hasattr(state.pending_gate, 'value') else state.pending_gate,
+        pending_confirmation=state.pending_confirmation,
+        pending_pm=state.pending_pm_id,
+        validation_report=val_report,
+        manifest=manifest,
     )
 
 
@@ -398,7 +492,7 @@ async def _run_pipeline_background(
                 adapter = ClaudeAdapter()
 
         profile_enum = ArchetypeProfile(profile) if profile else None
-        checkpoint = NullCheckpointHandler()
+        checkpoint = WebCheckpointHandler(STATE_MANAGER, run_id)
 
         loop = asyncio.get_event_loop()
         await loop.run_in_executor(
@@ -406,7 +500,7 @@ async def _run_pipeline_background(
             lambda: run_pipeline(
                 program_config=program_config, adapter=adapter,
                 checkpoint_handler=checkpoint, state_manager=STATE_MANAGER,
-                dry_run=dry_run, profile=profile_enum, skip_checkpoints=True,
+                dry_run=dry_run, profile=profile_enum, skip_checkpoints=False,
             ),
         )
     except Exception as e:

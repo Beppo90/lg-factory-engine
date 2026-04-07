@@ -412,6 +412,10 @@ class RunState:
     validation: Optional[ValidationReport] = None
     metering: Optional[MeteringRecord] = None
     error_log: list[ErrorEntry] = field(default_factory=list)
+    # FLOW-v2: Web Checkpoint Tracking
+    pending_gate: Optional[GateId] = None
+    pending_confirmation: Optional[str] = None
+    pending_pm_id: Optional[str] = None
 
     @staticmethod
     def create(program_id: str) -> RunState:
