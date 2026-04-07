@@ -364,7 +364,7 @@ def _json_to_program_config(data: dict) -> ProgramConfig:
         center=data["institution"].get("center"),
     )
     universe = None
-    if "universe" in data:
+    if data.get("universe") is not None:
         chars = [Character(**c) for c in data["universe"].get("characters", [])]
         universe = NarrativeUniverse(
             company=data["universe"]["company"],
