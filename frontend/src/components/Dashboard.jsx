@@ -61,9 +61,9 @@ export default function Dashboard() {
                 style={{ width: '40px', height: '40px', objectFit: 'contain' }} 
               />
             </div>
-            <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Design your LG with IA.</h2>
-            <p style={{ color: 'var(--text-muted)', maxWidth: '500px', margin: '0 auto 2rem' }}>
-              Escribe el identificador de tu programa de formación (Ej: <strong>software-dev</strong>). La Inteligencia Artificial adaptará todo el currículo y el vocabulario a esa especialidad.
+            <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Fábrica de Guías ESP (English for Specific Purposes)</h2>
+            <p style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto 2rem', lineHeight: '1.6' }}>
+              Transforma el inglés general en inglés técnico en segundos. Ingresa tu red o especialidad (Ej: <strong>software-dev</strong>) y nuestro sistema de 20 Prompts Maestros procesará la solicitud para exportar al instante un ecosistema ESP completo: Guía de Aprendizaje, Playbook e Instrumentos de Evaluación.
             </p>
             
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '1rem' }}>
