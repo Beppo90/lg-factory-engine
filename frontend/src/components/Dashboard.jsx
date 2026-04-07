@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useEngine } from '../context/EngineContext';
 import PipelineWizard from './PipelineWizard';
+import ProgramBuilderModal from './ProgramBuilderModal';
 import { api } from '../services/api';
 
 export default function Dashboard() {
   const { engineStatus, activeRun, startPipeline } = useEngine();
   const [programId, setProgramId] = useState('maritime-g1');
   const [availablePrograms, setAvailablePrograms] = useState([]);
+  const [showBuilder, setShowBuilder] = useState(false);
+  const [builderProgramId, setBuilderProgramId] = useState('');
 
   useEffect(() => {
     async function loadPrograms() {
@@ -20,6 +23,51 @@ export default function Dashboard() {
       loadPrograms();
     }
   }, [engineStatus]);
+
+  const handleLaunchClick = () => {
+    if (!programId.trim()) return;
+    const exists = availablePrograms.some(p => p.id === programId);
+    if (!exists) {
+      setBuilderProgramId(programId);
+      setShowBuilder(true);
+    } else {
+      startPipeline(programId);
+    }
+  };
+
+  const handleBuilderSubmit = async (data) => {
+    const payload = {
+      id: data.id,
+      name: data.name,
+      domain: data.domain,
+      cefr_level: data.cefr,
+      program_type: data.type,
+      macrotheme: data.macrotheme,
+      institution: {
+        name: "SENA",
+        center: "Centro de Comercio y Servicios",
+        format: "gfpi-f-135",
+        instructor: { name: "Sergio Cortés Perdomo", role: "Instructor de Bilingüismo", email: "sergiocoper@gmail.com" }
+      },
+      units: [],
+      sessions_per_unit: 8,
+      hours_per_session: 3,
+      skip_pm_1_1: false
+    };
+
+    try {
+      await fetch('/api/programs', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      setShowBuilder(false);
+      startPipeline(data.id);
+    } catch (err) {
+      console.error(err);
+      alert('Error creating program config.');
+    }
+  };
 
   return (
     <div style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
@@ -87,7 +135,7 @@ export default function Dashboard() {
               <button 
                 className="btn-primary" 
                 style={{ fontSize: '1.1rem' }} 
-                onClick={() => startPipeline(programId)}
+                onClick={handleLaunchClick}
                 disabled={!programId.trim()}
               >
                 Launch Engine
@@ -110,6 +158,14 @@ export default function Dashboard() {
         </main>
       ) : (
         <PipelineWizard />
+      )}
+
+      {showBuilder && (
+        <ProgramBuilderModal 
+          programId={builderProgramId}
+          onSubmit={handleBuilderSubmit}
+          onCancel={() => setShowBuilder(false)}
+        />
       )}
     </div>
   );
