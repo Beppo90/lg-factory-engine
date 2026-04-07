@@ -1,5 +1,5 @@
 # PM-2.6: LISTENING COMPREHENSION — THE AUDITORY ANCHOR
-## Fase 2 · Planeación | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 ## Manual Clínico de Actividades para el Desarrollo de la Comprensión Auditiva
 
@@ -11,8 +11,7 @@
 |-------|-------|
 | **Código** | PM-2.6 |
 | **Nombre** | Listening Comprehension — The Auditory Anchor |
-| **Fase** | 2. Planeación |
-| **Subfase guía SENA** | Apropiación |
+| **Subfase guía SENA** | 3.3 Actividades de apropiación del conocimiento |
 | **Ubicación en la Guía** | Sección 3.3 Apropiación |
 | **Conjunto** | B — Oral (Listening → Pronunciation → Speaking) |
 | **Tipo de Evidencia SENA** | N/A (actividad de input receptivo auditivo) |

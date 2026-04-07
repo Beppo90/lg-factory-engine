@@ -1,5 +1,5 @@
 # PM-3.5: FINAL MISSION — THE INTEGRATIVE TASK
-## Fase 3 · Ejecución | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -10,7 +10,7 @@
 |-------|-------|
 | **Código** | PM-3.5 |
 | **Nombre** | Final Mission — The Integrative Task |
-| **Fase** | 3. Ejecución |
+| **Subfase guía SENA** | 3.4 Actividades de transferencia del conocimiento |
 | **Ubicación en la Guía** | Sesión final (después de Fase 3 completa) |
 | **Tipo de Evidencia SENA** | **DESEMPEÑO** (oral) + **PRODUCTO** (artefacto) |
 | **Instrumentos** | Checklist de Observación PM-4.1 (desempeño) + Rúbrica Analítica PM-4.1 (producto) |

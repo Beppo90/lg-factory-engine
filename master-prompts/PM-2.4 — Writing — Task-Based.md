@@ -1,5 +1,5 @@
 # PM-2.4: WRITING SKILLS & PRAGMATICS — TASK-BASED
-## Fase 2 · Planeación | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 ## Fichero Clínico de Actividades y Estrategias para el Desarrollo de la Escritura
 
@@ -11,8 +11,7 @@
 |-------|-------|
 | **Código** | PM-2.4 |
 | **Nombre** | Writing Skills & Pragmatics — Task-Based |
-| **Fase** | 2. Planeación |
-| **Subfase guía SENA** | Apropiación |
+| **Subfase guía SENA** | 3.3 Actividades de apropiación del conocimiento |
 | **Ubicación en la Guía** | Sección 3.3 Apropiación |
 | **Conjunto** | A — Escritura (Reading → Writing → Literacy & Vocabulary) |
 | **Tipo de Evidencia SENA** | Producto (evaluada con rúbrica analítica) |

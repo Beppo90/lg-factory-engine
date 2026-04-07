@@ -1,5 +1,5 @@
 # PM-3.3: CANVA DECK — VISUAL SUPPORT
-## Fase 3 · Ejecución | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -10,7 +10,6 @@
 |-------|-------|
 | **Código** | PM-3.3 |
 | **Nombre** | Canva Deck — Visual Support |
-| **Fase** | 3. Ejecución |
 | **Destinatario** | Instructor (presentación visual durante clase) |
 | **Función** | Generar la especificación de slides para la presentación Canva que el instructor proyecta durante las sesiones presenciales |
 | **Analogía** | Es el "set de iluminación" de la guía — lo que el aprendiz VE mientras el instructor dirige |

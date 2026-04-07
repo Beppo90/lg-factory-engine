@@ -1,5 +1,5 @@
 # PM-2.7: PRONUNCIATION & SPEAKING SKILLS
-## Fase 2 · Planeación | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 ## Fichero Clínico de Estrategias de Ensayo y Andamiaje Fonológico
 
@@ -11,8 +11,7 @@
 |-------|-------|
 | **Código** | PM-2.7 |
 | **Nombre** | Pronunciation & Speaking Skills |
-| **Fase** | 2. Planeación |
-| **Subfase guía SENA** | Apropiación |
+| **Subfase guía SENA** | 3.3 Actividades de apropiación del conocimiento |
 | **Ubicación en la Guía** | Sección 3.3 Apropiación |
 | **Conjunto** | B — Oral (Listening → Pronunciation → Speaking) |
 | **Tipo de Evidencia SENA** | N/A (actividad de preparación fonológica y articulatoria) |

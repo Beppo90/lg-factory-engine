@@ -1,5 +1,5 @@
 # PM-2.2: THE GAP ANALYSIS & PRIOR KNOWLEDGE
-## Fase 2 · Planeación | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -10,8 +10,7 @@
 |-------|-------|
 | **Código** | PM-2.2 |
 | **Nombre** | The Gap Analysis (The Mirror) |
-| **Fase** | 2. Planeación |
-| **Subfase guía SENA** | Contextualización |
+| **Subfase guía SENA** | 3.2 Actividades de contextualización |
 | **Ubicación en la Guía** | Sección 3.2 Contextualización |
 | **Tipo de Evidencia SENA** | N/A (actividad diagnóstica) |
 | **Instrumento** | Learner's Worksheet |

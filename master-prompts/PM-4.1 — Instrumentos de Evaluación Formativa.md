@@ -1,5 +1,5 @@
 # PM-4.1: INSTRUMENTOS DE EVALUACIÓN FORMATIVA
-## Fase 4 · Evaluación | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -10,7 +10,7 @@
 |-------|-------|
 | **Código** | PM-4.1 |
 | **Nombre** | Instrumentos de Evaluación Formativa |
-| **Fase** | 4. Evaluación |
+| **Subfase guía SENA** | 4. Actividades de Evaluación |
 | **Ubicación en la Guía** | Sección 3.3 Evaluación (instrumentos durante la guía) |
 | **Tipo de Evidencia SENA** | Desempeño (§3) + Proceso (§5) |
 | **Instrumentos** | Checklist de Observación (§3) + Feedback Loop (§5) |

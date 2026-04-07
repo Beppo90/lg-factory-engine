@@ -1,5 +1,5 @@
 # PM-2.5: LITERACY & VOCABULARY SKILLS
-## Fase 2 · Planeación | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 ## Informe Clínico de Actividades de Lectoescritura y Vocabulario
 
@@ -11,8 +11,7 @@
 |-------|-------|
 | **Código** | PM-2.5 |
 | **Nombre** | Literacy & Vocabulary Skills |
-| **Fase** | 2. Planeación |
-| **Subfase guía SENA** | Apropiación |
+| **Subfase guía SENA** | 3.3 Actividades de apropiación del conocimiento |
 | **Ubicación en la Guía** | Sección 3.3 Apropiación |
 | **Conjunto** | A — Escritura (Reading → Writing → Literacy & Vocabulary) |
 | **Tipo de Evidencia SENA** | N/A (actividad de consolidación léxica y lectoescritora) |

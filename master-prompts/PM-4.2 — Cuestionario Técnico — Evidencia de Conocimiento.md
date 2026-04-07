@@ -1,5 +1,5 @@
 # PM-4.2: CUESTIONARIO TÉCNICO — EVIDENCIA DE CONOCIMIENTO
-## Fase 4 · Evaluación | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -10,7 +10,7 @@
 |-------|-------|
 | **Código** | PM-4.2 |
 | **Nombre** | Cuestionario Técnico — Evidencia de Conocimiento |
-| **Fase** | 4. Evaluación |
+| **Subfase guía SENA** | 4. Actividades de Evaluación |
 | **Ubicación en la Guía** | Sección 3.4 Transferencia (aplicación del instrumento) |
 | **Tipo de Evidencia SENA** | Conocimiento |
 | **Técnica** | Formulación de preguntas |

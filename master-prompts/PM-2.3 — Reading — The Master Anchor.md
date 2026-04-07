@@ -1,5 +1,5 @@
 # PM-2.3: READING COMPREHENSION — THE MASTER ANCHOR & HOTS
-## Fase 2 · Planeación | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 ## Manual Clínico de Intervención Didáctica para la Comprensión Lectora
 
@@ -11,8 +11,7 @@
 |-------|-------|
 | **Código** | PM-2.3 |
 | **Nombre** | Reading Comprehension — The Master Anchor & HOTS |
-| **Fase** | 2. Planeación |
-| **Subfase guía SENA** | Apropiación |
+| **Subfase guía SENA** | 3.3 Actividades de apropiación del conocimiento |
 | **Ubicación en la Guía** | Sección 3.3 Apropiación |
 | **Tipo de Evidencia SENA** | N/A (actividad de input receptivo) |
 | **Instrumento** | Learner's Worksheet |

@@ -1,5 +1,5 @@
 # PM-3.6: GFPI-F-135 INTEGRATOR
-## Fase 3 · Ejecución | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -10,7 +10,6 @@
 |-------|-------|
 | **Código** | PM-3.6 |
 | **Nombre** | GFPI-F-135 Integrator |
-| **Fase** | 3. Ejecución |
 | **Ubicación** | Último paso después de PM-3.5 (Final Mission) |
 | **Output** | Documento GFPI-F-135 V02 completo y listo para SIGA |
 | **Rol en el sistema** | Ensambla las secciones GFPI generadas por cada PM + verifica coherencia cruzada |

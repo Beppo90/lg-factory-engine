@@ -17,12 +17,14 @@ fpi-sena-factory/
 
 ## 4-Phase System
 
+*(Nota: Fases 2 y 4 se ejecutan cíclicamente **por unidad**, mientras que la Fase 3 se ejecuta **globalmente** al final del programa para ensamblar los anexos).*
+
 | Phase | Prompts | Purpose |
 |-------|---------|---------|
-| FASE 1 — ANÁLISIS | PM-1.1, PM-1.2 | Sofía Plus → macro-themes → Scope & Sequence + Curación de material auténtico |
-| FASE 2 — PLANEACIÓN | PM-2.1 to PM-2.10 | Full guide design with 47 activity archetypes |
-| FASE 3 — EJECUCIÓN | PM-3.1 to PM-3.6 | Playbook, Canva deck, Workbook, Final Mission, GFPI-F-135 |
-| FASE 4 — EVALUACIÓN | PM-4.1, PM-4.2 | Evaluación + Feedback Loop + Cuestionario técnico |
+| FASE 1 — ANÁLISIS | PM-1.1, PM-1.2 | Sofía Plus → macro-themes (5 o 10 guías) → Scope & Sequence |
+| FASE 2 — PLANEACIÓN | PM-2.1 to PM-2.10 | Modelado didáctico de las subfases SENA GFPI-F-135 (3.1, 3.2, 3.3) |
+| FASE 4 — EVALUACIÓN | PM-4.1, PM-4.2 | Evaluación por unidad + Cuestionario técnico + Feedback Loop a Fase 1 |
+| FASE 3 — EJECUCIÓN | PM-3.1 to PM-3.6 | Playbook, Canva deck, Workbook, Misión Final (GFPI 3.4), Documento GFPI-F-135 ensamblado |
 
 ## Fase 2 — 3 Conjuntos (orden alternable)
 
@@ -39,14 +41,15 @@ fpi-sena-factory/
 
 ## Standard Parameters
 
-- CEFR: A1.1–A1.2 (adjustable to A2)
-- Duration per guide: 24 hours
-- Technical programs (~180h): 6 guides
-- Technological programs (~350h): 12 guides
-- Language: hybrid (English activities + Spanish instructions in italics)
+- **CEFR Range:** A1.1–A2.2 (Progressive scaling based on duration)
+- **Duration per guide:** 24 hours
+- **Technical programs (~180h):** 5 modules (guides)
+- **Technological programs (~350h):** 10 modules (guides)
+- **Language:** Hybrid (English communicative tasks + Spanish cognitive instructions in italics)
 
 ## Completed Work
 
+- **System Upgrade (V2.0):** Restructured all 22 Master Prompts to strictly map `GFPI-F-135` taxonomy (3.1 to 3.4 subphases). Overhauled Python orchestrator pipeline to evaluate (PM-4.x) linearly at unit boundaries.
 - **ADSO Guide 1:** "The Hardware Specialist" — Macro-Temática 1: The Developer's Ecosystem
   - All 20 prompts designed with archetype menu system
   - GFPI-F-135 formal document produced
@@ -54,4 +57,5 @@ fpi-sena-factory/
 ## Pending
 
 - Automatización de Canva API para PM-3.3
-- Prueba de fuego con otro programa real
+- Deploying the frontend web interface with the Next.js/React framework.
+- **(In Progress)** Prueba de fuego con Inglés Marítimo y Portuario.

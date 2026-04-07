@@ -1,5 +1,5 @@
 # PM-2.1: THE SPARK & PROBLEMATIC SITUATION
-## Fase 2 · Planeación | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -10,8 +10,7 @@
 |-------|-------|
 | **Código** | PM-2.1 |
 | **Nombre** | The Spark (The Narrative Scenario) |
-| **Fase** | 2. Planeación |
-| **Subfase guía SENA** | Reflexión Inicial |
+| **Subfase guía SENA** | 3.1 Actividades de reflexión inicial |
 | **Ubicación en la Guía** | Sección 3.1 Reflexión Inicial |
 | **Tipo de Evidencia SENA** | N/A (actividad motivacional/diagnóstica) |
 | **Instrumento** | Learner's Worksheet |

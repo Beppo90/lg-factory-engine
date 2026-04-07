@@ -1,5 +1,5 @@
 # PM-2.10: STRUCTURE USE & GRAMMAR — INDUCTIVE TO AUTOMATIC
-## Fase 2 · Planeación | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 ## Fichero Clínico de Actividades Gramaticales y Estructurales
 
@@ -11,8 +11,7 @@
 |-------|-------|
 | **Código** | PM-2.10 |
 | **Nombre** | Structure Use & Grammar — Inductive to Automatic |
-| **Fase** | 2. Planeación |
-| **Subfase guía SENA** | Transferencia |
+| **Subfase guía SENA** | 3.3 Actividades de apropiación del conocimiento |
 | **Ubicación en la Guía** | Sección 3.3-3.4 Apropiación/Transferencia |
 | **Conjunto** | C — Sistemas del lenguaje (Language Functions → Structure Use) |
 | **Tipo de Evidencia SENA** | N/A (actividad de práctica estructural) |

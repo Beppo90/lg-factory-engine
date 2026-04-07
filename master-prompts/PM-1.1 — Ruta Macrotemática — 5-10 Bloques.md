@@ -1,5 +1,5 @@
-# PM-1.1: RUTA MACROTEMÁTICA — 6 BLOQUES
-## Fase 1 · Análisis | Sistema de Prompts Maestros — LG Factory
+# PM-1.1: RUTA MACROTEMÁTICA (5/10 BLOQUES)
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -9,11 +9,11 @@
 | Campo | Valor |
 |-------|-------|
 | **Código** | PM-1.1 |
-| **Nombre** | Ruta Macrotemática (6 Bloques) |
-| **Fase** | 1. Análisis |
+| **Nombre** | Ruta Macrotemática (5/10 Bloques) |
+| **Subfase guía SENA** | 1. Datos del programa |
 | **Ubicación en la Guía** | Pre-guía — arquitectura macro del programa |
 | **Tipo de Evidencia SENA** | N/A (herramienta de diseño curricular) |
-| **Instrumento** | Ruta macro-temática con 6 bloques |
+| **Instrumento** | Ruta macro-temática con 5 o 10 bloques |
 
 ---
 
@@ -32,11 +32,11 @@
 ## OUTPUT ESPERADO
 
 Un documento titulado:
-**`[PROGRAMA] — Ruta Macrotemática (6 Bloques)`**
+**`[PROGRAMA] — Ruta Macrotemática (5/10 Bloques)`**
 
 Que contiene:
 1. Nombre del programa, código, nivel CEFR, duración total
-2. 6 bloques temáticos con nombre ESP/industrial
+2. 5 o 10 bloques temáticos con nombre ESP/industrial
 3. Justificación pedagógica de cada bloque
 4. Nivel de dificultad relativo por bloque
 5. Secuencia lógica (orden pedagógico sugerido)
@@ -45,8 +45,11 @@ Que contiene:
 
 ## 6 REGLAS DE DISEÑO
 
-### REGLA 1 — 6 BLOQUES, NO MÁS, NO MENOS
-El programa se divide exactamente en 6 macro-temáticas. Cada bloque corresponde a un área técnica del programa y se convierte en una Guía de Aprendizaje individual.
+### REGLA 1 — CANTIDAD DE BLOQUES SEGÚN TIPO
+El programa se divide en una cantidad exacta de macro-temáticas dependiendo de su duración:
+- Si el tipo es **Técnico:** Exactamente 5 bloques.
+- Si el tipo es **Tecnológico:** Exactamente 10 bloques.
+Cada bloque corresponde a un área técnica del programa y se convierte en una Guía de Aprendizaje individual.
 
 ### REGLA 2 — NOMBRES ESP/INDUSTRIALES
 Cada bloque tiene un nombre en inglés que refleja el mundo laboral real del programa técnico. El nombre debe ser:
@@ -61,16 +64,16 @@ Cada bloque incluye una justificación breve (2-3 líneas) que explica:
 - Qué competencia comunicativa ESP desarrolla
 
 ### REGLA 4 — SECUENCIA LÓGICA
-Los 6 bloques deben seguir un orden pedagógico coherente:
+Los bloques deben seguir un orden pedagógico coherente:
 - Del conocimiento fundamental al complejo
 - De lo receptivo a lo productivo
 - De lo general a lo específico del oficio
 
 ### REGLA 5 — NIVEL CEFR PROGRESIVO
-El primer bloque parte de A1.1 (lo más básico). Los bloques pueden escalar progresivamente dentro del rango A1.1-A1.2, o mantenerse al mismo nivel según la naturaleza del contenido.
+El primer bloque parte de A1.1 (lo más básico). Los bloques deben escalar progresivamente dentro del rango A1.1 hasta A2.2 dependiendo de la extensión del programa, o mantenerse al mismo nivel según la naturaleza del contenido.
 
 ### REGLA 6 — COBERTURA DEL DISEÑO CURRICULAR
-Los 6 bloques deben cubrir la totalidad de las competencias y RAPs del programa. Ninguna competencia del diseño curricular puede quedar sin representación en al menos un bloque.
+Los bloques deben cubrir la totalidad de las competencias y RAPs del programa. Ninguna competencia del diseño curricular puede quedar sin representación en al menos un bloque.
 
 ---
 
@@ -82,20 +85,17 @@ Los 6 bloques deben cubrir la totalidad de las competencias y RAPs del programa.
 Programa: [Nombre y código]
 Tipo: [Técnico / Tecnológico]
 Duración total: [X] horas
-Nivel CEFR: A1.1 — A1.2
-Guías totales: 6
+Nivel CEFR: A1.1 — A2.2 máximo
+Guías totales: [5 o 10]
 
 | # | Nombre del Bloque (ESP) | Tema Técnico Principal | Justificación | Nivel CEFR |
 |---|------------------------|----------------------|---------------|------------|
 | 1 |                        |                      |               |            |
 | 2 |                        |                      |               |            |
-| 3 |                        |                      |               |            |
-| 4 |                        |                      |               |            |
-| 5 |                        |                      |               |            |
-| 6 |                        |                      |               |            |
+| X |                        |                      |               |            |
 
 PROYECTO FORMATIVO ARTICULADOR:
-[Descripción breve de cómo las 6 guías se conectan como fases de un proyecto real]
+[Descripción breve de cómo todas las guías se conectan como fases de un proyecto real]
 ```
 
 ---
@@ -105,7 +105,7 @@ PROYECTO FORMATIVO ARTICULADOR:
 ```
 Eres un diseñador curricular experto en ESP (English for Specific Programs) y Formación Profesional Integral (FPI) para el SENA, Colombia.
 
-Tu tarea: Generar la RUTA MACROTEMÁTICA de 6 bloques para un programa técnico o tecnológico del SENA.
+Tu tarea: Generar la RUTA MACROTEMÁTICA (5 o 10 bloques) para un programa técnico o tecnológico del SENA.
 
 ### DATOS DE ENTRADA (el instructor proporciona):
 - Programa: [nombre y código del programa SENA]
@@ -118,25 +118,27 @@ Tu tarea: Generar la RUTA MACROTEMÁTICA de 6 bloques para un programa técnico 
 
 1. Analiza las competencias, RAPs y temas técnicos del programa.
 
-2. Organiza el programa en EXACTAMENTE 6 macro-temáticas (bloques) que:
-   - Cubran TODAS las competencias del programa
-   - Sigan una secuencia pedagógica lógica (de lo fundamental a lo complejo)
-   - Sean motivacionales y orientadas al mundo laboral real
+2. Organiza el programa en una RUTA MACROTEMÁTICA que:
+   - Si es **Técnico**, genera EXACTAMENTE 5 bloques.
+   - Si es **Tecnológico**, genera EXACTAMENTE 10 bloques.
+   - Cubra TODAS las competencias del programa.
+   - Siga una secuencia pedagógica lógica (de lo fundamental a lo complejo).
+   - Sea motivacional y orientada al mundo laboral real.
 
 3. Para cada bloque, genera:
    - Nombre del bloque en ESP (en inglés, estilo industrial/profesional)
    - Tema técnico principal (en español, descriptivo)
    - Justificación pedagógica (2-3 líneas: por qué es esencial, cómo se conecta, qué competencia ESP desarrolla)
-   - Nivel CEFR sugerido (A1.1 o A1.2, con posibilidad de escalar)
+   - Nivel CEFR sugerido (desde A1.1 hasta A2.2 en escalada)
 
-4. Genera una descripción del PROYECTO FORMATIVO ARTICULADOR que conecte las 6 guías como fases de un proyecto real del oficio.
+4. Genera una descripción del PROYECTO FORMATIVO ARTICULADOR que conecte todas las guías como fases de un proyecto real del oficio.
 
 ### RESTRICCIONES:
 - Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
-- Exactamente 6 bloques
+- Técnico = 5 bloques. Tecnológico = 10 bloques. NI MÁS, NI MENOS.
 - Nombres en inglés profesional (no traducciones literales)
 - Justificaciones en español
-- Nivel CEFR: A1.1 — A1.2 (rango SENA estándar)
+- Nivel CEFR: progresión desde A1.1 hasta A2.2 máximo
 - Coherencia con el diseño curricular oficial de Sofía Plus
 ```
 
@@ -153,6 +155,6 @@ Tu tarea: Generar la RUTA MACROTEMÁTICA de 6 bloques para un programa técnico 
 
 ---
 
-*PM-1.1: Ruta Macrotemática — 6 Bloques*
+*PM-1.1: Ruta Macrotemática (5/10 Bloques)*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*

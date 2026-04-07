@@ -1,5 +1,5 @@
 # PM-2.8: SPEAKING PRODUCTION & SIMULATION — THE MISSION
-## Fase 2 · Planeación | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 ## Fichero Clínico de Actividades y Estrategias para el Desarrollo de la Expresión Oral
 
@@ -11,8 +11,7 @@
 |-------|-------|
 | **Código** | PM-2.8 |
 | **Nombre** | Speaking Production & Simulation — The Mission |
-| **Fase** | 2. Planeación |
-| **Subfase guía SENA** | Transferencia |
+| **Subfase guía SENA** | 3.3 Actividades de apropiación del conocimiento |
 | **Ubicación en la Guía** | Sección 3.4 Transferencia |
 | **Conjunto** | B — Oral (Listening → Pronunciation → Speaking) |
 | **Tipo de Evidencia SENA** | Desempeño (evaluada con checklist de observación PM-4.1) |

@@ -1,5 +1,5 @@
 # PM-1.2: SCOPE & SEQUENCE — DESARROLLO POR BLOQUE + CURACIÓN DE MATERIAL AUTÉNTICO
-## Fase 1 · Análisis | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -10,7 +10,7 @@
 |-------|-------|
 | **Código** | PM-1.2 |
 | **Nombre** | Scope & Sequence + Curación de Material Auténtico |
-| **Fase** | 1. Análisis |
+| **Subfase guía SENA** | 2. Presentación de la guía |
 | **Ubicación en la Guía** | Pre-guía — ficha técnica + stories fundacionales |
 | **Tipo de Evidencia SENA** | N/A (herramienta de diseño curricular) |
 | **Instrumento** | Ficha técnica completa por guía + 3 fichas de curación |
@@ -36,6 +36,10 @@ Un documento titulado:
 **`[PROGRAMA] — GUÍA [#] — [Nombre] — Scope & Sequence + Curación`**
 
 Que contiene DOS bloques:
+
+
+### BLOQUE 0 — PRESENTACIÓN DE LA GUÍA (NUEVO)
+0. **Presentación:** Un texto motivacional a modo de introducción dirigido al aprendiz. Describe el objeto de estudio y su importancia en el ámbito productivo. Explica cómo será la formación y cuáles son los temas principales que se van a abordar. Texto conciso, extensión máxima de diez renglones.
 
 ### BLOQUE A — SCOPE & SEQUENCE (lo que ya hacía)
 1. **Identification:** Programa, código, guía, macro-temática, intensidad, nivel CEFR

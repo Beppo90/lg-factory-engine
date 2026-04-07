@@ -1,5 +1,5 @@
 # PM-3.1: PLAYBOOK OUTLINE — SESSION MAP
-## Fase 3 · Ejecución | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -10,7 +10,6 @@
 |-------|-------|
 | **Código** | PM-3.1 |
 | **Nombre** | Playbook Outline — Session Map |
-| **Fase** | 3. Ejecución |
 | **Destinatario** | Instructor (documento interno, NO para el aprendiz) |
 | **Función** | Distribuir los 9 worksheets de la Fase 2 + el Cuestionario (PM-4.2) en sesiones de clase realistas, con tiempos, agrupaciones, materiales y logística |
 | **Analogía** | Es el "guion de rodaje" de la guía — convierte los materiales ya escritos en un plan de implementación sesión por sesión |

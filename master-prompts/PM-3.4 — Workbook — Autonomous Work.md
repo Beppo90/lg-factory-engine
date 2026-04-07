@@ -1,5 +1,5 @@
 # PM-3.4: WORKBOOK — AUTONOMOUS WORK
-## Fase 3 · Ejecución | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -10,7 +10,6 @@
 |-------|-------|
 | **Código** | PM-3.4 |
 | **Nombre** | Workbook — Autonomous Work |
-| **Fase** | 3. Ejecución |
 | **Destinatario** | Aprendiz (documento para el estudiante) + Instructor (Answer Key separado) |
 | **Función** | Generar los capítulos del Workbook que el aprendiz completa como trabajo autónomo entre sesiones presenciales |
 | **Analogía** | Es el "gimnasio" de la guía — donde el aprendiz practica solo lo que vio en clase |

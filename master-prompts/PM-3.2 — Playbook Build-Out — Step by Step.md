@@ -1,5 +1,5 @@
 # PM-3.2: PLAYBOOK BUILD-OUT — STEP BY STEP
-## Fase 3 · Ejecución | Sistema de Prompts Maestros — LG Factory
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -10,7 +10,6 @@
 |-------|-------|
 | **Código** | PM-3.2 |
 | **Nombre** | Playbook Build-Out — Step by Step |
-| **Fase** | 3. Ejecución |
 | **Destinatario** | Instructor (documento interno, NO para el aprendiz) |
 | **Función** | Expandir UNA sesión del Playbook Outline (PM-3.1) a un plan de clase detallado, minuto a minuto, con Teacher Talk completo, answer keys, notas de facilitación y diferenciación |
 | **Analogía** | Si PM-3.1 es el guion de rodaje (qué escenas se filman cada día), PM-3.2 es el storyboard completo (cada toma, cada ángulo, cada línea de diálogo) |
