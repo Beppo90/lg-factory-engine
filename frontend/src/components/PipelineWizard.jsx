@@ -2,6 +2,7 @@ import React from 'react';
 import { useEngine } from '../context/EngineContext';
 
 import ConsoleLog from './ConsoleLog';
+import TelemetryHUD from './TelemetryHUD';
 import Gate0Macrotheme from './gates/Gate0Macrotheme';
 import Gate1TextSelection from './gates/Gate1TextSelection';
 import Gate2Archetype from './gates/Gate2Archetype';
@@ -53,6 +54,12 @@ export default function PipelineWizard() {
           <h2>Pipeline Execution: <span className="text-gradient">Moment {activeRun?.current_moment || '?'}</span></h2>
           <button className="btn-outline" onClick={cancelRun}>Abort Run</button>
         </div>
+
+        <TelemetryHUD 
+          tokens={activeRun?.total_tokens} 
+          apiCalls={activeRun?.total_api_calls} 
+          cost={activeRun?.cost_estimate_usd} 
+        />
 
         <ConsoleLog 
           logs={consoleLogs} 
