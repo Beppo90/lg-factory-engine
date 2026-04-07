@@ -23,7 +23,7 @@ export default function Gate1TextSelection({ runId, curatedSources = [] }) {
 
   const handleSubmit = () => {
     if (selectedSources.length !== 2) return;
-    submitDecision('G1', { sources: selectedSources });
+    submitDecision('G1', { selected_texts: selectedSources });
   };
 
   return (

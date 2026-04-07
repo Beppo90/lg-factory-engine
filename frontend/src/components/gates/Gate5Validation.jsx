@@ -18,7 +18,7 @@ export default function Gate5Validation({ runId, report }) {
 
   const handleSubmit = (action) => {
     // action could be 'approve' or 'abort'
-    submitDecision('G5', { action });
+    submitDecision('G5', { confirmed: action === 'approve' });
   };
 
   return (

@@ -1,10 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useEngine } from '../context/EngineContext';
 import PipelineWizard from './PipelineWizard';
+import { api } from '../services/api';
 
 export default function Dashboard() {
   const { engineStatus, activeRun, startPipeline } = useEngine();
   const [programId, setProgramId] = useState('maritime-g1');
+  const [availablePrograms, setAvailablePrograms] = useState([]);
+
+  useEffect(() => {
+    async function loadPrograms() {
+      const progs = await api.getPrograms();
+      setAvailablePrograms(progs);
+      if (progs.length > 0) {
+        setProgramId(progs[0].id);
+      }
+    }
+    if (engineStatus === 'connected') {
+      loadPrograms();
+    }
+  }, [engineStatus]);
 
   return (
     <div style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
@@ -41,7 +56,7 @@ export default function Dashboard() {
               boxShadow: 'var(--shadow-glow)'
             }}>
               <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/8/83/Sena_Colombia_logo.svg" 
+                src="/sena-logo-green.svg" 
                 alt="SENA" 
                 style={{ width: '40px', height: '40px', objectFit: 'contain' }} 
               />
@@ -52,17 +67,33 @@ export default function Dashboard() {
             </p>
             
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '1rem' }}>
-              <input 
-                type="text" 
-                value={programId} 
-                onChange={(e) => setProgramId(e.target.value)} 
-                placeholder="e.g. software-dev"
-                style={{
-                  padding: '0.75rem 1rem', borderRadius: 'var(--radius-md)',
-                  border: '1px solid var(--panel-border)', background: 'rgba(0,0,0,0.5)',
-                  color: 'white', fontSize: '1.1rem', width: '250px', outline: 'none'
-                }}
-              />
+              {availablePrograms.length > 0 ? (
+                <select 
+                  value={programId} 
+                  onChange={(e) => setProgramId(e.target.value)}
+                  style={{
+                    padding: '0.75rem 1rem', borderRadius: 'var(--radius-md)',
+                    border: '1px solid var(--panel-border)', background: 'rgba(0,0,0,0.5)',
+                    color: 'white', fontSize: '1.1rem', width: '250px', outline: 'none'
+                  }}
+                >
+                  {availablePrograms.map(p => (
+                    <option key={p.id} value={p.id}>{p.name} ({p.id})</option>
+                  ))}
+                </select>
+              ) : (
+                <input 
+                  type="text" 
+                  value={programId} 
+                  onChange={(e) => setProgramId(e.target.value)} 
+                  placeholder="e.g. maritime-g1"
+                  style={{
+                    padding: '0.75rem 1rem', borderRadius: 'var(--radius-md)',
+                    border: '1px solid var(--panel-border)', background: 'rgba(0,0,0,0.5)',
+                    color: 'white', fontSize: '1.1rem', width: '250px', outline: 'none'
+                  }}
+                />
+              )}
               <button 
                 className="btn-primary" 
                 style={{ fontSize: '1.1rem' }} 

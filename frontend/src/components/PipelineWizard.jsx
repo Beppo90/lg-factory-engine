@@ -5,6 +5,8 @@ import ConsoleLog from './ConsoleLog';
 import Gate0Macrotheme from './gates/Gate0Macrotheme';
 import Gate1TextSelection from './gates/Gate1TextSelection';
 import Gate2Archetype from './gates/Gate2Archetype';
+import Gate3Transversal from './gates/Gate3Transversal';
+import Gate4Mission from './gates/Gate4Mission';
 import Gate5Validation from './gates/Gate5Validation';
 import Gate6Export from './gates/Gate6Export';
 import ConfirmationPrompt from './confirmations/ConfirmationPrompt';
@@ -29,6 +31,8 @@ export default function PipelineWizard() {
       case 'G0': return <Gate0Macrotheme runId={activeRun.run_id} />;
       case 'G1': return <Gate1TextSelection runId={activeRun.run_id} />;
       case 'G2': return <Gate2Archetype runId={activeRun.run_id} pmId={activeRun.pm_id} />;
+      case 'G3': return <Gate3Transversal runId={activeRun.run_id} />;
+      case 'G4': return <Gate4Mission runId={activeRun.run_id} />;
       case 'G5': return <Gate5Validation runId={activeRun.run_id} />;
       case 'G6': return <Gate6Export runId={activeRun.run_id} />;
       default:

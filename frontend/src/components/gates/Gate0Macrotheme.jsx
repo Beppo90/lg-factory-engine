@@ -14,7 +14,7 @@ export default function Gate0Macrotheme({ runId }) {
 
   const handleSubmit = () => {
     if (!selectedTheme) return;
-    submitDecision('G0', { theme: selectedTheme });
+    submitDecision('G0', { macrotheme: selectedTheme });
   };
 
   return (

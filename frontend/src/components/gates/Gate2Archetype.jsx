@@ -13,7 +13,7 @@ export default function Gate2Archetype({ runId, pmId = "PM-2.5", pmName = "Liter
 
   const handleSubmit = () => {
     if (!selectedArchetype) return;
-    submitDecision('G2', { pmId, archetype: selectedArchetype });
+    submitDecision('G2', { pm_id: pmId, archetype_id: selectedArchetype });
   };
 
   return (
