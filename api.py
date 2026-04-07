@@ -201,7 +201,7 @@ class RunRequest(BaseModel):
     program_id: str
     dry_run: bool = False
     profile: Optional[str] = None
-    provider: str = "anthropic"
+    provider: str = "google"
 
 
 class RunResponse(BaseModel):
@@ -507,6 +507,13 @@ async def _run_pipeline_background(
         import traceback
         print(f"Pipeline error for run {run_id}: {e}")
         traceback.print_exc()
+        
+        # Ensure the UI gets the error state
+        state, _ = _get_run_state(run_id)
+        if state:
+            state.status = RunStatus.ERROR
+            state.errors.append({"error": f"Internal Initialization Error: {str(e)}"})
+            STATE_MANAGER.save(state)
     finally:
         _active_runs.pop(run_id, None)
 
