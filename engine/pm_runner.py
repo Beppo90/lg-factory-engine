@@ -185,7 +185,8 @@ def run_pm(
     # Call LLM with retry
     response = None
     last_error = None
-    for attempt in range(3):
+    import time
+    for attempt in range(4):
         try:
             response = adapter.generate(
                 system=system_prompt,
@@ -195,9 +196,14 @@ def run_pm(
             break
         except Exception as e:
             last_error = e
-            print(f"  [RETRY {attempt+1}/3] {pm_def.id}: {e}")
-            if attempt == 2:
-                raise RuntimeError(f"PM {pm_def.id} failed after 3 attempts: {last_error}")
+            print(f"  [RETRY {attempt+1}/4] {pm_def.id}: {e}")
+            if attempt == 3:
+                raise RuntimeError(f"PM {pm_def.id} failed after 4 attempts: {last_error}")
+            
+            # API backoff: 5s, 15s, 45s
+            sleep_time = 5 * (3 ** attempt)
+            print(f"  Waiting {sleep_time}s before retrying...")
+            time.sleep(sleep_time)
 
     # Parse output
     full_content = response.content
