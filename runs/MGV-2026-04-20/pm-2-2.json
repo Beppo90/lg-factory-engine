@@ -1,0 +1,396 @@
+{
+  "run_id": "MGV-2026-04-20",
+  "pm_code": "PM-2.2",
+  "pm_name": "Gap Analysis — Contextualización (The Mirror)",
+  "pm_version": "2.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Visual Communicator",
+  "rap_origen": "01",
+  "rap_codigo": "240202501-01",
+  "competencia_codigo": "240202501",
+  "cefr_level": "A1.1",
+  "session": 1,
+  "fase_sena": "Contextualización",
+  "generated_at": "2026-04-20",
+  "instructor": "Sergio Cortés Perdomo",
+  "previous_pm": "PM-2.1",
+
+  "pm0_anchor": {
+    "source_file": "pm-0-context.json",
+    "cefr_descriptor_ref": "§6.A1.1",
+    "l1_policy_ref": "§9.1.G1_A1.1 — L1% S1=30%",
+    "methodological_shift_ref": "§5.A1.1 — máximo andamiaje, accuracy-prioritario",
+    "feedback_ref": "§5.6 — S1: Recast suave + Reformulación positiva",
+    "stress_pronunciation_ref": "§5.8 — reciclaje de stress de PM-2.1",
+    "success_vocabulary_ref": "§5.10 — PM-2.2 introduce pre-vista de los 5 clusters de vocabulario sin enseñarlos (exposición receptiva)",
+    "grammar_roadmap_ref": "§8.G1_A1.1 — S1 no activa gramática; sí expone la fórmula 'I know / I don't know' (pre-activación Grupo 1 'be')"
+  },
+
+  "universe_anchor": {
+    "continuity_with_pm21": "El aprendiz acaba de conocer a Andrés. Ahora se mira al espejo: '¿Qué sé YO del inglés que Andrés necesita?'",
+    "characters_reused": ["Andrés (avatar del aprendiz)", "Laura (referente de nivel objetivo)", "Sophia (fuente de inglés auténtico)"],
+    "narrative_bridge": "La Actividad 3 de PM-2.1 cerró con el contrato general. PM-2.2 profundiza: el contrato se vuelve diagnóstico cuantitativo por competencia."
+  },
+
+  "identity": {
+    "codigo": "PM-2.2",
+    "nombre": "The Gap Analysis (The Mirror)",
+    "subfase_guia_sena": "3.2 Actividades de contextualización",
+    "ubicacion_guia": "Sección 3.2 Contextualización",
+    "tipo_evidencia_sena": "N/A (actividad diagnóstica)",
+    "instrumento": "Learner's Worksheet",
+    "estructura": "THE MIRROR (Único Diagnóstico)"
+  },
+
+  "content": {
+    "worksheet_title": "THE GAP ANALYSIS — Contextualización",
+    "guia_header": "MGV · Guía 1 · The Visual Communicator · Nivel A1.1",
+
+    "bilingual_instruction_block": {
+      "main_message_en": "Now it's time to look in the mirror. Andrés has a problem — but YOU also have a mirror. Be honest. No one will see your answers except you. Your gaps today are your victories in 8 weeks.",
+      "main_message_es_cursiva": "Ahora es momento de mirarse al espejo. Andrés tiene un problema — pero TÚ también tienes un espejo. Sé honesto. Nadie verá tus respuestas excepto tú. Tus vacíos hoy son tus victorias en 8 semanas."
+    },
+
+    "the_mirror_self_assessment": {
+      "icon": "🔍",
+      "title_en": "THE MIRROR — Self-Assessment",
+      "title_es": "EL ESPEJO — Autoevaluación",
+      "scale": {
+        "1": {"en": "I don't know anything", "es_cursiva": "No sé nada", "emoji": "🔴"},
+        "2": {"en": "I've heard some words", "es_cursiva": "He escuchado algunas palabras", "emoji": "🟠"},
+        "3": {"en": "I know a little", "es_cursiva": "Sé un poco", "emoji": "🟡"},
+        "4": {"en": "I can use it in simple situations", "es_cursiva": "Puedo usarlo en situaciones simples", "emoji": "🟢"},
+        "5": {"en": "I'm confident and fluent", "es_cursiva": "Estoy seguro y fluido", "emoji": "🔵"}
+      },
+      "assessment_areas": [
+        {
+          "id": "A1",
+          "cluster": "TYPOGRAPHY — Tipografía",
+          "competency_en": "I can name fonts in English (font, serif, sans-serif, bold)",
+          "competency_es_cursiva": "Puedo nombrar fuentes en inglés (fuente, serif, sans-serif, negrita)",
+          "self_check_prompt_en": "Which of these 4 words can I say AND recognize in writing?",
+          "self_check_prompt_es": "¿Cuáles de estas 4 palabras puedo decir Y reconocer por escrito?",
+          "rating_field": "[ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5"
+        },
+        {
+          "id": "A2",
+          "cluster": "COLOR THEORY — Teoría del Color",
+          "competency_en": "I can describe colors in English (color, warm, cool, CMYK)",
+          "competency_es_cursiva": "Puedo describir colores en inglés (color, cálido, frío, CMYK)",
+          "self_check_prompt_en": "Can I say 'This logo needs warm colors' out loud?",
+          "self_check_prompt_es": "¿Puedo decir 'Este logo necesita colores cálidos' en voz alta?",
+          "rating_field": "[ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5"
+        },
+        {
+          "id": "A3",
+          "cluster": "SHAPE & COMPOSITION — Forma y Composición",
+          "competency_en": "I can talk about shapes and layout (line, shape, grid, balance)",
+          "competency_es_cursiva": "Puedo hablar de formas y composición (línea, forma, cuadrícula, balance)",
+          "self_check_prompt_en": "Can I point to a grid and say 'This is the grid'?",
+          "self_check_prompt_es": "¿Puedo señalar una cuadrícula y decir 'This is the grid'?",
+          "rating_field": "[ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5"
+        },
+        {
+          "id": "A4",
+          "cluster": "TOOLS & SOFTWARE — Herramientas y Software",
+          "competency_en": "I can name design tools in English (pencil, canvas, layer, toolbar)",
+          "competency_es_cursiva": "Puedo nombrar herramientas de diseño en inglés (lápiz, lienzo, capa, barra de herramientas)",
+          "self_check_prompt_en": "Can I open Canva and say 'I need a new layer'?",
+          "self_check_prompt_es": "¿Puedo abrir Canva y decir 'Necesito una nueva capa'?",
+          "rating_field": "[ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5"
+        },
+        {
+          "id": "A5",
+          "cluster": "PRODUCTS & ACTIONS — Productos y Acciones",
+          "competency_en": "I can name design products and basic actions (logo, poster, open, save)",
+          "competency_es_cursiva": "Puedo nombrar productos de diseño y acciones básicas (logo, póster, abrir, guardar)",
+          "self_check_prompt_en": "Can I say 'I will save the logo as a poster'?",
+          "self_check_prompt_es": "¿Puedo decir 'Voy a guardar el logo como póster'?",
+          "rating_field": "[ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5"
+        },
+        {
+          "id": "A6",
+          "cluster": "READING A CLIENT BRIEF — Leer un Brief del Cliente",
+          "competency_en": "I can read a short email from a client and understand the main idea",
+          "competency_es_cursiva": "Puedo leer un email corto de un cliente y entender la idea principal",
+          "self_check_prompt_en": "When I read Sophia's email in PM-2.1, could I guess the main request?",
+          "self_check_prompt_es": "Cuando leí el email de Sophia en PM-2.1, ¿pude adivinar la petición principal?",
+          "rating_field": "[ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5"
+        }
+      ],
+      "scoring_grid": {
+        "instruction_en": "Add your 6 ratings. Write the total here:",
+        "instruction_es_cursiva": "Suma tus 6 puntajes. Escribe el total aquí:",
+        "total_field": "TOTAL: _____ / 30",
+        "interpretation": [
+          {"range": "6-12 points", "label_en": "STARTING LINE", "label_es_cursiva": "LÍNEA DE PARTIDA", "message_en": "Perfect. This guide is designed for exactly where you are.", "message_es_cursiva": "Perfecto. Esta guía está diseñada exactamente para donde estás."},
+          {"range": "13-19 points", "label_en": "WARMING UP", "label_es_cursiva": "CALENTANDO", "message_en": "You have some foundation. We will build on it.", "message_es_cursiva": "Tienes algo de base. Construiremos sobre ella."},
+          {"range": "20-25 points", "label_en": "READY TO LEVEL UP", "label_es_cursiva": "LISTO PARA SUBIR DE NIVEL", "message_en": "You know more than you think. Guide 1 will polish and systematize.", "message_es_cursiva": "Sabes más de lo que crees. La Guía 1 pulirá y sistematizará."},
+          {"range": "26-30 points", "label_en": "CHECK YOURSELF", "label_es_cursiva": "REVÍSATE", "message_en": "If you really score this high, talk to your instructor. You may need Guide 2 already.", "message_es_cursiva": "Si realmente puntuaste tan alto, habla con tu instructor. Quizás ya necesites la Guía 2."}
+        ]
+      },
+      "micro_capsula_tip": "> 🪞 **Mirror Rule:** 'I don't know' is not a failure — it's a starting point. Honesty = progress. (*'No sé' no es un fracaso — es un punto de partida. Honestidad = progreso.*)"
+    },
+
+    "activity_1_what_i_know": {
+      "number": 1,
+      "icon": "📋",
+      "phase": "WHAT I KNOW — Individual Self-Rating",
+      "bloom_level": "L1-L2 (Remember, Understand — metacognitive)",
+      "time_minutes": 20,
+      "mode": "individual silent + handout",
+      "instruction_en": "Mark your rating (1-5) for each of the 6 areas. Be honest. Then add your total.",
+      "instruction_es_cursiva": "Marca tu puntaje (1-5) para cada una de las 6 áreas. Sé honesto. Luego suma tu total.",
+      "steps": [
+        {"step": 1, "en": "Read each competency slowly. Read the Spanish translation.", "es_cursiva": "Lee cada competencia despacio. Lee la traducción al español."},
+        {"step": 2, "en": "Answer the self-check prompt honestly in your head. Can you actually do it?", "es_cursiva": "Responde honestamente en tu cabeza al prompt de auto-chequeo. ¿Realmente puedes hacerlo?"},
+        {"step": 3, "en": "Mark your rating 1-5.", "es_cursiva": "Marca tu puntaje 1-5."},
+        {"step": 4, "en": "Add your 6 ratings. Write your total.", "es_cursiva": "Suma tus 6 puntajes. Escribe tu total."},
+        {"step": 5, "en": "Read the interpretation for your range. Write how you feel in one Spanish sentence.", "es_cursiva": "Lee la interpretación de tu rango. Escribe cómo te sientes en una oración en español."}
+      ],
+      "reflection_field": {
+        "prompt_en": "My honest feeling about my total:",
+        "prompt_es_cursiva": "Mi sentimiento honesto sobre mi total:",
+        "example_en_cursiva": "Ejemplo: 'Scored 9/30. I feel nervous but motivated. I knew nothing about 'serif' but I want to learn.'",
+        "field": "_________________________________________________________________"
+      }
+    },
+
+    "activity_2_blind_spots": {
+      "number": 2,
+      "icon": "📋",
+      "phase": "THE BLIND SPOTS — Identify My 3 Weakest Areas",
+      "bloom_level": "L3 (Apply — self-analysis)",
+      "time_minutes": 15,
+      "mode": "individual + optional pair share",
+      "instruction_en": "Look at your 6 ratings. Circle the 3 LOWEST scores. These are your BLIND SPOTS. Complete the sentence for each one.",
+      "instruction_es_cursiva": "Mira tus 6 puntajes. Encierra en círculo los 3 puntajes MÁS BAJOS. Estos son tus PUNTOS CIEGOS. Completa la oración para cada uno.",
+      "sentence_frame": {
+        "en": "I need to learn ___________ because ___________.",
+        "es_cursiva": "Necesito aprender ___________ porque ___________.",
+        "examples": [
+          {"en": "I need to learn serif fonts because Sophia asked for them.", "es_cursiva": "Necesito aprender fuentes serif porque Sophia las pidió."},
+          {"en": "I need to learn warm colors because I can't describe them.", "es_cursiva": "Necesito aprender colores cálidos porque no puedo describirlos."},
+          {"en": "I need to learn design tools in English because I only know Canva in Spanish.", "es_cursiva": "Necesito aprender herramientas de diseño en inglés porque solo conozco Canva en español."}
+        ]
+      },
+      "blind_spot_fields": [
+        {
+          "spot_number": 1,
+          "cluster_id_field": "Area ID: _____ (A1/A2/A3/A4/A5/A6)",
+          "sentence_field": "I need to learn ___________ because ___________."
+        },
+        {
+          "spot_number": 2,
+          "cluster_id_field": "Area ID: _____",
+          "sentence_field": "I need to learn ___________ because ___________."
+        },
+        {
+          "spot_number": 3,
+          "cluster_id_field": "Area ID: _____",
+          "sentence_field": "I need to learn ___________ because ___________."
+        }
+      ],
+      "pair_share_option": {
+        "instruction_en": "OPTIONAL: Share ONE blind spot with a classmate. Not all three. Just one.",
+        "instruction_es_cursiva": "OPCIONAL: Comparte UN punto ciego con un compañero. No los tres. Solo uno.",
+        "time_minutes": 5,
+        "rationale": "Reduce threat — voluntary exposure builds trust for subsequent sessions."
+      },
+      "micro_capsula_tip": "> ⚠️ **Safety Rule:** Your blind spots are PRIVATE. The instructor only reads the 3 area IDs, not your feelings. (*Tus puntos ciegos son PRIVADOS. El instructor solo lee los 3 IDs de área, no tus sentimientos.*)"
+    },
+
+    "activity_3_learning_contract": {
+      "number": 3,
+      "icon": "📋",
+      "phase": "THE LEARNING CONTRACT — My 3 Priorities",
+      "bloom_level": "L3-L4 (Apply, Analyze — committing)",
+      "time_minutes": 15,
+      "mode": "individual + ceremonial signing",
+      "instruction_en": "Translate your 3 blind spots into 3 learning priorities. Sign the contract. This contract will be reviewed in Session 8.",
+      "instruction_es_cursiva": "Convierte tus 3 puntos ciegos en 3 prioridades de aprendizaje. Firma el contrato. Este contrato se revisará en la Sesión 8.",
+      "contract_template": {
+        "title_en": "MY LEARNING CONTRACT — MGV Guía 1 · The Visual Communicator",
+        "title_es": "MI CONTRATO DE APRENDIZAJE — MGV Guía 1 · The Visual Communicator",
+        "preamble_en": "By the end of Guide 1, I, the undersigned learner, commit to achieving the following three priorities:",
+        "preamble_es_cursiva": "Al final de la Guía 1, yo, el aprendiz firmante, me comprometo a alcanzar las siguientes tres prioridades:",
+        "priority_fields": [
+          {
+            "priority_number": 1,
+            "prompt_en": "Priority 1 — I commit to learning:",
+            "prompt_es_cursiva": "Prioridad 1 — Me comprometo a aprender:",
+            "field": "_________________________________________________________________",
+            "verification_prompt_en": "I will know I succeeded when:",
+            "verification_prompt_es_cursiva": "Sabré que lo logré cuando:",
+            "verification_field": "_________________________________________________________________"
+          },
+          {
+            "priority_number": 2,
+            "prompt_en": "Priority 2 — I commit to learning:",
+            "prompt_es_cursiva": "Prioridad 2 — Me comprometo a aprender:",
+            "field": "_________________________________________________________________",
+            "verification_prompt_en": "I will know I succeeded when:",
+            "verification_prompt_es_cursiva": "Sabré que lo logré cuando:",
+            "verification_field": "_________________________________________________________________"
+          },
+          {
+            "priority_number": 3,
+            "prompt_en": "Priority 3 — I commit to learning:",
+            "prompt_es_cursiva": "Prioridad 3 — Me comprometo a aprender:",
+            "field": "_________________________________________________________________",
+            "verification_prompt_en": "I will know I succeeded when:",
+            "verification_prompt_es_cursiva": "Sabré que lo logré cuando:",
+            "verification_field": "_________________________________________________________________"
+          }
+        ],
+        "signature_block": {
+          "name_field": "Name / Nombre: _________________________________________________",
+          "signature_field": "Signature / Firma: _________________________________________________",
+          "date_field": "Date / Fecha: ________________________ (today / hoy)",
+          "instructor_witness_field": "Instructor witness / Testigo del instructor: _______________________"
+        },
+        "review_clause_en": "This contract will be reviewed in Session 8 of this guide as part of the Final Mission reflection. The learner will evaluate self-progress against the three priorities.",
+        "review_clause_es_cursiva": "Este contrato será revisado en la Sesión 8 de esta guía como parte de la reflexión de la Misión Final. El aprendiz evaluará su auto-progreso contra las tres prioridades."
+      },
+      "ceremony_instruction": {
+        "en": "When you sign, say out loud to yourself in English: 'I commit.' This is not theater — it is neurological anchoring.",
+        "es_cursiva": "Cuando firmes, dite a ti mismo en voz alta en inglés: 'I commit.' No es teatro — es anclaje neurológico."
+      },
+      "micro_capsula_tip": "> 🎯 **Contract Rule:** The instructor keeps a photocopy. Your original copy stays with YOU. In Session 8, we compare. (*El instructor guarda una fotocopia. Tu copia original se queda contigo. En la Sesión 8, comparamos.*)"
+    },
+
+    "wrap_up": {
+      "instructor_talk_en": "Today you looked in the mirror. It takes courage. Andrés's problem is not abstract anymore — now it's YOUR 3 priorities. See you next session. We start with the tools: typography.",
+      "instructor_talk_es_cursiva": "Hoy te miraste al espejo. Hace falta coraje. El problema de Andrés ya no es abstracto — ahora son TUS 3 prioridades. Nos vemos la próxima sesión. Empezamos con las herramientas: tipografía."
+    }
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.2",
+    "pm_name": "Gap Analysis",
+    "session": 1,
+    "phase_sena": "Contextualización",
+    "rap_id": "240202501-01",
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Autoevaluarse en 6 áreas de competencia de diseño gráfico bilingüe mediante escala Likert 1-5 y calcular puntaje total interpretativo (6-30)",
+        "didactic_strategy": "Aprendizaje autónomo dirigido",
+        "didactic_technique": "Análisis de casos (autoanálisis)"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Identificar los 3 puntos ciegos más débiles y completar la estructura 'I need to learn ___ because ___' para cada uno",
+        "didactic_strategy": "Aprendizaje reflexivo",
+        "didactic_technique": "Mapeo de vacíos"
+      },
+      {
+        "number": 3,
+        "type": "cognitiva",
+        "statement": "Firmar contrato de aprendizaje con 3 prioridades y criterios de verificación que serán evaluados en Sesión 8 (Final Mission)",
+        "didactic_strategy": "Contrato pedagógico",
+        "didactic_technique": "Compromiso formal con firma y testigo"
+      }
+    ],
+    "hours": {
+      "direct": 1.5,
+      "autonomous": 0.5
+    },
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "",
+      "evaluation_technique": null,
+      "instrument_number": null,
+      "instrument_type": null
+    },
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Proyector (para mostrar la escala 1-5 con emojis)",
+        "Handout impreso 'THE MIRROR' — 1 por aprendiz (6 páginas bilingües)",
+        "Plantilla del contrato de aprendizaje (formato oficial con sello del estudio Pixel & Ink)",
+        "Bolígrafos negros (para firmar el contrato)",
+        "Caja/carpeta sellada para archivar copias originales del instructor",
+        "Computadores con acceso a Moodle (para subir foto del contrato firmado — evidencia digital opcional)"
+      ],
+      "instructors": "Instructor de inglés + Técnico especialista (co-firma como testigo)"
+    },
+    "contributes_to_consolidated_quiz": false,
+    "quiz_skill": null,
+    "quiz_points": 0,
+    "quiz_item_count": 0
+  },
+
+  "pm0_protocol_session_level": {
+    "note": "Se integra al pm0_protocol de S1. Continuidad con PM-2.1.",
+    "grammar_groups": {
+      "intro": [],
+      "consolida": [],
+      "aplica": [],
+      "pre_exposicion_receptiva": ["Grupo 1 'be' en fórmula 'I need to learn ___' y 'This is ___' (aparecen en el contrato sin enseñarse)"],
+      "carga_principle_check": "0 Intro ≤ 2 (PASS)"
+    },
+    "feedback": {
+      "dominant_mode": "Recast suave + Reformulación positiva",
+      "accuracy_techniques": ["la autoevaluación no evalúa inglés; el instructor valida la honestidad, no la precisión"],
+      "fluency_techniques": ["validar cualquier uso de starters como éxito; celebrar 'I commit' en voz alta"]
+    },
+    "l1_management": {
+      "percentage": 30,
+      "english_zone": "Scale emoji card + 3 blind spot sentence frames + contract priorities",
+      "legitimate_uses": ["reflexión emocional (activity 1 step 5)", "verificación criteria del contrato (en español)"],
+      "reduction_strategy": "El contrato obliga a 3 prioridades expresadas en inglés mínimo (sentence frame)"
+    },
+    "stress_pronunciation": {
+      "focus_words": ["commit", "priority", "learn", "know"],
+      "physical_techniques": ["mano al pecho en 'commit'", "dedo apuntando al papel en 'priority'"],
+      "board_marking": "'I commit' en naranja grande sobre el tablero durante la firma"
+    },
+    "success_vocabulary": {
+      "target_terms": ["commit", "priority", "know", "learn", "mirror"],
+      "success_factors_applied": ["Salience (escala con emojis de colores)", "Use (contrato firmado = output obligatorio)", "Emotion (firma ceremonial)", "Context (conectado al universo G1)"]
+    }
+  },
+
+  "integration_all_archetypes_policy": {
+    "applicable_to_this_pm": false,
+    "reason": "PM-2.2 usa diagnóstico ÚNICO 'The Mirror' por diseño. No hay arquetipos seleccionables. Todos los aprendices atraviesan WHAT I KNOW → BLIND SPOTS → LEARNING CONTRACT."
+  },
+
+  "validacion": {
+    "reglas_pm22": {
+      "estructura_mirror_3_actividades": "PASS (WHAT I KNOW / BLIND SPOTS / LEARNING CONTRACT)",
+      "tabla_autoevaluacion_5_a_6_areas": "PASS (6 áreas: 5 clusters de vocab + reading brief)",
+      "escala_1_a_5_con_descriptores_bilingues": "PASS",
+      "contrato_firmado_revisable_en_s8": "PASS (review_clause explícita)",
+      "blind_spots_verificables": "PASS (sentence frame + verification_field)",
+      "bilingue_unificada_sin_bloques_repetitivos": "PASS",
+      "micro_capsulas_visuales": "PASS (3 cápsulas: Mirror Rule, Safety Rule, Contract Rule)",
+      "zero_meta_talk": "PASS",
+      "cefr_a11_estricto": "PASS (starters prefabricados, L1 permitido para reflexión)"
+    },
+    "anclaje_pm0": {
+      "l1_percentage_matches_s1_pm20": "PASS (30%)",
+      "grammar_groups_s1_sin_activar": "PASS (solo pre-exposición receptiva de 'be')",
+      "stress_words_polisilábicas_estratégicas": "PASS (commit, priority, learn)",
+      "feedback_mode_recast": "PASS",
+      "success_vocabulary_universo_g1": "PASS"
+    },
+    "continuidad_con_pm21": {
+      "universo_g1_coherente": "PASS (Andrés, Laura, Sophia, Pixel & Ink)",
+      "bridge_narrativo": "PASS (El contrato general de PM-2.1 se cuantifica en PM-2.2)",
+      "progresion_cognitiva": "PASS (PM-2.1 Bloom L1-L3 emocional → PM-2.2 Bloom L1-L4 metacognitivo)"
+    },
+    "trazabilidad_gfpi_f_134": {
+      "columna_6_actividades": "3 actividades descritas (MIRROR/BLIND SPOTS/CONTRACT)",
+      "columna_7_horas": "Directas 1.5h + Autónomas 0.5h = 2.0h",
+      "columna_8_evidencia": "N/A (diagnóstica, no formal)",
+      "columna_10_ambiente": "Aula + materiales listados + doble instructor (co-firma)"
+    }
+  },
+
+  "siguiente_paso": "Ejecutar PM-2.3 — Reading — The Master Anchor (Sesión 2, inicia Apropiación, integra TODOS los 6 arquetipos A-F)"
+}

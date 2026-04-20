@@ -1,0 +1,669 @@
+{
+  "run_id": "MGV-2026-04-20",
+  "pm_code": "PM-2.0",
+  "pm_name": "RAP Session Architect — G1 / Bloque 1 / The Visual Communicator",
+  "guia_numero": 1,
+  "guia_nombre_esp": "The Visual Communicator",
+  "rap_origen": "01",
+  "rap_codigo": "240202501-01",
+  "cefr_level": "A1.1",
+  "generated_date": "2026-04-20",
+  "pipeline_version": "2.5.1",
+  "instructor": "Sergio Cortés Perdomo",
+
+  "program_info": {
+    "nombre": "Desarrollo de Medios Gráficos Visuales",
+    "codigo": "522309",
+    "tipo": "Tecnológico",
+    "total_horas_programa": 360,
+    "total_guias": 6,
+    "regla_bloques": "alineacion_1a1 (6 RAPs = 6 guías)"
+  },
+
+  "pm0_anchor": {
+    "source_file": "pm-0-context.json",
+    "pipeline_version": "2.5.1",
+    "pm0_source_version": "1.0 (2026-04-18)",
+    "cefr_descriptor_snapshot_ref": "cefr_descriptors_per_guide[0] (G1 A1.1)",
+    "grammar_roadmap_ref": "grammar_roadmap.activation_mapping.G1_A1.1_TheVisualCommunicator",
+    "grammar_carga_principle": "PM-0 §9.2 — Máximo 2 grupos nuevos (Intro) por sesión",
+    "grammar_groups_total_intro_G1": 7,
+    "grammar_groups_intro_list": [
+      "Gr 1 — Verbo be (afirmativo contraído, negativo, preguntas, respuestas cortas)",
+      "Gr 2 — Pronombres sujeto + posesivos + demostrativos + posesivo 's",
+      "Gr 3 — Plural regular -s/-es/-ies + artículos indefinidos a/an + mayúsculas",
+      "Gr 4 — Posición del adjetivo + invariabilidad en plural",
+      "Gr 5 — Imperativo afirmativo",
+      "Gr 14 — Preposición In (lugar)",
+      "Gr 15 — Conectores básicos (and, but, or, because) + contracciones + puntuación básica"
+    ],
+    "l1_policy_ref": "l1_policy_per_guide[0] — S1 30% → S2 25% → S3 20% → S4 15% → S5 12% → S6 10% → S7 10% → S8 5%",
+    "methodological_shift_ref": "methodological_shifts_per_guide[0] — Input muy lento; pausas largas; máximo andamiaje; feedback inmediato accuracy-prioritario; rol docente = modelo central/driller",
+    "traceability_checklist_ref": "traceability_checklist_ref — 22 ítems a completar para cada PM antes de producción (≥ 20/22 aprobados)",
+    "pm0_protocol_requirement": "Cada pm-3-2-sX.json debe incluir pm0_protocol completo según PM-0 §9.3. Esta PM-2.0 provee los insumos (grammar_groups, l1%, feedback mode, stress focus words, SUCCESS vocab) por sesión."
+  },
+
+  "rap_identity": {
+    "competencia_codigo": "240202501",
+    "competencia_enunciado_es": "Comunicar ideas y conceptos básicos en medios gráficos visuales usando los fundamentos del diseño, la tipografía y el color, de acuerdo con lineamientos del brief y estándares del sector gráfico.",
+    "rap_codigo": "240202501-01",
+    "rap_enunciado_es": "Identificar los elementos fundamentales del diseño gráfico visual (tipografía, color, forma, composición) y nombrar en inglés técnico básico las herramientas, materiales y productos del entorno gráfico, de acuerdo con el vocabulario del oficio y el nivel CEFR A1.1.",
+    "duracion_rap_horas": 60,
+    "duracion_directa_horas": 48,
+    "duracion_autonoma_horas": 12,
+    "sesiones_totales": 8
+  },
+
+  "session_blueprint": {
+    "arquitectura_global": "8 sesiones × 60h (48 directas + 12 autónomas) | S1 Reflexión+Contextualización → S2-S5 Apropiación (6 habilidades) → S6 Evaluación Consolidación → S7-S8 Transferencia Final Mission ABP",
+    "principio_antecedente_consecuente": "Cada sesión es consecuencia lógica de la anterior y antecedente necesario de la siguiente. No hay saltos.",
+    "principio_continuidad_integralidad": "Las 6 habilidades (Reading, Writing, Listening, Speaking, Language Functions, Knowledge/Vocabulary) se desarrollan en paralelo y se alimentan mutuamente vía reciclaje circular de input (Lexical Approach).",
+    "principio_economia": "Los 20 términos key_vocabulary de pm-1-2 + las 2 fuentes auténticas curadas (Story A Reading + Story B Listening) alimentan las 8 sesiones sin redundancia.",
+
+    "sesiones": [
+      {
+        "sesion": 1,
+        "nombre": "First Strokes — Welcome to the Visual World",
+        "fase_sena": "Reflexión Inicial + Contextualización",
+        "horas_totales": 7.5,
+        "horas_directas": 6,
+        "horas_autonomas": 1.5,
+        "pms_ejecutar": ["PM-2.1 — The Spark (Reflexión Inicial)", "PM-2.2 — Gap Analysis (Contextualización)"],
+        "learning_focus": "Activar curiosidad por el universo del diseño gráfico en inglés; diagnosticar saberes previos (vocabulario visual que el aprendiz ya reconoce); establecer el English Zone del aula y las reglas de L1.",
+        "bloom_level": "L1–L2 (Remember, Understand)",
+        "objetivo_sesion_es": "El aprendiz reconoce que el lenguaje visual es universal, nombra al menos 10 elementos gráficos que ya ve en su entorno, y se compromete con el contrato de aprendizaje del programa.",
+        "objetivo_sesion_en": "Learners recognize that visual language is universal, name at least 10 graphic elements from their everyday environment, and commit to the learning contract.",
+        "key_activities": [
+          "Welcome presentation (L1 dominante, 30% L1) — rationale del programa y Pixel & Ink Studio como universo",
+          "Mood board icebreaker — cada aprendiz trae 3 imágenes y las clasifica (warm/cool, bold/regular, serif/sans-serif)",
+          "KWL chart (Know / Want to know / Learned) como diagnóstico",
+          "Gap Card (PM-2.2) — vocabulario previo del aprendiz vs. vocabulario target (20 terms)",
+          "Contrato English Zone + reglas L1"
+        ],
+        "grammar_groups": {
+          "intro": [],
+          "consolida": [],
+          "aplica": [],
+          "reciclaje_receptivo": "Exposición receptiva a Gr 1 (be) y Gr 5 (imperative) vía Teacher Talk ('I am Sergio / Open your notebook') sin análisis formal"
+        },
+        "l1_percentage": 30,
+        "l1_rationale": "Día 1 establecer confianza y motivación; L1 es el andamio emocional que permite reducción progresiva",
+        "feedback_mode": "ACCURACY",
+        "feedback_techniques": "Choral repetition, finger drilling muy breve para saludos, modelo-eco",
+        "stress_focus_words": ["DEsign", "GRAphic", "COlor", "TYpography"],
+        "stress_techniques": "Clapping silábico + marcado en tablero (MAYÚSCULA = sílaba tónica)",
+        "success_vocabulary_target": ["design", "graphic", "color", "typography", "studio", "designer", "logo", "poster", "pencil", "computer"],
+        "transversal_rap": "Establece el contrato pedagógico para las 8 sesiones; sin esta sesión no hay compromiso del aprendiz",
+        "generates_evidence": false,
+        "evidence_preview": null,
+        "materials": [
+          "Mood board vacío (A3 cartón) — 1 por aprendiz",
+          "3 imágenes de referencia traídas por el aprendiz (actividad pre-sesión)",
+          "Marcadores / pegamento / tijeras",
+          "Tablero + proyector — diapositiva welcome presentation",
+          "KWL chart handout",
+          "Gap Card template (PM-2.2)"
+        ],
+        "ambiente_preview": "Aula bilingüe con configuración en U o en mesas de 4. Proyector + tablero blanco + zona English Zone señalizada con cinta.",
+        "estrategia_didactica_preview": "Activación + Diagnóstico — reconocimiento y clasificación visual (coherente con pensamiento crítico A1.1: clasificación)",
+        "transicion_siguiente": "S1 cierra con: 'Mañana empezamos a LEER como diseñadores — un texto real sobre tipografías serif vs sans-serif'. Cargar Gap Card para entregar en S2."
+      },
+      {
+        "sesion": 2,
+        "nombre": "Reading Like a Designer — Serif vs Sans-Serif",
+        "fase_sena": "Apropiación",
+        "horas_totales": 7.5,
+        "horas_directas": 6,
+        "horas_autonomas": 1.5,
+        "pms_ejecutar": ["PM-2.5 — Literacy & Vocabulary Skills (pre-activación léxica)", "PM-2.3 — Reading (Master Anchor)"],
+        "learning_focus": "Pre-activar vocabulario de tipografía y lectura técnica; leer y comprender la Ficha 1 (Creative Bloq — serif vs sans-serif) con HOTS A1.1 (reconocimiento, clasificación).",
+        "bloom_level": "L2–L3 (Understand, Apply)",
+        "objetivo_sesion_es": "El aprendiz pre-activa 10 términos tipográficos, lee un texto auténtico adaptado de 150-200 palabras, y clasifica fuentes en categorías serif/sans-serif/display con justificación visual.",
+        "objetivo_sesion_en": "Learners pre-activate 10 typography terms, read an adapted authentic text (150-200 words), and classify fonts in serif/sans-serif/display categories with visual justification.",
+        "key_activities": [
+          "Word Wall build-out — 10 términos de tipografía con imagen + pronunciación + stress",
+          "Pre-reading: brainstorm en Pixel & Ink Studio — ¿qué fuentes usa un Creative Director?",
+          "While-reading: jigsaw con texto adaptado de Creative Bloq (Ficha 1)",
+          "Post-reading: Classification Task — 12 fuentes en 3 categorías con plantilla",
+          "Reading Evidence (Cuestionario E1, 5 pts) — 5 ítems comprensión literal/inferencial A1.1",
+          "Homework autónomo: identificar 3 fuentes en materiales impresos del aprendiz"
+        ],
+        "grammar_groups": {
+          "intro": [
+            "Gr 1 — Verbo be (afirmativo contraído, negativo, preguntas, respuestas cortas) → 'Serif is a typography style', 'This font is bold'",
+            "Gr 3 — Plural regular -s/-es/-ies + artículos indefinidos a/an + mayúsculas → 'a font / fonts', 'an image / images'"
+          ],
+          "consolida": [],
+          "aplica": [],
+          "carga_principle_check": "2/2 Intro máximos (PM-0 §9.2) ✓"
+        },
+        "l1_percentage": 25,
+        "l1_rationale": "L1 sólo para meta-lenguaje gramatical nuevo (explicar diferencia be vs tener) y clarificar concepto 'serif' inicialmente",
+        "feedback_mode": "ACCURACY",
+        "feedback_techniques": "Recast (repetir corregido sin interrumpir flujo), Elicitación guiada, metalinguistic cue con flecha en tablero",
+        "stress_focus_words": ["SERif", "SANS-SErif", "FONT", "BOLD", "italic", "reGUlar", "TYpography"],
+        "stress_techniques": "Finger drilling + backchaining ('phy' → 'graphy' → 'pography' → 'typography')",
+        "success_vocabulary_target": ["serif", "sans-serif", "font", "bold", "italic", "regular", "letter", "typography", "typeface", "character"],
+        "transversal_rap": "Establece la columna LECTURA del RAP; genera la primera evidencia formal",
+        "generates_evidence": true,
+        "evidence_preview": {
+          "codigo": "E1",
+          "nombre": "Reading — Comprensión Lectora Técnica",
+          "tipo_sena": "Conocimiento",
+          "instrumento": "Lista de Chequeo No 1 (Cuestionario Reading, 5 ítems × 1 pt)",
+          "puntaje": 5,
+          "peso_canon_55": "5/55 pts"
+        },
+        "materials": [
+          "Ficha 1 texto adaptado (150-200 palabras, A1.1 adaptation)",
+          "Word Wall — 10 tarjetas tipográficas (front: palabra + stress | back: imagen)",
+          "Classification handout — 12 muestras de fuentes + 3 columnas",
+          "Cuestionario E1 — 5 ítems + rúbrica 1 pt c/u"
+        ],
+        "ambiente_preview": "Aula + Word Wall activado en pared lateral. Mesas de 4 para jigsaw.",
+        "estrategia_didactica_preview": "Pre-enseñanza explícita + lectura andamiada + tarea de clasificación (reconocimiento visual A1.1)",
+        "transicion_siguiente": "S2 cierra con: 'Ahora que sabes LEER las tipografías, vamos a ESCRIBIR sobre ellas. Mañana: tu primera ficha técnica de fuente.' Homework: identificar 3 fuentes en el entorno."
+      },
+      {
+        "sesion": 3,
+        "nombre": "Writing Like a Designer — My First Font Card",
+        "fase_sena": "Apropiación",
+        "horas_totales": 7.5,
+        "horas_directas": 6,
+        "horas_autonomas": 1.5,
+        "pms_ejecutar": ["PM-2.10 — Grammar (consciousness-raising + structured practice)", "PM-2.4 — Writing (task-based production)"],
+        "learning_focus": "Consolidar estructuras Subject + be + Adjective / Demonstrative + be + Noun; producir una ficha técnica escrita describiendo una fuente tipográfica usando 8-10 términos de la sesión 2.",
+        "bloom_level": "L3 (Apply)",
+        "objetivo_sesion_es": "El aprendiz produce una ficha técnica escrita de 6-8 oraciones simples describiendo una fuente tipográfica, usando be afirmativo/negativo, pronombres demostrativos (this/that), posición del adjetivo (prenominal) y 8 términos de tipografía.",
+        "objetivo_sesion_en": "Learners produce a written technical card of 6-8 simple sentences describing a typography font, using be aff/neg, demonstratives (this/that), prenominal adjective position, and 8 typography terms.",
+        "key_activities": [
+          "Grammar Awareness — consciousness-raising de Gr 2 (this/that/these/those) + Gr 4 (a bold letter vs a letter bold)",
+          "Controlled practice — 12 oraciones con huecos (Subject + be + Adj + Noun)",
+          "Writing frame entrega — 'Font Card' template (name, style, weight, use case, example)",
+          "Guided writing — primer draft con Laura (Creative Director avatar) como lectora imaginaria",
+          "Peer review con checklist (5 ítems observables)",
+          "Writing Evidence (E2, 5 pts) — ficha final con rúbrica",
+          "Homework autónomo: escribir Font Card #2 de otra fuente (no evaluada)"
+        ],
+        "grammar_groups": {
+          "intro": [
+            "Gr 2 — Pronombres sujeto + posesivos + demostrativos + posesivo 's → 'This is Helvetica / That is my font / Helvetica's weight'",
+            "Gr 4 — Posición del adjetivo (prenominal) + invariabilidad en plural → 'a bold letter / bold letters (not letters bolds)'"
+          ],
+          "consolida": ["Gr 1 be (Sesión 2) con nueva aplicación en ficha técnica"],
+          "aplica": [],
+          "carga_principle_check": "2/2 Intro máximos (PM-0 §9.2) ✓"
+        },
+        "l1_percentage": 20,
+        "l1_rationale": "L1 sólo para explicar el giro lingüístico español→inglés en posición del adjetivo (regla contrastiva)",
+        "feedback_mode": "ACCURACY",
+        "feedback_techniques": "Error codes visuales (color code en draft: ADJ-POS / BE / PLURAL), peer review estructurado, recast docente en producción pública",
+        "stress_focus_words": ["HELvetica", "ariAL", "TImes", "comPAred", "CURsive"],
+        "stress_techniques": "Finger drilling con nombres propios de fuentes + choral drill de frases fijas ('This is…', 'That is…')",
+        "success_vocabulary_target": ["Helvetica", "Arial", "Times New Roman", "cursive", "display", "weight", "size", "style", "readable", "clean"],
+        "transversal_rap": "Establece la columna ESCRITURA del RAP; produce una evidencia escrita formal",
+        "generates_evidence": true,
+        "evidence_preview": {
+          "codigo": "E2",
+          "nombre": "Writing — Producción Escrita Técnica",
+          "tipo_sena": "Producto",
+          "instrumento": "Rúbrica No 2 (Writing, 5 criterios × 1 pt)",
+          "puntaje": 5,
+          "peso_canon_55": "5/55 pts"
+        },
+        "materials": [
+          "Font Card template (impresa + editable digital)",
+          "Grammar Awareness handout — Gr 2 + Gr 4 con 12 oraciones",
+          "3 fuentes de referencia (Helvetica, Times New Roman, Comic Sans) — muestras impresas",
+          "Peer review checklist — 5 ítems",
+          "Rúbrica E2 — 5 criterios × 1 pt"
+        ],
+        "ambiente_preview": "Aula + mesas para peer review en parejas. Muro de fuentes (display wall) con 10 muestras grandes.",
+        "estrategia_didactica_preview": "Gramática explícita en contexto → producción guiada con frame → peer review",
+        "transicion_siguiente": "S3 cierra con: 'Has leído fuentes y escrito sobre ellas. Ahora ESCUCHA a dos diseñadoras hablando de COLORES.' Homework: Font Card #2."
+      },
+      {
+        "sesion": 4,
+        "nombre": "The Color Conversation — Listening & Speaking in the Studio",
+        "fase_sena": "Apropiación",
+        "horas_totales": 7.5,
+        "horas_directas": 6,
+        "horas_autonomas": 1.5,
+        "pms_ejecutar": ["PM-2.6 — Listening (Auditory Anchor, TBLT)", "PM-2.8 — Speaking (The Mission + pronunciation scaffolding)"],
+        "learning_focus": "Escuchar Ficha 2 (Canva — Color Wheel Basics, diálogo Laura/Sophia) en Pixel & Ink Studio; producir un micro-diálogo de 4 intercambios (aprendiz + compañero) identificando 3 colores y sugiriendo una paleta con imperative.",
+        "bloom_level": "L2–L3 (Understand, Apply)",
+        "objetivo_sesion_es": "El aprendiz comprende un diálogo de 90 segundos sobre rueda de color y paletas; produce oralmente un micro-diálogo estructurado usando imperative afirmativo ('Use warm colors / Choose the complementary color') + preposición in ('in CMYK / in red') + 8 términos de color.",
+        "objetivo_sesion_en": "Learners comprehend a 90-second dialogue on color wheel and palettes; produce an oral micro-dialogue using affirmative imperative + preposition in + 8 color terms.",
+        "key_activities": [
+          "Pre-listening: activate color vocabulary (warm/cool/primary/secondary) con rueda de color",
+          "First listening (global) — ¿qué problema tiene Sophia la cliente?",
+          "Second listening (selective) — identificar 5 términos de color clave",
+          "Listening Evidence (E3, 5 pts) — 5 ítems comprensión literal/inferencial",
+          "Pronunciation Lab — stress en CMYK (C-M-Y-K) y 'warm/cool', finger drilling de imperatives ('USE/CHOOSE/AVOID')",
+          "Speaking Task (The Mission) — roleplay Laura/cliente: sugerir paleta para cartel (2 min por pareja)",
+          "Speaking Evidence (E4, 5 pts) — performance oral con rúbrica de 5 criterios",
+          "Homework autónomo: grabar audio de 60 segundos describiendo paleta preferida"
+        ],
+        "grammar_groups": {
+          "intro": [
+            "Gr 5 — Imperativo afirmativo → 'Use warm colors / Choose a complementary color / Mix blue and yellow'",
+            "Gr 14 — Preposición In (lugar) → 'in CMYK / in red / in the studio / in the top-left corner'"
+          ],
+          "consolida": ["Gr 1 be + Gr 3 plural/a/an aplicados en audio"],
+          "aplica": [],
+          "carga_principle_check": "2/2 Intro máximos (PM-0 §9.2) ✓"
+        },
+        "l1_percentage": 15,
+        "l1_rationale": "L1 sólo para clarificar diferencia imperative vs presente simple (no subject) — giro contrastivo breve",
+        "feedback_mode": "MIXTO",
+        "feedback_techniques": "Accuracy inmediato en pronunciation lab (recast, finger drill); fluency diferido post-roleplay (error codes en tablero)",
+        "stress_focus_words": ["CM-YK (letras deletreadas)", "WARM", "COOL", "COLor wheel", "palETTE", "priMAry", "seconDAry"],
+        "stress_techniques": "Finger drilling + clapping rítmico + backchaining ('lette' → 'palette' → 'color palette')",
+        "success_vocabulary_target": ["warm", "cool", "primary", "secondary", "complementary", "palette", "CMYK", "RGB", "red", "blue"],
+        "transversal_rap": "Establece las columnas ESCUCHA y ORALIDAD del RAP; genera 2 evidencias formales en una sola sesión (integración listening→speaking)",
+        "generates_evidence": true,
+        "evidence_preview": [
+          {
+            "codigo": "E3",
+            "nombre": "Listening — Comprensión Auditiva Técnica",
+            "tipo_sena": "Conocimiento",
+            "instrumento": "Lista de Chequeo No 3 (Cuestionario Listening, 5 ítems × 1 pt)",
+            "puntaje": 5,
+            "peso_canon_55": "5/55 pts"
+          },
+          {
+            "codigo": "E4",
+            "nombre": "Speaking — Producción Oral en Micro-Diálogo",
+            "tipo_sena": "Desempeño",
+            "instrumento": "Rúbrica No 4 (Speaking, 5 criterios × 1 pt)",
+            "puntaje": 5,
+            "peso_canon_55": "5/55 pts"
+          }
+        ],
+        "materials": [
+          "Audio Ficha 2 (Canva Color Wheel, 90s adaptado) + transcripción",
+          "Rueda de color impresa (color wheel) — 1 por aprendiz",
+          "Swatches de color CMYK + RGB para roleplay",
+          "Cuestionario E3 — 5 ítems",
+          "Rúbrica E4 — 5 criterios"
+        ],
+        "ambiente_preview": "Aula + parlantes de calidad + rueda de color en muro. Espacio despejado al centro para roleplays (2 parejas simultáneas).",
+        "estrategia_didactica_preview": "TBLT (Task-Based) — escucha con vacío de información → transferencia inmediata a producción oral con material auténtico del studio",
+        "transicion_siguiente": "S4 cierra con: 'Ya LEES, ESCRIBES, ESCUCHAS y HABLAS. Mañana consolidamos las FUNCIONES LINGÜÍSTICAS que necesitas en el día a día del estudio.' Homework: audio 60s."
+      },
+      {
+        "sesion": 5,
+        "nombre": "Studio Language — Functions of the Working Designer",
+        "fase_sena": "Apropiación",
+        "horas_totales": 7.5,
+        "horas_directas": 6,
+        "horas_autonomas": 1.5,
+        "pms_ejecutar": ["PM-2.9 — Language Functions (competencia comunicativa integrada)"],
+        "learning_focus": "Consolidar 5 funciones comunicativas centrales del designer A1.1: saludar/presentarse, nombrar objetos, pedir repetición, dar instrucción simple, agradecer/responder — en escenarios del Pixel & Ink Studio.",
+        "bloom_level": "L3 (Apply) + preparación para L4 en S6",
+        "objetivo_sesion_es": "El aprendiz ejecuta las 5 funciones lingüísticas objetivo en 5 mini-escenarios simulados del studio, con al menos 3 conectores (and, but, or, because) enlazando ideas, con precisión en be + adjetivo.",
+        "objetivo_sesion_en": "Learners execute 5 target language functions in 5 simulated studio mini-scenarios, using at least 3 connectors (and, but, or, because) and be + adjective accurately.",
+        "key_activities": [
+          "Function Review — 5 funciones con frases fijas + stress marking",
+          "Connector Awareness (Gr 15) — and/but/or/because en oraciones de Sesiones 2-4 (reciclaje lexical)",
+          "Role Carousel — 5 estaciones (one por función) con 90s por estación, rotación",
+          "Language Functions Evidence (E5, 5 pts) — performance integrado en 3 escenarios con rúbrica 5 criterios",
+          "Review consolidado Gr 1-5, 14 — tablero con ejemplos de Sesiones 2-4",
+          "Homework autónomo: grabar video 90s presentándose como designer junior en Pixel & Ink Studio"
+        ],
+        "grammar_groups": {
+          "intro": [
+            "Gr 15 — Conectores básicos (and, but, or, because) + contracciones + puntuación básica → 'I am a designer AND I love typography. I use Helvetica BECAUSE it is readable.'"
+          ],
+          "consolida": [
+            "Gr 1 be — todos los patrones (Sesiones 2-4)",
+            "Gr 2 pronouns/demos (Sesión 3)",
+            "Gr 3 plural + a/an (Sesión 2)",
+            "Gr 4 adj position (Sesión 3)",
+            "Gr 5 imperative (Sesión 4)",
+            "Gr 14 preposition IN (Sesión 4)"
+          ],
+          "aplica": [],
+          "carga_principle_check": "1/2 Intro máximos (PM-0 §9.2) ✓ — carga reducida para priorizar consolidación previa"
+        },
+        "l1_percentage": 12,
+        "l1_rationale": "L1 mínimo — sólo para meta-instrucción de role carousel y explicación de conector 'because' (causal)",
+        "feedback_mode": "MIXTO (fluency dominante)",
+        "feedback_techniques": "Fluency: post-task delayed feedback con notas en tablero; accuracy: recast sutil sólo en breakdowns",
+        "stress_focus_words": ["beCAUSE", "AND", "OR", "BUT", "exCUSE me", "THANK you"],
+        "stress_techniques": "Clapping rítmico en conectores + backchaining en frases fijas ('me' → 'cuse me' → 'Excuse me')",
+        "success_vocabulary_target": ["excuse me", "thank you", "welcome", "please", "sorry", "can you repeat", "again", "right", "wrong", "finished"],
+        "transversal_rap": "Establece la columna FUNCIONES LINGÜÍSTICAS del RAP; última evidencia formal de apropiación antes de consolidación S6",
+        "generates_evidence": true,
+        "evidence_preview": {
+          "codigo": "E5",
+          "nombre": "Language Functions — Competencia Comunicativa Integrada",
+          "tipo_sena": "Desempeño",
+          "instrumento": "Rúbrica No 5 (Language Functions, 5 criterios × 1 pt)",
+          "puntaje": 5,
+          "peso_canon_55": "5/55 pts"
+        },
+        "materials": [
+          "Function cards (5) — cada una con frase fija + stress + ejemplo Pixel & Ink",
+          "Role Carousel handout — 5 estaciones con prompt",
+          "Connector wall (and/but/or/because con ejemplos de S2-S4)",
+          "Rúbrica E5 — 5 criterios"
+        ],
+        "ambiente_preview": "Aula configurada en 5 estaciones (mesas separadas) para Role Carousel. Cronómetro visible.",
+        "estrategia_didactica_preview": "Simulación rotativa (Role Carousel) + integración comunicativa + consolidación gramatical",
+        "transicion_siguiente": "S5 cierra con: 'Mañana es la GRAN CONSOLIDACIÓN — un cuestionario que mide todo lo que sabes: Reading, Writing, Listening, Vocabulary, Grammar. Prepara tu portafolio.' Homework: video 90s."
+      },
+      {
+        "sesion": 6,
+        "nombre": "Consolidation Day — The Visual Communicator Check",
+        "fase_sena": "Evaluación",
+        "horas_totales": 7.5,
+        "horas_directas": 6,
+        "horas_autonomas": 1.5,
+        "pms_ejecutar": ["PM-4.2 — Cuestionario Técnico S6 (25 pts, 5 skills × 5 ítems × 1 pt)"],
+        "learning_focus": "Consolidar y evaluar formalmente las 5 habilidades lingüísticas de A1.1 en un cuestionario integrado de 25 ítems; revisión formativa de las 5 evidencias de Sesiones 2-5.",
+        "bloom_level": "L2–L4 (Understand, Apply, Analyze parcial)",
+        "objetivo_sesion_es": "El aprendiz demuestra dominio A1.1 en Reading, Writing, Listening, Vocabulary y Grammar mediante un cuestionario consolidado de 25 puntos; recibe feedback formativo de las 5 evidencias previas.",
+        "objetivo_sesion_en": "Learners demonstrate A1.1 proficiency in Reading, Writing, Listening, Vocabulary, and Grammar through a 25-point consolidated quiz; receive formative feedback on the 5 prior evidences.",
+        "key_activities": [
+          "Warm-up — revisión consolidada (30 min) con tablero resumen de Sesiones 2-5",
+          "Cuestionario E6 (90 min, silencio académico) — 25 ítems: 5 Reading + 5 Writing + 5 Listening + 5 Vocabulary + 5 Grammar",
+          "Co-evaluación en parejas (30 min) — chequeo de respuestas con clave parcial",
+          "Retroalimentación grupal (60 min) — análisis de errores más frecuentes + re-explicación",
+          "Portafolio consolidación — cada aprendiz organiza sus 5 evidencias previas + E6 en carpeta física/digital",
+          "Homework autónomo: autoevaluación con 22-item checklist PM-0 §7"
+        ],
+        "grammar_groups": {
+          "intro": [],
+          "consolida": ["Todos los 7 grupos Intro (Gr 1, 2, 3, 4, 5, 14, 15)"],
+          "aplica": ["Evaluación integrada — todos los 7 grupos en el cuestionario E6"],
+          "carga_principle_check": "0/2 Intro — sesión de consolidación/evaluación ✓"
+        },
+        "l1_percentage": 10,
+        "l1_rationale": "L1 sólo para instrucciones del cuestionario y meta-reflexión post-evaluación (análisis de errores)",
+        "feedback_mode": "MIXTO diferido",
+        "feedback_techniques": "Error codes globales en tablero post-cuestionario; co-evaluación con clave parcial; reflexión metacognitiva (qué aprendí / qué me falta)",
+        "stress_focus_words": ["reVIEW", "inSTRUCtion", "COrrect", "inCOrrect", "EVidence"],
+        "stress_techniques": "Brevísimo — la sesión prioriza evaluación, no instrucción nueva",
+        "success_vocabulary_target": "Reciclaje de los 20 términos key_vocabulary en contexto evaluativo",
+        "transversal_rap": "Formaliza la evidencia consolidada E6 (25 pts) — eje sumativo del RAP; permite identificar brechas antes de Transferencia",
+        "generates_evidence": true,
+        "evidence_preview": {
+          "codigo": "E6",
+          "nombre": "Cuestionario Técnico Consolidado S6",
+          "tipo_sena": "Conocimiento",
+          "instrumento": "Cuestionario S6 (25 ítems × 1 pt) — 5 Reading + 5 Writing + 5 Listening + 5 Vocabulary + 5 Grammar",
+          "puntaje": 25,
+          "peso_canon_55": "25/55 pts",
+          "nota_canon": "Este cuestionario es el ancla sumativa; junto con E1-E5 (25 pts) y Misión Final (5 pts) completa el canon de 55 pts del RAP"
+        },
+        "materials": [
+          "Cuestionario E6 impreso (25 ítems en 5 secciones) + clave del instructor",
+          "Audio Ficha 2 segunda escucha (para sección Listening del cuestionario)",
+          "Portafolio template (carpeta + rúbrica autoevaluación PM-0 §7)",
+          "Tablero resumen Sesiones 2-5 (pre-preparado)"
+        ],
+        "ambiente_preview": "Aula en configuración de examen — mesas individuales, silencio académico. Proyector para audio + instrucciones visuales.",
+        "estrategia_didactica_preview": "Evaluación formativa-sumativa + retroalimentación grupal + autoevaluación metacognitiva (PM-0 §7 checklist)",
+        "transicion_siguiente": "S6 cierra con: 'Ya demostraste que SABES. Ahora toca TRANSFERIR. En las próximas 2 sesiones construirás tu primer Mood Board profesional para un brief real de Pixel & Ink Studio.' Homework: checklist PM-0 §7 autoevaluación."
+      },
+      {
+        "sesion": 7,
+        "nombre": "Final Mission Kickoff — Planning & Designing Your Mood Board",
+        "fase_sena": "Transferencia (1ª mitad)",
+        "horas_totales": 7.5,
+        "horas_directas": 6,
+        "horas_autonomas": 1.5,
+        "pms_ejecutar": ["PM-3.5 — Final Mission (sub-fases Planeación + Diseño)"],
+        "learning_focus": "Recibir el brief de Pixel & Ink Studio (cliente Sophia); planear y diseñar un Mood Board bilingüe con 6 referencias visuales etiquetadas en inglés técnico A1.1.",
+        "bloom_level": "L3–L4 (Apply, Analyze)",
+        "objetivo_sesion_es": "El aprendiz lee el brief, planea su Mood Board (objetivo, paleta, tipografía, estilo) y produce el primer draft con 6 referencias etiquetadas en inglés técnico, sin evidencia formal sumativa.",
+        "objetivo_sesion_en": "Learners read the brief, plan their Mood Board (objective, palette, typography, style), and produce a first draft with 6 visual references labeled in basic technical English, without formal summative evidence.",
+        "key_activities": [
+          "Brief reading (Pixel & Ink Studio / Sophia cliente) — contexto laboral simulado",
+          "Planeación ABP (Fase 1) — Canvas: What / Why / How / By when",
+          "Diseño ABP (Fase 2) — selección de 6 referencias visuales (web/impreso/entorno)",
+          "Etiquetado bilingüe — cada referencia con 3 descriptores A1.1 (typography / color / composition)",
+          "Consulta grupal con instructor-monitor (feedback diferido)",
+          "Homework autónomo: completar Mood Board draft"
+        ],
+        "grammar_groups": {
+          "intro": [],
+          "consolida": [],
+          "aplica": [
+            "Todos los 7 grupos Intro del RAP — reciclados en producción libre del Mood Board"
+          ],
+          "carga_principle_check": "0/2 Intro — sesión de transferencia ✓"
+        },
+        "l1_percentage": 10,
+        "l1_rationale": "L1 sólo para clarificación de brief técnico (vocabulario ocupacional nuevo) y gestión de tiempo del proyecto",
+        "feedback_mode": "FLUENCY",
+        "feedback_techniques": "Feedback diferido post-task, rol docente = monitor/facilitador (NO driller); aprendiz lidera",
+        "stress_focus_words": "Reciclaje de las 20+ palabras de S1-S5 en contexto real de proyecto",
+        "stress_techniques": "Sin drilling formal — el aprendiz auto-corrige con recursos del aula",
+        "success_vocabulary_target": "Integración de los 20 key_vocabulary + expansión orgánica con vocabulario propio del brief de Sophia",
+        "transversal_rap": "Cierra la fase de Apropiación/Evaluación e inicia la Transferencia. No genera evidencia formal sumativa (es ABP de transferencia, §5.9 del sistema).",
+        "generates_evidence": false,
+        "evidence_preview": {
+          "nota": "No hay evidencia formal sumativa en S7-S8. La Misión Final (5 pts, E-Misión) se evalúa con rúbrica ABP en S8, no con cuestionario/checklist."
+        },
+        "misión_final_link": {
+          "rubrica": "Rúbrica Misión Final — 6 criterios × 1 pt aprox (5 pts total del canon 55)",
+          "fases_abp_cubiertas_en_s7": ["1. Planeación (qué hacer)", "2. Diseño (cómo hacerlo)"],
+          "fases_abp_pendientes_s8": ["3. Desempeño (hacerlo)", "4. Presentación", "5. Evaluación reflexiva"]
+        },
+        "materials": [
+          "Brief de Pixel & Ink Studio / Sophia (impreso + digital)",
+          "Mood Board template A3 (6 slots para referencias)",
+          "Canvas Planeación ABP (Qué/Por qué/Cómo/Cuándo)",
+          "Etiquetas bilingües pre-impresas (Typography/Color/Composition)",
+          "Biblioteca de referencias — revistas, web, entorno aula"
+        ],
+        "ambiente_preview": "Aula-taller con mesas grandes (1 por aprendiz), acceso a computador para búsqueda de referencias, biblioteca de revistas de diseño.",
+        "estrategia_didactica_preview": "ABP (Aprendizaje Basado en Proyectos) — fase exploratoria y de diseño; instructor como monitor/facilitador",
+        "transicion_siguiente": "S7 cierra con: 'Mañana TERMINAS tu Mood Board y lo PRESENTAS a Sophia. Prepárate para hablar 2 minutos en inglés.' Homework: completar draft + ensayar presentación 2 min."
+      },
+      {
+        "sesion": 8,
+        "nombre": "Final Mission Delivery — My Mood Board for Sophia",
+        "fase_sena": "Transferencia (2ª mitad)",
+        "horas_totales": 7.5,
+        "horas_directas": 6,
+        "horas_autonomas": 1.5,
+        "pms_ejecutar": ["PM-3.5 — Final Mission (sub-fases Desempeño + Presentación + Evaluación reflexiva)"],
+        "learning_focus": "Finalizar el Mood Board, presentarlo oralmente (2 min en inglés técnico A1.1) a Laura/Sophia como juradas del studio, y cerrar la guía con reflexión metacognitiva del proceso completo de 8 sesiones.",
+        "bloom_level": "L4–L5 (Analyze, Evaluate)",
+        "objetivo_sesion_es": "El aprendiz ejecuta el Mood Board final, lo presenta oralmente 2 min a una audiencia simulada (Laura + Sophia + pares), y reflexiona metacognitivamente sobre el proceso de aprendizaje A1.1 del RAP.",
+        "objetivo_sesion_en": "Learners execute the final Mood Board, present it orally for 2 minutes to a simulated audience (Laura + Sophia + peers), and reflect metacognitively on the A1.1 learning process.",
+        "key_activities": [
+          "Desempeño ABP (Fase 3) — finalización del Mood Board con ajustes post-feedback S7",
+          "Ensayo en parejas (30 min) — cronometrar 2 min con timer",
+          "Presentación ABP (Fase 4) — cada aprendiz presenta a Laura (avatar instructor)/Sophia (avatar par) + 2 pares jurados",
+          "Evaluación ABP (Fase 5) — reflexión metacognitiva con prompt 'What I see now that I did not see on Day 1'",
+          "Cierre de la Guía — Laura entrega 'certificado' Pixel & Ink Studio Junior Apprentice (simbólico)",
+          "Homework autónomo: actualizar portafolio personal con Mood Board + audio de presentación"
+        ],
+        "grammar_groups": {
+          "intro": [],
+          "consolida": [],
+          "aplica": [
+            "Todos los 7 grupos Intro del RAP — integrados en presentación oral y producto final"
+          ],
+          "carga_principle_check": "0/2 Intro — sesión de transferencia/cierre ✓"
+        },
+        "l1_percentage": 5,
+        "l1_rationale": "L1 sólo en reflexión metacognitiva final (apartado personal) y felicitaciones de cierre",
+        "feedback_mode": "FLUENCY + auto-evaluación",
+        "feedback_techniques": "Peer feedback post-presentación (3 estrellas + 1 deseo), auto-evaluación con rúbrica ABP 6 criterios, feedback diferido del instructor",
+        "stress_focus_words": "Reciclaje total — palabras del vocabulario personal elegido por el aprendiz",
+        "stress_techniques": "Sin drilling formal — el aprendiz monitorea su propio output",
+        "success_vocabulary_target": "Integración completa del key_vocabulary + vocabulario emergente",
+        "transversal_rap": "Cierra el RAP. La Misión Final es el último eje del canon 55 pts (E-Misión = 5 pts / 6 criterios ABP).",
+        "generates_evidence": true,
+        "evidence_preview": {
+          "codigo": "E-Misión",
+          "nombre": "Misión Final — Mood Board para Pixel & Ink Studio",
+          "tipo_sena": "Producto + Desempeño",
+          "instrumento": "Rúbrica ABP Misión Final (6 criterios × ≈1 pt = 5 pts total)",
+          "puntaje": 5,
+          "peso_canon_55": "5/55 pts",
+          "nota_canon": "Completa el canon 55 pts: E1 Reading (5) + E2 Writing (5) + E3 Listening (5) + E4 Speaking (5) + E5 Language Functions (5) + E6 Cuestionario Consolidado (25) + E-Misión (5) = 55 pts total"
+        },
+        "materials": [
+          "Mood Board final (A3 físico + foto digital)",
+          "Script de presentación 2 min (personal, preparado por aprendiz)",
+          "Rúbrica ABP 6 criterios (entregada a pares jurados)",
+          "Timer visible + campana de cierre de 2 min",
+          "Reflexión metacognitiva handout ('What I see now')",
+          "Certificado simbólico Pixel & Ink Studio"
+        ],
+        "ambiente_preview": "Aula convertida en 'Studio Showcase' — Mood Boards expuestos en muro, sillas organizadas para audiencia, mesa central para presentador.",
+        "estrategia_didactica_preview": "ABP — fases de ejecución, presentación y evaluación reflexiva; instructor monitorea + evalúa con rúbrica",
+        "transicion_siguiente": "S8 cierra la Guía 1 del programa. Bridge a G2 (The Client Whisperer, A1.2): 'En la próxima guía aprenderás a LEER Y ESCRIBIR un brief completo — el puente con el cliente.'"
+      }
+    ]
+  },
+
+  "hours_validation": {
+    "total_horas_computadas": 60,
+    "total_directas": 48,
+    "total_autonomas": 12,
+    "desglose_por_sesion": {
+      "S1": {"total": 7.5, "directas": 6, "autonomas": 1.5},
+      "S2": {"total": 7.5, "directas": 6, "autonomas": 1.5},
+      "S3": {"total": 7.5, "directas": 6, "autonomas": 1.5},
+      "S4": {"total": 7.5, "directas": 6, "autonomas": 1.5},
+      "S5": {"total": 7.5, "directas": 6, "autonomas": 1.5},
+      "S6": {"total": 7.5, "directas": 6, "autonomas": 1.5},
+      "S7": {"total": 7.5, "directas": 6, "autonomas": 1.5},
+      "S8": {"total": 7.5, "directas": 6, "autonomas": 1.5}
+    },
+    "check": "PASS — 48 directas + 12 autónomas = 60h total ✓"
+  },
+
+  "evidences_distribution": {
+    "total_evidencias_formales": 7,
+    "desglose": [
+      {"codigo": "E1", "sesion": 2, "habilidad": "Reading", "tipo_sena": "Conocimiento", "puntaje": 5},
+      {"codigo": "E2", "sesion": 3, "habilidad": "Writing", "tipo_sena": "Producto", "puntaje": 5},
+      {"codigo": "E3", "sesion": 4, "habilidad": "Listening", "tipo_sena": "Conocimiento", "puntaje": 5},
+      {"codigo": "E4", "sesion": 4, "habilidad": "Speaking", "tipo_sena": "Desempeño", "puntaje": 5},
+      {"codigo": "E5", "sesion": 5, "habilidad": "Language Functions", "tipo_sena": "Desempeño", "puntaje": 5},
+      {"codigo": "E6", "sesion": 6, "habilidad": "Cuestionario Consolidado (5 skills × 5 ítems)", "tipo_sena": "Conocimiento", "puntaje": 25},
+      {"codigo": "E-Misión", "sesion": 8, "habilidad": "Producto + Desempeño integrado", "tipo_sena": "Producto + Desempeño", "puntaje": 5}
+    ],
+    "total_puntos_canon": 55,
+    "check": "PASS — 7 evidencias (6 formales + Misión) = 55 pts canónicos ✓"
+  },
+
+  "cuestionario_preview": {
+    "codigo": "E6",
+    "sesion": "S6",
+    "total_puntos": 25,
+    "estructura": "5 secciones × 5 ítems × 1 pt",
+    "secciones": [
+      {"seccion": "Reading", "items": 5, "puntos": 5, "fuente": "Mini-texto derivado de Ficha 1 (Creative Bloq serif vs sans-serif)"},
+      {"seccion": "Writing", "items": 5, "puntos": 5, "fuente": "Mini Font Card guiada (S3 reciclaje)"},
+      {"seccion": "Listening", "items": 5, "puntos": 5, "fuente": "Fragmento Ficha 2 (Canva color wheel, 30-45s)"},
+      {"seccion": "Vocabulary", "items": 5, "puntos": 5, "fuente": "Los 20 key_vocabulary en contexto mixto"},
+      {"seccion": "Grammar", "items": 5, "puntos": 5, "fuente": "Gr 1 be + Gr 3 plural/a-an + Gr 4 adj pos + Gr 5 imperative + Gr 14 in — 1 ítem por grupo"}
+    ],
+    "referencia_normativa": "PM-4.2 — Cuestionario Técnico S6 | canon 55 pts = 25 E6 + 25 E1-E5 + 5 Misión"
+  },
+
+  "criteria_validation": {
+    "continuidad_integralidad": {
+      "check": "PASS",
+      "evidencia": "Las 6 habilidades se desarrollan en paralelo: Reading (S2) → Writing (S3) reutiliza léxico S2 → Listening/Speaking (S4) recicla chunks S2-S3 → Language Functions (S5) consolida todo → Cuestionario (S6) evalúa integrado → Misión (S7-S8) integra en producto real."
+    },
+    "antecedente_consecuente": {
+      "check": "PASS",
+      "evidencia": "S1 (diagnóstico) → S2 (input visual+léxico) → S3 (producción escrita con léxico S2) → S4 (input auditivo + producción oral con léxico S2-S3) → S5 (consolidación funcional) → S6 (evaluación integral) → S7 (planeación usando todo) → S8 (performance final). Ningún salto cognitivo ni lingüístico."
+    },
+    "economia": {
+      "check": "PASS",
+      "evidencia": "20 key_vocabulary + 2 fuentes auténticas (Ficha 1 Creative Bloq, Ficha 2 Canva) + 3 avatares (Laura, Sophia, Andrés) + 1 universo (Pixel & Ink Studio) + 7 grupos gramaticales = cobertura completa de 8 sesiones sin material redundante."
+    },
+    "evidencias_alineadas": {
+      "check": "PASS",
+      "evidencia": "Cada habilidad del Cuestionario S6 (Reading, Writing, Listening, Vocabulary, Grammar) tiene su evidencia de apropiación previa (E1-E5) + el ítem específico del cuestionario lo valida. La Misión Final (E-Misión) es transferencia, no duplica evaluación formal."
+    },
+    "carga_gramatical_pm0_9_2": {
+      "check": "PASS",
+      "evidencia": "Máximo 2 grupos nuevos por sesión respetado: S1=0, S2=2, S3=2, S4=2, S5=1, S6=0, S7=0, S8=0. Total 7 grupos Intro distribuidos en S2-S5 con consolidación en S5 y evaluación en S6."
+    },
+    "l1_policy_pm0_9_1": {
+      "check": "PASS",
+      "evidencia": "Progresión descendente respetada: S1=30% → S2=25% → S3=20% → S4=15% → S5=12% → S6=10% → S7=10% → S8=5% (alineado a pm-0-context.json l1_policy_per_guide[0])"
+    }
+  },
+
+  "recommendations": {
+    "prerrequisitos_s1": [
+      "Enviar a los aprendices 1 semana antes: traer 3 imágenes visuales (impresas o digitales) para mood board icebreaker",
+      "Preparar Word Wall vacío en pared lateral del aula",
+      "Imprimir Brief de Pixel & Ink Studio (Sophia) para entrega en S7"
+    ],
+    "riesgos_pedagogicos": [
+      "Ansiedad A1.1 en S2 primera lectura — mitigación: jigsaw + apoyo visual obligatorio (PM-0 §8 methodological_shift G1)",
+      "Tentación de sobrecarga gramatical en S3 — recordar carga principle 2 Intro max (PM-0 §9.2)",
+      "Fatiga cognitiva en S4 (dos habilidades evaluadas mismo día) — prever breaks de 10 min entre listening y speaking",
+      "Performance anxiety en S8 presentación 2 min — mitigación: ensayo en parejas S8 + script preparado"
+    ],
+    "siguientes_pms_a_ejecutar": [
+      "PM-2.1 — The Spark (S1 activación) → emite Activity Card para Col 6 GFPI-F-134",
+      "PM-2.2 — Gap Analysis (S1 diagnóstico)",
+      "PM-2.3 — Reading Master Anchor (S2) — usa Ficha 1 adaptada",
+      "PM-2.4 — Writing Task-Based (S3)",
+      "PM-2.5 — Literacy & Vocabulary Skills (S2) — pre-activa los 20 key_vocabulary",
+      "PM-2.6 — Listening Auditory Anchor (S4) — usa Ficha 2 diálogo",
+      "PM-2.8 — Speaking The Mission (S4)",
+      "PM-2.9 — Language Functions (S5)",
+      "PM-2.10 — Grammar Structure Use (S3 + S5)",
+      "PM-2.11 — GFPI-F-134 Row Assembler (cierre Fase 2)"
+    ],
+    "nota_universo_original": "REGLA CRÍTICA v2.3 (ver master-doc §10 PASO 4): cada PM-2.x debe generarse DESDE CERO con el universo de esta guía (20 key_vocab Typography/Color/Shape/Tools/Products, Ficha 1 Creative Bloq serif vs sans-serif, Ficha 2 Canva color wheel, Ficha 3 Matthew Encina/The Futur backup, Pixel & Ink Studio avatares). NO copiar de otras guías."
+  },
+
+  "pm0_traceability_status": {
+    "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+    "nota": "Este checklist se ejecuta con granularidad en cada PM-2.x (por sesión). En PM-2.0 se verifica sólo la trazabilidad arquitectónica global.",
+    "arquitectonico_global": {
+      "A_cefr": "PASS — asignación A1.1 coherente con pm-0-context.json + descriptores §4/§6 + vocabulario 50-100 términos target",
+      "B_pedagogica": "PASS — carga grammatical respetada + L1 policy progresivo + accuracy/fluency progresivo",
+      "C_estructura_sesion": "PASS — 8 sesiones FPI SENA (Reflexión → Apropiación → Evaluación → Transferencia) con tiempos realistas",
+      "D_evaluacion": "PASS — todas las sesiones contribuyen al canon 55 pts, evidencias alineadas a descriptores CEFR A1.1"
+    },
+    "recomendacion": "Completar checklist granular 22-item en cada pm-2-X.json antes de ejecutar producción de contenido"
+  },
+
+  "validacion_reglas_pm20": {
+    "regla_1_8_sesiones_fijas": "PASS — S1 Reflexión+Context | S2-S5 Apropiación | S6 Evaluación | S7-S8 Transferencia",
+    "regla_2_60h_48_12": "PASS — 48 directas + 12 autónomas = 60h ✓",
+    "regla_3_6_evidencias_formales_apropriacion": "PASS — E1 Reading (S2), E2 Writing (S3), E3 Listening (S4), E4 Speaking (S4), E5 Language Functions (S5) + E6 Cuestionario Consolidado (S6) = 6 evidencias de apropiación/evaluación",
+    "regla_4_canon_55_pts": "PASS — E1-E5 (25) + E6 (25) + E-Misión (5) = 55 pts ✓",
+    "regla_5_pm_asignacion_por_sesion": "PASS — cada sesión tiene su(s) PM(s) asignado(s) según master doc §5",
+    "regla_6_pm0_anchor_presente": "PASS — pm0_anchor declarado con grammar_roadmap + l1_policy + methodological_shift",
+    "regla_7_carga_gramatical_2_intro_max": "PASS — S2=2, S3=2, S4=2, S5=1, otras=0 ✓",
+    "regla_8_antecedente_consecuente": "PASS — cada sesión declara transicion_siguiente hacia la próxima",
+    "regla_9_blueprint_completo": "PASS — 8 sesiones con nombre, fase, horas, PMs, objetivos, actividades, grammar, L1%, feedback, stress, success, evidencia, materiales, ambiente, estrategia, transición"
+  },
+
+  "validacion_anclaje_pm0": {
+    "anchor_1_source_file": "PASS — pm-0-context.json referenciado",
+    "anchor_2_cefr_descriptor": "PASS — cefr_descriptors_per_guide[0] A1.1",
+    "anchor_3_grammar_roadmap": "PASS — 7 grupos Intro G1 mapeados a S2-S5 con carga 2-max",
+    "anchor_4_l1_policy": "PASS — progresión 30% → 5% respetada",
+    "anchor_5_methodological_shift": "PASS — input muy lento + máximo andamiaje + accuracy-prioritario + driller (S1-S5) → monitor/facilitador (S7-S8)"
+  },
+
+  "siguiente_paso": {
+    "pm": "PM-2.1 (The Spark — Reflexión Inicial S1)",
+    "input_a_pasar": [
+      "pm-0-context.json — anchors G1 A1.1",
+      "pm-1-2.json — Scope & Sequence + 20 key_vocabulary + 3 fichas curadas",
+      "pm-2-0.json (este archivo) — Session Blueprint G1 con PM asignados, horas, grammar mapping, evidencias"
+    ],
+    "expected_output": "pm-2-1.json — Activity Card de S1 con actividades de activación (Mood Board icebreaker, KWL, Gap Card) + Teacher Talk samples bilingües + logistics box + 30% L1 budget + checklist PM-0 §7 granular S1"
+  }
+}

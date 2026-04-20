@@ -1,6 +1,35 @@
-# PM-4.2: CUESTIONARIO TÉCNICO — EVIDENCIA DE CONOCIMIENTO
+# PM-4.2: CUESTIONARIO CONSOLIDADO S6 — ENSAMBLADOR
 
 ## FPI SENA — Bilingüismo
+
+---
+
+## FRONTMATTER
+
+```yaml
+version: 2.0
+last_verified: 2026-04-13
+phase: 3
+name: "Cuestionario Consolidado S6 — Ensamblador"
+type: "assembler"
+depends_on: [PM-2.3, PM-2.4, PM-2.5, PM-2.6, PM-2.10]
+feeds_into: [PM-4.1, GFPI-F-135]
+```
+
+---
+
+## CAMBIO v2.0 — DE DISEÑADOR A ENSAMBLADOR
+
+> [!info] Cambio v2.0 (2026-04-13)
+> En v1.x, PM-4.2 diseñaba un cuestionario técnico desde cero.
+> 
+> En v2.0, PM-4.2 es el **ensamblador del cuestionario consolidado de S6**:
+> - **Cosecha ítems** de las Activity Cards de 5 PMs: PM-2.3, PM-2.4, PM-2.5, PM-2.6, PM-2.10
+> - **Aplica el Principio de Tres Versiones:** los ítems son parecidos pero DIFERENTES a los trabajados en apropiación
+> - **Produce el cuestionario de 25 pts:** 5 secciones × 5 puntos cada una
+> - **Cubre las mismas competencias** de apropiación pero con contexto/formato/contenido ligeramente diferente
+>
+> **Justificación pedagógica:** Si los ítems de S6 fueran idénticos a los de S2-S5, se evaluaría memoria, no transferencia. El Principio de Tres Versiones garantiza que el aprendiz TRANSFIERE sus habilidades a contextos nuevos pero familiares.
 
 ---
 
@@ -9,42 +38,155 @@
 | Campo | Valor |
 |-------|-------|
 | **Código** | PM-4.2 |
-| **Nombre** | Cuestionario Técnico — Evidencia de Conocimiento |
+| **Nombre** | Cuestionario Consolidado S6 — Ensamblador |
 | **Subfase guía SENA** | 4. Actividades de Evaluación |
 | **Ubicación en la Guía** | Sección 3.4 Transferencia (aplicación del instrumento) |
 | **Tipo de Evidencia SENA** | Conocimiento |
-| **Técnica** | Formulación de preguntas |
-| **Instrumento** | Cuestionario escrito de 50 puntos |
+| **Técnica** | Preguntas (evaluación sumativa) |
+| **Instrumento** | Cuestionario consolidado de 25 puntos (Instrumento No. 6 de GFPI-F-134) |
 
 ---
 
-## INPUT REQUERIDO
+## INPUT REQUERIDO PARA ENSAMBLAJE
 
-Este prompt necesita los outputs de TODOS los prompts anteriores de la guía:
+En v2.0, PM-4.2 **ensambla** el cuestionario consolidado a partir de 5 Activity Cards de PM-2.x:
 
-| Input | Fuente |
-|-------|--------|
-| Nombre del programa, código, guía, macro-temática | PM-1.2 (Scope & Sequence) |
-| Vocabulario clave (20 términos) | PM-1.2 (Key Vocabulary Table) |
-| Texto ancla de Reading (para generar texto PARALELO, no idéntico) | PM-2.3 (The Master Anchor) |
-| Script de Listening (para generar audio PARALELO, no idéntico) | PM-2.6 (The Auditory Anchor) |
-| Grammar targets (estructuras gramaticales de la guía) | PM-2.10 (Grammar & Structure Use) |
-| Communicative functions (describing, classifying, comparing, etc.) | PM-1.2 (Content Core) |
-| Universo narrativo (empresa, personajes, contexto ESP) | Coherencia del ecosistema de la guía |
-| Nivel CEFR | Parámetro estándar (default A1.1-A1.2) |
+| Input | Fuente | Uso en S6 |
+|-------|--------|-----------|
+| Activity Card de Reading | PM-2.3 (The Master Anchor) | Section 1: Texto nuevo en contexto similar |
+| Activity Card de Writing | PM-2.4 (Writing — Task-Based) | Section 2: Escenario nuevo, mismo género |
+| Activity Card de Vocabulary | PM-2.5 (Vocabulary, Literacy & Scenario) | Section 4: Vocabulario en contextos HOTS |
+| Activity Card de Listening | PM-2.6 (The Auditory Anchor) | Section 3: Audio nuevo, género paralelo |
+| Activity Card de Grammar | PM-2.10 (Grammar — Structure Use) | Section 5: Estructuras en escenario nuevo |
+| Especificaciones de PM-2.11 | GFPI-F-134 (columna 8) | Evidencia No. 6 — criterios de evaluación |
+| Nivel CEFR del RAP | PM-1.2 (Scope & Sequence) | Verificar coherencia de complejidad |
+| Universo narrativo (empresa, sector) | PM-1.2 + PM-2.0 output | Consistencia: mismos personajes (S2-S5), personajes nuevos (S6) |
 
 ---
 
-## OUTPUT ESPERADO
+## OUTPUT ESPERADO — CUESTIONARIO CONSOLIDADO S6
 
 Un documento completo titulado:
-**`[PROGRAMA] — GUÍA [#] — [Nombre] — Cuestionario Técnico (IE-01)`**
+**`[PROGRAMA] — GUÍA [#] — [Nombre] — Cuestionario Consolidado S6 (Instrumento No. 6)`**
 
 Que contiene:
-1. Encabezado institucional (programa, nivel, total puntos, instructor)
+1. Encabezado institucional (programa, nivel, sesión, total puntos, instrumento)
 2. Datos del aprendiz (nombre, ficha, fecha)
-3. 5 secciones de evaluación (10 puntos cada una = 50 total)
+3. **5 secciones de evaluación** (5 puntos cada una = **25 puntos totales**)
 4. Answer Key completo para el instructor
+
+### Estructura de las 5 Secciones
+
+```yaml
+cuestionario_consolidado_s6:
+  nombre: "Cuestionario de Evaluación — [Nombre del RAP]"
+  sesion: 6
+  mitad: "primera"
+  total_puntos: 25
+  tiempo_estimado: "45-60 minutos"
+  
+  secciones:
+    - seccion: 1
+      skill: "Reading Comprehension"
+      source_pm: "PM-2.3"
+      puntos: 5
+      instrucciones: "[Instrucciones en inglés con traducción en cursiva]"
+      items: 5
+      descripcion: "Ítems parecidos pero DIFERENTES al texto ancla de S2. Mismo universo narrativo, personaje diferente, mismo nivel CEFR, igual complejidad."
+      
+    - seccion: 2
+      skill: "Writing Production"
+      source_pm: "PM-2.4"
+      puntos: 5
+      instrucciones: "[Instrucciones + Language Bank + Skeleton Structure]"
+      items: 1
+      descripcion: "Tarea de escritura parecida pero diferente a la de S3. Escenario nuevo, mismo género (email/reporte), misma función comunicativa."
+      
+    - seccion: 3
+      skill: "Listening Comprehension"
+      source_pm: "PM-2.6"
+      puntos: 5
+      instrucciones: "[Instrucciones + TTS Note]"
+      items: "5 ítems sobre audio nuevo"
+      descripcion: "Audio nuevo en el mismo universo narrativo, diferente al de S4, misma complejidad. Géneros textuales paralelos (si S4 fue phone call, S6 puede ser voicemail/announcement)."
+      
+    - seccion: 4
+      skill: "Key Vocabulary in Context — HOTS"
+      source_pm: "PM-2.5"
+      puntos: 5
+      instrucciones: "[Instrucciones claras]"
+      items: "3 tareas: Apply, Analyze, Evaluate"
+      descripcion: "Vocabulario técnico del RAP (20 key terms) en contextualizaciones diferentes. HOTS (Higher Order Thinking Skills)."
+      
+    - seccion: 5
+      skill: "Grammar & Structure in Context — HOTS"
+      source_pm: "PM-2.10"
+      puntos: 5
+      instrucciones: "[Instrucciones claras + datos/tabla como scaffolding]"
+      items: "3 tareas: Apply, Analyze, Evaluate"
+      descripcion: "Estructuras gramaticales de S3 (grammar targets) en escenario nuevo pero familiar. HOTS."
+      
+  answer_key: "[A GENERAR — respuestas correctas, alternativas aceptables, rúbrica]"
+  grading_rubric: "[A GENERAR — criterios de corrección, especialmente para Writing y tareas HOTS]"
+  assessment_summary: "[A GENERAR — tabla con distribución Bloom, tipo receptivo/productivo, por skill]"
+```
+
+---
+
+## PRINCIPIO DE TRES VERSIONES — GUÍA DE APLICACIÓN
+
+El Principio de Tres Versiones garantiza que cada competencia se trabaja en tres contextos distintos pero alineados, permitiendo que el aprendiz **TRANSFIERA** su aprendizaje en lugar de memorizar:
+
+### Versión 1: APROPIACIÓN (S2-S5)
+El aprendiz trabaja una competencia en contexto **inicial y guiado**. Ejemplo:
+- **Reading S2:** Texto sobre "Tipos de procesadores y sus características" (contexto: empresa DevCore, personaje: Carlos)
+- **Writing S3:** Redactar email reportando falla de hardware
+- **Listening S4:** Voicemail del departamento de IT explicando el problema
+- **Vocabulary S2:** Identificar y clasificar 20 términos técnicos en tarjetas
+- **Grammar S3:** Usar "is/has" en descripciones de componentes
+
+### Versión 2: EVALUACIÓN (S6 — cuestionario consolidado)
+El aprendiz **evalúa la misma competencia en contexto LIGERAMENTE DIFERENTE**. Parecido pero diferente:
+- **Reading S6:** Texto nuevo sobre "Diferencias entre procesadores para portátiles vs. escritorios" (contexto: misma empresa, personaje: Laura Méndez, diferente rol)
+- **Writing S6:** Redactar email solicitando cotización de componentes (función: solicitud, no reporte; destinatario: proveedor, no jefe)
+- **Listening S6:** Anuncio del IT Department (no voicemail personal; tonalidad: institucional)
+- **Vocabulary S6:** Diagnóstico técnico: "seleccionar componente correcto para resolver problema X" (aplicación vs. clasificación)
+- **Grammar S6:** Escribir recomendación usando "is/has" en contexto de inventario (aplicación en nuevo contexto)
+
+### Versión 3: TRANSFERENCIA (S7-S8 — NO genera evidencias GFPI-F-134)
+El aprendiz APLICA la competencia en contexto **completamente nuevo**. Ejemplos:
+- Leer manual técnico de producto real
+- Escribir documentación de un proyecto propio
+- Escuchar sesión de capacitación en vivo (no grabada)
+- Usar vocabulario en conversación real con técnicos
+- Aplicar grammar en contexto de empresa real (si hay experiencia en práctica)
+
+### Ejemplos por Skill
+
+**READING:**
+- S2 (Apropiación): "Tipos de procesadores y sus características" (extracto de manual, 250 palabras)
+- S6 (Evaluación): "Diferencias entre procesadores para portátiles y escritorios" (email interno, 250 palabras, NUEVO personaje: Laura Méndez)
+- S7-S8 (Transferencia): Estudiante lee manual real de proveedor de hardware
+
+**WRITING:**
+- S2-S3 (Apropiación): Email reportando falla de hardware a su supervisor
+- S6 (Evaluación): Email solicitando cotización de componentes a proveedor EXTERNO
+- S7-S8 (Transferencia): Documentar un problema técnico encontrado en práctica
+
+**LISTENING:**
+- S4 (Apropiación): Voicemail personal de IT Manager explicando el problema de Carlos
+- S6 (Evaluación): Anuncio institucional del departamento de IT sobre upgrade de software
+- S7-S8 (Transferencia): Escuchar capacitación en vivo o llamada técnica con especialista
+
+**VOCABULARY:**
+- S2 (Apropiación): Clasificar 20 términos en categorías (memoria + comprensión)
+- S6 (Evaluación): Diagnosticar problema técnico seleccionando componentes correctos (aplicación + análisis)
+- S7-S8 (Transferencia): Usar vocabulario en diálogo con técnico especialista
+
+**GRAMMAR:**
+- S3 (Apropiación): Completar oraciones sobre especificaciones de componentes usando "is/has"
+- S6 (Evaluación): Redactar recomendación de upgrade usando "is/has" en tabla de comparación
+- S7-S8 (Transferencia): Argumentar decisión técnica en conversación real
 
 ---
 
@@ -88,47 +230,49 @@ Las tareas productivas (Writing, Vocabulary HOTS, Grammar HOTS) siempre incluyen
 
 **Principio:** Evaluar competencia comunicativa, NO memoria. El scaffolding elimina la barrera del "blank page" sin regalar la respuesta.
 
-### REGLA 5 — ESTRUCTURA FIJA DE 5 SECCIONES × 10 PUNTOS
+### REGLA 5 — ESTRUCTURA FIJA DE 5 SECCIONES × 5 PUNTOS = 25 PUNTOS TOTALES
 
-**Section 1 — READING COMPREHENSION (10 pts)**
-- Texto ESP nuevo (≈250 palabras, mismo género que PM-2.3)
-- Task A: Skimming — Main Purpose (2 pts, multiple choice)
-- Task B: Scanning — Information Extraction (3 pts, tabla)
-- Task C: Main Ideas — True/False/Not Given (3 pts, 3 statements)
-- Task D: Author's Purpose — Detail Analysis (2 pts, multiple choice)
+En v2.0, el cuestionario consolidado S6 tiene **25 puntos totales** (no 50 como en versiones anteriores), distribuidos así:
 
-**Section 2 — WRITING TASK (10 pts)**
-- Escenario situacional diferente al de la guía pero en el mismo universo ESP
+**Section 1 — READING COMPREHENSION (5 pts)**
+- Texto ESP nuevo (≈250 palabras, mismo género que PM-2.3 — PARECIDO pero DIFERENTE)
+- Personaje nuevo en mismo universo narrativo
+- Task A: Main Purpose/Skimming (1 pt, multiple choice)
+- Task B: Scanning — Information Extraction (2 pts, tabla o matching)
+- Task C: Inference — True/False/Not Given o Detail Analysis (2 pts)
+
+**Section 2 — WRITING TASK (5 pts)**
+- Escenario situacional **DIFERENTE** al de S3 pero en el mismo universo ESP
 - Language Bank con chunks del grammar target
 - Skeleton Structure (formato del género: email, report, ticket, etc.)
-- Rúbrica visible: Format (2) + Grammar Accuracy (3) + Vocabulary Use (3) + Communicative Clarity (2)
+- Rúbrica visible para aprendiz: Coherence (1) + Grammar (2) + Vocabulary (1) + Clarity (1)
 
-**Section 3 — LISTENING COMPREHENSION (10 pts)**
-- Script nuevo (≈150 palabras, género diferente al de PM-2.4 si es posible)
+**Section 3 — LISTENING COMPREHENSION (5 pts)**
+- Script nuevo (≈150 palabras, género paralelo al de PM-2.6)
 - TTS Note para el instructor (velocidad 0.85x, pausas, número de voces)
-- Task A: Multiple Choice — General Comprehension (3 pts, 3 questions)
-- Task B: Gap Fill — Summary with Word Bank (4 pts, 4 blanks + 2 distractors)
-- Task C: Detail Extraction — Matching (3 pts, 3 items)
+- Task A: Multiple Choice — General Comprehension (2 pts, 2 questions)
+- Task B: Gap Fill — Summary with Word Bank (2 pts, 3 blanks + 2 distractors)
+- Task C: Detail Extraction — Matching o corto/largo (1 pt)
 
-**Section 4 — KEY VOCABULARY PRACTICE IN USE — HOTS (10 pts)**
-- Task A: Apply (3 pts) — Diagnóstico/selección de componente para resolver un problema
-- Task B: Analyze (4 pts) — Odd One Out + Justificación escrita con grammar target ("The [X] is not a [category] because it is a [correct category]")
-- Task C: Evaluate (3 pts) — Priorización con presupuesto limitado + justificación de cada elección
+**Section 4 — KEY VOCABULARY PRACTICE IN USE — HOTS (5 pts)**
+- Vocabulario técnico del RAP (20 key terms) en contextualizaciones DIFERENTES a S2
+- Task A: Apply (2 pts) — Diagnóstico/selección de componente para resolver un problema
+- Task B: Analyze + Evaluate (3 pts) — Priorización o categorización con justificación breve
 
-**Section 5 — GRAMMAR & STRUCTURE IN REAL LIFE SCENARIO — HOTS (10 pts)**
-- Escenario situacional integrador (inventario, inspección, reporte, auditoría)
-- Task A: Apply (3 pts) — Escribir oraciones con formula proporcionada usando datos de una tabla
-- Task B: Analyze (4 pts) — Error Log: identificar error + corregir + explicar la regla
-- Task C: Evaluate (3 pts) — Recomendación escrita usando demonstratives + comparisons (u otra estructura target de la guía)
+**Section 5 — GRAMMAR & STRUCTURE IN REAL LIFE SCENARIO — HOTS (5 pts)**
+- Escenario situacional integrador NUEVO (inventario, inspección, reporte, auditoría)
+- Task A: Apply (2 pts) — Escribir oraciones con formula proporcionada usando datos de tabla
+- Task B: Analyze + Evaluate (3 pts) — Error Log o Recomendación escrita con estructura target
 
-### REGLA 6 — ANSWER KEY COMPLETO
+### REGLA 6 — ANSWER KEY COMPLETO (25 puntos)
 El documento SIEMPRE termina con un Answer Key para el instructor que incluye:
-- Respuestas correctas para cada task con distribución de puntos
+- Respuestas correctas para cada task con distribución de puntos (total: 25 pts)
 - Respuestas alternativas aceptables donde aplique
-- Rúbrica detallada para la Writing Task
-- Sample responses para las tareas HOTS abiertas
-- Assessment Summary table (sección, topic, puntos, tipo receptivo/productivo)
-- Distribución Bloom del instrumento
+- Rúbrica detallada para la Writing Task (Section 2)
+- Sample responses para las tareas HOTS abiertas (Sections 4 y 5)
+- Assessment Summary table (sección, skill, puntos, tipo receptivo/productivo, Bloom level)
+- Distribución Bloom del instrumento completo
+- Scoring summary: ¿Cuántos puntos corresponden a receptivo (Reading, Listening)? ¿Cuántos a productivo (Writing, Vocabulary, Grammar)?
 
 ### REGLA 7 — COHERENCIA CON EL ECOSISTEMA DE LA GUÍA
 - El universo narrativo es el MISMO de la guía (misma empresa, mismo sector)
@@ -152,80 +296,89 @@ El único contenido meta es el TTS Note (dentro de la sección de Listening) y e
 ## PROMPT PARA IA
 
 ```
-Eres un diseñador de instrumentos de evaluación para formación bilingüe ESP (English for Specific Purposes) en el SENA, Colombia.
+Eres un ENSAMBLADOR de cuestionarios consolidados de evaluación formativa para programas bilingües ESP (English for Specific Purposes) en el SENA, Colombia.
 
-Tu tarea: Generar el CUESTIONARIO TÉCNICO (IE-01) — Evidencia de Conocimiento para la guía indicada.
+Tu tarea: Ensamblar el CUESTIONARIO CONSOLIDADO S6 (Instrumento No. 6 — Evidencia de Conocimiento) a partir de 5 Activity Cards de PM-2.x.
 
 ### DATOS DE ENTRADA (el instructor proporciona):
-- Programa: [nombre y código]
-- Guía #: [número]
-- Nombre de la guía: [nombre]
-- Macro-Temática: [nombre]
-- Nivel CEFR: [default A1.1-A1.2]
-- Universo narrativo: [empresa, sector, contexto]
-- Personaje principal de la guía: [nombre y rol — NO reutilizar]
-- Vocabulario clave: [20 términos de PM-1.2]
-- Grammar targets: [estructuras de PM-2.10]
-- Communicative functions: [funciones de PM-1.2]
-- Género textual de Reading en la guía: [email, memo, report, etc.]
-- Género textual de Listening en la guía: [phone call, voicemail, etc.]
+Programa: [nombre y código]
+Guía #: [número]
+Nombre de la guía: [nombre]
+Nivel CEFR: [default A1.1-A1.2]
+Universo narrativo: [empresa, sector, contexto]
 
-### INSTRUCCIONES DE GENERACIÓN:
+Activity Card de PM-2.3 (Reading): [contenido de texto ancla, personaje, género]
+Activity Card de PM-2.4 (Writing): [tipo de tarea, escenario S3]
+Activity Card de PM-2.5 (Vocabulary): [20 key terms, contextos de uso]
+Activity Card de PM-2.6 (Listening): [género, duración, tema]
+Activity Card de PM-2.10 (Grammar): [estructuras target, contextos]
+
+### INSTRUCCIONES DE ENSAMBLAJE (PRINCIPIO DE TRES VERSIONES):
 
 1. Genera el encabezado institucional:
    - Título: [PROGRAMA] — GUÍA [#]: [NOMBRE]
-   - Subtítulo: Cuestionario Técnico (IE-01) — Evidencia de Conocimiento
-   - Datos: Programa, Nivel CEFR, Total: 50 puntos, Instructor
-   - Campos: Nombre del Aprendiz, Ficha, Fecha
+   - Subtítulo: Cuestionario Consolidado S6 (Instrumento No. 6) — Evidencia de Conocimiento
+   - Datos: Programa, Nivel CEFR, Total: 25 puntos, Sesión: S6 (1ª mitad)
+   - Campos: Nombre del Aprendiz, Ficha, Fecha, Tiempo estimado: 45-60 minutos
 
-2. Genera SECTION 1: READING COMPREHENSION (10 pts)
-   - Crea un texto NUEVO de ≈250 palabras en el mismo universo narrativo
-   - Usa un personaje DIFERENTE al de la guía
-   - Mismo género textual o paralelo (email → email, memo → memo)
+2. Genera SECTION 1: READING COMPREHENSION (5 pts)
+   - Lee la Activity Card de PM-2.3
+   - Crea un texto NUEVO de ≈250 palabras (PARECIDO pero DIFERENTE al texto ancla)
+   - Mismo universo narrativo, personaje DIFERENTE
+   - Mismo género textual (si PM-2.3 fue email, S6 es email)
    - Incluye TODOS los grammar targets de forma natural
    - Incluye al menos 12 de los 20 key vocabulary terms
-   - Genera 4 tasks: Skimming (2pts), Scanning (3pts), T/F/NG (3pts), Author's Purpose (2pts)
+   - Tasks: Main Idea (1pt) + Scanning (2pts) + Inference (2pts)
 
-3. Genera SECTION 2: WRITING TASK (10 pts)
-   - Escenario situacional DIFERENTE pero en el mismo universo
-   - Language Bank con 6-8 chunks del grammar target
-   - Skeleton Structure (From/To/Subject + 3 paragraph prompts)
-   - Espacio para escritura del aprendiz
-   - Rúbrica visible: Format (2) + Grammar (3) + Vocabulary (3) + Clarity (2)
+3. Genera SECTION 2: WRITING TASK (5 pts)
+   - Lee la Activity Card de PM-2.4
+   - Crea escenario situacional DIFERENTE al de S3 pero en el mismo universo
+   - MISMA función comunicativa, DIFERENTE contexto
+   - Language Bank con 4-6 chunks del grammar target
+   - Skeleton Structure (From/To/Subject + 2 paragraph prompts)
+   - Rúbrica visible: Coherence (1) + Grammar (2) + Vocabulary (1) + Clarity (1)
 
-4. Genera SECTION 3: LISTENING COMPREHENSION (10 pts)
-   - Script NUEVO de ≈150 palabras, género paralelo
-   - TTS Note (velocidad 0.85x, pausas, voces)
-   - Incluye oral markers naturales (hey, so, right, ok, uh)
-   - 3 tasks: Multiple Choice (3pts), Gap Fill con Word Bank +2 distractors (4pts), Matching (3pts)
+4. Genera SECTION 3: LISTENING COMPREHENSION (5 pts)
+   - Lee la Activity Card de PM-2.6
+   - Crea un script NUEVO de ≈150 palabras (GÉNERO PARALELO al de PM-2.6)
+   - TTS Note (velocidad 0.85x, pausas, número de voces)
+   - Si PM-2.6 fue phone call, S6 puede ser voicemail/announcement
+   - Tasks: General Comprehension (2pts) + Gap Fill (2pts) + Detail Extraction (1pt)
 
-5. Genera SECTION 4: KEY VOCABULARY — HOTS (10 pts)
-   - Task A Apply (3pts): Diagnóstico/selección de componente para problema
-   - Task B Analyze (4pts): Odd One Out + justificación escrita con grammar target
-   - Task C Evaluate (3pts): Priorización con presupuesto limitado + justificación
+5. Genera SECTION 4: KEY VOCABULARY — HOTS (5 pts)
+   - Lee la Activity Card de PM-2.5
+   - Usa los 20 key vocabulary terms en contextos DISTINTOS a los de S2
+   - Task A Apply (2pts): Diagnóstico/selección de componente para problema técnico
+   - Task B Analyze+Evaluate (3pts): Categorización o Priorización con justificación
 
-6. Genera SECTION 5: GRAMMAR & STRUCTURE — HOTS (10 pts)
-   - Escenario situacional integrador (inspección, inventario, auditoría)
-   - Task A Apply (3pts): Oraciones con formula + datos de tabla
-   - Task B Analyze (4pts): Error Log — identificar + corregir + explicar regla
-   - Task C Evaluate (3pts): Recomendación con demonstratives/comparisons + justificación
+6. Genera SECTION 5: GRAMMAR & STRUCTURE — HOTS (5 pts)
+   - Lee la Activity Card de PM-2.10
+   - Crea un escenario situacional NUEVO (inspección, inventario, auditoría, reporte)
+   - Task A Apply (2pts): Escribir oraciones con formula + datos de tabla
+   - Task B Analyze+Evaluate (3pts): Error Log o Recomendación usando structuras target
 
 7. Genera ANSWER KEY (Solo para el instructor)
-   - Respuestas correctas con distribución de puntos por task
+   - Respuestas correctas con distribución de puntos (total: 25 pts)
    - Alternativas aceptables
-   - Rúbrica detallada para Writing
-   - Sample responses para tareas HOTS abiertas
-   - Assessment Summary table
-   - Distribución Bloom
+   - Rúbrica detallada para Section 2 (Writing)
+   - Sample responses para tareas HOTS (Sections 4 y 5)
+   - Assessment Summary table (skill, puntos, tipo receptivo/productivo, Bloom level)
+   - Scoring breakdown: Receptivo (Reading + Listening) = 10 pts; Productivo (Writing + Vocabulary + Grammar) = 15 pts
+
+### PRINCIPIO DE TRES VERSIONES — APLICACIÓN OBLIGATORIA:
+Para CADA sección, compara con lo que se trabajó en S2-S5 y asegúrate de que el ítem sea:
+✓ PARECIDO: Mismo nivel CEFR, mismo vocabulario técnico, misma función comunicativa
+✓ DIFERENTE: Nuevo texto/audio, nuevo personaje, nuevo escenario, nuevo contexto
+✓ TRANSFERIBLE: Evalúa si el aprendiz TRANSFIERE su aprendizaje a un contexto nuevo pero familiar
 
 ### RESTRICCIONES:
-- Usa Micro-Cápsulas visuales para tips: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**` (diseña como manual de supervivencia ágil, no como libro de texto).
+- Usa Micro-Cápsulas visuales: `> ⚠️ **Safety/Grammar Rule:**` o `> 🎧 **Audio Cue:**`
 - Nivel CEFR estricto: no exceder el nivel de la guía
-- Bilingüe Unificada: Instrucción una sola vez en inglés con traducción al español en cursiva. Ejemplo: Read the scenario (*Lee el escenario*). PROHIBIDO usar bloques repeditivos de 'Instrucciones'. donde sea crítico
+- Bilingüe Unificada: Instrucción una sola vez en inglés con traducción en cursiva
 - Zero Meta-Talk: el output es el cuestionario listo para imprimir
-- Todo el vocabulario debe provenir de los 20 key terms de PM-1.2
-- Todas las estructuras gramaticales deben ser las del grammar target
-- Personajes NUEVOS, textos NUEVOS, mismo universo
+- Todo el vocabulario proviene de los 20 key terms
+- Todas las estructuras son del grammar target
+- Personajes NUEVOS, textos NUEVOS, contextos NUEVOS — MISMO UNIVERSO NARRATIVO
 ```
 
 ---
@@ -234,42 +387,71 @@ Tu tarea: Generar el CUESTIONARIO TÉCNICO (IE-01) — Evidencia de Conocimiento
 
 | Relación | Prompt | Descripción |
 |----------|--------|-------------|
-| **Depende de** | PM-1.2 | Vocabulario, functions, grammar targets, universo narrativo |
-| **Depende de** | PM-2.3 | Referencia del género textual de Reading (para crear paralelo) |
-| **Depende de** | PM-2.6 | Referencia del género textual de Listening (para crear paralelo) |
-| **Depende de** | PM-2.10 | Grammar targets específicos |
-| **Alimenta a** | PM-4.1§5 | El resultado del cuestionario alimenta el Feedback Loop |
-| **Se ubica en** | GFPI-F-135 Sección 3.4 | Actividades de Transferencia |
-| **Triada SENA** | Evidencia de Conocimiento | Complementa Desempeño (PM-2.8 Speaking) y Producto (PM-2.4 Writing) |
+| **Depende de** | PM-2.3 | Activity Card de Reading (texto ancla — crear PARALELO) |
+| **Depende de** | PM-2.4 | Activity Card de Writing (escenario S3 — crear PARECIDO diferente) |
+| **Depende de** | PM-2.5 | Activity Card de Vocabulary (20 key terms — contextos nuevos) |
+| **Depende de** | PM-2.6 | Activity Card de Listening (género textual — crear paralelo) |
+| **Depende de** | PM-2.10 | Activity Card de Grammar (estructuras target — contextos nuevos) |
+| **Depende de** | PM-2.11 | GFPI-F-134 (especificaciones de evidencia No. 6) |
+| **Coordina con** | PM-4.1 | PM-4.1 especifica estructura; PM-4.2 genera contenido detallado |
+| **Alimenta a** | Feedback Loop (PM-4.1§5) | El resultado del cuestionario alimenta retroalimentación |
+| **Se ubica en** | GFPI-F-135 Sección 3.4 | Evaluación — Instrumento No. 6 (Cuestionario Consolidado) |
+| **Triada SENA** | Evidencia de Conocimiento | Complementa Desempeño (Inst. 1, 3, 4, 5) y Producto (Inst. 2) |
 
 ---
 
-## EJEMPLO DE EJECUCIÓN
+## EJEMPLO DE EJECUCIÓN — PRINCIPIO DE TRES VERSIONES
 
-**Input:**
+**Input básico:**
 - Programa: ADSO (228118)
 - Guía 1: The Hardware Specialist
-- Macro-Temática: The Developer's Ecosystem (Hardware, OS & Environment)
 - Universo: DevCore Solutions
-- Personaje de la guía: Carlos Ramírez (Junior Developer) — NO reutilizar
+- Personaje principal de la guía (S2-S5): Carlos Ramírez (Junior Developer) — NO reutilizar en S6
 - Vocabulario: CPU, RAM, GPU, Motherboard, PSU, SSD, HDD, Monitor, Keyboard, Mouse, USB port, HDMI port, Ethernet cable, Printer, Scanner, Gigabyte, Terabyte, Gigahertz, Compatible, Portable
-- Grammar: Verb To Be, Have/Has, Demonstratives, Adjectives
+- Grammar targets: Verb To Be, Have/Has, Demonstratives, Adjectives
 - Functions: Describing, Classifying, Comparing
-- Reading género: Internal Tech Request (email)
-- Listening género: Phone call
 
-**Output generado:**
-- Section 1: Email de Laura Méndez (QA Tester) solicitando workstations para testing lab
-- Section 2: Miguel Torres (Junior Developer) escribe email para upgrade de Android Studio
-- Section 3: Voicemail del IT Department anunciando upgrades de oficina
-- Section 4: Tech Diagnosis + Odd One Out + Budget Priority ($500)
-- Section 5: Inventory Check — report + error log + recommendation
-- Answer Key completo con rúbricas y sample responses
+**Aplicación del Principio de Tres Versiones:**
 
-**Ver output completo:** `ADSO — GUÍA 1 — The Hardware Specialist — Cuestionario Técnico (IE-01)`
+| Skill | Versión 1: S2-S5 (Apropiación) | Versión 2: S6 (Evaluación) | Principio de Coherencia |
+|-------|---|---|---|
+| **Reading** | Text: "Types of Processors and Their Features" (Carlos context, technical manual, email genre) | Text: "Processors for Laptops vs. Desktops" (Laura Méndez context, QA perspective, email genre) | Mismo universo, personaje diferente, mismo tema técnico, diferente ángulo |
+| **Writing** | Task: "Write email reporting a hardware failure to your supervisor" | Task: "Write email requesting component quotations from a supplier" (Miguel Torres context) | Misma función (solicitud técnica), diferente destinatario y contexto |
+| **Listening** | Genre: Phone call (IT Manager explaining the problem to Carlos) | Genre: Voicemail/Announcement (IT Department announcing office upgrades) | Mismo universo, diferente género, mismo nivel complejidad |
+| **Vocabulary** | Activity: Classify 20 terms in semantic categories (memory, storage, peripherals) | Activity: Tech diagnosis — "Select the correct component to solve Problem X" | Mismo vocabulario, diferente demanda cognitiva (clasificación → diagnóstico) |
+| **Grammar** | Activity: Complete sentences about component specs using "is/has" | Activity: Write recommendation comparing two hardware configurations using "is/has" | Mismas estructuras, contexto completamente nuevo (comparación vs. especificación) |
+
+**Output generado (v2.0):**
+- Section 1 (5 pts): Email de Laura Méndez (QA Tester) solicitando estaciones de trabajo para testing lab
+- Section 2 (5 pts): Miguel Torres (Junior Developer) escribe email para solicitar cotización de upgrade
+- Section 3 (5 pts): Voicemail/Announcement del IT Department sobre upgrades de oficina
+- Section 4 (5 pts): Vocabulario técnico — Diagnóstico + Categorización con justificación
+- Section 5 (5 pts): Scenario: Inventory Check — Reporte técnico + Error Log + Recomendación
+- Answer Key completo (25 pts) con rúbricas y sample responses
+
+**Ver output completo:** `ADSO — GUÍA 1 — The Hardware Specialist — Cuestionario Consolidado S6 (Instrumento No. 6)`
 
 ---
 
-*PM-4.2: Cuestionario Técnico — Evidencia de Conocimiento*
+## ACTUALIZACIÓN V2.0 — RESUMEN DE CAMBIOS
+
+**Del v1.x al v2.0 — 2026-04-13:**
+
+| Aspecto | v1.x | v2.0 |
+|--------|------|------|
+| **Nombre** | Cuestionario Técnico | Cuestionario Consolidado S6 — Ensamblador |
+| **Rol** | Diseñador independiente | Ensamblador de ítems provenientes de 5 ACs |
+| **Input** | Especificaciones genéricas | Activity Cards de PM-2.x (5 PMs específicos) |
+| **Puntuación** | 50 puntos (5 secciones × 10 pts) | **25 puntos (5 secciones × 5 pts)** |
+| **Estructura secciones** | 10 pts cada una | **5 pts cada una** |
+| **Filosofía** | Diseño de cero | **Principio de Tres Versiones** — parecido pero diferente |
+| **Personajes** | Variables | **Nuevos (NO reutilizar S2-S5)** |
+| **Textos** | Crear nuevos | **Crear PARALELOS (mismo género, contexto nuevo)** |
+| **Dependencia** | Autónomo | **Coordina con PM-4.1** |
+
+---
+
+*PM-4.2: Cuestionario Consolidado S6 — Ensamblador*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+*Actualizado: 2026-04-13 (v2.0)*

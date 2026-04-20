@@ -1,0 +1,470 @@
+{
+  "pm_id": "PM-4.1",
+  "pm_name": "Instrumentos de Evaluación Formativa — Derivador (5 instrumentos)",
+  "pm_version": "2.5.1",
+  "run_id": "MGV-2026-04-20",
+  "guide": "G1 — The Visual Communicator",
+  "program_code": "522309",
+  "program_name": "Desarrollo de Medios Gráficos Visuales",
+  "rap_id": "240202501-01",
+  "competencia_codigo": "240202501",
+  "cefr_level": "A1.1",
+  "universe_anchor": "Pixel & Ink Studio — Andrés (Junior Designer), Sophia (Art Director), Laura (Creative Director), Diego (Print Producer), Don Pedro (La Esquina Bakery client)",
+  "generated_at": "2026-04-20",
+  "instructor": "Sergio",
+  "pm0_anchor": "PM-0 v2.5.1 — A1.1 G1 (feedback ACCURACY→MIXTO→FLUENCY · L1 30→5% · 7 grupos Intro G1)",
+  "derived_from": {
+    "pm_2_3": "Reading — Master Anchor Text (Andrés + Sophia bakery brief) → Cuestionario No 1 (E1)",
+    "pm_2_4": "Writing — Task-Based Email (5 moves genre, 60-80 words) → Rúbrica analítica No 2 (E2)",
+    "pm_2_6": "Listening — Auditory Anchor (Laura tutorial color wheel + Sophia brief) → Lista de Chequeo No 3 (E3)",
+    "pm_2_8": "Speaking — The Mission (briefing simulado Junior Designer 3 min) → Escala de Estimación No 4 (E4)",
+    "pm_2_9": "Language Functions — Role Carousel 5 estaciones Pixel & Ink → Escala de Estimación No 5 (E5)"
+  },
+  "identity": {
+    "role": "DERIVADOR, no diseñador. Toma Activity Cards de PM-2.3/2.4/2.6/2.8/2.9 y los traduce a 5 instrumentos formales SENA.",
+    "output_format": "5 instrumentos independientes, cada uno imprimible como PDF/docx separado, para aplicación por parte del instructor en S2/S3/S4/S5.",
+    "relation_to_pm_4_2": "PM-4.1 cubre las 5 evidencias formativas de Apropiación (S2–S5, 25 pts). PM-4.2 cubre la evidencia consolidada de Evaluación (S6, 25 pts). Juntos = 50/55 pts canon MGV G1."
+  },
+  "canon_scoring": {
+    "description": "Canon MGV G1 = 55 puntos totales",
+    "breakdown": {
+      "E1_reading_pm_4_1_cuestionario_1": 5,
+      "E2_writing_pm_4_1_rubrica_2": 5,
+      "E3_listening_pm_4_1_lista_chequeo_3": 5,
+      "E4_speaking_pm_4_1_escala_estimacion_4": 5,
+      "E5_language_functions_pm_4_1_escala_estimacion_5": 5,
+      "E6_cuestionario_consolidado_pm_4_2": 25,
+      "E_mision_final_pm_3_5": 5,
+      "TOTAL": 55
+    },
+    "note": "PM-4.1 aporta 25/55 pts. PM-4.2 aporta 25/55 pts. Misión Final aporta 5/55 pts."
+  },
+  "instrument_1_reading": {
+    "instrument_code": "INST-01",
+    "instrument_name_es": "Cuestionario No 1 — Reading Comprehension",
+    "instrument_name_en": "Quiz No 1 — Reading Comprehension",
+    "evidence_code": "E1",
+    "evidence_type_sena": "Conocimiento",
+    "evaluation_technique": "Preguntas",
+    "points_total": 5,
+    "applied_in_session": 2,
+    "applied_in_phase_sena": "3.3 Apropiación",
+    "duration_minutes": 25,
+    "ambiente": "Aula bilingüe con proyector. Aplicación individual en hojas impresas.",
+    "source_activity_card": "pm-2-3.activity_card (Reading — The Master Anchor)",
+    "source_content": "Master Anchor Text: Andrés lee brief de Sophia sobre logo + póster para bakery. Texto 195 palabras adaptado de Creative Bloq 'Serif vs Sans-Serif'.",
+    "target_vocabulary": [
+      "font", "serif", "sans-serif", "bold", "color", "warm", "cool", "canvas", "layer", "toolbar", "logo", "poster"
+    ],
+    "header_bilingual": {
+      "program": "Desarrollo de Medios Gráficos Visuales — Programa 522309",
+      "rap": "240202501-01 — Reconocer elementos del lenguaje visual en contextos comunicativos",
+      "cefr": "A1.1",
+      "student_name_field": "Nombre del aprendiz / Learner's name: _______________________",
+      "date_field": "Fecha / Date: _______________",
+      "points": "5 puntos / 5 points",
+      "instruction_es": "Lee el Master Anchor Text de la Sesión 2 y responde las 5 preguntas. Marca una sola opción por pregunta.",
+      "instruction_en": "Read the Master Anchor Text from Session 2 and answer the 5 questions. Mark only one option per question."
+    },
+    "items": [
+      {
+        "item": 1,
+        "type": "Literal",
+        "points": 1,
+        "stem_en": "Who sends Andrés the email with the bakery brief?",
+        "stem_es_support": "(¿Quién le envía a Andrés el email con el brief de la panadería?)",
+        "options": {
+          "A": "Laura",
+          "B": "Sophia",
+          "C": "Creative Bloq",
+          "D": "Don Pedro"
+        },
+        "correct": "B",
+        "rationale": "El texto dice 'He reads an email from Sophia'."
+      },
+      {
+        "item": 2,
+        "type": "Literal",
+        "points": 1,
+        "stem_en": "What is a serif font?",
+        "stem_es_support": "(¿Qué es una fuente serif?)",
+        "options": {
+          "A": "A font with no small lines",
+          "B": "A font with small lines at the ends of letters",
+          "C": "A font only in bold",
+          "D": "A font with warm colors"
+        },
+        "correct": "B",
+        "rationale": "El texto dice 'a serif font has small lines at the ends of letters'."
+      },
+      {
+        "item": 3,
+        "type": "Inferencial",
+        "points": 1,
+        "stem_en": "Why does Andrés choose a serif font for the bakery?",
+        "stem_es_support": "(¿Por qué Andrés elige una fuente serif para la panadería?)",
+        "options": {
+          "A": "Because the bakery is modern",
+          "B": "Because the bakery is traditional and serif is traditional",
+          "C": "Because Sophia is from Boston",
+          "D": "Because Canva only supports serif"
+        },
+        "correct": "B",
+        "rationale": "El aprendiz debe conectar 'bakery is traditional' con 'serif fonts are good for traditional brands'."
+      },
+      {
+        "item": 4,
+        "type": "Inferencial",
+        "points": 1,
+        "stem_en": "If Sophia's next client was a tech startup, Andrés would probably use:",
+        "stem_es_support": "(Si el próximo cliente de Sophia fuera una startup tech, Andrés probablemente usaría:)",
+        "options": {
+          "A": "A serif font with warm colors",
+          "B": "A sans-serif font with cool colors",
+          "C": "No font at all",
+          "D": "Only CMYK printing"
+        },
+        "correct": "B",
+        "rationale": "Transferencia: tech = modern → sans-serif + cool colors."
+      },
+      {
+        "item": 5,
+        "type": "Vocabulario en contexto",
+        "points": 1,
+        "stem_en": "In the sentence 'Andrés opens a new canvas in Canva', the word 'canvas' means:",
+        "stem_es_support": "(En la oración 'Andrés opens a new canvas in Canva', la palabra 'canvas' significa:)",
+        "options": {
+          "A": "A type of fabric for painting",
+          "B": "The work area in design software",
+          "C": "A city in Colombia",
+          "D": "A color palette"
+        },
+        "correct": "B",
+        "rationale": "Aplicación directa del Toolbelt C4: 'canvas = the work area in design software'."
+      }
+    ],
+    "answer_key": ["B", "B", "B", "B", "B"],
+    "scoring_rubric": "Cada ítem correcto = 1 pt. Ítem incorrecto o en blanco = 0 pt. Total 5 pts.",
+    "cross_reference_to_e6": "Los 5 ítems de Reading del Cuestionario Consolidado S6 (PM-4.2) son VARIANTES de estos 5, no duplicados. Propósito: E1 = diagnóstico de dominio receptivo en S2; E6 = consolidación en S6."
+  },
+  "instrument_2_writing": {
+    "instrument_code": "INST-02",
+    "instrument_name_es": "Rúbrica analítica No 2 — Writing (Email de decisión de diseño)",
+    "instrument_name_en": "Analytic Rubric No 2 — Writing (Design decision email)",
+    "evidence_code": "E2",
+    "evidence_type_sena": "Producto",
+    "evaluation_technique": "Verificación del producto",
+    "points_total": 5,
+    "applied_in_session": 3,
+    "applied_in_phase_sena": "3.3 Apropiación",
+    "duration_minutes": 45,
+    "ambiente": "Aula bilingüe con laptops/papel. Producción individual del email.",
+    "source_activity_card": "pm-2-4.activity_card (Writing — Task-Based)",
+    "source_task": "Escribir email de decisión de diseño a Sophia (60-80 palabras), justificando elección de font + color + shape para el logo de La Esquina Bakery. 5 moves obligatorios: Greeting → Decision → Rationale → Next steps → Closing.",
+    "header_bilingual": {
+      "program": "Desarrollo de Medios Gráficos Visuales — Programa 522309",
+      "rap": "240202501-01",
+      "cefr": "A1.1",
+      "student_name_field": "Nombre del aprendiz / Learner's name: _______________________",
+      "date_field": "Fecha / Date: _______________",
+      "points": "5 puntos / 5 points",
+      "instruction_es": "El instructor verifica el email del aprendiz contra los 4 criterios de la rúbrica. Cada criterio se marca con nivel alcanzado (Excelente / Adecuado / Incipiente).",
+      "instruction_en": "The instructor checks the learner's email against the 4 rubric criteria. Each criterion receives one level (Excellent / Adequate / Incipient)."
+    },
+    "criteria": [
+      {
+        "criterion_code": "C1",
+        "criterion_name": "Format — 5 moves del género (Greeting + Decision + Rationale + Next steps + Closing)",
+        "points_max": 1.0,
+        "level_excellent_1pt": "Los 5 moves están presentes y en orden.",
+        "level_adequate_0_5pt": "4 de 5 moves presentes; orden mayormente correcto.",
+        "level_incipient_0pt": "3 moves o menos; estructura poco clara.",
+        "score_field": "_____ / 1.0"
+      },
+      {
+        "criterion_code": "C2",
+        "criterion_name": "Grammar — Gr1 (be) + Gr2 (pronouns/demos) + Gr3 (a/an) + Gr4 (adjective position)",
+        "points_max": 1.5,
+        "level_excellent_1_5pt": "Todas las estructuras objetivo usadas correctamente. Cero errores que afecten significado.",
+        "level_adequate_1pt": "Errores menores, pero el mensaje se entiende sin ambigüedad.",
+        "level_incipient_0pt": "Errores obscurecen el significado (ej: 'colors warm', 'the the email').",
+        "score_field": "_____ / 1.5"
+      },
+      {
+        "criterion_code": "C3",
+        "criterion_name": "Vocabulary — uso del Toolbelt (font + color + shape + product)",
+        "points_max": 1.5,
+        "level_excellent_1_5pt": "≥10 términos del Toolbelt usados con precisión. Incluye términos de las 5 categorías.",
+        "level_adequate_1pt": "7-9 términos; 1-2 imprecisiones menores.",
+        "level_incipient_0pt": "≤6 términos o usados incorrectamente.",
+        "score_field": "_____ / 1.5"
+      },
+      {
+        "criterion_code": "C4",
+        "criterion_name": "Clarity & Register — semi-formal + decisión clara",
+        "points_max": 1.0,
+        "level_excellent_1pt": "Tono semi-formal consistente; decisiones cristalinas.",
+        "level_adequate_0_5pt": "Mayormente semi-formal; decisiones mayormente claras.",
+        "level_incipient_0pt": "Registro inconsistente o decisiones ambiguas.",
+        "score_field": "_____ / 1.0"
+      }
+    ],
+    "total_field": "Total: _____ / 5.0",
+    "qualitative_feedback_field": "Retroalimentación cualitativa (qué funciona / qué mejorar):\n_______________________________________________\n_______________________________________________",
+    "cross_reference_to_e6": "5 ítems de Writing en Cuestionario E6 (PM-4.2) testean los mismos elementos receptivamente (reconocimiento), no productivamente."
+  },
+  "instrument_3_listening": {
+    "instrument_code": "INST-03",
+    "instrument_name_es": "Lista de Chequeo No 3 — Listening (Auditory Anchor)",
+    "instrument_name_en": "Checklist No 3 — Listening (Auditory Anchor)",
+    "evidence_code": "E3",
+    "evidence_type_sena": "Desempeño",
+    "evaluation_technique": "Observación",
+    "points_total": 5,
+    "applied_in_session": 4,
+    "applied_in_phase_sena": "3.3 Apropiación",
+    "duration_minutes": 35,
+    "ambiente": "Aula bilingüe con parlantes o auriculares. Audio reproducido 2 veces. Observación individual por instructor.",
+    "source_activity_card": "pm-2-6.activity_card (Listening — The Auditory Anchor)",
+    "source_content": "Audio: Laura (Creative Director) dicta a Andrés un mini-tutorial sobre la color wheel + re-refuerza brief de Sophia para La Esquina Bakery. Duración ~2:30 min. Contiene ≥10 detalles factuales y ≥5 términos Toolbelt.",
+    "header_bilingual": {
+      "program": "Desarrollo de Medios Gráficos Visuales — Programa 522309",
+      "rap": "240202501-01",
+      "cefr": "A1.1",
+      "student_name_field": "Nombre del aprendiz / Learner's name: _______________________",
+      "date_field": "Fecha / Date: _______________",
+      "points": "5 puntos / 5 points",
+      "instruction_es": "El instructor observa al aprendiz durante la escucha y post-listening. Marca con ✓ cada criterio cumplido. Cada ✓ vale 1 pt.",
+      "instruction_en": "The instructor observes the learner during listening and post-listening. Mark ✓ for each criterion met. Each ✓ = 1 pt."
+    },
+    "checklist_items": [
+      {
+        "item": 1,
+        "criterion": "Learner identifies main topic correctly (bakery brief + color wheel refresher)",
+        "points": 1,
+        "observable_evidence": "En la actividad post-listening 'What was this about?', el aprendiz menciona (a) brief de Sophia/bakery y (b) color wheel.",
+        "score_field": "☐ ✓ (1 pt)  ☐ ✗ (0 pt)"
+      },
+      {
+        "item": 2,
+        "criterion": "Learner extracts ≥8 of 10 factual details correctly",
+        "points": 1,
+        "observable_evidence": "En la hoja de note-taking, el aprendiz registra al menos 8 de los 10 detalles-objetivo (12 colores, warm/cool, Playfair Display, deadline Friday, etc.).",
+        "score_field": "☐ ✓ (1 pt)  ☐ ✗ (0 pt)"
+      },
+      {
+        "item": 3,
+        "criterion": "Learner applies warm/cool rule to 1 new case correctly",
+        "points": 1,
+        "observable_evidence": "En la tarea de transferencia (ej: 'Bank client = which palette?'), el aprendiz responde cool colors y puede justificar brevemente.",
+        "score_field": "☐ ✓ (1 pt)  ☐ ✗ (0 pt)"
+      },
+      {
+        "item": 4,
+        "criterion": "Learner recycles ≥5 Toolbelt terms in reconstruction or task output",
+        "points": 1,
+        "observable_evidence": "En el Reconstruct the Dialogue (Archetype E) o en la respuesta oral post-listening, el aprendiz produce al menos 5 términos Toolbelt (ej: font, warm, cool, logo, brief).",
+        "score_field": "☐ ✓ (1 pt)  ☐ ✗ (0 pt)"
+      },
+      {
+        "item": 5,
+        "criterion": "Learner participates actively in post-listening collaborative activity",
+        "points": 1,
+        "observable_evidence": "En el pair/group work post-listening, el aprendiz contribuye verbalmente al menos 2 veces (no observador silente).",
+        "score_field": "☐ ✓ (1 pt)  ☐ ✗ (0 pt)"
+      }
+    ],
+    "total_field": "Total: _____ / 5",
+    "observer_notes_field": "Notas de observación del instructor:\n_______________________________________________\n_______________________________________________",
+    "cross_reference_to_e6": "5 ítems de Listening en Cuestionario E6 (PM-4.2) son ítems impresos que testean recordación factual + inferencia + transferencia del mismo audio (o versión paralela)."
+  },
+  "instrument_4_speaking": {
+    "instrument_code": "INST-04",
+    "instrument_name_es": "Escala de Estimación No 4 — Speaking (Briefing simulado)",
+    "instrument_name_en": "Rating Scale No 4 — Speaking (Simulated Briefing)",
+    "evidence_code": "E4",
+    "evidence_type_sena": "Desempeño",
+    "evaluation_technique": "Observación",
+    "points_total": 5,
+    "applied_in_session": 4,
+    "applied_in_phase_sena": "3.3 Apropiación",
+    "duration_minutes": "3 min por aprendiz × N aprendices (en paralelo con otras actividades)",
+    "ambiente": "Aula con 2 sillas cara-a-cara. El instructor observa desde posición neutral. Cue card visible solo como Plan B (-1 pt máx).",
+    "source_activity_card": "pm-2-8.activity_card (Speaking — The Mission)",
+    "source_task": "El aprendiz asume rol de Junior Designer (como Andrés) y presenta 5 decisiones de diseño a un compañero que hace de Art Director (como Sophia). Duración objetivo: 3 minutos. Contenido: greeting + 5 decisiones + closing.",
+    "header_bilingual": {
+      "program": "Desarrollo de Medios Gráficos Visuales — Programa 522309",
+      "rap": "240202501-01",
+      "cefr": "A1.1",
+      "student_name_field": "Nombre del aprendiz / Learner's name: _______________________",
+      "partner_name_field": "Nombre del compañero / Partner's name: _______________________",
+      "date_field": "Fecha / Date: _______________",
+      "points": "5 puntos / 5 points",
+      "scale_note": "Escala: 2 = Logrado · 1 = En proceso · 0 = No logrado. Total posible = 10 pts. División /2 = puntaje final sobre 5."
+    },
+    "observation_criteria": [
+      {
+        "criterion_code": "C1",
+        "criterion_name": "Communicative effectiveness — partner understands ≥4 of 5 decisions without repetition",
+        "score_2_logrado": "Plena claridad; partner completa 5/5 slots sin pedir repetición.",
+        "score_1_en_proceso": "Mayormente claro; 4/5 slots completados con ≤1 repetición.",
+        "score_0_no_logrado": "Incompleto; ≤3/5 slots o ≥2 repeticiones necesarias.",
+        "score_field": "_____ / 2"
+      },
+      {
+        "criterion_code": "C2",
+        "criterion_name": "Vocabulary use — ≥6 Toolbelt terms correctly",
+        "score_2_logrado": "≥8 términos, todos precisos.",
+        "score_1_en_proceso": "6-7 términos, mayormente precisos.",
+        "score_0_no_logrado": "≤5 términos o mal uso frecuente.",
+        "score_field": "_____ / 2"
+      },
+      {
+        "criterion_code": "C3",
+        "criterion_name": "Grammar — Gr1 be + Gr3 a/an + Gr4 adjective position",
+        "score_2_logrado": "Sin errores significativos en estructuras objetivo.",
+        "score_1_en_proceso": "Errores menores pero significado preservado.",
+        "score_0_no_logrado": "Errores obscurecen el significado.",
+        "score_field": "_____ / 2"
+      },
+      {
+        "criterion_code": "C4",
+        "criterion_name": "Pronunciation — Survival Words + word stress correcto",
+        "score_2_logrado": "Todas las Survival Words (design, graphic, color, typography) pronunciadas claramente; stress correcto.",
+        "score_1_en_proceso": "Mayoría pronunciada; algunos errores de stress.",
+        "score_0_no_logrado": "Múltiples errores afectan inteligibilidad.",
+        "score_field": "_____ / 2"
+      },
+      {
+        "criterion_code": "C5",
+        "criterion_name": "Interaction & Pragmatics — greeting + closing + respuesta a follow-ups",
+        "score_2_logrado": "Interacción fluida; saluda + cierra; responde a ambos follow-ups del partner.",
+        "score_1_en_proceso": "Interacción funcional; 1 follow-up manejado.",
+        "score_0_no_logrado": "Interacción se rompe; sin cierre.",
+        "score_field": "_____ / 2"
+      }
+    ],
+    "raw_total_field": "Total crudo: _____ / 10",
+    "final_score_formula": "Final (crudo ÷ 2): _____ / 5",
+    "expected_errors_a1_1": [
+      "Gr4 reversal (colors warm)",
+      "a/an confusion",
+      "préstamos del español (brief = briefing)"
+    ],
+    "plan_b_if_learner_freezes": [
+      "Instructor da el primer chunk del Language Bank como prompt",
+      "Permitir 5 segundos de silencio antes de intervenir",
+      "Activar cue card visible (-1 pt máx del total)",
+      "Último recurso: convertir a pitch grabado asincrónico (Archetype C)"
+    ],
+    "observer_notes_field": "Notas del instructor (errores dominantes, fortalezas):\n_______________________________________________\n_______________________________________________"
+  },
+  "instrument_5_language_functions": {
+    "instrument_code": "INST-05",
+    "instrument_name_es": "Escala de Estimación No 5 — Language Functions (Role Carousel)",
+    "instrument_name_en": "Rating Scale No 5 — Language Functions (Role Carousel)",
+    "evidence_code": "E5",
+    "evidence_type_sena": "Desempeño",
+    "evaluation_technique": "Observación",
+    "points_total": 5,
+    "applied_in_session": 5,
+    "applied_in_phase_sena": "3.3 Apropiación",
+    "duration_minutes": "90 seg × 5 estaciones = 7.5 min por aprendiz en rotación",
+    "ambiente": "Aula organizada en 5 estaciones marcadas con mesas + rótulos. Observador fijo en cada estación (instructor rota o coloca co-facilitador). Posters visuales de chunks disponibles.",
+    "source_activity_card": "pm-2-9.activity_card (Language Functions — Communicative Competence) + role_carousel_design_for_e5_evidence",
+    "source_design": "Role Carousel = 5 estaciones temáticas × 90 segundos × rotación completa. Cada estación evalúa 1 función comunicativa (FUNC-1 a FUNC-5) en contexto Pixel & Ink Studio.",
+    "header_bilingual": {
+      "program": "Desarrollo de Medios Gráficos Visuales — Programa 522309",
+      "rap": "240202501-01",
+      "cefr": "A1.1",
+      "student_name_field": "Nombre del aprendiz / Learner's name: _______________________",
+      "date_field": "Fecha / Date: _______________",
+      "points": "5 puntos / 5 points (1 pt × 5 estaciones)",
+      "instruction_es": "El aprendiz rota por las 5 estaciones. En cada estación, ejecuta la función comunicativa indicada. El observador marca 1 pt si el aprendiz cumple los chunks obligatorios + conector requerido; 0 pt si no cumple.",
+      "instruction_en": "The learner rotates through the 5 stations. At each station, the learner executes the communicative function. The observer marks 1 pt if the learner produces the required chunks + connector; 0 pt otherwise."
+    },
+    "stations": [
+      {
+        "station": 1,
+        "criterion_code": "C1",
+        "function": "FUNC-1 SOCIALIZE",
+        "scenario": "First day welcome at Pixel & Ink Studio. Greet Sophia (Art Director) and 2 team members.",
+        "required_chunks": ["Good morning", "I am...", "Nice to meet you", "My program is..."],
+        "connector_required": "and",
+        "score_1pt_if": "Produce ≥3 de 4 chunks + usa 'and' al menos 1 vez correctamente.",
+        "score_0pt_if": "Produce ≤2 chunks o no usa el conector.",
+        "score_field": "☐ 1 pt  ☐ 0 pt"
+      },
+      {
+        "station": 2,
+        "criterion_code": "C2",
+        "function": "FUNC-2 IDENTIFY",
+        "scenario": "Sophia asks Andrés to identify 5 studio objects on the desk.",
+        "required_chunks": ["This is a...", "That is a...", "These are..."],
+        "connector_required": "and",
+        "score_1pt_if": "Identifica 5 objetos usando 'this/that/these' + 'a/an' correcto + conecta al menos 2 con 'and'.",
+        "score_0pt_if": "Identifica <4 objetos, o usa demostrativo incorrecto, o no usa conector.",
+        "score_field": "☐ 1 pt  ☐ 0 pt"
+      },
+      {
+        "station": 3,
+        "criterion_code": "C3",
+        "function": "FUNC-3 DESCRIBE",
+        "scenario": "Laura asks Andrés to describe the La Esquina Bakery logo to a pair.",
+        "required_chunks": ["It is...", "The color is...", "The font is..."],
+        "connector_required": "but OR because",
+        "score_1pt_if": "Produce ≥2 de 3 chunks + usa 'but' o 'because' al menos 1 vez con contenido coherente.",
+        "score_0pt_if": "Produce ≤1 chunk o sin conector.",
+        "score_field": "☐ 1 pt  ☐ 0 pt"
+      },
+      {
+        "station": 4,
+        "criterion_code": "C4",
+        "function": "FUNC-4 INSTRUCT",
+        "scenario": "Diego (Print Producer) asks Andrés to give 4 imperatives to save and export a file.",
+        "required_chunks": ["Open...", "Save...", "Click...", "Close..."],
+        "connector_required": "and",
+        "score_1pt_if": "Produce 4 imperativos en orden lógico de proceso + conecta al menos 2 con 'and'.",
+        "score_0pt_if": "Produce <3 imperativos, o usa forma incorrecta (ej: 'you save'), o sin conector.",
+        "score_field": "☐ 1 pt  ☐ 0 pt"
+      },
+      {
+        "station": 5,
+        "criterion_code": "C5",
+        "function": "FUNC-5 REPAIR + PREFER",
+        "scenario": "Don Pedro (cliente bakery) no comprende. Andrés pide aclaración 2 veces y expresa 1 preferencia.",
+        "required_chunks": ["Repeat please", "Sorry", "I like... because..."],
+        "connector_required": "because",
+        "score_1pt_if": "Produce 2 estrategias de repair + 1 preferencia con 'because' + contenido coherente.",
+        "score_0pt_if": "Menos de 2 estrategias de repair, o sin preferencia, o sin 'because'.",
+        "score_field": "☐ 1 pt  ☐ 0 pt"
+      }
+    ],
+    "total_field": "Total: _____ / 5",
+    "observer_notes_field": "Notas del observador (por estación si es necesario):\nS1: ______ S2: ______ S3: ______ S4: ______ S5: ______",
+    "cross_reference_to_e6": "Language Functions NO aparece como sección en Cuestionario Consolidado S6 (per pm-2-0 canon: Reading + Writing + Listening + Vocabulary + Grammar). E5 es exclusivamente desempeño observable aquí."
+  },
+  "consolidated_summary_for_instructor": {
+    "total_instrumentos": 5,
+    "total_puntos_fase_apropiacion": 25,
+    "instruments_map": [
+      {"session": 2, "evidence": "E1", "instrument": "Cuestionario No 1 — Reading", "pts": 5, "type": "Conocimiento"},
+      {"session": 3, "evidence": "E2", "instrument": "Rúbrica analítica No 2 — Writing", "pts": 5, "type": "Producto"},
+      {"session": 4, "evidence": "E3", "instrument": "Lista de Chequeo No 3 — Listening", "pts": 5, "type": "Desempeño"},
+      {"session": 4, "evidence": "E4", "instrument": "Escala de Estimación No 4 — Speaking", "pts": 5, "type": "Desempeño"},
+      {"session": 5, "evidence": "E5", "instrument": "Escala de Estimación No 5 — Language Functions", "pts": 5, "type": "Desempeño"}
+    ],
+    "s6_note": "En Sesión 6 el instructor aplica el CUESTIONARIO CONSOLIDADO (PM-4.2) que vale 25 pts adicionales y evalúa conocimiento receptivo acumulado de S2–S5.",
+    "final_mission_note": "En Sesiones 7–8 se realiza la MISIÓN FINAL (PM-3.5) que aporta los 5 pts restantes para completar el canon 55."
+  },
+  "validacion": {
+    "check_1_alignment_with_rap": "PASS — Los 5 instrumentos evalúan competencias declaradas en RAP 240202501-01 (reconocer elementos del lenguaje visual en inglés técnico).",
+    "check_2_pedagogical_coverage": "PASS — 5 habilidades comunicativas cubiertas: Reading (E1), Writing (E2), Listening (E3), Speaking (E4), Language Functions (E5).",
+    "check_3_evidence_typology_sena": "PASS — 1 Conocimiento + 1 Producto + 3 Desempeño, consistente con tipología SENA.",
+    "check_4_scoring_canon": "PASS — 5 instrumentos × 5 pts = 25 pts. Complementa PM-4.2 (25 pts) + Misión Final (5 pts) = 55 pts total.",
+    "check_5_universo_content": "PASS — Todos los instrumentos usan el universo Pixel & Ink Studio (Andrés + Sophia + Laura + Diego + Don Pedro + La Esquina Bakery). Ninguno copia contenido de DIESEL u otras guías.",
+    "check_6_instrument_numbering_canon": "PASS — Numeración corregida: Cuestionario No 1 (E1), Rúbrica No 2 (E2), Lista Chequeo No 3 (E3), Escala No 4 (E4), Escala No 5 (E5). Consistente con PM-4.1 DIESEL v2.1.",
+    "check_7_bilingual_headers": "PASS — Cada instrumento tiene instrucciones ES+EN y campos bilingües."
+  },
+  "siguiente_paso": "Generar pm-4-2.json (Cuestionario Consolidado E6 — 25 ítems). Luego revisión DOCX de los 3 artefactos (S1 piloto + PM-4.1 + PM-4.2)."
+}

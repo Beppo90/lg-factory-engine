@@ -1,0 +1,827 @@
+{
+  "run_id": "MGV-2026-04-20",
+  "pm_code": "PM-2.9",
+  "pm_name": "Language Functions & Communicative Competence",
+  "guia_numero": 1,
+  "guia_nombre_esp": "The Visual Communicator",
+  "rap_origen": "RAP 1 — Reconocer los fundamentos del diseño gráfico y comunicación visual básica aplicando vocabulario técnico en inglés A1.1",
+  "rap_codigo": "220501096-RAP1",
+  "cefr_level": "A1.1",
+  "session": 5,
+  "fase_sena": "Apropiación",
+  "generated_date": "2026-04-20",
+  "pipeline_version": "2.5.1",
+  "instructor": "Sergio Cortés Perdomo",
+
+  "pm0_anchor": {
+    "pm0_version": "v1.0 — CEFR Framework & FPI SENA Pedagogical Foundation",
+    "cefr_subnivel": "A1.1",
+    "pm0_sections_applied": [
+      "§5.1 ESP & realia técnica — funciones comunicativas del designer junior",
+      "§5.3 Input + output (funciones como puente entre entrada léxica y producción oral)",
+      "§5.4 Fluency vs accuracy — S5 privilegia fluency (post-task delayed feedback)",
+      "§5.6 Drilling & backchaining — frases fijas funcionales memorizadas",
+      "§5.8 Feedback diferenciado — fluency dominante + recast sutil en breakdowns",
+      "§5.9 Gestión del L1 — 12% (caídas sólo para meta-instrucción carousel + causal 'because')",
+      "§5.10 SUCCESS vocabulary — 10 chunks funcionales cerrando la apropiación",
+      "§5.13 Noticing del stress — 6 palabras stress marking (beCAUSE, exCUSE me, THANK you...)",
+      "§9.2 Grammar carga — Gr 15 (conectores) Intro + Gr 1-5, 14 Consolida",
+      "§9.1 L1 policy — S5 = 12% L1"
+    ],
+    "descriptores_cefr_activos": [
+      "A1.1 — Can introduce self and others with formulaic greetings",
+      "A1.1 — Can identify and name studio objects using 'this is / that is'",
+      "A1.1 — Can describe objects with basic adjectives (be + adjective)",
+      "A1.1 — Can give and follow simple imperative instructions",
+      "A1.1 — Can request clarification with fixed formulas (repeat please, again)",
+      "A1.1 — Can express basic preferences (I like + noun)",
+      "A1.1 — Can link 2 short sentences with and/but/or/because"
+    ]
+  },
+
+  "universe_anchor": {
+    "narrative_universe": "Pixel & Ink Studio — boutique design studio in Bogotá",
+    "characters_active_in_s5": [
+      "Sophia Vargas — Art Director (welcomes the junior designers, gives briefs)",
+      "Andrés Ruiz — Junior Designer (learner avatar, introduces self, asks for clarification)",
+      "Laura Méndez — Illustrator (describes tools + colors)",
+      "Diego López — Print Producer (gives instructions about files and paper)",
+      "Client — Don Pedro (La Esquina Bakery) enters briefly for scenario E"
+    ],
+    "scenarios_in_s5": [
+      "SCN-A: First day at the studio — introductions round",
+      "SCN-B: Morning briefing — Sophia names the materials of the day",
+      "SCN-C: Pair work — Andrés and Laura describe fonts and colors",
+      "SCN-D: Print workshop — Diego gives save/export instructions",
+      "SCN-E: Quick client intake — Don Pedro drops off reference and asks questions"
+    ]
+  },
+
+  "integration_all_archetypes_policy": {
+    "directive": "Quiero todos los arquetipos para todos los PM — compendio metodológico del instructor.",
+    "archetypes_integrated": ["A", "B", "C", "D", "E"],
+    "rationale_a11": "Los 5 arquetipos existen como OPCIONES del instructor. A1.1 requiere andamiaje alto, por lo que cada arquetipo se presenta con frases fijas + Language Bank + Micro-Cápsulas, en lugar de producción libre. El instructor elige un FLOW de rotación (ver abajo) para determinar cuál(es) arquetipo(s) ejecuta en la sesión real.",
+    "bloom_ceiling_a11": "L3 Apply máximo — ningún arquetipo exige analizar/evaluar/crear sin soporte."
+  },
+
+  "the_function_toolkit": {
+    "titulo": "The Studio Survival Functions — 5 families",
+    "description_bilingual": "Five function families from PM-1.2, packaged into 5 quiz sections. El aprendiz domina estas cinco familias y puede trabajar en el studio. *El aprendiz domina estas cinco familias y puede trabajar en el estudio.*",
+    "function_families": [
+      {
+        "family_id": "FUNC-1",
+        "name": "SOCIALIZING — Greetings & Self-Introduction",
+        "source_pm12": "Greetings and introductions + Giving personal information",
+        "exponents_fixed_phrases": [
+          "Good morning / Good afternoon / Hello",
+          "I am [Name]. I am a junior designer.",
+          "Nice to meet you.",
+          "What is your name?",
+          "My program is [program]. My shift is [morning/afternoon]."
+        ],
+        "stress_markers": ["GOOD MORning", "NICE to MEET you", "my NAME is..."],
+        "grammar_target": "Gr 1 (be) + Gr 2 (subject pronouns)",
+        "studio_micro_example": "SOPHIA: Good morning. Welcome to Pixel & Ink. | ANDRÉS: Hello, I am Andrés. I am a junior designer. Nice to meet you."
+      },
+      {
+        "family_id": "FUNC-2",
+        "name": "IDENTIFICATION — Naming Objects",
+        "source_pm12": "Naming and identifying objects in the design studio (This is a…, That is a…)",
+        "exponents_fixed_phrases": [
+          "This is a [object].",
+          "That is a [object].",
+          "These are [objects].",
+          "Is this a [object]? — Yes, it is. / No, it is not.",
+          "What is this? — It is a [object]."
+        ],
+        "stress_markers": ["THIS is a...", "WHAT is this?", "THAT is a..."],
+        "grammar_target": "Gr 2 (this/that) + Gr 3 (plural + a/an)",
+        "studio_micro_example": "LAURA: Look. This is a tablet. That is a stylus. These are sketchbooks.",
+        "studio_objects_active_20": [
+          "tablet", "stylus", "sketchbook", "pencil", "ruler",
+          "eraser", "palette", "canvas", "file", "folder",
+          "toolbar", "menu", "layer", "font", "color",
+          "logo", "poster", "flyer", "card", "screen"
+        ]
+      },
+      {
+        "family_id": "FUNC-3",
+        "name": "DESCRIPTION — Basic Adjectives",
+        "source_pm12": "Describing everyday design objects with basic adjectives",
+        "exponents_fixed_phrases": [
+          "It is [color/size/weight].",
+          "The font is [serif/sans-serif].",
+          "The color is [warm/cool].",
+          "It is big / small / thin / thick.",
+          "The logo is round and blue."
+        ],
+        "stress_markers": ["it is BIG", "it is BLUE", "the FONT is SErif"],
+        "grammar_target": "Gr 1 (be + adjective) + Gr 4 (adj position)",
+        "studio_micro_example": "ANDRÉS: The logo is round. The color is warm. The font is serif and big.",
+        "adjectives_active_15": [
+          "red", "blue", "yellow", "green", "black",
+          "big", "small", "thin", "thick", "round",
+          "square", "warm", "cool", "serif", "sans-serif"
+        ]
+      },
+      {
+        "family_id": "FUNC-4",
+        "name": "INSTRUCTIONS — Imperatives",
+        "source_pm12": "Following and giving simple workshop instructions",
+        "exponents_fixed_phrases": [
+          "Open the file.",
+          "Save the document.",
+          "Close the app.",
+          "Click on [button/menu].",
+          "Please [action]."
+        ],
+        "stress_markers": ["OPEN the...", "SAVE the...", "CLICK on..."],
+        "grammar_target": "Gr 5 (imperative, affirmative + please)",
+        "studio_micro_example": "DIEGO: Open the file. Save the document. Close the app. Please click on Export.",
+        "imperatives_active_12": [
+          "open", "save", "close", "click", "drag",
+          "print", "export", "cut", "copy", "paste",
+          "start", "finish"
+        ]
+      },
+      {
+        "family_id": "FUNC-5",
+        "name": "REPAIR & PREFERENCE — Clarification + Likes",
+        "source_pm12": "Asking for clarification + Expressing likes",
+        "exponents_fixed_phrases": [
+          "Repeat, please.",
+          "Again, please.",
+          "Sorry, I do not understand.",
+          "What is this?",
+          "I like [noun]. / I like blue. / I like serif fonts."
+        ],
+        "stress_markers": ["rePEAT pleASE", "aGAIN pleASE", "SOrry", "I LIKE..."],
+        "grammar_target": "Gr 5 (imperative: repeat) + Gr 1 (I am / I like)",
+        "studio_micro_example": "ANDRÉS: Sorry, I do not understand. Repeat, please. | SOPHIA: I said: save the file. | ANDRÉS: OK. I like blue and I like serif fonts.",
+        "repair_chunks_8": [
+          "repeat please", "again please", "sorry", "I do not understand",
+          "what is this", "I like", "I do not like", "thank you"
+        ]
+      }
+    ]
+  },
+
+  "connector_bridge_gr15": {
+    "intro_context": "Gr 15 (PM-0 §9.2 Intro for S5): connectors and / but / or / because + basic punctuation. Se introducen para enlazar los 5 exponentes funcionales en oraciones compuestas simples A1.1.",
+    "connectors_active": [
+      { "word": "and", "function": "addition", "stress": "AND (neutral)", "example": "I am Andrés AND I am a designer." },
+      { "word": "but", "function": "contrast", "stress": "BUT (stressed)", "example": "The font is big BUT the color is soft." },
+      { "word": "or", "function": "alternative", "stress": "OR (neutral)", "example": "Save the file OR close the app." },
+      { "word": "because", "function": "cause", "stress": "beCAUSE (2nd syllable)", "example": "I like Helvetica BECAUSE it is clean." }
+    ],
+    "pronunciation_focus": "backchaining 'because': 'cause → be-cause → BECAUSE'",
+    "visual_summary": "AND = + | BUT = ≠ | OR = / | BECAUSE = ←"
+  },
+
+  "the_5_archetypes": {
+    "archetype_a_information_exchange": {
+      "name": "ARCHETYPE A — Information Exchange",
+      "techniques_active": ["Spot the Difference", "Cause & Effect Graphic Organizer", "Expert Jigsaw"],
+      "functions_activated": ["FUNC-2 Identification", "FUNC-3 Description", "Gr 15 because (cause & effect)"],
+      "duration_minutes": 45,
+      "format": "pairs back-to-back + home groups",
+      "pre_function": {
+        "bilingual_unified": "Look at your Studio Card. *Mira tu Tarjeta de Estudio.*",
+        "setup": "Cada aprendiz recibe una tarjeta con 8 objetos del studio (tablet, stylus, font, logo, etc.). Las tarjetas del Aprendiz A y Aprendiz B tienen 5 diferencias (color, tamaño, forma).",
+        "review_exponents": "Revisa las frases fijas de FUNC-2 y FUNC-3 (2 minutos)."
+      },
+      "function_practice_spot_the_difference": {
+        "technique": "Spot the Difference",
+        "sequence": [
+          "1. Sit back-to-back with your partner (*Siéntate espalda con espalda con tu compañero*).",
+          "2. Student A describes: 'In my card, the logo is BIG and ROUND.' Student B compares: 'In my card, the logo is SMALL and SQUARE. Different!'",
+          "3. Find 5 differences in 8 minutes. Use only English. Use the chunks: 'In my card...', 'The X is Y', 'Different / Same'.",
+          "4. Pair reports to class: 'We found 5 differences. The logo is big in A but small in B.'"
+        ],
+        "ban_list_a11": ["NO Spanish during task", "NO pointing at partner's card", "NO gestures for colors"]
+      },
+      "function_practice_cause_effect": {
+        "technique": "Cause & Effect Graphic Organizer (Gr 15 because)",
+        "sequence": [
+          "Complete the 4-cell organizer: CAUSE → EFFECT using 'because'.",
+          "Example rows pre-filled:",
+          "  • Effect: 'I like Helvetica' ← Cause: 'it is clean' → Sentence: 'I like Helvetica BECAUSE it is clean.'",
+          "  • Effect: 'The color is warm' ← Cause: 'it is red and orange' → Sentence: 'The color is warm BECAUSE it is red and orange.'",
+          "Students generate 2 more rows using studio objects.",
+          "Verbalize aloud with stress on beCAUSE."
+        ]
+      },
+      "function_practice_expert_jigsaw": {
+        "technique": "Expert Jigsaw (mini A1.1 version)",
+        "sequence": [
+          "Expert Groups (4 students per group, 4 topics): TYPOGRAPHY / COLOR / TOOLS / COMPOSITION.",
+          "Each expert group masters 4 identification sentences about their topic (3 min).",
+          "Home Groups re-form (1 expert per topic).",
+          "Each expert teaches the other 3 using 'This is a...', 'It is...', 'Because...' (A1.1 fixed chunks). Time: 2 min per expert."
+        ]
+      },
+      "post_function_reflection": {
+        "question_bilingual": "Which chunk did you use the most? *¿Qué frase usaste más?*",
+        "self_rating_0_2": "0 = I did not use it | 1 = I used it with errors | 2 = I used it correctly.",
+        "target_chunks_checklist": ["This is a...", "It is [adj]", "I like... because..."]
+      },
+      "micro_capsule": "> 💬 **Function Rule:** 'because' answers WHY. It is stressed on the 2nd syllable: be-CAUSE.",
+      "plan_b": "Si solo 1 parte funciona: mantén Spot the Difference (es la más resistente a niveles mixtos A1.1)."
+    },
+
+    "archetype_b_persuasion_argumentation": {
+      "name": "ARCHETYPE B — Persuasion & Argumentation (A1.1 scaffolded)",
+      "techniques_active": ["Political Speech Writers Synthesis (adapted)", "AI-Powered Debates (ultra-light)", "Third Conditional Debate — NOT APPLICABLE at A1.1"],
+      "functions_activated": ["FUNC-3 Description", "FUNC-5 Preference (I like / I do not like)", "Gr 15 because"],
+      "duration_minutes": 40,
+      "a11_adaptation_warning": "A1.1 no puede persuadir con registro retórico. Se adapta a 'STUDIO PREFERENCE DEFENSE' — defender una elección de diseño con 2 razones causales.",
+      "pre_function": {
+        "bilingual_unified": "Choose one studio object. *Elige un objeto del estudio.*",
+        "setup": "Cada aprendiz elige 1 de 5 objetos (Helvetica font / Times New Roman font / Red color / Blue color / Round logo). Deberá defender por qué es la mejor elección para una cafetería (La Esquina Bakery)."
+      },
+      "function_practice_preference_defense": {
+        "technique": "Studio Preference Defense (Speech Writers adaptado A1.1)",
+        "sequence": [
+          "1. Fill the defense card: 'I recommend [object] for La Esquina Bakery. I like [object] because [reason 1] and [reason 2].'",
+          "2. Example model: 'I recommend Helvetica for La Esquina Bakery. I like Helvetica because it is clean AND it is modern.'",
+          "3. Each student delivers 30 seconds of defense to a partner.",
+          "4. Partner reacts with one of: 'I agree. It is [adjective].' / 'I do not agree. I like [alternative] more.'"
+        ],
+        "defense_sentence_frame": "I recommend ____. I like ____ because ____ and ____.",
+        "connectors_required": ["because (1x)", "and (1x)"]
+      },
+      "function_practice_ai_debate_light": {
+        "technique": "AI-Powered Debate (ULTRA-LIGHT A1.1)",
+        "sequence": [
+          "Optional — if technology available.",
+          "AI prompt: 'You are a client. Ask the student: What color is best for a bakery logo? React with 2 short questions in A1 English.'",
+          "Student defends with: 'I like [color] because [reason].' and answers 2 follow-ups.",
+          "Duration: 2 min per student."
+        ],
+        "a11_ai_rules": ["AI must use CEFR A1 output", "Max 5 words per AI turn", "Student can always respond 'Repeat please.'"]
+      },
+      "post_function_evaluation": {
+        "peer_rubric_3_items": [
+          "Did the defense have because? (0/1)",
+          "Did the defense have 2 reasons? (0/1)",
+          "Was it understandable? (0/1)"
+        ]
+      },
+      "micro_capsule": "> 💬 **Defense Rule:** At A1.1, persuasion = 1 preference + 1 because + 1 and. That is enough.",
+      "plan_b": "Si Arquetipo B se siente demasiado abstracto, colapsar a una sola 'like/don't like + because' ronda."
+    },
+
+    "archetype_c_social_interpersonal": {
+      "name": "ARCHETYPE C — Social & Interpersonal",
+      "techniques_active": ["Introduction Chain & Line-up", "Endless Complaints Game (adapted)", "Partner Paraphrasing Relay"],
+      "functions_activated": ["FUNC-1 Socializing", "FUNC-5 Repair (clarification)", "Gr 15 and / but"],
+      "duration_minutes": 45,
+      "pre_function": {
+        "bilingual_unified": "Stand up. Form a circle. *De pie. Formen un círculo.*",
+        "setup": "Toda la clase de pie en círculo. Sophia (rol del instructor) abre el 'First day at the studio'."
+      },
+      "function_practice_introduction_chain": {
+        "technique": "Introduction Chain",
+        "sequence": [
+          "1. Round 1 (2 min): Each student in order says: 'Good morning. I am [name]. I am a junior designer. Nice to meet you.'",
+          "2. Round 2 (3 min): Extend with one preference: '... and I like [color/font/tool].'",
+          "3. Round 3 (4 min): Chain memory — each student repeats the previous 2 students' preferences before adding their own. 'She is María and she likes blue. He is Juan and he likes Helvetica. I am Andrés and I like serif fonts.'",
+          "4. Line-up variant: re-order the class by 'month of birth' using 'My birthday is in [month]'."
+        ],
+        "backchaining_drill": "Backchain 'Nice to meet you': 'you → meet you → to meet you → Nice to meet you.'"
+      },
+      "function_practice_endless_complaints": {
+        "technique": "Endless Complaints (A1.1 adapted — Studio Problems)",
+        "sequence": [
+          "1. Pairs. Student A is JUNIOR DESIGNER. Student B is ART DIRECTOR.",
+          "2. Junior complaint cards (choose 1): 'The file is big.' / 'The font is small.' / 'The color is cold.' / 'The computer is slow.'",
+          "3. Art Director response card (fixed): 'Sorry. I can help. Open the menu and click on [option].'",
+          "4. Complete 4 rounds with role swap. Use 'but' to soften: 'The file is big, but I can try.'"
+        ],
+        "fixed_phrases_ban_paraphrase": "Los aprendices deben usar las frases fijas — no pueden reformular libremente (A1.1)."
+      },
+      "function_practice_paraphrasing_relay": {
+        "technique": "Paraphrasing Relay — Explain Like I'm 10 (A1.1 version)",
+        "sequence": [
+          "1. Target word hidden: 'tablet'.",
+          "2. Student A describes using FUNC-3 chunks WITHOUT saying 'tablet': 'It is black. It is thin. It is small. I draw on it.'",
+          "3. Student B guesses. If no guess, Student A adds: 'The screen is glass.'",
+          "4. Words to paraphrase: tablet / stylus / folder / menu / logo."
+        ],
+        "repair_chunks_active": ["Repeat please", "Again please", "Sorry, I do not understand"]
+      },
+      "post_function_reflection": {
+        "question_bilingual": "Which function was easiest? Which was hardest? *¿Qué función fue más fácil? ¿Cuál más difícil?*",
+        "target": "Acknowledge repair chunks ('Repeat please') as survival tools, not weakness."
+      },
+      "micro_capsule": "> 💬 **Social Rule:** Saying 'Repeat please' is NOT weakness. It is the number-one survival skill of A1.1 designers.",
+      "plan_b": "Si la energía baja, saltar directamente a Introduction Chain Round 3 (Chain Memory) — es el más lúdico."
+    },
+
+    "archetype_d_gamified": {
+      "name": "ARCHETYPE D — Gamified Functions",
+      "techniques_active": ["Digital Escape Room (adapted)", "AI-Powered Roleplay (A1 register)", "Survival Game — NOT APPLICABLE at A1.1"],
+      "functions_activated": ["FUNC-2 Identification", "FUNC-4 Instructions (imperatives)", "FUNC-5 Repair"],
+      "duration_minutes": 40,
+      "pre_function": {
+        "bilingual_unified": "You are trapped in the studio. The door closes in 10 minutes. *Están atrapados en el estudio. La puerta se cierra en 10 minutos.*",
+        "setup": "Narrativa de escape: 'Sophia left a puzzle. Solve 5 clues to get the key (a USB with the final logo).'"
+      },
+      "function_practice_escape_room": {
+        "technique": "Studio Escape Room — 5 clues map to FUNC-1→FUNC-5",
+        "clues": [
+          {
+            "clue_number": 1,
+            "function": "FUNC-1 Socializing",
+            "task": "Find the designer named 'Laura'. Introduce yourself correctly. She gives you clue 2.",
+            "pass_criterion": "'Good morning. I am [name]. Nice to meet you.' — 3 chunks correct.",
+            "fail_consequence": "-30 seconds on timer."
+          },
+          {
+            "clue_number": 2,
+            "function": "FUNC-2 Identification",
+            "task": "On the wall, 6 tools are unlabeled. Name them correctly in 60 seconds.",
+            "pass_criterion": "6/6 'This is a [tool]' sentences.",
+            "fail_consequence": "Laura gives a hint in English: 'Not brush. Think thin.'"
+          },
+          {
+            "clue_number": 3,
+            "function": "FUNC-3 Description",
+            "task": "Decode Sophia's note: 'The key is BIG, BLUE, and ROUND.' Find the matching object among 10.",
+            "pass_criterion": "Correct object found using 2 descriptors (A1.1 simplified).",
+            "fail_consequence": "Add adjective 'SERIF' as extra clue."
+          },
+          {
+            "clue_number": 4,
+            "function": "FUNC-4 Imperatives",
+            "task": "Follow Diego's audio instructions: 'Open the drawer. Take the red folder. Open the folder. Find the USB.'",
+            "pass_criterion": "All 4 actions executed in order.",
+            "fail_consequence": "Audio replays once. Only once."
+          },
+          {
+            "clue_number": 5,
+            "function": "FUNC-5 Repair + Preference",
+            "task": "Ask Sophia (instructor) 3 questions to finish: 'What is this? Repeat please. I like [X] or [Y]?'",
+            "pass_criterion": "Formulaic chunks used correctly.",
+            "fail_consequence": "No penalty — this is the reward stage."
+          }
+        ],
+        "win_condition": "All 5 clues solved → team receives printable 'Pixel & Ink Survivor Certificate'."
+      },
+      "function_practice_ai_roleplay": {
+        "technique": "AI Client Intake (ULTRA-A1)",
+        "sequence": [
+          "AI prompt: 'You are Don Pedro, client of La Esquina Bakery. Speak only in A1 English. Ask the designer: What is your name? What color do you like? Can you help me?'",
+          "Student roleplays as junior designer Andrés. Uses: Introduction + Description + Preference + 'I can help.'",
+          "Duration: 3 min per student. Max 5 exchanges."
+        ]
+      },
+      "post_function_debrief": {
+        "question_bilingual_1": "What function did you use without thinking? *¿Qué función usaste sin pensar?*",
+        "question_bilingual_2": "Did the clock help or block you? *¿El reloj te ayudó o te bloqueó?*",
+        "takeaway": "Under pressure, fixed phrases emerged automatically. This is fluency in birth."
+      },
+      "micro_capsule": "> 🎮 **Game Rule:** The escape room forces the chunks to come out. If you do not say 'Repeat please' you lose the clue. Survival = speaking.",
+      "plan_b": "Si no hay tiempo/recursos para escape room completo, ejecutar solo Clue 2 + Clue 4 (20 min total)."
+    },
+
+    "archetype_e_academic_discourse": {
+      "name": "ARCHETYPE E — Academic & Discourse (A1.1 proto-academic)",
+      "techniques_active": ["Mini Expert Jigsaw", "Studio Speech Writers (micro-synthesis)", "Socratic Seminar — NOT APPLICABLE at A1.1"],
+      "functions_activated": ["FUNC-2 Identification", "FUNC-3 Description", "Gr 15 and / but / because"],
+      "duration_minutes": 35,
+      "a11_adaptation_warning": "A1.1 no puede hacer discurso académico real. Se adapta a 'MICRO-SYNTHESIS' — sintetizar 3 fuentes (3 tarjetas) en un resumen oral de 30 segundos.",
+      "pre_function": {
+        "bilingual_unified": "Read 3 cards about Helvetica. *Lee 3 tarjetas sobre Helvetica.*",
+        "setup": "Cada equipo recibe 3 tarjetas A1.1 sobre un objeto (ej: Helvetica / Red color / Round logo). Cada tarjeta tiene 2 frases.",
+        "example_cards_helvetica": [
+          "Card 1: Helvetica is a sans-serif font. It is clean.",
+          "Card 2: Designers use Helvetica on posters. It is modern.",
+          "Card 3: Helvetica is on signs in the airport. It is big."
+        ]
+      },
+      "function_practice_micro_synthesis": {
+        "technique": "Studio Speech Writers — 30-second Micro-Synthesis",
+        "sequence": [
+          "1. Team reads 3 cards (2 min).",
+          "2. Team fuses cards into a 30-second speech using: 'Helvetica is a sans-serif font and it is clean. Designers use it on posters and signs. It is clean AND modern BECAUSE it is simple.'",
+          "3. One team member delivers the speech. Class listens.",
+          "4. Connectors required: and (2x) + because (1x)."
+        ],
+        "synthesis_frame": "[Object] is [type]. Designers use it [where]. It is [adj1] AND [adj2] BECAUSE it is [reason]."
+      },
+      "function_practice_mini_jigsaw": {
+        "technique": "Mini Expert Jigsaw (same as Archetype A but with academic framing)",
+        "sequence": [
+          "Expert Groups master 1 of 4 topics: FONT FAMILIES / COLOR TEMPERATURE / LOGO SHAPES / COMPOSITION.",
+          "Home Groups re-form. Each expert teaches using: 'This is [topic]. It has [element 1] AND [element 2]. It is important BECAUSE [reason].'",
+          "Peer rating (0-2): understandable / connectors used / fluent."
+        ]
+      },
+      "post_function_metadiscourse": {
+        "question_bilingual": "What did you synthesize? *¿Qué sintetizaste?*",
+        "prompt": "Complete: 'I synthesized 3 cards about ____. The main idea is: it is ____ AND ____ BECAUSE ____.'",
+        "meta_awareness": "Students notice they DID academic discourse — just in 30 seconds at A1.1."
+      },
+      "micro_capsule": "> 📚 **Academic Rule:** At A1.1, academic = 3 facts + 2 connectors + 1 because. That is a synthesis.",
+      "plan_b": "Si Arquetipo E se siente pesado, hacer solo micro-synthesis (el jigsaw ya se hizo en Arquetipo A)."
+    }
+  },
+
+  "rotation_flows_for_instructor": {
+    "directive_reminder": "El instructor ELIGE uno o combina. No se ejecutan los 5 en la misma sesión.",
+    "recommended_default": "FLOW-F1 (Social + Game) — A1.1 óptimo",
+    "flow_f1_social_game": {
+      "name": "FLOW-F1 — Social + Game (RECOMMENDED A1.1)",
+      "sequence": "Archetype C (Social) → Archetype D (Gamified)",
+      "duration_min": 90,
+      "target": "Máxima energía + memoria afectiva para fijar FUNC-1/2/4/5",
+      "when_to_choose": "Grupos principiantes, primera guía del programa, grupos tímidos"
+    },
+    "flow_f2_information_defense": {
+      "name": "FLOW-F2 — Information + Defense",
+      "sequence": "Archetype A (Information Exchange) → Archetype B (Persuasion)",
+      "duration_min": 90,
+      "target": "Activar descripción + comparación + razonamiento causal",
+      "when_to_choose": "Grupos con perfil más analítico / programas con componente teórico"
+    },
+    "flow_f3_academic_prep": {
+      "name": "FLOW-F3 — Academic Prep",
+      "sequence": "Archetype A (Jigsaw) → Archetype E (Micro-synthesis)",
+      "duration_min": 80,
+      "target": "Preparar para programas tecnológicos con componente EAP",
+      "when_to_choose": "Grupos que siguen a un nivel A2+ con escritura académica"
+    },
+    "flow_f4_evidence_laser": {
+      "name": "FLOW-F4 — Evidence Laser (para E5 directa)",
+      "sequence": "Archetype C (Introduction Chain Round 3) → Role Carousel (5 estaciones) + rúbrica E5",
+      "duration_min": 75,
+      "target": "Maximizar probabilidad de E5 aprobada en 1 sesión",
+      "when_to_choose": "Si la S5 es la única ventana para generar E5 con rúbrica"
+    },
+    "flow_f5_maximalist": {
+      "name": "FLOW-F5 — Maximalist (los 5 arquetipos en mini-dosis)",
+      "sequence": "Archetype A (10') → B (10') → C (15') → D (20') → E (10') + wrap-up (15')",
+      "duration_min": 80,
+      "target": "Paseo metodológico por las 5 familias de funciones",
+      "when_to_choose": "Grupos maduros con alta energía, última sesión antes de consolidación"
+    }
+  },
+
+  "role_carousel_design_for_e5_evidence": {
+    "description": "Role Carousel = instrumento canónico para E5. 5 estaciones × 90 segundos × rotación.",
+    "stations": [
+      {
+        "station": 1,
+        "name": "SOCIALIZE (FUNC-1)",
+        "scenario": "First day welcome. Greet Sophia and 2 team members.",
+        "required_chunks": ["Good morning", "I am...", "Nice to meet you", "My program is..."],
+        "connector_required": "and",
+        "observer_rubric_criterion": "C1 — Socializing accuracy (0/1 pt)"
+      },
+      {
+        "station": 2,
+        "name": "IDENTIFY (FUNC-2)",
+        "scenario": "Name 5 studio objects on the desk.",
+        "required_chunks": ["This is a...", "That is a...", "These are..."],
+        "connector_required": "and",
+        "observer_rubric_criterion": "C2 — Identification accuracy (0/1 pt)"
+      },
+      {
+        "station": 3,
+        "name": "DESCRIBE (FUNC-3)",
+        "scenario": "Describe the La Esquina Bakery logo to a pair.",
+        "required_chunks": ["It is...", "The color is...", "The font is..."],
+        "connector_required": "but or because",
+        "observer_rubric_criterion": "C3 — Description accuracy + connector (0/1 pt)"
+      },
+      {
+        "station": 4,
+        "name": "INSTRUCT (FUNC-4)",
+        "scenario": "Give 4 imperatives to save and export a file.",
+        "required_chunks": ["Open...", "Save...", "Click...", "Close..."],
+        "connector_required": "and",
+        "observer_rubric_criterion": "C4 — Imperative sequencing (0/1 pt)"
+      },
+      {
+        "station": 5,
+        "name": "REPAIR + PREFER (FUNC-5)",
+        "scenario": "Ask clarification twice + express 1 preference.",
+        "required_chunks": ["Repeat please", "Sorry", "I like... because..."],
+        "connector_required": "because",
+        "observer_rubric_criterion": "C5 — Repair + preference + because (0/1 pt)"
+      }
+    ],
+    "total_pts": 5,
+    "rubric_instrument_reference": "Escala de estimación No 5 — Language Functions (derivada por PM-4.1)"
+  },
+
+  "language_bank_consolidated": {
+    "total_chunks": 40,
+    "chunks_by_function": {
+      "FUNC-1": ["Good morning", "Hello", "I am [name]", "I am a junior designer", "Nice to meet you", "What is your name", "My program is...", "My shift is..."],
+      "FUNC-2": ["This is a...", "That is a...", "These are...", "Is this a...?", "Yes, it is", "No, it is not", "What is this?", "It is a..."],
+      "FUNC-3": ["It is [color]", "It is [size]", "The color is...", "The font is...", "It is big and round", "It is small but clean", "The logo is..."],
+      "FUNC-4": ["Open the...", "Save the...", "Close the...", "Click on...", "Please [action]", "Start the...", "Finish the..."],
+      "FUNC-5": ["Repeat please", "Again please", "Sorry", "I do not understand", "What is this?", "I like...", "I do not like...", "Thank you", "You are welcome", "OK"]
+    },
+    "connectors": ["and", "but", "or", "because"]
+  },
+
+  "success_vocabulary_anchor": {
+    "pm0_section": "§5.10 SUCCESS factors",
+    "target_10_chunks": [
+      "excuse me", "thank you", "welcome", "please", "sorry",
+      "can you repeat", "again", "right", "wrong", "finished"
+    ],
+    "success_factors_application": {
+      "Salience": "Capitalized stress markers on teacher board + physical gestures (hand up for 'Repeat please')",
+      "Use": "Every station forces at least 2 uses per chunk",
+      "Connection": "Each chunk linked to a scenario character (Sophia = welcomes, Don Pedro = excuses, Diego = finished)",
+      "Context": "100% in Pixel & Ink studio scenarios",
+      "Emotion": "Escape Room pressure + laughter in Introduction Chain Round 3",
+      "Spaced_repetition": "Chunks from S1-S4 re-cycled in every archetype",
+      "Synergy": "Chunks of FUNC-1 combine with FUNC-5 (greet → ask to repeat → thank you)"
+    }
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.9",
+    "pm_name": "Language Functions & Communicative Competence",
+    "session": 5,
+    "phase_sena": "Apropiación",
+    "rap_id": "220501096-RAP1",
+    "activities": [
+      {
+        "number": 1,
+        "type": "procedimental",
+        "statement": "Ejecutar 5 funciones comunicativas del designer junior (Socializing, Identification, Description, Instructions, Repair + Preference) en escenarios del Pixel & Ink Studio usando frases fijas + conectores and/but/or/because.",
+        "didactic_strategy": "Juego de roles + Simulación rotativa (Role Carousel)",
+        "didactic_technique": "Dramatización + Think-Pair-Share + Introduction Chain + Spot the Difference"
+      },
+      {
+        "number": 2,
+        "type": "procedimental",
+        "statement": "Reflexionar sobre el uso autónomo de funciones comunicativas identificando qué chunks se producen automáticamente bajo presión y cuáles requieren más práctica, a partir de la experiencia del Role Carousel.",
+        "didactic_strategy": "Aprendizaje colaborativo + reflexión metacognitiva",
+        "didactic_technique": "Panel discussion + self-rating 0-2 + Exit ticket"
+      }
+    ],
+    "hours": {
+      "direct": 2.0,
+      "autonomous": 0.5,
+      "rationale": "PM-2.9 es el único PM protagónico de S5 (Sesión 5 total = 6h directas + 1.5h autónomas). Se asignan 2.0h directas a PM-2.9 incluyendo Role Carousel + E5 evidence + reflexión. Las 4.0h restantes de la sesión cubren Gr 15 connector awareness, revisión consolidada Gr 1-5, 14, homework instructions, y cierre S5→S6."
+    },
+    "evidence": {
+      "generates_evidence": true,
+      "code": "E5",
+      "name": "Language Functions — Competencia Comunicativa Integrada",
+      "type": "Desempeño",
+      "description": "El aprendiz ejecuta 5 funciones comunicativas en 5 estaciones del Role Carousel (Pixel & Ink Studio), empleando frases fijas apropiadas, al menos 3 conectores (and/but/or/because) y be + adjetivo con precisión A1.1.",
+      "evaluation_technique": "Observación",
+      "instrument_number": 5,
+      "instrument_type": "Escala de estimación",
+      "instrument_name": "Escala de estimación No 5 — Language Functions (5 criterios × 1 pt)",
+      "puntaje_total": 5,
+      "peso_canon_55": "5/55 pts"
+    },
+    "environment": {
+      "type": "Aula",
+      "configuration": "5 estaciones separadas (Role Carousel) + cronómetro visible + connector wall + function cards display",
+      "materials": [
+        "Function cards (5 sets de 8 cards) — FUNC-1 a FUNC-5 con exponents + stress markers",
+        "Role Carousel handout (5 estaciones) — scenario + required chunks + connector hint",
+        "Connector wall printables (and/but/or/because) con ejemplos de S2-S4",
+        "Studio Cards for Spot the Difference (40 cards — 20 pairs A/B con 5 diferencias c/u)",
+        "Cause & Effect Graphic Organizer (A4 print, 4 cells)",
+        "Escape Room kit (5 clues + USB dummy + Survivor Certificate template)",
+        "Language Bank poster (40 chunks categorizados por FUNC-1 a FUNC-5)",
+        "Rúbrica E5 impresa (5 criterios × 0-1-2)",
+        "Grabadora de audio opcional (para revisión posterior)"
+      ],
+      "instructors": "Instructor de inglés técnico (titular) + Técnico especialista (opcional para SCN-E Cliente)"
+    },
+    "contributes_to_consolidated_quiz": false,
+    "quiz_skill": null,
+    "quiz_points": 0,
+    "quiz_item_count": 0,
+    "quiz_alignment_pm20": "PASS — pm-2-0.cuestionario_preview.secciones para MGV G1 son: Reading + Writing + Listening + Vocabulary + Grammar (5 secciones × 5 items × 1pt = 25 pts). Language Functions NO está en el cuestionario — se evalúa vivo como E5 Desempeño 5 pts via Escala de estimación No 5 (Role Carousel). Alineado con master prompt PM-2.9 frontmatter (contributes_to_cuestionario: false).",
+    "quiz_correction_2026_04_20": "Corrección vs borrador previo: se pasó de Language Functions 5 pts/5 items (supuesto canon DIESEL) a 0/0 (canon MGV donde Vocabulary reemplaza Language Functions en E6). La evaluación de Language Functions queda íntegramente en E5 (5 pts live).",
+    "live_rubric_preview_note": "Los items abajo NO son items del Cuestionario Consolidado E6 (Language Functions no contribuye a E6 en canon MGV). Se conservan como GUÍA DE VERIFICACIÓN en vivo para el Role Carousel: 5 prompts que el observador usa para validar dominio funcional en cada estación (0/1/2 por ítem alimenta la Escala de estimación No 5 de E5).",
+    "live_verification_prompts": [
+      {
+        "item_number": 1,
+        "family": "FUNC-1",
+        "type": "multiple choice",
+        "stem": "Complete: 'Good morning. ___ Andrés. I am a junior designer.'",
+        "options": ["A) I am", "B) He is", "C) You is", "D) My is"],
+        "correct": "A",
+        "bloom": "L2 Understand"
+      },
+      {
+        "item_number": 2,
+        "family": "FUNC-2",
+        "type": "gap fill",
+        "stem": "Look at the image of a stylus. Write the sentence: '____ a stylus.'",
+        "correct": "This is",
+        "bloom": "L3 Apply"
+      },
+      {
+        "item_number": 3,
+        "family": "FUNC-3",
+        "type": "matching",
+        "stem": "Match each studio object with 2 correct adjectives. (1 pt = 2/2 correct matches)",
+        "pairs": [
+          "Helvetica font ↔ [clean, modern]",
+          "Red color ↔ [warm, strong]",
+          "Round logo ↔ [big, smooth]"
+        ],
+        "bloom": "L3 Apply"
+      },
+      {
+        "item_number": 4,
+        "family": "FUNC-4",
+        "type": "sequencing",
+        "stem": "Put the instructions in order: (a) Save the file. (b) Open the app. (c) Export the logo. (d) Close the app.",
+        "correct": "b-a-c-d",
+        "bloom": "L3 Apply"
+      },
+      {
+        "item_number": 5,
+        "family": "FUNC-5",
+        "type": "short answer",
+        "stem": "A designer says something you do not understand. Write 2 chunks you can use:",
+        "correct": "Acceptable answers: Repeat please / Again please / Sorry, I do not understand / What is this? (any 2)",
+        "bloom": "L3 Apply"
+      }
+    ]
+  },
+
+  "pm0_protocol_session_level": {
+    "grammar_groups": {
+      "intro": [
+        {
+          "code": "Gr 15",
+          "name": "Connectors and/but/or/because + basic punctuation",
+          "activation": "Intro",
+          "exponents": ["and (+)", "but (≠)", "or (/)", "because (←)"],
+          "stress_focus": "beCAUSE stressed on 2nd syllable"
+        }
+      ],
+      "consolida": [
+        { "code": "Gr 1", "name": "be (am/is/are) — all patterns S2-S4", "activation": "Consolida" },
+        { "code": "Gr 2", "name": "subject pronouns + this/that/these + possessive 's", "activation": "Consolida" },
+        { "code": "Gr 3", "name": "plurals + a/an", "activation": "Consolida" },
+        { "code": "Gr 4", "name": "adjective position before noun", "activation": "Consolida" },
+        { "code": "Gr 5", "name": "imperative (affirmative + please)", "activation": "Consolida" },
+        { "code": "Gr 14", "name": "preposition IN (place/time)", "activation": "Consolida" }
+      ],
+      "aplica": [],
+      "carga_check": "1 Intro (Gr 15) ≤ 2 → PASS PM-0 §9.2"
+    },
+    "feedback": {
+      "dominant_mode": "MIXTO (fluency dominante)",
+      "fluency_techniques": [
+        "Post-task delayed feedback with board notes (compile 3-5 typical errors after Carousel, discuss at wrap-up)",
+        "Reformulation in wrap-up via 'reformulated summary' of student utterances"
+      ],
+      "accuracy_techniques": [
+        "Recast sutil en breakdowns communicativos (solo si paran la comunicación)",
+        "Clarification request via gesture ('?') antes de corrección explícita"
+      ]
+    },
+    "l1_management": {
+      "l1_percentage_target": 12,
+      "english_zone_status": "ACTIVE",
+      "legitimate_l1_uses": [
+        "Meta-instruction for Role Carousel (15 seconds at the start)",
+        "Clarification of 'because' as causal connector (30 seconds)",
+        "Emergency check for understanding of rubric E5 criteria (no more than 20 sec)"
+      ],
+      "reduction_strategy": "From S4 (15%) → S5 (12%): L1 only at transitions, never inside a role station"
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        { "word": "beCAUSE", "ipa": "/bɪˈkɔːz/", "technique": "backchaining 'cause → be-cause → because'" },
+        { "word": "exCUSE me", "ipa": "/ɪkˈskjuːz mi/", "technique": "clapping on CUSE" },
+        { "word": "THANK you", "ipa": "/θæŋk juː/", "technique": "link 'thank' + 'you' with /k-j/ liaison" },
+        { "word": "AND", "ipa": "/ænd/ or /ən/", "technique": "weak vs strong form contrast" },
+        { "word": "BUT", "ipa": "/bʌt/", "technique": "sentence-final stress" },
+        { "word": "OR", "ipa": "/ɔːr/", "technique": "neutral in choice questions" },
+        { "word": "rePEAT", "ipa": "/rɪˈpiːt/", "technique": "stress 2nd syllable" }
+      ],
+      "board_marking_convention": "Stressed syllable in CAPITAL LETTERS + UNDERLINE (e.g., beCAUSE)"
+    },
+    "success_vocabulary": {
+      "target_terms": [
+        "excuse me", "thank you", "welcome", "please", "sorry",
+        "can you repeat", "again", "right", "wrong", "finished"
+      ],
+      "success_factors_applied": {
+        "Salience": "Language Bank poster + color-coded by function family",
+        "Use": "Minimum 2 uses per chunk per Role Carousel rotation",
+        "Connection": "Each chunk anchored to a character of Pixel & Ink Studio",
+        "Context": "All chunks lived inside 5 studio scenarios",
+        "Emotion": "Gamified via Escape Room + Introduction Chain Round 3",
+        "Spaced_repetition": "Chunks from S1 (greetings) → S2 (colors) → S3 (describing) → S4 (imperatives) → now consolidated",
+        "Synergy": "Chunks combine across functions (Greeting + Repair + Thank you = natural exchange)"
+      }
+    }
+  },
+
+  "wrap_up_s5_autonomous_learning_check": {
+    "pm29_master_prompt_component": "Wrap-up / Review & Autonomous Learning Check (from PM-2.9 master prompt)",
+    "duration_minutes": 20,
+    "placement": "Final 20 minutes of S5 — after E5 evidence collection",
+    "structure": [
+      {
+        "step": 1,
+        "activity": "Function Family Recap — Language Bank wall review",
+        "duration": 5,
+        "task": "Classes walks by the Language Bank poster. Each student points to ONE chunk they used today and says: 'I used [chunk]. It was easy / difficult.'"
+      },
+      {
+        "step": 2,
+        "activity": "Autonomous Capability Self-Rating",
+        "duration": 5,
+        "task": "Exit ticket: for each of 5 functions, student rates (0/1/2): 'Can I do it alone?' — 0=No / 1=With help / 2=Alone."
+      },
+      {
+        "step": 3,
+        "activity": "S6 Consolidation Preview",
+        "duration": 5,
+        "task": "Teacher: 'Tomorrow is the GREAT CONSOLIDATION. The test has 5 sections: Reading + Writing + Listening + Language Functions + Grammar. 25 points total. Plus E5 Language Functions (you already got it today) = 5 points. Bring your portfolio.'"
+      },
+      {
+        "step": 4,
+        "activity": "Autonomous Homework — Video 90s",
+        "duration": 5,
+        "task": "Record 90-second video at home: 'Hello. I am [name]. I am a junior designer at Pixel & Ink Studio. My favorite tool is ____ because ____. My favorite color is ____ and ____. Thank you.' Submit via Google Classroom before S6."
+      }
+    ],
+    "purpose": "Cerrar el ciclo de apropiación (S2-S5) y preparar psicológicamente al aprendiz para el Cuestionario Consolidado S6. Transferir la metacognición ('¿qué puedo hacer solo?') como predictor de éxito evaluativo."
+  },
+
+  "validacion": {
+    "pm0_traceability": {
+      "cefr_alignment_a11": "PASS — todos los exponents, chunks y archetypes adaptados al techo A1.1",
+      "pm0_sections_covered": "§5.1, §5.3, §5.4, §5.6, §5.8, §5.9, §5.10, §5.13, §9.1, §9.2 — PASS",
+      "grammar_carga_check": "1 Intro (Gr 15) ≤ 2 → PASS",
+      "l1_percentage_check": "12% → PASS (progresión S4=15% → S5=12%)",
+      "stress_pronunciation_focus": "7 focus words with IPA + techniques → PASS",
+      "success_factors_all_7": "Salience / Use / Connection / Context / Emotion / Spaced_repetition / Synergy → PASS"
+    },
+    "integration_all_archetypes": {
+      "archetype_a": "INTEGRATED — Spot the Difference + Cause & Effect + Mini Jigsaw",
+      "archetype_b": "INTEGRATED — Preference Defense + AI Debate Light (Third Conditional marked N/A for A1.1)",
+      "archetype_c": "INTEGRATED — Introduction Chain + Endless Complaints + Paraphrasing Relay",
+      "archetype_d": "INTEGRATED — Escape Room + AI Roleplay (Survival Game marked N/A for A1.1)",
+      "archetype_e": "INTEGRATED — Mini Synthesis + Jigsaw (Socratic marked N/A for A1.1)",
+      "total_archetypes": 5,
+      "rotation_flows_provided": 5,
+      "status": "PASS — compendium completo respetando ceiling A1.1"
+    },
+    "universe_originality_v23": {
+      "rule": "Rule v2.3 — contenido original por guía",
+      "content_origin": "G1 Visual Communicator universe — Pixel & Ink Studio / Sophia / Andrés / Laura / Diego / Don Pedro (La Esquina Bakery)",
+      "scenario_family_count": 5,
+      "chunks_language_bank_total": 40,
+      "studio_objects_20_from_pm25": "PASS — aligned with PM-2.5 toolbelt",
+      "byte_identical_check": "PASS — no copy from DIESEL G1-G2 or other MGV guide"
+    },
+    "evidence_e5_rubric_alignment": {
+      "5_criteria_defined": "PASS — C1 Socializing + C2 Identification + C3 Description + C4 Imperatives + C5 Repair/Preference",
+      "total_pts": "5 × 1 pt = 5 pts (canon 55)",
+      "instrument": "Escala de estimación No 5 (PM-4.1 derivador)",
+      "carousel_stations_5": "PASS — each station = 1 criterion"
+    },
+    "cuestionario_consolidado_contribution": {
+      "override_canonical": "Language Functions contributes 5 pts (Section 4 of 5) to E6 Cuestionario Consolidado",
+      "5_items_preview_provided": "PASS",
+      "quiz_item_types": ["multiple choice", "gap fill", "matching", "sequencing", "short answer"],
+      "bloom_range": "L2-L3 A1.1 appropriate"
+    },
+    "bilingual_unified_compliance": "PASS — instructions pattern 'English sentence (*traducción cursiva*)' used throughout, no repetitive 'Instrucciones' blocks",
+    "micro_capsules_present": "PASS — 5 Micro-Capsules (one per archetype)",
+    "zero_meta_talk_compliance": "PASS — no 'as this section shows' / 'in the following activity' meta-references"
+  },
+
+  "siguiente_paso": {
+    "next_pm": "PM-2.11 — GFPI-F-134 Row Assembler",
+    "next_pm_input_ready": [
+      "Activity Cards from PM-2.1 (pm-2-1.json)",
+      "Activity Cards from PM-2.2 (pm-2-2.json)",
+      "Activity Cards from PM-2.3 (pm-2-3.json)",
+      "Activity Cards from PM-2.4 (pm-2-4.json)",
+      "Activity Cards from PM-2.5 (pm-2-5.json)",
+      "Activity Cards from PM-2.6 (pm-2-6.json)",
+      "Activity Cards from PM-2.8 (pm-2-8.json)",
+      "Activity Cards from PM-2.9 (pm-2-9.json — this file)",
+      "Activity Cards from PM-2.10 (pm-2-10.json)",
+      "Columns 1-5 GFPI-F-134 from PM-1.2 (pm-1-2.json bloque_B)",
+      "Session Blueprint from PM-2.0 (pm-2-0.json)"
+    ],
+    "pm211_deliverable": "Fila GFPI-F-134 completa y validada (11 columnas) + Validation Report ejecutando CHECK 1 (alineación Comp↔RAP↔Criterios), CHECK 2 (cobertura saberes), CHECK 5 (coherencia arquetipos), CHECK 7 (alineación evidencias↔instrumentos)",
+    "directive_reminder": "Sergio governing directive: 'LOS ARQUETIPOS DE ACTIVIDADES DE CADA UNA DE LAS PM2.X LOS QUIERO ELEGIR YO' + 'Quiero todos los arquetipos para todos los PM' — PM-2.11 debe respetar que las Activity Cards contienen los 5 arquetipos integrados como compendio metodológico, sin forzar la elección de uno solo."
+  }
+}

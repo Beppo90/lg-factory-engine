@@ -1,3 +1,16 @@
+---
+version: 2.0
+last_verified: 2026-04-13
+session: 3
+fase_sena: "Apropiación"
+activity_type: "cognitiva"
+generates_evidence: false
+evidence_type: null
+contributes_to_cuestionario: true
+cuestionario_skill: "Grammar"
+cuestionario_points: 5
+---
+
 # PM-2.10: STRUCTURE USE & GRAMMAR — INDUCTIVE TO AUTOMATIC
 
 ## FPI SENA — Bilingüismo
@@ -374,6 +387,68 @@ E) EDITING & ERROR ANALYSIS — Corregir y auto-corregir (Peer Review, Error Ana
 | **Alimenta a** | PM-4.2 | Grammar targets del cuestionario |
 | **Alimenta a** | PM-2.10 examen | Grammar targets del examen final |
 | **Se ubica en** | GFPI-F-135 Sección 3.3-3.4 | Apropiación/Transferencia |
+
+---
+
+## NOTA SOBRE SCAFFOLDING
+
+PM-2.10 es una **actividad de scaffolding** — NO genera evidencia formal de evaluación, pero sus ítems se cosechan para el cuestionario consolidado de S6. 
+
+El propósito de PM-2.10 es garantizar que los aprendices comprendan y automaticen las estructuras gramaticales del RAP, de modo que puedan usarlas con precisión en las actividades procedimentales (Conjuntos A y B). La gramática en este sistema es **sierva del contenido y las funciones comunicativas**, no el fin en sí mismo.
+
+---
+
+## ACTIVITY CARD OUTPUT
+
+Esta sección define el output estructurado que este PM entrega al PM-2.11 (GFPI-F-134 Row Assembler).
+
+```yaml
+activity_card:
+  pm_id: "PM-2.10"
+  pm_name: "Grammar — Structure Use"
+  session: 3
+  phase_sena: "Apropiación"
+  rap_id: "[A GENERAR — viene del Session Blueprint PM-2.0]"
+  
+  activities:
+    - number: 1
+      type: "cognitiva"
+      statement: "[A GENERAR — Descubrir y formular regla gramatical por inducción]"
+      didactic_strategy: "Aprendizaje basado en descubrimiento"
+      didactic_technique: "Investigación guiada"
+    
+    - number: 2
+      type: "cognitiva"
+      statement: "[A GENERAR — Automatizar estructura mediante práctica controlada]"
+      didactic_strategy: "Aprendizaje basado en tareas"
+      didactic_technique: "Taller"
+  
+  hours:
+    direct: 1.0
+    autonomous: 0.5
+  
+  evidence:
+    generates_evidence: false
+    type: null
+    description: ""
+    evaluation_technique: null
+    instrument_number: null
+    instrument_type: null
+  
+  environment:
+    type: "Aula"
+    materials:
+      - "Plantilla THE SYNTAX BLUEPRINT (impresa y digital)"
+      - "Master Anchor Text con estructuras destacadas"
+      - "Tarjetas de drill gramatical"
+      - "Computadores para práctica en línea (Duolingo, Grammarly)"
+    instructors: "Instructor de inglés"
+  
+  contributes_to_consolidated_quiz: true
+  quiz_skill: "Grammar"
+  quiz_points: 5
+  quiz_item_count: 5
+```
 
 ---
 

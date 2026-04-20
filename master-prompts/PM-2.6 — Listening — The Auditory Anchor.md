@@ -1,3 +1,16 @@
+---
+version: 2.0
+last_verified: 2026-04-13
+session: 4
+fase_sena: "Apropiación"
+activity_type: "procedimental"
+generates_evidence: true
+evidence_type: "Desempeño"
+contributes_to_cuestionario: true
+cuestionario_skill: "Listening"
+cuestionario_points: 5
+---
+
 # PM-2.6: LISTENING COMPREHENSION — THE AUDITORY ANCHOR
 
 ## FPI SENA — Bilingüismo
@@ -519,10 +532,76 @@ F) MULTIMEDIA PRODUCTION — Podcasts, interviews, sound design, spin-offs
 | **Recibe input de** | PM-1.2 | Story B, vocabulario, grammar targets |
 | **Recibe input de** | PM-2.3 | Master Anchor Text (para NO repetir género) |
 | **Recibe input de** | PM-2.5 | Toolbelt consolidado (para reciclar en oral) |
-| **Alimenta a** | PM-2.7 | Los fonemas y patrones del audio alimentan la pronunciación |
-| **Alimenta a** | PM-2.8 | Los chunks del audio alimentan la producción oral |
+| **Alimenta a** | PM-2.8 | Los chunks, fonemas y patrones del audio alimentan la producción oral y el scaffolding de pronunciación (integrado en PM-2.8 desde v2.0 — antes PM-2.7, deprecado) |
 | **Se relaciona con** | PM-4.2 | Referencia de género textual para crear paralelo |
 | **Se ubica en** | GFPI-F-135 Sección 3.3 | Apropiación |
+
+---
+
+## PRINCIPIO DE TRES VERSIONES
+
+PM-2.6 genera todas las variantes de la tarea de listening:
+
+1. **Listening task de S4 (evidencia de desempeño):** El script de audio original y las actividades de comprensión con feedback formativo.
+2. **Ítems cosechados para el cuestionario S6:** Preguntas similares pero diferentes, derivadas del mismo audio técnico.
+3. **Ítems del Workbook:** Actividades de refuerzo con audio similar en contexto diferente, para práctica independiente.
+
+Todas las variantes mantienen el mismo vocabulario central y patrones prosódicos, asegurando validez de la evaluación.
+
+---
+
+## ACTIVITY CARD OUTPUT
+
+Esta sección define el output estructurado que este PM entrega al PM-2.11 (GFPI-F-134 Row Assembler).
+
+```yaml
+activity_card:
+  pm_id: "PM-2.6"
+  pm_name: "Listening — The Auditory Anchor"
+  session: 4
+  phase_sena: "Apropiación"
+  rap_id: "[A GENERAR — viene del Session Blueprint PM-2.0]"
+  
+  activities:
+    - number: 1
+      type: "procedimental"
+      statement: "[A GENERAR — Comprensión de contenido oral técnico en inglés]"
+      didactic_strategy: "Aprendizaje basado en tareas"
+      didactic_technique: "Investigación guiada"
+    
+    - number: 2
+      type: "procedimental"
+      statement: "[A GENERAR — Responder preguntas sobre información específica del audio]"
+      didactic_strategy: "Aprendizaje colaborativo"
+      didactic_technique: "Think-Pair-Share"
+  
+  hours:
+    direct: 2.0
+    autonomous: 0.5
+  
+  evidence:
+    generates_evidence: true
+    type: "Desempeño"
+    description: "El aprendiz demuestra comprensión de contenido oral en inglés respondiendo preguntas y completando tareas de escucha"
+    evaluation_technique: "Observación"
+    instrument_number: 3
+    instrument_type: "Lista de Chequeo"
+  
+  environment:
+    type: "Aula"
+    materials:
+      - "Proyector con audio"
+      - "Computadores con acceso a video técnico (3 clips, 5 min cada uno)"
+      - "Audífonos para trabajo individual"
+      - "Plantilla de notas (Notetaking)"
+      - "Plataforma Moodle para descargar audio"
+    instructors: "Instructor de inglés técnico"
+  
+  contributes_to_consolidated_quiz: true
+  quiz_skill: "Listening"
+  quiz_points: 5
+  quiz_item_count: 5
+```
 
 ---
 

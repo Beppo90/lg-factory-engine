@@ -1,0 +1,257 @@
+{
+  "run_id": "MGV-2026-04-20",
+  "pm_code": "PM-0",
+  "pm_name": "CEFR Framework & FPI SENA Pedagogical Foundation — Contexto del Run",
+  "artifact_purpose": "Fijar anclas PM-0 normativas para las 6 guías del programa MGV desde Fase 1. Evita el error retrospectivo de inyectar pm0_protocol en Fase 3 vía patch. Es el insumo obligatorio para pm-1-2 (key vocabulary y textos adaptados) y para pm-3-2-sX (pm0_protocol por sesión).",
+  "generated_date": "2026-04-20",
+  "pipeline_version": "2.5.1",
+  "pm0_source_version": "1.0 (2026-04-18)",
+
+  "program_scope": {
+    "programa": "Desarrollo de Medios Gráficos Visuales (522309)",
+    "tipo": "Tecnológico",
+    "cefr_range": "A1.1 — A2.1",
+    "total_guias": 6,
+    "regla_bloques": "alineacion_1a1"
+  },
+
+  "pm0_section_mapping": {
+    "§4_descriptores_A1_generales": "Aplican a G1, G2, G3",
+    "§5.1_a_§5.13_principios_pedagogicos": "Aplican a las 6 guías — ver sección principios_aplicables",
+    "§5.6_silabus_gramatical_17_grupos": "Aplica a las 6 guías — ver sección grammar_roadmap",
+    "§6_descriptores_por_subnivel": "Aplica por guía según CEFR — ver sección cefr_descriptors_per_guide",
+    "§7_instrumento_trazabilidad_22_items": "Debe completarse para cada PM antes de producción — ver sección traceability_checklist",
+    "§8_hoja_de_ruta_A1.1_a_A2.x": "Aplica — ver sección methodological_shifts",
+    "§9.1_L1_percentage_per_session": "Aplica a las 6 guías — ver sección l1_policy_per_guide",
+    "§9.2_grammar_group_activation": "Aplica a cada pm-3-2-sX.json — ver sección grammar_activation_per_guide",
+    "§9.3_pm0_protocol_json_schema": "Obligatorio en cada pm-3-2-sX.json del run"
+  },
+
+  "cefr_descriptors_per_guide": [
+    {
+      "guia": 1,
+      "nombre_esp": "The Visual Communicator",
+      "rap": "01",
+      "cefr": "A1.1",
+      "descriptor_snapshot": {
+        "comprension_oral": "Comprende instrucciones de 1–2 pasos pronunciadas muy despacio, con pausas largas. Reconoce términos técnicos básicos pronunciados aislados con apoyo visual.",
+        "comprension_lectora": "Reconoce nombres, etiquetas y símbolos en herramientas y equipos. Lee listas con apoyo visual. Identifica números y unidades básicas.",
+        "interaccion_oral": "Puede saludar, presentarse y responder Sí/No. Puede dar nombre, programa y turno. Puede pedir repetición con frase fija.",
+        "produccion_oral": "Produce palabras y frases aisladas. Puede nombrar objetos presentes en el entorno laboral.",
+        "produccion_escrita": "Puede completar un formulario con datos personales. Puede escribir listas de palabras o ítems.",
+        "vocabulario_activo": "50–100 términos del dominio gráfico básico (tools, colors, shapes, materials, fonts)",
+        "gramatica": "Presente simple afirmativo (I use / He designs). Imperativo básico (Open / Check / Use). Números y unidades básicas.",
+        "funciones_comunicativas": "Saludar, presentarse, agradecer, pedir repetición, nombrar objetos gráficos"
+      }
+    },
+    {
+      "guia": 2,
+      "nombre_esp": "The Client Whisperer",
+      "rap": "02",
+      "cefr": "A1.2",
+      "descriptor_snapshot": {
+        "comprension_oral": "Comprende instrucciones de 2–3 pasos pronunciadas despacio. Comprende valores numéricos y unidades en contexto (formatos A4, resoluciones, deadlines).",
+        "comprension_lectora": "Lee procedimientos simples de brief. Identifica valores en especificaciones. Comprende advertencias simples.",
+        "interaccion_oral": "Puede describir brevemente lo que está haciendo. Puede pedir aclaración. Puede reportar el estado simple de una tarea a su supervisor/cliente.",
+        "produccion_oral": "Produce frases completas simples. Puede describir un procedimiento de 2–3 pasos. Puede reportar un hallazgo simple.",
+        "produccion_escrita": "Puede completar un formato de brief con datos técnicos. Puede escribir una lista de verificación básica.",
+        "vocabulario_activo": "150–250 términos. Collocations básicas (check the file / print the sample / approve the proof)",
+        "gramatica": "Presente simple afirmativo/negativo/interrogativo. Imperativo negativo. Modal must. Pasado simple be.",
+        "funciones_comunicativas": "Describir acciones en curso, reportar estado, pedir aclaración, dar instrucción simple, opinar sobre preferencias"
+      }
+    },
+    {
+      "guia": 3,
+      "nombre_esp": "The Design Troubleshooter",
+      "rap": "03",
+      "cefr": "A1.3",
+      "descriptor_snapshot": {
+        "comprension_oral": "Comprende instrucciones de procedimiento multi-paso. Sigue un briefing técnico breve con apoyo visual.",
+        "comprension_lectora": "Lee un reporte de inspección de archivo. Comprende diagramas con leyendas. Localiza información específica en una especificación técnica.",
+        "interaccion_oral": "Puede describir un problema técnico con vocabulario limitado. Puede solicitar información técnica específica. Puede participar en un intercambio de información estructurado.",
+        "produccion_oral": "Puede presentar los hallazgos de una inspección básica. Puede describir un proceso de 4–5 pasos en secuencia. Puede hacer recomendaciones simples.",
+        "produccion_escrita": "Puede redactar un reporte de inspección básico. Puede escribir una nota técnica simple.",
+        "vocabulario_activo": "300–400 términos. Collocations con confianza + expresiones fraseológicas.",
+        "gramatica": "Presente perfecto para historial. Condicional tipo 1. Voz pasiva básica. Conectores de secuencia. Should/must.",
+        "funciones_comunicativas": "Describir problema, recomendar acción, presentar hallazgos, solicitar información técnica"
+      }
+    },
+    {
+      "guia": 4,
+      "nombre_esp": "The Quality Fixer",
+      "rap": "04",
+      "cefr": "A2.0",
+      "descriptor_snapshot": {
+        "comprension_oral": "Sigue feedback detallado con explicaciones de causa-efecto. Comprende instrucciones de mejora multi-paso.",
+        "comprension_lectora": "Lee reportes de QC, bitácoras de cambios, comentarios de revisión con justificación técnica.",
+        "interaccion_oral": "Puede participar en sesión de feedback, dar y recibir correcciones, justificar cambios implementados.",
+        "produccion_oral": "Presenta acciones correctivas con justificación. Describe cambios en secuencia con conectores.",
+        "produccion_escrita": "Bitácora de mejoras, reporte de revisión, documentación de cambios iterativos.",
+        "vocabulario_activo": "400–500 términos. Expresiones de mejora/corrección/revisión específicas del dominio gráfico.",
+        "gramatica": "Presente perfecto (I have corrected). Condicional tipo 1 (If I apply…, the result will be…). Voz pasiva presente. Comparativos.",
+        "funciones_comunicativas": "Dar feedback, recibir feedback, justificar decisiones, describir mejoras, reportar cambios"
+      }
+    },
+    {
+      "guia": 5,
+      "nombre_esp": "The Process Presenter",
+      "rap": "05",
+      "cefr": "A2.1",
+      "descriptor_snapshot": {
+        "comprension_oral": "Comprende presentaciones técnicas a ritmo moderado con terminología del dominio.",
+        "comprension_lectora": "Lee documentación de proceso completa (flujos de producción, SOPs, manuales).",
+        "interaccion_oral": "Presenta un proceso completo, responde preguntas técnicas, negocia cambios en el flujo.",
+        "produccion_oral": "Presentación formal de proceso con secuenciación, voz pasiva, vocabulario técnico ocupacional.",
+        "produccion_escrita": "Documentación formal de proceso: flujo, roles, entregables, hitos.",
+        "vocabulario_activo": "500–600 términos. Vocabulario ocupacional especializado del oficio gráfico.",
+        "gramatica": "Voz pasiva presente y pasada (The file is exported / The colors were calibrated). Condicional tipo 1 consolidado. Conectores complejos.",
+        "funciones_comunicativas": "Presentar proceso, explicar pasos, responder preguntas técnicas, resumir"
+      }
+    },
+    {
+      "guia": 6,
+      "nombre_esp": "The Graphic Professional",
+      "rap": "06",
+      "cefr": "A2.1",
+      "descriptor_snapshot": {
+        "comprension_oral": "Comprende entrevistas laborales, conversaciones profesionales, pitches de colegas.",
+        "comprension_lectora": "Lee descripciones de puesto, perfiles profesionales, documentación de portfolio.",
+        "interaccion_oral": "Entrevista laboral simulada, pitch personal de 2 minutos, defensa de portfolio.",
+        "produccion_oral": "Narrativa profesional completa: formación, experiencias, habilidades, aspiraciones.",
+        "produccion_escrita": "Portfolio bilingüe, CV, bio profesional, descripción de proyectos.",
+        "vocabulario_activo": "500–600 términos recyclados + 50 nuevos términos ocupacionales (job titles, responsibilities, career narrative)",
+        "gramatica": "Recycla A2.1 con foco en presente perfecto (historial), voz pasiva (responsabilidades), conectores complejos, modales (skills/abilities).",
+        "funciones_comunicativas": "Describir responsabilidades, narrar carrera, expresar habilidades, responder entrevista, presentar portfolio"
+      }
+    }
+  ],
+
+  "grammar_roadmap": {
+    "silabus_source": "PM-0 §5.6 — Silabus FPI SENA de 17 grupos (derivado de Life Second Edition)",
+    "activation_mapping": {
+      "G1_A1.1_TheVisualCommunicator": {
+        "intro": ["Gr 1 — Verbo be (afirmativo contraído, negativo, preguntas, respuestas cortas)", "Gr 2 — Pronombres sujeto + posesivos + demostrativos + posesivo 's", "Gr 3 — Plural regular -s/-es/-ies + artículos indefinidos a/an + mayúsculas", "Gr 4 — Posición del adjetivo + invariabilidad en plural", "Gr 5 — Imperativo afirmativo", "Gr 14 — Preposición In (lugar)", "Gr 15 — Conectores básicos (and, but, or, because) + contracciones + puntuación básica"],
+      "consolida": [],
+      "aplica": []
+      },
+      "G2_A1.2_TheClientWhisperer": {
+        "intro": ["Gr 1 — Pasado simple de be (was/were)", "Gr 2 — Pronombres objeto (me, you, him, her, us, them)", "Gr 3 — Some/any + plurales irregulares", "Gr 5 — Imperativo negativo (Don't + base form)", "Gr 6 — Can/can't (habilidad, permiso, solicitud)", "Gr 7 — Have/has + There is/There are (afirm/neg/preg)", "Gr 8 — Presente simple (todas las formas + Wh-questions + adverbios de frecuencia + preposiciones de tiempo)", "Gr 14 — Preposiciones at, on, next to, near", "Gr 16 — Wh-questions básicas (What, Where, Who, Why, When)"],
+        "consolida": ["Gr 1, 2, 3, 4, 5 del G1"],
+        "aplica": []
+      },
+      "G3_A1.3_TheDesignTroubleshooter": {
+        "intro": ["Gr 3 — Sustantivos incontables + artículo the", "Gr 4 — Comparativos (bigger / more complex)", "Gr 6 — Must/mustn't, Should/shouldn't, I'd like", "Gr 9 — Pasado simple (regulares, irregulares, preguntas, Wh-)", "Gr 10 — Presente continuo (afirm/neg/preg + spelling -ing)", "Gr 15 — Sugerencias (Let's, How about) + conectores de secuencia (first, then, next)", "Gr 16 — How + adjetivo/adverbio", "Gr 17 — Estructuras del sector gráfico (ver sección sector_specific_group17)"],
+        "consolida": ["Gr 1, 6, 7, 8, 14, 16 del G2"],
+        "aplica": ["Gr 2, 3, 4, 5, 15 del G1-G2"]
+      },
+      "G4_A2.0_TheQualityFixer": {
+        "intro": ["Gr 4 — Superlativos (the biggest / the most critical)", "Gr 6 — Could/might (posibilidad), Would", "Gr 10 — Presente continuo para futuro + contraste simple vs continuo", "Gr 11 — Presente perfecto (afirm, neg, preg)", "Gr 12 — Condicional tipo 1 (If + presente, will + base)", "Gr 13 — Voz pasiva presente (is/are + pp)", "Gr 16 — Which/Whose"],
+        "consolida": ["Gr 3, 6 restantes, 9, 10 del G3"],
+        "aplica": ["Gr 1, 2, 5, 7, 8, 14, 16 de G1-G3"]
+      },
+      "G5_A2.1_TheProcessPresenter": {
+        "intro": ["Gr 11 — Presente perfecto con marcadores (already, yet, just, ever, never) + contraste con pasado simple", "Gr 12 — Condicional tipo 2 (If + pasado, would + base)", "Gr 13 — Voz pasiva pasada (was/were + pp)"],
+        "consolida": ["Gr 4 superlativos, 6 could/might/would, 10 futuro, 11 afirmativo, 12 tipo 1, 13 presente, 16 which/whose"],
+        "aplica": ["Todo lo anterior (Gr 1-10 completo)"]
+      },
+      "G6_A2.1_TheGraphicProfessional": {
+        "intro": ["Gr 17 — Estructuras ocupacionales: expresiones de rol (I'm responsible for…, My role involves…), narrativa de carrera, skills expressions (I'm skilled at…, I can…, I have experience with…)"],
+        "consolida": ["Todo A2.1 de G5 con foco en registro profesional"],
+        "aplica": ["Todas las estructuras A1.1 → A2.1 recicladas en contexto de entrevista/portfolio"]
+      }
+    },
+    "carga_principle": "PM-0 §9.2 — Máximo 2 grupos nuevos (Intro) por sesión. G6 no introduce estructuras gramaticales nuevas; consolida vía registro profesional.",
+    "grupo_17_sector_especifico": {
+      "descripcion": "Grupo 17 (§5.6) es el slot abierto para estructuras específicas del sector. Para MGV se activa en G3 y G6.",
+      "g3_intro": [
+        "Expresiones de estilo/diseño: 'in [serif/sans-serif] style', 'with [bold/italic] emphasis'",
+        "Especificaciones técnicas: 'at 300 dpi', 'in CMYK/RGB', 'A4 format', 'with bleed'",
+        "Deadlines en brief: 'by Friday', 'within the week', 'before the deadline'"
+      ],
+      "g6_intro": [
+        "Descripción de rol: 'I'm responsible for [area]', 'My role involves [actions]'",
+        "Experiencia: 'I have experience with [software/technique]', 'I have worked on [project type]'",
+        "Habilidades: 'I am skilled at [skill]', 'I specialize in [domain]'"
+      ]
+    }
+  },
+
+  "l1_policy_per_guide": {
+    "source": "PM-0 §9.1 — Progresión por subnivel normativa",
+    "per_guide": [
+      {"guia": 1, "cefr": "A1.1", "s1_to_s8": "S1 30% → S2 25% → S3 20% → S4 15% → S5 12% → S6 10% → S7 10% → S8 5%", "rationale": "Día 1 establecer confianza; reducción progresiva con tablero + visuales reemplazando L1"},
+      {"guia": 2, "cefr": "A1.2", "s1_to_s8": "S1 20% → S8 3%", "rationale": "L2 es norma; L1 solo respaldo explicación"},
+      {"guia": 3, "cefr": "A1.3", "s1_to_s8": "S1 10% → S8 0%", "rationale": "L1 solo en seguridad o bloqueo genuino"},
+      {"guia": 4, "cefr": "A2.0", "s1_to_s8": "L2 como norma desde S1; L1 solo emergencia", "rationale": "Aprendiz ya maneja feedback meta en L2"},
+      {"guia": 5, "cefr": "A2.1", "s1_to_s8": "L2 exclusivo; L1 = 0%", "rationale": "Presentaciones formales en L2"},
+      {"guia": 6, "cefr": "A2.1", "s1_to_s8": "L2 exclusivo; L1 = 0%", "rationale": "Entrevista laboral simulada en L2 puro"}
+    ]
+  },
+
+  "methodological_shifts_per_guide": {
+    "source": "PM-0 §8 — Hoja de ruta A1.1 → A2.x",
+    "per_guide": [
+      {"guia": 1, "cefr": "A1.1", "velocidad_input": "Muy lenta — pausas largas", "extension_textos": "1-3 oraciones + apoyo visual obligatorio", "autonomia": "Alta dependencia docente", "andamiaje": "Máximo (frames completos, word banks)", "feedback": "Inmediato, choral — accuracy prioritario", "rol_docente": "Modelo central — driller", "pensamiento_critico": "Reconocimiento y clasificación (mood board, identification)"},
+      {"guia": 2, "cefr": "A1.2", "velocidad_input": "Lenta — pausas frecuentes", "extension_textos": "3-7 oraciones + apoyo visual frecuente", "autonomia": "Dependencia moderada", "andamiaje": "Alto (frames parciales)", "feedback": "Mixto: inmediato en drilling, diferido en fluency", "rol_docente": "Modelo y andamio", "pensamiento_critico": "Secuenciación y descripción (brief)"},
+      {"guia": 3, "cefr": "A1.3", "velocidad_input": "Moderada — pausas ocasionales", "extension_textos": "Párrafos cortos (5-10 oraciones)", "autonomia": "Semi-autónomo en tareas conocidas", "andamiaje": "Moderado (prompts iniciales)", "feedback": "Diferido post-tarea", "rol_docente": "Facilitador", "pensamiento_critico": "Análisis síntomas + causa/efecto (troubleshooting)"},
+      {"guia": 4, "cefr": "A2.0", "velocidad_input": "Moderada natural — algunas pausas", "extension_textos": "Textos multi-párrafo", "autonomia": "Progresivamente autónomo", "andamiaje": "Mínimo", "feedback": "Peer + self-assessment", "rol_docente": "Monitor", "pensamiento_critico": "Diagnóstico, RCA (mejora iterativa)"},
+      {"guia": 5, "cefr": "A2.1", "velocidad_input": "Natural", "extension_textos": "Multi-párrafo técnicos", "autonomia": "Autónomo", "andamiaje": "Aprendiz construye sin andamiaje previo", "feedback": "Auto-assessment + peer", "rol_docente": "Monitor + retroalimentador", "pensamiento_critico": "Presentación fundamentada de proceso"},
+      {"guia": 6, "cefr": "A2.1", "velocidad_input": "Natural", "extension_textos": "Documentos ocupacionales completos", "autonomia": "Autónomo pleno", "andamiaje": "Cero — aprendiz lidera", "feedback": "Evaluación por criterios profesionales", "rol_docente": "Evaluador externo (simula empleador)", "pensamiento_critico": "Narrativa ocupacional integrada"}
+    ]
+  },
+
+  "principios_aplicables": {
+    "source": "PM-0 §5.1–§5.13 — 13 principios pedagógicos",
+    "aplicacion_a_MGV": [
+      "§5.1 Contenido técnico como punto de partida — OK: los insumos curriculares (13 áreas) son el punto de entrada de cada guía",
+      "§5.2 Fotografía y realia técnica — Alta aplicabilidad: el sector gráfico vive de imágenes; cada guía usa realia (briefs reales, piezas editoriales, portfolios)",
+      "§5.3 Video e instrucción en vivo — Aplicable: tutoriales de diseño, videos de procesos de impresión",
+      "§5.4 Pensamiento crítico y diagnóstico técnico — Central en G3 (troubleshooting) y G4 (quality fixing)",
+      "§5.5 Memorización y retención — Vocabulario técnico gráfico (tipografía, color, formatos) se trabaja con factor SUCCESS",
+      "§5.6 Tratamiento de la gramática — Silabus 17 grupos activado según grammar_roadmap arriba",
+      "§5.7 Tratamiento del vocabulario — Word Wall por guía + Toolbelt del sector gráfico",
+      "§5.8 Habilidades de aprendizaje autónomo — Gap Cards, KWL, Learning Contract en cada guía",
+      "§5.9 Evaluación — Formativa (6 instrumentos) + sumativa (Cuestionario S6 25 pts + Misión Final 5 pts = 30 pts por guía, totalizando 55 pts con las evidencias apropiación)",
+      "§5.10 Estructura de sesión FPI — 8 sesiones × 7.5h (48h directas + 12h autónomas) por guía",
+      "§5.11 Feedback diferenciado accuracy vs fluency — Ver methodological_shifts arriba",
+      "§5.12 Gestión del L1 — Ver l1_policy_per_guide arriba",
+      "§5.13 Noticing de stress con soporte físico — Finger drilling, backchaining, clapping en vocabulario técnico nuevo por guía"
+    ]
+  },
+
+  "traceability_checklist_ref": {
+    "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+    "uso": "Cada PM-2.x y PM-3.x del run debe completar este checklist antes de producción. Criterio de aprobación: ≥ 20/22 ítems aprobados.",
+    "secciones": {
+      "A_trazabilidad_cefr": "6 ítems — asignación subnivel, trazabilidad a descriptores §4/§6, no sobreexige, vocab del Word Wall, input adaptado",
+      "B_trazabilidad_pedagogica": "8 ítems — pre-enseñanza vocab, drilling, accuracy/fluency, gestión L1, stress, producción personalizada (My Turn), autoevaluación, andamiaje por nivel",
+      "C_trazabilidad_estructura_sesion": "4 ítems — bloque FPI, tiempo realista, lógica PM precedente/siguiente, complejidad cognitiva progresiva",
+      "D_trazabilidad_evaluacion": "4 ítems — contribuye Misión Final, can-do asociado, criterio observable, consistente con descriptor CEFR"
+    }
+  },
+
+  "pm0_protocol_template_per_guide": {
+    "purpose": "Template de referencia para que cada pm-3-2-sX.json del run incluya pm0_protocol consistente con esta guía.",
+    "source_schema": "PM-0 §9.3",
+    "campos_obligatorios": [
+      "grammar_groups — lista de grupos del silabus activos en esa sesión con estado Intro/Consolida/Aplica",
+      "feedback.mode — ACCURACY / FLUENCY / MIXTO según §5.11 + methodological_shifts",
+      "feedback.accuracy_techniques — Recast, Elicitación, Metalinguistic cue, etc.",
+      "feedback.fluency_techniques — Post-task delayed feedback, error codes",
+      "l1_management.l1_percentage — según tabla l1_policy_per_guide arriba",
+      "l1_management.english_zone_declaration — cómo se declara en esa sesión",
+      "l1_management.l1_allowed_for — casos legítimos de esa sesión",
+      "l1_management.reduction_strategy — técnica específica",
+      "stress_pronunciation.focus_words — palabras target de esa sesión",
+      "stress_pronunciation.techniques — Finger drilling, Backchaining, Clapping, Choral drill, Board marking",
+      "success_vocabulary.target_words — vocabulario target de esa sesión",
+      "success_vocabulary.factors_applied — SUCCESS (Sounds, Use, Conceptualize, Creativity, Encounter, Self-expression)"
+    ]
+  },
+
+  "next_step": {
+    "pm": "PM-1.2 (para Bloque 1)",
+    "input_from_pm0_context": "Descriptor G1 A1.1 de cefr_descriptors_per_guide + grammar_roadmap.G1_A1.1 + l1_policy G1 + methodological_shifts G1",
+    "expected_output": "pm-1-2.json con Scope & Sequence alineado a A1.1 FPI SENA: vocabulario 50-100 términos del dominio gráfico básico, 3 fuentes auténticas curadas con análisis lingüístico A1.1, Cols 1-5 GFPI-F-134 pobladas para RAP 01"
+  }
+}

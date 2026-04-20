@@ -1,0 +1,704 @@
+{
+  "pm_id": "PM-2.8",
+  "pm_name": "Speaking — The Mission (with integrated pronunciation scaffolding)",
+  "run_id": "MGV-2026-04-20",
+  "guide": "G1 — The Visual Communicator",
+  "program_code": "522309",
+  "program_name": "Desarrollo de Medios Gráficos Visuales",
+  "rap_id": "RAP-G1-522309",
+  "session": 4,
+  "phase_sena": "Apropiación",
+  "cefr_level": "A1.1",
+  "content_universe": "Same Pixel & Ink Studio universe. The Mission: Andrés presents the bakery brief decisions ORALLY to Sophia in a simulated 3-minute client-briefing rehearsal. Variants: presenting to the real client (La Esquina), onboarding a new junior designer, help-desk triage for a color question.",
+  "derived_from": [
+    "pm-1-2.json (G1 toolbelt 20 terms, F1-F5 functions)",
+    "pm-2-0.json (Session 4 blueprint: 1.5h direct + 0.5h autonomous)",
+    "pm-2-5.json (Toolbelt consolidated + Word Wall)",
+    "pm-2-6.json (Auditory Anchor — Sophia + Laura voice note provides chunks + prosody model)",
+    "pm-2-10.json (Grammar Gr1-Gr5 targets for natural use in simulation)",
+    "pm-0-context.json (§5 SUCCESS, §9.1 L1 15% S4, §5.7 pronunciation scaffolding)"
+  ],
+
+  "pm0_anchor": {
+    "cefr_ceiling": "A1.1",
+    "l1_percentage_s4": 15,
+    "grammar_in_mission": ["Gr1 be (I am, this is)", "Gr2 pronouns (my, this, these)", "Gr3 a/an (the logo is a seal)", "Gr4 adjective position (warm colors)", "Gr5 imperative (light exposure — 'check', 'see')"],
+    "functions_activated": ["F1 Greetings", "F2 Give information", "F3 Describe", "F4 Express opinion (light)", "F5 Request politely"],
+    "feedback_mode_dominant": "Recast during rehearsal + Explicit correction on pronunciation + Acceptance of fluency errors during free production",
+    "success_factors_applied": [
+      "Salience (pronunciation cards with IPA + stress dots + minimal pairs)",
+      "Use (productive speaking task with verifiable outcome)",
+      "Connection (every chunk from Listening/Reading/Writing)",
+      "Context (authentic 3-min client briefing in studio)",
+      "Emotion (low-stakes rehearsal → supportive partner → graded performance)",
+      "Spaced repetition (4th encounter of core vocab: Reading S2, Vocab S2, Listening S4, Speaking S4)",
+      "Synergy (Speaking Mission consolidates all prior skills)"
+    ]
+  },
+
+  "universe_anchor": {
+    "mission_core_scenario": "ANDRÉS BRIEFS SOPHIA — 3-minute oral presentation where Andrés (learner) presents his brief decisions to Sophia (partner), who asks 2 follow-up questions.",
+    "information_gap_genuine": "Sophia (partner A) has a questionnaire with 5 slots to fill based on Andrés's speech. Andrés (partner B) has his Design Decision Card. Sophia must extract info; Andrés must provide it clearly.",
+    "deliverable": "Completed Sophia Questionnaire Sheet + audio recording (optional) + instructor observation checklist",
+    "mission_variants": [
+      "Variant 1 (default): Andrés briefs Sophia on La Esquina Bakery",
+      "Variant 2: Andrés onboards a new junior designer — explains color wheel",
+      "Variant 3: Andrés runs help-desk — answers color question from intern",
+      "Variant 4: Andrés presents to the REAL client (La Esquina owner) — adds formality"
+    ],
+    "time_per_student": "3 min speaking + 2 min follow-up Q&A = 5 min per student (evidence window)"
+  },
+
+  "pronunciation_scaffolding_integrated_from_pm2_7": {
+    "note": "PM-2.7 was deprecated in v2.0. Pronunciation scaffolding is now embedded in PM-2.8 PRE phase.",
+    "trabalenguas_tecnicos_tongue_twisters": [
+      {
+        "phrase": "Serif fonts, sans-serif fonts, three serif fonts",
+        "target_sound": "/f/ vs /s/ contrast + plural -s",
+        "repetitions": 3,
+        "physical_cue": "Press top teeth on bottom lip for /f/"
+      },
+      {
+        "phrase": "Warm brown, cool blue, warm brown, cool blue",
+        "target_sound": "/w/ vs /b/ + long /uː/",
+        "repetitions": 3,
+        "physical_cue": "Round lips for /w/, pop for /b/"
+      },
+      {
+        "phrase": "Round logo, bold logo, round bold logo",
+        "target_sound": "/ɒ/ short o + /əʊ/ long o + -l ending",
+        "repetitions": 3,
+        "physical_cue": "Mouth small for short o, round-wide for long o"
+      },
+      {
+        "phrase": "CMYK values, RGB values, print-ready values",
+        "target_sound": "letter-by-letter stress (each letter full stress)",
+        "repetitions": 3,
+        "physical_cue": "Clap on each letter"
+      }
+    ],
+    "fonemas_problematicos_for_ES_learners": [
+      {
+        "sound": "/ɪ/ vs /iː/",
+        "minimal_pairs": ["bit / beet", "live / leave", "fit / feet", "slick / sleek"],
+        "correction": "/ɪ/ = short, relaxed. /iː/ = long, tense smile.",
+        "studio_example": "We FIT the logo vs We meet the FEET"
+      },
+      {
+        "sound": "/æ/",
+        "minimal_pairs": ["cat / cut", "back / buck", "lamp / lump"],
+        "correction": "Jaw drops low + open wide. Does NOT exist in Spanish.",
+        "studio_example": "A flat rack for the artBAG"
+      },
+      {
+        "sound": "/θ/ vs /t/ or /s/",
+        "minimal_pairs": ["three / tree", "thick / tick", "think / sink"],
+        "correction": "Tongue between teeth — visible tip",
+        "studio_example": "THREE fonts are THICK"
+      },
+      {
+        "sound": "/ʃ/ vs /tʃ/",
+        "minimal_pairs": ["ship / chip", "wash / watch"],
+        "correction": "/ʃ/ hiss steady; /tʃ/ stop-hiss combo",
+        "studio_example": "The SHIP of the bakery CHIPS"
+      }
+    ],
+    "prosody_and_rhythm_practice": {
+      "stressed_syllable_map": [
+        {"word": "DE-sign-er", "stress": "1st"},
+        {"word": "il-LUS-tra-tor", "stress": "2nd"},
+        {"word": "ty-PO-gra-phy", "stress": "2nd"},
+        {"word": "re-FRESH-er", "stress": "2nd"},
+        {"word": "DIS-play", "stress": "1st"},
+        {"word": "se-RIF", "stress": "2nd (often misstressed by ES speakers)"},
+        {"word": "CAN-vas", "stress": "1st"},
+        {"word": "CO-lor", "stress": "1st"}
+      ],
+      "sentence_stress_rule": "CONTENT words (nouns, verbs, adjectives) carry stress. FUNCTION words (a, the, is, for, and) are reduced.",
+      "example_marked": "the FONT is PLAYFAIR DISPLAY — a CLASSIC SERIF.",
+      "physical_exercise": "Clap on content words; whisper function words."
+    },
+    "shadowing_chunks_to_rehearse": [
+      "Hi Sophia, this is Andrés.",
+      "The brief is for La Esquina Bakery.",
+      "The font is Playfair Display — a classic serif.",
+      "The colors are brown and cream.",
+      "The logo is a round seal.",
+      "Warm colors feel friendly."
+    ],
+    "ear_training_in_context": {
+      "exercise": "Listen to Sophia's voice note again (from PM-2.6). For each chunk, mark stressed syllables. Compare with your own speech.",
+      "self_correction_loop": "Record self → play back → compare to Sophia → re-record"
+    }
+  },
+
+  "bilingual_unified_header": {
+    "english": "THE MISSION — 3 minutes. You are Andrés. You present your brief decisions. Sophia listens. Make your voice count.",
+    "spanish_italics": "(3 minutos. Eres Andrés. Presentas tus decisiones. Sophia escucha. Haz que tu voz cuente.)",
+    "motivational_hook": "You already WROTE the email. You already HEARD the voice note. Now SPEAK it."
+  },
+
+  "mission_brief": {
+    "title": "🎯 MISSION BRIEF — The Bakery Briefing",
+    "scenario": "Tuesday, 11 AM at Pixel & Ink Studio. Sophia has 3 minutes before her next meeting. Andrés must brief her on La Esquina Bakery NOW. Get all 5 decisions across clearly.",
+    "clock_pressure": "3 minutes. Real timer. Real pressure.",
+    "communication_rule": "English ONLY. If you don't know a word, DESCRIBE it or USE the Toolbelt chart. No Spanish except emergency.",
+    "deliverable": "Sophia's Questionnaire Sheet completed correctly (≥4 of 5 slots) + your voice audible to the whole partnership",
+    "failure_modes_to_avoid": [
+      "Reading from the email (this is SPEAKING, not reading aloud)",
+      "Mumbling (Sophia needs to HEAR decisions)",
+      "Using Spanish more than 3 times (L1% = 15% max)",
+      "Finishing in under 90 seconds (too rushed) or over 4 min (too slow)"
+    ]
+  },
+
+  "archetypes_integrated": {
+    "policy": "ALL 5 archetypes A-E are documented. Instructor picks ONE flow for the S4 Speaking block (50-80 min depending on class size and variant).",
+    "spanish": "(TODOS los 5 arquetipos documentados. Instructor elige UN flujo.)",
+
+    "archetype_A_gap_tasks": {
+      "id": "A",
+      "name": "Gap Tasks (Information / Reasoning / Opinion)",
+      "when_it_works": "When genuine info gap creates real need to communicate; TBLT gold standard.",
+      "fit_for_A1_1": "Highest — task structure scaffolds production.",
+      "total_minutes": 50,
+      "gap_type_selected": "Information Gap (primary) + Reasoning Gap (secondary)",
+      "activities": [
+        {
+          "phase": "PRE — Pronunciation Warmup + Role Card Setup (15 min)",
+          "instruction_bilingual": "10 min pronunciation drill (tongue twisters + minimal pairs). 5 min get your role card. (*10 min drill de pronunciación. 5 min recibe tu tarjeta de rol.*)",
+          "pronunciation_drills": "All 4 tongue twisters from pronunciation_scaffolding_integrated above + 3 minimal pairs",
+          "role_cards": [
+            {
+              "role": "ANDRÉS (Speaker)",
+              "has": "Design Decision Card with 5 slots filled",
+              "mission": "Communicate all 5 decisions in 3 min",
+              "cannot_show": "Cannot show card to partner"
+            },
+            {
+              "role": "SOPHIA (Listener)",
+              "has": "Blank Questionnaire Sheet with 5 empty slots",
+              "mission": "Fill all 5 slots + ask 2 follow-up questions",
+              "cannot_ask": "Cannot say 'What?' more than twice"
+            }
+          ]
+        },
+        {
+          "phase": "DURING — The 3-Minute Briefing (25 min: 5 pairs × 5 min rotating)",
+          "instruction_bilingual": "Partner A briefs. Partner B fills questionnaire. Swap. (*A informa. B llena cuestionario. Intercambien.*)",
+          "sophia_questionnaire_5_slots": [
+            {"slot": "Client name:", "expected": "La Esquina Bakery"},
+            {"slot": "Font:", "expected": "Playfair Display (or similar serif)"},
+            {"slot": "Color 1 + Color 2:", "expected": "brown + cream (or warm pair)"},
+            {"slot": "Logo shape:", "expected": "round seal (or similar)"},
+            {"slot": "Rationale (1 sentence):", "expected": "The bakery is a family shop; warm colors feel friendly"}
+          ],
+          "sophia_followup_questions_must_ask_2": [
+            "Why [that font]?",
+            "How do you feel about [color choice]?",
+            "What is the [logo] in one word?",
+            "Is this your favorite project?"
+          ],
+          "reasoning_gap_bonus": "After briefing, Sophia decides: APPROVE or ASK FOR REVISION. Justify in 1 sentence."
+        },
+        {
+          "phase": "POST — Debrief + Self-Evaluation (10 min)",
+          "instruction_bilingual": "Compare questionnaires. Count correct slots. Reflect. (*Comparen cuestionarios. Cuenten slots correctos. Reflexionen.*)",
+          "reflection_prompts": [
+            "Which of the 5 decisions was easiest to say?",
+            "Which pronunciation was hardest?",
+            "Did your partner hear everything? Why / why not?",
+            "What will I practice before next time?"
+          ]
+        }
+      ]
+    },
+
+    "archetype_B_role_based": {
+      "id": "B",
+      "name": "Role-Based Speaking (Professional Simulation)",
+      "when_it_works": "When the genre is workplace-authentic; when the role gives learner ownership.",
+      "fit_for_A1_1": "High — role masks performance anxiety behind character.",
+      "total_minutes": 50,
+      "roles_selected": ["Junior Designer", "Art Director (stretch)", "Help Desk", "Junior onboarding mentor"],
+      "activities": [
+        {
+          "phase": "PRE — Role Immersion + Pronunciation (15 min)",
+          "instruction_bilingual": "10 min: pronunciation drill + sound check. 5 min: study your role card. (*10 min drill pronunciación + check. 5 min estudia tu rol.*)",
+          "role_cards_with_studio_identity": [
+            {
+              "role": "JUNIOR DESIGNER — Andrés",
+              "identity": "6 months at Pixel & Ink. Works on La Esquina Bakery brief.",
+              "speech_patterns": "Friendly, slightly nervous, uses 'I think' + 'My decision is'",
+              "must_use_5_chunks": ["This is the brief...", "The font is...", "The colors are...", "My client is...", "Thanks, [name]."]
+            },
+            {
+              "role": "ART DIRECTOR — Sophia (stretch role)",
+              "identity": "Senior, measured, asks targeted questions",
+              "speech_patterns": "Uses 'Why', 'Is that...', 'Please explain'",
+              "must_ask_3_questions": ["Why [choice]?", "Is that right for [client type]?", "Please explain [decision]."]
+            }
+          ]
+        },
+        {
+          "phase": "DURING — The Studio Meeting Simulation (25 min)",
+          "instruction_bilingual": "In groups of 3: Andrés + Sophia + Observer. 5 min rotation × 5 groups. (*Grupos de 3: Andrés + Sophia + Observador. Rotación 5 min × 5 grupos.*)",
+          "simulation_structure": "Andrés briefs (90 sec) → Sophia asks 2 questions (60 sec) → Andrés responds (60 sec) → Observer gives feedback (30 sec)",
+          "observer_role_card": {
+            "listens_for": ["Clear pronunciation of 5 Survival Words", "5 chunks used", "Correct Gr4 adjective position", "Eye contact with Sophia"],
+            "gives_feedback_in": "30 seconds maximum",
+            "format": "1 star (what worked) + 1 wish (what to improve)"
+          }
+        },
+        {
+          "phase": "POST — Role Rotation + Reflection (10 min)",
+          "instruction_bilingual": "Rotate roles. Who had the hardest job? Who surprised themselves? (*Roten. ¿Quién tuvo el trabajo más difícil? ¿Quién se sorprendió a sí mismo?*)",
+          "role_reflection": "Being Andrés was different from being Sophia because _________. Being an Observer taught me _________."
+        }
+      ]
+    },
+
+    "archetype_C_multimedia_output": {
+      "id": "C",
+      "name": "Multimedia Output (Podcast / Video / Recorded Pitch)",
+      "when_it_works": "When tech access available; when learners want their work preserved; great for MGV (design students love multimedia).",
+      "fit_for_A1_1": "Stretch — requires tech + re-takes; high-reward.",
+      "total_minutes": 50,
+      "tech_required": "Smartphone with audio recording OR laptop with mic",
+      "production_selected": "Design Decision Monologue Podcast (90-second solo pitch)",
+      "activities": [
+        {
+          "phase": "PRE — Script + Pronunciation Rehearsal (15 min)",
+          "instruction_bilingual": "Write your 90-sec pitch script. Practice pronunciation 3 times. (*Escribe tu pitch de 90 seg. Ensaya pronunciación 3 veces.*)",
+          "script_structure_6_slots": [
+            "1. [5 sec] INTRO: 'Hi, this is [name]. Today I talk about [client].'",
+            "2. [15 sec] CLIENT: 'My client is [name]. It's a [type]. They want [feeling].'",
+            "3. [15 sec] FONT DECISION: 'The font is [name]. I choose this because...'",
+            "4. [15 sec] COLOR DECISION: 'The colors are [X] and [Y]. [Warm/Cool] colors are...'",
+            "5. [15 sec] LOGO: 'The logo is a [shape] [object]. It shows...'",
+            "6. [15 sec] CLOSE: 'Thanks for listening. My next step is...'"
+          ],
+          "pronunciation_rehearsal": "Record pre-take → listen → mark errors → re-record twice"
+        },
+        {
+          "phase": "DURING — Record the Podcast (25 min)",
+          "instruction_bilingual": "Record 3 takes. Pick the best. (*Graba 3 tomas. Elige la mejor.*)",
+          "take_structure": {
+            "take_1": "Rough take — get words out",
+            "take_2": "Careful take — slow down, stress clear",
+            "take_3": "Confident take — natural pace + emotion"
+          },
+          "export_format": ".mp3 or .m4a, 90 sec, labeled: 'Andrés_[studentname]_BakeryPitch.mp3'"
+        },
+        {
+          "phase": "POST — Gallery Listen + Peer Vote (10 min)",
+          "instruction_bilingual": "Upload to shared folder. Listen to 3 classmates. Vote. (*Sube a carpeta. Escucha 3. Vota.*)",
+          "vote_criteria": [
+            "Clearest voice",
+            "Best use of Toolbelt chunks",
+            "Most confident delivery"
+          ]
+        }
+      ]
+    },
+
+    "archetype_D_rehearsal_scaffolding": {
+      "id": "D",
+      "name": "Rehearsal & Scaffolding (Guided → Free)",
+      "when_it_works": "When learners freeze in free speaking; progressive scaffold.",
+      "fit_for_A1_1": "Highest — ideal archetype for first speaking task.",
+      "total_minutes": 50,
+      "scaffolding_technique": "Scaffolded Dialogue + Substitution Drill + Cue Cards → Free Production",
+      "activities": [
+        {
+          "phase": "PRE — Scaffolded Dialogue Walk-Through (15 min)",
+          "instruction_bilingual": "Read the model dialogue. Practice with partner. (*Lee el diálogo modelo. Practica con compañero.*)",
+          "model_dialogue": [
+            {"sophia": "Hi Andrés. What's the brief?"},
+            {"andres": "Hi Sophia. The brief is for La Esquina Bakery."},
+            {"sophia": "What font?"},
+            {"andres": "The font is Playfair Display. A classic serif."},
+            {"sophia": "And the colors?"},
+            {"andres": "The colors are brown and cream. Warm colors are friendly."},
+            {"sophia": "What is the logo?"},
+            {"andres": "The logo is a round seal. A simple logo is the best logo."},
+            {"sophia": "Perfect. Thanks, Andrés."},
+            {"andres": "Thanks, Sophia. Talk tomorrow."}
+          ],
+          "practice_rule": "Read dialogue aloud 3 times with partner. Swap roles between reads."
+        },
+        {
+          "phase": "DURING — Substitution Drill + Cue Card Free Production (25 min)",
+          "instruction_bilingual": "Substitute new client info. Then try WITHOUT the script — use only cue card. (*Sustituye datos nuevos. Luego intenta SIN guión — solo con tarjeta.*)",
+          "substitution_round_1": {
+            "task": "Redo the dialogue but for: 'Café Luna' (modern café, Montserrat font, black + gold, crescent moon logo)",
+            "scaffold": "Full dialogue script visible; just change the 4 nouns"
+          },
+          "substitution_round_2": {
+            "task": "Redo for 'Nova Bookshop' (classic bookshop, Garamond font, navy + white, open book logo)",
+            "scaffold": "Only cue card with 4 keywords visible"
+          },
+          "free_production_round_3": {
+            "task": "Your OWN invented client. 90 sec monologue + partner asks 2 questions.",
+            "scaffold": "No script. Only Language Bank chunks visible on wall."
+          }
+        },
+        {
+          "phase": "POST — Progression Reflection (10 min)",
+          "instruction_bilingual": "Rate your 3 rounds 1-5. What changed from Round 1 to Round 3? (*Puntúa tus 3 rondas 1-5. ¿Qué cambió?*)",
+          "reflection_question": "Did removing the scaffold make me more stressed or more creative?"
+        }
+      ]
+    },
+
+    "archetype_E_interaction_dynamics": {
+      "id": "E",
+      "name": "Interaction Dynamics (Mingle / Quiz / Interview / Spin-off)",
+      "when_it_works": "When energy is low; when multiple mini-interactions beat one long task.",
+      "fit_for_A1_1": "High — low stakes per interaction; lots of reps.",
+      "total_minutes": 50,
+      "dynamics_selected": ["Mingle + Quiz Your Classmate", "Speed Briefing (5 rotations)"],
+      "activities": [
+        {
+          "phase": "PRE — Pronunciation + Question Bank (10 min)",
+          "instruction_bilingual": "Drill 3 tongue twisters. Prepare 5 questions you'll ask. (*Drill 3 trabalenguas. Prepara 5 preguntas.*)",
+          "question_bank_scaffolded": [
+            "Who is your client?",
+            "What is your font?",
+            "What are your colors?",
+            "Is the logo big or small?",
+            "Is your client modern or traditional?"
+          ]
+        },
+        {
+          "phase": "DURING — Speed Briefing Mingle (30 min)",
+          "instruction_bilingual": "5 rotations × 5 min = brief 5 different partners. Fill scorecard. (*5 rotaciones × 5 min = informa a 5 compañeros diferentes. Llena scorecard.*)",
+          "scorecard_template": [
+            {"partner_name": "", "their_client": "", "their_font": "", "surprised_by": ""},
+            {"partner_name": "", "their_client": "", "their_font": "", "surprised_by": ""},
+            {"partner_name": "", "their_client": "", "their_font": "", "surprised_by": ""},
+            {"partner_name": "", "their_client": "", "their_font": "", "surprised_by": ""},
+            {"partner_name": "", "their_client": "", "their_font": "", "surprised_by": ""}
+          ],
+          "rotation_rule": "30 sec each direction. Instructor rings bell every minute."
+        },
+        {
+          "phase": "POST — Quiz Your Classmate (10 min)",
+          "instruction_bilingual": "Test what you remember. Ask 3 questions about 1 classmate's project. (*Test lo que recuerdas. Haz 3 preguntas sobre 1 proyecto.*)",
+          "quiz_question_frames": [
+            "Who is your client?",
+            "What colors did you choose?",
+            "What is your logo?"
+          ]
+        }
+      ]
+    }
+  },
+
+  "rotation_options_for_instructor": {
+    "policy": "Instructor picks ONE flow for the S4 Speaking block.",
+    "flows": [
+      {
+        "flow_id": "FLOW-S1",
+        "name": "Scaffolded Safety (Recommended for first speaking task)",
+        "sequence": "Archetype D (Rehearsal & Scaffolding) — dialogue → substitution → free",
+        "best_for": "First formal speaking in the program; A1.1 anxiety management",
+        "tech_needs": "Printed dialogue + cue cards"
+      },
+      {
+        "flow_id": "FLOW-S2",
+        "name": "TBLT Gap Task (Recommended for G1 evidence)",
+        "sequence": "Archetype A (Gap Tasks) — information gap with questionnaire",
+        "best_for": "Clean evidence capture; partner accountability",
+        "tech_needs": "Printed role cards + blank questionnaire"
+      },
+      {
+        "flow_id": "FLOW-S3",
+        "name": "Workplace Roleplay",
+        "sequence": "Archetype B (Role-Based) — 3-person studio meeting simulation",
+        "best_for": "Groups of 3; observer role builds metacognition",
+        "tech_needs": "Role cards + observer feedback sheet"
+      },
+      {
+        "flow_id": "FLOW-S4",
+        "name": "Podcast Production",
+        "sequence": "Archetype C (Multimedia) — 90-sec monologue recording",
+        "best_for": "Tech-enabled classes; preserved artifact; great for MGV portfolio",
+        "tech_needs": "Smartphone or laptop + mic"
+      },
+      {
+        "flow_id": "FLOW-S5",
+        "name": "High-Energy Mingle",
+        "sequence": "Archetype E (Interaction Dynamics) — speed briefing 5 rotations",
+        "best_for": "Low energy groups; lots of reps; volume-based fluency",
+        "tech_needs": "Bell/timer + scorecards"
+      },
+      {
+        "flow_id": "FLOW-S6",
+        "name": "Maximalist Hybrid (D→A→C)",
+        "sequence": "15min Scaffolding warmup → 25min Gap Task evidence → 10min Record 30-sec clip",
+        "best_for": "Extended 60-min block; covers safety + evidence + artifact",
+        "tech_needs": "All above"
+      }
+    ],
+    "recommended_default_for_G1": "FLOW-S1 (Rehearsal & Scaffolding) for initial safety → instructor can upgrade to FLOW-S2 (Gap Task) for evidence capture. Or combine D→A as FLOW-S6 hybrid."
+  },
+
+  "cue_card_for_learner": {
+    "title": "📇 ANDRÉS CUE CARD — Pocket Reference",
+    "instruction_bilingual": "Keep this card. Use during rehearsal. Put away during evidence round. (*Guarda esta tarjeta. Úsala en ensayo. Guárdala en la ronda de evidencia.*)",
+    "mission_reminder": "Brief Sophia on the bakery. 3 minutes. English only.",
+    "5_must_say_chunks": [
+      "Hi Sophia.",
+      "The brief is for La Esquina Bakery.",
+      "The font is ________ — a classic serif.",
+      "The colors are ________ and ________.",
+      "The logo is a ________ ________."
+    ],
+    "5_toolbelt_target_minimum": ["font", "serif", "colors", "warm", "logo"],
+    "3_grammar_targets": ["Gr1 be (is, are)", "Gr3 a/an", "Gr4 adjective position"],
+    "3_pronunciation_watch_words": ["SE-rif (not SER-if)", "PLAY-fair (compound stress)", "RE-fresh-er (2nd syllable)"],
+    "emergency_phrases_if_stuck": [
+      "Let me think...",
+      "How do you say...?",
+      "I mean...",
+      "Again, please?"
+    ]
+  },
+
+  "instructor_observation_guide": {
+    "title": "👁️ INSTRUCTOR'S OBSERVATION GUIDE — E4 Speaking (5 pts)",
+    "instrument": "Escala de Estimación No 4 (Rating Scale per PM-4.1 canon)",
+    "observation_criteria": [
+      {
+        "criterion": "Communicative effectiveness",
+        "description": "Partner understands ≥4 of 5 decisions without repetition",
+        "score_2": "Full clarity; partner filled 5/5 slots",
+        "score_1": "Mostly clear; 4/5 slots filled",
+        "score_0": "Incomplete; ≤3/5 slots filled"
+      },
+      {
+        "criterion": "Vocabulary use (Toolbelt)",
+        "description": "Uses ≥6 Toolbelt terms correctly",
+        "score_2": "≥8 terms, all accurate",
+        "score_1": "6-7 terms, mostly accurate",
+        "score_0": "≤5 terms or frequent misuse"
+      },
+      {
+        "criterion": "Grammar (Gr1-Gr4)",
+        "description": "Correctly applies be + a/an + adjective position",
+        "score_2": "No significant errors in target structures",
+        "score_1": "Minor errors but meaning preserved",
+        "score_0": "Errors obscure meaning"
+      },
+      {
+        "criterion": "Pronunciation (Survival Words + chunks)",
+        "description": "Intelligible pronunciation of Survival Words",
+        "score_2": "All Survival Words clearly pronounced; word stress correct",
+        "score_1": "Most Survival Words pronounced; some stress errors",
+        "score_0": "Multiple pronunciation errors affect intelligibility"
+      },
+      {
+        "criterion": "Interaction / Pragmatics",
+        "description": "Maintains interaction; responds to questions; uses closings",
+        "score_2": "Smooth interaction; greets + closes; responds to both follow-ups",
+        "score_1": "Interaction functional; 1 follow-up handled",
+        "score_0": "Interaction breaks down; no closing"
+      }
+    ],
+    "score_conversion": "Total possible: 10 pts (5 criteria × 2 pts). Divide by 2 → final score out of 5.",
+    "expected_errors_by_level": {
+      "A1_1": ["Gr4 reversal (colors warm)", "a/an confusion", "Spanish loan words (brief = briefing sometimes OK)"],
+      "A1_2_stretch": ["Would-be contractions (It's vs It is)", "Tag questions attempted"]
+    },
+    "plan_B_if_learner_freezes": [
+      "Instructor provides first Language Bank chunk as prompt",
+      "Allow 5 seconds silence before stepping in",
+      "Switch to cue card visible mode (-1 pt max)",
+      "In worst case: convert to recorded pitch (asynchronous, Archetype C)"
+    ]
+  },
+
+  "pm0_protocol_session_level": {
+    "session": 4,
+    "grammar_groups": {
+      "intro": [],
+      "consolidate": ["Gr1 be", "Gr2 pronouns/demos", "Gr3 a/an", "Gr4 adjective position"],
+      "apply": ["Gr5 imperative (early exposure)"]
+    },
+    "grammar_carga_validation": "PASS — 0 Intro (consolidation session)",
+    "feedback": {
+      "dominant_mode": "Recast during rehearsal + Explicit correction on pronunciation + Accept fluency errors during free production",
+      "accuracy_techniques": [
+        "Pronunciation correction via minimal pairs warm-up",
+        "Recast on Gr4 word order errors (learner says 'colors warm' → teacher recasts 'yes, warm colors')",
+        "Shadowing of PM-2.6 chunks builds prosodic accuracy"
+      ],
+      "fluency_techniques": [
+        "Gap task (Archetype A) — meaning-first",
+        "Mingle (Archetype E) — volume + variety",
+        "Substitution drill (Archetype D) — low-stakes iteration",
+        "Don't interrupt during 3-min evidence window"
+      ]
+    },
+    "l1_management": {
+      "percentage": 15,
+      "english_zone": "Activated fully during evidence round; relaxed slightly during rehearsal",
+      "legitimate_L1_uses": [
+        "Emergency when partner is stuck — single word fallback",
+        "Reflection in POST phase",
+        "Last-resort check of rubric criterion"
+      ],
+      "reduction_strategy": "S4=15% → S5=12%"
+    },
+    "stress_pronunciation": {
+      "focus_words": ["SE-rif", "DIS-play", "RE-fresh-er", "il-LUS-tra-tor", "CAN-vas"],
+      "physical_techniques": [
+        "Clap on stressed syllable during pronunciation warmup",
+        "Body lean forward on stressed word",
+        "Whisper unstressed function words (a, the, is)"
+      ],
+      "board_marking": "Stressed syllable marked with big dot; minimal pair contrasts in 2 columns"
+    },
+    "success_vocabulary": {
+      "target_terms_for_productive_use": ["font", "serif", "sans-serif", "color", "warm", "cool", "logo", "canvas", "brief", "client", "bold", "layer"],
+      "factors_applied": {
+        "Salience": "Cue card highlights 5 must-say chunks",
+        "Use": "Productive, verifiable use in 3-min briefing",
+        "Connection": "Every term already seen in Reading, Vocab, Listening",
+        "Context": "Authentic workplace briefing",
+        "Emotion": "Rehearsal + partner support = low stress evidence",
+        "Spaced_repetition": "4th encounter across skills",
+        "Synergy": "Speaking consolidates all prior input; vocab is now ACTIVE not just passive"
+      }
+    }
+  },
+
+  "integration_all_archetypes_policy": {
+    "rationale": "Per Sergio's directive (2026-04-20): 'Quiero todos los arquetipos para todos los PM.' All 5 Speaking archetypes documented.",
+    "fit_analysis_for_A1_1": {
+      "highest_fit": ["D (Rehearsal & Scaffolding) — safest start", "A (Gap Tasks) — clean evidence", "E (Interaction Dynamics) — volume of reps"],
+      "stretch_with_scaffolding": ["B (Role-Based) — needs character rehearsal", "C (Multimedia) — needs tech + re-takes"],
+      "tech_dependent": ["C (recording equipment)"]
+    },
+    "recommended_default_for_G1": "FLOW-S1 (Scaffolding) for safety → FLOW-S2 (Gap Task) for evidence. Hybrid D→A optimal.",
+    "workbook_use": "Each archetype populates one Workbook speaking extension activity."
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.8",
+    "pm_name": "Speaking — The Mission",
+    "session": 4,
+    "phase_sena": "Apropiación",
+    "rap_id": "RAP-G1-522309",
+    "cefr_level": "A1.1",
+    "activities": [
+      {
+        "number": 1,
+        "type": "procedimental",
+        "statement": "Participar en simulación oral de 3 minutos presentando decisiones de diseño (fuente + paleta + logo + justificación) al rol de Art Director, usando ≥6 términos del Toolbelt, chunks del Manual de Supervivencia Oral y estructuras Gr1-Gr4 con pronunciación inteligible de las 5 Survival Words.",
+        "didactic_strategy": "Juego de roles + TBLT (Information Gap)",
+        "didactic_technique": "Role play + Dramatización + Information exchange",
+        "archetype_options": ["A", "B", "C", "D", "E"]
+      }
+    ],
+    "hours": {
+      "direct": 1.5,
+      "autonomous": 0.5,
+      "source": "pm-2-0.json S4 allocation"
+    },
+    "evidence": {
+      "generates_evidence": true,
+      "type": "Desempeño",
+      "code": "E4",
+      "description": "El aprendiz demuestra capacidad de comunicación oral en inglés ejecutando rol de Junior Designer en briefing simulado de 3 minutos, con pronunciación inteligible, uso productivo de vocabulario técnico, precisión gramatical en Gr1-Gr4 y adecuación pragmática al registro semi-formal de estudio de diseño.",
+      "evaluation_technique": "Observación",
+      "instrument_number": 4,
+      "instrument_type": "Escala de Estimación No 4",
+      "points": 5
+    },
+    "environment": {
+      "type": "Aula (con espacios para simulaciones en pares/tríos)",
+      "materials": [
+        "Tarjetas de rol con guiones técnicos (Andrés / Sophia / Observer)",
+        "Sophia Questionnaire Sheet (blank template)",
+        "Design Decision Card (Andrés's briefing card)",
+        "Pronunciation guide con IPA + stress dots + minimal pairs",
+        "Trabalenguas técnicos impresos (4 phrases)",
+        "Bell/timer para rotations",
+        "Smartphone opcional para recording (Archetype C)",
+        "Word Wall visible (desde S2)"
+      ],
+      "instructors": "Instructor de inglés técnico (observador primario durante evidencia)"
+    },
+    "contributes_to_consolidated_quiz": false,
+    "quiz_skill": null,
+    "quiz_points": 0,
+    "quiz_item_count": 0,
+    "quiz_note": "Speaking is evaluated LIVE via Escala de Estimación (observation). Does NOT contribute items to Cuestionario Consolidado S6. Its 5 pts are independent formative evidence E4.",
+    "ambiente_learning": {
+      "configuration": "Pares o tríos distribuidos en el aula; espacios semi-privados para evidencia",
+      "equipment": "Cronómetro visible + Word Wall + Pronunciation board + Cue cards",
+      "conditions": "Acústica aceptable para oír claramente entre pares; minimizar ruido cruzado"
+    },
+    "estrategia_didactica": {
+      "momento_sena": "3.3 Apropiación (transición a 3.4 Transferencia)",
+      "estrategia": "Simulación auténtica + Task-Based Language Teaching",
+      "justificacion": "S4 consolida todas las habilidades previas en producción oral. La Mission es el punto de integración donde vocabulary + grammar + listening model + pronunciation scaffolding se manifiestan en habla real con propósito comunicativo verificable.",
+      "tecnicas_por_arquetipo": {
+        "A": "Information Gap + Reasoning Gap",
+        "B": "Professional roleplay con Observer feedback",
+        "C": "Podcast monologue grabado",
+        "D": "Scaffolded Dialogue → Substitution → Free Production",
+        "E": "Mingle + Speed Briefing + Quiz"
+      }
+    },
+    "voc_dimensions": {
+      "cognitiva_saber": {
+        "verbo": "Recordar",
+        "objeto": "vocabulario técnico del Toolbelt (≥6 términos productivos) y chunks del Manual de Supervivencia Oral",
+        "condicion": "en contexto de briefing simulado con presión temporal de 3 minutos"
+      },
+      "procedimental_hacer": {
+        "verbo": "Ejecutar",
+        "objeto": "briefing oral completo con 5 decisiones técnicas + 2 respuestas a preguntas follow-up",
+        "condicion": "usando Gr1-Gr4 correctamente, pronunciando inteligiblemente las 5 Survival Words y manteniendo registro semi-formal"
+      },
+      "actitudinal_ser": {
+        "verbo": "Asumir",
+        "objeto": "rol profesional de Junior Designer con confianza y apertura a feedback",
+        "condicion": "respetando normas de turno conversacional, mostrando tolerancia a errores propios/pares y usando frases de emergencia cuando sea necesario sin caer en español"
+      }
+    }
+  },
+
+  "validacion": {
+    "checks_internos": [
+      {"check": "10 checks PM-2.8", "status": "PASS"},
+      {"check": "CEFR A1.1 (3-min evidence, chunks no grandes, pronunciation scaffolded)", "status": "PASS"},
+      {"check": "Integración de TODOS los 5 arquetipos A-E con PRE/DURING/POST", "status": "PASS"},
+      {"check": "Pronunciation scaffolding integrado (PM-2.7 deprecated absorbed)", "status": "PASS"},
+      {"check": "Information gap genuino (Sophia questionnaire)", "status": "PASS"},
+      {"check": "E4 = 5 pts con Escala de Estimación No 4", "status": "PASS"},
+      {"check": "NO contribute_to_cuestionario (Speaking no va al quiz)", "status": "PASS"},
+      {"check": "Coherencia con PM-2.6 Listening (prosody model) y PM-2.4 Writing (content)", "status": "PASS"},
+      {"check": "Bilingual Unified + Zero Meta-Talk en cue card", "status": "PASS"},
+      {"check": "Instructor's Guide completa con Plan B", "status": "PASS"}
+    ],
+    "pm0_anchors_pass": [
+      {"anchor": "§9.1 L1% S4=15", "status": "PASS"},
+      {"anchor": "§9.2 Grammar 0 Intro (consolidation)", "status": "PASS"},
+      {"anchor": "§5.10 SUCCESS 7/7", "status": "PASS"},
+      {"anchor": "§5.7 Pronunciation scaffolding incorporated", "status": "PASS"},
+      {"anchor": "§6 A1.1 descriptors (can describe simple facts about work, using simple phrases and sentences)", "status": "PASS"}
+    ],
+    "universe_anchor_check": {
+      "uses_G1_toolbelt": true,
+      "uses_G1_universe": "Pixel & Ink Studio + Andrés brief La Esquina Bakery + Sophia listens",
+      "not_copied_from_other_guide": true,
+      "content_hash_unique": "Mission Brief authored from G1 context; pronunciation content authored from G1 Toolbelt phonemes"
+    }
+  },
+
+  "siguiente_paso": "Ejecutar PM-2.9 — Language Functions — Communicative Competence (Sesión 5, genera E5 Language Functions 5 pts, integra TODOS los 5 arquetipos A-E: Information Exchange / Persuasion / Social-Interpersonal / Gamified / Academic-Discourse. Activates F1-F5 from pm-1-2.json. Hours 1.0+0.25. L1% S5=12)."
+}

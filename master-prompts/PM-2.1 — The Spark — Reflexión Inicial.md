@@ -1,3 +1,16 @@
+---
+version: 2.0
+last_verified: 2026-04-13
+session: 1
+fase_sena: "Reflexión Inicial"
+activity_type: "cognitiva"
+generates_evidence: false
+evidence_type: null
+contributes_to_cuestionario: false
+cuestionario_skill: null
+cuestionario_points: 0
+---
+
 # PM-2.1: THE SPARK & PROBLEMATIC SITUATION
 
 ## FPI SENA — Bilingüismo
@@ -149,6 +162,59 @@ Tu tarea: Generar el WORKSHEET "THE SPARK" — Reflexión Inicial para la guía 
 | **Alimenta a** | PM-2.2 | El Spark activa la motivación; el Gap Analysis diagnostica |
 | **Se relaciona con** | PM-2.2 | PM-2.1 + PM-2.2 forman la sesión de apertura |
 | **Se ubica en** | GFPI-F-135 Sección 3.1 | Reflexión Inicial |
+
+---
+
+## ACTIVITY CARD OUTPUT
+
+Esta sección define el output estructurado que este PM entrega al PM-2.11 (GFPI-F-134 Row Assembler).
+
+```yaml
+activity_card:
+  pm_id: "PM-2.1"
+  pm_name: "The Spark"
+  session: 1
+  phase_sena: "Reflexión Inicial"
+  rap_id: "[A GENERAR — viene del Session Blueprint PM-2.0]"
+  
+  activities:
+    - number: 1
+      type: "cognitiva"
+      statement: "[A GENERAR — Verbo infinitivo + objeto + condición]"
+      didactic_strategy: "Aprendizaje colaborativo"
+      didactic_technique: "Lluvia de ideas"
+    
+    - number: 2
+      type: "cognitiva"
+      statement: "[A GENERAR — Verbo infinitivo + objeto + condición]"
+      didactic_strategy: "Aprendizaje colaborativo"
+      didactic_technique: "Panel discussion"
+  
+  hours:
+    direct: 1.0
+    autonomous: 0.25
+  
+  evidence:
+    generates_evidence: false
+    type: null
+    description: ""
+    evaluation_technique: null
+    instrument_number: null
+    instrument_type: null
+  
+  environment:
+    type: "Aula"
+    materials:
+      - "Proyector"
+      - "Pizarrón / Papel grande (flip chart)"
+      - "Marcadores"
+    instructors: "Instructor de inglés + Técnico especialista"
+  
+  contributes_to_consolidated_quiz: false
+  quiz_skill: null
+  quiz_points: 0
+  quiz_item_count: 0
+```
 
 ---
 

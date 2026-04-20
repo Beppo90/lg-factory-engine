@@ -1,3 +1,16 @@
+---
+version: 2.0
+last_verified: 2026-04-13
+session: 1
+fase_sena: "Contextualización"
+activity_type: "cognitiva"
+generates_evidence: false
+evidence_type: null
+contributes_to_cuestionario: false
+cuestionario_skill: null
+cuestionario_points: 0
+---
+
 # PM-2.2: THE GAP ANALYSIS & PRIOR KNOWLEDGE
 
 ## FPI SENA — Bilingüismo
@@ -101,7 +114,7 @@ Tu tarea: Generar el WORKSHEET "THE GAP ANALYSIS" — Contextualización, implem
 - Nombre de la guía: [nombre]
 - Tema técnico: [descripción]
 - Vocabulario clave: [20 términos de PM-1.2]
-- Grammar targets: [estructuras de PM-2.7]
+- Grammar targets: [estructuras de PM-2.10]
 - Nivel CEFR: [default A1.1-A1.2]
 
 ### INSTRUCCIONES DE GENERACIÓN:
@@ -138,6 +151,53 @@ Tu tarea: Generar el WORKSHEET "THE GAP ANALYSIS" — Contextualización, implem
 | **Alimenta a** | PM-2.3 | El Gap Analysis activa el interés para el Reading |
 | **Se relaciona con** | PM-4.1§5 | Los Blind Spots originales se usan en el Feedback Loop |
 | **Se ubica en** | GFPI-F-135 Sección 3.2 | Contextualización |
+
+---
+
+## ACTIVITY CARD OUTPUT
+
+Esta sección define el output estructurado que este PM entrega al PM-2.11 (GFPI-F-134 Row Assembler).
+
+```yaml
+activity_card:
+  pm_id: "PM-2.2"
+  pm_name: "Gap Analysis"
+  session: 1
+  phase_sena: "Contextualización"
+  rap_id: "[A GENERAR — viene del Session Blueprint PM-2.0]"
+  
+  activities:
+    - number: 1
+      type: "cognitiva"
+      statement: "[A GENERAR — Verbo infinitivo + objeto + condición]"
+      didactic_strategy: "Aprendizaje colaborativo"
+      didactic_technique: "Análisis de casos"
+  
+  hours:
+    direct: 1.5
+    autonomous: 0.5
+  
+  evidence:
+    generates_evidence: false
+    type: null
+    description: ""
+    evaluation_technique: null
+    instrument_number: null
+    instrument_type: null
+  
+  environment:
+    type: "Aula"
+    materials:
+      - "Proyector"
+      - "Formularios de autoevaluación impresos"
+      - "Computadores con acceso a Moodle"
+    instructors: "Instructor de inglés + Técnico especialista"
+  
+  contributes_to_consolidated_quiz: false
+  quiz_skill: null
+  quiz_points: 0
+  quiz_item_count: 0
+```
 
 ---
 

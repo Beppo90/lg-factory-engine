@@ -8,7 +8,7 @@ from pathlib import Path
 from engine.adapters.base import LLMAdapter
 from engine.models import LLMResponse, TokenUsage
 
-DEFAULT_MODEL = "claude-sonnet-4-20250514"
+DEFAULT_MODEL = "claude-opus-4-6"
 
 
 def _load_dotenv():

@@ -1,5 +1,23 @@
 # PM-1.2: SCOPE & SEQUENCE — DESARROLLO POR BLOQUE + CURACIÓN DE MATERIAL AUTÉNTICO
 
+---
+
+**Metadata:**
+```yaml
+version: 2.6
+last_verified: 2026-04-20
+outputs:
+  - pm-1-2.json con 4 bloques canónicos (v2.6): Bloque 0 / A / B / C
+  - Scope & Sequence del bloque (Bloque A)
+  - GFPI-F-134 cols 1-5 (Bloque B, para PM-2.0 y PM-2.11)
+  - 3 fichas de curación + universo narrativo (Bloque C)
+  - program_context (pasado desde PM-1.1)
+required_inputs:
+  - pm-0-context.json (Fase 0)
+  - pm-1-1.json (con campo pm0_anchors_ref v2.6)
+feeds_into: [PM-2.0, PM-2.1, PM-2.11, G1]
+```
+
 ## FPI SENA — Bilingüismo
 
 ---
@@ -35,23 +53,33 @@
 Un documento titulado:
 **`[PROGRAMA] — GUÍA [#] — [Nombre] — Scope & Sequence + Curación`**
 
-Que contiene DOS bloques:
+Que contiene **CUATRO bloques canónicos (v2.6)**:
 
+### BLOQUE 0 — PRESENTACIÓN L1 (onboarding al aprendiz)
+0. **Presentación:** Un texto motivacional a modo de introducción dirigido al aprendiz, **escrito en español (L1)**. Describe el objeto de estudio y su importancia en el ámbito productivo. Explica cómo será la formación y cuáles son los temas principales que se van a abordar. Texto conciso, **extensión máxima de diez renglones**. Este bloque onboarda al aprendiz al universo narrativo de la guía (personajes, empresa ficticia, sector) antes de cualquier contenido en inglés.
 
-### BLOQUE 0 — PRESENTACIÓN DE LA GUÍA (NUEVO)
-0. **Presentación:** Un texto motivacional a modo de introducción dirigido al aprendiz. Describe el objeto de estudio y su importancia en el ámbito productivo. Explica cómo será la formación y cuáles son los temas principales que se van a abordar. Texto conciso, extensión máxima de diez renglones.
-
-### BLOQUE A — SCOPE & SEQUENCE (lo que ya hacía)
-1. **Identification:** Programa, código, guía, macro-temática, intensidad, nivel CEFR
+### BLOQUE A — SCOPE + INTEGRATIVE TASK + EVALUATION MATRIX
+1. **Identification:** Programa, código, guía, macro-temática, intensidad, nivel CEFR (heredado de `pm-0-context.json.rango_cefr` para esta guía)
 2. **Guide Design DNA:** Nombre conceptual, enfoque, entendimientos perdurables
 3. **Content Core:** Technical topics, communicative functions, language functions, vocabulary (20 términos)
-4. **The Integrative Task:** Proyecto formativo de la guía
-5. **Evaluation Matrix:** Triada de evidencias SENA (conocimiento, desempeño, producto)
+4. **The Integrative Task:** Proyecto formativo de la guía (descripción de la Misión Final que se ejecuta en S6½-S8)
+5. **Evaluation Matrix:** Triada de evidencias SENA (conocimiento, desempeño, producto) + **matriz de 55 pts canónica (v2.6):** E1–E5 × 5pts = 25pts + E6 Cuestionario Consolidado × 25pts + Misión Final × 5pts = 55pts (Misión Final NO suma al total formal de 50pts — v2.3.1 canon)
 
-### BLOQUE B — CURACIÓN DE MATERIAL AUTÉNTICO (la novedad)
-6. **Curated Sources:** 3 fichas de curación (cada una con análisis lingüístico-comunicativo completo)
-7. **Instructor Selection:** Espacio para que el instructor elija 2 stories ganadoras y asigne roles
-8. **Universe Foundation:** Mapeo de cómo las 2 stories elegidas alimentan el universo narrativo completo
+### BLOQUE B — GFPI-F-134 COLUMNAS 1-5
+6. **Competencia (Col 1):** Verbo infinitivo + objeto + contexto laboral (~150 chars)
+7. **RAP (Col 2):** Enunciado Bloom L3+ con condición de desempeño
+8. **Saberes: Conceptos y Principios (Col 3):** 8-10 conceptos clave con jerarquía
+9. **Saberes: Procesos (Col 4):** 6-8 procedimientos secuenciados
+10. **Criterios de Evaluación (Col 5):** 4-6 criterios observables
+
+Este bloque es la entrada directa a PM-2.0 (Session Architect) y PM-2.11 (Row Assembler). Las columnas 6-11 se pueblan en Fase 2.
+
+### BLOQUE C — CURACIÓN + UNIVERSO NARRATIVO
+11. **Curated Sources:** 3 fichas de curación (cada una con análisis lingüístico-comunicativo completo) — ver §FICHA DE CURACIÓN abajo
+12. **Instructor Selection:** Espacio para que el instructor elija 2 stories ganadoras y asigne roles (Story A → Reading, Story B → Listening, Story C → refuerzo)
+13. **Universe Foundation:** Mapeo de cómo las 2 stories elegidas + el `pm-0-context.json.universo_narrativo` alimentan el universo narrativo completo de ESTA guía (personajes específicos, escenarios, productos tipicos, terminología del sector)
+
+> **REGLA CRÍTICA v2.3 (recordatorio):** El universo narrativo es **ORIGINAL por guía**. No puede copiarse de otra guía. Los personajes, escenarios y productos deben derivar del sector + del `pm-0-context.json.universo_narrativo` del programa, pero adaptarse al enfoque específico de esta guía (G1 vs G2 vs G3…).
 
 ---
 
@@ -166,6 +194,69 @@ Después de ver las 3 fichas de curación:
 
 ---
 
+## OUTPUT GFPI-F-134 (Columnas 1-5)
+
+Además del Scope & Sequence, PM-1.2 debe producir un bloque estructurado con las primeras 5 columnas de la matriz GFPI-F-134, que será consumido directamente por PM-2.0 (RAP Session Architect) y PM-2.11 (Row Assembler). Este output garantiza que la planeación pedagógica esté alineada desde el diseño curricular hasta los instrumentos de evaluación.
+
+### Schema de salida `gfpi_f134_cols_1_5`
+
+```yaml
+gfpi_f134_cols_1_5:
+  # Columna 1: COMPETENCIA
+  competencia:
+    codigo: ""              # Código numérico (ej. 22030101)
+    nombre: ""              # Nombre completo de la competencia
+    
+  # Columna 2: RESULTADO DE APRENDIZAJE (RAP)
+  resultado_aprendizaje:
+    codigo: ""              # Código del RAP (ej. 220301011)
+    descripcion: ""         # Descripción completa del RAP en estructura Bloom L3+
+    
+  # Columna 3: SABERES DE CONCEPTOS Y PRINCIPIOS
+  saberes_conceptos_principios:
+    - ""  # Lista de saberes cognitivos (el "saber")
+          # Fuente: contenidos temáticos del Scope & Sequence
+          # Formato: frases sustantivas, sin verbos
+          # Ejemplo: "Norma ISO 1219 para simbología técnica"
+          # Máximo 8-10 items
+    
+  # Columna 4: SABERES DE PROCESO
+  saberes_proceso:
+    - ""  # Lista de saberes procedimentales (el "saber hacer")
+          # Fuente: habilidades y procedimientos del Scope & Sequence
+          # Formato: frases con verbo en infinitivo
+          # Ejemplo: "Identificar símbolos técnicos en planos industriales"
+          # Máximo 6-8 items
+          
+  # Columna 5: CRITERIOS DE EVALUACIÓN
+  criterios_evaluacion:
+    - ""  # Lista de criterios de evaluación
+          # Fuente: criterios del diseño curricular SENA
+          # Formato: Verbo observable + objeto + estándar de calidad
+          # Ejemplo: "Identifica correctamente el 90% de símbolos ISO 1219"
+          # Máximo 4-6 items, 1:1 con las 6 evidencias de columna 8
+          
+  # Metadata del bloque
+  source_pm: "PM-1.2"
+  macrotheme: ""            # Nombre del macrotema (del PM-1.1)
+  cefr_level: ""            # Nivel CEFR (ej. A1.1)
+  program_type: ""          # "técnico" | "tecnólogo"
+```
+
+### Guía de generación de cada columna
+
+**Columna 1 (COMPETENCIA):** Extraída del diseño curricular SENA o del `program_context` si fue proporcionado. Formato: máximo 150 caracteres, estructura verbo infinitivo + objeto + contexto.
+
+**Columna 2 (RAP):** Descripción específica del RAP usando verbos Bloom L3+ (Aplicar, Analizar, Evaluar, Crear). Debe ser evaluable directamente por las 6 evidencias.
+
+**Columna 3 (SABERES CONCEPTOS):** Derivados directamente de los **Technical Topics** del Scope & Sequence. Convertir títulos y temas en conceptos clave organizados jerárquicamente. Máximo 8-10.
+
+**Columna 4 (SABERES PROCESO):** Derivados de las **Communicative Functions** y **Language Functions in Context** del Scope & Sequence. Formular como procedimientos secuenciados. Máximo 6-8.
+
+**Columna 5 (CRITERIOS EVALUACIÓN):** Reflejar los estándares de calidad del diseño curricular y las 6 evidencias obligatorias (Reading, Writing, Listening, Speaking, Language Functions, Cuestionario). Cada criterio debe ser observable, medible y verificable.
+
+---
+
 ## 9 REGLAS DE DISEÑO
 
 ### REGLA 1 — EL DNA DE LA GUÍA
@@ -274,16 +365,29 @@ Tu tarea: Generar el SCOPE & SEQUENCE completo + CURACIÓN DE MATERIAL AUTÉNTIC
    - 3 evidencias (Conocimiento, Desempeño, Producto)
    - Técnica, instrumento y criterios para cada una
 
-**BLOQUE B — CURACIÓN DE MATERIAL AUTÉNTICO:**
+**BLOQUE B — OUTPUT GFPI-F-134 (COLUMNAS 1-5):**
 
-6. Busca 3 fuentes REALES y VERIFICABLES sobre el macrotema usando web search:
+6. Genera un bloque estructurado `gfpi_f134_cols_1_5` con las primeras 5 columnas de la matriz GFPI-F-134:
+   - **Columna 1 (COMPETENCIA):** Código y nombre literal del diseño curricular (o del `program_context` si fue proporcionado)
+   - **Columna 2 (RAP):** Código y descripción del RAP usando verbos Bloom L3+
+   - **Columna 3 (SABERES CONCEPTOS):** Extraer 8-10 saberes cognitivos del Content Core (Technical Topics) que generaste. Formato: frases sustantivas sin verbos.
+   - **Columna 4 (SABERES PROCESO):** Extraer 6-8 saberes procedimentales de las Communicative Functions y Language Functions que generaste. Formato: frases con verbo en infinitivo.
+   - **Columna 5 (CRITERIOS EVALUACIÓN):** Generar 4-6 criterios observables y medibles alineados con las 6 evidencias de evaluación (Reading, Writing, Listening, Speaking, Language Functions, Cuestionario). Formato: Verbo observable + objeto + estándar de calidad.
+   
+   Incluir también metadata: macrotheme, cefr_level, program_type.
+   
+   Este bloque se pasa directamente a PM-2.0 (RAP Session Architect) y PM-2.11 (Row Assembler) para que generen las columnas 6-11 de GFPI-F-134.
+
+**BLOQUE C — CURACIÓN DE MATERIAL AUTÉNTICO:**
+
+7. Busca 3 fuentes REALES y VERIFICABLES sobre el macrotema usando web search:
    - Cada fuente debe ser de un género textual DIFERENTE (artículo, blog, transcripción/caso de estudio)
    - Máximo 3 años de antigüedad
    - Relevancia directa al macrotema y al entorno ocupacional del programa
    - Gancho motivacional para aprendices técnicos jóvenes de 18-22 años
    - Potencial visual (diagramas, fotos, infografías)
 
-7. Para cada fuente, genera una FICHA DE CURACIÓN con:
+8. Para cada fuente, genera una FICHA DE CURACIÓN con:
    - Metadatos completos (título, autor, publicación, fecha, URL)
    - Género textual
    - Resumen (3 oraciones)
@@ -295,9 +399,9 @@ Tu tarea: Generar el SCOPE & SEQUENCE completo + CURACIÓN DE MATERIAL AUTÉNTIC
    - Rol propuesto (Story A → Reading / Story B → Listening / Story C → Backup)
    - Notas de adaptación (qué mantener, qué simplificar para A1, potencial visual)
 
-8. Si el instructor aportó material adicional, analízalo con el mismo formato de ficha.
+9. Si el instructor aportó material adicional, analízalo con el mismo formato de ficha.
 
-9. Presenta las 3 fichas y explica por qué cada una es candidata para cada rol.
+10. Presenta las 3 fichas y explica por qué cada una es candidata para cada rol.
 
 **NOTA PARA EL INSTRUCTOR:**
 Después de ver las 3 fichas, elige 2 stories ganadoras y asigna roles.
@@ -319,10 +423,12 @@ A partir de esas 2 stories se levantará TODO el universo narrativo de la guía.
 
 | Relación | Prompt | Descripción |
 |----------|--------|-------------|
-| **Recibe input de** | PM-1.1 | Un bloque de la ruta macro-temática |
+| **Recibe input de** | PM-1.1 | Un bloque de la ruta macro-temática + `program_context` (opcional) |
+| **Alimenta a** | PM-2.0 | Columnas 1-5 de GFPI-F-134 (competencia, RAP, saberes, criterios) |
 | **Alimenta a** | PM-2.1 a PM-2.10 | El DNA, vocabulario, grammar targets, universo narrativo Y las stories auténticas se heredan |
 | **Alimenta a** | PM-2.3 | Story A → base para el Reading Anchor |
 | **Alimenta a** | PM-2.4 | Story B → base para el Listening Script |
+| **Alimenta a** | PM-2.11 | Columnas 1-5 de GFPI-F-134 como punto de partida para ensamble de fila completa |
 | **Alimenta a** | PM-3.1 | El Scope & Sequence define la estructura del Playbook |
 | **Alimenta a** | PM-3.3 | El potencial visual de las stories alimenta el Canva deck |
 | **Alimenta a** | PM-4.1, PM-4.2 | La Evaluation Matrix define los instrumentos |

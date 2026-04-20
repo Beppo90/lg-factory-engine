@@ -1,0 +1,674 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.6",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (Required Output Schema) + PM-3.1 v2.5.1 propagation contract",
+  "session": 1,
+  "session_name": "First Strokes — Welcome to the Visual World",
+  "run_id": "MGV-2026-04-20",
+  "guide": "G1 — The Visual Communicator",
+  "guia_numero": 1,
+  "programa": "Desarrollo de Medios Gráficos Visuales",
+  "programa_codigo": "522309",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.1",
+    "PM-2.2"
+  ],
+  "habilidades_foco": [],
+  "habilidades_soporte": [
+    "Speaking conversacional (receptivo)",
+    "Vocabulary (icebreaker)"
+  ],
+  "cefr": "A1.1",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-20",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "completed",
+  "piloto_note": "Primera de 8 sesiones MGV G1 — patrón canónico v2.5.1 con pm0_protocol heredado de pm-3-1.json.pm0_alignment_by_session[0] vía script pm-3-2-pm0-propagate.js.",
+  "momento_sena": "3.1 Reflexión Inicial + 3.2 Contextualización",
+  "estrategia_didactica": "ABP + Diagnóstico activador — El Studio y el brief visual motivan el inglés técnico (apertura); Gap Analysis diagnostica saberes previos para personalizar el resto del RAP.",
+  "justificacion_didactica": "S1 no es una sesión de enseñanza — es una sesión de activación afectiva (English Zone + contrato) + cartografía cognitiva (KWL + Gap Card). El aprendiz entra al 'taller simulado' Pixel & Ink Studio y se compromete públicamente con el aprendizaje. Sin producción evaluada. L1 máximo del RAP (30%) — andamio emocional. Teacher Talk modelo central. El objetivo pedagógico es reducir el filtro afectivo y construir base para S2 Apropiación.",
+  "session_header": {
+    "titulo": "SESSION 1: First Strokes — Welcome to the Visual World",
+    "subtitulo": "MGV Guía 1 · The Visual Communicator · Build-Out — Playbook v2.5.1",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.1 — The Spark (Reflexión Inicial, 55 min)",
+      "PM-2.2 — Gap Analysis (Contextualización, 50 min)"
+    ],
+    "habilidades_soporte": [
+      "Speaking receptivo (icebreaker)",
+      "Vocabulary icebreaker (10 términos)"
+    ],
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk está pre-modelado. Duración suma exacta 360 min. L1 tope = 30%. English Zone se activa EN ESTA SESIÓN — acto constitutivo."
+  },
+  "materials_checklist": [
+    {
+      "item": "PM-2.1 + PM-2.2 worksheets impresos",
+      "cantidad": "8 sets completos",
+      "verificado": false
+    },
+    {
+      "item": "Mood Board vacío A3 con 9 celdas en blanco",
+      "cantidad": "8 unidades (1 por aprendiz)",
+      "verificado": false
+    },
+    {
+      "item": "Gap Card impresa — 6 áreas de autoevaluación",
+      "cantidad": "8 unidades",
+      "verificado": false
+    },
+    {
+      "item": "KWL Chart handout (Know / Want / Learned)",
+      "cantidad": "8 unidades",
+      "verificado": false
+    },
+    {
+      "item": "Learning Contract plantilla con 3 prioridades + firma",
+      "cantidad": "8 unidades",
+      "verificado": false
+    },
+    {
+      "item": "Welcome presentation slides (Pixel & Ink Studio + avatares)",
+      "cantidad": "1 proyector + archivo",
+      "verificado": false
+    },
+    {
+      "item": "Survival Words — 10 tarjetas impresas (brief, serif, deadline, client, design, graphic, color, typography, studio, designer)",
+      "cantidad": "1 set para Word Wall",
+      "verificado": false
+    },
+    {
+      "item": "Cinta de color (English Zone)",
+      "cantidad": "1 rollo",
+      "verificado": false
+    },
+    {
+      "item": "Post-its (2 colores: conozco / no conozco)",
+      "cantidad": "4 paquetes",
+      "verificado": false
+    },
+    {
+      "item": "Papelógrafos grandes para flip chart (round-robin)",
+      "cantidad": "3 unidades",
+      "verificado": false
+    },
+    {
+      "item": "Cronómetro visible",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Marcadores negros y naranja (naming ceremony)",
+      "cantidad": "2 + 2",
+      "verificado": false
+    },
+    {
+      "item": "Lápices de colores (mood board icebreaker)",
+      "cantidad": "1 caja de 12",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO dividido en 3 zonas: (1) ESQUINA SUPERIOR DERECHA — ENGLISH ZONE 🔵 activada al inicio. (2) CENTRO — Welcome title + 'Pixel & Ink Studio · MGV Guía 1 · First Strokes'. (3) COLUMNA LATERAL IZQUIERDA — Survival Words con stress marcado: deSIGN · GRAphic · COlor · tyPOgraphy · BRIEF · CLIent · deadLINE · stUdio · deSIGner · SErif (MAYÚSCULA = sílaba tónica). Word Wall adyacente en pared lateral — al final de S1 tiene las 10 tarjetas + contrato English Zone firmado.",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:25",
+      "duracion_min": 25,
+      "bloque": "SET-UP",
+      "actividad": "Warm-up icebreaker + English Zone declaration + objetivos + survival words intro",
+      "agrupacion": "Whole class → Individual",
+      "notas": "Energía alta. Instructor modelo central — driller suave."
+    },
+    {
+      "tiempo": "0:25-1:20",
+      "duracion_min": 55,
+      "bloque": "WHILE A",
+      "actividad": "PM-2.1 Activity 1 — Andrés's Shoes (individual reflection)",
+      "agrupacion": "Individual silencioso",
+      "notas": "L1 tolerado — cada uno a su ritmo. Instructor circula sin corregir."
+    },
+    {
+      "tiempo": "1:20-2:10",
+      "duracion_min": 50,
+      "bloque": "WHILE B",
+      "actividad": "PM-2.1 Activity 2 — Round-Robin Design Words",
+      "agrupacion": "Grupos de 3-4 + plenaria",
+      "notas": "Flip chart compartido. Instructor anota errores comunes para debrief."
+    },
+    {
+      "tiempo": "2:10-2:30",
+      "duracion_min": 20,
+      "bloque": "BREAK",
+      "actividad": "Receso activo",
+      "agrupacion": "—",
+      "notas": "Recordar hidratación. Mantener English Zone si alguien pregunta."
+    },
+    {
+      "tiempo": "2:30-3:15",
+      "duracion_min": 45,
+      "bloque": "WHILE C",
+      "actividad": "PM-2.1 Activity 3 — Connect to the Guide + Mini Learning Contract",
+      "agrupacion": "Whole class → Individual",
+      "notas": "Puente hacia PM-2.2 — el contrato madura en WHILE E."
+    },
+    {
+      "tiempo": "3:15-4:05",
+      "duracion_min": 50,
+      "bloque": "WHILE D",
+      "actividad": "PM-2.2 Activity 1 — THE MIRROR Self-Assessment (6 áreas × 1-5)",
+      "agrupacion": "Individual silencioso + handout",
+      "notas": "Silencio académico. Instructor garantiza honestidad sin juicio."
+    },
+    {
+      "tiempo": "4:05-5:00",
+      "duracion_min": 55,
+      "bloque": "WHILE E",
+      "actividad": "PM-2.2 Activities 2-3 — Blind Spots + Learning Contract Ceremony",
+      "agrupacion": "Individual + optional pair share + ceremony",
+      "notas": "Firma ceremonial. Contrato se revisará en S8."
+    },
+    {
+      "tiempo": "5:00-6:00",
+      "duracion_min": 60,
+      "bloque": "WRAP-UP",
+      "actividad": "Exit ticket + trabajo autónomo brief + preview S2",
+      "agrupacion": "Whole class → Individual",
+      "notas": "Cerrar con energía positiva. Asignar homework: 3 imágenes + KWL pre-llenado."
+    }
+  ],
+  "set_up": {
+    "duracion_min": 25,
+    "warm_up": {
+      "nombre": "The Studio Opens — Mood Board Icebreaker",
+      "pasos": [
+        "Instructor recibe en la puerta saludando: 'Welcome to Pixel & Ink Studio!' (sonrisa + gesto).",
+        "Cada aprendiz recibe una mini-hoja en blanco y 1 lápiz de color — se les pide dibujar/escribir 3 cosas visuales que vieron de camino al SENA (letreros, logos, colores).",
+        "Instructor circula 3 min leyendo en voz alta algunos ejemplos: 'Nice! A red bus. A Pepsi logo. Good eye!' (modelado de lenguaje sin exigir respuesta).",
+        "Transición: 'Everything you saw is DESIGN. You are already designers — you just don't know it yet.'",
+        "Instructor declara y dibuja el símbolo ENGLISH ZONE 🔵 en esquina superior derecha del tablero."
+      ],
+      "duration_min": 8
+    },
+    "teacher_talk_opening": "*Good morning, team! ¡Buenos días, equipo! Welcome to our studio — our Pixel & Ink Studio. I am Sergio. I am your instructor. This is our classroom, but today it is a DESIGN STUDIO. Look around — everything you see is designed. The letters on the wall. Your phone. Even the coffee cup. My job is to help you see the world like a designer sees it — and to talk about it in English. That is our mission for the next 8 sessions. And from today — this corner (señala tablero) is the ENGLISH ZONE. When you are here, try to think in English. It's ok to make mistakes. It's ok to use Spanish sometimes — especially today. But we are going to grow together. Ready? Let's begin.*",
+    "objective": "Al final de S1, el aprendiz (1) ha declarado y firmado su contrato English Zone; (2) se ha autodiagnosticado en 6 áreas de inglés técnico de diseño; (3) ha identificado sus 3 BLIND SPOTS como prioridades personales; (4) reconoce 10 Survival Words con stress marcado; (5) ha presentado/aceptado a los 5 avatares del Studio (Sophia, Andrés, Laura, Diego, Don Pedro).",
+    "icq": [
+      "*Where are we right now — in Spain or in a design studio?* → Esperan: Design studio / Pixel & Ink Studio",
+      "*Can you speak Spanish today?* → Esperan: Yes, sometimes / A little bit",
+      "*What's that blue circle on the board?* → Esperan: English Zone / The English place"
+    ],
+    "facilitation_notes": [
+      "💡 No presente gramática formal. S1 es 100% actitudinal — construir confianza.",
+      "💡 Si un aprendiz dice 'no sé inglés', responda: 'Perfect — that's why you are here. I will help you. We start from zero together.'",
+      "💡 La declaración de English Zone es ceremonial. Dibuje el círculo azul 🔵 deliberadamente — es un momento de umbral."
+    ],
+    "checkpoint": "✓ Verbal survey: '¿Listos para empezar?' — 8 de 8 levantan la mano o dicen 'yes'. Si hay baja energía, agregue 1 min de risa: cuente una anécdota corta (en español ok) de su primer día como designer."
+  },
+  "while": {
+    "duracion_min": 260,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "Andrés's Shoes — Individual Reflection (PM-2.1 Activity 1)",
+        "duracion_min": 55,
+        "worksheet_ref": "PM-2.1, Activity 1",
+        "agrupacion": "Individual silencioso",
+        "objetivo": "Activar esquema personal sobre diseño gráfico. El aprendiz se pone en el lugar de Andrés (Junior Designer avatar del aprendiz) y escribe en español qué haría frente al primer brief profesional. Objetivo: bajar filtro afectivo y abrir conversación interna.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor distribuye worksheet PM-2.1 Activity 1 + Survival Words card (10 términos en IPA con stress).",
+          "2. Instructor lee en voz alta el escenario: 'It's your first day at Pixel & Ink Studio. Your boss Sophia says: Andrés, I need a poster for a bakery. Here's the brief. You have 3 hours. Go!' (Traducir la primera vez: 'Es tu primer día...').",
+          "3. Preguntas disparadoras (proyectadas en inglés + español): (1) What do you do first? ¿Qué haces primero? (2) What do you need to know? ¿Qué necesitas saber? (3) What English words do you already know about design? ¿Qué palabras de diseño ya conoces en inglés?",
+          "4. Instructor da 15 min silenciosos. Música instrumental baja de fondo.",
+          "5. Aprendices escriben respuestas en español (L1 explícitamente permitido). Se invitan a subrayar en su respuesta cualquier palabra inglesa que usen.",
+          "6. Instructor circula leyendo sobre el hombro sin corregir. Toma nota mental de palabras inglesas que aparecen orgánicamente (las usará en Bloque B).",
+          "7. A los 15 min: señal de tiempo. '1 minute — finish your last thought.'"
+        ],
+        "teacher_talk_instruction": "*OK team, here's your first task. Imagine you are Andrés — Junior Designer at Pixel & Ink Studio. Your boss gives you a brief. You have 3 hours. What do you do first? What do you need to know? And — this is important — what English words do you already know about design? Write in Spanish. Use English where you can. 15 minutes. Silent work. Music on. Go.*",
+        "icq": [
+          "*Can I write in Spanish?* → Esperan: Yes / Yes, write in Spanish",
+          "*How long?* → Esperan: 15 minutes",
+          "*Should I talk with my partner?* → Esperan: No / Silent / Alone"
+        ],
+        "answer_key_inline": {
+          "respuestas_esperadas_what_do_you_do_first": [
+            "Leo el brief / I read the brief",
+            "Le pregunto al cliente / I ask the client",
+            "Busco referencias / I search for references",
+            "Pienso en colores / I think about colors"
+          ],
+          "respuestas_esperadas_what_do_you_need_to_know": [
+            "¿Qué tipo de poster? / What type of poster?",
+            "¿Qué colores? / What colors?",
+            "¿Para quién es? / Who is it for?",
+            "¿Cuándo es el deadline? / When is the deadline?"
+          ],
+          "palabras_ingles_esperadas_organicamente": [
+            "design · designer · color · logo · client · poster · brief · deadline"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 No corrija errores. Este bloque es diagnóstico afectivo, no gramatical.",
+          "💡 Si un aprendiz se bloquea 5 min sin escribir, acérquese en voz baja: '¿Una palabra? Solo una. What's your first thought?'",
+          "💡 Anote 3-5 palabras inglesas que aparezcan orgánicamente — las mencionará en el Bloque B como celebración ('¡Look what we already know!')."
+        ],
+        "checkpoint": "✓ Al completar los 15 min: instructor hace survey visual — ¿quién escribió al menos 3 líneas? 6 de 8 = proceed. <6 = dar 3 min extra con consigna '1 idea más, en cualquier idioma'.",
+        "transition": "*Good work. You have ideas. You have questions. Now let's put them together — in groups — and see how much ENGLISH we already know. Stand up, form groups of 4.*",
+        "tecnica_didactica": "Análisis de situación problémica / Reflexión guiada individual"
+      },
+      {
+        "letra": "B",
+        "nombre": "Round-Robin Design Words — Flip Chart (PM-2.1 Activity 2)",
+        "duracion_min": 50,
+        "worksheet_ref": "PM-2.1, Activity 2",
+        "agrupacion": "Grupos de 3-4 + plenaria",
+        "objetivo": "Producir colectivamente una lista de 'palabras de diseño que conocemos en inglés' vs 'palabras que necesitamos aprender'. Activar memoria léxica grupal y celebrar saberes previos.",
+        "instrucciones_paso_a_paso": [
+          "1. Formar 2 grupos de 4 aprendices (heterogéneos: mezclar quienes escribieron mucho con quienes escribieron poco).",
+          "2. Cada grupo recibe 1 papelógrafo grande + 2 colores de post-its (verde = 'conozco' / naranja = 'no conozco').",
+          "3. Consigna: Durante 20 minutos, round-robin — cada uno dice 1 palabra de diseño que conoce en inglés (verde) o 1 que quisiera conocer (naranja). Si se repite, se salta turno. Meta: mínimo 15 post-its verdes + 15 naranja por grupo.",
+          "4. Instructor pone cronómetro visible. Música instrumental.",
+          "5. Instructor circula y DEJA QUE EL GRUPO ERROE — no corrige pronunciación. Solo modela la palabra repitiéndola con stress.",
+          "6. A los 20 min: plenaria. Cada grupo pega su papelógrafo en el muro. Instructor lee en voz alta los verdes celebrando: 'Wow, we know: color, logo, brief, poster... 15 words! That's amazing for Day 1.'",
+          "7. Luego los naranjas: 'And we want to learn: typography, serif, vector... don't worry, we will learn them together.'",
+          "8. Stress marking ceremonia: instructor selecciona 5 palabras verdes y 5 naranja, las escribe en el tablero con la sílaba tónica en MAYÚSCULA (deSIGN, COLor, TYpography, sERIF, paLETTE)."
+        ],
+        "teacher_talk_instruction": "*Groups of 4. Each group: one flip chart, two post-it colors. Green = I know this word in English. Orange = I want to learn this word. Round-robin: each person says ONE word, then the next person, then the next. If someone said your word — skip. Goal: 15 green + 15 orange. 20 minutes. Ready? Go.*",
+        "icq": [
+          "*How many words do we want?* → Esperan: 15 + 15 / 30 total / A lot",
+          "*Green means...?* → Esperan: I know / I know this word",
+          "*If someone said my word, what do I do?* → Esperan: Skip / Next person / Pass"
+        ],
+        "answer_key_inline": {
+          "palabras_verdes_esperadas": [
+            "color · logo · brief · client · poster · design · designer · font · bold · italic · studio · image · print · pencil · computer"
+          ],
+          "palabras_naranja_esperadas": [
+            "typography · serif · sans-serif · vector · palette · layout · composition · margin · grid · typeface · kerning · leading · hierarchy · alignment · character"
+          ],
+          "stress_marked_board_words": [
+            "deSIGN /dɪˈzaɪn/",
+            "COLor /ˈkʌlər/",
+            "tyPOgraphy /taɪˈpɒɡrəfi/",
+            "SErif /ˈserɪf/",
+            "paLETTE /ˈpælɪt/"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Celebre el volumen — el mensaje implícito es 'already know more than you think'.",
+          "💡 Si un grupo se estanca (<10 palabras en 10 min): sugiera categorías: 'Think colors. Think tools. Think actions.'",
+          "💡 Stress marking es el PRIMER CONTACTO con PM-0 §5.13 noticing — no explique la teoría, solo modele y pida eco."
+        ],
+        "checkpoint": "✓ Ambos papelógrafos tienen ≥15+15 post-its Y se realizó stress marking de 5 palabras en tablero ✓. Si falta volumen: dar 3 min extra.",
+        "transition": "*Amazing. We have 30 words today — and we haven't even started lessons. Now let's look at the map — what will we learn in the next 8 sessions?*",
+        "tecnica_didactica": "Lluvia de ideas estructurada (round-robin) + Word Wall participativa"
+      },
+      {
+        "letra": "C",
+        "nombre": "Connect to the Guide — Mini Learning Contract (PM-2.1 Activity 3)",
+        "duracion_min": 45,
+        "worksheet_ref": "PM-2.1, Activity 3",
+        "agrupacion": "Whole class → Individual",
+        "objetivo": "Mostrar el mapa de 8 sesiones (sin entrar en detalles técnicos) y conectar las palabras emergidas del Bloque B con los hitos de la guía. El aprendiz pre-completa la primera versión de su contrato de aprendizaje (que madurará en Bloque E).",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor proyecta mapa de 8 sesiones (Roadmap A1.1 tomado de pm-3-1.json overview_table simplificado).",
+          "2. Explica en inglés simple: 'Session 1 — today, welcome. Session 2 — reading about typography. Session 3 — writing a font card. Session 4 — color talk. Session 5 — studio conversation. Session 6 — quiz day. Session 7 — your mission begins. Session 8 — you present to Sophia.'",
+          "3. Instructor señala las palabras naranja del papelógrafo de Bloque B y dice: 'Look — typography (orange, we don't know) will become GREEN in Session 3. Palette will become GREEN in Session 4. That's the plan.'",
+          "4. Distribuye mini-contrato de 1 página: 'What I want to learn most in MGV Guide 1' + 3 líneas en blanco para priorizar.",
+          "5. 15 min individuales — aprendices escriben sus 3 prioridades iniciales (pueden ser en español).",
+          "6. 5 min — 2 voluntarios comparten en voz alta.",
+          "7. Instructor cierra: 'Perfect. This is Version 1 of your contract. After lunch-time reflection (Block D + E), you will make Version 2 — the official one, signed.'"
+        ],
+        "teacher_talk_instruction": "*Look at the board. This is our map. 8 sessions. Today is Session 1 — the door. Session 2, 3, 4, 5 — we learn. Session 6 — we check. Session 7 and 8 — your final mission, your Mood Board, presented to Sophia. Now — write down: what do YOU most want to learn? Three things. In Spanish is ok. 15 minutes. Quiet work.*",
+        "icq": [
+          "*How many sessions in this guide?* → Esperan: 8",
+          "*When is the final mission?* → Esperan: Session 7 and 8",
+          "*How many priorities do I write?* → Esperan: 3 / Three"
+        ],
+        "answer_key_inline": {
+          "prioridades_tipicas_esperadas": [
+            "Aprender vocabulario de diseño / Learn design vocabulary",
+            "Hablar en una reunión de diseño / Speak in a design meeting",
+            "Leer un brief en inglés / Read a brief in English",
+            "Escribir un email técnico / Write a technical email",
+            "Presentar mi portafolio / Present my portfolio"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Este contrato es VERSIÓN 1 — no lo firme aún. La ceremonia de firma es en Bloque E post-Gap Analysis.",
+          "💡 Invite voluntarios, no fuerce. Si nadie comparte: instructor comparte el suyo como modelo — 'My priority: to know all your names in English by Session 3.'"
+        ],
+        "checkpoint": "✓ 8 de 8 aprendices tienen 3 líneas escritas (pueden ser en español). Si alguien está en blanco — acérquese y pregunte: '¿Qué palabra naranja del papelógrafo te llamó la atención?'",
+        "transition": "*Break time — 20 minutes. Stretch, water, snack. When you come back — we will look in the mirror. (Señal visual al cronómetro.)*",
+        "tecnica_didactica": "Aprendizaje visible (visible roadmap) + escritura reflexiva individual"
+      },
+      {
+        "letra": "D",
+        "nombre": "THE MIRROR — Self-Assessment 6 Áreas (PM-2.2 Activity 1)",
+        "duracion_min": 50,
+        "worksheet_ref": "PM-2.2, Activity 1 — The Mirror Self-Assessment",
+        "agrupacion": "Individual silencioso + handout",
+        "objetivo": "Cartografiar el estado actual del aprendiz en 6 áreas de inglés técnico de diseño usando escala 1-5 (🔴🟠🟡🟢🔵). Diagnóstico honesto sin juicio — input para identificar BLIND SPOTS en Bloque E.",
+        "instrucciones_paso_a_paso": [
+          "1. Distribuir Gap Card (handout THE MIRROR). 6 áreas: A1 Vocabulario Diseño, A2 Escuchar diseño, A3 Leer brief, A4 Escribir email técnico, A5 Hablar en studio, A6 Gramática básica be/a-an/plural.",
+          "2. Explicar escala: 1 (🔴 no sé nada) · 2 (🟠 he escuchado palabras) · 3 (🟡 sé un poco) · 4 (🟢 puedo en situaciones simples) · 5 (🔵 seguro y fluido).",
+          "3. Instrucción central: 'This is THE MIRROR. No judgment. No grade. No teacher watching. Honest self-assessment. For YOU. 20 minutes. Silent work. Music on.'",
+          "4. Instructor se retira al frente del aula — explícitamente NO circula. Lectura de un libro/cuaderno visible = modelado de 'no estoy mirando tu puntaje'.",
+          "5. Aprendices marcan 1-5 en cada área + suman su total (6-30).",
+          "6. Reflection field — 'One honest sentence about me as an English learner' (1 oración, en español ok)."
+        ],
+        "teacher_talk_instruction": "*Now — the Mirror. Six areas of design English. Rate yourself 1 to 5. Red to Blue. Be honest. There is no grade. This is for YOU — not for me. I will NOT look at your paper. 20 minutes. Music on. Silence.*",
+        "icq": [
+          "*Will I get a grade?* → Esperan: No / No grade",
+          "*Can I lie?* → Esperan: No / Be honest",
+          "*How long?* → Esperan: 20 minutes"
+        ],
+        "answer_key_inline": {
+          "nota": "Self-assessment — no hay respuesta correcta. Patrón observado: la mayoría se auto-puntúa 1-2 en la primera sesión. Normal y esperado — es el piso del RAP.",
+          "total_esperado_promedio_A1.1_inicio": "6-15 / 30 (es decir: promedio 1-2.5 por área)"
+        },
+        "facilitation_notes": [
+          "💡 CRÍTICO — no circule. Si lo ven mirar, comprometen la honestidad.",
+          "💡 Si alguien pregunta '¿debo ser duro conmigo?' responda: 'Be real. Just real.'",
+          "💡 Si alguien se auto-puntúa 5 en todo: respete — el BUG de autopercepción es auto-corregible en S3-S4 con tarea real."
+        ],
+        "checkpoint": "✓ 8 de 8 aprendices tienen las 6 áreas puntuadas + total calculado + reflection field escrito. Si falta — dar 5 min extra.",
+        "transition": "*Look at your mirror. Now — we find the 3 LOWEST scores. Those are your BLIND SPOTS. Those are our priorities.*",
+        "tecnica_didactica": "Autoevaluación diagnóstica (escala cualitativa) + metacognición reflexiva"
+      },
+      {
+        "letra": "E",
+        "nombre": "Blind Spots + Learning Contract Ceremony (PM-2.2 Activities 2-3)",
+        "duracion_min": 55,
+        "worksheet_ref": "PM-2.2, Activity 2 (Blind Spots) + Activity 3 (Learning Contract)",
+        "agrupacion": "Individual + optional pair share + ceremonia grupal",
+        "objetivo": "Convertir los 3 puntajes más bajos del Mirror en 3 prioridades personales del contrato. Firmar ceremonialmente el contrato. Cerrar el ciclo emocional S1 con compromiso público.",
+        "instrucciones_paso_a_paso": [
+          "1. 15 min — BLIND SPOTS: 'Look at your 6 ratings. Circle the 3 LOWEST. Those are your Blind Spots. For each one, complete: I am a 🔴 in [area] — but by Session 8, I want to be a 🟡.'",
+          "2. Optional pair share (3 min): aprendiz comparte UN blind spot con un compañero si lo desea. Consigna: solo escuchar, no aconsejar.",
+          "3. 15 min — LEARNING CONTRACT: Aprendiz traduce sus 3 blind spots en 3 prioridades formales del Learning Contract (plantilla impresa).",
+          "4. Campo 'I will know I succeeded when...' — cada prioridad tiene una evidencia observable (ej: 'When I can describe my Mood Board for 2 minutes in English').",
+          "5. 10 min — CEREMONIA DE FIRMA: Todos los aprendices se ponen de pie. Instructor invita: 'Raise your contract. This is your promise — to yourself, to our studio, to Sophia. On three — we sign. One. Two. Three.' Todos firman simultáneamente.",
+          "6. 10 min — storage ceremonia: cada contrato se guarda en un sobre marcado con el nombre del aprendiz. Sobre sellado. 'I keep these safe. We open them in Session 8.' Instructor guarda la caja de sobres en un lugar visible.",
+          "7. Instructor proyecta preview: 'Session 8, Week X, we open these again. Your future self will read your Day 1 contract. It will be powerful.'"
+        ],
+        "teacher_talk_instruction": "*Three lowest scores — those are your Blind Spots. Not failures. Just places where we grow. For each, write: I am a red in this area — but by Session 8, I want to be a yellow. Three blind spots. 15 minutes. Then — we turn them into a Contract. Official. Signed. For the next 8 weeks.*",
+        "icq": [
+          "*How many blind spots?* → Esperan: 3 / Three",
+          "*Will my partner see my contract?* → Esperan: Only if I share / Optional",
+          "*When do we open the contract again?* → Esperan: Session 8"
+        ],
+        "answer_key_inline": {
+          "blind_spot_sentence_frame": "'I am a 🔴 in [area]. By Session 8, I want to be a 🟡 in [area].'",
+          "contract_priorities_esperadas_A1.1": [
+            "Priority 1 — Learn 30 design vocabulary words (I will know I succeeded when I can describe my Mood Board in 2 minutes)",
+            "Priority 2 — Speak in simple sentences (I will know I succeeded when I can introduce myself as a designer)",
+            "Priority 3 — Read a design brief (I will know I succeeded when I can find the 4 key parts of Sophia's brief)"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 La ceremonia de firma es SOLEMNE — no apresure. 60 segundos de silencio después. Música suave.",
+          "💡 Si un aprendiz llora o muestra emoción fuerte: respete. S1 puede ser catártica para quienes 'nunca entendieron inglés'.",
+          "💡 Los sobres sellados son objeto físico poderoso — consiga sobres amarillos o naranja (colores paleta Pixel & Ink) para refuerzo simbólico."
+        ],
+        "checkpoint": "✓ 8 de 8 contratos firmados + sellados en sobre con nombre + guardados en caja visible del instructor.",
+        "transition": "*Your contract is safe. Now — one last thing. Exit ticket — tell me three things about today.*",
+        "tecnica_didactica": "Autoevaluación diagnóstica + Learning Contract ABP (compromiso ceremonial)"
+      }
+    ],
+    "breaks": [
+      {
+        "tiempo": "2:10-2:30",
+        "duracion_min": 20,
+        "tipo": "Receso activo (café + baño + estiramiento)",
+        "notas": "Recordar hidratación. Mantener English Zone si alguien pregunta algo técnico — pero el receso permite libre L1."
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 60,
+    "exit_ticket": {
+      "tarea": "Exit Ticket S1 — 3 líneas: (1) ONE English word I learned today (+ stress mark), (2) ONE thing I understand better now, (3) ONE question I still have. Escribir en tarjeta de 10×15 cm proporcionada.",
+      "success_criteria": "Las 3 líneas completas. Mínimo 1 palabra en inglés. La pregunta puede ser en español.",
+      "duration_min": 15
+    },
+    "teacher_talk_closing": "*Team — today was big. You opened your mirrors. You signed your contracts. You learned 30 design words. You met the Studio. This is a gift — to yourselves. Next session — Session 2 — we read like designers. Serif. Sans-serif. Typography. Come rested. Come hungry for words. Well done, Junior Designers. See you Monday. ¡Nos vemos el lunes, diseñadores!*",
+    "trabajo_autonomo": {
+      "actividad": "Homework S1 → Review S2: Traer 3 imágenes visuales (foto de celular o revista recortada) que llamen la atención en la semana + completar KWL Chart pre-llenado (K = conozco · W = quiero saber · L = vacío, se llenará en S8).",
+      "instrucciones_detalladas": "1. Durante la semana, observa tu entorno con 'ojos de diseñador'. 2. Toma 3 fotos (o recorta 3 imágenes) que te llamen la atención: letreros, logos, empaques, carteles. 3. Para cada imagen, anota en español: ¿qué color domina? ¿qué fuente parece ser? ¿qué sensación transmite? 4. Pre-llena la columna K (Know) del KWL chart con 5 cosas que sabes hoy del inglés de diseño. 5. Lleva ambas cosas a S2.",
+      "entregable": "3 imágenes físicas o digitales + KWL chart con columna K llena (5 ítems mínimo).",
+      "cuando_se_revisa": "S2 warm-up — compartir 1 imagen con compañero (2 min) y agregar 3 palabras nuevas a la columna K del KWL. Sin evaluación formal — el instructor valida presencia (entregó / no entregó).",
+      "tiempo_estimado_min": 90
+    },
+    "preview_next_session": "*Next session — Session 2 — is Reading Day. Text: Serif vs Sans-Serif. 150 words. Jigsaw reading. Your first EVIDENCE — Cuestionario No 1 (5 points). Come ready to read like a designer.*",
+    "facilitation_notes": [
+      "💡 Cierre con energía positiva. S1 es emocional — que se vayan con sensación de pertenencia.",
+      "💡 Si queda tiempo (<5 min): aplauso grupal por el primer día. No subestime el valor simbólico."
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "Bloque A — Andrés's Shoes Individual Reflection",
+      "items": [
+        {
+          "pregunta": "What do you do first when you receive a brief?",
+          "respuesta_correcta": "Read the brief / Ask the client / Search for references / Think about colors",
+          "alternativas": [
+            "Leo el brief",
+            "Le pregunto al cliente",
+            "Busco referencias"
+          ],
+          "puntos": 0,
+          "nota": "No evaluado — diagnóstico afectivo"
+        },
+        {
+          "pregunta": "What English design words do you already know?",
+          "respuesta_correcta": "design, color, logo, client, poster, brief, deadline, studio, designer, font",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "No evaluado — celebrar cualquier cantidad"
+        }
+      ]
+    },
+    {
+      "actividad": "Bloque B — Round-Robin Design Words",
+      "items": [
+        {
+          "pregunta": "Minimum green + orange post-its per group?",
+          "respuesta_correcta": "15 green + 15 orange = 30 total",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Meta grupal, no individual"
+        },
+        {
+          "pregunta": "Stress marked words on board (5)",
+          "respuesta_correcta": "deSIGN, COLor, tyPOgraphy, SErif, paLETTE",
+          "alternativas": [
+            "deSIGNer",
+            "BRIEF"
+          ],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "Bloque D — THE MIRROR Self-Assessment",
+      "items": [
+        {
+          "pregunta": "¿Cuántas áreas se autoevalúan?",
+          "respuesta_correcta": "6 (A1-A6)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Escala usada",
+          "respuesta_correcta": "1 🔴 · 2 🟠 · 3 🟡 · 4 🟢 · 5 🔵",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "Bloque E — Learning Contract",
+      "items": [
+        {
+          "pregunta": "How many priorities?",
+          "respuesta_correcta": "3",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "When is the contract re-opened?",
+          "respuesta_correcta": "Session 8 (ceremonial re-opening)",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "Agregar 5 palabras más al papelógrafo verde/naranja del Bloque B.",
+      "Escribir 1 Priority extra en el Learning Contract — una prioridad bonus personal (no evaluada).",
+      "Ayudar al instructor a pegar Word Wall tarjetas en pared.",
+      "Traducir 1 frase del Teacher Talk al español escrito."
+    ],
+    "more_support_needed": [
+      "Tiempo extra en Bloque A (hasta 20 min) si el bloqueo es afectivo — acompañamiento individual.",
+      "En Bloque B — permitir que digan palabras en español + que el grupo les ayude a traducir.",
+      "En Bloque D — ofrecer la Gap Card con ejemplos pre-rellenados para 1 área como modelo.",
+      "En Bloque E — permitir que escriban el contrato 100% en español si la presión afectiva es alta; la versión bilingüe se completa en casa.",
+      "Contacto uno-a-uno al final de la sesión — 'How was your Day 1? How can I help you for Session 2?'"
+    ]
+  },
+  "instructor_self_check": [
+    "✓ ¿Declaré la English Zone con dibujo ceremonial 🔵 en el primer minuto?",
+    "✓ ¿Modelé el stress de las 5 palabras (deSIGN, COLor, tyPOgraphy, SErif, paLETTE) en el tablero?",
+    "✓ ¿Me retiré físicamente durante el Bloque D Self-Assessment para proteger honestidad?",
+    "✓ ¿La ceremonia de firma del Learning Contract tuvo silencio + solemnidad + sellado en sobre?",
+    "✓ ¿Terminé con preview explícito de S2 (Serif vs Sans-Serif, Cuestionario No 1, 5 pts)?"
+  ],
+  "totals_check": {
+    "set_up": 25,
+    "while_bloque_a": 55,
+    "while_bloque_b": 50,
+    "while_bloque_c": 45,
+    "break": 20,
+    "while_bloque_d": 50,
+    "while_bloque_e": 55,
+    "wrap_up": 60,
+    "total": 360,
+    "check_result": "✓ EXACTO 360 min (6h directas) + 90 min autónomo = 7.5h S1"
+  },
+  "rap_status": "S1 completada — contrato firmado + diagnóstico 6 áreas + 30 palabras Day 1 capturadas. No genera evidencia formal (E1-E5 ni E6). Umbral de S2 Apropiación abierto.",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[0]",
+    "__contract_version__": "v2.5.1",
+    "grammar_groups": [
+      {
+        "group_id": "Gr 1",
+        "group_name": "Verbo be (afirmativo contraído)",
+        "nivel_activacion": "Reciclaje receptivo",
+        "ejemplo_en_sesion": "Teacher Talk: 'I am Sergio. This is Pixel & Ink Studio.' (sin análisis formal)"
+      },
+      {
+        "group_id": "Gr 5",
+        "group_name": "Imperativo afirmativo",
+        "nivel_activacion": "Reciclaje receptivo",
+        "ejemplo_en_sesion": "Teacher Talk: 'Open your notebook. Write your name. Share with your partner.' (sin análisis formal)"
+      }
+    ],
+    "grammar_carga_check": "0/2 Intro — S1 es sesión de diagnóstico sin enseñanza gramatical explícita (PM-0 §9.2) ✓",
+    "feedback": {
+      "mode": "ACCURACY",
+      "rationale": "Día 1 prioriza precisión en chunks sociales fijos (greetings). Fluency vendrá desde S4. PM-0 §5.11 + methodological_shifts_per_guide[0].",
+      "accuracy_techniques": [
+        "Choral repetition en saludos + nombres de elementos gráficos",
+        "Finger drilling muy breve (3-5 repeticiones) para palabras tónicas",
+        "Modelo-eco (instructor dice → clase repite)"
+      ],
+      "fluency_techniques": [],
+      "mixed_techniques": []
+    },
+    "l1_management": {
+      "l1_percentage": 30,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_policy_per_guide[0].s1_to_s8 — S1 30% (PM-0 §9.1)",
+      "l1_rationale": "Día 1 establecer confianza y motivación. L1 es andamio emocional que permite reducción progresiva. Welcome presentation dominante en L1."
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "design",
+          "ipa": "/dɪˈzaɪn/",
+          "tonica": "SEGUNDA (deSIGN)"
+        },
+        {
+          "word": "graphic",
+          "ipa": "/ˈɡræfɪk/",
+          "tonica": "PRIMERA (GRAphic)"
+        },
+        {
+          "word": "color",
+          "ipa": "/ˈkʌlər/",
+          "tonica": "PRIMERA (COlor)"
+        },
+        {
+          "word": "typography",
+          "ipa": "/taɪˈpɒɡrəfi/",
+          "tonica": "SEGUNDA (tyPOgraphy)"
+        }
+      ],
+      "techniques": [
+        "Clapping silábico — 1 palmada por sílaba, fuerte en tónica",
+        "Board marking — MAYÚSCULA en sílaba tónica: 'deSIGN / GRAphic'"
+      ],
+      "source": "PM-0 §5.13 — Noticing de stress con soporte físico"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "design",
+        "graphic",
+        "color",
+        "typography",
+        "studio",
+        "designer",
+        "logo",
+        "poster",
+        "pencil",
+        "computer"
+      ],
+      "factors_applied": [
+        "Sounds",
+        "Encounter",
+        "Self-expression"
+      ],
+      "operationalization": "Sounds: stress marking inicial de 4 palabras + IPA en Word Wall. Encounter: primer contacto controlado en Welcome presentation + mood board icebreaker (múltiples exposiciones). Self-expression: cada aprendiz nombra 10 elementos de su mood board usando las 10 palabras target.",
+      "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS)"
+    },
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1",
+      "habilidad_principal": "produccion_oral",
+      "descriptor_activo": "Produce palabras y frases aisladas. Puede nombrar objetos presentes en el entorno laboral.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot.produccion_oral"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Muy lenta — pausas largas entre palabras, repetir cada frase 2x",
+      "extension_textos": "1-3 oraciones + apoyo visual obligatorio (nunca sólo texto)",
+      "andamiaje": "Máximo — frames completos, word banks a la vista, visuales en cada slide",
+      "rol_docente": "Modelo central — driller — facilitador emocional del Día 1",
+      "source": "PM-0 §8 — Hoja de ruta A1.1 → A2.x | methodological_shifts_per_guide[0]"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A1 — Asignación subnivel A1.1 coherente",
+        "B5 — Gestión L1 (30% tope S1)",
+        "B8 — Andamiaje máximo (frames + visuales)",
+        "C1 — Bloque FPI Reflexión Inicial/Contextualización",
+        "D1 — Contribuye al canon 55 (no formalmente, sí contrato)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S1."
+    }
+  }
+}

@@ -1,0 +1,719 @@
+{
+  "pm_id": "PM-2.10",
+  "pm_name": "Grammar — Structure Use",
+  "run_id": "MGV-2026-04-20",
+  "guide": "G1 — The Visual Communicator",
+  "program_code": "522309",
+  "program_name": "Desarrollo de Medios Gráficos Visuales",
+  "rap_id": "RAP-G1-522309",
+  "session": "3 + 5 (dual placement)",
+  "phase_sena": "Apropiación",
+  "cefr_level": "A1.1",
+  "content_universe": "Pixel & Ink Studio — Grammar emerges from authentic design-studio situations: introducing yourself to a client (Gr1 be + Gr2 pronouns), describing font/color/shape (Gr3 plurals+a/an, Gr4 adjective position), giving design instructions (Gr5 imperative).",
+  "derived_from": [
+    "pm-1-2.json (G1 grammar roadmap: 7 groups INTRO)",
+    "pm-2-0.json (S3 grammar anchor + S5 consolidation)",
+    "pm-2-3.json (Master Anchor Text — grammar backbone embedded)",
+    "pm-2-4.json (Writing task where Gr1-Gr4 are applied)",
+    "pm-0-context.json (§9.2 Grammar max 2 Intro; §5.10 SUCCESS)"
+  ],
+
+  "pm0_anchor": {
+    "cefr_ceiling": "A1.1",
+    "grammar_session_3_intro": ["Gr2 pronouns/possessives/demonstratives", "Gr4 adjective position pre-noun"],
+    "grammar_session_3_consolidate": ["Gr1 be", "Gr3 plurals + a/an"],
+    "grammar_session_5_intro": ["Gr5 imperative (positive + negative)"],
+    "grammar_session_5_consolidate": ["Gr1 be", "Gr2 pronouns", "Gr3 a/an + plurals", "Gr4 adjective position"],
+    "grammar_session_5_apply": ["Gr14 preposition IN (location — in the file, in the canvas)", "Gr15 connectors AND/BUT"],
+    "l1_percentage_s3": 20,
+    "l1_percentage_s5": 12,
+    "feedback_mode_dominant": "Guided discovery (PRE) + Explicit explanation (DURING) + Error analysis (POST)",
+    "success_factors_applied": [
+      "Salience (target structures highlighted via color + underline + box)",
+      "Use (immediate productive use in mini-tasks per archetype)",
+      "Connection (each structure tied to a real Toolbelt noun/verb)",
+      "Context (workplace scenarios — design studio utterances)",
+      "Emotion (playful competitions in Archetype C; personal sentences in D)",
+      "Spaced repetition (Gr1+Gr3 recycled from S2; Gr2+Gr4 re-practiced S4 and S5)",
+      "Synergy (Grammar mirrors Reading, Writing, Listening, Speaking structures)"
+    ]
+  },
+
+  "universe_anchor": {
+    "grammar_lives_in_context": "Each grammar group is introduced through Pixel & Ink Studio utterances, NOT through isolated drill sentences.",
+    "utterances_by_group": {
+      "Gr1_be": [
+        "I am Andrés. (Introducing self — Monday)",
+        "She is Sophia. (Pointing to AD in team photo)",
+        "The font is Playfair Display. (Design decision email)",
+        "The colors are warm. (Design decision email)"
+      ],
+      "Gr2_pronouns_possessives_demonstratives": [
+        "My client is La Esquina Bakery.",
+        "Your font choice is excellent. (Sophia to Andrés)",
+        "This is the brief.",
+        "That is the logo file.",
+        "These are the colors.",
+        "Our team meets at 9 AM."
+      ],
+      "Gr3_plurals_a_an": [
+        "A serif font. An email. The fonts are beautiful.",
+        "The brief has a logo, an icon, and two colors.",
+        "I open a canvas. I save a file. I send an email."
+      ],
+      "Gr4_adjective_position_pre_noun": [
+        "Warm colors. (not: colors warm)",
+        "A round seal. (not: a seal round)",
+        "A bold font. A cool palette. A simple logo."
+      ],
+      "Gr5_imperative": [
+        "Open Illustrator.",
+        "Save the file.",
+        "Don't use red for the bakery.",
+        "Send the email.",
+        "Please check the brief."
+      ],
+      "Gr14_preposition_IN": [
+        "The logo is in the file.",
+        "The text is in the canvas.",
+        "Save it in the cloud."
+      ],
+      "Gr15_connectors_AND_BUT": [
+        "Warm colors AND a serif font.",
+        "The logo is round BUT simple."
+      ]
+    }
+  },
+
+  "grammar_dosage_validation": {
+    "session_3_intro_count": 2,
+    "session_3_intro_groups": ["Gr2", "Gr4"],
+    "session_5_intro_count": 1,
+    "session_5_intro_groups": ["Gr5"],
+    "total_session_3_groups_active": 4,
+    "total_session_5_groups_active": 6,
+    "pm0_92_rule": "Max 2 Intro per session — PASS for both S3 and S5",
+    "cognitive_load_note": "S5 has 6 groups active but most are recycling/consolidating; only Gr5 is new."
+  },
+
+  "bilingual_unified_header": {
+    "english": "GRAMMAR WORKSHOP — You already USE these structures. Now we make them visible.",
+    "spanish_italics": "(Ya USAS estas estructuras. Ahora las hacemos visibles.)",
+    "motivational_hook": "Grammar is NOT rules you memorize. It's patterns you already said today. Let's see them."
+  },
+
+  "grammar_targets_with_visual_summaries": [
+    {
+      "id": "Gr1",
+      "name": "Verb BE (am/is/are)",
+      "session_role_s3": "Consolidate",
+      "session_role_s5": "Consolidate",
+      "formula": "[Subject] + am/is/are + [descriptor]",
+      "visual_summary": "I am | You are | He/She/It is | We are | They are",
+      "A1_1_note": "Contractions (I'm, She's, It's) introduced via Reading PM-2.3 — not drilled here.",
+      "studio_examples": ["I am Andrés.", "She is Sophia.", "The font is bold.", "The colors are warm."],
+      "common_error_A1_1": "Omitting be: *I Andrés → I am Andrés."
+    },
+    {
+      "id": "Gr2",
+      "name": "Pronouns + Possessives + Demonstratives",
+      "session_role_s3": "Intro",
+      "session_role_s5": "Consolidate",
+      "formula": "Subject pronouns (I/you/he/she/it/we/they) | Possessives (my/your/his/her/its/our/their) | Demonstratives (this/that/these/those)",
+      "visual_summary_table": [
+        {"subject": "I", "possessive": "my", "proximate_demo": "this (singular)", "plural_demo": "these (plural)"},
+        {"subject": "you", "possessive": "your", "distal_demo": "that (singular)", "distal_plural_demo": "those (plural)"},
+        {"subject": "he/she/it", "possessive": "his/her/its"},
+        {"subject": "we/they", "possessive": "our/their"}
+      ],
+      "A1_1_note": "Focus on I/you/she/it + my/your + this/these. Stretch: he/his + that/those.",
+      "studio_examples": ["My client is La Esquina Bakery.", "This is the brief.", "Her font is beautiful.", "These are the colors."],
+      "common_error_A1_1": "Confusing possessive 'your' with contraction 'you're': *Your welcome → You're welcome."
+    },
+    {
+      "id": "Gr3",
+      "name": "Plurals + Articles a/an",
+      "session_role_s3": "Consolidate",
+      "session_role_s5": "Consolidate",
+      "formula": "a + [consonant sound noun] | an + [vowel sound noun] | [noun]s for plurals",
+      "visual_summary": "a font / an email / the fonts / a canvas / an icon / colors",
+      "A1_1_note": "'a/an' depends on SOUND, not letter. 'an hour' (silent h). 'a university' (y-sound).",
+      "studio_examples": ["A serif font.", "An email.", "The colors are warm.", "A round seal."],
+      "common_error_A1_1": "Using 'a' before vowel sound: *a email → an email."
+    },
+    {
+      "id": "Gr4",
+      "name": "Adjective Position (pre-noun)",
+      "session_role_s3": "Intro",
+      "session_role_s5": "Consolidate",
+      "formula": "[article] + [adjective] + [noun]",
+      "visual_summary": "a WARM color ✓ | a color warm ✗ | a BOLD font ✓ | a font bold ✗",
+      "A1_1_note": "English is OPPOSITE of Spanish: 'una FUENTE bold' in Spanish = 'a BOLD font' in English (adjective BEFORE noun).",
+      "studio_examples": ["Warm colors.", "A round seal.", "A simple logo.", "A cool palette."],
+      "common_error_A1_1": "Spanish word order transfer: *colors warm → warm colors."
+    },
+    {
+      "id": "Gr5",
+      "name": "Imperative (positive + negative)",
+      "session_role_s3": "Not active",
+      "session_role_s5": "Intro",
+      "formula": "[Verb base form] + [object] | Don't + [verb base form] + [object]",
+      "visual_summary": "Open the file. | Save it. | Don't use red. | Please check.",
+      "A1_1_note": "No subject needed. 'Please' softens the command. 'Don't' = Do + not contracted.",
+      "studio_examples": ["Open Illustrator.", "Save the file.", "Don't use red for the bakery.", "Please review."],
+      "common_error_A1_1": "Adding subject: *You open the file → Open the file."
+    },
+    {
+      "id": "Gr14",
+      "name": "Preposition IN (location)",
+      "session_role_s3": "Not active",
+      "session_role_s5": "Apply",
+      "formula": "IN + [container / space / digital location]",
+      "visual_summary": "in the file | in the canvas | in the cloud | in the folder",
+      "A1_1_note": "'IN' = inside something closed or bounded. Contrast with ON (surface) — not yet active.",
+      "studio_examples": ["The logo is in the file.", "The text is in the canvas.", "Save it in the cloud."],
+      "common_error_A1_1": "Using Spanish preposition: *on the file (Sp: 'en el archivo')."
+    },
+    {
+      "id": "Gr15",
+      "name": "Connectors AND / BUT",
+      "session_role_s3": "Not active",
+      "session_role_s5": "Apply",
+      "formula": "[clause 1] + AND / BUT + [clause 2]",
+      "visual_summary": "AND = addition (+) | BUT = contrast (⇄)",
+      "A1_1_note": "Simplest connectors first. SO/BECAUSE reserved for G2.",
+      "studio_examples": ["Warm colors AND a serif font.", "The logo is round BUT simple.", "I use brown AND cream."],
+      "common_error_A1_1": "Using 'AND' when meaning is contrast: *round and simple (if emphasizing contrast, BUT is better)."
+    }
+  ],
+
+  "archetypes_integrated": {
+    "policy": "ALL 5 archetypes A-E are documented with full PRE/DURING/POST. Instructor picks one flow for S3 grammar block and another for S5 grammar block (2 total flows across the RAP).",
+    "spanish": "(TODOS los 5 arquetipos están documentados. Instructor elige un flujo para S3 y otro para S5.)",
+
+    "archetype_A_discovery": {
+      "id": "A",
+      "name": "Discovery / Consciousness-Raising (Inductive)",
+      "when_it_works": "When learners have already encountered the structure in Reading (PM-2.3) or Writing (PM-2.4); makes pattern visible by exploration, not lecture.",
+      "fit_for_A1_1": "High — leverages prior input; reduces passive lecture time.",
+      "total_minutes": 25,
+      "best_for_structures": ["Gr4 adjective position (great for 'aha' moment)", "Gr3 a/an (discovery through sorting)", "Gr5 imperative (discovery through screenshots)"],
+      "activities": [
+        {
+          "phase": "PRE — Input Flood (5 min)",
+          "instruction_bilingual": "Read these 10 sentences from the Toolbelt article. Underline every ADJECTIVE + NOUN pair. (*Lee estas 10 oraciones del artículo Toolbelt. Subraya cada par ADJETIVO + SUSTANTIVO.*)",
+          "sentences": [
+            "A serif font is traditional.",
+            "Warm colors are friendly.",
+            "The bakery is an old shop.",
+            "Andrés opens a new canvas.",
+            "Cool colors are calm.",
+            "A round seal is his logo.",
+            "The poster has bold text.",
+            "A simple design is best.",
+            "The client wants traditional style.",
+            "Sophia approves the warm palette."
+          ],
+          "discovery_question": "What do you notice? Where is the adjective — BEFORE or AFTER the noun?"
+        },
+        {
+          "phase": "DURING — Pattern Formulation (10 min)",
+          "instruction_bilingual": "In pairs, complete the rule. (*En parejas, completa la regla.*)",
+          "rule_discovery_frame": "In English, the adjective goes _________ (before/after) the noun. Example from text: '_________ _________.'",
+          "contrast_question": "In Spanish, where does the adjective usually go? Is English the same or different?",
+          "teacher_move": "Elicit rule from students. Do NOT state the rule first. Write student-generated rule on board."
+        },
+        {
+          "phase": "POST — Mini-Production (10 min)",
+          "instruction_bilingual": "Write 3 sentences about your logo for La Esquina Bakery using the pattern. (*Escribe 3 oraciones sobre tu logo usando el patrón.*)",
+          "frame": "The [noun] is [adjective]. / A [adjective] [noun] is [adjective].",
+          "gallery_check": "Exchange with partner. Partner circles adjective-noun pairs and confirms order."
+        }
+      ]
+    },
+
+    "archetype_B_controlled_practice": {
+      "id": "B",
+      "name": "Controlled Practice (Focus on Form)",
+      "when_it_works": "When learners need accuracy reps; when the structure is high-frequency and foundational (Gr1 be, Gr3 a/an).",
+      "fit_for_A1_1": "High — builds muscle memory; low cognitive demand.",
+      "total_minutes": 25,
+      "best_for_structures": ["Gr1 be (drill paradigm)", "Gr3 a/an (rule application)", "Gr2 possessives (substitution)"],
+      "activities": [
+        {
+          "phase": "PRE — Rule Reminder + Model (5 min)",
+          "instruction_bilingual": "Review the rule. Choose 'a' or 'an' based on SOUND. (*Revisa la regla. Elige 'a' o 'an' según el SONIDO.*)",
+          "model_examples": [
+            "a FONT (f = consonant sound)",
+            "an EMAIL (e = vowel sound)",
+            "a UNIVERSITY (y-sound at start = consonant sound — tricky!)",
+            "an HOUR (silent h = vowel sound — tricky!)"
+          ]
+        },
+        {
+          "phase": "DURING — Gap Fill + Transformation (15 min)",
+          "instruction_bilingual": "Fill the gaps. Then transform each to plural. (*Llena los espacios. Luego transforma cada uno a plural.*)",
+          "gap_fill_20_items": [
+            "____ serif font → ___ serif fonts",
+            "____ sans-serif font",
+            "____ email from Sophia",
+            "____ icon of wheat",
+            "____ logo for the bakery",
+            "____ canvas in Illustrator",
+            "____ layer on the file",
+            "____ toolbar on Canva",
+            "____ bold title",
+            "____ simple design",
+            "____ warm color",
+            "____ cool color",
+            "____ CMYK palette",
+            "____ traditional shop",
+            "____ old family bakery",
+            "____ modern café",
+            "____ round seal",
+            "____ oval badge",
+            "____ horizontal banner",
+            "____ client brief"
+          ],
+          "self_check": "Correct your own with the key after 10 min. Score: ___/20."
+        },
+        {
+          "phase": "POST — Dictation Drill (5 min)",
+          "instruction_bilingual": "Listen. Write what you hear. (*Escucha. Escribe lo que oyes.*)",
+          "dictation_sentences_5": [
+            "Andrés opens an email.",
+            "The logo is a round seal.",
+            "Warm colors are friendly.",
+            "The colors are brown and cream.",
+            "A bakery is an old shop."
+          ],
+          "success_criterion": "4/5 correct = proceed. 3/5 or less = redo 5 gap-fills."
+        }
+      ]
+    },
+
+    "archetype_C_communicative_grammar_tasks": {
+      "id": "C",
+      "name": "Communicative Grammar Tasks (Focus on Meaning WITH Form)",
+      "when_it_works": "When grammar must serve communication; when the structure enables a real workplace interaction.",
+      "fit_for_A1_1": "High — meaning-first keeps motivation high; form emerges from need.",
+      "total_minutes": 25,
+      "best_for_structures": ["Gr1 be (introductions)", "Gr2 demonstratives (showing designs)", "Gr5 imperative (giving instructions)"],
+      "activities": [
+        {
+          "phase": "PRE — Task Setup (5 min)",
+          "instruction_bilingual": "Work in groups of 4. You are the Pixel & Ink Studio team meeting. Each person introduces themselves + their current client. (*Trabajen en grupos de 4. Cada persona se presenta + su cliente actual.*)",
+          "grammar_targets_in_task": ["Gr1 be", "Gr2 pronouns + possessives", "Gr3 a/an"],
+          "role_cards_universe_anchored": [
+            "You are ANDRÉS. Your client is La Esquina Bakery.",
+            "You are SOPHIA. You are the Art Director. Your client this week is TechNova Startup.",
+            "You are LAURA. You are the Senior Manager. Your client is Hotel Santa Fe.",
+            "You are a NEW HIRE. Your client is Café Luna."
+          ]
+        },
+        {
+          "phase": "DURING — Information Exchange Task (15 min)",
+          "instruction_bilingual": "Complete the team roster. You must ask AND answer in English. (*Completa la lista del equipo. Pregunta Y responde en inglés.*)",
+          "task_structure": "Each person has partial info. Must ask 3 questions to complete chart.",
+          "question_frames_provided": [
+            "What is your name?",
+            "Who is your client?",
+            "What is your role?",
+            "Is your project bold or simple?"
+          ],
+          "output_chart": [
+            {"team_member": "Andrés", "role": "?", "client": "?"},
+            {"team_member": "?", "role": "Art Director", "client": "?"},
+            {"team_member": "?", "role": "?", "client": "Hotel Santa Fe"},
+            {"team_member": "New Hire", "role": "?", "client": "?"}
+          ]
+        },
+        {
+          "phase": "POST — Mini-Presentation (5 min)",
+          "instruction_bilingual": "Present your team to the class in 30 seconds using full sentences. (*Presenta tu equipo a la clase en 30 segundos con oraciones completas.*)",
+          "presentation_frame": "This is Andrés. He is the Junior Designer. His client is La Esquina Bakery. This is Sophia. She is the Art Director...",
+          "self_assessment": "Did I use Gr1 (is/are) 6+ times? Did I use Gr2 (my/his/her) 4+ times?"
+        }
+      ]
+    },
+
+    "archetype_D_creative_production": {
+      "id": "D",
+      "name": "Creative Production (Grammar in Authentic Output)",
+      "when_it_works": "When learners need ownership of their output; when personal relevance boosts retention.",
+      "fit_for_A1_1": "High with scaffolding — personal content + visual support.",
+      "total_minutes": 25,
+      "best_for_structures": ["Gr4 adjective position (describing own design)", "Gr5 imperative (tutorial creation)", "Gr15 connectors (combining ideas)"],
+      "activities": [
+        {
+          "phase": "PRE — Choose a Personal Client (5 min)",
+          "instruction_bilingual": "Invent your own client. Name + business type. (*Inventa tu propio cliente. Nombre + tipo de negocio.*)",
+          "frame": "My client is _________. It is a _________ [type]. My client wants a _________ [adjective] design."
+        },
+        {
+          "phase": "DURING — Design Card Creation (15 min)",
+          "instruction_bilingual": "Create a Design Card for your client. Include 5 sentences using the target structures. (*Crea una Design Card para tu cliente. Incluye 5 oraciones usando las estructuras target.*)",
+          "design_card_required_sentences": [
+            "1. [Gr1 be + Gr2 possessive]: My client is _________.",
+            "2. [Gr3 a/an]: The logo is a / an _________.",
+            "3. [Gr4 adjective position]: The colors are _________ and _________.",
+            "4. [Gr5 imperative]: _________ the file in _________.",
+            "5. [Gr15 connector]: The design is _________ AND _________."
+          ],
+          "creative_element": "Draw (or ASCII-sketch) the logo on the card; color-code the palette."
+        },
+        {
+          "phase": "POST — Gallery Walk (5 min)",
+          "instruction_bilingual": "Post your card on the wall. Walk around. Vote for the MOST CREATIVE + GRAMMATICALLY STRONG card. (*Pega tu tarjeta en la pared. Recorran. Voten por la tarjeta más creativa y gramaticalmente fuerte.*)",
+          "dual_criterion_evaluation": "Star if creative + check if grammar is accurate. Must have both to win."
+        }
+      ]
+    },
+
+    "archetype_E_editing_error_analysis": {
+      "id": "E",
+      "name": "Editing & Error Analysis (Focus on Form Post-Production)",
+      "when_it_works": "After productive skills (Writing, Speaking) when errors are visible; builds metalinguistic awareness.",
+      "fit_for_A1_1": "Stretch — requires analytical stance; works best AFTER Writing task (PM-2.4).",
+      "total_minutes": 25,
+      "best_for_structures": ["All 7 active groups — integrative error hunt"],
+      "activities": [
+        {
+          "phase": "PRE — Error Detection Warmup (5 min)",
+          "instruction_bilingual": "Spot the error in each sentence. Circle + fix. (*Detecta el error. Circula + corrige.*)",
+          "sentences_with_errors": [
+            "*The colors warm are beautiful. → Warm colors are beautiful.",
+            "*Andrés open a email. → Andrés opens an email.",
+            "*My client is a Laura. → My client is Laura. (no article with names)",
+            "*You open the file. (as instruction) → Open the file.",
+            "*The logo round simple is. → The logo is round AND simple."
+          ]
+        },
+        {
+          "phase": "DURING — Peer Email Audit (15 min)",
+          "instruction_bilingual": "Swap emails from PM-2.4 with a partner. Find 3 errors. Classify by grammar group. (*Intercambia emails de PM-2.4. Encuentra 3 errores. Clasifica por grupo gramatical.*)",
+          "error_taxonomy_chart": [
+            {"group": "Gr1 be", "error_example": "*I Andrés → I AM Andrés"},
+            {"group": "Gr2 pronouns/possessives", "error_example": "*It brief → THIS brief / HIS brief"},
+            {"group": "Gr3 a/an/plurals", "error_example": "*a email → AN email"},
+            {"group": "Gr4 adjective position", "error_example": "*colors warm → WARM colors"},
+            {"group": "Gr5 imperative (S5 only)", "error_example": "*You save the file → SAVE the file"}
+          ],
+          "peer_dialogue_frame": "I see [N] errors in your email. Error 1 is [group]. The sentence says '_____' but it should say '_____'."
+        },
+        {
+          "phase": "POST — Reflection Journal (5 min)",
+          "instruction_bilingual": "Write 3 sentences. (*Escribe 3 oraciones.*)",
+          "reflection_prompts": [
+            "The error I keep making is _________ (which grammar group?).",
+            "Next time I will _________.",
+            "The strongest grammar in my email was _________."
+          ]
+        }
+      ]
+    }
+  },
+
+  "rotation_options_for_instructor": {
+    "policy": "Grammar has TWO sessions (S3 and S5). Instructor picks a flow for each.",
+    "spanish": "(Grammar tiene DOS sesiones. El instructor elige un flujo para cada una.)",
+    "flows_for_S3": [
+      {
+        "flow_id": "FLOW-G3-1",
+        "name": "Discovery-First S3 (Recommended A1.1 default)",
+        "sequence": "Archetype A (Discovery) on Gr4 adjective position → Archetype B (Controlled) on Gr2 possessives → Applied in PM-2.4 Writing",
+        "best_for": "Learners who learn by seeing patterns first",
+        "time": "25 min A + 25 min B = 50 min dedicated grammar (fits 1.0h direct)"
+      },
+      {
+        "flow_id": "FLOW-G3-2",
+        "name": "Controlled-First S3",
+        "sequence": "Archetype B (Controlled Practice) on Gr3 a/an + Gr4 → Archetype C (Communicative) team intros",
+        "best_for": "Learners who need accuracy reps before communication",
+        "time": "25 min B + 25 min C = 50 min"
+      }
+    ],
+    "flows_for_S5": [
+      {
+        "flow_id": "FLOW-G5-1",
+        "name": "Imperative Mastery S5 (Recommended)",
+        "sequence": "Archetype A (Discovery) on Gr5 imperative using design tutorials → Archetype D (Creative) produce design card",
+        "best_for": "S5 focus is Language Functions integration",
+        "time": "25 min A + 25 min D = 50 min"
+      },
+      {
+        "flow_id": "FLOW-G5-2",
+        "name": "Editing-Focused S5",
+        "sequence": "Archetype E (Editing & Error Analysis) on PM-2.4 emails → Archetype B (Controlled) on Gr5 imperative + Gr14 IN",
+        "best_for": "When S4 writing exposed many errors; fixes before final evaluation",
+        "time": "25 min E + 25 min B = 50 min"
+      },
+      {
+        "flow_id": "FLOW-G5-3",
+        "name": "Maximalist Consolidation S5",
+        "sequence": "Archetype C (Communicative) on Gr5 + Gr14 → Archetype D (Creative) design card with all 7 groups",
+        "best_for": "Strong groups ready to integrate",
+        "time": "25 min C + 25 min D = 50 min"
+      }
+    ],
+    "recommended_default_for_G1": "S3: FLOW-G3-1 (Discovery + Controlled). S5: FLOW-G5-1 (Discovery Imperative + Creative Card)."
+  },
+
+  "auditors_checklist": {
+    "title": "📋 GRAMMAR AUDITOR'S CHECKLIST — Self-Check After Production",
+    "instruction_bilingual": "After you write a sentence (in email, speaking, or workbook), check: (*Después de escribir una oración, verifica:*)",
+    "criteria": [
+      {"criterion": "Gr1: Did I use AM/IS/ARE correctly?", "yes_no": true},
+      {"criterion": "Gr2: Is the demonstrative (this/that) and possessive (my/her) correct?", "yes_no": true},
+      {"criterion": "Gr3: Did I use a/an based on SOUND? Did I pluralize with -s?", "yes_no": true},
+      {"criterion": "Gr4: Is the adjective BEFORE the noun? (warm colors, not colors warm)", "yes_no": true},
+      {"criterion": "Gr5 (S5+): Is my instruction without 'You'? (Open, not You open)", "yes_no": true}
+    ]
+  },
+
+  "rubric_visible_to_learner": {
+    "title": "📊 VISIBLE RUBRIC — Grammar Contribution to E-Cuestionario S6 (5 pts)",
+    "instruction_bilingual": "Grammar is evaluated in S6 Cuestionario Consolidado — 5 items × 1 pt each. (*La gramática se evalúa en S6 Cuestionario — 5 ítems × 1 pt cada uno.*)",
+    "item_distribution": [
+      {"item_number": 1, "structure": "Gr1 be", "type": "Fill-in with am/is/are", "points": 1},
+      {"item_number": 2, "structure": "Gr2 possessive/demonstrative", "type": "Choose my/your/this/that", "points": 1},
+      {"item_number": 3, "structure": "Gr3 a/an", "type": "Article selection", "points": 1},
+      {"item_number": 4, "structure": "Gr4 adjective position", "type": "Reorder words", "points": 1},
+      {"item_number": 5, "structure": "Gr5 imperative", "type": "Rewrite as instruction", "points": 1}
+    ],
+    "total": 5
+  },
+
+  "tres_versiones": {
+    "apropiacion_s3_s5": "Grammar blocks integrated into S3 (Gr2, Gr4 intro) and S5 (Gr5 intro + consolidation of all)",
+    "evaluacion_s6": "5 items in Grammar section of Cuestionario Consolidado (1 pt each, 5 pts total Grammar)",
+    "autonomia_workbook": "REINFORCE: gap-fills with Toolbelt nouns. EXTEND: write a tutorial using imperatives. PREPARE: observe grammar in listening audio for S4."
+  },
+
+  "cuestionario_items_harvest_preview": {
+    "note": "Items generated here feed PM-4.2 Cuestionario S6 Grammar section (5 items × 1 pt).",
+    "sample_items": [
+      {
+        "id": "G1",
+        "type": "fill_in_be",
+        "stem": "The colors ____ warm.",
+        "options": ["a) is", "b) am", "c) are", "d) be"],
+        "answer": "c",
+        "grammar_tested": "Gr1 be"
+      },
+      {
+        "id": "G2",
+        "type": "possessive_demo",
+        "stem": "____ is the brief for Andrés's client.",
+        "options": ["a) This", "b) These", "c) Those", "d) Them"],
+        "answer": "a",
+        "grammar_tested": "Gr2 demonstrative"
+      },
+      {
+        "id": "G3",
+        "type": "article",
+        "stem": "Andrés opens ____ email.",
+        "options": ["a) a", "b) an", "c) the", "d) —"],
+        "answer": "b",
+        "grammar_tested": "Gr3 a/an"
+      },
+      {
+        "id": "G4",
+        "type": "word_order",
+        "stem": "Which is correct?",
+        "options": ["a) colors warm", "b) warm colors", "c) warms color", "d) the warm the colors"],
+        "answer": "b",
+        "grammar_tested": "Gr4 adjective position"
+      },
+      {
+        "id": "G5",
+        "type": "imperative",
+        "stem": "Rewrite as instruction: 'You save the file.'",
+        "options": ["a) You are saving the file.", "b) Save the file.", "c) You can save.", "d) The file saves."],
+        "answer": "b",
+        "grammar_tested": "Gr5 imperative"
+      }
+    ]
+  },
+
+  "pm0_protocol_session_level": {
+    "session_3": {
+      "grammar_groups": {
+        "intro": ["Gr2", "Gr4"],
+        "consolidate": ["Gr1", "Gr3"],
+        "apply": []
+      },
+      "l1_percentage": 20,
+      "feedback": {
+        "dominant_mode": "Guided discovery + Elicitation",
+        "accuracy_techniques": ["Board-based pattern derivation", "Self-check key after Archetype B drills", "Peer correction on Gr4 order"],
+        "fluency_techniques": ["Team information exchange (Archetype C)", "Creative card production (Archetype D)"]
+      },
+      "stress_pronunciation_in_grammar": {
+        "focus": "Contractions (I'm, She's, It's) have reduced stress on 'm/s; full form (I am) has stress on both words.",
+        "technique": "Clap-clap on 'I AM' (two beats) vs clap on 'I'm' (one beat)."
+      }
+    },
+    "session_5": {
+      "grammar_groups": {
+        "intro": ["Gr5"],
+        "consolidate": ["Gr1", "Gr2", "Gr3", "Gr4"],
+        "apply": ["Gr14", "Gr15"]
+      },
+      "l1_percentage": 12,
+      "feedback": {
+        "dominant_mode": "Error analysis + Self-correction",
+        "accuracy_techniques": ["Peer email audit with error taxonomy (Archetype E)", "Controlled drills on Gr5 imperative"],
+        "fluency_techniques": ["Tutorial creation (Archetype D)", "Team brief meetings using all groups (Archetype C)"]
+      },
+      "stress_pronunciation_in_grammar": {
+        "focus": "Imperative verbs carry strong stress on first content word. 'OPEN the file' vs 'the FILE is open'.",
+        "technique": "Voice drop at end of imperative to signal instruction, not question."
+      }
+    },
+    "success_vocabulary": {
+      "grammar_drives_vocab_activation": true,
+      "terms_activated_by_structures": ["Gr3 activates: font, email, canvas, logo, layer, icon", "Gr4 activates: warm, cool, bold, serif, sans-serif, simple, round, traditional", "Gr5 activates: open, save, send, close, click, delete"]
+    }
+  },
+
+  "integration_all_archetypes_policy": {
+    "rationale": "Per Sergio's directive (2026-04-20): 'Quiero todos los arquetipos para todos los PM.' All 5 grammar archetypes documented. Grammar has 2 sessions (S3 + S5), so instructor picks 2 archetype flows total per RAP.",
+    "fit_analysis_for_A1_1": {
+      "highest_fit": ["A (Discovery) — works with prior input", "B (Controlled) — builds accuracy safely", "C (Communicative) — meaning-first"],
+      "stretch_with_scaffolding": ["D (Creative Production) — needs visual scaffolding", "E (Editing & Error Analysis) — needs prior written output to edit"]
+    },
+    "recommended_defaults_for_G1": "S3: A + B | S5: A + D (see rotation flows above)",
+    "workbook_use": "Each of the 5 archetypes becomes a type of grammar exercise in PM-3.4 Workbook: discovery ex., drill ex., communicative ex., creative ex., editing ex."
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.10",
+    "pm_name": "Grammar — Structure Use",
+    "session": "3 + 5",
+    "phase_sena": "Apropiación",
+    "rap_id": "RAP-G1-522309",
+    "cefr_level": "A1.1",
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitivo",
+        "statement": "Identificar e inducir el patrón de 7 grupos gramaticales (Gr1 be, Gr2 pronouns/possessives/demos, Gr3 a/an/plurals, Gr4 adjective position, Gr5 imperative, Gr14 preposition IN, Gr15 connectors AND/BUT) a partir de utterances auténticas del universo Pixel & Ink Studio.",
+        "didactic_strategy": "Enseñanza inductiva + Consciousness-raising",
+        "didactic_technique": "Discovery-based learning (Archetype A)",
+        "archetype_options": ["A", "B"]
+      },
+      {
+        "number": 2,
+        "type": "procedimental",
+        "statement": "Aplicar las estructuras gramaticales en tareas comunicativas del mundo del diseño (presentar al equipo, describir decisiones, dar instrucciones de software) con mínimo 6 usos correctos por sesión de práctica.",
+        "didactic_strategy": "Tareas comunicativas centradas en forma",
+        "didactic_technique": "Information exchange + Role-based practice (Archetype C)",
+        "archetype_options": ["C", "D"]
+      },
+      {
+        "number": 3,
+        "type": "procedimental",
+        "statement": "Auditar textos propios y de pares (emails de PM-2.4) usando la taxonomía de errores de los 7 grupos gramaticales, clasificando y corrigiendo mínimo 3 errores por texto.",
+        "didactic_strategy": "Evaluación formativa + Aprendizaje entre pares",
+        "didactic_technique": "Error analysis + Peer audit (Archetype E)",
+        "archetype_options": ["E"]
+      }
+    ],
+    "hours": {
+      "direct": 1.0,
+      "autonomous": 0.5,
+      "source": "pm-2-0.json S3 grammar slot + S5 grammar slot (0.5+0.5 direct, 0.25+0.25 autonomous)"
+    },
+    "evidence": {
+      "generates_evidence": false,
+      "contributes_to_evidence": "E6 Cuestionario Consolidado S6 (Grammar section)",
+      "description": "Grammar no genera evidencia independiente; contribuye 5 pts (5 ítems × 1 pt) a la sección Grammar del Cuestionario Consolidado en S6.",
+      "evaluation_technique": "Formulación de preguntas",
+      "instrument_number": 6,
+      "instrument_type": "Cuestionario (sección Grammar)",
+      "points_contribution": 5
+    },
+    "environment": {
+      "type": "Aula (presencial para todos los arquetipos)",
+      "materials_required": [
+        "Pizarra o papel kraft para derivación de reglas (Archetype A)",
+        "Hojas de drill impresas (Archetype B)",
+        "Tarjetas de roles del equipo Pixel & Ink (Archetype C)",
+        "Tarjetas Design Card en blanco + marcadores de colores (Archetype D)",
+        "Emails de PM-2.4 + taxonomía de errores impresa (Archetype E)",
+        "Resumen visual de 7 grupos gramaticales (cartel permanente S3-S8)"
+      ],
+      "instructors": "Instructor de inglés técnico"
+    },
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Grammar",
+    "quiz_points": 5,
+    "quiz_item_count": 5,
+    "ambiente_learning": {
+      "configuration": "Individual para drill (B); parejas para discovery (A) y editing (E); grupos de 3-4 para comunicativa (C); individual para creativa (D)",
+      "equipment": "Cartel de 7 Grammar Groups (visible S3-S8); pizarra para derivación inductiva",
+      "conditions": "Foco silencioso durante drills; movilidad libre durante gallery walks"
+    },
+    "estrategia_didactica": {
+      "momento_sena_s3": "3.3 Apropiación (Intro Gr2+Gr4)",
+      "momento_sena_s5": "3.3 Apropiación (Intro Gr5 + Apply Gr14/Gr15)",
+      "estrategia": "Enseñanza de gramática centrada en forma dentro de tareas comunicativas (FonF)",
+      "justificacion": "A1.1 requiere balance entre exposición al input (Reading, Listening) y anclaje de patrones (grammar explícito). PM-2.10 provee el anclaje sin dominar la sesión — grammar sirve a comunicación.",
+      "tecnicas_por_arquetipo": {
+        "A": "Discovery / Consciousness-Raising",
+        "B": "Controlled Practice / Drill",
+        "C": "Communicative Information Exchange",
+        "D": "Creative Production",
+        "E": "Error Analysis / Peer Audit"
+      }
+    },
+    "voc_dimensions": {
+      "cognitiva_saber": {
+        "verbo": "Identificar",
+        "objeto": "el patrón estructural de los 7 grupos gramaticales activos en G1 (Gr1, Gr2, Gr3, Gr4, Gr5, Gr14, Gr15)",
+        "condicion": "a partir de utterances auténticas del universo Pixel & Ink Studio"
+      },
+      "procedimental_hacer": {
+        "verbo": "Aplicar",
+        "objeto": "las estructuras gramaticales target en tareas comunicativas escritas y orales",
+        "condicion": "con ≥80% precisión en items de cuestionario y uso productivo en email de PM-2.4"
+      },
+      "actitudinal_ser": {
+        "verbo": "Asumir",
+        "objeto": "postura metalingüística analítica frente a errores propios y de pares",
+        "condicion": "identificando y clasificando errores sin juicio, aceptando feedback como parte del aprendizaje"
+      }
+    }
+  },
+
+  "validacion": {
+    "checks_internos": [
+      {"check": "10 checks de validación PM-2.10", "status": "PASS"},
+      {"check": "CEFR A1.1 respetado (7 grupos, solo Intro + Consolidate; no temporalidad compleja)", "status": "PASS"},
+      {"check": "Integración de TODOS los 5 arquetipos A-E con PRE/DURING/POST", "status": "PASS"},
+      {"check": "Grammar dosage S3 ≤ 2 Intro (Gr2 + Gr4)", "status": "PASS"},
+      {"check": "Grammar dosage S5 ≤ 2 Intro (Gr5 only)", "status": "PASS"},
+      {"check": "Coherencia con PM-2.3 Master Anchor (Gr1+Gr3 backbone) y PM-2.4 Writing (Gr1-Gr4 applied)", "status": "PASS"},
+      {"check": "Contribución a Cuestionario S6 Grammar = 5 pts", "status": "PASS"},
+      {"check": "5 items cosechados para Grammar section", "status": "PASS"},
+      {"check": "Bilingual Unified Instructions (sin bloques repetitivos)", "status": "PASS"},
+      {"check": "Zero Meta-Talk + listo para imprimir", "status": "PASS"}
+    ],
+    "pm0_anchors_pass": [
+      {"anchor": "§9.2 Grammar max 2 Intro per session (S3=2, S5=1)", "status": "PASS"},
+      {"anchor": "§9.1 L1% S3=20, S5=12", "status": "PASS"},
+      {"anchor": "§5.10 SUCCESS 7/7 factors applied", "status": "PASS"},
+      {"anchor": "§5 Feedback differentiated (discovery/explicit/error analysis)", "status": "PASS"},
+      {"anchor": "§6 A1.1 descriptors respected (can produce simple sentences with target structures)", "status": "PASS"}
+    ],
+    "universe_anchor_check": {
+      "uses_G1_toolbelt": true,
+      "uses_G1_universe": "Pixel & Ink Studio + Andrés + Sophia + Laura + 5 clients (La Esquina Bakery, Café Luna, Nova Bookshop, GymStrong, Hotel Santa Fe, TechNova, Flower Shop, Barbería Urbana)",
+      "not_copied_from_other_guide": true,
+      "content_hash_unique": "regenerated from G1 pm-1-2.json grammar roadmap + pm-2-3.json Master Anchor + pm-2-4.json email contexts"
+    }
+  },
+
+  "siguiente_paso": "Ejecutar PM-2.6 — Listening — The Auditory Anchor (Sesión 4, genera E3 Listening 5 pts, integra TODOS los 6 arquetipos A-F: Micro-skills / Phase-based / TBLT / Bloom / Advanced / Multimedia. Ficha 2 Canva color wheel tutorial como Story B. L1% S4=15. Hours 2.0+0.5)."
+}

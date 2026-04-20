@@ -1,0 +1,455 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Session 4",
+  "pm_version": "2.6",
+  "pm_verified_against_prompt": true,
+  "session": 4,
+  "session_name": "The Color Conversation — Listening & Speaking in the Studio",
+  "run_id": "MGV-2026-04-20",
+  "guide": "G1 — The Visual Communicator",
+  "guia_numero": 1,
+  "programa": "Desarrollo de Medios Gráficos Visuales",
+  "programa_codigo": "522309",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.6 — Listening Auditory Anchor (Ficha 2 Canva, ~145 min + E3 Cuestionario)",
+    "PM-2.8 — Speaking The Mission (pronunciation + roleplay + E4, ~155 min)"
+  ],
+  "habilidades_foco": [
+    "PM-2.6 — Listening (Auditory Anchor, TBLT)",
+    "PM-2.8 — Speaking (The Mission + pronunciation scaffolding)"
+  ],
+  "habilidades_soporte": [
+    "Reading (transcripción Ficha 2 post-listening)",
+    "Vocabulary (reciclaje 10 color terms)"
+  ],
+  "cefr": "A1.1",
+  "model": "FPI CD Engine v2.5.1",
+  "generated_at": "2026-04-20",
+  "generated_by": "Sergio",
+  "status": "generated",
+  "piloto_note": "Generado desde blueprint pm-2-0.sesiones[4]. Contenido original MGV G1 Pixel & Ink Studio. pm0_protocol se inyectará vía pm-3-2-pm0-propagate.js.",
+  "momento_sena": "3.3 Apropiación",
+  "estrategia_didactica": "TBLT (Task-Based Language Teaching) — listening con vacío de información → transferencia oral inmediata",
+  "justificacion_didactica": "Gr 5 (imperative) + Gr 14 (preposition in) emergen naturalmente en color briefing. La integración listening→speaking en una sesión permite reciclaje circular del mismo input (lexical approach).",
+  "session_header": {
+    "titulo": "SESSION 4: The Color Conversation — Listening & Speaking in the Studio",
+    "subtitulo": "MGV Guía 1 · The Visual Communicator · Build-Out — Playbook v2.5.1",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.6 — Listening Auditory Anchor (Ficha 2 Canva, ~145 min + E3 Cuestionario)",
+      "PM-2.8 — Speaking The Mission (pronunciation + roleplay + E4, ~155 min)"
+    ],
+    "habilidades_soporte": [
+      "Reading (transcripción Ficha 2 post-listening)",
+      "Vocabulary (reciclaje 10 color terms)"
+    ],
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk pre-modelado. Duración suma exacta 360 min. L1 tope según pm0_protocol (se inyecta desde pm-3-1)."
+  },
+  "materials_checklist": [
+    {
+      "item": "Audio Ficha 2 (Canva Color Wheel, 90s adaptado) + transcripción",
+      "cantidad": "8 unidades",
+      "verificado": false
+    },
+    {
+      "item": "Rueda de color impresa (color wheel) — 1 por aprendiz",
+      "cantidad": "8 unidades",
+      "verificado": false
+    },
+    {
+      "item": "Swatches de color CMYK + RGB para roleplay",
+      "cantidad": "8 unidades",
+      "verificado": false
+    },
+    {
+      "item": "Cuestionario E3 — 5 ítems",
+      "cantidad": "8 unidades",
+      "verificado": false
+    },
+    {
+      "item": "Rúbrica E4 — 5 criterios",
+      "cantidad": "8 unidades",
+      "verificado": false
+    },
+    {
+      "item": "Lista Chequeo E3 Listening (INST-03) + Escala E4 Speaking (INST-04)",
+      "cantidad": "8+8 copias",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO: ENGLISH ZONE 🔵 · CENTRO: Rueda de color grande (12 colores warm/cool) · LATERAL IZQUIERDA: Language Bank 8 chunks (5 decisions frame) · LATERAL DERECHA: CMYK spelling + imperative verbs (USE/CHOOSE/AVOID/MIX) · Swatches físicos pegados bajo la rueda.",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:25",
+      "duracion_min": 25,
+      "bloque": "SET-UP",
+      "actividad": "Color Wheel Unveiling + CMYK spelling relay + objetivos + Teacher Talk apertura",
+      "agrupacion": "Whole class → Individual",
+      "notas": "Activación + English Zone refresh"
+    },
+    {
+      "tiempo": "0:25-1:20",
+      "duracion_min": 55,
+      "bloque": "WHILE A",
+      "actividad": "Pre-listening — activación de color vocabulary + predicción",
+      "agrupacion": "Plenaria + parejas",
+      "notas": "Pre-listening + vocabulary activation (PM-2.6 Archetype A)"
+    },
+    {
+      "tiempo": "1:20-2:10",
+      "duracion_min": 50,
+      "bloque": "WHILE B",
+      "actividad": "First + Second listening + Cuestionario E3 Listening (Lista Chequeo No 3, 5 pts)",
+      "agrupacion": "Individual + plenaria",
+      "notas": "Global listening + Selective listening (PM-2.6 Archetype B)"
+    },
+    {
+      "tiempo": "2:10-2:55",
+      "duracion_min": 45,
+      "bloque": "WHILE C",
+      "actividad": "Pronunciation Lab — stress en CMYK, warm/cool, imperatives",
+      "agrupacion": "Plenaria + parejas",
+      "notas": "Pronunciation scaffolding + Finger drilling (PM-2.8 pronunciation integrated)"
+    },
+    {
+      "tiempo": "2:55-3:15",
+      "duracion_min": 20,
+      "bloque": "BREAK",
+      "actividad": "Receso activo",
+      "agrupacion": "—",
+      "notas": "Hidratación · English Zone mantenida"
+    },
+    {
+      "tiempo": "3:15-4:05",
+      "duracion_min": 50,
+      "bloque": "WHILE D",
+      "actividad": "Roleplay rehearsal — Junior Designer briefs Client (Andrés → Sophia)",
+      "agrupacion": "Parejas + pequeños grupos",
+      "notas": "Roleplay rehearsal + Language Bank preparation (PM-2.8 Archetype A)"
+    },
+    {
+      "tiempo": "4:05-5:00",
+      "duracion_min": 55,
+      "bloque": "WHILE E",
+      "actividad": "E4 Evidencia Speaking — Performance en vivo (3 min × parejas)",
+      "agrupacion": "Parejas observadas + instructor evaluator",
+      "notas": "Performance task (PM-2.8 Archetype B) + E4 Speaking (Escala Estimación No 4)"
+    },
+    {
+      "tiempo": "5:00-6:00",
+      "duracion_min": 60,
+      "bloque": "WRAP-UP",
+      "actividad": "Síntesis + exit ticket + homework + preview",
+      "agrupacion": "Plenaria + individual",
+      "notas": "Tablero consolidado: rueda de color + Language Bank 8 chunks + 7 stress words marked. Exit poll: ¿cuál habilidad te cost"
+    }
+  ],
+  "set_up": {
+    "duracion_min": 25,
+    "warm_up": {
+      "nombre": "Color Wheel Unveiling + CMYK spelling relay",
+      "pasos": [
+        "Unveiling de la rueda de color grande en el muro (3 min).",
+        "CMYK spelling relay: C-M-Y-K letra por letra en cadena (5 min).",
+        "Recall Toolbelt C2 Color — warm/cool/CMYK — 3 ejemplos rápidos del entorno.",
+        "Declaración del objetivo: hoy ESCUCHAS a Laura y después HABLAS como Andrés."
+      ],
+      "duration_min": 25
+    },
+    "teacher_talk_opening": "*Designers, come close. Look at this. (*despliega rueda de color grande*) Twelve colors. Warm side — red, orange, yellow. Cool side — blue, green, purple. Today Laura teaches Andrés — and you. Tomorrow you BUY ink in CMYK.*"
+  },
+  "while": {
+    "while_a": {
+      "bloque": "WHILE A",
+      "title": "Pre-listening — activación de color vocabulary + predicción",
+      "duracion_min": 55,
+      "agrupacion": "Plenaria + parejas",
+      "tecnica_didactica": "Pre-listening + vocabulary activation (PM-2.6 Archetype A)",
+      "pm_source": "PM-2.6 Archetype A TBLT pre-task",
+      "teacher_talk_instruction": "*Before we listen, we THINK. Laura calls Sophia — the client. Sophia has a PROBLEM. Predict: what does she say? Use warm/cool/CMYK/palette. In pairs, write 3 predictions.*",
+      "icq": [
+        "Do we listen first or predict first?",
+        "How many predictions?",
+        "Pareja o solo?"
+      ],
+      "answer_key_inline": "Predecir primero · 3 predictions · parejas. Predicciones posibles: 'The colors are too cool / She wants warm colors / The bakery is traditional / Cool feels modern'.",
+      "facilitation_notes": [
+        "Tablero: palabras pre-listening (warm/cool/bakery/problem)",
+        "Una aprendiz voluntaria escribe predicciones en tablero para clase",
+        "Reproducir audio sólo al final del bloque"
+      ],
+      "checkpoint": "Cada pareja entrega 3 predictions escritas.",
+      "transition": "¡Time to listen! Play it cool — first listening, global."
+    },
+    "while_b": {
+      "bloque": "WHILE B",
+      "title": "First + Second listening + Cuestionario E3 Listening (Lista Chequeo No 3, 5 pts)",
+      "duracion_min": 50,
+      "agrupacion": "Individual + plenaria",
+      "tecnica_didactica": "Global listening + Selective listening (PM-2.6 Archetype B)",
+      "pm_source": "PM-2.6 Archetype B COMPREHENSION + PM-4.1 INST-03",
+      "teacher_talk_instruction": "*Listening 1 — global. Close your eyes. Don't write. Just listen. (*play*) Now: WHAT is the problem? Listening 2 — selective. Listen for 5 specific color terms. Ready.*",
+      "icq": [
+        "First listening — do we write?",
+        "Second listening — what 5 terms?",
+        "How many times do we listen total?"
+      ],
+      "answer_key_inline": "No, sólo escuchar · 5 términos de color (warm/cool/palette/CMYK/complementary) · 2 veces primera parte + re-play E3. Listening checklist: topic + 8/10 details + warm/cool rule + 5 toolbelt + participation.",
+      "facilitation_notes": [
+        "Audio Ficha 2 Canva Color Wheel 90s — reproducir claro, sin interrupciones",
+        "E3 Checklist durante el trabajo post-listening (no cuestionario escrito formal, sino observación 5 items)",
+        "Note-taking handout con 10 slots para details"
+      ],
+      "checkpoint": "Cada aprendiz entrega note-taking handout + instructor marca E3 Checklist (5 items).",
+      "transition": "Listening done. Now — your mouth opens. Pronunciation Lab!"
+    },
+    "while_c": {
+      "bloque": "WHILE C",
+      "title": "Pronunciation Lab — stress en CMYK, warm/cool, imperatives",
+      "duracion_min": 45,
+      "agrupacion": "Plenaria + parejas",
+      "tecnica_didactica": "Pronunciation scaffolding + Finger drilling (PM-2.8 pronunciation integrated)",
+      "pm_source": "PM-2.8 pronunciation scaffolding (from deprecated PM-2.7)",
+      "teacher_talk_instruction": "*Open your mouth. CMYK — C-M-Y-K. Four letters, four beats. warm /wɔːrm/. cool /kuːl/. USE (imperative — loud!). CHOOSE (two sounds — ch-uu-z). AVOID (three syllables).*",
+      "icq": [
+        "¿Cuántos beats en CMYK?",
+        "¿Cuántas sílabas en AVOID?",
+        "¿Es /kuːl/ con doble o?"
+      ],
+      "answer_key_inline": "4 beats · 3 sílabas (a-VOID pero dividida: uh-VOID) · Sí doble o /uː/ larga.",
+      "facilitation_notes": [
+        "Finger drilling: 1 dedo por sílaba",
+        "Clapping rítmico para CMYK (cuatro palmadas)",
+        "Mirror — aprendices se ven en espejo/celular"
+      ],
+      "checkpoint": "6 aprendices pronuncian CMYK + 1 imperative sin caer en préstamo del español.",
+      "transition": "¡Break! Come back with your BEST voice. Next — Speaking Mission."
+    },
+    "while_d": {
+      "bloque": "WHILE D",
+      "title": "Roleplay rehearsal — Junior Designer briefs Client (Andrés → Sophia)",
+      "duracion_min": 50,
+      "agrupacion": "Parejas + pequeños grupos",
+      "tecnica_didactica": "Roleplay rehearsal + Language Bank preparation (PM-2.8 Archetype A)",
+      "pm_source": "PM-2.8 mission_brief + Language Bank",
+      "teacher_talk_instruction": "*You are Andrés. Your partner is Sophia. 3 minutes. You tell her 5 design decisions for the bakery logo. Use this frame: 'The font is ___. The color is ___. The shape is ___. I use ___ because ___. Next steps: ___.' Practice twice.*",
+      "icq": [
+        "How many minutes per turn?",
+        "How many decisions?",
+        "¿Practicamos una o dos veces?"
+      ],
+      "answer_key_inline": "3 min · 5 decisions · 2 veces (swap roles). Language Bank colgado en muro con 8 chunks fijos.",
+      "facilitation_notes": [
+        "Cue cards visibles sólo en rehearsal (después se retiran)",
+        "2 parejas simultáneas con observadores silenciosos",
+        "Instructor circula con cronómetro"
+      ],
+      "checkpoint": "Cada pareja completa 2 rondas de 3 min con 5 decisions producidas.",
+      "transition": "Rehearsed. Confident. Now — the real performance. E4 time."
+    },
+    "while_e": {
+      "bloque": "WHILE E",
+      "title": "E4 Evidencia Speaking — Performance en vivo (3 min × parejas)",
+      "duracion_min": 55,
+      "agrupacion": "Parejas observadas + instructor evaluator",
+      "tecnica_didactica": "Performance task (PM-2.8 Archetype B) + E4 Speaking (Escala Estimación No 4)",
+      "pm_source": "PM-2.8 mission_brief performance + PM-4.1 INST-04",
+      "teacher_talk_instruction": "*Now — real. No cue cards. 3 minutes. Your partner is Sophia. I observe. 5 criteria: communication + vocabulary + grammar + pronunciation + interaction. Begin when I say GO.*",
+      "icq": [
+        "Do we have cue cards?",
+        "What 5 criteria?",
+        "How long?"
+      ],
+      "answer_key_inline": "NO cue cards (Plan B sólo si freezes, -1 pt máx) · Communication + Vocab + Grammar + Pronunciation + Interaction · 3 min. Escala 2/1/0 → total /10 ÷ 2 = /5.",
+      "facilitation_notes": [
+        "Evaluar 4 parejas en paralelo con co-observador o por rotación",
+        "Cronómetro visible + campana a los 3 min",
+        "Plan B activable si aprendiz se congela: first chunk del Language Bank como prompt"
+      ],
+      "checkpoint": "Cada aprendiz con Escala Estimación No 4 calificada + firma del instructor.",
+      "transition": "Today: Reading ✓ Writing ✓ Listening ✓ Speaking ✓. Four skills generated in 3 days. Mañana — las FUNCIONES que amarran todo."
+    }
+  },
+  "wrap_up": {
+    "duracion_min": 60,
+    "synthesis": "Tablero consolidado: rueda de color + Language Bank 8 chunks + 7 stress words marked. Exit poll: ¿cuál habilidad te costó más hoy? Listening / Speaking / both.",
+    "exit_ticket": "Grabar audio de 30s: 'Hello Laura. This is my name. I am a junior designer. I like [color] because [reason]. Thank you.' Subir a Google Classroom.",
+    "homework_autonomo": "Audio 60s describiendo paleta de color preferida con CMYK + warm/cool + imperative. Escuchar Ficha 2 una vez más en casa para internalizar prosodia.",
+    "preview_s5": "*Mañana: Language Functions — los GESTOS del lenguaje. Saludar, identificar, describir, instruir, aclarar. En 5 estaciones con 90 segundos cada una. Role Carousel.*"
+  },
+  "answer_key_consolidado": {
+    "note": "Answer keys por bloque están en while_X.answer_key_inline. Para E1/E2/E3/E4/E5 ver PM-4.1. Para E6 ver PM-4.2.",
+    "evidence_references": [
+      "E3 Listening → PM-4.1 INST-03",
+      "E4 Speaking → PM-4.1 INST-04"
+    ]
+  },
+  "differentiation": {
+    "fast_finishers": "Expandir tarea con conector extra (because) + 1 Toolbelt term adicional",
+    "struggling_learners": "Activar cue card visible + reducir timing -10% por bloque · L1 permitido en notas personales",
+    "neurodivergent_accomodations": "Silencio de fondo · opción de headphones para listening · timer visual · auriculares anti-ruido disponibles"
+  },
+  "instructor_self_check": [
+    "¿L1 target respetado según pm0_protocol?",
+    "¿Todos los bloques completados en tiempo?",
+    "¿Evidencias generadas firmadas y archivadas?",
+    "¿Transición a S5 preparada?",
+    "¿Exit tickets revisados para informar S5?"
+  ],
+  "totals_check": {
+    "set_up": 25,
+    "while_a": 55,
+    "while_b": 50,
+    "while_c": 45,
+    "break": 20,
+    "while_d": 50,
+    "while_e": 55,
+    "wrap_up": 60,
+    "suma": 360,
+    "expected": 360,
+    "match": true
+  },
+  "rap_status": "S4 completada — E3 Listening + E4 Speaking generadas (10 pts combinados). 2 evidencias en una sesión. Listening y Speaking columns del RAP establecidas.",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[3]",
+    "__contract_version__": "v2.5.1",
+    "grammar_groups": [
+      {
+        "group_id": "Gr 5",
+        "group_name": "Imperativo afirmativo",
+        "nivel_activacion": "Intro",
+        "ejemplo_en_sesion": "'Use warm colors. Choose a complementary color. Mix blue and yellow. Avoid too many fonts.'"
+      },
+      {
+        "group_id": "Gr 14",
+        "group_name": "Preposición In (lugar)",
+        "nivel_activacion": "Intro",
+        "ejemplo_en_sesion": "'in CMYK / in red / in the studio / in the top-left corner'"
+      },
+      {
+        "group_id": "Gr 1",
+        "group_name": "Verbo be (reciclaje S2-S3)",
+        "nivel_activacion": "Consolida",
+        "ejemplo_en_sesion": "'The palette is warm. Red and yellow are primary colors.'"
+      },
+      {
+        "group_id": "Gr 3",
+        "group_name": "Plural + a/an (reciclaje S2)",
+        "nivel_activacion": "Consolida",
+        "ejemplo_en_sesion": "'a palette / palettes | a primary color / primary colors'"
+      }
+    ],
+    "grammar_carga_check": "2/2 Intro máximos + 2 Consolida (PM-0 §9.2) ✓",
+    "feedback": {
+      "mode": "MIXTO",
+      "rationale": "Pronunciation lab requiere accuracy inmediato (recast, finger drill). Roleplay posterior requiere fluency diferido para no cortar el flujo comunicativo. PM-0 §5.11 — transición progresiva hacia fluency a partir de S4.",
+      "accuracy_techniques": [],
+      "fluency_techniques": [],
+      "mixed_techniques": [
+        "Accuracy (primera mitad): Recast + finger drill + backchaining en pronunciation lab",
+        "Fluency (segunda mitad): Post-task delayed feedback en tablero global después de roleplay",
+        "Error codes en tablero (ICP/IMP/PREP) — marca genérica, no personalizada"
+      ]
+    },
+    "l1_management": {
+      "l1_percentage": 15,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_policy_per_guide[0].s1_to_s8 — S4 15% (PM-0 §9.1)",
+      "l1_rationale": "L1 sólo para clarificar diferencia imperative (sin subject) vs presente simple (con subject) — giro contrastivo breve. Todo el roleplay se ejecuta en L2."
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "CMYK",
+          "ipa": "/si-em-waɪ-keɪ/",
+          "tonica": "deletreado con pausa (C-M-Y-K)"
+        },
+        {
+          "word": "warm",
+          "ipa": "/wɔːrm/",
+          "tonica": "única (WARM)"
+        },
+        {
+          "word": "cool",
+          "ipa": "/kuːl/",
+          "tonica": "única (COOL)"
+        },
+        {
+          "word": "color wheel",
+          "ipa": "/ˈkʌlər wiːl/",
+          "tonica": "PRIMERA (COLor wheel)"
+        },
+        {
+          "word": "palette",
+          "ipa": "/ˈpælɪt/",
+          "tonica": "PRIMERA (PALette)"
+        },
+        {
+          "word": "primary",
+          "ipa": "/ˈpraɪməri/",
+          "tonica": "PRIMERA (PRImary)"
+        },
+        {
+          "word": "secondary",
+          "ipa": "/ˈsɛkənderi/",
+          "tonica": "PRIMERA (SEcondary)"
+        }
+      ],
+      "techniques": [
+        "Finger drilling en CMYK (letra por letra con pausa)",
+        "Clapping rítmico en WARM/COOL (contraste emocional)",
+        "Backchaining — 'lette' → 'palette' → 'color palette'"
+      ],
+      "source": "PM-0 §5.13"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "warm",
+        "cool",
+        "primary",
+        "secondary",
+        "complementary",
+        "palette",
+        "CMYK",
+        "RGB",
+        "red",
+        "blue"
+      ],
+      "factors_applied": [
+        "Sounds",
+        "Encounter",
+        "Use",
+        "Self-expression",
+        "Creativity"
+      ],
+      "operationalization": "Sounds: IPA + stress en 7 palabras + pronunciation lab 20 min. Encounter: 3 listenings (global→selective→task) + 2 roleplays = 5 encuentros. Use: cada aprendiz produce ≥4 intercambios orales con palette + imperative. Self-expression: cada pareja elige colores para cartel propio. Creativity: justificar elección de paleta con 'because'.",
+      "source": "PM-0 §5.5 + §5.10"
+    },
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1",
+      "habilidad_principal": "interaccion_oral",
+      "descriptor_activo": "Puede saludar, presentarse y responder Sí/No. Puede dar nombre, programa y turno. Puede pedir repetición con frase fija. (Ampliado: puede sugerir con imperative)",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot.interaccion_oral + produccion_oral"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Muy lenta en listening (0.85x speed) + pausas; normal en roleplay (aprendiz controla ritmo)",
+      "extension_textos": "Audio 90s + roleplay 2 min con 4 intercambios (120 palabras en pareja)",
+      "andamiaje": "Máximo — transcripción impresa + rueda de color + swatches + sentence frames para imperative",
+      "rol_docente": "Modelo central en pronunciation lab → Facilitador en roleplay (monitor sin interrumpir)",
+      "source": "PM-0 §8"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A3 — Trazabilidad a descriptores CEFR (comprension_oral + interaccion_oral A1.1)",
+        "B2 — Drilling (pronunciation lab)",
+        "B3 — Accuracy/fluency diferenciado por actividad",
+        "B4 — Accuracy vs Fluency en mismo bloque (conflicto resuelto por secuencia)",
+        "B7 — Autoevaluación post-roleplay (self-check 3 ítems)",
+        "D3 — Criterio observable (Rúbrica E4 5 criterios × 1 pt)"
+      ],
+      "source": "PM-0 §7"
+    }
+  }
+}

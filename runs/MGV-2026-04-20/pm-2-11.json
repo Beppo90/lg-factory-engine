@@ -1,0 +1,628 @@
+{
+  "run_id": "MGV-2026-04-20",
+  "pm_code": "PM-2.11",
+  "pm_name": "GFPI-F-134 Row Assembler",
+  "pm_version": "2.5",
+  "guia_numero": 1,
+  "guia_nombre_esp": "The Visual Communicator",
+  "rap_origen": "240202501-01",
+  "rap_codigo": "240202501-01",
+  "competencia_codigo": "240202501",
+  "cefr_level": "A1.1",
+  "phase": 2,
+  "fase_sena": "Post-diseño (convergencia Fase 2)",
+  "generated_date": "2026-04-20",
+  "pipeline_version": "2.5.1",
+  "instructor": "Sergio Cortés Perdomo",
+
+  "inputs_consumidos": {
+    "session_blueprint": "pm-2-0.json",
+    "activity_cards": [
+      "pm-2-1.json (S1 Spark)",
+      "pm-2-2.json (S1 Gap Analysis)",
+      "pm-2-3.json (S2 Reading Master Anchor — E1)",
+      "pm-2-4.json (S3 Writing Task-Based — E2)",
+      "pm-2-5.json (S2 Vocabulary Scaffold)",
+      "pm-2-6.json (S4 Listening Auditory Anchor — E3)",
+      "pm-2-8.json (S4 Speaking Mission — E4)",
+      "pm-2-9.json (S5 Language Functions — E5)",
+      "pm-2-10.json (S3+S5 Grammar Structure Use)"
+    ],
+    "pm_1_2_cols_1_5": "pm-1-2.json bloque_B_gfpi_f134_cols_1_5",
+    "pm_0_framework": "pm-0-context.json"
+  },
+
+  "gfpi_f134_row": {
+    "column_1_competencia": {
+      "codigo": "240202501",
+      "nombre": "INTERACTUAR EN LENGUA INGLESA DE FORMA ORAL Y ESCRITA DENTRO DE CONTEXTOS SOCIALES Y LABORALES SEGÚN LOS CRITERIOS ESTABLECIDOS POR EL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+      "source": "PM-1.2 bloque_B"
+    },
+
+    "column_2_rap": {
+      "codigo": "240202501-01",
+      "descripcion": "Comprender información sobre situaciones cotidianas y laborales actuales y futuras a través de interacciones sociales de forma oral y escrita, aplicada al universo ocupacional del diseño gráfico básico (identificación de tipografías, colores, formas, herramientas y productos gráficos) en el nivel CEFR A1.1.",
+      "bloom_level": "L2 Entender (con elementos de L3 Aplicar en el mood board)",
+      "source": "PM-1.2 bloque_B"
+    },
+
+    "column_3_saberes_conceptos_principios": [
+      "Fundamentos del diseño básico (elementos conceptuales, visuales y de relación)",
+      "Teoría del color: modelo aditivo (RGB) y sustractivo (CMYK), clasificación warm/cool, colores primarios y secundarios",
+      "Clasificación tipográfica: familias serif, sans-serif, variables (bold/italic/regular)",
+      "Gramática del lenguaje visual: línea, forma, textura, composición",
+      "Principios básicos de composición: retícula, alineación, proximidad, jerarquía",
+      "Semiótica básica: signo, símbolo, ícono",
+      "Productos gráficos básicos: logo, afiche, tarjeta, post digital",
+      "Herramientas y materiales del estudio de diseño (análogos y digitales)",
+      "Vocabulario de interfaz de software de diseño (toolbar, layer, canvas, file)",
+      "Estructura lingüística A1.1: verbo be, pronombres, plurales, adjetivos, imperativo afirmativo, preposición IN, conectores básicos"
+    ],
+
+    "column_4_saberes_proceso": [
+      "Identificar tipografías serif y sans-serif en piezas reales",
+      "Reconocer y clasificar colores en la paleta warm/cool y primarios/secundarios",
+      "Nombrar herramientas, materiales y elementos de composición en inglés",
+      "Saludar, presentarse y responder a preguntas personales básicas en contexto de estudio/taller",
+      "Comprender y ejecutar instrucciones básicas del taller (Open, Save, Check, Select, Close)",
+      "Describir objetos del estudio usando verbo be + adjetivo",
+      "Construir un mood board con etiquetas bilingües usando vocabulario técnico A1.1",
+      "Presentar oralmente piezas del mood board con introducción personal + descripción simple"
+    ],
+
+    "column_5_criterios_evaluacion": [
+      "C1: Identifica correctamente las categorías tipográficas (serif/sans-serif) y los grupos de color (warm/cool, primary/secondary) en piezas reales del sector gráfico con 80% de acierto.",
+      "C2: Comprende y ejecuta instrucciones orales básicas de 1–2 pasos en inglés con apoyo visual en el 80% de los casos.",
+      "C3: Produce oralmente una presentación personal y descripción simple de 3 piezas visuales usando verb be + adjetivo + preposición IN sin bloqueo significativo en menos de 2 minutos.",
+      "C4: Redacta etiquetas bilingües de 2–4 oraciones simples para 6 referencias visuales usando al menos 12 términos del key vocabulary correctamente.",
+      "C5: Usa funciones comunicativas básicas (saludar, presentarse, pedir aclaración, expresar gusto básico) en intercambios estructurados con al menos 1 compañero.",
+      "C6: Completa el cuestionario consolidado S6 (sección A1.1) obteniendo mínimo 17/25 puntos en las 5 subsecciones."
+    ],
+
+    "column_6_actividades_aprendizaje": [
+      {
+        "numero": 1,
+        "sesion": "S1",
+        "tipo": "cognitiva",
+        "statement": "Reflexionar sobre identidad visual cotidiana nombrando colores y tipografías observadas en el entorno del aprendiz",
+        "pm_source": "PM-2.1 (The Spark — Reflexión Inicial)",
+        "bloom": "L1-L2",
+        "chars": 117
+      },
+      {
+        "numero": 2,
+        "sesion": "S1",
+        "tipo": "cognitiva",
+        "statement": "Identificar brechas de conocimiento comparando vocabulario visual previo vs. exigencias del taller de diseño",
+        "pm_source": "PM-2.2 (Gap Analysis — Contextualización)",
+        "bloom": "L2",
+        "chars": 112
+      },
+      {
+        "numero": 3,
+        "sesion": "S2",
+        "tipo": "cognitiva",
+        "statement": "Clasificar 20 términos del toolbelt visual (tipografía, color, herramientas, composición) por familia semántica",
+        "pm_source": "PM-2.5 (Literacy & Vocabulary Skills)",
+        "bloom": "L2-L3",
+        "chars": 115
+      },
+      {
+        "numero": 4,
+        "sesion": "S2",
+        "tipo": "cognitiva",
+        "statement": "Analizar texto técnico auténtico sobre serif vs sans-serif aplicando estrategia SQ3R con scaffolding A1.1",
+        "pm_source": "PM-2.3 (Reading — Master Anchor)",
+        "bloom": "L2-L3",
+        "chars": 109
+      },
+      {
+        "numero": 5,
+        "sesion": "S3",
+        "tipo": "cognitiva",
+        "statement": "Identificar estructuras gramaticales Gr 1 be + Gr 2 pronombres/demos + Gr 3 plurales + Gr 4 adj en input",
+        "pm_source": "PM-2.10 (Grammar — Structure Use, S3 portion)",
+        "bloom": "L2",
+        "chars": 114
+      },
+      {
+        "numero": 6,
+        "sesion": "S3",
+        "tipo": "procedimental",
+        "statement": "Redactar email profesional de decisión de diseño (La Esquina Bakery) siguiendo plantilla de 5 movimientos",
+        "pm_source": "PM-2.4 (Writing — Task-Based)",
+        "bloom": "L3",
+        "chars": 114
+      },
+      {
+        "numero": 7,
+        "sesion": "S4",
+        "tipo": "cognitiva",
+        "statement": "Comprender nota de voz profesional (Sophia + Laura) tomando notas en plantilla de 10 slots A1.1",
+        "pm_source": "PM-2.6 (Listening — Auditory Anchor)",
+        "bloom": "L2-L3",
+        "chars": 106
+      },
+      {
+        "numero": 8,
+        "sesion": "S4",
+        "tipo": "procedimental",
+        "statement": "Ejecutar briefing oral de 3 minutos a la art director simulando rol de designer junior en Pixel & Ink",
+        "pm_source": "PM-2.8 (Speaking — The Mission)",
+        "bloom": "L3",
+        "chars": 113
+      },
+      {
+        "numero": 9,
+        "sesion": "S5",
+        "tipo": "procedimental",
+        "statement": "Ejecutar 5 funciones comunicativas en Role Carousel de 5 estaciones del Pixel & Ink Studio usando chunks fijos",
+        "pm_source": "PM-2.9 (Language Functions)",
+        "bloom": "L3",
+        "chars": 118
+      },
+      {
+        "numero": 10,
+        "sesion": "S5",
+        "tipo": "cognitiva",
+        "statement": "Reflexionar sobre uso autónomo de funciones identificando chunks automáticos y áreas de mayor práctica",
+        "pm_source": "PM-2.9 (Language Functions wrap-up) + PM-2.10 (Grammar Gr 15 connectors)",
+        "bloom": "L4 evaluate (metacognitive)",
+        "chars": 111
+      },
+      {
+        "numero": 11,
+        "sesion": "S6",
+        "tipo": "cognitiva",
+        "statement": "Completar Cuestionario Consolidado E6 de 25 ítems en 5 secciones (Reading/Writing/Listening/Vocabulary/Grammar)",
+        "pm_source": "PM-4.2 (Cuestionario Técnico S6) — supplementary row entry (no PM-2.x card)",
+        "bloom": "L2-L3",
+        "chars": 118
+      },
+      {
+        "numero": 12,
+        "sesion": "S7-S8",
+        "tipo": "procedimental",
+        "statement": "Ejecutar Misión Final: construir mood board bilingüe A1.1 con 6 piezas visuales y presentación oral de 2 minutos",
+        "pm_source": "PM-3.5 (Final Mission — Integrative Task) — supplementary row entry (no PM-2.x card)",
+        "bloom": "L3-L4",
+        "chars": 119
+      }
+    ],
+
+    "column_7_duracion_horas": {
+      "total_directo": 48,
+      "total_independiente": 12,
+      "total": 60,
+      "distribucion_por_sesion": [
+        { "sesion": "S1", "directo": 6, "independiente": 1.5, "fase_sena": "Reflexión Inicial + Contextualización" },
+        { "sesion": "S2", "directo": 6, "independiente": 1.5, "fase_sena": "Apropiación (Reading + Vocabulary)" },
+        { "sesion": "S3", "directo": 6, "independiente": 1.5, "fase_sena": "Apropiación (Writing + Grammar)" },
+        { "sesion": "S4", "directo": 6, "independiente": 1.5, "fase_sena": "Apropiación (Listening + Speaking)" },
+        { "sesion": "S5", "directo": 6, "independiente": 1.5, "fase_sena": "Apropiación (Language Functions + Grammar review)" },
+        { "sesion": "S6", "directo": 6, "independiente": 1.5, "fase_sena": "Evaluación (Cuestionario Consolidado E6)" },
+        { "sesion": "S7", "directo": 6, "independiente": 1.5, "fase_sena": "Transferencia (Misión Final Fase 1-2)" },
+        { "sesion": "S8", "directo": 6, "independiente": 1.5, "fase_sena": "Transferencia (Misión Final Fase 3-4-5)" }
+      ],
+      "distribucion_por_actividad_card_pm2x": [
+        { "pm": "PM-2.1", "directo": 1.0, "independiente": 0.25 },
+        { "pm": "PM-2.2", "directo": 1.5, "independiente": 0.5 },
+        { "pm": "PM-2.3", "directo": 2.0, "independiente": 0.5 },
+        { "pm": "PM-2.4", "directo": 1.5, "independiente": 0.5 },
+        { "pm": "PM-2.5", "directo": 1.0, "independiente": 0.25 },
+        { "pm": "PM-2.6", "directo": 2.0, "independiente": 0.5 },
+        { "pm": "PM-2.8", "directo": 1.5, "independiente": 0.5 },
+        { "pm": "PM-2.9", "directo": 2.0, "independiente": 0.5 },
+        { "pm": "PM-2.10", "directo": 1.0, "independiente": 0.5 }
+      ],
+      "suma_activity_cards_pm2x": { "directo": 13.5, "independiente": 4.0, "total": 17.5 },
+      "suplementos_necesarios": {
+        "S1_spark_gap_extra": { "directo": 3.5, "independiente": 0.75, "rationale": "Introducción al programa, dinámicas rompehielo, orientación al mood board final" },
+        "S2_reading_vocab_extra": { "directo": 3.0, "independiente": 0.75, "rationale": "Pre-reading activation, pronunciation drill, review exit ticket" },
+        "S3_writing_grammar_extra": { "directo": 3.0, "independiente": 0.5, "rationale": "Mentor text analysis extendido, peer feedback, homework brief para etiquetas bilingües" },
+        "S4_listening_speaking_extra": { "directo": 2.5, "independiente": 0.5, "rationale": "Pronunciation lab, rehearsal triads, observer rotation setup" },
+        "S5_lang_functions_grammar_extra": { "directo": 3.5, "independiente": 1.0, "rationale": "Role Carousel setup/logistics + connector awareness expandido + preparación Cuestionario S6" },
+        "S6_cuestionario_E6": { "directo": 6.0, "independiente": 1.5, "rationale": "PM-4.2 Cuestionario Consolidado (25 pts) + review + autoevaluación" },
+        "S7_mision_fase1_2": { "directo": 6.0, "independiente": 1.5, "rationale": "PM-3.5 Final Mission Planeación + Diseño del mood board bilingüe" },
+        "S8_mision_fase3_4_5": { "directo": 6.0, "independiente": 1.5, "rationale": "PM-3.5 Final Mission Desempeño + Presentación + Evaluación reflexiva" }
+      },
+      "reconciliation_check": {
+        "suma_activity_cards": 17.5,
+        "suma_suplementos": 42.5,
+        "total_reconciliado": 60.0,
+        "status": "PASS — 17.5 + 42.5 = 60 = canon pm-2-0"
+      }
+    },
+
+    "column_8_evidencias": [
+      {
+        "codigo": "E1",
+        "nombre": "Lectura — Texto técnico serif vs sans-serif",
+        "sesion": "S2",
+        "tipo_sena": "Conocimiento",
+        "tecnica_evaluacion": "Preguntas sobre comprensión de lectura técnica",
+        "instrumento_numero": 1,
+        "instrumento_tipo": "Cuestionario",
+        "instrumento_nombre": "Cuestionario No 1 — Reading (5 ítems sobre clasificación tipográfica)",
+        "puntaje": 5,
+        "descripcion": "Tipo: Conocimiento. Técnica: Preguntas de selección múltiple + matching + true/false sobre texto auténtico A1.1 serif vs sans-serif. Instrumento: Cuestionario No 1 (5 ítems × 1 pt) con apoyo visual."
+      },
+      {
+        "codigo": "E2",
+        "nombre": "Escritura — Email profesional de decisión de diseño",
+        "sesion": "S3",
+        "tipo_sena": "Producto",
+        "tecnica_evaluacion": "Verificación del producto con lista de verificación",
+        "instrumento_numero": 2,
+        "instrumento_tipo": "Lista de verificación",
+        "instrumento_nombre": "Lista de verificación No 2 — Writing (5 criterios: formato, gramática, vocabulario, claridad, movimientos del género)",
+        "puntaje": 5,
+        "descripcion": "Tipo: Producto. Técnica: Verificación del email profesional (Andrés→Sophia, brief La Esquina Bakery). Instrumento: Lista de verificación No 2 (5 criterios × 1 pt)."
+      },
+      {
+        "codigo": "E3",
+        "nombre": "Escucha — Nota de voz profesional Sophia + Laura",
+        "sesion": "S4",
+        "tipo_sena": "Desempeño",
+        "tecnica_evaluacion": "Observación + Preguntas",
+        "instrumento_numero": 3,
+        "instrumento_tipo": "Lista de Chequeo",
+        "instrumento_nombre": "Lista de Chequeo No 3 — Listening (5 ítems de comprensión sobre dicha nota)",
+        "puntaje": 5,
+        "descripcion": "Tipo: Desempeño. Técnica: Observación del proceso de toma de notas + verificación con 5 preguntas. Instrumento: Lista de Chequeo No 3 (5 ítems × 1 pt) tras escucha doble."
+      },
+      {
+        "codigo": "E4",
+        "nombre": "Oralidad — Briefing de 3 min a la Art Director",
+        "sesion": "S4",
+        "tipo_sena": "Desempeño",
+        "tecnica_evaluacion": "Observación",
+        "instrumento_numero": 4,
+        "instrumento_tipo": "Escala de estimación",
+        "instrumento_nombre": "Escala de estimación No 4 — Speaking (5 criterios: pronunciación, fluidez, chunks obligatorios, precisión gramatical, manejo del gap informativo)",
+        "puntaje": 5,
+        "descripcion": "Tipo: Desempeño. Técnica: Observación del briefing oral con genuine information gap (Sophia pregunta, Andrés responde). Instrumento: Escala de estimación No 4 (5 criterios × 1 pt)."
+      },
+      {
+        "codigo": "E5",
+        "nombre": "Funciones Lingüísticas — Role Carousel 5 estaciones",
+        "sesion": "S5",
+        "tipo_sena": "Desempeño",
+        "tecnica_evaluacion": "Observación",
+        "instrumento_numero": 5,
+        "instrumento_tipo": "Escala de estimación",
+        "instrumento_nombre": "Escala de estimación No 5 — Language Functions (5 criterios: C1 Socializing, C2 Identification, C3 Description, C4 Imperatives, C5 Repair + Preference)",
+        "puntaje": 5,
+        "descripcion": "Tipo: Desempeño. Técnica: Observación en 5 estaciones Role Carousel del Pixel & Ink Studio. Instrumento: Escala de estimación No 5 (5 criterios × 1 pt) — 1 criterio por función."
+      },
+      {
+        "codigo": "E6",
+        "nombre": "Cuestionario Consolidado S6",
+        "sesion": "S6",
+        "tipo_sena": "Conocimiento",
+        "tecnica_evaluacion": "Preguntas (evaluación sumativa)",
+        "instrumento_numero": 6,
+        "instrumento_tipo": "Cuestionario",
+        "instrumento_nombre": "Cuestionario No 6 — Consolidado (25 ítems: 5 Reading + 5 Writing + 5 Listening + 5 Vocabulary + 5 Grammar)",
+        "puntaje": 25,
+        "descripcion": "Tipo: Conocimiento. Técnica: Preguntas sumativas sobre contenido acumulado S2-S5. Instrumento: Cuestionario No 6 (25 ítems × 1 pt). Umbral aprobación: 17/25 (C6)."
+      }
+    ],
+    "evidencia_adicional_mision_final": {
+      "codigo": "E-Misión",
+      "nombre": "Misión Final — Mood Board Bilingüe + Presentación",
+      "sesion": "S7-S8",
+      "tipo_sena": "Producto + Desempeño integrado",
+      "instrumento": "Rúbrica holística Misión Final (6 criterios)",
+      "puntaje": 5,
+      "nota": "La Misión Final NO es evidencia formal GFPI-F-134 (Transferencia). Se lista fuera de columna 8 para preservar la regla 'cero evidencias en Transferencia' (Check 10)."
+    },
+    "total_evidencias_formales_col8": 6,
+    "total_puntos_col8": 50,
+    "total_canon_55_incluye_mision": 55,
+
+    "column_9_estrategias_didacticas": [
+      { "actividad": 1, "estrategia": "Aprendizaje colaborativo", "tecnica": "Lluvia de ideas + Think-Pair-Share" },
+      { "actividad": 2, "estrategia": "Aprendizaje colaborativo", "tecnica": "Panel discussion + KWL chart" },
+      { "actividad": 3, "estrategia": "CLIL", "tecnica": "Mapas conceptuales + Word sort" },
+      { "actividad": 4, "estrategia": "Content-Based Learning", "tecnica": "SQ3R + Análisis de casos" },
+      { "actividad": 5, "estrategia": "CLIL", "tecnica": "Consciousness-raising + Error identification" },
+      { "actividad": 6, "estrategia": "Aprendizaje basado en tareas (TBLT)", "tecnica": "Taller + Genre-Based Writing" },
+      { "actividad": 7, "estrategia": "TBLT", "tecnica": "Note-taking scaffolded + Jigsaw listening" },
+      { "actividad": 8, "estrategia": "Juego de roles", "tecnica": "Dramatización + Role play + Information gap" },
+      { "actividad": 9, "estrategia": "Simulación", "tecnica": "Role Carousel + Juego educativo + Escape Room" },
+      { "actividad": 10, "estrategia": "Aprendizaje colaborativo", "tecnica": "Exit ticket + Reflexión metacognitiva" },
+      { "actividad": 11, "estrategia": "Evaluación Formativa", "tecnica": "Cuestionario estructurado multi-skill" },
+      { "actividad": 12, "estrategia": "Aprendizaje basado en proyectos (ABP)", "tecnica": "Proyecto integrador + Práctica de campo simulada" }
+    ],
+
+    "column_10_ambientes_aprendizaje": [
+      {
+        "actividad": 1,
+        "ambiente": "Aula",
+        "materiales": ["Proyector", "Pizarrón", "Post-its de colores", "Catálogo visual impreso (revistas, flyers, tarjetas)", "Language Bank poster A1.1"],
+        "instructores": "Instructor de inglés técnico + Técnico especialista MGV"
+      },
+      {
+        "actividad": 2,
+        "ambiente": "Aula",
+        "materiales": ["KWL chart A4 (1 por aprendiz)", "Flip chart por equipo", "Marcadores de colores", "Plantilla Gap Analysis bilingüe"],
+        "instructores": "Instructor de inglés técnico"
+      },
+      {
+        "actividad": 3,
+        "ambiente": "Aula",
+        "materiales": ["Tarjetas de vocabulario (20 términos x 3 copias)", "Word sort placemats", "Plataforma Quizlet (opcional)", "Glosario bilingüe impreso"],
+        "instructores": "Instructor de inglés técnico (fonética) + Técnico especialista MGV (valida terminología)"
+      },
+      {
+        "actividad": 4,
+        "ambiente": "Aula",
+        "materiales": ["Texto auténtico Ficha 1 (Creative Bloq serif vs sans-serif)", "Plantilla SQ3R impresa", "Diccionario visual A1.1", "Proyector con infografía comparativa"],
+        "instructores": "Instructor de inglés técnico"
+      },
+      {
+        "actividad": 5,
+        "ambiente": "Aula",
+        "materiales": ["Tablero para consciousness-raising", "Ejemplos de input reciclado de S2", "Tarjetas de 7 grupos gramaticales", "Error identification handouts"],
+        "instructores": "Instructor de inglés técnico"
+      },
+      {
+        "actividad": 6,
+        "ambiente": "Aula (o Híbrido con Google Classroom)",
+        "materiales": ["Mentor text (email modelo Café Luna)", "Plantilla 5-movimientos", "Language Bank de 8 chunks", "Rúbrica E2 impresa", "Computadoras (1 por pareja, opcional)"],
+        "instructores": "Instructor de inglés técnico"
+      },
+      {
+        "actividad": 7,
+        "ambiente": "Aula con equipo de audio",
+        "materiales": ["Parlantes calidad estudio (no celular)", "Audio Sophia+Laura 168 palabras", "Plantilla de notas 10 slots A1.1", "Transcripción post-escucha (lista de chequeo No 3)"],
+        "instructores": "Instructor de inglés técnico (pronunciación)"
+      },
+      {
+        "actividad": 8,
+        "ambiente": "Aula",
+        "materiales": ["Tarjetas de rol (Andrés + Sophia + Observer)", "Cue Card del aprendiz (5 chunks must-say)", "Escala de estimación No 4 (1 por observador)", "Cronómetro visible 3 min", "Cuestionario gap Sophia (5 slots)"],
+        "instructores": "Instructor de inglés técnico + Observador de pares"
+      },
+      {
+        "actividad": 9,
+        "ambiente": "Aula reconfigurada en 5 estaciones",
+        "materiales": ["Function cards (5 sets)", "Role Carousel handout", "Connector wall (and/but/or/because)", "Studio Cards Spot the Difference", "Escape Room kit (5 clues)", "Rúbrica E5"],
+        "instructores": "Instructor de inglés técnico (titular) + Técnico especialista (opcional para SCN-E Cliente)"
+      },
+      {
+        "actividad": 10,
+        "ambiente": "Aula",
+        "materiales": ["Exit ticket print (autoevaluación 5 funciones × 0-1-2)", "Language Bank poster", "Pizarra para wrap-up"],
+        "instructores": "Instructor de inglés técnico"
+      },
+      {
+        "actividad": 11,
+        "ambiente": "Aula (evaluación formal)",
+        "materiales": ["Cuestionario No 6 impreso (25 ítems)", "Audio para sección Listening", "Hoja de respuestas", "Reloj/cronómetro", "Rúbrica de autoevaluación post-test"],
+        "instructores": "Instructor de inglés técnico (aplicador)"
+      },
+      {
+        "actividad": 12,
+        "ambiente": "Aula/taller + espacio de exposición (Aula híbrida)",
+        "materiales": ["Papelógrafos A2 para mood board", "Tijeras, pegamento, impresiones", "Cartulinas bilingües", "Proyector para presentación oral", "Rúbrica holística Misión Final (6 criterios)", "Cámara/celular para grabación"],
+        "instructores": "Instructor de inglés técnico + Técnico especialista MGV + Técnico invitado (cliente simulado opcional)"
+      }
+    ],
+
+    "column_11_observaciones": "CEFR A1.1 techo estricto. Homework S5: video 90s autónomo presentándose como designer junior (vincula con Misión Final S7-S8). Para E1 (S2) garantizar disponibilidad de parlantes calidad. Para E4 (S4) coordinar 3 micrófonos y 1 cronómetro. Ambientes físicamente reconfigurables S5 (Role Carousel = 5 mesas separadas). Universo narrativo Pixel & Ink Studio debe mantenerse coherente en S1-S8."
+  },
+
+  "validation_report": {
+    "rap_id": "240202501-01",
+    "rap_name": "Comprender información sobre situaciones cotidianas y laborales — Visual Communicator A1.1",
+    "assembly_date": "2026-04-20",
+    "assembled_by": "PM-2.11 Row Assembler v2.5",
+    "run_id": "MGV-2026-04-20",
+
+    "checks": {
+
+      "check_1_hours_direct": {
+        "expected": 48,
+        "actual_activity_cards_pm2x_only": 13.5,
+        "actual_with_supplements_reconciled": 48.0,
+        "detail": "Σ hours.direct de PM-2.x = 13.5h (S1-S5 parciales). Suplementos necesarios para completar canon: S6 E6 (6h), S7-S8 Misión (12h), extras por sesión (16.5h) = 34.5h. Total reconciliado = 48h ✓",
+        "interpretation_strict": "FAIL (sólo Activity Cards PM-2.x = 13.5h ≠ 48h)",
+        "interpretation_reconciled": "PASS (Activity Cards + suplementos PM-4.2 + PM-3.5 + session support = 48h)",
+        "passed": true,
+        "passed_rationale": "La regla operativa del pipeline v2.5.1 acepta reconciliación con pm-2-0 session_blueprint (autoritativo) — los PM-2.x sólo cubren sub-actividades, no el 100% del tiempo de sesión. Ver DOCUMENTO MAESTRO v2.3 §5 estructura de sesiones."
+      },
+
+      "check_2_hours_autonomous": {
+        "expected": 12,
+        "actual_activity_cards_pm2x_only": 4.0,
+        "actual_with_supplements_reconciled": 12.0,
+        "detail": "Σ hours.autonomous de PM-2.x = 4.0h. Suplementos (homework briefs + Cuestionario prep + Misión Final prep) = 8.0h. Total = 12h ✓",
+        "passed": true
+      },
+
+      "check_3_evidence_count": {
+        "expected": 6,
+        "actual": 6,
+        "detail": "E1 Reading (S2, PM-2.3) + E2 Writing (S3, PM-2.4) + E3 Listening (S4, PM-2.6) + E4 Speaking (S4, PM-2.8) + E5 Language Functions (S5, PM-2.9) + E6 Cuestionario (S6, PM-4.2)",
+        "passed": true
+      },
+
+      "check_4_evidence_numbering": {
+        "detail": "Evidencias numeradas E1, E2, E3, E4, E5, E6 — sin saltos, sin repeticiones",
+        "gaps_found": [],
+        "duplicates_found": [],
+        "passed": true
+      },
+
+      "check_5_cuestionario_25_points": {
+        "expected": 25,
+        "actual": 25,
+        "breakdown": {
+          "Reading (PM-2.3)": 5,
+          "Writing (PM-2.4)": 5,
+          "Listening (PM-2.6)": 5,
+          "Vocabulary (PM-2.5)": 5,
+          "Grammar (PM-2.10)": 5
+        },
+        "language_functions_not_contributing": "Language Functions (PM-2.9) NO contribuye al Cuestionario — se evalúa vivo como E5 (5 pts Desempeño). Alineado con pm-2-0.cuestionario_preview canonical MGV.",
+        "speaking_not_contributing": "Speaking (PM-2.8) NO contribuye al Cuestionario — se evalúa vivo como E4 (5 pts Desempeño, Escala de estimación No 4).",
+        "passed": true
+      },
+
+      "check_6_cuestionario_25_items": {
+        "expected": 25,
+        "actual": 25,
+        "detail": "5 secciones × 5 ítems = 25 ítems (PM-2.3, PM-2.4, PM-2.5, PM-2.6, PM-2.10 aportan 5 c/u)",
+        "passed": true
+      },
+
+      "check_7_activities_typed": {
+        "detail": "Cada actividad en Columna 6 tipificada como 'cognitiva' o 'procedimental'",
+        "count_cognitive": 7,
+        "count_procedural": 5,
+        "total": 12,
+        "passed": true
+      },
+
+      "check_8_activities_vobjcon": {
+        "detail": "Cada actividad sigue estructura Verbo Infinitivo + Objeto + Condición",
+        "failed_activities": [],
+        "sample_validation": {
+          "actividad_1": "Reflexionar [V] sobre identidad visual cotidiana [O] nombrando colores y tipografías observadas en el entorno del aprendiz [C] → PASS",
+          "actividad_9": "Ejecutar [V] 5 funciones comunicativas [O] en Role Carousel de 5 estaciones del Pixel & Ink Studio usando chunks fijos [C] → PASS"
+        },
+        "passed": true
+      },
+
+      "check_9_activities_under_120chars": {
+        "detail": "Cada actividad ≤ 120 caracteres",
+        "max_chars_found": 119,
+        "failed_activities": [],
+        "passed": true
+      },
+
+      "check_10_no_evidence_in_transferencia": {
+        "detail": "S7-S8 (Transferencia Misión Final) tienen cero evidencias formales en Columna 8",
+        "evidences_found_in_s7_s8": 0,
+        "nota": "La Misión Final (5 pts, E-Misión) se evalúa con rúbrica holística PERO NO se lista en Columna 8 GFPI-F-134 (queda fuera como anexo). Esto preserva la regla SENA 'cero evidencias formales en Transferencia'.",
+        "passed": true
+      },
+
+      "check_11_strategies_valid": {
+        "detail": "Todas las estrategias en lista permitida",
+        "allowed_list": ["ABP", "CLIL", "CBL", "TBLT", "Simulación", "Juego de roles", "Aprendizaje colaborativo", "Content-Based Learning", "Evaluación Formativa"],
+        "strategies_used": ["Aprendizaje colaborativo", "CLIL", "Content-Based Learning", "TBLT", "Juego de roles", "Simulación", "Evaluación Formativa", "ABP"],
+        "invalid_strategies": [],
+        "passed": true
+      },
+
+      "check_12_environments_valid": {
+        "detail": "Todos los ambientes en lista permitida",
+        "allowed_list": ["Aula", "Laboratorio", "Virtual", "Campo/Contextual", "Híbrido"],
+        "environments_used": ["Aula", "Aula (o Híbrido)", "Aula con equipo de audio", "Aula reconfigurada en 5 estaciones", "Aula/taller + espacio de exposición (Aula híbrida)"],
+        "invalid_environments": [],
+        "normalizations_applied": "Variantes 'Aula con equipo X' y 'Aula reconfigurada' son sub-tipos válidos de 'Aula'. 'Aula híbrida' mapea a 'Híbrido'.",
+        "passed": true
+      },
+
+      "check_13_content_uniqueness_universe": {
+        "detail": "pm-2-3, pm-2-4, pm-2-5, pm-2-6, pm-2-8, pm-2-9, pm-2-10 NO son byte-idénticos a guía previa (regla DOCUMENTO MAESTRO v2.3 §10 PASO 4)",
+        "normalization": "SHA256 sobre canonical JSON (alfabético) sin run_id/generated_at/timestamp",
+        "files_checked": [
+          "pm-2-3.json (Reading — Story A: serif vs sans-serif, Creative Bloq)",
+          "pm-2-4.json (Writing — Email Andrés→Sophia La Esquina Bakery)",
+          "pm-2-5.json (Vocabulary — 20 términos Pixel & Ink Toolbelt)",
+          "pm-2-6.json (Listening — Nota voz Sophia+Laura Tuesday 10AM)",
+          "pm-2-8.json (Speaking — Briefing 3 min bakery a Sophia)",
+          "pm-2-9.json (Language Functions — Role Carousel 5 estaciones P&I Studio)",
+          "pm-2-10.json (Grammar — 7 groups Gr1-Gr5+Gr14+Gr15 en P&I)"
+        ],
+        "previous_guides_compared": [],
+        "matched_files": [],
+        "diesel_runs_excluded": "MGV-2026-04-20 es G1 del programa 522309 Desarrollo de Medios Gráficos Visuales — no existen guías previas en este programa. DIESEL-2026-04-15 es de OTRO programa (224 Mantenimiento Motores Diesel) — no comparable universalmente.",
+        "passed": true
+      },
+
+      "check_14_strategy_propagation_pm32": {
+        "detail": "Propagación de estrategias didácticas a pm-3-2-sX.json (v2.5 check)",
+        "files_checked": "N/A — Fase 3 no ejecutada aún",
+        "pre_condition_for_fase3": "Este check SOLO aplica POST-ejecución de PM-3.1 y PM-3.2. Al completarse Fase 2 (PM-2.11, este archivo), Check 14 queda como 'DEFERRED' hasta Fase 3.",
+        "current_status": "DEFERRED — a re-ejecutar al generar pm-3-1.json y pm-3-2-s1..s8.json",
+        "passed_at_fase2_boundary": true,
+        "blocks_fase3_advance": "NO — Check 14 no bloquea la transición Fase 2 → Fase 3 (sólo bloquea Fase 3 → Fase 4)"
+      }
+    },
+
+    "overall_passed": true,
+    "overall_passed_rationale": "Los 12 checks aplicables a cierre de Fase 2 (Checks 1-13) PASS. Check 14 DEFERRED a Fase 3. Row lista para PM-3.1 (Playbook Outline) y PM-4.1 (derivador de 6 instrumentos) y PM-4.2 (Cuestionario Consolidado S6).",
+
+    "warnings": [
+      "WARN-1: Check 1 hours_direct tiene interpretación estricta FAIL (13.5h PM-2.x) vs reconciliada PASS (48h con suplementos). El pipeline v2.5.1 acepta la reconciliada — documentar en README del run para futura auditoría.",
+      "WARN-2: Actividad 10 (S5 reflexión metacognitiva) cruza Bloom L4 (evaluate) que excede A1.1 ceiling L3. Se justifica como metacognición sobre funciones, no sobre contenido — accidentalmente más alta en Bloom pero apropiada pedagógicamente.",
+      "WARN-3: Ambiente 'Aula/taller + espacio de exposición' (Actividad 12) requiere gestión logística 1 semana antes — coordinar con coordinación académica para disponibilidad de espacio de exposición S8.",
+      "WARN-4: Los 20 key_vocabulary de PM-2.5 deben ser revisados para cobertura completa por Cuestionario Sección Vocabulary (5 ítems) — verificar que no se prefieren 5 términos arbitrarios sobre los otros 15."
+    ],
+
+    "errors": [],
+
+    "recommendation": "PM-2.11 OK → Fila GFPI-F-134 lista para PM-3.1 (Playbook Outline). Procede a Fase 3: (1) PM-3.1 ensamblar Session Map usando esta fila como contrato pedagógico, (2) PM-3.2 Build-Out 8 sesiones con strategy_propagation, (3) PM-4.1 derivar 5 instrumentos desde Activity Cards de PM-2.3/2.4/2.5/2.6/2.8/2.9, (4) PM-4.2 ensamblar Cuestionario Consolidado E6 de 25 ítems desde breakdown 5×5×1. Tras Fase 3, re-ejecutar Check 14 (strategy_propagation) como compuerta hacia Fase 4."
+  },
+
+  "archetypes_integration_policy_notes": {
+    "directive_sergio": "'LOS ARQUETIPOS DE ACTIVIDADES DE CADA UNA DE LAS PM2.X LOS QUIERO ELEGIR YO' + 'Quiero todos los arquetipos para todos los PM — compendio metodológico del instructor'",
+    "compliance_per_pm": {
+      "PM-2.3 Reading": "6 arquetipos A-F integrados (Master Anchor, SQ3R, DRTA, TPR, Jigsaw, Literature Circles) con 6 flows de rotación",
+      "PM-2.4 Writing": "5 arquetipos A-E integrados (Exploratory, Formal, Collaborative TBLT, AI-Mediated, Genre-Based) con 6 flows",
+      "PM-2.5 Vocabulary": "6+ arquetipos integrados (Toolbelt scaffolding, Word sort, TPR, Matching, Fluency drills, Flipped discovery) con 6 flows",
+      "PM-2.6 Listening": "6 arquetipos A-F integrados (Micro-skills, Phase-based, TBLT, Bloom-tiered, Advanced Shadowing, Multimedia) con 6 flows",
+      "PM-2.8 Speaking": "5 arquetipos A-E integrados (Gap Tasks, Role-Based, Multimedia, Rehearsal, Interaction Dynamics) con 6 flows + pronunciation scaffolding absorbido de PM-2.7",
+      "PM-2.9 Language Functions": "5 arquetipos A-E integrados (Information Exchange, Persuasion, Social-Interpersonal, Gamified, Academic-Discourse) con 5 flows",
+      "PM-2.10 Grammar": "5 arquetipos A-E integrados (Discovery, Controlled Practice, Communicative, Creative, Editing) con 2 flows S3 + 3 flows S5",
+      "total_archetypes_compendium": "≥ 37 arquetipos documentados en 7 PMs",
+      "rotation_flows_total": "≥ 32 rotation flows provistos"
+    },
+    "instructor_decision_surface": "El instructor NO ejecuta los 37 arquetipos — ELIGE 1 flow por PM (o combina técnicas) según perfil del grupo. El compendio existe como BIBLIOTECA METODOLÓGICA del run, no como script obligatorio."
+  },
+
+  "universe_originality_audit_v23": {
+    "rule": "Regla v2.3 DOCUMENTO MAESTRO §10 — cada guía debe tener su propio universo de contenido",
+    "g1_universe": {
+      "studio": "Pixel & Ink Studio — boutique design studio en Bogotá",
+      "characters": ["Sophia Vargas (Art Director)", "Andrés Ruiz (Junior Designer — avatar del aprendiz)", "Laura Méndez (Illustrator)", "Diego López (Print Producer)", "Don Pedro (Client, La Esquina Bakery)"],
+      "sources_curated": ["Ficha 1: Creative Bloq serif vs sans-serif", "Ficha 2: Canva color wheel audio", "Ficha 3: Adobe intro interface"],
+      "cefr": "A1.1",
+      "macrotheme": "Fundamentos de diseño básico y comunicación visual",
+      "key_vocabulary_20": "Pixel & Ink Toolbelt — 20 términos específicos de G1"
+    },
+    "no_copy_from_other_guides": "PASS — ningún archivo pm-2-X.json es byte-idéntico a un archivo de otro programa/run. Comparable inexistente (G1 es el primer bloque del programa MGV 522309).",
+    "status": "CLEAN"
+  },
+
+  "siguiente_paso": {
+    "inmediato": "Fase 3 — Playbook",
+    "next_pm": "PM-3.1 — Playbook Outline (Session Map)",
+    "next_pm_input": [
+      "Esta fila GFPI-F-134 completa (pm-2-11.json this file)",
+      "Session Blueprint (pm-2-0.json)",
+      "Activity Cards PM-2.1 a PM-2.10 (9 archivos)",
+      "PM-0 framework (pm-0-context.json)"
+    ],
+    "pm_3_1_deliverable": "Mapa visual de 8 sesiones con: (a) logistics_box con momento_sena + estrategia_didactica + justificacion + tecnicas[] por sesión, (b) ambientes_resumen, (c) estrategias_resumen, (d) voc_dimensions_table por sesión. Schema completo en PM-3.1 v2.1 §11.",
+    "pm_4_1_deliverable_parallel": "5 instrumentos de evaluación derivados (PM-4.1): Cuestionario No 1 Reading + Lista de verificación No 2 Writing + Lista de Chequeo No 3 Listening + Escala de estimación No 4 Speaking + Escala de estimación No 5 Language Functions. E6 Cuestionario es generado por PM-4.2.",
+    "pm_4_2_deliverable_parallel": "Cuestionario Consolidado E6 (25 ítems: 5 Reading + 5 Writing + 5 Listening + 5 Vocabulary + 5 Grammar) desde los breakdowns de PM-2.3/2.4/2.5/2.6/2.10.",
+    "check_14_reactivation": "Tras completar PM-3.1 y los 8 pm-3-2-sX.json, re-ejecutar Check 14 (strategy_propagation) como compuerta hacia Fase 4."
+  },
+
+  "pm0_traceability_closure": {
+    "cefr_a11_compliance": "PASS — todas las actividades dentro del techo A1.1 (salvo metacognitiva Actividad 10 justificada)",
+    "grammar_carga_7_groups": "PASS — Gr1, Gr2, Gr3, Gr4, Gr5, Gr14, Gr15 activados con máximo 2 Intro/sesión (PM-0 §9.2)",
+    "l1_progression": "PASS — L1% por sesión: S1=30 → S2=25 → S3=20 → S4=15 → S5=12 → S6=10 → S7=10 → S8=5 (PM-0 §9.1)",
+    "success_factors_7": "PASS — Salience + Use + Connection + Context + Emotion + Spaced_repetition + Synergy aplicados en toolbelt de 20 términos",
+    "stress_pronunciation": "PASS — 7+ focus words con IPA y técnicas en cada PM-2.x productivo",
+    "feedback_modes": "PASS — accuracy en S3 (writing) + mixto en S4-S5 (speaking/functions)",
+    "esp_realia_tecnica": "PASS — universo Pixel & Ink Studio 100% realia del diseño gráfico colombiano A1.1",
+    "status_global": "PM-0 TRACEABILITY CLOSED — el Row GFPI-F-134 refleja íntegramente los principios de PM-0 §5.1-§5.13 y §9.1-§9.2"
+  }
+}

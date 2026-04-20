@@ -140,9 +140,9 @@ PM-2.6 | Arquetipo: [A/B/C/D/E/F]
 ...
 <!-- END GFPI SECTION -->
 
-<!-- GFPI SECTION: 3.3-APROPIACION-PRONUNCIATION -->
-PM-2.7 | Arquetipo: [A/B/C/D/E]
-...
+<!-- GFPI SECTION: 3.3-APROPIACION-PRONUNCIATION [DEPRECATED v2.0] -->
+PM-2.7 | DEPRECATED — pronunciación integrada como scaffolding en PM-2.8 desde v2.0.
+Esta sección ya no se genera como bloque independiente.
 <!-- END GFPI SECTION -->
 
 <!-- GFPI SECTION: 3.3-APROPIACION-GRAMMAR -->
@@ -178,9 +178,10 @@ Producto: [qué artefacto se entrega]
 <!-- GFPI SECTION: 4-EVIDENCIAS -->
 | Tipo | Evidencia | Técnica | Instrumento | Criterio |
 |------|-----------|---------|-------------|----------|
-| Conocimiento | [qué demuestra] | Cuestionario | PM-4.2 (50 pts) | [criterio] |
-| Desempeño | [qué demuestra] | Observación | PM-4.1 Checklist (10 pts) | [criterio] |
-| Producto | [qué demuestra] | Valoración | PM-4.1 Rúbrica (20 pts) | [criterio] |
+| Conocimiento | [qué demuestra] | Cuestionario | PM-4.2 Cuestionario Consolidado S6 (25 pts) | [criterio] |
+| Desempeño | [qué demuestra] | Observación | PM-4.1 Listas de Chequeo (5 pts c/u: Listening, Speaking, Language Functions) | [criterio] |
+| Producto | [qué demuestra] | Verificación | PM-4.1 Lista de Verificación Writing (5 pts) + Cuestionario Reading (5 pts) | [criterio] |
+<!-- Canon de puntuación: 50 pts formales. Ver PM-4.1 §"Canon de Puntuación v2.3.1". Misión Final (PM-3.5) no suma al total formal — es transferencia ABP. -->
 <!-- END GFPI SECTION -->
 ```
 

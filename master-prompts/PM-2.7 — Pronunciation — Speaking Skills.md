@@ -1,3 +1,15 @@
+---
+status: deprecated
+deprecated_date: 2026-04-13
+absorbed_by: PM-2.8
+version: 1.0 → deprecated
+---
+
+> [!warning] DEPRECATED — v2.0 (2026-04-13)
+> Este PM ha sido absorbido por **PM-2.8 — Speaking task (incl. pronunciation scaffolding activities)**.
+> El contenido de pronunciación ahora se integra como scaffolding dentro de las actividades de Speaking.
+> Este archivo se mantiene como registro histórico. **No usar en nuevas ejecuciones del sistema.**
+
 # PM-2.7: PRONUNCIATION & SPEAKING SKILLS
 
 ## FPI SENA — Bilingüismo

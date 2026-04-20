@@ -10,10 +10,15 @@
 |-------|-------|
 | **Código** | PM-3.4 |
 | **Nombre** | Workbook — Autonomous Work |
+| **Versión** | 2.0 |
+| **Last Verified** | 2026-04-13 |
 | **Destinatario** | Aprendiz (documento para el estudiante) + Instructor (Answer Key separado) |
 | **Función** | Generar los capítulos del Workbook que el aprendiz completa como trabajo autónomo entre sesiones presenciales |
 | **Analogía** | Es el "gimnasio" de la guía — donde el aprendiz practica solo lo que vio en clase |
 | **Volumen** | Un capítulo por sesión presencial que asigna trabajo autónomo (default: 7 capítulos para 8 sesiones) |
+| **Phase** | 4 |
+| **Depends On** | [PM-3.2, PM-2.3, PM-2.4, PM-2.5, PM-2.6, PM-2.10] |
+| **Trigger** | post_playbook_confirmation |
 
 ---
 
@@ -52,6 +57,18 @@ Contiene respuestas para cada capítulo:
 - Respuestas correctas donde aplique
 - Criterios de evaluación para tareas abiertas
 - Rúbricas simplificadas
+
+---
+
+## CAMBIO v2.0 — PRINCIPIO DE TRES VERSIONES
+
+> [!info] Cambio v2.0 (2026-04-13)
+> A partir de v2.0, el Workbook aplica el **Principio de Tres Versiones**:
+> - **Versión 1 (Apropiación S2-S5):** Las tasks originales diseñadas en PM-2.3, PM-2.4, PM-2.5, PM-2.6, PM-2.10 — trabajadas en clase con el instructor.
+> - **Versión 2 (Evaluación S6):** El cuestionario consolidado (25 pts) — tasks parecidas pero diferentes, para evaluación formal.
+> - **Versión 3 (Workbook — esta versión):** Tasks adicionales de práctica autónoma — parecidas pero diferentes a las anteriores — para trabajo independiente.
+> 
+> Las tres versiones abordan el mismo contenido desde ángulos ligeramente distintos. No son las mismas tasks copiadas.
 
 ---
 

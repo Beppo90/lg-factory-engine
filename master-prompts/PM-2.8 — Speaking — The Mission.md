@@ -1,4 +1,17 @@
-# PM-2.8: SPEAKING PRODUCTION & SIMULATION — THE MISSION
+---
+version: 2.0
+last_verified: 2026-04-13
+session: 4
+fase_sena: "Apropiación"
+activity_type: "procedimental"
+generates_evidence: true
+evidence_type: "Desempeño"
+contributes_to_cuestionario: false
+cuestionario_skill: null
+cuestionario_points: 0
+---
+
+# PM-2.8: SPEAKING PRODUCTION & SIMULATION — THE MISSION (incl. pronunciation scaffolding activities)
 
 ## FPI SENA — Bilingüismo
 ## Fichero Clínico de Actividades y Estrategias para el Desarrollo de la Expresión Oral
@@ -27,11 +40,27 @@
 |-------|--------|
 | Toolbelt consolidado (20 términos, chunks) | PM-2.5 |
 | Chunks del Manual de Supervivencia Oral | PM-2.6 |
-| Pronunciación entrenada | PM-2.7 |
+| Pronunciación (scaffolding interno) | PM-2.8 mismo — absorbió PM-2.7 en v2.0 |
 | Communicative functions | PM-1.2 |
 | Grammar targets | PM-1.2 (vía PM-2.10) |
 | Universo narrativo | PM-1.2 |
 | Nivel CEFR | PM-1.2 |
+
+---
+
+## INTEGRACIÓN DE PRONUNCIATION SCAFFOLDING
+
+A partir de v2.0 (2026-04-13), PM-2.8 **incorpora scaffolding de pronunciación** que previamente era responsabilidad de PM-2.7 (ahora deprecado). 
+
+Los contenidos de pronunciación ahora integrados en PM-2.8 incluyen:
+
+- **Trabalenguas técnicos:** Palabras clave de la simulación con trabajo de pronunciación (ej: "share → secure → service")
+- **Análisis de fonemas problemáticos:** Identificación de sonidos difíciles para hispanohablantes dentro de la tarea oral
+- **Práctica de prosodia:** Entonación, ritmo y énfasis en las frases cruciales de la simulación
+- **Shadowing de chunks:** Ensayo de fragmentos clave del diálogo antes de la producción libre
+- **Ear training contextualizado:** Discriminación auditiva dentro del escenario mismo
+
+Estos elementos actúan como **scaffolding implícito** durante la preparación de la simulación, garantizando que los aprendices no solo comprendan la tarea sino que puedan ejecutarla con pronunciación inteligible.
 
 ---
 
@@ -122,9 +151,58 @@ E) INTERACTION DYNAMICS — Mingle, Quiz, Interview Sim, Spin-offs, A Gift
 
 | Relación | Prompt | Descripción |
 |----------|--------|-------------|
-| **Recibe input de** | PM-2.5, PM-2.6, PM-2.7 | Toolbelt, chunks, pronunciación |
+| **Recibe input de** | PM-2.5, PM-2.6 | Toolbelt, chunks (pronunciación es scaffolding interno — PM-2.7 absorbido en v2.0) |
 | **Alimenta a** | PM-4.1 | Checklist de Observación evalúa esta simulación |
 | **Se ubica en** | GFPI-F-135 Sección 3.4 | Transferencia |
+
+---
+
+## ACTIVITY CARD OUTPUT
+
+Esta sección define el output estructurado que este PM entrega al PM-2.11 (GFPI-F-134 Row Assembler).
+
+```yaml
+activity_card:
+  pm_id: "PM-2.8"
+  pm_name: "Speaking — The Mission"
+  session: 4
+  phase_sena: "Apropiación"
+  rap_id: "[A GENERAR — viene del Session Blueprint PM-2.0]"
+  
+  activities:
+    - number: 1
+      type: "procedimental"
+      statement: "[A GENERAR — Participar en simulación: rol técnico con comunicación en inglés]"
+      didactic_strategy: "Juego de roles"
+      didactic_technique: "Role play + Dramatización"
+  
+  hours:
+    direct: 1.5
+    autonomous: 0.5
+  
+  evidence:
+    generates_evidence: true
+    type: "Desempeño"
+    description: "El aprendiz demuestra capacidad de comunicación oral en inglés ejecutando rol técnico con fluidez, precisión y adecuación al contexto"
+    evaluation_technique: "Observación"
+    instrument_number: 4
+    instrument_type: "Escala de estimación"
+  
+  environment:
+    type: "Aula"
+    materials:
+      - "Micrófono de diadema (1 por aprendiz)"
+      - "Proyector para feedback de video"
+      - "Tablet/computadora para grabación (opcional)"
+      - "Tarjetas de rol con guiones técnicos"
+      - "Lista de pronunciación: fonemas clave + trabalenguas técnicos"
+    instructors: "Instructor de inglés técnico"
+  
+  contributes_to_consolidated_quiz: false
+  quiz_skill: null
+  quiz_points: 0
+  quiz_item_count: 0
+```
 
 ---
 

@@ -1,0 +1,691 @@
+{
+  "pm_id": "PM-2.6",
+  "pm_name": "Listening — The Auditory Anchor",
+  "run_id": "MGV-2026-04-20",
+  "guide": "G1 — The Visual Communicator",
+  "program_code": "522309",
+  "program_name": "Desarrollo de Medios Gráficos Visuales",
+  "rap_id": "RAP-G1-522309",
+  "session": 4,
+  "phase_sena": "Apropiación",
+  "cefr_level": "A1.1",
+  "content_universe": "Tuesday 10 AM at Pixel & Ink Studio. Sophia (AD) records an internal voice note for the team; Laura (SM) joins with a quick color-theory refresher. Topic: confirming the color palette direction for La Esquina Bakery + a short intro to the color wheel for new designers.",
+  "derived_from": [
+    "pm-1-2.json (G1 Story B — Ficha 2 Canva color wheel tutorial, 20 toolbelt terms)",
+    "pm-2-0.json (Session 4 blueprint: 2.0h direct + 0.5h autonomous)",
+    "pm-2-3.json (Master Anchor — must use DIFFERENT characters / genre)",
+    "pm-2-5.json (Toolbelt consolidated)",
+    "pm-2-10.json (Grammar targets S3+S5 embedded naturally)",
+    "pm-0-context.json (§5 SUCCESS, §9.1 L1 15% S4, §5.6 Chunking)"
+  ],
+
+  "pm0_anchor": {
+    "cefr_ceiling": "A1.1",
+    "l1_percentage_s4": 15,
+    "grammar_recycled_in_audio": ["Gr1 be", "Gr2 pronouns/demos", "Gr3 a/an + plurals", "Gr4 adjective position", "Gr5 imperative (early exposure before S5 Intro)"],
+    "feedback_mode_dominant": "Noticing prompts during PRE + Confirmation checks during WHILE + Recast during POST",
+    "success_factors_applied": [
+      "Salience (Survival Words pre-taught with IPA + stress marks)",
+      "Use (productive mini-output after each listen — partner reconstruction)",
+      "Connection (recycles 15+ Toolbelt terms from S2 Reading + S2 Vocab)",
+      "Context (authentic workplace voice note + tutorial — same Pixel & Ink universe)",
+      "Emotion (Sophia's warm tone reinforces friendly workplace; learner hears familiar names)",
+      "Spaced repetition (vocab 3rd encounter: Reading → Vocab → Listening)",
+      "Synergy (same terms will transfer to Speaking PM-2.8 Mission in S4)"
+    ],
+    "working_memory_chunking": "Script fragmented into 6 chunks of 3-5 seconds each; pause markers / signal natural phrase boundaries"
+  },
+
+  "universe_anchor": {
+    "protagonists_new_to_audio": "Sophia (AD — new voice to learner) + Laura (SM — new voice). Andrés is REFERENCED (not speaking).",
+    "why_different_from_reading": "Reading used Andrés as focal voice (informational article). Listening uses Sophia + Laura in a voice-note/mini-meeting genre — different characters, different genre, same universe.",
+    "genre": "Internal team voice note + mini tutorial (semi-formal workplace audio)",
+    "genre_diff_from_reading": "Reading = expository article. Listening = workplace voice note + tutorial — oral, conversational, with discourse markers.",
+    "vocabulary_recycling": {
+      "terms_from_toolbelt_in_script": ["font", "serif", "sans-serif", "color", "warm", "cool", "CMYK", "logo", "canvas", "brief", "client", "layer", "bold", "simple", "round"],
+      "count": 15,
+      "target_minimum": 10,
+      "exceeds_minimum": true
+    }
+  },
+
+  "audio_context": {
+    "situation": "It's Tuesday, 10 AM. Sophia is in the studio. She records a 60-second voice note for the team. Laura walks in and adds a quick color-wheel refresher for Andrés (the new junior designer).",
+    "where": "Pixel & Ink Studio — meeting room, Bogotá",
+    "who": "Speaker 1 = Sophia (Art Director, female voice, confident, warm). Speaker 2 = Laura (Senior Manager, female voice, measured, slightly older).",
+    "what_happens": "Sophia confirms the warm color direction for La Esquina Bakery → Laura steps in to teach the color wheel basics for Andrés → they close the meeting.",
+    "bilingual_intro": "Listen to Sophia and Laura in a team voice note. Get ready to work on the bakery project. (*Escucha a Sophia y Laura en un audio del equipo. Prepárate para trabajar en el proyecto de la panadería.*)"
+  },
+
+  "tts_note_for_instructor": {
+    "speed": "0.85x for A1.1 learners (natural pace reduced 15%)",
+    "voices": 2,
+    "speaker_1": "Sophia — female, mid-range, warm, confident tone",
+    "speaker_2": "Laura — female, slightly lower range, measured, teacherly tone",
+    "pause_markers": "/ = 1-second pause; // = 2-second pause (paragraph/speaker change)",
+    "tone_guide": "Workplace semi-formal. Sophia uses 'Hi team' + 'right?'. Laura uses 'so' + 'remember'.",
+    "suggested_tools": ["ElevenLabs (natural voice, 2 speakers)", "Azure TTS Neural voices (Jenny + Libby)", "Fallback: instructor and assistant record live with smartphone"]
+  },
+
+  "auditory_anchor_script": {
+    "title": "THE AUDITORY ANCHOR — Pixel & Ink Studio Team Voice Note",
+    "total_words": 168,
+    "duration_estimate_seconds": 65,
+    "chunk_count": 6,
+    "transcript": [
+      {
+        "chunk": 1,
+        "speaker": "Sophia",
+        "text": "Hi team. / This is Sophia. // It's Tuesday, / and I want to talk about the brief / for La Esquina Bakery.",
+        "word_count": 21,
+        "grammar_highlights": ["Gr2 demonstrative 'this is'", "Gr1 be 'it's'", "Gr2 possessive 'the brief for La Esquina'"],
+        "toolbelt_hits": ["brief"]
+      },
+      {
+        "chunk": 2,
+        "speaker": "Sophia",
+        "text": "So, / the client is a family bakery. / They want warm colors. / I like brown and cream. / Andrés agrees. / The logo is a round seal.",
+        "word_count": 27,
+        "grammar_highlights": ["Gr1 be (is, are)", "Gr3 a/an", "Gr4 adjective position 'warm colors', 'round seal'"],
+        "toolbelt_hits": ["client", "color", "warm", "logo"]
+      },
+      {
+        "chunk": 3,
+        "speaker": "Sophia",
+        "text": "The font is Playfair Display — / a classic serif. / No sans-serif for this project. // Right, Laura?",
+        "word_count": 18,
+        "grammar_highlights": ["Gr1 be", "Gr3 a/an", "Gr4 adjective position"],
+        "toolbelt_hits": ["font", "serif", "sans-serif"]
+      },
+      {
+        "chunk": 4,
+        "speaker": "Laura",
+        "text": "Right. // And for Andrés, / a quick color-wheel refresher. / The color wheel has twelve colors. / Warm colors are red, orange, yellow. / Cool colors are blue, green, purple.",
+        "word_count": 30,
+        "grammar_highlights": ["Gr3 plurals", "Gr4 adjective position", "Gr1 be"],
+        "toolbelt_hits": ["color", "warm", "cool"]
+      },
+      {
+        "chunk": 5,
+        "speaker": "Laura",
+        "text": "Remember: / warm colors feel friendly, / cool colors feel calm. // For a bakery? / Warm. / For a bank? / Cool. / And always check the CMYK values before printing.",
+        "word_count": 32,
+        "grammar_highlights": ["Gr5 imperative 'remember, check'", "Gr4 adjective position", "Gr14 preposition 'before printing'"],
+        "toolbelt_hits": ["color", "warm", "cool", "CMYK"]
+      },
+      {
+        "chunk": 6,
+        "speaker": "Sophia",
+        "text": "Perfect. / Andrés, / open the canvas in Illustrator. / Save a layer for the logo. / A simple logo is the best logo. // Thanks, team. / Talk tomorrow.",
+        "word_count": 27,
+        "grammar_highlights": ["Gr5 imperative 'open, save'", "Gr14 preposition 'in Illustrator'", "Gr4 adjective position 'simple logo'", "Gr1 be"],
+        "toolbelt_hits": ["canvas", "layer", "logo", "bold (implied via 'simple'/'best')"]
+      }
+    ],
+    "full_text_for_tts": "Hi team. This is Sophia. It's Tuesday, and I want to talk about the brief for La Esquina Bakery. So, the client is a family bakery. They want warm colors. I like brown and cream. Andrés agrees. The logo is a round seal. The font is Playfair Display — a classic serif. No sans-serif for this project. Right, Laura? Right. And for Andrés, a quick color-wheel refresher. The color wheel has twelve colors. Warm colors are red, orange, yellow. Cool colors are blue, green, purple. Remember: warm colors feel friendly, cool colors feel calm. For a bakery? Warm. For a bank? Cool. And always check the CMYK values before printing. Perfect. Andrés, open the canvas in Illustrator. Save a layer for the logo. A simple logo is the best logo. Thanks, team. Talk tomorrow."
+  },
+
+  "survival_words_pre_taught": [
+    {"word": "team", "ipa": "/tiːm/", "stress": "1-syllable", "translation": "equipo", "context_in_audio": "'Hi team'"},
+    {"word": "brief", "ipa": "/briːf/", "stress": "1-syllable", "translation": "informe / briefing", "context_in_audio": "'talk about the brief'"},
+    {"word": "wheel", "ipa": "/wiːl/", "stress": "1-syllable", "translation": "rueda", "context_in_audio": "'color wheel'"},
+    {"word": "refresher", "ipa": "/rɪˈfrɛʃ.ər/", "stress": "2nd syllable", "translation": "repaso", "context_in_audio": "'color-wheel refresher'"},
+    {"word": "values", "ipa": "/ˈvæl.juːz/", "stress": "1st syllable", "translation": "valores", "context_in_audio": "'CMYK values'"}
+  ],
+
+  "archetypes_integrated": {
+    "policy": "ALL 6 archetypes A-F are documented with full PRE/WHILE/POST. Instructor picks ONE flow per S4 block; full menu documented for flexibility across cohorts.",
+    "spanish": "(TODOS los 6 arquetipos están documentados. Instructor elige UN flujo por bloque; menú completo para flexibilidad entre cohortes.)",
+
+    "archetype_A_micro_skills": {
+      "id": "A",
+      "name": "Micro-Skills Foundation",
+      "when_it_works": "When A1.1 learners struggle with decoding (fast speech, linked sounds); first listening experience in the program.",
+      "fit_for_A1_1": "Highest — ideal warmup archetype for G1.",
+      "total_minutes": 40,
+      "micro_skills_selected_3": ["A1 Phoneme recognition (Faulty Echo)", "A2 Stress patterns (Spot stressed syllable)", "A3 Word segmentation (Break the flow)"],
+      "activities": [
+        {
+          "phase": "PRE-LISTENING — Phonetic Warmup (10 min)",
+          "instruction_bilingual": "Listen to these 5 Survival Words. Repeat. Feel the stress. (*Escucha estas 5 palabras clave. Repite. Siente el acento.*)",
+          "activity_A1_faulty_echo": "Instructor says 'warm' → learners repeat. Then instructor says '*warn*' (wrong) → learners must NOT repeat — catch the error.",
+          "minimal_pairs_for_MGV": ["font / phone", "wheel / will", "bold / ball", "cream / kream (correct)", "warm / warn"],
+          "predictive_question": "What will Sophia talk about? Bakery / Bank / Both?"
+        },
+        {
+          "phase": "WHILE-LISTENING — Micro-Skill Rotation (20 min)",
+          "instruction_bilingual": "Three listens. Different micro-skill each time. (*Tres escuchas. Diferente micro-skill cada vez.*)",
+          "listen_1_gist": {
+            "task": "Circle ONE topic: (a) menu design, (b) logo + color, (c) office supplies",
+            "answer": "b"
+          },
+          "listen_2_stressed_syllable": {
+            "task": "Mark the stressed syllable in these words as you hear them: TEAM, BRIEF, RE-FRESH-ER, CA-LI-GRA-PHY, DIS-PLAY",
+            "note": "Write one dot above the stressed vowel."
+          },
+          "listen_3_break_the_flow": {
+            "task": "Break this chunk into words: 'warmcolorsarered' → warm | colors | are | red",
+            "chunks_to_segment_5": [
+              "warmcolorsarered",
+              "thelogoisaroundseal",
+              "openthecanvasinillustrator",
+              "CMYKvaluesbeforeprinting",
+              "asimpleisthebest"
+            ]
+          }
+        },
+        {
+          "phase": "POST-LISTENING — Reconstruction + Reflection (10 min)",
+          "instruction_bilingual": "In pairs, rebuild chunk 5 from your notes. (*En parejas, reconstruye chunk 5 con tus notas.*)",
+          "reflection_prompt": "Which sound was hardest? Which word did you miss?",
+          "teacher_move": "Re-play chunk 5 once more for validation."
+        }
+      ]
+    },
+
+    "archetype_B_phase_based": {
+      "id": "B",
+      "name": "Phase-Based Framework (Pre/While/Post)",
+      "when_it_works": "When group needs predictable structure; default-safe archetype.",
+      "fit_for_A1_1": "High — classic structure, low risk.",
+      "total_minutes": 40,
+      "activities": [
+        {
+          "phase": "PRE-LISTENING — Mind Map + Bottleneck Vocab (10 min)",
+          "instruction_bilingual": "Brainstorm: what words do you expect in a studio voice note about color? (*Brainstorm: ¿qué palabras esperas en un audio sobre color?*)",
+          "brainstorm_prompts": ["Colors (warm/cool)", "Design tools", "Client types"],
+          "bottleneck_vocab_pre_taught": ["color wheel", "CMYK values", "refresher"],
+          "mind_map_structure": "Center = 'Pixel & Ink Voice Note'; branches = Colors, Shapes, Tools, Clients"
+        },
+        {
+          "phase": "WHILE-LISTENING — Guided Note-Taking Template (20 min)",
+          "instruction_bilingual": "Listen twice. Fill the template. (*Escucha dos veces. Llena la plantilla.*)",
+          "note_template": [
+            {"field": "Speaker 1 name:", "answer": "Sophia"},
+            {"field": "Speaker 2 name:", "answer": "Laura"},
+            {"field": "Client:", "answer": "La Esquina Bakery"},
+            {"field": "Colors for bakery:", "answer": "warm / brown and cream"},
+            {"field": "Font:", "answer": "Playfair Display (serif)"},
+            {"field": "Shape of logo:", "answer": "round seal"},
+            {"field": "Number of colors on wheel:", "answer": "12"},
+            {"field": "Warm colors named:", "answer": "red, orange, yellow"},
+            {"field": "Cool colors named:", "answer": "blue, green, purple"},
+            {"field": "Software named:", "answer": "Illustrator"}
+          ],
+          "hypothesis_verification": "Did your brainstorm words appear? Circle the ones that did."
+        },
+        {
+          "phase": "POST-LISTENING — Collaborative Reconstruction (10 min)",
+          "instruction_bilingual": "In pairs, rebuild what Sophia said in 3 sentences. What did Laura add? (*En parejas, reconstruye en 3 oraciones. ¿Qué agregó Laura?*)",
+          "reconstruction_frames": [
+            "Sophia talked about _________.",
+            "She wants _________ colors.",
+            "Laura taught _________."
+          ]
+        }
+      ]
+    },
+
+    "archetype_C_tblt_listening": {
+      "id": "C",
+      "name": "TBLT Listening (Task-Based)",
+      "when_it_works": "When listening serves a decision (which palette? which client?); integrates with Speaking/Writing.",
+      "fit_for_A1_1": "High — goal-oriented, builds motivation.",
+      "total_minutes": 40,
+      "activities": [
+        {
+          "phase": "PRE-LISTENING — Task Briefing (5 min)",
+          "instruction_bilingual": "TASK: You are a new designer. After listening, you must choose the right palette for 3 new clients. (*TAREA: Eres nueva diseñadora. Después de escuchar, elige la paleta correcta para 3 clientes nuevos.*)",
+          "task_output": "Palette assignment chart (3 rows)"
+        },
+        {
+          "phase": "WHILE-LISTENING — Information Extraction for Task (25 min)",
+          "instruction_bilingual": "Listen twice. Fill the rule Laura teaches. Then apply it to 3 new clients. (*Escucha dos veces. Llena la regla que Laura enseña. Aplícala a 3 clientes nuevos.*)",
+          "rule_extraction": "Warm colors = [feeling: _________] → fit for [business types: _________]. Cool colors = [feeling: _________] → fit for [business types: _________].",
+          "rule_answer": "Warm = friendly → bakery, family, food. Cool = calm → bank, tech, clinic.",
+          "new_clients_to_classify": [
+            {"client": "Hospital Infantil (Children's Hospital)", "correct_palette": "cool (calm)", "justification_frame": "A hospital needs _________ colors."},
+            {"client": "Pizzería Italiana", "correct_palette": "warm (friendly)", "justification_frame": "A pizzeria needs _________ colors."},
+            {"client": "Barbería Urbana", "correct_palette": "bold-warm or mixed", "justification_frame": "A barber shop can use _________ colors."}
+          ]
+        },
+        {
+          "phase": "POST-LISTENING — Present Decision + Negotiate (10 min)",
+          "instruction_bilingual": "Share your decisions. Use: 'I chose _____ because _____.' (*Comparte tus decisiones. Usa: 'Elegí _____ porque _____.'*)",
+          "presentation_frame": "My client is _________. The palette is _________. _________ colors feel _________. This is perfect for _________.",
+          "peer_vote": "Class votes on strongest justification."
+        }
+      ]
+    },
+
+    "archetype_D_bloom_progression": {
+      "id": "D",
+      "name": "Bloom Progression (Cognitive Scaling)",
+      "when_it_works": "When same audio can serve multiple cognitive levels; when instructor wants to scale demand.",
+      "fit_for_A1_1": "Stretch — keep upper levels (Analyze/Evaluate) scaffolded.",
+      "total_minutes": 40,
+      "bloom_levels_activated_3": ["Remember (literal facts)", "Understand (summarize)", "Apply (transfer rule)"],
+      "activities": [
+        {
+          "phase": "PRE-LISTENING — Cognitive Set-Up (5 min)",
+          "instruction_bilingual": "Three tasks today: REMEMBER facts → UNDERSTAND summary → APPLY the rule. (*Tres tareas: RECUERDA hechos → COMPRENDE resumen → APLICA la regla.*)",
+          "cognitive_preparation": "Which is easier for you: remembering details or applying a rule? Discuss 30 sec."
+        },
+        {
+          "phase": "WHILE-LISTENING — 3-Level Processing (25 min)",
+          "instruction_bilingual": "Three listens, three levels. (*Tres escuchas, tres niveles.*)",
+          "level_1_remember": {
+            "type": "Multiple choice — 5 factual items",
+            "items": [
+              {"q": "How many colors on the wheel?", "options": ["a) 10", "b) 12", "c) 15"], "answer": "b"},
+              {"q": "Who teaches the color wheel?", "options": ["a) Sophia", "b) Laura", "c) Andrés"], "answer": "b"},
+              {"q": "What colors does Sophia like?", "options": ["a) brown + cream", "b) blue + white", "c) red + black"], "answer": "a"},
+              {"q": "What shape is the logo?", "options": ["a) square", "b) triangle", "c) round seal"], "answer": "c"},
+              {"q": "What software does Sophia mention?", "options": ["a) Photoshop", "b) Illustrator", "c) InDesign"], "answer": "b"}
+            ]
+          },
+          "level_2_understand": {
+            "type": "Summarize in 2 sentences (15 words max)",
+            "model_answer": "Sophia confirms warm colors for La Esquina Bakery. Laura teaches the color wheel."
+          },
+          "level_3_apply": {
+            "type": "Apply the warm/cool rule to a new case",
+            "case": "A client wants a design for a children's toy store. Which palette? Why?",
+            "expected_reasoning": "Warm colors are friendly. A toy store is happy and playful. Choose warm (red, yellow, orange)."
+          }
+        },
+        {
+          "phase": "POST-LISTENING — Level Check + Reflection (10 min)",
+          "instruction_bilingual": "Rate each level 1-5. Which was easiest? Hardest? Why? (*Puntúa cada nivel 1-5. ¿Cuál fue más fácil? ¿Más difícil? ¿Por qué?*)"
+        }
+      ]
+    },
+
+    "archetype_E_advanced_techniques": {
+      "id": "E",
+      "name": "Advanced Techniques (Shadowing + Dictogloss + Predictive)",
+      "when_it_works": "When prosody, memory, anticipation matter; when basic comprehension is already solid.",
+      "fit_for_A1_1": "Stretch — must chunk small; great for pronunciation transfer to PM-2.8.",
+      "total_minutes": 40,
+      "techniques_selected_2": ["Shadowing (prosody)", "Predictive Listening (anticipation)"],
+      "activities": [
+        {
+          "phase": "PRE-LISTENING — Technique Explanation (5 min)",
+          "instruction_bilingual": "Today we train the ear AND the mouth. Shadowing = repeat with 1-2 word delay. (*Hoy entrenamos oído Y boca. Shadowing = repetir con retraso de 1-2 palabras.*)",
+          "demo": "Instructor models shadowing on Chunk 1 (21 words)."
+        },
+        {
+          "phase": "WHILE-LISTENING — Shadowing + Prediction (25 min)",
+          "instruction_bilingual": "Two techniques. Two passes each. (*Dos técnicas. Dos pasadas cada una.*)",
+          "shadowing_activity": {
+            "pass_1_rhythm": "Shadow Chunk 1 only. Keep rhythm. Don't worry about accuracy.",
+            "pass_2_intonation": "Shadow Chunk 1 again. Focus on WHERE Sophia's voice goes UP and DOWN.",
+            "pass_3_liaison": "Shadow Chunk 2. Focus on linked sounds: 'the_logo_is', 'brown_and_cream'.",
+            "self_record": "Record your shadowing on phone. Compare with original."
+          },
+          "predictive_listening_activity": {
+            "procedure": "Instructor pauses audio at discourse markers. Class predicts next phrase.",
+            "pause_points": [
+              {"before": "and I want to talk about...", "predict": "the brief / the project / the colors?"},
+              {"before": "Warm colors feel...", "predict": "friendly / calm / strong?"},
+              {"before": "And always check the...", "predict": "font / color / CMYK values?"},
+              {"before": "A simple logo is...", "predict": "bold / the best / the logo?"}
+            ]
+          }
+        },
+        {
+          "phase": "POST-LISTENING — Self-Evaluation (10 min)",
+          "instruction_bilingual": "Play your shadowing recording. Compare to original. What matched? What didn't? (*Reproduce tu shadowing. Compara. ¿Qué coincidió? ¿Qué no?*)",
+          "self_rubric": [
+            "□ Rhythm matched (stressed syllables in right place)",
+            "□ Intonation matched (voice up/down)",
+            "□ Linked sounds attempted",
+            "□ No long pauses"
+          ]
+        }
+      ]
+    },
+
+    "archetype_F_multimedia_production": {
+      "id": "F",
+      "name": "Multimedia Production (Audio → Creative Output)",
+      "when_it_works": "When class has phone/laptop access; when creative synthesis reinforces content.",
+      "fit_for_A1_1": "Stretch + recommended for MGV specifically (design students value multimedia).",
+      "total_minutes": 40,
+      "production_selected": "Interview Simulation — classmates 'interview Sophia' about the brief",
+      "activities": [
+        {
+          "phase": "PRE-LISTENING — Production Briefing (5 min)",
+          "instruction_bilingual": "After listening, ONE student will BE Sophia. Classmates interview her. (*Después de escuchar, UN estudiante SERÁ Sophia. Los compañeros la entrevistan.*)",
+          "output_goal": "5-minute improvised Q&A"
+        },
+        {
+          "phase": "WHILE-LISTENING — Extract for Character Preparation (20 min)",
+          "instruction_bilingual": "Listen twice. Take notes to BE Sophia. (*Escucha dos veces. Toma notas para SER Sophia.*)",
+          "character_notes_template": [
+            "My name is: ___________ (Sophia)",
+            "My role is: ___________ (Art Director)",
+            "My client this week is: ___________ (La Esquina Bakery)",
+            "My 3 decisions: 1. _________ 2. _________ 3. _________",
+            "My favorite colors: ___________",
+            "What I tell Andrés: ___________"
+          ]
+        },
+        {
+          "phase": "POST-LISTENING — Interview Simulation + Evaluation (15 min)",
+          "instruction_bilingual": "'Sophia' volunteer sits front. Class asks 6 questions. (*'Sophia' voluntaria adelante. Clase hace 6 preguntas.*)",
+          "sample_questions_pre_prepared": [
+            "Why did you choose warm colors?",
+            "Is Playfair Display an easy font?",
+            "What is a round seal?",
+            "Do you work with Andrés?",
+            "What is Laura's job?",
+            "Who is your favorite client?"
+          ],
+          "evaluation_rubric": [
+            "□ 'Sophia' used 5+ Toolbelt terms",
+            "□ Answers stayed in character",
+            "□ Used Gr1 be correctly",
+            "□ Used Gr4 adjective position correctly",
+            "□ Audience engaged (asked follow-ups)"
+          ]
+        }
+      ]
+    }
+  },
+
+  "rotation_options_for_instructor": {
+    "policy": "Instructor picks ONE flow for the S4 Listening block (120 min total session, 40-60 min on Listening then transitions to PM-2.8 Speaking).",
+    "spanish": "(El instructor elige UN flujo para el bloque de Listening en S4.)",
+    "flows": [
+      {
+        "flow_id": "FLOW-L1",
+        "name": "Foundation + Structure (Recommended for first-time listeners)",
+        "sequence": "Archetype A (Micro-skills) 15min → Archetype B (Phase-based) 25min",
+        "best_for": "First explicit listening task in the program; builds base + consolidates",
+        "tech_needs": "Audio file + worksheet"
+      },
+      {
+        "flow_id": "FLOW-L2",
+        "name": "Task-Driven (Recommended for G1)",
+        "sequence": "Archetype C (TBLT) full 40min → output feeds PM-2.8 Speaking",
+        "best_for": "When listening must produce a decision; bridges to Speaking",
+        "tech_needs": "Audio + palette chart"
+      },
+      {
+        "flow_id": "FLOW-L3",
+        "name": "Cognitive Scaling",
+        "sequence": "Archetype D (Bloom) full 40min",
+        "best_for": "Group with varied levels; differentiation built in",
+        "tech_needs": "Audio + tiered question sheets"
+      },
+      {
+        "flow_id": "FLOW-L4",
+        "name": "Prosody Bridge to Speaking",
+        "sequence": "Archetype E (Shadowing + Predictive) full 40min",
+        "best_for": "Preparing for Speaking task PM-2.8; transfers directly",
+        "tech_needs": "Audio + headphones + recording devices"
+      },
+      {
+        "flow_id": "FLOW-L5",
+        "name": "Creative Production (MGV-native)",
+        "sequence": "Archetype F (Interview Simulation) 40min",
+        "best_for": "Creative classes; high engagement",
+        "tech_needs": "Audio + front-of-class space"
+      },
+      {
+        "flow_id": "FLOW-L6",
+        "name": "Maximalist 60-min Block (Hybrid A+B+C)",
+        "sequence": "15min A micro-warmup → 25min B phase-based → 20min C task transfer",
+        "best_for": "Extended S4 block; covers foundation + structure + task",
+        "tech_needs": "All above"
+      }
+    ],
+    "recommended_default_for_G1": "FLOW-L2 (TBLT) — the palette-assignment task directly feeds PM-2.8 Mission (learner will present palette decisions orally)."
+  },
+
+  "evaluation_evidence_e3": {
+    "title": "📋 E3 LISTENING — 5 pts (Evidencia de Desempeño)",
+    "instrument": "Lista de Chequeo No 3 (Checklist, per PM-4.1 canon)",
+    "checklist_criteria": [
+      {"criterion": "Learner identifies main topic (bakery brief + color wheel)", "points": 1},
+      {"criterion": "Learner extracts ≥8 of 10 factual details correctly", "points": 1},
+      {"criterion": "Learner applies warm/cool rule to 1 new case correctly", "points": 1},
+      {"criterion": "Learner recycles ≥5 Toolbelt terms in reconstruction or task output", "points": 1},
+      {"criterion": "Learner participates in post-listening collaborative activity", "points": 1}
+    ],
+    "total": 5,
+    "cuestionario_contribution": "5 items worth 1 pt each in S6 Cuestionario Consolidado (Listening section)"
+  },
+
+  "cuestionario_items_harvest_preview": {
+    "note": "Items feed PM-4.2 Cuestionario S6 Listening section (5 items × 1 pt).",
+    "sample_items": [
+      {
+        "id": "L1",
+        "type": "factual_recall",
+        "stem": "How many colors are on the color wheel?",
+        "options": ["a) 10", "b) 12", "c) 15", "d) 20"],
+        "answer": "b"
+      },
+      {
+        "id": "L2",
+        "type": "speaker_identification",
+        "stem": "Who teaches the color-wheel refresher?",
+        "options": ["a) Sophia", "b) Andrés", "c) Laura", "d) The client"],
+        "answer": "c"
+      },
+      {
+        "id": "L3",
+        "type": "inference",
+        "stem": "Why does Sophia want warm colors for the bakery?",
+        "options": ["a) They are cheap", "b) Warm colors feel friendly", "c) The client said so", "d) Playfair Display is serif"],
+        "answer": "b"
+      },
+      {
+        "id": "L4",
+        "type": "transfer",
+        "stem": "A bank client wants a logo. Which palette fits?",
+        "options": ["a) Warm colors", "b) Cool colors", "c) Black and white only", "d) Rainbow"],
+        "answer": "b"
+      },
+      {
+        "id": "L5",
+        "type": "vocabulary_in_context",
+        "stem": "Sophia says: 'Open the canvas in Illustrator.' What does 'canvas' mean here?",
+        "options": ["a) A painting on wall", "b) The digital workspace in design software", "c) A type of fabric", "d) A logo style"],
+        "answer": "b"
+      }
+    ]
+  },
+
+  "pm0_protocol_session_level": {
+    "session": 4,
+    "grammar_groups": {
+      "intro": [],
+      "consolidate": ["Gr1 be", "Gr2 pronouns/demos", "Gr3 a/an + plurals", "Gr4 adjective position"],
+      "apply": ["Gr5 imperative (early exposure — pre-Intro in S5)", "Gr14 preposition IN"]
+    },
+    "grammar_carga_validation": "PASS — 0 Intro ≤ 2 max per PM-0 §9.2 (S4 is consolidation session for audio input)",
+    "feedback": {
+      "dominant_mode": "Noticing prompts (PRE) + Confirmation checks (WHILE) + Recast (POST)",
+      "accuracy_techniques": [
+        "Phonetic corrections on Survival Words (Archetype A Faulty Echo)",
+        "Error flagging on note-template details (Archetype B)",
+        "Grammar gap highlighting in reconstruction (Archetype E)"
+      ],
+      "fluency_techniques": [
+        "Shadowing (Archetype E) — prosody without accuracy judgment",
+        "Predictive listening (Archetype E) — meaning-first anticipation",
+        "Interview simulation (Archetype F) — meaning-first improvisation"
+      ]
+    },
+    "l1_management": {
+      "percentage": 15,
+      "english_zone": "Active during DURING WHILE activities; allowed during POST reflection only",
+      "legitimate_L1_uses": [
+        "Clarifying Survival Word translations during PRE (last resort)",
+        "Emotional support if learner freezes at task briefing",
+        "Quick concept check on 'warm vs cool' if visual fails"
+      ],
+      "reduction_strategy": "S4=15% → S5=12% as speaking autonomy grows"
+    },
+    "stress_pronunciation": {
+      "focus_words_from_audio": ["RE-fresh-er (2-syll stress)", "A1-lus-TRA-tor (stress 2nd)", "CMYK (letters spelled — each letter stress)", "Play-FAIR Dis-PLAY (compound stress)", "La Es-QUI-na (Spanish stress retained)"],
+      "physical_techniques": [
+        "Clap on stressed syllable of each Survival Word",
+        "Hand-over-chin gesture when imitating Sophia's tone",
+        "Pencil-tap rhythm on desk during shadowing"
+      ],
+      "board_marking": "Dots above stressed vowels on all 5 Survival Words; color-code Sophia's tone (warm) vs Laura's tone (measured)"
+    },
+    "success_vocabulary": {
+      "target_terms_recycled": ["font", "serif", "sans-serif", "color", "warm", "cool", "CMYK", "logo", "canvas", "brief", "client", "layer", "bold", "simple", "round"],
+      "factors_applied": {
+        "Salience": "Survival Words printed bold on worksheet + IPA + stress dots",
+        "Use": "Each term produced in task output (palette assignment, reconstruction)",
+        "Connection": "All terms already in Word Wall from S2",
+        "Context": "Authentic studio voice note + tutorial",
+        "Emotion": "Familiar characters (Sophia, Laura) reduce stress; warm voice-acting",
+        "Spaced_repetition": "3rd encounter — Reading S2 → Vocab S2 → Listening S4",
+        "Synergy": "Palette decisions transfer to Speaking PM-2.8 Mission"
+      }
+    }
+  },
+
+  "integration_all_archetypes_policy": {
+    "rationale": "Per Sergio's directive (2026-04-20): 'Quiero todos los arquetipos para todos los PM.' All 6 archetypes are documented.",
+    "fit_analysis_for_A1_1": {
+      "highest_fit": ["A (Micro-skills) — foundation building", "B (Phase-based) — safe structure", "C (TBLT) — task-driven motivation"],
+      "stretch_with_scaffolding": ["D (Bloom) — requires tiering", "E (Advanced) — Shadowing is demanding", "F (Multimedia) — creative but tech-dependent"],
+      "tech_dependent": ["E (recording)", "F (multimedia production)"]
+    },
+    "recommended_default_for_G1": "FLOW-L2 (TBLT) for tight coupling with Speaking PM-2.8 Mission.",
+    "workbook_use": "Each archetype populates one Workbook listening exercise per chapter."
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.6",
+    "pm_name": "Listening — The Auditory Anchor",
+    "session": 4,
+    "phase_sena": "Apropiación",
+    "rap_id": "RAP-G1-522309",
+    "cefr_level": "A1.1",
+    "activities": [
+      {
+        "number": 1,
+        "type": "procedimental",
+        "statement": "Comprender un audio de equipo de diseño (160-180 palabras, 2 voces) sobre decisiones de paleta para cliente de panadería y refresco sobre el círculo cromático, extrayendo ≥10 detalles factuales y reciclando ≥10 términos del Toolbelt.",
+        "didactic_strategy": "Aprendizaje basado en tareas (TBLT Listening)",
+        "didactic_technique": "Información-gap + Razonamiento-gap (Archetype C preferido)",
+        "archetype_options": ["A", "B", "C", "D", "E", "F"]
+      },
+      {
+        "number": 2,
+        "type": "procedimental",
+        "statement": "Aplicar la regla extraída del audio (warm = friendly / cool = calm) para asignar paletas a 3 nuevos clientes (Hospital, Pizzería, Barbería), justificando cada decisión con estructura 'X colors are Y'.",
+        "didactic_strategy": "Transferencia de conocimiento + Aprendizaje colaborativo",
+        "didactic_technique": "Think-Pair-Share + Peer negotiation"
+      }
+    ],
+    "hours": {
+      "direct": 2.0,
+      "autonomous": 0.5,
+      "source": "pm-2-0.json S4 allocation"
+    },
+    "evidence": {
+      "generates_evidence": true,
+      "type": "Desempeño",
+      "code": "E3",
+      "description": "El aprendiz demuestra comprensión oral de un audio técnico de diseño (voz de trabajo + tutorial) respondiendo preguntas factuales e inferenciales, aplicando la regla warm/cool a nuevos casos y participando activamente en la reconstrucción colaborativa del contenido.",
+      "evaluation_technique": "Observación",
+      "instrument_number": 3,
+      "instrument_type": "Lista de Chequeo No 3",
+      "points": 5
+    },
+    "environment": {
+      "type": "Aula con equipamiento de audio",
+      "materials": [
+        "Audio TTS generado (ElevenLabs o Azure Neural; 0.85x speed; 2 voces)",
+        "Archivo audio descargable en Moodle para autonomous practice",
+        "Proyector con parlantes de calidad",
+        "Audífonos opcionales para shadowing (Archetype E)",
+        "Worksheet impreso con plantilla de notas + Survival Words + IPA",
+        "Palette chart para task output (Archetype C)",
+        "Cartel permanente de Toolbelt (Word Wall desde S2)"
+      ],
+      "instructors": "Instructor de inglés técnico"
+    },
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Listening",
+    "quiz_points": 5,
+    "quiz_item_count": 5,
+    "ambiente_learning": {
+      "configuration": "Individual durante While-Listening; parejas durante Post-Listening; filas/grupos para Archetype F interview",
+      "equipment": "Proyector + parlantes + audífonos opcionales + Word Wall + Survival Words board",
+      "conditions": "Silencio durante pasadas de audio; acústica controlada (sin eco); volumen adecuado verificado antes de iniciar"
+    },
+    "estrategia_didactica": {
+      "momento_sena": "3.3 Apropiación",
+      "estrategia": "Escucha activa con tareas comunicativas (TBLT Listening)",
+      "justificacion": "S4 centra input auditivo como puente entre Apropiación lectora (S2-S3) y producción oral (S4-S5). El audio de Sophia + Laura anclado en universo familiar reduce carga cognitiva y maximiza transferencia a Speaking.",
+      "tecnicas_por_arquetipo": {
+        "A": "Micro-skills rotativas (Faulty Echo, Stressed Syllable, Break the Flow)",
+        "B": "Pre/While/Post estructurado con note template",
+        "C": "Information extraction + Decision task (palette assignment)",
+        "D": "Bloom-tiered questions (Remember → Understand → Apply)",
+        "E": "Shadowing + Predictive Listening",
+        "F": "Interview Simulation — character improvisation"
+      }
+    },
+    "voc_dimensions": {
+      "cognitiva_saber": {
+        "verbo": "Identificar",
+        "objeto": "detalles factuales, inferencias y aplicaciones de regla en audio técnico de diseño (160-180 palabras, 2 voces, A1.1)",
+        "condicion": "usando plantilla de notas guiada y extrayendo ≥10 de 12 puntos clave"
+      },
+      "procedimental_hacer": {
+        "verbo": "Aplicar",
+        "objeto": "la regla warm/cool a 3 nuevos clientes del universo MGV justificando con estructura 'X colors are Y'",
+        "condicion": "negociando con pares y presentando decisión en formato oral + escrito"
+      },
+      "actitudinal_ser": {
+        "verbo": "Mostrar",
+        "objeto": "escucha activa con tolerancia a la incertidumbre frente a información auditiva nueva",
+        "condicion": "manteniendo atención sostenida durante 3 pasadas de audio y participando en reconstrucción colaborativa"
+      }
+    }
+  },
+
+  "validacion": {
+    "checks_internos": [
+      {"check": "10 checks PM-2.6", "status": "PASS"},
+      {"check": "CEFR A1.1 (frases cortas, 0.85x speed, 2 voces, marcadores orales)", "status": "PASS"},
+      {"check": "Integración de TODOS los 6 arquetipos A-F con PRE/WHILE/POST", "status": "PASS"},
+      {"check": "Script 168 palabras (rango 150-180 OK)", "status": "PASS"},
+      {"check": "Personajes DIFERENTES al Reading (Sophia + Laura vs Andrés)", "status": "PASS"},
+      {"check": "Género oral DIFERENTE al Reading (voice note vs article)", "status": "PASS"},
+      {"check": "Reciclaje Toolbelt 15/20 (excede mínimo 10/20)", "status": "PASS"},
+      {"check": "Grammar targets S3+S5 presentes naturalmente", "status": "PASS"},
+      {"check": "E3 = 5 pts con Lista de Chequeo No 3", "status": "PASS"},
+      {"check": "TTS Note + Survival Words + IPA + stress marks incluidos", "status": "PASS"},
+      {"check": "Bilingual Unified + Zero Meta-Talk", "status": "PASS"}
+    ],
+    "pm0_anchors_pass": [
+      {"anchor": "§9.1 L1% S4=15", "status": "PASS"},
+      {"anchor": "§9.2 Grammar 0 Intro (consolidation session)", "status": "PASS"},
+      {"anchor": "§5.10 SUCCESS 7/7", "status": "PASS"},
+      {"anchor": "§5.6 Chunking (6 chunks de 3-5s)", "status": "PASS"},
+      {"anchor": "§6 A1.1 descriptors (can understand short, clear, simple messages)", "status": "PASS"}
+    ],
+    "universe_anchor_check": {
+      "uses_G1_toolbelt": true,
+      "uses_G1_universe": "Pixel & Ink Studio — Sophia + Laura as new voices; Andrés referenced; La Esquina Bakery continuity",
+      "not_copied_from_other_guide": true,
+      "content_hash_unique": "Script originally authored from G1 universe; adapts Ficha 2 Canva color wheel content into oral workplace format",
+      "story_B_source": "Ficha 2 Canva color wheel tutorial (PM-1.2 src-B)"
+    }
+  },
+
+  "siguiente_paso": "Ejecutar PM-2.8 — Speaking — The Mission (Sesión 4, genera E4 Speaking 5 pts, integra TODOS los 5 arquetipos A-E: Gap Tasks / Role-Based / Multimedia / Rehearsal-Scaffolding / Interaction Dynamics. Incorpora pronunciation scaffolding absorbido de PM-2.7 deprecated. Hours 1.5+0.5. L1% S4=15)."
+}

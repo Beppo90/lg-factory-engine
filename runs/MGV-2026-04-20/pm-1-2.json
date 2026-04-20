@@ -1,0 +1,495 @@
+{
+  "run_id": "MGV-2026-04-20",
+  "pm_code": "PM-1.2",
+  "pm_name": "Scope & Sequence + Curación de Material Auténtico — G1 / Bloque 1",
+  "guia_numero": 1,
+  "guia_nombre_esp": "The Visual Communicator",
+  "rap_origen": "01",
+  "cefr_level": "A1.1",
+  "generated_date": "2026-04-20",
+  "pipeline_version": "2.5.1",
+  "instructor": "Sergio Cortés Perdomo",
+
+  "pm0_anchor": {
+    "source_file": "pm-0-context.json",
+    "cefr_descriptor_snapshot_ref": "cefr_descriptors_per_guide[0] (G1 A1.1)",
+    "grammar_groups_intro": ["Gr 1 be", "Gr 2 pronouns/possessives/demonstratives", "Gr 3 plural -s + a/an", "Gr 4 adjective position", "Gr 5 imperative affirmative", "Gr 14 preposition IN (place)", "Gr 15 conectores básicos and/but/or/because"],
+    "l1_policy": "S1 30% → S2 25% → S3 20% → S4 15% → S5 12% → S6 10% → S7 10% → S8 5%",
+    "methodological_shift": "Input muy lento; pausas largas; máximo andamiaje; feedback inmediato accuracy-prioritario; rol docente = modelo central/driller; pensamiento crítico = reconocimiento y clasificación",
+    "active_vocabulary_target": "50–100 términos del dominio gráfico básico (tools, colors, shapes, materials, fonts) — key_vocabulary de esta guía selecciona 20 core; los 30–80 restantes se trabajan en PM-2.5 (Literacy & Vocabulary Skills)"
+  },
+
+  "bloque_0_presentacion": {
+    "titulo": "Welcome to The Visual Communicator",
+    "texto_motivacional": "Bienvenido a tu primera guía del programa Desarrollo de Medios Gráficos Visuales en inglés. En este bloque descubrirás que el lenguaje del diseño gráfico es universal: los colores, las formas, las tipografías y los elementos visuales hablan un idioma común que cruza fronteras. Aprenderás a reconocer, nombrar y describir en inglés las piezas fundamentales con las que trabajarás durante todo tu programa: tipografías serif y sans-serif, colores primarios y secundarios, formatos, herramientas digitales y materiales del taller. Construirás un mini-portfolio visual bilingüe donde identificarás, con vocabulario técnico básico, los elementos gráficos de referencias reales. Este es el primer paso para convertirte en un profesional gráfico que puede conversar con clientes internacionales, leer documentación técnica en inglés y participar en equipos de diseño globales. No necesitas saber inglés avanzado — solo necesitas empezar a nombrar lo que ya ves. ¡Empezamos!",
+    "extension_renglones": 10,
+    "l1_dominant": true,
+    "rationale_l1": "Presentación A1.1 debe ser en L1 para asegurar comprensión y motivación desde el día 1 (PM-0 §5.12 / §9.1 S1=30% L1)"
+  },
+
+  "bloque_A_scope_sequence": {
+
+    "identification": {
+      "programa": {
+        "nombre": "Desarrollo de Medios Gráficos Visuales",
+        "codigo": "522309",
+        "tipo": "Tecnológico",
+        "total_horas_programa": 360
+      },
+      "guia": {
+        "numero": 1,
+        "nombre_esp": "The Visual Communicator",
+        "nombre_espanol": "El Comunicador Visual",
+        "macrotematica": "Fundamentos de diseño básico y comunicación visual",
+        "intensidad_horas": 60,
+        "horas_directas": 48,
+        "horas_autonomas": 12,
+        "sesiones": 8,
+        "nivel_cefr": "A1.1",
+        "orden_pedagogico": "1 de 6"
+      }
+    },
+
+    "guide_design_dna": {
+      "guide_name_conceptual": "The Visual Communicator — Learning to See, Learning to Name",
+      "enfoque_conceptualizacion": "Esta guía establece el fundamento absoluto del programa: sin un vocabulario visual básico y sin la capacidad de nombrar lo que se ve, ningún aprendiz puede recibir un brief, ni participar en un taller, ni conversar con un cliente. G1 enseña al aprendiz a mirar con ojos de diseñador y a nombrar en inglés lo que ve. Es el puente entre la experiencia cotidiana del estudiante con imágenes (redes sociales, publicidad, libros) y el lenguaje técnico del oficio gráfico. Aquí se construye la base léxica de tipografía, color, composición, herramientas y materiales que se recicla durante las 6 guías. El aprendiz no diseña todavía — aprende a leer visualmente como diseñador y a articular lo que ve con estructura mínima (Subject + Verb be + Adjective / Imperative).",
+      "entendimientos_perdurables": [
+        "I can identify and name the basic elements of a visual piece (typography, color, shape, composition) using English.",
+        "I can read simple technical labels and instructions found in design tools, software menus, and workshop signage.",
+        "I can introduce myself as a design student and describe the tools, materials, and colors I work with in a graphic studio."
+      ]
+    },
+
+    "content_core": {
+
+      "technical_topics": [
+        "Visual design basics: elements (point, line, shape, color, texture) and principles (balance, contrast, hierarchy)",
+        "Color theory fundamentals: primary/secondary colors, warm vs cool, CMYK vs RGB (awareness)",
+        "Typography basics: serif vs sans-serif, font families, font size, bold/italic/regular",
+        "Composition principles: grid, alignment, proximity, repetition",
+        "Semiotic basics of visual communication: signs, symbols, icons",
+        "Basic graphic formats and products (logo, poster, flyer, business card, social media post)",
+        "Design tools overview: pencil, ruler, sketchbook, computer, tablet, stylus",
+        "Software interface vocabulary: toolbar, menu, layer, canvas, file, save",
+        "Materials and substrates: paper types, cardboard, digital screen",
+        "Workshop and studio environment (tables, lighting, workstations)"
+      ],
+
+      "communicative_functions": [
+        "Greetings and introductions (Good morning, I am…, Nice to meet you)",
+        "Giving and understanding personal information (name, program, shift)",
+        "Naming and identifying objects in the design studio (This is a…, That is a…)",
+        "Describing everyday design objects with basic adjectives (It is red, It is big, It is thin)",
+        "Following and giving simple workshop instructions (Open the file, Save the document, Close the app)",
+        "Asking for clarification (Repeat, please / What is this?)",
+        "Expressing likes in a basic way (I like blue / I like serif fonts)"
+      ],
+
+      "language_functions_in_context": [
+        {
+          "structure": "Verb BE — affirmative (contracted and full), negative, Yes/No questions, short answers",
+          "pm0_group": "Gr 1 (Intro)",
+          "examples": [
+            "I'm a design student.",
+            "This is a serif font.",
+            "These colors are warm.",
+            "Is this CMYK? — Yes, it is. / No, it isn't.",
+            "The logo isn't red; it's orange."
+          ]
+        },
+        {
+          "structure": "Subject pronouns + possessive adjectives + demonstratives + possessive 's",
+          "pm0_group": "Gr 2 (Intro)",
+          "examples": [
+            "My sketchbook is on the table.",
+            "Her font is Helvetica; his font is Times.",
+            "This tablet is mine; that tablet is yours.",
+            "Sergio's workstation is near the window.",
+            "These are our tools."
+          ]
+        },
+        {
+          "structure": "Regular plurals (-s / -es / -ies) + indefinite articles a/an + capitalization of proper nouns",
+          "pm0_group": "Gr 3 (Intro)",
+          "examples": [
+            "A pencil, two pencils.",
+            "An icon, three icons.",
+            "A font family has many styles.",
+            "Adobe Illustrator is a vector software.",
+            "One brush, two brushes, many brushes."
+          ]
+        },
+        {
+          "structure": "Adjective position (before noun) + adjective invariability in plural",
+          "pm0_group": "Gr 4 (Intro)",
+          "examples": [
+            "A big canvas / Big canvases.",
+            "A cool color / Cool colors.",
+            "A thin line / Thin lines.",
+            "A serif font / Serif fonts."
+          ]
+        },
+        {
+          "structure": "Affirmative imperative",
+          "pm0_group": "Gr 5 (Intro)",
+          "examples": [
+            "Open the file.",
+            "Save your document.",
+            "Select the tool.",
+            "Check the resolution.",
+            "Close the program."
+          ]
+        },
+        {
+          "structure": "Preposition IN (place) for locating elements",
+          "pm0_group": "Gr 14 (Intro)",
+          "examples": [
+            "The logo is in the top corner.",
+            "The text is in the middle.",
+            "The image is in the frame.",
+            "The icon is in the toolbar."
+          ]
+        },
+        {
+          "structure": "Basic connectors (and, but, or, because) + contractions + basic punctuation",
+          "pm0_group": "Gr 15 (Intro)",
+          "examples": [
+            "I like blue and red, but I don't like green.",
+            "Use pencil or pen.",
+            "It's a serif font because it has small strokes.",
+            "I'm a design student, and my program is 522309."
+          ]
+        }
+      ],
+
+      "key_vocabulary": {
+        "total_terms": 20,
+        "note_on_active_target": "20 core key vocabulary. Los 30–80 términos adicionales del target A1.1 (50–100 activo) se trabajan como expansión en PM-2.5 Literacy & Vocabulary Skills y en PM-2.3 Reading.",
+        "categories": [
+          {
+            "category": "Typography",
+            "terms": [
+              {"n": 1, "term": "font", "espanol": "tipografía/fuente"},
+              {"n": 2, "term": "serif", "espanol": "tipografía con remate"},
+              {"n": 3, "term": "sans-serif", "espanol": "tipografía sin remate"},
+              {"n": 4, "term": "bold", "espanol": "negrita"}
+            ]
+          },
+          {
+            "category": "Color",
+            "terms": [
+              {"n": 5, "term": "color", "espanol": "color"},
+              {"n": 6, "term": "warm", "espanol": "cálido"},
+              {"n": 7, "term": "cool", "espanol": "frío"},
+              {"n": 8, "term": "CMYK", "espanol": "modelo CMYK (impresión)"}
+            ]
+          },
+          {
+            "category": "Shape & Composition",
+            "terms": [
+              {"n": 9, "term": "line", "espanol": "línea"},
+              {"n": 10, "term": "shape", "espanol": "forma"},
+              {"n": 11, "term": "grid", "espanol": "retícula"},
+              {"n": 12, "term": "balance", "espanol": "equilibrio"}
+            ]
+          },
+          {
+            "category": "Tools & Software",
+            "terms": [
+              {"n": 13, "term": "pencil", "espanol": "lápiz"},
+              {"n": 14, "term": "canvas", "espanol": "lienzo (en software)"},
+              {"n": 15, "term": "layer", "espanol": "capa"},
+              {"n": 16, "term": "toolbar", "espanol": "barra de herramientas"}
+            ]
+          },
+          {
+            "category": "Products & Actions",
+            "terms": [
+              {"n": 17, "term": "logo", "espanol": "logo"},
+              {"n": 18, "term": "poster", "espanol": "afiche"},
+              {"n": 19, "term": "open (verb)", "espanol": "abrir"},
+              {"n": 20, "term": "save (verb)", "espanol": "guardar"}
+            ]
+          }
+        ]
+      }
+    },
+
+    "integrative_task": {
+      "project_name": "My First Mood Board — Visual Identification Journey",
+      "descripcion_espanol": "El aprendiz construye un mini-portfolio bilingüe de reconocimiento visual: un mood board (físico o digital) donde selecciona 6 referencias reales del mundo del diseño (logos, afiches, portadas de revistas, posts de redes sociales) y las etiqueta en inglés identificando tipografía (serif / sans-serif), colores dominantes (warm / cool, primarios), formas principales, composición básica y herramientas que probablemente se usaron. Cada pieza del mood board tiene una etiqueta escrita de 2–4 oraciones simples usando verb be, imperativo y preposición IN.",
+      "entregables": {
+        "escrito": "Mood board con 6 referencias + etiquetas bilingües (2–4 oraciones A1.1 por pieza). Formato: PDF A3 o tablero físico.",
+        "oral": "Mini-presentación de 2 minutos (aprendiz se presenta + describe 3 de sus 6 referencias): 'Good morning. I'm [name]. This is a poster. It is red and yellow. The font is sans-serif. The composition is balanced. I like it because it is simple.'"
+      },
+      "conexion_rap_01": "El producto evidencia directamente RAP 01 (Comprender información sobre situaciones cotidianas y laborales actuales): el aprendiz comprende la información visual de referencias reales del oficio Y la articula oralmente/por escrito en inglés básico."
+    },
+
+    "evaluation_matrix": {
+      "triada_sena": [
+        {
+          "tipo_evidencia": "Conocimiento",
+          "tecnica": "Formulación de preguntas",
+          "instrumento": "Cuestionario Consolidado S6 (PM-4.2) — 25 pts, sección Reading + Vocabulary + Grammar mínima",
+          "criterios_generales": [
+            "Identifica correctamente serif vs sans-serif en 8 de 10 casos visuales",
+            "Reconoce colores warm/cool y asocia con emociones básicas",
+            "Asocia 16 de 20 términos del key vocabulary con imagen/definición",
+            "Construye oraciones simples con verb be correctamente (8 de 10)"
+          ]
+        },
+        {
+          "tipo_evidencia": "Desempeño",
+          "tecnica": "Observación directa",
+          "instrumento": "Lista de Chequeo (PM-4.1) — Speaking (5 pts) + Listening (5 pts) + Language Functions (5 pts)",
+          "criterios_generales": [
+            "Se presenta oralmente en inglés (nombre, programa, jornada) en 45 segundos sin bloqueo",
+            "Comprende y ejecuta 5 de 6 instrucciones básicas del taller dadas en inglés",
+            "Usa verb be + adjetivo para describir 5 objetos del estudio sin apoyo escrito",
+            "Participa en intercambio de preguntas Yes/No con al menos 1 compañero"
+          ]
+        },
+        {
+          "tipo_evidencia": "Producto",
+          "tecnica": "Valoración de producto",
+          "instrumento": "Rúbrica (PM-4.1) — Mood Board Portfolio (5 pts Writing) + Misión Final (5 pts)",
+          "criterios_generales": [
+            "Mood board incluye exactamente 6 referencias con etiquetas bilingües completas",
+            "Cada etiqueta usa mínimo 2 estructuras del language_functions_in_context correctamente",
+            "Vocabulario técnico target usado correctamente en al menos 12 de 20 términos",
+            "Ortografía y puntuación básica A1.1 correctas en el 80% del texto"
+          ]
+        }
+      ],
+      "puntuacion_total_guia": "55 pts (Apropiación E1–E5 = 25 pts + Cuestionario S6 = 25 pts + Misión Final = 5 pts)"
+    }
+  },
+
+  "bloque_B_gfpi_f134_cols_1_5": {
+    "competencia": {
+      "codigo": "240202501",
+      "nombre": "INTERACTUAR EN LENGUA INGLESA DE FORMA ORAL Y ESCRITA DENTRO DE CONTEXTOS SOCIALES Y LABORALES SEGÚN LOS CRITERIOS ESTABLECIDOS POR EL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS"
+    },
+    "resultado_aprendizaje": {
+      "codigo": "240202501-01",
+      "descripcion": "Comprender información sobre situaciones cotidianas y laborales actuales y futuras a través de interacciones sociales de forma oral y escrita, aplicada al universo ocupacional del diseño gráfico básico (identificación de tipografías, colores, formas, herramientas y productos gráficos) en el nivel CEFR A1.1.",
+      "bloom_level": "L2 Entender (con elementos de L3 Aplicar en el mood board)"
+    },
+    "saberes_conceptos_principios": [
+      "Fundamentos del diseño básico (elementos conceptuales, visuales y de relación)",
+      "Teoría del color: modelo aditivo (RGB) y sustractivo (CMYK), clasificación warm/cool, colores primarios y secundarios",
+      "Clasificación tipográfica: familias serif, sans-serif, variables (bold/italic/regular)",
+      "Gramática del lenguaje visual: línea, forma, textura, composición",
+      "Principios básicos de composición: retícula, alineación, proximidad, jerarquía",
+      "Semiótica básica: signo, símbolo, ícono",
+      "Productos gráficos básicos: logo, afiche, tarjeta, post digital",
+      "Herramientas y materiales del estudio de diseño (análogos y digitales)",
+      "Vocabulario de interfaz de software de diseño (toolbar, layer, canvas, file)",
+      "Estructura lingüística A1.1: verbo be, pronombres, plurales, adjetivos, imperativo afirmativo, preposición IN, conectores básicos"
+    ],
+    "saberes_proceso": [
+      "Identificar tipografías serif y sans-serif en piezas reales",
+      "Reconocer y clasificar colores en la paleta warm/cool y primarios/secundarios",
+      "Nombrar herramientas, materiales y elementos de composición en inglés",
+      "Saludar, presentarse y responder a preguntas personales básicas en contexto de estudio/taller",
+      "Comprender y ejecutar instrucciones básicas del taller (Open, Save, Check, Select, Close)",
+      "Describir objetos del estudio usando verbo be + adjetivo",
+      "Construir un mood board con etiquetas bilingües usando vocabulario técnico A1.1",
+      "Presentar oralmente piezas del mood board con introducción personal + descripción simple"
+    ],
+    "criterios_evaluacion": [
+      "Identifica correctamente las categorías tipográficas (serif/sans-serif) y los grupos de color (warm/cool, primary/secondary) en piezas reales del sector gráfico con 80% de acierto.",
+      "Comprende y ejecuta instrucciones orales básicas de 1–2 pasos en inglés con apoyo visual en el 80% de los casos.",
+      "Produce oralmente una presentación personal y descripción simple de 3 piezas visuales usando verb be + adjetivo + preposición IN sin bloqueo significativo en menos de 2 minutos.",
+      "Redacta etiquetas bilingües de 2–4 oraciones simples para 6 referencias visuales usando al menos 12 términos del key vocabulary correctamente.",
+      "Usa funciones comunicativas básicas (saludar, presentarse, pedir aclaración, expresar gusto básico) en intercambios estructurados con al menos 1 compañero.",
+      "Completa el cuestionario consolidado S6 (sección A1.1) obteniendo mínimo 17/25 puntos en las 5 subsecciones."
+    ],
+    "source_pm": "PM-1.2",
+    "macrotheme": "The Visual Communicator — Fundamentos de diseño básico y comunicación visual",
+    "cefr_level": "A1.1",
+    "program_type": "tecnologico"
+  },
+
+  "bloque_C_curacion_material_autentico": {
+    "via_aplicada": "Vía 1 — IA propone + verificación web en vivo (2026-04-20)",
+    "nota_verificacion": "Las 3 URLs fueron verificadas vía WebSearch el 2026-04-20. Ficha 1 ajustada a URL canónica del artículo. Ficha 2 apuntada al lesson 'Color Wheel Basics' dentro del curso 'Graphic Design Basics from the Experts' de Canva Design School (mejor match A1.1 que placeholder original). Ficha 3: no existe video específico sobre Junior Designer en The Futur — reemplazado por 'Day in the Life of a Designer with Matthew Encina' (Creative Director), aprobado por Instructor Sergio 2026-04-20 como Opción A (preserva género 'transcripción de video' + autoridad educativa + subtítulos disponibles).",
+    "fecha_verificacion_urls": "2026-04-20",
+    "instructor_approval_ficha_3": "Sergio aprobó Opción A (Matthew Encina / The Futur) el 2026-04-20. Rol: Creative Director (no junior), pero input receptivo A1.1 observacional — el aprendiz mira el universo gráfico, no imita el rol.",
+    "diversidad_generos": "Artículo de industria + Tutorial/blog visual + Transcripción/caso de estudio",
+
+    "fichas_curacion": [
+      {
+        "ficha_numero": 1,
+        "metadatos": {
+          "titulo_verificado": "Serif vs. sans-serif: how to choose the right font for your project",
+          "autor": "Creative Bloq editorial team",
+          "publicacion": "Creative Bloq (design & typography section)",
+          "fecha_referencia": "Actualización reciente 2024-2025",
+          "url_verified": "https://www.creativebloq.com/design/fonts-typography/serif-vs-sans-serif",
+          "genero_textual": "Artículo de industria / explainer visual",
+          "url_verification_status": "VERIFIED_2026-04-20"
+        },
+        "resumen_3_oraciones": "Artículo introductorio que explica visualmente la diferencia entre tipografías serif (con remate) y sans-serif (sin remate) usando ejemplos reales de marcas reconocidas. Incluye una guía simple de cuándo usar cada tipo según el proyecto (editorial vs digital, formal vs moderno). Presenta 10–15 ejemplos visuales con etiquetas cortas, ideal para lectura guiada A1.1.",
+        "analisis_linguistico_comunicativo": {
+          "relevancia_esp": {
+            "conexion_macrotema": "Directa — el artículo es literalmente sobre uno de los dos pilares léxicos de G1 (serif/sans-serif) y usa las mismas piezas reales que el aprendiz encontrará en el oficio.",
+            "entorno_ocupacional": "Estudio de diseño — conversación cotidiana sobre elección tipográfica en un brief."
+          },
+          "vocabulario_tecnico_extraible": [
+            {"n": 1, "termino": "serif", "contexto": "'Serif fonts have small strokes at the end of letters.'"},
+            {"n": 2, "termino": "sans-serif", "contexto": "'Sans-serif fonts are clean and modern.'"},
+            {"n": 3, "termino": "font", "contexto": "'The font you choose tells a story.'"},
+            {"n": 4, "termino": "family", "contexto": "'A font family includes regular, bold, and italic.'"},
+            {"n": 5, "termino": "letter", "contexto": "'Each letter has small strokes.'"},
+            {"n": 6, "termino": "modern", "contexto": "'Sans-serif fonts look modern.'"},
+            {"n": 7, "termino": "classic", "contexto": "'Serif fonts look classic.'"},
+            {"n": 8, "termino": "stroke", "contexto": "'Serifs are small strokes.'"},
+            {"n": 9, "termino": "style", "contexto": "'Choose the style for your project.'"},
+            {"n": 10, "termino": "bold", "contexto": "'Use bold for emphasis.'"}
+          ],
+          "funciones_tblt_soportadas": ["Describing", "Classifying", "Comparing", "Justifying"],
+          "estructuras_gramaticales_naturales": ["Verb To Be", "Have/Has", "Present Simple", "Articles (a/an/the)", "Adjectives position"],
+          "hots_nivel": ["Remember", "Understand", "Apply"],
+          "rol_propuesto": "Story A → Base para Reading Anchor (PM-2.3)",
+          "rol_justificacion": "Fuente 1 es fuertemente visual, estructurada y densa en vocabulario tipográfico — ideal como texto ancla de lectura en G1 con adaptación A1.1."
+        },
+        "notas_adaptacion": {
+          "mantener_tal_cual": ["Ejemplos visuales tipográficos (Helvetica, Times, Arial)", "Comparaciones binarias serif/sans-serif con imagen", "Vocabulario de anatomía básica (stroke, letter)"],
+          "simplificar_para_A1": ["Reducir párrafos a 1–2 oraciones", "Eliminar referencias históricas extensas", "Convertir oraciones complejas a Subject + be + Adjective / Imperative", "Reemplazar vocabulario B1-B2 avanzado por equivalentes A1.1"],
+          "potencial_visual": ["Pares comparativos serif/sans-serif para Canva deck", "Especímenes tipográficos para mood board", "Íconos de anatomía (stroke, stem, terminal)"]
+        }
+      },
+      {
+        "ficha_numero": 2,
+        "metadatos": {
+          "titulo_verificado": "Graphic Design Basics from the Experts — Lesson: Color Wheel Basics",
+          "autor": "Canva Design School instructors",
+          "publicacion": "Canva Design School — Graphic Design Basics course",
+          "fecha_referencia": "Curso vigente en Canva Design School 2024-2026",
+          "url_verified": "https://www.canva.com/en/design-school/courses/graphic-design-basics-from-the-experts?lesson=color-wheel-basics",
+          "url_alternativa_validada": "https://www.canva.com/design-school/lessons/how-to-use-color-theory",
+          "genero_textual": "Tutorial/curso paso-a-paso con screenshots y video lesson",
+          "url_verification_status": "VERIFIED_2026-04-20 — lesson específica 'Color Wheel Basics' dentro del curso 'Graphic Design Basics from the Experts' (mejor match A1.1 que URL genérica de color theory)"
+        },
+        "resumen_3_oraciones": "Tutorial visual dirigido a principiantes que explica los conceptos básicos de la rueda de color, colores primarios/secundarios y la distinción warm (cálido) vs cool (frío). Usa screenshots de la interfaz de Canva para mostrar cómo seleccionar paletas de color en un proyecto real. Las explicaciones son muy cortas (1–2 oraciones por concepto) acompañadas siempre de imagen, lo que lo hace ideal para scaffolding A1.1.",
+        "analisis_linguistico_comunicativo": {
+          "relevancia_esp": {
+            "conexion_macrotema": "Directa — el segundo pilar léxico de G1 es teoría básica del color. El tutorial cubre primarios, secundarios, warm/cool y modelos RGB/CMYK de forma visual.",
+            "entorno_ocupacional": "Producción en herramienta digital cotidiana — el aprendiz verá esta misma interfaz en el taller."
+          },
+          "vocabulario_tecnico_extraible": [
+            {"n": 1, "termino": "color", "contexto": "'Colors create emotion.'"},
+            {"n": 2, "termino": "primary", "contexto": "'Red, yellow, and blue are primary colors.'"},
+            {"n": 3, "termino": "secondary", "contexto": "'Green, orange, and purple are secondary colors.'"},
+            {"n": 4, "termino": "warm", "contexto": "'Red is a warm color.'"},
+            {"n": 5, "termino": "cool", "contexto": "'Blue is a cool color.'"},
+            {"n": 6, "termino": "palette", "contexto": "'Choose a palette for your design.'"},
+            {"n": 7, "termino": "wheel", "contexto": "'The color wheel has 12 colors.'"},
+            {"n": 8, "termino": "CMYK", "contexto": "'Use CMYK for print.'"},
+            {"n": 9, "termino": "RGB", "contexto": "'Use RGB for screen.'"},
+            {"n": 10, "termino": "tone", "contexto": "'A tone is a color with gray.'"},
+            {"n": 11, "termino": "contrast", "contexto": "'High contrast helps readability.'"},
+            {"n": 12, "termino": "harmony", "contexto": "'Color harmony makes a design feel balanced.'"}
+          ],
+          "funciones_tblt_soportadas": ["Describing", "Classifying", "Instructing", "Comparing"],
+          "estructuras_gramaticales_naturales": ["Verb To Be", "Present Simple", "Imperatives (Choose / Use / Select)", "Demonstratives (this/that/these/those)", "Articles"],
+          "hots_nivel": ["Remember", "Understand", "Apply"],
+          "rol_propuesto": "Story B → Base para Listening Script (PM-2.6)",
+          "rol_justificacion": "Fuente 2 tiene ritmo didáctico de tutorial (instrucciones paso-a-paso con imperativo y present simple) — adaptable a audio script A1.1 con pausas largas entre frases."
+        },
+        "notas_adaptacion": {
+          "mantener_tal_cual": ["Screenshots de la rueda de color", "Emparejamientos emoción–color", "Lista de colores primarios/secundarios"],
+          "simplificar_para_A1": ["Convertir en 8–12 turnos cortos de diálogo (tutor–aprendiz) con 1–2 oraciones por turno", "Eliminar terminología psicológica avanzada (serotonin, associative cognition)", "Mantener imperativos como instrucción principal"],
+          "potencial_visual": ["Rueda de color para Canva deck", "Paletas warm/cool lado-a-lado", "Screenshots de selección de color para workbook"]
+        }
+      },
+      {
+        "ficha_numero": 3,
+        "metadatos": {
+          "titulo_verificado": "Day in The Life of a Designer (with Matthew Encina)",
+          "autor": "Matthew Encina / The Futur",
+          "publicacion": "The Futur — video serie 'Day in the Life'",
+          "fecha_referencia": "Recurso vigente en thefutur.com",
+          "url_verified": "https://thefutur.com/video/day-in-the-life-of-a-designer",
+          "genero_textual": "Transcripción de video / caso de estudio",
+          "url_verification_status": "VERIFIED_2026-04-20 — Opción A aprobada por Instructor Sergio. Nota: el protagonista es Matthew Encina, Creative Director (no Junior). The Futur no publica un 'Day in the Life' específico de Junior. Se mantiene como input observacional A1.1 — el aprendiz mira el universo gráfico profesional, no imita el rol."
+        },
+        "resumen_3_oraciones": "Video que documenta un día completo de Matthew Encina, Creative Director del estudio, desde las 5:55 AM. Muestra morning rituals (coffee, journaling, goal setting, gym), organización del día, llegada al estudio, gestión del equipo de animators y designers, y flujo de proyectos. Para G1 se recorta a 60–90 segundos (segmentos del studio: desk setup, tools, greetings con el equipo) usando la función de subtítulos en inglés como apoyo de lectura simultánea — controlable al 0.75x.",
+        "analisis_linguistico_comunicativo": {
+          "relevancia_esp": {
+            "conexion_macrotema": "Directa — muestra el entorno ocupacional real (studio, workstation) que el aprendiz verá al egresar. Presenta vocabulario de tools + materials + software en acción.",
+            "entorno_ocupacional": "Estudio profesional — día de un Creative Director (Matthew Encina); el aprendiz observa el universo ocupacional al que aspira."
+          },
+          "vocabulario_tecnico_extraible": [
+            {"n": 1, "termino": "studio", "contexto": "'This is my studio.'"},
+            {"n": 2, "termino": "desk", "contexto": "'My desk has my laptop and sketchbook.'"},
+            {"n": 3, "termino": "laptop", "contexto": "'I open my laptop first.'"},
+            {"n": 4, "termino": "tablet", "contexto": "'I use a tablet for drawing.'"},
+            {"n": 5, "termino": "sketchbook", "contexto": "'My sketchbook is always on my desk.'"},
+            {"n": 6, "termino": "monitor", "contexto": "'I have a big monitor.'"},
+            {"n": 7, "termino": "brief", "contexto": "'I read the brief.'"},
+            {"n": 8, "termino": "client", "contexto": "'I check an email from a client.'"},
+            {"n": 9, "termino": "file", "contexto": "'I save the file.'"},
+            {"n": 10, "termino": "morning", "contexto": "'Good morning, team!'"}
+          ],
+          "funciones_tblt_soportadas": ["Describing", "Reporting (routine)", "Requesting (in dialogue)", "Instructing"],
+          "estructuras_gramaticales_naturales": ["Verb To Be", "Present Simple", "Possessives (my/his/her/our)", "Imperatives", "Prepositions (in/on/at)"],
+          "hots_nivel": ["Remember", "Understand"],
+          "rol_propuesto": "Story C → Backup / Extensión / Evaluación",
+          "rol_justificacion": "Fuente 3 queda como backup o material de evaluación (input diagnóstico para cuestionario). También puede servir como insumo para Workbook PREPARE (pre-activación flipped de G2 The Client Whisperer, donde el brief cobra protagonismo)."
+        },
+        "notas_adaptacion": {
+          "mantener_tal_cual": ["Video clips de 60–90 segundos", "Subtítulos en inglés", "Vocabulario de tools/objects"],
+          "simplificar_para_A1": ["Transcribir solo el primer minuto", "Reducir velocidad (usar YouTube speed 0.75x)", "Extraer 10–12 oraciones clave en presente simple + be + imperativo"],
+          "potencial_visual": ["Frames del studio para mood board", "Mapa visual del entorno ocupacional", "Íconos de herramientas mostradas"]
+        }
+      }
+    ],
+
+    "seleccion_propuesta_instructor": {
+      "story_A_reading": "Ficha 1 — The Difference Between Serif and Sans-Serif Fonts",
+      "story_B_listening": "Ficha 2 — Color Theory Basics (Canva)",
+      "story_C_backup": "Ficha 3 — Day in The Life of a Designer (Matthew Encina / The Futur)",
+      "universo_narrativo_derivado": {
+        "empresa_ficticia_sugerida": "Pixel & Ink Studio — pequeño estudio de diseño gráfico en Bogotá que sirve a clientes locales e internacionales",
+        "personajes": [
+          "Laura — Creative Director (fluent English, da instrucciones claras)",
+          "Andrés — Junior Graphic Designer (protagonista/avatar del aprendiz, nivel A1)",
+          "Sophia — International Client (habla inglés simple, da feedback directo)"
+        ],
+        "escenarios_laborales": ["Morning briefing en el estudio", "Selección de tipografía con director creativo", "Revisión de paleta de color con cliente", "Creación del primer mood board"],
+        "vocabulario_derivado": "Los 20 key vocabulary + ~30 términos expansión de las 3 fuentes (total ~50 términos — alineado al target A1.1 activo 50–100 de PM-0)",
+        "grammar_targets_derivados": "Los 7 grupos Intro de PM-0 §9.2 G1 (be, pronouns, plurals, adjectives, imperative, IN, connectors)",
+        "funciones_comunicativas_derivadas": "Las 7 funciones del content_core (greetings, personal info, naming, describing, instructing, clarifying, basic preferences)"
+      }
+    }
+  },
+
+  "validacion_reglas_pm12": {
+    "regla_1_dna_guia": "PASS — nombre + enfoque + 3 entendimientos perdurables",
+    "regla_2_content_core_4_categorias": "PASS — Technical Topics, Communicative Functions, Language Functions in Context, Key Vocabulary",
+    "regla_3_vocabulario_20_terminos": "PASS — exactamente 20 términos en 5 categorías de 4",
+    "regla_4_curacion_antes_disenar": "PASS — 3 fichas completas antes de derivar PM-2.x",
+    "regla_5_integrative_task": "PASS — Mood Board + mini-presentación, entregable escrito + oral",
+    "regla_6_evaluation_matrix_triada": "PASS — Conocimiento (cuestionario) + Desempeño (checklist) + Producto (rúbrica)",
+    "regla_7_coherencia_pm11_bloque1": "PASS — nombre ESP + justificación + CEFR A1.1 + conexión RAP 01 = bloque 1 del pm-1-1.json",
+    "regla_8_diversidad_generos": "PASS — Artículo de industria (Ficha 1) + Blog/tutorial (Ficha 2) + Transcripción de video (Ficha 3)",
+    "regla_9_lenguaje_hibrido": "PASS — instrucciones/descripciones en español; contenido técnico y ejemplos en inglés"
+  },
+
+  "validacion_anclaje_pm0": {
+    "cefr_descriptor_match": "PASS — todos los contenidos alineados a G1 A1.1 descriptor snapshot (vocabulario 50-100, gramática presente simple + be + imperativo)",
+    "grammar_groups_cobertura": "PASS — los 7 grupos Intro de G1 en PM-0 §9.2 están cubiertos en language_functions_in_context",
+    "l1_policy_registrada": "PASS — referenciada en pm0_anchor.l1_policy + presentación_bloque_0 en L1 según S1=30% L1",
+    "methodological_shift_aplicado": "PASS — input muy lento + máximo andamiaje + feedback inmediato = respetado en communicative_functions y integrative_task design",
+    "success_vocabulary_preview": "Los 20 key vocabulary serán trabajados con factores SUCCESS (Sounds, Use, Conceptualize, Creativity, Encounter, Self-expression) en PM-2.5 y PM-3.2"
+  },
+
+  "siguiente_paso": {
+    "pm": "PM-2.0",
+    "input_a_pasar": "gfpi_f134_cols_1_5 + Guide Design DNA + 2 stories seleccionadas (A y B) + universo narrativo derivado",
+    "output_esperado": "Session Blueprint de 8 sesiones × 60h para G1 con asignación de PMs, horas, fases SENA y mapeo a Activity Cards",
+    "checkpoint_instructor": "Antes de PM-2.0: Instructor Sergio revisa y confirma (a) selección Story A/B/C; (b) universo narrativo derivado (Pixel & Ink Studio); (c) las 20 palabras del key vocabulary; (d) URLs verificadas o ajustadas de las 3 fichas."
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Session 2",
+  "pm_version": "2.6",
+  "pm_verified_against_prompt": true,
+  "session": 2,
+  "session_name": "Reading Like a Designer — Serif vs Sans-Serif",
+  "run_id": "MGV-2026-04-20",
+  "guide": "G1 — The Visual Communicator",
+  "guia_numero": 1,
+  "programa": "Desarrollo de Medios Gráficos Visuales",
+  "programa_codigo": "522309",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.5 — Literacy & Vocabulary Skills (pre-activación léxica, ~155 min)",
+    "PM-2.3 — Reading The Master Anchor (~155 min + E1 Cuestionario No 1)"
+  ],
+  "habilidades_foco": [
+    "PM-2.5 — Literacy & Vocabulary Skills (pre-activación léxica)",
+    "PM-2.3 — Reading (Master Anchor)"
+  ],
+  "habilidades_soporte": [
+    "Speaking receptivo (pre-reading brainstorm)",
+    "Writing copiativo (Classification Task)"
+  ],
+  "cefr": "A1.1",
+  "model": "FPI CD Engine v2.5.1",
+  "generated_at": "2026-04-20",
+  "generated_by": "Sergio",
+  "status": "generated",
+  "piloto_note": "Generado desde blueprint pm-2-0.sesiones[2]. Contenido original MGV G1 Pixel & Ink Studio. pm0_protocol se inyectará vía pm-3-2-pm0-propagate.js.",
+  "momento_sena": "3.3 Apropiación",
+  "estrategia_didactica": "Pre-enseñanza explícita + Lectura andamiada (Jigsaw) + Tarea de clasificación",
+  "justificacion_didactica": "La pre-enseñanza léxica (PM-2.5) reduce la carga cognitiva antes del jigsaw del Master Anchor Text (PM-2.3). La clasificación serif/sans-serif consolida el reconocimiento visual A1.1 antes del Cuestionario E1.",
+  "session_header": {
+    "titulo": "SESSION 2: Reading Like a Designer — Serif vs Sans-Serif",
+    "subtitulo": "MGV Guía 1 · The Visual Communicator · Build-Out — Playbook v2.5.1",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.5 — Literacy & Vocabulary Skills (pre-activación léxica, ~155 min)",
+      "PM-2.3 — Reading The Master Anchor (~155 min + E1 Cuestionario No 1)"
+    ],
+    "habilidades_soporte": [
+      "Speaking receptivo (pre-reading brainstorm)",
+      "Writing copiativo (Classification Task)"
+    ],
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk pre-modelado. Duración suma exacta 360 min. L1 tope según pm0_protocol (se inyecta desde pm-3-1)."
+  },
+  "materials_checklist": [
+    {
+      "item": "Ficha 1 texto adaptado (150-200 palabras, A1.1 adaptation)",
+      "cantidad": "8 unidades",
+      "verificado": false
+    },
+    {
+      "item": "Word Wall — 10 tarjetas tipográficas (front: palabra + stress | back: imagen)",
+      "cantidad": "8 unidades",
+      "verificado": false
+    },
+    {
+      "item": "Classification handout — 12 muestras de fuentes + 3 columnas",
+      "cantidad": "8 unidades",
+      "verificado": false
+    },
+    {
+      "item": "Cuestionario E1 — 5 ítems + rúbrica 1 pt c/u",
+      "cantidad": "8 unidades",
+      "verificado": false
+    },
+    {
+      "item": "Toolbelt — 20 tarjetas físicas (front: palabra+stress | back: imagen)",
+      "cantidad": "1 set + 5 sets adicionales",
+      "verificado": false
+    },
+    {
+      "item": "Cuestionario E1 Reading (INST-01 PM-4.1) impreso",
+      "cantidad": "8 copias",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO: ENGLISH ZONE 🔵 superior derecha (permanente) · CENTRO: Toolbelt 5×4 (C1 Typography / C2 Color / C3 Shape / C4 Tools / C5 Products) con palabras + stress marcado · LADO IZQUIERDO: Master Anchor Text en pantalla proyectada · Word Wall lateral con 20 tarjetas.",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:25",
+      "duracion_min": 25,
+      "bloque": "SET-UP",
+      "actividad": "Word Wall Launch — Toolbelt 5×4 Build + objetivos + Teacher Talk apertura",
+      "agrupacion": "Whole class → Individual",
+      "notas": "Activación + English Zone refresh"
+    },
+    {
+      "tiempo": "0:25-1:20",
+      "duracion_min": 55,
+      "bloque": "WHILE A",
+      "actividad": "Phonics & Spelling — 20 Toolbelt words (primera pasada)",
+      "agrupacion": "Individual + parejas",
+      "notas": "Drill fonético + Mirror Talking (pm-2-5 Archetype A)"
+    },
+    {
+      "tiempo": "1:20-2:10",
+      "duracion_min": 50,
+      "bloque": "WHILE B",
+      "actividad": "Vocabulary Development — Mapa semántico colectivo",
+      "agrupacion": "Grupos de 4",
+      "notas": "Semantic Mapping + VSS (pm-2-5 Archetype B)"
+    },
+    {
+      "tiempo": "2:10-2:55",
+      "duracion_min": 45,
+      "bloque": "WHILE C",
+      "actividad": "Master Anchor Text — First Read (silent + guided)",
+      "agrupacion": "Individual silencioso + plenaria",
+      "notas": "TBLT Pre-reading + First Reading (pm-2-3 Archetype A)"
+    },
+    {
+      "tiempo": "2:55-3:15",
+      "duracion_min": 20,
+      "bloque": "BREAK",
+      "actividad": "Receso activo",
+      "agrupacion": "—",
+      "notas": "Hidratación · English Zone mantenida"
+    },
+    {
+      "tiempo": "3:15-4:05",
+      "duracion_min": 50,
+      "bloque": "WHILE D",
+      "actividad": "Information Gap — Classification Task (12 fuentes en 3 categorías)",
+      "agrupacion": "Jigsaw 4×4",
+      "notas": "Jigsaw cooperativo + Information Gap (pm-2-3 Archetype C)"
+    },
+    {
+      "tiempo": "4:05-5:00",
+      "duracion_min": 55,
+      "bloque": "WHILE E",
+      "actividad": "Cuestionario No 1 Reading Comprehension (E1) — 5 ítems × 1 pt",
+      "agrupacion": "Individual silencioso",
+      "notas": "Evaluación formativa formal (Cuestionario E1 PM-4.1)"
+    },
+    {
+      "tiempo": "5:00-6:00",
+      "duracion_min": 60,
+      "bloque": "WRAP-UP",
+      "actividad": "Síntesis + exit ticket + homework + preview",
+      "agrupacion": "Plenaria + individual",
+      "notas": "Instructor dibuja en tablero el Toolbelt completo (20 palabras en 5 columnas) y el mapa de la historia de Andrés (brief "
+    }
+  ],
+  "set_up": {
+    "duracion_min": 25,
+    "warm_up": {
+      "nombre": "Word Wall Launch — Toolbelt 5×4 Build",
+      "pasos": [
+        "Saludo de apertura + re-entrar al English Zone 🔵 (5 min).",
+        "Instructor descubre en el muro 5 categorías vacías del Toolbelt (C1 Typography · C2 Color · C3 Shape · C4 Tools · C5 Products).",
+        "Recall Survival Words de S1 — 3 aprendices voluntarios repiten con stress (DEsign · GRAphic · COlor).",
+        "Declaración del objetivo: hoy leemos el texto de Andrés y construimos las 20 palabras del Toolbelt."
+      ],
+      "duration_min": 25
+    },
+    "teacher_talk_opening": "*Good morning, designers! ¡Buenos días! Yesterday you signed your Learning Contract. Today we start working. A designer reads before she draws. Your first tool is your TOOLBELT — twenty words. Let's build the Word Wall together.* (L1 25% — clarificar 'Toolbelt' como kit profesional)."
+  },
+  "while": {
+    "while_a": {
+      "bloque": "WHILE A",
+      "title": "Phonics & Spelling — 20 Toolbelt words (primera pasada)",
+      "duracion_min": 55,
+      "agrupacion": "Individual + parejas",
+      "tecnica_didactica": "Drill fonético + Mirror Talking (pm-2-5 Archetype A)",
+      "pm_source": "PM-2.5 Archetype A PHONICS_SPELLING",
+      "teacher_talk_instruction": "*Repeat after me: FONT /fɒnt/. Good. Now SERIF /ˈser.ɪf/. Louder! Now in pairs — one says, one mirrors.* (Finger drill con 3 dedos para sílabas).",
+      "icq": [
+        "Where is the stress in TYPOGRAPHY?",
+        "Which sound is difficult for Spanish speakers in /θ/?",
+        "How do we say SANS-SERIF?"
+      ],
+      "answer_key_inline": "TYpography = stress en 2ª sílaba · /θ/ inexistente en español, aproximar con lengua entre dientes · /sæns ˈser.ɪf/",
+      "facilitation_notes": [
+        "Driller suave — no interrumpir el flujo",
+        "Marcar stress con MAYÚSCULA en tablero",
+        "Grabar 2-3 aprendices para autoescucha"
+      ],
+      "checkpoint": "Cada pareja pronuncia 5 términos con stress correcto.",
+      "transition": "Now you know how to SAY them. Next — you need to KNOW them."
+    },
+    "while_b": {
+      "bloque": "WHILE B",
+      "title": "Vocabulary Development — Mapa semántico colectivo",
+      "duracion_min": 50,
+      "agrupacion": "Grupos de 4",
+      "tecnica_didactica": "Semantic Mapping + VSS (pm-2-5 Archetype B)",
+      "pm_source": "PM-2.5 Archetype B VOCABULARY_DEVELOPMENT",
+      "teacher_talk_instruction": "*In groups of four, take the 20 term cards. Sort them into 5 categories. Five categories, four cards each. When you finish, choose FIVE cards that are NEW for you — those are YOUR words.*",
+      "icq": [
+        "How many categories?",
+        "How many cards in each?",
+        "How many words do YOU choose?"
+      ],
+      "answer_key_inline": "Categorías: C1 Typography (font/serif/sans-serif/bold) · C2 Color (color/warm/cool/CMYK) · C3 Shape (line/shape/grid/balance) · C4 Tools (pencil/canvas/layer/toolbar) · C5 Products (logo/poster/open/save)",
+      "facilitation_notes": [
+        "Circular entre grupos sin dar respuesta — sólo confirmar categorías",
+        "VSS = Vocabulary Self-Collection: cada aprendiz elige 5 palabras para su cuaderno",
+        "Tiempo estricto — 50 min con timer visible"
+      ],
+      "checkpoint": "Cada grupo presenta 1 categoría al plenario (2 min × 5 grupos = 10 min final del bloque).",
+      "transition": "You know the words. Now you read the real story."
+    },
+    "while_c": {
+      "bloque": "WHILE C",
+      "title": "Master Anchor Text — First Read (silent + guided)",
+      "duracion_min": 45,
+      "agrupacion": "Individual silencioso + plenaria",
+      "tecnica_didactica": "TBLT Pre-reading + First Reading (pm-2-3 Archetype A)",
+      "pm_source": "PM-2.3 Archetype A TBLT_CYCLE",
+      "teacher_talk_instruction": "*This text is about Andrés — a junior designer like YOU. He works at Pixel & Ink Studio. Read silently. Do NOT translate word by word. Look for 3 things: WHO writes the email? WHAT does she want? WHEN is the deadline?*",
+      "icq": [
+        "¿Traducimos palabra por palabra?",
+        "¿Qué 3 cosas buscamos?",
+        "¿Cuánto tiempo tenemos?"
+      ],
+      "answer_key_inline": "NO traducir · Who=Sophia · What=logo+poster con serif+warm colors · When=Friday. Tiempo: 8 min lectura silenciosa + 7 min guided re-read instructor lee en voz alta.",
+      "facilitation_notes": [
+        "L1 tolerado en anotaciones personales",
+        "Circular pero NO resolver vocabulario — remitir al Word Wall",
+        "Segunda lectura instructor modela entonación"
+      ],
+      "checkpoint": "Al cerrar: 3 aprendices responden las 3 preguntas WHO/WHAT/WHEN en plenaria.",
+      "transition": "¡Break time! Drink water. Come back fresh. Then we go DEEP into the text."
+    },
+    "while_d": {
+      "bloque": "WHILE D",
+      "title": "Information Gap — Classification Task (12 fuentes en 3 categorías)",
+      "duracion_min": 50,
+      "agrupacion": "Jigsaw 4×4",
+      "tecnica_didactica": "Jigsaw cooperativo + Information Gap (pm-2-3 Archetype C)",
+      "pm_source": "PM-2.3 Archetype C INFORMATION_GAP + Archetype D COOPERATIVE",
+      "teacher_talk_instruction": "*Expert groups: A = Typography facts. B = Color facts. C = Product decisions. D = Canvas/Canva facts. Read ONLY your piece. Become the expert. Then we mix.*",
+      "icq": [
+        "Read only YOUR piece — yes or no?",
+        "What do you do after reading?",
+        "How long to become expert?"
+      ],
+      "answer_key_inline": "Sí, sólo tu pieza · Después: mix groups (1 de cada letra) y enseñas lo tuyo · 15 min expert + 25 min mix + 10 min classification task · Answer key classification: Serif=Times+Playfair+Georgia · Sans-serif=Arial+Helvetica+Open Sans · Display=Impact+Bebas+Lobster.",
+      "facilitation_notes": [
+        "Assignment mosaico: A=párrafo 1 · B=párrafo 2 · C=párrafo 3 · D=párrafo 4",
+        "Classification handout con 12 muestras impresas — 3 por fila"
+      ],
+      "checkpoint": "Cada mix group entrega Classification Handout completo y correcto.",
+      "transition": "You understand the text. You classify the fonts. Now — the test."
+    },
+    "while_e": {
+      "bloque": "WHILE E",
+      "title": "Cuestionario No 1 Reading Comprehension (E1) — 5 ítems × 1 pt",
+      "duracion_min": 55,
+      "agrupacion": "Individual silencioso",
+      "tecnica_didactica": "Evaluación formativa formal (Cuestionario E1 PM-4.1)",
+      "pm_source": "PM-4.1 INST-01 Cuestionario No 1",
+      "teacher_talk_instruction": "*Silent mode. Pens down until I say GO. You have 25 minutes. Read each question. Mark one option only. After: 30 minutes feedback together.* (L1: sólo instrucciones de examen).",
+      "icq": [
+        "How many options per question?",
+        "How many minutes?",
+        "Can I ask vocabulary questions?"
+      ],
+      "answer_key_inline": "Una opción (A/B/C/D) · 25 min · No — durante el examen no se pregunta. Answer key maestra: B B B B B (todos B) — aprendiz no ve esta clave.",
+      "facilitation_notes": [
+        "Silencio académico — supervisar sin responder",
+        "Al cerrar: 30 min de feedback grupal con tablero — analizar patrones de error"
+      ],
+      "checkpoint": "Cada aprendiz entrega Cuestionario E1 firmado. Calificación inmediata al salir.",
+      "transition": "You generated your FIRST formal evidence. Well done. Tomorrow we WRITE."
+    }
+  },
+  "wrap_up": {
+    "duracion_min": 60,
+    "synthesis": "Instructor dibuja en tablero el Toolbelt completo (20 palabras en 5 columnas) y el mapa de la historia de Andrés (brief → read → learn → design). Pedir 3 aprendices que digan en inglés: \"Today I learned ___\".",
+    "exit_ticket": "1 hoja por aprendiz: (a) 3 palabras del Toolbelt que ahora sé · (b) 1 palabra que aún no entiendo · (c) 1 pregunta en cualquier idioma.",
+    "homework_autonomo": "Identificar 3 fuentes en materiales impresos del entorno (revistas/letreros/empaques). Foto + etiqueta serif/sans-serif/display. Entregar en Google Classroom antes de S3.",
+    "preview_s3": "*Mañana: ahora que LEES como diseñadora, ESCRIBES como diseñadora. Primera Font Card tuya, con Laura revisando como Creative Director.*"
+  },
+  "answer_key_consolidado": {
+    "note": "Answer keys por bloque están en while_X.answer_key_inline. Para E1/E2/E3/E4/E5 ver PM-4.1. Para E6 ver PM-4.2.",
+    "evidence_references": [
+      "E1 Reading → PM-4.1 INST-01"
+    ]
+  },
+  "differentiation": {
+    "fast_finishers": "Expandir tarea con conector extra (because) + 1 Toolbelt term adicional",
+    "struggling_learners": "Activar cue card visible + reducir timing -10% por bloque · L1 permitido en notas personales",
+    "neurodivergent_accomodations": "Silencio de fondo · opción de headphones para listening · timer visual · auriculares anti-ruido disponibles"
+  },
+  "instructor_self_check": [
+    "¿L1 target respetado según pm0_protocol?",
+    "¿Todos los bloques completados en tiempo?",
+    "¿Evidencias generadas firmadas y archivadas?",
+    "¿Transición a S3 preparada?",
+    "¿Exit tickets revisados para informar S3?"
+  ],
+  "totals_check": {
+    "set_up": 25,
+    "while_a": 55,
+    "while_b": 50,
+    "while_c": 45,
+    "break": 20,
+    "while_d": 50,
+    "while_e": 55,
+    "wrap_up": 60,
+    "suma": 360,
+    "expected": 360,
+    "match": true
+  },
+  "rap_status": "S2 completada — E1 Reading generada (5 pts). 20 palabras Toolbelt activadas. Reading column del RAP establecida.",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[1]",
+    "__contract_version__": "v2.5.1",
+    "grammar_groups": [
+      {
+        "group_id": "Gr 1",
+        "group_name": "Verbo be (afirmativo contraído, negativo, preguntas, respuestas cortas)",
+        "nivel_activacion": "Intro",
+        "ejemplo_en_sesion": "'Serif is a typography style. Sans-serif is NOT serif. Is Helvetica sans-serif? Yes, it is.'"
+      },
+      {
+        "group_id": "Gr 3",
+        "group_name": "Plural regular -s/-es/-ies + artículos indefinidos a/an + mayúsculas",
+        "nivel_activacion": "Intro",
+        "ejemplo_en_sesion": "'a font / fonts | an image / images | a letter / letters'"
+      }
+    ],
+    "grammar_carga_check": "2/2 Intro máximos (PM-0 §9.2) ✓ — primera sesión con carga gramatical; respeta límite",
+    "feedback": {
+      "mode": "ACCURACY",
+      "rationale": "Apropiación inicial — precisión es prioridad. PM-0 §5.11 + methodological_shifts_per_guide[0] (feedback inmediato accuracy-prioritario en A1.1).",
+      "accuracy_techniques": [
+        "Recast — repetir corregido sin interrumpir flujo",
+        "Elicitación guiada — instructor empieza frase y aprendiz completa",
+        "Metalinguistic cue — flecha en tablero apuntando al error"
+      ],
+      "fluency_techniques": [],
+      "mixed_techniques": []
+    },
+    "l1_management": {
+      "l1_percentage": 25,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_policy_per_guide[0].s1_to_s8 — S2 25% (PM-0 §9.1)",
+      "l1_rationale": "L1 sólo para meta-lenguaje gramatical nuevo (explicar be = es/son) y clarificar concepto 'serif/sans-serif' inicialmente. Resto en L2 con apoyo visual obligatorio."
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "serif",
+          "ipa": "/ˈserɪf/",
+          "tonica": "PRIMERA (SERif)"
+        },
+        {
+          "word": "sans-serif",
+          "ipa": "/ˌsænzˈserɪf/",
+          "tonica": "TERCERA (sans-SErif)"
+        },
+        {
+          "word": "font",
+          "ipa": "/fɒnt/",
+          "tonica": "única (FONT)"
+        },
+        {
+          "word": "bold",
+          "ipa": "/boʊld/",
+          "tonica": "única (BOLD)"
+        },
+        {
+          "word": "italic",
+          "ipa": "/ɪˈtælɪk/",
+          "tonica": "SEGUNDA (iTAlic)"
+        },
+        {
+          "word": "regular",
+          "ipa": "/ˈreɡjələr/",
+          "tonica": "PRIMERA (REgular)"
+        },
+        {
+          "word": "typography",
+          "ipa": "/taɪˈpɒɡrəfi/",
+          "tonica": "SEGUNDA (tyPOgraphy)"
+        }
+      ],
+      "techniques": [
+        "Finger drilling — 5 dedos/5 repeticiones con énfasis en tónica",
+        "Backchaining — 'phy' → 'graphy' → 'pography' → 'typography' (construcción inversa)"
+      ],
+      "source": "PM-0 §5.13 — Noticing de stress con soporte físico"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "serif",
+        "sans-serif",
+        "font",
+        "bold",
+        "italic",
+        "regular",
+        "letter",
+        "typography",
+        "typeface",
+        "character"
+      ],
+      "factors_applied": [
+        "Sounds",
+        "Conceptualize",
+        "Encounter",
+        "Use"
+      ],
+      "operationalization": "Sounds: IPA + stress en Word Wall. Conceptualize: clasificación visual serif/sans-serif/display (categorización cognitiva). Encounter: 4 encuentros en 6h (pre-reading → jigsaw → classification → exit ticket). Use: cada aprendiz produce 3 frases usando 5 términos en post-reading.",
+      "source": "PM-0 §5.5 + §5.10"
+    },
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1",
+      "habilidad_principal": "comprension_lectora",
+      "descriptor_activo": "Reconoce nombres, etiquetas y símbolos en herramientas y equipos. Lee listas con apoyo visual. Identifica números y unidades básicas.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot.comprension_lectora"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Muy lenta — lectura colectiva en voz alta primero, luego individual",
+      "extension_textos": "150-200 palabras adaptadas con 80% vocabulario conocido (Word Wall)",
+      "andamiaje": "Máximo — pre-reading brainstorm + while-reading jigsaw con apoyo de pares + post-reading con plantilla de clasificación",
+      "rol_docente": "Modelo central + driller (stress marking + recast)",
+      "source": "PM-0 §8 | methodological_shifts_per_guide[0]"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A2 — Descriptores §4/§6 comprension_lectora A1.1",
+        "A5 — Input adaptado (80% vocabulario conocido)",
+        "B1 — Pre-enseñanza vocabulario (Word Wall 10 términos antes del texto)",
+        "B3 — Accuracy en la evaluación (Cuestionario E1 5 ítems literales/inferenciales)",
+        "D2 — Can-do 'Reconocer nombres y etiquetas' asociado a E1"
+      ],
+      "source": "PM-0 §7"
+    }
+  }
+}

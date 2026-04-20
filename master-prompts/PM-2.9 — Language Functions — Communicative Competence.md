@@ -1,3 +1,16 @@
+---
+version: 2.0
+last_verified: 2026-04-13
+session: 5
+fase_sena: "Apropiación"
+activity_type: "procedimental"
+generates_evidence: true
+evidence_type: "Desempeño"
+contributes_to_cuestionario: false
+cuestionario_skill: null
+cuestionario_points: 0
+---
+
 # PM-2.9: LANGUAGE FUNCTIONS & COMMUNICATIVE COMPETENCE
 
 ## FPI SENA — Bilingüismo
@@ -325,6 +338,73 @@ E) ACADEMIC & DISCOURSE — Expert Jigsaw, Speech Writers, Socratic Seminar
 | **Alimenta a** | PM-2.10 | Las funciones se anclan en estructuras gramaticales |
 | **Alimenta a** | PM-4.1, PM-4.2 | Las funciones aparecen en evaluación |
 | **Se ubica en** | GFPI-F-135 Sección 3.3-3.4 | Apropiación/Transferencia |
+
+---
+
+## WRAP-UP / REVIEW & AUTONOMOUS LEARNING CHECK
+
+PM-2.9 incluye un componente crítico de **Wrap-up y Revisión Reflexiva** al finalizar la sesión 5, donde:
+
+- Los aprendices revisan las funciones comunicativas trabajadas en toda la guía
+- Verifican su capacidad de usar cada función de forma autónoma (sin andamiaje)
+- Reflexionan sobre cuáles funcionan bien y cuáles requieren más práctica
+- Identifican transferencias a contextos laborales reales
+
+Este segmento de wrap-up es de 15-20 minutos al final de S5 y prepara el terreno para la evaluación sumativa de S6.
+
+---
+
+## ACTIVITY CARD OUTPUT
+
+Esta sección define el output estructurado que este PM entrega al PM-2.11 (GFPI-F-134 Row Assembler).
+
+```yaml
+activity_card:
+  pm_id: "PM-2.9"
+  pm_name: "Language Functions & Communicative Competence"
+  session: 5
+  phase_sena: "Apropiación"
+  rap_id: "[A GENERAR — viene del Session Blueprint PM-2.0]"
+  
+  activities:
+    - number: 1
+      type: "procedimental"
+      statement: "[A GENERAR — Usar funciones comunicativas en contextos diversos]"
+      didactic_strategy: "Juego de roles"
+      didactic_technique: "Dramatización + Think-Pair-Share"
+    
+    - number: 2
+      type: "procedimental"
+      statement: "[A GENERAR — Reflexionar sobre uso autónomo de funciones]"
+      didactic_strategy: "Aprendizaje colaborativo"
+      didactic_technique: "Panel discussion"
+  
+  hours:
+    direct: 1.5
+    autonomous: 0.5
+  
+  evidence:
+    generates_evidence: true
+    type: "Desempeño"
+    description: "El aprendiz demuestra dominio de funciones comunicativas contextualizadas usando lenguaje apropiado al registro técnico"
+    evaluation_technique: "Observación"
+    instrument_number: 5
+    instrument_type: "Escala de estimación"
+  
+  environment:
+    type: "Aula"
+    materials:
+      - "Tarjetas de función comunicativa"
+      - "Escenarios de contexto técnico (impresos)"
+      - "Pizarrón para mapas conceptuales"
+      - "Grabadora de audio (opcional)"
+    instructors: "Instructor de inglés + Técnico especialista"
+  
+  contributes_to_consolidated_quiz: false
+  quiz_skill: null
+  quiz_points: 0
+  quiz_item_count: 0
+```
 
 ---
 

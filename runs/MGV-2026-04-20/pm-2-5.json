@@ -1,0 +1,550 @@
+{
+  "run_id": "MGV-2026-04-20",
+  "pm_code": "PM-2.5",
+  "pm_name": "Literacy & Vocabulary Skills",
+  "pm_version": "2.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Visual Communicator",
+  "rap_origen": "01",
+  "rap_codigo": "240202501-01",
+  "competencia_codigo": "240202501",
+  "cefr_level": "A1.1",
+  "session": 2,
+  "fase_sena": "Apropiación",
+  "generated_at": "2026-04-20",
+  "instructor": "Sergio Cortés Perdomo",
+  "previous_pms": ["PM-2.1", "PM-2.2", "PM-2.3"],
+  "archetypes_policy": "TODOS LOS 5 ARQUETIPOS INTEGRADOS (A+B+C+D+E) — decisión del instructor 2026-04-20",
+
+  "pm0_anchor": {
+    "source_file": "pm-0-context.json",
+    "cefr_descriptor_ref": "§6.A1.1 — reconocer vocabulario familiar muy básico de diseño gráfico",
+    "l1_policy_ref": "§9.1.G1_A1.1 — L1% S2=25%",
+    "methodological_shift_ref": "§5.A1.1 — input muy lento, máximo andamiaje, accuracy-prioritario",
+    "feedback_ref": "§5.6 — S2: recast oral, corrección explícita escrita",
+    "stress_pronunciation_ref": "§5.8 — S2: patrones de sílaba fuerte en términos técnicos de 1-3 sílabas",
+    "success_vocabulary_ref": "§5.10 — PM-2.5 activa los 7 factores SUCCESS sobre los 20 Toolbelt terms con ejercicios dedicados",
+    "grammar_roadmap_ref": "§8.G1_A1.1 — PM-2.5 recicla Grupo 1 'be' y Grupo 3 plurales en contextos de fluencia lectora"
+  },
+
+  "universe_anchor": {
+    "continuity_with_pm23": "PM-2.3 presentó el Master Anchor Text y el Toolbelt (20 términos en 5 categorías). PM-2.5 consolida esos 20 términos con ejercicios de literacidad y fluidez léxica.",
+    "role_in_s2": "PM-2.3 = exposición comprensiva. PM-2.5 = consolidación productiva del vocabulario. Ambos componen Sesión 2.",
+    "characters_active": ["Andrés (modelo de usuario del Toolbelt)", "Laura (usa Toolbelt de forma fluida — referente)"],
+    "universe_extension": "Laura presenta brevemente su 'Studio Glossary' — un glosario personal que todo diseñador en Pixel & Ink construye. Los aprendices construyen el suyo."
+  },
+
+  "identity": {
+    "codigo": "PM-2.5",
+    "nombre": "Literacy & Vocabulary Skills",
+    "subfase_guia_sena": "3.3 Actividades de apropiación del conocimiento",
+    "ubicacion_guia": "Sección 3.3 Apropiación (complementa PM-2.3)",
+    "tipo_evidencia_sena": "N/A (scaffolding léxico-literario — alimenta Cuestionario S6 ítem de vocabulario)",
+    "instrumento": "Learner's Worksheet + Vocabulary Notebook",
+    "estructura": "MENÚ DE ARQUETIPOS — TODOS INTEGRADOS (A+B+C+D+E)",
+    "rol_sistema": "CONSOLIDADOR LÉXICO — garantiza que los 20 términos se activen productivamente"
+  },
+
+  "content": {
+    "worksheet_title": "LITERACY & VOCABULARY — The Toolbelt in Action",
+    "guia_header": "MGV · Guía 1 · The Visual Communicator · Nivel A1.1 · Sesión 2 (parte 2)",
+
+    "bilingual_instruction_block": {
+      "main_message_en": "You read about the 20 words. Now you own them. In this session you spell them, see them, say them, sort them and use them. Laura builds her own Studio Glossary. Build yours.",
+      "main_message_es_cursiva": "Leíste sobre las 20 palabras. Ahora son tuyas. En esta sesión las deletreas, las ves, las dices, las clasificas y las usas. Laura construye su propio Glosario del Estudio. Construye el tuyo."
+    },
+
+    "archetype_A_PHONICS_SPELLING": {
+      "archetype_id": "A",
+      "name_en": "PHONICS & SPELLING — Mirror Talking + Splat! + Sound Sorting",
+      "name_es": "FONÉTICA Y DELETREO — Habla al Espejo + ¡Splat! + Clasificación Sonora",
+      "actua_como": "Phonics Coach & ESP Sound-Spelling Specialist",
+      "selected_techniques": ["Mirror Talking (producción con auto-observación)", "Splat! (reconocimiento rápido de palabras en tablero)", "Sound Sorting (clasificación por fonema)"],
+      "rationale_a11": "Fonética básica es cimiento A1.1. Los 20 términos contienen fonemas problemáticos para hispanohablantes: /θ/ (font/serif no lo tienen pero CMYK y canvas sí tienen /æ/), /ɪ/ vs /i:/ (serif/line), /oʊ/ (bold/logo), /ʊ/ vs /uː/ (cool). Los tres técnicas cubren producción, reconocimiento y discriminación.",
+      "time_minutes": 25,
+
+      "activity_a1_mirror_talking": {
+        "title_en": "MIRROR TALKING — Watch Your Own Mouth",
+        "title_es": "HABLA AL ESPEJO — Observa Tu Propia Boca",
+        "time_minutes": 10,
+        "mode": "pairs with small mirror (or smartphone front camera)",
+        "instruction_en": "With a mirror or selfie camera, say each word SLOWLY 3 times. Watch your lips. Compare with your partner.",
+        "instruction_es_cursiva": "Con un espejo o cámara selfie, di cada palabra LENTAMENTE 3 veces. Observa tus labios. Compara con tu compañero.",
+        "target_words_with_mouth_cues": [
+          {"word": "font", "cue_en": "Round lips for /ɒ/. Tongue tip down for /f/.", "cue_es_cursiva": "Labios redondos para /ɒ/. Punta de lengua abajo para /f/."},
+          {"word": "bold", "cue_en": "Open mouth on /oʊ/. Lips together for /b/. Tongue up for /ld/.", "cue_es_cursiva": "Boca abierta en /oʊ/. Labios juntos para /b/. Lengua arriba para /ld/."},
+          {"word": "cool", "cue_en": "Lips pushed forward like whistle for /uː/. Long sound.", "cue_es_cursiva": "Labios hacia adelante como silbido para /uː/. Sonido largo."},
+          {"word": "warm", "cue_en": "Wide lips /w/, jaw down for /ɔːr/, lips together /m/.", "cue_es_cursiva": "Labios anchos /w/, mandíbula abajo para /ɔːr/, labios juntos /m/."},
+          {"word": "layer", "cue_en": "Two syllables: LAY-er. Clear /eɪ/. Relaxed /ər/.", "cue_es_cursiva": "Dos sílabas: LAY-er. /eɪ/ claro. /ər/ relajado."},
+          {"word": "save", "cue_en": "/s/ sharp. /eɪ/ long. /v/ lower lip on upper teeth.", "cue_es_cursiva": "/s/ agudo. /eɪ/ largo. /v/ labio inferior sobre dientes superiores."}
+        ],
+        "partner_check": {
+          "instruction_en": "Watch your partner say the word. Can you SEE the correct mouth shape?",
+          "checklist": ["Lips rounded? (for font, bold, cool)", "Mouth open wide? (for layer, save)", "Teeth visible? (for font, save)"]
+        }
+      },
+
+      "activity_a2_splat": {
+        "title_en": "SPLAT! — Fast Recognition Game",
+        "title_es": "¡SPLAT! — Juego de Reconocimiento Rápido",
+        "time_minutes": 10,
+        "mode": "whole class · instructor with flyswatter or pointer",
+        "instruction_en": "All 20 Toolbelt words are scattered on the board. Instructor says a definition. First student to SPLAT the correct word wins a point.",
+        "instruction_es_cursiva": "Las 20 palabras del Toolbelt están dispersas en el tablero. El instructor da una definición. El primer estudiante en hacer SPLAT en la palabra correcta gana un punto.",
+        "board_setup": "Print 20 words on large paper cards, arrange randomly on the board or wall.",
+        "sample_definitions_and_answers": [
+          {"def_en": "A font with small lines at the ends of letters.", "answer": "serif"},
+          {"def_en": "The work area in design software.", "answer": "canvas"},
+          {"def_en": "A color system for printing: Cyan, Magenta, Yellow, Key.", "answer": "CMYK"},
+          {"def_en": "A transparent level on top of the canvas.", "answer": "layer"},
+          {"def_en": "A small symbol for a brand.", "answer": "logo"},
+          {"def_en": "A pattern of lines to organize a design.", "answer": "grid"}
+        ],
+        "rotation_rule": "After each round, the pointer passes to the next student (so shy learners also splat)."
+      },
+
+      "activity_a3_sound_sorting": {
+        "title_en": "SOUND SORTING — Group by Stressed Syllable",
+        "title_es": "CLASIFICACIÓN SONORA — Agrupar por Sílaba Tónica",
+        "time_minutes": 5,
+        "mode": "pairs with sorting mat",
+        "instruction_en": "Classify the 20 words into 3 groups: 1 syllable · 2 syllables · 3+ syllables. Circle the stressed syllable.",
+        "instruction_es_cursiva": "Clasifica las 20 palabras en 3 grupos: 1 sílaba · 2 sílabas · 3+ sílabas. Encierra en círculo la sílaba tónica.",
+        "sorting_mat_example": {
+          "headers": ["1 syllable", "2 syllables", "3+ syllables"],
+          "sample_rows": [
+            {"1_syl": "font, bold, warm, cool, line, shape, grid, save, print", "2_syl": "SE-rif, CAN-vas, LAY-er, TOOL-bar, PEN-cil, LO-go, POS-ter, O-pen", "3_syl": "sans-SE-rif, BAL-ance (actually 2), CM-Y-K (initialized), co-LOR (2)"}
+          ]
+        },
+        "correct_answer_key": {
+          "1_syllable": ["font", "bold", "warm", "cool", "line", "shape", "grid", "save"],
+          "2_syllable_with_stress_first": ["SErif", "CANvas", "LAYer", "TOOLbar", "PENcil", "LOgo", "POSter", "Open", "COlor", "BALance"],
+          "3_syllable_and_acronyms": ["sansSErif (2 rhythmic units but 2 words)", "CMYK (initialized: see-em-why-kay — 4 sounds)"]
+        },
+        "micro_capsula_tip": "> 🎤 **Stress Rule:** In English, the stressed syllable is LONGER and LOUDER. If you stress the wrong syllable, people don't understand. (*En inglés, la sílaba tónica es MÁS LARGA y MÁS FUERTE. Si acentúas mal, no te entienden.*)"
+      }
+    },
+
+    "archetype_B_VOCABULARY_DEVELOPMENT": {
+      "archetype_id": "B",
+      "name_en": "VOCABULARY DEVELOPMENT — Semantic Mapping + Word Wall + Self-Collection",
+      "name_es": "DESARROLLO DE VOCABULARIO — Mapeo Semántico + Muro de Palabras + Auto-Colección",
+      "actua_como": "Vocabulary Development Coach & Semantic Network Specialist",
+      "selected_techniques": ["Semantic Mapping (5 category clusters)", "Word Wall (classroom permanent display)", "Vocabulary Self-Collection Strategy (VSS — learners add their own words)"],
+      "rationale_a11": "La organización semántica ancla la retención. El muro de palabras mantiene exposición continua (factor Salience de SUCCESS). VSS da ownership — los aprendices detectan qué palabras les faltan.",
+      "time_minutes": 30,
+
+      "activity_b1_semantic_mapping": {
+        "title_en": "SEMANTIC MAP — The Toolbelt Organized",
+        "title_es": "MAPA SEMÁNTICO — El Toolbelt Organizado",
+        "time_minutes": 15,
+        "mode": "groups of 4 with large poster paper",
+        "instruction_en": "Draw a big circle 'GRAPHIC DESIGN' in the center. Add 5 branches (5 categories). On each branch, add the 4 terms. For each term, add: a drawing + a synonym or related word.",
+        "instruction_es_cursiva": "Dibuja un gran círculo 'DISEÑO GRÁFICO' en el centro. Añade 5 ramas (5 categorías). En cada rama, añade los 4 términos. Para cada término, añade: un dibujo + un sinónimo o palabra relacionada.",
+        "map_structure": {
+          "center": "GRAPHIC DESIGN",
+          "branches": [
+            {"branch": "TYPOGRAPHY", "terms": ["font → Times New Roman, Arial", "serif → classic, traditional", "sans-serif → modern, clean", "bold → thick, heavy"]},
+            {"branch": "COLOR", "terms": ["color → paint, hue", "warm → red, orange, yellow", "cool → blue, green, purple", "CMYK → print colors"]},
+            {"branch": "SHAPE & COMPOSITION", "terms": ["line → mark, stroke", "shape → form, figure", "grid → pattern, system", "balance → equal, symmetry"]},
+            {"branch": "TOOLS & SOFTWARE", "terms": ["pencil → pen, brush", "canvas → surface, page", "layer → level, floor", "toolbar → menu, panel"]},
+            {"branch": "PRODUCTS & ACTIONS", "terms": ["logo → symbol, mark", "poster → sign, ad", "open → start, launch", "save → store, keep"]}
+          ]
+        },
+        "deliverable": "1 poster per group — stays on classroom wall for all subsequent sessions (becomes WORD WALL)"
+      },
+
+      "activity_b2_word_wall": {
+        "title_en": "WORD WALL — Classroom Permanent Display",
+        "title_es": "MURO DE PALABRAS — Exhibición Permanente",
+        "time_minutes": 5,
+        "mode": "whole class",
+        "instruction_en": "Select the BEST semantic map poster. Hang it on the wall. It becomes THE Word Wall for Sessions 3-8.",
+        "instruction_es_cursiva": "Selecciona el MEJOR cartel. Cuélgalo en la pared. Se convierte en EL Muro de Palabras para las Sesiones 3-8.",
+        "ongoing_rule_en": "Every session, anyone can add a NEW related word to the Word Wall. Use a yellow sticky note.",
+        "ongoing_rule_es_cursiva": "Cada sesión, cualquiera puede agregar una nueva palabra relacionada al Muro. Usa una nota adhesiva amarilla.",
+        "sena_salience_factor_applied": "La exposición permanente activa el factor Salience de SUCCESS §5.10"
+      },
+
+      "activity_b3_vocabulary_self_collection": {
+        "title_en": "MY VOCABULARY NOTEBOOK — Personal Toolbelt",
+        "title_es": "MI CUADERNO DE VOCABULARIO — Toolbelt Personal",
+        "time_minutes": 10,
+        "mode": "individual with notebook (physical or digital)",
+        "instruction_en": "Create your personal Vocabulary Notebook. Copy the 20 Toolbelt terms. Then ADD 5 NEW words you found in the Master Anchor Text (or in the reading) that are NOT in the Toolbelt but you want to learn.",
+        "instruction_es_cursiva": "Crea tu Cuaderno de Vocabulario personal. Copia los 20 términos. Luego AÑADE 5 palabras NUEVAS que encontraste en el texto que NO están en el Toolbelt pero quieres aprender.",
+        "notebook_template_columns": ["Word", "Definition (en)", "Translation (es)", "Example sentence (en)", "Where I found it"],
+        "self_selected_5_words_rationale": "Personal ownership = retention. A1.1 learners remember words they CHOSE 3x better than words assigned.",
+        "laura_studio_glossary_reference": "Laura's Studio Glossary (our reference): Laura's notebook has 800+ entries after 12 years. Start with your 25."
+      }
+    },
+
+    "archetype_C_READING_FLUENCY": {
+      "archetype_id": "C",
+      "name_en": "READING FLUENCY — Reader's Theater + Cloze + Repeated Reading",
+      "name_es": "FLUIDEZ LECTORA — Teatro del Lector + Cloze + Lectura Repetida",
+      "actua_como": "Reading Fluency Coach & Prosody Specialist",
+      "selected_techniques": ["Reader's Theater (dramatized reading with roles)", "Cloze/MAZE (guided gap-fill)", "Repeated Reading (3-time pacing)"],
+      "rationale_a11": "Fluidez A1.1 = velocidad + precisión + prosodia básica. Reader's Theater da motivación emocional. Cloze verifica microestructura. Repeated Reading construye automaticidad.",
+      "time_minutes": 30,
+
+      "activity_c1_readers_theater": {
+        "title_en": "READER'S THEATER — Andrés & Sophia's Email",
+        "title_es": "TEATRO DEL LECTOR — Email de Andrés y Sophia",
+        "time_minutes": 15,
+        "mode": "groups of 3 with script",
+        "instruction_en": "Distribute roles: NARRATOR (reads action) + ANDRÉS (reads dialogue) + SOPHIA (reads email). Rehearse once. Perform to the group.",
+        "instruction_es_cursiva": "Distribuye roles: NARRADOR (lee acción) + ANDRÉS (lee diálogo) + SOPHIA (lee email). Ensaya una vez. Presenta al grupo.",
+        "script": [
+          {"role": "NARRATOR", "line_en": "Monday morning. Andrés is at his desk. His phone rings."},
+          {"role": "SOPHIA (voice)", "line_en": "Hi Andrés. This is Sophia. I am sending the brief now. Please read it."},
+          {"role": "NARRATOR", "line_en": "Andrés opens the email. He reads Sophia's words."},
+          {"role": "SOPHIA (reading email)", "line_en": "We need a new logo. Use a serif font in bold. Warm colors only. No cool colors. The deadline is Friday."},
+          {"role": "ANDRÉS (to himself)", "line_en": "Serif? What is serif? I don't know serif. Laura is in a meeting. OK. Google time."},
+          {"role": "NARRATOR", "line_en": "Andrés opens Creative Bloq. He reads the article. Now he understands. Sophia wants serif. The bakery is traditional. Perfect match."},
+          {"role": "ANDRÉS", "line_en": "OK. Serif. Warm colors. Bakery. I can do this."}
+        ],
+        "performance_rubric": [
+          "Pronunciation of target words: font, serif, warm, cool, bold, bakery",
+          "Emotion: Andrés panics then finds solution",
+          "Pace: slow enough to be understood"
+        ]
+      },
+
+      "activity_c2_cloze": {
+        "title_en": "CLOZE — Fill the Gaps",
+        "title_es": "CLOZE — Completa los Vacíos",
+        "time_minutes": 10,
+        "mode": "individual then pair verification",
+        "instruction_en": "Complete the passage with the missing Toolbelt words. Some words appear twice.",
+        "instruction_es_cursiva": "Completa el pasaje con las palabras faltantes del Toolbelt. Algunas aparecen dos veces.",
+        "cloze_passage_en": "Andrés opens his _________ (1). He clicks on the _________ (2). He does not know the word '_________' (3). He opens Creative Bloq. A _________ (3) font has small _________ (4) at the ends of letters. Arial is a _________ (5) font. Sophia wants a _________ (6) and a _________ (7). She asks for _________ (8) colors like red and orange. Andrés adds a _________ (9) in Canva. He types in _________ (10) style. He _________ (11) the file.",
+        "answer_key": {
+          "1": "canvas / laptop (accept both)",
+          "2": "toolbar",
+          "3": "serif",
+          "4": "lines",
+          "5": "sans-serif",
+          "6": "logo",
+          "7": "poster",
+          "8": "warm",
+          "9": "layer",
+          "10": "bold",
+          "11": "saves"
+        },
+        "maze_variant_for_lower_a11": {
+          "note": "If Cloze is too hard, provide MAZE: 3 options per gap",
+          "example": "Andrés opens his (canvas / logo / poster)."
+        }
+      },
+
+      "activity_c3_repeated_reading": {
+        "title_en": "REPEATED READING — 3x Faster",
+        "title_es": "LECTURA REPETIDA — 3 veces más rápido",
+        "time_minutes": 5,
+        "mode": "pairs with timer",
+        "instruction_en": "Choose ONE paragraph of the Master Anchor Text. Read it aloud 3 times. Your partner times each reading. Goal: 2nd reading 10% faster, 3rd reading 20% faster — WITHOUT errors.",
+        "instruction_es_cursiva": "Elige UN párrafo del texto ancla. Léelo en voz alta 3 veces. Tu compañero cronometra cada lectura. Meta: 2da lectura 10% más rápida, 3ra 20% más rápida — SIN errores.",
+        "timing_chart": {
+          "headers": ["Reading #", "Time (sec)", "Errors"],
+          "rows": [
+            {"r": "1st", "time": "____ sec", "err": "____"},
+            {"r": "2nd", "time": "____ sec (goal: 10% less)", "err": "____"},
+            {"r": "3rd", "time": "____ sec (goal: 20% less)", "err": "____"}
+          ]
+        },
+        "prosody_checklist": ["Pause at commas", "Drop tone at period", "Stress content words (font, serif, bold)"]
+      }
+    },
+
+    "archetype_D_WRITING_SCAFFOLDING": {
+      "archetype_id": "D",
+      "name_en": "WRITING SCAFFOLDING — LEA + Dialogue Journal + Guided Writing",
+      "name_es": "ANDAMIAJE DE ESCRITURA — LEA + Diario Dialógico + Escritura Guiada",
+      "actua_como": "Writing Scaffold Designer & Language Experience Approach Specialist",
+      "selected_techniques": ["LEA — Language Experience Approach (dictate-to-write)", "Dialogue Journal (short written exchange)", "Guided Writing (sentence frames)"],
+      "rationale_a11": "A1.1 no escribe libre — escribe con andamios. LEA conecta oralidad con escritura. Dialogue Journal baja la ansiedad con exchange corto. Guided Writing con frames garantiza precisión.",
+      "time_minutes": 25,
+
+      "activity_d1_lea": {
+        "title_en": "LEA — Your Story About Andrés",
+        "title_es": "LEA — Tu Historia Sobre Andrés",
+        "time_minutes": 10,
+        "mode": "pairs — one speaks, one writes",
+        "instruction_en": "Student A says 2-3 sentences about Andrés's day (in simple English). Student B writes EXACTLY what A says. Then swap.",
+        "instruction_es_cursiva": "A dice 2-3 oraciones sobre el día de Andrés (en inglés simple). B escribe EXACTAMENTE lo que A dice. Luego intercambien.",
+        "example_exchange": {
+          "student_a_says": "Andrés opens the email. He reads Sophia's words. He is nervous.",
+          "student_b_writes": "Andrés opens the email. He reads Sophia's words. He is nervous.",
+          "correction_together": "If there's an error (e.g., 'He is nervous' → 'He is nerves'), correct together. Write the corrected version."
+        },
+        "lea_principle": "Language Experience = the learner's own speech becomes their reading text. High transfer, high ownership."
+      },
+
+      "activity_d2_dialogue_journal": {
+        "title_en": "DIALOGUE JOURNAL — Talk to Andrés",
+        "title_es": "DIARIO DIALÓGICO — Habla con Andrés",
+        "time_minutes": 10,
+        "mode": "individual writing + instructor response",
+        "instruction_en": "Write 3-4 sentences to Andrés. Give him advice or ask a question. Use any 5 Toolbelt words. The instructor reads and responds in writing.",
+        "instruction_es_cursiva": "Escribe 3-4 oraciones a Andrés. Dale un consejo o hazle una pregunta. Usa 5 palabras del Toolbelt. El instructor lee y responde por escrito.",
+        "example_student_entry": "Hi Andrés. I understand your problem. Use a serif font. Use warm colors. Save the logo. Good luck!",
+        "example_instructor_response": "Great advice! I like 'save the logo.' One question: what color is 'warm' for you? Red? Orange?",
+        "ongoing_rule": "This journal continues across S3-S7. Each session adds one entry. Focus on Toolbelt reuse."
+      },
+
+      "activity_d3_guided_writing": {
+        "title_en": "GUIDED WRITING — Design Decision Memo",
+        "title_es": "ESCRITURA GUIADA — Memo de Decisión de Diseño",
+        "time_minutes": 5,
+        "mode": "individual with frame",
+        "instruction_en": "Fill the frame. Write your own design decision memo (Andrés-style).",
+        "instruction_es_cursiva": "Llena el marco. Escribe tu propio memo de decisión de diseño (estilo Andrés).",
+        "frame": [
+          {"line": 1, "frame": "TO: __________ (the instructor or Laura)"},
+          {"line": 2, "frame": "FROM: __________ (your name)"},
+          {"line": 3, "frame": "DATE: __________"},
+          {"line": 4, "frame": "SUBJECT: Logo Design Decision"},
+          {"line": 5, "frame": ""},
+          {"line": 6, "frame": "The client wants a __________ (type of business)."},
+          {"line": 7, "frame": "I will use a __________ (serif / sans-serif) font because __________."},
+          {"line": 8, "frame": "I will use __________ (warm / cool) colors because __________."},
+          {"line": 9, "frame": "I will save the file as a __________ (logo / poster)."},
+          {"line": 10, "frame": "Signed: __________"}
+        ]
+      }
+    },
+
+    "archetype_E_INTERACTIVE_LITERACY": {
+      "archetype_id": "E",
+      "name_en": "INTERACTIVE LITERACY — Jigsaw Reading + Read-Pair-Share + Info Gap",
+      "name_es": "LITERACIDAD INTERACTIVA — Jigsaw Reading + Lee-Pareja-Comparte + Info Gap",
+      "actua_como": "Interactive Literacy Designer & Social Reading Specialist",
+      "selected_techniques": ["Jigsaw over 5 categories (reusing PM-2.3 setup)", "Read-Pair-Share (paragraph sharing)", "Vocabulary Info Gap (asymmetric toolbelt)"],
+      "rationale_a11": "Estos 3 conectan literacidad con oralidad en bucles cortos. Jigsaw ya está montado en PM-2.3; se activa. Read-Pair-Share ≤5 min baja ansiedad. Vocab Info Gap crea necesidad comunicativa.",
+      "time_minutes": 25,
+
+      "activity_e1_jigsaw_reading": {
+        "title_en": "JIGSAW READING — Expert Category Deep Dive",
+        "title_es": "JIGSAW READING — Inmersión Experta por Categoría",
+        "time_minutes": 10,
+        "mode": "reusing Jigsaw groups from PM-2.3 Archetype D",
+        "instruction_en": "Expert groups now READ an additional micro-article about their category (1 paragraph each). Summarize in 2 sentences for Home Group.",
+        "instruction_es_cursiva": "Grupos expertos ahora LEEN un micro-artículo adicional sobre su categoría (1 párrafo cada uno). Resumen en 2 oraciones para Grupo Base.",
+        "micro_articles_by_category": [
+          {"category": "C1 Typography", "micro_article_en": "Fonts have personality. Serif fonts feel classic. Sans-serif fonts feel modern. Bold fonts feel strong. Italic fonts feel elegant. Choose the font that fits the message."},
+          {"category": "C2 Color", "micro_article_en": "Colors create emotion. Warm colors (red, orange, yellow) feel active and hungry. Cool colors (blue, green, purple) feel calm and trustworthy. CMYK is for print. RGB is for screens."},
+          {"category": "C3 Shape & Composition", "micro_article_en": "Good design uses shapes well. Lines divide space. Shapes organize content. Grids keep everything aligned. Balance makes the design feel stable and professional."},
+          {"category": "C4 Tools & Software", "micro_article_en": "Designers use software. Canva is easy. Photoshop is powerful. Every tool has a canvas, layers, and a toolbar. The pencil tool is for drawing. Layers keep elements separate."},
+          {"category": "C5 Products & Actions", "micro_article_en": "Designers make products. A logo is a brand's face. A poster promotes an event. Every product follows a workflow: open the software, create, save the file, and send it to the client."}
+        ]
+      },
+
+      "activity_e2_read_pair_share": {
+        "title_en": "READ-PAIR-SHARE — Favorite Sentence",
+        "title_es": "LEE-PAREJA-COMPARTE — Oración Favorita",
+        "time_minutes": 8,
+        "mode": "pairs",
+        "instruction_en": "Step 1: Read the Master Anchor Text silently for 2 minutes. Step 2: Choose ONE sentence you LIKE. Step 3: Share with your partner: 'I like this sentence because...'",
+        "instruction_es_cursiva": "Paso 1: Lee el texto en silencio 2 minutos. Paso 2: Elige UNA oración que te GUSTE. Paso 3: Comparte con tu compañero: 'Me gusta esta oración porque...'",
+        "sentence_frame_for_step_3": "I like the sentence '___________' because it uses ___________ (Toolbelt word) and it means ___________."
+      },
+
+      "activity_e3_vocabulary_info_gap": {
+        "title_en": "VOCABULARY INFO GAP — Fill Each Other's Toolbelt",
+        "title_es": "INFO GAP DE VOCABULARIO — Llenar Toolbelt del Otro",
+        "time_minutes": 7,
+        "mode": "pairs with asymmetric handouts",
+        "student_a_handout": "Has 10 definitions + 10 empty word slots. Has 10 words WITHOUT definitions.",
+        "student_b_handout": "Has the OPPOSITE 10 definitions + 10 words WITHOUT definitions.",
+        "instruction_en": "A asks B: 'What is the definition of _____?' B gives definition. A writes it. Switch. No showing papers.",
+        "instruction_es_cursiva": "A pregunta a B: '¿Cuál es la definición de _____?' B da definición. A escribe. Intercambien. Sin mostrar papeles.",
+        "support_phrases": [
+          "What is the definition of ___?",
+          "It is a ___ that ___.",
+          "How do you spell it?",
+          "Can you repeat?"
+        ]
+      }
+    },
+
+    "rotation_options_for_instructor": {
+      "title_en": "INSTRUCTOR ROTATION MENU — PM-2.5 Flow Options (within S2 part 2)",
+      "time_available": "PM-2.5 tiene presupuesto de tiempo compartido con PM-2.3 dentro de S2. Recomendación: PM-2.5 ocupa 45-60 min de los 120 min directos de S2.",
+      "recommended_flow_options": [
+        {
+          "flow_id": "FLOW-1 · Phonics + Mapping (50 min)",
+          "sequence": ["25 min → Archetype A (Mirror + Splat + Sound Sorting)", "25 min → Archetype B (Semantic Map)"],
+          "rationale": "Balanceado oralidad/literacidad."
+        },
+        {
+          "flow_id": "FLOW-2 · Fluency Focus (45 min)",
+          "sequence": ["30 min → Archetype C (Reader's Theater + Cloze + Repeated Reading)", "15 min → Archetype B3 (Vocab Notebook)"],
+          "rationale": "Si el grupo necesita trabajar prosodia y velocidad."
+        },
+        {
+          "flow_id": "FLOW-3 · Writing Bridge (50 min)",
+          "sequence": ["25 min → Archetype D (LEA + Guided Writing)", "25 min → Archetype E (Jigsaw Reading + Info Gap)"],
+          "rationale": "Prepara transición a PM-2.4 Writing en S3."
+        },
+        {
+          "flow_id": "FLOW-4 · Stations (60 min)",
+          "sequence": ["5 stations × 12 min rotating: A, B1 (semantic map), C2 (Cloze), D3 (Guided Writing), E2 (Read-Pair-Share)"],
+          "rationale": "Máxima cobertura; requiere buen timekeeping."
+        }
+      ],
+      "autonomous_work_0_25h": "15 min — completar Vocabulary Notebook (Archetype B3) con 5 palabras auto-seleccionadas. Subir foto a Moodle."
+    }
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.5",
+    "pm_name": "Literacy & Vocabulary Skills",
+    "session": 2,
+    "phase_sena": "Apropiación",
+    "rap_id": "240202501-01",
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Practicar pronunciación y deletreo de los 20 términos del Toolbelt mediante Mirror Talking, Splat! y Sound Sorting con foco en sílaba tónica y fonemas hispanohablante-problemáticos",
+        "didactic_strategy": "Aprendizaje basado en tareas",
+        "didactic_technique": "Drill fonético + juego de reconocimiento"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Construir mapa semántico colectivo de los 20 términos organizados en 5 categorías y crear cuaderno personal de vocabulario con 5 palabras auto-seleccionadas",
+        "didactic_strategy": "Aprendizaje colaborativo + autónomo",
+        "didactic_technique": "Semantic mapping + VSS (Vocabulary Self-Collection)"
+      },
+      {
+        "number": 3,
+        "type": "procedimental",
+        "statement": "Ejecutar Reader's Theater dramatizando el email de Sophia-Andrés, completar Cloze con 11 vacíos, y realizar 3 lecturas repetidas cronometradas con progresión de velocidad",
+        "didactic_strategy": "Aprendizaje basado en tareas",
+        "didactic_technique": "Dramatización + práctica de fluidez"
+      }
+    ],
+    "hours": {
+      "direct": 1.0,
+      "autonomous": 0.25
+    },
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "Scaffolding léxico — alimenta el ítem de vocabulario del Cuestionario Consolidado S6 (1 de los 5 ítems de Reading)",
+      "evaluation_technique": null,
+      "instrument_number": null,
+      "instrument_type": null
+    },
+    "environment": {
+      "type": "Aula con Word Wall permanente",
+      "materials": [
+        "Espejos pequeños o smartphones con cámara selfie (1 por pareja)",
+        "Matamoscas o puntero largo (para Splat!)",
+        "Tarjetas grandes con las 20 palabras (para el tablero Splat!)",
+        "Papel poster A1 (1 por grupo para Semantic Map)",
+        "Marcadores de 5 colores (uno por categoría)",
+        "Notas adhesivas amarillas (para Word Wall ampliable)",
+        "Cuaderno de vocabulario personal (cada aprendiz — físico o digital)",
+        "Guiones impresos Reader's Theater (1 por grupo)",
+        "Handout Cloze (1 por aprendiz)",
+        "Cronómetro o smartphone con timer (1 por pareja)",
+        "Handouts asimétricos Info Gap (2 versiones A/B)"
+      ],
+      "instructors": "Instructor de inglés técnico (fonética) + Técnico especialista MGV (valida terminología)"
+    },
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Vocabulary",
+    "quiz_points": 5,
+    "quiz_item_count": 5,
+    "quiz_note": "Sección Vocabulary del Cuestionario Consolidado S6 = 5 ítems × 1 pt (canon pm-2-0.cuestionario_preview: 5 secciones Reading + Writing + Listening + Vocabulary + Grammar). Ítems en formatos matching/gap-fill/labelling sobre los 20 key_vocabulary de G1 Pixel & Ink Studio.",
+    "quiz_correction_2026_04_20": "Corrección vs versión previa: se pasó de 1 ítem embebido en Reading (1 pt) a sección propia Vocabulary (5 ítems × 1 pt = 5 pts). Motivo: pm-2-0.json establece Vocabulary como sección canónica independiente en E6. Mantiene suma canónica 25 pts en 5 secciones."
+  },
+
+  "pm0_protocol_session_level": {
+    "grammar_groups": {
+      "intro": [],
+      "consolida": ["Grupo 1 — be (reciclaje del Master Anchor Text)", "Grupo 3 — plurales (fonts, colors, lines, letters)"],
+      "aplica": [],
+      "carga_principle_check": "0 Intro (consolidación de Intros hechos en PM-2.3) — PASS"
+    },
+    "feedback": {
+      "dominant_mode": "Corrección explícita de pronunciación + Recast de escritura",
+      "accuracy_techniques": ["Mirror Talking: auto-monitoreo visual", "LEA: corrección conjunta de la oración dictada"],
+      "fluency_techniques": ["Repeated Reading: construye automaticidad sin corrección por velocidad", "Read-Pair-Share: no se corrige el gusto personal"]
+    },
+    "l1_management": {
+      "percentage": 25,
+      "english_zone": "Toolbelt completo + guiones Reader's Theater + sentence frames de Guided Writing + micro-artículos Jigsaw",
+      "legitimate_uses": ["Traducciones en Vocabulary Notebook (columna Spanish)", "Reflexión metacognitiva de qué técnica funcionó mejor"],
+      "reduction_strategy": "Starters y frames obligan a producir L2 en actividades clave"
+    },
+    "stress_pronunciation": {
+      "focus_words": ["serif (SEH-rif)", "sans-serif (sanz-SEH-rif)", "canvas (CAN-vas)", "layer (LAY-er)", "toolbar (TOOL-bar)", "balance (BAL-ance)"],
+      "physical_techniques": ["aplauso en sílaba fuerte (Sound Sorting)", "espejo para observar labios (Mirror Talking)", "golpe de mesa en cada sílaba (Splat!)"],
+      "board_marking": "Sílabas fuertes en MAYÚSCULA subrayadas con marcador naranja en el Word Wall permanente"
+    },
+    "success_vocabulary": {
+      "target_terms": "20 Toolbelt + 5 self-selected = 25 por aprendiz",
+      "success_factors_applied": [
+        "Salience: Word Wall permanente + colores por categoría",
+        "Use: Splat + Cloze + LEA + Guided Writing + Info Gap (5 contextos productivos)",
+        "Connection: Semantic Map liga cada término a 4 más + mapea al universo G1",
+        "Context: Reader's Theater contextualiza en narrativa viva",
+        "Emotion: Andrés's panic + Sophia's authority generan recuerdo afectivo",
+        "Spaced Repetition: Word Wall garantiza exposición S3-S8",
+        "Synergy: visual (Semantic Map) + auditivo (Reader's Theater) + kinestésico (Splat + Mirror) + escrito (Cloze + Guided Writing)"
+      ],
+      "factors_activated": "7/7 — cobertura completa SUCCESS framework"
+    }
+  },
+
+  "integration_all_archetypes_policy": {
+    "applicable_to_this_pm": true,
+    "archetypes_integrated": ["A", "B", "C", "D", "E"],
+    "total_archetypes": 5,
+    "rationale_sergio_2026-04-20": "Los 5 arquetipos integrados garantizan 7/7 factores SUCCESS y cubren phonics + semantic + fluency + writing-scaffold + interactive.",
+    "archetypes_most_apt_for_a11": ["A (Phonics con cues físicos)", "B (Semantic Map con iconos)", "D (Guided Writing con frames)"],
+    "archetypes_stretch_for_a11": ["C3 (Repeated Reading con cronómetro) — exige confianza"],
+    "archetypes_requiring_materials": ["A (espejos o smartphones)", "C (cronómetros)", "E (handouts asimétricos)"]
+  },
+
+  "validacion": {
+    "reglas_pm25": {
+      "phonics_con_cues_fisicos": "PASS (6 palabras con mouth cues + aplausos + mesa + espejo)",
+      "semantic_mapping_5_categorias": "PASS (5 ramas × 4 términos + sinónimos)",
+      "word_wall_permanente_s3_s8": "PASS (instrucción explícita de expansión con notas adhesivas)",
+      "vocabulary_notebook_con_5_autoseleccionadas": "PASS (VSS implementada)",
+      "readers_theater_con_universo_g1": "PASS (Andrés + Sophia + email + Creative Bloq)",
+      "cloze_11_gaps_con_toolbelt": "PASS (11 gaps, respuesta múltiple MAZE variant para A1.1 inferior)",
+      "repeated_reading_con_prosodia": "PASS (3x con checklist de pausa/tono/acento)",
+      "guided_writing_con_sentence_frames": "PASS (memo de 10 líneas)",
+      "jigsaw_reusa_pm23_setup": "PASS (continuidad con PM-2.3 Archetype D)",
+      "bilingue_unificada": "PASS",
+      "micro_capsulas_visuales": "PASS (Stress Rule)",
+      "cefr_a11_estricto": "PASS (andamiaje extremo con frames, iconos, traducciones)"
+    },
+    "anclaje_pm0": {
+      "l1_percentage_25_matches_s2": "PASS",
+      "success_factors_7_de_7": "PASS (cobertura completa)",
+      "stress_words_polisilabicas_tematicas": "PASS",
+      "grammar_reciclaje_gr1_gr3": "PASS"
+    },
+    "continuidad_sistemica": {
+      "antecedente_pm23": "PASS (consolida los 20 términos presentados)",
+      "consecuente_pm24_s3": "PASS (Guided Writing D3 prepara producción escrita S3)",
+      "consecuente_pm26_s4": "PASS (phonics A y prosody C preparan listening S4)",
+      "word_wall_transversal": "PASS (activo en S3-S8)"
+    },
+    "trazabilidad_gfpi_f_134": {
+      "columna_6_actividades": "3 actividades descritas + 5 arquetipos como sub-actividades rotables",
+      "columna_7_horas": "Directas 1.0h + Autónomas 0.25h = 1.25h (comparte S2 con PM-2.3)",
+      "columna_8_evidencia": "Scaffolding (no genera evidencia formal) — alimenta 1 ítem del Cuestionario S6",
+      "columna_10_ambiente": "Aula con Word Wall permanente + 11 tipos de materiales"
+    }
+  },
+
+  "siguiente_paso": "Ejecutar PM-2.4 — Writing — Task-Based (Sesión 3, genera E2 Writing 5 pts, integra TODOS los 5 arquetipos A-E)"
+}

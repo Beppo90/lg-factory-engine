@@ -10,10 +10,25 @@
 |-------|-------|
 | **Código** | PM-3.2 |
 | **Nombre** | Playbook Build-Out — Step by Step |
+| **Versión** | 2.5 |
+| **Last Verified** | 2026-04-20 |
 | **Destinatario** | Instructor (documento interno, NO para el aprendiz) |
-| **Función** | Expandir UNA sesión del Playbook Outline (PM-3.1) a un plan de clase detallado, minuto a minuto, con Teacher Talk completo, answer keys, notas de facilitación y diferenciación |
+| **Función** | Expandir UNA sesión del Playbook Outline (PM-3.1) a un plan de clase detallado, minuto a minuto, con Teacher Talk completo, answer keys, notas de facilitación, diferenciación **y propagación obligatoria de las estrategias didácticas definidas en PM-3.1 §11.2** |
 | **Analogía** | Si PM-3.1 es el guion de rodaje (qué escenas se filman cada día), PM-3.2 es el storyboard completo (cada toma, cada ángulo, cada línea de diálogo) |
 | **Granularidad** | Se genera UNA sesión por ejecución. Para una guía de 8 sesiones, se ejecuta PM-3.2 ocho veces |
+| **Phase** | 3 |
+| **Status** | mandatory |
+| **Confirmation Required** | false |
+| **Depends On** | [PM-3.1] |
+| **Feeds Into** | [PM-3.3, PM-3.4, PM-3.6, PM-4.1] |
+| **Output JSON contract** | `pm-3-2-sX.json` — ver §"Required Output Schema (v2.5)" abajo |
+
+---
+
+## CAMBIO v2.0 — DE OPCIONAL A MANDATORIO
+
+> [!info] Cambio v2.0 (2026-04-13)
+> PM-3.2 era opcional en v1.x (requería confirmación C-5). A partir de v2.0, el Playbook Build-Out es **mandatorio** para todas las sesiones. Proporciona el detalle necesario para que el instructor implemente la guía sesión por sesión con coherencia y profundidad pedagógica.
 
 ---
 
@@ -30,6 +45,7 @@ Este prompt necesita DOS fuentes:
 | Bloques y tiempos preliminares (SET-UP / WHILE / WRAP-UP) | PM-3.1 (Mapa detallado) |
 | Trabajo autónomo asignado | PM-3.1 (Mapa de trabajo autónomo) |
 | Logistics Box de la sesión | PM-3.1 |
+| **Pedagogical strategy block (v2.5 mandatory)** — `momento_sena`, `estrategia`, `justificacion`, `tecnicas[]` de esta sesión | **PM-3.1 §11.2 → `pm-3-1.json.sessions[i].logistics_box`** |
 
 **Fuente B — El contenido real de los worksheets:**
 
@@ -38,7 +54,7 @@ Este prompt necesita DOS fuentes:
 | Contenido completo de cada worksheet referenciado | PM-2.x (Producción Fase 2) |
 | Texto ancla de Reading (si aplica en esta sesión) | PM-2.3 |
 | Script de Listening (si aplica en esta sesión) | PM-2.6 |
-| Vocabulario, pronunciación, gramática (según sesión) | PM-2.5, PM-2.7, PM-2.10 |
+| Vocabulario y gramática (según sesión) | PM-2.5, PM-2.10 (pronunciación integrada como scaffolding en PM-2.8 — PM-2.7 deprecado en v2.0) |
 | Writing task y Speaking simulation (según sesión) | PM-2.4, PM-2.8 |
 | Language Functions (material transversal) | PM-2.9 |
 | Final Mission (si es sesión integradora) | PM-3.5 |
@@ -64,6 +80,94 @@ Que contiene:
 8. **Answer Key Consolidado** — todas las respuestas correctas de la sesión en un solo lugar
 9. **Differentiation Notes** — ajustes para aprendices rápidos y aprendices que necesitan más apoyo
 10. **Instructor Self-Check** — 5 preguntas de autoevaluación post-sesión
+
+Adicionalmente, PM-3.2 emite un **artefacto JSON estructurado** `pm-3-2-sX.json` (donde `X` ∈ 1..8) que sirve de contrato para los generadores de docx y para validadores río abajo (PM-2.11 Check 14). El schema obligatorio vive en la siguiente sección.
+
+---
+
+## REQUIRED OUTPUT SCHEMA (v2.5)
+
+> [!important] Propagación de estrategias didácticas — obligatoria desde v2.5
+> Cada `pm-3-2-sX.json` DEBE incluir los campos pedagógicos heredados de PM-3.1 §11.2. Sin estos campos, el Build-Out no es válido: PM-2.11 Check 14 falla y el pipeline se detiene antes de Fase 4.
+>
+> **Historia:** hasta v2.4, estos campos se inyectaban via script ad-hoc (`pm-3-2-estrategias-patch.js`) ejecutado manualmente después de generar el Build-Out. En los runs DIESEL-2026-04-15 y 04-18 el patch se ejecutó y la guía quedó completa; en DIESEL-2026-04-19 el patch NO corrió y la guía quedó huérfana de estrategias. Desde v2.5 el contrato es parte del prompt maestro — no requiere script externo.
+
+**Schema mínimo obligatorio de `pm-3-2-sX.json`:**
+
+```json
+{
+  "run_id": "DIESEL-2026-04-15-G1",
+  "pm_id": "PM-3.2",
+  "session_number": 3,
+  "session_name": "Tuning In",
+
+  "momento_sena": "3.3 — Apropiación",
+  "estrategia_didactica": "Aprendizaje Basado en Tareas (TBLT) + Listening Comprehension Scaffolded",
+  "justificacion_didactica": "En esta sesión el aprendiz transita de input léxico a comprensión auditiva guiada. La secuencia TBLT permite…",
+
+  "logistics_box": {
+    "momento_sena":  "3.3 — Apropiación",
+    "estrategia":    "Aprendizaje Basado en Tareas",
+    "justificacion": "…",
+    "tecnicas": [
+      { "bloque": "A", "tecnica": "Pre-listening con activación de vocabulario" },
+      { "bloque": "B", "tecnica": "Listening for gist — primera escucha" },
+      { "bloque": "C", "tecnica": "Listening for detail — segunda escucha con matriz" },
+      { "bloque": "D", "tecnica": "Post-listening — transferencia a diálogo propio" }
+    ]
+  },
+
+  "while_a": {
+    "name": "Pre-Reading Toolbelt",
+    "duration_min": 20,
+    "tecnica_didactica": "Pre-listening con activación de vocabulario",
+    "teacher_talk": "…",
+    "answer_key": {}
+  },
+  "while_b": {
+    "name": "…",
+    "tecnica_didactica": "Listening for gist — primera escucha",
+    "…": "…"
+  },
+  "while_c": { "tecnica_didactica": "Listening for detail — segunda escucha con matriz", "…": "…" },
+  "while_d": { "tecnica_didactica": "Post-listening — transferencia a diálogo propio", "…": "…" },
+  /* while_e opcional si la sesión tiene 5 bloques */
+
+  "pm0_protocol": { /* ver PM-0 §9 */ },
+
+  "set_up":   { "…": "…" },
+  "wrap_up":  { "…": "…" },
+  "materials_checklist": [ "…" ],
+  "differentiation_notes": { "fast_finishers": [], "more_support": [] }
+}
+```
+
+**Reglas duras del schema:**
+
+1. `momento_sena` es obligatorio a nivel raíz Y duplicado dentro de `logistics_box.momento_sena` (el duplicado garantiza que el renderer docx funcione con cualquier camino de lectura).
+2. `estrategia_didactica` es obligatorio a nivel raíz.
+3. `justificacion_didactica` es obligatorio a nivel raíz y debe tener ≥ 40 palabras (narrativa pedagógica real, no placeholder).
+4. `logistics_box.tecnicas[]` contiene una entrada por cada bloque WHILE activo de la sesión. Cada entrada tiene `bloque` (letra A–E) y `tecnica` (texto ≥ 6 palabras).
+5. Cada `while_*.tecnica_didactica` (nivel bloque) debe coincidir literalmente con el valor correspondiente en `logistics_box.tecnicas[].tecnica` que tenga el mismo `bloque`. Esto es el enlace verificable que PM-2.11 Check 14 usa para validar propagación.
+6. Valores permitidos de `momento_sena`: `"3.1 — Reflexión Inicial"`, `"3.2 — Contextualización"`, `"3.3 — Apropiación"`, `"3.4 — Transferencia"`, `"Evaluación"` (sólo S6).
+7. Valores permitidos de `estrategia_didactica`: ver lista cerrada en PM-3.1 §11.2 (ABP, ABT/TBLT, Aprendizaje Colaborativo, Simulación, Juego de Roles, CLIL, CBL, Evaluación Formativa Integrada, etc.). El valor exacto debe salir de `pm-3-1.json.sessions[i].logistics_box.estrategia`.
+8. Valores de `tecnica` por bloque: texto libre descriptivo, pero debe corresponder a una técnica de la **taxonomía canónica en PM-3.1 §11.4** o ser una derivación documentada.
+
+**Enlace de verdad:** el valor de los campos pedagógicos se hereda de `pm-3-1.json` — PM-3.2 NO los inventa. Si `pm-3-1.json` no los tiene, PM-3.2 no puede ejecutarse correctamente; detener el pipeline y regresar a PM-3.1 para completar §11.2.
+
+### Extensión v2.6 — Cross-reference con `pm0_alignment_by_session`
+
+Desde v2.6, PM-3.2 DEBE además poblar `pm0_protocol` en cada `pm-3-2-sX.json` de forma consistente con `pm-3-1.json.pm0_alignment_by_session[i]` (i = índice de sesión 0..7):
+
+**Reglas duras v2.6:**
+
+9. `pm-3-2-sX.json.pm0_protocol.grammar_groups.{intro|consolida|aplica}` debe ser **subconjunto o igual** a `pm-3-1.json.pm0_alignment_by_session[X-1].grammar_groups_active.{intro|consolida|aplica}`. No pueden aparecer grupos en el protocol que no estén pre-declarados en el alignment.
+10. `pm-3-2-sX.json.pm0_protocol.l1_management.target_percentage` debe coincidir con `pm0_alignment_by_session[X-1].l1_percentage_target`.
+11. `pm-3-2-sX.json.pm0_protocol.success_vocabulary.target_words` debe ser subconjunto de `pm0_alignment_by_session[X-1].success_vocabulary_focus.terminos`.
+
+**Check 14 extendido v2.6:** PM-2.11 Check 14 ahora valida no solo propagación de estrategias (bloques A-E) sino también cross-reference PM-0 (reglas 9-11 arriba). Fallo → `overall_passed = false` → bloquea Fase 4.
+
+**Script canónico:** `pm-3-2-pm0-propagate.js` (promovido de extensión local MGV a canon v2.6).
 
 ---
 
@@ -371,6 +475,7 @@ Genera 5 preguntas de autoevaluación post-sesión:
 - MÍNIMO 2 facilitation notes por bloque del WHILE
 - MÍNIMO 2 formative checkpoints por sesión
 - BREAK obligatorio en sesiones ≥ 120 minutos
+- **v2.5 — Propagación pedagógica obligatoria:** El artefacto JSON `pm-3-2-sX.json` DEBE cumplir el schema declarado en §"Required Output Schema (v2.5)". Específicamente: leer `momento_sena`, `estrategia`, `justificacion` y `tecnicas[]` desde `pm-3-1.json.sessions[i].logistics_box` y copiarlos tanto al nivel raíz del JSON (`momento_sena`, `estrategia_didactica`, `justificacion_didactica`) como a cada `while_*.tecnica_didactica` por match de `bloque`. Si PM-3.1 no los provee, STOP y reportar al pipeline.
 ```
 
 ---
@@ -389,7 +494,14 @@ Genera 5 preguntas de autoevaluación post-sesión:
 
 ---
 
-## EJEMPLO DE EJECUCIÓN — ADSO, GUÍA 1, SESSION 3: TUNING IN
+## EJEMPLO DE EJECUCIÓN
+
+> [!warning] AVISO PARA EL LLM — Instancia específica de referencia
+> La sección siguiente es un **Ejemplo de referencia — ADSO G1: The Hardware Specialist (NO copiar para otros programas)**.
+> El programa (ADSO 228118), el universo narrativo (DevCore Solutions, Carlos Ramírez — Junior Developer), el vocabulario técnico (hardware de computador: CPU, RAM, SSD, HDMI, etc.) y los roles (Developer / IT Support) son **exclusivos de ese programa**.
+> Al ejecutar PM-3.2 para otro programa, **todos estos elementos deben derivarse del `program_context` específico**: el universo narrativo, los personajes y el vocabulario técnico definidos en PM-1.x y PM-1.2 del programa que se está diseñando.
+
+### ADSO, GUÍA 1, SESSION 3: TUNING IN
 
 **Input:**
 - Programa: ADSO (228118)
@@ -476,4 +588,5 @@ ADSO — GUÍA 1: The Hardware Specialist — Build-Out
 
 *PM-3.2: Playbook Build-Out — Step by Step*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
+*Versión 2.5 — 2026-04-20 (Required Output Schema: propagación de estrategias didácticas obligatoria)*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*

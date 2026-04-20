@@ -1,0 +1,220 @@
+{
+  "run_id": "MGV-2026-04-20",
+  "pm_code": "PM-1.1",
+  "pm_name": "Ruta Macrotemática (1:1 con RAPs pre-numerados)",
+  "generated_date": "2026-04-20",
+  "pipeline_version": "2.5.1",
+  "instructor": "Sergio Cortés Perdomo",
+
+  "programa": {
+    "codigo": "522309",
+    "nombre": "Desarrollo de Medios Gráficos Visuales",
+    "nivel_formacion": "Tecnológico"
+  },
+
+  "tipo": "Tecnológico",
+  "regla_bloques": "alineacion_1a1",
+  "regla_bloques_descripcion": "Los RAPs vienen pre-numerados en el diseño curricular SOFÍA (RAP 01–RAP 06). Aplica mapeo 1:1 (6 RAPs → 6 bloques = 6 guías). Regla documentada en DM v2.5.1 §10 PASO 1.",
+
+  "duracion_total_horas_estimadas": 360,
+  "sesiones_proyectadas_total": 48,
+  "sesiones_por_bloque": 8,
+  "horas_por_bloque": 60,
+  "total_guias": 6,
+
+  "competencia": {
+    "codigo": "240202501",
+    "enunciado": "INTERACTUAR EN LENGUA INGLESA DE FORMA ORAL Y ESCRITA DENTRO DE CONTEXTOS SOCIALES Y LABORALES SEGÚN LOS CRITERIOS ESTABLECIDOS POR EL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS"
+  },
+
+  "raps": [
+    {"numero": "01", "codigo": "240202501", "enunciado": "COMPRENDER INFORMACIÓN SOBRE SITUACIONES COTIDIANAS Y LABORALES ACTUALES Y FUTURAS A TRAVÉS DE INTERACCIONES SOCIALES DE FORMA ORAL Y ESCRITA"},
+    {"numero": "02", "codigo": "240202501", "enunciado": "INTERCAMBIAR OPINIONES SOBRE SITUACIONES COTIDIANAS Y LABORALES ACTUALES, PASADAS Y FUTURAS EN CONTEXTOS SOCIALES ORALES Y ESCRITOS"},
+    {"numero": "03", "codigo": "240202501", "enunciado": "DISCUTIR SOBRE POSIBLES SOLUCIONES A PROBLEMAS DENTRO DE UN RANGO VARIADO DE CONTEXTOS SOCIALES Y LABORALES"},
+    {"numero": "04", "codigo": "240202501", "enunciado": "IMPLEMENTAR ACCIONES DE MEJORA RELACIONADAS CON EL USO DE EXPRESIONES, ESTRUCTURAS Y DESEMPEÑO SEGÚN LOS RESULTADOS DE APRENDIZAJE FORMULADOS"},
+    {"numero": "05", "codigo": "240202501", "enunciado": "PRESENTAR UN PROCESO PARA LA REALIZACIÓN DE UNA ACTIVIDAD EN SU QUEHACER LABORAL DE ACUERDO CON LOS PROCEDIMIENTOS ESTABLECIDOS DESDE SU PROGRAMA DE FORMACIÓN"},
+    {"numero": "06", "codigo": "240202501", "enunciado": "EXPLICAR LAS FUNCIONES DE SU OCUPACIÓN LABORAL USANDO EXPRESIONES DE ACUERDO AL NIVEL REQUERIDO POR EL PROGRAMA DE FORMACIÓN"}
+  ],
+
+  "sector_economico": "Industrias creativas y culturales",
+  "ambiente_productivo": "Estudio de diseño, agencia publicitaria, imprenta y casa de premedia, casa editorial (impresa y digital), laboratorio fotográfico, taller de ilustración, estudio multimedia para publicación digital interactiva",
+
+  "universo_tecnico": {
+    "dominios": [
+      {
+        "nombre": "Diagramación y Publicación Editorial",
+        "temas": ["Fundamentos y principios de diagramación (columnas, folios, jerarquías tipográficas, retículas)", "Contenido y tipos de publicaciones editoriales (revista, libro, cartilla, brochure, boletín, plegado)", "Proceso de maquetación (boceto, derrotero, pauta, machote, imposición)", "Tipografía (historia, clasificación, anatomía, composición)", "Sustratos y formatos de archivo", "Software de diagramación (páginas maestras, estilos, bibliotecas)", "Revisión de archivos (ortografía, flujos, sangrías, sobreimpresión, trapping, perfiles)", "Imposición y montaje", "Premedia impresa y digital"]
+      },
+      {
+        "nombre": "Imagen Digital y Fotografía",
+        "temas": ["Dispositivos de captura y salida", "Fotografía digital (historia, composición, planos, encuadre, profundidad de campo)", "Gestión de color (modelos, espacios, perfiles, gamut)", "Imagen digital (tipos, formatos, resolución, profundidad de color)", "Captura fotográfica (ISO, lentes, exposición, prioridad apertura/velocidad, iluminación)", "Revelado digital y software especializado", "Retoque fotográfico (técnicas, procesos, tendencias)", "Edición de imagen (fotomontaje, composición)", "Ilustración (fases, clasificación, técnicas)"]
+      },
+      {
+        "nombre": "Proyecto de Diseño y Comunicación Visual",
+        "temas": ["Brief (definición, finalidad, elementos)", "Técnicas de comunicación asertiva verbal/escrita", "Gestión de proyectos de diseño (fases, actividades, recursos, seguimiento)", "Historia del arte (periodos, exponentes, tendencias)", "Diseño gráfico (historia, clasificación, tendencias)", "Creatividad e innovación", "Diseño básico (composición, gramática del lenguaje visual, equilibrio, 2D/3D)", "Teoría de color (aditiva/sustractiva, armonías, psicología)", "Comunicación visual (semiótica, sintaxis de la imagen)", "Formatos y productos gráficos (editoriales y publicomerciales)", "Imagen corporativa y diseño de marca", "Empaques y propiedad intelectual", "Estudio de mercado y campaña", "Producción gráfica (proceso, acabados, distribución)"]
+      },
+      {
+        "nombre": "Publicación Digital Interactiva",
+        "temas": ["Tipos de publicación digital (libros, revistas, presentaciones, e-cards, aplicaciones)", "Arquitectura de la información (árbol de contenidos, navegación)", "Formatos para publicaciones digitales (PDF, EPUB, folios, SWF, KDP)", "Dispositivos de salida (tablets, smartphones, lectores de ebooks, smart TV)", "Plataformas de publicación", "Software especializado para publicación digital", "Elementos interactivos (hipervínculos, anclas, botones)", "Elementos multimedia (animaciones, videos, sliders)", "EPUB (estructura HTML5, CSS, JavaScript, metadatos)", "Maquetación fija y adaptable"]
+      }
+    ],
+    "total_areas_curriculares": 13
+  },
+
+  "bloques": [
+    {
+      "numero": 1,
+      "rap_origen": "01",
+      "nombre_esp": "The Visual Communicator",
+      "nombre_espanol": "El Comunicador Visual",
+      "tema_tecnico_principal": "Fundamentos de diseño básico y comunicación visual: teoría del color, gramática del lenguaje visual, semiótica, formatos y productos gráficos básicos",
+      "universo_tecnico_guia": "Diseño básico (elementos conceptuales, visuales, de relación), teoría del color (aditiva/sustractiva, psicología), comunicación visual (semiótica, sintaxis de la imagen), identificación de tipografías y formatos básicos",
+      "competencia_comunicativa": "Comprensión oral y escrita de información técnica simple sobre situaciones cotidianas y laborales del diseño gráfico: identificación de tipografías, colores, elementos visuales en documentación y briefings básicos",
+      "funciones_comunicativas": ["Greetings and introductions", "Describing everyday objects (design tools and materials)", "Giving and understanding personal information", "Simple descriptions of visual elements", "Understanding basic workshop instructions"],
+      "justificacion_pedagogica": "Este bloque es fundamento absoluto: sin vocabulario básico visual y sin comprensión de instrucciones simples, el aprendiz no puede recibir un brief ni participar en un taller. Conecta la entrada al programa (A1.1, lenguaje cotidiano) con el universo gráfico (color, tipografía, composición). Antecedente de todo el programa; consecuente del ingreso al Tecnológico.",
+      "nivel_cefr": "A1.1",
+      "orden_pedagogico": 1,
+      "dominio_tecnico_principal": "Proyecto de Diseño y Comunicación Visual",
+      "producto_esperado_guia": "Mini-portfolio de identificación visual: mood board bilingüe donde el aprendiz identifica tipografías, colores, estilos y elementos visuales de referencias reales, con descripciones simples en inglés."
+    },
+    {
+      "numero": 2,
+      "rap_origen": "02",
+      "nombre_esp": "The Client Whisperer",
+      "nombre_espanol": "El Intérprete del Cliente",
+      "tema_tecnico_principal": "Brief del cliente, historia del arte y tendencias: conceptualización del proyecto de diseño a través de intercambio de opiniones",
+      "universo_tecnico_guia": "Brief (definición, finalidad, elementos), técnicas de comunicación asertiva, historia del arte (periodos, exponentes, incidencia en el diseño), tendencias actuales, creatividad e innovación, requerimientos comunicativos del proyecto",
+      "competencia_comunicativa": "Intercambio de opiniones orales y escritas sobre tendencias y referencias del diseño: preguntar y responder sobre gustos, preferencias, experiencias pasadas con referentes, y planes futuros de un proyecto",
+      "funciones_comunicativas": ["Expressing likes/dislikes and preferences", "Asking for and giving opinions", "Talking about past experiences (simple past)", "Talking about future plans (going to / will)", "Comparing styles and periods", "Agreeing and disagreeing politely"],
+      "justificacion_pedagogica": "Después de comprender (RAP 01), el aprendiz debe interactuar: aquí aprende a dialogar con el cliente durante el brief, a opinar sobre referencias y a planear propuestas. Conecta con G1 (vocabulario visual) y proyecta hacia G3 (solución de problemas). Vive el primer momento real de proyecto: el brief.",
+      "nivel_cefr": "A1.2",
+      "orden_pedagogico": 2,
+      "dominio_tecnico_principal": "Proyecto de Diseño y Comunicación Visual",
+      "producto_esperado_guia": "Brief comentado bilingüe + transcripción simulada de reunión cliente-diseñador con intercambio de opiniones sobre referencias históricas y tendencias."
+    },
+    {
+      "numero": 3,
+      "rap_origen": "03",
+      "nombre_esp": "The Design Troubleshooter",
+      "nombre_espanol": "El Solucionador de Problemas de Diseño",
+      "tema_tecnico_principal": "Diagramación y resolución de problemas técnicos: retícula, tipografía, composición editorial y detección de errores",
+      "universo_tecnico_guia": "Fundamentos de diagramación (columnas, folios, jerarquías, retículas), tipografía (clasificación, anatomía, composición), maquetación (boceto, derrotero, machote), publicaciones editoriales (revista, libro, brochure), software de diagramación básico, detección de errores técnicos y de diseño",
+      "competencia_comunicativa": "Discusión oral y escrita sobre problemas técnicos en archivos de diagramación: identificar, describir y debatir soluciones alternativas usando lenguaje modal (should/could/might) y comparativos",
+      "funciones_comunicativas": ["Identifying and describing problems", "Proposing solutions (I think we should…, Why don't we…)", "Comparing alternatives (better/worse, more/less)", "Using modals for suggestions and possibility", "Agreeing with or refuting proposals", "Asking for clarification (What do you mean by…?)"],
+      "justificacion_pedagogica": "El aprendiz ya escucha y opina; ahora debe debatir soluciones técnicas reales (errores tipográficos, problemas de retícula, inconsistencias de estilo). Esta guía vive en el corazón del oficio editorial. Antecedente: brief y conceptualización. Consecuente: implementar las mejoras (G4).",
+      "nivel_cefr": "A1.3",
+      "orden_pedagogico": 3,
+      "dominio_tecnico_principal": "Diagramación y Publicación Editorial",
+      "producto_esperado_guia": "Análisis de pieza editorial con errores (caso real) + reporte bilingüe de problemas identificados y propuesta de solución discutida en grupo."
+    },
+    {
+      "numero": 4,
+      "rap_origen": "04",
+      "nombre_esp": "The Quality Fixer",
+      "nombre_espanol": "El Implementador de Mejoras",
+      "tema_tecnico_principal": "Revisión y corrección de archivos: gestión de color, retoque fotográfico, fotomontaje, sobreimpresión, trapping, perfiles y acoplamientos",
+      "universo_tecnico_guia": "Revisión de archivos (ortografía, flujos de texto, sangrías, sobreimpresión, trapping, perfiles), gestión de color (modelos, espacios, perfiles, gamut), imagen digital (resolución, profundidad), retoque fotográfico (técnicas, procesos), edición de imagen (fotomontaje, composición), acciones correctivas iterativas",
+      "competencia_comunicativa": "Implementación de acciones de mejora sobre retroalimentación recibida: dar y recibir feedback técnico, auto-corrección lingüística y técnica, expresión de procesos iterativos de mejora",
+      "funciones_comunicativas": ["Giving and receiving constructive feedback", "Describing changes and corrections (I changed…, I fixed…)", "Expressing cause and effect (because, so, therefore)", "Self-correcting and paraphrasing", "Reporting improvements (Before… Now…)", "Using present perfect for completed actions (I have corrected…)"],
+      "justificacion_pedagogica": "La segunda mitad del RAP 04 del SENA es específicamente metacognitiva: implementar mejoras lingüísticas Y técnicas con base en feedback. Aquí el aprendiz ajusta su desempeño iterativamente, igual que ajusta un archivo técnico. Es el puente entre apropiación (G1–G3) y producción autónoma (G5–G6).",
+      "nivel_cefr": "A2.0",
+      "orden_pedagogico": 4,
+      "dominio_tecnico_principal": "Imagen Digital y Fotografía",
+      "producto_esperado_guia": "Archivo corregido (imagen retocada + archivo diagramado con gestión de color aplicada) + bitácora bilingüe de mejoras implementadas, con registro de feedback recibido y acciones tomadas."
+    },
+    {
+      "numero": 5,
+      "rap_origen": "05",
+      "nombre_esp": "The Process Presenter",
+      "nombre_espanol": "El Presentador de Procesos",
+      "tema_tecnico_principal": "Producción gráfica completa: proceso de diseño → premedia → medios de salida (impresos y digitales) → acabados → distribución",
+      "universo_tecnico_guia": "Producción gráfica (proceso completo), premedia (impresa y digital), imposición y montaje, formatos de archivos de salida, acabados, fotografía digital aplicada (captura con ISO, lentes, iluminación), revelado digital, empaquetado de archivos finales",
+      "competencia_comunicativa": "Presentación oral y escrita de un proceso de producción completo en contexto laboral profesional: secuenciación, voz pasiva técnica, vocabulario ocupacional especializado",
+      "funciones_comunicativas": ["Presenting a process step-by-step (First… Then… After that… Finally…)", "Using passive voice for technical descriptions (The file is exported…, The colors are calibrated…)", "Sequencing and time markers", "Explaining technical terms to a non-expert", "Answering questions about a process", "Summarizing and concluding a presentation"],
+      "justificacion_pedagogica": "Por primera vez el aprendiz presenta públicamente un proceso completo de su oficio. Sintetiza todo lo anterior (comprensión, opinión, discusión, mejora) en una presentación profesional. Antecedente: acciones de mejora dominadas. Consecuente: explicación de rol ocupacional integral (G6).",
+      "nivel_cefr": "A2.1",
+      "orden_pedagogico": 5,
+      "dominio_tecnico_principal": "Diagramación y Publicación Editorial (producción gráfica) + Imagen Digital",
+      "producto_esperado_guia": "Presentación bilingüe (oral grabada + apoyo visual) de un flujo de producción gráfica completo: desde la recepción del brief hasta la entrega al cliente, con vocabulario técnico y voz pasiva."
+    },
+    {
+      "numero": 6,
+      "rap_origen": "06",
+      "nombre_esp": "The Graphic Professional",
+      "nombre_espanol": "El Profesional Gráfico",
+      "tema_tecnico_principal": "Publicación digital interactiva y consolidación del perfil ocupacional: EPUB, multimedia, portfolio profesional, identidad ocupacional",
+      "universo_tecnico_guia": "Publicación digital (libros digitales, revistas, e-cards, aplicaciones), arquitectura de la información, formatos digitales (PDF, EPUB, SWF, KDP), dispositivos de salida, elementos interactivos (hipervínculos, anclas, botones), elementos multimedia (animaciones, videos, sliders), maquetación fija y adaptable, portfolio profesional integrado",
+      "competencia_comunicativa": "Explicación integral de las funciones de su ocupación laboral: descripción de responsabilidades, articulación del portfolio personal, narrativa profesional, entrevista ocupacional simulada",
+      "funciones_comunicativas": ["Describing job responsibilities (I'm responsible for…, My role involves…)", "Using present perfect for experience (I have worked on…, I have developed…)", "Expressing skills and qualifications (I am skilled at…, I can…)", "Narrating career path and aspirations", "Answering job interview questions", "Presenting a portfolio professionally"],
+      "justificacion_pedagogica": "Guía de consolidación ocupacional: el aprendiz se presenta al mundo laboral como profesional gráfico. El universo técnico (publicación digital interactiva) permite integrar todos los formatos anteriores en un portfolio digital propio. A2.1 se recicla con foco ocupacional — no se estira a A2.2 porque el eje es consolidación, no expansión gramatical.",
+      "nivel_cefr": "A2.1",
+      "orden_pedagogico": 6,
+      "dominio_tecnico_principal": "Publicación Digital Interactiva",
+      "producto_esperado_guia": "Portfolio profesional bilingüe (publicación digital interactiva EPUB o similar) + entrevista de trabajo simulada en inglés + pitch personal de 2 minutos."
+    }
+  ],
+
+  "proyecto_formativo_articulador": {
+    "nombre": "Portfolio Editorial Bilingüe — De Brief a Publicación Profesional",
+    "descripcion": "Las 6 guías conforman las fases secuenciales del ciclo completo de producción de un portfolio editorial bilingüe que el aprendiz puede mostrar al egresar. En G1 identifica el lenguaje visual y técnico básico; en G2 recibe y articula el brief del cliente; en G3 debate soluciones de diagramación; en G4 implementa mejoras iterativas con retroalimentación; en G5 presenta el proceso completo de producción gráfica; en G6 consolida su identidad ocupacional y construye una publicación digital interactiva que lo presenta como profesional gráfico en el mercado laboral.",
+    "entregable_macro": "Portfolio profesional bilingüe (digital interactivo + versión impresa) + pitch personal de 2 minutos para entrevistas laborales",
+    "conexion_g1_g6": "G1 input receptivo → G2 interacción básica → G3 discusión técnica → G4 mejora iterativa → G5 presentación de proceso → G6 consolidación ocupacional"
+  },
+
+  "cefr_progression": {
+    "rango": "A1.1 — A2.1",
+    "mapping": [
+      {"bloque": 1, "cefr": "A1.1", "razon": "Input básico + vocabulario visual fundamental"},
+      {"bloque": 2, "cefr": "A1.2", "razon": "Interacción con pasado/presente/futuro simples + opiniones"},
+      {"bloque": 3, "cefr": "A1.3", "razon": "Discusión con modales y comparativos"},
+      {"bloque": 4, "cefr": "A2.0", "razon": "Feedback iterativo + present perfect + procesos complejos"},
+      {"bloque": 5, "cefr": "A2.1", "razon": "Presentación formal + voz pasiva + vocabulario técnico ocupacional"},
+      {"bloque": 6, "cefr": "A2.1", "razon": "Consolidación ocupacional (mismo nivel A2.1 con foco en identidad profesional)"}
+    ]
+  },
+
+  "program_context": {
+    "diseño_curricular": "Desarrollo de Medios Gráficos Visuales — código 522309",
+    "proyecto_formativo_fase": "Portfolio Editorial Bilingüe — 6 fases secuenciales (G1 a G6)",
+    "codigo_competencia": "240202501",
+    "nombre_competencia": "INTERACTUAR EN LENGUA INGLESA DE FORMA ORAL Y ESCRITA DENTRO DE CONTEXTOS SOCIALES Y LABORALES SEGÚN LOS CRITERIOS ESTABLECIDOS POR EL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+    "codigo_rap": "240202501-01 a 240202501-06 (ramificación 1:1 con 6 bloques)",
+    "nombre_rap": "6 RAPs pre-numerados del diseño curricular SOFÍA (ver campo 'raps')",
+    "provided": true
+  },
+
+  "validacion_reglas_pm11": {
+    "regla_1_cantidad_bloques": "PASS — 6 bloques por regla alternativa 1:1 (Tecnológico con 6 RAPs pre-numerados)",
+    "regla_2_nombres_esp": "PASS — The Visual Communicator / The Client Whisperer / The Design Troubleshooter / The Quality Fixer / The Process Presenter / The Graphic Professional",
+    "regla_3_justificacion": "PASS — cada bloque incluye antecedente/consecuente + competencia ESP desarrollada",
+    "regla_4_secuencia_logica": "PASS — input → interacción → discusión → mejora → presentación → consolidación",
+    "regla_5_cefr_progresivo": "PASS — A1.1 → A1.2 → A1.3 → A2.0 → A2.1 → A2.1 (Opción A: consolidación en G6)",
+    "regla_6_cobertura": "PASS — los 13 temas curriculares cubiertos en los 4 dominios distribuidos entre los 6 bloques"
+  },
+
+  "pm0_anchors_ref": {
+    "archivo": "pm-0-context.json",
+    "descripcion": "PM-0 (CEFR Framework & FPI SENA Pedagogical Foundation) ha sido instanciado para este run ANTES de PM-1.2. Cada bloque/guía de este pm-1-1.json tiene su descriptor CEFR (§6), roadmap gramatical de los 17 grupos (§5.6, §9.2), política L1% por sesión (§9.1), shifts metodológicos (§8) y plantilla pm0_protocol (§9.3) pre-anclados. PM-1.2 y los PM-2.x DEBEN leer pm-0-context.json para tomar descriptores, grupos gramaticales activos, y vocabulario enfocado. Sin este anclaje, cualquier pm0_protocol generado en Fase 3 sería un patch retrospectivo, no un contrato pedagógico genuino.",
+    "vigencia": "pre-Fase-1.2",
+    "version_pm0": "1.0 (2026-04-18)",
+    "alcance_actual_pm0": "A1.1 — A1.2 (PM-0 §1.2). Para G3 (A1.3), G4 (A2.0), G5–G6 (A2.1) se aplican extrapolaciones documentadas en pm-0-context.json mientras se publica PM-0 v1.1.",
+    "campos_instanciados_en_pm0_context": [
+      "program_scope",
+      "pm0_section_mapping",
+      "cefr_descriptors_per_guide (6 guías)",
+      "grammar_roadmap.activation_mapping (17 grupos × 6 guías)",
+      "l1_policy_per_guide",
+      "methodological_shifts_per_guide",
+      "principios_aplicables (§5.1–§5.13)",
+      "traceability_checklist_ref (22 ítems §7)",
+      "pm0_protocol_template_per_guide (plantilla canónica)"
+    ],
+    "nota_grupo_17": "Group 17 (sector-specific open slot) instanciado para diseño gráfico: estructuras activadas en G3 (style expressions, technical specs at/in + dpi/CMYK, deadlines by + date) y G6 (role descriptions I'm responsible for…, experience I have worked on…, skills I can…)."
+  },
+
+  "siguiente_paso": {
+    "pm": "PM-1.2",
+    "input_a_pasar": "Bloque 1 (The Visual Communicator) — A1.1 — ANCLADO a pm-0-context.json (CEFR A1.1 §6, Groups 1–2 Intro §9.2, L1 30%→20% §9.1, shift didactic vs transmisivo §8)",
+    "output_esperado": "Scope & Sequence completo de G1 + 3 fuentes auténticas curadas + Columnas 1-5 GFPI-F-134 para RAP 01 + key_vocabulary alineado a A1.1 SUCCESS factors"
+  }
+}

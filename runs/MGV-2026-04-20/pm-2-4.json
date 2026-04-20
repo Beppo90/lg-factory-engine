@@ -1,0 +1,745 @@
+{
+  "pm_id": "PM-2.4",
+  "pm_name": "Writing Skills & Pragmatics — Task-Based",
+  "run_id": "MGV-2026-04-20",
+  "guide": "G1 — The Visual Communicator",
+  "program_code": "522309",
+  "program_name": "Desarrollo de Medios Gráficos Visuales",
+  "rap_id": "RAP-G1-522309",
+  "session": 3,
+  "phase_sena": "Apropiación",
+  "cefr_level": "A1.1",
+  "content_universe": "Pixel & Ink Studio — Andrés, Sophia (AD), Laura (SM). Bogotá, 6 meses de experiencia. Cliente: La Esquina Bakery (panadería de barrio, 20 años, audiencia familiar). Brief en tránsito: Andrés debe responder a Sophia por email confirmando decisiones de tipografía + color + entregables.",
+  "derived_from": [
+    "pm-1-2.json (G1 toolbelt 20 terms, functions F1-F5, CEFR A1.1 descriptors)",
+    "pm-2-0.json (Session 3 blueprint: 1.5h direct + 0.5h autonomous)",
+    "pm-2-3.json (Master Anchor Text — serif vs sans-serif article)",
+    "pm-0-context.json (§5 SUCCESS, §9.1 L1 20% S3, §9.2 Grammar max 2 Intro)"
+  ],
+
+  "pm0_anchor": {
+    "cefr_ceiling": "A1.1",
+    "grammar_session_3_intro": ["Gr2 pronouns/possessives/demonstratives", "Gr4 adjective position (pre-noun)"],
+    "grammar_session_3_consolidate": ["Gr1 be (recycled from S1-S2)", "Gr3 plurals + a/an (recycled from S2)"],
+    "grammar_session_3_apply": [],
+    "l1_percentage_s3": 20,
+    "feedback_mode_dominant": "Elicitation + Recast (focus on form during editing, meaning during production)",
+    "success_factors_applied": [
+      "Salience (chunks highlighted in color on Language Bank)",
+      "Use (immediate productive use — Andrés writes real email)",
+      "Connection (every chunk tied to Toolbelt from PM-2.3)",
+      "Context (authentic workplace scenario — client brief response)",
+      "Emotion (tied to Andrés's Monday panic relieved by structured template)",
+      "Spaced repetition (vocab recycled from S2 Reading + Vocab)",
+      "Synergy (Reading → Writing: same Toolbelt, same universe)"
+    ]
+  },
+
+  "universe_anchor": {
+    "protagonist_action_s3": "Andrés must write a Design Decision Email to Sophia confirming his choices for La Esquina Bakery: font family (serif — Playfair Display), color palette (warm — brown + cream), and logo concept (round seal with wheat icon). Email is the product of S3.",
+    "genre": "Professional Design Decision Email (To: AD / From: Junior / Re: Client Brief Response)",
+    "register": "Semi-formal professional (intern → art director internal email)",
+    "model_source": "Master Anchor Text genre extension — same vocabulary universe, different skill mode",
+    "integrates_with_s4": "Andrés will later READ a recorded voice note from Sophia responding to his email (PM-2.6 Listening)",
+    "word_count_target": "60-80 words (A1.1 ceiling)"
+  },
+
+  "bilingual_unified_header": {
+    "english": "WRITING WORKSHOP — You are Andrés. Sophia is waiting for your email. Turn your design decisions into words.",
+    "spanish_italics": "(Eres Andrés. Sophia espera tu email. Convierte tus decisiones de diseño en palabras.)",
+    "motivational_hook": "Tuesday morning, 9:00 AM. Coffee. Laptop. One email. You can do this."
+  },
+
+  "blueprint_model": {
+    "title": "📝 THE BLUEPRINT MODEL — Design Decision Email Anatomy",
+    "genre_analysis_of_master_anchor": "The Master Anchor Text (PM-2.3) taught you the CONCEPTS (serif vs sans-serif, warm vs cool). Now you use those concepts in a REAL professional genre: the internal design email.",
+    "move_structure": [
+      {
+        "move": "1. GREETING",
+        "example_from_universe": "Hi Sophia,",
+        "function": "Open contact (F1 — Greetings)",
+        "register_note": "First name + comma = semi-formal (same office, close colleague)"
+      },
+      {
+        "move": "2. CONTEXT",
+        "example_from_universe": "This is the brief for La Esquina Bakery.",
+        "function": "Orient reader (F2 — Give information)",
+        "grammar_target": "Demonstrative (this) + be + noun phrase (Gr2 + Gr1)"
+      },
+      {
+        "move": "3. DECISIONS",
+        "example_from_universe": "The font is Playfair Display. The colors are brown and cream. The logo is a round seal.",
+        "function": "Describe technical choices (F2 — Give information + F3 — Describe)",
+        "grammar_target": "Article + noun + be + descriptor (Gr3 + Gr1 + Gr4)"
+      },
+      {
+        "move": "4. RATIONALE (minimal)",
+        "example_from_universe": "The bakery is 20 years old. Warm colors are friendly.",
+        "function": "Justify choice (F4 — Express opinion, light scaffolding)",
+        "grammar_target": "Adjective position pre-noun (Gr4)"
+      },
+      {
+        "move": "5. CLOSING",
+        "example_from_universe": "Please review. Thanks, Andrés.",
+        "function": "Request + sign-off (F5 — Request politely)",
+        "register_note": "Please = polite marker. Thanks, + name = standard sign-off."
+      }
+    ],
+    "anti_model_warning": {
+      "label": "⚠️ AVOID",
+      "bad_example": "Hey!! so the font is like, you know, the old-style one?? colors are yellow-brown-ish idk. peace ✌️",
+      "why_it_fails": "Informal slang + vague terms + no concrete decisions + emoji. This is a chat message, not a design email.",
+      "spanish": "(Evita: lenguaje informal, términos vagos, sin decisiones concretas.)"
+    }
+  },
+
+  "language_bank": {
+    "title": "🔧 LANGUAGE BANK — 8 Reusable Chunks",
+    "instruction": "Copy these into your email. Change ONE word to fit your decision.",
+    "spanish": "(Copia estos bloques en tu email. Cambia UNA palabra para adaptarlos a tu decisión.)",
+    "chunks": [
+      {
+        "number": 1,
+        "chunk": "Hi [Name],",
+        "function": "Greeting (F1)",
+        "variation_example": "Hi Sophia,"
+      },
+      {
+        "number": 2,
+        "chunk": "This is the brief for [client].",
+        "function": "Context (F2)",
+        "grammar": "Gr2 demonstrative + Gr1 be",
+        "variation_example": "This is the brief for La Esquina Bakery."
+      },
+      {
+        "number": 3,
+        "chunk": "The font is [name].",
+        "function": "Decision (F2)",
+        "grammar": "Gr3 article + Gr1 be",
+        "variation_example": "The font is Playfair Display."
+      },
+      {
+        "number": 4,
+        "chunk": "The colors are [color1] and [color2].",
+        "function": "Decision (F2)",
+        "grammar": "Gr3 plural + Gr1 be",
+        "variation_example": "The colors are brown and cream."
+      },
+      {
+        "number": 5,
+        "chunk": "The logo is a [shape] [object].",
+        "function": "Decision (F3)",
+        "grammar": "Gr3 a/an + Gr4 adjective position",
+        "variation_example": "The logo is a round seal."
+      },
+      {
+        "number": 6,
+        "chunk": "My client is [description].",
+        "function": "Rationale (F4)",
+        "grammar": "Gr2 possessive + Gr1 be",
+        "variation_example": "My client is a family bakery."
+      },
+      {
+        "number": 7,
+        "chunk": "Warm/Cool colors are [adjective].",
+        "function": "Rationale (F4)",
+        "grammar": "Gr4 adjective position",
+        "variation_example": "Warm colors are friendly."
+      },
+      {
+        "number": 8,
+        "chunk": "Please review. Thanks, [your name].",
+        "function": "Closing (F5)",
+        "variation_example": "Please review. Thanks, Andrés."
+      }
+    ]
+  },
+
+  "archetypes_integrated": {
+    "policy": "ALL 5 archetypes A-E are documented with full PRE/DURING/POST. Instructor picks one flow per session. All flows produce E2 Writing (5 pts) — a complete Design Decision Email.",
+    "spanish": "(TODOS los 5 arquetipos están documentados. El instructor elige un flujo por sesión. Todos producen la misma evidencia E2.)",
+
+    "archetype_A_exploratory": {
+      "id": "A",
+      "name": "Exploratory Writing — Quickwrite → Expand",
+      "when_it_works": "When learners freeze at the blank page; when fluency matters more than accuracy.",
+      "fit_for_A1_1": "High — removes anxiety; ideal starting archetype for first writing task in the program.",
+      "total_minutes": 50,
+      "activities": [
+        {
+          "phase": "PRE-WRITING — Quickwrite Prompts (10 min)",
+          "instruction_bilingual": "Set a 5-minute timer. Write non-stop. No grammar worries. (*Cronómetro 5 min. Escribe sin parar. No te preocupes por la gramática.*)",
+          "prompts_3_options": [
+            "What are the colors and font for La Esquina Bakery?",
+            "Why are warm colors good for a bakery?",
+            "What is your logo? Describe it in simple words."
+          ],
+          "rule": "Minimum 40 words. Any word counts. Spanish words allowed IF you don't know the English."
+        },
+        {
+          "phase": "DURING WRITING — Generate 2 Quickwrites (20 min)",
+          "instruction_bilingual": "Write TWO short quickwrites on two different prompts. (*Escribe DOS quickwrites cortos sobre dos prompts diferentes.*)",
+          "structure": "Quickwrite 1: 5 min on Prompt 1. | Quickwrite 2: 5 min on Prompt 2. | 10 min: share both with partner; partner circles favorite sentence.",
+          "teacher_move": "Do NOT correct grammar. Encourage quantity. Circulate with supportive nods only."
+        },
+        {
+          "phase": "POST-WRITING — Select + Expand into Email (20 min)",
+          "instruction_bilingual": "Pick your best quickwrite. Turn it into a proper email using the Blueprint Model. (*Elige tu mejor quickwrite. Conviértelo en un email usando el Blueprint Model.*)",
+          "steps": [
+            "1. Read both quickwrites. Which has your best idea?",
+            "2. Use the Blueprint Model (5 moves) to restructure.",
+            "3. Apply Language Bank chunks (minimum 5 of 8).",
+            "4. Run the Auditor's Checklist before submitting."
+          ],
+          "evidence": "The expanded email = E2 Writing (5 pts)."
+        }
+      ]
+    },
+
+    "archetype_B_academic_formal": {
+      "id": "B",
+      "name": "Academic/Formal Writing — Mentor Text + Structured Email",
+      "when_it_works": "When the programa técnico demands professional output; when precision matters.",
+      "fit_for_A1_1": "Stretch — requires scaffolded sentence frames. Works with HEAVY support.",
+      "total_minutes": 50,
+      "activities": [
+        {
+          "phase": "PRE-WRITING — Mentor Text Analysis (15 min)",
+          "instruction_bilingual": "Read the sample email. Highlight the 5 moves. (*Lee el email modelo. Resalta los 5 movimientos.*)",
+          "mentor_text_sample": "Hi Sophia, | This is the brief for Café Luna. | The font is Montserrat. The colors are black and gold. The logo is a crescent moon. | The café is modern. Cool colors are elegant. | Please review. Thanks, Andrés.",
+          "analysis_questions": [
+            "1. Which sentences are the GREETING and CLOSING?",
+            "2. Which 3 sentences give DECISIONS?",
+            "3. Which sentence gives a RATIONALE (reason)?",
+            "4. What register is used? (formal / semi-formal / informal)"
+          ]
+        },
+        {
+          "phase": "DURING WRITING — Structured Production with Frames (20 min)",
+          "instruction_bilingual": "Write your email for La Esquina Bakery using EVERY sentence frame. (*Escribe tu email para La Esquina Bakery usando CADA marco de oración.*)",
+          "sentence_frames": [
+            "Hi _________,",
+            "This is the brief for _________.",
+            "The font is _________.",
+            "The colors are _________ and _________.",
+            "The logo is a _________ _________.",
+            "My client is _________.",
+            "_________ colors are _________.",
+            "Please review. Thanks, _________."
+          ],
+          "grammar_focus": "Article placement (Gr3) + adjective before noun (Gr4) + be conjugation (Gr1)."
+        },
+        {
+          "phase": "POST-WRITING — Peer Review with Rubric (15 min)",
+          "instruction_bilingual": "Exchange emails with a partner. Score with the rubric. Give 1 specific suggestion. (*Intercambia emails con un compañero. Puntúa con la rúbrica. Da 1 sugerencia específica.*)",
+          "peer_review_checklist": [
+            "□ All 5 moves present?",
+            "□ Minimum 5 Language Bank chunks used?",
+            "□ Font, colors, logo all named?",
+            "□ Register is semi-formal (not too informal)?",
+            "□ 60-80 words?"
+          ]
+        }
+      ]
+    },
+
+    "archetype_C_collaborative_tblt": {
+      "id": "C",
+      "name": "Collaborative TBLT — Team Email in Roles",
+      "when_it_works": "When negotiation of meaning matters; when the workplace is collaborative by nature (design studios ARE team environments).",
+      "fit_for_A1_1": "High — distributes cognitive load across team; perfect for first-time writers.",
+      "total_minutes": 50,
+      "activities": [
+        {
+          "phase": "PRE-WRITING — Scenario Briefing + Role Assignment (10 min)",
+          "instruction_bilingual": "You are the Pixel & Ink Studio team. Sophia needs ONE email from all of you. Assign roles. (*Ustedes son el equipo del estudio. Sophia necesita UN email de todos. Asignen roles.*)",
+          "scenario": "It's Tuesday. Sophia has a client call at 11 AM with La Esquina Bakery. She needs the brief response BEFORE the call.",
+          "roles_for_teams_of_3": [
+            {
+              "role": "DRAFTER (El Redactor)",
+              "responsibility": "Writes the email draft using Language Bank chunks.",
+              "spanish": "(Escribe el borrador usando los bloques del Language Bank.)"
+            },
+            {
+              "role": "EDITOR (El Editor)",
+              "responsibility": "Checks register and word count; smooths transitions.",
+              "spanish": "(Revisa el registro y el conteo de palabras; suaviza transiciones.)"
+            },
+            {
+              "role": "VERIFIER (El Verificador)",
+              "responsibility": "Runs the Auditor's Checklist; confirms 5 chunks + 5 moves.",
+              "spanish": "(Corre el Auditor's Checklist; confirma 5 chunks + 5 movimientos.)"
+            }
+          ]
+        },
+        {
+          "phase": "DURING WRITING — Collaborative Production on Shared Document (25 min)",
+          "instruction_bilingual": "Open Google Doc. Write together. Negotiate each choice aloud in English. (*Abran Google Doc. Escriban juntos. Negocien cada elección en voz alta en inglés.*)",
+          "negotiation_prompts": [
+            "Should we say 'brown' or 'dark yellow'?",
+            "Is 'friendly' a good rationale or too simple?",
+            "Do we need a second color or is one enough?",
+            "Is 'Please review' polite enough?"
+          ],
+          "output_format": "Single shared document; all 3 members type; Verifier reads aloud each sentence before it's final."
+        },
+        {
+          "phase": "POST-WRITING — Gallery Walk + Cross-Evaluation (15 min)",
+          "instruction_bilingual": "Each team tapes their email to the wall. Walk around. Vote for the strongest email. (*Cada equipo pega su email en la pared. Recorran. Voten por el email más fuerte.*)",
+          "evaluation_criteria": "Clearest decisions + best register + most natural chunks.",
+          "reflection": "1 minute: What did we negotiate? Why did we change that word?"
+        }
+      ]
+    },
+
+    "archetype_D_ai_mediated": {
+      "id": "D",
+      "name": "AI-Mediated Writing — Draft → AI-Check → Critical Edit",
+      "when_it_works": "When the programa técnico includes modern tools (MGV = digital design — AI is part of the workflow); when prompt literacy is a transferable competency.",
+      "fit_for_A1_1": "Stretch — requires tech access + strong teacher presence. Powerful if available.",
+      "total_minutes": 50,
+      "tech_required": "ChatGPT, Copilot, or Gemini (free tier) + laptops or phones",
+      "activities": [
+        {
+          "phase": "PRE-WRITING — Solo Draft WITHOUT AI (15 min)",
+          "instruction_bilingual": "Close all tabs. No AI yet. Write your email draft alone. (*Cierra todas las pestañas. Sin IA aún. Escribe tu borrador solo.*)",
+          "rule": "This first draft is YOURS. The AI will help LATER, not NOW. The goal is to see what YOU can do.",
+          "output": "Handwritten or typed draft, 60-80 words, 5 moves."
+        },
+        {
+          "phase": "DURING WRITING — Targeted AI Consultation (20 min)",
+          "instruction_bilingual": "Use the AI for ONE specific check only. (*Usa la IA para UN chequeo específico solamente.*)",
+          "prompt_literacy_templates": [
+            {
+              "goal": "Check grammar on ONE sentence",
+              "prompt_template": "I am a beginner English learner (A1). Is this sentence correct? If not, explain the error in simple words: [paste your sentence]",
+              "expected_interaction": "You accept or reject the AI correction + write WHY in your reflective journal."
+            },
+            {
+              "goal": "Get 3 options for closing",
+              "prompt_template": "I am writing a semi-formal email. Give me 3 polite ways to close: 'Please review. Thanks.' — are there alternatives at A1 level?",
+              "expected_interaction": "You pick ONE and justify in 1 sentence."
+            },
+            {
+              "goal": "Vocabulary check",
+              "prompt_template": "Is 'friendly' the right word to describe warm colors? Give 2 alternative A1-level words.",
+              "expected_interaction": "You pick word that best fits your bakery + explain why."
+            }
+          ],
+          "reflective_journal_prompts": [
+            "What did the AI suggest that I didn't think of?",
+            "What did the AI suggest that was WRONG or too advanced?",
+            "What did I keep from my original draft? Why?"
+          ]
+        },
+        {
+          "phase": "POST-WRITING — Final Human Edit + Critical Reflection (15 min)",
+          "instruction_bilingual": "The final email is YOURS. Compare solo draft vs AI-influenced version. Which moves are stronger? (*El email final es TUYO. Compara borrador solo vs versión con IA. ¿Qué movimientos son más fuertes?*)",
+          "critical_questions": [
+            "Did the AI help me learn or did I copy?",
+            "If I write another email next week, can I do it without AI now?",
+            "What's 1 chunk I learned from this interaction?"
+          ],
+          "deliverable": "Final email (student-owned) + 3-sentence reflective journal entry."
+        }
+      ]
+    },
+
+    "archetype_E_genre_based": {
+      "id": "E",
+      "name": "Genre-Based Writing — Analyze → Imitate → Transfer",
+      "when_it_works": "When the genre (professional email) is a lifelong transferable skill; when the learner needs to replicate the genre in many future contexts.",
+      "fit_for_A1_1": "High — builds genre awareness that compounds across sessions; ideal if program values transferable workplace genres.",
+      "total_minutes": 50,
+      "activities": [
+        {
+          "phase": "PRE-WRITING — Genre Analysis of 3 Email Samples (15 min)",
+          "instruction_bilingual": "Read these 3 emails. Fill the Genre Recipe chart. (*Lee estos 3 emails. Llena la receta del género.*)",
+          "sample_emails": [
+            {
+              "label": "Sample 1 — Café Luna",
+              "text": "Hi Sophia, | This is the brief for Café Luna. | The font is Montserrat. The colors are black and gold. The logo is a crescent moon. | The café is modern. Cool colors are elegant. | Please review. Thanks, Andrés."
+            },
+            {
+              "label": "Sample 2 — Nova Bookshop",
+              "text": "Hi Sophia, | This is the brief for Nova Bookshop. | The font is Garamond. The colors are navy and white. The logo is a flat book. | The bookshop is classic. Cool colors are calm. | Please review. Thanks, Andrés."
+            },
+            {
+              "label": "Sample 3 — GymStrong",
+              "text": "Hi Sophia, | This is the brief for GymStrong. | The font is Bebas Neue. The colors are red and black. The logo is a bold triangle. | The gym is energetic. Warm colors are strong. | Please review. Thanks, Andrés."
+            }
+          ],
+          "genre_recipe_chart": [
+            {"slot": "Greeting", "pattern": "Hi [Name],", "is_fixed": true},
+            {"slot": "Context", "pattern": "This is the brief for [Client].", "is_fixed": true},
+            {"slot": "Font Decision", "pattern": "The font is [Name].", "is_fixed": true},
+            {"slot": "Color Decision", "pattern": "The colors are [X] and [Y].", "is_fixed": true},
+            {"slot": "Logo Decision", "pattern": "The logo is a [shape] [object].", "is_fixed": true},
+            {"slot": "Rationale 1", "pattern": "The [business type] is [adjective].", "is_fixed": false},
+            {"slot": "Rationale 2", "pattern": "[Warm/Cool] colors are [adjective].", "is_fixed": false},
+            {"slot": "Closing", "pattern": "Please review. Thanks, [Name].", "is_fixed": true}
+          ]
+        },
+        {
+          "phase": "DURING WRITING — Produce Email Following the Recipe (20 min)",
+          "instruction_bilingual": "Write YOUR email for La Esquina Bakery. Hit all 8 recipe slots. (*Escribe TU email para La Esquina Bakery. Cubre los 8 slots de la receta.*)",
+          "scaffolding": "Check off each slot as you complete it. Compare your text to Sample 1, 2, 3.",
+          "peer_check": "Partner verifies all 8 slots are present + asks one 'recipe' question."
+        },
+        {
+          "phase": "POST-WRITING — Transfer Challenge (15 min)",
+          "instruction_bilingual": "Same recipe, NEW client. In 10 minutes: write the email for a client of YOUR choice. (*Misma receta, NUEVO cliente. En 10 min: escribe el email para un cliente de TU elección.*)",
+          "transfer_options": [
+            "Pizzería Italiana (italian restaurant, family)",
+            "Tech Startup (young audience, modern)",
+            "Flower Shop (wedding boutique, elegant)",
+            "Barbería Urbana (urban barber shop, bold)"
+          ],
+          "reflection": "Which parts of the recipe are FIXED (always the same)? Which are FREE (change per client)?",
+          "meta_goal": "Learner walks away knowing how to write ANY design decision email in the future — genre mastery achieved."
+        }
+      ]
+    }
+  },
+
+  "rotation_options_for_instructor": {
+    "policy": "Instructor picks ONE flow for the 50-minute block based on class energy, tech access, and course sequencing.",
+    "spanish": "(El instructor elige UN flujo para el bloque de 50 min según la energía del grupo, el acceso a tecnología y la secuencia del curso.)",
+    "flows": [
+      {
+        "flow_id": "FLOW-W1",
+        "name": "First-Time Writers (A1.1 default)",
+        "sequence": "Archetype A (Exploratory) → students write without fear → expand best quickwrite into email",
+        "best_for": "Groups with high writing anxiety; first writing task in the program",
+        "tech_needs": "Paper + pen only"
+      },
+      {
+        "flow_id": "FLOW-W2",
+        "name": "Formal-Professional Track",
+        "sequence": "Archetype B (Academic/Formal) → mentor text analysis → frames → peer review",
+        "best_for": "Groups that learn best with explicit models and structure",
+        "tech_needs": "Printed mentor text + rubric"
+      },
+      {
+        "flow_id": "FLOW-W3",
+        "name": "Team-Based Workplace Simulation",
+        "sequence": "Archetype C (Collaborative TBLT) → role assignment → Google Doc → gallery walk",
+        "best_for": "Classes that thrive in groups; distributes cognitive load across team",
+        "tech_needs": "Laptops + Google Docs OR paper poster per team"
+      },
+      {
+        "flow_id": "FLOW-W4",
+        "name": "Tech-Forward Prompt Literacy",
+        "sequence": "Archetype D (AI-Mediated) → solo draft → targeted AI consultation → critical edit + journal",
+        "best_for": "Programs where digital tools are part of professional practice (MGV native fit)",
+        "tech_needs": "Laptops/phones + ChatGPT or equivalent (free tier ok)"
+      },
+      {
+        "flow_id": "FLOW-W5",
+        "name": "Transferable Genre Mastery (Recommended for G1)",
+        "sequence": "Archetype E (Genre-Based) → 3 samples → recipe → produce → transfer to new client",
+        "best_for": "When the goal is a skill that transfers across future situations (design briefs are forever)",
+        "tech_needs": "Printed sample emails + recipe chart"
+      },
+      {
+        "flow_id": "FLOW-W6",
+        "name": "Maximalist Writing Rotation (Hybrid A+C+E)",
+        "sequence": "15min Quickwrite warmup (A) → 20min Team Email (C) → 15min Transfer to new client (E)",
+        "best_for": "Extended 90-min block (S3 stretched); mixes fluency + collaboration + transfer",
+        "tech_needs": "Paper + shared doc optional"
+      }
+    ],
+    "recommended_for_G1": "FLOW-W5 — Genre-Based delivers the most transferable skill for design students; writing design briefs is part of every future client interaction."
+  },
+
+  "auditors_checklist": {
+    "title": "📋 THE AUDITOR'S CHECKLIST — Self-Review Before Submitting",
+    "instruction_bilingual": "Before you hand in the email, check each box. (*Antes de entregar el email, marca cada casilla.*)",
+    "criteria": [
+      {"criterion": "5 moves present", "description": "Greeting + Context + Decisions + Rationale + Closing", "points": 1},
+      {"criterion": "Minimum 5 Language Bank chunks used", "description": "I copied at least 5 of the 8 chunks (with adaptations)", "points": 1},
+      {"criterion": "Font + 2 colors + logo shape named", "description": "Each technical decision is explicit", "points": 1},
+      {"criterion": "Semi-formal register", "description": "No slang, no emojis, no chat-style", "points": 1},
+      {"criterion": "60-80 words", "description": "Count before submitting — not too short, not too long", "points": 1}
+    ],
+    "self_score_key": "5/5 = Ready to submit | 4/5 = Fix 1 thing | 3/5 or less = Revisit one activity"
+  },
+
+  "rubric_visible_to_learner": {
+    "title": "📊 VISIBLE RUBRIC — E2 Writing (5 pts total)",
+    "instruction_bilingual": "This is how your instructor will grade the email. (*Así te calificará el instructor.*)",
+    "criteria": [
+      {
+        "criterion": "Format (5 moves)",
+        "points_max": 1,
+        "excellent": "All 5 moves present and in order",
+        "adequate": "4 of 5 moves present",
+        "incipient": "3 or fewer moves"
+      },
+      {
+        "criterion": "Grammar (Gr1 be + Gr2 pronouns/demos + Gr3 a/an + Gr4 adjective position)",
+        "points_max": 1.5,
+        "excellent": "All target structures used correctly",
+        "adequate": "Minor errors but message is clear",
+        "incipient": "Errors obscure meaning"
+      },
+      {
+        "criterion": "Vocabulary (Toolbelt use)",
+        "points_max": 1.5,
+        "excellent": "Font + color + shape + product terms all used accurately",
+        "adequate": "Most terms used; 1-2 minor mistakes",
+        "incipient": "Few Toolbelt terms or used incorrectly"
+      },
+      {
+        "criterion": "Clarity & Register",
+        "points_max": 1,
+        "excellent": "Semi-formal throughout; decisions are crystal clear",
+        "adequate": "Mostly semi-formal; decisions mostly clear",
+        "incipient": "Register inconsistent or decisions ambiguous"
+      }
+    ],
+    "total": 5,
+    "cuestionario_contribution": "5 items worth 1 pt each will appear in S6 Cuestionario Consolidado (Writing section)"
+  },
+
+  "tres_versiones": {
+    "apropiacion_s3": "E2 Writing Task — Design Decision Email (5 pts formal evidence with rubric)",
+    "evaluacion_s6": "5 items in Writing section of Cuestionario Consolidado (1 pt each, 5 pts total Writing)",
+    "autonomia_workbook": "REINFORCE: same chunks with new client. EXTEND: write response to an angry client (HOTS). PREPARE: read sample before S4 Listening."
+  },
+
+  "cuestionario_items_harvest_preview": {
+    "note": "Items generated here feed PM-4.2 Cuestionario S6 Writing section (5 items × 1 pt).",
+    "sample_items": [
+      {
+        "id": "W1",
+        "type": "gap_fill",
+        "stem": "Complete the email greeting: '____ Sophia,'",
+        "options": ["a) Hi", "b) Hello there!!", "c) Hey buddy", "d) To whom"],
+        "answer": "a",
+        "grammar_tested": "Gr2 greeting register"
+      },
+      {
+        "id": "W2",
+        "type": "article_choice",
+        "stem": "'The logo is ____ round seal.'",
+        "options": ["a) a", "b) an", "c) the", "d) —"],
+        "answer": "a",
+        "grammar_tested": "Gr3 a/an"
+      },
+      {
+        "id": "W3",
+        "type": "adjective_position",
+        "stem": "Which is correct?",
+        "options": ["a) colors warm", "b) warm colors", "c) the warm the colors", "d) warms color"],
+        "answer": "b",
+        "grammar_tested": "Gr4 adjective position"
+      },
+      {
+        "id": "W4",
+        "type": "genre_match",
+        "stem": "Which sentence gives a DECISION (not rationale)?",
+        "options": ["a) My client is modern.", "b) Warm colors are friendly.", "c) The font is Playfair Display.", "d) The bakery is 20 years old."],
+        "answer": "c"
+      },
+      {
+        "id": "W5",
+        "type": "register",
+        "stem": "Which closing fits a semi-formal email?",
+        "options": ["a) Peace out ✌️", "b) Please review. Thanks, Andrés.", "c) LOL bye", "d) Later!"],
+        "answer": "b"
+      }
+    ]
+  },
+
+  "pm0_protocol_session_level": {
+    "session": 3,
+    "grammar_groups": {
+      "intro": ["Gr2 pronouns/possessives/demonstratives", "Gr4 adjective position pre-noun"],
+      "consolidate": ["Gr1 be", "Gr3 plurals + a/an"],
+      "apply": []
+    },
+    "grammar_carga_validation": "PASS — 2 Intro ≤ 2 max per PM-0 §9.2",
+    "feedback": {
+      "dominant_mode": "Elicitation during production + Recast during editing",
+      "accuracy_techniques": [
+        "Frame-by-frame error highlighting on peer review",
+        "Sentence-level self-correction (Auditor's Checklist)",
+        "Targeted recast on adjective position (Gr4) and article (Gr3) errors"
+      ],
+      "fluency_techniques": [
+        "Quickwrite (Archetype A) — no interruption during writing",
+        "Collaborative negotiation (Archetype C) — meaning-first, form-later",
+        "Reflective journal (Archetype D) — fluency of thought about process"
+      ]
+    },
+    "l1_management": {
+      "percentage": 20,
+      "english_zone": "Activated during DURING WRITING phases; allowed during PRE (brainstorming) and POST (reflection)",
+      "legitimate_L1_uses": [
+        "Clarifying rubric criteria when learner freezes",
+        "Negotiating meaning in Archetype C role assignments",
+        "Reflecting in Archetype D journal (journal can be bilingual)"
+      ],
+      "reduction_strategy": "S3 is 20% → S4 will drop to 15% as speaking picks up"
+    },
+    "stress_pronunciation": {
+      "focus_words_from_writing": ["FONT (1 syllable, short ŏ)", "COL-or (stress on first syllable)", "DE-sign (stress on second syllable)", "BRIEF (1 syllable, long ē)", "CLI-ent (stress on first syllable)"],
+      "physical_techniques": [
+        "Tap desk on stressed syllable while reading email aloud",
+        "Whisper-loud-whisper for word-level practice",
+        "Mark stress with a dot above the vowel in the final draft"
+      ],
+      "board_marking": "Write 5 focus words; mark stressed syllable with dot; students copy into their email draft before reading"
+    },
+    "success_vocabulary": {
+      "target_terms": ["font", "serif", "color", "warm", "cool", "logo", "brief", "client", "bold", "layer"],
+      "factors_applied": {
+        "Salience": "Language Bank chunks color-coded on worksheet",
+        "Use": "Immediate productive use in email",
+        "Connection": "Every term tied to Toolbelt from PM-2.3",
+        "Context": "Workplace scenario (Pixel & Ink Studio)",
+        "Emotion": "Tied to Andrés's relief once email is sent",
+        "Spaced_repetition": "Terms recycled from S2 Reading + S2 Vocabulary",
+        "Synergy": "Reading → Writing → Vocabulary Word Wall — same universe"
+      }
+    }
+  },
+
+  "integration_all_archetypes_policy": {
+    "rationale": "Per Sergio's directive (2026-04-20): 'Quiero todos los arquetipos para todos los PM.' All 5 archetypes are documented. Instructor rotates flows across cohorts or sessions.",
+    "fit_analysis_for_A1_1": {
+      "highest_fit": ["A (Exploratory) — removes anxiety", "C (Collaborative TBLT) — distributes load", "E (Genre-Based) — transferable"],
+      "stretch_with_scaffolding": ["B (Academic/Formal) — needs frames", "D (AI-Mediated) — needs tech + prompt literacy"],
+      "tech_dependent": ["D (AI-Mediated)"]
+    },
+    "recommended_default_for_G1": "FLOW-W5 (Genre-Based) — because learning the design decision email genre is a lifelong ESP skill for MGV graduates.",
+    "workbook_use": "The 5 archetypes also populate PM-3.4 Workbook: 1 archetype per Workbook chapter extension activity."
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.4",
+    "pm_name": "Writing — Task-Based",
+    "session": 3,
+    "phase_sena": "Apropiación",
+    "rap_id": "RAP-G1-522309",
+    "cefr_level": "A1.1",
+    "activities": [
+      {
+        "number": 1,
+        "type": "procedimental",
+        "statement": "Redactar un email de decisión de diseño (60-80 palabras) para un cliente del universo Pixel & Ink Studio, aplicando los 5 movimientos del género (greeting, context, decisions, rationale, closing), mínimo 5 chunks del Language Bank y las estructuras gramaticales Gr1-Gr4.",
+        "didactic_strategy": "Aprendizaje basado en tareas (TBLT)",
+        "didactic_technique": "Taller de escritura con andamiaje por género",
+        "archetype_options": ["A", "B", "C", "D", "E"]
+      },
+      {
+        "number": 2,
+        "type": "procedimental",
+        "statement": "Revisar y editar el email usando el Auditor's Checklist de 5 criterios y la rúbrica visible, aplicando auto-corrección y (si el arquetipo es C) peer review para asegurar registro semi-formal y precisión en estructuras gramaticales.",
+        "didactic_strategy": "Evaluación formativa + Aprendizaje colaborativo",
+        "didactic_technique": "Análisis de casos + Revisión por pares"
+      }
+    ],
+    "hours": {
+      "direct": 1.5,
+      "autonomous": 0.5,
+      "source": "pm-2-0.json S3 allocation"
+    },
+    "evidence": {
+      "generates_evidence": true,
+      "type": "Producto",
+      "code": "E2",
+      "description": "El aprendiz produce un email de decisión de diseño de 60-80 palabras en inglés técnico, demostrando control de Gr1 (be), Gr2 (pronouns/demos), Gr3 (a/an), Gr4 (adjective position), vocabulario del Toolbelt (10 términos mínimo) y organización por 5 movimientos del género.",
+      "evaluation_technique": "Verificación del producto",
+      "instrument_number": 2,
+      "instrument_type": "Lista de verificación / Rúbrica analítica",
+      "points": 5
+    },
+    "environment": {
+      "type": "Aula + Virtual (híbrido según arquetipo elegido)",
+      "materials_by_archetype": {
+        "A_exploratory": ["Cuaderno + lápiz", "Cronómetro", "Hoja de prompts"],
+        "B_academic_formal": ["Mentor text impreso", "Sentence frames hoja", "Rúbrica visible"],
+        "C_collaborative_tblt": ["Laptops con Google Docs O papel de cartel por equipo", "Tarjetas de roles"],
+        "D_ai_mediated": ["Laptops/celulares", "Acceso a ChatGPT/Copilot/Gemini (free tier)", "Reflective journal template"],
+        "E_genre_based": ["3 emails modelo impresos", "Genre Recipe chart", "Opciones de cliente para transferencia"]
+      },
+      "always_required": [
+        "Language Bank impreso (8 chunks)",
+        "Auditor's Checklist (5 criterios)",
+        "Rúbrica visible PDF/impresa",
+        "Master Anchor Text de PM-2.3 como referencia"
+      ],
+      "instructors": "Instructor de inglés técnico (con apoyo opcional de instructor técnico si arquetipo C requiere validación de decisiones de diseño)"
+    },
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Writing",
+    "quiz_points": 5,
+    "quiz_item_count": 5,
+    "ambiente_learning": {
+      "configuration": "Mesas de 3 personas (ideal para Arquetipo C); individual para A/B/D/E",
+      "equipment": "Proyector para mentor text (B/E); wifi para D; pared para gallery walk (C); Word Wall ya establecido desde S2",
+      "conditions": "Iluminación adecuada para escritura; silencio durante Quickwrite (A); voz media durante negociación (C)"
+    },
+    "estrategia_didactica": {
+      "momento_sena": "3.3 Apropiación",
+      "estrategia": "Aprendizaje Basado en Tareas (TBLT) con Writing Workshop Approach",
+      "justificacion": "S3 es sesión de producción escrita; la tarea concreta (email profesional) ancla el aprendizaje en un contexto laboral real del universo MGV.",
+      "tecnicas_por_arquetipo": {
+        "A": "Escritura exploratoria cronometrada",
+        "B": "Análisis de mentor text + sentence frames",
+        "C": "Roles distribuidos + documento compartido",
+        "D": "Prompt literacy + reflective journaling",
+        "E": "Genre analysis + imitation + transfer"
+      }
+    },
+    "voc_dimensions": {
+      "cognitiva_saber": {
+        "verbo": "Identificar",
+        "objeto": "la estructura de 5 movimientos del email de decisión de diseño",
+        "condicion": "analizando mentor texts y completando el genre recipe"
+      },
+      "procedimental_hacer": {
+        "verbo": "Redactar",
+        "objeto": "un email de decisión de diseño de 60-80 palabras con Gr1-Gr4 y ≥10 términos del Toolbelt",
+        "condicion": "siguiendo el arquetipo seleccionado y aplicando la rúbrica visible"
+      },
+      "actitudinal_ser": {
+        "verbo": "Asumir",
+        "objeto": "rol profesional de diseñador junior comunicando decisiones técnicas al cliente interno",
+        "condicion": "manteniendo registro semi-formal y respetando convenciones del género email"
+      }
+    }
+  },
+
+  "validacion": {
+    "checks_internos": [
+      {"check": "10 checks de validación PM-2.4", "status": "PASS"},
+      {"check": "CEFR A1.1 ceiling respetado (chunks simples, sentence frames heavy, 60-80 palabras)", "status": "PASS"},
+      {"check": "Integración de TODOS los 5 arquetipos A-E con PRE/DURING/POST completos", "status": "PASS"},
+      {"check": "Coherencia con PM-2.3 Master Anchor (mismo Toolbelt, mismo universo)", "status": "PASS"},
+      {"check": "Grammar targets S3 alineados (Gr1+Gr2+Gr3+Gr4; 2 Intro ≤ 2 max)", "status": "PASS"},
+      {"check": "E2 Writing = 5 pts con rúbrica visible al aprendiz", "status": "PASS"},
+      {"check": "5 items cosechados para Cuestionario S6 Writing section", "status": "PASS"},
+      {"check": "Bilingual Unified Instructions (sin bloques repetitivos)", "status": "PASS"},
+      {"check": "Zero Meta-Talk (listo para imprimir)", "status": "PASS"},
+      {"check": "Hours 1.5+0.5 alineado a pm-2-0.json S3", "status": "PASS"}
+    ],
+    "pm0_anchors_pass": [
+      {"anchor": "§9.1 L1% S3 = 20", "status": "PASS"},
+      {"anchor": "§9.2 Grammar max 2 Intro por sesión (Gr2 + Gr4)", "status": "PASS"},
+      {"anchor": "§5.10 SUCCESS 7/7 factors applied", "status": "PASS"},
+      {"anchor": "§5 Feedback differentiated (accuracy during editing, fluency during production)", "status": "PASS"},
+      {"anchor": "§6 A1.1 descriptors respected (can write short simple emails with frames)", "status": "PASS"}
+    ],
+    "universe_anchor_check": {
+      "uses_G1_toolbelt": true,
+      "uses_G1_universe": "Pixel & Ink Studio + Andrés + Sophia + La Esquina Bakery (primary) + 4 transfer clients",
+      "not_copied_from_other_guide": true,
+      "content_hash_unique": "regenerated from G1 pm-1-2.json + pm-2-3.json Master Anchor"
+    }
+  },
+
+  "siguiente_paso": "Ejecutar PM-2.10 — Grammar — Structure Use (Sesión 3 + Sesión 5, integra TODOS los 5 arquetipos A-E: Discovery/C-R, Controlled Practice, Communicative Grammar Tasks, Creative Production, Editing & Error Analysis). Grammar S3 INTRO = Gr2 + Gr4 (ya activados aquí en PM-2.4). Grammar S5 consolida Gr1+Gr3 y agrega Gr5 imperative. Contribuye 5 pts a Cuestionario S6 Grammar section."
+}

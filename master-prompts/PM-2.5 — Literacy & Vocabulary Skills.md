@@ -1,7 +1,20 @@
-# PM-2.5: LITERACY & VOCABULARY SKILLS
+---
+version: 2.0
+last_verified: 2026-04-13
+session: 2
+fase_sena: "Apropiación"
+activity_type: "cognitiva"
+generates_evidence: false
+evidence_type: null
+contributes_to_cuestionario: true
+cuestionario_skill: "Vocabulary"
+cuestionario_points: 5
+---
+
+# PM-2.5: VOCABULARY, LITERACY & SCENARIO SETUP
 
 ## FPI SENA — Bilingüismo
-## Informe Clínico de Actividades de Lectoescritura y Vocabulario
+## Informe Clínico de Actividades de Lectoescritura, Vocabulario y Descripción del Escenario
 
 ---
 
@@ -10,10 +23,10 @@
 | Campo | Valor |
 |-------|-------|
 | **Código** | PM-2.5 |
-| **Nombre** | Literacy & Vocabulary Skills |
+| **Nombre** | Vocabulary, Literacy & Scenario Setup |
 | **Subfase guía SENA** | 3.3 Actividades de apropiación del conocimiento |
 | **Ubicación en la Guía** | Sección 3.3 Apropiación |
-| **Conjunto** | A — Escritura (Reading → Writing → Literacy & Vocabulary) |
+| **Conjunto** | A — Escritura (Reading → Writing → Vocabulary, Literacy & Scenario) |
 | **Tipo de Evidencia SENA** | N/A (actividad de consolidación léxica y lectoescritora) |
 | **Instrumento** | Learner's Worksheet |
 | **Estructura** | MENÚ DE ARQUETIPOS — el instructor elige y combina |
@@ -221,7 +234,69 @@ E) INTERACTIVE LITERACY — Jigsaw Reading, Read-Pair-Share, Info Gap
 
 ---
 
-*PM-2.5: Literacy & Vocabulary Skills*
-*Informe Clínico de Actividades de Lectoescritura y Vocabulario*
+## NOTAS SOBRE SCAFFOLDING
+
+PM-2.5 actúa como **scaffolding lingüístico y contextual** para las actividades de Reading (PM-2.3), Writing (PM-2.4), Listening (PM-2.6), y Speaking (PM-2.8). Sus ítems se cosechan para el cuestionario consolidado de S6.
+
+El PM-2.5 también incluye la **Descripción del Escenario/Universo** (scenario setup): define el universo narrativo, personajes, empresa o contexto laboral donde se desarrollan todas las actividades del RAP.
+
+---
+
+## ACTIVITY CARD OUTPUT
+
+Esta sección define el output estructurado que este PM entrega al PM-2.11 (GFPI-F-134 Row Assembler).
+
+```yaml
+activity_card:
+  pm_id: "PM-2.5"
+  pm_name: "Vocabulary, Literacy & Scenario Setup"
+  session: 2
+  phase_sena: "Apropiación"
+  rap_id: "[A GENERAR — viene del Session Blueprint PM-2.0]"
+  
+  activities:
+    - number: 1
+      type: "cognitiva"
+      statement: "[A GENERAR — Identificar y clasificar vocabulario técnico]"
+      didactic_strategy: "CLIL"
+      didactic_technique: "Mapas conceptuales"
+    
+    - number: 2
+      type: "cognitiva"
+      statement: "[A GENERAR — Describir contexto y personajes del escenario]"
+      didactic_strategy: "Aprendizaje basado en contenido"
+      didactic_technique: "Análisis de casos"
+  
+  hours:
+    direct: 1.5
+    autonomous: 0.5
+  
+  evidence:
+    generates_evidence: false
+    type: null
+    description: ""
+    evaluation_technique: null
+    instrument_number: null
+    instrument_type: null
+  
+  environment:
+    type: "Aula"
+    materials:
+      - "Glossario interactivo (Quizlet)"
+      - "Mapa semántico en tablero colaborativo (Miro)"
+      - "Fichas de vocabulario impreso"
+      - "Video técnico con subtítulos en inglés (3 clips, 5 min cada uno)"
+    instructors: "Instructor de inglés + Técnico especialista"
+  
+  contributes_to_consolidated_quiz: true
+  quiz_skill: "Vocabulary"
+  quiz_points: 5
+  quiz_item_count: 5
+```
+
+---
+
+*PM-2.5: Vocabulary, Literacy & Scenario Setup*
+*Informe Clínico de Actividades de Lectoescritura, Vocabulario y Escenario*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*

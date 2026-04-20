@@ -10,12 +10,19 @@
 |-------|-------|
 | **Código** | PM-3.5 |
 | **Nombre** | Final Mission — The Integrative Task |
+| **Versión** | 2.6 |
+| **Last Verified** | 2026-04-20 |
 | **Subfase guía SENA** | 3.4 Actividades de transferencia del conocimiento |
-| **Ubicación en la Guía** | Sesión final (después de Fase 3 completa) |
-| **Tipo de Evidencia SENA** | **DESEMPEÑO** (oral) + **PRODUCTO** (artefacto) |
+| **Ubicación en la Guía** | Sesiones 6 (2ª mitad) + 7 + 8 |
+| **Fase SENA** | Transferencia |
+| **Genera Evidencia Formal** | NO — es transferencia, no apropiación |
+| **Tipo de Evidencia SENA** | **DESEMPEÑO** (oral) + **PRODUCTO** (artefacto) — formativo, no sumativo |
 | **Instrumentos** | Checklist de Observación PM-4.1 (desempeño) + Rúbrica Analítica PM-4.1 (producto) |
 | **Estructura** | MENÚ DE ARQUETIPOS — el instructor elige y combina |
+| **ABP Phases** | plan → design → perform → present → assess |
 | **Rol en el sistema** | Tarea integradora que cierra el ciclo formativo. Integra TODO lo de Fase 3. |
+| **Audiencia** | **Documento interno del instructor** — el aprendiz NUNCA ve PM-3.5 directamente. |
+| **Distribución en el pipeline** | Contenido de instructor (diseño, rúbricas, instrucciones de facilitación) → integrado en **PM-3.1** (Playbook Outline). Contenido del aprendiz (brief de misión, roles, criterios) → embebido en **PM-3.6** como capstone de la Sección 3.4 Transferencia. |
 
 ---
 
@@ -29,6 +36,91 @@ La Final Mission es la **tarea integradora** definida en PM-1.2 que se ejecuta a
 - Producir un artefacto verificable
 
 **El escenario ya es familiar.** El aprendiz vivió toda la guía (Fase 2), trabajó con los materiales (Fase 3), y ahora aplica en un contexto que conoce.
+
+---
+
+## ESTRUCTURA ABP — 5 SUB-FASES
+
+La Final Mission se estructura en 5 sub-fases de Aprendizaje Basado en Problemas (ABP):
+
+### 1. PLAN (S6 2ª mitad)
+El aprendiz recibe el problema/reto y planifica su solución. Define roles (si es grupal), identifica recursos necesarios, propone hipótesis o estrategias.
+
+### 2. DESIGN (S6 2ª mitad / inicio S7)
+Diseña la solución: bocetos, prototipos, guiones, planes de acción. Aplica los conocimientos técnicos adquiridos en apropiación.
+
+### 3. PERFORM (S7)
+Ejecuta la solución diseñada. Produce el entregable concreto (presentación, demo, informe, producto).
+
+### 4. PRESENT (S7-S8)
+Presenta y defiende la solución ante el grupo. Usa el inglés técnico aprendido. Puede incluir Canva Deck.
+
+### 5. ASSESS (S8)
+Autoevaluación y coevaluación pedagógica del proceso y resultado. **NO es evidencia formal de la matriz GFPI-F-134.**
+
+---
+
+## EXTENSIÓN v2.6 — `activity_footer` OBLIGATORIO EN LAS 5 SUB-FASES ABP
+
+> [!warning] CANON v2.6 — Promovido desde MGV-2026-04-20
+> Desde v2.6, CADA una de las 5 sub-fases ABP (plan, design, perform, present, assess) DEBE incluir un bloque `activity_footer` con los 6 campos canónicos. Esto permite al renderer Final Mission mostrar contexto operativo idéntico al de §3 en PM-3.6 (coherencia visual instructor ↔ aprendiz).
+
+### Schema canónico `activity_footer` (6 campos obligatorios)
+
+```json
+{
+  "activity_footer": {
+    "ambiente": "<descripción operacional del espacio físico/virtual>",
+    "estrategia": "<ABP | ABT | Simulación | Evaluación Formativa>",
+    "tecnica": "<técnica didáctica específica de esa sub-fase>",
+    "materiales": ["<insumo 1>", "<insumo 2>", "..."],
+    "material_apoyo": "<recurso complementario: Canva deck, Workbook, audio, etc.>",
+    "duracion_horas": <decimal: 1.5 | 2.0 | 3.0 | ...>
+  }
+}
+```
+
+### Ejemplo — Final Mission sub-fase PLAN
+
+```json
+{
+  "subfase": "plan",
+  "activity_footer": {
+    "ambiente": "Aula con mesas en U + proyector + acceso a Workbook digital",
+    "estrategia": "ABP",
+    "tecnica": "Brainstorming guiado + Role assignment matrix",
+    "materiales": ["Mission Brief impreso", "Role cards x5", "Planning template"],
+    "material_apoyo": "Canva Deck slide 16-17 (Mission Overview)",
+    "duracion_horas": 2.0
+  }
+}
+```
+
+### Reglas duras v2.6
+
+1. Las 5 sub-fases ABP del documento `pm-3-5.json` DEBEN cada una incluir `activity_footer` con los 6 campos poblados (sin `null`).
+2. La suma de `duracion_horas` de las 5 sub-fases DEBE ser ≤ 15h (horas de Transferencia S6½–S8).
+3. `estrategia` admite valores de la taxonomía canónica (ABP dominante en Final Mission, pero sub-fase `assess` puede ser "Evaluación Formativa").
+4. `tecnica` debe ser concreta y ejecutable (no genérica tipo "discusión").
+5. `ambiente` sigue schema §11.1 de PM-3.1 (descripción operacional, no lista de materiales).
+6. `material_apoyo` DEBE referenciar al menos 1 de: Canva Deck slide #, Workbook §#, audio file, rubric PDF.
+
+### Script canónico
+
+**`enrich_activity_footers.js`** — script promovido a canon v2.6. Lee `pm-3-5.json`, valida presencia de `activity_footer` en las 5 sub-fases, enriquece defaults desde `pm-3-1.json.logistics_box.estrategia` si faltan, y emite `pm-3-5-enriched.json` listo para renderer DOCX.
+
+### Consecuencia arquitectónica
+
+El renderer PM-3.5 → DOCX usa `activity_footer` para emitir el mismo bloque visual (barra naranja izquierda + 6 campos en tabla) que PM-3.6 usa en §3. Esto cierra el loop: el aprendiz ve un formato operativo idéntico en toda la Sección 3 (3.1–3.4), sin fractura visual entre Apropiación y Transferencia.
+
+---
+
+## AVISO CRÍTICO SOBRE EVIDENCIAS FORMALES
+
+> [!warning] Evidencias Formales
+> La Final Mission (PM-3.5) es una actividad de **Transferencia**. **NO genera evidencias formales** para la columna 8 de la matriz GFPI-F-134. Las evidencias formales del sistema se generan únicamente en actividades de **Apropiación** (S2-S5) y en el cuestionario consolidado (S6 1ª mitad).
+> 
+> El "assess" de la sub-fase final es autoevaluación/coevaluación con fines **formativos**, no sumativo.
 
 ---
 
@@ -91,7 +183,7 @@ entregable de producción (C)."
 
 **Componente producto (PRODUCTO):** El artefacto que el profesional produciría como resultado de esa comunicación (reporte, email formal, especificación, minuta, checklist completado).
 
-**Ejemplo ADSO:** Junior Developer presenta oralmente una Technical Spec Sheet a su supervisor (desempeño) + entrega la Spec Sheet escrita como documento formal (producto).
+> **Ejemplo de referencia — ADSO G1 (NO copiar para otros programas):** Junior Developer presenta oralmente una Technical Spec Sheet a su supervisor (desempeño) + entrega la Spec Sheet escrita como documento formal (producto). Para otro programa, el rol profesional, el artefacto y el interlocutor deben corresponder al entorno laboral real del programa configurado.
 
 **Demanda cognitiva:** HOTS (aplicar, analizar, evaluar).
 
@@ -309,6 +401,6 @@ E) GAMIFIED — Misión con mecánicas de juego (Escape Room, Challenge, Competi
 
 ---
 
-*PM-3.5: Final Mission — The Integrative Task*
+*PM-3.5: Final Mission — The Integrative Task — v2.6*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
-*Instructor Sergio Cortés Perdomo · Marzo 2026*
+*Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV)*

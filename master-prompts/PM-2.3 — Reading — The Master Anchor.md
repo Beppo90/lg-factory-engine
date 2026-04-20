@@ -1,3 +1,16 @@
+---
+version: 2.0
+last_verified: 2026-04-13
+session: 2
+fase_sena: "Apropiación"
+activity_type: "cognitiva"
+generates_evidence: true
+evidence_type: "Conocimiento"
+contributes_to_cuestionario: true
+cuestionario_skill: "Reading"
+cuestionario_points: 5
+---
+
 # PM-2.3: READING COMPREHENSION — THE MASTER ANCHOR & HOTS
 
 ## FPI SENA — Bilingüismo
@@ -432,7 +445,7 @@ Tu tarea: Generar el WORKSHEET "THE MASTER ANCHOR" — Reading Comprehension par
 - Universo narrativo: [empresa, sector, contexto]
 - Story A (texto auténtico curado en PM-1.2): [resumen, fuente, URL]
 - Vocabulario clave: [20 términos de PM-1.2]
-- Grammar targets: [estructuras de PM-2.7]
+- Grammar targets: [estructuras de PM-2.10]
 - Communicative functions: [funciones de PM-1.2]
 - Arquetipos anteriores: [Spark elegido en PM-2.1, Diagnóstico en PM-2.2]
 - Arquetipo de lectura elegido: [A / B / C / D / E / F o combinación]
@@ -507,10 +520,76 @@ F) HOTS FOCUS — Pensamiento superior (Divergent Questions, Evaluation of Consi
 | **Alimenta a** | PM-2.4 | Story A adaptada → formato oral (reciclaje) |
 | **Alimenta a** | PM-2.5 | Chunks del texto → práctica de vocabulario |
 | **Alimenta a** | PM-2.6 | Fonemas del vocabulario → entrenamiento |
-| **Alimenta a** | PM-2.7 | Estructuras del texto → inducción gramatical |
+| **Alimenta a** | PM-2.10 | Estructuras del texto → inducción gramatical |
 | **Alimenta a** | PM-2.8 | El texto como modelo para producción escrita |
 | **Alimenta a** | PM-4.2 | Referencia de género textual para crear paralelo |
 | **Se ubica en** | GFPI-F-135 Sección 3.3 | Apropiación |
+
+---
+
+## PRINCIPIO DE TRES VERSIONES
+
+PM-2.3 genera todas las variantes del texto de lectura:
+
+1. **Reading task de S2 (evidencia de apropiación):** El Master Anchor Text original y las actividades de lectura con feedback formativo.
+2. **Ítems cosechados para el cuestionario S6:** Preguntas similares pero diferentes, derivadas de la misma familia de conceptos del texto.
+3. **Ítems del Workbook:** Actividades de refuerzo similares pero en contexto diferente, para práctica independiente.
+
+Todas las variantes emergen de la misma matriz conceptual generada en PM-2.3, asegurando coherencia y validez de la evaluación.
+
+---
+
+## ACTIVITY CARD OUTPUT
+
+Esta sección define el output estructurado que este PM entrega al PM-2.11 (GFPI-F-134 Row Assembler).
+
+```yaml
+activity_card:
+  pm_id: "PM-2.3"
+  pm_name: "Reading — The Master Anchor"
+  session: 2
+  phase_sena: "Apropiación"
+  rap_id: "[A GENERAR — viene del Session Blueprint PM-2.0]"
+  
+  activities:
+    - number: 1
+      type: "cognitiva"
+      statement: "[A GENERAR — Analizar estructura y contenido de texto técnico en inglés]"
+      didactic_strategy: "Content-Based Learning"
+      didactic_technique: "Investigación guiada"
+    
+    - number: 2
+      type: "cognitiva"
+      statement: "[A GENERAR — Completar matriz de comprensión sobre conceptos clave]"
+      didactic_strategy: "Aprendizaje colaborativo"
+      didactic_technique: "Jigsaw"
+  
+  hours:
+    direct: 2.0
+    autonomous: 0.5
+  
+  evidence:
+    generates_evidence: true
+    type: "Conocimiento"
+    description: "El aprendiz demuestra comprensión de textos técnicos en inglés respondiendo preguntas de nivel literal e inferencial en Cuestionario No 1"
+    evaluation_technique: "Preguntas"
+    instrument_number: 1
+    instrument_type: "Cuestionario"
+  
+  environment:
+    type: "Aula"
+    materials:
+      - "Proyector interactivo"
+      - "Computadores con acceso a Moodle"
+      - "Plantilla SQ3R impresa (PDF)"
+      - "Textos técnicos en inglés (5 extractos)"
+    instructors: "Instructor de inglés técnico"
+  
+  contributes_to_consolidated_quiz: true
+  quiz_skill: "Reading"
+  quiz_points: 5
+  quiz_item_count: 5
+```
 
 ---
 

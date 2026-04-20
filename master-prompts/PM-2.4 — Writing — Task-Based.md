@@ -1,3 +1,16 @@
+---
+version: 2.0
+last_verified: 2026-04-13
+session: 3
+fase_sena: "Apropiación"
+activity_type: "procedimental"
+generates_evidence: true
+evidence_type: "Producto"
+contributes_to_cuestionario: true
+cuestionario_skill: "Writing"
+cuestionario_points: 5
+---
+
 # PM-2.4: WRITING SKILLS & PRAGMATICS — TASK-BASED
 
 ## FPI SENA — Bilingüismo
@@ -432,6 +445,73 @@ E) GENRE-BASED — Dominio de géneros textuales (Genre Analysis, Genre Transfor
 | **Alimenta a** | PM-4.1 | La rúbrica evalúa esta producción (evidencia de producto) |
 | **Se relaciona con** | PM-4.2 | Referencia de género textual para crear paralelo |
 | **Se ubica en** | GFPI-F-135 Sección 3.3 | Apropiación |
+
+---
+
+## PRINCIPIO DE TRES VERSIONES
+
+PM-2.4 genera todas las variantes de la tarea de escritura:
+
+1. **Writing task de S3 (evidencia de producto):** La tarea principal con rúbrica de evaluación formativa.
+2. **Ítems cosechados para el cuestionario S6:** Preguntas sobre el proceso de escritura y características similares pero diferentes.
+3. **Ítems del Workbook:** Tareas de escritura similares en contexto diferente, para práctica independiente.
+
+Todas las variantes mantienen la misma estructura de género textual y criterios de evaluación, asegurando coherencia y transferencia.
+
+---
+
+## ACTIVITY CARD OUTPUT
+
+Esta sección define el output estructurado que este PM entrega al PM-2.11 (GFPI-F-134 Row Assembler).
+
+```yaml
+activity_card:
+  pm_id: "PM-2.4"
+  pm_name: "Writing — Task-Based"
+  session: 3
+  phase_sena: "Apropiación"
+  rap_id: "[A GENERAR — viene del Session Blueprint PM-2.0]"
+  
+  activities:
+    - number: 1
+      type: "procedimental"
+      statement: "[A GENERAR — Redactar texto técnico siguiendo género textual específico]"
+      didactic_strategy: "Aprendizaje basado en tareas"
+      didactic_technique: "Taller"
+    
+    - number: 2
+      type: "procedimental"
+      statement: "[A GENERAR — Revisar y editar texto según criterios de calidad]"
+      didactic_strategy: "Aprendizaje colaborativo"
+      didactic_technique: "Análisis de casos"
+  
+  hours:
+    direct: 2.0
+    autonomous: 1.0
+  
+  evidence:
+    generates_evidence: true
+    type: "Producto"
+    description: "El aprendiz produce un texto escrito completo en inglés técnico demostrando control de estructuras gramaticales, vocabulario especializado y organización lógica"
+    evaluation_technique: "Verificación del producto"
+    instrument_number: 2
+    instrument_type: "Lista de verificación"
+  
+  environment:
+    type: "Aula + Virtual"
+    materials:
+      - "Plantilla de reporte en Word"
+      - "Rúbrica visible (PDF)"
+      - "Language Bank (glosario de chunks reutilizables)"
+      - "Plataforma Moodle para entrega"
+      - "Software de verificación ortográfica (Grammarly)"
+    instructors: "Instructor de inglés técnico"
+  
+  contributes_to_consolidated_quiz: true
+  quiz_skill: "Writing"
+  quiz_points: 5
+  quiz_item_count: 5
+```
 
 ---
 
