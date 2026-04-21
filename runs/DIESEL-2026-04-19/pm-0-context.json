@@ -1,0 +1,277 @@
+{
+  "run_id": "DIESEL-2026-04-19",
+  "pm_code": "PM-0",
+  "pm_name": "CEFR Framework & FPI SENA Pedagogical Foundation — Contexto del Run",
+  "artifact_purpose": "Anclar los principios PM-0 para las 5 guías del programa Mantenimiento de Motores Diesel desde Fase 1. Insumo obligatorio para pm-1-2 (vocabulario del taller y textos adaptados), pm-3-1 (pm0_alignment_by_session) y pm-3-2-sX (pm0_protocol por sesión). Creado retroactivamente en Fase 3 del upgrade v2.6.6 (2026-04-21).",
+  "generated_date": "2026-04-21",
+  "pipeline_version": "2.6.6",
+  "pm0_source_version": "1.0 (2026-04-18)",
+
+  "program_scope": {
+    "programa": "Mantenimiento de Motores Diesel",
+    "ficha": "2977749",
+    "tipo": "Técnico",
+    "cefr_range": "A1.1 — A2.1",
+    "total_guias": 5,
+    "regla_bloques": "alineacion_1a1",
+    "proyecto_formativo_articulador": "The Diesel Workshop — Taller especializado en mantenimiento de flotas de vehículos de carga diesel. El aprendiz acumula el rol progresivo: workshop assistant (G1) → inspector (G2) → maintenance technician (G3) → chassis pro (G4) → diagnostics specialist (G5)."
+  },
+
+  "pm0_section_mapping": {
+    "§4_descriptores_A1_generales": "Aplican a G1, G2, G3",
+    "§5.1_a_§5.13_principios_pedagogicos": "Aplican a las 5 guías — ver sección principios_aplicables",
+    "§5.6_silabus_gramatical_17_grupos": "Aplica a las 5 guías — ver sección grammar_roadmap",
+    "§6_descriptores_por_subnivel": "Aplica por guía según CEFR — ver sección cefr_descriptors_per_guide",
+    "§7_instrumento_trazabilidad_22_items": "Debe completarse para cada PM antes de producción",
+    "§8_hoja_de_ruta_A1.1_a_A2.x": "Aplica — ver sección methodological_shifts_per_guide",
+    "§9.1_L1_percentage_per_session": "Aplica a las 5 guías — ver sección l1_policy_per_guide",
+    "§9.2_grammar_group_activation": "Aplica a cada pm-3-2-sX.json — ver sección grammar_roadmap.activation_mapping",
+    "§9.3_pm0_protocol_json_schema": "Obligatorio en cada pm-3-2-sX.json del run"
+  },
+
+  "cefr_descriptors_per_guide": [
+    {
+      "guia": 1,
+      "nombre_esp": "The Workshop Specialist",
+      "rap": "220501096",
+      "cefr": "A1.1",
+      "descriptor_snapshot": {
+        "comprension_oral": "Comprende instrucciones de 1–2 pasos en el taller pronunciadas muy despacio, con pausas largas. Reconoce términos técnicos básicos (tool names, parts, PPE) pronunciados aislados con apoyo visual.",
+        "comprension_lectora": "Reconoce nombres y etiquetas en herramientas, equipos y señalización de seguridad del taller. Lee listas de chequeo con apoyo visual. Identifica números y unidades básicas (torque, rpm, temperatura).",
+        "interaccion_oral": "Puede saludar al supervisor, presentarse y responder Sí/No. Puede dar nombre, rol y turno. Puede pedir repetición con frase fija ('Can you repeat, please?').",
+        "produccion_oral": "Produce palabras y frases aisladas del taller. Puede nombrar herramientas, partes del motor y elementos de seguridad presentes en el entorno.",
+        "produccion_escrita": "Puede completar una lista de chequeo pre-servicio con datos básicos. Puede escribir listas de ítems (tools needed, PPE required).",
+        "vocabulario_activo": "50–100 términos del dominio taller diesel básico (workshop, tools, PPE, engine parts, safety)",
+        "gramatica": "Verbo be (afirmativo, negativo, preguntas). There is/There are. Imperativo básico (Check / Open / Don't). Números y unidades.",
+        "funciones_comunicativas": "Saludar, presentarse, pedir repetición, nombrar objetos del taller, reportar estado básico al supervisor, confirmar comprensión"
+      }
+    },
+    {
+      "guia": 2,
+      "nombre_esp": "The Inspector",
+      "rap": "pendiente",
+      "cefr": "A1.2",
+      "descriptor_snapshot": {
+        "comprension_oral": "Comprende instrucciones de 2–3 pasos de inspección pronunciadas despacio. Comprende valores numéricos y unidades en contexto (presiones, niveles, temperaturas).",
+        "comprension_lectora": "Lee procedimientos simples de inspección. Identifica valores en hojas de especificaciones. Comprende advertencias simples.",
+        "interaccion_oral": "Puede describir brevemente lo que está inspeccionando. Puede pedir aclaración técnica. Puede reportar hallazgo simple al supervisor.",
+        "produccion_oral": "Produce frases completas simples. Puede describir un procedimiento de inspección de 2–3 pasos. Puede reportar un hallazgo simple.",
+        "produccion_escrita": "Puede completar un formato de inspección con datos técnicos. Puede escribir lista de verificación básica.",
+        "vocabulario_activo": "150–250 términos. Collocations básicas (check the level / inspect the belt / tighten the bolt)",
+        "gramatica": "Presente simple afirmativo/negativo/interrogativo. Modal must. Pasado simple de be. Can/can't. Have/has.",
+        "funciones_comunicativas": "Describir acciones en curso, reportar hallazgo, pedir aclaración, dar instrucción simple, opinar sobre condición del equipo",
+        "placeholder_note": "Descriptor placeholder — detallar en run G2 futuro."
+      }
+    },
+    {
+      "guia": 3,
+      "nombre_esp": "The Maintenance Technician",
+      "rap": "pendiente",
+      "cefr": "A1.3",
+      "descriptor_snapshot": {
+        "comprension_oral": "Comprende instrucciones de procedimiento multi-paso de mantenimiento. Sigue un briefing técnico breve con apoyo visual.",
+        "comprension_lectora": "Lee reportes de mantenimiento, órdenes de trabajo, manuales simples. Comprende diagramas con leyendas.",
+        "interaccion_oral": "Puede describir un problema técnico con vocabulario limitado. Puede solicitar información técnica específica. Puede participar en intercambio estructurado.",
+        "produccion_oral": "Puede presentar hallazgos de mantenimiento básico. Puede describir un proceso de 4–5 pasos en secuencia. Puede hacer recomendaciones simples.",
+        "produccion_escrita": "Puede redactar un reporte de mantenimiento básico. Puede escribir una nota técnica simple.",
+        "vocabulario_activo": "300–400 términos. Collocations con confianza + expresiones fraseológicas del taller.",
+        "gramatica": "Presente perfecto para historial de servicio. Condicional tipo 1. Voz pasiva básica. Conectores de secuencia. Should/must.",
+        "funciones_comunicativas": "Describir problema, recomendar acción, presentar hallazgos, solicitar información técnica",
+        "placeholder_note": "Descriptor placeholder — detallar en run G3 futuro."
+      }
+    },
+    {
+      "guia": 4,
+      "nombre_esp": "The Chassis Pro",
+      "rap": "pendiente",
+      "cefr": "A2.0",
+      "descriptor_snapshot": {
+        "comprension_oral": "Sigue feedback detallado con explicaciones de causa-efecto en sistemas de chasis y seguridad. Comprende instrucciones de diagnóstico multi-paso.",
+        "comprension_lectora": "Lee reportes de diagnóstico, bitácoras de servicio, comentarios de QC con justificación técnica.",
+        "interaccion_oral": "Puede participar en sesión de diagnóstico, dar y recibir feedback técnico, justificar acciones correctivas.",
+        "produccion_oral": "Presenta acciones correctivas con justificación. Describe cambios al sistema en secuencia con conectores.",
+        "produccion_escrita": "Bitácora de mantenimiento, reporte de diagnóstico, documentación de cambios iterativos.",
+        "vocabulario_activo": "400–500 términos. Expresiones de mejora/corrección/diagnóstico específicas del chasis diesel.",
+        "gramatica": "Presente perfecto. Condicional tipo 1. Voz pasiva presente. Comparativos. Superlativos.",
+        "funciones_comunicativas": "Dar feedback técnico, recibir feedback, justificar decisiones, describir mejoras, reportar cambios",
+        "placeholder_note": "Descriptor placeholder — detallar en run G4 futuro."
+      }
+    },
+    {
+      "guia": 5,
+      "nombre_esp": "The Diagnostics Specialist",
+      "rap": "pendiente",
+      "cefr": "A2.1",
+      "descriptor_snapshot": {
+        "comprension_oral": "Comprende presentaciones técnicas de diagnóstico a ritmo moderado con terminología avanzada del motor diesel.",
+        "comprension_lectora": "Lee documentación de diagnóstico completa (SOPs, service bulletins, diagnostic trouble codes).",
+        "interaccion_oral": "Presenta un diagnóstico completo, responde preguntas técnicas del cliente/supervisor, negocia alcance de servicio.",
+        "produccion_oral": "Presentación formal de diagnóstico con secuenciación, voz pasiva, vocabulario técnico ocupacional.",
+        "produccion_escrita": "Documentación formal de diagnóstico: síntomas, análisis, causa raíz, acciones recomendadas, entrega al cliente.",
+        "vocabulario_activo": "500–600 términos. Vocabulario ocupacional especializado del diagnóstico diesel y entrega al cliente.",
+        "gramatica": "Voz pasiva presente y pasada. Condicional tipo 1 consolidado. Conectores complejos. Presente perfecto con marcadores.",
+        "funciones_comunicativas": "Presentar diagnóstico, explicar causa raíz, responder preguntas técnicas, resumir servicio ejecutado, entregar vehículo al cliente",
+        "placeholder_note": "Descriptor placeholder — detallar en run G5 futuro."
+      }
+    }
+  ],
+
+  "grammar_roadmap": {
+    "silabus_source": "PM-0 §5.6 — Silabus FPI SENA de 17 grupos (derivado de Life Second Edition)",
+    "activation_mapping": {
+      "G1_A1.1_TheWorkshopSpecialist": {
+        "intro": [
+          "Gr 1 — Verbo be (afirmativo contraído, negativo, preguntas, respuestas cortas)",
+          "Gr 2 — There is / There are + pronombres sujeto/posesivos",
+          "Gr 3 — Plural regular -s/-es + artículos a/an/the",
+          "Gr 5 — Imperativo afirmativo y negativo (Check / Open / Don't touch)",
+          "Gr 7 — Can/can't (habilidad y permiso básico)",
+          "Gr 14 — Preposiciones de lugar (in, on, next to, near)"
+        ],
+        "consolida": [],
+        "aplica": []
+      },
+      "G2_A1.2_TheInspector": {
+        "intro": [
+          "Gr 1 — Pasado simple de be (was/were)",
+          "Gr 3 — Some/any + plurales irregulares",
+          "Gr 6 — Modales must/have to (obligación técnica)",
+          "Gr 8 — Presente simple (todas las formas + adverbios de frecuencia)",
+          "Gr 16 — Wh-questions (What, Where, When, How many, How much)"
+        ],
+        "consolida": ["Gr 1, 2, 3, 5, 7, 14 del G1"],
+        "aplica": []
+      },
+      "G3_A1.3_TheMaintenanceTechnician": {
+        "intro": [
+          "Gr 4 — Comparativos (bigger / more critical)",
+          "Gr 9 — Pasado simple (regulares, irregulares, preguntas)",
+          "Gr 10 — Presente continuo (afirm/neg/preg)",
+          "Gr 15 — Conectores de secuencia (first, then, next, finally)",
+          "Gr 17 — Estructuras sector diesel (ver grupo_17_sector_especifico)"
+        ],
+        "consolida": ["Gr 1, 6, 7, 8, 14, 16 del G2"],
+        "aplica": ["Gr 1-5 del G1-G2"]
+      },
+      "G4_A2.0_TheChassisPro": {
+        "intro": [
+          "Gr 4 — Superlativos (the most critical component)",
+          "Gr 6 — Could/might (posibilidad diagnóstica), Would",
+          "Gr 11 — Presente perfecto (afirm, neg, preg)",
+          "Gr 12 — Condicional tipo 1 (If + presente, will + base)",
+          "Gr 13 — Voz pasiva presente (is/are + pp)"
+        ],
+        "consolida": ["Gr 3, 9, 10 del G3"],
+        "aplica": ["Gr 1-8, 14, 16 de G1-G3"]
+      },
+      "G5_A2.1_TheDiagnosticsSpecialist": {
+        "intro": [
+          "Gr 11 — Presente perfecto con marcadores (already, yet, just, ever, never) + contraste con pasado simple",
+          "Gr 12 — Condicional tipo 2 (If + pasado, would + base)",
+          "Gr 13 — Voz pasiva pasada (was/were + pp)",
+          "Gr 17 — Estructuras ocupacionales de entrega al cliente"
+        ],
+        "consolida": ["Gr 4 superlativos, 6 could/might/would, 11 afirmativo, 12 tipo 1, 13 presente"],
+        "aplica": ["Todo lo anterior (Gr 1-10 completo)"]
+      }
+    },
+    "carga_principle": "PM-0 §9.2 — Máximo 2 grupos nuevos (Intro) por sesión. La progresión respeta L1 política 30% → 5% de G1 a G5.",
+    "grupo_17_sector_especifico": {
+      "descripcion": "Grupo 17 (§5.6) es el slot abierto para estructuras específicas del sector diesel. Activado en G3 y G5.",
+      "g3_intro": [
+        "Especificaciones técnicas: 'at [torque] Nm', 'at [pressure] psi', 'in [temperature] °C'",
+        "Intervalos de servicio: 'every 10,000 km', 'at each oil change', 'at the next PM'",
+        "Reportar hallazgos: 'The [component] is worn', 'The [system] has [condition]'"
+      ],
+      "g5_intro": [
+        "Entrega al cliente: 'Your vehicle is ready', 'We have replaced [component]', 'Please avoid [action] for [duration]'",
+        "Explicar causa raíz: 'The issue was caused by [cause]', 'This happened because [reason]'",
+        "Responsabilidades profesionales: 'I'm responsible for the [area] inspection', 'My diagnosis shows [finding]'"
+      ]
+    }
+  },
+
+  "l1_policy_per_guide": {
+    "source": "PM-0 §9.1 — Progresión por subnivel normativa",
+    "per_guide": [
+      {
+        "guia": 1,
+        "cefr": "A1.1",
+        "s1_to_s8": "S1 30% → S2 25% → S3 20% → S4 15% → S5 12% → S6 10% → S7 10% → S8 5%",
+        "rationale": "Día 1 establecer confianza y seguridad psicológica del aprendiz en el taller. Reducción progresiva apoyada por tablero visual + realia del taller (herramientas reales, señalización bilingüe, infografías)."
+      },
+      {"guia": 2, "cefr": "A1.2", "s1_to_s8": "S1 20% → S8 3%", "rationale": "L2 es norma en reportes de inspección; L1 solo respaldo explicación técnica compleja"},
+      {"guia": 3, "cefr": "A1.3", "s1_to_s8": "S1 10% → S8 0%", "rationale": "L1 solo en temas de seguridad crítica o bloqueo genuino"},
+      {"guia": 4, "cefr": "A2.0", "s1_to_s8": "L2 como norma desde S1; L1 solo emergencia", "rationale": "Aprendiz ya maneja feedback técnico en L2"},
+      {"guia": 5, "cefr": "A2.1", "s1_to_s8": "L2 exclusivo; L1 = 0%", "rationale": "Entrega al cliente y presentaciones formales en L2 puro"}
+    ]
+  },
+
+  "methodological_shifts_per_guide": {
+    "source": "PM-0 §8 — Hoja de ruta A1.1 → A2.x",
+    "per_guide": [
+      {"guia": 1, "cefr": "A1.1", "velocidad_input": "Muy lenta — pausas largas, repetir cada frase 2-3 veces", "extension_textos": "1-3 oraciones + apoyo visual obligatorio (realia del taller: herramienta, parte del motor, señal de seguridad)", "autonomia": "Alta dependencia docente", "andamiaje": "Máximo (frames completos, word banks en tablero)", "feedback": "Inmediato, choral — accuracy prioritario", "rol_docente": "Modelo central — driller — facilitador emocional", "pensamiento_critico": "Reconocimiento y clasificación (identificar herramientas, zonas del taller, PPE)"},
+      {"guia": 2, "cefr": "A1.2", "velocidad_input": "Lenta — pausas frecuentes", "extension_textos": "3-7 oraciones + apoyo visual frecuente", "autonomia": "Dependencia moderada", "andamiaje": "Alto (frames parciales)", "feedback": "Mixto: inmediato en drilling, diferido en fluency", "rol_docente": "Modelo y andamio", "pensamiento_critico": "Secuenciación y descripción (checklists de inspección)"},
+      {"guia": 3, "cefr": "A1.3", "velocidad_input": "Moderada — pausas ocasionales", "extension_textos": "Párrafos cortos (5-10 oraciones)", "autonomia": "Semi-autónomo en tareas conocidas", "andamiaje": "Moderado (prompts iniciales)", "feedback": "Diferido post-tarea", "rol_docente": "Facilitador", "pensamiento_critico": "Análisis síntomas + causa/efecto (troubleshooting de motor)"},
+      {"guia": 4, "cefr": "A2.0", "velocidad_input": "Moderada natural — algunas pausas", "extension_textos": "Textos multi-párrafo", "autonomia": "Progresivamente autónomo", "andamiaje": "Mínimo", "feedback": "Peer + self-assessment", "rol_docente": "Monitor", "pensamiento_critico": "Diagnóstico, RCA (causa raíz del fallo)"},
+      {"guia": 5, "cefr": "A2.1", "velocidad_input": "Natural", "extension_textos": "Multi-párrafo técnicos completos", "autonomia": "Autónomo pleno", "andamiaje": "Cero — aprendiz construye sin andamiaje previo", "feedback": "Auto-assessment + peer + evaluación por criterios profesionales", "rol_docente": "Monitor + retroalimentador", "pensamiento_critico": "Narrativa ocupacional integrada: diagnóstico + servicio + entrega"}
+    ]
+  },
+
+  "principios_aplicables": {
+    "source": "PM-0 §5.1–§5.13 — 13 principios pedagógicos",
+    "aplicacion_a_DIESEL": [
+      "§5.1 Contenido técnico como punto de partida — OK: el diseño curricular de Mantenimiento Diesel define el universo léxico-pragmático",
+      "§5.2 Fotografía y realia técnica — Alta aplicabilidad: el taller vive de objetos físicos; cada guía usa realia (herramientas, motores, PPE real, señalización bilingüe)",
+      "§5.3 Video e instrucción en vivo — Aplicable: videos de procedimientos de taller, demostraciones del instructor técnico",
+      "§5.4 Pensamiento crítico y diagnóstico técnico — Central en G3 (maintenance) y G4-G5 (diagnóstico)",
+      "§5.5 Memorización y retención — Vocabulario técnico del taller (tools, parts, systems, safety) trabajado con factor SUCCESS",
+      "§5.6 Tratamiento de la gramática — Silabus 17 grupos activado según grammar_roadmap",
+      "§5.7 Tratamiento del vocabulario — Word Wall del taller + Toolbelt por guía",
+      "§5.8 Habilidades de aprendizaje autónomo — Gap Cards, KWL, Learning Contract en cada guía",
+      "§5.9 Evaluación — Formativa (5 evidencias × 5 pts) + sumativa (Cuestionario S6 25 pts + Misión Final 5 pts) = 55 pts por guía",
+      "§5.10 Estructura de sesión FPI — 8 sesiones por guía (DIESEL G1: 43.2h instructivos reales + autónomo)",
+      "§5.11 Feedback diferenciado accuracy vs fluency — Ver methodological_shifts",
+      "§5.12 Gestión del L1 — Ver l1_policy_per_guide",
+      "§5.13 Noticing de stress con soporte físico — Finger drilling, backchaining, clapping en vocabulario del taller"
+    ]
+  },
+
+  "traceability_checklist_ref": {
+    "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+    "uso": "Cada PM-2.x y PM-3.x del run debe completar este checklist. Criterio de aprobación: ≥ 20/22 ítems aprobados.",
+    "secciones": {
+      "A_trazabilidad_cefr": "6 ítems — asignación subnivel, trazabilidad a descriptores §4/§6, no sobreexige, vocab del Word Wall, input adaptado",
+      "B_trazabilidad_pedagogica": "8 ítems — pre-enseñanza vocab, drilling, accuracy/fluency, gestión L1, stress, producción personalizada (My Turn), autoevaluación, andamiaje por nivel",
+      "C_trazabilidad_estructura_sesion": "4 ítems — bloque FPI, tiempo realista, lógica PM precedente/siguiente, complejidad cognitiva progresiva",
+      "D_trazabilidad_evaluacion": "4 ítems — contribuye Misión Final, can-do asociado, criterio observable, consistente con descriptor CEFR"
+    }
+  },
+
+  "pm0_protocol_template_per_guide": {
+    "purpose": "Template de referencia para que cada pm-3-2-sX.json del run incluya pm0_protocol consistente con esta guía.",
+    "source_schema": "PM-0 §9.3",
+    "campos_obligatorios": [
+      "grammar_groups — lista de grupos del silabus activos en esa sesión con estado Intro/Consolida/Aplica",
+      "feedback.mode — ACCURACY / FLUENCY / MIXTO según §5.11 + methodological_shifts",
+      "feedback.accuracy_techniques — Recast, Elicitación, Metalinguistic cue, etc.",
+      "feedback.fluency_techniques — Post-task delayed feedback, error codes",
+      "l1_management.l1_percentage — según tabla l1_policy_per_guide",
+      "l1_management.english_zone_declaration — cómo se declara en esa sesión",
+      "l1_management.l1_allowed_for — casos legítimos",
+      "l1_management.reduction_strategy — técnica específica",
+      "stress_pronunciation.focus_words — palabras target del taller",
+      "stress_pronunciation.techniques — Finger drilling, Backchaining, Clapping, Choral drill, Board marking",
+      "success_vocabulary.target_words — vocabulario target de la sesión",
+      "success_vocabulary.factors_applied — SUCCESS (Sounds, Use, Conceptualize, Creativity, Encounter, Self-expression)"
+    ]
+  },
+
+  "next_step": {
+    "pm": "Fase 3.2 — enriquecer pm-3-1.json con pm0_alignment_by_session, ambientes_resumen, estrategias_resumen, voc_dimensions_table",
+    "input_from_pm0_context": "Descriptor G1 A1.1 + grammar_roadmap.G1_A1.1 + l1_policy G1 + methodological_shifts G1",
+    "expected_output": "pm-3-1.json enriquecido con las 5 matrices canónicas v2.6 listas para propagar a los 8 pm-3-2-sX.json"
+  },
+
+  "_retroactive_note": "Este archivo se creó en Fase 3 del upgrade v2.6.6 (2026-04-21) para alinear DIESEL-04-19 al canon. El run original (2026-04-19) no incluyó pm-0-context.json porque la arquitectura v2.6 fue sellada posteriormente. Los principios aquí documentados reflejan las decisiones pedagógicas reales tomadas durante el diseño original de la guía, codificadas retrospectivamente."
+}
