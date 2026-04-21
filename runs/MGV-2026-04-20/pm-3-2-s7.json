@@ -383,5 +383,41 @@
       ],
       "source": "PM-0 §7"
     }
+  },
+  "activity_logistics": {
+    "A3.4.1": {
+      "nombre_short": "PLAN — Read Sophia's Brief & Plan Your Direction",
+      "estrategia": "Aprendizaje Basado en Proyectos (ABP)",
+      "tecnica": "Planeación estratégica con matriz",
+      "duracion_horas": "1.75 horas",
+      "materiales": [
+        "Mission Brief (Apéndice E)",
+        "Planning Canvas (Apéndice F)",
+        "lapicero",
+        "marcador"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.4.2": {
+      "nombre_short": "DESIGN — Reference Search & Visual Selection",
+      "estrategia": "Aprendizaje Basado en Proyectos (ABP) + Búsqueda documental",
+      "tecnica": "Curación visual y selección de referencias",
+      "duracion_horas": "1.58 horas",
+      "materiales": [
+        "Computador por aprendiz",
+        "carpeta digital personal",
+        "auriculares"
+      ],
+      "material_apoyo": "https://unsplash.com · https://pinterest.com · https://behance.net",
+      "produce_evidencia": false
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    }
   }
 }

@@ -670,5 +670,72 @@
       "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
       "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S1."
     }
+  },
+  "activity_logistics": {
+    "A3.1.1": {
+      "nombre_short": "Image Walk: Designer's Eye",
+      "estrategia": "Aprendizaje Basado en Tareas (ABT)",
+      "tecnica": "Image walk / galería visual",
+      "duracion_horas": "0.5 horas",
+      "materiales": [
+        "6 referencias impresas A4 (colocadas en la pared)",
+        "Post-it amarillos (1 por aprendiz)",
+        "Marcadores"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.1.2": {
+      "nombre_short": "Vocabulary Pre-Diagnostic: What words do you already know?",
+      "estrategia": "Evaluación diagnóstica",
+      "tecnica": "Cuestionario de pre-diagnóstico escrito",
+      "duracion_horas": "0.42 horas",
+      "materiales": [
+        "Hoja diagnóstica 20 términos"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.2.1": {
+      "nombre_short": "Studio Tour: Meet Pixel & Ink",
+      "estrategia": "Aprendizaje Basado en Proyectos (ABP) - Simulación profesional",
+      "tecnica": "Tour guiado narrativo (Studio Tour)",
+      "duracion_horas": "0.75 horas",
+      "materiales": [
+        "Studio Welcome Card A4 (1 por aprendiz)"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.2.2": {
+      "nombre_short": "Roles Carousel: Who does what?",
+      "estrategia": "Aprendizaje colaborativo",
+      "tecnica": "Carrusel de roles",
+      "duracion_horas": "0.83 horas",
+      "materiales": [
+        "4 estaciones con tarjetas de roles + acciones",
+        "Cuaderno"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.2.3": {
+      "nombre_short": "Bridge to S2: Why Vocabulary Matters",
+      "estrategia": "Aprendizaje Basado en Problemas",
+      "tecnica": "Discusión guiada puente a sesión 2",
+      "duracion_horas": "0.83 horas",
+      "materiales": [
+        "Cuaderno"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    }
   }
 }

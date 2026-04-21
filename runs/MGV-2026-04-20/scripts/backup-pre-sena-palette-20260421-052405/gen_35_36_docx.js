@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
  * gen_35_36_docx.js — Generates 2 review DOCX:
- *   1. pm-3-5-FINAL-G1.docx  (Final Mission ABP — Brief + Checklist + Rúbrica · FINAL canónico, PM-3.5 no tiene audit separado)
- *   2. pm-3-6-review.docx    (GFPI-F-135 Learning Guide V02 · review sin portada audit; FINAL con portada lo hace gen_audit_docx.js)
+ *   1. pm-3-5-review.docx  (Final Mission ABP — Brief + Checklist + Rúbrica)
+ *   2. pm-3-6-review.docx  (GFPI-F-135 Learning Guide V02)
  *
  * Output: /sessions/focused-cool-dirac/mnt/fpi-sena-factory/runs/MGV-2026-04-20/
  */
@@ -21,11 +21,8 @@ const { renderSeccion4Evidencias } = require('./lib/render_seccion4_evidencias')
 
 const RUN_DIR = '/sessions/focused-cool-dirac/mnt/fpi-sena-factory/runs/MGV-2026-04-20';
 
-// ------- Paleta SENA institucional (v2.6.6 — verde protagonista + azul oscuro) -------
-// Nombres legacy (NAVY, ORANGE) preservados para evitar rename cascada; valores
-// remapeados a la identidad de marca SENA (#39A900 verde + #0B2E45 azul).
-const NAVY = '0B2E45';      // azul oscuro SENA — títulos, encabezados de tabla
-const ORANGE = '39A900';    // verde SENA institucional — acentos, bordes, CTAs (nombre legacy)
+const NAVY = '1C2B3C';
+const ORANGE = 'F59316';
 const GREY = '666666';
 const LIGHT = 'F2F2F2';
 const ACCENT = 'D5E8F0';
@@ -693,7 +690,7 @@ function buildPM36Doc() {
   // Canon v2.6.5: renderer compartido con gen_audit_docx.js (ver scripts/lib/render_seccion4_evidencias.js)
   const s4Children = renderSeccion4Evidencias(d, {
     docx: { Paragraph, TextRun, Table, TableRow, TableCell, AlignmentType, WidthType, ShadingType },
-    palette: { ORANGE, WHITE, GREY, CREAM: 'E8F5E3', CONTENT_W },
+    palette: { ORANGE, WHITE, GREY, CREAM: 'FFF6E8', CONTENT_W },
     helpers: {
       P, H1, H2, H3, cell, kv,
       // Shims: este generador usa callout/note en lugar de quote/note, no tiene makeTable ni pageBreak.
@@ -857,22 +854,9 @@ function renderActivity(children, a, apendicesDict) {
 // ============================================================
 // MAIN
 // ============================================================
-// NOTA ARQUITECTÓNICA v2.6.6:
-//   PM-3.5 (Misión Final ABP) NO tiene generador audit separado — no forma parte
-//   del pipeline de portada "FPI CD Engine · FINAL PARA AUDITORÍA" (que sí aplica
-//   a PM-3.1 / PM-3.2 / PM-3.6 vía gen_audit_docx.js). Por lo tanto el output de
-//   PM-3.5 aquí ES el FINAL canónico (no existe "review" separado para PM-3.5).
-//
-//   Antes de v2.6.6 existía un paso manual `cp pm-3-5-review.docx pm-3-5-FINAL-G1.docx`
-//   post-build que creaba dos archivos MD5-idénticos. Se elimina la duplicación:
-//   el output se nombra directamente `pm-3-5-FINAL-G1.docx`.
-//
-//   PM-3.6 sí mantiene dos outputs distintos:
-//     - pm-3-6-review.docx   (este generador, sin portada audit)
-//     - pm-3-6-FINAL-G1.docx (gen_audit_docx.js, con portada audit)
 async function main() {
   const targets = [
-    { name: 'pm-3-5-FINAL-G1.docx', build: buildPM35Doc },
+    { name: 'pm-3-5-review.docx', build: buildPM35Doc },
     { name: 'pm-3-6-review.docx', build: buildPM36Doc },
   ];
   for (const t of targets) {
@@ -888,7 +872,7 @@ async function main() {
       console.error(e.stack);
     }
   }
-  console.log('[done] DOCX PM-3.5 FINAL-G1 + PM-3.6 review');
+  console.log('[done] DOCX review PM-3.5 + PM-3.6');
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

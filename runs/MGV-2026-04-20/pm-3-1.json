@@ -1506,5 +1506,73 @@
       "PM-4.2 — Ensamblar Cuestionario Consolidado E6 (25 ítems: 5 Reading + 5 Writing + 5 Listening + 5 Vocabulary + 5 Grammar) a partir de las 6 fuentes textuales de la guía"
     ],
     "compuerta_a_fase_4": "Tras completar PM-3.2 × 8 + PM-4.1 + PM-4.2, re-ejecutar PM-2.11 Check 14 extendida (strategy + pm0 propagation) como compuerta hacia Fase 4 (PM-3.6 GFPI-F-135, PM-3.3 Canva Deck, PM-3.4 Workbook, PM-3.5 Final Mission)."
+  },
+  "sessions_logistics": [
+    {
+      "s": 1,
+      "ambiente": "Aula bilingüe en U o mesas de 4. Proyector + tablero + English Zone señalizada. Word Wall vacío activado.",
+      "momento_sena": "3.1 Reflexión Inicial + 3.2 Contextualización",
+      "estrategia_dominante": "ABP + Diagnóstico activador",
+      "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
+    },
+    {
+      "s": 2,
+      "ambiente": "Aula + mesas de 4 para jigsaw + Word Wall activado en pared lateral con 10 tarjetas tipográficas.",
+      "momento_sena": "3.3 Apropiación",
+      "estrategia_dominante": "ABT — Pre-enseñanza léxica + lectura andamiada + tarea clasificación",
+      "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
+    },
+    {
+      "s": 3,
+      "ambiente": "Aula + mesas para peer review en parejas + muro de fuentes (display wall) con 10 samples grandes.",
+      "momento_sena": "3.3 Apropiación",
+      "estrategia_dominante": "ABT — Gramática explícita en contexto + producción guiada + peer review",
+      "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
+    },
+    {
+      "s": 4,
+      "ambiente": "Aula + parlantes + rueda de color en muro + espacio despejado al centro para roleplays simultáneos.",
+      "momento_sena": "3.3 Apropiación",
+      "estrategia_dominante": "ABT + Simulación — TBLT listening→speaking con roleplay",
+      "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
+    },
+    {
+      "s": 5,
+      "ambiente": "Aula configurada en 5 estaciones (mesas separadas) para Role Carousel + cronómetro visible + connector wall.",
+      "momento_sena": "3.3 Apropiación",
+      "estrategia_dominante": "Simulación rotativa — Role Carousel + integración comunicativa",
+      "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
+    },
+    {
+      "s": 6,
+      "ambiente": "Aula en configuración de examen (mesas individuales, silencio académico) + proyector para audio + instrucciones.",
+      "momento_sena": "3.3 Apropiación — consolidación (transición a Evaluación)",
+      "estrategia_dominante": "Evaluación Formativa Integrada — Cuestionario + retroalimentación + metacognición",
+      "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
+    },
+    {
+      "s": 7,
+      "ambiente": "Aula-taller con mesas grandes (1 por aprendiz) + acceso a computador + biblioteca de revistas de diseño.",
+      "momento_sena": "3.4 Transferencia (1ª mitad — ABP Planeación + Diseño)",
+      "estrategia_dominante": "ABP — Fase exploratoria/diseño del Mood Board",
+      "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
+    },
+    {
+      "s": 8,
+      "ambiente": "Aula convertida en 'Studio Showcase': Mood Boards expuestos en muro + sillas para audiencia + mesa central para presentador.",
+      "momento_sena": "3.4 Transferencia (2ª mitad — ABP Desempeño + Presentación + Evaluación reflexiva)",
+      "estrategia_dominante": "ABP — Fase ejecutiva/presentación/evaluación reflexiva",
+      "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
+    }
+  ],
+  "data_flow_contract": {
+    "activity_footer": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "principle": "Activity footer in pm-3-6 is DERIVED, not authored.",
+      "session_wide_source": "pm-3-1.sessions_logistics[s]",
+      "activity_wide_source": "pm-3-2-sX.activity_logistics[activity_id]",
+      "evidence_lookup_source": "pm-4-1.instrument_{1..5}_* + pm-4-2 for E6",
+      "deriver_script": "scripts/derive_activity_footer_from_playbook.js"
+    }
   }
 }

@@ -451,5 +451,67 @@
       ],
       "source": "PM-0 §7"
     }
+  },
+  "activity_logistics": {
+    "A3.3.S4.1": {
+      "nombre_short": "Color Wheel Vocabulary Activation",
+      "estrategia": "Aprendizaje Basado en Tareas (ABT)",
+      "tecnica": "Activación léxica con soporte visual",
+      "duracion_horas": "1 hora",
+      "materiales": [
+        "Color wheel impreso",
+        "marcadores de colores",
+        "swatches de papel"
+      ],
+      "material_apoyo": "https://color.adobe.com (solo demostración, opcional)",
+      "produce_evidencia": false
+    },
+    "A3.3.S4.2": {
+      "nombre_short": "EVIDENCE E3 — Listening: Sophia's Voice Note + Laura's Response",
+      "estrategia": "Evaluación formativa",
+      "tecnica": "Listening comprensivo — Lista de Chequeo No 3",
+      "duracion_horas": "1.25 horas",
+      "materiales": [
+        "Archivo audio Sophia-Laura (Apéndice C)",
+        "parlantes",
+        "hoja de respuestas (10 ítems)",
+        "lapicero"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": true
+    },
+    "A3.3.S4.3": {
+      "nombre_short": "Pronunciation Lab — The 4 Tricky Words",
+      "estrategia": "Aprendizaje Basado en Tareas (ABT)",
+      "tecnica": "Drilling fonético (stress marking + mirror technique)",
+      "duracion_horas": "1.17 horas",
+      "materiales": [
+        "Tarjetas de 4 palabras target",
+        "mini-espejo (opcional)",
+        "hoja de auto-marca"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.3.S4.4": {
+      "nombre_short": "EVIDENCE E4 — Speaking Roleplay (Junior Designer to Sophia)",
+      "estrategia": "Evaluación formativa + Simulación profesional",
+      "tecnica": "Roleplay en pares (Junior Designer ↔ Sophia)",
+      "duracion_horas": "1.5 horas",
+      "materiales": [
+        "Mood board de referencia",
+        "checklist observación",
+        "cronómetro"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": true
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    }
   }
 }

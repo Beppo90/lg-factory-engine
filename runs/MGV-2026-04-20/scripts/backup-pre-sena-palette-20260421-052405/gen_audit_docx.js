@@ -22,24 +22,21 @@ const { renderSeccion4Evidencias } = require('./lib/render_seccion4_evidencias')
 
 const RUN_DIR = '/sessions/focused-cool-dirac/mnt/fpi-sena-factory/runs/MGV-2026-04-20';
 
-// ------- Paleta SENA institucional v2.6.6 (verde protagonista + azul oscuro) -------
-// Nombres legacy (NAVY, ORANGE, GREEN, BEIGE, CREAM) preservados para evitar
-// rename cascada en ~145 puntos de uso. Los valores fueron remapeados a la
-// identidad de marca SENA: verde institucional #39A900 como acento hero,
-// azul oscuro #0B2E45 como títulos/headers, fondos con tintes verdes.
-const NAVY = '0B2E45';        // azul oscuro SENA — títulos, encabezados de tabla
-const ORANGE = '39A900';      // verde SENA institucional — acentos, bordes dimension, CTAs (nombre legacy)
-const STEEL = '1A4068';       // azul medio para sub-headers (armonizado con NAVY SENA)
+// ------- Paleta canon MGV v2.6+ (navy + orange + extensión Ronda 1/2) -------
+// Core
+const NAVY = '1C2B3C';        // títulos principales, encabezados de tabla
+const ORANGE = 'F59316';      // acentos, bordes dimension, CTAs
+const STEEL = '2E4057';       // sub-headers de actividad (medium navy, Ronda 2)
 const DKGREY = '5A6A7A';      // texto secundario fuerte (DIESEL canónico)
 const GREY = '666666';        // notas, pies, legends
 const LIGHT = 'F2F2F2';       // zebra striping tablas
 const LGREY = 'F3F5F7';       // shading dimensionBlock (DIESEL canónico)
-const ACCENT = 'D5E8F0';      // llamadas suaves (azul tenue, compatible con NAVY SENA)
+const ACCENT = 'D5E8F0';      // llamadas suaves
 const WHITE = 'FFFFFF';
-const GREEN = '007832';       // verde oscuro SENA — badges, sellos FORMAL INSTRUMENT
+const GREEN = '4CAF50';
 // Extensión categórica (Ronda 1 — categorías de slide/skill)
-const BEIGE = 'F0F8EC';       // entregableBox shading (verde tenue, ex beige)
-const CREAM = 'E8F5E3';       // evidenceBox shading (verde suave SENA, ex cream)
+const BEIGE = 'FFFBF5';       // entregableBox shading
+const CREAM = 'FFF8EE';       // evidenceBox shading
 const SKY = 'C5DCE8';         // categoría Reading
 const GREEN_CAT = 'CDE3CC';   // categoría Writing
 const PURPLE = 'DCD0E8';      // categoría Language Functions
@@ -494,16 +491,13 @@ function renderCefrReferenceSection(currentLevel = 'A1.1') {
 
   // Tabla 1 — 6 niveles CEFR con gradiente + marcado A1★
   ch.push(H3('Niveles CEFR (A1 → C2)'));
-  // Gradiente CEFR remapeado a identidad SENA (v2.6.6): verde claro (A1) →
-  // verde institucional (B2) → azul oscuro SENA (C2). Conserva la jerarquía
-  // comunicativa de niveles (más intensidad = mayor dominio) sin usar naranjas.
   const cefrLevels = [
-    { nivel: 'A1', etiqueta: '★ Breakthrough', desc: 'Usuario básico inicial · frases cotidianas · necesidades concretas', fill: 'DCEEDC', highlight: true },
-    { nivel: 'A2', etiqueta: 'Waystage', desc: 'Usuario básico · expresiones rutinarias · información personal', fill: 'C2E3B9', highlight: false },
-    { nivel: 'B1', etiqueta: 'Threshold', desc: 'Usuario independiente · textos sencillos · situaciones conocidas', fill: '8ED18B', highlight: false },
-    { nivel: 'B2', etiqueta: 'Vantage', desc: 'Usuario independiente · ideas complejas · interacción fluida', fill: '39A900', highlight: false },
-    { nivel: 'C1', etiqueta: 'Effective', desc: 'Usuario competente · textos exigentes · uso flexible', fill: '007832', highlight: false },
-    { nivel: 'C2', etiqueta: 'Mastery', desc: 'Usuario competente · comprende todo · expresión matizada', fill: '0B2E45', highlight: false },
+    { nivel: 'A1', etiqueta: '★ Breakthrough', desc: 'Usuario básico inicial · frases cotidianas · necesidades concretas', fill: 'CDE3CC', highlight: true },
+    { nivel: 'A2', etiqueta: 'Waystage', desc: 'Usuario básico · expresiones rutinarias · información personal', fill: 'E0EBDF', highlight: false },
+    { nivel: 'B1', etiqueta: 'Threshold', desc: 'Usuario independiente · textos sencillos · situaciones conocidas', fill: 'F0ECDC', highlight: false },
+    { nivel: 'B2', etiqueta: 'Vantage', desc: 'Usuario independiente · ideas complejas · interacción fluida', fill: 'F5E4CA', highlight: false },
+    { nivel: 'C1', etiqueta: 'Effective', desc: 'Usuario competente · textos exigentes · uso flexible', fill: 'F8D5AE', highlight: false },
+    { nivel: 'C2', etiqueta: 'Mastery', desc: 'Usuario competente · comprende todo · expresión matizada', fill: 'F59316', highlight: false },
   ];
   const cefrHeaderRow = new TableRow({ tableHeader: true, children: [
     headerCell('Nivel', 1200),
@@ -2766,7 +2760,7 @@ function buildPM36Docx() {
   // Canon v2.6.5: renderer compartido (fuente única de verdad — ver scripts/lib/render_seccion4_evidencias.js)
   const s4Children = renderSeccion4Evidencias(d, {
     docx: { Paragraph, TextRun, Table, TableRow, TableCell, AlignmentType, WidthType, ShadingType },
-    palette: { ORANGE, WHITE, GREY, CREAM: 'E8F5E3', CONTENT_W },
+    palette: { ORANGE, WHITE, GREY, CREAM: 'FFF6E8', CONTENT_W },
     helpers: { P, H1, H2, H3, cell, kv, quote, note, makeTable, pageBreak },
   });
   for (const el of s4Children) ch.push(el);

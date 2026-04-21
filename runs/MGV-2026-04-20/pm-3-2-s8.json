@@ -389,5 +389,55 @@
       ],
       "source": "PM-0 §7"
     }
+  },
+  "activity_logistics": {
+    "A3.4.3": {
+      "nombre_short": "PERFORM — Build Your Final Mood Board",
+      "estrategia": "Aprendizaje Basado en Proyectos (ABP)",
+      "tecnica": "Taller práctico de construcción",
+      "duracion_horas": "1 hora",
+      "materiales": [
+        "Cartulina A3",
+        "tijeras",
+        "pegamento",
+        "impresiones de referencias",
+        "marcadores; o computador con Canva"
+      ],
+      "material_apoyo": "https://canva.com (opcional modalidad digital)",
+      "produce_evidencia": false
+    },
+    "A3.4.4": {
+      "nombre_short": "PRESENT — Pitch to Sophia (2 minutes)",
+      "estrategia": "Aprendizaje Basado en Proyectos (ABP)",
+      "tecnica": "Pitch oral simulado (2 minutos)",
+      "duracion_horas": "1.58 horas",
+      "materiales": [
+        "Mood board producido",
+        "cronómetro",
+        "hoja observación Sophia-instructor"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.4.5": {
+      "nombre_short": "ASSESS — Self-Reflection + Peer Evaluation",
+      "estrategia": "Aprendizaje reflexivo",
+      "tecnica": "Ficha de autoevaluación + Design Star peer award",
+      "duracion_horas": "1 hora",
+      "materiales": [
+        "Ficha Self-Reflection (Apéndice G)",
+        "Design Star card",
+        "bolígrafo"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    }
   }
 }

@@ -453,5 +453,65 @@
       ],
       "source": "PM-0 §7"
     }
+  },
+  "activity_logistics": {
+    "A3.3.S5.1": {
+      "nombre_short": "Connector Awareness — and / but in Design Discourse (Group 15)",
+      "estrategia": "Aprendizaje Basado en Problemas",
+      "tecnica": "Consciousness-raising de conectores (and/but)",
+      "duracion_horas": "1 hora",
+      "materiales": [
+        "Hoja de conectores con ejemplos auténticos",
+        "pizarrón",
+        "marcadores"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.3.S5.2": {
+      "nombre_short": "5 Functions Drill — F1 Greetings, F2 Identifying, F3 Describing, F4 Instructions",
+      "estrategia": "Aprendizaje Basado en Tareas (ABT)",
+      "tecnica": "Drill funcional (5 funciones F1-F5)",
+      "duracion_horas": "1.67 horas",
+      "materiales": [
+        "Hojas F1-F5 con chunks",
+        "lapicero",
+        "tarjetas de función"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.3.S5.3": {
+      "nombre_short": "EVIDENCE E5 — Role Carousel (5 stations × 90 seconds)",
+      "estrategia": "Evaluación formativa + Simulación profesional",
+      "tecnica": "Carrusel de estaciones (5 × 90 segundos)",
+      "duracion_horas": "2.17 horas",
+      "materiales": [
+        "5 estaciones temáticas (F1-F5) con prompts",
+        "cronómetro",
+        "hoja de observación"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": true
+    },
+    "A3.3.S5.4": {
+      "nombre_short": "Wrap-Up Reflection: Which function was hardest?",
+      "estrategia": "Aprendizaje reflexivo",
+      "tecnica": "Diario de cierre guiado",
+      "duracion_horas": "1.17 horas",
+      "materiales": [
+        "Hoja de reflexión con prompts A1.1",
+        "lapicero"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    }
   }
 }

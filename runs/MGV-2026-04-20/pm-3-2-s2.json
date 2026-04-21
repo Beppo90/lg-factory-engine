@@ -433,5 +433,64 @@
       ],
       "source": "PM-0 §7"
     }
+  },
+  "activity_logistics": {
+    "A3.3.S2.1": {
+      "nombre_short": "Toolbelt 5×4 — Word Wall Construction",
+      "estrategia": "Aprendizaje colaborativo",
+      "tecnica": "Construcción de Word Wall en grupos",
+      "duracion_horas": "1.67 horas",
+      "materiales": [
+        "20 tarjetas físicas Toolbelt",
+        "cinta adhesiva",
+        "marcadores"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.3.S2.2": {
+      "nombre_short": "Master Anchor Reading — Jigsaw on 'The Story of Two Fonts'",
+      "estrategia": "Aprendizaje colaborativo",
+      "tecnica": "Jigsaw reading",
+      "duracion_horas": "1.67 horas",
+      "materiales": [
+        "Master Anchor Text impreso (Apéndice A)",
+        "highlighters",
+        "hoja de preguntas"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.3.S2.3": {
+      "nombre_short": "Classification Drill — Real-World Application",
+      "estrategia": "Aprendizaje Basado en Tareas (ABT)",
+      "tecnica": "Práctica controlada de clasificación",
+      "duracion_horas": "1.25 horas",
+      "materiales": [
+        "Hoja de drill con imágenes de fuentes reales",
+        "lapicero"
+      ],
+      "material_apoyo": "https://fonts.google.com (referencia de fuentes reales)",
+      "produce_evidencia": false
+    },
+    "A3.3.S2.4": {
+      "nombre_short": "EVIDENCE E1 — Reading Quiz (Cuestionario No 1)",
+      "estrategia": "Evaluación formativa",
+      "tecnica": "Cuestionario cerrado — Lista de Chequeo No 1",
+      "duracion_horas": "0.42 horas",
+      "materiales": [
+        "Quiz impreso (10 ítems)",
+        "lapicero"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": true
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    }
   }
 }

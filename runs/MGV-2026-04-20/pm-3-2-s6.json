@@ -402,5 +402,66 @@
       ],
       "source": "PM-0 §7"
     }
+  },
+  "activity_logistics": {
+    "A3.3b.1": {
+      "nombre_short": "Portfolio Check: Your 5 Pieces of Evidence",
+      "estrategia": "Evaluación formativa",
+      "tecnica": "Portfolio review individual con self-check",
+      "duracion_horas": "1.5 horas",
+      "materiales": [
+        "5 evidencias previas E1-E5 del aprendiz",
+        "hoja self-check",
+        "lapicero"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.3b.2": {
+      "nombre_short": "EVIDENCE E6 — Consolidated Quiz (25 items × 1 pt)",
+      "estrategia": "Evaluación formativa",
+      "tecnica": "Cuestionario cerrado consolidado",
+      "duracion_horas": "1.5 horas",
+      "materiales": [
+        "Cuestionario 25 ítems impreso (5 secciones × 5)",
+        "lapicero",
+        "reloj"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": true
+    },
+    "A3.3b.3": {
+      "nombre_short": "Co-evaluación + Cierre Apropiación",
+      "estrategia": "Aprendizaje reflexivo + colaborativo",
+      "tecnica": "Coevaluación guiada",
+      "duracion_horas": "1.5 horas",
+      "materiales": [
+        "Hoja co-evaluación",
+        "post-its",
+        "marcadores"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.3b.4": {
+      "nombre_short": "Bridge to Final Mission",
+      "estrategia": "Aprendizaje Basado en Proyectos (ABP) - Activación",
+      "tecnica": "Briefing profesional (Mission Brief)",
+      "duracion_horas": "1.5 horas",
+      "materiales": [
+        "Mission Brief impreso (Apéndice E)",
+        "videobeam",
+        "fragmento ejemplo mood board"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    }
   }
 }

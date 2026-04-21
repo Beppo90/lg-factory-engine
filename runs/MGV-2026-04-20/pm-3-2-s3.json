@@ -428,5 +428,67 @@
       ],
       "source": "PM-0 §7"
     }
+  },
+  "activity_logistics": {
+    "A3.3.S3.1": {
+      "nombre_short": "Grammar Activation: This is / That is + Adjective Position",
+      "estrategia": "Aprendizaje Basado en Problemas",
+      "tecnica": "Consciousness-raising gramatical",
+      "duracion_horas": "1.75 horas",
+      "materiales": [
+        "Fichas de grammar inductivo (Gr 1/Gr 4)",
+        "pizarrón",
+        "marcadores"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.3.S3.2": {
+      "nombre_short": "Font Card Modeling — Andrés' First Card (Demonstration)",
+      "estrategia": "Aprendizaje por modelado",
+      "tecnica": "Demostración guiada (Andrés sample card)",
+      "duracion_horas": "0.83 horas",
+      "materiales": [
+        "Sample Font Card Andrés (Apéndice B)",
+        "pizarrón",
+        "marcadores"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.3.S3.3": {
+      "nombre_short": "Production — Write Your Own Font Card (Solo)",
+      "estrategia": "Aprendizaje Basado en Tareas (ABT)",
+      "tecnica": "Producción escrita individual",
+      "duracion_horas": "2.17 horas",
+      "materiales": [
+        "Template font card impreso",
+        "lapicero",
+        "regla",
+        "borrador"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": false
+    },
+    "A3.3.S3.4": {
+      "nombre_short": "Peer Review + EVIDENCE E2 — Writing Final Font Card",
+      "estrategia": "Aprendizaje colaborativo + Evaluación formativa",
+      "tecnica": "Peer review con checklist estructurada",
+      "duracion_horas": "1.25 horas",
+      "materiales": [
+        "Checklist peer review impresa",
+        "font cards producidos en S3.3",
+        "lapicero"
+      ],
+      "material_apoyo": "no aplica",
+      "produce_evidencia": true
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    }
   }
 }

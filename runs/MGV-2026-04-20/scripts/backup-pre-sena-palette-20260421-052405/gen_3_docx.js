@@ -19,10 +19,9 @@ const {
 
 const RUN_DIR = '/sessions/focused-cool-dirac/mnt/fpi-sena-factory/runs/MGV-2026-04-20';
 
-// ------- Paleta SENA institucional v2.6.6 (verde protagonista + azul oscuro) -------
-// Nombres legacy preservados; valores remapeados a identidad de marca SENA.
-const NAVY = '0B2E45';      // azul oscuro SENA — títulos, encabezados de tabla
-const ORANGE = '39A900';    // verde SENA institucional — acentos, bordes, CTAs (legacy)
+// ------- Colors (canon MGV) -------
+const NAVY = '1C2B3C';
+const ORANGE = 'F59316';
 const GREY = '666666';
 const LIGHT = 'F2F2F2';
 const ACCENT = 'D5E8F0';
