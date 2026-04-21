@@ -10,8 +10,8 @@
 |-------|-------|
 | **Código** | PM-3.6 |
 | **Nombre** | GFPI-F-135 Learning Guide Generator |
-| **Versión** | 2.6 |
-| **Last Verified** | 2026-04-20 |
+| **Versión** | 2.6.5 |
+| **Last Verified** | 2026-04-21 |
 | **Ubicación** | Fase 4, posterior a PM-3.2 (Playbook Build-Out completo) |
 | **Output** | Documento GFPI-F-135 V02 — Guía de Aprendizaje del Aprendiz (redactada en 2ª persona) |
 | **Rol en el sistema** | Transforma el Playbook del Instructor (PM-3.2) en la Guía del Aprendiz (GFPI-F-135) |
@@ -268,6 +268,381 @@ Cada actividad que usa apéndices DEBE declarar `apendices_referenciados` (array
 ### Consecuencia arquitectónica v2.6
 
 La Guía del Aprendiz (GFPI-F-135) emitida por PM-3.6 ahora tiene **paridad operativa total** con el Instructor's Playbook (PM-3.2): mismo bloque `activity_footer` visible, mismo contenido de apéndice inline, misma coherencia entre qué ve el instructor y qué ejecuta el aprendiz. Se eliminan los documentos fantasma (actividad referencia apéndice que no existe) y los saltos de navegación (aprendiz tiene que buscar el texto de lectura en otra sección).
+
+---
+
+## EXTENSIÓN v2.6.1 — DATA-FLOW INVERSION DEL `activity_footer`
+
+> [!warning] CANON v2.6.1 — El `activity_footer` es DERIVADO, no autoreado
+> Desde v2.6.1, PM-3.6 NO genera `activity_footer` directamente. El bloque vive como dato derivado desde upstream.
+
+**Regla:** PM-3.6 emite `pm-3-6.json` SIN `activity_footer` en cada actividad. El footer se inyecta post-hoc por el script `derive_activity_footer_from_playbook.js` leyendo:
+
+- Campos sesión-wide → `pm-3-1.sessions_logistics[s].{ambiente, momento_sena, estrategia_dominante}`
+- Campos actividad-wide → `pm-3-2-sX.activity_logistics[act_id].{estrategia (override), tecnica, duracion_horas, materiales, material_apoyo}`
+- Bloque evidencia (solo para 6 actividades de evidencia formal) → `pm-4-1.instrument_{1..5}_*` o `pm-4-2` (E6)
+
+**Prohibido:** editar `activity_footer` manualmente en `pm-3-6.json`. Toda modificación va a PM-3.1 o PM-3.2-sX, seguida de re-derive.
+
+**Validador:** `check-no-orphan-footer.js` (exit 1 si algún footer diverge de su fuente upstream; obligatorio antes de emitir DOCX).
+
+**Mapping canónico de los 6 activities con bloque `evidencia`:**
+
+| `activity_id` | E# | Instrumento | Técnica SENA | Tipo |
+|---|---|---|---|---|
+| `A3.3.S2.4` | E1 | Cuestionario No 1 — Reading | Preguntas | Conocimiento |
+| `A3.3.S3.4` | E2 | Rúbrica analítica No 2 — Writing | Verificación del producto | Producto |
+| `A3.3.S4.2` | E3 | Lista de Chequeo No 3 — Listening | Observación | Desempeño |
+| `A3.3.S4.4` | E4 | Escala de Estimación No 4 — Speaking | Observación | Desempeño |
+| `A3.3.S5.3` | E5 | Escala de Estimación No 5 — Language Functions | Observación | Desempeño |
+| `A3.3b.2` | E6 | Cuestionario Técnico Consolidado (25 pts) | Preguntas | Conocimiento |
+
+---
+
+## EXTENSIÓN v2.6.3 — ACTIVITY CARD SCHEMA CON `scaffold_inline` EMBEBIDO
+
+> [!warning] CANON v2.6.3 — El workspace del aprendiz vive DENTRO de la actividad
+> Desde v2.6.3, cada actividad de §3 `seccion_3_actividades_aprendizaje` debe embeber su espacio de trabajo como `scaffold_inline`. PROHIBIDO crear anexos imprimibles separados como workspace.
+
+### REGLA 13 — ACTIVITY CARD v2.6.3 (LEARNER-FACING SCHEMA)
+
+Cada item de `seccion_3_actividades_aprendizaje` debe cumplir el schema v2.6.3 documentado en **Activity Card — Schema.md §9** (Learner-Facing). Los **12 campos canónicos** obligatorios son:
+
+```json
+{
+  "actividad_id":         "A3.3.S2.4",
+  "titulo_en":            "Toolbelt Quiz — Reading Check",
+  "titulo_es":            "Cuestionario Toolbelt — Verificación de Lectura",
+  "tipo_actividad_sena":  "directa | directa_con_trabajo_autonomo | trabajo_autonomo",
+  "tiempo_min":           45,
+  "agrupacion":           "individual | pares | grupo_pequeno | plenaria",
+  "voc_dimension":        ["cognitiva", "procedimental", "actitudinal"],
+  "descripcion_aprendiz": { "en": "...", "es": "..." },
+  "paso_a_paso":          [ { "en": "...", "es": "..." }, ... ],   // 3–8 pasos
+  "scaffold_inline":      { "tipo": "...", "titulo_en": "...", "titulo_es": "...", "badge": "...", "estructura": { ... } },
+  "entregable":           { "producto": {en,es}, "formato": {en,es}, "criterio_minimo": {en,es} },
+  "activity_footer":      { /* derivado v2.6.1 */ }
+}
+```
+
+**Campos obsoletos eliminados** (ausentes en pm-3-6.json):
+- `nombre_aprendiz` → absorbido por `titulo_en` / `titulo_es`
+- `etiquetas_dimension` → absorbido por `voc_dimension`
+- `instruccion_2pers_en` → absorbido por `descripcion_aprendiz.en` + `paso_a_paso[*].en`
+- `instruccion_supervivencia_es` → absorbido por `descripcion_aprendiz.es` + `paso_a_paso[*].es`
+
+**Meta del documento:** `pm-3-6.json.meta.activities_schema_version === "v2.6.3"` obligatorio.
+
+### REGLA 14 — LOS 10 TIPOS CANÓNICOS DE `scaffold_inline.tipo`
+
+Todo valor de `scaffold_inline.tipo` debe ser exactamente uno de estos 10. Cualquier otro valor es error bloqueante:
+
+| `tipo` | Uso pedagógico típico | Estructura mínima |
+|---|---|---|
+| `matching` | Pre-activación vocabulario, glosario bilingüe | `{ items: [ {en, es} ] }` |
+| `checklist` | Verificación procedural, revisión entre pares | `{ items: [ {texto_en, texto_es} ] }` |
+| `form` | Captura estructurada (brief, risk assessment, inspection) | `{ campos: [ {label_en, label_es, tipo, hint?} ] }` |
+| `t_chart` | Comparación binaria (ventajas/desventajas) | `{ columna_izq: {...}, columna_der: {...} }` |
+| `writing_template` | Producción escrita guiada con huecos | `{ plantilla_en, plantilla_es, slots: [...] }` |
+| `listening_capture` | Notas durante escucha | `{ secciones: [ {label_en, label_es, guia, lineas} ] }` |
+| `quiz_preview` | Pre-test / Cuestionario Técnico Consolidado / Reading E1 | `{ items: [ {n, pregunta_en, pregunta_es, tipo, opciones?} ] }` |
+| `speaking_script` | Diálogo pautado con turnos | `{ turnos: [ {hablante, linea_en, linea_es?} ] }` |
+| `reflection_lines` | Reflexión abierta / meta-cognición | `{ prompt_en, prompt_es, lineas }` |
+| `rating` | Auto-evaluación / escala Likert / semáforo | `{ items: [...], escala: {...} }` |
+
+Agregar un tipo nuevo requiere: (a) ampliar el enum en Activity Card — Schema.md §9.5, (b) extender el dispatcher `renderScaffoldInline` en `gen_audit_docx.js`, (c) extender el validador `check-activity-card-schema.js`.
+
+### REGLA 15 — BADGE `★ FORMAL INSTRUMENT` EN 6 EVIDENCIAS
+
+Las 6 actividades de evidencia formal (mapping v2.6.1) DEBEN tener `scaffold_inline.badge` con el ID canónico de su instrumento:
+
+| `activity_id` | `scaffold_inline.badge` | Instrumento |
+|---|---|---|
+| `A3.3.S2.4` | `instrument_1_reading` | Cuestionario No 1 — Reading |
+| `A3.3.S3.4` | `instrument_2_writing` | Rúbrica analítica No 2 — Writing |
+| `A3.3.S4.2` | `instrument_3_listening` | Lista de Chequeo No 3 — Listening |
+| `A3.3.S4.4` | `instrument_4_speaking` | Escala de Estimación No 4 — Speaking |
+| `A3.3.S5.3` | `instrument_5_language_functions` | Escala de Estimación No 5 — Language Functions |
+| `A3.3b.2` | `pm_4_2_consolidado` | Cuestionario Técnico Consolidado (25 pts) |
+
+El renderer pinta el badge en ORANGE (`#F59316`) dentro del encabezado del scaffold, alineado visualmente con la Línea 2 del `activity_footer` (bloque evidencia).
+
+### REGLA 16 — ORDEN PEDAGÓGICO DE RENDERIZADO
+
+El renderer v2.6.3 (`renderActivityCard_v263` en `gen_audit_docx.js`) renderiza cada actividad en este orden **estricto**:
+
+```
+┌─ HEADER: actividad_id · tipo_actividad_sena · titulo_en / titulo_es · metadata (tiempo, agrupación, V+O+C)
+├─ descripcion_aprendiz (EN + ES)
+├─ paso_a_paso (numerado, ORANGE bold)
+├─ [INPUT MATERIAL] apendices_referenciados renderizados inline (texto lectura, guion listening) ← v2.6
+├─ [WORKSPACE] scaffold_inline ← v2.6.3
+├─ [ENTREGABLE] producto · formato · criterio mínimo
+└─ activity_footer ← v2.6.1
+```
+
+Flujo pedagógico: **lee input → trabaja en el scaffold → entrega el producto**. Ningún renderer debe invertir esta secuencia.
+
+### REGLA 17 — PROHIBICIONES ARQUITECTÓNICAS v2.6.3
+
+1. **PROHIBIDO** crear anexos imprimibles separados cuya función sea "espacio de trabajo del aprendiz". Todo workspace va embebido como `scaffold_inline` dentro de la actividad.
+2. **PERMITIDO** conservar apéndices legacy (v2.6) como **material de input** (texto de lectura, guion de listening, glosario). Se renderizan inline ANTES del scaffold.
+3. **PROHIBIDO** reintroducir cualquiera de los 4 campos obsoletos (`nombre_aprendiz`, `etiquetas_dimension`, `instruccion_2pers_en`, `instruccion_supervivencia_es`).
+4. **PROHIBIDO** cambiar `meta.activities_schema_version` a un valor distinto de `"v2.6.3"`.
+
+### Reglas duras v2.6.3 (resumen)
+
+| # | Regla | Scope | Validada por |
+|---|-------|-------|--------------|
+| 13 | Activity card schema v2.6.3 (12 campos) en cada `seccion_3_actividades_aprendizaje[*]` | `pm-3-6.json` | `check-activity-card-schema.js` + PM-2.11 Check 16 |
+| 14 | `scaffold_inline.tipo` ∈ 10 canónicos | Cada actividad | `check-activity-card-schema.js` |
+| 15 | 6 actividades evidencia con `scaffold_inline.badge` canónico | 6 activities | `check-activity-card-schema.js` |
+| 16 | Orden de renderizado: input → scaffold → entregable → footer | Renderer DOCX | Smoke test visual |
+| 17 | Ningún campo obsoleto + meta version correcta | `pm-3-6.json` | `check-activity-card-schema.js` |
+
+### Pipeline canónico v2.6.3
+
+| Script | Función | Input | Output |
+|--------|---------|-------|--------|
+| `v263-activities-data.js` | Specs por actividad (30 en G1 MGV) | — | Data file, exportado via `module.exports` |
+| `rewrite_activities_v263.js` | Migrador idempotente: aplica specs a pm-3-6.json (con backup) | `pm-3-6.json` + `v263-activities-data.js` | `pm-3-6.json` (schema v2.6.3) |
+| `check-activity-card-schema.js` | Validador schema + 10 tipos + badges + meta | `pm-3-6.json` | exit 0 PASS / 1 FAIL |
+| `check-no-orphan-footer.js` | Validador footer (v2.6.1 preservado) | `pm-3-6.json` + upstream | exit 0 / 1 |
+| `gen_audit_docx.js` | Renderer con `renderActivityCard_v263` + 10 renderers de scaffold + dispatch por `titulo_en` | `pm-3-6.json` | `pm-3-6-FINAL-G*.docx` |
+
+**Back-compat:** `renderActividades` despacha según `titulo_en`. Si está presente → v2.6.3. Si no → legacy v2.6. Runs pre-v2.6.3 renderizan sin modificaciones.
+
+### Caso-origen y estado actual
+
+- **Run origen:** MGV-2026-04-20 G1 (The Visual Communicator)
+- **Actividades migradas:** 30/30
+- **Distribución de tipos:** form 11 · matching 4 · checklist 3 · reflection_lines 3 · quiz_preview 2 · writing_template 2 · speaking_script 2 · t_chart 1 · listening_capture 1 · rating 1
+- **Badges verificados:** 6/6
+- **Validadores:** PASS sin errores
+- **DOCX FINAL:** `pm-3-6-FINAL-G1.docx` 86.7 KB (+40% vs v2.6 por scaffolds embebidos)
+
+### Consecuencia arquitectónica v2.6.3
+
+La Guía del Aprendiz ahora es **verdaderamente autosuficiente por página**: cada actividad contiene en una sola unidad visual la instrucción + el input + el workspace + el entregable + la logística. El aprendiz no vuelve atrás para re-leer mientras escribe, no busca anexos separados, no pregunta "¿dónde hago esto?". El instructor no imprime un paquete de anexos aparte. La guía impresa o digital funciona como documento único.
+
+*Lección aprendida MGV-2026-04-20 G1 Fase 4: v2.6.1 separaba instrucción (cuerpo) de workspace (anexo). En simulación de ejecución, el 100% de los aprendices volteaba páginas hacia atrás para re-leer mientras escribía. v2.6.3 cierra ese loop: instrucción a 2 cm del workspace.*
+
+---
+
+## EXTENSIÓN v2.6.4 — SECCIÓN 4 FORMATO SENA + ALINEACIÓN DE CANON UPSTREAM→DOWNSTREAM
+
+### REGLA 18 — SECCIÓN 4 DEBE USAR EL FORMATO OFICIAL SENA (TABLA 6 COLUMNAS)
+
+A partir de v2.6.4, la **Sección 4 de la Guía del Aprendiz (GFPI-F-135)** debe titularse literalmente:
+
+> **4. PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE PARA LA EVALUACIÓN EN EL PROCESO FORMATIVO**
+
+Y contener una **tabla única de 6 columnas × N filas** (1 fila por cada actividad de aprendizaje de la guía, en orden cronológico de S1 → S7-S8). Para una guía de 8 sesiones canónica, N=30.
+
+#### Schema canónico `seccion_4_planteamiento_evidencias` (v2.6.4)
+
+```json
+{
+  "titulo_formal": "4. PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE PARA LA EVALUACIÓN EN EL PROCESO FORMATIVO",
+  "titulo_aprendiz": "4. Planteamiento de Evidencias de Aprendizaje",
+  "introduccion": "<párrafo explicativo que aclare: 30 actividades, solo 6 con evidencia formal, cols 1-2 de diligenciamiento manual, cols 4-5-6 vacías (—) cuando no aplica>",
+  "columnas": [
+    "Fase del proyecto formativo",
+    "Actividad del proyecto formativo",
+    "Actividad de aprendizaje",
+    "Evidencias de Aprendizaje",
+    "Criterios de evaluación",
+    "Técnicas e instrumentos de evaluación"
+  ],
+  "filas_evidencia": [
+    {
+      "numero": 1,
+      "fase_pf": "",                          // manual
+      "actividad_pf": "",                     // manual
+      "actividad_aprendizaje": "<actividad_id> — <titulo_es> (<sesion>)",
+      "evidencia": null,                      // null = "—" en DOCX
+      "criterios": null,
+      "tecnica_instrumento": null
+    },
+    {
+      "numero": 9,
+      "fase_pf": "",
+      "actividad_pf": "",
+      "actividad_aprendizaje": "A3.3.S2.4 — EVIDENCIA E1 — Quiz de lectura (S2)",
+      "evidencia": "E1 — Reading Comprehension Quiz (Conocimiento · 5 pts)",
+      "criterios": "5 ítems de opción múltiple A/B/C/D... (Fuente: PM-4.1 INST-01 items)",
+      "tecnica_instrumento": "Técnica: Formulación de preguntas · Instrumento: Cuestionario No 1 (PM-4.1)"
+    }
+    // ... 28 filas más
+  ],
+  "total_actividades": 30,
+  "total_evidencias_formales": 6,
+  "canon_reference": {
+    "e1_a_e5_pts": 25,
+    "e6_pts": 25,
+    "misión_final_pts": 5,
+    "total_canon": 55,
+    "misión_final_nota": "La Misión Final NO es evidencia formal. Sus 5 pts no suman al canon de 55."
+  },
+  "derived_from": {
+    "pm_2_4_upstream": "pm-2-4.json · universe_anchor.genre (canon)",
+    "pm_4_1_instruments": "pm-4-1.json · instrument_1..5 criterios (no alucinación)",
+    "pm_4_2_cuestionario": "pm-4-2.json · canon_structure.sections_list",
+    "pm_3_6_activities": "pm-3-6.json · seccion_3 actividades IDs + títulos"
+  }
+}
+```
+
+#### Reglas duras v2.6.4
+
+- **Col 5 (`criterios`) PROHIBIDA DE INVENTAR.** Debe derivar literal de `pm-4-1.json` (INST-01 a INST-05) para E1-E5 y de `pm-4-2.json.canon_structure.sections_list` para E6. Cada celda cita su origen al final: `(Fuente: PM-4.1 INST-0X)` o `(Fuente: PM-4.2)`.
+- **Col 6 (`tecnica_instrumento`) usa nomenclatura canónica SENA:** tres técnicas oficiales (Formulación de preguntas · Observación · Verificación del producto) × 6 instrumentos nombrados canónicamente (Cuestionario No 1 · Rúbrica analítica No 2 · Lista de Chequeo No 3 · Escala de Estimación No 4 · Escala de Estimación No 5 · Cuestionario consolidado No 6).
+- **Cols 1-2 son celdas vacías** (para diligenciamiento manual por el coordinador del proyecto formativo). En el DOCX se rinden con shading del color de la fila (crema si es evidencia, blanco si no), pero sin texto.
+- **Filas sin evidencia muestran `—`** explícito en cols 4-5-6, centrado. No se omite la fila — toda actividad debe aparecer.
+- **Filas de evidencia (6) tienen fondo crema (`#FFF6E8`)** y texto en negrita en col 3 y col 4 para destacar la formalidad. Header naranja institucional (`#F59316`).
+
+#### Campos ELIMINADOS de `seccion_4_planteamiento_evidencias` (pre-v2.6.4)
+
+- ❌ `evidencias[]` (array de 6 objetos con codigo/nombre_aprendiz/que_es/...) — **reemplazado por `filas_evidencia[]`**
+- ❌ `evidencia_complementaria_no_formal` — **info migrada a `canon_reference.misión_final_nota`**
+- ❌ `tabla_resumen_canon_55` — **info migrada a `canon_reference`**
+
+### REGLA 19 — CONSISTENCIA UPSTREAM→DOWNSTREAM (CHECK 17)
+
+El learner-facing guide (`pm-3-6.json`) debe ser **espejo fiel** de las decisiones arquitectónicas tomadas en Fase 2 (`pm-2-X.json`) y Fase 3 (`pm-4-1.json`, `pm-4-2.json`). Cualquier drift downstream (rename de producto, cambio de criterios, alteración de puntajes) es un **BUG**, no una feature.
+
+#### CHECK 17 — validación obligatoria en pre-generación
+
+Antes de ejecutar `gen_35_36_docx.js`, se debe validar:
+
+1. **Nombre del producto de cada evidencia en `seccion_3`** = nombre del producto en `pm-2-X.activity_card.universe_anchor.genre` (o equivalente campo upstream).
+2. **Criterios de evaluación de col 5** = literal de `pm-4-1.instrument_X.criteria` / `.checklist_items` / `.observation_criteria` / `.stations` (o `pm-4-2.canon_structure.sections_list` para E6).
+3. **Puntajes por evidencia** consistentes entre `pm-3-6.seccion_4.canon_reference` y `pm-4-1` + `pm-4-2` + el `canon_55_reference` del run.
+4. **Títulos de sesión en `seccion_3`** coherentes con el producto canónico (ej: Sesión 3 con producto "email" no puede titularse "Font Card").
+
+*Caso-origen MGV-2026-04-20 G1 v2.6.4: `pm-2-4.json` canonizó "Design Decision Email" como producto E2 desde Fase 2 (5 arquetipos A-E, genre analysis, blueprint model, integración con S4 Listening). `pm-4-1.json` derivó correctamente la rúbrica INST-02 sobre email (4 criterios × 1/1.5/1.5/1 pt = 5 pts). Sin embargo, en la generación v2.5 de `pm-3-6.json` se renombró E2 a "Font Card" en seccion_3 (títulos S3 + 3 actividades) y en seccion_4.evidencias[1]. Detectado por CHECK 17 durante v2.6.4. Remediado: rename A3.3.S3.2 + A3.3.S3.3 + A3.3.S3.4 + título sesión a "Design Decision Email". Documentado en `_ciclo_2_5_patch.v264` de pm-3-6.json.*
+
+### Reglas duras v2.6.4 (resumen)
+
+1. Sección 4 se titula literal "PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE PARA LA EVALUACIÓN EN EL PROCESO FORMATIVO".
+2. Tabla única de 6 columnas (orden fijo: Fase PF | Actividad PF | Actividad aprendizaje | Evidencias | Criterios | Técnicas e instrumentos).
+3. Una fila por actividad en orden cronológico (S1 → S7-S8). Total filas = total actividades de la guía (30 en canon 8-sesiones).
+4. Cols 4-5-6 vacías (`—`) en actividades sin evidencia formal. Pobladas solo en las 6 filas de evidencia (E1-E6).
+5. Col 5 **prohibida de inventar** — derivada de PM-4.1 / PM-4.2, con citación de origen `(Fuente: ...)`.
+6. CHECK 17 pre-generación: verificar consistencia upstream (pm-2-X) ↔ downstream (pm-3-6) para nombres de producto, criterios y puntajes.
+
+### Pipeline canónico v2.6.4
+
+```
+pm-2-4.json.universe_anchor.genre       ─┐
+pm-4-1.json.instrument_X                 ├─> patch_v264_seccion4_y_e2.js ─> pm-3-6.json
+pm-4-2.json.canon_structure              │       (reescribe seccion_4)
+pm-3-6.json.seccion_3.actividades[]     ─┘
+                                             │
+                                             ▼
+                                     gen_35_36_docx.js (updated)
+                                             │
+                                             ▼
+                                     pm-3-6-FINAL-G1.docx
+                                     (tabla SENA 6 cols × 31 rows)
+```
+
+*Lección aprendida MGV-2026-04-20 G1 v2.6.4: la Sección 4 v2.6.3 renderizaba 3 sub-secciones (evidencias[] + complementaria + tabla resumen 55) que ocupaban ~6 páginas y no se mapeaban al formato oficial SENA esperado por la Secretaría Académica. v2.6.4 consolida en 1 tabla canónica que cumple el formato GFPI-F-135 V02 oficial.*
+
+---
+
+## EXTENSIÓN v2.6.5 — SHARED RENDERER PATTERN (FUENTE ÚNICA DE VERDAD POR SECCIÓN)
+
+### REGLA 20 — NINGUNA SECCIÓN PUEDE VIVIR DUPLICADA EN 2 GENERADORES
+
+**Problema operacional diagnosticado (caso MGV-2026-04-20 G1, 2026-04-21):**
+
+El pipeline de MGV emite dos artefactos DOCX por guía:
+
+| Artefacto | Generador | Propósito |
+|-----------|-----------|-----------|
+| `pm-3-6-review.docx` | `scripts/gen_35_36_docx.js` | Revisión rápida (sin portada audit) |
+| `pm-3-6-FINAL-G1.docx` | `scripts/gen_audit_docx.js` | FINAL para auditoría (con portada branded) |
+
+Durante v2.6.4 se parcheó la Sección 4 al nuevo formato SENA (6 columnas × 30 filas) **solo en `gen_35_36_docx.js`**. El FINAL quedó desactualizado porque el render de Sección 4 vivía duplicado inline en `gen_audit_docx.js`. Resultado: el aprendiz/auditor recibió un DOCX FINAL sin los cambios v2.6.4 — **drift silencioso** entre generadores.
+
+**REGLA 20 (canon v2.6.5):**
+
+> Ninguna sección de la Guía GFPI-F-135 que aparezca en más de un output DOCX puede vivir duplicada inline. Toda sección renderizada en ≥2 generadores **debe** extraerse a `runs/[RUN-ID]/scripts/lib/render_*.js` y ser importada como módulo. El inline render inline-en-dos-archivos queda explícitamente prohibido.
+
+### ARQUITECTURA CANÓNICA v2.6.5
+
+```
+scripts/
+├── lib/
+│   └── render_seccion4_evidencias.js      ← FUENTE ÚNICA DE VERDAD
+│                                             (renderSeccion4Evidencias(data, ctx))
+├── gen_35_36_docx.js                      ← importa lib/render_seccion4_evidencias
+├── gen_audit_docx.js                      ← importa lib/render_seccion4_evidencias
+└── check-generator-parity.js              ← valida que ambos generadores
+                                             produzcan contenido idéntico
+```
+
+### CONTRATO DEL RENDERER COMPARTIDO
+
+```js
+// scripts/lib/render_seccion4_evidencias.js
+
+function renderSeccion4Evidencias(data, ctx) {
+  // Input:
+  //   data = pm-3-6.json completo (lee data.seccion_4_planteamiento_evidencias)
+  //   ctx  = {
+  //     docx:    { Paragraph, TextRun, Table, TableRow, TableCell,
+  //                AlignmentType, WidthType, ShadingType },
+  //     palette: { ORANGE, WHITE, GREY, CREAM, CONTENT_W },
+  //     helpers: { P, H1, H2, H3, cell, kv, quote, note, makeTable, pageBreak }
+  //   }
+  // Output: Array<Paragraph|Table> listo para Document.children
+}
+
+module.exports = { renderSeccion4Evidencias };
+```
+
+El llamador es responsable de inyectar las dependencias (`docx` API, paleta, helpers). Esto permite que cada generador use su propia paleta sin perder el contrato estructural común.
+
+### VALIDADOR OBLIGATORIO — CHECK DE PARIDAD
+
+El script `scripts/check-generator-parity.js` se ejecuta después de regenerar los DOCX:
+
+```bash
+node scripts/gen_35_36_docx.js
+node scripts/gen_audit_docx.js
+node scripts/check-generator-parity.js   # FALLA si hay drift
+```
+
+**Qué valida:**
+
+1. Ambos DOCX contienen el texto canon `Total canon = 55` en Sección 4.
+2. Ambos DOCX contienen las 6 evidencias formales (E1..E6) con el mismo nombre de producto.
+3. Ninguna línea de Sección 4 vive exclusivamente en un DOCX (módulo diff tolerante a diferencias de shim callout/quote conocidas).
+
+**Exit codes:** `0 = OK`, `1 = drift detectado`, `2 = archivos faltantes`.
+
+### CUÁNDO EXTRAER UNA NUEVA SECCIÓN AL SHARED RENDERER
+
+Aplicar REGLA 20 **proactivamente** cada vez que una sección entre a aparecer en más de un generador. Indicadores:
+
+- La sección se menciona en `grep -l "seccion_N_" scripts/gen_*.js` y devuelve ≥2 archivos.
+- El prompt PM-3.X de esa sección cambia el schema → hay riesgo de drift.
+- El renderer inline de esa sección supera ~30 líneas — replicarlo manualmente es frágil.
+
+Regla de pulgar: **si una sección se renderiza en review + FINAL, vive en `lib/`**.
+
+### IMPLEMENTACIÓN CANÓNICA — Run MGV-2026-04-20
+
+| Archivo | Rol |
+|---------|-----|
+| `scripts/lib/render_seccion4_evidencias.js` | **Fuente de verdad** — lógica de render Sección 4 (95 líneas) |
+| `scripts/gen_35_36_docx.js` | Consume el renderer vía `require('./lib/render_seccion4_evidencias')` |
+| `scripts/gen_audit_docx.js` | Consume el renderer vía `require('./lib/render_seccion4_evidencias')` |
+| `scripts/check-generator-parity.js` | Validador de drift |
+
+*Lección aprendida MGV-2026-04-20 G1 v2.6.5 (2026-04-21): durante la aplicación de v2.6.4 se detectó que Sección 4 tenía 2 implementaciones independientes en 2 generadores DOCX. Cuando el instructor revisó el FINAL-G1, encontró que no tenía los cambios de formato SENA que sí aparecían en el review. Sin shared renderer, el drift es inevitable a escala (22 PMs × 8 sesiones × 8 guías × múltiples schemas). v2.6.5 cierra esta clase de bug de forma arquitectónica.*
 
 ---
 

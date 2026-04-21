@@ -7,13 +7,25 @@
 ## FRONTMATTER
 
 ```yaml
-version: 2.0
-last_verified: 2026-04-13
+version: 2.6.5
+last_verified: 2026-04-21
 phase: 3
 name: "Instrumentos de Evaluación Formativa — Derivador"
 type: "instrument-generator"
 depends_on: [PM-2.3, PM-2.4, PM-2.6, PM-2.8, PM-2.9, PM-2.10, PM-2.11]
-feeds_into: [PM-3.1, GFPI-F-135]
+feeds_into: [PM-3.1, PM-3.6, GFPI-F-135]
+previous_versions:
+  - 2.0 (2026-04-13)
+  - 2.6.4 (2026-04-20)
+changelog:
+  - 2.6.5 (2026-04-21):
+      - Nota arquitectónica: los criterios de PM-4.1 son la fuente ÚNICA de verdad también a nivel de RENDER (no solo de datos). El módulo canónico que los renderiza en el DOCX FINAL es `runs/[RUN-ID]/scripts/lib/render_seccion4_evidencias.js` — ver PM-3.6 REGLA 20.
+      - Canon Shared Renderer Pattern (v2.6.5) activo — ningún generador DOCX puede tener una copia inline del render de Sección 4. Esto cierra la clase de bugs donde parches v2.6.4 entraban al review pero no al FINAL (o viceversa).
+  - 2.6.4 (2026-04-20):
+      - Nota canónica sobre DOBLE-PRESENCIA de criterios (dentro del instrumento Y como col 5 de la Sección 4 del GFPI-F-135).
+      - Los criterios de cada instrumento (INST-01 a INST-05) son la FUENTE CANÓNICA ÚNICA consumida por pm-3-6.seccion_4_planteamiento_evidencias.filas_evidencia[].criterios.
+      - PROHIBIDO alucinar criterios en la Sección 4 del GFPI-F-135 — deben derivarse literal de este PM (con citación de origen).
+      - Ver también: PM-3.6 REGLA 18 + REGLA 19 + CHECK 17 consistencia upstream→downstream.
 ```
 
 ---
@@ -30,6 +42,34 @@ feeds_into: [PM-3.1, GFPI-F-135]
 > 2. PM-4.1 lee las especificaciones de evidencia de esa fila
 > 3. PM-4.1 genera 6 instrumentos, uno por cada evidencia
 > 4. PM-4.2 especializa el instrumento No. 6 (cuestionario consolidado)
+
+---
+
+## CAMBIO v2.6.4 — DOBLE-PRESENCIA DE CRITERIOS (INSTRUMENTO + GFPI-F-135 SECCIÓN 4)
+
+> [!warning] Cambio v2.6.4 (2026-04-20)
+> Los **criterios de evaluación** producidos por PM-4.1 ahora viven en **dos lugares** del paquete del run, con una única fuente de verdad:
+>
+> **(1) Dentro del instrumento** (uso del instructor):
+> - `pm-4-1.json.instrument_1_reading.items[]` — 5 ítems de cuestionario
+> - `pm-4-1.json.instrument_2_writing.criteria[]` — 4 criterios de rúbrica analítica (C1 Format + C2 Grammar + C3 Vocabulary + C4 Clarity)
+> - `pm-4-1.json.instrument_3_listening.checklist_items[]` — 5 ítems de lista de chequeo
+> - `pm-4-1.json.instrument_4_speaking.observation_criteria[]` — 5 criterios de escala de estimación
+> - `pm-4-1.json.instrument_5_language_functions.stations[]` — 5 estaciones
+>
+> **(2) Dentro del GFPI-F-135** (Sección 4, visible al aprendiz y al coordinador del proyecto formativo):
+> - `pm-3-6.json.seccion_4_planteamiento_evidencias.filas_evidencia[N].criterios` — texto derivado de (1)
+>
+> **Regla dura:** la col 5 "Criterios de evaluación" de la Sección 4 del GFPI-F-135 se deriva LITERAL de los campos de PM-4.1 arriba listados. **PROHIBIDO alucinar criterios en esa columna.** Toda celda debe citar su origen al final: `(Fuente: PM-4.1 INST-0X)` para E1-E5 y `(Fuente: PM-4.2)` para E6.
+>
+> **Flujo v2.6.4:**
+> 1. PM-4.1 produce `instrument_1..5` con `criteria` / `checklist_items` / `observation_criteria` / `stations` canónicos.
+> 2. `patch_v264_seccion4_y_e2.js` (script pipeline) consume esos campos y los serializa en `pm-3-6.seccion_4_planteamiento_evidencias.filas_evidencia[].criterios` con citación de origen.
+> 3. `gen_35_36_docx.js` renderiza la tabla 6-col del GFPI-F-135 leyendo de pm-3-6.json (nunca directamente de pm-4-1.json).
+>
+> **Consecuencia arquitectónica:** cambiar un criterio en PM-4.1 requiere **re-ejecutar el patch script + regenerar el DOCX** del GFPI-F-135. No se permite editar la col 5 manualmente en el DOCX — la fuente de verdad es PM-4.1.
+>
+> **CHECK 17 (delegado a PM-3.6):** antes de generar el DOCX final, validar que `pm-3-6.seccion_4.filas_evidencia[N].criterios` no contenga texto que no derive de PM-4.1 o PM-4.2. Ver PM-3.6 REGLA 19.
 
 ---
 

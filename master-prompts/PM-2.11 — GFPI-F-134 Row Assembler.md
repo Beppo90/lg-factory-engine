@@ -5,10 +5,12 @@ phase: 2
 session: null
 fase_sena: Post-diseño
 type: assembler
-version: 2.5
+version: 2.6.3
 created: 2026-04-13
 last_verified: 2026-04-20
 changelog:
+  - "2.6.3 (2026-04-20) — Check 16 añadido: activity card schema v2.6.3 en pm-3-6.json (12 campos canónicos, 10 tipos de scaffold_inline, 4 campos obsoletos prohibidos, meta.activities_schema_version, badges en 6 evidencias). Bloquea emisión de DOCX si falla. Delega ejecución al script canónico check-activity-card-schema.js. Total de checks: 16."
+  - "2.6.1 (2026-04-20) — Check 15 añadido: activity_footer derivado desde upstream (PM-3.1 sessions_logistics + PM-3.2-sX activity_logistics + PM-4.1/PM-4.2 evidencia). Prohíbe footer autoreado en pm-3-5/pm-3-6. Delega ejecución al script canónico check-no-orphan-footer.js. Total de checks: 15."
   - "2.5 (2026-04-20) — Check 14 añadido: propagación de estrategias didácticas a pm-3-2-sX.json (momento_sena, estrategia_didactica, justificacion_didactica, tecnica_didactica por bloque WHILE). Cross-reference obligatorio con pm-3-1.json.sessions[i].logistics_box. Campo strategy_propagation en YAML validation_report. Cierra gap descubierto en DIESEL-2026-04-19 (patch no ejecutado, 8 sesiones sin campos pedagógicos). Total de checks: 14."
   - "2.4 (2026-04-20) — Check 13 operacionalizado: CHECK 9 del DOCUMENTO MAESTRO §10 (uniqueness of pedagogical content universe) implementado como check enumerado + campo content_uniqueness en YAML validation_report. Hash SHA256 sobre canonical JSON sin run_id."
   - "2.0 (2026-04-13) — Versión inicial: 12 checks estructurales, ensamblaje de 11 columnas GFPI-F-134."
@@ -810,6 +812,177 @@ SI alguna aserción falla:
 
 **Lección aprendida DIESEL-2026-04-19:** los 8 `pm-3-2-sX.json` nunca se serializaron (solo quedaron `.md` en draft). El patch script existía en `scripts/` pero no se ejecutó. CHANGELOG del run marcó "Módulos 13–22 pendiente revisión" y el pipeline avanzó a Fase 4 sin Check 14 (que no existía). **Check 14 existe precisamente para bloquear este escenario: sin estrategias propagadas, no hay paso a PM-3.6 / PM-4.1 / PM-4.2.**
 
+### ✓ Check 15: Coherencia de `activity_footer` con Upstream — v2.6.1
+
+> **Propósito:** Garantizar que la regla v2.6.1 (Data-Flow Inversion del Activity Footer) se cumple — el bloque `activity_footer` de cada actividad en pm-3-5 y pm-3-6 debe ser **derivado** desde `pm-3-1.sessions_logistics` + `pm-3-2-sX.activity_logistics` + (si aplica) `pm-4-1`/`pm-4-2`, no autoreado. Este check detecta footers huérfanos (datos que no encuentran su fuente canónica).
+
+**Archivos bajo escrutinio:** `pm-3-6.json` (30 actividades en G1 MGV), `pm-3-5.json` (5 sub-fases ABP).
+
+**Lógica de validación (pseudocódigo):**
+
+```
+pm31 = load("pm-3-1.json")
+pm4_instruments = load_instruments()  # PM-4.1 + PM-4.2
+
+PARA CADA actividad EN pm-3-6.seccion_3_actividades_aprendizaje + pm-3-5.subfases:
+  f = actividad.activity_footer
+
+  # 15.1 — Campos de logística derivables desde upstream
+  sesion_id = extraer_sesion_de(actividad.actividad_id)  # ej A3.3.S2.4 → S2
+  upstream_session = pm31.sessions_logistics[sesion_id]
+  upstream_activity = load(f"pm-3-2-{sesion_id}.json").activity_logistics[actividad.actividad_id]
+
+  ASSERT f.ambiente       == upstream_session.ambiente
+  ASSERT f.momento_sena   == upstream_session.momento_sena  (si presente)
+  ASSERT f.estrategia     ∈ [upstream_activity.estrategia, upstream_session.estrategia_dominante]
+  ASSERT f.tecnica        == upstream_activity.tecnica
+  ASSERT f.duracion_horas == upstream_activity.duracion_horas
+  ASSERT f.materiales     == upstream_activity.materiales
+  ASSERT f.material_apoyo == upstream_activity.material_apoyo
+
+  # 15.2 — Bloque evidencia (solo para 6 actividades canónicas)
+  SI actividad.actividad_id ∈ EVIDENCE_IDS:  # [A3.3.S2.4, A3.3.S3.4, A3.3.S4.2, A3.3.S4.4, A3.3.S5.3, A3.3b.2]
+    ASSERT f.evidencia.codigo              == mapping[actividad.actividad_id].codigo  # E1..E6
+    ASSERT f.evidencia.nombre              == pm4_instruments[codigo].nombre
+    ASSERT f.evidencia.tipo_sena           == pm4_instruments[codigo].tipo_sena
+    ASSERT f.evidencia.tecnica_evaluacion  == pm4_instruments[codigo].tecnica_evaluacion
+    ASSERT f.evidencia.instrumento         == pm4_instruments[codigo].instrumento
+  SI NO:
+    ASSERT f.evidencia no está presente
+
+SI alguna aserción falla:
+  orphan_footers.append({activity_id, campo, expected, actual})
+  overall_passed = false
+```
+
+**Reglas de falla:**
+
+1. **Campo autoreado:** si algún campo de `activity_footer` no coincide con su fuente canónica upstream → FAIL (indica que un LLM o editor modificó el footer directamente).
+2. **Evidencia ausente en actividad evidencial:** si una de las 6 activities canónicas no tiene `evidencia` en su footer → FAIL.
+3. **Evidencia presente en actividad no-evidencial:** si una actividad no-canónica tiene `evidencia` → FAIL.
+4. **Valores de evidencia no alineados con PM-4.1/PM-4.2:** cualquier desviación del instrumento canónico → FAIL.
+
+**Remediación automática:**
+- Ejecutar `derive_activity_footer_from_playbook.js` — el script idempotente que reconstruye el footer desde upstream y sobre-escribe el footer actual. Preservar backup.
+- Re-correr Check 15.
+- Si tras re-derive sigue fallando, STOP: el problema está upstream. Verificar `pm-3-1.sessions_logistics` y `pm-3-2-sX.activity_logistics` antes de re-emitir.
+
+**Script canónico:** `check-no-orphan-footer.js` (exit 0 = PASS, exit 1 = FAIL con lista de orphans).
+
+**Lección aprendida MGV-2026-04-20:** v2.6 inicial tenía `activity_footer` autoreado en pm-3-6. Creaba duplicación (mismo dato en Playbook + Guía sin garantía de coherencia) y huérfanos (footer con ambiente "Aula" cuando el Playbook decía "Laboratorio"). **Check 15 garantiza single source of truth: toda edición va upstream y se re-deriva.**
+
+### ✓ Check 16: Activity Card Schema v2.6.3 en `pm-3-6.json` — v2.6.3
+
+> **Propósito:** Garantizar que la regla v2.6.3 (Inline Scaffolds + Learner-Facing Schema) se cumple — cada actividad de `seccion_3_actividades_aprendizaje` respeta el contrato de 12 campos canónicos, sus `scaffold_inline.tipo` ∈ 10 tipos canónicos, no sobreviven los 4 campos obsoletos, y las 6 actividades evidencia tienen badge alineado a PM-4.1/PM-4.2. Este check bloquea la emisión del DOCX final si el schema está desalineado.
+
+**Archivos bajo escrutinio:** `pm-3-6.json.seccion_3_actividades_aprendizaje[*]` + `pm-3-6.json.meta`.
+
+**Lógica de validación (pseudocódigo):**
+
+```
+pm36 = load("pm-3-6.json")
+EVIDENCE_IDS = ["A3.3.S2.4","A3.3.S3.4","A3.3.S4.2","A3.3.S4.4","A3.3.S5.3","A3.3b.2"]
+EVIDENCE_BADGE = {
+  "A3.3.S2.4":  "instrument_1_reading",
+  "A3.3.S3.4":  "instrument_2_writing",
+  "A3.3.S4.2":  "instrument_3_listening",
+  "A3.3.S4.4":  "instrument_4_speaking",
+  "A3.3.S5.3":  "instrument_5_language_functions",
+  "A3.3b.2":    "pm_4_2_consolidado"
+}
+SCAFFOLD_TYPES = {
+  "matching", "checklist", "form", "t_chart", "writing_template",
+  "listening_capture", "quiz_preview", "speaking_script",
+  "reflection_lines", "rating"
+}
+OBSOLETE_FIELDS = ["nombre_aprendiz","etiquetas_dimension","instruccion_2pers_en","instruccion_supervivencia_es"]
+TIPO_SENA = {"directa","directa_con_trabajo_autonomo","trabajo_autonomo"}
+
+# 16.a — Meta del documento
+ASSERT pm36.meta.activities_schema_version == "v2.6.3"
+
+# 16.b — Schema por actividad (12 campos + shape checks)
+PARA CADA a EN pm36.seccion_3_actividades_aprendizaje:
+
+  # Campos obligatorios presentes
+  PARA CADA f EN ["actividad_id","titulo_en","titulo_es","tipo_actividad_sena",
+                  "tiempo_min","agrupacion","voc_dimension","descripcion_aprendiz",
+                  "paso_a_paso","scaffold_inline","entregable"]:
+    ASSERT f ∈ a  ELSE missing_field(a.actividad_id, f)
+
+  # Shape checks
+  ASSERT a.tipo_actividad_sena ∈ TIPO_SENA
+  ASSERT isArray(a.voc_dimension) AND len(a.voc_dimension) ≥ 1
+  ASSERT a.descripcion_aprendiz.en AND a.descripcion_aprendiz.es
+  ASSERT isArray(a.paso_a_paso) AND 3 ≤ len(a.paso_a_paso) ≤ 8
+  PARA CADA p EN a.paso_a_paso:
+    ASSERT p.en AND p.es
+
+  # scaffold_inline (v2.6.3 core)
+  ASSERT a.scaffold_inline.tipo ∈ SCAFFOLD_TYPES
+  ASSERT a.scaffold_inline.titulo_en AND a.scaffold_inline.titulo_es
+  ASSERT a.scaffold_inline.estructura  # no vacío
+  validateScaffoldStructure(a.actividad_id, a.scaffold_inline)
+
+  # entregable completo bilingüe
+  PARA CADA k EN ["producto","formato","criterio_minimo"]:
+    ASSERT a.entregable[k].en AND a.entregable[k].es
+
+# 16.c — Campos obsoletos ausentes
+PARA CADA a EN pm36.seccion_3_actividades_aprendizaje:
+  PARA CADA f EN OBSOLETE_FIELDS:
+    ASSERT f ∉ a  ELSE obsolete_field_present(a.actividad_id, f)
+
+# 16.d — Badge en 6 evidencias
+PARA CADA eid EN EVIDENCE_IDS:
+  a = find_activity(pm36, eid)
+  ASSERT a.scaffold_inline.badge == EVIDENCE_BADGE[eid]
+
+# 16.e — Count y distribución
+ASSERT len(pm36.seccion_3_actividades_aprendizaje) > 0
+registrar_distribucion_de_scaffold_types()  # info para reporte, no falla
+```
+
+**Reglas de falla:**
+
+1. **Campo obligatorio ausente:** cualquiera de los 12 campos canónicos falta en una actividad → FAIL.
+2. **Tipo de scaffold fuera del enum:** `scaffold_inline.tipo` no está en los 10 canónicos → FAIL.
+3. **paso_a_paso fuera de rango:** menos de 3 o más de 8 pasos → FAIL.
+4. **Bilingüismo incompleto:** cualquier `{en, es}` con un lado vacío → FAIL.
+5. **Campo obsoleto sobreviviente:** alguno de los 4 campos v2.6.x en una actividad v2.6.3 → FAIL.
+6. **Badge faltante o incorrecto en evidencia:** una de las 6 actividades canónicas sin `scaffold_inline.badge` o con valor distinto del mapping → FAIL.
+7. **Meta desalineada:** `meta.activities_schema_version ≠ "v2.6.3"` → FAIL.
+
+**Remediación automática:**
+- Ejecutar `rewrite_activities_v263.js` (migrador idempotente con backup) leyendo desde `v263-activities-data.js`. Re-aplica el schema limpio.
+- Re-correr Check 16.
+- Si tras re-aplicar migrador sigue fallando: el problema está en `v263-activities-data.js` (spec incompleta o inconsistente). Corregir specs antes de migrar de nuevo.
+
+**Script canónico:** `check-activity-card-schema.js` (exit 0 = PASS, exit 1 = FAIL con lista de errores, exit 2 = PASS con warnings). **Este script es la implementación de referencia de Check 16** — PM-2.11 lo invoca y agrega el resultado al YAML validation_report.
+
+**Consumo del resultado por PM-2.11:**
+```yaml
+validation_report:
+  ...
+  check_16_activity_card_schema_v263:
+    passed: true|false
+    total_activities: 30
+    schema_clean: 30
+    schema_with_error: 0
+    scaffold_type_distribution:
+      form: 11
+      matching: 4
+      checklist: 3
+      ...
+    missing_fields: []
+    obsolete_fields_present: []
+    invalid_scaffold_types: []
+    missing_badges: []
+    exit_code: 0
+```
+
+**Lección aprendida MGV-2026-04-20 G1 Fase 4:** la iteración sin Check 16 permitió que 4 actividades quedaran con campos obsoletos `nombre_aprendiz` + `etiquetas_dimension` mezclados con los nuevos `titulo_en`/`voc_dimension`. El DOCX se generó sin errores pero el aprendiz veía doble encabezado y doble etiqueta de dimensión. **Check 16 existe para detectar esta clase de "migración parcial" antes de emitir el DOCX final.**
+
 ---
 
 ## INSTRUCCIÓN AL LLM
@@ -877,10 +1050,12 @@ Con tu output, hay UNA MATRIZ PEDAGÓGICA OFICIAL lista para Instructor + PM-4.1
    - O dejar vacío si no aplica
 
 8. VALIDATION REPORT:
-   - 14 checks (horas, evidencias, tipificación, Bloom, transversales, estrategias, ambientes, unicidad, propagación pedagógica)
+   - 16 checks (horas, evidencias, tipificación, Bloom, transversales, estrategias, ambientes, unicidad, propagación pedagógica, footer derivation, activity card schema v2.6.3)
    - Check 13 = CHECK 9 del DOCUMENTO MAESTRO §10 (unicidad de contenido pedagógico)
    - Check 14 = PASO 7.b del DOCUMENTO MAESTRO §10 (propagación de estrategias didácticas a pm-3-2-sX.json)
-   - overall_passed: true|false (AND lógico de los 14)
+   - Check 15 = v2.6.1 Data-Flow Inversion del activity_footer (delegado a `check-no-orphan-footer.js`)
+   - Check 16 = v2.6.3 Activity Card Schema (delegado a `check-activity-card-schema.js`)
+   - overall_passed: true|false (AND lógico de los 16)
    - Warnings y errors detallados
 
 ### RESTRICCIONES:
@@ -953,4 +1128,4 @@ validation_report:
 
 *PM-2.11: GFPI-F-134 Row Assembler*  
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*  
-*Versión 2.5 — 2026-04-20 (Check 14 añadido: propagación de estrategias didácticas a pm-3-2-sX.json)*
+*Versión 2.6.3 — 2026-04-20 (Check 15 añadido en v2.6.1: data-flow inversion del activity_footer · Check 16 añadido en v2.6.3: activity card schema con scaffold_inline embebido)*

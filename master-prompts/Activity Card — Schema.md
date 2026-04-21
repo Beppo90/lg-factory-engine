@@ -1,12 +1,24 @@
 ---
 type: data-contract
-version: 2.6
+version: 2.6.3
 created: 2026-04-13
 last_verified: 2026-04-20
 status: active
 ---
 
 # Activity Card — Schema
+
+> **⚠️ DOS SCHEMAS DIFERENTES EN ESTE DOCUMENTO**
+>
+> A partir de v2.6.3 este contrato cubre **dos activity cards distintas**, con roles y consumidores diferentes. No confundir:
+>
+> | Schema | Dónde vive | Productor | Consumidor | Propósito |
+> |---|---|---|---|---|
+> | **Activity Card v2.0 (Fase 2, GFPI-F-134)** | Output de cada PM-2.x | PM-2.1..PM-2.10 | PM-2.11 (Row Assembler) | Ensamblar fila GFPI-F-134 columnas 6-10 |
+> | **Activity Card v2.6.3 (Fase 4, Learner-Facing)** | `pm-3-6.json.seccion_3_actividades_aprendizaje[*]` | PM-3.6 (GFPI-F-135 Integrator) | `gen_audit_docx.js` → DOCX del aprendiz | Renderizar la actividad con workspace embebido (scaffold_inline) |
+>
+> - **Secciones 1–8** documentan el schema v2.0 (GFPI-F-134 feed). Sigue vigente sin cambios.
+> - **Sección 9 (nueva en v2.6.3)** documenta el schema v2.6.3 (Learner-Facing). Es el contrato que rige lo que el aprendiz ve renderizado en la Guía del Aprendiz.
 
 ## Propósito
 
@@ -536,3 +548,206 @@ Cada PM que emita una Activity Card debe verificar:
 **Vigencia:** A partir del 2026-04-13  
 **Última revisión:** 2026-04-13  
 **Responsable:** LG Factory Engine — SENA Colombia
+
+---
+
+## 9. Activity Card v2.6.3 — Learner-Facing Schema (pm-3-6.json)
+
+**Nueva en v2.6.3.** Este es el schema que rige lo que el aprendiz ve renderizado en cada actividad de la Guía del Aprendiz (GFPI-F-135). Vive dentro de `pm-3-6.json.seccion_3_actividades_aprendizaje[*]` y sustituye definitivamente la arquitectura v2.6.1 que separaba "instrucción" (cuerpo de la actividad) de "espacio de trabajo" (anexos imprimibles). En v2.6.3 el workspace está **embebido** dentro de la actividad como `scaffold_inline`.
+
+### 9.1 Propósito
+
+El aprendiz abre la guía impresa o digital y encuentra en una sola página:
+
+1. El título de la actividad en inglés (voz del aprendiz) y su traducción ES (small text de referencia).
+2. Una descripción bilingüe de 1–2 oraciones de qué se va a hacer.
+3. Un paso-a-paso numerado y bilingüe (3–8 pasos, imperativos).
+4. (Opcional) Material de input renderizado inline: texto de lectura, transcripción de listening, glosario.
+5. **Un scaffold de trabajo** (tabla, formulario, checklist, etc.) donde **físicamente escribe** la respuesta.
+6. Un bloque "Entregable" que declara producto + formato + criterio mínimo.
+7. El `activity_footer` derivado (ambiente, estrategia, técnica, materiales, duración + evidencia si aplica).
+
+Ningún anexo imprimible separado. Ningún salto de página para escribir.
+
+### 9.2 Schema de cada item en `seccion_3_actividades_aprendizaje[*]`
+
+```json
+{
+  "actividad_id": "A3.3.S2.4",
+
+  "titulo_en": "Toolbelt Quiz — Reading Check",
+  "titulo_es": "Cuestionario Toolbelt — Verificación de Lectura",
+  "tipo_actividad_sena": "directa",
+
+  "tiempo_min": 45,
+  "agrupacion": "individual",
+  "voc_dimension": ["cognitiva"],
+
+  "produce_evidencia": true,
+
+  "descripcion_aprendiz": {
+    "en": "Read the Motor Age article and answer 5 comprehension questions.",
+    "es": "Lee el artículo de Motor Age y responde 5 preguntas de comprensión."
+  },
+
+  "paso_a_paso": [
+    { "en": "Read the article once without stopping.", "es": "Lee el artículo una vez sin detenerte." },
+    { "en": "Underline the 10 Toolbelt words you find.",  "es": "Subraya las 10 palabras Toolbelt que encuentres." },
+    { "en": "Answer the 5 questions in the scaffold below.", "es": "Responde las 5 preguntas en el scaffold de abajo." }
+  ],
+
+  "scaffold_inline": {
+    "tipo": "quiz_preview",
+    "titulo_en": "Reading Comprehension — 5 questions",
+    "titulo_es": "Comprensión de Lectura — 5 preguntas",
+    "badge": "instrument_1_reading",
+    "estructura": {
+      "items": [
+        { "n": 1, "pregunta_en": "What tool does Mike use first?", "pregunta_es": "¿Qué herramienta usa Mike primero?", "tipo": "abierta" },
+        { "n": 2, "pregunta_en": "Why is a torque wrench important?", "pregunta_es": "¿Por qué es importante una llave de torque?", "tipo": "opcion_multiple", "opciones": ["..."] }
+      ]
+    }
+  },
+
+  "entregable": {
+    "producto":        { "en": "Completed quiz with 5 answers", "es": "Cuestionario completo con 5 respuestas" },
+    "formato":         { "en": "Written on this page",          "es": "Escrito en esta página" },
+    "criterio_minimo": { "en": "≥ 4/5 correct",                  "es": "≥ 4/5 correctas" }
+  },
+
+  "materiales": ["Motor Age article (inline)", "Pen"],
+
+  "activity_footer": {
+    "ambiente": "...",
+    "estrategia": "...",
+    "tecnica": "...",
+    "materiales": "...",
+    "material_apoyo": "...",
+    "duracion_horas": "0.75 horas",
+    "evidencia": {
+      "codigo": "E1",
+      "nombre": "Cuestionario No 1 — Reading",
+      "tipo_sena": "Conocimiento",
+      "tecnica_evaluacion": "Preguntas",
+      "instrumento": "Cuestionario No 1"
+    }
+  }
+}
+```
+
+### 9.3 Campos obligatorios del learner-facing card
+
+| Campo | Tipo | Descripción |
+|---|---|---|
+| `actividad_id` | string | Identidad estable (ej `A3.3.S2.4`). Preservada del schema anterior. |
+| `titulo_en` | string | Título Inglés visible al aprendiz. Voz directa, imperativo o sustantivo. |
+| `titulo_es` | string | Traducción ES del título. Se renderiza en small text gris. |
+| `tipo_actividad_sena` | enum | `directa` / `directa_con_trabajo_autonomo` / `trabajo_autonomo` |
+| `tiempo_min` | number | Duración en minutos (coherente con `activity_footer.duracion_horas`). |
+| `agrupacion` | enum | `individual` / `pares` / `grupo_pequeno` / `plenaria` |
+| `voc_dimension` | array | Subset de `["cognitiva", "procedimental", "actitudinal"]`. No vacío. |
+| `descripcion_aprendiz` | `{en, es}` | Panorama de 1–2 oraciones bilingüe. Voz 2ª persona. |
+| `paso_a_paso` | array[`{en, es}`] | 3–8 pasos numerados, imperativos, bilingüe. |
+| `scaffold_inline` | `{tipo, titulo_en, titulo_es, badge?, estructura}` | Workspace embebido. Ver §9.4. |
+| `entregable` | `{producto, formato, criterio_minimo}.{en, es}` | Qué entrega, en qué formato, criterio mínimo. Bilingüe obligatorio. |
+| `activity_footer` | objeto | Derivado desde upstream (v2.6.1). Preservado sin modificación. |
+
+### 9.4 Campos eliminados en v2.6.3
+
+Los siguientes campos v2.6.x **deben estar ausentes** del learner-facing card:
+
+- `nombre_aprendiz` → absorbido por `titulo_en` + `titulo_es`.
+- `etiquetas_dimension` → absorbido por `voc_dimension`.
+- `instruccion_2pers_en` → absorbido por `descripcion_aprendiz.en` + `paso_a_paso[*].en`.
+- `instruccion_supervivencia_es` → absorbido por `descripcion_aprendiz.es` + `paso_a_paso[*].es`.
+
+El validador `check-activity-card-schema.js` falla si alguno sobrevive en pm-3-6.json tras la migración.
+
+### 9.5 Los 10 tipos canónicos de `scaffold_inline.tipo`
+
+Todo valor de `scaffold_inline.tipo` debe ser exactamente uno de estos 10. Cualquier otro valor es error bloqueante.
+
+| `tipo` | Uso pedagógico típico | Estructura mínima |
+|---|---|---|
+| `matching` | Pre-activación vocabulario, glosario bilingüe, emparejamiento término–definición | `{ items: [ {en, es} \| {term, definition} ] }` |
+| `checklist` | Verificación procedural, revisión entre pares, auto-chequeo | `{ items: [ {texto_en, texto_es} ] }` |
+| `form` | Captura estructurada (brief, risk assessment, inspection form) | `{ campos: [ {label_en, label_es, tipo, hint?} ] }` |
+| `t_chart` | Comparación binaria (ventajas/desventajas, antes/después, pros/cons) | `{ columna_izq: {label_en, label_es, lineas}, columna_der: {...} }` |
+| `writing_template` | Producción escrita guiada con plantilla y huecos nombrados | `{ plantilla_en, plantilla_es, slots: [ {nombre, hint_en, hint_es} ] }` |
+| `listening_capture` | Notas durante escucha (datos, palabras clave, inferencias) | `{ secciones: [ {label_en, label_es, guia_en, guia_es, lineas} ] }` |
+| `quiz_preview` | Pre-test, cuestionario técnico consolidado E6, verificación de lectura E1 | `{ items: [ {n, pregunta_en, pregunta_es, tipo, opciones?} ] }` |
+| `speaking_script` | Diálogo pautado, práctica oral con turnos, role-play | `{ turnos: [ {hablante, linea_en, linea_es?} ] }` |
+| `reflection_lines` | Reflexión abierta, meta-cognición, self-assessment | `{ prompt_en, prompt_es, lineas }` |
+| `rating` | Auto-evaluación, escala Likert, semáforo, rúbrica rápida | `{ items: [...], escala: { min, max, etiquetas_en, etiquetas_es } }` |
+
+**Renderer canónico:** `gen_audit_docx.js` contiene un renderer por tipo (`renderScaffold_matching_v263`, `renderScaffold_checklist_v263`, etc.) despachados por `sc.tipo` en `renderScaffoldInline`. Agregar un tipo nuevo requiere: (a) agregar el tipo al enum aquí, (b) extender el dispatcher en el renderer, (c) extender el validador.
+
+### 9.6 Regla del badge `★ FORMAL INSTRUMENT`
+
+Las 6 actividades del mapping canónico (v2.6.1 §11) deben tener `scaffold_inline.badge` igual al ID de su instrumento:
+
+| `actividad_id` | `scaffold_inline.badge` obligatorio | Instrumento |
+|---|---|---|
+| `A3.3.S2.4` | `instrument_1_reading` | Cuestionario No 1 — Reading |
+| `A3.3.S3.4` | `instrument_2_writing` | Rúbrica analítica No 2 — Writing |
+| `A3.3.S4.2` | `instrument_3_listening` | Lista de Chequeo No 3 — Listening |
+| `A3.3.S4.4` | `instrument_4_speaking` | Escala de Estimación No 4 — Speaking |
+| `A3.3.S5.3` | `instrument_5_language_functions` | Escala de Estimación No 5 — Language Functions |
+| `A3.3b.2` | `pm_4_2_consolidado` | Cuestionario Técnico Consolidado (25 pts) |
+
+El renderer pinta el badge en ORANGE (`#F59316`) dentro del encabezado del scaffold, alineando visualmente con la Línea 2 del `activity_footer` (bloque evidencia). El validador **exige** que estas 6 actividades tengan badge y que el valor coincida con su instrumento canónico.
+
+### 9.7 Orden pedagógico de renderizado
+
+```
+┌─ HEADER: actividad_id · tipo_actividad_sena · titulo_en / titulo_es · metadata (tiempo, agrupación, V+O+C)
+├─ descripcion_aprendiz (EN + ES)
+├─ paso_a_paso (numerado, ORANGE bold)
+├─ [INPUT MATERIAL, opcional] apendices_referenciados renderizados inline
+│       (texto de lectura v2.6 / transcripción listening / glosario)
+├─ [WORKSPACE] scaffold_inline (tabla / form / campos editables)  ← v2.6.3
+├─ [ENTREGABLE] producto · formato · criterio mínimo
+└─ activity_footer (derivado v2.6.1, 2 líneas: logística + evidencia si aplica)
+```
+
+**Regla de flujo:** lee input → trabaja en el scaffold → entrega el producto. La secuencia es estricta; ningún renderer debe invertirla.
+
+### 9.8 Reglas arquitectónicas v2.6.3 (obligatorias)
+
+1. **PROHIBIDO** crear anexos imprimibles separados cuya función sea "espacio de trabajo del aprendiz". Todo workspace va embebido como `scaffold_inline`.
+2. **PERMITIDO** conservar apéndices legacy como **material de input** (texto de lectura, guion listening, glosario). Se renderizan inline ANTES del scaffold.
+3. **OBLIGATORIO** que cada actividad de `seccion_3_actividades_aprendizaje` tenga `titulo_en`, `titulo_es`, `paso_a_paso` (3–8), `scaffold_inline.tipo ∈ 10 canónicos`, y `entregable.{producto, formato, criterio_minimo}.{en, es}` completo.
+4. **OBLIGATORIO** que `meta.activities_schema_version === "v2.6.3"` esté presente en pm-3-6.json.
+5. **OBLIGATORIO** que las 6 actividades evidencia tengan `scaffold_inline.badge` con valor canónico.
+6. **PROHIBIDO** editar `activity_footer` manualmente; sigue derivándose desde upstream (regla v2.6.1 preservada).
+
+### 9.9 Pipeline canónico de migración/validación
+
+```
+scripts/
+├── v263-activities-data.js          → 30 specs por actividad (data file)
+├── rewrite_activities_v263.js       → migrador: aplica specs a pm-3-6.json (idempotente con backup)
+├── check-activity-card-schema.js    → validador schema v2.6.3 + 10 tipos + badges
+├── check-no-orphan-footer.js        → validador v2.6.1 (preservado)
+└── gen_audit_docx.js                → renderer con renderActivityCard_v263 + 10 renderers + dispatch por titulo_en
+```
+
+**Back-compat:** `renderActividades` inspecciona si la actividad tiene `titulo_en`. Si sí → ruta v2.6.3. Si no → ruta legacy preservada. Esto permite que runs pre-v2.6.3 sigan renderizando sin tocarse.
+
+### 9.10 Checklist de implementación para PM-3.6
+
+Antes de emitir `pm-3-6.json`:
+
+- [ ] Cada item de `seccion_3_actividades_aprendizaje` tiene los 12 campos canónicos de §9.3.
+- [ ] Ningún item tiene los 4 campos obsoletos de §9.4.
+- [ ] Cada `scaffold_inline.tipo` ∈ los 10 canónicos de §9.5.
+- [ ] Las 6 actividades evidencia tienen `scaffold_inline.badge` según §9.6.
+- [ ] `meta.activities_schema_version === "v2.6.3"`.
+- [ ] `node scripts/check-activity-card-schema.js` sale con exit 0 (PASS).
+- [ ] `node scripts/check-no-orphan-footer.js` sale con exit 0 (footers coherentes).
+
+---
+
+**Versión v2.6.3:** A partir del 2026-04-20  
+**Caso de origen:** MGV-2026-04-20 G1 (The Visual Communicator) — 30/30 actividades migradas, 10 tipos de scaffold usados, 6 badges verificados.  
+**Próxima guía que arranca con este contrato:** MGV-G2.

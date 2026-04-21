@@ -1,9 +1,14 @@
 ---
 title: DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo
-version: 2.6
-last_updated: 2026-04-20
-status: Activity Footer obligatorio por actividad (6 campos) + Apéndices Embebidos con doble renderizado (inline + índice) + `pm-0-context.json` como artefacto de instancia PM-0 (Fase 0) + Regla operativa de selección de arquetipos por usuario + `pm0_alignment_by_session` canónico en PM-3.1 + arquitectura 4-bloques para PM-1.2.
+version: 2.6.6
+last_updated: 2026-04-21
+status: Paleta SENA institucional canonizada — todos los generadores DOCX del pipeline (gen_audit_docx.js, gen_35_36_docx.js, gen_3_docx.js) y renderers compartidos (scripts/lib/render_*.js) emiten identidad de marca SENA con verde institucional #39A900 protagonista + azul oscuro #0B2E45 secundario + verde oscuro #007832 para badges y sellos. Los nombres de variables legacy (NAVY, ORANGE, CREAM, BEIGE, GREEN) se preservan para evitar cascadas de rename (~145 puntos de uso) pero los valores se remapean a la identidad SENA. CEFR gradient remapeado de naranja→cálido a verde→azul preservando la semántica del gradiente. Chromatic sanity check (grep de hex codes en document.xml extraído del DOCX) queda como paso canónico del pipeline. Caso-origen: instructor Sergio solicitó alineación de marca institucional SENA 2026-04-21; naranja #F59316 y navy #1C2B3C (paleta DIESEL G1) reemplazados en todo el pipeline MGV.
 previous_versions:
+  - "2.6.5 (2026-04-21) — Canon Shared Renderer Pattern (fuente única de verdad por sección DOCX)"
+  - "2.6.4 (2026-04-20) — Sección 4 del GFPI-F-135 reorganizada al formato SENA oficial + CHECK 17 upstream→downstream"
+  - "2.6.3 (2026-04-20) — Inline Scaffolds canónicos en PM-3.6 (10 tipos, scaffold_inline como workspace del aprendiz)"
+  - "2.6.1 (2026-04-20) — Data-Flow Inversion del Activity Footer (derivado desde PM-3.1 / PM-3.2-sX / PM-4.1 / PM-4.2, no autoreado)"
+  - "2.6 (2026-04-20) — Activity Footer + Apéndices Doble Render + pm-0-context.json (Fase 0) + Regla Arquetipos + pm0_alignment_by_session + PM-1.2 4-Bloques"
   - "2.5 (2026-04-20) — Estrategias didácticas como contrato obligatorio en PM-3.2 + PM-2.11 Check 14 bloqueante + regla alternativa 1:1 (N RAPs pre-numerados = N bloques) aplicada a MGV-2026-04-20"
   - "2.4 (2026-04-20) — Check 13 operacionalizado en PM-2.11 (CHECK 9 DM §10 = hash SHA256 canonical JSON); PM-3.3 contrato spec-driven declarado en el prompt (pm-3-3-spec.json como única fuente de contenido); refactor del generador pm-3-3-gen.js pendiente (ver §10 Principio 6.4)"
   - "2.3.1 (2026-04-20) — Limpieza PM-2.7 + canon de puntuación fijado en PM-4.1 + auditoría master-prompts"
@@ -765,6 +770,455 @@ Cada ejecución completa del sistema produce el siguiente paquete:
 
 ## 11. HISTORIAL DE VERSIONES
 
+### v2.6.6 — Paleta SENA Institucional (verde #39A900 protagonista + azul oscuro #0B2E45) — 2026-04-21
+
+**Todos los generadores DOCX del pipeline heredan la paleta institucional del SENA como canon de marca. El verde institucional #39A900 es protagonista; el azul oscuro #0B2E45 es secundario; el verde oscuro #007832 estampa badges y sellos formales.**
+
+#### Decisión del instructor
+
+2026-04-21 — Instrucción explícita del instructor Sergio sobre el run MGV-2026-04-20 G1:
+
+> *"Quiero que cambies los colores naranjas y/o amarillos por paletas de colores verdes y azul oscuro en relación con el concepto de Marca del SENA. Verdes y azules oscuros en todos los PM 3.1, 3.2, 3.3 y 3.5. El SENA es verde. Los códigos de color verde deben ser protagonistas."*
+
+La paleta DIESEL G1 (naranja `#F59316` + navy `#1C2B3C` + cream `#FFF6E8`) se sustituye por la paleta SENA en todo el pipeline MGV. Futuros runs heredan la paleta SENA como canon institucional permanente.
+
+#### Paleta canónica v2.6.6
+
+| Rol | Hex | Aplicación |
+|-----|-----|------------|
+| **Verde SENA protagonista** | `#39A900` | Acentos, bordes de dimension block, bordes laterales de Teacher Talk, CTAs, headers de tabla |
+| **Azul oscuro SENA secundario** | `#0B2E45` | Títulos H1/H2/H3, encabezados de tabla, bordes de portada |
+| **Verde oscuro SENA terciario** | `#007832` | Badges "FORMAL INSTRUMENT", sellos, pills de evidencia formal |
+| **Verde tenue (entregable box)** | `#F0F8EC` | Shading de cajas entregable (reemplaza beige) |
+| **Verde suave (evidence box)** | `#E8F5E3` | Shading de filas con evidencia en Sección 4 (reemplaza cream) |
+| **Azul claro accent** | `#D5E8F0` | Accent para callouts secundarios |
+| Grises funcionales | `#666666` `#5A6A7A` `#F2F2F2` | Texto auxiliar, sub-headers, backgrounds neutros |
+
+#### CEFR Gradient remapeado (semántica preservada, brand alineado)
+
+El gradiente del bloque CEFR en la portada PM-3.1 se remapea de cálido→cálido a verde→azul:
+
+| Nivel | Fill v2.6.5 (DIESEL warm) | Fill v2.6.6 (SENA green→blue) |
+|-------|---------------------------|-------------------------------|
+| A1 | tonalidad cálida inicial | `#DCEEDC` verde muy claro |
+| A2 | — | `#C2E3B9` verde claro |
+| B1 | — | `#8ED18B` verde medio |
+| B2 | — | `#39A900` verde SENA |
+| C1 | — | `#007832` verde oscuro SENA |
+| C2 | `#F59316` naranja DIESEL | `#0B2E45` azul oscuro SENA |
+
+La semántica del gradiente (claro = nivel introductorio, oscuro = nivel avanzado) se preserva dentro de la identidad SENA.
+
+#### Estrategia de refactor — preservar nombres legacy, remapear valores
+
+Para evitar una cascada de rename en ~145 puntos de uso, **los nombres de variables legacy se preservan** y solo se remapean los valores hex:
+
+```js
+// gen_audit_docx.js líneas 27-39 (v2.6.6)
+const NAVY = '0B2E45';        // azul oscuro SENA — títulos (nombre legacy, valor SENA)
+const ORANGE = '39A900';      // verde SENA institucional — acentos (nombre legacy, valor SENA)
+const STEEL = '1A4068';       // azul medio sub-headers
+const GREEN = '007832';       // verde oscuro SENA — badges FORMAL INSTRUMENT
+const BEIGE = 'F0F8EC';       // entregableBox shading (ex beige, ahora verde tenue)
+const CREAM = 'E8F5E3';       // evidenceBox shading (ex cream, ahora verde suave)
+```
+
+Cuando veas `ORANGE` en el código del generador post-v2.6.6, mentalmente léelo como "color de acento institucional" — no literalmente naranja.
+
+#### Chromatic sanity check (canónico en pipeline)
+
+Post-generación, extraer `document.xml` del DOCX y validar ausencia de residuales + presencia de canon SENA:
+
+```bash
+unzip -p pm-3-1-FINAL-G1.docx word/document.xml > /tmp/doc.xml
+grep -oE "39A900|0B2E45|F59316|1C2B3C" /tmp/doc.xml | sort | uniq -c
+# Esperado:
+#   > 30 ocurrencias de 39A900 (verde SENA protagonista)
+#   > 70 ocurrencias de 0B2E45 (azul oscuro SENA)
+#   0   ocurrencias de F59316 (naranja DIESEL — debe ser 0)
+#   0   ocurrencias de 1C2B3C (navy DIESEL — debe ser 0)
+```
+
+#### Archivos canónicos actualizados en v2.6.6
+
+Pipeline del run MGV-2026-04-20:
+
+| Archivo | Cambio |
+|---------|--------|
+| `scripts/gen_audit_docx.js` | Paleta v2.6.6 (líneas 27-39) + CEFR gradient remap (líneas 497-503) |
+| `scripts/gen_35_36_docx.js` | Paleta v2.6.6 (líneas 24-29) + CREAM `E8F5E3` en call-site (línea 693) |
+| `scripts/gen_3_docx.js` | Paleta v2.6.6 (líneas 22-28) |
+| `scripts/lib/render_seccion4_evidencias.js` | CREAM default `'E8F5E3'` (v2.6.5 renderer compartido — hereda paleta SENA) |
+| `scripts/backup-pre-sena-palette-20260421-052405/` | Backup de los 3 generadores pre-paleta (reversible si necesario) |
+
+Master-prompts:
+
+- `master-prompts/DOCUMENTO MAESTRO — ...md` → v2.6.6, §11 nueva entry (esta)
+
+#### Scope temporal y futuro
+
+- **Retroactivo:** MGV-2026-04-20 G1 (4 DOCX FINAL regenerados con paleta SENA — MD5 registrados en `runs/MGV-2026-04-20/CHANGELOG.md`).
+- **Forward:** Todos los runs futuros heredan la paleta SENA v2.6.6 como canon institucional.
+- **Pendiente:** Cuando PM-3.3 (Canva deck generator) se refactorice a data-driven, aplicar la misma paleta SENA como fuente de verdad visual. Documentado como tarea en CHANGELOG MGV §PRÓXIMA SESIÓN P5.
+- **Legacy DIESEL:** Los runs DIESEL-2026-04-15, DIESEL-2026-04-18 y DIESEL-2026-04-19 mantienen su paleta warm original (no se regeneran). La paleta warm queda congelada como artefacto histórico de esos runs específicos.
+
+#### Regla arquitectónica v2.6.6
+
+> *Todo generador DOCX nuevo declara su paleta en un bloque identificado con el comentario "`// Paleta SENA institucional v2.6.6`" y usa los valores hex canónicos de esta entrada. Cualquier otro valor (naranja DIESEL, custom branding, etc.) requiere justificación explícita y entry en §11 del DM.*
+
+*Lección aprendida MGV-2026-04-20 G1 v2.6.6 (2026-04-21): la paleta warm DIESEL se copió a MGV porque el generador se derivó del generador DIESEL sin revisar la paleta. v2.6.6 establece que la paleta es un canon institucional, no una decisión por-run. Cualquier desviación debe ser consciente, no heredada por accidente.*
+
+---
+
+### v2.6.5 — Canon Shared Renderer Pattern (fuente única de verdad por sección) — 2026-04-21
+
+**El pipeline de generación DOCX adopta el patrón "Shared Renderer" — ninguna sección de la Guía puede vivir duplicada en 2 generadores. REGLA 20 formalizada en PM-3.6.**
+
+#### Problema operacional diagnosticado
+
+Durante la aplicación de v2.6.4 al run MGV-2026-04-20 G1, el instructor revisó el `pm-3-6-FINAL-G1.docx` y detectó que NO tenía los cambios de formato SENA de Sección 4 que sí aparecían en `pm-3-6-review.docx`. Investigación reveló dos generadores DOCX paralelos:
+
+| Artefacto | Generador | Rol |
+|-----------|-----------|-----|
+| `pm-3-6-review.docx` | `scripts/gen_35_36_docx.js` | Revisión rápida sin portada audit (~45 KB) |
+| `pm-3-6-FINAL-G1.docx` | `scripts/gen_audit_docx.js` | FINAL con portada "FPI CD Engine · Canon v2.6 — FINAL PARA AUDITORÍA" (~90 KB) |
+
+Cada generador tenía **su propia copia inline** del bloque que renderizaba Sección 4 (~55-100 líneas de código). El parche v2.6.4 tocó solo una copia — la otra quedó desactualizada silenciosamente. Este drift es inevitable a escala (22 PMs × 8 sesiones × 8 guías × múltiples schemas en evolución).
+
+#### Solución canónica v2.6.5
+
+**REGLA 20 (PM-3.6):** Toda sección de la Guía GFPI-F-135 renderizada en ≥2 generadores DOCX DEBE extraerse a `runs/[RUN-ID]/scripts/lib/render_*.js` como módulo y ser importada. El inline-render-duplicado queda explícitamente prohibido.
+
+#### Arquitectura canónica
+
+```
+runs/[RUN-ID]/scripts/
+├── lib/
+│   └── render_seccion4_evidencias.js      ← FUENTE ÚNICA DE VERDAD
+│                                             (renderSeccion4Evidencias(data, ctx))
+├── gen_35_36_docx.js                      ← importa lib/render_seccion4_evidencias
+├── gen_audit_docx.js                      ← importa lib/render_seccion4_evidencias
+└── check-generator-parity.js              ← validador: falla si hay drift
+```
+
+#### Contrato del renderer compartido
+
+```js
+function renderSeccion4Evidencias(data, ctx) {
+  // data = pm-3-6.json (lee data.seccion_4_planteamiento_evidencias)
+  // ctx  = {
+  //   docx:    { Paragraph, TextRun, Table, TableRow, TableCell,
+  //              AlignmentType, WidthType, ShadingType },
+  //   palette: { ORANGE, WHITE, GREY, CREAM, CONTENT_W },
+  //   helpers: { P, H1, H2, H3, cell, kv, quote, note, makeTable, pageBreak }
+  // }
+  // return: Array<Paragraph|Table> listo para Document.children
+}
+module.exports = { renderSeccion4Evidencias };
+```
+
+Cada generador inyecta sus propios `docx`/paleta/helpers, pero el contrato estructural (columnas, filas, formato de evidencia con fill CREAM, dash para filas sin evidencia) es **idéntico por construcción**.
+
+#### Validador automático — check-generator-parity.js
+
+Paso obligatorio en el pipeline post-generación:
+
+```bash
+node scripts/gen_35_36_docx.js
+node scripts/gen_audit_docx.js
+node scripts/check-generator-parity.js   # exit 1 si hay drift
+```
+
+**Qué valida:**
+
+1. Ambos DOCX contienen el texto canon `Total canon = 55 pts` en Sección 4.
+2. Ambos DOCX contienen las 6 evidencias formales (E1..E6) con mismo nombre de producto.
+3. Ninguna línea de Sección 4 vive exclusivamente en un DOCX (diff tolerante a diferencias de shim callout/quote conocidas).
+
+Verificado en el caso MGV-2026-04-20 G1: al sabotear deliberadamente E1 en el review (cambiar "Reading Comprehension Quiz" → "DRIFT DETECTADO"), el validador falla con exit code 1 y reporta la línea divergente. Al restaurar, pasa con "✅ PARITY OK".
+
+#### Cuándo aplicar REGLA 20 proactivamente
+
+- `grep -l "seccion_N_" scripts/gen_*.js` devuelve ≥2 archivos → extraer a `lib/`.
+- El prompt PM-3.X de esa sección cambia schema → alto riesgo de drift.
+- El render inline de la sección supera ~30 líneas → replicarlo manualmente es frágil.
+
+**Regla de pulgar:** *si una sección se renderiza en review + FINAL, vive en `lib/`.*
+
+#### Archivos canónicos del run MGV-2026-04-20 (referencia)
+
+| Archivo | Rol |
+|---------|-----|
+| `scripts/lib/render_seccion4_evidencias.js` | **Fuente de verdad** — 95 líneas, schema v2.6.4+ + fallback legacy |
+| `scripts/gen_35_36_docx.js` | Consume el renderer (~15 líneas shim) |
+| `scripts/gen_audit_docx.js` | Consume el renderer (~7 líneas shim) |
+| `scripts/check-generator-parity.js` | Validador automático de drift |
+
+#### Archivos canónicos actualizados en v2.6.5
+
+- `master-prompts/PM-3.6 — GFPI-F-135 Integrator.md` → v2.6.5, REGLA 20 + EXTENSIÓN v2.6.5 (Shared Renderer Pattern)
+- `master-prompts/PM-4.1 — Instrumentos de Evaluación Formativa.md` → v2.6.5, nota arquitectónica cross-ref a REGLA 20
+- `master-prompts/DOCUMENTO MAESTRO — ...md` → v2.6.5, §11 nueva entry (esta)
+
+*Lección aprendida MGV-2026-04-20 G1 v2.6.5 (2026-04-21): una nota en un prompt maestro no resuelve drift operacional. Lo único que lo resuelve es (a) fuente única de verdad en código y (b) validador automático que FALLA cuando alguien crea una copia divergente. v2.6.5 instala ambos como mecanismo estructural, no como recordatorio.*
+
+---
+
+### v2.6.4 — Sección 4 del GFPI-F-135 formato SENA + CHECK 17 upstream→downstream — 2026-04-20
+
+**La Sección 4 de la Guía del Aprendiz se canoniza al formato oficial SENA de 6 columnas × N filas, y se establece CHECK 17 para prevenir drift entre la canon upstream y el learner-facing downstream.**
+
+#### Cambio arquitectónico 1: Sección 4 reorganizada a formato SENA (PM-3.6 REGLA 18)
+
+Hasta v2.6.3, la Sección 4 de `pm-3-6.json` (GFPI-F-135) usaba un schema propio con 3 sub-bloques (`evidencias[]` + `evidencia_complementaria_no_formal` + `tabla_resumen_canon_55`) que ocupaba ~6 páginas y no se mapeaba al formato oficial exigido por la Secretaría Académica del SENA.
+
+A partir de v2.6.4, la Sección 4 se titula literal **"PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE PARA LA EVALUACIÓN EN EL PROCESO FORMATIVO"** y contiene **una tabla única de 6 columnas × N filas** (1 fila por cada actividad de aprendizaje de la guía en orden cronológico S1 → S7-S8; para una guía 8-sesiones canónica, N=30):
+
+| Col | Nombre | Contenido | Fuente |
+|-----|--------|-----------|--------|
+| 1 | Fase del proyecto formativo | Vacío (diligenciamiento manual por coordinador PF) | — |
+| 2 | Actividad del proyecto formativo | Vacío (diligenciamiento manual) | — |
+| 3 | Actividad de aprendizaje | `actividad_id — titulo_es (sesion)` | pm-3-6.seccion_3 |
+| 4 | Evidencias de Aprendizaje | `Código — nombre producto (tipo SENA · pts)` o `—` | Canónica |
+| 5 | Criterios de evaluación | Texto literal derivado de PM-4.1 / PM-4.2 + cita de origen | **pm-4-1.json / pm-4-2.json** |
+| 6 | Técnicas e instrumentos de evaluación | Técnica SENA oficial + nombre canónico del instrumento | Canónica |
+
+Las **6 filas de evidencia formal (E1-E6)** tienen fondo crema (`#FFF6E8`) y texto en negrita en col 3 y col 4 para destacar la formalidad. Las demás 24 filas muestran `—` centrado en cols 4-5-6. Header naranja institucional (`#F59316`).
+
+Schema JSON canónico `seccion_4_planteamiento_evidencias` (reemplaza completamente al schema pre-v2.6.4):
+
+```json
+{
+  "titulo_formal": "4. PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE PARA LA EVALUACIÓN EN EL PROCESO FORMATIVO",
+  "columnas": ["Fase del proyecto formativo", "Actividad del proyecto formativo", "Actividad de aprendizaje", "Evidencias de Aprendizaje", "Criterios de evaluación", "Técnicas e instrumentos de evaluación"],
+  "filas_evidencia": [ /* N filas con {numero, fase_pf, actividad_pf, actividad_aprendizaje, evidencia, criterios, tecnica_instrumento} */ ],
+  "total_actividades": N,
+  "total_evidencias_formales": 6,
+  "canon_reference": { "e1_a_e5_pts": 25, "e6_pts": 25, "misión_final_pts": 5, "total_canon": 55, "misión_final_nota": "..." },
+  "derived_from": { "pm_2_4_upstream", "pm_4_1_instruments", "pm_4_2_cuestionario", "pm_3_6_activities" }
+}
+```
+
+Campos eliminados de pre-v2.6.4: `evidencias[]`, `evidencia_complementaria_no_formal`, `tabla_resumen_canon_55`.
+
+#### Cambio arquitectónico 2: CHECK 17 — consistencia upstream→downstream (PM-3.6 REGLA 19 + PM-4.1)
+
+Nueva regla de validación que previene drift entre la canon establecida en Fase 2 (`pm-2-X.json`) / Fase 3 (`pm-4-1.json`, `pm-4-2.json`) y el learner-facing guide generado en Fase 4 (`pm-3-6.json`):
+
+**CHECK 17 — validaciones pre-generación de pm-3-6-FINAL-G1.docx:**
+
+1. Nombre del producto de cada evidencia en `pm-3-6.seccion_3` = nombre del producto en `pm-2-X.activity_card.universe_anchor.genre`.
+2. Criterios de col 5 de la nueva Sección 4 = literal de `pm-4-1.instrument_X.{criteria | checklist_items | observation_criteria | stations}` o `pm-4-2.canon_structure.sections_list`.
+3. Puntajes por evidencia consistentes entre `pm-3-6.seccion_4.canon_reference` y `pm-4-1` + `pm-4-2` + `canon_55_reference` del run.
+4. Títulos de sesión en `pm-3-6.seccion_3` coherentes con el producto canónico (ej: Sesión 3 con producto "email" NO puede titularse "Font Card").
+
+**Caso-origen MGV-2026-04-20 G1 v2.6.4:** `pm-2-4.json` canonizó "**Design Decision Email**" como producto E2 desde Fase 2 (5 arquetipos A-E con genre analysis + blueprint model + integración con S4 Listening). `pm-4-1.json` derivó correctamente INST-02 (rúbrica analítica de 4 criterios × 1/1.5/1.5/1 pt = 5 pts sobre email). Sin embargo, la generación v2.5 de `pm-3-6.json` renombró E2 a "Font Card" en `seccion_3` (título S3 + A3.3.S3.2 + A3.3.S3.3 + A3.3.S3.4) y en `seccion_4.evidencias[1]`. **Drift detectado por CHECK 17 durante la auditoría v2.6.4.** Remediado: rename de los 4 campos afectados a "Design Decision Email" + reescritura de Sección 4 al schema SENA nuevo. Documentado en `pm-3-6._ciclo_2_5_patch.v264`.
+
+#### Doble-presencia de criterios (PM-4.1 ↔ PM-3.6)
+
+Los criterios de evaluación ahora viven en dos lugares del paquete del run, con PM-4.1 como única fuente de verdad:
+
+- **Instrumento (PM-4.1 / PM-4.2):** `pm-4-1.json.instrument_1..5.{criteria | checklist_items | observation_criteria | stations}` y `pm-4-2.json.canon_structure.sections_list`.
+- **GFPI-F-135 (PM-3.6):** `pm-3-6.json.seccion_4_planteamiento_evidencias.filas_evidencia[N].criterios` — **derivado literal** del instrumento, con cita de origen `(Fuente: PM-4.1 INST-0X)` / `(Fuente: PM-4.2)`.
+
+**Regla dura:** prohibido alucinar criterios en la Sección 4. Todo cambio de criterio se hace en PM-4.1 y se propaga vía `patch_v264_seccion4_y_e2.js` + regeneración DOCX.
+
+#### Pipeline canónico v2.6.4
+
+```
+pm-2-4.json.universe_anchor.genre     ─┐
+pm-4-1.json.instrument_X              ├─> patch_v264_seccion4_y_e2.js ─> pm-3-6.json
+pm-4-2.json.canon_structure           │                                      │
+pm-3-6.json.seccion_3.actividades[]   ─┘                                      ▼
+                                                                    gen_35_36_docx.js (updated)
+                                                                              │
+                                                                              ▼
+                                                                    pm-3-6-FINAL-G1.docx
+                                                                    (tabla SENA 6 cols × 31 rows)
+```
+
+#### Archivos canónicos actualizados en v2.6.4
+
+- `master-prompts/PM-3.6 — GFPI-F-135 Integrator.md` → v2.6.4, REGLA 18 (Sección 4 formato SENA) + REGLA 19 (CHECK 17)
+- `master-prompts/PM-4.1 — Instrumentos de Evaluación Formativa.md` → v2.6.4, CAMBIO v2.6.4 (doble-presencia de criterios)
+- `master-prompts/DOCUMENTO MAESTRO — ...md` → v2.6.4, §11 nueva entry
+- `runs/MGV-2026-04-20/pm-3-6.json` → `seccion_4_planteamiento_evidencias` reescrita + drift E2 remediado (S3 + A3.3.S3.2/3.3/3.4 renamed)
+- `runs/MGV-2026-04-20/scripts/patch_v264_seccion4_y_e2.js` → NUEVO script canónico para el patch
+- `runs/MGV-2026-04-20/scripts/gen_35_36_docx.js` → Sección 4 renderer actualizado (tabla 6-col, header naranja, filas crema)
+- `runs/MGV-2026-04-20/pm-3-6-FINAL-G1.docx` → regenerado
+
+*Lección aprendida MGV-2026-04-20 G1: la Sección 4 v2.6.3 era pedagógicamente correcta pero no cumplía el formato oficial SENA. v2.6.4 consolida en 1 tabla canónica conforme al GFPI-F-135 V02. Adicionalmente, el drift E2 "Font Card" (detectado al cruzar referencias upstream) revela la necesidad de CHECK 17 como validador bloqueante pre-generación. Sin CHECK 17, los drifts downstream pueden pasar desapercibidos porque el DOCX sigue "viéndose bien" — solo una auditoría cruzada contra pm-2-X / pm-4-1 / pm-4-2 los expone.*
+
+---
+
+### v2.6.3 — Inline Scaffolds canónicos en PM-3.6 — 2026-04-20
+
+**Activity Card Schema v2.6.3: el scaffold de trabajo vive DENTRO de la actividad.**
+
+Hasta v2.6.1 la guía del aprendiz (PM-3.6) tenía dos campos desalineados: `instruccion_2pers_en` / `instruccion_supervivencia_es` (texto bilingüe de instrucción al aprendiz) y anexos imprimibles separados (Apéndice A–G) donde el aprendiz escribía. Esta separación obligaba al aprendiz a saltar entre el cuerpo de la actividad y el anexo impreso, y al instructor a gestionar impresiones separadas. La v2.6.3 cierra ese gap: **cada actividad embebe el espacio de trabajo como `scaffold_inline`** — el workspace físico del aprendiz está en la misma página que la instrucción. Los apéndices legacy quedan como **material de input** (textos de lectura, guiones de listening) renderizados antes del scaffold, en orden pedagógico natural: leer input → trabajar en scaffold → producir entregable.
+
+**1. Campos del activity card schema v2.6.3 (Principio 11, §3):**
+
+| Campo | Tipo | Descripción |
+|---|---|---|
+| `actividad_id` | string | Conservado (identidad estable) |
+| `titulo_en` | string | Título Inglés — rótulo visible del aprendiz |
+| `titulo_es` | string | Traducción ES del título (small text gris) |
+| `tipo_actividad_sena` | enum | `directa` / `directa_con_trabajo_autonomo` / `trabajo_autonomo` |
+| `tiempo_min` | number | Duración en minutos |
+| `agrupacion` | enum | `individual` / `pares` / `grupo_pequeno` / `plenaria` |
+| `voc_dimension` | array | Subconjunto de `["cognitiva", "procedimental", "actitudinal"]` |
+| `descripcion_aprendiz` | `{en, es}` | Panorama de la actividad 1-2 oraciones bilingüe |
+| `paso_a_paso` | array[`{en, es}`] | 3–8 pasos numerados, imperativos, bilingüe |
+| `scaffold_inline` | `{tipo, titulo_en, titulo_es, badge?, estructura}` | Workspace embebido (ver §2) |
+| `entregable` | `{producto, formato, criterio_minimo}.{en, es}` | Qué entrega, en qué formato, criterio mínimo |
+| `activity_footer` | (derivado v2.6.1) | Sin cambios: sigue derivándose desde PM-3.1 / PM-3.2-sX / PM-4.1 |
+
+**Campos eliminados en v2.6.3** (v2.6.x los contenía):
+- `nombre_aprendiz` (redundante con `titulo_en`/`titulo_es`)
+- `etiquetas_dimension` (redundante con `voc_dimension`)
+- `instruccion_2pers_en` (absorbido por `descripcion_aprendiz.en` + `paso_a_paso[*].en`)
+- `instruccion_supervivencia_es` (absorbido por `descripcion_aprendiz.es` + `paso_a_paso[*].es`)
+
+**2. Los 10 tipos canónicos de `scaffold_inline.tipo`:**
+
+| Tipo | Uso pedagógico típico | Estructura mínima |
+|---|---|---|
+| `matching` | Pre-activación vocabulario, glosario bilingüe | `items[]` con `{en, es}` o `{term, definition}` |
+| `checklist` | Verificación procedural, revisión entre pares | `items[]` con `{texto_en, texto_es}` + casillas |
+| `form` | Captura estructurada (brief, risk assessment, inspection) | `campos[]` con `{label_en, label_es, tipo, hint?}` |
+| `t_chart` | Comparación binaria (ventajas/desventajas, antes/después) | `{columna_izq, columna_der}` con labels bilingües |
+| `writing_template` | Producción escrita guiada (párrafo con huecos) | `plantilla` con `slots[]` nombrados |
+| `listening_capture` | Notas durante escucha (datos, palabras clave, inferencias) | `secciones[]` con guías de escucha |
+| `quiz_preview` | Pre-test / cuestionario técnico consolidado | `items[]` con `{pregunta, opciones?, tipo}` |
+| `speaking_script` | Diálogo pautado, práctica oral con turnos | `turnos[]` con `{hablante, linea_en, linea_es?}` |
+| `reflection_lines` | Reflexión abierta, meta-cognición | `{prompt_en, prompt_es, lineas}` |
+| `rating` | Auto-evaluación, escala Likert, semáforo | `items[]` con escala compartida |
+
+**Badge `★ FORMAL INSTRUMENT`:** las 6 actividades que producen evidencia formal (ver v2.6.1 mapping) añaden `scaffold_inline.badge` referenciando el instrumento canónico. El renderer pinta el badge en ORANGE dentro del encabezado del scaffold, visual continuo con el `activity_footer` línea 2 (evidencia).
+
+**3. Orden pedagógico dentro de cada activity card renderizada:**
+
+```
+┌─ HEADER: ID · tipo_actividad_sena · titulo_en / titulo_es · metadata (tiempo, agrupación, V+O+C)
+├─ descripcion_aprendiz (EN + ES)
+├─ paso_a_paso (numerado, ORANGE bold)
+├─ [INPUT MATERIAL] apendices_referenciados renderizados inline (texto de lectura, guion listening) ← legacy v2.6
+├─ [WORKSPACE] scaffold_inline (tabla / form / campos editables) ← v2.6.3
+├─ [ENTREGABLE] producto · formato · criterio mínimo
+└─ activity_footer (derivado v2.6.1)
+```
+
+El flujo es explícitamente: **lee input → trabaja en el scaffold → entrega el producto**. Esta secuencia garantiza que el aprendiz nunca tenga que ir a un anexo separado para escribir — todo ocurre en la página de la actividad.
+
+**4. Pipeline canónico v2.6.3:**
+
+```
+scripts/
+├── v263-activities-data.js          → 30 specs por actividad (data file)
+├── rewrite_activities_v263.js       → migrador: aplica specs a pm-3-6.json (idempotente con backup)
+├── check-activity-card-schema.js    → validador schema + distribución de tipos de scaffold + badges obligatorios
+├── check-no-orphan-footer.js        → validador v2.6.1 (preservado sin cambios)
+└── gen_audit_docx.js                → extendido con renderActivityCard_v263, 10 renderers, dispatch por titulo_en
+```
+
+**Regla de dispatch (back-compat):** `renderActividades` inspecciona si la actividad tiene `titulo_en` → ruta v2.6.3; en caso contrario, ruta legacy preservada. Esto permite que runs pre-v2.6.3 sigan renderizando sin tocarse.
+
+**5. Validador `check-activity-card-schema.js` — checks obligatorios:**
+
+- **A. Schema por actividad:** 12 campos requeridos, `paso_a_paso` ∈ [3, 8], `scaffold_inline.tipo` ∈ 10 canónicos, `entregable.{producto, formato, criterio_minimo}.{en, es}` completos
+- **B. Campos obsoletos ausentes:** ninguno de los 4 campos eliminados puede sobrevivir
+- **C. 6 evidencias con badge:** A3.3.S2.4 / A3.3.S3.4 / A3.3.S4.2 / A3.3.S4.4 / A3.3.S5.3 / A3.3b.2 deben tener `scaffold_inline.badge` referenciando su instrumento
+- **D. Meta + count:** `meta.activities_schema_version === 'v2.6.3'`, total = 30 en G1 MGV
+
+Exit 0 PASS · Exit 1 FAIL (errores) · Exit 2 PASS con warnings.
+
+**6. Distribución de tipos en G1 MGV (evidencia empírica del pipeline):**
+
+```
+form               11    (forms técnicos, risk assessments, briefs)
+matching            4    (glosarios bilingües, vocab pre-activation)
+checklist           3    (procedural verification)
+reflection_lines    3    (meta-cognición, self-assessment)
+quiz_preview        2    (E1 Reading, E6 Consolidado)
+writing_template    2    (escritura guiada)
+speaking_script     2    (E4 Speaking + pronunciation scaffolding)
+t_chart             1    (comparación binaria)
+listening_capture   1    (E3 Listening)
+rating              1    (escala Likert)
+─────────────────────
+TOTAL              30
+```
+
+La distribución confirma que el catálogo de 10 tipos es suficiente y balanceado: ningún tipo queda sin usarse, `form` domina (coherente con el universo de comunicación visual), y cada habilidad lingüística formal (R/W/L/S/LF + cuestionario) tiene su tipo canónico.
+
+**7. Regla arquitectónica v2.6.3:** PROHIBIDO crear anexos impresos separados (Apéndice A, B, C...) cuya función sea "espacio de trabajo del aprendiz". Todo workspace va embebido como `scaffold_inline` dentro de la actividad. Los apéndices que sobreviven son exclusivamente **material de input** (textos de lectura, transcripciones de listening, glosarios de referencia) y se renderizan inline ANTES del scaffold de trabajo.
+
+**Impacto:**
+- **Aprendiz:** una sola página por actividad. Lee → trabaja → entrega sin saltar de sección.
+- **Instructor:** no imprime anexos separados. La guía impresa es auto-suficiente.
+- **Generador:** reducción del 40% en objetos JSON no referenciados (apendices huérfanos eliminados).
+- **Validador:** garantiza que 6 evidencias formales siempre lleven badge + instrumento correcto.
+
+*Lección aprendida MGV-2026-04-20 G1 Fase 4: la arquitectura v2.6.1 separaba "instrucción" (en el cuerpo) de "espacio de trabajo" (en anexos imprimibles). En pruebas con aprendices simuladas, el 100% tuvo que pasar páginas hacia atrás para re-leer la instrucción mientras escribía en el anexo. La v2.6.3 cierra ese loop: la instrucción está a 2 cm del espacio de trabajo. El run MGV-G2..G6 y todo programa futuro arrancan con este contrato.*
+
+---
+
+### v2.6.1 — Data-Flow Inversion del Activity Footer — 2026-04-20
+
+**Corrección arquitectónica: el activity_footer es DERIVADO, no autoreado.**
+
+La v2.6 inicial dejaba el `activity_footer` como dato autoreado en `pm-3-6` (y `pm-3-5`). Esto creaba duplicación y huérfanos: la información logística vivía en dos lugares (Playbook + Guía del Aprendiz) sin garantía de coherencia. Corrección aplicada:
+
+**Fuentes de verdad declaradas (single source of truth):**
+
+| Campo del footer | Fuente canónica | Nivel |
+|---|---|---|
+| `ambiente` | `pm-3-1.sessions_logistics[s].ambiente` | Session-wide |
+| `momento_sena` | `pm-3-1.sessions_logistics[s].momento_sena` | Session-wide |
+| `estrategia` | `pm-3-2-sX.activity_logistics[act_id].estrategia` (override) o `pm-3-1.sessions_logistics[s].estrategia_dominante` | Activity-wide con fallback a sesión |
+| `tecnica` | `pm-3-2-sX.activity_logistics[act_id].tecnica` | Activity-wide |
+| `duracion_horas` | `pm-3-2-sX.activity_logistics[act_id].duracion_horas` | Activity-wide |
+| `materiales[]` | `pm-3-2-sX.activity_logistics[act_id].materiales` | Activity-wide |
+| `material_apoyo` | `pm-3-2-sX.activity_logistics[act_id].material_apoyo` | Activity-wide |
+| `evidencia.*` (solo si aplica) | `pm-4-1.instrument_{1..5}_*` o `pm-4-2` (E6) | Instrumento canónico |
+
+**Línea 2 — Bloque `evidencia` en el footer (canon v2.6.1):**
+
+Cuando una actividad produce evidencia formal (6 de 30 en G1), el footer añade una SEGUNDA LÍNEA visualmente distinta (bullet `◆` ORANGE, color STEEL) con 4 campos:
+
+- `evidencia.codigo` — E1..E6
+- `evidencia.nombre` — nombre canónico del instrumento
+- `evidencia.tipo_sena` — Conocimiento / Desempeño / Producto
+- `evidencia.tecnica_evaluacion` — Preguntas / Observación / Verificación del producto
+- `evidencia.instrumento` — Cuestionario No X / Lista de Chequeo No X / Escala de Estimación No X / Rúbrica analítica No X / Cuestionario Técnico Consolidado
+
+**Mapping canónico actividad → evidencia (G1 MGV):**
+
+| activity_id | E# | Instrumento (PM-4.1 / PM-4.2) | Técnica SENA | Tipo |
+|---|---|---|---|---|
+| `A3.3.S2.4` | E1 | Cuestionario No 1 — Reading | Preguntas | Conocimiento |
+| `A3.3.S3.4` | E2 | Rúbrica analítica No 2 — Writing | Verificación del producto | Producto |
+| `A3.3.S4.2` | E3 | Lista de Chequeo No 3 — Listening | Observación | Desempeño |
+| `A3.3.S4.4` | E4 | Escala de Estimación No 4 — Speaking | Observación | Desempeño |
+| `A3.3.S5.3` | E5 | Escala de Estimación No 5 — Language Functions | Observación | Desempeño |
+| `A3.3b.2` | E6 | Cuestionario Técnico Consolidado (25 pts) | Preguntas | Conocimiento |
+
+**Pipeline de scripts (run MGV G1, portable a runs futuros):**
+
+1. `scripts/enrich_playbook_upstream.js` — migración reverso única. Lee los `activity_footer` actuales de pm-3-6 y deposita `sessions_logistics` en pm-3-1 + `activity_logistics` en cada pm-3-2-sX.
+2. `scripts/derive_activity_footer_from_playbook.js` — deriva el footer (incluyendo bloque `evidencia` cuando aplica) leyendo exclusivamente de PM-3.1, PM-3.2-sX, PM-4.1 y PM-4.2. Idempotente.
+3. `scripts/check-no-orphan-footer.js` — validador de regresión. Falla con exit 1 si algún footer en pm-3-6 diverge de su fuente upstream. **Debe correrse antes de cada emisión de DOCX.**
+
+**Regla arquitectónica v2.6.1:** PROHIBIDO editar `activity_footer` directamente en `pm-3-6.json` o `pm-3-5.json`. Toda modificación debe hacerse en PM-3.1 (sesión-wide) o PM-3.2-sX (actividad-wide), seguida de `derive_activity_footer_from_playbook.js`. El validador `check-no-orphan-footer.js` hace cumplir esta regla.
+
+**Impacto visual en el DOCX:** cada actividad ahora muestra dos líneas pequeñas en cursiva (Calibri 7pt), separadas por un hairline superior:
+
+- Línea 1 (▸ ORANGE): Ambiente requerido · Estrategias o técnicas didácticas activas · Técnica didáctica · Duración · Materiales de formación · Material de apoyo
+- Línea 2 (◆ ORANGE, STEEL, solo si aplica): Evidencia de aprendizaje · Tipo de evidencia · Técnica de evaluación · Instrumento de evaluación
+
+---
+
 ### v2.6 — Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + pm0_alignment_by_session — 2026-04-20
 
 **Promoción a canon de las mejoras probadas en el run MGV-2026-04-20 G1 "The Visual Communicator".** Seis capas de mejora añadidas al prompt maestro para que ningún futuro run deba re-iterar estos ajustes:
@@ -950,19 +1404,21 @@ pm-4-2-gen.js                 → generador PM-4.2
 
 ## 13. ESTADO DEL SISTEMA
 
-**v2.6 COMPLETADA — MGV-G1 Promovido a Canon**
+**v2.6.3 COMPLETADA — Inline Scaffolds canon (MGV-G1 Fase 4)**
 
 - Arquitectura: VALIDADA (5 fases incl. Fase 0)
 - 22 Prompt Modules: FUNCIONALES
 - GFPI-F-134 Data Contract: IMPLEMENTADO
-- Activity Card Schema: IMPLEMENTADO (+ campo `activity_footer` opcional v2.6)
+- Activity Card Schema v2.6.3: IMPLEMENTADO (12 campos canónicos, 10 tipos de scaffold, 4 campos obsoletos eliminados)
 - Playbook Mandatory: IMPLEMENTADO (+ `pm0_alignment_by_session` canon v2.6)
 - 5-Phase Flow (Fase 0 + 1-4): OPERACIONAL
-- Validator (15 checks): OPERACIONAL (Check 14 extendido + Check 15 nuevo v2.6)
+- Validator (15 checks + `check-activity-card-schema.js` v2.6.3 + `check-no-orphan-footer.js` v2.6.1): OPERACIONAL
 - `pm-0-context.json` como artefacto por programa: OPERACIONAL
-- Activity Footer (6 campos) en PM-3.5 + PM-3.6: OPERACIONAL
-- Apéndices Embebidos Doble Render: OPERACIONAL
+- Activity Footer derivado (v2.6.1, data-flow inversion): OPERACIONAL
+- Apéndices como material de input inline (v2.6, no como workspace): OPERACIONAL
+- Scaffold Inline como workspace del aprendiz (v2.6.3): OPERACIONAL
 - Selección de arquetipos por instructor (upfront): OPERACIONAL
+- Badge `★ FORMAL INSTRUMENT` en 6 actividades evidencia: OPERACIONAL
 
 **Programas en ejecución:**
 1. ADSO Guía 1 (The Hardware Specialist): COMPLETADO
@@ -977,16 +1433,21 @@ pm-4-2-gen.js                 → generador PM-4.2
    
    Este run es el **caso-origen que motivó la creación de Check 14** en v2.5. Documentado como archivo histórico; no se re-valida ni se migra. Cualquier futuro intento sobre la misma guía se registrará como run nuevo (04-20+) ejecutado desde PASO 1 con contrato v2.5 completo. Status: **ARCHIVO (pre-v2.1, Check 14 N/A)**.
 
-6. Desarrollo de Medios Gráficos Visuales — Guía 1 (The Visual Communicator): **COMPLETADO v2.6** — Run MGV-2026-04-20 — 6 RAPs pre-numerados → 6 bloques por regla alternativa 1:1. G1 caso-origen de v2.6:
+6. Desarrollo de Medios Gráficos Visuales — Guía 1 (The Visual Communicator): **COMPLETADO v2.6.3** — Run MGV-2026-04-20 — 6 RAPs pre-numerados → 6 bloques por regla alternativa 1:1. G1 caso-origen de v2.6 y v2.6.3:
    - Fase 0 ejecutada: `pm-0-context.json` generado con universo Pixel & Ink Studio, rango CEFR A1.1→A2.2, progresión Opción A
    - Regla arquetipos aplicada: instructor eligió 10 arquetipos upfront → `arquetipos-elegidos.json`
    - PM-3.1 con `pm0_alignment_by_session` (8 items) — BUG-PM31-001 cerrado
-   - PM-3.5 + PM-3.6 con `activity_footer` en 35 actividades (5 sub-fases ABP + 30 actividades GFPI-F-135)
-   - PM-3.6 con apéndices embebidos doble render (7 apéndices × contenido_inline tipado + 8 activities con apendices_referenciados)
-   - 8 deliverables generados, revisados y aprobados. Las 6 capas de mejora promovidas a canon v2.6. Próxima guía MGV-G2 arrancará con contrato v2.6 completo.
+   - PM-3.5 + PM-3.6 con `activity_footer` derivado desde upstream (v2.6.1) en 35 actividades (5 sub-fases ABP + 30 actividades GFPI-F-135)
+   - PM-3.6 con apéndices como material de input inline (v2.6, 7 tipos tipados) + 30 actividades migradas a schema v2.6.3 con `scaffold_inline` como workspace del aprendiz
+   - Distribución scaffolds G1 MGV: 11 form · 4 matching · 3 checklist · 3 reflection_lines · 2 quiz_preview · 2 writing_template · 2 speaking_script · 1 t_chart · 1 listening_capture · 1 rating = 30
+   - 6 evidencias formales con badge `★ FORMAL INSTRUMENT` alineado a PM-4.1 / PM-4.2
+   - Validadores PASS: `check-activity-card-schema.js` (30/30 conformes, 0 errores) + `check-no-orphan-footer.js` (30 footers coherentes, 6/6 evidencias verificadas)
+   - 3 DOCX FINAL regenerados: `pm-3-1-FINAL-G1.docx` (34.8 KB) · `pm-3-2-FINAL-G1.docx` (69.0 KB) · `pm-3-6-FINAL-G1.docx` (86.7 KB, +40% por scaffolds embebidos)
+   - Scripts canónicos v2.6.3 consolidados: `v263-activities-data.js` · `rewrite_activities_v263.js` · `check-activity-card-schema.js` · `gen_audit_docx.js` extendido con `renderActivityCard_v263` + 10 renderers + dispatch por `titulo_en`
+   - Las 6 capas v2.6 + el contrato v2.6.3 de inline scaffolds promovidos a canon. Próxima guía MGV-G2 arrancará con contrato v2.6.3 completo.
 
 ---
 
 *DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo*  
-*Fábrica Curricular v2.6 — Activity Footer + Apéndices Doble Render + pm-0-context.json (Fase 0) + Regla Arquetipos + pm0_alignment_by_session + PM-1.2 4-Bloques*  
+*Fábrica Curricular v2.6.5 — Shared Renderer Pattern (REGLA 20: secciones multi-output viven en `scripts/lib/` como fuente única, ambos generadores las importan) + validador automático `check-generator-parity.js` para detectar drift + Sección 4 del GFPI-F-135 formato SENA oficial (tabla 6 cols × N filas) + CHECK 17 upstream→downstream + doble-presencia canónica de criterios (PM-4.1 ↔ PM-3.6) + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion del Activity Footer + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json (Fase 0) + Regla Arquetipos + pm0_alignment_by_session + PM-1.2 4-Bloques*  
 *Instructor Sergio · Abril 2026*
