@@ -1,0 +1,162 @@
+{
+  "_meta": {
+    "schema_version": "activity-card-v2.0",
+    "schema_ref": "master-prompts/Activity Card — Schema.md (2026-04-13)",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-opus-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist"
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.10",
+    "pm_name": "Grammar — Structure Use",
+    "session": 3,
+    "phase_sena": "Apropiación",
+    "rap_id": "RAP-DIESEL-001-2026",
+
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Inducir 3 estructuras gramaticales desde texto de S2 y corregir 10 errores frecuentes en contexto de taller",
+        "didactic_strategy": "Investigación guiada",
+        "didactic_technique": "Análisis de casos"
+      },
+      {
+        "number": 2,
+        "type": "procedimental",
+        "statement": "Practicar las 3 estructuras gramaticales en rotación por estaciones temáticas del taller con actividades diferenciadas",
+        "didactic_strategy": "Aprendizaje colaborativo",
+        "didactic_technique": "Juegos educativos"
+      },
+      {
+        "number": 3,
+        "type": "procedimental",
+        "statement": "Producir Safety Report completo para Bay 3 usando imperativos, There is/are y preposiciones de lugar integradas",
+        "didactic_strategy": "TBLT",
+        "didactic_technique": "Taller"
+      }
+    ],
+
+    "hours": {
+      "direct": 3.0,
+      "autonomous": 0.75
+    },
+
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "",
+      "evaluation_technique": "",
+      "instrument_number": null,
+      "instrument_type": null
+    },
+
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Texto 'Tools Every Diesel Specialist Needs' (S2) proyectado con resaltados de color: verde = imperativo, azul = There is/are, rojo = preposición de lugar",
+        "Error Log impreso — 10 oraciones con errores gramaticales en contexto de taller (1 por aprendiz)",
+        "Tarjetas de Estación impresas: Estación A (Imperativo), Estación B (There is/are), Estación C (Preposiciones) — materiales diferenciados por estación",
+        "Safety Report formato en blanco — Bay 3 (1 por aprendiz — práctica fluida, NO evidencia formal)",
+        "Formula Box proyectado en pantalla — visible desde Actividad 1 en adelante (como confirmación, no punto de partida)",
+        "Word Wall de S2 visible en aula"
+      ],
+      "instructors": "Instructor de inglés técnico"
+    },
+
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Grammar",
+    "quiz_points": 5,
+    "quiz_item_count": 5
+  },
+
+  "pm0_constraints_applied": {
+    "session": "S3",
+    "grammar_active": "Gr1+Gr2 CONSOLIDA + Gr5 INTRO (Imperativo afirmativo y negativo: Check/Open/Use/Tighten/Replace; Don't + base form). PM-2.10 ES el momento de enseñanza explícita de Gr5 en S3. There is/are (Gr2) y preposiciones de lugar (Gr1 extended) se consolidan como soporte del imperativo.",
+    "l1_max": "≤ 20% — Foco en forma. El tablero + Formula Box + Language Bank reemplazan explicación en L1. Instrucciones escritas en inglés con iconos de apoyo. L1 permitido en verificación de comprensión de regla si hay bloqueo genuino.",
+    "feedback_mode": "ACCURACY en Actividades 1 y 2 (noticing e inducción gramatical) — recast + elicitación + cuadro resumen en pizarra construido CON el grupo. FLUENCY en Actividad 3 (producción del Safety Report) — no interrumpir; errores anotados en silencio con códigos G/V/Sp/WO para feedback post-tarea escrito.",
+    "discovery_first": "PM-2.10 implementa el principio Discovery First: los aprendices inducen la regla del Imperativo ANTES de ver el Formula Box. Secuencia obligatoria: (1) Noticing en texto → (2) Inferencia de regla por el grupo → (3) Formula Box como confirmación, NO como punto de partida. Instructor NO explica la regla antes del noticing.",
+    "grammar_targets_note": "Los 3 targets evaluados en el Quiz S6 Grammar (5 ítems): 2 de Imperativo afirmativo/negativo, 2 de There is/are (afirm./neg./pregunta), 1 de Preposiciones de lugar. Informar al grupo al cierre.",
+    "stress_for_grammar_terms": "MAIN-te-nance, in-SPEC-tion, re-PLACE-ment — backchaining antes de que aparezcan en el Safety Report: '-ment → replacement → do a replacement'. Imperativo acentuado en el VERBO: 'CHECK the floor jack'."
+  },
+
+  "grammar_targets": [
+    {
+      "structure": "Imperativo (Gr5 INTRO)",
+      "affirmative": "Base form: 'Check the floor jack.'",
+      "negative": "Don't + base form: 'Don't leave tools on the floor.'",
+      "workshop_examples": [
+        "Check the gloves.",
+        "Tighten the bolts.",
+        "Clean the workbench.",
+        "Replace the filter.",
+        "Don't use the lift without checking."
+      ],
+      "formula_box": "✅ [Verb] + [Object] | ❌ Don't + [Verb] + [Object]"
+    },
+    {
+      "structure": "There is / There are (Gr2 CONSOLIDA)",
+      "affirmative": "'There is a spill near bay 2.' / 'There are three wrenches on the workbench.'",
+      "negative": "'There is no fire extinguisher in bay 3.' / 'There are no tools in the toolbox.'",
+      "question": "'Is there a floor jack in bay 1?' / 'Are there any goggles on the workbench?'",
+      "formula_box": "There is + [singular] | There are + [plural] | There is no + [singular] | Is there...? / Are there...?"
+    },
+    {
+      "structure": "Preposiciones de lugar (Gr1 extended)",
+      "prepositions": ["in", "on", "next to", "under", "near", "between"],
+      "workshop_examples": [
+        "The torque wrench is on the workbench.",
+        "The floor jack is next to bay 1.",
+        "The toolbox is under the workbench.",
+        "The PPE is near the bay door.",
+        "The socket is in the toolbox."
+      ],
+      "formula_box": "The [tool] is [preposition] the [location]."
+    }
+  ],
+
+  "error_log": {
+    "title": "Error Log — Find and Correct the Grammar Error",
+    "instructions": "Each sentence has ONE grammar error. Use the Formula Box to correct it.",
+    "sentences": [
+      {"number": 1, "error": "Check the floor jack for leak.", "correction": "Check the floor jack for leaks.", "target": "Imperativo — objeto incompleto (plural requerido)"},
+      {"number": 2, "error": "Don't to leave tools on the floor.", "correction": "Don't leave tools on the floor.", "target": "Don't + base form — no to-infinitivo"},
+      {"number": 3, "error": "There is tools on the workbench.", "correction": "There are tools on the workbench.", "target": "There are + sustantivo plural"},
+      {"number": 4, "error": "There are a spill near bay 2.", "correction": "There is a spill near bay 2.", "target": "There is + sustantivo singular"},
+      {"number": 5, "error": "The torque wrench is in the workbench.", "correction": "The torque wrench is on the workbench.", "target": "Preposición on (superficie, no interior)"},
+      {"number": 6, "error": "The floor jack is next the bay door.", "correction": "The floor jack is next to the bay door.", "target": "Next to — no omitir 'to'"},
+      {"number": 7, "error": "Don't checks the toolbox without gloves.", "correction": "Don't check the toolbox without gloves.", "target": "Don't + base form — no añadir -s al verbo"},
+      {"number": 8, "error": "There is no goggles in the bay.", "correction": "There are no goggles in the bay.", "target": "There are no + sustantivo plural"},
+      {"number": 9, "error": "Replace the filter in the toolbox.", "correct": true, "note": "CORRECTA — aprendiz debe reconocer que esta oración es correcta (Check de comprensión)"},
+      {"number": 10, "error": "The PPE is on near the bay door.", "correction": "The PPE is near the bay door.", "target": "No combinar dos preposiciones: on + near → solo near"}
+    ]
+  },
+
+  "archetype_used": [
+    "A — Inductive Discovery + Error Log (Actividad 1: noticing en texto S2 + corrección de error log — Discovery First obligatorio)",
+    "B — Grammar Stations (Actividad 2: rotación por 3 estaciones — una por estructura target — actividades diferenciadas)",
+    "C — Integrated Production (Actividad 3: Safety Report Bay 3 con las 3 estructuras obligatorias integradas)"
+  ],
+
+  "trabajo_autonomo": {
+    "duracion_h": 0.75,
+    "actividades": [
+      "Auto-evaluar el Safety Report de Bay 3 (Actividad 3) usando los códigos G/V/Sp/WO — corregir los errores marcados por el instructor y reescribir las oraciones en el cuaderno",
+      "Completar ejercicio de 10 oraciones en Moodle: rellenar blancos con la estructura gramatical correcta (imperativo, There is/are o preposición de lugar) en contexto de bay",
+      "Preview S4 Speaking (PM-2.8): practicar en voz alta el rol de Santiago Ríos en el Workshop Readiness Report — 2 rondas de 60 segundos cronometradas con Stock Card A en mano"
+    ]
+  },
+
+  "gfpi_tag": "3.3-APROPIACION-GRAMMAR",
+  "instructor_notes": {
+    "sequence_in_s3": "PM-2.10 (Grammar) ocupa WHILE-B de S3. PM-2.4 (Writing) ocupa WHILE-A y WHILE-C+D. El cuadro resumen de Gr5 (imperativo) construido colaborativamente en PM-2.10 alimenta directamente el Language Bank de PM-2.4. No separar estas dos PMs — el imperativo es la gramática que produce las instrucciones del checklist.",
+    "discovery_protocol": "Actividad 1 — Secuencia obligatoria: proyectar texto S2, pedir al grupo que (a) subraye todas las formas de imperativo, (b) encierre en círculo todas las frases con There is/are, (c) trace un cuadro alrededor de todas las preposiciones de lugar. Luego construir cuadro resumen en pizarra con ejemplos del texto. SOLO después proyectar el Formula Box como confirmación.",
+    "station_logistics": "Actividad 2 — 3 estaciones de 12 minutos. Rotación en sentido horario. Estación A (Imperativo): tarjetas con instrucciones de seguridad incompletas — completar con verbo correcto. Estación B (There is/are): describir imagen de bay con hazards — producir 4 oraciones. Estación C (Preposiciones): ubicar 8 herramientas en layout del taller — escribir oración con preposición.",
+    "safety_report_protocol": "Actividad 3 — El Safety Report de Bay 3 es práctica fluida (NO evidencia formal). Mínimo requerido: 3 imperativos + 3 There is/are + 3 preposiciones. El instructor aplica códigos G/V/Sp/WO en lápiz en el margen del documento — el aprendiz corrige en casa (trabajo autónomo).",
+    "grammar_quiz_preview": "Al final de la sesión, informar al grupo: 'Quiz S6 Grammar tendrá 5 preguntas: 2 de imperativo, 2 de There is/are, 1 de preposiciones'. Esto orienta el trabajo autónomo sin revelar los ítems exactos."
+  }
+}

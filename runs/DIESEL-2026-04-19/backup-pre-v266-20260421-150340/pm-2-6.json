@@ -1,0 +1,182 @@
+{
+  "_meta": {
+    "schema_version": "activity-card-v2.0",
+    "schema_ref": "master-prompts/Activity Card — Schema.md (2026-04-13)",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-opus-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist"
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.6",
+    "pm_name": "Listening — The Auditory Anchor",
+    "session": 4,
+    "phase_sena": "Apropiación",
+    "rap_id": "RAP-DIESEL-001-2026",
+
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Activar esquemas previos y pre-entrenar vocabulario del diálogo de taller diesel antes de escuchar el audio",
+        "didactic_strategy": "Content-Based Learning",
+        "didactic_technique": "Investigación guiada"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Escuchar diálogo Bay 2 Safety Briefing y responder cuestionario de comprensión auditiva como Evidencia 3",
+        "didactic_strategy": "TBLT",
+        "didactic_technique": "Análisis de casos"
+      },
+      {
+        "number": 3,
+        "type": "procedimental",
+        "statement": "Dramatizar diálogo de seguridad en pares asumiendo roles de supervisor y técnico de The Diesel Workshop",
+        "didactic_strategy": "Juego de roles",
+        "didactic_technique": "Role play"
+      }
+    ],
+
+    "hours": {
+      "direct": 3.0,
+      "autonomous": 0.75
+    },
+
+    "evidence": {
+      "generates_evidence": true,
+      "type": "Desempeño",
+      "description": "El aprendiz demuestra comprensión auditiva respondiendo 5 preguntas sobre diálogo 'Bay 2 Safety Briefing' sin acceso al script — Cuestionario No 3",
+      "evaluation_technique": "Preguntas",
+      "instrument_number": 3,
+      "instrument_type": "Cuestionario"
+    },
+
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Audio 'Bay 2 Safety Briefing' (TTS generado, velocidad 0.85x, ~2 min) — disponible en Moodle + USB backup",
+        "Cuestionario No 3 impreso — 5 ítems de comprensión auditiva (1 por aprendiz, sin script adjunto)",
+        "Script del diálogo impreso (1 por par) — SOLO para actividad 3 (role play), entregado DESPUÉS del Cuestionario",
+        "Imagen Bay 2 del taller proyectada en pantalla durante actividad 1 y 2",
+        "Word Wall de S2 visible en aula",
+        "Parlante Bluetooth + computador del instructor para reproducción del audio"
+      ],
+      "instructors": "Instructor de inglés técnico"
+    },
+
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Listening",
+    "quiz_points": 5,
+    "quiz_item_count": 5
+  },
+
+  "pm0_constraints_applied": {
+    "session": "S4",
+    "grammar_active": "Gr5 CONSOLIDA (imperativo) + Gr7 INTRO (can/can't: habilidad). El diálogo contiene imperativos de seguridad (Check, Wear, Don't) y should — NOT can/can't todavía (Gr7 se introduce en WHILE-D de S4, en PM-2.8).",
+    "l1_max": "≤ 15% — Mayor autonomía esperada. Instrucciones en L2 con soporte visual. L1 solo si bloqueo genuino en comprensión de consigna auditiva.",
+    "feedback_mode": "FLUENCY dominante en actividad 1 (predicción) y actividad 3 (role play) — no interrumpir. ACCURACY CERO durante el listening (actividad 2) — el aprendiz necesita procesar sin interferencia. Post-task delayed feedback tras actividad 3: errores frecuentes en pizarra (anónimos).",
+    "listening_support": "A1.1: audio reproducido 2 veces antes del Cuestionario No 3. Primera vez: SOLO audio (gist). Segunda vez: con imagen proyectada (detail). Cuestionario: sin script, sin pausa del audio.",
+    "stress_in_audio": "Audio TTS marcado con sentence stress en palabras de contenido: 'CHECK the GLOVES. There's a SPILL near the BAY DOOR.' Pre-enseñar al aprendiz qué palabras esperar como stressed antes de la primera reproducción.",
+    "role_play_note": "Actividad 3 (role play) es PREVIEW de PM-2.8. NO evaluar — es práctica fluida con script en mano. Modo fluency: no interrumpir, no corregir forma durante el role play."
+  },
+
+  "source": {
+    "title": "Safety in Automotive Workshops: Guide for Repair and Servicing Environments",
+    "author": "SafetyCulture",
+    "publication": "SafetyCulture Blog",
+    "date": "2024",
+    "url": "https://safetydocs.safetyculture.com/blog/safety-in-automotive-workshops-guide-for-repair-and-servicing-environments/",
+    "role": "Story B — Listening Auditory Anchor"
+  },
+
+  "audio_script": {
+    "title": "Bay 2 Safety Briefing",
+    "duration_sec": 120,
+    "tts_settings": {
+      "speed": 0.85,
+      "voices": 2,
+      "voice_A": "Carlos Mendoza — Lead Technician (male, clear)",
+      "voice_B": "Valentina Cruz — Safety Officer (female, clear)"
+    },
+    "script": [
+      {"speaker": "Carlos", "line": "OK, Valentina. Let's do the Bay 2 safety check before we start."},
+      {"speaker": "Valentina", "line": "Sure, Carlos. First — gloves and goggles. Check."},
+      {"speaker": "Carlos", "line": "Good. Now, look at the floor. There's a spill near the bay door."},
+      {"speaker": "Valentina", "line": "I see it. Oil spill near the door. That's a hazard. We need to clean it."},
+      {"speaker": "Carlos", "line": "Right. And the fire extinguisher — is it clear?"},
+      {"speaker": "Valentina", "line": "Yes. It's next to the bay door. No obstructions."},
+      {"speaker": "Carlos", "line": "Good. Now the floor jack. Check for leaks and test the lift."},
+      {"speaker": "Valentina", "line": "Floor jack is OK. No leaks. Lift works."},
+      {"speaker": "Carlos", "line": "And the toolbox? Is everything in the right place?"},
+      {"speaker": "Valentina", "line": "Toolbox is organized. All tools are in the right place."},
+      {"speaker": "Carlos", "line": "Perfect. Bay 2 is ready. Let's start."},
+      {"speaker": "Valentina", "line": "Checklist complete. Bay 2 is ready."}
+    ],
+    "oral_markers_present": ["OK", "Sure", "Good", "Right", "Look", "Now", "Let's"]
+  },
+
+  "comprehension_questions": [
+    {
+      "number": 1,
+      "question": "What does Carlos ask Valentina to check first?",
+      "options": ["a) The toolbox", "b) Gloves and goggles", "c) The floor jack"],
+      "answer": "b",
+      "bloom": "L1 Remember"
+    },
+    {
+      "number": 2,
+      "question": "Where is the oil spill?",
+      "options": ["a) Under the vehicle", "b) On the workbench", "c) Near the bay door"],
+      "answer": "c",
+      "bloom": "L1 Remember"
+    },
+    {
+      "number": 3,
+      "question": "Where is the fire extinguisher?",
+      "options": ["a) In the toolbox", "b) Next to the workbench", "c) Next to the bay door"],
+      "answer": "c",
+      "bloom": "L1 Remember"
+    },
+    {
+      "number": 4,
+      "question": "How does Carlos say to check the floor jack?",
+      "options": ["a) Count the tools", "b) Look for leaks and test the lift", "c) Read the manual"],
+      "answer": "b",
+      "bloom": "L2 Understand"
+    },
+    {
+      "number": 5,
+      "question": "What does Valentina say at the end?",
+      "options": ["a) The bay is closed.", "b) The spill is dangerous.", "c) Checklist complete. Bay 2 is ready."],
+      "answer": "c",
+      "bloom": "L1 Remember"
+    }
+  ],
+
+  "archetype_used": [
+    "B — Phase-Based: Pre → Gist → Detail (Actividades 1 + 2)",
+    "C — TBLT: comprensión sin script + cuestionario formal (Actividad 2: Evidencia 3)",
+    "D — Role play con script impreso (Actividad 3: preview de PM-2.8)"
+  ],
+
+  "trabajo_autonomo": {
+    "duracion_h": 0.75,
+    "actividades": [
+      "Escuchar el audio 'Bay 2 Safety Briefing' 2 veces adicionales en Moodle siguiendo el script — subrayar las palabras que reconoce con claridad",
+      "Practicar en voz alta el rol de Carlos o Valentina con el script completo (mínimo 3 veces) — grabar en el celular para auto-evaluación",
+      "Preview S5: leer el chunk bank de Funciones Comunicativas F1–F3 de PM-2.9 y memorizar 2 frases por función"
+    ]
+  },
+
+  "gfpi_tag": "3.3-APROPIACION-LISTENING",
+  "instructor_notes": {
+    "sequence_in_s4": "PM-2.6 (Listening) ocupa WHILE-A + WHILE-C de S4. PM-2.8 (Speaking) ocupa WHILE-D. El role play de la actividad 3 de este PM ES el puente hacia PM-2.8.",
+    "cuestionario_3_protocol": "Audio se reproduce 2 veces (gist + detail) ANTES de entregar el Cuestionario No 3. Cuestionario: 15 minutos, sin script, sin audio adicional. Recoger antes de entregar el script para el role play.",
+    "pre_listening_vocabulary": "Actividad 1 = 15 minutos de SET-UP del listening: proyectar imagen Bay 2, activar las 6 palabras clave del diálogo (spill, gloves, goggles, floor jack, fire extinguisher, bay door), finger drilling + board marking de las que tienen stress difícil para L1 español.",
+    "audio_fallback": "Si el sistema de audio falla: el instructor lee el script en voz alta a velocidad controlada (0.85x simulada). Mantener los 2 speakers distintos alternando voz."
+  }
+}

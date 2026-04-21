@@ -1,0 +1,573 @@
+{
+  "_meta": {
+    "schema_version": "instruments-v1.0",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-sonnet-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist",
+    "note": "PM-4.1 contiene los 5 instrumentos formales de Evidencias 1–5. El instrumento No 6 (Cuestionario Consolidado) se genera en PM-4.2."
+  },
+
+  "program": {
+    "name": "Mantenimiento de Motores Diesel",
+    "type": "Técnico",
+    "guide": "Guía 1 — The Workshop Specialist",
+    "rap_id": "RAP-DIESEL-001-2026",
+    "cefr": "A1.1",
+    "universe": "The Diesel Workshop — Bay 1/2/3 — Carlos Mendoza / Valentina Cruz / Santiago Ríos"
+  },
+
+  "instruments": [
+
+    {
+      "instrument_id": "INS-01",
+      "number": 1,
+      "name": "Cuestionario No 1",
+      "type": "Cuestionario",
+      "skill": "Reading",
+      "session": 2,
+      "pm_source": "PM-2.3",
+      "evidence_type": "Conocimiento",
+      "total_points": 5,
+      "items": 5,
+      "points_per_item": 1,
+      "time_limit_min": 15,
+      "conditions": "Sin acceso al texto. Sin notas. Individual. Recoger antes de dar feedback oral.",
+      "header": {
+        "title": "Cuestionario No 1 — Reading Comprehension",
+        "subtitle": "Tools Every Diesel Specialist Needs",
+        "fields": ["Nombre:", "Fecha:", "Programa:", "Instructor:", "Puntuación: ___ / 5"]
+      },
+      "instructions": "Read each question carefully. Choose the best answer (a, b, or c). Write only the letter. You have 15 minutes. No text. No notes.",
+      "questions": [
+        {
+          "number": 1,
+          "question": "What does a torque wrench do?",
+          "options": {
+            "a": "It cuts metal.",
+            "b": "It applies the correct force to a bolt.",
+            "c": "It lifts the vehicle."
+          },
+          "answer": "b",
+          "bloom": "L1 Remember",
+          "points": 1
+        },
+        {
+          "number": 2,
+          "question": "Why is the floor jack a safety tool?",
+          "options": {
+            "a": "Because it is very heavy.",
+            "b": "Because it is expensive.",
+            "c": "Because it lifts the vehicle safely."
+          },
+          "answer": "c",
+          "bloom": "L2 Understand",
+          "points": 1
+        },
+        {
+          "number": 3,
+          "question": "Complete the sentence: 'The ratchet is fast in ___.'",
+          "options": {
+            "a": "heavy engines",
+            "b": "tight spaces",
+            "c": "open areas"
+          },
+          "answer": "b",
+          "bloom": "L1 Remember",
+          "points": 1
+        },
+        {
+          "number": 4,
+          "question": "What does a specialist use to check a vehicle is secure before working under it?",
+          "options": {
+            "a": "A torque wrench.",
+            "b": "A ratchet set.",
+            "c": "A floor jack and safety stands."
+          },
+          "answer": "c",
+          "bloom": "L2 Understand",
+          "points": 1
+        },
+        {
+          "number": 5,
+          "question": "True or False: 'A good technician never cleans the workbench.'",
+          "type": "true_false",
+          "answer": "FALSE",
+          "expected_response": "FALSE — A good technician always keeps the workbench clean.",
+          "bloom": "L2 Understand",
+          "points": 1
+        }
+      ],
+      "scoring_guide": {
+        "5": "Excelente — comprensión lectora sólida del texto técnico A1.1",
+        "4": "Muy bueno — comprensión general con 1 error menor",
+        "3": "Satisfactorio — comprensión básica del texto técnico",
+        "2": "En proceso — dificultad con inferencia; reforzar en S3–S4",
+        "0-1": "No logrado — requiere intervención urgente de vocabulario técnico"
+      },
+      "contributes_to_consolidated_quiz": true,
+      "quiz_s6_skill": "Reading",
+      "quiz_s6_points": 5
+    },
+
+    {
+      "instrument_id": "INS-02",
+      "number": 2,
+      "name": "Lista de verificación No 2",
+      "type": "Lista de verificación",
+      "skill": "Writing",
+      "session": 3,
+      "pm_source": "PM-2.4",
+      "evidence_type": "Producto",
+      "total_points": 5,
+      "items": 10,
+      "points_per_item": 0.5,
+      "conditions": "El aprendiz produce dos documentos: Daily Inspection Checklist (mín. 8 ítems) + Work Order header (mín. 6 campos). La lista evalúa ambos documentos. Evidencia = 3 documentos (Checklist + Work Order + esta Lista de verificación del peer review).",
+      "header": {
+        "title": "Lista de verificación No 2 — Writing: Technical Document Production",
+        "subtitle": "Daily Inspection Checklist + Work Order — Bay 2 · The Diesel Workshop",
+        "fields": [
+          "Nombre del aprendiz evaluado:",
+          "Nombre del evaluador (par):",
+          "Fecha:",
+          "Puntuación: ___ / 5"
+        ]
+      },
+      "instructions": "Review your partner's Daily Inspection Checklist and Work Order header. Check each criterion below. Mark ✓ (met) or ✗ (not met). Write your feedback in English using: 'I think the ___ is missing.' or 'I see a mistake in ___.'",
+      "criteria": [
+        {
+          "number": 1,
+          "criterion": "El checklist tiene mínimo 8 ítems verificados con estado (✓ / ✗ / N/A).",
+          "criterion_en": "The checklist has a minimum of 8 verified items with status (✓ / ✗ / N/A).",
+          "points": 0.5,
+          "evaluation": "✓ Met (0.5 pt) / ✗ Not met (0 pt)"
+        },
+        {
+          "number": 2,
+          "criterion": "Cada ítem usa vocabulario técnico correcto del Toolbelt (sin sustituciones en español).",
+          "criterion_en": "Each item uses correct technical vocabulary from the Toolbelt (no Spanish substitutions).",
+          "points": 0.5,
+          "evaluation": "✓ Met (0.5 pt) / ✗ Not met (0 pt)"
+        },
+        {
+          "number": 3,
+          "criterion": "Hay mínimo 2 observaciones escritas en inglés en la columna de observaciones.",
+          "criterion_en": "There are at least 2 written observations in English in the observation column.",
+          "points": 0.5,
+          "evaluation": "✓ Met (0.5 pt) / ✗ Not met (0 pt)"
+        },
+        {
+          "number": 4,
+          "criterion": "El estado general del bay está justificado en inglés (Ready / Not Ready + razón).",
+          "criterion_en": "The overall bay status is justified in English (Ready / Not Ready + reason).",
+          "points": 0.5,
+          "evaluation": "✓ Met (0.5 pt) / ✗ Not met (0 pt)"
+        },
+        {
+          "number": 5,
+          "criterion": "El Work Order tiene mínimo 6 campos completos: Date, Vehicle, Mileage, Technician, Bay, Service Type.",
+          "criterion_en": "The Work Order has a minimum of 6 completed fields: Date, Vehicle, Mileage, Technician, Bay, Service Type.",
+          "points": 0.5,
+          "evaluation": "✓ Met (0.5 pt) / ✗ Not met (0 pt)"
+        },
+        {
+          "number": 6,
+          "criterion": "Usa correctamente There is/are en las observaciones (concordancia singular/plural).",
+          "criterion_en": "Uses There is/are correctly in observations (singular/plural agreement).",
+          "points": 0.5,
+          "evaluation": "✓ Met (0.5 pt) / ✗ Not met (0 pt)"
+        },
+        {
+          "number": 7,
+          "criterion": "Usa correctamente imperativos en las acciones requeridas (verbo base sin sujeto).",
+          "criterion_en": "Uses imperative verbs correctly in required actions (base form, no subject).",
+          "points": 0.5,
+          "evaluation": "✓ Met (0.5 pt) / ✗ Not met (0 pt)"
+        },
+        {
+          "number": 8,
+          "criterion": "Usa preposiciones de lugar para ubicar herramientas o condiciones (in / on / next to / near).",
+          "criterion_en": "Uses prepositions of place to locate tools or conditions (in / on / next to / near).",
+          "points": 0.5,
+          "evaluation": "✓ Met (0.5 pt) / ✗ Not met (0 pt)"
+        },
+        {
+          "number": 9,
+          "criterion": "Ortografía correcta en los términos del Toolbelt (0 errores en los 20 términos evaluados).",
+          "criterion_en": "Correct spelling of Toolbelt terms (0 errors in the 20 evaluated terms).",
+          "points": 0.5,
+          "evaluation": "✓ Met (0.5 pt) / ✗ Not met (0 pt)"
+        },
+        {
+          "number": 10,
+          "criterion": "El documento es legible, organizado y completo (formato respetado, sin secciones vacías).",
+          "criterion_en": "The document is readable, organized, and complete (format respected, no empty sections).",
+          "points": 0.5,
+          "evaluation": "✓ Met (0.5 pt) / ✗ Not met (0 pt)"
+        }
+      ],
+      "peer_feedback_space": {
+        "label": "Written feedback (in English):",
+        "prompts": [
+          "One thing I think is very good: ___",
+          "One thing I think is missing or needs improvement: ___"
+        ]
+      },
+      "scoring_guide": {
+        "5.0": "Excelente — documento técnico completo y lingüísticamente correcto",
+        "4.0-4.5": "Muy bueno — 1 criterio no logrado; competencia real demostrada",
+        "3.0-3.5": "Satisfactorio — errores menores; documento funcional",
+        "2.0-2.5": "En proceso — gaps significativos en vocabulario o gramática",
+        "0-1.5": "No logrado — documento incompleto o mayoritariamente en español"
+      },
+      "contributes_to_consolidated_quiz": false,
+      "quiz_s6_skill": null,
+      "quiz_s6_points": 0
+    },
+
+    {
+      "instrument_id": "INS-03",
+      "number": 3,
+      "name": "Cuestionario No 3",
+      "type": "Cuestionario",
+      "skill": "Listening",
+      "session": 4,
+      "pm_source": "PM-2.6",
+      "evidence_type": "Desempeño",
+      "total_points": 5,
+      "items": 5,
+      "points_per_item": 1,
+      "time_limit_min": 15,
+      "conditions": "Audio reproducido 2 veces antes del cuestionario (gist + detail). Cuestionario: sin script, sin audio adicional, sin notas. Individual. Recoger antes de entregar el script para el role play.",
+      "audio_ref": "Bay 2 Safety Briefing — TTS 0.85x, 2 min — Carlos Mendoza + Valentina Cruz",
+      "header": {
+        "title": "Cuestionario No 3 — Listening Comprehension",
+        "subtitle": "Bay 2 Safety Briefing — The Diesel Workshop",
+        "fields": ["Nombre:", "Fecha:", "Programa:", "Instructor:", "Puntuación: ___ / 5"]
+      },
+      "pre_listening_note": "You will listen to a safety briefing between Carlos Mendoza (Lead Technician) and Valentina Cruz (Safety Officer) at The Diesel Workshop — Bay 2. Listen carefully. The audio plays TWO times. Then answer the 5 questions below. NO script. NO extra audio.",
+      "instructions": "Choose the best answer (a, b, or c). Write only the letter. 15 minutes.",
+      "questions": [
+        {
+          "number": 1,
+          "question": "What does Carlos ask Valentina to check first?",
+          "options": {
+            "a": "The toolbox.",
+            "b": "Gloves and goggles.",
+            "c": "The floor jack."
+          },
+          "answer": "b",
+          "bloom": "L1 Remember",
+          "points": 1
+        },
+        {
+          "number": 2,
+          "question": "Where is the oil spill?",
+          "options": {
+            "a": "Under the vehicle.",
+            "b": "On the workbench.",
+            "c": "Near the bay door."
+          },
+          "answer": "c",
+          "bloom": "L1 Remember",
+          "points": 1
+        },
+        {
+          "number": 3,
+          "question": "Where is the fire extinguisher?",
+          "options": {
+            "a": "In the toolbox.",
+            "b": "Next to the workbench.",
+            "c": "Next to the bay door."
+          },
+          "answer": "c",
+          "bloom": "L1 Remember",
+          "points": 1
+        },
+        {
+          "number": 4,
+          "question": "How does Carlos check the floor jack?",
+          "options": {
+            "a": "Count the tools.",
+            "b": "Look for leaks and test the lift.",
+            "c": "Read the manual."
+          },
+          "answer": "b",
+          "bloom": "L2 Understand",
+          "points": 1
+        },
+        {
+          "number": 5,
+          "question": "What does Valentina say at the end of the briefing?",
+          "options": {
+            "a": "The bay is closed.",
+            "b": "The spill is dangerous.",
+            "c": "Checklist complete. Bay 2 is ready."
+          },
+          "answer": "c",
+          "bloom": "L1 Remember",
+          "points": 1
+        }
+      ],
+      "scoring_guide": {
+        "5": "Excelente — comprensión auditiva de diálogo técnico A1.1 a velocidad 0.85x",
+        "4": "Muy bueno — 1 error; comprensión general sólida",
+        "3": "Satisfactorio — comprensión de información explícita; dificultad con detalle",
+        "2": "En proceso — comprensión parcial; reforzar vocabulary + listening en trabajo autónomo",
+        "0-1": "No logrado — requiere más exposición auditiva al inglés técnico del taller"
+      },
+      "contributes_to_consolidated_quiz": true,
+      "quiz_s6_skill": "Listening",
+      "quiz_s6_points": 5
+    },
+
+    {
+      "instrument_id": "INS-04",
+      "number": 4,
+      "name": "Escala de estimación No 4",
+      "type": "Escala de estimación",
+      "skill": "Speaking",
+      "session": 4,
+      "pm_source": "PM-2.8",
+      "evidence_type": "Desempeño",
+      "total_points": 5,
+      "items": 5,
+      "points_per_item": 1,
+      "scale": "0–1 por criterio (1 = Logrado / 0 = No logrado)",
+      "scale_note": "Evaluación holística por criterio: el instructor registra 1 si el comportamiento es claramente observable durante Round 3, 0 si no se observa. No hay nivel intermedio para simplificar la observación en vivo.",
+      "conditions": "Evaluar SOLO Round 3 (producción libre — sin Stock Cards ni Sentence Starters). FLUENCY mode: no interrumpir durante el reporte. Devolución individual escrita — no compartir puntajes oralmente durante la sesión.",
+      "task_description": "Workshop Readiness Report oral: Santiago Ríos reporta estado del bay asignado a Carlos Mendoza (Lead Technician) en 60–90 segundos. Carlos hace 1 pregunta improvisada de seguimiento.",
+      "header": {
+        "title": "Escala de estimación No 4 — Speaking: Workshop Readiness Report",
+        "subtitle": "Round 3 — Free Production · The Diesel Workshop",
+        "fields": [
+          "Nombre del aprendiz:",
+          "Bay asignado: Bay ___",
+          "Duración del reporte: ___ segundos",
+          "Fecha:",
+          "Instructor evaluador:",
+          "Puntuación: ___ / 5"
+        ]
+      },
+      "instructions_instructor": "During Round 3 only. Do NOT evaluate Round 1 or Round 2. Mark 1 if clearly observed, 0 if not observed. Do NOT interrupt during the report. Ask the follow-up question AFTER the report ends.",
+      "criteria": [
+        {
+          "number": 1,
+          "criterion_es": "Usa vocabulario técnico del Toolbelt (mínimo 6 términos reconocibles) durante el reporte oral.",
+          "criterion_en": "Uses technical Toolbelt vocabulary (minimum 6 recognizable terms) during the oral report.",
+          "observable_evidence": "El evaluador puede identificar ≥6 de los 20 términos del Toolbelt en el reporte.",
+          "score_1": "Sí — ≥6 términos identificables",
+          "score_0": "No — <6 términos o vocabulario no técnico dominante",
+          "weight": 1
+        },
+        {
+          "number": 2,
+          "criterion_es": "Describe estado del bay con There is/are más adjetivo o preposición de lugar.",
+          "criterion_en": "Describes bay conditions using There is/are + adjective or preposition of place.",
+          "observable_evidence": "Al menos 1 oración con There is/are + información de ubicación o condición.",
+          "score_1": "Sí — 1+ oración con There is/are correctamente usada",
+          "score_0": "No — ausencia de la estructura o uso sistemáticamente incorrecto",
+          "weight": 1
+        },
+        {
+          "number": 3,
+          "criterion_es": "Usa al menos 2 imperativos técnicos correctamente durante el reporte.",
+          "criterion_en": "Uses at least 2 technical imperatives correctly during the report.",
+          "observable_evidence": "Ej: 'Check the floor jack.', 'Don't leave tools on the floor.'",
+          "score_1": "Sí — ≥2 imperativos técnicos reconocibles",
+          "score_0": "No — <2 imperativos o formas gramaticalmente incorrectas",
+          "weight": 1
+        },
+        {
+          "number": 4,
+          "criterion_es": "Pronunciación comprensible de al menos 4 términos técnicos del Toolbelt.",
+          "criterion_en": "Comprehensible pronunciation of at least 4 technical Toolbelt terms.",
+          "observable_evidence": "El evaluador comprende el término sin necesidad de repetición ni contexto adicional.",
+          "score_1": "Sí — ≥4 términos pronunciados con claridad suficiente para ser identificados",
+          "score_0": "No — pronunciación sistemáticamente incomprensible en términos técnicos",
+          "weight": 1
+        },
+        {
+          "number": 5,
+          "criterion_es": "Responde al menos 1 pregunta improvisada del supervisor sin consultar Stock Card.",
+          "criterion_en": "Responds to at least 1 improvised supervisor question without consulting Stock Card.",
+          "observable_evidence": "Respuesta comprensible a la pregunta de seguimiento de 'Carlos Mendoza'.",
+          "score_1": "Sí — respuesta comprensible, en inglés, pertinente a la pregunta",
+          "score_0": "No — sin respuesta, respuesta en español, o respuesta no pertinente",
+          "weight": 1
+        }
+      ],
+      "follow_up_questions_bank": [
+        "Is the floor jack safe to use?",
+        "What about the fire extinguisher — is it clear?",
+        "How many tools are in the toolbox?",
+        "Is there any PPE missing?",
+        "Can the lift handle a diesel truck?"
+      ],
+      "scoring_guide": {
+        "5": "Excelente — reporte oral completo y comprensible; A1.1 demostrado",
+        "4": "Muy bueno — 1 criterio no logrado; comunicación efectiva",
+        "3": "Satisfactorio — reporte funcional con 2 criterios en proceso",
+        "2": "En proceso — comunicación parcial; requiere práctica adicional en S5",
+        "0-1": "No logrado — reporte no comprensible o mayoritariamente en español"
+      },
+      "contributes_to_consolidated_quiz": false,
+      "quiz_s6_skill": null,
+      "quiz_s6_points": 0
+    },
+
+    {
+      "instrument_id": "INS-05",
+      "number": 5,
+      "name": "Escala de estimación No 5",
+      "type": "Escala de estimación",
+      "skill": "Language Functions",
+      "session": 5,
+      "pm_source": "PM-2.9",
+      "evidence_type": "Desempeño",
+      "total_points": 5,
+      "items": 5,
+      "points_per_item": 1,
+      "scale": "0–1 por criterio (1 = Logrado / 0 = No logrado)",
+      "scale_note": "Evaluación simultánea: instructor evalúa con su copia, par observador evalúa con su copia. La nota del instructor es la oficial. La del par sirve para coevaluación formativa.",
+      "conditions": "Simulación de apertura de taller: 3 minutos por aprendiz. FLUENCY mode completo. 1 pregunta de seguimiento del supervisor. Devolución colectiva post-simulación: 3 funciones más logradas + 2 gaps del grupo.",
+      "task_description": "Simulación de apertura de bay: Santiago Ríos (aprendiz) abre Bay 2 integrando las 5 funciones comunicativas (F1–F5) en una secuencia real de 3 minutos. Carlos Mendoza (instructor) responde en vivo y hace 1 pregunta de seguimiento.",
+      "header": {
+        "title": "Escala de estimación No 5 — Language Functions: Workshop Opening Simulation",
+        "subtitle": "Simulación Apertura de Taller · The Diesel Workshop",
+        "fields": [
+          "Nombre del aprendiz:",
+          "Nombre del evaluador (par observador):",
+          "Rol del evaluador: ☐ Instructor (oficial) / ☐ Par observador (formativo)",
+          "Fecha:",
+          "Puntuación: ___ / 5"
+        ]
+      },
+      "instructions_evaluator": "Observe the simulation. Mark 1 if the function is clearly demonstrated at any point during the 3-minute simulation, 0 if not observed. Both instructor and partner observer fill out separate scales simultaneously.",
+      "criteria": [
+        {
+          "number": 1,
+          "function": "F1 — Dar instrucciones",
+          "criterion_es": "Da instrucciones claras al técnico usando imperativos del Toolbelt (F1).",
+          "criterion_en": "Gives clear instructions to the technician using Toolbelt imperative verbs (F1).",
+          "example_evidence": "'Check the floor jack.' / 'Wear your goggles.' / 'Don't leave tools on the floor.'",
+          "score_1": "Sí — ≥1 imperativo técnico comprensible, pertinente al contexto del bay",
+          "score_0": "No — ausencia de imperativos o uso exclusivo de frases no imperativas",
+          "weight": 1
+        },
+        {
+          "number": 2,
+          "function": "F2 — Solicitar herramienta o ayuda",
+          "criterion_es": "Solicita herramienta o ayuda con fórmula correcta en inglés (F2).",
+          "criterion_en": "Requests a tool or assistance using a correct English formula (F2).",
+          "example_evidence": "'Can I have the torque wrench?' / 'I need the socket set, please.' / 'Where is the floor jack?'",
+          "score_1": "Sí — 1+ solicitud comprensible en inglés usando fórmula F2",
+          "score_0": "No — solicitud en español, solicitud incomprensible, o función ausente",
+          "weight": 1
+        },
+        {
+          "number": 3,
+          "function": "F3 — Describir condiciones",
+          "criterion_es": "Describe condición del bay con There is/are más preposición de lugar (F3).",
+          "criterion_en": "Describes bay conditions using There is/are + preposition of place (F3).",
+          "example_evidence": "'There is a spill near the bay door.' / 'There are no goggles in Bay 3.' / 'The fire extinguisher is next to the workbench.'",
+          "score_1": "Sí — 1+ descripción de condición con There is/are + información de lugar",
+          "score_0": "No — ausencia de la estructura o uso sistemáticamente incorrecto",
+          "weight": 1
+        },
+        {
+          "number": 4,
+          "function": "F4 — Reportar al supervisor",
+          "criterion_es": "Reporta al supervisor con información completa y vocabulario técnico (F4).",
+          "criterion_en": "Reports to supervisor with complete information and technical vocabulary (F4).",
+          "example_evidence": "'Bay 2 is ready, Carlos.' / 'The floor jack works fine — no leaks.' / 'There is a problem with the lift in Bay 1.'",
+          "score_1": "Sí — reporte comprensible con bay number + ≥1 condición técnica",
+          "score_0": "No — reporte ausente, incomprensible, o sin información técnica",
+          "weight": 1
+        },
+        {
+          "number": 5,
+          "function": "F5 — Confirmar comprensión",
+          "criterion_es": "Confirma comprensión con expresión apropiada en inglés (F5).",
+          "criterion_en": "Confirms understanding using an appropriate English expression (F5).",
+          "example_evidence": "'Understood.' / 'Got it.' / 'I'll do it now.' / 'Sorry, can you repeat that?'",
+          "score_1": "Sí — 1+ expresión F5 comprensible y pertinente a la interacción",
+          "score_0": "No — ausencia de confirmación o confirmación exclusivamente en español",
+          "weight": 1
+        }
+      ],
+      "scoring_guide": {
+        "5": "Excelente — las 5 funciones comunicativas integradas fluidamente; A1.1 consolidado",
+        "4": "Muy bueno — 4 funciones logradas; comunicación efectiva del taller en inglés",
+        "3": "Satisfactorio — 3 funciones logradas; competencia comunicativa básica demostrada",
+        "2": "En proceso — 2 funciones logradas; requiere práctica adicional en Final Mission",
+        "0-1": "No logrado — comunicación predominantemente en español; sin evidencia de funciones"
+      },
+      "contributes_to_consolidated_quiz": true,
+      "quiz_s6_skill": "Language Functions",
+      "quiz_s6_points": 5
+    }
+  ],
+
+  "summary": {
+    "total_instruments": 5,
+    "total_formal_points": 25,
+    "breakdown": [
+      {"instrument": "Cuestionario No 1",       "skill": "Reading",            "points": 5,  "session": 2, "type": "Conocimiento"},
+      {"instrument": "Lista de verificación No 2","skill": "Writing",            "points": 5,  "session": 3, "type": "Producto"},
+      {"instrument": "Cuestionario No 3",        "skill": "Listening",          "points": 5,  "session": 4, "type": "Desempeño"},
+      {"instrument": "Escala de estimación No 4","skill": "Speaking",           "points": 5,  "session": 4, "type": "Desempeño"},
+      {"instrument": "Escala de estimación No 5","skill": "Language Functions",  "points": 5,  "session": 5, "type": "Desempeño"}
+    ],
+    "quiz_contributions_to_s6": [
+      {"skill": "Reading",            "source": "INS-01", "quiz_points": 5},
+      {"skill": "Vocabulary",         "source": "PM-2.5", "quiz_points": 5},
+      {"skill": "Grammar",            "source": "PM-2.10","quiz_points": 5},
+      {"skill": "Listening",          "source": "INS-03", "quiz_points": 5},
+      {"skill": "Language Functions", "source": "INS-05", "quiz_points": 5}
+    ],
+    "note_writing_speaking": "Writing (INS-02) y Speaking (INS-04) NO contribuyen al Cuestionario Consolidado No 6 — son evaluados por Producto y Desempeño respectivamente.",
+    "instrument_6_ref": "Cuestionario Consolidado No 6 — generado en PM-4.2"
+  },
+
+  "feedback_loop_template": {
+    "title": "Plantilla de Retroalimentación Individual — Post-Instrumentos",
+    "usage": "El instructor completa este template por aprendiz después de cada instrumento formal. Se entrega al inicio de la sesión siguiente.",
+    "sections": {
+      "header": {
+        "fields": ["Nombre:", "Instrumento:", "Puntuación: ___ / ___", "Fecha de devolución:"]
+      },
+      "strength": {
+        "label": "Fortaleza observada:",
+        "prompt": "Describe 1 cosa específica que el aprendiz hizo bien. Usar evidencia del instrumento.",
+        "example": "Your 'There is/are' sentences were accurate and used in the right context — great work."
+      },
+      "gap": {
+        "label": "Área de mejora:",
+        "prompt": "Describe 1 aspecto específico a mejorar. Usar el código de error si aplica (G/V/Sp/WO).",
+        "example": "Check spelling of 'extinguisher' (Sp) and 'maintenance' (Sp) — these are Toolbelt terms for the Final Mission."
+      },
+      "recommendation": {
+        "label": "Recomendación:",
+        "prompt": "1 acción concreta para el trabajo autónomo o la siguiente sesión.",
+        "example": "Practice: write 3 sentences with 'There is/are' using your real workshop. Review flashcards for the 5 Safety terms."
+      },
+      "reflection_questions": [
+        "¿El aprendiz entendió la retroalimentación o necesita acompañamiento adicional?",
+        "¿Los errores son sistemáticos (patrón de fossilización) o puntuales (descuido)?",
+        "¿La puntuación del instrumento refleja fielmente el desempeño real del aprendiz o hubo factores externos (ansiedad, ausencia previa, etc.)?"
+      ]
+    }
+  },
+
+  "gfpi_tag": "4-EVALUACION-INSTRUMENTOS",
+  "instrument_collection_protocol": {
+    "INS-01": "Recoger antes de retroalimentación oral. Archivar. Devolver corregido en S3.",
+    "INS-02": "Recoger los TRES documentos (Checklist + Work Order + Lista No 2). Archivar como paquete Evidencia 2.",
+    "INS-03": "Recoger antes de entregar el script del role play. Archivar. Devolver corregido en S5.",
+    "INS-04": "Archivar escala del instructor. Devolver individual escrito al inicio de S5.",
+    "INS-05": "Archivar escala del instructor + copia del par observador. Devolver individual escrito al inicio de S6a."
+  }
+}

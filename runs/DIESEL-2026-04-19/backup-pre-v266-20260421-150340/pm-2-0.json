@@ -1,0 +1,346 @@
+{
+  "pm_id": "PM-2.0",
+  "run_id": "DIESEL-2026-04-19",
+  "model": "claude-opus-4-6",
+  "generated_at": "2026-04-19",
+  "guide": "Guía 1 — The Workshop Specialist",
+  "status": "pending_review",
+
+  "session_blueprint": {
+    "rap_id": "220501096",
+    "rap_name": "Comunicar información técnica en inglés en contextos de mantenimiento de motores diesel, aplicando vocabulario especializado del taller, funciones comunicativas de nivel A1.1 y formatos de documentación técnica estándar del sector automotriz",
+    "competencia": "Interactuar en Lengua Inglesa de Forma Oral y Escrita dentro de Contextos Sociales y Laborales según los Criterios Establecidos por el Marco Común Europeo de Referencia para las Lenguas",
+
+    "program_info": {
+      "program_name": "Mantenimiento de Motores Diesel",
+      "program_type": "Técnico",
+      "ficha": "2977749",
+      "guide": "Guía 1 — The Workshop Specialist",
+      "cefr_level": "A1.1",
+      "sector": "Automotriz — Mantenimiento Diesel",
+      "universo_narrativo": "The Diesel Workshop — Bay 1 / Bay 2 / Bay 3 — Carlos Mendoza / Valentina Cruz / Santiago Ríos"
+    },
+
+    "total_hours": 60,
+    "direct_hours": 48,
+    "autonomous_hours": 12,
+
+    "hours_resolution_note": "Run 04-15 tenía desbalance 48.75h directa / 11.25h autónoma. Fix: S6 primera mitad reducida de 3.75h → 3h directa, autónoma de 0.75h → 1.5h. Nueva suma: 6×5 + 3 + 15 = 48 directa ✅ | 1.5×5 + 1.5 + 3 = 12 autónoma ✅",
+
+    "sessions": [
+      {
+        "session": 1,
+        "title": "The Wake-Up Call",
+        "fase_sena": "Reflexión Inicial + Contextualización",
+        "momento_sena": "3.1",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.1", "PM-2.2"],
+        "technical_focus": "Tipos de talleres, organización del área de trabajo, personajes del universo narrativo, primeros 6 términos Toolbelt (workshop, bay, toolbox, workbench, specialist, hazard).",
+        "language_focus": "Activación de esquemas previos. Inglés de enganche: KWL, Gap Cards, Learning Contract. Presentación bilingüe del universo narrativo.",
+        "transversal_rap": "Inglés — Engagement, Academic Language for Technical Reflection (A1.1)",
+        "transversal_justification": "El aprendiz reflexiona SOBRE EL TEMA en inglés desde el inicio. Los primeros términos del Toolbelt se presentan bilingüemente. El universo narrativo (The Diesel Workshop) se establece en inglés como hábitat lingüístico de la guía.",
+        "bloom_level": "L1-L2 (Recordar, Comprender)",
+        "generates_evidence": false,
+        "autonomous_work": {
+          "duracion_h": 1.5,
+          "actividades": [
+            "Learning Contract: aprendiz define 3 metas personales de inglés para la guía",
+            "Gap Card inicial: anotar 5 cosas que ya saben y 5 que quieren saber del taller en inglés"
+          ]
+        }
+      },
+      {
+        "session": 2,
+        "title": "Read the Workshop",
+        "fase_sena": "Apropiación — Input Receptivo (Vocabulary + Reading)",
+        "momento_sena": "3.2",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.5", "PM-2.3"],
+        "technical_focus": "Herramientas del taller: wrench, ratchet, socket, torque wrench, floor jack (Story A — Shadow Foam adaptada A1.1). 20 términos Toolbelt completos en Word Wall.",
+        "language_focus": "Vocabulary scaffold (PM-2.5): presentación, drilling, Word Wall. Reading Anchor (PM-2.3): text, comprehension, noticing de estructuras gramaticales (Verb To Be, articles, prepositions).",
+        "transversal_rap": "Inglés — Technical Vocabulary (20 términos), Reading Comprehension (A1.1)",
+        "transversal_justification": "PM-2.5 + PM-2.3 son la puerta de entrada al inglés de la guía. El aprendiz lee su primer texto técnico real en inglés en contexto de taller. Los 20 términos del Toolbelt se instalan en el Word Wall de clase.",
+        "bloom_level": "L2-L3 (Comprender, Aplicar)",
+        "generates_evidence": true,
+        "evidences": [
+          {
+            "numero": 1,
+            "tipo": "Conocimiento",
+            "instrumento": "Cuestionario No 1 — 5 ítems Reading (PM-2.3)",
+            "descripcion": "Comprensión lectora del Reading Anchor adaptado sobre herramientas del taller"
+          },
+          {
+            "numero": null,
+            "tipo": "Aporte Quiz S6",
+            "instrumento": "Vocabulary — 5 términos del Toolbelt en contexto (PM-2.5)",
+            "descripcion": "5 de los 20 términos Toolbelt evaluados en el cuestionario consolidado S6"
+          }
+        ],
+        "autonomous_work": {
+          "duracion_h": 1.5,
+          "actividades": [
+            "Word Wall review: aprendiz copia los 20 términos en su cuaderno con dibujo o imagen",
+            "Relectura del Reading Anchor: subrayar 5 oraciones con Verb To Be"
+          ]
+        }
+      },
+      {
+        "session": 3,
+        "title": "Write It Right",
+        "fase_sena": "Apropiación — Output Escrito (Grammar + Writing)",
+        "momento_sena": "3.2",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.10", "PM-2.4"],
+        "technical_focus": "Formatos del taller: work order, daily inspection checklist, safety report. Gram structures: Verb To Be (afirm./neg.), There is/are, Imperatives básicos.",
+        "language_focus": "Grammar scaffold (PM-2.10): inducción de estructuras desde el Reading Anchor. Writing task (PM-2.4): producción de texto técnico (safety checklist, mini-report). Error codes: G/V/WO/Sp.",
+        "transversal_rap": "Inglés — Grammar in Context, Written Technical Production (A1.1)",
+        "transversal_justification": "PM-2.10 + PM-2.4 desarrollan PRODUCCIÓN ESCRITA en inglés técnico. El aprendiz usa el vocabulario instalado en S2 para escribir su primer formato de taller real. El output escrito es un entregable técnico, no un ejercicio de clase.",
+        "bloom_level": "L2-L3 (Comprender, Aplicar)",
+        "generates_evidence": true,
+        "evidences": [
+          {
+            "numero": 2,
+            "tipo": "Producto",
+            "instrumento": "Lista de verificación No 2 — 10 criterios Writing (PM-2.4)",
+            "descripcion": "Daily Inspection Checklist completo en inglés con observaciones técnicas pertinentes"
+          },
+          {
+            "numero": null,
+            "tipo": "Aporte Quiz S6",
+            "instrumento": "Grammar — 5 ítems: There is/are, Imperatives, Verb To Be negativo (PM-2.10)",
+            "descripcion": "Estructuras gramaticales target de S3 evaluadas en el cuestionario consolidado S6"
+          }
+        ],
+        "autonomous_work": {
+          "duracion_h": 1.5,
+          "actividades": [
+            "Borrador de Daily Inspection Checklist para su propio espacio de trabajo (real o imaginario)",
+            "Práctica de There is / There are: escribir 5 oraciones sobre el bay asignado"
+          ]
+        }
+      },
+      {
+        "session": 4,
+        "title": "Tuning In & Speaking Up",
+        "fase_sena": "Apropiación — Comprensión Auditiva + Producción Oral",
+        "momento_sena": "3.2",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.6", "PM-2.8"],
+        "technical_focus": "EPP: goggles, gloves, fire extinguisher, PPE. Diálogo Safety Briefing (Valentina Cruz + Santiago Ríos) adaptado de SafetyCulture. Role-play: Workshop Readiness Report oral.",
+        "language_focus": "Listening Anchor (PM-2.6): comprensión auditiva del diálogo de seguridad. Speaking Mission (PM-2.8): producción oral en simulación de briefing a supervisor. Chunk Cards para pronunciación técnica.",
+        "transversal_rap": "Inglés — Listening Comprehension + Oral Production, Safety Communication (A1.1)",
+        "transversal_justification": "PM-2.6 + PM-2.8 desarrollan las HABILIDADES ORALES. El aprendiz escucha y comprende instrucciones de seguridad reales. El aprendiz produce habla en un briefing funcional real al supervisor. Se recicla todo el vocabulario de S2-S3 en contexto oral.",
+        "bloom_level": "L3-L4 (Aplicar, Analizar)",
+        "generates_evidence": true,
+        "evidences": [
+          {
+            "numero": 3,
+            "tipo": "Desempeño",
+            "instrumento": "Lista de chequeo No 3 — 5 indicadores Listening (PM-2.6)",
+            "descripcion": "Comprensión auditiva del diálogo de seguridad: identificar hazards, EPP y acciones"
+          },
+          {
+            "numero": 4,
+            "tipo": "Desempeño",
+            "instrumento": "Escala de estimación No 4 — 5 criterios Speaking (PM-2.8)",
+            "descripcion": "Safety Briefing oral de 60-90 segundos al supervisor (Carlos Mendoza) en inglés"
+          },
+          {
+            "numero": null,
+            "tipo": "Aporte Quiz S6",
+            "instrumento": "Listening — 5 ítems reconocimiento auditivo basados en audios de PM-2.6",
+            "descripcion": "Versión escrita de preguntas sobre el diálogo de seguridad en el cuestionario S6"
+          }
+        ],
+        "autonomous_work": {
+          "duracion_h": 1.5,
+          "actividades": [
+            "Grabación de voz: aprendiz practica el Safety Briefing de 60 seg en casa",
+            "Escucha activa: re-escuchar el audio de PM-2.6 e identificar 5 términos de seguridad"
+          ]
+        }
+      },
+      {
+        "session": 5,
+        "title": "The Workshop in Action",
+        "fase_sena": "Apropiación — Integración Pragmática (Language Functions)",
+        "momento_sena": "3.2",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.9"],
+        "technical_focus": "Funciones comunicativas F1-F5 en el taller: dar instrucciones SST (imperativo), solicitar herramientas (Can I…?), reportar condiciones (There is/are), describir acciones (Present Simple), responder a supervisores.",
+        "language_focus": "Language Functions (PM-2.9): dominio de F1-F5 en simulaciones integradas. Peer scaffolding y role-play multiagente. Síntesis y transferencia de S1-S4 hacia comunicación real en el taller.",
+        "transversal_rap": "Inglés — Communicative Competence, Language Functions in Technical Workshop Context (A1.1)",
+        "transversal_justification": "PM-2.9 INTEGRA todo el aprendizaje de S1-S4. No es práctica adicional — es demostración de que el aprendiz puede HACER COSAS REALES EN INGLÉS en el taller. Las funciones F1-F5 emergen de necesidades laborales auténticas.",
+        "bloom_level": "L3-L5 (Aplicar, Analizar, Evaluar)",
+        "generates_evidence": true,
+        "evidences": [
+          {
+            "numero": 5,
+            "tipo": "Desempeño",
+            "instrumento": "Escala de estimación No 5 — 5 criterios Language Functions (PM-2.9)",
+            "descripcion": "Simulación integrada: uso de F1-F5 en contexto de taller con personajes y bays"
+          },
+          {
+            "numero": null,
+            "tipo": "Aporte Quiz S6",
+            "instrumento": "Language Functions — 5 ítems uso pragmático en contexto técnico (PM-2.9)",
+            "descripcion": "Ítems de elección múltiple sobre función comunicativa correcta en situaciones de taller"
+          }
+        ],
+        "autonomous_work": {
+          "duracion_h": 1.5,
+          "actividades": [
+            "Preparación de tarjeta de funciones F1-F5: aprendiz escribe sus propias frases para cada función",
+            "Mini-diálogo escrito: situación técnica en el bay asignado usando mínimo 3 funciones"
+          ]
+        }
+      },
+      {
+        "session": "6_primera_mitad",
+        "title": "Prove What You Know",
+        "fase_sena": "Evaluación Sumativa — Cuestionario Consolidado",
+        "momento_sena": "3.3",
+        "direct_hours": 3,
+        "autonomous_hours": 1.5,
+        "pms_active": ["Cuestionario Consolidado S6 — PM-4.2"],
+        "technical_focus": "Síntesis evaluativa de: herramientas (S2), mantenimiento y formatos (S3), EPP y hazards (S4), funciones comunicativas (S5) — todo en inglés A1.1.",
+        "language_focus": "25 ítems: 5 Reading + 5 Vocabulary + 5 Grammar + 5 Listening + 5 Language Functions. Condición de evidencia: 100% en inglés, sin apoyo L1.",
+        "transversal_rap": "Inglés — Knowledge Synthesis Across All Skills: Workshop, Safety, Tools, Grammar, Communication (A1.1)",
+        "transversal_justification": "El cuestionario consolidado es el espejo del aprendizaje de S2-S5. Recicla el vocabulario y patrones de todas las sesiones de apropiación sin duplicar contenido — solo verifica dominio en nuevos contextos de aplicación.",
+        "bloom_level": "L2-L3 (Recordar, Comprender — evaluación sumativa)",
+        "generates_evidence": true,
+        "evidences": [
+          {
+            "numero": 6,
+            "tipo": "Conocimiento",
+            "instrumento": "Cuestionario Consolidado No 6 — 25 pts (PM-4.2)",
+            "descripcion": "5 Reading + 5 Vocabulary + 5 Grammar + 5 Listening + 5 Language Functions"
+          }
+        ],
+        "autonomous_work": {
+          "duracion_h": 1.5,
+          "actividades": [
+            "Revisión post-cuestionario: aprendiz identifica sus errores y escribe la forma correcta",
+            "Preparación: repasar las 5 funciones F1-F5 y los 20 términos Toolbelt para la Final Mission"
+          ]
+        }
+      },
+      {
+        "session": "6_segunda_mitad_7_8",
+        "title": "Final Mission Preparation → The Full Circle",
+        "fase_sena": "Transferencia — Proyecto Final (ABP)",
+        "momento_sena": "3.4",
+        "direct_hours": 15,
+        "autonomous_hours": 3,
+        "pms_active": ["PM-3.5 — The Workshop Readiness Report (Final Mission)"],
+        "technical_focus": "ABP integrador: preparación del taller en inglés, inspección de bay asignado, completar Daily Inspection Checklist, briefing oral al supervisor (S7 = preparación, S8 = evaluación sumativa oral).",
+        "language_focus": "S6 2ª mitad: retroalimentación del cuestionario + orientación Final Mission. S7: borrador del reporte + ensayo del briefing (COACHING mode). S8: Final Mission oral (FLUENCY mode) + KWL cierre + Gap Cards comparadas con S1.",
+        "transversal_rap": "Inglés — Applied Technical Communication in Real Workshop Context (A1.1 → A1.2)",
+        "transversal_justification": "El proyecto NO está en inglés 'sobre' el taller — el proyecto ES el taller, y se reporta completamente en inglés. El aprendiz demuestra transferencia real: lee, escribe, habla y escucha en inglés en el contexto ocupacional auténtico.",
+        "bloom_level": "L4-L6 (Analizar, Evaluar, Crear)",
+        "generates_evidence": false,
+        "evidence_note": "Sin evidencias formales GFPI-F-134. Las 6 evidencias formales se generaron en S2-S6 primera mitad. La transferencia (S6 2ª mitad + S7 + S8) evalúa PROJECT COMPLETION y progresión CEFR, no criterios de diseño.",
+        "autonomous_work": {
+          "duracion_h": 3,
+          "actividades": [
+            "S6 2ª mitad autónomo: Communication Card Review — aprendiz prepara tarjeta resumen de errores del cuestionario",
+            "S7 autónomo: borrador del Daily Inspection Checklist para el bay asignado + outline del briefing",
+            "S8 autónomo: self-assessment con rúbrica — comparar Gap Cards de S1 vs S8"
+          ]
+        }
+      }
+    ],
+
+    "hours_validation": {
+      "direct_hours": {
+        "expected": 48,
+        "formula": "6 + 6 + 6 + 6 + 6 + 3 + 15",
+        "sum": 48,
+        "status": "✅ VÁLIDO"
+      },
+      "autonomous_hours": {
+        "expected": 12,
+        "formula": "1.5 + 1.5 + 1.5 + 1.5 + 1.5 + 1.5 + 3",
+        "sum": 12,
+        "status": "✅ VÁLIDO"
+      },
+      "total_hours": {
+        "expected": 60,
+        "sum": 60,
+        "status": "✅ VÁLIDO"
+      },
+      "fix_note": "Run 04-15: desbalance 48.75 directa / 11.25 autónoma. Fix aplicado: S6 primera mitad 3.75h → 3h directa; autónoma 0.75h → 1.5h. Ahora consistente con las demás sesiones (1.5h autónoma cada una)."
+    },
+
+    "bloom_progression": {
+      "S1": "L1-L2 — Recordar, Comprender (activación y diagnóstico)",
+      "S2": "L2-L3 — Comprender, Aplicar (input receptivo masivo)",
+      "S3": "L2-L3 — Comprender, Aplicar (output producido escrito)",
+      "S4": "L3-L4 — Aplicar, Analizar (comprensión auditiva + producción oral)",
+      "S5": "L3-L5 — Aplicar, Analizar, Evaluar (integración pragmática)",
+      "S6_1st": "L2-L3 — Recordar, Comprender (evaluación sumativa — intencional)",
+      "S6-8": "L4-L6 — Analizar, Evaluar, Crear (transferencia y proyecto)",
+      "status": "✅ Progresión Bloom ascendente validada"
+    },
+
+    "criteria_sena_validation": {
+      "continuidad_integralidad": "✅ CUMPLE — Cada sesión S2-S5 cruza RAP técnico + RAP inglés. El inglés es MEDIO DE INSTRUCCIÓN (CLIL), no materia paralela.",
+      "antecedente_consecuente": "✅ CUMPLE — Bloom ascendente S1→S8. Cada sesión presupone dominio de la anterior. Vocabulario S2 se usa en Writing S3, se escucha en S4, se comunica en S5.",
+      "economia": "✅ CUMPLE — Cada sesión tiene un foco técnico y un foco lingüístico claramente delimitados. Zero ambigüedad en la asignación de PMs.",
+      "evidencias_alineadas": "✅ CUMPLE — 6 evidencias en S2-S6, 0 en S7-S8. Cuestionario S6 recicla contenido de S2-S5 sin duplicar."
+    },
+
+    "cuestionario_s6_preview": {
+      "session": "6_primera_mitad",
+      "total_points": 25,
+      "total_items": 25,
+      "skills": [
+        {
+          "skill": "Reading",
+          "source_pm": "PM-2.3",
+          "source_session": 2,
+          "points": 5,
+          "items": 5,
+          "source_text": "Shadow Foam 'Must-Have Mechanic Tools' adaptado A1.1 — preguntas de comprensión sobre herramientas del taller"
+        },
+        {
+          "skill": "Vocabulary",
+          "source_pm": "PM-2.5",
+          "source_session": 2,
+          "points": 5,
+          "items": 5,
+          "source_text": "Toolbelt 20 términos — 5 seleccionados en contexto de uso real del taller diesel"
+        },
+        {
+          "skill": "Grammar",
+          "source_pm": "PM-2.10",
+          "source_session": 3,
+          "points": 5,
+          "items": 5,
+          "source_text": "Verb To Be negativo, There is/are, Imperatives — en contexto del Daily Inspection Checklist"
+        },
+        {
+          "skill": "Listening",
+          "source_pm": "PM-2.6",
+          "source_session": 4,
+          "points": 5,
+          "items": 5,
+          "source_text": "SafetyCulture 'Automotive Workshop Safety' diálogo adaptado A1.1 — reconocimiento de hazards y EPP"
+        },
+        {
+          "skill": "Language Functions",
+          "source_pm": "PM-2.9",
+          "source_session": 5,
+          "points": 5,
+          "items": 5,
+          "source_text": "F1-F5 en situaciones del taller: instrucciones SST, solicitud de herramientas, reporte de condiciones"
+        }
+      ]
+    }
+  }
+}

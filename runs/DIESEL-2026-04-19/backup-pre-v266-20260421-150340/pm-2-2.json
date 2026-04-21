@@ -1,0 +1,165 @@
+{
+  "_meta": {
+    "schema_version": "activity-card-v2.0",
+    "schema_ref": "master-prompts/Activity Card — Schema.md (2026-04-13)",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-opus-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist"
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.2",
+    "pm_name": "Gap Analysis",
+    "session": 1,
+    "phase_sena": "Contextualización",
+    "rap_id": "RAP-DIESEL-001-2026",
+
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Completar tabla KWL sobre vocabulario y procedimientos del taller para mapear conocimiento previo del grupo",
+        "didactic_strategy": "Aprendizaje colaborativo",
+        "didactic_technique": "Think-Pair-Share"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Identificar y describir errores de seguridad en imágenes de taller usando estructuras básicas en inglés",
+        "didactic_strategy": "Content-Based Learning",
+        "didactic_technique": "Análisis de casos"
+      },
+      {
+        "number": 3,
+        "type": "cognitiva",
+        "statement": "Autoevaluar desempeño frente a resultados de aprendizaje de la guía usando Gap Cards e I can statements",
+        "didactic_strategy": "TBLT",
+        "didactic_technique": "Conversatorio"
+      }
+    ],
+
+    "hours": {
+      "direct": 2.5,
+      "autonomous": 0.75
+    },
+
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "",
+      "evaluation_technique": "",
+      "instrument_number": null,
+      "instrument_type": null
+    },
+
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Tabla KWL impresa o digital — 1 por aprendiz + 1 versión pizarra/pantalla compartida",
+        "4 imágenes de taller con errores de seguridad impresas A4 o proyectadas (set estándar: técnico sin PPE, toolbox desordenado, derrame sin señalización, extinguidor bloqueado)",
+        "Gap Cards impresas — 1 por aprendiz (6 I can statements de la guía, escala 1–5)",
+        "Guión de entrevista entre pares impreso (5 preguntas en inglés + espacio de respuesta)",
+        "Pizarrón / papel grande (flip chart) para mapa de vocabulario previo del grupo"
+      ],
+      "instructors": "Instructor de inglés técnico"
+    },
+
+    "contributes_to_consolidated_quiz": false,
+    "quiz_skill": "",
+    "quiz_points": 0,
+    "quiz_item_count": 0
+  },
+
+  "pm0_constraints_applied": {
+    "session": "S1",
+    "grammar_active": "Gr1 INTRO — Verbo be (I'm, you're, he's; isn't, aren't; Is/Are...?; short answers). Actividad 2 introduce 'There is/There are' como preview no evaluado (Gr2 INTRO es S2).",
+    "l1_max": "≤ 30% — Contextualization diagnóstica sin calificación. Actividades deben ser honestas y sin presión evaluativa.",
+    "feedback_mode": "Sin corrección de errores en diagnóstico — las actividades son de mapeo, no de evaluación. Instructor observa y toma nota del baseline para informar PM-2.5.",
+    "stress_focus": "safe·ty, haz·ard, pro·ce·dure, e·quip·ment — solo pronunciación modelo del instructor; no drill formal en esta sesión",
+    "scaffolding": "KWL con columnas estructuradas, sentence starters para describir imágenes, Gap Cards con escala numérica 1–5 (no producción libre)"
+  },
+
+  "archetype_used": [
+    "A — KWL / Self-assessment (Actividad 1)",
+    "B — Diagnosis visual (Actividad 2)",
+    "C — Gap Card + Peer Interview combinados (Actividad 3)"
+  ],
+
+  "gap_card_statements": [
+    "I can name 15 of the 20 key tools and areas of a diesel workshop in English.",
+    "I can classify types of maintenance (preventive, corrective, predictive) in English.",
+    "I can identify and report a safety hazard to my supervisor in English.",
+    "I can fill in a daily inspection checklist in English.",
+    "I can give basic instructions about PPE in English.",
+    "I can describe the current state of a service bay in English."
+  ],
+
+  "kwl_columns": {
+    "K_know": "Qué SÉ sobre el taller diesel en inglés (herramientas, procedimientos, seguridad)",
+    "W_want": "Qué QUIERO aprender en inglés sobre mi trabajo como técnico diesel",
+    "L_learned": "Qué APRENDÍ — completar al final de la guía (S8)"
+  },
+
+  "diagnostic_images": [
+    {
+      "id": "IMG-01",
+      "descripcion": "Técnico usando amoladora sin careta ni guantes",
+      "errores_target": ["no eye protection", "no gloves"],
+      "estructura_modelo": "The technician is not wearing ___. He should wear ___."
+    },
+    {
+      "id": "IMG-02",
+      "descripcion": "Toolbox abierto con herramientas tiradas en el piso de la bahía",
+      "errores_target": ["tools on the floor", "toolbox open"],
+      "estructura_modelo": "The tools are on the ___. The toolbox is ___."
+    },
+    {
+      "id": "IMG-03",
+      "descripcion": "Derrame de aceite sin señalización cerca de bahía de servicio",
+      "errores_target": ["oil spill", "no warning sign"],
+      "estructura_modelo": "There is a ___ near ___. There is no ___."
+    },
+    {
+      "id": "IMG-04",
+      "descripcion": "Extinguidor bloqueado por caja de repuestos grande",
+      "errores_target": ["blocked fire extinguisher"],
+      "estructura_modelo": "The fire extinguisher is ___. It is blocked by ___."
+    }
+  ],
+
+  "peer_interview_script": [
+    "What tools do you use most in the workshop?",
+    "What type of maintenance do you do most — preventive or corrective?",
+    "Do you always wear PPE? Which PPE do you wear?",
+    "What happens in your workshop when there is a spill?",
+    "What English words from the workshop do you already know?"
+  ],
+
+  "structures_target_preview": [
+    "There is a spill near bay 2.",
+    "The technician is not wearing goggles.",
+    "The fire extinguisher is blocked.",
+    "The technician should wear goggles."
+  ],
+
+  "trabajo_autonomo": {
+    "duracion_h": 0.75,
+    "actividades": [
+      "Fotografiar Gap Card completada y subir al grupo como baseline personal (línea de base)",
+      "Escribir 5 términos del Mapa de vocabulario previo del grupo en una oración simple en inglés (ej: 'A wrench is a tool. I use it to ___.')",
+      "Preview S2: explorar imágenes del artículo Shadow Foam '20 Must Have Mechanic Tools 2024' y anotar 3 herramientas desconocidas con su nombre en inglés"
+    ]
+  },
+
+  "gfpi_tag": "3.2-CONTEXTUALIZACION",
+  "instructor_notes": {
+    "diagnostic_purpose": "Actividad 2 (imágenes de seguridad) introduce informalmente 'There is/There are' — NO corregir errores gramaticales aquí. Es preview de Gr2 que se introduce formalmente en S2.",
+    "gap_card_handling": "Guardar Gap Cards de cada aprendiz para redistribuir al inicio de S8 — cierre reflexivo de la guía. NO calificar.",
+    "kwl_as_agenda": "La columna W del KWL grupal (construida en Actividad 1) queda visible en el aula durante toda la guía — fija las preguntas vivas del grupo.",
+    "vocabulary_map": "El mapa de vocabulario previo (Actividad 3 peer interview) informa la intensidad del Vocabulary Scaffold en PM-2.5. Instructor anota términos ya conocidos y términos con gaps críticos.",
+    "l1_management": "Actividades diagnósticas — NO penalizar uso de L1. Instructor modela respuestas en inglés pero no corrige. English Zone se establece informalmente: 'Try to say it in English — it's OK if you mix.'"
+  }
+}

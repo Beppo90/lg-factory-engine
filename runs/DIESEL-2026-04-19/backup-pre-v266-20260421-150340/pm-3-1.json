@@ -1,0 +1,635 @@
+{
+  "_meta": {
+    "schema_version": "playbook-outline-v1.0",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-opus-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist",
+    "sources": ["PM-2.0 (Session Blueprint)", "PM-2.1–PM-2.10 (Activity Cards v2.0)", "PM-2.11 (GFPI-F-134 Row)"]
+  },
+
+  "playbook_overview": {
+    "program_name": "Mantenimiento de Motores Diesel",
+    "program_type": "Técnico",
+    "guide": "Guía 1 — The Workshop Specialist",
+    "cefr_level": "A1.1",
+    "rap_id": "220501096",
+    "universo_narrativo": "The Diesel Workshop — Bay 1 / Bay 2 / Bay 3 — Carlos Mendoza (Lead Technician) / Valentina Cruz (Safety Officer) / Santiago Ríos (Apprentice)",
+    "total_sessions": 8,
+    "total_hours": 60,
+    "direct_hours": 48,
+    "autonomous_hours": 12,
+    "total_formal_evidences": 6,
+    "cuestionario_consolidado_points": 25,
+    "note_pm29_transversal": "PM-2.9 (Language Functions) tiene su propia sesión (S5) Y inyecta chunk bank progresivamente en S2–S4. El chunk bank F1–F5 se introduce en cada sesión como scaffolding lingüístico antes de la evaluación integradora de S5."
+  },
+
+  "session_overview_table": [
+    {
+      "session": 1,
+      "title": "The Wake-Up Call",
+      "fase_sena": "Reflexión Inicial + Contextualización",
+      "pms": ["PM-2.1", "PM-2.2"],
+      "direct_h": 6.0,
+      "autonomous_h": 1.5,
+      "evidence": null,
+      "quiz_contribution": null,
+      "bloom": "L1–L2",
+      "skills_primary": ["Speaking", "Vocabulary"],
+      "skills_secondary": []
+    },
+    {
+      "session": 2,
+      "title": "Read the Workshop",
+      "fase_sena": "Apropiación — Input Receptivo",
+      "pms": ["PM-2.5", "PM-2.3"],
+      "direct_h": 6.0,
+      "autonomous_h": 1.5,
+      "evidence": "Cuestionario No 1 (Reading — 5 pts)",
+      "quiz_contribution": "Reading 5 pts + Vocabulary 5 pts",
+      "bloom": "L2–L3",
+      "skills_primary": ["Vocabulary", "Reading"],
+      "skills_secondary": ["Grammar (noticing)"]
+    },
+    {
+      "session": 3,
+      "title": "Write It Right",
+      "fase_sena": "Apropiación — Output Escrito",
+      "pms": ["PM-2.10", "PM-2.4"],
+      "direct_h": 6.0,
+      "autonomous_h": 1.5,
+      "evidence": "Lista de verificación No 2 (Writing — 5 pts)",
+      "quiz_contribution": "Grammar 5 pts",
+      "bloom": "L2–L4",
+      "skills_primary": ["Grammar", "Writing"],
+      "skills_secondary": ["Vocabulary (recycled)"]
+    },
+    {
+      "session": 4,
+      "title": "Tuning In & Speaking Up",
+      "fase_sena": "Apropiación — Comprensión Auditiva + Producción Oral",
+      "pms": ["PM-2.6", "PM-2.8"],
+      "direct_h": 6.0,
+      "autonomous_h": 1.5,
+      "evidence": "Cuestionario No 3 (Listening — 5 pts) + Escala de estimación No 4 (Speaking — 5 pts)",
+      "quiz_contribution": "Listening 5 pts",
+      "bloom": "L3–L4",
+      "skills_primary": ["Listening", "Speaking"],
+      "skills_secondary": ["Vocabulary (recycled)", "Grammar (recycled)"]
+    },
+    {
+      "session": 5,
+      "title": "The Workshop in Action",
+      "fase_sena": "Apropiación — Integración Pragmática",
+      "pms": ["PM-2.9"],
+      "direct_h": 6.0,
+      "autonomous_h": 1.5,
+      "evidence": "Escala de estimación No 5 (Language Functions — 5 pts)",
+      "quiz_contribution": "Language Functions 5 pts",
+      "bloom": "L3–L5",
+      "skills_primary": ["Language Functions"],
+      "skills_secondary": ["Speaking", "Listening", "Vocabulary", "Grammar"]
+    },
+    {
+      "session": "6a",
+      "title": "Prove What You Know",
+      "fase_sena": "Evaluación Sumativa",
+      "pms": ["PM-4.2 — Cuestionario Consolidado"],
+      "direct_h": 3.0,
+      "autonomous_h": 1.5,
+      "evidence": "Cuestionario Consolidado No 6 (25 pts — synthesis)",
+      "quiz_contribution": "All 5 skills × 5 pts",
+      "bloom": "L2–L3",
+      "skills_primary": ["Reading", "Vocabulary", "Grammar", "Listening", "Language Functions"],
+      "skills_secondary": []
+    },
+    {
+      "session": "6b+7+8",
+      "title": "The Final Mission",
+      "fase_sena": "Transferencia — Proyecto Final (ABP)",
+      "pms": ["PM-3.5 — Workshop Readiness Report Final Mission"],
+      "direct_h": 15.0,
+      "autonomous_h": 3.0,
+      "evidence": null,
+      "quiz_contribution": null,
+      "bloom": "L4–L6",
+      "skills_primary": ["All integrated — CLIL real context"],
+      "skills_secondary": []
+    }
+  ],
+
+  "sessions": [
+    {
+      "session": 1,
+      "title": "The Wake-Up Call",
+      "subtitle": "Who are we? Where are we? What do we already know?",
+      "fase_sena": "Reflexión Inicial + Contextualización",
+      "momento_sena": "3.1 + 3.2",
+      "pms": [
+        {"pm_id": "PM-2.1", "pm_name": "The Spark", "hours": 3.5, "position": "WHILE-A through WHILE-C"},
+        {"pm_id": "PM-2.2", "pm_name": "Gap Analysis", "hours": 2.5, "position": "WHILE-D through WHILE-E"}
+      ],
+      "direct_hours": 6.0,
+      "autonomous_hours": 1.5,
+      "l1_max_pct": 30,
+      "grammar_active": "Gr1 INTRO — Verbo be (I'm, you're, he's; isn't, aren't; Is/Are...?)",
+      "timing_breakdown": {
+        "setup_min": 20,
+        "pm_2_1_min": 130,
+        "pm_2_2_min": 115,
+        "wrapup_min": 15,
+        "break_min": 20,
+        "total_min": 300,
+        "note": "6h directa incluye 20 min de break. 300 min instructivos = 5h neta."
+      },
+      "skills_map": {
+        "Reading": "○ (no formal reading)",
+        "Listening": "○ (no formal listening)",
+        "Vocabulary": "● (first 6 terms introduced)",
+        "Grammar": "● (Gr1 INTRO: be verb)",
+        "Writing": "● (KWL + Gap Cards written)",
+        "Speaking": "●● (debate + peer interview)"
+      },
+      "technical_focus": "Tipos de taller (general / especializado / concesionario). Organización del área de trabajo: bay, workbench, toolbox. Primeros 6 términos Toolbelt (workshop, service bay, workbench, toolbox, specialist, hazard). Personajes: Carlos Mendoza, Valentina Cruz, Santiago Ríos.",
+      "language_focus": "Activación de esquemas previos en inglés. KWL grupal. Gap Cards (I can statements × 6). Peer interview script (5 preguntas). Vocabulario del taller: nombrar + describir imágenes. Debate básico sobre tipos de mantenimiento.",
+      "pm29_injection": "No injection S1 — PM-2.9 chunk bank no activo aún.",
+      "teacher_talk": {
+        "opening": "Good morning, everyone. My name is ___ and this is English for The Diesel Workshop. Look at this picture. What do you see? Tell me in English — any word is OK.",
+        "transition_pm21_to_pm22": "Good. Now let's think about what you already know. Take your Gap Card. Number one: 'I can name 15 tools in English.' How confident are you? Write 1 to 5.",
+        "closing": "You did great today. Look at the W column — these are your questions for the next 8 sessions. We will answer them together. See you next class.",
+        "l1_guideline": "≤30% L1 — instrucciones del KWL y Gap Cards pueden ser bilingüe. El debate (Actividad 3 PM-2.1) se modela en inglés con scaffolding visual."
+      },
+      "plan_b": "Si la infografía del workshop layout no está disponible: proyectar imagen del taller real del centro de formación + pedir a los aprendices que nombren zonas en inglés con ayuda de Google Images. Sin tecnología: dibujar el layout en pizarra con aprendices voluntarios.",
+      "evidence": null,
+      "autonomous_work": {
+        "duracion_h": 1.5,
+        "actividades": [
+          "PM-2.2: fotografiar Gap Card completada y subir al grupo como baseline personal (línea de base)",
+          "PM-2.2: escribir 5 términos del mapa de vocabulario previo en una oración simple en inglés",
+          "PM-2.1 preview S2: explorar imágenes del artículo Shadow Foam '20 Must Have Mechanic Tools 2024' y anotar 3 herramientas desconocidas con nombre en inglés"
+        ]
+      }
+    },
+
+    {
+      "session": 2,
+      "title": "Read the Workshop",
+      "subtitle": "20 tools. One text. The vocabulary that powers everything.",
+      "fase_sena": "Apropiación — Input Receptivo (Vocabulary + Reading)",
+      "momento_sena": "3.3",
+      "pms": [
+        {"pm_id": "PM-2.5", "pm_name": "Vocabulary, Literacy & Scenario Setup", "hours": 2.0, "position": "WHILE-A (SET-UP del vocabulario — FIRST)"},
+        {"pm_id": "PM-2.3", "pm_name": "Reading — The Master Anchor", "hours": 4.0, "position": "WHILE-B through WHILE-E"}
+      ],
+      "direct_hours": 6.0,
+      "autonomous_hours": 1.5,
+      "l1_max_pct": 25,
+      "grammar_active": "Gr1 CONSOLIDA (be) + Gr2 INTRO — There is/there are afirm., neg., pregunta + some/any",
+      "timing_breakdown": {
+        "setup_min": 15,
+        "pm_2_5_min": 90,
+        "pm_2_3_min": 155,
+        "wrapup_min": 20,
+        "break_min": 20,
+        "total_min": 300,
+        "note": "PM-2.5 SIEMPRE antes de PM-2.3. El Word Wall debe estar físicamente visible en el aula durante toda la lectura."
+      },
+      "skills_map": {
+        "Reading": "●● (Master Anchor — Jigsaw + Cuestionario No 1)",
+        "Listening": "● (Jigsaw oral reporting entre expertos)",
+        "Vocabulary": "●● (20 Toolbelt terms — Word Wall installed)",
+        "Grammar": "● (There is/are noticing en texto — Gr2 INTRO)",
+        "Writing": "○ (no formal writing)",
+        "Speaking": "● (Jigsaw teach-back + prediction discussion)"
+      },
+      "technical_focus": "Herramientas manuales: wrench, ratchet, socket, torque wrench, floor jack. Seguridad: safety goggles, gloves, PPE, fire extinguisher. Mantenimiento: preventive maintenance, corrective maintenance. Documentos: work order, checklist. Roles: specialist. Ambiente: workshop, service bay, workbench, toolbox.",
+      "language_focus": "PM-2.5: Word Wall (20 términos + stress marks + ●○ notation), flashcard battle, category race, gap fill en Daily Checklist. PM-2.3: predicción por imágenes → Jigsaw (4 secciones) → Cuestionario No 1 (5 ítems, sin texto, 15 min). Noticing gramatical: cuadro resumen There is/There are desde el texto.",
+      "pm29_injection": "S2 PM-2.9 injection activa: F3 (Describir condiciones) — introducir frases 'There is a ___ near ___' y 'The ___ is on the ___' como scaffolding del noticing gramatical de PM-2.3. Estas frases reaparecerán en S5 como F3 evaluada.",
+      "teacher_talk": {
+        "opening": "Today we install the Toolbelt — 20 words you need every day in the workshop. Look at the Word Wall. Word number one: WORK-shop. Say it with me: WORK-shop. Good.",
+        "transition_pm25_to_pm23": "You know the 20 words. Now let's read them in a real text. Look at the picture — what can you see? Don't read yet. Just look and predict.",
+        "closing": "The torque wrench applies the correct force to a bolt. The ratchet is fast in tight spaces. Write these sentences in your notebook — they will be in the quiz.",
+        "l1_guideline": "≤25% — Pronunciación: instructor modela PRIMERO, luego choral drill. Traducción solo si bloqueo crítico tras imagen + gesto."
+      },
+      "plan_b": "Si el sistema de audio/visual falla para imágenes Shadow Foam: usar el Word Wall físico como referencia visual durante toda la lectura. Jigsaw puede hacerse con texto impreso solamente — la dinámica de expertos no requiere tecnología.",
+      "evidence": {
+        "numero": 1,
+        "tipo": "Conocimiento",
+        "instrumento": "Cuestionario No 1",
+        "skill": "Reading",
+        "items": 5,
+        "points": 5,
+        "protocol": "Sin acceso al texto. 15 min máx. Recoger antes de dar feedback oral."
+      },
+      "quiz_s6_contributions": [
+        {"skill": "Reading", "points": 5, "source_pm": "PM-2.3"},
+        {"skill": "Vocabulary", "points": 5, "source_pm": "PM-2.5"}
+      ],
+      "autonomous_work": {
+        "duracion_h": 1.5,
+        "actividades": [
+          "PM-2.5: auto-test de los 20 flashcards: término → imagen → oración oral (≥2 rondas, 10 min)",
+          "PM-2.3: visitar artículo Shadow Foam e identificar 5 herramientas adicionales con nombre en inglés",
+          "PM-2.3: completar Daily Inspection Checklist en blanco con el taller real — Preview PM-2.4"
+        ]
+      }
+    },
+
+    {
+      "session": 3,
+      "title": "Write It Right",
+      "subtitle": "From reading to writing — produce your first technical document.",
+      "fase_sena": "Apropiación — Output Escrito (Grammar + Writing)",
+      "momento_sena": "3.3",
+      "pms": [
+        {"pm_id": "PM-2.10", "pm_name": "Grammar — Structure Use", "hours": 3.0, "position": "WHILE-A + WHILE-B (Discovery First — BEFORE Writing)"},
+        {"pm_id": "PM-2.4", "pm_name": "Writing — Task-Based Production", "hours": 3.0, "position": "WHILE-C through WHILE-E"}
+      ],
+      "direct_hours": 6.0,
+      "autonomous_hours": 1.5,
+      "l1_max_pct": 20,
+      "grammar_active": "Gr1+Gr2 CONSOLIDA + Gr5 INTRO — Imperativo: Check/Open/Use/Tighten/Replace; Don't + base form",
+      "timing_breakdown": {
+        "setup_min": 15,
+        "pm_2_10_min": 130,
+        "pm_2_4_min": 130,
+        "wrapup_min": 15,
+        "break_min": 20,
+        "total_min": 310,
+        "note": "PM-2.10 SIEMPRE antes de PM-2.4. El cuadro resumen de Gr5 (imperativo) de PM-2.10 alimenta el Language Bank de PM-2.4. NO separar estas dos PMs."
+      },
+      "skills_map": {
+        "Reading": "● (Error Log + modelo de documento)",
+        "Listening": "○",
+        "Vocabulary": "● (Toolbelt reciclado en contexto escrito)",
+        "Grammar": "●● (Gr5 INTRO — Imperativo; Gr2 CONSOLIDA — There is/are)",
+        "Writing": "●● (Daily Inspection Checklist + Work Order header — Evidencia 2)",
+        "Speaking": "● (Grammar stations + peer review oral)"
+      },
+      "technical_focus": "Formatos del taller: Daily Inspection Checklist (mín. 8 ítems), Work Order header (mín. 6 campos). Escenario: Bay 2, Monday 7:00 AM, Santiago Ríos prepara el bay para el primer camión diesel del día. Observaciones técnicas en inglés.",
+      "language_focus": "PM-2.10: Discovery First (texto S2 → noticing → regla → Formula Box). Error Log (10 oraciones). Grammar Stations (Imperativo / There is/are / Preposiciones). Safety Report Bay 3 (práctica fluida). PM-2.4: Genre Analysis + Modeled Writing → producción individual → Peer Review con Lista de verificación No 2.",
+      "pm29_injection": "S3 PM-2.9 injection: F1 (Dar instrucciones) — los imperativos del checklist ('Check the floor jack', 'Don't leave tools') son exactamente las frases F1 del chunk bank. El Language Bank de PM-2.4 = chunk bank F1.",
+      "teacher_talk": {
+        "opening": "Look at this checklist. It's from a real diesel workshop. Can you read item 1? 'Check the floor jack.' What kind of verb is 'check'? It's a command — an imperative. Today we learn how to write commands in English.",
+        "transition_pm210_to_pm24": "You have the Formula Box. Now let's use it. Here is an empty checklist for Bay 2. Your job: write at least 8 inspection items for Santiago Ríos. Use imperatives. Use There is/are for observations. You have 30 minutes.",
+        "closing": "Swap your checklist with your partner. Use the verification list to check 10 criteria. Write your feedback in English: 'I think the ___ is missing.' or 'I see a mistake in ___.'",
+        "l1_guideline": "≤20% — Formula Box y Language Bank reemplazan explicación en L1. Feedback escrito en códigos G/V/Sp/WO — el aprendiz corrige en casa."
+      },
+      "plan_b": "Si el tiempo se comprime en PM-2.10: omitir las Grammar Stations (Actividad 2) y pasar directo al Safety Report Bay 3 como práctica integrada. El Error Log (Actividad 1) es obligatorio — es el Discovery First.",
+      "evidence": {
+        "numero": 2,
+        "tipo": "Producto",
+        "instrumento": "Lista de verificación No 2",
+        "skill": "Writing",
+        "items": 10,
+        "points": 5,
+        "protocol": "Recoger AMBOS documentos (Checklist + Work Order) en papel + Lista de verificación No 2 del peer review. Los tres forman el paquete de Evidencia 2."
+      },
+      "quiz_s6_contributions": [
+        {"skill": "Grammar", "points": 5, "source_pm": "PM-2.10", "note": "2 ítems Imperativo + 2 ítems There is/are + 1 ítem Preposiciones"}
+      ],
+      "autonomous_work": {
+        "duracion_h": 1.5,
+        "actividades": [
+          "PM-2.10: auto-evaluar Safety Report Bay 3 con códigos G/V/Sp/WO — reescribir oraciones corregidas",
+          "PM-2.4: revisar y auto-evaluar Daily Inspection Checklist usando los 10 criterios de Lista de verificación No 2",
+          "Preview S4 Listening (PM-2.6): escuchar 1 vez el audio 'Bay 2 Safety Briefing' en Moodle y anotar personajes, tema, 3 palabras reconocidas"
+        ]
+      }
+    },
+
+    {
+      "session": 4,
+      "title": "Tuning In & Speaking Up",
+      "subtitle": "Hear it, understand it, report it.",
+      "fase_sena": "Apropiación — Comprensión Auditiva + Producción Oral",
+      "momento_sena": "3.3",
+      "pms": [
+        {"pm_id": "PM-2.6", "pm_name": "Listening — The Auditory Anchor", "hours": 3.0, "position": "WHILE-A + WHILE-B + WHILE-C"},
+        {"pm_id": "PM-2.8", "pm_name": "Speaking — The Mission", "hours": 3.0, "position": "WHILE-D + WHILE-E"}
+      ],
+      "direct_hours": 6.0,
+      "autonomous_hours": 1.5,
+      "l1_max_pct": 15,
+      "grammar_active": "Gr5 CONSOLIDA (imperativo) + Gr7 INTRO (can/can't: habilidad). Gr7 se introduce en PM-2.8 WHILE-D.",
+      "timing_breakdown": {
+        "setup_min": 15,
+        "pm_2_6_min": 130,
+        "pm_2_8_min": 130,
+        "wrapup_min": 15,
+        "break_min": 20,
+        "total_min": 310,
+        "note": "CRÍTICO: el script del diálogo PM-2.6 se entrega DESPUÉS del Cuestionario No 3 — no antes. PM-2.8 empieza con el script ya en mano (puente del role play PM-2.6 Actividad 3 → PM-2.8)."
+      },
+      "skills_map": {
+        "Reading": "○",
+        "Listening": "●● (Bay 2 Safety Briefing — 2x reproducción — Cuestionario No 3)",
+        "Vocabulary": "● (Toolbelt reciclado: goggles, gloves, fire extinguisher, floor jack, spill)",
+        "Grammar": "● (Imperativo en audio + can/can't INTRO en PM-2.8)",
+        "Writing": "○ (solo cuestionario escrito)",
+        "Speaking": "●● (role play PM-2.6 Act 3 + Workshop Readiness Report PM-2.8 — Escala No 4)"
+      },
+      "technical_focus": "EPP: goggles, gloves, fire extinguisher, PPE, spill. Bay 2 Safety Briefing (Carlos Mendoza + Valentina Cruz — SafetyCulture adaptado). Workshop Readiness Report oral: estado del bay antes del primer camión diesel del día.",
+      "language_focus": "PM-2.6: pre-listening vocab activation → audio 2x (gist + detail con imagen) → Cuestionario No 3 (sin script) → role play con script. PM-2.8: modelo de reporte oral → preparación con Stock Cards → Round 1 (guided) → Round 2 (semi-guided) → Round 3 (libre — evaluado con Escala No 4).",
+      "pm29_injection": "S4 PM-2.9 injection: F4 (Reportar al supervisor) y F5 (Confirmar comprensión) — el Workshop Readiness Report de PM-2.8 ES la función F4 en acción. Señalar explícitamente: 'Bay 2 is ready, Carlos' = F4.",
+      "teacher_talk": {
+        "opening": "Today you listen first. I'll play the audio two times. First time: just listen — what is the situation? Second time: listen for details. Then — no audio, no script — you answer 5 questions.",
+        "transition_pm26_to_pm28": "Good. Now you have the script. Practice with your partner — Carlos and Valentina. After 5 minutes, we do something new: YOU report to ME. You are Santiago Ríos. I am Carlos Mendoza. Ready?",
+        "closing": "Excellent work today. The Workshop Readiness Report is a real skill. In a real diesel workshop, you do this every morning. Now it's in English. Take the Stock Card home — practice for 60 seconds.",
+        "l1_guideline": "≤15% — Mayor autonomía. ACCURACY CERO durante el listening y el role play. Post-task feedback en pizarra (anónimo)."
+      },
+      "plan_b": {
+        "audio_failure": "Si el sistema de audio falla: el instructor lee el script en voz alta a velocidad controlada (0.85x simulada). Mantener los 2 speakers distintos alternando registro de voz (más grave para Carlos, más agudo para Valentina). El cuestionario se aplica igualmente sin script.",
+        "time_compression": "Si el tiempo se comprime: PM-2.8 solo Round 1 + Round 3. Omitir Round 2 (semi-guided). El fluency mode protege la calidad de Round 3."
+      },
+      "evidence": [
+        {
+          "numero": 3,
+          "tipo": "Desempeño",
+          "instrumento": "Cuestionario No 3",
+          "skill": "Listening",
+          "items": 5,
+          "points": 5,
+          "protocol": "Audio reproducido 2 veces ANTES del cuestionario. Cuestionario: 15 min, sin script, sin audio adicional. Recoger antes de entregar script para role play."
+        },
+        {
+          "numero": 4,
+          "tipo": "Desempeño",
+          "instrumento": "Escala de estimación No 4",
+          "skill": "Speaking",
+          "items": 5,
+          "points": 5,
+          "protocol": "Evaluar solo Round 3 (sin apoyo escrito). Devolución individual escrita — no compartir puntajes oralmente."
+        }
+      ],
+      "quiz_s6_contributions": [
+        {"skill": "Listening", "points": 5, "source_pm": "PM-2.6"}
+      ],
+      "autonomous_work": {
+        "duracion_h": 1.5,
+        "actividades": [
+          "PM-2.6: escuchar audio 'Bay 2 Safety Briefing' 2 veces adicionales siguiendo el script — subrayar palabras reconocidas con claridad",
+          "PM-2.8: preparar Workshop Readiness Report oral para el bay real del centro de formación — grabar en celular (mín. 60 seg) y auto-evaluar con Escala No 4",
+          "Preview S5 (PM-2.9): leer chunk bank F1–F5 y memorizar 2 frases por función comunicativa"
+        ]
+      }
+    },
+
+    {
+      "session": 5,
+      "title": "The Workshop in Action",
+      "subtitle": "Put it all together — communicate like a diesel specialist.",
+      "fase_sena": "Apropiación — Integración Pragmática (Language Functions)",
+      "momento_sena": "3.3",
+      "pms": [
+        {"pm_id": "PM-2.9", "pm_name": "Language Functions — Communicative Competence", "hours": 6.0, "position": "SET-UP through WRAP-UP — full session"}
+      ],
+      "direct_hours": 6.0,
+      "autonomous_hours": 1.5,
+      "l1_max_pct": 12,
+      "grammar_active": "Gr7 CONSOLIDA (can/can't) + Gr3 INTRO (Present Simple: rutinas y procedimientos). Gr3 activa en F4: 'I check the bay every morning.'",
+      "timing_breakdown": {
+        "setup_min": 15,
+        "activity_1_map_min": 60,
+        "activity_2_drills_min": 130,
+        "activity_3_simulation_min": 75,
+        "wrapup_min": 20,
+        "break_min": 20,
+        "total_min": 320,
+        "note": "Actividad 2: 5 drills × 8 min (función) + 5 min transición × 5 = ~65 min drills + ~65 min setup + cierre = ~130 min total. Actividad 3: 3 min por aprendiz × ~25 aprendices = flexible según grupo."
+      },
+      "skills_map": {
+        "Reading": "● (Classification cards — 15 frases)",
+        "Listening": "● (Drills de escucha + respuesta en pares)",
+        "Vocabulary": "●● (Toolbelt completo reciclado en todas las funciones)",
+        "Grammar": "● (Gr3 INTRO — Present Simple en F4)",
+        "Writing": "● (Personal Communication Card — síntesis)",
+        "Speaking": "●● (Simulación de apertura de taller — Escala No 5)"
+      },
+      "technical_focus": "Funciones comunicativas F1–F5 integradas en apertura real de taller: dar instrucciones SST (F1), solicitar herramientas (F2), describir condiciones del bay (F3), reportar al supervisor (F4), confirmar comprensión (F5). Reutiliza Stock Cards de S4 en la simulación.",
+      "language_focus": "Actividad 1: Communication Map (5 funciones + chunk examples) → clasificar 15 tarjetas de frases. Actividad 2: 5 drills de 8 min — F1=tarjetas instrucción, F2=flashcard herramienta, F3=imagen bay con hazards, F4=Bay Status Card, F5=cadena confirmación. Actividad 3: simulación de apertura de taller (3 min/aprendiz) + Personal Communication Card (síntesis personal) + Quiz Preview S6.",
+      "pm29_injection": "PM-2.9 ES la sesión de integración del chunk bank inyectado en S2–S4. El aprendiz YA CONOCE las frases — S5 = integración evaluada, no introducción.",
+      "teacher_talk": {
+        "opening": "Today is the day everything comes together. Look at the Communication Map. Five functions. You already know these phrases — from S2, S3, S4. Today we use them all. In 8 minutes: F1. Go.",
+        "transition_drills_to_simulation": "Drills done. Now: real scenario. You are Santiago Ríos. You open Bay 2. I am Carlos Mendoza — your lead technician. You have 3 minutes. Use all five functions. Ready?",
+        "closing": "Look at your Personal Communication Card. These are YOUR phrases — the ones that work for YOU in your workshop. Keep this card. You will need it for the Final Mission.",
+        "l1_guideline": "≤12% — Máxima autonomía. Toda la sesión en inglés. L1 solo si bloqueo crítico en comprensión de una función específica — no en producción."
+      },
+      "plan_b": "Si el espacio es reducido para la simulación: hacer drills de 8 min en toda la sesión (Actividades 1+2 expandidas). La simulación puede hacerse en pares donde un aprendiz evalúa al otro con la Escala No 5. No requiere que todos pasen al frente.",
+      "evidence": {
+        "numero": 5,
+        "tipo": "Desempeño",
+        "instrumento": "Escala de estimación No 5",
+        "skill": "Language Functions",
+        "items": 5,
+        "points": 5,
+        "protocol": "Instructor evalúa + par observador evalúa simultáneamente. Devolución colectiva: las 3 funciones más logradas + 2 gaps más frecuentes del grupo."
+      },
+      "quiz_s6_contributions": [
+        {"skill": "Language Functions", "points": 5, "source_pm": "PM-2.9"}
+      ],
+      "autonomous_work": {
+        "duracion_h": 1.5,
+        "actividades": [
+          "PM-2.9: completar Personal Communication Card con 2 frases propias por función (F1–F5), adaptadas al taller real — fotografiar y subir al grupo",
+          "PM-2.9: grabar simulación de apertura de taller de 2 minutos usando las 5 funciones integradas — auto-evaluar con Escala No 5",
+          "Preview S6: leer 25 ítems de muestra del Cuestionario Consolidado en Moodle — identificar las skills donde se siente menos seguro"
+        ]
+      }
+    },
+
+    {
+      "session": "6a",
+      "title": "Prove What You Know",
+      "subtitle": "25 questions. 5 skills. Show what The Diesel Workshop taught you.",
+      "fase_sena": "Evaluación Sumativa — Cuestionario Consolidado",
+      "momento_sena": "3.3",
+      "pms": [
+        {"pm_id": "PM-4.2", "pm_name": "Cuestionario Consolidado", "hours": 3.0, "position": "Full block — WHILE-A + WHILE-B (evaluación) + feedback individual"}
+      ],
+      "direct_hours": 3.0,
+      "autonomous_hours": 1.5,
+      "l1_max_pct": 10,
+      "grammar_active": "ALL APLICA — todos los grupos gramaticales activos como objeto de evaluación",
+      "timing_breakdown": {
+        "setup_min": 15,
+        "quiz_min": 90,
+        "feedback_individual_min": 45,
+        "wrapup_min": 15,
+        "break_min": 15,
+        "total_min": 180,
+        "note": "3h directa = 180 min. Quiz: 90 min (25 ítems). Devolución individual: 45 min (instructor revisa item por item con cada aprendiz). Orientación Final Mission: 15 min."
+      },
+      "skills_map": {
+        "Reading": "●● (5 ítems Reading — texto nuevo contexto taller)",
+        "Listening": "●● (5 ítems Listening — audio nuevo o variante del Safety Briefing)",
+        "Vocabulary": "●● (5 ítems Vocabulary — 20 términos Toolbelt en contexto)",
+        "Grammar": "●● (5 ítems Grammar — Imperativo, There is/are, Preposiciones)",
+        "Writing": "○ (no ítems writing — evaluado por Producto en S3)",
+        "Speaking": "○ (no ítems speaking — evaluado por Desempeño en S4)",
+        "Language Functions": "●● (5 ítems Language Functions — situaciones del taller)"
+      },
+      "technical_focus": "Síntesis evaluativa de: herramientas (S2), mantenimiento y formatos (S3), EPP y hazards (S4), funciones comunicativas (S5). Contexto: The Diesel Workshop — bays 1, 2 y 3 — personajes conocidos.",
+      "language_focus": "25 ítems de selección múltiple (o mixtos) 100% en inglés: 5 Reading + 5 Vocabulary + 5 Grammar + 5 Listening + 5 Language Functions. Ningún ítem duplica contenido de las evidencias formales S2–S5 — aplica conocimiento en nuevos contextos de taller.",
+      "pm29_injection": "No injection S6a — bloque de evaluación sumativa.",
+      "teacher_talk": {
+        "opening": "Today is your assessment. 25 questions. You have 90 minutes. No dictionary, no notes. Read each question carefully. If you don't know — your best guess. Go.",
+        "transition_quiz_to_feedback": "Good work. Now let's look at your answers together. Question 1 — the answer is B. 'The torque wrench applies the correct force to a bolt.' Who got this right? Great.",
+        "closing": "Now — the Final Mission. Next session: you go to Bay 2 in this workshop. You inspect it. You write the checklist. You report to your supervisor — in English. We start next class.",
+        "l1_guideline": "≤10% — El cuestionario es 100% en inglés. Instrucciones en L1 solo para logística (dónde escribir el nombre, cuánto tiempo hay)."
+      },
+      "plan_b": "Si Moodle está caído: usar versión impresa del cuestionario (preparada con anticipación). Si faltan impresoras: el instructor proyecta ítem por ítem y los aprendices responden en hoja de respuestas (A/B/C).",
+      "evidence": {
+        "numero": 6,
+        "tipo": "Conocimiento",
+        "instrumento": "Cuestionario Consolidado No 6",
+        "skill": "Synthesis — 5 skills",
+        "items": 25,
+        "points": 25,
+        "protocol": "Tiempo máx 90 min. Sin diccionario. Sin notas. Condición de aprobación: mínimo 60% (15/25 pts). Devolución individual post-quiz."
+      },
+      "autonomous_work": {
+        "duracion_h": 1.5,
+        "actividades": [
+          "Revisión post-cuestionario: identificar ítems incorrectos y escribir la forma correcta en el cuaderno",
+          "Preparación Final Mission: repasar 20 términos Toolbelt + 5 funciones F1–F5 + checklis Bay 2 de S3",
+          "Leer PM-3.5 instrucciones de la Final Mission y preparar preguntas para el instructor"
+        ]
+      }
+    },
+
+    {
+      "session": "6b+7+8",
+      "title": "The Final Mission — The Workshop Readiness Report",
+      "subtitle": "15 hours. 3 sessions. Real bay. Real report. Real English.",
+      "fase_sena": "Transferencia — Proyecto Final (ABP)",
+      "momento_sena": "3.4",
+      "pms": [
+        {"pm_id": "PM-3.5", "pm_name": "The Final Mission — Workshop Readiness Report", "hours": 15.0, "position": "3 sessions (6b + S7 + S8)"}
+      ],
+      "direct_hours": 15.0,
+      "autonomous_hours": 3.0,
+      "l1_max_pct": 5,
+      "grammar_active": "ALL APLICA — todos los grupos gramaticales en producción integrada libre",
+      "timing_breakdown": {
+        "session_6b_min": 150,
+        "session_7_min": 360,
+        "session_8_min": 360,
+        "total_min": 870,
+        "breakdown_6b": "S6 2ª mitad (2.5h): feedback cuestionario + orientación Final Mission + asignación de bays",
+        "breakdown_s7": "S7 (6h): reconocimiento del bay real → Daily Inspection Checklist → borrador del oral report → coaching pairs",
+        "breakdown_s8": "S8 (6h): Final Mission oral (Workshop Readiness Report de 60–90 seg) → KWL cierre → Gap Cards S1 vs S8 → Learning Contract review"
+      },
+      "skills_map": {
+        "Reading": "● (leer instrucciones, etiquetas, formatos en el taller real)",
+        "Listening": "●● (escuchar instrucciones del supervisor en inglés durante la misión)",
+        "Vocabulary": "●● (20 términos Toolbelt en uso auténtico en el bay real)",
+        "Grammar": "●● (producción libre — imperativos, There is/are, preposiciones)",
+        "Writing": "●● (Daily Inspection Checklist + Safety Report en bay real)",
+        "Speaking": "●● (oral report al supervisor en inglés — fluency mode)"
+      },
+      "technical_focus": "ABP integrador: preparación del bay real asignado en el centro de formación — inspección, documentación en inglés, briefing oral al supervisor. El proyecto ES el taller — no una simulación de taller.",
+      "language_focus": "S6b: orientación, asignación de bays, formación de equipos. S7: COACHING mode — escribir, practicar, recibir retroalimentación del par. S8: FLUENCY mode — Final Mission oral evaluada (60–90 seg) + KWL cierre + comparación Gap Cards S1 vs S8.",
+      "pm29_injection": "No injection — PM-2.9 ya fue integrada en S5. Las funciones F1–F5 se usan libremente durante la Final Mission sin scaffolding explícito.",
+      "teacher_talk": {
+        "s6b_orientation": "The Final Mission is simple: you inspect a real bay in this workshop. You write the Daily Inspection Checklist — in English. Then you report to your supervisor — me — in English. You have 2 sessions to prepare. Bay assignments: group 1 = Bay 1, group 2 = Bay 2, group 3 = Bay 3.",
+        "s7_coaching": "Today is preparation day. Write your checklist. Practice your report with your partner. I will visit each group. If you have a question — ask me in English: 'What is the word for ___?' or 'How do I say ___?'",
+        "s8_final": "Today is the Final Mission. 60 to 90 seconds. Use your checklist. Report to me. I will ask one question. Then — we close the guide together.",
+        "s8_closing": "Look at your Gap Card from Session 1. Now look at what you can do today. You can read a workshop text in English. You can write a safety checklist. You can report to your supervisor. This is your English for the diesel workshop.",
+        "l1_guideline": "≤5% — La Final Mission es 100% en inglés. El instructor habla solo en inglés durante S8."
+      },
+      "plan_b": "Si el bay real no está disponible para la inspección: usar fotografías de alta resolución del bay del centro + materiales reales (herramientas físicas, extinguidor, PPE) distribuidos en el aula como 'bay simulado'. El checklist y el reporte oral se producen igualmente.",
+      "evidence": null,
+      "evidence_note": "Sin evidencias formales GFPI-F-134. Las 6 evidencias formales se generaron en S2–S6a. La Final Mission evalúa TRANSFERENCIA y progresión CEFR, no criterios de diseño.",
+      "autonomous_work": {
+        "duracion_h": 3.0,
+        "actividades": [
+          "S6b autónomo: Communication Card Review — el aprendiz prepara tarjeta resumen de errores del cuestionario y planifica qué mejorar en la Final Mission",
+          "S7 autónomo: borrador del Daily Inspection Checklist para el bay asignado + outline del oral report (bullets de las 5 cosas que reportará)",
+          "S8 autónomo: Self-Assessment — comparar Gap Cards de S1 vs S8 y escribir una reflexión en inglés: 'In January I couldn't ___. Now I can ___.' (Preview A1.2)"
+        ]
+      }
+    }
+  ],
+
+  "skills_progression_map": {
+    "note": "● = skill activa como foco; ○ = skill ausente o de soporte; ●● = skill evaluada formalmente",
+    "table": [
+      {"skill": "Reading",           "S1": "○", "S2": "●●", "S3": "●",  "S4": "○",  "S5": "●",  "S6a": "●●", "S6b_8": "●"},
+      {"skill": "Listening",         "S1": "○", "S2": "○",  "S3": "○",  "S4": "●●", "S5": "●",  "S6a": "●●", "S6b_8": "●●"},
+      {"skill": "Vocabulary",        "S1": "●", "S2": "●●", "S3": "●",  "S4": "●",  "S5": "●●", "S6a": "●●", "S6b_8": "●●"},
+      {"skill": "Grammar",           "S1": "●", "S2": "●",  "S3": "●●", "S4": "●",  "S5": "●",  "S6a": "●●", "S6b_8": "●●"},
+      {"skill": "Writing",           "S1": "●", "S2": "○",  "S3": "●●", "S4": "○",  "S5": "●",  "S6a": "○",  "S6b_8": "●●"},
+      {"skill": "Speaking",          "S1": "●", "S2": "●",  "S3": "●",  "S4": "●●", "S5": "●●", "S6a": "○",  "S6b_8": "●●"},
+      {"skill": "Language Functions","S1": "○", "S2": "○",  "S3": "○",  "S4": "●",  "S5": "●●", "S6a": "●●", "S6b_8": "●●"}
+    ]
+  },
+
+  "autonomous_work_map": {
+    "total_autonomous_hours": 12.0,
+    "distribution": {
+      "S1": 1.5, "S2": 1.5, "S3": 1.5, "S4": 1.5, "S5": 1.5, "S6a": 1.5, "S6b_8": 3.0
+    },
+    "types_by_session": {
+      "S1": "Baseline + vocabulario preview (Gap Card fotográfica, 5 oraciones, Shadow Foam preview)",
+      "S2": "Vocabulary consolidation + Reading extension + Writing preview (flashcard auto-test, Shadow Foam extra tools, checklist preview)",
+      "S3": "Grammar correction + Writing self-evaluation + Listening preview (Safety Report fix, Lista verificación auto-eval, audio preview)",
+      "S4": "Listening practice + Speaking recording + Language Functions preview (audio relisten, 60-seg recording, F1–F5 preview)",
+      "S5": "Personal Communication Card + Speaking recording + Quiz preview (card F1–F5, apertura 2-min recording, Q6 preview)",
+      "S6a": "Quiz review + Final Mission preparation + Final Mission reading (errores → correcciones, Toolbelt + F1–F5 repaso, PM-3.5 reading)",
+      "S6b_8": "Communication Card review + Checklist draft + Self-assessment closure (reflection, bay outline, Gap Card S1 vs S8)"
+    }
+  },
+
+  "master_materials_list": {
+    "note": "Consolidado de todos los materiales impresos y tecnológicos de S1–S8",
+    "printed_per_student": [
+      "Gap Card (1) — S1 PM-2.2 → reutilizada en S8 para cierre",
+      "KWL tabla (1) — S1 PM-2.2",
+      "Guión de entrevista entre pares (1) — S1 PM-2.2",
+      "Flashcard set completo 20 términos (1 set) — S2 PM-2.5",
+      "Texto adaptado 'Tools Every Diesel Specialist Needs' A1.1 (1) — S2 PM-2.3",
+      "Cuestionario No 1 (1) — S2 PM-2.3",
+      "Ficha de experto Jigsaw (1 por rol — 4 roles) — S2 PM-2.3",
+      "Error Log (1) — S3 PM-2.10",
+      "Daily Inspection Checklist en blanco (2) — S3 PM-2.4 + S6b Final Mission",
+      "Work Order header en blanco (1) — S3 PM-2.4",
+      "Lista de verificación No 2 (1) — S3 PM-2.4",
+      "Safety Report formato — Bay 3 (1) — S3 PM-2.10",
+      "Cuestionario No 3 (1) — S4 PM-2.6",
+      "Script 'Bay 2 Safety Briefing' impreso (1 por par) — S4 PM-2.6 Act 3",
+      "Stock Card A — Bay Status (1) — S4 PM-2.8",
+      "Stock Card B — Sentence Starters (1) — S4 PM-2.8",
+      "Chunk Cards pronunciación — set 5 términos (1 set) — S4 PM-2.8",
+      "15 tarjetas de frases para clasificación — S5 PM-2.9",
+      "Personal Communication Card en blanco (1) — S5 PM-2.9",
+      "Cuestionario Consolidado No 6 (1) — S6a PM-4.2"
+    ],
+    "printed_per_instructor": [
+      "Escala de estimación No 4 (1 por aprendiz) — S4 PM-2.8",
+      "Escala de estimación No 5 (1 por aprendiz × 2: instructor + par) — S5 PM-2.9",
+      "Cuestionario Consolidado respuestas (1) — S6a PM-4.2",
+      "PM-3.5 rúbrica Final Mission (1 por aprendiz) — S6b–S8"
+    ],
+    "classroom_permanent": [
+      "Word Wall cards x20 (imagen + término + IPA) — instalado en S2, visible hasta S8",
+      "Communication Map A3 (5 funciones × chunk examples) — instalado en S5",
+      "Formula Box proyectado (Imperativo / There is/are / Preposiciones) — S3, visible hasta S8"
+    ],
+    "tech_required": [
+      "Audio 'Bay 2 Safety Briefing' (TTS, 0.85x, ~2 min) — Moodle + USB backup — S4 PM-2.6",
+      "Parlante Bluetooth + computador instructor — S4",
+      "Proyector para imágenes Shadow Foam — S2 PM-2.3",
+      "Proyector para imagen Bay 2 durante listening — S4 PM-2.6",
+      "Proyector para Communication Map — S5 PM-2.9",
+      "Acceso Moodle para trabajo autónomo S2–S6"
+    ],
+    "plan_b_materials": [
+      "USB con audio PM-2.6 (backup si Moodle no disponible)",
+      "Cuestionario Consolidado impreso (backup si Moodle caído en S6a)",
+      "Fotografías de alta resolución del bay real (backup si taller no disponible para Final Mission)"
+    ]
+  }
+}

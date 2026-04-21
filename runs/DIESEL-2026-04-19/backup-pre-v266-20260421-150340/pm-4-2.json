@@ -1,0 +1,427 @@
+{
+  "_meta": {
+    "schema_version": "quiz-v1.0",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-sonnet-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist",
+    "instrument_number": 6,
+    "instrument_name": "Cuestionario Consolidado No 6"
+  },
+
+  "quiz_overview": {
+    "title": "Cuestionario Consolidado No 6",
+    "subtitle": "The Diesel Workshop — Final Knowledge Assessment",
+    "program": "Mantenimiento de Motores Diesel · Técnico",
+    "guide": "Guía 1 — The Workshop Specialist",
+    "cefr": "A1.1",
+    "session": "6a",
+    "pm_source": "PM-4.2",
+    "total_items": 25,
+    "total_points": 25,
+    "points_per_item": 1,
+    "time_limit_min": 90,
+    "passing_score": 15,
+    "passing_pct": 60,
+    "format": "Selección múltiple (a/b/c) + True/False — 100% en inglés",
+    "conditions": "Sin diccionario. Sin notas. Sin compañero. Audio de Listening reproducido 2 veces durante el cuestionario.",
+    "design_constraint": "Ningún ítem duplica contenido de los instrumentos No 1–5. Todos los ítems aplican el conocimiento en contextos NUEVOS del taller."
+  },
+
+  "reading_text": {
+    "title": "The Morning Protocol at The Diesel Workshop",
+    "narrator": "Carlos Mendoza — Lead Technician",
+    "word_count": 88,
+    "cefr_level": "A1.1",
+    "toolbelt_terms_used": ["workshop", "service bay", "toolbox", "floor", "PPE", "gloves", "safety goggles", "fire extinguisher", "workbench", "specialist"],
+    "text": "Every morning, Carlos Mendoza inspects The Diesel Workshop. First, he checks the three service bays. He looks at the floor — no spills, no tools on the floor. Then he checks the toolboxes. All tools must be in the right place. Next, he inspects the PPE area. Gloves and safety goggles must be available. Finally, he checks the fire extinguisher near the bay door. When everything is ready, he tells the team: 'Bay 1 is ready. Bay 2 is ready. Bay 3 is ready.' The workshop is safe. The day can start.",
+    "grammar_structures_present": ["imperativo (Be, can start)", "There is/are (implied — no spills, no tools)", "preposiciones: near, on, in"]
+  },
+
+  "listening_script": {
+    "title": "Bay 1 Readiness Check",
+    "setting": "The Diesel Workshop — Bay 1 — Monday 7:15 AM",
+    "speakers": [
+      {"name": "Santiago Ríos", "role": "Apprentice"},
+      {"name": "Carlos Mendoza", "role": "Lead Technician"}
+    ],
+    "tts_settings": {"speed": 0.85, "voices": 2},
+    "word_count": 92,
+    "toolbelt_terms_used": ["floor jack", "toolbox", "gloves", "goggles", "workbench", "spill", "PPE"],
+    "script": [
+      {"speaker": "Santiago", "line": "Carlos, Bay 1 is ready. I checked the floor jack — no leaks."},
+      {"speaker": "Carlos",   "line": "Good work, Santiago. What about the toolbox?"},
+      {"speaker": "Santiago", "line": "The toolbox is organized. All tools are in the right place."},
+      {"speaker": "Carlos",   "line": "And the PPE — gloves and goggles?"},
+      {"speaker": "Santiago", "line": "Gloves are in the toolbox. Goggles are on the workbench."},
+      {"speaker": "Carlos",   "line": "Is there any spill on the floor?"},
+      {"speaker": "Santiago", "line": "No. The floor is clean. No spills."},
+      {"speaker": "Carlos",   "line": "Perfect. Bay 1 is ready to start. Good job, Santiago."}
+    ],
+    "design_note": "Escenario nuevo (Bay 1, Santiago reporta a Carlos). Diferente al audio de Cuestionario No 3 (Bay 2, Valentina y Carlos). Mismo universo, nuevos personajes activos."
+  },
+
+  "sections": [
+
+    {
+      "section_id": "S1",
+      "skill": "Reading",
+      "title": "Section 1 — Reading Comprehension",
+      "instructions": "Read the text carefully. Choose the best answer (a, b, or c). Write only the letter.",
+      "text_ref": "The Morning Protocol at The Diesel Workshop",
+      "total_points": 5,
+      "items": [
+        {
+          "item": 1,
+          "question": "What does Carlos Mendoza inspect every morning?",
+          "options": {"a": "Only the toolboxes.", "b": "The three service bays and the whole workshop.", "c": "The PPE area only."},
+          "answer": "b",
+          "bloom": "L1 Remember",
+          "toolbelt_focus": "workshop, service bay"
+        },
+        {
+          "item": 2,
+          "question": "Where must all tools be at the start of the day?",
+          "options": {"a": "On the workbench.", "b": "On the floor near the bay.", "c": "In the right place in the toolbox."},
+          "answer": "c",
+          "bloom": "L1 Remember",
+          "toolbelt_focus": "toolbox"
+        },
+        {
+          "item": 3,
+          "question": "Which PPE items does Carlos check?",
+          "options": {"a": "Hard hat and gloves.", "b": "Gloves and safety goggles.", "c": "Safety goggles and fire extinguisher."},
+          "answer": "b",
+          "bloom": "L1 Remember",
+          "toolbelt_focus": "PPE, gloves, safety goggles"
+        },
+        {
+          "item": 4,
+          "question": "Where is the fire extinguisher in the text?",
+          "options": {"a": "In the toolbox.", "b": "On the workbench.", "c": "Near the bay door."},
+          "answer": "c",
+          "bloom": "L2 Understand",
+          "toolbelt_focus": "fire extinguisher"
+        },
+        {
+          "item": 5,
+          "type": "true_false",
+          "question": "True or False: Carlos Mendoza inspects the workshop every afternoon.",
+          "answer": "FALSE",
+          "justification": "The text says 'every morning'.",
+          "bloom": "L2 Understand",
+          "toolbelt_focus": "workshop"
+        }
+      ]
+    },
+
+    {
+      "section_id": "S2",
+      "skill": "Vocabulary",
+      "title": "Section 2 — Key Vocabulary",
+      "instructions": "Choose the correct word or answer for each question. Write only the letter.",
+      "total_points": 5,
+      "design_note": "Items cover terms NOT primarily tested in Cuestionario No 1: spill, work order, preventive maintenance, specialist, hazard.",
+      "items": [
+        {
+          "item": 6,
+          "question": "Santiago found liquid on the floor near Bay 2. He said: 'There is a ___ near the bay door.'",
+          "options": {"a": "checklist", "b": "spill", "c": "workbench"},
+          "answer": "b",
+          "bloom": "L2 Apply",
+          "toolbelt_focus": "spill",
+          "category": "Safety"
+        },
+        {
+          "item": 7,
+          "question": "Before a repair, Valentina fills in a document with the vehicle, the problem, and the required service. This document is called a ___.",
+          "options": {"a": "Daily Inspection Checklist", "b": "Work Order", "c": "Safety Briefing"},
+          "answer": "b",
+          "bloom": "L1 Remember",
+          "toolbelt_focus": "work order",
+          "category": "Documents & Roles"
+        },
+        {
+          "item": 8,
+          "question": "Which of these is a TYPE of maintenance?",
+          "options": {"a": "safety goggles", "b": "preventive maintenance", "c": "toolbox"},
+          "answer": "b",
+          "bloom": "L2 Understand",
+          "toolbelt_focus": "preventive maintenance",
+          "category": "Maintenance"
+        },
+        {
+          "item": 9,
+          "question": "Carlos Mendoza is a diesel ___. He knows how to repair and maintain diesel engines.",
+          "options": {"a": "hazard", "b": "workbench", "c": "specialist"},
+          "answer": "c",
+          "bloom": "L1 Remember",
+          "toolbelt_focus": "specialist",
+          "category": "Documents & Roles"
+        },
+        {
+          "item": 10,
+          "question": "Which word does NOT belong in the 'Tools & Equipment' category?",
+          "options": {"a": "wrench", "b": "socket", "c": "hazard"},
+          "answer": "c",
+          "bloom": "L3 Analyze",
+          "toolbelt_focus": "hazard (Safety category)",
+          "justification": "wrench and socket are Tools & Equipment. hazard belongs to Safety.",
+          "category": "Odd-one-out"
+        }
+      ]
+    },
+
+    {
+      "section_id": "S3",
+      "skill": "Grammar",
+      "title": "Section 3 — Grammar Structures",
+      "instructions": "Choose the correct option (a, b, or c) to complete each sentence or identify the error. Write only the letter.",
+      "total_points": 5,
+      "grammar_distribution": {
+        "imperativo_afirmativo": 1,
+        "imperativo_negativo": 1,
+        "there_is_are_afirmativo": 1,
+        "there_is_are_plural": 1,
+        "preposicion_lugar": 1
+      },
+      "items": [
+        {
+          "item": 11,
+          "grammar_target": "Imperativo afirmativo",
+          "question": "Which sentence is a correct imperative instruction?",
+          "options": {
+            "a": "Checks the floor jack before starting.",
+            "b": "Check the floor jack before starting.",
+            "c": "You check the floor jack before starting."
+          },
+          "answer": "b",
+          "explanation": "Imperative = base form verb, no subject. Option a adds -s (wrong). Option c has subject 'you' (not imperative).",
+          "bloom": "L2 Understand"
+        },
+        {
+          "item": 12,
+          "grammar_target": "Imperativo negativo",
+          "question": "Complete the safety instruction: '___ tools on the floor.'",
+          "options": {"a": "Don't leave", "b": "Not leave", "c": "Don't leaving"},
+          "answer": "a",
+          "explanation": "Don't + base form = correct negative imperative. 'Not leave' is incomplete. 'Don't leaving' is grammatically incorrect.",
+          "bloom": "L2 Apply"
+        },
+        {
+          "item": 13,
+          "grammar_target": "There is — singular",
+          "question": "Complete the observation: '___ a spill near the bay door.'",
+          "options": {"a": "There are", "b": "There is", "c": "Is there"},
+          "answer": "b",
+          "explanation": "'A spill' is singular → There IS. 'There are' = plural. 'Is there' = question form.",
+          "bloom": "L2 Apply"
+        },
+        {
+          "item": 14,
+          "grammar_target": "There are — plural",
+          "question": "Which sentence is correct?",
+          "options": {
+            "a": "There is three wrenches on the workbench.",
+            "b": "There are three wrenches on the workbench.",
+            "c": "There have three wrenches on the workbench."
+          },
+          "answer": "b",
+          "explanation": "'Three wrenches' is plural → There ARE. 'There is' = singular only. 'There have' does not exist in English.",
+          "bloom": "L2 Understand"
+        },
+        {
+          "item": 15,
+          "grammar_target": "Preposición de lugar",
+          "question": "The floor jack is ___ Bay 1. (It is beside Bay 1, not inside it.)",
+          "options": {"a": "in", "b": "next to", "c": "under"},
+          "answer": "b",
+          "explanation": "'Next to' = beside, adjacent. 'In' = inside. 'Under' = below. The floor jack is next to (beside) the bay, not inside it.",
+          "bloom": "L2 Apply"
+        }
+      ]
+    },
+
+    {
+      "section_id": "S4",
+      "skill": "Listening",
+      "title": "Section 4 — Listening Comprehension",
+      "instructions": "You will listen to a conversation at The Diesel Workshop. The audio plays TWO times. First: listen for the general situation. Second: listen for specific details. Then answer the 5 questions. No script. No extra audio.",
+      "audio_ref": "Bay 1 Readiness Check — Santiago Ríos + Carlos Mendoza",
+      "total_points": 5,
+      "items": [
+        {
+          "item": 16,
+          "question": "Who is reporting to Carlos Mendoza?",
+          "options": {"a": "Valentina Cruz.", "b": "Santiago Ríos.", "c": "A visitor."},
+          "answer": "b",
+          "bloom": "L1 Remember",
+          "toolbelt_focus": "comprehension of speaker identity"
+        },
+        {
+          "item": 17,
+          "question": "What does Santiago check first, according to his report?",
+          "options": {"a": "The PPE.", "b": "The floor jack.", "c": "The toolbox."},
+          "answer": "b",
+          "bloom": "L1 Remember",
+          "audio_ref_line": "Carlos, Bay 1 is ready. I checked the floor jack — no leaks.",
+          "toolbelt_focus": "floor jack"
+        },
+        {
+          "item": 18,
+          "question": "Where are the gloves?",
+          "options": {"a": "On the workbench.", "b": "In the toolbox.", "c": "Near the bay door."},
+          "answer": "b",
+          "bloom": "L1 Remember",
+          "audio_ref_line": "Gloves are in the toolbox.",
+          "toolbelt_focus": "gloves, toolbox"
+        },
+        {
+          "item": 19,
+          "question": "Where are the goggles?",
+          "options": {"a": "In the toolbox.", "b": "Next to the floor jack.", "c": "On the workbench."},
+          "answer": "c",
+          "bloom": "L1 Remember",
+          "audio_ref_line": "Goggles are on the workbench.",
+          "toolbelt_focus": "safety goggles, workbench"
+        },
+        {
+          "item": 20,
+          "question": "Is there a spill in Bay 1?",
+          "options": {"a": "Yes, near the door.", "b": "No, the floor is clean.", "c": "Yes, under the vehicle."},
+          "answer": "b",
+          "bloom": "L2 Understand",
+          "audio_ref_line": "No. The floor is clean. No spills.",
+          "toolbelt_focus": "spill, floor"
+        }
+      ]
+    },
+
+    {
+      "section_id": "S5",
+      "skill": "Language Functions",
+      "title": "Section 5 — Communicative Functions",
+      "instructions": "Read each situation. Choose the correct communicative function (a, b, or c).",
+      "functions_reference": {
+        "F1": "Giving instructions (imperatives)",
+        "F2": "Requesting tools or help",
+        "F3": "Describing conditions (There is/are + prepositions)",
+        "F4": "Reporting to supervisor",
+        "F5": "Confirming understanding"
+      },
+      "total_points": 5,
+      "items": [
+        {
+          "item": 21,
+          "scenario": "Carlos says to Santiago: 'Check the floor jack before starting. Don't leave tools on the floor.'",
+          "question": "What communicative function is Carlos using?",
+          "options": {"a": "F2 — Requesting tools", "b": "F1 — Giving instructions", "c": "F4 — Reporting to supervisor"},
+          "answer": "b",
+          "explanation": "Imperative verbs (Check, Don't leave) directed at a colleague = F1 — Giving instructions.",
+          "bloom": "L2 Understand",
+          "function": "F1"
+        },
+        {
+          "item": 22,
+          "scenario": "Santiago says to his colleague: 'Can I have the torque wrench, please? I need it for Bay 2.'",
+          "question": "What communicative function is Santiago using?",
+          "options": {"a": "F1 — Giving instructions", "b": "F3 — Describing conditions", "c": "F2 — Requesting tools"},
+          "answer": "c",
+          "explanation": "'Can I have the ___?' and 'I need the ___' are F2 formulas for requesting tools or help.",
+          "bloom": "L2 Understand",
+          "function": "F2"
+        },
+        {
+          "item": 23,
+          "scenario": "Valentina tells Carlos: 'There is a spill near the bay door. The fire extinguisher is next to the workbench.'",
+          "question": "What communicative function is Valentina using?",
+          "options": {"a": "F3 — Describing conditions", "b": "F4 — Reporting to supervisor", "c": "F5 — Confirming understanding"},
+          "answer": "a",
+          "explanation": "'There is a spill near...' and 'The ___ is next to...' are F3 structures for describing bay conditions.",
+          "bloom": "L2 Understand",
+          "function": "F3"
+        },
+        {
+          "item": 24,
+          "scenario": "Santiago tells Carlos: 'Bay 2 is ready. The floor jack is OK — no leaks. All tools are in the right place.'",
+          "question": "What communicative function is Santiago using?",
+          "options": {"a": "F2 — Requesting tools", "b": "F5 — Confirming understanding", "c": "F4 — Reporting to supervisor"},
+          "answer": "c",
+          "explanation": "Reporting bay status + technical conditions to the lead technician = F4 — Reporting to supervisor.",
+          "bloom": "L2 Understand",
+          "function": "F4"
+        },
+        {
+          "item": 25,
+          "scenario": "Carlos gives Santiago an instruction. Santiago responds: 'Understood. I'll do it now.'",
+          "question": "What communicative function is Santiago using?",
+          "options": {"a": "F4 — Reporting to supervisor", "b": "F5 — Confirming understanding", "c": "F1 — Giving instructions"},
+          "answer": "b",
+          "explanation": "'Understood.' and 'I'll do it now.' are F5 formulas for confirming comprehension of an instruction.",
+          "bloom": "L1 Remember",
+          "function": "F5"
+        }
+      ]
+    }
+  ],
+
+  "answer_key": {
+    "answers": {
+      "1": "b", "2": "c", "3": "b", "4": "c", "5": "FALSE",
+      "6": "b", "7": "b", "8": "b", "9": "c", "10": "c",
+      "11": "b", "12": "a", "13": "b", "14": "b", "15": "b",
+      "16": "b", "17": "b", "18": "b", "19": "c", "20": "b",
+      "21": "b", "22": "c", "23": "a", "24": "c", "25": "b"
+    },
+    "by_section": {
+      "Reading (1–5)":           {"answers": "b, c, b, c, FALSE", "points": "___/5"},
+      "Vocabulary (6–10)":       {"answers": "b, b, b, c, c",     "points": "___/5"},
+      "Grammar (11–15)":         {"answers": "b, a, b, b, b",     "points": "___/5"},
+      "Listening (16–20)":       {"answers": "b, b, b, c, b",     "points": "___/5"},
+      "Language Functions (21–25)":{"answers": "b, c, a, c, b",   "points": "___/5"}
+    },
+    "total_correct": "___/25",
+    "result": "PASS (≥15/25) / NEEDS IMPROVEMENT (<15/25)"
+  },
+
+  "bloom_distribution": {
+    "L1_Remember": [1, 2, 3, 7, 9, 16, 17, 18, 19, 25],
+    "L2_Understand": [4, 5, 8, 11, 12, 13, 14, 15, 20, 21, 22, 23, 24],
+    "L3_Analyze": [10],
+    "note": "25 items: 10 × L1 + 14 × L2 + 1 × L3. Consistent with A1.1 knowledge assessment."
+  },
+
+  "distractors_rationale": {
+    "note": "All distractors are plausible within the workshop universe. None are absurd. Distractors are drawn from Toolbelt terms in wrong categories or grammatically adjacent structures.",
+    "examples": [
+      "Item 3: 'hard hat' is a real PPE item but not in the text — plausible distractor.",
+      "Item 10: 'wrench' and 'socket' are genuine Tools & Equipment — students must know hazard belongs to Safety.",
+      "Item 13: 'Is there' is grammatically real (question form) but wrong for a statement context.",
+      "Item 22: F1 is a plausible distractor because imperatives ARE in the sentence — but the function is requesting, not giving instructions."
+    ]
+  },
+
+  "anti_duplication_check": {
+    "cuestionario_no1_items_used": ["torque wrench", "floor jack", "ratchet", "specialist (text)", "workbench (text)"],
+    "pm42_avoids": "torque wrench (primary), ratchet, floor jack (only in listening/vocabulary as secondary), same True/False format for same fact",
+    "new_contexts": [
+      "Reading: Carlos's morning protocol (new narrator, new scenario vs. Shadow Foam tools article)",
+      "Vocabulary: spill, work order, preventive maintenance, specialist, hazard (different from Q1 wrench/floor jack/ratchet focus)",
+      "Listening: Bay 1 + Santiago reporting (new scenario vs. Bay 2 + Valentina/Carlos briefing in Q3)",
+      "Language Functions: situational identification (not in any prior instrument)"
+    ]
+  },
+
+  "scoring_table": {
+    "25":    {"level": "Excelente",      "note": "Dominio completo Guía 1 A1.1 — listo para A1.2"},
+    "22-24": {"level": "Muy bueno",     "note": "Competencia sólida — 1-3 errores puntuales"},
+    "18-21": {"level": "Bueno",         "note": "Competencia satisfactoria — algunos gaps por consolidar"},
+    "15-17": {"level": "Satisfactorio", "note": "Mínimo aprobatorio — reforzar skill más débil en Final Mission"},
+    "12-14": {"level": "En proceso",    "note": "No aprobado — plan de mejora + repaso antes de A1.2"},
+    "0-11":  {"level": "No logrado",    "note": "Requiere refuerzo intensivo — revisar instrumentos 1-5"}
+  },
+
+  "gfpi_tag": "4-EVALUACION-CUESTIONARIO-CONSOLIDADO"
+}

@@ -1,0 +1,799 @@
+{
+  "_meta": {
+    "schema_version": "g5-validation-v2.0",
+    "run_id": "DIESEL-2026-04-19",
+    "validation_date": "2026-04-19",
+    "validator": "g5_validate.py",
+    "checks_total": 13,
+    "checks_passed": 13,
+    "checks_failed": 0
+  },
+  "overall_status": "PASS",
+  "checks": [
+    {
+      "check_id": "CHECK-1",
+      "name": "Session Timing",
+      "status": "PASS",
+      "details": {
+        "S1": {
+          "direct": 6.0,
+          "expected_direct": 6.0,
+          "auto": 1.5,
+          "expected_auto": 1.5,
+          "status": "PASS"
+        },
+        "S2": {
+          "direct": 6.0,
+          "expected_direct": 6.0,
+          "auto": 1.5,
+          "expected_auto": 1.5,
+          "status": "PASS"
+        },
+        "S3": {
+          "direct": 6.0,
+          "expected_direct": 6.0,
+          "auto": 1.5,
+          "expected_auto": 1.5,
+          "status": "PASS"
+        },
+        "S4": {
+          "direct": 6.0,
+          "expected_direct": 6.0,
+          "auto": 1.5,
+          "expected_auto": 1.5,
+          "status": "PASS"
+        },
+        "S5": {
+          "direct": 6.0,
+          "expected_direct": 6.0,
+          "auto": 1.5,
+          "expected_auto": 1.5,
+          "status": "PASS"
+        },
+        "S6a": {
+          "direct": 3.0,
+          "expected_direct": 3.0,
+          "auto": 1.5,
+          "expected_auto": 1.5,
+          "status": "PASS"
+        },
+        "S6b+7+8": {
+          "direct": 15.0,
+          "expected_direct": 15.0,
+          "auto": 3.0,
+          "expected_auto": 3.0,
+          "status": "PASS"
+        },
+        "TOTAL": {
+          "direct": 48.0,
+          "expected_direct": 48.0,
+          "auto": 12.0,
+          "expected_auto": 12.0,
+          "status": "PASS"
+        }
+      },
+      "note": "Total: 48.0h directa + 12.0h autónoma = 60.0h"
+    },
+    {
+      "check_id": "CHECK-2",
+      "name": "Evidence Alignment",
+      "status": "PASS",
+      "details": {
+        "E1": {
+          "session": 2,
+          "expected_session": 2,
+          "skill": "Reading",
+          "instrument": "Cuestionario No 1",
+          "points": 5,
+          "expected_points": 5,
+          "status": "PASS"
+        },
+        "E2": {
+          "session": 3,
+          "expected_session": 3,
+          "skill": "Writing",
+          "instrument": "Lista de verificación No 2",
+          "points": 5,
+          "expected_points": 5,
+          "status": "PASS"
+        },
+        "E3": {
+          "session": 4,
+          "expected_session": 4,
+          "skill": "Listening",
+          "instrument": "Cuestionario No 3",
+          "points": 5,
+          "expected_points": 5,
+          "status": "PASS"
+        },
+        "E4": {
+          "session": 4,
+          "expected_session": 4,
+          "skill": "Speaking",
+          "instrument": "Escala de estimación No 4",
+          "points": 5,
+          "expected_points": 5,
+          "status": "PASS"
+        },
+        "E5": {
+          "session": 5,
+          "expected_session": 5,
+          "skill": "Language Functions",
+          "instrument": "Escala de estimación No 5",
+          "points": 5,
+          "expected_points": 5,
+          "status": "PASS"
+        },
+        "E6": {
+          "session": "6a",
+          "expected_session": "6a",
+          "skill": "Synthesis — 5 skills",
+          "instrument": "Cuestionario Consolidado No 6",
+          "points": 25,
+          "expected_points": 25,
+          "status": "PASS"
+        },
+        "pm-4-1_instruments": {
+          "count": 5,
+          "expected": 5,
+          "ids": [
+            "INS-01",
+            "INS-02",
+            "INS-03",
+            "INS-04",
+            "INS-05"
+          ],
+          "status": "PASS"
+        },
+        "pm-4-2_items": {
+          "total_items": 25,
+          "expected_total": 25,
+          "by_skill": {
+            "unknown": 25
+          },
+          "status": "PASS"
+        },
+        "total_formal_points": {
+          "value": 50,
+          "expected": 50,
+          "status": "PASS"
+        }
+      },
+      "note": "Total formal pts: 50/50 · Quiz items: 25/25"
+    },
+    {
+      "check_id": "CHECK-3",
+      "name": "Toolbelt Coverage (20 terms · 5 categories)",
+      "status": "PASS",
+      "details": {
+        "terms_found": 20,
+        "expected": 20,
+        "categories": {
+          "Environment": 4,
+          "Tools & Equipment": 5,
+          "Safety": 6,
+          "Maintenance": 2,
+          "Documents & Roles": 3
+        },
+        "categories_count": 5,
+        "has_specialist": true,
+        "has_calibration_MUST_BE_FALSE": false,
+        "status": "PASS"
+      }
+    },
+    {
+      "check_id": "CHECK-4",
+      "name": "Language Functions F1–F5",
+      "status": "PASS",
+      "details": {
+        "in_pm-2-9": {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F4": true,
+          "F5": true
+        },
+        "all_5_present": true,
+        "in_INS-05_criteria": {},
+        "in_Final_Mission": {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F4": true,
+          "F5": true
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "check_id": "CHECK-5",
+      "name": "Autonomous Hours",
+      "status": "PASS",
+      "details": {
+        "by_session": {
+          "S1": 1.5,
+          "S2": 1.5,
+          "S3": 1.5,
+          "S4": 1.5,
+          "S5": 1.5,
+          "S6a": 1.5,
+          "S6b+7+8": 3.0
+        },
+        "total_from_pm31": 12.0,
+        "expected_total": 12.0,
+        "by_pm_from_pm2x": {
+          "pm-2-0.json": {
+            "session": "?",
+            "auto_h": 0
+          },
+          "PM-2.1": {
+            "session": 1,
+            "auto_h": 0.75
+          },
+          "PM-2.10": {
+            "session": 3,
+            "auto_h": 0.75
+          },
+          "pm-2-11.json": {
+            "session": "?",
+            "auto_h": 0
+          },
+          "PM-2.2": {
+            "session": 1,
+            "auto_h": 0.75
+          },
+          "PM-2.3": {
+            "session": 2,
+            "auto_h": 0.75
+          },
+          "PM-2.4": {
+            "session": 3,
+            "auto_h": 0.75
+          },
+          "PM-2.5": {
+            "session": 2,
+            "auto_h": 0.75
+          },
+          "PM-2.6": {
+            "session": 4,
+            "auto_h": 0.75
+          },
+          "PM-2.8": {
+            "session": 4,
+            "auto_h": 0.75
+          },
+          "PM-2.9": {
+            "session": 5,
+            "auto_h": 1.5
+          }
+        },
+        "total_from_pm2x": 7.5,
+        "status": "PASS"
+      },
+      "note": "Total autónomo: 12.0h / 12h esperadas"
+    },
+    {
+      "check_id": "CHECK-6",
+      "name": "File Completeness",
+      "status": "PASS",
+      "details": {
+        "pm-1-1.json": {
+          "exists": true,
+          "size_kb": 5.9,
+          "status": "PASS"
+        },
+        "pm-1-2.json": {
+          "exists": true,
+          "size_kb": 20.2,
+          "status": "PASS"
+        },
+        "pm-2-0.json": {
+          "exists": true,
+          "size_kb": 18.7,
+          "status": "PASS"
+        },
+        "pm-2-1.json": {
+          "exists": true,
+          "size_kb": 6.7,
+          "status": "PASS"
+        },
+        "pm-2-2.json": {
+          "exists": true,
+          "size_kb": 7.3,
+          "status": "PASS"
+        },
+        "pm-2-3.json": {
+          "exists": true,
+          "size_kb": 7.1,
+          "status": "PASS"
+        },
+        "pm-2-4.json": {
+          "exists": true,
+          "size_kb": 7.2,
+          "status": "PASS"
+        },
+        "pm-2-5.json": {
+          "exists": true,
+          "size_kb": 6.8,
+          "status": "PASS"
+        },
+        "pm-2-6.json": {
+          "exists": true,
+          "size_kb": 8.8,
+          "status": "PASS"
+        },
+        "pm-2-8.json": {
+          "exists": true,
+          "size_kb": 9.4,
+          "status": "PASS"
+        },
+        "pm-2-9.json": {
+          "exists": true,
+          "size_kb": 11.4,
+          "status": "PASS"
+        },
+        "pm-2-10.json": {
+          "exists": true,
+          "size_kb": 10.5,
+          "status": "PASS"
+        },
+        "pm-2-11.json": {
+          "exists": true,
+          "size_kb": 34.7,
+          "status": "PASS"
+        },
+        "pm-3-1.json": {
+          "exists": true,
+          "size_kb": 39.7,
+          "status": "PASS"
+        },
+        "pm-3-3-spec.json": {
+          "exists": true,
+          "size_kb": 48.2,
+          "status": "PASS"
+        },
+        "pm-3-5.json": {
+          "exists": true,
+          "size_kb": 21.0,
+          "status": "PASS"
+        },
+        "pm-4-1.json": {
+          "exists": true,
+          "size_kb": 27.6,
+          "status": "PASS"
+        },
+        "pm-4-2.json": {
+          "exists": true,
+          "size_kb": 19.8,
+          "status": "PASS"
+        },
+        "pm-3-2-s1.md": {
+          "exists": true,
+          "size_kb": 17.2,
+          "status": "PASS"
+        },
+        "pm-3-2-s2.md": {
+          "exists": true,
+          "size_kb": 18.8,
+          "status": "PASS"
+        },
+        "pm-3-2-s3.md": {
+          "exists": true,
+          "size_kb": 19.4,
+          "status": "PASS"
+        },
+        "pm-3-2-s4.md": {
+          "exists": true,
+          "size_kb": 18.6,
+          "status": "PASS"
+        },
+        "pm-3-2-s5.md": {
+          "exists": true,
+          "size_kb": 17.6,
+          "status": "PASS"
+        },
+        "pm-3-2-s6a.md": {
+          "exists": true,
+          "size_kb": 11.5,
+          "status": "PASS"
+        },
+        "pm-3-2-s6b-s8.md": {
+          "exists": true,
+          "size_kb": 18.3,
+          "status": "PASS"
+        },
+        "pm-3-5-mission.md": {
+          "exists": true,
+          "size_kb": 11.4,
+          "status": "PASS"
+        },
+        "pm-3-6-learning-guide.md": {
+          "exists": true,
+          "size_kb": 68.7,
+          "status": "PASS"
+        },
+        "pm-4-1-instruments.md": {
+          "exists": true,
+          "size_kb": 13.2,
+          "status": "PASS"
+        },
+        "pm-4-2-quiz.md": {
+          "exists": true,
+          "size_kb": 7.6,
+          "status": "PASS"
+        },
+        "pm-3-1-playbook-outline.docx": {
+          "exists": true,
+          "size_kb": 55.6,
+          "status": "PASS"
+        },
+        "pm-3-2-session-build-outs.docx": {
+          "exists": true,
+          "size_kb": 101.7,
+          "status": "PASS"
+        },
+        "pm-3-6-learning-guide.docx": {
+          "exists": true,
+          "size_kb": 70.7,
+          "status": "PASS"
+        },
+        "CHANGELOG.md": {
+          "exists": true,
+          "size_kb": 22.4,
+          "status": "PASS"
+        },
+        "missing_must": []
+      },
+      "note": "33/33 files present"
+    },
+    {
+      "check_id": "CHECK-7",
+      "name": "Activity Card Schema v2.0 Compliance",
+      "status": "PASS",
+      "details": {
+        "pm-2-1": {
+          "schema_version": "activity-card-v2.0",
+          "has_pm0_ref": true,
+          "has_activity_card": true,
+          "activities_count": 3,
+          "max_3_activities": true,
+          "status": "PASS"
+        },
+        "pm-2-2": {
+          "schema_version": "activity-card-v2.0",
+          "has_pm0_ref": true,
+          "has_activity_card": true,
+          "activities_count": 3,
+          "max_3_activities": true,
+          "status": "PASS"
+        },
+        "pm-2-3": {
+          "schema_version": "activity-card-v2.0",
+          "has_pm0_ref": true,
+          "has_activity_card": true,
+          "activities_count": 3,
+          "max_3_activities": true,
+          "status": "PASS"
+        },
+        "pm-2-4": {
+          "schema_version": "activity-card-v2.0",
+          "has_pm0_ref": true,
+          "has_activity_card": true,
+          "activities_count": 3,
+          "max_3_activities": true,
+          "status": "PASS"
+        },
+        "pm-2-5": {
+          "schema_version": "activity-card-v2.0",
+          "has_pm0_ref": true,
+          "has_activity_card": true,
+          "activities_count": 3,
+          "max_3_activities": true,
+          "status": "PASS"
+        },
+        "pm-2-6": {
+          "schema_version": "activity-card-v2.0",
+          "has_pm0_ref": true,
+          "has_activity_card": true,
+          "activities_count": 3,
+          "max_3_activities": true,
+          "status": "PASS"
+        },
+        "pm-2-8": {
+          "schema_version": "activity-card-v2.0",
+          "has_pm0_ref": true,
+          "has_activity_card": true,
+          "activities_count": 3,
+          "max_3_activities": true,
+          "status": "PASS"
+        },
+        "pm-2-9": {
+          "schema_version": "activity-card-v2.0",
+          "has_pm0_ref": true,
+          "has_activity_card": true,
+          "activities_count": 3,
+          "max_3_activities": true,
+          "status": "PASS"
+        },
+        "pm-2-10": {
+          "schema_version": "activity-card-v2.0",
+          "has_pm0_ref": true,
+          "has_activity_card": true,
+          "activities_count": 3,
+          "max_3_activities": true,
+          "status": "PASS"
+        }
+      }
+    },
+    {
+      "check_id": "CHECK-8",
+      "name": "PM-0 Constraints Injection",
+      "status": "PASS",
+      "details": {
+        "pm-2-1": {
+          "has_pm0_constraints": true,
+          "has_grammar": true,
+          "has_l1": true,
+          "has_feedback": true,
+          "status": "PASS"
+        },
+        "pm-2-2": {
+          "has_pm0_constraints": true,
+          "has_grammar": true,
+          "has_l1": true,
+          "has_feedback": true,
+          "status": "PASS"
+        },
+        "pm-2-3": {
+          "has_pm0_constraints": true,
+          "has_grammar": true,
+          "has_l1": true,
+          "has_feedback": true,
+          "status": "PASS"
+        },
+        "pm-2-4": {
+          "has_pm0_constraints": true,
+          "has_grammar": true,
+          "has_l1": true,
+          "has_feedback": true,
+          "status": "PASS"
+        },
+        "pm-2-5": {
+          "has_pm0_constraints": true,
+          "has_grammar": true,
+          "has_l1": true,
+          "has_feedback": true,
+          "status": "PASS"
+        },
+        "pm-2-6": {
+          "has_pm0_constraints": true,
+          "has_grammar": true,
+          "has_l1": true,
+          "has_feedback": true,
+          "status": "PASS"
+        },
+        "pm-2-8": {
+          "has_pm0_constraints": true,
+          "has_grammar": true,
+          "has_l1": true,
+          "has_feedback": true,
+          "status": "PASS"
+        },
+        "pm-2-9": {
+          "has_pm0_constraints": true,
+          "has_grammar": true,
+          "has_l1": true,
+          "has_feedback": true,
+          "status": "PASS"
+        },
+        "pm-2-10": {
+          "has_pm0_constraints": true,
+          "has_grammar": true,
+          "has_l1": true,
+          "has_feedback": true,
+          "status": "PASS"
+        }
+      }
+    },
+    {
+      "check_id": "CHECK-9",
+      "name": "Source Verification (no banned sources)",
+      "status": "PASS",
+      "details": {
+        "banned_found": {},
+        "required_sources_check": {
+          "Shadow Foam": "PRESENT",
+          "SafetyCulture": "PRESENT",
+          "Fullbay": "PRESENT"
+        }
+      },
+      "note": "Banned: Motor Age / Popular Mechanics / Diesel Tech Forum · Required: Shadow Foam / SafetyCulture / Fullbay"
+    },
+    {
+      "check_id": "CHECK-10",
+      "name": "Quiz Totals (25 pts · Writing excluded)",
+      "status": "PASS",
+      "details": {
+        "contributions_by_skill": {
+          "Reading": 5,
+          "Vocabulary": 5,
+          "Grammar": 5,
+          "Listening": 5,
+          "Language Functions": 5
+        },
+        "total_pts": 25,
+        "expected_total": 25,
+        "writing_in_quiz_MUST_BE_FALSE": false,
+        "pm-2-4_contributes_MUST_BE_FALSE": false,
+        "status": "PASS"
+      }
+    },
+    {
+      "check_id": "CHECK-11",
+      "name": "Character & Vocabulary Consistency",
+      "status": "PASS",
+      "details": {
+        "pm-2-11.json": "PASS — Safety Officer",
+        "pm-2-1.json": "PASS — Safety Officer",
+        "pm-2-0.json": "PASS — Safety Officer",
+        "pm-1-2.json": "PASS — Safety Officer",
+        "pm-4-1.json": "PASS — Safety Officer",
+        "pm-3-3-spec.json": "PASS — Safety Officer",
+        "pm-2-6.json": "PASS — Safety Officer",
+        "pm-3-1.json": "PASS — Safety Officer",
+        "pm-1-1.json": "PASS — Safety Officer",
+        "pm-4-2.json": "PASS — Safety Officer",
+        "pm-2-1_success_vocabulary": {
+          "has_deadline_MUST_BE_FALSE": false,
+          "has_crash_MUST_BE_FALSE": false,
+          "status": "PASS"
+        }
+      },
+      "note": "Valentina Cruz = Safety Officer · S1 vocab: no 'deadline' / no 'crash'"
+    },
+    {
+      "check_id": "CHECK-12",
+      "name": "Grammar Activation Map (no cross-session contamination)",
+      "status": "PASS",
+      "details": {
+        "pm-2-1": {
+          "session": 1,
+          "expected_groups": [
+            "Gr1"
+          ],
+          "found_in_pm0": [
+            "Gr1"
+          ],
+          "contamination": [],
+          "status": "PASS"
+        },
+        "pm-2-2": {
+          "session": 1,
+          "expected_groups": [
+            "Gr1"
+          ],
+          "found_in_pm0": [
+            "Gr1",
+            "Gr2"
+          ],
+          "contamination": [],
+          "status": "PASS"
+        },
+        "pm-2-5": {
+          "session": 2,
+          "expected_groups": [
+            "Gr1",
+            "Gr2"
+          ],
+          "found_in_pm0": [
+            "Gr1",
+            "Gr2"
+          ],
+          "contamination": [],
+          "status": "PASS"
+        },
+        "pm-2-3": {
+          "session": 2,
+          "expected_groups": [
+            "Gr1",
+            "Gr2"
+          ],
+          "found_in_pm0": [
+            "Gr1",
+            "Gr2"
+          ],
+          "contamination": [],
+          "status": "PASS"
+        },
+        "pm-2-10": {
+          "session": 3,
+          "expected_groups": [
+            "Gr1",
+            "Gr2",
+            "Gr5"
+          ],
+          "found_in_pm0": [
+            "Gr1",
+            "Gr2",
+            "Gr5"
+          ],
+          "contamination": [],
+          "status": "PASS"
+        },
+        "pm-2-4": {
+          "session": 3,
+          "expected_groups": [
+            "Gr1",
+            "Gr2",
+            "Gr5"
+          ],
+          "found_in_pm0": [
+            "Gr1",
+            "Gr2",
+            "Gr5"
+          ],
+          "contamination": [],
+          "status": "PASS"
+        },
+        "pm-2-6": {
+          "session": 4,
+          "expected_groups": [
+            "Gr5",
+            "Gr7"
+          ],
+          "found_in_pm0": [
+            "Gr5",
+            "Gr7"
+          ],
+          "contamination": [],
+          "status": "PASS"
+        },
+        "pm-2-8": {
+          "session": 4,
+          "expected_groups": [
+            "Gr5",
+            "Gr7"
+          ],
+          "found_in_pm0": [
+            "Gr5",
+            "Gr7"
+          ],
+          "contamination": [],
+          "status": "PASS"
+        },
+        "pm-2-9": {
+          "session": 5,
+          "expected_groups": [
+            "Gr7",
+            "Gr3"
+          ],
+          "found_in_pm0": [
+            "Gr2",
+            "Gr3",
+            "Gr5",
+            "Gr7"
+          ],
+          "contamination": [],
+          "status": "PASS"
+        }
+      }
+    },
+    {
+      "check_id": "CHECK-13",
+      "name": "PM-0 v2.0 (SUCCESS+M · Symlink integrity)",
+      "status": "PASS",
+      "details": {
+        "version_2_0": true,
+        "has_M_factor": true,
+        "has_SUCCESS_M_label": true,
+        "has_M1_M2_M3_checks": true,
+        "scope_all_guides": true,
+        "symlink_intact": true,
+        "prompts_and_engine_identical": true,
+        "status": "PASS"
+      }
+    }
+  ],
+  "warnings": [],
+  "summary": "CHECK-1=PASS · CHECK-2=PASS · CHECK-3=PASS · CHECK-4=PASS · CHECK-5=PASS · CHECK-6=PASS · CHECK-7=PASS · CHECK-8=PASS · CHECK-9=PASS · CHECK-10=PASS · CHECK-11=PASS · CHECK-12=PASS · CHECK-13=PASS"
+}

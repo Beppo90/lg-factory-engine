@@ -1,0 +1,262 @@
+{
+  "pm_id": "PM-1.2",
+  "run_id": "DIESEL-2026-04-19",
+  "model": "claude-opus-4-6",
+  "generated_at": "2026-04-19",
+  "guide": "Guía 1 — The Workshop Specialist",
+  "cefr_level": "A1.1",
+  "status": "pending_review",
+
+  "presentacion": "Welcome to The Diesel Workshop — your first step into the professional world of diesel maintenance. In this guide, you will learn to navigate a real service workshop in English: identify tools, read safety labels, apply protection standards, and communicate with your team using technical language. This is not just about learning words — it is about speaking the language of the job from day one. You will explore how a professional workshop is organized, why safety rules exist in English-speaking environments, and how to classify the types of maintenance that keep diesel vehicles on the road. By the end of this guide, you will be able to describe your workspace, select the right tools, and report safety conditions to a supervisor — all in English.",
+
+  "identification": {
+    "programa": "Mantenimiento de Motores Diesel",
+    "tipo": "Técnico",
+    "ficha": "2977749",
+    "guia": "1",
+    "macrotheme": "The Workshop Specialist",
+    "intensidad_horas": 60,
+    "horas_directa": 48,
+    "horas_autonoma": 12,
+    "sesiones": 8,
+    "cefr": "A1.1"
+  },
+
+  "guide_design_dna": {
+    "nombre_conceptual": "The Workshop Specialist",
+    "enfoque": "Anclar el vocabulario técnico al entorno físico real del taller desde el primer día. El aprendiz aprende a nombrar lo que ya conoce en español y lo traslada al registro profesional en inglés. El universo narrativo — The Diesel Workshop, Bay 1/2/3, personajes Carlos Mendoza, Valentina Cruz y Santiago Ríos — provee el contexto de inmersión para toda la guía.",
+    "entendimientos_perdurables": [
+      "A professional mechanic communicates safety conditions clearly — in any language.",
+      "Tools have precise names in English because manufacturers, manuals, and specs are written in English.",
+      "Preventive maintenance starts with an organized, safe, and well-identified workspace."
+    ]
+  },
+
+  "content_core": {
+    "technical_topics": [
+      "Types and characteristics of automotive service workshops",
+      "Workshop areas: Bay 1 (reception/inspection), Bay 2 (service), Bay 3 (heavy work), storage, wash area",
+      "Types of maintenance: preventive, corrective, predictive, scheduled",
+      "Hand tools and power tools: selection, identification, care",
+      "Measuring instruments: torque wrench, multimeter, vernier caliper, pressure gauge",
+      "Personal Protective Equipment (PPE): types, use, legal requirements (SST)",
+      "Workplace safety: hazard identification, spill response, SST norms",
+      "Environmental standards: waste disposal, fluid handling, chemical storage",
+      "Workshop formats: work order, service checklist, daily inspection log"
+    ],
+    "communicative_functions": [
+      "F1 — Identifying and naming tools, areas, and equipment",
+      "F2 — Classifying types of maintenance",
+      "F3 — Describing safety conditions and hazards",
+      "F4 — Giving and following step-by-step instructions (imperatives)",
+      "F5 — Reporting to a supervisor"
+    ],
+    "language_functions_in_context": [
+      {
+        "structure": "Verb To Be (is/are) — Grupo 1",
+        "example": "This is a torque wrench. These are safety goggles. Bay 2 is contaminated."
+      },
+      {
+        "structure": "There is / There are — Grupo 2",
+        "example": "There is a chemical spill in Bay 2. There are two fire extinguishers in this area."
+      },
+      {
+        "structure": "Imperatives — Grupo 5",
+        "example": "Put on your goggles. Check the floor jack before use. Do not enter Bay 2."
+      },
+      {
+        "structure": "Demonstratives",
+        "example": "This tool is for tightening. That area is for washing. These are gloves."
+      },
+      {
+        "structure": "Articles (a / an / the)",
+        "example": "Use a wrench. The wrench is on the workbench. He needs an extinguisher."
+      },
+      {
+        "structure": "Prepositions of place",
+        "example": "The toolbox is next to the workbench. The extinguisher is behind the door. Carlos is in Bay 1."
+      },
+      {
+        "structure": "Present Simple (instructions / routines)",
+        "example": "You wear gloves. The technician checks the torque. We follow SST rules."
+      }
+    ],
+    "key_vocabulary": [
+      { "numero": 1, "term": "workshop", "category": "Environment", "context": "The diesel workshop has three service bays." },
+      { "numero": 2, "term": "service bay", "category": "Environment", "context": "Bay 2 is reserved for oil changes and filter replacements." },
+      { "numero": 3, "term": "workbench", "category": "Environment", "context": "Clean the workbench after every job — it is your professional space." },
+      { "numero": 4, "term": "toolbox", "category": "Equipment", "context": "Every technician has a personal toolbox with their name on it." },
+      { "numero": 5, "term": "wrench", "category": "Tool", "context": "Use the open-end wrench for the bolt on the filter housing." },
+      { "numero": 6, "term": "ratchet", "category": "Tool", "context": "The ratchet speeds up the job in tight spaces under the hood." },
+      { "numero": 7, "term": "socket", "category": "Tool", "context": "Select the correct socket size before tightening — use a 17mm socket here." },
+      { "numero": 8, "term": "torque wrench", "category": "Measuring", "context": "Use a torque wrench to apply exactly 120 Nm to the cylinder head bolts." },
+      { "numero": 9, "term": "floor jack", "category": "Equipment", "context": "Never get under a vehicle without a floor jack and jack stands in place." },
+      { "numero": 10, "term": "PPE", "category": "Safety", "context": "PPE includes goggles, gloves, and safety boots — mandatory in all bays." },
+      { "numero": 11, "term": "safety goggles", "category": "PPE", "context": "Wear safety goggles when using the grinder or working with chemicals." },
+      { "numero": 12, "term": "gloves", "category": "PPE", "context": "Nitrile gloves protect against chemical exposure and engine fluids." },
+      { "numero": 13, "term": "hazard", "category": "Safety", "context": "A spilled fluid is a slip hazard — report it to Valentina Cruz immediately." },
+      { "numero": 14, "term": "spill", "category": "Safety", "context": "Report any oil spill to the supervisor immediately and contain the area." },
+      { "numero": 15, "term": "preventive maintenance", "category": "Maintenance", "context": "Preventive maintenance avoids unexpected breakdowns and extends engine life." },
+      { "numero": 16, "term": "corrective maintenance", "category": "Maintenance", "context": "Corrective maintenance fixes a fault that has already occurred in the system." },
+      { "numero": 17, "term": "work order", "category": "Document", "context": "Fill in the work order before starting any job — it is the legal record." },
+      { "numero": 18, "term": "checklist", "category": "Document", "context": "Use the daily inspection checklist every morning before opening Bay 1." },
+      { "numero": 19, "term": "fire extinguisher", "category": "Safety", "context": "The fire extinguisher must be accessible at all times — check it every shift." },
+      { "numero": 20, "term": "specialist", "category": "Role", "context": "Carlos Mendoza is the head specialist — he certifies every work order." }
+    ]
+  },
+
+  "integrative_task": {
+    "nombre": "The Workshop Readiness Report",
+    "descripcion": "En equipos de 3, los aprendices asumen el rol de nuevos técnicos en The Diesel Workshop. Su misión: preparar el taller para la apertura del día en inglés. Deben identificar y etiquetar en inglés las herramientas del toolbox asignado, inspeccionar las condiciones de seguridad del bay designado, completar el daily inspection checklist, y reportar verbalmente el estado del taller a Carlos Mendoza (supervisor) en inglés antes de las 8:00 AM.",
+    "entregable_escrito": "Daily Inspection Checklist completado en inglés con observaciones de seguridad del bay asignado",
+    "entregable_oral": "Briefing de 60–90 segundos al supervisor describiendo el estado del taller y cualquier hazard identificado — formato: 'Bay [X] is [condition]. There is/are [observation]. I recommend [action].'"
+  },
+
+  "evaluation_matrix": [
+    {
+      "tipo": "Conocimiento",
+      "tecnica": "Formulación de preguntas",
+      "instrumento": "Cuestionario (PM-4.2) — 5 pts",
+      "criterio": "Identifica correctamente herramientas, tipos de mantenimiento y normas SST en inglés"
+    },
+    {
+      "tipo": "Desempeño",
+      "tecnica": "Observación directa",
+      "instrumento": "Lista de Chequeo (PM-4.1) — INST-1 a INST-5",
+      "criterio": "Usa vocabulario técnico correcto y funciones comunicativas F1–F5 durante el Workshop Readiness Report oral"
+    },
+    {
+      "tipo": "Producto",
+      "tecnica": "Valoración del producto",
+      "instrumento": "Lista de verificación (PM-4.1) — INST-6",
+      "criterio": "El Daily Inspection Checklist está completo, en inglés, con observaciones técnicas pertinentes de seguridad"
+    }
+  ],
+
+  "gfpi_f134_cols_1_5": {
+    "competencia": {
+      "codigo": "PENDIENTE — confirmar con diseño curricular Sofía Plus",
+      "nombre": "Interactuar en Lengua Inglesa de Forma Oral y Escrita dentro de Contextos Sociales y Laborales según los Criterios Establecidos por el Marco Común Europeo de Referencia para las Lenguas"
+    },
+    "resultado_aprendizaje": {
+      "codigo": "220501096",
+      "descripcion": "Comunicar información técnica en inglés en contextos de mantenimiento de motores diesel, aplicando vocabulario especializado del taller, funciones comunicativas de nivel A1.1 y formatos de documentación técnica estándar del sector automotriz"
+    },
+    "saberes_conceptos_principios": [
+      "Tipos y características de talleres de servicio automotriz (general, especializado, concesionario)",
+      "Clasificación del mantenimiento: preventivo, correctivo, predictivo y programado",
+      "Tipos, características y uso correcto de herramientas manuales y de medición del taller",
+      "Organización física del taller: áreas, bays, flujo de trabajo y documentación",
+      "Normas de Seguridad y Salud en el Trabajo (SST) aplicadas al taller automotriz",
+      "Elementos de Protección Personal (EPP): tipos, funciones y requisitos normativos",
+      "Normatividad ambiental aplicada al taller: residuos, fluidos, disposición y almacenamiento",
+      "Formatos del taller en inglés: orden de trabajo, lista de chequeo, bitácora diaria",
+      "Vocabulario técnico del taller en inglés: 20 términos esenciales del Word Wall",
+      "Funciones comunicativas para la interacción técnica en el entorno laboral (F1–F5)"
+    ],
+    "saberes_proceso": [
+      "Identificar y nombrar en inglés herramientas, zonas y equipos del taller",
+      "Clasificar tipos de mantenimiento según sus características y aplicación técnica",
+      "Seleccionar EPP apropiado según el tipo de tarea y las normas SST vigentes",
+      "Diligenciar formatos de taller en inglés (work order, daily inspection checklist)",
+      "Reportar condiciones de seguridad y hazards a un supervisor en inglés (oral y escrito)",
+      "Dar y seguir instrucciones paso a paso en inglés usando la forma imperativa",
+      "Preparar la zona de trabajo siguiendo procedimientos estándar del taller en inglés"
+    ],
+    "criterios_evaluacion": [
+      "Identifica correctamente el nombre en inglés de herramientas, EPP y zonas del taller según el vocabulario técnico del fabricante (mínimo 16/20 términos)",
+      "Clasifica los tipos de mantenimiento en inglés con terminología técnica apropiada al nivel A1.1",
+      "Diligencia el Daily Inspection Checklist en inglés con observaciones técnicas pertinentes y sin errores de vocabulario en los 20 términos del Word Wall",
+      "Comunica oralmente el estado del taller al supervisor en inglés en un briefing de 60–90 segundos usando las funciones F1–F5",
+      "Aplica las normas SST describiendo hazards y acciones correctivas en inglés durante la tarea integradora",
+      "Responde correctamente mínimo el 60% de las preguntas del cuestionario técnico (3/5 ítems) sobre taller, herramientas y tipos de mantenimiento"
+    ],
+    "source_pm": "PM-1.2",
+    "macrotheme": "The Workshop Specialist",
+    "cefr_level": "A1.1",
+    "program_type": "técnico"
+  },
+
+  "curated_sources": [
+    {
+      "id": "src-A",
+      "rol": "Story A — Reading Anchor (PM-2.3)",
+      "titulo": "20 Must Have Mechanic Tools for 2024",
+      "autor": "Shadow Foam Editorial Team",
+      "publicacion": "Shadow Foam Blog (tool organization specialists — UK brand)",
+      "fecha": "2024",
+      "url": "https://shadowfoam.com/blogs/article/must-have-mechanic-tools",
+      "genero": "Blog / Tutorial",
+      "verification_status": "VERIFIED via WebSearch — article indexed, content confirmed: socket sets, ratchets, torque wrench, floor jack, safety glasses, multimeter, OBD scanner listed",
+      "resumen": "Recorre las 20 herramientas esenciales de cualquier mecánico de taller para 2024 — desde llaves y ratchets hasta torquímetros y escáneres — con descripciones prácticas y recomendaciones de uso. Formato de lista numerada con fotos de cada herramienta. Tono accesible y motivacional para técnicos jóvenes.",
+      "vocabulario_extraible": ["socket set", "ratchet", "torque wrench", "floor jack", "safety glasses", "multimeter", "screwdriver", "pliers", "wrench", "OBD scanner", "impact wrench", "brake bleeder", "workbench", "toolbox", "PPE"],
+      "funciones_comunicativas": ["Describing", "Classifying", "Instructing"],
+      "estructuras_gramaticales": ["Verb To Be", "Have/Has", "Present Simple", "Articles", "Imperatives", "Prepositions"],
+      "hots": ["Remember", "Understand", "Apply"],
+      "notas_adaptacion": {
+        "mantener": "Estructura de lista numerada, fotos de herramientas, nombres técnicos en inglés, ejemplos de uso por herramienta",
+        "simplificar_a1": "Reducir descripción a 1-2 oraciones por herramienta con Verb To Be: 'This is a ratchet. It is for tight spaces.' Eliminar vocabulario B1+",
+        "potencial_visual": "Fotos de cada herramienta → Word Wall visual / Canva deck por sesión / toolbox identification activity"
+      }
+    },
+    {
+      "id": "src-B",
+      "rol": "Story B — Listening Anchor (PM-2.4/PM-2.6)",
+      "titulo": "Safety in Automotive Workshops: Guide for Repair and Servicing Environments",
+      "autor": "SafetyCulture Editorial Team",
+      "publicacion": "SafetyCulture Blog (plataforma líder de seguridad industrial — Australia/Global)",
+      "fecha": "2023-2024",
+      "url": "https://safetydocs.safetyculture.com/blog/safety-in-automotive-workshops-guide-for-repair-and-servicing-environments/",
+      "genero": "Guía técnica de seguridad industrial",
+      "verification_status": "VERIFIED via WebSearch — article indexed, content confirmed: PPE requirements (goggles, gloves, steel-toed boots, ear protection, respirators), hazards (spills, chemicals, electrical), OSHA standards, non-slip flooring, chemical storage procedures",
+      "resumen": "Guía completa sobre seguridad en talleres automotrices: identifica los principales riesgos (derrames, químicos, eléctricos), detalla el EPP obligatorio por tipo de tarea, y cubre requisitos de OSHA para disposición de químicos y almacenamiento de inflamables. Tono normativo y práctico — lenguaje de instrucción directa.",
+      "vocabulario_extraible": ["safety goggles", "gloves", "steel-toed boots", "ear protection", "respirator", "flammable", "hazardous", "spill", "PPE", "ventilation", "OSHA", "chemical storage", "non-slip flooring", "fire extinguisher", "hazard"],
+      "funciones_comunicativas": ["Describing", "Instructing", "Reporting", "Justifying"],
+      "estructuras_gramaticales": ["Verb To Be", "Have/Has", "Present Simple", "Imperatives", "There is/are", "Prepositions", "Demonstratives", "Must/Must not"],
+      "hots": ["Remember", "Understand", "Apply", "Analyze"],
+      "notas_adaptacion": {
+        "mantener": "Situaciones reales de taller, lista de hazards con nombres técnicos, EPP en contexto normativo",
+        "simplificar_a1": "Convertir guía en diálogo corto (Valentina Cruz, safety officer + Santiago Ríos, new apprentice) — frases máximo 8 palabras; imperativo para instrucciones: 'Put on your goggles. Check the floor. Report the spill.'",
+        "potencial_visual": "Iconos de EPP, señales de seguridad ISO, diagrama de bay con hazard zones marcadas → Canva deck / safety poster"
+      }
+    },
+    {
+      "id": "src-C",
+      "rol": "Story C — Backup / Vocabulary Extension (PM-2.5) + Tarea Integradora",
+      "titulo": "Creating the Perfect Diesel Repair Shop Layout",
+      "autor": "Fullbay Editorial Team",
+      "publicacion": "Fullbay Blog (software líder de gestión de talleres diesel — USA)",
+      "fecha": "2023-2024",
+      "url": "https://www.fullbay.com/blog/diesel-repair-shop-layout/",
+      "genero": "Guía de organización empresarial / blog de industria",
+      "verification_status": "VERIFIED via WebSearch — article indexed, content confirmed: reception bay, diagnostic bays (600-800 sq ft), standard repair bays (800-1200 sq ft each), parts storage, technician-to-bay ratio (1.5-2 bays per tech), LED lighting, non-slip flooring, yellow safety striping",
+      "resumen": "Describe en detalle el layout óptimo de un taller diesel profesional: áreas funcionales (recepción, bays de diagnóstico, bays de reparación, almacén de repuestos), flujo de trabajo desde la llegada del vehículo hasta su entrega, y estándares de iluminación y seguridad. Publicación de Fullbay, líder en software para talleres diesel en USA.",
+      "vocabulario_extraible": ["service bay", "diagnostic bay", "reception area", "parts storage", "floor jack", "workbench", "LED lighting", "non-slip flooring", "safety striping", "technician", "vehicle", "repair", "workshop", "layout", "equipment"],
+      "funciones_comunicativas": ["Describing", "Classifying", "Comparing", "Reporting"],
+      "estructuras_gramaticales": ["Verb To Be", "Have/Has", "Present Simple", "Articles", "Prepositions", "There is/are"],
+      "hots": ["Remember", "Understand", "Apply"],
+      "notas_adaptacion": {
+        "mantener": "Nombres de áreas en inglés, dimensiones de bays, flujo de trabajo descrito paso a paso, tono profesional de la industria",
+        "simplificar_a1": "Extraer frases de identificación de zonas: 'This is the diagnostic bay. There are three repair bays. The parts storage is next to Bay 2.' Eliminar medidas en sq ft y vocabulario B1+",
+        "potencial_visual": "Diagrama de planta del taller con zonas etiquetadas → Canva deck intro / Universe Foundation map / Bay 1-2-3 layout visual"
+      }
+    }
+  ],
+
+  "curated_sources_verification_log": {
+    "method": "WebSearch (proxy blocks WebFetch for all external domains in this VM)",
+    "date": "2026-04-19",
+    "original_sources_status": {
+      "src-A-original": "Popular Mechanics / Roy Berendsohn — author CONFIRMED real (Muck Rack), specific article URL NOT confirmed in search index — REPLACED",
+      "src-B-original": "Motor Age Magazine / Mike Mavrigian — article NOT found in search index — REPLACED",
+      "src-C-original": "Diesel Technology Forum — article NOT found at specific URL — REPLACED"
+    },
+    "replacement_confidence": "HIGH — all 3 replacement articles returned by WebSearch with content summaries confirming relevant vocabulary, topics and genre. Content described in verification_status field per source."
+  },
+
+  "instructor_notes": {
+    "story_selection_pending": "El instructor debe confirmar: Story A (Shadow Foam) → Reading Anchor (PM-2.3) y Story B (SafetyCulture) → Listening Anchor (PM-2.4). Story C (Fullbay) queda como backup, vocabulario extendido y base visual del universo narrativo.",
+    "universo_narrativo": "El universo narrativo de The Diesel Workshop (Carlos Mendoza / Valentina Cruz / Santiago Ríos / Bay 1-2-3) se propaga desde este PM-1.2 a todos los PM-2.x, PM-3.1, PM-3.2 S1–S8, PM-3.5, PM-3.6 y PM-4.x.",
+    "src_C_layout_bonus": "La descripción de Fullbay (bays de diagnóstico, reparación y almacén) mapea directamente al universo narrativo de The Diesel Workshop con Bay 1 (inspection), Bay 2 (service), Bay 3 (heavy work)."
+  }
+}

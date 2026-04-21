@@ -1,0 +1,131 @@
+{
+  "_meta": {
+    "schema_version": "activity-card-v2.0",
+    "schema_ref": "master-prompts/Activity Card — Schema.md (2026-04-13)",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-opus-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist"
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.4",
+    "pm_name": "Writing — Task-Based Production",
+    "session": 3,
+    "phase_sena": "Apropiación",
+    "rap_id": "RAP-DIESEL-001-2026",
+
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Analizar estructura y lenguaje de documentos técnicos reales del taller diesel en inglés antes de producirlos",
+        "didactic_strategy": "Investigación guiada",
+        "didactic_technique": "Análisis de casos"
+      },
+      {
+        "number": 2,
+        "type": "procedimental",
+        "statement": "Producir Daily Inspection Checklist y Work Order header para Bay 2 de The Diesel Workshop en inglés",
+        "didactic_strategy": "TBLT",
+        "didactic_technique": "Taller"
+      },
+      {
+        "number": 3,
+        "type": "procedimental",
+        "statement": "Revisar documentos del compañero aplicando criterios de Lista de verificación No 2 y escribir retroalimentación",
+        "didactic_strategy": "Aprendizaje colaborativo",
+        "didactic_technique": "Think-Pair-Share"
+      }
+    ],
+
+    "hours": {
+      "direct": 3.0,
+      "autonomous": 0.75
+    },
+
+    "evidence": {
+      "generates_evidence": true,
+      "type": "Producto",
+      "description": "El aprendiz produce un Daily Inspection Checklist (mín. 8 ítems) y Work Order header (mín. 6 campos) completamente en inglés para Bay 2 de The Diesel Workshop",
+      "evaluation_technique": "Verificación del producto",
+      "instrument_number": 2,
+      "instrument_type": "Lista de verificación"
+    },
+
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Modelo de Daily Inspection Checklist real (referencia visual A4) — proyectado y en papel",
+        "Daily Inspection Checklist en blanco impreso — 1 por aprendiz (entregable final de evidencia)",
+        "Work Order header en blanco impreso — 1 por aprendiz (entregable final de evidencia)",
+        "Lista de verificación No 2 impresa — 1 por aprendiz (10 criterios × 0.5 pt = 5 pts para peer review)",
+        "Language Bank en tablero: imperativos (Check / Tighten / Replace / Clean / Inspect), frases de observación (There is a... / The ___ is damaged / Do not use...)",
+        "Word Wall de S2 visible en aula"
+      ],
+      "instructors": "Instructor de inglés técnico"
+    },
+
+    "contributes_to_consolidated_quiz": false,
+    "quiz_skill": "",
+    "quiz_points": 0,
+    "quiz_item_count": 0
+  },
+
+  "pm0_constraints_applied": {
+    "session": "S3",
+    "grammar_active": "Gr1+Gr2 CONSOLIDA + Gr5 INTRO (Imperativo: Check/Open/Use/Tighten/Replace; Don't + base form). El Language Bank del checklist ES el contexto de práctica del imperativo.",
+    "l1_max": "≤ 20% — Foco en forma. El tablero + Language Bank reemplazan la explicación en L1. Instrucciones escritas en inglés con iconos de apoyo.",
+    "feedback_mode": "ACCURACY en actividad 1 (análisis de estructura — recast + elicitación en cuadro resumen). FLUENCY en actividad 2 (producción — no interrumpir; errores anotados en silencio). Feedback escrito post-tarea: códigos G / V / Sp / WO en documento del aprendiz.",
+    "stress_focus": "MAIN-te-nance, in-SPEC-tion, re-PLACE-ment — backchaining antes de que aparezcan en el checklist: '-ment → replacement → do a replacement'",
+    "writing_scaffolding": "Sentence starters OBLIGATORIOS: 'Check the ___', 'There is a ___ in ___', 'The ___ is ___', 'Do not ___'. Language bank en pizarra durante toda la actividad 2. NO producción sin andamio en A1.1.",
+    "peer_review_feedback_mode": "Actividad 3: aprendices escriben feedback con frases del Language Bank (NO en español). Ejemplo: 'I think the ___ is missing / I see a mistake in ___'. Instructor recoge ambos documentos como evidencia."
+  },
+
+  "scenario": {
+    "setting": "The Diesel Workshop — Bay 2, Monday 7:00 AM",
+    "situation": "Preparación para el primer camión diesel del día. Santiago Ríos (Apprentice) debe completar la inspección de Bay 2 antes de que Carlos Mendoza (Lead Technician) apruebe el inicio del trabajo.",
+    "deliverables": [
+      "Daily Inspection Checklist — mínimo 8 ítems en inglés con estado (✓ / ✗ / N/A) y observación",
+      "Work Order header — mínimo 6 campos: Date, Vehicle, Mileage, Technician, Bay, Service Type"
+    ]
+  },
+
+  "verification_list_criteria": [
+    {"criterion": "El checklist tiene mínimo 8 ítems verificados", "points": 0.5},
+    {"criterion": "Cada ítem usa vocabulario técnico correcto del Toolbelt", "points": 0.5},
+    {"criterion": "Hay mínimo 2 observaciones escritas en inglés", "points": 0.5},
+    {"criterion": "El estado del bay está justificado en inglés", "points": 0.5},
+    {"criterion": "El Work Order tiene mínimo 6 campos completos", "points": 0.5},
+    {"criterion": "Usa correctamente There is/are en observaciones", "points": 0.5},
+    {"criterion": "Usa correctamente imperativos en acciones requeridas", "points": 0.5},
+    {"criterion": "Usa preposiciones de lugar para ubicar herramientas (in/on/next to)", "points": 0.5},
+    {"criterion": "Ortografía correcta en términos del Toolbelt", "points": 0.5},
+    {"criterion": "El documento es legible, organizado y completo", "points": 0.5}
+  ],
+  "total_evidence_points": 5,
+
+  "archetype_used": [
+    "A — Genre Analysis (Actividad 1: análisis de documentos modelo)",
+    "C — Collaborative TBLT (Actividad 2: producción individual del documento real)",
+    "E — Genre-Based Peer Review (Actividad 3: revisión con Lista de verificación No 2)"
+  ],
+
+  "trabajo_autonomo": {
+    "duracion_h": 0.75,
+    "actividades": [
+      "Revisar y auto-evaluar su propio Daily Inspection Checklist usando los 10 criterios de la Lista de verificación No 2 — corregir con códigos G/V/Sp/WO",
+      "Preview S4: escuchar 1 vez el audio de PM-2.6 ('Bay 2 Safety Briefing') en Moodle y anotar: personajes, tema, 3 palabras reconocidas"
+    ]
+  },
+
+  "gfpi_tag": "3.3-APROPIACION-WRITING",
+  "instructor_notes": {
+    "sequence_in_s3": "PM-2.10 (Grammar — imperativo) se ejecuta en WHILE-B antes de PM-2.4. El cuadro resumen de Gr5 (imperativo) alimenta directamente el Language Bank de este PM.",
+    "modeled_writing": "Actividad 1 incluye 10 minutos de think-aloud del instructor completando un checklist modelo en vivo en la pizarra: '¿Qué escribo aquí? Check... the floor jack. ¿Por qué imperativo? Porque es una instrucción para el técnico...'",
+    "evidence_collection": "Al final de actividad 2: recoger AMBOS documentos (Checklist + Work Order) en papel. También recoger Lista de verificación No 2 del peer review. Los tres forman el paquete de Evidencia 2.",
+    "written_feedback_codes": "G = grammar error, V = wrong vocabulary, Sp = spelling, WO = word order. El instructor aplica estos códigos con lápiz en el margen del documento — el aprendiz corrige en casa (trabajo autónomo)."
+  }
+}

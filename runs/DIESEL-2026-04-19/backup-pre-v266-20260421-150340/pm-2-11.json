@@ -1,0 +1,585 @@
+{
+  "_meta": {
+    "schema_version": "activity-card-v2.0",
+    "schema_ref": "master-prompts/Activity Card — Schema.md (2026-04-13)",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-opus-4-6",
+    "status": "pending_review",
+    "assembled_by": "PM-2.11 — GFPI-F-134 Row Assembler",
+    "note": "PM-2.11 is a special assembler PM — it emits no activity_card block. It validates and consolidates all PM-2.x activity cards into GFPI-F-134 row format."
+  },
+
+  "gfpi_f134_row": {
+    "col_1_competencia": {
+      "codigo": "PENDIENTE",
+      "nombre": "Interactuar en Lengua Inglesa de Forma Oral y Escrita dentro de Contextos Sociales y Laborales según los Criterios Establecidos por el Marco Común Europeo de Referencia para las Lenguas"
+    },
+
+    "col_2_rap": {
+      "codigo": "220501096",
+      "descripcion": "Comunicar información técnica en inglés en contextos de mantenimiento de motores diesel, aplicando vocabulario especializado del taller, funciones comunicativas de nivel A1.1 y formatos de documentación técnica estándar del sector automotriz",
+      "nota_ensamblador": "RAP código y descripción confirmados en PM-1.2 (2026-04-19). Competencia.codigo sigue PENDIENTE — requiere consulta Sofía Plus."
+    },
+
+    "col_3_saberes_conceptos_principios": [
+      "Tipos y características de talleres de servicio automotriz (general, especializado, concesionario)",
+      "Clasificación del mantenimiento: preventivo, correctivo, predictivo",
+      "Tipos, características y uso de herramientas manuales y de medición",
+      "Equipos y herramientas de diagnóstico del taller",
+      "Normas de Seguridad y Salud en el Trabajo (SST) aplicadas al taller automotriz",
+      "Elementos de Protección Personal (EPP): tipos, funciones, normatividad",
+      "Normatividad ambiental aplicada al taller: residuos, fluidos, disposición",
+      "Formatos del taller: orden de trabajo, lista de chequeo, bitácora diaria",
+      "Vocabulario técnico del taller en inglés (20 términos esenciales)",
+      "Funciones comunicativas para la interacción en el entorno laboral técnico"
+    ],
+
+    "col_4_saberes_proceso": [
+      "Identificar y nombrar en inglés herramientas, zonas y equipos del taller",
+      "Clasificar tipos de mantenimiento según sus características y aplicación",
+      "Seleccionar EPP apropiado según el tipo de tarea técnica",
+      "Diligenciar formatos de taller en inglés (work order, checklist)",
+      "Reportar condiciones de seguridad y hazards a un supervisor en inglés",
+      "Preparar la zona de trabajo siguiendo procedimientos estándar del taller",
+      "Dar y seguir instrucciones paso a paso en inglés usando imperativos"
+    ],
+
+    "col_5_criterios_evaluacion": [
+      "Identifica correctamente el nombre en inglés de herramientas, EPP y zonas del taller según vocabulario técnico del fabricante",
+      "Clasifica los tipos de mantenimiento en inglés con terminología técnica apropiada al nivel A1.1",
+      "Diligencia el Daily Inspection Checklist en inglés con observaciones pertinentes de seguridad",
+      "Comunica oralmente el estado del taller al supervisor en inglés en un briefing de 60–90 segundos",
+      "Aplica las normas SST y ambientales describiéndolas en inglés durante la tarea integradora",
+      "Responde correctamente mínimo el 60% de las preguntas del cuestionario técnico sobre taller y herramientas"
+    ],
+
+    "col_6_actividades_aprendizaje": [
+      "1. Actividad cognitiva — Analizar titular técnico de incidente en taller diesel para activar conocimiento previo sobre seguridad y PPE (PM-2.1 — S1 Reflexión Inicial)",
+      "2. Actividad cognitiva — Identificar y nombrar herramientas y zonas del taller diesel en inglés usando infografía de workshop layout (PM-2.1 — S1)",
+      "3. Actividad procedimental — Debatir criterios técnicos sobre tipos de mantenimiento usando funciones comunicativas básicas en inglés (PM-2.1 — S1)",
+      "4. Actividad cognitiva — Completar tabla KWL sobre vocabulario y procedimientos del taller para mapear conocimiento previo del grupo (PM-2.2 — S1 Contextualización)",
+      "5. Actividad cognitiva — Identificar y describir errores de seguridad en imágenes de taller usando estructuras básicas en inglés (PM-2.2 — S1)",
+      "6. Actividad cognitiva — Autoevaluar desempeño frente a resultados de aprendizaje usando Gap Cards e I can statements, y entrevistar a un compañero para mapear vocabulario técnico previo (PM-2.2 — S1)",
+      "7. Actividad cognitiva — Presentar y anclar los 20 términos técnicos del taller diesel en inglés usando Word Wall y categorías semánticas (PM-2.5 — S2 Apropiación)",
+      "8. Actividad cognitiva — Practicar reconocimiento y producción de los 20 términos mediante juego de flashcards y competencia de categorías (PM-2.5 — S2)",
+      "9. Actividad procedimental — Completar formatos reales del taller diesel usando los 20 términos técnicos en contexto auténtico (PM-2.5 — S2)",
+      "10. Actividad cognitiva — Predecir contenido del texto técnico usando imágenes del artículo y activar vocabulario del taller en inglés (PM-2.3 — S2)",
+      "11. Actividad cognitiva — Leer cooperativamente secciones del texto adaptado de Shadow Foam usando estrategia Jigsaw entre expertos (PM-2.3 — S2)",
+      "12. Actividad cognitiva — Responder cuestionario de comprensión lectora del texto adaptado — Evidencia 1 Reading (PM-2.3 — S2)",
+      "13. Actividad cognitiva — Inducir las 3 estructuras gramaticales desde el texto de S2 e identificar y corregir 10 errores frecuentes en contexto de taller (PM-2.10 — S3)",
+      "14. Actividad procedimental — Practicar las 3 estructuras gramaticales en rotación por estaciones temáticas del taller con actividades diferenciadas (PM-2.10 — S3)",
+      "15. Actividad procedimental — Producir Safety Report completo para Bay 3 integrando imperativos, There is/are y preposiciones de lugar obligatoriamente (PM-2.10 — S3)",
+      "16. Actividad cognitiva — Analizar estructura y lenguaje de documentos técnicos reales del taller diesel antes de producirlos (PM-2.4 — S3)",
+      "17. Actividad procedimental — Producir Daily Inspection Checklist y Work Order header para Bay 2 de The Diesel Workshop en inglés — Evidencia 2 Writing (PM-2.4 — S3)",
+      "18. Actividad procedimental — Revisar documentos del compañero aplicando criterios de Lista de verificación No 2 y escribir retroalimentación en inglés (PM-2.4 — S3)",
+      "19. Actividad cognitiva — Activar esquemas previos y pre-entrenar vocabulario del diálogo de taller diesel antes de escuchar el audio (PM-2.6 — S4)",
+      "20. Actividad cognitiva — Escuchar diálogo Bay 2 Safety Briefing y responder cuestionario de comprensión auditiva — Evidencia 3 Listening (PM-2.6 — S4)",
+      "21. Actividad procedimental — Dramatizar diálogo de seguridad en pares asumiendo roles de supervisor y técnico de The Diesel Workshop (PM-2.6 — S4)",
+      "22. Actividad cognitiva — Analizar Workshop Readiness Report modelo para identificar estructura, contenido y estructuras lingüísticas requeridas (PM-2.8 — S4)",
+      "23. Actividad procedimental — Preparar reporte oral con Stock Cards y sentence starters, practicando pronunciación con Chunk Cards en pares (PM-2.8 — S4)",
+      "24. Actividad procedimental — Presentar Workshop Readiness Report al supervisor en role play de 60–90 segundos respondiendo preguntas en vivo — Evidencia 4 Speaking (PM-2.8 — S4)",
+      "25. Actividad cognitiva — Mapear 5 funciones comunicativas del taller en diagrama de interacciones y clasificar 15 frases reales en su función (PM-2.9 — S5)",
+      "26. Actividad procedimental — Practicar las 5 funciones comunicativas en drills de 8 minutos con situaciones reales del taller diesel en pares (PM-2.9 — S5)",
+      "27. Actividad procedimental — Demostrar 5 funciones integradas en simulación de apertura de taller con supervisor y construir Personal Communication Card — Evidencia 5 Language Functions (PM-2.9 — S5)"
+    ],
+
+    "col_7_duracion_horas": {
+      "distribucion": [
+        "Sesión 1 (Reflexión Inicial + Contextualización): 6h directo + 1.5h autónoma = 7.5h [PM-2.1: 3.5h/0.75h + PM-2.2: 2.5h/0.75h]",
+        "Sesión 2 (Apropiación — Vocabulary + Reading): 6h directo + 1.5h autónoma = 7.5h [PM-2.5: 2.0h/0.75h + PM-2.3: 4.0h/0.75h]",
+        "Sesión 3 (Apropiación — Grammar + Writing): 6h directo + 1.5h autónoma = 7.5h [PM-2.10: 3.0h/0.75h + PM-2.4: 3.0h/0.75h]",
+        "Sesión 4 (Apropiación — Listening + Speaking): 6h directo + 1.5h autónoma = 7.5h [PM-2.6: 3.0h/0.75h + PM-2.8: 3.0h/0.75h]",
+        "Sesión 5 (Apropiación — Language Functions): 6h directo + 1.5h autónoma = 7.5h [PM-2.9: 6.0h/1.5h]",
+        "Sesión 6 primera mitad (Evaluación Sumativa): 3h directo + 1.5h autónoma = 4.5h",
+        "Sesiones 6 segunda mitad + 7 + 8 (Transferencia): 15h directo + 3h autónoma = 18h"
+      ],
+      "totales_esperados": {
+        "trabajo_directo_h": 48,
+        "trabajo_autonomo_h": 12,
+        "total_h": 60
+      },
+      "totales_calculados_desde_activity_cards": {
+        "trabajo_directo_h": 48,
+        "trabajo_autonomo_h": 12,
+        "total_h": 60,
+        "formula_directo": "6(S1)+6(S2)+6(S3)+6(S4)+6(S5)+3(S6a)+15(S6b-S8) = 48h ✅",
+        "formula_autonomo": "1.5(S1)+1.5(S2)+1.5(S3)+1.5(S4)+1.5(S5)+1.5(S6a)+3(S6b-S8) = 12h ✅",
+        "pm_level_breakdown": {
+          "PM-2.1": "3.5h/0.75h", "PM-2.2": "2.5h/0.75h",
+          "PM-2.5": "2.0h/0.75h", "PM-2.3": "4.0h/0.75h",
+          "PM-2.10": "3.0h/0.75h", "PM-2.4": "3.0h/0.75h",
+          "PM-2.6": "3.0h/0.75h", "PM-2.8": "3.0h/0.75h",
+          "PM-2.9": "6.0h/1.5h",
+          "S1_total": "6.0h/1.5h ✅", "S2_total": "6.0h/1.5h ✅",
+          "S3_total": "6.0h/1.5h ✅", "S4_total": "6.0h/1.5h ✅",
+          "S5_total": "6.0h/1.5h ✅"
+        }
+      }
+    },
+
+    "col_8_evidencias_aprendizaje": [
+      {
+        "numero": 1,
+        "tipo": "Conocimiento",
+        "descripcion": "Reading Comprehension — El aprendiz demuestra comprensión de textos técnicos en inglés respondiendo 5 preguntas de nivel literal e inferencial sobre artículo adaptado de Shadow Foam sobre herramientas de taller diesel.",
+        "tecnica_evaluacion": "Formulación de preguntas",
+        "instrumento_numero": 1,
+        "instrumento_tipo": "Cuestionario",
+        "sesion": 2,
+        "fuente_pm": "PM-2.3",
+        "puntaje": 5
+      },
+      {
+        "numero": 2,
+        "tipo": "Producto",
+        "descripcion": "Written Production — El aprendiz produce documentos técnicos completos (Daily Inspection Checklist + Work Order header) en inglés demostrando control de vocabulario técnico, estructuras gramaticales y organización lógica según formato de taller real.",
+        "tecnica_evaluacion": "Verificación del producto",
+        "instrumento_numero": 2,
+        "instrumento_tipo": "Lista de verificación",
+        "sesion": 3,
+        "fuente_pm": "PM-2.4",
+        "puntaje": 5
+      },
+      {
+        "numero": 3,
+        "tipo": "Desempeño",
+        "descripcion": "Listening Comprehension — El aprendiz demuestra comprensión de contenido oral técnico respondiendo 5 preguntas sobre diálogo Bay 2 Safety Briefing sin acceso al texto durante la evaluación.",
+        "tecnica_evaluacion": "Formulación de preguntas",
+        "instrumento_numero": 3,
+        "instrumento_tipo": "Cuestionario",
+        "sesion": 4,
+        "fuente_pm": "PM-2.6",
+        "puntaje": 5
+      },
+      {
+        "numero": 4,
+        "tipo": "Desempeño",
+        "descripcion": "Oral Production (Speaking) — El aprendiz presenta Workshop Readiness Report de 60–90 segundos demostrando fluidez, pronunciación comprensible, precisión gramatical, vocabulario técnico y gestión de turno conversacional.",
+        "tecnica_evaluacion": "Observación directa",
+        "instrumento_numero": 4,
+        "instrumento_tipo": "Escala de estimación",
+        "sesion": 4,
+        "fuente_pm": "PM-2.8",
+        "puntaje": 5
+      },
+      {
+        "numero": 5,
+        "tipo": "Desempeño",
+        "descripcion": "Language Functions (Communicative Competence) — El aprendiz demuestra dominio de 5 funciones comunicativas contextualizadas (dar instrucciones, solicitar ayuda, describir condiciones, reportar, confirmar) en simulación de apertura de taller.",
+        "tecnica_evaluacion": "Observación directa",
+        "instrumento_numero": 5,
+        "instrumento_tipo": "Escala de estimación",
+        "sesion": 5,
+        "fuente_pm": "PM-2.9",
+        "puntaje": 5
+      },
+      {
+        "numero": 6,
+        "tipo": "Conocimiento",
+        "descripcion": "Cuestionario Consolidado (Knowledge Synthesis) — El aprendiz responde 25 ítems en cuestionario sumativo evaluando síntesis de conocimiento del RAP: 5 Reading, 5 Vocabulary, 5 Grammar, 5 Listening, 5 Language Functions distribuidos según aporte de cada PM-2.x.",
+        "tecnica_evaluacion": "Formulación de preguntas",
+        "instrumento_numero": 6,
+        "instrumento_tipo": "Cuestionario",
+        "sesion": 6,
+        "fuente_pm": "PM-4.2 (consolidado de PM-2.3, PM-2.5, PM-2.10, PM-2.6, PM-2.9)",
+        "puntaje": 5
+      }
+    ],
+
+    "col_9_tecnicas_instrumentos_evaluacion": [
+      "Actividades 1-3 (S1 — PM-2.1): Sin evaluación formal — Reflexión Inicial. Diagnóstico de conocimiento previo.",
+      "Actividades 4-6 (S1 — PM-2.2): Sin evaluación formal — Contextualización. Gap Cards para mapeo de baseline (no calificadas).",
+      "Actividades 7-9 (S2 — PM-2.5 Vocabulary): Sin evidencia formal — aporte al Cuestionario Consolidado S6. 5 ítems Vocabulary.",
+      "Actividades 10-12 (S2 — PM-2.3 Reading): Técnica = Formulación de preguntas. Instrumento = Cuestionario No 1 (5 ítems, Evidencia 1). Aporte al Cuestionario Consolidado S6 = 5 ítems Reading.",
+      "Actividades 13-15 (S3 — PM-2.10 Grammar): Sin evidencia formal — aporte al Cuestionario Consolidado S6. 5 ítems Grammar (2 Imperativo, 2 There is/are, 1 Preposiciones).",
+      "Actividades 16-18 (S3 — PM-2.4 Writing): Técnica = Verificación del producto. Instrumento = Lista de verificación No 2 (10 criterios × 0.5 pt = 5 pts, Evidencia 2).",
+      "Actividades 19-21 (S4 — PM-2.6 Listening): Técnica = Formulación de preguntas. Instrumento = Cuestionario No 3 (5 preguntas, Evidencia 3). Aporte al Cuestionario Consolidado S6 = 5 ítems Listening.",
+      "Actividades 22-24 (S4 — PM-2.8 Speaking): Técnica = Observación directa. Instrumento = Escala de estimación No 4 (5 criterios, Evidencia 4). NO aporta al Cuestionario Consolidado.",
+      "Actividades 25-27 (S5 — PM-2.9 Language Functions): Técnica = Observación directa. Instrumento = Escala de estimación No 5 (5 criterios, Evidencia 5). Aporte al Cuestionario Consolidado S6 = 5 ítems Language Functions.",
+      "Cuestionario Consolidado S6: Técnica = Formulación de preguntas. Instrumento = Cuestionario No 6 (25 ítems totales, Evidencia 6). Distribución: 5 Reading + 5 Vocabulary + 5 Grammar + 5 Listening + 5 Language Functions."
+    ],
+
+    "col_10_ambientes_aprendizaje": [
+      {
+        "actividades": "1-3 (S1 — PM-2.1)",
+        "ambiente_tipo": "Aula",
+        "materiales": [
+          "Titular impreso o proyectado: 'Three mechanics hospitalized after workshop fire'",
+          "Infografía A3 o proyección: workshop layout con zonas etiquetadas en inglés",
+          "Tarjetas de personajes (Carlos Mendoza, Valentina Cruz, Santiago Ríos)",
+          "Tarjetas verde/rojo para votación de debate",
+          "Post-its para Learning Contract visual"
+        ],
+        "instructores": "Instructor de inglés técnico + Instructor técnico de motores diesel"
+      },
+      {
+        "actividades": "4-6 (S1 — PM-2.2)",
+        "ambiente_tipo": "Aula",
+        "materiales": [
+          "Tabla KWL impresa o digital (1 por aprendiz + versión pizarra)",
+          "4 imágenes de taller con errores de seguridad impresas o proyectadas",
+          "Gap Cards impresas (1 por aprendiz — 6 I can statements, escala 1–5)",
+          "Guión de entrevista entre pares impreso (5 preguntas en inglés)"
+        ],
+        "instructores": "Instructor de inglés técnico + Instructor técnico de motores diesel"
+      },
+      {
+        "actividades": "7-9 (S2 — PM-2.5 Vocabulary)",
+        "ambiente_tipo": "Aula",
+        "materiales": [
+          "Word Wall cards x20 (imagen + término + oración contextuada del taller)",
+          "Flashcard sets impresos (1 por par) — doble cara: imagen / término + IPA simplificada",
+          "Daily Inspection Checklist en blanco impreso (1 por aprendiz)",
+          "Work Order header en blanco impreso (1 por aprendiz)"
+        ],
+        "instructores": "Instructor de inglés técnico"
+      },
+      {
+        "actividades": "10-12 (S2 — PM-2.3 Reading)",
+        "ambiente_tipo": "Aula",
+        "materiales": [
+          "Texto adaptado A1.1: 'Tools Every Diesel Specialist Needs' impreso (1 por aprendiz)",
+          "Imágenes Shadow Foam proyectadas en pantalla (actividad de predicción)",
+          "Cuestionario No 1 impreso — 5 ítems comprensión lectora (Evidencia 1)",
+          "Ficha de experto Jigsaw impresa — 1 por rol (4 secciones del texto)"
+        ],
+        "instructores": "Instructor de inglés técnico"
+      },
+      {
+        "actividades": "13-15 (S3 — PM-2.10 Grammar)",
+        "ambiente_tipo": "Aula",
+        "materiales": [
+          "Texto S2 proyectado con resaltados de color: verde=imperativo, azul=There is/are, rojo=preposición",
+          "Error Log impreso — 10 oraciones con errores gramaticales (1 por aprendiz)",
+          "Tarjetas de Estación A/B/C (imperativo, There is/are, preposiciones) — diferenciadas",
+          "Safety Report formato en blanco — Bay 3 (1 por aprendiz)"
+        ],
+        "instructores": "Instructor de inglés técnico"
+      },
+      {
+        "actividades": "16-18 (S3 — PM-2.4 Writing)",
+        "ambiente_tipo": "Aula",
+        "materiales": [
+          "Daily Inspection Checklist en blanco impreso (1 por aprendiz — entregable Evidencia 2)",
+          "Work Order header en blanco impreso (1 por aprendiz — entregable Evidencia 2)",
+          "Lista de verificación No 2 impresa — 10 criterios × 0.5 pt (peer review + instructor)",
+          "Language Bank en tablero: imperativos + frases de observación"
+        ],
+        "instructores": "Instructor de inglés técnico"
+      },
+      {
+        "actividades": "19-21 (S4 — PM-2.6 Listening)",
+        "ambiente_tipo": "Aula",
+        "materiales": [
+          "Audio 'Bay 2 Safety Briefing' (TTS, 0.85x, ~2 min) — Moodle + USB backup",
+          "Cuestionario No 3 impreso — 5 ítems comprensión auditiva (Evidencia 3)",
+          "Script del diálogo impreso (1 por par) — entregado DESPUÉS del Cuestionario No 3",
+          "Imagen Bay 2 proyectada en pantalla durante actividades",
+          "Parlante Bluetooth + computador del instructor"
+        ],
+        "instructores": "Instructor de inglés técnico"
+      },
+      {
+        "actividades": "22-24 (S4 — PM-2.8 Speaking)",
+        "ambiente_tipo": "Aula",
+        "materiales": [
+          "Stock Card A — Bay Status (1 por aprendiz)",
+          "Stock Card B — Sentence Starters (1 por aprendiz)",
+          "Chunk Cards de pronunciación (5 términos target) — 1 set por par",
+          "Escala de estimación No 4 impresa (solo instructor — Evidencia 4)"
+        ],
+        "instructores": "Instructor de inglés técnico"
+      },
+      {
+        "actividades": "25-27 (S5 — PM-2.9 Language Functions)",
+        "ambiente_tipo": "Aula",
+        "materiales": [
+          "Communication Map proyectado (5 funciones × chunk examples)",
+          "15 tarjetas de frases para clasificación por función (1 set por par)",
+          "Stock Cards de bay reutilizadas de S4 (para la simulación)",
+          "Escala de estimación No 5 — 1 para instructor + 1 para par observador (Evidencia 5)",
+          "Personal Communication Card en blanco impresa (1 por aprendiz)"
+        ],
+        "instructores": "Instructor de inglés técnico"
+      }
+    ],
+
+    "col_11_observaciones": "PM-2.1 requiere infografía de workshop layout visible durante toda S1. PM-2.3 Reading: texto adaptado debe ser entregado impreso — no proyectado (lectura individualizada). PM-2.4 Writing: Daily Inspection Checklist de Bay 2 real disponible el día de ejecución. PM-2.6 Listening: sistema de audio probado antes de la sesión; fallback = lectura en voz alta del instructor (2 speakers simulados). PM-2.8 Speaking: asignar bays diferentes a cada par para variedad de reportes. PM-2.9 Language Functions: facilitar rotación rápida en drills (8 min por función, cronometrado)."
+  },
+
+  "validation_report": {
+    "rap_id": "220501096",
+    "rap_name": "Comunicar información técnica en inglés en contextos de mantenimiento de motores diesel — Guía 1 The Workshop Specialist",
+    "cefr_level": "A1.1",
+    "assembly_date": "2026-04-19",
+    "assembled_by": "PM-2.11 Row Assembler (schema v2.0 rerun)",
+
+    "checks": {
+      "hours_direct": {
+        "expected": 48,
+        "actual": 48,
+        "detail": "Σ directo: 6(S1)+6(S2)+6(S3)+6(S4)+6(S5)+3(S6a)+15(S6b-S8) = 48h ✅",
+        "passed": true
+      },
+
+      "hours_autonomous": {
+        "expected": 12,
+        "actual": 12,
+        "detail": "Σ autónomo: 1.5(S1)+1.5(S2)+1.5(S3)+1.5(S4)+1.5(S5)+1.5(S6a)+3(S6b-S8) = 12h ✅",
+        "passed": true
+      },
+
+      "hours_total": {
+        "expected": 60,
+        "actual": 60,
+        "detail": "48h directo + 12h autónomo = 60h exacto ✅",
+        "passed": true
+      },
+
+      "hours_pm_level": {
+        "detail": "Verificación de horas a nivel PM (no nivel sesión)",
+        "passed": true,
+        "sessions": {
+          "S1": {"pm_2_1": "3.5h/0.75h", "pm_2_2": "2.5h/0.75h", "total": "6.0h/1.5h ✅"},
+          "S2": {"pm_2_5": "2.0h/0.75h", "pm_2_3": "4.0h/0.75h", "total": "6.0h/1.5h ✅"},
+          "S3": {"pm_2_10": "3.0h/0.75h", "pm_2_4": "3.0h/0.75h", "total": "6.0h/1.5h ✅"},
+          "S4": {"pm_2_6": "3.0h/0.75h", "pm_2_8": "3.0h/0.75h", "total": "6.0h/1.5h ✅"},
+          "S5": {"pm_2_9": "6.0h/1.5h", "total": "6.0h/1.5h ✅"}
+        }
+      },
+
+      "evidence_count": {
+        "expected": 6,
+        "actual": 6,
+        "detail": "Evidencia 1 (PM-2.3 Reading S2), Evidencia 2 (PM-2.4 Writing S3), Evidencia 3 (PM-2.6 Listening S4), Evidencia 4 (PM-2.8 Speaking S4), Evidencia 5 (PM-2.9 Language Functions S5), Evidencia 6 (PM-4.2 Cuestionario Consolidado S6)",
+        "passed": true
+      },
+
+      "evidence_numbering": {
+        "detail": "Evidencias numeradas 1–6 sin saltos ni repeticiones",
+        "passed": true,
+        "numeros": [1, 2, 3, 4, 5, 6]
+      },
+
+      "cuestionario_points": {
+        "expected": 25,
+        "actual": 25,
+        "detail": "PM-2.3 Reading(5) + PM-2.5 Vocabulary(5) + PM-2.10 Grammar(5) + PM-2.6 Listening(5) + PM-2.9 Language Functions(5) = 25 puntos totales ✅",
+        "passed": true,
+        "distribution": {
+          "Reading": 5,
+          "Vocabulary": 5,
+          "Grammar": 5,
+          "Listening": 5,
+          "Language_Functions": 5
+        }
+      },
+
+      "cuestionario_items": {
+        "expected": 25,
+        "actual": 25,
+        "detail": "5 ítems por skill × 5 skills = 25 ítems totales ✅",
+        "passed": true,
+        "items_per_skill": 5
+      },
+
+      "all_activities_typed": {
+        "detail": "Todas las actividades tienen type: cognitiva | procedimental",
+        "passed": true,
+        "count_cognitive": 16,
+        "count_procedural": 11,
+        "total_activities": 27,
+        "distribution_note": "16 cognitivas (input receptivo S1-S2, noticing gramatical S3, análisis de modelo S4) + 11 procedimentales (output escrito S3, oral S4-S5). Distribución equilibrada para A1.1.",
+        "pm_breakdown": {
+          "PM-2.1": "2C + 1P", "PM-2.2": "3C + 0P",
+          "PM-2.5": "2C + 1P", "PM-2.3": "3C + 0P",
+          "PM-2.10": "1C + 2P", "PM-2.4": "1C + 2P",
+          "PM-2.6": "2C + 1P", "PM-2.8": "1C + 2P",
+          "PM-2.9": "1C + 2P"
+        }
+      },
+
+      "all_activities_vobjcon": {
+        "detail": "Todas las actividades cumplen estructura Verbo Infinitivo + Objeto + Condición (≤120 chars)",
+        "passed": true,
+        "examples_passed": [
+          "Analizar titular técnico de incidente en taller para activar conocimiento previo sobre seguridad y PPE",
+          "Practicar las 5 funciones comunicativas en drills de 8 minutos con situaciones reales del taller diesel",
+          "Producir Safety Report completo para Bay 3 integrando imperativos, There is/are y preposiciones",
+          "Presentar Workshop Readiness Report al supervisor en role play de 60–90 segundos — Evidencia 4"
+        ]
+      },
+
+      "all_activities_under_120chars": {
+        "detail": "Todas las 27 actividades tienen statement ≤ 120 caracteres",
+        "passed": true
+      },
+
+      "all_evidences_have_details": {
+        "detail": "Cada evidencia tiene type + technique + instrument_number + instrument_type",
+        "passed": true,
+        "evidences_verified": 6,
+        "missing_details": 0
+      },
+
+      "no_evidence_in_transferencia": {
+        "detail": "Sesiones 6 segunda mitad, 7, 8 (Transferencia) tienen generates_evidence = false",
+        "passed": true,
+        "evidences_in_transfer": 0,
+        "note": "Las 6 evidencias están correctamente distribuidas: S2 (E1), S3 (E2), S4 (E3+E4), S5 (E5), S6a (E6 Cuestionario Consolidado)"
+      },
+
+      "instrument_types_valid": {
+        "detail": "Todos los instrument_type usan valores canónicos del schema",
+        "passed": true,
+        "values_found": ["Cuestionario", "Lista de verificación", "Escala de estimación"],
+        "note": "Evidencia 3 (PM-2.6 Listening): corregido de 'Lista de chequeo' → 'Cuestionario' (las 5 preguntas de comprensión auditiva son cuestionario, no checklist de observación)"
+      },
+
+      "schema_version_all_pms": {
+        "detail": "Todos los PM-2.x emiten _meta.schema_version: 'activity-card-v2.0'",
+        "passed": true,
+        "pms_verified": ["PM-2.1", "PM-2.2", "PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.8", "PM-2.9", "PM-2.10"],
+        "pms_deprecated": ["PM-2.7"]
+      },
+
+      "all_strategies_valid": {
+        "detail": "Todas las estrategias didácticas están en lista permitida (pm-0.md §PERMITTED DIDACTIC STRATEGIES)",
+        "passed": true,
+        "strategies_found": [
+          "Aprendizaje colaborativo", "Content-Based Learning", "CLIL",
+          "Investigación guiada", "Juego de roles", "Trabajo colaborativo",
+          "TBLT", "Simulación"
+        ],
+        "all_in_permitted_list": true
+      },
+
+      "all_techniques_valid": {
+        "detail": "Todas las técnicas didácticas están en lista permitida (pm-0.md §PERMITTED DIDACTIC TECHNIQUES)",
+        "passed": true,
+        "techniques_found": [
+          "Análisis de casos", "Investigación guiada", "Exposición y debate",
+          "Think-Pair-Share", "Jigsaw", "Mapas conceptuales",
+          "Juegos educativos", "Taller", "Conversatorio",
+          "Role play", "Simulación"
+        ],
+        "all_in_permitted_list": true
+      },
+
+      "continuity_criterion": {
+        "detail": "¿Cada S2–S5 integra RAP técnico + RAP inglés (CLIL)?",
+        "passed": true,
+        "analysis": "S1: Reflexión + contextualización — activación conocimiento previo técnico en inglés. S2: Vocabulary + Reading — input receptivo técnico con comprensión (CLIL). S3: Grammar + Writing — output escrito técnico con estructuras gramaticales. S4: Listening + Speaking — comprensión + producción oral en contexto de bay. S5: Language Functions — pragmática integrada en simulación de apertura de taller real."
+      },
+
+      "evidence_alignment": {
+        "detail": "¿Cada evidencia responde a ≥1 criterio de evaluación (Col 5)?",
+        "passed": true,
+        "alignment": {
+          "Evidencia_1_Reading": "Criterios 1 (identifica nombres en inglés) y 6 (responde cuestionario técnico)",
+          "Evidencia_2_Writing": "Criterios 3 (diligencia checklist en inglés) y 1 (vocabulario técnico correcto)",
+          "Evidencia_3_Listening": "Criterio 6 (comprensión cuestionario técnico oral)",
+          "Evidencia_4_Speaking": "Criterio 4 (comunica oralmente estado del taller al supervisor — 60–90 seg)",
+          "Evidencia_5_Language_Functions": "Criterios 4 (comunica al supervisor) y 5 (aplica normas SST en inglés)",
+          "Evidencia_6_Cuestionario_Consolidado": "Todos los criterios — síntesis de taller, herramientas, mantenimiento, seguridad, funciones comunicativas"
+        }
+      },
+
+      "bloom_sequence": {
+        "detail": "¿Secuencia Bloom ascendente S1 < S2–S3 < S4–S5 < S6 < S7–S8?",
+        "passed": true,
+        "analysis": "S1 (L1–L2): análisis de titular, identificación de zonas, debate básico. S2 (L2–L3): vocabulario contextualizado, lectura adaptada, comprensión. S3 (L2–L4): gramática inductiva, producción escrita, peer review. S4 (L3–L4): listening con cuestionario, speaking evaluado con escala. S5 (L3–L5): funciones comunicativas integradas, simulación, evaluación entre pares. S6a (L2–L3): síntesis cuestionario consolidado. S6b–S8 (L4–L6): proyecto final integrador."
+      },
+
+      "columns_1_5_populated": {
+        "detail": "¿Columnas 1–5 están completas y sin nulos críticos?",
+        "passed": true,
+        "col_1_competencia": "Presente — Interactuar en Lengua Inglesa...",
+        "col_2_rap": "codigo 220501096, descripción completa ✅",
+        "col_3_saberes": "10 items — Completo",
+        "col_4_proceso": "7 items — Completo",
+        "col_5_criterios": "6 items — Completo",
+        "nota": "competencia.codigo sigue PENDIENTE (Sofía Plus) — no bloquea continuación del pipeline"
+      },
+
+      "vocabulary_coverage": {
+        "detail": "¿Los 20 términos del Toolbelt aparecen en ≥1 Activity Card?",
+        "passed": true,
+        "terms_verified": 20,
+        "coverage_distribution": {
+          "workshop": "PM-2.1 (identificación), PM-2.2 (KWL), PM-2.5 (categorización)",
+          "service_bay": "PM-2.1, PM-2.2, PM-2.8, PM-2.9",
+          "workbench": "PM-2.2, PM-2.3, PM-2.10",
+          "toolbox": "PM-2.1, PM-2.5, PM-2.10",
+          "wrench": "PM-2.3, PM-2.5, PM-2.9",
+          "ratchet": "PM-2.3, PM-2.5",
+          "socket": "PM-2.3, PM-2.5",
+          "torque_wrench": "PM-2.3, PM-2.5, PM-2.8 (pronunciation), PM-2.9",
+          "floor_jack": "PM-2.3, PM-2.6, PM-2.8, PM-2.10",
+          "ppe": "PM-2.1, PM-2.2, PM-2.5, PM-2.6",
+          "safety_goggles": "PM-2.1, PM-2.2, PM-2.6",
+          "gloves": "PM-2.1, PM-2.6",
+          "hazard": "PM-2.1, PM-2.2",
+          "spill": "PM-2.2, PM-2.6, PM-2.9, PM-2.10",
+          "fire_extinguisher": "PM-2.1, PM-2.6, PM-2.8 (pronunciation), PM-2.10",
+          "preventive_maintenance": "PM-2.1, PM-2.5, PM-2.8 (pronunciation)",
+          "corrective_maintenance": "PM-2.1, PM-2.5",
+          "work_order": "PM-2.5, PM-2.4",
+          "checklist": "PM-2.5, PM-2.4",
+          "specialist": "PM-2.5 (Roles category), PM-2.3 (title), PM-2.8 (pronunciation)"
+        }
+      },
+
+      "grammar_alignment": {
+        "detail": "¿Los 3 grammar targets se enseñan en PM-2.10 y se evalúan en PM-2.4?",
+        "passed": true,
+        "grammar_targets_taught": [
+          "Imperatives (Gr5) — PM-2.10 Act 1 (inducción desde texto S2), Act 3 (Safety Report Bay 3); presente en PM-2.1, PM-2.6, PM-2.9 (F1)",
+          "There is / There are (Gr2 CONSOLIDA) — PM-2.10 Act 1 (inducción + error log), Act 3 (Safety Report); presente en PM-2.2, PM-2.4, PM-2.6, PM-2.9 (F3)",
+          "Prepositions of place (Gr1 extended) — PM-2.10 Act 2 (Grammar Station C), Act 3 (Safety Report); presente en PM-2.1, PM-2.4, PM-2.8, PM-2.9 (F3)"
+        ],
+        "grammar_targets_evaluated": [
+          "Imperatives — PM-2.4 (Criterio 7: 'Usa correctamente imperativos en acciones requeridas')",
+          "There is / There are — PM-2.4 (Criterio 6: 'Usa correctamente There is/are en observaciones')",
+          "Prepositions of place — PM-2.4 (Criterio 8: 'Usa preposiciones de lugar para ubicar herramientas')"
+        ],
+        "quiz_distribution": "Quiz S6 Grammar: 2 ítems Imperativo + 2 ítems There is/are + 1 ítem Preposiciones = 5 ítems"
+      }
+    },
+
+    "overall_passed": true,
+    "overall_status": "VÁLIDO — Todos los checks pasados ✅ (schema v2.0 rerun completo)",
+
+    "warnings": [
+      "competencia.codigo en col_1 sigue PENDIENTE — requiere consulta Sofía Plus antes de PM-3.6 (GFPI-F-135)",
+      "PM-2.5 genera_evidencia=false (scaffolding) pero contributes_to_consolidated_quiz=true — comportamiento correcto por diseño: aporta ítems al Quiz S6 sin evidencia formal de la sesión"
+    ],
+
+    "errors": [],
+
+    "recommendation": "La fila GFPI-F-134 está VÁLIDA y lista para PM-3.1 (Playbook Outline) y PM-4.1 (Instrumentos de Evaluación). Horas balanceadas (48h/12h). Fuentes curadas verificadas. Schema v2.0 aplicado en los 9 PM-2.x activos. Competencia.codigo pendiente — no bloquea continuación."
+  },
+
+  "trazabilidad": {
+    "fuentes_pm_12": ["PM-1.2 — Scope & Sequence: columnas 1–5, 20 términos vocabulario, 6 criterios evaluación"],
+    "fuentes_pms_2x": [
+      "PM-2.0 — Session Blueprint: estructura de 8 sesiones, distribución horas, metadata",
+      "PM-2.1 — Reflexión Inicial: 3 actividades cognitiva/procedimental S1 (schema v2.0)",
+      "PM-2.2 — Contextualización: 3 actividades cognitivas S1 (schema v2.0)",
+      "PM-2.5 — Vocabulary Scaffold: 3 actividades S2, aporte Cuestionario 5 pts (schema v2.0)",
+      "PM-2.3 — Reading Anchor: 3 actividades S2, Evidencia 1, aporte Cuestionario 5 pts (schema v2.0)",
+      "PM-2.10 — Grammar Discovery: 3 actividades S3, aporte Cuestionario 5 pts (schema v2.0)",
+      "PM-2.4 — Writing Task-Based: 3 actividades S3, Evidencia 2 (schema v2.0)",
+      "PM-2.6 — Listening Anchor: 3 actividades S4, Evidencia 3, aporte Cuestionario 5 pts (schema v2.0)",
+      "PM-2.8 — Speaking Mission: 3 actividades S4, Evidencia 4 (schema v2.0)",
+      "PM-2.9 — Language Functions: 3 actividades S5, Evidencia 5, aporte Cuestionario 5 pts (schema v2.0)"
+    ],
+    "pms_deprecated": ["PM-2.7 — Pronunciation (absorbed by PM-2.8 and PM-0 constraints layer)"],
+    "destino_pm_31": "Playbook Outline — la fila GFPI-F-134 es fuente oficial de estructura de sesiones, actividades y evidencias",
+    "destino_pm_41": "Instrumentos de Evaluación — especificaciones de 6 evidencias alimentan elaboración de cuestionarios, listas de verificación, escalas de estimación",
+    "destino_pm_42": "Question Bank Consolidado S6 — distribución de 25 ítems (5 Reading + 5 Vocabulary + 5 Grammar + 5 Listening + 5 Language Functions)",
+    "destino_pm_36": "GFPI-F-135 Learning Guide — requiere competencia.codigo (Sofía Plus) para completar encabezado formal"
+  }
+}
