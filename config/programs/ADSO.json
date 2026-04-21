@@ -1,0 +1,55 @@
+{
+  "id": "ADSO",
+  "name": "Análisis y Desarrollo de Software",
+  "code": "228118",
+  "institution": {
+    "name": "SENA",
+    "center": "Centro de Comercio y Servicios",
+    "format": "gfpi-f-135",
+    "instructor": {
+      "name": "Instructor ADSO",
+      "role": "Instructor de Bilingüismo",
+      "email": "instructor@sena.edu.co"
+    }
+  },
+  "domain": "software",
+  "cefr_level": "A2.1",
+  "competencia": "Interactuar en lengua inglesa de forma oral y escrita dentro de contextos sociales y laborales técnicos.",
+  "resultado_aprendizaje": "Reportar sobre incidentes de software, desarrollo de algoritmos y trabajo en equipo en inglés.",
+
+  "universe": {
+    "company": "TechVision Solutions (TVS)",
+    "location": "Bogotá, Colombia",
+    "vessel": "Agile Development Pod",
+    "characters": [
+      {"name": "Laura Gómez", "role": "Scrum Master", "description": "Lidera las ceremonias ágiles y elimina impedimentos"},
+      {"name": "Carlos Ruiz", "role": "Backend Developer", "description": "Experto en Python y arquitecturas cloud"}
+    ],
+    "scenarios": [
+      "Daily Scrum Meetings",
+      "Code Reviews",
+      "Bug Triage and Reporting"
+    ]
+  },
+
+  "units": [
+    {
+      "number": 1,
+      "name": "Software Development Life Cycle",
+      "grammar_targets": ["Present Simple", "Technical Imperatives"],
+      "theme": "Metodologías ágiles, fases del proyecto, vocabulario de desarrollo",
+      "vocabulary": [
+        {"term": "backend", "definition": "The server side of an application", "spanish": "servidor/backend"},
+        {"term": "frontend", "definition": "The client side of an application", "spanish": "interfaz/frontend"},
+        {"term": "bug", "definition": "An error in a computer program", "spanish": "error/falla"},
+        {"term": "deployment", "definition": "Moving code to a production environment", "spanish": "despliegue"}
+      ],
+      "stories": []
+    }
+  ],
+
+  "sessions_per_unit": 5,
+  "hours_per_session": 3,
+  "skip_pm_1_1": true,
+  "archetype_profile": "balanced"
+}
