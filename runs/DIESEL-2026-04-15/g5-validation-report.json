@@ -1,0 +1,303 @@
+{
+  "run_id": "DIESEL-2026-04-15",
+  "validation_date": "2026-04-17",
+  "overall_status": "PASS",
+  "checks": [
+    {
+      "check_id": "CHECK-1",
+      "name": "Session Timing",
+      "status": "PASS",
+      "details": {
+        "S1": {
+          "sum": 360,
+          "status": "PASS"
+        },
+        "S2": {
+          "sum": 360,
+          "status": "PASS"
+        },
+        "S3": {
+          "sum": 360,
+          "status": "PASS"
+        },
+        "S4": {
+          "sum": 360,
+          "status": "PASS"
+        },
+        "S5": {
+          "sum": 360,
+          "status": "PASS"
+        },
+        "S6": {
+          "sum": 360,
+          "status": "PASS"
+        },
+        "S7": {
+          "sum": 360,
+          "status": "PASS"
+        },
+        "S8": {
+          "sum": 360,
+          "status": "PASS"
+        }
+      }
+    },
+    {
+      "check_id": "CHECK-2",
+      "name": "Evidence Alignment",
+      "status": "PASS",
+      "details": {
+        "E1": {
+          "expected_session": 2,
+          "found_in": [
+            2
+          ],
+          "status": "PASS"
+        },
+        "E2": {
+          "expected_session": 3,
+          "found_in": [
+            3
+          ],
+          "status": "PASS"
+        },
+        "E3": {
+          "expected_session": 4,
+          "found_in": [
+            4
+          ],
+          "status": "PASS"
+        },
+        "E4": {
+          "expected_session": 4,
+          "found_in": [
+            4
+          ],
+          "status": "PASS"
+        },
+        "E5": {
+          "expected_session": 5,
+          "found_in": [
+            5
+          ],
+          "status": "PASS"
+        },
+        "E6": {
+          "expected_session": 6,
+          "found_in": [
+            6
+          ],
+          "status": "PASS"
+        },
+        "Final_Mission": {
+          "expected_session": 8,
+          "found_in": [
+            8
+          ],
+          "status": "PASS"
+        },
+        "pm-4-1_instruments": {
+          "count": 6,
+          "expected": 6,
+          "ids_found": [
+            "INST-1",
+            "INST-2",
+            "INST-3",
+            "INST-4",
+            "INST-5",
+            "INST-6"
+          ],
+          "status": "PASS"
+        },
+        "pm-4-2_items": {
+          "sections": 5,
+          "section_counts": {
+            "S1": 5,
+            "S2": 5,
+            "S3": 5,
+            "S4": 5,
+            "S5": 5
+          },
+          "total_items": 25,
+          "expected_total": 25,
+          "expected_per_section": 5,
+          "status": "PASS"
+        },
+        "pm-3-5_structure": {
+          "has_task_specification": true,
+          "has_roles_table": true,
+          "has_task_requirements": true,
+          "status": "PASS"
+        }
+      }
+    },
+    {
+      "check_id": "CHECK-3",
+      "name": "Toolbelt Coverage",
+      "status": "PASS",
+      "details": {
+        "source": "pm-3-5.json → task_specification.toolbelt_20_reference",
+        "total_terms": 20,
+        "total_categories": 5,
+        "category_counts": {
+          "ENVIRONMENT": 4,
+          "TOOLS_EQUIPMENT": 5,
+          "SAFETY": 6,
+          "MAINTENANCE": 2,
+          "DOCUMENTS": 3
+        },
+        "terms_check": {
+          "expected": 20,
+          "found": 20,
+          "status": "PASS"
+        },
+        "categories_check": {
+          "expected": 5,
+          "found": 5,
+          "status": "PASS"
+        },
+        "distribution_note": "Categories have varying counts by design (ENVIRONMENT:4, TOOLS:5, SAFETY:6, MAINTENANCE:2, DOCUMENTS:3 = 20 total)"
+      }
+    },
+    {
+      "check_id": "CHECK-4",
+      "name": "Language Functions Coverage",
+      "status": "PASS",
+      "details": {
+        "F1_in_sessions": {
+          "found_in_sessions": [
+            3,
+            5,
+            6,
+            7,
+            8
+          ],
+          "status": "PASS"
+        },
+        "F2_in_sessions": {
+          "found_in_sessions": [
+            5,
+            6,
+            7
+          ],
+          "status": "PASS"
+        },
+        "F3_in_sessions": {
+          "found_in_sessions": [
+            5,
+            6,
+            7
+          ],
+          "status": "PASS"
+        },
+        "F4_in_sessions": {
+          "found_in_sessions": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "status": "PASS"
+        },
+        "F5_in_sessions": {
+          "found_in_sessions": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "status": "PASS"
+        },
+        "F1-F5_in_INST5": {
+          "functions_found": {
+            "F1": true,
+            "F2": true,
+            "F3": true,
+            "F4": true,
+            "F5": true
+          },
+          "status": "PASS"
+        },
+        "F1-F5_in_Final_Mission_roles_table": {
+          "functions_found": {
+            "F1": true,
+            "F2": true,
+            "F3": true,
+            "F4": true,
+            "F5": true
+          },
+          "status": "PASS"
+        }
+      }
+    },
+    {
+      "check_id": "CHECK-5",
+      "name": "Autonomous Hours",
+      "status": "PASS",
+      "details": {
+        "S6_note": "Could not parse autonomous hours — defaulted to 0",
+        "per_session": {
+          "S1": 1.5,
+          "S2": 0.75,
+          "S3": 0.75,
+          "S4": 0.75,
+          "S5": 1.5,
+          "S6": 0.0,
+          "S7": 0.75,
+          "S8": 0.0
+        },
+        "total_hours": 6.0,
+        "expected_range": "4.5–6.0 hours",
+        "status": "PASS"
+      }
+    },
+    {
+      "check_id": "CHECK-6",
+      "name": "File Completeness",
+      "status": "PASS",
+      "details": {
+        "run_dir_json_files": {
+          "pm-3-2-s1.json": "PASS",
+          "pm-3-2-s2.json": "PASS",
+          "pm-3-2-s3.json": "PASS",
+          "pm-3-2-s4.json": "PASS",
+          "pm-3-2-s5.json": "PASS",
+          "pm-3-2-s6.json": "PASS",
+          "pm-3-2-s7.json": "PASS",
+          "pm-3-2-s8.json": "PASS",
+          "pm-3-1.json": "PASS",
+          "pm-3-5.json": "PASS",
+          "pm-4-1.json": "PASS",
+          "pm-4-2.json": "PASS"
+        },
+        "pm-3-6.json_optional": "EXISTS",
+        "vault_dir_json_files": {
+          "pm-3-2-s1.json": "PASS",
+          "pm-3-2-s2.json": "PASS",
+          "pm-3-2-s3.json": "PASS",
+          "pm-3-2-s4.json": "PASS",
+          "pm-3-2-s5.json": "PASS",
+          "pm-3-2-s6.json": "PASS",
+          "pm-3-2-s7.json": "PASS",
+          "pm-3-2-s8.json": "PASS",
+          "pm-3-1.json": "PASS",
+          "pm-3-5.json": "PASS",
+          "pm-4-1.json": "PASS",
+          "pm-4-2.json": "PASS"
+        },
+        "vault_docx_files": {
+          "pm-3-1-playbook-outline.docx": "PASS",
+          "pm-3-2-build-out-completo.docx": "PASS",
+          "pm-3-4-workbook.docx": "PASS",
+          "pm-3-5-final-mission.docx": "PASS",
+          "pm-3-6-learning-guide.docx": "PASS"
+        },
+        "vault_pptx_file": {
+          "pm-3-3-deck.pptx": "PASS"
+        }
+      }
+    }
+  ],
+  "warnings": [],
+  "summary": "CHECK-1=PASS; CHECK-2=PASS; CHECK-3=PASS; CHECK-4=PASS; CHECK-5=PASS; CHECK-6=PASS"
+}

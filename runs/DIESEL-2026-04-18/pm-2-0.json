@@ -1,0 +1,184 @@
+{
+  "pm_id": "PM-2.0",
+  "run_id": "DIESEL-2026-04-18",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "generated_at": "2026-04-18",
+  "status": "completed",
+  "integration_note": "G1 integra B1 (taller, herramientas, EPP, SST) + B2 (clasificación vehículos, sistemas automotor, manuales). Programa Técnico.",
+  "session_blueprint": {
+    "rap_id": "220501096",
+    "rap_name": "Comunicar información técnica en inglés en contextos de mantenimiento de motores",
+    "competencia": "Interactuar en Lengua Inglesa de Forma Oral y Escrita dentro de Contextos Sociales y Laborales según el MCER",
+    "program_info": {
+      "program_name": "Mantenimiento de los Motores Diesel",
+      "program_type": "Técnico",
+      "guide": "Guía 1.1 — The Workshop Specialist",
+      "bloques_integrados": ["B1 — Workshop & Tools", "B2 — Vehicle Systems & Manuals"],
+      "cefr_level": "A1.1",
+      "sector": "Automotriz — Mantenimiento Diesel"
+    },
+    "total_hours": 60,
+    "direct_hours": 48,
+    "autonomous_hours": 12,
+    "sessions": [
+      {
+        "session": 1,
+        "nombre": "The Workshop Comes Alive",
+        "fase_sena": "Análisis — Reflexión Inicial + Contextualización",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.1", "PM-2.2"],
+        "bloque_focus": "B1",
+        "technical_focus": "Tipos de talleres automotrices, organización del área, primeras herramientas y EPP. Activación de conocimiento previo. Vocabulario de entrada (15 términos B1).",
+        "transversal_rap": "Inglés — Engagement, Academic Language for Technical Reflection (A1.1)",
+        "generates_evidence": false,
+        "autonomous_task": "Photograph 5 tools from your workshop at home or school. Write the name in English under each photo."
+      },
+      {
+        "session": 2,
+        "nombre": "Read the Manual",
+        "fase_sena": "Apropiación — Comprensión Lectora (Reading)",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.5", "PM-2.3"],
+        "bloque_focus": "B2",
+        "technical_focus": "Manuales técnicos: navegación, table of contents, tablas de especificaciones. Clasificación de vehículos por uso y combustible. Sistemas principales del automotor (vocabulario B2).",
+        "transversal_rap": "Inglés — Technical Vocabulary (30 términos), Reading Comprehension Manual Navigation (A1.1)",
+        "generates_evidence": true,
+        "evidences": [
+          {"numero": 1, "codigo": "E1", "tipo": "Desempeño", "instrumento": "Lista de Chequeo No 1 — Reading (5 ítems)", "source_pm": "PM-2.3", "puntos": 5},
+          {"numero": null, "tipo": "Aporte Quiz S6", "instrumento": "Vocabulary B2 — 5 términos vehicle systems", "source_pm": "PM-2.5"}
+        ],
+        "autonomous_task": "Find the table of contents in a real vehicle manual (any brand). List 3 sections you find. Write the section name in English."
+      },
+      {
+        "session": 3,
+        "nombre": "Write the Report",
+        "fase_sena": "Apropiación — Producción Escrita (Writing)",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.10", "PM-2.4"],
+        "bloque_focus": "B1+B2",
+        "technical_focus": "Formatos técnicos integrados: work order + vehicle reception checklist. Grammar: Imperatives, There is/are, Present Simple description. Escritura técnica B1+B2.",
+        "transversal_rap": "Inglés — Grammar in Context, Written Technical Production (A1.1)",
+        "generates_evidence": true,
+        "evidences": [
+          {"numero": 2, "codigo": "E2", "tipo": "Producto", "instrumento": "Lista de Chequeo No 2 — Writing (5 ítems)", "source_pm": "PM-2.4", "puntos": 5},
+          {"numero": null, "tipo": "Aporte Quiz S6", "instrumento": "Grammar — 5 ítems imperatives/There is-are/Present Simple", "source_pm": "PM-2.10"}
+        ],
+        "autonomous_task": "Complete a vehicle reception checklist in English for a vehicle of your choice. Include: type, fuel, 3 systems identified."
+      },
+      {
+        "session": 4,
+        "nombre": "Tuning In & Speaking Up",
+        "fase_sena": "Apropiación — Comprensión Auditiva + Producción Oral",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.6", "PM-2.8"],
+        "bloque_focus": "B1",
+        "technical_focus": "EPP y seguridad en el taller: listening (diálogo supervisor-aprendiz, Motor Age adaptado). Speaking: safety briefing al supervisor describiendo el taller y un hazard identificado.",
+        "transversal_rap": "Inglés — Listening Comprehension + Oral Production, Safety Communication (A1.1)",
+        "generates_evidence": true,
+        "evidences": [
+          {"numero": 3, "codigo": "E3", "tipo": "Desempeño", "instrumento": "Lista de Chequeo No 3 — Listening (5 ítems)", "source_pm": "PM-2.6", "puntos": 5},
+          {"numero": 4, "codigo": "E4", "tipo": "Desempeño", "instrumento": "Lista de Chequeo No 4 — Speaking (5 ítems)", "source_pm": "PM-2.8", "puntos": 5},
+          {"numero": null, "tipo": "Aporte Quiz S6", "instrumento": "Listening — 5 ítems reconocimiento auditivo seguridad", "source_pm": "PM-2.6"}
+        ],
+        "autonomous_task": "Practice your safety briefing at home. Record a 60-second audio describing your workshop area and one hazard you see."
+      },
+      {
+        "session": 5,
+        "nombre": "Systems in Action",
+        "fase_sena": "Apropiación — Integración Pragmática (Language Functions)",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.9"],
+        "bloque_focus": "B2",
+        "technical_focus": "Sistemas del automotor en contexto comunicativo: describir sistemas, dar instrucciones de inspección, solicitar información del manual, reportar estado al supervisor. Funciones F1–F5 aplicadas a B2.",
+        "transversal_rap": "Inglés — Communicative Competence, Language Functions in Vehicle Systems Context (A1.1)",
+        "generates_evidence": true,
+        "evidences": [
+          {"numero": 5, "codigo": "E5", "tipo": "Desempeño", "instrumento": "Lista de Chequeo No 5 — Language Functions (5 ítems)", "source_pm": "PM-2.9", "puntos": 5},
+          {"numero": null, "tipo": "Aporte Quiz S6", "instrumento": "Language Functions — 5 ítems uso pragmático B1+B2", "source_pm": "PM-2.9"}
+        ],
+        "autonomous_task": "Write 5 sentences using the 5 language functions. Use one vehicle system in each sentence."
+      },
+      {
+        "session": "6",
+        "nombre": "Prove What You Know",
+        "fase_sena": "Evaluación Sumativa",
+        "direct_hours": 4,
+        "autonomous_hours": 0.5,
+        "pms_active": ["Cuestionario Consolidado S6 — PM-4.2"],
+        "bloque_focus": "B1+B2",
+        "technical_focus": "Síntesis de: herramientas, mantenimiento, EPP, hazards, clasificación vehículos, sistemas automotor, manuales — todo en inglés A1.1.",
+        "transversal_rap": "Inglés — Knowledge Synthesis B1+B2: Workshop, Safety, Tools, Vehicle Systems, Manuals (A1.1)",
+        "generates_evidence": true,
+        "evidences": [
+          {"numero": 6, "codigo": "E6", "tipo": "Conocimiento", "instrumento": "Cuestionario Consolidado No 6 — 25 pts", "source_pm": "PM-4.2", "puntos": 25}
+        ],
+        "autonomous_task": null
+      },
+      {
+        "session": 7,
+        "nombre": "Final Mission Prep",
+        "fase_sena": "Transferencia — Preparación Misión Final",
+        "direct_hours": 7,
+        "autonomous_hours": 2,
+        "pms_active": ["PM-3.5 preparación"],
+        "bloque_focus": "B1+B2",
+        "technical_focus": "Preparación de la Misión Final: role-play de recepción de vehículo, revisión del manual, inspección de taller, briefing al supervisor. Ensayo y retroalimentación formativa.",
+        "transversal_rap": "Inglés — Applied Technical Communication — B1+B2 Integration",
+        "generates_evidence": false,
+        "autonomous_task": "Prepare your Vehicle Reception Report draft. Practice the briefing with a partner."
+      },
+      {
+        "session": 8,
+        "nombre": "The Full Circle",
+        "fase_sena": "Transferencia — Misión Final",
+        "direct_hours": 7,
+        "autonomous_hours": 2,
+        "pms_active": ["PM-3.5 — The Vehicle Reception Report (Final Mission)"],
+        "bloque_focus": "B1+B2",
+        "technical_focus": "Misión Final ABP: recepción de vehículo de carga diesel, inspección del taller, identificación de sistemas en el manual, trabajo en equipo, reporte oral al supervisor — todo en inglés.",
+        "transversal_rap": "Inglés — Applied Technical Communication in Real Workshop + Vehicle Context",
+        "generates_evidence": true,
+        "evidences": [
+          {"numero": 7, "codigo": "E7 — Final Mission", "tipo": "Desempeño integrador", "instrumento": "Escala de Estimación No 6 — 6 criterios", "source_pm": "PM-3.5", "puntos": 5}
+        ],
+        "autonomous_task": null
+      }
+    ],
+    "hours_validation": {
+      "direct_hours": {
+        "expected": 48,
+        "breakdown": "S1:6 + S2:6 + S3:6 + S4:6 + S5:6 + S6:4 + S7:7 + S8:7",
+        "sum": 48,
+        "status": "VÁLIDO ✅"
+      },
+      "autonomous_hours": {
+        "expected": 12,
+        "breakdown": "S1:1.5 + S2:1.5 + S3:1.5 + S4:1.5 + S5:1.5 + S6:0.5 + S7:2 + S8:2",
+        "sum": 12,
+        "status": "VÁLIDO ✅"
+      },
+      "total_hours": {"expected": 60, "actual": 60, "status": "VÁLIDO ✅"}
+    },
+    "cuestionario_s6_preview": {
+      "total_points": 25,
+      "skills": [
+        {"skill": "Reading", "source_pm": "PM-2.3", "points": 5, "source_text": "Manual técnico adaptado A1.1 — navegación + vehicle classification"},
+        {"skill": "Vocabulary", "source_pm": "PM-2.5", "points": 5, "source_text": "30 términos B1+B2 — taller, herramientas, sistemas del automotor"},
+        {"skill": "Grammar", "source_pm": "PM-2.10", "points": 5, "source_text": "Imperatives, There is/are, Present Simple, Verb To Be, Have/Has"},
+        {"skill": "Listening", "source_pm": "PM-2.6", "points": 5, "source_text": "Motor Age Safety diálogo adaptado A1.1 — taller + EPP"},
+        {"skill": "Language Functions", "source_pm": "PM-2.9", "points": 5, "source_text": "F1–F5 en contexto B1+B2: instrucciones, solicitudes, descripciones, reportes"}
+      ]
+    },
+    "scoring_canon": {
+      "E1_E5": "5 pts c/u = 25 pts",
+      "E6_cuestionario": "25 pts",
+      "final_mission": "5 pts",
+      "total": "55 pts"
+    }
+  }
+}

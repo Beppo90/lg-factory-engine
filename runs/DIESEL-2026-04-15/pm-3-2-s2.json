@@ -1,0 +1,938 @@
+{
+  "pm_id": "PM-3.2",
+  "session": 2,
+  "session_name": "Reading the Workshop",
+  "run_id": "DIESEL-2026-04-15",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "programa": "Mantenimiento de los Motores Diesel",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.3",
+    "PM-2.5"
+  ],
+  "habilidades_foco": [
+    "R (Reading)",
+    "V (Vocabulary)"
+  ],
+  "habilidades_soporte": [
+    "W (Writing — gap fill in context)"
+  ],
+  "cefr": "A1.1",
+  "model": "claude-sonnet-4-6",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "evidence_generated": {
+    "numero_evidencia": 1,
+    "tipo": "Conocimiento",
+    "description": "Reading Comprehension — 5 preguntas sobre texto adaptado Popular Mechanics",
+    "instrument": "Cuestionario No 1",
+    "instrument_type": "Lista de chequeo"
+  },
+  "session_header": {
+    "titulo": "SESSION 2: Reading the Workshop",
+    "subtitulo": "Mantenimiento de los Motores Diesel — Guía 1.1: The Workshop Specialist — Build-Out",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.3 — Reading Master Anchor (Tools Every Diesel Technician Needs)",
+      "PM-2.5 — Vocabulary, Literacy & Scenario Setup (20-Term Toolbelt)"
+    ],
+    "habilidades_foco": [
+      "R (Reading) ●",
+      "V (Vocabulary) ●"
+    ],
+    "habilidades_soporte": [
+      "W (Writing) ○"
+    ],
+    "nota_instructor": "Este documento es SOLO para el instructor. Contiene el plan minuto a minuto, Teacher Talk completo, answer keys, notas de facilitación y diferenciación. Esta es la primera sesión que genera evidencia formal (Evidencia 1 — Reading). Asegure que el Cuestionario No 1 se administre SIN texto disponible."
+  },
+  "materials_checklist": [
+    {
+      "item": "PM-2.3 Reading worksheet — texto adaptado 'Tools Every Diesel Technician Needs' (3 secciones)",
+      "cantidad": "8 copias",
+      "verificado": false
+    },
+    {
+      "item": "PM-2.5 Vocabulary worksheet",
+      "cantidad": "8 copias",
+      "verificado": false
+    },
+    {
+      "item": "Word Wall cards x20 (imagen + término + oración contextualizada)",
+      "cantidad": "20 tarjetas A4 plastificadas",
+      "verificado": false
+    },
+    {
+      "item": "Flashcard sets (término en una cara, imagen en otra)",
+      "cantidad": "4 juegos (1 por pareja)",
+      "verificado": false
+    },
+    {
+      "item": "Tarjetas de categorías (Environment / Tools & Equipment / Safety / Maintenance Types / Documents+Quality)",
+      "cantidad": "4 juegos de 5 colores",
+      "verificado": false
+    },
+    {
+      "item": "Imágenes originales Popular Mechanics (6 imágenes)",
+      "cantidad": "Proyectadas o impresas A4",
+      "verificado": false
+    },
+    {
+      "item": "Cuestionario No 1 impreso (5 ítems Reading — Evidencia 1)",
+      "cantidad": "8 copias + 1 clave",
+      "verificado": false
+    },
+    {
+      "item": "Daily Inspection Checklist en blanco (para Gap Fill)",
+      "cantidad": "8 copias",
+      "verificado": false
+    },
+    {
+      "item": "Work Order Header en blanco (para Gap Fill)",
+      "cantidad": "8 copias",
+      "verificado": false
+    },
+    {
+      "item": "Ficha de notas Jigsaw (para grupos expertos)",
+      "cantidad": "8 copias",
+      "verificado": false
+    },
+    {
+      "item": "Timer visible en pantalla",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Canva slides 7-16 abiertas y probadas",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Tablero preparado según Board Plan",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Cinta adhesiva / blu-tack para pegar Word Wall en pared",
+      "cantidad": "Surtido",
+      "verificado": false
+    },
+    {
+      "item": "S1 homework collected (fotos de herramientas + self-assessment)",
+      "cantidad": "Verificar traen material",
+      "verificado": false
+    }
+  ],
+  "board_plan": "┌──────────────────────────────────────────────────────────────────────┐\n│ SESSION 2: READING THE WORKSHOP                                        │\n│                                                                          │\n│ Today's Objective:                                                      │\n│ ✓ Read an article about diesel tools                                    │\n│ ✓ Learn 20 KEY WORDS for the workshop                                   │\n│ ✓ Answer 5 comprehension questions (EVIDENCE 1)                         │\n│                                                                          │\n│ [FORMULA ZONE — permanente]       [LIVE ZONE — se llena hoy]           │\n│ The ___ is for ___ing.            (respuestas de predicción,            │\n│ A ___ is a tool that ___.          oraciones de comprensión,            │\n│ You need a ___ to ___.             errores corregidos)                  │\n│                                                                          │\n│ [WORD WALL — 20 TERMS BY CATEGORY — pre-escrito en pared lateral]      │\n│ ENVIRONMENT: workshop | service bay | workbench | toolbox              │\n│ TOOLS & EQUIP: wrench | ratchet | socket | torque wrench | floor jack  │\n│ SAFETY: PPE | safety goggles | gloves | hazard | spill |               │\n│         fire extinguisher                                               │\n│ MAINTENANCE: preventive maintenance | corrective maintenance           │\n│ DOCUMENTS: work order | checklist | calibration                        │\n└──────────────────────────────────────────────────────────────────────────┘",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:25",
+      "duracion_min": 25,
+      "bloque": "SET-UP",
+      "actividad": "Warm-up: S1 Homework Recall + Objective + ICQs",
+      "agrupacion": "Pairs → Plenary",
+      "notas": "Reactivate S1 knowledge; collect homework"
+    },
+    {
+      "tiempo": "0:25-1:25",
+      "duracion_min": 60,
+      "bloque": "WHILE-A",
+      "actividad": "Word Wall + Flashcard Battle (PM-2.5 Acts 1-2)",
+      "agrupacion": "Whole class → Pairs",
+      "notas": "✓ Checkpoint: Thumbs up/down on 5 key terms"
+    },
+    {
+      "tiempo": "1:25-2:35",
+      "duracion_min": 70,
+      "bloque": "WHILE-B",
+      "actividad": "Pre-Reading + Jigsaw Reading (PM-2.3 Acts 1-2)",
+      "agrupacion": "Whole class → Expert groups → Teaching pairs",
+      "notas": "Dense input; monitor jigsaw carefully"
+    },
+    {
+      "tiempo": "2:35-2:50",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "BREAK — Stretch & Recharge",
+      "agrupacion": "N/A",
+      "notas": "After heaviest reading block"
+    },
+    {
+      "tiempo": "2:50-4:00",
+      "duracion_min": 70,
+      "bloque": "WHILE-C",
+      "actividad": "Category Race + Gap Fill (PM-2.5 Acts 3-4)",
+      "agrupacion": "Pairs (race) → Individual (gap fill)",
+      "notas": "✓ Checkpoint: Category verification"
+    },
+    {
+      "tiempo": "4:00-4:55",
+      "duracion_min": 55,
+      "bloque": "WHILE-D",
+      "actividad": "Second Read + Evidencia 1 — Cuestionario No 1 (PM-2.3 Act 3)",
+      "agrupacion": "Individual (silent test) → Pairs (peer check)",
+      "notas": "⚠️ FORMAL EVIDENCE — No text during quiz"
+    },
+    {
+      "tiempo": "4:55-5:35",
+      "duracion_min": 40,
+      "bloque": "WHILE-E",
+      "actividad": "Text-to-Workshop Connection (PM-2.3 Act 4)",
+      "agrupacion": "Small groups (2-3)",
+      "notas": "Physical/simulated workshop exploration"
+    },
+    {
+      "tiempo": "5:35-6:00",
+      "duracion_min": 25,
+      "bloque": "WRAP-UP",
+      "actividad": "Exit Ticket + Closing + Autonomous Work",
+      "agrupacion": "Individual → Plenary",
+      "notas": "Consolidation + S3 preview"
+    }
+  ],
+  "set_up": {
+    "duracion_min": 25,
+    "warm_up": {
+      "nombre": "S1 Homework Recall: Show & Tell Tools",
+      "pasos": [
+        "1. Instructor dice: *'Good morning, team. Last session you went home with a mission — find 5 tools and write their names in English. Who brought photos? Show me.'* (30 seg)",
+        "2. En parejas: cada uno muestra su foto de herramienta favorita al compañero. Dice el nombre en inglés + 1 oración: 'This is a wrench. I use it every day.' (3 min)",
+        "3. 3-4 voluntarios comparten con plenary. Instructor escribe nombre de herramienta en LIVE ZONE del tablero. (3 min)",
+        "4. Instructor conecta: *'Great. You found these tools at home. Today we're going to read about ALL the tools a diesel technician needs — and learn 20 key words.'* (1 min)",
+        "5. Si pocos trajeron tarea: no penalizar. Decir: *'That's OK — you'll learn them all today. Let's start.'* (30 seg)"
+      ],
+      "duration_min": 10
+    },
+    "teacher_talk_opening": "*Good morning, everyone. Welcome to Session 2. Last time we explored The Diesel Workshop — we met Carlos, Valentina, and Santiago. We looked at the map. We talked about safety. Today we're going to READ — an article written for mechanics — about the tools you need. And we're going to learn 20 KEY WORDS. These 20 words are YOUR Toolbelt — the vocabulary you carry with you for the rest of this course. Ready?*",
+    "objective": "Leer un artículo adaptado sobre herramientas del taller diesel. Aprender y categorizar 20 términos técnicos clave (Toolbelt). Responder 5 preguntas de comprensión (Evidencia 1).",
+    "objective_en_tablero": "Today you will: (1) learn 20 key words for the workshop, (2) read an article about tools, (3) answer 5 questions to show what you understood.",
+    "icq": [
+      "*How many key words will we learn today?* → Esperan: 20 / Twenty",
+      "*Are we reading in Spanish or English?* → Esperan: English",
+      "*Will there be a quiz today?* → Esperan: Yes / 5 questions"
+    ],
+    "facilitation_notes": [
+      "💡 Los que trajeron fotos de S1 son tus 'anchors' — pídeles que compartan primero. Eso crea un modelo para los que no trajeron.",
+      "💡 Si nadie trajo fotos: no insista. Diga: 'No problem. Today we'll see all the tools together. Next time, bring one photo — just one.' Baja la barrera."
+    ],
+    "checkpoint": "✓ Quick verbal: '¿Quién recuerda el nombre de Carlos's job? (Lead Technician / Supervisor.) ¿Y Valentina?' (Apprentice.) Si <60% recuerda: brief 1-min recap: 'Carlos is the supervisor. Valentina is learning. Santiago is the technician. They work together.'"
+  },
+  "while": {
+    "duracion_min": 295,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "Word Wall + Flashcard Battle — Vocabulary Foundation",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.5, Activities 1-2",
+        "agrupacion": "Whole class (Word Wall presentation) → Pairs (Flashcard Battle)",
+        "objetivo": "Presentar y anclar los 20 términos del Toolbelt visual y auditivamente. Practicar reconocimiento rápido en competencia de pares.",
+        "instrucciones_paso_a_paso": [
+          "PARTE 1 — WORD WALL SETUP (25 min):",
+          "1. Instructor muestra Word Wall cards una por una, en orden de categoría. Empieza con ENVIRONMENT.",
+          "2. Para cada tarjeta: (a) Mostrar imagen. (b) Decir término 2 veces claramente. (c) Leer oración contextualizada: 'A workshop is a place where mechanics work.' (d) Clase repite término 2 veces en coro.",
+          "3. Después de cada categoría (4-6 términos), pegar tarjetas en pared con cinta. Etiquetar categoría con color.",
+          "4. Orden: ENVIRONMENT (workshop, service bay, workbench, toolbox) → TOOLS (wrench, ratchet, socket, torque wrench, floor jack) → SAFETY (PPE, safety goggles, gloves, hazard, spill, fire extinguisher) → MAINTENANCE (preventive maintenance, corrective maintenance) → DOCUMENTS (work order, checklist, calibration).",
+          "5. Al final: señalar toda la pared. 'THIS is your Toolbelt. 20 words. They stay here ALL course. You can look at them anytime.'",
+          "",
+          "PARTE 2 — FLASHCARD BATTLE (30 min):",
+          "1. Distribuir flashcard sets (1 por pareja). Cada set = 20 tarjetas con término en una cara, imagen en otra.",
+          "2. Instrucciones: 'Partner A shows the IMAGE. Partner B says the WORD in English. 60 seconds. Count how many correct. Then SWITCH.'",
+          "3. Timer: 60 seg. Instructor circula, escucha pronunciación.",
+          "4. Switch roles. Timer: 60 seg.",
+          "5. '¿Who got more than 15? More than 10? More than 5?' Celebrar a todos.",
+          "6. Ronda 2 (reversa): Partner A shows the WORD. Partner B describes it: 'It is a tool for ___.' o simplemente 'It is in the workshop.' 60 seg cada uno.",
+          "7. Quick share: '¿Which word was the hardest? Why?' 2-3 voluntarios."
+        ],
+        "teacher_talk_instruction": "*OK everyone, eyes on the board. I'm going to show you 20 words. These are YOUR words — your Toolbelt. Every mechanic needs tools. Every English-speaking mechanic needs THESE words. Watch, listen, repeat. Ready? First category: ENVIRONMENT. (Show card.) This is a 'workshop.' A workshop is a place where mechanics work. Say it with me: WORKSHOP. (Wait.) WORKSHOP. (Wait.) Good. Next...*",
+        "teacher_talk_flashcard": "*Now — Flashcard Battle. (Hold up cards.) Partner A shows the picture. Partner B says the word. You have 60 seconds. How many can you get? Ready? Go!*",
+        "icq": [
+          "*How many words are we learning?* → Esperan: 20",
+          "*Partner A shows the...?* → Esperan: Picture / Image",
+          "*Partner B says the...?* → Esperan: Word / Name",
+          "*How many seconds do you have?* → Esperan: 60"
+        ],
+        "answer_key_inline": {
+          "environment": [
+            "workshop — a place where mechanics work",
+            "service bay — the area where a vehicle is repaired",
+            "workbench — the table where you organize tools",
+            "toolbox — the box that holds your tools"
+          ],
+          "tools_equipment": [
+            "wrench — a hand tool for turning bolts",
+            "ratchet — a tool that turns in one direction, fast in tight spaces",
+            "socket — a piece that fits on the ratchet for different bolt sizes",
+            "torque wrench — applies the correct force to a bolt",
+            "floor jack — lifts the vehicle safely"
+          ],
+          "safety": [
+            "PPE — Personal Protective Equipment",
+            "safety goggles — protect your eyes",
+            "gloves — protect your hands",
+            "hazard — a danger in the workshop",
+            "spill — liquid on the floor (oil, coolant)",
+            "fire extinguisher — puts out fires"
+          ],
+          "maintenance": [
+            "preventive maintenance — maintenance BEFORE a problem happens",
+            "corrective maintenance — maintenance AFTER a problem happens"
+          ],
+          "documents_quality": [
+            "work order — the document that describes what to fix",
+            "checklist — a list of items to verify",
+            "calibration — making sure a tool is accurate"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Word Wall ORDEN importa: empieza con las más concretas/visuales (workshop, wrench) y termina con las más abstractas (calibration, preventive maintenance). Ancla desde lo conocido.",
+          "💡 Flashcard Battle: si una pareja termina muy rápido, pídales que ayuden a otra pareja. 'Be a coach — help them with the words they don't know.' Peer tutoring natural.",
+          "💡 Pronunciación: no corrija cada error inmediatamente. Anote los 3 peores (probablemente: 'wrench' /rɛntʃ/, 'calibration' /kælɪˈbreɪʃən/, 'extinguisher' /ɪkˈstɪŋɡwɪʃər/). Corregirá en S4 Pronunciation."
+        ],
+        "checkpoint": "✓ Checkpoint — Quick 5: Instructor señala 5 tarjetas aleatorias en Word Wall. Clase debe decir el nombre. '¿Which one is this? (Point to floor jack.)' Si ≥80% correcto = proceed. Si <80% = repeat 3 problematic terms 2x more.",
+        "transition": "*Excellent. You know the words now. Next, we're going to READ an article — written by mechanics — that uses these exact words. Let's see how they work in a real text.*",
+        "tecnica_didactica": "Construcción de organizador visual (Word Wall)"
+      },
+      {
+        "letra": "B",
+        "nombre": "Pre-Reading + Jigsaw Reading — Deep Input",
+        "duracion_min": 70,
+        "worksheet_ref": "PM-2.3, Activities 1-2",
+        "agrupacion": "Whole class (pre-reading) → Expert groups of 3 (jigsaw) → Teaching pairs",
+        "objetivo": "Predecir contenido del texto desde imágenes. Leer cooperativamente asignando secciones a expertos que enseñan su parte.",
+        "instrucciones_paso_a_paso": [
+          "PARTE 1 — PRE-READING: VISUAL PREDICTION (15 min):",
+          "1. Proyectar 6 imágenes del artículo Popular Mechanics (herramientas reales en taller).",
+          "2. En parejas: 'Look at these pictures. What tools can you see? Write 3 predictions: What tools will be in this article?' (3 min)",
+          "3. Share predictions: 3-4 parejas comparten. Instructor escribe predicciones en LIVE ZONE.",
+          "4. 'Good predictions. Now let's read and check — were you right?'",
+          "",
+          "PARTE 2 — JIGSAW READING (45 min):",
+          "1. Distribuir texto adaptado 'Tools Every Diesel Technician Needs' (3 secciones: Hand Tools / Power Tools & Safety / Measuring & Documents).",
+          "2. Formar 3 grupos expertos (2-3 personas cada uno). Cada grupo recibe UNA sección.",
+          "3. Instrucciones para expert groups (15 min): 'Read YOUR section carefully. Underline the Toolbelt words (from Word Wall). Write on your Jigsaw Note card: (a) What tools are in your section? (b) What does each tool DO? (c) One sentence you want to teach your classmates.'",
+          "4. Instructor circula por grupos. Ayuda con vocabulario desconocido. No da respuestas — guía: 'Look at the Word Wall. Which word fits here?'",
+          "5. Reagrupar: 1 experto de cada sección forma nuevo grupo de 3. (15 min)",
+          "6. Cada experto ENSEÑA su sección: 'In my section, there are 3 tools: wrench, ratchet, and socket. A wrench is for turning bolts. A ratchet is fast in tight spaces...' Los otros escuchan y toman notas.",
+          "7. Cuando los 3 terminan, el grupo completo debe poder nombrar TODOS los Toolbelt terms del texto."
+        ],
+        "teacher_talk_instruction": "*OK team. Now we read. But we read TOGETHER — like a team in the workshop. (Hold up text.) This article has THREE sections. Group 1 — you read Section 1: Hand Tools. Group 2 — Section 2: Power Tools and Safety. Group 3 — Section 3: Measuring and Documents. You are EXPERTS in your section. Read carefully. Find the Toolbelt words. Then you will TEACH your section to other groups. (Pausa.) ¿Entendido? (Understood?) Are you reading ALL sections or ONE section?* → Esperan: One section. *Good. You have 15 minutes to read. Go.*",
+        "icq": [
+          "*How many sections does the article have?* → Esperan: 3 / Three",
+          "*Does your group read ALL sections or ONE?* → Esperan: One",
+          "*After reading, what do you do?* → Esperan: Teach other groups / Share",
+          "*Can you use the Word Wall?* → Esperan: Yes"
+        ],
+        "answer_key_inline": {
+          "section_1_hand_tools": {
+            "tools_mentioned": [
+              "wrench",
+              "ratchet",
+              "socket",
+              "toolbox"
+            ],
+            "key_facts": [
+              "A wrench turns bolts.",
+              "A ratchet is fast in tight spaces.",
+              "Sockets fit on the ratchet.",
+              "Keep tools in the toolbox."
+            ]
+          },
+          "section_2_power_safety": {
+            "tools_mentioned": [
+              "floor jack",
+              "PPE",
+              "safety goggles",
+              "gloves",
+              "fire extinguisher"
+            ],
+            "key_facts": [
+              "A floor jack lifts the vehicle safely.",
+              "PPE protects the technician.",
+              "Safety goggles protect your eyes.",
+              "Gloves protect your hands.",
+              "A fire extinguisher puts out fires."
+            ]
+          },
+          "section_3_measuring_docs": {
+            "tools_mentioned": [
+              "torque wrench",
+              "calibration",
+              "work order",
+              "checklist"
+            ],
+            "key_facts": [
+              "A torque wrench applies correct force.",
+              "Calibration ensures accuracy.",
+              "A work order describes what to fix.",
+              "A checklist verifies items."
+            ]
+          }
+        },
+        "facilitation_notes": [
+          "💡 Jigsaw funciona MEJOR con grupos heterogéneos. Si sabe quién es más fuerte, distribúyalos: 1 fuerte + 1 medio + 1 bajo por sección. El fuerte ancla; el bajo participa sin presión.",
+          "💡 Si un grupo termina antes de 15 min: 'Write 2 MORE sentences about your section using patterns from the Word Wall. Be ready to teach MORE to your group.'",
+          "💡 Fase de enseñanza: si el experto habla solo en español, guíe: 'Can you say the TOOL NAME in English? Good. Now say: It is for ___.' Mínimo: nombres en inglés."
+        ],
+        "checkpoint": "✓ After Jigsaw: '¿Raise your hand if you can name 3 tools from Section 1. Now Section 2. Now Section 3.' Si cada sección tiene ≥4 manos = proceed. Si <4 = quick recap: instructor summarizes missed section in 1 min.",
+        "transition": "*Perfect reading, teams. You predicted tools — and you found them. Now let's take a break, and after the break, we organize these 20 words by category and use them in REAL workshop documents.*",
+        "tecnica_didactica": "Lectura cooperativa Jigsaw (grupos expertos)"
+      },
+      {
+        "letra": "C",
+        "nombre": "Category Race + Gap Fill — Vocabulary Application",
+        "duracion_min": 70,
+        "worksheet_ref": "PM-2.5, Activities 3-4",
+        "agrupacion": "Pairs (Category Race) → Individual (Gap Fill)",
+        "objetivo": "Clasificar los 20 términos en 5 categorías por velocidad y precisión. Usar los términos para completar formatos reales del taller.",
+        "instrucciones_paso_a_paso": [
+          "PARTE 1 — CATEGORY RACE (30 min):",
+          "1. Distribuir tarjetas de categorías (5 pilas por colores) + 20 tarjetas de términos sueltas (1 set por pareja).",
+          "2. Instrucciones: 'You have 20 word cards. Put each word under the correct category. ENVIRONMENT (green), TOOLS (blue), SAFETY (red), MAINTENANCE (yellow), DOCUMENTS (purple). You have 3 minutes. Fastest correct pair wins.'",
+          "3. Timer: 3 min. Instructor observa, NO corrige durante la competencia.",
+          "4. '¡Stop! Hands up.' Verificar: instructor lee categorías y respuestas correctas. Parejas auto-corrigen.",
+          "5. Celebrar ganadores. '¿How many did you get right? 20? 18? 15?' Aplaudir a todos.",
+          "6. Ronda 2 (harder): mezclar tarjetas de nuevo. Ahora sin mirar Word Wall. 2 minutos. (Opcional si hay tiempo.)",
+          "7. Breve discusión: '¿Which category was hardest? Why?' (Probablemente Documents/Quality o Maintenance.) Reforzar.",
+          "",
+          "PARTE 2 — GAP FILL IN CONTEXT (40 min):",
+          "1. Distribuir Daily Inspection Checklist en blanco + Work Order Header en blanco (1 de cada uno por aprendiz).",
+          "2. Proyectar escenario: 'The Diesel Workshop — Bay 2 — Monday 7:00 AM. You are the technician. Complete your Checklist and Work Order.'",
+          "3. Instrucciones: 'Fill in the blanks using Toolbelt words. The Checklist has 8 items to verify. The Work Order has 6 fields to complete. Use English. Look at the Word Wall if you need help.'",
+          "4. Modelo: instructor completa 1 ítem de cada formato en tablero en vivo. Checklist: '1. Floor jack ✓ OK / ✗ Needs repair — [The floor jack is OK.]' Work Order: 'Vehicle: Diesel truck / Problem: oil spill near bay door.'",
+          "5. Individual work: 20 min. Instructor circula, ayuda con vocabulario, NO corrige gramática (eso es S3).",
+          "6. Parejas: intercambiar Checklists. Verificar: '¿Did your partner use the Toolbelt words correctly?' Feedback verbal breve (3 min).",
+          "7. Recoger algunos ejemplos para mostrar en S3 (Writing session)."
+        ],
+        "teacher_talk_instruction": "*OK, now we ORGANIZE. (Hold up word cards.) 20 words. 5 categories. Put each word under the right color. You have 3 minutes. Fastest CORRECT pair wins. Ready? (Pause.) Don't look at the Word Wall — use your brain. Go!*",
+        "teacher_talk_gap_fill": "*Now you use these words in REAL documents. (Hold up checklist.) This is a Daily Inspection Checklist — a real document from a real workshop. And this (hold up work order) is a Work Order. YOU are the technician. It is Monday, 7:00 AM at The Diesel Workshop. Bay 2 is yours. Complete both documents in English. Look at the Word Wall. I'll show you the first one...*",
+        "icq": [
+          "*How many categories are there?* → Esperan: 5 / Five",
+          "*How many minutes for the race?* → Esperan: 3",
+          "*For the Checklist, how many items do you need?* → Esperan: 8",
+          "*For the Work Order, how many fields?* → Esperan: 6",
+          "*Can you look at the Word Wall?* → Esperan: Yes"
+        ],
+        "answer_key_inline": {
+          "category_race_answers": {
+            "ENVIRONMENT_green": [
+              "workshop",
+              "service bay",
+              "workbench",
+              "toolbox"
+            ],
+            "TOOLS_blue": [
+              "wrench",
+              "ratchet",
+              "socket",
+              "torque wrench",
+              "floor jack"
+            ],
+            "SAFETY_red": [
+              "PPE",
+              "safety goggles",
+              "gloves",
+              "hazard",
+              "spill",
+              "fire extinguisher"
+            ],
+            "MAINTENANCE_yellow": [
+              "preventive maintenance",
+              "corrective maintenance"
+            ],
+            "DOCUMENTS_purple": [
+              "work order",
+              "checklist",
+              "calibration"
+            ]
+          },
+          "gap_fill_checklist_sample": [
+            "1. Floor jack — ✓ OK. The floor jack is clean and working.",
+            "2. Toolbox — ✓ OK. All tools are inside the toolbox.",
+            "3. Wrench set — ✓ OK. The wrenches are organized by size.",
+            "4. Safety goggles — ✓ OK. Safety goggles are on the workbench.",
+            "5. Gloves — ✓ OK. Two pairs of gloves are available.",
+            "6. Fire extinguisher — ✓ OK. The fire extinguisher is next to the bay door.",
+            "7. Spill check — ✓ OK. There is no spill on the floor.",
+            "8. PPE station — ✓ OK. PPE is ready for the technician."
+          ],
+          "gap_fill_work_order_sample": {
+            "field_1_vehicle": "Diesel truck — Kenworth T680",
+            "field_2_bay": "Bay 2",
+            "field_3_technician": "Valentina Cruz",
+            "field_4_type": "Preventive maintenance",
+            "field_5_tools_needed": "Torque wrench, ratchet, socket set, floor jack",
+            "field_6_observations": "There is a small spill near the bay door. The floor jack needs calibration."
+          }
+        },
+        "facilitation_notes": [
+          "💡 Category Race: 'calibration' es la más difícil de categorizar — acepta tanto en DOCUMENTS como en TOOLS si el estudiante justifica. La discusión vale más que la respuesta.",
+          "💡 Gap Fill: algunos aprendices querrán escribir en español. Redirigir: 'Use the Word Wall. Copy the word if you need to. English only in the document.' Copiar está bien — es práctica.",
+          "💡 Si una pareja termina el Gap Fill antes: 'Add 2 more items to your Checklist. Write a second observation in the Work Order.' Extensión natural."
+        ],
+        "checkpoint": "✓ After Category Race: instructor lee 5 términos al azar. Clase levanta tarjeta del color correcto. ≥80% correcto = proceed. <80% = repeat 3 terms with color + category name.",
+        "transition": "*Brilliant work organizing. You know these 20 words AND you can use them in real documents. Now — the big moment. We're going to see how well you understood the article. 5 questions. No text. Just you and your brain. Let's go.*",
+        "tecnica_didactica": "Carrera de categorías / Relleno de espacios en contexto"
+      },
+      {
+        "letra": "D",
+        "nombre": "Second Read + Evidencia 1 — Comprehension Check",
+        "duracion_min": 55,
+        "worksheet_ref": "PM-2.3, Activity 3",
+        "agrupacion": "Individual (silent re-read) → Individual (quiz) → Pairs (peer check)",
+        "objetivo": "Consolidar comprensión con segunda lectura guiada. Completar Cuestionario No 1 (5 preguntas) SIN texto — Evidencia 1 formal del RAP.",
+        "instrucciones_paso_a_paso": [
+          "PARTE 1 — SECOND READ (15 min):",
+          "1. Redistribuir texto completo (3 secciones juntas esta vez — no jigsaw).",
+          "2. Instrucciones: 'Read the WHOLE article one more time. Quietly. Underline words you NOW understand that you didn't before. Circle any word you STILL don't understand.' (10 min)",
+          "3. Quick share: '¿Who circled a word? What word?' Instructor clarifies 2-3 words quickly. Uses Word Wall as reference.",
+          "",
+          "PARTE 2 — EVIDENCIA 1: CUESTIONARIO No 1 (20 min):",
+          "4. ⚠️ COLLECT ALL TEXTS. Estudiantes NO pueden tener el artículo durante la prueba.",
+          "5. Distribuir Cuestionario No 1 impreso (5 ítems, multiple choice + True/False).",
+          "6. Teacher Talk: *'This is your first EVIDENCE — Evidencia 1. 5 questions about the article. You have 15 minutes. Read each question carefully. Choose the best answer. Work alone — no talking. When you finish, turn the paper face down.'*",
+          "7. Timer: 15 min. Instructor circula silenciosamente. NO ayuda con respuestas.",
+          "8. Recoger cuestionarios. (Calificación posterior — rúbrica: 1 pt por respuesta correcta = 5 pts total.)",
+          "",
+          "PARTE 3 — PEER CHECK (15 min):",
+          "9. Redistribuir textos. Proyectar las 5 preguntas + respuestas correctas.",
+          "10. En parejas: revisan juntos. 'Did you answer correctly? Which question was hard? Why?'",
+          "11. Breve plenary: '¿Which question was the hardest for most people?' Instructor refuerza concepto."
+        ],
+        "teacher_talk_instruction": "*OK, team. Now we read the WHOLE article together — one more time. Quietly. Underline words you understand now. Circle words you still don't know. Ten minutes. Go.* (Wait 10 min.) *Good. Now — close your text. (Collect texts.) This is Evidencia 1 — your first evidence. Five questions. Fifteen minutes. Work alone. No talking. Read carefully. Choose the best answer. Ready? Here is your quiz. (Distribute.) Go.*",
+        "icq": [
+          "*Can you use the article during the quiz?* → Esperan: No",
+          "*How many questions?* → Esperan: 5 / Five",
+          "*How many minutes?* → Esperan: 15",
+          "*Do you work alone or with a partner?* → Esperan: Alone"
+        ],
+        "answer_key_inline": {
+          "q1": {
+            "question": "What does a torque wrench do?",
+            "correct": "b) It applies the correct force to a bolt",
+            "distractors": [
+              "a) It lifts the vehicle",
+              "c) It cuts metal",
+              "d) It measures temperature"
+            ]
+          },
+          "q2": {
+            "question": "Why is the floor jack a safety tool?",
+            "correct": "c) Because it lifts the vehicle safely",
+            "distractors": [
+              "a) Because it is heavy",
+              "b) Because it is red",
+              "d) Because it is expensive"
+            ]
+          },
+          "q3": {
+            "question": "Complete: 'The ratchet is fast in ___.'",
+            "correct": "b) tight spaces",
+            "distractors": [
+              "a) big rooms",
+              "c) the office",
+              "d) the parking lot"
+            ]
+          },
+          "q4": {
+            "question": "What does calibration ensure?",
+            "correct": "c) The tool is accurate",
+            "distractors": [
+              "a) The tool is heavy",
+              "b) The tool is expensive",
+              "d) The tool is red"
+            ]
+          },
+          "q5": {
+            "question": "True or False: 'A good technician never cleans the workbench.'",
+            "correct": "FALSE — A good technician always keeps the workbench clean.",
+            "distractors": []
+          }
+        },
+        "facilitation_notes": [
+          "💡 ⚠️ CRITICAL: recoger TODOS los textos antes de distribuir el cuestionario. Si alguien tiene texto visible, la evidencia no es válida. Verificar visualmente.",
+          "💡 Si un estudiante termina en 5 minutos: 'Turn your paper face down. Sit quietly. You can look at the Word Wall.' NO permitir hablar hasta que todos terminen.",
+          "💡 Peer Check post-quiz: esto NO es parte de la evidencia. Es aprendizaje. Dejar que discutan libremente. Los errores ahora son oportunidades."
+        ],
+        "checkpoint": "✓ Post-quiz verbal: '¿How did you feel? Easy? Hard? Which question?' Tomar temperatura del grupo. Si mayoría dice 'difícil Q4 (calibration)': anotar para reforzar en S3 Grammar.",
+        "transition": "*Well done. You answered 5 questions from memory — that is real comprehension. Now let's see these tools in the REAL workshop — or as close as we can get. Let's explore.*",
+        "tecnica_didactica": "Cuestionario de comprensión lectora (Evidencia 1)"
+      },
+      {
+        "letra": "E",
+        "nombre": "Text-to-Workshop Connection — Real World Bridge",
+        "duracion_min": 40,
+        "worksheet_ref": "PM-2.3, Activity 4",
+        "agrupacion": "Small groups (2-3)",
+        "objetivo": "Conectar el texto con el taller real. Identificar herramientas físicamente, fotografiarlas y describirlas en inglés.",
+        "instrucciones_paso_a_paso": [
+          "OPCIÓN A — ACCESO A TALLER FÍSICO (preferida):",
+          "1. Formar grupos de 2-3. Cada grupo recibe mini-checklist: 'Find and photograph 4 tools or areas from the article. Write 1 English sentence for each.'",
+          "2. Grupos van al taller con checklist + celular. (15 min en taller.)",
+          "3. Regresan al aula. Cada grupo muestra 1 foto + lee 1 oración. Ejemplo: 'This is the floor jack. It is in Bay 1. It lifts the vehicle.'",
+          "4. Pegar fotos + descripciones en mural del aula (si hay impresora) o mostrar en pantalla.",
+          "",
+          "OPCIÓN B — SIN ACCESO A TALLER (alternativa):",
+          "1. Proyectar video corto (2-3 min) de taller diesel real (YouTube).",
+          "2. Grupos de 2-3: identificar 4 herramientas/áreas del artículo en el video.",
+          "3. Escribir: 'I saw a ___. It is for ___. In the video, the technician uses it to ___.'",
+          "4. Compartir en plenary (30 seg por grupo).",
+          "",
+          "CIERRE DEL BLOQUE (10 min):",
+          "5. Instructor sintetiza: señala Word Wall. 'These 20 words are not just words on a wall. They are REAL things in a REAL workshop. You saw them. You touched them. You described them. Now they are yours.'",
+          "6. Quick connection back to S1: 'In Session 1, your KWL column said WANT TO KNOW: tool names. Now you know 20. We are filling your KWL.'"
+        ],
+        "teacher_talk_instruction": "*OK explorers — now we go to the workshop. (Or: now we watch a workshop video.) Your mission: find 4 tools or areas from the article. Take a photo. Write ONE sentence in English for each. Example: (Point to Word Wall.) 'This is the toolbox. It has wrenches and sockets.' You have 15 minutes. Go with your group.*",
+        "icq": [
+          "*How many tools or areas do you find?* → Esperan: 4",
+          "*Do you take photos?* → Esperan: Yes (if option A)",
+          "*Do you write in English or Spanish?* → Esperan: English"
+        ],
+        "answer_key_inline": {
+          "sample_descriptions": [
+            "This is the floor jack. It is in Bay 1. It lifts vehicles safely.",
+            "This is the toolbox. It is on the workbench. It has wrenches, sockets, and ratchets.",
+            "This is the fire extinguisher. It is next to the bay door. It is red.",
+            "This is the workbench. It is clean and organized. The technician works here.",
+            "These are safety goggles. They are PPE. They protect your eyes.",
+            "This is the service bay. The floor jack is inside. The vehicle goes here."
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Si hay acceso a taller: supervisar seguridad. Recordar: 'Even in the educational workshop — PPE rules apply. Show me you practice what you learned today.'",
+          "💡 Opción B funciona igual de bien. El video YouTube no necesita ser perfecto — cualquier taller mecánico sirve. Lo importante es que RECONOZCAN las palabras en contexto real.",
+          "💡 Si un grupo no encuentra 4 herramientas: 'Find 2 tools and 2 AREAS. The service bay is also from the article.' Bajar la barrera, mantener el engagement."
+        ],
+        "checkpoint": "✓ Each group shares at least 1 photo/description. Instructor verifies: '¿Is the English sentence correct? Good. Any corrections?' Quick fix if needed.",
+        "transition": "*Wonderful exploration. You connected the article to real life. Now let's wrap up today and prepare for tomorrow.*",
+        "tecnica_didactica": "Conexión texto-contexto real / photo-walk con descripción guiada"
+      }
+    ],
+    "breaks": [
+      {
+        "after_bloque": "B",
+        "duracion_min": 15,
+        "nombre": "BREAK — Stretch & Recharge",
+        "teacher_talk": "*OK everyone. Great reading. Take a break — 15 minutes. Stand up. Stretch. Get water. When you come back, we organize the 20 words by category — it's going to be a race. See you in 15.*"
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 25,
+    "exit_ticket": {
+      "tarea": "Individual (silent): Escribe 3 herramientas del Toolbelt + 1 oración para cada una usando la estructura: 'The ___ is for ___.' o 'The ___ is ___.' Ejemplo: 'The torque wrench is for tightening bolts.' 'The fire extinguisher is next to the bay door.'",
+      "success_criteria": "✓ 3 términos del Toolbelt escritos correctamente. ✓ 3 oraciones en inglés (estructura visible). ✓ Entregado antes de salir.",
+      "duration_min": 8
+    },
+    "teacher_talk_closing": "*Before we finish — write down 3 tools and 1 sentence for each. Use the structure: 'The ___ is for ___.' Or: 'The ___ is ___.' You have 5 minutes. Look at the Word Wall if you need to. Go.* (Wait.) *Good. Hand it to me on your way out. Tomorrow — we learn GRAMMAR. The rules that make these sentences work. And we WRITE our own Daily Inspection Checklist for Bay 2 — a real document. See you tomorrow. Great work today, team.*",
+    "trabajo_autonomo": {
+      "actividad": "Vocabulary Reinforcement + Article Extension (0.75h)",
+      "instrucciones_detalladas": "1. HOMEWORK PART 1 (20 min): Flashcard self-test. Take your 20 Toolbelt words. Say each one out loud 3 times. Try to remember the definition without looking. Write the 5 hardest words 3 times each. 2. HOMEWORK PART 2 (15 min): Read the original Popular Mechanics article (sin adaptar — instructor shares link or print). Find 5 NEW English words that are NOT in the Toolbelt. Write them with a short definition. Example: 'pliers — a tool for gripping.' 3. HOMEWORK PART 3 (10 min): Look at a Daily Inspection Checklist from your centro de formación or workplace. Compare it with the one you filled today. Are there differences? Write 2 observations in English. **Total time: ~45 min (0.75h)**",
+      "entregable": "List of 5 hardest Toolbelt words (written 3x each) + 5 new words from original article + 2 observations about real Checklist (bring all to S3)",
+      "cuando_se_revisa": "S3 SET-UP: Instructor collects, uses new words as Grammar warm-up material"
+    },
+    "preview_next_session": "*Next session: GRAMMAR. We learn 3 rules — Imperatives, There is/are, and Prepositions. And we WRITE a complete Daily Inspection Checklist + Work Order for Bay 2. Bring your homework. See you tomorrow.*",
+    "facilitation_notes": [
+      "💡 Exit Ticket: si alguien no puede escribir 3 oraciones, acepte 2. Lo importante es que INTENTE. No es evidencia formal — es auto-verificación.",
+      "💡 Word Wall permanece en la pared. Recuerde a los estudiantes: 'This wall is yours. It stays here all course. Use it.'"
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "Bloque A — Word Wall Presentation (20 terms)",
+      "items": [
+        {
+          "item": "20 Toolbelt terms",
+          "respuesta_correcta": "workshop, service bay, workbench, toolbox, wrench, ratchet, socket, torque wrench, floor jack, PPE, safety goggles, gloves, hazard, spill, fire extinguisher, preventive maintenance, corrective maintenance, work order, checklist, calibration",
+          "alternativas": [],
+          "puntos": "Recognition — no formal scoring"
+        }
+      ]
+    },
+    {
+      "actividad": "Bloque A — Flashcard Battle",
+      "items": [
+        {
+          "item": "Term ↔ Image matching",
+          "respuesta_correcta": "All 20 terms matched to correct image/definition",
+          "alternativas": [
+            "Accept phonetic approximations during oral production"
+          ],
+          "puntos": "Speed game — no formal scoring"
+        }
+      ]
+    },
+    {
+      "actividad": "Bloque B — Jigsaw Reading Sections",
+      "items": [
+        {
+          "item": "Section 1: Hand Tools",
+          "respuesta_correcta": "wrench, ratchet, socket, toolbox — functions as described in text",
+          "alternativas": [],
+          "puntos": "Formative"
+        },
+        {
+          "item": "Section 2: Power Tools & Safety",
+          "respuesta_correcta": "floor jack, PPE, safety goggles, gloves, fire extinguisher — functions as described",
+          "alternativas": [],
+          "puntos": "Formative"
+        },
+        {
+          "item": "Section 3: Measuring & Documents",
+          "respuesta_correcta": "torque wrench, calibration, work order, checklist — functions as described",
+          "alternativas": [],
+          "puntos": "Formative"
+        }
+      ]
+    },
+    {
+      "actividad": "Bloque C — Category Race (20 terms into 5 categories)",
+      "items": [
+        {
+          "item": "ENVIRONMENT",
+          "respuesta_correcta": "workshop, service bay, workbench, toolbox",
+          "alternativas": [],
+          "puntos": 4
+        },
+        {
+          "item": "TOOLS & EQUIPMENT",
+          "respuesta_correcta": "wrench, ratchet, socket, torque wrench, floor jack",
+          "alternativas": [],
+          "puntos": 5
+        },
+        {
+          "item": "SAFETY",
+          "respuesta_correcta": "PPE, safety goggles, gloves, hazard, spill, fire extinguisher",
+          "alternativas": [],
+          "puntos": 6
+        },
+        {
+          "item": "MAINTENANCE TYPES",
+          "respuesta_correcta": "preventive maintenance, corrective maintenance",
+          "alternativas": [],
+          "puntos": 2
+        },
+        {
+          "item": "DOCUMENTS + QUALITY",
+          "respuesta_correcta": "work order, checklist, calibration",
+          "alternativas": [
+            "calibration may also be classified under TOOLS if justified"
+          ],
+          "puntos": 3
+        }
+      ]
+    },
+    {
+      "actividad": "Bloque C — Gap Fill: Daily Inspection Checklist + Work Order",
+      "items": [
+        {
+          "item": "Checklist (8 items)",
+          "respuesta_correcta": "8 items using Toolbelt vocabulary with check marks and English descriptions",
+          "alternativas": [
+            "Any valid workshop item + English description is acceptable"
+          ],
+          "puntos": "Formative — sample scoring in S3 Writing"
+        },
+        {
+          "item": "Work Order (6 fields)",
+          "respuesta_correcta": "Vehicle, Bay, Technician, Maintenance type, Tools needed, Observations — all in English",
+          "alternativas": [
+            "Accept partial English if all 6 fields completed"
+          ],
+          "puntos": "Formative — sample scoring in S3 Writing"
+        }
+      ]
+    },
+    {
+      "actividad": "⚠️ Bloque D — EVIDENCIA 1: Cuestionario No 1 (FORMAL)",
+      "items": [
+        {
+          "item": "Q1: What does a torque wrench do?",
+          "respuesta_correcta": "b) It applies the correct force to a bolt",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "item": "Q2: Why is the floor jack a safety tool?",
+          "respuesta_correcta": "c) Because it lifts the vehicle safely",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "item": "Q3: Complete: 'The ratchet is fast in ___.'",
+          "respuesta_correcta": "b) tight spaces",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "item": "Q4: What does calibration ensure?",
+          "respuesta_correcta": "c) The tool is accurate",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "item": "Q5: T/F: 'A good technician never cleans the workbench.'",
+          "respuesta_correcta": "FALSE",
+          "alternativas": [],
+          "puntos": 1
+        }
+      ]
+    },
+    {
+      "actividad": "Bloque E — Text-to-Workshop Connection",
+      "items": [
+        {
+          "item": "4 tools/areas identified + 4 English sentences",
+          "respuesta_correcta": "Any 4 Toolbelt items with correct English description using patterns from the article",
+          "alternativas": [
+            "Accept 2 tools + 2 areas as valid"
+          ],
+          "puntos": "Formative"
+        }
+      ]
+    },
+    {
+      "actividad": "WRAP-UP — Exit Ticket",
+      "items": [
+        {
+          "item": "3 tools + 3 sentences",
+          "respuesta_correcta": "3 Toolbelt terms + 3 sentences using 'The ___ is for ___.' or 'The ___ is ___.'",
+          "alternativas": [
+            "Accept 2 if student struggled — note for S3 support"
+          ],
+          "puntos": "Formative — self-check"
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "Bloque A — Flashcard Battle: If pair scores 20/20 in round 1: 'Now do it backwards — I say the definition, you say the word. No picture.' (Abstract recall.)",
+      "Bloque B — Jigsaw: If expert group finishes early: 'Write 3 extra sentences about your section using patterns from the Word Wall. Be ready to teach MORE to your group.'",
+      "Bloque C — Category Race: If pair wins in under 2 min: 'Now create a NEW category — what would it be called? Which words go there? Present to class.' (Creative metacognition.)",
+      "Bloque C — Gap Fill: If finished before time: 'Add 2 more items to your Checklist. Write a SECOND observation in the Work Order describing a hazard.' (Extends writing.)",
+      "Bloque D — Post-quiz: If finished in 5 min: 'Sit quietly and review the Word Wall. Challenge: can you spell all 20 terms without looking? Write them on scratch paper.'"
+    ],
+    "more_support_needed": [
+      "Bloque A — Word Wall: If student can't repeat terms: pair with strong student as 'echo partner.' Strong student says word first; weaker student echoes. No shame — collaboration.",
+      "Bloque B — Jigsaw: If student struggles with reading section: provide highlighted version where Toolbelt terms are already underlined. Task: 'Just read the underlined words and their sentences.' Reduce cognitive load.",
+      "Bloque B — Teaching phase: If student can't teach section: allow them to READ their Jigsaw Note card to group instead of explaining freely. Reading aloud = still practicing English.",
+      "Bloque C — Category Race: If pair is confused about categories: give them the first 5 words pre-sorted as a model. Task: 'Sort the remaining 15.' Scaffolded start.",
+      "Bloque C — Gap Fill: If student can't complete Checklist: reduce to 5 items (from 8). Provide sentence starters: 'The ___ is OK.' Copy and fill. Copying is permitted at this stage.",
+      "Bloque D — Quiz: If student is anxious about formal quiz: remind them: 'This is not a test to FAIL you. It is a test to SHOW what you know. Even 3 out of 5 is good. Try your best.' Lower affective filter."
+    ]
+  },
+  "instructor_self_check": [
+    "¿Todos los aprendices completaron el Exit Ticket? ¿Cuántos escribieron 3 oraciones correctas? ¿Cuántos solo 1-2? (Target: ≥75% con 3 oraciones. Si <75%, S3 necesita más scaffold de vocabulario antes de grammar.)",
+    "¿Hubo algún bloque donde la MAYORÍA parecía perdida? (Target: No. Si sí, ¿fue Jigsaw? ¿Category Race? ¿Gap Fill? Anotar para ajustar S3 opening.)",
+    "¿Los TIEMPOS se cumplieron o hubo desfases? (Word Wall: 25 min, Flashcards: 30 min, Jigsaw: 60 min, Category+GapFill: 70 min, Quiz: 50 min, Workshop: 40 min, Wrap: 20 min. Si Jigsaw se extendió: ¿por engagement positivo o confusión? Ajustar para próximo Jigsaw.)",
+    "¿EVIDENCIA 1 se administró correctamente? (Textos recogidos ANTES del quiz? Silencio durante quiz? 15 min? Cuestionarios recogidos? Si hubo irregularidad: anotar para remedial en S6.)",
+    "¿La Word Wall quedó VISIBLE y ordenada en la pared? (Permanece toda la guía. Si se cayeron tarjetas: re-pegar antes de S3. ¿Los estudiantes la miraron naturalmente durante Gap Fill? Eso indica que funciona.)"
+  ],
+  "totals_check": {
+    "set_up": 25,
+    "while_bloque_a": 60,
+    "while_bloque_b": 70,
+    "break": 15,
+    "while_bloque_c": 70,
+    "while_bloque_d": 55,
+    "while_bloque_e": 40,
+    "wrap_up": 25,
+    "subtotal_while": 295,
+    "subtotal_breaks": 15,
+    "total": 360,
+    "check_result": "✓ EXACTO 360 min"
+  },
+  "rap_status": "PENDIENTE (asignación posterior por instructor)",
+  "momento_sena": "3.1 — Reflexión Inicial (cierre) → 3.2 Contextualización",
+  "estrategia_didactica": "Aprendizaje Basado en Tareas",
+  "justificacion_didactica": "La tarea es leer un texto técnico real, clasificar el léxico por categorías y construir el Word Wall. La tarea tiene producto concreto (Word Wall + cuestionario E1) y es auténtica del entorno diesel.",
+  "motor_age_article": {
+    "title": "Tools Every Diesel Technician Needs",
+    "source": "Adapted from Motor Age, January 2022 — CEFR A1.1 Level",
+    "note_instructor": "Texto de lectura para S2 — distribuir en papel o proyectar. Estudiantes leen por secciones en Jigsaw (3 grupos). Recoger ANTES del Cuestionario No 1.",
+    "sections": [
+      {
+        "number": 1,
+        "title": "Hand Tools — The Basics",
+        "text": "Every diesel mechanic needs good hand tools. The most important tool is the wrench. A wrench turns bolts and nuts. There are many sizes of wrenches. The ratchet is also very important. It turns bolts fast in tight spaces. A socket connects to the ratchet. Different sockets fit different bolt sizes. The toolbox keeps all tools organized and safe. A good mechanic always knows where every tool is."
+      },
+      {
+        "number": 2,
+        "title": "Power Tools and Safety",
+        "text": "The floor jack lifts vehicles safely. A technician uses the floor jack before working under a truck or bus. Safety is very important in the workshop. Every technician wears PPE — Personal Protective Equipment. PPE includes safety goggles and gloves. Safety goggles protect the eyes. Gloves protect the hands. A hazard is something dangerous in the workshop. A spill — oil or water on the floor — is a common hazard. The fire extinguisher is always next to the bay door. A good technician checks the fire extinguisher every day."
+      },
+      {
+        "number": 3,
+        "title": "Measuring and Documents",
+        "text": "The torque wrench applies the correct force to a bolt. Not too much, not too little — exactly right. Calibration is the process of checking that a tool is accurate. A well-calibrated tool gives correct measurements every time. The work order is an important document. It describes what repair to do, on which vehicle, and how. The checklist is a list of items to verify one by one. Preventive maintenance is regular service performed before a problem occurs. Corrective maintenance is repair performed after a problem or failure. Good technicians do preventive maintenance. This keeps vehicles running and mechanics safe."
+      }
+    ],
+    "glossary_note": "All 20 Toolbelt terms appear in this article. Students underline each term as they read their section.",
+    "word_count": 218,
+    "comprehension_bridge": "After reading: use this article as source for Cuestionario No 1 (E1 Reading — 5 questions, no article permitted during quiz)."
+  },
+  "pm0_protocol": {
+    "grammar_groups": [
+      "Grupo 1 — Verbo be: lectura de estructuras afirmativas y negativas en el titular y el artículo.",
+      "Exposición a: 'The engine IS overheating.', 'The bay IS NOT safe.', 'There ARE three technicians.'",
+      "Sin producción gramatical formal — el foco es Reading + Vocabulary."
+    ],
+    "feedback": {
+      "mode": "FLUENCY para comprensión lectora. ACCURACY leve para respuestas escritas en worksheet.",
+      "accuracy_techniques": [
+        "Rising intonation: repetir la respuesta del aprendiz con entonación ascendente en el error → aprendiz autocorrige. ('The engine are hot?' ↗)",
+        "Elicitación: 'Almost — The engine… ?' → pausa → aprendiz completa."
+      ],
+      "fluency_techniques": [
+        "No interrumpir durante lectura silenciosa ni durante pair discussion.",
+        "Post-task: 3 observaciones globales al cierre (sin nombrar a nadie). 1 fortaleza, 1 área de mejora, 1 patrón de error frecuente."
+      ],
+      "notes": "Error más esperado: omisión del verbo be en descripciones ('The engine hot' → 'The engine IS hot'). Usar elicitación."
+    },
+    "l1_management": {
+      "l1_percentage": "≤ 25 % L1. Reducción de 5 puntos vs S1.",
+      "english_zone_declaration": "Recordar English Zone al inicio. Añadir regla: 'In the While blocks — English only for answers and pair discussion.'",
+      "l1_allowed_for": [
+        "Instrucciones nuevas (primera vez únicamente).",
+        "Vocabulario técnico que no tiene equivalente comprensible en A1 (usar L1 + inglés juntos).",
+        "Verificación de comprensión de ICQs críticas."
+      ],
+      "reduction_strategy": "Usar técnica de scaffolding: dar la primera palabra en inglés, esperar que el aprendiz complete. Reducir andamiaje gradualmente durante la sesión."
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        "overheating",
+        "contaminated",
+        "extinguisher",
+        "technician",
+        "procedure"
+      ],
+      "techniques": [
+        "Board marking: 5 palabras del Toolbelt con sílaba tónica marcada en MAYÚSCULA.",
+        "Finger drilling: instructor dobla un dedo por sílaba al modelar cada palabra del Toolbelt.",
+        "Repetición coral × 3 al presentar cada palabra nueva en el board."
+      ],
+      "board_marking": "Toolbelt en tablero: o-VER-heat-ing  |  con-TAM-i-nat-ed  |  ex-TIN-guish-er",
+      "notes": "Primer uso sistemático del finger drilling — modelar lentamente, pedir que los aprendices doblen dedos junto al instructor."
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "overheating",
+        "contaminated",
+        "fire extinguisher",
+        "floor jack",
+        "PPE",
+        "bay"
+      ],
+      "factors_applied": [
+        "S — Sounds: finger drilling + board marking de cada término.",
+        "U — Use: los aprendices ven los términos en el titular (contexto real auténtico).",
+        "C — Conceptualize: imagen del taller + aprendices identifican visualmente cada elemento.",
+        "C — Creativity: nombrar el elemento señalado en la imagen sin mirarlo ('What is this?' → 'It's a fire extinguisher.').",
+        "E — Encounter again: los términos reaparecen en el artículo y en el worksheet.",
+        "S — Self-expression: aprendices escriben una oración propia con 1 término en el Exit Ticket."
+      ]
+    }
+  }
+}

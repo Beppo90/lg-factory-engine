@@ -1,0 +1,37 @@
+{
+  "pm_id": "PM-2.5",
+  "run_id": "DIESEL-2026-04-15",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 2,
+  "fase_sena": "Apropiación — Vocabulary, Literacy & Scenario Setup",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "archetype_used": ["A — Word Wall/Toolbelt", "B — Flashcard Battle", "C — Category Race", "D — Gap Fill in Context"],
+  "activity_card": {
+    "pm_id": "PM-2.5",
+    "session": 2,
+    "phase_sena": "Apropiación",
+    "activities": [
+      {"number": 1, "archetype": "A — Word Wall", "type": "cognitiva", "duration_min": 30,
+       "statement": "Presentar y anclar visualmente los 20 términos técnicos del taller en inglés usando Word Wall por categorías", "bloom": "L1 Recordar"},
+      {"number": 2, "archetype": "B — Flashcard Battle", "type": "cognitiva + procedimental", "duration_min": 35,
+       "statement": "Practicar reconocimiento y producción de los 20 términos en competencia de pares con flashcards", "bloom": "L1 Recordar + L2 Comprender"},
+      {"number": 3, "archetype": "C — Category Race", "type": "cognitiva", "duration_min": 25,
+       "statement": "Clasificar los 20 términos en 5 categorías del taller en competencia por tiempo y precisión", "bloom": "L2 Comprender + L3 Aplicar"},
+      {"number": 4, "archetype": "D — Gap Fill in Context", "type": "procedimental", "duration_min": 30,
+       "statement": "Completar formatos reales del taller (Daily Inspection Checklist + Work Order) usando los 20 términos en contexto auténtico", "bloom": "L3 Aplicar"}
+    ],
+    "hours": {"direct": 3, "autonomous": 0.75},
+    "evidence": {"generates_evidence": false, "contributes_to_cuestionario": true, "cuestionario_skill": "Vocabulary", "cuestionario_points": 5},
+    "environment": {"type": "Aula", "materials": ["Word Wall cards x20 (imagen + término + oración)", "Flashcard sets x1 por par", "Daily Inspection Checklist impreso", "Work Order Header impreso"]},
+    "gfpi_tag": "3.3-APROPIACION-VOCABULARY"
+  },
+  "vocabulary_categories": {
+    "Environment": ["workshop", "service bay", "workbench", "toolbox"],
+    "Tools & Equipment": ["wrench", "ratchet", "socket", "torque wrench", "floor jack"],
+    "Safety": ["PPE", "safety goggles", "gloves", "hazard", "spill", "fire extinguisher"],
+    "Maintenance Types": ["preventive maintenance", "corrective maintenance"],
+    "Documents": ["work order", "checklist"],
+    "Quality": ["calibration"]
+  }
+}

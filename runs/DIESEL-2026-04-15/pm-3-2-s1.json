@@ -1,0 +1,805 @@
+{
+  "pm_id": "PM-3.2",
+  "session": 1,
+  "session_name": "The Wake-Up Call",
+  "run_id": "DIESEL-2026-04-15",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "programa": "Mantenimiento de los Motores Diesel",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.1",
+    "PM-2.2"
+  ],
+  "habilidades_foco": [],
+  "habilidades_soporte": [
+    "Speaking conversacional",
+    "Listening receptivo"
+  ],
+  "cefr": "A1.1",
+  "model": "claude-opus-4-6",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "session_header": {
+    "titulo": "SESSION 1: The Wake-Up Call",
+    "subtitulo": "Mantenimiento de los Motores Diesel — Guía 1.1: The Workshop Specialist — Build-Out",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.1 — The Spark (Reflexión Inicial)",
+      "PM-2.2 — Gap Analysis (Contextualización)"
+    ],
+    "habilidades_soporte": [
+      "Speaking conversacional",
+      "Listening receptivo"
+    ],
+    "nota_instructor": "Este documento es SOLO para el instructor. Contiene el plan minuto a minuto, Teacher Talk completo, answer keys, notas de facilitación y diferenciación. Los aprendices trabajan con worksheets y materiales sin acceso a este build-out."
+  },
+  "materials_checklist": [
+    {
+      "item": "PM-2.1 + PM-2.2 worksheets impresos",
+      "cantidad": "8 sets completos",
+      "verificado": false
+    },
+    {
+      "item": "Titular impreso o proyectado: 'Three mechanics hospitalized after workshop fire'",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Infografía A3/proyectada: workshop layout con 7 zonas etiquetadas en inglés",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Tarjetas de personajes (Carlos Mendoza, Valentina Cruz, Santiago Ríos)",
+      "cantidad": "3 sets",
+      "verificado": false
+    },
+    {
+      "item": "Tarjetas verde/rojo para votación debate",
+      "cantidad": "16 pares",
+      "verificado": false
+    },
+    {
+      "item": "Tabla KWL impresa (1 por aprendiz)",
+      "cantidad": "8 copias",
+      "verificado": false
+    },
+    {
+      "item": "4 imágenes de taller con errores de seguridad (A4 impresas o proyectadas)",
+      "cantidad": "2 sets",
+      "verificado": false
+    },
+    {
+      "item": "Gap Cards impresas — 1 por aprendiz, plastificadas para S8",
+      "cantidad": "8 copias",
+      "verificado": false
+    },
+    {
+      "item": "Guión de entrevista de pares impreso",
+      "cantidad": "8 copias",
+      "verificado": false
+    },
+    {
+      "item": "Post-its y marcadores de colores",
+      "cantidad": "Surtido",
+      "verificado": false
+    },
+    {
+      "item": "Canva slides 1-6 abiertas y probadas",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Tablero limpio / pizarra blanca + marcadores",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Timer visible (digital o analógico)",
+      "cantidad": "1",
+      "verificado": false
+    }
+  ],
+  "board_plan": "┌──────────────────────────────────────────────────────────────────────┐\n│ SESSION 1: THE WAKE-UP CALL                                            │\n│ Welcome to The Diesel Workshop                                          │\n│                                                                          │\n│ Today's Objective:                                                      │\n│ ✓ Understand what makes a SAFE workshop                                 │\n│ ✓ Learn the names of workshop areas and tools IN ENGLISH                │\n│ ✓ Meet our team: Carlos, Valentina, Santiago                            │\n│ ✓ Discover what YOU know + what YOU want to learn                       │\n│                                                                          │\n│ [FORMULA ZONE — permanente]  [LIVE ZONE — se llena hoy]               │\n│                              (respuestas del debate,                     │\n│ Workshop = a place where                                                │\n│   mechanics work                       palabras clave KWL,              │\n│                                        observaciones)                    │\n│ Tools = things we use\n│                                                                          │\n│ Safety = protecting ourselves                                           │\n│                                                                          │\n│ [VOCABULARY ANCHORS — pre-escrito]                                      │\n│ AREAS: Service Bay | Parts Room | Tool Storage | Wash Area             │\n│ TOOLS: wrench | socket | floor jack | torque wrench                    │\n│ SAFETY: PPE | gloves | goggles | fire extinguisher | spill             │\n└──────────────────────────────────────────────────────────────────────────┘",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:25",
+      "duracion_min": 25,
+      "bloque": "SET-UP",
+      "actividad": "Warm-up + Opening + Objective",
+      "agrupacion": "Whole class → Pairs → Plenary",
+      "notas": "Welcome energy high; activate prior knowledge headline"
+    },
+    {
+      "tiempo": "0:25-1:15",
+      "duracion_min": 50,
+      "bloque": "WHILE-A",
+      "actividad": "Momento 1 — The Headline (PM-2.1)",
+      "agrupacion": "Whole class → Small groups (3-4)",
+      "notas": "✓ Checkpoint: Thumbs up/down comprehension"
+    },
+    {
+      "tiempo": "1:15-2:15",
+      "duracion_min": 60,
+      "bloque": "WHILE-B",
+      "actividad": "Momento 2 — The Map (PM-2.1)",
+      "agrupacion": "Pairs → Plenary",
+      "notas": "Build workshop vocabulary anchors on board"
+    },
+    {
+      "tiempo": "2:15-3:25",
+      "duracion_min": 70,
+      "bloque": "WHILE-C",
+      "actividad": "Momento 3 & 4 — The Story + The Debate (PM-2.1 + PM-2.2)",
+      "agrupacion": "Individual reflection → Whole class debate",
+      "notas": "Introduce characters; practice agreement/disagreement frames"
+    },
+    {
+      "tiempo": "3:25-3:40",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "BREAK — Stretch & Recharge",
+      "agrupacion": "N/A",
+      "notas": "Water, movement, rest before KWL work"
+    },
+    {
+      "tiempo": "3:40-4:50",
+      "duracion_min": 70,
+      "bloque": "WHILE-D",
+      "actividad": "Momentos 1-4 (PM-2.2) — Contextualización: KWL, Diagnosis, Gap Cards, Peer Interview",
+      "agrupacion": "Individual → Pairs",
+      "notas": "✓ Checkpoint: Gap Card self-assessment (guardar para S8 cierre)"
+    },
+    {
+      "tiempo": "4:50-5:00",
+      "duracion_min": 10,
+      "bloque": "WHILE-E (mini)",
+      "actividad": "Síntesis grupal: Learning Agenda visible",
+      "agrupacion": "Whole class",
+      "notas": "Collect Gap Cards; brief preview S2"
+    },
+    {
+      "tiempo": "5:00-5:15",
+      "duracion_min": 15,
+      "bloque": "WRAP-UP",
+      "actividad": "Exit Ticket + Closing + Autonomous Work Preview",
+      "agrupacion": "Individual → Plenary",
+      "notas": "Photo evidence; motivational closing"
+    }
+  ],
+  "set_up": {
+    "duracion_min": 25,
+    "warm_up": {
+      "nombre": "Visual Activation: The Headline",
+      "pasos": [
+        "Proyectar titular Motor Age sin comentarios: 'Three mechanics hospitalized after workshop fire'",
+        "30 seg silencio: estudiantes leen en inglés",
+        "Preguntas rápidas (sin respuesta esperada aún): 'What do you see? Why is this important? Have you seen a workshop fire?'",
+        "Parejas: 1 minuto compartiendo respuestas (turn-talk)",
+        "2-3 voluntarios comparten con plenary"
+      ],
+      "duration_min": 8
+    },
+    "teacher_talk_opening": "*Good morning, everyone! Welcome to The Diesel Workshop. Today we begin our journey — understanding what makes a professional, safe workshop. You see this headline? (Point to screen.) Three mechanics hospitalized. That is why we are here. Look, listen, learn — in English. Let's go.*",
+    "objective": "Activar conocimiento previo sobre seguridad y taller diesel. Establecer comunidad de aprendizaje. Mapear vocabulario inicial. Construir Learning Contract grupal.",
+    "icq": [
+      "*Are we learning about safety or tools today?* → Esperan: Both / Safety first",
+      "*Where are we? What place?* → Esperan: A workshop / A diesel workshop"
+    ],
+    "facilitation_notes": [
+      "💡 La mayoría de aprendices tendrán experiencia de taller; valida esa experiencia: 'You have seen this. You know. Now in English.'",
+      "💡 Si hay estudiante que nunca estuvo en un taller: asigna como 'observer buddy' a alguien con experiencia para S1 (no hace inferioridad, hace inclusión)"
+    ],
+    "checkpoint": "✓ Thumbs-up/down: ¿Entienden que la seguridad es tema central? 80% thumbs-up = proceed. <80% = 1 min re-anchoring: 'In a workshop, safety is NUMBER ONE. We protect ourselves and our team.'"
+  },
+  "while": {
+    "duracion_min": 320,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "Momento 1 — The Headline: Safety Awareness",
+        "duracion_min": 50,
+        "worksheet_ref": "PM-2.1, Activity 1",
+        "agrupacion": "Whole class (read) → Small groups (3-4, analysis)",
+        "objetivo": "Activar esquema de seguridad en taller. Reconocer peligros reales. Practicar lenguaje de seguridad (There is / Should).",
+        "instrucciones_paso_a_paso": [
+          "1. Proyectar titular completo (sin análisis aún).",
+          "2. Instructor lee en voz alta 2 veces a paso natural.",
+          "3. Estudiantes repiten en voz baja (mumbling rehearsal) — pronunciación de palabras clave: 'mechanics', 'hospitalized', 'fire'.",
+          "4. Formar grupos de 3-4 (preformada si es posible — heterogénea).",
+          "5. Distribuir cartel de preguntas (impreso o en pizarra): '(1) What happened? (2) Why? (3) What is PPE? (4) What should they do?'",
+          "6. Grupos discuten en inglés 5-8 min; anotan IDEAS en post-its (máximo 3 palabras c/u, inglés si es posible).",
+          "7. Grupos publican post-its en mural de pared (Safety Wall — permanece toda S1).",
+          "8. Instructor circula, escucha, toma nota de errores frecuentes para debrief."
+        ],
+        "teacher_talk_instruction": "*OK teams, you have this headline. Five minutes — three questions: What happened? Why did it happen? And what is PPE? Write short answers. Use English if you can — if you need Spanish, that's ok. Go. I'm listening.* (Circular durante tarea.)",
+        "icq": [
+          "*How many people should be in your group?* → Esperan: 3 or 4",
+          "*Do you write long sentences or short words?* → Esperan: Short words / Short answers",
+          "*Can we use Spanish?* → Esperan: Yes, but English is better"
+        ],
+        "answer_key_inline": {
+          "que_paso": [
+            "Three mechanics were hospitalized",
+            "There was a fire in the workshop",
+            "The mechanics were injured"
+          ],
+          "por_que": [
+            "They didn't wear PPE",
+            "They didn't follow safety rules",
+            "They were not protected",
+            "Poor PPE compliance (del headline)"
+          ],
+          "que_es_ppe": [
+            "Personal Protective Equipment",
+            "Clothes and gear that protect you",
+            "Gloves, goggles, boots, helmet",
+            "Things you wear to be safe"
+          ],
+          "que_deben_hacer": [
+            "Wear PPE always",
+            "Follow safety rules",
+            "Tell the supervisor",
+            "Use fire extinguisher",
+            "Never work without protection"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 No corrija en el momento — escuche, anote patrones (ej. confusión 'fire extinguisher' vs 'fire'). Use para debrief en Momento 4.",
+          "💡 Si un grupo termina antes: pídales añadir una oración más: 'How can we prevent this?' Use esto para transición a Momento 2."
+        ],
+        "checkpoint": "✓ Quick verbal survey: 'Who understands PPE?' Mano levantada = 6+ = proceed. <6 = brief 1-min clarification: 'PPE = Protective Equipment. Gloves. Goggles. Protection.'",
+        "transition": "*Great work. You understand the problem. Now let's look at the workshop — the place where this can happen. Let's see the map.*",
+        "tecnica_didactica": "Análisis de situación problémica / preguntas detonantes"
+      },
+      {
+        "letra": "B",
+        "nombre": "Momento 2 — The Map: Workshop Geography",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.1, Activity 2",
+        "agrupacion": "Whole class (presentation) → Pairs (naming) → Plenary (sharing)",
+        "objetivo": "Nombrar en inglés las 7 áreas del taller. Anclar vocabulario espacial (preposiciones de ubicación). Construir Word Wall del aula.",
+        "instrucciones_paso_a_paso": [
+          "1. Proyectar infografía del taller (grande, clara, etiquetada).",
+          "2. Instructor señala cada zona lentamente, lee etiqueta 2 veces: 'Service Bay 1. Service Bay 2. Service Bay 3. Parts Room. Tool Storage. Wash Area. Hazmat Zone.'",
+          "3. Estudiantes repiten en coro 2 veces cada zona.",
+          "4. Proyectar MODELO de frase: 'This is the Service Bay. The Service Bay is next to the Parts Room.'",
+          "5. Parejas (pre-asignadas, cambiadas de A): una pareja recibe zona 1, otra zona 2, etc. (7 zonas = 4 pares + 1 trio, rotate).",
+          "6. Cada pareja prepara 2 oraciones descripción (escriben en papel o tablet — 5 min).",
+          "7. Parejas presentan al plenary (15 seg c/u).",
+          "8. Instructor escribe cada descripción correcta en BOARD PLAN (Live Zone) — modelo de uso de estructuras.",
+          "9. Crear Word Wall en pared: 7 tarjetas con ÁREAS (escritas por instructor en grande) permanecen visibles."
+        ],
+        "teacher_talk_instruction": "*OK partners. Look at the map. This is the Service Bay. Here's how we describe it: 'This is the Service Bay. The Service Bay is next to the Parts Room.' Now you — each pair takes one area. Write two sentences. Use the pattern: This is... The... is next to... Go. Five minutes. Then we share.* (Model frase queda visible.)",
+        "icq": [
+          "*How many areas do you have?* → Esperan: One",
+          "*Do you write the sentences or say them?* → Esperan: Write them",
+          "*What's the pattern? This is... what?* → Esperan: 'This is the [area]' / 'The [area] is next to'"
+        ],
+        "answer_key_inline": {
+          "zona_service_bay": "This is the Service Bay. The Service Bay is where mechanics work. Service Bays are next to the Parts Room.",
+          "zona_parts_room": "This is the Parts Room. The Parts Room has tools and parts. It is behind the Service Bay.",
+          "zona_tool_storage": "This is the Tool Storage. The Tool Storage has all tools. It is next to the Service Bay.",
+          "zona_wash_area": "This is the Wash Area. Mechanics wash tools here. The Wash Area is near the Hazmat Zone.",
+          "zona_hazmat": "This is the Hazmat Zone. Hazmat means hazardous materials. The Hazmat Zone is for chemicals and fluids.",
+          "zona_reception": "This is the Reception Area. The Reception Area is where customers come. It is at the entrance."
+        },
+        "facilitation_notes": [
+          "💡 Si una pareja no sabe cómo decir algo, ofrece 2-3 opciones: 'Say it in Spanish? Or: I can write the first word and you finish?' No wait-time sin soporte.",
+          "💡 Modelo VIVO en tablero — reescriber cada oración Student→Board = validation + visual reference que permanece."
+        ],
+        "checkpoint": "✓ All pairs successfully present 1+ oración = proceed. Si alguien lucha: assign como co-presenter con pareja fuerte en siguiente bloque.",
+        "transition": "*Perfect! You know the workshop now. You know where things are. Now we are going to MEET the people who work here — Carlos, Valentina, and Santiago. They are our team.*",
+        "tecnica_didactica": "Observación activa y descripción guiada"
+      },
+      {
+        "letra": "C",
+        "nombre": "Momento 3 & 4 — The Story & The Debate: Characters + Values",
+        "duracion_min": 70,
+        "worksheet_ref": "PM-2.1 Activities 3-4 + PM-2.2 Contextualización",
+        "agrupacion": "Whole class (presentation) → Individual (reflection) → Whole class (debate)",
+        "objetivo": "Introducir universo narrativo. Practicar lenguaje de acuerdo/desacuerdo. Activar pensamiento crítico sobre mantenimiento y seguridad.",
+        "instrucciones_paso_a_paso": [
+          "1. Proyectar / mostrar tarjetas de 3 personajes: Carlos Mendoza (Lead Technician), Valentina Cruz (Apprentice), Santiago Ríos (Technician).",
+          "2. Instructor narra (2-3 frases): 'This is The Diesel Workshop in Bogotá. Carlos is the supervisor — he has 15 years. Valentina is new — this is her first day. Santiago is in the middle — he has 3 years. They work as a team. They speak English in their workshop because they work with international clients.'",
+          "3. Proyectar 3 afirmaciones de debate (PM-2.2, escritas grandes):",
+          "   ① Preventive maintenance is more important than corrective maintenance.",
+          "   ② A mechanic who doesn't speak English cannot read a diesel engine manual.",
+          "   ③ PPE rules are just bureaucracy — an experienced mechanic doesn't need them.",
+          "4. Instructor lee cada afirmación 2 veces (pausado).",
+          "5. Individual time (3 min): cada estudiante marca su posición: ✓ Agree / ✗ Disagree (worksheet o papel).",
+          "6. Debate: Instructor presenta each statement. 'Who agrees? Stand on this side. (Point left.) Who disagrees? Stand on this side. (Point right.) Why? 30 seconds — who can tell me?'",
+          "7. Tomar 2-3 voces por afirmación (varies de cada lado si es posible). Usar frames: 'I think X because Y.' / 'I disagree because...'",
+          "8. Instructor valida ambas posiciones: 'Good thinking both sides.'",
+          "9. Cierre: 'What we learn: in a professional workshop, everyone — Carlos, Valentina, Santiago — speak English, use PPE, follow procedures. That is professional. That is where we are going.'"
+        ],
+        "teacher_talk_instruction": "*OK, look at these three people — Carlos, Valentina, Santiago. They work here at The Diesel Workshop. They are a team. (Pause.) Now — I say a sentence. You decide: Do you agree or disagree? Stand here (point left) if yes. Stand here (point right) if no. Ready? Sentence 1: Preventive maintenance is more important than corrective maintenance. (Wait for movement.) Why? Who can tell me?* (Listen, validate, move to next.)",
+        "icq": [
+          "*Who are the three people?* → Esperan: Carlos / Valentina / Santiago (or descriptions of them)",
+          "*Where do they work?* → Esperan: Diesel Workshop / Bogotá",
+          "*When we debate, do we stand or sit?* → Esperan: Stand",
+          "*What do we use to explain? 'I think...' or 'I go'?* → Esperan: I think"
+        ],
+        "answer_key_inline": {
+          "afirmacion_1": {
+            "agree_porque": "Preventive maintenance stops problems before they happen. It saves money. It saves time. It keeps people safe.",
+            "disagree_porque": "Corrective maintenance is important too. Sometimes you can't prevent something. Both are necessary. Corrective is emergency."
+          },
+          "afirmacion_2": {
+            "agree_porque": "English manuals exist. Manufacturers are English. International standards are English. A technician needs to read.",
+            "disagree_porque": "You can work without English. You can use pictures. You can ask others. You learn on the job."
+          },
+          "afirmacion_3": {
+            "agree_porque": "Rules protect us. Experience doesn't replace physics. Acid burns anyone. Fire burns anyone. Experience + PPE = safe.",
+            "disagree_porque": "Rules are sometimes too strict. Experienced people know risks. Some rules waste time."
+          }
+        },
+        "facilitation_notes": [
+          "💡 Debate NO es argumentación ganadora — es exposición a posturas múltiples. Validar ambos lados cada ronda: 'Good reason. Important point.'",
+          "💡 Si estudiantes no hablan mucho: ofrecer sentence starters en tablero: 'I think... because...' / 'I disagree... because...' (permanece visible)."
+        ],
+        "checkpoint": "✓ ¿Participaron 4+ voces en el debate? ¿Utilizaron frames de acuerdo/desacuerdo? Si <4 voces: en Wrap-Up, hacer panel de 2-3 personas que sí hablaron — 'You did great. Not everyone speaks at once — that's OK.'",
+        "transition": "*Excellent. You are thinking like a professional. Now let's stop and think — what do YOU know already about the workshop? What do you WANT to know? Let's make our Learning Agenda.*",
+        "tecnica_didactica": "Debate argumentativo con marcos de acuerdo/desacuerdo"
+      },
+      {
+        "letra": "D",
+        "nombre": "MOMENTOS 1-4 (PM-2.2) — Contextualización: KWL + Diagnosis + Gap Cards + Peer Interview",
+        "duracion_min": 70,
+        "worksheet_ref": "PM-2.2, Activities 1-4",
+        "agrupacion": "Individual (KWL, Gap) → Small groups (diagnosis) → Pairs (interview)",
+        "objetivo": "Mapear conocimiento previo (Know), aspiraciones (Want), predicción de aprendizaje (Learned). Diagnosticar nivel actual contra 6 competencias. Construir Learning Contract implícito.",
+        "instrucciones_paso_a_paso": [
+          "ACTIVIDAD 1 — KWL TABLE (10 min):",
+          "1. Distribuir tabla KWL impresa (1 por aprendiz).",
+          "2. Instructor MODELEA en tablero: 'Column 1: KNOW. What do you know about workshops? (Write 1-2 ideas.) Column 2: WANT. What do you want to learn? (Write 1-2.) Column 3: LEARNED. (Empty now — we fill at end of S8.)'",
+          "3. Estudiantes completan tabla individual (inglés si pueden; español ok).",
+          "4. Instructor circula, lee respuestas, toma mental note: patrones de conocimiento = informa intensidad S2 scaffold.",
+          "",
+          "ACTIVIDAD 2 — DIAGNOSTIC IMAGES (15 min):",
+          "1. Proyectar / distribuir imágenes de taller con errores (4 imágenes):",
+          "   — Técnico sin PPE usando amoladora",
+          "   — Toolbox abierto con herramientas tiradas",
+          "   — Derrame de aceite sin señalización",
+          "   — Extinguidor bloqueado",
+          "2. Parejas (rotate de Momento 2): elige 1 imagen. Describe error en inglés usando frames:",
+          "   'There is a ___. The ___ is ___. The technician should ___.'",
+          "3. Ejemplos en tablero como referencia.",
+          "4. Pares comparten descripción brevemente (30 seg c/u).",
+          "",
+          "ACTIVIDAD 3 — GAP CARDS (15 min):",
+          "1. Distribuir Gap Card (6 statements): 'I can name 15 of 20 tools...' 'I can classify maintenance...' etc.",
+          "2. Instrucciones: 'Read each statement. Mark: ✓ YES I can do this. ◐ MAYBE. ✗ NO I can't do this.'",
+          "3. Individual, silent, 5-7 min.",
+          "4. INSTRUCTOR RECOGE GAP CARDS — importante: guardarlas plastificadas para S8 cierre (redistribución).",
+          "5. Brief survey: 'Show me thumbs: Who marked YES on statement 1? Who marked MAYBE? Who marked NO?' Verbal count.",
+          "",
+          "ACTIVIDAD 4 — PEER INTERVIEW (15 min):",
+          "1. Distribuir guión de entrevista (5 preguntas):",
+          "   — What tools do you use most?",
+          "   — What type of maintenance do you do?",
+          "   — Do you always wear PPE? Which?",
+          "   — What happens when there's a spill?",
+          "   — What English words from the workshop do you know?",
+          "2. Parejas (NEW rotation): uno es interviewer, otro answerer. 5 min.",
+          "3. Switch roles, 5 min.",
+          "4. Instructor circula: escucha, toma nota de vocabulario previo (=informa Vocabulary Scaffold PM-2.5 S2)."
+        ],
+        "teacher_talk_instruction": "*Now we think about YOUR knowledge. First — the KWL table. (Hold up.) Three columns: KNOW, WANT, LEARNED. Think about workshops — what do you know already? Write 3-5 words. Not sentences — words or short phrases. Go. Five minutes.* (Wait; circulate.) *Great. Now we look at these four pictures. You see problems — errors. With your partner, describe one error using: 'There is a ___. The technician should ___.' Ready?* (Show first image.)",
+        "icq": [
+          "*What do we put in column 1, KNOW?* → Esperan: Things I know / Workshops I know about",
+          "*What about column 2?* → Esperan: Things I want to learn",
+          "*When we interview, do we answer the same questions or different?* → Esperan: Same questions",
+          "*Can we answer in Spanish?* → Esperan: Yes, but English is better"
+        ],
+        "answer_key_inline": {
+          "kwl_know_ejemplos": [
+            "Tools have names",
+            "Workshops need safety",
+            "I use wrenches",
+            "Floor jacks are heavy",
+            "PPE is important"
+          ],
+          "kwl_want_ejemplos": [
+            "Learn tool names in English",
+            "Understand safety rules",
+            "Speak English with supervisor",
+            "Read English manuals",
+            "Know all tools"
+          ],
+          "diagnostic_error_1": "There is a technician. The technician is not wearing goggles. The technician is using a grinder. The technician should wear safety goggles.",
+          "diagnostic_error_2": "There is a toolbox. Tools are on the floor. The toolbox is open. Tools should be inside. The area should be clean.",
+          "diagnostic_error_3": "There is an oil spill. The spill is near the service bay. There is no warning sign. The area is not safe. Someone should clean it.",
+          "diagnostic_error_4": "There is a fire extinguisher. It is blocked. A box is in front. The extinguisher is not accessible. We need to move the box.",
+          "gap_card_respuestas_esperadas": [
+            "Vary widely — Sí, Talvez, No = baseline assessment"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 KWL KNOW column = goldmine de info previa. Usa esto para S2 warm-up: 'Yesterday you told me you know ___. Let's build on that.'",
+          "💡 GAP CARDS: no reacciones negativas a respuestas bajo. Tone: 'Good self-knowledge. You're honest. That's why we're here.'",
+          "💡 PEER INTERVIEW: si parejas no hablan inglés, ceden a español. No shame. Nota: 'Pero mañana intentamos inglés, ¿ok?'"
+        ],
+        "checkpoint": "✓ CHECKPOINT 2: ¿Todos completaron Gap Card? (Recuento rápido.) ¿Mayoría expresó at least 1 'Know'? Si no: brief 2-min reframe: 'You have experience. That IS knowledge. Now we translate to English.'",
+        "transition": "*Perfect. You know more than you think. You want to learn. Tomorrow we are going to read an article about tools, and we will put all of this knowledge on the board — our Learning Agenda. That's how we will know we are learning.*",
+        "tecnica_didactica": "KWL chart / Diagnóstico / Entrevista de pares"
+      }
+    ],
+    "breaks": [
+      {
+        "after_bloque": "C",
+        "duracion_min": 15,
+        "nombre": "BREAK — Stretch & Recharge",
+        "teacher_talk": "*OK team. Fifteen minute break. Stand up. Stretch. Get water. Walk around. Come back in fifteen minutes ready to talk about what YOU know. Let's go.*"
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 15,
+    "exit_ticket": {
+      "tarea": "Individual (silent): Escribe o dibuja 1 palabra del taller en inglés que aprendiste hoy (puede ser area, herramienta, seguridad). Debajo, escribe 1 cosa que quieres aprender en esta guía. Ejemplo: (1) 'floor jack' / (2) 'How to speak English to supervisor.'",
+      "success_criteria": "✓ Palabra en inglés (reconocible, escrita). ✓ Uno (1) objetivo personal para la guía. ✓ Foto rápida (instructor toma foto de cada respuesta).",
+      "duration_min": 10
+    },
+    "teacher_talk_closing": "*Before we finish — take 3 minutes. Write ONE word from the workshop in English. Maybe it's floor jack. Maybe it's PPE. Maybe it's service bay. Below that, write ONE thing you want to learn from me in these eight sessions. Example: 'I want to speak English to Carlos.' Ready? You have 5 minutes. Silent work. Go.*",
+    "trabajo_autonomo": {
+      "actividad": "Vocabulary Preview + Self-assessment (Homework S1 → Review S2)",
+      "instrucciones_detalladas": "1. HOMEWORK PART 1 (45 min): Find IMAGES of 5 tools you use in the workshop (floor jack, wrench, socket, torque wrench, fire extinguisher). You can use Google Images, your phone camera, or pictures from magazine. Write the ENGLISH NAME under each image. Example: 'This is a floor jack.' Bring photos or printouts to S2. 2. HOMEWORK PART 2 (30 min): Self-Assessment. Look at the 6 Gap Card statements you marked today (instructor gave you a photo). Today you marked YES / MAYBE / NO. At home: write SHORT answers to questions: 'Why did I mark this? What do I need to do?' Example: 'I marked NO for 'name 20 tools' because I only know 5 tools. I need to practice.' 3. HOMEWORK PART 3 (15 min, optional): Watch a SHORT YouTube video (2 minutes) of a diesel mechanic working in English. Find any word you recognize (tool name, action, safety word). Write it down. Bring list to S2. Example words: 'wrench, safety, check.' **Total time: ~90 min (~1.5h)**",
+      "entregable": "Photos of 5 tools (physical or digital) + Short answers to self-assessment questions + Optional list of words from video (bring all to S2)",
+      "cuando_se_revisa": "S2 SET-UP: Instructor collects homework, praises effort, uses for S2 warm-up recall"
+    },
+    "preview_next_session": "*Next session we READ an article about tools. You bring those photos — we will use them. We will learn the 20 key words every diesel technician needs to know. See you tomorrow. Great first day, team.*",
+    "facilitation_notes": [
+      "💡 Exit Ticket timing: recolecta fotos en aula (usa phone, tablet, o polaroid instant). Estudiantes salen DESPUÉS de foto = proof of completion + motivación.",
+      "💡 Trabajo autónomo debe sentirse REALISTA. Enfatiza: 'Solo 1.5 horas. Videos están cortos. Traer lo que encuentres — no tiene que ser perfecto.'"
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "Momento 1 — The Headline: Safety Comprehension",
+      "items": [
+        {
+          "pregunta": "What happened in the headline?",
+          "respuesta_correcta": "Three mechanics were hospitalized.",
+          "alternativas": [
+            "There was a fire in the workshop.",
+            "Mechanics got injured."
+          ],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Why did it happen?",
+          "respuesta_correcta": "Poor PPE compliance. / They didn't wear PPE.",
+          "alternativas": [
+            "They didn't follow safety rules.",
+            "No protection.",
+            "Investigators blamed PPE compliance."
+          ],
+          "puntos": 1
+        },
+        {
+          "pregunta": "What is PPE?",
+          "respuesta_correcta": "Personal Protective Equipment (gloves, goggles, boots, helmet).",
+          "alternativas": [
+            "Clothes and protection you wear.",
+            "Equipment to protect you.",
+            "Safety gear."
+          ],
+          "puntos": 1
+        }
+      ]
+    },
+    {
+      "actividad": "Momento 2 — The Map: Workshop Areas",
+      "items": [
+        {
+          "pregunta": "Name 3 areas of the workshop in English.",
+          "respuesta_correcta": "Service Bay, Parts Room, Tool Storage / Wash Area / Hazmat Zone.",
+          "alternativas": [
+            "Any 3 valid workshop areas from the map."
+          ],
+          "puntos": 3
+        },
+        {
+          "pregunta": "Complete: The ___ is next to the ___.",
+          "respuesta_correcta": "Service Bay is next to the Parts Room (or similar logical pairs).",
+          "alternativas": [
+            "Tool Storage is next to Service Bay.",
+            "Wash Area is next to Hazmat Zone."
+          ],
+          "puntos": 2
+        }
+      ]
+    },
+    {
+      "actividad": "Momento 3 & 4 — The Story & The Debate",
+      "items": [
+        {
+          "pregunta": "Who is the Lead Technician at The Diesel Workshop?",
+          "respuesta_correcta": "Carlos Mendoza.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Who is the apprentice?",
+          "respuesta_correcta": "Valentina Cruz.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Is PPE important for experienced mechanics?",
+          "respuesta_correcta": "YES. Everyone needs PPE. Experience does not replace protection.",
+          "alternativas": [
+            "Protection is for everyone.",
+            "Acid burns anyone. Fire burns anyone."
+          ],
+          "puntos": 2
+        }
+      ]
+    },
+    {
+      "actividad": "PM-2.2 Activity 1 — KWL Table",
+      "items": [
+        {
+          "pregunta": "Write 1 thing you KNOW about workshops.",
+          "respuesta_correcta": "Any relevant prior knowledge (tools, safety, structure, work).",
+          "alternativas": [
+            "Open-ended. Sample: 'Tools have names.', 'Workshops are big.', 'Safety is important.'"
+          ],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Write 1 thing you WANT to learn.",
+          "respuesta_correcta": "Any relevant learning aspiration.",
+          "alternativas": [
+            "Open-ended. Sample: 'Learn tool names.', 'Speak English.', 'Understand manuals.'"
+          ],
+          "puntos": 1
+        }
+      ]
+    },
+    {
+      "actividad": "PM-2.2 Activity 2 — Diagnostic Images",
+      "items": [
+        {
+          "pregunta": "Describe the error in Image 1 (technician without PPE).",
+          "respuesta_correcta": "There is a technician. The technician is not wearing goggles. The technician should wear safety goggles.",
+          "alternativas": [
+            "The technician is not protected.",
+            "Goggles are missing.",
+            "This is not safe."
+          ],
+          "puntos": 2
+        },
+        {
+          "pregunta": "Describe the error in Image 2 (tools on floor).",
+          "respuesta_correcta": "There is a toolbox. Tools are on the floor. Tools should be inside. The area is not organized.",
+          "alternativas": [
+            "Tools are messy.",
+            "The toolbox is open.",
+            "Things are not safe."
+          ],
+          "puntos": 2
+        },
+        {
+          "pregunta": "Describe the error in Image 3 (oil spill).",
+          "respuesta_correcta": "There is an oil spill. The spill is not marked. Someone could slip. Someone should clean it.",
+          "alternativas": [
+            "Oil is on the floor.",
+            "The area is wet.",
+            "This is a hazard."
+          ],
+          "puntos": 2
+        },
+        {
+          "pregunta": "Describe the error in Image 4 (blocked extinguisher).",
+          "respuesta_correcta": "The fire extinguisher is blocked. There is a box in front. The extinguisher is not accessible.",
+          "alternativas": [
+            "The extinguisher is in the way.",
+            "We cannot reach the extinguisher.",
+            "This is a safety problem."
+          ],
+          "puntos": 2
+        }
+      ]
+    },
+    {
+      "actividad": "PM-2.2 Activity 3 — Gap Cards (6 Statements)",
+      "items": [
+        {
+          "statement": "I can name 15 of the 20 key tools and areas of a diesel workshop in English.",
+          "expected_response": "✓ YES / ◐ MAYBE / ✗ NO",
+          "nota": "Baseline self-assessment. No right/wrong. Data only for instructor."
+        },
+        {
+          "statement": "I can classify types of maintenance (preventive, corrective, predictive) in English.",
+          "expected_response": "✓ YES / ◐ MAYBE / ✗ NO",
+          "nota": "Baseline."
+        },
+        {
+          "statement": "I can identify and report a safety hazard to my supervisor in English.",
+          "expected_response": "✓ YES / ◐ MAYBE / ✗ NO",
+          "nota": "Baseline."
+        },
+        {
+          "statement": "I can fill in a daily inspection checklist in English.",
+          "expected_response": "✓ YES / ◐ MAYBE / ✗ NO",
+          "nota": "Baseline."
+        },
+        {
+          "statement": "I can give basic instructions about PPE in English.",
+          "expected_response": "✓ YES / ◐ MAYBE / ✗ NO",
+          "nota": "Baseline."
+        },
+        {
+          "statement": "I can describe the current state of a service bay in English.",
+          "expected_response": "✓ YES / ◐ MAYBE / ✗ NO",
+          "nota": "Baseline."
+        }
+      ]
+    },
+    {
+      "actividad": "PM-2.2 Activity 4 — Peer Interview",
+      "items": [
+        {
+          "pregunta": "What tools do you use most in the workshop?",
+          "respuesta_correcta": "Any workshop tools (wrench, ratchet, socket, etc.).",
+          "alternativas": [
+            "Open-ended. Answers vary by technician experience."
+          ],
+          "puntos": "Data only"
+        },
+        {
+          "pregunta": "What type of maintenance do you do most — preventive or corrective?",
+          "respuesta_correcta": "Depends on role. Answer should be one of the two types.",
+          "alternativas": [
+            "Both / Mostly preventive / Mostly corrective"
+          ],
+          "puntos": "Data only"
+        },
+        {
+          "pregunta": "Do you always wear PPE? Which PPE?",
+          "respuesta_correcta": "YES. And name: gloves, goggles, boots, helmet, etc.",
+          "alternativas": [
+            "Any PPE items mentioned correctly."
+          ],
+          "puntos": "Data only"
+        },
+        {
+          "pregunta": "What happens in your workshop when there is a spill?",
+          "respuesta_correcta": "Report it / Clean it / Mark it / Use absorbent material.",
+          "alternativas": [
+            "Any safety procedure response."
+          ],
+          "puntos": "Data only"
+        },
+        {
+          "pregunta": "What English words from the workshop do you already know?",
+          "respuesta_correcta": "Any workshop vocabulary in English.",
+          "alternativas": [
+            "Wrench, socket, safety, floor jack, etc."
+          ],
+          "puntos": "Data only"
+        }
+      ]
+    },
+    {
+      "actividad": "EXIT TICKET (WRAP-UP)",
+      "items": [
+        {
+          "pregunta": "Write 1 English word from today's workshop.",
+          "respuesta_correcta": "Any word learned: floor jack, PPE, wrench, service bay, safety, etc.",
+          "alternativas": [
+            "Any workshop vocabulary from the session."
+          ],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Write 1 thing you want to learn in this guide.",
+          "respuesta_correcta": "Any relevant learning goal.",
+          "alternativas": [
+            "Speak English, learn tools, read manuals, work with supervisor, etc."
+          ],
+          "puntos": 1
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "Momento 1: If group finishes The Headline early, ask: 'What ELSE can prevent this accident? Write 2 more ideas.' (Extends critical thinking.)",
+      "Momento 2: If pair finishes The Map early, task: 'Create a NEW area for the workshop. What would it be? Why? (Write name + description.) Example: Tire Storage / Recycling Area / Office.' (Creative extension.)",
+      "Momento 3 & 4: If student finishes Debate early, task: 'Think of a FOURTH statement for debate about safety or maintenance. Write it. Be ready to debate it with the class.' (Ownership.)",
+      "KWL + Diagnosis: If finished early, pair with a peer who is still working as 'coach.' 'Help them think about 1 more KNOW.' (Peer tutor role.)"
+    ],
+    "more_support_needed": [
+      "Momento 1: If group struggles with English descriptions, offer sentence starter on board: 'I think this happened because: (1) No PPE (2) No training (3) No [supervisor/rules].' Circle the one you choose. Write 1 word explanation.",
+      "Momento 2: If pair cannot write 2 sentences, reduce to 1 sentence: 'This is the [area].' Or: 'The [area] is [description].' Model on board.",
+      "Momento 3 & 4: If student hesitates to participate in debate, offer private pre-debate rehearsal: 'Do you agree or disagree? (Wait for answer.) Good. Now say it to me.' Then public sharing feels less risky.",
+      "Gap Cards: If student marks all NOs, normalize: 'That's OK. We are learning today. By S8, you'll mark YES.' Use as motivation, not discouragement.",
+      "Peer Interview: Pair weaker English speakers with stronger ones. Weaker speaks; stronger scribe + coach if needed. Not diminishment — collaboration."
+    ]
+  },
+  "instructor_self_check": [
+    "¿Todos los aprendices completaron el Exit Ticket? ¿Reconocieron la palabra en inglés? ¿Expresaron un objetivo personal? (Target: 100%. Si <100%, follow-up individual S2 warm-up.)",
+    "¿Hubo algún momento donde la MAYORÍA parecía perdida? (Target: No. Si sí, nota en qué actividad y ajusta S2 opening scaffold. Ejemplo: 'Si fue Moment 3, dedica 5 min extra S2 a repaso de personajes.')",
+    "¿Los TIEMPOS se cumplieron o hubo desfases? (A, B, C debieron ser ~50/60/70 min. Si uno estiró: ¿fue por engagement positivo (keep) o confusión (cut next time)?)",
+    "¿Qué ERRORES comunes observé? (Toma 3 ejemplos: vocab confusión, grammar pattern, pronunciation. Anota. Usa en S2 debrief / error correction loop.)",
+    "¿El trabajo autónomo asignado (1.5h) es REALISTA para mis aprendices? (Nota: ¿tienen acceso a internet para videos? ¿tiempo después del trabajo? Ajusta instrucciones S2 si necesario.)"
+  ],
+  "totals_check": {
+    "set_up": 25,
+    "while_bloque_a": 50,
+    "while_bloque_b": 60,
+    "while_bloque_c": 70,
+    "break": 15,
+    "while_bloque_d": 70,
+    "while_bloque_e": 10,
+    "wrap_up": 15,
+    "total": 360,
+    "check_result": "✓ EXACTO 360 min"
+  },
+  "rap_status": "PENDIENTE (asignación posterior por instructor)",
+  "momento_sena": "3.1 — Reflexión Inicial",
+  "estrategia_didactica": "Aprendizaje Basado en Problemas + Estudio de Casos",
+  "justificacion_didactica": "El titular de prensa ('Three mechanics hospitalized') es la situación problémica detonante que activa el conflicto cognitivo y la necesidad del inglés técnico como respuesta profesional.",
+  "pm0_protocol": {
+    "grammar_groups": [
+      "Grupo 1 — Verbo be: exposición receptiva (escuchar/leer). Sin producción exigida aún.",
+      "Estructuras esperadas en input: 'I'm [nombre]', 'He's the [rol]', 'There's a problem.'"
+    ],
+    "feedback": {
+      "mode": "FLUENCY — sesión diagnóstica. NO interrumpir producción espontánea.",
+      "accuracy_techniques": [],
+      "fluency_techniques": [
+        "Post-task delayed feedback: al cierre del Bloque, no durante.",
+        "Error codes escritos (V = vocabulario, G = gramática) en tarjeta del instructor — revisar en S2 warm-up.",
+        "Nunca corregir durante el debate de la Pregunta Polémica ni durante el KWL."
+      ],
+      "notes": "Prioridad: que el aprendiz hable, no que hable perfecto. Silenciar el filtro afectivo."
+    },
+    "l1_management": {
+      "l1_percentage": "≤ 30 % L1 (A1.1 baseline). Esta sesión es la más tolerante — es día 1.",
+      "english_zone_declaration": "Declarar English Zone al abrir tablero: escribir 'ENGLISH ZONE 🔵' en esquina superior derecha. Señalarlo antes del SET-UP.",
+      "l1_allowed_for": [
+        "Instrucciones complejas de procedimiento (primeras 2 veces que se dan).",
+        "Metacognición en KWL y Learning Contract.",
+        "Gestión emocional si un aprendiz muestra bloqueo severo."
+      ],
+      "reduction_strategy": "En S2 se reduce al 25 %. Recordarlo al final del wrap-up: 'Next session — more English, less Spanish.'"
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        "workshop",
+        "diesel",
+        "maintenance",
+        "safety",
+        "specialist"
+      ],
+      "techniques": [
+        "Modelado de instructor únicamente — sin drill formal aún.",
+        "Board marking: escribir las palabras foco con sílaba tónica en MAYÚSCULA (WORK-shop, DIE-sel).",
+        "Repetición coral suave al presentar cada personaje (Carlos, Valentina, Santiago)."
+      ],
+      "board_marking": "Sílaba tónica en MAYÚSCULA en la Word Wall desde el inicio.",
+      "notes": "S1 introduce el concepto de stress sin metalenguaje. El drill sistemático empieza en S3."
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "workshop",
+        "safety",
+        "maintenance",
+        "specialist",
+        "deadline",
+        "crash"
+      ],
+      "factors_applied": [
+        "S — Sounds: instructor modela pronunciación de cada Survival Word.",
+        "M — Meaning: definición con gesto + traducción breve en S1 únicamente.",
+        "E — Encounter: aprendices leen las palabras en el escenario (PM-2.1).",
+        "C — Conceptualize: mapa mental KWL — ¿qué sé de este campo?"
+      ]
+    }
+  }
+}

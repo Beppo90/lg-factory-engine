@@ -1,0 +1,660 @@
+{
+  "pm_id": "PM-3.2-S8",
+  "run_id": "DIESEL-2026-04-15",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 8,
+  "session_name": "The Full Circle",
+  "fase_sena": "Transferencia — Final Mission + Cierre Reflexivo",
+  "generated_at": "2026-04-15",
+  "model": "claude-sonnet-4-6",
+  "status": "completed",
+  "worksheets_used": [
+    "PM-3.5 (Final) — Final Mission Live Performance + Full Circle Closure"
+  ],
+  "evidences_generated": [],
+  "evidence_note": "S8 genera sin evidencia numerada nueva (E1–E6 completas). El Final Mission se evalúa con Escala de estimación No 6 como desempeño integrativo capstone — no es Evidencia GFPI numerada.",
+  "header": {
+    "programa": "Mantenimiento de los Motores Diesel",
+    "guia": "1.1 — The Workshop Specialist",
+    "sesion": 8,
+    "nombre_sesion": "The Full Circle",
+    "cefr": "A1.1–A1.2",
+    "duracion_total_min": 360,
+    "horas_directas": 6,
+    "horas_autonomas": 0,
+    "ambiente": "Aula transformada — espacio de actuación central + espacio de reflexión + muro de evidencias",
+    "personajes": [
+      "Carlos Mendoza — Lead Technician / Supervisor",
+      "Valentina Cruz — Apprentice",
+      "Santiago Ríos — Technician"
+    ],
+    "nota": "Última sesión de la guía. Trabajo autónomo: ninguno — todo cierra hoy. Escala No 6 devuelta según timeline institucional."
+  },
+  "capstone_instrument": {
+    "title": "Escala de estimación No 6 — Final Mission: The Workshop Morning Briefing",
+    "evaluator": "Instructor como Training Coordinator — observador externo, no interviene durante la performance",
+    "timing": "Completada en tiempo real durante cada performance",
+    "criteria": [
+      {
+        "n": 1,
+        "criterion": "Todas las 5 funciones comunicativas visibles y usadas correctamente (F1–F5)",
+        "scale": "1–5",
+        "note": "Mínimo 1 instancia de cada función; F1 mínimo 2 instancias"
+      },
+      {
+        "n": 2,
+        "criterion": "≥ 15 términos del Toolbelt distribuidos entre los 3 roles del equipo",
+        "scale": "1–5",
+        "note": "Términos distintos — repetición no suma"
+      },
+      {
+        "n": 3,
+        "criterion": "Interacción genuina de equipo: ≥ 3 intercambios directos entre miembros (no monólogo)",
+        "scale": "1–5"
+      },
+      {
+        "n": 4,
+        "criterion": "Corrección gramatical: There is/are + preposiciones + imperativos correctos",
+        "scale": "1–5"
+      },
+      {
+        "n": 5,
+        "criterion": "Pronunciación: 5 términos target comprensibles (fire extinguisher / preventive maintenance / calibration / torque wrench / floor jack)",
+        "scale": "1–5"
+      },
+      {
+        "n": 6,
+        "criterion": "Cumplimiento de tarea: 3–4 min, bay identificado, cierre limpio del briefing",
+        "scale": "1–5"
+      }
+    ],
+    "scoring": "Promedio de 6 criterios (1–5) = puntaje holístico del equipo (1–5). Escala devuelta con comentario escrito por criterio.",
+    "follow_up_question_bank": [
+      "Where is the ratchet right now?",
+      "Is the checklist complete?",
+      "What type of maintenance does this vehicle need?",
+      "Is there any hazard I should know about?",
+      "How many tools are in the toolbox?",
+      "Is the floor jack calibrated?"
+    ],
+    "follow_up_note": "Una pregunta por equipo, después del briefing. La respuesta influye en criterios 1 (F4) y 4 (gramática)."
+  },
+  "session_assets": {
+    "gap_cards_closure": {
+      "description": "Gap Cards creadas en S1, plastificadas y guardadas — redistribuidas HOY al autor original",
+      "s1_statements": [
+        "I can name 5 tools in English.",
+        "I can describe a safety problem in my workshop.",
+        "I can read a work order in English.",
+        "I can give instructions to a colleague in English.",
+        "I can write a Daily Inspection Checklist in English.",
+        "I can explain what preventive maintenance is in English."
+      ],
+      "s8_task": "Re-ratar cada afirmación (1–5) HOY. Calcular delta (S8 – S1) por ítem y total."
+    },
+    "kwl_completion": {
+      "description": "KWL de S1 — columna L (What I Learned) intencionalmente en blanco desde S1. Completada hoy.",
+      "l_column_minimum": "5 oraciones completas en inglés",
+      "w_column_check": "¿La guía respondió tus preguntas? ✓ las respondidas. ○ las no respondidas — semilla para la siguiente guía."
+    },
+    "reflection_prompts": {
+      "letter_to_s1_self": {
+        "frame": [
+          "You will learn ___.",
+          "You will be able to ___.",
+          "You won't believe that ___.",
+          "By Session 8, ___.",
+          "Don't worry about ___."
+        ],
+        "duration_min": 15
+      },
+      "skills_map_s1_vs_s8": {
+        "skills": [
+          "Reading",
+          "Vocabulary",
+          "Grammar",
+          "Writing",
+          "Listening",
+          "Speaking",
+          "Language Functions"
+        ],
+        "columns": [
+          "S1 (1–5)",
+          "S8 (1–5)",
+          "Delta (+___)"
+        ],
+        "reflection": "The skill that surprised me most is ___ because ___."
+      },
+      "peer_celebration": {
+        "prompt": "Tell your partner ONE specific moment during this guide where they surprised you, helped you, or showed you something. Name the session. Name the activity.",
+        "duration_min": 10
+      }
+    },
+    "evidence_portfolio_table": [
+      {
+        "evidence": "E1",
+        "skill": "Reading",
+        "session": 2,
+        "instrument": "Cuestionario No 1",
+        "pts": 5,
+        "recall_prompt": "What did the article say about the torque wrench?"
+      },
+      {
+        "evidence": "E2",
+        "skill": "Writing",
+        "session": 3,
+        "instrument": "Lista de Verificación No 2",
+        "pts": 5,
+        "recall_prompt": "What was the first item on your Daily Inspection Checklist?"
+      },
+      {
+        "evidence": "E3",
+        "skill": "Listening",
+        "session": 4,
+        "instrument": "Cuestionario No 3",
+        "pts": 5,
+        "recall_prompt": "Where was the oil spill in the Bay 2 dialogue?"
+      },
+      {
+        "evidence": "E4",
+        "skill": "Speaking",
+        "session": 4,
+        "instrument": "Escala de estimación No 4",
+        "pts": 5,
+        "recall_prompt": "How long was your Workshop Readiness Report?"
+      },
+      {
+        "evidence": "E5",
+        "skill": "Language Functions",
+        "session": 5,
+        "instrument": "Escala de estimación No 5",
+        "pts": 5,
+        "recall_prompt": "Name one function and one example sentence from your simulation."
+      },
+      {
+        "evidence": "E6",
+        "skill": "Cuestionario Consolidado",
+        "session": 6,
+        "instrument": "Cuestionario No 6 (25 ítems)",
+        "pts": 25,
+        "recall_prompt": "Which of the 5 skill sections felt hardest?"
+      },
+      {
+        "evidence": "Final",
+        "skill": "Final Mission (capstone)",
+        "session": 8,
+        "instrument": "Escala de estimación No 6",
+        "pts": "5 (holístico)",
+        "recall_prompt": "What was your team's bay?"
+      }
+    ],
+    "certificate_card": {
+      "title": "Workshop Specialist Certificate — Guía 1.1",
+      "text": "This certifies that ___ has completed Guía 1.1 — The Workshop Specialist — Mantenimiento de Motores Diesel — CEFR Level A1.1 — and can communicate professionally in English in a diesel workshop environment.",
+      "instructor_note": "Preparar ANTES de S8: una oración específica y personal para cada estudiante — reconocimiento de un momento real durante la guía. Nunca genérico."
+    }
+  },
+  "timeline": {
+    "total_min": 360,
+    "session_start": "07:00",
+    "session_end": "13:00",
+    "blocks": [
+      {
+        "block": "SET-UP",
+        "start": "07:00",
+        "end": "07:25",
+        "duration_min": 25
+      },
+      {
+        "block": "WHILE-A",
+        "start": "07:25",
+        "end": "08:55",
+        "duration_min": 90
+      },
+      {
+        "block": "BREAK",
+        "start": "08:55",
+        "end": "09:10",
+        "duration_min": 15
+      },
+      {
+        "block": "WHILE-B",
+        "start": "09:10",
+        "end": "10:10",
+        "duration_min": 60
+      },
+      {
+        "block": "WHILE-C",
+        "start": "10:10",
+        "end": "11:15",
+        "duration_min": 65
+      },
+      {
+        "block": "WHILE-D",
+        "start": "11:15",
+        "end": "12:35",
+        "duration_min": 80
+      },
+      {
+        "block": "WRAP-UP",
+        "start": "12:35",
+        "end": "13:00",
+        "duration_min": 25
+      }
+    ],
+    "totals_check": {
+      "set_up": 25,
+      "while_blocks": 295,
+      "break": 15,
+      "wrap_up": 25,
+      "grand_total": 360,
+      "validation": "PASS"
+    }
+  },
+  "session_plan": {
+    "set_up": {
+      "block": "SET-UP",
+      "duration_min": 25,
+      "time": "07:00–07:25",
+      "title": "The Workshop Opens — Final Day",
+      "teacher_talk": {
+        "opening": "Good morning, Workshop Team. This is Session 8 — The Full Circle. This is the last session of Guía 1.1. Today you perform your Final Mission. Then we close the circle — we go back to where we started, and we see how far you have come.",
+        "mode_declaration": "From the moment we begin WHILE-A — I am the Training Coordinator. I am not your instructor. I observe. I evaluate. I do not help. After all performances are complete — I am your instructor again, and we celebrate.",
+        "conditions_reminder": "Word Wall — visible. Communication Card — not permitted during performance. Notes — not permitted. Role Card — review it NOW, in silence. Timing starts when Carlos speaks. Three to four minutes. Go.",
+        "icq": "ICQ — Who am I during performances? (Training Coordinator) Can you ask me for help during your briefing? (no) What happens after all teams perform? (we close the circle — Gap Cards, reflection, celebration)"
+      },
+      "activities": [
+        {
+          "time": "07:00–07:08",
+          "activity": "Room Setup + Performance Order Confirmed",
+          "procedure": "Clear center space — performance area. Instructor chair at side as Training Coordinator. Remaining students in U-shape. Post performance order on board. Distribute Observer Sheets (one per observing student). Distribute Escala No 6 forms — instructor holds.",
+          "facilitation_note": "💡 The physical transformation of the room signals to students that today is different. When they enter and see the performance space — not a classroom — their posture changes. The space is part of the pedagogy."
+        },
+        {
+          "time": "07:08–07:18",
+          "activity": "8-Minute Silent Role Card Review",
+          "procedure": "Students review Role Cards in silence — no talking, no rehearsing aloud. Instructor walks quietly — does not speak. After 8 min: 1 minute of team whisper huddle. Then: Team 1 moves to performance area.",
+          "facilitation_note": "💡 The silence is not dead time. Students who practiced the night before use this to feel their lines settle. Students who didn't use this to do a final mental run-through. Both are productive. Do not fill the silence."
+        },
+        {
+          "time": "07:18–07:25",
+          "activity": "Observer Briefing + More Support Coaching",
+          "procedure": "Briefly brief observers: 'Use the Observer Sheet. Count functions — count terms. This is learning — watch carefully.' If any team on S7 more-support carry-over: 2-min private micro-fix coaching (one specific line only). Then: 'Team 1 — begin when ready.'",
+          "formative_checkpoint": "✓ Room set. ✓ Performance order on board. ✓ Role Cards reviewed. ✓ Observer sheets ready."
+        }
+      ]
+    },
+    "while_a": {
+      "block": "WHILE-A",
+      "pm_source": "PM-3.5 (Final) — Final Mission Live Performance",
+      "duration_min": 90,
+      "time": "07:25–08:55",
+      "title": "Final Mission — Live Performance",
+      "bloom": "L3 Aplicar + L4 Analizar + L5 Evaluar",
+      "purpose": "Cada equipo presenta el Workshop Morning Readiness Briefing en vivo ante el Training Coordinator. Evaluación con Escala No 6. Pregunta de seguimiento sorpresa.",
+      "teacher_talk": {
+        "in_role": "(Instructor seated as Training Coordinator. Silence during performances. Brief transition phrases only.)",
+        "after_each": "(After each team) 'Thank you, team.' (pause, writes) 'My question: ___?' (waits for answer) 'Thank you.' (team exits)",
+        "exit_role": "(After ALL teams) — stands, walks to front — 'I am now your instructor again. Every team performed. Every bay is ready. Let's take a break — and then we close the circle.'"
+      },
+      "performance_structure_per_team": {
+        "step_1_sec": "30 — team in position",
+        "step_2_min": "3–4 — full performance, timed",
+        "step_3_min": "1 — follow-up question + team answer",
+        "step_4_min": "1 — instructor marks Escala No 6 in silence",
+        "step_5_min": "1 — observer team shares one observation aloud",
+        "step_6_sec": "30 — transition, next team",
+        "total_per_team_min": "~8–9"
+      },
+      "logistics": {
+        "6_teams": "6 × 9 = 54 min + 36 min buffer (pre-performance setup, end-of-round debrief)",
+        "8_teams": "8 × 9 = 72 min + 18 min buffer",
+        "buffer_use": "End-of-WHILE-A whole-class moment (10–15 min) after all performances"
+      },
+      "post_all_performances_moment": {
+        "time": "Last 10–15 min of WHILE-A",
+        "procedure": "Instructor exits Training Coordinator role explicitly: 'I am your instructor now.' Class moment: 'Show of hands — who observed all 5 functions in at least one team?' '...in ALL teams?' One sentence: 'The language you used today is the language of a diesel workshop professional. That is the truth.'",
+        "facilitation_note": "💡 The re-entry from Training Coordinator to Instructor is a ritual. Make it deliberate — stand up from the evaluation seat, walk to the front, say the words. Students need that signal to shift from evaluation mode to reflection mode."
+      },
+      "plan_b": {
+        "absent_team_member": "Two-person team performs — one person covers merged Valentina+Santiago role. Mark in Escala No 6 as 2-person team.",
+        "overrun": "At 4:30 min: instructor says 'Close the briefing.' Applies to all teams equally.",
+        "freeze": "One prompt allowed: instructor says the bay number aloud as re-entry cue. Notes in Escala No 6."
+      },
+      "facilitation_note": "💡 The follow-up question is the most revealing moment of the entire Final Mission — it shows whether students truly internalized the scenario or were reciting. Keep questions from the bank (already known to students from S7 Round 3 Feedback Cards). Familiarity is intentional — it rewards preparation, not surprise.",
+      "formative_checkpoint": "✓ All teams performed (or documented as absent). ✓ All Escala No 6 forms filled in real time.",
+      "differentiation": {
+        "fast_finishers": "Team finishes in under 3 min: instructor asks a second follow-up question from the bank.",
+        "more_support": "Team clearly struggling: instructor allows one gentle prompt — the bay number. Notes in Escala No 6."
+      },
+      "tecnica_didactica": "Simulación de entorno productivo real / Performance evaluada (Escala de Estimación No 6)"
+    },
+    "break": {
+      "block": "BREAK",
+      "duration_min": 15,
+      "time": "08:55–09:10",
+      "instructor_note": "During break: finalize any Escala No 6 marks. Retrieve Gap Cards (pre-sorted by student name) and KWL charts from S1 storage. Prepare certificate distribution order. Students: earned rest.",
+      "transition_back": "Welcome back. Every team performed. The Workshop is closed. The circle opens now."
+    },
+    "while_b": {
+      "block": "WHILE-B",
+      "duration_min": 60,
+      "time": "09:10–10:10",
+      "title": "The Full Circle — Part 1: Gap Cards + KWL",
+      "bloom": "L1 Recordar + L2 Comprender + L5 Evaluar",
+      "purpose": "Redistribuir Gap Cards de S1 al autor original — re-ratar y calcular delta de crecimiento — completar columna L del KWL — evidenciar el recorrido completo",
+      "teacher_talk": {
+        "gap_cards_intro": "Do you remember Session 1? The first day. You filled out a card — six statements about your English. You rated yourself 1 to 5. I kept those cards for eight sessions. Now — I give them back.",
+        "rerating_instruction": "On the BACK of your card — rate yourself TODAY. Same six statements. Then: subtract S1 from S8. Your delta. Your growth number.",
+        "kwl_intro": "You also remember the KWL chart from Session 1. K and W were filled. The L column — What I Learned — was empty. I said: we fill it on the last day. Today is that day."
+      },
+      "activities": [
+        {
+          "time": "09:10–09:14",
+          "activity": "Gap Card Distribution — Ceremonial",
+          "procedure": "Instructor calls each student by name. Hands card directly to them. Brief, deliberate. Not a stack handed down the row.",
+          "facilitation_note": "💡 The physical act of returning the card is the Full Circle moment in miniature. The student receives the object they held on Day 1. That continuity is irreplaceable — do not rush it."
+        },
+        {
+          "time": "09:14–09:32",
+          "activity": "Re-Rating + Delta Calculation",
+          "procedure": "Students re-rate all 6 statements on the back (S8, 1–5). Calculate delta per statement. Sum total delta. Class share: instructor reads each statement aloud — 'Who went UP on this one? By 1 point? 2? 3? 4? 5?' Hands raised per level. Celebrate highest deltas by name: 'Who gained 4 or more points on any single statement? Stand up.'",
+          "facilitation_note": "💡 Students who rated 4 or 5 in S1 may feel they 'didn't grow.' Reframe: 'You knew more than you realized in S1 — and now you have confirmed it. Confidence is growth.' Students who went from 1 to 4 or 5 — that is the most visible transformation in the room. Celebrate both with equal weight.",
+          "formative_checkpoint": "✓ Every student has calculated and written their delta."
+        },
+        {
+          "time": "09:32–10:10",
+          "activity": "KWL — Column L: What I Learned (5 sentences minimum)",
+          "procedure": "Distribute KWL charts from S1. Individual work (15 min): complete L column — minimum 5 complete sentences in English using vocabulary from the guide. Then: check W column — put ✓ next to each answered question, ○ next to unanswered ones. Pairs share (5 min): read partner ONE L sentence and explain why you chose it. Whole class (5 min): 3 volunteers read their strongest L sentence. Instructor writes the 3 sentences on the board — permanent record for the session.",
+          "facilitation_note": "💡 The unanswered W items are curriculum intelligence. Collect them — they reveal gaps in the guide design. If multiple students have the same unanswered W, that is a priority for the next guide iteration.",
+          "formative_checkpoint": "✓ All KWL L columns completed with minimum 5 sentences in English."
+        }
+      ],
+      "differentiation": {
+        "fast_finishers": "On the back of KWL — write 3 NEW questions they have AFTER completing the guide. Personal learning agenda for the next guide.",
+        "more_support": "L column sentence starter card provided: 'In this guide, I learned that ___.' / 'Now I can ___ in English.' / 'I understand ___ better because ___.' Student fills blanks."
+      },
+      "tecnica_didactica": "Reflexión circular de cierre / Redistribución de Gap Cards (antes–después)"
+    },
+    "while_c": {
+      "block": "WHILE-C",
+      "duration_min": 65,
+      "time": "10:10–11:15",
+      "title": "The Full Circle — Part 2: Reflection + Peer Celebration",
+      "bloom": "L4 Analizar + L5 Evaluar",
+      "purpose": "Carta al yo de S1 — mapa de habilidades S1 vs S8 — celebración de par específica y nombrada",
+      "teacher_talk": {
+        "instruction": "This time is yours. Three activities — a letter, a map, and a celebration. All in English. All about YOU and this team.",
+        "letter_intro": "Write a letter — five sentences — to yourself as you were on Session 1. Tell yourself what is coming. Use the frame on the board.",
+        "peer_intro": "Look at your partner. Think of ONE specific moment in this guide where they surprised you. Name the session. Name the activity. Tell them."
+      },
+      "activities": [
+        {
+          "time": "10:10–10:28",
+          "activity": "Letter to My S1 Self",
+          "procedure": "Individual, silent. Students write 5 sentences using the frame: 'You will learn / You will be able to / You won't believe that / By Session 8 / Don't worry about...' Instructor writes their own letter to the class simultaneously. After 15 min: 2 volunteers share. Instructor reads their letter last — slowly, looking at the class.",
+          "instructor_letter_model": "Dear Workshop Team — Session 1. In eight sessions you will learn twenty words: tools, safety, documents. You will read an article in English and answer five questions without a dictionary. You will listen to a supervisor give instructions and understand every word. You will speak — in English — a professional workshop briefing in front of your peers. You won't believe it yet. By Session 8, you will have done all of this. Don't worry about making mistakes. Mistakes are the engine. See you in Session 8.",
+          "facilitation_note": "💡 The instructor's letter is the most powerful moment of WHILE-C. It names what the students did — in their words, in their sessions. Read it without rushing. This is not a performance — it is recognition. It lands differently when it comes from someone who watched them do it."
+        },
+        {
+          "time": "10:28–10:48",
+          "activity": "Personal Skills Map — S1 vs S8",
+          "procedure": "Complete 7-skill comparison table: S1 rating / S8 rating / delta. Reflection sentence: 'The skill that surprised me most is ___ because ___.' Pair share (3 min). Show of hands per skill: 'Who is proudest of their Reading growth? Vocabulary? Grammar? Writing? Listening? Speaking? Language Functions?' Tally on board.",
+          "facilitation_note": "💡 Speaking and Language Functions almost always get the most hands — the visceral, lived feeling of speaking English is unforgettable. Acknowledge all. For Writing (which often gets few hands): 'You created a real Daily Inspection Checklist. That is a professional document that belongs in a real workshop. That is not a small thing.'"
+        },
+        {
+          "time": "10:48–11:15",
+          "activity": "Peer Celebration — What I Learned FROM You",
+          "procedure": "Pairs. Partner A: 2 minutes — tells Partner B ONE specific moment during the guide where Partner B did something remarkable: the session, the activity, the specific thing. Partner B listens without speaking. Switch. Whole class (5 min): 2-3 pairs share what their partner said. Instructor reframe: 'In a real workshop, your colleagues are your teachers. That is what happened here for eight sessions.'",
+          "facilitation_note": "💡 Push for specificity — if a student says 'you were always helpful,' ask 'What session? What did they do exactly?' The specific memory is the real gift. 'In S5, during the simulation, you said There is a spill near the bay door and I thought — that's exactly right — and I added it to my own report.' That specificity is what they will remember.",
+          "formative_checkpoint": "✓ All letters written. ✓ Skills Maps completed. ✓ Peer celebration done."
+        }
+      ],
+      "differentiation": {
+        "fast_finishers": "Extend letter to 8 sentences — add a prediction about how they will use English in a real workshop after this guide.",
+        "more_support": "Letter frame with 5 sentence starters on card — student completes each sentence."
+      },
+      "tecnica_didactica": "Reflexión circular de cierre (Parte 2: carta al yo de S1 + mapa de habilidades + celebración de par)"
+    },
+    "while_d": {
+      "block": "WHILE-D",
+      "duration_min": 80,
+      "time": "11:15–12:35",
+      "title": "Evidence Portfolio + Closing Ceremony",
+      "bloom": "L2 Comprender + L5 Evaluar",
+      "purpose": "Revisión panorámica del portafolio E1–E6 + Final Mission; Class Wall; ceremonia de cierre con certificados y reconocimiento personal; timeline Escala No 6; words finales",
+      "teacher_talk": {
+        "portfolio_intro": "Before we celebrate — let's look at what you built. Six formal evidences. One Final Mission. Let me walk you through every single thing you produced in this guide.",
+        "ceremony_intro": "And now — the closing ceremony. You came in as apprentices. You leave as Workshop Specialists.",
+        "before_certificates": "I am going to call each of you by name. I have one thing to tell you — one specific thing I observed during this guide. That thing is yours. It happened. It is real."
+      },
+      "activities": [
+        {
+          "time": "11:15–11:38",
+          "activity": "Evidence Portfolio Walkthrough",
+          "procedure": "Project or draw evidence table. Walk through each: (1) the skill, (2) what the student produced, (3) which session. For each evidence: 'Who remembers what they wrote/said/answered? One volunteer — give me one sentence from that evidence.' Students recall from memory. Instructor confirms.",
+          "recall_sequence": [
+            {
+              "ev": "E1",
+              "prompt": "What did the article say about the torque wrench?"
+            },
+            {
+              "ev": "E2",
+              "prompt": "What was the first item on your Daily Inspection Checklist?"
+            },
+            {
+              "ev": "E3",
+              "prompt": "Where was the oil spill in the Bay 2 dialogue?"
+            },
+            {
+              "ev": "E4",
+              "prompt": "How long was your individual Workshop Readiness Report?"
+            },
+            {
+              "ev": "E5",
+              "prompt": "Name one function and one sentence from your S5 simulation."
+            },
+            {
+              "ev": "E6",
+              "prompt": "Which section of the Cuestionario felt hardest?"
+            },
+            {
+              "ev": "Final",
+              "prompt": "What was your team's bay?"
+            }
+          ],
+          "facilitation_note": "💡 The recall prompts are not a quiz — they are memory anchors. When a student recalls their E2 checklist item from memory in S8, they realize: 'I wrote that. It stayed with me. I own it.' That is the deepest form of evidence."
+        },
+        {
+          "time": "11:38–11:55",
+          "activity": "Class Wall — Our Workshop, Our English",
+          "procedure": "Students post: (1) team name/bay from Final Mission (written on sticky), (2) their favorite sentence from the guide. Instructor adds the 3 L-column sentences from WHILE-B to the wall. Class reads the wall together (2 min). Instructor: 'This is what English in a diesel workshop looks like from this class. Photograph it.'",
+          "facilitation_note": "💡 Photograph the Class Wall and share with the class group. It is their collective artifact. It stays up after the session if the instructor chooses."
+        },
+        {
+          "time": "11:55–12:25",
+          "activity": "Closing Ceremony — Certificate + Personal Recognition",
+          "procedure": "Instructor calls each student by name. Hands certificate. Says the one specific sentence prepared in advance for that student — a real moment, a real observation from one of the eight sessions. Student receives certificate. Brief gesture (handshake, fist bump, whatever is natural for the group). Returns to seat. After all certificates: group photo — everyone holds certificate.",
+          "facilitation_note": "💡 The one-sentence personal recognition is the highest-ROI investment in S8. 30 seconds per student × 20 = 10 minutes. Every second matters. Prepare these the night before. 'Maria — in Session 4, you answered all 5 listening questions correctly without the text. That was your breakthrough moment.' The student will remember that sentence long after they forget the score on any individual evidence.",
+          "logistics": "Certificates prepared before S8 — printed or handwritten on card stock. If no materials: fold a sheet of paper ceremonially. The gesture outweighs the material."
+        },
+        {
+          "time": "12:25–12:35",
+          "activity": "Escala No 6 Timeline + Next Steps",
+          "procedure": "Escala No 6 returned with scores and written comments per institutional timeline (announce the date). Evidence portfolio E1–E6 consolidated and submitted per GFPI-F-134. Brief next-guide preview: 'Guía 1.2 takes you to A1.2 — more complex interactions, longer texts, more technical functions. Today you are Workshop Specialists. The next guide makes you Workshop Leads.' Then: stop. Let this guide stand.",
+          "facilitation_note": "💡 Do NOT spend more than 5 minutes on what comes next. The risk is that the preview of the next guide overshadows the achievement of this one. Plant the seed — then return to the present."
+        }
+      ],
+      "differentiation": {
+        "fast_finishers": "During certificate waiting time — write a 2-sentence 'recommendation' for a colleague who is about to start this guide: 'You should take this guide because...'",
+        "more_support": "Students who struggled most: instructor's one-sentence recognition focuses on courage and effort — 'You showed up every session. That is what this workshop runs on.' Not a consolation — a truth."
+      },
+      "tecnica_didactica": "Revisión panorámica de portafolio + ceremonia de cierre con reconocimiento personal"
+    },
+    "wrap_up": {
+      "block": "WRAP-UP",
+      "duration_min": 25,
+      "time": "12:35–13:00",
+      "title": "Bay is Closed — Full Circle Complete",
+      "teacher_talk": {
+        "closing": "Session 1 — three words in English about a workshop. Session 8 — a three-to-four-minute professional briefing. That distance — from three words to three minutes — is what learning looks like. You built it. Word by word. Session by session.",
+        "final_task": "Last task — one word. On a sticky note — write one word in English that describes what you feel right now. Post it on the board.",
+        "dismissal": "Guía 1.1 — The Workshop Specialist — complete. Bay is closed. Checklist: complete. Team dismissed."
+      },
+      "activities": [
+        {
+          "time": "12:35–12:43",
+          "activity": "One-Word Exit — The Final Sticky",
+          "procedure": "One sticky note per student — ONE word in English — how they feel right now. Post on board under 'The Full Circle — How We Feel.' Instructor reads 5 aloud. Does not interpret — lets the words land.",
+          "facilitation_note": "💡 If a student writes in Spanish — accept it. On the last day, honesty outweighs compliance. If they feel it in Spanish, it is real."
+        },
+        {
+          "time": "12:43–12:53",
+          "activity": "Word Wall Final Salute",
+          "procedure": "Instructor points to all 20 Toolbelt terms in random order — fast. Class says each chorally one last time. Then: instructor takes down 3 Word Wall cards and gives one to a student each — chosen deliberately. Instructor: 'This Word Wall stays in your memory. The cards come down. The words don't.'",
+          "card_selection_note": "Give 'torque wrench' to the student who struggled most with it and conquered the pronunciation. Give 'preventive maintenance' to the student who surprised you most. Give 'workshop' to the student who was there on Day 1 and never missed a session."
+        },
+        {
+          "time": "12:53–13:00",
+          "activity": "Final Words + Dismissal",
+          "procedure": "Instructor final words — prepared in advance, spoken from memory, not read. Genuine, specific to THIS group, THIS guide, THESE eight sessions. Then: 'On behalf of Carlos Mendoza, Valentina Cruz, and Santiago Ríos — the bay is clean. The checklist is complete. The team is ready. Dismissed.'",
+          "formative_checkpoint": "✓ All Escala No 6 forms completed and retained by instructor. ✓ All certificates distributed. ✓ KWL L columns complete. ✓ Gap Cards re-rated. ✓ One-word sticky notes posted. ✓ Group photo taken."
+        }
+      ]
+    }
+  },
+  "logistics_box": {
+    "materials_checklist": [
+      "Gap Cards from S1 — sorted by student name — ready to distribute at start of WHILE-B",
+      "KWL charts from S1 — sorted by student name — ready to distribute in WHILE-B",
+      "Escala de estimación No 6 — 1 per team — instructor completes during WHILE-A",
+      "Certificate Cards — 1 per student — prepared before S8 with personal one-sentence recognition",
+      "Observer Sheets — 1 per observing student (Peer Observation Sheet from S7)",
+      "Sticky notes — 2 per student (Class Wall + One-Word Exit)",
+      "Personal Skills Map template — 1 per student",
+      "Letter to S1 Self template or blank paper — 1 per student",
+      "Timer — for performance timing during WHILE-A",
+      "Camera/phone — for group photo during certificate ceremony",
+      "Word Wall — visible during WHILE-A, ceremonially closed in WRAP-UP"
+    ],
+    "room_setup": "Performance area (center clear) for WHILE-A. After BREAK: reconfigure to reflection clusters or U-shape. Class Wall space on board or bulletin.",
+    "pre_session_preparation": {
+      "night_before": [
+        "Prepare personal one-sentence recognition per student for certificate ceremony",
+        "Sort Gap Cards by student name",
+        "Sort KWL charts by student name",
+        "Complete any Escala No 6 preliminary marks from S7 Round 3 notes",
+        "Print or handwrite certificates",
+        "Prepare instructor letter to the class (memorize — do not read)"
+      ]
+    }
+  },
+  "plan_b": {
+    "if_performances_run_long": "Cut post-performance whole-class moment to 3 min. Keep all team performances intact — do not truncate any.",
+    "if_WHILE_B_slow": "Skip W-column check (save 8 min). Students keep KWL to complete independently.",
+    "if_certificate_ceremony_runs_long": "Batch by team — one team acknowledgment (30 sec) instead of individual. Reduce to 12 min.",
+    "if_student_absent_for_s8": "Arrange private certificate delivery in the next session. During ceremony: 'And ___ — who could not be here today — their bay is also complete. Their circle is also closed.'"
+  },
+  "autonomous_work": {
+    "duracion_h": 0,
+    "actividades": [],
+    "note": "No autonomous work — S8 is the final session of Guía 1.1. The guide is complete."
+  },
+  "instructor_self_check": {
+    "questions": [
+      "¿Todas las Escalas de estimación No 6 completadas durante las performances con puntaje y comentario por criterio?",
+      "¿Cada estudiante re-rató su Gap Card y calculó su delta?",
+      "¿Todas las columnas L del KWL tienen mínimo 5 oraciones en inglés?",
+      "¿Cada estudiante recibió su certificado con un reconocimiento personal y específico — no genérico?",
+      "¿El cierre fue genuino y específico para este grupo — no una fórmula repetida?"
+    ]
+  },
+  "skills_progression_update": {
+    "after_s8": {
+      "status": "GUÍA 1.1 — THE WORKSHOP SPECIALIST — COMPLETA",
+      "Reading": "● COMPLETE",
+      "Vocabulary": "● COMPLETE",
+      "Grammar": "● COMPLETE",
+      "Writing": "● COMPLETE",
+      "Listening": "● COMPLETE",
+      "Speaking": "● COMPLETE",
+      "Language_Functions": "● COMPLETE",
+      "Cuestionario": "● COMPLETE",
+      "Final_Mission": "● COMPLETE"
+    }
+  },
+  "connections": {
+    "feeds_from": [
+      "S1 — Gap Cards (S1 self-assessment → S8 re-rating = Full Circle evidence of growth)",
+      "S1 — KWL K+W (L column completed today — the guide's promise fulfilled)",
+      "S2–S5 — All 5 skills evidences (recalled in portfolio walkthrough)",
+      "S6 — Cuestionario consolidated (graded, portfolio complete)",
+      "S7 — Three rehearsal rounds + Role Cards + Round 3 Feedback Cards (carried into performance)"
+    ],
+    "feeds_into": [
+      "Guía 1.2 — A1.2 level (brief preview in WHILE-D)",
+      "GFPI-F-134 — final evidence portfolio submission",
+      "Student professional development — Toolbelt 20 terms + 5 functions + 7 skills at A1.1 owned and demonstrated"
+    ],
+    "full_circle_closed": {
+      "s1_state": "Gap Cards blank / KWL K+W only / three words in English about a workshop",
+      "s8_state": "Gap Cards re-rated with positive deltas / KWL L complete / three-to-four-minute professional briefing in English",
+      "the_circle": "Same cards. Same chart. Different person."
+    }
+  },
+  "momento_sena": "3.4 — Transferencia (performance final)",
+  "estrategia_didactica": "Simulaciones",
+  "justificacion_didactica": "S8 es la transferencia plena al entorno productivo: la Misión Final recrea una apertura real de bay diesel ante un Coordinador de Formación. Es la demostración auténtica del RAP en contexto de taller.",
+  "pm0_protocol": {
+    "grammar_groups": [
+      "Todos los grupos del silabus A1.1: producción en condiciones de evaluación sumativa.",
+      "Autoevaluación de uso gramatical: el aprendiz identifica sus propias estructuras en la grabación.",
+      "Inicio de transición A1.2: instructor señala 1-2 estructuras nuevas que verán en la siguiente guía."
+    ],
+    "feedback": {
+      "mode": "FLUENCY TOTAL durante la Final Mission. Post-performance: feedback holístico con rúbrica.",
+      "accuracy_techniques": [],
+      "fluency_techniques": [
+        "CERO interrupciones durante la Final Mission oral (Evidence 7).",
+        "Grabación de la presentación para triangulación de evidencias.",
+        "Feedback holístico post-performance: rúbrica con 4 dimensiones (pronunciación, gramática, vocabulario, comunicación).",
+        "Devolver rúbrica completada a cada aprendiz — es su mapa para A1.2."
+      ],
+      "notes": "S8 celebra el progreso. El feedback debe ser 70% fortalezas + 30% áreas de mejora. Nunca al revés en el cierre de guía."
+    },
+    "l1_management": {
+      "l1_percentage": "≤ 5 % L1. La Final Mission es 100% en inglés — condición de evidencia.",
+      "english_zone_declaration": "English Zone al máximo. 'Today you show what you know. Everything in English — I believe in you.'",
+      "l1_allowed_for": [
+        "Instrucciones de formato de la evaluación (antes de empezar, una sola vez).",
+        "Momento de cierre emocional al finalizar la guía — reconocer el logro en español está permitido."
+      ],
+      "reduction_strategy": "Logro de cierre: el aprendiz puede dar una presentación de 3-5 minutos sobre su área de trabajo en inglés, sin apoyo de L1. Celebrar este hito como la meta real del programa."
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        "In conclusion",
+        "The workshop is now safe",
+        "I recommend",
+        "Thank you for listening"
+      ],
+      "techniques": [
+        "Warm-up de pronunciación antes de las presentaciones: 5 min de drill coral de las frases de transición.",
+        "Self-monitoring: aprendices escuchan su grabación y marcan en una plantilla dónde perdieron el stress.",
+        "Cierre de guía: instructor destaca 1 logro fonológico colectivo ('In S1 you said DIE-sel. Now you say DIE-sel — same! But your rhythm improved.')."
+      ],
+      "board_marking": "Frase de cierre modelo: 'THANK you for LIS-tening. I am the WORK-shop SPE-cial-ist.'",
+      "notes": "S8 consolida la conciencia fonológica. El aprendiz ya no necesita que el instructor marque el stress — empieza a auto-monitorearse."
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "All 20 Toolbelt terms — full mastery check"
+      ],
+      "factors_applied": [
+        "E — Encounter again: todos los términos aparecen en la Final Mission.",
+        "S — Self-expression: el aprendiz usa los 20 términos en contexto real de presentación.",
+        "Cierre SUCCESS: '¿Recuerdas la primera vez que viste 'fire extinguisher'? Ahora lo dices de corrido. Eso ES el aprendizaje.'"
+      ]
+    }
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "pm_id": "PM-3.5",
+  "run_id": "DIESEL-2026-04-15",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "generated_at": "2026-04-15",
+  "model": "claude-sonnet-4-6",
+  "status": "completed",
+  "description": "Tarea Integradora Final — Workshop Morning Readiness Briefing. Documento maestro: especificación de tarea (estudiante) + instrumento de evaluación (Escala No 6) + guía de preparación S7 + condiciones de administración S8.",
+  "used_in": ["S7 — Final Mission Preparation (draft)", "S8 — The Full Circle (live performance)"],
+
+  "header_institucional": {
+    "programa": "Mantenimiento de los Motores Diesel",
+    "tipo_programa": "Tecnológico",
+    "guia_numero": "1",
+    "guia_nombre": "The Workshop Specialist",
+    "cefr": "A1.1",
+    "rap_code": "TBD",
+    "gfpi_ref": "GFPI-F-134",
+    "tarea_tipo": "Integradora — desempeño oral en equipo"
+  },
+
+  "task_specification": {
+
+    "title": "The Workshop Morning Readiness Briefing",
+    "subtitle": "Final Mission — Guía 1.1",
+
+    "scenario": {
+      "setting": "The Diesel Workshop — Monday, 7:00 AM",
+      "context": "The Training Coordinator arrives for the morning inspection. Your team of 3 must deliver the complete Bay Readiness Briefing in English before the first diesel truck of the day enters the bay.",
+      "context_es": "El Coordinador de Formación llega para la inspección de apertura. Tu equipo de 3 debe presentar el Informe Completo de Alistamiento del Bay en inglés antes de que entre el primer camión diesel del día.",
+      "bay": "Asignado por el instructor — Bay 1, 2 o 3",
+      "characters": {
+        "CARLOS": "Lead Technician / Supervisor — abre el briefing, da instrucciones al equipo, recibe el reporte final",
+        "VALENTINA": "Apprentice — describe condiciones, solicita herramientas, reporta al supervisor",
+        "SANTIAGO": "Technician — responde solicitudes, describe condiciones adicionales, confirma instrucciones"
+      }
+    },
+
+    "task_requirements": [
+      "Duración: 3–4 minutos exactos (mínimo 3 min / máximo 4 min — cronometrado en S8)",
+      "Las 5 funciones comunicativas deben ser visibles — mínimos por rol según tabla de roles",
+      "≥ 15 términos del Toolbelt distribuidos entre los 3 roles (cada término distinto cuenta una sola vez)",
+      "Mínimo 3 intercambios directos entre miembros del equipo (no 3 monólogos independientes)",
+      "There is / There are + preposición de lugar en mínimo 3 oraciones",
+      "Mínimo 2 imperativos del rol Carlos",
+      "Bay number identificado al abrir el briefing",
+      "Cierre limpio: 'Bay ___ is ready. Briefing complete.' o equivalente"
+    ],
+
+    "roles_table": {
+      "CARLOS": {
+        "functions_required": ["F1 — Dar instrucciones (×2 mínimo)", "F4 — Recibir reporte (×1)", "F5 — Confirmar (×1)"],
+        "key_actions": ["Abre el briefing con saludo + identificación del bay", "Da 2 instrucciones al equipo usando imperativos", "Hace la pregunta de seguimiento al recibir el reporte", "Cierra el briefing"]
+      },
+      "VALENTINA": {
+        "functions_required": ["F2 — Solicitar herramientas/ayuda (×1)", "F3 — Describir condiciones (×2 mínimo)", "F4 — Reportar al supervisor (×1)", "F5 — Confirmar (×1)"],
+        "key_actions": ["Confirma instrucción de Carlos", "Describe al menos 2 condiciones del bay con There is/are + preposición", "Solicita una herramienta a Santiago", "Entrega el reporte final de estado del bay a Carlos"]
+      },
+      "SANTIAGO": {
+        "functions_required": ["F2 — Responder solicitud de herramienta (×1)", "F3 — Describir condición adicional (×1)", "F5 — Confirmar (×2 mínimo)"],
+        "key_actions": ["Responde la solicitud de Valentina", "Describe una condición adicional del bay", "Confirma al menos 2 instrucciones o acciones completadas"]
+      }
+    },
+
+    "function_reference": {
+      "F1": {"name": "Giving instructions", "structure": "Imperative: 'Check the floor jack.'", "color": "RED (tablero S3)"},
+      "F2": {"name": "Requesting tools/help", "structure": "'Can I have the torque wrench?' / 'I need the socket set.'", "color": "—"},
+      "F3": {"name": "Describing conditions", "structure": "There is/are + preposition: 'There is a spill near the bay door.'", "color": "BLUE + GREEN (tablero S3)"},
+      "F4": {"name": "Reporting to supervisor", "structure": "'Bay ___ is ready, Carlos.' / 'There is a problem with ___.'", "color": "—"},
+      "F5": {"name": "Confirming understanding", "structure": "'Understood.' / 'Got it.' / 'I'll do it now.'", "color": "—"}
+    },
+
+    "toolbelt_20_reference": {
+      "ENVIRONMENT": ["workshop", "service bay", "workbench", "toolbox"],
+      "TOOLS_EQUIPMENT": ["wrench", "ratchet", "socket", "torque wrench", "floor jack"],
+      "SAFETY": ["PPE", "safety goggles", "gloves", "hazard", "spill", "fire extinguisher"],
+      "MAINTENANCE": ["preventive maintenance", "corrective maintenance"],
+      "DOCUMENTS": ["work order", "checklist", "calibration"],
+      "tip": "Tip: 'Preventive maintenance checklist: complete.' cubre 3 términos en una sola frase — eficiente y profesional."
+    },
+
+    "permitted_materials_s8": {
+      "visible": "Word Wall (permanente desde S2)",
+      "not_permitted": ["Communication Card S5", "Role Card (solo para revisión previa a la performance, no durante)", "notas escritas", "diccionario", "teléfono"]
+    }
+  },
+
+  "model_assets": {
+
+    "sample_opening_60sec": {
+      "title": "Model Opening — Carlos (30–45 sec)",
+      "lines": [
+        {"speaker": "CARLOS", "line": "Good morning. Bay 2 Readiness Briefing.", "function": "Opening"},
+        {"speaker": "CARLOS", "line": "Valentina — check the floor jack. Santiago — PPE check.", "function": "F1 ×2"},
+        {"speaker": "VALENTINA", "line": "Understood.", "function": "F5"},
+        {"speaker": "SANTIAGO", "line": "Got it. I'll do it now.", "function": "F5"}
+      ]
+    },
+
+    "sample_middle_interactions": {
+      "title": "Model Middle — Team Interaction (90–120 sec)",
+      "lines": [
+        {"speaker": "VALENTINA", "line": "Santiago, can I have the torque wrench?", "function": "F2"},
+        {"speaker": "SANTIAGO", "line": "Here you go. And — there are two wrenches on the workbench.", "function": "F2-response + F3"},
+        {"speaker": "VALENTINA", "line": "There is an oil spill near the bay door. I'll clean it now.", "function": "F3 + F5"},
+        {"speaker": "CARLOS", "line": "Clean it now. Then check the fire extinguisher.", "function": "F1"},
+        {"speaker": "SANTIAGO", "line": "The fire extinguisher is next to the bay door. OK.", "function": "F3 + F5"}
+      ]
+    },
+
+    "sample_closing_30sec": {
+      "title": "Model Closing — Report + Close (30–45 sec)",
+      "lines": [
+        {"speaker": "VALENTINA", "line": "Bay 2 is ready, Carlos. Checklist: complete. Preventive maintenance scheduled.", "function": "F4"},
+        {"speaker": "CARLOS", "line": "Good work. Bay 2 — briefing complete. Team dismissed.", "function": "F4-response + close"}
+      ]
+    },
+
+    "toolbelt_terms_in_model": ["floor jack", "PPE", "torque wrench", "wrench", "workbench", "spill", "bay door", "fire extinguisher", "checklist", "preventive maintenance"],
+    "toolbelt_count_in_model": 10,
+    "note": "The model uses 10 terms — a real team should aim for 15+. Expand by adding: safety goggles, gloves, ratchet, socket, calibration, work order, toolbox, hazard, etc.",
+
+    "stock_card_a_bay_status": {
+      "title": "Stock Card A — Bay Status Options",
+      "items": [
+        "Bay number: Bay ___ (1, 2, or 3)",
+        "Workbench: clean / dirty",
+        "Toolbox: closed / open",
+        "Tools on workbench: wrench / ratchet / socket / torque wrench",
+        "Floor jack: OK — no leaks / needs attention",
+        "Floor: clean / spill near ___",
+        "Fire extinguisher: next to bay door / missing",
+        "PPE: ready — gloves + goggles / incomplete",
+        "Daily Inspection Checklist: complete / pending"
+      ]
+    },
+
+    "stock_card_b_sentence_starters": {
+      "title": "Stock Card B — Sentence Starters",
+      "starters": [
+        "Good morning. This is the Bay ___ Readiness Briefing.",
+        "There is a ___ on / under / next to / near ___.",
+        "There are ___ in / on the ___.",
+        "The ___ is on / under / next to / near ___.",
+        "The floor is clean. / There is a spill near ___.",
+        "I check the ___. No leaks. The lift works.",
+        "Bay ___ is clean. Bay ___ is safe. Bay ___ is ready.",
+        "Preventive maintenance checklist: complete / pending."
+      ]
+    },
+
+    "pronunciation_targets": {
+      "title": "5 Pronunciation Target Terms",
+      "terms": [
+        {"term": "fire extinguisher", "ipa": "/ˈfaɪər ɪkˈstɪŋɡwɪʃər/", "chunks": "FIRE — ex-TIN — gwish-er"},
+        {"term": "preventive maintenance", "ipa": "/prɪˈvɛntɪv ˈmeɪntənəns/", "chunks": "pre-VEN-tive — MAIN-te-nance"},
+        {"term": "calibration", "ipa": "/ˌkælɪˈbreɪʃən/", "chunks": "cal-i — BRA-tion"},
+        {"term": "torque wrench", "ipa": "/tɔːrk rɛntʃ/", "chunks": "TORK — rench (silent u in torque)"},
+        {"term": "floor jack", "ipa": "/flɔːr dʒæk/", "chunks": "FLOOR — jack (English /dʒ/, not Spanish 'j')"}
+      ]
+    }
+  },
+
+  "evaluation_instrument": {
+    "reference": "Escala de estimación No 6 — see PM-4.1 INST-6 for full printable form",
+    "title": "Escala de Estimación No 6 — Final Mission: The Workshop Morning Briefing",
+    "evaluator": "Instructor como Training Coordinator (rol externo — no interviene durante la performance)",
+    "total_points": 5,
+
+    "criteria_summary": [
+      {"n": 1, "criterion": "Todas las 5 funciones comunicativas visibles y correctamente usadas (F1–F5)", "scale": "1–5", "weight": "1/6 del total"},
+      {"n": 2, "criterion": "≥ 15 términos del Toolbelt distribuidos entre los 3 roles", "scale": "1–5", "weight": "1/6"},
+      {"n": 3, "criterion": "Interacción genuina de equipo: ≥ 3 intercambios directos (no monólogo)", "scale": "1–5", "weight": "1/6"},
+      {"n": 4, "criterion": "Corrección gramatical: There is/are + preposiciones + imperativos", "scale": "1–5", "weight": "1/6"},
+      {"n": 5, "criterion": "Pronunciación comprensible de los 5 términos target", "scale": "1–5", "weight": "1/6"},
+      {"n": 6, "criterion": "Cumplimiento de tarea: 3–4 min, bay identificado, cierre limpio", "scale": "1–5", "weight": "1/6"}
+    ],
+
+    "scoring": "Suma de 6 criterios (1–5 cada uno) ÷ 6 = puntaje holístico 1–5. Puntaje máximo: 5/5.",
+    "follow_up_question": "Una pregunta sorpresa por equipo al cierre del briefing — del banco de preguntas (ver PM-4.1 INST-6).",
+
+    "scale_reference": {
+      "5": "Destacado — visible, correcto y fluido",
+      "4": "Competente — visible y mayormente correcto",
+      "3": "Básico — visible con errores menores",
+      "2": "En proceso — visible pero con errores significativos",
+      "1": "No logrado — no visible o completamente incorrecto"
+    }
+  },
+
+  "preparation_guide": {
+    "s7_prep_summary": {
+      "title": "Session 7 — Preparation Protocol",
+      "rounds": [
+        {
+          "round": 1,
+          "focus": "Full run — cold — peer observation",
+          "tool": "Peer Observation Sheet",
+          "output": "Peer feedback: functions observed + Toolbelt count + duration + 1 strength + 1 suggestion"
+        },
+        {
+          "round": 2,
+          "focus": "Incorporate feedback — second full run — new peer observer",
+          "tool": "Peer Observation Sheet (different observer)",
+          "output": "Comparison: did you address Round 1 weaknesses?"
+        },
+        {
+          "round": 3,
+          "focus": "Dress rehearsal — instructor as Training Coordinator",
+          "tool": "Round 3 Feedback Card (instructor)",
+          "output": "Written feedback card + follow-up question to prepare for S8"
+        }
+      ],
+      "between_rounds": "Targeted mini-drills on class-wide gaps (F3 expansion / team interaction / Toolbelt density / pronunciation)"
+    },
+
+    "role_card_guide": {
+      "title": "Role Card — What to Include",
+      "sections": [
+        "My role: Carlos / Valentina / Santiago",
+        "My bay: Bay ___ (1, 2, or 3)",
+        "My 3 key sentences (MY OWN WORDS — not copied from model):",
+        "  Sentence 1 (function F___): ___",
+        "  Sentence 2 (function F___): ___",
+        "  Sentence 3 (function F___): ___",
+        "My 5 Toolbelt terms I will use: ___, ___, ___, ___, ___",
+        "My cue (what Carlos says that triggers my first line): ___",
+        "My transition (how I pass the floor): ___",
+        "My answer to the follow-up question: ___"
+      ],
+      "note": "Role Card is a preparation tool, not a script. By S8, the lines should feel natural, not memorized. Do NOT hold or read the Role Card during the performance."
+    },
+
+    "autonomous_prep_s7": {
+      "duration_h": 0.75,
+      "tasks": [
+        "Read Role Card aloud once — time your portion (~60-80 sec of the 3-4 min total)",
+        "Prepare 2-3 sentence answer to the follow-up question from S7 Round 3 Feedback Card",
+        "Practice the 5 pronunciation targets in full sentences — once without notes"
+      ]
+    }
+  },
+
+  "administration_guide_s8": {
+    "title": "S8 Administration Protocol — Instructor",
+
+    "pre_performance": [
+      "Room cleared centrally — performance space visible to all",
+      "Instructor seated at side as Training Coordinator — not at front",
+      "Performance order posted on board (drawn in S7 or assigned)",
+      "8-minute silent Role Card review — instructor does not speak",
+      "Team 1 moves to performance area when silent review ends"
+    ],
+
+    "during_performance": [
+      "Silence — instructor marks Escala No 6 in real time",
+      "Timer starts when Carlos speaks first word",
+      "At 4:30 min: instructor says 'Close the briefing' if team has not finished",
+      "One prompt allowed if team completely freezes: say the bay number aloud (e.g., 'Bay 2'). Note in form."
+    ],
+
+    "after_each_performance": [
+      "'Thank you, team.' (pause, finishes marking)",
+      "Ask one follow-up question from the bank",
+      "Wait for answer — mark impact on Criteria 1 and 4",
+      "'Thank you.' — team returns to seats",
+      "Observer team shares one observation aloud (30 sec)",
+      "Next team moves to performance area"
+    ],
+
+    "timing_per_team": {
+      "performance": "3–4 min",
+      "follow_up": "~1 min",
+      "marking_transition": "~1 min",
+      "observer_share": "~1 min",
+      "total": "~7–8 min per team"
+    },
+
+    "post_all_performances": [
+      "Instructor exits Training Coordinator role explicitly: stands, moves to front, says: 'I am your instructor now.'",
+      "One whole-class observation: functions, terms, team interaction — what was seen across all teams",
+      "Transition to Full Circle activities (WHILE-B)"
+    ],
+
+    "feedback_return": "Escala No 6 with written comments per criterion returned per institutional timeline. Individual written comment required (not just numerical score)."
+  },
+
+  "connections": {
+    "feeds_from": [
+      "PM-2.8 — Speaking: Workshop Readiness Report format (individual 60-90 sec → expanded to team 3-4 min)",
+      "PM-2.9 — Language Functions: 5 functions → all required in Final Mission",
+      "PM-3.2-S7 — 3 rounds of rehearsal, Role Cards, peer feedback",
+      "PM-3.2-S5 — Evidence 5 simulation structure (team roles → direct predecessor)",
+      "PM-4.1 INST-6 — Escala de estimación No 6 (full printable instrument)"
+    ],
+    "feeds_into": [
+      "PM-3.2-S8 — Live performance + Full Circle closure",
+      "PM-3.6 — GFPI-F-135 Integrator (Final Mission referenced as tarea integradora)"
+    ],
+    "economía": "Stock Cards A+B (S4) reused in S7 prep. Role Cards created S7, carried to S8. Word Wall (S2) visible throughout."
+  }
+}

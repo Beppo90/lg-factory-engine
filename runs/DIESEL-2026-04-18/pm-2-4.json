@@ -1,0 +1,55 @@
+{
+  "pm_id": "PM-2.4",
+  "run_id": "DIESEL-2026-04-18",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 3,
+  "fase_sena": "Apropiación — Writing Task-Based Production",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "archetype_used": ["A — Genre Analysis", "B — Modeled Writing", "C — Independent Writing Task", "D — Peer Review"],
+  "activity_card": {
+    "pm_id": "PM-2.4",
+    "session": 3,
+    "phase_sena": "Apropiación",
+    "activities": [
+      {"number": 1, "archetype": "A — Genre Analysis", "type": "cognitiva", "duration_min": 20,
+       "statement": "Analizar estructura, lenguaje y propósito de documentos técnicos reales del taller en inglés antes de producirlos", "bloom": "L2 Comprender + L4 Analizar"},
+      {"number": 2, "archetype": "B — Modeled Writing", "type": "cognitiva + procedimental", "duration_min": 35,
+       "statement": "Observar y co-construir un Daily Inspection Checklist con el instructor en vivo, pensando en voz alta", "bloom": "L3 Aplicar"},
+      {"number": 3, "archetype": "C — Independent Writing Task", "type": "procedimental", "duration_min": 40,
+       "statement": "Producir individualmente un Daily Inspection Checklist + Work Order para Bay 2 de The Diesel Workshop — Evidencia 2", "bloom": "L3 Aplicar + L4 Analizar"},
+      {"number": 4, "archetype": "D — Peer Review", "type": "procedimental", "duration_min": 25,
+       "statement": "Revisar documentos del compañero usando Lista de verificación No 2 y escribir retroalimentación en inglés", "bloom": "L4 Analizar + L5 Evaluar"}
+    ],
+    "hours": {"direct": 3, "autonomous": 0.75},
+    "evidence": {
+      "generates_evidence": true,
+      "numero_evidencia": 2,
+      "tipo": "Producto",
+      "description": "Daily Inspection Checklist + Work Order header — documentos técnicos completos en inglés",
+      "evaluation_technique": "Verificación del producto",
+      "instrument_number": 2,
+      "instrument_type": "Lista de verificación",
+      "contributes_to_cuestionario": true,
+      "cuestionario_skill": "Writing",
+      "cuestionario_points": 5
+    },
+    "verification_list_criteria": [
+      "El checklist tiene mínimo 8 ítems verificados (0.5 pt)",
+      "Cada ítem usa vocabulario técnico correcto del Toolbelt (0.5 pt)",
+      "Hay mínimo 2 observaciones escritas en inglés (0.5 pt)",
+      "El estado del bay está justificado en inglés (0.5 pt)",
+      "El Work Order tiene mínimo 6 campos completos (0.5 pt)",
+      "Usa correctamente There is/are en observaciones (0.5 pt)",
+      "Usa correctamente imperativos en acciones requeridas (0.5 pt)",
+      "Usa preposiciones de lugar para ubicar herramientas (0.5 pt)",
+      "Ortografía correcta en los 20 términos del Toolbelt (0.5 pt)",
+      "El documento es legible, organizado y completo (0.5 pt)"
+    ],
+    "total_points": 5,
+    "scenario": "The Diesel Workshop — Bay 2 Monday 7:00 AM — preparación para primer camión diesel del día",
+    "deliverables": ["Daily Inspection Checklist (mínimo 8 ítems)", "Work Order header (mínimo 6 campos)"],
+    "environment": {"type": "Aula", "materials": ["Daily Inspection Checklist en blanco impreso", "Work Order header en blanco impreso", "Lista de verificación No 2 para peer review"]},
+    "gfpi_tag": "3.3-APROPIACION-WRITING"
+  }
+}

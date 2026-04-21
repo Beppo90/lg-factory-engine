@@ -1,0 +1,52 @@
+{
+  "pm_id": "PM-2.8",
+  "run_id": "DIESEL-2026-04-18",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 4,
+  "fase_sena": "Apropiación — Speaking + Pronunciation Scaffolding",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "archetype_used": ["A — Input + Model", "B — Stock Cards + Preparation", "C — Live Performance", "D — Pronunciation Scaffold (Chunk Cards)"],
+  "activity_card": {
+    "pm_id": "PM-2.8",
+    "session": 4,
+    "phase_sena": "Apropiación",
+    "activities": [
+      {"number": 1, "archetype": "A — Input + Model", "type": "cognitiva", "duration_min": 20,
+       "statement": "Observar y analizar un Workshop Readiness Report modelo para identificar estructura, contenido y estructuras lingüísticas requeridas", "bloom": "L2 Comprender"},
+      {"number": 2, "archetype": "B — Stock Cards + Preparation", "type": "cognitiva + procedimental", "duration_min": 35,
+       "statement": "Preparar el reporte oral usando Stock Cards de estado del bay y sentence starters, practicando en pares con preguntas improvisadas", "bloom": "L3 Aplicar"},
+      {"number": 3, "archetype": "C — Live Performance", "type": "procedimental", "duration_min": 40,
+       "statement": "Presentar el Workshop Readiness Report al supervisor (instructor) en role-play de 60-90 segundos respondiendo preguntas en vivo — Evidencia 4", "bloom": "L3 Aplicar + L4 Analizar"},
+      {"number": 4, "archetype": "D — Pronunciation Scaffold", "type": "procedimental", "duration_min": 25,
+       "statement": "Practicar pronunciación de términos técnicos del taller usando Chunk Cards y drill orquestal progresivo", "bloom": "L1 Recordar + L2 Comprender"}
+    ],
+    "hours": {"direct": 3, "autonomous": 0.75},
+    "evidence": {
+      "generates_evidence": true,
+      "numero_evidencia": 4,
+      "tipo": "Desempeño",
+      "description": "Oral Production — Workshop Readiness Report de 60-90 segundos con respuesta a preguntas del supervisor",
+      "evaluation_technique": "Observación directa",
+      "instrument_number": 4,
+      "instrument_type": "Escala de estimación",
+      "contributes_to_cuestionario": false
+    },
+    "estimation_scale_criteria": [
+      "Usa vocabulario técnico del Toolbelt (≥8 términos) — 1 a 5",
+      "Describe estado del bay con There is/are — 1 a 5",
+      "Ubica herramientas con prepositions of place — 1 a 5",
+      "Pronunciación comprensible de términos técnicos — 1 a 5",
+      "Responde preguntas del supervisor sin leer — 1 a 5"
+    ],
+    "total_points": 5,
+    "task_duration_seconds": "60-90",
+    "role_play_scenario": "The Diesel Workshop — Bay assigned by instructor — Monday morning readiness report to Carlos Mendoza",
+    "pronunciation_targets": ["fire extinguisher", "preventive maintenance", "calibration", "torque wrench", "floor jack"],
+    "environment": {
+      "type": "Aula",
+      "materials": ["Stock Card A — Bay Status (1 por aprendiz)", "Stock Card B — Sentence Starters (1 por aprendiz)", "Escala de estimación No 4 (para el instructor)", "Chunk Cards de pronunciación"]
+    },
+    "gfpi_tag": "3.4-TRANSFERENCIA-SPEAKING"
+  }
+}

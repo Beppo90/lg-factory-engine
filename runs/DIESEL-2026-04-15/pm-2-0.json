@@ -1,0 +1,131 @@
+{
+  "pm_id": "PM-2.0",
+  "run_id": "DIESEL-2026-04-15",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "session_blueprint": {
+    "rap_id": "PENDIENTE",
+    "rap_name": "PENDIENTE",
+    "competencia": "Interactuar en Lengua Inglesa de Forma Oral y Escrita dentro de Contextos Sociales y Laborales según el MCER",
+    "program_info": {
+      "program_name": "Mantenimiento de los Motores Diesel",
+      "program_type": "Tecnológico",
+      "guide": "Guía 1.1 — The Workshop Specialist",
+      "cefr_level": "A1.1",
+      "sector": "Automotriz — Mantenimiento Diesel"
+    },
+    "total_hours": 60,
+    "direct_hours": 48,
+    "autonomous_hours": 12,
+    "sessions": [
+      {
+        "session": 1,
+        "fase_sena": "Reflexión Inicial + Contextualización",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.1", "PM-2.2"],
+        "technical_focus": "Tipos de talleres, organización del área, primeros 10 términos",
+        "transversal_rap": "Inglés — Engagement, Academic Language for Technical Reflection (A1.1)",
+        "generates_evidence": false
+      },
+      {
+        "session": 2,
+        "fase_sena": "Apropiación — Input Receptivo (Vocabulary + Reading)",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.5", "PM-2.3"],
+        "technical_focus": "Herramientas: wrench, ratchet, socket, torque wrench, floor jack. Lectura Popular Mechanics adaptada.",
+        "transversal_rap": "Inglés — Technical Vocabulary (20 términos), Reading Comprehension (A1.1)",
+        "generates_evidence": true,
+        "evidences": [
+          {"numero": 1, "tipo": "Conocimiento", "instrumento": "Cuestionario No 1 (5 ítems Reading)", "source_pm": "PM-2.3"},
+          {"numero": null, "tipo": "Aporte Quiz S6", "instrumento": "Vocabulary — 5 términos del Toolbelt", "source_pm": "PM-2.5"}
+        ]
+      },
+      {
+        "session": 3,
+        "fase_sena": "Apropiación — Output Escrito (Grammar + Writing)",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.10", "PM-2.4"],
+        "technical_focus": "Formatos: work order, checklist, safety report. Grammar: Imperatives, There is/are.",
+        "transversal_rap": "Inglés — Grammar in Context, Written Technical Production (A1.1)",
+        "generates_evidence": true,
+        "evidences": [
+          {"numero": 2, "tipo": "Producto", "instrumento": "Lista de verificación No 2 (10 criterios Writing)", "source_pm": "PM-2.4"},
+          {"numero": null, "tipo": "Aporte Quiz S6", "instrumento": "Grammar — 5 ítems imperativos/There is-are", "source_pm": "PM-2.10"}
+        ]
+      },
+      {
+        "session": 4,
+        "fase_sena": "Apropiación — Comprensión Auditiva + Producción Oral",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.6", "PM-2.8"],
+        "technical_focus": "EPP: goggles, gloves, fire extinguisher. Diálogo safety briefing. Role-play Workshop Readiness Report.",
+        "transversal_rap": "Inglés — Listening Comprehension + Oral Production, Safety Communication (A1.1)",
+        "generates_evidence": true,
+        "evidences": [
+          {"numero": 3, "tipo": "Desempeño", "instrumento": "Lista de chequeo No 3 (5 indicadores Listening)", "source_pm": "PM-2.6"},
+          {"numero": 4, "tipo": "Desempeño", "instrumento": "Escala de estimación No 4 (5 criterios Speaking)", "source_pm": "PM-2.8"},
+          {"numero": null, "tipo": "Aporte Quiz S6", "instrumento": "Listening — 5 ítems reconocimiento auditivo", "source_pm": "PM-2.6"}
+        ]
+      },
+      {
+        "session": 5,
+        "fase_sena": "Apropiación — Integración Pragmática (Language Functions)",
+        "direct_hours": 6,
+        "autonomous_hours": 1.5,
+        "pms_active": ["PM-2.9"],
+        "technical_focus": "Funciones comunicativas en taller: dar instrucciones SST, solicitar herramientas, reportar condiciones.",
+        "transversal_rap": "Inglés — Communicative Competence, Language Functions in Technical Context (A1.1)",
+        "generates_evidence": true,
+        "evidences": [
+          {"numero": 5, "tipo": "Desempeño", "instrumento": "Escala de estimación No 5 (5 criterios Language Functions)", "source_pm": "PM-2.9"},
+          {"numero": null, "tipo": "Aporte Quiz S6", "instrumento": "Language Functions — 5 ítems uso pragmático", "source_pm": "PM-2.9"}
+        ]
+      },
+      {
+        "session": "6_primera_mitad",
+        "fase_sena": "Evaluación Sumativa",
+        "direct_hours": 3.75,
+        "autonomous_hours": 0.75,
+        "pms_active": ["Cuestionario Consolidado S6 — PM-4.2"],
+        "technical_focus": "Síntesis de: herramientas, mantenimiento, EPP, hazards, formatos — todo en inglés A1.1.",
+        "transversal_rap": "Inglés — Knowledge Synthesis Across All Skills: Workshop, Safety, Tools (A1.1)",
+        "generates_evidence": true,
+        "evidences": [
+          {"numero": 6, "tipo": "Conocimiento", "instrumento": "Cuestionario Consolidado No 6 — 25 pts (5 Reading + 5 Vocabulary + 5 Grammar + 5 Listening + 5 Language Functions)", "source_pm": "PM-4.2"}
+        ]
+      },
+      {
+        "session": "6_segunda_mitad_7_8",
+        "fase_sena": "Transferencia — Proyecto Final (ABP)",
+        "direct_hours": 15,
+        "autonomous_hours": 3,
+        "pms_active": ["PM-3.5 — The Workshop Readiness Report (Final Mission)"],
+        "technical_focus": "ABP integrador: preparación del taller, inspección EPP y herramientas, formatos, briefing oral al supervisor.",
+        "transversal_rap": "Inglés — Applied Technical Communication in Real Workshop Context",
+        "generates_evidence": false,
+        "evidence_preview": "Sin evidencias GFPI-F-134. Las 6 evidencias formales se generaron en S2–S6 primera mitad."
+      }
+    ],
+    "hours_validation": {
+      "direct_hours": {"expected": 48, "actual": "6+6+6+6+6+3.75+15", "sum": 48.75, "status": "REVISAR — diferencia 0.75h"},
+      "autonomous_hours": {"expected": 12, "actual": "1.5+1.5+1.5+1.5+1.5+0.75+3", "sum": 11.25, "status": "REVISAR — diferencia 0.75h"},
+      "total_hours": {"expected": 60, "actual": 60, "status": "VÁLIDO"},
+      "resolution": "OPCIÓN A: Ajustar S1 a 6.25h directa / 1.25h autónoma. OPCIÓN B: S6 primera mitad a 4h directa / 0.5h autónoma."
+    },
+    "cuestionario_s6_preview": {
+      "total_points": 25,
+      "skills": [
+        {"skill": "Reading", "source_pm": "PM-2.3", "points": 5, "source_text": "Popular Mechanics adaptado A1.1"},
+        {"skill": "Vocabulary", "source_pm": "PM-2.5", "points": 5, "source_text": "Toolbelt 20 términos — taller diesel"},
+        {"skill": "Grammar", "source_pm": "PM-2.10", "points": 5, "source_text": "There is/are, Imperatives, Prepositions"},
+        {"skill": "Listening", "source_pm": "PM-2.6", "points": 5, "source_text": "Motor Age Safety diálogo adaptado A1.1"},
+        {"skill": "Language Functions", "source_pm": "PM-2.9", "points": 5, "source_text": "Instrucciones, solicitudes, reportes en taller"}
+      ]
+    }
+  }
+}

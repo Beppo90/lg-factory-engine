@@ -1,0 +1,99 @@
+{
+  "pm_id": "PM-2.2",
+  "run_id": "DIESEL-2026-04-15",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 1,
+  "fase_sena": "Contextualización",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "archetype_used": ["A — Self-assessment/KWL", "B — Diagnosis visual", "C — Gap card", "D — Peer interview"],
+  "archetype_mode": "secuencia encadenada — cierre de S1",
+
+  "activity_card": {
+    "pm_id": "PM-2.2",
+    "session": 1,
+    "phase_sena": "Contextualización",
+    "activities": [
+      {
+        "number": 1, "archetype": "A — KWL", "type": "cognitiva", "duration_min": 25,
+        "statement": "Completar tabla KWL sobre el taller diesel en inglés para mapear conocimiento previo y construir agenda de aprendizaje del grupo",
+        "bloom": "L1 Recordar + L2 Comprender"
+      },
+      {
+        "number": 2, "archetype": "B — Diagnosis visual", "type": "cognitiva", "duration_min": 35,
+        "statement": "Identificar y describir en inglés errores de seguridad y desorganización en imágenes de taller usando estructuras There is/are y Should",
+        "bloom": "L2 Comprender + L3 Aplicar"
+      },
+      {
+        "number": 3, "archetype": "C — Gap card", "type": "cognitiva", "duration_min": 20,
+        "statement": "Autoevaluar el nivel actual frente a los 6 resultados de aprendizaje de la guía usando I can statements",
+        "bloom": "L1 Recordar + L2 Comprender"
+      },
+      {
+        "number": 4, "archetype": "D — Peer interview", "type": "procedimental", "duration_min": 20,
+        "statement": "Entrevistar a un compañero para construir mapa de vocabulario técnico previo del grupo en inglés",
+        "bloom": "L2 Comprender"
+      }
+    ],
+    "hours": {"direct": 6, "autonomous": 1.5},
+    "evidence": {"generates_evidence": false, "type": null},
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Tabla KWL impresa o digital (Momento 1)",
+        "4 imágenes de taller con errores de seguridad, impresas o proyectadas (Momento 2)",
+        "Gap Cards impresas — 1 por aprendiz (Momento 3)",
+        "Guión de entrevista impreso (Momento 4)"
+      ]
+    },
+    "contributes_to_cuestionario": false
+  },
+
+  "gap_card_statements": [
+    "I can name 15 of the 20 key tools and areas of a diesel workshop in English.",
+    "I can classify types of maintenance (preventive, corrective, predictive) in English.",
+    "I can identify and report a safety hazard to my supervisor in English.",
+    "I can fill in a daily inspection checklist in English.",
+    "I can give basic instructions about PPE in English.",
+    "I can describe the current state of a service bay in English."
+  ],
+
+  "peer_interview_script": [
+    "What tools do you use most in the workshop?",
+    "What type of maintenance do you do most — preventive or corrective?",
+    "Do you always wear PPE? Which PPE?",
+    "What happens in your workshop when there is a spill?",
+    "What English words from the workshop do you already know?"
+  ],
+
+  "diagnostic_images": [
+    "Técnico sin PPE usando amoladora",
+    "Toolbox abierto con herramientas tiradas en el piso",
+    "Derrame de aceite sin señalización cerca de la bahía",
+    "Extinguidor bloqueado por caja de repuestos"
+  ],
+
+  "structures_target": [
+    "There is a spill near bay 2.",
+    "The technician is not wearing goggles.",
+    "The fire extinguisher is blocked.",
+    "The technician should wear goggles."
+  ],
+
+  "trabajo_autonomo": {
+    "duracion_h": 1.5,
+    "actividades": [
+      "Fotografiar Gap Card y subir al grupo como baseline personal",
+      "Escribir 5 términos del Mapa de vocabulario previo en una oración simple en inglés",
+      "Preview S2: leer título y subtítulos del artículo Popular Mechanics y anotar 3 palabras desconocidas"
+    ]
+  },
+
+  "instructor_insights": {
+    "mapa_vocabulario_previo": "Construido en Momento 4 — informa intensidad del Vocabulary Scaffold en PM-2.5",
+    "learning_agenda": "Construida en Momento 1 — fija preguntas del grupo en el aula para guiar S2–S8",
+    "gap_cards": "Guardar para redistribuir en S8 — cierre reflexivo de la guía"
+  },
+
+  "gfpi_tag": "3.2-CONTEXTUALIZACION"
+}

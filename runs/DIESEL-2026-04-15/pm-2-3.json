@@ -1,0 +1,59 @@
+{
+  "pm_id": "PM-2.3",
+  "run_id": "DIESEL-2026-04-15",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 2,
+  "fase_sena": "Apropiación — Reading Master Anchor",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "archetype_used": ["A — Title Prediction/Visual", "B — Jigsaw Reading", "C — Comprehension Check", "D — Text-to-Workshop Connection"],
+  "source": "src-A — Popular Mechanics 'Essential Auto Repair Tools' (adaptado A1.1)",
+  "activity_card": {
+    "pm_id": "PM-2.3",
+    "session": 2,
+    "phase_sena": "Apropiación",
+    "activities": [
+      {"number": 1, "archetype": "A — Visual Prediction", "type": "cognitiva", "duration_min": 20,
+       "statement": "Predecir contenido del texto a partir de imágenes del artículo y verificar predicciones tras primera lectura", "bloom": "L2 Comprender"},
+      {"number": 2, "archetype": "B — Jigsaw Reading", "type": "cognitiva + procedimental", "duration_min": 40,
+       "statement": "Leer cooperativamente el texto asignando secciones a expertos que enseñan su parte al grupo", "bloom": "L2 Comprender + L3 Aplicar"},
+      {"number": 3, "archetype": "C — Comprehension Check", "type": "cognitiva", "duration_min": 30,
+       "statement": "Responder 5 preguntas de comprensión lectora del texto adaptado — Evidencia 1 formal del RAP", "bloom": "L2 Comprender + L3 Aplicar"},
+      {"number": 4, "archetype": "D — Text-to-Workshop", "type": "procedimental", "duration_min": 30,
+       "statement": "Identificar físicamente en el taller los elementos del texto, fotografiarlos y describir en inglés usando el texto como modelo", "bloom": "L3 Aplicar + L4 Analizar"}
+    ],
+    "hours": {"direct": 3, "autonomous": 0.75},
+    "evidence": {
+      "generates_evidence": true,
+      "numero_evidencia": 1,
+      "tipo": "Conocimiento",
+      "description": "Reading Comprehension — 5 preguntas sobre texto adaptado de Popular Mechanics",
+      "evaluation_technique": "Preguntas",
+      "instrument_number": 1,
+      "instrument_type": "Cuestionario",
+      "contributes_to_cuestionario": true,
+      "cuestionario_skill": "Reading",
+      "cuestionario_points": 5
+    },
+    "environment": {"type": "Aula + Taller", "materials": ["Texto adaptado impreso A1.1", "Imágenes originales Popular Mechanics proyectadas", "Cuestionario No 1 impreso (5 ítems)", "Ficha de notas Jigsaw"]},
+    "gfpi_tag": "3.3-APROPIACION-READING"
+  },
+  "adapted_text_title": "Tools Every Diesel Technician Needs",
+  "source_url": "https://www.popularmechanics.com/cars/a26172988/essential-auto-repair-tools/",
+  "cefr_adaptation": "A1.1 — frases máximo 10 palabras, estructuras Verb To Be / Have / Present Simple",
+  "comprehension_questions": [
+    {"number": 1, "question": "What does a torque wrench do?", "answer": "b) It applies the correct force to a bolt", "bloom": "L1 Remember"},
+    {"number": 2, "question": "Why is the floor jack a safety tool?", "answer": "c) Because it lifts the vehicle safely", "bloom": "L2 Understand"},
+    {"number": 3, "question": "Complete: 'The ratchet is fast in ___.'", "answer": "b) tight spaces", "bloom": "L1 Remember"},
+    {"number": 4, "question": "What does calibration ensure?", "answer": "c) The tool is accurate", "bloom": "L2 Understand"},
+    {"number": 5, "question": "True or False: 'A good technician never cleans the workbench.'", "answer": "FALSE", "bloom": "L2 Understand"}
+  ],
+  "trabajo_autonomo": {
+    "duracion_h": 0.75,
+    "actividades": [
+      "Repasar 20 flashcards — auto-test término → imagen en voz alta",
+      "Leer artículo original Popular Mechanics (sin adaptar) e identificar 5 palabras adicionales",
+      "Completar Daily Inspection Checklist con taller real del centro de formación"
+    ]
+  }
+}

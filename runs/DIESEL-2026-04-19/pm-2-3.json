@@ -1,0 +1,164 @@
+{
+  "_meta": {
+    "schema_version": "activity-card-v2.0",
+    "schema_ref": "master-prompts/Activity Card — Schema.md (2026-04-13)",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-opus-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist"
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.3",
+    "pm_name": "Reading — The Master Anchor",
+    "session": 2,
+    "phase_sena": "Apropiación",
+    "rap_id": "RAP-DIESEL-001-2026",
+
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Predecir contenido del texto técnico usando imágenes del artículo y activar vocabulario del taller en inglés",
+        "didactic_strategy": "Content-Based Learning",
+        "didactic_technique": "Investigación guiada"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Leer cooperativamente secciones del texto adaptado de Shadow Foam usando estrategia Jigsaw entre expertos",
+        "didactic_strategy": "Aprendizaje colaborativo",
+        "didactic_technique": "Jigsaw"
+      },
+      {
+        "number": 3,
+        "type": "cognitiva",
+        "statement": "Responder cuestionario de comprensión lectora del texto adaptado como Evidencia de Conocimiento No 1",
+        "didactic_strategy": "TBLT",
+        "didactic_technique": "Análisis de casos"
+      }
+    ],
+
+    "hours": {
+      "direct": 4.0,
+      "autonomous": 0.75
+    },
+
+    "evidence": {
+      "generates_evidence": true,
+      "type": "Conocimiento",
+      "description": "El aprendiz demuestra comprensión de texto técnico en inglés respondiendo 5 preguntas sobre herramientas diesel — Cuestionario No 1",
+      "evaluation_technique": "Preguntas",
+      "instrument_number": 1,
+      "instrument_type": "Cuestionario"
+    },
+
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Texto adaptado A1.1 impreso (1 por aprendiz): 'Tools Every Diesel Specialist Needs' — adaptado de Shadow Foam '20 Must Have Mechanic Tools 2024'",
+        "Imágenes Shadow Foam proyectadas en pantalla (actividad de predicción previa a lectura)",
+        "Cuestionario No 1 impreso — 5 ítems de comprensión lectora (1 por aprendiz)",
+        "Ficha de experto Jigsaw impresa — 1 por rol (4 secciones del texto)",
+        "Word Wall de S2 visible en aula (activado antes de esta sesión por PM-2.5)"
+      ],
+      "instructors": "Instructor de inglés técnico"
+    },
+
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Reading",
+    "quiz_points": 5,
+    "quiz_item_count": 5
+  },
+
+  "pm0_constraints_applied": {
+    "session": "S2",
+    "grammar_active": "Gr1 CONSOLIDA (verbo be) + Gr2 INTRO (There is/there are afirm., neg., pregunta + some/any) — el texto ancla debe contener naturalmente ambas estructuras",
+    "l1_max": "≤ 25% — Primera exposición sistemática al texto auténtico. L1 permitido en cuadro resumen gramatical y verificación de comprensión si hay bloqueo genuino",
+    "feedback_mode": "ACCURACY en noticing gramatical del texto (cuadro resumen tras Jigsaw); FLUENCY en discusión post-lectura y predicción inicial",
+    "stress_focus": "tor·que wrench, ratch·et, spe·cial·ist, main·te·nance — SUCCESS factor C (Conceptualize): mostrar imagen antes del nombre; SUCCESS factor E (Encounter again): término aparece en texto Y en Cuestionario No 1",
+    "text_constraints": "Máx. 7 oraciones por sección, apoyo visual obligatorio, frases ≤15 palabras, 12+ de los 20 términos del Toolbelt"
+  },
+
+  "source": {
+    "title": "20 Must Have Mechanic Tools",
+    "author": "Shadow Foam",
+    "publication": "Shadow Foam Blog",
+    "date": "2024",
+    "url": "https://shadowfoam.com/blogs/article/must-have-mechanic-tools",
+    "role": "Story A — Reading Master Anchor"
+  },
+
+  "adapted_text": {
+    "title": "Tools Every Diesel Specialist Needs",
+    "cefr_adaptation": "A1.1 — frases ≤10 palabras, estructuras Gr1+Gr2, 12+ términos Toolbelt, soporte visual obligatorio",
+    "jigsaw_sections": [
+      "Section A: The Workshop — bay, workbench, toolbox, service bay",
+      "Section B: Hand Tools — wrench, ratchet, socket, torque wrench",
+      "Section C: Safety Tools — floor jack, safety goggles, gloves, PPE",
+      "Section D: The Specialist — specialist, preventive maintenance, work order, checklist"
+    ]
+  },
+
+  "comprehension_questions": [
+    {
+      "number": 1,
+      "question": "What does a torque wrench do?",
+      "options": ["a) It cuts metal", "b) It applies the correct force to a bolt", "c) It lifts the vehicle"],
+      "answer": "b",
+      "bloom": "L1 Remember"
+    },
+    {
+      "number": 2,
+      "question": "Why is the floor jack a safety tool?",
+      "options": ["a) Because it is very heavy", "b) Because it is expensive", "c) Because it lifts the vehicle safely"],
+      "answer": "c",
+      "bloom": "L2 Understand"
+    },
+    {
+      "number": 3,
+      "question": "Complete: 'The ratchet is fast in ___.'",
+      "options": ["a) heavy engines", "b) tight spaces", "c) open areas"],
+      "answer": "b",
+      "bloom": "L1 Remember"
+    },
+    {
+      "number": 4,
+      "question": "What does a specialist use to check a vehicle is secure before working under it?",
+      "options": ["a) A torque wrench", "b) A ratchet set", "c) A floor jack and safety stands"],
+      "answer": "c",
+      "bloom": "L2 Understand"
+    },
+    {
+      "number": 5,
+      "question": "True or False: 'A good technician never cleans the workbench.'",
+      "answer": "FALSE — A good technician always keeps the workbench clean.",
+      "bloom": "L2 Understand"
+    }
+  ],
+
+  "archetype_used": [
+    "A — Visual Prediction (Actividad 1: predicción por imágenes)",
+    "D — Cooperative Jigsaw (Actividad 2: lectura experta por secciones)",
+    "B — Comprehension Strategies (Actividad 3: cuestionario formal)"
+  ],
+
+  "trabajo_autonomo": {
+    "duracion_h": 0.75,
+    "actividades": [
+      "Repasar 20 flashcards del Toolbelt — auto-test: término → imagen → oración en voz alta (≥2 rondas)",
+      "Visitar artículo Shadow Foam '20 Must Have Mechanic Tools 2024' e identificar 5 herramientas adicionales no cubiertas en clase, anotar nombre en inglés + imagen",
+      "Completar Daily Inspection Checklist en blanco con el taller real del centro de formación — Preview de PM-2.4"
+    ]
+  },
+
+  "gfpi_tag": "3.3-APROPIACION-READING",
+  "instructor_notes": {
+    "pre_reading": "PM-2.5 (Word Wall) debe ejecutarse ANTES de PM-2.3 en S2. El vocabulario del Toolbelt debe estar físicamente visible en el aula durante toda la lectura.",
+    "jigsaw_logistics": "4 secciones del texto → 4 grupos de expertos → cada grupo enseña su sección a los demás. Si el grupo es < 8 personas, usar 2 secciones solamente.",
+    "cuestionario_1": "Cuestionario No 1 se aplica SIN acceso al texto. 15 minutos máx. Recoger para evidencia formal. NO retroalimentar oralmente antes de recogerlo.",
+    "grammar_noticing": "Después del Jigsaw: pedir al grupo que encuentre en el texto todas las frases con 'There is / There are'. Construir cuadro resumen Gr2 en pizarra con ejemplos del texto."
+  }
+}

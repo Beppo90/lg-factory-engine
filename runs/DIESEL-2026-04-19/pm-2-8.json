@@ -1,0 +1,161 @@
+{
+  "_meta": {
+    "schema_version": "activity-card-v2.0",
+    "schema_ref": "master-prompts/Activity Card — Schema.md (2026-04-13)",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-opus-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist"
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.8",
+    "pm_name": "Speaking — The Mission",
+    "session": 4,
+    "phase_sena": "Apropiación",
+    "rap_id": "RAP-DIESEL-001-2026",
+
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Analizar Workshop Readiness Report modelo para identificar estructura, contenido y estructuras lingüísticas requeridas",
+        "didactic_strategy": "Content-Based Learning",
+        "didactic_technique": "Análisis de casos"
+      },
+      {
+        "number": 2,
+        "type": "procedimental",
+        "statement": "Preparar reporte oral con Stock Cards y sentence starters, practicando pronunciación con Chunk Cards en pares",
+        "didactic_strategy": "TBLT",
+        "didactic_technique": "Taller"
+      },
+      {
+        "number": 3,
+        "type": "procedimental",
+        "statement": "Presentar Workshop Readiness Report al supervisor en role play de 60–90 seg respondiendo preguntas en vivo — Evidencia 4",
+        "didactic_strategy": "Juego de roles",
+        "didactic_technique": "Role play"
+      }
+    ],
+
+    "hours": {
+      "direct": 3.0,
+      "autonomous": 0.75
+    },
+
+    "evidence": {
+      "generates_evidence": true,
+      "type": "Desempeño",
+      "description": "El aprendiz presenta Workshop Readiness Report de 60–90 segundos al supervisor en inglés respondiendo preguntas en vivo con vocabulario técnico del Toolbelt — Escala de estimación No 4",
+      "evaluation_technique": "Observación directa",
+      "instrument_number": 4,
+      "instrument_type": "Escala de estimación"
+    },
+
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Stock Card A — Bay Status (lista de condiciones del bay para el reporte) — 1 por aprendiz",
+        "Stock Card B — Sentence Starters (marcos lingüísticos para el reporte oral) — 1 por aprendiz",
+        "Chunk Cards de pronunciación: fire extinguisher, preventive maintenance, specialist, torque wrench, floor jack — 1 set por par",
+        "Escala de estimación No 4 impresa — solo para el instructor (5 criterios × 1 pt)",
+        "Imagen Bay 2 proyectada en pantalla — referencia visual durante el role play",
+        "Word Wall de S2 visible en aula"
+      ],
+      "instructors": "Instructor de inglés técnico"
+    },
+
+    "contributes_to_consolidated_quiz": false,
+    "quiz_skill": "",
+    "quiz_points": 0,
+    "quiz_item_count": 0
+  },
+
+  "pm0_constraints_applied": {
+    "session": "S4",
+    "grammar_active": "Gr5 CONSOLIDA (imperativo) + Gr7 INTRO (can/can't: habilidad). El reporte oral incorpora imperativos de instrucción ('Check the floor jack') y can/can't para reportar capacidades ('The lift can operate'). PM-2.8 ES el momento de INTRO de Gr7 en WHILE-D de S4.",
+    "l1_max": "≤ 15% — Mayor autonomía. Instrucciones del role play en L2 con modelo visual. L1 solo si bloqueo genuino en comprensión de consigna del rol.",
+    "feedback_mode": "FLUENCY dominante en preparación (Actividad 2) y role play (Actividad 3) — NO interrumpir durante producción activa. Post-task delayed feedback: instructor lista en pizarra errores frecuentes (anónimos) DESPUÉS de todas las presentaciones. ACCURACY permitida solo en Actividad 1 (análisis del modelo).",
+    "stress_focus": "Choral drilling OBLIGATORIO antes de cada ronda: 'The FLOOR JACK is REA-dy. There's a SPILL near the BAY DOOR. BAY TWO is REA-dy.' Gesto de mano (sube en tónica, baja en átona). Backchaining para 'extinguisher': '-guisher → tin-guisher → ex-tin-guisher → fire extinguisher'.",
+    "role_play_protocol": "Round 1 con Stock Cards en mano (guided). Round 2 solo con Sentence Starters (semi-guided). Round 3 sin apoyo escrito — desde memoria (free production). Instructor evalúa con Escala de estimación No 4 durante Round 3 exclusivamente.",
+    "session_position": "PM-2.8 ocupa WHILE-D de S4. PM-2.6 (Listening) ocupa WHILE-A + WHILE-C. El role play de Actividad 3 de PM-2.6 es el puente hacia PM-2.8 — los aprendices llegan habiendo dramatizado el diálogo de seguridad con script."
+  },
+
+  "estimation_scale": {
+    "instrument": "Escala de estimación No 4",
+    "scale": "1–5 por criterio (1=No logrado, 3=En proceso, 5=Logrado)",
+    "total_points": 5,
+    "note": "Cada criterio vale 1 punto. Instructor evalúa solo durante Round 3 (producción libre). NO evaluar Round 1 ni Round 2.",
+    "criteria": [
+      {"number": 1, "criterion": "Usa vocabulario técnico del Toolbelt (mín. 6 términos) en el reporte oral", "weight": 1},
+      {"number": 2, "criterion": "Describe estado del bay con There is/are + adjetivo o preposición de lugar", "weight": 1},
+      {"number": 3, "criterion": "Usa al menos 2 imperativos técnicos correctamente durante el reporte", "weight": 1},
+      {"number": 4, "criterion": "Pronunciación comprensible de al menos 4 términos técnicos del Toolbelt", "weight": 1},
+      {"number": 5, "criterion": "Responde al menos 1 pregunta improvisada del supervisor sin consultar Stock Card", "weight": 1}
+    ]
+  },
+
+  "role_play_scenario": {
+    "setting": "The Diesel Workshop — Bay asignado por el instructor — Monday 7:00 AM",
+    "situation": "Santiago Ríos (Apprentice) entrega el Workshop Readiness Report de su bay a Carlos Mendoza (Lead Technician) antes del inicio de operaciones. Carlos puede hacer 1–2 preguntas improvisadas sobre el estado del bay.",
+    "roles": {
+      "role_A": "Santiago Ríos — Apprentice Technician: presenta el reporte oral usando vocabulario técnico del Toolbelt (usa Stock Cards en Round 1 y 2, sin apoyo en Round 3)",
+      "role_B": "Carlos Mendoza — Lead Technician (instructor en Round 3 / compañero en Round 1–2): escucha y hace preguntas improvisadas"
+    },
+    "pronunciation_targets": ["fire extinguisher", "preventive maintenance", "specialist", "torque wrench", "floor jack"]
+  },
+
+  "stock_cards": {
+    "stock_card_A_bay_status": {
+      "title": "Stock Card A — Bay Status: Check Before Reporting",
+      "items": [
+        "Floor: ___ (clean ✓ / spill near ___)",
+        "Fire extinguisher: ___ (clear ✓ / blocked by ___)",
+        "Floor jack: ___ (OK — no leaks ✓ / leaks — needs service)",
+        "Toolbox: ___ (organized ✓ / tools on floor)",
+        "PPE available: gloves ___ / goggles ___ / hard hat ___",
+        "Bay status: READY ✓ / NOT READY — Reason: ___"
+      ]
+    },
+    "stock_card_B_sentence_starters": {
+      "title": "Stock Card B — Sentence Starters: Workshop Readiness Report",
+      "frames": [
+        "Good morning, Carlos. Bay ___ is ready / not ready.",
+        "There is a ___ near ___. We need to ___.",
+        "There are ___ tools on the ___.",
+        "The floor jack is OK. No leaks. / The floor jack has a leak — I need to report it.",
+        "The fire extinguisher is next to ___. It is clear.",
+        "PPE is available: gloves, goggles, and ___.",
+        "All tools are in the right place.",
+        "Bay ___ is ready for the first vehicle."
+      ]
+    }
+  },
+
+  "archetype_used": [
+    "A — Input + Model (Actividad 1: análisis de reporte modelo proyectado con noticing de estructura)",
+    "B — Rehearsal + Scaffolding (Actividad 2: preparación guided → semi-guided + chunk card drilling)",
+    "C — Live Performance (Actividad 3: role play evaluado Round 3 con Escala de estimación No 4)"
+  ],
+
+  "trabajo_autonomo": {
+    "duracion_h": 0.75,
+    "actividades": [
+      "Escuchar de nuevo el audio 'Bay 2 Safety Briefing' (PM-2.6) 2 veces y practicar el rol de Carlos (supervisor) en voz alta con el script completo — auto-evaluar pronunciación",
+      "Preparar Workshop Readiness Report oral para el bay real del centro de formación — grabar en celular (mín. 60 seg) y comparar con los 5 criterios de la Escala de estimación No 4",
+      "Preview S5: leer el chunk bank de Funciones Comunicativas F1–F5 de PM-2.9 y memorizar 2 frases por función comunicativa"
+    ]
+  },
+
+  "gfpi_tag": "3.3-APROPIACION-SPEAKING",
+  "instructor_notes": {
+    "sequence_in_s4": "PM-2.8 (Speaking) ocupa WHILE-D de S4. Los aprendices llegan de PM-2.6 habiendo practicado el diálogo de seguridad. PM-2.8 construye sobre ese puente: el mismo escenario de bay, los mismos personajes, pero ahora es un reporte oral libre.",
+    "role_assignment": "Asignar bays diferentes a cada par (Bay 1, Bay 2, Bay 3) para que los reportes sean variados. El instructor evalúa Round 3 con Escala de estimación No 4. Compañero observador puede usar la misma escala como coevaluación informal.",
+    "scoring_protocol": "Evaluar solo Round 3 (sin apoyo escrito). Recoger Escala de estimación No 4 al final. NO compartir puntajes individuales oralmente — devolución individual escrita al inicio de S5.",
+    "fallback_timing": "Si S4 se comprime: hacer solo Round 1 y Round 3. Omitir Round 2 — es el menos evaluado. El fluency mode protege la calidad de Round 3.",
+    "chunk_card_drilling": "Actividad 2 incluye 10 min de chunk card drilling para los 5 términos más difíciles. Técnica: backchaining + choral drill con gesto. Orden: floor jack → torque wrench → specialist → preventive maintenance → fire extinguisher (ascendente en dificultad silábica)."
+  }
+}

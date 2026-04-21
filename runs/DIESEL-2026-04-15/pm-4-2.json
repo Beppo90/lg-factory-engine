@@ -1,0 +1,519 @@
+{
+  "pm_id": "PM-4.2",
+  "run_id": "DIESEL-2026-04-15",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "generated_at": "2026-04-15",
+  "model": "claude-sonnet-4-6",
+  "status": "completed",
+  "description": "Cuestionario Consolidado No 6 — Evidencia 6 — 25 ítems de selección múltiple — 5 secciones (Reading, Vocabulary, Grammar, Listening, Language Functions) — sesión 6 'Prove What You Know'",
+  "header_institucional": {
+    "programa": "Mantenimiento de los Motores Diesel",
+    "tipo_programa": "Técnico",
+    "guia_numero": "1",
+    "guia_nombre": "The Workshop Specialist",
+    "cefr": "A1.1",
+    "evidencia_numero": 6,
+    "instrumento_tipo": "Cuestionario",
+    "rap_code": "220501096",
+    "gfpi_ref": "GFPI-F-134"
+  },
+  "student_header": {
+    "fields": [
+      "Nombre completo: _______________________________________________",
+      "Número de ficha: _______________",
+      "Fecha: _______________",
+      "Instructor: _______________________________________________",
+      "Puntaje: ___ / 25"
+    ]
+  },
+  "administration_conditions": {
+    "duration_min": 90,
+    "materials_permitted": "NINGUNO — sin Word Wall, sin Communication Card, sin notas, sin diccionario, sin teléfono",
+    "materials_permitted_es": "NINGUNO — ni Word Wall, ni Communication Card, ni notas, ni diccionario, ni teléfono",
+    "format": "Selección múltiple con única respuesta — encierra en círculo la letra correcta",
+    "scoring": "1 punto por respuesta correcta. 0 puntos por respuesta incorrecta o en blanco. No hay puntos negativos.",
+    "total_points": 25,
+    "session": 6
+  },
+  "student_instructions": {
+    "en": "Read each question carefully. Circle the letter of the correct answer (a, b, or c). For True/False questions, circle TRUE or FALSE. You may NOT use any materials. Time: 90 minutes. Good luck, Workshop Specialist.",
+    "es": "Lee cada pregunta con atención. Encierra en círculo la letra de la respuesta correcta (a, b o c). En preguntas de Verdadero/Falso, encierra TRUE o FALSE. NO puedes usar ningún material. Tiempo: 90 minutos. ¡Buena suerte, Workshop Specialist!"
+  },
+  "sections": [
+    {
+      "section_id": "S1",
+      "skill": "Reading",
+      "title": "SECTION 1 — READING COMPREHENSION",
+      "subtitle": "Tools Every Diesel Technician Needs",
+      "points_possible": 5,
+      "item_count": 5,
+      "context_note": "Answer the questions based on the article you read in Session 2.",
+      "context_note_es": "Responde las preguntas basándote en el artículo que leíste en la Sesión 2.",
+      "items": [
+        {
+          "item_number": 1,
+          "question": "What is the main topic of the article?",
+          "options": {
+            "a": "Workshop safety rules",
+            "b": "Essential tools for diesel technicians",
+            "c": "How to clean a workshop"
+          },
+          "correct": "b",
+          "points": 1,
+          "bloom": "L1 Remember"
+        },
+        {
+          "item_number": 2,
+          "question": "A torque wrench is used to ___.",
+          "options": {
+            "a": "lift vehicles",
+            "b": "apply the correct force to a bolt",
+            "c": "measure oil levels"
+          },
+          "correct": "b",
+          "points": 1,
+          "bloom": "L2 Understand"
+        },
+        {
+          "item_number": 3,
+          "question": "True or False: The ratchet works well in large spaces.",
+          "options": {
+            "TRUE": "TRUE",
+            "FALSE": "FALSE"
+          },
+          "correct": "FALSE",
+          "points": 1,
+          "bloom": "L1 Remember",
+          "note": "The article states: 'The ratchet is fast in tight spaces.'"
+        },
+        {
+          "item_number": 4,
+          "question": "Where does a technician keep tools organized?",
+          "options": {
+            "a": "On the workbench",
+            "b": "In the toolbox",
+            "c": "Under the vehicle"
+          },
+          "correct": "b",
+          "points": 1,
+          "bloom": "L1 Remember"
+        },
+        {
+          "item_number": 5,
+          "question": "What does 'calibration' mean in the article?",
+          "options": {
+            "a": "Cleaning the tool",
+            "b": "Checking that the tool is accurate",
+            "c": "Replacing a broken tool"
+          },
+          "correct": "b",
+          "points": 1,
+          "bloom": "L2 Understand"
+        }
+      ]
+    },
+    {
+      "section_id": "S2",
+      "skill": "Vocabulary",
+      "title": "SECTION 2 — VOCABULARY",
+      "subtitle": "Toolbelt — 20 Technical Terms",
+      "points_possible": 5,
+      "item_count": 5,
+      "context_note": "Answer the questions about the 20 Toolbelt terms from the course.",
+      "context_note_es": "Responde las preguntas sobre los 20 términos del Toolbelt del curso.",
+      "items": [
+        {
+          "item_number": 6,
+          "question": "What is a 'workbench'?",
+          "options": {
+            "a": "A storage box for tools",
+            "b": "A flat surface to work on",
+            "c": "A type of wrench"
+          },
+          "correct": "b",
+          "points": 1,
+          "category": "ENVIRONMENT",
+          "bloom": "L1 Remember"
+        },
+        {
+          "item_number": 7,
+          "question": "'Hazard' means ___.",
+          "options": {
+            "a": "a tool for lifting",
+            "b": "something dangerous",
+            "c": "a document"
+          },
+          "correct": "b",
+          "points": 1,
+          "category": "SAFETY",
+          "bloom": "L1 Remember"
+        },
+        {
+          "item_number": 8,
+          "question": "Which of these is PPE (Personal Protective Equipment)?",
+          "options": {
+            "a": "Torque wrench",
+            "b": "Safety goggles",
+            "c": "Floor jack"
+          },
+          "correct": "b",
+          "points": 1,
+          "category": "SAFETY",
+          "bloom": "L2 Understand"
+        },
+        {
+          "item_number": 9,
+          "question": "A 'work order' is ___.",
+          "options": {
+            "a": "an instruction to lift a vehicle",
+            "b": "a document describing a repair task",
+            "c": "a safety tool"
+          },
+          "correct": "b",
+          "points": 1,
+          "category": "DOCUMENTS",
+          "bloom": "L1 Remember"
+        },
+        {
+          "item_number": 10,
+          "question": "'Preventive maintenance' means ___.",
+          "options": {
+            "a": "fixing a broken machine",
+            "b": "regular care to avoid breakdowns",
+            "c": "measuring tool accuracy"
+          },
+          "correct": "b",
+          "points": 1,
+          "category": "MAINTENANCE",
+          "bloom": "L2 Understand"
+        }
+      ]
+    },
+    {
+      "section_id": "S3",
+      "skill": "Grammar",
+      "title": "SECTION 3 — GRAMMAR",
+      "subtitle": "Imperatives — There is/are — Prepositions of Place",
+      "points_possible": 5,
+      "item_count": 5,
+      "context_note": "Answer the grammar questions about imperatives, There is/are, and prepositions of place.",
+      "context_note_es": "Responde las preguntas de gramática sobre imperativos, There is/are y preposiciones de lugar.",
+      "items": [
+        {
+          "item_number": 11,
+          "question": "Which sentence is an imperative?",
+          "options": {
+            "a": "I check the floor jack.",
+            "b": "Check the floor jack.",
+            "c": "The floor jack is checked."
+          },
+          "correct": "b",
+          "points": 1,
+          "grammar_target": "Imperative",
+          "bloom": "L2 Understand"
+        },
+        {
+          "item_number": 12,
+          "question": "Complete the sentence: '___ a spill near the bay door.'",
+          "options": {
+            "a": "There are",
+            "b": "There is",
+            "c": "Is there"
+          },
+          "correct": "b",
+          "points": 1,
+          "grammar_target": "There is / There are",
+          "bloom": "L1 Remember"
+        },
+        {
+          "item_number": 13,
+          "question": "Complete the sentence: 'The tools ___ in the toolbox.'",
+          "options": {
+            "a": "is",
+            "b": "are",
+            "c": "has"
+          },
+          "correct": "b",
+          "points": 1,
+          "grammar_target": "There is / There are — plural agreement",
+          "bloom": "L1 Remember"
+        },
+        {
+          "item_number": 14,
+          "question": "Complete the sentence: 'The fire extinguisher is ___ the bay door.'",
+          "options": {
+            "a": "on",
+            "b": "under",
+            "c": "next to"
+          },
+          "correct": "c",
+          "points": 1,
+          "grammar_target": "Prepositions of place",
+          "bloom": "L2 Understand"
+        },
+        {
+          "item_number": 15,
+          "question": "Which sentence has a correct preposition of place?",
+          "options": {
+            "a": "The wrench is near of the workbench.",
+            "b": "The wrench is on the workbench.",
+            "c": "The wrench is in front the workbench."
+          },
+          "correct": "b",
+          "points": 1,
+          "grammar_target": "Prepositions of place — correct form",
+          "bloom": "L2 Understand"
+        }
+      ]
+    },
+    {
+      "section_id": "S4",
+      "skill": "Listening",
+      "title": "SECTION 4 — LISTENING COMPREHENSION",
+      "subtitle": "Bay 2 Safety Briefing — Carlos and Valentina",
+      "points_possible": 5,
+      "item_count": 5,
+      "context_note": "Answer the questions about the Bay 2 Safety Briefing dialogue from Session 4.",
+      "context_note_es": "Responde las preguntas sobre el diálogo Bay 2 Safety Briefing de la Sesión 4.",
+      "items": [
+        {
+          "item_number": 16,
+          "question": "In the dialogue, who is the supervisor?",
+          "options": {
+            "a": "Valentina Cruz",
+            "b": "Carlos Mendoza",
+            "c": "Santiago Ríos"
+          },
+          "correct": "b",
+          "points": 1,
+          "bloom": "L1 Remember"
+        },
+        {
+          "item_number": 17,
+          "question": "What PPE does Carlos ask Valentina to wear?",
+          "options": {
+            "a": "Gloves only",
+            "b": "Goggles only",
+            "c": "Gloves and goggles"
+          },
+          "correct": "c",
+          "points": 1,
+          "bloom": "L1 Remember"
+        },
+        {
+          "item_number": 18,
+          "question": "Where is the oil spill in the dialogue?",
+          "options": {
+            "a": "Under the workbench",
+            "b": "Near the bay door",
+            "c": "In the toolbox"
+          },
+          "correct": "b",
+          "points": 1,
+          "bloom": "L1 Remember"
+        },
+        {
+          "item_number": 19,
+          "question": "Carlos says the fire extinguisher is always ___.",
+          "options": {
+            "a": "on the workbench",
+            "b": "in the toolbox",
+            "c": "next to the bay door"
+          },
+          "correct": "c",
+          "points": 1,
+          "bloom": "L2 Understand"
+        },
+        {
+          "item_number": 20,
+          "question": "What does Valentina say at the end of the dialogue?",
+          "options": {
+            "a": "Bay 2 has a problem.",
+            "b": "I need more PPE.",
+            "c": "Checklist complete. Bay 2 is ready."
+          },
+          "correct": "c",
+          "points": 1,
+          "bloom": "L2 Understand"
+        }
+      ]
+    },
+    {
+      "section_id": "S5",
+      "skill": "Language Functions",
+      "title": "SECTION 5 — LANGUAGE FUNCTIONS",
+      "subtitle": "5 Communication Functions of The Diesel Workshop",
+      "points_possible": 5,
+      "item_count": 5,
+      "context_note": "Answer the questions about the 5 communication functions from Session 5.",
+      "context_note_es": "Responde las preguntas sobre las 5 funciones comunicativas de la Sesión 5.",
+      "functions_reference": {
+        "F1": "Dar instrucciones — Giving instructions (Imperative)",
+        "F2": "Solicitar herramientas — Requesting tools/help (Can I have / I need)",
+        "F3": "Describir condiciones — Describing conditions (There is/are + preposition)",
+        "F4": "Reportar al supervisor — Reporting to supervisor (Bay ___ is ready, Carlos)",
+        "F5": "Confirmar comprensión — Confirming understanding (Understood / Got it)"
+      },
+      "items": [
+        {
+          "item_number": 21,
+          "question": "Carlos says: 'Check the torque wrench.' What communication function is this?",
+          "options": {
+            "a": "Reporting to supervisor",
+            "b": "Giving instructions",
+            "c": "Confirming understanding"
+          },
+          "correct": "b",
+          "points": 1,
+          "function": "F1",
+          "bloom": "L2 Understand"
+        },
+        {
+          "item_number": 22,
+          "question": "Valentina says: 'Can I have the socket set?' What function is this?",
+          "options": {
+            "a": "Requesting tools or help",
+            "b": "Describing conditions",
+            "c": "Giving instructions"
+          },
+          "correct": "a",
+          "points": 1,
+          "function": "F2",
+          "bloom": "L2 Understand"
+        },
+        {
+          "item_number": 23,
+          "question": "'There is a spill near Bay 2.' What communication function is this?",
+          "options": {
+            "a": "Confirming understanding",
+            "b": "Reporting to supervisor",
+            "c": "Describing conditions"
+          },
+          "correct": "c",
+          "points": 1,
+          "function": "F3",
+          "bloom": "L2 Understand"
+        },
+        {
+          "item_number": 24,
+          "question": "Santiago says: 'Bay 3 is ready, Carlos.' What function is this?",
+          "options": {
+            "a": "Reporting to supervisor",
+            "b": "Giving instructions",
+            "c": "Requesting help"
+          },
+          "correct": "a",
+          "points": 1,
+          "function": "F4",
+          "bloom": "L2 Understand"
+        },
+        {
+          "item_number": 25,
+          "question": "Valentina says: 'Got it. I'll do it now.' What function is this?",
+          "options": {
+            "a": "Describing conditions",
+            "b": "Confirming understanding",
+            "c": "Requesting tools"
+          },
+          "correct": "b",
+          "points": 1,
+          "function": "F5",
+          "bloom": "L2 Understand"
+        }
+      ]
+    }
+  ],
+  "consolidated_answer_key": {
+    "section_1_reading": {
+      "1": "b",
+      "2": "b",
+      "3": "FALSE",
+      "4": "b",
+      "5": "b"
+    },
+    "section_2_vocab": {
+      "6": "b",
+      "7": "b",
+      "8": "b",
+      "9": "b",
+      "10": "b"
+    },
+    "section_3_grammar": {
+      "11": "b",
+      "12": "b",
+      "13": "b",
+      "14": "c",
+      "15": "b"
+    },
+    "section_4_listening": {
+      "16": "b",
+      "17": "c",
+      "18": "b",
+      "19": "c",
+      "20": "c"
+    },
+    "section_5_functions": {
+      "21": "b",
+      "22": "a",
+      "23": "c",
+      "24": "a",
+      "25": "b"
+    },
+    "flat": {
+      "1": "b",
+      "2": "b",
+      "3": "FALSE",
+      "4": "b",
+      "5": "b",
+      "6": "b",
+      "7": "b",
+      "8": "b",
+      "9": "b",
+      "10": "b",
+      "11": "b",
+      "12": "b",
+      "13": "b",
+      "14": "c",
+      "15": "b",
+      "16": "b",
+      "17": "c",
+      "18": "b",
+      "19": "c",
+      "20": "c",
+      "21": "b",
+      "22": "a",
+      "23": "c",
+      "24": "a",
+      "25": "b"
+    }
+  },
+  "scoring_guide": {
+    "total_points": 25,
+    "per_section": 5,
+    "per_item": 1,
+    "no_partial_credit": true,
+    "no_negative_marking": true,
+    "score_bands": {
+      "23_25": "Destacado — dominio sólido de A1.1 en las 5 habilidades",
+      "18_22": "Competente — A1.1 logrado con áreas de refuerzo menores",
+      "13_17": "Básico — A1.1 parcialmente logrado — refuerzo recomendado",
+      "8_12": "En proceso — revisión de habilidades específicas necesaria",
+      "0_7": "No logrado — requiere acompañamiento individualizado"
+    },
+    "section_diagnostic": {
+      "note": "Si un aprendiz obtiene < 3/5 en una sección — esa habilidad necesita refuerzo antes de la siguiente guía.",
+      "reading_low": "Refuerzo: relectura del artículo + preguntas de inferencia adicionales",
+      "vocabulary_low": "Refuerzo: Toolbelt flashcards + categorización adicional",
+      "grammar_low": "Refuerzo: Error Log S3 + Grammar Stations S3",
+      "listening_low": "Refuerzo: re-escucha del diálogo + role-play adicional",
+      "functions_low": "Refuerzo: Personal Communication Card S5 + drills F1–F5"
+    }
+  },
+  "instructor_notes": {
+    "distribution": "Distribuir Cuestionario CARA ABAJO. Estudiantes escriben nombre y fecha antes de voltear.",
+    "collection": "Recoger TODOS los formularios antes de revisar cualquier respuesta.",
+    "review_session": "Revisión en WHILE-B de S6: 3 min por pregunta × 25 = 75 min. Para cada pregunta: leer → estudiantes votan a/b/c → revelar respuesta → explicar razonamiento (citar fuente de sesión).",
+    "return": "Cuestionario devuelto con puntaje total + puntaje por sección + diagnóstico breve.",
+    "contribution": "Evidencia 6 — contribuye a la calificación final según GFPI-F-134 y peso institucional de la ficha."
+  }
+}

@@ -1,0 +1,1007 @@
+{
+  "pm_id": "PM-3.2-S5",
+  "run_id": "DIESEL-2026-04-18",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 5,
+  "session_name": "The Workshop in Action",
+  "fase_sena": "Apropiación — Language Functions / Communicative Competence",
+  "generated_at": "2026-04-15",
+  "model": "claude-sonnet-4-6",
+  "status": "completed",
+  "worksheets_used": [
+    "PM-2.9 — Language Functions (Evidence 5)"
+  ],
+  "evidences_generated": [
+    5
+  ],
+  "header": {
+    "programa": "Mantenimiento de los Motores Diesel",
+    "guia": "1.1 — The Workshop Specialist",
+    "sesion": 5,
+    "nombre_sesion": "The Workshop in Action",
+    "cefr": "A1.1–A1.2",
+    "duracion_total_min": 360,
+    "horas_directas": 6,
+    "horas_autonomas": 1.5,
+    "ambiente": "Aula — espacio central despejado para simulaciones + Word Wall visible",
+    "personajes": [
+      "Carlos Mendoza — Lead Technician / Supervisor",
+      "Valentina Cruz — Apprentice",
+      "Santiago Ríos — Technician"
+    ],
+    "nota": "PM-2.9 cubre 6h directas + 1.5h autónomas (intensidad doble vs default). Única sesión de un solo worksheet — toda la sesión dedicada a Language Functions.",
+    "gfpi_tag": "3.3-APROPIACION-LANGUAGE-FUNCTIONS"
+  },
+  "evidence_summary": {
+    "evidence_5": {
+      "numero": 5,
+      "tipo": "Desempeño",
+      "skill": "Language Functions",
+      "description": "Integrated Simulation — 5 funciones comunicativas en apertura de taller: dar instrucciones, solicitar herramientas, describir condiciones, reportar, confirmar",
+      "instrument": "Escala de estimación No 5 — Observación directa + evaluación entre pares",
+      "points": 5,
+      "administered_in": "WHILE-C",
+      "condition": "Grupos de 3 (Carlos/Valentina/Santiago) — 3-4 minutos por grupo — sin notas escritas durante la performance — Word Wall visible",
+      "estimation_scale_criteria": [
+        {
+          "n": 1,
+          "criterion": "Da instrucciones claras usando imperativos (F1)",
+          "scale": "1–5",
+          "function": "F1 — Dar instrucciones"
+        },
+        {
+          "n": 2,
+          "criterion": "Solicita herramientas/ayuda con fórmulas correctas (F2)",
+          "scale": "1–5",
+          "function": "F2 — Solicitar herramientas"
+        },
+        {
+          "n": 3,
+          "criterion": "Describe condiciones del bay con There is/are (F3)",
+          "scale": "1–5",
+          "function": "F3 — Describir condiciones"
+        },
+        {
+          "n": 4,
+          "criterion": "Reporta al supervisor con información completa (F4)",
+          "scale": "1–5",
+          "function": "F4 — Reportar"
+        },
+        {
+          "n": 5,
+          "criterion": "Confirma comprensión con expresiones apropiadas (F5)",
+          "scale": "1–5",
+          "function": "F5 — Confirmar"
+        }
+      ],
+      "score_note": "Promedio de 5 criterios (1–5) = puntaje de 5 pts máximo. Evaluación dual: instructor (Escala No 5 completa) + par observador (Escala simplificada — solo checkmark por función visible).",
+      "cuestionario_contribution": {
+        "skill": "Language Functions",
+        "points": 5
+      }
+    }
+  },
+  "language_functions_reference": {
+    "F1": {
+      "name": "Dar instrucciones",
+      "structure": "Imperative: 'Check the floor jack.'",
+      "who": "Supervisor → Technician / Lead → Apprentice"
+    },
+    "F2": {
+      "name": "Solicitar herramientas/ayuda",
+      "structure": "'Can I have the torque wrench?' / 'I need the socket set.'",
+      "who": "Technician → Colleague"
+    },
+    "F3": {
+      "name": "Describir condiciones",
+      "structure": "There is/are + prepositions: 'There is a spill near Bay 1.'",
+      "who": "Technician — any direction"
+    },
+    "F4": {
+      "name": "Reportar al supervisor",
+      "structure": "Present Simple + There is/are: 'Bay 2 is ready, Carlos.'",
+      "who": "Technician → Supervisor"
+    },
+    "F5": {
+      "name": "Confirmar comprensión",
+      "structure": "'Understood.' / 'Got it.' / 'I'll do it now.'",
+      "who": "Any — response to instruction or report"
+    }
+  },
+  "session_assets": {
+    "phrase_cards_15": {
+      "description": "15 tarjetas de frases reales — 3 por función — para actividad de clasificación (WHILE-A)",
+      "F1_dar_instrucciones": [
+        {
+          "card": 1,
+          "phrase": "Check the floor jack before you start."
+        },
+        {
+          "card": 2,
+          "phrase": "Put on your goggles and gloves."
+        },
+        {
+          "card": 3,
+          "phrase": "Clean the oil spill near the bay door."
+        }
+      ],
+      "F2_solicitar_herramientas": [
+        {
+          "card": 4,
+          "phrase": "Can I have the torque wrench?"
+        },
+        {
+          "card": 5,
+          "phrase": "I need the socket set."
+        },
+        {
+          "card": 6,
+          "phrase": "Where is the ratchet? Can I use it?"
+        }
+      ],
+      "F3_describir_condiciones": [
+        {
+          "card": 7,
+          "phrase": "There is a spill near Bay 1."
+        },
+        {
+          "card": 8,
+          "phrase": "There are three tools on the workbench."
+        },
+        {
+          "card": 9,
+          "phrase": "The floor jack is under the vehicle."
+        }
+      ],
+      "F4_reportar": [
+        {
+          "card": 10,
+          "phrase": "Bay 2 is ready, Carlos."
+        },
+        {
+          "card": 11,
+          "phrase": "There is a problem with the floor jack."
+        },
+        {
+          "card": 12,
+          "phrase": "Preventive maintenance checklist: complete."
+        }
+      ],
+      "F5_confirmar": [
+        {
+          "card": 13,
+          "phrase": "Understood."
+        },
+        {
+          "card": 14,
+          "phrase": "Got it. I'll do it now."
+        },
+        {
+          "card": 15,
+          "phrase": "Checklist complete. Bay 2 is ready."
+        }
+      ]
+    },
+    "communication_map": {
+      "description": "Diagrama de interacciones — proyectado en WHILE-A",
+      "nodes": [
+        "CARLOS (Supervisor)",
+        "VALENTINA (Apprentice)",
+        "SANTIAGO (Technician)"
+      ],
+      "interactions": [
+        {
+          "from": "CARLOS",
+          "to": "VALENTINA/SANTIAGO",
+          "function": "F1 — Dar instrucciones"
+        },
+        {
+          "from": "VALENTINA",
+          "to": "SANTIAGO",
+          "function": "F2 — Solicitar herramientas"
+        },
+        {
+          "from": "VALENTINA/SANTIAGO",
+          "to": "ALL",
+          "function": "F3 — Describir condiciones"
+        },
+        {
+          "from": "VALENTINA/SANTIAGO",
+          "to": "CARLOS",
+          "function": "F4 — Reportar"
+        },
+        {
+          "from": "ALL",
+          "to": "ALL",
+          "function": "F5 — Confirmar comprensión"
+        }
+      ]
+    },
+    "simulation_model_script": {
+      "title": "Sample — Workshop Opening Simulation (instructor model)",
+      "scene": "Monday morning, 7:00 AM. Bay 2. Carlos arrives.",
+      "lines": [
+        {
+          "speaker": "CARLOS",
+          "line": "Good morning. Check your PPE before you start.",
+          "function": "F1"
+        },
+        {
+          "speaker": "VALENTINA",
+          "line": "Understood.",
+          "function": "F5"
+        },
+        {
+          "speaker": "VALENTINA",
+          "line": "Santiago, can I have the torque wrench?",
+          "function": "F2"
+        },
+        {
+          "speaker": "SANTIAGO",
+          "line": "Here you go.",
+          "function": "F5"
+        },
+        {
+          "speaker": "VALENTINA",
+          "line": "There is an oil spill near the bay door.",
+          "function": "F3"
+        },
+        {
+          "speaker": "CARLOS",
+          "line": "Clean it now. Then check the floor jack.",
+          "function": "F1"
+        },
+        {
+          "speaker": "SANTIAGO",
+          "line": "Got it. I'll do it now.",
+          "function": "F5"
+        },
+        {
+          "speaker": "VALENTINA",
+          "line": "Bay 2 is ready, Carlos. Checklist: complete.",
+          "function": "F4"
+        },
+        {
+          "speaker": "CARLOS",
+          "line": "Good work.",
+          "function": "F4-response"
+        }
+      ],
+      "functions_visible": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ],
+      "duration_sec": "60–80"
+    },
+    "drill_bank": {
+      "F1_stimuli": [
+        {
+          "stimulus": "The floor jack — what do I do?",
+          "response": "Check the floor jack."
+        },
+        {
+          "stimulus": "No PPE on?",
+          "response": "Put on your gloves and goggles."
+        },
+        {
+          "stimulus": "Oil spill!",
+          "response": "Clean the spill near the bay door."
+        },
+        {
+          "stimulus": "Tools?",
+          "response": "Put the tools in the toolbox."
+        },
+        {
+          "stimulus": "Checklist?",
+          "response": "Complete the Daily Inspection Checklist."
+        }
+      ],
+      "F2_stimuli": [
+        {
+          "stimulus": "You need the torque wrench. Ask Santiago.",
+          "response": "Can I have the torque wrench?"
+        },
+        {
+          "stimulus": "You need the socket. Ask.",
+          "response": "I need the socket set."
+        },
+        {
+          "stimulus": "Where is the ratchet?",
+          "response": "Where is the ratchet? Can I use it?"
+        },
+        {
+          "stimulus": "You need help with the floor jack.",
+          "response": "Can you help me with the floor jack?"
+        }
+      ],
+      "F3_stimuli": [
+        {
+          "bay_condition": "spill / bay door",
+          "response": "There is a spill near the bay door."
+        },
+        {
+          "bay_condition": "3 tools / workbench",
+          "response": "There are three tools on the workbench."
+        },
+        {
+          "bay_condition": "floor jack / under vehicle",
+          "response": "The floor jack is under the vehicle."
+        },
+        {
+          "bay_condition": "goggles / workbench",
+          "response": "The goggles are on the workbench."
+        }
+      ],
+      "F4_stimuli": [
+        {
+          "situation": "Bay 2 is clean and ready.",
+          "response": "Bay 2 is ready, Carlos."
+        },
+        {
+          "situation": "Floor jack has a problem.",
+          "response": "There is a problem with the floor jack, Carlos."
+        },
+        {
+          "situation": "Checklist is complete.",
+          "response": "Preventive maintenance checklist: complete."
+        },
+        {
+          "situation": "Spill is cleaned.",
+          "response": "The spill is clean. Bay 2 is ready."
+        }
+      ],
+      "F5_expressions": [
+        "Understood.",
+        "Got it.",
+        "I'll do it now.",
+        "OK. I understand.",
+        "Checklist complete.",
+        "Yes, Carlos.",
+        "No problem."
+      ]
+    },
+    "quiz_preview_items": {
+      "description": "5 ítems tipo Cuestionario S6 — Language Functions — para práctica en pares (WHILE-D)",
+      "items": [
+        {
+          "n": 1,
+          "q": "Carlos says: 'Check the torque wrench.' What communication function is this?",
+          "a": "a) Reporting to supervisor",
+          "b": "b) Giving instructions",
+          "c": "c) Confirming understanding",
+          "correct": "b",
+          "function": "F1",
+          "bloom": "L2 Understand"
+        },
+        {
+          "n": 2,
+          "q": "Valentina says: 'Can I have the socket set?' What function is this?",
+          "a": "a) Requesting tools/help",
+          "b": "b) Describing conditions",
+          "c": "c) Giving instructions",
+          "correct": "a",
+          "function": "F2",
+          "bloom": "L2 Understand"
+        },
+        {
+          "n": 3,
+          "q": "'There is a spill near Bay 2.' What function is this?",
+          "a": "a) Confirming understanding",
+          "b": "b) Reporting to supervisor",
+          "c": "c) Describing conditions",
+          "correct": "c",
+          "function": "F3",
+          "bloom": "L2 Understand"
+        },
+        {
+          "n": 4,
+          "q": "Santiago says: 'Bay 3 is ready, Carlos.' What function is this?",
+          "a": "a) Reporting to supervisor",
+          "b": "b) Giving instructions",
+          "c": "c) Requesting help",
+          "correct": "a",
+          "function": "F4",
+          "bloom": "L2 Understand"
+        },
+        {
+          "n": 5,
+          "q": "Valentina says: 'Got it. I'll do it now.' What function is this?",
+          "a": "a) Describing conditions",
+          "b": "b) Confirming understanding",
+          "c": "c) Requesting tools",
+          "correct": "b",
+          "function": "F5",
+          "bloom": "L2 Understand"
+        }
+      ],
+      "answer_key": {
+        "1": "b",
+        "2": "a",
+        "3": "c",
+        "4": "a",
+        "5": "b"
+      }
+    },
+    "personal_communication_card": {
+      "description": "Tarjeta personal — 1 por aprendiz — creada en WHILE-D — llevada a S6 para repaso",
+      "sections": [
+        {
+          "function": "F1 — GIVE INSTRUCTIONS",
+          "student_writes": "2 imperative sentences from their own words",
+          "trigger": "When you are the supervisor or lead."
+        },
+        {
+          "function": "F2 — REQUEST TOOLS / HELP",
+          "student_writes": "2 request phrases using 'Can I have...' or 'I need...'",
+          "trigger": "When you need something from a colleague."
+        },
+        {
+          "function": "F3 — DESCRIBE CONDITIONS",
+          "student_writes": "2 sentences using 'There is/are + preposition'",
+          "trigger": "When you see a problem or describe your bay."
+        },
+        {
+          "function": "F4 — REPORT TO SUPERVISOR",
+          "student_writes": "2 report phrases: 'Bay ___ is ready, Carlos.' / 'There is a problem with ___.'",
+          "trigger": "When the supervisor asks for bay status."
+        },
+        {
+          "function": "F5 — CONFIRM UNDERSTANDING",
+          "student_writes": "3 confirmation expressions they feel comfortable saying",
+          "trigger": "After receiving any instruction or information."
+        }
+      ],
+      "instructor_note": "Students keep this card. It is their personal reference for S6 quiz review and S7 Final Mission preparation. NOT collected — it is a learning tool."
+    }
+  },
+  "timeline": {
+    "total_min": 360,
+    "session_start": "07:00",
+    "session_end": "13:00",
+    "blocks": [
+      {
+        "block": "SET-UP",
+        "start": "07:00",
+        "end": "07:25",
+        "duration_min": 25
+      },
+      {
+        "block": "WHILE-A",
+        "start": "07:25",
+        "end": "08:35",
+        "duration_min": 70
+      },
+      {
+        "block": "WHILE-B",
+        "start": "08:35",
+        "end": "09:45",
+        "duration_min": 70
+      },
+      {
+        "block": "BREAK",
+        "start": "09:45",
+        "end": "10:00",
+        "duration_min": 15
+      },
+      {
+        "block": "WHILE-C",
+        "start": "10:00",
+        "end": "11:20",
+        "duration_min": 80
+      },
+      {
+        "block": "WHILE-D",
+        "start": "11:20",
+        "end": "12:35",
+        "duration_min": 75
+      },
+      {
+        "block": "WRAP-UP",
+        "start": "12:35",
+        "end": "13:00",
+        "duration_min": 25
+      }
+    ],
+    "totals_check": {
+      "set_up": 25,
+      "while_blocks": 295,
+      "break": 15,
+      "wrap_up": 25,
+      "grand_total": 360,
+      "validation": "PASS"
+    }
+  },
+  "session_plan": {
+    "set_up": {
+      "block": "SET-UP",
+      "duration_min": 25,
+      "time": "07:00–07:25",
+      "title": "Opening — Return Feedback + Language Functions Launch",
+      "teacher_talk": {
+        "opening": "Good morning, Workshop Team. Before we start — I have your Evidence 4 results. (distributes Escala No 4 with written comments) Take 3 minutes to read your feedback. If you have a question, come see me during the break.",
+        "s4_carryover": "If any students are on the S4 carry-over list: 'Before anything else — Bay ___ and Bay ___ technicians — your Evidence 4 performance. Come to the front. You are ready. Let's go.' (2-3 min per carry-over student — brief, efficient)",
+        "s5_launch": "Today — Session 5 — The Workshop in Action. This is the most important session before the Quiz. Today you will USE all five communication functions of a real diesel workshop — in English — together, as a team.",
+        "agenda": "Morning: Function Map — learn the five functions and where they go. Then Drills — practice each one fast. After break: Evidence 5 — the integrated simulation. Afternoon: build your Personal Communication Card and preview the Quiz.",
+        "icq": "ICQ — How many communication functions today? (five) What is Evidence 5? (integrated simulation — group performance) Can you use notes during Evidence 5? (no — Word Wall yes, notes no)"
+      },
+      "activities": [
+        {
+          "time": "07:00–07:08",
+          "activity": "Return Evidence 4 + individual reading time",
+          "procedure": "Distribute Escala de estimación No 4 with individual written comments. Students read feedback silently (3 min). Then: 'Turn to your partner. Share one thing you did well (from feedback) and one thing to improve.'",
+          "facilitation_note": "💡 This is the only time Evidence 4 feedback is addressed publicly as a group. After this, it is individual. Do not spend more than 8 minutes on this — S5 is content-rich."
+        },
+        {
+          "time": "07:08–07:18",
+          "activity": "S4 Carry-Over Performances (if applicable)",
+          "procedure": "Only if students remain on carry-over list. Each performs their Workshop Readiness Report (60-90 sec) + 2 supervisor questions. Instructor completes Escala No 4 in real time. If no carry-overs — use this time for a Pronunciation Warm-Up: Chunk Cards rapid review of the 5 terms from S4 (2 min each).",
+          "facilitation_note": "💡 If doing pronunciation warm-up: focus on 'fire extinguisher' and 'preventive maintenance' — these had the highest error rate in S4 Exit Tickets."
+        },
+        {
+          "time": "07:18–07:25",
+          "activity": "Communication Map Preview + Session Frame",
+          "procedure": "Project the Communication Map (3 nodes: CARLOS / VALENTINA / SANTIAGO). Instructor: 'Today we learn WHEN to use each function — WHO says it, TO WHOM, and WHY.' Quick prediction: 'Who gives instructions? (Carlos) Who requests tools? (Valentina, Santiago) Who reports? (Valentina, Santiago) Who confirms? (everyone)' Write on board.",
+          "formative_checkpoint": "✓ All Evidence 4 forms distributed. ✓ Carry-over performances completed or noted as done."
+        }
+      ]
+    },
+    "while_a": {
+      "block": "WHILE-A",
+      "pm_source": "PM-2.9 — Archetype A: Function Map",
+      "duration_min": 70,
+      "time": "07:25–08:35",
+      "title": "Function Map — Five Tools for the Workshop",
+      "bloom": "L2 Comprender + L3 Aplicar",
+      "purpose": "Mapear las 5 funciones comunicativas en el diagrama de interacciones del taller; clasificar 15 frases reales; cada grupo enseña una función al resto de la clase",
+      "teacher_talk": {
+        "instruction": "Five functions. Five communication tools. Every professional conversation in a diesel workshop uses one of these five. You already KNOW the language — from S2, S3, S4. Today you ORGANIZE it into functions.",
+        "transition_to_sort": "Now you have 15 phrase cards. Three cards per function — but they are all mixed. In groups — sort them. Five columns on your table: F1, F2, F3, F4, F5. First group finished and correct — wins.",
+        "transition_to_teachback": "Each group — you are now the expert for ONE function. Teach the class. You have 5 minutes to prepare. Then 2 minutes to present. Use the board. Use examples. Use your body."
+      },
+      "activities": [
+        {
+          "time": "07:25–07:45",
+          "activity": "Function Map Introduction — Communication Architecture",
+          "procedure": "Instructor presents Communication Map on projector. Walks through each function: name (English + Spanish), structure, example, character who uses it. For each function: (a) instructor models 2 example sentences, (b) class repeats chorally, (c) students write 1 personal example in notebook. Map stays projected all session.",
+          "function_introduction_examples": {
+            "F1": [
+              "Check the floor jack.",
+              "Put on your gloves now.",
+              "Clean the workbench."
+            ],
+            "F2": [
+              "Can I have the torque wrench?",
+              "I need the socket set.",
+              "Can you help me?"
+            ],
+            "F3": [
+              "There is a spill near the bay door.",
+              "There are two wrenches on the workbench.",
+              "The floor jack is under the vehicle."
+            ],
+            "F4": [
+              "Bay 2 is ready, Carlos.",
+              "There is a problem with the floor jack.",
+              "Checklist complete — all tools calibrated."
+            ],
+            "F5": [
+              "Understood.",
+              "Got it. I'll do it now.",
+              "Yes, Carlos. No problem."
+            ]
+          },
+          "facilitation_note": "💡 Write each function number and name on the board in a permanent column — F1 through F5 — and leave them up for the entire session. Students will reference them throughout. Use the same colour coding from S3 where possible: F1 (Imperative) in RED."
+        },
+        {
+          "time": "07:45–08:05",
+          "activity": "15 Phrase Cards — Classification Race",
+          "procedure": "Groups of 3–4. Each group receives 1 set of 15 phrase cards (shuffled). Task: sort into 5 columns (F1–F5) on table. First group with all 15 correct = wins. Instructor circulates — does NOT correct during race — only observes. After all groups finish: whole-class verification (3 min). Instructor reads each card → class calls out function number.",
+          "answer_key_sort": {
+            "F1": [
+              "Check the floor jack before you start.",
+              "Put on your goggles and gloves.",
+              "Clean the oil spill near the bay door."
+            ],
+            "F2": [
+              "Can I have the torque wrench?",
+              "I need the socket set.",
+              "Where is the ratchet? Can I use it?"
+            ],
+            "F3": [
+              "There is a spill near Bay 1.",
+              "There are three tools on the workbench.",
+              "The floor jack is under the vehicle."
+            ],
+            "F4": [
+              "Bay 2 is ready, Carlos.",
+              "There is a problem with the floor jack.",
+              "Preventive maintenance checklist: complete."
+            ],
+            "F5": [
+              "Understood.",
+              "Got it. I'll do it now.",
+              "Checklist complete. Bay 2 is ready."
+            ]
+          },
+          "facilitation_note": "💡 Cards 12 ('Preventive maintenance checklist: complete.') and 15 ('Checklist complete. Bay 2 is ready.') are intentional near-confusion items — card 12 is F4 (report content), card 15 is F5 (confirmation). Expect debate — let it happen. The debate IS the learning.",
+          "formative_checkpoint": "✓ Every group has attempted the sort. ✓ Whole-class verification completed with reasoning."
+        },
+        {
+          "time": "08:05–08:35",
+          "activity": "Teach-Back — Expert Groups",
+          "procedure": "Assign 1 function to each group (F1–F5 — if more than 5 groups, two groups share one function and compare). Groups have 5 minutes to prepare their 2-minute teach-back: (1) function name + when to use it, (2) 2 example sentences, (3) 1 mini-drill (they ask — class responds). Each group presents from the front. Instructor annotates Communication Map on board after each teach-back.",
+          "teach_back_template": "Our function is ___. In Spanish: ___. You use it when ___. Example: '___.' And: '___.' Now YOU try: (gives stimulus to class). Correct answer: '___.'",
+          "facilitation_note": "💡 The teach-back is the highest-value activity in WHILE-A. Students who explain a concept to peers consolidate it 3× more than students who only receive explanation. Keep the clock strict — 2 minutes per group, no more. Give a 30-second signal."
+        }
+      ],
+      "differentiation": {
+        "fast_finishers": "Write 2 additional phrase cards (not from the original 15) for their assigned function — correctly categorized. Trade with another fast-finisher pair for verification.",
+        "more_support": "Phrase cards include function label on the back (F1/F2/F3/F4/F5) as a self-check tool during the race — student can flip to verify before the group submits."
+      },
+      "tecnica_didactica": "Mapa de funciones comunicativas (organizador gráfico relacional)"
+    },
+    "while_b": {
+      "block": "WHILE-B",
+      "pm_source": "PM-2.9 — Archetype B: Function Drills",
+      "duration_min": 70,
+      "time": "08:35–09:45",
+      "title": "Function Drills — Five Rounds, Real Workshop",
+      "bloom": "L3 Aplicar",
+      "purpose": "Practicar cada función comunicativa en drills de pares con situaciones reales del taller — automatización de producción oral antes de la simulación integrada",
+      "teacher_talk": {
+        "instruction": "Now we DRILL. Five functions, five rounds. Each round: I give you a situation. You respond in English using the correct function. Fast. Automatic. Like a technician who knows the job.",
+        "transition_between_functions": "Function ___ — done. Function ___ — next. New role. New partner. Go.",
+        "icq": "ICQ — Do you write during drills? (no — oral only) Can you look at the Communication Map on the board? (yes) Is there a correct answer for each stimulus? (yes — but flexible language is OK)"
+      },
+      "drill_structure": {
+        "format": "Stimulus-Response pairs — Partner A gives stimulus (from card or board), Partner B responds with correct function. After 4 minutes: SWITCH roles. After 8 minutes: rotate partners.",
+        "duration_per_function": "12 minutes each × 5 functions + 10 min transitions = 70 min",
+        "instructor_role": "Call out stimuli for whole class first (1 min model round) → pairs drill independently (8 min) → 2 fast-feedback examples from volunteers (2 min) → next function"
+      },
+      "function_drills": [
+        {
+          "function": "F1 — Dar instrucciones",
+          "time": "08:35–08:47",
+          "drill_type": "Stimulus card → Imperative response",
+          "model_exchange": "Instructor: 'The floor jack — what do I check?' Class: 'Check the floor jack.' Instructor: 'PPE is not on.' Class: 'Put on your gloves and goggles.'",
+          "pair_stimuli": [
+            "floor jack / check",
+            "PPE / put on",
+            "oil spill / clean",
+            "tools / put in toolbox",
+            "checklist / complete"
+          ],
+          "facilitation_note": "💡 If responses come out as questions ('Should I check?') — model back immediately: 'No — direct. IMPERATIVE. CHECK. Not 'should I check.' Technicians are direct.'"
+        },
+        {
+          "function": "F2 — Solicitar herramientas/ayuda",
+          "time": "08:47–08:59",
+          "drill_type": "Need scenario → Request sentence",
+          "model_exchange": "Instructor: 'You need the torque wrench. It's with Santiago.' Partner A (to Partner B): 'Can I have the torque wrench?' Partner B: 'Here you go.' (F5 bonus)",
+          "pair_stimuli": [
+            "torque wrench",
+            "socket set",
+            "ratchet",
+            "floor jack help",
+            "goggles location"
+          ],
+          "facilitation_note": "💡 F2 drills naturally generate F5 responses from the partner — celebrate this: 'Did you hear that? Santiago said 'Here you go' — that IS a confirmation. F2 triggers F5 automatically. This is how real workshops sound.'"
+        },
+        {
+          "function": "F3 — Describir condiciones",
+          "time": "08:59–09:11",
+          "drill_type": "Bay condition image/card → There is/are + preposition sentence",
+          "model_exchange": "Instructor projects bay image with spill. 'Describe what you see.' Class: 'There is a spill near the bay door.' Next image: toolbox open. 'There are tools in the toolbox.'",
+          "pair_stimuli_conditions": [
+            "spill / bay door",
+            "3 wrenches / workbench",
+            "floor jack / under vehicle",
+            "goggles / workbench",
+            "fire extinguisher / bay door"
+          ],
+          "facilitation_note": "💡 F3 is the bridge between observation and communication — the technician's diagnostic voice. If students say 'I see a spill' — correct to 'There IS a spill.' The structure matters for the quiz."
+        },
+        {
+          "function": "F4 — Reportar al supervisor",
+          "time": "09:11–09:23",
+          "drill_type": "Bay status → Report sentence to supervisor",
+          "model_exchange": "Instructor (as CARLOS): 'Valentina — Bay 2 status?' Partner A (as Valentina): 'Bay 2 is ready, Carlos.' Instructor: 'Santiago — problem?' Partner B: 'There is a problem with the floor jack, Carlos.'",
+          "pair_stimuli_situations": [
+            "Bay 2 — clean and ready",
+            "Floor jack — problem",
+            "Checklist — complete",
+            "Spill — cleaned",
+            "Tools — calibrated"
+          ],
+          "facilitation_note": "💡 Insist on addressing the supervisor by name ('Carlos') in F4 reports — this is a real professional register marker. It sounds natural in English workshops and elevates the quality of the simulation."
+        },
+        {
+          "function": "F5 — Confirmar comprensión",
+          "time": "09:23–09:35",
+          "drill_type": "Instruction received → Confirmation expression (varied — not always 'Understood')",
+          "model_exchange": "Instructor: 'Check the floor jack.' Students (each says a DIFFERENT F5 expression): 'Understood.' / 'Got it.' / 'I'll do it now.' / 'Yes, Carlos.' Goal: each student uses at least 3 different F5 expressions.",
+          "expressions_bank": [
+            "Understood.",
+            "Got it.",
+            "I'll do it now.",
+            "OK, no problem.",
+            "Yes, Carlos.",
+            "Checklist complete.",
+            "No problem."
+          ],
+          "facilitation_note": "💡 The variety in F5 is the sophistication marker — a student who only says 'Understood' repeatedly sounds robotic. Model the natural alternation. In real workshops, technicians rotate expressions to sound engaged, not mechanical."
+        },
+        {
+          "function": "INTEGRATION ROUND",
+          "time": "09:35–09:45",
+          "drill_type": "3-way rapid exchange — all 5 functions in sequence",
+          "procedure": "Groups of 3 (Carlos/Valentina/Santiago). Instructor calls a situation — group produces a 4-exchange mini-scene using at least 3 different functions. Two rounds. This is the warm-up for WHILE-C simulation.",
+          "sample_situation": "Carlos: there is an oil spill in Bay 3. Valentina needs the ratchet. Bay 3 status report needed.",
+          "facilitation_note": "💡 This integration round is the bridge to Evidence 5. Watch for groups where one person dominates — in the simulation all three roles must be active."
+        }
+      ],
+      "differentiation": {
+        "fast_finishers": "During each drill round — add a spontaneous follow-up exchange after the base stimulus-response (extend the interaction to 3 turns instead of 1).",
+        "more_support": "Function reference card kept visible during all drills — student can glance at structure before responding. Card is removed before Evidence 5."
+      },
+      "tecnica_didactica": "Drills de práctica estímulo-respuesta por función"
+    },
+    "break": {
+      "block": "BREAK",
+      "duration_min": 15,
+      "time": "09:45–10:00",
+      "instructor_note": "Arrange room for group simulations during break — clear center space. Prepare Escala de estimación No 5 forms (1 per student) and simplified peer evaluation sheets (1 per group). Have simulation scenario cards ready.",
+      "transition_back": "Welcome back. Groups of three. One group at a time — front and center. You are ready. Evidence 5 begins."
+    },
+    "while_c": {
+      "block": "WHILE-C",
+      "pm_source": "PM-2.9 — Archetype C: Integrated Simulation (Evidence 5)",
+      "duration_min": 80,
+      "time": "10:00–11:20",
+      "title": "Evidence 5 — The Workshop in Action (Integrated Simulation)",
+      "bloom": "L3 Aplicar + L4 Analizar + L5 Evaluar",
+      "purpose": "Evidencia 5 formal: cada grupo demuestra las 5 funciones comunicativas integradas en una simulación de apertura de taller de 3-4 minutos — evaluación dual (instructor + par observador)",
+      "evidence_conditions": "Word Wall VISIBLE. Function Map on board VISIBLE. Stock Cards from S4 available for reference BETWEEN performances (not held during performance). No written notes during performance.",
+      "teacher_talk": {
+        "launch": "You are now in The Diesel Workshop. Monday morning. Bay opens in 5 minutes. Carlos arrives. You are the team. Show me ALL FIVE functions in 3 to 4 minutes. I am watching. Your peers are watching. Go.",
+        "between_groups": "Thank you. (marks Escala No 5) Next group — front. Observers — Peer Evaluation sheet ready.",
+        "icq": "ICQ — Do you need to use all 5 functions? (yes — at least one of each) Can you read from the Stock Card during performance? (no) Who evaluates? (instructor + one peer observer per group)"
+      },
+      "simulation_structure": {
+        "scenario_base": "Monday morning workshop opening. Bay assigned by instructor (Bay 1, 2, or 3). Carlos (Lead Technician) arrives. Full team present. One problem exists in the bay (instructor announces problem just before performance — different for each group).",
+        "problems_bank": [
+          "There is an oil spill near the bay door.",
+          "The floor jack needs inspection — possible leak.",
+          "PPE is missing from the workbench.",
+          "A tool is not in the toolbox — it needs to be found.",
+          "The Daily Inspection Checklist is not complete."
+        ],
+        "required_functions_per_group": [
+          "F1 (minimum 2 instances)",
+          "F2 (minimum 1 instance)",
+          "F3 (minimum 1 instance)",
+          "F4 (minimum 1 instance)",
+          "F5 (minimum 2 instances)"
+        ],
+        "duration": "3–4 minutes per group",
+        "roles": {
+          "Carlos": "Supervisor — gives instructions (F1), receives reports (F4), prompts team",
+          "Valentina": "Apprentice — requests tools (F2), describes conditions (F3), confirms (F5), reports (F4)",
+          "Santiago": "Technician — responds to requests (F2), confirms (F5), may describe conditions (F3)"
+        }
+      },
+      "evaluation_instruments": {
+        "instructor": {
+          "form": "Escala de estimación No 5 — full (5 criteria, 1–5 scale)",
+          "timing": "Mark in real time during performance. Write 1 brief comment per criterion. Return with individual written feedback in WRAP-UP."
+        },
+        "peer_observer": {
+          "form": "Simplified Peer Evaluation — checkmark only (function visible: yes/no, per function)",
+          "observer_assigned": "One student from the next performing group — designated observer. After performance: observer reports to class: 'I saw F1 — yes / F3 — yes / F5 — yes.' Instructor confirms or adjusts.",
+          "purpose": "Meta-cognitive — observing peers naming functions reinforces function recognition before their own performance."
+        }
+      },
+      "group_logistics": {
+        "group_size": "3 students (Carlos / Valentina / Santiago roles)",
+        "number_of_groups": "Approximately 6–8 groups for class of 18–24 students",
+        "time_per_group_including_transitions": "~10 min (4 min performance + 3 min peer feedback + 3 min transition)",
+        "total_performance_time": "60–80 min for full class — fits within WHILE-C 80 min",
+        "instructor_note": "If groups are ready early — use remaining time for whole-class debrief (last 10 min). If running over — cut debrief to 5 min and move to WHILE-D."
+      },
+      "debrief_structure": {
+        "time": "Last 10–15 min of WHILE-C (approximately 11:05–11:20)",
+        "procedure": [
+          "Instructor: 'Three things I noticed across ALL groups:' (1 strength — name the function done best, 2 growth area — function used least confidently, 3 a memorable moment from a specific group — celebrate it without naming grades)",
+          "Quick vote: 'Which function was hardest? Raise your hand — F1? F2? F3? F4? F5?' Note the distribution — address in WHILE-D quiz preview.",
+          "Instructor: 'You just did a full workshop simulation in English. That is real professional communication. Write that down: I can [function name] in English.'"
+        ]
+      },
+      "plan_b": {
+        "if_groups_not_ready": "Give 5 additional minutes for final preparation — move BREAK end to 10:05. Subtract 5 min from debrief.",
+        "if_a_student_freezes": "Peer (Santiago or Valentina role) improvises an F2 or F5 line to buy the frozen student time. Instructor does NOT intervene during performance unless student stops completely for 15+ seconds.",
+        "if_running_short": "Cut debrief — do only the vote question (2 min) and transition to WHILE-D."
+      },
+      "facilitation_note": "💡 The most powerful moment in S5 is a group where all three students hit F5 naturally without thinking about it — 'Got it' / 'Understood' / 'I'll do it now' — just flowing. When you see it: stop the class briefly and say: 'Did you hear that? That was real workshop English.' Name the behavior, not the students. This is the evidence that the course is working.",
+      "formative_checkpoint": "✓ All groups performed. ✓ All Escala No 5 forms completed. ✓ Peer evaluation forms collected. ✓ Debrief vote done.",
+      "tecnica_didactica": "Simulación integrada de role-play / Observación entre pares (Peer Observation Sheet)"
+    },
+    "while_d": {
+      "block": "WHILE-D",
+      "pm_source": "PM-2.9 — Archetype D: Synthesis Card + Quiz Preview",
+      "duration_min": 75,
+      "time": "11:20–12:35",
+      "title": "Personal Communication Card + Quiz S6 Preview",
+      "bloom": "L2 Comprender + L3 Aplicar",
+      "purpose": "Construir Personal Communication Card individual como síntesis de las 5 funciones; practicar 5 ítems tipo Quiz S6 en pares; orientar autónomo y S6",
+      "teacher_talk": {
+        "instruction": "Now you BUILD your own reference. The Personal Communication Card — it is YOURS. Not mine. Not the book's. YOUR phrases, YOUR examples. You keep it. You use it to study for S6. You use it in S7.",
+        "quiz_preview_intro": "In S6 — the Quiz — 5 of the 25 questions are about Language Functions. They look like this. (projects first sample question) Let's practice together so you know EXACTLY what to expect.",
+        "transition_to_autonomous": "Your homework: 3 hours of autonomous work. Review your Communication Card. Practice the 5 functions with a partner or alone. Record yourself."
+      },
+      "activities": [
+        {
+          "time": "11:20–11:55",
+          "activity": "Personal Communication Card — Individual Construction",
+          "procedure": "Distribute blank Personal Communication Card (5-section template). Students work individually (15 min): (1) write function name in English + Spanish for each of 5 sections, (2) write 2 personal example sentences per function — their own words (not copied from board), (3) write 1 trigger phrase per function ('When do I use this?'). Then pairs compare cards — check: 'Is your partner's F3 example using There is/are + preposition?' (5 min review). Instructor circulates — initials card if both criteria are met per function.",
+          "facilitation_note": "💡 The personal example requirement ('your own words') is non-negotiable. Students who copy from the board are producing the teacher's language, not their own. When you see copying: 'Good start — now say it differently. What would YOU say in the workshop?' This card is their voice.",
+          "formative_checkpoint": "✓ Every student has a completed Communication Card with 5 functions × 2 examples (personal language)."
+        },
+        {
+          "time": "11:55–12:25",
+          "activity": "Quiz S6 Preview — Language Functions 5 Sample Items",
+          "procedure": "Project Quiz Preview Item 1. Students read silently (30 sec) → vote a/b/c (raise hands or written). Instructor reveals answer → explains reasoning (cite the function + structure). Repeat for all 5 items. Then: pairs quiz each other — Partner A reads item aloud, Partner B answers without looking, Partner A confirms. Switch after 5 items.",
+          "quiz_items_summary": [
+            {
+              "n": 1,
+              "key_concept": "Imperative = F1 (Giving instructions)",
+              "correct": "b"
+            },
+            {
+              "n": 2,
+              "key_concept": "Can I have / I need = F2 (Requesting)",
+              "correct": "a"
+            },
+            {
+              "n": 3,
+              "key_concept": "There is/are + prep = F3 (Describing)",
+              "correct": "c"
+            },
+            {
+              "n": 4,
+              "key_concept": "Bay ___ is ready, Carlos = F4 (Reporting)",
+              "correct": "a"
+            },
+            {
+              "n": 5,
+              "key_concept": "Got it / Understood = F5 (Confirming)",
+              "correct": "b"
+            }
+          ],
+          "facilitation_note": "💡 After the pair quiz round — ask: 'Who got all 5 correct? Raise hand. Who got 4? 3? 2? 1?' This is a quick formative snapshot. Students who got fewer than 3 need to review their Communication Card tonight and mark the 2 weakest functions for extra review.",
+          "differentiation": {
+            "fast_finishers": "Write 2 additional original quiz questions (not from the 5 sample items) — one on F3, one on F4. Include correct answer + 2 distractors.",
+            "more_support": "Quiz items presented with function label already visible (e.g., 'This question is about F1 — Giving Instructions'). Student still identifies correct sentence."
+          }
+        },
+        {
+          "time": "12:25–12:35",
+          "activity": "Autonomous Work Distribution + S6 Orientation",
+          "procedure": "Distribute autonomous work card (or write on board). Brief S6 orientation: 'S6 — Prove What You Know. 25 questions. 5 per skill. Reading, Vocabulary, Grammar, Listening, Language Functions. You have your Communication Card. You have your Word Wall photos. You are ready.' Preview format: 'All multiple choice. 90 minutes for the quiz. Then we close the course together.'",
+          "s6_materials_reminder": "Students may bring their Personal Communication Card to S6 for the REVIEW portion only (second half of S6). NOT during the Cuestionario itself."
+        }
+      ],
+      "tecnica_didactica": "Tarjeta de síntesis personal / Vista previa del Cuestionario Consolidado"
+    },
+    "wrap_up": {
+      "block": "WRAP-UP",
+      "duration_min": 25,
+      "time": "12:35–13:00",
+      "title": "Five Functions Mastered — Proof of Workshop English",
+      "teacher_talk": {
+        "closing": "Look at what you did today. You learned five professional communication functions. You sorted them, drilled them, used them in a real simulation, and you built your personal reference. That is a full professional communication toolkit — in English.",
+        "skills_map_update": "Update board Skills Map: Language Functions ✓. One skill left — the Cuestionario. S6 is your proof.",
+        "motivation": "You are not studying English. You are BECOMING a diesel technician who communicates in English. There is a difference. Today you proved it."
+      },
+      "activities": [
+        {
+          "time": "12:35–12:44",
+          "activity": "Exit Ticket — I Can Statements",
+          "procedure": "Students write on sticky note (one per function): 'I can [function in English] in a workshop.' Five statements. Post on board under 'I Can Now' column. Instructor reads 3 examples aloud (anonymous).",
+          "examples": [
+            "I can give instructions in English.",
+            "I can request tools from a colleague in English.",
+            "I can describe bay conditions using There is/are.",
+            "I can report to my supervisor in English.",
+            "I can confirm understanding in 3 different ways."
+          ]
+        },
+        {
+          "time": "12:44–12:53",
+          "activity": "Evidence 5 Oral Group Feedback (whole class)",
+          "procedure": "Instructor gives 3 observations: (1) Strongest function across all groups — name it and quote an example heard. (2) Function to strengthen before S6 — give one clear strategy ('For F3: always start with There IS or There ARE — never just say the word'). (3) Celebration of the simulation as professional milestone.",
+          "facilitation_note": "💡 Do NOT return Escala No 5 today — write individual comments tonight, return at start of S6. This prevents students from spending S6 prep time comparing grades instead of studying."
+        },
+        {
+          "time": "12:53–13:00",
+          "activity": "Autonomous Work + S6 Final Preview",
+          "procedure": "Confirm autonomous work (1.5h). S6 announcement: 'Next session — Prove What You Know. First half: Cuestionario (25 questions, 90 min, closed materials). Second half: closure, Gap Cards, Final Mission preview. Bring your Communication Card — only for the second half.' Dismiss.",
+          "formative_checkpoint": "✓ All Escala No 5 forms completed (take home for individual comments). ✓ I Can sticky notes posted. ✓ All students have Personal Communication Card. ✓ Autonomous work assigned."
+        }
+      ]
+    }
+  },
+  "logistics_box": {
+    "materials_checklist": [
+      "Escala de estimación No 4 (con comentarios escritos) — 1 por aprendiz — para devolución en SET-UP",
+      "15 Phrase Cards (1 set por grupo) — clasificación WHILE-A",
+      "Communication Map proyectado — visible toda la sesión",
+      "Drill stimulus cards — F1 a F5 (1 set para instructor + sets por par)",
+      "Stock Cards A y B de S4 — disponibles como referencia entre performances (no durante)",
+      "Escala de estimación No 5 — completa — 1 por aprendiz (instructor completa durante Evidence 5)",
+      "Peer Evaluation Sheet simplificado — 1 por grupo (observador par)",
+      "Personal Communication Card en blanco — 1 por aprendiz",
+      "Quiz Preview — 5 ítems impresos o proyectados",
+      "Sticky notes — 1 por aprendiz (Exit Ticket I Can)",
+      "Clipboard + timer — para instructor durante simulaciones"
+    ],
+    "room_setup": "Grupos de 3 para drills y simulaciones. Centro despejado para performances. Word Wall + Communication Map visibles desde todos los ángulos. Sillas reorganizables para U durante debrief.",
+    "technology": "Proyector para Communication Map + Quiz Preview items + Bay condition images (F3 drills). Sin audio requerido."
+  },
+  "plan_b": {
+    "if_WHILE_A_takes_longer": "Reduce Function Map introduction to 3 functions instructor-led + 2 functions student-discover (inductive). Save 10 min.",
+    "if_WHILE_B_drills_run_short": "Add Integration Round to each function drill (not just the end) — 2 extra pairs per function, 3-turn extended exchanges.",
+    "if_Evidence_5_not_finished": "No carry-over for E5 — all groups must perform. If a group is not ready: give 5 extra minutes and cut debrief entirely. Evidence 5 is non-negotiable.",
+    "if_WHILE_D_cut_short": "Prioritize Communication Card construction (30 min) over Quiz Preview. Students can review quiz format from sample items distributed as take-home."
+  },
+  "autonomous_work": {
+    "duracion_h": 1.5,
+    "actividades": [
+      "Repasar Personal Communication Card: para cada función, añadir 1 ejemplo adicional propio — total 3 ejemplos por función.",
+      "Practicar las 5 funciones en voz alta: solo o con un compañero — usar situaciones del taller real del centro de formación.",
+      "Preparar 5 preguntas de práctica tipo Quiz S6 para Language Functions — traer a S6 para intercambio con un compañero.",
+      "Opcional: grabar un mini-reporte (60 sec) usando las 5 funciones — practicar sin notas."
+    ]
+  },
+  "instructor_self_check": {
+    "questions": [
+      "¿Devolví las Escalas de estimación No 4 con comentarios escritos al inicio de la sesión?",
+      "¿Todos los grupos realizaron la simulación de Evidence 5 (3-4 minutos) y todas las Escalas No 5 están completadas?",
+      "¿Se usó la evaluación entre pares (Peer Evaluation Sheet) para al menos 1 grupo por round?",
+      "¿Todos los aprendices construyeron su Personal Communication Card con ejemplos propios (no copiados)?",
+      "¿Se realizó el Quiz Preview de 5 ítems y los aprendices conocen el formato del Cuestionario S6?"
+    ]
+  },
+  "skills_progression_update": {
+    "after_s5": {
+      "Reading": "●",
+      "Vocabulary": "●",
+      "Grammar": "●",
+      "Writing": "●",
+      "Listening": "●",
+      "Speaking": "●",
+      "Language_Functions": "●",
+      "Cuestionario": "○ — S6"
+    }
+  },
+  "connections": {
+    "feeds_from": [
+      "PM-2.9 (Language Functions — 4 archetypes)",
+      "PM-3.1 S5 outline",
+      "S3 Grammar (Imperatives = F1, There is/are = F3)",
+      "S4 Stock Cards (reused for simulation reference)",
+      "S4 Speaking Report format (F4 = Workshop Readiness Report)"
+    ],
+    "feeds_into": [
+      "S6 — Cuestionario (Language Functions = 5 pts)",
+      "S7 — Final Mission Preparation (all 5 functions in integrated simulation)",
+      "S8 — The Full Circle (synthesis)"
+    ],
+    "economía_principle": "Stock Cards from S4 reused in S5 simulations. Personal Communication Card created here — carried to S6 (review) and S7 (Final Mission prep). Gap Cards from S1 remain plastified for S8."
+  },
+  "momento_sena": "3.3 — Apropiación",
+  "estrategia_didactica": "Simulaciones + Aprendizaje Basado en Tareas",
+  "justificacion_didactica": "La sesión completa recrea la apertura operativa de un bay diesel. Las 5 funciones comunicativas se practican en drills y se integran en una simulación de 3-4 minutos que replica con fidelidad el contexto productivo real."
+}

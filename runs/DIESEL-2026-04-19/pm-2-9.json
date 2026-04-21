@@ -1,0 +1,207 @@
+{
+  "_meta": {
+    "schema_version": "activity-card-v2.0",
+    "schema_ref": "master-prompts/Activity Card — Schema.md (2026-04-13)",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-opus-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist"
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.9",
+    "pm_name": "Language Functions — Communicative Competence",
+    "session": 5,
+    "phase_sena": "Apropiación",
+    "rap_id": "RAP-DIESEL-001-2026",
+
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Mapear 5 funciones comunicativas del taller en diagrama de interacciones y clasificar 15 frases reales en su función",
+        "didactic_strategy": "CLIL",
+        "didactic_technique": "Mapas conceptuales"
+      },
+      {
+        "number": 2,
+        "type": "procedimental",
+        "statement": "Practicar las 5 funciones comunicativas en drills de 8 minutos con situaciones reales del taller diesel en pares",
+        "didactic_strategy": "Aprendizaje colaborativo",
+        "didactic_technique": "Juegos educativos"
+      },
+      {
+        "number": 3,
+        "type": "procedimental",
+        "statement": "Demostrar las 5 funciones en simulación de apertura de taller con supervisor respondiendo en vivo — Evidencia 5",
+        "didactic_strategy": "Simulación",
+        "didactic_technique": "Simulación"
+      }
+    ],
+
+    "hours": {
+      "direct": 6.0,
+      "autonomous": 1.5
+    },
+
+    "evidence": {
+      "generates_evidence": true,
+      "type": "Desempeño",
+      "description": "El aprendiz demuestra las 5 funciones comunicativas del taller integradas en simulación de apertura de bay con supervisor en vivo — Escala de estimación No 5",
+      "evaluation_technique": "Observación directa",
+      "instrument_number": 5,
+      "instrument_type": "Escala de estimación"
+    },
+
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Communication Map proyectado (5 funciones × ejemplos del taller diesel) — A3 impreso + proyectado en pantalla",
+        "15 tarjetas de frases para clasificación por función — 1 set por par",
+        "Stock Cards de bay (reutilizadas de S4 — PM-2.8) — para la simulación de apertura",
+        "Escala de estimación No 5 impresa — 1 para instructor + 1 para par observador (coevaluación)",
+        "Personal Communication Card en blanco impresa — 1 por aprendiz (entregable de síntesis)"
+      ],
+      "instructors": "Instructor de inglés técnico"
+    },
+
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Language Functions",
+    "quiz_points": 5,
+    "quiz_item_count": 5
+  },
+
+  "pm0_constraints_applied": {
+    "session": "S5",
+    "grammar_active": "Gr7 CONSOLIDA (can/can't: habilidad) + Gr3 INTRO (Present Simple: rutinas y procedimientos). Funciones comunicativas activan Gr3: 'I check the bay every morning.' F1 (instrucciones) = imperativo Gr5 CONSOLIDA. F3 (describe condiciones) = There is/are Gr2 CONSOLIDA.",
+    "l1_max": "≤ 12% — Máxima autonomía lingüística esperada en la Guía. Consignas, modelos y feedback completamente en L2. L1 solo si bloqueo crítico en comprensión de una función comunicativa específica (no en producción).",
+    "feedback_mode": "FLUENCY en drills (Actividad 2) y simulación (Actividad 3) — NO interrumpir durante producción. Coevaluación entre pares con Escala de estimación No 5. Post-task delayed feedback colectivo: instructor lista en pizarra las 3 funciones más logradas y los 2 gaps más frecuentes del grupo.",
+    "injection_schedule": "PM-2.9 es PM transversal — el chunk bank de F1–F5 se inyecta progresivamente: S2 PM-2.5 (vocabulario contextualizado = F3), S3 PM-2.4 (imperativos en checklist = F1), S4 PM-2.6 ('It's clear/ready' = F4), S4 PM-2.8 (reporte oral = F4+F5). En S5 los aprendices YA CONOCEN las frases — S5 = integración evaluada.",
+    "personal_communication_card": "La Personal Communication Card NO es un formato fijo: es la síntesis personal del aprendiz. El aprendiz selecciona 2 frases propias por función que usaría en su taller real. Puede ser en tarjeta, cuaderno o celular. Lo que importa es la apropiación personal."
+  },
+
+  "language_functions": [
+    {
+      "number": 1,
+      "function": "Dar instrucciones",
+      "structure": "Imperativo: 'Check the floor jack.' / 'Don't leave tools on the floor.'",
+      "context": "Supervisor a técnico — instrucciones de seguridad y procedimientos de bay",
+      "chunk_examples": [
+        "Check the ___.",
+        "Put on your ___.",
+        "Don't use ___ without PPE.",
+        "Clean the ___ before starting."
+      ]
+    },
+    {
+      "number": 2,
+      "function": "Solicitar herramientas o ayuda",
+      "structure": "'Can I have the torque wrench?' / 'I need the socket set, please.'",
+      "context": "Técnico a colega — solicitud de herramientas o asistencia en el bay",
+      "chunk_examples": [
+        "Can I have the ___?",
+        "I need the ___, please.",
+        "Where is the ___?",
+        "Can you pass me the ___?"
+      ]
+    },
+    {
+      "number": 3,
+      "function": "Describir condiciones",
+      "structure": "There is/are + preposiciones: 'There is a spill near bay 1.' / 'There are three tools on the floor.'",
+      "context": "Técnico describiendo estado del bay al supervisor o colega",
+      "chunk_examples": [
+        "There is a ___ near ___.",
+        "There are ___ on the ___.",
+        "There is no ___ in ___.",
+        "The ___ is ___ [preposición]."
+      ]
+    },
+    {
+      "number": 4,
+      "function": "Reportar al supervisor",
+      "structure": "Present Simple + There is/are: 'Bay 2 is ready, Carlos.' / 'The floor jack works fine.'",
+      "context": "Técnico a supervisor — workshop readiness report o reporte de incidente",
+      "chunk_examples": [
+        "Bay ___ is ready.",
+        "The ___ is OK.",
+        "There is a problem with the ___.",
+        "___ is not working — I need to report it."
+      ]
+    },
+    {
+      "number": 5,
+      "function": "Confirmar comprensión",
+      "structure": "'Understood.' / 'Got it.' / 'I'll do it now.' / 'Sorry, can you repeat that?'",
+      "context": "Todas las interacciones — fórmulas de gestión de turno y confirmación de mensaje",
+      "chunk_examples": [
+        "Understood.",
+        "Got it.",
+        "I'll do it now.",
+        "Sorry, can you repeat that?"
+      ]
+    }
+  ],
+
+  "classification_cards": {
+    "title": "15 tarjetas para clasificar por función comunicativa",
+    "note": "Cada tarjeta tiene una frase. El par las clasifica en 5 funciones. Luego se verifica grupalmente.",
+    "cards": [
+      {"card": 1, "phrase": "Check the fire extinguisher before starting.", "function": "F1"},
+      {"card": 2, "phrase": "Don't leave the toolbox open.", "function": "F1"},
+      {"card": 3, "phrase": "Wear your goggles — always.", "function": "F1"},
+      {"card": 4, "phrase": "Can I have the torque wrench, please?", "function": "F2"},
+      {"card": 5, "phrase": "I need the socket set for Bay 2.", "function": "F2"},
+      {"card": 6, "phrase": "Where is the floor jack?", "function": "F2"},
+      {"card": 7, "phrase": "There is a spill near the bay door.", "function": "F3"},
+      {"card": 8, "phrase": "There are no goggles in Bay 3.", "function": "F3"},
+      {"card": 9, "phrase": "The fire extinguisher is next to the workbench.", "function": "F3"},
+      {"card": 10, "phrase": "Bay 2 is ready, Carlos.", "function": "F4"},
+      {"card": 11, "phrase": "The floor jack works fine — no leaks.", "function": "F4"},
+      {"card": 12, "phrase": "There is a problem with the lift in Bay 1.", "function": "F4"},
+      {"card": 13, "phrase": "Understood. I'll do it now.", "function": "F5"},
+      {"card": 14, "phrase": "Got it. The bay is ready.", "function": "F5"},
+      {"card": 15, "phrase": "Sorry, can you repeat that?", "function": "F5"}
+    ]
+  },
+
+  "estimation_scale": {
+    "instrument": "Escala de estimación No 5",
+    "scale": "1–5 por criterio (1=No logrado, 3=En proceso, 5=Logrado)",
+    "total_points": 5,
+    "evaluation_mode": "Instructor evalúa + par observador evalúa simultáneamente con la misma escala durante la simulación de Actividad 3",
+    "criteria": [
+      {"number": 1, "criterion": "Da instrucciones claras al técnico usando imperativos del Toolbelt (F1)", "weight": 1},
+      {"number": 2, "criterion": "Solicita herramienta o ayuda con fórmula correcta en inglés (F2)", "weight": 1},
+      {"number": 3, "criterion": "Describe condición del bay con There is/are + preposición de lugar (F3)", "weight": 1},
+      {"number": 4, "criterion": "Reporta al supervisor con información completa y vocabulario técnico (F4)", "weight": 1},
+      {"number": 5, "criterion": "Confirma comprensión con expresión apropiada en inglés (F5)", "weight": 1}
+    ]
+  },
+
+  "archetype_used": [
+    "A — Function Map (Actividad 1: Communication Map + clasificación de 15 tarjetas de frases por función)",
+    "B — Function Drills (Actividad 2: 5 drills de 8 min — uno por función — con situaciones reales del taller)",
+    "C — Integrated Simulation + Synthesis (Actividad 3: simulación evaluada de apertura de taller + Personal Communication Card)"
+  ],
+
+  "trabajo_autonomo": {
+    "duracion_h": 1.5,
+    "actividades": [
+      "Completar la Personal Communication Card con 2 frases propias por función comunicativa (F1–F5), adaptadas al taller real del centro de formación — fotografiar y subir al grupo como evidencia autónoma",
+      "Practicar las 5 funciones en audio grabado en celular: simular una apertura de taller de 2 minutos usando las 5 funciones integradas — escuchar y auto-evaluar con los 5 criterios de la Escala de estimación No 5",
+      "Preview S6: leer los 25 ítems de muestra del Cuestionario Consolidado en Moodle e identificar en cuáles funciones comunicativas y skills se siente menos seguro para priorizar repaso"
+    ]
+  },
+
+  "gfpi_tag": "3.3-APROPIACION-LANGUAGE-FUNCTIONS",
+  "instructor_notes": {
+    "sequence_in_s5": "PM-2.9 ocupa TODA la S5 (6h directo). Es la única PM de S5. El mayor tiempo disponible permite drills más completos por función (Actividad 2) y una simulación más estructurada (Actividad 3).",
+    "drill_logistics": "Actividad 2: 5 drills de 8 minutos, uno por función. Rotación de pares entre drills. El instructor cronometra y señala transición. Materiales por drill: F1 = tarjetas de instrucción de seguridad, F2 = flashcard de herramienta (pedir/dar), F3 = imagen de bay con hazards (describir), F4 = Bay Status Card de S4 (reportar), F5 = cadena de confirmación (escucha + responde).",
+    "simulation_logistics": "Actividad 3: cada aprendiz tiene 3 minutos para la simulación completa (apertura de bay + preguntas del supervisor). Par observador evalúa simultáneamente con Escala de estimación No 5. Simulación al frente del aula o en área simulada de bay.",
+    "personal_communication_card_guidance": "La Personal Communication Card es la síntesis personal — el aprendiz elige SUS frases. No es un formato fijo. Al finalizar la clase, pedir que compartan 1 frase favorita por función al grupo (share-out de 5 min). Refuerza apropiación.",
+    "quiz_preview": "Al final de Actividad 3, después de la síntesis, el instructor proyecta 5 ítems tipo Quiz S6 (Language Functions) en pantalla — los aprendices responden en pares en 5 minutos. No es evaluación formal: es calibración antes del Cuestionario Consolidado de S6."
+  }
+}

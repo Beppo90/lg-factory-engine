@@ -1,0 +1,50 @@
+{
+  "pm_id": "PM-2.6",
+  "run_id": "DIESEL-2026-04-18",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 4,
+  "fase_sena": "Apropiación — Listening Auditory Anchor",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "archetype_used": ["A — Scene Setup/Pre-listening", "B — First Listen + Global", "C — Comprehension Check", "D — Role-Play Reading"],
+  "source": "src-B — Motor Age Safety 'Auto Shop Safety' (adaptado A1.1 como diálogo Bay 2 Safety Briefing)",
+  "adapted_dialogue_title": "Bay 2 Safety Briefing",
+  "characters": ["Carlos Mendoza — Lead Technician / Supervisor", "Valentina Cruz — New Apprentice"],
+  "activity_card": {
+    "pm_id": "PM-2.6",
+    "session": 4,
+    "phase_sena": "Apropiación",
+    "activities": [
+      {"number": 1, "archetype": "A — Scene Setup", "type": "cognitiva", "duration_min": 25,
+       "statement": "Activar esquemas previos del contexto de taller y pre-entrenar vocabulario del diálogo antes de escuchar", "bloom": "L1 Recordar + L2 Comprender"},
+      {"number": 2, "archetype": "B — First Listen + Global", "type": "cognitiva", "duration_min": 35,
+       "statement": "Escuchar el diálogo dos veces (sin y con texto) para comprensión global y reconocimiento de estructuras", "bloom": "L2 Comprender"},
+      {"number": 3, "archetype": "C — Comprehension Check", "type": "cognitiva", "duration_min": 30,
+       "statement": "Responder 5 preguntas de comprensión auditiva sin el texto — Evidencia 3 formal del RAP", "bloom": "L2 Comprender"},
+      {"number": 4, "archetype": "D — Role-Play Reading", "type": "procedimental", "duration_min": 30,
+       "statement": "Dramatizar el diálogo en pares con y sin texto para preparar la producción oral de PM-2.8", "bloom": "L3 Aplicar"}
+    ],
+    "hours": {"direct": 3, "autonomous": 0.75},
+    "evidence": {
+      "generates_evidence": true,
+      "numero_evidencia": 3,
+      "tipo": "Desempeño",
+      "description": "Listening Comprehension — 5 preguntas sobre diálogo Bay 2 Safety Briefing sin texto",
+      "evaluation_technique": "Preguntas",
+      "instrument_number": 3,
+      "instrument_type": "Lista de chequeo",
+      "contributes_to_cuestionario": true,
+      "cuestionario_skill": "Listening",
+      "cuestionario_points": 5
+    },
+    "comprehension_questions": [
+      {"n": 1, "q": "What does Carlos ask Valentina to put on first?", "a": "b) Gloves and goggles"},
+      {"n": 2, "q": "Where is the oil spill?", "a": "c) Near the bay door"},
+      {"n": 3, "q": "Where should the fire extinguisher always be?", "a": "c) Next to the bay door"},
+      {"n": 4, "q": "How does Carlos say to check the floor jack?", "a": "b) Look for leaks and test the lift"},
+      {"n": 5, "q": "What does Valentina say at the end?", "a": "c) Checklist complete. Bay 2 is ready."}
+    ],
+    "environment": {"type": "Aula", "materials": ["Diálogo impreso (1 por par)", "Cuestionario No 3 impreso", "Imagen Bay 2 proyectada", "Word Wall de S2 visible"]},
+    "gfpi_tag": "3.3-APROPIACION-LISTENING"
+  }
+}

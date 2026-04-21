@@ -1,0 +1,58 @@
+{
+  "pm_id": "PM-2.9",
+  "run_id": "DIESEL-2026-04-15",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 5,
+  "fase_sena": "Apropiación — Language Functions / Communicative Competence",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "archetype_used": ["A — Function Map", "B — Function Drills", "C — Integrated Simulation", "D — Synthesis Card + Quiz Preview"],
+  "language_functions": [
+    {"number": 1, "function": "Dar instrucciones", "structure": "Imperative: 'Check the floor jack.'", "context": "Supervisor to technician"},
+    {"number": 2, "function": "Solicitar herramientas/ayuda", "structure": "'Can I have the torque wrench?' / 'I need the socket set.'", "context": "Technician to colleague"},
+    {"number": 3, "function": "Describir condiciones", "structure": "There is/are + prepositions: 'There is a spill near bay 1.'", "context": "Technician describing bay status"},
+    {"number": 4, "function": "Reportar al supervisor", "structure": "Present Simple + There is/are: 'Bay 2 is ready, Carlos.'", "context": "Technician to supervisor"},
+    {"number": 5, "function": "Confirmar comprensión", "structure": "'Understood.' / 'Got it.' / 'I'll do it now.'", "context": "All interactions"}
+  ],
+  "activity_card": {
+    "pm_id": "PM-2.9",
+    "session": 5,
+    "phase_sena": "Apropiación",
+    "activities": [
+      {"number": 1, "archetype": "A — Function Map", "type": "cognitiva", "duration_min": 35,
+       "statement": "Mapear las 5 funciones comunicativas del taller en un diagrama de interacciones y clasificar 15 frases reales en su función correspondiente", "bloom": "L2 Comprender + L3 Aplicar"},
+      {"number": 2, "archetype": "B — Function Drills", "type": "procedimental", "duration_min": 40,
+       "statement": "Practicar cada función comunicativa en drills de 8 minutos con situaciones reales del taller diesel", "bloom": "L3 Aplicar"},
+      {"number": 3, "archetype": "C — Integrated Simulation", "type": "procedimental", "duration_min": 50,
+       "statement": "Demostrar las 5 funciones integradas en simulación de apertura de taller con supervisor en vivo — Evidencia 5", "bloom": "L3 Aplicar + L4 Analizar + L5 Evaluar"},
+      {"number": 4, "archetype": "D — Synthesis Card + Quiz Preview", "type": "cognitiva + procedimental", "duration_min": 55,
+       "statement": "Construir Personal Communication Card personal y practicar ítems tipo Quiz S6 en pares para Language Functions", "bloom": "L2 Comprender + L3 Aplicar"}
+    ],
+    "hours": {"direct": 6, "autonomous": 1.5},
+    "evidence": {
+      "generates_evidence": true,
+      "numero_evidencia": 5,
+      "tipo": "Desempeño",
+      "description": "Language Functions — Integrated simulation: 5 funciones comunicativas en contexto de apertura de taller",
+      "evaluation_technique": "Observación directa + evaluación entre pares",
+      "instrument_number": 5,
+      "instrument_type": "Escala de estimación",
+      "contributes_to_cuestionario": true,
+      "cuestionario_skill": "Language Functions",
+      "cuestionario_points": 5
+    },
+    "estimation_scale_criteria": [
+      "Da instrucciones claras usando imperativos (F1) — 1 a 5",
+      "Solicita herramientas/ayuda con fórmulas correctas (F2) — 1 a 5",
+      "Describe condiciones del bay con There is/are (F3) — 1 a 5",
+      "Reporta al supervisor con información completa (F4) — 1 a 5",
+      "Confirma comprensión con expresiones apropiadas (F5) — 1 a 5"
+    ],
+    "total_points": 5,
+    "environment": {
+      "type": "Aula",
+      "materials": ["Communication Map proyectado", "15 tarjetas de frases para clasificación", "Stock Cards de bay (reutilizadas de S4)", "Escala de estimación No 5 (instructor + par observador)", "Personal Communication Card en blanco (1 por aprendiz)"]
+    },
+    "gfpi_tag": "3.3-APROPIACION-LANGUAGE-FUNCTIONS"
+  }
+}

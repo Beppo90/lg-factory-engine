@@ -1,0 +1,989 @@
+{
+  "pm_id": "PM-3.2",
+  "session": 3,
+  "session_name": "Write It Right",
+  "run_id": "DIESEL-2026-04-18",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "programa": "Mantenimiento de los Motores Diesel",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.10",
+    "PM-2.4"
+  ],
+  "habilidades_foco": [
+    "G (Grammar)",
+    "W (Writing)"
+  ],
+  "habilidades_soporte": [
+    "R (Reading — S2 text recycled)",
+    "V (Vocabulary — 20-term Toolbelt)"
+  ],
+  "cefr": "A1.1",
+  "model": "claude-sonnet-4-6",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "evidence_generated": {
+    "numero_evidencia": 2,
+    "tipo": "Producto",
+    "description": "Daily Inspection Checklist + Work Order header — documentos técnicos completos en inglés",
+    "instrument": "Lista de verificación No 2",
+    "instrument_type": "Lista de verificación",
+    "total_points": 5,
+    "criteria_count": 10
+  },
+  "session_header": {
+    "titulo": "SESSION 3: Write It Right",
+    "subtitulo": "Mantenimiento de los Motores Diesel — Guía 1.1: The Workshop Specialist — Build-Out",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.10 — Grammar Discovery (Imperatives + There is/are + Prepositions of place)",
+      "PM-2.4 — Writing Task-Based Production (Daily Inspection Checklist + Work Order)"
+    ],
+    "habilidades_foco": [
+      "G (Grammar) ●",
+      "W (Writing) ●"
+    ],
+    "habilidades_soporte": [
+      "R (Reading) ○",
+      "V (Vocabulary) ○"
+    ],
+    "nota_instructor": "Este documento es SOLO para el instructor. Contiene plan minuto a minuto, Teacher Talk, answer keys completos y notas de facilitación. EVIDENCIA 2 se genera en Bloque D (Writing Task Individual). Asegure que la Lista de Verificación No 2 esté impresa y lista para Peer Review."
+  },
+  "materials_checklist": [
+    {
+      "item": "Texto S2 'Tools Every Diesel Technician Needs' proyectado con resaltados de color (Imperatives=rojo, There is/are=azul, Prepositions=verde)",
+      "cantidad": "1 proyección",
+      "verificado": false
+    },
+    {
+      "item": "Error Log impreso (10 oraciones con errores en las 3 estructuras target)",
+      "cantidad": "8 copias (1 por pareja)",
+      "verificado": false
+    },
+    {
+      "item": "Safety Report formato impreso (template en blanco)",
+      "cantidad": "8 copias",
+      "verificado": false
+    },
+    {
+      "item": "3 estaciones prearmadas físicamente o en pantalla (Imperatives / There is-are / Prepositions)",
+      "cantidad": "3 estaciones",
+      "verificado": false
+    },
+    {
+      "item": "Daily Inspection Checklist modelo (proyectado + impreso)",
+      "cantidad": "1 proyección + 3 impresos",
+      "verificado": false
+    },
+    {
+      "item": "Work Order Header modelo (proyectado + impreso)",
+      "cantidad": "1 proyección + 3 impresos",
+      "verificado": false
+    },
+    {
+      "item": "Daily Inspection Checklist EN BLANCO (para Evidencia 2)",
+      "cantidad": "8 copias",
+      "verificado": false
+    },
+    {
+      "item": "Work Order Header EN BLANCO (para Evidencia 2)",
+      "cantidad": "8 copias",
+      "verificado": false
+    },
+    {
+      "item": "Lista de Verificación No 2 impresa (10 criterios — para peer review)",
+      "cantidad": "8 copias",
+      "verificado": false
+    },
+    {
+      "item": "Workshop layout de S1 visible en pared o proyectado",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Word Wall de S2 visible en pared (20 términos Toolbelt)",
+      "cantidad": "Verificar que sigue en pared",
+      "verificado": false
+    },
+    {
+      "item": "Marcadores de 3 colores (rojo, azul, verde) para tablero",
+      "cantidad": "3 juegos",
+      "verificado": false
+    },
+    {
+      "item": "Canva slides 17-24 abiertas y probadas",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Timer visible en pantalla",
+      "cantidad": "1",
+      "verificado": false
+    }
+  ],
+  "board_plan": "┌──────────────────────────────────────────────────────────────────────┐\n│ SESSION 3: WRITE IT RIGHT                                              │\n│                                                                          │\n│ Today's Objective:                                                      │\n│ ✓ Learn 3 grammar rules for the workshop                               │\n│ ✓ Write a Daily Inspection Checklist + Work Order (EVIDENCE 2)         │\n│                                                                          │\n│ [GRAMMAR ZONE — permanente, 3 colores]                                 │\n│ 🔴 IMPERATIVES: Check the floor jack.                                  │\n│               Put on your gloves.                                       │\n│               [Verb in base form — no subject]                         │\n│                                                                          │\n│ 🔵 THERE IS / THERE ARE:                                               │\n│    There IS a spill near Bay 2.  (singular)                            │\n│    There ARE tools on the floor. (plural)                              │\n│                                                                          │\n│ 🟢 PREPOSITIONS OF PLACE:                                              │\n│    in / on / next to / behind / near                                    │\n│    The wrench is ON the workbench.                                     │\n│    The jack is NEXT TO the bay door.                                   │\n│                                                                          │\n│ [LIVE ZONE — se llena durante Error Log y Writing]                     │\n│ (Errores corregidos, ejemplos de aprendices)                           │\n└──────────────────────────────────────────────────────────────────────────┘",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:25",
+      "duracion_min": 25,
+      "bloque": "SET-UP",
+      "actividad": "Warm-up: S2 Homework Grammar Hunt + Objective + ICQs",
+      "agrupacion": "Pairs → Plenary",
+      "notas": "Reactivate S2 vocab; introduce 3 grammar targets"
+    },
+    {
+      "tiempo": "0:25-1:20",
+      "duracion_min": 55,
+      "bloque": "WHILE-A",
+      "actividad": "Grammar Induction from S2 Text (PM-2.10 Act 1)",
+      "agrupacion": "Whole class → Pairs",
+      "notas": "Color-coded patterns; ✓ Checkpoint: identify structures"
+    },
+    {
+      "tiempo": "1:20-2:10",
+      "duracion_min": 50,
+      "bloque": "WHILE-B",
+      "actividad": "Error Log — Identify & Correct (PM-2.10 Act 2)",
+      "agrupacion": "Pairs → Plenary debrief",
+      "notas": "10 sentences; answer key in-line"
+    },
+    {
+      "tiempo": "2:10-2:25",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "BREAK — Stretch & Recharge",
+      "agrupacion": "N/A",
+      "notas": "After grammar cognitive load"
+    },
+    {
+      "tiempo": "2:25-3:25",
+      "duracion_min": 60,
+      "bloque": "WHILE-C",
+      "actividad": "Grammar Stations + Safety Report (PM-2.10 Acts 3-4)",
+      "agrupacion": "Small groups rotating → Individual",
+      "notas": "3 stations x 15 min + 15 min Safety Report"
+    },
+    {
+      "tiempo": "3:25-4:25",
+      "duracion_min": 60,
+      "bloque": "WHILE-D",
+      "actividad": "Genre Analysis + Modeled Writing (PM-2.4 Acts 1-2)",
+      "agrupacion": "Whole class → Co-construction",
+      "notas": "✓ Checkpoint: document structure recognition"
+    },
+    {
+      "tiempo": "4:25-5:35",
+      "duracion_min": 70,
+      "bloque": "WHILE-E",
+      "actividad": "EVIDENCIA 2: Independent Writing + Peer Review (PM-2.4 Acts 3-4)",
+      "agrupacion": "Individual → Pairs",
+      "notas": "⚠️ FORMAL EVIDENCE — Individual product"
+    },
+    {
+      "tiempo": "5:35-6:00",
+      "duracion_min": 25,
+      "bloque": "WRAP-UP",
+      "actividad": "Exit Ticket + Closing + Autonomous Work 0.75h",
+      "agrupacion": "Individual → Plenary",
+      "notas": "3 grammar sentences; S4 preview"
+    }
+  ],
+  "set_up": {
+    "duracion_min": 25,
+    "warm_up": {
+      "nombre": "S2 Homework Grammar Hunt",
+      "pasos": [
+        "1. Instructor dice: *'Good morning, team. Last session you read the article. Did anyone find new words in the original Popular Mechanics? (Pause for 2-3 shows of hands.) Great.'* (2 min)",
+        "2. Quick pair activity: 'Look at your S2 homework. With your partner — find ONE sentence from the article that tells a tool what to DO. Example: (point to board) Check the floor jack. One sentence each. 90 seconds. Go.' (2 min)",
+        "3. 3 volunteers share. Instructor writes examples in red on LIVE ZONE: 'Check the oil.' 'Put on your PPE.' 'Organize the toolbox.' (2 min)",
+        "4. Instructor points to sentences: 'What do you notice? The sentences start with a VERB. There is no subject. This is called an IMPERATIVE. That is Grammar Rule 1 — and we'll learn it today.' (1 min)",
+        "5. Quick connect to Word Wall: '20 words, still there. We'll use them all when we WRITE today.' (30 seg)"
+      ],
+      "duration_min": 10
+    },
+    "teacher_talk_opening": "*Good morning, everyone! Session 3. Yesterday we READ and learned 20 words. Today we do two things: first, we learn the GRAMMAR — three rules that make sentences work in English in a workshop. Then, we WRITE — a real document, Bay 2 Daily Inspection Checklist and Work Order. This writing is your second evidence — Evidencia 2. So today, we learn the rules AND we use them. Ready?*",
+    "objective": "Aprender 3 estructuras gramaticales (Imperatives, There is/are, Prepositions of place). Producir un Daily Inspection Checklist + Work Order completo en inglés (Evidencia 2, 5 pts).",
+    "objective_en_tablero": "Today you will: (1) learn 3 grammar rules, (2) practice them in workshop sentences, (3) WRITE a real Checklist + Work Order — EVIDENCE 2.",
+    "icq": [
+      "*How many grammar rules do we learn today?* → Esperan: 3 / Three",
+      "*What document will we WRITE today?* → Esperan: Checklist + Work Order / Bay 2 document",
+      "*Is the Writing a test or a product?* → Esperan: A product / My document"
+    ],
+    "facilitation_notes": [
+      "💡 El warm-up grammar hunt funciona mejor si los aprendices tienen el artículo S2 en mano. Si no lo trajeron: proyectar texto en pantalla brevemente (2 min) y señalar imperativos en rojo.",
+      "💡 Anticipa resistencia: 'Grammar = difícil.' Normaliza: 'In English, grammar in the workshop is SIMPLE. Three rules. That's it. You already used them yesterday — you just didn't know the name.'"
+    ],
+    "checkpoint": "✓ '¿Quién puede decirme el nombre de la primera regla de gramática?' → Esperan: Imperative. Si <50% responde: write IMPERATIVE in large red letters on board and say: 'This is Rule 1. Base verb, no subject. We'll learn it together.' Proceed."
+  },
+  "while": {
+    "duracion_min": 295,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "Grammar Induction from S2 Text — Discover the Rules",
+        "duracion_min": 55,
+        "worksheet_ref": "PM-2.10, Activity 1",
+        "agrupacion": "Whole class (induction) → Pairs (production)",
+        "objetivo": "Inducir las 3 estructuras gramaticales target desde el texto S2 usando ejemplos resaltados por color. Producir oraciones propias para cada estructura.",
+        "instrucciones_paso_a_paso": [
+          "PARTE 1 — INDUCCIÓN VISUAL (30 min):",
+          "1. Proyectar texto S2 con resaltados de 3 colores ya aplicados:",
+          "   ROJO = Imperatives: 'Check the floor jack.' / 'Put on your PPE.' / 'Organize the toolbox.'",
+          "   AZUL = There is/are: 'There is a torque wrench in every bay.' / 'There are 5 tools in a basic kit.'",
+          "   VERDE = Prepositions: 'The ratchet is in the toolbox.' / 'The jack is next to the bay.'",
+          "2. Instructor lee ejemplos en rojo: '¿Qué ven? Starts with a verb. No subject. This is an IMPERATIVE. Rule 1.' Escribe en tablero zona roja.",
+          "3. Clase identifica 2 más ejemplos rojos en el texto. Comparte en plenary (2 min).",
+          "4. Repetir para AZUL (There is/are): '¿Singular or plural? There IS — one thing. There ARE — more than one.' Escribe en tablero zona azul.",
+          "5. Clase identifica 2 más ejemplos azules. Quick test: 'There ___ a spill. (is or are?)' → is. 'There ___ three wrenches. (is or are?)' → are.",
+          "6. Repetir para VERDE (Prepositions): 'in, on, next to, behind, near. Where is the tool?' Escribe en tablero zona verde.",
+          "7. Clase identifica 2 más ejemplos verdes en texto.",
+          "",
+          "PARTE 2 — PRODUCCIÓN GUIADA EN PARES (25 min):",
+          "8. En parejas: completar tabla en worksheet PM-2.10: '3 oraciones en cada color. Use the workshop — the tools and areas you know.' (15 min)",
+          "9. Compartir 1 oración por par por color. Instructor escribe en LIVE ZONE. Corrección amable si necesario.",
+          "10. Board consolidation: tablero ahora tiene 3+ ejemplos en cada color. 'This is your reference ALL session.'"
+        ],
+        "teacher_talk_instruction": "*Look at the text from yesterday. Do you see the colors? (Point.) RED sentences — these are IMPERATIVES. I'll read them: 'Check the floor jack.' 'Put on your PPE.' What do you notice? (Wait.) Yes — they start with a VERB. No subject — no 'you,' no 'I.' Just the verb. That's an IMPERATIVE. Write this down: RED = IMPERATIVE = verb + rest. (Pause.) Now look at BLUE...*",
+        "teacher_talk_pairs": "*Now with your partner: write 3 sentences for each color. Use tools from the Word Wall. ONE red (imperative), ONE blue (there is/are), ONE green (preposition). You have 15 minutes. If you're not sure — look at the board. I'm coming around.*",
+        "icq": [
+          "*For an IMPERATIVE — does it have a subject?* → Esperan: No",
+          "*'There IS' — how many things?* → Esperan: One / Singular",
+          "*'There ARE' — how many things?* → Esperan: More than one / Plural",
+          "*Name one preposition of place.* → Esperan: in / on / next to / behind / near"
+        ],
+        "answer_key_inline": {
+          "imperatives_from_text": [
+            "Check the floor jack.",
+            "Put on your PPE.",
+            "Organize the toolbox.",
+            "Wear your safety goggles.",
+            "Clean the workbench."
+          ],
+          "there_is_are_from_text": [
+            "There is a torque wrench in every diesel bay.",
+            "There is a fire extinguisher next to the door.",
+            "There are five tools in a basic technician kit.",
+            "There are two service bays in The Diesel Workshop."
+          ],
+          "prepositions_from_text": [
+            "The ratchet is in the toolbox.",
+            "The floor jack is next to Bay 2.",
+            "The fire extinguisher is behind the bay door.",
+            "The safety goggles are on the workbench.",
+            "There is a spill near Bay 1."
+          ],
+          "student_production_sample_red": [
+            "Check the torque wrench.",
+            "Put the socket in the toolbox.",
+            "Wear your gloves.",
+            "Clean the service bay."
+          ],
+          "student_production_sample_blue": [
+            "There is a wrench on the workbench.",
+            "There are three bays in the workshop.",
+            "There is a hazard near Bay 1.",
+            "There are two pairs of gloves."
+          ],
+          "student_production_sample_green": [
+            "The wrench is in the toolbox.",
+            "The floor jack is next to the bay door.",
+            "The goggles are on the shelf.",
+            "The fire extinguisher is behind the workbench."
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Inducción > explicación directa: NO explique la regla antes de que los estudiantes la descubran. El color ya hace el trabajo. 'What do you notice?' es la pregunta clave.",
+          "💡 El tablero con 3 colores permanece TODA la sesión. Cuando alguien cometa un error en Writing: simplemente señale: 'Look at the board. Which color do you need here?' Sin reexplicar.",
+          "💡 'There is/are' es el error más frecuente (confunden singular/plural). Durante la producción en pares, escuche especialmente por 'There are a spill' → corrija señalando: '¿Spill — one or many?' (Pause.) 'One → There IS.'"
+        ],
+        "checkpoint": "✓ Quick Board Test: Instructor borra las 3 etiquetas de color del tablero. Señala oración: 'Which color is this sentence? Why?' Hace 3 rondas. ≥80% correcto = proceed. <80% = review 2 min: 'Red = action verb first. Blue = There is/are. Green = location word.'",
+        "tecnica_didactica": "Inducción gramatical por descubrimiento de colores / Error Log diagnóstico"
+      },
+      {
+        "letra": "B",
+        "nombre": "Error Log — Diagnose & Correct",
+        "duracion_min": 50,
+        "worksheet_ref": "PM-2.10, Activity 2",
+        "agrupacion": "Pairs (error identification) → Plenary debrief",
+        "objetivo": "Identificar y corregir 10 errores frecuentes en las 3 estructuras target en contexto de taller diesel.",
+        "instrucciones_paso_a_paso": [
+          "1. Distribuir Error Log impreso (10 oraciones con errores de las 3 estructuras).",
+          "2. Instrucciones: 'These 10 sentences have errors. FIND the error. CORRECT it. WRITE which rule was broken (Imperative / There is-are / Preposition). You have 20 minutes in pairs.'",
+          "3. Modelo rápido: instructor hace oración 1 en voz alta. 'The sentence is: You check the floor jack. Is this correct?' (Wait.) 'No — imperatives don't have a subject. Corrected: Check the floor jack. Rule broken: IMPERATIVE.'",
+          "4. Parejas trabajan. Instructor circula, observa errores recurrentes, NO corrige — anota para debrief.",
+          "5. Plenary debrief (20 min): instructor lee cada oración. Pregunta: 'What's the error? What's the correction?' Diferentes pares responden.",
+          "6. Cada corrección aprobada se escribe en LIVE ZONE del tablero. Al final: 10 oraciones correctas visibles.",
+          "7. Quick pattern analysis: '¿Which rule caused the most errors? Why do you think?' (1-2 respuestas.)"
+        ],
+        "teacher_talk_instruction": "*OK. These 10 sentences — there's a problem in each one. Your job: find the problem, correct it, and say which rule is broken. Watch — sentence 1: 'You check the floor jack.' (Pause.) Is this an imperative? (Wait.) No — imperatives don't have 'you.' Corrected: 'Check the floor jack.' Rule broken: IMPERATIVE. (Write on board.) Now — 9 more. With your partner. 20 minutes. Go.*",
+        "icq": [
+          "*For each sentence, how many things do you do?* → Esperan: 3 — find error, correct it, name the rule",
+          "*Can you look at the board for the grammar rules?* → Esperan: Yes"
+        ],
+        "answer_key_inline": {
+          "error_1": {
+            "original": "You check the floor jack.",
+            "error": "Subject 'You' in imperative",
+            "correction": "Check the floor jack.",
+            "rule": "Imperative"
+          },
+          "error_2": {
+            "original": "There are a spill near Bay 2.",
+            "error": "ARE + singular noun",
+            "correction": "There is a spill near Bay 2.",
+            "rule": "There is/are"
+          },
+          "error_3": {
+            "original": "The torque wrench is in next to the workbench.",
+            "error": "Double preposition 'in next to'",
+            "correction": "The torque wrench is next to the workbench.",
+            "rule": "Preposition of place"
+          },
+          "error_4": {
+            "original": "Please wear your safety goggles.",
+            "error": "'Please' makes it polite request, not imperative; acceptable but not workshop style. Also acceptable as a correction note.",
+            "correction": "Wear your safety goggles.",
+            "rule": "Imperative (directness)"
+          },
+          "error_5": {
+            "original": "There is three wrenches in the toolbox.",
+            "error": "IS + plural noun",
+            "correction": "There are three wrenches in the toolbox.",
+            "rule": "There is/are"
+          },
+          "error_6": {
+            "original": "Put the socket on next to the ratchet.",
+            "error": "Double preposition 'on next to'",
+            "correction": "Put the socket next to the ratchet.",
+            "rule": "Preposition of place"
+          },
+          "error_7": {
+            "original": "Checking the floor jack before lifting.",
+            "error": "Gerund 'checking', not base verb imperative",
+            "correction": "Check the floor jack before lifting.",
+            "rule": "Imperative"
+          },
+          "error_8": {
+            "original": "There is many hazards in the workshop today.",
+            "error": "IS + plural noun (many hazards)",
+            "correction": "There are many hazards in the workshop today.",
+            "rule": "There is/are"
+          },
+          "error_9": {
+            "original": "The fire extinguisher is on next the bay door.",
+            "error": "'on next' — incorrect preposition; should be 'next to'",
+            "correction": "The fire extinguisher is next to the bay door.",
+            "rule": "Preposition of place"
+          },
+          "error_10": {
+            "original": "Organize your tools in the workbench.",
+            "error": "'in the workbench' — tools are ON the workbench, not inside it",
+            "correction": "Organize your tools on the workbench.",
+            "rule": "Preposition of place (in vs on)"
+          }
+        },
+        "facilitation_notes": [
+          "💡 Errores 4 y 9 son los más matizados. Error 4 ('Please wear') es gramaticalmente aceptable en muchos contextos — guíe la discusión: 'In a workshop, your supervisor says CHECK — not PLEASE CHECK. Directness = professionalism.' Esto conecta con la competencia comunicativa F1.",
+          "💡 Si una pareja corrige MAL: no anule. Diga: 'Interesting. Compare with the board — which rule does this sentence need?' Guiar, no anular.",
+          "💡 Error 10 (in vs on workbench) es una trampa que distingue niveles. Si alguien lo encuentra sin ayuda: celebrar: 'Excellent — very advanced! The tools rest ON the surface, not inside.' Marca diferencia de nivel."
+        ],
+        "checkpoint": "✓ Post-debrief: '¿How many of the 10 did you get right?' Hands up: 10 corrects / 8-9 / 5-7 / below 5. Si >30% got below 5: devote 5 extra min to rules 2 and 3 (most errors). If <10% below 5: proceed normally.",
+        "transition": "*Excellent error-hunting. You found 10 problems and fixed them. Now we practice each grammar rule separately — in three stations. Let's move.*",
+        "tecnica_didactica": "Estaciones de práctica rotativas (Imperatives / There is-are / Prepositions)"
+      },
+      {
+        "letra": "C",
+        "nombre": "Grammar Stations + Safety Report — Focused Practice",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.10, Activities 3-4",
+        "agrupacion": "Small groups (3) rotating stations → Individual (Safety Report)",
+        "objetivo": "Practicar cada estructura en rotación temática. Producir un Safety Report completo usando obligatoriamente las 3 estructuras.",
+        "instrucciones_paso_a_paso": [
+          "PARTE 1 — GRAMMAR STATIONS (45 min, 3 estaciones x 15 min):",
+          "1. Dividir en 3 grupos (2-3 personas cada uno). Asignar estación inicial.",
+          "",
+          "ESTACIÓN 1 — IMPERATIVES (roja):",
+          "Tarea: Reescribir 5 instrucciones de seguridad que están en forma incorrecta, convirtiéndolas en imperatives correctos.",
+          "Luego: Escribir 3 instrucciones nuevas para Bay 1 que Carlos le daría a Valentina su primer día.",
+          "Recursos: Word Wall visible, lista de verbos de acción (check / put / organize / wear / clean / inspect / lift / tighten / fill).",
+          "",
+          "ESTACIÓN 2 — THERE IS/ARE (azul):",
+          "Tarea: Describir el workshop layout de S1 (imagen proyectada o impresa). Escribir 8 oraciones: 4 con There IS, 4 con There ARE.",
+          "Luego: Leer las oraciones de tu compañero. Verificar: ¿IS o ARE correcto?",
+          "Recursos: Workshop layout image, Word Wall.",
+          "",
+          "ESTACIÓN 3 — PREPOSITIONS (verde):",
+          "Tarea: Completar mapa del taller con 8 oraciones de ubicación. Cada oración describe DÓNDE está algo.",
+          "Luego: Sin mirar el mapa, decirle a tu compañero dónde están 3 herramientas usando solo la oración.",
+          "Recursos: Workshop map (S1 image), Word Wall, lista de preposiciones (in/on/next to/behind/near/between).",
+          "",
+          "2. Timer: 15 min por estación. '3 minutes left' warning.",
+          "3. Rotar. Continuar hasta completar las 3 estaciones.",
+          "",
+          "PARTE 2 — SAFETY REPORT (15 min):",
+          "4. Distribuir formato Safety Report en blanco.",
+          "5. Instrucciones: 'Now you write a COMPLETE Safety Report for Bay 2. You MUST use all 3 grammar rules — at least 2 imperatives, 2 There is/are, 2 prepositions. Write 8-10 sentences. You have 10 minutes. Individual work.'",
+          "6. Quick share: 2 voluntarios leen su Safety Report. Clase identifica dónde están las 3 estructuras."
+        ],
+        "teacher_talk_instruction": "*Three stations. Each station focuses on ONE grammar rule. You have 15 minutes per station. At Station 1 (RED) — imperatives. Station 2 (BLUE) — there is/are. Station 3 (GREEN) — prepositions. When the timer rings, ROTATE. Leave your work at the station — the next group reads what you did. Ready? Station 1 — go!*",
+        "teacher_talk_safety_report": "*Final part: Now you use ALL THREE rules together — in one Safety Report. It's like what Valentina would write for Carlos. Bay 2. Monday morning. What does she see? What needs to be done? Write 8-10 sentences. MUST include: 2 imperatives, 2 There is/are, 2 prepositions. 10 minutes. Individual. Go.*",
+        "icq": [
+          "*How many minutes at each station?* → Esperan: 15",
+          "*After 15 minutes, what do you do?* → Esperan: Rotate",
+          "*For the Safety Report — how many grammar rules must you use?* → Esperan: All 3 / Three",
+          "*Minimum how many sentences?* → Esperan: 8"
+        ],
+        "answer_key_inline": {
+          "station_1_imperatives_corrections": [
+            "WRONG: You should check the floor jack. → CORRECT: Check the floor jack.",
+            "WRONG: Please be organized. → CORRECT: Organize your tools.",
+            "WRONG: Wearing PPE is important. → CORRECT: Wear your PPE.",
+            "WRONG: The technician cleans the bay. → CORRECT: Clean the bay.",
+            "WRONG: It is important to inspect the fire extinguisher. → CORRECT: Inspect the fire extinguisher."
+          ],
+          "station_1_carlos_instructions_sample": [
+            "Check the floor jack before lifting.",
+            "Put on your safety goggles.",
+            "Organize the tools in the toolbox."
+          ],
+          "station_2_there_is_are_sample": [
+            "There is a floor jack in Bay 2.",
+            "There is a fire extinguisher next to the bay door.",
+            "There is a spill near the wash area.",
+            "There is a toolbox on the workbench.",
+            "There are three service bays in the workshop.",
+            "There are two pairs of gloves on the shelf.",
+            "There are four wrenches in the toolbox.",
+            "There are safety signs on the wall."
+          ],
+          "station_3_prepositions_sample": [
+            "The torque wrench is in the toolbox.",
+            "The floor jack is next to Bay 2.",
+            "The fire extinguisher is behind the bay door.",
+            "The safety goggles are on the workbench.",
+            "The toolbox is near the service bay.",
+            "The ratchet is on the shelf.",
+            "The spill is near the bay entrance.",
+            "The PPE station is next to the Hazmat Zone."
+          ],
+          "safety_report_sample": [
+            "Bay 2 Safety Report — Monday 7:00 AM — Technician: Valentina Cruz",
+            "1. Check the floor jack. It is ready.",
+            "2. There is a small spill near the bay door. Clean the spill immediately.",
+            "3. There are three wrenches in the toolbox. They are organized.",
+            "4. The fire extinguisher is next to the bay door. It is accessible.",
+            "5. Put on your safety goggles before working.",
+            "6. There is PPE on the workbench. Use it.",
+            "7. The torque wrench is on the shelf. Check its calibration.",
+            "8. Inspect the floor jack before lifting any vehicle. Bay 2 is ready."
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Estaciones: si solo hay 2-3 estudiantes por estación, la rotación es rápida pero la calidad de práctica es alta. Si hay muchos (>9 aprendices), crear 2 sets de las 3 estaciones.",
+          "💡 Safety Report individual: es la transición mental al Writing Task formal (Evidencia 2). Trátelo como práctica, no como evidencia. Tolerancia alta a errores — corrección suave: 'Almost. Which rule do you need here?'",
+          "💡 Al final de estaciones: LEAVE WORK at station. El grupo siguiente LEE el trabajo del anterior = doble input. Estudiantes que 'hicieron bien' su estación validan el trabajo del siguiente grupo."
+        ],
+        "checkpoint": "✓ Safety Report check: '¿Who used all 3 grammar rules? Raise your hand for imperatives — there is/are — prepositions.' If student can't raise hand for one rule: 'Look at the board. Add one more sentence in that color.' 2 min.",
+        "tecnica_didactica": "Análisis de género textual / Escritura modelada co-construida"
+      },
+      {
+        "letra": "D",
+        "nombre": "Genre Analysis + Modeled Writing — Document Architecture",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.4, Activities 1-2",
+        "agrupacion": "Whole class (genre analysis) → Co-construction with instructor",
+        "objetivo": "Analizar estructura, lenguaje y propósito de documentos técnicos reales. Co-construir un Daily Inspection Checklist con el instructor.",
+        "instrucciones_paso_a_paso": [
+          "PARTE 1 — GENRE ANALYSIS (25 min):",
+          "1. Proyectar Daily Inspection Checklist real (modelo) + Work Order Header real (modelo).",
+          "2. Instructor guía análisis con preguntas: '¿What type of document is this? What is its PURPOSE? Who WRITES it? Who READS it? What LANGUAGE does it use? (Simple? Technical?) ¿What happens if you don't complete it?'",
+          "3. En parejas: completar tabla de análisis (en worksheet): Purpose / Writer / Reader / Key vocabulary / Grammar used.",
+          "4. Plenary: 3 pares comparten. Instructor sintetiza en tablero: 'A Checklist is FUNCTIONAL. Short sentences. Imperatives for actions. There is/are for conditions. Prepositions for locations. This is EXACTLY what you learned today.'",
+          "5. Connect explicitly: '¿Do you see it? These documents USE the 3 grammar rules. This is why we learned them first.'",
+          "",
+          "PARTE 2 — MODELED WRITING (35 min):",
+          "6. Instructor toma formato Checklist EN BLANCO en pantalla. 'I'm going to write a Checklist for Bay 1 — THINKING OUT LOUD. You watch, you copy, you question.'",
+          "7. Think-aloud writing: instructor escribe en tiempo real, verbalizando decisiones:",
+          "   '— Item 1: Floor jack. Is it OK or does it need repair? I check. (Pause.) Floor jack — ✓ OK. Now I describe: The floor jack is in position next to Bay 1. (Green = preposition.) I write that as my observation.'",
+          "   '— Item 2: Spill check. Is there anything on the floor? There is no spill near Bay 1. (Blue = There is.) I write that.'",
+          "   '— Item 3: Safety instruction for next technician: Check calibration before use. (Red = Imperative.)'",
+          "8. Completar 5 items de Checklist en vivo (approx 15 min). Incluir: floor jack, toolbox, PPE, spill check, fire extinguisher.",
+          "9. Work Order Header: instructor completa 4 de los 6 campos en vivo: vehicle, bay, technician, maintenance type.",
+          "10. '¿Do you see the structure? Now YOU do Bay 2. Same format. Your turn.'"
+        ],
+        "teacher_talk_instruction": "*Look at this document. (Project Checklist model.) This is a REAL Daily Inspection Checklist from a real workshop. Let me ask you — what is this FOR? (Wait.) Yes — to check everything is ready. Who writes it? (The technician.) Who reads it? (The supervisor — Carlos.) What happens if you skip it? (Problems. Safety risks. Legal issues.) Now let's look at the language. Do you see imperatives? There is/are? Prepositions? (Yes!) These three grammar rules — they LIVE in this document. That's why today we learned them first.*",
+        "teacher_talk_modeled": "*Now I write — and I think out loud. You copy. You can ask me questions. Watch: (picks up marker) Item 1 — Floor Jack. I go to Bay 1. I check. Floor jack is OK. (Writes: ✓ OK.) Now my observation: (thinking...) The floor jack is... (pause) in position... (pause) NEXT TO Bay 1. I use a preposition. 'The floor jack is next to Bay 1.' (Writes.) ¿Why next to and not in? Because it's beside, not inside. Good. Item 2...*",
+        "icq": [
+          "*Who writes the Checklist?* → Esperan: The technician",
+          "*Who reads it?* → Esperan: The supervisor / Carlos",
+          "*In the Checklist — which grammar rules do we use?* → Esperan: All 3 / Imperatives + There is/are + Prepositions",
+          "*For the Work Order — how many fields must you complete?* → Esperan: 6"
+        ],
+        "answer_key_inline": {
+          "genre_analysis_checklist": {
+            "purpose": "To verify that the service bay and all equipment are ready before beginning work",
+            "writer": "Technician (Valentina Cruz)",
+            "reader": "Supervisor (Carlos Mendoza) + QA",
+            "key_vocabulary": "Toolbelt 20 terms: floor jack, wrench, PPE, fire extinguisher, spill, calibration, etc.",
+            "grammar_used": [
+              "Imperatives for required actions: 'Check calibration before use.'",
+              "There is/are for conditions: 'There is no spill in Bay 2.'",
+              "Prepositions for locations: 'The fire extinguisher is next to the door.'"
+            ]
+          },
+          "genre_analysis_work_order": {
+            "purpose": "To document the maintenance task, assign responsibility, and track completion",
+            "writer": "Technician or supervisor",
+            "reader": "Supervisor + billing + client",
+            "key_fields": [
+              "Vehicle",
+              "Bay",
+              "Technician",
+              "Maintenance type",
+              "Tools needed",
+              "Observations"
+            ],
+            "grammar_used": [
+              "Present Simple for descriptions",
+              "Toolbelt vocabulary for technical terms"
+            ]
+          },
+          "modeled_checklist_bay1_sample": [
+            "1. Floor jack — ✓ OK | The floor jack is next to Bay 1. Ready to use.",
+            "2. Toolbox — ✓ OK | There are 8 tools in the toolbox. All organized.",
+            "3. PPE Station — ✓ OK | There are gloves and safety goggles on the shelf.",
+            "4. Spill check — ✓ No spill | There is no spill near Bay 1.",
+            "5. Fire extinguisher — ✓ OK | The fire extinguisher is next to the bay door. Check pressure monthly."
+          ],
+          "modeled_work_order_bay1_sample": {
+            "vehicle": "Diesel truck — Kenworth T680",
+            "bay": "Bay 1",
+            "technician": "Carlos Mendoza",
+            "maintenance_type": "Preventive maintenance",
+            "tools_needed": "Torque wrench, ratchet, socket set, floor jack",
+            "observations": "Vehicle due for oil change. Check calibration of torque wrench before use."
+          }
+        },
+        "facilitation_notes": [
+          "💡 Think-aloud is the PEDAGOGICAL HEART of this bloque. No correr. Verbalizar CADA decisión: '¿Por qué escribo NEXT TO y no IN? Porque el floor jack está al LADO, no adentro.' Esto modela el proceso mental de escribir.",
+          "💡 Si alguien pregunta sobre gramática más avanzada (present perfect, etc.): 'Good question — that's S5 and S6. Today, these 3 rules are enough for the document. Keep it simple. Carlos understands simple English perfectly.'",
+          "💡 Si termina el Modeled Writing antes de los 35 min: completar el Work Order Header en vivo completo (todos los 6 campos). Más modelo = mejor scaffolding para la escritura individual."
+        ],
+        "checkpoint": "✓ 'Before you start writing — show me a thumbs up if you understand the structure. Thumbs sideways if you're not sure. Thumbs down if you're lost.' Count sideways/down. Si >30% no está seguro: 5 min de preguntas y respuestas. Ask: '¿What is the hardest part?' Address that specifically.",
+        "transition": "*Good. You've seen how it's done. Now Bay 2 is YOURS. Write your own Checklist and Work Order. This is Evidencia 2 — your evidence of what you can write in English. You have the grammar. You have the vocabulary. You saw the model. Now go.*",
+        "tecnica_didactica": "Producción escrita individual / Revisión entre pares (Lista de Verificación No 2)"
+      },
+      {
+        "letra": "E",
+        "nombre": "EVIDENCIA 2: Independent Writing Task + Peer Review",
+        "duracion_min": 70,
+        "worksheet_ref": "PM-2.4, Activities 3-4",
+        "agrupacion": "Individual (Writing — 45 min) → Pairs (Peer Review — 20 min) → Plenary (5 min)",
+        "objetivo": "Producir individualmente Daily Inspection Checklist + Work Order para Bay 2 (Evidencia 2, 5 pts). Revisar documentos del compañero usando Lista de Verificación No 2.",
+        "instrucciones_paso_a_paso": [
+          "⚠️ EVIDENCIA 2 — Instrucciones especiales de administración:",
+          "",
+          "PARTE 1 — INDEPENDENT WRITING TASK (45 min):",
+          "1. Distribuir: Daily Inspection Checklist en blanco + Work Order Header en blanco (1 de cada uno por aprendiz).",
+          "2. Leer escenario en voz alta: 'The Diesel Workshop — Bay 2 — Monday 7:00 AM. You are the technician. You inspect Bay 2 before the first diesel truck of the day. Complete your Checklist AND your Work Order. In English.'",
+          "3. Requerimientos (proyectar y leer): 'Checklist: minimum 8 items + at least 2 written observations. Work Order: minimum 6 fields complete. Use the 3 grammar rules (imperatives, there is/are, prepositions). Use Toolbelt vocabulary (minimum 8 terms).'",
+          "4. Instructor señala Word Wall y tablero: 'You can use the Word Wall. You can use the board. This is a PRODUCT — not a test from memory. Real technicians use references.'",
+          "5. Individual work. Silence preferred but brief questions permitted (vocabulary).",
+          "6. Instructor circula, observa. NO corrige durante la escritura — toma notas mentales para feedback posterior.",
+          "7. Timer: 45 minutos. '10 minutes left' warning.",
+          "",
+          "PARTE 2 — PEER REVIEW (20 min):",
+          "8. Distribuir Lista de Verificación No 2 impresa (10 criterios, 0.5 pt cada uno = 5 pts total).",
+          "9. Instrucciones: 'Exchange your documents with your partner. Read their Checklist and Work Order. Use the Lista de Verificación No 2 to evaluate: ¿Does it meet each criterion? ¿Yes or No? Mark it. Then write 2 comments in English: 1 positive, 1 suggestion.'",
+          "10. Parejas revisan. Instructor circula, observa calidad del feedback.",
+          "11. Quick plenary (5 min): '¿What was the most common STRENGTH you saw? ¿What was the most common thing to improve?' 2-3 respuestas.",
+          "12. COLLECT: Instructor recoge AMBOS documentos (original del aprendiz + Lista de Verificación No 2 con peer feedback). Calificación posterior usando Lista de Verificación No 2 como rúbrica formal."
+        ],
+        "teacher_talk_instruction": "*This is Evidencia 2 — your second formal evidence. (Hold up blank Checklist and Work Order.) Bay 2 is yours. Monday, 7:00 AM. You walk in. What do you see? What needs to be checked? Write it all — in English. (Pause.) You have: the Word Wall, the board, the grammar rules. Use them. Minimum 8 items in the Checklist, minimum 6 fields in the Work Order. Use the 3 grammar rules. You have 45 minutes. This is YOUR document. Write well. Go.*",
+        "teacher_talk_peer_review": "*Good work, everyone. Now — peer review. Exchange documents with your partner. (Distribute Lista de Verificación No 2.) Read their Checklist and Work Order. Check each criterion: ¿Yes or No? Then write 2 comments: one thing that is GOOD, one thing they can IMPROVE. Write in English. You have 15 minutes.*",
+        "icq": [
+          "*How many items minimum in the Checklist?* → Esperan: 8",
+          "*How many fields in the Work Order?* → Esperan: 6",
+          "*Can you look at the Word Wall?* → Esperan: Yes",
+          "*For Peer Review — how many comments do you write?* → Esperan: 2 — one positive, one suggestion"
+        ],
+        "answer_key_inline": {
+          "lista_verificacion_no2_criteria": [
+            {
+              "n": 1,
+              "criterion": "El checklist tiene mínimo 8 ítems verificados",
+              "puntos": 0.5
+            },
+            {
+              "n": 2,
+              "criterion": "Cada ítem usa vocabulario técnico correcto del Toolbelt",
+              "puntos": 0.5
+            },
+            {
+              "n": 3,
+              "criterion": "Hay mínimo 2 observaciones escritas en inglés",
+              "puntos": 0.5
+            },
+            {
+              "n": 4,
+              "criterion": "El estado del bay está justificado en inglés",
+              "puntos": 0.5
+            },
+            {
+              "n": 5,
+              "criterion": "El Work Order tiene mínimo 6 campos completos",
+              "puntos": 0.5
+            },
+            {
+              "n": 6,
+              "criterion": "Usa correctamente There is/are en observaciones",
+              "puntos": 0.5
+            },
+            {
+              "n": 7,
+              "criterion": "Usa correctamente imperativos en acciones requeridas",
+              "puntos": 0.5
+            },
+            {
+              "n": 8,
+              "criterion": "Usa preposiciones de lugar para ubicar herramientas",
+              "puntos": 0.5
+            },
+            {
+              "n": 9,
+              "criterion": "Ortografía correcta en los 20 términos del Toolbelt",
+              "puntos": 0.5
+            },
+            {
+              "n": 10,
+              "criterion": "El documento es legible, organizado y completo",
+              "puntos": 0.5
+            }
+          ],
+          "exemplary_checklist_bay2": [
+            "Daily Inspection Checklist — Bay 2 — Monday 7:00 AM — Technician: [Student Name]",
+            "1. Floor jack — ✓ OK | The floor jack is next to the bay door. No leaks. Ready to use.",
+            "2. Toolbox — ✓ OK | There are 6 tools in the toolbox. All organized.",
+            "3. Safety goggles — ✓ OK | There are 2 pairs of safety goggles on the workbench.",
+            "4. Gloves — ✓ OK | There are 4 pairs of gloves at the PPE station near Bay 2.",
+            "5. Fire extinguisher — ✓ OK | The fire extinguisher is next to the bay door. Check pressure.",
+            "6. Spill check — ✓ Clear | There is no spill on the floor in Bay 2.",
+            "7. Torque wrench — ✓ OK | The torque wrench is in the toolbox. Check calibration before use.",
+            "8. Workbench — ✓ Clean | The workbench is organized. All tools are in place.",
+            "REQUIRED ACTIONS: Check the floor jack before lifting. Wear your PPE at all times. Inspect the fire extinguisher monthly.",
+            "Bay 2 STATUS: ✓ READY"
+          ],
+          "exemplary_work_order_bay2": {
+            "field_1_vehicle": "Diesel truck — Model: Kenworth T680 — Year: 2022",
+            "field_2_bay": "Bay 2",
+            "field_3_technician": "Valentina Cruz",
+            "field_4_maintenance_type": "Preventive maintenance — scheduled oil change",
+            "field_5_tools_needed": "Torque wrench, ratchet, socket set, floor jack, work order checklist",
+            "field_6_observations": "There is a small spill near the bay entrance. Clean before work begins. The floor jack is ready. Check calibration of torque wrench before tightening bolts."
+          }
+        },
+        "facilitation_notes": [
+          "💡 ⚠️ EVIDENCIA 2 = PRODUCTO INDIVIDUAL. No corregir durante la escritura. Si un estudiante pregunta '¿Cómo se dice X?' → dirigir al Word Wall: 'Look at the wall. Do you see it?' Si no está en el Word Wall: 'Write it in Spanish for now and circle it — I'll help you after.' El objetivo es que PRODUZCAN.",
+          "💡 Peer Review es pedagógicamente valioso porque obliga a los aprendices a aplicar los criterios activamente. No simplificar: 'Did they use grammar? Yes/No' es insuficiente. Empujar: '¿WHERE did they use There is/are? Point to it.'",
+          "💡 Recoger LA LISTA DE VERIFICACIÓN junto con el documento — la firma del peer reviewer es parte del instrumento de evaluación. Si falta: nota en calificación."
+        ],
+        "checkpoint": "✓ 'Before you hand in — check: 8 items in your Checklist? (Count.) 6 fields in your Work Order? (Count.) 2 grammar rules visible? (Point to them.) Good — hand it in.' Esta autochecklist de 30 segundos reduce entregables incompletos.",
+        "tecnica_didactica": "Producción escrita individual con revisión entre pares (Lista de Verificación No 2)"
+      }
+    ],
+    "breaks": [
+      {
+        "after_bloque": "B",
+        "duracion_min": 15,
+        "nombre": "BREAK — Stretch & Recharge",
+        "teacher_talk": "*OK team — you just corrected 10 grammar errors. Good brain work. Break time — 15 minutes. Stretch. Move. Water. When you come back: Grammar Stations — three tables, three rules, rotation. See you in 15.*"
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 25,
+    "exit_ticket": {
+      "tarea": "Individual (silent, 5 min): Escribe 1 oración para cada regla gramatical: (1) Un imperative para Carlos dándole instrucción a Valentina. (2) Una oración con There is/are describiendo una condición de Bay 2. (3) Una oración con preposición de lugar ubicando una herramienta. Ejemplo: (1) 'Check the torque wrench before tightening.' (2) 'There is a clean floor jack in Bay 2.' (3) 'The fire extinguisher is next to the bay door.'",
+      "success_criteria": "✓ 3 oraciones escritas. ✓ Una por regla (identificable). ✓ Vocabulario del Toolbelt presente.",
+      "duration_min": 8
+    },
+    "teacher_talk_closing": "*Before we finish — three sentences. One imperative, one there is/are, one preposition. Use workshop vocabulary. You have 5 minutes. Look at the board if you need. Go.* (Wait 5 min.) *Hand it in. Tomorrow — we LISTEN. Carlos and Valentina are talking in Bay 2. You'll hear their conversation — a real safety briefing. After that, YOU will speak. Bring your Voice. See you tomorrow.*",
+    "trabajo_autonomo": {
+      "actividad": "Grammar & Writing Consolidation (0.75h)",
+      "instrucciones_detalladas": "1. PART 1 (15 min): Review your Peer Review feedback. Read your partner's comments. Do you agree with their suggestions? Revise 2 items in your Checklist based on the feedback. Write the corrected version below the original. 2. PART 2 (15 min): Error practice at home. Write 5 new sentences — ONE for each station: an imperative (Station 1), 2 There is/are sentences (Station 2), 2 preposition sentences (Station 3). Use new situations — not the same ones from class. 3. PART 3 (15 min): Read your S2 article again. This time, underline ALL examples of the 3 grammar targets you can find: imperatives (red), There is/are (blue), prepositions (green). Count them. **Total time: ~45 min (0.75h)**",
+      "entregable": "Revised Checklist (2 corrected items) + 5 new grammar sentences + Article re-read with grammar highlights (bring all to S4)",
+      "cuando_se_revisa": "S4 SET-UP: Instructor collects grammar sentences, uses for speaking warm-up"
+    },
+    "preview_next_session": "*Next session: LISTENING and SPEAKING. We listen to a real conversation in the workshop — Carlos and Valentina doing a safety briefing. Then you SPEAK — you give your own Workshop Readiness Report to Carlos. 60 to 90 seconds. Like a real technician. Bring your voice.*",
+    "facilitation_notes": [
+      "💡 Recoger TODOS los documentos de Evidencia 2 antes de que salgan. Verificar nombre en cada documento. Si falta nombre: retener antes de salida.",
+      "💡 Mencionar: 'Your Checklist from today will be shown as a model in S6 — the best ones. So write your best.'"
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "Bloque A — Grammar Induction: 3 structures identified from text",
+      "items": [
+        {
+          "item": "Imperatives examples from text",
+          "respuesta_correcta": "Check the floor jack. / Put on your PPE. / Organize the toolbox. / Wear safety goggles. / Clean the workbench.",
+          "alternativas": [
+            "Any imperative verb + rest, no subject"
+          ],
+          "puntos": "Formative"
+        },
+        {
+          "item": "There is/are examples",
+          "respuesta_correcta": "There is a torque wrench in every bay. / There are 5 tools in a basic kit. / There is a fire extinguisher next to the door.",
+          "alternativas": [
+            "IS + singular noun / ARE + plural noun"
+          ],
+          "puntos": "Formative"
+        },
+        {
+          "item": "Prepositions examples",
+          "respuesta_correcta": "The ratchet is IN the toolbox. / The jack is NEXT TO Bay 2. / The goggles are ON the workbench.",
+          "alternativas": [
+            "in/on/next to/behind/near + correct placement"
+          ],
+          "puntos": "Formative"
+        }
+      ]
+    },
+    {
+      "actividad": "Bloque B — Error Log (10 sentences)",
+      "items": [
+        {
+          "item": "Error 1: 'You check the floor jack.'",
+          "respuesta_correcta": "Check the floor jack.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "item": "Error 2: 'There are a spill near Bay 2.'",
+          "respuesta_correcta": "There is a spill near Bay 2.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "item": "Error 3: 'The torque wrench is in next to the workbench.'",
+          "respuesta_correcta": "The torque wrench is next to the workbench.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "item": "Error 4: 'Please wear your safety goggles.'",
+          "respuesta_correcta": "Wear your safety goggles.",
+          "alternativas": [
+            "'Please wear' also accepted with comment about directness"
+          ],
+          "puntos": 1
+        },
+        {
+          "item": "Error 5: 'There is three wrenches in the toolbox.'",
+          "respuesta_correcta": "There are three wrenches in the toolbox.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "item": "Error 6: 'Put the socket on next to the ratchet.'",
+          "respuesta_correcta": "Put the socket next to the ratchet.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "item": "Error 7: 'Checking the floor jack before lifting.'",
+          "respuesta_correcta": "Check the floor jack before lifting.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "item": "Error 8: 'There is many hazards in the workshop today.'",
+          "respuesta_correcta": "There are many hazards in the workshop today.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "item": "Error 9: 'The fire extinguisher is on next the bay door.'",
+          "respuesta_correcta": "The fire extinguisher is next to the bay door.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "item": "Error 10: 'Organize your tools in the workbench.'",
+          "respuesta_correcta": "Organize your tools on the workbench.",
+          "alternativas": [],
+          "puntos": 1
+        }
+      ]
+    },
+    {
+      "actividad": "Bloque C — Grammar Stations",
+      "items": [
+        {
+          "item": "Station 1: 5 imperative corrections + 3 new instructions",
+          "respuesta_correcta": "See error log corrections above + any valid base-verb instructions without subject",
+          "alternativas": [],
+          "puntos": "Formative"
+        },
+        {
+          "item": "Station 2: 8 There is/are sentences",
+          "respuesta_correcta": "4 with IS (singular nouns) + 4 with ARE (plural nouns) — workshop context",
+          "alternativas": [],
+          "puntos": "Formative"
+        },
+        {
+          "item": "Station 3: 8 preposition sentences",
+          "respuesta_correcta": "Correct preposition (in/on/next to/behind/near) matching physical location logic",
+          "alternativas": [],
+          "puntos": "Formative"
+        }
+      ]
+    },
+    {
+      "actividad": "Bloque C — Safety Report (individual production)",
+      "items": [
+        {
+          "item": "Safety Report 8-10 sentences",
+          "respuesta_correcta": "Must contain: ≥2 imperatives + ≥2 There is/are + ≥2 prepositions + Toolbelt vocabulary",
+          "alternativas": [],
+          "puntos": "Formative (prepares for Evidencia 2)"
+        }
+      ]
+    },
+    {
+      "actividad": "⚠️ Bloque E — EVIDENCIA 2: Daily Inspection Checklist + Work Order (FORMAL PRODUCT)",
+      "items": [
+        {
+          "item": "Criterion 1: Checklist has minimum 8 verified items",
+          "respuesta_correcta": "8+ items with ✓ or ✗ marks",
+          "alternativas": [],
+          "puntos": 0.5
+        },
+        {
+          "item": "Criterion 2: Each item uses correct Toolbelt vocabulary",
+          "respuesta_correcta": "At least 8 of 20 Toolbelt terms present and correctly used",
+          "alternativas": [],
+          "puntos": 0.5
+        },
+        {
+          "item": "Criterion 3: At least 2 written observations in English",
+          "respuesta_correcta": "2+ complete sentences describing bay conditions",
+          "alternativas": [
+            "Accept mixed Spanish-English if English structure is visible"
+          ],
+          "puntos": 0.5
+        },
+        {
+          "item": "Criterion 4: Bay status justified in English",
+          "respuesta_correcta": "Explicit status statement: 'Bay 2 is ready.' or 'Bay 2 has one issue.'",
+          "alternativas": [],
+          "puntos": 0.5
+        },
+        {
+          "item": "Criterion 5: Work Order has 6 complete fields",
+          "respuesta_correcta": "Vehicle, Bay, Technician, Maintenance type, Tools needed, Observations — all filled",
+          "alternativas": [],
+          "puntos": 0.5
+        },
+        {
+          "item": "Criterion 6: Correct use of There is/are in observations",
+          "respuesta_correcta": "IS + singular noun / ARE + plural noun — at least 1 correct instance",
+          "alternativas": [],
+          "puntos": 0.5
+        },
+        {
+          "item": "Criterion 7: Correct use of imperatives in required actions",
+          "respuesta_correcta": "At least 1 imperative (base verb, no subject) in actions section",
+          "alternativas": [],
+          "puntos": 0.5
+        },
+        {
+          "item": "Criterion 8: Prepositions of place used to locate tools",
+          "respuesta_correcta": "At least 1 preposition (in/on/next to/behind/near) correctly used",
+          "alternativas": [],
+          "puntos": 0.5
+        },
+        {
+          "item": "Criterion 9: Correct spelling of 20 Toolbelt terms",
+          "respuesta_correcta": "Terms present in document are spelled correctly (checking only terms that appear)",
+          "alternativas": [
+            "Allow 1-2 spelling errors — deduct 0.5 only if majority misspelled"
+          ],
+          "puntos": 0.5
+        },
+        {
+          "item": "Criterion 10: Document is legible, organized and complete",
+          "respuesta_correcta": "Document is readable, structured, both Checklist AND Work Order present",
+          "alternativas": [],
+          "puntos": 0.5
+        }
+      ]
+    },
+    {
+      "actividad": "WRAP-UP — Exit Ticket (3 grammar sentences)",
+      "items": [
+        {
+          "item": "1 Imperative sentence",
+          "respuesta_correcta": "Any base-verb instruction without subject in workshop context",
+          "alternativas": [],
+          "puntos": "Formative"
+        },
+        {
+          "item": "1 There is/are sentence",
+          "respuesta_correcta": "Correct IS/ARE match with singular/plural noun",
+          "alternativas": [],
+          "puntos": "Formative"
+        },
+        {
+          "item": "1 Preposition of place sentence",
+          "respuesta_correcta": "Correct preposition + logical location for workshop tool/area",
+          "alternativas": [],
+          "puntos": "Formative"
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "Bloque A — Induction: If pair finishes color-hunt early: 'Write a FOURTH rule you notice in the text — any other grammar pattern. Be ready to share.' (Open-ended discovery.)",
+      "Bloque B — Error Log: If pair corrects all 10 in under 15 min: 'Write 3 NEW sentences with intentional errors — swap with another fast pair and try to find each other's errors.' (Peer-authored Error Log.)",
+      "Bloque C — Stations: If group finishes station early: 'Look at the NEXT station's work. Can you add one more sentence to help that group?' (Cross-station scaffolding.)",
+      "Bloque E — Evidencia 2: If student finishes Checklist + Work Order in 30 min: 'Write a second Work Order for Bay 1 — for Santiago. Different vehicle, different maintenance type.' (Extended product.)",
+      "Peer Review: If finished early: 'Write a THIRD comment — something specific about their grammar use. Which rule did they use best?' (Deeper metalinguistic reflection.)"
+    ],
+    "more_support_needed": [
+      "Bloque A — Induction: If student can't find color examples: provide pre-highlighted copy of S2 text. Task: 'Just read the red sentences out loud.' Recognition before production.",
+      "Bloque B — Error Log: Reduce to 6 sentences (remove 4 most complex: 4, 7, 9, 10). Student corrects 6 and identifies rules. Same cognitive process, lower volume.",
+      "Bloque C — Stations: At Station 1, provide verb list (check / put / organize / wear / clean / inspect) as scaffold. At Station 3, provide preposition visual with images (arrow diagrams).",
+      "Bloque E — Writing: If student freezes at blank page: '¿Qué ves cuando entras a Bay 2? Di una cosa. Now write that in English. Look at the board and Word Wall.' One item at a time. Do not reduce the total requirement — scaffold the process.",
+      "Peer Review: If student can't write comments in English: '¿En español, qué le dirías a tu compañero? Now look at the Word Wall — can you write 3 of those words in English?' Support translation, don't eliminate the task."
+    ]
+  },
+  "instructor_self_check": [
+    "¿Todos entregaron Evidencia 2 (Checklist + Work Order + Lista de Verificación No 2)? ¿Hay algún nombre faltante? (Target: 100% entrega. Si alguien faltó: asignar make-up antes de S4.)",
+    "¿Los 3 colores del tablero permanecieron visibles toda la sesión? ¿Los aprendices los miraron durante la escritura? (Target: Sí a ambos. Si no: S4 opening — reactivar brevemente los 3 targets.)",
+    "¿Qué errores gramaticales vi más durante la escritura individual? (Top 3 patrones: anotar. Usar para micro-repaso en S4 SET-UP o S6 review.)",
+    "¿La Evidencia 2 muestra dominio de vocabulario del Toolbelt? ¿O hay aprendices que usaron <5 términos? (Si <5 términos en >30% de documentos: agregar 5 min de vocabulary activation en S4 warm-up.)",
+    "¿El tiempo fue suficiente para la escritura individual (45 min)? ¿Algunos terminaron con 15+ min de sobra? (Si sí: próxima vez añadir un segundo documento como extensión. Si muchos no terminaron: ajustar criterio mínimo a 6 ítems en checklist.)"
+  ],
+  "totals_check": {
+    "set_up": 25,
+    "while_bloque_a": 55,
+    "while_bloque_b": 50,
+    "break": 15,
+    "while_bloque_c": 60,
+    "while_bloque_d": 60,
+    "while_bloque_e": 70,
+    "wrap_up": 25,
+    "subtotal_while": 295,
+    "subtotal_breaks": 15,
+    "total": 360,
+    "check_result": "✓ EXACTO 360 min"
+  },
+  "rap_status": "PENDIENTE (asignación posterior por instructor)",
+  "momento_sena": "3.2 — Contextualización",
+  "estrategia_didactica": "Aprendizaje Basado en Tareas",
+  "justificacion_didactica": "La tarea es producir dos documentos técnicos reales del taller: Daily Inspection Checklist y Work Order. Las actividades de gramática son andamiaje funcional para ejecutar esa tarea de escritura (E2)."
+}

@@ -1,0 +1,140 @@
+{
+  "_meta": {
+    "schema_version": "activity-card-v2.0",
+    "schema_ref": "master-prompts/Activity Card — Schema.md (2026-04-13)",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-opus-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist"
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.5",
+    "pm_name": "Vocabulary, Literacy & Scenario Setup",
+    "session": 2,
+    "phase_sena": "Apropiación",
+    "rap_id": "RAP-DIESEL-001-2026",
+
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Presentar y anclar los 20 términos técnicos del taller diesel en inglés usando Word Wall y categorías semánticas",
+        "didactic_strategy": "CLIL",
+        "didactic_technique": "Mapas conceptuales"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Practicar reconocimiento y producción de los 20 términos mediante juego de flashcards y competencia de categorías",
+        "didactic_strategy": "Aprendizaje colaborativo",
+        "didactic_technique": "Juegos educativos"
+      },
+      {
+        "number": 3,
+        "type": "procedimental",
+        "statement": "Completar formatos reales del taller diesel usando los 20 términos técnicos en contexto auténtico",
+        "didactic_strategy": "TBLT",
+        "didactic_technique": "Taller"
+      }
+    ],
+
+    "hours": {
+      "direct": 2.0,
+      "autonomous": 0.75
+    },
+
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "",
+      "evaluation_technique": "",
+      "instrument_number": null,
+      "instrument_type": null
+    },
+
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Word Wall cards impresas x20 — formato: imagen técnica + término en inglés + oración de ejemplo del taller",
+        "Flashcard sets impresos (1 set por par) — doble cara: imagen / término + pronunciación IPA simplificada",
+        "Tablero de categorías impreso A3 (5 columnas: Environment / Tools & Equipment / Safety / Maintenance / Documents+Roles)",
+        "Daily Inspection Checklist en blanco impreso (1 por aprendiz) — actividad 3",
+        "Work Order header en blanco impreso (1 por aprendiz) — actividad 3"
+      ],
+      "instructors": "Instructor de inglés técnico"
+    },
+
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Vocabulary",
+    "quiz_points": 5,
+    "quiz_item_count": 5
+  },
+
+  "pm0_constraints_applied": {
+    "session": "S2",
+    "grammar_active": "Gr1 CONSOLIDA + Gr2 INTRO — vocabulario en contexto de oraciones con 'be' y 'There is/are'. NO introducir gramática nueva en esta PM.",
+    "l1_max": "≤ 25% — Principio Show before tell: mostrar imagen/realia/gesto ANTES del término en inglés. Traducción al español solo como último recurso.",
+    "feedback_mode": "ACCURACY en drilling de pronunciación (actividad 1 + 2); FLUENCY en actividad 3 (formato real — no corregir fluidez, solo errores de vocabulario técnico críticos con código V).",
+    "stress_focus": "TODOS los 20 términos → stress marcado antes de cualquier drill. Técnicas: finger drilling + board marking ●○○. Secuencia obligatoria: término solo → frase → oración de contexto.",
+    "success_factors": "S=Sounds (drill fonológico primero), U=Use (oración de dominio antes del drill), C=Conceptualize (imagen antes del nombre), C=Creativity (aprendiz genera oración propia), E=Encounter again (término reaparece en PM-2.3 texto Y en PM-2.6 audio), S=Self-expression (aprendiz usa término para describir su propio taller)",
+    "term_20_note": "'specialist' es el término 20 del Toolbelt — reemplaza 'calibration' (eliminado). Incluir en categoría Roles."
+  },
+
+  "vocabulary_toolbelt": {
+    "categories": {
+      "Environment": ["workshop", "service bay", "workbench", "toolbox"],
+      "Tools & Equipment": ["wrench", "ratchet", "socket", "torque wrench", "floor jack"],
+      "Safety": ["PPE", "safety goggles", "gloves", "hazard", "spill", "fire extinguisher"],
+      "Maintenance": ["preventive maintenance", "corrective maintenance"],
+      "Documents & Roles": ["work order", "checklist", "specialist"]
+    },
+    "stress_map": {
+      "workshop": "WORK-shop (●○)",
+      "service bay": "SER-vice BAY (●○ ●)",
+      "workbench": "WORK-bench (●○)",
+      "toolbox": "TOOL-box (●○)",
+      "wrench": "WRENCH (●)",
+      "ratchet": "RATCH-et (●○)",
+      "socket": "SOCK-et (●○)",
+      "torque wrench": "TORQUE WRENCH (● ●)",
+      "floor jack": "FLOOR JACK (● ●)",
+      "PPE": "P-P-E (●-●-●)",
+      "safety goggles": "SAFE-ty GOG-gles (●○ ●○)",
+      "gloves": "GLOVES (●)",
+      "hazard": "HAZ-ard (●○)",
+      "spill": "SPILL (●)",
+      "fire extinguisher": "FIRE ex-TING-guish-er (● ○-●-○-○)",
+      "preventive maintenance": "pre-VEN-tive MAIN-te-nance (○-●-○ ●-○-○)",
+      "corrective maintenance": "cor-REC-tive MAIN-te-nance (○-●-○ ●-○-○)",
+      "work order": "WORK OR-der (● ●-○)",
+      "checklist": "CHECK-list (●○)",
+      "specialist": "SPE-cial-ist (●-○-○)"
+    }
+  },
+
+  "archetype_used": [
+    "A — Word Wall / Phonics (Actividad 1: presentación + ancla visual + pronunciación)",
+    "B — Vocabulary Development + Juego (Actividad 2: flashcards + competencia de categorías)",
+    "D — Writing Scaffolding en formatos reales (Actividad 3: Daily Checklist + Work Order)"
+  ],
+
+  "trabajo_autonomo": {
+    "duracion_h": 0.75,
+    "actividades": [
+      "Auto-test de los 20 flashcards: término → imagen → oración oral en contexto de su taller real (≥2 rondas, cronometrado 10 min)",
+      "Fotografiar el Word Wall del aula y agregarlo al cuaderno de vocabulario personal",
+      "Preview S3: leer Grammar Formula box de PM-2.10 (imperativo técnico) y escribir 3 instrucciones de seguridad reales de su taller en inglés usando Check / Use / Wear / Don't..."
+    ]
+  },
+
+  "gfpi_tag": "3.3-APROPIACION-VOCABULARY",
+  "instructor_notes": {
+    "sequence_in_s2": "PM-2.5 se ejecuta PRIMERO en S2 (bloque SET-UP + WHILE-A), seguido de PM-2.3 (The Master Anchor, lectura). El Word Wall debe estar físicamente en el aula y visible durante PM-2.3.",
+    "flashcard_battle": "Reglas: 1 set por par. Aprendiz A muestra imagen, Aprendiz B dice término + pronuncia + usa en oración. Gana quien completa más tarjetas correctamente en 5 minutos. El instructor cronometra.",
+    "category_race": "Tablero A3 en cada mesa. Tiempo: 3 minutos. Luego revisión grupal proyectada. Errores frecuentes → oportunidad de drilling correctivo (recast + choral).",
+    "no_calibration": "El término 'calibration' fue eliminado del Toolbelt. Si un aprendiz lo menciona: 'Good — that's a real tool, but in this guide we use specialist as term 20. Let's practice: SPE-cial-ist...'"
+  }
+}

@@ -1,0 +1,1036 @@
+{
+  "pm_id": "PM-3.4",
+  "title": "Student Workbook — The Workshop Specialist",
+  "guide": "Guía 1.1",
+  "program": "Mantenimiento de Motores Diesel",
+  "cefr": "A1.1–A1.2",
+  "run_id": "DIESEL-2026-04-15",
+  "sections": [
+    {
+      "session": "COVER",
+      "title": "Cover Page",
+      "student_materials": [
+        {
+          "type": "cover",
+          "program": "Mantenimiento de Motores Diesel",
+          "guide": "Guía 1.1 — The Workshop Specialist",
+          "document_title": "Cuaderno del Aprendiz",
+          "cefr": "A1.1–A1.2",
+          "fields": [
+            "Nombre del aprendiz: ___________________________________",
+            "Ficha: _______________",
+            "Grupo: _______________",
+            "Fecha de inicio: _______________"
+          ]
+        }
+      ]
+    },
+    {
+      "session": "INTRO",
+      "title": "How to Use This Workbook",
+      "student_materials": [
+        {
+          "type": "intro_page",
+          "symbols_guide": [
+            { "symbol": "WRITE", "meaning": "Write your answer in the space provided" },
+            { "symbol": "READ", "meaning": "Read the text or card carefully" },
+            { "symbol": "LISTEN", "meaning": "Listen to the dialogue or audio" },
+            { "symbol": "SPEAK", "meaning": "Practice speaking out loud" }
+          ],
+          "session_overview": [
+            { "tab": "S1", "title": "The Workshop Comes Alive", "focus": "Vocabulary & Self-Assessment" },
+            { "tab": "S2", "title": "Read the Workshop", "focus": "Reading & Vocabulary" },
+            { "tab": "S3", "title": "Write the Workshop", "focus": "Grammar & Writing" },
+            { "tab": "S4", "title": "Tuning In & Speaking Up", "focus": "Listening & Speaking" },
+            { "tab": "S5", "title": "The Workshop in Action", "focus": "Language Functions" },
+            { "tab": "S6", "title": "Prove What You Know", "focus": "Cuestionario Consolidado" },
+            { "tab": "S7", "title": "Final Mission Prep", "focus": "Rehearsal & Role Cards" },
+            { "tab": "S8", "title": "The Full Circle", "focus": "Reflection & Celebration" }
+          ],
+          "evaluations_note": "This workbook contains 6 formal evidence tasks (E1–E6) plus a Final Mission. Each evidence is marked with a EVIDENCE flag. Your instructor will score these. All other activities are practice — they help you prepare."
+        }
+      ]
+    },
+    {
+      "session": "S1",
+      "title": "The Workshop Comes Alive",
+      "student_materials": [
+        {
+          "type": "kwl_chart",
+          "title": "KWL Chart — The Diesel Workshop",
+          "instructions": "Fill in columns K and W today. You will complete column L in Session 8.",
+          "columns": [
+            {
+              "letter": "K",
+              "heading": "What I KNOW",
+              "prompt": "What do you already know about workshops and diesel engines? Write 3–5 ideas.",
+              "lines": 8
+            },
+            {
+              "letter": "W",
+              "heading": "What I WANT to learn",
+              "prompt": "What do you want to learn in this guide? Write 3–5 questions.",
+              "lines": 8
+            },
+            {
+              "letter": "L",
+              "heading": "What I LEARNED",
+              "prompt": "Complete this column in Session 8.",
+              "lines": 8,
+              "locked_until": "S8"
+            }
+          ]
+        },
+        {
+          "type": "gap_cards_table",
+          "title": "Gap Cards — Self-Rating Scale",
+          "instructions": "Rate yourself honestly from 1 (cannot do this yet) to 5 (can do this very well). Fill in the S1 column today. You will complete the S8 column in Session 8.",
+          "scale": "1 = Not yet | 2 = A little | 3 = Sometimes | 4 = Usually | 5 = Yes, confidently",
+          "statements": [
+            { "n": 1, "statement": "I can name 15 of the 20 key tools and areas of a diesel workshop in English." },
+            { "n": 2, "statement": "I can classify types of maintenance (preventive, corrective, predictive) in English." },
+            { "n": 3, "statement": "I can identify and report a safety hazard to my supervisor in English." },
+            { "n": 4, "statement": "I can fill in a daily inspection checklist in English." },
+            { "n": 5, "statement": "I can give basic instructions about PPE in English." },
+            { "n": 6, "statement": "I can describe the current state of a service bay in English." },
+            { "n": 7, "statement": "I can read a short article about workshop tools and understand the main ideas." },
+            { "n": 8, "statement": "I can write a work order header with the correct fields in English." },
+            { "n": 9, "statement": "I can use imperatives to give instructions (e.g., Check the floor jack.)." },
+            { "n": 10, "statement": "I can use 'There is / There are' to describe workshop conditions." },
+            { "n": 11, "statement": "I can use prepositions of place (on, next to, near, under) correctly." },
+            { "n": 12, "statement": "I can listen to a short dialogue and answer comprehension questions." },
+            { "n": 13, "statement": "I can give a 60-second oral workshop readiness report in English." },
+            { "n": 14, "statement": "I can request tools or help from a colleague in English." },
+            { "n": 15, "statement": "I can confirm that I understood an instruction in English." },
+            { "n": 16, "statement": "I can report the status of a bay to my supervisor in English." },
+            { "n": 17, "statement": "I can pronounce 'fire extinguisher' and 'torque wrench' clearly." },
+            { "n": 18, "statement": "I can pronounce 'preventive maintenance' and 'calibration' clearly." },
+            { "n": 19, "statement": "I can complete a team workshop simulation using all 5 communication functions." },
+            { "n": 20, "statement": "I can reflect on my English learning progress and identify areas to improve." }
+          ],
+          "columns": ["S1 Rating (1–5)", "S8 Rating (1–5)", "Delta (S8 – S1)"]
+        },
+        {
+          "type": "open_writing_box",
+          "title": "What I Noticed Today",
+          "prompt": "Write 3–4 sentences about something you noticed or learned in today's session. You can write in English or Spanish.",
+          "lines": 4
+        }
+      ]
+    },
+    {
+      "session": "S2",
+      "title": "Read the Workshop",
+      "student_materials": [
+        {
+          "type": "word_wall_table",
+          "title": "The Toolbelt 20 — Word Wall",
+          "instructions": "These are your 20 key words for the whole course. Study them. In the 'My Sentence' column, write your own sentence using each word.",
+          "categories": [
+            {
+              "name": "ENVIRONMENT",
+              "color": "green",
+              "terms": ["workshop", "service bay", "workbench", "toolbox"]
+            },
+            {
+              "name": "TOOLS & EQUIPMENT",
+              "color": "blue",
+              "terms": ["wrench", "ratchet", "socket", "torque wrench", "floor jack"]
+            },
+            {
+              "name": "SAFETY",
+              "color": "red",
+              "terms": ["PPE", "safety goggles", "gloves", "hazard", "spill", "fire extinguisher"]
+            },
+            {
+              "name": "MAINTENANCE TYPES",
+              "color": "yellow",
+              "terms": ["preventive maintenance", "corrective maintenance"]
+            },
+            {
+              "name": "DOCUMENTS + QUALITY",
+              "color": "purple",
+              "terms": ["work order", "checklist", "calibration"]
+            }
+          ],
+          "columns": ["Term", "Category", "My Sentence (write your own)"]
+        },
+        {
+          "type": "cuestionario",
+          "evidence": "E1",
+          "title": "Cuestionario No 1 — Reading Comprehension",
+          "instructions": "Answer all 5 questions. Choose the correct option (a, b, or c) or write True / False. Work alone. No text during the quiz.",
+          "items": [
+            {
+              "n": 1,
+              "q": "What does a torque wrench do?",
+              "options": { "a": "It lifts the vehicle", "b": "It applies the correct force to a bolt", "c": "It cuts metal" }
+            },
+            {
+              "n": 2,
+              "q": "Why is the floor jack a safety tool?",
+              "options": { "a": "Because it is heavy", "b": "Because it is red", "c": "Because it lifts the vehicle safely" }
+            },
+            {
+              "n": 3,
+              "q": "Complete: 'The ratchet is fast in ___.'",
+              "options": { "a": "big rooms", "b": "tight spaces", "c": "the office" }
+            },
+            {
+              "n": 4,
+              "q": "What does calibration ensure?",
+              "options": { "a": "The tool is heavy", "b": "The tool is expensive", "c": "The tool is accurate" }
+            },
+            {
+              "n": 5,
+              "q": "True or False: 'A good technician never cleans the workbench.'",
+              "format": "true_false",
+              "answer_space": "___________"
+            }
+          ]
+        },
+        {
+          "type": "matching_exercise",
+          "title": "Vocabulary Match — Column A / Column B",
+          "instructions": "Match each term in Column A with its correct definition in Column B. Write the letter on the line.",
+          "column_a": [
+            { "n": 1, "term": "floor jack" },
+            { "n": 2, "term": "PPE" },
+            { "n": 3, "term": "calibration" },
+            { "n": 4, "term": "work order" },
+            { "n": 5, "term": "hazard" },
+            { "n": 6, "term": "workbench" },
+            { "n": 7, "term": "spill" },
+            { "n": 8, "term": "preventive maintenance" },
+            { "n": 9, "term": "ratchet" },
+            { "n": 10, "term": "checklist" }
+          ],
+          "column_b": [
+            { "letter": "a", "definition": "A document describing a repair task" },
+            { "letter": "b", "definition": "Regular care to avoid breakdowns" },
+            { "letter": "c", "definition": "A tool that lifts the vehicle safely" },
+            { "letter": "d", "definition": "Something dangerous in the workshop" },
+            { "letter": "e", "definition": "Making sure a tool is accurate" },
+            { "letter": "f", "definition": "Personal Protective Equipment" },
+            { "letter": "g", "definition": "Liquid on the floor (oil, coolant)" },
+            { "letter": "h", "definition": "A flat surface where you work" },
+            { "letter": "i", "definition": "A list of items to verify" },
+            { "letter": "j", "definition": "A fast tool for tight spaces" }
+          ]
+        }
+      ]
+    },
+    {
+      "session": "S3",
+      "title": "Write the Workshop",
+      "student_materials": [
+        {
+          "type": "daily_inspection_checklist",
+          "title": "Daily Inspection Checklist — Bay ___",
+          "instructions": "Complete all fields. Use Toolbelt vocabulary. Mark each item OK or Needs Attention. Write at least 2 observations.",
+          "header_fields": [
+            "Bay: _______________",
+            "Date: _______________",
+            "Technician: _______________",
+            "Time: _______________"
+          ],
+          "items": [
+            { "n": 1, "item": "Floor jack", "status": "OK / Needs Attention", "observation_space": true },
+            { "n": 2, "item": "Toolbox", "status": "OK / Needs Attention", "observation_space": true },
+            { "n": 3, "item": "Safety goggles", "status": "OK / Needs Attention", "observation_space": true },
+            { "n": 4, "item": "Gloves (PPE)", "status": "OK / Needs Attention", "observation_space": true },
+            { "n": 5, "item": "Fire extinguisher", "status": "OK / Needs Attention", "observation_space": true },
+            { "n": 6, "item": "Spill check", "status": "OK / No spill", "observation_space": true },
+            { "n": 7, "item": "Workbench", "status": "OK / Needs Attention", "observation_space": true },
+            { "n": 8, "item": "_______________", "status": "OK / Needs Attention", "observation_space": true },
+            { "n": 9, "item": "_______________", "status": "OK / Needs Attention", "observation_space": true },
+            { "n": 10, "item": "_______________", "status": "OK / Needs Attention", "observation_space": true }
+          ],
+          "bay_status_field": "Bay ___ STATUS: READY / NOT READY",
+          "required_actions_space": "Required Actions: ___________________________________"
+        },
+        {
+          "type": "work_order_header",
+          "title": "Work Order Header",
+          "instructions": "Complete all 6 fields in English. Use Toolbelt vocabulary.",
+          "fields": [
+            { "n": 1, "label": "Vehicle", "space": "___________________________________" },
+            { "n": 2, "label": "Bay", "space": "_______________" },
+            { "n": 3, "label": "Technician", "space": "___________________________________" },
+            { "n": 4, "label": "Maintenance Type", "space": "___________________________________" },
+            { "n": 5, "label": "Tools Needed", "space": "___________________________________" },
+            { "n": 6, "label": "Observations", "space": "___________________________________" }
+          ]
+        },
+        {
+          "type": "writing_self_checklist",
+          "evidence": "E2",
+          "title": "Lista de Verificación No 2 — Writing Self-Check",
+          "instructions": "Before you submit your Checklist and Work Order, check your own work. Mark YES or NO for each criterion.",
+          "criteria": [
+            { "n": 1, "criterion": "My Daily Inspection Checklist has minimum 8 items verified.", "check": "YES / NO" },
+            { "n": 2, "criterion": "Each item uses correct Toolbelt vocabulary.", "check": "YES / NO" },
+            { "n": 3, "criterion": "I have written at least 2 observations in English.", "check": "YES / NO" },
+            { "n": 4, "criterion": "The bay status is justified in English.", "check": "YES / NO" },
+            { "n": 5, "criterion": "My Work Order has minimum 6 fields complete.", "check": "YES / NO" },
+            { "n": 6, "criterion": "I used 'There is / There are' correctly in my observations.", "check": "YES / NO" },
+            { "n": 7, "criterion": "I used imperatives correctly in required actions.", "check": "YES / NO" },
+            { "n": 8, "criterion": "I used prepositions of place to locate tools.", "check": "YES / NO" },
+            { "n": 9, "criterion": "The spelling of Toolbelt terms is correct.", "check": "YES / NO" },
+            { "n": 10, "criterion": "My document is legible, organized, and complete.", "check": "YES / NO" }
+          ]
+        }
+      ]
+    },
+    {
+      "session": "S4",
+      "title": "Tuning In & Speaking Up",
+      "student_materials": [
+        {
+          "type": "stock_card_a",
+          "title": "Stock Card A — Bay Status",
+          "instructions": "Choose your bay number and select the conditions. Use this card to prepare your Workshop Readiness Report.",
+          "fields": [
+            "Bay number: Bay ___ (1, 2, or 3)",
+            "Workbench: clean / dirty",
+            "Toolbox: closed / open",
+            "Tools on workbench: wrench / ratchet / socket / torque wrench",
+            "Floor jack: OK — no leaks / needs attention",
+            "Floor: clean / spill near ___",
+            "Fire extinguisher: next to bay door / missing",
+            "PPE: ready — gloves + goggles / incomplete",
+            "Daily Inspection Checklist: complete / pending"
+          ]
+        },
+        {
+          "type": "stock_card_b",
+          "title": "Stock Card B — Sentence Starters (Reference Card)",
+          "instructions": "Use these sentence starters to build your report. This card is pre-filled — it is a reference tool.",
+          "sentence_starters": [
+            "Good morning. This is the Bay ___ Readiness Report.",
+            "There is a ___ on / under / next to ___.",
+            "There are ___ in the toolbox.",
+            "The ___ is on / under / next to / near ___.",
+            "The floor is clean. / There is a spill near ___.",
+            "I check the ___. No leaks. The lift works.",
+            "Bay ___ is clean. Bay ___ is safe. Bay ___ is ready.",
+            "Preventive maintenance checklist: complete / pending."
+          ]
+        },
+        {
+          "type": "chunk_cards_reference",
+          "title": "Chunk Cards — Pronunciation Reference",
+          "instructions": "Practice saying each term using the chunks. Repeat each one 3 times.",
+          "cards": [
+            {
+              "term": "fire extinguisher",
+              "ipa": "/ˈfaɪər ɪkˈstɪŋɡwɪʃər/",
+              "chunks": ["FIRE", "ex-TIN", "gwish-er"],
+              "example": "The fire extinguisher is next to the bay door."
+            },
+            {
+              "term": "preventive maintenance",
+              "ipa": "/prɪˈvɛntɪv ˈmeɪntənəns/",
+              "chunks": ["pre-VEN-tive", "MAIN-te-nance"],
+              "example": "Preventive maintenance checklist: complete."
+            },
+            {
+              "term": "calibration",
+              "ipa": "/ˌkælɪˈbreɪʃən/",
+              "chunks": ["cal-i-BRA-tion"],
+              "example": "Check the calibration of the torque wrench."
+            },
+            {
+              "term": "torque wrench",
+              "ipa": "/tɔːrk rɛntʃ/",
+              "chunks": ["TORK", "rench"],
+              "example": "The torque wrench is on the workbench."
+            },
+            {
+              "term": "floor jack",
+              "ipa": "/flɔːr dʒæk/",
+              "chunks": ["FLOOR", "jack"],
+              "example": "Check the floor jack. No leaks."
+            }
+          ]
+        },
+        {
+          "type": "cuestionario",
+          "evidence": "E3",
+          "title": "Cuestionario No 3 — Listening Comprehension",
+          "instructions": "Listen to the Bay 2 Safety Briefing dialogue. Then answer these 5 questions. Work alone. No dialogue text allowed.",
+          "items": [
+            {
+              "n": 1,
+              "q": "What does Carlos ask Valentina to put on first?",
+              "options": { "a": "A work order", "b": "Gloves and goggles", "c": "A torque wrench" },
+              "answer_bubble": true
+            },
+            {
+              "n": 2,
+              "q": "Where is the oil spill?",
+              "options": { "a": "Under the workbench", "b": "On the toolbox", "c": "Near the bay door" },
+              "answer_bubble": true
+            },
+            {
+              "n": 3,
+              "q": "Where should the fire extinguisher always be?",
+              "options": { "a": "On the workbench", "b": "In the toolbox", "c": "Next to the bay door" },
+              "answer_bubble": true
+            },
+            {
+              "n": 4,
+              "q": "How does Carlos say to check the floor jack?",
+              "options": { "a": "Look for spills and clean it", "b": "Look for leaks and test the lift", "c": "Put it on the workbench" },
+              "answer_bubble": true
+            },
+            {
+              "n": 5,
+              "q": "What does Valentina say at the end?",
+              "options": { "a": "Bay 2 has a problem.", "b": "The floor jack is broken.", "c": "Checklist complete. Bay 2 is ready." },
+              "answer_bubble": true
+            }
+          ]
+        },
+        {
+          "type": "speaking_prep",
+          "title": "My Workshop Readiness Report — Preparation Outline",
+          "instructions": "Use Stock Card A and Stock Card B to build YOUR report. Write bullet points — not a full script. Practice speaking from these notes.",
+          "prompts": [
+            { "n": 1, "prompt": "Opening — Bay number + greeting:", "lines": 2 },
+            { "n": 2, "prompt": "Equipment location — 2 There is/are sentences:", "lines": 2 },
+            { "n": 3, "prompt": "Safety check — fire extinguisher + PPE:", "lines": 2 },
+            { "n": 4, "prompt": "Closing — Bay status + checklist:", "lines": 2 }
+          ]
+        }
+      ]
+    },
+    {
+      "session": "S5",
+      "title": "The Workshop in Action",
+      "student_materials": [
+        {
+          "type": "language_functions_reference",
+          "title": "Language Functions Quick Reference — F1 to F5",
+          "instructions": "Study these 5 communication functions. You will use all of them in the simulation.",
+          "functions": [
+            {
+              "code": "F1",
+              "name": "Giving Instructions",
+              "grammar": "Imperative: verb (no subject)",
+              "examples": ["Check the floor jack.", "Put on your goggles.", "Clean the oil spill."],
+              "who": "Supervisor → Team"
+            },
+            {
+              "code": "F2",
+              "name": "Requesting Tools / Help",
+              "grammar": "'Can I have...' / 'I need...'",
+              "examples": ["Can I have the torque wrench?", "I need the socket set.", "Where is the ratchet?"],
+              "who": "Technician → Colleague"
+            },
+            {
+              "code": "F3",
+              "name": "Describing Conditions",
+              "grammar": "There is/are + preposition of place",
+              "examples": ["There is a spill near Bay 1.", "There are three tools on the workbench.", "The floor jack is under the vehicle."],
+              "who": "Any direction"
+            },
+            {
+              "code": "F4",
+              "name": "Reporting to Supervisor",
+              "grammar": "Present Simple + There is/are",
+              "examples": ["Bay 2 is ready, Carlos.", "There is a problem with the floor jack.", "Preventive maintenance checklist: complete."],
+              "who": "Technician → Supervisor"
+            },
+            {
+              "code": "F5",
+              "name": "Confirming Understanding",
+              "grammar": "Fixed expressions",
+              "examples": ["Understood.", "Got it. I'll do it now.", "Yes, Carlos. No problem."],
+              "who": "Response to any instruction"
+            }
+          ]
+        },
+        {
+          "type": "phrase_cards_sort",
+          "title": "15 Phrase Cards — Sort by Function",
+          "instructions": "Read each phrase. Write the correct function code (F1, F2, F3, F4, or F5) next to each phrase.",
+          "cards": [
+            { "n": 1, "phrase": "Check the floor jack before you start.", "function_space": "F___" },
+            { "n": 2, "phrase": "Put on your goggles and gloves.", "function_space": "F___" },
+            { "n": 3, "phrase": "Clean the oil spill near the bay door.", "function_space": "F___" },
+            { "n": 4, "phrase": "Can I have the torque wrench?", "function_space": "F___" },
+            { "n": 5, "phrase": "I need the socket set.", "function_space": "F___" },
+            { "n": 6, "phrase": "Where is the ratchet? Can I use it?", "function_space": "F___" },
+            { "n": 7, "phrase": "There is a spill near Bay 1.", "function_space": "F___" },
+            { "n": 8, "phrase": "There are three tools on the workbench.", "function_space": "F___" },
+            { "n": 9, "phrase": "The floor jack is under the vehicle.", "function_space": "F___" },
+            { "n": 10, "phrase": "Bay 2 is ready, Carlos.", "function_space": "F___" },
+            { "n": 11, "phrase": "There is a problem with the floor jack.", "function_space": "F___" },
+            { "n": 12, "phrase": "Preventive maintenance checklist: complete.", "function_space": "F___" },
+            { "n": 13, "phrase": "Understood.", "function_space": "F___" },
+            { "n": 14, "phrase": "Got it. I'll do it now.", "function_space": "F___" },
+            { "n": 15, "phrase": "Checklist complete. Bay 2 is ready.", "function_space": "F___" }
+          ]
+        },
+        {
+          "type": "personal_communication_card",
+          "title": "My Personal Communication Card",
+          "instructions": "Write YOUR OWN sentences for each function. Do not copy from the board. These are your words.",
+          "sections": [
+            {
+              "function": "F1 — GIVE INSTRUCTIONS",
+              "trigger": "When you are the supervisor or lead.",
+              "write_prompt": "Write 2 imperative sentences you would actually use:",
+              "lines": 2
+            },
+            {
+              "function": "F2 — REQUEST TOOLS / HELP",
+              "trigger": "When you need something from a colleague.",
+              "write_prompt": "Write 2 request phrases using 'Can I have...' or 'I need...':",
+              "lines": 2
+            },
+            {
+              "function": "F3 — DESCRIBE CONDITIONS",
+              "trigger": "When you see a problem or describe your bay.",
+              "write_prompt": "Write 2 sentences using 'There is/are + preposition':",
+              "lines": 2
+            },
+            {
+              "function": "F4 — REPORT TO SUPERVISOR",
+              "trigger": "When the supervisor asks for bay status.",
+              "write_prompt": "Write 2 report phrases: 'Bay ___ is ready, Carlos.' / 'There is a problem with ___.'",
+              "lines": 2
+            },
+            {
+              "function": "F5 — CONFIRM UNDERSTANDING",
+              "trigger": "After receiving any instruction or information.",
+              "write_prompt": "Write 3 confirmation expressions you feel comfortable saying:",
+              "lines": 2
+            }
+          ]
+        },
+        {
+          "type": "peer_evaluation_sheet",
+          "title": "Peer Evaluation — Observer Sheet",
+          "instructions": "Watch your classmates' simulation. Check each function you hear. Write one example you heard.",
+          "columns": ["Function", "Did you hear it? (YES / NO)", "Example I heard"],
+          "rows": [
+            { "function": "F1 — Giving instructions" },
+            { "function": "F2 — Requesting tools/help" },
+            { "function": "F3 — Describing conditions" },
+            { "function": "F4 — Reporting to supervisor" },
+            { "function": "F5 — Confirming understanding" }
+          ]
+        }
+      ]
+    },
+    {
+      "session": "S6",
+      "title": "Prove What You Know",
+      "student_materials": [
+        {
+          "type": "cuestionario_consolidado",
+          "evidence": "E6",
+          "title": "Cuestionario Consolidado No 6",
+          "instructions": "Answer all 25 questions. Choose the correct option (a, b, or c) unless the question says True or False. You have 90 minutes. No materials, no Word Wall, no Communication Card.",
+          "sections": [
+            {
+              "section": "SECTION 1 — READING (Items R1–R5)",
+              "note": "Based on the article 'Tools Every Diesel Technician Needs'",
+              "items": [
+                {
+                  "n": "R1",
+                  "q": "What is the main topic of the article?",
+                  "options": { "a": "Workshop safety rules", "b": "Essential tools for diesel technicians", "c": "How to clean a workshop" }
+                },
+                {
+                  "n": "R2",
+                  "q": "A torque wrench is used to ___.",
+                  "options": { "a": "lift vehicles", "b": "apply the correct force to a bolt", "c": "measure oil levels" }
+                },
+                {
+                  "n": "R3",
+                  "q": "True or False: The ratchet works well in large spaces.",
+                  "format": "true_false",
+                  "answer_space": "___________"
+                },
+                {
+                  "n": "R4",
+                  "q": "Where does a technician keep tools organized?",
+                  "options": { "a": "On the workbench", "b": "In the toolbox", "c": "Under the vehicle" }
+                },
+                {
+                  "n": "R5",
+                  "q": "What does 'calibration' mean in the article?",
+                  "options": { "a": "Cleaning the tool", "b": "Checking that the tool is accurate", "c": "Replacing a broken tool" }
+                }
+              ]
+            },
+            {
+              "section": "SECTION 2 — VOCABULARY (Items V1–V5)",
+              "note": "Based on the Toolbelt 20 terms",
+              "items": [
+                {
+                  "n": "V1",
+                  "q": "What is a 'workbench'?",
+                  "options": { "a": "A storage box for tools", "b": "A flat surface to work on", "c": "A type of wrench" }
+                },
+                {
+                  "n": "V2",
+                  "q": "'Hazard' means ___.",
+                  "options": { "a": "a tool for lifting", "b": "something dangerous", "c": "a document" }
+                },
+                {
+                  "n": "V3",
+                  "q": "Which of these is PPE?",
+                  "options": { "a": "Torque wrench", "b": "Safety goggles", "c": "Floor jack" }
+                },
+                {
+                  "n": "V4",
+                  "q": "A 'work order' is ___.",
+                  "options": { "a": "an instruction to lift a vehicle", "b": "a document describing a repair task", "c": "a safety tool" }
+                },
+                {
+                  "n": "V5",
+                  "q": "'Preventive maintenance' means ___.",
+                  "options": { "a": "fixing a broken machine", "b": "regular care to avoid breakdowns", "c": "measuring tool accuracy" }
+                }
+              ]
+            },
+            {
+              "section": "SECTION 3 — GRAMMAR (Items G1–G5)",
+              "note": "Based on Imperatives, There is/are, Prepositions of place",
+              "items": [
+                {
+                  "n": "G1",
+                  "q": "Which sentence is an imperative?",
+                  "options": { "a": "I check the floor jack.", "b": "Check the floor jack.", "c": "The floor jack is checked." }
+                },
+                {
+                  "n": "G2",
+                  "q": "Complete: '___ a spill near the bay door.'",
+                  "options": { "a": "There are", "b": "There is", "c": "Is there" }
+                },
+                {
+                  "n": "G3",
+                  "q": "Complete: 'The tools ___ in the toolbox.'",
+                  "options": { "a": "is", "b": "are", "c": "has" }
+                },
+                {
+                  "n": "G4",
+                  "q": "Complete: 'The fire extinguisher is ___ the bay door.'",
+                  "options": { "a": "on", "b": "under", "c": "next to" }
+                },
+                {
+                  "n": "G5",
+                  "q": "Which sentence has a correct preposition of place?",
+                  "options": { "a": "The wrench is near of the workbench.", "b": "The wrench is on the workbench.", "c": "The wrench is in front the workbench." }
+                }
+              ]
+            },
+            {
+              "section": "SECTION 4 — LISTENING (Items L1–L5)",
+              "note": "Based on the Bay 2 Safety Briefing dialogue (Carlos and Valentina)",
+              "items": [
+                {
+                  "n": "L1",
+                  "q": "In the dialogue, who is the supervisor?",
+                  "options": { "a": "Valentina Cruz", "b": "Carlos Mendoza", "c": "Santiago Rios" }
+                },
+                {
+                  "n": "L2",
+                  "q": "What PPE does Carlos ask Valentina to wear?",
+                  "options": { "a": "Gloves only", "b": "Goggles only", "c": "Gloves and goggles" }
+                },
+                {
+                  "n": "L3",
+                  "q": "Where is the oil spill in the dialogue?",
+                  "options": { "a": "Under the workbench", "b": "Near the bay door", "c": "In the toolbox" }
+                },
+                {
+                  "n": "L4",
+                  "q": "Carlos says the fire extinguisher is always ___.",
+                  "options": { "a": "on the workbench", "b": "in the toolbox", "c": "next to the bay door" }
+                },
+                {
+                  "n": "L5",
+                  "q": "What does Valentina say at the end of the dialogue?",
+                  "options": { "a": "Bay 2 has a problem.", "b": "I need more PPE.", "c": "Checklist complete. Bay 2 is ready." }
+                }
+              ]
+            },
+            {
+              "section": "SECTION 5 — LANGUAGE FUNCTIONS (Items LF1–LF5)",
+              "note": "Based on the 5 communication functions from Session 5",
+              "items": [
+                {
+                  "n": "LF1",
+                  "q": "Carlos says: 'Check the torque wrench.' What communication function is this?",
+                  "options": { "a": "Reporting to supervisor", "b": "Giving instructions", "c": "Confirming understanding" }
+                },
+                {
+                  "n": "LF2",
+                  "q": "Valentina says: 'Can I have the socket set?' What function?",
+                  "options": { "a": "Requesting tools/help", "b": "Describing conditions", "c": "Giving instructions" }
+                },
+                {
+                  "n": "LF3",
+                  "q": "'There is a spill near Bay 2.' What function?",
+                  "options": { "a": "Confirming understanding", "b": "Reporting to supervisor", "c": "Describing conditions" }
+                },
+                {
+                  "n": "LF4",
+                  "q": "Santiago says: 'Bay 3 is ready, Carlos.' What function?",
+                  "options": { "a": "Reporting to supervisor", "b": "Giving instructions", "c": "Requesting help" }
+                },
+                {
+                  "n": "LF5",
+                  "q": "Valentina says: 'Got it. I'll do it now.' What function?",
+                  "options": { "a": "Describing conditions", "b": "Confirming understanding", "c": "Requesting tools" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "skills_progression_map",
+          "title": "Skills Progression Map",
+          "instructions": "Rate yourself for each skill. Use the scale 1–5. Calculate your growth.",
+          "skills": ["Reading", "Vocabulary", "Grammar", "Writing", "Listening", "Speaking", "Language Functions"],
+          "columns": ["Skill", "S1 Rating (1–5)", "S6 Rating (1–5)", "Goal for S8 (1–5)"]
+        }
+      ]
+    },
+    {
+      "session": "S7",
+      "title": "Final Mission Prep",
+      "student_materials": [
+        {
+          "type": "role_card_template",
+          "title": "Role Card — Final Mission",
+          "instructions": "Complete this card for YOUR role. Write your OWN sentences — do not copy from the board. This card prepares you for S8. You may review it before your performance.",
+          "fields": [
+            { "label": "My role (circle one)", "value": "CARLOS   /   VALENTINA   /   SANTIAGO" },
+            { "label": "My bay", "value": "Bay ___ (1, 2, or 3)" },
+            { "label": "My 3 key sentences (write your OWN — not from the model)", "lines": 6,
+              "sentence_slots": [
+                { "n": 1, "function_label": "(F___): " },
+                { "n": 2, "function_label": "(F___): " },
+                { "n": 3, "function_label": "(F___): " }
+              ]
+            },
+            { "label": "My 5 Toolbelt terms I will use", "value": "___, ___, ___, ___, ___" },
+            { "label": "My cue from Carlos (what triggers my first line?)", "lines": 1 },
+            { "label": "My transition (how do I pass the floor to my teammate?)", "lines": 1 }
+          ]
+        },
+        {
+          "type": "final_mission_task_card",
+          "title": "Final Mission Task Card — The Diesel Workshop Morning Briefing",
+          "scenario": "Monday, 7:00 AM. Bay assigned by instructor. The Workshop Training Coordinator arrives for the morning inspection. Your team of 3 delivers the complete Bay Readiness Briefing in English.",
+          "requirements": [
+            "Duration: 3–4 minutes (strictly timed)",
+            "All 5 language functions visible — minimum instances per role as shown below",
+            "15 or more Toolbelt terms used across the team (each distinct term counts once)",
+            "Minimum 3 direct exchanges between team members (not 3 separate monologues)",
+            "There is/are + preposition in minimum 3 sentences",
+            "Minimum 2 imperatives from the Carlos role",
+            "Closing: 'Bay ___ is ready. Briefing complete.' or equivalent"
+          ],
+          "roles_table": [
+            {
+              "role": "CARLOS — Lead Technician / Supervisor",
+              "responsibilities": [
+                "Opens the briefing (greeting + bay identification)",
+                "Gives at least 2 instructions to the team (F1)",
+                "Receives the final readiness report (F4)",
+                "Confirms team readiness and closes the briefing"
+              ],
+              "minimum_functions": "F1 x2, F4 (receiving), F5 x1"
+            },
+            {
+              "role": "VALENTINA — Apprentice",
+              "responsibilities": [
+                "Describes bay conditions (F3 — There is/are + prepositions)",
+                "Requests tools or help from Santiago (F2)",
+                "Reports bay status to Carlos (F4)",
+                "Confirms instructions from Carlos (F5)"
+              ],
+              "minimum_functions": "F2 x1, F3 x2, F4 x1, F5 x1"
+            },
+            {
+              "role": "SANTIAGO — Technician",
+              "responsibilities": [
+                "Responds to tool/help requests from Valentina (F2 response)",
+                "Describes additional bay conditions (F3)",
+                "Confirms instructions (F5)",
+                "Contributes to final report (F4)"
+              ],
+              "minimum_functions": "F2 response x1, F3 x1, F5 x2"
+            }
+          ]
+        },
+        {
+          "type": "practice_feedback_form",
+          "title": "Practice Feedback Form — 3 Rounds",
+          "instructions": "After each rehearsal round, complete one row of this form.",
+          "rounds": [
+            {
+              "round": "Round 1",
+              "fields": [
+                { "label": "What went well", "lines": 2 },
+                { "label": "What to improve", "lines": 2 },
+                { "label": "Duration", "value": "___ min ___ sec" }
+              ]
+            },
+            {
+              "round": "Round 2",
+              "fields": [
+                { "label": "What went well", "lines": 2 },
+                { "label": "What to improve", "lines": 2 },
+                { "label": "Duration", "value": "___ min ___ sec" }
+              ]
+            },
+            {
+              "round": "Round 3 (Instructor Feedback)",
+              "fields": [
+                { "label": "Instructor strength noted", "lines": 2 },
+                { "label": "Improvement for S8", "lines": 2 },
+                { "label": "Follow-up question to prepare", "lines": 2 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "session": "S8",
+      "title": "The Full Circle",
+      "student_materials": [
+        {
+          "type": "gap_cards_s8_rerating",
+          "title": "Gap Cards — S8 Re-Rating (The Full Circle)",
+          "instructions": "You completed this table in Session 1. Now re-rate yourself TODAY. Then calculate your delta (S8 score minus S1 score). Celebrate your growth!",
+          "note": "Use the same 20 statements from your S1 table. Transfer your S1 ratings to column 2, write your S8 rating in column 3, then calculate delta.",
+          "columns": ["Statement #", "S1 Rating (from your S1 table)", "S8 Rating (today)", "Delta (+/-)"]
+        },
+        {
+          "type": "kwl_l_column",
+          "title": "KWL — Column L: What I LEARNED",
+          "instructions": "Go back to your KWL chart from Session 1. Now complete the L column. Write at least 5 complete sentences in English. Use vocabulary from the guide.",
+          "prompts": [
+            "In this guide, I learned that ___.",
+            "Now I can ___ in English.",
+            "I understand ___ better because ___.",
+            "Something that surprised me was ___.",
+            "I want to continue learning ___ because ___."
+          ],
+          "writing_space_lines": 10
+        },
+        {
+          "type": "letter_to_s1_self",
+          "title": "Letter to My Session 1 Self",
+          "instructions": "Write a letter to yourself as you were on Day 1 of this guide. Use the sentence frames below to get started. Write at least 5 sentences.",
+          "opening_sentence": "Dear [your name in Session 1],",
+          "frames": [
+            "You will learn ___.",
+            "You will be able to ___.",
+            "You won't believe that ___.",
+            "By Session 8, ___.",
+            "Don't worry about ___."
+          ],
+          "writing_space_lines": 12
+        },
+        {
+          "type": "peer_celebration_form",
+          "title": "Peer Celebration — What I Learned FROM You",
+          "instructions": "Think of a classmate. Name one specific moment during this guide when they surprised you, helped you, or showed you something. Be specific: name the session and the activity.",
+          "fields": [
+            { "label": "My classmate's name", "lines": 1 },
+            { "label": "The session and activity", "lines": 1 },
+            { "label": "What they did (be specific)", "lines": 3 },
+            { "label": "What it taught me", "lines": 2 }
+          ]
+        },
+        {
+          "type": "portfolio_checklist",
+          "title": "Portfolio Checklist — Evidence Summary",
+          "instructions": "Check the box when each evidence is complete and submitted.",
+          "items": [
+            { "evidence": "E1", "skill": "Reading", "session": "S2", "instrument": "Cuestionario No 1", "pts": "5 pts" },
+            { "evidence": "E2", "skill": "Writing", "session": "S3", "instrument": "Lista de Verificacion No 2", "pts": "5 pts" },
+            { "evidence": "E3", "skill": "Listening", "session": "S4", "instrument": "Cuestionario No 3", "pts": "5 pts" },
+            { "evidence": "E4", "skill": "Speaking", "session": "S4", "instrument": "Escala de estimacion No 4", "pts": "5 pts" },
+            { "evidence": "E5", "skill": "Language Functions", "session": "S5", "instrument": "Escala de estimacion No 5", "pts": "5 pts" },
+            { "evidence": "E6", "skill": "Cuestionario Consolidado", "session": "S6", "instrument": "Cuestionario No 6 (25 items)", "pts": "25 pts" },
+            { "evidence": "Final", "skill": "Final Mission", "session": "S8", "instrument": "Escala de estimacion No 6", "pts": "5 pts (holistic)" }
+          ]
+        }
+      ]
+    },
+    {
+      "session": "APPENDIX_A",
+      "title": "Appendix A — Toolbelt 20 Reference",
+      "student_materials": [
+        {
+          "type": "toolbelt_reference_table",
+          "title": "Appendix A — Toolbelt 20: Full Reference",
+          "instructions": "This is your complete vocabulary reference for the whole course. Study it. In the 'My Sentence' column, write your own sentence for each term.",
+          "terms": [
+            { "n": 1, "term": "workshop", "category": "Environment", "ipa": "/ˈwɜːrkʃɒp/" },
+            { "n": 2, "term": "service bay", "category": "Environment", "ipa": "/ˈsɜːrvɪs beɪ/" },
+            { "n": 3, "term": "workbench", "category": "Environment", "ipa": "/ˈwɜːrkbɛntʃ/" },
+            { "n": 4, "term": "toolbox", "category": "Environment", "ipa": "/ˈtuːlbɒks/" },
+            { "n": 5, "term": "wrench", "category": "Tools & Equipment", "ipa": "/rɛntʃ/" },
+            { "n": 6, "term": "ratchet", "category": "Tools & Equipment", "ipa": "/ˈrætʃɪt/" },
+            { "n": 7, "term": "socket", "category": "Tools & Equipment", "ipa": "/ˈsɒkɪt/" },
+            { "n": 8, "term": "torque wrench", "category": "Tools & Equipment", "ipa": "/tɔːrk rɛntʃ/" },
+            { "n": 9, "term": "floor jack", "category": "Tools & Equipment", "ipa": "/flɔːr dʒæk/" },
+            { "n": 10, "term": "PPE", "category": "Safety", "ipa": "/piː piː iː/" },
+            { "n": 11, "term": "safety goggles", "category": "Safety", "ipa": "/ˈseɪfti ˈɡɒɡəlz/" },
+            { "n": 12, "term": "gloves", "category": "Safety", "ipa": "/ɡlʌvz/" },
+            { "n": 13, "term": "hazard", "category": "Safety", "ipa": "/ˈhæzərd/" },
+            { "n": 14, "term": "spill", "category": "Safety", "ipa": "/spɪl/" },
+            { "n": 15, "term": "fire extinguisher", "category": "Safety", "ipa": "/ˈfaɪər ɪkˈstɪŋɡwɪʃər/" },
+            { "n": 16, "term": "preventive maintenance", "category": "Maintenance Types", "ipa": "/prɪˈvɛntɪv ˈmeɪntənəns/" },
+            { "n": 17, "term": "corrective maintenance", "category": "Maintenance Types", "ipa": "/kəˈrɛktɪv ˈmeɪntənəns/" },
+            { "n": 18, "term": "work order", "category": "Documents + Quality", "ipa": "/wɜːrk ˈɔːrdər/" },
+            { "n": 19, "term": "checklist", "category": "Documents + Quality", "ipa": "/ˈtʃɛklɪst/" },
+            { "n": 20, "term": "calibration", "category": "Documents + Quality", "ipa": "/ˌkælɪˈbreɪʃən/" }
+          ],
+          "columns": ["#", "Term", "Category", "IPA (pronunciation)", "My Sentence"]
+        }
+      ]
+    },
+    {
+      "session": "APPENDIX_B",
+      "title": "Appendix B — Language Functions Reference",
+      "student_materials": [
+        {
+          "type": "language_functions_full_reference",
+          "title": "Appendix B — F1–F5 Full Reference",
+          "functions": [
+            {
+              "code": "F1",
+              "name": "Giving Instructions / Dar instrucciones",
+              "grammar": "Imperative: base verb (no subject — 'you' is implied)",
+              "key_phrases": ["Check the ___.", "Put on your ___.", "Clean the ___.", "Inspect the ___.", "Organize the ___."],
+              "workshop_examples": [
+                "Check the floor jack before lifting.",
+                "Put on your safety goggles.",
+                "Clean the oil spill near the bay door."
+              ]
+            },
+            {
+              "code": "F2",
+              "name": "Requesting Tools / Help — Solicitar herramientas",
+              "grammar": "'Can I have...' / 'I need...' / 'Where is...?'",
+              "key_phrases": ["Can I have the ___?", "I need the ___.", "Where is the ___? Can I use it?", "Can you help me with ___?"],
+              "workshop_examples": [
+                "Can I have the torque wrench?",
+                "I need the socket set.",
+                "Where is the ratchet? Can I use it?"
+              ]
+            },
+            {
+              "code": "F3",
+              "name": "Describing Conditions — Describir condiciones",
+              "grammar": "There is/are + noun + preposition of place",
+              "key_phrases": ["There is a ___ near ___.", "There are ___ on ___.", "The ___ is under/on/next to ___."],
+              "workshop_examples": [
+                "There is a spill near Bay 1.",
+                "There are three tools on the workbench.",
+                "The floor jack is under the vehicle."
+              ]
+            },
+            {
+              "code": "F4",
+              "name": "Reporting to Supervisor — Reportar al supervisor",
+              "grammar": "Present Simple + There is/are — address supervisor by name",
+              "key_phrases": ["Bay ___ is ready, Carlos.", "There is a problem with ___.", "Checklist: complete.", "The ___ needs attention."],
+              "workshop_examples": [
+                "Bay 2 is ready, Carlos.",
+                "There is a problem with the floor jack, Carlos.",
+                "Preventive maintenance checklist: complete."
+              ]
+            },
+            {
+              "code": "F5",
+              "name": "Confirming Understanding — Confirmar comprension",
+              "grammar": "Fixed expressions — vary them to sound natural",
+              "key_phrases": ["Understood.", "Got it.", "I'll do it now.", "Yes, Carlos.", "No problem.", "Copy that."],
+              "workshop_examples": [
+                "Understood. I'll clean it now.",
+                "Got it. I'll do it now.",
+                "Yes, Carlos. No problem."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "session": "APPENDIX_C",
+      "title": "Appendix C — Evaluation Overview",
+      "student_materials": [
+        {
+          "type": "evaluation_overview",
+          "title": "Appendix C — Your Evaluation at a Glance",
+          "intro": "This guide has 6 formal evidences plus a Final Mission. Here is what each one tests, when it happens, and how it is scored.",
+          "evidences": [
+            {
+              "evidence": "E1 — Reading (Evidencia 1)",
+              "session": "Session 2",
+              "what": "You read an article about diesel tools and answer 5 multiple-choice questions from memory.",
+              "conditions": "No text during the quiz. 15 minutes.",
+              "score": "5 points (1 per correct answer)"
+            },
+            {
+              "evidence": "E2 — Writing (Evidencia 2)",
+              "session": "Session 3",
+              "what": "You write a complete Daily Inspection Checklist (8+ items) and Work Order header (6 fields) for Bay 2.",
+              "conditions": "Word Wall visible. 45 minutes. Individual work.",
+              "score": "5 points (10 criteria x 0.5 points each)"
+            },
+            {
+              "evidence": "E3 — Listening (Evidencia 3)",
+              "session": "Session 4",
+              "what": "You listen to the Bay 2 Safety Briefing dialogue and answer 5 questions from memory.",
+              "conditions": "No dialogue text. No Word Wall. 15 minutes.",
+              "score": "5 points (1 per correct answer)"
+            },
+            {
+              "evidence": "E4 — Speaking (Evidencia 4)",
+              "session": "Session 4",
+              "what": "You give a 60–90 second Workshop Readiness Report to the instructor (as supervisor) and answer 2 questions.",
+              "conditions": "Word Wall visible. No notes in hand during performance.",
+              "score": "5 points (5 criteria scored 1–5, averaged)"
+            },
+            {
+              "evidence": "E5 — Language Functions (Evidencia 5)",
+              "session": "Session 5",
+              "what": "Your team of 3 performs a 3–4 minute Workshop Opening Simulation using all 5 communication functions.",
+              "conditions": "Word Wall visible. No notes during performance. Dual evaluation: instructor + peer.",
+              "score": "5 points (5 criteria scored 1–5, averaged)"
+            },
+            {
+              "evidence": "E6 — Cuestionario Consolidado (Evidencia 6)",
+              "session": "Session 6",
+              "what": "25 multiple-choice questions covering all 5 skills: Reading, Vocabulary, Grammar, Listening, Language Functions.",
+              "conditions": "Closed materials. No Communication Card. No Word Wall. 90 minutes.",
+              "score": "25 points (1 per correct answer)"
+            },
+            {
+              "evidence": "Final Mission (Capstone)",
+              "session": "Session 8",
+              "what": "Your team delivers the complete Bay Readiness Briefing (3–4 minutes) with all 5 functions, 15+ Toolbelt terms, and team interaction.",
+              "conditions": "Word Wall visible. No notes during performance. Instructor as Training Coordinator.",
+              "score": "5 points (6 criteria scored 1–5, holistic team score)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

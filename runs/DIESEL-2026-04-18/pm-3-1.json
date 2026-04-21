@@ -1,0 +1,1373 @@
+{
+  "pm_id": "PM-3.1",
+  "run_id": "DIESEL-2026-04-18",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "generated_at": "2026-04-15",
+  "model": "claude-haiku-4-5-20251001",
+  "status": "completed",
+  "header": {
+    "programa": "Mantenimiento de los Motores Diesel",
+    "tipo": "Técnico",
+    "guia_numero": 1,
+    "guia_nombre": "The Workshop Specialist",
+    "cefr_level": "A1.1",
+    "intensidad_total_horas": 60,
+    "horas_directa": 48.75,
+    "horas_autonoma": 11.25,
+    "sesiones_total": 8,
+    "duracion_sesion_min": 360,
+    "nota": "Intensidad VARIABLE de 60h total (vs default 30h). Sesión = 6 horas presenciales. Discrepancia 0.75h documentada en PM-2.11 — distribuida naturalmente."
+  },
+  "overview_table": [
+    {
+      "session": 1,
+      "nombre": "The Wake-Up Call",
+      "worksheets": [
+        "PM-2.1",
+        "PM-2.2"
+      ],
+      "foco": "Reflexión inicial + Gap Analysis: activar conocimiento previo, mapear vocabulario, establecer Learning Contract",
+      "habilidades": "—",
+      "autonomo": "Vocabulary Preview (5 herramientas) + Self-assessment Gap Cards + Video preview"
+    },
+    {
+      "session": 2,
+      "nombre": "Reading the Workshop",
+      "worksheets": [
+        "PM-2.3",
+        "PM-2.5"
+      ],
+      "foco": "Reading Anchor (Popular Mechanics adaptado) + Vocabulary Toolbelt (20 términos) + categorización",
+      "habilidades": "R●, V●",
+      "autonomo": "Flashcard review + Original article reading + Daily Inspection Checklist field work",
+      "session_title": "Read the Manual",
+      "technical_focus": "B2 — Manual + vehicle systems"
+    },
+    {
+      "session": 3,
+      "nombre": "Write It Right",
+      "worksheets": [
+        "PM-2.10",
+        "PM-2.4"
+      ],
+      "foco": "Grammar Discovery (Imperatives, There is/are, Prepositions) + Writing Task (Daily Inspection Checklist + Work Order)",
+      "habilidades": "G●, W●, R○, V○",
+      "autonomo": "Grammar stations review + Peer feedback incorporation + Final document polish"
+    },
+    {
+      "session": 4,
+      "nombre": "Tuning In & Speaking Up",
+      "worksheets": [
+        "PM-2.6",
+        "PM-2.8"
+      ],
+      "foco": "Listening Anchor (Bay 2 Safety Briefing diálogo) + Speaking Mission (Workshop Readiness Report 60-90 seg)",
+      "habilidades": "L●, S●, V○, G○",
+      "autonomo": "Dialogue dramatization rehearsal + Pronunciation chunk practice + Stock Card preparation"
+    },
+    {
+      "session": 5,
+      "nombre": "The Workshop in Action",
+      "worksheets": [
+        "PM-2.9"
+      ],
+      "foco": "Language Functions integradas (5 funciones): dar instrucciones, solicitar herramientas, describir condiciones, reportar, confirmar",
+      "habilidades": "S●, V○, G○, L○, R○",
+      "autonomo": "Personal Communication Card creation + Quiz S6 practice items + Function drill review",
+      "session_title": "Systems in Action",
+      "technical_focus": "B2 — Language functions in vehicle context"
+    },
+    {
+      "session": 6,
+      "nombre": "Prove What You Know",
+      "worksheets": [
+        "PM-4.2",
+        "Review"
+      ],
+      "foco": "PRIMERA MITAD (3.75h): Cuestionario Consolidado (25 ítems: 5 Reading + 5 Vocabulary + 5 Grammar + 5 Listening + 5 Language Functions). SEGUNDA MITAD: Cierre reflexivo + preview Final Mission",
+      "habilidades": "R●, V●, G●, L●, S○, W○",
+      "autonomo": "Quiz review study guide + Gap Card re-assessment + Final Mission prep orientation"
+    },
+    {
+      "session": 7,
+      "nombre": "Final Mission Preparation",
+      "worksheets": [
+        "PM-3.5 (Draft)"
+      ],
+      "foco": "Preparación tarea integradora: Workshop Readiness Report simulado completo con equipo de 3, feedback, ensayo final",
+      "habilidades": "S●, V●, G○, W○, L○",
+      "autonomo": "Peer feedback synthesis + Role card finalization + 60-90 sec timing practice"
+    },
+    {
+      "session": 8,
+      "nombre": "The Full Circle",
+      "worksheets": [
+        "PM-3.5 (Final)"
+      ],
+      "foco": "Final Mission en vivo: Presentación The Workshop Readiness Report ante supervisor (instructor). Cierre reflexivo: redistribución Gap Cards S1, círculo de cierre, entrega de evidencias",
+      "habilidades": "S●, R○, V○, G○, L○",
+      "autonomo": "—"
+    }
+  ],
+  "sessions_detail": [
+    {
+      "session": 1,
+      "nombre": "The Wake-Up Call",
+      "worksheets": [
+        "PM-2.1",
+        "PM-2.2"
+      ],
+      "duracion_min": 360,
+      "habilidades_foco": [],
+      "habilidades_soporte": [],
+      "set_up": {
+        "duracion_min": 25,
+        "warm_up": "Entrada dinámica: proyectar titular Motor Age 'Three mechanics hospitalized after workshop fire'. Preguntas rápidas sin respuesta esperada: What do you see? Why is this important? Have you seen this in your workshop?",
+        "objective": "Activar conocimiento previo sobre taller diesel, seguridad y vocabulario técnico. Establecer comunidad de aprendizaje y Learning Contract grupal.",
+        "teacher_talk": "Good morning, team. Welcome to The Diesel Workshop. Today we're going to begin our journey — understanding what makes a professional workshop. This headline tells us why. Let's explore together."
+      },
+      "while": {
+        "duracion_min": 320,
+        "bloques": [
+          {
+            "letra": "A",
+            "duracion_min": 50,
+            "actividad": "Momento 1 — The Headline (PM-2.1): Analizar titular técnico real sobre incidente en taller para activar conocimiento previo sobre seguridad",
+            "agrupacion": "Whole class → Small groups (3-4)",
+            "instruccion": "Proyectar titular. Leer en voz alta 2 veces. Preguntas: What happened? Why? What is PPE? En grupos pequeños, anotar ideas en póstits, publicar en pared."
+          },
+          {
+            "letra": "B",
+            "duracion_min": 60,
+            "actividad": "Momento 2 — The Map (PM-2.1): Identificar y nombrar herramientas y zonas del taller en inglés usando infografía de workshop layout",
+            "agrupacion": "Pairs → Plenary",
+            "instruccion": "Proyectar infografía A3 de taller con 7 zonas etiquetadas. En parejas, nombrar cada zona en inglés. Repetir estructura: 'This is the ___. The ___ is next to the ___.' Plenary: instructor corrección amable."
+          },
+          {
+            "letra": "C",
+            "duracion_min": 70,
+            "actividad": "Momento 3 & 4 — The Story + The Debate (PM-2.1 + PM-2.2): Relacionar universo narrativo The Diesel Workshop con contexto laboral real. Debatir tipos de mantenimiento.",
+            "agrupacion": "Individual reflection → Whole class debate",
+            "instruccion": "Presentar personajes: Carlos Mendoza (Lead Tech), Valentina Cruz (Apprentice), Santiago (Secondary). Leer 2 afirmaciones sobre mantenimiento preventivo vs correctivo. Votación verde (agree) / rojo (disagree). Breve debate: frases ancla: 'I think... because...' / 'I disagree because...'"
+          },
+          {
+            "letra": "D",
+            "duracion_min": 70,
+            "actividad": "Momentos 1-4 (PM-2.2 — Contextualización): KWL table + diagnostic images + Gap Cards + peer interview",
+            "agrupacion": "Individual → Pairs",
+            "instruccion": "Completar tabla KWL impresa (Know / Want to know / Learned — anticipado). Ver 4 imágenes de errores de seguridad. Describir en inglés: There is a spill... / The technician should... Gap Cards: marcar nivel actual en 6 statements. Entrevista a compañero sobre vocabulario previo usando guión impreso."
+          },
+          {
+            "letra": "E",
+            "duracion_min": 30,
+            "actividad": "Síntesis grupal y cierre de S1",
+            "agrupacion": "Whole class",
+            "instruccion": "Instructor sintetiza respuestas KWL en Learning Agenda visible. Recopila Gap Cards (guardar para S8 cierre). Presenta preview S2: 'Tomorrow we read an article about tools.'"
+          }
+        ],
+        "transiciones": [
+          "Great work on the headline. Now let's look at the workshop map — where everything is.",
+          "Perfect. You've identified the areas. Now let's meet the people who work there — Carlos, Valentina, and Santiago.",
+          "Excellent discussion. Now let's step back and think about what YOU already know about this world."
+        ]
+      },
+      "wrap_up": {
+        "duracion_min": 15,
+        "exit_ticket": "Individual: Escribe 1 palabra del taller en inglés + 1 cosa que quieres aprender. Foto rápida de tu respuesta para el grupo.",
+        "teacher_talk": "Before we finish — write down one word from the workshop and one thing you want to learn. Take a photo. Next session we're going to read the article about tools.",
+        "trabajo_autonomo": {
+          "actividad": "Vocabulary Preview (1.5h): Buscar imagen de 5 herramientas usadas frecuentemente, escribir nombre en inglés. Self-assessment: calificar 1-5 conocimiento en tools / safety / maintenance types / workshop areas. Optional: ver video mecánico diesel YouTube 2 min, anotar 3 palabras reconocidas.",
+          "workbook_ref": "Workbook — Introduction + Self-Assessment Card",
+          "tiempo_min": 90
+        }
+      },
+      "logistics_box": {
+        "worksheets": [
+          "PM-2.1",
+          "PM-2.2"
+        ],
+        "materiales": [
+          "Titular impreso o proyectado: 'Three mechanics hospitalized after workshop fire'",
+          "Infografía A3/proyección: workshop layout con 7 zonas etiquetadas en inglés",
+          "Tarjetas de personajes (Carlos Mendoza, Valentina Cruz, Santiago Ríos)",
+          "Tarjetas verde/rojo para votación debate",
+          "Tabla KWL impresa (1 por aprendiz)",
+          "4 imágenes de taller con errores de seguridad",
+          "Gap Cards impresas (1 por aprendiz) — guardar para S8",
+          "Guión de entrevista de pares impreso",
+          "Post-its, marcadores"
+        ],
+        "agrupacion": "Whole class → Small groups (3-4) → Pairs → Individual",
+        "recursos_canva": "Slides 1-6: Título, Titular, Infografía taller, Personajes, Debate afirmaciones, Cierre KWL",
+        "plan_b": "Si no hay proyector: imprimir todas las imágenes/titular en A3 y pasar por grupos. Las imágenes de diagnóstico se pueden dibujar rápidamente en pizarra.",
+        "ambiente": "Aula de formación con proyector o pantalla, pizarra, espacio en pared para Safety Wall (mural de post-its) y mesas configurables para trabajo en grupos de 3-4.",
+        "momento_sena": "3.1 — Reflexión Inicial",
+        "estrategia": "Aprendizaje Basado en Problemas + Estudio de Casos",
+        "justificacion": "El titular de prensa ('Three mechanics hospitalized') es la situación problémica detonante que activa el conflicto cognitivo y la necesidad del inglés técnico como respuesta profesional.",
+        "tecnicas": [
+          {
+            "bloque": "A",
+            "actividad": "Análisis del titular Motor Age",
+            "tecnica": "Análisis de situación problémica / preguntas detonantes"
+          },
+          {
+            "bloque": "B",
+            "actividad": "Workshop Map — zonas del taller",
+            "tecnica": "Observación activa y descripción guiada"
+          },
+          {
+            "bloque": "C",
+            "actividad": "The Story + The Debate",
+            "tecnica": "Debate argumentativo con marcos de acuerdo/desacuerdo"
+          },
+          {
+            "bloque": "D",
+            "actividad": "KWL + Gap Cards + Peer Interview",
+            "tecnica": "KWL chart / Diagnóstico / Entrevista de pares"
+          }
+        ]
+      }
+    },
+    {
+      "session": 2,
+      "nombre": "Reading the Workshop",
+      "worksheets": [
+        "PM-2.3",
+        "PM-2.5"
+      ],
+      "duracion_min": 360,
+      "habilidades_foco": [
+        "R (Reading)",
+        "V (Vocabulary)"
+      ],
+      "habilidades_soporte": [],
+      "set_up": {
+        "duracion_min": 20,
+        "warm_up": "Recall rápido en parejas: nombra 3 herramientas que recuerdas de la infografía S1 (reciclaje PM-2.1). Compartir en plenary sin repetir.",
+        "objective": "Leer un artículo adaptado sobre herramientas de taller. Aprender 20 términos técnicos clave organizados por categorías. Anclar vocabulario visual con Word Wall.",
+        "teacher_talk": "Good morning. Yesterday we looked at the workshop and met our team. Today we're going to READ an article — written by mechanics — about the tools you need. And we'll put 20 key words on our Word Wall."
+      },
+      "while": {
+        "duracion_min": 320,
+        "bloques": [
+          {
+            "letra": "A",
+            "duracion_min": 60,
+            "actividad": "Bloque Vocabulary — Word Wall Setup (PM-2.5 Actividades 1-2): Presentar y anclar visualmente los 20 términos técnicos usando Word Wall por categorías. Flashcard Battle en pares.",
+            "agrupacion": "Whole class → Pairs → Individual",
+            "instruccion": "Proyectar 20 Word Wall cards (imagen + término + oración contextuada). Leer cada uno 2 veces. Estudiantes repiten en voz alta. Luego: Flashcard Battle en parejas (60 seg = 1 punto por término correcto). Ganador de cada pareja al tablero."
+          },
+          {
+            "letra": "B",
+            "duracion_min": 70,
+            "actividad": "Bloque Reading — Pre-Reading + While-Reading (PM-2.3 Actividades 1-2): Predecir contenido desde imágenes Popular Mechanics. Leer cooperativamente (Jigsaw) asignando secciones a expertos.",
+            "agrupacion": "Whole class → Individual → Small expert groups → Teaching pairs",
+            "instruccion": "Paso 1: Proyectar 6 imágenes del artículo Popular Mechanics. Parejas predicen: What tools will be in this article? Paso 2: Distribuir texto adaptado 'Tools Every Diesel Technician Needs' en 3 secciones (Hand Tools / Power Tools / Measuring Tools). Cada grupo de 3 es 'experto' en su sección. Leen y subrayan los 20 términos. Paso 3: Reagrupar: 1 experto de cada sección enseña su parte a nuevos compañeros."
+          },
+          {
+            "letra": "C",
+            "duracion_min": 60,
+            "actividad": "Bloque Vocabulary — Categorización + Contexto (PM-2.5 Actividades 3-4): Clasificar 20 términos en 5 categorías. Completar formatos reales del taller.",
+            "agrupacion": "Pairs → Individual",
+            "instruccion": "Paso 1: Competencia por tiempo — parejas clasifican 20 tarjetas en 5 pilas: Environment / Tools & Equipment / Safety / Maintenance Types / Documents. Paso 2: Cada pareja completa Daily Inspection Checklist + Work Order Header usando 20 términos en espacios en blanco."
+          },
+          {
+            "letra": "D",
+            "duracion_min": 60,
+            "actividad": "Bloque Reading — Comprehension Check (PM-2.3 Actividad 3): Responder 5 preguntas de comprensión lectora del texto adaptado — Evidencia 1 formal del RAP.",
+            "agrupacion": "Individual → Pairs for checking",
+            "instruccion": "Distribuir Cuestionario No 1 impreso (5 ítems, Evidencia 1 Reading). Estudiantes responden individualmente sin libro. 15 min. Luego: intercambiar con pareja, revisar respuestas juntos. Instructor retiene cuestionarios para calificación."
+          },
+          {
+            "letra": "E",
+            "duracion_min": 30,
+            "actividad": "Bloque Reading + Taller — Text-to-Workshop Connection (PM-2.3 Actividad 4 — inicio): Identificar físicamente en el taller elementos del texto, fotografiar y describir en inglés.",
+            "agrupacion": "Small groups (2-3)",
+            "instruccion": "Si hay acceso a taller físico: grupos van al taller con checklist de 10 herramientas. Fotografían 3-4 herramientas. Regresan al aula y describen: 'This is a ___. It is [color/condition]. It has ___.' Pegamos fotos + descripciones en mural."
+          }
+        ],
+        "transiciones": [
+          "Perfect flashcard work. Now let's read the actual article.",
+          "Great reading. Now let's organize these words by category and use them in real workshop documents.",
+          "Excellent work with the checklist. Now let's see what you understood from the article — answer the questions."
+        ]
+      },
+      "wrap_up": {
+        "duracion_min": 20,
+        "exit_ticket": "Escribe 3 herramientas + 1 oración con cada una usando estructura: 'The ___ is ___.' (ejemplo: 'The wrench is for tightening bolts.')",
+        "teacher_talk": "Before we go — write three tools and one sentence for each. Use the structure: The ___ is ___. Next session we'll practice the grammar and WRITE our own checklist for Bay 2.",
+        "trabajo_autonomo": {
+          "actividad": "Vocabulary Reinforcement (0.75h): Repasar 20 flashcards — auto-test término → imagen en voz alta (repetir 3 veces cada uno). Leer artículo original Popular Mechanics sin adaptar e identificar 5 palabras adicionales. Completar Daily Inspection Checklist con taller real del centro de formación (fotos + descripciones).",
+          "workbook_ref": "Workbook Ch. 2 — Vocabulary Extension: Flashcard drills + Paragraph writing (My Workshop Vocabulary)",
+          "tiempo_min": 45
+        }
+      },
+      "logistics_box": {
+        "worksheets": [
+          "PM-2.3 (Reading)",
+          "PM-2.5 (Vocabulary)"
+        ],
+        "materiales": [
+          "Word Wall cards x20 (imagen + término + oración contextuada) — A4 impresos y plastificados",
+          "Flashcard sets x1 por pareja (termolaminados o cartulina)",
+          "Texto adaptado 'Tools Every Diesel Technician Needs' (impreso A4, 3 secciones)",
+          "Imágenes originales Popular Mechanics (6 imágenes proyectadas)",
+          "Cuestionario No 1 impreso (5 ítems Reading — Evidencia 1)",
+          "Daily Inspection Checklist en blanco impreso (5 copias)",
+          "Work Order Header en blanco impreso (5 copias)",
+          "Tarjetas de categorías (Environment / Tools / Safety / Maintenance / Documents)",
+          "Cámara/celular para fotografías en taller (si aplica)"
+        ],
+        "agrupacion": "Whole class → Pairs → Small expert groups (Jigsaw) → Individual → Small groups (taller)",
+        "recursos_canva": "Slides 7-16: Word Wall (5 slides separadas por categoría), Imágenes Popular Mechanics, Cuestionario preview",
+        "plan_b": "Si no hay acceso a taller: mostrar video (2 min) de taller diesel real en YouTube. Grupos describen 3 herramientas del video en lugar de fotografiar. Si no hay proyector: imprimir imágenes Popular Mechanics grandes.",
+        "ambiente": "Aula de formación con proyector, espacio permanente en pared para Word Wall (20 términos Toolbelt), mesas en islas o U para trabajo en parejas.",
+        "momento_sena": "3.1 — Reflexión Inicial (cierre) → 3.2 Contextualización",
+        "estrategia": "Aprendizaje Basado en Tareas",
+        "justificacion": "La tarea es leer un texto técnico real, clasificar el léxico por categorías y construir el Word Wall. La tarea tiene producto concreto (Word Wall + cuestionario E1) y es auténtica del entorno diesel.",
+        "tecnicas": [
+          {
+            "bloque": "A",
+            "actividad": "Word Wall Setup — 20 términos Toolbelt",
+            "tecnica": "Construcción de organizador visual (Word Wall)"
+          },
+          {
+            "bloque": "B",
+            "actividad": "Pre-Reading + Jigsaw Reading",
+            "tecnica": "Lectura cooperativa Jigsaw (grupos expertos)"
+          },
+          {
+            "bloque": "C",
+            "actividad": "Category Race + Gap Fill",
+            "tecnica": "Carrera de categorías / Relleno de espacios en contexto"
+          },
+          {
+            "bloque": "D",
+            "actividad": "Comprehension Check — E1",
+            "tecnica": "Cuestionario de comprensión lectora (Evidencia 1)"
+          },
+          {
+            "bloque": "E",
+            "tecnica": "Conexión texto-contexto real / photo-walk con descripción guiada"
+          }
+        ]
+      },
+      "title": "Read the Manual"
+    },
+    {
+      "session": 3,
+      "nombre": "Write It Right",
+      "worksheets": [
+        "PM-2.10",
+        "PM-2.4"
+      ],
+      "duracion_min": 360,
+      "habilidades_foco": [
+        "G (Grammar)",
+        "W (Writing)"
+      ],
+      "habilidades_soporte": [
+        "R (Reading — S2 text)",
+        "V (Vocabulary — 20 términos)"
+      ],
+      "set_up": {
+        "duracion_min": 20,
+        "warm_up": "Recall: mostrar 6 frases del artículo S2 con 1 error cada una (confundidas, sin sujeto, etc.). En parejas, identificar y corregir. Ejemplo: 'A wrench uses for tightening.' → Correcto: 'A wrench is for tightening.'",
+        "objective": "Aprender 3 estructuras gramaticales (Imperatives, There is/are, Prepositions of place) ancladas en contexto de taller. Producir documentos técnicos completos (Daily Inspection Checklist + Work Order) para Bay 2.",
+        "teacher_talk": "Good morning. Yesterday we read and learned 20 words. Today we're going to learn the GRAMMAR that makes sentences work in English — and write our own documents for The Diesel Workshop."
+      },
+      "while": {
+        "duracion_min": 320,
+        "bloques": [
+          {
+            "letra": "A",
+            "duracion_min": 70,
+            "actividad": "Bloque Grammar — Inducción desde texto (PM-2.10 Actividad 1) + Error Log (PM-2.10 Actividad 2): Inducir 3 estructuras target desde texto S2 con ejemplos resaltados por color. Identificar y corregir 10 errores frecuentes.",
+            "agrupacion": "Whole class → Pairs",
+            "instruccion": "Paso 1: Proyectar texto S2 con resaltados: Imperatives (rojo) = 'Check the floor jack.' / There is/are (azul) = 'There are three service bays.' / Prepositions (verde) = 'The wrench is next to the toolbox.' Students repiten estructuras. Paso 2: Distribuir Error Log (10 oraciones con errores de estas 3 estructuras). En parejas: identificar error + corregir en papel."
+          },
+          {
+            "letra": "B",
+            "duracion_min": 60,
+            "actividad": "Bloque Grammar — Grammar Stations (PM-2.10 Actividad 3): Practicar cada estructura en rotación por estaciones temáticas del taller.",
+            "agrupacion": "Small groups (3) rotating",
+            "instruccion": "3 estaciones de 20 min cada una. Estación 1 (Imperatives): reescribir 5 instrucciones de seguridad en imperativos. Estación 2 (There is/are): describir Bay 1, Bay 2, Bay 3 usando estructura. Estación 3 (Prepositions): completar mapa del taller con 8 oraciones de ubicación."
+          },
+          {
+            "letra": "C",
+            "duracion_min": 70,
+            "actividad": "Bloque Writing — Genre Analysis + Modeled Writing (PM-2.4 Actividades 1-2): Analizar estructura, lenguaje y propósito de documentos técnicos reales. Observar y co-construir Daily Inspection Checklist con instructor en vivo.",
+            "agrupacion": "Whole class → Small group (6-8 con instructor)",
+            "instruccion": "Paso 1: Proyectar Daily Inspection Checklist real (formato de taller). ¿Qué campos tiene? ¿Qué información es necesaria? ¿En qué orden? Paso 2: Co-construir: instructor y estudiantes escriben juntos Checklist para Bay 1 en tiempo real, verbalizando decisiones: 'We need to check the floor jack first because safety. So we write: Floor jack — OK / Needs repair. Why? Because...'"
+          },
+          {
+            "letra": "D",
+            "duracion_min": 60,
+            "actividad": "Bloque Writing — Independent Writing Task (PM-2.4 Actividad 3) + Peer Review (PM-2.4 Actividad 4): Producir individualmente Daily Inspection Checklist + Work Order para Bay 2. Revisar documentos del compañero — Evidencia 2.",
+            "agrupacion": "Individual → Pairs",
+            "instruccion": "Paso 1: Cada estudiante recibe formato en blanco de Daily Inspection Checklist + Work Order Header. Escenario: The Diesel Workshop — Bay 2 Monday 7:00 AM — preparación para primer camión del día. Completan mínimo 8 ítems en Checklist + 6 campos en Work Order. 40 min. Paso 2: Intercambiar con pareja. Usar Lista de Verificación No 2 (10 criterios) para feedback escrito."
+          },
+          {
+            "letra": "E",
+            "duracion_min": 30,
+            "actividad": "Síntesis: revisar ejemplos de Evidencia 2 exitosas. Preview S4: Speaking.",
+            "agrupacion": "Whole class",
+            "instruccion": "Instructor muestra 1-2 ejemplos de Checklist + Work Order bien hecho. Destaca dónde se ven las 3 estructuras gramaticales target. Estudiantes guardan sus documentos (evaluación posterior). Preview: 'Next session we listen to a conversation and practice speaking.'"
+          }
+        ],
+        "transiciones": [
+          "Perfect error correction. Now let's practice each grammar rule at these stations.",
+          "Excellent grammar work. Now we're going to read and analyze a REAL document from the workshop.",
+          "Great co-construction. Now it's your turn — write your own Checklist for Bay 2.",
+          "Wonderful work, everyone. Let's look at a strong example together."
+        ]
+      },
+      "wrap_up": {
+        "duracion_min": 20,
+        "exit_ticket": "Escribe 1 oración en cada estructura: (1) un imperative, (2) There is/are, (3) una preposición de lugar. Ejemplo: (1) 'Check the socket.' (2) 'There is a spill near Bay 2.' (3) 'The torque wrench is on the workbench.'",
+        "teacher_talk": "Before we finish — write three sentences, one for each grammar rule. This is your evidence of understanding. Next session we're going to LISTEN to Carlos and Valentina talking, and then you'll SPEAK.",
+        "trabajo_autonomo": {
+          "actividad": "Grammar & Writing Consolidation (0.75h): Repasar 5 estaciones de grammar en hoja de repaso. Reescribir 5 oraciones incorrectas en la casa (15 min). Leer feedback de pareja en Daily Inspection Checklist + incorporar correcciones en versión final (30 min). Revisar una sección del artículo S2 y subrayar los 3 targets gramaticales (15 min).",
+          "workbook_ref": "Workbook Ch. 3 — Grammar Mastery: Station drills + Writing revision + Sentence building",
+          "tiempo_min": 45
+        }
+      },
+      "logistics_box": {
+        "worksheets": [
+          "PM-2.10 (Grammar)",
+          "PM-2.4 (Writing)"
+        ],
+        "materiales": [
+          "Texto S2 proyectado con resaltados de color (Imperatives = rojo, There is/are = azul, Prepositions = verde)",
+          "Error Log impreso (10 oraciones con errores) — 1 por pareja",
+          "Safety Report formato impreso (template)",
+          "Workshop layout de S1 (visible en aula)",
+          "3 estaciones prearmadas: (1) Imperative cards + respuesta, (2) Bay description template, (3) Location map + frases",
+          "Daily Inspection Checklist modelo (proyectado + impreso)",
+          "Work Order Header modelo (proyectado + impreso)",
+          "Daily Inspection Checklist en blanco — 8 copias",
+          "Work Order Header en blanco — 8 copias",
+          "Lista de verificación No 2 impresa (10 criterios peer review) — 8 copias"
+        ],
+        "agrupacion": "Whole class → Pairs → Small groups (3) rotating → Individual → Pairs",
+        "recursos_canva": "Slides 17-24: Texto resaltado, Error Log, 3 estaciones de grammar, Checklist & Work Order modelos",
+        "plan_b": "Si no hay 3 espacios físicos para estaciones: rotar digitalmente — profesor circula dando tareas a cada grupo en secuencia. Si no hay impresora: usar tableros blancos reutilizables. Si hay estudiantes ausentes: asignar como tarea completar Daily Inspection Checklist en casa.",
+        "ambiente": "Aula de formación con proyector y pizarra tricolor (marcadores rojo, azul, verde), espacio físico para 3 estaciones de gramática rotativas.",
+        "momento_sena": "3.2 — Contextualización",
+        "estrategia": "Aprendizaje Basado en Tareas",
+        "justificacion": "La tarea es producir dos documentos técnicos reales del taller: Daily Inspection Checklist y Work Order. Las actividades de gramática son andamiaje funcional para ejecutar esa tarea de escritura (E2).",
+        "tecnicas": [
+          {
+            "bloque": "A",
+            "actividad": "Grammar Induction desde el texto S2 + Error Log",
+            "tecnica": "Inducción gramatical por descubrimiento de colores / Error Log diagnóstico"
+          },
+          {
+            "bloque": "B",
+            "actividad": "Grammar Stations — 3 estaciones rotativas",
+            "tecnica": "Estaciones de práctica rotativas (Imperatives / There is-are / Prepositions)"
+          },
+          {
+            "bloque": "C",
+            "actividad": "Genre Analysis + Modeled Writing",
+            "tecnica": "Análisis de género textual / Escritura modelada co-construida"
+          },
+          {
+            "bloque": "D",
+            "actividad": "Independent Writing + Peer Review — E2",
+            "tecnica": "Producción escrita individual / Revisión entre pares (Lista de Verificación No 2)"
+          },
+          {
+            "bloque": "E",
+            "tecnica": "Producción escrita individual con revisión entre pares (Lista de Verificación No 2)"
+          }
+        ]
+      }
+    },
+    {
+      "session": 4,
+      "nombre": "Tuning In & Speaking Up",
+      "worksheets": [
+        "PM-2.6",
+        "PM-2.8"
+      ],
+      "duracion_min": 360,
+      "habilidades_foco": [
+        "L (Listening)",
+        "S (Speaking)"
+      ],
+      "habilidades_soporte": [
+        "V (Vocabulary)",
+        "G (Grammar)"
+      ],
+      "set_up": {
+        "duracion_min": 25,
+        "warm_up": "Escena dramatizada rápida: instructor es Carlos, 2 estudiantes voluntarios son Valentina y Santiago. Instructor da 2 instrucciones de seguridad en inglés (ejemplo: 'Put on your goggles.' 'Check the floor jack.'). Estudiantes hacen gestos (mime). Clase adivina qué instrucción fue.",
+        "objective": "Escuchar un diálogo de seguridad (Bay 2 Safety Briefing) entre Carlos y Valentina. Demostrar comprensión auditiva (Evidencia 3). Practicar pronunciación y producción oral (Workshop Readiness Report en role-play de 60-90 seg — Evidencia 4).",
+        "teacher_talk": "Good morning. Last session we learned grammar and WROTE documents. Today we're going to LISTEN to Carlos and Valentina talking in the workshop — and then YOU are going to SPEAK, like a real technician."
+      },
+      "while": {
+        "duracion_min": 310,
+        "bloques": [
+          {
+            "letra": "A",
+            "duracion_min": 60,
+            "actividad": "Bloque Listening — Scene Setup + Pre-Listening (PM-2.6 Actividad 1): Activar esquemas previos del contexto Bay 2 y pre-entrenar vocabulario del diálogo.",
+            "agrupacion": "Whole class → Individual",
+            "instruccion": "Proyectar imagen Bay 2 (limpio, bien organizado). Instrucciones: 'This is Bay 2. Where are we? (Service bay) What can you see? (floor jack, toolbox, wrench, etc.) What is Carlos going to check first? (safety equipment) Let's predict — listen for: floor jack, gloves, goggles, spill, fire extinguisher.' Distribuir guión de diálogo impreso pero NO lo leen aún."
+          },
+          {
+            "letra": "B",
+            "duracion_min": 70,
+            "actividad": "Bloque Listening — First Listen (Global) + Second Listen (Detail) (PM-2.6 Actividad 2): Escuchar el diálogo dos veces (sin y con texto) para comprensión global y reconocimiento de estructuras.",
+            "agrupacion": "Individual (escucha) → Pairs (discusión)",
+            "instruccion": "PRIMERA ESCUCHA (sin texto): estudiantes escuchan diálogo 'Bay 2 Safety Briefing' (Carlos + Valentina, ~3 min). Luego: parejas responden 3 preguntas sin libro: 'What is Carlos checking? What does Valentina ask? What is ready at the end?' SEGUNDA ESCUCHA (con texto): distribuir guión impreso. Escuchan de nuevo. Subrayan: floor jack, gloves, goggles, spill, fire extinguisher. Instructor pausa para pronunciación de términos clave (5 términos: fire extinguisher, preventive maintenance, calibration, torque wrench, floor jack)."
+          },
+          {
+            "letra": "C",
+            "duracion_min": 50,
+            "actividad": "Bloque Listening — Comprehension Check (PM-2.6 Actividad 3): Responder 5 preguntas de comprensión auditiva SIN el texto — Evidencia 3 formal del RAP.",
+            "agrupacion": "Individual",
+            "instruccion": "Recopilar guiones. Distribuir Cuestionario No 3 impreso (5 ítems, Evidencia 3 Listening). Escuchar el diálogo UNA VEZ más (sin parar). Estudiantes responden sin referencia. 15 min. Instructor retiene cuestionarios para calificación."
+          },
+          {
+            "letra": "D",
+            "duracion_min": 80,
+            "actividad": "Bloque Speaking — Input + Model (PM-2.8 Actividad 1): Observar un Workshop Readiness Report modelo identificando estructura, contenido, estructuras lingüísticas. Preparación en parejas con Stock Cards + sentence starters (PM-2.8 Actividades 2).",
+            "agrupacion": "Whole class (model) → Pairs (preparation)",
+            "instruccion": "Paso 1: Instructor o video muestra Workshop Readiness Report modelo de 90 segundos: 'Good morning, Carlos. I have finished Bay 2. The floor jack is okay. There is a small spill near the door. The fire extinguisher is in place. All tools are organized. Bay 2 is ready. What should I do next?' Paso 2: Distribuir Stock Card A (Bay Status frame) + Stock Card B (Sentence Starters). En parejas: cada uno prepara su propio reporte para un bay diferente (Bay 1, 2, o 3). Practican en voz alta. Instructor circula dando feedback correccional rápido."
+          },
+          {
+            "letra": "E",
+            "duracion_min": 50,
+            "actividad": "Bloque Speaking — Live Performance + Pronunciation Scaffold (PM-2.8 Actividades 3-4): Presentar Workshop Readiness Report al supervisor (instructor) en role-play de 60-90 seg respondiendo preguntas — Evidencia 4. Practicar pronunciación de términos técnicos usando Chunk Cards.",
+            "agrupacion": "Individual (performance) → Whole class (pronunciation drills)",
+            "instruccion": "Paso 1 (Performance — 30 min): Cada estudiante presenta su reporte al instructor (como Carlos Mendoza). Instructor responde con 1-2 preguntas improvisadas: 'What about the socket set? Where is the torque wrench?' Estudiante responde en el rol. Instructor completa Escala de Estimación No 4 (5 criterios). Paso 2 (Pronunciation — 20 min): Toda la clase practica 5 términos técnicos clave usando Chunk Cards: fire | ex | TING | guish | er (fire extinguisher). Drill orquestal: instructor dice, clase repite 2x. Luego: parejas practican 1 min con feedback mutuo."
+          }
+        ],
+        "transiciones": [
+          "Good predictions. Now let's listen to the conversation.",
+          "Great listening work. Now let's see if you understood — answer the questions.",
+          "Perfect comprehension. Now it's YOUR turn to speak. Let me show you how.",
+          "Excellent preparation. Now you're going to present to me as Carlos."
+        ]
+      },
+      "wrap_up": {
+        "duracion_min": 25,
+        "exit_ticket": "Escribe 3 cosas que reportarías como técnico al supervisor (ejemplo: 'The floor jack is ready.' 'There is no spill in Bay 1.' 'All tools are in the toolbox.')",
+        "teacher_talk": "Wonderful speaking, everyone. Before we go — write three things you would report to your supervisor about your bay. Next session we're going to practice ALL the communication functions together — giving instructions, asking for help, describing, reporting. We call this 'The Workshop in Action.'",
+        "trabajo_autonomo": {
+          "actividad": "Speaking & Pronunciation Practice (1.5h): Dramatizar diálogo Bay 2 con pareja (leerlo 3 veces, 1 vez sin libro). Practicar pronunciación de Chunk Cards (5 términos) 10 min diarios. Preparar Stock Cards personales para Workshop Readiness Report — escribir 5 descripciones de diferentes bays. Escuchar diálogo grabado (MP3) 1 vez en casa, anotar 3 palabras nuevas.",
+          "workbook_ref": "Workbook Ch. 4 — Speaking Mastery: Dialogue dramatization + Chunk card drills + Report templates + Listening diary",
+          "tiempo_min": 90
+        }
+      },
+      "logistics_box": {
+        "worksheets": [
+          "PM-2.6 (Listening)",
+          "PM-2.8 (Speaking)"
+        ],
+        "materiales": [
+          "Diálogo 'Bay 2 Safety Briefing' impreso (1 por pareja) — 5 copias",
+          "Audio del diálogo (MP3 o TTS, duración ~3 min) — reproducir en parlantes/audífonos",
+          "Cuestionario No 3 impreso (5 ítems Listening — Evidencia 3) — 8 copias",
+          "Imagen Bay 2 proyectada (limpio, bien organizado)",
+          "Stock Card A — Bay Status (1 por aprendiz) — impreso, ej: 'Floor jack: ___ / Gloves: ___ / Spill: ___ / Fire extinguisher: ___'",
+          "Stock Card B — Sentence Starters (1 por aprendiz) — impreso: 'Good morning, Carlos. I have finished ___. The ___ is ___. There is/are ___. What should I do next?'",
+          "Escala de Estimación No 4 (para instructor) — 5 criterios Speaking",
+          "Chunk Cards (pronunciación) — 5 términos clave: fire extinguisher / preventive maintenance / calibration / torque wrench / floor jack — impresos con sílabas separadas",
+          "Micrófono de diadema (recomendado para grabación)",
+          "Dispositivo grabación (celular/tablet)"
+        ],
+        "agrupacion": "Whole class (setup, modelo) → Individual (escucha) → Pairs (prediction, prep) → Individual (speaking performance) → Whole class (pronunciation drill)",
+        "recursos_canva": "Slides 25-32: Bay 2 imagen, Diálogo preview, Cuestionario preview, Workshop Readiness Report modelo (video o transcript), Chunk Cards pronunciación",
+        "plan_b": "Si audio no funciona: instructor lee el diálogo en voz alta a paso natural. Estudiantes escuchan con transcript impreso. Si no hay 8 espacios para speaking individual: formato 'fishbowl' — 2 voluntarios hablan mientras el resto observa con checklist de escucha. Si no hay dispositivo grabación: instructor toma notas de desempeño oral en vivo.",
+        "ambiente": "Aula de formación con sistema de audio reproducible (parlantes o audífonos colectivos) y espacio frontal despejado para presentaciones orales individuales o en parejas.",
+        "momento_sena": "3.3 — Apropiación",
+        "estrategia": "Aprendizaje Basado en Tareas + Simulaciones",
+        "justificacion": "La tarea de escucha es comprender el Bay 2 Safety Briefing en condiciones de evaluación real. La tarea oral es presentar un Workshop Readiness Report en rol de técnico ante un supervisor real (el instructor), simulando el entorno productivo.",
+        "tecnicas": [
+          {
+            "bloque": "A",
+            "actividad": "Scene Setup + Pre-Listening",
+            "tecnica": "Activación de esquemas previos / Predicción temática"
+          },
+          {
+            "bloque": "B",
+            "actividad": "First Listen (global) + Second Listen (detail)",
+            "tecnica": "Escucha activa secuencial: comprensión global → comprensión de detalle"
+          },
+          {
+            "bloque": "C",
+            "actividad": "Comprehension Check — E3 (Cuestionario No 3)",
+            "tecnica": "Cuestionario de comprensión auditiva (Evidencia 3)"
+          },
+          {
+            "bloque": "D",
+            "tecnica": "Input modelado + Stock Cards + práctica en pares con preguntas improvisadas"
+          },
+          {
+            "bloque": "E",
+            "actividad": "Live Oral Performance — E4 (Workshop Readiness Report)",
+            "tecnica": "Demostración oral en vivo / Role-play supervisor–técnico"
+          }
+        ]
+      }
+    },
+    {
+      "session": 5,
+      "nombre": "The Workshop in Action",
+      "worksheets": [
+        "PM-2.9"
+      ],
+      "duracion_min": 360,
+      "habilidades_foco": [
+        "S (Speaking)"
+      ],
+      "habilidades_soporte": [
+        "V (Vocabulary)",
+        "G (Grammar)",
+        "L (Listening)"
+      ],
+      "set_up": {
+        "duracion_min": 20,
+        "warm_up": "Quick recall de S4: instructor dice un imperative, listening question, vocabulary word, o grammar structure. Clase levanta mano si la escucha. Ejemplo: 'Put on your goggles!' (mano) / 'What color is the floor jack?' (no) / 'There is a torque wrench.' (mano). Gana equipo con más respuestas.",
+        "objective": "Mapear y practicar 5 funciones comunicativas integradas del taller (dar instrucciones, solicitar herramientas, describir condiciones, reportar, confirmar comprensión). Demostrar el uso integrado en simulación de apertura de taller — Evidencia 5.",
+        "teacher_talk": "Good morning. Over the past four sessions, you've learned vocabulary, grammar, listening, and speaking separately. Today we're putting it ALL together. You're going to use FIVE communication functions — like a real workshop team. Let's go."
+      },
+      "while": {
+        "duracion_min": 320,
+        "bloques": [
+          {
+            "letra": "A",
+            "duracion_min": 50,
+            "actividad": "Bloque Language Functions — Function Map (PM-2.9 Actividad 1): Mapear 5 funciones comunicativas en diagrama de interacciones. Clasificar 15 frases reales en su función.",
+            "agrupacion": "Whole class → Small groups",
+            "instruccion": "Proyectar Communication Map: 5 funciones en un círculo interconectado. F1 (Dar instrucciones) — estructura: Imperative. F2 (Solicitar herramientas) — estructura: 'Can I have...?' / 'I need...' F3 (Describir condiciones) — estructura: There is/are + prepositions. F4 (Reportar al supervisor) — estructura: Present Simple + There is/are. F5 (Confirmar comprensión) — estructura: 'Understood.' / 'Got it.' Distribuir 15 tarjetas de frases reales. En grupos de 3: clasificar cada frase en su función + justificar por qué."
+          },
+          {
+            "letra": "B",
+            "duracion_min": 80,
+            "actividad": "Bloque Language Functions — Function Drills (PM-2.9 Actividad 2): Practicar cada función en drills de 15 minutos con situaciones reales del taller diesel.",
+            "agrupacion": "Pairs → Individual",
+            "instruccion": "4 drills de 15 min cada uno (no hace 5to porque hay síntesis al final). DRILL 1 (F1 — Dar instrucciones): instructor es supervisor, parejas son técnicos nuevos. Instructor dice acción, pareja responde con imperative instruction. Ejemplo: 'The technician needs to check the oil.' Pareja: 'Check the oil.' DRILL 2 (F2 — Solicitar): parejas practican pedir herramientas. 'I need the socket set.' 'Can I have the torque wrench?' 30 seg c/u. DRILL 3 (F3-F4 — Describir + Reportar): parejas describen Bay 1, Bay 2, Bay 3 como si estuvieran haciendo el reporte a supervisor. 'The floor jack is ready. There is a small spill near the door. Bay 2 is ready, Carlos.' DRILL 4 (F5 — Confirmar): role-play rápido — instructor da orden, estudiante confirma: 'Understood. I'll do it now.' 5 órdenes."
+          },
+          {
+            "letra": "C",
+            "duracion_min": 100,
+            "actividad": "Bloque Language Functions — Integrated Simulation (PM-2.9 Actividad 3): Demostrar 5 funciones integradas en simulación de apertura de taller con supervisor en vivo — Evidencia 5 formal del RAP.",
+            "agrupacion": "Small teams (3) + instructor + peer observers",
+            "instruccion": "Escena: The Diesel Workshop, Monday 7:00 AM. Carlos (instructor) llama a la apertura del taller. Equipo de 3 técnicos entra en rol. Carlos da instrucciones (F1): 'Check the floor jack, organize the tools, look for any hazards.' Equipo practiquiza: se distribuyen tareas (F2 — Solicitar ayuda si necesario), describe condiciones (F3: 'There is a spill near Bay 1.' 'The socket set is in the toolbox.'), reporta al supervisor cuando termina (F4: 'Bay 1 is ready, Carlos. All tools are organized.'), confirma instrucciones (F5: 'Understood. Got it.'). Profesor llena Escala de Estimación No 5 (5 criterios) observando cada función. El resto de la clase tiene checklist de observación — anotan qué funciones ven en orden."
+          },
+          {
+            "letra": "D",
+            "duracion_min": 60,
+            "actividad": "Bloque Language Functions — Synthesis Card + Quiz Preview (PM-2.9 Actividad 4): Construir Personal Communication Card + practicar ítems tipo Quiz S6 en pares.",
+            "agrupacion": "Individual → Pairs",
+            "instruccion": "Paso 1: Cada estudiante crea Personal Communication Card (A5, doblado). En cada lado, escribe: F1 (Dar instrucciones) = 1 modelo frase en imperative. F2 (Solicitar) = 1 modelo frase. F3 (Describir) = 1 oración There is/are. F4 (Reportar) = 1 reporte completo. F5 (Confirmar) = 1 frase. Paso 2: Instructor distribuye 5 sample quiz items (PM-2.9 aporte al Cuestionario S6). En parejas: practican respuestas juntas. Ejemplo quiz item: 'How do you ASK for the floor jack? a) I floor jack. b) I need the floor jack. c) The floor jack is mine.'"
+          }
+        ],
+        "transiciones": [
+          "Perfect categorization. Now let's practice each function separately.",
+          "Great drills. Now you're going to use ALL five functions at the same time — in a real workshop scenario.",
+          "Excellent simulation. Now let's create your personal communication card — your survival guide for the workshop."
+        ]
+      },
+      "wrap_up": {
+        "duracion_min": 20,
+        "exit_ticket": "Escribe 1 frase para CADA función: F1 (imperative) / F2 (request) / F3 (describe with There is/are) / F4 (report) / F5 (confirm understanding). Ejemplo: F1 'Put on your goggles.' F2 'I need the wrench.' F3 'There is a spill near Bay 1.' F4 'Bay 2 is ready, Carlos.' F5 'Understood.'",
+        "teacher_talk": "Wonderful work, team. You used all five functions together — like a real workshop. Before we finish, write one sentence for each function. Your Personal Communication Card is a tool you can carry with you. Next session we're going to TEST everything you've learned with the big quiz. And then in the final session, you'll do the complete Workshop Readiness Mission.",
+        "trabajo_autonomo": {
+          "actividad": "Language Functions Consolidation (1.5h): Repasar Personal Communication Card diariamente (5 min). Practicar las 5 funciones en drills (15 min) leyendo funciones en voz alta. Completar 5 sample quiz items (PM-2.9 aporte a Cuestionario S6) en forma digital o impresa (30 min). Ver video corto (2 min) de taller diesel y transcribir 1 instrucción, 1 solicitud, 1 descripción (30 min). Leer la guía entera (Preview para Cuestionario S6 — 20 min).",
+          "workbook_ref": "Workbook Ch. 5 — Communication Mastery: Personal Communication Card (template) + Function practice drills + Quiz sample items + Video transcription + Full guide review checklist",
+          "tiempo_min": 90
+        }
+      },
+      "logistics_box": {
+        "worksheets": [
+          "PM-2.9 (Language Functions + transversal)"
+        ],
+        "materiales": [
+          "Communication Map proyectado (5 funciones en diagrama interconectado)",
+          "15 tarjetas de frases reales (impreso en cartulina, 1 juego por grupo de 3)",
+          "Escala de Estimación No 5 (para instructor + 1 por peer observer) — 5 criterios Language Functions",
+          "Checklist de observación para resto de clase (anotar funciones vistas)",
+          "Personal Communication Card blanco (A5 doblado, 1 por aprendiz)",
+          "5 sample quiz items impresos (PM-2.9 aporte a Cuestionario S6) — 8 copias",
+          "Stock Cards de bay reutilizados de S4 (para simulación)",
+          "Bay 1/2/3 labels (tarjetas para designar bays en simulación)"
+        ],
+        "agrupacion": "Whole class (function map) → Small groups (classification) → Pairs (drills) → Small teams (simulation) → Individual (communication card) → Pairs (quiz practice)",
+        "recursos_canva": "Slides 33-40: Communication Map (5 funciones), Función drill scenarios (4 slides), Simulation scene setup, Quiz sample items preview, Personal Communication Card template",
+        "plan_b": "Si no hay tiempo para 4 drills + simulación: hacer 2 drills core (F1 + F3) + simulación. Peer observers no participan en drills, solo en simulación. Si clase es muy grande para pequeños equipos en simulación: formato 'carousel' — instructor simula con 1 equipo a la vez (5 min c/u), resto hace quiz practice items en paralelo.",
+        "ambiente": "Aula de formación con espacio central despejado para simulaciones de role-play en grupos de 3, Word Wall visible como referencia permanente.",
+        "momento_sena": "3.3 — Apropiación",
+        "estrategia": "Simulaciones + Aprendizaje Basado en Tareas",
+        "justificacion": "La sesión completa recrea la apertura operativa de un bay diesel. Las 5 funciones comunicativas se practican en drills y se integran en una simulación de 3-4 minutos que replica con fidelidad el contexto productivo real.",
+        "tecnicas": [
+          {
+            "bloque": "A",
+            "actividad": "Communication Function Map — F1 a F5",
+            "tecnica": "Mapa de funciones comunicativas (organizador gráfico relacional)"
+          },
+          {
+            "bloque": "B",
+            "actividad": "Function Drills F1–F5 en parejas",
+            "tecnica": "Drills de práctica estímulo-respuesta por función"
+          },
+          {
+            "bloque": "C",
+            "actividad": "Integrated Simulation — E5 (apertura de taller)",
+            "tecnica": "Simulación integrada de role-play / Observación entre pares (Peer Observation Sheet)"
+          },
+          {
+            "bloque": "D",
+            "actividad": "Synthesis Card + Quiz Preview",
+            "tecnica": "Tarjeta de síntesis personal / Vista previa del Cuestionario Consolidado"
+          }
+        ]
+      },
+      "title": "Systems in Action"
+    },
+    {
+      "session": 6,
+      "nombre": "Prove What You Know",
+      "worksheets": [
+        "PM-4.2",
+        "Review"
+      ],
+      "duracion_min": 360,
+      "habilidades_foco": [
+        "R (Reading)",
+        "V (Vocabulary)",
+        "G (Grammar)",
+        "L (Listening)"
+      ],
+      "habilidades_soporte": [
+        "S (Speaking)",
+        "W (Writing)"
+      ],
+      "set_up": {
+        "duracion_min": 15,
+        "warm_up": "Actividad de calentamiento (no evaluada): mostrar 5 imágenes aleatorias de herramientas/áreas/seguridad. Cada uno escribe 1 palabra en inglés en un post-it. Pegar en pared. Verificación rápida: ¿correcta? Celebrar.",
+        "objective": "Completar Cuestionario Consolidado (PM-4.2) — síntesis formal de las 5 habilidades (Reading, Vocabulary, Grammar, Listening, Language Functions). Demostrar dominio de conocimiento A1.1 del taller diesel. Recibir feedback grupal. Preview Final Mission (S7-S8).",
+        "teacher_talk": "Good morning, everyone. Today is the big quiz day. This is NOT a test to fail you — it's evidence that you know the workshop. We've learned five important skills: reading, vocabulary, grammar, listening, and how to communicate in the workshop. Today you show what you know."
+      },
+      "while": {
+        "duracion_min": 320,
+        "bloques": [
+          {
+            "letra": "A",
+            "duracion_min": 80,
+            "actividad": "CUESTIONARIO CONSOLIDADO No 6 (PM-4.2): Administrar prueba de 25 ítems (5 Reading + 5 Vocabulary + 5 Grammar + 5 Listening + 5 Language Functions). Evidencia 6 formal del RAP.",
+            "agrupacion": "Individual (silent test)",
+            "instruccion": "Distribuir Cuestionario No 6 impreso (25 ítems). Instrucciones: 'You have 70 minutes. Read carefully. Answer all questions. No talking. Raise your hand if you have a question.' Secciones: (1) Reading (5 ítems, 15 min) — preguntas sobre texto Popular Mechanics. (2) Vocabulary (5 ítems, 10 min) — llenar espacios en blanco con 20 términos. (3) Grammar (5 ítems, 12 min) — corregir oraciones o completar estructuras. (4) Listening (5 ítems, 15 min) — reproducir audio Bay 2 Safety Briefing, responder preguntas. (5) Language Functions (5 ítems, 10 min) — elegir frase correcta para función comunicativa. Transcurridos 70 min: recopilar cuestionarios. Calificar después de la sesión (rúbrica: 1 pt c/ítem correcto = 25 pts totales)."
+          },
+          {
+            "letra": "B",
+            "duracion_min": 60,
+            "actividad": "Análisis grupal de resultados + Feedback oral inmediato (parcial)",
+            "agrupacion": "Whole class",
+            "instruccion": "Instructor distribuye cuestionarios sin calificar (pero corrige si hay errores obvios). Recorre cada sección: 'Let's talk about Section 1 — Reading. This question asked about the torque wrench. What does a torque wrench do? (Take 3 answers)' Refuerza respuestas correctas. Aclara malentendidos sin culpa. Registro mental: patrones de error (ej. si muchos fallaron 'There is/are', anota para S7 repaso)."
+          },
+          {
+            "letra": "C",
+            "duracion_min": 80,
+            "actividad": "Síntesis y cierre reflexivo de S1-S6 + Preview Final Mission S7-S8",
+            "agrupacion": "Whole class + Individual reflection",
+            "instruccion": "Instructor sintetiza: 'Five sessions ago, you walked in and said: I don't know tools. I don't know safety. I don't know English. TODAY you read an article. You answered questions about it. You learned 20 words. You wrote a document. You listened and SPOKE. You communicated five ways. THAT is what you know now.' Proyectar tabla de progresión (Skills Progression Map). Cada estudiante marca en su propia copia: qué habilidades sienten que dominan (●), cuáles necesitan más práctica (○). Guardar para S8 cierre. Preview Final Mission: 'In the next TWO sessions, you will do the complete Workshop Readiness Report — preparing a whole bay, speaking 60-90 seconds, answering questions from the supervisor. This is your FINAL EVIDENCE. Prepare well.'"
+          },
+          {
+            "letra": "D",
+            "duracion_min": 100,
+            "actividad": "Distribución de materiales para S7-S8 + Orientación Final Mission",
+            "agrupacion": "Small groups (3) + Whole class",
+            "instruccion": "Paso 1: Asignar equipos de 3 para Final Mission (S7-S8). Dar a cada equipo una 'Bay card' — designar qué bay prepararán (Bay 1 / Bay 2 / Bay 3). Paso 2: Distribuir Final Mission briefing (1-page document): escenario, roles, tiempo, criterios, materiales necesarios. Leer juntos. Responder preguntas: '¿Qué bay es tu responsabilidad? ¿Cuánto tiempo tienes? ¿Quién será supervisor?'"
+          }
+        ],
+        "transiciones": [
+          "Excellent work on the quiz. Let's talk about what you answered.",
+          "Great. Now let's look at how far you've come in five sessions.",
+          "Perfect. Now you know what the Final Mission is. Let's prepare together."
+        ]
+      },
+      "wrap_up": {
+        "duracion_min": 25,
+        "exit_ticket": "Escribe: (1) Una habilidad que sientes que DOMINAS bien. (2) Una habilidad donde quieres PRACTICAR más. (3) UNA PREGUNTA que tienes antes de la Final Mission. Ejemplos: (1) 'I understand vocabulary well.' (2) 'I want to practice speaking.' (3) 'What if my bay has a big problem?'",
+        "teacher_talk": "Before we go — you did excellent work on the quiz today. Write one thing you're proud of, one thing to practice, and one question. We'll answer your questions at the start of our next session. You have two sessions to prepare your Final Mission. Use that time wisely. See you next session.",
+        "trabajo_autonomo": {
+          "actividad": "Final Mission Preparation & Consolidation (2.25h): Revisar cuestionario S6 — volver a responder ítems donde fallaste, esto es estudio. Con tu equipo de 3: hacer una lista de todo lo que tu bay necesita (floor jack, tools, checklist completada, etc.) — es tu PLAN. Practicar el reporte oral 60-90 seg usando Stock Card personal. Grabar video de 90 seg practicando tu reporte (enviar a instructor si es posible). Ver todos los videos/slides de S1-S5 como repaso final (30 min). Completar self-assessment final: comparar Gap Cards S1 vs ahora — qué cambió?",
+          "workbook_ref": "Workbook Ch. 6 — Final Mission Launch: Quiz reflection guide + Bay Planning Checklist + Personal report script template + Video recording guide + Gap Card reassessment",
+          "tiempo_min": 135
+        }
+      },
+      "logistics_box": {
+        "worksheets": [
+          "PM-4.2 (Cuestionario Consolidado)",
+          "Review + synthesis"
+        ],
+        "materiales": [
+          "Cuestionario No 6 impreso (25 ítems) — 8 copias + 1 original para calificar",
+          "Audio Bay 2 Safety Briefing (para sección Listening del quiz) — reproducible",
+          "Parlantes/audífonos (para escucha simultánea del audio)",
+          "Skills Progression Map impreso (1 por aprendiz) — para auto-assessment",
+          "Bay Cards (designación de bay para cada equipo S7-S8) — 3 tarjetas (Bay 1 / Bay 2 / Bay 3)",
+          "Final Mission Briefing (1-page document) — 8 copias + 1 póster en aula",
+          "Rúbrica de Cuestionario (para calificación del instructor)"
+        ],
+        "agrupacion": "Individual (quiz) → Whole class (discussion) → Individual (reflection) → Small groups (3) + Whole class (orientation)",
+        "recursos_canva": "Slides 41-48: Quiz preview (no respuestas), Skills Progression Map visual, Final Mission scenario (video/image), Team assignment display, Celebration slide",
+        "plan_b": "Si hay estudiante que no termina en 70 min: puede terminar en pausa (hasta 10 min más). Si audio falla: leer script del diálogo en voz alta. Si hay diferencia en ritmo: los que terminan rápido comienzan a revisar su Material de S7 (Final Mission briefing). No deje tiempo de espera sin estructura.",
+        "ambiente": "Aula de formación configurada para evaluación individual: silencio garantizado, escritorios individuales, sistema de audio para sección Listening del Cuestionario Consolidado.",
+        "momento_sena": "3.3 — Apropiación (evaluación formativa integradora)",
+        "estrategia": "Seminario Investigativo + Evaluación Formativa Integrada",
+        "justificacion": "El Cuestionario Consolidado No 6 actúa como instrumento de indagación sobre el propio aprendizaje. La revisión colectiva de respuestas y el diagnóstico por sección promueven la metacognición y la construcción crítica del conocimiento sobre las brechas restantes.",
+        "tecnicas": [
+          {
+            "bloque": "A",
+            "actividad": "Cuestionario Consolidado No 6 — E6 (25 ítems)",
+            "tecnica": "Cuestionario consolidado de selección múltiple (Evidencia 6)"
+          },
+          {
+            "bloque": "B",
+            "actividad": "Revisión grupal de respuestas + retroalimentación oral",
+            "tecnica": "Socialización de resultados / Conversatorio argumentado"
+          },
+          {
+            "bloque": "C",
+            "actividad": "Diagnóstico reflexivo + Gráfico de Progresión",
+            "tecnica": "Diagnóstico por sección / Gráfico de progresión de habilidades (5 dimensiones)"
+          },
+          {
+            "bloque": "D",
+            "tecnica": "Briefing de misión integradora + planeación inicial por equipos"
+          }
+        ]
+      }
+    },
+    {
+      "session": 7,
+      "nombre": "Final Mission Preparation",
+      "worksheets": [
+        "PM-3.5 (Draft Stage)"
+      ],
+      "duracion_min": 360,
+      "habilidades_foco": [
+        "S (Speaking)",
+        "V (Vocabulary)"
+      ],
+      "habilidades_soporte": [
+        "G (Grammar)",
+        "W (Writing)",
+        "L (Listening)"
+      ],
+      "set_up": {
+        "duracion_min": 20,
+        "warm_up": "Equipo reunido (no toda la clase junta): cada equipo de 3 presenta su Bay Card asignada. Instructor pregunta: 'Bay 1 team — what is your bay? What's the first thing you need to check?' Respuesta rápida del equipo.",
+        "objective": "Preparar la tarea integradora completa: Workshop Readiness Report simulado. Cada equipo inspecciona su bay (físico o simulado), completa checklist, ensaya el reporte de 60-90 seg, recibe feedback, practica con preguntas improvisadas del supervisor.",
+        "teacher_talk": "Good morning, teams. Today you're not students anymore — you're real technicians. Each team has a bay to prepare. You're going to check everything, complete a checklist, and practice your report to me, your supervisor. Let's make sure you're ready for the real performance tomorrow."
+      },
+      "while": {
+        "duracion_min": 300,
+        "bloques": [
+          {
+            "letra": "A",
+            "duracion_min": 70,
+            "actividad": "Inspección de Bay — Rotación física o simulada (PM-3.5 Draft): Equipo inspecciona su bay asignado. Completa Daily Inspection Checklist. Fotografía 3-5 puntos clave. Documenta cualquier 'problema' identificado.",
+            "agrupacion": "Small team (3) + instructor circulation",
+            "instruccion": "Si hay acceso a taller real: equipos van al taller con checklist impreso. Inspeccionan floor jack, herramientas, seguridad, limpieza. Marcan ✓ si está bien, ✗ si hay problema. Fotografían. Regresan al aula. Si es simulado: distribuir descripción de bay (texto). Equipo imagina y completa checklist basado en descripción. Ejemplo: 'Bay 2 has a small spill near the door. Floor jack is clean. Tools are organized. But the fire extinguisher is partially blocked.' Equipo marca en checklist."
+          },
+          {
+            "letra": "B",
+            "duracion_min": 80,
+            "actividad": "Preparación del Reporte Oral — Planificación + Ensayo en pareja (PM-3.5 Draft): Equipo diseña su reporte oral de 60-90 seg. Escribe guión (no para leer, sino para memorizar estructura). Ensaya en parejas dentro del equipo (2 practican mientras 1 observa con checklist).",
+            "agrupacion": "Small team (3) → Pairs (rehearsal)",
+            "instruccion": "Paso 1 (20 min — Planificación): Equipo decide ORDEN de reporte. Estructura propuesta: (a) Saludo + nombre del bay. (b) Estado general (1 frase: 'Bay 2 is ready.' o 'Bay 1 has one problem.'). (c) Detalles: Floor jack status / Tools status / Safety equipment status / Hazards if any (máximo 3 detalles clave). (d) Cierre: 'What should we do next?' Escriben guión en papel (máximo 150 palabras). Paso 2 (40 min — Ensayo): Pareja 1 (estudiantes A y B) practican reporte. Estudiante C escucha con checklist: ¿vocabulario correcto? ¿hay 3+ estructuras gramaticales (imperatives, There is/are, prepositions)? ¿timing ~90 seg? Feedback. Luego ruedan."
+          },
+          {
+            "letra": "C",
+            "duracion_min": 70,
+            "actividad": "Presentación y Feedback de Supervisor (PM-3.5 Draft): Cada equipo presenta su reporte completo (60-90 seg) ante instructor (como supervisor). Instructor responde con 2-3 preguntas improvisadas. Equipo responde. Feedback inmediato.",
+            "agrupacion": "Small team (presenting) + instructor (supervisor role) + observers (peers with checklist)",
+            "instruccion": "Formato: 15 min por equipo (5-6 min reporte + 5 min preguntas + 4 min feedback). ORDEN: Bay 1 team, Bay 2 team, Bay 3 team (o como sea designado). Instructor se posiciona como Carlos Mendoza, supervisor. Equipo entra, presenta reporte (60-90 seg SIN PAUSAS, SIN LEER). Instructor interrumpe con preguntas reales: 'What about the socket set? Where is the fire extinguisher? Is the floor jack leaking?' Equipo responde en rol (pueden mirar notas si olvidan detalles técnicos, pero el habla debe ser natural). Feedback: instructor destaca 2 cosas buenas + 1 cosa a mejorar. Observadores anotan: ¿qué funciones comunicativas vieron? (F1-F5). Luego: instructor muestra a grupo las anotaciones de observadores — refuerza patrones positivos."
+          },
+          {
+            "letra": "D",
+            "duracion_min": 80,
+            "actividad": "Revisión de Feedback + Segundo Ensayo (PM-3.5 Draft iteration): Equipos reciben feedback, revisan guión, ensayan nuevamente. Enfoque: corregir los puntos débiles identificados.",
+            "agrupacion": "Small team (3)",
+            "instruccion": "Cada equipo se lleva su feedback de instructor. Lee. Identifica 1 cosa a mejorar (ej: pronunciación de 'fire extinguisher' / falta de descripción de hazard / timing muy rápido). Revisa guión (máximo 3 min de cambios). Ensaya de nuevo UNA VEZ más en pareja (10 min). Guardan guión revisado para S8."
+          }
+        ],
+        "transiciones": [
+          "Great inspections, teams. Now let's write your reports.",
+          "Good writing. Now let's practice out loud.",
+          "Excellent rehearsal. Now you present to me as supervisor.",
+          "Wonderful first performances. Now let's improve based on feedback."
+        ]
+      },
+      "wrap_up": {
+        "duracion_min": 40,
+        "exit_ticket": "Equipo escribe: (1) La parte de nuestro reporte que salió MUY BIEN. (2) La parte que queremos MEJORAR para mañana. (3) UNA PREGUNTA DEL SUPERVISOR que fue difícil — ¿cómo la respondemos mañana? (4) Calificación de confianza: 1-5, ¿qué tan listos se sienten para mañana?",
+        "teacher_talk": "Fantastic work, teams. You're ready. Your reports are strong. Some of you were a little fast — slow down tomorrow. Some struggled with pronunciation — practice 'fire extinguisher' and 'torque wrench' tonight. Tomorrow at 7:00 AM, you're opening The Diesel Workshop. I'll be your supervisor. You know what to do. Get some rest. See you tomorrow.",
+        "trabajo_autonomo": {
+          "actividad": "Final Mission Evening Preparation (1.5h): EQUIPO — practicar reporte JUNTOS una última vez (20 min). Cada miembro practica SU parte 3 veces en voz alta (45 min total). Grabar video de reporte completo (revisar 2-3 veces, no más). Anotar pronunciación problemática + practicar esos 3-5 términos en voz alta 5 min. INDIVIDUAL — dormir bien. Llegar 5 min temprano S8.",
+          "workbook_ref": "Workbook Ch. 7 — Final Mission Wrap: Report script (final version) + Feedback notes + Pronunciation focus list + Confidence self-check + Sleep reminder",
+          "tiempo_min": 90
+        }
+      },
+      "logistics_box": {
+        "worksheets": [
+          "PM-3.5 (Draft Stage)"
+        ],
+        "materiales": [
+          "Bay description cards o acceso a taller real (designar Bay 1/2/3)",
+          "Daily Inspection Checklist en blanco (3 copias, 1 por equipo)",
+          "Papel para guión de reporte (1 por equipo)",
+          "Evaluación de supervisor (feedback form, 1 por equipo)",
+          "Checklist de observadores (para peers, 5 copias) — incluye tabla F1-F5",
+          "Cámara/celular (grabación de reporte si es posible)",
+          "Marcadores, post-its, cinta adhesiva"
+        ],
+        "agrupacion": "Small teams (3) + peers as observers + instructor (supervisor role)",
+        "recursos_canva": "Slides 49-56: Bay descriptions (si no hay acceso físico), Sample supervisor questions, Feedback template visual, Team celebration slide",
+        "plan_b": "Si no hay acceso a taller físico: usar descripciones textuales de bays (impresas) en lugar de inspección física. Si equipos no terminan segundo ensayo a tiempo: puede terminar en pausa/casa (ver trabajo autónomo). Si hay estudiante ausente en equipo: reasignar al equipo diferente o hacer equipo de 2 + instructor. Si hay problemas graves identificados: usar feedback constructivo, no crítica destructiva — son aprendices en primer día.",
+        "ambiente": "Aula de formación con área de presentación designada (frente de clase) para ensayos por equipos de 3; espacio de observación para equipo par. Opcional: acceso a taller real o bay simulado.",
+        "momento_sena": "3.4 — Transferencia (preparación)",
+        "estrategia": "Simulaciones + Aprendizaje Basado en Tareas",
+        "justificacion": "Los ensayos en S7 son ensayos de transferencia controlada: el aprendiz aplica todo lo aprendido en S1-S6 en un entorno simulado del sector productivo con retroalimentación inmediata entre pares y del instructor.",
+        "tecnicas": [
+          {
+            "bloque": "A",
+            "actividad": "Bay Inspection — Asignación de bay y roles",
+            "tecnica": "Taller de práctica / Lectura de especificación de tarea"
+          },
+          {
+            "bloque": "B",
+            "actividad": "Rehearsal Ronda 1 — Preparación y ensayo",
+            "tecnica": "Ensayo guiado en equipo de 3 + Peer Observation Sheet"
+          },
+          {
+            "bloque": "C",
+            "actividad": "Supervisor Feedback en vivo",
+            "tecnica": "Simulación con retroalimentación estructurada entre pares (3 categorías)"
+          },
+          {
+            "bloque": "D",
+            "actividad": "Segundo Ensayo con mejoras incorporadas",
+            "tecnica": "Práctica de campo (segundo ensayo con incorporación de feedback)"
+          },
+          {
+            "bloque": "E",
+            "tecnica": "Drills de pronunciación con Chunk Cards + consolidación iterativa de role cards"
+          }
+        ]
+      }
+    },
+    {
+      "session": 8,
+      "nombre": "The Full Circle",
+      "worksheets": [
+        "PM-3.5 (Final Performance)"
+      ],
+      "duracion_min": 360,
+      "habilidades_foco": [
+        "S (Speaking)"
+      ],
+      "habilidades_soporte": [
+        "R (Reading)",
+        "V (Vocabulary)",
+        "G (Grammar)",
+        "L (Listening)"
+      ],
+      "set_up": {
+        "duracion_min": 30,
+        "warm_up": "Ceremonia de bienvenida: instructor es Carlos Mendoza. Equipos llegan formalmente. Instructor da 'briefing de supervisor' de 2 min: 'Good morning, team. Welcome to The Diesel Workshop. Today is Monday, 7:00 AM. We have three bays to open. Three teams, three bays. You are my technicians. Show me that you are ready. Bay 1 team — you're on.' Actividad pre-reporte: todos practican pronunciación de 5 palabras clave (60 seg en parejas — murmuración).",
+        "objective": "Realizar la tarea integradora final: Workshop Readiness Report en vivo para cada equipo (60-90 seg). Responder preguntas del supervisor. Completar checklist formal del desempeño. Cierre reflexivo: redistribuir Gap Cards S1, reflexión circular, celebración de fin de guía.",
+        "teacher_talk": "Good morning, everyone. Seven sessions ago you walked in and said: 'I don't know English. I don't know about diesel workshops.' Today you're opening The Diesel Workshop as my team. I'm proud of you. Let's finish strong. Bay 1 team — whenever you're ready."
+      },
+      "while": {
+        "duracion_min": 300,
+        "bloques": [
+          {
+            "letra": "A",
+            "duracion_min": 210,
+            "actividad": "Presentación Final Mission — 3 equipos x 90 min total (30 min por equipo): cada equipo presenta Workshop Readiness Report (60-90 seg) en rol ante supervisor (instructor). Responde preguntas improvisadas. Recibe calificación formal (Escala de Estimación No 4 revisada).",
+            "agrupacion": "Individual/team (performing) + peer observers + instructor (evaluating)",
+            "instruccion": "FORMATO POR EQUIPO (30 min total = 6 min reporte + 8 min preguntas + 10 min observador feedback + 6 min transición). REPORTE (6 min): Equipo de 3 entra. Un miembro lidera (pero todos participan si supervisor interrumpe). Presenta reporte 60-90 seg. No pueden leer del papel — solo usar notas si pierden el hilo, pero debe parecer natural. PREGUNTAS (8 min): Instructor (como Carlos Mendoza, supervisor) hace 3-4 preguntas reales. Ejemplos: 'Bay 2 team, what about the socket set? Where is it?' / 'Is the floor jack working properly? How do you know?' / 'You said there's a spill — how big is it?' Equipo responde en inglés, en rol. OBSERVER FEEDBACK (10 min): Resto de clase comparte observaciones de checklist. Instructor llena Escala de Estimación No 4 formal (5 criterios × 1-5 pts = máx 25 pts). Lee puntuación en voz alta. Destaca 1 cosa excelente + 1 área de crecimiento para equipo. Celebración breve (aplauso)."
+          },
+          {
+            "letra": "B",
+            "duracion_min": 60,
+            "actividad": "Cierre reflexivo circular — Redistribución Gap Cards S1 + Reflexión individual + Círculo de compartición",
+            "agrupacion": "Individual → Whole class (círculo)",
+            "instruccion": "Paso 1 (10 min): Instructor redistribuye Gap Cards de S1 — cada aprendiz recibe OTRA tarjeta (no la suya). Paso 2 (20 min): Lectura individual de la tarjeta de otro: 'I can name 15 of 20 tools...' / 'I can classify maintenance types...' etc. Anotan al reverso: ¿Cómo estuvo ENTONCES (S1)? ¿Cómo está AHORA (S8)? Cambió? ¿Por qué? Paso 3 (30 min): Círculo de cierre. Cada aprendiz dice (60-90 seg): 'The Gap Card I have is [statement]. In Session 1, I felt [emotion/doubt]. Now in Session 8, I feel [confidence]. Because [una razón: learned vocabulary / practiced speaking / passed quiz, etc.]' Instructor cierra con reflejo grupal: 'Eight sessions ago, you didn't know. Now you know. You can read in English, you can write documents, you can listen, you can SPEAK about your workshop. You are professionals. You are ready for your job.'"
+          }
+        ],
+        "transiciones": [
+          "Perfect, Bay 1 team. Excellent work. Bay 2 team — you're on.",
+          "Great job, Bay 2. Now Bay 3 — let's see your bay.",
+          "Fantastic performance from all three teams. Now let's reflect on how far you've come."
+        ]
+      },
+      "wrap_up": {
+        "duracion_min": 30,
+        "exit_ticket": "Escribe UNA COSA que quieres RECORDAR de The Diesel Workshop. Puede ser una palabra, una frase, un consejo de seguridad, o una función comunicativa que ahora dominas. Ej: 'I will always wear PPE.' / 'Fire extinguisher must be accessible.' / 'I can give instructions to a technician.' / 'Workshop organization saves time.' Firma y fecha. Foto para recuerdo.",
+        "teacher_talk": "Colleagues — yes, I'm calling you colleagues now, because that's what you are. You started as learners. You are now technicians who speak English. You've read about tools. You've written reports. You've listened to safety briefings. You've SPOKEN like professionals. Every single one of you did this. I'm proud. Take a moment. Remember this. When you're in a real workshop and you need to speak English — remember today. You CAN do it. Thank you. Graduation of The Diesel Workshop — Class of 2026. Well done.",
+        "trabajo_autonomo": {
+          "actividad": "Cierre autónomo (post-guía — NO es tarea): Repasar Personal Communication Card de S5 (opcional, pero recomendado — es tu referencia futura). Ver video final de síntesis: 90-seg clip que instructor grabó durante sesiones (compilación de momentos clave). Llenar encuesta de satisfacción anónima (opcional, pero valued para mejora de guía). Compartir fotos/evidencias de aprendizaje en grupo de WhatsApp o carpeta compartida del centro.",
+          "workbook_ref": "Workbook Ch. 8 — The Full Circle: Reflection template + Personal Communication Card (keep it) + Satisfaction survey + Certificate of Completion (impreso + digital)",
+          "tiempo_min": 0
+        }
+      },
+      "logistics_box": {
+        "worksheets": [
+          "PM-3.5 (Final Performance)"
+        ],
+        "materiales": [
+          "Gap Cards de S1 (redistribuidas) — 8 impresas",
+          "Rotafolios/pizarra para reflejos (opcional)",
+          "Cámara/celular para fotoevidencias (grupo completo, cada equipo)",
+          "Escala de Estimación No 4 (5 copias — instructor + observers)",
+          "Música ambiental (suave, para crear atmósfera — opcional pero recomendado)",
+          "Certificado de finalización (impreso, 1 por aprendiz) — opcional",
+          "Encuesta de satisfacción (impresa o digital) — opcional",
+          "Refrigerio de celebración (galletas, bebida — celebración cultural del cierre)"
+        ],
+        "agrupacion": "Whole class (setup) → Individual/team (performance) → Peer observers + instructor (evaluation) → Whole class (reflection circle) → Individual (exit ticket)",
+        "recursos_canva": "Slides 57-64: Opening scene (supervisor briefing), Performance checklist visual, Observer feedback form, Reflection prompt, Certificate template, Celebration slide",
+        "plan_b": "Si hay equipo ausente: otro equipo puede presentar dos bays (reasignación rápida). Si se acabó el tiempo en presentaciones: comprimir reflection circle a 15 min (cada aprendiz 30-45 seg en lugar de 60-90 seg). Si hay emoción fuerte en reflection (llanto, risa): normalizar — es válido. Mantener dignidad del momento. Si no hay acceso a música/refrigerio: usar palabras + silencio + aplauso — igualmente poderoso. Foto grupal final (aún con distancia — es importante registro).",
+        "ambiente": "Aula de formación configurada como taller simulado: tres bays designados (Bay 1/2/3), área de audiencia para equipos observadores, espacio para fotografías de cierre y redistributición de Gap Cards S1.",
+        "momento_sena": "3.4 — Transferencia (performance final)",
+        "estrategia": "Simulaciones",
+        "justificacion": "S8 es la transferencia plena al entorno productivo: la Misión Final recrea una apertura real de bay diesel ante un Coordinador de Formación. Es la demostración auténtica del RAP en contexto de taller.",
+        "tecnicas": [
+          {
+            "bloque": "A",
+            "actividad": "Final Mission — Bay Opening Briefing en vivo (E7)",
+            "tecnica": "Simulación de entorno productivo real / Performance evaluada (Escala de Estimación No 6)"
+          },
+          {
+            "bloque": "B",
+            "actividad": "Cierre reflexivo + Redistribución Gap Cards S1",
+            "tecnica": "Reflexión circular de cierre / Redistribución de Gap Cards (antes–después)"
+          },
+          {
+            "bloque": "C",
+            "tecnica": "Reflexión circular de cierre (Parte 2: carta al yo de S1 + mapa de habilidades + celebración de par)"
+          },
+          {
+            "bloque": "D",
+            "tecnica": "Revisión panorámica de portafolio + ceremonia de cierre con reconocimiento personal"
+          }
+        ]
+      }
+    }
+  ],
+  "skills_progression_map": [
+    {
+      "session": 1,
+      "R": "—",
+      "L": "—",
+      "V": "—",
+      "P": "—",
+      "G": "—",
+      "W": "—",
+      "S": "—"
+    },
+    {
+      "session": 2,
+      "R": "●",
+      "L": "—",
+      "V": "●",
+      "P": "—",
+      "G": "—",
+      "W": "—",
+      "S": "—"
+    },
+    {
+      "session": 3,
+      "R": "○",
+      "L": "—",
+      "V": "○",
+      "P": "—",
+      "G": "●",
+      "W": "●",
+      "S": "—"
+    },
+    {
+      "session": 4,
+      "R": "—",
+      "L": "●",
+      "V": "○",
+      "P": "●",
+      "G": "○",
+      "W": "—",
+      "S": "●"
+    },
+    {
+      "session": 5,
+      "R": "○",
+      "L": "○",
+      "V": "○",
+      "P": "—",
+      "G": "○",
+      "W": "—",
+      "S": "●"
+    },
+    {
+      "session": 6,
+      "R": "●",
+      "L": "●",
+      "V": "●",
+      "P": "—",
+      "G": "●",
+      "W": "○",
+      "S": "○"
+    },
+    {
+      "session": 7,
+      "R": "○",
+      "L": "—",
+      "V": "●",
+      "P": "●",
+      "G": "○",
+      "W": "—",
+      "S": "●"
+    },
+    {
+      "session": 8,
+      "R": "—",
+      "L": "—",
+      "V": "○",
+      "P": "—",
+      "G": "—",
+      "W": "—",
+      "S": "●"
+    }
+  ],
+  "autonomous_work_map": [
+    {
+      "asignado_en": "S1",
+      "revisado_en": "S2",
+      "actividad": "Vocabulary Preview (5 herramientas) + Self-assessment Gap Cards + Video preview",
+      "workbook_ref": "Workbook Introduction + Self-Assessment Card",
+      "tiempo_min": 135
+    },
+    {
+      "asignado_en": "S2",
+      "revisado_en": "S3",
+      "actividad": "Flashcard review + Original article reading + Daily Inspection Checklist field work",
+      "workbook_ref": "Workbook Ch. 2 — Vocabulary Extension",
+      "tiempo_min": 90
+    },
+    {
+      "asignado_en": "S3",
+      "revisado_en": "S4",
+      "actividad": "Grammar stations review + Peer feedback incorporation + Final document polish",
+      "workbook_ref": "Workbook Ch. 3 — Grammar Mastery",
+      "tiempo_min": 45
+    },
+    {
+      "asignado_en": "S4",
+      "revisado_en": "S5",
+      "actividad": "Dialogue dramatization rehearsal + Pronunciation chunk practice + Stock Card preparation",
+      "workbook_ref": "Workbook Ch. 4 — Speaking Mastery",
+      "tiempo_min": 90
+    },
+    {
+      "asignado_en": "S5",
+      "revisado_en": "S6",
+      "actividad": "Personal Communication Card creation + Quiz S6 practice items + Function drill review",
+      "workbook_ref": "Workbook Ch. 5 — Communication Mastery",
+      "tiempo_min": 135
+    },
+    {
+      "asignado_en": "S6",
+      "revisado_en": "S7",
+      "actividad": "Quiz review study guide + Gap Card re-assessment + Final Mission prep orientation",
+      "workbook_ref": "Workbook Ch. 6 — Final Mission Launch",
+      "tiempo_min": 90
+    },
+    {
+      "asignado_en": "S7",
+      "revisado_en": "S8",
+      "actividad": "Final Mission Evening Preparation: team rehearsal + individual practice + video recording + pronunciation focus",
+      "workbook_ref": "Workbook Ch. 7 — Final Mission Wrap",
+      "tiempo_min": 90
+    }
+  ],
+  "master_materials_list": {
+    "impresos": [
+      "Titular Motor Age (A3 o A4): 'Three mechanics hospitalized after workshop fire'",
+      "Infografía workshop layout (A3) — 7 zonas etiquetadas en inglés",
+      "Tarjetas de personajes (3x): Carlos Mendoza, Valentina Cruz, Santiago Ríos",
+      "Tarjetas de votación debate (verde/rojo, 16 pares)",
+      "Tabla KWL (1 por aprendiz, 8 copias)",
+      "Imágenes diagnóstico taller (4 imágenes A4, 2 copias c/u)",
+      "Gap Cards (8 copias, 1 por aprendiz, plastificadas para reutilización S8)",
+      "Guión entrevista pares (impreso, 1 por aprendiz)",
+      "Word Wall cards x20 (A4, categorizado: Environment/Tools/Safety/Maintenance/Documents)",
+      "Flashcard sets (1 juego por pareja, termolaminados o cartulina — 4 juegos = 80 tarjetas totales)",
+      "Texto adaptado 'Tools Every Diesel Technician Needs' (A4, 3 secciones)",
+      "Cuestionario No 1 (5 ítems Reading — Evidencia 1, 8 copias)",
+      "Daily Inspection Checklist en blanco (A4, 10 copias mínimo)",
+      "Work Order Header en blanco (A4, 10 copias)",
+      "Tarjetas de categorías (5 colores: Environment/Tools/Safety/Maintenance/Documents)",
+      "Texto S2 con resaltados (impreso o escaneado — rojo, azul, verde para 3 estructuras)",
+      "Error Log (10 oraciones, 1 por pareja, 8 copias)",
+      "Safety Report formato (A4, template, 8 copias)",
+      "Lista de Verificación No 2 (10 criterios Writing peer review, 8 copias)",
+      "Diálogo 'Bay 2 Safety Briefing' (impreso, 1 por pareja, 5 copias)",
+      "Cuestionario No 3 (5 ítems Listening — Evidencia 3, 8 copias)",
+      "Stock Card A — Bay Status (A5, 1 por aprendiz, 8 copias)",
+      "Stock Card B — Sentence Starters (A5, 1 por aprendiz, 8 copias)",
+      "Chunk Cards pronunciación (5 términos, A4, impresos)",
+      "Communication Map (A3 póster, 5 funciones interconectadas)",
+      "15 tarjetas de frases para clasificación (función, 1 juego por grupo de 3, 3 juegos = 45 tarjetas)",
+      "Personal Communication Card blank (A5 doblado, 1 por aprendiz, 8 copias)",
+      "Quiz sample items S6 (5 ítems, 8 copias)",
+      "Skills Progression Map (1 por aprendiz, 8 copias)",
+      "Bay Cards (designación: Bay 1/2/3, 3 tarjetas)",
+      "Final Mission Briefing (1-page, 8 copias + 1 póster A3)",
+      "Cuestionario No 6 Consolidado (25 ítems: 5R + 5V + 5G + 5L + 5LF, 8 copias + 1 original)",
+      "Escala de Estimación No 4 (Speaking, 5 criterios, 8 copias instructor + observers)",
+      "Escala de Estimación No 5 (Language Functions, 5 criterios, 8 copias)",
+      "Checklist de observadores (funciones F1-F5, 8 copias)",
+      "Feedback form supervisor (1 por sesión S4-S7, 20 copias)",
+      "Certificado de Finalización (opcional, 8 copias)"
+    ],
+    "digitales": [
+      "Audio diálogo 'Bay 2 Safety Briefing' (MP3, TTS o grabado, ~3 min)",
+      "Imágenes Popular Mechanics (6 imágenes alta resolución, JPEG)",
+      "Canva presentation deck (Slides 1-64): todas las sesiones S1-S8, con proyección por sesión",
+      "Video modelo Workshop Readiness Report (90 seg, grabado o TTS + visuals)",
+      "Video taller diesel real (YouTube clip, 2-3 min, si no hay acceso físico)",
+      "Encuesta de satisfacción (Google Form o Formulario digital, QR code impreso)",
+      "Video compilado de la guía (90 seg de highlights, para cierre S8)"
+    ],
+    "equipamiento": [
+      "Proyector o smart TV (para todas las sesiones)",
+      "Parlantes o audífonos (para audio listening S4 + S6 quiz)",
+      "Cámara/celular (fotografías taller S2 + video recording S7-S8)",
+      "Micrófono de diadema (recomendado para grabación clara S4 + S7-S8)",
+      "Conexión a internet (Canva slides, YouTube video, Google Form)",
+      "Tarjetero o pizarra blanca (para frases, tarjetas, notas transición)"
+    ],
+    "aula": [
+      "Disposición de mesas: U-shape o clusters (facilita pair/group work)",
+      "Espacio de pared: para pegar Word Wall cards (visible toda la guía)",
+      "Espacio de taller (físico o simulado): para inspección Bay S7-S8",
+      "Área de presentación (simulada o real): con silla de 'supervisor' para S4, S7, S8",
+      "Sistema de ventilación: importante si hay acceso a taller con fumes",
+      "Iluminación adecuada: especialmente para lectura de textos pequeños",
+      "Acceso a agua: para dramatizar 'spill cleanup' (opcional pero realista)"
+    ]
+  },
+  "totals": {
+    "direct_hours": 48.75,
+    "autonomous_hours": 11.25,
+    "sessions": 8,
+    "session_duration_min": 360,
+    "total_hours": 60
+  },
+  "notes": [
+    "Intensidad VARIABLE: 60h total vs default 24h. Sesión = 360 min (6 horas) vs default 180 min (3 horas). Aumenta profundidad de cada sesión.",
+    "Discrepancia 0.75h documentada en PM-2.11: directas 48.75h (vs esperado 48h) + autónomas 11.25h (vs esperado 12h). Total = 60h exacto. Distribuida naturalmente sin ajuste mecánico. Resuelta en PM-2.11; PM-3.1 la absorbe.",
+    "Estructura tripartita SET-UP/WHILE/WRAP-UP respetada en TODAS las sesiones. Tiempos suman exactamente 360 min.",
+    "Nombre comunicativo para cada sesión: The Wake-Up Call (S1), Reading the Workshop (S2), Write It Right (S3), Tuning In & Speaking Up (S4), The Workshop in Action (S5), Prove What You Know (S6), Final Mission Preparation (S7), The Full Circle (S8).",
+    "Teacher Talk — 3-4 frases por sesión en inglés, bilingüe donde es A1.1, usando vocabulario técnico real del taller.",
+    "Economía (Stock Cards, Word Wall, reuso de materiales): Word Wall reutilizado S2-S8. Stock Cards de S4 reutilizadas en S5 y S7. Gap Cards de S1 redistribuidas en S8. Checklist + Work Order templates reutilizados múltiples sesiones.",
+    "Progresión Bloom visible: S1 (Recordar/Comprender), S2-S3 (Comprender/Aplicar), S4-S5 (Aplicar/Analizar/Evaluar), S6 (Recordar/Comprender — síntesis), S7-S8 (Aplicar/Analizar/Evaluar — transferencia final).",
+    "6 Evidencias formales distribuidas: Evidencia 1 (Reading, S2), Evidencia 2 (Writing, S3), Evidencia 3 (Listening, S4), Evidencia 4 (Speaking, S4), Evidencia 5 (Language Functions, S5), Evidencia 6 (Cuestionario Consolidado, S6).",
+    "Plan B en sesiones críticas: S4 Listening (si audio falla: leer script instructor), S4 Speaking (fishbowl format si clase grande), S5 simulation (carousel si tiempo limitado), S8 Final Mission (reasignación equipo si ausencia).",
+    "Zero meta-talk: este Playbook Outline es OPERATIVO para instructor, listo para implementar. Sin explicaciones pedagógicas en cuerpo principal — esas viven en el master prompt PM-3.1.",
+    "Trabajo autónomo total = 11.25h distribuidas en 7 asignaciones (S1-S7). Cada una vinculada a sesión presencial + revisada en sesión siguiente. Referencias Workbook (PM-3.4) incluidas.",
+    "Cuestionario (PM-4.2) ubicado en S6 primera mitad, NO fragmentado. 25 ítems consolidados: 5 Reading + 5 Vocabulary + 5 Grammar + 5 Listening + 5 Language Functions = síntesis formal de RAP.",
+    "Final Mission (PM-3.5) en S7-S8: preparación (S7) + performance en vivo (S8) con supervisor role-play, feedback inmediato, reflexión circular de cierre.",
+    "Recursos Canva: 64 slides total (distribuidas por sesión). No incluidos aquí — generados paralelo en PM-3.3.",
+    "Discrepancia 0.75h RESOLUCIÓN ADOPTADA: distribuida naturalmente — ninguna sesión se siente acelerada. S6 primera mitad ligeramente comprimida, S6-8 transferencia ligeramente expandida. Total pedagógicamente coherente."
+  ],
+  "rap_status": "220501096 - Comunicar información técnica en inglés en contextos de mantenimiento de motores",
+  "voc_dimensions_table": [
+    {
+      "session": 1,
+      "nombre": "The Wake-Up Call",
+      "cognitiva": "Identificar el problema de seguridad descrito en el titular y relacionarlo con las causas posibles en un taller diesel.",
+      "procedimental": "Mapear las 7 zonas del taller diesel usando el workshop layout como referencia, describiendo su ubicación con preposiciones de lugar.",
+      "actitudinal": "Valorar la importancia de la seguridad y del inglés técnico como herramienta de comunicación profesional en el taller."
+    },
+    {
+      "session": 2,
+      "nombre": "Reading the Workshop",
+      "cognitiva": "Clasificar los 20 términos del Toolbelt según las cinco categorías del taller de motores diesel.",
+      "procedimental": "Construir el Word Wall organizando físicamente las tarjetas en su categoría, siguiendo el modelo del instructor.",
+      "actitudinal": "Valorar la importancia del vocabulario técnico en inglés como herramienta de comunicación segura en el entorno de mantenimiento de motores."
+    },
+    {
+      "session": 3,
+      "nombre": "Write It Right",
+      "cognitiva": "Identificar las tres estructuras gramaticales (imperativos, There is/are, preposiciones de lugar) en el texto técnico de la Sesión 2 mediante marcación por colores.",
+      "procedimental": "Producir un Daily Inspection Checklist y un Work Order completo en inglés aplicando las tres estructuras gramaticales en formato de documento técnico.",
+      "actitudinal": "Reconocer la precisión gramatical en inglés como condición necesaria para la documentación técnica segura en el taller diesel."
+    },
+    {
+      "session": 4,
+      "nombre": "Tuning In & Speaking Up",
+      "cognitiva": "Comprender el diálogo Bay 2 Safety Briefing identificando instrucciones de seguridad, ubicaciones y vocabulario del Toolbelt.",
+      "procedimental": "Presentar un Workshop Readiness Report oral de 60-90 segundos describiendo el estado del bay usando ≥8 términos del Toolbelt.",
+      "actitudinal": "Demostrar responsabilidad profesional al comunicar el estado de seguridad del bay con precisión y sin lectura de apuntes."
+    },
+    {
+      "session": 5,
+      "nombre": "The Workshop in Action",
+      "cognitiva": "Identificar las 5 funciones comunicativas del Workshop Specialist y las estructuras lingüísticas que activan cada una.",
+      "procedimental": "Realizar una simulación integrada de apertura de taller demostrando las 5 funciones comunicativas en secuencia natural y coordinada.",
+      "actitudinal": "Demostrar trabajo en equipo y conducta profesional en inglés durante la simulación de apertura de taller."
+    },
+    {
+      "session": 6,
+      "nombre": "Prove What You Know",
+      "cognitiva": "Demostrar dominio integrado de las 5 habilidades de inglés técnico respondiendo 25 ítems del Cuestionario Consolidado sin materiales de apoyo.",
+      "procedimental": "Completar el diagnóstico por sección e identificar acciones de refuerzo específicas para cada habilidad con puntaje inferior a 3/5.",
+      "actitudinal": "Reconocer con honestidad las fortalezas y brechas propias como punto de partida para la preparación de la Misión Final."
+    },
+    {
+      "session": 7,
+      "nombre": "Final Mission Preparation",
+      "cognitiva": "Analizar los 8 requisitos de la Misión Final e identificar los mínimos de funciones comunicativas asignados al rol propio.",
+      "procedimental": "Ensayar el briefing de apertura de taller en equipo de 3, incorporando la retroalimentación estructurada de pares en la Ronda 2.",
+      "actitudinal": "Comprometerse con la preparación individual y colectiva necesaria para demostrar el nivel A1.1 en la Misión Final."
+    },
+    {
+      "session": 8,
+      "nombre": "The Full Circle",
+      "cognitiva": "Comparar el nivel actual de competencia con la Gap Card inicial e identificar el progreso logrado a lo largo de las 8 sesiones.",
+      "procedimental": "Ejecutar la Misión Final completa (3-4 min) demostrando las 5 funciones comunicativas, 15 términos del Toolbelt y los 8 requisitos sin leer de apuntes.",
+      "actitudinal": "Celebrar el aprendizaje logrado y comprometerse con la continuación del desarrollo del inglés técnico en el entorno laboral real."
+    }
+  ],
+  "voc_dimensions_note": "Tabla añadida en rev 2026-04-18. Cada instrucción sigue la fórmula V+O+C: Verbo (infinitivo) + Objeto + Condición. Referencia pedagógica para el instructor.",
+  "ambientes_resumen": {
+    "nota": "Todas las sesiones se desarrollan en aula de formación presencial. El ambiente físico se adapta por sesión según la actividad dominante: clase magistral inductiva (S1-S2), estaciones rotativas (S3), evaluación oral (S4, S7-S8), simulación (S5), evaluación escrita (S6).",
+    "tipo_ambiente": "Aula convencional con adaptaciones por sesión",
+    "recursos_fijos": [
+      "Proyector o pantalla de proyección",
+      "Pizarra o tablero blanco con marcadores de colores",
+      "Conexión eléctrica para dispositivos del instructor",
+      "Espacio en pared para Word Wall permanente (S2–S8)",
+      "Mesas reconfigurables para trabajo individual, parejas y grupos"
+    ],
+    "recursos_variables_por_sesion": "Ver campo 'ambiente' en cada logistics_box de sessions_detail"
+  },
+  "estrategias_resumen": {
+    "nota": "Las estrategias didácticas activas cubren los cuatro momentos del ciclo SENA. La estrategia dominante del programa es Aprendizaje Basado en Tareas (S2-S5, S7), complementada con Aprendizaje Basado en Problemas (S1), Simulaciones (S4-S5, S7-S8) y Evaluación Formativa Integrada (S6).",
+    "ciclo_sena": {
+      "3.1_reflexion_inicial": "S1 (Aprendizaje Basado en Problemas) + S2 (Aprendizaje Basado en Tareas)",
+      "3.2_contextualizacion": "S3 (Aprendizaje Basado en Tareas)",
+      "3.3_apropiacion": "S4–S5 (ABT + Simulaciones) + S6 (Evaluación formativa)",
+      "3.4_transferencia": "S7–S8 (Simulaciones)"
+    }
+  },
+  "integration_note": "G1 integra B1 (taller, herramientas, EPP) + B2 (clasificación vehículos, sistemas automotor, manuales). Programa Técnico."
+}

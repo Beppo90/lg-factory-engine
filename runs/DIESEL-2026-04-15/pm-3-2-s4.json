@@ -1,0 +1,947 @@
+{
+  "pm_id": "PM-3.2-S4",
+  "run_id": "DIESEL-2026-04-15",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 4,
+  "session_name": "Tuning In & Speaking Up",
+  "fase_sena": "Apropiación — Listening Anchor + Speaking Mission",
+  "generated_at": "2026-04-15",
+  "model": "claude-sonnet-4-6",
+  "status": "completed",
+  "worksheets_used": [
+    "PM-2.6 — Listening (Evidence 3)",
+    "PM-2.8 — Speaking (Evidence 4)"
+  ],
+  "evidences_generated": [
+    3,
+    4
+  ],
+  "header": {
+    "programa": "Mantenimiento de los Motores Diesel",
+    "guia": "1.1 — The Workshop Specialist",
+    "sesion": 4,
+    "nombre_sesion": "Tuning In & Speaking Up",
+    "cefr": "A1.1",
+    "duracion_total_min": 360,
+    "horas_directas": 3,
+    "horas_autonomas": 0.75,
+    "ambiente": "Aula (audio reproducible + espacio para presentaciones orales)",
+    "personajes": [
+      "Carlos Mendoza — Lead Technician / Supervisor",
+      "Valentina Cruz — New Apprentice",
+      "Santiago Ríos — Technician (referencia)"
+    ],
+    "gfpi_tags": [
+      "3.3-APROPIACION-LISTENING",
+      "3.4-TRANSFERENCIA-SPEAKING"
+    ]
+  },
+  "evidences_summary": {
+    "evidence_3": {
+      "numero": 3,
+      "tipo": "Desempeño",
+      "skill": "Listening",
+      "description": "Listening Comprehension — 5 preguntas sobre diálogo Bay 2 Safety Briefing SIN texto",
+      "instrument": "Cuestionario No 3 — Lista de chequeo",
+      "points": 5,
+      "administered_in": "WHILE-C",
+      "condition": "Individual — sin texto del diálogo — sin Word Wall",
+      "answer_key": [
+        {
+          "n": 1,
+          "q": "What does Carlos ask Valentina to put on first?",
+          "correct": "b",
+          "a": "a) A work order",
+          "b": "b) Gloves and goggles",
+          "c": "c) A torque wrench",
+          "bloom": "L1 Remember"
+        },
+        {
+          "n": 2,
+          "q": "Where is the oil spill?",
+          "correct": "c",
+          "a": "a) Under the workbench",
+          "b": "b) On the toolbox",
+          "c": "c) Near the bay door",
+          "bloom": "L1 Remember"
+        },
+        {
+          "n": 3,
+          "q": "Where should the fire extinguisher always be?",
+          "correct": "c",
+          "a": "a) On the workbench",
+          "b": "b) In the toolbox",
+          "c": "c) Next to the bay door",
+          "bloom": "L2 Understand"
+        },
+        {
+          "n": 4,
+          "q": "How does Carlos say to check the floor jack?",
+          "correct": "b",
+          "a": "a) Look for spills and clean it",
+          "b": "b) Look for leaks and test the lift",
+          "c": "c) Put it on the workbench",
+          "bloom": "L2 Understand"
+        },
+        {
+          "n": 5,
+          "q": "What does Valentina say at the end?",
+          "correct": "c",
+          "a": "a) Bay 2 has a problem.",
+          "b": "b) The floor jack is broken.",
+          "c": "c) Checklist complete. Bay 2 is ready.",
+          "bloom": "L2 Understand"
+        }
+      ],
+      "cuestionario_contribution": {
+        "skill": "Listening",
+        "points": 5
+      }
+    },
+    "evidence_4": {
+      "numero": 4,
+      "tipo": "Desempeño",
+      "skill": "Speaking",
+      "description": "Oral Production — Workshop Readiness Report 60-90 segundos + respuesta a preguntas del supervisor en vivo",
+      "instrument": "Escala de estimación No 4 — Observación directa",
+      "points": 5,
+      "administered_in": "WHILE-E",
+      "condition": "Individual o pares — role-play supervisor (instructor) / technician (aprendiz) — Bay asignado por instructor",
+      "estimation_scale_criteria": [
+        {
+          "n": 1,
+          "criterion": "Usa vocabulario técnico del Toolbelt (≥ 8 términos)",
+          "scale": "1–5"
+        },
+        {
+          "n": 2,
+          "criterion": "Describe estado del bay con There is / are correctamente",
+          "scale": "1–5"
+        },
+        {
+          "n": 3,
+          "criterion": "Ubica herramientas con prepositions of place (on, under, next to, near)",
+          "scale": "1–5"
+        },
+        {
+          "n": 4,
+          "criterion": "Pronunciación comprensible de términos técnicos",
+          "scale": "1–5"
+        },
+        {
+          "n": 5,
+          "criterion": "Responde preguntas del supervisor sin leer el Stock Card",
+          "scale": "1–5"
+        }
+      ],
+      "score_note": "Suma de 5 criterios (1–5 cada uno) → promedio = puntaje de 5 pts máximo; o calificación holística 1–5 según instrumento institucional",
+      "cuestionario_contribution": {
+        "contributes": false
+      }
+    }
+  },
+  "scenario_assets": {
+    "dialogue_title": "Bay 2 Safety Briefing",
+    "source": "src-B — Motor Age Safety 'Auto Shop Safety' (adaptado A1.1)",
+    "dialogue_characters": [
+      "Carlos Mendoza — Lead Technician / Supervisor",
+      "Valentina Cruz — New Apprentice"
+    ],
+    "cefr_level": "A1.1 — máximo 10 palabras por turno, Verb To Be / Have / Present Simple / Imperativo",
+    "dialogue_script": [
+      {
+        "speaker": "CARLOS",
+        "line": "Good morning, Valentina. Welcome to Bay 2."
+      },
+      {
+        "speaker": "VALENTINA",
+        "line": "Good morning, Carlos. Thank you."
+      },
+      {
+        "speaker": "CARLOS",
+        "line": "First, put on your PPE. Gloves and goggles."
+      },
+      {
+        "speaker": "VALENTINA",
+        "line": "OK. I have my gloves. Where are the goggles?"
+      },
+      {
+        "speaker": "CARLOS",
+        "line": "The goggles are on the workbench."
+      },
+      {
+        "speaker": "VALENTINA",
+        "line": "Thank you. (puts on goggles)"
+      },
+      {
+        "speaker": "CARLOS",
+        "line": "Good. Now look at the floor. There is an oil spill."
+      },
+      {
+        "speaker": "VALENTINA",
+        "line": "Where? Near the bay door?"
+      },
+      {
+        "speaker": "CARLOS",
+        "line": "Yes. It is near the bay door. Clean it now."
+      },
+      {
+        "speaker": "VALENTINA",
+        "line": "OK. I understand. (cleans the spill)"
+      },
+      {
+        "speaker": "CARLOS",
+        "line": "The fire extinguisher is always next to the bay door."
+      },
+      {
+        "speaker": "VALENTINA",
+        "line": "The fire extinguisher is next to the bay door. OK."
+      },
+      {
+        "speaker": "CARLOS",
+        "line": "Now check the floor jack. Look for leaks. Test the lift."
+      },
+      {
+        "speaker": "VALENTINA",
+        "line": "I check the floor jack. No leaks. The lift works."
+      },
+      {
+        "speaker": "CARLOS",
+        "line": "Good work. Check your Daily Inspection Checklist."
+      },
+      {
+        "speaker": "VALENTINA",
+        "line": "(checks checklist) Checklist complete. Bay 2 is ready."
+      },
+      {
+        "speaker": "CARLOS",
+        "line": "Excellent, Valentina. You are ready to work."
+      },
+      {
+        "speaker": "VALENTINA",
+        "line": "Thank you, Carlos."
+      }
+    ],
+    "vocabulary_in_dialogue": [
+      "PPE",
+      "gloves",
+      "goggles",
+      "workbench",
+      "oil spill",
+      "bay door",
+      "fire extinguisher",
+      "floor jack",
+      "leaks",
+      "checklist"
+    ],
+    "model_workshop_readiness_report": {
+      "title": "Sample — Workshop Readiness Report (60 sec)",
+      "script": [
+        "Good morning. This is the Bay 2 Readiness Report.",
+        "There is a workbench on the left. The tools are in the toolbox.",
+        "The wrench is on the workbench. The floor jack is under the vehicle.",
+        "There is no spill on the floor. The floor is clean.",
+        "The fire extinguisher is next to the bay door.",
+        "PPE is ready. Gloves and goggles are on the workbench.",
+        "I check the floor jack — no leaks. The lift works.",
+        "Bay 2 is clean. Bay 2 is safe. Bay 2 is ready.",
+        "Preventive maintenance checklist: complete."
+      ],
+      "word_count": 72,
+      "duration_sec": "60–65"
+    },
+    "stock_card_A": {
+      "title": "Stock Card A — Bay Status",
+      "items": [
+        "Bay number: Bay ___ (1, 2, or 3)",
+        "Workbench: clean / dirty",
+        "Toolbox: closed / open",
+        "Tools on workbench: wrench / ratchet / socket / torque wrench",
+        "Floor jack: OK — no leaks / needs attention",
+        "Floor: clean / spill near ___",
+        "Fire extinguisher: next to bay door / missing",
+        "PPE: ready — gloves + goggles / incomplete",
+        "Daily Inspection Checklist: complete / pending"
+      ],
+      "instructor_note": "Aprendices eligen 1 bay number + seleccionan condiciones para construir su reporte único"
+    },
+    "stock_card_B": {
+      "title": "Stock Card B — Sentence Starters",
+      "sentence_starters": [
+        "Good morning. This is the Bay ___ Readiness Report.",
+        "There is a ___ on / under / next to ___.",
+        "There are ___ in the toolbox.",
+        "The ___ is on / under / next to / near ___.",
+        "The floor is clean. / There is a spill near ___.",
+        "I check the ___. No leaks. The lift works.",
+        "Bay ___ is clean. Bay ___ is safe. Bay ___ is ready.",
+        "Preventive maintenance checklist: complete / pending."
+      ]
+    },
+    "chunk_cards": {
+      "title": "Chunk Cards — Pronunciation Targets (PM-2.8)",
+      "targets": [
+        {
+          "term": "fire extinguisher",
+          "ipa": "/ˈfaɪər ɪkˈstɪŋɡwɪʃər/",
+          "chunks": [
+            "FIRE",
+            "ex-TIN",
+            "gwish-er"
+          ],
+          "sentence": "The fire extinguisher is next to the bay door."
+        },
+        {
+          "term": "preventive maintenance",
+          "ipa": "/prɪˈvɛntɪv ˈmeɪntənəns/",
+          "chunks": [
+            "pre-VEN-tive",
+            "MAIN-te-nance"
+          ],
+          "sentence": "Preventive maintenance checklist: complete."
+        },
+        {
+          "term": "calibration",
+          "ipa": "/ˌkælɪˈbreɪʃən/",
+          "chunks": [
+            "cal-i-BRA-tion"
+          ],
+          "sentence": "Check the calibration of the torque wrench."
+        },
+        {
+          "term": "torque wrench",
+          "ipa": "/tɔːrk rɛntʃ/",
+          "chunks": [
+            "TORK",
+            "rench"
+          ],
+          "sentence": "The torque wrench is on the workbench."
+        },
+        {
+          "term": "floor jack",
+          "ipa": "/flɔːr dʒæk/",
+          "chunks": [
+            "FLOOR",
+            "jack"
+          ],
+          "sentence": "Check the floor jack. No leaks."
+        }
+      ],
+      "orchestral_drill_sequence": [
+        "PHASE 1 — Chunk isolation: instructor models each chunk → class repeats (3×)",
+        "PHASE 2 — Chunk combination: instructor adds chunks together → class builds up (3×)",
+        "PHASE 3 — Full term: instructor says whole term → class repeats (3×)",
+        "PHASE 4 — In context: instructor says full sentence → class repeats (3×)",
+        "PHASE 5 — Split: left side / right side (2×); then pairs (2×); volunteers solo"
+      ]
+    }
+  },
+  "timeline": {
+    "total_min": 360,
+    "session_start": "07:00",
+    "session_end": "13:00",
+    "blocks": [
+      {
+        "block": "SET-UP",
+        "start": "07:00",
+        "end": "07:25",
+        "duration_min": 25
+      },
+      {
+        "block": "WHILE-A",
+        "start": "07:25",
+        "end": "08:00",
+        "duration_min": 35
+      },
+      {
+        "block": "WHILE-B",
+        "start": "08:00",
+        "end": "08:50",
+        "duration_min": 50
+      },
+      {
+        "block": "BREAK",
+        "start": "08:50",
+        "end": "09:05",
+        "duration_min": 15
+      },
+      {
+        "block": "WHILE-C",
+        "start": "09:05",
+        "end": "09:45",
+        "duration_min": 40
+      },
+      {
+        "block": "WHILE-D",
+        "start": "09:45",
+        "end": "11:05",
+        "duration_min": 80
+      },
+      {
+        "block": "WHILE-E",
+        "start": "11:05",
+        "end": "12:35",
+        "duration_min": 90
+      },
+      {
+        "block": "WRAP-UP",
+        "start": "12:35",
+        "end": "13:00",
+        "duration_min": 25
+      }
+    ],
+    "totals_check": {
+      "set_up": 25,
+      "while_blocks": 295,
+      "break": 15,
+      "wrap_up": 25,
+      "grand_total": 360,
+      "validation": "PASS"
+    }
+  },
+  "session_plan": {
+    "set_up": {
+      "block": "SET-UP",
+      "duration_min": 25,
+      "time": "07:00–07:25",
+      "title": "Scene Activation — Bay 2 Is Calling",
+      "purpose": "Activar esquemas previos, conectar con sesiones anteriores, presentar agenda doble (Listening + Speaking)",
+      "teacher_talk": {
+        "opening": "Good morning, Workshop Team. Today is a listening and speaking day — TWO skills, TWO evidences. In the morning we LISTEN. In the afternoon we SPEAK. Let's go.",
+        "context_setting": "Look at the board. (points) Bay 2 Safety Briefing. Carlos Mendoza and Valentina Cruz. Valentina is new. It is her FIRST day in Bay 2. What does Carlos say? We are going to LISTEN and find out.",
+        "agenda_preview": "Our plan today: First — Scene Setup. Then — we LISTEN twice. After break — Evidence 3 (quiz — NO paper). Then — Speaking preparation. Final — Evidence 4 — YOUR Workshop Readiness Report, LIVE, to me as supervisor.",
+        "icq": "ICQ — How many evidences today? (two) What is Evidence 3? (listening quiz) What is Evidence 4? (oral report) Can you use the dialogue text during Evidence 3? (no)"
+      },
+      "activities": [
+        {
+          "time": "07:00–07:08",
+          "activity": "Word Wall Review Sprint",
+          "procedure": "Instructor points to 8 random Word Wall terms — class says term + category chorally. Pace: 4 seconds per term. Purpose: activate Toolbelt before listening.",
+          "facilitation_note": "💡 Keep it fast and energetic — this is a warm-engine activity, not a quiz. If students hesitate, give the first syllable."
+        },
+        {
+          "time": "07:08–07:18",
+          "activity": "Image Prediction — Bay 2",
+          "procedure": "Project Bay 2 image. Students write/say 5 things they can see in English (1 min solo → 2 min pairs → share). Instructor lists items on board under 'We can see…' column.",
+          "expected_answers": [
+            "workbench",
+            "toolbox",
+            "floor jack",
+            "fire extinguisher",
+            "bay door"
+          ],
+          "facilitation_note": "💡 Accept any vocabulary — don't correct yet. The goal is visual activation. Write their words on the board — validate their knowledge before the listening."
+        },
+        {
+          "time": "07:18–07:25",
+          "activity": "Characters + Context Setup",
+          "procedure": "Show character cards: CARLOS (Supervisor) / VALENTINA (New Apprentice). Instructor: 'Valentina is NEW. Today is Day 1. Carlos is the supervisor. What do you think Carlos says to Valentina?' Students predict 3 things Carlos will say (pairs, 2 min). Share predictions — write on board under 'We predict…'",
+          "teacher_talk": "Listen: will your predictions be correct? Let's find out.",
+          "formative_checkpoint": "✓ All students have 5+ items on their prediction list before first listen."
+        }
+      ]
+    },
+    "while_a": {
+      "block": "WHILE-A",
+      "pm_source": "PM-2.6 — Archetype A: Scene Setup / Pre-listening",
+      "duration_min": 35,
+      "time": "07:25–08:00",
+      "title": "Pre-Listening — Load the Context",
+      "bloom": "L1 Recordar + L2 Comprender",
+      "purpose": "Pre-entrenar vocabulario clave del diálogo, establecer contexto escénico completo antes de la primera escucha",
+      "teacher_talk": {
+        "instruction": "Before we listen, let's prepare. I will give you 5 key words from the dialogue. You already know them — they are on the Word Wall. We are going to practice them in context so your brain is READY when you hear them.",
+        "transition": "Now you are ready. Let's listen."
+      },
+      "activities": [
+        {
+          "time": "07:25–07:35",
+          "activity": "Key Vocabulary Pre-load",
+          "procedure": "Instructor writes 5 key phrases on board: 'put on your PPE' / 'oil spill near the bay door' / 'fire extinguisher next to the bay door' / 'check the floor jack' / 'checklist complete'. Students: (a) find each phrase on Word Wall, (b) mime the action for each. Instructor models first.",
+          "facilitation_note": "💡 Miming is crucial — kinesthetic encoding before auditory. Make it physical. Don't skip the miming even if students seem shy — model it yourself first with zero hesitation."
+        },
+        {
+          "time": "07:35–07:45",
+          "activity": "Scene Mapping — Bay 2 Layout",
+          "procedure": "Distribute Bay 2 simple layout map (or draw on board): workbench (left), bay door (right), toolbox (center floor), vehicle lift (center). Students label 5 locations in English. Instructor says location sentences aloud — students point to location on their map.",
+          "sentences_to_say": [
+            "The workbench is on the left.",
+            "The bay door is on the right.",
+            "The toolbox is on the floor.",
+            "The fire extinguisher is next to the bay door.",
+            "The floor jack is under the vehicle."
+          ],
+          "facilitation_note": "💡 This spatial pre-loading is the key to comprehension Question 2 (spill location) and Question 3 (fire extinguisher location). Students who map the bay correctly will answer those correctly."
+        },
+        {
+          "time": "07:45–08:00",
+          "activity": "Prediction Verification Setup",
+          "procedure": "Return to board predictions from SET-UP. Students number their 3 predictions 1–3. Instructor: 'During the first listen, put a checkmark next to each prediction if Carlos says it. If he doesn't say it — cross it out.' Distribute dialogue worksheet FACE DOWN — not to open until told.",
+          "teacher_talk": "The paper is FACE DOWN. Do NOT turn it over yet. Your job right now is only to LISTEN.",
+          "formative_checkpoint": "✓ All papers face down. Students have prediction checklist ready."
+        }
+      ],
+      "differentiation": {
+        "fast_finishers": "Write 2 additional sentences describing Bay 2 using 'there is/are + preposition' — add them to the map as captions.",
+        "more_support": "Bilingual Key Phrases card provided: English phrase → Spanish translation of context. Students can reference during pre-loading but NOT during listening."
+      },
+      "tecnica_didactica": "Activación de esquemas previos / Predicción temática"
+    },
+    "while_b": {
+      "block": "WHILE-B",
+      "pm_source": "PM-2.6 — Archetype B: First Listen + Global; Archetype D: Role-Play Reading",
+      "duration_min": 50,
+      "time": "08:00–08:50",
+      "title": "Two Listens + Role-Play — From Ears to Voice",
+      "bloom": "L2 Comprender + L3 Aplicar",
+      "purpose": "Primera escucha (comprensión global + verificar predicciones) → segunda escucha (con texto, identificar estructuras) → dramatización en pares para preparar producción oral",
+      "teacher_talk": {
+        "instruction": "Listen ONE. No text. Only listen. Check your predictions. Ready? (play audio / instructor reads dialogue)",
+        "transition_to_second": "Now turn the paper over. We listen AGAIN — this time WITH the text. Follow with your finger. Underline any word you don't understand.",
+        "transition_to_roleplay": "Now you HAVE the dialogue. Now you BECOME Carlos and Valentina. Pairs. Decide — who is Carlos? Who is Valentina? You have 15 minutes to read the dialogue aloud together. Focus on SOUND — not perfection."
+      },
+      "activities": [
+        {
+          "time": "08:00–08:12",
+          "activity": "First Listen — Global Comprehension",
+          "procedure": "Papers face down. Instructor reads dialogue aloud (or plays audio) at natural A1.1 pace — slow, clear, with pauses. Students: (a) check/cross predictions on their list, (b) write 1 word they heard (any word) on sticky note. Immediately after: pairs compare prediction results (2 min).",
+          "facilitation_note": "💡 Read the dialogue expressively — use different voice for Carlos (authoritative, warm) vs Valentina (eager, slightly nervous). This is the only 'audio model' students have — make it count. Read it twice consecutively if students look lost.",
+          "post_listen_questions_oral": [
+            "How many predictions were correct? Raise your hand — 3? 2? 1?",
+            "What word did you write on your sticky note?"
+          ]
+        },
+        {
+          "time": "08:12–08:30",
+          "activity": "Second Listen — With Text + Structure Focus",
+          "procedure": "Students turn paper over. Instructor reads dialogue again — students follow with finger. Then: (a) Circle all IMPERATIVES (Put on, Clean, Check, Look) in RED. (b) Underline all THERE IS/ARE in BLUE. (c) Box all PREPOSITIONS OF PLACE (on, next to, near, under) in GREEN. Pairs compare markings (3 min). Instructor reviews on board.",
+          "answer_key_markings": {
+            "imperatives_RED": [
+              "Put on your PPE",
+              "Clean it now",
+              "Check the floor jack",
+              "Look for leaks",
+              "Test the lift",
+              "Check your Daily Inspection Checklist"
+            ],
+            "there_is_are_BLUE": [
+              "There is an oil spill",
+              "There is no..."
+            ],
+            "prepositions_GREEN": [
+              "on the workbench",
+              "near the bay door",
+              "next to the bay door",
+              "under the vehicle"
+            ]
+          },
+          "facilitation_note": "💡 The color-coding connects directly to the Grammar board from S3. Point to the board: 'RED — we know this. BLUE — we know this. GREEN — we know this. Now we HEAR them in real workshop language.' This is the payoff moment of S3."
+        },
+        {
+          "time": "08:30–08:50",
+          "activity": "Role-Play Reading — Pairs",
+          "procedure": "Pairs decide roles (Carlos / Valentina). Round 1 (5 min): read dialogue aloud WITH text — focus on pronunciation and expression. Round 2 (5 min): same pair, SWITCH roles. Round 3 challenge (5 min): try to say your lines without looking — use text only for help. Instructor circulates, notes pronunciation for Evidence 4 coaching.",
+          "teacher_talk": "You are NOT memorizing. You are getting comfortable with the SOUND. Mistakes are OK. This is PRACTICE.",
+          "formative_checkpoint": "✓ Every pair has done at least 2 rounds of role-play before BREAK.",
+          "facilitation_note": "💡 Note which pairs struggle with 'fire extinguisher' and 'floor jack' — these students need Chunk Card priority in WHILE-E Pronunciation Drill."
+        }
+      ],
+      "differentiation": {
+        "fast_finishers": "Write 3 new lines of dialogue — what does Carlos say NEXT? Use Imperatives + There is/are.",
+        "more_support": "Dialogue text with gaps for comprehension words — student fills in as they hear rather than tracking full text. Reduces cognitive load during second listen."
+      },
+      "tecnica_didactica": "Escucha activa secuencial: comprensión global → comprensión de detalle"
+    },
+    "break": {
+      "block": "BREAK",
+      "duration_min": 15,
+      "time": "08:50–09:05",
+      "instructor_note": "Collect NO materials — papers stay on desks. Do NOT discuss Evidence 3 questions yet. Students rest. Return to seats 2 min before end of break (09:03).",
+      "transition_back": "Welcome back. Papers — face down. Dialogue — face down. Clear your desk except for a pencil. Evidence 3 begins NOW."
+    },
+    "while_c": {
+      "block": "WHILE-C",
+      "pm_source": "PM-2.6 — Archetype C: Comprehension Check (Evidence 3)",
+      "duration_min": 40,
+      "time": "09:05–09:45",
+      "title": "Evidence 3 — Listening Comprehension Quiz",
+      "bloom": "L2 Comprender",
+      "purpose": "Evaluar formalmente comprensión auditiva del diálogo — sin texto, sin Word Wall — 5 preguntas de selección múltiple",
+      "evidence_conditions": "INDIVIDUAL — SIN diálogo impreso — SIN Word Wall (cubrir o indicar no usar) — SIN diccionario — Silencio total",
+      "teacher_talk": {
+        "instruction": "This is Evidence 3. It is individual. Quiet. No dialogue, no Word Wall, no phone. I will read the dialogue ONE MORE TIME. Then you answer 5 questions. You have 15 minutes.",
+        "during_quiz": "I am reading the dialogue for you. Listen carefully. (reads dialogue once, clearly, without rushing) Now answer the questions.",
+        "icq": "ICQ — Can you use the paper with the dialogue? (no) Can you talk to your partner? (no) How many questions? (5)"
+      },
+      "procedure": {
+        "step_1": "Distribute Cuestionario No 3 (face down). Students write name + date.",
+        "step_2": "Instructor reads dialogue aloud ONE final time — natural pace. Students only listen.",
+        "step_3": "Students turn Cuestionario over. 15 minutes individual silent work.",
+        "step_4": "Collect ALL Cuestionario No 3 forms before reviewing answers.",
+        "step_5": "Oral review — instructor reads each question + correct answer with brief explanation (10 min)."
+      },
+      "questions_full": [
+        {
+          "n": 1,
+          "q": "What does Carlos ask Valentina to put on first?",
+          "a": "a) A work order",
+          "b": "b) Gloves and goggles ✓",
+          "c": "c) A torque wrench",
+          "key_moment": "Carlos: 'First, put on your PPE. Gloves and goggles.'"
+        },
+        {
+          "n": 2,
+          "q": "Where is the oil spill?",
+          "a": "a) Under the workbench",
+          "b": "b) On the toolbox",
+          "c": "c) Near the bay door ✓",
+          "key_moment": "Valentina: 'Where? Near the bay door?' / Carlos: 'Yes. It is near the bay door.'"
+        },
+        {
+          "n": 3,
+          "q": "Where should the fire extinguisher always be?",
+          "a": "a) On the workbench",
+          "b": "b) In the toolbox",
+          "c": "c) Next to the bay door ✓",
+          "key_moment": "Carlos: 'The fire extinguisher is ALWAYS next to the bay door.'"
+        },
+        {
+          "n": 4,
+          "q": "How does Carlos say to check the floor jack?",
+          "a": "a) Look for spills and clean it",
+          "b": "b) Look for leaks and test the lift ✓",
+          "c": "c) Put it on the workbench",
+          "key_moment": "Carlos: 'Check the floor jack. Look for leaks. Test the lift.'"
+        },
+        {
+          "n": 5,
+          "q": "What does Valentina say at the end?",
+          "a": "a) Bay 2 has a problem.",
+          "b": "b) The floor jack is broken.",
+          "c": "c) Checklist complete. Bay 2 is ready. ✓",
+          "key_moment": "Valentina: '(checks checklist) Checklist complete. Bay 2 is ready.'"
+        }
+      ],
+      "review_procedure": "After collection — re-read each question → students raise hands for a/b/c → reveal answer → explain which line in the dialogue gave the answer (cite line). Do NOT show the text on screen during review — verbal only.",
+      "facilitation_note": "💡 The review moment is pedagogically critical — NOT just 'the answer is B.' Explain WHY: 'Carlos used the word ALWAYS — that word tells us it must be there at all times.' Make the reasoning visible.",
+      "formative_checkpoint": "✓ All Cuestionario No 3 forms collected before any answer is revealed.",
+      "differentiation": {
+        "fast_finishers": "On the back of the Cuestionario — write a 6th question about the dialogue that a classmate could answer. Then write the answer.",
+        "more_support": "Three-option reduction: instructor verbally eliminates 1 clearly wrong option per question before students begin — 'I can tell you: it is NOT option A for question 2.' Noted in grade book as support received."
+      },
+      "tecnica_didactica": "Cuestionario de comprensión auditiva (Evidencia 3)"
+    },
+    "while_d": {
+      "block": "WHILE-D",
+      "pm_source": "PM-2.6 — Archetype D (Role-Play closure) + PM-2.8 — Archetypes A + B (Input Model + Stock Cards)",
+      "duration_min": 80,
+      "time": "09:45–11:05",
+      "title": "Speaking Bridge — From Dialogue to Your Own Report",
+      "bloom": "L2 Comprender + L3 Aplicar",
+      "purpose": "Transicionar de comprensión auditiva a producción oral: modelo Workshop Readiness Report → análisis de estructura → preparación con Stock Cards → práctica en pares con preguntas improvisadas",
+      "teacher_talk": {
+        "transition_from_c": "Evidence 3 is done. Now we SPEAK. I will show you WHAT to say. Then you prepare. Then you perform. This is YOUR Bay. YOUR Report.",
+        "model_introduction": "Watch me. I am a technician. I give the morning readiness report to the supervisor. Listen for: There is/are — prepositions — technical vocabulary. Count how many you hear.",
+        "stock_card_intro": "Now you have Stock Card A and Stock Card B. Stock Card A: your bay status — you CHOOSE the conditions. Stock Card B: sentence starters — you use them as a guide. You have 20 minutes to prepare YOUR report.",
+        "pair_practice_intro": "Pairs. Partner A: give your report. Partner B: you are the supervisor. Ask 2 surprise questions when Partner A finishes. Then switch. I will come to your pair and ask questions too — be ready.",
+        "icq": "ICQ — Do you memorize the Stock Card? (no — use it as a guide, then speak without reading) Can you see the Word Wall during Evidence 4? (yes — it's a product-type evidence) How long is your report? (60 to 90 seconds)"
+      },
+      "activities": [
+        {
+          "time": "09:45–10:00",
+          "activity": "PM-2.8 A — Input + Model: Instructor Live Performance",
+          "procedure": "Instructor performs the model Workshop Readiness Report (72 words / 60–65 sec) LIVE — without reading from paper. Students count: (a) terms from Toolbelt, (b) There is/are sentences, (c) prepositions of place. Instructor performs TWICE — first time students just listen; second time they count. Class shares counts. Instructor confirms.",
+          "expected_counts": {
+            "toolbelt_terms": "≥ 8 (workbench, toolbox, wrench, floor jack, bay door, fire extinguisher, PPE, gloves, goggles, preventive maintenance)",
+            "there_is_are": 3,
+            "prepositions": 4
+          },
+          "facilitation_note": "💡 The instructor's live performance without paper is the most powerful model in the session. Students need to SEE that it's possible to speak without reading. Make it slightly imperfect on purpose — pause once, self-correct once — so students see it's not a memorized speech."
+        },
+        {
+          "time": "10:00–10:10",
+          "activity": "Structure Analysis — Decoding the Report",
+          "procedure": "Instructor writes on board the 4 structural parts of the report: (1) Opening (Good morning. This is Bay ___ Report.) (2) Equipment Location (There is/are... + prepositions) (3) Safety Check (Fire extinguisher... / PPE...) (4) Closing (Bay ___ is clean/safe/ready. Checklist: complete.) Students map the model report to these 4 parts using their copy of the script.",
+          "board_structure": {
+            "1_opening": "Good morning. This is the Bay ___ Readiness Report.",
+            "2_equipment": "There is a ___ on/under/next to ___. The ___ is ___.",
+            "3_safety": "Fire extinguisher: next to ___. PPE: gloves + goggles ___.",
+            "4_closing": "Bay ___ is ___. Bay ___ is ___. Bay ___ is ready. Checklist: ___."
+          }
+        },
+        {
+          "time": "10:10–10:30",
+          "activity": "PM-2.8 B — Stock Cards + Individual Preparation",
+          "procedure": "Distribute Stock Card A + Stock Card B. Each student: (1) chooses bay number (1, 2, or 3), (2) selects conditions on Stock Card A, (3) writes 4–6 sentences using Stock Card B starters — their own unique report. Instructor circulates — does NOT write for students, only asks 'What is next to the bay door?' / 'What is in the toolbox?'",
+          "facilitation_note": "💡 Circulate and whisper corrections — do not call out errors publicly at this stage. Students are building confidence. Save corrections for after Evidence 4 individual feedback.",
+          "formative_checkpoint": "✓ Every student has a written draft of their report (min 6 sentences) before pair practice begins."
+        },
+        {
+          "time": "10:30–11:05",
+          "activity": "PM-2.8 B (continued) — Pair Practice with Supervisor Questions",
+          "procedure": "Pairs. Round 1 (10 min): Partner A = technician (reads report aloud — 60-90 sec), Partner B = supervisor (asks 2 improvised questions when report ends). Round 2 (10 min): switch roles. Round 3 challenge (10 min): redo report WITHOUT looking at Stock Cards — only Word Wall allowed. Instructor joins 2–3 pairs as the supervisor and asks real questions.",
+          "supervisor_questions_bank": [
+            "Where is the torque wrench?",
+            "Is the floor clean?",
+            "How many tools are on the workbench?",
+            "Where is the fire extinguisher?",
+            "Is the checklist complete?",
+            "What PPE is ready?",
+            "Is the floor jack OK?"
+          ],
+          "facilitation_note": "💡 During pair practice, time students on your phone — give a 1-minute warning signal. Students who finish in under 45 seconds need to add more detail. Students who go over 90 seconds need to cut. Help them self-regulate duration before Evidence 4."
+        }
+      ],
+      "differentiation": {
+        "fast_finishers": "Add 2 extended details to their report using Maintenance Types: 'The vehicle needs preventive maintenance. The torque wrench needs calibration.' Practice responding to 3 supervisor questions without any notes.",
+        "more_support": "Guided Report Template — partially completed sentences with blanks. Student fills 3–4 key words per sentence rather than generating from scratch. Full sentences still spoken aloud."
+      },
+      "tecnica_didactica": "Input modelado + Stock Cards + práctica en pares con preguntas improvisadas"
+    },
+    "while_e": {
+      "block": "WHILE-E",
+      "pm_source": "PM-2.8 — Archetype C: Live Performance (Evidence 4) + Archetype D: Pronunciation Scaffold (Chunk Cards)",
+      "duration_min": 90,
+      "time": "11:05–12:35",
+      "title": "Evidence 4 — Live Performance + Pronunciation Drill",
+      "bloom": "L3 Aplicar + L4 Analizar",
+      "purpose": "Evidencia 4 formal: cada aprendiz presenta Workshop Readiness Report 60-90 seg al supervisor (instructor) en role-play; post-performance — Chunk Cards drill de pronunciación técnica",
+      "evidence_4_conditions": "Word Wall VISIBLE (product-type evidence). Stock Cards NOT in hand during performance (can reference between performances if needed). Instructor uses Escala de estimación No 4 for each student.",
+      "teacher_talk": {
+        "launch": "This is Evidence 4. I am now Carlos Mendoza — your supervisor. You are the technician. You come to me. You give your morning readiness report. I will ask you 2 questions. You answer without reading. Go.",
+        "between_performances": "Thank you. Next. (to waiting students) Review your report quietly. Do NOT talk to students who have already performed.",
+        "post_evidence_transition": "Excellent work, everyone. That was YOUR voice in English in a workshop scenario. Now — pronunciation. Five terms. Let's make them sound RIGHT.",
+        "icq": "ICQ — Can you hold the Stock Card during your report? (no) Can you see the Word Wall? (yes) How long is the minimum? (60 seconds)"
+      },
+      "activities": [
+        {
+          "time": "11:05–12:05",
+          "activity": "PM-2.8 C — Evidence 4: Live Performance (Workshop Readiness Report)",
+          "procedure": "Students perform individually (or in pairs where one leads, one responds to questions). Order: instructor calls names or students volunteer. Performance structure: (1) Technician opens report — 60-90 sec. (2) Supervisor (instructor) asks 2 questions from supervisor question bank. (3) Technician answers without reading. Instructor completes Escala de estimación No 4 per student during performance. Total: ~60 min for full group (approx 20 students at ~3 min each including transition).",
+          "instructor_logistics": "Pre-number the Escala forms (1 per student). Keep clipboard. Mark 5 criteria per student in real time. Write 1 brief oral feedback comment per student for return next session.",
+          "facilitation_note": "💡 The 2-question follow-up is non-negotiable — Criterion 5 (answers without reading) cannot be assessed otherwise. Keep questions simple: 'Where is the wrench?' / 'Is the floor clean?' Don't ask complex questions — assess communication, not grammar perfection.",
+          "plan_b": {
+            "if_running_short": "If fewer than 5 minutes remain for last students — move their performance to the START of S5 as a warm-up. Note names on 'S5 carry-over' list. Announce to class: 'You will perform first in Session 5 — prepare tonight.'",
+            "if_student_freezes": "Say: 'Take 10 seconds. Look at the Word Wall. Start with: Good morning. This is Bay ___ Readiness Report.' If still stuck: 'Read your first 2 sentences from Stock Card — then continue without it.' Do not mark criterion 5 as met if full report was read."
+          },
+          "formative_checkpoint": "✓ Every student performed (or is on S5 carry-over list). ✓ Every Escala de estimación No 4 completed."
+        },
+        {
+          "time": "12:05–12:35",
+          "activity": "PM-2.8 D — Pronunciation Drill: Chunk Cards (Orchestral)",
+          "procedure": "Instructor holds up Chunk Card 1 (fire extinguisher). Orchestral drill sequence per card: (1) Instructor models chunks separately → class repeats (3×). (2) Instructor combines chunks → class builds up (3×). (3) Instructor says full term → class repeats (3×). (4) Instructor says context sentence → class repeats (3×). (5) Left side / right side split (2×). (6) Pairs (2×). (7) 2 volunteers solo. Repeat for all 5 terms. Last 5 min: 'Chain drill' — instructor points to random Word Wall term, individual student says pronunciation.",
+          "chunk_cards_sequence": [
+            {
+              "order": 1,
+              "term": "fire extinguisher",
+              "chunks": "FIRE → ex-TIN → gwish-er → fire extinguisher",
+              "sentence": "The fire extinguisher is next to the bay door."
+            },
+            {
+              "order": 2,
+              "term": "torque wrench",
+              "chunks": "TORK → rench → torque wrench",
+              "sentence": "The torque wrench is on the workbench."
+            },
+            {
+              "order": 3,
+              "term": "floor jack",
+              "chunks": "FLOOR → jack → floor jack",
+              "sentence": "Check the floor jack. No leaks.",
+              "note": "The 'j' in jack — not like Spanish 'j'. It is like English 'juice'."
+            },
+            {
+              "order": 4,
+              "term": "preventive maintenance",
+              "chunks": "pre-VEN-tive → MAIN-te-nance → preventive maintenance",
+              "sentence": "Preventive maintenance checklist: complete."
+            },
+            {
+              "order": 5,
+              "term": "calibration",
+              "chunks": "cal-i → BRA-tion → calibration",
+              "sentence": "Check the calibration of the torque wrench."
+            }
+          ],
+          "facilitation_note": "💡 For 'torque wrench' — write IPA /tɔːrk/ on board and cross out the phantom 'u'. Say: 'TORK — not TORQ-ue. The u is silent in English.' This is the most common error Colombian Spanish speakers make with this term.",
+          "differentiation": {
+            "fast_finishers": "During chain drill — student must say the term AND use it in an original sentence (not the model sentence from the card).",
+            "more_support": "During pair phase of orchestral drill — student whispers rather than full voice if pronunciation anxiety is evident. Full voice goal by end of drill."
+          }
+        }
+      ],
+      "tecnica_didactica": "Demostración oral en vivo / Role-play supervisor–técnico"
+    },
+    "wrap_up": {
+      "block": "WRAP-UP",
+      "duration_min": 25,
+      "time": "12:35–13:00",
+      "title": "Two Skills Landed — Four Down, Four to Go",
+      "teacher_talk": {
+        "closing": "Today you listened to a real workshop dialogue. You answered 5 questions — Evidence 3. You gave a real readiness report to the supervisor — Evidence 4. That is REAL English. That is REAL workshop communication.",
+        "skills_progression_update": "Look at the board. (updates Skills Map) Reading ✓ — Vocabulary ✓ — Grammar ✓ — Writing ✓ — Listening ✓ — Speaking ✓. Six down. Two to go: Language Functions (S5) and Cuestionario (S6).",
+        "autonomous_preview": "Your homework tonight: (1) Practice the dialogue once more — say Valentina's lines by memory. (2) Say your Workshop Readiness Report aloud 3 times — in front of a mirror or recorded on your phone. (3) Use Chunk Cards — practice the 5 pronunciation targets."
+      },
+      "activities": [
+        {
+          "time": "12:35–12:42",
+          "activity": "Exit Ticket — 3-2-1",
+          "procedure": "Students write on sticky note: 3 words they can say in English now that they could not say at the start of today / 2 sentences from their report they are proud of / 1 pronunciation term they want to practice more. Post on 'Progress Wall'.",
+          "facilitation_note": "💡 Read the sticky notes immediately after — they tell you which pronunciation targets need reinforcement at the start of S5."
+        },
+        {
+          "time": "12:42–12:50",
+          "activity": "Evidence 4 Oral Feedback (brief, whole class)",
+          "procedure": "Instructor gives 3 whole-class observations (no individual names): 1 strength ('Most of you used There is/are correctly — excellent.'), 1 growth area ('Many of us need to slow down on fire extinguisher — we'll drill again in S5.'), 1 celebration ('You spoke English for 60 seconds about a real diesel workshop. That is remarkable.'). Written individual feedback returned in S5.",
+          "facilitation_note": "💡 Do NOT return Escala de estimación No 4 today — take time to complete comments per student. Return with individual written feedback in first 10 minutes of S5."
+        },
+        {
+          "time": "12:50–13:00",
+          "activity": "Autonomous Work Assignment + S5 Preview",
+          "procedure": "Distribute autonomous work card (or write on board). Preview S5: 'Next session — Language Functions. Five real-world functions: giving instructions, requesting tools, describing conditions, reporting problems, confirming. You will USE the language — not study it.' End: 'Bay is dismissed. See you in S5.'",
+          "s5_carry_over_note": "If any students are on carry-over list for Evidence 4 — remind them privately: 'You perform first in S5. Prepare tonight.'"
+        }
+      ],
+      "formative_checkpoint": "✓ All Escala de estimación No 4 forms completed. ✓ All Cuestionario No 3 forms collected. ✓ Sticky notes posted. ✓ S5 carry-over list documented."
+    }
+  },
+  "logistics_box": {
+    "materials_checklist": [
+      "Diálogo impreso 'Bay 2 Safety Briefing' — 1 por aprendiz (imprimir cara-a-cara para role-play)",
+      "Cuestionario No 3 — Lista de chequeo — 1 por aprendiz (Evidence 3)",
+      "Escala de estimación No 4 — 1 por aprendiz (Evidence 4 — para instructor)",
+      "Bay 2 Layout Map — proyectado o impreso — 1 por aprendiz",
+      "Stock Card A — Bay Status — 1 por aprendiz",
+      "Stock Card B — Sentence Starters — 1 por aprendiz",
+      "Chunk Cards × 5 (laminated) — 1 set para instructor + 1 set visible al frente",
+      "Character Cards — CARLOS / VALENTINA — para contexto escénico",
+      "Word Wall S2 — visible toda la sesión",
+      "Sticky notes — 1 por aprendiz (Exit Ticket)",
+      "Clipboard para instructor — registro en vivo Escala No 4",
+      "Timer (teléfono) — para medir 60-90 sec performances"
+    ],
+    "room_setup": "Sillas en U o grupos de 4 para role-play — espacio abierto al frente para performances individuales — Word Wall visible desde todos los ángulos",
+    "audio_plan": "Instructor lee el diálogo en voz alta (2 veces en WHILE-B + 1 vez en WHILE-C). No se requiere reproducción de audio — la lectura expresiva del instructor ES el modelo auditivo.",
+    "technology": "Proyector para Bay 2 image + Character Cards + board structure. Sin requerimientos tecnológicos adicionales."
+  },
+  "plan_b": {
+    "if_evidence_3_takes_longer": "Reduce Role-Play Reading (WHILE-B) to 1 round only — remove Round 3 (without text). Save 8 minutes.",
+    "if_evidence_4_not_finished": "Move remaining performances to S5 start. Announce clearly and create carry-over list with names.",
+    "if_pronunciation_drill_cut": "Prioritize 'fire extinguisher' + 'torque wrench' — highest frequency in evidence performances. Skip 'floor jack' and 'calibration' — move to S5 warm-up.",
+    "if_student_refuses_to_perform": "Allow report submitted in writing as first attempt. Schedule oral make-up in first 10 min of S5. Mark Escala de estimación as 'pending' — do not leave blank."
+  },
+  "autonomous_work": {
+    "duracion_h": 0.75,
+    "actividades": [
+      "Practicar el diálogo 'Bay 2 Safety Briefing' — decir las líneas de Valentina de memoria (sin texto). Grabarse en audio o frente al espejo.",
+      "Decir el Workshop Readiness Report propio en voz alta 3 veces — con cronómetro. Objetivo: 60-90 segundos.",
+      "Practicar los 5 Chunk Cards de pronunciación — fire extinguisher / torque wrench / floor jack / preventive maintenance / calibration."
+    ]
+  },
+  "instructor_self_check": {
+    "questions": [
+      "¿Todos los aprendices completaron Evidence 3 SIN el texto del diálogo?",
+      "¿Recogí TODOS los Cuestionario No 3 antes de revisar las respuestas?",
+      "¿Todos los aprendices presentaron Evidence 4 (mínimo 60 segundos) o están en la lista de carry-over para S5?",
+      "¿Completé la Escala de estimación No 4 para cada aprendiz durante la presentación?",
+      "¿El Word Wall estuvo visible toda la sesión y fue referenciado durante el drill de pronunciación?"
+    ]
+  },
+  "skills_progression_update": {
+    "after_s4": {
+      "Reading": "●",
+      "Vocabulary": "●",
+      "Grammar": "●",
+      "Writing": "●",
+      "Listening": "●",
+      "Speaking": "●",
+      "Language_Functions": "○ — pendiente S5",
+      "Cuestionario": "○ — pendiente S6"
+    }
+  },
+  "connections": {
+    "feeds_from": [
+      "PM-2.6 (Listening — 4 archetypes)",
+      "PM-2.8 (Speaking — 4 archetypes)",
+      "PM-3.1 S4 outline",
+      "S2 Word Wall (visible)",
+      "S3 Grammar color-coding (RED/BLUE/GREEN referenced in WHILE-B)"
+    ],
+    "feeds_into": [
+      "S5 — Language Functions (uses Workshop context + same characters)",
+      "S6 — Cuestionario (Listening = 5 pts from Evidence 3)",
+      "S7 — Final Mission (Speaking = full report expanded)"
+    ],
+    "economía_principle": "Word Wall established S2 — permanent. Stock Cards introduced here — reused in S7. Gap Cards from S1 remain plastified for S8 redistribution."
+  },
+  "momento_sena": "3.3 — Apropiación",
+  "estrategia_didactica": "Aprendizaje Basado en Tareas + Simulaciones",
+  "justificacion_didactica": "La tarea de escucha es comprender el Bay 2 Safety Briefing en condiciones de evaluación real. La tarea oral es presentar un Workshop Readiness Report en rol de técnico ante un supervisor real (el instructor), simulando el entorno productivo.",
+  "pm0_protocol": {
+    "grammar_groups": [
+      "Grupo 1 — Verbo be: APLICA en producción oral. Role-play y Safety Briefing.",
+      "Grupo 2 — There is / There are: CONSOLIDA. Describir el taller en el briefing.",
+      "Grupo 5 — Imperativos: INTRO receptiva. 'Put on your PPE.', 'Check the floor jack.', 'Do NOT enter bay 2.'"
+    ],
+    "feedback": {
+      "mode": "MIXTO — ACCURACY para ejercicios de escucha discriminativa; FLUENCY para role-play y Evidence 4.",
+      "accuracy_techniques": [
+        "Rising intonation: durante check de comprensión del audio. ('He says put on the… ?' ↗)",
+        "Recast inmediato en micro-drills de pronunciación (Chunk Cards).",
+        "Elicitación: durante corrección de respuestas del worksheet — no dar la respuesta directa.",
+        "Metalinguistic cue: para errores de imperativo. ('Careful — imperative, no subject.')"
+      ],
+      "fluency_techniques": [
+        "Evidence 4 (oral briefing): CERO interrupciones. El aprendiz habla de corrido.",
+        "Observación con nota en planilla. Feedback colectivo al finalizar TODOS los briefings.",
+        "Error codes: G (grammar), WO (word order), V (vocabulary) — anotar en planilla privada del instructor."
+      ],
+      "notes": "CRÍTICO: Evidence 4 es evaluación sumativa. Cambiar explícitamente al modo fluency: 'Now I'm listening — no corrections until everyone is done.'"
+    },
+    "l1_management": {
+      "l1_percentage": "≤ 15 % L1. S4 exige mayor autonomía en inglés.",
+      "english_zone_declaration": "English Zone reforzada: 'Hoy vamos al 85% inglés. Si no sabes una palabra, señala el Word Wall. Si sigues sin encontrarla, pregúntame en inglés: What does… mean?'",
+      "l1_allowed_for": [
+        "Instrucciones de seguridad con implicaciones físicas (usar equipo de PPE real).",
+        "Si un aprendiz expresa confusión total (nivel de ansiedad visible)."
+      ],
+      "reduction_strategy": "Técnica English Zone activa: cuando un aprendiz habla en español, señalar el rótulo 'ENGLISH ZONE 🔵' en silencio, sin interrumpir. Esperar. No traducir."
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        "fire extinguisher",
+        "floor jack",
+        "put on your PPE",
+        "do not enter",
+        "safety briefing"
+      ],
+      "techniques": [
+        "Backchaining completo: 'guish-er → ex-tin-guish-er → fire ex-tin-guish-er'. Obligatorio para este término.",
+        "Finger drilling: 5 dedos = 5 sílabas de 'fire extinguisher' (FIRE-ex-TIN-guish-er).",
+        "Clapping del ritmo de los imperativos: PUT on your PPE (3 golpes fuertes: PUT / PPE / ←).",
+        "Board marking de los Chunk Cards: sílaba tónica en mayúscula + barra de ritmo (/).",
+        "Drill orquestal × 3 por Chunk Card: instructor → mitad clase → clase completa."
+      ],
+      "board_marking": "FIRE ex-TIN-guish-er  |  FLOOR jack  |  PUT on your PPE  |  DO not EN-ter",
+      "notes": "S4 es la sesión de pronunciación más intensa del programa. Dedicar mínimo 15 min al drill de Chunk Cards antes del role-play."
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "fire extinguisher",
+        "floor jack",
+        "PPE",
+        "oil spill",
+        "bay door",
+        "checklist"
+      ],
+      "factors_applied": [
+        "S — Sounds: backchaining + finger drilling de cada término de seguridad.",
+        "U — Use: términos en contexto real del Bay 2 Safety Briefing (audio auténtico).",
+        "C — Conceptualize: imagen del taller — aprendices identifican y señalan cada elemento físico.",
+        "C — Creativity: aprendices escriben su propio cheklist de 5 ítems para el bay.",
+        "E — Encounter again: términos reaparecen en role-play + Evidence 4.",
+        "S — Self-expression: Evidence 4 — el aprendiz da el briefing con sus propias palabras."
+      ]
+    }
+  }
+}

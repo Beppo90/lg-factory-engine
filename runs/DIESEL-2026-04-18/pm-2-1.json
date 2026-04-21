@@ -1,0 +1,103 @@
+{
+  "pm_id": "PM-2.1",
+  "run_id": "DIESEL-2026-04-18",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 1,
+  "fase_sena": "Reflexión Inicial + Contextualización",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "archetype_used": ["A — Visual/Infografía", "B — Story/Narrativa", "C — News/Noticia técnica", "D — Debate/Encuesta"],
+  "archetype_mode": "secuencia encadenada — 4 momentos en S1",
+
+  "activity_card": {
+    "pm_id": "PM-2.1",
+    "session": 1,
+    "phase_sena": "Reflexión Inicial + Contextualización",
+    "activities": [
+      {
+        "number": 1, "archetype": "C — News", "type": "cognitiva", "duration_min": 20,
+        "statement": "Analizar un titular técnico real sobre incidente en taller para activar conocimiento previo sobre seguridad",
+        "bloom": "L1 Recordar + L2 Comprender"
+      },
+      {
+        "number": 2, "archetype": "A — Visual", "type": "cognitiva", "duration_min": 40,
+        "statement": "Identificar y nombrar herramientas y zonas del taller en inglés usando infografía de workshop layout",
+        "bloom": "L1 Recordar + L2 Comprender"
+      },
+      {
+        "number": 3, "archetype": "B — Story", "type": "cognitiva + procedimental", "duration_min": 40,
+        "statement": "Relacionar el universo narrativo de The Diesel Workshop con el contexto laboral real del aprendiz",
+        "bloom": "L2 Comprender"
+      },
+      {
+        "number": 4, "archetype": "D — Debate", "type": "procedimental", "duration_min": 40,
+        "statement": "Debatir y posicionar criterios sobre tipos de mantenimiento usando funciones comunicativas básicas en inglés",
+        "bloom": "L2 Comprender + L3 Aplicar"
+      }
+    ],
+    "hours": {"direct": 6, "autonomous": 1.5},
+    "evidence": {"generates_evidence": false, "type": null},
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Titular impreso o proyectado: 'Three mechanics hospitalized after workshop fire'",
+        "Infografía A3 o proyección: workshop layout con zonas etiquetadas en inglés",
+        "Tarjetas de personajes: Carlos Mendoza, Valentina Cruz, Santiago Ríos",
+        "Tarjetas verde/rojo para votación de debate",
+        "Post-its para Learning Contract visual"
+      ]
+    },
+    "contributes_to_cuestionario": false,
+    "universe": {
+      "company": "The Diesel Workshop",
+      "location": "Bogotá",
+      "characters": [
+        {"name": "Carlos Mendoza", "role": "Lead Technician"},
+        {"name": "Valentina Cruz", "role": "New Apprentice"},
+        {"name": "Santiago Ríos", "role": "New Apprentice"}
+      ]
+    }
+  },
+
+  "momentos": [
+    {
+      "numero": 1, "nombre": "The Headline", "archetype": "C — News", "duracion_min": 20,
+      "headline": "Three mechanics hospitalized after workshop fire — investigators blame poor PPE compliance",
+      "source": "Motor Age, 2024",
+      "preguntas": ["What happened?", "Why did it happen?", "What is PPE?"]
+    },
+    {
+      "numero": 2, "nombre": "The Map", "archetype": "A — Visual", "duracion_min": 40,
+      "zonas": ["Reception Area", "Service Bay 1/2/3", "Parts Room", "Diagnostic Bay", "Tool Storage", "Wash Area", "Hazmat Zone"],
+      "estructura_target": "This is the ___. The ___ is next to the ___."
+    },
+    {
+      "numero": 3, "nombre": "The Story", "archetype": "B — Story", "duracion_min": 40,
+      "characters": ["Carlos Mendoza — Lead Technician", "Valentina Cruz — Apprentice", "Santiago Ríos — Apprentice"],
+      "setting": "The Diesel Workshop, Bogotá"
+    },
+    {
+      "numero": 4, "nombre": "The Debate", "archetype": "D — Debate", "duracion_min": 40,
+      "afirmaciones": [
+        "Preventive maintenance is more important than corrective maintenance.",
+        "A mechanic who doesn't speak English cannot read a diesel engine manual.",
+        "PPE rules are just bureaucracy — an experienced mechanic doesn't need them."
+      ],
+      "frases_ancla": {
+        "agree": ["I think... because...", "In my experience..."],
+        "disagree": ["I disagree because...", "The problem is..."]
+      }
+    }
+  ],
+
+  "trabajo_autonomo": {
+    "duracion_h": 1.5,
+    "actividades": [
+      "Vocabulary Preview: buscar imagen de 5 herramientas usadas frecuentemente y escribir nombre en inglés",
+      "Self-assessment: calificar 1-5 conocimiento de inglés en: tools / safety / maintenance types / workshop areas",
+      "Optional: ver 2 min de video de mecánico diesel en YouTube en inglés y anotar 3 palabras reconocidas"
+    ]
+  },
+
+  "gfpi_tag": "3.1-REFLEXION"
+}

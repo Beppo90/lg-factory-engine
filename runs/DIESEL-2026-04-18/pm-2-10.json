@@ -1,0 +1,30 @@
+{
+  "pm_id": "PM-2.10",
+  "run_id": "DIESEL-2026-04-18",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 3,
+  "fase_sena": "Apropiación — Grammar Discovery",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "archetype_used": ["A — Inducción desde texto", "B — Error Log", "C — Grammar Stations", "D — Grammar in Real Formats"],
+  "grammar_targets": ["Imperatives", "There is / There are", "Prepositions of place (in, on, next to, behind, near)"],
+  "activity_card": {
+    "pm_id": "PM-2.10",
+    "session": 3,
+    "phase_sena": "Apropiación",
+    "activities": [
+      {"number": 1, "archetype": "A — Inducción desde texto", "type": "cognitiva", "duration_min": 30,
+       "statement": "Inducir las 3 estructuras gramaticales target desde el texto de S2 con ejemplos resaltados por color", "bloom": "L2 Comprender"},
+      {"number": 2, "archetype": "B — Error Log", "type": "cognitiva", "duration_min": 35,
+       "statement": "Identificar y corregir 10 errores frecuentes en contexto de taller diesel usando las 3 estructuras target", "bloom": "L2 Comprender + L3 Aplicar"},
+      {"number": 3, "archetype": "C — Grammar Stations", "type": "procedimental", "duration_min": 25,
+       "statement": "Practicar cada estructura en rotación por estaciones temáticas del taller", "bloom": "L3 Aplicar"},
+      {"number": 4, "archetype": "D — Grammar in Real Formats", "type": "procedimental", "duration_min": 30,
+       "statement": "Producir un Safety Report completo usando obligatoriamente las 3 estructuras en contexto técnico real", "bloom": "L3 Aplicar"}
+    ],
+    "hours": {"direct": 3, "autonomous": 0.75},
+    "evidence": {"generates_evidence": false, "contributes_to_cuestionario": true, "cuestionario_skill": "Grammar", "cuestionario_points": 5},
+    "environment": {"type": "Aula", "materials": ["Texto S2 proyectado con resaltados de color", "Error Log impreso (10 oraciones)", "Safety Report formato impreso", "Workshop layout de S1"]},
+    "gfpi_tag": "3.3-APROPIACION-GRAMMAR"
+  }
+}

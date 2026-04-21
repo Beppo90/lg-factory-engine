@@ -1,0 +1,60 @@
+{
+  "pm_id": "PM-2.3",
+  "run_id": "DIESEL-2026-04-18",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 2,
+  "fase_sena": "Apropiación — Reading Master Anchor",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "archetype_used": ["A — Title Prediction/Visual", "B — Manual Navigation Hunt", "C — Comprehension Check", "D — Text-to-Vehicle Connection"],
+  "source": "src-C — Diesel Technology Forum 'Understanding Diesel Vehicle Systems' (adaptado A1.1) + extracto de manual técnico real",
+  "integration_note": "S2 foco B2 — manuales técnicos + clasificación de vehículos + sistemas del automotor",
+  "activity_card": {
+    "pm_id": "PM-2.3",
+    "session": 2,
+    "phase_sena": "Apropiación",
+    "activities": [
+      {"number": 1, "archetype": "A — Visual Prediction", "type": "cognitiva", "duration_min": 20,
+       "statement": "Predecir contenido a partir de la portada y el índice del manual técnico proyectado. Clasificar el vehículo según imágenes antes de leer.", "bloom": "L2 Comprender"},
+      {"number": 2, "archetype": "B — Manual Navigation Hunt", "type": "cognitiva + procedimental", "duration_min": 40,
+       "statement": "Navegar el manual técnico adaptado en inglés: localizar secciones por índice, leer tabla de especificaciones, identificar los 6 sistemas principales del vehículo.", "bloom": "L2 Comprender + L3 Aplicar"},
+      {"number": 3, "archetype": "C — Comprehension Check", "type": "cognitiva", "duration_min": 30,
+       "statement": "Responder 5 preguntas de comprensión sobre manual técnico y sistemas del vehículo — Evidencia 1 formal del RAP.", "bloom": "L2 Comprender + L3 Aplicar"},
+      {"number": 4, "archetype": "D — Text-to-Vehicle", "type": "procedimental", "duration_min": 30,
+       "statement": "Identificar físicamente en un vehículo real (o diagrama) los sistemas descritos en el texto. Etiquetar en inglés usando el manual como referencia.", "bloom": "L3 Aplicar + L4 Analizar"}
+    ],
+    "hours": {"direct": 3, "autonomous": 0.75},
+    "evidence": {
+      "generates_evidence": true,
+      "numero_evidencia": 1,
+      "tipo": "Desempeño",
+      "description": "Reading Comprehension — 5 preguntas sobre manual técnico y clasificación de vehículos diesel (B2)",
+      "evaluation_technique": "Observación directa",
+      "instrument_number": 1,
+      "instrument_type": "Lista de Chequeo No 1",
+      "contributes_to_cuestionario": true,
+      "cuestionario_skill": "Reading",
+      "cuestionario_points": 5
+    },
+    "environment": {"type": "Aula + Taller", "materials": ["Manual técnico adaptado impreso A1.1 (6 páginas)", "Diagrama del vehículo diesel con sistemas etiquetados", "Lista de Chequeo No 1 impresa (5 ítems)", "Ficha de navegación de manual"]},
+    "gfpi_tag": "3.3-APROPIACION-READING"
+  },
+  "adapted_text_title": "Know Your Diesel Vehicle — Systems and Manual Navigation",
+  "source_url": "https://www.dieseltechnologyforum.org/diesel-tech-resources/",
+  "cefr_adaptation": "A1.1 — frases máximo 10 palabras, estructuras Verb To Be / Have / Present Simple. Diagrama etiquetado como apoyo visual.",
+  "comprehension_questions": [
+    {"number": 1, "question": "Where can you find the torque specifications in a manual?", "answer": "b) In the specifications table", "bloom": "L1 Remember"},
+    {"number": 2, "question": "This truck has a diesel engine. What type of fuel does it use?", "answer": "c) Diesel", "bloom": "L1 Remember"},
+    {"number": 3, "question": "Complete: 'The suspension system _____ road impact.'", "answer": "b) absorbs", "bloom": "L2 Understand"},
+    {"number": 4, "question": "Which system controls the vehicle's speed reduction?", "answer": "a) The braking system", "bloom": "L2 Understand"},
+    {"number": 5, "question": "True or False: 'OEM parts are made by the original manufacturer.'", "answer": "TRUE", "bloom": "L2 Understand"}
+  ],
+  "trabajo_autonomo": {
+    "duracion_h": 0.75,
+    "actividades": [
+      "Find the table of contents in a real vehicle manual. List 3 sections in English.",
+      "Draw a simple vehicle outline and label 5 systems in English.",
+      "Repasar 15 flashcards B2 — vehicle systems — auto-test término → función en voz alta."
+    ]
+  }
+}

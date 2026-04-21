@@ -1,0 +1,164 @@
+{
+  "_meta": {
+    "schema_version": "activity-card-v2.0",
+    "schema_ref": "master-prompts/Activity Card — Schema.md (2026-04-13)",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-opus-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist"
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.1",
+    "pm_name": "The Spark",
+    "session": 1,
+    "phase_sena": "Reflexión Inicial",
+    "rap_id": "RAP-DIESEL-001-2026",
+
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Analizar titular técnico de incidente en taller diesel para activar conocimiento previo sobre seguridad y PPE",
+        "didactic_strategy": "Aprendizaje colaborativo",
+        "didactic_technique": "Análisis de casos"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Identificar y nombrar herramientas y zonas del taller diesel en inglés usando infografía de workshop layout",
+        "didactic_strategy": "Content-Based Learning",
+        "didactic_technique": "Investigación guiada"
+      },
+      {
+        "number": 3,
+        "type": "procedimental",
+        "statement": "Debatir criterios técnicos sobre tipos de mantenimiento usando funciones comunicativas básicas en inglés",
+        "didactic_strategy": "Trabajo colaborativo",
+        "didactic_technique": "Exposición y debate"
+      }
+    ],
+
+    "hours": {
+      "direct": 3.5,
+      "autonomous": 0.75
+    },
+
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "",
+      "evaluation_technique": "",
+      "instrument_number": null,
+      "instrument_type": null
+    },
+
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Proyector + pantalla",
+        "Titular impreso o proyectado: 'Three mechanics hospitalized after workshop fire — investigators blame poor PPE compliance'",
+        "Infografía A3 o proyección: workshop layout con zonas etiquetadas en inglés (Reception, Service Bay 1/2/3, Parts Room, Diagnostic Bay, Tool Storage, Hazmat Zone)",
+        "Tarjetas de personajes impresas: Carlos Mendoza (Lead Technician), Valentina Cruz (Safety Officer), Santiago Ríos (Apprentice)",
+        "Tarjetas verde/rojo para votación de debate (1 set por aprendiz)",
+        "Post-its (1 pad por mesa) para Learning Contract visual"
+      ],
+      "instructors": "Instructor de inglés técnico + Instructor técnico de motores diesel"
+    },
+
+    "contributes_to_consolidated_quiz": false,
+    "quiz_skill": "",
+    "quiz_points": 0,
+    "quiz_item_count": 0
+  },
+
+  "pm0_constraints_applied": {
+    "session": "S1",
+    "grammar_active": "Gr1 INTRO — Verbo be (I'm, you're, he's; isn't, aren't; Is/Are...?; short answers)",
+    "l1_max": "≤ 30% — Día 1: establecer confianza, reducir filtro afectivo",
+    "feedback_mode": "ACCURACY en drilling de estructuras be; FLUENCY en debate (actividad 3 — no interrumpir)",
+    "stress_focus": "work·shop, tech·ni·cian, safe·ty, main·te·nance — finger drilling + board marking ●○○",
+    "scaffolding": "sentence starters obligatorios, word bank de zonas y herramientas, frames de debate completos"
+  },
+
+  "archetype_used": [
+    "C — News (Actividad 1: The Headline)",
+    "A — Visual (Actividad 2: The Map)",
+    "B — Debate (Actividad 3: The Debate)"
+  ],
+
+  "momentos": [
+    {
+      "numero": 1,
+      "nombre": "The Headline",
+      "archetype": "C — News",
+      "duracion_min": 20,
+      "headline": "Three mechanics hospitalized after workshop fire — investigators blame poor PPE compliance",
+      "source": "SafetyCulture — Safety in Automotive Workshops, 2024",
+      "source_url": "https://safetydocs.safetyculture.com/blog/safety-in-automotive-workshops-guide-for-repair-and-servicing-environments/",
+      "survival_words": ["hospitalized", "compliance", "investigators", "workshop"],
+      "preguntas": [
+        "What happened? (¿Qué pasó?)",
+        "Why did it happen? (¿Por qué pasó?)",
+        "What is PPE? (¿Qué es PPE?)"
+      ],
+      "estructura_target": "The technician is in the _____. The problem is _____."
+    },
+    {
+      "numero": 2,
+      "nombre": "The Map",
+      "archetype": "A — Visual",
+      "duracion_min": 40,
+      "zonas": [
+        "Reception Area", "Service Bay 1", "Service Bay 2", "Service Bay 3",
+        "Parts Room", "Diagnostic Bay", "Tool Storage", "Wash Area", "Hazmat Zone"
+      ],
+      "estructura_target": "This is the ___. The ___ is next to the ___.",
+      "sentence_starters": [
+        "This is the ___.",
+        "The ___ is in ___.",
+        "The ___ is next to the ___.",
+        "There is a ___ in the ___."
+      ]
+    },
+    {
+      "numero": 3,
+      "nombre": "The Story + The Debate",
+      "archetype": "B + D — Story + Debate",
+      "duracion_min": 80,
+      "characters": [
+        "Carlos Mendoza — Lead Technician",
+        "Valentina Cruz — Safety Officer",
+        "Santiago Ríos — Apprentice"
+      ],
+      "setting": "The Diesel Workshop, Bogotá",
+      "afirmaciones_debate": [
+        "Preventive maintenance is more important than corrective maintenance.",
+        "A mechanic who doesn't speak English cannot read a diesel engine manual.",
+        "PPE rules are just bureaucracy — an experienced mechanic doesn't need them."
+      ],
+      "frases_ancla": {
+        "agree": ["I think... because...", "In my experience...", "I agree — the workshop needs..."],
+        "disagree": ["I disagree because...", "The problem is...", "Actually, the technician should..."]
+      }
+    }
+  ],
+
+  "trabajo_autonomo": {
+    "duracion_h": 0.75,
+    "actividades": [
+      "Vocabulary Preview: buscar imagen de 5 herramientas usadas frecuentemente en su taller y escribir el nombre en inglés (3 fuentes permitidas: catálogos, Shadow Foam, etiquetas del fabricante)",
+      "Self-assessment: calificar 1–5 conocimiento actual de inglés en cuatro áreas: tools / safety / maintenance types / workshop areas — guardar hoja para redistribuir en S8",
+      "Optional: ver 2 min de video de mecánico diesel en YouTube en inglés y anotar 3 palabras reconocidas"
+    ]
+  },
+
+  "gfpi_tag": "3.1-REFLEXION",
+  "instructor_notes": {
+    "english_zone": "Declarar English Zone desde la actividad 2. Frase consistente: 'Can you say that in English?'",
+    "l1_guidance": "Actividad 1 (Headline): L1 permitido para instrucciones y safety vocabulary. Actividades 2–3: L2 esperado en producción, L1 solo de respaldo en comprensión.",
+    "post_debate_feedback": "Feedback diferido post-debate: escribir 2–3 errores frecuentes en pizarra (anónimos), clase corrige. Destacar 2–3 aciertos comunicativos."
+  }
+}

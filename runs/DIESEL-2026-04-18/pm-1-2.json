@@ -1,0 +1,294 @@
+{
+  "pm_id": "PM-1.2",
+  "run_id": "DIESEL-2026-04-18",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "cefr_level": "A1.1",
+  "status": "completed_awaiting_G1",
+  "generated_at": "2026-04-18",
+  "integration_note": "G1 integra B1 (taller, herramientas, EPP, SST) + B2 (clasificación vehículos, sistemas del automotor, manuales técnicos). Programa Técnico — 5 guías totales.",
+  "presentacion": "Welcome to The Diesel Workshop — your first step into the professional world of automotive maintenance. In this guide, you will learn to navigate a real service workshop in English: identify tools and areas, apply safety standards, and communicate with your team using technical language. You will also explore the vehicle itself — how to classify it, name its main systems, and read a technical manual like a professional. This is not just about learning words — it is about speaking the language of the job from day one. By the end of this guide, you will be able to describe your workspace, identify vehicle systems, navigate a service manual, and report your findings to a supervisor — all in English.",
+  "identification": {
+    "programa": "Mantenimiento de los Motores Diesel",
+    "tipo": "Técnico",
+    "guia": "1.1",
+    "macrotheme": "The Workshop Specialist",
+    "bloques_integrados": ["B1 — Workshop & Tools", "B2 — Vehicle Systems & Manuals"],
+    "intensidad_horas": 60,
+    "horas_directa": 48,
+    "horas_autonoma": 12,
+    "sesiones": 8,
+    "cefr": "A1.1",
+    "rap_code": "220501096",
+    "rap_descripcion": "Comunicar información técnica en inglés en contextos de mantenimiento de motores"
+  },
+  "guide_design_dna": {
+    "nombre_conceptual": "The Workshop Specialist",
+    "enfoque": "Anclar el vocabulario técnico al entorno físico real del taller y al vehículo como sistema. El aprendiz aprende a nombrar lo que ya conoce en español — desde las herramientas hasta los sistemas del motor — y lo traslada al registro profesional en inglés usando manuales técnicos reales.",
+    "entendimientos_perdurables": [
+      "A professional mechanic communicates safety conditions clearly — in any language.",
+      "Tools and vehicle systems have precise names in English because manufacturers, manuals, and specs are written in English.",
+      "Knowing your workshop AND your vehicle is the foundation of every maintenance job."
+    ],
+    "narrativa": {
+      "empresa": "The Diesel Workshop — taller especializado en flotas de vehículos de carga diesel",
+      "personajes": [
+        {"nombre": "Carlos Mendoza", "rol": "Workshop Supervisor"},
+        {"nombre": "Valentina Cruz", "rol": "Apprentice Technician"},
+        {"nombre": "Santiago Ríos", "rol": "Senior Technician"}
+      ]
+    }
+  },
+  "session_arc": [
+    {"sesion": 1, "nombre": "The Workshop Comes Alive", "fase": "Análisis", "foco": "B1 — Taller: áreas, herramientas, EPP. Activación de conocimiento previo. Vocabulario de entrada.", "evidencia": null},
+    {"sesion": 2, "nombre": "Read the Manual", "fase": "Comprensión", "foco": "B2 — Manuales técnicos: navegación, tablas de especificaciones, clasificación de vehículos. Reading anchor.", "evidencia": "E1 Reading"},
+    {"sesion": 3, "nombre": "Write the Report", "fase": "Apropiación", "foco": "B1+B2 — Work order + vehicle description. Escritura técnica en inglés.", "evidencia": "E2 Writing"},
+    {"sesion": 4, "nombre": "Tuning In & Speaking Up", "fase": "Apropiación", "foco": "B1 — Seguridad en el taller: listening (diálogo supervisor-aprendiz) + speaking (safety briefing).", "evidencia": "E3 Listening + E4 Speaking"},
+    {"sesion": 5, "nombre": "Systems in Action", "fase": "Apropiación", "foco": "B2 — Sistemas del automotor: funciones comunicativas en contexto de diagnóstico inicial.", "evidencia": "E5 Language Functions"},
+    {"sesion": 6, "nombre": "Prove What You Know", "fase": "Apropiación", "foco": "B1+B2 — Cuestionario consolidado: 25 ítems sobre taller, herramientas, vehículos, sistemas y manuales.", "evidencia": "E6 Cuestionario"},
+    {"sesion": 7, "nombre": "Final Mission Prep", "fase": "Transferencia", "foco": "Preparación de la Misión Final: role-play de recepción de vehículo + inspección de taller + briefing al supervisor.", "evidencia": null},
+    {"sesion": 8, "nombre": "The Full Circle", "fase": "Transferencia", "foco": "Misión Final: recepción de vehículo, inspección de taller, lectura de manual, reporte al supervisor — todo en inglés.", "evidencia": "Final Mission"}
+  ],
+  "content_core": {
+    "technical_topics": [
+      "Types and characteristics of automotive service workshops",
+      "Workshop areas: reception bay, service bay, storage, wash area, electrical room",
+      "Types of maintenance: preventive, corrective, predictive, scheduled",
+      "Hand tools and power tools: selection, identification, care",
+      "Measuring instruments: torque wrench, multimeter, vernier caliper, pressure gauge",
+      "Personal Protective Equipment (PPE): types, use, legal requirements",
+      "Workplace safety: hazard identification, spill response, SST norms",
+      "Environmental standards: waste disposal, fluid handling",
+      "Workshop formats: work order, service checklist, daily inspection log",
+      "Vehicle classification: by use (passenger, commercial, cargo), by fuel (diesel, gasoline, hybrid)",
+      "Main vehicle systems: engine, transmission, suspension, braking, electrical, steering",
+      "Diesel engine identification: external components and their names in English",
+      "Technical manuals: table of contents, specs tables, torque values, service intervals",
+      "OEM vs aftermarket: understanding manufacturer specifications"
+    ],
+    "communicative_functions": [
+      "F1 — Dar instrucciones: Give step-by-step instructions using imperatives",
+      "F2 — Solicitar acción: Request tools, materials, and clarification",
+      "F3 — Describir condiciones: Describe safety conditions, vehicle systems, and workshop areas",
+      "F4 — Reportar al supervisor: Report findings, hazards, and job status",
+      "F5 — Confirmar comprensión: Confirm instructions and specifications"
+    ],
+    "language_functions_in_context": [
+      {"structure": "Verb To Be (is/are)", "example": "This is a torque wrench. The engine is a 6-cylinder diesel."},
+      {"structure": "Have / Has", "example": "The workshop has three service bays. This truck has a manual transmission."},
+      {"structure": "Demonstratives", "example": "This tool is for tightening. That system controls the brakes."},
+      {"structure": "Articles (a/an/the)", "example": "Use a wrench. The manual shows the torque specs."},
+      {"structure": "Prepositions of place", "example": "The engine is at the front. The fuel tank is under the chassis."},
+      {"structure": "There is / There are", "example": "There is a chemical spill. There are six cylinders in this engine."},
+      {"structure": "Present Simple (description)", "example": "The suspension absorbs road impact. The technician checks the oil level."},
+      {"structure": "Imperatives", "example": "Put on your goggles. Check page 24 of the manual. Report all hazards."}
+    ],
+    "key_vocabulary": [
+      {"numero": 1, "term": "workshop", "category": "Environment", "context": "The diesel workshop has four service bays."},
+      {"numero": 2, "term": "service bay", "category": "Environment", "context": "Bay 2 is reserved for engine work."},
+      {"numero": 3, "term": "workbench", "category": "Environment", "context": "Clean the workbench after every job."},
+      {"numero": 4, "term": "toolbox", "category": "Equipment", "context": "Every technician has a personal toolbox."},
+      {"numero": 5, "term": "wrench", "category": "Tool", "context": "Use the open-end wrench for the bolt."},
+      {"numero": 6, "term": "ratchet", "category": "Tool", "context": "The ratchet speeds up the job in tight spaces."},
+      {"numero": 7, "term": "socket", "category": "Tool", "context": "Select the correct socket size before tightening."},
+      {"numero": 8, "term": "torque wrench", "category": "Measuring", "context": "Use a torque wrench to apply 120 Nm."},
+      {"numero": 9, "term": "floor jack", "category": "Equipment", "context": "Never get under a vehicle without a floor jack."},
+      {"numero": 10, "term": "PPE", "category": "Safety", "context": "PPE includes goggles, gloves, and safety boots."},
+      {"numero": 11, "term": "safety goggles", "category": "PPE", "context": "Wear safety goggles when using the grinder."},
+      {"numero": 12, "term": "hazard", "category": "Safety", "context": "A spilled fluid is a slip hazard on the floor."},
+      {"numero": 13, "term": "work order", "category": "Document", "context": "Fill in the work order before starting any job."},
+      {"numero": 14, "term": "checklist", "category": "Document", "context": "Use the daily inspection checklist every morning."},
+      {"numero": 15, "term": "preventive maintenance", "category": "Maintenance", "context": "Preventive maintenance avoids unexpected breakdowns."},
+      {"numero": 16, "term": "vehicle", "category": "Vehicle", "context": "This vehicle is a diesel cargo truck."},
+      {"numero": 17, "term": "chassis", "category": "Vehicle", "context": "The chassis supports the entire vehicle structure."},
+      {"numero": 18, "term": "engine", "category": "System", "context": "The diesel engine is at the front of the vehicle."},
+      {"numero": 19, "term": "transmission", "category": "System", "context": "This truck has a 6-speed manual transmission."},
+      {"numero": 20, "term": "suspension", "category": "System", "context": "The suspension absorbs road impact and vibration."},
+      {"numero": 21, "term": "braking system", "category": "System", "context": "The braking system includes discs, pads, and calipers."},
+      {"numero": 22, "term": "steering", "category": "System", "context": "Power steering makes it easier to turn the wheel."},
+      {"numero": 23, "term": "electrical system", "category": "System", "context": "The electrical system powers the lights and sensors."},
+      {"numero": 24, "term": "fuel system", "category": "System", "context": "The fuel system delivers diesel to the injection pump."},
+      {"numero": 25, "term": "technical manual", "category": "Document", "context": "Always check the technical manual before a repair."},
+      {"numero": 26, "term": "specifications", "category": "Document", "context": "The specifications show the correct torque values."},
+      {"numero": 27, "term": "table of contents", "category": "Document", "context": "Use the table of contents to find the right section."},
+      {"numero": 28, "term": "OEM", "category": "Quality", "context": "Always use OEM parts when available."},
+      {"numero": 29, "term": "displacement", "category": "Engine", "context": "This diesel engine has a displacement of 5.9 liters."},
+      {"numero": 30, "term": "cylinder", "category": "Engine", "context": "The engine has 6 cylinders in an inline configuration."}
+    ]
+  },
+  "integrative_task": {
+    "nombre": "The Vehicle Reception Report",
+    "descripcion": "En equipos de 3, los aprendices asumen el rol de técnicos en The Diesel Workshop. Su misión: recibir un vehículo de carga diesel, inspeccionar el taller, identificar el vehículo y sus sistemas principales usando el manual técnico, y presentar un reporte completo al supervisor en inglés.",
+    "entregable_escrito": "Vehicle Reception Checklist + Work Order completados en inglés con identificación del vehículo, estado del taller y observaciones de seguridad.",
+    "entregable_oral": "Briefing de 90–120 segundos al supervisor describiendo el vehículo recibido, los sistemas identificados, el estado del taller y cualquier hazard detectado."
+  },
+  "evaluation_matrix": [
+    {
+      "evidencia": "E1",
+      "tipo": "Desempeño",
+      "tecnica": "Observación directa",
+      "instrumento": "Lista de Chequeo No 1 — Reading (5 ítems)",
+      "criterio": "Navega el manual técnico e identifica información específica en inglés",
+      "puntos": 5
+    },
+    {
+      "evidencia": "E2",
+      "tipo": "Producto",
+      "tecnica": "Valoración del producto",
+      "instrumento": "Lista de Chequeo No 2 — Writing (5 ítems)",
+      "criterio": "Diligencia el Vehicle Reception Checklist y Work Order en inglés con observaciones pertinentes",
+      "puntos": 5
+    },
+    {
+      "evidencia": "E3",
+      "tipo": "Desempeño",
+      "tecnica": "Observación directa",
+      "instrumento": "Lista de Chequeo No 3 — Listening (5 ítems)",
+      "criterio": "Comprende instrucciones de seguridad y descripciones de sistemas en inglés",
+      "puntos": 5
+    },
+    {
+      "evidencia": "E4",
+      "tipo": "Desempeño",
+      "tecnica": "Observación directa",
+      "instrumento": "Lista de Chequeo No 4 — Speaking (5 ítems)",
+      "criterio": "Ejecuta el briefing oral al supervisor en inglés describiendo el vehículo y el taller",
+      "puntos": 5
+    },
+    {
+      "evidencia": "E5",
+      "tipo": "Desempeño",
+      "tecnica": "Observación directa",
+      "instrumento": "Lista de Chequeo No 5 — Language Functions (5 ítems)",
+      "criterio": "Usa las 5 funciones comunicativas en contexto de taller y vehículo",
+      "puntos": 5
+    },
+    {
+      "evidencia": "E6",
+      "tipo": "Conocimiento",
+      "tecnica": "Formulación de preguntas",
+      "instrumento": "Cuestionario Consolidado No 6 — 25 ítems",
+      "criterio": "Responde correctamente mínimo el 60% del cuestionario sobre taller, vehículos, sistemas y manuales",
+      "puntos": 25
+    },
+    {
+      "evidencia": "Final Mission",
+      "tipo": "Desempeño integrador",
+      "tecnica": "Valoración del producto + observación directa",
+      "instrumento": "Escala de Estimación No 6 — 6 criterios",
+      "criterio": "Ejecuta la Vehicle Reception Report integrando B1+B2 — taller + vehículo + manual + reporte al supervisor",
+      "puntos": 5
+    }
+  ],
+  "scoring_canon": {
+    "E1_E5": "5 pts c/u = 25 pts",
+    "E6_cuestionario": "25 pts",
+    "final_mission": "5 pts",
+    "total": "55 pts"
+  },
+  "gfpi_f134_cols_1_5": {
+    "competencia": {
+      "codigo": "PENDIENTE",
+      "nombre": "Interactuar en Lengua Inglesa de Forma Oral y Escrita dentro de Contextos Sociales y Laborales según los Criterios Establecidos por el Marco Común Europeo de Referencia para las Lenguas"
+    },
+    "resultado_aprendizaje": {
+      "codigo": "220501096",
+      "descripcion": "Comunicar información técnica en inglés en contextos de mantenimiento de motores"
+    },
+    "saberes_conceptos_principios": [
+      "Tipos y características de talleres de servicio automotriz",
+      "Clasificación del mantenimiento: preventivo, correctivo, predictivo",
+      "Tipos, características y uso de herramientas manuales y de medición",
+      "Normas de Seguridad y Salud en el Trabajo (SST) aplicadas al taller automotriz",
+      "Elementos de Protección Personal (EPP): tipos, funciones, normatividad",
+      "Normatividad ambiental aplicada al taller: residuos, fluidos, disposición",
+      "Clasificación de vehículos: por uso y tipo de combustible",
+      "Sistemas principales del automotor: motor, transmisión, suspensión, frenos, eléctrico, dirección",
+      "Lectura de manuales técnicos del fabricante: estructura, índice, tablas de especificaciones",
+      "Vocabulario técnico del taller y del vehículo en inglés (30 términos esenciales)",
+      "Funciones comunicativas F1–F5 para la interacción en el entorno laboral técnico"
+    ],
+    "saberes_proceso": [
+      "Identificar y nombrar en inglés herramientas, zonas y equipos del taller",
+      "Clasificar tipos de mantenimiento y tipos de vehículos según sus características",
+      "Seleccionar EPP apropiado según el tipo de tarea técnica",
+      "Identificar y nombrar los sistemas principales del vehículo en inglés",
+      "Navegar un manual técnico en inglés: localizar secciones, leer tablas de especificaciones",
+      "Diligenciar formatos de taller en inglés (work order, vehicle reception checklist)",
+      "Reportar condiciones del taller y del vehículo a un supervisor en inglés"
+    ],
+    "criterios_evaluacion": [
+      "Identifica correctamente en inglés herramientas, EPP y zonas del taller según vocabulario técnico",
+      "Clasifica tipos de mantenimiento y sistemas del vehículo en inglés con terminología A1.1",
+      "Navega el manual técnico del fabricante e identifica información específica (torque, specs)",
+      "Diligencia el Vehicle Reception Checklist y Work Order en inglés con observaciones pertinentes",
+      "Comunica oralmente el estado del taller y del vehículo al supervisor en inglés (90–120 segundos)",
+      "Responde correctamente mínimo el 60% del Cuestionario Consolidado No 6 sobre B1+B2"
+    ],
+    "source_pm": "PM-1.2",
+    "macrotheme": "The Workshop Specialist",
+    "cefr_level": "A1.1",
+    "program_type": "Técnico"
+  },
+  "curated_sources": [
+    {
+      "id": "src-A",
+      "rol": "Story A — Reading Anchor (PM-2.3)",
+      "titulo": "Essential Auto Repair Tools Every Mechanic Needs",
+      "autor": "Roy Berendsohn & the Editors of Popular Mechanics",
+      "publicacion": "Popular Mechanics",
+      "fecha": "2023",
+      "url": "https://www.popularmechanics.com/cars/a26172988/essential-auto-repair-tools/",
+      "genero": "Blog / Tutorial",
+      "verification_required": true,
+      "resumen": "Recorre las herramientas esenciales de cualquier mecánico de taller — desde llaves y ratchets hasta torquímetros — con fotos, usos y recomendaciones. Tono accesible y motivacional para técnicos jóvenes.",
+      "funciones_comunicativas": ["Describing", "Classifying", "Instructing"],
+      "estructuras_gramaticales": ["Verb To Be", "Have/Has", "Present Simple", "Articles", "Imperatives", "Prepositions"],
+      "hots": ["Remember", "Understand", "Apply"],
+      "notas_adaptacion": {
+        "mantener": "Fotos de herramientas, nombres en inglés, estructura de lista",
+        "simplificar_a1": "Reducir descripción a 1-2 oraciones por herramienta; extraer solo estructuras con Verb To Be y Present Simple",
+        "potencial_visual": "Fotos de cada herramienta → Canva deck / Vocabulary board"
+      }
+    },
+    {
+      "id": "src-B",
+      "rol": "Story B — Listening Anchor (PM-2.6)",
+      "titulo": "Auto Shop Safety — What Every New Technician Must Know",
+      "autor": "Mike Mavrigian",
+      "publicacion": "Motor Age Magazine",
+      "fecha": "2024",
+      "url": "https://www.motorage.com/technician-training/article/21291549/auto-shop-safety",
+      "genero": "Artículo de industria (trade magazine)",
+      "verification_required": true,
+      "resumen": "Explica los principales riesgos de seguridad en un taller automotriz y las medidas de protección estándar. Incluye situaciones reales de técnicos describiendo incidentes. Tono directo y práctico para técnicos en formación.",
+      "funciones_comunicativas": ["Describing", "Instructing", "Reporting", "Requesting"],
+      "estructuras_gramaticales": ["Verb To Be", "Have/Has", "Present Simple", "Imperatives", "There is/are", "Prepositions"],
+      "hots": ["Remember", "Understand", "Apply", "Analyze"],
+      "notas_adaptacion": {
+        "mantener": "Situaciones reales, hazards descritos, nombre de EPP",
+        "simplificar_a1": "Convertir en diálogo corto supervisor + new technician con frases de máximo 8 palabras",
+        "potencial_visual": "Señales de seguridad, iconos de EPP → Canva deck / safety poster"
+      }
+    },
+    {
+      "id": "src-C",
+      "rol": "Story C — Vehicle Systems Reading (PM-2.3 B2) + Vocabulary (PM-2.5)",
+      "titulo": "Understanding Diesel Vehicle Systems — A Technician's Overview",
+      "autor": "Diesel Technology Forum",
+      "publicacion": "Diesel Technology Forum",
+      "fecha": "2023",
+      "url": "https://www.dieseltechnologyforum.org/diesel-tech-resources/",
+      "genero": "Recurso educativo técnico",
+      "verification_required": true,
+      "resumen": "Describe los sistemas principales de los vehículos diesel modernos: motor, transmisión, sistema de inyección, frenos y suspensión. Incluye diagramas y nombres de componentes en inglés. Ideal para construir vocabulario de sistemas.",
+      "funciones_comunicativas": ["Describing", "Classifying", "Identifying"],
+      "estructuras_gramaticales": ["Verb To Be", "Have/Has", "Present Simple", "Articles", "Prepositions", "There is/are"],
+      "hots": ["Remember", "Understand", "Apply"],
+      "notas_adaptacion": {
+        "mantener": "Nombres de sistemas en inglés, diagramas, descripción funcional",
+        "simplificar_a1": "Extraer 1 oración por sistema: This is the engine / The engine has 6 cylinders",
+        "potencial_visual": "Diagrama del vehículo con sistemas etiquetados → Canva deck S5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "_meta": {
+    "schema_version": "mission-spec-v1.0",
+    "schema_ref": "master-prompts/Final Mission — Schema.md (2026-04-19)",
+    "pm0_ref": "prompts/pm-0.md (2026-04-19)",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-sonnet-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist",
+    "pm_id": "PM-3.5",
+    "sessions": ["S6b", "S7", "S8"],
+    "note": "La Final Mission NO genera evidencias GFPI-F-134 adicionales. Las 6 evidencias formales se generaron en S2–S6a. Este documento evalúa TRANSFERENCIA y consolidación CEFR A1.1."
+  },
+
+  "mission_brief": {
+    "title": "The Workshop Readiness Report — Final Mission",
+    "subtitle": "Guía 1 — The Workshop Specialist",
+    "archetype": "A — Professional Simulation",
+    "cefr": "A1.1",
+    "program": "Mantenimiento de Motores Diesel — Técnico — SENA",
+
+    "scenario": {
+      "setting": "The Diesel Workshop — Centro de Formación — Monday 7:00 AM",
+      "situation": "The workshop opens in 30 minutes. Carlos Mendoza (Lead Technician) needs the readiness report for your assigned bay BEFORE the first vehicle arrives. You are Santiago Ríos — Apprentice Technician. You must inspect your bay, complete the Daily Inspection Checklist, and deliver the Workshop Readiness Report to your supervisor — in English.",
+      "stakes": "If the bay is not cleared as ready by 7:00 AM, the first vehicle cannot enter. The workshop depends on your report."
+    },
+
+    "roles": {
+      "apprentice_technician": {
+        "character": "Santiago Ríos",
+        "responsibilities": [
+          "Inspect the assigned bay — floor, tools, PPE, fire extinguisher, floor jack",
+          "Complete the Daily Inspection Checklist (minimum 8 items in English)",
+          "Deliver the Workshop Readiness Report orally to the supervisor (60–90 seconds)",
+          "Respond to 1 follow-up question from the supervisor — without notes"
+        ]
+      },
+      "supervisor": {
+        "character": "Carlos Mendoza — Lead Technician",
+        "played_by": "Instructor (Final Mission oral — S8) / Partner (S7 coaching pairs)",
+        "responsibilities": [
+          "Listen to the report without interrupting",
+          "Ask 1 follow-up question after the report",
+          "Evaluate using the Observation Checklist (instructor only)"
+        ]
+      }
+    },
+
+    "deliverables": [
+      {
+        "number": 1,
+        "type": "Written",
+        "name": "Daily Inspection Checklist",
+        "description": "Handwritten checklist for the assigned bay — minimum 8 items with status (✓ / ✗ / N/A), minimum 2 written observations in English, Work Order header fields completed, overall bay status declared (Ready / Not Ready + reason)",
+        "language": "English — 100%",
+        "deadline": "Completed before S8 Final Mission oral",
+        "evaluated_by": "Product Rubric (formative — 20 pts max)"
+      },
+      {
+        "number": 2,
+        "type": "Oral",
+        "name": "Workshop Readiness Report",
+        "description": "Live oral report to supervisor (Carlos Mendoza) — 60 to 90 seconds — using Toolbelt vocabulary, all 5 communicative functions (F1–F5), grammar structures Gr1–Gr7, and responding to 1 follow-up question",
+        "language": "English — 100%",
+        "deadline": "S8 — during Final Mission rounds",
+        "evaluated_by": "Observation Checklist (formative — 10 pts max)"
+      }
+    ],
+
+    "rules": {
+      "language": "100% English during the oral report. No L1 permitted.",
+      "checklist": "Handwritten. No Spanish labels or translations.",
+      "oral_report": "60–90 seconds. No reading from script. Bullets only as reference.",
+      "follow_up": "Respond to supervisor's question without consulting notes.",
+      "fluency_mode": "No interruptions during the report. Supervisor listens and evaluates silently.",
+      "notes_permitted_in": "Daily Inspection Checklist (physical document — can be held during oral report for reference, NOT read aloud)"
+    },
+
+    "timeline": {
+      "S6b": "2.5 hours — Orientation + Bay Reconnaissance",
+      "S7": "6 hours — Inspection + Written Checklist + Oral Preparation + Coaching Pairs",
+      "S8": "6 hours — Final Mission Oral + KWL Closure + Gap Card Reflection + Learning Contract"
+    },
+
+    "toolkit": {
+      "toolbelt_vocabulary": [
+        "floor jack", "torque wrench", "socket set", "ratchet", "workbench",
+        "toolbox", "service bay", "fire extinguisher", "PPE",
+        "gloves", "safety goggles", "hard hat", "spill", "hazard",
+        "Daily Inspection Checklist", "Work Order", "preventive maintenance",
+        "corrective maintenance", "specialist", "supervisor"
+      ],
+      "chunk_bank_f1_giving_instructions": [
+        "Check the floor jack before starting.",
+        "Wear your goggles.",
+        "Don't leave tools on the floor.",
+        "Inspect the PPE area.",
+        "Clean the spill before opening the bay."
+      ],
+      "chunk_bank_f2_requesting_tools": [
+        "Can I have the torque wrench, please?",
+        "I need the socket set for Bay 2.",
+        "Can you bring the floor jack, please?"
+      ],
+      "chunk_bank_f3_describing_conditions": [
+        "There is a spill near the bay door.",
+        "There are tools on the floor.",
+        "The fire extinguisher is next to the workbench.",
+        "The toolbox is organized.",
+        "There is no PPE in Bay 1."
+      ],
+      "chunk_bank_f4_reporting_to_supervisor": [
+        "Good morning, Carlos. Bay ___ is ready.",
+        "Bay ___ is not ready. There is a problem with the ___.",
+        "I inspected Bay ___. Everything is in order.",
+        "I need to report a spill near the bay door."
+      ],
+      "chunk_bank_f5_confirming_understanding": [
+        "Understood.",
+        "Got it.",
+        "I'll do it now.",
+        "Sorry, can you repeat that?",
+        "Yes, I understand."
+      ],
+      "grammar_structures_active": [
+        "Gr1 — Verb be: I'm a technician. The bay is ready.",
+        "Gr2 — There is/are: There is a spill. There are tools on the floor.",
+        "Gr3 — Present simple: I check the bay every morning. I inspect the toolbox.",
+        "Gr5 — Imperative: Check the floor jack. Don't leave tools on the floor.",
+        "Gr7 — Can/can't: The lift can operate. I can't find the torque wrench."
+      ]
+    },
+
+    "oral_report_model_structure": {
+      "note": "This is a suggested structure — not a script. Learners choose their own phrases.",
+      "opening": "F4 — 'Good morning, Carlos. Bay ___ is ready / not ready.'",
+      "conditions": "F3 — 'There is/are ___ [condition]. The ___ is ___ [preposition].'",
+      "actions": "F1 / Gr3 — 'I checked the ___. I inspected the ___.'",
+      "problem_if_any": "F3 + F4 — 'There is a problem with the ___. I reported it.'",
+      "closing": "F5 — 'Bay ___ is ready to start. Awaiting your approval.'"
+    }
+  },
+
+  "bay_assignment_protocol": {
+    "principle": "Each group inspects a DIFFERENT bay — reports must be varied and based on real observed conditions.",
+    "default_assignment": {
+      "group_1": "Bay 1",
+      "group_2": "Bay 2",
+      "group_3": "Bay 3"
+    },
+    "if_fewer_than_3_bays": "Assign 2 learners per bay in alternating turns. Bay conditions should differ slightly (e.g., intentionally place a minor issue in Bay 2 — a misplaced tool — so reports vary).",
+    "if_no_real_bay_access": {
+      "plan_b": "High-resolution photos of real bay + physical materials distributed in classroom (tools, fire extinguisher prop, PPE). Instructor plays 'supervisor of the bay' from classroom.",
+      "note": "Plan B should maintain the inspection authenticity — learners must interact with physical objects, not just answer from memory."
+    },
+    "bay_conditions_for_final_mission": {
+      "note": "Instructor sets intentional bay conditions before S6b reconnaissance visit. Recommended: 1 or 2 minor issues per bay (e.g., tools not organized, 1 PPE item missing) so learners must genuinely observe and report.",
+      "examples": [
+        "Bay 1: all clear — report is 'ready'",
+        "Bay 2: 1 tool on the floor near the workbench — report includes 'There is a tool on the floor'",
+        "Bay 3: 1 PPE item (goggles) missing from the station — report includes 'The goggles are not in place'"
+      ]
+    }
+  },
+
+  "evaluation": {
+    "type": "Formative — Transfer Assessment",
+    "gfpi_formal_evidence": false,
+    "note": "Neither the Observation Checklist nor the Product Rubric generate formal GFPI-F-134 evidence scores. They are instructor tools for coaching and formative feedback ONLY. No individual scores are shared orally during S8. Written formative feedback is delivered at the close of S8 or at the start of Guía 2.",
+
+    "observation_checklist_oral": {
+      "title": "Observation Checklist — Workshop Readiness Report (Oral)",
+      "instrument_type": "Lista de verificación de observación — Producción oral",
+      "session": "S8",
+      "total_points": 10,
+      "scoring_scale": "0 = not observed / 1 = partially observed / 2 = clearly observed",
+      "criteria": [
+        {
+          "number": 1,
+          "criterion": "Opens the report clearly with bay identification and status (F4)",
+          "observable_evidence": "Learner states bay number and READY / NOT READY status at the start. Example: 'Good morning, Carlos. Bay 2 is ready.'",
+          "max_points": 2
+        },
+        {
+          "number": 2,
+          "criterion": "Describes minimum 2 bay conditions using There is/are + preposition of place (F3)",
+          "observable_evidence": "Two or more description sentences using 'There is/are' and at least one preposition (near, next to, in, on, under). Example: 'There is a spill near the bay door. The fire extinguisher is next to the workbench.'",
+          "max_points": 2
+        },
+        {
+          "number": 3,
+          "criterion": "Uses minimum 6 Toolbelt technical terms correctly during the report",
+          "observable_evidence": "Minimum 6 recognizable terms from the Toolbelt used in context: floor jack, toolbox, fire extinguisher, PPE, gloves, goggles, workbench, wrench, socket, spill, hazard, bay, checklist, work order, preventive maintenance, specialist, supervisor.",
+          "max_points": 2
+        },
+        {
+          "number": 4,
+          "criterion": "Demonstrates minimum 3 communicative functions (F1–F5) integrated in the report",
+          "observable_evidence": "At least 3 of the 5 functions are clearly present: giving an instruction (F1), requesting (F2), describing (F3), reporting status (F4), confirming/closing (F5).",
+          "max_points": 2
+        },
+        {
+          "number": 5,
+          "criterion": "Responds to supervisor's 1 follow-up question without consulting notes",
+          "observable_evidence": "Learner provides a comprehensible answer to Carlos's question (e.g., 'Is the lift ready?', 'What about the PPE?') — without looking at the checklist or notes.",
+          "max_points": 2
+        }
+      ],
+      "scoring_guide": {
+        "9_10": "Excelente — comunicación oral en inglés A1.1 consolidada. Reporte claro, completo y comprensible.",
+        "7_8": "Muy bueno — 1 criterio parcialmente logrado. Comunicación efectiva.",
+        "5_6": "Satisfactorio — 2 criterios en desarrollo. Funcional — próximos pasos claros.",
+        "3_4": "En proceso — 2+ criterios no observados. Práctica adicional en Guía 2.",
+        "0_2": "No logrado — reporte no comprensible o predominantemente en español."
+      },
+      "follow_up_questions_bank": [
+        "Is the floor jack ready?",
+        "What about the PPE?",
+        "Is there a spill in the bay?",
+        "Where is the fire extinguisher?",
+        "Are all the tools in place?",
+        "Can the lift operate?",
+        "How many items did you inspect?",
+        "Is Bay ___ ready for the first vehicle?"
+      ]
+    },
+
+    "product_rubric_written": {
+      "title": "Product Rubric — Daily Inspection Checklist (Written)",
+      "instrument_type": "Rúbrica analítica — Producción escrita",
+      "session": "S7 (written) → S8 (submitted with oral report)",
+      "total_points": 20,
+      "levels": {
+        "4": "Excellent",
+        "3": "Adequate",
+        "2": "Developing",
+        "1": "Initial"
+      },
+      "criteria": [
+        {
+          "number": 1,
+          "criterion": "Completeness",
+          "description": "The checklist covers the required fields and minimum items",
+          "excellent_4": "10+ items with clear status (✓ / ✗ / N/A), Work Order header with 6+ complete fields, overall bay status clearly declared with reason.",
+          "adequate_3": "8–9 items with status marks, Work Order header with 4–5 fields, bay status declared.",
+          "developing_2": "6–7 items, Work Order header partial (fewer than 4 fields), bay status missing or incomplete.",
+          "initial_1": "Fewer than 6 items, Work Order header empty or mostly blank, no bay status declared.",
+          "max_points": 4
+        },
+        {
+          "number": 2,
+          "criterion": "Technical Vocabulary",
+          "description": "Use of Toolbelt vocabulary — correct terms, no Spanish substitutions, correct spelling",
+          "excellent_4": "All items use correct Toolbelt terms. Zero Spanish substitutions. Maximum 1 minor spelling error.",
+          "adequate_3": "Most items use Toolbelt terms. 1–2 Spanish substitutions or synonyms. 2–3 spelling errors.",
+          "developing_2": "Some items use Toolbelt terms. 3–4 Spanish substitutions. 4–6 spelling errors.",
+          "initial_1": "Few Toolbelt terms. Multiple Spanish substitutions throughout. Spelling errors make terms unrecognizable.",
+          "max_points": 4
+        },
+        {
+          "number": 3,
+          "criterion": "Written Observations",
+          "description": "Minimum 2 observations written in English using There is/are",
+          "excellent_4": "3+ observations in English using There is/are correctly, with accurate prepositions of place. Observations are specific and informative.",
+          "adequate_3": "2 observations in English using There is/are. Minor grammar error (e.g., agreement) but meaning is clear.",
+          "developing_2": "1–2 observations present but incomplete or with significant grammar errors. Meaning sometimes unclear.",
+          "initial_1": "No observations in English, or observations written in Spanish.",
+          "max_points": 4
+        },
+        {
+          "number": 4,
+          "criterion": "Grammar Structures",
+          "description": "Correct use of imperative verbs, There is/are, and prepositions of place in observations and required actions",
+          "excellent_4": "Imperative verbs used correctly in 'Required Action' column (base form, no subject). There is/are agreement correct. Prepositions of place accurate.",
+          "adequate_3": "Imperatives mostly correct — 1–2 errors (e.g., 'Checks' instead of 'Check'). There is/are mostly correct. 1–2 preposition errors.",
+          "developing_2": "Imperatives inconsistent. There is/are agreement errors frequent. Prepositions often missing or incorrect.",
+          "initial_1": "No recognizable use of imperative, There is/are, or prepositions. Grammar structures absent or incorrect throughout.",
+          "max_points": 4
+        },
+        {
+          "number": 5,
+          "criterion": "Organization and Readability",
+          "description": "The document is well-organized, readable, and free of empty sections",
+          "excellent_4": "Document is clean, clearly organized, all sections complete, no empty fields. Handwriting legible throughout.",
+          "adequate_3": "Document mostly organized. 1–2 minor empty sections or unclear entries. Handwriting generally legible.",
+          "developing_2": "Several empty sections or disorganized entries. Handwriting occasionally difficult to read.",
+          "initial_1": "Document largely incomplete, disorganized, or illegible.",
+          "max_points": 4
+        }
+      ],
+      "scoring_guide": {
+        "18_20": "Excelente — documento técnico completo y preciso. A1.1 escritura consolidada.",
+        "14_17": "Muy bueno — 1 criterio en desarrollo. Documento funcional y comprensible.",
+        "10_13": "Satisfactorio — 2 criterios en desarrollo. Comunicación escrita básica evidenciada.",
+        "6_9": "En proceso — 3+ criterios en desarrollo. Necesita apoyo adicional en Guía 2.",
+        "0_5": "No logrado — documento incompleto o predominantemente en español."
+      }
+    }
+  },
+
+  "facilitation_notes": {
+    "s6b_orientation": {
+      "key_moves": [
+        "Return Cuestionario No 6 score sheets — brief individual reflection (10 min), pair comparison (5 min)",
+        "Orient Final Mission in 3 sentences max: inspect a real bay, write the checklist, report to supervisor in English",
+        "Assign bays publicly and immediately — groups need time to internalize their bay number",
+        "Reconnaissance visit is observation only — note-taking encouraged, no checklist writing yet",
+        "End S6b with explicit autonomous work brief: draft outline (5 bullets) + checklist draft (8 items)"
+      ],
+      "teacher_talk_orientation": "The Final Mission. Simple: you inspect a real bay in this workshop. You write the Daily Inspection Checklist — in English. Then you report to your supervisor — me — in English. 60 to 90 seconds. You have Session 7 to prepare. Session 8 is the Mission.",
+      "icq": "Where do you inspect? — Real bay. What do you write? — Daily Inspection Checklist. When is the oral report? — Session 8. How long? — 60 to 90 seconds."
+    },
+    "s7_coaching": {
+      "key_moves": [
+        "Circulate to all bay groups during inspection (approx. 15 min per group)",
+        "Coaching questions during inspection: 'What is the condition of the floor jack?' / 'Is there any PPE missing?' / 'Describe this area for me — in English.'",
+        "Error codes in pencil during checklist writing (G/V/Sp/WO) — do NOT interrupt production",
+        "Coaching pairs: both partners use Escala de estimación No 5 criteria as feedback framework",
+        "End S7 with 'tomorrow is the Final Mission' — motivational close, no new content"
+      ],
+      "coaching_pair_feedback_phrases": [
+        "I think the ___ was missing.",
+        "Your F3 was very good.",
+        "Can you add one more condition?",
+        "I understood you clearly.",
+        "Try to say the bay number at the start."
+      ]
+    },
+    "s8_final_mission": {
+      "protocol": [
+        "FLUENCY mode absolute — no interruptions during any report",
+        "1 follow-up question per learner — instructor chooses from the follow-up bank based on what was NOT mentioned in the report",
+        "All other learners listen silently and update their Personal Communication Card",
+        "After every 5 reports: brief formative checkpoint — 3 strong elements noticed (anonymous, collective)"
+      ],
+      "formative_checkpoint_tt": "Good progress — let's notice what's working. Three strong elements from the last reports: (1) clear bay number, (2) good use of There is/are, (3) F5 confirmation at the end. Keep going.",
+      "closing_ceremony": "Share-out — one word that describes your English in this course. Just one word — in English.",
+      "note_on_scoring": "Do NOT share individual oral scores during S8. Deliver written formative feedback at the close of S8 or the start of Guía 2."
+    }
+  },
+
+  "pm0_constraints_applied": {
+    "sessions": "S6b–S8",
+    "grammar_phase": "ALL APLICA — sin instrucción explícita nueva. Toda la gramática activa (Gr1, Gr2, Gr3, Gr5, Gr7) se usa en producción integrada libre.",
+    "l1_max": "≤ 5% en S8 — producción oral 100% en L2. S6b–S7 ≤ 10% — instrucciones de misión en L2.",
+    "feedback_mode": "FLUENCY dominante en toda la Final Mission. ACCURACY solo durante S7 Coaching Pairs (post-task, anónimo). NUNCA interrumpir durante producción oral activa.",
+    "evidence_status": "NO genera evidencias GFPI-F-134. Evalúa transferencia y progresión CEFR A1.1 → A1.2.",
+    "cefr_exit_target": "A1.1 consolidado: aprendiz puede comunicar el estado de un área de trabajo simple en inglés usando vocabulario técnico, estructuras básicas y las 5 funciones comunicativas aprendidas en la guía."
+  },
+
+  "gfpi_tag": "3.4-TRANSFERENCIA-MISION-FINAL",
+  "instructor_notes": {
+    "what_this_mission_is_not": "La Final Mission NO es un examen sumativo adicional. Las 6 evidencias GFPI ya se recogieron. Esta misión es el momento en que el aprendiz usa todo lo aprendido en un contexto real o simulado — el resultado es experiencia, no calificación.",
+    "what_success_looks_like": "Un aprendiz que entrega un report oral comprensible en inglés de 60+ segundos, con vocabulario técnico reconocible y estructura básica, ha logrado el objetivo de la Guía 1. La perfección gramatical NO es el criterio — la comunicación efectiva SÍ.",
+    "connecting_to_guide_2": "Al cerrar S8: mencionar explícitamente que Guía 2 (A1.2) continúa en el mismo workshop con más vocabulario, más gramática y situaciones más complejas. El aprendiz ya conoce el universo — ahora profundiza."
+  }
+}

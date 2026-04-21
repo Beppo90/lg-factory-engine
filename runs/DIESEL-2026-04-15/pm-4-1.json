@@ -1,0 +1,708 @@
+{
+  "pm_id": "PM-4.1",
+  "run_id": "DIESEL-2026-04-15",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "generated_at": "2026-04-15",
+  "model": "claude-sonnet-4-6",
+  "status": "completed",
+  "description": "Colección completa de instrumentos de evaluación — Evidencias E1 a E6 + Final Mission capstone. Listos para imprimir y aplicar.",
+  "nota_rap": "Código RAP: 220501096 — Comunicar información técnica en inglés en contextos de mantenimiento de motores",
+  "header_institucional": {
+    "programa": "Mantenimiento de los Motores Diesel",
+    "tipo_programa": "Técnico",
+    "guia_numero": "1",
+    "guia_nombre": "The Workshop Specialist",
+    "cefr": "A1.1",
+    "intensidad_horas": 60,
+    "rap_code": "220501096",
+    "gfpi_ref": "GFPI-F-134"
+  },
+  "instruments": [
+    {
+      "instrument_id": "INST-1",
+      "evidence_number": 1,
+      "title": "Lista de Chequeo No 1 — Comprensión de Lectura",
+      "skill": "Reading",
+      "session": 2,
+      "tipo_evidencia": "Desempeño",
+      "technique": "Cuestionario — selección múltiple con única respuesta",
+      "total_points": 5,
+      "administered": "Individual — sin texto — sin Word Wall — silencio total",
+      "gfpi_tag": "3.3-APROPIACION-READING",
+      "student_header": {
+        "fields": [
+          "Nombre:",
+          "Fecha:",
+          "Ficha:",
+          "Instructor:"
+        ]
+      },
+      "instructions_student": "Read each question carefully. Circle the letter of the best answer. If the question says True or False, circle the correct word. You may NOT use the article, the Word Wall, or any notes. Time: 15 minutes.",
+      "instructions_es": "Lee cada pregunta con atención. Encierra en círculo la letra de la mejor respuesta. Si la pregunta dice Verdadero o Falso, encierra la respuesta correcta. NO puedes usar el artículo, el Word Wall ni notas. Tiempo: 15 minutos.",
+      "questions": [
+        {
+          "n": 1,
+          "q": "What is the main topic of the article?",
+          "options": {
+            "a": "Workshop safety rules",
+            "b": "Essential tools for diesel technicians",
+            "c": "How to clean a workshop"
+          },
+          "correct": "b",
+          "points": 1,
+          "bloom": "L1 Remember"
+        },
+        {
+          "n": 2,
+          "q": "A torque wrench is used to ___.",
+          "options": {
+            "a": "lift vehicles",
+            "b": "measure oil levels",
+            "c": "apply the correct force to a bolt"
+          },
+          "correct": "c",
+          "points": 1,
+          "bloom": "L2 Understand"
+        },
+        {
+          "n": 3,
+          "q": "Complete the sentence: 'The ratchet is fast in ___ spaces.'",
+          "options": {
+            "a": "large",
+            "b": "tight",
+            "c": "open"
+          },
+          "correct": "b",
+          "points": 1,
+          "bloom": "L1 Remember"
+        },
+        {
+          "n": 4,
+          "q": "What does calibration ensure?",
+          "options": {
+            "a": "The tool is clean",
+            "b": "The tool is new",
+            "c": "The tool is accurate"
+          },
+          "correct": "c",
+          "points": 1,
+          "bloom": "L2 Understand"
+        },
+        {
+          "n": 5,
+          "q": "True or False: A good technician never cleans the workbench.",
+          "options": {
+            "TRUE": "TRUE",
+            "FALSE": "FALSE"
+          },
+          "correct": "FALSE",
+          "points": 1,
+          "bloom": "L1 Remember"
+        }
+      ],
+      "answer_key": {
+        "1": "b",
+        "2": "c",
+        "3": "b",
+        "4": "c",
+        "5": "FALSE"
+      },
+      "scoring": "1 point per correct answer. Total: 5 points. No partial credit.",
+      "contributes_to_cuestionario": true,
+      "cuestionario_skill": "Reading",
+      "cuestionario_points": 5
+    },
+    {
+      "instrument_id": "INST-2",
+      "evidence_number": 2,
+      "title": "Lista de Verificación No 2 — Producto Escrito: Daily Inspection Checklist + Work Order",
+      "skill": "Writing",
+      "session": 3,
+      "tipo_evidencia": "Producto",
+      "technique": "Verificación de producto — pares + instructor",
+      "total_points": 5,
+      "administered": "Individual (producción) — Peer Review + Instructor verificación final. Word Wall y tablero VISIBLES (producto, no prueba de memoria).",
+      "scenario": "The Diesel Workshop — Bay 2 — Monday 7:00 AM — preparación para el primer camión diesel del día",
+      "deliverables": [
+        "Daily Inspection Checklist (mínimo 8 ítems)",
+        "Work Order header (mínimo 6 campos)"
+      ],
+      "gfpi_tag": "3.3-APROPIACION-WRITING",
+      "student_header": {
+        "fields": [
+          "Nombre:",
+          "Fecha:",
+          "Ficha:",
+          "Instructor:"
+        ]
+      },
+      "instructions_student": "Complete the Daily Inspection Checklist and Work Order for Bay 2 of The Diesel Workshop. Use English. Use the Word Wall and the board. Minimum 8 checklist items and 6 Work Order fields. You have 70 minutes.",
+      "instructions_es": "Completa el Daily Inspection Checklist y el Work Order para Bay 2 de The Diesel Workshop. Usa inglés. Puedes usar el Word Wall y el tablero. Mínimo 8 ítems de checklist y 6 campos del Work Order. Tiempo: 70 minutos.",
+      "criteria": [
+        {
+          "n": 1,
+          "criterion": "El checklist tiene mínimo 8 ítems verificados con marca ✓ o ✗",
+          "points": 0.5,
+          "met": null
+        },
+        {
+          "n": 2,
+          "criterion": "Cada ítem usa vocabulario técnico correcto del Toolbelt (20 términos)",
+          "points": 0.5,
+          "met": null
+        },
+        {
+          "n": 3,
+          "criterion": "Hay mínimo 2 observaciones escritas en inglés con oraciones completas",
+          "points": 0.5,
+          "met": null
+        },
+        {
+          "n": 4,
+          "criterion": "El estado general del bay está justificado en inglés (Ready / Not Ready + razón)",
+          "points": 0.5,
+          "met": null
+        },
+        {
+          "n": 5,
+          "criterion": "El Work Order tiene mínimo 6 campos completos (fecha, bay, técnico, descripción, tipo mantenimiento, estado)",
+          "points": 0.5,
+          "met": null
+        },
+        {
+          "n": 6,
+          "criterion": "Usa correctamente There is / There are en al menos 2 observaciones",
+          "points": 0.5,
+          "met": null
+        },
+        {
+          "n": 7,
+          "criterion": "Usa correctamente imperativos en al menos 2 acciones requeridas (Check / Clean / Replace)",
+          "points": 0.5,
+          "met": null
+        },
+        {
+          "n": 8,
+          "criterion": "Usa preposiciones de lugar correctas para ubicar herramientas (on / under / next to / near)",
+          "points": 0.5,
+          "met": null
+        },
+        {
+          "n": 9,
+          "criterion": "Ortografía correcta en los términos del Toolbelt usados",
+          "points": 0.5,
+          "met": null
+        },
+        {
+          "n": 10,
+          "criterion": "El documento es legible, organizado y visualmente completo",
+          "points": 0.5,
+          "met": null
+        }
+      ],
+      "scoring_grid": {
+        "format": "Criterio cumplido = 0.5 pt / No cumplido = 0 pt",
+        "total_possible": 5,
+        "peer_review_note": "Peer reviewer completa primero (✓ / ✗ per criterion). Instructor verifica y puede ajustar. Puntaje final = instructor.",
+        "score_fields": [
+          "Puntaje peer review: ___ / 5",
+          "Puntaje instructor: ___ / 5",
+          "Puntaje final: ___ / 5"
+        ]
+      },
+      "answer_key_note": "Rúbrica abierta — no hay respuesta única. El instructor verifica cumplimiento de criterio, no forma específica.",
+      "contributes_to_cuestionario": true,
+      "cuestionario_skill": "Writing",
+      "cuestionario_points": 5
+    },
+    {
+      "instrument_id": "INST-3",
+      "evidence_number": 3,
+      "title": "Lista de Chequeo No 3 — Comprensión Auditiva",
+      "skill": "Listening",
+      "session": 4,
+      "tipo_evidencia": "Desempeño",
+      "technique": "Cuestionario — selección múltiple con única respuesta",
+      "total_points": 5,
+      "administered": "Individual — sin diálogo impreso — sin Word Wall (cubrir o indicar) — silencio total. Instructor lee el diálogo en voz alta una vez antes del quiz.",
+      "source_dialogue": "Bay 2 Safety Briefing — Carlos Mendoza (Supervisor) / Valentina Cruz (Apprentice)",
+      "gfpi_tag": "3.3-APROPIACION-LISTENING",
+      "student_header": {
+        "fields": [
+          "Nombre:",
+          "Fecha:",
+          "Ficha:",
+          "Instructor:"
+        ]
+      },
+      "instructions_student": "Listen to the dialogue. Then answer the 5 questions. Circle the letter of the best answer. You may NOT use the printed dialogue, the Word Wall, or any notes. Time: 15 minutes.",
+      "instructions_es": "Escucha el diálogo. Luego responde las 5 preguntas. Encierra en círculo la letra de la mejor respuesta. NO puedes usar el diálogo impreso, el Word Wall ni notas. Tiempo: 15 minutos.",
+      "questions": [
+        {
+          "n": 1,
+          "q": "What does Carlos ask Valentina to put on first?",
+          "options": {
+            "a": "A work order",
+            "b": "Gloves and goggles",
+            "c": "A torque wrench"
+          },
+          "correct": "b",
+          "points": 1,
+          "dialogue_line": "Carlos: 'First, put on your PPE. Gloves and goggles.'",
+          "bloom": "L1 Remember"
+        },
+        {
+          "n": 2,
+          "q": "Where is the oil spill?",
+          "options": {
+            "a": "Under the workbench",
+            "b": "On the toolbox",
+            "c": "Near the bay door"
+          },
+          "correct": "c",
+          "points": 1,
+          "dialogue_line": "Carlos: 'Yes. It is near the bay door.'",
+          "bloom": "L1 Remember"
+        },
+        {
+          "n": 3,
+          "q": "Where should the fire extinguisher always be?",
+          "options": {
+            "a": "On the workbench",
+            "b": "In the toolbox",
+            "c": "Next to the bay door"
+          },
+          "correct": "c",
+          "points": 1,
+          "dialogue_line": "Carlos: 'The fire extinguisher is ALWAYS next to the bay door.'",
+          "bloom": "L2 Understand"
+        },
+        {
+          "n": 4,
+          "q": "How does Carlos say to check the floor jack?",
+          "options": {
+            "a": "Look for spills and clean it",
+            "b": "Look for leaks and test the lift",
+            "c": "Put it on the workbench"
+          },
+          "correct": "b",
+          "points": 1,
+          "dialogue_line": "Carlos: 'Check the floor jack. Look for leaks. Test the lift.'",
+          "bloom": "L2 Understand"
+        },
+        {
+          "n": 5,
+          "q": "What does Valentina say at the end of the dialogue?",
+          "options": {
+            "a": "Bay 2 has a problem.",
+            "b": "The floor jack is broken.",
+            "c": "Checklist complete. Bay 2 is ready."
+          },
+          "correct": "c",
+          "points": 1,
+          "dialogue_line": "Valentina: '(checks checklist) Checklist complete. Bay 2 is ready.'",
+          "bloom": "L2 Understand"
+        }
+      ],
+      "answer_key": {
+        "1": "b",
+        "2": "c",
+        "3": "c",
+        "4": "b",
+        "5": "c"
+      },
+      "scoring": "1 point per correct answer. Total: 5 points. No partial credit.",
+      "contributes_to_cuestionario": true,
+      "cuestionario_skill": "Listening",
+      "cuestionario_points": 5
+    },
+    {
+      "instrument_id": "INST-4",
+      "evidence_number": 4,
+      "title": "Escala de Estimación No 4 — Producción Oral: Workshop Readiness Report",
+      "skill": "Speaking",
+      "session": 4,
+      "tipo_evidencia": "Desempeño",
+      "technique": "Observación directa — role-play supervisor (instructor) / technician (aprendiz)",
+      "total_points": 5,
+      "administered": "Individual — Word Wall VISIBLE (desempeño, no prueba de memoria). Instructor como supervisor Carlos. Task: 60–90 segundos. 2 preguntas de seguimiento.",
+      "task": "Workshop Readiness Report individual — Bay asignado por instructor — Monday morning",
+      "gfpi_tag": "3.4-TRANSFERENCIA-SPEAKING",
+      "instructor_header": {
+        "fields": [
+          "Nombre aprendiz:",
+          "Fecha:",
+          "Bay asignado:",
+          "Duración real (seg):",
+          "Instructor:"
+        ]
+      },
+      "instructions_instructor": "Observe the student's Workshop Readiness Report (60-90 sec). Mark each criterion on the scale 1-5 while the student is speaking. Then ask 2 follow-up questions from the question bank. The final score is the average of the 5 criteria. Write one brief comment per criterion.",
+      "scale_reference": {
+        "1": "No logrado — no visible o completamente incorrecto",
+        "2": "En proceso — visible pero con errores significativos",
+        "3": "Básico — visible con errores menores",
+        "4": "Competente — visible y mayormente correcto",
+        "5": "Destacado — visible, correcto y fluido"
+      },
+      "criteria": [
+        {
+          "n": 1,
+          "criterion": "Usa vocabulario técnico del Toolbelt (≥ 8 términos distintos)",
+          "scale": "1–5",
+          "score": null,
+          "comment": "",
+          "evidence_examples": [
+            "wrench, floor jack, goggles, fire extinguisher, workbench, checklist, PPE, torque wrench..."
+          ]
+        },
+        {
+          "n": 2,
+          "criterion": "Describe estado del bay usando There is / There are correctamente",
+          "scale": "1–5",
+          "score": null,
+          "comment": "",
+          "evidence_examples": [
+            "'There is an oil spill near the bay door.'",
+            "'There are three tools on the workbench.'"
+          ]
+        },
+        {
+          "n": 3,
+          "criterion": "Ubica herramientas con preposiciones de lugar correctas (on / under / next to / near)",
+          "scale": "1–5",
+          "score": null,
+          "comment": "",
+          "evidence_examples": [
+            "'The wrench is on the workbench.'",
+            "'The floor jack is under the vehicle.'"
+          ]
+        },
+        {
+          "n": 4,
+          "criterion": "Pronunciación comprensible de los 5 términos técnicos target",
+          "scale": "1–5",
+          "score": null,
+          "comment": "",
+          "target_terms": [
+            "fire extinguisher",
+            "preventive maintenance",
+            "calibration",
+            "torque wrench",
+            "floor jack"
+          ]
+        },
+        {
+          "n": 5,
+          "criterion": "Responde las 2 preguntas del supervisor sin leer el Stock Card",
+          "scale": "1–5",
+          "score": null,
+          "comment": "",
+          "note": "Score 1 if student reads answer. Score 3 if student answers haltingly without reading. Score 5 if answer is spontaneous and complete."
+        }
+      ],
+      "follow_up_question_bank": [
+        "Where is the torque wrench?",
+        "Is the floor clean?",
+        "How many tools are on the workbench?",
+        "Where is the fire extinguisher?",
+        "Is the checklist complete?",
+        "What PPE is ready?",
+        "Is the floor jack OK?"
+      ],
+      "scoring": {
+        "method": "Suma de 5 criterios (1–5 cada uno) ÷ 5 = puntaje holístico 1–5. O suma directa / 5 = puntaje sobre 5.",
+        "total_possible": 5,
+        "score_fields": [
+          "Suma criterios: ___ / 25",
+          "Puntaje final (÷5): ___ / 5"
+        ]
+      },
+      "contributes_to_cuestionario": false,
+      "note": "Evidence 4 contribuye a la calificación de la guía pero NO a los 25 ítems del Cuestionario Consolidado S6."
+    },
+    {
+      "instrument_id": "INST-5",
+      "evidence_number": 5,
+      "title": "Escala de Estimación No 5 — Simulación Integrada: 5 Funciones Comunicativas",
+      "skill": "Language Functions",
+      "session": 5,
+      "tipo_evidencia": "Desempeño",
+      "technique": "Observación directa + evaluación entre pares",
+      "total_points": 5,
+      "administered": "Grupos de 3 (Carlos/Valentina/Santiago) — 3–4 minutos por grupo — Word Wall VISIBLE — sin notas durante la performance. Evaluación dual: instructor (forma completa) + par observador (forma simplificada — checkmark por función visible).",
+      "task": "Workshop Opening Simulation — Monday morning — Bay asignado — las 5 funciones comunicativas integradas",
+      "gfpi_tag": "3.3-APROPIACION-LANGUAGE-FUNCTIONS",
+      "instructor_header": {
+        "fields": [
+          "Equipo (nombres):",
+          "Roles (Carlos / Valentina / Santiago):",
+          "Bay:",
+          "Fecha:",
+          "Duración real (min):",
+          "Instructor:"
+        ]
+      },
+      "instructions_instructor": "Observe the team's full simulation (3-4 min). Mark each criterion on the scale 1-5 in real time. Criterion 1 requires ALL 5 functions to be observed — mark the lowest-quality function as the score. Write one example sentence heard for each criterion. Score = average of 5 criteria.",
+      "scale_reference": {
+        "1": "Función no visible o completamente incorrecta",
+        "2": "Función visible pero con errores significativos",
+        "3": "Función visible con errores menores",
+        "4": "Función visible y mayormente correcta",
+        "5": "Función visible, correcta y fluida"
+      },
+      "criteria": [
+        {
+          "n": 1,
+          "function": "F1",
+          "criterion": "Da instrucciones claras usando imperativos (F1 — Dar instrucciones)",
+          "scale": "1–5",
+          "score": null,
+          "example_heard": "",
+          "minimum": "2 instancias de imperativo — principalmente rol Carlos"
+        },
+        {
+          "n": 2,
+          "function": "F2",
+          "criterion": "Solicita herramientas o ayuda con fórmulas correctas (F2 — Solicitar)",
+          "scale": "1–5",
+          "score": null,
+          "example_heard": "",
+          "minimum": "1 instancia — principalmente Valentina o Santiago"
+        },
+        {
+          "n": 3,
+          "function": "F3",
+          "criterion": "Describe condiciones del bay con There is/are + preposición (F3 — Describir)",
+          "scale": "1–5",
+          "score": null,
+          "example_heard": "",
+          "minimum": "2 instancias — cualquier rol"
+        },
+        {
+          "n": 4,
+          "function": "F4",
+          "criterion": "Reporta al supervisor con información completa (F4 — Reportar)",
+          "scale": "1–5",
+          "score": null,
+          "example_heard": "",
+          "minimum": "1 instancia — Valentina o Santiago a Carlos"
+        },
+        {
+          "n": 5,
+          "function": "F5",
+          "criterion": "Confirma comprensión con expresiones apropiadas y variadas (F5 — Confirmar)",
+          "scale": "1–5",
+          "score": null,
+          "example_heard": "",
+          "minimum": "2 instancias — cualquier rol — variedad de expresiones (no solo 'Understood')"
+        }
+      ],
+      "peer_evaluation_form_simplified": {
+        "title": "Peer Observation Sheet — Simplified",
+        "instructions": "Observer: mark ✓ if you heard the function clearly. Write one example sentence you heard.",
+        "items": [
+          {
+            "function": "F1 — Giving instructions",
+            "observed": null,
+            "example": ""
+          },
+          {
+            "function": "F2 — Requesting tools/help",
+            "observed": null,
+            "example": ""
+          },
+          {
+            "function": "F3 — Describing conditions",
+            "observed": null,
+            "example": ""
+          },
+          {
+            "function": "F4 — Reporting to supervisor",
+            "observed": null,
+            "example": ""
+          },
+          {
+            "function": "F5 — Confirming understanding",
+            "observed": null,
+            "example": ""
+          }
+        ],
+        "overall": {
+          "strength": "",
+          "suggestion": ""
+        }
+      },
+      "scoring": {
+        "method": "Suma de 5 criterios (1–5 cada uno) ÷ 5 = puntaje holístico 1–5. Evaluación de pares = formativa (no sumativa).",
+        "total_possible": 5,
+        "score_fields": [
+          "Suma criterios: ___ / 25",
+          "Puntaje final (÷5): ___ / 5"
+        ]
+      },
+      "contributes_to_cuestionario": true,
+      "cuestionario_skill": "Language Functions",
+      "cuestionario_points": 5
+    },
+    {
+      "instrument_id": "INST-6",
+      "evidence_number": "Final",
+      "title": "Escala de Estimación No 6 — Final Mission: The Workshop Morning Briefing",
+      "skill": "Integrative — all skills",
+      "session": 8,
+      "tipo_evidencia": "Desempeño integrador (capstone)",
+      "technique": "Observación directa — Training Coordinator (instructor en rol externo)",
+      "total_points": 5,
+      "administered": "Equipos de 3 — 3–4 minutos — Word Wall VISIBLE — sin notas durante performance. Instructor como Training Coordinator (no interviene). Pregunta de seguimiento sorpresa por equipo.",
+      "task": "Workshop Morning Readiness Briefing — equipo de 3 (Carlos/Valentina/Santiago) — Bay asignado",
+      "gfpi_tag": "3.4-TRANSFERENCIA-INTEGRATIVA",
+      "instructor_header": {
+        "fields": [
+          "Equipo (nombres):",
+          "Roles:",
+          "Bay:",
+          "Fecha:",
+          "Duración real (min:seg):",
+          "Pregunta de seguimiento formulada:",
+          "Respuesta recibida:"
+        ]
+      },
+      "instructions_instructor": "You are the Training Coordinator. Do not intervene during the performance. Mark all 6 criteria in real time. Ask one follow-up question from the bank after the briefing closes. One prompt allowed if team freezes (bay number only). Note in the form if prompt was used.",
+      "scale_reference": {
+        "1": "No logrado",
+        "2": "En proceso",
+        "3": "Básico",
+        "4": "Competente",
+        "5": "Destacado"
+      },
+      "criteria": [
+        {
+          "n": 1,
+          "criterion": "Todas las 5 funciones comunicativas visibles y correctamente usadas (F1–F5)",
+          "scale": "1–5",
+          "score": null,
+          "comment": "",
+          "minimum": "F1 ×2, F2 ×1, F3 ×2, F4 ×1, F5 ×2 — distribuidas entre los 3 roles"
+        },
+        {
+          "n": 2,
+          "criterion": "≥ 15 términos del Toolbelt distribuidos entre los 3 roles (sin repetición)",
+          "scale": "1–5",
+          "score": null,
+          "comment": "",
+          "tally": "Terms counted: ___"
+        },
+        {
+          "n": 3,
+          "criterion": "Interacción genuina de equipo: ≥ 3 intercambios directos entre miembros (no 3 monólogos)",
+          "scale": "1–5",
+          "score": null,
+          "comment": "",
+          "exchanges_counted": null
+        },
+        {
+          "n": 4,
+          "criterion": "Corrección gramatical: There is/are + preposiciones de lugar + imperativos presentes y correctos",
+          "scale": "1–5",
+          "score": null,
+          "comment": ""
+        },
+        {
+          "n": 5,
+          "criterion": "Pronunciación comprensible de los 5 términos target",
+          "scale": "1–5",
+          "score": null,
+          "comment": "",
+          "target_terms": [
+            "fire extinguisher",
+            "preventive maintenance",
+            "calibration",
+            "torque wrench",
+            "floor jack"
+          ]
+        },
+        {
+          "n": 6,
+          "criterion": "Cumplimiento de tarea: duración 3–4 min, bay identificado, briefing cerrado limpiamente",
+          "scale": "1–5",
+          "score": null,
+          "comment": "",
+          "timing_note": "Under 3 min or over 4 min = deduct from this criterion. Prompt used = max 3 on this criterion."
+        }
+      ],
+      "follow_up_question_bank": [
+        "Where is the ratchet right now?",
+        "Is the checklist complete?",
+        "What type of maintenance does this vehicle need?",
+        "Is there any hazard I should know about?",
+        "How many tools are in the toolbox?",
+        "Is the floor jack calibrated?"
+      ],
+      "scoring": {
+        "method": "Suma de 6 criterios (1–5 cada uno) ÷ 6 = puntaje holístico 1–5.",
+        "total_possible": 5,
+        "score_fields": [
+          "Suma criterios: ___ / 30",
+          "Puntaje final (÷6): ___ / 5"
+        ],
+        "feedback_fields": [
+          "Fortaleza observada:",
+          "Aspecto a fortalecer:",
+          "Nota para próxima guía:"
+        ]
+      },
+      "contributes_to_cuestionario": false,
+      "note": "Escala No 6 es desempeño integrativo capstone. Contribuye a la calificación final de la guía per GFPI-F-134 pero no es Evidencia numerada. Devolver con puntaje y comentarios escritos."
+    }
+  ],
+  "instruments_summary": {
+    "total_instruments": 6,
+    "total_formal_evidence_points": 30,
+    "breakdown": [
+      {
+        "instrument": "No 1",
+        "evidence": "E1",
+        "skill": "Reading",
+        "type": "Lista de chequeo",
+        "pts": 5
+      },
+      {
+        "instrument": "No 2",
+        "evidence": "E2",
+        "skill": "Writing",
+        "type": "Lista de verificación",
+        "pts": 5
+      },
+      {
+        "instrument": "No 3",
+        "evidence": "E3",
+        "skill": "Listening",
+        "type": "Lista de chequeo",
+        "pts": 5
+      },
+      {
+        "instrument": "No 4",
+        "evidence": "E4",
+        "skill": "Speaking",
+        "type": "Escala de estimación",
+        "pts": 5
+      },
+      {
+        "instrument": "No 5",
+        "evidence": "E5",
+        "skill": "Language Functions",
+        "type": "Escala de estimación",
+        "pts": 5
+      },
+      {
+        "instrument": "No 6",
+        "evidence": "Final Mission",
+        "skill": "Integrative",
+        "type": "Escala de estimación",
+        "pts": 5
+      }
+    ],
+    "cuestionario_s6_separate": "Cuestionario Consolidado No 6 (25 ítems, 25 pts) — ver PM-4.2"
+  }
+}

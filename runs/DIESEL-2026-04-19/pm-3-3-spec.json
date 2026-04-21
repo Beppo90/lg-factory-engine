@@ -1,0 +1,1051 @@
+{
+  "_meta": {
+    "schema_version": "deck-spec-v2.0",
+    "generated_at": "2026-04-19",
+    "run_id": "DIESEL-2026-04-19",
+    "model": "claude-sonnet-4-6",
+    "status": "pending_review",
+    "guide": "Guía 1 — The Workshop Specialist",
+    "program": "Mantenimiento de Motores Diesel",
+    "cefr": "A1.1",
+    "total_slides": 45,
+    "platform_note": "Spec is platform-agnostic — compatible with Canva and PowerPoint. Layout types map to standard slide layouts in both tools."
+  },
+
+  "design_system": {
+    "colors": {
+      "navy": "#1C2B3C",
+      "orange": "#F59316",
+      "white": "#FFFFFF",
+      "light_gray": "#F2F2F2",
+      "dark_gray": "#4A4A4A",
+      "alert_red": "#C0392B"
+    },
+    "fonts": {
+      "heading": "Arial Bold",
+      "body": "Calibri",
+      "mono": "Courier New (code/formula boxes only)"
+    },
+    "font_sizes": {
+      "slide_title": "32–40pt",
+      "heading_2": "28pt",
+      "body": "20–22pt",
+      "caption": "16pt",
+      "minimum_readable": "20pt (legible from back of classroom)"
+    },
+    "logo": {
+      "position": "bottom-right corner — all slides",
+      "size": "small — max 8% of slide width",
+      "file": "SENA official logo (white version on dark backgrounds, color version on light backgrounds)"
+    },
+    "accessibility": {
+      "min_contrast_ratio": "4.5:1 (WCAG AA)",
+      "max_text_lines_per_slide": 7,
+      "image_alt_text": "required for all images"
+    },
+    "master_layouts": {
+      "cover": "Full navy background. Title white 40pt. Subtitle orange 28pt. Background image with 40% dark overlay. Logo bottom-right.",
+      "session_title": "Full navy background. Session number orange 64pt top-left. Title white 36pt. 3–4 bullet points orange 22pt. Logo bottom-right.",
+      "content": "White background. Navy title bar top (title white 28pt). Content area: Calibri 20pt dark gray. Orange for task instructions / highlight boxes. Logo bottom-right.",
+      "minimal": "White background. Navy title 28pt centered. Content centered, max 3 lines. Used for all formal evidence sessions — no visual distractors. Logo bottom-right."
+    },
+    "canva_setup": {
+      "dimensions": "1920×1080px (16:9)",
+      "brand_kit": "Name: SENA-FPI. Primary: #1C2B3C. Accent: #F59316.",
+      "template_approach": "Create 4 master templates matching the 4 layouts above. All slides derive from one of the 4 masters."
+    },
+    "powerpoint_setup": {
+      "dimensions": "33.87cm × 19.05cm (Widescreen 16:9)",
+      "slide_master": "Create 4 slide master layouts matching the 4 layout types above.",
+      "theme_colors": "Custom theme: Navy #1C2B3C, Orange #F59316, White #FFFFFF, Light Gray #F2F2F2"
+    }
+  },
+
+  "design_rules": [
+    "1 deck per guide — all 8 sessions in one file, navigated by the instructor",
+    "Max 7 lines of text per slide — split into two slides if needed",
+    "Formal evidence slides (E1–E6): MINIMAL layout only — no vocabulary visible, no distractors",
+    "Listening slides: ONLY a guiding question + headphones icon — NO script text",
+    "Session title slides: full navy background, session number large orange top-left",
+    "Word Wall slide: category table with color-coded headers — orange for Safety category",
+    "Communication Map slide: F1–F5 table — fixed, reusable across S4 and S5",
+    "Task instructions always marked with ► arrow in orange",
+    "Time + grouping always shown at bottom of activity slides",
+    "Slides support the instructor — they are NOT the lesson. The lesson is in the Learning Guide."
+  ],
+
+  "slides": [
+
+    {
+      "slide": 1,
+      "session": 0,
+      "momento": "PORTADA",
+      "type": "cover",
+      "block": null,
+      "title": "The Workshop Specialist",
+      "content": [
+        "Mantenimiento de Motores Diesel",
+        "Guía de Aprendizaje No 1 — CEFR A1.1",
+        "RAP 220501096 — Comunicar información técnica en inglés",
+        "SENA · Programa Técnico"
+      ],
+      "layout": "cover",
+      "image": "Full-bleed background: diesel workshop with mechanic in PPE inspecting a service bay. Dark overlay 40%.",
+      "design_notes": "Full navy background with background image at 40% opacity. Title white Arial Bold 40pt. Subtitle orange 28pt. Program name white Calibri 22pt. Logo SENA bottom-right.",
+      "speaker_notes": "Project while learners enter the room on Session 1. No introduction needed — image speaks."
+    },
+
+    {
+      "slide": 2,
+      "session": 0,
+      "momento": "PANORAMA",
+      "type": "overview",
+      "block": null,
+      "title": "Our Journey — 8 Sessions",
+      "content": [
+        "S1  The Wake-Up Call         →  Reflexión Inicial",
+        "S2  Read the Workshop        →  Contextualización     ● E1 Reading",
+        "S3  Write It Right           →  Apropiación           ● E2 Writing",
+        "S4  Tuning In & Speaking Up  →  Apropiación           ● E3 Listening + E4 Speaking",
+        "S5  The Workshop in Action   →  Apropiación           ● E5 Language Functions",
+        "S6  Prove What You Know      →  Apropiación           ● E6 Cuestionario (25 pts)",
+        "S7–S8  The Final Mission     →  Transferencia"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "2-column table layout. Left: session title. Right: phase + evidence dot (orange ●). Evidence sessions highlighted with orange dot. Body Calibri 20pt. Header row navy. Return to this slide at the start of each new session and point to 'We are here'.",
+      "speaker_notes": "Show at course start AND at start of each session. Instructor points: 'Today we are here.' Return to this overview at the end of each session to show progress."
+    },
+
+    {
+      "slide": 3,
+      "session": 1,
+      "momento": "APERTURA",
+      "type": "session_title",
+      "block": null,
+      "title": "Session 1: The Wake-Up Call",
+      "content": [
+        "Fase SENA: Reflexión Inicial",
+        "Focus: Activar conocimiento previo del taller diesel",
+        "Estrategia: Estudio de casos + KWL + Diagnóstico",
+        "Habilidades: Speaking · Listening · Vocabulary",
+        "Duración: 6 horas"
+      ],
+      "layout": "session_title",
+      "image": "Optional: aerial view of diesel workshop.",
+      "design_notes": "Full navy. S1 orange 64pt top-left. Title white Arial Bold 36pt. Bullets orange Calibri 22pt.",
+      "speaker_notes": "Project at start of S1. Read objective aloud. Then move to slide 4."
+    },
+
+    {
+      "slide": 4,
+      "session": 1,
+      "momento": "SET-UP",
+      "type": "set_up",
+      "block": null,
+      "title": "SET-UP — Welcome to the Workshop",
+      "content": [
+        "\"Look around. Think about a diesel workshop.\"",
+        "\"What do you see? What do you hear? What do you smell?\"",
+        "\"What is the most dangerous thing in a diesel workshop?\"",
+        "► Think: 1 minute alone. Then share with the group.",
+        "Time: 20 min | Whole group"
+      ],
+      "layout": "content",
+      "image": "Small image: diesel workshop interior, clean and organized.",
+      "design_notes": "White background. Navy title. Teacher Talk in italic. Task instruction (►) in orange box. Time + grouping in gray bottom caption.",
+      "speaker_notes": "Instructor reads Teacher Talk aloud. No correction. Goal: lower affective filter. Accept L1 responses at this stage."
+    },
+
+    {
+      "slide": 5,
+      "session": 1,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "A",
+      "title": "[A] The Headline — Safety Awareness",
+      "content": [
+        "📰 \"Three mechanics hospitalized after workshop fire\"",
+        "\"— investigators blame poor PPE compliance\"",
+        "► Read the headline. In your group — discuss:",
+        "   (1) What happened?  (2) Why?  (3) What is PPE?",
+        "   (4) What should they do next?",
+        "► Write your answers on post-its. Post on the Safety Wall.",
+        "Time: 50 min | Groups of 3–4 → Safety Wall → Plenary"
+      ],
+      "layout": "content",
+      "image": "Small: newspaper/alert icon. Or: workshop fire safety image.",
+      "design_notes": "Headline text in large italic navy, visual newspaper frame. Questions numbered clearly. Task instruction (►) in orange. Safety Wall reminder in caption.",
+      "speaker_notes": "Read headline aloud with learners. Do NOT explain PPE yet — let them discover. Collect post-its and display them on the wall. Use them as vocabulary anchors."
+    },
+
+    {
+      "slide": 6,
+      "session": 1,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "B",
+      "title": "[B] Meet the Team — The Diesel Workshop",
+      "content": [
+        "Carlos Mendoza — Lead Technician",
+        "Valentina Cruz — Safety Officer",
+        "Santiago Ríos — Apprentice Technician",
+        "► Look at the three characters. What do they do?",
+        "► Which character are you most similar to?",
+        "Time: 40 min | Pairs → Plenary"
+      ],
+      "layout": "content",
+      "image": "Three character cards side by side: placeholder portrait + name + role label. Navy name, orange role.",
+      "design_notes": "Three equally-sized character cards. Each: placeholder portrait silhouette + name in navy bold + role in orange italic. Clean white background. Characters recur throughout all sessions.",
+      "speaker_notes": "These three characters appear in every session. Establish them clearly. Ask: 'Who is responsible for safety?' — use as discussion seed."
+    },
+
+    {
+      "slide": 7,
+      "session": 1,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "C",
+      "title": "[C] KWL — What Do You Know?",
+      "content": [
+        "K — What I KNOW about diesel workshop English",
+        "W — What I WANT to learn",
+        "L — What I LEARNED ← Fill in Session 8",
+        "► Individual: Fill columns K and W (5 min)",
+        "► Share: 2 items from your K column with the class",
+        "Time: 50 min | Individual → Pairs → Plenary"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "KWL table: 3 columns, header row navy. K and W columns white. L column light gray with 'Fill in Session 8' watermark text. Keep this slide available throughout S1.",
+      "speaker_notes": "Distribute the KWL worksheet from the Learning Guide. This slide is the model. Column L stays empty — it closes the learning cycle in S8."
+    },
+
+    {
+      "slide": 8,
+      "session": 1,
+      "momento": "WRAP-UP",
+      "type": "wrap_up",
+      "block": null,
+      "title": "WRAP-UP S1 — Gap Card + Preview",
+      "content": [
+        "Gap Card: Rate yourself 1–5 on the 6 I can statements",
+        "Save your Gap Card — you'll need it in Session 8!",
+        "► Exit ticket: One word in English about safety in this workshop",
+        "Preview S2: We read about diesel tools. We build the Word Wall.",
+        "Autonomous work: Study 5 Toolbelt words you don't know yet."
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "White background. Gap Card reminder in orange highlight box. Preview S2 in gray italic. Exit ticket instruction in orange.",
+      "speaker_notes": "Collect Gap Cards from all learners. Store them — redistribute only in S8. One-word exit ticket: instructor writes words on board. Close with energy."
+    },
+
+    {
+      "slide": 9,
+      "session": 2,
+      "momento": "APERTURA",
+      "type": "session_title",
+      "block": null,
+      "title": "Session 2: Read the Workshop",
+      "content": [
+        "Fase SENA: Contextualización",
+        "Focus: Vocabulario técnico (20 términos) + Comprensión lectora",
+        "Estrategia: CLIL + Content-Based Learning + Jigsaw",
+        "Evidencia: E1 — Cuestionario No 1 (Reading · 5 pts)",
+        "Duración: 6 horas"
+      ],
+      "layout": "session_title",
+      "image": null,
+      "design_notes": "Full navy. S2 orange 64pt. Title white 36pt. E1 evidence marker in orange circle.",
+      "speaker_notes": "Return to Overview slide 2 first — point to S2. Then show this title."
+    },
+
+    {
+      "slide": 10,
+      "session": 2,
+      "momento": "SET-UP",
+      "type": "set_up",
+      "block": null,
+      "title": "SET-UP S2 — Workshop Images",
+      "content": [
+        "► Look at these 4 images. What tools do you see?",
+        "► Name as many tools as you can — in English.",
+        "► What category does each tool belong to?",
+        "Preview: Today we read about these tools.",
+        "Time: 20 min | Pairs → Whole group"
+      ],
+      "layout": "split",
+      "image": "4-image grid: (1) hand tools on workbench, (2) floor jack lifting vehicle, (3) PPE equipment, (4) diesel specialist at workbench. Source: Shadow Foam / workshop photography.",
+      "design_notes": "Split layout: left = 2×2 image grid (images from Shadow Foam article or equivalent). Right = task instruction in orange box. Images should show real workshop tools, not illustrations.",
+      "speaker_notes": "This activates prior vocabulary. Do not teach yet — just activate. Collect vocabulary on the board for later comparison with the Word Wall."
+    },
+
+    {
+      "slide": 11,
+      "session": 2,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "A",
+      "title": "[A] The Toolbelt — 20 Words",
+      "content": [
+        "Environment: workshop · service bay · workbench · toolbox",
+        "Tools & Equipment: wrench · ratchet · socket · torque wrench · floor jack",
+        "Safety: PPE · safety goggles · gloves · hazard · spill · fire extinguisher",
+        "Maintenance: preventive maintenance · corrective maintenance",
+        "Documents & Roles: work order · checklist · specialist",
+        "► Which 5 do you already know? Circle them mentally.",
+        "Time: 30 min | Whole group → Word Wall build"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "5-row category table. Row headers navy bold left column. Terms Calibri 20pt right column. Safety row: light orange background highlight. Keep this slide visible during Word Wall construction.",
+      "speaker_notes": "Do NOT read list aloud — learners read it. Instructor marks stress on board for each new term. The physical Word Wall cards go on the classroom wall as this slide is shown."
+    },
+
+    {
+      "slide": 12,
+      "session": 2,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "B",
+      "title": "[B] Flashcard Battle — Pronunciation Drill",
+      "content": [
+        "Partner A: show image → Partner B: say term + pronounce + use in a sentence",
+        "► Stress marks — say with me:",
+        "   WORK-shop · FLOOR JACK · SAFE-ty GOG-gles",
+        "   FIRE ex-TING-guish-er · SPE-cial-ist",
+        "► Flashcard battle: most correct cards in 5 minutes — wins!",
+        "Time: 40 min | Pairs"
+      ],
+      "layout": "content",
+      "image": "Small: flashcard icon or two learners with cards.",
+      "design_notes": "Stress marks in orange bold for each term. Rules of flashcard battle in numbered list. Timer suggestion in caption. Clean white background.",
+      "speaker_notes": "Model the drill first with a volunteer. Instructor choral drills the 5 hardest terms before pairs start: fire extinguisher backchaining: -guisher → extinguisher → fire extinguisher."
+    },
+
+    {
+      "slide": 13,
+      "session": 2,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "C",
+      "title": "[C] Jigsaw Reading — Section Assignment",
+      "content": [
+        "Section A: The Workshop (workshop, service bay, workbench, toolbox)",
+        "Section B: Hand Tools (wrench, ratchet, socket, torque wrench)",
+        "Section C: Safety Tools (floor jack, PPE, goggles, gloves)",
+        "Section D: The Specialist (specialist, maintenance, work order, checklist)",
+        "► Read YOUR section. Find: 3 Toolbelt terms + 1 There is/are sentence.",
+        "► Then: teach your section to your expert group.",
+        "Time: 80 min | Individual reading → Expert groups → Home groups"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "4-row section table. Section letter in orange circle. Section title navy bold. Key terms in gray italic. Task instruction in orange box below table. Steps numbered.",
+      "speaker_notes": "Assign sections clearly: rows 1-2 = A, rows 3-4 = B, rows 5-6 = C, rows 7-8 = D. After individual reading: form expert groups (all A's together, etc.). Then home groups."
+    },
+
+    {
+      "slide": 14,
+      "session": 2,
+      "momento": "WHILE",
+      "type": "minimal",
+      "block": "D",
+      "title": "Cuestionario No 1 — Reading Comprehension",
+      "content": [
+        "EVIDENCIA No 1 — Conocimiento",
+        "5 questions · 15 minutes · No text · No notes",
+        "► Wait for the instructor's signal to begin."
+      ],
+      "layout": "minimal",
+      "image": null,
+      "design_notes": "MINIMAL layout. White background. Title navy centered 28pt. Evidence label in orange box. Instructions Calibri 22pt centered. Nothing else on this slide — no vocabulary, no images.",
+      "speaker_notes": "Collect all texts and notes before distributing the quiz. Do NOT give oral feedback before collecting. 15 minutes strict."
+    },
+
+    {
+      "slide": 15,
+      "session": 2,
+      "momento": "WRAP-UP",
+      "type": "wrap_up",
+      "block": null,
+      "title": "WRAP-UP S2 — Word Wall Lives Here",
+      "content": [
+        "Word Wall: 20 terms — visible in this classroom for ALL sessions",
+        "Exit ticket: Write one sentence using There is/are + a Toolbelt term",
+        "Preview S3: We write a Daily Inspection Checklist in English.",
+        "Autonomous work: Self-test all 20 flashcards (2 rounds) + Preview grammar"
+      ],
+      "layout": "content",
+      "image": "Small: Word Wall photo example (physical cards on classroom wall).",
+      "design_notes": "Word Wall reminder in orange highlight. Exit ticket instruction in navy box. Preview S3 in gray italic caption.",
+      "speaker_notes": "The Word Wall stays on the classroom wall for the rest of the course. Exit ticket: collect 2–3 sentences from volunteers. Write them on board — celebrate."
+    },
+
+    {
+      "slide": 16,
+      "session": 3,
+      "momento": "APERTURA",
+      "type": "session_title",
+      "block": null,
+      "title": "Session 3: Write It Right",
+      "content": [
+        "Fase SENA: Apropiación",
+        "Focus: Gramática técnica + Escritura de documentos del taller",
+        "Estrategia: Grammar Discovery + Task-Based Learning",
+        "Evidencia: E2 — Daily Inspection Checklist (Producto · 5 pts)",
+        "Duración: 6 horas"
+      ],
+      "layout": "session_title",
+      "image": null,
+      "design_notes": "Full navy. S3 orange 64pt. E2 evidence marker in orange circle.",
+      "speaker_notes": "Return to Overview slide 2 — point to S3. Then show this."
+    },
+
+    {
+      "slide": 17,
+      "session": 3,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "A",
+      "title": "[A] Grammar Discovery — Notice First",
+      "content": [
+        "From the reading text — find and write:",
+        "► 2 sentences with There IS: ________________",
+        "► 2 sentences with There ARE: ________________",
+        "► 2 imperative sentences: ________________",
+        "► 2 prepositions of place: ________________",
+        "What is the rule? Discuss with a partner — BEFORE the Formula Box.",
+        "Time: 30 min | Individual → Pairs"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "Clean white. Four discovery tasks with orange ► arrows. Writing lines as thin gray lines. Emphasis: 'BEFORE the Formula Box' in orange bold — Discovery First principle.",
+      "speaker_notes": "Learners must attempt to induce the rule BEFORE seeing the Formula Box. Do not show slide 18 until all groups have written their proposed rule."
+    },
+
+    {
+      "slide": 18,
+      "session": 3,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "B",
+      "title": "[B] Formula Box — Grammar A1.1",
+      "content": [
+        "IMPERATIVE: Check the floor jack. / Don't leave tools on the floor.",
+        "THERE IS (singular): There IS a spill near the bay door.",
+        "THERE ARE (plural): There ARE three tools on the floor.",
+        "PREPOSITIONS: in · on · next to · near · under",
+        "⚠️ Never add a subject: ~~You check~~ ❌ → Check ✅",
+        "⚠️ IS = one thing · ARE = more than one thing",
+        "Time: 30 min | Whole group — confirm your discovery"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "Formula box layout: each grammar structure in a separate navy-bordered box. Correct form in orange. Incorrect form with strikethrough in red. Warning signs (⚠️) in orange. Calibri 20pt.",
+      "speaker_notes": "Show ONLY after learners have written their proposed rules. Compare their rules to the Formula Box. Celebrate correct inferences. Correct gently with recast."
+    },
+
+    {
+      "slide": 19,
+      "session": 3,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "C",
+      "title": "[C] Error Log — Fix the 10 Errors",
+      "content": [
+        "► Each sentence may have ONE error (or no error).",
+        "► Identify: G (Grammar) · V (Vocabulary) · WO (Word Order) · Sp (Spelling)",
+        "► Write the correct version.",
+        "Example: 'You check the floor jack.' → G → 'Check the floor jack.'",
+        "Individual: 10 min → Check with partner → Discuss",
+        "Time: 40 min | Individual → Pairs"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "Error code legend in a navy sidebar: G / V / WO / Sp with brief definition. Example correction shown in orange. Clean white. Task instructions numbered.",
+      "speaker_notes": "Do NOT show the answer key slide. After pair discussion, call on pairs for answers. Build the key on the board collaboratively — more effective than reading from a slide."
+    },
+
+    {
+      "slide": 20,
+      "session": 3,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "D",
+      "title": "[D] Daily Inspection Checklist — Write It",
+      "content": [
+        "Bay assigned: Bay ___ · Language: 100% English",
+        "Minimum 8 items with status (✓ / ✗ / N/A)",
+        "Minimum 2 observations: use There is/are + preposition",
+        "For any ✗ item: write a Required Action (use imperative verb)",
+        "Declare overall bay status: READY or NOT READY + reason",
+        "Complete the Work Order header: 6 fields minimum",
+        "Time: 70 min | Individual · Peer review with Lista No 2"
+      ],
+      "layout": "content",
+      "image": "Small: blank Daily Inspection Checklist template thumbnail.",
+      "design_notes": "Requirements in numbered checklist format. Key requirements (minimum items, language rule) in orange boxes. Status icons (✓/✗/N/A) shown as examples. Word Wall reminder caption.",
+      "speaker_notes": "Learners use the template from their Learning Guide. Circulate and mark errors in pencil using G/V/Sp/WO codes — do NOT correct aloud. Peer review follows."
+    },
+
+    {
+      "slide": 21,
+      "session": 3,
+      "momento": "WRAP-UP",
+      "type": "minimal",
+      "block": null,
+      "title": "Evidencia No 2 — Daily Inspection Checklist",
+      "content": [
+        "EVIDENCIA No 2 — Producto",
+        "Collect: Checklist + Work Order header + Lista de Verificación No 2",
+        "► Submit as a package — all three documents together."
+      ],
+      "layout": "minimal",
+      "image": null,
+      "design_notes": "MINIMAL layout. White. Collection instruction in orange box. Deliverable list in navy. Nothing else.",
+      "speaker_notes": "Collect THREE documents as one package: student's checklist + student's Work Order + peer's Lista de Verificación No 2. Do not give oral feedback on scores yet."
+    },
+
+    {
+      "slide": 22,
+      "session": 4,
+      "momento": "APERTURA",
+      "type": "session_title",
+      "block": null,
+      "title": "Session 4: Tuning In & Speaking Up",
+      "content": [
+        "Fase SENA: Apropiación",
+        "Focus: Comprensión auditiva + Reporte oral al supervisor",
+        "Estrategia: Phase-Based Listening + TBLT + Role Play",
+        "Evidencias: E3 — Cuestionario No 3 (Listening) · E4 — Oral Report (Speaking)",
+        "Duración: 6 horas"
+      ],
+      "layout": "session_title",
+      "image": null,
+      "design_notes": "Full navy. S4 orange 64pt. Two evidence markers E3 + E4 in orange circles.",
+      "speaker_notes": "Two evidences in one session. Signal this clearly at the start."
+    },
+
+    {
+      "slide": 23,
+      "session": 4,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "A",
+      "title": "[A] Pre-Listening — Key Vocabulary",
+      "content": [
+        "Practise these 5 words BEFORE listening:",
+        "SPILL — liquid on the floor",
+        "HAZ-ard — a danger",
+        "ob-STRUC-tions — things blocking the path",
+        "LEAK — liquid coming out of the machine",
+        "BAY DOOR — the entrance to the service bay",
+        "► Listen for these words. They are in the dialogue.",
+        "Time: 20 min | Choral drill → Image match"
+      ],
+      "layout": "content",
+      "image": "Small icons for each word: spill puddle, hazard triangle, blocked path, dripping pipe, bay door.",
+      "design_notes": "5-word pre-teaching table: word / stress marks / visual icon / brief definition. Stress syllables in orange. Icons right-aligned. Keep visible during first listening.",
+      "speaker_notes": "Choral drill each word 3 times with stress gesture (hand up on stressed syllable). Then: finger drill for 'fire extinguisher' — backchaining."
+    },
+
+    {
+      "slide": 24,
+      "session": 4,
+      "momento": "WHILE",
+      "type": "minimal",
+      "block": "B",
+      "title": "🎧 Bay 2 Safety Briefing — Listen",
+      "content": [
+        "Listen TWO times.",
+        "First: general situation — Who? What?",
+        "Second: specific details — Where? What condition?"
+      ],
+      "layout": "minimal",
+      "image": "Large headphones icon centered. Or: Bay 2 image projected as visual support during listening.",
+      "design_notes": "MINIMAL layout. White background. Large headphones icon (or Bay 2 image) — no text distractors. ONLY the two listening instructions. Nothing else. NO vocabulary visible.",
+      "speaker_notes": "Project Bay 2 image during second listening as visual scaffold. Do NOT show any script. Do NOT show vocabulary during listening. Play audio at 0.85x speed."
+    },
+
+    {
+      "slide": 25,
+      "session": 4,
+      "momento": "WHILE",
+      "type": "minimal",
+      "block": "C",
+      "title": "Cuestionario No 3 — Listening Comprehension",
+      "content": [
+        "EVIDENCIA No 3 — Conocimiento",
+        "5 questions · 15 minutes · No script · No audio replay",
+        "► Wait for the instructor's signal to begin."
+      ],
+      "layout": "minimal",
+      "image": null,
+      "design_notes": "MINIMAL layout. White. Evidence label orange box. No vocabulary, no script extract. Nothing that could help answer the questions.",
+      "speaker_notes": "Distribute Cuestionario No 3 ONLY after both audio plays are complete. Collect quizzes BEFORE distributing the script for the role play. Critical sequence — do not reverse."
+    },
+
+    {
+      "slide": 26,
+      "session": 4,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "C",
+      "title": "[C] Role Play — Bay 2 Safety Briefing",
+      "content": [
+        "Role A: Carlos Mendoza — Lead Technician",
+        "Role B: Valentina Cruz — Safety Officer",
+        "► Read the script with your partner. 2 rounds each.",
+        "Focus on: STRESS · INTONATION · Oral markers (OK, Sure, Good, Right)",
+        "► Round 2: try from memory — use script only as backup",
+        "Time: 40 min | Pairs"
+      ],
+      "layout": "content",
+      "image": "Two character cards: Carlos (left) and Valentina (right).",
+      "design_notes": "Character cards with name + role. Role labels in orange. Script reminder in caption. This slide bridges to Speaking (PM-2.8).",
+      "speaker_notes": "Distribute script ONLY after collecting Cuestionario No 3. Fluency mode — do not interrupt during role play. This activity is a bridge to the oral report."
+    },
+
+    {
+      "slide": 27,
+      "session": 4,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "D",
+      "title": "[D] Workshop Readiness Report — Prepare",
+      "content": [
+        "Structure of your report:",
+        "1. Open (F4): 'Good morning, Carlos. Bay ___ is ready.'",
+        "2. Conditions (F3): 'There is/are ___ [condition]...'",
+        "3. Actions: 'I checked the ___.  I inspected the ___.'",
+        "4. Problem (if any): 'There is a problem with the ___.'",
+        "5. Close (F5): 'Bay ___ is ready. Awaiting your approval.'",
+        "Time: 60 min | Round 1 (Stock Cards) → Round 2 → Round 3 (free)"
+      ],
+      "layout": "content",
+      "image": "Small: Stock Card A thumbnail.",
+      "design_notes": "5-step report structure in numbered list. Each step has function label in orange (F4, F3, F5). Steps are short — max 1 line each. Stock Card reminder in caption.",
+      "speaker_notes": "Round 1: learners read from Stock Cards. Round 2: Sentence Starters only. Round 3: from memory — this is the assessed round. Escala de estimación No 4 used ONLY in Round 3."
+    },
+
+    {
+      "slide": 28,
+      "session": 4,
+      "momento": "WRAP-UP",
+      "type": "minimal",
+      "block": null,
+      "title": "Evidencia No 4 — Workshop Readiness Report",
+      "content": [
+        "EVIDENCIA No 4 — Desempeño",
+        "Round 3 only · 60–90 seconds · No Stock Cards",
+        "► Instructor evaluates with Escala de estimación No 4."
+      ],
+      "layout": "minimal",
+      "image": null,
+      "design_notes": "MINIMAL layout. White. Evidence label orange. Round 3 instruction in navy. Do NOT show assessment criteria on screen.",
+      "speaker_notes": "Evaluate Round 3 only. Fluency mode — no interruptions. Post-task feedback: write 3 anonymous errors + 3 strengths on board after all presentations."
+    },
+
+    {
+      "slide": 29,
+      "session": 5,
+      "momento": "APERTURA",
+      "type": "session_title",
+      "block": null,
+      "title": "Session 5: The Workshop in Action",
+      "content": [
+        "Fase SENA: Apropiación",
+        "Focus: Las 5 funciones comunicativas del taller",
+        "Estrategia: CLIL + Simulación + Aprendizaje colaborativo",
+        "Evidencia: E5 — Simulación de apertura de taller (Desempeño · 5 pts)",
+        "Duración: 6 horas"
+      ],
+      "layout": "session_title",
+      "image": null,
+      "design_notes": "Full navy. S5 orange 64pt. E5 evidence marker orange circle.",
+      "speaker_notes": "Return scores from E4 in writing at the start of S5 (do not announce orally)."
+    },
+
+    {
+      "slide": 30,
+      "session": 5,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "A",
+      "title": "[A] Communication Map — 5 Functions",
+      "content": [
+        "F1 — Giving instructions:  Check / Don't leave / Wear your ___",
+        "F2 — Requesting tools:     Can I have the ___? / I need the ___",
+        "F3 — Describing conditions: There is/are ___ near/next to ___",
+        "F4 — Reporting to supervisor: Bay ___ is ready / There is a problem",
+        "F5 — Confirming understanding: Understood / Got it / Sorry, repeat?",
+        "► You already know these phrases — from S2, S3, S4!",
+        "Time: 30 min | Map review → Classification activity"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "5-row function table. F number in orange circle. Function name navy bold. Example phrase Calibri 20pt italic. Keep this slide as a PERMANENT REFERENCE — return to it during drills and simulation.",
+      "speaker_notes": "This is the unifying slide for the whole course. Every function was introduced earlier — S5 is integration. Ask: 'Where did we use F3 before?' (S2 vocabulary, S3 grammar). Celebrate the connection."
+    },
+
+    {
+      "slide": 31,
+      "session": 5,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "B",
+      "title": "[B] Classify 15 Phrases — Which Function?",
+      "content": [
+        "► Read each phrase. Write the function: F1 / F2 / F3 / F4 / F5",
+        "1. 'Check the fire extinguisher before starting.'",
+        "2. 'Can I have the torque wrench, please?'",
+        "3. 'There is a spill near the bay door.'",
+        "4. 'Bay 2 is ready, Carlos.'",
+        "5. 'Understood. I'll do it now.'",
+        "Individual 5 min → Compare with partner → Discuss disagreements",
+        "Time: 30 min | Individual → Pairs → Plenary"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "5 example phrases shown (one per function) as representative sample. Full 15-phrase activity is in the Learning Guide. Instructions in orange. Calibri 20pt.",
+      "speaker_notes": "Show only 5 representative examples on slide. Full 15-card activity is in the Learning Guide. After pairs: call on disagreements only — don't review all 15 on the slide."
+    },
+
+    {
+      "slide": 32,
+      "session": 5,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "C",
+      "title": "[C] Function Drills — 5 × 8 minutes",
+      "content": [
+        "F1 Drill: Partner gives situation → You give the instruction",
+        "F2 Drill: Partner names a tool → You request it correctly",
+        "F3 Drill: Partner shows bay image → You describe 2 conditions",
+        "F4 Drill: You report bay status to your 'supervisor'",
+        "F5 Drill: Partner gives instruction → You confirm understanding",
+        "► Fluency mode — do not stop to correct. Finish the task.",
+        "Time: 40 min | Pairs, rotating after each drill"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "5-row drill table: function / brief drill description. Timer: 8 min shown in orange. Fluency mode reminder in gray italic caption. Rotation arrow icon.",
+      "speaker_notes": "Timer per drill: 8 minutes. Signal transitions clearly. Do NOT correct during drills — note errors for post-task feedback. After all 5 drills: 5 min anonymous error board."
+    },
+
+    {
+      "slide": 33,
+      "session": 5,
+      "momento": "WHILE",
+      "type": "minimal",
+      "block": "D",
+      "title": "Evidencia No 5 — Workshop Opening Simulation",
+      "content": [
+        "EVIDENCIA No 5 — Desempeño",
+        "3-minute simulation · All 5 functions · Live follow-up question",
+        "► Instructor + peer observer evaluate simultaneously."
+      ],
+      "layout": "minimal",
+      "image": null,
+      "design_notes": "MINIMAL layout. White. Evidence label orange. Dual evaluator reminder (instructor + peer) in navy. No function list visible — learners must recall from memory.",
+      "speaker_notes": "Both instructor and peer observer evaluate simultaneously with Escala de estimación No 5. Do not share scores orally. Written feedback delivered at start of S6. Collective feedback after all simulations: 3 most successful functions + 2 most frequent gaps."
+    },
+
+    {
+      "slide": 34,
+      "session": 5,
+      "momento": "WRAP-UP",
+      "type": "wrap_up",
+      "block": null,
+      "title": "WRAP-UP S5 — Personal Communication Card",
+      "content": [
+        "Personal Communication Card: 2 phrases per function — YOUR phrases",
+        "This card belongs to you — keep it for the Final Mission",
+        "Exit ticket: Share 1 favorite phrase from your card",
+        "Preview S6: Cuestionario Consolidado — 25 questions, 5 skills",
+        "Autonomous work: Practice 5-function simulation — record yourself (60 sec)"
+      ],
+      "layout": "content",
+      "image": "Small: Personal Communication Card template thumbnail.",
+      "design_notes": "Personal Communication Card reminder in orange box. Exit ticket in navy. Preview S6 in gray italic. Autonomy task in caption.",
+      "speaker_notes": "Share-out: each learner says 1 favorite phrase. Write them on the board — creates community. End S5 with energy and confidence."
+    },
+
+    {
+      "slide": 35,
+      "session": 6,
+      "momento": "APERTURA",
+      "type": "session_title",
+      "block": null,
+      "title": "Session 6: Prove What You Know",
+      "content": [
+        "Fase SENA: Apropiación — Evaluación Consolidada",
+        "Focus: Demostrar dominio integrado A1.1",
+        "Evidencia: E6 — Cuestionario Consolidado No 6 (25 pts)",
+        "Sections: Reading · Vocabulary · Grammar · Listening · Language Functions",
+        "Duración: 3 horas (evaluación) + orientación Final Mission"
+      ],
+      "layout": "session_title",
+      "image": null,
+      "design_notes": "Full navy. S6 orange 64pt. E6 evidence marker — prominent. 5 skill sections listed clearly.",
+      "speaker_notes": "Return written feedback from E4 and E5 at the start of S6. Give 10 minutes for learners to read feedback before the quiz."
+    },
+
+    {
+      "slide": 36,
+      "session": 6,
+      "momento": "SET-UP",
+      "type": "set_up",
+      "block": null,
+      "title": "SET-UP S6 — Review Your Results",
+      "content": [
+        "Your E4 and E5 feedback is returned today.",
+        "► Read your feedback: What was your strongest function?",
+        "► What will you focus on in the Cuestionario today?",
+        "Cuestionario Consolidado No 6: 25 items · 5 sections · 90 minutes",
+        "Minimum to pass: 15 / 25 (60%)",
+        "Time: 20 min review + 90 min quiz"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "Pass threshold (15/25) in orange bold. Feedback review instruction in navy. Quiz structure summary in table: Section / Items / Points.",
+      "speaker_notes": "Distribute E4 and E5 written feedback. Give 10 min to read. Then: 5 min recap — 'What are you most confident about today?' Do not review content — this is not a study session."
+    },
+
+    {
+      "slide": 37,
+      "session": 6,
+      "momento": "WHILE",
+      "type": "minimal",
+      "block": "A",
+      "title": "Cuestionario Consolidado No 6",
+      "content": [
+        "EVIDENCIA No 6 — Conocimiento",
+        "25 items · 90 minutes · No dictionary · No notes",
+        "Section 4 (Listening): Wait for instructor's signal — audio plays TWICE."
+      ],
+      "layout": "minimal",
+      "image": null,
+      "design_notes": "MINIMAL layout. White. Evidence label prominent orange. Audio instruction for Listening section in orange alert box. Nothing else. Absolute minimum distractors.",
+      "speaker_notes": "Distribute quizzes only after all feedback has been collected. Listening section: play audio after learners have read Section 4 questions. Play twice: gist first, detail second."
+    },
+
+    {
+      "slide": 38,
+      "session": 6,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "B",
+      "title": "[B] Final Mission — Bay Assignment",
+      "content": [
+        "The Final Mission: 3 sessions (S6b + S7 + S8)",
+        "Group 1 → Bay 1 · Group 2 → Bay 2 · Group 3 → Bay 3",
+        "S6b: Visit your bay. Start your checklist draft.",
+        "S7: Inspect, write final checklist, prepare oral report.",
+        "S8: Deliver oral report to supervisor. 60–90 seconds.",
+        "► Write your bay assignment here: Bay _______",
+        "Time: 30 min orientation"
+      ],
+      "layout": "content",
+      "image": "Small: bay layout diagram with Bay 1/2/3 labeled.",
+      "design_notes": "Bay assignments in large orange text. 3-session timeline as horizontal arrow. Deliverables in numbered list. Write space for bay number.",
+      "speaker_notes": "Announce bay assignments clearly and publicly. Groups go to their bay at the end of this session for a 40-minute reconnaissance visit."
+    },
+
+    {
+      "slide": 39,
+      "session": "6b",
+      "momento": "APERTURA",
+      "type": "session_title",
+      "block": null,
+      "title": "Sessions 6b · 7 · 8: The Final Mission",
+      "content": [
+        "Fase SENA: Transferencia",
+        "S6b: Orientación + Reconocimiento del bay",
+        "S7: Inspección real + Checklist + Preparación oral",
+        "S8: Misión Final oral + KWL cierre + Gap Card S1 vs S8",
+        "Evaluación: TRANSFERENCIA — formativa (no evidencia GFPI adicional)",
+        "Duración: 2.5h + 6h + 6h"
+      ],
+      "layout": "session_title",
+      "image": "Small: real bay image — mechanic inspecting.",
+      "design_notes": "Full navy. '6b·7·8' in orange 48pt top-left. Mission title white 32pt. Three session blocks listed with durations in orange. Formative note in gray italic.",
+      "speaker_notes": "This is the capstone. All 5 functions, all vocabulary, all grammar — used for real. Instructor becomes 'Carlos Mendoza' from this point."
+    },
+
+    {
+      "slide": 40,
+      "session": "6b",
+      "momento": "WHILE",
+      "type": "while",
+      "block": "A",
+      "title": "S6b — Bay Reconnaissance",
+      "content": [
+        "Go to your assigned bay. OBSERVE — don't write yet.",
+        "► What is the condition of the floor?",
+        "► Is the fire extinguisher accessible?",
+        "► Are all tools in the toolbox?",
+        "► Is PPE available: gloves · goggles · hard hat?",
+        "► Take notes in English. Sketch the layout.",
+        "Time: 40 min | Bay groups · Instructor circulates"
+      ],
+      "layout": "content",
+      "image": "Bay layout diagram (blank) for learners to sketch.",
+      "design_notes": "4 observation questions in orange bullet format. Bay layout sketch area suggested in caption. Clear ENGLISH ONLY reminder.",
+      "speaker_notes": "Instructor circulates bay to bay (~12 min each). Coaching mode: speak only English. Ask: 'What is that tool? Where is the fire extinguisher?' Connect to Toolbelt vocabulary."
+    },
+
+    {
+      "slide": 41,
+      "session": 7,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "A",
+      "title": "S7 — Inspection + Checklist + Coaching",
+      "content": [
+        "INSPECT: Walk your bay. Write the final checklist (minimum 8 items).",
+        "WRITE: Clean version — 2 observations in English · Bay status declared",
+        "PREPARE: Oral report outline (5 bullets — NOT a script)",
+        "PRACTISE: Coaching pairs — 2 rounds × 90 seconds each",
+        "REVIEW: Self-evaluate with 10 criteria from Lista No 2",
+        "► Tomorrow is the Final Mission. You are ready.",
+        "Time: 6 hours | Bay inspection + Classroom preparation"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "4 sequential action steps (INSPECT / WRITE / PREPARE / PRACTISE) in navy bold left column. Details in Calibri 20pt right column. Motivational closer in orange italic.",
+      "speaker_notes": "This is a work session. Instructor circulates between bay groups. Error marking in pencil only (G/V/Sp/WO). Coaching pairs: use Escala de estimación No 5 criteria as feedback framework."
+    },
+
+    {
+      "slide": 42,
+      "session": 8,
+      "momento": "WHILE",
+      "type": "minimal",
+      "block": "A",
+      "title": "S8 — The Final Mission",
+      "content": [
+        "60–90 seconds. English only. No script.",
+        "I am Carlos Mendoza. You are Santiago Ríos.",
+        "Bay inspection complete. Report to me. Go."
+      ],
+      "layout": "minimal",
+      "image": "Optional: Carlos Mendoza character card, large.",
+      "design_notes": "MINIMAL layout. White or navy. Carlos Mendoza character image if available. Three lines only — maximum impact. 'Go.' in orange bold.",
+      "speaker_notes": "Absolute FLUENCY mode. No interruptions. No corrections. Instructor is Carlos — stay in character. 1 follow-up question after each report. Other learners: update their Personal Communication Card while listening."
+    },
+
+    {
+      "slide": 43,
+      "session": 8,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "B",
+      "title": "S8 — Reflection: KWL Column L",
+      "content": [
+        "Column L — What did you LEARN?",
+        "► Complete column L of your KWL table now.",
+        "► What is the most important thing you learned in English?",
+        "► Share: one sentence from your L column.",
+        "Examples: 'I learned 20 workshop tools in English.'",
+        "          'I can describe a spill in English.'",
+        "Time: 30 min | Individual → Group share-out"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "KWL table shown with Column L highlighted in orange. L column example answers in italic. Instructor fills the class KWL on the board during share-out.",
+      "speaker_notes": "Return to the physical KWL from S1 — now complete the L column together. Call on 4–5 volunteers. Write their L answers on the board. This closes the learning cycle visually."
+    },
+
+    {
+      "slide": 44,
+      "session": 8,
+      "momento": "WHILE",
+      "type": "while",
+      "block": "C",
+      "title": "S8 — Gap Card: S1 vs S8",
+      "content": [
+        "Return to your Gap Card from Session 1.",
+        "Rate yourself again — the same 6 I can statements.",
+        "► Compare: Where did you start? Where are you now?",
+        "Write: 'In Session 1, I couldn't ___. Now I can ___.'",
+        "Share: 3 volunteers read their reflection in English.",
+        "Time: 30 min | Individual → Pairs → Plenary"
+      ],
+      "layout": "content",
+      "image": null,
+      "design_notes": "Before/after comparison format: two columns, S1 vs S8. Writing frame ('In S1 I couldn't... Now I can...') in orange box. Celebrate growth — this is a milestone moment.",
+      "speaker_notes": "Redistribute the Gap Cards collected in S1. Most learners will see significant growth. Create space to celebrate. Do not rush this reflection."
+    },
+
+    {
+      "slide": 45,
+      "session": 8,
+      "momento": "CIERRE",
+      "type": "cover",
+      "block": null,
+      "title": "Guía 1 — Complete.",
+      "content": [
+        "Bay is ready. Checklist: complete.",
+        "You inspected the workshop.",
+        "You wrote the checklist — in English.",
+        "You reported to your supervisor — in English.",
+        "That is A1.1 — achieved.",
+        "Next: Guía 2 — The Workshop Specialist A1.2"
+      ],
+      "layout": "cover",
+      "image": "Full-bleed: mechanic giving thumbs up in a clean, organized bay. Or: Bay 2 READY sign.",
+      "design_notes": "Full navy background with image at 40% overlay. Title white Arial Bold 40pt. Bullets white Calibri 22pt. 'Next: Guía 2' in orange at bottom. Logo SENA bottom-right. Closing energy.",
+      "speaker_notes": "Closing ceremony: one word in English from each learner about their experience. Write the words on the board. Leave them visible. Take a photo of the class KWL with column L complete."
+    }
+
+  ],
+
+  "slide_index": {
+    "cover_overview": [1, 2],
+    "s1": [3, 4, 5, 6, 7, 8],
+    "s2": [9, 10, 11, 12, 13, 14, 15],
+    "s3": [16, 17, 18, 19, 20, 21],
+    "s4": [22, 23, 24, 25, 26, 27, 28],
+    "s5": [29, 30, 31, 32, 33, 34],
+    "s6a": [35, 36, 37, 38],
+    "s6b_s7_s8": [39, 40, 41, 42, 43, 44],
+    "closing": [45]
+  },
+
+  "evidence_slides": {
+    "E1_reading": 14,
+    "E2_writing": 21,
+    "E3_listening": 25,
+    "E4_speaking": 28,
+    "E5_language_functions": 33,
+    "E6_cuestionario": 37,
+    "note": "All evidence slides use MINIMAL layout — no vocabulary, no answers visible, no distractors."
+  },
+
+  "reusable_slides": {
+    "overview": 2,
+    "communication_map": 30,
+    "word_wall": 11,
+    "note": "Slides 2, 11, and 30 are designed to be returned to repeatedly. Slide 2 (Overview): use at start of every session. Slide 11 (Word Wall): return during any vocabulary difficulty. Slide 30 (Communication Map): keep available during S5 drills and simulation."
+  },
+
+  "image_guide": {
+    "sources": [
+      "Unsplash (free commercial use) — search: 'diesel mechanic', 'automotive workshop', 'mechanic tools'",
+      "Pexels (free commercial use) — search: 'workshop', 'mechanic', 'floor jack', 'PPE'",
+      "Shadow Foam blog images (with attribution) — https://shadowfoam.com/blogs/article/must-have-mechanic-tools"
+    ],
+    "required_images": [
+      "Slide 1: Mechanic in PPE in a clean diesel bay",
+      "Slide 10: 4 workshop images (tools / floor jack / PPE / specialist)",
+      "Slide 24: Headphones icon (vector) OR Bay 2 workshop image",
+      "Slide 39: Real bay inspection — mechanic with checklist",
+      "Slide 42: Mechanic/supervisor character (or silhouette)",
+      "Slide 45: Clean, organized bay — success image"
+    ],
+    "style": "Real photos preferred over illustrations. Workshop setting always. Professional but approachable. Diversity in technicians depicted."
+  }
+}

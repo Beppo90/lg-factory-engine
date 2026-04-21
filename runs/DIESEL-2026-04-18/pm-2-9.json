@@ -1,0 +1,59 @@
+{
+  "pm_id": "PM-2.9",
+  "run_id": "DIESEL-2026-04-18",
+  "guide": "Guía 1.1 — The Workshop Specialist",
+  "session": 5,
+  "fase_sena": "Apropiación — Language Functions / Communicative Competence",
+  "generated_at": "2026-04-15",
+  "status": "completed",
+  "archetype_used": ["A — Function Map", "B — Function Drills", "C — Integrated Simulation", "D — Synthesis Card + Quiz Preview"],
+  "integration_note": "S5 foco B2 — funciones comunicativas aplicadas a sistemas del automotor y manual técnico",
+  "language_functions": [
+    {"number": 1, "function": "Dar instrucciones", "structure": "Imperative: 'Check the engine oil level.' / 'Open the manual to page 24.'", "context": "Supervisor to technician — vehicle systems context"},
+    {"number": 2, "function": "Solicitar acción/información", "structure": "'What is the torque spec for this bolt?' / 'I need the transmission manual.'", "context": "Technician to colleague or manual"},
+    {"number": 3, "function": "Describir condiciones", "structure": "Verb To Be + Have: 'This truck has a 6-speed transmission. The engine is a 5.9-liter diesel.'", "context": "Technician describing vehicle systems"},
+    {"number": 4, "function": "Reportar al supervisor", "structure": "Present Simple: 'The vehicle is a diesel cargo truck, Carlos. The engine has 6 cylinders.'", "context": "Technician reporting vehicle reception to supervisor"},
+    {"number": 5, "function": "Confirmar comprensión", "structure": "'Understood.' / 'Got it.' / 'The displacement is 5.9 liters, confirmed.'", "context": "All interactions — vehicle + workshop context"}
+  ],
+  "activity_card": {
+    "pm_id": "PM-2.9",
+    "session": 5,
+    "phase_sena": "Apropiación",
+    "activities": [
+      {"number": 1, "archetype": "A — Function Map", "type": "cognitiva", "duration_min": 35,
+       "statement": "Mapear las 5 funciones comunicativas en contexto B2 (vehículos + sistemas) y clasificar 15 frases reales en su función — foco en vocabulario de sistemas del automotor", "bloom": "L2 Comprender + L3 Aplicar"},
+      {"number": 2, "archetype": "B — Function Drills", "type": "procedimental", "duration_min": 40,
+       "statement": "Practicar cada función comunicativa en drills de 8 minutos con situaciones reales de recepción de vehículo e inspección de sistemas", "bloom": "L3 Aplicar"},
+      {"number": 3, "archetype": "C — Integrated Simulation", "type": "procedimental", "duration_min": 50,
+       "statement": "Demostrar las 5 funciones integradas en simulación de recepción de vehículo + consulta de manual + reporte al supervisor — Evidencia 5", "bloom": "L3 Aplicar + L4 Analizar + L5 Evaluar"},
+      {"number": 4, "archetype": "D — Synthesis Card + Quiz Preview", "type": "cognitiva + procedimental", "duration_min": 55,
+       "statement": "Construir Personal Communication Card B1+B2 (taller + vehículo) y practicar ítems tipo Quiz S6 en pares para Language Functions", "bloom": "L2 Comprender + L3 Aplicar"}
+    ],
+    "hours": {"direct": 6, "autonomous": 1.5},
+    "evidence": {
+      "generates_evidence": true,
+      "numero_evidencia": 5,
+      "tipo": "Desempeño",
+      "description": "Language Functions — Integrated simulation: 5 funciones comunicativas en contexto de recepción de vehículo diesel (B2)",
+      "evaluation_technique": "Observación directa + evaluación entre pares",
+      "instrument_number": 5,
+      "instrument_type": "Lista de Chequeo No 5",
+      "contributes_to_cuestionario": true,
+      "cuestionario_skill": "Language Functions",
+      "cuestionario_points": 5
+    },
+    "estimation_scale_criteria": [
+      "Da instrucciones de inspección de sistemas usando imperativos (F1) — 1 a 5",
+      "Solicita información del manual técnico con fórmulas correctas (F2) — 1 a 5",
+      "Describe el vehículo y sus sistemas con Verb To Be / Have (F3) — 1 a 5",
+      "Reporta al supervisor la recepción del vehículo con información completa (F4) — 1 a 5",
+      "Confirma comprensión de especificaciones con expresiones apropiadas (F5) — 1 a 5"
+    ],
+    "total_points": 5,
+    "environment": {
+      "type": "Aula",
+      "materials": ["Communication Map proyectado", "15 tarjetas de frases para clasificación", "Stock Cards de bay (reutilizadas de S4)", "Escala de estimación No 5 (instructor + par observador)", "Personal Communication Card en blanco (1 por aprendiz)"]
+    },
+    "gfpi_tag": "3.3-APROPIACION-LANGUAGE-FUNCTIONS"
+  }
+}
