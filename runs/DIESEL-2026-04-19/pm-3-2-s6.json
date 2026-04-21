@@ -1,0 +1,116 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.6.6",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (Required Output Schema v2.6.6)",
+  "session": 6,
+  "session_label": "S6 (S6a + S6b)",
+  "session_name": "Prove What You Know + S6b: Final Mission Orientation",
+  "run_id": "DIESEL-2026-04-19",
+  "guide": "G1 — The Workshop Specialist",
+  "guia_numero": 1,
+  "programa": "Mantenimiento de Motores Diesel",
+  "programa_codigo": "",
+  "duracion_min": 330,
+  "cefr": "A1.1",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-21",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "structured_from_md_v266",
+  "pipeline_note": "Sesión S6 compuesta: S6a (Evaluación Sumativa — Cuestionario Consolidado, 180 min) + S6b (Orientación Final Mission, 150 min) = 330 min instructivos. Contenido S6b embedded como sección adicional.",
+  "momento_sena": "Evaluación Sumativa — Cuestionario Consolidado (3.3) + Transferencia — Orientación Final Mission (3.4)",
+  "estrategia_didactica": null,
+  "justificacion_didactica": null,
+  "pms_involucrados": "PM-4.2 (Cuestionario Consolidado — 25 pts)",
+  "l1_management_summary": {
+    "l1_max_pct": 10,
+    "unit": "%"
+  },
+  "gramatica_activa": "TODAS — objeto de evaluación",
+  "evidencias_declaradas": "Cuestionario Consolidado No 6 (25 pts — 5 skills × 5 pts) + S6b: Sin evidencias (orientación Final Mission ABP)",
+  "session_header": {
+    "titulo": "SESSION 6: Prove What You Know + S6b: Final Mission Orientation",
+    "subtitulo": "DIESEL Guía 1 · The Workshop Specialist · Build-Out — Playbook DIESEL-2026-04-19",
+    "duracion_min": 330,
+    "duracion_horas": 5.5,
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices"
+  },
+  "sections_from_md": {
+    "materials_checklist": {
+      "heading": "1. MATERIALS CHECKLIST",
+      "body_markdown": "\n### Impresos — 1 por aprendiz\n- [ ] Cuestionario Consolidado No 6 — 25 ítems (backup impreso si Moodle está caído)\n- [ ] Hoja de respuestas (A/B/C o mixta — según formato del cuestionario)\n\n### Impresos — Instructor\n- [ ] Cuestionario Consolidado respuestas (clave completa — 25 ítems)\n- [ ] Registro de notas por aprendiz (para devolución individual)\n\n### Tecnología\n- [ ] Acceso Moodle con Cuestionario Consolidado No 6 publicado\n- [ ] Audio de Listening (variante del Bay 2 Safety Briefing) — en Moodle + USB backup\n- [ ] Proyector (para revisión colectiva post-quiz)\n\n### Plan B\n> Si Moodle caído: cuestionario impreso previamente. Si no hay impresoras: proyectar ítem por ítem — aprendices responden en hoja de respuestas (A/B/C). El audio de Listening: reproducciones en clase si Moodle no disponible.\n\n---"
+    },
+    "board_plan": {
+      "heading": "2. BOARD PLAN — S6a",
+      "body_markdown": "\n```\n┌───────────────────────────────────────────────────────────────────────┐\n│  S6a: PROVE WHAT YOU KNOW — 25 QUESTIONS. 5 SKILLS. YOU'RE READY.    │\n├──────────────────────────────┬────────────────────────────────────────┤\n│  CUESTIONARIO CONSOLIDADO    │  PUNTAJES Y CONDICIÓN                 │\n│  No 6                        │                                        │\n│                              │  Total: 25 pts                        │\n│  5 Reading items (5 pts)     │  Aprobación: mín. 15/25 (60%)        │\n│  5 Vocabulary items (5 pts)  │                                        │\n│  5 Grammar items (5 pts)     │  READING: texto nuevo — contexto      │\n│  5 Listening items (5 pts)   │  taller (no el texto de S2)           │\n│  5 Lang. Functions (5 pts)   │                                        │\n│                              │  LISTENING: audio nuevo o variante    │\n│  Tiempo: 90 minutos          │  Bay 2 Safety Briefing                │\n│  Sin diccionario             │                                        │\n│  Sin notas                   │  VOCABULARY: 20 términos Toolbelt     │\n│  Condición individual        │  en contexto nuevo                    │\n│                              │                                        │\n│  Writing: evaluado S3 ✓      │  GRAMMAR: Imperativo + There is/are   │\n│  Speaking: evaluado S4 ✓     │  + Preposiciones de lugar             │\n└──────────────────────────────┴────────────────────────────────────────┘\n```\n\n---"
+    },
+    "timeline": {
+      "heading": "3. TIMELINE — 180 min instructivos",
+      "body_markdown": "\n| Bloque | Actividad | Min | Acumulado |\n|--------|-----------|-----|-----------|\n| SET-UP | Instrucciones, condiciones, repaso rápido | 15 | 0:15 |\n| WHILE-A | Cuestionario Consolidado No 6 (90 min) | 90 | 1:45 |\n| **BREAK** | **Descanso** | **15** | **2:00** |\n| WHILE-B | Revisión colectiva respuestas (item × item) | 30 | 2:30 |\n| WHILE-C | Devolución individual + orientación Final Mission | 30 | 3:00 |\n\n**Verificación:** 15+90+15+30+30 = 180 ✓\n\n---"
+    },
+    "set_up": {
+      "heading": "4. SET-UP DETALLADO (0:00–0:15)",
+      "body_markdown": "\n### 0:00–0:08 · Condiciones del cuestionario (5 min)\n**TT:**\n> *\"Today is the assessment. Cuestionario Consolidado No 6. 25 questions. 5 sections: Reading, Vocabulary, Grammar, Listening, Language Functions. You have 90 minutes. No dictionary. No notes. No partner. Just you. Minimum to pass: 15 out of 25.\"*\n\nEscribir en pizarra: **25 items · 90 min · no dictionary · min 15/25**\n\n💡 En L1 si necesario: *\"Estas son las condiciones — no pueden usar diccionario ni notas. Si no saben una respuesta, su mejor estimado.\"*\n\n### 0:08–0:12 · Instrucciones de Listening\n**TT:**\n> *\"Section 4 is Listening. I'll play the audio twice — first for gist, second for detail. Then you answer the 5 Listening questions. The audio plays during the quiz — I'll tell you when.\"*\n\n### 0:12–0:15 · Recordatorio estratégico (3 min)\n> *\"One strategy: read all 25 questions first — 5 minutes. Then answer. If you don't know — skip and come back. Start with what you know. Ready?\"*\n\n---"
+    },
+    "while_": {
+      "heading": "5. WHILE DETALLADO",
+      "body_markdown": "\n### WHILE-A — Cuestionario Consolidado No 6 (0:15–1:45 · 90 min)\n\n**0:15–0:20 · Distribución + lectura estratégica:**\nDistribuir cuestionario (o abrir en Moodle).\n> *\"5 minutes: read all 25 questions. Don't answer yet — just read. Start.\"*\n\n**0:20–0:55 · Secciones Reading + Vocabulary + Grammar (35 min):**\nAprendices trabajan en silencio.\n\n💡 **Sección Listening: reproducir audio en el momento indicado.**\n\n**0:55–1:00 · Sección Listening — Audio ×1 gist:**\n> *\"Stop. Listening section now. I'll play the audio. First time — just listen for the main situation. Don't answer yet.\"*\n\nReproducir audio completo (~2 min).\n\n**1:00–1:05 · Sección Listening — Audio ×2 detail:**\n> *\"Second time — listen for details. Now you can answer the Listening questions.\"*\n\nReproducir audio.\n\n**1:05–1:45 · Sección Language Functions + revisión personal (40 min):**\nAprendices completan Language Functions y revisan sus respuestas.\n\n**1:43 · Aviso de 2 minutos:**\n> *\"2 minutes. Complete your answers.\"*\n\n**1:45 · Recoger cuestionarios:**\n> *\"Time. Put down your pen. Pass your cuestionario to me.\"*\n\n---\n\n**1:45–2:00 · BREAK (15 min)**\n\n---\n\n### WHILE-B — Revisión colectiva (2:00–2:30 · 30 min)\n\n**TT:**\n> *\"Let's check the answers together. I'll read each question and the correct answer. Raise your hand if you got it right.\"*\n\n**Protocolo de revisión (ítem × ítem):**\n- Instructor lee la pregunta y la respuesta correcta.\n- Para cada ítem: señalar la fuente del conocimiento.\n  - *\"Question 3 — Vocabulary. 'Torque wrench' — from Session 2, Word Wall.\"*\n  - *\"Question 11 — Grammar. 'Don't leave tools on the floor.' — Session 3, Error Log.\"*\n  - *\"Question 17 — Listening. Bay 2 Safety Briefing — Session 4.\"*\n\n💡 No revelar puntajes individuales en esta etapa. Revelar solo la respuesta correcta.\n\n**Momento clave — Grammar (5 ítems):**\n> *\"Grammar section — Quiz S6 Grammar: 2 items Imperative, 2 items There is/are, 1 item prepositions. Who got all 5 right? Who got 3 or more? Good — that's what we practiced in Session 3.\"*\n\n**Momento clave — Language Functions (5 ítems):**\n> *\"Language Functions — all 5 functions in context. Question 21: 'Bay 3 is ready, Carlos.' — which function? F4 — reporting to supervisor. You practiced this in Session 5.\"*\n\n✅ **Formative Checkpoint (post-quiz):** *\"Quick show of hands — which section was hardest? Reading? Vocabulary? Grammar? Listening? Language Functions? Good to know for the Final Mission review.\"*\n\n---\n\n### WHILE-C — Devolución individual + Orientación Final Mission (2:30–3:00 · 30 min)\n\n**2:30–2:48 · Devolución individual (18 min):**\n> *\"I'll give you your individual score sheet now. Look at your results by section. Circle the section with the lowest score — that's your target for the Final Mission review.\"*\n\nInstructor distribuye score sheet por sección (si es posible calcular in situ — o entregar la sesión siguiente).\n\n**2:48–3:00 · Orientación Final Mission (12 min):**\n**TT:**\n> *\"Now — the Final Mission. Next session: you go to a real bay in this workshop. You inspect it. You write the Daily Inspection Checklist — in English. You report to your supervisor — me — in English. We start next class. Bay assignments: (asignar grupos). Group 1 — Bay 1. Group 2 — Bay 2. Group 3 — Bay 3.\"*\n\nEscribir en pizarra: grupos + bays asignados.\n\n> *\"For next class: review your 20 Toolbelt terms. Review your 5 communication functions F1–F5. Review your checklist from Session 3 — it's your model. And read the Final Mission instructions on Moodle — PM-3.5. Any questions?\"*\n\n---"
+    },
+    "wrap_up": {
+      "heading": "6. WRAP-UP (incluido en WHILE-C)",
+      "body_markdown": "\n### Closing Teacher Talk (final de WHILE-C)\n> *\"You did the Cuestionario Consolidado. 25 questions — 5 skills — in English. That's real. The Final Mission is next. 3 sessions — you inspect a real bay, write a real checklist, and report in English to a real supervisor. You're ready for this. See you next class.\"*\n\n### Trabajo autónomo S6a\n> *\"Three things for home. One: quiz review — find your incorrect answers and write the correct form in your notebook. Two: Final Mission preparation — review 20 Toolbelt terms + F1–F5 + your Session 3 checklist. Three: read PM-3.5 Final Mission instructions on Moodle and write any questions for the instructor.\"*\n\n---"
+    },
+    "answer_key_consolidado": {
+      "heading": "7. ANSWER KEY CONSOLIDADO",
+      "body_markdown": "\n### Cuestionario Consolidado No 6 — Clave por sección\n\n*(Nota: los ítems exactos se definen en PM-4.2. Estructura por sección:)*\n\n**Reading (5 ítems):**\nTexto nuevo, contexto taller. Bloom L1–L2. Estrategia: identificar información explícita + inferencia básica.\n\n**Vocabulary (5 ítems):**\n20 términos Toolbelt en contexto nuevo (no el texto de S2). Tipos: definición, gap fill, imagen → término.\n\n**Grammar (5 ítems):**\n- 2 ítems Imperativo (afirmativo + negativo)\n- 2 ítems There is/are (afirmativo/negativo + pregunta)\n- 1 ítem Preposiciones de lugar\n\n**Listening (5 ítems):**\nAudio nuevo (variante Bay 2 Safety Briefing o situación relacionada). Bloom L1–L2. Tipos: gist + detail.\n\n**Language Functions (5 ítems):**\nSituaciones del taller → identificar función comunicativa (F1–F5) o completar con frase correcta.\n\n### Condición de aprobación\n- Mínimo 15/25 (60%) para aprobar el Cuestionario Consolidado No 6.\n- Resultado por sección informa priorización del repaso en trabajo autónomo y Final Mission.\n\n---"
+    },
+    "differentiation": {
+      "heading": "8. DIFFERENTIATION NOTES",
+      "body_markdown": "\n### Fast Finishers\n- Después de entregar el cuestionario: completar la auto-evaluación con Escala No 5 (trabajo autónomo S5 — si no lo hicieron en casa).\n- Preparar 2 preguntas propias tipo quiz para el grupo (sobre cualquier skill).\n\n### Need More Support\n- Si un aprendiz termina antes de 90 min: recordar que puede releer y revisar sus respuestas.\n- Para aprendices con dificultad severa de lectura: el instructor puede leer los ítems de Vocabulary y Grammar en voz alta (sin revelar respuestas). Solo logística — no apoya comprensión.\n- Devolución individual: priorizar los aprendices con puntuación cercana al mínimo (13–14/25) — plan de refuerzo orientado a la Final Mission.\n\n---"
+    },
+    "instructor_self_check": {
+      "heading": "9. INSTRUCTOR SELF-CHECK (al terminar S6a)",
+      "body_markdown": "\n1. ¿Reprodujiste el audio de Listening en el momento indicado (durante el cuestionario), no antes?\n2. ¿Recogiste los cuestionarios ANTES de dar las respuestas en la revisión colectiva?\n3. ¿Los bays de la Final Mission fueron asignados por grupos al final de WHILE-C?\n4. ¿Enviaste o publicaste el score individual por sección a cada aprendiz (o lo enviarás en S6b)?\n5. ¿Los aprendices tienen claro qué tres cosas preparar para la Final Mission?\n\n---\n\n*pm-3-2-s6a.md · DIESEL-2026-04-19 · status: pending_review*"
+    },
+    "s6b_orientacion": {
+      "heading": "S6b — ORIENTACIÓN Y RECONOCIMIENTO (Transferencia — inicio Final Mission)",
+      "body_markdown": "### S6b-A · Devolución Cuestionario No 6 (0:00–0:30)\n**TT:**\n> *\"Your results from the Cuestionario Consolidado. Look at your score by section. Where are you strongest? Where do you need more practice? Circle your weakest section — that's your target for the Final Mission review.\"*\n\nDistribuir score sheets individuales. 10 min de revisión personal + 5 min pares (comparar).\n\n**S6b-B · Orientación Final Mission (0:30–1:00):**\n**TT:**\n> *\"The Final Mission. Simple: you inspect a real bay in this workshop. You write the Daily Inspection Checklist — in English. Then you report to your supervisor — me — in English. 60 to 90 seconds. You have Session 7 to prepare. Session 8 is the Mission.\"*\n\n**ICQ:** *\"Where do you inspect? — Real bay in this center. What do you write? — Daily Inspection Checklist. When is the oral report? — Session 8. How long? — 60 to 90 seconds. Any questions?\"*\n\n**S6b-C · Asignación de bays + equipos (1:00–1:20):**\n> *\"Bay assignments: Group 1 — Bay 1. Group 2 — Bay 2. Group 3 — Bay 3. Go to your group now.\"*\n\nSi el centro tiene menos de 3 bays: adaptar grupos — 2 aprendices por bay en turnos.\n\n**S6b-D · Visita preliminar al bay asignado (1:20–2:00 · 40 min):**\n**TT:**\n> *\"Today — just look. Walk around your bay. What do you see? Use your checklist from Session 3 as a guide. Write notes in English — what conditions do you observe? Is the PPE ready? Is the toolbox organized? Is the bay door area clear?\"*\n\n💡 Instructor circula. **COACHING mode:** instructor habla solo en inglés. *\"What is that tool? — A ratchet. Good. And where is it? — On the workbench.\"*\n\n**S6b-E · Borrador del checklist (2:00–2:20 · 20 min):**\n> *\"Back in the classroom. Start your checklist draft — minimum 8 items. Use what you observed in the bay. Use the Toolbelt vocabulary. Use imperative verbs. This is your working draft.\"*\n\n**WRAP-UP S6b (2:20–2:30):**\n> *\"For home — Session 7 preparation: complete your checklist draft and write an outline of your oral report — 5 bullets of what you'll say. Practice your report out loud. 60 seconds minimum.\"*\n\n---",
+      "source": "pm-3-2-s6b-s8.md §4",
+      "duracion_min": 150
+    }
+  },
+  "pm0_protocol": {
+    "__pending_fase_3__": true,
+    "__filled_by__": "scripts/pm-3-2-pm0-patch.js (Fase 3 del upgrade)",
+    "__source__": "pm-3-1.json.pm0_alignment_by_session (a sembrar en Fase 3)",
+    "grammar_groups_hint": "TODAS — objeto de evaluación",
+    "feedback": {
+      "mode": null,
+      "__pending__": true
+    },
+    "l1_management": {
+      "l1_percentage": 10,
+      "l1_percentage_unit": "%",
+      "__pending_source__": "pm-0-context.json l1_policy_per_guide"
+    },
+    "stress_pronunciation": {
+      "__pending__": true
+    },
+    "success_vocabulary": {
+      "__pending__": true
+    },
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1",
+      "__pending__": true
+    }
+  },
+  "activity_logistics": {},
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    }
+  },
+  "_source_md": "pm-3-2-s6a.md + pm-3-2-s6b-s8.md (§4 \"S6b — ORIENTACIÓN\")"
+}

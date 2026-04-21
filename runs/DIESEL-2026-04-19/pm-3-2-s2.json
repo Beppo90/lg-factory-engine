@@ -1,0 +1,110 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.6.6",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (Required Output Schema v2.6.6)",
+  "session": 2,
+  "session_label": "S2",
+  "session_name": "Read the Workshop",
+  "run_id": "DIESEL-2026-04-19",
+  "guide": "G1 — The Workshop Specialist",
+  "guia_numero": 1,
+  "programa": "Mantenimiento de Motores Diesel",
+  "programa_codigo": "",
+  "duracion_min": 300,
+  "cefr": "A1.1",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-21",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "structured_from_md_v266",
+  "pipeline_note": "Estructurado desde pm-3-2-s2.md en Fase 2 del upgrade DIESEL-04-19 v2.6.6. Contenido pedagógico preservado 100%.",
+  "momento_sena": "Apropiación — Input Receptivo (Vocabulary + Reading) (3.3)",
+  "estrategia_didactica": null,
+  "justificacion_didactica": null,
+  "pms_involucrados": "PM-2.5 (Vocabulary, Literacy & Scenario Setup) + PM-2.3 (Reading — The Master Anchor)",
+  "l1_management_summary": {
+    "l1_max_pct": 25,
+    "unit": "%"
+  },
+  "gramatica_activa": "Gr1 CONSOLIDA (be) + Gr2 INTRO (There is/are)",
+  "evidencias_declaradas": "Cuestionario No 1 (Reading — 5 pts, Evidencia de Conocimiento)",
+  "session_header": {
+    "titulo": "SESSION 2: Read the Workshop",
+    "subtitulo": "DIESEL Guía 1 · The Workshop Specialist · Build-Out — Playbook DIESEL-2026-04-19",
+    "duracion_min": 300,
+    "duracion_horas": 5,
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices"
+  },
+  "sections_from_md": {
+    "materials_checklist": {
+      "heading": "1. MATERIALS CHECKLIST",
+      "body_markdown": "\n### Impresos — 1 por aprendiz\n- [ ] Flashcard set completo 20 términos Toolbelt (doble cara: imagen / término + IPA)\n- [ ] Tablero de categorías A3 (5 columnas: Environment / Tools & Equipment / Safety / Maintenance / Documents & Roles)\n- [ ] Texto adaptado A1.1: *\"Tools Every Diesel Specialist Needs\"* (Shadow Foam)\n- [ ] Ficha de experto Jigsaw (1 por rol — 4 roles: A, B, C, D)\n- [ ] Cuestionario No 1 (5 ítems de comprensión) — **NO distribuir hasta después del Jigsaw**\n- [ ] Daily Inspection Checklist en blanco (para preview PM-2.4 — trabajo autónomo)\n\n### Impresos — Instructor\n- [ ] Word Wall cards x20 (imagen + término + stress mark) — **instalar antes de S2**\n- [ ] Respuestas Cuestionario No 1 (para feedback post-evidencia)\n- [ ] Tablero de categorías maestro (solución)\n\n### Tecnología\n- [ ] Proyector con imágenes Shadow Foam (actividad de predicción)\n- [ ] Word Wall físico visible en el aula DURANTE TODA LA SESIÓN\n- [ ] Cuadro Gr2 (There is/are) para construir en pizarra post-Jigsaw\n\n### Plan B\n> Si proyector falla: Word Wall físico como única referencia visual durante todo el Jigsaw. Sin tecnología: flashcard battle y category race son actividades de texto/tarjeta — no requieren tecnología.\n\n---"
+    },
+    "board_plan": {
+      "heading": "2. BOARD PLAN — S2",
+      "body_markdown": "\n```\n┌──────────────────────────────────────────────────────────────────────┐\n│  S2: READ THE WORKSHOP — 20 TOOLS. ONE TEXT. THE VOCABULARY.         │\n├──────────────────────┬───────────────────────────────────────────────┤\n│  WORD WALL (visible) │  Gr2 INTRO — THERE IS / THERE ARE            │\n│  (20 tarjetas        │  ┌──────────────────┬──────────────────────┐  │\n│   instaladas antes   │  │ There IS + ●     │ There ARE + ●●       │  │\n│   de la sesión)      │  │ a spill          │ tools on the floor   │  │\n│                      │  │ a floor jack     │ three wrenches       │  │\n│  STRESS:             │  │ no extinguisher  │ no goggles           │  │\n│  WORK-shop ●○        │  ├──────────────────┼──────────────────────┤  │\n│  RATCH-et ●○         │  │ Is there a ___?  │ Are there ___?       │  │\n│  tor-QUE ●           │  └──────────────────┴──────────────────────┘  │\n│  SPE-cial-ist ●○○    │                                               │\n│  MAIN-te-nance ●○○   │  JIGSAW SECTIONS:                            │\n│                      │  A: The Workshop    B: Hand Tools             │\n│  PM-2.9 F3 INJECT:   │  C: Safety Tools    D: The Specialist        │\n│  \"There is a ___     │                                               │\n│   near ___.\"         │  PREDICTION QUESTION:                        │\n│  \"The ___ is         │  \"What tools does a diesel specialist need?\"  │\n│   on the ___.\"       │                                               │\n└──────────────────────┴───────────────────────────────────────────────┘\n```\n\n---"
+    },
+    "timeline": {
+      "heading": "3. TIMELINE — 300 min instructivos",
+      "body_markdown": "\n| Bloque | Actividad | Min | Acumulado |\n|--------|-----------|-----|-----------|\n| SET-UP | Revisión autónomo S1 + Word Wall launch | 15 | 0:15 |\n| WHILE-A | PM-2.5 Act 1 — Word Wall + Phonics | 35 | 0:50 |\n| WHILE-B | PM-2.5 Act 2 — Flashcard Battle + Category Race | 30 | 1:20 |\n| WHILE-C | PM-2.5 Act 3 — Daily Checklist + Work Order preview | 25 | 1:45 |\n| **BREAK** | **Descanso** | **20** | **2:05** |\n| WHILE-D | PM-2.3 Act 1 — Predicción por imágenes | 20 | 2:25 |\n| WHILE-E | PM-2.3 Act 2 — Jigsaw (Lectura + Teach-back + Gr2) | 90 | 3:55 |\n| WHILE-F | PM-2.3 Act 3 — Cuestionario No 1 (Evidencia 1) | 25 | 4:20 |\n| WRAP-UP | Feedback Cuestionario + Exit Ticket + Autónomo | 20 | 4:40 |\n| **Buffer** | **Administración / recepción cuestionarios** | **20** | **5:00** |\n\n**Verificación:** 15+35+30+25+20+20+90+25+20+20 = 300 ✓\n\n---"
+    },
+    "set_up": {
+      "heading": "4. SET-UP DETALLADO (0:00–0:15)",
+      "body_markdown": "\n### 0:00–0:05 · Revisión de trabajo autónomo S1\n**TT:**\n> *\"Good morning. First — homework check. Three things from last class. First: your Gap Card photo — show your partner. Second: your 5 sentences with workshop words. Third: your 3 tools from Shadow Foam. Tell your partner one tool — in English.\"*\n\n💡 Instructor circula — no puntúa, solo verifica y toma nota de términos emergentes.\n\n### 0:05–0:10 · Activar KWL grupal\n> *\"Look at the W column from last class — what we WANT to learn. Today we start answering these questions. The Toolbelt — 20 words — is the key.\"*\n\n### 0:10–0:15 · Instalar el Word Wall + objetivo\n**TT (PM-2.9 F3 pre-injection):**\n> *\"Today we install the Toolbelt — 20 words you need every day in the workshop. After today, you can say: 'There is a spill near the bay door.' And 'The torque wrench is on the workbench.' Let's start.\"*\n\n💡 Escribir las dos frases F3 en pizarra — permanecen durante TODA la sesión como F3 injection.\n\n---"
+    },
+    "while_": {
+      "heading": "5. WHILE DETALLADO",
+      "body_markdown": "\n### WHILE-A — PM-2.5 Act 1: Word Wall + Phonics (0:15–0:50 · 35 min)\n\n**0:15–0:25 · Presentación Término-por-Término (10 términos — Grupos 1+2):**\nSecuencia por término: **imagen → nombre → stress → oración → choral drill**\n\n**Orden de presentación (por categoría):**\n\n| # | Término | Stress | Oración de contexto |\n|---|---------|--------|---------------------|\n| 1 | workshop | WORK-shop ●○ | *\"We work in the workshop.\"* |\n| 2 | service bay | SER-vice BAY ●○ ● | *\"Bay 2 is our service bay.\"* |\n| 3 | workbench | WORK-bench ●○ | *\"Tools go on the workbench.\"* |\n| 4 | toolbox | TOOL-box ●○ | *\"The ratchet is in the toolbox.\"* |\n| 5 | wrench | WRENCH ● | *\"Use a wrench to open the bolt.\"* |\n| 6 | ratchet | RATCH-et ●○ | *\"The ratchet is fast in tight spaces.\"* |\n| 7 | socket | SOCK-et ●○ | *\"The socket fits the bolt.\"* |\n| 8 | torque wrench | TORQUE WRENCH ● ● | *\"The torque wrench applies the correct force.\"* |\n| 9 | floor jack | FLOOR JACK ● ● | *\"The floor jack lifts the vehicle safely.\"* |\n| 10 | PPE | P-P-E ●-●-● | *\"Wear your PPE — always.\"* |\n\n💡 Técnica: **finger drilling** para palabras multisilábicas. Board marking: ●○ en pizarra. Backchaining: *\"-nance → tenance → maintenance\"*\n\n**0:25–0:35 · Presentación Términos 11–20:**\n\n| # | Término | Stress | Oración de contexto |\n|---|---------|--------|---------------------|\n| 11 | safety goggles | SAFE-ty GOG-gles ●○ ●○ | *\"Put on your safety goggles.\"* |\n| 12 | gloves | GLOVES ● | *\"Check the gloves before starting.\"* |\n| 13 | hazard | HAZ-ard ●○ | *\"A spill is a hazard.\"* |\n| 14 | spill | SPILL ● | *\"There is a spill near Bay 2.\"* |\n| 15 | fire extinguisher | FIRE ex-TING-guish-er | *\"The fire extinguisher is next to the door.\"* |\n| 16 | preventive maintenance | pre-VEN-tive MAIN-te-nance | *\"Preventive maintenance saves time.\"* |\n| 17 | corrective maintenance | cor-REC-tive MAIN-te-nance | *\"Corrective maintenance fixes problems.\"* |\n| 18 | work order | WORK OR-der ● ●○ | *\"Fill in the work order first.\"* |\n| 19 | checklist | CHECK-list ●○ | *\"Use the checklist every morning.\"* |\n| 20 | specialist | SPE-cial-ist ●○○ | *\"Santiago is a diesel specialist.\"* |\n\n**0:35–0:50 · Choral + Individual drill (últimas 10):**\nInstructor apunta a la tarjeta del Word Wall → grupo dice término → voluntario dice oración → choral.\n\n✅ **Formative Checkpoint 1:** *\"I say the oración — you say the término. Ready?\"* (Spot check 8 términos — ACCURACY en pronunciación y stress.)\n\n---\n\n### WHILE-B — PM-2.5 Act 2: Flashcard Battle + Category Race (0:50–1:20 · 30 min)\n\n**0:50–1:05 · Flashcard Battle (pares, 15 min):**\n**TT:**\n> *\"Flashcard battle. You have 20 cards. Aprendiz A shows the IMAGE. Aprendiz B says the TERM and uses it in a sentence. Then switch. You have 5 minutes each direction — go.\"*\n\n**ICQ:** *\"Who shows the image? — Aprendiz A first. What does Aprendiz B do? — Says the term and a sentence. How many minutes? — 5 each. Do you need to be perfect? — No, try. Go.\"*\n\n💡 El instructor cronometra (5 min + cambio + 5 min). Circula y toma nota de términos con pronunciación difícil → feedback post-actividad.\n\n**1:05–1:20 · Category Race (mesas, 15 min):**\n**TT:**\n> *\"Now — category race. You have a table with 5 columns. Put all 20 words in the right column. You have 4 minutes. Ready — go.\"*\n\nCategorías: Environment / Tools & Equipment / Safety / Maintenance / Documents & Roles\n\n**ICQ:** *\"How many categories? — Five. How many words total? — 20. Work alone or team? — Team at your table. Time? — 4 minutes. Start.\"*\n\nDespués de 4 minutos: verificación grupal proyectada.\n\n✅ **Formative Checkpoint 2:** Plenaria rápida — instructor lee categoría, pide a un grupo que liste sus términos. Corrección inmediata con recast: *\"Close — 'work order' goes in Documents, not Environment. Everyone: work order — Documents.\"*\n\n---\n\n### WHILE-C — PM-2.5 Act 3: Daily Checklist Preview (1:20–1:45 · 25 min)\n\n**TT:**\n> *\"Last activity for vocabulary — before the break. Here is a Daily Inspection Checklist — the real document you use in Bay 2. Use the 20 words from the Toolbelt to complete it. You have 15 minutes.\"*\n\n**ICQ:** *\"What document? — Daily Inspection Checklist. Which words do you use? — The 20 Toolbelt words. Work alone? — Yes. Time? — 15 minutes. Go.\"*\n\n💡 **FLUENCY mode** — el objetivo es uso contextualizado, no corrección de forma. Instructor anota errores de vocabulario técnico críticos (código V) en silencio.\n\n**1:35–1:45 · Revisión rápida en plenaria:**\n> *\"Let's look at item 1 together. What did you write? 'Check the floor jack.' Good. 'Check the gloves.' Also good. The verb is an imperative — we study that in Session 3.\"*\n\n💡 Señalar el imperativo naturalmente — **no enseñar Gr5 todavía** (es S3). Solo modelar.\n\n---\n\n**1:45–2:05 · BREAK (20 min)**\n\n---\n\n### WHILE-D — PM-2.3 Act 1: Predicción por imágenes (2:05–2:25 · 20 min)\n\n**TT:**\n> *\"After the break — now we read. But first: don't open the text. Look at the pictures. (Proyectar imágenes Shadow Foam.) What tools can you see? What do they do? Predict: what is the text about?\"*\n\n**2:05–2:12 · Individual → pares (7 min):**\nAprendices predicen en pares:\n- *\"I think the text is about ___.\"*\n- *\"I can see a ___ in the picture.\"*\n- *\"A ___ is used to ___.\"*\n\n**2:12–2:25 · Plenaria de predicciones (13 min):**\n3–4 pares comparten. Instructor anota predicciones en pizarra sin confirmar ni negar.\n> *\"Good predictions. Now let's find out if you're right. Open the text.\"*\n\n---\n\n### WHILE-E — PM-2.3 Act 2: Jigsaw (2:25–3:55 · 90 min)\n\n**2:25–2:30 · Asignación de secciones y grupos expertos:**\n**TT:**\n> *\"The text has 4 sections. Group A reads Section A — The Workshop. Group B reads Section B — Hand Tools. Group C reads Section C — Safety Tools. Group D reads Section D — The Specialist. You are experts in your section. Read — understand — prepare to teach.\"*\n\n**ICQ:** *\"How many sections? — Four. Do all groups read all sections? — No, only your section. What do you do after reading? — Teach the others. How much time to read? — 12 minutes. Go.\"*\n\n**Secciones Jigsaw:**\n- **Section A — The Workshop:** workshop, service bay, workbench, toolbox\n- **Section B — Hand Tools:** wrench, ratchet, socket, torque wrench\n- **Section C — Safety Tools:** floor jack, safety goggles, gloves, PPE\n- **Section D — The Specialist:** specialist, preventive maintenance, work order, checklist\n\n**2:30–2:42 · Lectura experta (12 min — individual dentro de grupo):**\n💡 Instructor circula. Aprendices subrayan los términos Toolbelt de su sección. Pueden anotar 1 pregunta de comprensión.\n\n**2:42–2:57 · Discusión en grupo experto (15 min):**\n> *\"In your expert group — discuss: What are the 4 key words? What does each word mean? What is one example sentence? Prepare to teach.\"*\n\n**2:57–3:40 · Teach-back (grupos mixtos — 43 min):**\nReorganizar: 1 experto de cada sección por grupo nuevo. Cada experto enseña su sección (8–10 min).\n- *\"My section is about ___. The key words are ___. One example: ___.\"*\n\n💡 El instructor circula. Toma nota de errores de pronunciación para feedback post-jigsaw. No interrumpir durante el teach-back.\n\n**3:40–3:55 · Cuadro resumen Gr2 + PM-2.9 F3 consolidation (15 min):**\n**TT:**\n> *\"Now — look at the text. Find all the sentences with 'There is' or 'There are'. How many did you find?\"*\n\nConstruir cuadro en pizarra con ejemplos del texto:\n\n| There IS | There ARE |\n|----------|-----------|\n| There is a torque wrench... | There are tools on the workbench... |\n| There is a spill near... | There are three wrenches... |\n\n> *\"'There is' — one thing. 'There are' — more than one. Negative: 'There is no __.' Question: 'Is there a __?'\"*\n\n💡 **PM-2.9 F3 injection explícita aquí:**\n> *\"These phrases are used every day in the workshop. When Santiago Ríos reports to Carlos: 'There is a spill near bay 2.' — that's a communication function. We call it F3 — Describing conditions. You will use it in Session 5.\"*\n\n---\n\n### WHILE-F — PM-2.3 Act 3: Cuestionario No 1 (3:55–4:20 · 25 min)\n\n**TT:**\n> *\"Now — Cuestionario No 1. This is your first formal evidence. 5 questions about the text. You have 15 minutes. No text. No notes. No partner. Just you.\"*\n\n**CRÍTICO — Protocolo Cuestionario No 1:**\n1. Recoger el texto ANTES de distribuir el cuestionario.\n2. Distribuir cuestionario.\n3. Lectura de instrucciones en voz alta (1 min).\n4. 15 min de silencio.\n5. Recoger cuestionarios ANTES de dar cualquier feedback.\n\n**ICQ:** *\"Can you use the text? — No. Can you use notes? — No. How many questions? — Five. How much time? — 15 minutes. Start.\"*\n\n---"
+    },
+    "wrap_up": {
+      "heading": "6. WRAP-UP (4:20–5:00 · 40 min — incluye buffer admistración)",
+      "body_markdown": "\n### 4:20–4:35 · Feedback post-Cuestionario No 1 (15 min)\n> *\"Good work. Let's check the answers together.\"*\n\n**Respuestas:**\n1. b — *\"It applies the correct force to a bolt.\"*\n2. c — *\"Because it lifts the vehicle safely.\"*\n3. b — *\"tight spaces\"*\n4. c — *\"A floor jack and safety stands.\"*\n5. FALSE — *\"A good technician always keeps the workbench clean.\"*\n\n💡 Por cada respuesta: leer la oración del texto. No pasar a la siguiente hasta que la mayoría comprenda.\n\n### 4:35–4:42 · KWL — cerrar predicciones\n> *\"Look at your predictions from before the reading. Were you right? Add to your W column: what did you learn?\"*\n\n### 4:42–4:50 · Closing Teacher Talk\n> *\"The Toolbelt is installed. 20 words — now they're on the wall and in your head. Next class: we write with these words. We use imperatives — 'Check the floor jack. Wear your goggles. Don't leave tools on the floor.' Practice them at home.\"*\n\n### 4:50–5:00 · Trabajo autónomo + administración\n> *\"Three things for home. One: flashcard self-test — all 20 terms, two rounds. Two: Shadow Foam article — find 5 more tools we didn't cover. Three: complete the Daily Checklist with your real workshop at the training center — preview of Session 3.\"*\n\n---"
+    },
+    "answer_key_consolidado": {
+      "heading": "7. ANSWER KEY CONSOLIDADO",
+      "body_markdown": "\n### Cuestionario No 1 — Respuestas\n| # | Pregunta | Respuesta | Bloom |\n|---|----------|-----------|-------|\n| 1 | What does a torque wrench do? | **b** — applies correct force to a bolt | L1 |\n| 2 | Why is the floor jack a safety tool? | **c** — lifts the vehicle safely | L2 |\n| 3 | \"The ratchet is fast in ___.\" | **b** — tight spaces | L1 |\n| 4 | What tool checks a vehicle is secure? | **c** — floor jack and safety stands | L2 |\n| 5 | True/False: good technician never cleans | **FALSE** — always keeps workbench clean | L2 |\n\n### Category Race — Solución\n| Environment | Tools & Equipment | Safety | Maintenance | Documents & Roles |\n|------------|------------------|--------|-------------|------------------|\n| workshop | wrench | PPE | preventive maintenance | work order |\n| service bay | ratchet | safety goggles | corrective maintenance | checklist |\n| workbench | socket | gloves | | specialist |\n| toolbox | torque wrench | hazard | | |\n| | floor jack | spill | | |\n| | | fire extinguisher | | |\n\n### Gr2 cuadro resumen (para pizarra)\n- **There is + singular:** *There is a spill near the bay door.*\n- **There are + plural:** *There are three wrenches on the workbench.*\n- **Negative:** *There is no fire extinguisher in Bay 3.*\n- **Question:** *Is there a floor jack in Bay 1? / Are there any goggles?*\n\n---"
+    },
+    "differentiation": {
+      "heading": "8. DIFFERENTIATION NOTES",
+      "body_markdown": "\n### Fast Finishers\n- **Flashcard Battle:** crear 3 oraciones nuevas usando términos que NO están en el texto de S2.\n- **Jigsaw:** en el teach-back, añadir una oración con There is/are para describir una imagen de la sección.\n- **Cuestionario No 1:** escribir 1 oración adicional que explique la respuesta (extensión voluntaria — no evaluada).\n\n### Need More Support\n- **Word Wall:** permitir consultar las tarjetas durante el Category Race (primera ronda). Segunda ronda: solo memoria.\n- **Flashcard Battle:** reducir a 10 términos (los 5 de Environment + 5 de Safety) para aprendices con mayor dificultad.\n- **Jigsaw:** para grupos pequeños (<8 aprendices): usar solo 2 secciones (A+B) y duplicar expertos.\n- **Cuestionario No 1:** leer las preguntas en voz alta antes de empezar (sin dar las respuestas).\n\n---"
+    },
+    "instructor_self_check": {
+      "heading": "9. INSTRUCTOR SELF-CHECK (al terminar S2)",
+      "body_markdown": "\n1. ¿El Word Wall quedó físicamente visible en el aula y permanecerá durante S3–S8?\n2. ¿Recoges las Gap Cards que quedaron de S1 en el cajón seguro (para S8)?\n3. ¿Recogiste los Cuestionarios No 1 ANTES de dar el feedback oral?\n4. ¿El cuadro Gr2 (There is/are) quedó escrito en pizarra/cartelera para S3?\n5. ¿Notaste qué términos del Toolbelt tienen más dificultad de pronunciación → para refuerzo en S3?\n\n---\n\n*pm-3-2-s2.md · DIESEL-2026-04-19 · status: pending_review*"
+    }
+  },
+  "pm0_protocol": {
+    "__pending_fase_3__": true,
+    "__filled_by__": "scripts/pm-3-2-pm0-patch.js (Fase 3 del upgrade)",
+    "__source__": "pm-3-1.json.pm0_alignment_by_session (a sembrar en Fase 3)",
+    "grammar_groups_hint": "Gr1 CONSOLIDA (be) + Gr2 INTRO (There is/are)",
+    "feedback": {
+      "mode": null,
+      "__pending__": true
+    },
+    "l1_management": {
+      "l1_percentage": 25,
+      "l1_percentage_unit": "%",
+      "__pending_source__": "pm-0-context.json l1_policy_per_guide"
+    },
+    "stress_pronunciation": {
+      "__pending__": true
+    },
+    "success_vocabulary": {
+      "__pending__": true
+    },
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1",
+      "__pending__": true
+    }
+  },
+  "activity_logistics": {},
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    }
+  },
+  "_source_md": "pm-3-2-s2.md"
+}

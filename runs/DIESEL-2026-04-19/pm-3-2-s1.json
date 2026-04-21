@@ -1,0 +1,110 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.6.6",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (Required Output Schema v2.6.6)",
+  "session": 1,
+  "session_label": "S1",
+  "session_name": "The Wake-Up Call",
+  "run_id": "DIESEL-2026-04-19",
+  "guide": "G1 — The Workshop Specialist",
+  "guia_numero": 1,
+  "programa": "Mantenimiento de Motores Diesel",
+  "programa_codigo": "",
+  "duracion_min": 300,
+  "cefr": "A1.1",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-21",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "structured_from_md_v266",
+  "pipeline_note": "Estructurado desde pm-3-2-s1.md en Fase 2 del upgrade DIESEL-04-19 v2.6.6. Contenido pedagógico preservado 100%.",
+  "momento_sena": "Reflexión Inicial (3.1) + Contextualización (3.2)",
+  "estrategia_didactica": null,
+  "justificacion_didactica": null,
+  "pms_involucrados": "PM-2.1 (The Spark) + PM-2.2 (Gap Analysis)",
+  "l1_management_summary": {
+    "l1_max_pct": 30,
+    "unit": "%"
+  },
+  "gramatica_activa": "Gr1 INTRO — Verbo be",
+  "evidencias_declaradas": "Ninguna (sesión de diagnóstico y activación)",
+  "session_header": {
+    "titulo": "SESSION 1: The Wake-Up Call",
+    "subtitulo": "DIESEL Guía 1 · The Workshop Specialist · Build-Out — Playbook DIESEL-2026-04-19",
+    "duracion_min": 300,
+    "duracion_horas": 5,
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices"
+  },
+  "sections_from_md": {
+    "materials_checklist": {
+      "heading": "1. MATERIALS CHECKLIST",
+      "body_markdown": "\n### Impresos — 1 por aprendiz\n- [ ] Titular de incidente (A5 o proyectado): *\"Three mechanics hospitalized after workshop fire — investigators blame poor PPE compliance\"*\n- [ ] Tarjetas de personajes (A5): Carlos Mendoza · Valentina Cruz · Santiago Ríos\n- [ ] Tarjetas verde/rojo para votación debate (1 set)\n- [ ] Tabla KWL (3 columnas: K / W / L)\n- [ ] 4 imágenes de errores de seguridad (A4, una por imagen): IMG-01 a IMG-04\n- [ ] Gap Card (6 I can statements, escala 1–5) — **GUARDAR AL FINAL: se redistribuye en S8**\n- [ ] Guión de entrevista entre pares (5 preguntas en inglés)\n- [ ] Post-its (1 pad por mesa)\n\n### Impresos — Instructor\n- [ ] Infografía A3 workshop layout (zonas etiquetadas en inglés)\n- [ ] Debate statements proyectados (3 afirmaciones)\n- [ ] Mapa de vocabulario previo en blanco (flip chart / pizarrón)\n\n### Tecnología\n- [ ] Proyector + pantalla operativos\n- [ ] Titular proyectado (backup: impreso A4)\n- [ ] Acceso a imagen workshop layout (backup: dibujo en pizarra)\n\n### Plan B completo\n> Si tecnología falla: usar infografía impresa A3 + dibujo layout en pizarra con voluntarios. El debate no requiere tecnología.\n\n---"
+    },
+    "board_plan": {
+      "heading": "2. BOARD PLAN — S1",
+      "body_markdown": "\n```\n┌─────────────────────────────────────────────────────────────────┐\n│  THE DIESEL WORKSHOP — S1: THE WAKE-UP CALL                     │\n├──────────────────┬──────────────────────────────────────────────┤\n│  WORD BANK S1    │  KWL GRUPAL (permanente durante S1)          │\n│                  │  K (Know)  │  W (Want)  │  L (Learned→S8)   │\n│  workshop        │            │            │                    │\n│  service bay     ├────────────┴────────────┴────────────────────┤\n│  workbench       │  PERSONAJES                                  │\n│  toolbox         │  Carlos Mendoza — Lead Technician            │\n│  specialist      │  Valentina Cruz — Safety Officer             │\n│  hazard          │  Santiago Ríos — Apprentice                  │\n│                  ├─────────────────────────────────────────────-┤\n│  be verb (Gr1)   │  DEBATE ANCHORS                              │\n│  I'm / You're    │  Agree: \"I think... because...\"              │\n│  He's / She's    │  Disagree: \"I disagree because...\"           │\n│  Is/Are...?      │  Experience: \"In my experience...\"           │\n└──────────────────┴──────────────────────────────────────────────┘\n```\n\n---"
+    },
+    "timeline": {
+      "heading": "3. TIMELINE — 300 min instructivos",
+      "body_markdown": "\n| Bloque | Actividad | Min | Acumulado |\n|--------|-----------|-----|-----------|\n| SET-UP | Bienvenida, objetivos, English Zone | 20 | 0:20 |\n| WHILE-A | PM-2.1 Act 1 — The Headline | 25 | 0:45 |\n| WHILE-B | PM-2.1 Act 2 — The Map | 45 | 1:30 |\n| WHILE-C | PM-2.1 Act 3 — The Story + Debate | 60 | 2:30 |\n| **BREAK** | **Descanso** | **20** | **2:50** |\n| WHILE-D | PM-2.2 Act 1 — KWL grupal | 40 | 3:30 |\n| WHILE-E | PM-2.2 Act 2 — Safety Images | 35 | 4:05 |\n| WHILE-F | PM-2.2 Act 3 — Gap Cards + Peer Interview | 40 | 4:45 |\n| WRAP-UP | Exit Ticket + Autónomo | 15 | 5:00 |\n\n**Verificación:** 20+25+45+60+20+40+35+40+15 = 300 ✓\n\n---"
+    },
+    "set_up": {
+      "heading": "4. SET-UP DETALLADO (0:00–0:20)",
+      "body_markdown": "\n### 0:00–0:05 · Bienvenida y presentación del universo narrativo\n**Teacher Talk (TT):**\n> *\"Good morning, everyone. My name is ___ and this is English for the Diesel Workshop. For the next 8 sessions, we work in a place called The Diesel Workshop — Bogotá. Three people work there. (Show character cards.) This is Carlos Mendoza — Lead Technician. This is Valentina Cruz — Safety Officer. And this is Santiago Ríos — Apprentice. You are Santiago Ríos.\"*\n\n💡 Mostrar tarjetas de personajes. Señalar cada uno con nombre. No traducir todavía.\n\n### 0:05–0:12 · Objetivo de la sesión + English Zone\n**TT:**\n> *\"Today we answer three questions: Who are we? Where do we work? What do we already know? Today we also start the English Zone — in this classroom, we try to speak English. It's OK to make mistakes. It's not OK to not try.\"*\n\n💡 Escribir en pizarra: **WHO · WHERE · WHAT** — quedan como guía visual de la sesión.\n\n### 0:12–0:20 · Activación del conocimiento previo (brainstorm libre)\n**TT:**\n> *\"Look at this picture (workshop layout). What can you see? Tell me any word — in English or Spanish. Don't worry. Just say it.\"*\n\n💡 Anotar las palabras en inglés en el margen del board plan. Las palabras en español: \"Good — in English that's ___.\" No corregir — mapear baseline.\n\n---"
+    },
+    "while_": {
+      "heading": "5. WHILE DETALLADO",
+      "body_markdown": "\n### WHILE-A — PM-2.1 Act 1: The Headline (0:20–0:45 · 25 min)\n\n**0:20–0:25 · Proyectar/distribuir el titular:**\n> *\"Three mechanics hospitalized after workshop fire — investigators blame poor PPE compliance.\"*\n\n**TT:**\n> *\"Read this. Take 2 minutes. Don't translate every word. Find the key words: what happened? who? why?\"*\n\n💡 Escribir en pizarra: **hospitalized / compliance / investigators / workshop** — supervivencia mínima.\n\n**0:25–0:32 · Pares — 3 preguntas (Think-Pair):**\n*\"Talk to your partner: (1) What happened? (2) Why did it happen? (3) What is PPE?\"*\n\n**ICQ:** *\"How many questions do you answer? — Three. Do you translate the whole headline? — No, just key words. OK — go.\"*\n\n**0:32–0:45 · Share + estructura target:**\nPlenaria: instructor recoge respuestas. Introduce la estructura:\n> *\"The technician is in the hospital. The problem is poor PPE compliance.\"*\n\n✅ **Formative Checkpoint 1:** Pedir a 3 voluntarios que completen: *\"The ___ is in ___.\"* — corregir solo verbo be (ACCURACY).\n\n---\n\n### WHILE-B — PM-2.1 Act 2: The Map (0:45–1:30 · 45 min)\n\n**0:45–0:50 · Proyectar/distribuir infografía del workshop layout:**\n**TT:**\n> *\"This is The Diesel Workshop. Look — 9 areas. Let's name them together. Repeat after me: RE-cep-tion A-rea.\"*\n\n💡 Señalar cada zona. Finger drilling: WORK-shop (●○), SER-vice BAY (●○ ●). Mínimo 3 repetitions por término difícil.\n\n**0:50–1:05 · Drill de zonas (choral + individual):**\nInstructor apunta al mapa → grupo dice el nombre → voluntario usa en oración:\n- *\"This is the ___ .\"*\n- *\"The ___ is next to the ___.\"*\n\n**1:05–1:20 · Actividad en pares — 'Describe your spot':**\n*\"Point to a zone. Tell your partner: 'This is the ___. The ___ is in the ___.' Two zones each.\"*\n\n**ICQ:** *\"Do you write or speak? — Speak. How many zones? — Two each. Do you use notes? — Yes, the map is OK. Go.\"*\n\n**1:20–1:30 · Plenaria: Personajes en el mapa:**\n*\"Where is Carlos Mendoza? In the service bay. Where is Valentina Cruz? Near the hazmat zone.\"*\n\nIntroduce: *\"There is a floor jack in Bay 2.\"* (Gr2 preview — no formal todavía)\n\n💡 Las estructuras **be** y **there is/are** aparecen naturalmente — no corregir Gr2 aún, solo modelar.\n\n---\n\n### WHILE-C — PM-2.1 Act 3: The Story + The Debate (1:30–2:30 · 60 min)\n\n**1:30–1:40 · The Story — introducción de personajes:**\n**TT:**\n> *\"It's Monday morning at The Diesel Workshop. Carlos Mendoza is the Lead Technician — he's experienced, he's professional, he's strict about safety. Valentina Cruz is the Safety Officer — she's the PPE expert. Santiago Ríos is the new apprentice — that's you. He's nervous, but he's ready.\"*\n\n💡 Mientras el instructor narra, apuntar a las tarjetas de personajes. Aprendices pueden tomar notas de palabras.\n\n**1:40–1:50 · Debate Setup — 3 afirmaciones:**\nProyectar afirmaciones una por una:\n1. *\"Preventive maintenance is more important than corrective maintenance.\"*\n2. *\"A mechanic who doesn't speak English cannot read a diesel engine manual.\"*\n3. *\"PPE rules are just bureaucracy — an experienced mechanic doesn't need them.\"*\n\n**TT:**\n> *\"You have green and red cards. Green = I agree. Red = I disagree. I'll read the statement. Vote with your card. Then explain.\"*\n\nDistribuir tarjetas verde/rojo.\n\n**ICQ:** *\"Green card means? — I agree. Red card means? — I disagree. Do you need to speak? — Yes, one sentence. What sentence starters are on the board? — 'I think... because...' and 'I disagree because...' OK — first statement.\"*\n\n**1:50–2:25 · Debate (3 afirmaciones × ~12 min):**\nPor cada afirmación:\n- Instructor lee → votar (30 seg)\n- 3–4 voluntarios explican (2 min)\n- Instructor recast silencioso: anotar 1–2 errores en pizarra (anónimos)\n- Mini cierre: *\"The correct answer in technical English is...\"*\n\n💡 **FLUENCY mode durante el debate** — no interrumpir producción. Feedback diferido al final.\n\n**2:25–2:30 · Post-debate feedback diferido:**\n> *\"Let's look at two sentences from today. (Escribe anónimamente.) What is the grammar error? Let's correct it together.\"*\n\n✅ **Formative Checkpoint 2:** 2 oraciones en pizarra — grupo identifica el error y propone corrección. (ACCURACY – verbo be.)\n\n---\n\n**2:30–2:50 · BREAK (20 min)**\n\n---\n\n### WHILE-D — PM-2.2 Act 1: KWL Grupal (2:50–3:30 · 40 min)\n\n**2:50–2:55 · Distribuir tabla KWL + instrucción:**\n**TT:**\n> *\"After the break — new activity. KWL table. Three columns: K = what I know, W = what I want to learn, L = what I learned — that's for Session 8. Now: column K and W only.\"*\n\n**ICQ:** *\"How many columns do you complete today? — Two. Which ones? — K and W. When do you complete L? — Session 8. Go — you have 5 minutes.\"*\n\n**2:55–3:10 · Individual → Think-Pair-Share:**\n- 5 min individual (K + W)\n- 5 min pares: comparar + agregar\n- Plenaria: instructor construye KWL GRUPAL en pizarrón/flip chart\n\n💡 El KWL grupal queda permanente en el aula hasta S8. Fotografiar para continuidad.\n\n**3:10–3:20 · Vocabulary Map grupal:**\n> *\"Column W — what do you want to learn? Let's map the vocabulary on the board.\"*\nInstructor anota en inglés los términos que el grupo ya conoce. Esto informa a PM-2.5.\n\n**3:20–3:30 · Introducir el Learning Contract:**\n> *\"The W column is your learning contract. These are the questions you want to answer. In 7 more sessions — we answer them all.\"*\n\nPegar post-its con la columna W en el margen del mapa de personajes.\n\n---\n\n### WHILE-E — PM-2.2 Act 2: Safety Images (3:30–4:05 · 35 min)\n\n**3:30–3:35 · Distribuir/proyectar las 4 imágenes:**\n**TT:**\n> *\"Look at these four pictures from The Diesel Workshop. Each picture has a safety problem. Your job: find the problem and describe it in English.\"*\n\nEstructuras en pizarra:\n- *\"The technician is not wearing ___.\"*\n- *\"The tools are on the ___.\"*\n- *\"There is a ___ near ___.\"*\n- *\"The ___ is blocked by ___.\"*\n\n**ICQ:** *\"Do you write or speak? — Both. Do you write full sentences? — Yes, use the sentence starters. How many pictures? — Four. Do you work alone? — No, in pairs. Go.\"*\n\n**3:35–3:50 · Pares — describir las 4 imágenes (15 min):**\nIMG-01: Técnico sin protección ocular/guantes\nIMG-02: Toolbox abierto, herramientas en el piso\nIMG-03: Derrame de aceite sin señalización\nIMG-04: Extinguidor bloqueado\n\n💡 **NO corregir Gr2 (There is/are)** en esta actividad — es preview diagnóstico. Anotar producción del grupo para ajustar PM-2.5.\n\n**3:50–4:05 · Plenaria — respuestas modelo:**\nInstructor proyecta/lee respuesta modelo por imagen. Grupo compara con su producción.\n\n| Imagen | Respuesta modelo |\n|--------|-----------------|\n| IMG-01 | *\"The technician is not wearing goggles. He should wear gloves.\"* |\n| IMG-02 | *\"The tools are on the floor. The toolbox is open.\"* |\n| IMG-03 | *\"There is a spill near the bay door. There is no warning sign.\"* |\n| IMG-04 | *\"The fire extinguisher is blocked by a box.\"* |\n\n---\n\n### WHILE-F — PM-2.2 Act 3: Gap Cards + Peer Interview (4:05–4:45 · 40 min)\n\n**4:05–4:10 · Distribuir Gap Cards:**\n**TT:**\n> *\"These are your Gap Cards. Six statements — 'I can...'. Rate yourself from 1 to 5. 1 = I can't do this yet. 5 = I can do this well. Be honest — this is NOT a grade.\"*\n\n**ICQ:** *\"Is this a grade? — No. What does 5 mean? — I can do this well. Do you sign it with your name? — Yes, we need it for Session 8. Go — 3 minutes.\"*\n\n**4:10–4:15 · Completar Gap Cards (individual):**\n\nCriterios Gap Card:\n1. I can name 15 of the 20 key tools and areas of a diesel workshop in English.\n2. I can classify types of maintenance (preventive, corrective, predictive) in English.\n3. I can identify and report a safety hazard to my supervisor in English.\n4. I can fill in a daily inspection checklist in English.\n5. I can give basic instructions about PPE in English.\n6. I can describe the current state of a service bay in English.\n\n💡 **GUARDAR las Gap Cards.** El instructor las recoge al final y las redistribuye en S8.\n\n**4:15–4:35 · Peer Interview (5 preguntas):**\n**TT:**\n> *\"Now — interview your partner. You have a script with 5 questions. Ask them in English. Write their answers. 10 minutes each direction — start.\"*\n\nScript de entrevista:\n1. *\"What tools do you use most in the workshop?\"*\n2. *\"What type of maintenance do you do most — preventive or corrective?\"*\n3. *\"Do you always wear PPE? Which PPE do you wear?\"*\n4. *\"What happens in your workshop when there is a spill?\"*\n5. *\"What English words from the workshop do you already know?\"*\n\n💡 El instructor circula, toma notas del baseline de producción oral. NO corregir — solo observar y anotar.\n\n**4:35–4:45 · Share-out grupal (2–3 pares):**\n> *\"Tell us one interesting thing about your partner's workshop in English.\"*\n\n---"
+    },
+    "wrap_up": {
+      "heading": "6. WRAP-UP (4:45–5:00 · 15 min)",
+      "body_markdown": "\n### 4:45–4:52 · Exit Ticket oral (3-2-1)\n**TT:**\n> *\"Before we finish — 3-2-1. Tell me: 3 English words you learned today. 2 areas of the workshop in English. 1 thing you want to learn in this course.\"*\n\nPares → 2 voluntarios comparten en plenaria.\n\n### 4:52–4:57 · Closing Teacher Talk\n> *\"Excellent work today. Look at the W column on the board — these are the questions you want to answer. We answer them all in the next 7 sessions. See you next class. The English Zone continues.\"*\n\n💡 Recordar: recoger las Gap Cards (guardar para S8). Fotografiar el KWL grupal en pizarra.\n\n### 4:57–5:00 · Asignación de trabajo autónomo\n> *\"For next class — three things. First: take a picture of your Gap Card — it's your personal baseline. Second: write 5 words from today's vocabulary map in a sentence. Third: look at the Shadow Foam article online — '20 Must Have Mechanic Tools 2024' — and write down 3 tools you don't know in English. We start with those next class.\"*\n\n---"
+    },
+    "answer_key_consolidado": {
+      "heading": "7. ANSWER KEY CONSOLIDADO",
+      "body_markdown": "\n### Debate — respuestas técnicamente correctas (para cierre de instructor)\n| Afirmación | Posición técnica |\n|-----------|-----------------|\n| Preventive > corrective | **Correcto** — PM reduce costos y tiempo de inactividad |\n| Sin inglés no se lee manual | **Correcto** — manuales de motores diesel son en inglés (SAE, ISO) |\n| PPE = burocracia | **Incorrecto** — PPE es requisito legal y técnico; OSHA / NTC 4116 |\n\n### Safety Images — respuestas modelo\nVer tabla en WHILE-E (sección 3:50–4:05 arriba).\n\n### Cuestionario No 1 — No aplica S1. Primer instrumento: S2.\n\n---"
+    },
+    "differentiation": {
+      "heading": "8. DIFFERENTIATION NOTES",
+      "body_markdown": "\n### Fast Finishers (Actividades 1–3 PM-2.1)\n- En The Headline: buscar 2 palabras técnicas adicionales con sus raíces en latín (hospital-, compli-).\n- En The Map: escribir 3 oraciones completas adicionales con preposiciones de lugar.\n- En el Debate: preparar una réplica al argumento del compañero con una oración nueva.\n\n### Need More Support\n- En The Map: permitir uso de traducción del layout en español en la primera ronda; segunda ronda solo en inglés.\n- En el Debate: usar exclusivamente las frases ancla del board. No exigir extensión de respuesta — 1 frase es suficiente.\n- En el Gap Card: permite calificación 1–2 sin presión. Recordar: \"This is your starting point — not your ending point.\"\n- En la entrevista: el par puede leer las preguntas en voz alta del script; no requiere memorización.\n\n---"
+    },
+    "instructor_self_check": {
+      "heading": "9. INSTRUCTOR SELF-CHECK (al terminar S1)",
+      "body_markdown": "\n1. ¿El KWL grupal quedó escrito/visible en el aula para S2–S8?\n2. ¿Recogiste y guardaste las Gap Cards de todos los aprendices (para S8)?\n3. ¿Tomaste nota del baseline de producción oral (vocabulario activo vs. pasivo)?\n4. ¿El English Zone se declaró explícitamente y se mantuvo durante Actividades 2 y 3 de PM-2.1?\n5. ¿Anotaste el vocabulario previo del grupo (peer interview) para calibrar la intensidad del scaffold en PM-2.5?\n\n---\n\n*pm-3-2-s1.md · DIESEL-2026-04-19 · status: pending_review*"
+    }
+  },
+  "pm0_protocol": {
+    "__pending_fase_3__": true,
+    "__filled_by__": "scripts/pm-3-2-pm0-patch.js (Fase 3 del upgrade)",
+    "__source__": "pm-3-1.json.pm0_alignment_by_session (a sembrar en Fase 3)",
+    "grammar_groups_hint": "Gr1 INTRO — Verbo be",
+    "feedback": {
+      "mode": null,
+      "__pending__": true
+    },
+    "l1_management": {
+      "l1_percentage": 30,
+      "l1_percentage_unit": "%",
+      "__pending_source__": "pm-0-context.json l1_policy_per_guide"
+    },
+    "stress_pronunciation": {
+      "__pending__": true
+    },
+    "success_vocabulary": {
+      "__pending__": true
+    },
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1",
+      "__pending__": true
+    }
+  },
+  "activity_logistics": {},
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    }
+  },
+  "_source_md": "pm-3-2-s1.md"
+}
