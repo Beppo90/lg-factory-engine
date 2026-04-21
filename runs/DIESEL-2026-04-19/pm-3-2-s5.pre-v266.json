@@ -2,7 +2,7 @@
   "pm_id": "PM-3.2",
   "pm_name": "Playbook Build-Out — Step by Step",
   "pm_version": "2.6.6",
-  "pm_verified_against_prompt": true,
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (Required Output Schema v2.6.6)",
   "session": 5,
   "session_label": "S5",
   "session_name": "The Workshop in Action",
@@ -19,17 +19,7 @@
   "status": "structured_from_md_v266",
   "pipeline_note": "Estructurado desde pm-3-2-s5.md en Fase 2 del upgrade DIESEL-04-19 v2.6.6. Contenido pedagógico preservado 100%.",
   "momento_sena": "Apropiación — Integración Pragmática (Language Functions) (3.3)",
-  "estrategia_didactica": {
-    "session": 5,
-    "estrategia_dominante": "ABT — Language Functions F1–F5 en interacción de taller",
-    "ciclo_sena_anchor": {
-      "3.1_reflexion_inicial": "S1 — ABP (el taller diésel y el brief técnico motivan el inglés ocupacional)",
-      "3.2_contextualizacion": "S1 — Diagnóstico (Gap Card + KWL chart + Learning Contract)",
-      "3.3_apropiacion": "S2–S5 — ABT dominante (tareas con producto verificable: Reading HOTS, Inspection Form, Listening gist+detail, Speaking roleplay, Language Functions F1–F5) | S6 — Evaluación Formativa Integrada (Cuestionario Consolidado 25pts)",
-      "3.4_transferencia": "S6b + S7–S8 — ABP (Workshop Readiness Report Mission) con fases Planeación → Diseño → Desempeño → Presentación → Evaluación reflexiva"
-    },
-    "note": "Propagated from pm-3-1.estrategias_resumen by gen_pm32_v266_pm0_propagate.js"
-  },
+  "estrategia_didactica": null,
   "justificacion_didactica": null,
   "pms_involucrados": "PM-2.9 (Language Functions — Communicative Competence) — sesión completa",
   "l1_management_summary": {
@@ -84,99 +74,29 @@
     }
   },
   "pm0_protocol": {
-    "grammar_groups": {
-      "intro": [
-        {
-          "group_id": "Gr 3",
-          "group_name": "Present Simple (rutinas y procedimientos)",
-          "ejemplo": "I check the bay every morning. The mechanic changes oil weekly."
-        }
-      ],
-      "consolida": [
-        {
-          "group_id": "Gr 7",
-          "group_name": "can/can't",
-          "ejemplo": "I can do basic maintenance. I can't diagnose electrical faults yet."
-        }
-      ],
-      "aplica": [
-        {
-          "group_id": "Gr 1",
-          "group_name": "be",
-          "ejemplo": "He is the supervisor."
-        },
-        {
-          "group_id": "Gr 2",
-          "group_name": "there is/are",
-          "ejemplo": "There are three mechanics on duty."
-        },
-        {
-          "group_id": "Gr 5",
-          "group_name": "Imperativo",
-          "ejemplo": "Please wait. Don't start the engine."
-        }
-      ]
-    },
+    "__pending_fase_3__": true,
+    "__filled_by__": "scripts/pm-3-2-pm0-patch.js (Fase 3 del upgrade)",
+    "__source__": "pm-3-1.json.pm0_alignment_by_session (a sembrar en Fase 3)",
+    "grammar_groups_hint": "Gr7 CONSOLIDA (can/can't) + Gr3 INTRO (Present Simple)",
     "feedback": {
-      "dominant_mode": "FLUENCY-LEANING",
-      "rationale": "Producción oral (S4) y funciones comunicativas (S5) priorizan fluidez sobre perfección formal. PM-0 §5.9.",
-      "accuracy_techniques": [
-        "Recast solo en errores que bloquean comprensión",
-        "Delayed correction en whiteboard al final del bloque"
-      ],
-      "fluency_techniques": [
-        "Encouragement verbal y no verbal (nodding, thumbs up)",
-        "Reformulación modelada sin señalar error",
-        "Fomentar communication strategies (gestures, synonyms)"
-      ]
+      "mode": null,
+      "__pending__": true
     },
     "l1_management": {
-      "l1_max_pct": 12,
-      "english_zone_dominance": "12/88 L1/L2",
-      "legitimate_uses": [
-        "Consulta léxica ocasional F1–F5"
-      ],
-      "reduction_strategy": "Functions practice en interacción autónoma",
-      "rationale": "Language Functions — L1 solo como consulta léxica ocasional; interacción 85%+ en inglés. PM-0 §9.1."
+      "l1_percentage": 12,
+      "l1_percentage_unit": "%",
+      "__pending_source__": "pm-0-context.json l1_policy_per_guide"
     },
     "stress_pronunciation": {
-      "focus_words": [
-        "Can you help?",
-        "I can fix it",
-        "I can't see",
-        "Every morning",
-        "Every day"
-      ],
-      "physical_techniques": [
-        "Sentence stress rhythm clap",
-        "Content words STRONG / function words weak"
-      ],
-      "board_marking": "CAPS para content words + strike-through para function words"
+      "__pending__": true
     },
     "success_vocabulary": {
-      "target_terms": [
-        "F1 greeting",
-        "F2 reporting",
-        "F3 clarifying",
-        "F4 routines",
-        "F5 instructing",
-        "every morning",
-        "every day",
-        "every week"
-      ],
-      "success_factors_applied": [
-        "Seen (Word Wall permanente — 5 cats × 4 términos)",
-        "Used (producción activa en la sesión)",
-        "Contextualized (realia de taller diésel)",
-        "Connected (chunks + colocaciones Toolbelt)",
-        "Elaborated (HOTS desde S2)",
-        "Spaced (reciclaje circular S2→S6)",
-        "Self-explained (metacognición S6+)"
-      ]
+      "__pending__": true
     },
-    "cefr_descriptor_focus": "A1.1 · ver pm-0-context.json cefr_descriptors_per_guide[0] — subnivel y can-do de S5",
-    "pedagogical_shift_hook": "Shift 3 — ver pm-0-context.json methodological_shifts_per_guide[0]",
-    "traceability_seed_22": "Checklist 22-items aplica — ver pm-0-context.json traceability_checklist_ref"
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1",
+      "__pending__": true
+    }
   },
   "activity_logistics": {},
   "data_flow_contract": {
@@ -186,14 +106,5 @@
       "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
     }
   },
-  "_source_md": "pm-3-2-s5.md",
-  "session_logistics": {
-    "session": 5,
-    "ambiente": "Aula bilingüe en círculo para Language Functions + estación de roleplay F1–F5 con realia de taller (casco, llave inglesa, trapo).",
-    "momento_sena": "Apropiación — Integración Pragmática (Language Functions) (3.3)",
-    "estrategia_dominante": "ABT — Language Functions F1–F5 en interacción de taller",
-    "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
-  },
-  "pipeline_version": "v2.6.6",
-  "_v266_propagated_at": "2026-04-21T15:32:22.128Z"
+  "_source_md": "pm-3-2-s5.md"
 }
