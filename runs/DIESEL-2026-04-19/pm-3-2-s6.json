@@ -90,84 +90,100 @@
     }
   },
   "pm0_protocol": {
-    "grammar_groups": {
-      "intro": [],
-      "consolida": [],
-      "aplica": [
-        {
-          "group_id": "Gr 1",
-          "group_name": "be",
-          "ejemplo": "Cuestionario items testing 'is/are/am'."
-        },
-        {
-          "group_id": "Gr 2",
-          "group_name": "there is/are",
-          "ejemplo": "Items testing existence structures."
-        },
-        {
-          "group_id": "Gr 3",
-          "group_name": "Present Simple",
-          "ejemplo": "Items testing routines."
-        },
-        {
-          "group_id": "Gr 5",
-          "group_name": "Imperativo",
-          "ejemplo": "Items testing instructions."
-        },
-        {
-          "group_id": "Gr 7",
-          "group_name": "can/can't",
-          "ejemplo": "Items testing ability statements."
-        }
-      ]
-    },
+    "__inherited_from__": "pm-0-context.json + pm-3-1.json.pm0_alignment_by_session",
+    "__contract_version__": "v2.6.6-canon",
+    "grammar_groups": [
+      {
+        "group_id": "Gr 1",
+        "group_name": "be",
+        "nivel_activacion": "Aplica",
+        "ejemplo_en_sesion": "Cuestionario items testing 'is/are/am'."
+      },
+      {
+        "group_id": "Gr 2",
+        "group_name": "there is/are",
+        "nivel_activacion": "Aplica",
+        "ejemplo_en_sesion": "Items testing existence structures."
+      },
+      {
+        "group_id": "Gr 3",
+        "group_name": "Present Simple",
+        "nivel_activacion": "Aplica",
+        "ejemplo_en_sesion": "Items testing routines."
+      },
+      {
+        "group_id": "Gr 5",
+        "group_name": "Imperativo",
+        "nivel_activacion": "Aplica",
+        "ejemplo_en_sesion": "Items testing instructions."
+      },
+      {
+        "group_id": "Gr 7",
+        "group_name": "can/can't",
+        "nivel_activacion": "Aplica",
+        "ejemplo_en_sesion": "Items testing ability statements."
+      }
+    ],
+    "grammar_carga_check": "5 Aplica (todos los grupos) — carga de evaluación sumativa consolidada ✓",
     "feedback": {
-      "dominant_mode": "ACCURACY",
-      "rationale": "Escritura formal (S3) y evaluación sumativa (S6) requieren precisión. PM-0 §5.9.",
+      "mode": "ACCURACY",
+      "rationale": "Evaluación sumativa — cuestionario requiere precisión medible. PM-0 §5.9.",
       "accuracy_techniques": [
-        "Recast inmediato (repetir forma correcta sin señalar error)",
-        "Clarification request ('Sorry, can you repeat?')",
-        "Prompting con scaffolding visual (señalar al Word Wall)"
+        "Sin feedback durante ejecución (condiciones de examen)",
+        "Feedback post-cuestionario con respuestas correctas"
       ],
-      "fluency_techniques": [
-        "Wait-time de 3 segundos antes de corregir",
-        "Error log posterior (no interrumpir producción)"
+      "fluency_techniques": [],
+      "mixed_techniques": [
+        "Metacognición reflexiva final (¿qué dominé?, ¿qué queda por mejorar?)"
       ]
     },
     "l1_management": {
-      "l1_max_pct": 10,
-      "english_zone_dominance": "10/90 L1/L2",
-      "legitimate_uses": [
-        "Instrucciones iniciales del cuestionario",
-        "Metacognición reflexiva final"
-      ],
-      "reduction_strategy": "Cuestionario 100% en L2",
-      "rationale": "Evaluación — cuestionario 100% en inglés; L1 solo en instrucciones iniciales y metacognición final. PM-0 §9.1."
+      "l1_percentage": 10,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_policy_per_guide[0].s1_to_s8 — S6 10% (PM-0 §9.1)",
+      "l1_rationale": "Evaluación — cuestionario 100% en inglés; L1 solo en instrucciones iniciales y metacognición final. PM-0 §9.1."
     },
     "stress_pronunciation": {
-      "focus_words": [
-        "N/A — evaluation day, no new stress work"
-      ],
-      "physical_techniques": [],
-      "board_marking": "—"
-    },
-    "success_vocabulary": {
-      "target_terms": [
-        "ALL A1.1 vocabulary as evaluation object"
-      ],
-      "success_factors_applied": [
-        "Seen (Word Wall permanente — 5 cats × 4 términos)",
-        "Used (producción activa en la sesión)",
-        "Contextualized (realia de taller diésel)",
-        "Connected (chunks + colocaciones Toolbelt)",
-        "Elaborated (HOTS desde S2)",
-        "Spaced (reciclaje circular S2→S6)",
-        "Self-explained (metacognición S6+)"
+      "focus_words": [],
+      "techniques": [
+        "Sin stress nuevo — evaluación sumativa"
       ]
     },
-    "cefr_descriptor_focus": "A1.1 · ver pm-0-context.json cefr_descriptors_per_guide[0] — subnivel y can-do de S6",
-    "pedagogical_shift_hook": "Shift 3 — ver pm-0-context.json methodological_shifts_per_guide[0]",
-    "traceability_seed_22": "Checklist 22-items aplica — ver pm-0-context.json traceability_checklist_ref"
+    "success_vocabulary": {
+      "target_words": [
+        "ALL A1.1 vocabulary as evaluation object"
+      ],
+      "factors_applied": [
+        "Retrieval",
+        "Connected",
+        "Self-explanation"
+      ],
+      "operationalization": "Retrieval: cuestionario de 25 ítems exige recuperación activa. Connected: secciones R/W/L/S/F integran vocabulario en contexto. Self-explanation: metacognición final reflexiona sobre qué vocabulario se domina."
+    },
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1",
+      "habilidad_principal": "integradas",
+      "descriptor_activo": "Demuestra dominio integrado de las 5 habilidades A1.1 en cuestionario consolidado.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Natural — cuestionario en condiciones de examen",
+      "extension_textos": "Cuestionario 25 ítems (5 skills × 5)",
+      "andamiaje": "Bajo — solo instrucciones iniciales",
+      "rol_docente": "Examinador + metacognitive coach",
+      "source": "PM-0 §8 + methodological_shifts_per_guide[0]"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A2 — Evaluación sumativa integrada",
+        "B5 — L1 10%",
+        "B12 — Cuestionario consolidado",
+        "C3 — Evaluación Sumativa",
+        "D7 — E6 25pts"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S6."
+    }
   },
   "activity_logistics": {},
   "data_flow_contract": {
@@ -186,5 +202,5 @@
     "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
   },
   "pipeline_version": "v2.6.6",
-  "_v266_propagated_at": "2026-04-21T15:32:22.131Z"
+  "_v266_propagated_at": "2026-04-21T15:37:15.555Z"
 }

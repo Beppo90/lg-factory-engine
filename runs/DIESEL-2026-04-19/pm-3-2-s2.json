@@ -84,97 +84,128 @@
     }
   },
   "pm0_protocol": {
-    "grammar_groups": {
-      "intro": [
-        {
-          "group_id": "Gr 2",
-          "group_name": "There is / there are + some/any (existencia con Toolbelt)",
-          "ejemplo": "There are five categories in the Toolbelt. Are there any tools?"
-        }
-      ],
-      "consolida": [
-        {
-          "group_id": "Gr 1",
-          "group_name": "Verbo be",
-          "ejemplo": "This is a wrench. These are spark plugs."
-        }
-      ],
-      "aplica": []
-    },
+    "__inherited_from__": "pm-0-context.json + pm-3-1.json.pm0_alignment_by_session",
+    "__contract_version__": "v2.6.6-canon",
+    "grammar_groups": [
+      {
+        "group_id": "Gr 1",
+        "group_name": "Verbo be",
+        "nivel_activacion": "Reciclaje receptivo",
+        "ejemplo_en_sesion": "This is a wrench. These are spark plugs."
+      },
+      {
+        "group_id": "Gr 2",
+        "group_name": "There is / there are + some/any",
+        "nivel_activacion": "Intro",
+        "ejemplo_en_sesion": "There are five categories. Are there any tools missing?"
+      }
+    ],
+    "grammar_carga_check": "1 Intro (Gr 2) + 1 Reciclaje (Gr 1) — carga apropiada para input receptivo A1.1 ✓",
     "feedback": {
-      "dominant_mode": "ACCURACY",
-      "rationale": "Input receptivo y diagnóstico/lectura — foco en chunks precisos. PM-0 §5.9.",
+      "mode": "ACCURACY",
+      "rationale": "Input receptivo — foco en chunks precisos del Toolbelt. PM-0 §5.9.",
       "accuracy_techniques": [
-        "Recast inmediato (repetir forma correcta sin señalar error)",
-        "Clarification request ('Sorry, can you repeat?')",
-        "Prompting con scaffolding visual (señalar al Word Wall)"
+        "Recast inmediato en lectura en voz alta",
+        "Clarification request ('Say again?')",
+        "Word Wall pointing (señalar al Word Wall al oir error léxico)"
       ],
       "fluency_techniques": [
-        "Wait-time de 3 segundos antes de corregir",
-        "Error log posterior (no interrumpir producción)"
-      ]
+        "Wait-time de 3s antes de corregir",
+        "Peer-check en parejas antes del recast del instructor"
+      ],
+      "mixed_techniques": []
     },
     "l1_management": {
-      "l1_max_pct": 25,
-      "english_zone_dominance": "25/75 L1/L2",
-      "legitimate_uses": [
-        "Instructions for Toolbelt task",
-        "Pre-reading vocabulary clarification"
-      ],
-      "reduction_strategy": "Mayoría de input en L2 + scaffold visual",
-      "rationale": "Input receptivo — L1 para clarificar instrucciones + vocabulary scaffolding. Reducción progresiva. PM-0 §9.1."
+      "l1_percentage": 25,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_policy_per_guide[0].s1_to_s8 — S2 25% (PM-0 §9.1)",
+      "l1_rationale": "Input receptivo — L1 para clarificar instrucciones + vocabulary scaffolding. Reducción progresiva. PM-0 §9.1."
     },
     "stress_pronunciation": {
       "focus_words": [
+        {
+          "word": "wrench",
+          "ipa": "/rɛntʃ/",
+          "tonica": "MONOSÍLABO (WRENCH)"
+        },
+        {
+          "word": "screwdriver",
+          "ipa": "/ˈskruːdraɪvər/",
+          "tonica": "PRIMERA (SCREWdriver)"
+        },
+        {
+          "word": "inspection",
+          "ipa": "/ɪnˈspɛkʃən/",
+          "tonica": "SEGUNDA (inSPECtion)"
+        },
+        {
+          "word": "coolant",
+          "ipa": "/ˈkuːlənt/",
+          "tonica": "PRIMERA (COOlant)"
+        },
+        {
+          "word": "piston",
+          "ipa": "/ˈpɪstən/",
+          "tonica": "PRIMERA (PISton)"
+        }
+      ],
+      "techniques": [
+        "Handclap",
+        "Finger tap",
+        "Voice level rise on stressed syllable"
+      ]
+    },
+    "success_vocabulary": {
+      "target_words": [
         "wrench",
         "screwdriver",
         "inspection",
         "coolant",
         "piston",
-        "cylinder",
-        "battery",
-        "filter",
-        "sparkplug",
-        "gasket"
-      ],
-      "physical_techniques": [
-        "Handclap",
-        "Finger tap on desk",
-        "Voice level rise on stressed syllable"
-      ],
-      "board_marking": "Círculo rojo + acento visual encima del fonema"
-    },
-    "success_vocabulary": {
-      "target_terms": [
-        "Tools(4)",
-        "Fluids(4)",
-        "Parts(4)",
-        "PPE(4)",
-        "Actions(4)",
-        "wrench",
-        "screwdriver",
-        "coolant",
-        "piston",
-        "gasket",
         "battery",
         "filter",
         "sparkplug",
         "oil",
-        "fuel"
+        "fuel",
+        "Tools",
+        "Fluids",
+        "Parts",
+        "PPE",
+        "Actions"
       ],
-      "success_factors_applied": [
-        "Seen (Word Wall permanente — 5 cats × 4 términos)",
-        "Used (producción activa en la sesión)",
-        "Contextualized (realia de taller diésel)",
-        "Connected (chunks + colocaciones Toolbelt)",
-        "Elaborated (HOTS desde S2)",
-        "Spaced (reciclaje circular S2→S6)",
-        "Self-explained (metacognición S6+)"
-      ]
+      "factors_applied": [
+        "Sounds",
+        "Encounter",
+        "Elaboration",
+        "Spaced-retrieval",
+        "Connected"
+      ],
+      "operationalization": "Sounds: stress drill pre-reading (5 min). Encounter: texto Motor Age + realia en mesa. Elaboration: sorting en 5 categorías Toolbelt. Spaced-retrieval: Word Wall activado para reciclaje en S3+. Connected: colocaciones check + oil level."
     },
-    "cefr_descriptor_focus": "A1.1 · ver pm-0-context.json cefr_descriptors_per_guide[0] — subnivel y can-do de S2",
-    "pedagogical_shift_hook": "Shift 1 — ver pm-0-context.json methodological_shifts_per_guide[0]",
-    "traceability_seed_22": "Checklist 22-items aplica — ver pm-0-context.json traceability_checklist_ref"
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1",
+      "habilidad_principal": "comprension_lectora",
+      "descriptor_activo": "Reconoce palabras y frases técnicas básicas acompañadas de imágenes en contextos conocidos (taller).",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot.comprension_lectora"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Lenta — pausas en transiciones de párrafo",
+      "extension_textos": "4-6 oraciones + imágenes + Word Wall",
+      "andamiaje": "Alto — sentence frames + categorization scaffolds",
+      "rol_docente": "Modelo + reader + sorter facilitator",
+      "source": "PM-0 §8 + methodological_shifts_per_guide[0]"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A1 — A1.1 comprensión lectora",
+        "B4 — Word Wall activado",
+        "B7 — Spaced-retrieval Toolbelt",
+        "C2 — Bloque FPI Apropiación",
+        "D2 — E1 Reading (5pts)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S2."
+    }
   },
   "activity_logistics": {},
   "data_flow_contract": {
@@ -193,5 +224,5 @@
     "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
   },
   "pipeline_version": "v2.6.6",
-  "_v266_propagated_at": "2026-04-21T15:32:22.115Z"
+  "_v266_propagated_at": "2026-04-21T15:37:15.539Z"
 }

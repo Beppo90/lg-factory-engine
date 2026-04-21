@@ -84,79 +84,82 @@
     }
   },
   "pm0_protocol": {
-    "grammar_groups": {
-      "intro": [
-        {
-          "group_id": "Gr 7",
-          "group_name": "can/can't (habilidad técnica)",
-          "ejemplo": "I can fix this. The mechanic can't reach the bolt."
-        }
-      ],
-      "consolida": [
-        {
-          "group_id": "Gr 5",
-          "group_name": "Imperativo",
-          "ejemplo": "Listen carefully. Don't interrupt."
-        }
-      ],
-      "aplica": [
-        {
-          "group_id": "Gr 1",
-          "group_name": "be",
-          "ejemplo": "This is loud. The engine is noisy."
-        },
-        {
-          "group_id": "Gr 2",
-          "group_name": "there is/are",
-          "ejemplo": "There is a problem with the oil."
-        }
-      ]
-    },
+    "__inherited_from__": "pm-0-context.json + pm-3-1.json.pm0_alignment_by_session",
+    "__contract_version__": "v2.6.6-canon",
+    "grammar_groups": [
+      {
+        "group_id": "Gr 5",
+        "group_name": "Imperativo",
+        "nivel_activacion": "Consolida",
+        "ejemplo_en_sesion": "Listen carefully. Don't interrupt."
+      },
+      {
+        "group_id": "Gr 7",
+        "group_name": "can/can't (habilidad técnica)",
+        "nivel_activacion": "Intro",
+        "ejemplo_en_sesion": "I can fix this. The mechanic can't reach the bolt."
+      }
+    ],
+    "grammar_carga_check": "1 Intro (Gr 7) + 1 Consolida (Gr 5) — carga apropiada para listening + speaking A1.1 ✓",
     "feedback": {
-      "dominant_mode": "FLUENCY-LEANING",
-      "rationale": "Producción oral (S4) y funciones comunicativas (S5) priorizan fluidez sobre perfección formal. PM-0 §5.9.",
+      "mode": "FLUENCY-LEANING",
+      "rationale": "Producción oral (roleplay mechanic/supervisor) prioriza fluidez sobre perfección formal. PM-0 §5.9.",
       "accuracy_techniques": [
         "Recast solo en errores que bloquean comprensión",
         "Delayed correction en whiteboard al final del bloque"
       ],
       "fluency_techniques": [
-        "Encouragement verbal y no verbal (nodding, thumbs up)",
-        "Reformulación modelada sin señalar error",
-        "Fomentar communication strategies (gestures, synonyms)"
+        "Encouragement verbal (Good! Keep going!)",
+        "Communication strategies (gestures, tools on desk as realia)",
+        "Self-repair modeling"
+      ],
+      "mixed_techniques": [
+        "Word stress mini-drill antes del roleplay (5 min)"
       ]
     },
     "l1_management": {
-      "l1_max_pct": 15,
-      "english_zone_dominance": "15/85 L1/L2",
-      "legitimate_uses": [
-        "Emergency repair of comprehension breakdown"
-      ],
-      "reduction_strategy": "Roleplay mechanic/supervisor English-only",
-      "rationale": "Listening + Speaking — L1 reducido a emergencias comunicativas; roleplay en English-only. PM-0 §9.1."
+      "l1_percentage": 15,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_policy_per_guide[0].s1_to_s8 — S4 15% (PM-0 §9.1)",
+      "l1_rationale": "Listening + Speaking — L1 reducido a emergencias comunicativas; roleplay en English-only. PM-0 §9.1."
     },
     "stress_pronunciation": {
       "focus_words": [
-        "diagnostic",
-        "inspection",
-        "pressure",
-        "torque",
-        "adjustment",
-        "malfunction",
-        "replacement",
-        "compression",
-        "alignment",
-        "calibration"
+        {
+          "word": "diagnostic",
+          "ipa": "/ˌdaɪəɡˈnɒstɪk/",
+          "tonica": "TERCERA (diagNOStic)"
+        },
+        {
+          "word": "pressure",
+          "ipa": "/ˈprɛʃər/",
+          "tonica": "PRIMERA (PREssure)"
+        },
+        {
+          "word": "torque",
+          "ipa": "/tɔːrk/",
+          "tonica": "MONOSÍLABO"
+        },
+        {
+          "word": "malfunction",
+          "ipa": "/mælˈfʌŋkʃən/",
+          "tonica": "SEGUNDA (malFUNCtion)"
+        },
+        {
+          "word": "replacement",
+          "ipa": "/rɪˈpleɪsmənt/",
+          "tonica": "SEGUNDA (rePLACEment)"
+        }
       ],
-      "physical_techniques": [
+      "techniques": [
         "Handclap",
         "Elastic band",
-        "Physical stretch gesture"
-      ],
-      "board_marking": "Círculo rojo + número de sílabas arriba (4 sílabas, stress 2)"
+        "Physical stretch gesture",
+        "4-syllable counting"
+      ]
     },
     "success_vocabulary": {
-      "target_terms": [
-        "can/can't",
+      "target_words": [
         "diagnostic",
         "inspection",
         "pressure",
@@ -165,21 +168,42 @@
         "replacement",
         "compression",
         "alignment",
-        "calibration"
+        "calibration",
+        "can",
+        "can't"
       ],
-      "success_factors_applied": [
-        "Seen (Word Wall permanente — 5 cats × 4 términos)",
-        "Used (producción activa en la sesión)",
-        "Contextualized (realia de taller diésel)",
-        "Connected (chunks + colocaciones Toolbelt)",
-        "Elaborated (HOTS desde S2)",
-        "Spaced (reciclaje circular S2→S6)",
-        "Self-explained (metacognición S6+)"
-      ]
+      "factors_applied": [
+        "Sounds",
+        "Encounter",
+        "Self-expression",
+        "Interactive"
+      ],
+      "operationalization": "Sounds: word stress + sentence stress drill. Encounter: listening dialogue mechanic/supervisor (2x). Self-expression: roleplay en parejas. Interactive: mechanic describes malfunction, supervisor responds with can/can't."
     },
-    "cefr_descriptor_focus": "A1.1 · ver pm-0-context.json cefr_descriptors_per_guide[0] — subnivel y can-do de S4",
-    "pedagogical_shift_hook": "Shift 2 — ver pm-0-context.json methodological_shifts_per_guide[0]",
-    "traceability_seed_22": "Checklist 22-items aplica — ver pm-0-context.json traceability_checklist_ref"
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1",
+      "habilidad_principal": "comprension_oral",
+      "descriptor_activo": "Comprende instrucciones y preguntas simples del supervisor en diálogos cortos de taller con habla lenta.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot.comprension_oral"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Moderada — dialogue 2x a velocidad natural",
+      "extension_textos": "Diálogo 6-8 turnos con repetición",
+      "andamiaje": "Medio — formulas F1-F5 + realia visible",
+      "rol_docente": "Modelo + listener + roleplay facilitator",
+      "source": "PM-0 §8 + methodological_shifts_per_guide[0]"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A1 — A1.1 listening + speaking",
+        "B5 — L1 15%",
+        "B10 — Fluency-leaning shift",
+        "C2 — Apropiación",
+        "D4+D5 — E3+E4 (10pts)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S4."
+    }
   },
   "activity_logistics": {},
   "data_flow_contract": {
@@ -198,5 +222,5 @@
     "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
   },
   "pipeline_version": "v2.6.6",
-  "_v266_propagated_at": "2026-04-21T15:32:22.125Z"
+  "_v266_propagated_at": "2026-04-21T15:37:15.549Z"
 }

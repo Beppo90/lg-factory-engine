@@ -84,99 +84,108 @@
     }
   },
   "pm0_protocol": {
-    "grammar_groups": {
-      "intro": [
-        {
-          "group_id": "Gr 3",
-          "group_name": "Present Simple (rutinas y procedimientos)",
-          "ejemplo": "I check the bay every morning. The mechanic changes oil weekly."
-        }
-      ],
-      "consolida": [
-        {
-          "group_id": "Gr 7",
-          "group_name": "can/can't",
-          "ejemplo": "I can do basic maintenance. I can't diagnose electrical faults yet."
-        }
-      ],
-      "aplica": [
-        {
-          "group_id": "Gr 1",
-          "group_name": "be",
-          "ejemplo": "He is the supervisor."
-        },
-        {
-          "group_id": "Gr 2",
-          "group_name": "there is/are",
-          "ejemplo": "There are three mechanics on duty."
-        },
-        {
-          "group_id": "Gr 5",
-          "group_name": "Imperativo",
-          "ejemplo": "Please wait. Don't start the engine."
-        }
-      ]
-    },
+    "__inherited_from__": "pm-0-context.json + pm-3-1.json.pm0_alignment_by_session",
+    "__contract_version__": "v2.6.6-canon",
+    "grammar_groups": [
+      {
+        "group_id": "Gr 7",
+        "group_name": "can/can't",
+        "nivel_activacion": "Consolida",
+        "ejemplo_en_sesion": "I can do basic maintenance. I can't diagnose electrical faults yet."
+      },
+      {
+        "group_id": "Gr 3",
+        "group_name": "Present Simple (rutinas y procedimientos)",
+        "nivel_activacion": "Intro",
+        "ejemplo_en_sesion": "I check the bay every morning. The mechanic changes oil weekly."
+      }
+    ],
+    "grammar_carga_check": "1 Intro (Gr 3) + 1 Consolida (Gr 7) — carga apropiada para functions integradas A1.1 ✓",
     "feedback": {
-      "dominant_mode": "FLUENCY-LEANING",
-      "rationale": "Producción oral (S4) y funciones comunicativas (S5) priorizan fluidez sobre perfección formal. PM-0 §5.9.",
+      "mode": "FLUENCY-LEANING",
+      "rationale": "Language Functions en interacción — fluidez pragmática primero. PM-0 §5.9.",
       "accuracy_techniques": [
-        "Recast solo en errores que bloquean comprensión",
-        "Delayed correction en whiteboard al final del bloque"
+        "Post-roleplay error log en whiteboard"
       ],
       "fluency_techniques": [
-        "Encouragement verbal y no verbal (nodding, thumbs up)",
-        "Reformulación modelada sin señalar error",
-        "Fomentar communication strategies (gestures, synonyms)"
-      ]
+        "Role rotation (mechanic/supervisor/customer)",
+        "Functional formula practice (F1-F5 chunks)",
+        "Celebration of communicative success"
+      ],
+      "mixed_techniques": []
     },
     "l1_management": {
-      "l1_max_pct": 12,
-      "english_zone_dominance": "12/88 L1/L2",
-      "legitimate_uses": [
-        "Consulta léxica ocasional F1–F5"
-      ],
-      "reduction_strategy": "Functions practice en interacción autónoma",
-      "rationale": "Language Functions — L1 solo como consulta léxica ocasional; interacción 85%+ en inglés. PM-0 §9.1."
+      "l1_percentage": 12,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_policy_per_guide[0].s1_to_s8 — S5 12% (PM-0 §9.1)",
+      "l1_rationale": "Language Functions — L1 solo como consulta léxica ocasional; interacción 85%+ en inglés. PM-0 §9.1."
     },
     "stress_pronunciation": {
       "focus_words": [
-        "Can you help?",
-        "I can fix it",
-        "I can't see",
-        "Every morning",
-        "Every day"
+        {
+          "word": "Can you help?",
+          "ipa": "/kən juː hɛlp/",
+          "tonica": "CONTENT WORDS: HELP"
+        },
+        {
+          "word": "I can fix it",
+          "ipa": "/aɪ kən fɪks ɪt/",
+          "tonica": "CONTENT WORDS: CAN, FIX"
+        },
+        {
+          "word": "Every morning",
+          "ipa": "/ˈɛvri ˈmɔːrnɪŋ/",
+          "tonica": "PRIMERA de cada (EVery MORning)"
+        }
       ],
-      "physical_techniques": [
+      "techniques": [
         "Sentence stress rhythm clap",
-        "Content words STRONG / function words weak"
-      ],
-      "board_marking": "CAPS para content words + strike-through para function words"
-    },
-    "success_vocabulary": {
-      "target_terms": [
-        "F1 greeting",
-        "F2 reporting",
-        "F3 clarifying",
-        "F4 routines",
-        "F5 instructing",
-        "every morning",
-        "every day",
-        "every week"
-      ],
-      "success_factors_applied": [
-        "Seen (Word Wall permanente — 5 cats × 4 términos)",
-        "Used (producción activa en la sesión)",
-        "Contextualized (realia de taller diésel)",
-        "Connected (chunks + colocaciones Toolbelt)",
-        "Elaborated (HOTS desde S2)",
-        "Spaced (reciclaje circular S2→S6)",
-        "Self-explained (metacognición S6+)"
+        "Content words STRONG / function words weak",
+        "CAPS marking"
       ]
     },
-    "cefr_descriptor_focus": "A1.1 · ver pm-0-context.json cefr_descriptors_per_guide[0] — subnivel y can-do de S5",
-    "pedagogical_shift_hook": "Shift 3 — ver pm-0-context.json methodological_shifts_per_guide[0]",
-    "traceability_seed_22": "Checklist 22-items aplica — ver pm-0-context.json traceability_checklist_ref"
+    "success_vocabulary": {
+      "target_words": [
+        "F1 Good morning",
+        "F2 There is a problem with",
+        "F3 Sorry could you repeat",
+        "F4 Every morning I check",
+        "F5 Please don't start the engine",
+        "Every day",
+        "Every week"
+      ],
+      "factors_applied": [
+        "Encounter",
+        "Self-expression",
+        "Interactive",
+        "Connected"
+      ],
+      "operationalization": "Encounter: 5 funciones demostradas por instructor con realia. Self-expression: escenarios rotatorios F1-F5. Interactive: 3 roles en rotación (mechanic/supervisor/customer). Connected: funciones + gramática (can/can't, present simple)."
+    },
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1",
+      "habilidad_principal": "interaccion_oral",
+      "descriptor_activo": "Interactúa de forma simple en funciones comunicativas básicas del taller (saludar, reportar problema, pedir clarificación).",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot.interaccion_oral"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Normal — interacción real",
+      "extension_textos": "Escenarios complejos multi-turno",
+      "andamiaje": "Medio-bajo — formulas disponibles pero no centrales",
+      "rol_docente": "Orchestrator + coach + fluency fomenter",
+      "source": "PM-0 §8 + methodological_shifts_per_guide[0]"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A1 — A1.1 interacción oral",
+        "B5 — L1 12%",
+        "B11 — Functions integradas",
+        "C2 — Apropiación",
+        "D6 — E5 Language Functions (5pts)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S5."
+    }
   },
   "activity_logistics": {},
   "data_flow_contract": {
@@ -195,5 +204,5 @@
     "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
   },
   "pipeline_version": "v2.6.6",
-  "_v266_propagated_at": "2026-04-21T15:32:22.128Z"
+  "_v266_propagated_at": "2026-04-21T15:37:15.552Z"
 }

@@ -84,96 +84,122 @@
     }
   },
   "pm0_protocol": {
-    "grammar_groups": {
-      "intro": [
-        {
-          "group_id": "Gr 5",
-          "group_name": "Imperativo afirmativo/negativo (Check/Don't touch)",
-          "ejemplo": "Check oil level. Don't touch the hot engine."
-        }
-      ],
-      "consolida": [
-        {
-          "group_id": "Gr 1",
-          "group_name": "be",
-          "ejemplo": "The oil level is low."
-        },
-        {
-          "group_id": "Gr 2",
-          "group_name": "there is/are",
-          "ejemplo": "There are 8 items on the checklist."
-        }
-      ],
-      "aplica": []
-    },
+    "__inherited_from__": "pm-0-context.json + pm-3-1.json.pm0_alignment_by_session",
+    "__contract_version__": "v2.6.6-canon",
+    "grammar_groups": [
+      {
+        "group_id": "Gr 1",
+        "group_name": "Verbo be",
+        "nivel_activacion": "Consolida",
+        "ejemplo_en_sesion": "The oil level is low. The filters are new."
+      },
+      {
+        "group_id": "Gr 2",
+        "group_name": "There is / there are",
+        "nivel_activacion": "Consolida",
+        "ejemplo_en_sesion": "There are 8 items on the checklist."
+      },
+      {
+        "group_id": "Gr 5",
+        "group_name": "Imperativo afirmativo/negativo",
+        "nivel_activacion": "Intro",
+        "ejemplo_en_sesion": "Check oil level. Don't touch the hot engine."
+      }
+    ],
+    "grammar_carga_check": "1 Intro (Gr 5) + 2 Consolida (Gr 1, Gr 2) — carga apropiada para producción escrita A1.1 ✓",
     "feedback": {
-      "dominant_mode": "ACCURACY",
-      "rationale": "Escritura formal (S3) y evaluación sumativa (S6) requieren precisión. PM-0 §5.9.",
+      "mode": "ACCURACY",
+      "rationale": "Escritura formal (Inspection Form) requiere precisión gramatical. PM-0 §5.9.",
       "accuracy_techniques": [
-        "Recast inmediato (repetir forma correcta sin señalar error)",
-        "Clarification request ('Sorry, can you repeat?')",
-        "Prompting con scaffolding visual (señalar al Word Wall)"
+        "Focus-on-form explícito en imperativo (Check/Don't + base)",
+        "Peer correction con checklist visual",
+        "Delayed whole-class feedback al final"
       ],
-      "fluency_techniques": [
-        "Wait-time de 3 segundos antes de corregir",
-        "Error log posterior (no interrumpir producción)"
-      ]
+      "fluency_techniques": [],
+      "mixed_techniques": []
     },
     "l1_management": {
-      "l1_max_pct": 20,
-      "english_zone_dominance": "20/80 L1/L2",
-      "legitimate_uses": [
-        "Grammar meta-explanation (imperativo negativo)",
-        "Inspection Form task clarification"
-      ],
-      "reduction_strategy": "L1 solo para aha moments gramaticales",
-      "rationale": "Output escrito — L1 solo para explicar estructuras gramaticales complejas (imperativo en negativo). PM-0 §9.1."
+      "l1_percentage": 20,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_policy_per_guide[0].s1_to_s8 — S3 20% (PM-0 §9.1)",
+      "l1_rationale": "Output escrito — L1 solo para explicar estructuras gramaticales complejas (imperativo en negativo). PM-0 §9.1."
     },
     "stress_pronunciation": {
       "focus_words": [
-        "check",
-        "replace",
-        "tighten",
-        "inspect",
-        "replace",
-        "don't",
-        "engine",
-        "oil"
+        {
+          "word": "check",
+          "ipa": "/tʃɛk/",
+          "tonica": "MONOSÍLABO"
+        },
+        {
+          "word": "replace",
+          "ipa": "/rɪˈpleɪs/",
+          "tonica": "SEGUNDA (rePLACE)"
+        },
+        {
+          "word": "tighten",
+          "ipa": "/ˈtaɪtən/",
+          "tonica": "PRIMERA (TIGHTen)"
+        },
+        {
+          "word": "inspect",
+          "ipa": "/ɪnˈspɛkt/",
+          "tonica": "SEGUNDA (inSPECT)"
+        }
       ],
-      "physical_techniques": [
+      "techniques": [
         "Handclap + pause",
-        "Imperative drill choral"
-      ],
-      "board_marking": "Círculo rojo en imperativo inicial"
+        "Imperative drill choral",
+        "Negative form emphasis (DON'T + base)"
+      ]
     },
     "success_vocabulary": {
-      "target_terms": [
+      "target_words": [
         "check",
         "replace",
         "tighten",
         "inspect",
         "don't",
+        "oil",
+        "coolant",
+        "filter",
         "there is",
         "there are",
         "some",
-        "any",
-        "oil",
-        "coolant",
-        "filter"
+        "any"
       ],
-      "success_factors_applied": [
-        "Seen (Word Wall permanente — 5 cats × 4 términos)",
-        "Used (producción activa en la sesión)",
-        "Contextualized (realia de taller diésel)",
-        "Connected (chunks + colocaciones Toolbelt)",
-        "Elaborated (HOTS desde S2)",
-        "Spaced (reciclaje circular S2→S6)",
-        "Self-explained (metacognición S6+)"
-      ]
+      "factors_applied": [
+        "Sounds",
+        "Encounter",
+        "Self-expression",
+        "Connected"
+      ],
+      "operationalization": "Sounds: imperative stress drill. Encounter: Inspection Form template con 8 ítems pre-escritos. Self-expression: aprendiz completa 8 ítems con verbos imperativos. Connected: check + oil, replace + filter, tighten + bolts."
     },
-    "cefr_descriptor_focus": "A1.1 · ver pm-0-context.json cefr_descriptors_per_guide[0] — subnivel y can-do de S3",
-    "pedagogical_shift_hook": "Shift 2 — ver pm-0-context.json methodological_shifts_per_guide[0]",
-    "traceability_seed_22": "Checklist 22-items aplica — ver pm-0-context.json traceability_checklist_ref"
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1",
+      "habilidad_principal": "produccion_escrita",
+      "descriptor_activo": "Completa formularios simples (inspección) con verbos imperativos y vocabulario técnico conocido.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot.produccion_escrita"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Moderada — para explicar imperativo",
+      "extension_textos": "Formularios cortos + ejemplos completos",
+      "andamiaje": "Medio — template con ítems parcialmente completos",
+      "rol_docente": "Modelo + corrector gramatical + coach escritor",
+      "source": "PM-0 §8 + methodological_shifts_per_guide[0]"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A1 — A1.1 producción escrita",
+        "B5 — L1 20% target",
+        "B9 — Focus-on-form imperativo",
+        "C2 — Apropiación",
+        "D3 — E2 Writing (5pts)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S3."
+    }
   },
   "activity_logistics": {},
   "data_flow_contract": {
@@ -192,5 +218,5 @@
     "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
   },
   "pipeline_version": "v2.6.6",
-  "_v266_propagated_at": "2026-04-21T15:32:22.121Z"
+  "_v266_propagated_at": "2026-04-21T15:37:15.543Z"
 }

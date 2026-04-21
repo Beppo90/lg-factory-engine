@@ -59,66 +59,77 @@
     }
   },
   "pm0_protocol": {
-    "grammar_groups": {
-      "intro": [],
-      "consolida": [],
-      "aplica": [
-        {
-          "group_id": "Gr 1+2+3+5+7",
-          "group_name": "ALL A1.1 groups en presentación oral del Workshop Readiness Report",
-          "ejemplo": "Presentation integrates all grammar groups with fluency-first feedback."
-        }
-      ]
-    },
+    "__inherited_from__": "pm-0-context.json + pm-3-1.json.pm0_alignment_by_session",
+    "__contract_version__": "v2.6.6-canon",
+    "grammar_groups": [
+      {
+        "group_id": "Gr 1+2+3+5+7",
+        "group_name": "ALL A1.1 groups en presentación oral del Workshop Readiness Report",
+        "nivel_activacion": "Aplica",
+        "ejemplo_en_sesion": "Presentation integrates all grammar groups with fluency-first feedback."
+      }
+    ],
+    "grammar_carga_check": "5 Aplica (presentación oral ABP) — carga de cierre A1.1 con fluency ✓",
     "feedback": {
-      "dominant_mode": "FLUENCY",
-      "rationale": "ABP Final Mission (S7-S8) prioriza comunicación efectiva — fluency total. PM-0 §5.9.",
-      "accuracy_techniques": [
-        "Post-task feedback general (no individual durante la ejecución)",
-        "Peer correction en fase reflexiva"
-      ],
+      "mode": "FLUENCY",
+      "rationale": "Presentación ABP — fluidez final A1.1. PM-0 §5.9.",
+      "accuracy_techniques": [],
       "fluency_techniques": [
-        "Celebración del riesgo comunicativo",
-        "Focus en mensaje y efecto pragmático",
-        "Fomentar self-repair y circumlocution"
+        "Standing ovation practice",
+        "Post-presentation verbal celebration",
+        "Focus on message delivered, not form"
+      ],
+      "mixed_techniques": [
+        "Rubric feedback delayed a post-ceremony reflection"
       ]
     },
     "l1_management": {
-      "l1_max_pct": 5,
-      "english_zone_dominance": "5/95 L1/L2",
-      "legitimate_uses": [
-        "Coaching emocional puntual",
-        "Cierre emocional en L1"
-      ],
-      "reduction_strategy": "Presentación y evaluación en L2",
-      "rationale": "ABP Final Mission — inmersión máxima. L1 solo para emergencias. Transferencia al ambiente productivo. PM-0 §9.1."
+      "l1_percentage": 5,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_policy_per_guide[0].s1_to_s8 — S8 5% (PM-0 §9.1)",
+      "l1_rationale": "ABP Presentación — transferencia al ambiente productivo. PM-0 §9.1."
     },
     "stress_pronunciation": {
-      "focus_words": [
-        "— continued from S7 —"
-      ],
-      "physical_techniques": [
-        "Final rehearsal before delivery"
-      ],
-      "board_marking": "—"
-    },
-    "success_vocabulary": {
-      "target_terms": [
-        "— same as S7, production mode"
-      ],
-      "success_factors_applied": [
-        "Seen (Word Wall permanente — 5 cats × 4 términos)",
-        "Used (producción activa en la sesión)",
-        "Contextualized (realia de taller diésel)",
-        "Connected (chunks + colocaciones Toolbelt)",
-        "Elaborated (HOTS desde S2)",
-        "Spaced (reciclaje circular S2→S6)",
-        "Self-explained (metacognición S6+)"
+      "focus_words": [],
+      "techniques": [
+        "Final rehearsal antes de delivery — no new stress work"
       ]
     },
-    "cefr_descriptor_focus": "A1.1 · ver pm-0-context.json cefr_descriptors_per_guide[0] — subnivel y can-do de S8",
-    "pedagogical_shift_hook": "Shift 4 — ver pm-0-context.json methodological_shifts_per_guide[0]",
-    "traceability_seed_22": "Checklist 22-items aplica — ver pm-0-context.json traceability_checklist_ref"
+    "success_vocabulary": {
+      "target_words": [
+        "— same as S7, in production mode"
+      ],
+      "factors_applied": [
+        "Self-expression",
+        "Interactive",
+        "Celebration"
+      ],
+      "operationalization": "Self-expression: presentación oral del reporte (3-5 min). Interactive: Q&A con audiencia. Celebration: closing ceremony con reconocimiento de progreso."
+    },
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1 cierre",
+      "habilidad_principal": "presentacion_oral",
+      "descriptor_activo": "Presenta oralmente un reporte técnico corto (3-5 min) con scaffolding visual, cerrando el ciclo A1.1.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0] + hoja de ruta §8"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Natural — performance",
+      "extension_textos": "Presentación oral 3-5 min",
+      "andamiaje": "Mínimo — solo visual de respaldo (Canva/poster)",
+      "rol_docente": "Audience + celebrator + ceremony master",
+      "source": "PM-0 §8 + methodological_shifts_per_guide[0]"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A3 — Cierre ABP",
+        "B5 — L1 5%",
+        "B14 — Celebration + reflection",
+        "C4 — Transferencia",
+        "D8 — Misión Final delivery"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S8."
+    }
   },
   "activity_logistics": {},
   "data_flow_contract": {
@@ -137,5 +148,5 @@
     "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
   },
   "pipeline_version": "v2.6.6",
-  "_v266_propagated_at": "2026-04-21T15:32:22.138Z"
+  "_v266_propagated_at": "2026-04-21T15:37:15.558Z"
 }

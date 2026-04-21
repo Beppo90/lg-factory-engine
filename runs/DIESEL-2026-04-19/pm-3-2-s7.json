@@ -69,73 +69,106 @@
     }
   },
   "pm0_protocol": {
-    "grammar_groups": {
-      "intro": [],
-      "consolida": [],
-      "aplica": [
-        {
-          "group_id": "Gr 1+2+3+5+7",
-          "group_name": "ALL A1.1 groups en producción libre del Workshop Readiness Report",
-          "ejemplo": "There are 5 tools. I check them every morning. The supervisor can verify this."
-        }
-      ]
-    },
+    "__inherited_from__": "pm-0-context.json + pm-3-1.json.pm0_alignment_by_session",
+    "__contract_version__": "v2.6.6-canon",
+    "grammar_groups": [
+      {
+        "group_id": "Gr 1+2+3+5+7",
+        "group_name": "ALL A1.1 groups en producción libre del Workshop Readiness Report",
+        "nivel_activacion": "Aplica",
+        "ejemplo_en_sesion": "There are 5 tools. I check them every morning. The supervisor can verify this."
+      }
+    ],
+    "grammar_carga_check": "5 Aplica (producción libre ABP) — carga de transferencia libre ✓",
     "feedback": {
-      "dominant_mode": "FLUENCY",
-      "rationale": "ABP Final Mission (S7-S8) prioriza comunicación efectiva — fluency total. PM-0 §5.9.",
+      "mode": "FLUENCY",
+      "rationale": "Preparación ABP Final Mission — prioridad absoluta a fluidez y comunicación. PM-0 §5.9.",
       "accuracy_techniques": [
-        "Post-task feedback general (no individual durante la ejecución)",
-        "Peer correction en fase reflexiva"
+        "Peer correction en parejas (no instructor intervention)"
       ],
       "fluency_techniques": [
-        "Celebración del riesgo comunicativo",
-        "Focus en mensaje y efecto pragmático",
-        "Fomentar self-repair y circumlocution"
-      ]
+        "Coaching individualizado 1:1",
+        "Rehearsal structures con scaffolding gradual",
+        "Risk-taking celebration"
+      ],
+      "mixed_techniques": []
     },
     "l1_management": {
-      "l1_max_pct": 5,
-      "english_zone_dominance": "5/95 L1/L2",
-      "legitimate_uses": [
-        "Coaching emocional puntual"
-      ],
-      "reduction_strategy": "Preparación ABP casi inmersiva",
-      "rationale": "ABP Final Mission — inmersión máxima. L1 solo para emergencias. Transferencia al ambiente productivo. PM-0 §9.1."
+      "l1_percentage": 5,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_policy_per_guide[0].s1_to_s8 — S7 5% (PM-0 §9.1)",
+      "l1_rationale": "ABP Preparación — inmersión casi total. L1 solo para coaching emocional. PM-0 §9.1."
     },
     "stress_pronunciation": {
       "focus_words": [
-        "Workshop",
-        "Readiness",
-        "Report",
-        "Presentation",
-        "Evaluation"
+        {
+          "word": "Workshop",
+          "ipa": "/ˈwɜːrkʃɒp/",
+          "tonica": "PRIMERA (WORKshop)"
+        },
+        {
+          "word": "Readiness",
+          "ipa": "/ˈrɛdinəs/",
+          "tonica": "PRIMERA (REAdiness)"
+        },
+        {
+          "word": "Report",
+          "ipa": "/rɪˈpɔːrt/",
+          "tonica": "SEGUNDA (rePORT)"
+        },
+        {
+          "word": "Presentation",
+          "ipa": "/ˌprɛzənˈteɪʃən/",
+          "tonica": "TERCERA (presenTAtion)"
+        }
       ],
-      "physical_techniques": [
+      "techniques": [
         "Choral rehearsal of report title",
-        "Stress rehearsal in pairs"
-      ],
-      "board_marking": "Título proyectado + stress marking"
+        "Pair rehearsal with stress marking"
+      ]
     },
     "success_vocabulary": {
-      "target_terms": [
+      "target_words": [
         "Workshop Readiness Report",
         "Tools inventory",
         "Safety check",
-        "Maintenance schedule"
+        "Maintenance schedule",
+        "report",
+        "inventory",
+        "schedule"
       ],
-      "success_factors_applied": [
-        "Seen (Word Wall permanente — 5 cats × 4 términos)",
-        "Used (producción activa en la sesión)",
-        "Contextualized (realia de taller diésel)",
-        "Connected (chunks + colocaciones Toolbelt)",
-        "Elaborated (HOTS desde S2)",
-        "Spaced (reciclaje circular S2→S6)",
-        "Self-explained (metacognición S6+)"
-      ]
+      "factors_applied": [
+        "Encounter",
+        "Self-expression",
+        "Connected",
+        "Interactive"
+      ],
+      "operationalization": "Encounter: brief del reporte + modelos samples. Self-expression: cada dupla elige 3 secciones y las redacta. Connected: vocabulary integra grammar A1.1 completo. Interactive: peer review + coaching 1:1."
     },
-    "cefr_descriptor_focus": "A1.1 · ver pm-0-context.json cefr_descriptors_per_guide[0] — subnivel y can-do de S7",
-    "pedagogical_shift_hook": "Shift 4 — ver pm-0-context.json methodological_shifts_per_guide[0]",
-    "traceability_seed_22": "Checklist 22-items aplica — ver pm-0-context.json traceability_checklist_ref"
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.1→A1.2",
+      "habilidad_principal": "produccion_integrada",
+      "descriptor_activo": "Produce un reporte simple del estado del taller integrando vocabulario + gramática A1.1.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0] + hoja de ruta §8"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Natural",
+      "extension_textos": "Reporte técnico de 3 secciones",
+      "andamiaje": "Bajo — coaching 1:1 on-demand",
+      "rol_docente": "Coach + mentor + peer-review facilitator",
+      "source": "PM-0 §8 + methodological_shifts_per_guide[0]"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A3 — Transferencia ABP",
+        "B5 — L1 5%",
+        "B13 — Coaching individualizado",
+        "C4 — Transferencia",
+        "D8 — Misión Final (no suma formal)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S7."
+    }
   },
   "activity_logistics": {},
   "data_flow_contract": {
@@ -154,5 +187,5 @@
     "note": "Session-wide logistics. Derived DOWNSTREAM in pm-3-6 activity_footer."
   },
   "pipeline_version": "v2.6.6",
-  "_v266_propagated_at": "2026-04-21T15:32:22.135Z"
+  "_v266_propagated_at": "2026-04-21T15:37:15.557Z"
 }
