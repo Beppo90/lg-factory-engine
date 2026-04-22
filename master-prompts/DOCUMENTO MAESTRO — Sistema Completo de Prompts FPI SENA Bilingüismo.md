@@ -1,9 +1,10 @@
 ---
 title: DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo
-version: 2.6.6
-last_updated: 2026-04-21
-status: Paleta SENA institucional canonizada — todos los generadores DOCX del pipeline (gen_audit_docx.js, gen_35_36_docx.js, gen_3_docx.js) y renderers compartidos (scripts/lib/render_*.js) emiten identidad de marca SENA con verde institucional #39A900 protagonista + azul oscuro #0B2E45 secundario + verde oscuro #007832 para badges y sellos. Los nombres de variables legacy (NAVY, ORANGE, CREAM, BEIGE, GREEN) se preservan para evitar cascadas de rename (~145 puntos de uso) pero los valores se remapean a la identidad SENA. CEFR gradient remapeado de naranja→cálido a verde→azul preservando la semántica del gradiente. Chromatic sanity check (grep de hex codes en document.xml extraído del DOCX) queda como paso canónico del pipeline. Caso-origen: instructor Sergio solicitó alineación de marca institucional SENA 2026-04-21; naranja #F59316 y navy #1C2B3C (paleta DIESEL G1) reemplazados en todo el pipeline MGV.
+version: 2.7
+last_updated: 2026-04-22
+status: Learner-Readable Activity canonizada — las 30 Activity Cards de PM-3.6 G1 migradas a schema_version v2.7 con anatomía fija de 6 bloques (Encabezado V+O+C · Descripción narrativa 60-120 palabras · Step-by-step 5-7 pasos · Entregable · Evidencia first-class · Footer logístico). Pipeline metadata (fuente_pm_*, voc_dimension, schema_version, cross_references) preservado en JSON pero suprimido del DOCX del aprendiz. Script canónico `scripts/rewrite_activities_v27.js` es el migrador idempotente v2.6.3 → v2.7 con dispatch por schema_version y por batch (piloto/A/B/C/D). Rollout completado en run MGV-2026-04-20 G1; portable a otros runs extendiendo los diccionarios VOC_DRAFTS + NARRATIVA_DRAFTS con el universo pedagógico de cada guía (respetando la regla v2.3 de universo original). DOCX final: 103.7 KB, 30/30 v2.7, 0 fugas de jerga. Caso-origen: instructor Sergio solicitó 2026-04-22 clarificar la voz de las actividades hacia el aprendiz sin perder la trazabilidad del pipeline.
 previous_versions:
+  - "2.6.6 (2026-04-21) — Paleta SENA institucional (verde #39A900 + azul oscuro #0B2E45 + verde oscuro #007832)"
   - "2.6.5 (2026-04-21) — Canon Shared Renderer Pattern (fuente única de verdad por sección DOCX)"
   - "2.6.4 (2026-04-20) — Sección 4 del GFPI-F-135 reorganizada al formato SENA oficial + CHECK 17 upstream→downstream"
   - "2.6.3 (2026-04-20) — Inline Scaffolds canónicos en PM-3.6 (10 tipos, scaffold_inline como workspace del aprendiz)"
@@ -309,6 +310,67 @@ pm0_alignment_by_session: [
 
 ---
 
+### Principio 11: Dos Arquitecturas Data-Flow — LG Engine v3.0 Self-Contained (DIESEL) vs v2.6.x JSON-first (MGV) (v2.6.7)
+
+La fábrica mantiene **dos arquitecturas de data-flow** que conviven por razones históricas y programas-específicas. El instructor debe conocer cuál está vigente en cada run antes de ejecutar cualquier script.
+
+#### 11.1 — LG Engine v3.0 · Self-Contained Edition (canon DIESEL-2026-04-19)
+
+**Filosofía:** El contenido pedagógico vive **hardcoded en los generadores** (módulos `.js`). No hay JSON de datos separado: el generador ES la fuente de verdad. Los archivos `pm-3-2-sX.md` son el formato de lectura humana del mismo contenido.
+
+**Marker de canon:** el DOCX resultante lleva el texto literal `LG Engine v3.0 · Self-Contained Edition` en header/portada.
+
+**Archivos canónicos de un run v3.0:**
+- `pm-3-1-playbook-outline.docx` (schema `playbook-outline-v1.0`)
+- `pm-3-2-session-build-outs.docx` (schema `session-build-out-v2.0`, 8 sesiones compiladas)
+- `pm-3-6-learning-guide.docx` (self-contained, contenido hardcoded en `pm-3-6-new-gen.js` + `pm-3-6-new-gen2.js`, ensamblado por `pm-3-6-assemble.js`)
+- `The-Workshop-Specialist-Guia-1-SENA.pdf` (deliverable compilado final)
+
+**Módulos de scripts canónicos DIESEL:**
+```
+scripts/
+├── pm-3-6-assemble.js            — orquestador; invoca sec1/sec2/sec31 + sec32/sec33/sec34
+├── pm-3-6-new-gen.js             — módulo sec1/sec2/sec31 (secciones 1, 2, 3.1)
+├── pm-3-6-new-gen2.js            — módulo sec32/sec33/sec34 (secciones 3.2, 3.3, 3.4)
+└── check-content-uniqueness.js   — CHECK 9 Opción B sibling-only
+```
+
+**Paleta DIESEL:** Navy `#1C2B3C` + Orange `#F59316` (NO SENA verde/azul — eso es canon institucional MGV).
+
+**Trade-off:** Self-Contained garantiza un DOCX autocontenido y portable, pero pierde el contrato de datos con upstream (PM-3.1 ↔ PM-3.6 no comparten JSON). Regeneraciones deben validarse por byte-identity o por inspección visual.
+
+#### 11.2 — v2.6.x JSON-first (canon MGV-2026-04-20)
+
+**Filosofía:** Todo el contenido vive en `pm-X-Y.json` (data) y los generadores (`.js`) son renderers puros. Cualquier cambio pedagógico se hace en JSON, nunca en el generador.
+
+**Marker de canon:** schema `activities[]` en pm-3-6.json con 30 actividades estructuradas v2.6.3+.
+
+**Archivos canónicos de un run v2.6.x:**
+- `pm-3-1.json` con `ambientes_resumen`, `estrategias_resumen`, `voc_dimensions_table`, `pm0_alignment_by_session` (Principios 6 + 10)
+- 8 × `pm-3-2-sX.json` con `pm0_protocol`, `estrategia_didactica`, `momento_sena` (Principios 5 + 6)
+- `pm-3-5.json` + `pm-3-6.json` con `activity_footer` 100% cubierto (Principio 7) + `apendices_embebidos` (Principio 8)
+- DOCX derivados por `gen_audit_docx.js` o `gen_35_36_docx.js` + `lib/render_seccion4_evidencias.js` (renderer compartido)
+
+**Paleta MGV (= SENA institucional):** Verde `#39A900` + Azul `#0B2E45`.
+
+**Trade-off:** JSON-first permite validadores programáticos (CHECK 9, 13, 14, 15, 16) y evolución pedagógica data-driven, pero requiere pipeline completo (reverse-migration de footers, embedding de apéndices, renderer compartido).
+
+#### 11.3 — Reglas de coexistencia
+
+1. **No mezclar scripts entre canons.** Los 13 scripts v2.6.x relocalizados a `scripts/_mgv-only/` en DIESEL-2026-04-19 NO deben ejecutarse contra datos v3.0 (ver `FORWARD-PORT-PLAN-v3.0.md` §1 matriz de clasificación).
+
+2. **Detectar canon antes de operar.** Un run es v3.0 si existe `pm-3-6-new-gen.js` + marker `LG Engine v3.0 · Self-Contained Edition` en el DOCX. Es v2.6.x si existe `pm-3-6.json` con `activities[]` schema v2.6.3+.
+
+3. **Forward-port script-by-script, no wholesale.** Las mejoras del canon v2.6.x que son conceptualmente portables a v3.0 (parity check, V+O+C coverage validator) deben re-implementarse como scripts nuevos que lean la estructura v3.0, no copiarse.
+
+4. **DIESEL es el canon vigente de referencia** para el instructor Sergio (Friday 2026-04-24 aplicación con grupo de mantenimiento de motores). MGV es canon experimental para evaluación de eficacia comparativa de la fábrica.
+
+5. **CHECK 9 Opción B (sibling-only) es agnóstico al canon**, funciona sobre ambos porque normaliza `PROGRAM-YYYY-MM-DD` antes de hashear y solo compara hermanos de la misma fecha.
+
+**Razón histórica:** Entre 2026-04-19 y 2026-04-21, un rework v2.6.3 → v2.6.6 intentó migrar DIESEL del canon v3.0 al canon JSON-first por analogía con MGV. La migración quedó parcial (.md y .json coexistiendo inconsistentemente), el instructor la declaró un retroceso, y se ejecutó una restauración canónica (2026-04-21 18:15) que devolvió los 3 DOCX v3.0 uploads como ground truth. Este Principio documenta la dualidad definitiva.
+
+---
+
 ## 4. ARQUITECTURA DE 4 FASES (+ Fase 0 desde v2.6)
 
 ```mermaid
@@ -610,7 +672,7 @@ Cada ejecución completa del sistema produce el siguiente paquete:
 - Input: 1 macrotemática (ej: "The Hardware Specialist") + `pm-0-context.json` + pm-1-1.json
 - Output estructurado en **4 bloques canónicos** (v2.6):
   - **Bloque 0 — Presentación L1:** Texto introductorio de 10 renglones en español explicando el universo narrativo de la guía al aprendiz (onboarding)
-  - **Bloque A — Scope + Integrative Task + Evaluation Matrix:** Scope & Sequence completo, descripción de la tarea integradora (Misión Final), matriz de evaluación de 55 pts (E1-E5 × 5pts + E6 × 25pts + Misión × 5pts)
+  - **Bloque A — Scope + Integrative Task + Evaluation Matrix:** Scope & Sequence completo, descripción de la tarea integradora (Misión Final formativa, no suma), matriz de evaluación de 50 pts formales (E1-E5 × 5pts = 25 pts + E6 Cuestionario Consolidado × 25 pts)
   - **Bloque B — GFPI-F-134 Columnas 1-5:** Competencia, RAP, Saberes (Conceptos + Procesos), Criterios de Evaluación
   - **Bloque C — Curación + Universo:** 3 fichas de curación de fuentes auténticas (Story A reading, Story B listening, Story C refuerzo) + universo narrativo completo de la guía (personajes, escenarios, productos, terminología técnica)
 - Seleccionar 2 de las 3 fuentes (Story A → Reading, Story B → Listening)
@@ -769,6 +831,133 @@ Cada ejecución completa del sistema produce el siguiente paquete:
 ---
 
 ## 11. HISTORIAL DE VERSIONES
+
+### v2.4 — REGLA 18 · Granularidad Opción A (parent activities) + Canon FM-1 (50 pts) + header verde SENA en Sección 4 — 2026-04-21
+
+**La REGLA 18 (Sección 4 formato oficial 6 columnas) admite dos granularidades válidas según la densidad pedagógica de la guía. El canon FM-1 (Misión Final formativa, 50 pts totales) queda establecido como canon único del sistema. El header de la tabla canónica Sección 4 usa el verde institucional SENA `#39A900`.**
+
+#### Decisión del instructor
+
+2026-04-21 — Instrucción explícita del instructor Sergio sobre el run DIESEL-2026-04-19 G1 (The Workshop Specialist):
+
+> *"DECISIÓN 1 — GRANULARIDAD / Opción A — 12 filas (parent activities de la guía actual) — recomendada / Opción FM-1: FM es formativa / Reescribir Sección 4 en `pm-3-6-learning-guide.md` / añadir REGLA 18 — Sección 4 formato canónico 6 columnas con schema + script canónico / Paleta del header de la tabla en verde SENA #39A900."*
+
+#### Dos granularidades canónicas de la REGLA 18
+
+| Granularidad | Filas | Cuándo usar | Ejemplo run canónico |
+|---|---|---|---|
+| **Opción A — parent activities** | 12 | Guía markdown-native (`pm-3-6-learning-guide.md` como fuente). Una fila por actividad padre. | DIESEL-2026-04-19 (The Workshop Specialist) |
+| **Opción B — full activity map** | 28–30 | Guía JSON-native (`pm-3-6.json` completo con sub-actividades). Una fila por sub-actividad. | MGV-2026-04-20 (The Visual Communicator) |
+
+Ambas granularidades comparten el mismo **header de 6 columnas canónicas**: Fase del proyecto formativo | Actividad del proyecto formativo | Actividad de aprendizaje | Evidencias de Aprendizaje | Criterios de evaluación | Técnicas e instrumentos de evaluación.
+
+#### Canon FM-1 (aplicable a ambas granularidades)
+
+- La Misión Final es **evaluación de transferencia formativa**, NO formal.
+- Puntaje total = **E1 + E2 + E3 + E4 + E5 + E6 = 5+5+5+5+5+25 = 50 pts** (no 55).
+- La Misión Final genera retroalimentación con puntaje /5 usando la **Escala de Estimación No 6** (PM-4.1, instrumento vigente) pero **no suma** al canon.
+- `canon_reference.total_canon` = 50; `canon_reference.misión_final_pts` = 5 formativo, no sumativo.
+
+Este canon resuelve la inconsistencia histórica entre textos que afirmaban "55 pts totales con E7" (obsoleto) y "50 pts formales con FM formativa" (canon actual).
+
+#### Paleta del header de la tabla canónica (v2.4 SENA institucional)
+
+- Header de la tabla de 6 columnas: **verde SENA `#39A900`** (reemplaza el naranja `#F59316` de v2.6.4).
+- Títulos de sección navyHeader: **azul oscuro SENA `#0B2E45`** (canon v2.6.6 · sin cambio).
+- Celdas de evidencia formal: fondo crema `#FFF6E8` o equivalente claro (sin cambio).
+
+El helper `simpleTable(headers, rows, colWidths, { headerFill })` de `pm-3-6-assemble.js` acepta opción de color de fondo de header — permite verde SENA para la tabla canónica Sección 4 mientras el resto de tablas del documento conservan el navy institucional.
+
+#### Regla de dual-presencia de criterios (PM-4.1 + PM-3.6)
+
+Los criterios de evaluación de cada instrumento formal (INST-1 a INST-5 + E6 Cuestionario Consolidado) deben aparecer **literalmente y en dos ubicaciones sincronizadas**:
+
+1. **Dentro del instrumento mismo** (`pm-4-1.json.instruments[*].criteria[*]` para INST-1..5; `pm-4-2.json.canon_structure.sections_list` para E6). Autoritativa para el instructor.
+2. **En la Sección 4 de la Guía del Aprendiz** (`pm-3-6-learning-guide.md` o `pm-3-6.json.seccion_4_planteamiento_evidencias.filas_evidencia[*].criterios`, Col 5). Versión que el aprendiz ve en el GFPI-F-135.
+
+El texto de Col 5 debe derivar **verbatim** de los `criteria[*].criterion` del instrumento correspondiente en PM-4.1 (o del `sections_list` de PM-4.2 para E6). Se permite consolidación ("10 criterios × 0.5 pt: …") pero no paráfrasis ni invención. Cita de origen obligatoria al final de cada celda: `(Fuente: PM-4.1 INST-X)` o `(Fuente: PM-4.2)`.
+
+#### Ruta de implementación canónica (v2.4)
+
+- **Guía markdown-native (Opción A):** editar directamente Sección 4 del `pm-3-6-learning-guide.md` y actualizar `scripts/pm-3-6-assemble.js::sec4()` para generar el DOCX equivalente.
+- **Guía JSON-native (Opción B):** mantener flujo original via `pm-3-6.json.seccion_4_planteamiento_evidencias` → `pm-3-6-gen.js`.
+
+#### Artefactos de referencia (DIESEL-2026-04-19 · canon v2.4)
+
+- `runs/DIESEL-2026-04-19/pm-3-6-learning-guide.md` — fuente canónica markdown Opción A (12 filas)
+- `runs/DIESEL-2026-04-19/pm-3-6-learning-guide.docx` — DOCX regenerado con header verde SENA, 50 pts canon FM-1
+- `runs/DIESEL-2026-04-19/scripts/pm-3-6-assemble.js::sec4()` — implementación canónica de la tabla 6×12 con `simpleTable({ headerFill: ORANGE })` donde `ORANGE="39A900"`
+
+#### Cambios correlacionados
+
+- **PM-3.6 prompt maestro:** REGLA 18 extendida con subsección "Revisión v3.2 — Granularidad Opción A + Canon FM-1 + Paleta SENA" (schema, tabla comparativa A/B, ruta de implementación).
+- **PM-4.1 prompt maestro:** Nueva cláusula "REGLA DE DUAL-PRESENCIA DE CRITERIOS (v3.2 · 2026-04-21)" en la sección Canon de Puntuación, con validador sugerido `check-criteria-dual-presence.js`.
+- **`pm-3-6-assemble.js`:** función `simpleTable()` extendida con parámetro `opts.headerFill`; `sec4()` reescrita al formato canónico 6×12 Opción A con verde SENA; `sec7()` Control del Documento actualizada con entry v1.3 "SENA-CANON-SEC4".
+- **CHANGELOG.md del run DIESEL-2026-04-19:** Nueva entrada v3.2 documentando el rework.
+
+### v2.7 — Learner-Readable Activity · Anatomía 6-bloque canónica — 2026-04-22
+
+**PM-3.6 Activity Cards unifican su presentación al aprendiz en una anatomía fija de 6 bloques. El DOCX del aprendiz ya no expone jerga de pipeline; la metadata upstream permanece en el JSON pero se suprime del render visible.**
+
+#### La anatomía 6-bloque (canon)
+
+Cada actividad con `schema_version: "v2.7"` en `pm-3-6.json` se renderiza en esta secuencia fija:
+
+| # | Bloque | Contenido | Regla |
+|---|--------|-----------|-------|
+| 1 | **Encabezado V+O+C** | Título procesable en EN + ES dominante | Verbo infinitivo (ES) / gerund-less (EN) · objeto + condición · ≤200 chars por idioma |
+| 2 | **Descripción narrativa** | Párrafo de 60–120 palabras en 3 movimientos | (a) qué vas a hacer · (b) por qué importa · (c) qué sale al final / promesa |
+| 3 | **Step-by-step** | 5–7 pasos observables | Cada paso es una acción verbal observable del aprendiz |
+| 4 | **Entregable** | Producto + formato + criterio mínimo | Derivado de la Activity Card; siempre visible |
+| 5 | **Evidencia (first-class)** | Si `produce_evidencia=true`: código + nombre + instrumento | Extraído a top-level del schema; 0 flag → bloque omitido sin ruido |
+| 6 | **Footer logístico** | Ambiente · estrategia · técnica · duración · materiales · material_apoyo | Heredado del activity_footer canónico |
+
+#### Supresión de jerga de pipeline en el DOCX del aprendiz
+
+Los campos `fuente_pm_3_2`, `fuente_pm_3_5`, `cross_references`, `voc_dimension`, `schema_version`, `rap_status`, `validation_checks` **permanecen en el JSON** como contrato upstream pero **no se renderizan** en el documento final del aprendiz. El instructor conserva trazabilidad completa abriendo el JSON; el estudiante nunca ve etiquetas internas del sistema.
+
+#### Script canónico — `scripts/rewrite_activities_v27.js`
+
+Migrador idempotente v2.6.3 → v2.7 con las siguientes garantías:
+
+- **Idempotencia por schema_version:** si `act.schema_version === "v2.7"` la actividad se salta.
+- **Dispatch por batch:** `--batch {piloto|A|B|C|D}` ejecuta subconjuntos controlados (piloto 3 · A S1+S2 7 · B S3+S4 8 · C S5+S6 8 · D FM 4 = 30 total).
+- **Flags de modo:** `--dry-run` produce `migration-report-v27.md` sin tocar JSON; `--apply` escribe `pm-3-6.json` creando backup `.pre-v27.bak`.
+- **Drafts internos:** `VOC_DRAFTS[id]` + `NARRATIVA_DRAFTS[id]` concentran el contenido pedagógico por actividad; cualquier guía nueva extiende estos diccionarios y ejecuta el migrador.
+- **Validación automática:** longitud EN/ES ≤200 chars (V+O+C), narrativa 60–120 palabras, mínimo 5 pasos; warnings no-fatales registrados en el reporte.
+
+#### Evidencia first-class
+
+Cuando `produce_evidencia === true`, el script extrae `footer.evidencia` (código E1–E6 + nombre + `instrument_code`) al nivel superior de la actividad como `evidencia: {aplica: true, codigo, nombre, instrument_code}`. Cuando `produce_evidencia === false`, el top-level queda `evidencia: {aplica: false}` y el bloque 5 se omite del render sin dejar hueco.
+
+#### Rollout en batches — run MGV-2026-04-20 G1
+
+| Batch | Sesiones | Actividades | Status |
+|-------|----------|-------------|--------|
+| piloto | S1+S2+FM (representativas) | 3 | ✅ 2026-04-22 |
+| A | S1 + S2 | 7 | ✅ 2026-04-22 |
+| B | S3 + S4 (E2/E3/E4) | 8 | ✅ 2026-04-22 |
+| C | S5 + S6 (E5/E6) | 8 | ✅ 2026-04-22 |
+| D | FM S6½-S8 | 4 | ✅ 2026-04-22 |
+| **Total** | **S1→S8 + FM** | **30/30** | **✅ sellado** |
+
+#### Cambios correlacionados
+
+- **`runs/MGV-2026-04-20/pm-3-6.json`:** 30/30 actividades con `schema_version: "v2.7"`; backup `pm-3-6.json.pre-v27.bak` preservado.
+- **`runs/MGV-2026-04-20/scripts/rewrite_activities_v27.js`:** Script canónico del migrador — fuente de verdad de los VOC + narrativas por actividad G1.
+- **`runs/MGV-2026-04-20/scripts/gen_audit_docx.js`:** Renderer `renderActivityV27` consumido por el pipeline; elimina jerga de pipeline del documento final.
+- **`runs/MGV-2026-04-20/pm-3-6-FINAL-G1.docx`:** 103.7 KB · 30/30 v2.7 · 0 fugas de `Fuente: PM-*` / `V+O+C` / `voc_dimension` / `schema_version`.
+- **`runs/MGV-2026-04-20/migration-report-v27.md`:** Reporte generado automáticamente (longitud VOC, palabras narrativa, conteo de pasos, evidencia first-class, warnings).
+
+#### Ruta de port a otros runs
+
+Para portar v2.7 a un run existente (DIESEL-2026-04-15, DIESEL-2026-04-19 o guías futuras de MGV G2–G6):
+
+1. Copiar `scripts/rewrite_activities_v27.js` al run destino.
+2. Actualizar `RUN_ID`, `PILOTO_IDS`, `BATCHES` y los diccionarios `VOC_DRAFTS` + `NARRATIVA_DRAFTS` con el universo pedagógico de la guía (respetando la regla v2.3 de universo original).
+3. Ejecutar `--batch piloto --dry-run` para validar.
+4. Aplicar los 4 batches en secuencia con `--apply` + regenerar DOCX tras cada batch.
+5. Actualizar `CHANGELOG.md` del run con entrada v2.7.
 
 ### v2.6.6 — Paleta SENA Institucional (verde #39A900 protagonista + azul oscuro #0B2E45) — 2026-04-21
 
@@ -931,7 +1120,7 @@ node scripts/check-generator-parity.js   # exit 1 si hay drift
 
 **Qué valida:**
 
-1. Ambos DOCX contienen el texto canon `Total canon = 55 pts` en Sección 4.
+1. Ambos DOCX contienen el texto canon `Total canon = 50 pts formales` en Sección 4 (Misión Final no suma — transferencia ABP formativa).
 2. Ambos DOCX contienen las 6 evidencias formales (E1..E6) con mismo nombre de producto.
 3. Ninguna línea de Sección 4 vive exclusivamente en un DOCX (diff tolerante a diferencias de shim callout/quote conocidas).
 
@@ -1259,7 +1448,7 @@ Cuando una actividad produce evidencia formal (6 de 30 en G1), el footer añade 
 
 **6. PM-1.2 estructura 4-bloques canónica (§10 PASO 2):**
 - **Bloque 0:** Presentación L1 (10 renglones español, onboarding al universo narrativo)
-- **Bloque A:** Scope + Integrative Task + Evaluation Matrix (55 pts)
+- **Bloque A:** Scope + Integrative Task + Evaluation Matrix (50 pts formales; Misión Final transferencia ABP, no suma)
 - **Bloque B:** GFPI-F-134 columnas 1-5
 - **Bloque C:** 3 fichas de curación + universo narrativo completo
 - Reemplaza la estructura lineal previa; organiza el output en capas de responsabilidad clara
@@ -1352,7 +1541,7 @@ gen_35_36_docx.js            → generador DOCX canónico con renderInlineAppend
 - **Cuadro de puntuación canónico establecido:** E1–E5 = 5 pts c/u (25 pts) + E6 Cuestionario Consolidado = 25 pts = **50 pts formales**. Todos los PMs alineados a este canon. *(Nota v2.3.1: la versión original de v2.1 sumaba Misión Final como +5 pts; esto fue rectificado — la Misión Final es transferencia ABP y no suma al total formal. Fuente de verdad: PM-4.1 §Canon de Puntuación v2.3.1.)*
 - **PM-4.1 refinado:** RAP code 220501096 asignado. Instrumentos: Lista de Chequeo No 1 y No 3 (no "Cuestionario") para E1/E3. 6 instrumentos = 5 pts cada uno (formativo). Paquete + Cuestionario Consolidado son documentos impresos separados (PM-4.1 / PM-4.2).
 - **PM-4.2 refinado:** RAP code 220501096. E6 = 25 pts, 5 secciones × 5 ítems × 1 pt.
-- **PM-3.6 v1.2:** Tabla de evidencias corregida (E1/E3 = Desempeño, Lista de Chequeo; Misión Final = 5 pts / 6 criterios; TOTAL = 55). Referencia a PM-4.1 y PM-4.2 como documentos impresos acompañantes.
+- **PM-3.6 v1.2:** Tabla de evidencias corregida (E1/E3 = Desempeño, Lista de Chequeo). Referencia a PM-4.1 y PM-4.2 como documentos impresos acompañantes. *(Nota v2.3.1: la versión original de esta entrada declaraba "Misión Final = 5 pts / TOTAL = 55"; corregido en v2.3.1 — Misión Final es formativa y no suma; TOTAL formal = 50 pts. Fuente de verdad: PM-4.1.)*
 - **Auditoría G6 de cohesión:** 15 checks ejecutados en todos los documentos del run. Discrepancias encontradas y corregidas sistemáticamente en JSON + generadores + docx outputs.
 - **Script pipeline completo:** pm-3-2-estrategias-patch.js automatiza el ciclo JSON → generator patch → docx. Reutilizable en futuros runs.
 

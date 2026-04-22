@@ -2406,6 +2406,147 @@ function renderScaffoldInline(sc) {
   }
 }
 
+// ── Activity Card v2.7 ─────────────────────────────────────────────────────
+// Canon: Activity Card Schema §10 (Learner-Readable Activity — 6-block anatomy)
+//   Bloque 1 · Encabezado V+O+C       (actividad_tipo_label + enunciado_voc.en/es)
+//   Bloque 2 · Descripción narrativa  (descripcion_narrativa.en/es · 60–120 palabras)
+//   Bloque 3 · Step-by-step           (paso_a_paso PASO N / STEP N verde SENA)
+//   Bloque 4 · Entregable             (reusa deliverableBlock_v263)
+//   Bloque 5 · Evidencia first-class  (evidencia.aplica · ruta A sin · ruta B con código+instrumento)
+//   Bloque 6 · Footer logístico       (activity_footer 6 campos canónicos — SIN evidencia inline)
+//
+// Dispatch: activity.schema_version === 'v2.7' → renderActivityV27
+//           else (activity.titulo_en) → renderActivityCard_v263
+//           else → legacy fallback
+//
+// Paleta: NAVY (títulos), ORANGE=#39A900 (acentos verde SENA), DKGREY (ES/meta),
+//         STEEL (evidencia line). Sin colores nuevos.
+
+function vocHeadlineBlock_v27(a) {
+  // Enunciado bilingüe V+O+C: EN NAVY bold grande, ES DKGREY italic pequeña.
+  // NO se renderiza label "V+O+C" — la estructura V+O+C es invisible al aprendiz,
+  // solo lee el enunciado redactado en esa forma. (Canon v2.7 · learner-readable.)
+  const ch = [];
+  const voc = a.enunciado_voc;
+  if (!voc || (!voc.en && !voc.es)) return ch;
+  if (voc.en) {
+    ch.push(new Paragraph({
+      spacing: { before: 120, after: 40 },
+      children: [new TextRun({ text: voc.en, font: 'Calibri', size: 24, color: NAVY, bold: true })]
+    }));
+  }
+  if (voc.es) {
+    ch.push(new Paragraph({
+      spacing: { before: 0, after: 160 },
+      children: [new TextRun({ text: voc.es, font: 'Calibri', size: 16, color: DKGREY, italics: true })]
+    }));
+  }
+  return ch;
+}
+
+function narrativaBlock_v27(narr) {
+  // Bloque 2 · "Description" / "Descripción" — párrafos 60-120 palabras.
+  // Labels minimalistas en bold NAVY pequeño (sin sectionHeader uppercase).
+  const ch = [];
+  if (!narr || (!narr.en && !narr.es)) return ch;
+  if (narr.en) {
+    ch.push(new Paragraph({
+      spacing: { before: 120, after: 20 },
+      children: [new TextRun({ text: 'Description', font: 'Calibri', size: 18, color: NAVY, bold: true })]
+    }));
+    ch.push(new Paragraph({
+      spacing: { before: 0, after: 140 },
+      children: [new TextRun({ text: narr.en, font: 'Calibri', size: 22, color: NAVY })]
+    }));
+  }
+  if (narr.es) {
+    ch.push(new Paragraph({
+      spacing: { before: 20, after: 20 },
+      children: [new TextRun({ text: 'Descripción', font: 'Calibri', size: 18, color: NAVY, bold: true })]
+    }));
+    ch.push(new Paragraph({
+      spacing: { before: 0, after: 180 },
+      children: [new TextRun({ text: narr.es, font: 'Calibri', size: 14, color: DKGREY, italics: true })]
+    }));
+  }
+  return ch;
+}
+
+function evidenciaFirstClassBlock_v27(ev) {
+  // Bloque 5 · Evidencia como bloque propio.
+  // Ruta A (aplica=false): "Sin evidencia formal — actividad de apropiación/transferencia."
+  // Ruta B (aplica=true): código + instrumento en NAVY bold; tipo SENA + técnica en STEEL italic.
+  const ch = [];
+  if (!ev || typeof ev !== 'object') return ch;
+  ch.push(sectionHeader_v263('Evidencia'));
+  if (ev.aplica === false) {
+    ch.push(new Paragraph({
+      spacing: { before: 0, after: 160 },
+      children: [
+        new TextRun({ text: '▸ ', font: 'Calibri', size: 18, color: ORANGE }),
+        new TextRun({ text: 'Sin evidencia formal (ruta A · actividad de apropiación o transferencia)', font: 'Calibri', size: 18, color: DKGREY, italics: true })
+      ]
+    }));
+    return ch;
+  }
+  // Ruta B
+  const codigo = ev.codigo ? `[${ev.codigo}] ` : '';
+  const instrumento = ev.instrumento || ev.nombre || '';
+  ch.push(new Paragraph({
+    spacing: { before: 0, after: 40 },
+    children: [
+      new TextRun({ text: '◆ ', font: 'Calibri', size: 22, color: ORANGE, bold: true }),
+      new TextRun({ text: codigo, font: 'Calibri', size: 22, color: ORANGE, bold: true }),
+      new TextRun({ text: instrumento, font: 'Calibri', size: 22, color: NAVY, bold: true })
+    ]
+  }));
+  const meta = [];
+  if (ev.tipo_sena) meta.push({ label: 'Tipo', value: ev.tipo_sena });
+  if (ev.tecnica_evaluacion) meta.push({ label: 'Técnica', value: ev.tecnica_evaluacion });
+  if (ev.instrument_code) meta.push({ label: 'Código', value: ev.instrument_code });
+  if (meta.length) {
+    const runs = [];
+    meta.forEach((m, i) => {
+      if (i > 0) runs.push(new TextRun({ text: ' · ', font: 'Calibri', size: 16, color: STEEL }));
+      runs.push(new TextRun({ text: `${m.label}: `, font: 'Calibri', size: 16, color: STEEL, bold: true }));
+      runs.push(new TextRun({ text: m.value, font: 'Calibri', size: 16, color: STEEL, italics: true }));
+    });
+    ch.push(new Paragraph({
+      spacing: { before: 0, after: 160 },
+      children: runs
+    }));
+  }
+  return ch;
+}
+
+function renderActivityV27(a, apendicesById) {
+  const ch = [];
+  // Bloque 1a · Encabezado (ID + tipo · título EN/ES + meta) — reusa v263
+  ch.push(...activityHeader_v263(a));
+  // Bloque 1b · V+O+C (la novedad v2.7: enunciado del objetivo de aprendizaje)
+  ch.push(...vocHeadlineBlock_v27(a));
+  // Bloque 2 · Description / Descripción narrativa (60–120 palabras)
+  ch.push(...narrativaBlock_v27(a.descripcion_narrativa));
+  // Bloque 3 · Step-by-step (reusa stepsBlock_v263 — PASO N / STEP N verde SENA)
+  ch.push(...stepsBlock_v263(a.paso_a_paso));
+  // Input content (apéndices inline, si la actividad los referencia)
+  if (Array.isArray(a.apendices_referenciados)) {
+    for (const apId of a.apendices_referenciados) {
+      const apx = apendicesById && apendicesById[apId];
+      if (apx) ch.push(...renderContenidoInline(apx));
+    }
+  }
+  // Scaffold inline (learner workspace, se conserva del v2.6.3)
+  if (a.scaffold_inline) ch.push(...renderScaffoldInline(a.scaffold_inline));
+  // Bloque 4 · Entregable (reusa v263)
+  ch.push(...deliverableBlock_v263(a.entregable));
+  // Bloque 5 · Evidencia first-class (nuevo en v2.7 — bloque propio, separado del footer)
+  ch.push(...evidenciaFirstClassBlock_v27(a.evidencia));
+  // Bloque 6 · Footer logístico (6 campos canónicos — SIN evidencia inline en v2.7)
+  if (a.activity_footer) ch.push(...renderActivityFooter(a.activity_footer));
+  return ch;
+}
+
 // ── Activity Card v2.6.3 ───────────────────────────────────────────────────
 
 function renderActivityCard_v263(a, apendicesById) {
@@ -2438,15 +2579,22 @@ function renderActivityCard_v263(a, apendicesById) {
 }
 
 // =========================================================================
-// renderActividades — dispatcher: v2.6.3 si la actividad tiene titulo_en,
-// fallback legacy v2.6.1/v2.6.2 en otro caso (defensivo).
+// renderActividades — dispatcher:
+//   1. v2.7  (schema_version === 'v2.7') → renderActivityV27   (Learner-Readable, 6 bloques)
+//   2. v2.6.3 (titulo_en presente)        → renderActivityCard_v263
+//   3. legacy (v2.6.1 / v2.6.2)           → inline fallback
 // =========================================================================
 
 function renderActividades(actividades, apendicesById) {
   const ch = [];
   if (!Array.isArray(actividades)) return ch;
   for (const a of actividades) {
-    // v2.6.3 path — preferred
+    // v2.7 path — Learner-Readable Activity (6-block canon)
+    if (a && a.schema_version === 'v2.7') {
+      ch.push(...renderActivityV27(a, apendicesById));
+      continue;
+    }
+    // v2.6.3 path
     if (a && a.titulo_en) {
       ch.push(...renderActivityCard_v263(a, apendicesById));
       continue;
@@ -2489,8 +2637,12 @@ function renderSubseccion(block, apendicesById, level = 2) {
 
   // Metadata de la subsección
   if (block.titulo_aprendiz) ch.push(P(block.titulo_aprendiz, { bold: true }));
-  if (block.fuente_pm_3_2) ch.push(note(`Fuente: ${block.fuente_pm_3_2}`));
-  if (block.fuente_pm_3_5) ch.push(note(`Fuente: ${block.fuente_pm_3_5}`));
+  // NOTA v2.7 · learner-readable: las líneas "Fuente: PM-3.2 S1 — set_up + while_a..." y
+  // "Fuente: PM-3.5 ..." son metadata de trazabilidad del pipeline (auditoría interna),
+  // NO contenido pedagógico para el aprendiz. Se omiten del DOCX de PM-3.6 (learner doc).
+  // Permanecen en el JSON fuente (fuente_pm_3_2, fuente_pm_3_5) para el pipeline.
+  // if (block.fuente_pm_3_2) ch.push(note(`Fuente: ${block.fuente_pm_3_2}`));
+  // if (block.fuente_pm_3_5) ch.push(note(`Fuente: ${block.fuente_pm_3_5}`));
   if (block.duracion_total_min != null) ch.push(kv('Duración total', `${block.duracion_total_min} min`));
   if (block.duracion_min != null) ch.push(kv('Duración', `${block.duracion_min} min`));
   if (block.nota_aprendiz) ch.push(quote(block.nota_aprendiz));
@@ -2854,77 +3006,25 @@ function buildPM36Docx() {
     ch.push(note('Sin cambios registrados (primera versión).'));
   }
 
-  // Índice consolidado de apéndices (REGLA 12 canon v2.6)
+  // Índice consolidado de apéndices (v2.7 learner-readable)
+  // NOTA: se eliminó la columna "Fuente / Ubicación" (referencias a PM-2.3, PM-2.4, etc.)
+  // y la nota "REGLA 12" porque son metadata interna del pipeline, no contenido para el aprendiz.
   if (Object.keys(apendicesById).length) {
     ch.push(pageBreak());
-    ch.push(H1('Apéndices Embebidos (Índice)'));
-    ch.push(note('REGLA 12 v2.6 — Doble render: cada apéndice ya fue renderizado inline en su actividad. Este índice lista todos los apéndices con su origen PM y extensión aproximada.'));
+    ch.push(H1('Apéndices · Índice'));
+    ch.push(note('Cada apéndice ya fue presentado dentro de su actividad. Este índice te ayuda a localizarlos rápidamente.'));
     const rows = Object.values(apendicesById).map(ap => [
       ap.id || '—',
       ap.titulo || '—',
-      ap.fuente_pm_2_3 || ap.fuente_pm_2_4 || ap.fuente_pm_2_6 || ap.fuente_pm_2_5 || ap.fuente_pm_2_8 || ap.fuente_pm_2_9 || ap.fuente_pm_2_10 || ap.fuente_pm_3_5 || ap.ubicacion_seccion || '—',
       ap.extension_aproximada || ap.contenido_inline?.tipo || '—',
     ]);
-    ch.push(makeTable(['ID', 'Título', 'Fuente / Ubicación', 'Extensión / Tipo'], rows, [1200, 4200, 2800, 1880]));
+    ch.push(makeTable(['ID', 'Título', 'Extensión / Tipo'], rows, [1500, 6400, 2180]));
   }
 
-  // Cross references (si existe en schema)
-  if (d.cross_references && typeof d.cross_references === 'object') {
-    ch.push(pageBreak());
-    ch.push(H1('Cross-References'));
-    for (const [k, v] of Object.entries(d.cross_references)) {
-      if (Array.isArray(v)) {
-        ch.push(H3(k.replaceAll('_', ' ')));
-        for (const x of v) ch.push(bullet(typeof x === 'object' ? JSON.stringify(x) : String(x)));
-      } else if (typeof v === 'object' && v !== null) {
-        ch.push(H3(k.replaceAll('_', ' ')));
-        for (const [kk, vv] of Object.entries(v)) ch.push(kv(kk.replaceAll('_', ' '), Array.isArray(vv) ? vv.join(' · ') : (typeof vv === 'object' ? JSON.stringify(vv) : String(vv))));
-      } else {
-        ch.push(kv(k.replaceAll('_', ' '), String(v)));
-      }
-    }
-  }
-
-  // RAP status (si existe)
-  if (d.rap_status && typeof d.rap_status === 'object') {
-    ch.push(H1('RAP Status'));
-    for (const [k, v] of Object.entries(d.rap_status)) {
-      if (Array.isArray(v)) {
-        ch.push(kv(k.replaceAll('_', ' '), v.join(' · ')));
-      } else if (typeof v === 'object' && v !== null) {
-        ch.push(H3(k.replaceAll('_', ' ')));
-        for (const [kk, vv] of Object.entries(v)) ch.push(kv(kk.replaceAll('_', ' '), Array.isArray(vv) ? vv.join(' · ') : String(vv)));
-      } else {
-        ch.push(kv(k.replaceAll('_', ' '), String(v)));
-      }
-    }
-  }
-
-  // Validation checks
-  if (d.validation_checks) {
-    ch.push(pageBreak());
-    ch.push(H1('Validation Checks'));
-    const vc = d.validation_checks;
-    if (Array.isArray(vc)) {
-      for (const v of vc) {
-        if (typeof v === 'object' && v !== null) {
-          const lbl = v.check || v.nombre || v.id || '—';
-          ch.push(kv(lbl, `${v.status || '—'} · ${v.detail || v.nota || ''}`));
-        } else {
-          ch.push(bullet(String(v)));
-        }
-      }
-    } else if (typeof vc === 'object') {
-      const valRows = Object.entries(vc).map(([k, v]) => {
-        const label = k.replaceAll('_', ' ');
-        if (v && typeof v === 'object' && !Array.isArray(v)) {
-          return [label, v.status || '—', v.detail || v.nota || JSON.stringify(v)];
-        }
-        return [label, '—', Array.isArray(v) ? v.join(' · ') : String(v ?? '—')];
-      });
-      if (valRows.length) ch.push(makeTable(['Check', 'Estado', 'Detalle'], valRows, [3600, 1800, 4680]));
-    }
-  }
+  // NOTA v2.7 · learner-readable: las secciones Cross-References, RAP Status y
+  // Validation Checks son metadata del pipeline (auditoría interna) — permanecen
+  // en el JSON (d.cross_references, d.rap_status, d.validation_checks) pero NO
+  // se renderizan en el DOCX que recibe el aprendiz.
 
   return new Document({
     creator: 'FPI CD Engine v2.6',

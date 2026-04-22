@@ -1,24 +1,27 @@
 ---
 type: data-contract
-version: 2.6.3
+version: 2.7
 created: 2026-04-13
-last_verified: 2026-04-20
+last_verified: 2026-04-21
+last_updated: 2026-04-21
 status: active
 ---
 
 # Activity Card — Schema
 
-> **⚠️ DOS SCHEMAS DIFERENTES EN ESTE DOCUMENTO**
+> **⚠️ TRES SCHEMAS COEXISTEN EN ESTE DOCUMENTO**
 >
-> A partir de v2.6.3 este contrato cubre **dos activity cards distintas**, con roles y consumidores diferentes. No confundir:
+> A partir de v2.7 este contrato cubre **tres activity cards distintas**, con roles y consumidores diferentes. No confundir:
 >
 > | Schema | Dónde vive | Productor | Consumidor | Propósito |
 > |---|---|---|---|---|
 > | **Activity Card v2.0 (Fase 2, GFPI-F-134)** | Output de cada PM-2.x | PM-2.1..PM-2.10 | PM-2.11 (Row Assembler) | Ensamblar fila GFPI-F-134 columnas 6-10 |
 > | **Activity Card v2.6.3 (Fase 4, Learner-Facing)** | `pm-3-6.json.seccion_3_actividades_aprendizaje[*]` | PM-3.6 (GFPI-F-135 Integrator) | `gen_audit_docx.js` → DOCX del aprendiz | Renderizar la actividad con workspace embebido (scaffold_inline) |
+> | **Activity Card v2.7 (Fase 4, Learner-Readable)** | `pm-3-6.json.seccion_3_actividades_aprendizaje[*]` con `schema_version: "v2.7"` | PM-3.6 (GFPI-F-135 Integrator) | `pm-3-6-new-gen.js` / `gen_audit_docx.js` → DOCX del aprendiz | Anatomía de 6 bloques Learner-Readable (V+O+C + narrativa + pasos + entregable + evidencia + footer), inspirada en canon SENA-apilador |
 >
 > - **Secciones 1–8** documentan el schema v2.0 (GFPI-F-134 feed). Sigue vigente sin cambios.
-> - **Sección 9 (nueva en v2.6.3)** documenta el schema v2.6.3 (Learner-Facing). Es el contrato que rige lo que el aprendiz ve renderizado en la Guía del Aprendiz.
+> - **Sección 9 (v2.6.3)** documenta el schema learner-facing con `scaffold_inline` embebido. Sigue vigente para runs legacy.
+> - **Sección 10 (nueva en v2.7)** documenta el schema Learner-Readable de 6 bloques. Es el contrato canónico que rige lo que el aprendiz ve renderizado en la Guía del Aprendiz a partir de 2026-04-21. Extensión evolutiva de v2.6.3 — preserva `scaffold_inline`, `entregable`, `activity_footer`; reenmarca el encabezado (V+O+C) y la descripción (narrativa estilo prólogo); promueve `evidencia` a bloque propio.
 
 ## Propósito
 
@@ -751,3 +754,258 @@ Antes de emitir `pm-3-6.json`:
 **Versión v2.6.3:** A partir del 2026-04-20  
 **Caso de origen:** MGV-2026-04-20 G1 (The Visual Communicator) — 30/30 actividades migradas, 10 tipos de scaffold usados, 6 badges verificados.  
 **Próxima guía que arranca con este contrato:** MGV-G2.
+
+---
+
+## 10. Activity Card v2.7 — Learner-Readable Activity (pm-3-6.json · sucesor de v2.6.3)
+
+**Nueva en v2.7 (2026-04-21).** Extensión evolutiva de v2.6.3 que formaliza **seis bloques visibles al aprendiz** con anatomía inspirada en el formato canónico SENA de actividades GFPI-F-135 (caso de referencia: *"Inspeccionar preoperativamente el equipo apilador de acuerdo con manual de operación"*). Preserva toda la infraestructura de v2.6.3 (`scaffold_inline`, `entregable`, `activity_footer`) pero reenmarca el encabezado y la descripción para que cada actividad lea como **instrucción operacional con voz instructiva cálida** — no como fragmento telegráfico con etiquetas duplicadas.
+
+### 10.1 Los 6 bloques canónicos
+
+Cada actividad renderizada al aprendiz debe contener, en este orden estricto:
+
+| # | Bloque | Campo JSON | Obligatorio | Origen |
+|---|---|---|---|---|
+| 1 | Encabezado V+O+C | `encabezado` | ✅ | v2.7 nuevo |
+| 2 | Descripción narrativa | `descripcion_narrativa` | ✅ | v2.7 nuevo (reemplaza `descripcion_aprendiz`) |
+| 3 | Step-by-step · Paso a paso | `paso_a_paso` | ✅ | v2.6.3 preservado |
+| 4 | Entregable | `entregable` | ✅ | v2.6.3 preservado |
+| 5 | Evidencia de aprendizaje | `evidencia` | ⚠️ condicional (si aplica) | v2.7 promovido desde `activity_footer.evidencia` |
+| 6 | Footer logístico | `activity_footer` | ✅ | v2.6.1 preservado (sin subcampo `evidencia`) |
+
+Entre los bloques 2 y 3 el renderer puede intercalar `scaffold_inline` como **input material** (texto de lectura, transcripción, glosario). El workspace `scaffold_inline` sigue viviendo en su propia posición estructural igual que en v2.6.3 — normalmente entre el paso-a-paso y el entregable, según dicte el tipo de scaffold.
+
+### 10.2 Schema completo v2.7
+
+```json
+{
+  "actividad_id": "A3.3.S2.1",
+  "schema_version": "v2.7",
+
+  "tipo_actividad_sena": "directa",
+  "tiempo_min": 25,
+  "agrupacion": "individual",
+  "voc_dimension": ["cognitiva"],
+
+  "encabezado": {
+    "actividad_tipo_label": "Actividad cognitiva",
+    "enunciado_voc": {
+      "en": "Recognize 20 technical design vocabulary items in English through pre-apropiación diagnostic self-assessment",
+      "es": "Reconocer 20 términos técnicos de diseño visual en inglés mediante autoevaluación diagnóstica previa a la apropiación léxica"
+    }
+  },
+
+  "descripcion_narrativa": {
+    "en": "Before learning new words, it is worth taking an honest inventory of what you already know. In this activity you will receive a sheet with the 20 terms you will use throughout the guide — the five great territories of design: typography, color, shape & composition, tools & software, and products & actions. This is not an exam. It is a personal map. When you finish, you will know exactly in which areas you start with an advantage and in which ones you will need to lean on the vocabulary of the next sessions.",
+    "es": "Antes de aprender palabras nuevas, vale la pena hacer un inventario honesto de lo que ya sabes. En esta actividad recibirás una hoja con los 20 términos que vas a usar durante toda la guía — los cinco grandes territorios del diseño: tipografía, color, forma & composición, herramientas & software, y productos & acciones. No es un examen. Es un mapa personal. Al terminar sabrás exactamente en qué áreas partes con ventaja y en cuáles necesitas apoyarte en el vocabulario de las próximas sesiones."
+  },
+
+  "paso_a_paso": [
+    { "en": "Receive the diagnostic sheet with 20 design words organized in 5 categories.",  "es": "Recibir la hoja diagnóstica con los 20 términos organizados en 5 categorías." },
+    { "en": "Read each word silently. Do NOT translate yet — just notice your first reaction.", "es": "Leer cada palabra en silencio. NO traducir todavía — solo notar tu primera reacción." },
+    { "en": "Mark with ✓ the words you already recognize in English.",                        "es": "Marcar con ✓ las palabras que ya reconoces en inglés." },
+    { "en": "Mark with ? the words you do not yet know or feel uncertain about.",             "es": "Marcar con ? las palabras que todavía no conoces o te generan duda." },
+    { "en": "Count your ✓ marks by category and write the totals on the right column.",       "es": "Contar los ✓ por categoría y escribir los totales en la columna derecha." },
+    { "en": "Keep the sheet — you will revisit it in Session 5 to measure your progress.",    "es": "Guardar la hoja — la vas a revisar en la Sesión 5 para medir tu progreso." }
+  ],
+
+  "scaffold_inline": {
+    "tipo": "checklist",
+    "titulo_en": "Vocabulary Diagnostic Sheet — 20 terms × 5 categories",
+    "titulo_es": "Hoja Diagnóstica de Vocabulario — 20 términos × 5 categorías",
+    "estructura": { /* preservado v2.6.3 */ }
+  },
+
+  "entregable": {
+    "producto":        { "en": "Diagnostic Sheet with 20 terms marked (✓ or ?) and category totals", "es": "Hoja diagnóstica con 20 términos marcados (✓ o ?) y totales por categoría" },
+    "formato":         { "en": "Printed sheet provided by the instructor",                           "es": "Hoja impresa entregada por el instructor" },
+    "criterio_minimo": { "en": "All 20 terms marked with exactly one symbol + 5 category totals",    "es": "Los 20 términos marcados con exactamente un símbolo + 5 totales de categoría" }
+  },
+
+  "evidencia": {
+    "aplica": false
+  },
+
+  "activity_footer": {
+    "ambiente": "Ambiente convencional (aula)",
+    "estrategia": "Aprendizaje Basado en Tareas (ABT)",
+    "tecnica": "Diagnóstico léxico marcado",
+    "materiales": "Diagnostic Sheet impresa, lapiceros",
+    "material_apoyo": "no aplica",
+    "duracion_horas": "0.4 horas"
+  }
+}
+```
+
+### 10.3 Bloque 1 — Encabezado V+O+C
+
+**Campo:** `encabezado`
+
+Anatomía:
+
+- **`actividad_tipo_label`** — tag dimensional único y explícito, longform oficial:
+  - `"Actividad cognitiva"` — análisis, comprensión, identificación, clasificación
+  - `"Actividad procedimental"` — ejecución, comunicación, producción, simulación
+  - `"Actividad actitudinal"` — reflexión, auto-evaluación, colaboración, meta-cognición
+  - Si la actividad cruza dos dimensiones, se elige la dominante.
+  - **Obligatorio exactamente uno.** Elimina el patrón previo `[[COGNITIVA]] Instruction [COGNITIVA]` (doble tag).
+
+- **`enunciado_voc.{en, es}`** — enunciado bilingüe con estructura *Verbo + Objeto + Condición* en infinitivo simétrico:
+  - EN sin gerundio de arranque: `"Recognize ... through ..."` · `"Analyze ... using ..."` · `"Inspect ... according to ..."` · `"Produce ... on ..."`
+  - ES en infinitivo: `"Reconocer ... mediante ..."` · `"Analizar ... usando ..."` · `"Inspeccionar ... de acuerdo con ..."` · `"Elaborar ... sobre ..."`
+  - Máximo **200 caracteres por idioma**.
+  - Estructura: `Verbo` + `Objeto del aprendizaje` + `Condición operacional` (instrumento, medio, contexto, marco de referencia).
+
+**Ejemplos canónicos** (todos bilingües simétricos, verbo-condición alineado):
+
+| Actividad típica | EN V+O+C | ES V+O+C |
+|---|---|---|
+| Diagnóstico léxico | Recognize 20 technical design vocabulary items in English through pre-apropiación diagnostic self-assessment | Reconocer 20 términos técnicos de diseño visual en inglés mediante autoevaluación diagnóstica previa a la apropiación léxica |
+| Inspección técnica | Inspect the container reach stacker pre-operatively in accordance with the operation manual | Inspeccionar preoperativamente el equipo apilador de acuerdo con manual de operación |
+| Escritura técnica | Produce a risk assessment report on the assigned technical scenario using the canonical template | Elaborar un informe de evaluación de riesgos sobre el escenario técnico asignado usando la plantilla canónica |
+| Escucha técnica | Identify five key safety signals in the Bay 2 briefing audio through guided note-taking | Identificar cinco señales clave de seguridad en el audio de Bay 2 mediante toma de notas guiada |
+| Oralidad simulada | Deliver a two-minute mood board presentation to the Art Director using target Language Functions F1–F5 | Presentar un mood board de dos minutos al Art Director usando las Funciones Comunicativas F1–F5 |
+
+### 10.4 Bloque 2 — Descripción narrativa
+
+**Campo:** `descripcion_narrativa.{en, es}`
+
+Párrafo continuo — **un solo párrafo, sin listas, sin bullets, sin saltos de línea internos** — de **60 a 120 palabras por idioma**, redactado en segunda persona (`you` / `tú`) con voz instructiva cálida. Es el equivalente conceptual del párrafo narrativo largo en el ejemplo SENA-apilador (*"Esta actividad se centra en la inspección práctica del equipo apilador. Para el desarrollo de la actividad..."*) y se alinea con el tono del prólogo general de la guía (Sección 2 de pm-3-6).
+
+Debe responder tres preguntas implícitas, en este orden:
+
+1. **¿Qué vas a hacer?** — panorama operacional breve (1–2 oraciones).
+2. **¿Por qué importa?** — cómo se conecta con la competencia del RAP o el contexto laboral (1–2 oraciones).
+3. **¿Cuál es la promesa al terminar?** — qué sabrá o podrá hacer el aprendiz al finalizar (1 oración).
+
+**Prohibido:**
+- Listas con bullets o numeración
+- Saltos de línea internos (un solo párrafo)
+- Prefijos `EN:` / `ES:` — el renderer diferencia por tipografía
+
+### 10.5 Bloque 3 — Step-by-step · Paso a paso
+
+**Campo:** `paso_a_paso` (preservado de v2.6.3 con refinamiento canónico v2.6.2).
+
+- Array de **5 a 7 objetos `{en, es}`**.
+- Cada paso: imperativo bilingüe, autocontenido, con verbo + objeto + condición al nivel del micro-paso.
+- Renderer canónico (patrón v2.6.2 validado en DIESEL-04-19 Paso 3 barrido): marcador `PASO N · STEP N` en verde SENA `#39A900`, 12pt bold, seguido de EN en navy `#0B2E45` 11pt y ES en grey `#6B7280` 7pt italic.
+- **Sin prefijos `EN:`/`ES:`**.
+- Autocontención: un aprendiz debe poder ejecutar cada paso leyendo solo ese paso.
+
+### 10.6 Bloque 4 — Entregable
+
+**Campo:** `entregable` (preservado sin cambios desde v2.6.3 §9.3).
+
+Tres subcampos obligatorios `{producto, formato, criterio_minimo}` × `{en, es}`. Cierra la actividad con **evaluabilidad binaria** (entregado / no entregado contra criterio mínimo). El `criterio_minimo` debe ser sincrónico con el criterio correspondiente en `pm-4-1.json` si la actividad produce evidencia formal (regla de dual-presencia DM v2.4).
+
+### 10.7 Bloque 5 — Evidencia de aprendizaje
+
+**Campo:** `evidencia` (promovido desde `activity_footer.evidencia` de v2.6.1 a bloque propio de primer orden).
+
+**Ruta A — si la actividad NO produce evidencia formal:**
+
+```json
+"evidencia": { "aplica": false }
+```
+
+**Ruta B — si la actividad produce una de las 6 evidencias canónicas (E1..E6) o la Misión Final (FM):**
+
+```json
+"evidencia": {
+  "aplica": true,
+  "codigo": "E1",
+  "nombre_canonico": "Cuestionario No 1 — Reading",
+  "tipo_sena": "Conocimiento",
+  "tecnica_evaluacion": "Preguntas",
+  "instrumento": "Cuestionario No 1"
+}
+```
+
+**Campos:**
+
+| Campo | Tipo | Valores válidos |
+|---|---|---|
+| `aplica` | boolean | `true` / `false` |
+| `codigo` | string | `"E1"` / `"E2"` / `"E3"` / `"E4"` / `"E5"` / `"E6"` / `"FM"` |
+| `nombre_canonico` | string | Nombre oficial del instrumento (desde PM-4.1 / PM-4.2) |
+| `tipo_sena` | enum | `"Conocimiento"` / `"Desempeño"` / `"Producto"` |
+| `tecnica_evaluacion` | enum | `"Preguntas"` / `"Observación"` / `"Verificación del producto"` |
+| `instrumento` | string | `"Cuestionario No N"` / `"Lista de Chequeo No N"` / `"Escala de Estimación No N"` / `"Rúbrica analítica No N"` / `"Cuestionario Técnico Consolidado"` |
+
+**Los puntos NO viven en este bloque.** Se derivan del catálogo canónico de PM-4.1/PM-4.2 en tiempo de renderizado:
+
+- **E1–E5**: 5 pts formales cada una (fuente: `pm-4-1.json.instrumentos[*].puntos`)
+- **E6**: 25 pts formales (fuente: `pm-4-2.json.puntos_totales`)
+- **FM**: 5 pts formativos — no suman al total (fuente: canon FM-1 del DM v2.4 §11)
+
+Esto evita drift entre la actividad y el catálogo de instrumentos — si mañana se reacomoda el canon de puntuación, las actividades no requieren edición individual. El renderer hace la lectura lateral al emitir el bloque.
+
+### 10.8 Bloque 6 — Footer logístico
+
+**Campo:** `activity_footer` (preservado de v2.6.1 con un cambio).
+
+Los 6 campos canónicos se mantienen: `ambiente`, `estrategia`, `tecnica`, `materiales`, `material_apoyo`, `duracion_horas`. Sigue siendo **derivado desde upstream** (`pm-3-1.json.sessions_logistics` + `pm-3-2-sX.json.activity_logistics`) y se renderiza como línea inline sutil al pie de la actividad — no es una tabla gigante (regla confirmada en iteración 04-21).
+
+**Cambio v2.7:** el subcampo `activity_footer.evidencia` queda **deprecado** — toda la información de evidencia migra al bloque `evidencia` de §10.7. El footer es estrictamente logístico. El validador `check-no-orphan-footer.js` se actualiza para rechazar un subcampo `evidencia` dentro de `activity_footer`.
+
+### 10.9 Reglas de migración v2.6.3 → v2.7
+
+| Campo v2.6.3 | Acción en v2.7 | Regla |
+|---|---|---|
+| `titulo_en`, `titulo_es` | Reencuadrar en `encabezado.enunciado_voc.{en, es}` | Conversión asistida: el script `rewrite_activities_v27.js` propone V+O+C desde el título + contexto del PM upstream, el instructor aprueba. |
+| — (nuevo) | `encabezado.actividad_tipo_label` | Derivar de `voc_dimension[0]` con longform. |
+| `descripcion_aprendiz.{en, es}` | Expandir a `descripcion_narrativa.{en, es}` | El script genera un párrafo 60–120 palabras desde la descripción corta + el objetivo pedagógico del PM upstream. Revisión humana obligatoria. |
+| `tipo_actividad_sena` | Preservado | — |
+| `tiempo_min`, `agrupacion`, `voc_dimension` | Preservados | — |
+| `paso_a_paso` | Preservado + normalizado a 5–7 pasos | Si < 5, el script expande con micro-pasos derivados del scaffold. Si > 7, consolida manualmente. |
+| `scaffold_inline` | Preservado sin cambios | — |
+| `entregable` | Preservado sin cambios | — |
+| `activity_footer.evidencia` | Mover a `evidencia` bloque propio | Extracción automática; drop del subcampo `evidencia` dentro de `activity_footer`. |
+| `activity_footer` (otros 6 campos) | Preservado | — |
+
+**Campo `schema_version`:** obligatorio en v2.7, valor exacto `"v2.7"`.
+
+### 10.10 Back-compat
+
+El renderer (`pm-3-6-new-gen.js` / `pm-3-6-new-gen2.js` / `gen_audit_docx.js`) inspecciona `schema_version`:
+
+- Si `== "v2.7"` → ruta nueva `renderActivityV27`.
+- Si `== "v2.6.3"` o ausente → ruta legacy `renderActivityCard_v263` o legacy v2.6.1 preservada.
+
+Esto permite que MGV-2026-04-20 (v2.6.3) y DIESEL-2026-04-19 (v2.6.2 post-rewrite) sigan renderizando mientras se migran por separado.
+
+### 10.11 Pipeline canónico v2.7
+
+```
+scripts/
+├── rewrite_activities_v27.js       → migrador v2.6.3 → v2.7 (idempotente con backup .pre-v27.bak)
+├── check-activity-anatomy-v27.js   → validador: 6 bloques + schema_version + V+O+C + word count narrativa 60–120 + 5–7 pasos
+├── pm-3-6-new-gen.js + new-gen2.js → renderer DIESEL con renderActivityV27
+├── gen_audit_docx.js               → renderer MGV con renderActivityV27
+├── check-no-orphan-footer.js       → actualizado para rechazar activity_footer.evidencia
+└── check-activity-card-schema.js   → preservado para runs v2.6.3 legacy
+```
+
+### 10.12 Checklist de implementación PM-3.6 v2.7
+
+Antes de emitir `pm-3-6.json` con `schema_version: "v2.7"`:
+
+- [ ] Cada actividad tiene los 6 bloques en el orden canónico (§10.1).
+- [ ] `encabezado.actividad_tipo_label` ∈ los 3 longform (`"Actividad cognitiva"` / `"Actividad procedimental"` / `"Actividad actitudinal"`).
+- [ ] `encabezado.enunciado_voc.{en, es}` ≤ 200 caracteres cada uno, infinitivo simétrico, sin prefijos.
+- [ ] `descripcion_narrativa.{en, es}` entre 60 y 120 palabras cada uno, un solo párrafo, segunda persona.
+- [ ] `paso_a_paso` tiene entre 5 y 7 elementos, cada uno bilingüe imperativo.
+- [ ] `entregable.{producto, formato, criterio_minimo}.{en, es}` todos poblados y ≤ 250 caracteres.
+- [ ] `evidencia.aplica` presente. Si `true`, los 5 campos subsecuentes (`codigo`, `nombre_canonico`, `tipo_sena`, `tecnica_evaluacion`, `instrumento`) están poblados y son coherentes con PM-4.1/PM-4.2.
+- [ ] `activity_footer` NO contiene subcampo `evidencia` (migrado al bloque propio).
+- [ ] `schema_version === "v2.7"`.
+- [ ] `node scripts/check-activity-anatomy-v27.js` sale con exit 0 (PASS).
+- [ ] `node scripts/check-no-orphan-footer.js` sale con exit 0 (footer coherente sin subcampo evidencia).
+
+---
+
+**Versión v2.7:** A partir del 2026-04-21
+**Caso de origen:** MGV-2026-04-20 G1 (The Visual Communicator) — reescritura piloto de las 30 actividades con anatomía Learner-Readable inspirada en GFPI-F-135 canon SENA.
+**Próxima guía:** DIESEL-2026-04-19 G1 (The Workshop Specialist) — portará v2.7 tras validación en MGV.

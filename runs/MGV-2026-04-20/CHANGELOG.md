@@ -38,6 +38,7 @@
 | v2.6.5 | 2026-04-21 | **Shared Renderer Pattern** — `scripts/lib/render_seccion4_evidencias.js` fuente única de verdad · parity validator |
 | v2.6.6 | 2026-04-21 | **Paleta SENA institucional** — verde `#39A900` protagonista + azul oscuro `#0B2E45` · CEFR gradient remap verde→azul |
 | v2.6.6-cleanup | 2026-04-21 | **Cleanup conservador + fix duplicación raíz** — eliminados 18 archivos legacy (.bak + PREVIEW) · `pm-3-5-FINAL-G1.docx` ahora es output directo de `gen_35_36_docx.js` (eliminada la copia manual `cp pm-3-5-review → pm-3-5-FINAL-G1`) · v264 y PASO-1 movidos a `drafts/` · tamaño run 3.7 MB → 2.6 MB |
+| **v2.7** | **2026-04-22** | **Learner-Readable Activity · Anatomía 6-bloque** — Migración completa de las 30 actividades PM-3.6 G1 a schema_version `v2.7`. Cada actividad renderiza ahora: (1) Encabezado V+O+C · (2) Descripción narrativa 60–120 palabras en 3 movimientos (qué / por qué / promesa) · (3) Step-by-step 5–7 pasos · (4) Entregable · (5) Evidencia first-class · (6) Footer logístico. Pipeline metadata (`fuente_pm_*`, `cross_references`, `voc_dimension`, `schema_version`) suprimido del DOCX del aprendiz, preservado en JSON. Rollout en 4 batches: piloto (3) + A S1+S2 (7) + B S3+S4 (8) + C S5+S6 (8) + D FM S6½–S8 (4). Script canónico idempotente: `scripts/rewrite_activities_v27.js` con dispatch por schema_version y flags `--batch {piloto,A,B,C,D}` + `--dry-run`/`--apply`. Backup `pm-3-6.json.pre-v27.bak` preservado. DOCX final: 103.7 KB · 30/30 v2.7 · 0 fugas de jerga de pipeline. |
 
 ---
 
