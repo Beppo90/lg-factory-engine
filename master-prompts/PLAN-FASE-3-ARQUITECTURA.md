@@ -1,7 +1,7 @@
 ---
-title: PLAN FASE 3 — Arquitectura · skill `fpi-sena-fase3` · v1.1
+title: PLAN FASE 3 — Arquitectura · skill `fpi-sena-fase3` · v1.2
 proposito: Plan ejecutable de construcción Fase 3 (Playbook + assessment + derivados) basado en PRE-FLIGHT-FASE-3 + canon DM §11 v2.12 changelog entry + lecciones Fase 2
-status: v1.1 · 3 decisiones canonizadas (D.1.5 + H.3 + I.2) post-Hito 4 Fase 2 cerrado · arranque construcción Hito 1 next session
+status: v1.2 · corrección REGLA 21 sistémica detectada Hito 2 pre-flight · PM-3.1 + PM-3.6 reclasificados Camino 1 → Camino 2 LLM
 fecha_creacion: 2026-04-29
 sesion: post-cierre Hito 3 Fase 2 + pre-Hito 4 Fase 2 + pre-construcción Fase 3
 prerequisitos: PRE-FLIGHT-FASE-3.md leído + Hito 4 Fase 2 PASS (PLAN-FASE-2 §6.4 estricto)
@@ -152,11 +152,11 @@ Esta separación se canoniza en este plan: la skill `fpi-sena-fase3` cubre AMBAS
 
 ### §5.1 — Justificación por PM
 
-**PM-3.1 Playbook Outline → Camino 1 mecánico**
-- Estructura tabular fija · 8 sesiones × campos canónicos
-- Inputs determinísticos: pm-2-11.json (GFPI-F-134 row) + pm-2-0.json (Session Blueprint) + 9 Activity Cards
-- No requiere creatividad lingüística · solo orquestación de info ya generada
-- **Decision rationale:** scripts node DIESEL `pm-3-1-gen.js` (70 KB) demuestra que es script-driven · NO LLM
+**PM-3.1 Playbook Outline → Camino 2 LLM (CORRECCIÓN v1.2 · 2026-04-29)**
+- Inputs canónicos: pm-2-11.json + pm-2-0.json + 9 Activity Cards + pm-1-2.json + pm-0-context.json
+- **Output requiere creatividad pedagógica:** universo_narrativo · nombres comunicativos por sesión · foco pedagógico · ejemplos Teacher Talk · pm0_alignment_by_session con grammar_groups + ejemplos en sesión
+- **Decision rationale CORRECTA (post-grep evidencia operacional):** scripts node DIESEL `pm-3-1-gen.js` (70 KB) es **renderer DOCX** que CONSUME pm-3-1.json existente · NO genera el JSON. El JSON original fue iteración Sergio+Claude vía master prompt PM-3.1 v2.6
+- **REGLA 21 violation reincidente:** PLAN v1.0.1/v1.1 marcó "Camino 1 mecánico" basado en tamaño de script (70 KB) sin grep contenido · clásica inflación REGLA 20-shape aplicada a script architecture
 
 **PM-3.2 Build-Out → Camino 2 (8 ejecuciones)**
 - Narrativa pedagógica de aula · Teacher Talk · answer keys
@@ -180,25 +180,25 @@ Esta separación se canoniza en este plan: la skill `fpi-sena-fase3` cubre AMBAS
 - 1 capítulo por sesión presencial (default 7)
 - **Decision rationale:** trabajo autónomo del aprendiz · variedad pedagógica requerida
 
-**PM-3.6 GFPI-F-135 → TBD (pendiente lectura `pm-3-6-new-gen.js`)**
-- Formato oficial SENA fijo · espejo de Fase 2 + PM-4
-- 2ª persona narrativa derivada del Playbook (PM-3.2) — **la narrativa puede requerir LLM para reformat**
-- **Decision rationale:** scripts node MGV `pm-3-6-assemble.js` + `pm-3-6-new-gen.js` (combined ~62 KB) sugieren Camino 1 ensamblador, **pero NO leí el código** para confirmar si la narrativa 2ª persona se genera con LLM (Camino 2) o se compone determinísticamente desde Playbook texts (Camino 1 puro). **Pendiente verificación en Hito 1 Fase 3.**
+**PM-3.6 GFPI-F-135 → Camino 2 LLM (CORRECCIÓN v1.2 · 2026-04-29 · cascada PM-3.1)**
+- Formato oficial SENA + 2ª persona narrativa derivada del Playbook (PM-3.2) requiere LLM
+- **Decision rationale CORRECTA (post-grep verificación):** `pm-3-6-new-gen.js` (36 KB) exporta funciones `sec1, sec2, sec31` que renderizan secciones DOCX · `pm-3-6-assemble.js` (14 KB) importa esas secciones + escribe DOCX. **AMBOS son SOLO renderers DOCX · NO generan pm-3-6.json · NO llaman LLM (cero anthropic/api/fetch).** El pm-3-6.json original fue iteración Sergio+Claude
+- **Cascada del fix PM-3.1:** mismo patrón endémico · PLAN v1.0.1/v1.1 inflación basada en KB de scripts · REGLA 21 violation sistémica detectada
 
 ### §5.2 — Resumen camino mix
 
-| PM | Camino 1 | Camino 2 | Renderer |
-|---|---|---|---|
-| PM-3.1 | ✓ | — | docx |
-| PM-3.2 | — | ✓ ×8 | docx |
-| PM-3.3 | ✓ (spec) | ✓ (slides) | pptx |
-| PM-3.4 | — | ✓ | docx |
-| PM-3.5 | — | ✓ | docx |
-| PM-3.6 | ✓ (ensamblador) | — | docx |
-| PM-4.1 | ✓ (reuse) | — | docx |
-| PM-4.2 | ✓ (reuse) | — | docx |
+| PM | Camino 1 | Camino 2 | Renderer | Corrección v1.2 |
+|---|---|---|---|---|
+| PM-3.1 | — | ✓ (LLM puro) | docx (post-render) | CORREGIDO · era Camino 1 mecánico inflado |
+| PM-3.2 | — | ✓ ×8 | docx | sin cambio |
+| PM-3.3 | ✓ (spec) | ✓ (slides) | pptx | likely · verificar pm-3-3-gen.js |
+| PM-3.4 | — | ✓ | docx | sin cambio |
+| PM-3.5 | — | ✓ | docx | sin cambio |
+| PM-3.6 | — | ✓ (LLM puro) | docx (post-render) | CORREGIDO · cascada PM-3.1 |
+| PM-4.1 | ✓ (reuse) | — | docx | sin cambio (mecánico verdadero · derivador) |
+| PM-4.2 | ✓ (reuse) | — | docx | sin cambio (mecánico verdadero · ensamblador determinístico) |
 
-**6 nuevos subagentes (3 Camino 1 puro + 3 Camino 2 + 1 híbrido) + 2 reusados**
+**6 nuevos subagentes (1 Camino 1 puro PM-... ¿quizás 0? · 5 Camino 2 + 1 híbrido PM-3.3 spec) + 2 reusados (PM-4.1 + PM-4.2 mecánicos verdaderos) · v1.2 corrección sistémica REGLA 21**
 
 ---
 
@@ -449,6 +449,8 @@ Capitalizando lo aprendido en Fase 2 cierre Hito 3:
 
 10. **❌ Reescribir scripts node sin razón.** Si script DIESEL `pm-3-X-gen.js` produce output correcto en producción · subprocess es válido. Reescribir solo si hay justificación pedagógica clara.
 
+11. **❌ Asumir Camino 1 mecánico desde tamaño de script (Anti-patrón 12 candidato troubleshooting).** Lección 2026-04-29 Hito 2 pre-flight: `pm-3-1-gen.js` 70 KB · `pm-3-6-new-gen.js` 36 KB · ambos son SOLO renderers DOCX que consumen JSON ya generado por LLM iteración Sergio+Claude. Mi PLAN v1.0.1/v1.1 inflé "Camino 1 mecánico" basado en KB sin grep contenido · clásica REGLA 20-shape aplicada a arquitectura de scripts. **Mitigación: ANTES de afirmar "script-driven · NO LLM", grep contenido · verificar (a) lee JSON existente o lo genera · (b) tiene fetch/anthropic/api calls · (c) writeFileSync target = .json o .docx**.
+
 ---
 
 ## §11. Decisiones tomadas vs gaps pendientes
@@ -571,6 +573,45 @@ english-engine-lab/specs/tools/ (F2.5 specs Fase 2 · referencia para Fase 3 spe
 
 **Anti-patrón documentado:** REGLA 21 reincidencia el mismo día de canonización demuestra que la regla NO se internaliza solo con escribirla · necesita aplicación reincidente para hacerse hábito. El trigger mutual es la mitigación operacional para esta vulnerabilidad.
 
+### v1.2 · 2026-04-29 · corrección REGLA 21 reincidencia sistémica · PM-3.1 + PM-3.6 reclasificados Camino 2 LLM
+
+**Contexto:** Durante pre-flight focused Hito 2 Task 1 (subagente_pm_3_1_outline.py), Claude self-detectó REGLA 21 violation reincidente en PLAN v1.1 §11.1 #2 + §5.3. La afirmación "PM-3.1 → Camino 1 mecánico · sustentada por scripts node 70 KB" era inflación REGLA 20-shape aplicada a arquitectura de scripts.
+
+**Evidencia operacional REAL (grep contenido scripts node 2026-04-29):**
+
+`pm-3-1-gen.js` (DIESEL-2026-04-15 · 70 KB):
+```javascript
+const data = JSON.parse(fs.readFileSync("...pm-3-1.json", "utf8"));  ← CONSUME JSON existente
+fs.writeFileSync(outFile, buffer);                                   ← escribe DOCX (no JSON)
+```
+**0 menciones LLM (anthropic/api/fetch/claude/openai).** Es renderer DOCX puro · NO generator JSON.
+
+`pm-3-6-new-gen.js` (DIESEL-2026-04-18 · 36 KB) + `pm-3-6-assemble.js` (14 KB):
+- Exportan funciones `sec1, sec2, sec31` que renderizan secciones DOCX
+- Assemble importa secciones · escribe DOCX
+- **0 menciones LLM** · scripts son SOLO renderers DOCX
+
+**Confirmación Sergio (2026-04-29):**
+> "Fue una iteración entre el LLM y yo cuando construí el Master prompt PM-3.1. Realmente termina siendo siempre el LLM invocando el PM-3.1 y lo iba ajustando mientras se iba documentando todo en changelogs y scripts."
+
+Los `pm-3-X.json` originales DIESEL/MGV fueron generados por **LLM (Claude) en sesiones iterativas con Sergio** usando los master prompts PM-3.X como contrato. Los scripts node `pm-3-X-gen.js` son SIEMPRE renderers DOCX que consumen el JSON ya generado · nunca generators del JSON.
+
+**Correcciones canonizadas:**
+
+- §5.2 tabla mix · PM-3.1 + PM-3.6 movidos a Camino 2 LLM con nota CORREGIDO
+- §5.3 PM-3.1 · justificación reescrita con evidencia grep
+- §5.3 PM-3.6 · justificación reescrita (cascada · mismo patrón endémico)
+- §10 Anti-patrón 11 nuevo · "asumir Camino 1 desde tamaño de script · grep contenido antes"
+- Anti-patrón 12 candidato troubleshooting fpi-sena-fase3: "Inflación arquitectónica desde KB script"
+
+**Implicancia Hito 2 Task 1 (PM-3.1 outline):**
+
+NO es Camino 1 mecánico. Subagente debe ser Camino 2 análogo a wrappers Fase 2 · usa `task_tool_bundler.py` ya copiado en fase3/lib (Task 2 Hito 1) · genera pm-3-1.json desde inputs Fase 2+3 vía LLM Task tool con master prompt PM-3.1 v2.6 inyectado.
+
+**Trigger mutual REGLA 21:** self-detection funcionó esta vez · Claude detectó propia inflación durante pre-flight focused antes de codificar. NO esperó pushback Sergio. Ejemplo de internalización gradual de REGLA 21 (vs reincidencia anterior Gap D D.2 lib-shared 2026-04-29 que SÍ requirió pushback Sergio).
+
+**Tasks Hito 1 100% completas SIN cambio** · esta corrección NO invalida lib-shared = D.1.5 · NO invalida cli_parser · NO invalida helpers copiados. Solo invalida sub-decisión #2 (Camino 1 vs 2 mix per PM) que era preview de Hitos 2-4.
+
 ### v1.2 (esperada · post Hito 1 Fase 3 construcción)
 
 - Refinements basados en construcción real de subagentes (cli_parser edge cases · drift script behavior)
@@ -584,5 +625,5 @@ english-engine-lab/specs/tools/ (F2.5 specs Fase 2 · referencia para Fase 3 spe
 
 ---
 
-*PLAN-FASE-3-ARQUITECTURA.md v1.1 · escrito 2026-04-29 (3 decisiones canonizadas D.1.5+H.3+I.2 + Hito 5 agendado + REGLA 21 trigger mutual)*
+*PLAN-FASE-3-ARQUITECTURA.md v1.2 · escrito 2026-04-29 (corrección REGLA 21 reincidencia sistémica · PM-3.1 + PM-3.6 reclasificados Camino 2 LLM post pre-flight Hito 2)*
 *Próximo paso: Hito 4 Fase 2 → v1.1 refinements → Hito 1 Fase 3 (construcción esqueleto skill)*
