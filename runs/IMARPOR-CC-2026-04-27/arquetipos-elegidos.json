@@ -1,0 +1,155 @@
+{
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guia_id": null,
+  "fecha_seleccion": "2026-04-29T15:45:00-05:00",
+  "instructor": "Sergio Cortés Perdomo",
+  "modo_seleccion": "híbrida_intermedia",
+  "_seleccion_rationale": "Híbrida intermedia per Sergio 2026-04-29: 7 PMs convencionales con default mgv compendio (canon directiva instructor MGV pm-2-11.json:574 'Quiero todos los arquetipos para todos los PM') · PM-2.1 + PM-2.2 v3.0 con diesel_secuencia_encadenada los 4 archetypes ABCD · directiva original extendida al catálogo extensible v3.0. PM-2.7 deprecated · absorbido en PM-2.8.",
+  "elecciones": [
+    {
+      "pm": "PM-2.1",
+      "estilo": "diesel_secuencia_encadenada",
+      "archetype_used": [
+        "A — Visual / Infografía (mapa puerto · vista aérea Buenaventura)",
+        "B — Story / Narrativa (Andrea's First Radio Call con Captain Lopera)",
+        "C — News / Noticia técnica (headline marítimo · 'English failure causes container collision')",
+        "D — Debate / Encuesta (¿inglés en puertos colombianos · obligatorio o nice-to-have?)"
+      ],
+      "archetype_mode": "secuencia encadenada — 4 momentos en S1 entrada (Spark)",
+      "justificacion": "Sector portuario es multi-canal por naturaleza: ver puerto · escuchar VHF · leer manifiestos · discutir necesidad real. 4 momentos calzan con realidad operacional. Catálogo extensible PM-2.1 v3.0 cubierto al 100% per directiva 'todos los arquetipos' · IMARPOR-CC."
+    },
+    {
+      "pm": "PM-2.2",
+      "estilo": "diesel_secuencia_encadenada",
+      "archetype_used": [
+        "A — KWL Chart Diagnostic (Know · Want to know · Learned)",
+        "B — Diagnosis visual (Andrea inspecciona vessel y marca lo que conoce vs no conoce)",
+        "C — Gap Card (lista personalizada de blind-spots por sub-bloque RAP)",
+        "D — Peer Interview (Andrea entrevista a otro trainee del puerto)"
+      ],
+      "archetype_mode": "secuencia encadenada — 4 momentos en S1 salida (Gap Analysis)",
+      "justificacion": "Diagnóstico de saberes previos en 4 ángulos: lista (KWL) · imagen (visual diagnosis) · personalizado (Gap card) · dialógico (peer interview). Catálogo extensible PM-2.2 v3.0 cubierto al 100%."
+    },
+    {
+      "pm": "PM-2.3",
+      "estilo": "mgv_compendio_metodologico",
+      "integration_all_archetypes_policy": {
+        "archetypes_integrated": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "bloom_ceiling_a11": "L3 Apply máximo · single-guía A1.2→A2.1 progresión interna · NO HOTS",
+        "rationale": "6 arquetipos Reading PM-2.3 v2.0 (Investigative · Case Study · News · Manual · Blog · Interview) integrados como compendio metodológico"
+      },
+      "justificacion": "Default mgv compendio · canon directiva instructor MGV pm-2-11.json:574 · 6 arquetipos A-F integrados"
+    },
+    {
+      "pm": "PM-2.4",
+      "estilo": "mgv_compendio_metodologico",
+      "integration_all_archetypes_policy": {
+        "archetypes_integrated": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "bloom_ceiling_a11": "L3 Apply máximo · writing genre-based + scaffolded · NO HOTS",
+        "rationale": "5 arquetipos Writing PM-2.4 v2.0 (Exploratory · Academic Formal · Collaborative TBLT · AI-Mediated · Genre-Based) integrados"
+      },
+      "justificacion": "Default mgv compendio · 5 arquetipos A-E integrados · CONSUMIDOR de PM-2.10 grammar targets"
+    },
+    {
+      "pm": "PM-2.5",
+      "estilo": "mgv_compendio_metodologico",
+      "integration_all_archetypes_policy": {
+        "archetypes_integrated": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "bloom_ceiling_a11": "L3 Apply máximo · vocabulary literacy A1.2 · NO HOTS",
+        "rationale": "5 arquetipos Vocabulary PM-2.5 v2.0 (Phonics · Vocab Dev · Reading Fluency · Writing Scaffolding · Interactive)",
+        "_gap_2_override": "Toolbelt 5 cats × 5 = 25 términos (NO 5×4=20 strict canónico) · per pm-1-2._known_gaps_for_phase_2.gap_2_vocabulary_count_discrepancia"
+      },
+      "justificacion": "Default mgv compendio · 5 arquetipos · CONSUMIDOR de PM-2.3 Master Anchor + Toolbelt 25 términos"
+    },
+    {
+      "pm": "PM-2.6",
+      "estilo": "mgv_compendio_metodologico",
+      "integration_all_archetypes_policy": {
+        "archetypes_integrated": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "bloom_ceiling_a11": "L3 Apply máximo · listening A1.2 phase-based + TBLT · NO HOTS",
+        "rationale": "6 arquetipos Listening PM-2.6 v2.0 (Micro-skills · Phase-based · TBLT · Bloom · Advanced · Multimedia)"
+      },
+      "justificacion": "Default mgv compendio · 6 arquetipos A-F · diálogo VHF radio call ship-to-shore"
+    },
+    {
+      "pm": "PM-2.8",
+      "estilo": "mgv_compendio_metodologico",
+      "integration_all_archetypes_policy": {
+        "archetypes_integrated": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "bloom_ceiling_a11": "L3 Apply máximo · speaking A1.2 con pronunciation scaffolding · NO HOTS",
+        "rationale": "5 arquetipos Speaking PM-2.8 v2.0 (Gap Tasks · Role-based · Multimedia · Rehearsal · Interaction). PM-2.7 pronunciation absorbida"
+      },
+      "justificacion": "Default mgv compendio · 5 arquetipos · radio simulation SMCP · Andrea reports to Captain Lopera"
+    },
+    {
+      "pm": "PM-2.9",
+      "estilo": "mgv_compendio_metodologico",
+      "integration_all_archetypes_policy": {
+        "archetypes_integrated": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "bloom_ceiling_a11": "L3 Apply máximo · funciones comunicativas A1.2→A2.1 · NO HOTS",
+        "rationale": "5 arquetipos Functions PM-2.9 v2.0 (Information Exchange · Persuasion · Social/Interpersonal · Gamified · Academic Discourse)",
+        "_gap_3_override": "Agrupa F1-F8 IMARPOR en 5 master functions per RAP · 8 originales preservadas en functions_F1_to_F8_original_imarpor archive · per pm-1-2._known_gaps_for_phase_2.gap_3_functions_count_discrepancia"
+      },
+      "justificacion": "Default mgv compendio · 5 arquetipos integrativos S5 · INTEGRA S2-S4 antes de S6 Quiz"
+    },
+    {
+      "pm": "PM-2.10",
+      "estilo": "mgv_compendio_metodologico",
+      "integration_all_archetypes_policy": {
+        "archetypes_integrated": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "bloom_ceiling_a11": "L3 Apply máximo · grammar consciousness-raising + controlled practice · NO HOTS",
+        "rationale": "5 arquetipos Grammar PM-2.10 v2.0 (Discovery CR · Controlled Practice · Communicative Tasks · Creative Production · Editing/Error Analysis)"
+      },
+      "justificacion": "Default mgv compendio · 5 arquetipos · PRODUCTOR Grammar Targets que PM-2.4 consume cross-half S3"
+    }
+  ],
+  "_known_gaps_inherited_from_pm_1_2": {
+    "gap_1_metadata_fuentes_incompleta": "PM-2.3 + PM-2.6 generan desde su lado (Master Anchor 150-200 + diálogo VHF 150-200) · fuentes externas son referencia léxica NO literal",
+    "gap_2_vocabulary_count": "PM-2.5 entrega 25 términos (5 cats × 5) · NO 20 canónico",
+    "gap_3_functions_count": "PM-2.9 agrupa 8 IMARPOR functions → 5 master per RAP · 8 originales en archive field"
+  }
+}

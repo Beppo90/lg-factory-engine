@@ -1,0 +1,578 @@
+{
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "pm_code": "PM-2.2",
+  "pm_name": "Gap Analysis — Contextualización (Sesión 1 · Segunda Mitad)",
+  "pm_version": "3.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "cefr_level": "A1.2 (entrada single-guía · progresión interna A1.2 → A2.1)",
+  "session": 1,
+  "fase_sena": "Contextualización (cierre de S1 — segunda mitad)",
+  "generated_at": "2026-04-29",
+  "instructor": "Sergio Cortés Perdomo",
+  "enriched": true,
+  "_rationale_enriched_false": "Gap Analysis generado en modo extensible diesel_secuencia_encadenada (4 momentos ABCD) · espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. Sergio debe revisar coherencia con Spark (PM-2.1), confirmar que los 4 momentos consumen los handoff_artifacts de PM-2.1 (papelógrafo verde/rojo · voto cromático · Learner's Worksheet con 4 palabras) y validar materiales sectoriales del Puerto de Buenaventura.",
+  "previous_pms": [
+    "PM-2.1"
+  ],
+  "previous_pms_detail": [
+    {
+      "pm_code": "PM-0",
+      "role": "Anclas pedagógicas (CEFR A1.2, L1% S1 ≤ 25%, principios pedagógicos sector marítimo-portuario, curso intensivo 100h)"
+    },
+    {
+      "pm_code": "PM-1.1",
+      "role": "Regla de bloques absorcion_Na1 · single-guía · 4 RAPs absorbidos (RAP-01 a RAP-04 SOFÍA)"
+    },
+    {
+      "pm_code": "PM-1.2",
+      "role": "Universo narrativo IMARPOR-CC + Toolbelt 25 términos categorizados (Ship Parts · Port Infrastructure · Directions & Sides · People & Roles · Operations) + SMCP transversal"
+    },
+    {
+      "pm_code": "PM-2.0",
+      "role": "Session Blueprint S1: 6h directas + 2.33h autónomas · S1 dividida en PM-2.1 Spark (3.75h+0.75h) + PM-2.2 Gap Analysis (2.25h+1.58h)"
+    },
+    {
+      "pm_code": "PM-2.1",
+      "role": "Spark narrativo · 4 momentos encadenados ABCD · Andrea Mosquera + Captain Lopera + Capitán Restrepo + Berth 4 + BUENAVENTURA EXPRESS · papelógrafo con marcado verde/rojo de gaps colectivos · voto cromático plenario sobre obligatoriedad del inglés · Learner's Worksheet individual con 4 palabras escritas (port/berth/vessel/radio)"
+    }
+  ],
+  "archetypes_policy": "4 ARQUETIPOS ABCD CANÓNICOS — estilo declarado diesel_secuencia_encadenada · catálogo extensible PM-2.2 v3.0 cubierto al 100% per directiva instructor 'todos los arquetipos para todos los PM' (MGV pm-2-11.json:574)",
+  "estilo_aplicado": "diesel_secuencia_encadenada",
+  "archetype_used": [
+    "A — KWL Chart Diagnostic (Know · Want to know · Learned)",
+    "B — Diagnosis visual (Andrea inspecciona vessel y marca lo que conoce vs no conoce)",
+    "C — Gap Card (lista personalizada de blind-spots por sub-bloque RAP)",
+    "D — Peer Interview (Andrea entrevista a otro trainee del puerto)"
+  ],
+  "archetype_mode": "secuencia encadenada — 4 momentos en S1 salida (Gap Analysis · cierre de S1 post-Spark)",
+  "pm0_anchor": {
+    "source_file": "pm-0-context.json",
+    "cefr_descriptor_ref": "§6.A1.2 — descriptor por bloque interno · Bloque Interno 1 RAP-01",
+    "l1_policy_ref": "§9.1.single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S1 — L1% ≈ 25% en S1 (continuidad con PM-2.1)",
+    "methodological_shift_ref": "§5.A1.2 — input lento, máximo andamiaje bilingüe, accuracy-prioritario, escalas y herramientas diagnósticas honestas sin presión evaluativa, sin rotación de contenidos nuevos",
+    "feedback_ref": "§5.6 — modo dominante S1: Recast suave + Reformulación positiva (Gap es diagnóstico, NO evaluación · CERO corrección invasiva)",
+    "stress_pronunciation_ref": "§5.8 — S1: reciclaje del stress de las 4 survival words de PM-2.1 (PORT · BERTH · VES-sel · RA-dio) + pre-vista receptiva de stress en categorías Toolbelt (BOW · STERN · STAR-board · MOO-ring)",
+    "success_vocabulary_ref": "§5.10 — PM-2.2 introduce pre-vista RECEPTIVA de las 5 categorías canónicas Toolbelt (Ship Parts · Port Infrastructure · Directions & Sides · People & Roles · Operations) sin enseñar términos individuales · expone para que PM-2.5 active quirúrgicamente en S2",
+    "grammar_roadmap_ref": "§8.Bloque_Interno_1_RAP01 — S1 NO activa gramática productiva; sí expone receptivamente las fórmulas 'I know / I don't know yet / I want to learn' (pre-activación Gr1 be/auxiliaries + Gr4 modals of need/want)",
+    "principle_pedagogical_refs": [
+      "§5.1 Input comprensible — escalas, fichas y guiones de entrevista accesibles A1.2",
+      "§5.6 Feedback no invasivo — Gap es espejo, no juicio",
+      "§5.10 Vocabulario de supervivencia primero — categorías Toolbelt como pre-vista receptiva",
+      "§5.13 Bilingüismo unificado — instrucción una vez en EN + español cursivo (no bloques duplicados)"
+    ]
+  },
+  "universe_anchor": {
+    "program": "Inglés Marítimo y Portuario (Curso Complementario) · 12340002 · 100h · Sector Marina Mercante Colombia",
+    "workplace": "Puerto de Buenaventura · Pacífico colombiano · Berth 4 (muelle de carga general) · BUENAVENTURA EXPRESS atracado",
+    "characters_reused_from_pm21": {
+      "protagonist_learner_avatar": "Andrea Mosquera — sigue siendo el espejo del aprendiz · ahora reflexiona sobre lo que vivió en la primera mañana y diagnostica formalmente sus gaps en 4 ángulos",
+      "mentor": "Capitán Restrepo — referente C1 de nivel objetivo · supervisor que recibirá la primera versión escrita del KWL/Gap Card",
+      "external_client": "Captain Lopera — fuente de inglés auténtico lingua-franca B2 · cliente con quien la cohorte deberá comunicarse en SMCP para fin del curso · aparece como referente en Gap Card y Peer Interview"
+    },
+    "continuity_with_pm21": "Andrea acaba de vivir su primera mañana en Berth 4. Vio el mapa, escuchó a Captain Lopera por radio, leyó el headline marítimo y votó verde/rojo. Ahora — misma mañana, misma radio, preguntas más profundas — diagnostica honestamente desde 4 ángulos: (1) qué SABE / qué QUIERE saber / qué APRENDERÁ (KWL); (2) qué reconoce visualmente del BUENAVENTURA EXPRESS atracado en Berth 4 (Diagnosis visual); (3) qué gaps personales identifica por sub-bloque RAP (Gap Card); (4) cómo se comparan sus saberes con los de otro trainee del puerto (Peer Interview).",
+    "narrative_bridge": "PM-2.1 cerró con la frase puente 'Next, in PM-2.2 Gap Analysis, we will measure exactly what English you have and what English you still need to defend that vote.' PM-2.2 cumple esa promesa: convierte los productos de PM-2.1 (papelógrafo verde/rojo + voto cromático + Learner's Worksheet con 4 palabras) en un perfil de entrada de 4 capas por aprendiz que alimenta a PM-2.3 Reading + PM-2.5 Vocabulary en S2."
+  },
+  "identity": {
+    "codigo": "PM-2.2",
+    "nombre": "The Gap Analysis (4 Momentos Encadenados — KWL → Diagnosis visual → Gap Card → Peer Interview)",
+    "subfase_guia_sena": "3.2 Actividades de contextualización",
+    "ubicacion_guia": "Sección 3.2 Contextualización · segunda mitad de S1",
+    "tipo_evidencia_sena": "N/A (actividad diagnóstica · S1 no genera evidencia formal per canon)",
+    "instrumento": "Learner's Worksheet — THE GAP ANALYSIS (4 momentos encadenados con productos físicos de cada uno)",
+    "estructura": "diesel_secuencia_encadenada · 4 momentos secuenciales (A KWL → B Diagnosis visual → C Gap Card → D Peer Interview) con encadenamiento narrativo entre momentos",
+    "bloom_level": "L1 Recordar + L2 Comprender (NO L3+ · diagnóstico, NO análisis profundo · mismo techo Bloom que Spark)"
+  },
+  "content": {
+    "worksheet_title": "THE GAP ANALYSIS — Contextualización · Same Morning, Deeper Questions (4 Moments)",
+    "guia_header": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Sesión 1 (cierre) · Nivel A1.2",
+    "bilingual_instruction_block": {
+      "main_message_en": "You just lived Andrea's first morning. You saw the map. You heard Captain Lopera. You read the headline. You took a side. Now — same morning, same radio, deeper questions — we measure four things in four moments: what you KNOW, what you SEE on the vessel, where your GAPS are, and how your story compares with another trainee's. No grade, no judgment — just four honest mirrors. (*Acabas de vivir la primera mañana de Andrea. Viste el mapa. Escuchaste al Capitán Lopera. Leíste el titular. Tomaste un lado. Ahora — la misma mañana, la misma radio, preguntas más profundas — medimos cuatro cosas en cuatro momentos: qué SABES, qué VES en el buque, dónde están tus GAPS y cómo se compara tu historia con la de otro aprendiz. Sin nota, sin juicio — solo cuatro espejos honestos.*)",
+      "l1_percentage_target": "≈ 25% L1 (continuidad con PM-2.1 · Bloque_Interno_1_RAP01_A1.2.S1)",
+      "scaffolding_mode": "Bilingüe Unificada — instrucción una sola vez en inglés simple + traducción al español en cursiva. PROHIBIDO bloques duplicados de instrucciones."
+    }
+  },
+  "momentos": [
+    {
+      "numero": 1,
+      "nombre": "The KWL Chart — What I Know · What I Want to Know · What I'll Learn",
+      "archetype": "A — KWL Chart Diagnostic (Know · Want to know · Learned)",
+      "duracion_min": 30,
+      "bloom_level": "L1 Recordar + L2 Comprender — el aprendiz recupera saberes A1.1 y los organiza en 3 columnas KWL frente al inglés marítimo-portuario",
+      "modality": "Individual (15 min) + plenaria de cierre con KWL grupal en pizarra (15 min)",
+      "instruction_en": "Open your KWL Chart. Three columns: K = what I KNOW about port and ship English already · W = what I WANT to know to do Andrea's job · L = what I'LL LEARN (you complete this column in Session 12). Write in English where you can, in Spanish where you can't yet — both are welcome today. (*Abre tu KWL Chart. Tres columnas: K = lo que YA SÉ sobre inglés de puerto y buque · W = lo que QUIERO saber para hacer el trabajo de Andrea · L = lo que APRENDERÉ (completas esta columna en la Sesión 12). Escribe en inglés donde puedas, en español donde aún no — hoy ambos son bienvenidos.*)",
+      "kwl_columns": {
+        "K_know_en": "What I KNOW about Maritime & Port English",
+        "K_know_es_cursive": "Lo que SÉ sobre el inglés marítimo y portuario",
+        "K_know_prompts_en": [
+          "Words I already recognize from this morning (port, berth, vessel, radio, ...)",
+          "Greetings I can use with Captain Lopera (Good morning · Hello · Hi)",
+          "Numbers I can say in English (1–20 · berth numbers)",
+          "Anything I learned in A1.1 that helps me at the dock"
+        ],
+        "W_want_en": "What I WANT to know to do Andrea's job at Berth 4",
+        "W_want_es_cursive": "Lo que QUIERO saber para hacer el trabajo de Andrea en el Muelle 4",
+        "W_want_prompts_en": [
+          "How to answer Captain Lopera on the VHF radio",
+          "How to say the parts of a vessel (bow, stern, port side, starboard)",
+          "How to report what is happening on the dock",
+          "How to ask the pilot or stevedore for help"
+        ],
+        "L_learn_en": "What I'LL LEARN — to be completed in Session 12",
+        "L_learn_es_cursive": "Lo que APRENDERÉ — se completa en la Sesión 12",
+        "L_learn_note_en": "Leave this column blank today. In Session 12 you will fill it and compare with what you wrote in K and W. (*Deja esta columna en blanco hoy. En la Sesión 12 la llenarás y compararás con lo que escribiste en K y W.*)"
+      },
+      "vocabulary_anchor_from_pm21": "Reciclar las 4 survival words ya activadas por PM-2.1 en la columna K (port · berth · vessel · radio) · NO introducir vocabulario nuevo en este momento",
+      "support_phrases_en_es": [
+        "I know... = Yo sé...",
+        "I want to know... = Quiero saber...",
+        "I don't know yet = Todavía no sé",
+        "I remember from A1.1... = Recuerdo de A1.1...",
+        "Andrea needs to... = Andrea necesita..."
+      ],
+      "learner_task": "Cada aprendiz completa columnas K y W de su KWL en silencio (15 min). Al cierre, el instructor abre un KWL grupal en pizarra: cada aprendiz aporta 1 ítem a K y 1 ítem a W. La columna W del KWL grupal queda visible toda la guía como agenda viva del grupo.",
+      "kwl_collective_handling": "El KWL grupal NO se borra — queda en una pared del aula durante las 12 sesiones. La columna L se completa progresivamente con cada bloque interno cerrado (S3, S6, S9, S12).",
+      "micro_capsule": {
+        "type": "📋 KWL Cue",
+        "content_en": "What you already know is your starting capital. What you want to know is the map of these 12 sessions. (*Lo que ya sabes es tu capital de arranque. Lo que quieres saber es el mapa de estas 12 sesiones.*)"
+      },
+      "encadenamiento_al_siguiente": "Cierre del momento 1 con frase puente: 'Now you wrote what you KNOW in words. Next, look at a real vessel — the BUENAVENTURA EXPRESS — and mark what you SEE.' (*Ahora escribiste lo que SABES en palabras. Después, mira un buque real — el BUENAVENTURA EXPRESS — y marca lo que VES.*) → activa el momento 2 (Diagnosis visual sobre el buque atracado).",
+      "didactic_strategy": "Aprendizaje colaborativo",
+      "didactic_technique": "Think-Pair-Share con tabla KWL bilingüe"
+    },
+    {
+      "numero": 2,
+      "nombre": "Diagnosis Visual — Andrea inspecciona el BUENAVENTURA EXPRESS en Berth 4",
+      "archetype": "B — Diagnosis visual (Andrea inspecciona vessel y marca lo que conoce vs no conoce)",
+      "duracion_min": 35,
+      "bloom_level": "L2 Comprender — el aprendiz reconoce visualmente partes del buque y zonas portuarias y discrimina lo que ya nombra en inglés vs lo que aún no",
+      "modality": "Individual (10 min de marcado en imagen) + parejas (15 min de comparación) + plenaria breve (10 min de mapeo grupal)",
+      "instruction_en": "Look at the diagnosis sheet: a side view of the BUENAVENTURA EXPRESS at Berth 4. The vessel has six numbered parts (bow, stern, port side, starboard, hull, deck) and the dock has four numbered zones (berth, dock, gantry crane, warehouse). Use a GREEN marker to circle what you can already name in English. Use a RED marker to circle what you cannot name yet. No translation help — only your honest eye. (*Mira la hoja de diagnóstico: vista lateral del BUENAVENTURA EXPRESS en el Muelle 4. El buque tiene seis partes numeradas (proa, popa, babor, estribor, casco, cubierta) y el muelle tiene cuatro zonas numeradas (atraque, muelle, grúa pórtico, bodega). Usa marcador VERDE para encerrar lo que ya puedes nombrar en inglés. Usa marcador ROJO para encerrar lo que todavía no puedes nombrar. Sin ayuda de traducción — solo tu ojo honesto.*)",
+      "diagnostic_visual_layout": {
+        "image_description": "Vista lateral del BUENAVENTURA EXPRESS atracado en Berth 4 · Pacífico colombiano · grúa pórtico al fondo · bodega del puerto a la izquierda · puente del buque visible · escala de embarque desplegada",
+        "vessel_numbered_parts": [
+          {
+            "number": 1,
+            "part_label_blank": "____ (front of the ship)",
+            "answer_en": "bow",
+            "answer_es": "proa"
+          },
+          {
+            "number": 2,
+            "part_label_blank": "____ (back of the ship)",
+            "answer_en": "stern",
+            "answer_es": "popa"
+          },
+          {
+            "number": 3,
+            "part_label_blank": "____ (left side facing forward)",
+            "answer_en": "port side",
+            "answer_es": "babor"
+          },
+          {
+            "number": 4,
+            "part_label_blank": "____ (right side facing forward)",
+            "answer_en": "starboard",
+            "answer_es": "estribor"
+          },
+          {
+            "number": 5,
+            "part_label_blank": "____ (body of the ship)",
+            "answer_en": "hull",
+            "answer_es": "casco"
+          },
+          {
+            "number": 6,
+            "part_label_blank": "____ (top floor of the ship)",
+            "answer_en": "deck",
+            "answer_es": "cubierta"
+          }
+        ],
+        "port_numbered_zones": [
+          {
+            "number": 7,
+            "zone_label_blank": "____ (where the vessel is moored)",
+            "answer_en": "berth",
+            "answer_es": "atraque"
+          },
+          {
+            "number": 8,
+            "zone_label_blank": "____ (the platform along the water)",
+            "answer_en": "dock",
+            "answer_es": "muelle"
+          },
+          {
+            "number": 9,
+            "zone_label_blank": "____ (the big crane that lifts containers)",
+            "answer_en": "gantry crane",
+            "answer_es": "grúa pórtico"
+          },
+          {
+            "number": 10,
+            "zone_label_blank": "____ (where cargo is stored)",
+            "answer_en": "warehouse",
+            "answer_es": "bodega"
+          }
+        ],
+        "scaffolding_note": "Las 10 partes/zonas mapean a categorías Toolbelt PM-1.2: 1-6 = Ship Parts (RAP-01) · 7-10 = Port Infrastructure (RAP-01). El instructor NO da las respuestas hoy — registra anónimamente cuántos VERDES y cuántos ROJOS hay por número en la cohorte para informar el orden de pre-activación de PM-2.5 en S2."
+      },
+      "andrea_narrative_voice_en": "Andrea is on the dock at 7:30 a.m. She walks slowly along the BUENAVENTURA EXPRESS. She stops, points, and tries to remember the English word for each part. Some parts she knows. Other parts she doesn't know yet. That's normal — that's what today is for.",
+      "andrea_narrative_voice_es_cursive": "(*Andrea está en el muelle a las 7:30 a.m. Camina despacio a lo largo del BUENAVENTURA EXPRESS. Se detiene, señala, y trata de recordar la palabra en inglés para cada parte. Algunas partes las conoce. Otras todavía no las conoce. Es normal — para eso es el día de hoy.*)",
+      "support_phrases_en_es": [
+        "I see the... = Yo veo el/la...",
+        "This is the... = Este/a es el/la...",
+        "I don't know this part yet = No conozco esta parte todavía",
+        "I think it's the... = Creo que es el/la...",
+        "Same as me = Igual que yo"
+      ],
+      "learner_task": "Marcado individual con verde/rojo de 10 elementos numerados en la imagen del BUENAVENTURA EXPRESS (10 min). Luego en parejas: cada uno explica en inglés simple lo que marcó verde y comparte con el compañero los rojos (15 min). Plenaria: el instructor dibuja la silueta del buque en pizarra y va cantando los 10 números — los aprendices alzan tarjeta verde o roja sin hablar; el instructor cuenta y anota frecuencias agregadas para PM-2.5.",
+      "micro_capsule": {
+        "type": "🔍 Visual Cue",
+        "content_en": "Your eyes know more than your mouth today. The red marks are where your mouth needs to catch up. (*Tus ojos saben más que tu boca hoy. Las marcas rojas son donde tu boca necesita ponerse al día.*)"
+      },
+      "encadenamiento_al_siguiente": "Cierre del momento 2 con frase puente: 'You marked what you SEE. Now translate those red circles into a personal Gap Card — one card per RAP block.' (*Marcaste lo que VES. Ahora traduce esos círculos rojos a una Gap Card personal — una tarjeta por bloque RAP.*) → activa el momento 3 (Gap Card por sub-bloque RAP).",
+      "didactic_strategy": "Content-Based Learning",
+      "didactic_technique": "Diagnóstico visual con marcado verde/rojo + parejas comparativas"
+    },
+    {
+      "numero": 3,
+      "nombre": "Gap Card — Mis blind-spots por sub-bloque RAP",
+      "archetype": "C — Gap Card (lista personalizada de blind-spots por sub-bloque RAP)",
+      "duracion_min": 35,
+      "bloom_level": "L2 Comprender — el aprendiz traduce hallazgos visuales del momento 2 + saberes del KWL del momento 1 a una ficha estructurada de I-can statements por bloque RAP",
+      "modality": "Individual (silencioso · 25 min de autoevaluación) + plenaria de cierre con cifras agregadas (10 min)",
+      "instruction_en": "Take your Gap Card. It has eight I-can statements — two per RAP block of this course. For each statement, mark from 1 to 5 your honest current level. Then, at the bottom, write your TOP THREE blind-spots — one per RAP block where you scored lowest. Use the formula: 'I need to learn ___ because ___ to do ___ in English.' (*Toma tu Gap Card. Tiene ocho declaraciones I-can — dos por cada bloque RAP del curso. Para cada declaración, marca de 1 a 5 tu nivel honesto actual. Luego, abajo, escribe tus TRES blind-spots principales — uno por bloque RAP donde puntuaste más bajo. Usa la fórmula: «I need to learn ___ because ___ to do ___ in English.»*)",
+      "scale": {
+        "1": {
+          "en": "I can't do this yet",
+          "es_cursiva": "Todavía no puedo",
+          "emoji": "🔴"
+        },
+        "2": {
+          "en": "I've heard about it",
+          "es_cursiva": "He oído de eso",
+          "emoji": "🟠"
+        },
+        "3": {
+          "en": "I can do it a little",
+          "es_cursiva": "Puedo un poco",
+          "emoji": "🟡"
+        },
+        "4": {
+          "en": "I can do it with help",
+          "es_cursiva": "Puedo con ayuda",
+          "emoji": "🟢"
+        },
+        "5": {
+          "en": "I can do it confidently",
+          "es_cursiva": "Puedo con seguridad",
+          "emoji": "✅"
+        }
+      },
+      "gap_card_statements_by_rap": [
+        {
+          "rap_block": "RAP-01 · Vocablos básicos marítimo-portuarios",
+          "statements": [
+            "I can name 6 parts of a vessel in English (bow · stern · port side · starboard · hull · deck).",
+            "I can name 4 zones of a port in English (berth · dock · gantry crane · warehouse)."
+          ]
+        },
+        {
+          "rap_block": "RAP-02 · SMCP (Standard Marine Communication Phrases)",
+          "statements": [
+            "I can answer a VHF radio call with my name and berth number in English.",
+            "I can use SMCP standard phrases (Roger · Say again · Stand by · Out) in a basic radio exchange."
+          ]
+        },
+        {
+          "rap_block": "RAP-03 · Gramática puerto-buque (operaciones)",
+          "statements": [
+            "I can describe a port operation in present continuous in English ('The vessel is mooring · The crane is loading').",
+            "I can give a basic instruction with modals in English ('You must wear PPE · You can board now')."
+          ]
+        },
+        {
+          "rap_block": "RAP-04 · Descripción de funciones profesionales",
+          "statements": [
+            "I can introduce my professional role at the port in English ('I am a Port Operations Trainee · I work at Berth 4').",
+            "I can describe one of my main tasks at the port in English ('I coordinate berthing · I report to the port captain')."
+          ]
+        }
+      ],
+      "top_three_blind_spots_template": [
+        {
+          "blind_spot_n": 1,
+          "rap_block": "____ (RAP-01 / RAP-02 / RAP-03 / RAP-04)",
+          "formula_blank": "I need to learn ____________________ because ____________________ to do ____________________ in English."
+        },
+        {
+          "blind_spot_n": 2,
+          "rap_block": "____ (RAP-01 / RAP-02 / RAP-03 / RAP-04)",
+          "formula_blank": "I need to learn ____________________ because ____________________ to do ____________________ in English."
+        },
+        {
+          "blind_spot_n": 3,
+          "rap_block": "____ (RAP-01 / RAP-02 / RAP-03 / RAP-04)",
+          "formula_blank": "I need to learn ____________________ because ____________________ to do ____________________ in English."
+        }
+      ],
+      "support_phrases_en_es": [
+        "I need to learn... = Necesito aprender...",
+        "...to talk to Captain Lopera = ...para hablar con el Capitán Lopera",
+        "...to coordinate at Berth 4 = ...para coordinar en el Muelle 4",
+        "...to report to Capitán Restrepo = ...para reportar al Capitán Restrepo",
+        "...to do my job in English = ...para hacer mi trabajo en inglés"
+      ],
+      "learner_task": "Cada aprendiz completa los 8 I-can statements (1-5) en silencio y luego identifica sus 3 blind-spots con fórmula completa. El instructor recoge anónimamente los blind-spots por RAP block y reporta cifras agregadas en el cierre ('5 personas marcaron RAP-02 SMCP como su #1 blind-spot · ese va a ser nuestro foco en S4-S5').",
+      "instructor_handling": "Las Gap Cards de cada aprendiz se guardan en una carpeta del aula con su nombre. Se redistribuyen en S3 (cierre RAP-01), S6 (cierre RAP-02), S9 (cierre RAP-03) y S12 (cierre RAP-04 + Misión Final) para auto-comparación de progreso.",
+      "micro_capsule": {
+        "type": "📇 Gap Cue",
+        "content_en": "Your three blind-spots are not problems — they are the three doors of these 12 sessions. Each session opens one. (*Tus tres blind-spots no son problemas — son las tres puertas de estas 12 sesiones. Cada sesión abre una.*)"
+      },
+      "encadenamiento_al_siguiente": "Cierre del momento 3 con frase puente: 'You measured your own gaps in private. Now compare your map with another trainee's — Andrea also talks with another trainee at the port today.' (*Mediste tus propios gaps en privado. Ahora compara tu mapa con el de otro aprendiz — Andrea también habla con otro trainee del puerto hoy.*) → activa el momento 4 (Peer Interview entre trainees).",
+      "didactic_strategy": "TBLT",
+      "didactic_technique": "Autoevaluación por I-can statements con escala 1-5 + identificación de blind-spots con fórmula estandarizada"
+    },
+    {
+      "numero": 4,
+      "nombre": "Peer Interview — Andrea entrevista a otro trainee del puerto",
+      "archetype": "D — Peer Interview (Andrea entrevista a otro trainee del puerto)",
+      "duracion_min": 30,
+      "bloom_level": "L2 Comprender — el aprendiz socializa sus gaps y mapea saberes previos del compañero usando un guion de 5 preguntas estandarizadas",
+      "modality": "Parejas A↔B (rotación de roles entrevistador/entrevistado · 12 min cada rol = 24 min) + cierre plenario breve (6 min)",
+      "instruction_en": "Find a partner. One of you is Andrea Mosquera. The other is another trainee at the Puerto de Buenaventura — also a recent SENA graduate, also at Berth 4 today. Use the interview script: ask the five questions in English, listen, and mark down your partner's answers in their own words. Then switch roles. The goal is not perfect English — the goal is to discover that your gaps are not unique. (*Encuentra un compañero. Uno de ustedes es Andrea Mosquera. El otro es otro aprendiz en el Puerto de Buenaventura — también recién egresado del SENA, también en el Muelle 4 hoy. Usen el guion de entrevista: hagan las cinco preguntas en inglés, escuchen y anoten las respuestas del compañero en sus propias palabras. Luego intercambien roles. La meta no es inglés perfecto — la meta es descubrir que tus gaps no son únicos.*)",
+      "peer_interview_script_en": [
+        "Q1 — Which words from this morning do you already know in English? (*¿Qué palabras de esta mañana ya conoces en inglés?*)",
+        "Q2 — Which RAP block is your hardest blind-spot — RAP-01 vocabulary, RAP-02 SMCP radio, RAP-03 grammar, or RAP-04 professional role? (*¿Cuál bloque RAP es tu blind-spot más difícil — vocabulario RAP-01, radio SMCP RAP-02, gramática RAP-03 o rol profesional RAP-04?*)",
+        "Q3 — Have you ever talked to a foreign captain or pilot in English? (*¿Has hablado alguna vez con un capitán o piloto extranjero en inglés?*)",
+        "Q4 — What is the first English sentence you want to say perfectly to Captain Lopera? (*¿Cuál es la primera frase en inglés que quieres decirle perfecto al Capitán Lopera?*)",
+        "Q5 — In Session 12, what will be different about your English at Berth 4? (*En la Sesión 12, ¿qué será diferente sobre tu inglés en el Muelle 4?*)"
+      ],
+      "peer_interview_response_template": {
+        "partner_name_field": "Partner's name: ________________________________",
+        "partner_role_field": "Partner's role at the port (real or imagined): ____________________",
+        "answer_grid": [
+          "Answer to Q1: ________________________________________________",
+          "Answer to Q2: ________________________________________________",
+          "Answer to Q3: ________________________________________________",
+          "Answer to Q4: ________________________________________________",
+          "Answer to Q5: ________________________________________________"
+        ]
+      },
+      "support_phrases_en_es": [
+        "Can you tell me...? = ¿Me puedes decir...?",
+        "What about you? = ¿Y tú?",
+        "Same here = Igual yo",
+        "I don't have that gap = No tengo ese gap",
+        "Good luck = Buena suerte"
+      ],
+      "learner_task": "Cada aprendiz entrevista a un compañero usando las 5 preguntas y registra las respuestas. Luego intercambian roles. El instructor circula y modela respuestas cuando alguien se traba — sin corregir errores. Cierre plenario: el instructor invita a 2 voluntarios a compartir UN hallazgo de su entrevista ('mi compañero también marcó RAP-02 como #1 blind-spot · entonces no soy el único'). El descubrimiento explícito: las gaps son colectivas.",
+      "vocabulary_map_collective": "El instructor abre un Mapa de Vocabulario Previo del grupo en el papelógrafo (heredado del de PM-2.1 verde/rojo, ahora aumentado): por cada respuesta a Q1 ('words you already know'), añade post-it verde con la palabra. El mapa colectivo queda visible para abrir PM-2.5 Vocabulary en S2.",
+      "micro_capsule": {
+        "type": "🤝 Peer Cue",
+        "content_en": "Andrea is not alone in her first morning. You are not alone in yours. (*Andrea no está sola en su primera mañana. Tú tampoco en la tuya.*)"
+      },
+      "encadenamiento_al_siguiente": "Cierre del momento 4 con frase puente hacia PM-2.3 + PM-2.5: 'You diagnosed in four mirrors today: KWL, Vessel View, Gap Card, and Peer Interview. In Session 2, two doors open — Reading (PM-2.3) brings you the first authentic port text, and Vocabulary (PM-2.5) activates the very categories where you marked the most reds today.' (*Hoy diagnosticaste en cuatro espejos: KWL, Vista del Buque, Gap Card y Entrevista entre Pares. En la Sesión 2 se abren dos puertas — Reading (PM-2.3) te trae el primer texto auténtico del puerto, y Vocabulary (PM-2.5) activa exactamente las categorías donde marcaste más rojos hoy.*) → handoff a PM-2.3 + PM-2.5 con 4 productos físicos: KWL grupal en pared del aula + hoja de diagnosis visual marcada verde/rojo + Gap Card individual archivada + Mapa de Vocabulario Previo aumentado en papelógrafo.",
+      "didactic_strategy": "Aprendizaje colaborativo",
+      "didactic_technique": "Entrevista guiada entre pares con 5 preguntas estandarizadas + rotación de roles + síntesis colectiva de gaps comunes"
+    }
+  ],
+  "sintesis_de_bloque": {
+    "closing_message_en": "Today you were Andrea four times. You wrote what you KNOW in your KWL. You marked what you SEE on the BUENAVENTURA EXPRESS. You measured your GAPS in eight I-can statements. You compared your story with another trainee. Four mirrors, one face — yours, ready for Session 2. The KWL stays on the wall. The Gap Card stays in your folder. We open one new door per session for the next eleven Mondays. (*Hoy fuiste Andrea cuatro veces. Escribiste lo que SABES en tu KWL. Marcaste lo que VES en el BUENAVENTURA EXPRESS. Mediste tus GAPS en ocho declaraciones I-can. Comparaste tu historia con otro aprendiz. Cuatro espejos, una cara — la tuya, lista para la Sesión 2. El KWL queda en la pared. La Gap Card queda en tu carpeta. Abrimos una puerta nueva por sesión los próximos once lunes.*)",
+    "tone": "cálido · de cierre · sin presión evaluativa · puente claro a S2 doble (PM-2.3 + PM-2.5)"
+  },
+  "activity_card": {
+    "pm_id": "PM-2.2",
+    "pm_name": "Gap Analysis",
+    "session": 1,
+    "phase_sena": "Contextualización",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "archetype": "A — KWL Chart Diagnostic (Know · Want to know · Learned)",
+        "statement": "Completar individualmente y luego en plenaria una tabla KWL bilingüe sobre el inglés marítimo-portuario, registrando en columna K los saberes previos (incluyendo las 4 survival words port/berth/vessel/radio activadas en PM-2.1) y en columna W las preguntas vivas para hacer el trabajo de Andrea Mosquera en Berth 4, dejando la columna L en blanco para completar en Sesión 12",
+        "didactic_strategy": "Aprendizaje colaborativo",
+        "didactic_technique": "Think-Pair-Share con tabla KWL bilingüe",
+        "bloom_level": "L1 Recordar + L2 Comprender"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "archetype": "B — Diagnosis visual (Andrea inspecciona vessel y marca lo que conoce vs no conoce)",
+        "statement": "Identificar visualmente con marcado verde/rojo en una imagen lateral del BUENAVENTURA EXPRESS atracado en Berth 4 las seis partes del buque (bow, stern, port side, starboard, hull, deck) y las cuatro zonas portuarias (berth, dock, gantry crane, warehouse) que el aprendiz puede o no nombrar en inglés, comparando con un compañero y aportando frecuencias agregadas a la cohorte",
+        "didactic_strategy": "Content-Based Learning",
+        "didactic_technique": "Diagnóstico visual con marcado verde/rojo + parejas comparativas",
+        "bloom_level": "L2 Comprender"
+      },
+      {
+        "number": 3,
+        "type": "cognitiva",
+        "archetype": "C — Gap Card (lista personalizada de blind-spots por sub-bloque RAP)",
+        "statement": "Autoevaluar individualmente el nivel actual frente a 8 I-can statements distribuidos en los 4 sub-bloques RAP del curso (RAP-01 vocablos básicos · RAP-02 SMCP · RAP-03 gramática puerto-buque · RAP-04 funciones profesionales) usando escala 1-5 y verbalizando los 3 blind-spots principales con la fórmula 'I need to learn ___ because ___ to do ___ in English'",
+        "didactic_strategy": "TBLT",
+        "didactic_technique": "Autoevaluación por I-can statements con escala 1-5 + identificación de blind-spots con fórmula estandarizada",
+        "bloom_level": "L2 Comprender"
+      },
+      {
+        "number": 4,
+        "type": "procedimental",
+        "archetype": "D — Peer Interview (Andrea entrevista a otro trainee del puerto)",
+        "statement": "Entrevistar a un compañero usando un guion estandarizado de 5 preguntas sobre saberes previos, blind-spot principal por bloque RAP, experiencia con capitanes extranjeros, frase prioritaria a decir a Captain Lopera y proyección de avance para Sesión 12, registrando respuestas y aportando 1 hallazgo a un Mapa de Vocabulario Previo colectivo",
+        "didactic_strategy": "Aprendizaje colaborativo",
+        "didactic_technique": "Entrevista guiada entre pares con 5 preguntas estandarizadas + rotación de roles + síntesis colectiva",
+        "bloom_level": "L2 Comprender"
+      }
+    ],
+    "hours": {
+      "direct": 2.25,
+      "autonomous": 1.58,
+      "rationale_hours": "S1 total = 6h directas + 2.33h autónomas (per PM-2.0 blueprint single-guía 12 sesiones). PM-2.1 Spark consumió la primera mitad (3.75h directas + 0.75h autónomas). PM-2.2 Gap Analysis consume el resto: 2.25h directas (Momento 1 KWL 30min + Momento 2 Diagnosis visual 35min + Momento 3 Gap Card 35min + Momento 4 Peer Interview 30min + transiciones encadenamiento entre momentos + síntesis de bloque de cierre ≈ 5min · total ≈ 135min = 2.25h) + 1.58h autónomas (relectura del KWL personal + foto de Gap Card subida a Moodle como baseline + escribir 5 oraciones simples con palabras del Mapa de Vocabulario Previo colectivo + preview S2 con 2 minutos de video portuario en YouTube). Suma S1 = 3.75+2.25 = 6h directas + 0.75+1.58 = 2.33h autónomas. ✓"
+    },
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "S1 no genera evidencia formal per canon FPI SENA. Las 4 actividades del Gap Analysis son diagnósticas · sin instrumento de evaluación calificada. Los 4 productos físicos generados (KWL grupal en pared + hoja de diagnosis visual marcada verde/rojo + Gap Card individual archivada + Mapa de Vocabulario Previo aumentado) son artefactos pedagógicos · NO evidencia formal GFPI-F-134.",
+      "evaluation_technique": null,
+      "instrument_number": null,
+      "instrument_type": null
+    },
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Proyector + pantalla",
+        "Tabla KWL impresa o digital — 1 por aprendiz (3 columnas K-W-L bilingües con prompts) + 1 versión papelógrafo grande para KWL grupal (queda en pared del aula durante 12 sesiones)",
+        "Hoja de Diagnosis Visual A4 — vista lateral del BUENAVENTURA EXPRESS atracado en Berth 4 con 10 elementos numerados (6 partes del buque + 4 zonas portuarias) — 1 por aprendiz",
+        "Marcadores verdes y rojos — 1 set por aprendiz (para diagnosis visual y para post-its de Mapa de Vocabulario Previo)",
+        "Tarjetas verde/rojo de respuesta rápida — 1 set por aprendiz (para conteo plenario de aciertos en diagnosis visual)",
+        "Gap Card impresa — 1 por aprendiz (8 I-can statements distribuidos en 4 bloques RAP + escala 1-5 con emojis 🔴🟠🟡🟢✅ + 3 blind-spot blanks con fórmula estandarizada)",
+        "Carpeta del aula para archivar Gap Cards individuales (redistribución en S3, S6, S9, S12)",
+        "Guión de Peer Interview impreso — 1 por aprendiz (5 preguntas en inglés con espejo en español cursivo + rejilla de respuestas)",
+        "Papelógrafo del Mapa de Vocabulario Previo (heredado de PM-2.1 con marcado verde/rojo del headline · ahora aumentado con post-its verdes de Q1 del Peer Interview)",
+        "Mapa visual del curso (4 bloques RAP × 12 sesiones) heredado de PM-2.1 — referencia persistente",
+        "Computadores con acceso a Moodle (subida opcional de foto de Gap Card individual al portafolio personal como baseline)"
+      ],
+      "instructors": "Instructor de inglés + Técnico especialista marítimo-portuario"
+    },
+    "contributes_to_consolidated_quiz": false,
+    "quiz_skill": null,
+    "quiz_points": 0,
+    "quiz_item_count": 0
+  },
+  "trabajo_autonomo": {
+    "duracion_h": 1.58,
+    "actividades": [
+      "Foto de Gap Card individual subida al grupo Moodle como baseline personal (línea de base que se compara contra Gap Card revisada en S3, S6, S9, S12)",
+      "Escribir 5 oraciones simples en inglés (sujeto + be + complemento) usando 5 palabras tomadas del Mapa de Vocabulario Previo colectivo del aula. Ejemplo: 'A vessel is a big ship. Berth 4 is the dock for cargo. The captain is on the bridge.'",
+      "Releer el KWL personal en casa y añadir 2 ítems más en columna W (preguntas adicionales que surgieron al pensarlo en silencio)",
+      "Preview S2: ver 2 minutos de video de operación portuaria en Buenaventura o cualquier puerto del Pacífico latinoamericano (YouTube · audio en inglés con o sin subtítulos) y anotar 3 palabras nuevas reconocidas — NO traducir, solo reconocer y anotar"
+    ]
+  },
+  "pm0_protocol_session_level": {
+    "session_id": "S1",
+    "bloque_interno": "Bloque_Interno_1_RAP01_A1.2",
+    "cefr_target": "A1.2 (entrada)",
+    "l1_percentage_used": "≈ 25% (alineado a single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S1 · continuidad estricta con PM-2.1)",
+    "l1_distribution": {
+      "instructions_l1_cursive": "100% de instrucciones espejadas en cada momento (Bilingüe Unificada)",
+      "kwl_columns_l1_cursive": "100% de descriptores K-W-L espejados",
+      "diagnosis_visual_labels_l1_cursive": "100% de los 10 elementos numerados con espejo en español",
+      "gap_card_scale_l1_cursive": "100% de descriptores 1-5 con emojis y espejo en español",
+      "peer_interview_questions_l1_cursive": "100% de las 5 preguntas espejadas",
+      "support_phrases_l1": "Apoyo léxico bilingüe en cada uno de los 4 momentos (5 frases por momento)",
+      "discussion_l1_allowed": "Sí · momentos 2 (parejas comparativas) y 4 (peer interview cierre plenario) permiten discusión bilingüe sobre los gaps (es S1)",
+      "kwl_mixed_writing_allowed": "Sí · KWL del momento 1 acepta escritura mezclada inglés/español hoy (en S12 se completa columna L solo en inglés)"
+    },
+    "methodological_shift": "§5.A1.2 · input lento, máximo andamiaje, accuracy-prioritario · 4 momentos diagnósticos contextualizados al primer día de Andrea en Berth 4 con artefactos físicos (KWL · hoja de diagnosis · Gap Card · guión de entrevista)",
+    "feedback_mode": "§5.6 · Recast suave + Reformulación positiva · CERO corrección invasiva (es Gap diagnóstico, no evaluación) · instructor modela respuestas cuando alguien se traba pero NO corrige errores",
+    "stress_pronunciation_focus": "§5.8 · reciclaje del stress de las 4 survival words PM-2.1 (PORT · BERTH · VES-sel · RA-dio) en momentos 1 y 4 + pre-vista receptiva del stress en categorías Toolbelt en momento 2 (BOW · STERN · STAR-board · HULL · DECK · GAN-try crane)",
+    "vocabulary_activation": "§5.10 · 5 categorías Toolbelt pre-activadas RECEPTIVAMENTE en momento 2 (Ship Parts · Port Infrastructure · y referencias a Directions & Sides · People & Roles · Operations en momentos 3-4) · ninguna palabra individual enseñada productivamente · solo expuesta para que PM-2.5 active quirúrgicamente en S2",
+    "grammar_activation": "§8.Bloque_Interno_1_RAP01 · NINGÚN grupo gramatical activado productivamente en S1 · SÍ se exponen receptivamente las fórmulas 'I know / I want to know / I need to learn ___ because ___' (pre-activación Gr1 be/auxiliaries + Gr4 modals of necessity/want)",
+    "principles_invoked": [
+      "§5.1 Input comprensible — 4 herramientas diagnósticas accesibles A1.2 (KWL · diagnosis visual · Gap Card · guión de entrevista)",
+      "§5.6 Feedback no invasivo — Gap es espejo en 4 ángulos, no juicio",
+      "§5.10 Vocabulario de supervivencia primero — 5 categorías Toolbelt como pre-vista receptiva en momento 2",
+      "§5.13 Bilingüismo unificado — instrucción una vez en EN + español cursivo en cada momento · sin bloques duplicados"
+    ]
+  },
+  "validacion": {
+    "reglas_pm22": {
+      "estructura_canonica_modo_extensible": "OK · estructura 4 MOMENTOS SECUENCIALES aplicada literalmente per master prompt PM-2.2 v3.0 modo extensible diesel_secuencia_encadenada",
+      "cuatro_arquetipos_ABCD": "OK · 4 arquetipos canónicos del catálogo §44 PM-2.2 v3.0 (A KWL Chart Diagnostic + B Diagnosis visual + C Gap Card + D Peer Interview) · cada uno con momento dedicado y archetype específico en activity_card.activities[i].archetype",
+      "encadenamiento_narrativo_explicito": "OK · cada momento 1-3 cierra con campo encadenamiento_al_siguiente que activa explícitamente el siguiente · momento 4 encadena a PM-2.3 + PM-2.5 (S2)",
+      "no_evidencia_formal": "OK · S1 no genera evidencia · evidence.generates_evidence = false con rationale · 4 productos físicos son artefactos pedagógicos NO evidencia GFPI-F-134",
+      "kwl_columnas_3_completas": "OK · K-W-L con prompts bilingües · columna L explícitamente reservada para Sesión 12",
+      "diagnosis_visual_imagen_anclada_universo": "OK · imagen del BUENAVENTURA EXPRESS atracado en Berth 4 con 10 elementos numerados (no imagen genérica)",
+      "gap_card_8_statements_4_RAPs": "OK · 8 I-can statements distribuidos 2 por bloque RAP-01/02/03/04 + 3 blind-spots con fórmula 'I need to learn ___ because ___ to do ___ in English'",
+      "peer_interview_5_preguntas": "OK · 5 preguntas estandarizadas con rotación de roles + rejilla de respuestas + síntesis colectiva con post-its verdes",
+      "cuatro_actividades_con_archetype": "OK · activity_card.activities[1-4] cada una con campo archetype específico A/B/C/D",
+      "bilingue_unificada": "OK · instrucción una sola vez en inglés + español cursivo en cada momento · sin bloques duplicados",
+      "micro_capsulas_visuales": "OK · 4 micro-cápsulas distribuidas (📋 KWL Cue M1 · 🔍 Visual Cue M2 · 📇 Gap Cue M3 · 🤝 Peer Cue M4)",
+      "zero_meta_talk": "OK · output listo para imprimir · sin instrucciones meta al instructor dentro de la worksheet",
+      "blind_spots_verificables_session_12": "OK · KWL columna L para S12 + Gap Card archivada para redistribución en S3/S6/S9/S12 + KWL grupal en pared 12 sesiones"
+    },
+    "anclaje_pm0": {
+      "cefr_descriptor_anclado": "OK · §6.A1.2 Bloque Interno 1 RAP-01 explicitado en pm0_anchor + pm0_protocol_session_level",
+      "l1_percentage_anclado": "OK · ≈ 25% per §9.1.single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S1 · continuidad con PM-2.1",
+      "principios_pedagogicos_invocados": "OK · §5.1, §5.6, §5.10, §5.13 invocados explícitamente",
+      "grammar_roadmap_respetado": "OK · S1 NO activa gramática productiva · solo pre-vista receptiva de Gr1 + Gr4",
+      "feedback_mode_alineado": "OK · Recast suave + Reformulación positiva en S1 · CERO corrección invasiva",
+      "bloom_ceiling_L1_L2": "OK · ningún momento cruza a L3 Apply (eso es PM-2.5/PM-2.3 en S2+) · mismo techo Bloom que Spark",
+      "cefr_no_excede_A1_2": "OK · todas las estructuras target son frases simples sujeto+verbo+complemento · vocabulario survival + receptivo · ningún tiempo verbal complejo · ninguna estructura A2.1+ activada productivamente"
+    },
+    "continuidad_sistemica": {
+      "input_pm21_spark_consumido": "OK · PM-2.2 consume explícitamente los 5 handoff_artifacts de PM-2.1: (1) papelógrafo verde/rojo (referenciado en environment + aumentado en momento 4) · (2) voto cromático (referenciado en frase puente PM-2.1→PM-2.2) · (3) Learner's Worksheet con 4 palabras (recicladas en columna K del KWL momento 1) · (4) Mapa visual del curso (referenciado en environment) · (5) Infografía portuaria (referenciada visualmente en momento 2 con vista lateral del BUENAVENTURA EXPRESS)",
+      "input_pm12_universo_preservado": "OK · Andrea Mosquera + Captain Lopera + Capitán Restrepo + Puerto de Buenaventura + Berth 4 + BUENAVENTURA EXPRESS — todos heredados de PM-2.1 sin alterar",
+      "input_pm12_toolbelt_categorias_mapeadas": "OK · momento 2 (Diagnosis visual) usa Ship Parts + Port Infrastructure literales del Toolbelt PM-1.2 · momentos 3-4 referencian Directions & Sides + People & Roles + Operations · permite pre-activación quirúrgica en PM-2.5 S2",
+      "input_pm20_blueprint_horas_respetado": "OK · 2.25h directas + 1.58h autónomas en PM-2.2 · suma con PM-2.1 (3.75+0.75) = S1 total 6h+2.33h ✓",
+      "input_pm0_anclas_respetadas": "OK · todas las anclas pm0 invocadas en pm0_protocol_session_level",
+      "estilo_arquetipos_respetado": "OK · estilo_aplicado = diesel_secuencia_encadenada · 4 archetypes ABCD literales del arquetipos-elegidos.json IMARPOR-CC PM-2.2",
+      "diagnostico_no_analitico": "OK · ninguna tarea pide al aprendiz analizar reglas, aplicar gramática o producir lenguaje original más allá de frames receptivos · 4 momentos son diagnóstico, no evaluación"
+    },
+    "trazabilidad_gfpi_f_134": {
+      "rap_codigo_presente": "OK · 240201050-RAP",
+      "competencia_codigo_presente": "OK · 240201050",
+      "fase_sena_correcta": "OK · Contextualización (Sección 3.2)",
+      "actividades_con_estrategia_y_tecnica": "OK · cada una de las 4 actividades tiene didactic_strategy + didactic_technique + bloom_level + archetype",
+      "ambiente_y_materiales_explicitos": "OK · environment.type + environment.materials lista detallada con 11 ítems específicos a IMARPOR-CC (KWL + hoja de diagnosis del BUENAVENTURA EXPRESS + Gap Card + guión de Peer Interview + papelógrafo heredado + materiales auxiliares)",
+      "instructores_declarados": "OK · Instructor de inglés + Técnico especialista marítimo-portuario",
+      "horas_directas_y_autonomas_separadas": "OK · hours.direct = 2.25 · hours.autonomous = 1.58 con rationale aritmético explícito",
+      "evidencia_explicitamente_nula": "OK · evidence.generates_evidence = false con rationale"
+    },
+    "check9_anti_copia_fantasma": {
+      "evidence": "Validación explícita anti-DIESEL + anti-MGV: NO se copió contenido del ref operacional DIESEL-2026-04-15/-18/-19/pm-2-2.json. La ref DIESEL pertenece al universo de mecánica diesel (The Diesel Workshop · Bogotá · Carlos Mendoza · Valentina Cruz · Santiago Ríos · workshop fire · PPE compliance · engine/piston/maintenance/Hazmat Zone/Reception/Service Bay/Diagnostic Bay · 4 imágenes de seguridad de taller · I-can statements sobre PPE/spill/fire extinguisher). Esta Activity Card pertenece al universo IMARPOR-CC marítimo-portuario (Andrea Mosquera · Capitán Restrepo · Captain Lopera · Puerto de Buenaventura · Berth 4 · BUENAVENTURA EXPRESS · vocabulario port/berth/vessel/radio/bow/stern/port side/starboard/hull/deck/gantry crane/warehouse/SMCP/mooring · I-can statements sobre VHF radio/berth number/SMCP phrases/mooring operations/PPE en sentido marítimo/Port Operations Trainee role). NINGÚN nombre de personaje DIESEL (Mendoza/Cruz/Ríos), NINGUNA palabra de vocabulario DIESEL (engine/piston/PPE-workshop/Hazmat/spill-oil/fire-extinguisher-blocked), NINGUNA imagen DIESEL (técnico sin PPE/toolbox tirado/derrame de aceite/extinguidor bloqueado), NINGÚN I-can statement DIESEL ('I can identify a safety hazard in the workshop'/'I can describe the current state of a service bay') aparece en este output. Asimismo NO se copió contenido del ref MGV-2026-04-20 (Pixel & Ink Studio · Andrés · Laura · Sophia Martinez · contrato internacional de branding · vocabulario typography/serif/sans-serif/Pixel/CMYK/RGB/kerning/leading/Pixel & Ink Studio). NINGÚN personaje MGV (Andrés/Laura/Sophia), NINGÚN término MGV de diseño gráfico (typography/serif/sans-serif/CMYK/RGB/kerning/leading/branding), NINGÚN workplace MGV (Pixel & Ink Studio), NINGÚN stake MGV (contrato internacional de branding) aparece. La ref DIESEL se usó EXCLUSIVAMENTE como template estructural (orden de campos JSON + estructura momentos[] paralela a activity_card.activities[] + presencia de archetype_used + archetype_mode + activity_card.activities[i].archetype específico ABCD) — NO como fuente de contenido pedagógico.",
+      "originalidad_universo": "OK · 100% IMARPOR-CC original · sector marítimo-portuario colombiano · Pacífico",
+      "originalidad_vocabulario": "OK · vocabulario sectorial marítimo (port/berth/vessel/radio/bow/stern/port side/starboard/hull/deck/gantry crane/warehouse/mooring/SMCP/Roger/Say again/Stand by/Out) · ningún término diesel (engine/piston/workshop/PPE-workshop/Hazmat/oil-spill) · ningún término MGV diseño gráfico (typography/serif/sans-serif/CMYK/RGB/kerning/leading)",
+      "originalidad_personajes": "OK · 3 personajes IMARPOR (Andrea Mosquera/Capitán Restrepo/Captain Lopera) heredados de PM-2.1 · ningún personaje DIESEL (Mendoza/Cruz/Ríos) · ningún personaje MGV (Andrés/Laura/Sophia)",
+      "originalidad_workplace": "OK · Puerto de Buenaventura · Berth 4 · BUENAVENTURA EXPRESS · ningún workplace DIESEL (Diesel Workshop Bogotá / Service Bay / Hazmat Zone) · ningún workplace MGV (Pixel & Ink Studio)",
+      "originalidad_diagnosis_visual": "OK · imagen lateral del BUENAVENTURA EXPRESS atracado en Berth 4 con 6 partes del buque + 4 zonas portuarias · NO las 4 imágenes DIESEL (técnico sin PPE/toolbox tirado/derrame de aceite/extinguidor bloqueado) · NO referencias visuales MGV de tipografía/branding",
+      "originalidad_gap_card_statements": "OK · 8 I-can statements distribuidos en 4 RAP marítimos (vocablos básicos puerto-buque · SMCP radio · gramática operaciones puerto-buque · funciones profesionales portuarias) · NO los 6 statements DIESEL sobre tools/maintenance/PPE/inspection-checklist/service-bay · NO statements MGV sobre branding/typography/composition",
+      "originalidad_peer_interview_questions": "OK · 5 preguntas IMARPOR sobre puerto/RAP blind-spots/foreign captain/Captain Lopera/Berth 4 · NO las 5 preguntas DIESEL sobre tools/maintenance-types/PPE/spills/workshop-words · NO preguntas MGV sobre clientes-de-branding/herramientas-de-diseño",
+      "originalidad_kwl_prompts": "OK · KWL prompts anclados a port/berth/vessel/Captain Lopera/VHF radio/pilot/stevedore · NINGÚN prompt DIESEL (workshop/tools/maintenance) · NINGÚN prompt MGV (typography/serif/Sophia/branding)"
+    }
+  },
+  "siguiente_paso": {
+    "next_pm_primary": "PM-2.3",
+    "next_pm_primary_name": "Reading — Apropiación (Sesión 2 · primera mitad)",
+    "next_pm_secondary": "PM-2.5",
+    "next_pm_secondary_name": "Vocabulary — Apropiación (Sesión 2 · segunda mitad)",
+    "rationale": "PM-2.2 cerró S1 con un perfil de entrada de 4 capas por aprendiz: (1) KWL personal con saberes A1.1 + agenda de preguntas vivas; (2) marcado verde/rojo de 10 elementos visuales del BUENAVENTURA EXPRESS y zonas portuarias; (3) Gap Card con 8 I-can statements 1-5 distribuidos en 4 RAPs + 3 blind-spots verbalizados; (4) Peer Interview con 5 respuestas y descubrimiento colectivo de gaps comunes. La Sesión 2 abre el primer bloque de Apropiación: PM-2.3 Reading toma el Master Anchor de 150-200 palabras del puerto y recicla el vocabulario que el aprendiz autodiagnosticó como conocido vs gap (priorización quirúrgica · texto auténtico). PM-2.5 Vocabulary toma las 5 categorías Toolbelt mapeadas en momento 2 (Ship Parts + Port Infrastructure como base + referencias a Directions & Sides + People & Roles + Operations) y pre-activa exactamente los términos donde la cohorte marcó más rojos colectivos. El KWL grupal queda en pared como agenda viva del aula durante 12 sesiones; las Gap Cards se redistribuyen en S3/S6/S9/S12 como check-in de progreso por bloque RAP.",
+    "handoff_artifacts": [
+      "KWL grupal en papelógrafo de pared del aula con columna K + columna W de toda la cohorte (input de agenda viva para PM-2.3 + PM-2.5 · queda visible 12 sesiones)",
+      "KWL individual del aprendiz con columnas K-W completadas (input de perfil personal cualitativo · L se completa en S12)",
+      "Hoja de Diagnosis Visual marcada verde/rojo por aprendiz sobre el BUENAVENTURA EXPRESS (input visual con frecuencias agregadas por la cohorte de cada uno de los 10 elementos · informa orden de pre-activación de PM-2.5)",
+      "Gap Card individual con 8 puntajes 1-5 + 3 blind-spots con fórmula 'I need to learn ___ because ___' archivada en carpeta del aula (artefacto pedagógico que se redistribuye en S3, S6, S9, S12)",
+      "Mapa de Vocabulario Previo colectivo en papelógrafo (heredado y aumentado de PM-2.1 con post-its verdes de Q1 del Peer Interview · input para abrir PM-2.5 con vocabulario que la cohorte ya reconoce)",
+      "Hojas de Peer Interview con 5 respuestas por compañero (input dialógico para PM-2.8 Speaking en S5+ que retomará entrevistas)",
+      "Mapeo agregado por la cohorte de blind-spots por RAP block (input para que el instructor decida intensidad y orden de los 4 RAPs en bloques internos S2-S12)"
+    ],
+    "instructor_selection_required": "Sí · enriched: false · Sergio debe revisar este Gap Analysis antes de propagar a PM-2.11 (Gate Humano 2). Validaciones específicas requeridas: (a) confirmar que los 4 momentos consumen explícitamente los handoff_artifacts de PM-2.1; (b) confirmar que la imagen lateral del BUENAVENTURA EXPRESS para Diagnosis Visual está disponible (preparar A4 con 10 elementos numerados en pre-aula); (c) confirmar que las Gap Cards se archivan físicamente en carpeta del aula con plan de redistribución S3/S6/S9/S12; (d) confirmar que el KWL grupal de papelógrafo se monta en pared durante 12 sesiones; (e) confirmar que el orden de los 4 momentos (KWL → Diagnosis visual → Gap Card → Peer Interview) cuadra con la energía pedagógica del cierre de S1 (de individual silencioso a dialógico colaborativo)."
+  },
+  "enriched_at": "2026-04-29T16:30:00-05:00",
+  "enriched_by": "Sergio Cortés Perdomo",
+  "_enriched_review_note": "Aprobado en lote post Gate 2 review híbrido C+A 2026-04-29: spot check 4 gaps PASS (3 strict + 1 marginal PM-2.6 word_count 140 vs target 150 · discrepancia heurística split vs declared 178 · aceptado · regenerar opcional v1.1) · resumen ejecutivo 5 PMs sin gap PASS · arquitectura generaliza vs SMOKE clon (PM-2.11 PASS 14/16 idéntico · checks críticos 13/14/15/16 PASS)."
+}

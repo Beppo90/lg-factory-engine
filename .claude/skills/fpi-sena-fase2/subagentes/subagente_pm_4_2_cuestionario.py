@@ -164,11 +164,17 @@ def ensamblar_cuestionario_s6(run_id, runs_dir, master_prompts_dir, guide_id):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 5:
-        print("Uso: python subagente_pm_4_2_cuestionario.py <run_id> <runs_dir> <master_prompts_dir> <guide_id>")
+    if len(sys.argv) < 4:
+        print("Uso: python subagente_pm_4_2_cuestionario.py <run_id> <runs_dir> <master_prompts_dir> [guide_id]")
+        print("  guide_id opcional · single-guía absorpción carga inputs desde raíz")
         sys.exit(1)
     
-    result = ensamblar_cuestionario_s6(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+    run_id = sys.argv[1]
+    runs_dir = sys.argv[2]
+    master_prompts_dir = sys.argv[3]
+    guide_id = sys.argv[4] if len(sys.argv) > 4 else None
+    
+    result = ensamblar_cuestionario_s6(run_id, runs_dir, master_prompts_dir, guide_id)
     if result:
         t = result["totales"]
         print(f"\n=== Resultado ===")

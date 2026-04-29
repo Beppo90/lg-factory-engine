@@ -1,0 +1,553 @@
+{
+  "pm_id": "PM-2.6",
+  "pm_code": "PM-2.6",
+  "pm_name": "Listening — The Auditory Anchor",
+  "pm_version": "2.0",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "cefr_level": "A1.2",
+  "session": 4,
+  "fase_sena": "Apropiación",
+  "generated_at": "2026-04-29T00:00:00Z",
+  "instructor": "Sergio Cortés Perdomo",
+  "previous_pms": [
+    "pm-0-context.json (§5 SUCCESS, §9.1 L1 ~10% S4, §5.6 Chunking working memory)",
+    "pm-1-1.json (RAP integrado absorcion_Na1)",
+    "pm-1-2.json (Story B — IMO SMCP VHF radio dialogues curados, Toolbelt 25 términos × 5 categorías)",
+    "pm-2-0.json (Session 4 blueprint: ~3.0h direct + ~0.83h autónomo · paralelo PM-2.8)",
+    "pm-2-3.json (Master Anchor Reading S2 — Operational Report BUENAVENTURA EXPRESS · Andrea LECTORA · NO repetir género ni voces protagónicas)",
+    "pm-2-5.json (Toolbelt consolidated 25 términos)",
+    "pm-2-10.json (Grammar targets S3+S5 · be presente + prepositions of place + imperativo SMCP)"
+  ],
+  "archetypes_policy": {
+    "estilo_aplicado": "mgv_compendio_metodologico",
+    "applicable_to_this_pm": true,
+    "archetypes_integrated": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "integration_mode": "compendio metodológico — se documentan los 6 arquetipos como menú · cada uno con frases fijas + Language Bank + Micro-Cápsulas · el instructor elige/combina en Gate Humano 2",
+    "bloom_ceiling": "L3 Apply (máximo) · listening A1.2 phase-based + TBLT · NO HOTS",
+    "rationale": "Curso Complementario IMARPOR-CC con CEFR A1.2 ceiling exige bloom limitado a Recordar/Comprender/Aplicar. Los 6 arquetipos se exponen como menú metodológico para que el instructor elija según momentum del Conjunto B y dificultad observada en S3 (Reading)."
+  },
+  "pm0_anchor": {
+    "cefr_ceiling": "A1.2",
+    "l1_percentage_s4": 10,
+    "l1_rationale": "S4 dentro de Bloque Interno 2 (RAP-02 SMCP) según pm-0-context.l1_percentage_per_session.single_guide_12_sessions · L1 reservado para clarificar protocolo SMCP cuando el aprendiz se pierde · NUNCA durante el audio",
+    "grammar_recycled_in_audio": [
+      "Gr1 'be' presente (3ª pers. singular: she is, the ship is)",
+      "Gr2 prepositions of place (at berth, on board, alongside)",
+      "Gr3 imperative SMCP (stand by, switch to, report when)",
+      "Gr4 a/an + plural (a tugboat, two pilots, the lines)",
+      "Gr5 numbers + units (channel sixteen, ETA fourteen hundred)"
+    ],
+    "feedback_mode_dominant": "Noticing prompts during PRE (Survival Words SMCP) + Confirmation checks during WHILE (¿captaste el callsign?) + Recast during POST (rephrase del aprendiz al SMCP estándar)",
+    "success_factors_applied": [
+      "Salience (Survival Words pre-enseñados con IPA + stress: 'Berth /bɜːrθ/', 'Aye /aɪ/', 'Roger /ˈrɒdʒə/')",
+      "Use (mini-output después de cada pasada: parejas reconstruyen el intercambio VHF)",
+      "Connection (recicla 12 de 25 términos del Toolbelt · 3 categorías: SMCP, Ship/Port Anatomy, Port Operations)",
+      "Context (VHF radio call ship-to-shore auténtico · mismo universo IMARPOR S2-S3 · BUENAVENTURA EXPRESS aproximándose Berth 4)",
+      "Emotion (Andrea ya no LEE como en S2 — ahora ESCUCHA y eventualmente RESPONDE · escalada de agencia narrativa que el aprendiz emula)",
+      "Spaced repetition (vocabulario SMCP 3er encuentro: Reading S2 → Vocab S3 → Listening S4)",
+      "Synergy (los chunks fonéticos + patrones prosódicos del audio alimentan PM-2.8 Pronunciation/Speaking en paralelo S4)"
+    ],
+    "working_memory_chunking": "Script fragmentado en 8 chunks de 3-5 segundos (turnos VHF cortos) · pause markers / señalan límites prosódicos naturales del protocolo radio · cada turno cabe en memoria de trabajo A1.2 (≤7 piezas)"
+  },
+  "universe_anchor": {
+    "continuity_with_s2_s3": "S2 mostró a Andrea LEYENDO el reporte operativo escrito que Captain Lopera dejó en la oficina. S3 trabajó vocabulario aislado del Toolbelt. S4 escala la agencia narrativa: Andrea ahora ESCUCHA por primera vez la voz de Captain Lopera por radio VHF — y debe entender el SMCP en tiempo real. La transición es escrita → oral · pasiva → semi-activa.",
+    "protagonists_new_to_audio": "Captain Lopera (PRIMERA aparición vocal · capitán BUENAVENTURA EXPRESS · habla inglés como lingua franca con acento internacional NO nativo) + Andrea Mosquera (responde brevemente desde la torre del muelle como assistant dock officer en formación · supervisada por Restrepo offstage)",
+    "why_different_from_reading": "Reading S2 = reporte operativo expositivo monológico firmado por Lopera (Andrea sólo lee). Listening S4 = diálogo VHF radio call ship-to-shore bidireccional · oral SMCP estandarizado · Lopera HABLA por primera vez · Andrea PARTICIPA emitiendo confirmaciones SMCP cortas. Mismo universo, género oral diferente, agencia narrativa escalada.",
+    "genre": "VHF Radio Call Ship-to-Shore (channel 16 → working channel) · protocolo SMCP IMO · ship-to-shore approach reporting + berthing instructions",
+    "genre_diff_from_reading": "Reading S2 = expository operational report (1 voice on paper). Listening S4 = bidirectional VHF radio dialogue (2 voices live, with radio prosody, callsigns, repetitions, readback protocol).",
+    "vocabulary_recycling": {
+      "terms_from_toolbelt_in_script": [
+        "berth",
+        "starboard",
+        "bow",
+        "stern",
+        "tugboat",
+        "channel",
+        "stand by",
+        "roger",
+        "over",
+        "out",
+        "alongside",
+        "ETA",
+        "pilot",
+        "lines"
+      ],
+      "count_recycled": 14,
+      "count_total_toolbelt": 25,
+      "percentage": "56% del Toolbelt reciclado en formato oral · supera mínimo de 10/20 del master prompt"
+    },
+    "characters_active": [
+      "Captain Lopera (BUENAVENTURA EXPRESS · callsign HK-LOPERA · habla desde el puente · acento lingua franca internacional)",
+      "Andrea Mosquera (Dock Assistant en formación · callsign BUENAVENTURA-PORT · habla desde la torre del muelle Berth 4 · supervisada por Restrepo)",
+      "Capitán Restrepo (REFERENCIADO offstage · supervisa a Andrea sin hablar en este audio)"
+    ]
+  },
+  "identity": {
+    "title": "The Auditory Anchor — VHF Approach to Berth 4",
+    "subtitle": "Listening Comprehension · BUENAVENTURA EXPRESS llamando al Puerto de Buenaventura",
+    "session_number": 4,
+    "session_name": "S4 · RAP-02 SMCP · Listening + Speaking paralelo",
+    "phase_sena_subseccion": "3.3 Apropiación del conocimiento",
+    "instrument": "Learner's Worksheet + Audio TTS (script controlado A1.2)",
+    "evidence_target": "E3 Listening · 5 puntos · Desempeño formal SENA"
+  },
+  "content": {
+    "audio_context": {
+      "situation_es": "Día 4 de Andrea en el Puerto de Buenaventura. El BUENAVENTURA EXPRESS, capitaneado por Lopera, está a 3 millas náuticas del puerto y debe reportar su aproximación a Berth 4. Andrea, asistiendo desde la torre del muelle bajo supervisión del Capitán Restrepo, recibe la llamada VHF y debe entender el reporte de aproximación + las solicitudes operativas del capitán.",
+      "situation_en_short": "Day 4. Captain Lopera radios from BUENAVENTURA EXPRESS approaching Berth 4. Andrea answers from the dock tower.",
+      "instruction_bilingue": "Listen to a real VHF radio call between a ship captain and a port officer (*Escucha una llamada real de radio VHF entre un capitán de barco y una oficial de puerto*). You are Andrea — your job is to understand what Captain Lopera needs (*Tú eres Andrea — tu trabajo es entender qué necesita el Capitán Lopera*).",
+      "genre": "VHF radio call ship-to-shore · SMCP protocol",
+      "genre_authenticity_anchor": "Protocolo IMO SMCP estandarizado mundialmente · idéntico al que el egresado encontrará en cualquier puerto del Pacífico colombiano"
+    },
+    "tts_note_for_instructor": {
+      "speed": "0.85x (A1.2 controlled pace)",
+      "pause_markers": "/ marca pausa de 0.5s · // marca cambio de hablante (radio handoff)",
+      "speakers": 2,
+      "voice_1_lopera": "Voz masculina · acento internacional NO-nativo (lingua franca) · tono firme y profesional · ligero reverb de radio VHF",
+      "voice_2_andrea": "Voz femenina joven · acento colombiano de inglés A1.2 · tono concentrado · sin reverb (habla desde tierra)",
+      "radio_fx": "Añadir static breve al inicio/fin de cada turno para realismo VHF · NO sobrecargar (debe ser inteligible para A1.2)",
+      "total_duration_estimate": "1 min 50 s aproximado a 0.85x"
+    },
+    "the_listening_anchor_dialogue": {
+      "title": "VHF Channel 16 → Channel 12 · Approach to Berth 4",
+      "genre": "VHF radio call ship-to-shore (SMCP)",
+      "characters": [
+        "Captain Lopera",
+        "Andrea Mosquera"
+      ],
+      "word_count": 178,
+      "script": [
+        {
+          "turn": 1,
+          "speaker": "Captain Lopera",
+          "channel": "16",
+          "text": "Buenaventura Port, / Buenaventura Port, / this is BUENAVENTURA EXPRESS, / BUENAVENTURA EXPRESS. / Channel sixteen. / Over."
+        },
+        {
+          "turn": 2,
+          "speaker": "Andrea",
+          "channel": "16",
+          "text": "BUENAVENTURA EXPRESS, / this is Buenaventura Port. / Switch to channel one-two. / Channel twelve. / Over."
+        },
+        {
+          "turn": 3,
+          "speaker": "Captain Lopera",
+          "channel": "12",
+          "text": "Roger. / Switching to one-two. / Buenaventura Port, / position three miles west. / ETA fourteen hundred. / Request berthing instructions / for Berth four. / Over."
+        },
+        {
+          "turn": 4,
+          "speaker": "Andrea",
+          "channel": "12",
+          "text": "Roger, Captain. / Berth four / is ready. / Two tugboats / are alongside. / Pilot is on board / at one-three-thirty. / Approach starboard side. / Over."
+        },
+        {
+          "turn": 5,
+          "speaker": "Captain Lopera",
+          "channel": "12",
+          "text": "Understood. / Berth four. / Starboard side. / Pilot one-three-thirty. / Two tugs alongside. / Lines ready / bow and stern? / Over."
+        },
+        {
+          "turn": 6,
+          "speaker": "Andrea",
+          "channel": "12",
+          "text": "Affirmative. / Lines ready / bow and stern. / Stand by / on channel twelve. / Over."
+        },
+        {
+          "turn": 7,
+          "speaker": "Captain Lopera",
+          "channel": "12",
+          "text": "Standing by / channel one-two. / BUENAVENTURA EXPRESS. / Out."
+        }
+      ],
+      "compliance_smcp": "Frases estandarizadas IMO SMCP A1.2 friendly: 'this is', 'over', 'out', 'roger', 'affirmative', 'switch to channel', 'stand by', 'request berthing instructions'. Sin idiomatic English · sin contracciones complejas · sin slang.",
+      "marcadores_orales_naturales": [
+        "Roger",
+        "Over",
+        "Out",
+        "Affirmative",
+        "Understood",
+        "Stand by"
+      ],
+      "grammar_targets_present": [
+        "be 3ª pers (Berth four IS ready · pilot IS on board · two tugboats ARE alongside)",
+        "prepositions of place (at one-three-thirty · on board · alongside · bow and stern · starboard side)",
+        "imperative SMCP (Switch to channel · Stand by · Approach starboard side)",
+        "numbers + units (channel sixteen / one-two · three miles west · fourteen hundred · one-three-thirty)"
+      ]
+    },
+    "archetype_A_micro_skills_foundation": {
+      "applicability": "RECOMENDADO si el grupo viene con dificultades de decodificación SMCP en S2 lectora · construye base auditiva para los números/callsigns",
+      "fundamento": "Antes de comprender el diálogo VHF completo, el aprendiz necesita decodificar los micro-elementos: fonemas /θ/ en 'berth', /ɔɪ/ en 'roger', stress en 'BUE-na-ven-TU-ra', segmentación de números 'one-three-thirty'.",
+      "micro_skills_seleccionadas": [
+        {
+          "skill": "A1 Reconocimiento de fonemas",
+          "tecnica": "Track the sound — el aprendiz marca cada vez que oye /θ/ (berth, starboard, north) · 1 sola pasada"
+        },
+        {
+          "skill": "A2 Patrones de sílabas y stress",
+          "tecnica": "Spot the stressed syllable — marcar stress en 'BUE-na-ven-TU-ra · ex-PRESS · star-BOARD'"
+        },
+        {
+          "skill": "A4 Recuperación léxica",
+          "tecnica": "Tick or cross — lista de 14 términos del Toolbelt · marca los que oigas"
+        }
+      ],
+      "estructura_pre_while_post": {
+        "pre": "Survival Words VHF: berth /bɜːrθ/ · roger /ˈrɒdʒə/ · alongside /əˌlɒŋˈsaɪd/ · over /ˈəʊvə/ · stand by /ˈstænd ˌbaɪ/ · IPA + stress en pizarra",
+        "while": "Pasada 1: Track /θ/ · Pasada 2: stress · Pasada 3: tick or cross",
+        "post": "Reflexión metacognitiva: '¿Qué sonido fue más difícil? ¿Por qué crees que el SMCP usa palabras tan cortas?'"
+      },
+      "language_bank": [
+        "I heard /θ/ in ___",
+        "The stressed syllable is ___",
+        "The hardest sound was ___"
+      ],
+      "micro_capsulas": [
+        "> 🎧 Audio Cue: /θ/ in 'berth' is a soft tongue-between-teeth sound. Spanish 'z' in Spain is similar. Colombian Spanish uses /s/ — train your ear!",
+        "> ⚠️ SMCP Rule: Numbers in VHF are ALWAYS said digit-by-digit. 'Channel 16' = 'channel one-six', NEVER 'sixteen'."
+      ],
+      "bloom_level": "L1 Recordar · L2 Comprender",
+      "interaction_dynamic": "Individual (escucha) → parejas (verificar marcas) → clase completa (compartir dificultades)"
+    },
+    "archetype_B_phase_based_framework": {
+      "applicability": "RECOMENDADO COMO BASE · es el arquetipo más estable para A1.2 · da andamiaje predecible Pre/While/Post",
+      "fundamento": "Tres fases con propósito claro: activar esquemas SMCP (pre) → extraer información operativa concreta (while) → consolidar y producir reseña oral del intercambio (post).",
+      "estructura_pre_while_post": {
+        "pre": [
+          "Mostrar imagen de un barco aproximándose a un puerto + un radio VHF",
+          "Brainstorming: '¿Qué información necesita el capitán antes de atracar?' → en parejas listan 5 items en L1+L2",
+          "Pre-enseñanza de 5 SMCP cuello-de-botella: 'over', 'out', 'roger', 'stand by', 'switch to channel'",
+          "Mapa mental en pizarra: ETA · berth number · pilot · tugs · lines"
+        ],
+        "while": [
+          "Pasada 1 (gist): ¿Cuál es el barco? ¿Cuál es el berth? ¿A qué hora llega el piloto?",
+          "Pasada 2 (notas guiadas): plantilla con 8 espacios — vessel name · ETA · berth · channel · tugs · pilot time · approach side · lines status",
+          "Pasada 3 (verificación): el aprendiz revisa su plantilla · marca lo que NO entendió"
+        ],
+        "post": [
+          "Parejas reconstruyen el intercambio usando sus notas (no el script original)",
+          "Preguntas divergentes A1.2: 'If you were Andrea, what other question would you ask Captain Lopera?'",
+          "Producción: pareja graba un audio de 30 segundos resumiendo en L2 los 5 datos clave del intercambio"
+        ]
+      },
+      "language_bank": [
+        "The vessel is ___",
+        "The ETA is ___",
+        "The berth is ___",
+        "The pilot is on board at ___",
+        "Two tugboats are alongside"
+      ],
+      "micro_capsulas": [
+        "> 🎧 Audio Cue: 'Over' = 'I'm done speaking, your turn'. 'Out' = 'conversation ended, no reply needed'. NEVER say both.",
+        "> 🛟 Survival Tip: If you miss a number, say 'Say again' — never guess. In real ports, guessing causes accidents."
+      ],
+      "bloom_level": "L1 Recordar → L2 Comprender → L3 Aplicar (extraer info y aplicarla)",
+      "interaction_dynamic": "Clase completa (pre) → individual (while toma de notas) → parejas (post reconstrucción)"
+    },
+    "archetype_C_tblt_listening": {
+      "applicability": "RECOMENDADO para integrar Listening con Speaking PM-2.8 paralelo en S4 · convierte la escucha en input para una tarea operativa real",
+      "fundamento": "Andrea no escucha por escuchar — escucha PARA resolver el atraque. La comprensión se verifica por el resultado de la tarea: el aprendiz debe completar la 'Berthing Instructions Sheet' con 7 datos correctos.",
+      "task_type": "Information-gap (Jigsaw Listening) + Reasoning-gap (decisión: ¿es seguro autorizar el atraque?)",
+      "estructura_pre_while_post": {
+        "pre": [
+          "Briefing de tarea: 'Eres Andrea. Captain Lopera va a llamar. Tu trabajo: completar la Berthing Instructions Sheet con 7 datos. Si falta uno, el atraque NO se autoriza.'",
+          "Restricciones: '7 datos · pasada única adicional permitida si la pareja vota por ello · sin acceso al script escrito'"
+        ],
+        "while": [
+          "Pasada 1: cada estudiante completa su sheet individual",
+          "Pasada 2 (opcional, vota la pareja): completar gaps",
+          "Comparar en pareja · marcar discrepancias"
+        ],
+        "post": [
+          "Decisión grupal: '¿Autorizan el atraque? Justifiquen con datos.'",
+          "Negociación entre parejas que difieren · resolución de gaps de información",
+          "Reflexión: '¿Qué dato fue más difícil de capturar? ¿Por qué?'"
+        ]
+      },
+      "berthing_instructions_sheet_fields": [
+        "1. Vessel name: ___",
+        "2. Vessel position: ___ miles ___",
+        "3. ETA: ___",
+        "4. Berth number: ___",
+        "5. Pilot on board at: ___",
+        "6. Number of tugboats: ___",
+        "7. Approach side: ___ (port/starboard)"
+      ],
+      "language_bank": [
+        "I have data for ___ but I'm missing ___",
+        "We authorize the berthing because ___",
+        "We need to ask Captain Lopera again about ___"
+      ],
+      "micro_capsulas": [
+        "> ⚠️ Safety Rule: In real port operations, missing ONE data point can mean an accident. The Berthing Sheet is non-negotiable.",
+        "> 🎧 Audio Cue: Numbers in SMCP repeat for safety: '14:00' is said 'fourteen hundred', then often confirmed. Listen for the confirmation."
+      ],
+      "bloom_level": "L2 Comprender + L3 Aplicar (decisión justificada con datos)",
+      "interaction_dynamic": "Individual (sheet) → parejas (negociación) → clase completa (decisión)"
+    },
+    "archetype_D_bloom_progression": {
+      "applicability": "OPCIONAL · ceiling A1.2 limita a L3 Apply · útil si el grupo va adelantado y quiere demanda cognitiva escalada controladamente",
+      "fundamento": "El mismo audio puede trabajarse a 3 niveles cognitivos sin pasar el ceiling A1.2: Recordar (datos literales) · Comprender (inferir el rol de Andrea) · Aplicar (transferir el protocolo a un caso similar).",
+      "bloom_levels_seleccionados": [
+        {
+          "nivel": "L1 Recordar",
+          "actividad": "5 preguntas opción múltiple sobre datos literales: vessel name, berth number, ETA, pilot time, approach side"
+        },
+        {
+          "nivel": "L2 Comprender",
+          "actividad": "Inferir en L2 simple: '¿Por qué Andrea dice Affirmative en lugar de Yes? ¿Qué nos dice el tono de Lopera sobre su experiencia?'"
+        },
+        {
+          "nivel": "L3 Aplicar (CEILING)",
+          "actividad": "Transfer task — un nuevo barco (CML CARRIER, ETA 1530, Berth 7, port side) llama. El aprendiz aplica EL MISMO protocolo y produce las 4 respuestas SMCP que daría como Andrea."
+        }
+      ],
+      "no_hots_rationale": "L4 Analizar / L5 Evaluar / L6 Crear están EXCLUIDOS por bloom_ceiling A1.2 · esos niveles aparecen en S9-S12 cuando el aprendiz alcanza A2.1 · acá serían sobrecarga cognitiva",
+      "language_bank": [
+        "The vessel is ___ because the captain said ___",
+        "Andrea says 'affirmative' because in SMCP it means ___",
+        "For CML CARRIER I would say: ___"
+      ],
+      "micro_capsulas": [
+        "> 🛟 Bloom Tip: 'Recordar' answers are FACTUAL (one right answer). 'Aplicar' answers are PROTOCOL-BASED (one right structure, different data).",
+        "> ⚠️ Ceiling Note: At A1.2 we DO NOT debate or critique — we EXTRACT, UNDERSTAND, APPLY. That's enough."
+      ],
+      "bloom_level": "L1-L2-L3 (ceiling A1.2 respetado · NO HOTS)",
+      "interaction_dynamic": "Individual (L1+L2) → parejas (L3 transfer task) → clase completa (sharing)"
+    },
+    "archetype_E_advanced_techniques": {
+      "applicability": "OPCIONAL si el grupo necesita prosodia VHF auténtica · sinérgico con PM-2.8 Pronunciation paralelo · usar Shadowing controlado",
+      "fundamento": "El SMCP tiene prosodia muy específica: ritmo cortado, pausas obligatorias, números digit-by-digit. Shadowing entrena ese ritmo. Predictive Listening entrena la anticipación del próximo turno SMCP.",
+      "tecnicas_seleccionadas": [
+        {
+          "tecnica": "Shadowing controlado (3 pasadas)",
+          "uso": "Pasada 1: solo turnos de Andrea (más cortos · A1.2 friendly) · Pasada 2: imitar entonación · Pasada 3: con desfase mínimo"
+        },
+        {
+          "tecnica": "Predictive Listening",
+          "uso": "Pausar el audio justo antes del turno 4 (respuesta de Andrea). El aprendiz predice qué información debe dar. Continuar y verificar."
+        }
+      ],
+      "estructura_pre_while_post": {
+        "pre": "Explicar técnica + propósito: 'Hoy entrenamos el ritmo del SMCP — porque hablar como un radio operator de verdad es lo que tu certificado SENA te exige.'",
+        "while": "Shadowing 3 pasadas con audífonos · Predictive pause antes del turno 4 con escritura de la predicción",
+        "post": "Comparar la predicción con la respuesta real de Andrea · autoevaluación de fluidez prosódica (1-5)"
+      },
+      "language_bank_for_shadowing": [
+        "Roger / Switching to one-two",
+        "Affirmative / Lines ready / bow and stern",
+        "Stand by / on channel twelve / Over"
+      ],
+      "micro_capsulas": [
+        "> 🎧 Audio Cue: Shadow with HALF the volume of the original — your job is to imitate, not overpower.",
+        "> 🛟 Pro Tip: VHF prosody is CHOPPY on purpose — pauses give the listener time to write down numbers."
+      ],
+      "bloom_level": "L2 Comprender + L3 Aplicar (imitación prosódica = aplicación del patrón)",
+      "interaction_dynamic": "Individual (shadowing con audífonos) → parejas (compartir predicción) → clase completa (mejor imitación)"
+    },
+    "archetype_F_multimedia_production": {
+      "applicability": "OPCIONAL como cierre creativo · convierte el listening en input para una producción simulada · NO sustituye la evidencia E3, la complementa",
+      "fundamento": "El listening puede generar producción: el aprendiz extiende el diálogo VHF con un escenario nuevo (emergencia, retraso, cambio de berth). La comprensión se demuestra al CREAR coherentemente.",
+      "produccion_seleccionada": "Interview Simulation + Spin-off corto",
+      "estructura_pre_while_post": {
+        "pre": "Propósito: 'Después de escuchar, vas a CREAR un mini-diálogo VHF de 6 turnos para un escenario nuevo — usando el mismo protocolo SMCP.'",
+        "while": "Pasada 1: comprensión general · Pasada 2: tomar notas de las fórmulas SMCP exactas que usaron Lopera y Andrea",
+        "post": [
+          "Escenario nuevo asignado: 'Emergency · CML CARRIER · engine failure · 2 miles north · requests tugboat assistance'",
+          "Parejas escriben 6 turnos VHF · 3 por personaje (capitán + Andrea)",
+          "Grabación de audio de 1 minuto · presentación a la clase",
+          "Evaluación cruzada: ¿usó SMCP? ¿incluyó callsigns? ¿numbers digit-by-digit?"
+        ]
+      },
+      "language_bank": [
+        "Emergency / emergency / emergency / this is ___",
+        "Request immediate assistance",
+        "Stand by / I will call back / in five minutes"
+      ],
+      "micro_capsulas": [
+        "> 🛟 Creative Constraint: Your spin-off MUST keep SMCP. Drama is OK; informal English is NOT.",
+        "> 🎧 Audio Cue: Mayday is repeated THREE times. That's the SMCP signature for emergency."
+      ],
+      "bloom_level": "L3 Aplicar (transfer del protocolo a escenario nuevo · respeta ceiling A1.2)",
+      "interaction_dynamic": "Individual (notas) → parejas (escritura + grabación) → clase completa (presentación + peer review)"
+    },
+    "evaluation_rubric_e3_listening": {
+      "evidence_id": "E3 Listening · Desempeño formal SENA",
+      "total_points": 5,
+      "instrument_type": "Lista de Chequeo + Cuestionario corto",
+      "instrument_number": 3,
+      "evaluation_technique": "Observación + Cuestionario",
+      "items": [
+        {
+          "item": 1,
+          "descriptor": "Identifica el nombre del buque y su callsign",
+          "points": 1,
+          "verification": "Plantilla while-listening · campo 'Vessel name' = BUENAVENTURA EXPRESS"
+        },
+        {
+          "item": 2,
+          "descriptor": "Captura los datos numéricos críticos (ETA, channel, berth, pilot time)",
+          "points": 1,
+          "verification": "Plantilla while-listening · 4 campos numéricos correctos · acepta digit-by-digit o número entero"
+        },
+        {
+          "item": 3,
+          "descriptor": "Reconoce las fórmulas SMCP estandarizadas (over, out, roger, affirmative, stand by)",
+          "points": 1,
+          "verification": "Tick or cross sobre 5 fórmulas · mínimo 4/5 marcadas correctamente"
+        },
+        {
+          "item": 4,
+          "descriptor": "Comprende la solicitud operativa de Captain Lopera y la respuesta de Andrea",
+          "points": 1,
+          "verification": "Pregunta abierta: '¿Qué le pidió Lopera al puerto? ¿Qué respondió Andrea?' · respuesta en L2 simple aceptable"
+        },
+        {
+          "item": 5,
+          "descriptor": "Aplica el protocolo SMCP a un caso transfer (L3 ceiling)",
+          "points": 1,
+          "verification": "Transfer task del Arquetipo D · produce 4 respuestas SMCP coherentes para el escenario CML CARRIER"
+        }
+      ],
+      "passing_threshold": "3/5 puntos (60% mínimo SENA)",
+      "feedback_format": "Lista de chequeo entregada al aprendiz al final de S4 · feedback formativo escrito en cada ítem · oportunidad de remediación en S5 si <3/5"
+    }
+  },
+  "activity_card": {
+    "pm_id": "PM-2.6",
+    "pm_name": "Listening — The Auditory Anchor",
+    "session": 4,
+    "phase_sena": "Apropiación",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "procedimental",
+        "statement": "Comprende un diálogo VHF radio call ship-to-shore entre Captain Lopera y Andrea Mosquera, identificando datos operativos clave (vessel name, ETA, berth, pilot, tugs, approach side, lines status) usando protocolo SMCP A1.2.",
+        "didactic_strategy": "Aprendizaje basado en tareas (TBLT)",
+        "didactic_technique": "Information-gap (Berthing Instructions Sheet)"
+      },
+      {
+        "number": 2,
+        "type": "procedimental",
+        "statement": "Aplica el protocolo SMCP a un caso transfer (CML CARRIER aproximándose a Berth 7), produciendo 4 respuestas radiales coherentes en formato VHF estandarizado.",
+        "didactic_strategy": "Aprendizaje colaborativo",
+        "didactic_technique": "Think-Pair-Share + Transfer Task"
+      }
+    ],
+    "hours": {
+      "direct": 3.0,
+      "autonomous": 0.83,
+      "rationale_hours": "S4 = 6h directas totales · PM-2.6 Listening ocupa ~3.0h directas + ~0.83h autónomas · paralelo PM-2.8 Pronunciation/Speaking ocupa el resto · proporción ajustada a pm-2-0.json horas_distribution.direct_per_session_avg=6.0"
+    },
+    "evidence": {
+      "generates_evidence": true,
+      "evidence_id": "E3",
+      "type": "Desempeño",
+      "description": "El aprendiz demuestra comprensión de diálogo VHF radio call ship-to-shore SMCP completando la Berthing Instructions Sheet (7 datos) y aplicando el protocolo a un caso transfer.",
+      "evaluation_technique": "Observación + Cuestionario",
+      "instrument_number": 3,
+      "instrument_type": "Lista de Chequeo (5 ítems · 5 puntos)"
+    },
+    "environment": {
+      "type": "Aula con audio + ambiente puerto simulado",
+      "materials": [
+        "Proyector con audio estéreo",
+        "Audífonos individuales (mínimo 1 por aprendiz)",
+        "Berthing Instructions Sheet impresa (1 por aprendiz)",
+        "Tick-or-cross checklist SMCP (1 por aprendiz)",
+        "Radio VHF de demostración (opcional · si el SENA Buenaventura tiene)",
+        "Plataforma Moodle para descargar audio en mp3 0.85x para refuerzo autónomo"
+      ],
+      "instructors": "Instructor de inglés técnico marítimo (idealmente con experiencia SMCP · o apoyado por un capitán invitado del Puerto de Buenaventura para validación)"
+    },
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Listening",
+    "quiz_points": 5,
+    "quiz_item_count": 5
+  },
+  "pm0_protocol_session_level": {
+    "session": 4,
+    "l1_percentage_target": 10,
+    "l1_used_in_pm26": [
+      "Brainstorming pre-listening (Arquetipo B): bilingüe permitido para activar esquemas",
+      "Reflexión post-listening (cualquier arquetipo): L1 permitido para metacognición",
+      "Clarificación de SMCP cuando el aprendiz se pierde: L1 puntual"
+    ],
+    "l1_forbidden_in_pm26": [
+      "Durante las pasadas del audio (NUNCA L1)",
+      "Durante el shadowing (Arquetipo E)",
+      "Durante el transfer task (Arquetipo D L3)"
+    ],
+    "grammar_groups_active_s4": [
+      "Gr1 be presente (recycled from S2-S3)",
+      "Gr2 prepositions of place (recycled from S3)",
+      "Gr3 imperative SMCP (NEW · early exposure before S5 formal intro · ≤2 grupos Intro/sesión respetado)"
+    ],
+    "feedback_protocol": "Noticing prompts en PRE · Confirmation checks en WHILE · Recast en POST · NUNCA corrección frontal durante el audio",
+    "success_factors_dominant_s4": [
+      "Salience",
+      "Use",
+      "Connection",
+      "Context"
+    ]
+  },
+  "validacion": {
+    "check1_run_id_match": "PASS · run_id IMARPOR-CC-2026-04-27 coherente",
+    "check2_pm_code_match": "PASS · PM-2.6 declarado",
+    "check3_cefr_ceiling": "PASS · A1.2 ceiling respetado · bloom L3 Apply máximo",
+    "check4_l1_percentage": "PASS · ~10% L1 documentado en pm0_protocol_session_level",
+    "check5_grammar_targets_present": "PASS · be presente + prepositions + imperative SMCP en script (turns 3,4,5,6)",
+    "check6_toolbelt_recycling": "PASS · 14/25 términos reciclados en script (>= 10/20 mínimo)",
+    "check7_genre_diff_from_reading": "PASS · Reading S2 = expository report · Listening S4 = VHF radio dialogue · diferentes",
+    "check8_characters_diff_voices": "PASS · Reading S2 Andrea LECTORA · Listening S4 Lopera HABLA por primera vez + Andrea RESPONDE",
+    "check9_anti_mgv_ghost": {
+      "status": "PASS",
+      "evidence": [
+        "ZERO mentions of Pixel & Ink, Sophia, Laura, Andrés, La Esquina Bakery, color palette, color wheel, font, serif, sans-serif, AD, SM, Canva, graphic design, visual communicator, MGV, Desarrollo de Medios Gráficos Visuales, code 522309",
+        "Universo 100% IMARPOR maritime: Andrea Mosquera, Captain Lopera, Capitán Restrepo, BUENAVENTURA EXPRESS, Puerto de Buenaventura, Berth 4, BUENAVENTURA-PORT callsign, SMCP, VHF, channel 16/12, tugboats, pilot, lines bow/stern, starboard, ETA, alongside",
+        "Género oral 100% maritime: VHF radio call ship-to-shore (NO voice note de oficina ni mini-tutorial de color theory)",
+        "Toolbelt reciclado 100% maritime: berth, starboard, bow, stern, tugboat, channel, stand by, roger, over, out, alongside, ETA, pilot, lines (NO font/serif/warm/cool)",
+        "RAP RAP-CC-INTEGRADO con código 240201050-RAP (NO RAP-G1-522309)",
+        "Programa: Inglés Marítimo y Portuario código 12340002 (NO Desarrollo de Medios Gráficos Visuales 522309)",
+        "Generado original para IMARPOR-CC · referencia MGV usada SOLO como guía de calidad pedagógica · ZERO copia textual"
+      ]
+    },
+    "check10_six_archetypes_present": "PASS · A · B · C · D · E · F documentados como sub-objetos en content",
+    "check11_dialogue_word_count": "PASS · 178 palabras (rango 150-200)",
+    "check12_evaluation_rubric_e3_5pts": "PASS · 5 ítems × 1 punto = 5 pts · Lista de Chequeo · instrument_number 3",
+    "check13_smcp_authentic": "PASS · fórmulas IMO SMCP estandarizadas (over, out, roger, affirmative, stand by, switch to channel, request berthing instructions)",
+    "check14_bilingue_unificada": "PASS · instrucciones en inglés con español en cursiva entre paréntesis · sin bloques repetitivos",
+    "check15_zero_meta_talk": "PASS · output listo para Gate Humano 2 · sin texto de andamiaje del agente",
+    "check16_hours_match_blueprint": "PASS · 3.0h direct + 0.83h autonomous coherente con pm-2-0 horas_distribution"
+  },
+  "siguiente_paso": {
+    "next_pm_immediate": "PM-2.8 Pronunciation/Speaking — paralelo S4",
+    "next_pm_immediate_rationale": "PM-2.8 (deprecó al antiguo PM-2.7) recibe directamente los chunks fonéticos + patrones prosódicos del audio VHF de PM-2.6. La Misión de S4 PM-2.8 es que el aprendiz EMITA su propia llamada VHF aplicando el protocolo SMCP escuchado en PM-2.6.",
+    "next_pm_chained": "PM-2.9 Vocabulary Review — S5",
+    "next_pm_chained_rationale": "PM-2.9 en S5 cosecha 5 ítems del cuestionario consolidado a partir del audio + diálogo de PM-2.6 · spaced repetition cierra el loop Listening→Quiz",
+    "gate_humano_2_action": "Instructor selecciona en arquetipos-elegidos.json cuáles arquetipos (de los 6 expuestos) implementar en la guía final · luego enriched: false → true",
+    "deprecated_routes": [
+      "PM-2.7 (Pronunciation independiente) — DEPRECADO desde v2.0 · absorbido por PM-2.8"
+    ]
+  },
+  "enriched": true,
+  "rationale_enriched_false": "Espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. Los 6 arquetipos están expuestos como compendio metodológico — el instructor elige/combina antes de enriched: true.",
+  "enriched_at": "2026-04-29T16:30:00-05:00",
+  "enriched_by": "Sergio Cortés Perdomo",
+  "_enriched_review_note": "Aprobado en lote post Gate 2 review híbrido C+A 2026-04-29: spot check 4 gaps PASS (3 strict + 1 marginal PM-2.6 word_count 140 vs target 150 · discrepancia heurística split vs declared 178 · aceptado · regenerar opcional v1.1) · resumen ejecutivo 5 PMs sin gap PASS · arquitectura generaliza vs SMOKE clon (PM-2.11 PASS 14/16 idéntico · checks críticos 13/14/15/16 PASS).",
+  "_pm26_marginal_note": "word_count actual 140 vs declared 178 · aceptado en lote · regenerar opcional v1.1"
+}

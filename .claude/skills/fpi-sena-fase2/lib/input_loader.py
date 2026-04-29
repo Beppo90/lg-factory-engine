@@ -60,6 +60,12 @@ def load_phase2_inputs(run_id, runs_dir, guide_id=None):
                 pm12 = load_run_input(run_id, runs_dir, "pm-1-2.json")
             except FileNotFoundError:
                 pm12 = None
+    else:
+        # Sin guide_id · single-guía absorpción · pm-1-2 vive en raíz directamente
+        try:
+            pm12 = load_run_input(run_id, runs_dir, "pm-1-2.json")
+        except FileNotFoundError:
+            pm12 = None
     
     # Validación: pm-1-2 debe tener enriched: true para arrancar Fase 2
     if pm12 and pm12.get("enriched") is not True:

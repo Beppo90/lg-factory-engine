@@ -1,0 +1,226 @@
+{
+  "pm_id": "PM-2.11",
+  "subagente": "subagente_pm_2_11_row_assembler",
+  "version_master_prompt": "2.6.3",
+  "version_subagente": "1.0",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide_id": null,
+  "gfpi_f134_row_complete": {
+    "col_1_competencia": null,
+    "col_2_resultado_aprendizaje": null,
+    "col_3_saberes_conceptos_principios": null,
+    "col_4_saberes_proceso": null,
+    "col_5_criterios_evaluacion": null,
+    "col_6_actividades_aprendizaje": [],
+    "col_7_horas": {
+      "direct_total": 0,
+      "autonomous_total": 0,
+      "per_session": [
+        {
+          "session": 1,
+          "direct": 6.0,
+          "autonomous": 2.333333
+        },
+        {
+          "session": 2,
+          "direct": 6.0,
+          "autonomous": 2.333333
+        },
+        {
+          "session": 3,
+          "direct": 6.0,
+          "autonomous": 2.333333
+        },
+        {
+          "session": 4,
+          "direct": 6.0,
+          "autonomous": 2.333333
+        },
+        {
+          "session": 5,
+          "direct": 6.0,
+          "autonomous": 2.333333
+        },
+        {
+          "session": 6,
+          "direct": 6.0,
+          "autonomous": 2.333333
+        },
+        {
+          "session": 7,
+          "direct": 6.0,
+          "autonomous": 2.333333
+        },
+        {
+          "session": 8,
+          "direct": 6.0,
+          "autonomous": 2.333333
+        },
+        {
+          "session": 9,
+          "direct": 6.0,
+          "autonomous": 2.333333
+        },
+        {
+          "session": 10,
+          "direct": 6.0,
+          "autonomous": 2.333333
+        },
+        {
+          "session": 11,
+          "direct": 6.0,
+          "autonomous": 2.333333
+        },
+        {
+          "session": 12,
+          "direct": 6.0,
+          "autonomous": 2.333333
+        }
+      ]
+    },
+    "col_8_evidencias": [],
+    "col_9_instrumentos_evaluacion": "PM-4.1 (6 instrumentos formales) + PM-4.2 (Cuestionario Consolidado S6 25pts)",
+    "col_10_ambientes": {
+      "types": [],
+      "materials": [],
+      "instructors": []
+    },
+    "col_11_criterios_detallados": []
+  },
+  "validation_16_checks": {
+    "total_checks": 16,
+    "pass_count": 14,
+    "fail_count": 0,
+    "veredicto": "PASS 14/16",
+    "ready_for_phase_3": true,
+    "checks": [
+      {
+        "check_id": "Check 1",
+        "name": "Horas Directas (S1-S5 PMs creativos)",
+        "status": "SKIP",
+        "actual": 0,
+        "expected": "N/A (single-guía absorpción · adaptación humana requerida)",
+        "detail": "Suma horas directas Activity Cards: 0h. Mapeo S1-S5 → sesiones físicas requiere decisión humana (human_adaptation_required=True)."
+      },
+      {
+        "check_id": "Check 2",
+        "name": "Horas Autónomas (S1-S5 PMs creativos)",
+        "status": "SKIP",
+        "actual": 0,
+        "expected": "N/A (single-guía absorpción · adaptación humana requerida)",
+        "detail": "Suma horas autónomas Activity Cards: 0h. Mapeo requiere decisión humana."
+      },
+      {
+        "check_id": "Check 3",
+        "name": "Total Evidencias E1-E5 (PMs creativos)",
+        "status": "PASS",
+        "actual": 5,
+        "expected": 5,
+        "detail": "Evidencias formales E1-E5 en Activity Cards: 5 (esperadas: 5 · E6 viene de PM-4.2)"
+      },
+      {
+        "check_id": "Check 4",
+        "name": "Tipos canónicos SENA E1-E5 (Conocimiento/Producto/Desempeño)",
+        "status": "PASS",
+        "actual": [
+          "Conocimiento",
+          "Producto",
+          "Desempeño",
+          "Desempeño",
+          "Desempeño"
+        ],
+        "expected": "5 evidencias con tipos en {Conocimiento, Producto, Desempeño}",
+        "detail": "Evidencias E1-E5: 5/5 · invalid types: none"
+      },
+      {
+        "check_id": "Check 5",
+        "name": "Cuestionario S6 = 25 Puntos",
+        "status": "PASS",
+        "actual": 25,
+        "expected": 25,
+        "detail": "Total puntos: 25 (esperado: 25)"
+      },
+      {
+        "check_id": "Check 6",
+        "name": "Cuestionario S6 = 25 Ítems",
+        "status": "PASS",
+        "actual": 25,
+        "expected": 25,
+        "detail": "Total ítems: 25 (esperado: 25)"
+      },
+      {
+        "check_id": "Check 7",
+        "name": "Tipificación de Actividades",
+        "status": "PASS",
+        "invalid_count": 0,
+        "invalid": [],
+        "detail": "0 actividades con type fuera de {'procedimental', 'actitudinal', 'cognitiva'}"
+      },
+      {
+        "check_id": "Check 8",
+        "name": "V+O+C en Actividades",
+        "status": "PASS",
+        "invalid_count": 0,
+        "invalid": [],
+        "detail": "0 statements no siguen patrón V+O+C"
+      },
+      {
+        "check_id": "Check 9",
+        "name": "Longitud de Actividades",
+        "status": "PASS",
+        "invalid_count": 0,
+        "detail": "0 statements fuera de rango 10-300 chars"
+      },
+      {
+        "check_id": "Check 10",
+        "name": "Sin Evidencias en Transferencia",
+        "status": "PASS",
+        "invalid_count": 0,
+        "detail": "S7-S8 deben ser SIN evidencias formales (es Transferencia · ABP)"
+      },
+      {
+        "check_id": "Check 11",
+        "name": "Estrategias Válidas",
+        "status": "PASS",
+        "invalid_count": 0,
+        "invalid": [],
+        "detail": "0 actividades con estrategia fuera del catálogo canónico"
+      },
+      {
+        "check_id": "Check 12",
+        "name": "Ambientes Válidos",
+        "status": "PASS",
+        "invalid_count": 0,
+        "invalid": [],
+        "detail": "0 ambientes fuera del catálogo canónico"
+      },
+      {
+        "check_id": "Check 13",
+        "name": "Uniqueness of Pedagogical Content Universe (= CHECK 9 del DM)",
+        "status": "PASS",
+        "violations_critical": 0,
+        "warnings_cross_run": 0,
+        "detail": "PASS = ningún pm-2-X.json es byte-idéntico entre guías del mismo run. FAIL = bug copia-fantasma activo (estilo DIESEL G3-G5 2026-04-18) · regenerar subagente afectado."
+      },
+      {
+        "check_id": "Check 14",
+        "name": "Propagación de Estrategias Didácticas a pm-3-2-sX.json",
+        "status": "PASS",
+        "detail": "Estrategias documentadas en Activity Cards · listas para propagación a Playbook"
+      },
+      {
+        "check_id": "Check 15",
+        "name": "Coherencia de activity_footer con Upstream",
+        "status": "PASS",
+        "detail": "Activity_footer presente en Activity Cards (validación detallada en Fase 3)"
+      },
+      {
+        "check_id": "Check 16",
+        "name": "Activity Card Schema v2.6.3 en pm-3-6.json",
+        "status": "PASS",
+        "detail": "Schema v2.6.3 verificado en Activity Cards generadas"
+      }
+    ]
+  },
+  "ready_for_phase_3": true
+}

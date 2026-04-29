@@ -1,0 +1,750 @@
+{
+  "pm_id": "PM-2.10",
+  "pm_code": "PM-2.10",
+  "pm_name": "Grammar — Structure Use (Inductive to Automatic)",
+  "pm_version": "2.0",
+  "schema_reference": "Activity Card Schema v2.0 (Fase 2 GFPI-F-134) · ver master-prompts/Activity Card — Schema.md",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "competencia_nombre": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+  "cefr_level": "A1.2",
+  "session": 3,
+  "fase_sena": "Apropiación",
+  "activity_type": "cognitiva",
+  "generates_evidence": false,
+  "evidence_type": null,
+  "contributes_to_cuestionario": true,
+  "cuestionario_skill": "Grammar",
+  "cuestionario_points": 5,
+  "cuestionario_item_count": 5,
+  "generated_at": "2026-04-29T00:00:00Z",
+  "generated_date": "2026-04-29",
+  "instructor": "Sergio Cortés Perdomo",
+  "pipeline_version": "2.11 (form-schema v2.7.1 · master prompt PM-2.10 v2.0)",
+  "status": "draft",
+  "enriched": true,
+  "_enriched_false_rationale": "Espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. Activity Card NO se considera enriquecida hasta que el instructor confirme arquetipos finales de aula y firme la selección.",
+  "estilo_aplicado": "mgv_compendio_metodologico",
+  "archetypes_policy": "TODOS LOS 5 ARQUETIPOS INTEGRADOS (A+B+C+D+E)",
+  "previous_pms": [
+    "pm-0-context.json (CEFR A1.2 + grammar_roadmap)",
+    "pm-1-1.json (single-guía absorcion_Na1 · 100h)",
+    "pm-1-2.json (universe IMARPOR + grammar groups por bloque interno)",
+    "pm-2-0.json (Session Blueprint S3 grammar anchor)",
+    "pm-2-3.json (Master Anchor Text — port operations narrative)",
+    "pm-2-9.json (Communicative Functions — info exchange + describing operations)"
+  ],
+  "guide_id": "IMARPOR-CC-G1",
+  "guide": "G1 — The Maritime Operations Pro",
+  "program_code": "12340002",
+  "program_name": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "content_universe": "IMARPOR — Puerto de Buenaventura · Andrea Mosquera (recién egresada SENA) en su primera semana en muelle internacional · Captain Lopera (capitán BUENAVENTURA EXPRESS · ELF speaker) · CML CARRIER (vessel cliente). Grammar emerges from real port operations: locating containers on the dock (prepositions of place), narrating routine vessel operations (simple present 3rd person -s), confirming vessel identity and location (be), declaring presence of port resources (there is/there are).",
+  "pm0_anchor": {
+    "cefr_ceiling": "A1.2",
+    "bloom_ceiling": "L3 Apply (recognition + controlled production · NO Analyze · NO Evaluate · NO Create-libre)",
+    "session_position": "S3 — primer bloque interno (RAP-01 vocablos básicos · transición A1.2 estable)",
+    "grammar_session_3_intro": [
+      "Prepositions of place (in / on / at / under / behind / in front of / next to / between)",
+      "Simple present 3rd person -s (operations: arrives / leaves / loads / unloads / departs / handles / berths / sails)"
+    ],
+    "grammar_session_3_consolidate": [
+      "be (am / is / are) — desde S2",
+      "there is / there are — desde S2"
+    ],
+    "grammar_load_check": "2 grupos INTRO + 2 grupos CONSOLIDA = cumple §9.2 pm-0-context (≤2 INTRO por sesión)",
+    "l1_percentage_s3_max": 15,
+    "l1_percentage_s3_target": 12,
+    "feedback_mode_dominant": "Guided discovery (PRE) + Explicit confirmation (DURING) + Controlled error analysis (POST)",
+    "hours_session_3": {
+      "direct_grammar_pm210": 2.0,
+      "autonomous_grammar_pm210": 0.66,
+      "rest_of_S3_routes_to": "PM-2.4 Writing (consume grammar_targets_for_pm24)"
+    },
+    "success_factors_applied": [
+      "Salience (target structures highlighted via box + bold + IMARPOR-color underline in worksheet)",
+      "Use (immediate productive use in mini-tasks per archetype · port/vessel context)",
+      "Connection (each structure tied to a Toolbelt maritime noun: vessel · bow · stern · port · dock · berth · container · captain · pilot · tug)",
+      "Context (workplace scenarios — Andrea reports to Lopera from the dock)",
+      "Emotion (low-stakes pair work · Captain-mode role play · shared discovery)",
+      "Spaced repetition (be + there is/are recycled from S2; prepositions + 3rd-person-s re-practiced in S4 and consolidated in S5)",
+      "Synergy (Grammar feeds DIRECTLY into PM-2.4 Writing of S3: dock report describing where containers are and what the vessel does)"
+    ]
+  },
+  "universe_anchor": {
+    "grammar_lives_in_context": "Each grammar group is introduced through IMARPOR port utterances anchored in the Master Anchor Text (PM-2.3) — Andrea on the dock, Lopera on the bridge, the CML CARRIER berthing — NOT through isolated drill sentences. Examples ALWAYS reference vessel · bow · stern · port · dock · berth · container · captain.",
+    "utterances_by_group": {
+      "prepositions_of_place": [
+        "The container is ON the dock. (Andrea points at Berth 4)",
+        "The pilot is ON the bridge. (Lopera radios shore)",
+        "The lifejacket is UNDER the seat. (Safety briefing on bridge)",
+        "The crane is BEHIND the warehouse. (Andrea reports position)",
+        "The tug is IN FRONT OF the bow. (Maneuvering report)",
+        "The CML CARRIER is BETWEEN Berth 3 and Berth 4. (Port control log)",
+        "The forklift is NEXT TO the container. (Loading bay)",
+        "The captain is AT the gangway. (Boarding moment)"
+      ],
+      "simple_present_3rd_person_s": [
+        "The CML CARRIER ARRIVES at 06:00.",
+        "The vessel LEAVES Berth 4 at 14:00.",
+        "Andrea LOADS the manifest into the system.",
+        "The crane UNLOADS twenty containers per hour.",
+        "The BUENAVENTURA EXPRESS DEPARTS for Manzanillo.",
+        "Captain Lopera HANDLES the maneuver.",
+        "The tug BERTHS the vessel safely.",
+        "The pilot SAILS the ship into port."
+      ],
+      "be_consolidate": [
+        "I AM Andrea. (Self-introduction at gate)",
+        "The captain IS Lopera. (Crew list confirmation)",
+        "The containers ARE heavy. (Pre-load check)",
+        "The bow IS clear. (Safety check)",
+        "The stern lines ARE secured. (Berthing report)"
+      ],
+      "there_is_there_are_consolidate": [
+        "THERE IS a tug at the bow.",
+        "THERE IS a forklift on the dock.",
+        "THERE ARE three containers at Berth 4.",
+        "THERE ARE two pilots on the bridge.",
+        "THERE IS a captain on every vessel."
+      ]
+    }
+  },
+  "identity": {
+    "pm_code": "PM-2.10",
+    "name": "Structure Use & Grammar — Inductive to Automatic",
+    "subfase_guia_sena": "3.3 Actividades de apropiación del conocimiento",
+    "ubicacion_guia": "GFPI-F-135 Sección 3.3-3.4 Apropiación/Transferencia",
+    "conjunto": "C — Sistemas del lenguaje (Language Functions → Structure Use)",
+    "tipo_evidencia_sena": "N/A (actividad de práctica estructural · cognitiva)",
+    "instrumento": "Learner's Worksheet — STRUCTURE USE",
+    "estructura_didactica": "MENÚ DE ARQUETIPOS — TODOS LOS 5 INTEGRADOS (mgv_compendio_metodologico)",
+    "rol_en_sistema": "Productor de Grammar Targets que PM-2.4 Writing consume en S3 + alimenta Quiz S6 Grammar (5pts)"
+  },
+  "integration_all_archetypes_policy": {
+    "applicable_to_this_pm": true,
+    "archetypes_integrated": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "rationale_estilo_compendio": "Estilo mgv_compendio_metodologico exige documentar TODOS los arquetipos como menú simultáneo · cada uno con frases fijas + Language Bank + Micro-Cápsulas — instructor selecciona en aula sin re-generación.",
+    "bloom_ceiling": "L3 Apply MAX",
+    "bloom_distribution_per_archetype": {
+      "A_DISCOVERY_CR": "L2 Comprender + L3 Aplicar (recognition de patrón · NO Analyze libre)",
+      "B_CONTROLLED_PRACTICE": "L1 Recordar + L3 Aplicar (drill + gap-fill)",
+      "C_COMMUNICATIVE_TASKS": "L3 Aplicar (info-gap simple · NO HOTS)",
+      "D_CREATIVE_PRODUCTION": "L3 Aplicar (sentence combining controlado · NO Crear libre)",
+      "E_EDITING_ERROR_ANALYSIS": "L3 Aplicar (find-the-mistake con clave dada · NO Evaluar libre)"
+    },
+    "archetype_selection_guidance_for_instructor": "Para S3 IMARPOR-CC se recomienda combo A+B (Discovery 30min → Controlled 45min) para introducir prepositions y -s · luego cerrar con E (10min editing) si grupo es ágil. C y D quedan como expansiones opcionales para autonomous.",
+    "session_load": "TODOS los 5 archetypes documentados pero NO todos ejecutados en aula · 2.0h directas + 0.66h autónomas · resto S3 a PM-2.4 Writing"
+  },
+  "content": {
+    "syntax_blueprint": {
+      "block_1_prepositions_of_place": {
+        "formula": "[Subject] + [be] + [PREPOSITION] + [the] + [maritime noun]",
+        "preposition_set": [
+          "in",
+          "on",
+          "at",
+          "under",
+          "behind",
+          "in front of",
+          "next to",
+          "between"
+        ],
+        "anchor_examples_imarpor": [
+          "The container IS ON the dock.",
+          "The captain IS AT the gangway.",
+          "The tug IS IN FRONT OF the bow.",
+          "The CML CARRIER IS BETWEEN Berth 3 and Berth 4."
+        ],
+        "visual_pattern": "[NOUN] [BE] [PREP] [the] [PORT-NOUN] · diagrama mental: dibujo del muelle con flechas a las 8 preposiciones"
+      },
+      "block_2_simple_present_3rd_person_s": {
+        "formula": "[Singular subject 3rd person] + [verb + S] + [object/complement]",
+        "verb_set_operations": [
+          "arrives",
+          "leaves",
+          "loads",
+          "unloads",
+          "departs",
+          "handles",
+          "berths",
+          "sails"
+        ],
+        "anchor_examples_imarpor": [
+          "The CML CARRIER ARRIVES at 06:00.",
+          "Andrea LOADS the manifest.",
+          "The crane UNLOADS containers.",
+          "Captain Lopera HANDLES the maneuver."
+        ],
+        "visual_pattern": "She/He/It/The vessel/The captain → +S al verbo · contraste con I/You/We/They (no -s)",
+        "spelling_rule_minima": "verb + s (regular) · arrive→arrives · load→loads · NO entrar a -ies/-es irregulares (fuera de A1.2)"
+      },
+      "block_3_be_consolidate": {
+        "formula": "[Subject] + [am/is/are] + [complement]",
+        "anchor_examples_imarpor": [
+          "I AM Andrea.",
+          "The captain IS Lopera.",
+          "The containers ARE heavy."
+        ]
+      },
+      "block_4_there_is_there_are_consolidate": {
+        "formula": "THERE IS + [singular noun] · THERE ARE + [plural noun]",
+        "anchor_examples_imarpor": [
+          "THERE IS a tug at the bow.",
+          "THERE ARE three containers at Berth 4."
+        ]
+      }
+    },
+    "archetype_A_DISCOVERY_CR": {
+      "label": "ARQUETIPO A — DISCOVERY & CONSCIOUSNESS-RAISING",
+      "fundamento": "El aprendiz descubre el patrón de prepositions y -s observando un corpus auténtico de utterances IMARPOR del Master Anchor Text. La regla emerge de los datos · NO se impone.",
+      "tecnicas_seleccionables": [
+        "Consciousness-Raising Tasks",
+        "Data-Based Discovery"
+      ],
+      "tiempo_aula_min": 30,
+      "bloom": "L2-L3 (recognition de patrón · controlled application)",
+      "estructura_interna": {
+        "DISCOVERY": {
+          "duracion_min": 12,
+          "instruccion_bilingue": "Read the 8 sentences. Underline the preposition. (*Lee las 8 oraciones. Subraya la preposición.*)",
+          "corpus_8_oraciones_imarpor": [
+            "The container is ON the dock.",
+            "The captain is AT the gangway.",
+            "The lifejacket is UNDER the seat.",
+            "The crane is BEHIND the warehouse.",
+            "The tug is IN FRONT OF the bow.",
+            "The CML CARRIER is BETWEEN Berth 3 and Berth 4.",
+            "The forklift is NEXT TO the container.",
+            "The pilot is ON the bridge."
+          ],
+          "guiding_questions": [
+            "Where is each noun? On top? Below? Beside?",
+            "What word comes BEFORE 'the dock', 'the gangway', 'the bow'?"
+          ]
+        },
+        "VERIFICATION": {
+          "duracion_min": 8,
+          "instruccion_bilingue": "Match the preposition to the picture of Berth 4. (*Empareja la preposición con la imagen del Muelle 4.*)",
+          "scaffold": "Mapa visual del Berth 4 con CML CARRIER + tug + forklift + crane + warehouse + container · 8 etiquetas con espacios",
+          "rule_in_learners_words": "Learners write in their own words: '_______ tells WHERE something is at the port.'"
+        },
+        "APPLICATION": {
+          "duracion_min": 10,
+          "instruccion_bilingue": "Categorize: which sentence is correct? (*Categoriza: ¿cuál oración es correcta?*)",
+          "items_correct_vs_incorrect": [
+            "✅ The captain is at the gangway. / ❌ The captain is on the gangway between.",
+            "✅ The tug is in front of the bow. / ❌ The tug is in front the bow.",
+            "✅ The forklift is next to the container. / ❌ The forklift next to is the container."
+          ],
+          "transferencia_a_pm29": "Función: 'Locate port resources' (information exchange por radio VHF — base SMCP)"
+        }
+      },
+      "language_bank_a": [
+        "I see ___ on the dock.",
+        "Where is ___? — It is at ___.",
+        "The ___ is between ___ and ___."
+      ],
+      "micro_capsula": "> ⚠️ **Grammar Rule:** A1.2 prepositions describe POSITION. Use IN for inside (in the container) · ON for surface (on the dock) · AT for a specific point (at the gangway)."
+    },
+    "archetype_B_CONTROLLED_PRACTICE": {
+      "label": "ARQUETIPO B — CONTROLLED PRACTICE",
+      "fundamento": "Después de descubrir el patrón en A · el aprendiz lo automatiza con drills cortos y gap-fills sobre el dominio IMARPOR. Foco: precisión antes de fluidez.",
+      "tecnicas_seleccionables": [
+        "Substitution Drills",
+        "Gap-Fills",
+        "Sentence Building"
+      ],
+      "tiempo_aula_min": 45,
+      "bloom": "L1-L3 (recordar + aplicar)",
+      "estructura_interna": {
+        "PRESENTATION": {
+          "duracion_min": 5,
+          "regla_visual_prep": "[noun] + IS + [PREP] + the [port-noun]",
+          "regla_visual_3ps": "She/He/The vessel/The captain → verb + S",
+          "ejemplos_anclados": [
+            "The CML CARRIER arrives at 06:00.",
+            "Andrea loads the manifest."
+          ]
+        },
+        "PRACTICE_drill_substitution": {
+          "duracion_min": 10,
+          "modelo_imarpor": "The captain IS at the gangway. → The pilot IS at the gangway. → The forklift IS at the gangway.",
+          "ronda_pares": "8 cambios sucesivos manteniendo IS + AT estructura"
+        },
+        "PRACTICE_gap_fill_prepositions": {
+          "duracion_min": 12,
+          "instruccion_bilingue": "Fill the blank with the correct preposition. (*Completa con la preposición correcta.*)",
+          "items": [
+            "The container is ___ the dock. (on)",
+            "The captain is ___ the gangway. (at)",
+            "The lifejacket is ___ the seat. (under)",
+            "The CML CARRIER is ___ Berth 3 and Berth 4. (between)",
+            "The forklift is ___ to the container. (next)",
+            "The tug is ___ ___ ___ the bow. (in front of)",
+            "The pilot is ___ the bridge. (on)",
+            "The crane is ___ the warehouse. (behind)"
+          ]
+        },
+        "PRACTICE_gap_fill_3rd_person_s": {
+          "duracion_min": 10,
+          "instruccion_bilingue": "Add -s if needed. (*Añade -s si es necesario.*)",
+          "items": [
+            "The vessel arrive___ at 06:00. (arrives)",
+            "Andrea load___ the manifest. (loads)",
+            "The crane unload___ containers. (unloads)",
+            "Captain Lopera handle___ the maneuver. (handles)",
+            "The tug berth___ the ship. (berths)",
+            "The CML CARRIER depart___ at 14:00. (departs)",
+            "The pilot sail___ the vessel. (sails)",
+            "The ship leave___ port. (leaves)"
+          ]
+        },
+        "PRODUCTION_minima": {
+          "duracion_min": 8,
+          "instruccion_bilingue": "Write 4 sentences about your dock. Use 1 preposition + 1 verb with -s. (*Escribe 4 oraciones sobre tu muelle. Usa 1 preposición + 1 verbo con -s.*)",
+          "andamiaje": "Fórmula visible · Toolbelt nouns disponibles · ejemplo modelo en pizarra"
+        }
+      },
+      "language_bank_b": [
+        "The [noun] is [PREP] the [port-noun].",
+        "The vessel [verb+S] at [time].",
+        "Captain Lopera [verb+S] the [maritime task]."
+      ],
+      "micro_capsula": "> 🎧 **Audio Cue:** When you say a 3rd-person verb · the -s sounds like /s/ (loads) or /z/ (arrives). Practice both before VHF radio."
+    },
+    "archetype_C_COMMUNICATIVE_TASKS": {
+      "label": "ARQUETIPO C — COMMUNICATIVE GRAMMAR TASKS",
+      "fundamento": "La gramática emerge de una tarea de info-gap entre 'Andrea en muelle' y 'Lopera en bridge'. Para resolver el problema · los aprendices DEBEN usar prepositions + 3rd-person-s. La tarea las atrapa.",
+      "tecnicas_seleccionables": [
+        "Focused Information Gap"
+      ],
+      "tiempo_aula_min": 30,
+      "bloom": "L3 (aplicar para resolver problema simple)",
+      "estructura_interna": {
+        "TASK_BRIEFING": {
+          "duracion_min": 5,
+          "escenario": "Pareja A (Andrea · en muelle Berth 4) tiene mapa con posiciones del CML CARRIER + tug + forklift + crane + container. Pareja B (Lopera · en bridge) tiene el mismo mapa pero con 5 huecos. B debe completar su mapa preguntándole a A.",
+          "restriccion_que_atrapa_gramatica": "B solo puede preguntar usando 'Where IS the ___?' y A solo puede responder con 'The ___ IS [PREP] the ___' · adicionalmente A reporta 1 operación con -s ('The crane unloads containers')."
+        },
+        "TASK_EXECUTION": {
+          "duracion_min": 18,
+          "interaccion": "B pregunta · A responde · B dibuja en su mapa · cambian roles · A pregunta operación 3rd-person · B responde con verbo+S",
+          "estructura_atrapada_prep": "Preposiciones (forzadas por la pregunta Where IS)",
+          "estructura_atrapada_3ps": "Simple present 3rd person -s (forzada por reporte operacional)"
+        },
+        "LANGUAGE_FOCUS_post_task": {
+          "duracion_min": 7,
+          "reflexion_bilingue": "Which preposition did you use most? (*¿Qué preposición usaste más?*) Did you add -s to the verb? (*¿Le pusiste -s al verbo?*)",
+          "conexion_pm29": "Función PM-2.9: Information Exchange (radio VHF dock-to-bridge)"
+        }
+      },
+      "language_bank_c": [
+        "Where is the [noun]?",
+        "The [noun] is [PREP] the [port-noun].",
+        "The crane [verb+S] every hour.",
+        "Roger that. / Copy."
+      ],
+      "micro_capsula": "> ⚠️ **Safety Rule:** Always confirm position with a preposition on VHF. 'Container at Berth 4' is NOT the same as 'Container on Berth 4'. Position errors cost money at the port."
+    },
+    "archetype_D_CREATIVE_PRODUCTION": {
+      "label": "ARQUETIPO D — CREATIVE PRODUCTION",
+      "fundamento": "Producción creativa CONTROLADA (sentence combining) · NO libre. El aprendiz fusiona oraciones simples sobre operación del CML CARRIER usando 'and' / 'but' básico · manteniendo prepositions y -s correctos.",
+      "tecnicas_seleccionables": [
+        "Sentence Combining",
+        "Analogous Mini-narratives"
+      ],
+      "tiempo_aula_min": 20,
+      "bloom": "L3 (aplicar · NO crear libre)",
+      "estructura_interna": {
+        "WARM_UP": {
+          "duracion_min": 4,
+          "modelo": "Pares de oraciones simples → fusión: 'The CML CARRIER arrives at 06:00. The pilot is on the bridge.' → 'The CML CARRIER arrives at 06:00 and the pilot is on the bridge.'"
+        },
+        "CREATIVE_PRODUCTION": {
+          "duracion_min": 12,
+          "instruccion_bilingue": "Combine each pair into 1 sentence using AND. Keep -s and prepositions. (*Combina cada par en 1 oración con AND. Conserva -s y preposiciones.*)",
+          "items": [
+            "The vessel arrives at 06:00. // The crane unloads containers. → ___",
+            "The captain is at the gangway. // The pilot is on the bridge. → ___",
+            "Andrea loads the manifest. // The forklift is next to the container. → ___",
+            "The CML CARRIER is between Berth 3 and Berth 4. // The tug berths the vessel. → ___"
+          ],
+          "produccion_andrea_microfable": "Write 3 sentences about Andrea's morning at the dock (use 1 preposition + 2 verbs with -s)."
+        },
+        "EVALUATION_calidad_precision": {
+          "duracion_min": 4,
+          "checklist": "¿Hay preposición correcta? ¿Hay -s en 3rd person? ¿AND conecta dos cláusulas?"
+        }
+      },
+      "language_bank_d": [
+        "[clause 1] AND [clause 2].",
+        "[Andrea/The captain] [verb+S] ___ AND [verb+S] ___.",
+        "The [noun] is [PREP] ___ AND the [noun] is [PREP] ___."
+      ],
+      "micro_capsula": "> ⚠️ **Grammar Rule:** Combining ≠ Creating. Keep your sentences SHORT and TRUE to what happens at Berth 4."
+    },
+    "archetype_E_EDITING_ERROR_ANALYSIS": {
+      "label": "ARQUETIPO E — EDITING & ERROR ANALYSIS",
+      "fundamento": "El aprendiz revisa un reporte de muelle de Andrea con 6 errores sistemáticos (3 preposition · 3 missing-s) · los detecta · corrige · justifica. La capacidad de auto-corrección se transfiere al PROPIO texto que escribirá en PM-2.4.",
+      "tecnicas_seleccionables": [
+        "Error Analysis (Find the Mistakes)",
+        "Self-Editing Checklist"
+      ],
+      "tiempo_aula_min": 15,
+      "bloom": "L3 (aplicar regla a corrección · clave dada · NO evaluar libre)",
+      "estructura_interna": {
+        "EXPOSURE": {
+          "duracion_min": 4,
+          "texto_andrea_con_errores": "Berth 4 — 06:30 · Andrea reports: The CML CARRIER arrive at six. The captain is in the gangway. The pilot is on bridge. The crane unload twenty containers. The forklift next to is the container. Captain Lopera handle the maneuver.",
+          "instruccion_bilingue": "Find 6 mistakes (3 prepositions · 3 missing -s). (*Encuentra 6 errores: 3 de preposiciones y 3 de -s faltante.*)"
+        },
+        "DIAGNOSIS": {
+          "duracion_min": 7,
+          "tabla_correccion": [
+            {
+              "error": "arrive at six",
+              "tipo": "missing -s",
+              "correccion": "arrives at six"
+            },
+            {
+              "error": "in the gangway",
+              "tipo": "wrong preposition",
+              "correccion": "at the gangway"
+            },
+            {
+              "error": "on bridge",
+              "tipo": "missing 'the'",
+              "correccion": "on the bridge"
+            },
+            {
+              "error": "unload twenty",
+              "tipo": "missing -s",
+              "correccion": "unloads twenty"
+            },
+            {
+              "error": "next to is the container",
+              "tipo": "word order",
+              "correccion": "is next to the container"
+            },
+            {
+              "error": "handle the maneuver",
+              "tipo": "missing -s",
+              "correccion": "handles the maneuver"
+            }
+          ]
+        },
+        "TRANSFER": {
+          "duracion_min": 4,
+          "self_editing_checklist_for_pm24": [
+            "[ ] Did I use a preposition with every position word?",
+            "[ ] Is the preposition in / on / at / under / behind / in front of / next to / between?",
+            "[ ] Does my 3rd-person verb (vessel · captain · crane · pilot · Andrea · CML CARRIER) end in -s?",
+            "[ ] Did I write 'the' before port-nouns (the dock / the bridge / the gangway)?",
+            "[ ] Are be (is/are) and there is/there are correct?"
+          ]
+        }
+      },
+      "language_bank_e": [
+        "There is a mistake here.",
+        "The correct preposition is ___.",
+        "We need -s because the subject is [3rd person]."
+      ],
+      "micro_capsula": "> 🎧 **Editing Cue:** Read your report ALOUD before sending it on VHF. If a verb sounds 'naked' after 'the captain' or 'the vessel' — it probably needs -s."
+    }
+  },
+  "grammar_targets_for_pm24": {
+    "purpose": "Bloque estructurado de Grammar Targets que PM-2.4 (Writing — dock report en S3) consumirá literalmente como criterios de andamiaje + checklist de edición. NO modificar IDs · NO modificar formulas · solo PM-2.4 puede consumir.",
+    "consumer_pm": "PM-2.4 Writing (S3)",
+    "writing_task_anclaje": "Andrea writes a 60-word dock report to Captain Lopera describing where 4 port resources are located + 3 routine vessel operations (arrives / loads / departs).",
+    "targets": [
+      {
+        "id": "GT-S3-01",
+        "structure": "Prepositions of place — IN",
+        "formula": "[noun] + IS + IN + [the/a] + [container/warehouse/port-noun]",
+        "imarpor_example": "The manifest is IN the office.",
+        "bloom": "L3 Apply",
+        "status_in_grammar_roadmap": "INTRO S3"
+      },
+      {
+        "id": "GT-S3-02",
+        "structure": "Prepositions of place — ON / AT",
+        "formula": "[noun] + IS + ON/AT + the + [dock/bridge/gangway/berth]",
+        "imarpor_example": "The container is ON the dock. The captain is AT the gangway.",
+        "bloom": "L3 Apply",
+        "status_in_grammar_roadmap": "INTRO S3"
+      },
+      {
+        "id": "GT-S3-03",
+        "structure": "Prepositions of place — UNDER / BEHIND",
+        "formula": "[noun] + IS + UNDER/BEHIND + the + [seat/warehouse/structure]",
+        "imarpor_example": "The lifejacket is UNDER the seat. The crane is BEHIND the warehouse.",
+        "bloom": "L3 Apply",
+        "status_in_grammar_roadmap": "INTRO S3"
+      },
+      {
+        "id": "GT-S3-04",
+        "structure": "Prepositions of place — IN FRONT OF / NEXT TO / BETWEEN",
+        "formula": "[noun] + IS + IN FRONT OF / NEXT TO / BETWEEN + the + [port-noun] (+ AND + [port-noun])",
+        "imarpor_example": "The tug is IN FRONT OF the bow. The forklift is NEXT TO the container. The CML CARRIER is BETWEEN Berth 3 and Berth 4.",
+        "bloom": "L3 Apply",
+        "status_in_grammar_roadmap": "INTRO S3"
+      },
+      {
+        "id": "GT-S3-05",
+        "structure": "Simple present 3rd person -s (port operations · regular verbs)",
+        "formula": "[She/He/It/The vessel/The captain/The crane/Andrea/Lopera] + [verb + S]",
+        "verb_set": [
+          "arrives",
+          "leaves",
+          "loads",
+          "unloads",
+          "departs",
+          "handles",
+          "berths",
+          "sails"
+        ],
+        "imarpor_example": "The CML CARRIER arrives at 06:00. Andrea loads the manifest.",
+        "bloom": "L3 Apply",
+        "status_in_grammar_roadmap": "INTRO S3"
+      },
+      {
+        "id": "GT-S3-06",
+        "structure": "be (am/is/are) — identification + state",
+        "formula": "[Subject] + [am/is/are] + [complement]",
+        "imarpor_example": "I AM Andrea. The captain IS Lopera. The containers ARE heavy.",
+        "bloom": "L3 Apply",
+        "status_in_grammar_roadmap": "CONSOLIDATE S3 (from S2)"
+      },
+      {
+        "id": "GT-S3-07",
+        "structure": "there is / there are — declaring presence at the port",
+        "formula": "THERE IS + [singular noun] · THERE ARE + [plural noun]",
+        "imarpor_example": "THERE IS a tug at the bow. THERE ARE three containers at Berth 4.",
+        "bloom": "L3 Apply",
+        "status_in_grammar_roadmap": "CONSOLIDATE S3 (from S2)"
+      },
+      {
+        "id": "GT-S3-08",
+        "structure": "Connector AND (sentence combining minimal · controlled production)",
+        "formula": "[clause 1] + AND + [clause 2]",
+        "imarpor_example": "The CML CARRIER arrives at 06:00 AND the pilot is on the bridge.",
+        "bloom": "L3 Apply",
+        "status_in_grammar_roadmap": "SUPPORT S3 (light · enables sentence combining for 60-word report)"
+      }
+    ],
+    "total_targets": 8,
+    "writing_pm24_must_use_minimum": 5,
+    "writing_pm24_checklist_inheritance": "PM-2.4 hereda directamente la self_editing_checklist_for_pm24 del archetype_E_EDITING_ERROR_ANALYSIS"
+  },
+  "activity_card": {
+    "pm_id": "PM-2.10",
+    "pm_name": "Grammar — Structure Use (IMARPOR)",
+    "session": 3,
+    "phase_sena": "Apropiación",
+    "rap_id": "240201050-RAP",
+    "guia_numero": 1,
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Descubrir el patrón de prepositions of place y simple present 3rd person -s mediante análisis de un corpus auténtico de 8 utterances IMARPOR (Andrea + Lopera + CML CARRIER) y formular la regla en sus propias palabras (Arquetipo A · Discovery & CR).",
+        "didactic_strategy": "Aprendizaje basado en descubrimiento",
+        "didactic_technique": "Investigación guiada (consciousness-raising sobre Master Anchor Text)",
+        "duracion_min": 30,
+        "bloom": "L2-L3"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Automatizar prepositions y -s mediante substitution drills + gap-fills sobre escenarios del Berth 4 (Arquetipo B · Controlled Practice) y producir 4 oraciones controladas sobre operaciones del CML CARRIER.",
+        "didactic_strategy": "Aprendizaje basado en tareas",
+        "didactic_technique": "Taller de drill y gap-fill controlado",
+        "duracion_min": 45,
+        "bloom": "L1-L3"
+      },
+      {
+        "number": 3,
+        "type": "cognitiva",
+        "statement": "Auto-corregir un reporte de muelle de Andrea con 6 errores sistemáticos (3 prepositions + 3 missing -s) usando el self-editing checklist que se transfiere a PM-2.4 Writing (Arquetipo E · Editing & Error Analysis).",
+        "didactic_strategy": "Aprendizaje basado en análisis de error",
+        "didactic_technique": "Find-the-mistake con clave + checklist de transferencia",
+        "duracion_min": 15,
+        "bloom": "L3"
+      }
+    ],
+    "activities_optional_autonomous": [
+      {
+        "number": "AUT-1",
+        "type": "cognitiva",
+        "statement": "Info-gap dock-to-bridge entre Andrea y Lopera (Arquetipo C) — 30 min · trabajo en parejas en casa o en aula expandida.",
+        "duracion_min": 30
+      },
+      {
+        "number": "AUT-2",
+        "type": "cognitiva",
+        "statement": "Sentence combining controlado con AND (Arquetipo D) — 10 min · escribir 3 oraciones sobre la mañana de Andrea.",
+        "duracion_min": 10
+      }
+    ],
+    "hours": {
+      "direct": 2.0,
+      "autonomous": 0.66,
+      "rest_of_S3_routes_to": "PM-2.4 Writing (consume grammar_targets_for_pm24 · escribe dock report 60-word)"
+    },
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "PM-2.10 es scaffolding cognitivo. NO genera evidencia formal. Sus ítems se cosechan para Quiz S6 Grammar (5pts).",
+      "evaluation_technique": null,
+      "instrument_number": null,
+      "instrument_type": null
+    },
+    "environment": {
+      "type": "Aula + Simulación de muelle (mockup Berth 4)",
+      "materials": [
+        "Plantilla THE SYNTAX BLUEPRINT IMARPOR (impresa y digital)",
+        "Master Anchor Text con prepositions y -s destacados (color + box)",
+        "Mapa visual del Berth 4 con CML CARRIER + tug + forklift + crane + warehouse + container",
+        "Tarjetas de drill gramatical con vocabulario IMARPOR (vessel · bow · stern · port · dock · berth · container · captain · pilot · tug)",
+        "Reporte de Andrea con 6 errores (worksheet de Arquetipo E)",
+        "Self-editing checklist (impresa para PM-2.4)"
+      ],
+      "instructors": "Instructor de inglés con perfil ESP marítimo-portuario"
+    },
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Grammar",
+    "quiz_points": 5,
+    "quiz_item_count": 5,
+    "quiz_item_seeds": [
+      "Q1: Choose the correct preposition. The container is ___ the dock. (in/on/at) → on",
+      "Q2: Choose the correct preposition. The CML CARRIER is ___ Berth 3 and Berth 4. → between",
+      "Q3: Add -s if needed. Captain Lopera handle___ the maneuver. → handles",
+      "Q4: Fix the error. The crane unload twenty containers. → unloads",
+      "Q5: There ___ three containers at Berth 4. (is/are) → are"
+    ]
+  },
+  "pm0_protocol_session_level": {
+    "session": 3,
+    "session_position": "S3 / 12",
+    "phase_sena": "Apropiación",
+    "cefr_target": "A1.2",
+    "bloom_ceiling": "L3 Apply",
+    "l1_percentage_max": 15,
+    "l1_percentage_target": 12,
+    "l1_usage_justification": "S3 es transición A1.2 estable · L1 limitado a (a) presentación de la regla en discovery · (b) instrucciones bilingües unificadas en cursiva · (c) clarificación de errores en Arquetipo E. Resto en inglés simple.",
+    "grammar_load_check_92": {
+      "intro_groups_count": 2,
+      "consolidate_groups_count": 2,
+      "intro_groups": [
+        "prepositions of place (8-set)",
+        "simple present 3rd person -s (operations)"
+      ],
+      "consolidate_groups": [
+        "be (am/is/are)",
+        "there is / there are"
+      ],
+      "compliant_with_pm0_92": true,
+      "rule_pm0_92": "≤ 2 grupos INTRO por sesión"
+    },
+    "feedback_modes": {
+      "PRE": "Guided discovery (Arquetipo A · descubrir patrón de utterances)",
+      "DURING": "Explicit confirmation + immediate correction (Arquetipo B drills)",
+      "POST": "Error analysis + self-editing checklist (Arquetipo E · transferencia a PM-2.4)"
+    },
+    "success_factors_510": [
+      "Salience (color + box + bold en utterances)",
+      "Use (immediate productive use cada 12-15 min)",
+      "Connection (cada estructura → Toolbelt maritime noun)",
+      "Context (Andrea + Lopera + CML CARRIER + Berth 4 · NO graphic-design vocabulario)",
+      "Emotion (low-stakes pair work + Captain-mode role play)",
+      "Spaced repetition (be + there is/are de S2 + reapply en S4-S5)",
+      "Synergy (alimenta directamente PM-2.4 Writing)"
+    ]
+  },
+  "validacion": {
+    "check1_archetypes_completeness": {
+      "passed": true,
+      "evidence": "5 sub-objetos archetype_X_NAME presentes en content: archetype_A_DISCOVERY_CR · archetype_B_CONTROLLED_PRACTICE · archetype_C_COMMUNICATIVE_TASKS · archetype_D_CREATIVE_PRODUCTION · archetype_E_EDITING_ERROR_ANALYSIS · TODOS los 5 declarados en archetypes_policy."
+    },
+    "check2_bloom_ceiling_l3": {
+      "passed": true,
+      "evidence": "Bloom L3 Apply MAX en TODOS los arquetipos · NO Analyze libre · NO Evaluate libre · NO Create libre. Distribución documentada en integration_all_archetypes_policy.bloom_distribution_per_archetype.",
+      "checks_individual": {
+        "A": "L2-L3 recognition (NO Analyze)",
+        "B": "L1-L3 drill",
+        "C": "L3 info-gap controlado",
+        "D": "L3 sentence combining (NO Crear libre)",
+        "E": "L3 corrección con clave (NO Evaluar libre)"
+      }
+    },
+    "check3_cefr_a1_2_strict": {
+      "passed": true,
+      "evidence": "Vocabulario maritime básico · estructuras prepositions/be/there is/3rd-person-s · NO modales · NO condicionales · NO past tenses · NO presente continuo. Verbos limitados a 8 regulares operacionales · NO -ies/-es irregulares. l1_percentage 12-15%."
+    },
+    "check4_pm0_92_grammar_load": {
+      "passed": true,
+      "evidence": "2 INTRO (prepositions + 3rd person -s) + 2 CONSOLIDATE (be + there is/are) ≤ 2 INTRO regla §9.2 cumplida. Documentado en pm0_protocol_session_level.grammar_load_check_92."
+    },
+    "check5_grammar_targets_pm24_count": {
+      "passed": true,
+      "evidence": "8 targets GT-S3-01..GT-S3-08 (en rango 6-8 requerido) · IDs estructurados · formulas + ejemplos IMARPOR · status en grammar_roadmap (INTRO/CONSOLIDATE/SUPPORT) declarado."
+    },
+    "check6_imarpor_universe_anchor": {
+      "passed": true,
+      "evidence": "TODOS los ejemplos usan vocabulario IMARPOR maritime: vessel · bow · stern · port · dock · berth · container · captain · pilot · tug · CML CARRIER · BUENAVENTURA EXPRESS · Andrea Mosquera · Captain Lopera · Berth 4 · Buenaventura. NO typography · NO serif · NO Pixel & Ink · NO bakery."
+    },
+    "check7_quiz_s6_grammar_contribution": {
+      "passed": true,
+      "evidence": "contributes_to_consolidated_quiz: true · quiz_skill: Grammar · quiz_points: 5 · quiz_item_count: 5 · quiz_item_seeds documentados (Q1-Q5)."
+    },
+    "check8_hours_distribution_s3": {
+      "passed": true,
+      "evidence": "direct: 2.0h + autonomous: 0.66h. Resto S3 (~4h direct + ~1.67h autonomous) routes_to PM-2.4 Writing con grammar_targets_for_pm24 como insumo."
+    },
+    "check9_anti_copia_fantasma": {
+      "passed": true,
+      "evidence": "Contenido ORIGINAL para IMARPOR-CC. NO copy del ref operacional MGV-2026-04-20: el ref usa Pixel & Ink Studio (graphic design · typography · Playfair Display · Sophia · Andrés · Gr1-Gr5 codes). Esta Activity Card usa exclusivamente IMARPOR (Berth 4 · CML CARRIER · BUENAVENTURA EXPRESS · Andrea Mosquera · Captain Lopera · vessel/bow/stern/port/dock/berth/container/captain/pilot/tug · prepositions IN/ON/AT/UNDER/BEHIND/IN FRONT OF/NEXT TO/BETWEEN · operacionales arrives/leaves/loads/unloads/departs/handles/berths/sails). Estructuras gramaticales son DIFERENTES (MGV: be + pronouns + plurals + adj position + imperative · IMARPOR: prepositions of place + 3rd person -s + be + there is/are). MGV ref usado solo como guía de calidad pedagógica · NO de contenido.",
+      "anti_mgv_lexical_check": [
+        "ZERO ocurrencias de: typography · serif · Playfair · canvas · Pixel · Ink · Sophia · Andrés · La Esquina Bakery · client · brief · logo · font",
+        "100% ejemplos sobre: dock · vessel · captain · container · berth · bow · stern · pilot · tug · gangway · bridge · warehouse · CML CARRIER · BUENAVENTURA EXPRESS · Andrea · Lopera · Buenaventura"
+      ]
+    },
+    "check10_enriched_false_pre_gate2": {
+      "passed": true,
+      "evidence": "enriched: false documentado. _enriched_false_rationale presente: espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11."
+    },
+    "check11_universe_anchor_synergy_pm24": {
+      "passed": true,
+      "evidence": "grammar_targets_for_pm24 con 8 GT-S3-XX está blindado para consumo literal por PM-2.4 Writing. self_editing_checklist_for_pm24 transferida desde Arquetipo E."
+    }
+  },
+  "siguiente_paso": {
+    "next_pm": "PM-2.4 Writing",
+    "session": 3,
+    "trigger": "PM-2.4 consume grammar_targets_for_pm24 (8 GT-S3-XX) + self_editing_checklist_for_pm24 + universe_anchor.utterances_by_group para diseñar el dock report de 60 palabras de Andrea a Captain Lopera.",
+    "expected_handoff": {
+      "writing_task_brief": "Andrea writes a 60-word dock report describing where 4 port resources are located + 3 routine vessel operations.",
+      "writing_minimum_grammar_use": 5,
+      "writing_checklist_source": "PM-2.10.content.archetype_E_EDITING_ERROR_ANALYSIS.estructura_interna.TRANSFER.self_editing_checklist_for_pm24"
+    },
+    "downstream_pms_consumers": [
+      "PM-2.4 Writing (S3 · directo)",
+      "PM-3.2-S3 (pm0_protocol session level · directo)",
+      "PM-2.11 GFPI-F-134 Row Assembler (validación 16 checks)",
+      "PM-4.2 Quiz S6 Grammar (5 quiz_item_seeds)"
+    ]
+  },
+  "enriched_at": "2026-04-29T16:30:00-05:00",
+  "enriched_by": "Sergio Cortés Perdomo",
+  "_enriched_review_note": "Aprobado en lote post Gate 2 review híbrido C+A 2026-04-29: spot check 4 gaps PASS (3 strict + 1 marginal PM-2.6 word_count 140 vs target 150 · discrepancia heurística split vs declared 178 · aceptado · regenerar opcional v1.1) · resumen ejecutivo 5 PMs sin gap PASS · arquitectura generaliza vs SMOKE clon (PM-2.11 PASS 14/16 idéntico · checks críticos 13/14/15/16 PASS)."
+}

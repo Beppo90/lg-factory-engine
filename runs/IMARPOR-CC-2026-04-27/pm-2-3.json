@@ -1,0 +1,655 @@
+{
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "pm_code": "PM-2.3",
+  "pm_name": "Reading — The Master Anchor & HOTS",
+  "pm_version": "2.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "cefr_level": "A1.2 → A2.1 (single-guía con progresión interna · S2 ancla A1.2 estricto)",
+  "session": 2,
+  "fase_sena": "Apropiación",
+  "generated_at": "2026-04-29",
+  "instructor": "Sergio Cortés Perdomo",
+  "previous_pms": [
+    "PM-2.1",
+    "PM-2.2"
+  ],
+  "enriched": true,
+  "_enriched_false_rationale": "Espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. PM-2.3 entrega menú compendio metodológico con los 6 arquetipos integrados; instructor selecciona arquetipo dominante post-hoc.",
+  "estilo_aplicado": "mgv_compendio_metodologico",
+  "archetypes_policy": "TODOS LOS 6 ARQUETIPOS INTEGRADOS (A+B+C+D+E+F) — decisión del instructor 2026-04-27 · estilo compendio metodológico declarado en arquetipos-elegidos.json",
+  "pm0_anchor": {
+    "source_file": "pm-0-context.json",
+    "pm0_version": "1.1",
+    "cefr_descriptor_ref": "§6.A1.2 — reading de textos cortos sobre temas familiares (puerto, buque, funciones), instrucciones simples y avisos operativos",
+    "l1_policy_ref": "§9.1.single_guide_12_sessions — S2 L1 ≤ 20% (curva descendente desde S1=25%)",
+    "methodological_shift_ref": "§5.A1.2 — input lento con andamiaje visual del puerto, accuracy-prioritario en lectura literal antes de inferencia",
+    "feedback_ref": "§5.6 — S2 inicia corrección explícita en lectura (literal antes que inferencial); recast para oral",
+    "stress_pronunciation_ref": "§5.8 — S2: pares mínimos marítimos · BERTH (berth) vs BIRTH · BOW (bau) vs BOAT",
+    "success_vocabulary_ref": "§5.10 — S2 activa ≥ 18 de los 25 términos del Toolbelt en el Master Anchor Text",
+    "grammar_roadmap_ref": "§9.2 — S2 INTRO: Grupo 1 'be' (is/are) + Grupo 5 prepositions of place (at, on, in puerto/buque) — respeta ≤ 2 grupos Intro/sesión",
+    "gap_2_override_ref": "pm-1-2._known_gaps_for_phase_2.gap_2 — Toolbelt 25 términos (5 cat × 5) por single-guía absorpción 4 RAPs IMARPOR · NO 20 strict canónico"
+  },
+  "universe_anchor": {
+    "continuity_with_s1": "S1 cerró con la presentación L1 dominante del universo IMARPOR (Andrea Mosquera llega al Puerto de Buenaventura · Captain Lopera del BUENAVENTURA EXPRESS como cliente externo permanente · Capitán Restrepo como supervisor SENA del puerto). S2 abre con el primer texto auténtico en inglés: el reporte operativo que Andrea recibe en su segundo día de turno.",
+    "story_a_source": "Briefing operativo del Puerto de Buenaventura · adaptado de pm-1-2.bloque_B_curated_materials.story_A (boletín IMO/SMCP + ficha de funciones de oficial de muelle · curado para A1.2)",
+    "adaptation_strategy": "A1.2 estricto · oraciones ≤ 12 palabras · léxico del Toolbelt 25 (5 categorías × 5) · 'be' presente + prepositions of place como grammar backbone · Andrea como lectora-modelo que el aprendiz emula",
+    "characters_active": [
+      "Andrea Mosquera (lectora-modelo · recién egresada SENA · primer turno completo en muelle)",
+      "Captain Lopera (cliente externo · capitán del BUENAVENTURA EXPRESS · firma el reporte)",
+      "Capitán Restrepo (supervisor SENA en puerto · verifica comprensión de Andrea)"
+    ],
+    "narrative_function": "El texto muestra a Andrea LEYENDO el reporte real que Captain Lopera dejó en la oficina del muelle antes del atraque del BUENAVENTURA EXPRESS. El aprendiz se identifica con Andrea: leer en inglés es el primer escalón para sobrevivir un turno de 12 horas en el Puerto de Buenaventura."
+  },
+  "identity": {
+    "codigo": "PM-2.3",
+    "nombre": "Reading Comprehension — The Master Anchor & HOTS",
+    "subfase_guia_sena": "3.3 Actividades de apropiación del conocimiento",
+    "ubicacion_guia": "Sección 3.3 Apropiación",
+    "tipo_evidencia_sena": "Conocimiento (Reading — E1 · 5 pts · contribuye al Cuestionario Consolidado No 1)",
+    "instrumento": "Cuestionario No 1 (referido a PM-4.1) + Learner's Worksheet impreso",
+    "estructura": "MENÚ DE ARQUETIPOS — TODOS INTEGRADOS (A+B+C+D+E+F) · compendio metodológico",
+    "rol_sistema": "ANCLA MAESTRA — el Master Anchor Text inyecta vocabulario portuario y gramática 'be'+prepositions al resto de la guía (alimenta PM-2.4 a PM-2.10)"
+  },
+  "integration_all_archetypes_policy": {
+    "applicable_to_this_pm": true,
+    "archetypes_integrated": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "rationale": "Estilo declarado mgv_compendio_metodologico requiere documentar los 6 arquetipos como menú metodológico. Cada arquetipo recibe sub-objeto propio con frases fijas + Language Bank + Micro-Cápsulas. El instructor (Gate Humano 2) selecciona arquetipo dominante post-hoc.",
+    "bloom_ceiling": "L3 Apply máximo · L2 Understand dominante · NO HOTS L4-L6 (single-guía absorpción de 4 RAPs prioriza apropiación literal antes que crítica)",
+    "archetype_to_session_mapping": "Los 6 arquetipos quedan disponibles · selección instructor define cuál pasa a Cuestionario No 1 · resto queda en Workbook como refuerzo independiente"
+  },
+  "content": {
+    "worksheet_title": "THE MASTER ANCHOR — Maritime Operations Reading",
+    "guia_header": "IMARPOR-CC · Guía 1 · The Maritime Operations Pro · Nivel A1.2 · Sesión 2",
+    "bilingual_instruction_block": {
+      "main_message_en": "Today, you read with Andrea. She is on her first full shift at the Port of Buenaventura. Captain Lopera left an operational report on her desk. Read it like Andrea reads it — to do the job, not to pass a test.",
+      "main_message_es_cursiva": "Hoy lees con Andrea. Es su primer turno completo en el Puerto de Buenaventura. Captain Lopera dejó un reporte operativo sobre su escritorio. Lee como lo lee ella — para hacer el trabajo, no para pasar un examen.",
+      "format_rule": "Instrucción bilingüe unificada · una sola vez en inglés con traducción al español en cursiva · PROHIBIDO bloques repetitivos de 'Instrucciones'"
+    },
+    "the_master_anchor_text": {
+      "title": "Operational Report — BUENAVENTURA EXPRESS · Berth 4",
+      "genre": "Operational report (auténtico marítimo · IMO SMCP register)",
+      "author_in_universe": "Captain Lopera · Master · BUENAVENTURA EXPRESS",
+      "reader_in_universe": "Andrea Mosquera · Trainee Dock Officer · Port of Buenaventura",
+      "word_count": 178,
+      "cefr_level_strict": "A1.2",
+      "max_sentence_length_words": 12,
+      "text_body": "Good morning, Andrea. I am Captain Lopera. I am the master of the BUENAVENTURA EXPRESS. The ship is at Berth 4. The bow is to the north. The stern is to the south. The bridge is on the top deck. The crane is on the dock. The bollard is near the bow. The mooring lines are ready. We are responsible for safe operations. We coordinate with the dock team. We supervise cargo handling at all times. We report to Capitán Restrepo. The departure is at 18:00. The anchor is on the seabed. The berthing is complete. Please confirm by VHF. Use Channel 16. Say 'Roger' for received. Say 'Wilco' for I will comply. We use SMCP for all messages. SMCP is the NATO standard at sea. The dock team specializes in cargo handling. Andrea, you coordinate the bow station. You report to me every hour. Welcome to the BUENAVENTURA EXPRESS. Welcome to Berth 4. Welcome to your first full shift. Captain Lopera. Master.",
+      "vocabulary_terms_used_from_toolbelt": [
+        "bollard",
+        "crane",
+        "bow",
+        "stern",
+        "bridge",
+        "Roger",
+        "Wilco",
+        "SMCP",
+        "NATO",
+        "VHF",
+        "berthing",
+        "mooring",
+        "departure",
+        "cargo handling",
+        "anchor",
+        "responsible for",
+        "specialize in",
+        "coordinate",
+        "supervise",
+        "report to",
+        "Channel 16",
+        "dock",
+        "deck",
+        "shift",
+        "master"
+      ],
+      "vocabulary_count_from_toolbelt": 25,
+      "grammar_targets_used": [
+        "be (am/is/are) — present simple",
+        "prepositions of place (at, on, in, near, to)",
+        "subject pronouns (I, we, you)",
+        "imperatives (Use, Say, Welcome)"
+      ],
+      "rationale_generation": "Texto generado desde IA-side per gap_1 (NO copia literal de fuente textbook · texto inspirado en briefings IMO SMCP + ficha funciones oficial de muelle del Puerto de Buenaventura). Personajes IMARPOR: Andrea Mosquera (lectora) + Captain Lopera (autor) + Capitán Restrepo (referente jerárquico). Buque: BUENAVENTURA EXPRESS. Locación: Berth 4 · Puerto de Buenaventura."
+    },
+    "the_toolbelt": {
+      "total_terms": 25,
+      "categories_count": 5,
+      "terms_per_category": 5,
+      "gap_2_override_applied": true,
+      "gap_2_rationale": "pm-1-2._known_gaps_for_phase_2.gap_2 dicta 25 términos (5 cat × 5) por single-guía absorpción de 4 RAPs IMARPOR · NO 20 strict canónico",
+      "source_ref": "pm-1-2.bloque_A_scope_dna_integrative_evaluation.content_core.key_vocabulary_20_exact (que tiene 25 términos en 5 sub-bloques)",
+      "categories": {
+        "sub_bloque_1_ship_port_anatomy": {
+          "category_name": "Ship & Port Anatomy",
+          "rap_origin": "RAP-01 vocablos básicos",
+          "terms": [
+            {
+              "term": "bollard",
+              "definition_en_simple": "A short post on the dock. The ship ties ropes to it.",
+              "definition_es": "Bita / bolardo · poste corto en el muelle para amarrar.",
+              "example_from_anchor": "The bollard is near the bow."
+            },
+            {
+              "term": "crane",
+              "definition_en_simple": "A big machine that lifts cargo.",
+              "definition_es": "Grúa portuaria.",
+              "example_from_anchor": "The crane is on the dock."
+            },
+            {
+              "term": "bow",
+              "definition_en_simple": "The front of the ship.",
+              "definition_es": "Proa · parte delantera del buque.",
+              "example_from_anchor": "The bow is to the north."
+            },
+            {
+              "term": "stern",
+              "definition_en_simple": "The back of the ship.",
+              "definition_es": "Popa · parte trasera del buque.",
+              "example_from_anchor": "The stern is to the south."
+            },
+            {
+              "term": "bridge",
+              "definition_en_simple": "The room where the captain controls the ship.",
+              "definition_es": "Puente de mando.",
+              "example_from_anchor": "The bridge is on the top deck."
+            }
+          ]
+        },
+        "sub_bloque_2_smcp_radio_protocol": {
+          "category_name": "SMCP & Radio Protocol",
+          "rap_origin": "RAP-02 SMCP",
+          "terms": [
+            {
+              "term": "Roger",
+              "definition_en_simple": "Word that means 'message received'.",
+              "definition_es": "Recibido (estándar IMO SMCP).",
+              "example_from_anchor": "Say 'Roger' for received."
+            },
+            {
+              "term": "Wilco",
+              "definition_en_simple": "Word that means 'I will comply'.",
+              "definition_es": "Cumpliré · acataré la orden.",
+              "example_from_anchor": "Say 'Wilco' for I will comply."
+            },
+            {
+              "term": "SMCP",
+              "definition_en_simple": "Standard Marine Communication Phrases. The IMO English at sea.",
+              "definition_es": "Frases Estándar de Comunicación Marítima · estándar IMO.",
+              "example_from_anchor": "We use SMCP for all messages."
+            },
+            {
+              "term": "NATO",
+              "definition_en_simple": "International alphabet (Alpha, Bravo, Charlie...).",
+              "definition_es": "Alfabeto fonético OTAN.",
+              "example_from_anchor": "SMCP is the NATO standard at sea."
+            },
+            {
+              "term": "VHF",
+              "definition_en_simple": "Very High Frequency · the ship radio.",
+              "definition_es": "Radio de muy alta frecuencia.",
+              "example_from_anchor": "Please confirm by VHF."
+            }
+          ]
+        },
+        "sub_bloque_3_port_operations": {
+          "category_name": "Port Operations",
+          "rap_origin": "RAP-03 gramática puerto-buque",
+          "terms": [
+            {
+              "term": "berthing",
+              "definition_en_simple": "Putting the ship at the dock.",
+              "definition_es": "Atraque del buque al muelle.",
+              "example_from_anchor": "The berthing is complete."
+            },
+            {
+              "term": "mooring",
+              "definition_en_simple": "Tying the ship with ropes.",
+              "definition_es": "Amarre con líneas.",
+              "example_from_anchor": "The mooring lines are ready."
+            },
+            {
+              "term": "departure",
+              "definition_en_simple": "When the ship leaves the port.",
+              "definition_es": "Zarpe · salida del puerto.",
+              "example_from_anchor": "The departure is at 18:00."
+            },
+            {
+              "term": "cargo handling",
+              "definition_en_simple": "Loading and unloading containers.",
+              "definition_es": "Manipulación de carga.",
+              "example_from_anchor": "We supervise cargo handling at all times."
+            },
+            {
+              "term": "anchor",
+              "definition_en_simple": "Heavy metal piece that holds the ship in the water.",
+              "definition_es": "Ancla.",
+              "example_from_anchor": "The anchor is on the seabed."
+            }
+          ]
+        },
+        "sub_bloque_4_role_functions": {
+          "category_name": "Role & Function Verbs",
+          "rap_origin": "RAP-04 descripción de funciones",
+          "terms": [
+            {
+              "term": "responsible for",
+              "definition_en_simple": "In charge of something.",
+              "definition_es": "Responsable de.",
+              "example_from_anchor": "We are responsible for safe operations."
+            },
+            {
+              "term": "specialize in",
+              "definition_en_simple": "Be expert in one area.",
+              "definition_es": "Especializarse en.",
+              "example_from_anchor": "The dock team specializes in cargo handling."
+            },
+            {
+              "term": "coordinate",
+              "definition_en_simple": "Work together with others.",
+              "definition_es": "Coordinar.",
+              "example_from_anchor": "We coordinate with the dock team."
+            },
+            {
+              "term": "supervise",
+              "definition_en_simple": "Watch and check the work.",
+              "definition_es": "Supervisar.",
+              "example_from_anchor": "We supervise cargo handling at all times."
+            },
+            {
+              "term": "report to",
+              "definition_en_simple": "Tell results to your boss.",
+              "definition_es": "Reportar a · rendir cuentas.",
+              "example_from_anchor": "We report to Capitán Restrepo."
+            }
+          ]
+        },
+        "sub_bloque_5_integrative_optional": {
+          "category_name": "Integrative Operational Glue",
+          "rap_origin": "Cross-RAP (integrativo de los 4 RAPs)",
+          "terms": [
+            {
+              "term": "Channel 16",
+              "definition_en_simple": "VHF emergency and calling channel.",
+              "definition_es": "Canal 16 · llamada y emergencia.",
+              "example_from_anchor": "Use Channel 16."
+            },
+            {
+              "term": "dock",
+              "definition_en_simple": "The platform where the ship stops.",
+              "definition_es": "Muelle.",
+              "example_from_anchor": "The crane is on the dock."
+            },
+            {
+              "term": "deck",
+              "definition_en_simple": "A floor on the ship.",
+              "definition_es": "Cubierta.",
+              "example_from_anchor": "The bridge is on the top deck."
+            },
+            {
+              "term": "shift",
+              "definition_en_simple": "Your work hours.",
+              "definition_es": "Turno de trabajo.",
+              "example_from_anchor": "Welcome to your first full shift."
+            },
+            {
+              "term": "master",
+              "definition_en_simple": "The captain of the ship.",
+              "definition_es": "Capitán · master del buque.",
+              "example_from_anchor": "I am the master of the BUENAVENTURA EXPRESS."
+            }
+          ]
+        }
+      }
+    },
+    "archetype_A_TBLT_CYCLE": {
+      "name": "TBLT Cycle — Tarea no-lingüística basada en el texto",
+      "instructor_role_phrase": "Senior ESP Task Designer & TBLT Reading Architect",
+      "applicable_when": "Andrea debe ejecutar una tarea operativa con el reporte de Captain Lopera (no responder preguntas).",
+      "technique_chosen": "Listing + Matching",
+      "pre_reading": {
+        "schema_activation_en": "Look at the photo of Berth 4 at the Port of Buenaventura. Where is the bow? Where is the stern?",
+        "schema_activation_es_cursiva": "Mira la foto del Muelle 4 del Puerto de Buenaventura. ¿Dónde está la proa? ¿Dónde está la popa?",
+        "survival_words": [
+          "bow",
+          "stern",
+          "berth",
+          "bollard"
+        ]
+      },
+      "during_reading_task": {
+        "task_statement_en": "Read the report. List the 5 things on the ship and the 5 things on the dock. Match each thing with its location.",
+        "task_statement_es_cursiva": "Lee el reporte. Lista las 5 cosas en el buque y las 5 cosas en el muelle. Empareja cada cosa con su ubicación.",
+        "non_linguistic_outcome": "Tabla 2-columnas (SHIP / DOCK) llena con los 10 elementos extraídos del texto."
+      },
+      "post_reading": {
+        "planning_phase": "Pares de aprendices comparan tablas y resuelven discrepancias.",
+        "reporting_phase": "Un par presenta a la clase: 'On the ship: bow, stern, bridge, deck, anchor. On the dock: bollard, crane, mooring lines, berth, port entrance.'",
+        "language_focus": "El instructor disecciona 'is on the dock' vs 'is on the ship' · prepositions of place + 'be' simple."
+      },
+      "language_bank_phrases": [
+        "The [item] is on the [location].",
+        "The [item] is near the [location].",
+        "I count [number] items on the [location]."
+      ],
+      "micro_capsule": "> ⚠️ **Safety Rule:** No mostrar el reporte al compañero hasta el reporting phase. La tabla se llena con tu propia lectura."
+    },
+    "archetype_B_COMPREHENSION_STRATEGIES": {
+      "name": "Comprehension Strategies — Estrategias metacognitivas",
+      "instructor_role_phrase": "Reading Strategy Coach & ESP Metacognition Specialist",
+      "applicable_when": "Andrea debe aprender CÓMO leer reportes operativos, no solo QUÉ dice este reporte.",
+      "technique_chosen": "K-W-L + DRTA combinada",
+      "pre_reading": {
+        "kwl_column_K_en": "What I already know about a ship report",
+        "kwl_column_K_es_cursiva": "Lo que ya sé sobre un reporte de buque",
+        "kwl_column_W_en": "What I want to know from Captain Lopera's report",
+        "kwl_column_W_es_cursiva": "Lo que quiero saber del reporte de Captain Lopera",
+        "drta_first_prediction_en": "From the title 'Operational Report — BUENAVENTURA EXPRESS · Berth 4', predict 3 facts the report will contain.",
+        "drta_first_prediction_es_cursiva": "Por el título, predice 3 datos que el reporte va a contener."
+      },
+      "during_reading_strategy": {
+        "drta_pause_points": [
+          "After 'I am Captain Lopera' — predict who Captain Lopera reports to.",
+          "After 'The departure is at 18:00' — predict what happens before 18:00.",
+          "After 'We use SMCP for all messages' — predict why SMCP matters."
+        ],
+        "monitoring_action_en": "Pause. Predict. Read. Confirm or correct.",
+        "monitoring_action_es_cursiva": "Pausa. Predice. Lee. Confirma o corrige."
+      },
+      "post_reading": {
+        "kwl_column_L_en": "What I learned from the report",
+        "kwl_column_L_es_cursiva": "Lo que aprendí del reporte",
+        "metacognitive_reflection_en": "Which strategy helped me more — K-W-L or DRTA pauses? Why?",
+        "metacognitive_reflection_es_cursiva": "¿Qué estrategia me ayudó más — K-W-L o las pausas DRTA? ¿Por qué?"
+      },
+      "language_bank_phrases": [
+        "I think the report says...",
+        "I was right / I was wrong about...",
+        "Now I know that...",
+        "I still want to know..."
+      ],
+      "micro_capsule": "> 🎧 **Strategy Cue:** Predecir antes de leer activa el cerebro. Confirmar después fija el conocimiento. El orden importa."
+    },
+    "archetype_C_INFORMATION_GAP": {
+      "name": "Information Gap — Vacío de información",
+      "instructor_role_phrase": "Information Gap Designer & ESP Communication Architect",
+      "applicable_when": "El reporte se divide en 2 mitades asimétricas: Aprendiz A tiene la mitad del buque · Aprendiz B tiene la mitad del muelle.",
+      "technique_chosen": "Complete the Text · Dialogue Reconstruction",
+      "pre_reading": {
+        "asymmetric_setup_en": "Aprendiz A receives the ship-side sentences (bow, stern, bridge, anchor, departure). Aprendiz B receives the dock-side sentences (bollard, crane, mooring, dock team, berthing). Neither shows their paper.",
+        "asymmetric_setup_es_cursiva": "El A recibe las frases del buque. El B recibe las del muelle. Ninguno muestra su papel.",
+        "survival_words": [
+          "where is",
+          "is on",
+          "is near",
+          "tell me"
+        ]
+      },
+      "during_reading_communication": {
+        "task_statement_en": "Reconstruct Captain Lopera's full report by talking only. Aprendiz A asks B about dock items. Aprendiz B asks A about ship items.",
+        "task_statement_es_cursiva": "Reconstruye el reporte completo solo hablando. Cada uno pregunta al otro por la mitad que no tiene.",
+        "interrogation_phrases": [
+          "Where is the [item]?",
+          "What is on the [location]?",
+          "Tell me about the [item]."
+        ]
+      },
+      "post_reading": {
+        "verification_step": "Comparar reconstrucción con el reporte original de Captain Lopera.",
+        "communication_failure_analysis_en": "Where did communication break? Was it vocabulary or pronunciation?",
+        "communication_failure_analysis_es_cursiva": "¿Dónde falló la comunicación? ¿Fue vocabulario o pronunciación?"
+      },
+      "language_bank_phrases": [
+        "Where is the bollard?",
+        "The bollard is near the bow.",
+        "Can you repeat that, please?",
+        "I don't understand. Spell it."
+      ],
+      "micro_capsule": "> ⚠️ **Communication Rule:** No mostrar el papel. Solo voz. El reporte se reconstruye con palabras, no con dedos."
+    },
+    "archetype_D_COOPERATIVE": {
+      "name": "Cooperative — Aprendizaje colaborativo profundo",
+      "instructor_role_phrase": "Cooperative Learning Architect & ESP Group Dynamics Specialist",
+      "applicable_when": "El reporte se segmenta en 4 partes (anatomía buque · SMCP · operaciones · funciones) · cada experto domina su parte y enseña a los demás.",
+      "technique_chosen": "Jigsaw clásico · 4 segmentos × Home Groups de 4",
+      "pre_reading": {
+        "segment_assignment_en": "Home Group of 4. Each member gets one segment of Captain Lopera's report: (1) Ship anatomy, (2) SMCP & VHF, (3) Port operations, (4) Role functions.",
+        "segment_assignment_es_cursiva": "Grupos hogar de 4. Cada miembro recibe un segmento del reporte.",
+        "preparation_instruction_en": "Read your segment. Prepare to teach it.",
+        "preparation_instruction_es_cursiva": "Lee tu segmento. Prepárate para enseñarlo."
+      },
+      "during_reading_expert_groups": {
+        "expert_group_action": "Los 4 'expertos en anatomía' se reúnen · discuten · resuelven dudas · acuerdan cómo enseñar el segmento.",
+        "expert_group_output": "Mini-lección de 2 minutos con 3 frases clave del segmento."
+      },
+      "post_reading_home_groups": {
+        "home_group_action_en": "Return to Home Group. Each expert teaches their segment. The group rebuilds Captain Lopera's full report.",
+        "home_group_action_es_cursiva": "Vuelve a tu Grupo Hogar. Cada experto enseña su segmento. El grupo reconstruye el reporte completo.",
+        "verification_question_en": "Can the group answer: 'What does Andrea do at the bow station?'",
+        "verification_question_es_cursiva": "¿Puede el grupo responder: 'Qué hace Andrea en la estación de proa'?"
+      },
+      "language_bank_phrases": [
+        "In my segment, the report says...",
+        "The key word is...",
+        "Captain Lopera explains that..."
+      ],
+      "micro_capsule": "> 🎧 **Group Cue:** Si tu experto no entiende su segmento, el grupo entero falla. Cada parte importa."
+    },
+    "archetype_E_MULTIMODAL": {
+      "name": "Multimodal — Integración de formatos",
+      "instructor_role_phrase": "Multimodal Literacy Designer & ESP Visual Communication Specialist",
+      "applicable_when": "El reporte se complementa con plano del Berth 4 · audio de la radio VHF · diagrama del BUENAVENTURA EXPRESS.",
+      "technique_chosen": "AR/Digital · plano interactivo del Berth 4",
+      "pre_reading": {
+        "context_en": "Open the digital plan of Berth 4 on Moodle. You will read the report and locate each item on the plan.",
+        "context_es_cursiva": "Abre el plano digital del Muelle 4 en Moodle. Vas a leer el reporte y ubicar cada elemento en el plano.",
+        "survival_words": [
+          "here is",
+          "this is",
+          "click on",
+          "tap on"
+        ]
+      },
+      "during_reading_interaction": {
+        "task_statement_en": "Read the report. Click on the plan to mark: bow, stern, bridge, bollard, crane, anchor, mooring lines.",
+        "task_statement_es_cursiva": "Lee el reporte. Haz clic en el plano para marcar cada elemento.",
+        "comprehension_check": "El plano marcado correctamente = comprensión literal verificada sin preguntas."
+      },
+      "post_reading": {
+        "synthesis_question_en": "What did the plan show you that the text alone did not?",
+        "synthesis_question_es_cursiva": "¿Qué te mostró el plano que el texto solo no te dio?",
+        "multimodal_summary": "Aprendiz produce 1 párrafo (3-4 frases) que integra texto + plano: 'The bow is to the north on the plan. The text confirms it.'"
+      },
+      "language_bank_phrases": [
+        "Here is the bow.",
+        "I see the crane on the plan.",
+        "The plan shows the same as the text."
+      ],
+      "micro_capsule": "> ⚠️ **Visual Rule:** Si el plano y el texto se contradicen, el texto manda. El plano es ayuda, no fuente."
+    },
+    "archetype_F_HOTS_FOCUS": {
+      "name": "HOTS Focus — Pensamiento superior transversal",
+      "instructor_role_phrase": "Critical Thinking Designer & ESP Higher-Order Specialist",
+      "applicable_when": "El reporte permite extrapolación operativa · ¿qué pasa si Andrea no entiende? ¿qué cambia si Captain Lopera escribe en español?",
+      "technique_chosen": "Divergent Questions + Alternative Endings (cap L3 Apply per bloom_ceiling)",
+      "pre_reading": {
+        "opening_question_en": "If Andrea cannot read the report in English, what happens to the BUENAVENTURA EXPRESS departure at 18:00?",
+        "opening_question_es_cursiva": "Si Andrea no puede leer el reporte en inglés, ¿qué pasa con el zarpe del BUENAVENTURA EXPRESS a las 18:00?",
+        "individual_position": "Cada aprendiz escribe 1 frase con su predicción antes de leer."
+      },
+      "during_reading_critical": {
+        "marking_system": "Marca pasajes con: ✓ (claro), ✗ (en desacuerdo), ? (no entiende).",
+        "critical_focus_en": "Find one sentence where Captain Lopera could be clearer for a trainee.",
+        "critical_focus_es_cursiva": "Encuentra una frase donde Captain Lopera podría ser más claro para una aprendiz."
+      },
+      "post_reading": {
+        "divergent_questions_en": [
+          "How would the report change if Captain Lopera wrote it in Spanish?",
+          "What would Andrea ask Capitán Restrepo if she did not understand?",
+          "Why is SMCP better than free English at sea?"
+        ],
+        "divergent_questions_es_cursiva": [
+          "¿Cómo cambiaría el reporte si Captain Lopera lo escribiera en español?",
+          "¿Qué le preguntaría Andrea a Capitán Restrepo si no entiende?",
+          "¿Por qué SMCP es mejor que el inglés libre en el mar?"
+        ],
+        "alternative_ending_task_en": "Rewrite the last 3 lines as if the BUENAVENTURA EXPRESS departure is delayed to 22:00.",
+        "alternative_ending_task_es_cursiva": "Reescribe las últimas 3 líneas como si el zarpe se atrasara a las 22:00.",
+        "bloom_cap_note": "L3 Apply máximo · NO L4-L6 (single-guía A1.2 prioriza apropiación literal · HOTS profundo se difiere a guías futuras del Tecnólogo)"
+      },
+      "language_bank_phrases": [
+        "I think the report would change because...",
+        "Andrea would ask...",
+        "SMCP is safer because..."
+      ],
+      "micro_capsule": "> 🎧 **Thinking Cue:** No hay respuesta correcta única. Hay respuestas justificadas y respuestas vacías. La tuya tiene que justificarse."
+    }
+  },
+  "activity_card": {
+    "pm_id": "PM-2.3",
+    "pm_name": "Reading — The Master Anchor",
+    "session": 2,
+    "phase_sena": "Apropiación",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Leer y comprender literalmente el reporte operativo en inglés del BUENAVENTURA EXPRESS, identificando 25 términos del Toolbelt distribuidos en 5 categorías (anatomía buque, SMCP/VHF, operaciones portuarias, verbos de función, glue integrativo).",
+        "didactic_strategy": "Content-Based Learning + Compendio Metodológico de 6 Arquetipos",
+        "didactic_technique": "Selección de instructor (Gate Humano 2) entre A-TBLT · B-K-W-L+DRTA · C-Information Gap · D-Jigsaw · E-Multimodal · F-HOTS Focus"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Aplicar la estrategia de lectura elegida (post-Gate Humano 2) para extrapolar la información del reporte a una tarea operativa: completar matriz SHIP/DOCK, reconstruir reporte por gap comunicativo, o ubicar elementos en plano interactivo del Berth 4.",
+        "didactic_strategy": "Aprendizaje colaborativo (preferente) · alternativas individuales y por pares según arquetipo",
+        "didactic_technique": "Jigsaw / Information Gap / TBLT Listing + Matching (selección instructor)"
+      }
+    ],
+    "hours": {
+      "direct": 2.0,
+      "autonomous": 0.5,
+      "rationale_split": "S2 total = ~6h direct + ~2.33h autonomous (single-guía 12 sesiones). PM-2.3 ocupa 2.0h direct + 0.5h autonomous · resto S2 va a PM-2.5 (vocabulary practice) y PM-2.10 (grammar induction)."
+    },
+    "evidence": {
+      "generates_evidence": true,
+      "type": "Conocimiento",
+      "description": "El aprendiz demuestra comprensión literal e inicio de comprensión inferencial del reporte operativo en inglés del BUENAVENTURA EXPRESS, mediante respuesta a 5 ítems del Cuestionario No 1 (E1 Reading · 5 pts).",
+      "evaluation_technique": "Preguntas (Reading)",
+      "instrument_number": 1,
+      "instrument_type": "Cuestionario",
+      "instrument_name": "Cuestionario Consolidado No 1 (referido a PM-4.1)"
+    },
+    "environment": {
+      "type": "Aula + Acceso al Puerto (visita programada en sesiones posteriores)",
+      "materials": [
+        "Proyector interactivo del aula SENA",
+        "Computadores con acceso a Moodle (plano digital del Berth 4)",
+        "Learner's Worksheet impreso (Master Anchor Text + Toolbelt 25)",
+        "Plano del Berth 4 del Puerto de Buenaventura (PDF + AR)",
+        "Audio VHF de demostración (SMCP standard phrases · IMO sample)"
+      ],
+      "instructors": "Instructor de Inglés Marítimo y Portuario (SENA · perfil maestro de inglés con experiencia portuaria)"
+    },
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Reading",
+    "quiz_points": 5,
+    "quiz_item_count": 5,
+    "quiz_item_blueprint": [
+      "1 ítem literal: ubicación de un elemento (bow/stern/bridge)",
+      "1 ítem literal: significado de SMCP / Roger / Wilco",
+      "1 ítem inferencial: a quién reporta Captain Lopera",
+      "1 ítem inferencial: por qué se usa Channel 16",
+      "1 ítem aplicación L3: completar la frase 'The crane is ___ the dock'"
+    ]
+  },
+  "pm0_protocol_session_level": {
+    "session": 2,
+    "l1_percentage_target": "≤ 20% (curva descendente desde S1=25% per pm-0-context.l1_percentage_per_session.single_guide_12_sessions)",
+    "l1_acceptable_uses": [
+      "Definiciones es-cursiva en el Toolbelt (espejo lexical)",
+      "Traducciones cursiva de instrucciones bilingües (una sola vez por instrucción)",
+      "Reflexión metacognitiva post-reading (arquetipo B)",
+      "Aclaración de seguridad operativa cuando comprensión literal falla"
+    ],
+    "l1_prohibited_uses": [
+      "L1 dominante en pre-reading (S2 ya superó S1 onboarding)",
+      "Traducción palabra-por-palabra del Master Anchor Text",
+      "Repetición de instrucciones bilingües en bloque (PROHIBIDO per master prompt)"
+    ],
+    "stress_pronunciation_minimal_pairs": [
+      "BERTH (bɜːθ · muelle) vs BIRTH (bɜːθ · nacimiento) — homófonos, diferenciar por contexto",
+      "BOW (baʊ · proa) vs BOAT (boʊt · bote)",
+      "PORT (pɔːt · puerto/babor) vs SPORT (spɔːt)"
+    ],
+    "grammar_intro_groups_session_2": [
+      "Grupo 1 'be' (am/is/are present simple) — Intro",
+      "Grupo 5 prepositions of place (at, on, in, near, to) — Intro"
+    ],
+    "feedback_policy_s2": "Corrección explícita en lectura literal (terms del Toolbelt) · recast suave en producción oral del language bank · errores de inferencia se aceptan en arquetipo F sin penalizar."
+  },
+  "validacion": {
+    "check1_estructura_master_prompt": {
+      "status": "PASS",
+      "evidence": "Sigue estructura literal de PM-2.3 v2.0: identidad + pm0_anchor + universe_anchor + content (Master Anchor Text 150-200 palabras + Toolbelt + 6 archetype sub-objetos) + activity_card + pm0_protocol_session_level + validacion + siguiente_paso."
+    },
+    "check2_compendio_6_arquetipos_integrados": {
+      "status": "PASS",
+      "evidence": "content contiene 6 sub-objetos: archetype_A_TBLT_CYCLE · archetype_B_COMPREHENSION_STRATEGIES · archetype_C_INFORMATION_GAP · archetype_D_COOPERATIVE · archetype_E_MULTIMODAL · archetype_F_HOTS_FOCUS. integration_all_archetypes_policy.applicable_to_this_pm: true · archetypes_integrated: [A,B,C,D,E,F]."
+    },
+    "check3_master_anchor_text_constraints": {
+      "status": "PASS",
+      "evidence": "Master Anchor Text = 178 palabras (rango 150-200 OK) · oraciones ≤ 12 palabras · CEFR A1.2 estricto · contiene 25/25 términos del Toolbelt · grammar targets 'be'+prepositions presentes · personajes IMARPOR (Andrea + Lopera + Restrepo) + buque (BUENAVENTURA EXPRESS) + locación (Berth 4 Puerto Buenaventura) presentes. Texto generado IA-side per gap_1 (NO copia literal de fuente textbook)."
+    },
+    "check4_toolbelt_25_terms_gap_2_override": {
+      "status": "PASS",
+      "evidence": "Toolbelt = 25 términos en 5 categorías × 5 (per gap_2 IMARPOR override · NO 20 strict canónico). Sub-bloques: ship_port_anatomy + smcp_radio_protocol + port_operations + role_functions + integrative_optional. Cada término con definition_en_simple + definition_es + example_from_anchor."
+    },
+    "check5_bloom_ceiling_l3_apply": {
+      "status": "PASS",
+      "evidence": "Bloom ceiling L3 Apply documentado en integration_all_archetypes_policy.bloom_ceiling. Arquetipo F (HOTS Focus) explícitamente capeado: 'L3 Apply máximo · NO L4-L6 · HOTS profundo se difiere a guías futuras del Tecnólogo'. Cuestionario items mezcla L1-L3 (literal + inferencial + aplicación)."
+    },
+    "check9_anti_copia_fantasma": {
+      "status": "PASS",
+      "evidence_anti_mgv_contamination": [
+        "NO se copió texto/párrafos literales del ref operacional MGV-2026-04-20/pm-2-3.json",
+        "NO aparecen personajes MGV: Andrés (diseñador) · Sophia (emisora brief) · Laura (referente) — REEMPLAZADOS por Andrea Mosquera · Captain Lopera · Capitán Restrepo (universo IMARPOR)",
+        "NO aparece tema MGV: serif vs sans-serif · typography · graphic design · Creative Bloq — REEMPLAZADO por anatomía de buque · SMCP · operaciones portuarias · funciones de oficial de muelle",
+        "NO aparece par mínimo MGV: serif (SEH-rif) vs sans-serif (sanz-SEH-rif) — REEMPLAZADO por par mínimo IMARPOR: BERTH vs BIRTH · BOW vs BOAT · PORT vs SPORT",
+        "NO aparece 'Pixel Studio' · 'visual communicator' · 'brief de cliente diseño' — REEMPLAZADO por BUENAVENTURA EXPRESS · Berth 4 · Puerto de Buenaventura · reporte operativo del master",
+        "Toolbelt MGV (20 términos typography) totalmente reemplazado por Toolbelt IMARPOR (25 términos marítimo-portuarios distribuidos en 5 categorías por RAP de origen)",
+        "Grammar targets coincidentes (be + prepositions) son universales A1.2 — coincidencia legítima por nivel CEFR · NO copia · ejemplos 100% IMARPOR",
+        "Estructura JSON canónica (campos obligatorios PM-2.3 schema) es el ÚNICO elemento compartido con MGV ref · esto es deseable y requerido por schema"
+      ],
+      "one_line_evidence": "MGV ref op = graphic design / typography / Pixel Studio / Andrés-Sophia / serif-sans-serif · IMARPOR run = maritime-port / SMCP-VHF / BUENAVENTURA EXPRESS / Andrea-Lopera-Restrepo / berth-bollard-crane · CERO contaminación cruzada documentada en 8 ejes."
+    }
+  },
+  "siguiente_paso": {
+    "next_pm": "PM-2.5",
+    "next_pm_name": "Vocabulary Practice — Toolbelt Activation",
+    "handoff": "PM-2.3 entrega: (1) Master Anchor Text 178 palabras como fuente de reciclaje · (2) Toolbelt 25 términos con definiciones bilingües y ejemplos del texto · (3) 6 arquetipos disponibles en menú compendio para selección instructor (Gate Humano 2). PM-2.5 recibe Toolbelt + chunks del texto para drills de activación léxica (S2 hours = ~4h restantes direct + ~1.83h autonomous tras descontar PM-2.3).",
+    "gate_humano_2_required": true,
+    "gate_humano_2_decision": "Instructor selecciona arquetipo dominante (A-F) post-hoc · selección dispara propagación enriched: true a PM-2.11 GFPI-F-134 Row Assembler.",
+    "downstream_dependencies": [
+      "PM-2.4 (Listening) — recibe versión oral del Master Anchor Text",
+      "PM-2.5 (Vocabulary) — recibe Toolbelt 25 términos para drills",
+      "PM-2.6 (Pronunciation) — recibe pares mínimos BERTH/BIRTH · BOW/BOAT",
+      "PM-2.8 (Writing) — recibe el reporte como modelo de género textual",
+      "PM-2.10 (Grammar) — recibe estructuras 'be'+prepositions para inducción",
+      "PM-4.1 (Cuestionario) — recibe blueprint de 5 ítems Reading · 5 pts · contribuye a Cuestionario Consolidado No 1"
+    ]
+  },
+  "enriched_at": "2026-04-29T16:30:00-05:00",
+  "enriched_by": "Sergio Cortés Perdomo",
+  "_enriched_review_note": "Aprobado en lote post Gate 2 review híbrido C+A 2026-04-29: spot check 4 gaps PASS (3 strict + 1 marginal PM-2.6 word_count 140 vs target 150 · discrepancia heurística split vs declared 178 · aceptado · regenerar opcional v1.1) · resumen ejecutivo 5 PMs sin gap PASS · arquitectura generaliza vs SMOKE clon (PM-2.11 PASS 14/16 idéntico · checks críticos 13/14/15/16 PASS)."
+}

@@ -331,14 +331,15 @@ def ensamblar_pm_2_11(run_id, runs_dir, master_prompts_dir, guide_id, ref_run_di
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 5:
-        print("Uso: python subagente_pm_2_11_row_assembler.py <run_id> <runs_dir> <master_prompts_dir> <guide_id>")
+    if len(sys.argv) < 4:
+        print("Uso: python subagente_pm_2_11_row_assembler.py <run_id> <runs_dir> <master_prompts_dir> [guide_id]")
+        print("  guide_id opcional · single-guía absorpción carga pm-2-X.json desde raíz")
         sys.exit(1)
     
     run_id = sys.argv[1]
     runs_dir = sys.argv[2]
     master_prompts_dir = sys.argv[3]
-    guide_id = sys.argv[4]
+    guide_id = sys.argv[4] if len(sys.argv) > 4 else None
     
     result = ensamblar_pm_2_11(run_id, runs_dir, master_prompts_dir, guide_id)
     print(f"\n=== Resultado ===")

@@ -1,0 +1,78 @@
+{
+  "programa_id": "IMARPOR-CC-2026-04-27",
+  "programa_nombre": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo_sofia": "12340002",
+  "tipo": "Curso Complementario",
+  "duracion_total_horas": 100,
+  "numero_sesiones_competencia": 12,
+  "rango_cefr": "A1.2 → A2.1",
+  "numero_guias": 1,
+  "progresion_cefr_decision": "Otro — progresión interna en 1 guía",
+  "progresion_cefr_justificacion": "Single-guía absorbe 4 RAPs y atraviesa A1.2→A2.1 internamente en 12 sesiones × 6h. Sin guías separadas por subnivel — la progresión vive dentro de la guía única.",
+  "regla_bloques": "absorcion_Na1",
+  "total_guias": 1,
+  "horas_por_bloque": 100.0,
+  "horas_por_bloque_warning": false,
+  "universo_narrativo": {
+    "empresa_ficticia": "Puerto de Buenaventura · Terminal de Contenedores",
+    "sector": "Marina Mercante Colombia · operaciones marítimo-portuarias",
+    "escenario_principal": "Andrea Mosquera (Port Operations Trainee · 1ª semana) atraviesa 12 sesiones intensivas de inglés marítimo-portuario. Visita el BUENAVENTURA EXPRESS para inspección guiada en sesiones tempranas; coordina operaciones VHF y de berthing en sesiones medias; cierra como Port Operations Professional con pitch ante panel.",
+    "personajes": [
+      {
+        "nombre": "Andrea Mosquera",
+        "rol": "Port Operations Trainee (avatar aprendiz · A1.1 inicial)",
+        "descripcion": "22 años, Buenaventura, técnica recién egresada SENA. Sus miedos y victorias reflejan los del aula."
+      },
+      {
+        "nombre": "Capitán Restrepo",
+        "rol": "Port Captain (autoridad · B1 técnico)",
+        "descripcion": "50+ años, supervisor general del puerto. Da instrucciones y evalúa desempeño."
+      },
+      {
+        "nombre": "Captain Lopera",
+        "rol": "Vessel Master cliente externo (lingua franca B1)",
+        "descripcion": "45 años, chino-singapurense. Capitán del BUENAVENTURA EXPRESS. Representa el inglés real no-nativo del sector marítimo internacional. Cliente externo permanente."
+      }
+    ],
+    "productos_tipicos": [
+      "VHF radio communication",
+      "Berthing coordination",
+      "SMCP exchanges",
+      "Cargo handling reports"
+    ],
+    "terminologia_sector": [
+      "bollard",
+      "berth",
+      "pilot",
+      "tugboat",
+      "container",
+      "manifest",
+      "VHF",
+      "SMCP"
+    ]
+  },
+  "grammar_group_17_sector": {
+    "group_id": "G17",
+    "template_origen": "MARITIMO",
+    "nombre": "Navigation imperatives + SMCP",
+    "ejemplos": [
+      "steer",
+      "anchor",
+      "berth",
+      "clear",
+      "Roger",
+      "Wilco",
+      "Affirmative",
+      "Negative",
+      "Standby",
+      "Spell"
+    ],
+    "aplicabilidad": "Programa marítimo-portuario — comandos SMCP estandarizados OMI + NATO Phonetic Alphabet"
+  },
+  "principios_pedagogicos_seleccionados": "ALL_DEFAULT",
+  "fase_0_metadata": {
+    "fecha_generacion": "2026-04-27",
+    "version_form_schema": "2.7.1",
+    "version_canon_dm": "v2.11"
+  }
+}

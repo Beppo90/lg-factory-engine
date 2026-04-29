@@ -1,0 +1,581 @@
+{
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "pm_code": "PM-2.8",
+  "pm_name": "Speaking Production & Simulation — The Mission (with absorbed pronunciation scaffolding)",
+  "pm_version": "2.0",
+  "schema_reference": "Activity Card Schema v2.0 (Fase 2 GFPI-F-134)",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "competencia_nombre": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+  "cefr_level": "A1.2",
+  "session": 4,
+  "fase_sena": "Apropiación",
+  "subfase_sena": "3.3 Actividades de apropiación del conocimiento",
+  "ubicacion_guia": "Sección 3.4 Transferencia",
+  "generated_at": "2026-04-29T00:00:00-05:00",
+  "instructor": "Sergio Cortés Perdomo",
+  "enriched": true,
+  "_enriched_false_rationale": "Espera Instructor Selection (Gate Humano 2) para confirmar variante de tarea oral (Variant 1 default · radio simulation SMCP vs Variant 2 berthing coordination role-play vs Variant 3 panel briefing vs Variant 4 Restrepo briefing rehearsal) antes de propagar a PM-2.11.",
+  "previous_pms": [
+    "PM-2.1",
+    "PM-2.2",
+    "PM-2.3",
+    "PM-2.5",
+    "PM-2.10",
+    "PM-2.4"
+  ],
+  "co_parallel_pms": [
+    "PM-2.6 (Listening · Manual de Supervivencia Oral · misma sesión S4)"
+  ],
+  "absorbed_pms": [
+    "PM-2.7 (Pronunciation · DEPRECATED en v2.0 · scaffolding integrado dentro de PM-2.8 Arquetipo D)"
+  ],
+  "archetypes_policy": "TODOS LOS 5 ARQUETIPOS INTEGRADOS (A+B+C+D+E) — estilo declarado mgv_compendio_metodologico",
+  "estilo_aplicado": "mgv_compendio_metodologico",
+  "derived_from": [
+    "pm-1-2.json (Toolbelt 25 términos · F1-F5 funciones · universo IMARPOR-CC single-guía)",
+    "pm-2-0.json (Session 4 blueprint · 3.0h direct + 0.83h autonomous)",
+    "pm-2-3.json (Master Anchor Text · Operational Report BUENAVENTURA EXPRESS Berth 4)",
+    "pm-2-5.json (Toolbelt consolidado + Word Wall · 5 categorías × 5)",
+    "pm-2-6.json (Listening Manual de Supervivencia Oral · co-paralelo S4 · audio model Captain Lopera)",
+    "pm-2-10.json (Grammar Gr1 be · Gr2 pronouns · Gr3 a/an/the · Gr4 there is/are · Gr5 imperative)",
+    "pm-0-context.json (§5 SUCCESS · §9.1 L1 ~12% S4 single_guide_12_sessions · §5.7 pronunciation scaffolding)"
+  ],
+  "pm0_anchor": {
+    "cefr_ceiling": "A1.2",
+    "bloom_ceiling": "L3 Apply (no L4+)",
+    "l1_percentage_s4": 12,
+    "l1_percentage_rationale": "Curva A1.2→A2.1 single-guía 12 sesiones · S4 pertenece a Bloque Interno 1-2 (RAP-01/RAP-02 SMCP) con L1 ~12% para scaffolding de instrucciones procedimentales de la simulación oral · libre producción 0% L1",
+    "grammar_in_mission": [
+      "Gr1 be (I am · this is · the vessel is)",
+      "Gr2 pronouns (my · this · these · we)",
+      "Gr3 a/an + the (a container · the berth · an apprentice)",
+      "Gr4 there is / there are (there is one container on deck · there are six)",
+      "Gr5 imperative (check the bow · go to berth four · stand by)"
+    ],
+    "functions_activated": [
+      "F1 Greetings & identification (radio check · this is Andrea Mosquera)",
+      "F2 Give information (vessel position · berth number · cargo status)",
+      "F3 Describe (ship parts · port infrastructure · operational status)",
+      "F4 Express opinion light (the dock is clear · the cargo is ready)",
+      "F5 Request politely / SMCP (say again · stand by · please confirm)"
+    ],
+    "feedback_mode_dominant": "Recast during rehearsal + Explicit correction on pronunciation focus_words + Acceptance of fluency errors during free production · Observation checklist PM-4.1 during graded performance",
+    "success_factors_applied": [
+      "Salience (pronunciation cards with IPA + stress dots + minimal pairs · port/pour · ship/sheep · berth/birth · deck/desk)",
+      "Use (productive speaking task with verifiable outcome · radio log filled by partner)",
+      "Connection (every chunk from S2 Reading · S2 Vocab · S3 Grammar · S4 Listening)",
+      "Context (authentic 3-min radio simulation · SMCP register · Puerto de Buenaventura · Berth 4)",
+      "Emotion (low-stakes rehearsal → supportive partner → graded performance · Andrea-as-Self mantle)",
+      "Spaced repetition (4th encounter of Toolbelt 25 core: Reading S2 · Vocab S2 · Listening S4 · Speaking S4)",
+      "Synergy (Speaking Mission consolidates all prior skills · evidencia E4 Desempeño formal SENA)"
+    ]
+  },
+  "universe_anchor": {
+    "universe_id": "IMARPOR-CC maritime",
+    "characters_active": [
+      "Andrea Mosquera (aprendiz SENA · learner-as-self · operadora del muelle · Channel 16 VHF)",
+      "Captain Lopera (cliente externo permanente · capitán del BUENAVENTURA EXPRESS · interlocutor radio)",
+      "Capitán Restrepo (mentor SENA · supervisor de turno · audita la radio simulation)",
+      "Crew member del BUENAVENTURA EXPRESS (rol del partner B en role-play cara-a-cara)"
+    ],
+    "scenario_setting": "Puerto de Buenaventura · Berth 4 · 07:00 · primera operación de atraque del BUENAVENTURA EXPRESS · radio VHF Channel 16 + comunicación cara-a-cara con crew",
+    "mission_core_scenario": "ANDREA REPORTS BERTHING STATUS TO CAPTAIN LOPERA — radio simulation SMCP de 3 minutos donde el aprendiz (rol Andrea) reporta el estado del berth + posición del vessel + cargo readiness al partner (rol Captain Lopera) que rellena un Berthing Status Sheet de 5 slots.",
+    "information_gap_genuine": "Partner A (Captain Lopera) tiene un Berthing Status Sheet con 5 slots VACÍOS (vessel name · berth number · cargo count · port/starboard side · ETA). Partner B (Andrea) tiene una Operational Card con los 5 datos COMPLETOS. Captain Lopera debe extraer info por radio; Andrea debe proveerla con SMCP estandarizado.",
+    "deliverable": "Berthing Status Sheet completo (verificable contra Operational Card) + audio recording de 3 min + checklist de observación PM-4.1 firmado por instructor",
+    "mission_variants": [
+      "Variant 1 (default · Arquetipo A+B+D dominante): Radio simulation SMCP — Andrea reports berthing status to Captain Lopera (3 min)",
+      "Variant 2 (Arquetipo B+E): Berthing coordination role-play cara-a-cara con crew member del BUENAVENTURA EXPRESS en el muelle (3 min)",
+      "Variant 3 (Arquetipo B+C): Operational pitch a panel evaluador (Captain Lopera + Capitán Restrepo) — Andrea presenta plan de descarga (3 min)",
+      "Variant 4 (Arquetipo D+B): Captain Restrepo briefing rehearsal — ensayo guiado del reporte de fin de turno (3 min)"
+    ]
+  },
+  "integration_all_archetypes_policy": {
+    "applicable_to_this_pm": true,
+    "archetypes_integrated": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "integration_mode": "MENÚ DE ARQUETIPOS — el instructor combina A+B+D como núcleo y elige C o E según preferencia · todos documentados con frases fijas + Language Bank + Micro-Cápsulas",
+    "bloom_ceiling": "L3 Apply (aplicar estructuras gramaticales y chunks SMCP en simulación · NO analizar/evaluar/crear)",
+    "rationale": "Estilo mgv_compendio_metodologico declarado por instructor en arquetipos-elegidos.json exige documentar TODOS los arquetipos como menú. PM-2.8 v2.0 absorbe pronunciation scaffolding (PM-2.7 deprecated) y consolida 5 arquetipos en un solo Activity Card. Arquetipo D actúa como host de la pronunciation scaffolding absorbida."
+  },
+  "identity": {
+    "pm_id": "PM-2.8",
+    "pm_name": "Speaking — The Mission",
+    "subfase_guia_sena": "3.3 Actividades de apropiación del conocimiento",
+    "ubicacion_guia": "Sección 3.4 Transferencia",
+    "conjunto": "B — Oral (Listening → [Pronunciation absorbed] → Speaking)",
+    "tipo_evidencia_sena": "Desempeño (E4 · evaluada con Escala de Estimación PM-4.1)",
+    "instrumento": "Learner's Cue Card + Instructor's Guide + Berthing Status Sheet + Operational Card",
+    "estructura": "MENÚ DE ARQUETIPOS — el instructor elige y combina (mgv_compendio_metodologico)",
+    "rol_en_sistema": "El aprendiz USA TODOS los chunks del Toolbelt 25 + Manual de Supervivencia Oral en una simulación oral del entorno laboral marítimo-portuario · genera evidencia E4 Desempeño formal SENA (5 pts)"
+  },
+  "content": {
+    "speaking_mission": {
+      "title": "THE MISSION — Berthing Status Radio Report (BUENAVENTURA EXPRESS)",
+      "genre": "Radio simulation SMCP · briefing operativo de atraque · maritime VHF communication",
+      "mission_brief_l1": "Tu misión: eres Andrea Mosquera en su primer turno de atraque. El BUENAVENTURA EXPRESS llegó a Berth 4. Captain Lopera está en el puente y necesita confirmar por radio VHF Channel 16 el estado del muelle, la posición del vessel y la cantidad de containers listos para descargar. Hablas inglés operativo (SMCP). No tienes que hablar perfecto — tienes que comunicarte con claridad operativa. Tres minutos por radio. Plan B: cara-a-cara con un crew member en el muelle.",
+      "mission_brief_l2": "Andrea, this is Captain Lopera on BUENAVENTURA EXPRESS. Radio check. Please report berthing status. Stand by.",
+      "duration_minutes": 3,
+      "register": "SMCP-aligned operational English (radio · imperative · short utterances ≤ 8 words avg)",
+      "deliverable": "Completed Berthing Status Sheet (5 slots filled by partner from oral input) + 3-min audio recording (.m4a) + PM-4.1 observation checklist firmado",
+      "verifiable_outcome": "Si el partner llena los 5 slots correctos del Berthing Status Sheet escuchando solo al aprendiz → tarea cumplida. Si falla ≥2 slots → re-rehearsal con scaffolding D antes de re-grabación.",
+      "communication_rule": "SMCP estricto · 'over' al final del turno · 'out' al cerrar conversación · NUNCA ambos · spell numbers digit-by-digit (one-six no sixteen para Channel 16)"
+    },
+    "archetype_A_GAP_TASKS": {
+      "name": "GAP TASKS — Information Gap Genuino",
+      "techniques_applied": [
+        "Information-gap (genuino · Berthing Status Sheet con 5 slots vacíos)",
+        "Reasoning-gap light (¿por qué Berth 4 y no Berth 3? · port side vs starboard side decisión)"
+      ],
+      "bloom_demand": "L2 Understand → L3 Apply",
+      "setup": {
+        "partner_a_role": "Captain Lopera — recibe radio · Berthing Status Sheet con 5 slots VACÍOS (vessel · berth # · cargo count · side · ETA)",
+        "partner_b_role": "Andrea Mosquera — emite radio · Operational Card con 5 datos COMPLETOS",
+        "info_asymmetry": "Genuina: Lopera no puede ver la Operational Card · Andrea no puede ver la Sheet · partner solo escucha"
+      },
+      "language_bank": [
+        "BUENAVENTURA EXPRESS, this is Andrea Mosquera, Berth 4, over.",
+        "Vessel is at Berth 4, port side alongside.",
+        "There are six containers on deck.",
+        "ETA confirmed at zero seven hundred.",
+        "Please confirm, over."
+      ],
+      "fixed_phrases_smcp": [
+        "Radio check · Stand by · Say again · Read back · Over · Out · Roger · Wilco"
+      ],
+      "micro_capsule": "> AUDIO CUE: SMCP uses 'over' to end turn · 'out' to end conversation · NEVER both. Channel 16 numbers spoken digit-by-digit: 'one-six' not 'sixteen'."
+    },
+    "archetype_B_ROLE_BASED_SPEAKING": {
+      "name": "ROLE-BASED SPEAKING — Mantle of the Expert (Andrea-as-Self)",
+      "techniques_applied": [
+        "Mantle of the Expert (aprendiz ES Andrea operadora)",
+        "Help Desk light (crew pregunta dónde está el container)",
+        "Daily Scrum micro (3 frases de status fin de turno)",
+        "Client Presentation (Variant 3 panel pitch)"
+      ],
+      "bloom_demand": "L3 Apply",
+      "setup": {
+        "expert_mantle": "Aprendiz adopta identidad profesional Andrea Mosquera — operadora SENA del Puerto de Buenaventura · habla con autoridad técnica (no como estudiante de inglés)",
+        "stakeholders": [
+          "Captain Lopera (cliente externo permanente)",
+          "Capitán Restrepo (mentor · audita)",
+          "Crew BUENAVENTURA EXPRESS (interlocutor secundario)"
+        ],
+        "mantle_protection": "El aprendiz NUNCA dice 'I am a student' · siempre dice 'I am the apprentice operator at Berth 4'"
+      },
+      "language_bank": [
+        "Good morning, Captain. I am the apprentice operator.",
+        "This is my first shift at Berth 4.",
+        "We are ready for berthing.",
+        "The crew is on deck.",
+        "Mentor Restrepo is here with me."
+      ],
+      "micro_capsule": "> SAFETY RULE: Mantle = identidad profesional · si falla pronunciación, el rol se mantiene · no romper personaje. Aprendiz nunca pide ayuda en español durante simulación grabada."
+    },
+    "archetype_C_MULTIMEDIA_OUTPUT": {
+      "name": "MULTIMEDIA OUTPUT — Audio Log + Optional Video Pitch",
+      "techniques_applied": [
+        "Podcast monologue micro (1 min log de fin de turno)",
+        "Audio recording obligatorio para evidencia E4",
+        "Video presentation opcional (operational pitch a panel · Variant 3)",
+        "Interview Recording (post-mission · partner entrevista 30s)"
+      ],
+      "bloom_demand": "L3 Apply (sintetizar 5 datos en log oral · NO crear contenido nuevo)",
+      "setup": {
+        "primary_format": "Audio recording 3 min (radio simulation) — obligatorio para E4",
+        "optional_format": "Video 90s — operational pitch a panel (Variant 3)",
+        "device": "Tablet/smartphone con grabadora · 1 por dupla · Audacity en aula opcional",
+        "output_filename_convention": "S4_Speaking_<aprendiz_id>_<fecha>.m4a"
+      },
+      "language_bank": [
+        "End of shift report.",
+        "Berth 4. BUENAVENTURA EXPRESS. Six containers offloaded.",
+        "No incidents.",
+        "Apprentice Andrea Mosquera, signing off."
+      ],
+      "micro_capsule": "> AUDIO CUE: Habla a 30 cm del micrófono · sin viento · no tapes la boca con la radio. Volumen operativo medio · evita susurro y grito."
+    },
+    "archetype_D_REHEARSAL_AND_SCAFFOLDING": {
+      "name": "REHEARSAL & SCAFFOLDING — Guided Role-Play with Cue Cards (HOST DE PRONUNCIATION)",
+      "techniques_applied": [
+        "Scaffolded Dialogue (3 niveles: lectura → cue card → libre)",
+        "Substitution Drill (cambia berth number · vessel name · cargo count)",
+        "Information Transfer (de Operational Card a radio)",
+        "Guided Role-Play with Cue Cards (frases SMCP impresas A6)"
+      ],
+      "bloom_demand": "L1 Remember → L2 Understand → L3 Apply (progresión clara · pronunciation primero)",
+      "rationale_host_de_pronunciacion": "Arquetipo D es el ANCLA de la absorción PM-2.7 → PM-2.8 · aquí vive todo el pronunciation_scaffolding. Rehearsal es donde el aprendiz practica focus_words + stress + minimal pairs ANTES de la producción libre grabada. Sin este paso, la simulación falla por unintelligibility.",
+      "rehearsal_progression": {
+        "step_1_lectura_modelo": "Aprendiz LEE en voz alta el script SMCP completo (2 min · L1 12% para instrucciones)",
+        "step_2_shadowing": "Aprendiz hace shadowing del audio model de PM-2.6 Listening (Captain Lopera voice · 1 min · 30s loops)",
+        "step_3_cue_card": "Aprendiz produce con Cue Card (frases clave impresas · partner activa info gap · 2 min)",
+        "step_4_libre_grabado": "Aprendiz produce SIN Cue Card · radio simulation grabada (3 min · evidencia E4)",
+        "step_5_recast_feedback": "Instructor da recast en errores de pronunciación focus_words · explicit correction solo en stress patterns críticos"
+      },
+      "language_bank": [
+        "(Substitution drill) Berth ___ → 1, 2, 3, 4, 5",
+        "(Substitution drill) There ___ ___ container(s) on deck → is/are + number",
+        "(Cue card opener) BUENAVENTURA EXPRESS, this is ___, over.",
+        "(Cue card closer) Standing by on Channel 16, out."
+      ],
+      "micro_capsule": "> GRAMMAR RULE: 'There is' + singular · 'There are' + plural · NUNCA 'there have'. SMCP nunca usa contracciones: 'I am' no 'I'm'."
+    },
+    "pronunciation_scaffolding": {
+      "_absorbed_from": "PM-2.7 (DEPRECATED · v2.0 absorption)",
+      "_absorption_evidence": "PM-2.7 Pronunciation prompt fue deprecado en master prompt PM-2.8 v2.0 (2026-04-13). Todos los contenidos de pronunciación (trabalenguas técnicos · análisis de fonemas problemáticos · prosodia · shadowing de chunks · ear training contextualizado) ahora viven dentro del Arquetipo D Rehearsal & Scaffolding de PM-2.8 como scaffolding implícito que prepara la simulación oral. PM-2.8 v2.0 §INTEGRACIÓN DE PRONUNCIATION SCAFFOLDING documenta la absorción explícita.",
+      "host_archetype": "D (Rehearsal & Scaffolding)",
+      "focus_words": [
+        {
+          "word": "berth",
+          "ipa": "/bɜːθ/",
+          "stress": "single syllable · long vowel + voiceless 'th'",
+          "es_difficulty": "Hispanohablante caribeño tiende a decir /bers/ o /berts/ — pierde el /θ/",
+          "drill": "berth · birth · berth · birth · berth (minimal pair · IPA stress dot)"
+        },
+        {
+          "word": "vessel",
+          "ipa": "/ˈvɛs.əl/",
+          "stress": "VES-sel (stress en sílaba 1)",
+          "es_difficulty": "Hispanohablante tiende a decir /be-SEL/ con stress en sílaba 2 + fusión /v/-/b/",
+          "drill": "VES-sel · VES-sel · the VES-sel is at Berth 4"
+        },
+        {
+          "word": "starboard",
+          "ipa": "/ˈstɑːr.bərd/",
+          "stress": "STAR-board (stress en sílaba 1)",
+          "es_difficulty": "Hispanohablante tiende a leer 'star-BOARD' con stress en sílaba 2 + decir /board/ como /bo-ard/ disilábico",
+          "drill": "STAR-board side · STAR-board side · vessel is STAR-board side alongside"
+        },
+        {
+          "word": "container",
+          "ipa": "/kənˈteɪ.nər/",
+          "stress": "con-TAI-ner (stress en sílaba 2)",
+          "es_difficulty": "Hispanohablante calca el español 'con-tai-NER' con stress final · diptongo /eɪ/ se monoptonga",
+          "drill": "con-TAI-ner · con-TAI-ner · six con-TAI-ners on deck"
+        },
+        {
+          "word": "berthing",
+          "ipa": "/ˈbɜːr.θɪŋ/",
+          "stress": "BERTH-ing (stress en sílaba 1)",
+          "es_difficulty": "Doble dificultad: /θ/ + /-ɪŋ/ nasal · tienden a decir /BER-tin/ o /BER-ting/ con /n/ alveolar",
+          "drill": "BERTH-ing · BERTH-ing · ready for BERTH-ing operations"
+        },
+        {
+          "word": "shift",
+          "ipa": "/ʃɪft/",
+          "stress": "single syllable · /ʃ/ vs /tʃ/",
+          "es_difficulty": "Hispanohablante caribeño confunde /ʃ/ (sh) con /tʃ/ (ch) — dice 'CHift' por 'shift'",
+          "drill": "shift / chip · shift / chip · my SHIFT starts at six"
+        },
+        {
+          "word": "starboard alongside",
+          "ipa": "/ˈstɑːr.bərd əˈlɒŋ.saɪd/",
+          "stress": "STAR-board a-LONG-side (compound · 2 stress peaks)",
+          "es_difficulty": "Frase larga con doble stress · ritmo se pierde · tendencia a stress plano monótono",
+          "drill": "STAR-board · a-LONG-side · STAR-board a-LONG-side"
+        }
+      ],
+      "minimal_pairs": [
+        {
+          "pair": "berth / birth",
+          "ipa": "/bɜːθ/ vs /bɜːθ/",
+          "note": "homófonos en GA — contexto resuelve · drill discriminación auditiva contextualizada"
+        },
+        {
+          "pair": "ship / sheep",
+          "ipa": "/ʃɪp/ vs /ʃiːp/",
+          "note": "vocal corta vs larga · 'the SHIP is at the dock' (no the SHEEP)"
+        },
+        {
+          "pair": "port / pour",
+          "ipa": "/pɔːrt/ vs /pɔːr/",
+          "note": "con/sin /t/ final · 'the PORT side' (no the POUR side)"
+        },
+        {
+          "pair": "deck / desk",
+          "ipa": "/dɛk/ vs /dɛsk/",
+          "note": "DECK del barco vs DESK de oficina · contexto operativo decide"
+        }
+      ],
+      "stress_patterns": [
+        "Compound stress: STAR-board side · BERTH-ing op-er-A-tions · CON-tai-ner ship",
+        "Imperative stress (SMCP): STAND by · SAY a-gain · READ back · CHECK the bow",
+        "Sentence rhythm A1.2: dactyl-like — 'BERTH four · ON deck · SIX con-TAI-ners' (stress cada 2-3 sílabas)"
+      ],
+      "rehearsal_techniques": [
+        "Trabalengua técnico marítimo: 'Six ships shift containers starboard alongside Berth 4'",
+        "Shadowing del audio model PM-2.6 (Captain Lopera voice · 30s loops · 3 rondas)",
+        "Choral repetition cara-a-cara con partner (3 rondas · volume gradient: whisper → operational → loud)",
+        "Backchaining de frases largas: '...alongside' → 'side alongside' → 'starboard side alongside' → 'is starboard side alongside'",
+        "Ear training contextualizado: instructor lee 5 frases · aprendiz marca cuál tiene 'berth' vs 'birth' · 'ship' vs 'sheep'"
+      ],
+      "fonemas_problematicos_es_speakers": [
+        "/θ/ voiceless dental fricative (berth · north · earth) — no existe en español caribeño · sustituido por /s/ o /t/",
+        "/ʃ/ vs /tʃ/ (ship/chip · shift/chift) — confusión sistemática",
+        "/v/ vs /b/ (vessel/bessel) — fusión bilabial · español no distingue",
+        "Diphthong /eɪ/ (container · day · eight) — tendencia a monoptongar a /e/",
+        "Final consonant clusters (-rds en starboards · -ngs en moorings) — tendencia a elidir consonante final"
+      ],
+      "ipa_card_format": "Tarjeta impresa A6 con: word · IPA · stress dots (•) · drawing del concepto marítimo · contexto SMCP · QR a audio model PM-2.6",
+      "evaluation_role": "Pronunciation NO se califica numéricamente como producto independiente en E4 (es scaffolding · no producto). Sí se observa en checklist PM-4.1 criterio C3 (Pronunciación inteligible) — escala 0-1-2 · contribuye 1/5 pts a E4."
+    },
+    "archetype_E_INTERACTION_DYNAMICS": {
+      "name": "INTERACTION DYNAMICS — Mingle Pre-Mission + Spin-off Post-Mission",
+      "techniques_applied": [
+        "Mingle (pre-mission warm-up · saludos SMCP rotando 5 partners)",
+        "Quiz Your Classmate (post-mission · partner pregunta sobre Berthing Status del otro)",
+        "Spin-offs (variantes Variant 2-4)",
+        "A Gift (al final cada aprendiz regala una frase SMCP a otro)"
+      ],
+      "bloom_demand": "L1 Remember → L3 Apply",
+      "setup": {
+        "pre_mission_mingle_3min": "Aprendices rotan 5 partners · cada vez ensayan: 'Good morning, this is ___, apprentice operator at Berth ___, over.'",
+        "post_mission_quiz_3min": "Partner B pregunta a Partner A: '¿How many containers? · ¿Which berth? · ¿Which side?' — partner B responde sin notas",
+        "spin_off_variants": "Variant 2 (cara-a-cara crew) · Variant 3 (panel pitch) · Variant 4 (Restrepo briefing rehearsal)"
+      },
+      "language_bank": [
+        "(Mingle opener) Good morning, I am ___, apprentice operator at Berth ___.",
+        "(Quiz prompt) How many containers on deck?",
+        "(Quiz prompt) Which side, port or starboard?",
+        "(A Gift) My gift to you: 'Stand by on Channel 16.'"
+      ],
+      "micro_capsule": "> SAFETY RULE: Mingle es low-stakes · errores se celebran · NO corrección durante mingle. La grabación E4 viene después · mingle es warm-up emocional."
+    },
+    "interaction_dynamics_setup": {
+      "grouping": "Duplas (A+B) · 12 aprendices = 6 duplas simultáneas",
+      "rotation": "Mid-session rotation: cada dupla cambia de Variant después de 30 min · rotation interna A↔B después de primera grabación",
+      "physical_setup": "Aula en U · 6 mesas separadas 2m · 1 tablet/grabadora por mesa · radio simulada (manos como handset · NO walkie real para evitar interferencia con grabación)",
+      "instructor_movement": "Instructor rota observando con checklist PM-4.1 · 5 min por dupla · feedback diferido post-grabación",
+      "noise_protocol": "Volumen operativo medio · si una dupla excede, instructor levanta tarjeta amarilla (sin interrumpir simulación · feedback al final)"
+    }
+  },
+  "evaluation_rubric_e4_speaking": {
+    "evidence_id": "E4",
+    "evidence_type": "Desempeño SENA",
+    "skill": "Speaking (Producción Oral)",
+    "total_points": 5,
+    "instrument_type": "Escala de Estimación (PM-4.1)",
+    "evaluation_technique": "Observación directa + Audio recording revisión post-hoc",
+    "scoring_scale": "0 (no logrado) · 1 (en proceso) · 2 (logrado)",
+    "criteria": [
+      {
+        "id": "C1",
+        "name": "Cumplimiento de tarea (Task Achievement)",
+        "max_points": 1,
+        "descriptor_2": "Partner llena los 5 slots del Berthing Status Sheet correctamente solo escuchando",
+        "descriptor_1": "Partner llena 3-4 slots correctamente",
+        "descriptor_0": "Partner llena ≤ 2 slots correctamente"
+      },
+      {
+        "id": "C2",
+        "name": "Uso de Toolbelt 25 términos",
+        "max_points": 1,
+        "descriptor_2": "Usa ≥ 8 términos del Toolbelt en contexto correcto",
+        "descriptor_1": "Usa 5-7 términos en contexto correcto",
+        "descriptor_0": "Usa ≤ 4 términos o uso descontextualizado"
+      },
+      {
+        "id": "C3",
+        "name": "Pronunciación inteligible (PM-2.7 absorbido)",
+        "max_points": 1,
+        "descriptor_2": "Focus_words clave (berth · vessel · starboard · container · berthing) inteligibles · stress patterns correctos en ≥ 4/5",
+        "descriptor_1": "Focus_words inteligibles en 3/5 · stress correcto en 2-3/5",
+        "descriptor_0": "≤ 2 focus_words inteligibles o stress sistemáticamente plano"
+      },
+      {
+        "id": "C4",
+        "name": "Gramática A1.2 (Gr1-Gr5)",
+        "max_points": 1,
+        "descriptor_2": "Usa be · pronouns · a/an/the · there is/are · imperative correctamente en ≥ 4/5 estructuras",
+        "descriptor_1": "Errores en 1-2 estructuras pero comunicación se mantiene",
+        "descriptor_0": "Errores sistemáticos rompen comunicación"
+      },
+      {
+        "id": "C5",
+        "name": "Registro SMCP (Standard Marine Communication Phrases)",
+        "max_points": 1,
+        "descriptor_2": "Usa ≥ 4 frases SMCP correctas (radio check · stand by · say again · over · out · roger · wilco)",
+        "descriptor_1": "Usa 2-3 frases SMCP correctas",
+        "descriptor_0": "≤ 1 frase SMCP o uso incorrecto"
+      }
+    ],
+    "passing_threshold": "3/5 puntos (60%) · alineado con criterio FPI SENA",
+    "feedback_mode": "Diferido post-grabación · instructor entrega checklist firmado + audio note de 30s con 1 fortaleza + 1 área de mejora"
+  },
+  "activity_card": {
+    "pm_id": "PM-2.8",
+    "pm_name": "Speaking — The Mission",
+    "session": 4,
+    "phase_sena": "Apropiación",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "procedimental",
+        "statement": "Participar en simulación oral de operación de atraque (radio VHF SMCP): rol de aprendiz-operadora reportando estado de Berth 4 al Captain Lopera del BUENAVENTURA EXPRESS, integrando vocabulario portuario del Toolbelt 25, gramática A1.2 (Gr1-Gr5) y pronunciación inteligible de focus_words marítimos absorbidos de PM-2.7.",
+        "didactic_strategy": "Juego de roles + Mantle of the Expert",
+        "didactic_technique": "Role play SMCP + Information Gap genuino + Rehearsal scaffolding (con pronunciation absorbida de PM-2.7)",
+        "bloom_level": "L3 Apply",
+        "cefr_level": "A1.2"
+      }
+    ],
+    "hours": {
+      "direct": 3.0,
+      "autonomous": 0.83,
+      "rationale": "Sesión S4 Apropiación · 3.0h direct + 0.83h autónomo · paralelo con PM-2.6 Listening (S4 misma sesión · ~3h/3h split sobre 6h directas totales de la sesión)",
+      "co_parallel_note": "PM-2.8 + PM-2.6 comparten S4 · Listening (PM-2.6) alimenta input del Speaking (Captain Lopera audio model usado en step_2_shadowing)"
+    },
+    "evidence": {
+      "generates_evidence": true,
+      "evidence_id": "E4",
+      "type": "Desempeño",
+      "description": "El aprendiz demuestra capacidad de comunicación oral en inglés marítimo (SMCP) ejecutando rol de aprendiz-operadora portuaria con fluidez A1.2, precisión gramatical Gr1-Gr5, pronunciación inteligible de focus_words y adecuación al contexto de operación de atraque en Puerto de Buenaventura.",
+      "evaluation_technique": "Observación directa + revisión de audio recording",
+      "instrument_number": 4,
+      "instrument_type": "Escala de Estimación (PM-4.1)",
+      "max_points": 5,
+      "passing_threshold": 3
+    },
+    "environment": {
+      "type": "Aula taller (simulación marítima)",
+      "physical_layout": "Aula en U · 6 mesas separadas 2m · espacio central libre para mingle pre-mission · señalética 'Berth 4' visible · póster del BUENAVENTURA EXPRESS",
+      "materials": [
+        "Tablet/smartphone con grabadora de audio (1 por dupla · 6 dispositivos)",
+        "Berthing Status Sheet impreso (1 por dupla · 5 slots vacíos)",
+        "Operational Card impresa (1 por dupla · 5 datos completos)",
+        "Cue Cards SMCP impresas (1 set por aprendiz · frases fijas A6)",
+        "Tarjetas IPA de focus_words (7 tarjetas A6 con IPA + stress dots + QR audio · 1 set por dupla)",
+        "Lista de trabalenguas técnicos marítimos (1 hoja · trabalengua principal 'Six ships shift containers starboard alongside Berth 4')",
+        "Lista de minimal pairs (berth/birth · ship/sheep · port/pour · deck/desk)",
+        "Proyector para audio model PM-2.6 Listening (Captain Lopera voice · 30s loops)",
+        "Reloj visible (timing 3 min por simulación)",
+        "Tarjeta amarilla de noise protocol (1 por instructor)"
+      ],
+      "instructors": "Instructor de inglés marítimo (Sergio Cortés Perdomo o equivalente con CEFR B2+ + experiencia SMCP)",
+      "audio_recording_protocol": "Cada simulación se graba en formato .m4a · nombre S4_Speaking_<aprendiz_id>_<fecha>.m4a · almacenamiento en carpeta del run · respaldo evidencia E4"
+    },
+    "contributes_to_consolidated_quiz": false,
+    "quiz_skill": null,
+    "quiz_points": 0,
+    "quiz_item_count": 0
+  },
+  "pm0_protocol_session_level": {
+    "session": 4,
+    "fase_sena": "Apropiación",
+    "cefr_target_in_session": "A1.2 strict (no A2.1 leak)",
+    "bloom_ceiling": "L3 Apply",
+    "l1_percentage_target": 12,
+    "l1_distribution": {
+      "instructions_l1": "L1 dominante en mission_brief inicial (warm-up · 2 min)",
+      "rehearsal_l1": "L1 ~15% durante scaffolding D (explicaciones de IPA · stress · fonemas problemáticos)",
+      "free_production_l1": "L1 0% durante simulación grabada (3 min · solo inglés · monolingual mode)",
+      "feedback_l1": "L1 ~25% durante feedback diferido (recast en español sobre errores en inglés)"
+    },
+    "grammar_groups_active": [
+      "Gr1 be (Practice)",
+      "Gr2 pronouns (Practice)",
+      "Gr3 a/an/the (Practice)",
+      "Gr4 there is/are (Intro)",
+      "Gr5 imperative (Practice)"
+    ],
+    "grammar_load_check": "5 grupos activos · ≤ 2 en Intro (Gr4 only) · cumple regla pm-0-context.l1_percentage_per_session §9.2 grammar_group_activation",
+    "functions_active": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5"
+    ],
+    "feedback_mode_session": "Recast durante rehearsal (Arquetipo D) + Explicit correction solo en focus_words pronunciation + Acceptance of fluency errors durante producción libre + Diferido post-grabación con audio note 30s",
+    "evidence_generated": "E4 Speaking (Desempeño · 5 pts · PM-4.1)",
+    "co_parallel_session": "PM-2.6 Listening (Manual de Supervivencia Oral · misma S4 · audio model alimenta speaking · Captain Lopera voice)",
+    "shifts_metodologicos": [
+      "S4 marca el shift de input-dominated (S1-S3 Reading/Listening) a output-dominated (S4 Speaking · S5+ Functions/Writing)",
+      "PM-2.7 deprecation efectiva en S4 — pronunciation absorbida en scaffolding D · no actividad standalone",
+      "Mantle of the Expert activado por primera vez en el run · Andrea-as-Self consolida identidad profesional SENA"
+    ]
+  },
+  "validacion": {
+    "block_1_cefr_strict_a12": {
+      "check": "Todo el output (mission brief · language banks · cue cards · pronunciation drills) está estrictamente en A1.2",
+      "evidence": "Oraciones ≤ 8 palabras · vocabulario solo del Toolbelt 25 + SMCP básico · gramática Gr1-Gr5 únicamente · sin condicionales · sin past tenses",
+      "passed": true
+    },
+    "block_2_bloom_ceiling_l3": {
+      "check": "Bloom L3 Apply máximo · NO L4 Analyze · NO L5 Evaluate · NO L6 Create",
+      "evidence": "Tareas son APLICAR estructuras (radio simulation con datos provistos en Operational Card) · NO pedir análisis de pros/contras · NO pedir creación de nuevo guión",
+      "passed": true
+    },
+    "block_3_universe_anchor_imarpor": {
+      "check": "Tarea oral aterriza en universo IMARPOR-CC marítimo · NO graphic-design · NO portfolio fonts",
+      "evidence": "Andrea Mosquera + Captain Lopera + Capitán Restrepo + BUENAVENTURA EXPRESS + Puerto de Buenaventura + Berth 4 + SMCP + Channel 16 VHF · NO Pixel & Ink Studio · NO Sophia · NO La Esquina bakery · NO Andrés",
+      "passed": true,
+      "anti_mgv_check": "PASSED — universo MGV (Andrés/Sophia/bakery/Pixel & Ink Studio) NO aparece en ningún campo del output. Universo IMARPOR consistente con pm-2-3 Master Anchor."
+    },
+    "block_4_pm27_absorption_evidence": {
+      "check": "Pronunciation scaffolding está presente · absorbido de PM-2.7 deprecated · documentado explícitamente",
+      "evidence": "Bloque pronunciation_scaffolding presente con: focus_words (7 entradas marítimas · berth/vessel/starboard/container/berthing/shift/starboard alongside) · minimal_pairs (4 pares: berth/birth, ship/sheep, port/pour, deck/desk) · stress_patterns (3 categorías) · rehearsal_techniques (5 técnicas: trabalengua, shadowing, choral, backchaining, ear training) · fonemas_problematicos_es_speakers (5 fonemas: /θ/, /ʃ/-/tʃ/, /v/-/b/, /eɪ/, clusters). Campo _absorbed_from: 'PM-2.7 (DEPRECATED · v2.0 absorption)' explícito. Host archetype D documentado.",
+      "passed": true,
+      "anti_pm27_deprecation_check": "PASSED — absorción documentada · no hay actividad standalone de pronunciación · scaffolding integrado en Arquetipo D · evaluation_role declara contribución 1/5 pts via C3 PM-4.1"
+    },
+    "block_5_archetypes_5_integrated": {
+      "check": "Los 5 arquetipos (A B C D E) están documentados con frases fijas + Language Bank + Micro-Cápsula",
+      "evidence": "archetype_A_GAP_TASKS · archetype_B_ROLE_BASED_SPEAKING · archetype_C_MULTIMEDIA_OUTPUT · archetype_D_REHEARSAL_AND_SCAFFOLDING · archetype_E_INTERACTION_DYNAMICS — todos presentes con language_bank + micro_capsule + techniques_applied + bloom_demand",
+      "passed": true
+    },
+    "block_6_evidence_e4_5pts": {
+      "check": "Genera evidencia E4 Speaking · 5 pts formal · Desempeño SENA · Escala de Estimación PM-4.1",
+      "evidence": "evaluation_rubric_e4_speaking presente con 5 criterios (C1 Task Achievement · C2 Toolbelt · C3 Pronunciación · C4 Gramática · C5 SMCP) · cada uno 1 pt · escala 0-1-2 · passing_threshold 3/5",
+      "passed": true
+    },
+    "block_7_toolbelt_25_usage": {
+      "check": "Toolbelt 25 términos PM-2.5 (5 categorías × 5) se usan en la tarea oral",
+      "evidence": "Language banks incluyen: vessel · bow · stern · deck · port · dock · berth · container · port side · starboard · captain · apprentice · mentor · crew · arrive · shift · cargo · berthing · stand by · over · out · radio check · say again · channel · roger · Criterio C2 evalúa uso ≥ 8 términos",
+      "passed": true
+    },
+    "block_8_l1_percentage_s4": {
+      "check": "L1 ~12% en S4 · cumple curva pm-0-context single_guide_12_sessions",
+      "evidence": "l1_distribution especifica: instructions L1 dominante (warm-up 2 min) · rehearsal L1 ~15% · free production L1 0% (simulación grabada) · feedback L1 ~25% · promedio ponderado ~12%",
+      "passed": true
+    },
+    "block_9_anti_copia_fantasma": {
+      "check": "Contenido ORIGINAL para IMARPOR-CC · NO copia de MGV-2026-04-20 (Pixel & Ink Studio · Andrés/Sophia/bakery)",
+      "evidence": "Personajes (Andrea Mosquera/Captain Lopera/Capitán Restrepo/Crew BUENAVENTURA EXPRESS) · escenario (Puerto de Buenaventura/Berth 4/BUENAVENTURA EXPRESS/Channel 16 VHF) · vocabulario (vessel/berth/starboard/container/SMCP/berthing) · trabalengua original ('Six ships shift containers starboard alongside Berth 4') · minimal pairs marítimos (berth/birth · ship/sheep · port/pour · deck/desk) — todos originales · NO heredados de ref operacional MGV. Anti-MGV check passed: ningún string MGV (Andrés, Sophia, La Esquina, Pixel, Ink, bakery, logo, color, font, brief) aparece en el output.",
+      "passed": true
+    },
+    "block_10_enriched_false": {
+      "check": "enriched: false · espera Instructor Selection (Gate Humano 2)",
+      "evidence": "Campo enriched: false con _enriched_false_rationale explícito · espera selección de variante 1-4 antes de propagar a PM-2.11",
+      "passed": true
+    }
+  },
+  "siguiente_paso": {
+    "next_pm": "PM-2.9",
+    "next_pm_name": "Functions — Communicative Functions Worksheet",
+    "next_session": 5,
+    "next_phase_sena": "Apropiación",
+    "handoff_payload": [
+      "Toolbelt 25 términos consolidados (de PM-2.5)",
+      "Funciones F1-F5 activadas en speaking (referencia PM-2.8)",
+      "Audio recordings E4 como input de calibración para Functions",
+      "Pronunciation focus_words (de PM-2.7 absorbed) para reutilizar en F2 Give Information",
+      "Mantle of the Expert (Andrea-as-Self) consolidado para activar en S5 Functions"
+    ],
+    "instructor_action_required": "Gate Humano 2 — Instructor Selection: confirmar variante de tarea oral (Variant 1 default · radio simulation SMCP) o seleccionar Variant 2-4 antes de marcar enriched: true",
+    "downstream_pms": [
+      "PM-2.9 Functions (S5)",
+      "PM-2.11 GFPI-F-134 Row Assembler (post-enriched)"
+    ]
+  },
+  "enriched_at": "2026-04-29T16:30:00-05:00",
+  "enriched_by": "Sergio Cortés Perdomo",
+  "_enriched_review_note": "Aprobado en lote post Gate 2 review híbrido C+A 2026-04-29: spot check 4 gaps PASS (3 strict + 1 marginal PM-2.6 word_count 140 vs target 150 · discrepancia heurística split vs declared 178 · aceptado · regenerar opcional v1.1) · resumen ejecutivo 5 PMs sin gap PASS · arquitectura generaliza vs SMOKE clon (PM-2.11 PASS 14/16 idéntico · checks críticos 13/14/15/16 PASS)."
+}

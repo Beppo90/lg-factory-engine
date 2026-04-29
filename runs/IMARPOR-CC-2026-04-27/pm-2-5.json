@@ -1,0 +1,772 @@
+{
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "pm_code": "PM-2.5",
+  "pm_name": "Vocabulary, Literacy & Scenario Setup",
+  "pm_version": "2.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "cefr_level": "A1.2",
+  "session": 2,
+  "fase_sena": "Apropiación",
+  "generated_at": "2026-04-29",
+  "instructor": "Sergio Cortés Perdomo",
+  "previous_pms": [
+    "PM-2.1",
+    "PM-2.2",
+    "PM-2.3",
+    "PM-2.4"
+  ],
+  "archetypes_policy": "TODOS LOS 5 ARQUETIPOS INTEGRADOS (A+B+C+D+E) — decisión del instructor IMARPOR-CC-2026-04-27 · estilo mgv_compendio_metodologico",
+  "integration_all_archetypes_policy": {
+    "applicable_to_this_pm": true,
+    "archetypes_integrated": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "archetype_names": {
+      "A": "Phonics & Spelling",
+      "B": "Vocabulary Development",
+      "C": "Reading Fluency",
+      "D": "Writing Scaffolding",
+      "E": "Interactive Literacy"
+    },
+    "bloom_ceiling": "L3 Apply (vocabulary literacy A1.2 · NO HOTS)",
+    "rationale": "Estilo mgv_compendio_metodologico documenta los 5 arquetipos como menú metodológico · cada uno con frases fijas + Language Bank + Micro-Cápsulas. El instructor selecciona en Gate Humano 2 cuál(es) lleva al aula."
+  },
+  "pm0_anchor": {
+    "source_file": "pm-0-context.json",
+    "cefr_descriptor_ref": "§6.A1.2 — reconocer y producir vocabulario familiar marítimo-portuario en oraciones cortas",
+    "l1_policy_ref": "§9.1.single_guide_12_sessions — L1% S2 ≈ 30% (curva A1.2 inicial)",
+    "methodological_shift_ref": "§5.A1.2 — input semi-controlado, andamiaje fuerte, accuracy ≥ fluency",
+    "feedback_ref": "§5.6 — S2: recast oral en pronunciación, corrección explícita escrita en spelling de términos técnicos",
+    "stress_pronunciation_ref": "§5.8 — S2: patrones de sílaba fuerte en términos marítimos de 1-3 sílabas (berth, bow, cargo, port-side)",
+    "success_vocabulary_ref": "§5.10 — PM-2.5 activa los 7 factores SUCCESS sobre los 25 Toolbelt terms (5 cats × 5)",
+    "grammar_roadmap_ref": "§8.bloque_interno_1 — PM-2.5 recicla Grupo 1 'be' (presente) + Grupo 7 prepositions of place en contextos de fluencia léxica"
+  },
+  "universe_anchor": {
+    "continuity_with_pm23": "PM-2.3 presentó el Operational Report del BUENAVENTURA EXPRESS (Master Anchor 178 palabras) y el Toolbelt 25 (5 categorías × 5 términos) per GAP_2 OVERRIDE pm-1-2 _known_gaps. PM-2.5 consolida productivamente esos 25 términos.",
+    "continuity_with_pm24": "PM-2.4 produjo el primer borrador escrito del aprendiz (mini-reporte de turno emulando a Andrea). PM-2.5 toma ese borrador como fuente de ejemplos vivos para reciclar el Toolbelt.",
+    "role_in_s2": "PM-2.3 = exposición lectora · PM-2.4 = producción escrita guiada · PM-2.5 = consolidación productiva del vocabulario y scenario setup. Los tres componen Sesión 2.",
+    "characters_active": [
+      "Andrea Mosquera (lectora-escritora-modelo · recién egresada SENA · primer turno completo)",
+      "Captain Lopera (cliente externo · firma reportes · inglés lingua franca no-nativo)",
+      "Capitán Restrepo (supervisor SENA en puerto · valida pronunciación de Andrea)"
+    ],
+    "universe_extension": "Andrea inicia su 'Port Glossary' — un cuaderno de bolsillo donde toda oficial de muelle del Puerto de Buenaventura registra los 25 términos operativos del primer turno. El aprendiz construye el suyo en paralelo, mismo formato bolsillo.",
+    "scenario_setup": "Escenario S2: oficina del muelle (Berth 4, Puerto de Buenaventura) · 06:00 turno mañana · Andrea recibe el Operational Report físico de Captain Lopera · Capitán Restrepo entra a hacer quick check de vocabulario antes del atraque programado 07:30."
+  },
+  "identity": {
+    "codigo": "PM-2.5",
+    "nombre": "Vocabulary, Literacy & Scenario Setup",
+    "subfase_guia_sena": "3.3 Actividades de apropiación del conocimiento",
+    "ubicacion_guia": "Sección 3.3 Apropiación (consolida PM-2.3 + PM-2.4)",
+    "tipo_evidencia_sena": "N/A (scaffolding léxico-literario · alimenta Cuestionario S6 ítem Vocabulary 5pts)",
+    "instrumento": "Learner's Worksheet + Port Glossary (cuaderno de bolsillo)",
+    "estructura": "MENÚ DE ARQUETIPOS — TODOS INTEGRADOS (A+B+C+D+E) · estilo mgv_compendio_metodologico",
+    "rol_sistema": "CONSOLIDADOR LÉXICO-LITERARIO + SCENARIO SETUP — garantiza activación productiva de los 25 términos del Toolbelt y fija el universo narrativo IMARPOR para PM-2.6 (Listening) y PM-2.10 (Grammar)"
+  },
+  "content": {
+    "worksheet_title": "VOCABULARY, LITERACY & SCENARIO — The Toolbelt at Berth 4",
+    "guia_header": "IMARPOR-CC · Guía 1 · The Maritime Operations Pro · Nivel A1.2 · Sesión 2 (parte 3)",
+    "bilingual_instruction_block": {
+      "main_message_en": "You read the Operational Report. You wrote your first shift mini-report. Now you OWN the 25 words. In this session you spell them, see them, say them, sort them, and use them. Andrea opens her Port Glossary — you open yours.",
+      "main_message_es": "Leíste el Reporte Operativo. Escribiste tu primer mini-reporte de turno. Ahora HACES TUYAS las 25 palabras. En esta sesión las deletreas, las ves, las dices, las clasificas y las usas. Andrea abre su Port Glossary — tú abres el tuyo.",
+      "scenario_caption_en": "Setting: dock office, Berth 4, Port of Buenaventura · 06:00 · Captain Restrepo runs a quick vocabulary check before the BUENAVENTURA EXPRESS docks at 07:30.",
+      "scenario_caption_es": "Escenario: oficina del muelle, Berth 4, Puerto de Buenaventura · 06:00 · Capitán Restrepo hace un quick check de vocabulario antes del atraque del BUENAVENTURA EXPRESS a las 07:30."
+    },
+    "the_toolbelt": {
+      "policy_note": "GAP_2 OVERRIDE per pm-1-2 _known_gaps · 5 categorías × 5 términos = 25 términos (NO 20 strict canónico). Cada término incluye pronunciation_for_spanish + stress + categoría + ejemplo del Master Anchor o del borrador PM-2.4.",
+      "total_terms": 25,
+      "categories_count": 5,
+      "categorias": {
+        "sub_bloque_1_ship_port_anatomy": {
+          "name": "Ship & Port Anatomy",
+          "rap": "RAP-01 vocablos básicos",
+          "term_count": 5,
+          "terms": [
+            {
+              "n": 1,
+              "term": "berth",
+              "category": "Ship & Port Anatomy",
+              "definition_en": "the place at the dock where a ship stops",
+              "definition_es": "el lugar del muelle donde un buque atraca",
+              "ipa": "/bɜːθ/",
+              "pronunciation_for_spanish": "berz (la 'th' como una 'z' suave de 'caza' española)",
+              "stress": "1-syllable · primary stress on the only syllable [BERTH]",
+              "example_from_anchor": "The BUENAVENTURA EXPRESS is at Berth 4."
+            },
+            {
+              "n": 2,
+              "term": "bow",
+              "category": "Ship & Port Anatomy",
+              "definition_en": "the front part of a ship",
+              "definition_es": "la parte delantera del buque",
+              "ipa": "/baʊ/",
+              "pronunciation_for_spanish": "báu (rima con 'how' en inglés · NO con 'arco' bow de flecha)",
+              "stress": "1-syllable · [BOW]",
+              "example_from_anchor": "The bow is forward; the stern is aft."
+            },
+            {
+              "n": 3,
+              "term": "stern",
+              "category": "Ship & Port Anatomy",
+              "definition_en": "the back part of a ship",
+              "definition_es": "la parte trasera del buque",
+              "ipa": "/stɜːn/",
+              "pronunciation_for_spanish": "stern (con 'r' suave inglesa, no la 'r' fuerte española)",
+              "stress": "1-syllable · [STERN]",
+              "example_from_anchor": "The stern is aft of the bridge."
+            },
+            {
+              "n": 4,
+              "term": "port-side",
+              "category": "Ship & Port Anatomy",
+              "definition_en": "the left side of a ship looking forward",
+              "definition_es": "el costado izquierdo del buque mirando hacia proa",
+              "ipa": "/ˈpɔːt.saɪd/",
+              "pronunciation_for_spanish": "port-sáid",
+              "stress": "2-syllable compound · primary stress [PORT]-side",
+              "example_from_anchor": "The port-side is alongside the dock."
+            },
+            {
+              "n": 5,
+              "term": "starboard",
+              "category": "Ship & Port Anatomy",
+              "definition_en": "the right side of a ship looking forward",
+              "definition_es": "el costado derecho del buque mirando hacia proa",
+              "ipa": "/ˈstɑːbəd/",
+              "pronunciation_for_spanish": "stár-bord (la 'a' larga, la segunda sílaba muy débil)",
+              "stress": "2-syllable · primary stress [STAR]-board",
+              "example_from_anchor": "The starboard side faces the open water."
+            }
+          ]
+        },
+        "sub_bloque_2_smcp_radio_protocol": {
+          "name": "SMCP & Radio Protocol",
+          "rap": "RAP-02 SMCP",
+          "term_count": 5,
+          "terms": [
+            {
+              "n": 6,
+              "term": "stand by",
+              "category": "SMCP & Radio Protocol",
+              "definition_en": "wait and listen on the radio channel",
+              "definition_es": "esperar y escuchar en el canal de radio",
+              "ipa": "/ˈstænd.baɪ/",
+              "pronunciation_for_spanish": "stánd-bái",
+              "stress": "2-syllable phrasal · primary stress [STAND]-by",
+              "example_from_anchor": "Pilot: 'Stand by on Channel 16.'"
+            },
+            {
+              "n": 7,
+              "term": "roger",
+              "category": "SMCP & Radio Protocol",
+              "definition_en": "I have received your message",
+              "definition_es": "recibí tu mensaje",
+              "ipa": "/ˈrɒdʒə/",
+              "pronunciation_for_spanish": "róyer (la 'g' como 'y' inglesa de 'yes')",
+              "stress": "2-syllable · primary stress [RO]-ger",
+              "example_from_anchor": "Captain Lopera: 'Roger. Berth 4 confirmed.'"
+            },
+            {
+              "n": 8,
+              "term": "say again",
+              "category": "SMCP & Radio Protocol",
+              "definition_en": "please repeat your last message",
+              "definition_es": "por favor repite tu último mensaje",
+              "ipa": "/ˌseɪ.əˈɡen/",
+              "pronunciation_for_spanish": "sei-a-guén",
+              "stress": "3-syllable phrasal · primary stress on [GAIN]",
+              "example_from_anchor": "Andrea: 'Say again, please. Channel was noisy.'"
+            },
+            {
+              "n": 9,
+              "term": "over",
+              "category": "SMCP & Radio Protocol",
+              "definition_en": "I finished my message; your turn to speak",
+              "definition_es": "terminé mi mensaje; tu turno de hablar",
+              "ipa": "/ˈəʊvə/",
+              "pronunciation_for_spanish": "óu-ver (la 'o' diptongada)",
+              "stress": "2-syllable · primary stress [O]-ver",
+              "example_from_anchor": "Pilot: 'BUENAVENTURA EXPRESS, ETA 07:30. Over.'"
+            },
+            {
+              "n": 10,
+              "term": "out",
+              "category": "SMCP & Radio Protocol",
+              "definition_en": "this conversation is finished",
+              "definition_es": "esta conversación terminó",
+              "ipa": "/aʊt/",
+              "pronunciation_for_spanish": "áut",
+              "stress": "1-syllable · [OUT]",
+              "example_from_anchor": "Captain Lopera: 'Confirmed. Out.'"
+            }
+          ]
+        },
+        "sub_bloque_3_port_operations": {
+          "name": "Port Operations",
+          "rap": "RAP-03 gramática puerto-buque",
+          "term_count": 5,
+          "terms": [
+            {
+              "n": 11,
+              "term": "dock",
+              "category": "Port Operations",
+              "definition_en": "to bring a ship alongside the berth",
+              "definition_es": "atracar un buque al costado del muelle",
+              "ipa": "/dɒk/",
+              "pronunciation_for_spanish": "dók (la 'o' corta y abierta)",
+              "stress": "1-syllable · [DOCK]",
+              "example_from_anchor": "The vessel docks at 07:30."
+            },
+            {
+              "n": 12,
+              "term": "cargo",
+              "category": "Port Operations",
+              "definition_en": "the goods carried on a ship",
+              "definition_es": "la mercancía que transporta el buque",
+              "ipa": "/ˈkɑːɡəʊ/",
+              "pronunciation_for_spanish": "kár-gou",
+              "stress": "2-syllable · primary stress [CAR]-go",
+              "example_from_anchor": "Cargo is in the hold."
+            },
+            {
+              "n": 13,
+              "term": "container",
+              "category": "Port Operations",
+              "definition_en": "a metal box used to ship cargo",
+              "definition_es": "una caja metálica para transportar mercancía",
+              "ipa": "/kənˈteɪnə/",
+              "pronunciation_for_spanish": "kon-téi-ner (segunda sílaba la fuerte)",
+              "stress": "3-syllable · primary stress [TAIN] · NOT [CON]",
+              "example_from_anchor": "20 containers are on deck."
+            },
+            {
+              "n": 14,
+              "term": "crane",
+              "category": "Port Operations",
+              "definition_en": "the machine that lifts containers",
+              "definition_es": "la máquina que levanta contenedores",
+              "ipa": "/kreɪn/",
+              "pronunciation_for_spanish": "kréin",
+              "stress": "1-syllable · [CRANE]",
+              "example_from_anchor": "Crane 2 is ready at Berth 4."
+            },
+            {
+              "n": 15,
+              "term": "moor",
+              "category": "Port Operations",
+              "definition_en": "to tie a ship with ropes to the dock",
+              "definition_es": "amarrar un buque con cabos al muelle",
+              "ipa": "/mʊə/",
+              "pronunciation_for_spanish": "muur (vocal larga)",
+              "stress": "1-syllable · [MOOR]",
+              "example_from_anchor": "The crew moors the vessel port-side."
+            }
+          ]
+        },
+        "sub_bloque_4_role_functions": {
+          "name": "Role & Function Verbs",
+          "rap": "RAP-04 descripción de funciones",
+          "term_count": 5,
+          "terms": [
+            {
+              "n": 16,
+              "term": "report",
+              "category": "Role & Function Verbs",
+              "definition_en": "to give information about a situation",
+              "definition_es": "informar sobre una situación",
+              "ipa": "/rɪˈpɔːt/",
+              "pronunciation_for_spanish": "ri-pórt (segunda sílaba la fuerte)",
+              "stress": "2-syllable · primary stress [PORT] · NOT [RE]",
+              "example_from_anchor": "Andrea reports cargo status to Captain Restrepo."
+            },
+            {
+              "n": 17,
+              "term": "check",
+              "category": "Role & Function Verbs",
+              "definition_en": "to look at something to confirm it is correct",
+              "definition_es": "revisar algo para confirmar que está correcto",
+              "ipa": "/tʃek/",
+              "pronunciation_for_spanish": "chek",
+              "stress": "1-syllable · [CHECK]",
+              "example_from_anchor": "I check the manifest before the crane lifts."
+            },
+            {
+              "n": 18,
+              "term": "supervise",
+              "category": "Role & Function Verbs",
+              "definition_en": "to watch and direct an operation",
+              "definition_es": "vigilar y dirigir una operación",
+              "ipa": "/ˈsuːpəvaɪz/",
+              "pronunciation_for_spanish": "súu-per-váis (la 's' final como 'z' inglesa)",
+              "stress": "3-syllable · primary stress [SU] · secondary stress [VISE]",
+              "example_from_anchor": "Captain Restrepo supervises the morning shift."
+            },
+            {
+              "n": 19,
+              "term": "coordinate",
+              "category": "Role & Function Verbs",
+              "definition_en": "to organize people or actions to work together",
+              "definition_es": "organizar personas o acciones para trabajar juntas",
+              "ipa": "/kəʊˈɔːdɪneɪt/",
+              "pronunciation_for_spanish": "kou-ór-di-néit (segunda sílaba la fuerte)",
+              "stress": "4-syllable · primary stress [OR]",
+              "example_from_anchor": "Andrea coordinates the docking with the pilot."
+            },
+            {
+              "n": 20,
+              "term": "confirm",
+              "category": "Role & Function Verbs",
+              "definition_en": "to say that something is true or agreed",
+              "definition_es": "decir que algo es verdadero o acordado",
+              "ipa": "/kənˈfɜːm/",
+              "pronunciation_for_spanish": "kon-férm (segunda sílaba la fuerte)",
+              "stress": "2-syllable · primary stress [FIRM]",
+              "example_from_anchor": "Captain Lopera confirms ETA on the radio."
+            }
+          ]
+        },
+        "sub_bloque_5_integrative_optional": {
+          "name": "Integrative Operational Glue",
+          "rap": "Cross-RAP (integrativo de los 4 RAPs)",
+          "term_count": 5,
+          "terms": [
+            {
+              "n": 21,
+              "term": "shift",
+              "category": "Integrative Operational Glue",
+              "definition_en": "a period of work hours",
+              "definition_es": "un periodo de horas laborales",
+              "ipa": "/ʃɪft/",
+              "pronunciation_for_spanish": "shift (la 'sh' como en 'show')",
+              "stress": "1-syllable · [SHIFT]",
+              "example_from_anchor": "Andrea is on the morning shift."
+            },
+            {
+              "n": 22,
+              "term": "ETA",
+              "category": "Integrative Operational Glue",
+              "definition_en": "Estimated Time of Arrival",
+              "definition_es": "tiempo estimado de llegada",
+              "ipa": "/ˌiː.tiːˈeɪ/",
+              "pronunciation_for_spanish": "ii-tii-éi (deletreado letra por letra)",
+              "stress": "3-syllable acronym · primary stress [A]",
+              "example_from_anchor": "ETA: 07:30 at Berth 4."
+            },
+            {
+              "n": 23,
+              "term": "alongside",
+              "category": "Integrative Operational Glue",
+              "definition_en": "next to and parallel with the dock",
+              "definition_es": "al costado y paralelo al muelle",
+              "ipa": "/əˌlɒŋˈsaɪd/",
+              "pronunciation_for_spanish": "a-long-sáid (tercera sílaba la fuerte)",
+              "stress": "3-syllable · primary stress [SIDE]",
+              "example_from_anchor": "The vessel is alongside Berth 4."
+            },
+            {
+              "n": 24,
+              "term": "ready",
+              "category": "Integrative Operational Glue",
+              "definition_en": "prepared and able to act",
+              "definition_es": "preparado y capaz de actuar",
+              "ipa": "/ˈredi/",
+              "pronunciation_for_spanish": "ré-di",
+              "stress": "2-syllable · primary stress [REA]-dy",
+              "example_from_anchor": "Crane 2 is ready. Crew is ready."
+            },
+            {
+              "n": 25,
+              "term": "vessel",
+              "category": "Integrative Operational Glue",
+              "definition_en": "a ship (formal/operational term)",
+              "definition_es": "un buque (término formal/operacional)",
+              "ipa": "/ˈvesəl/",
+              "pronunciation_for_spanish": "vé-sel",
+              "stress": "2-syllable · primary stress [VES]-sel",
+              "example_from_anchor": "The vessel BUENAVENTURA EXPRESS arrives at 07:30."
+            }
+          ]
+        }
+      },
+      "validation_count": "25 términos verificados (5 + 5 + 5 + 5 + 5)"
+    },
+    "archetype_A_phonics_and_spelling": {
+      "actua_como": "Phonics Specialist & ESP Pronunciation Coach. Creates phonics activities adapted for maritime-port technical vocabulary at A1.2.",
+      "tecnicas_seleccionadas": [
+        "Mirror Talking",
+        "Sound Sorting"
+      ],
+      "warm_up_consolidacion": {
+        "title": "Mirror Talking — 'th' vs 's' minimal pairs",
+        "duration_min": 12,
+        "description_en": "Take a small mirror. Watch your tongue when you say 'berth' and 'bus'. The 'th' shows tongue between teeth. The 's' keeps tongue behind teeth.",
+        "description_es": "Toma un espejo pequeño. Observa tu lengua cuando dices 'berth' y 'bus'. La 'th' muestra la lengua entre los dientes. La 's' mantiene la lengua detrás de los dientes.",
+        "minimal_pairs": [
+          [
+            "berth",
+            "burst"
+          ],
+          [
+            "stern",
+            "stem"
+          ],
+          [
+            "dock",
+            "dog"
+          ]
+        ]
+      },
+      "main_activity": {
+        "title": "Sound Sorting — Stress Pattern Buckets",
+        "duration_min": 25,
+        "description_en": "Sort the 25 Toolbelt terms into 4 buckets by stress pattern: [1-syllable], [2-syllable stress on 1st], [2-syllable stress on 2nd], [3+ syllables].",
+        "description_es": "Clasifica los 25 términos del Toolbelt en 4 cubetas según patrón de acento: [1 sílaba], [2 sílabas acento 1ra], [2 sílabas acento 2da], [3+ sílabas].",
+        "answer_key_sample": {
+          "1_syllable": [
+            "berth",
+            "bow",
+            "stern",
+            "dock",
+            "crane",
+            "moor",
+            "check",
+            "shift",
+            "out"
+          ],
+          "2_syll_stress_1st": [
+            "roger",
+            "over",
+            "cargo",
+            "ready",
+            "vessel",
+            "stand by",
+            "port-side",
+            "starboard"
+          ],
+          "2_syll_stress_2nd": [
+            "report",
+            "confirm"
+          ],
+          "3_plus_syllables": [
+            "say again",
+            "container",
+            "supervise",
+            "coordinate",
+            "ETA",
+            "alongside"
+          ]
+        }
+      },
+      "language_bank": [
+        "Where is the stress in 'container'? — On TAIN.",
+        "Listen and repeat: con-TAI-ner.",
+        "The 'th' in 'berth' is between the teeth."
+      ],
+      "micro_capsula": "> 🎧 **Audio Cue:** En 'container' el acento NO está al inicio · es kon-TÉI-ner. Decirlo mal en radio VHF cuesta 5 segundos de '*say again*'.",
+      "bloom_level": "L2 Understand → L3 Apply"
+    },
+    "archetype_B_vocabulary_development": {
+      "actua_como": "Vocabulary Development Specialist & ESP Lexical Architect. Builds deep maritime vocabulary through semantic relationships, not memorization.",
+      "tecnicas_seleccionadas": [
+        "Semantic Mapping",
+        "Word Walls"
+      ],
+      "warm_up_consolidacion": {
+        "title": "Word Wall — 5 Categorías Vivas",
+        "duration_min": 10,
+        "description_en": "On 5 wall posters (one per Toolbelt category), Andrea pins the 25 cards. The wall stays visible the whole shift.",
+        "description_es": "En 5 carteles de pared (uno por categoría del Toolbelt), Andrea fija las 25 tarjetas. El muro queda visible todo el turno."
+      },
+      "main_activity": {
+        "title": "Semantic Map — 'BERTH' as central node",
+        "duration_min": 30,
+        "description_en": "In the Port Glossary notebook, draw 'berth' at the center. Connect 4 nodes: WHERE (alongside, dock, port-side), WHAT (vessel, cargo, container), WHO (Andrea, Captain Lopera, crane operator), ACTION (dock, moor, supervise).",
+        "description_es": "En el cuaderno Port Glossary, dibuja 'berth' en el centro. Conecta 4 nodos: DÓNDE (alongside, dock, port-side), QUÉ (vessel, cargo, container), QUIÉN (Andrea, Captain Lopera, operario de grúa), ACCIÓN (dock, moor, supervise).",
+        "model_node_count": 12
+      },
+      "language_bank": [
+        "Berth is a place. Dock is a place AND an action.",
+        "Vessel is more formal than ship.",
+        "A container is one cargo unit. Cargo is the whole load."
+      ],
+      "micro_capsula": "> 📌 **Lexical Rule:** 'dock' = sustantivo (lugar) Y verbo (atracar). El contexto dice cuál es. *El barco atraca en el muelle* → The vessel docks at the dock.",
+      "bloom_level": "L2 Understand → L3 Apply"
+    },
+    "archetype_C_reading_fluency": {
+      "actua_como": "Reading Fluency Coach & ESP Prosody Specialist. Transforms slow word-by-word readers into smooth, expressive maritime communicators.",
+      "tecnicas_seleccionadas": [
+        "Cloze Procedure",
+        "Repeated Reading"
+      ],
+      "warm_up_consolidacion": {
+        "title": "Repeated Reading — Operational Report aloud × 3",
+        "duration_min": 15,
+        "description_en": "Read the PM-2.3 Operational Report aloud three times: (1) for accuracy, (2) for stress on Toolbelt terms, (3) for radio-protocol pace.",
+        "description_es": "Lee el Reporte Operativo de PM-2.3 en voz alta tres veces: (1) por precisión, (2) por acento en términos Toolbelt, (3) al ritmo de protocolo de radio."
+      },
+      "main_activity": {
+        "title": "Cloze — Captain Lopera's Radio Brief",
+        "duration_min": 20,
+        "description_en": "Fill the gaps with Toolbelt 25 terms. Mini-text adapted from Master Anchor (10 gaps).",
+        "description_es": "Completa los huecos con términos del Toolbelt 25. Mini-texto adaptado del Master Anchor (10 huecos).",
+        "cloze_text_en": "Captain Lopera to dock office: ETA 07:30. The ______ (1) BUENAVENTURA EXPRESS is ______ (2) Berth 4. ______ (3)-side is alongside. The crew ______ (4) the vessel. ______ (5) 2 is ready. We have 20 ______ (6) on deck. Andrea ______ (7) cargo status. Captain Restrepo ______ (8) the shift. ______ (9). Out.",
+        "cloze_answer_key": [
+          "vessel",
+          "alongside",
+          "Port",
+          "moors",
+          "Crane",
+          "containers",
+          "reports",
+          "supervises",
+          "Roger"
+        ]
+      },
+      "language_bank": [
+        "Read with the rhythm of the radio: short bursts, clear stress.",
+        "Pause after 'over'. Pause after 'out'."
+      ],
+      "micro_capsula": "> 🎙️ **Radio Pacing:** Lee el reporte como si lo dijeras por VHF · 1 idea = 1 respiración. Si pierdes el aire, perdiste a Captain Lopera.",
+      "bloom_level": "L2 Understand → L3 Apply"
+    },
+    "archetype_D_writing_scaffolding": {
+      "actua_como": "Writing Scaffold Designer & ESP Literacy Bridge Specialist. Builds the bridge from oral maritime language to written operational reports.",
+      "tecnicas_seleccionadas": [
+        "Language Experience Approach (LEA)",
+        "Guided Writing"
+      ],
+      "warm_up_consolidacion": {
+        "title": "LEA — Andrea narrates her first hour",
+        "duration_min": 15,
+        "description_en": "Listen to Andrea narrate her first hour at Berth 4 (audio 90s). Transcribe 5 sentences. Underline every Toolbelt term you hear.",
+        "description_es": "Escucha a Andrea narrar su primera hora en Berth 4 (audio 90s). Transcribe 5 oraciones. Subraya cada término del Toolbelt que escuches."
+      },
+      "main_activity": {
+        "title": "Guided Writing — Your Port Glossary entry",
+        "duration_min": 25,
+        "description_en": "Pick 5 terms (one per category). For each, write a Port Glossary entry: [TERM] · [pronunciation in your own ear] · [1 sentence from your shift].",
+        "description_es": "Elige 5 términos (uno por categoría). Para cada uno, escribe una entrada del Port Glossary: [TÉRMINO] · [pronunciación a tu propio oído] · [1 oración de tu turno].",
+        "model_entry_en": "BERTH · 'berz' · Andrea is at Berth 4 at 06:00.",
+        "model_entry_es": "BERTH · 'berz' · Andrea está en Berth 4 a las 06:00.",
+        "scaffolding_levels": [
+          "modelado por instructor",
+          "co-escritura en pareja",
+          "escritura guiada individual"
+        ]
+      },
+      "language_bank": [
+        "I am at the berth. — Yo estoy en el atracadero.",
+        "The vessel is alongside. — El buque está al costado.",
+        "I check the cargo. — Yo reviso la mercancía."
+      ],
+      "micro_capsula": "> ✍️ **Scaffold Rule:** Tu Port Glossary NO se borra · NO se corrige con tinta roja. El docente responde con un *Dialogue Journal* mostrando la forma correcta SIN tachar la tuya.",
+      "bloom_level": "L3 Apply"
+    },
+    "archetype_E_interactive_literacy": {
+      "actua_como": "Interactive Literacy Architect & ESP Collaborative Reading Specialist. Designs activities where the Operational Report becomes a tool for crew communication.",
+      "tecnicas_seleccionadas": [
+        "Jigsaw Reading",
+        "Text-Based Information Gap"
+      ],
+      "warm_up_consolidacion": {
+        "title": "Read-Pair-Share — 5 Toolbelt cards",
+        "duration_min": 10,
+        "description_en": "Read 5 random Toolbelt cards alone (3 min). Compare with your pair (3 min). Share the hardest term with the class (4 min).",
+        "description_es": "Lee 5 tarjetas Toolbelt al azar solo (3 min). Compara con tu pareja (3 min). Comparte el término más difícil con la clase (4 min)."
+      },
+      "main_activity": {
+        "title": "Jigsaw Reading — 5 Expert Groups, 1 Operation",
+        "duration_min": 35,
+        "description_en": "5 Expert Groups (one per Toolbelt category) study their 5 terms deeply. Then re-form Home Groups (1 expert per category × 5) and teach each other. Final: each Home Group writes a 5-sentence operational micro-report using ALL 25 terms.",
+        "description_es": "5 Expert Groups (uno por categoría Toolbelt) estudian sus 5 términos a fondo. Luego se reagrupan en Home Groups (1 experto por categoría × 5) y se enseñan entre sí. Final: cada Home Group escribe un micro-reporte operativo de 5 oraciones usando los 25 términos.",
+        "expert_group_distribution": [
+          "Group 1 → Ship & Port Anatomy (5 terms)",
+          "Group 2 → SMCP & Radio Protocol (5 terms)",
+          "Group 3 → Port Operations (5 terms)",
+          "Group 4 → Role & Function Verbs (5 terms)",
+          "Group 5 → Integrative Operational Glue (5 terms)"
+        ],
+        "home_group_output": "Micro-reporte operativo · 5 oraciones · usa 25 términos (5 por miembro Home Group)"
+      },
+      "language_bank": [
+        "I am the expert on radio terms. Let me explain 'roger' and 'over'.",
+        "Can you say again? — ¿Puedes repetir?",
+        "Now I understand. — Ahora entiendo."
+      ],
+      "micro_capsula": "> 🤝 **Jigsaw Rule:** Si tu Home Group pierde un experto, pierde 5 términos. La operación de atraque NO se completa con vocabulario faltante. Aprender es responsabilidad colectiva.",
+      "bloom_level": "L3 Apply"
+    },
+    "scenario_setup_block": {
+      "universe": "IMARPOR · Puerto de Buenaventura · Pacífico colombiano",
+      "setting_s2": "Oficina del muelle, Berth 4 · 06:00 turno mañana",
+      "characters_s2": [
+        "Andrea Mosquera (aprendiz-modelo · primer turno completo)",
+        "Captain Lopera (cliente externo · capitán BUENAVENTURA EXPRESS)",
+        "Capitán Restrepo (supervisor SENA en puerto)"
+      ],
+      "vessel_central": "BUENAVENTURA EXPRESS (ETA 07:30 · 20 contenedores · Berth 4)",
+      "operational_stakes": "Si Andrea no domina los 25 términos antes del atraque, Captain Restrepo no la libera para coordinar la próxima operación CML CARRIER en S6.",
+      "narrative_function": "Scenario setup ancla TODAS las actividades del Conjunto A en un universo coherente · PM-2.6 (Listening) heredará personajes y vessel · PM-2.10 (Grammar) inducirá estructuras desde estos mismos términos."
+    },
+    "consolidacion_global": {
+      "title": "Cierre de la sesión 2 — Andrea cierra su Port Glossary",
+      "description_en": "By 12:00, Andrea closes her Port Glossary with 25 terms entered. You close yours. Captain Restrepo signs both. The shift continues.",
+      "description_es": "A las 12:00, Andrea cierra su Port Glossary con 25 términos registrados. Tú cierras el tuyo. Capitán Restrepo firma ambos. El turno continúa.",
+      "evidence_of_consolidation": "Port Glossary completo (25 entradas) · firmado por instructor · alimenta Cuestionario S6 ítem Vocabulary 5pts."
+    }
+  },
+  "activity_card": {
+    "pm_id": "PM-2.5",
+    "pm_name": "Vocabulary, Literacy & Scenario Setup",
+    "session": 2,
+    "phase_sena": "Apropiación",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Identificar y clasificar los 25 términos del Toolbelt IMARPOR (5 categorías × 5) por patrón de acento y categoría funcional, usando Mirror Talking + Sound Sorting + Semantic Mapping",
+        "didactic_strategy": "CLIL (Content and Language Integrated Learning)",
+        "didactic_technique": "Mapas semánticos + clasificación fonética por stress pattern"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Describir el escenario operativo de Berth 4 (Puerto de Buenaventura · BUENAVENTURA EXPRESS · personajes Andrea/Lopera/Restrepo) y producir el primer Port Glossary personal (5 entradas modelo) mediante LEA + Guided Writing + Jigsaw Reading",
+        "didactic_strategy": "Aprendizaje basado en contenido (CBI) + Cooperative Learning",
+        "didactic_technique": "Análisis de casos + Jigsaw Reading + Language Experience Approach"
+      }
+    ],
+    "hours": {
+      "direct": 2.5,
+      "autonomous": 0.5,
+      "rationale": "Run IMARPOR-CC ajustado: 2.5h directo (vs 1.5h canónico) por consolidación de 25 términos (no 20) + scenario setup completo S2 · 0.5h autónomo para finalizar Port Glossary"
+    },
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "",
+      "evaluation_technique": null,
+      "instrument_number": null,
+      "instrument_type": null
+    },
+    "environment": {
+      "type": "Aula + simulador de oficina de muelle",
+      "materials": [
+        "Port Glossary (cuaderno de bolsillo formato muelle · 25 entradas)",
+        "5 Word Wall posters (uno por categoría Toolbelt)",
+        "Espejos de mano (1 por aprendiz · Mirror Talking)",
+        "Tarjetas Toolbelt 25 (impresas por categoría)",
+        "Audio Andrea narrando primer hora 90s (LEA · MP3)",
+        "Operational Report PM-2.3 impreso",
+        "Radio VHF de práctica (Channel 16 simulado)"
+      ],
+      "instructors": "Instructor de inglés + Capitán Restrepo (técnico marítimo) en rol de supervisor"
+    },
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Vocabulary",
+    "quiz_points": 5,
+    "quiz_item_count": 5
+  },
+  "pm0_protocol_session_level": {
+    "session": 2,
+    "l1_percentage_target": 30,
+    "l1_policy_rationale": "S2 en curva A1.2 inicial · L1 ≈ 30% para andamiaje fuerte de 25 términos técnicos · disminuye a 25% al cierre de S2 cuando Toolbelt está consolidado",
+    "feedback_mode": "recast oral en pronunciación (Mirror Talking) + corrección explícita escrita (Port Glossary spelling) + dialogue journal SIN tachar (Scaffolding D)",
+    "stress_pronunciation_focus": "Patrones de stress 1-3 sílabas en términos marítimos · énfasis en errores comunes hispanohablantes: container [TAIN], report [PORT], confirm [FIRM], coordinate [OR]",
+    "grammar_groups_active": [
+      "Grupo 1 'be' presente",
+      "Grupo 7 prepositions of place (at, in, on, alongside)"
+    ],
+    "success_factors_activated": [
+      "S — Spelling (Port Glossary)",
+      "U — Use in context (Cloze + Jigsaw micro-report)",
+      "C — Context (Master Anchor + scenario setup)",
+      "C — Categorization (5 sub-bloques)",
+      "E — Examples (de PM-2.3 + PM-2.4)",
+      "S — Sound (IPA + pronunciation_for_spanish + stress)",
+      "S — Stories (universo IMARPOR · Andrea/Lopera/Restrepo)"
+    ]
+  },
+  "validacion": {
+    "check1_master_prompt_compliance": {
+      "passed": true,
+      "note": "Sigue PM-2.5 v2.0 literal · 5 arquetipos integrados · Toolbelt consolidado · scenario setup incluido"
+    },
+    "check2_archetypes_integration": {
+      "passed": true,
+      "note": "5 arquetipos A-E presentes con sub-objetos archetype_X_NAME · cada uno con tecnicas + main_activity + language_bank + micro_capsula + bloom_level"
+    },
+    "check3_toolbelt_count": {
+      "passed": true,
+      "expected": 25,
+      "actual": 25,
+      "note": "GAP_2 OVERRIDE aplicado · 5 cats × 5 = 25 (NO 20 strict canónico) per pm-1-2 _known_gaps"
+    },
+    "check4_pronunciation_enrichment": {
+      "passed": true,
+      "note": "25/25 términos con IPA + pronunciation_for_spanish + stress fields"
+    },
+    "check5_maritime_examples": {
+      "passed": true,
+      "note": "Todos los ejemplos son del universo IMARPOR · Berth 4 · BUENAVENTURA EXPRESS · personajes Andrea/Lopera/Restrepo"
+    },
+    "check6_bloom_ceiling": {
+      "passed": true,
+      "note": "L3 Apply máximo en todos los arquetipos · NO HOTS · A1.2 estricto"
+    },
+    "check7_bilingual_unified": {
+      "passed": true,
+      "note": "Instrucciones bilingües unificadas (EN + ES) sin bloques repetidos · cursiva implícita en estructura"
+    },
+    "check8_continuity_pm23_pm24": {
+      "passed": true,
+      "note": "Consume Master Anchor PM-2.3 + borrador PM-2.4 + Toolbelt 25 · alimenta PM-2.6 Listening"
+    },
+    "check9_anti_mgv_copy": {
+      "passed": true,
+      "evidence": "Cero menciones a typography/serif/Pixel & Ink/Andrés/Sophia/Laura/Studio Glossary · contenido 100% IMARPOR (Andrea Mosquera, Captain Lopera, Capitán Restrepo, BUENAVENTURA EXPRESS, Berth 4, Puerto de Buenaventura, Port Glossary maritime)",
+      "anti_patterns_checked": [
+        "typography (NOT present)",
+        "serif (NOT present)",
+        "Pixel & Ink (NOT present)",
+        "Andrés (NOT present · solo Andrea)",
+        "Sophia (NOT present)",
+        "Laura (NOT present)",
+        "Studio Glossary (NOT present · usamos Port Glossary)"
+      ]
+    },
+    "check10_scenario_setup_present": {
+      "passed": true,
+      "note": "Bloque scenario_setup_block + universe_anchor.scenario_setup explícitos · ancla universo IMARPOR para PM-2.6 y PM-2.10"
+    },
+    "check11_enriched_false": {
+      "passed": true,
+      "note": "enriched: false (espera Instructor Selection · Gate Humano 2 antes de propagar a PM-2.11)"
+    }
+  },
+  "enriched": true,
+  "rationale_enriched_false": "Espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. El instructor decidirá en el aula cuál(es) de los 5 arquetipos lleva (todos, combinación o uno principal) según momentum del Conjunto A.",
+  "siguiente_paso": {
+    "pm_target": "PM-2.4 Writing (si no se ejecutó previamente) o PM-2.6 Listening (si Conjunto A continúa)",
+    "primary_target": "PM-2.4 Writing",
+    "handoff_payload": {
+      "toolbelt_25_consolidated": "25 términos productivamente activados con pronunciation + stress + ejemplos contextualizados",
+      "scenario_locked": "Universo IMARPOR fijo: Andrea + Lopera + Restrepo + BUENAVENTURA EXPRESS + Berth 4",
+      "port_glossary_artifact": "Cuaderno de bolsillo del aprendiz con 25 entradas modelo · firmado por instructor",
+      "bloom_state": "L3 Apply alcanzado · listo para producción escrita guiada en PM-2.4"
+    },
+    "rationale": "PM-2.4 Writing recibe el Toolbelt 25 consolidado productivamente + scenario setup completo · el aprendiz puede escribir su mini-reporte de turno con vocabulario activo y universo coherente."
+  },
+  "enriched_at": "2026-04-29T16:30:00-05:00",
+  "enriched_by": "Sergio Cortés Perdomo",
+  "_enriched_review_note": "Aprobado en lote post Gate 2 review híbrido C+A 2026-04-29: spot check 4 gaps PASS (3 strict + 1 marginal PM-2.6 word_count 140 vs target 150 · discrepancia heurística split vs declared 178 · aceptado · regenerar opcional v1.1) · resumen ejecutivo 5 PMs sin gap PASS · arquitectura generaliza vs SMOKE clon (PM-2.11 PASS 14/16 idéntico · checks críticos 13/14/15/16 PASS)."
+}
