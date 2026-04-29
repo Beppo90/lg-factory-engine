@@ -26,7 +26,7 @@ SCRIPT_DIR = Path(__file__).parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
 from master_prompt_loader import load_master_prompt
-from input_loader import load_phase2_inputs, load_pm20_blueprint, load_arquetipos_elegidos
+from input_loader import load_phase2_inputs, load_pm20_blueprint, load_arquetipos_elegidos, load_phase3_inputs
 
 
 # Mapeo PM → ref operacional canon según estilo declarado
@@ -267,6 +267,217 @@ def preparar_bundle(pm_id, run_id, runs_dir, master_prompts_dir, repo_root, guid
         "bundle_size_chars": len(prompt)
     }
 
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# FASE 3 BUNDLER · paralelo a preparar_bundle() pero sin arquetipos
+# ═══════════════════════════════════════════════════════════════════════════
+
+# Mapping pm_id Fase 3 → ref operacional MGV ground truth (canon más maduro v2.6)
+REF_OPERACIONALES_PHASE3 = {
+    "PM-3.1": "runs/MGV-2026-04-20/pm-3-1.json",
+    "PM-3.2": "runs/MGV-2026-04-20/pm-3-2-s1.json",  # ejemplo · subagente PM-3.2 elige sesión específica
+    "PM-3.3": "runs/DIESEL-2026-04-15/pm-3-3-spec.json",  # único run con PPTX completo
+    "PM-3.4": "runs/MGV-2026-04-20/pm-3-4-content.json",
+    "PM-3.5": "runs/MGV-2026-04-20/pm-3-5.json",
+    "PM-3.6": "runs/MGV-2026-04-20/pm-3-6.json",
+}
+
+
+def cargar_ref_operacional_phase3(pm_id, repo_root):
+    """Carga ref operacional Fase 3 desde MGV-2026-04-20 (canon más maduro v2.6)."""
+    if pm_id not in REF_OPERACIONALES_PHASE3:
+        return None, f"PM {pm_id} no tiene ref operacional Fase 3 registrado"
+    
+    rel_path = REF_OPERACIONALES_PHASE3[pm_id]
+    abs_path = Path(repo_root) / rel_path
+    
+    if not abs_path.exists():
+        return None, f"Ref operacional Fase 3 no encontrado: {abs_path}"
+    
+    return json.loads(abs_path.read_text(encoding="utf-8")), str(abs_path)
+
+
+def construir_prompt_canonico_phase3(master_prompt_text, inputs, ref_op, deliverable_spec):
+    """Construye prompt canónico Fase 3 · SIN bloque arquetipos (no aplica a Fase 3).
+    
+    Estructura del prompt:
+    1. Header subagente Fase 3
+    2. Master prompt completo (REGLA 19 cumplida vía inyección)
+    3. Inputs estructurados (pm-2-11 + 9 Activity Cards + pm-4-X + pm-2-0 + pm-1-2 + pm-0-context)
+    4. Ref operacional MGV ground truth (NO copiar contenido · solo guía calidad)
+    5. Deliverable spec (schema esperado · campos canónicos)
+    6. Anti-patrones recordatorio (REGLA 20-shape · CHECK 9 · enriched: false)
+    """
+    pm_id = inputs.get("pm_id_target", "PM-3.X")
+    
+    sections = []
+    
+    # Header
+    sections.append(
+        f"Eres un subagente del orquestador FPI SENA Fase 3. Tu trabajo es generar 1 output canónico\n"
+        f"para {pm_id} siguiendo el master prompt canónico inyectado abajo.\n"
+    )
+    
+    # Master prompt INTEGRO (REGLA 19 cumplida)
+    sections.append(
+        "═══════════════════════════════════════════════════════════════════════════\n"
+        "TU CONTRATO DE GENERACIÓN — MASTER PROMPT CANÓNICO (LEE COMPLETO ANTES DE GENERAR)\n"
+        "═══════════════════════════════════════════════════════════════════════════\n"
+        f"\n{master_prompt_text}\n"
+    )
+    
+    # Inputs estructurados
+    sections.append(
+        "═══════════════════════════════════════════════════════════════════════════\n"
+        "INPUTS DEL RUN ACTUAL (Fase 1 + Fase 2 cerrada · canon §6.4 cumplido)\n"
+        "═══════════════════════════════════════════════════════════════════════════\n"
+        f"\nrun_id: {inputs.get('run_id', 'UNKNOWN')}\n"
+        f"guide_id: {inputs.get('guide_id', 'None (single-guía absorpción)')}\n"
+        f"\n--- pm-0-context.json ---\n{json.dumps(inputs.get('pm0_context', {}), indent=2, ensure_ascii=False)[:3000]}...\n"
+        f"\n--- pm-1-2.json ---\n{json.dumps(inputs.get('pm12', {}), indent=2, ensure_ascii=False)[:3000]}...\n"
+        f"\n--- pm-2-11.json (GFPI-F-134 row · ready_for_phase_3 validated) ---\n{json.dumps(inputs.get('pm211', {}), indent=2, ensure_ascii=False)[:3000]}...\n"
+        f"\n--- 9 Activity Cards (enriched: true) keys: {list(inputs.get('activity_cards', {}).keys())}\n"
+        f"\n--- pm-2-0.json (Session Blueprint) ---\n{json.dumps(inputs.get('pm20', {}), indent=2, ensure_ascii=False)[:2000]}...\n"
+        f"\nNota: las 9 Activity Cards completas están disponibles si necesitas inspeccionarlas (path runs/{inputs.get('run_id')}/pm-2-X.json).\n"
+    )
+    
+    # Ref operacional ground truth
+    if ref_op:
+        sections.append(
+            "═══════════════════════════════════════════════════════════════════════════\n"
+            "REF OPERACIONAL · GROUND TRUTH MGV-2026-04-20 (canon más maduro v2.6)\n"
+            "═══════════════════════════════════════════════════════════════════════════\n"
+            f"\n⚠ USAR COMO GUÍA DE CALIDAD · NO COPIAR CONTENIDO (CHECK 9 anti-copia-fantasma activo).\n"
+            f"El universo MGV es 'Pixel & Ink Studio' (gráfico) · si el run actual es marítimo (IMARPOR-CC),\n"
+            f"el contenido del ref op NO debe filtrarse · solo el SHAPE/STRUCTURE/PEDAGOGY.\n"
+            f"\n--- Ref op shape (top-level keys + sample) ---\n"
+            f"{json.dumps({k: (v if not isinstance(v, (dict, list)) else f'<{type(v).__name__} len={len(v)}>') for k,v in ref_op.items()}, indent=2, ensure_ascii=False)}\n"
+        )
+    
+    # Deliverable spec
+    sections.append(
+        "═══════════════════════════════════════════════════════════════════════════\n"
+        "DELIVERABLE SPEC · qué generar exactamente\n"
+        "═══════════════════════════════════════════════════════════════════════════\n"
+        f"\n{json.dumps(deliverable_spec, indent=2, ensure_ascii=False)}\n"
+    )
+    
+    # Anti-patrones recordatorio
+    sections.append(
+        "═══════════════════════════════════════════════════════════════════════════\n"
+        "RECORDATORIOS · anti-patrones a evitar\n"
+        "═══════════════════════════════════════════════════════════════════════════\n"
+        "\n"
+        "1. NO copiar contenido del ref operacional MGV (CHECK 9 anti-copia-fantasma).\n"
+        "   Universo del run actual ≠ universo MGV. Replica SHAPE · NUNCA contenido.\n"
+        "\n"
+        "2. NO inventes campos no documentados en master prompt o deliverable spec.\n"
+        "   Si el shape canónico tiene N keys, emite exactamente N (no más, no menos).\n"
+        "\n"
+        "3. Marca 'enriched: false' en el output (Gate Humano 3 Playbook approval pendiente).\n"
+        "\n"
+        "4. Si el master prompt tiene 'PRE-GENERATION CHECKLIST' (PM-3.5 v2.6 lo tiene), CÚMPLELO antes de generar.\n"
+    )
+    
+    return "\n".join(sections)
+
+
+def preparar_bundle_phase3(pm_id, run_id, runs_dir, master_prompts_dir, repo_root, guide_id=None):
+    """Bundler Fase 3 · paralelo a preparar_bundle() pero sin arquetipos.
+    
+    Diferencias vs preparar_bundle() (Fase 2):
+    - NO carga arquetipos-elegidos.json (Fase 3 outputs no tienen arquetipos discretos)
+    - NO ramificación estilo mgv vs diesel (Fase 3 tiene shape canónico fijo per master prompt)
+    - Carga inputs Fase 3 (load_phase3_inputs · más extensos: pm-2-11 + 9 ACs + pm-4-X)
+    - Ref operacional: MGV-2026-04-20 (canon más maduro v2.6)
+    - Construye prompt sin bloque arquetipos
+    
+    Per PLAN-FASE-3-ARQUITECTURA.md v1.2 §11.1 #9 (D.1.5) + corrección §5.3 PM-3.1+3.6 → Camino 2 LLM.
+    
+    Args:
+        pm_id: ej "PM-3.1"
+        run_id: ej "IMARPOR-CC-2026-04-27"
+        runs_dir: path al directorio runs/
+        master_prompts_dir: path al directorio master-prompts/
+        repo_root: path raíz del repo (para refs operacionales)
+        guide_id: opcional · single-guía absorpción
+    
+    Returns:
+        dict con keys análogas a preparar_bundle() (subagent_type, prompt, expected_output_file,
+        validation_post_hoc, inputs_loaded, bundle_size_chars)
+    
+    Raises:
+        FileNotFoundError, ValueError según master_prompt_loader e input_loader
+    """
+    # 1. Pre-flight: cargar master prompt Fase 3
+    mp = load_master_prompt(pm_id, master_prompts_dir, strict_version=True)
+    
+    # 2. Cargar inputs Fase 3 (incluye gate canon §6.4 strict)
+    p3 = load_phase3_inputs(run_id, runs_dir, guide_id=guide_id)
+    
+    # 3. Cargar ref operacional MGV ground truth
+    ref_op, ref_op_path = cargar_ref_operacional_phase3(pm_id, repo_root)
+    
+    # 4. Construir inputs bundle (incluye pm_id_target para context)
+    inputs_bundle = {
+        "pm_id_target": pm_id,
+        "run_id": run_id,
+        "guide_id": guide_id,
+        "pm0_context": p3["pm0_context"],
+        "pm12": p3["pm12"],
+        "pm20": p3["pm20"],
+        "pm211": p3["pm211"],
+        "activity_cards": p3["activity_cards"],
+        "pm41": p3["pm41"],
+        "pm42": p3["pm42"],
+    }
+    
+    # 5. Deliverable spec minimal Fase 3 (emerge per PM en Hitos 2-4 · I.2 strict)
+    deliverable_spec = {
+        "pm_id": pm_id,
+        "expected_output_file": f"runs/{run_id}/{guide_id+'/' if guide_id else ''}pm-{pm_id.replace('PM-', '').replace('.', '-')}.json",
+        "shape_reference": f"Ver ref operacional MGV-2026-04-20 + master prompt {pm_id} arriba inyectado · respetar canon estricto",
+        "enriched_initial": False,
+        "gate_humano_pendiente": "Gate 3 (Playbook approval) post-generación"
+    }
+    
+    # 6. Construir prompt canónico Fase 3 (sin arquetipos block)
+    prompt = construir_prompt_canonico_phase3(
+        master_prompt_text=mp["text"],
+        inputs=inputs_bundle,
+        ref_op=ref_op,
+        deliverable_spec=deliverable_spec
+    )
+    
+    return {
+        "subagent_type": "general-purpose",
+        "prompt": prompt,
+        "expected_output_file": deliverable_spec["expected_output_file"],
+        "expected_output_schema": deliverable_spec.get("shape_reference"),
+        "validation_post_hoc": [
+            "shape conforme master prompt {pm_id} v{version}",
+            "enriched: false marcado (Gate Humano 3 Playbook approval pendiente)",
+            "anti-copia-fantasma vs ref operacional MGV (CHECK 9)",
+            "REGLA 20-shape · grep paths reales antes de validar internals",
+        ],
+        "inputs_loaded": {
+            "master_prompt": {"pm_id": mp["pm_id"], "version": mp["version"], "size_bytes": mp["size_bytes"]},
+            "pm0_context_loaded": p3["pm0_context"] is not None,
+            "pm12_loaded": p3["pm12"] is not None,
+            "pm20_loaded": p3["pm20"] is not None,
+            "pm211_ready_for_phase_3": p3["pm211"].get("ready_for_phase_3", False),
+            "activity_cards_count": len(p3["activity_cards"]),
+            "all_activity_cards_enriched": all(ac.get("enriched", False) for ac in p3["activity_cards"].values()),
+            "pm41_loaded": p3["pm41"] is not None,
+            "pm42_loaded": p3["pm42"] is not None,
+            "ref_op_path": ref_op_path,
+        },
+        "bundle_size_chars": len(prompt)
+    }
+
+
+# ═══════════════════════════════════════════════════════════════════════════
 
 def construir_deliverable_spec(pm_id, arquetipos_pm):
     """Construye spec del deliverable esperado según el PM y el estilo."""
