@@ -1,11 +1,11 @@
 ---
-title: PLAN FASE 3 — Arquitectura · skill `fpi-sena-fase3` · v1.0
+title: PLAN FASE 3 — Arquitectura · skill `fpi-sena-fase3` · v1.1
 proposito: Plan ejecutable de construcción Fase 3 (Playbook + assessment + derivados) basado en PRE-FLIGHT-FASE-3 + canon DM §11 v2.12 changelog entry + lecciones Fase 2
-status: v1.0 borrador · sujeto a iteración v1.1+ post-Hito 4 Fase 2 cerrado
+status: v1.1 · 3 decisiones canonizadas (D.1.5 + H.3 + I.2) post-Hito 4 Fase 2 cerrado · arranque construcción Hito 1 next session
 fecha_creacion: 2026-04-29
 sesion: post-cierre Hito 3 Fase 2 + pre-Hito 4 Fase 2 + pre-construcción Fase 3
 prerequisitos: PRE-FLIGHT-FASE-3.md leído + Hito 4 Fase 2 PASS (PLAN-FASE-2 §6.4 estricto)
-gating_para_construccion: Hito 4 Fase 2 cerrado con 9 Activity Cards `enriched: true` por Sergio
+gating_para_construccion: ✓ CUMPLIDO 2026-04-29 commit 835d74b · ready_for_phase_3: true · 9/9 Activity Cards enriched
 quien_escribe: Claude (skill fpi-sena-fase2 activa) + Sergio (decisiones arquitectónicas)
 duracion_estimada_construccion: 3-4 semanas (reusando node) · 8-10 semanas (Python puro)
 ---
@@ -277,17 +277,20 @@ Esta separación se canoniza en este plan: la skill `fpi-sena-fase3` cubre AMBAS
 
 ### Hito 1 — Esqueleto skill + lib extendido (Semana 1)
 
-**Objetivo:** estructura `fpi-sena-fase3/` lista + helpers extendidos.
+**Objetivo:** estructura `fpi-sena-fase3/` lista + helpers duplicados (D.1.5) + cli_parser nuevo + drift script + smoke test.
 
-Tasks:
-1. Crear `.claude/skills/fpi-sena-fase3/` con SKILL.md + references stub
-2. Adaptar `input_loader.py` para cargar pm-2-11.json + 9 Activity Cards + GFPI-F-134 row
-3. Crear `document_renderer.py` (wrapper sobre skill docx/pptx + node scripts existentes)
-4. Crear `phase3_validators.py` con 5 checks iniciales
-5. Extender `check_9_anti_copia.py` para detectar contamination cross-program en docx
-6. Validar imports + smoke test contra fixture SMOKE-TEST-2026-04-29
+Tasks (secuencia revisada 2026-04-29 post-pushback Sergio):
+1. Crear `.claude/skills/fpi-sena-fase3/` con SKILL.md + references stubs
+2. Copiar 5 helpers de `fpi-sena-fase2/lib/` → `fpi-sena-fase3/lib/` (D.1.5 ejecución · ~5 min · NO toca código fase2 estable)
+3. Adaptar `fpi-sena-fase3/lib/input_loader.py` a esquemas Fase 3 (carga pm-2-11.json + 9 Activity Cards + GFPI-F-134 row)
+4. Crear `fpi-sena-fase3/lib/cli_parser.py` (D.1.5 abstracción canon · TODO mecánico Fase 3 lo usa · mata bug guide_id endémico de raíz)
+5. Crear `fpi-sena-fase3/lib/document_renderer.py` skeleton VACÍO (I.2 · NO interface upfront · diseño emergente Hito 2-3-4)
+6. Crear `fpi-sena-fase3/lib/phase3_validators.py` con 5+ checks iniciales del PLAN §8
+7. Crear `scripts/check-helpers-drift.py` (D.1.5 mitigation · diff 3 genuinamente shared entre fase2/lib y fase3/lib · pre-commit hook opcional) + smoke test imports + pin Node version
 
-**Gates:** ninguno (build infra)
+**Gates:** ninguno (build infra) · skill skeleton cargable + helpers funcionales smoke-tested.
+
+**Pre-arranque obligatorio (Task 0):** este v1.1 plan documenta las 3 decisiones D.1.5 + H.3 + I.2 como TOMADAS con sustento Sergio (REGLA 21 strict). NO arrancar Tasks 1-7 sin haber leído §11.1 actualizado · §7 Hito 5 agendado · y trigger mutual REGLA 21 violation.
 
 ### Hito 2 — Subagentes Camino 1 mecánicos (Semana 2)
 
@@ -332,6 +335,22 @@ Tasks:
 5. Documentar cierre Fase 3 oficialmente (v1.1+ del PLAN si bugs)
 
 **Gates:** Fase 3 cerrada · `fpi-sena-fase3` lista para producción real con instructores.
+
+### Hito 5 — Refactor pass renderer API uniforme (1-2h post-Hito 4)
+
+**Objetivo:** uniformar las 6 funciones del `document_renderer.py` que emergieron iterando en Hitos 2-3-4.
+
+**Tasks (checklist explícito):**
+1. Inventariar las 6 funciones renderer reales generadas en Hitos 2-4 (`render_pm_3_1_docx`, `render_pm_3_2_docx`, `render_pm_3_3_pptx`, `render_pm_3_4_docx`, `render_pm_3_5_docx`, `render_pm_3_6_docx`)
+2. Comparar signatures · identificar inconsistencias (param naming · return type · error handling)
+3. Definir signature canónica unified (probable: `(input_path, output_path, options=None) -> RenderResult`)
+4. Migrar las 6 funciones a signature unified · preserve backward-compat shims si necesario
+5. Validar runtime contra IMARPOR-CC outputs ya generados
+6. Documentar API canónica en `references/document-renderer-api.md`
+
+**Gates:** API uniforme + tests passing.
+
+**Justificación canónica:** Hito 5 es el cumplimiento del caveat I.2 que Sergio pidió 2026-04-29 ("agendado explícito · NO aspiración"). Sin Hito 5, I.2 (diseño emergente) cae en anti-patrón "se difiere indefinidamente". Hito 5 es el seguro contractual que evita esa caída.
 
 ---
 
@@ -446,6 +465,9 @@ Capitalizando lo aprendido en Fase 2 cierre Hito 3:
 | 6 | Phase 3 + Phase 4 sub-fases canónicas | Per master prompts frontmatter |
 | 7 | 8 checks bloqueantes + 2 warnings | Derivado de master prompts + lecciones Fase 2 |
 | 8 | Paralelización PM-3.2 ×8 (Task tools) | Extrapolado de runtime Fase 2 (PM-2.6 ║ PM-2.8 ×2 validado · ×8 sin verificar) |
+| 9 | **D.1.5: duplicar 5 helpers fase3/lib + cli_parser.py nuevo + drift script** | Sergio 2026-04-29: pushback contra D.2 lib-shared con 3 argumentos firmes: (a) diagnóstico erróneo guide_id (NO duplicación · ausencia de abstracción · cli_parser mata bug igual en fase3/lib que en lib-shared) · (b) D.2 toca 13 subagentes Fase 2 estables · riesgo en código recién commiteado · (c) D.2 conflict task #30 packaging (.skill self-contained) · REGLA 21 inflada disfrazada. Acepté limpio. |
+| 10 | **H.3: renderer híbrido subprocess node + skill docx/pptx** | Sergio 2026-04-29: "✓ Confirmado sin cambios". Reusa 418 KB scripts node DIESEL validados producción · Python skill anthropic-skills:docx+pptx para PMs nuevos (PM-3.3 Canva). Migration path natural · single risk subprocess error handling cross-language tractable. |
+| 11 | **I.2: diseño emergente API renderer + Hito 5 refactor pass agendado** | Sergio 2026-04-29: "Acepto I.2 con caveat: que el refactor pass quede agendado explícito como tarea Hito 5 · no como aspiración. Concreto: una línea en §11.2 v1.1". Defer implementación · NO defer canon. API converge iterando · Hito 5 (1-2h) uniforma 6 funciones renderer post-Hito 4 con checklist explícito. |
 
 
 ### §11.2 — Gaps que requieren decisión Sergio explícita
@@ -459,8 +481,7 @@ Capitalizando lo aprendido en Fase 2 cierre Hito 3:
 | E | Output PDF (post-render docx?) | docx primary · PDF on-demand vía export | TBD post Hito 4 |
 | F | Workbook chapters count (default 7 vs configurable) | Default 7 · configurable via pm-1-1 | Sergio en Hito 3 |
 | G | Storage de runs Fase 3 (vault sync política) | Sync inmediato post Gate 4 | Sergio en Hito 4 |
-| H | **Renderer arquitectura: subprocess node vs Python puro** | Híbrido node + Python (ver §9.1) | Sergio post-Hito 4 Fase 2 cuando sepamos si subprocess es factible |
-| I | **Document renderer híbrido (node subprocess + skill docx/pptx)** | Trade-off costo vs riesgo | Sergio post-Hito 4 Fase 2 |
+
 
 ---
 
@@ -530,18 +551,38 @@ english-engine-lab/specs/tools/ (F2.5 specs Fase 2 · referencia para Fase 3 spe
 - Issues D (cross-skill imports), E (`document_renderer.py` API verificación), F (paralelización ×8 vs ×2)
 - Issues menores J, K, L, M, N, O (clarificaciones de definición · no bloquean construcción)
 
-### v1.1 (esperada · post Hito 4 Fase 2)
+### v1.1 · 2026-04-29 · 3 decisiones canonizadas + Hito 5 + REGLA 21 trigger mutual
 
-- Refinements basados en bugs encontrados en E2E IMARPOR-CC real
-- Confirmación/cambio de gaps §11.2 con Sergio
-- Validación que 458 KB scripts node funcionan correctamente via subprocess
+**Contexto:** Hito 4 Fase 2 cerrado oficialmente (commit 835d74b · canon §6.4 cumplido · ready_for_phase_3: true). Antes de arrancar construcción Fase 3 Hito 1, Sergio aplicó pushback estricto a las 3 decisiones críticas (D, H, I) usando REGLA 21. Resultado:
 
-### v1.2+ (esperada · post Hito 1 Fase 3)
+**Decisiones canonizadas (movidas de §11.2 gaps a §11.1 TOMADAS):**
 
-- Refinements basados en construcción real de subagentes
-- Adjustments en `document_renderer.py` API según hallazgos
+- **D.1.5 (no D.2 lib-shared):** duplicar 5 helpers fase3/lib + cli_parser.py nuevo + drift script. Razón concedida: diagnóstico erróneo guide_id (NO duplicación causó el bug · ausencia de abstracción) + D.2 toca código fase2 estable + D.2 conflicta task #30 packaging .skill. **Reincidencia REGLA 21 documentada honestamente** — el mismo día que canonicé la regla, caí en ella otra vez con D.2. Sergio detectó · concedí limpio.
+
+- **H.3 confirmado:** renderer híbrido subprocess node + skill docx/pptx. Sin cambios.
+
+- **I.2 con caveat:** diseño emergente API renderer · CON Hito 5 agendado explícito (no aspiración). Hito 5 = 1-2h refactor pass post-Hito 4 · uniforma 6 funciones renderer · checklist explícito agregado a §7.
+
+**Nuevo Hito 5 agendado §7:** refactor pass renderer API uniforme post-Hito 4 (1-2h · 6 tasks). Es el seguro contractual de I.2.
+
+**REGLA 21 trigger mutual canonizado:** ambas partes (Sergio + Claude) acuerdan invocar "REGLA 21 violation · pausa" cuando detecten inflación en la otra parte. Mejor protocol que self-policing — el blind spot del que infla siempre es del propio. Aplica a Hito 1+ Fase 3 + futuras sesiones.
+
+**Hito 1 secuencia revisada (7 tasks · §7):** Task 0 (este bump v1.1) cumplido hoy · Tasks 1-7 esperando próxima sesión con energía completa (decisión honest "momentum no flow" 2026-04-29 ~16:45).
+
+**Anti-patrón documentado:** REGLA 21 reincidencia el mismo día de canonización demuestra que la regla NO se internaliza solo con escribirla · necesita aplicación reincidente para hacerse hábito. El trigger mutual es la mitigación operacional para esta vulnerabilidad.
+
+### v1.2 (esperada · post Hito 1 Fase 3 construcción)
+
+- Refinements basados en construcción real de subagentes (cli_parser edge cases · drift script behavior)
+- Adjustments en `document_renderer.py` API según hallazgos diseño emergente
+- Posible canonización adicional si emergen patrones reusables
+
+### v1.3+ (esperada · post Hito 4 Fase 3 + Hito 5 refactor pass)
+
+- Documentación API renderer canónica unified (cumplimiento Hito 5 · I.2 caveat)
+- Cierre Fase 3 oficial · canon §6.4 análogo para Fase 4 (si aplica)
 
 ---
 
-*PLAN-FASE-3-ARQUITECTURA.md v1.0.1 · escrito 2026-04-29 (hotfix scope a · 7 fixes aplicados post-review)*
+*PLAN-FASE-3-ARQUITECTURA.md v1.1 · escrito 2026-04-29 (3 decisiones canonizadas D.1.5+H.3+I.2 + Hito 5 agendado + REGLA 21 trigger mutual)*
 *Próximo paso: Hito 4 Fase 2 → v1.1 refinements → Hito 1 Fase 3 (construcción esqueleto skill)*
