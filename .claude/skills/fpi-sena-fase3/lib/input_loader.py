@@ -181,6 +181,70 @@ def load_phase3_inputs(run_id, runs_dir, guide_id=None):
     }
 
 
+def load_phase4_inputs(run_id, runs_dir, guide_id=None, strict_gate3=False):
+    """
+    Carga inputs canónicos de Fase 4 (derivados estudiante: PM-3.3, PM-3.4, PM-3.6) desde
+    Fase 3 cerrada (Playbook completo aprobado por Sergio · Gate 3).
+
+    Phase 4 derivados consumen Playbook completo (PM-3.1 outline + 8x PM-3.2 build-outs +
+    PM-3.5 final mission) ademas de inputs Fase 3 (pm-2-11 + 9 ACs + pm-4-X).
+
+    Per PLAN-FASE-3-ARQUITECTURA.md v1.2 §6.1 · gate canonico Phase 4 = Gate 3 (Playbook approval).
+
+    Args:
+        run_id, runs_dir, guide_id: igual que load_phase3_inputs
+        strict_gate3: bool · default False · si True, valida `.enriched: true` en pm-3-1, 8x pm-3-2-sX, pm-3-5
+                     (canon production). Default False permite smoke testing contra fixtures legacy
+                     como MGV-2026-04-20 que NO marcan enriched (predecesor del skill Fase 3).
+
+    Returns:
+        dict con todas las keys de load_phase3_inputs + las nuevas:
+            pm31              (PM-3.1 outline)
+            pm32_sessions     (list 8 dicts · pm-3-2-s1..s8.json en orden S1->S8)
+            pm35              (PM-3.5 final mission)
+
+    Raises:
+        FileNotFoundError si pm-3-1, pm-3-2-sX, o pm-3-5 no existen
+        ValueError si strict_gate3=True y algun Phase 3 output no tiene .enriched: true
+    """
+    # 1. Reusa load_phase3_inputs (incluye gates §6.4 + ACs enriched)
+    base = load_phase3_inputs(run_id, runs_dir, guide_id=guide_id)
+
+    # 2. PM-3.1 outline (Phase 3 output)
+    pm31 = load_run_input(run_id, runs_dir, "pm-3-1.json", guide_id=guide_id)
+    if strict_gate3 and not pm31.get("enriched"):
+        raise ValueError(
+            f"pm-3-1.enriched != True · Gate 3 NO cumplido · "
+            f"Sergio debe aprobar Playbook completo antes de cargar Fase 4"
+        )
+
+    # 3. 8x PM-3.2 session build-outs (S1->S8 · Phase 3 outputs)
+    pm32_sessions = []
+    for s_num in range(1, 9):
+        sX = load_run_input(run_id, runs_dir, f"pm-3-2-s{s_num}.json", guide_id=guide_id)
+        if strict_gate3 and not sX.get("enriched"):
+            raise ValueError(
+                f"pm-3-2-s{s_num}.enriched != True · Gate 3 NO cumplido · "
+                f"Sergio debe aprobar build-out S{s_num} antes de cargar Fase 4"
+            )
+        pm32_sessions.append(sX)
+
+    # 4. PM-3.5 final mission (Phase 3 output)
+    pm35 = load_run_input(run_id, runs_dir, "pm-3-5.json", guide_id=guide_id)
+    if strict_gate3 and not pm35.get("enriched"):
+        raise ValueError(
+            f"pm-3-5.enriched != True · Gate 3 NO cumplido · "
+            f"Sergio debe aprobar Final Mission antes de cargar Fase 4"
+        )
+
+    return {
+        **base,
+        "pm31": pm31,
+        "pm32_sessions": pm32_sessions,
+        "pm35": pm35,
+    }
+
+
 if __name__ == "__main__":
     # Self-test
     import sys

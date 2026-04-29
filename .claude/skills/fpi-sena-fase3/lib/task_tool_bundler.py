@@ -26,7 +26,7 @@ SCRIPT_DIR = Path(__file__).parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
 from master_prompt_loader import load_master_prompt
-from input_loader import load_phase2_inputs, load_pm20_blueprint, load_arquetipos_elegidos, load_phase3_inputs
+from input_loader import load_phase2_inputs, load_pm20_blueprint, load_arquetipos_elegidos, load_phase3_inputs, load_phase4_inputs
 
 
 # Mapeo PM → ref operacional canon según estilo declarado
@@ -471,6 +471,110 @@ def preparar_bundle_phase3(pm_id, run_id, runs_dir, master_prompts_dir, repo_roo
             "all_activity_cards_enriched": all(ac.get("enriched", False) for ac in p3["activity_cards"].values()),
             "pm41_loaded": p3["pm41"] is not None,
             "pm42_loaded": p3["pm42"] is not None,
+            "ref_op_path": ref_op_path,
+        },
+        "bundle_size_chars": len(prompt)
+    }
+
+
+def preparar_bundle_phase4(pm_id, run_id, runs_dir, master_prompts_dir, repo_root, guide_id=None, strict_gate3=False):
+    """Bundler Fase 4 (derivados estudiante: PM-3.3, PM-3.4, PM-3.6) · paralelo a preparar_bundle_phase3
+    pero consume Phase 3 outputs (Playbook completo).
+
+    Diferencias vs preparar_bundle_phase3:
+    - Carga inputs Fase 4 via load_phase4_inputs (incluye pm-3-1, 8x pm-3-2-sX, pm-3-5)
+    - Gate canon: Gate 3 (Sergio aprueba Playbook) en vez de Gate 2 (Activity Cards)
+    - Ref operacional: misma MGV-2026-04-20 (canon mas maduro v2.6)
+
+    Per PLAN-FASE-3-ARQUITECTURA.md v1.2 §6.1 Phase 4 + correccion §5.3 PM-3.6 -> Camino 2 LLM puro.
+
+    Args:
+        pm_id: ej "PM-3.6", "PM-3.4", "PM-3.3"
+        run_id, runs_dir, master_prompts_dir, repo_root, guide_id: igual que phase3
+        strict_gate3: bool · default False · si True, valida .enriched: true en Phase 3 outputs
+                      (canon production). Default False permite smoke shape parcial contra
+                      fixtures legacy.
+
+    Returns:
+        dict con estructura paralela a preparar_bundle_phase3 + extras Phase 4:
+            inputs_loaded.pm31_loaded, pm32_sessions_count, pm35_loaded
+            deliverable_spec.gate_humano_pendiente: "Gate 4 (derivados approval)"
+
+    Raises:
+        FileNotFoundError, ValueError segun load_phase4_inputs / master_prompt_loader
+    """
+    # 1. Pre-flight: cargar master prompt Fase 3 (PM-3.X version markdown table)
+    mp = load_master_prompt(pm_id, master_prompts_dir, strict_version=True)
+
+    # 2. Cargar inputs Fase 4 (incluye gate Phase 3 §6.4 + 9 ACs enriched + Phase 3 outputs)
+    p4 = load_phase4_inputs(run_id, runs_dir, guide_id=guide_id, strict_gate3=strict_gate3)
+
+    # 3. Cargar ref operacional MGV ground truth (mismo path generico)
+    ref_op, ref_op_path = cargar_ref_operacional_phase3(pm_id, repo_root)
+
+    # 4. Construir inputs bundle (incluye Phase 3 outputs ademas de Fase 2 inputs)
+    inputs_bundle = {
+        "pm_id_target": pm_id,
+        "run_id": run_id,
+        "guide_id": guide_id,
+        "phase": 4,
+        "pm0_context": p4["pm0_context"],
+        "pm12": p4["pm12"],
+        "pm20": p4["pm20"],
+        "pm211": p4["pm211"],
+        "activity_cards": p4["activity_cards"],
+        "pm41": p4["pm41"],
+        "pm42": p4["pm42"],
+        # Phase 3 outputs (Playbook completo aprobado por Sergio Gate 3)
+        "pm31": p4["pm31"],
+        "pm32_sessions": p4["pm32_sessions"],  # list 8 dicts S1->S8
+        "pm35": p4["pm35"],
+    }
+
+    # 5. Deliverable spec Fase 4 (Gate 4 humano pendiente)
+    deliverable_spec = {
+        "pm_id": pm_id,
+        "expected_output_file": f"runs/{run_id}/{guide_id+'/' if guide_id else ''}pm-{pm_id.replace('PM-', '').replace('.', '-')}.json",
+        "shape_reference": f"Ver ref operacional MGV-2026-04-20 + master prompt {pm_id} arriba inyectado · respetar canon estricto",
+        "enriched_initial": False,
+        "gate_humano_pendiente": "Gate 4 (Derivados estudiante approval) post-generacion"
+    }
+
+    # 6. Construir prompt canonico Fase 3 (mismo helper · sin arquetipos block · no scope creep)
+    prompt = construir_prompt_canonico_phase3(
+        master_prompt_text=mp["text"],
+        inputs=inputs_bundle,
+        ref_op=ref_op,
+        deliverable_spec=deliverable_spec
+    )
+
+    return {
+        "subagent_type": "general-purpose",
+        "prompt": prompt,
+        "expected_output_file": deliverable_spec["expected_output_file"],
+        "expected_output_schema": deliverable_spec.get("shape_reference"),
+        "validation_post_hoc": [
+            "shape conforme master prompt {pm_id} v{version}",
+            "enriched: false marcado (Gate Humano 4 Derivados approval pendiente)",
+            "anti-copia-fantasma vs ref operacional MGV (CHECK 9)",
+            "REGLA 20-shape · grep paths reales antes de validar internals",
+            "Phase 4 derivado · debe espejar Playbook completo (PM-3.2 ×8 + PM-3.5) sin inventar contenido",
+        ],
+        "inputs_loaded": {
+            "master_prompt": {"pm_id": mp["pm_id"], "version": mp["version"], "size_bytes": mp["size_bytes"]},
+            "pm0_context_loaded": p4["pm0_context"] is not None,
+            "pm12_loaded": p4["pm12"] is not None,
+            "pm20_loaded": p4["pm20"] is not None,
+            "pm211_ready_for_phase_3": p4["pm211"].get("ready_for_phase_3", False),
+            "activity_cards_count": len(p4["activity_cards"]),
+            "all_activity_cards_enriched": all(ac.get("enriched", False) for ac in p4["activity_cards"].values()),
+            "pm41_loaded": p4["pm41"] is not None,
+            "pm42_loaded": p4["pm42"] is not None,
+            # Phase 3 outputs (paquete Playbook)
+            "pm31_loaded": p4["pm31"] is not None,
+            "pm32_sessions_count": len(p4["pm32_sessions"]),
+            "pm35_loaded": p4["pm35"] is not None,
+            "strict_gate3_applied": strict_gate3,
             "ref_op_path": ref_op_path,
         },
         "bundle_size_chars": len(prompt)
