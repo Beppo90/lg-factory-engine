@@ -1,7 +1,7 @@
 ---
-title: PLAN FASE 3 — Arquitectura · skill `fpi-sena-fase3` · v1.2
+title: PLAN FASE 3 — Arquitectura · skill `fpi-sena-fase3` · v1.3
 proposito: Plan ejecutable de construcción Fase 3 (Playbook + assessment + derivados) basado en PRE-FLIGHT-FASE-3 + canon DM §11 v2.12 changelog entry + lecciones Fase 2
-status: v1.2 · corrección REGLA 21 sistémica detectada Hito 2 pre-flight · PM-3.1 + PM-3.6 reclasificados Camino 1 → Camino 2 LLM
+status: v1.3 · reshuffle Hito 2/3/Fase3-4 cascada Phase 4 derivados · PM-3.4 + PM-3.6 movidos a Hito-Fase3-4 (verificado INPUT REQUERIDO consume PM-3.2 build-outs) · Hito 2 = solo PM-3.1
 fecha_creacion: 2026-04-29
 sesion: post-cierre Hito 3 Fase 2 + pre-Hito 4 Fase 2 + pre-construcción Fase 3
 prerequisitos: PRE-FLIGHT-FASE-3.md leído + Hito 4 Fase 2 PASS (PLAN-FASE-2 §6.4 estricto)
@@ -187,16 +187,16 @@ Esta separación se canoniza en este plan: la skill `fpi-sena-fase3` cubre AMBAS
 
 ### §5.2 — Resumen camino mix
 
-| PM | Camino 1 | Camino 2 | Renderer | Corrección v1.2 |
-|---|---|---|---|---|
-| PM-3.1 | — | ✓ (LLM puro) | docx (post-render) | CORREGIDO · era Camino 1 mecánico inflado |
-| PM-3.2 | — | ✓ ×8 | docx | sin cambio |
-| PM-3.3 | ✓ (spec) | ✓ (slides) | pptx | likely · verificar pm-3-3-gen.js |
-| PM-3.4 | — | ✓ | docx | sin cambio |
-| PM-3.5 | — | ✓ | docx | sin cambio |
-| PM-3.6 | — | ✓ (LLM puro) | docx (post-render) | CORREGIDO · cascada PM-3.1 |
-| PM-4.1 | ✓ (reuse) | — | docx | sin cambio (mecánico verdadero · derivador) |
-| PM-4.2 | ✓ (reuse) | — | docx | sin cambio (mecánico verdadero · ensamblador determinístico) |
+| PM | Camino 1 | Camino 2 | Renderer | Hito (v1.3) | Corrección |
+|---|---|---|---|---|---|
+| PM-3.1 | — | ✓ (LLM puro) | docx (post-render) | **Hito 2** | v1.2 · era Camino 1 mecánico inflado |
+| PM-3.2 | — | ✓ ×8 | docx | **Hito 3** | sin cambio |
+| PM-3.3 | ✓ (spec) | ✓ (slides) | pptx | **Hito-Fase3-4** | likely · verificar pm-3-3-gen.js |
+| PM-3.4 | — | ✓ | docx | **Hito-Fase3-4** | v1.3 · Phase 4 derivado · INPUT REQUERIDO consume PM-3.2 build-outs (verificado grep) |
+| PM-3.5 | — | ✓ | docx | **Hito 3** | sin cambio · Phase 3 (cross_references: consume_de_pm32_s6_s7_s8) |
+| PM-3.6 | — | ✓ (LLM puro) | docx (post-render) | **Hito-Fase3-4** | v1.2 LLM + v1.3 reshuffle · Phase 4 derivado · cascada PM-3.4 |
+| PM-4.1 | ✓ (reuse) | — | docx | (Fase 2 mecánico) | sin cambio (mecánico verdadero · derivador) |
+| PM-4.2 | ✓ (reuse) | — | docx | (Fase 2 mecánico) | sin cambio (mecánico verdadero · ensamblador determinístico) |
 
 **6 nuevos subagentes (1 Camino 1 puro PM-... ¿quizás 0? · 5 Camino 2 + 1 híbrido PM-3.3 spec) + 2 reusados (PM-4.1 + PM-4.2 mecánicos verdaderos) · v1.2 corrección sistémica REGLA 21**
 
@@ -292,49 +292,61 @@ Tasks (secuencia revisada 2026-04-29 post-pushback Sergio):
 
 **Pre-arranque obligatorio (Task 0):** este v1.1 plan documenta las 3 decisiones D.1.5 + H.3 + I.2 como TOMADAS con sustento Sergio (REGLA 21 strict). NO arrancar Tasks 1-7 sin haber leído §11.1 actualizado · §7 Hito 5 agendado · y trigger mutual REGLA 21 violation.
 
-### Hito 2 — Subagentes Camino 1 mecánicos (Semana 2)
+### Hito 2 — Subagente Camino 2 LLM puro · PM-3.1 Outline (Semana 2)
 
-**Objetivo:** PM-3.1 + PM-3.6 funcionando deterministicamente.
+**Objetivo (v1.3 reshuffle):** PM-3.1 Playbook Outline funcionando vía Camino 2 LLM puro · genera pm-3-1.json shape MGV v2.6 desde inputs Fase 2+3.
 
-Tasks:
-1. Construir `subagente_pm_3_1_outline.py` (puede portar lógica de `pm-3-1-gen.js`)
-2. Smoke test PM-3.1 contra fixture · validar pm-3-1.json schema canónico
-3. Construir `subagente_pm_3_6_gfpi_f135.py` (ensamblador · puede portar `pm-3-6-assemble.js`)
-4. Smoke test PM-3.6 · validar pm-3-6.json espejo de Fase 2+PM-4
-5. Reusar PM-4.1 + PM-4.2 desde `fpi-sena-fase2/` (verificar imports cross-skill)
-
-**Gates:** Camino 1 outputs validados schema-conforme.
-
-### Hito 3 — Subagentes Camino 2 creativos (Semana 3)
-
-**Objetivo:** PM-3.2 ×8 + PM-3.5 + PM-3.4 funcionando con bundler v2.0.
+> **Cambio vs v1.2:** Hito 2 ahora contiene SOLO PM-3.1 (era PM-3.1 + PM-3.6). PM-3.6 movido a Hito-Fase3-4 porque post-v1.2 corrección a Camino 2 LLM puro implica que PM-3.6 necesita Playbook completo (PM-3.2 ×8 + PM-3.5) como input · ese Playbook NO existe hasta cierre Hito 3. Cascada idéntica afecta PM-3.4 (verificado INPUT REQUERIDO Workbook master prompt). Smoke real PM-3.6 + PM-3.4 requiere fixture con Phase 3 outputs · solo posible post-Hito 3.
 
 Tasks:
-1. Extender `task_tool_bundler.py` para Fase 3 (template-driven prompts más narrativos)
-2. Construir `subagente_pm_3_2_build_out.py` (1 archivo · ejecuta 8 veces)
-3. Validar paralelización runtime PM-3.2 (8 Task tools simultáneo)
-4. Construir `subagente_pm_3_5_final_mission.py` (PRE-GENERATION CHECKLIST canon v2.6)
-5. Construir `subagente_pm_3_4_workbook.py`
-6. Smoke + validation behavioral contra fixture (cada uno produce su Activity Card)
+1. Construir `subagente_pm_3_1_outline.py` (Camino 2 LLM via task_tool_bundler.preparar_bundle_phase3)
+2. Smoke shape PM-3.1 contra fixture IMARPOR-CC-2026-04-27 · validar bundle structure + master prompt v2.6 inyectado
+3. Behavioral validation PM-3.1 vía Task tool launch · validar pm-3-1.json shape MGV v2.6 (30 keys) contra ref op MGV-2026-04-20
+4. Reusar PM-4.1 + PM-4.2 desde `fpi-sena-fase2/` (mecánicos verdaderos · ya construidos · verificar imports cross-skill)
 
-**Gates:** outputs creativos pasan validations behavioral (similar a Fase 2 Hito 3).
+**Gates:** PM-3.1 wrapper + behavioral validation PASS · pm-3-1.json shape conforme + pm0_alignment_by_session crítico (cierra BUG-PM31-001) + pm_3_2_propagation_contract listo para Hito 3.
 
-### Hito-Fase3-4 — Subagente híbrido + Test E2E Fase 3 (Semana 4)
+### Hito 3 — Subagentes Camino 2 creativos · Phase 3 outputs (Semana 3)
+
+**Objetivo (v1.3 reshuffle):** PM-3.2 ×8 + PM-3.5 funcionando con bundler v2.0. Productos canónicos Phase 3 cierran (Playbook completo) · habilita Gate 3 humano + Hito-Fase3-4.
+
+> **Cambio vs v1.2:** PM-3.4 movido a Hito-Fase3-4 (Phase 4 derivado). PM-3.4 INPUT REQUERIDO consume "Asignaciones detalladas por capítulo desde PM-3.2 (Build-Out, sección WRAP-UP)" · necesita Playbook completo · misma cascada que PM-3.6.
+
+Tasks:
+1. (Si necesario) Extender `task_tool_bundler.py` con templates Phase 3 más narrativos
+2. Construir `subagente_pm_3_2_build_out.py` (1 archivo · ejecuta 8 veces · paralelizable)
+3. Validar paralelización runtime PM-3.2 (8 Task tools simultáneo · §6.2 estimación)
+4. Construir `subagente_pm_3_5_final_mission.py` (PRE-GENERATION CHECKLIST canon v2.6 · 27 keys MGV)
+5. Smoke + validation behavioral contra fixture IMARPOR-CC-2026-04-27 (PM-3.2 ×8 + PM-3.5 producen sus JSONs)
+6. Verificar pm0_alignment_by_session de PM-3.1 propaga correctamente a 8× PM-3.2-sX
+
+**Gates:** Phase 3 outputs completos en IMARPOR-CC (pm-3-1 + 8× pm-3-2-sX + pm-3-5) · Gate 3 humano (Sergio aprueba Playbook completo · marca enriched: true) habilitado para Hito-Fase3-4.
+
+### Hito-Fase3-4 — Phase 4 derivados estudiante + Test E2E Fase 3 (Semana 4)
 
 > **Nota nomenclatura:** este Hito es de la skill `fpi-sena-fase3`. NO confundir con **Hito 4 Fase 2** (gating canónico §6.4 · E2E Fase 2 contra IMARPOR-CC con Activity Cards). Hito-Fase3-4 ocurre DESPUÉS de Hito 4 Fase 2 cerrado.
 
-**Objetivo:** PM-3.3 deck completo + Test E2E contra IMARPOR-CC real.
+**Objetivo (v1.3 reshuffle):** Construir los 3 Phase 4 derivados (PM-3.3 + PM-3.4 + PM-3.6) que consumen el Playbook completo cerrado en Hito 3 (Gate 3 aprobado por Sergio) · ejecutar Test E2E completo contra IMARPOR-CC real.
+
+> **Cambio vs v1.2:** Hito-Fase3-4 ahora contiene los 3 Phase 4 derivados juntos (era solo PM-3.3 + Test E2E). PM-3.4 + PM-3.6 reubicados aquí desde Hito 3/2 respectivamente. Justificación: los 3 dependen de Playbook completo (PM-3.2 ×8 + PM-3.5) · son arquitectura paralela post Gate 3 · co-localizar es honest a §6.1.
+> 
+> **Trabajo ya hecho mantenible (commits anteriores v1.2/v1.3 transition):**
+> - `lib/input_loader.py` · `load_phase4_inputs(strict_gate3=False)` (commit 105e8f9 · NO breaking change · sirve para los 3 derivados)
+> - `lib/task_tool_bundler.py` · `preparar_bundle_phase4(pm_id, ..., strict_gate3=False)` (commit 105e8f9 · genérico para PM-3.3, PM-3.4, PM-3.6)
+> - `subagentes/subagente_pm_3_6_gfpi_f135.py` (commit 105e8f9 · construido en framing Hito 2 Task 2 pre-v1.3 · re-categorizado a Hito-Fase3-4 · code remains valid · smoke shape PARTIAL PASS documentado)
 
 Tasks:
-1. Construir `subagente_pm_3_3_canva_deck.py` (híbrido · spec + slides + PPTX render)
-2. Validar PPTX renderable + spec separado de hardcoding (canon v2.4 §)
-3. Test E2E completo contra IMARPOR-CC real:
-   - Phase 3: PM-3.1 → 8× PM-3.2 → PM-3.5 → Gate 3 simulado
+1. Construir `subagente_pm_3_3_canva_deck.py` (híbrido · spec + slides + PPTX render · canon v2.4)
+2. Construir `subagente_pm_3_4_workbook.py` (Camino 2 LLM puro vía `preparar_bundle_phase4`)
+3. (Re-validar) `subagente_pm_3_6_gfpi_f135.py` (ya construido commit 105e8f9 · ahora sí smoke behavioral contra IMARPOR-CC con Phase 3 outputs reales)
+4. Validar PPTX renderable + spec separado de hardcoding (canon v2.4 §) · PM-3.3 específico
+5. Test E2E completo contra IMARPOR-CC real:
+   - Phase 3: PM-3.1 → 8× PM-3.2 → PM-3.5 → Gate 3 simulado (Sergio marca enriched: true)
    - Phase 4: PM-3.3 ║ PM-3.4 ║ PM-3.6 → Gate 4 simulado
-4. 5 checks pedagogical fidelity PASS
-5. Documentar cierre Fase 3 oficialmente (v1.1+ del PLAN si bugs)
+6. 5 checks pedagogical fidelity PASS (§8 Check 3.1 a 3.10)
+7. Documentar cierre Fase 3 oficialmente (v1.4+ del PLAN si bugs)
 
-**Gates:** Fase 3 cerrada · `fpi-sena-fase3` lista para producción real con instructores.
+**Gates:** Fase 3 cerrada · `fpi-sena-fase3` lista para producción real con instructores · Test E2E IMARPOR-CC verde.
 
 ### Hito 5 — Refactor pass renderer API uniforme (1-2h post-Hito 4)
 
@@ -450,6 +462,8 @@ Capitalizando lo aprendido en Fase 2 cierre Hito 3:
 10. **❌ Reescribir scripts node sin razón.** Si script DIESEL `pm-3-X-gen.js` produce output correcto en producción · subprocess es válido. Reescribir solo si hay justificación pedagógica clara.
 
 11. **❌ Asumir Camino 1 mecánico desde tamaño de script (Anti-patrón 12 candidato troubleshooting).** Lección 2026-04-29 Hito 2 pre-flight: `pm-3-1-gen.js` 70 KB · `pm-3-6-new-gen.js` 36 KB · ambos son SOLO renderers DOCX que consumen JSON ya generado por LLM iteración Sergio+Claude. Mi PLAN v1.0.1/v1.1 inflé "Camino 1 mecánico" basado en KB sin grep contenido · clásica REGLA 20-shape aplicada a arquitectura de scripts. **Mitigación: ANTES de afirmar "script-driven · NO LLM", grep contenido · verificar (a) lee JSON existente o lo genera · (b) tiene fetch/anthropic/api calls · (c) writeFileSync target = .json o .docx**.
+
+12. **❌ Smoke deuda como excusa (kick-the-can disguised as discipline).** Lección 2026-04-29 v1.3 reshuffle: durante construcción Hito 2 Task 2 (PM-3.6 wrapper), Claude detectó que ningún fixture permitía smoke behavioral · primera reacción fue "build wrapper · documentar smoke deuda en CHANGELOG · move on". Sergio rechazó: "es exactamente el anti-patrón 'no half-finished implementations' · descubrir bugs en Hito-Fase3-4 con Playbook real será 5× más caro que validar ahora con fixture correcto · plus el smoke deuda en CHANGELOG queda como excusa que se difiere indefinidamente (mismo riesgo que I.2 emergente sin Hito 5 agendado · que arreglamos esta misma sesión)". **La causa raíz era arquitectónica: PM-3.6 estaba mal placed en Hito 2** (post-v1.2 corrección Camino 2 LLM puro lo convirtió en Phase 4 derivado · necesita Playbook completo). **Mitigación: ANTES de codificar wrapper, pre-flight verificar dependencias arquitectónicas (INPUT REQUERIDO + Depends On del master prompt) · si la dependencia no existe en fixture · re-evaluar placement en plan ANTES de construir wrapper · NO codificar y diferir validation con CHANGELOG note**. La cadena correcta es: pre-flight → detect dependency gap → reshuffle plan (bump version) → THEN code wrapper en su Hito correcto.
 
 ---
 
@@ -612,18 +626,59 @@ NO es Camino 1 mecánico. Subagente debe ser Camino 2 análogo a wrappers Fase 2
 
 **Tasks Hito 1 100% completas SIN cambio** · esta corrección NO invalida lib-shared = D.1.5 · NO invalida cli_parser · NO invalida helpers copiados. Solo invalida sub-decisión #2 (Camino 1 vs 2 mix per PM) que era preview de Hitos 2-4.
 
-### v1.2 (esperada · post Hito 1 Fase 3 construcción)
+### v1.3 · 2026-04-29 · reshuffle Hito 2/3/Fase3-4 cascada Phase 4 derivados
+
+**Contexto:** Durante construcción Hito 2 Task 2 (subagente_pm_3_6_gfpi_f135.py), Claude detectó cascada: PM-3.6 post-v1.2 corrección Camino 2 LLM puro depende de Playbook completo (PM-3.2 ×8 + PM-3.5) que NO existe hasta cierre Hito 3 · ningún fixture actual permite smoke behavioral PM-3.6 sin patch invasivo. Sergio rechazó option (A) "build wrapper smoke deuda" y option (C) "patch MGV fixture" · ordenó (B) reshuffle.
+
+**Verificación cascada PM-3.4 (REGLA 20-shape antes de bump):**
+
+```
+$ grep "INPUT REQUERIDO|Depends On" master-prompts/PM-3.4.md
+| Depends On | [PM-3.2, PM-2.3, PM-2.4, PM-2.5, PM-2.6, PM-2.10] |
+| Asignaciones detalladas por capítulo (qué hacer, cuánto tiempo) | PM-3.2 (Build-Out, sección WRAP-UP) |
+```
+
+Confirmado **Scenario (B2)**: PM-3.4 también consume PM-3.2 ×8 build-outs · misma cascada que PM-3.6. Ambos = Phase 4 derivados puros.
+
+**Verificación PM-3.5 (anti-cascada · debe ser Phase 3 puro):**
+
+PM-3.5 cross_references: `consume_de_pm32_s6_s7_s8` · solo consume PM-3.2 sessions S6-S8 (no PM-3.3/3.4 a pesar de listing en INPUT REQUERIDO inconsistente). Phase 3 puro confirmado · permanece en Hito 3.
+
+**Reshuffle canónico:**
+
+| Hito | Pre-v1.3 | Post-v1.3 | Justificación |
+|------|----------|-----------|---------------|
+| Hito 2 | PM-3.1 + PM-3.6 | **PM-3.1 solo** | PM-3.6 cascada Phase 4 |
+| Hito 3 | PM-3.2 ×8 + PM-3.5 + PM-3.4 | **PM-3.2 ×8 + PM-3.5** | PM-3.4 cascada Phase 4 |
+| Hito-Fase3-4 | PM-3.3 + Test E2E | **PM-3.3 + PM-3.4 + PM-3.6 + Test E2E** | 3 Phase 4 derivados co-localizados |
+
+**Por qué (A) y (C) rechazados (sustento Sergio):**
+
+- **(A) "build wrapper smoke deuda"** = anti-patrón "no half-finished implementations" · kick-the-can disguised as discipline · descubrir bugs en Hito-Fase3-4 con Playbook real será 5× más caro que validar ahora con fixture correcto · paralelo a I.2 emergente sin Hito 5 agendado (que arreglamos esta misma sesión).
+- **(C) "patch MGV fixture"** = anti-patrón "tocar canon vivo" · 14 archivos cambiados en run canon ground truth · CHECK 9 anti-copia-fantasma se calibró contra MGV bytes-actuales · agregar enriched: true cambia hashes · MGV es referente para múltiples runs · win marginal vs riesgo high.
+
+**Trabajo previo mantenible (NO revertir):**
+
+- `lib/input_loader.py` · `load_phase4_inputs(strict_gate3=False)` (commit 105e8f9): clean addition · NO breaking change · sirve para PM-3.3 + PM-3.4 + PM-3.6 cuando arranquen en Hito-Fase3-4
+- `lib/task_tool_bundler.py` · `preparar_bundle_phase4(pm_id, ...)` (commit 105e8f9): genérico · refinamiento #2 (sirve los 3 derivados)
+- `subagentes/subagente_pm_3_6_gfpi_f135.py` (commit 105e8f9): code remains valid · re-categorizado a Hito-Fase3-4 work · smoke behavioral pendiente post-Hito 3
+
+**Anti-patrón 12 documentado §10:** "Smoke deuda como excusa" — diferir validation real con CHANGELOG note "smoke pending" cuando la causa raíz es task placement incorrecto en plan. Mitigación: pre-flight verificar dependencias arquitectónicas ANTES de codificar wrapper · si dependencia no existe en fixture · re-evaluar placement en plan ANTES de construir wrapper.
+
+**Trigger mutual REGLA 21:** Sergio detectó intent (A) "smoke deuda como excusa" + ordenó verificación PM-3.4 antes de bump (REGLA 20-shape strict) · Claude concedió + verificó. Ejemplo de trigger mutual operacional · cataliza correcciones cascada antes de difundirse a futuros Hitos.
+
+### v1.4 (esperada · post Hito 1 Fase 3 construcción)
 
 - Refinements basados en construcción real de subagentes (cli_parser edge cases · drift script behavior)
 - Adjustments en `document_renderer.py` API según hallazgos diseño emergente
 - Posible canonización adicional si emergen patrones reusables
 
-### v1.3+ (esperada · post Hito 4 Fase 3 + Hito 5 refactor pass)
+### v1.5+ (esperada · post Hito-Fase3-4 + Hito 5 refactor pass)
 
 - Documentación API renderer canónica unified (cumplimiento Hito 5 · I.2 caveat)
 - Cierre Fase 3 oficial · canon §6.4 análogo para Fase 4 (si aplica)
 
 ---
 
-*PLAN-FASE-3-ARQUITECTURA.md v1.2 · escrito 2026-04-29 (corrección REGLA 21 reincidencia sistémica · PM-3.1 + PM-3.6 reclasificados Camino 2 LLM post pre-flight Hito 2)*
-*Próximo paso: Hito 4 Fase 2 → v1.1 refinements → Hito 1 Fase 3 (construcción esqueleto skill)*
+*PLAN-FASE-3-ARQUITECTURA.md v1.3 · escrito 2026-04-29 (reshuffle Hito 2/3/Fase3-4 cascada Phase 4 derivados · PM-3.4 + PM-3.6 movidos a Hito-Fase3-4 · Anti-patrón 12 documentado · trigger mutual REGLA 21 cataliza)*
+*Próximo paso: completar behavioral validation PM-3.1 (Hito 2 Task 1) → arrancar Hito 3 (PM-3.2 ×8 + PM-3.5)*
