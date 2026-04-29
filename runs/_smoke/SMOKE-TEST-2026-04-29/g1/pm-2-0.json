@@ -1,0 +1,238 @@
+{
+  "pm_id": "PM-2.0",
+  "subagente": "subagente_pm_2_0_architect",
+  "version_master_prompt": "2.6",
+  "version_subagente": "1.1",
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "guide_id": "g1",
+  "session_blueprint": {
+    "rap_id": "240201050-RAP",
+    "rap_name": "Reconocer vocablos y expresiones básicas en inglés, de forma escrita y auditiva, enmarcados en el desempeño de funciones propias en el sector marítimo y portuario",
+    "competencia": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+    "program_info": {
+      "program_name": "Inglés Marítimo y Portuario (Curso Complementario)",
+      "program_code": "12340002",
+      "cefr_level": "A1.2 → A2.1",
+      "sector": "Marina Mercante Colombia · operaciones marítimo-portuarias · curso intensivo 100h",
+      "tipo": "Curso Complementario",
+      "regla_bloques": "absorcion_Na1",
+      "total_guias": 1
+    },
+    "horas_distribution": {
+      "regla_bloques": "absorcion_Na1",
+      "fuente_horas": "pm-1-1_real_values_single_guia",
+      "total_hours_per_guide": 100,
+      "direct_hours": 72,
+      "autonomous_hours": 28,
+      "direct_per_session_avg": 6.0,
+      "autonomous_per_session_avg": 2.333333,
+      "deviation_from_canon": false,
+      "deviation_note": null
+    },
+    "num_sessions": 12,
+    "human_adaptation_required": true,
+    "human_adaptation_note": "N=12 != 8 canónico (PM-2.0 v2.6 dicta 8 sesiones). Instructor debe revisar mapeo fase-pedagógica → sesión-física.",
+    "sessions": [
+      {
+        "session": 1,
+        "fase_sena": "Reflexión Inicial + Contextualización [adaptado N!=8]",
+        "fase_canonica_origen": 1,
+        "pms_active": [
+          "PM-2.1",
+          "PM-2.2"
+        ],
+        "evidencia_formal": null,
+        "objetivo": "Activar prereq + diagnosticar saberes previos",
+        "antecedente": "Ingreso al programa",
+        "consecuente": "S2 (Apropiación lectora)",
+        "direct_hours": 6.0,
+        "autonomous_hours": 2.333333,
+        "adaptation_note": "Sesión física 1/12 mapeada a fase canónica 1/8 del PM-2.0 v2.6 — instructor debe revisar"
+      },
+      {
+        "session": 2,
+        "fase_sena": "Reflexión Inicial + Contextualización [adaptado N!=8]",
+        "fase_canonica_origen": 1,
+        "pms_active": [
+          "PM-2.1",
+          "PM-2.2"
+        ],
+        "evidencia_formal": null,
+        "objetivo": "Activar prereq + diagnosticar saberes previos",
+        "antecedente": "Ingreso al programa",
+        "consecuente": "S2 (Apropiación lectora)",
+        "direct_hours": 6.0,
+        "autonomous_hours": 2.333333,
+        "adaptation_note": "Sesión física 2/12 mapeada a fase canónica 1/8 del PM-2.0 v2.6 — instructor debe revisar"
+      },
+      {
+        "session": 3,
+        "fase_sena": "Apropiación — Input Receptivo (Vocabulary + Reading) [adaptado N!=8]",
+        "fase_canonica_origen": 2,
+        "pms_active": [
+          "PM-2.3",
+          "PM-2.5"
+        ],
+        "evidencia_formal": "E1_Reading",
+        "objetivo": "Generar Master Anchor + consolidar Toolbelt",
+        "antecedente": "S1 (Spark + Gap)",
+        "consecuente": "S3 (Output Escrito)",
+        "direct_hours": 6.0,
+        "autonomous_hours": 2.333333,
+        "adaptation_note": "Sesión física 3/12 mapeada a fase canónica 2/8 del PM-2.0 v2.6 — instructor debe revisar"
+      },
+      {
+        "session": 4,
+        "fase_sena": "Apropiación — Output Escrito (Grammar + Writing) [adaptado N!=8]",
+        "fase_canonica_origen": 3,
+        "pms_active": [
+          "PM-2.10",
+          "PM-2.4"
+        ],
+        "evidencia_formal": "E2_Writing",
+        "objetivo": "Producir Grammar targets + tarea escrita",
+        "antecedente": "S2 (Reading consolidado)",
+        "consecuente": "S4 (Listening + Speaking)",
+        "direct_hours": 6.0,
+        "autonomous_hours": 2.333333,
+        "adaptation_note": "Sesión física 4/12 mapeada a fase canónica 3/8 del PM-2.0 v2.6 — instructor debe revisar"
+      },
+      {
+        "session": 5,
+        "fase_sena": "Apropiación — Output Escrito (Grammar + Writing) [adaptado N!=8]",
+        "fase_canonica_origen": 3,
+        "pms_active": [
+          "PM-2.10",
+          "PM-2.4"
+        ],
+        "evidencia_formal": "E2_Writing",
+        "objetivo": "Producir Grammar targets + tarea escrita",
+        "antecedente": "S2 (Reading consolidado)",
+        "consecuente": "S4 (Listening + Speaking)",
+        "direct_hours": 6.0,
+        "autonomous_hours": 2.333333,
+        "adaptation_note": "Sesión física 5/12 mapeada a fase canónica 3/8 del PM-2.0 v2.6 — instructor debe revisar"
+      },
+      {
+        "session": 6,
+        "fase_sena": "Apropiación — Comprensión Auditiva + Producción Oral [adaptado N!=8]",
+        "fase_canonica_origen": 4,
+        "pms_active": [
+          "PM-2.6",
+          "PM-2.8"
+        ],
+        "evidencia_formal": "E3_Listening + E4_Speaking",
+        "objetivo": "Listening anchor + Speaking task con pronunciation",
+        "antecedente": "S3 (Writing consolidado)",
+        "consecuente": "S5 (Funciones Lingüísticas)",
+        "direct_hours": 6.0,
+        "autonomous_hours": 2.333333,
+        "adaptation_note": "Sesión física 6/12 mapeada a fase canónica 4/8 del PM-2.0 v2.6 — instructor debe revisar"
+      },
+      {
+        "session": 7,
+        "fase_sena": "Apropiación — Integración Pragmática (Language Functions) [adaptado N!=8]",
+        "fase_canonica_origen": 5,
+        "pms_active": [
+          "PM-2.9"
+        ],
+        "evidencia_formal": "E5_Language_Functions",
+        "objetivo": "Funciones comunicativas integradas",
+        "antecedente": "S2-S4 consolidados",
+        "consecuente": "S6 (Evaluación Sumativa)",
+        "direct_hours": 6.0,
+        "autonomous_hours": 2.333333,
+        "adaptation_note": "Sesión física 7/12 mapeada a fase canónica 5/8 del PM-2.0 v2.6 — instructor debe revisar"
+      },
+      {
+        "session": 8,
+        "fase_sena": "Apropiación — Integración Pragmática (Language Functions) [adaptado N!=8]",
+        "fase_canonica_origen": 5,
+        "pms_active": [
+          "PM-2.9"
+        ],
+        "evidencia_formal": "E5_Language_Functions",
+        "objetivo": "Funciones comunicativas integradas",
+        "antecedente": "S2-S4 consolidados",
+        "consecuente": "S6 (Evaluación Sumativa)",
+        "direct_hours": 6.0,
+        "autonomous_hours": 2.333333,
+        "adaptation_note": "Sesión física 8/12 mapeada a fase canónica 5/8 del PM-2.0 v2.6 — instructor debe revisar"
+      },
+      {
+        "session": 9,
+        "fase_sena": "Evaluación Sumativa + Misión Final inicio [adaptado N!=8]",
+        "fase_canonica_origen": 6,
+        "pms_active": [
+          "Cuestionario Consolidado S6 — PM-4.2",
+          "PM-3.5 — Misión Final inicio"
+        ],
+        "evidencia_formal": "E6_Cuestionario_S6_Consolidado",
+        "objetivo": "Consolidar 5 skills × 5 pts = 25 pts + arrancar Misión Final",
+        "antecedente": "S2-S5 todas las apropiaciones",
+        "consecuente": "S7-S8 (Transferencia)",
+        "direct_hours": 6.0,
+        "autonomous_hours": 2.333333,
+        "adaptation_note": "Sesión física 9/12 mapeada a fase canónica 6/8 del PM-2.0 v2.6 — instructor debe revisar"
+      },
+      {
+        "session": 10,
+        "fase_sena": "Transferencia — Proyecto Final (ABP) [adaptado N!=8]",
+        "fase_canonica_origen": 7,
+        "pms_active": [
+          "PM-3.5 — Misión Final continuación"
+        ],
+        "evidencia_formal": null,
+        "objetivo": "Diseño + Desempeño del producto integrador",
+        "antecedente": "S6 (Cuestionario validado)",
+        "consecuente": "S8 (Presentación final)",
+        "direct_hours": 6.0,
+        "autonomous_hours": 2.333333,
+        "adaptation_note": "Sesión física 10/12 mapeada a fase canónica 7/8 del PM-2.0 v2.6 — instructor debe revisar"
+      },
+      {
+        "session": 11,
+        "fase_sena": "Transferencia — Proyecto Final (ABP) [adaptado N!=8]",
+        "fase_canonica_origen": 7,
+        "pms_active": [
+          "PM-3.5 — Misión Final continuación"
+        ],
+        "evidencia_formal": null,
+        "objetivo": "Diseño + Desempeño del producto integrador",
+        "antecedente": "S6 (Cuestionario validado)",
+        "consecuente": "S8 (Presentación final)",
+        "direct_hours": 6.0,
+        "autonomous_hours": 2.333333,
+        "adaptation_note": "Sesión física 11/12 mapeada a fase canónica 7/8 del PM-2.0 v2.6 — instructor debe revisar"
+      },
+      {
+        "session": 12,
+        "fase_sena": "Transferencia — Presentación + Evaluación Reflexiva [adaptado N!=8]",
+        "fase_canonica_origen": 8,
+        "pms_active": [
+          "PM-3.5 — Misión Final cierre"
+        ],
+        "evidencia_formal": null,
+        "objetivo": "Presentación + Evaluación reflexiva del aprendiz",
+        "antecedente": "S7 (Producto desarrollado)",
+        "consecuente": "Cierre de RAP",
+        "direct_hours": 6.0,
+        "autonomous_hours": 2.333333,
+        "adaptation_note": "Sesión física 12/12 mapeada a fase canónica 8/8 del PM-2.0 v2.6 — instructor debe revisar"
+      }
+    ]
+  },
+  "validacion_blueprint": {
+    "suma_horas_directas": 72.0,
+    "suma_horas_autonomas": 27.999996,
+    "suma_horas_total": 99.999996,
+    "expected_horas_directas": 72,
+    "expected_horas_autonomas": 28,
+    "horas_match_pm11": true,
+    "evidencias_6_tipos_cubiertas": true,
+    "antecedente_consecuente_consistente": true,
+    "fases_sena_distribuidas_correcto": true,
+    "deviation_from_canon": false,
+    "deviation_note": null
+  }
+}

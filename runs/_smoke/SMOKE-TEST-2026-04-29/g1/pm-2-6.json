@@ -1,0 +1,638 @@
+{
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "pm_code": "PM-2.6",
+  "pm_name": "Listening — The Auditory Anchor",
+  "pm_version": "2.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "cefr_level": "A1.2",
+  "session": 4,
+  "fase_sena": "Apropiación",
+  "generated_at": "2026-04-28T00:00:00-05:00",
+  "instructor": "Sergio Cortés Perdomo",
+  "enriched": false,
+  "_enriched_false_rationale": "Espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. El listening anchor dialogue está completo pero el instructor debe (a) confirmar el género oral elegido (VHF radio call) versus alternativas (safety briefing / operational announcement Berth 4), (b) validar TTS pacing y voces, (c) marcar enriched: true.",
+  "previous_pms": [
+    "PM-2.1",
+    "PM-2.2",
+    "PM-2.3",
+    "PM-2.5",
+    "PM-2.10",
+    "PM-2.4"
+  ],
+  "archetypes_policy": "TODOS LOS 6 ARQUETIPOS INTEGRADOS (A+B+C+D+E+F) — estilo declarado mgv_compendio_metodologico",
+  "estilo_aplicado": "mgv_compendio_metodologico",
+
+  "pm0_anchor": {
+    "cefr_ceiling": "A1.2",
+    "l1_percentage_s4": 12,
+    "l1_percentage_source": "pm-0-context.l1_percentage_per_session.single_guide_12_sessions S4 = ≤12% (curva A1.2→A2.1, S4 está en bloque interno 2)",
+    "bloom_ceiling": "L3 Apply (recognize content + identify info + answer questions · NO analyze/evaluate/create)",
+    "grammar_recycled_in_audio": [
+      "Gr1 be (am/is/are · positive + question forms)",
+      "Gr4 there is / there are (operational existence — there is one container on the deck)",
+      "Gr7 prepositions of place (at, on, in · at Berth 4, on the deck, in the bow)",
+      "Gr9 imperative (radio commands · stand by, confirm, copy)"
+    ],
+    "feedback_mode_dominant": "Noticing prompts during PRE-LISTENING + Confirmation checks during WHILE-LISTENING + Recast during POST-LISTENING",
+    "success_factors_applied": [
+      "Salience (Survival Words pre-taught with IPA stress · /ˈbɜːθ/ /ˈkɑːr.ɡoʊ/ /ˈʃɪf.t/)",
+      "Use (productive partner reconstruction after second listen)",
+      "Connection (recycles 14/20 Toolbelt terms from S2 Reading + S2 Vocab + S3 Writing)",
+      "Context (authentic VHF radio call between Andrea + Captain Lopera + Capitán Restrepo · same Buenaventura universe established in S1-S3)",
+      "Emotion (Restrepo's calm tone reinforces mentor-apprentice trust; learner hears familiar voices)",
+      "Spaced repetition (Toolbelt 4th encounter: Reading S2 → Vocab S2 → Writing S3 → Listening S4)",
+      "Synergy (same chunks transfer to Speaking PM-2.8 Mission paralela en S4 second half)"
+    ],
+    "working_memory_chunking": "Script fragmented into 7 chunks of 3-5 seconds each; pause markers ' / ' signal natural phrase boundaries; VHF protocol (over · copy · stand by) reinforces turn boundaries"
+  },
+
+  "universe_anchor": {
+    "continuity_with_s1_s2_s3": "S1 cerró con Andrea firmando contrato como aprendiz-operadora en Puerto de Buenaventura. S2 (PM-2.3 Reading + PM-2.5 Vocab) la mostró leyendo el shift notice y partes del buque con Capitán Restrepo en el muelle. S3 (PM-2.4 Writing) la mostró escribiendo su primer log de observación. S4 abre con el primer audio operacional auténtico que Andrea ESCUCHA: una llamada VHF entre Captain Lopera (BUENAVENTURA EXPRESS, abordo) y Capitán Restrepo (mentor SENA en el muelle, Berth 4) — Andrea escucha la llamada con audífonos como parte de su entrenamiento de orientación.",
+    "story_b_source": "GENERADA — pm-1-2.json no trae Story B audio asignada. Diálogo VHF original creado para IMARPOR-CC inspirado en SMCP (Standard Marine Communication Phrases · OMI) sin copiar de runs anteriores (CHECK 9 anti-copia-fantasma).",
+    "adaptation_strategy": "A1.2 oral — turnos ≤12 palabras, marcadores VHF auténticos (over · copy · stand by · roger), léxico del Toolbelt portuario, be + there is + prepositions + imperative como grammar backbone, Andrea como ESCUCHA-MODELO (silenciosa, toma notas)",
+    "characters_active_in_audio": [
+      "Captain Lopera (voz 1 · capitán BUENAVENTURA EXPRESS · habla desde el puente del buque vía VHF · acento internacional lingua franca, NO nativo)",
+      "Capitán Restrepo (voz 2 · mentor SENA · responde desde Berth 4 con radio portátil · acento colombiano profesional)"
+    ],
+    "characters_referenced_not_speaking": [
+      "Andrea Mosquera (referida por Restrepo · ella escucha la transmisión con audífonos durante el entrenamiento de orientación · el aprendiz se identifica con ella)"
+    ],
+    "why_different_from_reading": "Reading PM-2.3 = artículo informativo expositivo con Andrea como lectora-modelo + Restrepo como mentor narrado. Listening PM-2.6 = llamada VHF operativa con Lopera + Restrepo como voces ACTIVAS · Andrea ahora es la oyente. Diferentes voces protagonistas, diferente género (oral · radial · turnos cortos), mismo universo marítimo.",
+    "genre": "VHF radio call (ship-to-shore operational coordination · pre-arrival check · semi-formal SMCP-flavored)",
+    "genre_diff_from_reading": "Reading = expositivo escrito (shift notice + manual partes del buque). Listening = transmisión radial bidireccional con marcadores VHF auténticos (over · copy · stand by · roger that). Listening = oral, turn-taking, con interferencia de canal simulada en TTS.",
+    "vocabulary_recycling": {
+      "terms_from_toolbelt_in_script": [
+        "vessel",
+        "bow",
+        "stern",
+        "deck",
+        "port",
+        "dock",
+        "berth",
+        "container",
+        "starboard",
+        "captain",
+        "apprentice",
+        "mentor",
+        "crew",
+        "arrive"
+      ],
+      "terms_count": 14,
+      "terms_target_min": 12,
+      "coverage_rate": "14/20 = 70% del Toolbelt"
+    }
+  },
+
+  "integration_all_archetypes_policy": {
+    "applicable_to_this_pm": true,
+    "archetypes_integrated": ["A", "B", "C", "D", "E", "F"],
+    "archetypes_count": 6,
+    "bloom_ceiling": "L3 Apply",
+    "rationale": "Estilo mgv_compendio_metodologico declarado por instructor en arquetipos-elegidos.json. Output documenta los 6 arquetipos como menú metodológico — el instructor elige UNO como base o COMBINA técnicas. Cada arquetipo trae frases fijas + Language Bank + Micro-Cápsulas + estructura Pre/While/Post adaptada al universo IMARPOR-CC.",
+    "bloom_l3_max_justification": "S4 está en Apropiación · CEFR A1.2 · listening receptivo · cognitive load del audio en lengua extranjera ya consume working memory. Imponer L4-L6 violaría el principio §5.6 Chunking de pm-0-context. Las preguntas de comprensión se mantienen en Recordar/Comprender/Aplicar.",
+    "anti_hots_guard": "Si el instructor combina arquetipo D (Bloom Progression), DEBE elegir SOLO los niveles L1-L3 del menú · niveles L4 Analizar / L5 Evaluar / L6 Crear quedan BLOQUEADOS para esta sesión por bloom_ceiling A1.2."
+  },
+
+  "content": {
+    "the_listening_anchor_dialogue": {
+      "title": "THE LISTENING ANCHOR — VHF Radio Call · Pre-Arrival Check",
+      "genre": "VHF radio call (ship-to-shore · operational pre-arrival coordination)",
+      "tts_note": {
+        "speed_recommended": "0.85x (slow A1.2 pace · permite chunking auditivo)",
+        "pause_marker": "/ (slash · indica pausa natural de phrase boundary)",
+        "voices_count": 2,
+        "voice_1": "Captain Lopera — male · 50s · international lingua-franca English (ligero acento europeo o brasileño · NO native UK/US) · tono profesional firme",
+        "voice_2": "Capitán Restrepo — male · 45s · Colombian professional English · tono cálido mentor pero operativo",
+        "intonation": "Statement falling tone · question rising tone · VHF markers (over · copy) con flat tone radial",
+        "vhf_simulation": "Add subtle radio static effect (-3dB) at transmission boundaries · NO modificar contenido lingüístico",
+        "duration_estimated": "1 minute 35 seconds at 0.85x"
+      },
+      "word_count": 187,
+      "script_with_pause_marks": "[VHF static] / Lopera: BUENAVENTURA EXPRESS to Buenaventura Port Control. / Vessel BUENAVENTURA EXPRESS calling. / Over.\n\nRestrepo: Buenaventura Port Control. / Captain Restrepo here. / Go ahead. / Over.\n\nLopera: My vessel is two miles from the port. / We arrive at zero seven hundred. / Berth 4. / Over.\n\nRestrepo: Roger that. / Berth 4 is ready. / Confirm your cargo. / Over.\n\nLopera: We have forty containers on the deck. / Twenty containers on the bow. / Twenty on the stern. / Over.\n\nRestrepo: Copy. / Forty containers total. / What is your starboard side status? / Over.\n\nLopera: Starboard side is clear. / The crew is on deck. / All ready for berthing. / Over.\n\nRestrepo: Good. / I am the dock mentor today. / My apprentice Andrea is with me. / She listens to this call. / Over.\n\nLopera: Welcome, apprentice. / Stand by, crew. / We arrive in ten minutes. / Over.\n\nRestrepo: Stand by confirmed. / Berth 4 stands by. / Captain Lopera, / safe arrival. / Over and out.\n\nLopera: Thank you, mentor. / Over and out. / [VHF static fade]",
+      "characters_used": ["Captain Lopera", "Capitán Restrepo"],
+      "characters_referenced": ["Andrea Mosquera (apprentice, listening silently)"],
+      "vocabulary_coverage": {
+        "toolbelt_terms_hit": [
+          "vessel",
+          "port",
+          "berth",
+          "cargo",
+          "container",
+          "deck",
+          "bow",
+          "stern",
+          "starboard",
+          "crew",
+          "berthing",
+          "captain",
+          "apprentice",
+          "mentor",
+          "arrive",
+          "dock"
+        ],
+        "count": 16,
+        "rate_vs_toolbelt": "16/20 = 80% (supera target ≥12/20)"
+      },
+      "grammar_targets_present": {
+        "Gr1_be": [
+          "My vessel IS two miles from the port",
+          "Berth 4 IS ready",
+          "Starboard side IS clear",
+          "The crew IS on deck",
+          "I AM the dock mentor today",
+          "My apprentice ARE with me",
+          "She listens"
+        ],
+        "Gr4_there_is_there_are": [
+          "(implícita en estructura de existencia operativa: forty containers on the deck · twenty on the bow)"
+        ],
+        "Gr7_prepositions_of_place": [
+          "from the port",
+          "at zero seven hundred",
+          "on the deck",
+          "on the bow",
+          "on the stern",
+          "with me"
+        ],
+        "Gr9_imperative_VHF_commands": [
+          "Confirm your cargo",
+          "Stand by, crew",
+          "Go ahead",
+          "Copy"
+        ]
+      },
+      "discourse_markers_oral": [
+        "over",
+        "copy",
+        "roger that",
+        "stand by",
+        "go ahead",
+        "over and out"
+      ],
+      "smcp_flavor_evidence": "Marcadores VHF auténticos OMI/SMCP (over · copy · roger · stand by) · estructura turn-by-turn con confirmación obligatoria · números pronunciados estilo náutico (zero seven hundred) · identificación de buque al inicio de cada transmisión."
+    },
+
+    "audio_logistics": {
+      "platform_delivery": "Moodle plataforma · archivo MP3 descargable + streaming · accesible desde computadores del aula y desde dispositivos móviles para trabajo autónomo",
+      "file_format": "MP3 128kbps · stereo · 1m35s",
+      "tts_engine_recommended": "ElevenLabs Multilingual v2 OR Google Cloud TTS Studio · 2 voces masculinas distintas",
+      "headphone_requirement": "Sí · audífonos individuales obligatorios para fase WHILE (privacidad cognitiva · evita carga acústica del aula)",
+      "transcript_availability": "Transcript NO se entrega en PRE-LISTENING · se entrega en POST-LISTENING como verificación · evita lectura sustituta",
+      "accessibility": "Aprendices con discapacidad auditiva: transcript bilingüe completo + extensión de tiempo 1.5x"
+    },
+
+    "transcript_with_marks": {
+      "format": "Transcript pedagógico con marcas de IPA en survival words + chunks resaltados + grammar targets en negrita",
+      "survival_words_with_ipa": [
+        {"word": "vessel", "ipa": "/ˈves.əl/", "stress": "VES-əl"},
+        {"word": "berth", "ipa": "/bɜːθ/", "stress": "monosyllabic"},
+        {"word": "cargo", "ipa": "/ˈkɑːr.ɡoʊ/", "stress": "CAR-go"},
+        {"word": "starboard", "ipa": "/ˈstɑːr.bərd/", "stress": "STAR-bərd"},
+        {"word": "berthing", "ipa": "/ˈbɜːθ.ɪŋ/", "stress": "BERTH-ing"}
+      ],
+      "chunks_marked": [
+        "[BUENAVENTURA EXPRESS to Buenaventura Port Control]",
+        "[two miles from the port]",
+        "[We arrive at zero seven hundred]",
+        "[forty containers on the deck]",
+        "[The crew is on deck]",
+        "[All ready for berthing]",
+        "[Stand by, crew]"
+      ]
+    },
+
+    "archetype_A_micro_skills_foundation": {
+      "name": "A — Micro-Skills Foundation",
+      "actua_como": "Listening Micro-Skills Coach & ESP Auditory Foundation Specialist. Builds the foundational auditory skills that make VHF maritime listening comprehension possible. Your activities train the ear before training the brain — because you can't understand what you can't decode.",
+      "cuando_funciona": "Cuando los aprendices tienen dificultad decodificando vocabulario marítimo nuevo (vessel /ˈves.əl/, berth /bɜːθ/, starboard /ˈstɑːr.bərd/) y los marcadores VHF (over, copy, roger).",
+      "micro_skills_chosen": [
+        "A2 Patrones de sílabas y entonación (stressed syllable en términos marítimos)",
+        "A3 Segmentación de palabras (linking en 'over and out')",
+        "A4 Recuperación léxica (sentence bingo con Toolbelt)"
+      ],
+      "pre_listening": {
+        "survival_words_activation": "Instructor proyecta tarjetas IPA: vessel /ˈves.əl/, berth /bɜːθ/, cargo /ˈkɑːr.ɡoʊ/, starboard /ˈstɑːr.bərd/. Aprendices repiten 3 veces marcando la sílaba tónica con palmada.",
+        "phonetic_prediction": "Listen and predict (*Escucha y predice*): el instructor lee 5 palabras del Toolbelt en orden aleatorio · aprendices marcan en su worksheet la sílaba tónica antes de escuchar el audio.",
+        "instruction_bilingual": "Tap the stressed syllable as you hear it (*Da una palmada en la sílaba tónica al escucharla*)."
+      },
+      "while_listening": {
+        "first_pass": "Listen for gist (*Escucha para entender la idea general*). Solo escucha · sin escribir.",
+        "second_pass_micro_skills": [
+          "Spot the stressed syllable: marcar la sílaba tónica de 8 palabras del Toolbelt en una tabla preimpresa",
+          "Break the flow: separar con / la frase 'overandout' que el aprendiz oye fusionada",
+          "Sentence bingo: tachar en cuadrícula 3x3 las frases del Toolbelt al escucharlas (vessel arrives, crew on deck, berth ready, starboard clear, etc.)"
+        ]
+      },
+      "post_listening": {
+        "verify_predictions": "Compare your predictions with the audio (*Compara tus predicciones con el audio*). En parejas, verificar las marcas de stress.",
+        "reconstruct_with_notes": "Reconstruct the call using your bingo notes (*Reconstruye la llamada usando tus notas*).",
+        "reflection": "What sound was hardest to decode? (*¿Qué sonido fue más difícil de decodificar?*) — escribir 1 oración."
+      },
+      "language_bank_archetype_A": [
+        "I hear the stress on...",
+        "The stressed syllable is...",
+        "I can/cannot decode the word..."
+      ],
+      "micro_capsule": "> 🎧 **Audio Cue:** En VHF, los marcadores 'over' y 'copy' siempre llevan tono PLANO (no rising, no falling) — son señales de turno, no preguntas ni afirmaciones."
+    },
+
+    "archetype_B_phase_based_framework": {
+      "name": "B — Phase-Based Framework (Pre/While/Post)",
+      "actua_como": "Structured Listening Instructor & ESP Comprehension Architect. Designs VHF listening lessons with a clear before-during-after flow. Every phase has a purpose, every activity has a verification step.",
+      "cuando_funciona": "Cuando el grupo necesita andamiaje predecible para procesar un audio operativo nuevo. Recomendado como estructura BASE del Listening anchor de S4.",
+      "pre_listening": {
+        "title_image_brainstorm": "Instructor proyecta foto de Berth 4 con BUENAVENTURA EXPRESS aproximándose. Brainstorm: 'What words do you expect to hear?' (*¿Qué palabras esperas escuchar?*) → mapa mental colaborativo en pizarra.",
+        "vocabulary_bottleneck": "Pre-enseñanza SOLO de 4 términos cuello de botella: vessel, berth, cargo, starboard. NO se pre-enseña el resto — se descubre escuchando.",
+        "mental_map": "En grupo completo, construir mapa mental con 3 ramas: (1) Quiénes hablan, (2) Dónde están, (3) Qué pasa."
+      },
+      "while_listening": {
+        "first_pass_template": "Notetaking template guiada con espacios en blanco: 'Vessel name: ____' · 'Arrival time: ____' · 'Berth number: ____' · 'Number of containers: ____'.",
+        "second_pass_verification": "Verificar hipótesis del brainstorm: ¿Qué palabras predichas SÍ aparecieron? ¿Cuáles no?",
+        "purposeful_listening": "El alumno escucha PARA completar la plantilla, NO solo para 'entender'."
+      },
+      "post_listening": {
+        "collaborative_reconstruction": "En parejas, reconstruir el diálogo VHF con sus notas. Una pareja Lopera, otra Restrepo.",
+        "divergent_questions_l3_max": [
+          "What is Andrea doing during this call? (Recordar)",
+          "Why does Restrepo confirm the cargo? (Comprender)",
+          "If you were Andrea, what would you write in your notebook? (Aplicar)"
+        ],
+        "production": "Resumen oral de 3 frases sobre la llamada."
+      },
+      "language_bank_archetype_B": [
+        "I expect to hear...",
+        "The vessel name is...",
+        "The arrival time is...",
+        "There are X containers on..."
+      ],
+      "micro_capsule": "> ⚠️ **Listening Rule:** Antes de escuchar, ACTIVA tu cerebro con palabras esperadas. Tu cerebro reconoce más rápido lo que ya está pre-cargado en la memoria de trabajo."
+    },
+
+    "archetype_C_tblt_listening": {
+      "name": "C — TBLT Listening (Task-Based)",
+      "actua_como": "TBLT Listening Designer & ESP Maritime Task Architect. Creates VHF listening tasks where comprehension serves a real port operation. Your tasks don't ask 'What did you hear?' — they ask 'What will you DO with what you heard?'",
+      "cuando_funciona": "Cuando se quiere conectar el listening con una tarea operativa real (preparar Berth 4 según la información del VHF call).",
+      "task_type_chosen": "Information-gap (Jigsaw Listening) + Reasoning-gap (verificar restricciones operativas)",
+      "pre_listening": {
+        "task_briefing": "You will listen to a VHF call to PREPARE Berth 4 for the BUENAVENTURA EXPRESS arrival (*Vas a escuchar una llamada VHF para PREPARAR el Berth 4 para la llegada del BUENAVENTURA EXPRESS*).",
+        "task_constraints": "Restricciones operativas: (1) Berth 4 solo acepta hasta 50 containers, (2) llegada debe ser confirmada con tiempo exacto, (3) lado starboard debe estar libre.",
+        "survival_words": "Repaso rápido: containers, starboard side, berthing"
+      },
+      "while_listening": {
+        "jigsaw_split": "Group A escucha turnos 1-3 (info de vessel + arrival time). Group B escucha turnos 4-6 (info de cargo + starboard). Group C escucha turnos 7-9 (info de crew + apprentice).",
+        "task_execution": "Cada grupo toma notas SOLO de su porción · usa la plantilla operativa de Berth 4.",
+        "verification_against_constraints": "¿Los containers (40) están dentro del límite de Berth 4 (50)? ¿La llegada está confirmada? ¿Starboard está libre?"
+      },
+      "post_listening": {
+        "info_exchange": "Information exchange: A+B+C se reúnen y reconstruyen la llamada COMPLETA intercambiando información oral.",
+        "reasoning_decision": "Decisión: ¿Berth 4 está LISTO para recibir el vessel? Justifica con 2 datos del audio.",
+        "reflection": "Was the task easy or difficult? Why? (*¿La tarea fue fácil o difícil? ¿Por qué?*)"
+      },
+      "language_bank_archetype_C": [
+        "Group A heard...",
+        "We confirm that...",
+        "Berth 4 is/is not ready because..."
+      ],
+      "micro_capsule": "> 🎧 **Task Cue:** En TBLT, escuchas para HACER, no para responder preguntas. Tu objetivo: que Berth 4 quede listo. Si tu grupo logra eso, comprendiste el audio."
+    },
+
+    "archetype_D_bloom_progression": {
+      "name": "D — Bloom Progression (L1-L3 Capped)",
+      "actua_como": "Cognitive Listening Designer & ESP Bloom Specialist (A1.2 Calibrated). Designs listening activities that scale from basic recall to applied use — capped at L3 Apply for A1.2 cognitive load.",
+      "cuando_funciona": "Cuando se quiere demostrar que el MISMO audio puede trabajarse en 3 niveles cognitivos sin romper el techo A1.2.",
+      "bloom_levels_chosen": ["L1 Recordar", "L2 Comprender", "L3 Aplicar"],
+      "bloom_levels_blocked": ["L4 Analizar", "L5 Evaluar", "L6 Crear"],
+      "blocked_rationale": "bloom_ceiling A1.2 establecido en pm0_anchor · L4-L6 violaría carga cognitiva auditiva en lengua extranjera",
+      "pre_listening": {
+        "opening_question_per_level": [
+          "L1 Recordar: Listen and find the arrival time and the berth number",
+          "L2 Comprender: Listen and explain in 2 lines what is happening at Berth 4",
+          "L3 Aplicar: Listen and decide which 3 actions Andrea must do next as the apprentice"
+        ]
+      },
+      "while_listening": {
+        "first_pass_l1_l2": "Tabla de hechos literales: Vessel name, Arrival time, Berth, Cargo count, Status",
+        "second_pass_l3": "Aplicación: con la info del audio, escribir el plan de 3 acciones de Andrea (1. Prepare notes board, 2. Confirm radio working, 3. Go to dock with Restrepo)"
+      },
+      "post_listening": {
+        "l1_verification": "Quiz oral 5 preguntas factuales (multiple choice)",
+        "l2_paraphrase": "Resumir en 3 frases lo que pasa",
+        "l3_application": "Presentar el plan de 3 acciones de Andrea y justificar con datos del audio"
+      },
+      "language_bank_archetype_D": [
+        "The arrival time is...",
+        "What happens is...",
+        "Andrea must..."
+      ],
+      "micro_capsule": "> ⚠️ **Bloom Rule:** En A1.2, el techo es APLICAR. Si un compañero quiere ANALIZAR o EVALUAR el audio, esa actividad es para A2 — no para esta sesión."
+    },
+
+    "archetype_E_advanced_techniques": {
+      "name": "E — Advanced Techniques",
+      "actua_como": "Advanced Listening Trainer & ESP Maritime Prosody Specialist. Uses high-impact techniques (Shadowing, Dictogloss, Predictive) calibrated to A1.2 + maritime VHF prosody.",
+      "cuando_funciona": "Cuando el grupo ya tiene comprensión base y se quiere entrenar prosodia VHF (entonación radial plana en marcadores · entonación operativa en órdenes).",
+      "techniques_chosen": [
+        "Shadowing — solo en chunks cortos VHF (over · copy · stand by · roger that)",
+        "Dictogloss adaptado A1.2 — reconstruir 1 turno completo con notas clave"
+      ],
+      "pre_listening": {
+        "technique_explanation": "Today we shadow VHF markers because the FLAT radial tone is the prosody signature of maritime English (*Hoy hacemos shadowing de marcadores VHF porque el tono plano radial es la firma prosódica del inglés marítimo*).",
+        "survival_words": "Repaso: over /ˈoʊ.vər/, copy /ˈkɑː.pi/, roger /ˈrɑː.dʒər/, stand by /stænd baɪ/"
+      },
+      "while_listening": {
+        "shadowing_pass_1": "Mantener el ritmo · repetir con desfase de 2-3 palabras",
+        "shadowing_pass_2": "Enfocar entonación PLANA en marcadores VHF",
+        "shadowing_pass_3": "Enfocar enlaces sonoros (over_and_out)",
+        "dictogloss_target_turn": "Turno de Lopera: 'We have forty containers on the deck. Twenty containers on the bow. Twenty on the stern.' — escuchar 2x · tomar palabras clave · reconstruir en parejas"
+      },
+      "post_listening": {
+        "compare_with_original": "Compare your shadowing recording with the original (*Compara tu shadowing con el original*) — usar grabadora del celular",
+        "self_assessment": "Did the technique help my prosody? (*¿La técnica ayudó a mi prosodia?*) — autoevaluación con rúbrica de 3 ítems",
+        "dictogloss_share": "En parejas, comparar reconstrucción del turno · identificar diferencias"
+      },
+      "language_bank_archetype_E": [
+        "I shadow with delay...",
+        "My prosody is/is not flat in markers",
+        "We reconstruct the turn as..."
+      ],
+      "micro_capsule": "> 🎧 **Prosody Cue:** En VHF, NO subes ni bajas la voz al decir 'over' o 'copy'. Es plano · profesional · operacional. Tu voz suena como un piloto, no como una conversación de café."
+    },
+
+    "archetype_F_multimedia_production": {
+      "name": "F — Multimedia Production (A1.2 Light)",
+      "actua_como": "Multimedia Listening Producer & ESP Creative Output Specialist (A1.2 Calibrated). Turns VHF listening input into simple creative output that respects A1.2 cognitive load.",
+      "cuando_funciona": "Cuando se quiere cerrar S4 con un producto creativo simple que prepare el terreno para PM-2.8 Speaking en la segunda mitad de S4.",
+      "production_chosen": "Interview Simulation (1 estudiante asume rol de Capitán Restrepo · clase le hace preguntas A1.2 sobre la llamada VHF)",
+      "production_alternative_blocked": "Podcast Debate / Sound Design / Spin-offs requieren HOTS · BLOQUEADO por bloom_ceiling A1.2",
+      "pre_listening": {
+        "production_purpose": "After listening, ONE student plays Restrepo. The class asks him questions in English (*Después de escuchar, UN estudiante hace de Restrepo. La clase le hace preguntas en inglés*).",
+        "extraction_focus": "Tomar notas de: nombre vessel, hora arrival, berth, containers, status starboard, mensaje a Andrea"
+      },
+      "while_listening": {
+        "first_pass_general": "Comprensión general del rol de Restrepo",
+        "second_pass_production_notes": "Notas específicas para la entrevista: ¿Qué dijo Restrepo? ¿Qué confirmó? ¿Qué le pidió a Andrea?"
+      },
+      "post_listening": {
+        "preparation": "El 'Restrepo' estudiante prepara 5 frases tipo respuesta basadas en el audio",
+        "execution": "Clase hace 5 preguntas A1.2 (Where are you? · Who arrives? · How many containers?) · Restrepo responde con frases tipo del audio",
+        "peer_evaluation": "Compañeros evalúan con rúbrica simple: ¿Las respuestas son del audio? ¿Son correctas? ¿Son comprensibles?",
+        "reflection": "What did I learn by BEING Restrepo? (*¿Qué aprendí siendo Restrepo?*)"
+      },
+      "language_bank_archetype_F": [
+        "I am Captain Restrepo",
+        "I am at Berth 4",
+        "The vessel arrives at...",
+        "There are X containers..."
+      ],
+      "micro_capsule": "> 🎧 **Production Cue:** Ser Restrepo te obliga a USAR el audio. No basta entender · tienes que devolverlo en tus palabras. Esa es la transferencia listening → speaking."
+    }
+  },
+
+  "evaluation_rubric_e3_listening": {
+    "evidence_code": "E3",
+    "evidence_type": "Desempeño",
+    "evidence_name": "Comprensión auditiva de operación VHF marítima",
+    "instrumento": "Lista de Chequeo + Plantilla de Notas",
+    "instrument_number": 3,
+    "puntaje_total": 5,
+    "puntaje_origen": "Cuestionario consolidado SENA · 5 puntos formales (Listening skill)",
+    "criterios": [
+      {
+        "criterio": "C1 — Identifica información literal del audio (vessel name, arrival time, berth, container count)",
+        "puntos": 2,
+        "bloom_level": "L1 Recordar",
+        "verification": "Plantilla de notas completada correctamente · ≥4/5 datos correctos"
+      },
+      {
+        "criterio": "C2 — Comprende el propósito comunicativo de la llamada VHF",
+        "puntos": 1.5,
+        "bloom_level": "L2 Comprender",
+        "verification": "Resumen oral de 3 frases · explica QUÉ pasa y POR QUÉ"
+      },
+      {
+        "criterio": "C3 — Aplica la información para predecir las próximas acciones de Andrea",
+        "puntos": 1.5,
+        "bloom_level": "L3 Aplicar",
+        "verification": "Plan de 3 acciones de Andrea · justificadas con datos del audio"
+      }
+    ],
+    "umbral_aprobacion": "≥3/5 puntos (60%)",
+    "feedback_formativo": "Recast en errores de pronunciación · Confirmation checks en respuestas dudosas · Noticing prompts en grammar targets perdidos"
+  },
+
+  "activity_card": {
+    "pm_id": "PM-2.6",
+    "pm_name": "Listening — The Auditory Anchor",
+    "session": 4,
+    "phase_sena": "Apropiación",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "procedimental",
+        "statement": "Escuchar una llamada VHF entre Captain Lopera (BUENAVENTURA EXPRESS) y Capitán Restrepo (Berth 4) e identificar información operativa específica: nombre del buque, hora de llegada, berth asignado, cantidad de containers y estado del lado starboard.",
+        "didactic_strategy": "Aprendizaje basado en tareas (TBLT)",
+        "didactic_technique": "Investigación guiada con plantilla de notas + Phase-Based Framework"
+      },
+      {
+        "number": 2,
+        "type": "procedimental",
+        "statement": "Responder preguntas L1-L3 sobre el audio VHF y reconstruir el diálogo en parejas, demostrando comprensión literal, inferencial y aplicada del intercambio operativo.",
+        "didactic_strategy": "Aprendizaje colaborativo",
+        "didactic_technique": "Think-Pair-Share + Jigsaw Listening"
+      }
+    ],
+    "hours": {
+      "direct": 3.0,
+      "autonomous": 0.83,
+      "rationale": "S4 tiene 6h directas totales · PM-2.6 toma 3.0h (primera mitad) · PM-2.8 Speaking toma las otras 3.0h (segunda mitad) · 0.83h autónomas para re-escucha y diario de listening en plataforma Moodle"
+    },
+    "evidence": {
+      "generates_evidence": true,
+      "evidence_code": "E3",
+      "type": "Desempeño",
+      "skill": "Listening",
+      "description": "El aprendiz demuestra comprensión de contenido oral técnico marítimo en inglés respondiendo preguntas L1-L3 y completando una plantilla operativa basada en una llamada VHF auténtica.",
+      "evaluation_technique": "Observación + Lista de Chequeo",
+      "instrument_number": 3,
+      "instrument_type": "Lista de Chequeo + Plantilla de Notas Operativa Berth 4",
+      "puntaje_formal": 5,
+      "contributes_to_consolidated_quiz": true,
+      "quiz_skill": "Listening",
+      "quiz_points": 5,
+      "quiz_item_count": 5
+    },
+    "environment": {
+      "type": "Aula con equipo de audio",
+      "materials": [
+        "Proyector con sistema de audio estéreo",
+        "Computadores con acceso a plataforma Moodle (12 estaciones)",
+        "Audífonos individuales con micrófono integrado (12 unidades · obligatorios para shadowing)",
+        "Archivo MP3 del audio VHF (1m35s · descargable y streaming)",
+        "Plantilla de notas operativa Berth 4 (impresa · 1 por aprendiz)",
+        "Tarjetas IPA de Survival Words (vessel, berth, cargo, starboard, berthing)",
+        "Pizarra para mapa mental colaborativo",
+        "Grabadora del celular (para self-recording de shadowing)",
+        "Worksheet bilingüe THE AUDITORY ANCHOR (impreso)"
+      ],
+      "audio_equipment_specs": {
+        "playback": "Sistema estéreo del aula con conexión Bluetooth + cable AUX backup",
+        "individual": "Audífonos con cancelación pasiva de ruido para concentración cognitiva",
+        "recording": "Celular del aprendiz o grabadora portátil del aula"
+      },
+      "instructors": "Instructor de inglés técnico marítimo-portuario"
+    },
+    "didactic_resources": [
+      "Audio VHF del Listening Anchor (TTS 2 voces)",
+      "Worksheet THE AUDITORY ANCHOR (estructura Pre/While/Post + 6 arquetipos integrados como menú)",
+      "Plantilla operativa Berth 4 (Information-gap)",
+      "Tarjetas IPA Survival Words",
+      "Rúbrica de autoevaluación de shadowing"
+    ],
+    "language_bank_consolidated": [
+      "I hear / I heard...",
+      "The vessel name is...",
+      "It arrives at... / They arrive at...",
+      "There are X containers on the deck/bow/stern",
+      "Starboard side is clear/not clear",
+      "Andrea must / will...",
+      "Roger that / Copy / Stand by / Over / Over and out"
+    ]
+  },
+
+  "pm0_protocol_session_level": {
+    "session": 4,
+    "fase_sena": "Apropiación",
+    "cefr_target": "A1.2",
+    "l1_percentage": 12,
+    "l1_percentage_source": "pm-0-context.l1_percentage_per_session.single_guide_12_sessions S4 = ≤12%",
+    "l1_usage_in_pm26": [
+      "Instrucciones bilingües unificadas (English first, *Spanish in italics*)",
+      "Reflection prompts post-listening",
+      "Clarificación de marcadores VHF si grupo se atasca",
+      "Justificación L1 de bloom_ceiling para mantenerlo explícito"
+    ],
+    "grammar_groups_active": ["Gr1 be", "Gr4 there is/there are", "Gr7 prepositions of place", "Gr9 imperative"],
+    "grammar_groups_blocked": ["Gr5-Gr17 reservados para sesiones posteriores"],
+    "feedback_modes": ["Noticing prompts (PRE)", "Confirmation checks (WHILE)", "Recast (POST)"],
+    "success_factors_session_level": [
+      "Salience (Survival Words IPA + stress)",
+      "Use (productive partner reconstruction)",
+      "Connection (Toolbelt 4to encuentro)",
+      "Context (universo IMARPOR-CC continuo)",
+      "Emotion (voces familiares del universo)",
+      "Spaced repetition (R→V→W→L)",
+      "Synergy (preparación PM-2.8 Speaking S4 paralelo)"
+    ],
+    "chunking_strategy": "Audio fragmentado en 7 chunks de 3-5 segundos · pause markers / · turn boundaries VHF"
+  },
+
+  "validacion": {
+    "check1_estilo_aplicado": {
+      "expected": "mgv_compendio_metodologico",
+      "actual": "mgv_compendio_metodologico",
+      "pass": true,
+      "evidence": "6 arquetipos integrados como menú metodológico · cada uno con frases fijas + Language Bank + Micro-Cápsulas"
+    },
+    "check2_archetypes_count": {
+      "expected": 6,
+      "actual": 6,
+      "pass": true,
+      "evidence": "archetype_A_micro_skills_foundation + archetype_B_phase_based_framework + archetype_C_tblt_listening + archetype_D_bloom_progression + archetype_E_advanced_techniques + archetype_F_multimedia_production"
+    },
+    "check3_bloom_ceiling": {
+      "expected": "L3 Apply (NO HOTS)",
+      "actual": "L3 Apply max · L4-L6 explícitamente bloqueados en archetype_D",
+      "pass": true,
+      "evidence": "integration_all_archetypes_policy.bloom_ceiling = 'L3 Apply' + anti_hots_guard documentado + archetype_D.bloom_levels_blocked = [L4, L5, L6]"
+    },
+    "check4_l1_percentage": {
+      "expected": "≤12% S4",
+      "actual": "12% — usado solo para instrucciones bilingües, reflection prompts y clarificación de marcadores VHF",
+      "pass": true,
+      "evidence": "pm0_protocol_session_level.l1_percentage = 12 + l1_usage_in_pm26 acotado"
+    },
+    "check5_toolbelt_coverage": {
+      "expected": "≥12/20 términos del Toolbelt en el script",
+      "actual": "16/20 términos = 80%",
+      "pass": true,
+      "evidence": "the_listening_anchor_dialogue.vocabulary_coverage.toolbelt_terms_hit = [vessel, port, berth, cargo, container, deck, bow, stern, starboard, crew, berthing, captain, apprentice, mentor, arrive, dock]"
+    },
+    "check6_grammar_targets": {
+      "expected": "Gr1 + Gr4 + Gr7 + Gr9 presentes naturalmente",
+      "actual": "Los 4 grammar targets presentes con ejemplos extraídos",
+      "pass": true,
+      "evidence": "the_listening_anchor_dialogue.grammar_targets_present documenta cada uno con instances específicas"
+    },
+    "check7_genre_diff_from_reading": {
+      "expected": "Género oral DIFERENTE al Reading PM-2.3 (que era artículo expositivo)",
+      "actual": "VHF radio call (oral · radial · turn-taking)",
+      "pass": true,
+      "evidence": "universe_anchor.genre_diff_from_reading documenta la diferencia"
+    },
+    "check8_characters_diff_from_reading": {
+      "expected": "Voces protagonistas DIFERENTES al Reading",
+      "actual": "Reading = Andrea+Restrepo narrados / Listening = Lopera+Restrepo como voces ACTIVAS · Andrea referida pero silente",
+      "pass": true,
+      "evidence": "universe_anchor.characters_active_in_audio + characters_referenced_not_speaking + why_different_from_reading"
+    },
+    "check9_anti_copia_fantasma": {
+      "expected": "Contenido ORIGINAL para guía IMARPOR-CC · NO copia del ref MGV-2026-04-20 (universo Pixel & Ink graphic design)",
+      "actual": "Diálogo VHF marítimo original · personajes Lopera+Restrepo+Andrea (NO Sophia/Laura/Andrés del ref) · vocabulary marítimo (vessel/berth/cargo · NO font/serif/color del ref) · género VHF radio call (NO voice note/tutorial del ref) · setting Berth 4 Buenaventura (NO Pixel & Ink Studio Tuesday 10AM del ref)",
+      "pass": true,
+      "evidence": "Toda la sustancia narrativa, léxica y de género es del universo marítimo IMARPOR-CC. El ref MGV-2026-04-20 se usó SOLO como guía estructural (schema de campos) · NO como fuente de contenido. Verificable: 0 términos de gráfica visual (font, color, serif, palette, hue) en el script · 16 términos marítimos del Toolbelt IMARPOR-CC."
+    },
+    "check10_smcp_flavor": {
+      "expected": "Diálogo SMCP-flavored (Standard Marine Communication Phrases · OMI)",
+      "actual": "Marcadores VHF auténticos: over · copy · roger that · stand by · go ahead · over and out · identificación de buque al inicio · números náuticos (zero seven hundred)",
+      "pass": true,
+      "evidence": "the_listening_anchor_dialogue.smcp_flavor_evidence + discourse_markers_oral"
+    },
+    "check11_word_count_range": {
+      "expected": "150-250 palabras (instructor brief) · master prompt dice 150-180",
+      "actual": "187 palabras",
+      "pass": true,
+      "evidence": "the_listening_anchor_dialogue.word_count = 187 (dentro de 150-250)"
+    },
+    "check12_enriched_false": {
+      "expected": "enriched: false (Gate Humano 2 pendiente)",
+      "actual": "false",
+      "pass": true,
+      "evidence": "Top-level enriched: false + _enriched_false_rationale documenta espera de Instructor Selection"
+    }
+  },
+
+  "siguiente_paso": {
+    "next_pm_in_session": {
+      "pm_code": "PM-2.8",
+      "pm_name": "Speaking — Mission",
+      "relationship": "PARALELO en S4 — toma la otra mitad de las 6h directas (3.0h)",
+      "transfer_inputs": [
+        "Chunks VHF del audio (over · copy · stand by · roger that)",
+        "Language Bank consolidado de listening",
+        "Toolbelt activado en oral (16/20 términos)",
+        "Prosody pattern de marcadores VHF (tono plano)",
+        "Plantilla operativa Berth 4 (puede reutilizarse en speaking task)"
+      ]
+    },
+    "next_session": {
+      "session": 5,
+      "next_pm": "PM-2.9",
+      "pm_name": "Productive Skills Integration",
+      "relationship": "S5 abre con consolidación de los 4 skills (R-W-L-S) trabajados en S2-S4 · Listening anchor de S4 alimenta scaffolding de PM-2.9"
+    },
+    "instructor_action_required": [
+      "Gate Humano 2 — Instructor Selection: validar el audio VHF antes de TTS production",
+      "Confirmar 2 voces TTS elegidas (engine + voice IDs)",
+      "Validar plantilla operativa Berth 4 contra protocolo SENA",
+      "Marcar enriched: true cuando esté listo para PM-2.11 ensamblaje"
+    ],
+    "blockers_for_pm_2_11": [
+      "enriched: false bloquea ensamblaje GFPI-F-134 hasta Gate Humano 2"
+    ]
+  }
+}

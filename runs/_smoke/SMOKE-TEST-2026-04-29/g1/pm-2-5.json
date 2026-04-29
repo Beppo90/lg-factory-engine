@@ -1,0 +1,688 @@
+{
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "pm_code": "PM-2.5",
+  "pm_name": "Vocabulary, Literacy & Scenario Setup",
+  "pm_version": "2.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "cefr_level": "A1.2",
+  "session": 2,
+  "fase_sena": "Apropiación",
+  "generated_at": "2026-04-28",
+  "instructor": "Sergio Cortés Perdomo",
+  "previous_pms": ["PM-2.1", "PM-2.2", "PM-2.3", "PM-2.4"],
+  "archetypes_policy": "TODOS LOS 5 ARQUETIPOS INTEGRADOS (A+B+C+D+E) — estilo declarado mgv_compendio_metodologico",
+  "enriched": false,
+  "_enriched_false_rationale": "Espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. Sergio debe revisar las 5 ramas arquetípicas (Phonics & Spelling · Vocabulary Development · Reading Fluency · Writing Scaffolding · Interactive Literacy), elegir flow_id para la cohorte real, validar que los ejemplos derivan del Master Anchor Text 'Andrea's First Morning' (PM-2.3) sin parafraseo no autorizado (CHECK 9 anti-copia-fantasma) y marcar enriched: true.",
+  "pm0_anchor": {
+    "source_file": "pm-0-context.json",
+    "cefr_descriptor_ref": "§6.A1.2 — vocabulario familiar muy básico del sector marítimo-portuario (partes del buque, infraestructura del puerto, direcciones, roles, operaciones); ortografía emergente con apoyo de modelos escritos",
+    "l1_policy_ref": "§9.1.single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S2 — L1% ≤ 20% (curva descendente desde S1=25% hacia A2.1)",
+    "methodological_shift_ref": "§5.A1.2 — input lento, andamiaje alto, accuracy-prioritario; consolidación léxica antes que producción libre · Word Walls y Mapas Semánticos como técnicas privilegiadas para acceso a memoria a largo plazo",
+    "feedback_ref": "§5.6 — S2 inicia recast oral en Word Sort y Repeated Reading + corrección explícita escrita en Semantic Map y Guided Writing",
+    "stress_pronunciation_ref": "§5.8 — S2 par mínimo: 'starboard' (STAR-bord) vs 'port' (port) · 'vessel' (VES-el) · 'berth' (/bɜːrθ/ con th sordo) · 'deck' (deck) vs 'desk' (desk) — par mínimo crítico para confusión L1",
+    "success_vocabulary_ref": "§5.10 — PM-2.5 activa los 7 factores SUCCESS sobre los 20 Toolbelt terms con ejercicios dedicados (Phonics + Semantic Map + Word Wall + Cloze + LEA + Jigsaw)",
+    "grammar_roadmap_ref": "§8.G1_A1.2 — PM-2.5 recicla Grupo 1 'be' (is/are) y Grupo 4 'there is/there are' del Master Anchor Text en contextos de fluidez lectora y escritura andamiada (sin introducir nuevos grupos)"
+  },
+  "universe_anchor": {
+    "continuity_with_pm23": "PM-2.3 presentó el Master Anchor Text 'Andrea's First Morning' (188 palabras, 18/20 Toolbelt terms en contexto) y los 20 términos en 5 categorías. PM-2.5 PRE-ACTIVA esos 20 términos antes y DESPUÉS del texto: la pre-activación entrena fonología y mapeo semántico para que el aprendiz reconozca cada término en el texto; la post-activación consolida productivamente con Word Walls, LEA y Jigsaw.",
+    "continuity_with_pm24": "PM-2.4 produce el shift notice propio del aprendiz (Andrea's voice). PM-2.5 toma esa producción como insumo del Dialogue Journal del Arquetipo D y como banco de palabras del Word Wall del Arquetipo B.",
+    "role_in_s2": "PM-2.3 = exposición comprensiva al texto ancla. PM-2.4 = producción guiada del shift notice. PM-2.5 = CONSOLIDACIÓN LÉXICO-LITERARIA productiva — los 20 términos pasan de reconocimiento a uso automatizado. Los 3 PMs componen el Conjunto A de la Sesión 2.",
+    "characters_active": [
+      "Andrea Mosquera (modelo de uso del Toolbelt · aprendiz SENA primera semana en Buenaventura)",
+      "Capitán Restrepo (mentor SENA · valida pronunciación y categorización)",
+      "Captain Lopera (cliente externo permanente · capitán del BUENAVENTURA EXPRESS · referente para roles y operaciones)"
+    ],
+    "universe_extension": "Andrea construye su 'Operator's Notebook' — el cuaderno de vocabulario portuario que todo aprendiz SENA en el muelle arma durante su primera semana. El aprendiz construye el suyo en paralelo con Andrea. El cuaderno se nutre del shift notice de PM-2.4 + Toolbelt de PM-2.3 + Word Wall que crece sesión a sesión hasta S12.",
+    "narrative_function": "Si PM-2.3 mostró a Andrea LEYENDO los 20 términos, PM-2.5 muestra a Andrea CLASIFICÁNDOLOS, PRONUNCIÁNDOLOS, RE-USÁNDOLOS y ENSEÑÁNDOLOS a otro aprendiz (Jigsaw). El aprendiz transita el mismo camino: del input al output controlado del Toolbelt portuario."
+  },
+  "identity": {
+    "codigo": "PM-2.5",
+    "nombre": "Vocabulary, Literacy & Scenario Setup",
+    "subfase_guia_sena": "3.3 Actividades de apropiación del conocimiento",
+    "ubicacion_guia": "Sección 3.3 Apropiación (consolida PM-2.3 Reading + PM-2.4 Writing)",
+    "tipo_evidencia_sena": "N/A (scaffolding léxico-literario · alimenta Cuestionario S6 ítem de Vocabulario · 5 pts)",
+    "instrumento": "Learner's Worksheet + Operator's Notebook (vocabulary notebook personal)",
+    "estructura": "MENÚ DE ARQUETIPOS — TODOS INTEGRADOS (A+B+C+D+E)",
+    "rol_sistema": "CONSOLIDADOR LÉXICO-LITERARIO — garantiza que los 20 términos del Toolbelt pasen de reconocimiento receptivo a uso productivo automatizado, alimenta Listening (PM-2.6) y Grammar inductiva (PM-2.10)"
+  },
+  "integration_all_archetypes_policy": {
+    "applicable_to_this_pm": true,
+    "archetypes_integrated": ["A", "B", "C", "D", "E"],
+    "total_archetypes": 5,
+    "rationale_estilo_2026-04-28": "Estilo declarado mgv_compendio_metodologico (Gate Humano 1 · arquetipos-elegidos.json). Documentar TODOS los arquetipos del menú PM-2.5 permite al instructor rotar según necesidad léxica del grupo en cada cohorte intensiva 100h. Cada arquetipo trae frases fijas + Language Bank + Micro-Cápsulas alineadas al universo IMARPOR-CC.",
+    "recommended_minimum_coverage_per_session": "Al menos 2 arquetipos del menú (ver rotation_options_for_instructor)",
+    "archetypes_most_apt_for_a12_imarpor": [
+      "A (Phonics & Spelling — par mínimo starboard/port + vessel/wessel · esencial para radio VHF SMCP S3+)",
+      "B (Vocabulary Development — Semantic Map y Word Wall sobre las 5 categorías del Toolbelt)",
+      "D (Writing Scaffolding — LEA con la primera mañana de Andrea + Dialogue Journal sobre el shift notice de PM-2.4)"
+    ],
+    "archetypes_stretch_for_a12": [
+      "E (Interactive Literacy — Jigsaw Reading sobre las 5 categorías del Toolbelt · funciona con texto pre-segmentado y andamiaje extremo)"
+    ],
+    "archetypes_requiring_tech": [
+      "C (Reading Fluency con Repeated Reading temporizado — opcional grabadora del smartphone para auto-monitoreo de WPM · alternativa con cronómetro analógico)"
+    ],
+    "bloom_ceiling": "L3 Apply (default fallback · no Gate Humano 1 sobre Bloom). Arquetipos A/B/C permanecen en L1-L2 (Remember, Understand) por naturaleza léxico-fonológica; D y E alcanzan L3 Apply con andamiaje · ningún arquetipo cruza techo."
+  },
+  "content": {
+    "worksheet_title": "LITERACY & VOCABULARY — The Toolbelt in Action",
+    "guia_header": "IMARPOR-CC · Guía 1 · The Maritime Operations Pro · Nivel A1.2 · Sesión 2 (Conjunto A · parte 3)",
+    "bilingual_instruction_block": {
+      "main_message_en": "You read Andrea's first morning with PM-2.3. You wrote your own shift notice with PM-2.4. Now you OWN the 20 words. In this worksheet you spell them, see them, say them, sort them and use them. Andrea builds her Operator's Notebook. You build yours.",
+      "main_message_es_cursiva": "Leíste la primera mañana de Andrea con PM-2.3. Escribiste tu propio aviso de turno con PM-2.4. Ahora HACES TUYAS las 20 palabras. En esta hoja las deletreas, las ves, las dices, las clasificas y las usas. Andrea arma su Cuaderno del Operario. Tú armas el tuyo."
+    },
+    "the_toolbelt": {
+      "icon": "🔧",
+      "title_en": "THE TOOLBELT (CONSOLIDATED) — 20 Words You Now Own",
+      "title_es": "EL CINTURÓN DE HERRAMIENTAS (CONSOLIDADO) — 20 palabras que ya son tuyas",
+      "instruction_en": "Read each word. Look at the example from Andrea's text. Say the word out loud. Mark: ✓ I know it · ~ I am learning · ✗ Still hard.",
+      "instruction_es_cursiva": "Lee cada palabra. Mira el ejemplo del texto de Andrea. Di la palabra en voz alta. Marca: ✓ La sé · ~ La estoy aprendiendo · ✗ Aún difícil.",
+      "organization": "5 categorías × 4 términos = 20 términos · MISMO Toolbelt que PM-2.3 enriquecido con pronunciación aproximada para hispanohablantes",
+      "micro_capsula_tip": "> 🎧 **Audio Cue:** Strong syllables in CAPITALS. Tap the table when you say the strong syllable. (*Sílabas fuertes en MAYÚSCULA. Golpea la mesa al decir la sílaba fuerte.*)",
+      "categories": [
+        {
+          "category_id": "ship_parts",
+          "name_en": "Ship Parts",
+          "name_es": "Partes del buque",
+          "icon": "⚓",
+          "terms": [
+            {"word": "vessel", "es": "buque", "definition_en": "a big boat for cargo", "example_from_pm23": "A vessel has a bow at the front.", "pronunciation_for_spanish": "VES-sel (NO 'wessel' · v de victoria, no w)", "stress": "1st syllable"},
+            {"word": "bow", "es": "proa", "definition_en": "the front of a vessel", "example_from_pm23": "There is a bow.", "pronunciation_for_spanish": "bau (rima con 'cow' · NO 'bou' como flecha)", "stress": "monosyllable"},
+            {"word": "stern", "es": "popa", "definition_en": "the back of a vessel", "example_from_pm23": "There is a stern.", "pronunciation_for_spanish": "stern (vocal larga /ɜːrn/)", "stress": "monosyllable"},
+            {"word": "deck", "es": "cubierta", "definition_en": "the flat top of a vessel", "example_from_pm23": "There are containers on deck.", "pronunciation_for_spanish": "dek (NO 'desk' · sin s)", "stress": "monosyllable"}
+          ]
+        },
+        {
+          "category_id": "port_infrastructure",
+          "name_en": "Port Infrastructure",
+          "name_es": "Infraestructura portuaria",
+          "icon": "🏗️",
+          "terms": [
+            {"word": "port", "es": "puerto", "definition_en": "a place where vessels stop", "example_from_pm23": "Andrea is at the Port of Buenaventura.", "pronunciation_for_spanish": "port (vocal corta · NO 'porte')", "stress": "monosyllable"},
+            {"word": "dock", "es": "muelle", "definition_en": "the platform next to a vessel", "example_from_pm23": "The dock is wet and cold.", "pronunciation_for_spanish": "dak (vocal abierta · NO 'doc')", "stress": "monosyllable"},
+            {"word": "berth", "es": "atraque (lugar)", "definition_en": "the spot where a vessel parks", "example_from_pm23": "BUENAVENTURA EXPRESS arrives at Berth 4.", "pronunciation_for_spanish": "berz (th sordo · lengua entre dientes · NO 'birth' que suena igual pero significa nacimiento)", "stress": "monosyllable"},
+            {"word": "container", "es": "contenedor", "definition_en": "a big metal box for cargo", "example_from_pm23": "Cargo: containers.", "pronunciation_for_spanish": "con-TEY-ner (acento en 2da sílaba · NO en 'con')", "stress": "2nd syllable"}
+          ]
+        },
+        {
+          "category_id": "directions_sides",
+          "name_en": "Directions & Sides",
+          "name_es": "Direcciones y costados",
+          "icon": "🧭",
+          "terms": [
+            {"word": "port side", "es": "costado de babor", "definition_en": "the left side of a vessel", "example_from_pm23": "The port side is the left side.", "pronunciation_for_spanish": "PORT-said (2 palabras pegadas · primera más fuerte)", "stress": "1st word"},
+            {"word": "starboard", "es": "estribor", "definition_en": "the right side of a vessel", "example_from_pm23": "The starboard side is the right side.", "pronunciation_for_spanish": "STAR-bord (acento en STAR · NO 'star-bórd')", "stress": "1st syllable"},
+            {"word": "front", "es": "frente", "definition_en": "the part you see first", "example_from_pm23": "A vessel has a bow at the front.", "pronunciation_for_spanish": "frant (vocal /ʌ/ corta · NO 'fronte')", "stress": "monosyllable"},
+            {"word": "back", "es": "atrás", "definition_en": "the part behind", "example_from_pm23": "A vessel has a stern at the back.", "pronunciation_for_spanish": "bak (vocal /æ/ abierta corta)", "stress": "monosyllable"}
+          ]
+        },
+        {
+          "category_id": "people_roles",
+          "name_en": "People & Roles",
+          "name_es": "Personas y roles",
+          "icon": "👷",
+          "terms": [
+            {"word": "captain", "es": "capitán", "definition_en": "the leader of a vessel", "example_from_pm23": "Captain: Lopera.", "pronunciation_for_spanish": "KAP-ten (acento en 1ra · NO 'cap-tan' como en español)", "stress": "1st syllable"},
+            {"word": "apprentice", "es": "aprendiz", "definition_en": "a person who is learning", "example_from_pm23": "Andrea is a new SENA apprentice.", "pronunciation_for_spanish": "a-PREN-tis (acento en 2da · NO 'a-pren-tice')", "stress": "2nd syllable"},
+            {"word": "mentor", "es": "mentor", "definition_en": "a person who teaches you", "example_from_pm23": "Captain Restrepo is her mentor.", "pronunciation_for_spanish": "MEN-tor (acento en 1ra)", "stress": "1st syllable"},
+            {"word": "crew", "es": "tripulación", "definition_en": "all the people working on a vessel", "example_from_pm23": "(pre-loaded for Cuestionario S6 · introduced in S3)", "pronunciation_for_spanish": "kruu (vocal larga /uː/ · NO 'crew' silábica)", "stress": "monosyllable"}
+          ]
+        },
+        {
+          "category_id": "operations",
+          "name_en": "Operations",
+          "name_es": "Operaciones",
+          "icon": "🛠️",
+          "terms": [
+            {"word": "arrive", "es": "llegar", "definition_en": "to come to a place", "example_from_pm23": "BUENAVENTURA EXPRESS arrives at 07:00.", "pronunciation_for_spanish": "a-RAIV (acento en 2da · NO 'a-rri-be')", "stress": "2nd syllable"},
+            {"word": "shift", "es": "turno", "definition_en": "a block of work hours", "example_from_pm23": "Andrea reads the shift notice.", "pronunciation_for_spanish": "shift (sh suave · NO 'chift')", "stress": "monosyllable"},
+            {"word": "cargo", "es": "carga", "definition_en": "the goods on a vessel", "example_from_pm23": "Cargo: containers.", "pronunciation_for_spanish": "KAR-go (acento en 1ra · igual al español)", "stress": "1st syllable"},
+            {"word": "berthing", "es": "atraque (acción)", "definition_en": "the action of parking a vessel", "example_from_pm23": "(pre-loaded for Cuestionario S6 · introduced in S3)", "pronunciation_for_spanish": "BER-zing (th sordo + ing nasal)", "stress": "1st syllable"}
+          ]
+        }
+      ]
+    },
+    "archetype_A_PHONICS_AND_SPELLING": {
+      "archetype_id": "A",
+      "name_en": "PHONICS & SPELLING — Sound-to-Letter Awareness",
+      "name_es": "FONÉTICA Y ORTOGRAFÍA — Conciencia Sonido-Grafía",
+      "actua_como": "Phonics Specialist & ESP Pronunciation Coach",
+      "selected_techniques": ["Mirror Talking (Articulación Visual)", "Splat! (Reconocimiento Fonético Rápido)", "Sound Sorting"],
+      "rationale_a12": "Sector marítimo-portuario depende de pronunciación inteligible para radio VHF SMCP (S3+). El par mínimo starboard/port-side y los pares vessel/wessel · deck/desk · berth/birth son trampas L1 críticas. Phonics & Spelling activa A1.2 con LOTS (recordar, aplicar) sin cruzar techo Bloom L3.",
+      "time_minutes": 35,
+      "pre_activity": {
+        "title_en": "PRE — Mirror Talking on 4 Hard Words",
+        "title_es": "PRE — Articulación Visual sobre 4 palabras difíciles",
+        "time_minutes": 10,
+        "instruction_en": "Take a small mirror. Watch your mouth as you say each word. The instructor models first.",
+        "instruction_es_cursiva": "Toma un espejo pequeño. Observa tu boca al decir cada palabra. El instructor modela primero.",
+        "target_words": [
+          {"word": "vessel", "watch_for": "lower lip touches upper teeth (NOT both lips · v vs w)", "common_l1_error": "wessel"},
+          {"word": "starboard", "watch_for": "STAR strong + bord weak (NOT 'star-bórd')", "common_l1_error": "estar-bord"},
+          {"word": "berth", "watch_for": "tongue between teeth for /θ/ sound (NOT 'birth' which is the same sound but different word)", "common_l1_error": "bert (no th)"},
+          {"word": "deck", "watch_for": "short e + k (NOT 'desk' which adds an s)", "common_l1_error": "desk"}
+        ],
+        "language_bank_pre": [
+          "I see my lips: ____________.",
+          "I feel my tongue at: ____________.",
+          "The strong part is: ____________."
+        ],
+        "bloom_level": "L1 (Remember) · L2 (Understand)"
+      },
+      "during_activity_splat": {
+        "title_en": "DURING — Splat! Phonetic Recognition Game",
+        "title_es": "DURANTE — ¡Splat! Juego de Reconocimiento Fonético",
+        "time_minutes": 15,
+        "instruction_en": "On the board: 8 words. The instructor says ONE word. The first pair to slap (splat!) the correct word wins a point. Words come from the Toolbelt.",
+        "instruction_es_cursiva": "En el tablero: 8 palabras. El instructor dice UNA palabra. La primera pareja en golpear (¡splat!) la palabra correcta gana un punto. Palabras del Toolbelt.",
+        "board_word_grid": [
+          ["vessel", "wessel", "deck", "desk"],
+          ["bow", "boat", "berth", "birth"],
+          ["starboard", "stardborn", "port", "porte"]
+        ],
+        "instructor_call_examples": [
+          "Splat the word for 'big boat for cargo' → vessel",
+          "Splat the word for 'flat top of vessel' → deck",
+          "Splat the word for 'right side of vessel' → starboard",
+          "Splat the word for 'spot where vessel parks' → berth"
+        ],
+        "rule": "If a pair splats wrong, the next pair takes the turn. Recast oral by instructor on every wrong attempt.",
+        "bloom_level": "L1-L2 (Remember, Understand)"
+      },
+      "post_activity_sound_sorting": {
+        "title_en": "POST — Sound Sorting by Strong Syllable",
+        "title_es": "POST — Clasificación de Sonidos por Sílaba Fuerte",
+        "time_minutes": 10,
+        "instruction_en": "Sort the 12 words from the Toolbelt with 2+ syllables into 2 columns: stress on 1st syllable / stress on 2nd syllable.",
+        "instruction_es_cursiva": "Clasifica las 12 palabras del Toolbelt con 2+ sílabas en 2 columnas: acento en 1ra sílaba / acento en 2da sílaba.",
+        "sorting_table": {
+          "headers": ["Stress on 1st syllable", "Stress on 2nd syllable"],
+          "words_to_sort": ["vessel", "container", "starboard", "captain", "apprentice", "mentor", "arrive", "cargo", "berthing"],
+          "answer_key_for_instructor": {
+            "1st_syllable": ["VES-sel", "STAR-bord", "KAP-ten", "MEN-tor", "KAR-go", "BER-zing"],
+            "2nd_syllable": ["con-TEY-ner", "a-PREN-tis", "a-RAIV"]
+          }
+        },
+        "micro_capsula": "> ⚠️ **Spelling Rule:** In English, the strong syllable is LOUDER and LONGER. Hispanic-speakers tend to flatten — exaggerate the strong syllable. (*En inglés, la sílaba fuerte es MÁS FUERTE y MÁS LARGA. Los hispanohablantes tienden a aplanar — exagera la sílaba fuerte.*)",
+        "bloom_level": "L2-L3 (Understand, Apply)"
+      }
+    },
+    "archetype_B_VOCABULARY_DEVELOPMENT": {
+      "archetype_id": "B",
+      "name_en": "VOCABULARY DEVELOPMENT — Semantic Map & Word Wall",
+      "name_es": "DESARROLLO DE VOCABULARIO — Mapa Semántico y Muro de Palabras",
+      "actua_como": "Vocabulary Development Specialist & ESP Lexical Architect",
+      "selected_techniques": ["Semantic Mapping / Word Maps", "Word Walls / Interactive Word Banks"],
+      "rationale_a12": "Las 5 categorías del Toolbelt (Ship Parts · Port Infra · Directions · People · Operations) son una estructura semántica natural. Semantic Mapping construye relaciones (vessel ← contiene → bow + stern + deck + bridge). Word Wall vivo crece sesión a sesión hasta S12 con la Misión Final del CML CARRIER. Ambas activan factor Connection del modelo SUCCESS.",
+      "time_minutes": 40,
+      "pre_activity": {
+        "title_en": "PRE — Activate Categories from Andrea's Text",
+        "title_es": "PRE — Activa las Categorías desde el texto de Andrea",
+        "time_minutes": 10,
+        "instruction_en": "Re-read 1 paragraph from Andrea's First Morning. Find ONE word for each category in that paragraph. Write it in the box.",
+        "instruction_es_cursiva": "Relee 1 párrafo de la primera mañana de Andrea. Encuentra UNA palabra para cada categoría en ese párrafo. Escríbela en el cuadro.",
+        "paragraph_to_use": "The manual says: 'A vessel has a bow at the front. A vessel has a stern at the back. The port side is the left side. The starboard side is the right side. There are containers on deck. There is a bridge on top.'",
+        "category_collection_table": {
+          "headers": ["Category", "Word from paragraph", "Andrea's example"],
+          "rows": [
+            {"category": "Ship Parts", "word": "____________", "example": "A vessel has a ___."},
+            {"category": "Port Infrastructure", "word": "____________", "example": "There are ___ on deck."},
+            {"category": "Directions & Sides", "word": "____________", "example": "The ___ side is the left side."}
+          ]
+        },
+        "bloom_level": "L1-L2 (Remember, Understand)"
+      },
+      "during_activity_semantic_map": {
+        "title_en": "DURING — Build the VESSEL Semantic Map",
+        "title_es": "DURANTE — Construye el Mapa Semántico VESSEL",
+        "time_minutes": 20,
+        "instruction_en": "In groups of 3, build a Semantic Map. Center: the word VESSEL. 4 nodes around it. Use the Toolbelt and Andrea's text.",
+        "instruction_es_cursiva": "En grupos de 3, construye un Mapa Semántico. Centro: la palabra VESSEL. 4 nodos alrededor. Usa el Toolbelt y el texto de Andrea.",
+        "semantic_map_skeleton": {
+          "center_word": "VESSEL",
+          "node_1_parts": {"prompt": "PARTS of a vessel", "fill_in": ["____________", "____________", "____________", "____________"], "expected_answer": "bow, stern, deck, bridge"},
+          "node_2_sides": {"prompt": "SIDES of a vessel", "fill_in": ["____________", "____________"], "expected_answer": "port side, starboard"},
+          "node_3_people": {"prompt": "PEOPLE on a vessel", "fill_in": ["____________", "____________", "____________"], "expected_answer": "captain, crew, apprentice"},
+          "node_4_carries": {"prompt": "What a vessel CARRIES", "fill_in": ["____________"], "expected_answer": "containers (cargo)"}
+        },
+        "language_bank_for_map": [
+          "A vessel has a ____________.",
+          "On a vessel, there are ____________.",
+          "The vessel carries ____________."
+        ],
+        "bloom_level": "L2-L3 (Understand, Apply)"
+      },
+      "post_activity_word_wall": {
+        "title_en": "POST — The Operator's Word Wall",
+        "title_es": "POST — El Muro de Palabras del Operario",
+        "time_minutes": 10,
+        "instruction_en": "On a wall of the classroom, write the 20 Toolbelt words on cards. Group them by category color. This Word Wall stays for the WHOLE course (12 sessions). Add new words as we go.",
+        "instruction_es_cursiva": "En una pared del aula, escribe las 20 palabras del Toolbelt en tarjetas. Agrúpalas por color de categoría. Este Muro de Palabras se queda TODO el curso (12 sesiones). Agrega palabras nuevas según avancemos.",
+        "color_legend": {
+          "ship_parts": "BLUE — ⚓ buque/partes",
+          "port_infrastructure": "ORANGE — 🏗️ puerto/infraestructura",
+          "directions_sides": "GREEN — 🧭 direcciones",
+          "people_roles": "YELLOW — 👷 personas",
+          "operations": "RED — 🛠️ operaciones"
+        },
+        "growth_plan_through_s12": "S2: 20 words (this Toolbelt) · S3-S5: +10 SMCP chunks · S6-S8: +10 grammar collocations · S9-S12: +10 Misión Final terms (CML CARRIER coordination)",
+        "micro_capsula": "> 🎧 **Word Wall Rule:** Touch a word every day. If you don't touch it, you lose it. (*Toca una palabra cada día. Si no la tocas, la pierdes.*)",
+        "bloom_level": "L1-L2 (Remember, Understand)"
+      }
+    },
+    "archetype_C_READING_FLUENCY": {
+      "archetype_id": "C",
+      "name_en": "READING FLUENCY — Cloze + Repeated Reading",
+      "name_es": "FLUIDEZ LECTORA — Cloze + Lectura Repetida",
+      "actua_como": "Reading Fluency Coach & ESP Prosody Specialist",
+      "selected_techniques": ["Cloze Procedure & MAZE", "Repeated Reading"],
+      "rationale_a12": "Cloze obliga a deducir Toolbelt terms desde contexto (no traducción). Repeated Reading transforma lectura palabra-por-palabra (típica A1.2) en lectura por chunks. Ambas técnicas mantienen techo L2-L3 sin cruzar Bloom L4. Reader's Theater queda como opción autónoma para Sergio.",
+      "time_minutes": 30,
+      "pre_activity": {
+        "title_en": "PRE — Cloze on Andrea's Manual Page",
+        "title_es": "PRE — Cloze sobre la Página del Manual de Andrea",
+        "time_minutes": 10,
+        "instruction_en": "Read the Cloze version of Andrea's manual paragraph. The Toolbelt words are missing. Fill the blanks WITHOUT looking at the original text.",
+        "instruction_es_cursiva": "Lee la versión Cloze del párrafo del manual de Andrea. Faltan palabras del Toolbelt. Llena los espacios SIN mirar el texto original.",
+        "cloze_text": "A ____________ has a ____________ at the front. A vessel has a ____________ at the back. The ____________ side is the left side. The ____________ side is the right side. There are ____________ on deck. There is a ____________ on top.",
+        "answer_key": ["vessel", "bow", "stern", "port", "starboard", "containers", "bridge"],
+        "word_bank_help_for_strugglers": ["bow", "stern", "vessel", "containers", "bridge", "port", "starboard"],
+        "bloom_level": "L2 (Understand)"
+      },
+      "during_activity_repeated_reading": {
+        "title_en": "DURING — Repeated Reading × 3 Rounds",
+        "title_es": "DURANTE — Lectura Repetida × 3 Rondas",
+        "time_minutes": 15,
+        "instruction_en": "In pairs, read paragraph 4 of Andrea's First Morning aloud 3 times. Time each round. Goal: smoother and faster, but still clear.",
+        "instruction_es_cursiva": "En parejas, lee el párrafo 4 de la primera mañana de Andrea en voz alta 3 veces. Cronometra cada ronda. Meta: más fluido y rápido, pero claro.",
+        "paragraph_to_repeat": "The manual says: 'A vessel has a bow at the front. A vessel has a stern at the back. The port side is the left side. The starboard side is the right side. There are containers on deck. There is a bridge on top.'",
+        "tracking_table": {
+          "headers": ["Round", "Time (seconds)", "Words I stumbled on"],
+          "rows": [
+            {"round": "1", "time": "____________", "stumble": "____________"},
+            {"round": "2", "time": "____________", "stumble": "____________"},
+            {"round": "3", "time": "____________", "stumble": "____________"}
+          ]
+        },
+        "fluency_target_a12": "Round 3 should be 20-30% faster than Round 1, with fewer than 3 stumbles.",
+        "bloom_level": "L2-L3 (Understand, Apply)"
+      },
+      "post_activity": {
+        "title_en": "POST — Self-Check on Fluency",
+        "title_es": "POST — Auto-Verificación de Fluidez",
+        "time_minutes": 5,
+        "instruction_en": "Answer: Did you read more like Andrea (slow, careful) or more like Captain Restrepo (smooth, calm)? Mark on the scale.",
+        "instruction_es_cursiva": "Responde: ¿Leíste más como Andrea (lenta, cuidadosa) o más como Capitán Restrepo (fluido, calmado)? Marca en la escala.",
+        "self_check_scale": [
+          "1 — Like Andrea on Round 1 (word by word)",
+          "2 — Like Andrea on Round 2 (small chunks)",
+          "3 — Like Andrea on Round 3 (full sentences)",
+          "4 — Like Captain Restrepo (smooth, calm, expressive)"
+        ],
+        "common_failure_points_to_anticipate": [
+          "starboard ↔ port side (still confused at speed)",
+          "containers (3 syllables hard at speed)",
+          "deck (anglicization of 'desk' under pressure)"
+        ],
+        "bloom_level": "L2 (Understand) · metacognición"
+      }
+    },
+    "archetype_D_WRITING_SCAFFOLDING": {
+      "archetype_id": "D",
+      "name_en": "WRITING SCAFFOLDING — LEA + Dialogue Journal",
+      "name_es": "ANDAMIAJE DE ESCRITURA — LEA + Diario Dialogado",
+      "actua_como": "Writing Scaffold Designer & ESP Literacy Bridge Specialist",
+      "selected_techniques": ["Language Experience Approach (LEA)", "Dialogue Journals"],
+      "rationale_a12": "LEA construye el puente oral→escrito que A1.2 necesita. El instructor transcribe lo que el aprendiz dice sobre la primera mañana de Andrea, modelando be + there is/are sin corregir explícito. Dialogue Journals usan el shift notice de PM-2.4 como insumo: el instructor responde con recast escrito modelado, no con corrección roja.",
+      "time_minutes": 35,
+      "pre_activity": {
+        "title_en": "PRE — Shared Experience Recall",
+        "title_es": "PRE — Recuerdo de la Experiencia Compartida",
+        "time_minutes": 5,
+        "instruction_en": "In groups of 4, recall: What does Andrea see, hear and read on her first morning? Talk in English. Use the Toolbelt.",
+        "instruction_es_cursiva": "En grupos de 4, recuerda: ¿Qué ve, escucha y lee Andrea en su primera mañana? Habla en inglés. Usa el Toolbelt.",
+        "language_bank_pre": [
+          "Andrea sees ____________.",
+          "Andrea hears ____________.",
+          "Andrea reads ____________.",
+          "Captain Restrepo says ____________."
+        ],
+        "l1_allowed": "Hasta 20% L1 permitido en el grupo (S2 cumple §9.1 ≤20%)"
+      },
+      "during_activity_lea": {
+        "title_en": "DURING — Language Experience Approach",
+        "title_es": "DURANTE — Enfoque de Experiencia con el Lenguaje",
+        "time_minutes": 20,
+        "instruction_en": "ROUND 1: Each group dictates 1 sentence about Andrea to the instructor. Instructor writes EXACT words on the board (no correction yet). ROUND 2: Class reads the collective text aloud. ROUND 3: Instructor models 2 corrected versions (recast).",
+        "instruction_es_cursiva": "RONDA 1: Cada grupo dicta 1 oración sobre Andrea al instructor. El instructor escribe EXACTAS las palabras en el tablero (sin corregir aún). RONDA 2: La clase lee el texto colectivo en voz alta. RONDA 3: El instructor modela 2 versiones corregidas (recast).",
+        "lea_protocol": {
+          "round_1_dictation": "Group A: 'Andrea is at the dock.' / Group B: 'There are containers.' / Group C: 'Captain Restrepo is mentor.' / Group D: 'The vessel has bow.'",
+          "round_2_collective_read": "Class reads the 4 sentences in order — collective ownership of the text.",
+          "round_3_recast_examples": [
+            "Group C original: 'Captain Restrepo is mentor.' → Recast: 'Captain Restrepo IS HER mentor.'",
+            "Group D original: 'The vessel has bow.' → Recast: 'The vessel has A bow.'"
+          ]
+        },
+        "language_focus": {
+          "focus_target": "be (is/are) + article (a/the/her) + there is/there are",
+          "examples_modeled": [
+            "Andrea IS a SENA apprentice. (be + article)",
+            "There ARE containers on deck. (there are + plural)",
+            "Captain Restrepo IS HER mentor. (be + possessive)"
+          ]
+        },
+        "bloom_level": "L2-L3 (Understand, Apply)"
+      },
+      "post_activity_dialogue_journal": {
+        "title_en": "POST — Dialogue Journal on the PM-2.4 Shift Notice",
+        "title_es": "POST — Diario Dialogado sobre el Aviso de Turno de PM-2.4",
+        "time_minutes": 10,
+        "instruction_en": "Open your shift notice from PM-2.4. Below it, write 2 free sentences: How do you feel writing in English? The instructor responds in writing with model forms (NO red marks).",
+        "instruction_es_cursiva": "Abre tu aviso de turno de PM-2.4. Debajo, escribe 2 oraciones libres: ¿Cómo te sientes escribiendo en inglés? El instructor responde por escrito con formas modelo (SIN marcas rojas).",
+        "starter_frames": [
+          "I feel ____________ when I write the shift notice.",
+          "The hard word is ____________.",
+          "The easy word is ____________."
+        ],
+        "instructor_response_protocol": "Responder en cursiva debajo de la entrada del aprendiz. Modelar la forma correcta del error sin señalarlo. Ejemplo: aprendiz escribe 'I feel nervous becuase the captain talk fast' → instructor escribe debajo 'I felt nervous because the captain talks fast — me too on my first day! Try: I feel nervous when I read fast.'",
+        "bloom_level": "L2-L3 (Understand, Apply)"
+      }
+    },
+    "archetype_E_INTERACTIVE_LITERACY": {
+      "archetype_id": "E",
+      "name_en": "INTERACTIVE LITERACY — Jigsaw + Read-Pair-Share",
+      "name_es": "LITERACIDAD INTERACTIVA — Rompecabezas + Lee-Empareja-Comparte",
+      "actua_como": "Interactive Literacy Architect & ESP Collaborative Reading Specialist",
+      "selected_techniques": ["Jigsaw Reading (5 Toolbelt categories)", "Read-Pair-Share"],
+      "rationale_a12": "Jigsaw aplicado a las 5 categorías del Toolbelt convierte cada aprendiz en experto de UNA categoría (4 términos), luego enseña a 4 compañeros. Read-Pair-Share da andamiaje conversacional para A1.2. La técnica HOTS aquí es L3 Apply (enseñar con frame controlado), no L4. Information Gap queda cubierta por Arquetipo C de PM-2.3 — no se duplica.",
+      "time_minutes": 40,
+      "pre_activity": {
+        "title_en": "PRE — Assign Expert Categories",
+        "title_es": "PRE — Asigna Categorías de Experto",
+        "time_minutes": 5,
+        "instruction_en": "Form Home Groups of 5. Each member receives ONE Toolbelt category card: Ship Parts, Port Infrastructure, Directions & Sides, People & Roles, Operations. You become the EXPERT on those 4 words.",
+        "instruction_es_cursiva": "Formen Grupos de Casa de 5. Cada miembro recibe UNA tarjeta de categoría del Toolbelt: Partes del Buque, Infraestructura, Direcciones, Personas, Operaciones. Te conviertes en EXPERTO de esas 4 palabras.",
+        "expert_card_template": {
+          "category": "____________",
+          "my_4_words": ["____________", "____________", "____________", "____________"],
+          "andrea_example_for_each": "(retrieve from Toolbelt or PM-2.3 Master Anchor)",
+          "mini_class_opener": "Hi team, I am the ____________ expert. Today I teach you 4 words."
+        }
+      },
+      "during_activity_expert_groups": {
+        "title_en": "DURING — Expert Groups Master 4 Words",
+        "title_es": "DURANTE — Los Grupos de Expertos Dominan 4 Palabras",
+        "time_minutes": 15,
+        "instruction_en": "Move to the Expert Group of your category (5 experts together). Together: pronounce all 4 words, write 1 example sentence for each, prepare a 2-minute mini-class.",
+        "instruction_es_cursiva": "Muévete al Grupo de Expertos de tu categoría (5 expertos juntos). Juntos: pronuncien las 4 palabras, escriban 1 oración ejemplo para cada una, preparen una mini-clase de 2 minutos.",
+        "expert_preparation_template": {
+          "category": "____________",
+          "term_1": {"word": "____________", "pronunciation": "____________", "example": "____________"},
+          "term_2": {"word": "____________", "pronunciation": "____________", "example": "____________"},
+          "term_3": {"word": "____________", "pronunciation": "____________", "example": "____________"},
+          "term_4": {"word": "____________", "pronunciation": "____________", "example": "____________"}
+        },
+        "bloom_level": "L3 (Apply) — techo Bloom respetado"
+      },
+      "post_activity_home_groups_and_pair_share": {
+        "title_en": "POST — Home Groups Teach Each Other + Read-Pair-Share",
+        "title_es": "POST — Los Grupos de Casa se Enseñan + Lee-Empareja-Comparte",
+        "time_minutes": 20,
+        "instruction_en": "PHASE 1 (Home Groups · 12 min): Return to your Home Group. Each expert teaches the other 4 their 4 words (2 min each = 10 min + 2 min buffer). PHASE 2 (Read-Pair-Share · 8 min): Read paragraph 5 of Andrea's text → discuss in pairs → share 1 finding with class.",
+        "instruction_es_cursiva": "FASE 1 (Grupos de Casa · 12 min): Regresa a tu Grupo de Casa. Cada experto enseña a los otros 4 sus 4 palabras (2 min cada uno = 10 min + 2 min buffer). FASE 2 (Lee-Empareja-Comparte · 8 min): Lee el párrafo 5 del texto de Andrea → discute en pareja → comparte 1 hallazgo con la clase.",
+        "phase_1_home_group_diagram_to_complete": {
+          "ship_parts": "Listen to expert · write 4 words: ____________",
+          "port_infrastructure": "Listen to expert · write 4 words: ____________",
+          "directions_sides": "Listen to expert · write 4 words: ____________",
+          "people_roles": "Listen to expert · write 4 words: ____________",
+          "operations": "Listen to expert · write 4 words: ____________"
+        },
+        "phase_2_paragraph_5_text": "Andrea looks at the dock. She sees a big ship. The ship is the BUENAVENTURA EXPRESS. There is a bow. There is a stern. There are many containers on deck.",
+        "phase_2_pair_share_questions": [
+          "Q1: How many Toolbelt words are in this paragraph? (count them)",
+          "Q2: Which category appears most? (Ship Parts? Port Infra? Directions?)",
+          "Q3: Share 1 sentence with the class using the frame: 'In paragraph 5, I see ___ words from the ___ category.'"
+        ],
+        "bloom_level": "L3 (Apply)"
+      }
+    },
+    "rotation_options_for_instructor": {
+      "title_en": "INSTRUCTOR ROTATION MENU — PM-2.5 Flow Options",
+      "title_es": "MENÚ DE ROTACIÓN DEL INSTRUCTOR — Opciones de Flujo PM-2.5",
+      "total_direct_time_available": "2.5h (150 min) directas + 0.5h (30 min) autónomas de S2 dedicadas a PM-2.5 (complementa PM-2.3 + PM-2.4 que ocupan el resto del Conjunto A)",
+      "recommended_flow_options": [
+        {
+          "flow_id": "FLOW-1 · Phonics-First (90 min directas)",
+          "sequence": [
+            "10 min → Toolbelt walkthrough enriquecido (pronunciación)",
+            "35 min → Archetype A (Mirror Talking + Splat! + Sound Sorting)",
+            "40 min → Archetype B (Semantic Map + Word Wall)",
+            "5 min → Cierre · firma del Operator's Notebook"
+          ],
+          "rationale": "Para grupos con problemas de pronunciación marcados (par mínimo starboard/port crítico) y ortografía emergente. Prepara terreno para SMCP en S3."
+        },
+        {
+          "flow_id": "FLOW-2 · Lexical-Density (90 min directas)",
+          "sequence": [
+            "10 min → Toolbelt walkthrough",
+            "40 min → Archetype B (Semantic Map + Word Wall)",
+            "30 min → Archetype C (Cloze + Repeated Reading × 3)",
+            "10 min → Operator's Notebook update"
+          ],
+          "rationale": "Para grupos con buena pronunciación pero baja velocidad lectora. Cloze fuerza acceso léxico desde contexto · Repeated Reading mejora WPM."
+        },
+        {
+          "flow_id": "FLOW-3 · Productive-Bridge (90 min directas)",
+          "sequence": [
+            "10 min → Toolbelt walkthrough",
+            "35 min → Archetype D (LEA + Dialogue Journal sobre PM-2.4)",
+            "40 min → Archetype E (Jigsaw + Read-Pair-Share)",
+            "5 min → Cierre"
+          ],
+          "rationale": "Cuando el grupo ya pronuncia bien y necesita salto productivo. LEA puentea oral→escrito · Jigsaw activa enseñanza entre pares como output controlado."
+        },
+        {
+          "flow_id": "FLOW-4 · Maximalist Stations (120 min directas)",
+          "sequence": [
+            "10 min → Toolbelt walkthrough whole-class",
+            "5 estaciones × 22 min rotando (A, B, C, D, E)",
+            "0 min cierre (autónomo)"
+          ],
+          "rationale": "Máxima cobertura del menú. Requiere instructor de inglés + capitán mentor (2 facilitadores) o estaciones lideradas por aprendices avanzados. Cierre se traslada a trabajo autónomo."
+        }
+      ],
+      "autonomous_work_0_5h": "Todos los aprendices completan en 30 min: (a) actualización del Operator's Notebook con los 20 términos del Toolbelt + pronunciación + 1 oración propia para cada uno · (b) auto-grabación leyendo paragraph 4 de Andrea's text (Repeated Reading round 4) · entrega Moodle como audio + foto del cuaderno."
+    },
+    "evaluation_formal": {
+      "is_formal_evidence": false,
+      "evidence_code": null,
+      "evidence_name_es": null,
+      "evidence_name_en": null,
+      "points_allocated": 0,
+      "points_in_consolidated_quiz_s6": 5,
+      "contribution_note": "PM-2.5 NO genera evidencia formal directa. Aporta 5 ítems Vocabulary al Cuestionario Consolidado de S6 (PM-4.1). Los 5 ítems se cosechan del Toolbelt: 1 ítem por categoría (Ship Parts · Port Infra · Directions · People · Operations).",
+      "preview_quiz_items_s6": [
+        {"item_focus": "Ship Parts", "sample_q": "Match: bow / stern / deck / bridge → front / back / flat top / on top", "type": "matching"},
+        {"item_focus": "Port Infrastructure", "sample_q": "Where does a vessel park? a) deck b) berth c) bow d) crew", "type": "multiple_choice"},
+        {"item_focus": "Directions & Sides", "sample_q": "The ____ side is the right side of a vessel. (port side / starboard / front / back)", "type": "fill_blank"},
+        {"item_focus": "People & Roles", "sample_q": "Captain Restrepo is Andrea's ____. (mentor / crew / apprentice / cargo)", "type": "fill_blank"},
+        {"item_focus": "Operations", "sample_q": "BUENAVENTURA EXPRESS ____ at 07:00. (arrives / shifts / berths / cargoes)", "type": "fill_blank"}
+      ]
+    }
+  },
+  "activity_card": {
+    "pm_id": "PM-2.5",
+    "pm_name": "Vocabulary, Literacy & Scenario Setup",
+    "session": 2,
+    "phase_sena": "Apropiación",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Identificar y clasificar los 20 términos del Toolbelt portuario (Ship Parts · Port Infrastructure · Directions & Sides · People & Roles · Operations) extraídos del Master Anchor Text 'Andrea's First Morning' (PM-2.3), aplicando técnicas de Phonics & Spelling (Mirror Talking + Splat! + Sound Sorting) y Vocabulary Development (Semantic Map + Word Wall) para construir conciencia sonido-grafía y relaciones semánticas",
+        "didactic_strategy": "CLIL · Aprendizaje basado en contenido",
+        "didactic_technique": "Mapa semántico + Muro de palabras + Articulación visual (Archetypes A + B)"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Demostrar fluidez lectora y producción andamiada describiendo el contexto operativo (Andrea + Capitán Restrepo + Captain Lopera + BUENAVENTURA EXPRESS + Puerto de Buenaventura) mediante Cloze Procedure sobre el manual de partes del buque, Repeated Reading × 3 rondas, LEA dictado colectivo y Dialogue Journal sobre el aviso de turno producido en PM-2.4 (Archetypes C + D)",
+        "didactic_strategy": "Aprendizaje basado en contenido + Andamiaje progresivo",
+        "didactic_technique": "Cloze + Lectura repetida + LEA + Diario dialogado (Archetypes C + D)"
+      },
+      {
+        "number": 3,
+        "type": "cognitiva",
+        "statement": "Enseñar entre pares las 5 categorías del Toolbelt mediante Jigsaw Reading (5 expertos × 4 palabras cada uno) + Read-Pair-Share del paragraph 5 de Andrea, alimentando el Operator's Notebook personal y aportando 5 ítems al Cuestionario Consolidado de S6 (Vocabulary · 5 pts)",
+        "didactic_strategy": "Aprendizaje cooperativo · enseñanza entre pares",
+        "didactic_technique": "Jigsaw + Read-Pair-Share (Archetype E)"
+      }
+    ],
+    "hours": {
+      "direct": 2.5,
+      "autonomous": 0.5
+    },
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "PM-2.5 no genera evidencia formal SENA. Su producto pedagógico (Operator's Notebook + Word Wall + Toolbelt consolidado) aporta 5 ítems de Vocabulary al Cuestionario Consolidado de S6 (PM-4.1) por valor de 5 puntos.",
+      "evaluation_technique": null,
+      "instrument_number": null,
+      "instrument_type": null
+    },
+    "environment": {
+      "type": "Aula con Word Wall permanente + opción de pasillo del centro de formación para estaciones (FLOW-4 Maximalist) — NO requiere visita al puerto",
+      "materials": [
+        "Espejos pequeños de mano (1 por aprendiz · Mirror Talking)",
+        "Tablero con grilla de 12 palabras para Splat! (palabras correctas + distractores L1)",
+        "Plantilla impresa Sound Sorting (2 columnas · 9 palabras)",
+        "Plantilla Semantic Map VESSEL (1 hoja A3 por grupo de 3)",
+        "Tarjetas de colores para Word Wall (5 colores × 4 tarjetas = 20 tarjetas iniciales) · pared del aula reservada todo el curso",
+        "Plantilla Cloze del manual de Andrea (1 hoja por aprendiz)",
+        "Cronómetro o smartphone para Repeated Reading (1 por pareja)",
+        "Tarjetas de rol Jigsaw (5 categorías × 5-6 copias)",
+        "Operator's Notebook (cuaderno físico A5 · 1 por aprendiz · entregado en S1 y reutilizado todas las sesiones)",
+        "Texto producido en PM-2.4 (shift notice del aprendiz · insumo del Dialogue Journal)",
+        "Master Anchor Text impreso 'Andrea's First Morning' (handout reutilizado de PM-2.3 · NO se reimprime)",
+        "Marcadores de colores para Word Wall (azul · naranja · verde · amarillo · rojo)"
+      ],
+      "instructors": "Instructor de inglés técnico (principal) + Capitán mentor de marina mercante (soporte para validar pronunciación SMCP de starboard/port-side y supervisión Jigsaw)"
+    },
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Vocabulary",
+    "quiz_points": 5,
+    "quiz_item_count": 5
+  },
+  "pm0_protocol_session_level": {
+    "note": "Se propaga a Playbook Build-Out S2 (pm-3-2-s2.json) · complementa el pm0_protocol propagado por PM-2.3",
+    "grammar_groups": {
+      "intro": [],
+      "consolida": [
+        "Grupo 1 — be (is/are) reciclado en LEA + Dialogue Journal + Semantic Map",
+        "Grupo 4 — there is/there are reciclado en Cloze + Repeated Reading + Jigsaw mini-classes"
+      ],
+      "aplica": [],
+      "carga_principle_check": "0 Intro nuevos · 2 Consolida (los mismos de PM-2.3) — PASS · pm-0-context §9.2 respetado (no se introducen grupos nuevos en PM-2.5; se consolidan los de PM-2.3)"
+    },
+    "feedback": {
+      "dominant_mode": "Recast oral en Splat! + Repeated Reading + Jigsaw · Corrección explícita escrita modelada (NO marcas rojas) en LEA Round 3 + Dialogue Journal",
+      "accuracy_techniques": [
+        "Recast inmediato del par mínimo starboard/port en Splat!",
+        "Modelado escrito de be (is/are) + artículo (a/the/her) en LEA Round 3",
+        "Recast oral del strong syllable en Repeated Reading"
+      ],
+      "fluency_techniques": [
+        "Acoger pronunciaciones aproximadas en Mirror Talking sin interrumpir flujo",
+        "Celebrar Round 3 más rápido que Round 1 en Repeated Reading aunque haya stumbles",
+        "Permitir que el experto Jigsaw enseñe con frame fijo aunque cometa errores menores"
+      ]
+    },
+    "l1_management": {
+      "percentage": 20,
+      "english_zone": "Toolbelt enriquecido + Splat! + Sound Sorting + Semantic Map + Word Wall + Cloze + Repeated Reading + Jigsaw mini-classes + Read-Pair-Share",
+      "legitimate_uses": [
+        "Recall en pre-activity de Archetype D (Shared Experience Recall · hasta 20% L1 permitido)",
+        "Definiciones rápidas de palabras nuevas que no están en Toolbelt (recurso de emergencia · cursive Spanish only)",
+        "Reflexión metacognitiva en Archetype C self-check"
+      ],
+      "reduction_strategy": "S2 cierra L1 ≤ 20% (curva descendente desde S1=25%). Las 5 categorías del Toolbelt funcionan como anclas L2 que sustituyen traducción palabra-por-palabra. Operator's Notebook es 100% L2 con glosa española pequeña en cursiva sólo si imprescindible."
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        "vessel (VES-el · NO 'wessel')",
+        "starboard (STAR-bord · NO 'star-bórd')",
+        "berth (con th sordo · NO 'bert')",
+        "deck (NO 'desk')",
+        "container (con-TEY-ner · NO 'CON-tey-ner')",
+        "apprentice (a-PREN-tis)",
+        "arrive (a-RAIV)"
+      ],
+      "physical_techniques": [
+        "Mirror Talking con espejo pequeño · observar labios para v vs w en vessel",
+        "Splat! kinestésico con palmada en grafía correcta (10 grilla 4×3 en tablero)",
+        "Sound Sorting kinestésico con palmada en sílaba fuerte (golpe suave en mesa)",
+        "Word Wall con tarjetas de colores tocadas físicamente cada día (factor SUCCESS Synergy + Use)"
+      ],
+      "board_marking": "Sílabas fuertes en MAYÚSCULA · vocales largas con barra arriba (ē, ī, ō, ū) · pares mínimos starboard/port y vessel/wessel y deck/desk en color rojo"
+    },
+    "success_vocabulary": {
+      "target_terms": [
+        "20 Toolbelt terms organizados en 5 categorías: Ship Parts (vessel · bow · stern · deck) · Port Infrastructure (port · dock · berth · container) · Directions & Sides (port side · starboard · front · back) · People & Roles (captain · apprentice · mentor · crew) · Operations (arrive · shift · cargo · berthing)"
+      ],
+      "success_factors_applied": [
+        "Salience (categorías con iconos ⚓🏗️🧭👷🛠️ + colores Word Wall + sílabas fuertes en MAYÚSCULA)",
+        "Use (cada palabra activa en mínimo 3 arquetipos · output productivo en Jigsaw + LEA + Operator's Notebook)",
+        "Connection (Semantic Map vincula vessel ↔ partes ↔ sides ↔ people ↔ cargo · red semántica explícita)",
+        "Spaced repetition (Repeated Reading × 3 + Word Wall todo el curso + Operator's Notebook revisado S3-S12)",
+        "Synergy (visual Word Wall + auditivo Splat! + kinestésico tap-on-table + escrito LEA + oral Jigsaw mini-class)",
+        "Context (universo IMARPOR-CC: Andrea + Restrepo + Lopera + BUENAVENTURA EXPRESS + Puerto de Buenaventura · todos los ejemplos del Master Anchor)",
+        "Emotion (Andrea construye su Operator's Notebook · el aprendiz construye el suyo en paralelo · identificación generación recién egresada SENA)"
+      ]
+    }
+  },
+  "validacion": {
+    "reglas_pm25": {
+      "toolbelt_consolidado_20_terminos_5_categorias": "PASS (mismas 20 palabras × 5 categorías que PM-2.3 · enriquecido con pronunciation_for_spanish + stress)",
+      "ejemplos_desde_master_anchor_pm23": "PASS (18/20 ejemplos directos del texto 'Andrea's First Morning' · 2 pre-cargados crew/berthing del Toolbelt PM-2.3)",
+      "5_arquetipos_integrados_con_PRE_DURING_POST": "PASS (A · B · C · D · E completos con sub-objetos pre_activity / during_activity / post_activity)",
+      "rotation_options_para_instructor": "PASS (4 flows documentados: Phonics-First · Lexical-Density · Productive-Bridge · Maximalist Stations)",
+      "bilingue_unificada_sin_bloques_repetitivos": "PASS (instrucción en inglés con traducción cursiva española una sola vez por bloque)",
+      "micro_capsulas_visuales": "PASS (Audio Cue stress · Spelling Rule · Word Wall Rule)",
+      "zero_meta_talk": "PASS",
+      "cefr_a12_estricto_sin_pasados_libres_sin_condicionales_sin_pasivas": "PASS (verificado: presente simple + be + there is/are como columna vertebral · sin past tenses excepto exposure · sin condicional · sin pasiva)",
+      "techo_bloom_L3_apply_respetado": "PASS (ningún arquetipo PM-2.5 cruza L3 · default L1-L2 con L3 Apply en E Jigsaw)",
+      "universe_imarpor_preservado": "PASS (Andrea Mosquera + Capitán Restrepo + Captain Lopera + BUENAVENTURA EXPRESS + Puerto de Buenaventura · NO se copió del ref operacional MGV-2026-04-20 universo gráfico Pixel & Ink)",
+      "operators_notebook_continuidad_S3_S12": "PASS (Word Wall + cuaderno físico crece sesión a sesión hasta Misión Final del CML CARRIER en S12)",
+      "alimenta_PM26_listening_y_PM210_grammar": "PASS (Toolbelt con pronunciación pre-prepara Listening · be + there is/are consolidado pre-prepara Grammar inductiva)"
+    },
+    "anclaje_pm0": {
+      "l1_percentage_matches_s2_single_guide": "PASS (20% · cumple §9.1.single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S2 ≤ 20%)",
+      "grammar_no_intro_solo_consolida": "PASS (no se introducen grupos nuevos · se consolidan Gr1 be + Gr4 there is/are de PM-2.3 · principio carga ≤ 2 respetado)",
+      "stress_words_par_minimo_estrategico": "PASS (starboard/port + vessel/wessel + deck/desk · 3 pares mínimos críticos para A1.2 hispanohablante)",
+      "feedback_mode_mixto_recast_oral_y_explicito_escrito_modelado": "PASS (recast en Splat!/Repeated/Jigsaw · explícito modelado en LEA Round 3 + Dialogue Journal sin marcas rojas)",
+      "success_vocabulary_7_factores_aplicados": "PASS (Salience + Use + Connection + Spaced + Synergy + Context + Emotion documentados)"
+    },
+    "continuidad_sistemica": {
+      "antecedente_pm23_pm24": "PASS (PM-2.3 = exposición · PM-2.4 = producción guiada del shift notice · PM-2.5 = consolidación productiva del Toolbelt + ejemplos directos del Master Anchor)",
+      "consecuente_pm26_pm210": "PASS (Toolbelt con pronunciación → PM-2.6 Listening · be + there is/are consolidado → PM-2.10 Grammar inductiva · Word Wall vivo → todas las S3-S12)",
+      "ancla_para_mision_final_S12": "PASS (Operator's Notebook crece hasta Misión Final · Word Wall agrega chunks SMCP S3-S5 + grammar collocations S6-S8 + términos CML CARRIER S9-S12)"
+    },
+    "trazabilidad_gfpi_f_134": {
+      "columna_6_actividades": "3 actividades descritas (cognitivas) + 5 arquetipos como sub-actividades rotables (A Phonics + B Vocabulary Dev + C Reading Fluency + D Writing Scaffolding + E Interactive Literacy)",
+      "columna_7_horas": "Directas 2.5h + Autónomas 0.5h = 3.0h (de las 6h directas + 2.33h autónomas de S2 · Conjunto A = PM-2.3 [2.0+0.5] + PM-2.4 [aprox 1.5+0.5] + PM-2.5 [2.5+0.5])",
+      "columna_8_evidencia": "N/A (PM-2.5 no genera evidencia formal SENA · contribuye 5 ítems Vocabulary al Cuestionario Consolidado S6)",
+      "columna_9_instrumento": "Learner's Worksheet + Operator's Notebook (vocabulary notebook personal)",
+      "columna_10_ambiente": "Aula con Word Wall permanente + opción pasillos (FLOW-4) + doble facilitador (instructor inglés + capitán mentor) + 12 tipos de materiales listados"
+    },
+    "check9_anti_copia_fantasma": {
+      "status": "PASS_LOCAL · pendiente validación post-hoc en PM-2.11",
+      "evidence": "Toda la actividad se construye sobre el Master Anchor Text 'Andrea's First Morning' (PM-2.3) y los 20 términos × 5 categorías del Toolbelt PM-2.3. Personajes (Andrea Mosquera · Capitán Restrepo · Captain Lopera), buque (BUENAVENTURA EXPRESS · CML CARRIER mencionado para Misión Final), localización (Puerto de Buenaventura · Berth 4) y vocabulario (vessel · bow · stern · port side · starboard · etc.) son del universo IMARPOR-CC. NO se copió contenido del ref operacional MGV-2026-04-20 (universo gráfico Andrés/Sophia/Pixel & Ink Studio · vocabulario typography/serif/sans-serif). Sólo se replicó la ESTRUCTURA pedagógica canónica (5 arquetipos × PRE/DURING/POST + Toolbelt enriquecido + rotation_options + activity_card + pm0_protocol + validacion). Operator's Notebook y Word Wall son extensiones originales del universo IMARPOR coherentes con la primera mañana de Andrea."
+    }
+  },
+  "siguiente_paso": "Ejecutar PM-2.10 — Grammar (consolida Grupo 1 'be' + Grupo 4 'there is/there are' del Toolbelt PM-2.5 mediante inducción guiada · Sesión 2 Bloque Interno 1 IMARPOR-CC) o alternativamente PM-2.6 — Listening si el Session Blueprint PM-2.0 prioriza el ciclo Conjunto B antes de Grammar. Luego Gate Humano 2 (Instructor Selection): Sergio revisa los 5 arquetipos PM-2.5, elige flow_id para la cohorte real (Phonics-First / Lexical-Density / Productive-Bridge / Maximalist Stations), valida pronunciation_for_spanish del Toolbelt enriquecido, valida que los ejemplos derivan del Master Anchor PM-2.3 (CHECK 9), y marca enriched: true."
+}

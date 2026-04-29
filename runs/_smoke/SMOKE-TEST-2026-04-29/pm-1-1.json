@@ -1,0 +1,289 @@
+{
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "pm_code": "PM-1.1",
+  "pm_name": "Ruta Macrotemática IMARPOR-CC (single-guía absorcion_Na1)",
+  "generated_date": "2026-04-27",
+  "pipeline_version": "2.11 (form-schema v2.7.1 · master prompt PM-1.1 v2.7.1)",
+  "instructor": "Sergio Cortés Perdomo",
+  "programa_id": "IMARPOR-CC-2026-04-27",
+  "programa_nombre": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo_sofia": "12340002",
+  "tipo": "Curso Complementario",
+  "regla_bloques": "absorcion_Na1",
+  "regla_bloques_descripcion": "v2.7.1 patrón canónico: N RAPs absorbidos en 1 guía única (single-guía variant). Aplica para Curso Complementario/Especial. Activa la omisión de proyecto_formativo_articulador y la inclusión obligatoria de final_mission_scenario.",
+  "duracion_total_horas": 100,
+  "horas_directas_total": 72,
+  "horas_autonomas_total": 28,
+  "sesiones_proyectadas_total": 12,
+  "sesiones_por_bloque": 12,
+  "horas_por_bloque": 100,
+  "horas_por_bloque_warning": false,
+  "total_guias": 1,
+  "competencia": {
+    "codigo": "240201050",
+    "enunciado": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+    "tipo_competencia": "Transversal · Idioma Extranjero · CEFR-anchored"
+  },
+  "raps": [
+    {
+      "numero": 1,
+      "codigo_sofia": "RAP-01",
+      "enunciado": "Reconocer vocablos y expresiones básicas en inglés, de forma escrita y auditiva, enmarcados en el desempeño de funciones propias en el sector marítimo y portuario",
+      "asignado_a_sub_bloque": 1
+    },
+    {
+      "numero": 2,
+      "codigo_sofia": "RAP-02",
+      "enunciado": "Comprender vocablos principales de las frases estandarizadas por la OMI, en inglés, para iniciar la interacción por medio escrito y oral, de acuerdo con los roles descritos dentro de la industria marítima y portuaria",
+      "asignado_a_sub_bloque": 2
+    },
+    {
+      "numero": 3,
+      "codigo_sofia": "RAP-03",
+      "enunciado": "Aplicar las reglas gramaticales básicas del idioma inglés que garanticen la comunicación sencilla de puerto a buque y viceversa, según las necesidades originadas en el desarrollo de las operaciones marítimas y portuarias",
+      "asignado_a_sub_bloque": 3
+    },
+    {
+      "numero": 4,
+      "codigo_sofia": "RAP-04",
+      "enunciado": "Describir en inglés las funciones habituales y/o momentáneas propias, del personal y de los elementos que se encuentran en el contexto marítimo y portuario, en el desempeño de sus labores",
+      "asignado_a_sub_bloque": 4
+    }
+  ],
+  "cefr_range": "A1.2 → A2.1 (progresión INTERNA single-guía)",
+  "sector_economico": "Marina Mercante Colombia · operaciones marítimo-portuarias · curso intensivo 100h",
+  "ambiente_productivo": "Puerto de Buenaventura · Terminal de Contenedores · turno de día (06:00-18:00) · interacción VHF con vessels internacionales (lingua franca B1)",
+  "bloques": [
+    {
+      "numero": 1,
+      "rap_origen": "RAP-01 a RAP-04 (absorbidos)",
+      "nombre_esp": "The Maritime Operations Pro",
+      "nombre_espanol": "El Profesional de Operaciones Marítimas",
+      "tema_tecnico_principal": "Recorrido integral de inglés marítimo-portuario en 100h: vocabulario base portuario y ship overview (RAP-01) + comprensión SMCP estandarizada OMI (RAP-02) + aplicación gramatical en coordinación puerto-buque (RAP-03) + descripción profesional de funciones del rol (RAP-04). Los 4 RAPs SOFÍA quedan absorbidos en una guía única intensiva (regla_bloques: absorcion_Na1).",
+      "universo_tecnico_guia": "Andrea Mosquera (Port Operations Trainee · 1ª semana en Puerto de Buenaventura · Terminal de Contenedores) atraviesa 12 sesiones × 6h = 72h directas + 28h autónomas. Cliente externo permanente: Captain Lopera (Vessel Master del BUENAVENTURA EXPRESS · lingua franca B1). Mentor cercano: Capitán Restrepo (Port Captain · B1 técnico). En sesiones tempranas Andrea visita el barco para inspección con cameos del Officer Vásquez y Sailor García (referenciados desde pm-0-context.universo_narrativo). En sesiones medias coordina operaciones VHF y berthing tripartito. En sesiones finales presenta su rol profesional ante panel.",
+      "competencia_comunicativa": "Recorrido completo de competencias comunicativas A1.2 → A2.1 dentro del sector marítimo-portuario: comprensión receptiva (oral + escrita) de vocabulario y frases técnicas → comprensión-respuesta de SMCP estandarizadas vía VHF → producción gramatical correcta en coordinación operativa bidireccional → producción descriptiva profesional sostenida (pitch + responder panel + justificar decisiones).",
+      "funciones_comunicativas": [
+        "Naming and identifying (RAP-01 · A1.2 · Bloque Interno 1)",
+        "Confirming SMCP messages (Roger · Wilco · Affirmative) (RAP-02 · A1.3 · Bloque Interno 2)",
+        "Spelling with NATO Phonetic Alphabet (RAP-02 · A1.3 · Bloque Interno 2)",
+        "Coordinating tripartite operations (RAP-03 · A2.0 · Bloque Interno 3)",
+        "Expressing prohibition/permission/possibility/requests with modals (RAP-03 · A2.0)",
+        "Describing professional functions (habitual + momentary) (RAP-04 · A2.1 · Bloque Interno 4)",
+        "Justifying decisions with occupational structures (RAP-04 · A2.1)",
+        "Tag questions for confirming info with panel (RAP-04 · A2.1)"
+      ],
+      "justificacion_pedagogica": "ESTE BLOQUE ÚNICO ES EL CURSO COMPLEMENTARIO COMPLETO. Los 4 RAPs SOFÍA del programa 12340002 quedan absorbidos en una sola guía de 100h porque (a) es un curso de actualización/refuerzo, no un programa titulado, (b) el aprendiz llega con prereq A1.1 cubierto, (c) el escenario laboral del puerto es un continuo único — no hay justificación pedagógica para fragmentar 100h en 4 guías separadas que romperían la continuidad de Andrea-Captain Lopera. ANTECEDENTE: aprendiz A1.1 (cualquier curso de inglés básico previo). CONSECUENTE del programa: empleabilidad inmediata como Port Operations Trainee con capacidad VHF + descripción profesional. La progresión A1.2→A2.1 vive INTERNAMENTE en 4 sub-bloques (3 sesiones c/u, ~25h c/u), uno por RAP absorbido — ver bloques_internos[] abajo.",
+      "nivel_cefr": "A1.2 → A2.1 (progresión INTERNA single-guía)",
+      "orden_pedagogico": 1,
+      "dominio_tecnico_principal": "Operaciones portuarias integradas (4 dominios: vocabulario base · SMCP · gramática operativa · descripción profesional)",
+      "producto_esperado_guia": "Misión Final = ENTREGA COMPLETA DEL CURSO = 'Simulación de Operaciones: The CML Port Turnaround' (Andrea coordina la operación completa de atraque, descarga y despacho del CML CARRIER en turno de 12 horas, demostrando los 4 RAPs absorbidos en performance integral · 100% L2 · evaluado vs criterios C01-C13 SOFÍA).",
+      "duracion_horas": 100,
+      "horas_directas": 72,
+      "horas_autonomas": 28,
+      "sesiones_total": 12,
+      "horas_por_sesion": 6,
+      "bloques_internos": [
+        {
+          "numero": 1,
+          "nombre_esp_corto": "The Port Word Walker",
+          "nombre_es_corto": "El Caminante de Palabras del Puerto",
+          "rap_origen": "RAP-01",
+          "rap_enunciado_corto": "Reconocer vocablos básicos marítimo-portuarios",
+          "cefr": "A1.2",
+          "sesiones": "S1-S3",
+          "horas_estimadas": 25,
+          "tema_central": "Vocabulario portuario básico + ship overview + UNIT 1+3 SOFÍA",
+          "ref_pm0_context": "cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_1_S1-S3_RAP01_A1.2"
+        },
+        {
+          "numero": 2,
+          "nombre_esp_corto": "The Pilot's Apprentice",
+          "nombre_es_corto": "El Aprendiz del Piloto",
+          "rap_origen": "RAP-02",
+          "rap_enunciado_corto": "Comprender frases SMCP estandarizadas OMI",
+          "cefr": "A1.3",
+          "sesiones": "S4-S6",
+          "horas_estimadas": 25,
+          "tema_central": "SMCP + crew + commands + UNIT 2+5 SOFÍA + NATO Phonetic",
+          "ref_pm0_context": "cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_2_S4-S6_RAP02_A1.3"
+        },
+        {
+          "numero": 3,
+          "nombre_esp_corto": "The Two-Way Radio",
+          "nombre_es_corto": "La Radio de Doble Vía",
+          "rap_origen": "RAP-03",
+          "rap_enunciado_corto": "Aplicar gramática puerto-buque en coordinación operativa",
+          "cefr": "A2.0",
+          "sesiones": "S7-S9",
+          "horas_estimadas": 25,
+          "tema_central": "Modales + condicionales + voz pasiva en operaciones · UNIT 4 SOFÍA",
+          "ref_pm0_context": "cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_3_S7-S9_RAP03_A2.0"
+        },
+        {
+          "numero": 4,
+          "nombre_esp_corto": "The Port Professional",
+          "nombre_es_corto": "El Profesional del Puerto",
+          "rap_origen": "RAP-04",
+          "rap_enunciado_corto": "Describir funciones habituales y momentáneas del rol",
+          "cefr": "A2.1",
+          "sesiones": "S10-S12",
+          "horas_estimadas": 25,
+          "tema_central": "Síntesis ocupacional + tag questions producción + pitch profesional · Misión Final",
+          "ref_pm0_context": "cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_4_S10-S12_RAP04_A2.1"
+        }
+      ]
+    }
+  ],
+  "proyecto_formativo_articulador": null,
+  "_omision_articulador_rationale": "v2.7.1 asimetría tipo-programa: Curso Complementario/Especial NO tiene proyecto_formativo_articulador (no hay arco entre guías porque solo hay 1). En su lugar: final_mission_scenario abajo (anclaje pre-Fase 2).",
+  "final_mission_scenario": "Simulación de Operaciones: The CML Port Turnaround — Andrea coordina la operación completa de atraque, descarga y despacho del CML CARRIER (vessel ficticio) en turno de 12 horas, demostrando los 4 RAPs absorbidos: vocabulario portuario (RAP-01), comunicación SMCP por VHF (RAP-02), aplicación gramatical en coordinación bidireccional (RAP-03), y presentación final de su rol y procesos (RAP-04) ante panel.",
+  "cefr_progression_internal": [
+    {
+      "sub_bloque": 1,
+      "rap": "RAP-01",
+      "sesiones": "S1-S3",
+      "cefr": "A1.2",
+      "nombre_esp": "The Port Word Walker"
+    },
+    {
+      "sub_bloque": 2,
+      "rap": "RAP-02",
+      "sesiones": "S4-S6",
+      "cefr": "A1.3",
+      "nombre_esp": "The Pilot's Apprentice"
+    },
+    {
+      "sub_bloque": 3,
+      "rap": "RAP-03",
+      "sesiones": "S7-S9",
+      "cefr": "A2.0",
+      "nombre_esp": "The Two-Way Radio"
+    },
+    {
+      "sub_bloque": 4,
+      "rap": "RAP-04",
+      "sesiones": "S10-S12",
+      "cefr": "A2.1",
+      "nombre_esp": "The Port Professional"
+    }
+  ],
+  "program_context": {
+    "diseño_curricular": "Curso Complementario: Inglés Marítimo y Portuario · Programa SOFÍA 12340002",
+    "codigo_competencia": "240201050",
+    "nombre_competencia": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+    "raps_absorbidos": [
+      {
+        "codigo": "RAP-01",
+        "enunciado": "Reconocer vocablos y expresiones básicas en inglés..."
+      },
+      {
+        "codigo": "RAP-02",
+        "enunciado": "Comprender vocablos principales de las frases estandarizadas por la OMI..."
+      },
+      {
+        "codigo": "RAP-03",
+        "enunciado": "Aplicar las reglas gramaticales básicas del idioma inglés que garanticen comunicación puerto-buque..."
+      },
+      {
+        "codigo": "RAP-04",
+        "enunciado": "Describir en inglés las funciones habituales y/o momentáneas..."
+      }
+    ],
+    "proyecto_formativo": null,
+    "final_mission_scenario": "Simulación de Operaciones: The CML Port Turnaround",
+    "tipo_programa": "Curso Complementario",
+    "regla_bloques": "absorcion_Na1",
+    "single_guide_variant": true,
+    "provided": true
+  },
+  "validacion_reglas_pm11": {
+    "source": "PM-1.1 v2.7.1 — 6 REGLAS DE DISEÑO",
+    "_apply_check_date": "2026-04-27",
+    "reglas": [
+      {
+        "id": "R01",
+        "regla": "REGLA 1 — regla_bloques explícito (uno de 4 patrones canónicos)",
+        "estado": "PASS · regla_bloques: absorcion_Na1 declarado"
+      },
+      {
+        "id": "R01.b",
+        "regla": "REGLA 1.b — Variante Curso Especial single-guía OMITE proyecto_formativo_articulador",
+        "estado": "PASS · proyecto_formativo: null + final_mission_scenario presente"
+      },
+      {
+        "id": "R01.c",
+        "regla": "REGLA 1.c — Validación blanda horas_por_bloque ≥ 48h",
+        "estado": "PASS · 100h ≥ 48h (sin warning)"
+      },
+      {
+        "id": "R02",
+        "regla": "REGLA 2 — Nombre ESP industrial profesional (no traducción literal)",
+        "estado": "PASS · 'The Maritime Operations Pro' sigue patrón canon MGV/DIESEL (The X Pro/Specialist)"
+      },
+      {
+        "id": "R03",
+        "regla": "REGLA 3 — Justificación pedagógica con antecedente/consecuente",
+        "estado": "PASS · justificacion_pedagogica explicita ANTECEDENTE (A1.1 prereq) + CONSECUENTE (empleabilidad Port Ops Trainee)"
+      },
+      {
+        "id": "R04",
+        "regla": "REGLA 4 — Secuencia lógica (de fundamental a complejo · receptivo a productivo)",
+        "estado": "PASS · 4 sub-bloques internos progresan A1.2→A1.3→A2.0→A2.1 + receptivo (RAP-01) → productivo (RAP-04)"
+      },
+      {
+        "id": "R05",
+        "regla": "REGLA 5 — Nivel CEFR progresivo dentro del rango declarado",
+        "estado": "PASS · A1.2→A2.1 progresión INTERNA dentro del rango_cefr declarado en pm-0-context"
+      },
+      {
+        "id": "R06",
+        "regla": "REGLA 6 — Cobertura del diseño curricular (ningún RAP sin representación)",
+        "estado": "PASS · 4 RAPs absorbidos · 1:4 (1 bloque cubre los 4 RAPs vía sub-bloques internos)"
+      },
+      {
+        "id": "R_v271",
+        "regla": "REGLA v2.7.1 asimetría — Curso Complementario NO usa proyecto_formativo_*, SÍ usa final_mission_scenario",
+        "estado": "PASS · proyecto_formativo: null + final_mission_scenario explicit"
+      }
+    ],
+    "total_reglas": 9,
+    "pass_count": 9,
+    "fail_count": 0,
+    "veredicto": "PASS 9/9"
+  },
+  "pm0_anchors_ref": {
+    "archivo": "pm-0-context.json",
+    "vigencia": "pre-Fase-1.2",
+    "version_pm0": "1.1 (2026-04-20 · canon DM v2.11)",
+    "alcance_actual_pm0": "A1.2 → A2.1 (single-guía con progresión interna · 4 sub-bloques internos)",
+    "campos_instanciados_en_pm0_context": [
+      "program_scope (campos planos)",
+      "pm0_section_mapping (auto-referencial)",
+      "universo_narrativo (cast portuario + cameos G1)",
+      "final_mission_scenario (canon v2.7.1)",
+      "grammar_roadmap.activation_mapping_internal_blocks (4 sub-bloques · 17 grupos distribuidos)",
+      "grammar_group_17_sector (SMCP + NATO Phonetic + occupational A2.1)",
+      "l1_percentage_per_session.single_guide_12_sessions (curva A1.2→A2.1)",
+      "shifts_metodologicos (4 bloques internos)",
+      "principios_aplicables (13 principios PM-0 §5)",
+      "cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno (4 bloques internos)",
+      "pm0_protocol_template_per_session (schema canónico)",
+      "traceability_checklist_ref (22 ítems §7)"
+    ],
+    "nota_grupo_17": "Grupo 17 IMARPOR: SMCP key phrases (Roger, Wilco, Affirmative) + NATO Phonetic Alphabet completo + Message markers (Question, Answer, Request, Information, Warning, Advice, Instruction, Intention) + estructuras ocupacionales A2.1 (I'm responsible for, My role involves, I have experience with)"
+  },
+  "siguiente_paso": {
+    "pm": "PM-1.2 (Scope & Sequence + Curación de Material Auténtico)",
+    "checkpoint": "CP1B (DRAFT-DECISIONS pm-1-2 antes de escribir el JSON)",
+    "alcance_pm12": "Como es single-guía, PM-1.2 produce 1 solo pm-1-2.json (no 4 ni 6). Cubre los 4 RAPs absorbidos + 4 sub-bloques internos. Curación de material auténtico marítimo (textbook + IMO SMCP + SOLAS + videos OMI YouTube ya pre-identificados).",
+    "decisiones_pendientes_cp1b": [
+      "Toolbelt (vocabulario activo) · cuántos términos para 100h y cómo distribuir entre los 4 sub-bloques internos",
+      "Funciones lingüísticas comunicativas con ejemplos auténticos (escenario CML Port Turnaround)",
+      "3 fuentes auténticas curadas (textbook + IMO SMCP + 1 video real) · análisis lingüístico A1.2→A2.1",
+      "Adaptación pedagógica del welcome script de UNIT 1 SHIP OVERVIEW",
+      "integrative_task = expansión del final_mission_scenario en operación detallada",
+      "evaluation_matrix triada SENA con criterios C01-C13 SOFÍA distribuidos"
+    ]
+  },
+  "_smoke_original_programa_id": "IMARPOR-CC-2026-04-27"
+}

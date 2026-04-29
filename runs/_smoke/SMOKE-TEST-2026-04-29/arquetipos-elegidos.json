@@ -1,0 +1,95 @@
+{
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "guia_id": "g1",
+  "fecha_seleccion": "2026-04-28",
+  "instructor": "Sergio Cortés Perdomo",
+  "elecciones": [
+    {
+      "pm": "PM-2.1",
+      "estilo": "diesel_secuencia_encadenada",
+      "archetype_used": [
+        "A — Visual (Actividad 1: The Map del Puerto)",
+        "B — Story (Actividad 2: Andrea's First Radio Call)",
+        "C — News (Actividad 3: The Maritime Headline)"
+      ],
+      "archetype_mode": "secuencia encadenada — 3 momentos en S1",
+      "justificacion": "Test runtime de la rama diesel_secuencia_encadenada"
+    },
+    {
+      "pm": "PM-2.10",
+      "estilo": "mgv_compendio_metodologico",
+      "integration_all_archetypes_policy": {
+        "archetypes_integrated": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "bloom_ceiling_a11": "L3 Apply máximo (CEFR A1.2 strict · grammar consciousness-raising + controlled practice + communicative tasks · NO HOTS)"
+      },
+      "justificacion": "PM-2.10 v2.0 estilo mgv compendio · 5 arquetipos A-E (Discovery + Controlled + Communicative + Creative + Editing) · S3 Grammar antecedente que produce targets para PM-2.4 Writing"
+    },
+    {
+      "pm": "PM-2.4",
+      "estilo": "mgv_compendio_metodologico",
+      "integration_all_archetypes_policy": {
+        "archetypes_integrated": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "bloom_ceiling_a11": "L3 Apply máximo (CEFR A1.2 strict · writing genre-based + scaffolded · NO HOTS)"
+      },
+      "justificacion": "PM-2.4 v2.0 estilo mgv compendio · 5 arquetipos A-E (Exploratory + Academic Formal + Collaborative TBLT + AI-Mediated + Genre-Based) · S3 Writing consume Grammar Targets de PM-2.10 · produce E2 Writing (5 pts evidencia formal)"
+    },
+    {
+      "pm": "PM-2.6",
+      "estilo": "mgv_compendio_metodologico",
+      "integration_all_archetypes_policy": {
+        "archetypes_integrated": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "bloom_ceiling_a11": "L3 Apply máximo · listening A1.2 phase-based + TBLT · NO HOTS"
+      },
+      "justificacion": "PM-2.6 v2.0 estilo mgv compendio · 6 arquetipos A-F (Micro-skills + Phase-based + TBLT + Bloom + Advanced + Multimedia) · S4 Listening anchor · produce E3 Listening (5 pts Desempeño)"
+    },
+    {
+      "pm": "PM-2.8",
+      "estilo": "mgv_compendio_metodologico",
+      "integration_all_archetypes_policy": {
+        "archetypes_integrated": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "bloom_ceiling_a11": "L3 Apply máximo · speaking A1.2 con pronunciation scaffolding · NO HOTS"
+      },
+      "justificacion": "PM-2.8 v2.0 estilo mgv compendio · 5 arquetipos A-E (Gap Tasks + Role-based + Multimedia + Rehearsal + Interaction) · pronunciation absorbida de PM-2.7 deprecated · S4 Speaking mission · produce E4 Speaking (5 pts Desempeño)"
+    },
+    {
+      "pm": "PM-2.9",
+      "estilo": "mgv_compendio_metodologico",
+      "integration_all_archetypes_policy": {
+        "archetypes_integrated": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "bloom_ceiling_a11": "L3 Apply máximo · funciones comunicativas A1.2→A2.1 · NO HOTS"
+      },
+      "justificacion": "PM-2.9 v2.0 estilo mgv compendio · 5 arquetipos A-E (Information Exchange + Persuasion + Social/Interpersonal + Gamified + Academic Discourse) · S5 único · integra S2-S4 antes de S6 Quiz · produce E5 Language Functions (5 pts Desempeño)"
+    }
+  ]
+}

@@ -1,0 +1,836 @@
+{
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "pm_code": "PM-2.3",
+  "pm_name": "Reading — The Master Anchor & HOTS",
+  "pm_version": "2.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "cefr_level": "A1.2",
+  "session": 2,
+  "fase_sena": "Apropiación",
+  "generated_at": "2026-04-28",
+  "instructor": "Sergio Cortés Perdomo",
+  "previous_pms": ["PM-2.1", "PM-2.2"],
+  "archetypes_policy": "TODOS LOS 6 ARQUETIPOS INTEGRADOS (A+B+C+D+E+F) — estilo declarado mgv_compendio_metodologico (Gate Humano 1)",
+  "enriched": false,
+  "_enriched_false_rationale": "Espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. Sergio debe revisar las 6 ramas arquetípicas y elegir flow_id para la corrida real, además de validar el Master Anchor Text generado original (CHECK 9 anti-copia-fantasma).",
+  "pm0_anchor": {
+    "source_file": "pm-0-context.json",
+    "cefr_descriptor_ref": "§6.A1.2 — reading de textos cortos auténticos del sector maritime-port (avisos de muelle, instrucciones de seguridad, fragmentos de manual, mensajes radio breves)",
+    "l1_policy_ref": "§9.1.single_guide_12_sessions — L1% S2≈22% (curva descendente desde S1=25% hacia A2.1)",
+    "methodological_shift_ref": "§5.A1.2 — input lento con andamiaje alto, accuracy-prioritario; el género radio-VHF requiere chunks formulaicos antes que análisis libre",
+    "feedback_ref": "§5.6 — S2 inicia corrección explícita en producción escrita (Story Frame, Venn) y recast para intercambio oral en pares",
+    "stress_pronunciation_ref": "§5.8 — S2 par mínimo estratégico: 'starboard' (STAR-bord) vs 'port' (port) + 'vessel' (VES-el) vs 'wessel' (no-EN error tipico L1)",
+    "success_vocabulary_ref": "§5.10 — S2 activa 14/20 términos Toolbelt en el texto ancla (≥12 mínimo) con factores Salience+Use+Connection+Context+Emotion",
+    "grammar_roadmap_ref": "§8.G1_A1.2 — S2 INTRO: Grupo 1 'be' (is/are en descripciones de buque) + Grupo 4 there is/there are (presencia de objetos en puerto). 2 Intro respeta carga ≤2 PM-0 §9.2"
+  },
+  "universe_anchor": {
+    "continuity_with_s1": "S1 cerró con Andrea Mosquera firmando su contrato como aprendiz-operadora en el Puerto de Buenaventura y conociendo a Capitán Restrepo (mentor SENA) más Captain Lopera (cliente externo permanente del curso, capitán del BUENAVENTURA EXPRESS). S2 abre con el primer texto auténtico que Andrea debe leer en su primera mañana operativa: un aviso de turno + un fragmento de manual de partes del buque.",
+    "story_a_source": "GENERADA — pm-1-2.json (versión pre-v2.6) NO trae Story A asignada. Texto original creado para IMARPOR-CC inspirado en universo marítimo-portuario sin copiar de runs anteriores (CHECK 9 anti-copia-fantasma).",
+    "adaptation_strategy": "A1.2 — oraciones ≤15 palabras, léxico del Toolbelt portuario, be + there is/there are como grammar backbone, Andrea como lectora-modelo en su primera mañana en el muelle",
+    "characters_active": [
+      "Andrea Mosquera (lectora-modelo · aprendiz SENA primera semana)",
+      "Capitán Restrepo (mentor SENA · presente en muelle)",
+      "Captain Lopera (cliente externo permanente · referente, capitán del BUENAVENTURA EXPRESS)"
+    ],
+    "narrative_function": "El texto muestra a Andrea APROPIANDO vocabulario portuario y partes del buque mediante lectura guiada por Capitán Restrepo. El aprendiz se identifica con Andrea: ambos están en su primera mañana, ambos necesitan los mismos 20 términos para sobrevivir el turno."
+  },
+  "identity": {
+    "codigo": "PM-2.3",
+    "nombre": "Reading Comprehension — The Master Anchor & HOTS",
+    "subfase_guia_sena": "3.3 Actividades de apropiación del conocimiento",
+    "ubicacion_guia": "Sección 3.3 Apropiación",
+    "tipo_evidencia_sena": "Conocimiento (Reading — E1 · 5 pts)",
+    "instrumento": "Cuestionario No 1 (referido a PM-4.1)",
+    "estructura": "MENÚ DE ARQUETIPOS — TODOS INTEGRADOS (A+B+C+D+E+F)",
+    "rol_sistema": "ANCLA MAESTRA — texto fuente que inyecta gramática (be + there is/are) y vocabulario portuario al resto de la guía única IMARPOR-CC"
+  },
+  "integration_all_archetypes_policy": {
+    "applicable_to_this_pm": true,
+    "archetypes_integrated": ["A", "B", "C", "D", "E", "F"],
+    "total_archetypes": 6,
+    "rationale_estilo_2026-04-28": "Estilo declarado mgv_compendio_metodologico (Gate Humano 1 · arquetipos-elegidos.json). Documentar TODOS los arquetipos como menú permite al instructor rotar según contexto del grupo en cada cohorte intensiva 100h. Cada arquetipo trae frases fijas + Language Bank + Micro-Cápsulas alineadas al universo portuario.",
+    "recommended_minimum_coverage_per_session": "Al menos 2 arquetipos del menú (ver rotation_options_for_instructor)",
+    "archetypes_most_apt_for_a12_imarpor": [
+      "A (TBLT Listing/Comparing — listar partes del buque y comparar bow/stern)",
+      "B (K-W-L + Story Frame de la primera mañana de Andrea)",
+      "D (Jigsaw con división de 4 zonas del puerto)"
+    ],
+    "archetypes_stretch_for_a12": [
+      "F (HOTS con andamiaje extremo · finales alternativos del turno de Andrea)"
+    ],
+    "archetypes_requiring_tech": [
+      "E (requiere fotos/video de buque real · BUENAVENTURA EXPRESS o equivalente · o impresiones alternativas si no hay smartphones)"
+    ],
+    "bloom_ceiling": "L3 Apply (default fallback · no Gate Humano 1 sobre Bloom). Arquetipos A/B/C/E permanecen en L1-L3; D y F documentan techos opcionales L4 con andamiaje extremo para grupos avanzados que ya muestren A2.1 emergente."
+  },
+  "content": {
+    "worksheet_title": "THE MASTER ANCHOR — Reading Comprehension",
+    "guia_header": "IMARPOR-CC · Guía 1 · The Maritime Operations Pro · Nivel A1.2 · Sesión 2",
+    "bilingual_instruction_block": {
+      "main_message_en": "Today, you walk with Andrea on her first morning at the Port of Buenaventura. She reads a shift notice and a manual page about ship parts. You read with her. By the end of this session, you will read the port like Andrea — and beyond.",
+      "main_message_es_cursiva": "Hoy, caminas con Andrea en su primera mañana en el Puerto de Buenaventura. Ella lee un aviso de turno y una página de manual sobre partes del buque. Tú lees con ella. Al final de esta sesión, leerás el puerto como Andrea — y más allá."
+    },
+    "the_master_anchor_text": {
+      "icon": "📖",
+      "title_en": "THE MASTER ANCHOR TEXT — Andrea's First Morning",
+      "title_es": "EL TEXTO ANCLA MAESTRO — La primera mañana de Andrea",
+      "source_credit": "Texto original generado para IMARPOR-CC G1. Inspirado en operaciones reales del Puerto de Buenaventura y manuales OMI introductorios. Adaptación A1.2 para el aprendiz SENA recién egresado.",
+      "genre": "Shift notice (port memo) + manual excerpt + narrative frame",
+      "word_count": 188,
+      "reading_time_estimated": "5 min silent read + 3 min listening (instructor reads aloud)",
+      "text_en": "Andrea is a new SENA apprentice at the Port of Buenaventura. Today is Monday. It is six in the morning. The dock is wet and cold. Captain Restrepo is her mentor. He is calm. He is patient.\n\nAndrea reads the shift notice on the wall. The notice says: \"BUENAVENTURA EXPRESS arrives at 07:00. Berth 4. Cargo: containers. Captain: Lopera.\"\n\nThere is a manual on the desk. The manual is open at page two. The page is about ship parts. Andrea reads slowly.\n\nThe manual says: \"A vessel has a bow at the front. A vessel has a stern at the back. The port side is the left side. The starboard side is the right side. There are containers on deck. There is a bridge on top.\"\n\nAndrea looks at the dock. She sees a big ship. The ship is the BUENAVENTURA EXPRESS. There is a bow. There is a stern. There are many containers on deck.\n\nCaptain Restrepo smiles. He says: \"Welcome to the port, Andrea. Today, you read the ship.\"",
+      "text_es_support_cursiva": "[Andrea es una nueva aprendiz SENA en el Puerto de Buenaventura. Hoy es lunes. Son las seis de la mañana. El muelle está mojado y frío. Capitán Restrepo es su mentor. Él es calmado. Él es paciente. Andrea lee el aviso de turno en la pared. El aviso dice: 'BUENAVENTURA EXPRESS llega a las 07:00. Atraque 4. Carga: contenedores. Capitán: Lopera.' Hay un manual sobre el escritorio. El manual está abierto en la página dos. La página es sobre partes del buque. Andrea lee despacio. El manual dice: 'Un buque tiene una proa al frente. Un buque tiene una popa atrás. El costado de babor es el lado izquierdo. El costado de estribor es el lado derecho. Hay contenedores en la cubierta. Hay un puente arriba.' Andrea mira el muelle. Ve un buque grande. El buque es el BUENAVENTURA EXPRESS. Hay una proa. Hay una popa. Hay muchos contenedores en la cubierta. Capitán Restrepo sonríe. Él dice: 'Bienvenida al puerto, Andrea. Hoy, lees el buque.']",
+      "vocabulary_coverage_analysis": {
+        "ship_parts": {
+          "vessel": true,
+          "bow": true,
+          "stern": true,
+          "deck": true,
+          "bridge": true,
+          "hit_ratio": "5/5"
+        },
+        "port_infrastructure": {
+          "port": true,
+          "dock": true,
+          "berth": true,
+          "container": true,
+          "hit_ratio": "4/4"
+        },
+        "directions_sides": {
+          "port_side": true,
+          "starboard": true,
+          "front": true,
+          "back": true,
+          "hit_ratio": "4/4"
+        },
+        "people_roles": {
+          "captain": true,
+          "apprentice": true,
+          "mentor": true,
+          "crew": false,
+          "hit_ratio": "3/4"
+        },
+        "operations": {
+          "arrive": true,
+          "shift": true,
+          "cargo": true,
+          "berthing": false,
+          "hit_ratio": "2/3"
+        },
+        "total_hits": "18/20 (90% — supera el mínimo 12/20). Términos NO en texto ancla (crew, berthing): se introducen en S3 y reapareen en cuestionario S6."
+      },
+      "grammar_coverage_analysis": {
+        "grupo_1_be": "is (Andrea is, Today is, It is, Captain is, He is, The ship is, The page is, The manual is) + es la copula central — 12+ ocurrencias naturales",
+        "grupo_4_there_is_there_are": "There is (a manual, a bridge, a bow, a stern) + There are (containers on deck, many containers) — 6 ocurrencias naturales",
+        "grammar_backbone_check": "PASS — las 2 structures Intro de S2 (be + there is/are) aparecen recurrentes y modelan descripción del buque y del muelle"
+      }
+    },
+    "the_toolbelt": {
+      "icon": "🔧",
+      "title_en": "THE TOOLBELT — 20 Words You Need Today",
+      "title_es": "EL CINTURÓN DE HERRAMIENTAS — 20 palabras que necesitas hoy",
+      "instruction_en": "Read each word. Look at the example from Andrea's text. Mark the ones you already know.",
+      "instruction_es_cursiva": "Lee cada palabra. Mira el ejemplo del texto de Andrea. Marca las que ya conoces.",
+      "organization": "5 categorías × 4 términos = 20 términos",
+      "micro_capsula_tip": "> ⚠️ **Toolbelt Rule:** If you don't know a word, do NOT translate the whole sentence. Find the word in the picture or in the text. (*Si no conoces una palabra, NO traduzcas toda la oración. Encuentra la palabra en la imagen o en el texto.*)",
+      "categories": [
+        {
+          "category_id": "ship_parts",
+          "name_en": "Ship Parts",
+          "name_es": "Partes del buque",
+          "icon": "⚓",
+          "terms": [
+            {"word": "vessel", "es": "buque", "definition_en": "a big boat for cargo", "example_from_text": "A vessel has a bow at the front."},
+            {"word": "bow", "es": "proa", "definition_en": "the front of a vessel", "example_from_text": "There is a bow."},
+            {"word": "stern", "es": "popa", "definition_en": "the back of a vessel", "example_from_text": "There is a stern."},
+            {"word": "deck", "es": "cubierta", "definition_en": "the flat top of a vessel", "example_from_text": "There are containers on deck."}
+          ]
+        },
+        {
+          "category_id": "port_infrastructure",
+          "name_en": "Port Infrastructure",
+          "name_es": "Infraestructura portuaria",
+          "icon": "🏗️",
+          "terms": [
+            {"word": "port", "es": "puerto", "definition_en": "a place where vessels stop", "example_from_text": "Andrea is at the Port of Buenaventura."},
+            {"word": "dock", "es": "muelle", "definition_en": "the platform next to a vessel", "example_from_text": "The dock is wet and cold."},
+            {"word": "berth", "es": "atraque", "definition_en": "the spot where a vessel parks", "example_from_text": "BUENAVENTURA EXPRESS arrives at Berth 4."},
+            {"word": "container", "es": "contenedor", "definition_en": "a big metal box for cargo", "example_from_text": "Cargo: containers."}
+          ]
+        },
+        {
+          "category_id": "directions_sides",
+          "name_en": "Directions & Sides",
+          "name_es": "Direcciones y costados",
+          "icon": "🧭",
+          "terms": [
+            {"word": "port side", "es": "costado de babor", "definition_en": "the left side of a vessel", "example_from_text": "The port side is the left side."},
+            {"word": "starboard", "es": "estribor", "definition_en": "the right side of a vessel", "example_from_text": "The starboard side is the right side."},
+            {"word": "front", "es": "frente", "definition_en": "the part you see first", "example_from_text": "A vessel has a bow at the front."},
+            {"word": "back", "es": "atrás", "definition_en": "the part behind", "example_from_text": "A vessel has a stern at the back."}
+          ]
+        },
+        {
+          "category_id": "people_roles",
+          "name_en": "People & Roles",
+          "name_es": "Personas y roles",
+          "icon": "👷",
+          "terms": [
+            {"word": "captain", "es": "capitán", "definition_en": "the leader of a vessel", "example_from_text": "Captain: Lopera."},
+            {"word": "apprentice", "es": "aprendiz", "definition_en": "a person who is learning", "example_from_text": "Andrea is a new SENA apprentice."},
+            {"word": "mentor", "es": "mentor", "definition_en": "a person who teaches you", "example_from_text": "Captain Restrepo is her mentor."},
+            {"word": "crew", "es": "tripulación", "definition_en": "all the people working on a vessel", "example_from_text": "(introduced in S3 — pre-loaded for Cuestionario)"}
+          ]
+        },
+        {
+          "category_id": "operations",
+          "name_en": "Operations",
+          "name_es": "Operaciones",
+          "icon": "🛠️",
+          "terms": [
+            {"word": "arrive", "es": "llegar", "definition_en": "to come to a place", "example_from_text": "BUENAVENTURA EXPRESS arrives at 07:00."},
+            {"word": "shift", "es": "turno", "definition_en": "a block of work hours", "example_from_text": "Andrea reads the shift notice."},
+            {"word": "cargo", "es": "carga", "definition_en": "the goods on a vessel", "example_from_text": "Cargo: containers."},
+            {"word": "berthing", "es": "atraque (acción)", "definition_en": "the action of parking a vessel", "example_from_text": "(introduced in S3 — pre-loaded for Cuestionario)"}
+          ]
+        }
+      ]
+    },
+    "archetype_A_TBLT_CYCLE": {
+      "archetype_id": "A",
+      "name_en": "TBLT CYCLE — Task-Based Reading",
+      "name_es": "CICLO TBLT — Lectura Basada en Tareas",
+      "actua_como": "Senior ESP Task Designer & TBLT Reading Architect",
+      "selected_techniques": ["Listing", "Comparing"],
+      "rationale_a12": "Listing y Comparing son LOTS-HOTS accesibles para A1.2. El aprendiz extrae partes del buque (LOTS) y luego contrasta port side vs starboard / bow vs stern (HOTS L3). Técnicas cognitivamente acotadas que respetan el techo Bloom L3 Apply.",
+      "time_minutes": 45,
+      "pre_reading": {
+        "title_en": "ACTIVATE — What do you already see?",
+        "title_es": "ACTIVA — ¿Qué ves ya?",
+        "time_minutes": 10,
+        "instruction_en": "Look at two photos on the board. Photo 1: a container vessel in Buenaventura. Photo 2: a fishing boat on the Pacific. Without reading, complete the table.",
+        "instruction_es_cursiva": "Mira dos fotos en el tablero. Foto 1: un buque portacontenedores en Buenaventura. Foto 2: un barco pesquero en el Pacífico. Sin leer, completa la tabla.",
+        "pre_table": {
+          "headers": ["Photo", "What I see (3 things)", "Big or small?"],
+          "rows": [
+            {"photo": "Container vessel", "what_i_see": "____________", "size": "____________"},
+            {"photo": "Fishing boat", "what_i_see": "____________", "size": "____________"}
+          ]
+        },
+        "survival_words_s2": [
+          {"word": "vessel", "es": "buque"},
+          {"word": "bow", "es": "proa"},
+          {"word": "stern", "es": "popa"},
+          {"word": "deck", "es": "cubierta"}
+        ]
+      },
+      "during_reading": {
+        "title_en": "TASK 1 — LISTING · TASK 2 — COMPARING",
+        "title_es": "TAREA 1 — LISTAR · TAREA 2 — COMPARAR",
+        "time_minutes": 25,
+        "task_1_listing": {
+          "instruction_en": "Read the text. List 4 ship parts and 4 port elements.",
+          "instruction_es_cursiva": "Lee el texto. Lista 4 partes del buque y 4 elementos del puerto.",
+          "table": {
+            "headers": ["Ship parts (vessel)", "Port elements"],
+            "rows": [
+              {"ship": "1. ____________", "port": "1. ____________"},
+              {"ship": "2. ____________", "port": "2. ____________"},
+              {"ship": "3. ____________", "port": "3. ____________"},
+              {"ship": "4. ____________", "port": "4. ____________"}
+            ]
+          },
+          "bloom_level": "L1-L2 (Remember, Understand)"
+        },
+        "task_2_comparing": {
+          "instruction_en": "Compare the BOW and the STERN of a vessel using the Venn diagram. What is DIFFERENT? What is SIMILAR?",
+          "instruction_es_cursiva": "Compara la PROA y la POPA de un buque usando el diagrama de Venn. ¿Qué es DIFERENTE? ¿Qué es SIMILAR?",
+          "venn_diagram_fields": {
+            "only_bow": "Only BOW: __________ (hint: it is at the ________)",
+            "only_stern": "Only STERN: __________ (hint: it is at the ________)",
+            "both": "BOTH: __________ (hint: both are part of a ________ and both are on the ________)"
+          },
+          "bloom_level": "L3 (Apply) — techo Bloom respetado"
+        }
+      },
+      "post_reading": {
+        "title_en": "REPORT & LANGUAGE FOCUS",
+        "title_es": "REPORTE Y FOCO LINGÜÍSTICO",
+        "time_minutes": 10,
+        "planning_stage": {
+          "instruction_en": "In pairs, prepare a 30-second report. Use this frame: 'A vessel has a ___ and a ___. The port has a ___ and a ___.'",
+          "instruction_es_cursiva": "En parejas, preparen un reporte de 30 segundos. Usen este molde."
+        },
+        "reporting_stage": {
+          "instruction_en": "Two pairs share. The class listens for: be (is/are) + there is/there are.",
+          "instruction_es_cursiva": "Dos parejas comparten. La clase escucha: be + there is/there are."
+        },
+        "language_focus": {
+          "focus_target": "be (is/are) + there is/there are",
+          "examples_from_text": [
+            "Andrea IS a new SENA apprentice.",
+            "There IS a manual on the desk.",
+            "There ARE containers on deck."
+          ],
+          "micro_capsula": "> ⚠️ **Grammar Rule:** Use 'there is' for ONE thing. Use 'there are' for TWO or more. (*Usa 'there is' para UNA cosa. Usa 'there are' para DOS o más.*)"
+        }
+      }
+    },
+    "archetype_B_COMPREHENSION_STRATEGIES": {
+      "archetype_id": "B",
+      "name_en": "COMPREHENSION STRATEGIES — Metacognitive Reading",
+      "name_es": "ESTRATEGIAS DE COMPRENSIÓN — Lectura Metacognitiva",
+      "actua_como": "Reading Strategy Coach & ESP Metacognition Specialist",
+      "selected_techniques": ["K-W-L", "Story Frame Retelling"],
+      "rationale_a12": "K-W-L permite activar saberes previos sobre puerto/buque (alta probabilidad en aprendices del Pacífico colombiano). Story Frame da andamiaje extremo necesario para A1.2. Ambas técnicas dejan huella metacognitiva transferible al resto de la guía.",
+      "time_minutes": 40,
+      "pre_reading": {
+        "title_en": "K-W-L · Columns K and W",
+        "title_es": "K-W-L · Columnas S y Q (Sé / Quiero saber)",
+        "time_minutes": 10,
+        "instruction_en": "Before reading, fill columns K (Know) and W (Want to know) about a port and a vessel.",
+        "instruction_es_cursiva": "Antes de leer, llena las columnas K (Sé) y W (Quiero saber) sobre un puerto y un buque.",
+        "kwl_table": {
+          "headers": ["K — What I KNOW", "W — What I WANT to know", "L — What I LEARNED (later)"],
+          "rows_prefilled": [
+            {"k": "A port has ____________", "w": "What is a ____________?", "l": "(complete after reading)"},
+            {"k": "A vessel has ____________", "w": "Where is the ____________?", "l": "(complete after reading)"}
+          ]
+        },
+        "l1_allowed": "Columna K puede usar L1 (español) en S2 — se reduce a 20% L1 desde S3"
+      },
+      "during_reading": {
+        "title_en": "READ + MARK + UPDATE",
+        "title_es": "LEE + MARCA + ACTUALIZA",
+        "time_minutes": 20,
+        "instruction_en": "Read the text. Mark every part of the vessel with a circle. Mark every port element with a square. Then update column L of your K-W-L.",
+        "instruction_es_cursiva": "Lee el texto. Marca cada parte del buque con un círculo. Marca cada elemento del puerto con un cuadrado. Luego actualiza la columna L del K-W-L.",
+        "marking_legend": {
+          "circle": "Ship part (e.g., bow, stern, deck, bridge)",
+          "square": "Port element (e.g., dock, berth, port)",
+          "underline": "A word in the Toolbelt I did NOT know"
+        }
+      },
+      "post_reading": {
+        "title_en": "STORY FRAME RETELLING",
+        "title_es": "RECONTAR CON MOLDE NARRATIVO",
+        "time_minutes": 10,
+        "instruction_en": "Complete the Story Frame to retell Andrea's first morning. Use the Toolbelt.",
+        "instruction_es_cursiva": "Completa el molde narrativo para recontar la primera mañana de Andrea. Usa el Toolbelt.",
+        "story_frame": [
+          "Andrea is a ____________.",
+          "Today is ____________.",
+          "She is at the ____________ of Buenaventura.",
+          "Her mentor is ____________.",
+          "She reads about a ____________ called BUENAVENTURA EXPRESS.",
+          "The vessel has a ____________ at the front and a ____________ at the back.",
+          "There are ____________ on deck."
+        ],
+        "metacognitive_reflection": {
+          "prompt_en": "Which strategy helped you most? K-W-L or Story Frame? Write 1 sentence in English or Spanish.",
+          "prompt_es_cursiva": "¿Qué estrategia te ayudó más? K-W-L o Story Frame? Escribe 1 oración en inglés o español."
+        },
+        "bloom_level": "L2-L3 (Understand, Apply)"
+      }
+    },
+    "archetype_C_INFORMATION_GAP": {
+      "archetype_id": "C",
+      "name_en": "INFORMATION GAP — Asymmetric Pair Reading",
+      "name_es": "VACÍO DE INFORMACIÓN — Lectura Asimétrica en Pares",
+      "actua_como": "Information Gap Designer & ESP Communication Architect",
+      "selected_techniques": ["Complete the Text (split halves)", "Draw This (vessel diagram)"],
+      "rationale_a12": "Generan necesidad genuina de comunicación oral en A1.2 con frases controladas. Complete the Text refuerza partes del buque mediante dictado/parafraseo controlado. Draw This obliga a usar there is/there are + posiciones (front/back/left/right).",
+      "time_minutes": 35,
+      "pre_reading": {
+        "title_en": "PREPARE THE GAP",
+        "title_es": "PREPARA EL VACÍO",
+        "time_minutes": 5,
+        "instruction_en": "In pairs: one is Student A, one is Student B. Do NOT show your paper to your partner. The rule: only speak.",
+        "instruction_es_cursiva": "En parejas: uno es Estudiante A, otro es Estudiante B. NO muestres tu hoja a tu compañero. Regla: solo hablar.",
+        "language_bank_for_gap": [
+          "What does your text say about ___?",
+          "My text says: ___.",
+          "Can you repeat?",
+          "Where is the ___?",
+          "It is at the ___."
+        ]
+      },
+      "during_reading_complete_the_text": {
+        "title_en": "COMPLETE THE TEXT — Split Halves",
+        "title_es": "COMPLETA EL TEXTO — Mitades Partidas",
+        "time_minutes": 15,
+        "instruction_en": "Student A has paragraphs 1-2. Student B has paragraphs 3-4. Take turns: read aloud + ask + fill the blanks.",
+        "instruction_es_cursiva": "Estudiante A tiene párrafos 1-2. Estudiante B tiene párrafos 3-4. Por turnos: leer en voz alta + preguntar + llenar los espacios.",
+        "student_a_blanks": [
+          "Captain ____________ is her mentor.",
+          "BUENAVENTURA EXPRESS arrives at ____________.",
+          "Berth ____________."
+        ],
+        "student_b_blanks": [
+          "A vessel has a ____________ at the front.",
+          "The ____________ side is the right side.",
+          "There is a ____________ on top."
+        ],
+        "bloom_level": "L2-L3 (Understand, Apply)"
+      },
+      "during_reading_draw_this": {
+        "title_en": "DRAW THIS — Vessel Diagram",
+        "title_es": "DIBUJA ESTO — Diagrama del Buque",
+        "time_minutes": 10,
+        "instruction_en": "Student A reads the vessel description aloud. Student B draws WITHOUT looking at A's paper. Then swap and check.",
+        "instruction_es_cursiva": "Estudiante A lee la descripción del buque en voz alta. Estudiante B dibuja SIN mirar la hoja de A. Luego intercambian y verifican.",
+        "description_for_student_a": "The vessel has a bow at the front. The vessel has a stern at the back. There is a bridge on top. There are 3 containers on deck. The port side is on the left. The starboard side is on the right.",
+        "verification_checklist": [
+          "Bow drawn at the front? ☐",
+          "Stern drawn at the back? ☐",
+          "Bridge on top? ☐",
+          "3 containers on deck? ☐",
+          "Port side correctly on left? ☐"
+        ]
+      },
+      "post_reading": {
+        "title_en": "COMPARE & ANALYZE",
+        "title_es": "COMPARA Y ANALIZA",
+        "time_minutes": 5,
+        "instruction_en": "Compare drawings. Where did communication fail? Mark the words that were hard to say or hear.",
+        "instruction_es_cursiva": "Comparen dibujos. ¿Dónde falló la comunicación? Marquen las palabras que fueron difíciles de decir o escuchar.",
+        "common_failure_points_to_anticipate": [
+          "starboard ↔ port side (often confused)",
+          "bow ↔ stern (front vs back)",
+          "deck (often confused with 'desk')"
+        ]
+      }
+    },
+    "archetype_D_COOPERATIVE": {
+      "archetype_id": "D",
+      "name_en": "COOPERATIVE — Jigsaw on 4 Port Zones",
+      "name_es": "COOPERATIVO — Rompecabezas sobre 4 Zonas del Puerto",
+      "actua_como": "Cooperative Learning Architect & ESP Group Dynamics Specialist",
+      "selected_techniques": ["Jigsaw"],
+      "rationale_a12": "Jigsaw funciona en A1.2 con texto pre-segmentado y andamiaje. Cada experto domina una de las 4 categorías Toolbelt + sus ejemplos del texto. Home Group reconstruye la imagen completa del puerto. Desarrolla autonomía y liderazgo desde S2.",
+      "time_minutes": 45,
+      "pre_reading": {
+        "title_en": "ASSIGNMENT — 4 Port Zones",
+        "title_es": "ASIGNACIÓN — 4 Zonas del Puerto",
+        "time_minutes": 5,
+        "instruction_en": "Form Home Groups of 4. Each member receives ONE category card: Ship Parts, Port Infrastructure, Directions, or People. Read the text and find YOUR category.",
+        "instruction_es_cursiva": "Formen Grupos de Casa de 4. Cada miembro recibe UNA tarjeta de categoría: Partes del Buque, Infraestructura, Direcciones o Personas. Lean el texto y encuentren SU categoría.",
+        "home_group_structure": "4 personas × 1 categoría cada una (Operations queda como categoría puente que todos tocan)"
+      },
+      "during_reading_expert_groups": {
+        "title_en": "EXPERT GROUPS — Master Your Category",
+        "title_es": "GRUPOS DE EXPERTOS — Domina tu Categoría",
+        "time_minutes": 20,
+        "instruction_en": "Move to the Expert Group of your category. Together: list all your terms in the text + write 1 sentence example for each. Prepare your mini-class.",
+        "instruction_es_cursiva": "Muévete al Grupo de Expertos de tu categoría. Juntos: listen todos sus términos en el texto + escriban 1 oración de ejemplo para cada uno. Preparen su mini-clase.",
+        "expert_group_template": {
+          "category": "____________",
+          "terms_found_in_text": ["____________", "____________", "____________", "____________"],
+          "example_sentences_we_will_teach": ["____________", "____________"],
+          "mini_class_opener": "Hi team, today I teach you about ____________."
+        },
+        "bloom_level": "L3-L4 (Apply, Analyze)"
+      },
+      "post_reading_home_groups": {
+        "title_en": "HOME GROUPS — Teach Each Other",
+        "title_es": "GRUPOS DE CASA — Enséñense entre sí",
+        "time_minutes": 15,
+        "instruction_en": "Return to your Home Group. Each expert teaches the other 3 their category (3-4 minutes each). The group fills the master diagram of the port and the vessel.",
+        "instruction_es_cursiva": "Regresa a tu Grupo de Casa. Cada experto enseña a los otros 3 su categoría (3-4 minutos cada uno). El grupo llena el diagrama maestro del puerto y el buque.",
+        "master_diagram_to_complete": {
+          "ship_parts_zone": "Label: bow / stern / deck / bridge",
+          "port_infrastructure_zone": "Label: port / dock / berth / container",
+          "directions_zone": "Label: port side / starboard / front / back",
+          "people_zone": "Label: captain / apprentice / mentor / crew"
+        }
+      },
+      "closing_reflection": {
+        "title_en": "GROUP CHECK",
+        "title_es": "VERIFICACIÓN GRUPAL",
+        "time_minutes": 5,
+        "instruction_en": "Each Home Group answers: Is our diagram complete? What term was hardest to teach?",
+        "instruction_es_cursiva": "Cada Grupo de Casa responde: ¿Está completo nuestro diagrama? ¿Qué término fue más difícil de enseñar?"
+      }
+    },
+    "archetype_E_MULTIMODAL": {
+      "archetype_id": "E",
+      "name_en": "MULTIMODAL — AR Vessel Identification + Audio Description",
+      "name_es": "MULTIMODAL — Identificación de Buque con AR + Audiodescripción",
+      "actua_como": "Multimodal Literacy Designer & ESP Visual Communication Specialist",
+      "selected_techniques": ["AR / Digital Vessel Identification", "Audio Description"],
+      "rationale_a12": "Sector marítimo-portuario es altamente visual (planos de buque, fotos de muelle, video VHF). AR permite manipular un modelo 3D del buque mientras se leen partes. Audio Description fuerza precisión léxica para describir un video silente del Puerto de Buenaventura. Ambas desarrollan alfabetización multimodal crítica para el oficio.",
+      "time_minutes": 40,
+      "technology_required": "Smartphones con app de AR de buque (alternativa: poster A2 impreso del CML CARRIER + stickers de partes) + 1 video sin audio del Puerto de Buenaventura (1 min) o foto secuencial",
+      "accessibility_note": "Si no hay smartphones, sustitución autorizada: poster impreso A2 del CML CARRIER + 20 stickers etiquetables. La actividad funciona idéntica a nivel pedagógico.",
+      "pre_reading": {
+        "title_en": "CONTEXT — From paper to 3D",
+        "title_es": "CONTEXTO — Del papel al 3D",
+        "time_minutes": 5,
+        "instruction_en": "You will read about ship parts AND interact with a 3D vessel (or printed poster). Open the AR app or look at the CML CARRIER poster.",
+        "instruction_es_cursiva": "Vas a leer sobre partes del buque Y a interactuar con un buque 3D (o póster impreso). Abre la app de AR o mira el póster del CML CARRIER."
+      },
+      "during_reading_ar_identification": {
+        "title_en": "AR IDENTIFICATION — Touch & Label",
+        "title_es": "IDENTIFICACIÓN AR — Toca y Etiqueta",
+        "time_minutes": 20,
+        "instruction_en": "Read the manual paragraph again. Touch each part on the 3D model (or poster). Place the sticker with the English word.",
+        "instruction_es_cursiva": "Lee el párrafo del manual de nuevo. Toca cada parte en el modelo 3D (o póster). Coloca el sticker con la palabra en inglés.",
+        "parts_to_label": ["bow", "stern", "deck", "bridge", "port side", "starboard", "container"],
+        "verification": "El instructor camina y verifica que el sticker está en la parte correcta. Recast oral si hay error.",
+        "bloom_level": "L2-L3 (Understand, Apply)"
+      },
+      "during_reading_audio_description": {
+        "title_en": "AUDIO DESCRIPTION — Describe the silent port",
+        "title_es": "AUDIODESCRIPCIÓN — Describe el puerto en silencio",
+        "time_minutes": 10,
+        "instruction_en": "Watch a 1-minute silent video of the Port of Buenaventura. Write 5 sentences for a blind listener. Use 'There is...' and 'There are...'.",
+        "instruction_es_cursiva": "Mira un video de 1 minuto del Puerto de Buenaventura sin audio. Escribe 5 oraciones para un oyente ciego. Usa 'There is...' y 'There are...'.",
+        "writing_frame": [
+          "There is ____________.",
+          "There are ____________.",
+          "The vessel has ____________.",
+          "The dock is ____________.",
+          "Captain ____________ is on the bridge."
+        ]
+      },
+      "post_reading": {
+        "title_en": "MULTIMODAL SYNTHESIS",
+        "title_es": "SÍNTESIS MULTIMODAL",
+        "time_minutes": 5,
+        "instruction_en": "Compare reading the text vs touching the 3D vessel vs writing the audio description. Which one helped you most?",
+        "instruction_es_cursiva": "Compara leer el texto vs tocar el buque 3D vs escribir la audiodescripción. ¿Cuál te ayudó más?",
+        "synthesis_question_en": "What did you learn from the 3D model that the text alone did not give you?",
+        "synthesis_question_es": "¿Qué aprendiste del modelo 3D que el texto solo no te dio?"
+      }
+    },
+    "archetype_F_HOTS_FOCUS": {
+      "archetype_id": "F",
+      "name_en": "HOTS FOCUS — Higher-Order Thinking",
+      "name_es": "FOCO HOTS — Pensamiento de Orden Superior",
+      "actua_como": "Critical Thinking Designer & ESP Higher-Order Specialist",
+      "selected_techniques": ["Divergent Questions", "Alternative Endings"],
+      "rationale_a12": "F es STRETCH para A1.2 — se incluye con andamiaje extremo (sentence frames + bilingual scaffolds + Bloom L4 opcional sólo si grupo muestra A2.1 emergente). Permite trascender comprensión literal hacia evaluación y creación. Las divergent questions usan condicional simplificado controlado por frames.",
+      "time_minutes": 30,
+      "pre_reading": {
+        "title_en": "OPENING — A question with no single answer",
+        "title_es": "APERTURA — Una pregunta sin única respuesta",
+        "time_minutes": 5,
+        "instruction_en": "Before reading: 'Andrea is new at the port. Is the first day easy or hard? Why?' Write your position.",
+        "instruction_es_cursiva": "Antes de leer: 'Andrea es nueva en el puerto. ¿Es el primer día fácil o difícil? ¿Por qué?' Escribe tu posición.",
+        "position_frame": [
+          "I think the first day is ____________ because ____________."
+        ]
+      },
+      "during_reading_critical_marking": {
+        "title_en": "CRITICAL MARKING — ✓ ✗ ?",
+        "title_es": "MARCACIÓN CRÍTICA — ✓ ✗ ?",
+        "time_minutes": 10,
+        "instruction_en": "Read the text again. Mark every sentence: ✓ I agree / ✗ I disagree / ? I don't understand. Be ready to defend your marks.",
+        "instruction_es_cursiva": "Lee el texto otra vez. Marca cada oración: ✓ De acuerdo / ✗ En desacuerdo / ? No entiendo. Prepárate para defender tus marcas.",
+        "scaffolds_for_a12": [
+          "I agree with: '___'",
+          "I disagree with: '___' because ___",
+          "I don't understand: '___'"
+        ]
+      },
+      "post_reading_divergent_questions": {
+        "title_en": "DIVERGENT QUESTIONS — No single right answer",
+        "title_es": "PREGUNTAS DIVERGENTES — Sin respuesta única",
+        "time_minutes": 8,
+        "questions": [
+          {
+            "q_en": "What if Captain Restrepo was NOT patient? How would Andrea's first morning change?",
+            "q_es": "¿Y si Capitán Restrepo NO fuera paciente? ¿Cómo cambiaría la primera mañana de Andrea?",
+            "frame_en": "If Captain Restrepo was not patient, Andrea would ____________."
+          },
+          {
+            "q_en": "What if there were NO containers on deck? What is the vessel for?",
+            "q_es": "¿Y si NO hubiera contenedores en cubierta? ¿Para qué es el buque?",
+            "frame_en": "If there were no containers, the vessel would be for ____________."
+          }
+        ],
+        "bloom_level": "L4 (Analyze) — STRETCH para A1.2 con andamiaje extremo (frames bilingües)"
+      },
+      "post_reading_alternative_ending": {
+        "title_en": "ALTERNATIVE ENDING — Rewrite Andrea's morning",
+        "title_es": "FINAL ALTERNATIVO — Reescribe la mañana de Andrea",
+        "time_minutes": 7,
+        "instruction_en": "Write a new ending for Andrea's first morning in 3-4 sentences. Use the Toolbelt. Keep be + there is/are.",
+        "instruction_es_cursiva": "Escribe un final nuevo para la primera mañana de Andrea en 3-4 oraciones. Usa el Toolbelt. Mantén be + there is/are.",
+        "starter_options": [
+          "Andrea sees ____________ on the dock.",
+          "Captain Lopera arrives at the bridge.",
+          "There is a problem with the ____________."
+        ],
+        "bloom_level": "L4-L5 (Analyze, Evaluate) — opcional · solo si grupo muestra A2.1 emergente"
+      }
+    },
+    "rotation_options_for_instructor": {
+      "title_en": "INSTRUCTOR ROTATION MENU — Session 2 Flow Options",
+      "title_es": "MENÚ DE ROTACIÓN DEL INSTRUCTOR — Opciones de Flujo Sesión 2",
+      "total_direct_time_available": "2.0h (120 min) de la sesión 2 dedicadas a PM-2.3 (PM-2.5 ocupa el resto · 4h del bloque de 6h)",
+      "recommended_flow_options": [
+        {
+          "flow_id": "FLOW-1 · Core Apropiación (90 min directas)",
+          "sequence": [
+            "30 min → Master Anchor Text Read + Toolbelt walkthrough",
+            "45 min → Archetype A (TBLT Listing + Comparing)",
+            "15 min → Archetype F closing (Divergent Questions con andamiaje)"
+          ],
+          "rationale": "Clásico para A1.2 con techo L3 Apply. Alta estructura, demanda HOTS opcional al cierre."
+        },
+        {
+          "flow_id": "FLOW-2 · Metacognitive (90 min directas)",
+          "sequence": [
+            "20 min → Master Anchor Text + Toolbelt speed tour",
+            "40 min → Archetype B (K-W-L + Story Frame Retelling)",
+            "30 min → Archetype D (Jigsaw — optimizado a 30 min con 2 categorías por experto)"
+          ],
+          "rationale": "Para grupos que necesitan estrategias transferibles. Útil si el grupo muestra ansiedad lectora típica del primer día A1.2."
+        },
+        {
+          "flow_id": "FLOW-3 · Communicative (90 min directas)",
+          "sequence": [
+            "20 min → Master Anchor Text + Toolbelt",
+            "35 min → Archetype C (Info Gap pair work — Complete the Text + Draw This)",
+            "35 min → Archetype E (Multimodal — AR identification + Audio Description corta)"
+          ],
+          "rationale": "Alta energía física y digital. Útil si hay smartphones disponibles + póster CML CARRIER. Genera comunicación oral genuina desde S2."
+        },
+        {
+          "flow_id": "FLOW-4 · Maximalist Stations (110 min directas)",
+          "sequence": [
+            "20 min → Master Anchor Text whole-class",
+            "4 stations × 22 min rotating (A, B, C, F) — saltar E si no hay tech"
+          ],
+          "rationale": "Máxima cobertura del menú. Requiere instructor de inglés técnico + Capitán mentor (2 facilitadores) o peer-led stations."
+        }
+      ],
+      "autonomous_work_0_5h": "Todos los aprendices completan Archetype E (AR + Audio Description del video del Puerto de Buenaventura) como trabajo autónomo post-sesión. Reportan en Moodle con foto del póster etiquetado + audiodescripción escrita."
+    },
+    "evaluation_formal": {
+      "is_formal_evidence": true,
+      "evidence_code": "E1_Reading",
+      "evidence_name_es": "Comprensión Lectora (Conocimiento)",
+      "evidence_name_en": "Reading Comprehension",
+      "points_allocated": 5,
+      "points_in_consolidated_quiz_s6": 5,
+      "assessment_instrument": {
+        "name_es": "Cuestionario No 1 — Reading Comprehension (IMARPOR-CC G1)",
+        "name_en": "Quiz No 1 — Reading Comprehension",
+        "structure_preview": "5 ítems (1 pt cada uno) derivados del Master Anchor Text 'Andrea's First Morning' y del Toolbelt. Mezcla de literal (2 ítems) + inferencial (2 ítems) + vocabulario (1 ítem).",
+        "sample_items": [
+          {
+            "item": 1,
+            "type": "Literal",
+            "question": "Who is Andrea's mentor?",
+            "options": ["A) Captain Lopera", "B) Captain Restrepo", "C) The dock worker", "D) The crew"],
+            "correct": "B"
+          },
+          {
+            "item": 2,
+            "type": "Literal",
+            "question": "Where is the bow of a vessel?",
+            "options": ["A) At the back", "B) On the left side", "C) At the front", "D) On top"],
+            "correct": "C"
+          },
+          {
+            "item": 3,
+            "type": "Inferencial",
+            "question": "Why does Andrea read slowly?",
+            "options": ["A) Because she is tired", "B) Because she is new and learning", "C) Because the manual is long", "D) Because Captain Restrepo speaks slow"],
+            "correct": "B"
+          },
+          {
+            "item": 4,
+            "type": "Inferencial",
+            "question": "What kind of vessel is the BUENAVENTURA EXPRESS?",
+            "options": ["A) A fishing boat", "B) A passenger ferry", "C) A container vessel", "D) A small canoe"],
+            "correct": "C"
+          },
+          {
+            "item": 5,
+            "type": "Vocabulario",
+            "question": "Which side of the vessel is on the LEFT?",
+            "options": ["A) Starboard", "B) Bow", "C) Stern", "D) Port side"],
+            "correct": "D"
+          }
+        ],
+        "delivery_format": "Bilingüe (enunciados en inglés + glosa breve en español si es necesario). Impreso o Moodle. Tiempo: 15 minutos."
+      }
+    }
+  },
+  "activity_card": {
+    "pm_id": "PM-2.3",
+    "pm_name": "Reading — The Master Anchor",
+    "session": 2,
+    "phase_sena": "Apropiación",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Analizar la estructura y contenido del Master Anchor Text 'Andrea's First Morning' (188 palabras, A1.2) con 18/20 términos del Toolbelt portuario y las estructuras be + there is/there are en contexto de operaciones del Puerto de Buenaventura",
+        "didactic_strategy": "Content-Based Learning",
+        "didactic_technique": "Investigación guiada (TBLT Listing + Comparing — Archetype A)"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Completar matriz de comprensión sobre conceptos clave (partes del buque, infraestructura portuaria, direcciones/costados, personas/roles) usando estrategias metacognitivas (K-W-L + Story Frame · Archetype B) y/o aprendizaje cooperativo (Jigsaw sobre 4 zonas portuarias · Archetype D)",
+        "didactic_strategy": "Aprendizaje colaborativo + Metacognición",
+        "didactic_technique": "Jigsaw + K-W-L + Story Frame (combinable según rotation_options FLOW-2)"
+      },
+      {
+        "number": 3,
+        "type": "cognitiva",
+        "statement": "Demostrar comprensión en Cuestionario No 1 (5 ítems, 1 pt c/u) con 2 literales + 2 inferenciales + 1 de vocabulario derivados del Master Anchor Text y Toolbelt",
+        "didactic_strategy": "Evaluación formal",
+        "didactic_technique": "Cuestionario escrito bilingüe"
+      }
+    ],
+    "hours": {
+      "direct": 2.0,
+      "autonomous": 0.5
+    },
+    "evidence": {
+      "generates_evidence": true,
+      "type": "Conocimiento",
+      "description": "El aprendiz demuestra comprensión de textos técnicos marítimo-portuarios en inglés (aviso de turno + manual de partes del buque) respondiendo preguntas de nivel literal e inferencial sobre el Master Anchor Text 'Andrea's First Morning' en Cuestionario No 1 (5 puntos)",
+      "evaluation_technique": "Preguntas",
+      "instrument_number": 1,
+      "instrument_type": "Cuestionario"
+    },
+    "environment": {
+      "type": "Aula + Pasillos del centro de formación (Archetype E con AR/poster) — opcional visita virtual al Puerto de Buenaventura",
+      "materials": [
+        "Proyector interactivo",
+        "Computadores con acceso a Moodle (1 por aprendiz)",
+        "Smartphones con app AR de buque o póster A2 impreso del CML CARRIER (1 por pareja)",
+        "Handout impreso 'MASTER ANCHOR TEXT + TOOLBELT' (8 páginas bilingües)",
+        "Plantilla K-W-L (1 por aprendiz)",
+        "Plantilla Story Frame (1 por aprendiz)",
+        "Tarjetas de rol Jigsaw (4 categorías × 6 copias)",
+        "Textos partidos A/B (Info Gap) — 1 set por pareja",
+        "Tarjeta de referencia Draw This (vessel diagram)",
+        "Stickers etiquetables de partes del buque (20 por póster)",
+        "Video silente de 1 min del Puerto de Buenaventura para Audio Description",
+        "Cuestionario No 1 impreso (5 ítems, 1 página) — Reading Comprehension"
+      ],
+      "instructors": "Instructor de inglés técnico (principal) + Capitán mentor de marina mercante (soporte para validar precisión técnica de SMCP y partes del buque)"
+    },
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Reading",
+    "quiz_points": 5,
+    "quiz_item_count": 5
+  },
+  "pm0_protocol_session_level": {
+    "note": "Se propaga a Playbook Build-Out S2 (pm-3-2-s2.json)",
+    "grammar_groups": {
+      "intro": [
+        "Grupo 1 — be (is/are en descripciones de personas, buques y operaciones)",
+        "Grupo 4 — there is / there are (presencia de objetos en muelle y cubierta)"
+      ],
+      "consolida": [],
+      "aplica": [],
+      "carga_principle_check": "2 Intro ≤ 2 (PASS — límite exacto · pm-0-context §9.2)"
+    },
+    "feedback": {
+      "dominant_mode": "Recast para oral + Corrección explícita para escrito",
+      "accuracy_techniques": [
+        "corrección de be (is/are) en oraciones del Story Frame y K-W-L",
+        "corrección de there is vs there are según singular/plural en Audio Description"
+      ],
+      "fluency_techniques": [
+        "acoger intentos orales imperfectos en pair share Archetype C (Info Gap)",
+        "celebrar uso de starters: 'My text says...', 'There is...', 'I think the first day is...'"
+      ]
+    },
+    "l1_management": {
+      "percentage": 22,
+      "english_zone": "Master Anchor Text + Toolbelt + Story Frame + Venn diagram + Jigsaw mini-classes + AR labels",
+      "legitimate_uses": [
+        "Columna K del K-W-L en S2 (reducción a 18% en S3)",
+        "Opening question de Archetype F (posición personal antes de leer · scaffolded frame)",
+        "Reflexión metacognitiva final"
+      ],
+      "reduction_strategy": "S2 establece que el Master Anchor Text NO se traduce oración-por-oración; la columna text_es_support_cursiva está disponible solo como recurso de emergencia individual."
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        "vessel (VES-el)",
+        "starboard (STAR-bord)",
+        "berth (berth · diptongo th sordo)",
+        "Buenaventura (Bweh-nah-ven-TU-rah · pronunciación L1 aceptada)"
+      ],
+      "physical_techniques": [
+        "par mínimo starboard/port-side con palmada en sílaba fuerte (STAR / port)",
+        "vessel con golpe doble suave en mesa (VES-el)",
+        "berth con énfasis en /th/ sordo · contraste con 'bird' (par mínimo en S3)"
+      ],
+      "board_marking": "Sílabas fuertes en MAYÚSCULA subrayadas con marcador azul marino"
+    },
+    "success_vocabulary": {
+      "target_terms": [
+        "20 Toolbelt terms organizados en 5 categorías: Ship Parts, Port Infrastructure, Directions & Sides, People & Roles, Operations"
+      ],
+      "success_factors_applied": [
+        "Salience (categorías con iconos ⚓🏗️🧭👷🛠️ y colores)",
+        "Use (18/20 en Master Anchor Text, 20/20 en Jigsaw + Cuestionario)",
+        "Connection (cada término ligado a ejemplo del texto + foto/AR)",
+        "Spaced repetition (reapareen S3-S12 por bloque interno · roadmap de la guía única)",
+        "Synergy (visual via AR/póster + texto + audio video silente + kinestésico via Jigsaw + stickers)",
+        "Context (universo IMARPOR-CC · Andrea + Restrepo + Lopera + Puerto de Buenaventura)",
+        "Emotion (Andrea resuelve su primera mañana con los términos · identificación)"
+      ]
+    }
+  },
+  "validacion": {
+    "reglas_pm23": {
+      "master_anchor_text_150_200_palabras": "PASS (188 palabras)",
+      "minimum_12_of_20_vocab_terms_in_text": "PASS (18/20 = 90%)",
+      "grammar_targets_presentes_en_texto": "PASS (Gr 1 'be' 12+ ocurrencias + Gr 4 'there is/are' 6 ocurrencias)",
+      "genero_textual_autentico": "PASS (shift notice + manual excerpt + narrative frame)",
+      "personaje_universo_imarpor": "PASS (Andrea Mosquera + Capitán Restrepo + Captain Lopera + BUENAVENTURA EXPRESS + Puerto de Buenaventura)",
+      "oraciones_max_15_palabras": "PASS (verificado — la oración más larga 'A vessel has a stern at the back' = 8 palabras)",
+      "toolbelt_20_terminos_5_categorias": "PASS (exacto: 5×4=20)",
+      "ejemplos_desde_texto_ancla": "PASS (18/20 con ejemplo directo; 2/20 — crew, berthing — pre-cargados para S3+ y Cuestionario)",
+      "6_arquetipos_integrados_con_PRE_DURING_POST": "PASS (A, B, C, D, E, F completos con sub-objetos)",
+      "rotation_options_para_instructor": "PASS (4 flows documentados)",
+      "bilingue_unificada_sin_bloques_repetitivos": "PASS",
+      "micro_capsulas_visuales": "PASS (Toolbelt Rule + Grammar Rule there is/are)",
+      "zero_meta_talk": "PASS",
+      "cefr_a12_estricto_con_andamiaje_alto": "PASS (frames, story frame, scaffolds bilingües, AR + póster alternativo)",
+      "techo_bloom_L3_apply_respetado": "PASS (Bloom L4-L5 sólo en Archetype F como STRETCH opcional con andamiaje extremo · default L1-L3)"
+    },
+    "anclaje_pm0": {
+      "l1_percentage_matches_s2_single_guide": "PASS (~22%)",
+      "grammar_intro_respects_carga_2_max": "PASS (exactamente 2 Intro: be + there is/are)",
+      "stress_words_par_minimo_estrategico": "PASS (starboard/port-side + vessel/berth)",
+      "feedback_mode_mixto_recast_y_explicito": "PASS (split oral/escrito)",
+      "success_vocabulary_7_factores_aplicados": "PASS"
+    },
+    "continuidad_sistemica": {
+      "antecedente_s1": "PASS (S1 Spark + Diagnóstico presentaron a Andrea + Restrepo + Lopera + el contrato laboral · S2 abre la primera mañana operativa)",
+      "consecuente_s3": "PASS (el Master Anchor Text alimenta S3 Writing del shift notice propio + S3 Grammar de Gr 7 prepositions of place y Gr 9 simple present de operaciones)",
+      "ancla_para_pm24_pm25_pm26": "PASS (chunks reutilizables: 'A vessel has a ___', 'There is/are ___ on deck', 'Captain ___ is the mentor')",
+      "ancla_para_mision_final_S12": "PASS (CML CARRIER mencionado como póster · prepara la coordinación operativa de la Misión Final)"
+    },
+    "trazabilidad_gfpi_f_134": {
+      "columna_6_actividades": "3 actividades descritas + 6 arquetipos como sub-actividades rotables",
+      "columna_7_horas": "Directas 2.0h + Autónomas 0.5h = 2.5h (de 10h directas + 2.5h autónomas de S2 · resto va a PM-2.5)",
+      "columna_8_evidencia": "E1 Conocimiento (Reading) — 5 pts",
+      "columna_9_instrumento": "Cuestionario No 1 — Reading Comprehension (referido a PM-4.1)",
+      "columna_10_ambiente": "Aula + pasillos (Archetype E) + doble facilitador (instructor inglés + capitán mentor) + 12 tipos de materiales listados"
+    },
+    "check9_anti_copia_fantasma": {
+      "status": "PASS_LOCAL · pendiente validación post-hoc en PM-2.11",
+      "evidence": "Master Anchor Text 'Andrea's First Morning' es ORIGINAL para IMARPOR-CC G1. Personajes (Andrea Mosquera, Capitán Restrepo, Captain Lopera), buque (BUENAVENTURA EXPRESS, CML CARRIER), localización (Puerto de Buenaventura, Berth 4) y vocabulario (vessel, bow, stern, port side, starboard, etc.) son del universo IMARPOR-CC. NO se copió contenido del ref operacional MGV-2026-04-20 (universo gráfico de Andrés/Sophia/Pixel & Ink Studio, vocabulario typography/serif/sans-serif). Sólo se replicó la ESTRUCTURA pedagógica canónica."
+    }
+  },
+  "siguiente_paso": "Ejecutar PM-2.5 — Literacy & Vocabulary Skills (Sesión 2 IMARPOR-CC, complementa PM-2.3 con pre-activación léxica del Toolbelt portuario, integra los 5 arquetipos A-E del PM-2.5 alineados al universo Andrea/Restrepo/Lopera). Luego Gate Humano 2 (Instructor Selection): Sergio revisa los 6 arquetipos, elige flow_id para la cohorte real, valida Master Anchor Text generado y marca enriched: true."
+}

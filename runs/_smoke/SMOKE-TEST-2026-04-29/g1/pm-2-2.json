@@ -1,0 +1,419 @@
+{
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "pm_code": "PM-2.2",
+  "pm_name": "Gap Analysis — Reflexión Inicial / Contextualización (Sesión 1 · Segunda Mitad)",
+  "pm_version": "3.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "cefr_level": "A1.2 (entrada single-guía · progresión interna A1.2 → A2.1)",
+  "session": 1,
+  "fase_sena": "Contextualización (cierre de S1 — segunda mitad)",
+  "generated_at": "2026-04-28",
+  "instructor": "Sergio Cortés Perdomo",
+  "enriched": false,
+  "_rationale_enriched_false": "Gap Analysis generado · espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. Sergio debe revisar coherencia con Spark (PM-2.1) y ajustar Learning Contract si requiere personalización por aprendiz.",
+  "previous_pms": ["PM-2.1"],
+  "previous_pms_detail": [
+    {
+      "pm_code": "PM-0",
+      "role": "Anclas pedagógicas (CEFR A1.2, L1% S1, principios pedagógicos sector marítimo-portuario)"
+    },
+    {
+      "pm_code": "PM-1.1",
+      "role": "Regla de bloques absorcion_Na1 · single-guía · 4 RAPs absorbidos"
+    },
+    {
+      "pm_code": "PM-1.2",
+      "role": "Universo narrativo IMARPOR-CC + Toolbelt 20 términos categorizados (Ship Parts · Port Infrastructure · Directions & Sides · People & Roles · Operations)"
+    },
+    {
+      "pm_code": "PM-2.0",
+      "role": "Session Blueprint S1: 6h directas + 2.33h autónomas · S1 dividida en PM-2.1 (3.75h+0.75h) + PM-2.2 (2.25h+1.58h)"
+    },
+    {
+      "pm_code": "PM-2.1",
+      "role": "Spark narrativo · Andrea Mosquera + Captain Lopera + Capitán Restrepo + Berth 4 · papelógrafo con marcado verde/rojo de gaps colectivos · Learner's Worksheet individual con 4 palabras escritas"
+    }
+  ],
+  "archetypes_policy": "1 ARQUETIPO CANÓNICO THE_MIRROR — estilo declarado mgv_compendio_metodologico",
+  "estilo_aplicado": "mgv_compendio_metodologico",
+  "archetype_mode": "DEFAULT — Único Diagnóstico (THE_MIRROR con estructura WHAT-I-KNOW / BLIND-SPOTS / LEARNING-CONTRACT)",
+  "pm0_anchor": {
+    "source_file": "pm-0-context.json",
+    "cefr_descriptor_ref": "§6.A1.2 — descriptor por bloque interno · Bloque Interno 1 RAP-01",
+    "l1_policy_ref": "§9.1.single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S1 — L1% ≈ 25% en S1 (continuidad con PM-2.1)",
+    "methodological_shift_ref": "§5.A1.2 — input lento, máximo andamiaje bilingüe, accuracy-prioritario, escalas autoevaluativas honestas sin presión evaluativa",
+    "feedback_ref": "§5.6 — modo dominante S1: Recast suave + Reformulación positiva (Gap es diagnóstico, no evaluación · CERO corrección invasiva)",
+    "stress_pronunciation_ref": "§5.8 — S1: reciclaje del stress de las 4 survival words de PM-2.1 (PORT · BERTH · CAP-tain · VES-sel) + pre-vista de 5 categorías Toolbelt",
+    "success_vocabulary_ref": "§5.10 — PM-2.2 introduce pre-vista RECEPTIVA de las 5 categorías de los 20 términos Toolbelt (Ship Parts · Port Infrastructure · Directions & Sides · People & Roles · Operations) sin enseñarlos · expone para que PM-2.5 active",
+    "grammar_roadmap_ref": "§8.Bloque_Interno_1_RAP01 — S1 NO activa gramática activa; sí expone receptivamente las fórmulas 'I know / I don't know yet / I need to learn' (pre-activación Grupo 1 'be/auxiliaries' + Grupo 4 'modals of need')",
+    "principle_pedagogical_refs": [
+      "§5.1 Input comprensible — escalas y rúbricas accesibles",
+      "§5.6 Feedback no invasivo — Gap es espejo, no juicio",
+      "§5.10 Vocabulario de supervivencia primero — categorías Toolbelt como pre-vista receptiva",
+      "§5.13 Bilingüismo unificado — instrucción una vez en EN + español cursivo"
+    ]
+  },
+  "universe_anchor": {
+    "program": "Inglés Marítimo y Portuario (Curso Complementario) · 12340002 · 100h · Sector Marina Mercante Colombia",
+    "workplace": "Puerto de Buenaventura · Pacífico colombiano · Berth 4 (muelle de carga general) · BUENAVENTURA EXPRESS atracado",
+    "characters_reused_from_pm21": {
+      "protagonist_learner_avatar": "Andrea Mosquera — sigue siendo el espejo del aprendiz · ahora reflexiona sobre lo que vivió en la primera mañana",
+      "mentor": "Capitán Restrepo — referente C1 de nivel objetivo · figura que el aprendiz aspira a alcanzar para Sesión 12",
+      "external_client": "Captain Lopera — fuente de inglés auténtico lingua-franca B2 · es el cliente con quien la cohorte deberá comunicarse para fin del curso"
+    },
+    "continuity_with_pm21": "Andrea acaba de vivir su primera mañana en Berth 4. Escuchó a Captain Lopera por radio. Anotó cuatro palabras en su Learner's Worksheet. Ahora — misma mañana, misma radio — se mira al espejo: '¿Qué SÉ realmente del inglés que necesito para responderle al capitán todos los días? ¿Qué NO sé todavía? ¿Qué me comprometo a aprender en las próximas 11 sesiones?' La cohorte hace lo mismo. El papelógrafo con puntos rojos de PM-2.1 ahora se traduce a un perfil individual cuantitativo.",
+    "narrative_bridge": "PM-2.1 cerró con el mapa del curso proyectado y la frase 'see you in PM-2.2 — same morning, same radio, deeper questions'. PM-2.2 cumple esa promesa: convierte los gaps colectivos del papelógrafo en un perfil de entrada por aprendiz que firma un Learning Contract con el instructor."
+  },
+  "identity": {
+    "codigo": "PM-2.2",
+    "nombre": "The Gap Analysis (The Mirror)",
+    "subfase_guia_sena": "3.2 Actividades de contextualización",
+    "ubicacion_guia": "Sección 3.2 Contextualización · segunda mitad de S1",
+    "tipo_evidencia_sena": "N/A (actividad diagnóstica · S1 no genera evidencia per canon)",
+    "instrumento": "Learner's Worksheet — THE GAP ANALYSIS + Learning Contract firmado",
+    "estructura": "THE MIRROR (Único Diagnóstico · WHAT-I-KNOW / BLIND-SPOTS / LEARNING-CONTRACT)",
+    "bloom_level": "L1 Recordar + L2 Comprender (mismo nivel que Spark · diagnóstico, NO análisis profundo)"
+  },
+  "content": {
+    "worksheet_title": "THE GAP ANALYSIS — Contextualización · Same Morning, Deeper Questions",
+    "guia_header": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Sesión 1 (cierre) · Nivel A1.2",
+    "bilingual_instruction_block": {
+      "main_message_en": "Now look in the mirror. You just lived Andrea's first morning. She had the radio. You wrote four words. Now be honest: what do you already know? What don't you know yet? What do you commit to learn in the next eleven sessions? No grade, no judgment — just your honest mirror. (*Ahora mírate al espejo. Acabas de vivir la primera mañana de Andrea. Ella tenía la radio. Tú escribiste cuatro palabras. Ahora sé honesto: ¿qué ya sabes? ¿qué todavía no sabes? ¿qué te comprometes a aprender en las próximas once sesiones? Sin nota, sin juicio — solo tu espejo honesto.*)",
+      "l1_percentage_target": "≈ 25% L1 (continuidad con PM-2.1 · Bloque_Interno_1_RAP01_A1.2.S1)",
+      "scaffolding_mode": "Bilingüe Unificada — instrucción una sola vez en inglés simple + traducción al español en cursiva. PROHIBIDO bloques duplicados de instrucciones."
+    },
+    "the_mirror_self_assessment": {
+      "icon": "🔍",
+      "title_en": "THE MIRROR — Self-Assessment (Maritime Port English)",
+      "title_es": "EL ESPEJO — Autoevaluación (Inglés Marítimo-Portuario)",
+      "scale": {
+        "1": {
+          "en": "I don't know anything",
+          "es_cursiva": "No sé nada",
+          "emoji": "🔴"
+        },
+        "2": {
+          "en": "I've heard some words",
+          "es_cursiva": "He escuchado algunas palabras",
+          "emoji": "🟠"
+        },
+        "3": {
+          "en": "I know a little",
+          "es_cursiva": "Sé un poco",
+          "emoji": "🟡"
+        },
+        "4": {
+          "en": "I can use it with help",
+          "es_cursiva": "Puedo usarlo con ayuda",
+          "emoji": "🟢"
+        },
+        "5": {
+          "en": "I'm confident",
+          "es_cursiva": "Estoy seguro",
+          "emoji": "✅"
+        }
+      },
+      "competency_areas": [
+        {
+          "area_id": "A1",
+          "area_en": "Ship Parts vocabulary (bow, stern, port side, starboard, hull, deck)",
+          "area_es": "Vocabulario de partes del barco (proa, popa, babor, estribor, casco, cubierta)",
+          "toolbelt_category": "Ship Parts",
+          "rap_alignment": "RAP-01 vocablos básicos"
+        },
+        {
+          "area_id": "A2",
+          "area_en": "Port Infrastructure vocabulary (berth, dock, pier, quay, gantry crane, warehouse)",
+          "area_es": "Vocabulario de infraestructura portuaria (atraque, muelle, embarcadero, malecón, grúa pórtico, bodega)",
+          "toolbelt_category": "Port Infrastructure",
+          "rap_alignment": "RAP-01 vocablos básicos"
+        },
+        {
+          "area_id": "A3",
+          "area_en": "Directions & Sides vocabulary (port, starboard, fore, aft, ahead, astern)",
+          "area_es": "Vocabulario de direcciones y costados (babor, estribor, hacia proa, hacia popa, adelante, atrás)",
+          "toolbelt_category": "Directions & Sides",
+          "rap_alignment": "RAP-01 + RAP-02 SMCP"
+        },
+        {
+          "area_id": "A4",
+          "area_en": "People & Roles vocabulary (captain, pilot, stevedore, port captain, agent, crew)",
+          "area_es": "Vocabulario de personas y roles (capitán, piloto, estibador, capitán de puerto, agente, tripulación)",
+          "toolbelt_category": "People & Roles",
+          "rap_alignment": "RAP-01 + RAP-04 funciones"
+        },
+        {
+          "area_id": "A5",
+          "area_en": "Operations vocabulary (mooring, casting off, loading, unloading, bunkering, docking)",
+          "area_es": "Vocabulario de operaciones (amarre, largado, cargue, descargue, abastecimiento de combustible, atraque)",
+          "toolbelt_category": "Operations",
+          "rap_alignment": "RAP-03 gramática puerto-buque + RAP-04 funciones"
+        },
+        {
+          "area_id": "A6",
+          "area_en": "Standard Marine Communication Phrases (SMCP) by VHF radio",
+          "area_es": "Frases Estandarizadas de Comunicación Marítima (SMCP) por radio VHF",
+          "toolbelt_category": "SMCP (transversal)",
+          "rap_alignment": "RAP-02 SMCP completo"
+        }
+      ],
+      "rationale_six_areas": "Las 6 áreas mapean directamente a las 5 categorías canónicas del Toolbelt 20 términos de PM-1.2 (Ship Parts · Port Infrastructure · Directions & Sides · People & Roles · Operations) MÁS una sexta área transversal (SMCP) que es el contenido central de RAP-02. Esto permite que PM-2.5 Vocabulary (S2+) pre-active exactamente los gaps que el aprendiz se autodiagnosticó hoy."
+    },
+    "WHAT_I_KNOW": {
+      "activity_number": 1,
+      "activity_label": "📋 ACTIVITY 1 — WHAT I KNOW: Mi nivel actual (saberes previos)",
+      "modality": "Individual · reflexivo · silencioso",
+      "duration_minutes": 35,
+      "bloom_level": "L1 Recordar — el aprendiz recupera saberes que YA trae de cursos previos A1.1 y los cuantifica honestamente",
+      "instruction_en": "Look at the table of six areas. For each area, mark from 1 to 5 your honest current level. Remember the scale: 1 = I don't know anything, 5 = I'm confident. There is no right or wrong — only your honest mirror. (*Mira la tabla de seis áreas. Para cada área, marca de 1 a 5 tu nivel honesto actual. Recuerda la escala: 1 = No sé nada, 5 = Estoy seguro. No hay correcto o incorrecto — solo tu espejo honesto.*)",
+      "learner_task": "Cada aprendiz completa la tabla de 6 áreas con un puntaje 1-5 en su Learner's Worksheet. El instructor recuerda que esto NO es evaluación · es diagnóstico privado. Andrea (en la narrativa) también está haciendo este ejercicio en su mente mientras camina del muelle al cuarto de operaciones.",
+      "prior_knowledge_anchor_en": "You already bring something from A1.1. You know how to greet (Hello, Good morning), how to say your name (My name is...), how to count (one, two, three...), and basic colors and numbers. THAT is your starting capital. (*Ya traes algo de A1.1. Sabes saludar, decir tu nombre, contar, colores y números básicos. ESE es tu capital de arranque.*)",
+      "support_phrases_en_es": [
+        "I know... = Yo sé...",
+        "I don't know yet = Todavía no sé",
+        "I've heard it = Lo he escuchado",
+        "I can recognize it = Puedo reconocerlo",
+        "I'm not sure = No estoy seguro"
+      ],
+      "micro_capsule": {
+        "type": "⚠️ Honesty Rule",
+        "content_en": "A high score that is not real does not help you. A low score that is honest is your map. (*Un puntaje alto que no es real no te ayuda. Un puntaje bajo que es honesto es tu mapa.*)"
+      },
+      "didactic_strategy": "Aprendizaje reflexivo individual",
+      "didactic_technique": "Autoevaluación cuantitativa por escala Likert pedagógica"
+    },
+    "BLIND_SPOTS": {
+      "activity_number": 2,
+      "activity_label": "📋 ACTIVITY 2 — THE BLIND SPOTS: Mis tres áreas más débiles",
+      "modality": "Individual primero (10 min) · luego pares de 2 (15 min)",
+      "duration_minutes": 25,
+      "bloom_level": "L2 Comprender — el aprendiz identifica patrones en su autoevaluación y verbaliza la causa del gap",
+      "instruction_en": "Look at your six scores. Circle the three areas with the LOWEST scores. Those are your blind spots — the things you can't see yet because you don't have the words. For each one, complete the sentence: 'I need to learn ___ because ___.' Then share with one partner. (*Mira tus seis puntajes. Encierra en un círculo las tres áreas con los puntajes MÁS BAJOS. Esos son tus puntos ciegos — las cosas que no puedes ver todavía porque no tienes las palabras. Para cada uno, completa la frase: «I need to learn ___ because ___.» Luego comparte con un compañero.*)",
+      "learner_task": "El aprendiz selecciona sus 3 áreas más débiles y completa 3 oraciones con la fórmula 'I need to learn ___ because ___'. La fórmula expone receptivamente Grupo 1 (auxiliary 'need') + Grupo 4 (modal of necessity), sin enseñarlos formalmente. El compartir en pares construye comunidad entre aprendices que se descubren con gaps similares.",
+      "blind_spots_categories_preview_for_pm25": {
+        "rationale": "Los blind spots que el aprendiz marca aquí alimentan directamente a PM-2.5 Vocabulary en S2+. Por eso las 6 áreas mapean al Toolbelt: lo que se autoidentifica como gap en S1 se pre-activará en S2.",
+        "Ship_Parts_typical_gap": "Bow vs stern · port side vs starboard · hull vs deck — confusión de pares geométricos del buque",
+        "Port_Infrastructure_typical_gap": "Berth vs dock vs pier vs quay — sinónimos parciales que el español 'muelle' no distingue",
+        "Directions_and_Sides_typical_gap": "Direcciones marítimas (fore/aft/ahead/astern) ausentes del A1.1 estándar",
+        "People_and_Roles_typical_gap": "Pilot vs port captain vs vessel master — roles que existen en el sector pero no en cursos generalistas",
+        "Operations_typical_gap": "Mooring · casting off · bunkering — verbos operativos especializados",
+        "SMCP_transversal_gap": "Pronunciación L2 + sintaxis estandarizada OMI · gramática Gr1 (be) + Gr4 (modals/imperatives) en formato radial",
+        "pronunciation_L2_gap": "Stress patterns en multisílabos (CAP-tain · VES-sel · STAR-board · BUN-kering) + reducciones en lingua franca"
+      },
+      "support_phrases_en_es": [
+        "I need to learn... = Necesito aprender...",
+        "...because... = ...porque...",
+        "...for my job = ...para mi trabajo",
+        "...to talk to Captain Lopera = ...para hablar con el Capitán Lopera",
+        "I have the same blind spot = Tengo el mismo punto ciego"
+      ],
+      "micro_capsule": {
+        "type": "🧭 Map Cue",
+        "content_en": "Your three blind spots today are not weaknesses — they are the next three streets on your map. (*Tus tres puntos ciegos hoy no son debilidades — son las próximas tres calles en tu mapa.*)"
+      },
+      "didactic_strategy": "Aprendizaje colaborativo en pares",
+      "didactic_technique": "Identificación reflexiva de gaps + verbalización en frame estandarizado"
+    },
+    "LEARNING_CONTRACT": {
+      "activity_number": 3,
+      "activity_label": "📋 ACTIVITY 3 — THE LEARNING CONTRACT: Mi compromiso para las 11 sesiones que vienen",
+      "modality": "Individual (firma) + plenaria de cierre (lectura voluntaria)",
+      "duration_minutes": 40,
+      "bloom_level": "L2 Comprender — el aprendiz transforma sus blind spots en compromisos accionables · reconoce que aprender es una alianza con el instructor",
+      "instruction_en": "This is a contract between YOU and your instructor. It is not legally binding — but it is mirror-binding: at the end of the course, in Session 12, you will look at this contract again and see how far you walked. Write three things you commit to learn. Sign with your name. The instructor signs too. (*Este es un contrato entre TÚ y tu instructor. No es legalmente vinculante — pero es vinculante de espejo: al final del curso, en la Sesión 12, mirarás este contrato de nuevo y verás qué tan lejos caminaste. Escribe tres cosas que te comprometes a aprender. Firma con tu nombre. El instructor también firma.*)",
+      "learner_task": "Cada aprendiz redacta 3 metas concretas (basadas en sus 3 blind spots) y firma el documento. El instructor pasa por cada puesto y firma reconociendo el compromiso. La firma del instructor es el contrato pedagógico — el instructor se compromete a enseñar específicamente esos gaps en las 11 sesiones siguientes.",
+      "learner_commitments_template": [
+        "By Session 12, I commit to learn: ______________________________ (Blind spot 1 from Activity 2)",
+        "By Session 12, I commit to learn: ______________________________ (Blind spot 2 from Activity 2)",
+        "By Session 12, I commit to learn: ______________________________ (Blind spot 3 from Activity 2)",
+        "I will study at least 30 minutes per day on my autonomous hours",
+        "I will speak in English in class even if I make mistakes — wrong answers are welcome"
+      ],
+      "instructor_commitments_template": [
+        "I commit to teach the vocabulary categories you marked as blind spots in Activity 2",
+        "I commit to give you Recast soft + positive reformulation feedback in S1-S4 (no invasive correction)",
+        "I commit to bring you Captain Lopera's audio every session so you train your ear with real lingua-franca English",
+        "I commit to revisit this contract in Session 12 with you and celebrate the gap you closed"
+      ],
+      "signature_block": {
+        "learner_name_field": "Learner's Name: ________________________________",
+        "learner_signature_field": "Learner's Signature: ____________________________",
+        "instructor_signature_field": "Instructor's Signature: __________________________",
+        "date_field": "Date (Session 1): ________________________________",
+        "review_date_field": "Review Date (Session 12): ________________________"
+      },
+      "support_phrases_en_es": [
+        "I commit to... = Me comprometo a...",
+        "I will learn... = Voy a aprender...",
+        "By Session 12 = Para la Sesión 12",
+        "Thank you, instructor = Gracias, instructor",
+        "I am ready = Estoy listo"
+      ],
+      "micro_capsule": {
+        "type": "📝 Contract Cue",
+        "content_en": "Andrea (in the story) signed her own contract this morning, in her notebook, before she answered Captain Lopera. Today, you sign yours. (*Andrea (en la historia) firmó su propio contrato esta mañana, en su cuaderno, antes de responderle al Capitán Lopera. Hoy, tú firmas el tuyo.*)"
+      },
+      "didactic_strategy": "Aprendizaje significativo · contrato pedagógico personalizado",
+      "didactic_technique": "Contrato de aprendizaje firmado bilateralmente (aprendiz-instructor)"
+    },
+    "closing_motivational_block": {
+      "closing_message_en": "You came in this morning as someone who could greet and count. You leave today as someone with a signed map. The map has three streets you can't walk yet — but in eleven sessions, you will walk them with Andrea. See you in Session 2 — vocabulary block opens, and the first word on the table is one of YOUR blind spots. (*Entraste esta mañana como alguien que sabía saludar y contar. Sales hoy con un mapa firmado. El mapa tiene tres calles que todavía no puedes caminar — pero en once sesiones, las caminarás con Andrea. Nos vemos en la Sesión 2 — se abre el bloque de vocabulario, y la primera palabra en la mesa es uno de TUS puntos ciegos.*)",
+      "tone": "cálido · vinculante sin presión · puente claro a S2"
+    }
+  },
+  "activity_card": {
+    "pm_id": "PM-2.2",
+    "pm_name": "Gap Analysis",
+    "session": 1,
+    "phase_sena": "Contextualización",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Autoevaluar honestamente el nivel actual del aprendiz en seis áreas competenciales del inglés marítimo-portuario (Ship Parts · Port Infrastructure · Directions & Sides · People & Roles · Operations · SMCP) registrando puntajes 1-5 en el Learner's Worksheet sin presión evaluativa",
+        "didactic_strategy": "Aprendizaje reflexivo individual",
+        "didactic_technique": "Autoevaluación cuantitativa por escala Likert pedagógica",
+        "bloom_level": "L1 Recordar"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Identificar las tres áreas con puntaje más bajo en la autoevaluación, verbalizando cada gap con la fórmula 'I need to learn ___ because ___' individualmente y compartiendo en pares para construir comunidad de aprendizaje",
+        "didactic_strategy": "Aprendizaje colaborativo en pares",
+        "didactic_technique": "Identificación reflexiva de gaps + verbalización en frame estandarizado",
+        "bloom_level": "L2 Comprender"
+      },
+      {
+        "number": 3,
+        "type": "cognitiva",
+        "statement": "Comprometer formalmente tres metas de aprendizaje firmando un Learning Contract bilateral aprendiz-instructor que se revisará en Sesión 12, conectando los blind spots diagnosticados hoy con la trayectoria pedagógica de las 11 sesiones siguientes",
+        "didactic_strategy": "Aprendizaje significativo · contrato pedagógico personalizado",
+        "didactic_technique": "Contrato de aprendizaje firmado bilateralmente",
+        "bloom_level": "L2 Comprender"
+      }
+    ],
+    "hours": {
+      "direct": 2.25,
+      "autonomous": 1.58,
+      "rationale_hours": "S1 total = 6h directas + 2.33h autónomas (per PM-2.0 blueprint). PM-2.1 Spark consumió la primera mitad (3.75h directas + 0.75h autónomas). PM-2.2 Gap Analysis consume el resto: 2.25h directas (35+25+40 min de actividades + 15 min transición desde Spark + 20 min cierre + buffer/firmas) + 1.58h autónomas (relectura del Learning Contract en casa + reflexión escrita opcional sobre los blind spots). Suma S1 = 6h + 2.33h."
+    },
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "S1 no genera evidencia per canon FPI SENA. El Gap Analysis es actividad diagnóstica · sin instrumento de evaluación formal. El Learning Contract firmado es artefacto pedagógico (no evaluativo) que se revisará en Sesión 12 como cierre del proceso.",
+      "evaluation_technique": null,
+      "instrument_number": null,
+      "instrument_type": null
+    },
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Proyector",
+        "Learner's Worksheet impreso (THE GAP ANALYSIS · 4 páginas con tabla + 3 actividades + Learning Contract)",
+        "Bolígrafos azul y negro (uno por aprendiz · azul para autoevaluación · negro para firma del contrato)",
+        "Papelógrafo con marcado verde/rojo heredado de PM-2.1 (referencia visual durante la actividad)",
+        "Mapa visual del curso (4 bloques · 12 sesiones) — mismo de PM-2.1, ahora marcado con áreas competenciales",
+        "Computadores con acceso a Moodle (subida opcional de foto del Learning Contract firmado al portafolio personal)"
+      ],
+      "instructors": "Instructor de inglés + Técnico especialista marítimo-portuario"
+    },
+    "contributes_to_consolidated_quiz": false,
+    "quiz_skill": null,
+    "quiz_points": 0,
+    "quiz_item_count": 0
+  },
+  "pm0_protocol_session_level": {
+    "session_id": "S1",
+    "bloque_interno": "Bloque_Interno_1_RAP01_A1.2",
+    "cefr_target": "A1.2 (entrada)",
+    "l1_percentage_used": "≈ 25% (alineado a single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S1 · continuidad con PM-2.1)",
+    "l1_distribution": {
+      "instructions_l1_cursive": "100% de instrucciones espejadas (Bilingüe Unificada)",
+      "scale_descriptors_l1_cursive": "100% de descriptores de escala 1-5 espejados",
+      "competency_areas_l1_cursive": "100% de las 6 áreas competenciales con espejo en español",
+      "support_phrases_l1": "Apoyo léxico bilingüe en cada actividad (5 frases por actividad)",
+      "discussion_l1_allowed": "Sí · ACTIVITY 2 permite discusión en pares en español sobre los blind spots (es S1)",
+      "contract_signing_l1_allowed": "Sí · firma del Learning Contract puede ocurrir en discusión bilingüe entre aprendiz e instructor"
+    },
+    "methodological_shift": "§5.A1.2 · input lento, máximo andamiaje, accuracy-prioritario · escalas autoevaluativas accesibles · contrato pedagógico bilateral",
+    "feedback_mode": "§5.6 · Recast suave + Reformulación positiva · CERO corrección invasiva (es Gap diagnóstico, no evaluación)",
+    "stress_pronunciation_focus": "§5.8 · reciclaje del stress de las 4 survival words PM-2.1 (PORT · BERTH · CAP-tain · VES-sel) + pre-vista receptiva del stress en categorías Toolbelt (BOW · STERN · STAR-board · BUN-kering · MOO-ring)",
+    "vocabulary_activation": "§5.10 · 6 áreas competenciales pre-activadas RECEPTIVAMENTE (mapean a las 5 categorías canónicas Toolbelt 20 términos + SMCP transversal) · ninguna palabra individual enseñada · solo categorías expuestas",
+    "grammar_activation": "§8.Bloque_Interno_1_RAP01 · NINGÚN grupo gramatical activado productivamente en S1 · SÍ se expone receptivamente la fórmula 'I need to learn ___ because ___' como pre-activación de Gr1 (be/auxiliaries) + Gr4 (modals of necessity)",
+    "principles_invoked": [
+      "§5.1 Input comprensible — escalas y rúbricas accesibles",
+      "§5.6 Feedback no invasivo — Gap es espejo, no juicio",
+      "§5.10 Vocabulario de supervivencia primero — categorías Toolbelt como pre-vista receptiva",
+      "§5.13 Bilingüismo unificado — instrucción una vez en EN + español cursivo"
+    ]
+  },
+  "validacion": {
+    "reglas_pm22": {
+      "estructura_canonica_modo_default": "OK · estructura WHAT-I-KNOW / BLIND-SPOTS / LEARNING-CONTRACT aplicada literalmente",
+      "arquetipo_unico_THE_MIRROR": "OK · 1 arquetipo canónico THE_MIRROR (modo DEFAULT mgv_compendio_metodologico)",
+      "no_evidencia_formal": "OK · S1 no genera evidencia · evidence.generates_evidence = false",
+      "tabla_5_6_areas_escala_1_5": "OK · 6 áreas competenciales con escala 1-5 + emojis (🔴🟠🟡🟢✅)",
+      "blind_spots_3_areas_minimas": "OK · 3 áreas más débiles requeridas · fórmula 'I need to learn ___ because ___'",
+      "learning_contract_firmado": "OK · contrato bilateral aprendiz+instructor con firmas y fecha de revisión Session 12",
+      "bilingue_unificada": "OK · instrucción una sola vez en inglés + español cursivo · sin bloques duplicados",
+      "micro_capsulas_visuales": "OK · 3 micro-cápsulas (⚠️ Honesty Rule · 🧭 Map Cue · 📝 Contract Cue)",
+      "zero_meta_talk": "OK · output listo para imprimir · sin instrucciones meta al instructor dentro de la worksheet",
+      "blind_spots_verificables_session_12": "OK · contrato declara 'Review Date (Session 12)' explícito"
+    },
+    "anclaje_pm0": {
+      "cefr_descriptor_anclado": "OK · §6.A1.2 Bloque Interno 1",
+      "l1_percentage_anclado": "OK · ≈ 25% per §9.1.single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S1 · continuidad con PM-2.1",
+      "principios_pedagogicos_invocados": "OK · §5.1, §5.6, §5.10, §5.13",
+      "grammar_roadmap_respetado": "OK · S1 no activa gramática activa · solo pre-vista receptiva de Gr1 + Gr4",
+      "feedback_mode_alineado": "OK · Recast suave + Reformulación positiva en S1 · CERO corrección invasiva"
+    },
+    "continuidad_sistemica": {
+      "input_pm21_spark_consumido": "OK · narrative_bridge explícito · 'same morning, same radio, deeper questions' · papelógrafo verde/rojo de PM-2.1 referenciado como material en environment",
+      "input_pm12_universo_preservado": "OK · Andrea Mosquera + Captain Lopera + Capitán Restrepo + Puerto de Buenaventura + Berth 4 + BUENAVENTURA EXPRESS — todos heredados de PM-2.1 sin alterar",
+      "input_pm12_toolbelt_categorias_mapeadas": "OK · las 6 áreas competenciales mapean directamente a las 5 categorías canónicas del Toolbelt 20 términos (Ship Parts · Port Infrastructure · Directions & Sides · People & Roles · Operations) + SMCP transversal · permite pre-activación quirúrgica en PM-2.5",
+      "input_pm20_blueprint_horas_respetado": "OK · 2.25h directas + 1.58h autónomas en PM-2.2 · suma con PM-2.1 (3.75+0.75) = S1 total 6h+2.33h",
+      "input_pm0_anclas_respetadas": "OK · todas las anclas pm0 invocadas en pm0_protocol_session_level",
+      "bloom_ceiling_respetado": "OK · Bloom L1-L2 únicamente · NO se cruza a L3 Apply (eso es PM-2.5/PM-2.3 en S2+) · mismo nivel que Spark",
+      "diagnostico_no_analitico": "OK · ninguna tarea pide al aprendiz analizar reglas, aplicar gramática o producir lenguaje original más allá del frame 'I need to learn ___ because ___' (frame receptivo)"
+    },
+    "trazabilidad_gfpi_f_134": {
+      "rap_codigo_presente": "OK · 240201050-RAP",
+      "competencia_codigo_presente": "OK · 240201050",
+      "fase_sena_correcta": "OK · Contextualización (Sección 3.2)",
+      "actividades_con_estrategia_y_tecnica": "OK · cada una de las 3 actividades tiene didactic_strategy + didactic_technique",
+      "ambiente_y_materiales_explicitos": "OK · environment.type + environment.materials lista detallada (incluye papelógrafo heredado de PM-2.1)",
+      "instructores_declarados": "OK · Instructor de inglés + Técnico especialista marítimo-portuario",
+      "horas_directas_y_autonomas_separadas": "OK · hours.direct = 2.25 · hours.autonomous = 1.58",
+      "evidencia_explicitamente_nula": "OK · evidence.generates_evidence = false con rationale"
+    },
+    "check9_anti_copia_fantasma": {
+      "evidence": "Validación explícita: NO se copió contenido del ref operacional MGV-2026-04-20/pm-2-2.json. La ref MGV pertenece al universo de DISEÑO GRÁFICO (Pixel & Ink Studio · Andrés · Laura · Sophia Martinez · contrato internacional de branding · vocabulario typography/serif/sans-serif/Pixel/CMYK/RGB/kerning/leading). Esta Activity Card pertenece al universo IMARPOR-CC marítimo-portuario (Andrea Mosquera · Capitán Restrepo · Captain Lopera · Puerto de Buenaventura · Berth 4 · BUENAVENTURA EXPRESS · vocabulario port/berth/captain/vessel/bow/stern/starboard/mooring/SMCP). NINGÚN nombre de personaje del MGV (Andrés/Laura/Sophia), NINGUNA palabra de vocabulario gráfico (typography/serif/sans-serif/Pixel/CMYK/RGB/kerning/leading), NINGÚN narrative_stake gráfico (contrato de branding internacional Pixel & Ink), NINGÚN workplace gráfico (Pixel & Ink Studio) aparece en este output. Las 6 áreas competenciales son sectoriales marítimas mapeadas al Toolbelt PM-1.2 IMARPOR. La ref MGV se usó EXCLUSIVAMENTE como template estructural (orden de campos JSON + estructura WHAT-I-KNOW/BLIND-SPOTS/LEARNING-CONTRACT + presencia de pm0_anchor + universe_anchor + identity + content + activity_card + validacion + siguiente_paso) — NO como fuente de contenido pedagógico ni como fuente de personajes/vocabulario/escenarios.",
+      "originalidad_universo": "OK · 100% IMARPOR-CC original",
+      "originalidad_vocabulario": "OK · 6 áreas competenciales sectoriales marítimas (Ship Parts · Port Infrastructure · Directions & Sides · People & Roles · Operations · SMCP) · ningún término de diseño gráfico",
+      "originalidad_personajes": "OK · 3 personajes IMARPOR (Andrea/Restrepo/Lopera) · ningún personaje MGV (Andrés/Laura/Sophia)",
+      "originalidad_workplace": "OK · Puerto de Buenaventura · Berth 4 · ningún workplace MGV (Pixel & Ink Studio)",
+      "originalidad_narrative_stake": "OK · primera mañana en muelle con autoevaluación honesta + contrato firmado · ningún stake MGV (contrato internacional de branding)",
+      "originalidad_competency_areas": "OK · las 6 áreas (Ship Parts/Port Infrastructure/Directions & Sides/People & Roles/Operations/SMCP) son sectoriales marítimas · NO replican las áreas MGV de diseño gráfico (typography/color theory/composition/etc.)"
+    }
+  },
+  "siguiente_paso": {
+    "next_pm_primary": "PM-2.5",
+    "next_pm_primary_name": "Vocabulary — Apropiación (Sesión 2 · primera mitad)",
+    "next_pm_secondary": "PM-2.3",
+    "next_pm_secondary_name": "Reading — Apropiación (Sesión 2 · segunda mitad)",
+    "rationale": "PM-2.2 cerró S1 con un perfil de entrada cuantitativo por aprendiz (6 áreas autoevaluadas 1-5) + 3 blind spots por aprendiz + Learning Contract firmado. La Sesión 2 abre el primer bloque de Apropiación: PM-2.5 Vocabulary toma las 5 categorías Toolbelt mapeadas en las áreas A1-A5 y pre-activa exactamente los términos que la cohorte se autodiagnosticó como gaps (priorización quirúrgica · no se enseñan los 20 términos en bloque, se entran por la categoría con más rojos colectivos). PM-2.3 Reading complementa con un texto auténtico corto del puerto que recicla los términos pre-activados. El Learning Contract se revisa al final de cada bloque interno (S3, S6, S9, S12) como check-in de progreso.",
+    "handoff_artifacts": [
+      "Learner's Worksheet individual con 6 puntajes 1-5 (input de perfil cuantitativo por aprendiz para PM-2.5)",
+      "3 blind spots verbalizados por aprendiz con fórmula 'I need to learn ___ because ___' (input de priorización para PM-2.5)",
+      "Learning Contract firmado bilateralmente (artefacto pedagógico que se revisará en S3, S6, S9, S12)",
+      "Mapeo agregado por la cohorte de las 5 categorías Toolbelt + SMCP con frecuencia de gaps colectivos (input para que el instructor decida orden de pre-activación de PM-2.5)",
+      "Papelógrafo heredado de PM-2.1 ahora aumentado con post-its individuales de blind spots (input visual para abrir S2)"
+    ],
+    "instructor_selection_required": "Sí · enriched: false · Sergio debe revisar este Gap Analysis antes de propagar a PM-2.11 (Gate Humano 2). Validaciones específicas requeridas: (a) confirmar que las 6 áreas mapean exactamente al Toolbelt PM-1.2, (b) confirmar que el Learning Contract es accionable y revisable en S12, (c) confirmar que los blind spots agregados de la cohorte son insumo válido para abrir PM-2.5."
+  }
+}

@@ -1,0 +1,642 @@
+{
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "pm_code": "PM-2.4",
+  "pm_name": "Writing Skills & Pragmatics — Task-Based",
+  "pm_version": "2.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "cefr_level": "A1.2 (strict — Bloom L1-L3 Apply ceiling · NO HOTS)",
+  "session": 3,
+  "fase_sena": "Apropiación",
+  "generated_at": "2026-04-28T00:00:00Z",
+  "instructor": "Sergio Cortés Perdomo",
+  "enriched": false,
+  "_enriched_false_rationale": "Espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. Sergio debe (a) confirmar género del producto escrito (Pre-Shift Vessel Inspection Form) o sustituir por una de las 4 alternativas autorizadas, (b) validar Language Bank y Auditor's Checklist contra contexto Berth 4 BUENAVENTURA EXPRESS, (c) marcar enriched: true.",
+  "previous_pms": ["PM-2.1", "PM-2.2", "PM-2.3", "PM-2.5", "PM-2.10"],
+  "archetypes_policy": "TODOS LOS 5 ARQUETIPOS INTEGRADOS (A+B+C+D+E) — estilo declarado mgv_compendio_metodologico (compendio metodológico · menú integrado de 5 técnicas con frases fijas + Language Bank + Micro-Cápsulas)",
+  "estilo_aplicado": "mgv_compendio_metodologico",
+  "pm0_anchor": {
+    "cefr_ceiling": "A1.2 strict (single-guía A1.2 → A2.1, S3 dentro de Bloque Interno 2)",
+    "bloom_ceiling": "L3 Apply (writing scaffolded · NO HOTS · NO analyze/evaluate/create autónomo)",
+    "grammar_session_3_intro": [
+      "Gr7 prepositions of place (ON / AT / IN / BEHIND / IN FRONT OF)",
+      "Gr9 simple present — operations descriptive"
+    ],
+    "grammar_session_3_consolidate": [
+      "Gr1 be — descriptive (recycled from S2)",
+      "Gr4 there is / there are (recycled from S2)"
+    ],
+    "grammar_session_3_apply": [
+      "Combinatoric productive use in shift report writing (E2 product)"
+    ],
+    "l1_percentage_s3": 15,
+    "feedback_mode_dominant": "Recast + Elicitation (focus on form during editing of grammar targets, meaning during productive draft)",
+    "success_factors_applied": [
+      "Salience (7 grammar targets highlighted in colored chunks on Language Bank)",
+      "Use (immediate productive use — Andrea writes a real Pre-Shift Vessel Inspection Form for BUENAVENTURA EXPRESS Berth 4)",
+      "Connection (every chunk tied to Toolbelt portuario from PM-2.3 + grammar from PM-2.10)",
+      "Context (authentic workplace scenario — apprentice files inspection form before shift starts)",
+      "Emotion (tied to Andrea's responsibility on her first independent shift — Captain Restrepo will sign the form)",
+      "Spaced repetition (vessel/bow/stern/deck/bridge/dock/berth/container recycled from S2)",
+      "Synergy (Reading PM-2.3 → Grammar PM-2.10 → Writing PM-2.4: same Toolbelt, same universe IMARPOR-CC, escalating productive demand)"
+    ],
+    "hours_session_3_split": {
+      "pm210_grammar_direct": 2.0,
+      "pm210_grammar_autonomous": 0.66,
+      "pm24_writing_direct": 4.0,
+      "pm24_writing_autonomous": 1.67,
+      "session_3_total_direct": 6.0,
+      "session_3_total_autonomous": 2.33
+    }
+  },
+  "universe_anchor": {
+    "narrative_universe": "IMARPOR-CC maritime — Puerto de Buenaventura (Pacífico colombiano)",
+    "protagonist_action_s3_writing": "Andrea Mosquera must produce a Pre-Shift Vessel Inspection Form for the BUENAVENTURA EXPRESS at Berth 4 before her morning shift starts at 07:00. The form documents: (1) where critical equipment is located on the vessel (prepositions of place), (2) what operations happen during the shift (simple present), (3) what is present on deck and in the warehouse (be · there is/are). Captain Restrepo (mentor SENA) reviews the form. Captain Lopera (master of the BUENAVENTURA EXPRESS) signs the form before crew change.",
+    "characters_active": [
+      "Andrea Mosquera — aprendiz-redactora · produce el formulario · usa Toolbelt + 7 grammar targets",
+      "Capitán Restrepo — mentor SENA · revisa coherencia del formulario · valida prepositions of place contra plano del buque",
+      "Captain Lopera — cliente externo permanente · master del BUENAVENTURA EXPRESS · firma el formulario · espera registro formal en inglés operativo"
+    ],
+    "vessel_referenced": "BUENAVENTURA EXPRESS (containers on deck · bridge on top · lifeboat in front of the bridge · cargo in the warehouse)",
+    "location_referenced": "Puerto de Buenaventura · Berth 4 · Pacífico colombiano",
+    "writing_genre_chosen": "Pre-Shift Vessel Inspection Form (formulario operativo portuario)",
+    "writing_genre_alternatives_considered": [
+      "Port Communication Memo (descartado — más narrativo, menos campos para forzar 7 grammar targets)",
+      "Vessel Berthing Confirmation (descartado — demasiado corto para alcanzar 60-90 palabras)",
+      "Voyage Operations Summary (descartado — requiere past tense fuera del Bloom L3 Apply)"
+    ],
+    "writing_genre_rationale": "El Pre-Shift Vessel Inspection Form es un formulario operativo real del Puerto de Buenaventura. Tiene CAMPOS DISCRETOS que naturalmente fuerzan los 7 grammar targets: (1) Location of equipment → ON/AT/IN/BEHIND/IN FRONT OF, (2) Shift operations → simple present 3rd person -s + plural, (3) Deck status → be descriptive + there is/there are. Es A1.2 friendly: oraciones cortas, vocabulario controlado, scaffolding visual por campo.",
+    "register": "Formal operativo portuario (apprentice → mentor + master · registro técnico simple)",
+    "model_source": "Master Anchor Text PM-2.3 'Andrea's First Morning' + manual portuario + 7 grammar targets PM-2.10",
+    "integrates_with_s4": "S4 PM-2.6 Listening: Andrea escuchará a Captain Restrepo dictar correcciones al formulario por radio VHF · S4 PM-2.8 Speaking: Andrea reportará oralmente lo escrito a Captain Lopera",
+    "word_count_target": "60-90 words (A1.2 ceiling · 8-12 oraciones cortas distribuidas en 5 campos del formulario)"
+  },
+  "integration_all_archetypes_policy": {
+    "applicable_to_this_pm": true,
+    "archetypes_integrated": ["A — Exploratory Writing", "B — Academic/Formal Writing", "C — Collaborative TBLT Writing", "D — AI-Mediated Writing", "E — Genre-Based Writing"],
+    "bloom_ceiling": "L3 Apply (no HOTS · writing es scaffolded por campo del formulario · aprendiz APLICA estructuras dadas, no analiza ni evalúa textos complejos)",
+    "rationale": "Estilo declarado mgv_compendio_metodologico: documentar TODOS los arquetipos como menú metodológico. El instructor ejecuta los 5 en una secuencia integrada de ~4h directas: A (10 min · destrabar la página en blanco) → E (40 min · análisis de modelo del formulario) → B (60 min · borrador formal scaffolded) → C (50 min · revisión colaborativa con roles) → D (30 min · prompt literacy crítico con IA). Cada arquetipo aporta una técnica específica y termina en el mismo producto único: el Pre-Shift Vessel Inspection Form firmado.",
+    "secuencia_integrada_horas": {
+      "A_exploratory_quickwrite": 0.16,
+      "E_genre_analysis": 0.66,
+      "B_formal_drafting": 1.0,
+      "C_collaborative_peer_review": 0.83,
+      "D_ai_mediated_critical": 0.5,
+      "post_writing_final_edit_submission": 0.83,
+      "total_direct_hours": 4.0,
+      "autonomous_hours": 1.67
+    }
+  },
+  "identity": {
+    "pm_code": "PM-2.4",
+    "pm_name": "Writing Skills & Pragmatics — Task-Based",
+    "subfase_guia_sena": "3.3 Actividades de apropiación del conocimiento",
+    "conjunto": "A — Escritura (Reading → Writing → Literacy & Vocabulary)",
+    "tipo_evidencia_sena": "Producto (E2 Writing · evaluada con rúbrica analítica · 5 pts formales)",
+    "instrumento": "Learner's Worksheet — Pre-Shift Vessel Inspection Form (formulario impreso + plantilla digital Moodle)",
+    "estructura": "MENÚ DE ARQUETIPOS INTEGRADOS (5 arquetipos en secuencia de 4h directas)",
+    "rol_en_sistema": "Andrea produce su propio Pre-Shift Vessel Inspection Form basándose en el Master Anchor Text PM-2.3 + Grammar Targets PM-2.10. Es la evidencia E2 de S3."
+  },
+  "content": {
+    "blueprint_model": {
+      "genre_analyzed": "Pre-Shift Vessel Inspection Form",
+      "structural_moves": [
+        "Move 1 — Header: vessel name + berth + date + shift time (uses AT for time/point)",
+        "Move 2 — Equipment Location: 4 lines describing where critical items are on the vessel (uses ON / IN / BEHIND / IN FRONT OF)",
+        "Move 3 — Deck Status: 2 lines using there is / there are + be descriptive",
+        "Move 4 — Shift Operations: 3 lines describing what happens this shift (simple present 3rd singular + plural)",
+        "Move 5 — Sign-off: apprentice signature + master countersignature line"
+      ],
+      "communicative_functions_in_action": [
+        "F1 — Identifying objects and their location (Where is...?)",
+        "F2 — Describing routine operations (What does the crew do?)",
+        "F3 — Stating presence/absence (Is there...? · There are...)",
+        "F4 — Reporting facts in formal register"
+      ],
+      "adapted_example_from_anchor": "From PM-2.3 Anchor 'Andrea's First Morning' the chunk 'There are containers on deck' becomes Move 3 of the form: 'There are 24 containers on deck. The bridge is on top. There is a lifeboat in front of the bridge.'"
+    },
+    "archetype_A_EXPLORATORY": {
+      "archetype_name": "A — Exploratory Writing (Quickwrite de bajo impacto)",
+      "purpose_in_integrated_sequence": "Destrabar la página en blanco antes de la producción formal. Andrea hace un quickwrite de 5 minutos sobre 'lo que veo desde el muelle' antes de abordar el formulario.",
+      "duration_minutes": 10,
+      "PRE_writing": {
+        "prompt_bilingual_unified": "Look at the BUENAVENTURA EXPRESS at Berth 4. Write everything you see for 5 minutes. No grammar, no spelling — just words and phrases. (*Mira el BUENAVENTURA EXPRESS en el Muelle 4. Escribe todo lo que ves durante 5 minutos. Sin gramática, sin ortografía — solo palabras y frases.*)",
+        "instructions": [
+          "Open your notebook to a blank page",
+          "Set timer for 5 minutes",
+          "Write continuously — DO NOT stop, DO NOT correct, DO NOT translate",
+          "Use English when you can · Spanish words allowed in this stage only"
+        ]
+      },
+      "DURING_writing": {
+        "task": "Continuous quickwrite — fluency over accuracy",
+        "expected_output_sample_maritime": "containers · big ship · BUENAVENTURA EXPRESS · bridge on top · captain on the bridge · dock wet · crew working · cargo · berth 4 · stern back part · bow front part · lifeboat orange · 07:00 shift starts · cold morning · Captain Lopera · Captain Restrepo signs papers..."
+      },
+      "POST_writing": {
+        "selection_action": "Andrea highlights any 5 items from her quickwrite that she will reuse in the formal Inspection Form (Move 2 — Equipment Location)",
+        "reflection_prompt": "Which words can I use in my formal form? (*¿Cuáles palabras puedo usar en mi formulario formal?*)"
+      },
+      "instructor_acts_as": "Writing Fluency Coach — keeps anxiety low, no correction during the 5 minutes",
+      "maritime_worked_example": "Andrea's quickwrite contains 'big vessel at berth 4 · containers on deck · captain on the bridge · lifeboat in front of bridge'. She circles 4 of these phrases and carries them into Archetype B drafting."
+    },
+    "archetype_B_ACADEMIC_FORMAL": {
+      "archetype_name": "B — Academic/Formal Writing (borrador formal scaffolded)",
+      "purpose_in_integrated_sequence": "Andrea produce el primer borrador completo del Pre-Shift Vessel Inspection Form usando sentence frames y la estructura de 5 moves. Esta es la fase de producción central.",
+      "duration_minutes": 60,
+      "PRE_writing": {
+        "mentor_text_analysis": "Class re-reads the Master Anchor Text PM-2.3 'Andrea's First Morning' and identifies 5 sentences that match the 5 moves of the form. The class extracts: (1) header pattern, (2) location pattern, (3) deck status pattern, (4) operations pattern, (5) sign-off pattern.",
+        "key_questions": [
+          "What makes this form professional? (*¿Qué hace profesional a este formulario?*)",
+          "Where do we use ON, AT, IN, BEHIND, IN FRONT OF? (*¿Dónde usamos cada preposición?*)",
+          "Which operations use 'arrives, leaves, loads' (-s) and which use 'work, load, depart' (no -s)?"
+        ]
+      },
+      "DURING_writing": {
+        "scaffolded_template_with_sentence_frames": {
+          "Move_1_Header": [
+            "Vessel: ____________ (e.g., BUENAVENTURA EXPRESS)",
+            "Berth: AT Berth ___ (e.g., AT Berth 4)",
+            "Date: ____________ · Shift starts AT ____ (e.g., AT 07:00)"
+          ],
+          "Move_2_Equipment_Location": [
+            "The containers are ON ____________.",
+            "The captain is ON ____________.",
+            "The cargo is IN ____________.",
+            "The lifeboat is IN FRONT OF ____________ · The crane is BEHIND ____________."
+          ],
+          "Move_3_Deck_Status": [
+            "There are ____ containers on deck.",
+            "There is a ____________ on top.",
+            "The dock is ____________ · Andrea is ____________."
+          ],
+          "Move_4_Shift_Operations": [
+            "The vessel ____________ (arrives/leaves) AT ____________.",
+            "The captain ____________ (signs/leaves/inspects) the bridge.",
+            "The crew ____________ (load/inspect/check) the containers.",
+            "I ____________ (work/start/check) AT 07:00."
+          ],
+          "Move_5_Signoff": [
+            "Apprentice signature: ____________ (Andrea Mosquera)",
+            "Master signature: ____________ (Captain Lopera)"
+          ]
+        },
+        "grammar_targets_inline_reminders": "Each frame has a colored micro-capsule reminder: blue = preposition target, green = simple present target, yellow = be / there is target."
+      },
+      "POST_writing": {
+        "self_review": "Andrea reads her draft once aloud · checks each blank is filled · counts grammar target occurrences using the Auditor's Checklist."
+      },
+      "instructor_acts_as": "Academic Writing Instructor — provides structure + sentence frames, recasts errors during 1:1 mini-conferences",
+      "maritime_worked_example_full_draft": "Vessel: BUENAVENTURA EXPRESS · Berth: AT Berth 4 · Date: 28 April · Shift starts AT 07:00. The containers are ON deck. The captain is ON the bridge. The cargo is IN the warehouse. The lifeboat is IN FRONT OF the bridge. The crane is BEHIND the warehouse. There are 24 containers on deck. There is a bridge on top. The dock is wet. Andrea is the apprentice. The vessel arrives AT 07:00. Captain Lopera leaves the bridge AT 19:00. The crew loads the containers. I work AT Berth 4 with my mentor. Apprentice: Andrea Mosquera · Master: Captain Lopera."
+    },
+    "archetype_C_COLLABORATIVE_TBLT": {
+      "archetype_name": "C — Collaborative TBLT Writing (peer review por roles)",
+      "purpose_in_integrated_sequence": "Trios revisan los borradores entre sí con roles asignados — simula la realidad portuaria donde la Inspection Form es revisada por mentor + master antes de firmar.",
+      "duration_minutes": 50,
+      "PRE_writing": {
+        "scenario_brief": "Your trio is the Berth 4 morning team: one Apprentice (writer), one Mentor (Captain Restrepo role · checks coherence), one Master (Captain Lopera role · checks operational accuracy). Rotate roles every 15 min so each member reviews two drafts.",
+        "registers_to_negotiate": "Formal operativo (no contractions, no slang, full clauses)"
+      },
+      "DURING_writing": {
+        "trio_roles_and_tasks": {
+          "Apprentice_role": "Reads draft aloud · accepts/rejects each peer suggestion with a one-word reason (yes/no)",
+          "Mentor_Restrepo_role": "Checks Move structure (5 moves present?) + Auditor's Checklist coherence",
+          "Master_Lopera_role": "Checks operational accuracy: is the vessel really AT Berth 4? Do the times match the shift? Are containers really ON deck?"
+        },
+        "negotiation_prompts_bilingual": [
+          "Is 'AT Berth 4' correct here, or should it be 'IN Berth 4'? (*¿Es correcto AT o debería ser IN?*) — answer: AT (point/location)",
+          "Does 'the captain leaves' need -s? (*¿lleva -s?*) — yes, 3rd person singular",
+          "Are there really 24 containers ON deck or IN the deck? — answer: ON (surface)"
+        ]
+      },
+      "POST_writing": {
+        "group_evaluation": "Each trio presents one final form to the class · class votes: 'Would Captain Lopera sign this?' (yes/no with reason)",
+        "reflection": "What did we negotiate the most? (*¿Qué fue lo que más negociamos?*) — typical answers: ON vs IN, -s vs no -s"
+      },
+      "instructor_acts_as": "Collaborative Writing Architect — circulates, supports negotiation in L1 when needed (~15% L1 budget), does NOT correct directly",
+      "maritime_worked_example": "Trio T-1 (Andrea + Juan + María): María (Master role) flags Juan's 'The vessel arrive at 07:00' — Andrea (Apprentice role) accepts, changes to 'arrives'. Juan (Mentor role) flags María's 'The crane is on the warehouse' — María accepts, changes to 'BEHIND the warehouse'."
+    },
+    "archetype_D_AI_MEDIATED": {
+      "archetype_name": "D — AI-Mediated Writing (prompt literacy crítico)",
+      "purpose_in_integrated_sequence": "Andrea usa una IA (ChatGPT / Copilot) para encontrar errores en su borrador YA editado por el trio. Reflexiona sobre qué acepta y qué rechaza. La IA es herramienta, NO autora — el formulario final sigue siendo 100% de Andrea.",
+      "duration_minutes": 30,
+      "PRE_writing": {
+        "first_draft_solo": "Andrea already has her trio-revised draft (output of Archetype C). She does NOT use AI before this point.",
+        "reflection_initial": "Before asking AI, Andrea predicts: 'Where might I still have an error?' (*¿Dónde puedo todavía tener un error?*)"
+      },
+      "DURING_writing": {
+        "approved_prompt_templates_for_a12_learners": [
+          "Prompt 1 — Grammar check (controlled): 'Find errors in this maritime inspection form. List ONLY the errors. Do NOT rewrite my text. Use simple English: [paste form].'",
+          "Prompt 2 — Preposition check: 'Are the prepositions ON, AT, IN correct in this text? Reply yes/no per sentence: [paste Move 2].'",
+          "Prompt 3 — Verb check: 'Does each verb have the correct -s for 3rd person singular? List corrections only: [paste Move 4].'"
+        ],
+        "PROHIBITED_prompts": [
+          "'Write my form for me' — PROHIBITED · learner must produce the text",
+          "'Translate this from Spanish' — PROHIBITED in S3 productive phase",
+          "'Make it sound more professional' — PROHIBITED · changes voice beyond A1.2 control"
+        ],
+        "reflective_journal_3_columns": {
+          "column_1": "What AI suggested",
+          "column_2": "Did I accept or reject? (Y/N)",
+          "column_3": "Why? (1 sentence in Spanish allowed)"
+        }
+      },
+      "POST_writing": {
+        "critical_evaluation": "Andrea writes 2 lines: 'AI helped me with ___. AI was wrong about ___.' (*La IA me ayudó con ___. La IA se equivocó en ___.*)",
+        "ownership_check": "Final form is signed by Andrea — every word is hers · AI suggestions accepted only after she understood them"
+      },
+      "instructor_acts_as": "AI Literacy Writing Coach — models 1 prompt live on screen, then learners work individually",
+      "maritime_worked_example": "Andrea's prompt: 'Are the prepositions ON, AT, IN correct in this text? Reply yes/no: The containers are ON deck. The cargo is ON the warehouse. The vessel is AT Berth 4.' AI replies: 'Sentence 1 yes. Sentence 2 no — should be IN the warehouse (closed space). Sentence 3 yes.' Andrea accepts Sentence 2 correction (now 'The cargo is IN the warehouse') and writes in journal: 'Acepté · IN para espacio cerrado, ON para superficie.'"
+    },
+    "archetype_E_GENRE_BASED": {
+      "archetype_name": "E — Genre-Based Writing (análisis del formulario como género)",
+      "purpose_in_integrated_sequence": "ANTES de la producción formal (Archetype B), la clase analiza 2 ejemplares auténticos de Pre-Shift Vessel Inspection Form para extraer la 'receta del género'. Esta receta guía toda la producción.",
+      "duration_minutes": 40,
+      "PRE_writing": {
+        "exemplars_presented": [
+          "Exemplar 1 — A real Pre-Shift Inspection Form from Puerto de Buenaventura (anonymized, container vessel, Berth 4)",
+          "Exemplar 2 — A simplified A1.2 version of an SMCP-aligned inspection form from the IMARPOR manual"
+        ],
+        "genre_recipe_class_built": {
+          "header_must_include": ["vessel name", "berth (AT)", "date", "shift time (AT)"],
+          "body_must_include": ["≥4 lines of equipment location with prepositions", "≥3 lines of operations in simple present", "≥2 lines using be / there is/are"],
+          "register": "Formal operativo · short clauses · no contractions",
+          "length_a12": "60-90 words · 8-12 short sentences"
+        }
+      },
+      "DURING_writing": {
+        "production_step_by_step": [
+          "Step 1 — Identify communicative purpose: Document vessel readiness before shift",
+          "Step 2 — Select register: Formal operativo (apprentice → master)",
+          "Step 3 — Structure by 5 moves recipe (header / location / status / operations / sign-off)",
+          "Step 4 — Plug in vocabulary from Toolbelt + 7 grammar targets",
+          "Step 5 — Compare against the 2 exemplars · adjust"
+        ]
+      },
+      "POST_writing": {
+        "transfer_exercise": "Now write the same kind of form but for a DIFFERENT vessel (e.g., CML CARRIER at Berth 7, evening shift). 4 lines only — show you can transfer the recipe.",
+        "auditor_checklist_genre_specific": [
+          "Does my form have all 5 moves?",
+          "Does it look like a real Pre-Shift Form (header at top, signatures at bottom)?",
+          "Is my register formal operativo?",
+          "Is my length 60-90 words?"
+        ]
+      },
+      "instructor_acts_as": "Genre Specialist — guides recipe extraction · models transfer to new vessel",
+      "maritime_worked_example": "Class extracts recipe from Exemplar 1 (BUENAVENTURA EXPRESS Berth 4) and Exemplar 2 (IMARPOR manual). Recipe says: 'Header AT-line, 4 location lines with ON/AT/IN/BEHIND/IN FRONT OF, 2 there is/are lines, 3 simple present operation lines, sign-off.' Andrea's transfer exercise: 4-line form for CML CARRIER at Berth 7 evening shift — proves she owns the genre."
+    },
+    "language_bank": {
+      "purpose": "6-8 chunks reutilizables del Toolbelt + grammar targets · siempre visible al aprendiz",
+      "chunks_with_color_coding": [
+        {"chunk": "AT Berth 4 / AT 07:00", "color_target": "blue", "grammar_target": "GT-S3-02"},
+        {"chunk": "ON deck / ON the bridge", "color_target": "blue", "grammar_target": "GT-S3-01"},
+        {"chunk": "IN the warehouse / BEHIND the warehouse / IN FRONT OF the bridge", "color_target": "blue", "grammar_target": "GT-S3-03"},
+        {"chunk": "The vessel arrives / The captain leaves / The crew loads", "color_target": "green", "grammar_target": "GT-S3-04"},
+        {"chunk": "I work / We load / They depart", "color_target": "green", "grammar_target": "GT-S3-05"},
+        {"chunk": "The dock is wet / Andrea is the apprentice", "color_target": "yellow", "grammar_target": "GT-S3-06"},
+        {"chunk": "There are containers on deck / There is a bridge on top", "color_target": "yellow", "grammar_target": "GT-S3-07"},
+        {"chunk": "Apprentice signature / Master signature", "color_target": "neutral", "grammar_target": "genre move 5"}
+      ]
+    },
+    "auditors_checklist": {
+      "title": "THE AUDITOR'S CHECKLIST · Self-review before submission",
+      "criteria_5": [
+        "(1) My form has all 5 moves (header / location / status / operations / sign-off)",
+        "(2) I used ON, AT, and at least one of IN/BEHIND/IN FRONT OF correctly",
+        "(3) I have at least 3 verbs with -s (3rd person) and at least 1 verb without -s (plural/1st person)",
+        "(4) I used 'is/are' descriptive twice and 'there is/there are' once",
+        "(5) My length is 60-90 words and the register is formal operativo"
+      ]
+    },
+    "micro_capsules": [
+      "> ⚠️ **Grammar Rule:** ON for surfaces (deck, bridge) · AT for points/times (Berth 4, 07:00) · IN for closed spaces (warehouse). (*ON para superficies · AT para puntos · IN para espacios cerrados.*)",
+      "> ⚠️ **Grammar Rule:** Add -s when the subject is 'the vessel / the captain / the crew (singular collective)'. NO -s with 'I / we / they'. (*Agrega -s con tercera persona singular.*)",
+      "> 🛟 **Safety Cue:** A Pre-Shift Form that Captain Lopera cannot read = a shift that cannot start. Be clear, not creative. (*Un formulario que Lopera no pueda leer = turno que no inicia.*)",
+      "> 🤖 **AI Cue:** Use AI to FIND errors, never to WRITE for you. The form is yours. (*La IA encuentra errores · no escribe por ti.*)"
+    ]
+  },
+  "grammar_targets_consumed_from_pm210": {
+    "consumption_policy": "El Pre-Shift Vessel Inspection Form REQUIERE EXPLÍCITAMENTE que el aprendiz aplique los 7 Grammar Targets producidos por PM-2.10. Cada target tiene: (a) un campo del formulario donde es obligatorio, (b) un mínimo de ocurrencias evaluado en la rúbrica, (c) un ejemplo maritime worked example.",
+    "all_7_targets_required_yes_no": "yes — 7/7 targets requeridos por el writing task",
+    "targets_required_in_writing_task": [
+      {
+        "target_id": "GT-S3-01",
+        "structure": "Gr7 prepositions of place — surface (ON)",
+        "form_field_where_required": "Move 2 — Equipment Location (line 1 + line 2)",
+        "minimum_occurrences": 2,
+        "evaluation_rubric_cell": "Grammar Accuracy → row 1",
+        "maritime_worked_example": "The containers are ON deck. The captain is ON the bridge."
+      },
+      {
+        "target_id": "GT-S3-02",
+        "structure": "Gr7 prepositions of place — point (AT)",
+        "form_field_where_required": "Move 1 — Header (berth + time) + Move 4 — Shift Operations (time)",
+        "minimum_occurrences": 2,
+        "evaluation_rubric_cell": "Grammar Accuracy → row 2",
+        "maritime_worked_example": "AT Berth 4 · Shift starts AT 07:00 · The vessel arrives AT 07:00."
+      },
+      {
+        "target_id": "GT-S3-03",
+        "structure": "Gr7 prepositions of place — closed/relative (IN / BEHIND / IN FRONT OF)",
+        "form_field_where_required": "Move 2 — Equipment Location (line 3 + line 4)",
+        "minimum_occurrences": 1,
+        "evaluation_rubric_cell": "Grammar Accuracy → row 3",
+        "maritime_worked_example": "The cargo is IN the warehouse. The lifeboat is IN FRONT OF the bridge. The crane is BEHIND the warehouse."
+      },
+      {
+        "target_id": "GT-S3-04",
+        "structure": "Gr9 simple present — 3rd person singular with -s",
+        "form_field_where_required": "Move 4 — Shift Operations (lines 1-3)",
+        "minimum_occurrences": 3,
+        "evaluation_rubric_cell": "Grammar Accuracy → row 4",
+        "maritime_worked_example": "The vessel arrives at 07:00. Captain Lopera leaves the bridge. The crew loads the containers."
+      },
+      {
+        "target_id": "GT-S3-05",
+        "structure": "Gr9 simple present — plural / 1st person (no -s)",
+        "form_field_where_required": "Move 4 — Shift Operations (line 4 · self-reference)",
+        "minimum_occurrences": 1,
+        "evaluation_rubric_cell": "Grammar Accuracy → row 5",
+        "maritime_worked_example": "I work at Berth 4 · We load the containers · They depart at 19:00."
+      },
+      {
+        "target_id": "GT-S3-06",
+        "structure": "Gr1 be (consolidated S2) — descriptive",
+        "form_field_where_required": "Move 3 — Deck Status (lines 3-4)",
+        "minimum_occurrences": 2,
+        "evaluation_rubric_cell": "Grammar Accuracy → row 6",
+        "maritime_worked_example": "The dock is wet. Andrea is the apprentice."
+      },
+      {
+        "target_id": "GT-S3-07",
+        "structure": "Gr4 there is / there are (consolidated S2)",
+        "form_field_where_required": "Move 3 — Deck Status (lines 1-2)",
+        "minimum_occurrences": 1,
+        "evaluation_rubric_cell": "Grammar Accuracy → row 7",
+        "maritime_worked_example": "There are 24 containers on deck. There is a bridge on top."
+      }
+    ],
+    "total_targets_required": 7,
+    "total_targets_present_in_task": 7,
+    "coverage_check": "7/7 — COMPLETE",
+    "rubric_alignment_pm210_to_pm24": "PM-2.10 dictó que la rúbrica de PM-2.4 debe incluir la celda 'Grammar Accuracy' con 30% del peso evaluando GT-S3-01 a GT-S3-07. PM-2.4 implementa: Grammar Accuracy = 1.5 pts de los 5 pts totales (30%) · 7 sub-rows (una por target)."
+  },
+  "writing_product_specification": {
+    "genre": "Pre-Shift Vessel Inspection Form",
+    "rationale_for_choice": "Único de los 4 géneros propuestos que (a) es maritime-auténtico al universo IMARPOR-CC, (b) tiene 5 campos discretos que naturalmente fuerzan los 7 grammar targets, (c) mantiene CEFR A1.2 (oraciones cortas, vocabulario controlado), (d) genera 60-90 palabras (rango A1.2), (e) integra a Andrea + Captain Restrepo + Captain Lopera + BUENAVENTURA EXPRESS + Berth 4 + Puerto de Buenaventura.",
+    "format": "Formulario impreso (1 página A4) + plantilla digital paralela en Moodle (PDF rellenable)",
+    "structural_moves_required": 5,
+    "length_target_words": "60-90 words",
+    "length_target_sentences": "8-12 short sentences distributed across 5 moves",
+    "register": "Formal operativo portuario",
+    "vocabulary_requirements": "Use ≥8 of 20 Toolbelt terms from PM-1.2 (vessel · bow · stern · deck · bridge · port · dock · berth · container · captain · apprentice · mentor · crew · berthing · cargo · shift · warehouse · lifeboat · crane · bow)",
+    "grammar_targets_required": "All 7 GT-S3-01..GT-S3-07 with minimum occurrences specified",
+    "submission_channel": "Moodle upload (PDF rellenado) + paper copy signed by Captain Restrepo (mentor SENA)",
+    "deadline": "End of S3 + 1 day autonomous (autonomous 1.67h for final edit + Moodle upload)"
+  },
+  "evaluation_rubric_e2_writing": {
+    "evidence_code": "E2 Writing",
+    "total_points": 5,
+    "weight_in_consolidated_quiz": "5 pts (Writing slot)",
+    "evaluation_technique": "Verificación del producto",
+    "instrument_number": 2,
+    "instrument_type": "Lista de verificación + Rúbrica analítica",
+    "rubric_breakdown": {
+      "Format_genre_compliance": {
+        "points": 1.0,
+        "weight_percent": 20,
+        "criteria": "Form has all 5 moves · header at top · signatures at bottom · length 60-90 words"
+      },
+      "Grammar_accuracy_pm210_targets": {
+        "points": 1.5,
+        "weight_percent": 30,
+        "criteria": "All 7 GT-S3-01..GT-S3-07 present with minimum occurrences · ≤2 errors total per target",
+        "sub_rows": [
+          "GT-S3-01 ON × 2 — 0.20 pts",
+          "GT-S3-02 AT × 2 — 0.20 pts",
+          "GT-S3-03 IN/BEHIND/IN FRONT OF × 1 — 0.20 pts",
+          "GT-S3-04 simple present -s × 3 — 0.30 pts",
+          "GT-S3-05 simple present plural × 1 — 0.20 pts",
+          "GT-S3-06 be descriptive × 2 — 0.20 pts",
+          "GT-S3-07 there is/are × 1 — 0.20 pts"
+        ]
+      },
+      "Vocabulary_toolbelt_use": {
+        "points": 1.5,
+        "weight_percent": 30,
+        "criteria": "≥8 of 20 Toolbelt terms used correctly in maritime context · ≤2 misuse errors"
+      },
+      "Clarity_and_register": {
+        "points": 1.0,
+        "weight_percent": 20,
+        "criteria": "Formal operativo register · readable by Captain Lopera · no L1 leakage in final form"
+      }
+    },
+    "passing_threshold": "3.5 / 5.0 (70%)",
+    "rubric_visibility": "Rubric is visible to learner from start of S3 writing block · printed on back of worksheet"
+  },
+  "activity_card": {
+    "pm_id": "PM-2.4",
+    "pm_name": "Writing — Task-Based",
+    "session": 3,
+    "phase_sena": "Apropiación",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "procedimental",
+        "statement": "Redactar el Pre-Shift Vessel Inspection Form para el BUENAVENTURA EXPRESS en Berth 4 aplicando los 7 grammar targets de PM-2.10 y ≥8 términos del Toolbelt portuario · 60-90 palabras · 5 moves obligatorios.",
+        "didactic_strategy": "Aprendizaje basado en tareas (TBLT) integrado con análisis de género",
+        "didactic_technique": "Taller integrado · 5 arquetipos en secuencia (A → E → B → C → D)"
+      },
+      {
+        "number": 2,
+        "type": "procedimental",
+        "statement": "Revisar y editar el formulario en trio (roles Apprentice/Mentor/Master) + verificación crítica con IA + edición final · firma del mentor antes de subir a Moodle.",
+        "didactic_strategy": "Aprendizaje colaborativo + AI-Mediated critical review",
+        "didactic_technique": "Análisis de casos en trío + reflective journal"
+      }
+    ],
+    "hours": {
+      "direct": 4.0,
+      "autonomous": 1.67,
+      "session_3_total_with_pm210": {
+        "pm210_grammar_direct": 2.0,
+        "pm210_grammar_autonomous": 0.66,
+        "pm24_writing_direct": 4.0,
+        "pm24_writing_autonomous": 1.67,
+        "session_total_direct": 6.0,
+        "session_total_autonomous": 2.33
+      }
+    },
+    "evidence": {
+      "generates_evidence": true,
+      "code": "E2 Writing",
+      "type": "Producto",
+      "description": "El aprendiz produce el Pre-Shift Vessel Inspection Form completo en inglés operativo demostrando control de los 7 grammar targets (GT-S3-01..GT-S3-07), uso de ≥8 términos del Toolbelt portuario, y organización lógica en 5 moves del género.",
+      "evaluation_technique": "Verificación del producto",
+      "instrument_number": 2,
+      "instrument_type": "Lista de verificación + Rúbrica analítica de 4 criterios (Format · Grammar · Vocabulary · Clarity)",
+      "points": 5,
+      "is_formal_evidence_for_session_3": true
+    },
+    "environment": {
+      "type": "Aula + Virtual + Visita simulada al muelle",
+      "materials": [
+        "Pre-Shift Vessel Inspection Form (plantilla impresa A4)",
+        "Plantilla PDF rellenable en Moodle",
+        "Rúbrica visible (PDF)",
+        "Language Bank impreso (chunks color-coded por grammar target)",
+        "Auditor's Checklist (impreso)",
+        "Plataforma Moodle para entrega",
+        "Acceso supervisado a IA (ChatGPT / Copilot · solo en fase D)",
+        "2 ejemplares auténticos de Pre-Shift Forms (Buenaventura + IMARPOR manual) para fase E",
+        "Plano simplificado del BUENAVENTURA EXPRESS (apoyo visual para preposiciones)"
+      ],
+      "instructors": "Instructor de inglés técnico marítimo + apoyo virtual de tutor IMARPOR"
+    },
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Writing",
+    "quiz_points": 5,
+    "quiz_item_count": 5,
+    "quiz_items_harvest_note": "5 ítems cosechables del proceso de escritura para el cuestionario S6: (1) preposition cloze ON/AT/IN, (2) verb -s correction, (3) move identification, (4) there is/are correction, (5) genre register choice"
+  },
+  "pm0_protocol_session_level": {
+    "session": 3,
+    "session_name": "Apropiación — Bloque Interno 2 (A1.2 productive)",
+    "l1_percentage_target": 15,
+    "l1_percentage_actual_pm24": 15,
+    "l1_usage_locations": [
+      "Bilingual Unified Headers (instrucciones una vez en EN + cursiva ES)",
+      "Reflective journal column 3 (Archetype D · 'why I accepted/rejected' allowed in Spanish)",
+      "Trio negotiation in Archetype C (allowed when stuck, ≤15% of total class talk)",
+      "Micro-capsules grammar rules (EN + ES gloss)"
+    ],
+    "feedback_modes_used": [
+      "Recast — during productive draft (Archetype B mini-conferences)",
+      "Elicitation — during peer review (Archetype C trio negotiations)",
+      "Self-correction — Auditor's Checklist + AI-mediated review (Archetype D)"
+    ],
+    "grammar_session_3_consumed_from_pm210": ["Gr7 prepositions of place (intro)", "Gr9 simple present (intro)", "Gr1 be (consolidate)", "Gr4 there is/are (consolidate)"],
+    "bloom_max_reached": "L3 Apply (no L4+)",
+    "bloom_distribution": {
+      "L1_remember": "10% (vocabulary recycling in Language Bank)",
+      "L2_understand": "30% (genre analysis Archetype E + mentor text reading)",
+      "L3_apply": "60% (productive draft Archetype B + peer review C + AI-mediated D)"
+    },
+    "success_factors_pm0_validated": ["Salience", "Use", "Connection", "Context", "Emotion", "Spaced repetition", "Synergy"]
+  },
+  "validacion": {
+    "check1_archetypes_complete": {
+      "expected": 5,
+      "actual": 5,
+      "list": ["A — Exploratory", "B — Academic/Formal", "C — Collaborative TBLT", "D — AI-Mediated", "E — Genre-Based"],
+      "result": "PASS"
+    },
+    "check2_grammar_targets_consumed": {
+      "expected_targets_from_pm210": 7,
+      "targets_required_in_writing_task": 7,
+      "coverage": "7/7",
+      "result": "PASS"
+    },
+    "check3_cefr_bloom_compliance": {
+      "cefr_target": "A1.2 strict",
+      "bloom_ceiling": "L3 Apply",
+      "violations_detected": "none",
+      "result": "PASS"
+    },
+    "check4_evidence_e2_writing_5pts": {
+      "evidence_code": "E2 Writing",
+      "points": 5,
+      "rubric_breakdown_total": "1.0 + 1.5 + 1.5 + 1.0 = 5.0",
+      "grammar_weight_pm210_required": "30%",
+      "grammar_weight_pm24_implemented": "30% (1.5/5.0)",
+      "result": "PASS"
+    },
+    "check5_universe_anchor_maritime": {
+      "universe": "IMARPOR-CC maritime",
+      "characters_present": ["Andrea Mosquera", "Captain Restrepo (Capitán Restrepo)", "Captain Lopera"],
+      "vessel": "BUENAVENTURA EXPRESS",
+      "location": "Puerto de Buenaventura · Berth 4",
+      "vocabulary_universe": "Maritime portuario (vessel, bow, stern, deck, bridge, dock, berth, container, crew, etc.)",
+      "result": "PASS"
+    },
+    "check6_l1_budget": {
+      "target_s3": "~15%",
+      "actual_pm24": "~15%",
+      "locations_documented": true,
+      "result": "PASS"
+    },
+    "check7_hours_distribution": {
+      "pm24_direct": 4.0,
+      "pm24_autonomous": 1.67,
+      "session_3_total_direct_with_pm210": 6.0,
+      "session_3_total_autonomous_with_pm210": 2.33,
+      "matches_pm0_anchor": true,
+      "result": "PASS"
+    },
+    "check8_5_archetypes_have_maritime_examples": {
+      "archetype_A_maritime_example_present": true,
+      "archetype_B_maritime_example_present": true,
+      "archetype_C_maritime_example_present": true,
+      "archetype_D_maritime_example_present": true,
+      "archetype_E_maritime_example_present": true,
+      "result": "PASS — 5/5 archetypes contain explicit maritime worked examples (vessel/bow/stern/deck/bridge/dock/berth/container/crew references in each)"
+    },
+    "check9_anti_copia_fantasma": {
+      "rule": "Generar contenido ORIGINAL para guía IMARPOR-CC · NO copiar del ref operacional MGV-2026-04-20 (Pixel & Ink Studio · Andrés/Sophia/Laura · La Esquina Bakery · serif vs sans-serif · CMYK · Playfair Display · graphic design domain)",
+      "MGV_graphic_design_terms_searched_and_excluded": [
+        "typography — NOT used",
+        "serif / sans-serif — NOT used",
+        "CMYK / RGB color models — NOT used",
+        "Pixel & Ink Studio — NOT used",
+        "Andrés / Sophia / Laura — NOT used",
+        "La Esquina Bakery — NOT used",
+        "font family / Playfair Display — NOT used",
+        "logo concept / brand kit — NOT used",
+        "Design Decision Email genre — NOT copied (replaced with Pre-Shift Vessel Inspection Form)"
+      ],
+      "MGV_structural_pattern_borrowed_legitimately": [
+        "5-archetype menu structure (canonical to PM-2.4 · NOT MGV-specific)",
+        "Move-structure analysis pedagogy (canonical to genre-based archetype)",
+        "Auditor's Checklist concept (canonical PM-2.4 scaffold)",
+        "Sentence frames concept (canonical scaffold)"
+      ],
+      "originality_evidence": [
+        "Genre is Pre-Shift Vessel Inspection Form (NOT Design Decision Email)",
+        "Universe is IMARPOR-CC maritime · Puerto de Buenaventura · Berth 4 (NOT graphic design Bogotá studio)",
+        "Characters are Andrea Mosquera + Captain Restrepo + Captain Lopera (NOT Andrés/Sophia/Laura)",
+        "Vessel is BUENAVENTURA EXPRESS (NOT La Esquina Bakery client)",
+        "Vocabulary is maritime Toolbelt (vessel/bow/stern/deck/bridge/dock/berth/container/crew · NOT typography/color theory)",
+        "Grammar targets consumed are PM-2.10 maritime (prepositions of place ON/AT/IN/BEHIND/IN FRONT OF for vessel parts · simple present for port operations · be + there is/are for deck status · NOT possessives/adjective position from MGV S3)",
+        "All 5 archetype maritime worked examples reference vessel/bow/stern/port/dock/berth/container — searched for graphic-design vocabulary leakage and confirmed NONE present"
+      ],
+      "result": "PASS — content is ORIGINAL for IMARPOR-CC guide · MGV graphic-design content NOT copied · structural patterns from canonical PM-2.4 master prompt only"
+    },
+    "check10_archetypes_policy_declared": {
+      "archetypes_policy": "TODOS LOS 5 ARQUETIPOS INTEGRADOS",
+      "estilo_aplicado": "mgv_compendio_metodologico",
+      "integration_block_present": true,
+      "result": "PASS"
+    }
+  },
+  "siguiente_paso": {
+    "next_pms_to_generate": ["PM-2.6 Listening (S4)", "PM-2.8 Speaking (S4)"],
+    "handoff_to_pm26_listening_s4": {
+      "input_for_pm26": "El Pre-Shift Vessel Inspection Form de Andrea (E2 Writing producto) será el texto base que Captain Restrepo dicte y corrija por radio VHF en S4 · listening task apunta a comprensión auditiva del mismo género ya producido por escrito",
+      "continuity_universe": "Andrea + Captain Restrepo + BUENAVENTURA EXPRESS + Berth 4 — preserved",
+      "vocabulary_recycling": "Toolbelt portuario continúa · agrega VHF radio terms"
+    },
+    "handoff_to_pm28_speaking_s4": {
+      "input_for_pm28": "Andrea reportará oralmente lo escrito en su Pre-Shift Form a Captain Lopera (cliente externo permanente) · speaking task transforma el género escrito en briefing oral",
+      "continuity_universe": "Same characters + same vessel + same berth · escalation from written to oral pragmatics",
+      "grammar_targets_recycled": "Los 7 GT-S3 se mantienen · ahora en producción oral controlada"
+    },
+    "handoff_to_pm211_assembler": {
+      "this_pm_status": "enriched: false — espera Instructor Selection (Gate Humano 2)",
+      "post_human_gate_propagation": "Una vez Sergio confirme genre + Language Bank + Checklist · marca enriched: true · PM-2.11 ensambla GFPI-F-134 row para S3 con E2 Writing 5 pts"
+    }
+  }
+}

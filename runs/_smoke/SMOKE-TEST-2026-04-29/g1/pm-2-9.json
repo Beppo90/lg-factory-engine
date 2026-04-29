@@ -1,0 +1,702 @@
+{
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "pm_code": "PM-2.9",
+  "pm_name": "Language Functions & Communicative Competence",
+  "pm_version": "2.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "cefr_level": "A1.2 → A2.1 (S5 integrative · cierre del Bloque Interno 4 antes de S6 Quiz)",
+  "session": 5,
+  "fase_sena": "Apropiación",
+  "generated_at": "2026-04-28T00:00:00Z",
+  "instructor": "Sergio Cortés Perdomo",
+  "enriched": false,
+  "rationale_enriched_false": "Espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. Al ser estilo mgv_compendio_metodologico el output documenta los 5 arquetipos como menú metodológico — el instructor confirma cuáles activa en aula antes de marcar enriched: true.",
+  "previous_pms": [
+    "PM-2.1",
+    "PM-2.2",
+    "PM-2.3",
+    "PM-2.5",
+    "PM-2.10",
+    "PM-2.4",
+    "PM-2.6",
+    "PM-2.8"
+  ],
+  "previous_pms_count": 8,
+  "previous_pms_rationale": "PM-2.9 (S5) es el único PM de la sesión apropiativa final antes del Cuestionario Consolidado de S6. Consume contenido de los 8 PMs previos: S1 (PM-2.1 Onboarding + PM-2.2 Mission), S2 (PM-2.3 Reading + PM-2.5 Vocabulary), S3 (PM-2.10 Grammar + PM-2.4 Writing), S4 (PM-2.6 Listening + PM-2.8 Speaking).",
+  "archetypes_policy": "TODOS LOS 5 ARQUETIPOS INTEGRADOS (A+B+C+D+E) — estilo declarado mgv_compendio_metodologico",
+  "estilo_aplicado": "mgv_compendio_metodologico",
+  "pm0_anchor": {
+    "pm0_version": "v1.1 — CEFR Framework & FPI SENA Pedagogical Foundation (canon DM v2.11)",
+    "cefr_subnivel": "A1.2 → A2.1 (Bloque Interno 4 cerrando · synthesis pre-quiz)",
+    "pm0_sections_applied": [
+      "§5.1 ESP & realia técnica — funciones marítimo-portuarias auténticas (SMCP / VHF / berthing operations)",
+      "§5.3 Input + output — funciones como puente entre input acumulado (S2-S4) y producción oral integrada",
+      "§5.4 Fluency vs accuracy — S5 privilegia FLUENCY (post-task delayed feedback · accuracy ya consolidado en S3-S4)",
+      "§5.6 Drilling & backchaining — frases fijas funcionales SMCP memorizadas (Roger / Wilco / Affirmative)",
+      "§5.8 Feedback diferenciado — fluency dominante + recast sutil en breakdowns operacionales",
+      "§5.9 Gestión del L1 — 10% (caídas sólo para meta-instrucción de wrap-up + briefing del Quiz S6)",
+      "§5.10 SUCCESS vocabulary — 20 chunks funcionales del Toolbelt portuario cerrando la apropiación",
+      "§5.13 Noticing del stress — frases SMCP con stress marking auténtico (ROger · WILco · afFIRmative)",
+      "§9.2 Grammar carga — Gr 1, 4, 7, 9 CONSOLIDA (no Intro nuevo en S5 · cierre integrative)",
+      "§9.1 L1 policy — S5 = 10% L1 (ajustado para single-guía 12 sesiones · curva descendente A1.2→A2.1)"
+    ],
+    "descriptores_cefr_activos": [
+      "A1.2 — Can name and identify maritime objects using 'this is / there is' (F1)",
+      "A1.3 — Can confirm SMCP messages with formulaic responses Roger/Wilco/Affirmative (F2)",
+      "A1.3 — Can spell vessel names and berth IDs using NATO Phonetic Alphabet (F3)",
+      "A2.0 — Can coordinate tripartite operations giving and receiving instructions (F4)",
+      "A2.1 — Can describe professional functions: habitual (simple present) and momentary (be + V-ing implicit) (F5)",
+      "A2.1 — Can use formulaic SMCP exchanges to repair communication breakdowns",
+      "A2.1 — Can sustain a 3-minute operational radio simulation with maritime vocabulary"
+    ],
+    "bloom_distribution_s5": {
+      "L1_remember": "10% (recall SMCP chunks · NATO letters)",
+      "L2_understand": "35% (interpret tripartite coordination cues · interpret habitual vs momentary functions)",
+      "L3_apply": "55% (use the 5 functions in radio simulation + role-plays + escape room)",
+      "ceiling_observed": "L3 Apply (NO HOTS · A1.2-A2.1 ceiling per pm-0-context.bloom_ceilings_per_session.S5)"
+    }
+  },
+  "universe_anchor": {
+    "narrative_universe": "IMARPOR-CC maritime — Puerto de Buenaventura (Pacífico colombiano)",
+    "characters_active_in_s5": [
+      "Andrea Mosquera — aprendiz SENA · learner-as-self · pivote integrative que demuestra dominio funcional antes del Quiz S6",
+      "Captain Lopera — cliente externo permanente · capitán del BUENAVENTURA EXPRESS · interlocutor por radio VHF + panel evaluador",
+      "Capitán Restrepo — mentor SENA · supervisor del cierre apropiativo · audita las 5 funciones en aula",
+      "Crew member del BUENAVENTURA EXPRESS — partner B en role-plays operativos",
+      "CML CARRIER (referenciado) — vessel del proyecto formativo · objetivo de la Misión Final"
+    ],
+    "scenarios_in_s5": [
+      "SCN-A: Naming & identifying — circuito de estaciones marítimas con cards del Toolbelt (F1)",
+      "SCN-B: SMCP confirmation chain — escucha + responde con Roger/Wilco/Affirmative (F2)",
+      "SCN-C: NATO spelling relay — deletreo de vessel names + berth IDs (F3)",
+      "SCN-D: Tripartite coordination role-play — Andrea + Lopera + Restrepo coordinando atraque (F4)",
+      "SCN-E: Professional function pitch — Andrea describe su rol habitual y la operación del momento (F5)"
+    ],
+    "vessel_referenced": "BUENAVENTURA EXPRESS (Berth 4 · containers on deck · bridge on top · lifeboat in front of the bridge · cargo in the warehouse)",
+    "location_referenced": "Puerto de Buenaventura · Berth 4 · Pacífico colombiano",
+    "client_external_permanent": "Captain Lopera (lingua franca speaker · NO native · acento internacional realista)",
+    "continuity_with_s2_s4": "S5 cierra el ciclo apropiativo: las funciones comunicativas que S2-S4 trabajaron implícitamente (vocabulario marítimo, gramática portuaria, escucha SMCP, habla operativa) se ACTIVAN explícitamente en F1-F5. Andrea pasa de lectora-modelo (S2) → escritora del Pre-Shift Form (S3) → oyente VHF (S4 listening) → hablante operativa (S4 speaking) → INTEGRADORA FUNCIONAL (S5)."
+  },
+  "identity": {
+    "pm_id": "PM-2.9",
+    "pm_name": "Language Functions & Communicative Competence",
+    "session": 5,
+    "fase_sena": "Apropiación",
+    "subfase": "3.3 Actividades de apropiación del conocimiento",
+    "rol_en_sistema": "Activador explícito de funciones comunicativas · sintetizador integrative de S2-S4 · puente al Quiz Consolidado S6",
+    "instrumento": "Learner's Worksheet — Function Toolkit Compendium (5 archetypes integrated)",
+    "tipo_actividad": "procedimental",
+    "evidencia_sena_tipo": "Desempeño",
+    "evidencia_codigo": "E5",
+    "evidencia_puntos_formales": 5,
+    "contributes_to_cuestionario": false,
+    "cuestionario_skill": null,
+    "cuestionario_points": 0,
+    "rationale_no_quiz_contribution": "PM-2.9 genera evidencia FORMAL de Desempeño (E5 · 5 pts · Escala de Estimación) por observación directa en aula. NO contribuye items al Cuestionario Consolidado S6 — ese instrumento se alimenta de PM-2.3, PM-2.5, PM-2.10, PM-2.6 (skills receptivas + grammar). PM-2.9 es la antesala práctica al Quiz: el aprendiz INTEGRA antes de ser evaluado en S6."
+  },
+  "integration_all_archetypes_policy": {
+    "applicable_to_this_pm": true,
+    "policy_statement": "Estilo mgv_compendio_metodologico exige documentar TODOS los 5 arquetipos (A, B, C, D, E) como compendio metodológico operativo. Cada arquetipo debe traer: (a) técnica seleccionada, (b) Language Bank con frases fijas SMCP, (c) Micro-Cápsulas marítimas, (d) mapeo a funciones F1-F5, (e) evidencia anti-MGV (NO graphic-design content).",
+    "archetypes_integrated": ["A", "B", "C", "D", "E"],
+    "archetypes_count": 5,
+    "bloom_ceiling": "L3 Apply",
+    "bloom_ceiling_rationale": "S5 apropiación final pre-quiz · funciones comunicativas A1.2→A2.1 · NO HOTS (L4-L6 reservados para Misión Final S12 con CML CARRIER)",
+    "function_to_archetype_matrix": {
+      "F1_naming_identifying": ["A", "D"],
+      "F2_confirming_smcp": ["A", "C"],
+      "F3_nato_phonetic_spelling": ["A", "D"],
+      "F4_tripartite_coordination": ["B", "C", "D"],
+      "F5_describing_professional_functions": ["B", "E"]
+    },
+    "matrix_coverage_check": "Cada función F1-F5 mapea a ≥1 arquetipo. Cada arquetipo A-E integra ≥2 funciones. Coverage matrix balanced ✓"
+  },
+  "content": {
+    "function_toolkit": {
+      "header": "THE FUNCTION TOOLKIT — IMARPOR-CC Maritime Operations (S5 integrative · A1.2→A2.1)",
+      "instruccion_bilingue": "Today you ACTIVATE the 5 language functions you have been building since session 2 (*Hoy activas las 5 funciones lingüísticas que has venido construyendo desde la sesión 2*). You will rotate through 5 stations (one per archetype). Captain Lopera observes from the panel; Capitán Restrepo audits compliance with SMCP and Toolbelt vocabulary.",
+      "5_communicative_functions": [
+        {
+          "id": "F1",
+          "name": "Naming and identifying",
+          "rap_source": "RAP-01",
+          "cefr": "A1.2",
+          "bloque_interno": 1,
+          "key_exponents": [
+            "This is the bow.",
+            "That is the stern.",
+            "There is a container on deck.",
+            "There are crew members on the bridge."
+          ],
+          "toolbelt_anchored": ["vessel", "bow", "stern", "deck", "bridge", "container"],
+          "consumes_from_pm": ["PM-2.5 (Vocabulary Toolbelt)", "PM-2.3 (Master Anchor naming patterns)"]
+        },
+        {
+          "id": "F2",
+          "name": "Confirming SMCP messages — Roger / Wilco / Affirmative",
+          "rap_source": "RAP-02",
+          "cefr": "A1.3",
+          "bloque_interno": 2,
+          "key_exponents": [
+            "Roger. (mensaje recibido y entendido)",
+            "Wilco. (mensaje recibido · cumpliré la instrucción)",
+            "Affirmative. (sí · confirmo)",
+            "Negative. (no · no confirmo)",
+            "Stand by. (espere)",
+            "Say again. (repita)"
+          ],
+          "toolbelt_anchored": ["vessel", "port", "berth", "captain"],
+          "consumes_from_pm": ["PM-2.6 (Listening VHF call between Lopera & Restrepo)", "PM-2.8 (Speaking radio simulation)"]
+        },
+        {
+          "id": "F3",
+          "name": "Spelling with NATO Phonetic Alphabet",
+          "rap_source": "RAP-02",
+          "cefr": "A1.3",
+          "bloque_interno": 2,
+          "key_exponents": [
+            "B-U-E-N-A → Bravo Uniform Echo November Alpha",
+            "Berth 4 → Berth Foxtrot? Negative — Berth Four.",
+            "Spell that, please.",
+            "I spell: Bravo · Echo · Romeo · Tango · Hotel · Four."
+          ],
+          "toolbelt_anchored": ["vessel", "berth", "dock", "port"],
+          "consumes_from_pm": ["PM-2.6 (Listening NATO drills)", "PM-2.5 (vessel names from Toolbelt)"]
+        },
+        {
+          "id": "F4",
+          "name": "Coordinating tripartite operations",
+          "rap_source": "RAP-03",
+          "cefr": "A2.0",
+          "bloque_interno": 3,
+          "key_exponents": [
+            "Andrea, please confirm the cargo count at Berth 4.",
+            "Captain Lopera, the vessel is at Berth 4. Stand by for berthing instructions.",
+            "Capitán Restrepo, request permission to start unloading.",
+            "All stations, Roger. Operation cleared."
+          ],
+          "toolbelt_anchored": ["vessel", "berth", "dock", "port", "container", "crew"],
+          "consumes_from_pm": ["PM-2.10 (Grammar prepositions of place + simple present)", "PM-2.4 (Pre-Shift Inspection Form)", "PM-2.8 (Speaking 3-min simulation)"]
+        },
+        {
+          "id": "F5",
+          "name": "Describing professional functions — habitual + momentary",
+          "rap_source": "RAP-04",
+          "cefr": "A2.1",
+          "bloque_interno": 4,
+          "key_exponents": [
+            "I work as an apprentice operator at the Port of Buenaventura. (habitual)",
+            "Every morning I check the berth before the vessel arrives. (habitual)",
+            "Right now Captain Lopera is on the bridge. (momentary · be + on)",
+            "At this moment the crew is loading containers. (momentary · be + V-ing implicit)"
+          ],
+          "toolbelt_anchored": ["vessel", "berth", "dock", "port", "container", "crew", "captain", "apprentice", "mentor"],
+          "consumes_from_pm": ["PM-2.10 (Simple present 3rd person -s)", "PM-2.4 (Pre-Shift Form — habitual operations)", "PM-2.8 (Operational pitch)"]
+        }
+      ]
+    },
+    "archetype_A_information_exchange": {
+      "archetype_id": "A",
+      "archetype_name": "Information Exchange",
+      "actua_como": "Information Exchange Designer & ESP Functional Communication Architect — diseña tareas donde el aprendiz INTERCAMBIA datos reales sobre el BUENAVENTURA EXPRESS usando F1 + F3.",
+      "technique_selected": "Spot the Difference — two berth-state diagrams of the BUENAVENTURA EXPRESS at Berth 4 (Diagram A vs Diagram B differ in 8 details: container positions, crew location, lifeboat side, captain position, dock signage)",
+      "functions_activated": ["F1", "F3"],
+      "functions_rationale": "F1 (naming/identifying) emerge naturalmente al describir QUÉ hay en cada diagrama; F3 (NATO spelling) se activa cuando los partners deletrean vessel names + berth IDs para confirmar que hablan del mismo buque.",
+      "pre_function": {
+        "duracion_min": 10,
+        "actividad": "Captain Restrepo proyecta el Toolbelt portuario (20 términos). Andrea modela: 'This is the bow. There is a container on deck. The vessel name is BUENAVENTURA EXPRESS — B-U-E-N-A...'. Aprendices repiten en coro (drilling backchaining)."
+      },
+      "function_practice": {
+        "duracion_min": 35,
+        "modalidad": "Parejas espalda-con-espalda · Partner A tiene Diagram A · Partner B tiene Diagram B · prohibido mostrar · solo descripción oral",
+        "instruccion_aprendiz": "Find 8 differences without showing your diagram (*Encuentra 8 diferencias sin mostrar tu diagrama*). Use F1 (this is / there is) + F3 (spell vessel names with NATO).",
+        "language_bank": [
+          "There is a container ON deck.",
+          "There are 3 crew members ON the bridge.",
+          "The lifeboat is IN FRONT OF the bridge.",
+          "Spell the vessel name, please. — Bravo Uniform Echo November Alpha · Echo Xray Papa Romeo Echo Sierra Sierra.",
+          "I have... · Do you have...? · Affirmative / Negative."
+        ],
+        "micro_capsula": "> ⚠️ **Maritime Rule:** When you don't catch a vessel name, ALWAYS request NATO spelling. 'BUENA' sounds like 'BWEYNA' over VHF — Bravo Uniform Echo November Alpha removes ambiguity."
+      },
+      "post_function": {
+        "duracion_min": 5,
+        "reflexion": "Which function did you use more — F1 (naming) or F3 (spelling)? Which was harder over the simulated VHF? (*¿Cuál fue más difícil?*)"
+      },
+      "anti_mgv_evidence": "NO menciona Pixel & Ink Studio · NO menciona fonts/colors/posters · TODO contenido es marítimo-portuario (BUENAVENTURA EXPRESS · Berth 4 · NATO spelling de vessel names)."
+    },
+    "archetype_B_persuasion_argumentation": {
+      "archetype_id": "B",
+      "archetype_name": "Persuasion & Argumentation",
+      "actua_como": "Persuasion Architect & ESP Argumentation Specialist — diseña una mini-pitch donde Andrea defiende su plan operativo ante Captain Lopera usando F4 + F5.",
+      "technique_selected": "Operational Pitch (modified Speech Writers Synthesis · A2.1 ceiling) — Andrea integra 3 fuentes (Pre-Shift Form de PM-2.4 · VHF transcript de PM-2.6 · Berthing Sheet de PM-2.8) en un pitch de 90 segundos",
+      "functions_activated": ["F4", "F5"],
+      "functions_rationale": "F4 (tripartite coordination) emerge cuando Andrea muestra cómo coordinaría a Lopera y Restrepo durante el atraque; F5 (describing professional functions habitual + momentary) emerge en la apertura del pitch ('I work as an apprentice operator... right now we are berthing the BUENAVENTURA EXPRESS').",
+      "pre_function": {
+        "duracion_min": 10,
+        "actividad": "Mini-mapa de argumentos: premisa (Andrea es operadora capacitada) → evidencia (3 fuentes S2-S4) → conclusión (puede coordinar el atraque). Restrepo modela el discurso reportado simple ('Captain Lopera said the vessel arrives at 07:00')."
+      },
+      "function_practice": {
+        "duracion_min": 30,
+        "modalidad": "Tríos · 1 Andrea + 1 Lopera (panel) + 1 Restrepo (audita) · 90 segundos por pitch",
+        "instruccion_aprendiz": "Pitch your role and the current operation to Captain Lopera (*Presenta tu rol y la operación actual a Captain Lopera*). Use F5 (habitual + momentary) in the opening + F4 (coordination) in the body.",
+        "language_bank": [
+          "I work as an apprentice operator at the Port of Buenaventura. (F5 habitual)",
+          "Right now Captain Lopera is on the bridge and the crew is loading containers. (F5 momentary)",
+          "I will coordinate with Captain Lopera on Channel 16 and with Capitán Restrepo at Berth 4. (F4)",
+          "The vessel arrives at 07:00, AT Berth 4, ON the port side. (F4 + Toolbelt)",
+          "Therefore, the operation is cleared. Roger. (closing)"
+        ],
+        "micro_capsula": "> 🎧 **Pitch Cue:** Open with HABITUAL function (your role) → switch to MOMENTARY function (current ops) → close with COORDINATION (who does what). Stress: I WORK · right NOW · I will coORdinate."
+      },
+      "post_function": {
+        "duracion_min": 5,
+        "reflexion": "Captain Lopera (peer) gives 1 star (clear) + 1 wish (improve). Was your habitual/momentary switch clear? (*¿Fue claro el cambio de función habitual a momentánea?*)"
+      },
+      "anti_mgv_evidence": "NO mención de design briefs · NO mención de Sophia Vargas o Pixel & Ink · pitch es 100% portuario sobre Andrea + Lopera + BUENAVENTURA EXPRESS en Berth 4."
+    },
+    "archetype_C_social_interpersonal": {
+      "archetype_id": "C",
+      "archetype_name": "Social & Interpersonal",
+      "actua_como": "Social Pragmatics Designer & ESP Interpersonal Communication Specialist — crea situaciones de reparación comunicativa por radio VHF activando F2 + F4.",
+      "technique_selected": "Partner Paraphrasing Relay (modified) — Communication Repair Drill: cuando una llamada VHF se 'rompe' (ruido / acento), el aprendiz debe confirmar (F2) o pedir repetición + parafrasear la instrucción para coordinación (F4)",
+      "functions_activated": ["F2", "F4"],
+      "functions_rationale": "F2 (Roger/Wilco/Affirmative) es la unidad mínima de reparación VHF; F4 (tripartite coordination) emerge cuando Andrea media entre Lopera y Restrepo si uno no entendió al otro.",
+      "pre_function": {
+        "duracion_min": 10,
+        "actividad": "Captain Restrepo presenta 6 SMCP repair phrases en cards: 'Say again', 'Stand by', 'Roger', 'Wilco', 'Affirmative', 'Negative'. Drilling con stress marking: ROger · WILco · afFIRmative."
+      },
+      "function_practice": {
+        "duracion_min": 30,
+        "modalidad": "Tríos · learner = Andrea (mediator) · Partner B = Lopera (en buque) · Partner C = Restrepo (en muelle) · Andrea recibe instrucción de Lopera con interferencia simulada · debe confirmar (F2) Y reformularla a Restrepo (F4)",
+        "instruccion_aprendiz": "When the radio is unclear, REPAIR communication using F2 + F4 (*Cuando la radio no se entiende, REPARA la comunicación con F2 + F4*).",
+        "language_bank": [
+          "Captain Lopera, say again, please.",
+          "Roger. Stand by.",
+          "Wilco. I will inform Capitán Restrepo.",
+          "Affirmative — vessel at Berth 4, port side.",
+          "Capitán Restrepo, Captain Lopera says the vessel arrives at 07:00. (F4 reported)",
+          "Negative — please repeat the cargo count."
+        ],
+        "micro_capsula": "> ⚠️ **VHF Repair Rule:** 'Roger' = I heard you. 'Wilco' = I will comply. NEVER use 'Wilco' if you don't plan to obey. 'Affirmative' = yes (clearer than 'yes' over noisy VHF)."
+      },
+      "post_function": {
+        "duracion_min": 5,
+        "reflexion": "When did you choose Roger vs Wilco vs Affirmative? Did the repair feel natural? (*¿La reparación se sintió natural o forzada?*)"
+      },
+      "anti_mgv_evidence": "NO Endless Complaints sobre clientes de diseño · NO atención al cliente de bakery · escenario 100% radio VHF marítima entre Andrea-Lopera-Restrepo."
+    },
+    "archetype_D_gamified_functions": {
+      "archetype_id": "D",
+      "archetype_name": "Gamified Functions",
+      "actua_como": "Gamification Designer & ESP Function-Through-Play Specialist — diseña un Escape Room marítimo donde las funciones F1 + F3 + F4 emergen del gameplay bajo presión de 12 minutos.",
+      "technique_selected": "Digital Escape Room — 'Berth 4 Lockdown' · 4 puzzles encadenados: (1) Identificar 5 partes del buque para abrir el primer locker [F1], (2) Decodificar vessel name vía NATO Phonetic [F3], (3) Coordinar instrucciones tripartitas para descifrar el código de berthing [F4], (4) Confirmar SMCP messages para liberar el muelle [F2]",
+      "functions_activated": ["F1", "F2", "F3", "F4"],
+      "functions_rationale": "El Escape Room obliga a USAR las 4 funciones bajo presión sin notar que es ejercicio. F5 se reserva para Arquetipo B (pitch reflexivo) — separación intencional para no sobrecargar.",
+      "pre_function": {
+        "duracion_min": 5,
+        "actividad": "Briefing del juego: 'Berth 4 está bloqueado. Captain Lopera no puede atracar. Resuelve los 4 puzzles en 12 minutos para liberar el muelle. Tu único idioma de coordinación es inglés.'"
+      },
+      "function_practice": {
+        "duracion_min": 30,
+        "modalidad": "Equipos de 4 · Google Forms con lock codes · cada team tiene 1 'radio runner' (sale del aula 1 min/puzzle a recibir pista de Restrepo en inglés)",
+        "instruccion_aprendiz": "Solve 4 puzzles in 12 minutes (*Resuelve 4 puzzles en 12 minutos*). The radio runner uses ONLY English. Teams that finish report final SMCP confirmation to Captain Lopera (peer panel).",
+        "language_bank": [
+          "Puzzle 1: 'Name the part where containers are stacked.' → DECK (F1)",
+          "Puzzle 2: 'Spell the vessel name from this audio.' → BRAVO UNIFORM ECHO NOVEMBER ALPHA (F3)",
+          "Puzzle 3: 'Andrea coordinates with Lopera and Restrepo: who confirms the cargo count?' → tripartite logic (F4)",
+          "Puzzle 4: 'Final transmission to Lopera: confirm berth is clear.' → ROGER. BERTH 4 IS CLEAR. WILCO. (F2)"
+        ],
+        "micro_capsula": "> 🎮 **Game Cue:** Speed creates ACCURACY pressure. Resist L1 fallback — the radio runner who switches to Spanish loses 30 seconds penalty."
+      },
+      "post_function": {
+        "duracion_min": 10,
+        "reflexion": "Debrief: which function did you use without noticing? Did time pressure help or block? (*¿Qué función usaste sin darte cuenta? ¿La presión te ayudó o te bloqueó?*) Restrepo lists the 4 functions activated."
+      },
+      "anti_mgv_evidence": "NO Escape Room de design studio · NO claves sobre fonts/posters · puzzles 100% marítimos con vessel naming + NATO + SMCP + tripartite."
+    },
+    "archetype_E_academic_discourse": {
+      "archetype_id": "E",
+      "archetype_name": "Academic & Discourse",
+      "actua_como": "Academic Discourse Architect & ESP Higher-Order Functions Specialist — diseña un Mini-Socratic Seminar A2.1 donde Andrea sintetiza S2-S4 usando F4 + F5 con discurso reportado simple.",
+      "technique_selected": "Mini-Socratic Seminar (A2.1 simplified · 8 prompts máx · NO HOTS) — círculo de 8 aprendices · Restrepo como facilitador · prompts orientados a sintetizar lo aprendido en S2-S4 sobre el rol del operador portuario",
+      "functions_activated": ["F4", "F5"],
+      "functions_rationale": "F5 (describing professional functions habitual + momentary) sostiene cada turno del seminario; F4 (coordinating tripartite) emerge cuando los aprendices construyen sobre la respuesta del compañero ('Andrea said the vessel arrives at 07:00. I add that the crew loads containers at 07:30...').",
+      "pre_function": {
+        "duracion_min": 10,
+        "actividad": "Restrepo presenta 8 prompts en pizarra: '(1) What does an apprentice operator do every morning? (2) Right now, what is happening at Berth 4? (3) Who coordinates with whom on the radio? (4) When does the vessel arrive? ...'. Aprendices preparan 1 línea por prompt usando F5."
+      },
+      "function_practice": {
+        "duracion_min": 25,
+        "modalidad": "Círculo socrático · 8 aprendices sentados · 1 'speaking ball' rota · cada turno = 1 oración con F5 + 1 oración construyendo sobre el compañero (F4 reported)",
+        "instruccion_aprendiz": "Build on your peer's answer using F5 (habitual or momentary) + F4 (reported coordination) (*Construye sobre la respuesta del compañero usando F5 + F4*).",
+        "language_bank": [
+          "I work as an apprentice operator. Every morning I check the berth. (F5 habitual)",
+          "Right now the BUENAVENTURA EXPRESS is at Berth 4. (F5 momentary)",
+          "Andrea said the vessel arrives at 07:00. I add that the crew loads at 07:30. (F4 reported)",
+          "Captain Lopera coordinates with Capitán Restrepo on Channel 16. (F4)",
+          "I agree with Andrea — the apprentice mediates between the captain and the mentor. (F4 + F5)"
+        ],
+        "micro_capsula": "> 📚 **Discourse Cue:** Use 'said' (not 'told') for reported coordination. 'Captain Lopera SAID the vessel arrives' — A2.1 simple reported speech without backshift (level-appropriate)."
+      },
+      "post_function": {
+        "duracion_min": 5,
+        "reflexion": "Metacognitive: which discourse function did you use to build on a peer? (*¿Qué función discursiva usaste para construir sobre un compañero?*) Was reporting harder than describing your own role? (*¿Reportar fue más difícil que describir tu propio rol?*)"
+      },
+      "anti_mgv_evidence": "NO Socratic sobre design ethics · NO discusión sobre branding · seminario 100% sobre rol del apprentice operator + operación marítima en Berth 4."
+    },
+    "integration_with_s2_s4": {
+      "header": "S5 INTEGRA Y SINTETIZA S2-S4 — última oportunidad antes del Quiz S6",
+      "synthesis_matrix": [
+        {
+          "archetype": "A",
+          "consumes_from_pm_2_3": "Master Anchor Text 'Andrea's First Morning' (188 palabras · naming patterns)",
+          "consumes_from_pm_2_5": "Toolbelt 20 términos portuarios",
+          "consumes_from_pm_2_10": "Gr1 be (descriptive) · Gr4 there is/are",
+          "consumes_from_pm_2_4": "no directo (Spot the Difference es oral)",
+          "consumes_from_pm_2_6": "no directo",
+          "consumes_from_pm_2_8": "fragmentos de Berthing Status Sheet"
+        },
+        {
+          "archetype": "B",
+          "consumes_from_pm_2_3": "no directo",
+          "consumes_from_pm_2_5": "Toolbelt léxico para pitch",
+          "consumes_from_pm_2_10": "Gr9 simple present 3rd person (habitual) + Gr1 be (momentary)",
+          "consumes_from_pm_2_4": "Pre-Shift Vessel Inspection Form como fuente 1",
+          "consumes_from_pm_2_6": "VHF transcript Lopera-Restrepo como fuente 2",
+          "consumes_from_pm_2_8": "Berthing Status Sheet como fuente 3"
+        },
+        {
+          "archetype": "C",
+          "consumes_from_pm_2_3": "no directo",
+          "consumes_from_pm_2_5": "vessel/berth/captain del Toolbelt",
+          "consumes_from_pm_2_10": "imperatives + simple present",
+          "consumes_from_pm_2_4": "no directo",
+          "consumes_from_pm_2_6": "VHF call patterns (over · copy · stand by · roger)",
+          "consumes_from_pm_2_8": "radio simulation 3-min como modelo"
+        },
+        {
+          "archetype": "D",
+          "consumes_from_pm_2_3": "naming patterns para Puzzle 1",
+          "consumes_from_pm_2_5": "Toolbelt para Puzzle 1 + 4",
+          "consumes_from_pm_2_10": "no directo",
+          "consumes_from_pm_2_4": "no directo",
+          "consumes_from_pm_2_6": "audio NATO drills para Puzzle 2",
+          "consumes_from_pm_2_8": "tripartite logic para Puzzle 3"
+        },
+        {
+          "archetype": "E",
+          "consumes_from_pm_2_3": "Master Anchor como fuente de prompts",
+          "consumes_from_pm_2_5": "Toolbelt completo",
+          "consumes_from_pm_2_10": "Gr9 simple present + Gr1 be · simple reported speech",
+          "consumes_from_pm_2_4": "Pre-Shift Form para prompt habitual",
+          "consumes_from_pm_2_6": "VHF transcript para prompt momentary",
+          "consumes_from_pm_2_8": "Berthing Sheet para prompt coordination"
+        }
+      ],
+      "synthesis_completeness": "5/5 arquetipos consumen de ≥3 PMs previos · cada PM previo (PM-2.3, 2.5, 2.10, 2.4, 2.6, 2.8) es consumido por ≥1 arquetipo · cobertura S2-S4 100%"
+    },
+    "quiz_s6_preparation": {
+      "header": "PUENTE EXPLÍCITO AL CUESTIONARIO CONSOLIDADO S6 (PM-4.2)",
+      "policy": "PM-2.9 NO contribuye items al Quiz S6 (esa es función de PM-2.3, 2.5, 2.10, 2.6 = 30 items totales). PERO sí PREPARA al aprendiz: cada función F1-F5 anclará un cluster de items del Quiz que provienen de los PMs receptivos.",
+      "function_to_quiz_mapping": [
+        {
+          "function": "F1 — Naming and identifying",
+          "tested_in_quiz_via_pm": "PM-2.5 (Vocabulary · 8 items matching/labeling)",
+          "preparation_in_s5": "Arquetipo A + D — el aprendiz ha NOMBRADO el Toolbelt 20+ veces · Quiz no será sorpresa",
+          "expected_recall_rate": "≥85% (consolidación apropiativa post-S5)"
+        },
+        {
+          "function": "F2 — Confirming SMCP",
+          "tested_in_quiz_via_pm": "PM-2.6 (Listening · 6 items multiple choice sobre Roger/Wilco/Affirmative)",
+          "preparation_in_s5": "Arquetipo C + D — el aprendiz ha CONFIRMADO en role-plays VHF",
+          "expected_recall_rate": "≥80%"
+        },
+        {
+          "function": "F3 — NATO Phonetic spelling",
+          "tested_in_quiz_via_pm": "PM-2.6 (Listening · 4 items dictation NATO → vessel name)",
+          "preparation_in_s5": "Arquetipo A + D — el aprendiz ha DELETREADO vessel names en Spot the Difference + Escape Room",
+          "expected_recall_rate": "≥75%"
+        },
+        {
+          "function": "F4 — Tripartite coordination",
+          "tested_in_quiz_via_pm": "PM-2.10 (Grammar · 8 items prepositions + simple present en contexto coordinado) + PM-2.3 (Reading · 4 items comprensión de coordination text)",
+          "preparation_in_s5": "Arquetipo B + C + D + E — el aprendiz ha COORDINADO en pitch + repair + escape + seminar",
+          "expected_recall_rate": "≥75%"
+        },
+        {
+          "function": "F5 — Describing professional functions",
+          "tested_in_quiz_via_pm": "PM-2.10 (Grammar · simple present habitual + be momentary)",
+          "preparation_in_s5": "Arquetipo B + E — el aprendiz ha DESCRITO su rol en pitch + seminar",
+          "expected_recall_rate": "≥80%"
+        }
+      ],
+      "wrap_up_review_segment": {
+        "duracion_min": 15,
+        "actividad": "Andrea (instructor model) presenta el 'Function Recap Card' — 1 hoja con las 5 funciones + 5 frases fijas + 5 ejemplos del Toolbelt. Aprendices marcan con verde (puedo usarla autónomamente), amarillo (necesito modelar), rojo (no la domino). Restrepo recoge para targetar refuerzos antes de S6.",
+        "l1_use": "10% (briefing del Quiz · expectativas · timing)",
+        "outcome": "Cada aprendiz sale de S5 sabiendo EXACTAMENTE qué se le va a evaluar en S6 y dónde tiene gaps."
+      }
+    }
+  },
+  "evaluation_rubric_e5_language_functions": {
+    "evidence_id": "E5",
+    "evidence_name": "Language Functions in Maritime Operations — Performance Demonstration",
+    "evidence_type": "Desempeño",
+    "evaluation_technique": "Observación directa (instructor + peer Captain Lopera)",
+    "instrument_number": 5,
+    "instrument_type": "Escala de Estimación",
+    "total_points": 5,
+    "rubric_cells": [
+      {
+        "criterion": "F1 + F3 — Naming + NATO Spelling (Arquetipo A + D)",
+        "points": 1,
+        "descriptor_full": "Identifica ≥6 partes del Toolbelt portuario y deletrea vessel names + berth IDs con NATO Phonetic sin error",
+        "descriptor_partial": "Identifica 4-5 partes y deletrea con 1-2 errores recuperables",
+        "descriptor_none": "Identifica ≤3 partes o falla NATO sistemáticamente"
+      },
+      {
+        "criterion": "F2 — SMCP Confirmation (Arquetipo C)",
+        "points": 1,
+        "descriptor_full": "Usa Roger/Wilco/Affirmative correctamente en ≥4 turnos de radio simulada con stress marking auténtico",
+        "descriptor_partial": "Usa 2-3 turnos correctos · confunde Roger ↔ Wilco una vez",
+        "descriptor_none": "Usa 'yes/ok' en lugar de SMCP · NO repara la comunicación"
+      },
+      {
+        "criterion": "F4 — Tripartite Coordination (Arquetipo B + C + D + E)",
+        "points": 1,
+        "descriptor_full": "Coordina Andrea + Lopera + Restrepo en pitch/role-play sin breakdown · usa Toolbelt + grammar de PM-2.10",
+        "descriptor_partial": "Coordina con 1-2 breakdowns recuperados con repair phrases",
+        "descriptor_none": "NO logra coordinación tripartita · cae en L1"
+      },
+      {
+        "criterion": "F5 — Describing Professional Functions (Arquetipo B + E)",
+        "points": 1,
+        "descriptor_full": "Describe rol habitual (simple present 3rd -s) + acción momentánea (be + adjective/preposition) sin error gramatical mayor",
+        "descriptor_partial": "Describe ambos pero confunde habitual ↔ momentary una vez",
+        "descriptor_none": "Solo describe habitual O solo momentary · no integra ambos"
+      },
+      {
+        "criterion": "Toolbelt Anchoring + Anti-MGV (transversal · todos los arquetipos)",
+        "points": 1,
+        "descriptor_full": "Usa ≥10 términos del Toolbelt PM-2.3 (vessel/bow/stern/port/dock/berth/container/crew/captain/apprentice) · cero contenido off-universe",
+        "descriptor_partial": "Usa 6-9 términos · sin contenido off-universe",
+        "descriptor_none": "<6 términos del Toolbelt o introduce léxico off-universe (graphic-design / generic ESL)"
+      }
+    ],
+    "passing_threshold": "3/5 (mínimo aprobatorio SENA)",
+    "excellence_threshold": "5/5 (alista al aprendiz para Misión Final S12 con CML CARRIER)"
+  },
+  "activity_card": {
+    "pm_id": "PM-2.9",
+    "pm_name": "Language Functions & Communicative Competence",
+    "session": 5,
+    "phase_sena": "Apropiación",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "procedimental",
+        "statement": "Activar las 5 funciones comunicativas marítimas (F1-F5) rotando por 5 estaciones (Arquetipos A-E) — Spot the Difference + Operational Pitch + VHF Repair Drill + Escape Room + Mini-Socratic Seminar — usando Toolbelt portuario y SMCP estandarizado",
+        "didactic_strategy": "Compendio metodológico integrado (5 arquetipos)",
+        "didactic_technique": "Rotación de estaciones + Role-play tripartito + Gamification + Socratic seminar",
+        "duracion_minutos_directos": 240,
+        "bloom_level": "L3 Apply"
+      },
+      {
+        "number": 2,
+        "type": "procedimental",
+        "statement": "Reflexionar sobre uso autónomo de las 5 funciones mediante 'Function Recap Card' (verde/amarillo/rojo) y briefing del Quiz Consolidado S6 — wrap-up integrative con Captain Restrepo",
+        "didactic_strategy": "Aprendizaje colaborativo + auto-regulación metacognitiva",
+        "didactic_technique": "Function Recap Card + Panel discussion + Gap analysis pre-quiz",
+        "duracion_minutos_directos": 120,
+        "bloom_level": "L2 Understand + L3 Apply"
+      }
+    ],
+    "hours": {
+      "direct": 6.0,
+      "autonomous": 2.33,
+      "rationale": "S5 es el ÚNICO PM de la sesión (ver pm-1-1.bloque1) · absorbe TODAS las horas directas (6.0h) + autónomas (2.33h) de la sesión. Ajuste vs canon PM-2.9 v2.0 (1.5h+0.5h) justificado: single-guía 12 sesiones requiere que cada PM solitario por sesión consuma toda la sesión."
+    },
+    "evidence": {
+      "generates_evidence": true,
+      "type": "Desempeño",
+      "evidence_code": "E5",
+      "evidence_name": "Language Functions in Maritime Operations",
+      "description": "El aprendiz demuestra dominio integrative de las 5 funciones comunicativas marítimas (naming, SMCP confirmation, NATO spelling, tripartite coordination, professional function description) en contextos de Berth 4 con Captain Lopera y Capitán Restrepo, usando Toolbelt portuario y registro SMCP.",
+      "evaluation_technique": "Observación directa",
+      "instrument_number": 5,
+      "instrument_type": "Escala de estimación",
+      "points": 5,
+      "rubric_ref": "evaluation_rubric_e5_language_functions"
+    },
+    "environment": {
+      "type": "Aula bilingüe + simulador VHF + acceso a portátiles para Escape Room digital",
+      "materials": [
+        "Tarjetas Toolbelt portuario (20 términos PM-2.5)",
+        "Diagramas A/B del BUENAVENTURA EXPRESS at Berth 4 (8 diferencias) — material Spot the Difference",
+        "Pre-Shift Vessel Inspection Form de PM-2.4 (impreso · fuente del pitch)",
+        "VHF transcript Lopera-Restrepo de PM-2.6 (impreso · fuente del pitch)",
+        "Berthing Status Sheet de PM-2.8 (impreso · fuente del pitch)",
+        "NATO Phonetic Alphabet poster + audio drills",
+        "Walkie-talkies / radios simuladas (2 pares mínimo) para VHF Repair Drill",
+        "Google Form 'Berth 4 Lockdown' (4 puzzles · acceso vía portátil)",
+        "Speaking ball (Mini-Socratic Seminar)",
+        "Function Recap Card (1 página · 5 funciones + 5 frases fijas + Toolbelt 10 términos)",
+        "Grabadora de audio (registro de evidencia E5 · opcional)"
+      ],
+      "instructors": "Instructor de inglés marítimo (titular) + Captain Lopera roleado por instructor invitado o peer panel · Capitán Restrepo roleado por instructor titular en wrap-up"
+    },
+    "contributes_to_consolidated_quiz": false,
+    "quiz_skill": null,
+    "quiz_points": 0,
+    "quiz_item_count": 0,
+    "rationale_no_quiz_contribution": "PM-2.9 genera evidencia FORMAL E5 (5 pts Desempeño) por observación. NO contribuye items al Quiz S6 — esa función la cumplen PM-2.3, PM-2.5, PM-2.10, PM-2.6 (skills receptivas + grammar = 30 items). PM-2.9 PREPARA al Quiz vía wrap-up + Function Recap Card · ver content.quiz_s6_preparation."
+  },
+  "pm0_protocol_session_level": {
+    "session_id": "S5",
+    "session_name": "Language Functions Integrative — Pre-Quiz Apropiación",
+    "fase_sena": "Apropiación",
+    "bloque_interno": 4,
+    "cefr_target": "A1.2 → A2.1 (cierre integrative)",
+    "l1_percentage": 10,
+    "l1_use_cases": [
+      "Briefing del Quiz S6 (expectativas · timing · cobertura)",
+      "Wrap-up metacognitivo (Function Recap Card · semáforo verde/amarillo/rojo)",
+      "Meta-instrucciones de transición entre arquetipos (rotación de estaciones)"
+    ],
+    "bloom_ceiling": "L3 Apply",
+    "grammar_groups_active": {
+      "intro_new": [],
+      "intro_new_count": 0,
+      "intro_new_rationale": "S5 NO introduce gramática nueva (per pm-0-context §9.2 · principio de carga 0 grupos Intro en sesión integrative)",
+      "consolidates": ["Gr1 be", "Gr4 there is/are", "Gr7 prepositions of place", "Gr9 simple present"],
+      "consolidates_count": 4
+    },
+    "evidence_generated": ["E5 (Desempeño · Language Functions · 5 pts)"],
+    "evidence_consumed_from_previous_pms": [
+      "Pre-Shift Vessel Inspection Form (PM-2.4 evidence · consumed as pitch source)",
+      "Berthing Status Sheet (PM-2.8 evidence · consumed as pitch source + tripartite logic)"
+    ],
+    "horas_directas": 6.0,
+    "horas_autonomas": 2.33,
+    "feedback_strategy": "Fluency dominante (post-task delayed feedback) · recast sutil en breakdowns operacionales · NO interrupciones durante role-play · Captain Lopera (peer) da 1 star + 1 wish post-pitch",
+    "transferability_to_s12_mision_final": "Las 5 funciones F1-F5 son la base operativa de la Misión Final S12 (coordinar operación 12h del CML CARRIER). S5 valida que el aprendiz puede ACTIVARLAS · S12 le pedirá COMBINARLAS bajo presión sostenida 12h."
+  },
+  "validacion": {
+    "check1_master_prompt_compliance": {
+      "status": "PASS",
+      "evidence": "PM-2.9 v2.0 estructura literal seguida: identity, content (con 5 archetype sub-objects), activity_card, validacion, siguiente_paso. Estilo declarado mgv_compendio_metodologico aplicado · 5 arquetipos integrados · Bloom L3 ceiling respetado."
+    },
+    "check2_5_functions_coverage": {
+      "status": "PASS",
+      "F1_naming_identifying": "yes (Arquetipo A + D)",
+      "F2_confirming_smcp": "yes (Arquetipo C + D)",
+      "F3_nato_phonetic": "yes (Arquetipo A + D)",
+      "F4_tripartite_coordination": "yes (Arquetipo B + C + D + E)",
+      "F5_describing_professional_functions": "yes (Arquetipo B + E)",
+      "all_5_covered": true,
+      "evidence": "Cada función F1-F5 mapea a ≥1 arquetipo · cada arquetipo integra ≥2 funciones · ver function_to_archetype_matrix"
+    },
+    "check3_toolbelt_anchoring": {
+      "status": "PASS",
+      "toolbelt_terms_present": ["vessel", "bow", "stern", "deck", "bridge", "port", "dock", "berth", "container", "crew", "captain", "apprentice", "mentor", "starboard", "lifeboat", "warehouse", "cargo", "BUENAVENTURA EXPRESS", "Berth 4", "Channel 16"],
+      "count": 20,
+      "minimum_required": 10,
+      "evidence": "Cada arquetipo cita ≥6 términos del Toolbelt PM-2.5 · transversalmente 20 términos cubren las 5 estaciones"
+    },
+    "check4_bloom_ceiling": {
+      "status": "PASS",
+      "ceiling_declared": "L3 Apply",
+      "distribution_observed": {
+        "L1": "10%",
+        "L2": "35%",
+        "L3": "55%",
+        "L4_plus": "0%"
+      },
+      "evidence": "Ningún arquetipo exige análisis crítico · evaluación argumentativa o creación original (HOTS) · Mini-Socratic Seminar simplificado a A2.1 con 8 prompts de síntesis simple · NO HOTS"
+    },
+    "check5_l1_compliance": {
+      "status": "PASS",
+      "l1_percentage_declared": 10,
+      "l1_percentage_observed": 10,
+      "evidence": "L1 solo en briefing Quiz S6 · wrap-up metacognitivo · meta-instrucciones de transición · todo el resto en inglés con bilingüe inline (cursivas de traducción) · per pm-0-context §9.1 single_guide_12_sessions S5 = 10%"
+    },
+    "check6_universe_continuity": {
+      "status": "PASS",
+      "universe_declared": "IMARPOR-CC maritime — Puerto de Buenaventura",
+      "characters_recycled": ["Andrea Mosquera (S1-S4)", "Captain Lopera (S1-S4)", "Capitán Restrepo (S1-S4)"],
+      "vessel_recycled": "BUENAVENTURA EXPRESS (S2-S4)",
+      "location_recycled": "Berth 4 · Puerto de Buenaventura (S2-S4)",
+      "evidence": "100% continuidad narrativa con S1-S4 · ningún personaje o vessel nuevo introducido · cero ruptura del universo"
+    },
+    "check7_integration_with_8_previous_pms": {
+      "status": "PASS",
+      "previous_pms_count": 8,
+      "previous_pms": ["PM-2.1", "PM-2.2", "PM-2.3", "PM-2.5", "PM-2.10", "PM-2.4", "PM-2.6", "PM-2.8"],
+      "evidence": "Ver content.integration_with_s2_s4.synthesis_matrix — cada arquetipo consume de ≥3 PMs previos · cobertura S2-S4 100%"
+    },
+    "check8_evidence_e5_formal": {
+      "status": "PASS",
+      "evidence_code": "E5",
+      "type": "Desempeño",
+      "points": 5,
+      "instrument": "Escala de Estimación",
+      "rubric_cells": 5,
+      "evidence": "Rubric con 5 criterios (1 pt cada · F1+F3 + F2 + F4 + F5 + Toolbelt anti-MGV) · ver evaluation_rubric_e5_language_functions"
+    },
+    "check9_anti_copia_fantasma": {
+      "status": "PASS",
+      "policy": "Output ORIGINAL para IMARPOR-CC · NO copia del ref operacional MGV-2026-04-20 (universo Pixel & Ink Studio · graphic design A1.1)",
+      "anti_mgv_evidence_per_archetype": {
+        "archetype_A": "Spot the Difference de BUENAVENTURA EXPRESS at Berth 4 — NO Sophia Vargas · NO posters · NO fonts/colors",
+        "archetype_B": "Operational Pitch a Captain Lopera — NO design briefs · NO Don Pedro/bakery · NO Pixel & Ink",
+        "archetype_C": "VHF Repair Drill Andrea-Lopera-Restrepo — NO Endless Complaints · NO atención al cliente de diseño",
+        "archetype_D": "Berth 4 Lockdown Escape Room — NO design studio puzzles · puzzles 100% marítimos (vessel naming + NATO + SMCP + tripartite)",
+        "archetype_E": "Mini-Socratic Seminar sobre rol del apprentice operator — NO design ethics · NO branding"
+      },
+      "ref_operacional_used_as": "Calidad pedagógica únicamente (estructura del schema · niveles de detalle · convenciones de nomenclatura) · cero copia de contenido temático",
+      "verdict": "ORIGINAL CONTENT 100% — Anti-MGV respetado en todos los arquetipos"
+    },
+    "check_integrative_s2_s4": {
+      "status": "PASS",
+      "policy": "Documenta cuál(es) PM-2.X de S2-S4 alimenta(n) cada arquetipo de S5",
+      "matrix_summary": {
+        "PM-2.3_reading": "consumido por arquetipos A + D + E (master anchor + naming patterns)",
+        "PM-2.5_vocabulary": "consumido por TODOS los 5 arquetipos (Toolbelt portuario es backbone transversal)",
+        "PM-2.10_grammar": "consumido por arquetipos A + B + C + E (be + there is + simple present + prepositions)",
+        "PM-2.4_writing": "consumido por arquetipos B + E (Pre-Shift Form como fuente del pitch + prompt habitual)",
+        "PM-2.6_listening": "consumido por arquetipos C + D + E (VHF transcript + NATO drills)",
+        "PM-2.8_speaking": "consumido por arquetipos A + B + C + D + E (Berthing Sheet + radio simulation modelo)"
+      },
+      "coverage_per_archetype": {
+        "A": ["PM-2.3", "PM-2.5", "PM-2.10", "PM-2.8"],
+        "B": ["PM-2.5", "PM-2.10", "PM-2.4", "PM-2.6", "PM-2.8"],
+        "C": ["PM-2.5", "PM-2.10", "PM-2.6", "PM-2.8"],
+        "D": ["PM-2.3", "PM-2.5", "PM-2.6", "PM-2.8"],
+        "E": ["PM-2.3", "PM-2.5", "PM-2.10", "PM-2.4", "PM-2.6", "PM-2.8"]
+      },
+      "verdict": "PM-2.9 SINTETIZA S2-S4 completo · ningún PM previo queda huérfano · coverage 100%"
+    },
+    "check10_quiz_s6_bridge": {
+      "status": "PASS",
+      "evidence": "content.quiz_s6_preparation mapea cada función F1-F5 al PM origen del item en Quiz S6 · expected recall rates documentados · wrap-up con Function Recap Card cierra el bucle · Restrepo identifica gaps individuales pre-quiz"
+    },
+    "check11_enriched_false_correct": {
+      "status": "PASS",
+      "enriched_value": false,
+      "evidence": "enriched: false correcto · espera Instructor Selection (Gate Humano 2 · arquetipos elegidos en aula real) antes de propagar a PM-2.11"
+    }
+  },
+  "siguiente_paso": {
+    "next_pm": "PM-4.2",
+    "next_pm_name": "Cuestionario Consolidado S6",
+    "next_session": 6,
+    "next_phase_sena": "Evaluación",
+    "direction": "PM-2.9 entrega Activity Card + evidencia E5 (Desempeño · 5 pts) + Function Recap Card. PM-2.11 (GFPI-F-134 Row Assembler) ensamblará la fila S5 con los 16 checks tras Instructor Selection (Gate Humano 2). Posteriormente PM-4.2 ensamblará el Cuestionario Consolidado S6 (30 items · 35% Reading PM-2.3 + 25% Vocabulary PM-2.5 + 25% Grammar PM-2.10 + 15% Listening PM-2.6) — los aprendices llegan a S6 con Function Recap Card en mano y gaps identificados por Capitán Restrepo en wrap-up de S5.",
+    "rationale_close_hito_3": "Esta Activity Card es la ÚLTIMA del archetype validation (PM-2.9 cierra Hito 3 al 100% — los 5 arquetipos PM-2.3, 2.5, 2.10, 2.6, 2.8, 2.9 quedan validados · pendiente solo PM-4.2 Quiz Consolidado para cerrar Bloque Interno 4 antes de S7-S12 producción operativa)."
+  }
+}

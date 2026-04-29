@@ -1,0 +1,774 @@
+{
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "pm_code": "PM-2.10",
+  "pm_name": "Grammar — Structure Use (Inductive to Automatic)",
+  "pm_version": "2.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "cefr_level": "A1.2",
+  "session": 3,
+  "fase_sena": "Apropiación",
+  "generated_at": "2026-04-28",
+  "instructor": "Sergio Cortés Perdomo",
+  "previous_pms": ["PM-2.1", "PM-2.2", "PM-2.3", "PM-2.5"],
+  "archetypes_policy": "TODOS LOS 5 ARQUETIPOS INTEGRADOS (A+B+C+D+E) — estilo declarado mgv_compendio_metodologico (Gate Humano 1 · arquetipos-elegidos.json)",
+  "estilo_aplicado": "mgv_compendio_metodologico",
+  "enriched": false,
+  "_enriched_false_rationale": "Espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. Sergio debe (a) elegir flow_id para la cohorte real, (b) validar Syntax Blueprint generado original (CHECK 9 anti-copia-fantasma) y (c) marcar enriched: true.",
+  "pm0_anchor": {
+    "source_file": "pm-0-context.json",
+    "cefr_descriptor_ref": "§6.A1.2 — uso productivo controlado de oraciones simples afirmativas, negativas e interrogativas con vocabulario operativo del sector marítimo-portuario",
+    "l1_policy_ref": "§9.1.single_guide_12_sessions — L1% S3≈18% (curva descendente desde S2=22%; meta interna A1.2 → A2.1)",
+    "methodological_shift_ref": "§5.A1.2 — input estructurado con descubrimiento guiado · accuracy-prioritario para la nueva carga (prepositions of place + simple present de operaciones)",
+    "feedback_ref": "§5.6 — S3 mantiene corrección explícita en producción escrita y recast en producción oral · introduce auto-corrección guiada (Archetype E)",
+    "stress_pronunciation_ref": "§5.8 — S3 par mínimo 'arrives /əˈraɪvz/' vs 'leaves /liːvz/' + énfasis en /-s/ tercera persona singular del simple present",
+    "success_vocabulary_ref": "§5.10 — S3 recicla 18/20 términos del Toolbelt S2 + introduce 2 nuevos (crew, berthing) en estructuras gramaticales",
+    "grammar_roadmap_ref": "§9.2.G1_A1.2 — S3 INTRO: Grupo 7 prepositions of place (in/on/at/under/behind/in front of) + Grupo 9 simple present de operaciones (arrives, leaves, loads, departs). S3 CONSOLIDA: Grupo 1 be + Grupo 4 there is/there are (heredados de S2). 2 Intro respeta carga ≤ 2 PM-0 §9.2",
+    "cefr_ceiling": "A1.2",
+    "grammar_session_3_intro": [
+      "Gr7 prepositions of place (in/on/at/under/behind/in front of)",
+      "Gr9 simple present (operations: arrives, leaves, loads, departs)"
+    ],
+    "grammar_session_3_consolidate": [
+      "Gr1 be (heredado S2)",
+      "Gr4 there is/there are (heredado S2)"
+    ],
+    "l1_percentage_s3": 18,
+    "feedback_mode_dominant": "Guided discovery (PRE) + Explicit explanation (DURING) + Self-editing checklist (POST)",
+    "success_factors_applied": [
+      "Salience (prepositions destacadas con color azul · verbos -s con subrayado rojo)",
+      "Use (producción inmediata en mini-tasks de cada arquetipo)",
+      "Connection (cada estructura ligada a verbo/sustantivo del Toolbelt portuario)",
+      "Context (operaciones reales del Puerto de Buenaventura — atraque, descarga, maniobra)",
+      "Emotion (reto de localizar a Captain Lopera en el buque · personalización con turno propio del aprendiz)",
+      "Spaced repetition (Gr1 + Gr4 reciclados desde S2 · Gr7 + Gr9 reapareen S4-S12)",
+      "Synergy (la gramática refleja Reading PM-2.3 + alimenta Writing PM-2.4)"
+    ]
+  },
+  "universe_anchor": {
+    "continuity_with_s2": "S2 cerró con Andrea Mosquera leyendo el Master Anchor Text 'Andrea's First Morning' y dominando 18/20 términos del Toolbelt portuario + las estructuras be y there is/there are. S3 abre con Andrea preparando su primer reporte escrito de operaciones — necesita ubicar objetos en el buque (prepositions of place) y describir lo que sucede en cada turno (simple present de operaciones).",
+    "narrative_function": "Andrea modela el descubrimiento gramatical: extrae las preposiciones de las oraciones del manual de S2 ('There are containers ON deck', 'There is a bridge ON TOP') y observa cómo Captain Restrepo describe operaciones en simple present ('The vessel arrives at 07:00. Captain Lopera leaves the bridge at 19:00.'). El aprendiz se identifica con Andrea: ambos descubren las dos estructuras desde datos auténticos.",
+    "characters_active": [
+      "Andrea Mosquera (aprendiz-investigadora gramatical · descubre las reglas en datos del manual)",
+      "Capitán Restrepo (mentor SENA · valida hipótesis gramaticales con ejemplos del Puerto de Buenaventura)",
+      "Captain Lopera (cliente externo permanente · capitán del BUENAVENTURA EXPRESS · referente para simple present de operaciones)"
+    ],
+    "vessel_referenced": "BUENAVENTURA EXPRESS (Berth 4 · contenedores en cubierta · ejemplos productivos)",
+    "location_referenced": "Puerto de Buenaventura (Pacífico colombiano · sede operativa de la guía única)",
+    "vocabulary_recycled_from_s2": ["vessel", "bow", "stern", "deck", "bridge", "port", "dock", "berth", "container", "captain", "apprentice", "mentor"],
+    "vocabulary_introduced_s3": ["crew (tripulación)", "berthing (atraque · acción)"]
+  },
+  "integration_all_archetypes_policy": {
+    "applicable_to_this_pm": true,
+    "archetypes_integrated": ["A", "B", "C", "D", "E"],
+    "total_archetypes": 5,
+    "rationale_estilo_2026-04-28": "Estilo declarado mgv_compendio_metodologico (Gate Humano 1 · arquetipos-elegidos.json). Documentar TODOS los arquetipos como menú permite al instructor rotar según contexto del grupo. PM-2.10 v2.0 explícitamente entrega un MENÚ DE ARQUETIPOS que el instructor combina (A descubre, B automatiza, C atrapa en tarea, D produce creativamente, E corrige).",
+    "recommended_minimum_coverage_per_session": "Al menos 2 arquetipos del menú (típico flow: A→B o A→C)",
+    "archetypes_most_apt_for_a12_imarpor": [
+      "A (Discovery — partir de oraciones del manual S2 para descubrir prepositions y -s tercera persona)",
+      "B (Controlled Practice — gap-fills sobre el turno de Andrea en Berth 4)",
+      "E (Editing — corregir reportes de aprendices con errores típicos de prepositions y agreement)"
+    ],
+    "archetypes_stretch_for_a12": [
+      "C (Communicative Tasks — Information Gap sobre la posición de tripulantes en el buque)",
+      "D (Creative Production — escribir el turno completo de Andrea con prepositions y simple present)"
+    ],
+    "bloom_ceiling": "L3 Apply (NO HOTS · A1.2 strict · grammar consciousness-raising + controlled practice + communicative tasks · L4-L5 NO permitidos en PM-2.10 S3)"
+  },
+  "identity": {
+    "codigo": "PM-2.10",
+    "nombre": "Structure Use & Grammar — Inductive to Automatic",
+    "subfase_guia_sena": "3.3 Actividades de apropiación del conocimiento",
+    "ubicacion_guia": "Sección 3.3-3.4 Apropiación/Transferencia",
+    "tipo_evidencia_sena": "N/A (actividad cognitiva de práctica estructural · alimenta Cuestionario consolidado S6)",
+    "instrumento": "Learner's Worksheet — STRUCTURE USE Grammar (referido a PM-4.1 Cuestionario consolidado)",
+    "estructura": "MENÚ DE ARQUETIPOS — TODOS INTEGRADOS (A+B+C+D+E)",
+    "rol_sistema": "Ancla estructural de S3 — descubre + automatiza Gr7 prepositions y Gr9 simple present para que PM-2.4 Writing las consuma en producción escrita del shift notice propio del aprendiz"
+  },
+  "content": {
+    "worksheet_title": "STRUCTURE USE — Grammar (The Syntax Blueprint of Operations)",
+    "guia_header": "IMARPOR-CC · Guía 1 · The Maritime Operations Pro · Nivel A1.2 · Sesión 3",
+    "bilingual_instruction_block": {
+      "main_message_en": "Today, you become Andrea's grammar partner. You discover two patterns hidden in yesterday's manual: WHERE things are on the vessel, and WHAT happens during each shift. By the end, you will write your own shift notice for Berth 4.",
+      "main_message_es_cursiva": "Hoy, te conviertes en el compañero gramatical de Andrea. Descubres dos patrones escondidos en el manual de ayer: DÓNDE están las cosas en el buque y QUÉ sucede en cada turno. Al final, escribirás tu propio aviso de turno para Atraque 4."
+    },
+    "the_syntax_blueprint": {
+      "icon": "📐",
+      "title_en": "THE SYNTAX BLUEPRINT — Two Patterns of the Port",
+      "title_es": "EL PLANO SINTÁCTICO — Dos Patrones del Puerto",
+      "blueprint_1_prepositions_of_place": {
+        "structure_name_en": "Gr7 — Prepositions of Place",
+        "structure_name_es": "Gr7 — Preposiciones de lugar",
+        "formula": "[Subject] + [be] + [preposition] + [the location]",
+        "preposition_set": ["in", "on", "at", "under", "behind", "in front of"],
+        "examples_from_master_anchor_text_s2": [
+          "There are containers ON deck.",
+          "There is a bridge ON TOP.",
+          "The vessel is AT Berth 4.",
+          "Captain Lopera is IN the bridge.",
+          "The dock is IN FRONT OF the warehouse."
+        ],
+        "pattern_visual": "Subject → BE → PREPOSITION → Location · ej: 'The crew is ON the deck.'",
+        "micro_capsula": "> ⚠️ **Grammar Rule:** Use ON for surfaces (on deck, on the bridge). Use IN for closed spaces (in the cabin, in the bridge). Use AT for points (at Berth 4, at 07:00). (*Usa ON para superficies. Usa IN para espacios cerrados. Usa AT para puntos.*)"
+      },
+      "blueprint_2_simple_present_operations": {
+        "structure_name_en": "Gr9 — Simple Present (Operations)",
+        "structure_name_es": "Gr9 — Presente simple (Operaciones)",
+        "formula_affirmative": "[Subject] + [verb] / [verb-s for he/she/it]",
+        "formula_negative": "[Subject] + [do/does not] + [verb base]",
+        "formula_question": "[Do/Does] + [subject] + [verb base]?",
+        "key_verbs_operations": ["arrives", "leaves", "loads", "unloads", "departs", "starts", "ends"],
+        "examples_from_master_anchor_text_s2": [
+          "The BUENAVENTURA EXPRESS arrives at 07:00.",
+          "The crew loads containers on deck.",
+          "Captain Lopera leaves the bridge at 19:00.",
+          "The shift starts at 06:00.",
+          "The vessel departs at 14:00."
+        ],
+        "pattern_visual": "He / She / It + verb-s · I / You / We / They + verb · ej: 'The captain ARRIVES. The aprendices ARRIVE.'",
+        "micro_capsula": "> ⚠️ **Grammar Rule:** Add -s when the subject is HE, SHE, or IT (one vessel, one captain, one container). NO -s for I, you, we, they. (*Agrega -s cuando el sujeto es ÉL, ELLA o ESO.*)"
+      }
+    },
+    "archetype_A_DISCOVERY_CR": {
+      "archetype_id": "A",
+      "name_en": "DISCOVERY & CONSCIOUSNESS-RAISING — Find the Pattern",
+      "name_es": "DESCUBRIMIENTO Y CONCIENCIA — Encuentra el Patrón",
+      "actua_como": "Grammar Discovery Coach & ESP Inductive Grammar Specialist",
+      "selected_techniques": ["Consciousness-Raising Tasks", "Data-Based Discovery", "Rule Formulation"],
+      "rationale_a12": "Discovery funciona con A1.2 cuando el corpus es controlado (6-8 oraciones del Master Anchor Text S2 ya conocidas). El aprendiz no inventa de cero — extrae el patrón de datos que ya leyó ayer. Bloom L2-L3 (entender, aplicar) sin pasar a L4 análisis abstracto.",
+      "time_minutes": 30,
+      "pre_discovery": {
+        "title_en": "PRE — Activate yesterday's text",
+        "title_es": "PRE — Activa el texto de ayer",
+        "time_minutes": 5,
+        "instruction_en": "Look at this corpus from Andrea's manual. Read each sentence in pairs. Do NOT translate. Just notice.",
+        "instruction_es_cursiva": "Mira este corpus del manual de Andrea. Lee cada oración en parejas. NO traduzcas. Solo observa.",
+        "corpus_for_discovery": [
+          "1. There are containers ON deck.",
+          "2. There is a bridge ON TOP.",
+          "3. The vessel is AT Berth 4.",
+          "4. Captain Lopera is IN the bridge.",
+          "5. The crew is BEHIND the captain.",
+          "6. The lifeboat is IN FRONT OF the bridge.",
+          "7. The BUENAVENTURA EXPRESS arrives at 07:00.",
+          "8. The crew loads containers on deck.",
+          "9. Captain Lopera leaves the bridge at 19:00.",
+          "10. The shift starts at 06:00."
+        ]
+      },
+      "during_discovery": {
+        "title_en": "DURING — Find the two patterns",
+        "title_es": "DURANTE — Encuentra los dos patrones",
+        "time_minutes": 15,
+        "task_1_pattern_a": {
+          "instruction_en": "In sentences 1-6, circle ALL the small words that tell you WHERE things are (e.g., on, at, in...). Write the rule in your own words.",
+          "instruction_es_cursiva": "En las oraciones 1-6, encierra TODAS las palabras pequeñas que dicen DÓNDE están las cosas. Escribe la regla en tus propias palabras.",
+          "rule_formulation_frame_en": "When I want to say WHERE something is, I use ____________ before the place.",
+          "expected_findings": ["on", "at", "in", "behind", "in front of", "on top"],
+          "bloom_level": "L2-L3 (Understand, Apply)"
+        },
+        "task_2_pattern_b": {
+          "instruction_en": "In sentences 7-10, underline the verb. Look at the END of each verb. What letter do you see? Why?",
+          "instruction_es_cursiva": "En las oraciones 7-10, subraya el verbo. Mira el FINAL de cada verbo. ¿Qué letra ves? ¿Por qué?",
+          "rule_formulation_frame_en": "When the subject is one person/thing (HE/SHE/IT), the verb ends with ____________.",
+          "expected_findings": ["arrives (-s)", "loads (-s)", "leaves (-s)", "starts (-s)"],
+          "bloom_level": "L2-L3 (Understand, Apply)"
+        }
+      },
+      "post_discovery": {
+        "title_en": "POST — Verify and apply",
+        "title_es": "POST — Verifica y aplica",
+        "time_minutes": 10,
+        "verification_step": {
+          "instruction_en": "Captain Restrepo confirms your rules. Compare with the official Syntax Blueprint above.",
+          "instruction_es_cursiva": "Capitán Restrepo confirma tus reglas. Compáralas con el Plano Sintáctico oficial arriba."
+        },
+        "categorization_check": {
+          "instruction_en": "Mark each new sentence as CORRECT (✓) or INCORRECT (✗). Justify in 1-3 words.",
+          "instruction_es_cursiva": "Marca cada oración nueva como CORRECTA (✓) o INCORRECTA (✗). Justifica en 1-3 palabras.",
+          "items": [
+            {"sentence": "The captain are on the bridge.", "answer": "✗", "fix": "is (he = singular)"},
+            {"sentence": "The vessel arrive at 07:00.", "answer": "✗", "fix": "arrives (vessel = it)"},
+            {"sentence": "There is containers on deck.", "answer": "✗", "fix": "are (containers = plural)"},
+            {"sentence": "Captain Lopera leaves the bridge.", "answer": "✓", "fix": "—"},
+            {"sentence": "The crew is at the dock.", "answer": "✓", "fix": "—"}
+          ]
+        },
+        "connection_to_pm29_functions": {
+          "instruction_en": "Why do we need these structures? Match each function to the structure.",
+          "matches": [
+            "Locate equipment / crew on the vessel → Prepositions of place (Gr7)",
+            "Describe what happens in a shift → Simple present (Gr9)"
+          ]
+        }
+      }
+    },
+    "archetype_B_CONTROLLED_PRACTICE": {
+      "archetype_id": "B",
+      "name_en": "CONTROLLED PRACTICE — Drills That Build Muscle Memory",
+      "name_es": "PRÁCTICA CONTROLADA — Drills que Construyen Memoria Muscular",
+      "actua_como": "Grammar Drill Specialist & ESP Accuracy Trainer",
+      "selected_techniques": ["Substitution Drills", "Gap-Fills", "Sentence Building"],
+      "rationale_a12": "Práctica controlada es ideal para A1.2 cuando se acaba de descubrir la regla (Archetype A). Drills cortos y enfocados automatizan la forma antes de pedir uso libre. Bloom L1-L2 (recordar, aplicar) — perfecto para techo L3 sin sobrepasar.",
+      "time_minutes": 25,
+      "presentation": {
+        "title_en": "PRESENTATION — The formula visible",
+        "title_es": "PRESENTACIÓN — La fórmula visible",
+        "time_minutes": 3,
+        "instruction_en": "Look at the Syntax Blueprint above. Keep it open. The formula stays visible during all drills.",
+        "instruction_es_cursiva": "Mira el Plano Sintáctico arriba. Mantenlo abierto. La fórmula permanece visible durante todos los drills."
+      },
+      "practice": {
+        "title_en": "PRACTICE — Three controlled drills",
+        "title_es": "PRÁCTICA — Tres drills controlados",
+        "time_minutes": 17,
+        "drill_1_substitution": {
+          "name_en": "Substitution Drill — Same structure, different objects",
+          "instruction_en": "Replace the underlined word. Keep the rest of the sentence the same.",
+          "model_sentence": "The captain is ON the bridge.",
+          "substitutions": [
+            "The crew is ___ the deck. (preposition: on)",
+            "The container is ___ the dock. (preposition: at)",
+            "The lifeboat is ___ the captain. (preposition: behind)",
+            "Andrea is ___ the warehouse. (preposition: in front of)",
+            "The mentor is ___ the bridge. (preposition: in)"
+          ],
+          "bloom_level": "L1-L2 (Remember, Apply)"
+        },
+        "drill_2_gap_fill": {
+          "name_en": "Gap-Fill — Operations at Berth 4",
+          "instruction_en": "Complete with the correct form of the verb in parentheses (simple present).",
+          "items": [
+            "1. The BUENAVENTURA EXPRESS ____________ (arrive) at 07:00.",
+            "2. Captain Lopera ____________ (leave) the bridge at 19:00.",
+            "3. The crew ____________ (load) containers on deck.",
+            "4. Andrea and Restrepo ____________ (start) the shift at 06:00.",
+            "5. The vessel ____________ (depart) at 14:00.",
+            "6. We ____________ (work) at the Port of Buenaventura.",
+            "7. The captain ____________ (not / leave) the bridge during berthing.",
+            "8. ____________ (do) the crew load containers every morning?"
+          ],
+          "answer_key": ["arrives", "leaves", "loads", "start", "departs", "work", "does not leave", "Do"],
+          "bloom_level": "L1-L2 (Remember, Apply)"
+        },
+        "drill_3_sentence_building": {
+          "name_en": "Sentence Building — Scrambled words",
+          "instruction_en": "Order the words to build a correct sentence about Andrea's shift.",
+          "items": [
+            "1. Berth 4 / the / vessel / at / is",
+            "2. on / the / are / containers / deck / there",
+            "3. arrives / 07:00 / the / at / BUENAVENTURA EXPRESS",
+            "4. the / loads / crew / cargo / the",
+            "5. behind / Captain Restrepo / Andrea / is"
+          ],
+          "answer_key": [
+            "The vessel is at Berth 4.",
+            "There are containers on deck.",
+            "The BUENAVENTURA EXPRESS arrives at 07:00.",
+            "The crew loads the cargo.",
+            "Andrea is behind Captain Restrepo."
+          ],
+          "bloom_level": "L2-L3 (Understand, Apply)"
+        }
+      },
+      "production_minimal": {
+        "title_en": "PRODUCTION — Three sentences of your own",
+        "title_es": "PRODUCCIÓN — Tres oraciones propias",
+        "time_minutes": 5,
+        "instruction_en": "Write THREE sentences about your imagined first shift at Berth 4. Use one preposition of place and two simple present verbs.",
+        "scaffolding_frames": [
+          "1. I am ____________ (preposition) ____________ (place).",
+          "2. The captain ____________ (verb-s) ____________ (object).",
+          "3. The crew ____________ (verb) ____________ (object) at ____________ (time)."
+        ],
+        "bloom_level": "L3 (Apply) — techo respetado"
+      }
+    },
+    "archetype_C_COMMUNICATIVE_TASKS": {
+      "archetype_id": "C",
+      "name_en": "COMMUNICATIVE GRAMMAR TASKS — Where is Captain Lopera?",
+      "name_es": "TAREAS GRAMATICALES COMUNICATIVAS — ¿Dónde está Captain Lopera?",
+      "actua_como": "Task Grammar Designer & ESP Communicative Structure Specialist",
+      "selected_techniques": ["Focused Information Gap"],
+      "rationale_a12": "Information Gap atrapa prepositions de manera natural — el aprendiz NECESITA preguntar y responder dónde están las personas y objetos en el buque para completar el diagrama. La estructura no se enseña; se REQUIERE para resolver la tarea. Bloom L3 con scaffolds.",
+      "time_minutes": 25,
+      "task_briefing": {
+        "title_en": "BRIEFING — A radio drill at Berth 4",
+        "title_es": "INFORME — Un simulacro radial en Atraque 4",
+        "time_minutes": 5,
+        "scenario_en": "It is 08:00 at Berth 4. The BUENAVENTURA EXPRESS is docked. Captain Restrepo asks each pair: 'Where is everyone? Where is the cargo?' Student A has half the diagram. Student B has the other half. Find each other's information.",
+        "scenario_es_cursiva": "Son las 08:00 en Atraque 4. El BUENAVENTURA EXPRESS está atracado. Capitán Restrepo pregunta a cada pareja: '¿Dónde está cada persona? ¿Dónde está la carga?' Estudiante A tiene la mitad del diagrama. Estudiante B tiene la otra mitad. Encuéntrense la información.",
+        "language_bank_required": [
+          "Where is the ____________?",
+          "Where are the ____________?",
+          "It is ____________ (preposition) ____________ (place).",
+          "They are ____________ (preposition) ____________ (place).",
+          "Can you repeat?"
+        ]
+      },
+      "task_execution": {
+        "title_en": "EXECUTION — The grammar emerges",
+        "title_es": "EJECUCIÓN — La gramática emerge",
+        "time_minutes": 15,
+        "student_a_diagram_info": {
+          "knows": [
+            "Captain Lopera is ON the bridge.",
+            "The crew is ON the deck.",
+            "Andrea is BEHIND Captain Restrepo."
+          ],
+          "needs_to_find": [
+            "Where is the cargo? ____________",
+            "Where are the containers? ____________",
+            "Where is the lifeboat? ____________"
+          ]
+        },
+        "student_b_diagram_info": {
+          "knows": [
+            "The cargo is IN the warehouse.",
+            "The containers are ON deck.",
+            "The lifeboat is IN FRONT OF the bridge."
+          ],
+          "needs_to_find": [
+            "Where is Captain Lopera? ____________",
+            "Where is the crew? ____________",
+            "Where is Andrea? ____________"
+          ]
+        },
+        "bloom_level": "L3 (Apply) — la estructura emerge de la necesidad comunicativa"
+      },
+      "language_focus_post_task": {
+        "title_en": "LANGUAGE FOCUS — Notice what you used",
+        "title_es": "FOCO LINGÜÍSTICO — Nota lo que usaste",
+        "time_minutes": 5,
+        "instruction_en": "After the task, count: how many times did you use a preposition of place? Which one was hardest?",
+        "instruction_es_cursiva": "Después de la tarea, cuenta: ¿cuántas veces usaste una preposición de lugar? ¿Cuál fue la más difícil?",
+        "reflection_questions": [
+          "Which preposition did you use most? (probably ON or AT)",
+          "Did you use 'in front of' or 'behind'? Why or why not?",
+          "Did you use simple present too? When?"
+        ]
+      }
+    },
+    "archetype_D_CREATIVE_PRODUCTION": {
+      "archetype_id": "D",
+      "name_en": "CREATIVE PRODUCTION — Andrea's Shift Notice",
+      "name_es": "PRODUCCIÓN CREATIVA — El Aviso de Turno de Andrea",
+      "actua_como": "Creative Grammar Producer & ESP Structure-Through-Story Specialist",
+      "selected_techniques": ["Sentence Combining", "Analogous Production (own shift notice)"],
+      "rationale_a12": "Sentence Combining es accesible para A1.2 — fusiona oraciones simples (que el aprendiz ya domina) en oraciones más completas usando prepositions y simple present. La 'creatividad' es controlada: el aprendiz inventa SU propio shift notice con la misma estructura del modelo S2. Bloom L3 con frames.",
+      "time_minutes": 25,
+      "warm_up": {
+        "title_en": "WARM-UP — Review the Blueprint",
+        "title_es": "CALENTAMIENTO — Revisa el Plano",
+        "time_minutes": 3,
+        "instruction_en": "Look at the Syntax Blueprint one more time. Notice: prepositions tell WHERE; simple present tells WHAT happens.",
+        "model_examples": [
+          "The vessel arrives at 07:00 at Berth 4.",
+          "Captain Lopera leaves the bridge at 19:00."
+        ]
+      },
+      "creative_production_step_1_sentence_combining": {
+        "title_en": "STEP 1 — Combine simple sentences into operational sentences",
+        "title_es": "PASO 1 — Combina oraciones simples en oraciones operativas",
+        "time_minutes": 10,
+        "instruction_en": "Combine each pair of sentences using a preposition + simple present. Add small details if needed.",
+        "items": [
+          {
+            "pair": ["The vessel arrives. The time is 07:00. The location is Berth 4."],
+            "expected": "The vessel arrives at 07:00 at Berth 4."
+          },
+          {
+            "pair": ["Captain Lopera leaves the bridge. The time is 19:00."],
+            "expected": "Captain Lopera leaves the bridge at 19:00."
+          },
+          {
+            "pair": ["The crew loads containers. The location is on deck. The time is 09:00."],
+            "expected": "The crew loads containers on deck at 09:00."
+          },
+          {
+            "pair": ["The cargo is in the warehouse. The cargo moves to deck."],
+            "expected": "The cargo moves from the warehouse to deck."
+          }
+        ],
+        "bloom_level": "L3 (Apply)"
+      },
+      "creative_production_step_2_own_shift_notice": {
+        "title_en": "STEP 2 — Write YOUR shift notice",
+        "title_es": "PASO 2 — Escribe TU aviso de turno",
+        "time_minutes": 12,
+        "instruction_en": "Imagine you work the night shift at Berth 5. Write a 5-line shift notice using the model below. Use at least 3 prepositions of place + 4 simple present verbs.",
+        "scaffolding_template": [
+          "SHIFT NOTICE — Berth 5 — Night",
+          "1. The vessel ____________ (verb) at ____________ (time).",
+          "2. The captain is ____________ (preposition) ____________ (place).",
+          "3. The crew ____________ (verb-s) ____________ (object) ____________ (preposition + place).",
+          "4. The cargo is ____________ (preposition) ____________ (place).",
+          "5. The shift ____________ (verb) at ____________ (time)."
+        ],
+        "evaluation_criteria": [
+          "5 lines complete? ✓ / ✗",
+          "≥ 3 prepositions of place used? ✓ / ✗",
+          "≥ 4 simple present verbs used? ✓ / ✗",
+          "Subject-verb agreement (-s for he/she/it)? ✓ / ✗",
+          "Maritime vocabulary from Toolbelt? ✓ / ✗"
+        ],
+        "bloom_level": "L3 (Apply) — creatividad estructurada con scaffolds"
+      },
+      "evaluation": {
+        "title_en": "EVALUATION — Was it correct AND creative?",
+        "title_es": "EVALUACIÓN — ¿Fue correcto Y creativo?",
+        "time_minutes": 0,
+        "note": "Pasa directamente a Archetype E (peer review) sin transición — la edición es la evaluación final del producto creativo."
+      }
+    },
+    "archetype_E_EDITING_ERROR_ANALYSIS": {
+      "archetype_id": "E",
+      "name_en": "EDITING & ERROR ANALYSIS — Be Your Own Grammar Police",
+      "name_es": "EDICIÓN Y ANÁLISIS DE ERRORES — Sé Tu Propia Policía Gramatical",
+      "actua_como": "Grammar Editor & ESP Error Analysis Specialist",
+      "selected_techniques": ["Peer Review", "Error Analysis (Find the Mistakes)", "Self-Editing Checklist"],
+      "rationale_a12": "Editing es metacognición concreta para A1.2 — el aprendiz no inventa errores, los detecta en una lista finita y predecible (5 errores típicos de prepositions + agreement). Bloom L3 (Apply) sin pasar a L4 análisis abstracto. La auto-corrección transfiere directamente a PM-2.4 Writing.",
+      "time_minutes": 20,
+      "exposure": {
+        "title_en": "EXPOSURE — A buggy shift notice",
+        "title_es": "EXPOSICIÓN — Un aviso de turno con errores",
+        "time_minutes": 7,
+        "instruction_en": "This shift notice from a former apprentice has 6 grammar errors (prepositions + simple present). Find them all.",
+        "instruction_es_cursiva": "Este aviso de turno de un ex-aprendiz tiene 6 errores gramaticales (preposiciones + presente simple). Encuéntralos todos.",
+        "buggy_text": "SHIFT NOTICE — Berth 4 — Morning. The BUENAVENTURA EXPRESS arrive at 07:00 in Berth 4. Captain Lopera is at the bridge. The crew load containers in deck. Andrea and Restrepo is behind the captain. The cargo are in the warehouse. The shift end at 14:00.",
+        "expected_errors": [
+          "1. 'arrive' → 'arrives' (subject = vessel = it · -s missing)",
+          "2. 'in Berth 4' → 'at Berth 4' (point in space, not closed container)",
+          "3. 'is at the bridge' → 'is on the bridge' (surface, not point) [aceptable también 'in the bridge' como cabina]",
+          "4. 'in deck' → 'on deck' (surface)",
+          "5. 'is behind' → 'are behind' (Andrea AND Restrepo = plural)",
+          "6. 'cargo are' → 'cargo is' (cargo = singular collective)",
+          "7. 'shift end' → 'shift ends' (subject = shift = it · -s missing)"
+        ]
+      },
+      "diagnosis": {
+        "title_en": "DIAGNOSIS — Classify each error",
+        "title_es": "DIAGNÓSTICO — Clasifica cada error",
+        "time_minutes": 8,
+        "instruction_en": "For each error, classify: PREPOSITION (P) / AGREEMENT (A) / VERB-S (V). Justify in 1 sentence.",
+        "classification_table": {
+          "headers": ["Error number", "Error type (P/A/V)", "Correct form", "Justification (1 phrase)"],
+          "rows_to_complete": "[7 rows for the 7 errors]"
+        },
+        "bloom_level": "L3 (Apply)"
+      },
+      "transfer": {
+        "title_en": "TRANSFER — Apply to your own shift notice (Archetype D)",
+        "title_es": "TRANSFERENCIA — Aplica a tu propio aviso de turno (Archetype D)",
+        "time_minutes": 5,
+        "instruction_en": "Trade your shift notice with a partner. Use the Self-Editing Checklist.",
+        "self_editing_checklist": [
+          "☐ Every -s on verbs with HE/SHE/IT subjects",
+          "☐ Every preposition correct (ON for surfaces, IN for closed, AT for points)",
+          "☐ Every plural subject has plural verb",
+          "☐ Every name capitalized (Andrea, Captain Lopera, Berth, BUENAVENTURA EXPRESS)",
+          "☐ Time format hh:mm (07:00, not 7am)"
+        ],
+        "self_reflection_prompt": {
+          "prompt_en": "Which error is your most frequent? How will you avoid it next time?",
+          "prompt_es_cursiva": "¿Qué error es el más frecuente en ti? ¿Cómo lo evitarás la próxima vez?"
+        },
+        "bloom_level": "L3 (Apply)"
+      }
+    },
+    "rotation_options_for_instructor": {
+      "title_en": "INSTRUCTOR ROTATION MENU — Session 3 Grammar Flow Options",
+      "title_es": "MENÚ DE ROTACIÓN DEL INSTRUCTOR — Opciones de Flujo Gramatical Sesión 3",
+      "total_direct_time_available": "2.0h (120 min) de la sesión 3 dedicadas a PM-2.10 (PM-2.4 Writing ocupa el resto · ~4h del bloque de 6h)",
+      "recommended_flow_options": [
+        {
+          "flow_id": "FLOW-1 · Inductive Core (90 min directas)",
+          "sequence": [
+            "5 min → Bilingual instruction + Syntax Blueprint walkthrough",
+            "30 min → Archetype A (Discovery) — descubrir prepositions y -s",
+            "25 min → Archetype B (Controlled Practice) — drills 1-3",
+            "30 min → Archetype D (Creative Production) — write own shift notice"
+          ],
+          "rationale": "Clásico A1.2: descubrir → automatizar → producir. Cierra alimentando PM-2.4 con shift notice como pre-producto."
+        },
+        {
+          "flow_id": "FLOW-2 · Communicative-First (90 min directas)",
+          "sequence": [
+            "5 min → Syntax Blueprint preview",
+            "25 min → Archetype C (Information Gap) — la gramática emerge en pares",
+            "25 min → Archetype B (Controlled Practice) — automatización post-task",
+            "30 min → Archetype D (Creative Production) — own shift notice"
+          ],
+          "rationale": "Para grupos comunicativos. La gramática se necesita ANTES de explicarse. Útil cuando el grupo tolera ambigüedad inicial."
+        },
+        {
+          "flow_id": "FLOW-3 · Editing-Heavy (90 min directas)",
+          "sequence": [
+            "5 min → Syntax Blueprint",
+            "30 min → Archetype A (Discovery) — descubrir reglas",
+            "25 min → Archetype B (Controlled Practice) — drills",
+            "20 min → Archetype E (Editing) — buggy shift notice + self-checklist"
+          ],
+          "rationale": "Útil si grupo cohorte previa mostró errores sistemáticos. Prioriza metacognición sobre producción libre. La Archetype D queda para autonomous work."
+        },
+        {
+          "flow_id": "FLOW-4 · Maximalist Stations (110 min directas)",
+          "sequence": [
+            "10 min → Bilingual instruction + Syntax Blueprint whole-class",
+            "5 stations × 20 min rotating (A, B, C, D, E)"
+          ],
+          "rationale": "Máxima cobertura del menú gramatical. Requiere instructor + capitán mentor (2 facilitadores) o peer-led stations."
+        }
+      ],
+      "autonomous_work_0_66h": "Todos los aprendices completan Archetype D (own shift notice 5 líneas) + Archetype E (self-editing checklist aplicada al producto propio) como trabajo autónomo si no se cubrió en sesión directa. Reportan en Moodle como pre-producto que PM-2.4 Writing consumirá."
+    },
+    "transferencia_to_pm24": {
+      "title_en": "TRANSFER TO PM-2.4 WRITING",
+      "title_es": "TRANSFERENCIA A PM-2.4 ESCRITURA",
+      "instruction_en": "The grammar you discovered today (prepositions + simple present) becomes the engine of PM-2.4: you will write Andrea's full shift report for the BUENAVENTURA EXPRESS. The structures you automated here will appear in the writing rubric.",
+      "structures_handed_to_pm24": [
+        "Gr7 prepositions of place (in/on/at/under/behind/in front of)",
+        "Gr9 simple present 3rd person -s (arrives, leaves, loads, departs, starts, ends)",
+        "Gr1 be (consolidated S2)",
+        "Gr4 there is/there are (consolidated S2)"
+      ]
+    }
+  },
+  "grammar_targets_for_pm24": {
+    "purpose": "PM-2.4 Writing (S3 segunda mitad) consume estos targets como criterios de la rúbrica de escritura del shift notice / shift report del aprendiz. Cada target debe aparecer al menos N veces en el producto escrito final.",
+    "targets": [
+      {
+        "id": "GT-S3-01",
+        "structure": "Gr7 prepositions of place — surface (ON)",
+        "expected_minimum_occurrences_in_writing": 2,
+        "example_required": "containers ON deck / captain ON the bridge"
+      },
+      {
+        "id": "GT-S3-02",
+        "structure": "Gr7 prepositions of place — point (AT)",
+        "expected_minimum_occurrences_in_writing": 2,
+        "example_required": "vessel AT Berth 4 / shift ends AT 14:00"
+      },
+      {
+        "id": "GT-S3-03",
+        "structure": "Gr7 prepositions of place — closed/relative (IN / BEHIND / IN FRONT OF)",
+        "expected_minimum_occurrences_in_writing": 1,
+        "example_required": "cargo IN the warehouse / lifeboat IN FRONT OF the bridge"
+      },
+      {
+        "id": "GT-S3-04",
+        "structure": "Gr9 simple present — 3rd person singular with -s",
+        "expected_minimum_occurrences_in_writing": 3,
+        "example_required": "vessel arrives / captain leaves / crew loads"
+      },
+      {
+        "id": "GT-S3-05",
+        "structure": "Gr9 simple present — plural / 1st person (no -s)",
+        "expected_minimum_occurrences_in_writing": 1,
+        "example_required": "I work / we load / they depart"
+      },
+      {
+        "id": "GT-S3-06",
+        "structure": "Gr1 be (consolidated from S2) — descriptive",
+        "expected_minimum_occurrences_in_writing": 2,
+        "example_required": "The dock is wet / Andrea is the apprentice"
+      },
+      {
+        "id": "GT-S3-07",
+        "structure": "Gr4 there is / there are (consolidated from S2)",
+        "expected_minimum_occurrences_in_writing": 1,
+        "example_required": "There are containers on deck / There is a bridge on top"
+      }
+    ],
+    "total_targets": 7,
+    "writing_product_to_consume_targets": "Andrea's shift report for the BUENAVENTURA EXPRESS at Berth 4 (8-12 lines, A1.2)",
+    "rubric_alignment_pm24": "PM-2.4 deberá incluir en su rúbrica la celda 'Grammar Accuracy' que evalúa GT-S3-01 a GT-S3-07 con peso 30% del producto escrito"
+  },
+  "activity_card": {
+    "pm_id": "PM-2.10",
+    "pm_name": "Grammar — Structure Use",
+    "session": 3,
+    "phase_sena": "Apropiación",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Descubrir inductivamente las dos estructuras gramaticales de la sesión (Gr7 prepositions of place y Gr9 simple present de operaciones) a partir de un corpus de 10 oraciones del Master Anchor Text S2 sobre el Puerto de Buenaventura, formulando las reglas en sus propias palabras y verificándolas con Captain Restrepo (Archetype A — Discovery & Consciousness-Raising)",
+        "didactic_strategy": "Aprendizaje basado en descubrimiento (Inductive Grammar)",
+        "didactic_technique": "Investigación guiada — Consciousness-Raising Tasks + Rule Formulation"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Automatizar las dos estructuras mediante práctica controlada (Substitution Drills, Gap-Fills sobre operaciones del BUENAVENTURA EXPRESS, Sentence Building con vocabulario portuario) y/o tarea comunicativa de Information Gap sobre la posición de tripulantes y carga en el buque, alcanzando producción mínima de 3 oraciones propias (Archetypes B + C combinables)",
+        "didactic_strategy": "Aprendizaje basado en tareas + Práctica estructurada",
+        "didactic_technique": "Taller — Drills + Information Gap (combinable según rotation_options FLOW-1 o FLOW-2)"
+      },
+      {
+        "number": 3,
+        "type": "cognitiva",
+        "statement": "Producir un shift notice propio de 5 líneas (Berth 5 night shift) usando ≥3 prepositions of place + ≥4 simple present verbs y aplicar Self-Editing Checklist sobre el propio producto + el de un compañero, identificando y clasificando errores típicos (preposition / agreement / verb-s) — pre-producto que alimenta PM-2.4 Writing (Archetypes D + E combinables)",
+        "didactic_strategy": "Producción creativa con control + Análisis de errores",
+        "didactic_technique": "Taller — Sentence Combining + Peer Review + Self-Editing Checklist"
+      }
+    ],
+    "hours": {
+      "direct": 2.0,
+      "autonomous": 0.66
+    },
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "PM-2.10 es actividad de scaffolding cognitivo · NO genera evidencia formal. Sus ítems se cosechan para el Cuestionario consolidado S6 (5 puntos del bloque Grammar). El pre-producto (own shift notice + self-editing checklist) alimenta directamente PM-2.4 Writing como insumo.",
+      "evaluation_technique": null,
+      "instrument_number": null,
+      "instrument_type": null
+    },
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Plantilla THE SYNTAX BLUEPRINT (impresa A3 + digital en Moodle)",
+        "Master Anchor Text S2 'Andrea's First Morning' impreso (referencia obligatoria)",
+        "Handout 'Corpus de 10 oraciones para descubrimiento gramatical' (1 por aprendiz)",
+        "Handout 'Drills 1-3' (Substitution + Gap-Fill + Sentence Building) — 1 por aprendiz",
+        "Tarjetas de Information Gap A/B (diagrama del BUENAVENTURA EXPRESS en Berth 4) — 1 set por pareja",
+        "Plantilla Shift Notice Template (5 líneas con scaffolding) — 1 por aprendiz",
+        "Self-Editing Checklist (5 ítems) — 1 por aprendiz",
+        "Buggy Shift Notice handout (texto con 7 errores diseñados)",
+        "Marcadores azul (preposiciones) y rojo (verbos -s) para el tablero",
+        "Computadores con acceso a Moodle (1 por aprendiz · upload del shift notice propio)",
+        "Proyector con Syntax Blueprint visible durante toda la sesión",
+        "Pizarrón con sílabas marcadas: ARR-ives / LEAVES / LOADS"
+      ],
+      "instructors": "Instructor de inglés técnico (principal) + Capitán mentor de marina mercante (soporte para validar precisión de operaciones simple present + prepositions en contexto portuario real)"
+    },
+    "contributes_to_consolidated_quiz": true,
+    "quiz_skill": "Grammar",
+    "quiz_points": 5,
+    "quiz_item_count": 5
+  },
+  "pm0_protocol_session_level": {
+    "note": "Se propaga a Playbook Build-Out S3 (pm-3-2-s3.json)",
+    "grammar_groups": {
+      "intro": [
+        "Grupo 7 — prepositions of place (in/on/at/under/behind/in front of)",
+        "Grupo 9 — simple present (operations: arrives, leaves, loads, departs, starts, ends)"
+      ],
+      "consolida": [
+        "Grupo 1 — be (heredado S2 · descripciones de personas, buques, dock)",
+        "Grupo 4 — there is / there are (heredado S2 · presencia de objetos en deck y warehouse)"
+      ],
+      "aplica": [],
+      "carga_principle_check": "2 Intro ≤ 2 (PASS — límite exacto · pm-0-context §9.2). 2 Consolida adicionales NO cuentan en la carga Intro."
+    },
+    "feedback": {
+      "dominant_mode": "Guided discovery (PRE Archetype A) + Explicit explanation (DURING Syntax Blueprint) + Self-editing checklist (POST Archetype E)",
+      "accuracy_techniques": [
+        "Recast inmediato en oral durante Information Gap (Archetype C) cuando hay error de preposition o -s",
+        "Corrección explícita escrita en Drills (Archetype B) y own shift notice (Archetype D)",
+        "Auto-corrección guiada con checklist (Archetype E) — transfiere a PM-2.4"
+      ],
+      "fluency_techniques": [
+        "Acoger intentos imperfectos en Information Gap — celebrar uso de starters: 'Where is...?', 'It is on...'",
+        "Permitir tentativas de prepositions sin interrumpir — solo recast suave"
+      ]
+    },
+    "l1_management": {
+      "percentage": 18,
+      "english_zone": "Syntax Blueprint + Drills + Information Gap + own shift notice + buggy text + Self-Editing Checklist",
+      "legitimate_uses": [
+        "Rule Formulation Frame en Archetype A (escribir la regla en español o inglés simple)",
+        "Reflexión metacognitiva final (¿cuál es tu error más frecuente?)",
+        "Bilingual instructions main_message_es_cursiva en cada arquetipo"
+      ],
+      "reduction_strategy": "S3 reduce L1 de 22% (S2) a 18%. Las preposiciones se enseñan ICÓNICAMENTE (dibujo + posición física en el aula) antes de traducir. El simple present se enseña con verbo + acción mimada antes de traducir."
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        "arrives (ə-RAIVZ · stress en sílaba 2 + /-vz/ sonoro)",
+        "leaves (LEEVZ · /-vz/ sonoro)",
+        "loads (LOWDZ · /-dz/ sonoro)",
+        "departs (di-PARTS · stress en sílaba 2)",
+        "behind (bi-HAIND · stress en sílaba 2)",
+        "in front of (IN FRONT ov · 3 sílabas con of débil)"
+      ],
+      "physical_techniques": [
+        "Par mínimo arrives/leaves con palmada en la sílaba fuerte",
+        "verbos -s con golpe doble en mesa (arr-IVES doble tap)",
+        "in front of con paso físico hacia adelante; behind con paso atrás (kinestésico)"
+      ],
+      "board_marking": "Sílabas fuertes en MAYÚSCULA subrayadas con marcador rojo. Las terminaciones -s/-es/-ies en azul al final de los verbos."
+    },
+    "success_vocabulary": {
+      "target_terms": [
+        "Reciclados S2 (12): vessel, bow, stern, deck, bridge, port, dock, berth, container, captain, apprentice, mentor",
+        "Nuevos S3 (2): crew, berthing"
+      ],
+      "success_factors_applied": [
+        "Salience (prepositions en azul · verbos -s en rojo · iconos por arquetipo)",
+        "Use (cada término aparece en Drills + Information Gap + own shift notice)",
+        "Connection (cada estructura ligada a un verbo/sustantivo del Toolbelt portuario)",
+        "Spaced repetition (Gr1 + Gr4 reciclados desde S2 · Gr7 + Gr9 reapareen S4-S12 por bloque interno)",
+        "Synergy (la gramática refleja el Reading PM-2.3 + alimenta el Writing PM-2.4)",
+        "Context (universo IMARPOR-CC · Andrea + Restrepo + Lopera + BUENAVENTURA EXPRESS · Berth 4)",
+        "Emotion (reto del propio shift notice · Andrea como modelo de aprendiz que descubre las reglas)"
+      ]
+    }
+  },
+  "validacion": {
+    "check1_archetypes_completeness": {
+      "applicable_to_this_pm": true,
+      "expected_count": 5,
+      "actual_count": 5,
+      "archetypes_present": ["A_DISCOVERY_CR", "B_CONTROLLED_PRACTICE", "C_COMMUNICATIVE_TASKS", "D_CREATIVE_PRODUCTION", "E_EDITING_ERROR_ANALYSIS"],
+      "each_with_pre_during_post": "PASS — A (pre/during/post discovery), B (presentation/practice/production), C (briefing/execution/language focus), D (warm-up/step1/step2/evaluation), E (exposure/diagnosis/transfer)",
+      "each_with_micro_capsulas_or_language_bank": "PASS — Syntax Blueprint con 2 Micro-Cápsulas (preposiciones + verb-s) + Language Bank en Archetype C + Self-Editing Checklist en Archetype E",
+      "status": "PASS"
+    },
+    "check2_pm0_anchoring": {
+      "l1_percentage_matches_s3_single_guide": "PASS (~18% · curva descendente desde S2=22%)",
+      "grammar_intro_respects_carga_2_max": "PASS (exactamente 2 Intro: Gr7 prepositions + Gr9 simple present)",
+      "consolida_de_s2_documentado": "PASS (Gr1 be + Gr4 there is/are heredados)",
+      "stress_words_par_minimo_estrategico": "PASS (arrives/leaves + behind/in front of)",
+      "feedback_mode_mixto_discovery_explicito_self_editing": "PASS",
+      "success_vocabulary_7_factores_aplicados": "PASS",
+      "status": "PASS"
+    },
+    "check3_universe_continuity": {
+      "antecedente_s2": "PASS — el corpus de Discovery (Archetype A) se compone de oraciones del Master Anchor Text S2 'Andrea's First Morning' · personajes Andrea/Restrepo/Lopera presentes · BUENAVENTURA EXPRESS y Berth 4 referenciados",
+      "consecuente_s4_y_pm24": "PASS — los 7 grammar_targets_for_pm24 alimentan directamente la rúbrica de PM-2.4 Writing del shift notice del aprendiz",
+      "vocabulary_recycle_from_s2": "PASS — 12 términos reciclados (vessel, bow, stern, deck, bridge, port, dock, berth, container, captain, apprentice, mentor) + 2 nuevos (crew, berthing)",
+      "vessel_and_location": "PASS — BUENAVENTURA EXPRESS en Berth 4 del Puerto de Buenaventura presente en Drills + Information Gap + own shift notice",
+      "status": "PASS"
+    },
+    "check4_bloom_ceiling_l3_strict": {
+      "expected_ceiling": "L3 Apply (A1.2 strict · NO HOTS)",
+      "actual_max_observed": "L3 Apply (categorization, application, peer review)",
+      "no_l4_l5_l6_present": "PASS — NO hay análisis abstracto, evaluación de obras complejas ni creación libre sin scaffolds. Toda producción tiene frames y modelos.",
+      "discovery_archetype_check": "Archetype A llega a L2-L3 (Understand, Apply) — formular regla en propias palabras es L3 con scaffolds, NO L4",
+      "creative_archetype_check": "Archetype D llega a L3 (Apply) — own shift notice es producción guiada con frames + criterios, NO L4 análisis abstracto",
+      "editing_archetype_check": "Archetype E llega a L3 (Apply) — clasificar errores en lista finita predecible, NO L4 evaluación abstracta",
+      "status": "PASS"
+    },
+    "check5_gfpi_f_134_traceability": {
+      "columna_6_actividades": "3 actividades descritas + 5 arquetipos como sub-actividades rotables",
+      "columna_7_horas": "Directas 2.0h + Autónomas 0.66h = 2.66h (de las 6h directas + 2.33h autónomas de S3 · resto va a PM-2.4 Writing)",
+      "columna_8_evidencia": "N/A (no genera evidencia formal · contribuye 5 pts a Cuestionario consolidado S6 — bloque Grammar)",
+      "columna_9_instrumento": "Learner's Worksheet (referido a PM-4.1 Cuestionario consolidado)",
+      "columna_10_ambiente": "Aula con doble facilitador (instructor inglés + capitán mentor) + 12 tipos de materiales listados",
+      "status": "PASS"
+    },
+    "check9_anti_copia_fantasma": {
+      "status": "PASS_LOCAL · pendiente validación post-hoc en PM-2.11",
+      "evidence_universe_imarpor_preserved": "TODO el contenido pedagógico de PM-2.10 está anclado al universo IMARPOR-CC: Andrea Mosquera (aprendiz-investigadora gramatical), Capitán Restrepo (mentor SENA validador de hipótesis), Captain Lopera (capitán del BUENAVENTURA EXPRESS), buque BUENAVENTURA EXPRESS en Berth 4 del Puerto de Buenaventura. Vocabulario portuario: vessel, bow, stern, deck, bridge, port, dock, berth, container, captain, crew, berthing. Operaciones: arrives, leaves, loads, departs.",
+      "evidence_no_mgv_contamination": "NO se copió contenido del ref operacional MGV-2026-04-20 (universo gráfico de Andrés/Sophia/Pixel & Ink Studio). Específicamente: NO aparece typography, serif, sans-serif, CMYK, font, color palette, brief, logo, Playfair Display, La Esquina Bakery, design studio, design instructions ni ningún otro vocabulario de diseño gráfico visual. La estructura pedagógica (5 arquetipos A-E como menú · Syntax Blueprint · PRE/DURING/POST por arquetipo · Micro-Cápsulas · Language Bank · rotation_options_for_instructor) sí se replicó del patrón canónico, pero el CONTENIDO es 100% original y específico del sector marítimo-portuario colombiano.",
+      "evidence_pattern_only_replication": "Se replicó únicamente la ESTRUCTURA pedagógica canónica del compendio metodológico MGV (cómo se organiza un PM-2.10 con 5 arquetipos integrados). El contenido sustantivo — corpus de discovery, drills, information gap, own shift notice, buggy text — fue generado original para IMARPOR-CC G1 S3 con datos del Master Anchor Text 'Andrea's First Morning' (PM-2.3 S2 IMARPOR-CC).",
+      "examples_check": "Ejemplos verificados: 'There are containers ON deck' (maritime · NO 'There are pixels on canvas'); 'The captain leaves the bridge' (maritime · NO 'The designer leaves the studio'); 'The vessel arrives at Berth 4' (maritime · NO 'The brief arrives at the studio')."
+    }
+  },
+  "siguiente_paso": "Ejecutar PM-2.4 — Writing (Sesión 3 IMARPOR-CC, segunda mitad). PM-2.4 consume los 7 grammar_targets_for_pm24 (GT-S3-01 a GT-S3-07) como criterios de su rúbrica de escritura del shift report del aprendiz para el BUENAVENTURA EXPRESS at Berth 4 (8-12 líneas, A1.2). El pre-producto generado en Archetype D (own shift notice de 5 líneas) sirve como insumo directo de PM-2.4. Luego Gate Humano 2 (Instructor Selection): Sergio revisa los 5 arquetipos, elige flow_id para la cohorte real, valida Syntax Blueprint generado y marca enriched: true."
+}

@@ -1,0 +1,339 @@
+{
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "pm_code": "PM-0",
+  "pm_name": "CEFR Framework & FPI SENA Pedagogical Foundation — Contexto del Run IMARPOR-CC",
+  "artifact_purpose": "Fijar anclas PM-0 normativas para la guía única (single-guía absorcion_Na1) del programa Curso Complementario IMARPOR. Es el insumo obligatorio para pm-1-1 (los 4 RAPs absorbidos), pm-1-2 (key vocabulary y textos adaptados) y pm-3-2-sX (pm0_protocol por sesión, 12 sesiones × 6h).",
+  "generated_date": "2026-04-27",
+  "pipeline_version": "2.11 (form-schema v2.7.1 · master prompt PM-0 v1.1)",
+  "pm0_source_version": "1.1 (2026-04-20 · canon DM v2.11)",
+  "programa_id": "IMARPOR-CC-2026-04-27",
+  "programa_nombre": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo_sofia": "12340002",
+  "tipo": "Curso Complementario",
+  "duracion_total_horas": 100,
+  "rango_cefr": "A1.2 → A2.1",
+  "numero_guias": 1,
+  "regla_bloques": "absorcion_Na1",
+  "progresion_cefr_decision": "Otro — progresión INTERNA en 1 guía (sin sub-niveles separados por guías)",
+  "progresion_cefr_justificacion": "Single-guía absorbe 4 RAPs (RAP-01 vocablos básicos, RAP-02 SMCP, RAP-03 gramática puerto-buque, RAP-04 descripción de funciones). Atraviesa A1.2→A2.1 internamente en 12 sesiones × 6h directas. Sin guías separadas por subnivel — la progresión vive dentro de la guía única, distribuida pedagógicamente por bloque interno (4 bloques de 3 sesiones c/u, uno por RAP).",
+  "pm0_section_mapping": {
+    "§4_descriptores_A1_generales": "Aplican como prereq A1.1 (curso asume base previa cubierta) y a Bloque Interno 1 (A1.2) — ver cefr_descriptors_per_guide",
+    "§5.1_a_§5.13_principios_pedagogicos": "Aplican a la guía única — ver sección principios_aplicables (13 principios contextualizados al sector marítimo-portuario + curso intensivo 100h)",
+    "§5.6_silabus_gramatical_17_grupos": "Aplica a la guía única distribuido en 4 bloques internos (1 por RAP) — ver grammar_roadmap.activation_mapping_internal_blocks",
+    "§6_descriptores_por_subnivel": "Aplica por BLOQUE INTERNO (no por guía, porque es single-guía atravesando A1.2→A2.1) — ver cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno",
+    "§7_instrumento_trazabilidad_22_items": "Debe completarse para cada PM antes de producción · criterio aprobación ≥ 20/22 — ver traceability_checklist_ref",
+    "§8_hoja_de_ruta_A1.1_a_A2.x": "Aplica desde A1.2 (prereq A1.1 cubierto) — ver shifts_metodologicos por bloque interno",
+    "§9.1_L1_percentage_per_session": "Aplica a la guía única con 12 sesiones (ajustado de 8 canon) — ver l1_percentage_per_session.single_guide_12_sessions con curva A1.2→A2.1",
+    "§9.2_grammar_group_activation": "Aplica a cada pm-3-2-sX.json (12 sesiones) — ver grammar_roadmap.activation_mapping_internal_blocks · principio de carga ≤ 2 grupos Intro/sesión",
+    "§9.3_pm0_protocol_json_schema": "Obligatorio en cada pm-3-2-sX.json del run — ver pm0_protocol_template_per_session · schema canónico desde pipeline v2.1",
+    "§10.2_schema_canonico": "Schema base de este pm-0-context.json — campos planos (programa_id, tipo, etc.) per master prompt §10.2",
+    "§10.5_grupo_17_sector_especifico": "Adaptado a maritime SMCP + NATO Phonetic + Message markers + estructuras ocupacionales — ver grammar_group_17_sector"
+  },
+  "universo_narrativo": {
+    "empresa_ficticia": "Puerto de Buenaventura · Terminal de Contenedores",
+    "sector": "Marina Mercante Colombia · operaciones marítimo-portuarias · curso intensivo 100h",
+    "escenario_principal": "Andrea Mosquera (Port Operations Trainee · 1ª semana) atraviesa 12 sesiones intensivas de inglés marítimo-portuario en una sola guía de 100h. Visita el BUENAVENTURA EXPRESS en sesiones tempranas; coordina operaciones VHF y berthing en sesiones medias; cierra como Port Operations Professional con pitch ante panel.",
+    "personajes": [
+      {
+        "nombre": "Andrea Mosquera",
+        "rol": "Port Operations Trainee (avatar aprendiz · A1.1 inicial)",
+        "descripcion": "22 años, Buenaventura, técnica recién egresada SENA. Sus miedos y victorias reflejan los del aula."
+      },
+      {
+        "nombre": "Capitán Restrepo",
+        "rol": "Port Captain (autoridad · B1 técnico)",
+        "descripcion": "50+ años, supervisor general del puerto. Da instrucciones y evalúa desempeño."
+      },
+      {
+        "nombre": "Captain Lopera",
+        "rol": "Vessel Master cliente externo (lingua franca B1)",
+        "descripcion": "45 años, chino-singapurense. Capitán del BUENAVENTURA EXPRESS. Cliente externo permanente. Representa el inglés real no-nativo del sector marítimo internacional."
+      }
+    ],
+    "productos_tipicos": [
+      "VHF radio communication",
+      "Berthing coordination",
+      "SMCP exchanges",
+      "Cargo handling reports",
+      "Port operations pitch"
+    ],
+    "terminologia_sector": [
+      "bollard",
+      "berth",
+      "pilot",
+      "tugboat",
+      "container",
+      "manifest",
+      "VHF",
+      "SMCP",
+      "stevedore",
+      "draft"
+    ]
+  },
+  "final_mission_scenario": "Simulación de Operaciones: The CML Port Turnaround — Andrea coordina la operación completa de atraque, descarga y despacho del CML CARRIER (vessel ficticio) en turno de 12 horas, demostrando los 4 RAPs absorbidos: vocabulario portuario (RAP-01), comunicación SMCP por VHF (RAP-02), aplicación gramatical en coordinación bidireccional (RAP-03), y presentación final de su rol y procesos (RAP-04) ante panel.",
+  "grammar_roadmap": {
+    "silabus_source": "PM-0 §5.6 — Silabus FPI SENA de 17 grupos (derivado de Life Second Edition, National Geographic Learning) + reconciliado con gramática de cada RAP IMARPOR",
+    "carga_principle": "PM-0 §9.2 — Máximo 2 grupos nuevos (Intro) por sesión. En single-guía con 12 sesiones, distribución: ~3 sesiones por bloque interno (1 RAP cada uno) + S12 consolidación.",
+    "activation_mapping_internal_blocks": {
+      "Bloque_Interno_1_S1-S3_RAP01_A1.2_VocablosBasicos": {
+        "intro": [
+          "Gr 1 — Verbo be (afirm. contraído, neg., preguntas Yes/No, respuestas cortas)",
+          "Gr 2 — Pronombres sujeto + posesivos + demostrativos",
+          "Gr 3 — Plural regular -s/-es/-ies + artículos a/an",
+          "Gr 5 — Imperativo afirmativo (Open / Check / Move)",
+          "Gr 14 — Preposición In + at/on/next to/near (lugares portuarios)"
+        ],
+        "consolida": [],
+        "aplica": []
+      },
+      "Bloque_Interno_2_S4-S6_RAP02_A1.3_SMCP": {
+        "intro": [
+          "Gr 5 (extension) — Imperativo negativo (Don't approach, Do not enter)",
+          "Gr 6 — Modal must (Vessel must wait at anchorage)",
+          "Gr 8 — Presente simple todas las formas + Wh-questions",
+          "Gr 17 — Grupo sector específico SMCP (Roger, Wilco, Affirmative, Negative, Standby, Spell) + NATO Phonetic Alphabet"
+        ],
+        "consolida": [
+          "Gr 1, 2, 3, 5, 14 del Bloque Interno 1"
+        ],
+        "aplica": []
+      },
+      "Bloque_Interno_3_S7-S9_RAP03_A2.0_GramaticaPuertoBuque": {
+        "intro": [
+          "Gr 4 — Comparativos (faster than, more critical than)",
+          "Gr 6 (extension) — Should/shouldn't, Could/might, I'd like (You should approach starboard)",
+          "Gr 9 — Pasado simple (regulares + irregulares + Wh-)",
+          "Gr 10 — Presente continuo (Vessel is approaching, We are securing)",
+          "Gr 11 — Presente perfecto (The pilot has boarded)",
+          "Gr 12 — Condicional tipo 1 (If wind drops, we will berth)",
+          "Gr 13 — Voz pasiva presente (The cargo is inspected by customs)"
+        ],
+        "consolida": [
+          "Gr 6 must, Gr 8 presente simple, Gr 17 SMCP del Bloque Interno 2"
+        ],
+        "aplica": [
+          "Gr 1, 2, 3, 5, 14 de bloques previos"
+        ]
+      },
+      "Bloque_Interno_4_S10-S12_RAP04_A2.1_DescripcionFunciones": {
+        "intro": [
+          "Gr 4 (extension) — Superlativos (the most critical operation is berthing)",
+          "Gr 11 (extension) — Presente perfecto + marcadores already/yet/just/ever/never",
+          "Gr 13 (extension) — Voz pasiva pasada (The cargo was inspected yesterday)",
+          "Gr 16 — Tag questions PRODUCCIÓN ACTIVA (You're the supervisor, aren't you?)",
+          "Gr 17 (extension) — Estructuras ocupacionales (I'm responsible for, My role involves, I have experience with)"
+        ],
+        "consolida": [
+          "Gr 4 comparativos, Gr 6 modales, Gr 9 past simple, Gr 10 presente continuo, Gr 11 present perfect, Gr 12 condicional 1, Gr 13 voz pasiva del Bloque Interno 3"
+        ],
+        "aplica": [
+          "Todo lo anterior (Gr 1-15) en pitch profesional"
+        ]
+      }
+    }
+  },
+  "grammar_group_17_sector": {
+    "group_id": "G17",
+    "nombre": "Maritime SMCP + Navigation imperatives + Occupational structures",
+    "ejemplos_smcp": [
+      "Roger",
+      "Wilco",
+      "Affirmative",
+      "Negative",
+      "Standby",
+      "Out",
+      "Over",
+      "Say again",
+      "Spell that",
+      "Repeat your last message",
+      "I read you back as..."
+    ],
+    "ejemplos_nato_phonetic": [
+      "Alpha",
+      "Bravo",
+      "Charlie",
+      "Delta",
+      "Echo",
+      "Foxtrot",
+      "Golf",
+      "Hotel",
+      "India",
+      "Juliet",
+      "Kilo",
+      "Lima",
+      "Mike",
+      "November",
+      "Oscar",
+      "Papa",
+      "Quebec",
+      "Romeo",
+      "Sierra",
+      "Tango",
+      "Uniform",
+      "Victor",
+      "Whiskey",
+      "X-ray",
+      "Yankee",
+      "Zulu"
+    ],
+    "ejemplos_message_markers": [
+      "Question",
+      "Answer",
+      "Request",
+      "Information",
+      "Warning",
+      "Advice",
+      "Instruction",
+      "Intention"
+    ],
+    "ejemplos_occupational_a21": [
+      "I'm responsible for [coordination of yard operations]",
+      "My role involves [supervising container handling]",
+      "I have experience with [10+ vessel arrivals]",
+      "I am skilled at [VHF communication]",
+      "I specialize in [berthing during low-tide conditions]"
+    ],
+    "aplicabilidad": "Programa marítimo-portuario IMARPOR — comandos SMCP estandarizados OMI + NATO Phonetic Alphabet (Bloque Interno 2 RAP-02) + estructuras ocupacionales (Bloque Interno 4 RAP-04)"
+  },
+  "l1_percentage_per_session": {
+    "source": "PM-0 §9.1 — Política de L1 normativa (porcentajes) + §9.1 progresión por subnivel + adaptación IMARPOR-CC single-guía 12 sesiones",
+    "rationale_adaptacion": "El canon §9.1 define curvas para A1.1, A1.2, A1.3, A2.x con 8 sesiones por guía. IMARPOR-CC tiene 12 sesiones en una sola guía atravesando A1.2→A2.1 internamente. Aplicamos la curva normativa por bloque interno (3 sesiones por bloque, 4 bloques) con escalada progresiva.",
+    "single_guide_12_sessions": {
+      "Bloque_Interno_1_RAP01_A1.2": {
+        "S1": "≤ 25 %",
+        "S2": "≤ 20 %",
+        "S3": "≤ 15 %"
+      },
+      "Bloque_Interno_2_RAP02_A1.3": {
+        "S4": "≤ 12 %",
+        "S5": "≤ 10 %",
+        "S6": "≤ 8 %"
+      },
+      "Bloque_Interno_3_RAP03_A2.0": {
+        "S7": "≤ 5 %",
+        "S8": "≤ 3 %",
+        "S9": "0 % (L2 norma)"
+      },
+      "Bloque_Interno_4_RAP04_A2.1": {
+        "S10": "0 % (L2 exclusivo)",
+        "S11": "0 % (L2 exclusivo)",
+        "S12": "0 % (Misión Final 100% L2)"
+      }
+    },
+    "rationale_curva_progresiva": "S1 al 25% asume A1.1 prereq cubierto (curva más agresiva que MGV G1 que parte 30% sin prereq). Reducción acelerada porque single-guía exige inmersión rápida. Bloque 4 (S10-S12) en L2 puro porque la Misión Final es 100% L2."
+  },
+  "shifts_metodologicos": [
+    {
+      "de_bloque": "Bloque Interno 1 (S1-S3, A1.2)",
+      "descriptor": "Velocidad lenta · pausas frecuentes · andamiaje alto (frames parciales, word banks portuarios) · feedback mixto: choral en drilling vocabulario",
+      "implicacion_pedagogica": "Andrea reconoce vocabulario marítimo-portuario básico con apoyo visual obligatorio. Rol docente: modelo central + driller activo en pronunciación SMCP-precursor."
+    },
+    {
+      "de_bloque": "Bloque Interno 2 (S4-S6, A1.3)",
+      "descriptor": "Velocidad moderada · interferencia VHF simulada · andamiaje moderado (prompts iniciales, ejemplos SMCP estandarizados) · feedback diferido en SMCP",
+      "implicacion_pedagogica": "Andrea decodifica frases SMCP y responde con la frase correcta. Foco en accuracy de SMCP estandarizadas (cualquier error de Wilco/Roger es bloqueante; gramática general puede tener errores)."
+    },
+    {
+      "de_bloque": "Bloque Interno 3 (S7-S9, A2.0)",
+      "descriptor": "Velocidad moderada-natural · interferencia VHF + ruido ambiente realista · andamiaje mínimo · feedback peer + self-assessment + instructor diferido",
+      "implicacion_pedagogica": "Andrea coordina operaciones tripartitas. Foco en gramática aplicada (modales, condicionales, voz pasiva en operaciones reales)."
+    },
+    {
+      "de_bloque": "Bloque Interno 4 (S10-S12, A2.1)",
+      "descriptor": "Velocidad natural · sin pausas pedagógicas · cero andamiaje · evaluación por criterios profesionales",
+      "implicacion_pedagogica": "Andrea presenta rol completo, narra incidentes reales, justifica decisiones con estructuras ocupacionales. Rol docente: evaluador externo (simula empleador)."
+    }
+  ],
+  "principios_aplicables": {
+    "source": "PM-0 §5.1-§5.13 — 13 principios pedagógicos contextualizados al sector marítimo-portuario colombiano + curso intensivo 100h",
+    "aplicacion_a_imarpor_cc": [
+      "§5.1 Contenido técnico como punto de partida — el universo curricular SOFÍA (4 RAPs marítimo-portuarios) es el motor de cada bloque interno",
+      "§5.2 Fotografía y realia técnica — fotos del muelle Buenaventura, grabaciones VHF reales adaptadas, señalética portuaria",
+      "§5.3 Video e instrucción en vivo — videos de operaciones portuarias colombianas, simulaciones VHF, entrevistas a personal portuario",
+      "§5.4 Pensamiento crítico y diagnóstico técnico — central en Bloques Internos 3 (coordinación con modales) y 4 (incident analysis con tag questions)",
+      "§5.5 Memorización y retención — Toolbelt portuario + 30 SMCP key phrases + 100 collocations operativos · factor SUCCESS aplicado",
+      "§5.6 Tratamiento de la gramática — silabus 17 grupos activado por bloque interno (ver grammar_roadmap)",
+      "§5.7 Tratamiento del vocabulario — Word Wall del programa (12 sesiones) + Toolbelt portuario + SMCP Reference Card laminada + NATO Phonetic Reference Card",
+      "§5.8 Habilidades de aprendizaje autónomo — Gap Cards · KWL · Learning Contract · Radio Log diario",
+      "§5.9 Evaluación — Formativa (6 instrumentos en bloque interno final) + sumativa (Cuestionario S6 25 pts + Misión Final 5 pts = 30 pts en single-guía)",
+      "§5.10 Estructura de sesión FPI — 12 sesiones × 6h directas + 28h autónomas. ADAPTACIÓN: la estructura canónica 8 sesiones × 7.5h se ajusta a 12 × 6h manteniendo proporciones SET-UP/WHILE/WRAP",
+      "§5.11 Feedback diferenciado accuracy vs fluency — ver shifts_metodologicos arriba (curva por bloque interno)",
+      "§5.12 Gestión del L1 — ver l1_percentage_per_session arriba (curva más agresiva que A1.1 estándar por prereq cubierto)",
+      "§5.13 Noticing de stress con soporte físico — STRESS EN SMCP ES CRÍTICO (Wilco vs Will-co · Affirmative vs Affirmative) + NATO phonetic stress (NoVEMber vs NOvember) · finger drilling + backchaining + clapping"
+    ]
+  },
+  "cefr_descriptors_per_guide": [
+    {
+      "guia": 1,
+      "nombre_es": "IMARPOR-CC Single-Guía: Andrea's Maritime Journey",
+      "rap_absorbidos": "RAP-01 a RAP-04",
+      "cefr_inicial": "A1.2",
+      "cefr_final": "A2.1",
+      "rationale_progresion_interna": "Esta guía única atraviesa A1.2→A2.1 internamente vía 4 bloques internos (3 sesiones c/u). Los descriptores PM-0 §6 se aplican al bloque interno correspondiente:",
+      "descriptor_snapshot_por_bloque_interno": {
+        "Bloque_Interno_1_S1-S3_RAP01_A1.2": {
+          "comprension_oral": "Comprende instrucciones de 1-2 pasos sobre operaciones básicas del muelle (Check the bollard · Open the gate · Move the forklift). Reconoce términos marítimo-portuarios con apoyo visual.",
+          "comprension_lectora": "Reconoce nombres y etiquetas en señalética portuaria (NO SMOKING · MUSTER STATION · HARD HAT AREA). Identifica números (vessel call sign · berth number · container ID).",
+          "produccion_oral": "Produce palabras y frases aisladas. Nombra elementos visibles del muelle.",
+          "vocabulario_activo": "50-100 términos del dominio portuario (Toolbelt-30 + colaterales)",
+          "gramatica": "Verb to be · pronombres + demonstratives · plurales · imperativo afirmativo · preposición IN + at/on/next to/near"
+        },
+        "Bloque_Interno_2_S4-S6_RAP02_A1.3": {
+          "comprension_oral": "Comprende instrucciones de 2-3 pasos via VHF (con interferencia simulada). Decodifica intent en frases SMCP (Vessel inbound · Request pilot · Standby for berthing instructions).",
+          "produccion_oral": "Confirma recepción usando SMCP (Roger · Wilco · Affirmative · Negative). Pide clarificación específica (Repeat course · Spell call sign).",
+          "vocabulario_activo": "150-250 términos. Toolbelt + 30 SMCP key phrases + crew terms + 50 collocations operativos",
+          "gramatica": "+ Imperativo negativo · Modal must · Presente simple Wh-questions · NATO Phonetic Alphabet (Gr 17)"
+        },
+        "Bloque_Interno_3_S7-S9_RAP03_A2.0": {
+          "comprension_oral": "Sigue instrucciones multi-paso en operaciones puerto-buque (berthing · cargo handling · departure).",
+          "produccion_oral": "Coordina operación tripartita simultánea. Expresa prohibición/permisión/posibilidad/pedidos con modales.",
+          "vocabulario_activo": "300-400 términos. Collocations con confianza + expresiones fraseológicas (in case of · with reference to · prior to)",
+          "gramatica": "+ Comparativos · Modales should/could/might · Pasado simple · Presente continuo · Presente perfecto · Condicional tipo 1 · Voz pasiva presente"
+        },
+        "Bloque_Interno_4_S10-S12_RAP04_A2.1": {
+          "comprension_oral": "Comprende presentaciones técnicas a ritmo natural. Comprende preguntas de panel sobre rol profesional.",
+          "produccion_oral": "Pitch profesional formal de 3 min: introducción + funciones habituales + funciones momentáneas + cierre. Tag questions producción activa.",
+          "vocabulario_activo": "500-600 términos consolidados + 50 nuevos ocupacionales (job titles · responsibilities · career narrative)",
+          "gramatica": "+ Superlativos · Presente perfecto con marcadores · Voz pasiva pasada · Tag questions producción activa · estructuras ocupacionales (Gr 17 ext)"
+        }
+      }
+    }
+  ],
+  "pm0_protocol_template_per_session": {
+    "purpose": "Template de referencia para que cada pm-3-2-sX.json del run incluya pm0_protocol consistente con su sesión y bloque interno. Schema canónico per PM-0 §9.3 — obligatorio desde pipeline v2.1.",
+    "campos_obligatorios": [
+      "grammar_groups",
+      "feedback (mode, accuracy_techniques, fluency_techniques, notes)",
+      "l1_management (l1_percentage, english_zone_declaration, l1_allowed_for, reduction_strategy)",
+      "stress_pronunciation (focus_words, techniques, board_marking, notes)",
+      "success_vocabulary (target_words, factors_applied SUCCESS)"
+    ],
+    "schema_canonical_ref": "PM-0 §9.3 — leer literal del master prompt para implementación"
+  },
+  "traceability_checklist_ref": {
+    "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+    "uso": "Cada PM-2.x y PM-3.x del run debe completar este checklist antes de producción. Criterio de aprobación: ≥ 20/22 ítems aprobados.",
+    "secciones": {
+      "A_trazabilidad_cefr": "6 ítems · subnivel · descriptores §4/§6 (con ajuste IMARPOR prereq A1.1) · vocab del Word Wall · input adaptado por bloque interno",
+      "B_trazabilidad_pedagogica": "8 ítems · pre-enseñanza vocab · drilling · accuracy/fluency mix · gestión L1 · stress (especialmente SMCP + NATO) · producción personalizada · autoevaluación · andamiaje por bloque interno",
+      "C_trazabilidad_estructura_sesion": "4 ítems · bloque FPI · tiempo realista (12 sesiones × 6h) · cadena previous_pms · complejidad cognitiva progresiva intra-guía",
+      "D_trazabilidad_evaluacion": "4 ítems · contribuye Misión Final · can-do asociado · criterio observable · consistente con descriptor CEFR del bloque interno + criterios C01-C05 SOFÍA"
+    }
+  },
+  "next_step_in_pipeline": {
+    "next_pm": "PM-1.1 IMARPOR-CC (single-guía absorpción 4 RAPs)",
+    "expected_input_for_next_pm": "Este pm-0-context.json + pm-1-1-input.json del structuring (ya generado en runs/IMARPOR-CC-2026-04-27/pm-1-1-input.json)",
+    "expected_output_pm11": "pm-1-1.md + pm-1-1.json con 1 bloque (single-guía) + 4 RAPs absorbidos + universo narrativo derivado + sin proyecto_formativo_articulador (asimetría v2.7.1)"
+  },
+  "fase_0_metadata": {
+    "fecha_generacion": "2026-04-27",
+    "version": "1.0",
+    "version_form_schema": "2.7.1",
+    "version_canon_dm": "v2.11",
+    "generado_por": "Claude (skill fpi-sena-fase1 + pre-flight obligatorio cumplido)",
+    "derivacion_canonica": "Schema base derivado de PM-0 §10.2. Contenido derivado de PM-0 §3 (CEFR), §5.1-§5.13 (13 principios), §6 (descriptores subnivel), §9.1 (L1 policy), §9.2 (grammar roadmap silabus 17), §9.3 (pm0_protocol). Adaptación: single-guía 12 sesiones con progresión interna A1.2→A2.1 vía 4 bloques internos (3 sesiones c/u, uno por RAP absorbido).",
+    "aprobado_por_instructor": false,
+    "ultima_revision": "2026-04-27"
+  },
+  "_smoke_original_programa_id": "IMARPOR-CC-2026-04-27"
+}

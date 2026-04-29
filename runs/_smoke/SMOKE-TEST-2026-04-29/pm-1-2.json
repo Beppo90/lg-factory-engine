@@ -1,0 +1,663 @@
+{
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "pm_code": "PM-1.2",
+  "pm_name": "Scope & Sequence + Curación de Material Auténtico — IMARPOR-CC single-guía",
+  "guia_numero": 1,
+  "guia_nombre_esp": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "cefr_level": "A1.2 → A2.1 (single-guía con progresión interna)",
+  "generated_date": "2026-04-27",
+  "pipeline_version": "2.11 (form-schema v2.7.1 · master prompt PM-1.2 + PM-1.1 v2.7.1)",
+  "instructor": "Sergio Cortés Perdomo",
+  "pm0_anchors_ref": {
+    "file": "pm-0-context.json",
+    "version": "1.1",
+    "single_guide_variant": true
+  },
+  "pm11_anchors_ref": {
+    "file": "pm-1-1.json",
+    "regla_bloques": "absorcion_Na1",
+    "total_guias": 1
+  },
+  "status": "draft",
+  "enriched": true,
+  "_enriched_false_rationale": "Las 3 fichas de curación están preparadas pero requieren Instructor Selection humana (canon Checkpoint 3 del skill) antes de marcar enriched: true. Sergio debe (a) elegir las 2 stories ganadoras + asignar A/B/C, (b) opcionalmente aportar Story D narrativa colombiana adicional, (c) marcar enriched: true.",
+  "bloque_0_presentacion_l1": {
+    "titulo": "Bienvenido a tu curso de Inglés Marítimo y Portuario",
+    "texto_motivacional_l1": "Bienvenido al Curso Complementario de Inglés Marítimo y Portuario. En 100 horas (12 sesiones de 6 horas + trabajo autónomo) vas a transformarte en un profesional capaz de operar en inglés dentro de un puerto colombiano. Vas a conocer a Andrea Mosquera, una recién egresada SENA que en su primera semana en el Puerto de Buenaventura tiene que aprender a moverse entre el muelle y los buques internacionales. Tu viaje sigue el de ella: empezarás reconociendo vocabulario portuario y partes del barco; luego aprenderás las frases estandarizadas OMI (SMCP) que se usan por radio VHF; después aplicarás gramática real en operaciones de atraque, descarga y maniobra; y cerrarás presentando tu rol profesional ante un panel evaluador. El cliente externo permanente del curso es Captain Lopera, capitán del BUENAVENTURA EXPRESS — un profesional internacional que habla inglés como lingua franca, no nativo, exactamente como lo encontrarás en cualquier puerto del Pacífico colombiano. Tu Misión Final es coordinar la operación completa del CML CARRIER en un turno de 12 horas, demostrando que dominas los 4 RAPs del programa. No tienes que dominar inglés perfecto — tienes que comunicarte con claridad operativa. Empezamos.",
+    "extension_renglones": 10,
+    "l1_dominant": true,
+    "rationale_l1": "Presentación A1.2 con prereq A1.1 cubierto. L1 dominante en S1 per pm-0-context.l1_percentage_per_session.single_guide_12_sessions (S1 ≤ 25% L1). Onboarding al universo narrativo (Andrea + Lopera + CML CARRIER) antes de cualquier contenido en inglés."
+  },
+  "bloque_A_scope_dna_integrative_evaluation": {
+    "identification": {
+      "programa": {
+        "nombre": "Inglés Marítimo y Portuario (Curso Complementario)",
+        "codigo": "12340002",
+        "tipo": "Curso Complementario",
+        "total_horas": 100
+      },
+      "guia": {
+        "numero": 1,
+        "nombre_esp": "The Maritime Operations Pro",
+        "nombre_espanol": "El Profesional de Operaciones Marítimas",
+        "macrotematica": "Recorrido integral marítimo-portuario · 4 RAPs absorbidos",
+        "intensidad_horas": 100,
+        "horas_directas": 72,
+        "horas_autonomas": 28,
+        "sesiones": 12,
+        "horas_por_sesion": 6,
+        "nivel_cefr": "A1.2 → A2.1 (single-guía con progresión interna)",
+        "regla_bloques": "absorcion_Na1"
+      }
+    },
+    "guide_design_dna": {
+      "guide_name_conceptual": "The Maritime Operations Pro — Andrea's 100-Hour Maritime Journey",
+      "enfoque_conceptualizacion": "Curso intensivo de actualización profesional que comprime los 4 RAPs SOFÍA (vocablos básicos · SMCP · gramática puerto-buque · descripción de funciones) en una sola guía de 100h. El aprendiz llega con prereq A1.1 cubierto y sale con capacidad operacional inmediata como Port Operations Trainee — capaz de comprender VHF de un Vessel Master no-nativo, dirigir maniobras de atraque tripartitas, y describir su rol profesional ante panel. El escenario único (Puerto de Buenaventura · Terminal de Contenedores · cliente externo Captain Lopera del BUENAVENTURA EXPRESS) se mantiene constante a lo largo de las 12 sesiones para facilitar la inmersión narrativa. La progresión CEFR A1.2→A2.1 vive INTERNAMENTE en 4 sub-bloques de 3 sesiones c/u, uno por RAP absorbido.",
+      "entendimientos_perdurables": [
+        "I can communicate operationally in English with non-native vessel masters via VHF using SMCP standard phrases.",
+        "I can coordinate tripartite port operations (yard + bridge + customs) using grammatical structures appropriate to A2.0 (modals, conditionals, passive voice).",
+        "I can present my professional role and justify my decisions in English before a panel using A2.1 occupational structures (I'm responsible for, my role involves, I have experience with)."
+      ]
+    },
+    "content_core": {
+      "technical_topics": [
+        "UNIT 1 SHIP OVERVIEW — parts of ships, types of vessels, navigational equipment (Sub-bloque 1)",
+        "UNIT 3 PLACES IN PORT — places, locations, weather, prepositional phrases (Sub-bloque 1)",
+        "UNIT 2 THE CREW — professions in port and aboard, commands to crew, present simple, imperative (Sub-bloque 2)",
+        "UNIT 5 SMCP — standard spelling NATO Phonetic, message markers, standard responses (Sub-bloque 2)",
+        "UNIT 4 IN PORT — containerization, packing/shipping/cargo handling, maneuvering: mooring/docking/departure, quantifiers, modals can/could/should/must (Sub-bloque 3)",
+        "Síntesis ocupacional + tag questions producción + estructuras profesionales (Sub-bloque 4)"
+      ],
+      "communicative_functions": [
+        "Naming and identifying objects in port and aboard",
+        "Confirming SMCP messages with standard responses (Roger · Wilco · Affirmative · Negative)",
+        "Spelling with NATO Phonetic Alphabet",
+        "Coordinating tripartite operations (parallel commands to 2-3 actors)",
+        "Expressing prohibition/permission/possibility/requests with modals",
+        "Describing professional functions (habitual + momentary)",
+        "Justifying decisions with occupational structures",
+        "Confirming info with tag questions"
+      ],
+      "language_functions_in_context": {
+        "Sub-bloque 1 (A1.2)": [
+          "Verb to be: 'This is the bridge of the BUENAVENTURA EXPRESS'",
+          "Demonstratives + plurals: 'These are the lifejackets · Those bollards are at berth 5'",
+          "Imperative + preposition IN: 'Check the bollard at berth 5 · Open the gate next to the customs office'"
+        ],
+        "Sub-bloque 2 (A1.3)": [
+          "Imperative negative: 'Don't approach the bow during loading'",
+          "Modal must: 'Vessel must wait at anchorage'",
+          "Wh-questions + present simple: 'How often does the pilot board? · When does cargo arrive?'",
+          "SMCP + NATO: 'Vessel inbound · Standby for berthing instructions · Spell call sign Charlie-Oscar-Lima'"
+        ],
+        "Sub-bloque 3 (A2.0)": [
+          "Modals should/could/might: 'You should approach starboard · We could request more lines'",
+          "Past simple: 'The vessel arrived at 06:00'",
+          "Present perfect: 'The pilot has boarded · The cargo has been inspected'",
+          "Conditional 1: 'If the wind drops, we will berth on time'",
+          "Passive voice: 'The cargo is inspected by customs'",
+          "Quantifiers: 'Move 50 containers · Stack no more than 4 high'"
+        ],
+        "Sub-bloque 4 (A2.1)": [
+          "Superlatives: 'The most critical operation is berthing'",
+          "Present perfect with markers: 'I have already inspected the cargo · I have just received the report'",
+          "Tag questions production: 'You're the supervisor, aren't you? · The pilot boarded at 06:00, didn't he?'",
+          "Occupational structures: 'I'm responsible for coordination of yard operations · My role involves supervising container handling · I have experience with VHF communication · I am skilled at berthing during low-tide conditions'"
+        ]
+      },
+      "key_vocabulary_20_exact": {
+        "_distribution": "5 términos por sub-bloque interno (uniforme · per recomendación Sergio)",
+        "Sub_bloque_1_RAP01_Vocablos_Basicos": [
+          {
+            "term": "bollard",
+            "category": "Port infrastructure",
+            "ipa": "/ˈbɒlərd/"
+          },
+          {
+            "term": "crane",
+            "category": "Port equipment",
+            "ipa": "/kreɪn/"
+          },
+          {
+            "term": "bow",
+            "category": "Ship parts",
+            "ipa": "/baʊ/"
+          },
+          {
+            "term": "stern",
+            "category": "Ship parts",
+            "ipa": "/stɜːrn/"
+          },
+          {
+            "term": "bridge",
+            "category": "Ship parts",
+            "ipa": "/brɪdʒ/"
+          }
+        ],
+        "Sub_bloque_2_RAP02_SMCP": [
+          {
+            "term": "Roger",
+            "category": "SMCP standard response",
+            "ipa": "/ˈrɒdʒər/"
+          },
+          {
+            "term": "Wilco",
+            "category": "SMCP standard response",
+            "ipa": "/ˈwɪlkəʊ/"
+          },
+          {
+            "term": "SMCP",
+            "category": "Acronym",
+            "ipa": "/ˌɛs ɛm siː ˈpiː/"
+          },
+          {
+            "term": "NATO Phonetic",
+            "category": "Spelling system",
+            "ipa": "/ˈneɪtəʊ fəˈnɛtɪk/"
+          },
+          {
+            "term": "VHF",
+            "category": "Radio equipment",
+            "ipa": "/ˌviː eɪtʃ ˈɛf/"
+          }
+        ],
+        "Sub_bloque_3_RAP03_Operaciones": [
+          {
+            "term": "berthing",
+            "category": "Port operations",
+            "ipa": "/ˈbɜːrθɪŋ/"
+          },
+          {
+            "term": "mooring",
+            "category": "Port operations",
+            "ipa": "/ˈmʊərɪŋ/"
+          },
+          {
+            "term": "departure",
+            "category": "Port operations",
+            "ipa": "/dɪˈpɑːrtʃər/"
+          },
+          {
+            "term": "cargo handling",
+            "category": "Port operations",
+            "ipa": "/ˈkɑːrɡoʊ ˈhændlɪŋ/"
+          },
+          {
+            "term": "anchor",
+            "category": "Port operations",
+            "ipa": "/ˈæŋkər/"
+          }
+        ],
+        "Sub_bloque_4_RAP04_Funciones_Ocupacionales": [
+          {
+            "term": "responsible for",
+            "category": "Occupational structure",
+            "ipa": "/rɪˈspɒnsəbəl fɔːr/"
+          },
+          {
+            "term": "specialize in",
+            "category": "Occupational structure",
+            "ipa": "/ˈspɛʃəlaɪz ɪn/"
+          },
+          {
+            "term": "coordinate",
+            "category": "Occupational verb",
+            "ipa": "/koʊˈɔːrdɪneɪt/"
+          },
+          {
+            "term": "supervise",
+            "category": "Occupational verb",
+            "ipa": "/ˈsuːpərvaɪz/"
+          },
+          {
+            "term": "report to",
+            "category": "Occupational structure",
+            "ipa": "/rɪˈpɔːrt tuː/"
+          }
+        ],
+        "_total_count_check": 20
+      }
+    },
+    "integrative_task": {
+      "nombre_proyecto_en": "The CML Port Turnaround — Andrea Coordinates a Full Vessel Operation",
+      "nombre_proyecto_es": "El Cambio de Operación del CML — Andrea Coordina una Operación Completa de Buque",
+      "descripcion": "Andrea recibe orden del Capitán Restrepo de coordinar la operación completa del CML CARRIER (vessel ficticio que llega desde Shanghái al Puerto de Buenaventura) en un turno de 12 horas. La operación incluye: (1) recibir solicitud inicial vía VHF de Captain Lopera (vocabulario portuario + reconocimiento SMCP, RAP-01+02), (2) coordinar maniobra de atraque dando instrucciones tripartitas a Diego Mejía (crane operator) en yard + Bosun Romero (yard supervisor) + Captain Lopera vía VHF (gramática puerto-buque, RAP-03), (3) supervisar carga y descarga con quantifiers + modales (RAP-03), (4) presentar pitch profesional final ante panel simulado (Capitán Restrepo + agente naviero externo) describiendo su rol completo, justificando 2 decisiones tomadas durante el turno, respondiendo 2 preguntas con tag questions (RAP-04). 100% L2.",
+      "entregables_concretos": [
+        "ESCRITO: Berthing Coordination Memo de 1 página + Radio Log (timestamp, call sign, channel, summary de cada mensaje VHF) + Post-Turn Report (incident analysis con causa-efecto-corrección)",
+        "ORAL: VHF Response Simulation (2 min) + Berthing Operation Coordination tripartito (3 min) + Port Operations Pitch profesional final (3 min · 100% L2 · responde 2 preguntas de panel)"
+      ],
+      "duracion_simulacion": "12 horas operacionales simuladas (ejecución condensada a 3 horas reales en sesión S12 + preparación distribuida en S10-S11)"
+    },
+    "evaluation_matrix": {
+      "triada_sena": {
+        "conocimiento": {
+          "tecnica": "Formulación de preguntas",
+          "instrumento": "Cuestionario S6 (PM-4.2)",
+          "criterios_dominantes": [
+            "C03 UTILIZA terminología",
+            "C09 HACE USO DE VOCABULARIO",
+            "C11 HACE USO DE TÉRMINOS"
+          ]
+        },
+        "desempeño": {
+          "tecnica": "Observación directa",
+          "instrumento": "Checklist (PM-4.1) · 5 instrumentos formales",
+          "criterios_dominantes": [
+            "C01 INTERPRETA mensajes",
+            "C02 RESPONDE con información pertinente",
+            "C06 SE COMUNICA EFICAZMENTE",
+            "C07 BRINDA SOLUCIÓN",
+            "C13 PARTICIPA EN JUEGOS DE ROL"
+          ]
+        },
+        "producto": {
+          "tecnica": "Valoración de producto",
+          "instrumento": "Rúbrica (PM-4.1)",
+          "criterios_dominantes": [
+            "C04 DESCRIBE de manera sencilla y clara",
+            "C05 OFRECE BREVES RAZONAMIENTOS",
+            "C08 ENLAZA SERIE DE ELEMENTOS",
+            "C10 SIGUE INSTRUCCIONES",
+            "C12 HACE PRESENTACIÓN BREVE"
+          ]
+        }
+      },
+      "matriz_55_pts_canonica": {
+        "E1_Reading": 5,
+        "E2_Writing": 5,
+        "E3_Listening": 5,
+        "E4_Speaking": 5,
+        "E5_Language_Functions": 5,
+        "_subtotal_apropiacion": 25,
+        "E6_Cuestionario_S6_Consolidado": 25,
+        "_subtotal_evaluacion": 25,
+        "Mision_Final_Transferencia": 5,
+        "_subtotal_transferencia": 5,
+        "TOTAL_PUNTOS": 55
+      },
+      "_nota_55pts": "Canon DM v2.9 · aplica literal a single-guía sin ajuste · E6 Cuestionario S6 25pts es la evaluación formal consolidada · Misión Final 5pts es transferencia ABP (no suma a evaluación formal)."
+    }
+  },
+  "bloque_B_gfpi_f134_cols_1_5": {
+    "source_pm": "PM-1.2 · genera Cols 1-5 · PM-2.0 y PM-2.11 consumen para Cols 6-11",
+    "macrotheme": "The Maritime Operations Pro (single-guía absorcion_Na1)",
+    "cefr_level": "A1.2 → A2.1 progresión interna",
+    "program_type": "Curso Complementario",
+    "competencia": {
+      "codigo": "240201050",
+      "nombre": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS"
+    },
+    "resultado_aprendizaje": {
+      "codigo": "RAP-CC-INTEGRADO (absorbe RAP-01, RAP-02, RAP-03, RAP-04 SOFÍA)",
+      "descripcion": "Comunicar operacionalmente en inglés (A1.2→A2.1) dentro del contexto marítimo-portuario colombiano: reconocer vocabulario portuario y ship overview · comprender frases SMCP estandarizadas OMI vía VHF · aplicar gramática puerto-buque en coordinación operativa bidireccional · describir funciones habituales y momentáneas del rol profesional con estructuras ocupacionales A2.1.",
+      "_nota_absorcion": "En single-guía absorcion_Na1, los 4 RAPs SOFÍA se sintetizan en una capacidad terminal integrada. Los RAPs originales viven como sub-bloques internos (ver pm-1-1.json bloques[0].bloques_internos)."
+    },
+    "saberes_conceptos_principios": [
+      "Vocabulario marítimo-portuario básico (Toolbelt 20 términos · 5 por sub-bloque)",
+      "Ship overview: parts of ships (bow, stern, bridge, deck, hull, mast)",
+      "Tipos de buques mercantes (container ship, bulk carrier, tanker, reefer, tugboat)",
+      "Frases estandarizadas OMI (SMCP): standard responses, message markers, standard spelling",
+      "NATO Phonetic Alphabet (Alpha · Bravo · Charlie ... Zulu)",
+      "Operaciones portuarias: containerization, mooring, docking, departure, cargo handling",
+      "Roles a-bordo y en-puerto: officers, helmsman, sailors, port captain, pilot, yard supervisor, crane operator",
+      "Estructuras gramaticales A1.2-A2.1 aplicadas al sector marítimo (modales, condicionales, voz pasiva, tag questions)",
+      "Estructuras ocupacionales A2.1 (responsible for, specialize in, coordinate, supervise, report to)"
+    ],
+    "saberes_proceso": [
+      "Reconocer vocabulario y expresiones marítimo-portuarias en input oral y escrito",
+      "Confirmar recepción de mensajes SMCP usando frases estandarizadas (Roger · Wilco · Affirmative · Negative)",
+      "Deletrear vocablos usando NATO Phonetic Alphabet en comunicación radio VHF",
+      "Coordinar operaciones tripartitas dando instrucciones secuenciadas a 2-3 actores distintos",
+      "Expresar prohibición · permisión · posibilidad · pedidos usando modales en contexto operativo",
+      "Describir funciones habituales y momentáneas del rol profesional usando estructuras A2.1",
+      "Justificar decisiones tomadas durante operaciones usando estructuras ocupacionales",
+      "Responder preguntas de panel con tag questions producción activa"
+    ],
+    "criterios_evaluacion": [
+      "C01 Interpreta correctamente mensajes SMCP recibidos por VHF (≥ 80% precisión en simulación)",
+      "C02 Responde con información pertinente a comandos e intercambios sencillos (Roger/Wilco/Affirmative correcto)",
+      "C03 Utiliza terminología portuaria y estructuras gramaticales apropiadas al nivel A1.2-A2.1",
+      "C04 Describe funciones habituales y momentáneas del personal y equipos del puerto en pitch de 3 min",
+      "C05 Pronuncia vocabulario técnico marítimo y SMCP con stress correcto en al menos 80% de los términos",
+      "C13 Participa eficazmente en juegos de rol simulados (VHF Response Simulation + Berthing Coordination)"
+    ]
+  },
+  "bloque_C_curacion_universe": {
+    "modelo_curacion_aplicado": "Vía 2 (instructor aporta) + placeholder Story D para Vía 3 híbrida opcional",
+    "curated_sources": [
+      {
+        "story_id": "Story A — REQUIRED",
+        "rol_propuesto": "Reading Anchor (PM-2.3)",
+        "metadatos": {
+          "titulo": "Maritime English textbook (TOC compartido por instructor)",
+          "autor": "(no especificado en _input.json original · pendiente confirmación instructor)",
+          "publicacion": "Textbook editorial marítima (~15 unidades)",
+          "fecha": "(no especificada)",
+          "url_o_referencia": "(material físico/PDF aportado por instructor · fuera del scope web)",
+          "genero_textual": "Textbook técnico-pedagógico"
+        },
+        "resumen": "Textbook clásico de Maritime English organizado en 15 unidades. Las UNITS 1-5 (SHIP OVERVIEW, THE CREW, PLACES IN PORT, IN PORT, SMCP) mapean directamente a los 4 RAPs absorbidos del curso IMARPOR-CC. Texto adaptable A1.2-A2.0 con vocabulario técnico denso pero acompañado de imágenes y diagramas. Personajes genéricos del shipping internacional.",
+        "analisis_linguistico_comunicativo": {
+          "relevancia_esp": {
+            "conexion_macrotema": "100% alineado · es el textbook de referencia del programa",
+            "entorno_ocupacional": "Sector marítimo-portuario internacional"
+          },
+          "vocabulario_tecnico_extraible": [
+            "bollard",
+            "crane",
+            "bow",
+            "stern",
+            "bridge",
+            "deck",
+            "hull",
+            "berth",
+            "mooring",
+            "anchor",
+            "vessel",
+            "container",
+            "manifest",
+            "cargo",
+            "stevedore"
+          ],
+          "funciones_comunicativas_soportadas": [
+            "Describing",
+            "Classifying",
+            "Instructing",
+            "Reporting"
+          ],
+          "estructuras_gramaticales_naturales": [
+            "Verb To Be",
+            "Have/Has",
+            "Present Simple",
+            "Demonstratives",
+            "Articles",
+            "Possessives",
+            "Prepositions",
+            "Comparatives",
+            "Modals (must, can, should)"
+          ],
+          "nivel_hots": [
+            "Remember",
+            "Understand",
+            "Apply"
+          ],
+          "rol_propuesto_canon_pm12": "Story A (Reading Anchor PM-2.3)"
+        },
+        "notas_adaptacion": {
+          "mantener_tal_cual": "Estructura UNIT 1-5 (mapeo directo a sub-bloques internos)",
+          "simplificar_para_A12": "Adaptar UNIT 4 IN PORT (denso) reduciendo párrafos complejos · mantener vocabulario clave",
+          "potencial_visual": "Diagramas de ship parts · imágenes de operaciones portuarias · usar para Canva deck"
+        },
+        "filtros_8_aplicados": {
+          "1_autenticidad": "✓ Material editorial real · publicación física verificable",
+          "2_recencia": "⚠ Pendiente verificar año (canon ≤ 3 años)",
+          "3_relevancia_esp": "✓ 100% alineado al sector",
+          "4_accesibilidad_linguistica": "✓ A1.2-A2.0 adaptable",
+          "5_riqueza_vocabulario": "✓ Cubre los 20 términos del Toolbelt completo",
+          "6_gancho_motivacional": "⚠ Textbook formal · bajo gancho juvenil",
+          "7_diversidad_genero": "✓ Único género textbook (las otras 2 fichas compensan)",
+          "8_potencial_visual": "✓ Diagramas + fotos disponibles"
+        }
+      },
+      {
+        "story_id": "Story B — REQUIRED",
+        "rol_propuesto": "Listening Script (PM-2.6)",
+        "metadatos": {
+          "titulo": "IMO Standard Marine Communication Phrases (SMCP) 2001",
+          "autor": "International Maritime Organization (IMO)",
+          "publicacion": "IMO official document (Resolution A.918(22))",
+          "fecha": "2001 (revisiones posteriores · canon institucional)",
+          "url_o_referencia": "https://www.imo.org/en/OurWork/Safety/Pages/StandardMarineCommunicationPhrases.aspx",
+          "genero_textual": "Documento normativo internacional (frases estandarizadas)"
+        },
+        "resumen": "Documento oficial de la OMI que define las Frases Estandarizadas para Comunicación Marítima (SMCP). Contiene cientos de frases canónicas usadas en VHF para comunicación buque-puerto · buque-buque · puerto-buque. Es el referente único e indispensable para los RAPs 02 y 03 del programa. Frases cortas, repetitivas, fácilmente adaptables a audio listening.",
+        "analisis_linguistico_comunicativo": {
+          "relevancia_esp": {
+            "conexion_macrotema": "100% alineado a RAP-02 (comprender SMCP) · referencia obligatoria",
+            "entorno_ocupacional": "Comunicación VHF puerto-buque internacional"
+          },
+          "vocabulario_tecnico_extraible": [
+            "Roger",
+            "Wilco",
+            "Affirmative",
+            "Negative",
+            "Standby",
+            "Out",
+            "Over",
+            "Say again",
+            "Spell that",
+            "Repeat",
+            "Vessel inbound",
+            "Request pilot",
+            "Berthing instructions",
+            "Question",
+            "Answer",
+            "Information",
+            "Warning",
+            "Advice",
+            "Instruction"
+          ],
+          "funciones_comunicativas_soportadas": [
+            "Requesting",
+            "Reporting",
+            "Instructing",
+            "Confirming",
+            "Negotiating"
+          ],
+          "estructuras_gramaticales_naturales": [
+            "Imperative",
+            "Present Simple",
+            "Modal must",
+            "Wh-questions"
+          ],
+          "nivel_hots": [
+            "Remember",
+            "Understand",
+            "Apply"
+          ],
+          "rol_propuesto_canon_pm12": "Story B (Listening Script PM-2.6) — adaptable a audio simulado VHF con interferencia"
+        },
+        "notas_adaptacion": {
+          "mantener_tal_cual": "Frases estandarizadas literales (no se adaptan · son canon OMI)",
+          "simplificar_para_A12": "Seleccionar subset A1.3-A2.0 evitando frases B1+ (tipo 'Adjust your course to...' que requieren navegación avanzada)",
+          "potencial_visual": "Tarjetas SMCP laminadas (Reference Card) · NATO Phonetic Reference Card"
+        },
+        "filtros_8_aplicados": {
+          "1_autenticidad": "✓✓ Documento oficial OMI verificable",
+          "2_recencia": "⚠ 2001 (>3 años) · pero canon institucional vigente · excepción legítima",
+          "3_relevancia_esp": "✓✓ 100% alineado",
+          "4_accesibilidad_linguistica": "✓ Frases cortas A1.3-A2.0 · subset adaptable",
+          "5_riqueza_vocabulario": "✓✓ Cubre todo Sub-bloque 2 + parte Sub-bloque 3",
+          "6_gancho_motivacional": "⚠ Documento normativo · bajo gancho · pero útil pedagógicamente",
+          "7_diversidad_genero": "✓ Documento normativo (distinto del textbook)",
+          "8_potencial_visual": "Limitado · útil para Reference Cards"
+        }
+      },
+      {
+        "story_id": "Story C — REQUIRED",
+        "rol_propuesto": "Backup / Extensión Visual",
+        "metadatos": {
+          "titulo": "Videos OMI YouTube (canal oficial International Maritime Organization)",
+          "autor": "International Maritime Organization (IMO)",
+          "publicacion": "Canal oficial YouTube IMO",
+          "fecha": "Variable · seleccionar videos ≤ 3 años para cumplir filtro recencia",
+          "url_o_referencia": "https://www.youtube.com/@IMOHQ (canal oficial)",
+          "genero_textual": "Video institucional · transcripciones disponibles"
+        },
+        "resumen": "Canal oficial YouTube de la OMI con videos sobre operaciones marítimas, seguridad, SMCP en uso real, briefings de capitanes, demostraciones de procedimientos. Material visual auténtico que muestra el sector marítimo internacional en acción. Transcripciones disponibles para cross-skill (listening + reading). Selección de instructor: ≥ 1 video con operaciones puerto-buque visibles + ≥ 1 video con SMCP en uso real.",
+        "analisis_linguistico_comunicativo": {
+          "relevancia_esp": {
+            "conexion_macrotema": "Material visual + auditivo del sector real · útil como extensión a Stories A y B",
+            "entorno_ocupacional": "Operaciones marítimas internacionales reales"
+          },
+          "vocabulario_tecnico_extraible": [
+            "(depende del video específico seleccionado · curaduría posterior por instructor)"
+          ],
+          "funciones_comunicativas_soportadas": [
+            "Reporting",
+            "Instructing",
+            "Describing",
+            "Explaining"
+          ],
+          "estructuras_gramaticales_naturales": [
+            "Present Simple",
+            "Present Continuous",
+            "Modals",
+            "Passive Voice"
+          ],
+          "nivel_hots": [
+            "Understand",
+            "Apply",
+            "Analyze"
+          ],
+          "rol_propuesto_canon_pm12": "Story C (Backup / Extensión visual) — soporta Misión Final con realia visual auténtica"
+        },
+        "notas_adaptacion": {
+          "mantener_tal_cual": "Videos en su formato original (con subtítulos disponibles)",
+          "simplificar_para_A12": "Seleccionar segmentos cortos (1-2 min) con vocabulario A1.2-A2.0 · evitar videos densos B1+",
+          "potencial_visual": "✓✓✓ Alto · es el material más visual de las 3 fichas"
+        },
+        "filtros_8_aplicados": {
+          "1_autenticidad": "✓✓ Canal oficial IMO verificable",
+          "2_recencia": "✓ Seleccionar videos ≤ 3 años (instructor curate)",
+          "3_relevancia_esp": "✓✓ 100% alineado",
+          "4_accesibilidad_linguistica": "⚠ Variable según video · requiere selección instructor",
+          "5_riqueza_vocabulario": "Variable · complementa Stories A y B",
+          "6_gancho_motivacional": "✓✓✓ Video real del sector · alto gancho",
+          "7_diversidad_genero": "✓✓ Video (distinto de textbook + documento normativo)",
+          "8_potencial_visual": "✓✓✓ Excelente"
+        }
+      }
+    ],
+    "curated_source_optional_d": {
+      "story_id": "Story D — OPTIONAL (Vía 3 híbrida placeholder)",
+      "rol_propuesto": "Pendiente · gancho narrativo colombiano",
+      "_status": "PLACEHOLDER · vacío",
+      "_nota_instructor": "Sergio puede aportar 1 fuente narrativa adicional con gancho colombiano (ej: blog de piloto práctico de Buenaventura · noticia de incidente VHF resuelto · entrevista con port captain colombiano · caso de estudio de operación real). Esto enriquecería la Vía 3 híbrida que recomendé inicialmente. Si se aporta, esta ficha se completa con análisis lingüístico y reemplaza/complementa Story C según decisión del instructor."
+    },
+    "instructor_selection": {
+      "_status": "PENDING · Sergio elige 2 stories ganadoras + asigna roles A/B/C",
+      "_canonical_assignment_proposal": {
+        "Story_A_Reading_PM23": "Maritime English textbook (Ficha 1) · razón: cubre vocabulario completo + estructura UNIT 1-5",
+        "Story_B_Listening_PM26": "IMO SMCP 2001 (Ficha 2) · razón: SMCP es material auditivo canónico para RAP-02",
+        "Story_C_Backup": "Videos OMI YouTube (Ficha 3) · razón: extensión visual + opcional Story D narrativa colombiana"
+      },
+      "_decision_required": "Confirmar asignación A/B/C O elegir distinto. Después marcar enriched: true para autorizar Fase 2."
+    },
+    "universe_foundation": {
+      "source": "Heredado literal de pm-0-context.universo_narrativo + pm-1-1.bloques[0].universo_tecnico_guia",
+      "empresa_ficticia": "Puerto de Buenaventura · Terminal de Contenedores",
+      "sector": "Marina Mercante Colombia · operaciones marítimo-portuarias · curso intensivo 100h",
+      "escenario_principal": "Andrea Mosquera (Port Operations Trainee · 1ª semana) atraviesa 12 sesiones intensivas de inglés marítimo-portuario en una sola guía de 100h. Visita el BUENAVENTURA EXPRESS en sesiones tempranas; coordina operaciones VHF y berthing en sesiones medias; cierra como Port Operations Professional con pitch ante panel.",
+      "personajes_canon": [
+        {
+          "nombre": "Andrea Mosquera",
+          "rol": "Port Operations Trainee (avatar aprendiz · A1.1 inicial)",
+          "descripcion": "22 años, Buenaventura, técnica recién egresada SENA. Sus miedos y victorias reflejan los del aula."
+        },
+        {
+          "nombre": "Capitán Restrepo",
+          "rol": "Port Captain (autoridad · B1 técnico)",
+          "descripcion": "50+ años, supervisor general del puerto. Da instrucciones y evalúa desempeño."
+        },
+        {
+          "nombre": "Captain Lopera",
+          "rol": "Vessel Master cliente externo (lingua franca B1)",
+          "descripcion": "45 años, chino-singapurense. Capitán del BUENAVENTURA EXPRESS. Cliente externo permanente. Representa el inglés real no-nativo del sector marítimo internacional."
+        }
+      ],
+      "productos_tipicos": [
+        "VHF radio communication",
+        "Berthing coordination",
+        "SMCP exchanges",
+        "Cargo handling reports",
+        "Port operations pitch"
+      ],
+      "terminologia_sector": [
+        "bollard",
+        "berth",
+        "pilot",
+        "tugboat",
+        "container",
+        "manifest",
+        "VHF",
+        "SMCP",
+        "stevedore",
+        "draft"
+      ],
+      "narrative_arc_single_guia": "Andrea atraviesa los 4 sub-bloques internos en una continuidad narrativa: Sub-bloque 1 visita BUENAVENTURA EXPRESS para inspección con Officer Vásquez (cameo) y Sailor García (cameo). Sub-bloque 2 escucha SMCP via VHF de Captain Lopera. Sub-bloque 3 coordina berthing operation tripartita con Diego (crane) + Bosun Romero (yard) + Captain Lopera. Sub-bloque 4 presenta pitch profesional ante Capitán Restrepo + agente naviero externo + Misión Final coordinando CML CARRIER.",
+      "final_mission_target": "Simulación de Operaciones: The CML Port Turnaround — Andrea coordina la operación completa de atraque, descarga y despacho del CML CARRIER (vessel ficticio) en turno de 12 horas, demostrando los 4 RAPs absorbidos: vocabulario portuario (RAP-01), comunicación SMCP por VHF (RAP-02), aplicación gramatical en coordinación bidireccional (RAP-03), y presentación final de su rol y procesos (RAP-04) ante panel."
+    }
+  },
+  "source_assignment": {
+    "reading": "src-A (Maritime English textbook)",
+    "listening": "src-B (IMO SMCP 2001)",
+    "writing": "src-A (Maritime English textbook + adaptaciones de UNIT 1+4)",
+    "final_mission": "src-A + src-B + src-C (textbook UNIT 1-5 + SMCP completo + videos OMI para realia)",
+    "cuestionario": "src-A + src-B (textbook + SMCP literal)",
+    "_status": "PROPUESTA · espera confirmación Sergio en Instructor Selection"
+  },
+  "validacion_reglas_pm12": {
+    "source": "PM-1.2 — 9 REGLAS DE DISEÑO",
+    "_apply_check_date": "2026-04-27",
+    "reglas": [
+      {
+        "id": "R01",
+        "regla": "DNA de la guía (nombre conceptual + enfoque + 3 entendimientos perdurables)",
+        "estado": "PASS"
+      },
+      {
+        "id": "R02",
+        "regla": "Content Core en 4 categorías (Topics + Functions + Lang Functions in Context + Vocab)",
+        "estado": "PASS"
+      },
+      {
+        "id": "R03",
+        "regla": "Vocabulario EXACTAMENTE 20 términos",
+        "estado": "PASS · 5 × 4 sub-bloques = 20"
+      },
+      {
+        "id": "R04",
+        "regla": "Curación antes de diseñar (las stories definen vocab/grammar/funciones/universo)",
+        "estado": "PASS · 3 fichas curadas antes de diseño"
+      },
+      {
+        "id": "R05",
+        "regla": "Integrative Task auténtica (vocab + funciones · entregable escrito + oral)",
+        "estado": "PASS · CML Port Turnaround con 3 entregables"
+      },
+      {
+        "id": "R06",
+        "regla": "Evaluation Matrix triada SENA (Conocimiento + Desempeño + Producto)",
+        "estado": "PASS · matriz 55 pts canónica + criterios C01-C13 distribuidos"
+      },
+      {
+        "id": "R07",
+        "regla": "Coherencia con bloque PM-1.1 (mismo nombre, justificación, CEFR)",
+        "estado": "PASS · 'The Maritime Operations Pro' + A1.2→A2.1"
+      },
+      {
+        "id": "R08",
+        "regla": "Diversidad de géneros textuales (las 3 fuentes deben ser de géneros distintos)",
+        "estado": "PASS · textbook + documento normativo + video institucional"
+      },
+      {
+        "id": "R09",
+        "regla": "Lenguaje híbrido (instrucciones español, contenido técnico inglés)",
+        "estado": "PASS"
+      }
+    ],
+    "total_reglas": 9,
+    "pass_count": 9,
+    "fail_count": 0,
+    "veredicto": "PASS 9/9"
+  },
+  "siguiente_paso": {
+    "checkpoint_actual": "CP1B (DRAFT-DECISIONS pm-1-2 · espera Instructor Selection)",
+    "decision_pendiente": "Sergio confirma asignación A/B/C de las 3 stories curadas + (opcional) aporta Story D narrativa colombiana + marca enriched: true",
+    "next_pm_post_enriched": "PM-2.0 (RAP Session Architect) · arranca Fase 2 cuando enriched: true"
+  },
+  "_smoke_test_note": "enriched FORZADO a true SOLO para smoke-test · NO contamina IMARPOR-CC original (este es clon en _smoke/)",
+  "_smoke_original_enriched": false
+}

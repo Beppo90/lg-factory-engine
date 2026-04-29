@@ -1,0 +1,343 @@
+{
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "pm_code": "PM-2.1",
+  "pm_name": "The Spark — Reflexión Inicial (Sesión 1 · Primera Mitad)",
+  "pm_version": "3.0",
+  "guia_numero": 1,
+  "guia_nombre": "The Maritime Operations Pro",
+  "rap_origen": "RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFÍA)",
+  "rap_codigo": "240201050-RAP",
+  "competencia_codigo": "240201050",
+  "cefr_level": "A1.2 (entrada single-guía · progresión interna A1.2 → A2.1)",
+  "session": 1,
+  "fase_sena": "Reflexión Inicial",
+  "generated_at": "2026-04-28",
+  "instructor": "Sergio Cortés Perdomo",
+  "enriched": false,
+  "_rationale_enriched_false": "Spark generado · espera Instructor Selection (Gate Humano 2) antes de propagar a PM-2.11. PM-2.2 Gap Analysis se ejecutará en la segunda mitad de la misma S1.",
+  "previous_pms": [
+    {
+      "pm_code": "PM-0",
+      "role": "Anclas pedagógicas (CEFR A1.2, L1% S1, principios pedagógicos sector marítimo-portuario)"
+    },
+    {
+      "pm_code": "PM-1.1",
+      "role": "Regla de bloques absorcion_Na1 · single-guía · 4 RAPs absorbidos"
+    },
+    {
+      "pm_code": "PM-1.2",
+      "role": "Universo narrativo IMARPOR-CC: Andrea Mosquera (apprentice) + Captain Lopera (BUENAVENTURA EXPRESS) + Capitán Restrepo (Port Captain mentor) + Puerto de Buenaventura · Berth 4"
+    },
+    {
+      "pm_code": "PM-2.0",
+      "role": "Session Blueprint S1: 6h directas + 2.33h autónomas · S1 = Reflexión Inicial dividida en PM-2.1 (Spark) + PM-2.2 (Gap Analysis)"
+    }
+  ],
+  "archetypes_policy": "1 ARQUETIPO CANÓNICO NARRATIVE_SCENARIO — estilo declarado mgv_compendio_metodologico",
+  "estilo_aplicado": "mgv_compendio_metodologico",
+  "archetype_mode": "DEFAULT — Único Detonante (NARRATIVE_SCENARIO con estructura EXPLORE / ENGAGE / DISCOVER)",
+  "pm0_anchor": {
+    "source_file": "pm-0-context.json",
+    "cefr_descriptor_ref": "§6.A1.2 — descriptor por bloque interno · Bloque Interno 1 RAP-01",
+    "l1_policy_ref": "§9.1.single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S1 — L1% ≈ 25% en S1",
+    "methodological_shift_ref": "§5.A1.2 — input lento, máximo andamiaje bilingüe, accuracy-prioritario, escenario contextualizado a oficio marítimo",
+    "feedback_ref": "§5.6 — modo dominante S1: Recast suave + Reformulación positiva (cero corrección invasiva en Spark)",
+    "stress_pronunciation_ref": "§5.8 — S1: stress en survival words 1-2 sílabas (port, ship, berth, captain)",
+    "success_vocabulary_ref": "§5.10 — S1: activar 4 survival words del universo IMARPOR (port, berth, captain, vessel)",
+    "grammar_roadmap_ref": "§8.Bloque_Interno_1_RAP01 — S1 NO activa ningún grupo gramatical (solo reconocimiento receptivo · vocabulario portuario base)",
+    "principle_pedagogical_refs": [
+      "§5.1 Input comprensible — narrativa accesible al aprendiz primerizo",
+      "§5.10 Vocabulario de supervivencia primero — port/ship/berth/captain antes de gramática",
+      "§5.13 Bilingüismo unificado — instrucción una vez en EN + español cursivo (no bloques duplicados)"
+    ]
+  },
+  "universe_anchor": {
+    "program": "Inglés Marítimo y Portuario (Curso Complementario) · 12340002 · 100h · Sector Marina Mercante Colombia",
+    "workplace": "Puerto de Buenaventura · Pacífico colombiano · Berth 4 (muelle de carga general) · BUENAVENTURA EXPRESS atracado",
+    "characters": {
+      "protagonist_learner_avatar": {
+        "name": "Andrea Mosquera",
+        "role": "Aprendiz SENA recién egresada · primera semana en el Puerto de Buenaventura",
+        "english_level": "A1.2 (avatar del aprendiz · refleja gaps del aula)",
+        "narrative_function": "Protagonista. Sus miedos, dudas y gaps lingüísticos reflejan los de los aprendices SENA en S1. La cohorte se identifica con ella desde la primera mañana."
+      },
+      "mentor": {
+        "name": "Capitán Restrepo",
+        "role": "Capitán de Puerto (Port Captain) · 22 años de experiencia · supervisor directo de Andrea durante su primera semana",
+        "english_level": "C1 (fluido operativo, lengua materna española)",
+        "narrative_function": "Figura de autoridad benévola. Está cerca pero no rescata: empuja a Andrea a que ella misma resuelva la comunicación en inglés con los buques internacionales."
+      },
+      "external_client": {
+        "name": "Captain Lopera",
+        "role": "Vessel Master del BUENAVENTURA EXPRESS · capitán internacional",
+        "english_level": "B2 (lingua franca, no nativo · típico del Pacífico colombiano)",
+        "narrative_function": "Cliente externo permanente del curso. Habla por radio VHF y en cubierta. Necesita respuestas claras de Andrea en inglés operativo — no inglés perfecto."
+      }
+    },
+    "narrative_stake": "Es lunes, 6:15 a.m. Andrea llega a Berth 4 en su primera mañana. El BUENAVENTURA EXPRESS está atracando. Captain Lopera la saluda en inglés desde el puente. El Capitán Restrepo observa desde el muelle. Si Andrea no logra responder con cuatro palabras claras, queda en evidencia ante el capitán internacional Y ante su propio mentor en el primer minuto de su carrera."
+  },
+  "identity": {
+    "codigo": "PM-2.1",
+    "nombre": "The Spark (The Narrative Scenario)",
+    "subfase_guia_sena": "3.1 Actividades de reflexión inicial",
+    "ubicacion_guia": "Sección 3.1 Reflexión Inicial · primera mitad de S1",
+    "tipo_evidencia_sena": "N/A (actividad motivacional · S1 no genera evidencia per canon)",
+    "instrumento": "Learner's Worksheet — THE SPARK",
+    "estructura": "THE NARRATIVE SCENARIO (Único Detonante · EXPLORE / ENGAGE / DISCOVER)",
+    "bloom_level": "L1 Recordar + L2 Comprender (NO L3+ · spark es motivacional, no analítico)"
+  },
+  "content": {
+    "worksheet_title": "THE SPARK — Reflexión Inicial · First Morning at the Port",
+    "guia_header": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Sesión 1 · Nivel A1.2",
+    "bilingual_instruction_block": {
+      "main_message_en": "Welcome to the port. Today is Andrea's first morning. Listen, watch, and remember: you are not alone — you are learning with her. (*Bienvenido al puerto. Hoy es la primera mañana de Andrea. Escucha, observa y recuerda: no estás solo — estás aprendiendo con ella.*)",
+      "l1_percentage_target": "≈ 25% L1 (per pm-0-context single_guide_12_sessions Bloque_Interno_1_RAP01_A1.2.S1)",
+      "scaffolding_mode": "Bilingüe Unificada — instrucción una sola vez en inglés simple + traducción al español en cursiva. PROHIBIDO bloques duplicados de instrucciones."
+    },
+    "survival_words": [
+      {
+        "word": "port",
+        "definition_en": "place where ships stop",
+        "translation_es": "puerto",
+        "stress_syllable": "port (1 syllable)"
+      },
+      {
+        "word": "berth",
+        "definition_en": "the spot where one ship parks",
+        "translation_es": "muelle / atraque",
+        "stress_syllable": "berth (1 syllable)"
+      },
+      {
+        "word": "captain",
+        "definition_en": "the boss of the ship",
+        "translation_es": "capitán",
+        "stress_syllable": "CAP-tain (stress on first syllable)"
+      },
+      {
+        "word": "vessel",
+        "definition_en": "another word for ship or boat",
+        "translation_es": "buque / embarcación",
+        "stress_syllable": "VES-sel (stress on first syllable)"
+      }
+    ],
+    "narrative_scenario": {
+      "scenario_title": "🎬 THE SCENARIO — Andrea's First Morning at Berth 4",
+      "scenario_text_en": "Monday. 6:15 a.m. Puerto de Buenaventura. Berth 4. Andrea Mosquera stands on the dock with her hard hat and her radio. The BUENAVENTURA EXPRESS is arriving. From the bridge, Captain Lopera waves and speaks: \"Good morning! Berth 4? Captain Lopera. Vessel ready.\" Capitán Restrepo, her mentor, watches in silence from the dock. He waits. He does not help. Andrea has the radio in her hand. She has four words. She must answer.",
+      "scenario_text_es_cursive": "(*Lunes. 6:15 a.m. Puerto de Buenaventura. Muelle 4. Andrea Mosquera está en el muelle con su casco y su radio. El BUENAVENTURA EXPRESS está llegando. Desde el puente, el Capitán Lopera la saluda y habla: «Good morning! Berth 4? Captain Lopera. Vessel ready.» El Capitán Restrepo, su mentor, observa en silencio desde el muelle. Espera. No ayuda. Andrea tiene la radio en la mano. Tiene cuatro palabras. Debe responder.*)",
+      "word_count_en": 78,
+      "the_stakes": {
+        "stakes_title": "❓ THE STAKES — What if Andrea cannot answer?",
+        "stakes_text_en": "If Andrea does not answer in English, three things happen: (1) Captain Lopera switches to a different berth and the port loses time and money. (2) Capitán Restrepo writes a note in her first-week report. (3) Andrea loses confidence on her first morning — and her first morning sets the tone for the rest of her career.",
+        "stakes_text_es_cursive": "(*Si Andrea no responde en inglés, pasan tres cosas: (1) El Capitán Lopera cambia de muelle y el puerto pierde tiempo y dinero. (2) El Capitán Restrepo escribe una nota en su reporte de primera semana. (3) Andrea pierde confianza en su primera mañana — y la primera mañana marca el tono del resto de su carrera.*)"
+      }
+    },
+    "EXPLORE": {
+      "activity_number": 1,
+      "activity_label": "📋 ACTIVITY 1 — EXPLORE: ¿Qué harías tú?",
+      "modality": "Individual · reflexivo · silencioso",
+      "duration_minutes": 30,
+      "bloom_level": "L1 Recordar — el aprendiz recupera vocabulario que ya escuchó (port, berth, captain, vessel)",
+      "instruction_en": "Imagine you are Andrea. You hear the captain. You have the radio. Write the four English words you would say. Just four. (*Imagina que eres Andrea. Escuchas al capitán. Tienes la radio. Escribe las cuatro palabras en inglés que dirías. Solo cuatro.*)",
+      "learner_task": "El aprendiz escribe individualmente 4 palabras en inglés en su Learner's Worksheet. No frases completas. Solo palabras sueltas reconocidas del survival vocabulary. Permiso explícito de equivocarse: 'wrong answers are welcome — esto NO es evaluación'.",
+      "support_phrases_en_es": [
+        "I think... = Yo pienso...",
+        "Maybe... = Tal vez...",
+        "I don't know yet = Todavía no sé"
+      ],
+      "micro_capsule": {
+        "type": "🎧 Audio Cue",
+        "content_en": "Listen to Captain Lopera one more time. Three short sentences. Each sentence is one breath. (*Escucha al Capitán Lopera una vez más. Tres frases cortas. Cada frase es una respiración.*)"
+      },
+      "didactic_strategy": "Aprendizaje reflexivo individual",
+      "didactic_technique": "Escritura libre de supervivencia (free survival writing)"
+    },
+    "ENGAGE": {
+      "activity_number": 2,
+      "activity_label": "📋 ACTIVITY 2 — ENGAGE: El diagnóstico grupal",
+      "modality": "Grupos pequeños de 3-4 aprendices · discusión",
+      "duration_minutes": 60,
+      "bloom_level": "L2 Comprender — el aprendiz compara, agrupa y reconoce qué palabras tienen en común con sus compañeros",
+      "instruction_en": "In small groups, share your four words. Make one common list on the flip chart. Then mark with a green dot the words EVERYONE knew, and with a red dot the words SOMEONE did not know. (*En grupos pequeños, compartan sus cuatro palabras. Hagan una lista común en el papelógrafo. Luego marquen con un punto verde las palabras que TODOS conocían, y con un punto rojo las palabras que ALGUIEN no conocía.*)",
+      "learner_task": "Los aprendices descubren juntos qué tan grande es el gap colectivo. El instructor NO da respuestas todavía — solo facilita la conversación. Se sienten acompañados, no evaluados.",
+      "support_phrases_en_es": [
+        "I have... and you? = Yo tengo... ¿y tú?",
+        "We have the same word = Tenemos la misma palabra",
+        "I do not have this one = No tengo esta",
+        "Can you repeat? = ¿Puedes repetir?"
+      ],
+      "micro_capsule": {
+        "type": "⚠️ Safety Rule",
+        "content_en": "There are no wrong words today. Only words we have and words we still need. (*Hoy no hay palabras incorrectas. Solo palabras que tenemos y palabras que todavía necesitamos.*)"
+      },
+      "didactic_strategy": "Aprendizaje colaborativo",
+      "didactic_technique": "Lluvia de ideas con marcado por consenso (green-dot / red-dot)"
+    },
+    "DISCOVER": {
+      "activity_number": 3,
+      "activity_label": "📋 ACTIVITY 3 — DISCOVER: El puente al curso",
+      "modality": "Plenaria guiada por el instructor",
+      "duration_minutes": 45,
+      "bloom_level": "L2 Comprender — el aprendiz reconoce qué bloque del curso le va a dar las palabras que le faltan",
+      "instruction_en": "Look at the red dots on the flip chart. Those red dots are your map for the next 12 sessions. Today is Day 1. By Session 12, you will be Andrea on the radio, answering Captain Lopera. (*Mira los puntos rojos en el papelógrafo. Esos puntos rojos son tu mapa para las próximas 12 sesiones. Hoy es Día 1. Para la Sesión 12, tú serás Andrea en la radio, respondiéndole al Capitán Lopera.*)",
+      "learner_task": "El instructor proyecta un esquema simple del curso (4 bloques internos, 12 sesiones). Cada aprendiz identifica oralmente UNA palabra de su lista roja y el instructor le señala en qué bloque interno la va a aprender. No memorización, no evaluación — solo reconocimiento del mapa.",
+      "support_phrases_en_es": [
+        "I will learn... = Voy a aprender...",
+        "In Block 1 = En el Bloque 1",
+        "Next session = La próxima sesión"
+      ],
+      "micro_capsule": {
+        "type": "🧭 Course Map",
+        "content_en": "Block 1 = Port words. Block 2 = Radio (SMCP). Block 3 = Grammar in action. Block 4 = Your professional role. (*Bloque 1 = Palabras del puerto. Bloque 2 = Radio (SMCP). Bloque 3 = Gramática en acción. Bloque 4 = Tu rol profesional.*)"
+      },
+      "didactic_strategy": "Aprendizaje significativo guiado",
+      "didactic_technique": "Mapa del curso anclado a vocabulario emergente"
+    },
+    "closing_motivational_block": {
+      "closing_message_en": "Andrea is you. Captain Lopera is your future client. Buenaventura is your workplace. See you in PM-2.2 — same morning, same radio, deeper questions. (*Andrea eres tú. El Capitán Lopera es tu futuro cliente. Buenaventura es tu lugar de trabajo. Nos vemos en PM-2.2 — la misma mañana, la misma radio, preguntas más profundas.*)",
+      "tone": "cálido · de bienvenida · sin presión evaluativa"
+    }
+  },
+  "activity_card": {
+    "pm_id": "PM-2.1",
+    "pm_name": "The Spark",
+    "session": 1,
+    "phase_sena": "Reflexión Inicial",
+    "rap_id": "240201050-RAP",
+    "activities": [
+      {
+        "number": 1,
+        "type": "cognitiva",
+        "statement": "Reconocer cuatro palabras de supervivencia en inglés (port, berth, captain, vessel) escuchando el saludo radial del Capitán Lopera, registrándolas individualmente en el Learner's Worksheet sin presión evaluativa",
+        "didactic_strategy": "Aprendizaje reflexivo individual",
+        "didactic_technique": "Escritura libre de supervivencia",
+        "bloom_level": "L1 Recordar"
+      },
+      {
+        "number": 2,
+        "type": "cognitiva",
+        "statement": "Comparar en grupos pequeños las cuatro palabras de supervivencia listadas individualmente, identificando colectivamente con marcado verde/rojo el vocabulario común y los gaps grupales mediante lluvia de ideas en papelógrafo",
+        "didactic_strategy": "Aprendizaje colaborativo",
+        "didactic_technique": "Lluvia de ideas con marcado por consenso",
+        "bloom_level": "L2 Comprender"
+      },
+      {
+        "number": 3,
+        "type": "cognitiva",
+        "statement": "Comprender el mapa del curso (4 bloques internos · 12 sesiones) reconociendo en plenaria guiada en cuál bloque se aprenderán las palabras marcadas en rojo, conectando el escenario inicial con la trayectoria pedagógica de la guía",
+        "didactic_strategy": "Aprendizaje significativo guiado",
+        "didactic_technique": "Mapa del curso anclado a vocabulario emergente",
+        "bloom_level": "L2 Comprender"
+      }
+    ],
+    "hours": {
+      "direct": 3.75,
+      "autonomous": 0.75,
+      "rationale_hours": "S1 total = 6h directas + 2.33h autónomas (per PM-2.0 blueprint). PM-2.1 Spark consume primera mitad: 3.75h directas (30+60+45 min de actividades + 30 min hook narrativo + 30 min cierre motivacional + buffer) + 0.75h autónomas (lectura del scenario en casa). El resto (2.25h directas + 1.58h autónomas) va a PM-2.2 Gap Analysis."
+    },
+    "evidence": {
+      "generates_evidence": false,
+      "type": null,
+      "description": "S1 no genera evidencia per canon FPI SENA. El Spark es actividad motivacional/diagnóstica · sin instrumento de evaluación formal.",
+      "evaluation_technique": null,
+      "instrument_number": null,
+      "instrument_type": null
+    },
+    "environment": {
+      "type": "Aula",
+      "materials": [
+        "Proyector",
+        "Papelógrafo (flip chart) grande",
+        "Marcadores negros, verdes y rojos",
+        "Stickers de puntos verdes y rojos",
+        "Learner's Worksheet impreso (THE SPARK)",
+        "Audio del saludo de Captain Lopera (3 frases · 1 minuto · acento lingua-franca)",
+        "Mapa visual del curso (4 bloques · 12 sesiones)"
+      ],
+      "instructors": "Instructor de inglés + Técnico especialista marítimo-portuario"
+    },
+    "contributes_to_consolidated_quiz": false,
+    "quiz_skill": null,
+    "quiz_points": 0,
+    "quiz_item_count": 0
+  },
+  "pm0_protocol_session_level": {
+    "session_id": "S1",
+    "bloque_interno": "Bloque_Interno_1_RAP01_A1.2",
+    "cefr_target": "A1.2 (entrada)",
+    "l1_percentage_used": "≈ 25% (alineado a single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S1)",
+    "l1_distribution": {
+      "scenario_narrative_l1_cursive": "100% del scenario tiene espejo en español cursivo (andamiaje máximo S1)",
+      "instructions_l1_cursive": "100% de instrucciones espejadas (Bilingüe Unificada)",
+      "support_phrases_l1": "Apoyo léxico bilingüe en cada actividad",
+      "discussion_l1_allowed": "Sí · ENGAGE permite discusión grupal en español sobre las palabras inglesas (es S1)"
+    },
+    "methodological_shift": "§5.A1.2 · input lento, máximo andamiaje, accuracy-prioritario · escenario contextualizado al primer día de Andrea",
+    "feedback_mode": "§5.6 · Recast suave + Reformulación positiva · CERO corrección invasiva (es Spark, no evaluación)",
+    "stress_pronunciation_focus": "§5.8 · stress en survival words 1-2 sílabas (PORT · BERTH · CAP-tain · VES-sel)",
+    "vocabulary_activation": "§5.10 · 4 survival words activadas receptivamente (port, berth, captain, vessel)",
+    "grammar_activation": "§8.Bloque_Interno_1_RAP01 · NINGÚN grupo gramatical activado en S1 · solo reconocimiento receptivo de vocabulario",
+    "principles_invoked": [
+      "§5.1 Input comprensible",
+      "§5.10 Vocabulario de supervivencia primero",
+      "§5.13 Bilingüismo unificado (no bloques duplicados)",
+      "§5.6 Feedback no invasivo en S1"
+    ]
+  },
+  "validacion": {
+    "reglas_pm21": {
+      "estructura_canonica_modo_default": "OK · estructura EXPLORE / ENGAGE / DISCOVER aplicada literalmente",
+      "arquetipo_unico_NARRATIVE_SCENARIO": "OK · 1 arquetipo canónico NARRATIVE_SCENARIO (modo DEFAULT mgv_compendio_metodologico)",
+      "no_evidencia_formal": "OK · S1 no genera evidencia · evidence.generates_evidence = false",
+      "scenario_max_80_palabras": "OK · scenario en inglés tiene 78 palabras (≤ 80)",
+      "stakes_presentes": "OK · THE STAKES con 3 consecuencias concretas",
+      "tres_actividades_individual_grupal_puente": "OK · ACTIVITY 1 individual · ACTIVITY 2 grupal · ACTIVITY 3 puente técnico",
+      "survival_words_3_4": "OK · 4 survival words (port, berth, captain, vessel)",
+      "bilingue_unificada": "OK · instrucción una sola vez en inglés + español cursivo · sin bloques duplicados",
+      "micro_capsulas_visuales": "OK · 3 micro-cápsulas (🎧 Audio Cue · ⚠️ Safety Rule · 🧭 Course Map)",
+      "zero_meta_talk": "OK · output listo para imprimir · sin instrucciones meta al instructor dentro de la worksheet"
+    },
+    "anclaje_pm0": {
+      "cefr_descriptor_anclado": "OK · §6.A1.2 Bloque Interno 1",
+      "l1_percentage_anclado": "OK · ≈ 25% per §9.1.single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S1",
+      "principios_pedagogicos_invocados": "OK · §5.1, §5.6, §5.10, §5.13",
+      "grammar_roadmap_respetado": "OK · S1 no activa ningún grupo gramatical (solo receptivo)",
+      "feedback_mode_alineado": "OK · Recast suave + Reformulación positiva en S1"
+    },
+    "continuidad_sistemica": {
+      "input_pm12_universo_preservado": "OK · Andrea Mosquera + Captain Lopera + Capitán Restrepo + Puerto de Buenaventura + Berth 4 + BUENAVENTURA EXPRESS — todos provienen literalmente de pm-1-2.bloque_0_presentacion_l1",
+      "input_pm20_blueprint_horas_respetado": "OK · 3.75h directas + 0.75h autónomas en PM-2.1 · resto (2.25h + 1.58h) reservado para PM-2.2 · suma S1 = 6h + 2.33h",
+      "input_pm0_anclas_respetadas": "OK · todas las anclas pm0 invocadas en pm0_protocol_session_level",
+      "bloom_ceiling_respetado": "OK · Bloom L1-L2 únicamente · NO se cruza a L3 Apply (eso es PM-2.5/PM-2.3 en S2+)",
+      "spark_motivacional_no_analitico": "OK · ninguna tarea pide al aprendiz analizar, aplicar reglas o producir lenguaje original más allá del nivel de supervivencia"
+    },
+    "trazabilidad_gfpi_f_134": {
+      "rap_codigo_presente": "OK · 240201050-RAP",
+      "competencia_codigo_presente": "OK · 240201050",
+      "fase_sena_correcta": "OK · Reflexión Inicial (Sección 3.1)",
+      "actividades_con_estrategia_y_tecnica": "OK · cada una de las 3 actividades tiene didactic_strategy + didactic_technique",
+      "ambiente_y_materiales_explicitos": "OK · environment.type + environment.materials lista detallada",
+      "instructores_declarados": "OK · Instructor de inglés + Técnico especialista marítimo-portuario",
+      "horas_directas_y_autonomas_separadas": "OK · hours.direct = 3.75 · hours.autonomous = 0.75",
+      "evidencia_explicitamente_nula": "OK · evidence.generates_evidence = false con rationale"
+    },
+    "check9_anti_copia_fantasma": {
+      "evidence": "Validación explícita: NO se copió contenido del ref operacional MGV-2026-04-20/pm-2-1.json. La ref MGV pertenece al universo de diseño gráfico (Pixel & Ink Studio · Andrés · Laura · Sophia Martinez · contrato internacional de branding · vocabulario typography/serif/sans-serif/Pixel). Esta Activity Card pertenece al universo IMARPOR-CC marítimo-portuario (Andrea Mosquera · Capitán Restrepo · Captain Lopera · Puerto de Buenaventura · Berth 4 · BUENAVENTURA EXPRESS · vocabulario port/berth/captain/vessel/SMCP). NINGÚN nombre de personaje, NINGUNA palabra de vocabulario técnico, NINGÚN narrative_stake, NINGUNA referencia visual (typography/serif/Pixel) de la ref MGV aparece en este output. La ref MGV se usó EXCLUSIVAMENTE como template estructural (orden de campos JSON + estructura EXPLORE/ENGAGE/DISCOVER + presencia de pm0_anchor + universe_anchor + identity + content + activity_card + validacion + siguiente_paso) — NO como fuente de contenido pedagógico.",
+      "originalidad_universo": "OK · 100% IMARPOR-CC original",
+      "originalidad_vocabulario": "OK · survival words sectoriales marítimas (port/berth/captain/vessel) · ningún término de diseño gráfico",
+      "originalidad_personajes": "OK · 3 personajes IMARPOR (Andrea/Restrepo/Lopera) · ningún personaje MGV (Andrés/Laura/Sophia)",
+      "originalidad_workplace": "OK · Puerto de Buenaventura · Berth 4 · ningún workplace MGV (Pixel & Ink Studio)",
+      "originalidad_narrative_stake": "OK · primera mañana en muelle con saludo radial · ningún stake MGV (contrato internacional de branding)"
+    }
+  },
+  "siguiente_paso": {
+    "next_pm": "PM-2.2",
+    "next_pm_name": "Gap Analysis — Reflexión Inicial (Sesión 1 · Segunda Mitad)",
+    "rationale": "PM-2.1 activó la motivación con el escenario de Andrea en Berth 4 y dejó el papelógrafo con puntos rojos visibles (gaps colectivos). PM-2.2 toma esa pizarra como insumo y diagnostica formalmente qué saben los aprendices versus qué necesitan: convierte los puntos rojos en un perfil de entrada por aprendiz que alimenta a PM-2.3/PM-2.5 en S2+. Las horas restantes de S1 (2.25h directas + 1.58h autónomas del blueprint) van a PM-2.2.",
+    "handoff_artifacts": [
+      "Papelógrafo con lista común de palabras + marcado verde/rojo (input de gaps colectivos para PM-2.2)",
+      "Learner's Worksheet individual con 4 palabras escritas por aprendiz (input de perfil individual para PM-2.2)",
+      "Mapa del curso proyectado en plenaria (input de anclaje narrativo para PM-2.2)"
+    ],
+    "instructor_selection_required": "Sí · enriched: false · Sergio debe revisar este Spark antes de propagar a PM-2.11 (Gate Humano 2)"
+  }
+}

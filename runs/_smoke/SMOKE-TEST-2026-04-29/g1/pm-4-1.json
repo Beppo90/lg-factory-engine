@@ -1,0 +1,48 @@
+{
+  "pm_id": "PM-4.1",
+  "subagente": "subagente_pm_4_1_instruments",
+  "version_master_prompt": "2.6.5",
+  "version_subagente": "1.0",
+  "run_id": "SMOKE-TEST-2026-04-29",
+  "guide_id": "g1",
+  "instrumentos_count": 1,
+  "instrumentos": [
+    {
+      "numero": 6,
+      "nombre": "Cuestionario Consolidado S6 (framework)",
+      "tipo_evidencia": "Conocimiento",
+      "fuente_pm": "PM-4.2 (implementación detallada)",
+      "puntos": 25,
+      "tecnica": "Formulación de preguntas",
+      "estructura": {
+        "secciones_count": 5,
+        "puntos_por_seccion": 5,
+        "items_count": 25,
+        "items_per_point": 1,
+        "skills_distribution": {
+          "Reading": 5,
+          "Writing": 5,
+          "Listening": 5,
+          "Vocabulary": 5,
+          "Grammar": 5
+        }
+      },
+      "implementacion_detallada_en": "PM-4.2 subagente",
+      "version_master_prompt": "2.6.5"
+    }
+  ],
+  "puntuacion_consolidada": {
+    "puntos_formativos_total": 25,
+    "puntos_sumativos_cuestionario_s6": 25,
+    "puntos_canonicos_v_2_3_1": 50,
+    "match_canon": true
+  },
+  "missing_activity_cards": [
+    "PM-2.3",
+    "PM-2.4",
+    "PM-2.6",
+    "PM-2.8",
+    "PM-2.9"
+  ],
+  "ready_for_pm_4_2": false
+}
