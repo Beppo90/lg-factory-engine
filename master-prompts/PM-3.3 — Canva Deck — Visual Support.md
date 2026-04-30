@@ -1,4 +1,4 @@
-# PM-3.3: CANVA DECK — VISUAL SUPPORT
+# PM-3.3: VISUAL AID GENERATOR — STUDENT-FACING (TOOL-AGNOSTIC)
 
 ## FPI SENA — Bilingüismo
 
@@ -9,17 +9,24 @@
 | Campo | Valor |
 |-------|-------|
 | **Código** | PM-3.3 |
-| **Nombre** | Canva Deck — Visual Support |
-| **Versión** | 2.4 |
-| **Last Verified** | 2026-04-20 |
-| **Destinatario** | Instructor (presentación visual durante clase) |
-| **Función** | Generar (a) `pm-3-3-spec.json` — contrato de datos del deck — y (b) la presentación PPTX derivada de ese spec |
-| **Analogía** | Es el "set de iluminación" de la guía — lo que el aprendiz VE mientras el instructor dirige |
-| **Herramienta** | Canva / PPTX — se construye automáticamente desde `pm-3-3-spec.json` (prohibido hardcoding en el script generador) |
+| **Nombre** | Visual Aid Generator — Student-Facing Markdown (tool-agnostic) |
+| **Versión** | 3.0 |
+| **Last Verified** | 2026-04-30 |
+| **Destinatario** | Aprendiz (apoyo visual ilustrativo de cada actividad/evidencia · STUDENT-FACING) |
+| **Función** | Generar `pm-3-3.md` — un único archivo Markdown estructurado · 1 sección por actividad · tool-agnostic input para Claude Design / PPTX / Canva / NotebookLM / cualquier herramienta visual |
+| **Analogía** | Es el "guion visual" de la guía — descripciones narrativas + design constraints que cualquier herramienta puede interpretar |
+| **Herramienta de consumo** | Cualquier · Claude Design · PPTX · Canva · NotebookLM · etc. (output es 100% portable) |
 | **Phase** | 4 |
-| **Depends On** | [PM-3.2] |
-| **Trigger** | post_playbook_confirmation |
-| **Fuente de verdad** | `pm-3-3-spec.json` (único input del generador) |
+| **Depends On** | [PM-0, PM-1.2, PM-2.x ACs, PM-3.1, PM-3.2, PM-3.5, PM-3.6] |
+| **Trigger** | post_playbook_confirmation (Gate 3 cerrado) |
+| **Fuente de verdad** | `pm-3-3.md` (single source of truth · NO hay spec.json intermedio) |
+
+> [!warning] Cambio paradigmático v3.0 (2026-04-30) · Sergio Cortés
+> PM-3.3 ya NO produce `.pptx` ni `pm-3-3-spec.json`. Output es UN solo archivo Markdown student-facing
+> tool-agnostic. La herramienta de consumo (Claude Design · Canva · PPTX · NotebookLM · cualquier otra)
+> ES el renderer. Todo el contenido v2.x sobre `pm-3-3-spec.json` + `pm-3-3-gen.js` + paleta hardcoded
+> queda DEPRECATED · permanece como referencia legacy (NO eliminar para programas pre-2026-04 que ya
+> consumieron v2.4). Programas nuevos generan con v3.0 strict.
 
 ---
 
@@ -459,7 +466,184 @@ Para una guía de 8 sesiones, el deck tiene entre **38-46 slides**. Estructura c
 
 ---
 
-*PM-3.3: Canva Deck — Visual Support*
+*PM-3.3 v2.4: Canva Deck — Visual Support (legacy · pre-2026-04)*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Versión 2.4 — 2026-04-20 (spec-driven: `pm-3-3-spec.json` único input del generador)*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+
+---
+
+## EXTENSIÓN v3.0 — VISUAL AID GENERATOR · STUDENT-FACING · TOOL-AGNOSTIC (2026-04-30)
+
+> [!warning] Decisión arquitectónica · Sergio Cortés (2026-04-30)
+>
+> **Trigger:** Sergio rediseñó el rol de PM-3.3. Ya NO es un Canva/PPTX deck para instructor durante clase.
+> Ahora es un **archivo Markdown student-facing** que el aprendiz (o el instructor) lleva a cualquier
+> herramienta visual (Claude Design · PPTX · Canva · NotebookLM · etc.) para generar la herramienta
+> didáctica de apoyo visual a cada actividad/evidencia.
+>
+> **Decisión:** v3.0 es CANON OFICIAL · v2.4 (Canva Deck instructor-facing PPTX) permanece como reference
+> legacy. Programas nuevos generan con v3.0 strict.
+>
+> **Camino arquitectónico:** Camino 2 puro LLM. NO hay renderer Python. La herramienta visual externa
+> (Claude Design · etc.) ES el renderer. PM-3.3 v3.0 produce UN solo `.md` estructurado · listo para
+> copy-paste a cualquier tool.
+
+### REGLA 11 — OUTPUT PARADIGM v3.0 · UN SOLO `.md` STUDENT-FACING
+
+| Aspecto | v2.4 Canva Deck (legacy) | v3.0 Visual Aid (canon) |
+|---|---|---|
+| Output | `pm-3-3-spec.json` + `.pptx` | **`pm-3-3.md` único** |
+| Destinatario | Instructor (durante clase) | **Aprendiz (apoyo visual)** |
+| Renderer | `pm-3-3-gen.js` (pptxgenjs) | **Claude Design / PPTX / Canva / NotebookLM** (externo · agnóstico) |
+| Granularidad | 1 deck con 45 slides | **1 .md con N secciones · 1 per actividad** |
+| Hardcoding | paleta + diseño en JS | **NO hardcoding tool-locked · solo design constraints universales** |
+| Stack alignment | Híbrido (LLM spec + JS render) | **Camino 2 puro LLM** (sin renderer Python) |
+
+### REGLA 12 — ESTRUCTURA POR ACTIVIDAD · 7 SECCIONES CANÓNICAS
+
+Cada actividad/evidencia en el `.md` tiene 7 secciones obligatorias en este orden:
+
+```markdown
+## Actividad [actividad_id] — [titulo_es] / [titulo_en]
+
+### 1. IDENTIFICACIÓN
+- Sesión: S[N] · Momento pedagógico: [reflexion / contextualizacion / apropiacion / evaluacion / transferencia]
+- Tiempo estimado: [N min] · Agrupación: [individual / parejas / grupos / pleno]
+- Tipo SENA: [Actividad cognitiva / procedimental / actitudinal] (o combinación)
+- Scaffold canónico v2.7: [matching / checklist / form / t_chart / writing_template / listening_capture / quiz_preview / speaking_script / reflection_lines / rating]
+- Evidencia formal: [E1-E6 si aplica · NO si es práctica]
+
+### 2. CONCEPTO VISUAL (idea fuerte)
+- **Hero idea**: la imagen mental que el aprendiz debe quedarse después
+- **Tono / mood**: energético / concentrado / reflexivo / urgente / colaborativo
+- **Anclaje narrativo**: cómo conecta con el universo de la guía (personajes · escenarios · vocabulario propio)
+
+### 3. BLOQUES DE CONTENIDO
+- **Headline** (1 línea fuerte · titular del visual)
+- **Subhead** (contexto breve · 1-2 líneas)
+- **Body** (instrucciones / ejemplos / bullets concretos)
+- **Call-to-action** (qué hace el aprendiz · verbo + objeto + resultado)
+
+### 4. LAYOUT DEL SCAFFOLD (wireframe textual · NO pixels)
+- **Tipo de scaffold**: [matching / form / etc.]
+- **Regiones del workspace**:
+  - Izquierda / centro / derecha / superior / inferior
+  - Cada región describe: qué contiene · cómo se interactúa
+- **Interacción esperada**: drag · fill · click · annotate · grabar · etc.
+- **Estado inicial vs estado final**: qué ve antes · qué ve después de completar
+
+### 5. EVIDENCIA & RÚBRICA VISIBLE
+- **Producto observable**: qué entrega el aprendiz tangiblemente
+- **Criterio mínimo**: cuál es el umbral de "completado"
+- **Rúbrica visible al aprendiz**: 2-4 criterios que él mismo puede verificar
+- **Conexión con instrumento**: PM-4.1 INST-X / PM-4.2 cuestionario S[N]
+
+### 6. RESTRICCIONES DE DISEÑO (cross-tool coherence)
+- **Paleta SENA institucional**: verde `#39A900` (acento) · azul oscuro `#0B2E45` (titular) · neutros (white · light grey)
+- **Universo narrativo de ESTA guía**: derivado de pm-1-2.universo_narrativo (personajes · lugares · vocabulario · sector económico)
+- **Imagery guidance**: real photos · contexto laboral profesional · NO cartoon ni infantil
+- **Iconografía**: technical · adult · adecuada al sector
+- **Jerarquía tipográfica**: heading > body > caption (sin pixels específicos · solo orden)
+
+### 7. PROMPT DE GENERACIÓN (frase narrativa para tool)
+> "Diseña un [tipo de visual] student-facing donde [acción del aprendiz].
+> Usa la paleta SENA con [color] como acento principal.
+> Incluye [elemento del universo narrativo de la guía].
+> La sensación debe ser [tono] y el resultado debe permitir [evidencia esperada]."
+```
+
+### REGLA 13 — DESIGN CONSTRAINTS DISCIPLINADOS · UNIVERSAL vs TOOL-LOCKED
+
+**SÍ incluir** (cross-tool universal · garantiza coherence visual):
+- Paleta hex codes (`#39A900` · `#0B2E45` · accents)
+- Universo narrativo dinámico extraído de `pm-1-2.universo_narrativo` (NO hardcoded por programa)
+- Imagery guidance principios (real · profesional · contexto laboral · NO infantil)
+- Iconografía tone (technical · adult · sector-adecuada)
+- Jerarquía tipográfica (heading · body · caption · sin pixels)
+- Mood/tone narrativo (concentrado · energético · etc.)
+
+**NO incluir** (tool-locked · rompe agnosticidad):
+- Dimensiones específicas ("Calibri 24pt" PPTX-only · "Inter 16px" Claude Design-only)
+- Schema-specific keys (Canva element types · Claude Design components · Slidev frontmatter)
+- Slide layout names (LAYOUT_16x9 pptxgenjs-only · CSS classes Tailwind-only)
+- Animation/transition specs (PPTX-only · Reveal.js-only)
+- Tool-specific markdown extensions (NotebookLM `[!callout]` · MDX `<Component/>`)
+
+### REGLA 14 — UNIVERSO DINÁMICO POR GUÍA (NO hardcoded)
+
+El subagente PM-3.3 v3.0 lee `pm-1-2.json` de cada guía y extrae automáticamente el universo narrativo
+para inyectarlo como design constraint en cada bloque visual. NUNCA hardcoded.
+
+Ejemplos de universos detectados:
+- **IMARPOR-CC** (marítimo portuario): Diego · Captain Lopera · CML CARRIER · Buenaventura · SMCP · NATO Phonetic · radio VHF · contenedores · grúa · muelle
+- **DIESEL** (workshop motores): operario · supervisor · taller · herramientas · turbo · piezas · diagnóstico
+- **MGV** (medios gráficos visuales): brand · paleta · tipografía · logo · cliente · brief · entregable
+- **Cualquier futuro programa**: extraído de `pm-1-2.universo_narrativo` automáticamente
+
+El `.md` resultante tiene el sabor visual del sector económico de su guía SIN modificar el master prompt.
+
+### REGLA 15 — ESTRUCTURA TOP-LEVEL DEL `.md`
+
+```markdown
+# Visual Aid Guide — [Programa Nombre] — Guía [N] · [Nombre Guía]
+
+## Frontmatter
+- run_id, guide_id, generated_date, instructor
+- pm_version: 3.0
+- universo_narrativo: extracted from pm-1-2 (resumen)
+- paleta_canon: SENA institucional v2.6.6
+- tools_compatibles: ["Claude Design", "PPTX", "Canva", "NotebookLM", "cualquier"]
+
+## Cómo usar este documento
+- Copia la sección de la actividad que vas a visualizar
+- Pégala como prompt en tu herramienta visual preferida
+- Las RESTRICCIONES DE DISEÑO (sección 6) y el PROMPT (sección 7) garantizan coherencia cross-tool
+- El layout del scaffold (sección 4) es wireframe textual · cada tool lo interpreta a su manera
+
+## Tabla de contenido
+- Lista de N actividades con anchor links
+
+## Actividades
+
+### Sesión 1 — [titulo]
+[Actividad A1 con 7 secciones]
+[Actividad A2 con 7 secciones]
+...
+
+### Sesión 2 — [titulo]
+...
+
+[hasta SN]
+```
+
+### REGLA 16 — VALIDATION CHECKS v3.0 (10 checks)
+
+1. ✅ Output es UN solo archivo `.md` (no .pptx · no .json · no spec)
+2. ✅ Frontmatter contiene: run_id · guide_id · generated_date · pm_version=3.0 · paleta_canon · tools_compatibles
+3. ✅ Cada actividad tiene las 7 secciones canónicas en orden (REGLA 12)
+4. ✅ Sección 1 referencia evidencia formal (E1-E6) cuando aplica · NO si es práctica
+5. ✅ Sección 6 incluye paleta SENA hex + universo narrativo extraído de pm-1-2 · NO hardcoded
+6. ✅ Sección 7 prompt narrativo NO menciona herramientas específicas (Claude Design · Canva · PPTX) por nombre
+7. ✅ NO hay tool-locks: NO Calibri Npt · NO LAYOUT_16x9 · NO CSS classes · NO MDX components
+8. ✅ Tabla de contenido al inicio · cada actividad navegable via anchor link Markdown
+9. ✅ Total actividades en `.md` === actividades de pm-3-6.json (cross-validation)
+10. ✅ Universo narrativo en frontmatter coincide con pm-1-2.universo_narrativo (no copia-fantasma de otro programa)
+
+### REGLA 17 — DEPRECATION PATH v2.4 → v3.0
+
+Programas con artefactos v2.4 (`pm-3-3-spec.json` + `.pptx` + `pm-3-3-gen.js`):
+1. Mantener artefactos legacy en run dir (NO eliminar · son canon histórico)
+2. Generar nuevo `pm-3-3.md` con master prompt v3.0
+3. Marcar artefactos v2.4 como `*.legacy-v24-deprecated` (sufijo informativo · NO mover)
+4. Run resultante tiene ambos: legacy v2.4 (instructor-facing PPTX) + v3.0 (student-facing .md)
+
+### Operacional canon — IMARPOR-CC ground truth (próximo)
+
+El primer `pm-3-3.md` IMARPOR-CC será generado en sesión 2026-04-30 (post Hito 5 · post PM-3.7 V04).
+Ese mismo se vuelve **referencia operacional** para futuros programas (DIESEL · MGV · INGBAS · etc.).
+
+---
+
+*PM-3.3 v3.0 · escrito 2026-04-30 (Visual Aid Generator student-facing tool-agnostic · IMARPOR-CC pending)*
+*Bumps: master prompt PM-3.3 v2.4 → v3.0 · output paradigm spec.json+.pptx → .md · destinatario instructor → aprendiz · renderer JS → external tool*
