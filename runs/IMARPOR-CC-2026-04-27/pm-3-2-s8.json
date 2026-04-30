@@ -1,0 +1,1045 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.5",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
+  "session": 8,
+  "session_name": "Coordinating the Quay — Speaking Tripartite",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide": "G1 — The Maritime Operations Pro",
+  "guia_numero": 1,
+  "programa": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo": "12340002",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.8 (Berthing segment)",
+    "PM-2.10 (Gr 11 + Gr 12 + Gr 13)"
+  ],
+  "habilidades_foco": [
+    "Speaking productivo (Berthing Coordination Tripartite 3 min · evidencia E4)",
+    "Grammar productivo (Gr 11 presente perfecto + Gr 12 condicional 1 · Gr 13 voz pasiva receptiva)"
+  ],
+  "habilidades_soporte": [
+    "Listening interactivo (responder a 3 actores simultáneos · Diego L1 ES · Bosun Romero L1 ES · Captain Lopera B2 lingua franca)",
+    "Vocabulary maritime Sub-bloques 1+2+3 reciclaje activo (berth · anchorage · mooring · approaching · securing · boarded · inspected)",
+    "Writing receptivo (cue cards berthing · sin producción escrita evaluada)"
+  ],
+  "cefr": "A2.0 (consolidación Bloque Interno 3 · cierre RAP-03)",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-29",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "preliminary",
+  "_status_preliminary_rationale": "Build-Out generado por subagente PM-3.2 piloto behavioral · Gate Humano 3 (aprobación Playbook S8) pendiente · Sergio confirma cambiando a 'completed' tras revisión de coherencia con PM-2.8 (Berthing segment) + PM-2.10 (Gr 11+12+13) + pm-3-1 sessions[7] + Escala Estimación E4 (PM-4.1) + bridge productivo de S7 (Modal Drill + audio tripartito · familiar).",
+  "momento_sena": "3.3 Apropiación — Output integrado",
+  "estrategia_didactica": "ABT + Simulación tripartita — Berthing Coordination con 3 actores (Diego + Bosun Romero + Captain Lopera)",
+  "justificacion_didactica": "S8 cierra el Bloque Interno 3 (RAP-03 · A2.0) con un salto cualitativo de listening tripartito receptivo (S7) a producción oral tripartita activa: Andrea Mosquera lidera 3 min de Berthing Coordination simultánea con Diego (crane operator · L1 español · usa señas + chunks básicos), Bosun Romero (yard supervisor · L1 español · pide confirmación), y Captain Lopera (VHF · B2 lingua franca · habla rápido). La estrategia ABT + Simulación tripartita transforma la familiaridad receptiva del audio S7 en liderazgo lingüístico operacional: Andrea es el nodo lingüístico del puerto. La gramática (Gr 11 presente perfecto productivo · Gr 12 condicional 1 productivo · Gr 13 voz pasiva receptiva diferida a S10/S11) se opera en tiempo real bajo presión simulada con outcomes alternativos por escenario. Feedback FLUENCY dominante con accuracy diferida vía Escala E4 (5 pts · 5 criterios escritos) + self-recording celular para post-task. L1 ≤ 3% — sólo emergencias comunicativas si bloqueo total. Aplica intensiva de modales + presente continuo (Gr 6+10 reciclaje S7). Bridge a S9 Role Carousel 5 master functions.",
+  "session_header": {
+    "titulo": "SESSION 8: Coordinating the Quay — Speaking Tripartite",
+    "subtitulo": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Build-Out — Playbook v2.5",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.8 — Berthing Coordination Speaking (segment final · 3 escenarios cue cards · Andrea lidera 3 actores)",
+      "PM-2.10 — Grammar Toolbelt (Gr 11 presente perfecto · Gr 12 condicional tipo 1 · Gr 13 voz pasiva presente · receptivo)"
+    ],
+    "habilidades_foco": [
+      "Speaking productivo Berthing Coordination Tripartite 3 min × 3 escenarios (E4 evidencia 5 pts)",
+      "Grammar productivo presente perfecto (has boarded · has inspected · has secured) + condicional tipo 1 (If wind drops, we will berth · If customs delays, we will reschedule)"
+    ],
+    "habilidades_soporte": [
+      "Listening interactivo a 3 voces simultáneas con interferencia de canales",
+      "Vocabulary maritime activa (boarded · inspected · secured · berth · anchorage · approaching · mooring)",
+      "Pronunciation stress crítico participio pasado (BOARDed · inSPECted · seCURed)"
+    ],
+    "objetivos_pedagogicos": [
+      "(1) Producir Berthing Coordination tripartito oral de 3 min × 3 escenarios coordinando simultáneamente Diego (crane · L1 ES) + Bosun Romero (yard · L1 ES) + Captain Lopera (VHF · B2 lingua franca) con outcomes alternativos según decisiones del aprendiz líder.",
+      "(2) Operar productivamente Gr 11 presente perfecto (has + participio · 'The pilot has boarded') y Gr 12 condicional tipo 1 (If + presente, will + verbo · 'If wind drops, we will berth') en al menos 5 producciones cronometradas.",
+      "(3) Reconocer receptivamente Gr 13 voz pasiva presente (cargo IS INSPECTED by customs · lines ARE SECURED by deckhand) en cue cards e instrucciones simuladas — producción diferida a S10/S11 (Intro receptivo declarado).",
+      "(4) Demostrar liderazgo operacional simulado decidiendo bajo presión: ¿esperar customs? ¿solicitar más mooring lines? ¿retrasar berthing? ¿reasignar canal? — sin script · sólo cue card + Word Wall completo Bloques 1+2+3 visible.",
+      "(5) Auto-evaluar performance E4 con Escala Estimación 5 criterios (PM-4.1 · 5 pts) post-simulación + self-recording celular para análisis personal pre-S9."
+    ],
+    "plan_b": "Si <50% asistencia día S8: ejecutar 2 escenarios (en lugar de 3) por aprendiz líder + extender debrief plenario. Si proyector + audio Captain Lopera VHF fallan: 2 instructores rotando 3 roles con 3 walkie-talkies o app móvil simulada · si tampoco hay walkie-talkies: usar voz directa cara a cara con micrófonos de cartón (técnica DIESEL fallback). Si app VHF móvil falla: instructor representa Captain Lopera en vivo con acento moderado lingua franca + Diego/Bosun Romero rotan con aprendices más adelantados. Si una pareja no logra completar 3 min: bajar a 2 min con cue card simplificada (1 outcome forzado · sin decisión propia) — diferir grabación E4 al siguiente intento (instructor anota como 're-take' sin penalización afectiva).",
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk pre-modelado bilingüe mínimo (≤3% L1). Duración suma exacta 360 min directos + 140 min autónomo (≈2.33h). L1 ≤ 3% — sólo emergencias. Producción 100% L2 esperado. El aprendiz LIDERA · el instructor (Captain Lopera) responde · los pares (Diego + Bosun Romero) confirman. Escala E4 evaluación formativa con rúbrica visible PM-4.1. Self-recording celular activo en cada simulación — material para self-feedback autónomo."
+  },
+  "materials_checklist": [
+    {
+      "item": "PM-2.8 worksheet Berthing Coordination Speaking (segment final · 3 escenarios cue cards) impreso",
+      "cantidad": "1 set (3 escenarios × ≥9 copias = 27 cards) + 6 cards de respaldo · estimado 25 aprendices",
+      "verificado": false
+    },
+    {
+      "item": "PM-2.10 Grammar Toolbelt handout Gr 11 presente perfecto + Gr 12 condicional 1 + Gr 13 voz pasiva (referencia rápida bilingüe · scaffolding visible)",
+      "cantidad": "1 por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Word Wall completo Bloques 1+2+3 (≥75 términos acumulados S2-S7) actualizado · agregar 5 nuevos S8: boarded · inspected · secured · approaching · mooring",
+      "cantidad": "1 muro lateral + 5 tarjetas nuevas con stress + IPA",
+      "verificado": false
+    },
+    {
+      "item": "3 walkie-talkies o app VHF móvil simulada (canal yard · canal bridge · canal customs) — probados con audio limpio",
+      "cantidad": "3 unidades + 1 respaldo (4 total) · pilas verificadas",
+      "verificado": false
+    },
+    {
+      "item": "Clipboard yard + VHF station setup (estación bridge con micrófono + libreta operativa) + estación yard con planilla containers",
+      "cantidad": "1 clipboard yard + 1 setup VHF + 1 planilla yard",
+      "verificado": false
+    },
+    {
+      "item": "Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 visibles (referencia espacial · permanentes desde S1)",
+      "cantidad": "1 + 1",
+      "verificado": false
+    },
+    {
+      "item": "Escala Estimación E4 — 5 criterios Berthing segment final (PM-4.1) impresa · 1 por aprendiz líder + 1 ampliada A3 visible plenaria",
+      "cantidad": "26 (25 aprendices + 1 plenaria A3)",
+      "verificado": false
+    },
+    {
+      "item": "Cue cards 3 escenarios Berthing Coordination (E1: routine berthing · E2: wind alert · E3: customs delay) con outcomes alternativos según decisión líder",
+      "cantidad": "3 sets de 3 escenarios = 9 cards × ≥3 copias = 27 cards + respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Cronómetro visible en pantalla con countdown 3 min (display grande 50pt+)",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Celulares aprendices con app de grabación simple (Voice Memos / Voice Recorder) — pre-instalada o link enviado vía WhatsApp grupo S8",
+      "cantidad": "25 (1 por aprendiz · BYOD)",
+      "verificado": false
+    },
+    {
+      "item": "Tablero blanco con 4 zonas demarcadas: (1) E ZONE permanente · (2) Today's Objective + Cronómetro · (3) Grammar Color Code Gr 11 ROJO + Gr 12 AZUL + Gr 13 MORADO · (4) LIVE ZONE para recast plenaria post-simulación",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Marcadores ROJO (Gr 11) + AZUL (Gr 12) + MORADO (Gr 13) + VERDE/ROJO recast (4 colores)",
+      "cantidad": "1 set",
+      "verificado": false
+    },
+    {
+      "item": "Música instrumental de puerto muy baja (sonidos de muelle suaves · ≤30dB) durante simulaciones para inmersión sensorial",
+      "cantidad": "1 archivo + parlantes",
+      "verificado": false
+    },
+    {
+      "item": "Plan B: 2 instructores secundarios rotando los 3 roles (Diego + Bosun Romero + Captain Lopera) si solo hay 1 instructor disponible · agendar pre-S8",
+      "cantidad": "Confirmación instructores secundarios 48h antes",
+      "verificado": false
+    },
+    {
+      "item": "Sello E4 (sello físico del Capitán Restrepo) para firmar Escala Estimación post-simulación · acto ceremonial cierre evidencia",
+      "cantidad": "1 sello + tinta azul",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO dividido en 4 zonas: (1) ESQUINA SUPERIOR DERECHA — ENGLISH ZONE 🔵 permanente (declarada S1 · activa). (2) CENTRO — Today's Objective: 'Today you LEAD the Berthing — 3 actors, 3 minutes, 3 scenarios' + Cronómetro 3:00 visible. (3) COLUMNA LATERAL IZQUIERDA — GRAMMAR COLOR CODE permanente: ROJO Gr 11 'has + boarded/inspected/secured' (presente perfecto · 'The pilot HAS BOARDED'); AZUL Gr 12 'If + present, will + verb' (condicional 1 · 'If wind drops, we WILL berth'); MORADO Gr 13 'is/are + past participle + by' (voz pasiva receptiva · 'cargo IS INSPECTED by customs' — solo reconocer · NO producir); VERDE/AMARILLO Gr 6+10 reciclaje S7 modales + presente continuo. (4) ESPACIO INFERIOR LIVE ZONE — vacío al inicio · se llena durante WHILE D recast plenaria con 5-7 muestras de aprendices: ✓ verde (output A2.0 correcto) / ✗ rojo (output a recasted). Maritime Word Wall lateral: agregar 5 tarjetas S8 con stress: BOARD-ed /ˈbɔːrdɪd/ · in-SPECT-ed /ɪnˈspɛktɪd/ · se-CURED /sɪˈkjʊərd/ · ap-PROACH-ing /əˈproʊtʃɪŋ/ · MOOR-ing /ˈmʊrɪŋ/. Escala E4 ampliada A3 visible junto al cronómetro durante toda la sesión.",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:30",
+      "duracion_min": 30,
+      "bloque": "SET-UP",
+      "actividad": "Welcome breve + Recall S7 audio tripartito + Grammar Color Code intro Gr 11+12+13 + Escala E4 unboxing + ICQ + Stress drill 5 nuevas palabras",
+      "agrupacion": "Plenaria",
+      "notas": "Energía operacional. L1 ≤ 3% (welcome + objective + Escala E4 explanation). Drill choral BOARDed · inSPECted · seCURed."
+    },
+    {
+      "tiempo": "0:30-1:30",
+      "duracion_min": 60,
+      "bloque": "WHILE A",
+      "actividad": "Grammar Activation 3 Colores — Producción modelada Gr 11 + Gr 12 + Gr 13 receptivo (PM-2.10)",
+      "agrupacion": "Plenaria → Individual silencioso → Parejas",
+      "notas": "Inducción + producción modelada. Aprendiz produce 3 oraciones Gr 11 + 3 oraciones Gr 12 + reconoce 3 oraciones Gr 13. Stress crítico participio pasado."
+    },
+    {
+      "tiempo": "1:30-2:30",
+      "duracion_min": 60,
+      "bloque": "WHILE B",
+      "actividad": "Cue Card Briefing + Modeling Berthing Coordination (instructor demo) + Escenario 1 ensayo en parejas (sin grabar)",
+      "agrupacion": "Plenaria → Tríos (3 roles · sin líder fijo · ensayo libre)",
+      "notas": "Modeling docente con demo de Escenario 1 'routine berthing'. Aprendices ensayan en tríos · cada uno rota los 3 roles. NO grabación. NO evaluación."
+    },
+    {
+      "tiempo": "2:30-2:45",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "Receso activo (café + baño + revisión cue cards individual)",
+      "agrupacion": "—",
+      "notas": "Hidratación. Cada aprendiz revisa SU cue card asignada para Escenario 1 (líder). Música ambient marítima."
+    },
+    {
+      "tiempo": "2:45-4:15",
+      "duracion_min": 90,
+      "bloque": "WHILE C",
+      "actividad": "Berthing Coordination TRIPARTITE — 3 escenarios × ~3 min × cada aprendiz líder + grabación celular + Escala E4 evaluación inmediata",
+      "agrupacion": "Tríos rotativos · 1 líder + 2 actores (Diego + Bosun Romero) + 1 instructor (Captain Lopera VHF)",
+      "notas": "EVIDENCIA E4 (5 pts). Cada aprendiz lidera 3 escenarios → 9 min producción activa + grabación. Self-recording celular obligatorio. Plan B si bloqueo: instructor modela + aprendiz repite frase clave."
+    },
+    {
+      "tiempo": "4:15-5:15",
+      "duracion_min": 60,
+      "bloque": "WHILE D",
+      "actividad": "Recast Plenaria — 7 muestras representativas + Self-feedback Listening (audio celular) + Auto-evaluación E4",
+      "agrupacion": "Plenaria → Individual auto-eval",
+      "notas": "Instructor selecciona 7 grabaciones (3 ✓ + 4 a recast) · plenaria vota verde/rojo · recast colectivo en LIVE ZONE. Aprendices auto-evalúan con Escala E4."
+    },
+    {
+      "tiempo": "5:15-5:45",
+      "duracion_min": 30,
+      "bloque": "WHILE E",
+      "actividad": "Bridge Drill — Modal + Conditional contrastive + 1 prompt card libre rumbo a S9 Role Carousel",
+      "agrupacion": "Parejas heterogéneas",
+      "notas": "Drill SHOULD/COULD/MIGHT/MUST + IF...WILL stress crítico. 1 prompt card 'What WILL you do if customs delays?' — práctica oral mínima 2 oraciones."
+    },
+    {
+      "tiempo": "5:45-6:00",
+      "duracion_min": 15,
+      "bloque": "WRAP-UP",
+      "actividad": "Exit Ticket S8 + síntesis + sello E4 + asignación autónoma Berthing Memo + Post-Turn Report draft + preview S9",
+      "agrupacion": "Plenaria → Individual",
+      "notas": "Cierre solemne ceremonial: sello del Capitán Restrepo en cada Escala E4 firmada. Asignar Memo + Report draft (2.33h). Preview S9 Role Carousel."
+    }
+  ],
+  "set_up": {
+    "duracion_min": 30,
+    "warm_up": {
+      "nombre": "Recall S7 + Grammar Color Code Operacional + Escala E4 Unboxing",
+      "pasos": [
+        "1. Instructor recibe en la puerta breve y operacional: '*Good morning. You're not students today. You're Port Operations Trainees on Day 8. The Berthing belongs to you.*' (≤30 seg).",
+        "2. Plenaria 5 min: Recall S7 'Last session — you HEARD 3 voices: yard, bridge, customs. Today — YOU SPEAK to all 3 at once.' Mostrar 1 fragmento del audio S7 (15 seg) — confirma familiaridad receptiva.",
+        "3. Instructor escribe en COLUMNA LATERAL IZQUIERDA del tablero el GRAMMAR COLOR CODE — explica oralmente 3 min sin overload teórico: ROJO Gr 11 'has + verb-ed', AZUL Gr 12 'IF + present, WILL + verb', MORADO Gr 13 'is/are + verb-ed + BY' (con etiqueta 'recognize · don't produce').",
+        "4. Stress drill 5 nuevas palabras Maritime Word Wall (5 min): instructor modela 'BOARD-ed · in-SPECT-ed · se-CURED · ap-PROACH-ing · MOOR-ing' — choral repetition × 3 + finger drilling rápido. Énfasis en sufijo -ed con voz silente (BOARD-d · in-SPEC-tid · se-CYURD).",
+        "5. Escala E4 unboxing (5 min): instructor proyecta versión A3 ampliada · explica 5 criterios bilingüe brevemente: (C1) Initiates and leads · (C2) Uses Gr 11/12 productively · (C3) Coordinates 3 actors clearly · (C4) Pronunciation intelligible · (C5) Maritime vocabulary accurate. Cada criterio = 1 punto = total 5 pts.",
+        "6. Self-recording instructions (3 min): instructor muestra cómo abrir Voice Memos · grabar nombre + escenario + 'go' antes de iniciar · guardar como 'Andrea_S8_E1' · cada aprendiz prueba grabación de 5 seg con su nombre.",
+        "7. Transición a WHILE A: '*OK. Words on the board. Recorder ready. Let's activate the grammar.*'"
+      ],
+      "duration_min": 15
+    },
+    "teacher_talk_opening_en": "*Good morning, team. Day 8. You are not students today — you are Port Operations Trainees leading the Berthing. Last session — you HEARD 3 voices on the radio. Today — YOU SPEAK to 3 voices: Diego on the crane, Bosun Romero in the yard, Captain Lopera on the VHF. Three minutes. Three actors. Three scenarios. Each one of you leads. The yellow envelope from Session 1 — your Learning Contract — remember? Today is when it starts paying off. The grammar is on the board. The Escala E4 is on the wall. Your phone is your recorder. Trust your ears, trust your words, trust your training. Let's go.*",
+    "teacher_talk_opening_es_cursive": "*(Buenos días, equipo. Día 8. Hoy no son estudiantes — son Aprendices de Operaciones Portuarias liderando el Atraque. La sesión pasada ESCUCHARON 3 voces en la radio. Hoy USTEDES HABLAN a 3 voces: Diego en la grúa, Contramaestre Romero en el patio, Capitán Lopera en el VHF. Tres minutos. Tres actores. Tres escenarios. Cada uno lidera. El sobre amarillo de la Sesión 1 — su Contrato de Aprendizaje — ¿recuerdan? Hoy empieza a dar frutos. La gramática está en el tablero. La Escala E4 en la pared. Su celular es su grabadora. Confíen en sus oídos, sus palabras, su entrenamiento. Vamos.)*",
+    "objetivo_dia_escrito_en_tablero": "*Today you will: (1) lead 3 Berthing Coordination scenarios × 3 min — 3 actors at once · (2) produce Gr 11 (HAS BOARDED) + Gr 12 (IF DROPS, WILL BERTH) + recognize Gr 13 (IS INSPECTED) · (3) earn your E4 Speaking evidence — 5 points sealed by Capitán Restrepo · (4) record yourself for self-feedback before Session 9.*",
+    "activacion_5_palabras_s8": {
+      "instruccion": "Instructor señala las 5 nuevas tarjetas en Maritime Word Wall y modela stress crítico de participio pasado: '*BOARD-ed — TWO syllables, stress on FIRST. -ed sounds like /ɪd/ here. in-SPECT-ed — THREE syllables, stress on SECOND. se-CURED — TWO syllables, stress on SECOND, -ed silent like /d/. ap-PROACH-ing — THREE syllables, stress on SECOND. MOOR-ing — TWO syllables, stress on FIRST.*' Choral repetition 3 veces · finger drilling rápido · contraste con BOARD vs BOARDed.",
+      "tecnica": "Modelo-eco + Choral repetition + Finger drilling + Board marking + Stress contrastivo participio pasado vs forma simple (PM-0 §5.13)"
+    },
+    "icq": [
+      "*How many actors do you coordinate today?* → Esperan: '3 / three (Diego + Bosun Romero + Captain Lopera)'",
+      "*How many minutes per scenario?* → Esperan: '3 / three minutes'",
+      "*How many scenarios do you lead?* → Esperan: '3 / three scenarios'",
+      "*Can you produce Gr 13 voz pasiva today?* → Esperan: 'No — recognize only / solo reconocer'",
+      "*What's your phone for today?* → Esperan: 'Recording / self-feedback / grabar mi voz'"
+    ],
+    "facilitation_notes": [
+      "💡 NO presente análisis gramatical formal — solo color code visual + ejemplos chunked. La gramática se opera, no se explica.",
+      "💡 Si un aprendiz dice '*estoy nervioso*': responda en EN '*Nervous is normal. Day 8 is performance day. Andrea was nervous Day 1 too. You're ready. Trust the recorder — listen to yourself later, not while speaking.*'",
+      "💡 La explicación de Escala E4 NO debe convertirse en sermón evaluativo (max 5 min) — los criterios se viven en la simulación, no se memorizan.",
+      "💡 Stress contrastivo BOARD vs BOARDed es CRÍTICO — los aprendices A2.0 colombianos suelen pronunciar BOARD-ed con 3 sílabas o /ed/ sonoro. Modelar /ɪd/ en BOARD-ed (después de /d/) y /d/ silente en se-CURED (después de /r/).",
+      "💡 Self-recording es VOLUNTARIO si un aprendiz no tiene celular — ofrecer celular del instructor como respaldo. NO presionar."
+    ],
+    "checkpoint": "✓ Verbal survey: '*Recorder open? Cue card understood? Grammar code clear?*' — ≥85% manos arriba o 'yes'. Si <85% en cue card: dar 2 min extra revisión individual antes de iniciar WHILE A. ✓ Stress check: instructor dice 'BOARD' y luego 'BOARDed' — clase responde con palmada en sílaba tónica · ≥80% palmean correctamente."
+  },
+  "while": {
+    "duracion_min": 280,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "Grammar Activation 3 Colores — Producción Modelada Gr 11 + Gr 12 + Gr 13 receptivo (PM-2.10)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.10 Grammar Toolbelt — Gr 11 (presente perfecto) + Gr 12 (condicional 1) + Gr 13 (voz pasiva presente · receptivo)",
+        "agrupacion": "Plenaria → Individual silencioso → Parejas",
+        "objetivo": "Activar producción Gr 11 + Gr 12 con 3 oraciones operacionales cada uno · reconocer receptivamente Gr 13 en 3 oraciones Berthing real. Output: 6 oraciones productivas escritas + 3 reconocidas con marker MORADO. Bridge directo a WHILE B Cue Card Briefing.",
+        "instrucciones_paso_a_paso": [
+          "1. Plenaria 10 min — instructor modela Gr 11 con 3 ejemplos del puerto: 'The pilot HAS BOARDED. Customs HAS INSPECTED the cargo. The vessel HAS SECURED the lines.' Stress en participio + auxiliar débil 'has' contraído.",
+          "2. Plenaria 10 min — instructor modela Gr 12 con 3 ejemplos: 'IF the wind drops, we WILL berth on time. IF customs delays, we WILL reschedule. IF Diego is ready, we WILL start the crane.' Stress crítico en IF + WILL contraído (we'll · they'll).",
+          "3. Plenaria 5 min — instructor presenta Gr 13 con etiqueta 'RECOGNIZE ONLY · DON'T PRODUCE': 'The cargo IS INSPECTED BY customs. The lines ARE SECURED BY the deckhand. The vessel IS APPROACHING the berth — wait, this is presente continuo · NOT pasiva. Pasiva needs BY actor.'",
+          "4. Individual silencioso 20 min — handout PM-2.10 con 3 secciones: (A) escribir 3 oraciones Gr 11 sobre Andrea Mosquera + BUENAVENTURA EXPRESS · (B) escribir 3 oraciones Gr 12 sobre decisiones operacionales · (C) marcar con MARKER MORADO 3 oraciones Gr 13 entre 8 distractores (4 son pasivas reales · 4 son presente continuo).",
+          "5. Parejas 12 min — cross-check de los outputs: pareja A lee a B sus 6 producciones · B confirma color correcto + clarity. Pareja B lee a A. Sin corregir · solo observar · marcar ✓ o ?.",
+          "6. Plenaria 3 min — instructor recoge 2-3 muestras de oraciones Gr 12 condicional con WILL contraído · drilling rápido 'we'll · they'll · it'll'.",
+          "7. Frase puente al WHILE B: '*Grammar is in your mouth now. Time to put it in action — Cue Cards.*'"
+        ],
+        "teacher_talk_instruction": "*Look at the board. Three colors. ROJO = has + boarded · AZUL = if + drops + will + berth · MORADO = is + inspected + by. Red and blue — produce. Purple — recognize only. Today's worksheet: section A 3 sentences red, section B 3 sentences blue, section C circle 3 purple in 8. 20 minutes silent. Then 12 minutes with your partner. Then we drill the contractions. Go.*",
+        "icq": [
+          "*Which colors do you produce?* → Esperan: 'Red and blue / rojo y azul (Gr 11 + Gr 12)'",
+          "*Which color do you recognize only?* → Esperan: 'Purple / morado (Gr 13)'",
+          "*How many sentences in each color?* → Esperan: '3 in red · 3 in blue · 3 to circle in purple'",
+          "*Can you ask your partner for help?* → Esperan: 'After 20 min · in pairs only / después en parejas'"
+        ],
+        "answer_key_inline": {
+          "Gr_11_presente_perfecto_modelo": [
+            "Andrea HAS BOARDED the vessel at 06:15.",
+            "Captain Lopera HAS INSPECTED the bridge.",
+            "The bosun HAS SECURED the bow lines.",
+            "Customs HAS APPROVED the cargo manifest."
+          ],
+          "Gr_12_condicional_1_modelo": [
+            "IF the wind drops, we WILL berth on time.",
+            "IF customs delays, we WILL reschedule the operation.",
+            "IF Diego is ready, we WILL start the crane.",
+            "IF the pilot boards now, we WILL save 30 minutes."
+          ],
+          "Gr_13_pasivas_reales_4_de_8": [
+            "The cargo IS INSPECTED BY customs. ✓ pasiva",
+            "The lines ARE SECURED BY the deckhand. ✓ pasiva",
+            "The vessel IS PILOTED BY Captain Lopera. ✓ pasiva",
+            "The yard IS COORDINATED BY Bosun Romero. ✓ pasiva"
+          ],
+          "Gr_13_distractores_4_de_8_NO_pasivas": [
+            "The vessel IS APPROACHING the berth. ✗ presente continuo",
+            "Andrea IS LEADING the operation. ✗ presente continuo",
+            "Diego IS WAITING in the yard. ✗ presente continuo",
+            "We ARE COORDINATING the berthing. ✗ presente continuo"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Si un aprendiz produce 'I has boarded' (subject-verb agreement): NO corrija invasivamente · recast suave 'I HAVE boarded — has is for he/she/it'. Apunte el patrón para WHILE D recast plenaria.",
+          "💡 Si una pareja confunde Gr 13 pasiva con Gr 10 presente continuo (clave: BY + actor): use el ejemplo BUENAVENTURA EXPRESS — '\"is approaching\" — no actor → continuo · \"is inspected by customs\" — actor → pasiva'.",
+          "💡 La marcación MORADO es solo reconocimiento — NO presione producción. Si un aprendiz produce Gr 13 espontáneamente, celebre pero NO exija réplicas.",
+          "💡 Drilling de contracciones (we'll · they'll · it'll) es CRÍTICO — los aprendices colombianos A2.0 tienden a deletrear 'we will' en producción rápida. La contracción libera fluidez."
+        ],
+        "checkpoint": "✓ Pair check: ≥80% de las parejas tienen 5/6 oraciones productivas correctas + 2/3 oraciones MORADO bien marcadas. Si <80%: dar 5 min extra + 1 ronda extra de recast con instructor.",
+        "transition": "*Good. Grammar in your mouth, color in your eye. Now — open your cue card. Three scenarios. One of them is YOURS in 1 hour.*",
+        "tecnica_didactica": "Inducción gramatical productiva con marcación cromática + chequeo cruzado en parejas + reconocimiento receptivo Gr 13 con distractores (PM-0 §5.13 noticing + §5.11 feedback recast suave)"
+      },
+      {
+        "letra": "B",
+        "nombre": "Cue Card Briefing + Modeling Berthing Coordination + Escenario 1 Ensayo Tríos (PM-2.8 Berthing segment)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.8 Berthing Coordination Speaking — segment final · 3 escenarios cue cards (E1 routine berthing · E2 wind alert · E3 customs delay)",
+        "agrupacion": "Plenaria → Tríos rotativos (3 roles · sin líder fijo · ensayo libre)",
+        "objetivo": "Comprender los 3 escenarios + outcomes alternativos + ensayar Escenario 1 'routine berthing' en tríos sin grabar y sin presión evaluativa. Output: cada aprendiz pasa por los 3 roles (líder · Diego · Bosun Romero) en Escenario 1 + tiene cue card de Escenario 1 anotada con vocabulario clave.",
+        "instrucciones_paso_a_paso": [
+          "1. Plenaria 5 min — instructor presenta los 3 escenarios proyectados: ESCENARIO 1 'Routine Berthing' (rutinario · sin sorpresas · output esperado: berthing en 15 min) · ESCENARIO 2 'Wind Alert' (viento sube a 25 knots durante operación · decisión: ¿continuar o esperar?) · ESCENARIO 3 'Customs Delay' (customs retrasado 30 min · decisión: ¿reasignar canal o esperar customs?).",
+          "2. Plenaria 10 min — DEMO: instructor representa los 3 roles en vivo con 2 instructores secundarios (o solo 1 instructor + 2 aprendices voluntarios). Demo de Escenario 1 completo · 3 min cronometrados visibles. Aprendices observan SIN cue card · solo escuchan + observan dinámica tripartita.",
+          "3. Plenaria 5 min — debrief de la demo: '*What grammar did you hear? What words? What was the líder's role?*' Aprendices responden en EN. Instructor anota en LIVE ZONE 5-7 chunks observados.",
+          "4. Distribución cue cards 3 min — instructor entrega cue card Escenario 1 a cada aprendiz · explica: '*This is YOUR script outline — NOT a script. You decide. The actors respond.*' Cue card tiene: (a) Setup contexto · (b) Apertura sugerida · (c) 3 outcomes posibles según decisión · (d) Vocabulario clave Sub-bloque 3 · (e) Grammar markers Gr 11 + Gr 12.",
+          "5. Tríos 25 min — formación tríos heterogéneos (3 niveles A2.0). Cada tríos rota los 3 roles 3 veces × ~7 min = 21 min de práctica · 4 min buffer transiciones. SIN grabación · SIN evaluación · SIN cronómetro estricto. Instructor circula · NO corrige · solo modela si bloqueo total.",
+          "6. Plenaria de cierre 12 min — debrief de ensayos: '*What was hard? What was natural? What grammar emerged?*' Aprendices responden en EN. Instructor anota en LIVE ZONE 3 patrones positivos + 3 puntos de atención (subject-verb agreement · stress en participio · contracción de WILL).",
+          "7. Frase puente al WHILE C: '*Now you know the dance. After the break — it's your show. 3 scenarios. 3 minutes each. Recorder on. Captain Lopera on the VHF. Diego in the yard. Bosun Romero in the bridge.*'"
+        ],
+        "teacher_talk_instruction": "*Three scenarios on the screen. Routine. Wind. Customs. We watch a demo first — 3 minutes, real time. No cue card for you yet. Just listen, just watch. Then debrief — what grammar, what words, what dynamics. Then I give you Cue Card Scenario 1. In trios, you rotate the 3 roles. 25 minutes free practice. No recording. No grade. Just feel the rhythm.*",
+        "icq": [
+          "*During the demo, do you have cue cards?* → Esperan: 'No / no — only listen and watch'",
+          "*In trios, do you record?* → Esperan: 'No / not yet · WHILE C records'",
+          "*Do you rotate roles?* → Esperan: 'Yes / sí · 3 roles each'",
+          "*How long is the trio practice?* → Esperan: '25 min total · ~7 min per role'"
+        ],
+        "answer_key_inline": {
+          "demo_chunks_esperados_LIVE_ZONE": [
+            "'Berth 4, this is Andrea — vessel approaching, ETA 15 minutes' (Gr 10 presente continuo · apertura formal)",
+            "'Captain Lopera, the pilot HAS BOARDED — confirm starboard approach' (Gr 11 presente perfecto · líder confirma)",
+            "'Diego, are containers ready?' / 'Yes, ready in 5' (chunk operativo Sub-bloque 3)",
+            "'Bosun Romero, secure bow lines first' (imperativo Gr 5 reciclaje S4)",
+            "'IF the wind holds, we WILL complete berthing in 15 min' (Gr 12 condicional 1 · líder anticipa)",
+            "'Roger, Andrea. Captain Lopera standing by' (SMCP reciclaje S5/S6 · Captain confirma)",
+            "'Operation complete. The vessel HAS SECURED. Out.' (Gr 11 cierre formal)"
+          ],
+          "ensayo_trios_patrones_observables": "Patrón positivo esperado: cada tríos completa 3 rotaciones · Gr 11 emerge en 60-70% líderes · Gr 12 en 40-50% · code-switching ≤3 veces por tríos. Patrón a recast plenaria: confusión has/have · stress BOARD-ed mal pronunciado · WILL sin contracción."
+        },
+        "facilitation_notes": [
+          "💡 La DEMO docente es el contrato visual — debe ser EXACTAMENTE 3 min (cronometrada visible) · usar exactamente 1-2 Gr 11 + 1-2 Gr 12 + 0 Gr 13 producción. No improvise teatro · sea operacional.",
+          "💡 Si los 2 instructores secundarios no están disponibles: invite 2 aprendices voluntarios (preferiblemente más confiados) · pre-brief 5 min antes de SET-UP · darles cue cards simplificadas (1 línea por turno).",
+          "💡 Durante ensayo en tríos: CIRCULE silenciosamente · NO corrija · solo tome notas mentales de patrones para WHILE D recast plenaria. Si un tríos se traba: modele 1 frase + retírese.",
+          "💡 Los outcomes alternativos del cue card son CRÍTICOS — algunos aprendices intentarán 'ganar' el escenario · recuerde: '*There's no winning. There's only coordinating. Decisions = grammar in action.*'",
+          "💡 Si un aprendiz pregunta '¿puedo decir esto en español?': responda '*Save Spanish for emergency only · the recorder hears everything.*'"
+        ],
+        "checkpoint": "✓ Tríos check: ≥75% de los tríos completan 3 rotaciones de roles. Si <75%: extender 5 min · NO comprometer break.",
+        "transition": "*Break time. 15 minutes. Coffee, water, breathe. Read your Scenario 1 cue card alone — quietly. After break, you LEAD. The recorder is the witness.*",
+        "tecnica_didactica": "Modeling docente cronometrado + ensayo libre tripartito en tríos rotativos sin presión evaluativa + observación-recast diferida (PM-0 §5.11 + ABT scaffolded simulation)"
+      },
+      {
+        "letra": "BREAK",
+        "nombre": "Receso activo + revisión cue cards individual",
+        "duracion_min": 15,
+        "agrupacion": "—",
+        "objetivo": "Recargar energía + lectura silenciosa cue cards 3 escenarios (cada aprendiz revisa los 3 que liderará en WHILE C) + verificación celular grabación + agua/café.",
+        "facilitation_notes": [
+          "💡 Música ambient marítima muy baja durante todo el break — mantiene clima operacional sin presión.",
+          "💡 Si un aprendiz se acerca con dudas afectivas ('estoy nervioso'): responda 1-2 oraciones EN brevemente · NO inicie coaching extenso · '*You've trained 7 sessions for this. The recorder doesn't judge — neither do I. Trust your training.*'",
+          "💡 Verifique técnicamente walkie-talkies + grabación celular de muestra (5 seg) durante el break — NO confíe en que están listos · pruebe."
+        ]
+      },
+      {
+        "letra": "C",
+        "nombre": "Berthing Coordination TRIPARTITE — 3 Escenarios × 3 min × Cada Aprendiz Líder + Grabación + Escala E4 (PM-2.8)",
+        "duracion_min": 90,
+        "worksheet_ref": "PM-2.8 Berthing Coordination Speaking — 3 escenarios cue cards (E1 routine · E2 wind alert · E3 customs delay) + Escala Estimación E4 PM-4.1",
+        "agrupacion": "Tríos rotativos · 1 líder + 2 actores (Diego + Bosun Romero) + 1 instructor (Captain Lopera VHF)",
+        "objetivo": "EVIDENCIA E4 (5 pts) — Cada aprendiz LIDERA 3 escenarios × ~3 min = ~9 min de producción activa total + grabación celular + Escala E4 evaluación inmediata por instructor. Producción 100% L2. Output: 3 grabaciones por aprendiz + 1 Escala E4 firmada por instructor.",
+        "instrucciones_paso_a_paso": [
+          "1. Formación tríos 5 min — instructor reconfigura tríos heterogéneos diferentes a WHILE B (mezclar niveles A2.0). Cada aprendiz recibe los 3 cue cards (E1 + E2 + E3) + Escala E4 personal en blanco. Recordatorio: '*You lead 3 scenarios. Diego and Bosun Romero are your peers — they respond, they don't lead. Captain Lopera is me — I respond on VHF, I push back, I escalate.*'",
+          "2. Ronda 1 — ESCENARIO 1 'Routine Berthing' (25 min total): cada aprendiz líder ejecuta 3 min × 8-9 aprendices = 25 min · grabación celular obligatoria. Instructor (Captain Lopera) responde con velocidad lingua franca real B2. Pareja Diego + Bosun Romero responde con chunks básicos + L1 ocasional (es el rol).",
+          "3. Buffer transición 3 min entre rondas — aprendices comparten cue card E2 silenciosamente · estiramiento.",
+          "4. Ronda 2 — ESCENARIO 2 'Wind Alert' (25 min): cada aprendiz líder ejecuta 3 min · introducción de complicación (instructor anuncia 'Wind 25 knots' a los 90 seg de cada simulación · líder DEBE decidir continuar o esperar usando Gr 12 condicional 1).",
+          "5. Buffer transición 3 min entre rondas — aprendices comparten cue card E3 silenciosamente.",
+          "6. Ronda 3 — ESCENARIO 3 'Customs Delay' (25 min): cada aprendiz líder ejecuta 3 min · introducción de complicación a los 60 seg ('Customs delayed 30 min') · líder decide reasignar canal o esperar customs usando Gr 11 presente perfecto + Gr 12 condicional.",
+          "7. Cierre WHILE C 4 min — instructor recoge Escala E4 firmada de cada aprendiz · sello provisional · verifica que cada aprendiz tiene 3 grabaciones en su celular nombradas correctamente."
+        ],
+        "teacher_talk_instruction": "*Three scenarios. Three minutes each. Recorder on before you say 'Andrea, Berth 4, ready'. After 'over' — recorder off. Diego and Bosun Romero — you respond, you don't lead. Captain Lopera — that's me on the VHF, real speed, real pushback. Scenario 1 routine. Scenario 2 wind hits at 90 seconds. Scenario 3 customs delays at 60 seconds. You decide. You lead. The recorder remembers.*",
+        "icq": [
+          "*Who leads each scenario?* → Esperan: 'I do / each one of us'",
+          "*When does the wind hit in Scenario 2?* → Esperan: '90 seconds in'",
+          "*When does customs delay in Scenario 3?* → Esperan: '60 seconds in'",
+          "*Where is Captain Lopera?* → Esperan: 'On the VHF / instructor on the radio'",
+          "*Do you record?* → Esperan: 'Yes — before go, after over'"
+        ],
+        "answer_key_inline": {
+          "ESCENARIO_1_routine_berthing_modelo_3min": "Andrea: 'Berth 4, this is Andrea — BUENAVENTURA EXPRESS approaching. ETA 15 min. Over.' Captain Lopera: 'Roger Andrea. Pilot has boarded. Wind 10 knots. Standby.' Andrea: 'Diego, are containers ready?' Diego: 'Sí, ready in 5.' Andrea: 'Bosun Romero, secure bow lines first.' Bosun: 'Copiado, bow lines first.' Andrea: 'Captain Lopera, the pilot HAS BOARDED. IF the wind holds, we WILL complete berthing in 15 min. Confirm starboard approach.' Captain: 'Confirmed starboard. Pilot on bridge. Standby.' Andrea: 'Diego, crane ready?' Diego: 'Crane ready.' Andrea: 'Operation complete. The vessel HAS SECURED. Out.' [Gr 11: 3 + Gr 12: 1 + Sub-bloque 3 vocab: 6+]",
+          "ESCENARIO_2_wind_alert_decision_modelo": "Líder al minuto 1:30 (instructor anuncia 'Wind 25 knots'): 'Wind has increased to 25 knots. IF the wind continues, we WILL delay berthing 30 min. Captain Lopera, request: pause approach. Diego, hold the crane. Bosun Romero, secure mooring lines anyway — wind might drop.' [Gr 11: 1 (HAS INCREASED) + Gr 12: 2 (IF continues, will delay · IF holds, will use) + decisión propia]",
+          "ESCENARIO_3_customs_delay_decision_modelo": "Líder al minuto 1:00 (instructor anuncia 'Customs delayed 30 min'): 'Customs has delayed 30 min. IF customs delays, we WILL reschedule the cargo inspection. Captain Lopera, request: continue berthing without customs clearance — cargo will be inspected at berth. Diego, prepare yard for delayed unload. Bosun Romero, secure all lines now.' [Gr 11: 1 (HAS DELAYED) + Gr 12: 1 (IF delays, will reschedule) + decisión propia]",
+          "Escala_E4_5_criterios_PM_4_1": [
+            "C1 — Initiates and leads operation (1 pt): líder abre + cierra + transiciona claramente",
+            "C2 — Uses Gr 11/12 productively (1 pt): mínimo 1 oración Gr 11 + 1 oración Gr 12 por escenario",
+            "C3 — Coordinates 3 actors clearly (1 pt): cada actor recibe instrucción/respuesta directa por turno",
+            "C4 — Pronunciation intelligible (1 pt): stress crítico en participio + contracciones audibles",
+            "C5 — Maritime vocabulary accurate (1 pt): mínimo 5 términos Sub-bloque 3 productivos por escenario"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 INSTRUCTOR como Captain Lopera: hable a velocidad NATURAL B2 lingua franca · NO ralentice · NO repita salvo si líder pide 'Say again, Captain'. La presión de velocidad es parte del scaffolding fluency.",
+          "💡 Si un líder se bloquea totalmente: pause cronómetro · modele 1 frase ('Try: \"Pilot has boarded — confirm.\"') · reinicie cronómetro · NO penalice.",
+          "💡 Diego + Bosun Romero (los pares) deben recibir mini-brief: '*Respond in English when you can. Spanish only when you need it. Say 'sí' or 'copiado' brief — don't take over.*'",
+          "💡 Self-recording: si un aprendiz olvidó iniciar grabación · NO repita el escenario · use grabación del instructor como respaldo (instructor puede tener celular adicional grabando).",
+          "💡 Escala E4 se llena en TIEMPO REAL durante cada simulación · NO al final · marca √ por criterio cumplido. Si <3/5 criterios: marcar pero NO comunicar nota al aprendiz hasta WHILE D — proteger flow.",
+          "💡 Si un aprendiz produce Gr 13 voz pasiva espontáneamente ('the cargo is inspected by customs'): celebre ✓ + 1 punto bonus (si llega a 5/5 igual no sube · pero refuerza confianza).",
+          "💡 La intervención del wind/customs alert debe ser BREVE y AUTOMÁTICA — el instructor anuncia desde fuera del tríos en EN: 'Wind 25 knots' o 'Customs delayed 30 min'. NO desarrolle teatro extra · solo el dato."
+        ],
+        "checkpoint": "✓ Mid-WHILE check (al final de Ronda 2): ≥80% de los aprendices completaron Escenario 1 + Escenario 2 con grabación + Escala E4 marcada (mínimo 3/5 criterios). Si <80%: ajustar Ronda 3 a 2 escenarios solamente · diferir E3 a S9 warm-up. ✓ Final WHILE C: 100% de aprendices entregan Escala E4 firmada con sello provisional + 3 grabaciones nombradas correctamente.",
+        "transition": "*Recorders off. Escala E4 sealed provisionally. Now — we listen to YOU. 7 samples. Class votes. We recast together. The performance is over — the learning continues.*",
+        "tecnica_didactica": "Simulación tripartita Berthing Coordination con 3 actores simultáneos + 3 escenarios cronometrados + auto-grabación celular + evaluación E4 en tiempo real con Escala 5 criterios + complicaciones operacionales (wind alert · customs delay) que fuerzan Gr 12 condicional 1 productivo (PM-0 §5.11 fluency dominante + ABT simulación profesional)"
+      },
+      {
+        "letra": "D",
+        "nombre": "Recast Plenaria — 7 Muestras Representativas + Self-feedback Listening + Auto-evaluación E4",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.8 Berthing segment + grabaciones celulares aprendices + Escala E4 PM-4.1",
+        "agrupacion": "Plenaria → Individual auto-eval",
+        "objetivo": "Calibrar producción colectiva con 7 muestras representativas (3 ✓ verde + 4 a recast rojo) + cada aprendiz escucha sus propias grabaciones + auto-evalúa con Escala E4. Output: 7 muestras procesadas en LIVE ZONE + cada aprendiz tiene su Escala E4 auto-evaluada + comparada con E4 instructor.",
+        "instrucciones_paso_a_paso": [
+          "1. Plenaria 25 min — instructor reproduce 7 muestras seleccionadas durante WHILE C (con permiso del aprendiz · si rechaza · usar siguiente). Cada muestra es 30-60 seg · clase escucha + vota verde (✓ A2.0 listo) o rojo (✗ recast). Instructor anota en LIVE ZONE el verb/grammar a recast con MARKER VERDE/ROJO.",
+          "2. Recast colectivo 15 min — para cada muestra ROJA: clase identifica el patrón · instructor escribe la versión correcta debajo · choral repetition. Patrones esperados a recast: subject-verb agreement (I has → I have) · stress en participio (BOARD-ed correcto) · WILL sin contracción (we will → we'll).",
+          "3. Self-feedback individual 15 min — cada aprendiz escucha SUS 3 grabaciones con audífonos (o celular bajo) · marca en su Escala E4 personal una columna 'Auto' al lado de cada criterio C1-C5: ✓ cumplí · ? dudoso · ✗ no cumplí. Sin presión · NO se entrega.",
+          "4. Comparación E4 instructor vs E4 auto 5 min — cada aprendiz recibe su Escala E4 firmada por instructor · compara con su Auto · identifica 1 criterio donde coincide y 1 donde difiere. Escribe 1 oración reflexiva en EN al pie: '*I [agreed/disagreed] with the instructor on criterion [#]. I will improve [aspect].*'"
+        ],
+        "teacher_talk_instruction": "*Seven samples. Three voices we celebrate green. Four voices we recast red — together, kindly. Vote with your hand. We write the correction in green. Then — your turn. Headphones on, listen to YOUR three recordings. Mark your own Escala E4 — auto column. Compare with my version. One sentence at the bottom: where did we agree? where did we differ? what will you improve before Session 9?*",
+        "icq": [
+          "*How many samples in plenary?* → Esperan: '7 / seven (3 green + 4 red)'",
+          "*Do you vote during plenary?* → Esperan: 'Yes / verde or rojo with hand'",
+          "*Do you listen to your own recordings?* → Esperan: 'Yes / yes — 3 recordings · headphones'",
+          "*Compare with instructor's E4?* → Esperan: 'Yes / yes — agree or differ on 1 criterion'"
+        ],
+        "answer_key_inline": {
+          "7_muestras_esperadas_distribucion": "3 verde (Gr 11 + Gr 12 productivos correctos · stress BOARD-ed limpio · contracción we'll · 5+ términos Sub-bloque 3) + 4 rojo (1 subject-verb agreement: 'I has' → 'I have' · 1 stress: 'boarDED' → 'BOARDed' · 1 WILL sin contracción: 'we will berth' → 'we'll berth' · 1 confusión Gr 13: 'the cargo is approaching by customs' → 'the cargo IS INSPECTED BY customs')",
+          "patron_calibracion_auto_vs_instructor": "Acuerdo esperado: 60-70% en C1+C2 · 70-80% en C3+C5 · 50-60% en C4 (pronunciation tiende a ser más severa por aprendiz que por instructor). Si discrepancia >2 puntos en total · es señal de que aprendiz necesita coaching individual S9 warm-up.",
+          "1_oracion_reflexiva_modelo": "'I agreed with the instructor on C2 (Gr 11/12 productive) but disagreed on C4 (pronunciation). I will improve stress on participle endings before Session 9.'"
+        },
+        "facilitation_notes": [
+          "💡 NUNCA reproduzca grabación sin permiso explícito del aprendiz — pre-pregunte durante el break post-WHILE C. Si rechaza · use siguiente muestra. Confianza > pedagogía.",
+          "💡 Recast plenaria DEBE ser amable + colectivo · NO señale al autor de la muestra roja · use lenguaje neutral '*One of us said...*' · todos aprendemos juntos.",
+          "💡 Si un aprendiz se desmoraliza al escuchar su grabación: '*The recording is the most honest mirror you'll ever have. Day 8 — you spoke English to 3 people. Andrea on Day 1 had 4 words. You have 9 minutes of production today.*'",
+          "💡 La comparación auto vs instructor NO es competencia — es calibración. NO publique notas. NO compare aprendices entre sí.",
+          "💡 La oración reflexiva final es input clave para WHILE E (drill bridge a S9) — anote 3-4 patrones recurrentes en LIVE ZONE para alimentar el drill."
+        ],
+        "checkpoint": "✓ Plenaria check: ≥85% participación voto verde/rojo. Si <85%: pause + 1 min icebreaker rápido. ✓ Self-feedback check: 100% aprendices completan Auto column + 1 oración reflexiva. Si algún aprendiz no termina: extender hasta cierre WHILE D · NO comprometer WRAP-UP.",
+        "transition": "*One more drill — a bridge. Modals + conditionals — fast, sharp. Then a prompt card with your partner. Then Session 9 awaits.*",
+        "tecnica_didactica": "Recast plenaria con voto colectivo verde/rojo + auto-feedback con grabaciones propias + calibración auto vs instructor en Escala E4 + reflexión escrita 1 oración (PM-0 §5.11 feedback diferido + autoevaluación post-task)"
+      },
+      {
+        "letra": "E",
+        "nombre": "Bridge Drill — Modal + Conditional Contrastivo + Prompt Card Libre rumbo a S9 (PM-2.10 Gr 6 + Gr 12)",
+        "duracion_min": 30,
+        "worksheet_ref": "PM-2.10 Modal + Conditional drill + 1 prompt card libre",
+        "agrupacion": "Plenaria drill → Parejas heterogéneas",
+        "objetivo": "Drilling contrastivo SHOULD/COULD/MIGHT/MUST + IF...WILL con stress crítico + 1 prompt card libre para producción oral mínima 2 oraciones por aprendiz · bridge directo a S9 Role Carousel 5 master functions. Output: 1 producción oral 2 oraciones por aprendiz · grabada o no.",
+        "instrucciones_paso_a_paso": [
+          "1. Plenaria drill 12 min — instructor lidera drill rítmico contrastivo: 'SHOULD = recommendation · COULD = possibility · MIGHT = probability · MUST = obligation' + 'IF it drops, we WILL berth · IF it holds, we COULD continue · IF it rises, we MIGHT delay · IF customs delays, we MUST reschedule'. Choral repetition × 4 + finger drilling rápido + clapping en stress (SHOULD débil · WILL contraído).",
+          "2. Distribución prompt card 3 min — instructor entrega 1 prompt card por aprendiz con pregunta abierta: '*What WILL you do if customs delays tomorrow?*' o '*What SHOULD you do if the wind rises?*' o '*What MIGHT happen if Diego is not ready?*'. Cada aprendiz tiene su pregunta personal.",
+          "3. Parejas 12 min — pareja A pregunta a B su prompt card · B responde 2 oraciones (1 con modal · 1 con condicional). Luego rotan. Sin grabación obligatoria · si quieren grabar para portafolio personal · permitido.",
+          "4. Plenaria de cierre 3 min — 3 voluntarios comparten su respuesta plenaria · clase aplaude. Instructor anota 1 chunk emergente en LIVE ZONE para preview S9."
+        ],
+        "teacher_talk_instruction": "*Drill with me — fast, sharp. Should · could · might · must. If drops, will berth. If holds, could continue. If rises, might delay. If delays, must reschedule. Then — prompt card. Your question. Your partner asks, you answer 2 sentences — one modal, one conditional. Then 3 brave voices share with the class. Bridge to Session 9 — the Role Carousel.*",
+        "icq": [
+          "*How many sentences in your answer?* → Esperan: '2 / two — one modal, one conditional'",
+          "*Do you record this drill?* → Esperan: 'Optional / optional — for portfolio'",
+          "*How many volunteers share?* → Esperan: '3 / three brave voices'"
+        ],
+        "answer_key_inline": {
+          "drill_modal_conditional_modelo": [
+            "*What WILL you do if customs delays?* → 'I COULD reassign the channel. IF customs delays more than 30 min, we WILL reschedule.'",
+            "*What SHOULD you do if the wind rises?* → 'We SHOULD pause approach. IF the wind reaches 25 knots, we MUST hold position.'",
+            "*What MIGHT happen if Diego is not ready?* → 'The crane MIGHT delay 10 min. IF Diego is not ready in 5 min, we COULD start manual securing.'"
+          ],
+          "stress_critico_drill": "SHOULD /ʃʊd/ débil · COULD /kʊd/ débil · MIGHT /maɪt/ fuerte · MUST /mʌst/ fuerte · WILL contraído /əl/ (we'll · they'll · it'll) · IF /ɪf/ átona en condicional"
+        },
+        "facilitation_notes": [
+          "💡 Drilling rápido es CLAVE — los aprendices tienden a deletrear modales bajo presión simulada. Drill libera fluidez automática.",
+          "💡 Si una pareja se queda sin ideas: instructor sugiere 1 modal alternativo · NO da respuesta completa.",
+          "💡 Los 3 voluntarios plenaria deben ser DIFERENTES a los que hablaron en WHILE D (rotación democrática) — anote quién habla en cada bloque.",
+          "💡 El bridge a S9 debe ser ANTICIPATORIO — '*Session 9: Role Carousel. 5 master functions. 5 stations. 90 seconds each. The grammar you used today + connectors and/but/or/because/so/although. Bring your A-game.*'"
+        ],
+        "checkpoint": "✓ Pair check: ≥90% de las parejas completan rotación · 1 prompt card por aprendiz respondida. Si <90%: dar 2 min extra · NO comprometer WRAP-UP.",
+        "transition": "*Final stretch. Exit Ticket — your reflection. Sello del Capitán Restrepo on your E4. Asignación autónoma. Preview Session 9.*",
+        "tecnica_didactica": "Drilling contrastivo de modales con stress crítico + producción oral mínima en parejas con prompt card como bridge productivo a S9 Role Carousel (PM-0 §5.13 noticing + automatización chunks operacionales)"
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 15,
+    "exit_ticket": {
+      "tarea": "Exit Ticket S8 — Tarjeta 10×15 cm con 4 líneas: (1) ONE Gr 11 sentence I produced today (with HAS + participle) · (2) ONE Gr 12 sentence I produced today (with IF + present, WILL + verb) · (3) MY E4 self-score / instructor score (e.g., 4/5 self · 4/5 instructor · ✓ same / ✗ different by [#] points) · (4) ONE thing I will improve before Session 9 Role Carousel (in EN). Entregar al instructor · sello del Capitán Restrepo en cada E4 firmada.",
+      "success_criteria": "Las 4 líneas completas. Mínimo 1 oración Gr 11 + 1 oración Gr 12. Score auto vs instructor con cálculo de diferencia. Mejora declarada en EN. Sello físico recibido como cierre ceremonial.",
+      "duration_min": 7
+    },
+    "sintesis": "Hoy lideraste 3 escenarios de Berthing Coordination con 3 actores simultáneos · Diego en la grúa · Bosun Romero en el patio · Captain Lopera en el VHF. Produjiste 9 minutos activos de inglés tripartito · grabaste tu voz · auto-evaluaste con Escala E4 · recibiste el sello del Capitán Restrepo. Operaste Gr 11 (HAS BOARDED · HAS INSPECTED · HAS SECURED) y Gr 12 (IF wind drops, we WILL berth) productivamente · y reconociste Gr 13 voz pasiva receptiva. Eres el nodo lingüístico del puerto. La sesión 9 ya espera con el Role Carousel.",
+    "asignacion_autonoma": {
+      "actividad": "Berthing Coordination Memo 1 página + Post-Turn Report draft (incident analysis con condicional 1 + voz pasiva) · 2.33 horas autónomas (≈140 min)",
+      "instrucciones_detalladas": [
+        "1. BERTHING COORDINATION MEMO 1 página (60 min): Escribir un memo profesional dirigido a Capitán Restrepo resumiendo la simulación de hoy (Escenario 1 + 2 + 3). Incluir: (a) Header bilingüe (To · From · Date · Re: Berthing Coordination Day 8) · (b) 3 párrafos cortos · uno por escenario · cada uno con mínimo 1 Gr 11 (HAS + participle) y 1 Gr 12 (IF...WILL) · (c) Cierre con compromiso 1 línea en EN. Plantilla disponible en classroom + Maritime Word Wall foto.",
+        "2. POST-TURN REPORT DRAFT — Incident Analysis (60 min): Escribir un draft (no final) de Post-Turn Report sobre 1 incidente de hoy (e.g., wind alert OR customs delay). Incluir: (a) Description of incident · (b) Decision taken (with Gr 12 condicional 1 · 'IF the wind held, we WOULD have...') · (c) Outcome · (d) Voz pasiva presente RECEPTIVA reconocida (subrayar 2 oraciones pasivas en el draft que el instructor proveerá como apoyo · NO producir).",
+        "3. SELF-RECORDING ESCUCHA POST-CLASE (20 min): Escuchar las 3 grabaciones de hoy en celular · marcar en el Maritime Self-Reflection Journal (handout S8): 1 cosa que me gustó · 1 cosa que cambiaría · 1 patrón de error que noté.",
+        "4. PREVIEW S9: Leer la lista de las 5 master functions IMARPOR del Port Operations Trainee (Information Exchange · SMCP literacy · Coordinating Tripartite · Modals · Describing & Justifying) que se entregará en classroom · familiarizarse con los 6 conectores básicos (and/but/or/because/so/although) — sin estudio formal · solo lectura.",
+        "5. Llevar Memo + Report draft + Journal a S9 — se compartirá en warm-up (5 min · sin evaluación)."
+      ],
+      "entregable": "Memo Berthing Coordination 1 página (Word/PDF/foto manuscrita) + Post-Turn Report draft 1 página + Self-Reflection Journal completado.",
+      "cuando_se_revisa": "S9 warm-up (5 min) — instructor pide a 2 voluntarios leer 1 párrafo del Memo · 1 voluntario lee el Self-Reflection. Sin evaluación formal · validación de presencia (entregó / no entregó). Memos quedan archivados para Misión Final S11-S12.",
+      "tiempo_estimado_min": 140,
+      "tiempo_estimado_horas": 2.333333
+    },
+    "bridge_to_next": "*Next session — Session 9: Studio Language — 5 Master Functions of the Port Pro. Role Carousel — 5 stations · 90 seconds each. Information Exchange · SMCP literacy · Coordinating Tripartite · Modals · Describing & Justifying. 6 connectors: and · but · or · because · so · although. Bring your Memo. Bring your Report draft. Bring your Day 8 voice — it's stronger now.*",
+    "teacher_talk_closing_en": "*Team. Day 8. You led the Berthing. You spoke 9 minutes of operational English to 3 actors at once. You produced presente perfecto and condicional 1. You recorded your voice and listened to it honestly. You received the sello of Capitán Restrepo on your Escala E4 — physical proof of your evidence. The yellow envelope from Day 1 — your Learning Contract — is closer to opening. Session 9 — Role Carousel. 5 master functions. 5 stations. 6 connectors. Then Session 10 — the Maritime Operations Check. Then Sessions 11 and 12 — the CML Port Turnaround Mission. Andrea is ready. You are Andrea. Out.*",
+    "teacher_talk_closing_es_cursive": "*(Equipo. Día 8. Lideraron el Atraque. Hablaron 9 minutos de inglés operacional a 3 actores al mismo tiempo. Produjeron presente perfecto y condicional 1. Grabaron su voz y la escucharon honestamente. Recibieron el sello del Capitán Restrepo en su Escala E4 — prueba física de su evidencia. El sobre amarillo del Día 1 — su Contrato de Aprendizaje — está más cerca de abrirse. Sesión 9 — Carrusel de Roles. 5 funciones maestras. 5 estaciones. 6 conectores. Luego Sesión 10 — el Maritime Operations Check. Luego Sesiones 11 y 12 — la Misión Final CML Port Turnaround. Andrea está lista. Ustedes son Andrea. Cambio y fuera.)*",
+    "reflection_prompt": "Antes de salir · 30 segundos de silencio: '*¿Qué versión de mí entró a esta aula a las 8 a.m. de un día como S1? ¿Qué versión de mí sale ahora a punto de cerrar el Bloque Interno 3 y abrir la transferencia? ¿Qué le diría a Andrea del Día 1 desde aquí?*' (no se responde en voz alta · solo se siente).",
+    "facilitation_notes": [
+      "💡 El sello del Capitán Restrepo en cada Escala E4 es ACTO CEREMONIAL — apague música · silencio · 1-2 segundos por aprendiz · contacto visual + sello firme. NO mecanice.",
+      "💡 Si un aprendiz tuvo una E4 baja (≤2/5): contacto uno-a-uno al final · '*Day 8 is hard. The recorder is in your pocket — listen to it tonight. Bring me 1 question Monday.*' NO publique notas. NO compare con compañeros.",
+      "💡 La asignación autónoma (Memo + Report) tiene peso simbólico hacia Misión Final S11-S12 — los Memos archivados serán parte del portafolio profesional. Mencionarlo brevemente refuerza propósito.",
+      "💡 Si la energía está alta al cierre (post-simulación exitosa): aplauso grupal de cierre del Bloque Interno 3 · '*From Day 1 to Day 8 — you've come far.*'",
+      "💡 Si un aprendiz se queda con dudas técnicas (grabación no funcionó · cue card confusa): coordinación 1-a-1 viernes/sábado por WhatsApp · NO sobrecargue el cierre."
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "WHILE A — Grammar Activation 3 Colores (PM-2.10 Gr 11+12+13)",
+      "items": [
+        {
+          "pregunta": "Gr 11 presente perfecto — 3 oraciones modelo (sección A handout)",
+          "respuesta_correcta": "(1) Andrea HAS BOARDED the vessel at 06:15. (2) Captain Lopera HAS INSPECTED the bridge. (3) The bosun HAS SECURED the bow lines.",
+          "alternativas": ["Customs HAS APPROVED the cargo manifest", "The pilot HAS COMPLETED the boarding procedure", "We HAVE COORDINATED the berthing with all 3 actors"],
+          "puntos": 0,
+          "nota": "No evaluado — drilling productivo. Alternativas válidas si subject + has/have + participle correcto."
+        },
+        {
+          "pregunta": "Gr 12 condicional 1 — 3 oraciones modelo (sección B handout)",
+          "respuesta_correcta": "(1) IF the wind drops, we WILL berth on time. (2) IF customs delays, we WILL reschedule the operation. (3) IF Diego is ready, we WILL start the crane.",
+          "alternativas": ["IF the pilot boards now, we WILL save 30 minutes", "IF the wind rises to 25 knots, we WILL hold position", "IF customs approves cargo, we WILL begin unloading"],
+          "puntos": 0,
+          "nota": "Estructura IF + present, WILL + verb. Cualquier escenario operacional válido."
+        },
+        {
+          "pregunta": "Gr 13 voz pasiva — circular 4 pasivas reales en 8 oraciones (sección C handout)",
+          "respuesta_correcta": "(1) The cargo IS INSPECTED BY customs. (2) The lines ARE SECURED BY the deckhand. (3) The vessel IS PILOTED BY Captain Lopera. (4) The yard IS COORDINATED BY Bosun Romero.",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Marcadas con MARKER MORADO. Distractores son presente continuo (sin BY actor)."
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE B — Cue Card Briefing + Modeling Demo + Ensayo Tríos (PM-2.8)",
+      "items": [
+        {
+          "pregunta": "Demo docente — chunks esperados en LIVE ZONE",
+          "respuesta_correcta": "7 chunks: (1) 'Berth 4, this is Andrea — vessel approaching, ETA 15 min' · (2) 'Pilot HAS BOARDED — confirm starboard approach' · (3) 'Diego, are containers ready?' / 'Yes, ready in 5' · (4) 'Bosun Romero, secure bow lines first' · (5) 'IF the wind holds, we WILL complete berthing in 15 min' · (6) 'Roger, Andrea. Captain Lopera standing by' · (7) 'The vessel HAS SECURED. Out.'",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Demo cronometrada exactamente 3 min. Mínimo 1-2 Gr 11 + 1-2 Gr 12 + 0 Gr 13 productivo."
+        },
+        {
+          "pregunta": "Patrones de ensayo en tríos — observables esperados",
+          "respuesta_correcta": "(1) Cada tríos completa 3 rotaciones · (2) Gr 11 emerge en 60-70% líderes · (3) Gr 12 en 40-50% · (4) code-switching ≤3 veces por tríos.",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Patrones a recast plenaria: confusión has/have · stress BOARD-ed · WILL sin contracción."
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE C — Berthing Coordination Tripartite EVIDENCIA E4 (PM-2.8 + PM-4.1)",
+      "items": [
+        {
+          "pregunta": "ESCENARIO 1 'Routine Berthing' — modelo completo 3 min",
+          "respuesta_correcta": "Andrea: 'Berth 4, this is Andrea — BUENAVENTURA EXPRESS approaching. ETA 15 min. Over.' Captain Lopera: 'Roger Andrea. Pilot has boarded. Wind 10 knots. Standby.' Andrea: 'Diego, are containers ready?' Diego: 'Sí, ready in 5.' Andrea: 'Bosun Romero, secure bow lines first.' Bosun: 'Copiado, bow lines first.' Andrea: 'Captain Lopera, the pilot HAS BOARDED. IF the wind holds, we WILL complete berthing in 15 min. Confirm starboard approach.' Captain: 'Confirmed starboard. Pilot on bridge. Standby.' Andrea: 'Diego, crane ready?' Diego: 'Crane ready.' Andrea: 'Operation complete. The vessel HAS SECURED. Out.'",
+          "alternativas": ["Variaciones aceptables siempre que mantengan: 1+ Gr 11 productivo + 1+ Gr 12 productivo + 5+ términos Sub-bloque 3 + apertura/cierre formal + 3 actores coordinados"],
+          "puntos": 5,
+          "nota": "EVIDENCIA E4 — 5 pts via Escala Estimación PM-4.1 5 criterios C1-C5."
+        },
+        {
+          "pregunta": "ESCENARIO 2 'Wind Alert' — decisión modelo al min 1:30",
+          "respuesta_correcta": "'Wind has increased to 25 knots. IF the wind continues, we WILL delay berthing 30 min. Captain Lopera, request: pause approach. Diego, hold the crane. Bosun Romero, secure mooring lines anyway — wind might drop.' [Gr 11: 1 + Gr 12: 2 + decisión propia]",
+          "alternativas": ["Cualquier decisión razonable: continuar con cautela O pausar. Lo evaluable es la PRODUCCIÓN de Gr 11 + Gr 12 + decisión clara coordinada con 3 actores."],
+          "puntos": 5,
+          "nota": "Escenario 2 fuerza Gr 12 condicional 1 productivo (IF + present, WILL + verb)."
+        },
+        {
+          "pregunta": "ESCENARIO 3 'Customs Delay' — decisión modelo al min 1:00",
+          "respuesta_correcta": "'Customs has delayed 30 min. IF customs delays, we WILL reschedule the cargo inspection. Captain Lopera, request: continue berthing without customs clearance — cargo will be inspected at berth. Diego, prepare yard for delayed unload. Bosun Romero, secure all lines now.' [Gr 11: 1 + Gr 12: 1 + decisión propia]",
+          "alternativas": ["Decisión válida: reasignar canal O esperar customs O continuar berthing. Lo evaluable es la PRODUCCIÓN coordinada."],
+          "puntos": 5,
+          "nota": "Escenario 3 fuerza decisión bajo presión + Gr 11 (HAS DELAYED) + Gr 12 (IF delays, WILL reschedule)."
+        },
+        {
+          "pregunta": "Escala Estimación E4 — 5 criterios PM-4.1",
+          "respuesta_correcta": "C1 Initiates and leads operation (1 pt) · C2 Uses Gr 11/12 productively (1 pt) · C3 Coordinates 3 actors clearly (1 pt) · C4 Pronunciation intelligible (1 pt) · C5 Maritime vocabulary accurate (1 pt) — Total 5 pts.",
+          "alternativas": [],
+          "puntos": 5,
+          "nota": "Escala visible plenaria + auto-evaluación post-WHILE D + sello del Capitán Restrepo en cierre WRAP-UP."
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE D — Recast Plenaria + Self-feedback + Auto-evaluación E4",
+      "items": [
+        {
+          "pregunta": "7 muestras esperadas — distribución verde/rojo",
+          "respuesta_correcta": "3 verde (Gr 11+Gr 12 productivos correctos · stress BOARDed limpio · contracción we'll · 5+ términos Sub-bloque 3) + 4 rojo (1 subject-verb agreement 'I has → I have' · 1 stress 'boarDED → BOARDed' · 1 WILL sin contracción 'we will → we'll' · 1 confusión Gr 13 'is approaching by → is INSPECTED by')",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Distribución representativa de patrones reales A2.0 — protege confianza colectiva."
+        },
+        {
+          "pregunta": "Patrón calibración auto vs instructor",
+          "respuesta_correcta": "Acuerdo esperado: 60-70% en C1+C2 · 70-80% en C3+C5 · 50-60% en C4. Discrepancia >2 pts señal de coaching individual S9.",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Self-evaluation tiende a más severa en pronunciation (C4) que instructor."
+        },
+        {
+          "pregunta": "1 oración reflexiva final — modelo",
+          "respuesta_correcta": "'I agreed with the instructor on C2 (Gr 11/12 productive) but disagreed on C4 (pronunciation). I will improve stress on participle endings before Session 9.'",
+          "alternativas": ["Cualquier oración EN con: criterio acordado + criterio diferido + 1 mejora declarada"],
+          "puntos": 0,
+          "nota": "Input clave para WHILE E drill bridge."
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE E — Bridge Drill Modal + Conditional + Prompt Card (PM-2.10 Gr 6 + Gr 12)",
+      "items": [
+        {
+          "pregunta": "Drill modal contrastivo — modelo plenaria",
+          "respuesta_correcta": "SHOULD = recommendation · COULD = possibility · MIGHT = probability · MUST = obligation. IF drops, WILL berth · IF holds, COULD continue · IF rises, MIGHT delay · IF delays, MUST reschedule.",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Stress crítico: SHOULD/COULD débil · MIGHT/MUST fuerte · WILL contraído we'll/they'll/it'll · IF átona."
+        },
+        {
+          "pregunta": "Prompt card libre — respuesta modelo 2 oraciones",
+          "respuesta_correcta": "'What WILL you do if customs delays?' → 'I COULD reassign the channel. IF customs delays more than 30 min, we WILL reschedule.'",
+          "alternativas": ["Cualquier respuesta con: 1 modal + 1 condicional = 2 oraciones"],
+          "puntos": 0,
+          "nota": "Bridge directo a S9 Role Carousel — chunks operacionales prácticos."
+        }
+      ]
+    },
+    {
+      "actividad": "WRAP-UP — Exit Ticket S8 + Sello Capitán Restrepo + Asignación Autónoma",
+      "items": [
+        {
+          "pregunta": "Exit Ticket — 4 líneas requeridas",
+          "respuesta_correcta": "(1) 1 oración Gr 11 producida hoy · (2) 1 oración Gr 12 producida hoy · (3) E4 self-score / instructor-score con cálculo de diferencia · (4) 1 mejora antes de S9 en EN.",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Sello físico del Capitán Restrepo en cada E4 firmada — acto ceremonial cierre Bloque Interno 3."
+        },
+        {
+          "pregunta": "Asignación autónoma — entregables (140 min · 2.33h)",
+          "respuesta_correcta": "(1) Berthing Coordination Memo 1 página · (2) Post-Turn Report draft con incident analysis · (3) Self-Reflection Journal · llevar a S9 warm-up.",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Memos archivados para Misión Final S11-S12 portafolio profesional."
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "En WHILE A: producir 5 oraciones Gr 11 + 5 oraciones Gr 12 (en lugar de 3+3) + circular 4 Gr 13 (en lugar de 3) + intentar producir 1 oración Gr 13 propia con BY + actor.",
+      "En WHILE B: durante ensayo en tríos · ofrecerse como Captain Lopera (rol más exigente · velocidad B2) en al menos 1 rotación.",
+      "En WHILE C: en cada escenario · agregar 1 oración Gr 13 voz pasiva productiva BONUS (e.g., 'The cargo IS INSPECTED BY customs') · NO sustituye Gr 11 + Gr 12 obligatorios.",
+      "En WHILE C: solicitar Escenario 4 BONUS (un escenario adicional inventado por el aprendiz · e.g., 'Pilot illness mid-operation') con instructor como peer · evaluación informal.",
+      "En WHILE D: rol de peer mentor en self-feedback — ayudar a 1 compañero a calibrar su Auto column con la del instructor.",
+      "En WHILE E: agregar 1 conector S9 (because/although) en la respuesta del prompt card como anticipación al Role Carousel.",
+      "En WRAP-UP: presentar voluntariamente 1 fragmento del Berthing Memo en EN durante Exit Ticket (60 seg max)."
+    ],
+    "more_support_needed": [
+      "Tiempo extra en WHILE A (hasta 75 min) si la producción Gr 12 condicional es lenta — ofrecer 1 modelo pre-rellenado para arrancar.",
+      "En WHILE A — permitir que escriban Gr 11 con frame completo: 'The pilot HAS ___ed.' rellenar verb (boarded/inspected/secured). Reducción del andamiaje cognitivo sin perder objetivo productivo.",
+      "En WHILE B durante ensayo tríos — pareja con compañero más fuerte (heterogeneous pairing intencional) · permitir 2-3 instances de code-switching ES sin penalizar · solo monitorear que el chunk operacional final sea EN.",
+      "En WHILE C — cue card simplificada: solo 1 outcome forzado por escenario (sin decisión propia) · línea por línea · 'Read this · then say this · then ask this.' Reducción a 2 escenarios (en lugar de 3) si bloqueo total · diferir Escenario 3 a S9 warm-up.",
+      "En WHILE C — instructor como Captain Lopera disponible para repetir frase clave 1 vez si el aprendiz pide 'Say again, Captain.' (uso permitido del SMCP S5/S6).",
+      "En WHILE C — grabación opcional · si presión afectiva alta · solo Escala E4 instructor sin grabación. Evidencia E4 válida sin grabación si los 5 criterios se observan en vivo.",
+      "En WHILE D — self-feedback con audífonos en aula privada (rincón silencioso) · 1-a-1 con instructor si se desmoraliza al escuchar grabación · '*The recorder is honest, not cruel.*'",
+      "En WHILE E — prompt card simplificada con frame completo: 'IF customs delays, I WILL ___' rellenar 1 verbo · 1 oración solamente (en lugar de 2).",
+      "En WRAP-UP — Exit Ticket con 3 líneas (en lugar de 4) si presión afectiva alta · saltar línea 3 (E4 calibración) · completar en casa antes de S9.",
+      "Asignación autónoma — Memo simplificado a 1 párrafo (en lugar de 3) · solo Escenario 1 + 1 Gr 11 + 1 Gr 12 · entregar foto manuscrita por WhatsApp si dificultad técnica con Word.",
+      "Contacto uno-a-uno al final de la sesión: '*How was your Day 8? Day 8 is a heavy day. Listen to your recording over the weekend — just listen, don't judge. Bring me 1 question Monday at 8 a.m. — I'll be early.*'"
+    ]
+  },
+  "instructor_self_check": [
+    "✓ ¿Modelé la DEMO Berthing Coordination en WHILE B con cronómetro EXACTO de 3 min · 1-2 Gr 11 + 1-2 Gr 12 + 0 Gr 13 productivo · usando los 3 roles (Diego + Bosun Romero + Captain Lopera) con 2 instructores secundarios o 2 voluntarios pre-briefed?",
+    "✓ ¿Como Captain Lopera en WHILE C · mantuve velocidad NATURAL B2 lingua franca sin ralentizar · solo respondiendo 'Say again' si el líder pidió explícitamente · introduje wind alert al min 1:30 (E2) y customs delay al min 1:00 (E3) automáticamente sin teatro extra?",
+    "✓ ¿Llené la Escala E4 en TIEMPO REAL durante cada simulación (5 criterios) · sello provisional · sin comunicar nota al aprendiz hasta WHILE D para proteger flow productivo?",
+    "✓ ¿En WHILE D pre-pregunté permiso explícito antes de reproducir cada grabación seleccionada · usé lenguaje colectivo neutral 'one of us said' · NO señalé al autor de muestras rojas?",
+    "✓ ¿Cerré la sesión con SELLO ceremonial del Capitán Restrepo en cada Escala E4 firmada · 1-2 segundos por aprendiz · contacto visual + sello firme · sin mecanizar · marcando el cierre del Bloque Interno 3?"
+  ],
+  "activity_logistics": {
+    "espacio": "Aula bilingüe en configuración 'isla central' — 3 estaciones físicas distribuidas alrededor: (1) yard con Diego (compañero/instructor) + clipboard yard con planilla containers · (2) bridge con Bosun Romero + libreta operativa · (3) VHF station con Captain Lopera (instructor con acento moderado lingua franca) + setup bridge. Líder Andrea en isla central con 3 canales walkie-talkie/app móvil. English Zone permanente activa. Maritime Word Wall lateral completo Bloques 1+2+3 (≥75 términos). Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 visibles. Escala E4 ampliada A3 visible junto al cronómetro. Música ambient marítima muy baja durante simulaciones para inmersión sensorial.",
+    "agrupamiento": "Plenaria (SET-UP + WHILE A primera parte + WHILE D plenaria) → Individual silencioso (WHILE A handout) → Parejas heterogéneas (WHILE A cross-check + WHILE E prompt card) → Tríos rotativos (WHILE B ensayo libre · WHILE C evidencia E4 con 1 líder + 2 actores + 1 instructor Captain Lopera) → Plenaria de cierre (WRAP-UP). Transiciones explícitas con Teacher Talk corto (max 30 seg cada cambio). Tríos heterogéneos en WHILE C diferentes a los de WHILE B (mezclar niveles A2.0).",
+    "recursos": [
+      "Proyector + bocinas (cronómetro 3:00 visible · audio ambient marítimo · grabaciones celular recolectadas en WHILE D)",
+      "Tablero blanco con 4 zonas demarcadas (E ZONE permanente + Today's Objective + Cronómetro + Grammar Color Code + LIVE ZONE)",
+      "Maritime Word Wall lateral completo Bloques 1+2+3 + 5 nuevas tarjetas S8 (BOARD-ed · in-SPECT-ed · se-CURED · ap-PROACH-ing · MOOR-ing) con stress + IPA + foto",
+      "3 walkie-talkies o app VHF móvil (canal yard · canal bridge · canal customs) — probados con audio limpio",
+      "Clipboard yard + setup VHF station bridge + planilla yard + libreta operativa",
+      "Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 (permanentes)",
+      "Escala Estimación E4 PM-4.1 — 26 copias (25 aprendices + 1 ampliada A3 plenaria)",
+      "Cue cards 3 escenarios Berthing (E1 routine · E2 wind alert · E3 customs delay) — 27 cards + respaldo",
+      "PM-2.10 Grammar Toolbelt handout Gr 11 + Gr 12 + Gr 13 (1 por aprendiz)",
+      "Marcadores ROJO (Gr 11) + AZUL (Gr 12) + MORADO (Gr 13) + VERDE/ROJO recast (4 colores)",
+      "Cronómetro grande visible 3:00 countdown (50pt+)",
+      "Celulares aprendices (BYOD · 1 por aprendiz · Voice Memos pre-instalada)",
+      "Sello físico del Capitán Restrepo + tinta azul (cierre ceremonial WRAP-UP)",
+      "Música instrumental marítima muy baja durante simulaciones (≤30dB)",
+      "2 instructores secundarios (rotando los 3 roles) — confirmar 48h antes vía email"
+    ],
+    "tiempo": {
+      "set_up": 30,
+      "while_a": 60,
+      "while_b": 60,
+      "break": 15,
+      "while_c": 90,
+      "while_d": 60,
+      "while_e": 30,
+      "wrap_up": 15,
+      "total_directo_min": 360,
+      "autonomo_min": 140,
+      "autonomo_horas": 2.333333,
+      "total_aprendiz_horas": 8.333
+    },
+    "plan_b": "Si <50% asistencia día S8: ejecutar 2 escenarios (E1 + E2) en lugar de 3 · diferir E3 a S9 warm-up. Si proyector/audio fallan: cronómetro físico de mano + ambient music desde celular instructor con parlante portátil. Si 3 walkie-talkies fallan: voz directa cara a cara con micrófonos de cartón + 1 walkie-talkie respaldo para Captain Lopera VHF. Si app VHF móvil falla: 2 walkie-talkies físicos + 1 voz directa. Si 2 instructores secundarios no disponibles: 2 aprendices voluntarios pre-briefed 5 min antes de SET-UP (cue cards simplificadas 1-línea-por-turno). Si una pareja no logra completar 3 min en E1: bajar a 2 min con cue card simplificada (1 outcome forzado · sin decisión propia) · diferir grabación al siguiente intento como 're-take' sin penalización afectiva. Si energía baja post-break: agregar 5 min icebreaker físico (movimiento + risa) entre WHILE B y WHILE C · NO comprometer WHILE C tiempo (90 min crítico para E4). Si grabación celular falla: instructor tiene celular adicional grabando como respaldo · evidencia E4 válida sin grabación si los 5 criterios se observan en vivo."
+  },
+  "totals_check": {
+    "set_up": 30,
+    "while_bloque_a": 60,
+    "while_bloque_b": 60,
+    "break": 15,
+    "while_bloque_c": 90,
+    "while_bloque_d": 60,
+    "while_bloque_e": 30,
+    "wrap_up": 15,
+    "total_min": 360,
+    "check_result": "EXACTO 360 min directos (6h) + 140 min autónomo (≈2.33h) = 500 min totales = 8.33h aprendiz S8. Coherente con header.duracion_sesion_min de pm-3-1 sessions[7] + horas autónomas pm-2-0 sessions[7]. Suma exacta: SET-UP 30 + WHILE A 60 + WHILE B 60 + BREAK 15 + WHILE C 90 + WHILE D 60 + WHILE E 30 + WRAP-UP 15 = 360 min ✓"
+  },
+  "rap_status": "S8 completada (preliminary · pendiente Gate Humano 3) — Cierre Bloque Interno 3 (RAP-03 · A2.0). Berthing Coordination Tripartite × 3 escenarios producida + grabada + Escala E4 firmada con sello Capitán Restrepo (5 pts evidencia formal). Gr 11 presente perfecto + Gr 12 condicional 1 productivos. Gr 13 voz pasiva receptiva reconocida (producción diferida a S10/S11). Aplica intensiva Gr 6+10 modales + presente continuo (reciclaje S7). 5 nuevas palabras Maritime Word Wall agregadas (BOARDed · inSPECTed · seCURED · apPROACHing · MOORing). Self-recording celular activado para self-feedback autónomo. Asignación autónoma: Berthing Memo 1 página + Post-Turn Report draft (incident analysis · 2.33h). Bridge productivo a S9 Role Carousel 5 master functions + 6 conectores. EVIDENCIA E4 (5 pts) capturada per pm-3-1.overview_table[7].evidencia.",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[7]",
+    "__contract_version__": "v2.5.1 (mapping per pm-3-1.pm_3_2_propagation_contract)",
+    "fpi_block": "3.3 Apropiación — Output integrado",
+    "grammar_groups": {
+      "intro": [
+        {
+          "group_id": "Gr 11",
+          "group_name": "Presente perfecto (The pilot has boarded)",
+          "nivel_activacion": "Intro productivo",
+          "ejemplo_en_sesion": "Andrea: 'The pilot HAS BOARDED. Customs HAS INSPECTED the cargo. The vessel HAS SECURED.' (producción obligatoria mínimo 1 por escenario WHILE C · 3 escenarios = 3 instancias mínimas por aprendiz)"
+        },
+        {
+          "group_id": "Gr 12",
+          "group_name": "Condicional tipo 1 (If wind drops, we will berth)",
+          "nivel_activacion": "Intro productivo",
+          "ejemplo_en_sesion": "Andrea: 'IF the wind drops, we WILL berth on time. IF the customs delay, we WILL reschedule.' (producción forzada en E2 wind alert + E3 customs delay · al menos 1-2 instancias por escenario)"
+        },
+        {
+          "group_id": "Gr 13",
+          "group_name": "Voz pasiva presente (The cargo is inspected by customs)",
+          "nivel_activacion": "Intro receptivo (producción diferida)",
+          "ejemplo_en_sesion": "Cue cards + handout WHILE A sección C: 'The cargo IS INSPECTED BY customs. The lines ARE SECURED BY the deckhand.' Aprendiz reconoce con MARKER MORADO · NO produce activamente. Producción difiere a S10/S11."
+        }
+      ],
+      "consolida": [],
+      "aplica": [
+        {
+          "group_id": "Gr 6+10",
+          "group_name": "Modales (should/could/might/must) + presente continuo (S7 reciclaje aplicado)",
+          "nivel_activacion": "Aplica intensiva",
+          "ejemplo_en_sesion": "Aplicación intensiva en simulación tripartita WHILE C: 'You SHOULD approach starboard. We COULD request more lines. The wind MIGHT drop in 30 minutes. We MUST wait for the pilot.' + WHILE E drill contrastivo + prompt card libre. WHILE B demo + ensayo tríos."
+        }
+      ],
+      "carga_check": "2/2 Intro productivo (Gr 11 + Gr 12) + 1 Intro receptivo (Gr 13 · sin producción obligatoria) + 1 Aplica (Gr 6+10) — VIOLA carga estricta similar a S7 · gestionado vía 'Intro receptivo' (Gr 13 voz pasiva sin producción · diferida a S10/S11). Documentado en pm-3-1.pm0_alignment_by_session[7]._grammar_carga_violation_note.",
+      "_grammar_carga_violation_note": "S8 introduce 3 nuevos grupos. Decisión Outline: Gr 11 + Gr 12 con producción obligatoria; Gr 13 voz pasiva como Intro receptivo (aprendiz reconoce con MARKER MORADO en WHILE A sección C pero no produce activamente — producción difiere a S10/S11). Build-Out PM-3.2 materializa esta gestión: handout WHILE A sección C + cue cards WHILE B/C + recast plenaria WHILE D · sin exigir producción Gr 13."
+    },
+    "feedback": {
+      "mode": "FLUENCY",
+      "rationale": "S8 es producción tripartita real — aprendiz coordina 3 actores simultáneamente. Accuracy diferida (post-task vía Escala E4 + recast plenaria WHILE D + self-feedback con grabaciones). PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_3 (fluency dominante).",
+      "accuracy_techniques": [
+        "Recast plenaria post-task en WHILE D con 7 muestras representativas (3 verde + 4 rojo) · LIVE ZONE colectiva",
+        "Stress crítico participio pasado en SET-UP + WHILE E drill (BOARDed vs BOARD)",
+        "Drilling contrastivo modales SHOULD/COULD/MIGHT/MUST en WHILE E + contracciones WILL (we'll · they'll)"
+      ],
+      "fluency_techniques": [
+        "Fluency dominante: feedback diferido vía rúbrica E4 escrita en TIEMPO REAL durante WHILE C sin comunicar nota hasta WHILE D",
+        "Recovery scaffolding: si aprendiz se bloquea totalmente · instructor (Captain Lopera) modela 1 frase + aprendiz repite + reinicia cronómetro",
+        "Peer feedback en rotaciones WHILE B (los 3 actores observan al líder · sin corregir · solo modelan si bloqueo)",
+        "Self-recording celular obligatorio en WHILE C para post-task auto-análisis individual + WHILE D self-feedback con audífonos"
+      ],
+      "mixed_techniques": [
+        "Calibración auto vs instructor en Escala E4 WHILE D — comparación de criterios + 1 oración reflexiva escrita",
+        "Voto colectivo verde/rojo en plenaria WHILE D — clase calibra qué es A2.0 listo vs a recast",
+        "WHILE A producción modelada Gr 11 + Gr 12 con cross-check parejas (accuracy controlada antes de fluency en WHILE C)"
+      ],
+      "notes": "S8 transita de accuracy controlada (WHILE A) → fluency dominante (WHILE C evidencia E4) → accuracy diferida via recast colectivo (WHILE D) → drill rítmico (WHILE E bridge). El feedback NO interrumpe flow productivo en WHILE C — solo se comunica en WHILE D."
+    },
+    "l1_management": {
+      "l1_percentage": 3,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_3.S8 — ≤ 3% (PM-0 §9.1)",
+      "l1_rationale": "L1 mínimo — sólo emergencias comunicativas durante simulación tripartita (si el aprendiz se bloquea totalmente). Producción 100% L2 esperado. El aprendiz LIDERA · no traduce. WHILE C grabación celular como testigo del compromiso L2.",
+      "english_zone_declaration": "Permanente activa desde S1. WHILE C es la sesión más exigente del Bloque Interno 3 — English Zone reforzada con cinta azul fresca + cronómetro visible.",
+      "l1_allowed_for": [
+        "Diego + Bosun Romero (los pares) responden con chunks básicos + L1 ocasional (es el rol — yard supervisors L1 español pidiendo confirmación)",
+        "Líder en emergencia comunicativa total (bloqueo · 'no me sale en inglés') · 1-2 oraciones L1 max · luego instructor modela frase clave en EN",
+        "WHILE B debrief de demo docente — preguntas afectivas en EN preferentemente · respuestas técnicas en EN si claro · L1 solo si concepto gramatical confuso",
+        "Self-feedback WHILE D — reflexión en silencio puede ser interna L1 · pero la oración escrita es EN"
+      ],
+      "reduction_strategy": "S8 → 3% L1 · S9 → 0% (cierre Bloque Interno 3 hacia 4 · L2 norma absoluta) · S10 → 5% (evaluación + retroalimentación) · S11-S12 → 5-10% (transferencia · ABP Misión Final) per pm-0-context.l1_percentage_per_session.single_guide_12_sessions"
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "boarded",
+          "ipa": "/ˈbɔːrdɪd/",
+          "tonica": "PRIMERA (BORD-ed) · sufijo -ed = /ɪd/ tras /d/"
+        },
+        {
+          "word": "inspected",
+          "ipa": "/ɪnˈspɛktɪd/",
+          "tonica": "SEGUNDA (in-SPECT-ed) · sufijo -ed = /ɪd/ tras /t/"
+        },
+        {
+          "word": "secured",
+          "ipa": "/sɪˈkjʊərd/",
+          "tonica": "SEGUNDA (se-CURED) · sufijo -ed = /d/ silente tras /r/"
+        },
+        {
+          "word": "if",
+          "ipa": "/ɪf/",
+          "tonica": "débil — átona en condicional Gr 12"
+        },
+        {
+          "word": "will",
+          "ipa": "/wɪl/",
+          "tonica": "débil — contrae con sujeto (we'll · they'll · it'll · I'll)"
+        },
+        {
+          "word": "approaching",
+          "ipa": "/əˈproʊtʃɪŋ/",
+          "tonica": "SEGUNDA (ap-PROACH-ing) · sufijo -ing NO cambia stress"
+        },
+        {
+          "word": "mooring",
+          "ipa": "/ˈmʊrɪŋ/",
+          "tonica": "PRIMERA (MOOR-ing) · sufijo -ing NO cambia stress"
+        }
+      ],
+      "techniques": [
+        "Stress contrastivo participio pasado vs forma simple (BOARD vs BORDed · CURE vs seCURED) en SET-UP drill",
+        "Drilling de contracciones condicional (we'll · they'll · it'll · I'll) en WHILE A plenaria + WHILE E drill",
+        "Choral drill de chunks operacionales: 'has boarded · is inspected · will berth · would have' en WHILE A + WHILE C grabación",
+        "Sufijo -ed con 3 sonidos contrastivos: /ɪd/ tras /t/ y /d/ (boarded · inspected) · /d/ tras vocales y consonantes sonoras (secured · approached) · /t/ tras consonantes sordas (worked · finished) — modelado en WHILE A"
+      ],
+      "board_marking": "Las 5 nuevas palabras quedan permanentes en Maritime Word Wall + GRAMMAR COLOR CODE columna lateral del tablero con stress en MAYÚSCULA + IPA en pequeño debajo. Foto Buenaventura asociada a cada palabra (BOARDed → foto del pilot subiendo · inSPECTed → foto customs · seCURED → foto deckhand con líneas).",
+      "notes": "S8 NO introduce nuevo SMCP ni NATO Phonetic — esos están consolidados desde S5/S6. S8 enfoca participio pasado + contracciones condicional + sufijos -ed/-ing.",
+      "source": "PM-0 §5.13 — Noticing de stress con soporte físico"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "boarded",
+        "inspected",
+        "secured",
+        "berth",
+        "anchorage",
+        "if",
+        "will",
+        "should",
+        "could",
+        "approaching"
+      ],
+      "factors_applied": [
+        "Use",
+        "Encounter",
+        "Self-expression",
+        "Synergy",
+        "Creativity"
+      ],
+      "operationalization": "Use: producción tripartita 3 min × 3 escenarios = 9 min activos por aprendiz · grabados en celular. Encounter: 3 escenarios distintos exigen recombinación + WHILE A producción modelada + WHILE B demo + WHILE C evidencia + WHILE D recast + WHILE E drill (≥6 encuentros del vocabulario target). Self-expression: cada aprendiz lidera SU simulación con decisiones propias en E2 wind alert (continuar o esperar) y E3 customs delay (reasignar canal o esperar). Synergy: integración total de Bloques 1+2+3 (vocab portuario S1-S2 + SMCP S5-S6 + gramática operativa S4-S7 + grammar nueva S8). Creativity: outcomes alternativos según decisiones del líder · cada simulación es única.",
+      "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS)"
+    },
+    "physical_environment": "Aula bilingüe en configuración 'isla central' — Andrea Mosquera (líder) en el centro con 3 canales de comunicación visibles · 3 estaciones físicas distribuidas alrededor (yard con Diego + clipboard · bridge con Bosun Romero + libreta · VHF station con Captain Lopera + setup bridge). Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 visibles permanentes. Maritime Word Wall lateral completo Bloques 1+2+3 con 5 nuevas tarjetas S8. Escala E4 ampliada A3 visible junto al cronómetro 3:00 countdown grande. English Zone permanente con cinta azul fresca. Música ambient marítima muy baja durante simulaciones para inmersión sensorial sin interferir con grabación celular. Tablero blanco con 4 zonas: E ZONE + Today's Objective + Grammar Color Code (ROJO Gr 11 · AZUL Gr 12 · MORADO Gr 13 · VERDE/AMARILLO Gr 6+10) + LIVE ZONE para recast plenaria WHILE D.",
+    "cefr_descriptor_focus": {
+      "subnivel": "A2.0",
+      "habilidad_principal": "produccion_oral + interaccion_oral",
+      "descriptor_activo": "Coordina operación tripartita simultánea. Expresa prohibición/permisión/posibilidad/pedidos con modales. Produce presente perfecto y condicional 1 en contexto operacional. Reconoce voz pasiva receptiva sin producir.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_3.produccion_oral"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Natural — el aprendiz controla su ritmo en WHILE C; Captain Lopera (instructor) responde con velocidad realista lingua franca B2 sin ralentizar salvo si líder pide 'Say again, Captain'",
+      "extension_textos": "Berthing Coordination 3 min × 3 escenarios = ~9 min producción activa por aprendiz · grabada · evaluada con E4 5 criterios",
+      "andamiaje": "Mínimo — sólo cue cards con escenarios + Word Wall completo Bloques 1+2+3 + GRAMMAR COLOR CODE visible · sin script · sin transcripción · sin frases pre-rellenadas (excepto modelo demo WHILE B)",
+      "rol_docente": "Facilitador (Captain Lopera role-play en VHF · velocidad B2) + Monitor (circulación silenciosa WHILE B/C · llenado E4 en tiempo real WHILE C) + Retroalimentador diferido (recast plenaria WHILE D + drill WHILE E + sello ceremonial WRAP-UP)",
+      "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_3"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A3 — Descriptores §6 produccion_oral A2.0 + interaccion_oral A2.0",
+        "B3 — Fluency dominante (WHILE C evidencia E4)",
+        "B6 — My Turn — liderazgo en simulación propia (3 escenarios × 3 min × cada aprendiz líder)",
+        "B7 — Autoevaluación post-Berthing (WHILE D Auto column en Escala E4 + 1 oración reflexiva)",
+        "C4 — Complejidad cognitiva L4 Analyze (decisiones tripartitas en E2 wind alert + E3 customs delay)",
+        "D3 — Criterio observable (Escala E4 5 criterios C1-C5 evaluables en TIEMPO REAL)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 6 más relevantes para S8 IMARPOR-CC (cierre Bloque Interno 3 · evidencia E4)."
+    }
+  },
+  "logistics_box": {
+    "momento_sena": "3.3 Apropiación — Output integrado",
+    "estrategia": "ABT + Simulación tripartita — Berthing Coordination con 3 actores (Diego + Bosun Romero + Captain Lopera)",
+    "justificacion": "S8 cierra el Bloque Interno 3 (RAP-03 · A2.0) con un salto cualitativo: de listening tripartito receptivo S7 (audio yard+bridge+customs) a producción oral tripartita activa donde Andrea LIDERA 3 actores simultáneos en 3 escenarios (routine berthing · wind alert · customs delay). La estrategia ABT + Simulación tripartita transforma familiaridad receptiva en liderazgo lingüístico operacional · forzando producción Gr 11 presente perfecto + Gr 12 condicional 1 con outcomes alternativos según decisiones propias. Feedback FLUENCY dominante con accuracy diferida vía Escala E4 5 criterios + self-recording. L1 ≤ 3% — sólo emergencias. Bridge productivo a S9 Role Carousel.",
+    "tecnicas": [
+      {
+        "bloque": "A",
+        "tecnica": "Inducción gramatical productiva con marcación cromática + chequeo cruzado en parejas + reconocimiento receptivo Gr 13 con distractores (PM-0 §5.13 noticing + §5.11 feedback recast suave)"
+      },
+      {
+        "bloque": "B",
+        "tecnica": "Modeling docente cronometrado + ensayo libre tripartito en tríos rotativos sin presión evaluativa + observación-recast diferida (PM-0 §5.11 + ABT scaffolded simulation)"
+      },
+      {
+        "bloque": "C",
+        "tecnica": "Simulación tripartita Berthing Coordination con 3 actores simultáneos + 3 escenarios cronometrados + auto-grabación celular + evaluación E4 en tiempo real con Escala 5 criterios + complicaciones operacionales (wind alert · customs delay) que fuerzan Gr 12 condicional 1 productivo (PM-0 §5.11 fluency dominante + ABT simulación profesional)"
+      },
+      {
+        "bloque": "D",
+        "tecnica": "Recast plenaria con voto colectivo verde/rojo + auto-feedback con grabaciones propias + calibración auto vs instructor en Escala E4 + reflexión escrita 1 oración (PM-0 §5.11 feedback diferido + autoevaluación post-task)"
+      },
+      {
+        "bloque": "E",
+        "tecnica": "Drilling contrastivo de modales con stress crítico + producción oral mínima en parejas con prompt card como bridge productivo a S9 Role Carousel (PM-0 §5.13 noticing + automatización chunks operacionales)"
+      }
+    ]
+  },
+  "while_a": {
+    "name": "Grammar Activation 3 Colores — Producción Modelada Gr 11 + Gr 12 + Gr 13 receptivo (PM-2.10)",
+    "duration_min": 60,
+    "tecnica_didactica": "Inducción gramatical productiva con marcación cromática + chequeo cruzado en parejas + reconocimiento receptivo Gr 13 con distractores (PM-0 §5.13 noticing + §5.11 feedback recast suave)",
+    "teacher_talk": "*Look at the board. Three colors. ROJO = has + boarded · AZUL = if + drops + will + berth · MORADO = is + inspected + by. Red and blue — produce. Purple — recognize only. Today's worksheet: section A 3 sentences red, section B 3 sentences blue, section C circle 3 purple in 8. 20 minutes silent. Then 12 minutes with your partner. Then we drill the contractions. Go.*",
+    "answer_key": {
+      "Gr_11_presente_perfecto_modelo": [
+        "Andrea HAS BOARDED the vessel at 06:15.",
+        "Captain Lopera HAS INSPECTED the bridge.",
+        "The bosun HAS SECURED the bow lines."
+      ],
+      "Gr_12_condicional_1_modelo": [
+        "IF the wind drops, we WILL berth on time.",
+        "IF customs delays, we WILL reschedule the operation.",
+        "IF Diego is ready, we WILL start the crane."
+      ],
+      "Gr_13_pasivas_reales_4_de_8": [
+        "The cargo IS INSPECTED BY customs.",
+        "The lines ARE SECURED BY the deckhand.",
+        "The vessel IS PILOTED BY Captain Lopera.",
+        "The yard IS COORDINATED BY Bosun Romero."
+      ]
+    }
+  },
+  "while_b": {
+    "name": "Cue Card Briefing + Modeling Berthing Coordination + Escenario 1 Ensayo Tríos (PM-2.8 Berthing segment)",
+    "duration_min": 60,
+    "tecnica_didactica": "Modeling docente cronometrado + ensayo libre tripartito en tríos rotativos sin presión evaluativa + observación-recast diferida (PM-0 §5.11 + ABT scaffolded simulation)",
+    "teacher_talk": "*Three scenarios on the screen. Routine. Wind. Customs. We watch a demo first — 3 minutes, real time. No cue card for you yet. Just listen, just watch. Then debrief — what grammar, what words, what dynamics. Then I give you Cue Card Scenario 1. In trios, you rotate the 3 roles. 25 minutes free practice. No recording. No grade. Just feel the rhythm.*",
+    "answer_key": {
+      "demo_chunks_esperados_LIVE_ZONE": [
+        "'Berth 4, this is Andrea — vessel approaching, ETA 15 minutes' (Gr 10 presente continuo · apertura formal)",
+        "'Captain Lopera, the pilot HAS BOARDED — confirm starboard approach' (Gr 11 presente perfecto · líder confirma)",
+        "'Diego, are containers ready?' / 'Yes, ready in 5' (chunk operativo Sub-bloque 3)",
+        "'Bosun Romero, secure bow lines first' (imperativo Gr 5 reciclaje S4)",
+        "'IF the wind holds, we WILL complete berthing in 15 min' (Gr 12 condicional 1 · líder anticipa)",
+        "'Roger, Andrea. Captain Lopera standing by' (SMCP reciclaje S5/S6 · Captain confirma)",
+        "'Operation complete. The vessel HAS SECURED. Out.' (Gr 11 cierre formal)"
+      ],
+      "ensayo_trios_patrones_observables": "Patrón positivo esperado: cada tríos completa 3 rotaciones · Gr 11 emerge en 60-70% líderes · Gr 12 en 40-50% · code-switching ≤3 veces por tríos. Patrón a recast plenaria: confusión has/have · stress BOARD-ed mal pronunciado · WILL sin contracción."
+    }
+  },
+  "while_c": {
+    "name": "Berthing Coordination TRIPARTITE — 3 Escenarios × 3 min × Cada Aprendiz Líder + Grabación + Escala E4 (PM-2.8)",
+    "duration_min": 90,
+    "tecnica_didactica": "Simulación tripartita Berthing Coordination con 3 actores simultáneos + 3 escenarios cronometrados + auto-grabación celular + evaluación E4 en tiempo real con Escala 5 criterios + complicaciones operacionales (wind alert · customs delay) que fuerzan Gr 12 condicional 1 productivo (PM-0 §5.11 fluency dominante + ABT simulación profesional)",
+    "teacher_talk": "*Three scenarios. Three minutes each. Recorder on before you say 'Andrea, Berth 4, ready'. After 'over' — recorder off. Diego and Bosun Romero — you respond, you don't lead. Captain Lopera — that's me on the VHF, real speed, real pushback. Scenario 1 routine. Scenario 2 wind hits at 90 seconds. Scenario 3 customs delays at 60 seconds. You decide. You lead. The recorder remembers.*",
+    "answer_key": {
+      "ESCENARIO_1_routine_berthing_modelo_3min": "Andrea: 'Berth 4, this is Andrea — BUENAVENTURA EXPRESS approaching. ETA 15 min. Over.' Captain Lopera: 'Roger Andrea. Pilot has boarded. Wind 10 knots. Standby.' Andrea: 'Diego, are containers ready?' Diego: 'Sí, ready in 5.' Andrea: 'Bosun Romero, secure bow lines first.' Bosun: 'Copiado, bow lines first.' Andrea: 'Captain Lopera, the pilot HAS BOARDED. IF the wind holds, we WILL complete berthing in 15 min. Confirm starboard approach.' Captain: 'Confirmed starboard. Pilot on bridge. Standby.' Andrea: 'Diego, crane ready?' Diego: 'Crane ready.' Andrea: 'Operation complete. The vessel HAS SECURED. Out.'",
+      "ESCENARIO_2_wind_alert_decision_modelo": "Líder al min 1:30 (instructor anuncia 'Wind 25 knots'): 'Wind has increased to 25 knots. IF the wind continues, we WILL delay berthing 30 min. Captain Lopera, request: pause approach. Diego, hold the crane. Bosun Romero, secure mooring lines anyway — wind might drop.' [Gr 11: 1 + Gr 12: 2 + decisión propia]",
+      "ESCENARIO_3_customs_delay_decision_modelo": "Líder al min 1:00 (instructor anuncia 'Customs delayed 30 min'): 'Customs has delayed 30 min. IF customs delays, we WILL reschedule the cargo inspection. Captain Lopera, request: continue berthing without customs clearance — cargo will be inspected at berth. Diego, prepare yard for delayed unload. Bosun Romero, secure all lines now.' [Gr 11: 1 + Gr 12: 1 + decisión propia]",
+      "Escala_E4_5_criterios_PM_4_1": [
+        "C1 — Initiates and leads operation (1 pt)",
+        "C2 — Uses Gr 11/12 productively (1 pt)",
+        "C3 — Coordinates 3 actors clearly (1 pt)",
+        "C4 — Pronunciation intelligible (1 pt)",
+        "C5 — Maritime vocabulary accurate (1 pt)"
+      ]
+    }
+  },
+  "while_d": {
+    "name": "Recast Plenaria — 7 Muestras Representativas + Self-feedback Listening + Auto-evaluación E4",
+    "duration_min": 60,
+    "tecnica_didactica": "Recast plenaria con voto colectivo verde/rojo + auto-feedback con grabaciones propias + calibración auto vs instructor en Escala E4 + reflexión escrita 1 oración (PM-0 §5.11 feedback diferido + autoevaluación post-task)",
+    "teacher_talk": "*Seven samples. Three voices we celebrate green. Four voices we recast red — together, kindly. Vote with your hand. We write the correction in green. Then — your turn. Headphones on, listen to YOUR three recordings. Mark your own Escala E4 — auto column. Compare with my version. One sentence at the bottom: where did we agree? where did we differ? what will you improve before Session 9?*",
+    "answer_key": {
+      "7_muestras_esperadas_distribucion": "3 verde (Gr 11+Gr 12 productivos correctos · stress BOARDed limpio · contracción we'll · 5+ términos Sub-bloque 3) + 4 rojo (1 subject-verb agreement 'I has → I have' · 1 stress 'boarDED → BOARDed' · 1 WILL sin contracción 'we will → we'll' · 1 confusión Gr 13 'is approaching by → is INSPECTED by')",
+      "patron_calibracion_auto_vs_instructor": "Acuerdo esperado: 60-70% en C1+C2 · 70-80% en C3+C5 · 50-60% en C4. Discrepancia >2 pts señal de coaching individual S9.",
+      "1_oracion_reflexiva_modelo": "'I agreed with the instructor on C2 (Gr 11/12 productive) but disagreed on C4 (pronunciation). I will improve stress on participle endings before Session 9.'"
+    }
+  },
+  "while_e": {
+    "name": "Bridge Drill — Modal + Conditional Contrastivo + Prompt Card Libre rumbo a S9 (PM-2.10 Gr 6 + Gr 12)",
+    "duration_min": 30,
+    "tecnica_didactica": "Drilling contrastivo de modales con stress crítico + producción oral mínima en parejas con prompt card como bridge productivo a S9 Role Carousel (PM-0 §5.13 noticing + automatización chunks operacionales)",
+    "teacher_talk": "*Drill with me — fast, sharp. Should · could · might · must. If drops, will berth. If holds, could continue. If rises, might delay. If delays, must reschedule. Then — prompt card. Your question. Your partner asks, you answer 2 sentences — one modal, one conditional. Then 3 brave voices share with the class. Bridge to Session 9 — the Role Carousel.*",
+    "answer_key": {
+      "drill_modal_conditional_modelo": [
+        "*What WILL you do if customs delays?* → 'I COULD reassign the channel. IF customs delays more than 30 min, we WILL reschedule.'",
+        "*What SHOULD you do if the wind rises?* → 'We SHOULD pause approach. IF the wind reaches 25 knots, we MUST hold position.'",
+        "*What MIGHT happen if Diego is not ready?* → 'The crane MIGHT delay 10 min. IF Diego is not ready in 5 min, we COULD start manual securing.'"
+      ],
+      "stress_critico_drill": "SHOULD /ʃʊd/ débil · COULD /kʊd/ débil · MIGHT /maɪt/ fuerte · MUST /mʌst/ fuerte · WILL contraído /əl/ (we'll · they'll · it'll) · IF /ɪf/ átona en condicional"
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    },
+    "downstream_consumers": [
+      "PM-3.3 Canva Slides — referencias a Grammar Color Code poster (ROJO Gr 11 + AZUL Gr 12 + MORADO Gr 13) + 3 Escenarios cue cards visuales + Escala E4 PM-4.1 ampliada A3 + cronómetro 3:00 countdown grande",
+      "PM-3.4 Workbook — Berthing Coordination Memo Chapter 8 + Post-Turn Report draft template + Self-Reflection Journal S8",
+      "PM-3.6 Activity Logistics — A8.1.1 to A8.1.5 IDs derivados de WHILE A-E (mapping a tríos rotativos · simulación tripartita · evidencia E4 capturada)",
+      "PM-2.11 Check 14 — validación propagación estrategia_didactica + tecnicas[] + pm0_protocol cross-ref (3 grammar groups Intro: Gr 11 productivo + Gr 12 productivo + Gr 13 receptivo · L1 3% · stress focus 7 palabras + 4 modales + 5 contracciones · evidencia E4 5 pts capturada)",
+      "PM-3.2 S9 Build-Out — heredera del cierre Bloque Interno 3 (Gr 11+12 productivos consolidados · Gr 13 receptivo reconocido · 5 master functions IMARPOR + 6 conectores Role Carousel) → bridge productivo a Bloque Interno 4 transición (cierre A2.0 · apertura A2.1)",
+      "PM-4.1 Escala Estimación E4 — capturada en TIEMPO REAL durante WHILE C · sello del Capitán Restrepo en WRAP-UP · evidencia formal de Speaking Berthing segment final · 5 pts contribuyentes a calificación Bloque Interno 3"
+    ]
+  }
+}

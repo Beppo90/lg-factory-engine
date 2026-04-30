@@ -1,0 +1,1126 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.5",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
+  "session": 12,
+  "session_name": "The Port Professional — CML Port Turnaround Mission",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide": "G1 — The Maritime Operations Pro",
+  "guia_numero": 1,
+  "programa": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo": "12340002",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-3.5 (fases 3-5 ABP)"
+  ],
+  "habilidades_foco": [
+    "Speaking (S●) — Pitch profesional 3 min + Q&A panel + simulación CML 3h con tag questions producción activa"
+  ],
+  "habilidades_soporte": [
+    "Writing (W○) — actualización Berthing Memo + Radio Log + Post-Turn Report en archivo final",
+    "Vocabulary (V○) — integración 25 términos Toolbelt + 30+ SMCP + NATO completo en uso real",
+    "Grammar (G○) — 17 grupos en aplicación libre integrada (foco Gr 16 tag questions + Gr 13 ext voz pasiva pasada)",
+    "Reading (R○) — relectura del briefing CML CARRIER + Berthing Memo en plenaria de cierre",
+    "Listening (L○) — comprensión panel Q&A (Capitán Restrepo + agente naviero externo)"
+  ],
+  "cefr": "A2.1 (umbral hacia B1.0 · nivel máximo del curso 100h alcanzado)",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-29",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "preliminary",
+  "_status_preliminary_rationale": "Build-Out generado por subagente creativo PM-3.2 · Gate Humano 3 (aprobación Playbook) pendiente · Sergio confirma cambiando a 'completed' tras revisión de coherencia con PM-3.5 (fases 3-5 ABP) + pm-3-1 overview_table[11] + pm0_alignment_by_session[11] + reapertura Maritime Learning Contract sellado en S1.",
+  "momento_sena": "3.4 Transferencia (Cierre · Misión Final delivery)",
+  "estrategia_didactica": "ABP — Fase ejecutiva CML Port Turnaround + presentación + evaluación reflexiva",
+  "justificacion_didactica": "S12 ES la sesión de cierre del curso 100h IMARPOR-CC — la Misión Final integra todo lo aprendido en una simulación operacional condensada de 3h: VHF intake con Captain Lopera (S5-S6 SMCP + NATO) + Berthing tripartito Diego/Bosun Romero/Captain Lopera (S7-S8 modales + condicional + presente perfecto + voz pasiva) + Pitch profesional 3 min ante panel Capitán Restrepo + agente naviero externo (S9 5 master functions + S11 occupational structures + Gr 16 tag questions producción activa) + Q&A con tag questions + reflexión metacognitiva 'What I see now that I did not see on Day 1' que reabre el sobre amarillo del Maritime Learning Contract sellado en S1. L1 = 0% (100% L2 · cierre del curso · sólo reflexión metacognitiva final permite L1 personal post-evaluación). Andamiaje = CERO (sólo SMCP/NATO Reference Cards + cronómetro + rúbrica entregada al panel). Rol docente: Evaluador externo (simula agente naviero) + cerrador del curso (entrega certificado simbólico Port Operations Trainee). E-Misión 5 pts evaluada con Rúbrica ABP 6 criterios C01-C13 SOFÍA. Cierre con reapertura del contrato firmado el Día 1 — el aprendiz lee sus 3 prioridades S1 y comprueba evidencia en su portafolio.",
+  "session_header": {
+    "titulo": "SESSION 12: The Port Professional — CML Port Turnaround Mission",
+    "subtitulo": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Build-Out — Playbook v2.5 · LAST · MISIÓN FINAL CIERRE",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-3.5 — Misión Final ABP fases 3-5: Desempeño + Presentación + Evaluación Reflexiva (CML CARRIER 12h condensada a 3h operacional + Pitch 3 min + Q&A 10 min + reflexión metacognitiva final)"
+    ],
+    "habilidades_foco": [
+      "Speaking (S●) — Pitch profesional 3 min + Q&A panel + simulación CML 3h con tag questions producción activa"
+    ],
+    "habilidades_soporte": [
+      "Writing (W○) — actualización Berthing Memo + Radio Log + Post-Turn Report en archivo final",
+      "Vocabulary (V○) — integración 25 términos Toolbelt + 30+ SMCP + NATO completo en uso real",
+      "Grammar (G○) — 17 grupos en aplicación libre integrada (foco Gr 16 tag questions + Gr 13 ext voz pasiva pasada)",
+      "Reading (R○) — relectura del briefing CML CARRIER + Berthing Memo en plenaria de cierre",
+      "Listening (L○) — comprensión panel Q&A (Capitán Restrepo + agente naviero externo)"
+    ],
+    "objetivos_pedagogicos": [
+      "(1) Ejecutar simulación CML Port Turnaround condensada 3h en 3 zonas operacionales (VHF station + yard simulado + bridge simulado).",
+      "(2) Presentar Pitch profesional 3 min ante panel evaluador (Capitán Restrepo + agente naviero externo) usando 5 master functions IMARPOR + occupational structures + Gr 16 tag questions producción activa.",
+      "(3) Responder Q&A 10 min con tag questions (You're the supervisor, aren't you?) + voz pasiva pasada (The cargo was inspected at 14:00).",
+      "(4) Reflexionar metacognitivamente con prompt 'What I see now that I did not see on Day 1' — reapertura del sobre amarillo Maritime Learning Contract sellado en S1.",
+      "(5) Recibir feedback diferido del panel vía rúbrica E-Misión 6 criterios C01-C13 SOFÍA + autoevaluación + peer feedback (3 estrellas + 1 deseo).",
+      "(6) Cerrar el curso 100h con entrega de certificado simbólico Port Operations Trainee + foto grupal en el 'CML Port Turnaround Mission Room'."
+    ],
+    "plan_b": "Si panel agente naviero externo no asiste: Capitán Restrepo + instructor cubren rol dual (Capitán + naviero) con cambio físico de silla + cambio de tono. Si walkie-talkies fallan: usar app móvil VHF simulator (probada S6+S8) o teléfonos celulares en altavoz. Si <60% asistencia día 12: ejecutar Misión en formato reducido 90 min + Pitch 2 min · NO comprometer la reapertura del sobre amarillo · NO comprometer el certificado simbólico · NO comprometer la reflexión metacognitiva final. Si energía baja al inicio: 3 min ceremonia inicio con Capitán Restrepo entrando al aula vestido con uniforme portuario + saludo militar al panel (energía emocional alta).",
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk 100% L2 (cierre del curso · sólo reflexión metacognitiva final permite L1 personal). Duración suma exacta 360 min directos + 140 min autónomo (≈2.33h portafolio final). Ceremonia de cierre SOLEMNE — la reapertura del sobre amarillo es momento simbólico crítico · NO apresure. Certificado simbólico Port Operations Trainee es regalo emocional (impreso A4 en papel de calidad · firma del instructor + sello SENA). Foto grupal opcional pero recomendada (recuerdo del curso 100h)."
+  },
+  "materials_checklist": [
+    {
+      "item": "Misión Final CML CARRIER kit completo (briefing detallado · cue cards 3 zonas · timeline 12h condensada a 3h · Berthing Memo aprendiz + Radio Log aprendiz + Post-Turn Report draft S11)",
+      "cantidad": "1 set por aprendiz (estimado 25 sets) + 3 sets de respaldo · briefing entregado S10 · llevado por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Walkie-talkies simulando VHF (6-8 sets · 1 por aprendiz turno) o app móvil VHF simulator probada",
+      "cantidad": "6-8 walkie-talkies o 25 instalaciones de app",
+      "verificado": false
+    },
+    {
+      "item": "Rúbrica E-Misión 6 criterios C01-C13 SOFÍA × ≈1 pt cada criterio · entregada al panel jurado (Capitán Restrepo + agente naviero externo)",
+      "cantidad": "3 copias rúbrica (panel + instructor backup)",
+      "verificado": false
+    },
+    {
+      "item": "Reflexión metacognitiva handout 'What I see now that I did not see on Day 1' — 4 prompts guiados",
+      "cantidad": "1 por aprendiz (25 copias)",
+      "verificado": false
+    },
+    {
+      "item": "Certificado simbólico Port Operations Trainee · papel A4 calidad · firma instructor + sello SENA + nombre aprendiz pre-impreso",
+      "cantidad": "1 por aprendiz (25 certificados)",
+      "verificado": false
+    },
+    {
+      "item": "Sobres amarillos sellados con Maritime Learning Contract (firmado en S1 · guardados 11 sesiones por instructor en caja visible)",
+      "cantidad": "1 por aprendiz (25 sobres)",
+      "verificado": false
+    },
+    {
+      "item": "Cronómetro proyectable visible para Misión 3h + Pitch 3 min + Q&A 10 min",
+      "cantidad": "1 cronómetro digital + backup celular",
+      "verificado": false
+    },
+    {
+      "item": "SMCP Reference Card laminada (entregada S5 · permanente) + NATO Phonetic Alphabet Reference Card (entregada S5 · permanente)",
+      "cantidad": "1 set por aprendiz (los aprendices traen las suyas)",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Word Wall completo (25 términos Toolbelt + 30+ SMCP key phrases + NATO completo · acumulado S2-S11)",
+      "cantidad": "1 instalación pared lateral",
+      "verificado": false
+    },
+    {
+      "item": "Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 (permanentes desde S1)",
+      "cantidad": "1 instalación muros frontal y lateral",
+      "verificado": false
+    },
+    {
+      "item": "Radio scanner ambiente (opcional · sonidos de puerto reales para inmersión sensorial Misión 3h)",
+      "cantidad": "1 radio scanner o playlist sonidos puerto",
+      "verificado": false
+    },
+    {
+      "item": "Micrófono para Pitch 3 min (presentación formal ante panel)",
+      "cantidad": "1 micrófono inalámbrico + amplificador",
+      "verificado": false
+    },
+    {
+      "item": "Cámara o tablet para grabar audio Pitch + reflexión final (archivo portafolio aprendiz)",
+      "cantidad": "1 cámara + 25 tarjetas SD/storage cloud",
+      "verificado": false
+    },
+    {
+      "item": "Música marítima ceremonial muy baja para reapertura del sobre amarillo + entrega certificado",
+      "cantidad": "1 playlist seleccionada",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO dividido en 4 zonas para CIERRE: (1) ESQUINA SUPERIOR DERECHA — ENGLISH ZONE 🔵 (declarada S1 · ahora ceremonialmente activa por última vez · 0% L1). (2) CENTRO — Title 'IMARPOR-CC · S12 LAST · The Port Professional — CML Port Turnaround Mission'. (3) COLUMNA LATERAL IZQUIERDA — TAG QUESTIONS CHEAT SHEET resumen (You're the supervisor, aren't you? · The cargo was inspected, wasn't it? · The pilot boarded at 06:00, didn't he? · We can proceed, can't we?) + 5 OCCUPATIONAL STRUCTURES (responsible for · specialize in · coordinate · supervise · report to). (4) ESPACIO INFERIOR LIVE ZONE — vacío al inicio · se llena durante la sesión con: notas del panel evaluador · 3 estrellas + 1 deseo peer feedback · frases emergentes del Pitch + Q&A · al final de S12 las 3 prioridades del Maritime Learning Contract S1 reabiertas (escritas en cinta amarilla pegada al tablero). Maritime Word Wall lateral COMPLETO (25 términos + SMCP + NATO acumulado S2-S11) — última sesión · se fotografía como cierre. Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 permanecen. Al final de S12: tablero queda con Live Zone llena de evidencia del cierre + reflexión final + foto grupal pegada simbólicamente.",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:30",
+      "duracion_min": 30,
+      "bloque": "SET-UP",
+      "actividad": "Welcome cierre + reapertura simbólica del Maritime Word Wall completo (25 términos · S2-S11) + entrega rúbrica E-Misión al panel + briefing final 5 min + ICQ + ensayo express Pitch en parejas (5 min)",
+      "agrupacion": "Plenaria → Parejas",
+      "notas": "Energía ceremonial. Capitán Restrepo entra con uniforme portuario + saludo. Panel evaluador presentado formalmente. L1 = 0% (sólo reflexión metacognitiva final permite L1)."
+    },
+    {
+      "tiempo": "0:30-1:30",
+      "duracion_min": 60,
+      "bloque": "WHILE A (Misión Fase 1)",
+      "actividad": "PM-3.5 Fase 3 ABP — VHF Intake con Captain Lopera (90s VHF call entrante · Andrea responde con SMCP + NATO spelling) · 25 aprendices en turnos de 2 min cada uno · grabados en walkie-talkie/app",
+      "agrupacion": "Individual turno (cronómetro visible)",
+      "notas": "Primera fase Misión 3h. SMCP literacy crítica (Roger · Wilco · Affirmative · Standby · Over). NATO spelling de call sign obligatorio. Panel observa silenciosamente."
+    },
+    {
+      "tiempo": "1:30-2:30",
+      "duracion_min": 60,
+      "bloque": "WHILE B (Misión Fase 2)",
+      "actividad": "PM-3.5 Fase 3 ABP cont — Berthing Coordination tripartito (Andrea ↔ Diego crane + Bosun Romero yard + Captain Lopera VHF) · 25 aprendices en turnos de 2 min · 3 estaciones simultáneas con instructor + Capitán Restrepo + agente naviero observando rotativamente",
+      "agrupacion": "Individual turno con 3 actores (Diego/Bosun/Captain interpretados por instructor + 2 voluntarios advanced)",
+      "notas": "Modales should/could/might + condicional 1 + presente perfecto + voz pasiva presente. Stress focus en tag questions confirmation. Cronómetro visible."
+    },
+    {
+      "tiempo": "2:30-2:45",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "Receso activo (café + baño + estiramiento) + ensayo individual silencioso del Pitch 3 min frente al espejo del baño (auto-stress-checking)",
+      "agrupacion": "—",
+      "notas": "Hidratación. English Zone se relaja durante break. Aprendices repasan cue cards Pitch. Panel descansa en sala separada."
+    },
+    {
+      "tiempo": "2:45-3:45",
+      "duracion_min": 60,
+      "bloque": "WHILE C (Misión Fase 3)",
+      "actividad": "PM-3.5 Fase 3 ABP cont — Post-Turn Report oral 90s por aprendiz (Andrea reporta a Capitán Restrepo · usa voz pasiva pasada + condicional 1 + tag questions + occupational structures) · 25 aprendices turnos · panel toma notas en rúbrica",
+      "agrupacion": "Individual turno frente a panel evaluador",
+      "notas": "Cierre simulación operacional. Foco Gr 13 ext voz pasiva pasada (The cargo was inspected at 14:00 · The lines were secured by the deckhand). Audio grabado para portafolio."
+    },
+    {
+      "tiempo": "3:45-4:45",
+      "duracion_min": 60,
+      "bloque": "WHILE D (Pitch Profesional)",
+      "actividad": "PM-3.5 Fase 4 ABP — Pitch Profesional 3 min ante panel Capitán Restrepo + agente naviero externo · 25 aprendices turnos cronometrados · 5 master functions IMARPOR + occupational structures + Gr 16 tag questions producción activa · grabado para portafolio aprendiz",
+      "agrupacion": "Individual frente a panel · audiencia compañeros silencio",
+      "notas": "Momento clímax de la guía. Stress en producción activa tag questions (You're asking about wind conditions, aren't you?). Aplauso entre cada Pitch. Panel feedback diferido vía rúbrica."
+    },
+    {
+      "tiempo": "4:45-5:15",
+      "duracion_min": 30,
+      "bloque": "WHILE E (Q&A Panel)",
+      "actividad": "PM-3.5 Fase 4 cont — Q&A 10 min por aprendiz x rotación rápida · panel hace 2 preguntas con tag questions · aprendiz responde con producción activa · peer feedback (3 estrellas + 1 deseo) inmediato post-Q&A en parejas",
+      "agrupacion": "Individual con panel + parejas peer feedback",
+      "notas": "Producción activa Gr 16 + Gr 13 ext. Peer feedback en cinta cromática (3 estrellas verdes + 1 deseo amarillo). Cronómetro estricto."
+    },
+    {
+      "tiempo": "5:15-5:45",
+      "duracion_min": 30,
+      "bloque": "WHILE F (Reflexión Metacognitiva)",
+      "actividad": "PM-3.5 Fase 5 ABP — Reflexión metacognitiva final 'What I see now that I did not see on Day 1' · 4 prompts guiados · individual silencio + reapertura del sobre amarillo Maritime Learning Contract S1 (cada aprendiz lee sus 3 prioridades S1 y verifica evidencia en portafolio S2-S11)",
+      "agrupacion": "Individual silencio · ceremonia colectiva reapertura sobre",
+      "notas": "Momento simbólico CRÍTICO. Música marítima ceremonial muy baja. L1 PERMITIDO en este momento (apartado personal post-evaluación). Sin evaluación · solo testigo del crecimiento."
+    },
+    {
+      "tiempo": "5:45-6:00",
+      "duracion_min": 15,
+      "bloque": "WRAP-UP",
+      "actividad": "Cierre del curso 100h IMARPOR-CC · entrega certificado simbólico Port Operations Trainee por Capitán Restrepo · agradecimientos panel · foto grupal · Teacher Talk closing + autoevaluación rúbrica E-Misión + asignación final autónoma (portafolio personal)",
+      "agrupacion": "Plenaria ceremonial",
+      "notas": "Energía positiva. Aplauso grupal. Foto grupal opcional. Certificado por nombre. Cierre solemne pero celebratorio. Asignar portafolio personal con Misión Final completa."
+    }
+  ],
+  "habilidades_foco": [
+    "Speaking (S●) — Pitch profesional 3 min + Q&A panel + simulación CML 3h con tag questions producción activa"
+  ],
+  "habilidades_soporte": [
+    "Writing (W○) — actualización Berthing Memo + Radio Log + Post-Turn Report en archivo final",
+    "Vocabulary (V○) — integración 25 términos Toolbelt + 30+ SMCP + NATO completo en uso real",
+    "Grammar (G○) — 17 grupos en aplicación libre integrada (foco Gr 16 tag questions + Gr 13 ext voz pasiva pasada)",
+    "Reading (R○) — relectura del briefing CML CARRIER + Berthing Memo en plenaria de cierre",
+    "Listening (L○) — comprensión panel Q&A (Capitán Restrepo + agente naviero externo)"
+  ],
+  "set_up": {
+    "duracion_min": 30,
+    "warm_up": {
+      "nombre": "Welcome to the CML Port Turnaround Mission Room — Ceremonial Opening + Maritime Word Wall Photo + Express Pitch Rehearsal",
+      "pasos": [
+        "1. Aula transformada antes de llegada de aprendices: 3 zonas operacionales delimitadas (VHF station + yard simulado + bridge simulado) + panel evaluador frente con 2 sillas (Capitán Restrepo + agente naviero externo) + sillas para audiencia + cronómetro proyectable + Maritime Word Wall completo iluminado.",
+        "2. Capitán Restrepo entra con uniforme portuario completo (overol naviero + casco · si es posible) + saludo militar al panel — energía solemne ceremonial.",
+        "3. Instructor abre: 'Team — today is the day. Today you ARE Andrea Mosquera. The CML CARRIER is at the anchorage waiting to berth. The clock starts in 30 minutes. Captain Restrepo is your evaluator. Mr/Ms [agente naviero externo] is from CML Logistics — they want to know if YOU can do this job.' (sin traducción · 100% L2).",
+        "4. Foto grupal del Maritime Word Wall completo (25 términos + 30+ SMCP + NATO completo · acumulado S2-S11) — 'Look at YOUR wall. You built this wall. From PORT to TURNAROUND. Take a picture with your phone — this is YOUR vocabulary now.'",
+        "5. Briefing final 5 min: Capitán Restrepo lee el escenario CML CARRIER en voz alta (300 palabras EN · A2.1) — descripción del buque (Panamax · 5,000 TEU · arribando 06:00 · pilot boarding 05:30 · berthing 06:30 · cargo handling 07:00-18:00 · departure 19:00 · turnaround total 12h condensada a 3h en aula).",
+        "6. Entrega ceremonial de la rúbrica E-Misión 6 criterios C01-C13 SOFÍA al panel: 'Captain Restrepo, this is the rubric. C01 SMCP literacy · C02 NATO Phonetic accuracy · C03 Tripartite coordination · C04 Pitch professional 3 min · C05 Q&A tag questions · C06 Post-Turn Report passive voice. Each criterion approximately 1 point.'",
+        "7. Ensayo express Pitch en parejas 5 min — cada aprendiz hace su Pitch 60 seg (versión condensada) frente a su pareja · pareja da 1 estrella + 1 deseo · cronómetro visible.",
+        "8. Transición ceremonial a Misión: 'Take your radio. Take your clipboard. Take your hat. The clock starts NOW.'"
+      ],
+      "duration_min": 25
+    },
+    "teacher_talk_opening_en": "*Team — welcome to the CML Port Turnaround Mission Room. Today, this room is no longer a classroom. This is Berth 4 of Puerto de Buenaventura, June 15th, 06:00 a.m. The CML CARRIER is at the anchorage. Captain Lopera is on the bridge. Bosun Romero is on deck. Diego is on the crane. And YOU — you ARE Andrea Mosquera, a Port Operations Trainee, on your final mission. Captain Restrepo is your evaluator today. He has watched you grow for 11 sessions. Today he will see if you can deliver. Mr/Ms [agente naviero externo] is here from CML Logistics — they sent the CML CARRIER. They want to know if Andrea can be trusted with the next vessel. The clock is real. The mission is real. Your three priorities — sealed in the yellow envelope on Day 1 — are about to come back to you. Take a deep breath. Take your radio. Take your clipboard. The clock starts in 5 minutes. ¡Vamos por el muelle, equipo! ... I mean — Let's go to the dock, team!*",
+    "teacher_talk_opening_es_cursive": "*(Equipo, bienvenidos al Salón de la Misión de Cambio de Buque CML. Hoy este salón ya no es un salón de clase. Este es el Muelle 4 del Puerto de Buenaventura, 15 de junio, 6:00 a.m. El CML CARRIER está en el fondeadero. El Capitán Lopera está en el puente. El Contramaestre Romero está en cubierta. Diego está en la grúa. Y tú — tú ERES Andrea Mosquera, una Aprendiz de Operaciones Portuarias, en tu misión final. El Capitán Restrepo es tu evaluador hoy. Te ha visto crecer durante 11 sesiones. Hoy verá si puedes entregar. El Sr/Sra [agente naviero externo] está aquí de CML Logistics — ellos enviaron el CML CARRIER. Quieren saber si pueden confiar en Andrea con el próximo buque. Tus tres prioridades — selladas en el sobre amarillo el Día 1 — están a punto de volver a ti. Respira profundo. Toma tu radio. Toma tu portapapeles. El reloj arranca en 5 minutos.) — RECORDATORIO: este Teacher Talk se entrega EN INGLÉS · la versión cursiva española es para preparación del instructor · NO se traduce en aula salvo en momentos de reflexión metacognitiva final donde L1 se permite.*",
+    "objetivo_dia_escrito_en_tablero": "*Today you will: (1) execute the CML Port Turnaround Mission — 3 hours condensed simulation · (2) deliver your Pitch profesional 3 min to Captain Restrepo and the external naval agent · (3) handle Q&A panel with tag questions and passive voice · (4) reopen your yellow envelope from Day 1 and read your three priorities · (5) receive your symbolic Port Operations Trainee certificate. The English Zone is fully active — 0% Spanish today, except for the final metacognitive reflection.*",
+    "activacion_warmup_express_pitch": {
+      "instruccion": "Cada aprendiz hace su Pitch 60 seg condensado frente a pareja (una versión 'tráiler' del Pitch 3 min completo). Pareja escucha + da 1 estrella (lo mejor) + 1 deseo (algo a mejorar) usando frases modeladas: 'Your tag question was perfect — You're responsible for the cargo, aren't you?' (estrella) · 'Try to slow down on the occupational structures — say 'I report to Captain Lopera' more clearly' (deseo).",
+      "tecnica": "Ensayo en parejas con peer feedback estructurado (PM-0 §5.11 fluency techniques · S12 nivel autónomo)"
+    },
+    "icq": [
+      "*Are we in a classroom or in Berth 4 of Puerto de Buenaventura today?* → Esperan: 'In Berth 4 / In the port'",
+      "*Who is Captain Restrepo today?* → Esperan: 'My evaluator / The mentor / The judge'",
+      "*Who is the external naval agent?* → Esperan: 'From CML Logistics / The client / External judge'",
+      "*Can I speak Spanish today?* → Esperan: 'No — only for the final reflection / 0% L1 except metacognition'",
+      "*How long is my Pitch?* → Esperan: '3 minutes / Three minutes'",
+      "*What's in the yellow envelope?* → Esperan: 'My Learning Contract / My three priorities from Day 1'"
+    ],
+    "facilitation_notes": [
+      "💡 La transformación del aula es CEREMONIAL. Llegue 30 min antes para configurar las 3 zonas + panel + Word Wall iluminado · sonidos de puerto bajo de fondo. La primera impresión visual es 50% del impacto emocional de la Misión.",
+      "💡 Capitán Restrepo entrando con uniforme es NO NEGOCIABLE — energía emocional alta · respeta el ritual del cierre. Si Capitán Restrepo no puede uniformarse · use al menos un casco portuario amarillo + camisa azul.",
+      "💡 La foto del Maritime Word Wall completo (25 términos + SMCP + NATO) es momento simbólico — los aprendices guardan en celular · evidencia de crecimiento de 100h.",
+      "💡 El briefing del agente naviero externo es importante — preséntelos formalmente con título profesional + empresa. Si no es alguien externo real · presente a un instructor de otro programa SENA como invitado · da realismo al cierre.",
+      "💡 Si un aprendiz muestra ansiedad pre-Misión · acerquese: '*You signed your contract on Day 1. You wrote three priorities. Today is the day to honor them — not perfectly · just authentically.*' (recordatorio simbólico).",
+      "💡 NO permita que el panel hable durante el SET-UP — sólo escuchan + sonríen + saludan. La entrega de la rúbrica es momento ceremonial."
+    ],
+    "checkpoint": "✓ Verbal survey: '*Are you ready for the mission?*' — ≥80% levantan la mano + dicen 'Ready, captain'. Si <80%: agregar 2 min de respiración guiada + 1 min de aplauso grupal de auto-aliento. NO comprometer el horario de WHILE A — VHF intake debe arrancar exactamente a 0:30."
+  },
+  "while": {
+    "duracion_min": 300,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "VHF Intake con Captain Lopera — Misión Fase 3.1 (PM-3.5)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-3.5, Fase 3 — Desempeño · Etapa 1 VHF Intake",
+        "agrupacion": "Individual turno (estación VHF · panel observa)",
+        "objetivo": "Cada aprendiz responde a una llamada VHF entrante de Captain Lopera (BUENAVENTURA EXPRESS arribando · solicitud berthing · 90s) usando SMCP literacy + NATO Phonetic spelling de call sign + Roger/Wilco/Standby/Over. Demostrar 11 sesiones de aprendizaje en producción real.",
+        "instrucciones_paso_a_paso": [
+          "1. Estación VHF montada al frente del aula con walkie-talkie + radio scanner ambiente bajo · cronómetro visible 2 min por turno.",
+          "2. Instructor (oculto detrás de barrera) interpreta Captain Lopera con voz B2 lingua franca · llamada VHF entrante: '*BUENAVENTURA EXPRESS to Berth 4. Captain Lopera. Vessel ready. Request berthing slot. Over.*'",
+          "3. Aprendiz #1 toma walkie-talkie · escucha · responde en 90s con SMCP estructurado: 'Berth 4 to BUENAVENTURA EXPRESS. Roger. Berthing slot confirmed. Pilot boarding 05:30. NATO spelling of pilot call sign: Papa-Whiskey-Two-Three. Standby. Over.'",
+          "4. Captain Lopera continúa con segunda interacción: '*Roger Berth 4. Standby for cargo manifest. Confirm wind speed. Over.*'",
+          "5. Aprendiz responde con SMCP + voz pasiva pasada: 'BUENAVENTURA EXPRESS, the manifest was sent at 05:00. Wind speed 12 knots, southwest. Conditions safe for berthing. Wilco. Over.'",
+          "6. Captain Lopera cierra: '*Berth 4, Roger. Out.*' Aprendiz cierra: 'BUENAVENTURA EXPRESS, Berth 4. Out.'",
+          "7. Panel evaluador (Capitán Restrepo + agente naviero) marca rúbrica C01 SMCP literacy + C02 NATO accuracy en silencio.",
+          "8. Cronómetro suena · siguiente aprendiz pasa · rotación cada 2 min hasta completar 25 aprendices en 60 min (con 25 segundos buffer entre turnos).",
+          "9. Audio de cada turno grabado en walkie-talkie/app para portafolio aprendiz."
+        ],
+        "teacher_talk_instruction": "*Take the radio. Listen to Captain Lopera. Respond with SMCP. Use Roger, Wilco, Standby, Over. Spell the pilot call sign with NATO Phonetic — Papa-Whiskey-Two-Three. Two minutes per turn. The clock starts now. Show me what you learned in 11 sessions.*",
+        "icq": [
+          "*How long is my turn?* → Esperan: '2 minutes / Two minutes'",
+          "*What words must I use?* → Esperan: 'Roger, Wilco, Standby, Over / SMCP'",
+          "*How do I spell the call sign?* → Esperan: 'NATO Phonetic / Papa-Whiskey-Two-Three style'",
+          "*Who is on the other side of the radio?* → Esperan: 'Captain Lopera / The instructor playing Captain Lopera'"
+        ],
+        "answer_key_inline": {
+          "smcp_obligatorio": [
+            "Roger (recibido y entendido)",
+            "Wilco (recibido · ejecutaré)",
+            "Standby (espere · pausa breve)",
+            "Over (mi turno terminó · su turno)",
+            "Out (cierre conversación)"
+          ],
+          "estructura_respuesta_modelo": [
+            "[Sender] to [Receiver]. [Action verb]. [Additional info]. [SMCP marker]. Over.",
+            "Ejemplo: 'Berth 4 to BUENAVENTURA EXPRESS. Roger. Berthing slot confirmed. Pilot boarding 05:30. Standby. Over.'"
+          ],
+          "voz_pasiva_pasada_esperada": "The manifest was sent at 05:00 / The cargo was inspected at 14:00 / The lines were secured by the deckhand",
+          "puntos_rubrica": "C01 SMCP literacy ≈1 pt + C02 NATO accuracy ≈1 pt = 2 pts total Fase 3.1 sobre 5 pts E-Misión"
+        },
+        "facilitation_notes": [
+          "💡 Si aprendiz se bloquea 30 seg sin responder · Captain Lopera repite la pregunta más lentamente · una sola vez. NO interrumpir con corrección · solo modelo lingüístico.",
+          "💡 Si aprendiz mezcla SMCP con español ('Roger sí captain · standby por favor') · panel marca rúbrica menos C01 pero NO interrumpe · el aprendiz debe completar el turno.",
+          "💡 La barrera visual entre instructor (Captain Lopera) y aprendiz es importante — refuerza realismo VHF (no ven al interlocutor).",
+          "💡 Si NATO spelling sale incompleto (ej. 'P-W-2-3' en lugar de Papa-Whiskey-Two-Three) · panel marca C02 menos · pero celebrar mentalmente el INTENTO."
+        ],
+        "checkpoint": "✓ Conteo rápido post-bloque: ≥80% de aprendices completaron turno con al menos 2 SMCP markers + 1 NATO spelling correcto. Si <80%: panel discute mentalmente recalibración rúbrica antes de WHILE B (no comunica al aprendiz).",
+        "transition": "*Good. Captain Lopera is satisfied. The vessel is approaching. Now — switch zones. Diego is on the crane. Bosun Romero is on deck. Berthing coordination starts in 30 seconds. Take your hard hat — we go to the yard.*",
+        "tecnica_didactica": "Simulación operacional VHF intake con SMCP + NATO spelling en producción autónoma (Fase ejecutiva ABP)"
+      },
+      {
+        "letra": "B",
+        "nombre": "Berthing Coordination Tripartito — Misión Fase 3.2 (PM-3.5)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-3.5, Fase 3 — Desempeño · Etapa 2 Berthing Coordination",
+        "agrupacion": "Individual turno con 3 actores (Diego/Bosun/Captain interpretados por instructor + 2 voluntarios)",
+        "objetivo": "Cada aprendiz coordina berthing tripartito con 3 actores simultáneos (Diego en grúa + Bosun Romero en yard + Captain Lopera en VHF). Demostrar producción activa de modales (should/could/might) + condicional 1 + presente perfecto + voz pasiva presente + tag questions de confirmación.",
+        "instrucciones_paso_a_paso": [
+          "1. Aula transformada en 3 estaciones operacionales tipo isla central: (a) crane station con Diego (voluntario advanced #1) · (b) yard station con Bosun Romero (voluntario advanced #2) · (c) VHF station con Captain Lopera (instructor).",
+          "2. Aprendiz se ubica en el medio · turno 2 min · cronómetro visible.",
+          "3. Diego inicia: '*Andrea, the crane is ready, but the wind is 18 knots. Should we proceed?*'",
+          "4. Aprendiz responde con modal + condicional 1: '*Diego, if the wind stays under 20 knots, we can proceed. We could also wait 15 minutes. The crane is ready, isn't it?*'",
+          "5. Bosun Romero interrumpe: '*Andrea, the lines have been secured. The deckhand is in position. We're ready.*'",
+          "6. Aprendiz coordina con presente perfecto + voz pasiva: '*Bosun, the lines have been secured — perfect. The deckhand is in position. The cargo is being prepared. Standby.*'",
+          "7. Captain Lopera entra por VHF: '*Berth 4, request final approval. Pilot is on board. Vessel position confirmed.*'",
+          "8. Aprendiz cierra coordinación con tag question + occupational structure: '*Captain Lopera, the pilot is on board, isn't he? I report to Captain Restrepo for final approval. Standby. Over.*'",
+          "9. Cronómetro suena · siguiente aprendiz pasa · rotación 2 min/aprendiz hasta completar 25 en 60 min.",
+          "10. Panel marca C03 Tripartite coordination en silencio."
+        ],
+        "teacher_talk_instruction": "*This is tripartite coordination — three voices at the same time. Diego on the crane. Bosun Romero in the yard. Captain Lopera on VHF. You are in the middle. Use modals (should, could, might). Use conditional one (If the wind stays under 20 knots, we can proceed). Use present perfect (The lines have been secured). Use tag questions (The crane is ready, isn't it?). Two minutes. Show me coordination, not perfection.*",
+        "icq": [
+          "*How many actors?* → Esperan: '3 / three (Diego, Bosun, Captain)'",
+          "*What grammar must I use?* → Esperan: 'Modals + conditional 1 + present perfect + tag questions'",
+          "*What if I freeze?* → Esperan: 'Use a tag question to buy time / Use Standby'",
+          "*Who interprets Diego?* → Esperan: 'A peer / An advanced volunteer'"
+        ],
+        "answer_key_inline": {
+          "modales_esperados": [
+            "should (We should proceed if conditions are safe)",
+            "could (We could wait 15 minutes)",
+            "might (The wind might increase)"
+          ],
+          "condicional_1_esperado": "If [present] + [will/can]: If the wind stays under 20 knots, we can proceed",
+          "presente_perfecto_esperado": "The lines have been secured / The cargo has been inspected / The pilot has boarded",
+          "tag_questions_esperadas": [
+            "The crane is ready, isn't it?",
+            "The pilot is on board, isn't he?",
+            "We can proceed, can't we?",
+            "You're the bosun, aren't you?"
+          ],
+          "voz_pasiva_presente_esperada": "The cargo is being prepared / The vessel is being berthed",
+          "occupational_structures_esperadas": [
+            "I report to Captain Restrepo",
+            "I coordinate with Diego",
+            "I supervise the lines"
+          ],
+          "puntos_rubrica": "C03 Tripartite coordination ≈1 pt sobre 5 pts E-Misión"
+        },
+        "facilitation_notes": [
+          "💡 Los 3 actores (Diego/Bosun/Captain) deben hablar SIMULTÁNEAMENTE en algunos momentos — refuerza la complejidad real de coordinación portuaria. Si aprendiz pide '*one at a time*' · panel marca C03 menos pero respeta la solicitud.",
+          "💡 Si aprendiz logra al menos 1 tag question producción activa + 1 modal + 1 voz pasiva en su turno · es PASS de C03 mínimo.",
+          "💡 Voluntarios advanced (Diego + Bosun) deben mantener nivel B1 lingua franca · NO complicar con vocabulario fuera de lo trabajado en S5-S9.",
+          "💡 Si Captain Restrepo (panel) detecta que un aprendiz está en pánico · puede entrar verbalmente con '*Andrea, take a breath. Use Standby.*' (ayuda mínima · marca rúbrica acordemente)."
+        ],
+        "checkpoint": "✓ Conteo silencioso del panel: ≥75% de aprendices completaron 1 modal + 1 tag question + 1 voz pasiva en su turno. Recalibrar rúbrica si <75%.",
+        "transition": "*Excellent coordination, Andrea team. The vessel is berthed. The cargo is being unloaded. Now — break time. 15 minutes. Stretch. Hydrate. Rehearse your Pitch in the bathroom mirror. The Post-Turn Report starts in 15 minutes.*",
+        "tecnica_didactica": "Simulación tripartita con producción activa modales + condicional + presente perfecto + tag questions (Fase ejecutiva ABP)"
+      },
+      {
+        "letra": "BREAK",
+        "nombre": "Stretch & Pitch Mirror Rehearsal — 15 min",
+        "duracion_min": 15,
+        "worksheet_ref": "—",
+        "agrupacion": "—",
+        "objetivo": "Receso activo + ensayo individual silencioso del Pitch 3 min frente al espejo del baño (auto-stress-checking · auto-monitoreo de tag questions y occupational structures).",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor anuncia: '*15 minutes break. Hydrate. Stretch. Then — go to the mirror in the bathroom or the window — rehearse your Pitch silently. Listen to your own voice in your head. Check your tag questions. Check your occupational structures. Time yourself — 3 minutes.*'",
+          "2. Aprendices salen al receso · agua · café · estiramiento.",
+          "3. Aprendices regresan al espejo (baño o ventana) · ensayan Pitch 3 min mentalmente o susurro.",
+          "4. Capitán Restrepo + agente naviero descansan en sala separada · revisan rúbricas C01-C03 hasta ahora."
+        ],
+        "teacher_talk_instruction": "—",
+        "icq": [],
+        "answer_key_inline": {},
+        "facilitation_notes": [
+          "💡 Mantenga la energía baja durante el break — los aprendices necesitan recargar emocionalmente antes del Pitch + Q&A.",
+          "💡 Use el break para preparar el micrófono + amplificador + cámara grabadora del Pitch (Bloque D).",
+          "💡 Si un aprendiz no quiere el break (ansiedad alta) · permítale quedarse repasando · NO obligue al receso."
+        ],
+        "checkpoint": "—",
+        "transition": "*Welcome back. The Post-Turn Report starts now. Captain Restrepo is waiting. 90 seconds per turn. Use passive voice past. Show me 11 sessions of growth.*",
+        "tecnica_didactica": "Receso activo con ensayo silencioso individual (auto-monitoreo · PM-0 §5.13 stress aplicado con autonomía plena)"
+      },
+      {
+        "letra": "C",
+        "nombre": "Post-Turn Report Oral 90s — Misión Fase 3.3 (PM-3.5)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-3.5, Fase 3 — Desempeño · Etapa 3 Post-Turn Report",
+        "agrupacion": "Individual turno frente a panel evaluador",
+        "objetivo": "Cada aprendiz reporta el cierre del turnaround a Capitán Restrepo en 90 seg usando voz pasiva pasada + condicional 1 (incidentes hipotéticos) + occupational structures + tag questions de confirmación. Audio grabado para portafolio.",
+        "instrucciones_paso_a_paso": [
+          "1. Aprendiz se ubica frente al panel · cámara graba audio + video · cronómetro 90s visible.",
+          "2. Capitán Restrepo abre: '*Andrea, your Post-Turn Report. 90 seconds. Tell me what happened today.*'",
+          "3. Aprendiz reporta con estructura modelada en S8 + S11: (a) Apertura — '*Captain Restrepo, the BUENAVENTURA EXPRESS arrived at 06:00. The vessel was berthed at 06:30.*' (b) Operaciones — '*The cargo was inspected at 14:00. The lines were secured by the deckhand at 06:25. The pilot disembarked at 07:00.*' (c) Incidente hipotético — '*If the wind had increased, we would have delayed the operation. But conditions were safe.*' (d) Cierre con tag question — '*The vessel departed at 19:00, didn't it? I report to you for final approval, Captain.*'",
+          "4. Capitán Restrepo cierra: '*Thank you, Andrea. Standby for Q&A.*'",
+          "5. Cronómetro suena · siguiente aprendiz pasa · rotación 90s/aprendiz + 30s buffer = 2 min total/aprendiz · 25 aprendices en 60 min.",
+          "6. Panel marca C04 Post-Turn Report passive voice + C05 occupational structures + C06 conditional 3 (hipotético pasado · si emerge) en silencio."
+        ],
+        "teacher_talk_instruction": "*Captain Restrepo is waiting for your Post-Turn Report. 90 seconds. Use passive voice past — The cargo was inspected at 14:00. Use occupational structures — I report to Captain Lopera. Use one tag question at the end — The vessel departed at 19:00, didn't it? Show me what you wrote in your Berthing Memo. Show me what you wrote in your Radio Log. The audio is being recorded — this is your portfolio.*",
+        "icq": [
+          "*How long is the report?* → Esperan: '90 seconds / Ninety seconds'",
+          "*What grammar must I use?* → Esperan: 'Passive voice past + occupational structures + tag question'",
+          "*Who is the audience?* → Esperan: 'Captain Restrepo / The mentor / The evaluator'",
+          "*Is the audio recorded?* → Esperan: 'Yes / Yes captain — for the portfolio'"
+        ],
+        "answer_key_inline": {
+          "voz_pasiva_pasada_obligatoria": [
+            "The vessel was berthed at 06:30",
+            "The cargo was inspected at 14:00",
+            "The lines were secured by the deckhand",
+            "The pilot was disembarked at 07:00",
+            "The manifest was sent at 05:00"
+          ],
+          "occupational_structures_esperadas": [
+            "I report to Captain Restrepo",
+            "I am responsible for the berthing operation",
+            "I coordinate with Diego and Bosun Romero",
+            "I supervise the cargo handling"
+          ],
+          "tag_questions_esperadas_cierre": [
+            "The vessel departed at 19:00, didn't it?",
+            "The cargo was inspected, wasn't it?",
+            "Diego operated the crane, didn't he?"
+          ],
+          "estructura_modelo_90s": [
+            "Apertura (15 seg): Captain Restrepo, [vessel name] arrived at [time]. The vessel was berthed at [time].",
+            "Operaciones (45 seg): The cargo was inspected at [time]. The lines were secured by [actor]. The pilot disembarked at [time].",
+            "Incidente hipotético (15 seg · OPCIONAL): If [past condition], we would have [past consequence].",
+            "Cierre (15 seg): The vessel departed at [time], didn't it? I report to you for final approval, Captain."
+          ],
+          "puntos_rubrica": "C04 Post-Turn Report passive voice ≈1 pt sobre 5 pts E-Misión"
+        },
+        "facilitation_notes": [
+          "💡 Si aprendiz NO usa voz pasiva pasada · panel marca C04 = 0. Pero si usa al menos 2 voz pasiva pasada correctas + 1 occupational structure + 1 tag question · es C04 = 1 pt.",
+          "💡 Cronómetro estricto 90s — si aprendiz se pasa · panel detiene con '*Time, Andrea. Standby.*' (sin penalización adicional · pero corte limpio).",
+          "💡 La grabación de audio es para PORTAFOLIO del aprendiz · NO para evaluación del panel (panel evalúa en vivo). Aprendiz recibe audio en USB al final.",
+          "💡 Si emerge condicional 3 (hipotético pasado · 'If the wind had increased, we would have delayed') · CELEBRAR mentalmente · es nivel B1 emergente · marca C06 bonus si está perfecto."
+        ],
+        "checkpoint": "✓ Panel marca C04 ≥1 pt en ≥80% de aprendices. Si <80%: ajustar Pitch en Bloque D para enfatizar voz pasiva pasada en feedback diferido.",
+        "transition": "*Excellent reports, team. Now — the moment of truth. Your Pitch profesional 3 minutes. Take the microphone. Captain Restrepo and the external naval agent are listening. Speak with confidence. You are no longer Andrea — you ARE the Port Operations Trainee. Show me 100 hours.*",
+        "tecnica_didactica": "Reporte oral 90s con voz pasiva pasada + occupational structures + tag questions de cierre (Fase ejecutiva ABP · producción autónoma)"
+      },
+      {
+        "letra": "D",
+        "nombre": "Pitch Profesional 3 min ante Panel — Misión Fase 4 (PM-3.5)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-3.5, Fase 4 — Presentación · Pitch Profesional",
+        "agrupacion": "Individual frente a panel + audiencia compañeros silencio",
+        "objetivo": "Cada aprendiz presenta Pitch profesional 3 min ante panel evaluador (Capitán Restrepo + agente naviero externo) usando 5 master functions IMARPOR (Information Exchange + SMCP literacy + Coordinating Tripartite + Modals + Describing & Justifying) + occupational structures + Gr 16 tag questions producción activa. Grabado para portafolio.",
+        "instrucciones_paso_a_paso": [
+          "1. Aula reconfigurada: micrófono inalámbrico al frente · panel evaluador sentado · cámara grabadora · cronómetro proyectable 3 min.",
+          "2. Aprendiz pasa al frente · saluda al panel: '*Good morning Captain Restrepo. Good morning [external naval agent]. My name is Andrea Mosquera. I am a Port Operations Trainee.*'",
+          "3. Pitch 4 secciones (45 seg c/u · framework S11): (a) Introducción — '*I work at Berth 4 of Puerto de Buenaventura. I report to Captain Restrepo. I coordinate berthing operations with Diego the crane operator and Bosun Romero from the yard.*' (b) Funciones habituales — '*I am responsible for VHF communications. I specialize in SMCP literacy and NATO Phonetic spelling. Every morning, I supervise the line securing and the cargo inspection.*' (c) Funciones momentáneas — '*Today, I have completed the CML CARRIER turnaround. The cargo has been inspected. The lines have been secured. The vessel has departed at 19:00.*' (d) Cierre con tag question + invitación Q&A — '*This is what I do, isn't it clear? You're satisfied with my work, aren't you, Captain? I am ready for your questions.*'",
+          "4. Audiencia (compañeros) en silencio · aplauso al final.",
+          "5. Cronómetro suena a 3 min · panel detiene con '*Thank you, Andrea. Standby for Q&A.*'",
+          "6. Rotación 3 min Pitch + 1 min transición = 4 min/aprendiz · 15 aprendices en 60 min (10 restantes pasan en Bloque E con turnos rotados).",
+          "7. Panel marca C04 Pitch professional 3 min en silencio."
+        ],
+        "teacher_talk_instruction": "*Take the microphone. Three minutes. Four sections — Introduction, habitual functions, momentary functions, closing with tag question. Use I report to, I coordinate with, I am responsible for, I specialize in, I supervise. Use present perfect — The cargo has been inspected. End with a tag question — You're satisfied with my work, aren't you, Captain? Speak slowly. Speak with confidence. The audio is being recorded — this Pitch will be in your portfolio for life.*",
+        "icq": [
+          "*How long is the Pitch?* → Esperan: '3 minutes / Three minutes'",
+          "*How many sections?* → Esperan: '4 / Four (intro + habitual + momentary + closing)'",
+          "*What occupational structures must I use?* → Esperan: 'I report to / I coordinate with / I am responsible for / I specialize in / I supervise'",
+          "*How do I close?* → Esperan: 'With a tag question / You're satisfied with my work, aren't you?'"
+        ],
+        "answer_key_inline": {
+          "5_master_functions_imarpor": [
+            "F1 Information Exchange (intro: name + role + location)",
+            "F2 SMCP literacy (mencionar: I specialize in SMCP and NATO Phonetic)",
+            "F3 Coordinating Tripartite (mencionar: I coordinate with Diego and Bosun Romero)",
+            "F4 Modals (mencionar: I should + I could + I might en contextos hipotéticos)",
+            "F5 Describing & Justifying (cierre: This is what I do because + tag question)"
+          ],
+          "5_occupational_structures_esperadas": [
+            "I report to [Captain Restrepo]",
+            "I coordinate with [Diego/Bosun Romero]",
+            "I am responsible for [VHF communications]",
+            "I specialize in [SMCP literacy and NATO Phonetic]",
+            "I supervise [the line securing and cargo inspection]"
+          ],
+          "presente_perfecto_obligatorio_seccion_c": [
+            "I have completed the CML CARRIER turnaround",
+            "The cargo has been inspected",
+            "The lines have been secured",
+            "The vessel has departed"
+          ],
+          "tag_questions_obligatorias_cierre": [
+            "This is what I do, isn't it clear?",
+            "You're satisfied with my work, aren't you, Captain?",
+            "I am ready for your questions, am I not?"
+          ],
+          "puntos_rubrica": "C04 Pitch profesional 3 min ≈1 pt sobre 5 pts E-Misión"
+        },
+        "facilitation_notes": [
+          "💡 El micrófono es psicológicamente importante — confiere autoridad profesional al aprendiz. NO improvise sin micrófono.",
+          "💡 Si aprendiz se pasa de 3 min · panel detiene con cronómetro visible · NO penalice excesivamente — mejor cierre limpio que aprendiz colapsado.",
+          "💡 Aplauso entre cada Pitch es CRÍTICO — energía emocional + reconocimiento grupal.",
+          "💡 Si aprendiz olvida una occupational structure · panel marca C04 menos pero NO interrumpe · feedback diferido vía rúbrica.",
+          "💡 Si aprendiz hace Pitch en español por bloqueo · panel marca C04 = 0 pero respeta la entrega · feedback emocional post-Misión."
+        ],
+        "checkpoint": "✓ Conteo del panel: ≥80% de aprendices completaron al menos 3 occupational structures + 1 tag question producción activa + 1 presente perfecto en el Pitch. Si <80%: feedback diferido vía rúbrica con foco en práctica futura post-curso.",
+        "transition": "*Magnificent Pitches, team. Captain Restrepo is impressed. Now — the Q&A. Two questions per learner. Use tag questions to confirm. Use passive voice past for evidence. Show me you can defend your work.*",
+        "tecnica_didactica": "Pitch profesional 3 min con 5 master functions + occupational structures + tag questions producción activa (Fase presentación ABP)"
+      },
+      {
+        "letra": "E",
+        "nombre": "Q&A Panel + Peer Feedback — Misión Fase 4 cont (PM-3.5)",
+        "duracion_min": 30,
+        "worksheet_ref": "PM-3.5, Fase 4 — Presentación · Q&A Panel + Peer Feedback",
+        "agrupacion": "Individual con panel + parejas peer feedback",
+        "objetivo": "Cada aprendiz responde 2 preguntas del panel con tag questions + voz pasiva pasada producción activa. Inmediatamente después · peer feedback en parejas (3 estrellas + 1 deseo) usando frases modeladas. Aprendices restantes del Pitch (10 aprendices) pasan rotativos en este bloque.",
+        "instrucciones_paso_a_paso": [
+          "1. 10 aprendices restantes del Bloque D pasan en este Bloque E con Pitch 3 min + Q&A inmediato (sólo en este bloque) · 4 min/aprendiz × 10 = 40 min · ajustado a 30 min con corte 90 seg.",
+          "2. Panel hace 2 preguntas por aprendiz con tag questions modelo: '*You're the supervisor of berthing, aren't you, Andrea?*' · '*The cargo was inspected at 14:00, wasn't it?*'",
+          "3. Aprendiz responde con tag question producción activa + voz pasiva pasada: '*Yes, I am the supervisor. The cargo was inspected at 14:00, that's correct, isn't it?*'",
+          "4. Panel cierra: '*Thank you, Andrea. Standby for peer feedback.*'",
+          "5. Aprendiz se gira hacia su pareja · pareja da 3 estrellas + 1 deseo en frases modeladas (cinta cromática verde × 3 + amarilla × 1).",
+          "6. Frases modeladas peer feedback: ⭐ 'Your tag question was perfect — You're responsible for the cargo, aren't you?' · ⭐ 'I loved your introduction — My name is Andrea Mosquera was clear.' · ⭐ 'Your passive voice was strong — The lines were secured by the deckhand.' · 💛 'For next time, slow down on the occupational structures — say I report to Captain Lopera more clearly.'",
+          "7. Panel marca C05 Q&A tag questions producción activa en silencio.",
+          "8. Cronómetro estricto · transición rápida 30 seg entre aprendices."
+        ],
+        "teacher_talk_instruction": "*Two questions per learner. Use tag questions to confirm. Use passive voice past for evidence. After Q&A, turn to your partner. Three stars + one wish. Model phrases on the board. Two minutes peer feedback. The clock is real. Go.*",
+        "icq": [
+          "*How many questions per learner?* → Esperan: '2 / Two'",
+          "*What grammar must I use?* → Esperan: 'Tag questions + passive voice past'",
+          "*How many stars?* → Esperan: '3 / Three (green tape)'",
+          "*How many wishes?* → Esperan: '1 / One (yellow tape)'"
+        ],
+        "answer_key_inline": {
+          "tag_questions_panel_modelo": [
+            "You're the supervisor of berthing, aren't you?",
+            "The cargo was inspected at 14:00, wasn't it?",
+            "The pilot boarded at 05:30, didn't he?",
+            "We can trust your VHF skills, can't we?",
+            "You report to Captain Restrepo, don't you?"
+          ],
+          "respuestas_modelo_aprendiz": [
+            "Yes, I am the supervisor — that's correct, isn't it?",
+            "The cargo was inspected at 14:00, that's confirmed.",
+            "The pilot boarded at 05:30, by the deckhand assistance.",
+            "Yes, my VHF skills are reliable — I have practiced for 11 sessions.",
+            "Yes, I report to Captain Restrepo for final approval."
+          ],
+          "peer_feedback_3_estrellas_modelo": [
+            "Your tag question was perfect — You're responsible for the cargo, aren't you? ⭐",
+            "I loved your introduction — My name is Andrea Mosquera was clear and confident. ⭐",
+            "Your passive voice was strong — The lines were secured by the deckhand. ⭐"
+          ],
+          "peer_feedback_1_deseo_modelo": [
+            "For next time, slow down on the occupational structures — say I report to Captain Lopera more clearly. 💛",
+            "For next time, use one more tag question in the closing — to invite Q&A. 💛",
+            "For next time, breathe between sections — your Pitch was a little fast. 💛"
+          ],
+          "puntos_rubrica": "C05 Q&A tag questions producción activa ≈1 pt sobre 5 pts E-Misión"
+        },
+        "facilitation_notes": [
+          "💡 Las cintas cromáticas (verde × 3 + amarilla × 1) son objeto físico para peer feedback — permite a cada aprendiz tener evidencia visual de su feedback.",
+          "💡 Si peer feedback sale en español · NO penalice — pero modele en inglés post-bloque para próximas sesiones (no aplica · es S12).",
+          "💡 Si panel hace pregunta muy difícil para A2.1 · panel reformula con versión más simple (NO penalice por no entender · sólo si no responde).",
+          "💡 Cronómetro estricto Q&A 90 seg · NO permita debate — sólo 2 preguntas con respuesta corta."
+        ],
+        "checkpoint": "✓ Panel marca C05 ≥1 pt en ≥75% de aprendices. Peer feedback completo en parejas (todas las cintas cromáticas usadas).",
+        "transition": "*Magnificent Q&A, team. The mission is complete. Now — the moment we have all been waiting for since Day 1. The yellow envelope. Your Maritime Learning Contract. Sealed 11 sessions ago. Today — we open it.*",
+        "tecnica_didactica": "Q&A panel con tag questions producción activa + peer feedback estructurado 3 estrellas + 1 deseo (Fase presentación ABP)"
+      },
+      {
+        "letra": "F",
+        "nombre": "Reflexión Metacognitiva Final + Reapertura del Sobre Amarillo — Misión Fase 5 (PM-3.5)",
+        "duracion_min": 30,
+        "worksheet_ref": "PM-3.5, Fase 5 — Evaluación Reflexiva · Reflexión Metacognitiva 'What I see now that I did not see on Day 1'",
+        "agrupacion": "Individual silencio · ceremonia colectiva reapertura",
+        "objetivo": "Cada aprendiz reabre su sobre amarillo Maritime Learning Contract sellado en S1 · lee sus 3 prioridades S1 · verifica evidencia en su portafolio S2-S11 · escribe reflexión metacognitiva guiada con 4 prompts. Permitido L1 en este momento (apartado personal post-evaluación · CIERRE simbólico curso 100h).",
+        "instrucciones_paso_a_paso": [
+          "1. Música marítima ceremonial muy baja activada · luz del aula bajada un poco · cinta amarilla pegada en el tablero como marco simbólico.",
+          "2. Instructor recoge la caja de sobres amarillos guardada por 11 sesiones · entrega ceremonialmente cada sobre con el nombre del aprendiz: '*Andrea — your contract from Day 1. Open it now.*'",
+          "3. Cada aprendiz abre su sobre · lee sus 3 prioridades personales firmadas en S1 (derivadas de los 3 puntajes más bajos del Gap Card S1).",
+          "4. Aprendiz toma el handout 'What I see now that I did not see on Day 1' · responde 4 prompts en silencio: (a) '*¿Cuál fue mi prioridad #1 en S1? ¿Qué evidencia tengo hoy de su cumplimiento?*' (b) '*¿Cuál fue mi prioridad #2 en S1? ¿Qué evidencia tengo hoy de su cumplimiento?*' (c) '*¿Cuál fue mi prioridad #3 en S1? ¿Qué evidencia tengo hoy de su cumplimiento?*' (d) '*¿Qué veo ahora que no vi el Día 1? — Una sola frase en inglés O español.*'",
+          "5. Permitido escribir en español (apartado personal post-evaluación) — pero invitar a que escriban al menos el prompt (d) en inglés con scaffolding.",
+          "6. Tiempo individual silencio 20 min · sin interrupción del instructor · sin interrupción del panel.",
+          "7. Cierre ceremonial colectivo 5 min: 3 voluntarios comparten su prompt (d) en voz alta — el resto escucha en silencio. Aplauso suave.",
+          "8. El sobre amarillo + handout reflexión queda en el portafolio personal del aprendiz · NO se entrega al instructor.",
+          "9. Instructor cierra: '*This is yours. Forever. The contract you signed on Day 1 is now your evidence. You did this. You ARE Port Operations Trainees now.*'"
+        ],
+        "teacher_talk_instruction": "*Open your yellow envelope. Read your three priorities — the ones you signed on Day 1, 11 sessions ago. Look at your portfolio — what evidence do you have today? Write 4 reflections — Spanish is welcome here. This is your personal moment. Twenty minutes silence. Music low. Three volunteers share at the end. Then — your certificate.*",
+        "icq": [
+          "*Can I write in Spanish?* → Esperan: 'Yes — Spanish welcome here / Permitido para reflexión personal'",
+          "*How many prompts?* → Esperan: '4 / Four'",
+          "*Do I share with my partner?* → Esperan: 'No — silent / Only 3 volunteers at the end'",
+          "*Where does the envelope go?* → Esperan: 'My portfolio / Mine forever'"
+        ],
+        "answer_key_inline": {
+          "4_prompts_reflexion_metacognitiva": [
+            "(a) ¿Cuál fue mi prioridad #1 en S1? ¿Qué evidencia tengo hoy de su cumplimiento?",
+            "(b) ¿Cuál fue mi prioridad #2 en S1? ¿Qué evidencia tengo hoy de su cumplimiento?",
+            "(c) ¿Cuál fue mi prioridad #3 en S1? ¿Qué evidencia tengo hoy de su cumplimiento?",
+            "(d) ¿Qué veo ahora que no vi el Día 1? — Una frase EN inglés O español."
+          ],
+          "evidencias_modelo_portafolio_s2_s11": [
+            "S2 — Toolbelt 5 términos Sub-bloque 1 (foto Word Wall + audio 30s)",
+            "S3 — Diagrama ship parts BUENAVENTURA EXPRESS etiquetado bilingüe",
+            "S4 — Inspection Report 1 página + peer review",
+            "S5 — Audio NATO Phonetic deletreo nombre completo + ciudad 60s",
+            "S6 — Audio Radio Log VHF entrante 90s",
+            "S7 — Listening cloze SMCP en 3 audios IMO",
+            "S8 — Berthing Coordination Memo 1 página",
+            "S9 — Video 90s presentándose como Port Operations Trainee con 5 master functions",
+            "S10 — Autoevaluación 22-item PM-0 §7 + canvas Misión Final",
+            "S11 — Berthing Memo final + Radio Log final + audio Pitch ensayo"
+          ],
+          "frases_modelo_prompt_d": [
+            "What I see now that I did not see on Day 1: I can speak with Captain Lopera on the radio.",
+            "What I see now that I did not see on Day 1: SMCP is not magic — it's a vocabulary I learned.",
+            "What I see now that I did not see on Day 1: I am no longer afraid of English in the port.",
+            "What I see now that I did not see on Day 1: Andrea is me — and I am Andrea."
+          ],
+          "puntos_rubrica": "C06 Reflexión metacognitiva ≈1 pt sobre 5 pts E-Misión (evaluación cualitativa · presencia + autenticidad)"
+        },
+        "facilitation_notes": [
+          "💡 La música marítima ceremonial es CRÍTICA — refuerza el ritual de cierre. NO use música popular · use sonidos de puerto + ambient marítimo.",
+          "💡 La luz baja es psicológicamente importante — invita a la introspección · contraste con la energía alta de la Misión Fases 1-4.",
+          "💡 Los 20 min silencio son SAGRADOS — NO interrumpa · NO pase entre las mesas · sólo observe desde el panel.",
+          "💡 Si un aprendiz llora durante este momento · respete · NO acerque pañuelos hasta el final · su silencio es respeto.",
+          "💡 Si un aprendiz NO encuentra evidencia de una prioridad S1 · no penalice — escriba '*Esta prioridad sigue siendo mi camino. La trabajaré después del curso.*' es respuesta válida.",
+          "💡 Los 3 voluntarios al final son AUTODESIGNADOS — NO obligue · si nadie se ofrece · instructor lee 1 prompt (d) anónimo de un sobre con permiso previo."
+        ],
+        "checkpoint": "✓ ≥90% de aprendices completaron los 4 prompts (verificación visual del instructor pasando entre filas SIN leer el contenido). 3 voluntarios autodesignados comparten prompt (d) en voz alta.",
+        "transition": "*Sacred silence. Now — your certificates. Captain Restrepo will call your name. Come forward. Receive your symbolic Port Operations Trainee certificate. This is the close of 100 hours of work.*",
+        "tecnica_didactica": "Reflexión circular de cierre con reapertura simbólica de contrato + autoevaluación cualitativa + L1 permitida (apartado personal post-evaluación)"
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 15,
+    "exit_ticket": {
+      "tarea": "Exit Ticket S12 LAST — Tarjeta 10×15 cm con 3 líneas: (1) ONE English maritime sentence I am proudest of from today's mission · (2) ONE word that captures my growth in 100 hours (English O Spanish) · (3) ONE wish for my future as Port Operations Trainee. Entregar en la caja del instructor antes de salir. La caja se abre y el instructor lee anónimamente en voz alta 3 ejemplos · cierre del curso.",
+      "success_criteria": "Las 3 líneas completas. Mínimo 1 frase inglés (línea 1). Línea 2 + 3 pueden ser bilingües. La caja queda como recuerdo del curso · instructor toma foto del conjunto.",
+      "duration_min": 5
+    },
+    "sintesis": "Hoy ejecutaste la Misión Final CML Port Turnaround condensada 3h. Hiciste el VHF Intake con Captain Lopera. Coordinaste el Berthing tripartito con Diego, Bosun Romero y Captain Lopera. Reportaste el Post-Turn al Capitán Restrepo. Hiciste tu Pitch Profesional 3 min ante panel. Respondiste Q&A con tag questions producción activa. Reabriste tu sobre amarillo Maritime Learning Contract sellado el Día 1 — leíste tus 3 prioridades · verificaste evidencia. Escribiste tu reflexión metacognitiva final. Recibiste tu certificado simbólico Port Operations Trainee de manos del Capitán Restrepo. 100 horas. 12 sesiones. 1 Misión cumplida. You ARE Port Operations Trainees now.",
+    "asignacion_autonoma": {
+      "actividad": "Portafolio Personal del Curso 100h — Cierre Final · 2.33 horas autónomas (≈140 min) · NO hay siguiente sesión · este es el legado",
+      "instrucciones_detalladas": [
+        "1. Recopila TODOS los entregables del curso 100h: Maritime KWL S1 + 5 fotos S1 + audios S2/S5/S6/S9 + Inspection Report S4 + diagrama ship parts S3 + Berthing Memo S8 + Radio Log S6/S8/S11 + Post-Turn Report S8 + video S9 + autoevaluación S10 + Pitch ensayo S11 + Misión Final completa S12 (audios VHF + Berthing + Post-Turn Report + Pitch + Q&A) + Reflexión metacognitiva S12 + sobre amarillo Maritime Learning Contract.",
+        "2. Organiza en carpeta digital o física por sesión (S1 a S12) · etiqueta cada archivo con nombre + sesión + tipo.",
+        "3. Escribe 1 página final en español O inglés titulada 'Mi camino como Port Operations Trainee — 100 horas IMARPOR-CC' — narrativa personal del crecimiento desde S1.",
+        "4. Adjunta el certificado simbólico Port Operations Trainee firmado por el instructor + sello SENA + cinta amarilla del Maritime Learning Contract.",
+        "5. Sube portafolio a plataforma Sofía Plus (carpeta Port Operations Trainee 100h) — fecha límite 7 días post-S12.",
+        "6. OPCIONAL: comparte foto del portafolio con instructor por WhatsApp — instructor recopila para recuerdo del curso 100h."
+      ],
+      "entregable": "Portafolio digital o físico completo S1-S12 + 1 página narrativa final + certificado + cinta amarilla Maritime Learning Contract.",
+      "cuando_se_revisa": "7 días post-S12 — instructor revisa portafolio en Sofía Plus · NO evaluación adicional (sólo verificación de entrega completa). Feedback breve por escrito en plataforma.",
+      "tiempo_estimado_min": 140,
+      "tiempo_estimado_horas": 2.333333
+    },
+    "bridge_to_next": "*There is no next session. There is only the rest of your professional life as Port Operations Trainees. Take what you learned. Use it in your first job. Send me a photo when you receive your first VHF call in a real port — I want to celebrate with you. ¡Buen viaje, equipo! Andrea is proud of you.*",
+    "teacher_talk_closing_en": "*Team — 100 hours ago, you walked into a classroom. Today, you walked out of Berth 4 of Puerto de Buenaventura. You are no longer my students. You are colleagues. Captain Lopera trusts you. Bosun Romero respects you. Diego coordinates with you. Captain Restrepo is proud of you. The CML CARRIER is just the first vessel — there will be many more. Take your certificate. Take your portfolio. Take your yellow envelope. Take your Pitch audio. Take what is yours. And remember — every time you hear VHF radio in a real port, every time you say Roger or Wilco or Standby, every time you spell a call sign with NATO Phonetic, every time you write a Berthing Memo — that is me, that is Andrea, that is Captain Restrepo, traveling with you. ¡Welcome to the rest of your career, Port Operations Trainees! Class dismissed — one last time.*",
+    "teacher_talk_closing_es_cursive": "*(Equipo, hace 100 horas entraron a un salón de clase. Hoy salen del Muelle 4 del Puerto de Buenaventura. Ya no son mis aprendices. Son colegas. El Capitán Lopera confía en ustedes. El Contramaestre Romero los respeta. Diego coordina con ustedes. El Capitán Restrepo está orgulloso de ustedes. El CML CARRIER es sólo el primer buque — vendrán muchos más. Tomen su certificado. Tomen su portafolio. Tomen su sobre amarillo. Tomen el audio de su Pitch. Tomen lo que es suyo. Y recuerden — cada vez que escuchen una radio VHF en un puerto real, cada vez que digan Roger o Wilco o Standby, cada vez que deletreen un call sign con NATO Phonetic, cada vez que escriban un Berthing Memo — soy yo, es Andrea, es el Capitán Restrepo, viajando con ustedes. ¡Bienvenidos al resto de su carrera, Aprendices de Operaciones Portuarias! Clase terminada — por última vez.) — RECORDATORIO: este Teacher Talk se entrega EN INGLÉS · español permitido en momento metacognitivo final · clase cierra en L2 con frase ¡Buen viaje, equipo!*",
+    "reflection_prompt": "Antes de salir · 30 segundos de silencio + foto grupal opcional: '*¿Qué versión de mí entró a este salón hace 100 horas? ¿Qué versión de mí sale ahora · Port Operations Trainee?*' (no se responde en voz alta · solo se siente · queda en el portafolio).",
+    "facilitation_notes": [
+      "💡 La entrega del certificado por nombre uno-a-uno es CEREMONIAL — Capitán Restrepo lee el nombre completo · aprendiz pasa al frente · saludo de mano + entrega del papel + foto opcional. NO apresure · 30 seg/aprendiz mínimo.",
+      "💡 La música marítima ceremonial baja durante la entrega de certificados refuerza el ritual.",
+      "💡 La foto grupal final es OPCIONAL pero ALTAMENTE RECOMENDADA — recuerdo del curso 100h · instructor toma la foto · imprime y entrega en la próxima oportunidad de encuentro o sube a grupo WhatsApp.",
+      "💡 Si un aprendiz llora al recibir certificado · respete · abrazo si lo permite · NO comente en voz alta.",
+      "💡 El cierre en L2 con la frase '¡Buen viaje, equipo!' es excepción permitida — energía emocional + identidad territorial.",
+      "💡 NO permita que el panel se vaya antes de la foto grupal — son parte del recuerdo del cierre.",
+      "💡 Si queda tiempo (<5 min): aplauso grupal sostenido 30 seg · cierre energético positivo. NO subestime el valor simbólico."
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "WHILE A — VHF Intake con Captain Lopera (PM-3.5 Fase 3.1)",
+      "items": [
+        {
+          "pregunta": "SMCP markers obligatorios en respuesta VHF",
+          "respuesta_correcta": "Roger · Wilco · Standby · Over · Out (mínimo 3 de 5)",
+          "alternativas": ["Affirmative en lugar de Roger es aceptable"],
+          "puntos": 1,
+          "nota": "C01 SMCP literacy ≈1 pt"
+        },
+        {
+          "pregunta": "NATO Phonetic spelling de pilot call sign",
+          "respuesta_correcta": "Papa-Whiskey-Two-Three (P-W-23) o equivalente con Alfa/Bravo/Charlie/etc.",
+          "alternativas": [],
+          "puntos": 1,
+          "nota": "C02 NATO accuracy ≈1 pt"
+        },
+        {
+          "pregunta": "Voz pasiva pasada esperada en VHF",
+          "respuesta_correcta": "The manifest was sent at 05:00 / Wind speed was confirmed",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Bonus voz pasiva pasada · suma a C04"
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE B — Berthing Coordination Tripartito (PM-3.5 Fase 3.2)",
+      "items": [
+        {
+          "pregunta": "Modales producción activa esperados",
+          "respuesta_correcta": "should · could · might (mínimo 1 de 3)",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Foco S7 reciclado"
+        },
+        {
+          "pregunta": "Condicional 1 esperado",
+          "respuesta_correcta": "If [present], we [will/can] [verb] · ej: If the wind stays under 20 knots, we can proceed",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Foco S8 reciclado"
+        },
+        {
+          "pregunta": "Tag questions de confirmación esperadas",
+          "respuesta_correcta": "The crane is ready, isn't it? · The pilot is on board, isn't he? · We can proceed, can't we?",
+          "alternativas": [],
+          "puntos": 1,
+          "nota": "C05 Q&A tag questions producción activa ≈1 pt parcial"
+        },
+        {
+          "pregunta": "Occupational structures esperadas",
+          "respuesta_correcta": "I report to / I coordinate with / I supervise / I am responsible for / I specialize in (mínimo 1 de 5)",
+          "alternativas": [],
+          "puntos": 1,
+          "nota": "C03 Tripartite coordination ≈1 pt"
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE C — Post-Turn Report Oral 90s (PM-3.5 Fase 3.3)",
+      "items": [
+        {
+          "pregunta": "Voz pasiva pasada obligatoria en reporte",
+          "respuesta_correcta": "The vessel was berthed · The cargo was inspected · The lines were secured by the deckhand · The pilot was disembarked (mínimo 2 de 4)",
+          "alternativas": [],
+          "puntos": 1,
+          "nota": "C04 Post-Turn Report passive voice ≈1 pt parcial"
+        },
+        {
+          "pregunta": "Estructura modelo 90s 4 secciones",
+          "respuesta_correcta": "Apertura 15s + Operaciones 45s + Incidente hipotético 15s OPCIONAL + Cierre 15s",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Tag question de cierre esperada",
+          "respuesta_correcta": "The vessel departed at 19:00, didn't it? / The cargo was inspected, wasn't it?",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Suma a C05"
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE D — Pitch Profesional 3 min (PM-3.5 Fase 4)",
+      "items": [
+        {
+          "pregunta": "5 master functions IMARPOR esperadas en Pitch",
+          "respuesta_correcta": "F1 Information Exchange + F2 SMCP literacy + F3 Coordinating Tripartite + F4 Modals + F5 Describing & Justifying (mínimo 4 de 5)",
+          "alternativas": [],
+          "puntos": 1,
+          "nota": "C04 Pitch profesional 3 min ≈1 pt"
+        },
+        {
+          "pregunta": "5 occupational structures obligatorias",
+          "respuesta_correcta": "I report to / I coordinate with / I am responsible for / I specialize in / I supervise (mínimo 3 de 5)",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Suma a C04"
+        },
+        {
+          "pregunta": "Presente perfecto en sección C (funciones momentáneas)",
+          "respuesta_correcta": "I have completed / The cargo has been inspected / The lines have been secured / The vessel has departed (mínimo 2 de 4)",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Suma a C04 · evidencia integración 17 grupos"
+        },
+        {
+          "pregunta": "Tag question producción activa cierre",
+          "respuesta_correcta": "This is what I do, isn't it clear? / You're satisfied with my work, aren't you, Captain?",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Suma a C05"
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE E — Q&A Panel + Peer Feedback (PM-3.5 Fase 4 cont)",
+      "items": [
+        {
+          "pregunta": "Tag questions del panel esperadas (modelo)",
+          "respuesta_correcta": "You're the supervisor, aren't you? · The cargo was inspected, wasn't it? · The pilot boarded, didn't he? · We can trust your VHF skills, can't we?",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Modelado para aprendiz"
+        },
+        {
+          "pregunta": "Respuestas modelo aprendiz con producción activa",
+          "respuesta_correcta": "Yes, I am the supervisor — that's correct, isn't it? / The cargo was inspected at 14:00, that's confirmed.",
+          "alternativas": [],
+          "puntos": 1,
+          "nota": "C05 Q&A tag questions producción activa ≈1 pt total"
+        },
+        {
+          "pregunta": "Peer feedback estructura 3 estrellas + 1 deseo",
+          "respuesta_correcta": "3 estrellas con frases modeladas (cinta verde) + 1 deseo con frase modelada (cinta amarilla)",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Verificación presencia · sin evaluación cualitativa"
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE F — Reflexión Metacognitiva + Reapertura Sobre Amarillo (PM-3.5 Fase 5)",
+      "items": [
+        {
+          "pregunta": "4 prompts reflexión metacognitiva",
+          "respuesta_correcta": "(a) Prioridad #1 + evidencia · (b) Prioridad #2 + evidencia · (c) Prioridad #3 + evidencia · (d) ¿Qué veo ahora que no vi el Día 1?",
+          "alternativas": [],
+          "puntos": 1,
+          "nota": "C06 Reflexión metacognitiva ≈1 pt (presencia + autenticidad · cualitativa)"
+        },
+        {
+          "pregunta": "L1 permitido en este momento",
+          "respuesta_correcta": "Sí — apartado personal post-evaluación · invitación a prompt (d) en inglés con scaffolding",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Frases modelo prompt (d) en inglés",
+          "respuesta_correcta": "What I see now that I did not see on Day 1: I can speak with Captain Lopera on the radio / SMCP is not magic — it's a vocabulary I learned / I am no longer afraid of English in the port / Andrea is me — and I am Andrea",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Modelo · no evaluado · personal"
+        }
+      ]
+    },
+    {
+      "actividad": "WRAP-UP — Entrega Certificado + Cierre Curso 100h",
+      "items": [
+        {
+          "pregunta": "Certificado simbólico entregado por",
+          "respuesta_correcta": "Capitán Restrepo (panel evaluador) · firma instructor + sello SENA + nombre aprendiz pre-impreso",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Asignación autónoma final",
+          "respuesta_correcta": "Portafolio Personal completo S1-S12 + 1 página narrativa + certificado + cinta amarilla Learning Contract · entrega 7 días post-S12 en Sofía Plus",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Verificación entrega · no evaluación adicional"
+        },
+        {
+          "pregunta": "Suma total puntos rúbrica E-Misión",
+          "respuesta_correcta": "C01 + C02 + C03 + C04 + C05 + C06 = 6 criterios × ≈0.83 pts = 5 pts E-Misión total",
+          "alternativas": ["Distribución alterna: C01-C03 ≈2 pts (técnica) + C04-C05 ≈2 pts (presentación) + C06 ≈1 pt (reflexión) = 5 pts"],
+          "puntos": 5,
+          "nota": "E-Misión 5 pts es la última evidencia formal del curso 100h"
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "En WHILE A: usar 5 SMCP markers (en lugar de mínimo 3) + condicional 1 hipotético en VHF response.",
+      "En WHILE B: usar 3 modales diferentes (should + could + might) + 2 tag questions + 1 voz pasiva presente continuo en coordinación.",
+      "En WHILE C: incluir condicional 3 (hipotético pasado · 'If the wind had increased, we would have delayed') · bonus C06.",
+      "En WHILE D: incluir voz pasiva pasada en sección C del Pitch (ej: 'The cargo was inspected and the lines were secured by the deckhand · the operation was completed at 19:00').",
+      "En WHILE E: responder Q&A en 30 seg en lugar de 90 seg · usar 2 tag questions producción activa por respuesta.",
+      "En WHILE F: escribir TODA la reflexión metacognitiva en inglés (los 4 prompts).",
+      "Rol de peer tutor en peer feedback: ayudar a 1 compañero a estructurar sus 3 estrellas + 1 deseo en inglés.",
+      "Voluntario advanced para interpretar Diego o Bosun Romero en WHILE B (ayuda al instructor)."
+    ],
+    "more_support_needed": [
+      "Tiempo extra en WHILE A (hasta 3 min) si SMCP markers no salen fluidos — instructor (Captain Lopera) modela con respuesta más simple.",
+      "En WHILE B — permitir que aprendiz pida '*One at a time, please*' al panel · NO penalizar fluidez complejidad.",
+      "En WHILE C — ofrecer plantilla pre-rellenada de Post-Turn Report con espacios fill-in (The vessel was berthed at ___ · The cargo was inspected at ___).",
+      "En WHILE D — permitir que aprendiz lea el Pitch desde notas (NO memorizar 100%) · panel marca C04 igual con notas si frases salen claras.",
+      "En WHILE E — panel hace preguntas más simples ('Were you the supervisor?' en lugar de 'You're the supervisor of berthing operations, aren't you?') con tag question opcional.",
+      "En WHILE F — escribir reflexión metacognitiva 100% en español · solamente prompt (d) intentar 1 frase en inglés con apoyo del Maritime Word Wall.",
+      "Acompañamiento uno-a-uno post-Misión: '*How was your mission? What was hard? What are you proud of? What do you want to keep practicing after this course?*' — instructor escucha · NO corrige · valida emocionalmente.",
+      "Si aprendiz no completa Pitch 3 min (se queda en 90 seg) · panel marca C04 parcial pero respeta la entrega · NO obliga a extender."
+    ]
+  },
+  "instructor_self_check": [
+    "✓ ¿Activé English Zone al inicio + mantuve L1 = 0% durante toda la Misión EXCEPTO en WHILE F reflexión metacognitiva (apartado personal post-evaluación)?",
+    "✓ ¿Capitán Restrepo entró con uniforme portuario + agente naviero externo se presentó formalmente con título profesional + empresa al panel?",
+    "✓ ¿Recogí los sobres amarillos guardados durante 11 sesiones + entregué ceremonialmente cada uno con el nombre del aprendiz al inicio de WHILE F?",
+    "✓ ¿La Misión cumplió las 5 fases ABP completas (VHF Intake + Berthing Tripartito + Post-Turn Report + Pitch + Q&A) + Reflexión Metacognitiva con reapertura del sobre amarillo?",
+    "✓ ¿Entregué el certificado simbólico Port Operations Trainee a cada aprendiz con saludo de mano + foto opcional + firma instructor + sello SENA + cinta amarilla Maritime Learning Contract?",
+    "✓ ¿La rúbrica E-Misión 6 criterios C01-C13 SOFÍA fue marcada por panel en silencio durante toda la Misión + feedback diferido vía rúbrica escrita por aprendiz post-S12?",
+    "✓ ¿El portafolio personal asignado autónomo (140 min) cubre la totalidad del curso 100h con narrativa final + certificado + cinta amarilla?",
+    "✓ ¿Reabrí el sobre amarillo Maritime Learning Contract sellado en S1 con ceremonia + música marítima ceremonial + luz baja + 20 min silencio individual?"
+  ],
+  "activity_logistics": {
+    "espacio": "Aula transformada en 'CML Port Turnaround Mission Room' con 3 zonas operacionales (VHF station + yard simulado + bridge simulado) + panel evaluador frente con sillas para Capitán Restrepo + agente naviero externo + sillas audiencia compañeros + cronómetro proyectable + Maritime Word Wall completo iluminado (25 términos + 30+ SMCP + NATO) + Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2. English Zone activada toda la sesión salvo reflexión metacognitiva.",
+    "agrupamiento": "Plenaria ceremonial inicial (SET-UP) → Individual turno con panel observando (WHILE A · B · C · D · E) → Parejas peer feedback inmediato post-Q&A (WHILE E) → Individual silencio profundo (WHILE F reflexión + reapertura sobre) → Plenaria ceremonial final (WRAP-UP entrega certificados + foto grupal). Transiciones rápidas con Teacher Talk corto + cronómetro estricto.",
+    "recursos": [
+      "Misión Final CML CARRIER kit completo (briefing + cue cards 3 zonas + timeline 12h condensada)",
+      "Walkie-talkies × 6-8 sets o app móvil VHF simulator probada",
+      "Rúbrica E-Misión 6 criterios C01-C13 SOFÍA × 3 copias (panel + backup)",
+      "Reflexión metacognitiva handout 4 prompts × 25 copias",
+      "Certificado simbólico Port Operations Trainee × 25 (papel A4 calidad · firma instructor + sello SENA + nombre pre-impreso)",
+      "Sobres amarillos sellados con Maritime Learning Contract × 25 (firmados S1 · guardados 11 sesiones)",
+      "Cronómetro proyectable + backup celular",
+      "SMCP Reference Card laminada × 25 (entregada S5 · permanente · aprendices traen las suyas)",
+      "NATO Phonetic Alphabet Reference Card × 25 (entregada S5 · permanente)",
+      "Maritime Word Wall completo (25 términos + 30+ SMCP + NATO acumulado S2-S11)",
+      "Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 permanentes",
+      "Radio scanner ambiente o playlist sonidos puerto",
+      "Micrófono inalámbrico + amplificador (Pitch 3 min)",
+      "Cámara/tablet para grabar audio Pitch + reflexión final",
+      "Música marítima ceremonial muy baja (playlist seleccionada)",
+      "Cinta cromática verde + amarilla (peer feedback 3 estrellas + 1 deseo)",
+      "Caja del instructor para Exit Tickets S12 (cierre simbólico)"
+    ],
+    "tiempo": {
+      "set_up": 30,
+      "while_total": 300,
+      "break": 15,
+      "wrap_up": 15,
+      "total_directo_min": 360,
+      "autonomo_min": 140,
+      "autonomo_horas": 2.333333,
+      "total_aprendiz_horas": 8.333
+    },
+    "plan_b": "Si panel agente naviero externo no asiste: Capitán Restrepo + instructor cubren rol dual con cambio físico de silla. Si walkie-talkies fallan: usar app móvil VHF simulator. Si <60% asistencia día 12: Misión reducida 90 min + Pitch 2 min · NO comprometer reapertura sobre amarillo · NO comprometer certificado · NO comprometer reflexión metacognitiva. Si energía baja al inicio: 3 min ceremonia inicio con Capitán Restrepo entrando uniformado. Si proyector falla: usar mapa A2 muro como infografía. Si cámara grabadora falla: usar celulares de aprendices para grabar Pitch. Si micrófono falla: aprendiz pasa cerca al panel · proyección vocal natural · NO comprometer Pitch."
+  },
+  "totals_check": {
+    "set_up": 30,
+    "while_bloque_a": 60,
+    "while_bloque_b": 60,
+    "break": 15,
+    "while_bloque_c": 60,
+    "while_bloque_d": 60,
+    "while_bloque_e": 30,
+    "while_bloque_f": 30,
+    "wrap_up": 15,
+    "total_min": 360,
+    "check_result": "EXACTO 360 min directos (6h) + 140 min autónomo (≈2.33h portafolio final) = 500 min totales = 8.33h aprendiz S12. Coherente con header.duracion_sesion_min de pm-3-1 + horas autónomas pm-2-0 sessions[11]. Suma: SET-UP 30 + WHILE-A 60 + WHILE-B 60 + BREAK 15 + WHILE-C 60 + WHILE-D 60 + WHILE-E 30 + WHILE-F 30 + WRAP-UP 15 = 360 min ✓"
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    },
+    "downstream_consumers": [
+      "PM-3.3 Canva Slides — referencias a Mission Room layout + cronómetro + certificado + sobre amarillo + foto grupal",
+      "PM-3.4 Workbook — Workbook Cap. 12 Course Closure Portfolio (recopilación S1-S12 + narrativa final)",
+      "PM-3.6 Activity Logistics — A12.1 to A12.7 IDs derivados de WHILE A-F + WRAP-UP entrega certificado",
+      "PM-2.11 Check 14 — validación propagación estrategia_didactica + tecnicas[] + pm0_protocol cross-ref · L1=0% · descriptor_focus A2.1 hacia B1.0",
+      "PM-4.1 — Rúbrica E-Misión 6 criterios C01-C13 SOFÍA · 5 pts cierre canon 55 + 5 pts E-Misión = 60 pts curso 100h"
+    ]
+  },
+  "rap_status": "S12 LAST · CIERRE CURSO 100h IMARPOR-CC (preliminary · pendiente Gate Humano 3) — Misión Final CML Port Turnaround condensada 3h ejecutada (VHF Intake 60 min + Berthing Tripartito 60 min + Post-Turn Report 60 min + Pitch Profesional 3 min × 25 + Q&A panel + Peer Feedback). Reflexión metacognitiva final 'What I see now that I did not see on Day 1' completada con reapertura ceremonial del sobre amarillo Maritime Learning Contract sellado en S1 (11 sesiones guardado · 3 prioridades personales releídas · evidencia portafolio S2-S11 verificada). Certificado simbólico Port Operations Trainee entregado por Capitán Restrepo a cada aprendiz. E-Misión 5 pts evaluada con Rúbrica ABP 6 criterios C01-C13 SOFÍA (C01 SMCP literacy + C02 NATO accuracy + C03 Tripartite coordination + C04 Pitch profesional + C05 Q&A tag questions producción activa + C06 Reflexión metacognitiva). Maritime Word Wall completo (25 términos + 30+ SMCP + NATO acumulado S2-S11) fotografiado al inicio como cierre simbólico. Foto grupal final del curso 100h capturada. Bloque Interno 4 (RAP-04 · A2.1 umbral hacia B1.0) cerrado. NO HAY siguiente sesión — portafolio personal final asignado (140 min · 7 días post-S12 entrega Sofía Plus). Curso 100h IMARPOR-CC CERRADO. Próxima ejecución pipeline: PM-2.11 Check 14 validación propagación + PM-4.x reportería evaluativa + Hito 3 Fase 4 cierre.",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[11]",
+    "__contract_version__": "v2.5.1 (mapping per pm-3-1.pm_3_2_propagation_contract)",
+    "fpi_block": "3.4 Transferencia (Cierre · Misión Final delivery)",
+    "grammar_groups": {
+      "intro": [
+        {
+          "group_id": "Gr 16",
+          "group_name": "Tag questions PRODUCCIÓN ACTIVA (You're the supervisor, aren't you? / The pilot boarded at 06:00, didn't he?)",
+          "nivel_activacion": "Intro",
+          "ejemplo_en_sesion": "Andrea respondiendo panel: 'You're asking about wind conditions, aren't you? The cargo was inspected, wasn't it?'"
+        },
+        {
+          "group_id": "Gr 13 (extension)",
+          "group_name": "Voz pasiva pasada (The cargo was inspected yesterday)",
+          "nivel_activacion": "Intro",
+          "ejemplo_en_sesion": "Andrea en Post-Turn Report oral: 'The cargo was inspected at 14:00. The lines were secured by the deckhand.'"
+        }
+      ],
+      "consolida": [],
+      "aplica": [
+        {
+          "group_id": "Gr 1-17 (TODOS)",
+          "group_name": "Todos los 17 grupos del curso en aplicación libre integrada",
+          "nivel_activacion": "Aplica",
+          "ejemplo_en_sesion": "Misión Final demanda integración total — sin prescripción gramatical específica · 17 grupos en uso autónomo."
+        }
+      ],
+      "carga_check": "2/2 Intro (Gr 16 + Gr 13 ext) + 17 Aplica (PM-0 §9.2) ✓ — cierre con tag questions críticas + voz pasiva pasada como herramientas de Q&A panel + integración libre 17 grupos en Misión",
+      "active_receptive_only": []
+    },
+    "feedback": {
+      "mode": "FLUENCY + AUTO-EVALUACIÓN + EVALUACIÓN EXTERNA",
+      "rationale": "Cierre del curso — prioridad performance real + reflexión metacognitiva. Feedback del panel (Capitán Restrepo + agente naviero externo) es diferido vía rúbrica E-Misión 6 criterios C01-C13. PM-0 §5.11 — nivel máximo de autonomía A2.1 umbral hacia B1.0. Auto-evaluación con rúbrica E-Misión + peer feedback estructurado (3 estrellas + 1 deseo).",
+      "accuracy_techniques": [],
+      "fluency_techniques": [
+        "Aprendiz monitorea su propio output durante turnos (auto-monitoreo PM-0 §5.13)",
+        "Ensayo en parejas 5 min antes de la Misión (auto-stress-checking)",
+        "Ensayo individual silencioso frente al espejo durante BREAK (auto-monitoreo del Pitch 3 min)",
+        "Cronómetro estricto en cada turno (autoregulación temporal)"
+      ],
+      "mixed_techniques": [
+        "Peer feedback post-Q&A inmediato (3 estrellas + 1 deseo · cinta cromática verde + amarilla)",
+        "Auto-evaluación con rúbrica E-Misión 6 criterios C01-C13 (post-Misión · personal)",
+        "Feedback diferido del instructor + agente naviero externo vía rúbrica escrita (entrega 7 días post-S12 en Sofía Plus)",
+        "Reflexión metacognitiva final con prompt 'What I see now that I did not see on Day 1' (reapertura sobre amarillo Maritime Learning Contract S1)"
+      ],
+      "notes": "S12 NO tiene corrección invasiva durante la Misión. Errores observados se anotan en rúbrica para feedback diferido escrito post-S12. La Misión es performance real — no espacio para corrección en vivo (sólo rescatar aprendiz si está bloqueado >30 seg con modelo lingüístico mínimo)."
+    },
+    "l1_management": {
+      "l1_percentage": 0,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_4.S12 — 0% Misión Final 100% L2 (PM-0 §9.1)",
+      "l1_rationale": "Misión Final 100% L2. Cierre del curso. Sólo reflexión metacognitiva final permite L1 (apartado personal · post-evaluación). Felicitaciones de cierre L2. La frase '¡Buen viaje, equipo!' al final es excepción simbólica permitida — energía emocional + identidad territorial.",
+      "english_zone_declaration": "ACTIVADA toda la sesión EXCEPTO durante WHILE F (reflexión metacognitiva · 20 min silencio individual donde L1 está permitido en handout personal). Inicio + WHILE A-E + WRAP-UP entrega certificado = 100% L2.",
+      "l1_allowed_for": [
+        "WHILE F — Reflexión metacognitiva final (4 prompts guiados · escritura personal en handout · L1 permitido total)",
+        "Sólo si presión afectiva extrema durante reapertura del sobre amarillo (apoyo emocional uno-a-uno · NO público)",
+        "Frase ceremonial cierre '¡Buen viaje, equipo!' (excepción simbólica final · 1 sola frase)"
+      ],
+      "reduction_strategy": "S12 es el FINAL de la curva descendente L1 que arrancó en S1 con 25% · S2 → 20% · S3 → 15% · S5 → 10% · S6 → 8% · S7-S9 → 5% · S10-S11 → 2-3% · S12 → 0%. La curva descendente está documentada en pm-0-context.l1_percentage_per_session.single_guide_12_sessions y se cumple integralmente."
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "Reciclaje total — palabras del vocabulario personal elegido por el aprendiz para su Misión",
+          "ipa": "varies por aprendiz (autonomía plena S12)",
+          "tonica": "auto-monitoreo aprendiz · sin prescripción del instructor"
+        },
+        {
+          "word": "tag questions stress crítico — auxiliar contraído",
+          "ipa": "/aren't/ /wasn't/ /didn't/ /can't/ /isn't/",
+          "tonica": "intonación rising vs falling según función (confirmation = falling · genuine question = rising)"
+        }
+      ],
+      "techniques": [
+        "Sin drilling formal — el aprendiz monitorea su propio output en ensayo previo + Misión real",
+        "Ensayo en parejas 5 min antes de la Misión (auto-stress-checking en SET-UP)",
+        "Ensayo individual silencioso frente al espejo durante BREAK (auto-monitoreo Pitch 3 min)",
+        "Stress contrastivo en tag questions: rising intonation vs falling intonation según función pragmática"
+      ],
+      "board_marking": "Tag Questions Cheat Sheet permanente en columna lateral izquierda del tablero (resumen S11) + 5 occupational structures con stress en MAYÚSCULA: I REPORT to · I COORDINATE with · I am responSIBLE for · I SPEciaLIZE in · I SUPERvise.",
+      "notes": "S12 aplica stress con AUTONOMÍA PLENA — el aprendiz internalizó las técnicas de stress S2-S11. El instructor NO modela en S12 · sólo el aprendiz auto-monitorea. Última sesión del curso 100h · cierre del Sounds factor (PM-0 §5.5).",
+      "source": "PM-0 §5.13 — aplicado con autonomía plena"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "port",
+        "berth",
+        "vessel",
+        "radio",
+        "captain",
+        "terminal",
+        "container",
+        "Buenaventura",
+        "trainee",
+        "operations",
+        "Roger",
+        "Wilco",
+        "Standby",
+        "Over",
+        "Out",
+        "SMCP",
+        "NATO",
+        "Affirmative",
+        "Negative",
+        "Mayday",
+        "Pan-pan",
+        "Securité",
+        "berthing",
+        "anchorage",
+        "pilot",
+        "tag question",
+        "passive voice",
+        "occupational structures"
+      ],
+      "factors_applied": [
+        "Use (Misión real)",
+        "Self-expression (defensa del rol profesional en Pitch + Q&A)",
+        "Spaced_repetition (total curso 100h · 12 sesiones · 25 términos consolidados)",
+        "Synergy (5 habilidades integradas en Misión: Reading + Writing + Listening + Speaking + Grammar)",
+        "Creativity (outcomes de la Misión según decisiones operacionales del aprendiz)"
+      ],
+      "operationalization": "Use: simulación 3h + Pitch 3 min + Q&A 10 min · uso autónomo de TODOS los términos integrados. Self-expression: cada Misión es ÚNICA según decisiones del aprendiz (qué SMCP usa · qué tag questions construye · qué occupational structures incluye en Pitch · qué incidente hipotético menciona). Spaced repetition: 25 términos en uso después de 11 sesiones (efecto máximo · curva del olvido vencida). Synergy: 1 sola Misión integra Reading (briefing CML) + Writing (Memo + Log + Report del aprendiz) + Listening (VHF + panel Q&A) + Speaking (Pitch + Q&A + reflexión voluntaria) + Grammar (los 17 grupos activos en uso libre). Creativity: outcomes según decisiones operacionales del aprendiz · no hay 1 sola respuesta correcta.",
+      "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS)"
+    },
+    "physical_environment": "Aula transformada en 'CML Port Turnaround Mission Room' con 3 zonas operacionales delimitadas (VHF station + yard simulado + bridge simulado) + panel evaluador frente con sillas para Capitán Restrepo (uniformado) + agente naviero externo + sillas audiencia compañeros + cronómetro proyectable visible toda la sesión + Maritime Word Wall completo iluminado (25 términos + 30+ SMCP + NATO acumulado S2-S11) + Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 + radio scanner ambiente bajo + micrófono inalámbrico (Pitch) + cámara/tablet (grabación portafolio) + cinta cromática verde+amarilla (peer feedback) + sobres amarillos Maritime Learning Contract en caja visible + certificados simbólicos en bandeja + música marítima ceremonial muy baja en momentos clave (reapertura sobre amarillo + entrega certificado).",
+    "cefr_descriptor_focus": {
+      "subnivel": "A2.1 (umbral hacia B1.0)",
+      "habilidad_principal": "produccion_oral + interaccion_oral",
+      "descriptor_activo": "Pitch profesional formal de 3 min: introducción + funciones habituales + funciones momentáneas + cierre. Tag questions producción activa. Comprende preguntas de panel sobre rol profesional y responde con voz pasiva pasada + occupational structures + tag questions de confirmación. Coordina tripartito en simulación operacional.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_4_S10-S12_RAP04_A2.1 — nivel máximo del curso 100h alcanzado · umbral hacia B1.0 abierto"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Natural — aprendiz controla su Misión · ritmo profesional simulado",
+      "extension_textos": "Misión 3h operacional + Pitch 3 min + Q&A 10 min + Reflexión metacognitiva escrita 4 prompts (1 página)",
+      "andamiaje": "CERO — sólo SMCP/NATO Reference Cards permanentes (entregadas S5) + cronómetro visible + rúbrica E-Misión entregada al panel · NO scaffolding del instructor",
+      "rol_docente": "Evaluador externo (simula agente naviero o coordina Captain Lopera detrás de barrera VHF) + cerrador del curso (entrega certificado simbólico · firma + sello + nombre del aprendiz)",
+      "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_4 (evaluador externo · andamiaje cero · cierre del curso)"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "B7 — Autoevaluación con rúbrica E-Misión 6 criterios C01-C13",
+        "B8 — Andamiaje CERO (aprendiz lidera · sólo Reference Cards permanentes)",
+        "C4 — Complejidad cognitiva L4-L5 Bloom (Analyze · Evaluate · Create — Misión integra)",
+        "D1 — Misión Final es el CIERRE del canon 55 + 5 pts E-Misión = 60 pts curso 100h",
+        "D2 — Can-do 'Pitch profesional 3 min + Q&A panel + Misión Final operacional 3h' asociado a E-Misión",
+        "D3 — Rúbrica E-Misión 6 criterios C01-C13 SOFÍA observables · feedback diferido vía escrita 7 días post-S12"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 S12 LAST debe completar checklist completo. Aquí se siembran los 6 más relevantes para S12 IMARPOR-CC cierre del curso 100h."
+    }
+  }
+}

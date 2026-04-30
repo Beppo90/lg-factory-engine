@@ -1,0 +1,1029 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.5",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
+  "session": 5,
+  "session_name": "The Pilot's Apprentice — Listening to SMCP",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide": "G1 — The Maritime Operations Pro",
+  "guia_numero": 1,
+  "programa": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo": "12340002",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.6 (Listening anchor VHF dialogue Captain Lopera ↔ Andrea 90s con interferencia simulada)",
+    "PM-2.5 (extensión SMCP toolbelt — 10 frases SMCP + NATO Phonetic Alphabet completo)"
+  ],
+  "habilidades_foco": [
+    "Listening (●) — VHF dialogue 90s Captain Lopera ↔ Andrea con interferencia simulada · 3 escuchas (gist · detail · task) · Lista Verificación E3 5 pts",
+    "Vocabulary (●) — 10 frases SMCP estandarizadas (Roger · Wilco · Affirmative · Negative · Standby · Out · Over · Say again · Spell that · Repeat) + NATO Phonetic Alphabet completo (Alpha-Zulu)",
+    "Pronunciation (●) — stress crítico SMCP (RO-ger · WIL-co · afFIRmative · STAND-by) + NATO Phonetic stress (CHARlie · noVEMber · ZULU)"
+  ],
+  "habilidades_soporte": [
+    "Speaking (○) — producción 5 deletreos NATO Phonetic + 3 confirmaciones SMCP en respuesta a prompts (preparación pre-S6 VHF Response)",
+    "Grammar (○) — Gr 17 (Maritime SMCP key phrases · INTRO) + Gr 8 (Wh-questions presente simple · INTRO) — sin producción gramatical formal · sólo reconocimiento receptivo en VHF dialogue"
+  ],
+  "cefr": "A1.3 (apertura Bloque Interno 2 · RAP-02)",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-29",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "preliminary",
+  "_status_preliminary_rationale": "Build-Out generado por subagente PM-3.2 piloto behavioral · Gate Humano 3 (aprobación Playbook S5) pendiente · Sergio confirma cambiando a 'completed' tras revisión de coherencia con PM-2.6 (VHF Listening anchor) + PM-2.5 (SMCP toolbelt extensión) + pm-3-1 sessions[4] + pm0_alignment_by_session[4]. Apertura Bloque Interno 2 RAP-02 — primera sesión con SMCP/NATO Reference Cards laminadas permanentes.",
+  "momento_sena": "3.3 Apropiación — Input auditivo",
+  "estrategia_didactica": "ABT — Escucha activa secuencial VHF + Drilling SMCP + NATO Phonetic Alphabet",
+  "justificacion_didactica": "S5 abre el Bloque Interno 2 (RAP-02 · A1.3) con la primera sesión de input auditivo formal del programa · transitando del cierre Bloque 1 escrito (S4 Inspection Report) al universo VHF Captain Lopera. La estrategia ABT con escucha activa secuencial estructura 3 escuchas distintas del mismo audio VHF de 90s con interferencia simulada (gist → detail → task) · cada una con foco diferente y answer key específico. Drilling SMCP es bloqueante (PM-0 §5.13 IMARPOR-CC) — Roger/Wilco mal pronunciado puede causar accidente operacional · por eso accuracy crítico SMCP convive con fluency en inglés operativo (feedback MIXTO). NATO Phonetic Alphabet completo (Alpha-Zulu · 26 letras) entra en finger drilling intensivo + clapping rítmico + backchaining (vember → November) — el aprendiz produce 5 deletreos NATO de su nombre completo + ciudad como evidencia E3 Listening (5 pts · Lista Verificación No 3). SMCP Reference Card + NATO Phonetic Reference Card laminadas se distribuyen como compañeros permanentes hasta S12 — uno de los rituales más significativos del programa. L1 ≤ 12% — sólo para meta-instrucción inicial sobre interferencia VHF + rationale del NATO Phonetic. Cierre con preview S6 (VHF Response Drill — Speaking con Captain Lopera · uso productivo de SMCP en simulación tripartita). Continuidad narrativa: la Inspection Report de S4 fue firmada por Capitán Restrepo · ahora Captain Lopera llama por radio al BUENAVENTURA EXPRESS Berth 4.",
+  "session_header": {
+    "titulo": "SESSION 5: The Pilot's Apprentice — Listening to SMCP",
+    "subtitulo": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Build-Out — Playbook v2.5",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.6 — Listening Master Anchor (VHF dialogue Captain Lopera ↔ Andrea 90s con interferencia simulada · 3 escuchas secuenciales gist → detail → task)",
+      "PM-2.5 (extensión SMCP toolbelt) — 10 frases SMCP estandarizadas + NATO Phonetic Alphabet Alpha-Zulu (26 letras) + clasificación SMCP por función"
+    ],
+    "habilidades_foco": [
+      "Listening (●) — VHF dialogue 90s · 3 escuchas secuenciales · E3 5 pts Lista Verificación No 3",
+      "Vocabulary (●) — 10 SMCP key phrases + NATO Phonetic Alphabet completo",
+      "Pronunciation (●) — stress crítico SMCP (Roger / Wilco / Affirmative / Standby) + NATO Phonetic"
+    ],
+    "habilidades_soporte": [
+      "Speaking (○) — 5 deletreos NATO + 3 confirmaciones SMCP (preparación pre-S6)",
+      "Grammar (○) — Gr 17 SMCP INTRO receptivo + Gr 8 Wh-questions INTRO receptivo (sin producción formal)"
+    ],
+    "objetivos_pedagogicos": [
+      "(1) Comprender 10 frases SMCP estandarizadas (Roger · Wilco · Affirmative · Negative · Standby · Out · Over · Say again · Spell that · Repeat) en un diálogo VHF de 90 segundos entre Captain Lopera y Andrea con interferencia simulada · clasificándolas por función (confirmar / pedir clarificación / reportar / solicitar).",
+      "(2) Decodificar el NATO Phonetic Alphabet completo (Alpha-Zulu · 26 letras) en un deletreo de call sign 'Charlie-Oscar-Lima' y producir 5 deletreos NATO propios (nombre completo + ciudad del aprendiz · audio 60s).",
+      "(3) Producir 3 confirmaciones SMCP correctas (Roger · Wilco · Affirmative) en respuesta a prompts del instructor en escenarios cortos (preparación pre-S6 VHF Response).",
+      "(4) Demostrar concentración auditiva al filtrar interferencia VHF reconociendo que la escucha precisa es condición de seguridad operacional en el sector marítimo internacional (PM-0 §5.10 SUCCESS factors actitudinal).",
+      "(5) Recibir SMCP Reference Card + NATO Phonetic Reference Card laminadas — compañeros permanentes desde S5 hasta S12 (ritual de apertura RAP-02)."
+    ],
+    "plan_b": "Si <50% asistencia: aplazar producción NATO 5 deletreos a S5 wrap-up extendido + S6 warm-up · usar tiempo extra en escucha repetida con SMCP Reference Card. Si parlantes fallan: usar app móvil VHF en celulares en parejas (1 audio compartido entre 2-3 aprendices · Plan B documentado en pm0_alignment_by_session[4].materiales_clave). Si walkie-talkies no llegan: barrera de cartulina entre parejas + voz humana del instructor simulando interferencia VHF (susurros + cubrir boca con mano). Si la cohorte se atora con NATO Phonetic (>40% no recuerda 5 letras tras drilling): reducir alcance a 10 letras críticas (Alpha · Bravo · Charlie · Delta · Lima · November · Oscar · Sierra · Tango · Zulu) y dejar las 16 restantes para autónomo. Si Lista Verificación E3 no está lista: usar checklist genérico de 5 ítems Listening en tablero + foto para registro · Sergio adjunta versión final post-S5. Si SMCP Reference Cards no están laminadas: distribuir copias en papel A5 con instrucción explícita 'laminar antes de S6 — son permanentes'.",
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk pre-modelado bilingüe. Duración suma exacta 360 min directos + 140 min autónomo (≈2.33h). L1 ≤ 12% del tiempo de instrucción (sólo para meta-instrucción inicial interferencia VHF + rationale del NATO Phonetic). E3 Listening 5 pts es el segundo entregable evaluado del programa — primer evidencia de comprensión auditiva. SMCP Reference Card + NATO Reference Card laminadas son hito ritual del programa — presentar con ceremonia al final de SET-UP."
+  },
+  "materials_checklist": [
+    {
+      "item": "PM-2.6 Listening Master Anchor handout — VHF dialogue script (post-listening · NO durante listening 1 y 2) + 3 cuestionarios secuenciales (gist · detail · task)",
+      "cantidad": "1 set por aprendiz (estimado 25 sets) + 3 sets respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Audio file VHF dialogue Captain Lopera ↔ Andrea 90s con interferencia simulada (TTS dos voces · 0.95x velocidad VHF realista · static crackle background) — VERIFICAR que funciona en parlantes",
+      "cantidad": "1 archivo digital + USB respaldo + app móvil respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Parlantes calidad volumen VHF realista (no perfecto · ligera distorsión esperada para realismo)",
+      "cantidad": "1 set + cables + adaptador laptop",
+      "verificado": false
+    },
+    {
+      "item": "Walkie-talkies simulados (o app móvil VHF en celulares) — 1 set por pareja para prácticas SMCP segmento DURING_listening_3 task",
+      "cantidad": "8-12 sets (1 por pareja · 24 aprendices) + Plan B barrera cartulina",
+      "verificado": false
+    },
+    {
+      "item": "SMCP Reference Card laminada (10 frases standard · clasificación por función · stress en MAYÚSCULA · IPA pequeño)",
+      "cantidad": "1 por aprendiz · 25 cards + 5 respaldo · permanentes desde S5 hasta S12",
+      "verificado": false
+    },
+    {
+      "item": "NATO Phonetic Alphabet Reference Card laminada (Alpha-Zulu · 26 letras · stress en MAYÚSCULA · ejemplos de uso en call signs)",
+      "cantidad": "1 por aprendiz · 25 cards + 5 respaldo · permanentes desde S5 hasta S12",
+      "verificado": false
+    },
+    {
+      "item": "PM-2.5 SMCP toolbelt extensión handout — 10 SMCP key phrases con función + ejemplos + tabla clasificación 4 columnas (CONFIRMAR / PEDIR CLARIFICACIÓN / REPORTAR / SOLICITAR)",
+      "cantidad": "1 por aprendiz + 3 respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Lista Verificación E3 Listening — 5 criterios × 1 pt = 5 pts (PM-4.1 Listening rubric)",
+      "cantidad": "1 por aprendiz + clave docente impresa",
+      "verificado": false
+    },
+    {
+      "item": "Transcripción impresa del VHF dialogue (1 página A4 · solo se distribuye POST-listening 2 · NUNCA antes)",
+      "cantidad": "25 copias selladas en sobre 'NO ABRIR HASTA INSTRUCCIÓN' + 3 respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Cue cards con 5 escenarios de deletreo NATO (nombre completo del aprendiz + ciudad personal) — template genérico que cada aprendiz personaliza",
+      "cantidad": "25 sets · 5 cards cada uno + 5 respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Grabadora digital (o app móvil) para grabar 5 deletreos NATO de cada aprendiz — audio 60s (entra a portafolio S12)",
+      "cantidad": "1 grabadora central + celulares de aprendices respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Word Wall actualizado con tarjetas Sub-bloque 1 (S2-S4 · 15 tarjetas) + 10 SMCP key phrases (S5 · NUEVAS) + NATO Phonetic Alphabet completo (S5 · NUEVO · Alpha-Zulu) — total 51 tarjetas al cierre S5",
+      "cantidad": "1 Word Wall · 51 tarjetas total al cierre S5",
+      "verificado": false
+    },
+    {
+      "item": "Diagrama VHF Channel 16 + International Maritime Bands (proyectable + impreso A2) — referencia visual permanente desde S5",
+      "cantidad": "1 muro lateral + proyectable",
+      "verificado": false
+    },
+    {
+      "item": "Mapa Terminal de Contenedores Buenaventura A2 con Berth 4 destacado + ruta del piloto desde Pilot Boarding Point (offshore) — actualizado para S5",
+      "cantidad": "1 muro frontal · ya pegado desde S1 + sticker piloto",
+      "verificado": false
+    },
+    {
+      "item": "Cronómetro visible en pantalla",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Audio de fondo: ambient sounds puerto (gaviotas · radio chatter lejano · motores barcos) volumen MUY bajo durante WHILE B detail listening + WHILE D production NATO",
+      "cantidad": "1 archivo + bocinas",
+      "verificado": false
+    },
+    {
+      "item": "Pizarra LIVE ZONE despejada (espacio para 4 SMCP function categories + NATO Phonetic letras críticas + Inspection Report S4 feedback devolución)",
+      "cantidad": "1 zona del tablero",
+      "verificado": false
+    },
+    {
+      "item": "Sobres Inspection Report S4 evaluados (25 sobres con Lista Verificación E2 marcada + 1 frase de feedback puntual · devolución individual al inicio S5 warm-up)",
+      "cantidad": "25 sobres",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO dividido en 4 zonas: (1) ESQUINA SUPERIOR DERECHA — ENGLISH ZONE 🔵 reactivada al inicio (cinta azul ya en piso desde S1) + nueva señal 'CHANNEL 16 — VHF MARITIME · ENGLISH ONLY'. (2) CENTRO — Title 'SESSION 5: The Pilot's Apprentice — Listening to SMCP · Today: PM-2.6 VHF dialogue + PM-2.5 SMCP toolbelt + E3 Listening 5 pts'. (3) COLUMNA LATERAL IZQUIERDA — SMCP FUNCTION LEGEND permanente en MAYÚSCULA: 🟢 CONFIRMAR (Roger · Wilco · Affirmative) · 🔵 PEDIR CLARIFICACIÓN (Say again · Spell that · Repeat) · 🟡 REPORTAR (Out · Over) · 🔴 SOLICITAR (Standby · Negative). (4) LIVE ZONE inferior — vacía al inicio · se llena durante WHILE A con clasificación SMCP colectiva (10 frases en 4 categorías) + durante WHILE B con detalles del VHF dialogue extraídos colectivamente + durante WHILE C con NATO Phonetic letras críticas (CHARlie · noVEMber · ZULU · BRAvo · LIma) + durante WHILE D recast de errores típicos NATO (CHARlee vs CHARlie · NOvember vs noVEMber). Maritime Word Wall pared lateral actualizado con 10 SMCP cards (con stress en MAYÚSCULA) + 26 NATO cards (Alpha-Zulu) — total 51 tarjetas al cierre S5. Diagrama VHF Channel 16 + International Maritime Bands en muro lateral A2 (NUEVO desde S5). Mapa Terminal Buenaventura A2 con sticker del piloto en Pilot Boarding Point (offshore). Diagrama Ship Overview A2 visible (de S3-S4). Al final de S5: Word Wall tiene 51 tarjetas (15 S2-S4 + 10 SMCP + 26 NATO) · LIVE ZONE tiene clasificación SMCP por función + 5 letras NATO críticas + 4 errores recast · 25 audios NATO grabados en portafolio del aprendiz · 25 SMCP/NATO Reference Cards laminadas distribuidas como compañeros permanentes hasta S12.",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:30",
+      "duracion_min": 30,
+      "bloque": "SET-UP",
+      "actividad": "Welcome Day 5 + devolución Inspection Report S4 (Lista Verificación E2 + feedback puntual · 3 min individual) + reactivación English Zone con nueva señal 'CHANNEL 16 — VHF · ENGLISH ONLY' + intro narrativo Captain Lopera VHF call + apertura Bloque Interno 2 RAP-02 + objetivos día + ICQ + ✓ Checkpoint Thumbs Up/Down sobre familiaridad con radios VHF",
+      "agrupacion": "Plenaria → Individual (devolución E2) → Plenaria",
+      "notas": "Apertura solemne RAP-02. La devolución E2 al inicio reconecta con S4 (afectivo + técnico). Activar narrativa: 'Captain Lopera llama por radio · ¿estás listo?' L1 ≤ 12%. NO entregar SMCP Reference Cards aún — esperan hasta cierre SET-UP como ritual."
+    },
+    {
+      "tiempo": "0:30-1:20",
+      "duracion_min": 50,
+      "bloque": "WHILE A (PM-2.5 SMCP Toolbelt extensión · pre-listening)",
+      "actividad": "Pre-listening con activación SMCP — distribución SMCP Reference Card laminada (CEREMONIAL · 5 min) + presentación 10 SMCP key phrases con stress crítico drilling (15 min) + clasificación colectiva SMCP por función (4 columnas en LIVE ZONE · 20 min) + choral repetition + finger drilling intensivo (10 min)",
+      "agrupacion": "Plenaria → Parejas → Plenaria",
+      "notas": "Drilling SMCP es BLOQUEANTE (PM-0 §5.13). Stress en MAYÚSCULA en cada frase. CRÍTICO: 'Roger' /ˈrɒdʒər/ NO 'rolér' en español. Finger drilling 5+ reps cada frase. NATO Phonetic se introduce en WHILE C (no aquí · respeto al ciclo)."
+    },
+    {
+      "tiempo": "1:20-2:30",
+      "duracion_min": 70,
+      "bloque": "WHILE B (PM-2.6 Listening Master Anchor · 3 escuchas secuenciales)",
+      "actividad": "Escucha 1 (gist · 90s + 5 min preguntas globales · sin transcripción) + Escucha 2 (detail · 90s + 15 min preguntas específicas · sin transcripción) + Escucha 3 (task · 90s + 25 min completar Radio Log mini con 5 mensajes · sin transcripción) + post-listening con transcripción distribuida (15 min comparación · validación de comprensión)",
+      "agrupacion": "Individual → Parejas → Individual → Plenaria",
+      "notas": "3 escuchas secuenciales con foco escalonado (gist → detail → task). Andamiaje moderado: SMCP/NATO Cards a la vista pero SIN transcripción durante listening 1 y 2. Música ambient sounds puerto MUY baja durante listening (no durante audio · solo entre escuchas). ✓ Checkpoint Pair Check tras escucha 2."
+    },
+    {
+      "tiempo": "2:30-2:45",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "Receso activo (café + baño + estiramiento auditivo)",
+      "agrupacion": "—",
+      "notas": "Recordar hidratación. Break ANTES del bloque de producción NATO (cognitivamente exigente). NO mover el break. English Zone se relaja durante break · vuelve al volver. Usar break para preparar grabadora + cue cards NATO personalizados."
+    },
+    {
+      "tiempo": "2:45-3:55",
+      "duracion_min": 70,
+      "bloque": "WHILE C (PM-2.5 NATO Phonetic Alphabet · drilling intensivo)",
+      "actividad": "Distribución NATO Reference Card laminada (CEREMONIAL · 5 min) + presentación NATO Phonetic Alphabet Alpha-Zulu completo con stress (15 min) + finger drilling intensivo + clapping rítmico para call signs (4 letras = 4 palmadas · 15 min) + backchaining ('vember' → 'November'; 'lie' → 'Charlie' · 10 min) + drilling pares contrastivos (CHARLIE vs CHARLEE · NOVEMBER vs NO-vember · 10 min) + práctica deletreo en parejas con call signs cortos (15 min)",
+      "agrupacion": "Plenaria → Plenaria → Parejas",
+      "notas": "Stress crítico bloqueante (PM-0 §5.13 IMARPOR-CC). 5+ reps cada letra crítica. Backchaining para letras polisílabas. Clapping rítmico hace tangible el ritmo del deletreo. Pares contrastivos previenen errores futuros (S6 VHF Response). Foco en 10 letras CRÍTICAS (Alpha · Bravo · Charlie · Delta · Lima · November · Oscar · Sierra · Tango · Zulu) — el resto se consolida en S6-S7."
+    },
+    {
+      "tiempo": "3:55-5:05",
+      "duracion_min": 70,
+      "bloque": "WHILE D (Producción · 5 deletreos NATO + 3 confirmaciones SMCP · E3 evidencia)",
+      "actividad": "Preparación cue cards personalizados (cada aprendiz escribe su nombre completo + ciudad + 1 call sign de elección personal · 10 min) + ronda 1 individual de práctica con compañero (5 deletreos NATO + audio 60s grabado por compañero · 25 min) + ronda 2 con instructor en rol Captain Lopera (3 confirmaciones SMCP en respuesta a prompts cortos · 20 min) + auto-monitoreo del audio grabado con SMCP/NATO Cards (15 min · self-feedback) — Lista Verificación E3 en marcha (instructor evalúa post-clase y devuelve S6)",
+      "agrupacion": "Individual → Parejas → Individual con instructor → Individual",
+      "notas": "Producción central — primer evidencia de comprensión auditiva (E3 Listening 5 pts). Audio 60s grabado entra a portafolio Misión Final S12 (continuidad con sobres Inspection Report S4). Captain Lopera (instructor en rol) usa SMCP literal · sin variación. ✓ Checkpoint Board Check tras ronda 2 con 2 frases NATO (1 correcta · 1 con error)."
+    },
+    {
+      "tiempo": "5:05-5:40",
+      "duracion_min": 35,
+      "bloque": "WHILE E (Recast plenaria + feedback colectivo)",
+      "actividad": "Recast colectivo en LIVE ZONE de 4-5 errores típicos NATO/SMCP detectados durante WHILE C-D (CHARlee vs CHARlie · NO-vember vs noVEMber · 'rolér' vs 'Roger' · 'wilco' sin stress vs 'WIL-co' · 'standby' como una palabra vs 'STAND-by' compuesta) + 3 muestras voluntarias de audios NATO leídos en plenaria (sin nombrar autores) + cierre con celebración del primer ciclo VHF + entrega ritual de SMCP/NATO Cards laminadas como 'compañeros permanentes hasta S12'",
+      "agrupacion": "Plenaria",
+      "notas": "Recast NO punitivo · celebrar valentía de producción VHF. Errores típicos esperados predecibles (PM-0 §5.13 IMARPOR-CC). La entrega ritual de las Cards laminadas es momento simbólico — preparar gesto ceremonial · cada aprendiz recibe ambas con ambas manos del instructor + frase '*Welcome to the Pilot's Apprentice level. These cards are yours until Session 12.*'"
+    },
+    {
+      "tiempo": "5:40-6:00",
+      "duracion_min": 20,
+      "bloque": "WRAP-UP",
+      "actividad": "Exit Ticket S5 + síntesis del primer día Bloque Interno 2 + preview S6 (VHF Response Drill — Speaking con Captain Lopera) + asignación autónoma (deletrear 5 nombres propios del aprendiz usando NATO Phonetic en audio 60s · entregable S6 warm-up)",
+      "agrupacion": "Individual → Plenaria",
+      "notas": "Cierre con energía concentrada · S5 abrió RAP-02. Anunciar S6 con misterio: '*Lunes Captain Lopera te llamará por radio · ¿podrás responder con SMCP?*' Recordar SMCP/NATO Cards permanentes — TRAERLAS A S6 (no dejarlas en casa)."
+    }
+  ],
+  "set_up": {
+    "duracion_min": 30,
+    "warm_up": {
+      "nombre": "Welcome Day 5 — From Writing to Listening · Devolución E2 + Reactivación VHF Channel 16",
+      "pasos": [
+        "1. Instructor recibe en la puerta saludando: '*Good morning, Junior Trainees! Welcome to RAP-02 — the Pilot's Apprentice level.*' (sonrisa + gesto · usar nombres).",
+        "2. Re-señalar English Zone — cinta azul en piso visible · círculo 🔵 en tablero ya está + agregar nueva señal proyectada: '📻 *CHANNEL 16 — VHF MARITIME · ENGLISH ONLY*' · reforzar verbalmente: '*Today the radio is ON. Channel 16. International maritime English.*'",
+        "3. Devolución Inspection Report S4 (Lista Verificación E2 marcada + 1 frase de feedback puntual · 3 min total · individual): instructor llama por nombre · entrega sobre carta abierto + frase corta: '*Andrea, your form was strong on grammar. Captain Lopera signed.*' o '*Andrea, the imperative needs attention. Let's review in 1 minute after class.*' Sin discutir en plenaria. Lista visible en tablero por si alguien quiere ver criterios.",
+        "4. Quick Recall plenario 5 min: instructor pregunta '*Last session you wrote your first Inspection Report. What is one Toolbelt term you used in your form?*' — choral repetition de 5 ship parts S3 + 5 verbos imperativos S4 con stress (BOW · STERN · BRIDGE · DECK · HULL · CHECK · OPen · MOVE · VErify · seCURE).",
+        "5. Bridging narrativo: '*Today is Andrea's fourth week at the Terminal. The Inspection Report you wrote last week is signed by Captain Lopera. Now — Captain Lopera is calling on the VHF radio. Channel 16. The BUENAVENTURA EXPRESS arrives at 07:00 at Berth 4 — and the pilot is approaching. What does Captain Lopera say? Can you understand him? Today we LISTEN.*'",
+        "6. Mostrar slide proyectado de VHF radio + Captain Lopera silueta + 'CHANNEL 16' en grande — '*This is your radio today. International maritime English. Standard Marine Communication Phrases — SMCP. Ready?*'"
+      ],
+      "duration_min": 12
+    },
+    "teacher_talk_opening_en": "*Good morning, Junior Trainees! Welcome to Session 5. Today is the day Andrea hears Captain Lopera's voice on the radio for the first time — and so do you. Last session you wrote your first written evidence — E2, sealed in the envelope. Captain Restrepo signed in red. Captain Lopera signed during the week. Today is your second evidence — E3 Listening, 5 points. Captain Lopera calls on Channel 16 VHF. The dialogue is 90 seconds. There is interference. There is noise. Real maritime English. We listen 3 times — first for the gist (the big idea) · second for details (numbers, names, places) · third for the task (a Radio Log with 5 messages). Then you receive two new permanent companions — the SMCP Reference Card and the NATO Phonetic Alphabet Card. They stay with you until Session 12. We have 10 SMCP phrases today: Roger · Wilco · Affirmative · Negative · Standby · Out · Over · Say again · Spell that · Repeat. And 26 NATO letters: Alpha to Zulu. You will spell your own name. You will spell your own city. Like a real pilot. Are you ready to listen like Andrea? Channel 16 — open.*",
+    "teacher_talk_opening_es_cursive": "*(Buenos días, Aprendices Junior. Bienvenidos a la Sesión 5. Hoy es el día en que Andrea escucha la voz del Capitán Lopera en la radio por primera vez — y ustedes también. La sesión pasada escribieron su primera evidencia escrita — E2, sellada en el sobre. Capitán Restrepo firmó en rojo. Capitán Lopera firmó durante la semana. Hoy es su segunda evidencia — E3 Listening, 5 puntos. Capitán Lopera llama en el Canal 16 VHF. El diálogo dura 90 segundos. Hay interferencia. Hay ruido. Inglés marítimo real. Escuchamos 3 veces — primero el sentido general · segundo los detalles · tercero la tarea con un Radio Log de 5 mensajes. Luego reciben dos compañeros permanentes — la Tarjeta de Referencia SMCP y la Tarjeta del Alfabeto Fonético NATO. Quedan con ustedes hasta la Sesión 12. Tenemos 10 frases SMCP hoy: Roger · Wilco · Affirmative · Negative · Standby · Out · Over · Say again · Spell that · Repeat. Y 26 letras NATO: Alpha a Zulu. Deletrearán su propio nombre. Deletrearán su propia ciudad. Como un piloto real. ¿Listos para escuchar como Andrea? Canal 16 — abierto.)*",
+    "objetivo_dia_escrito_en_tablero": "*Today you will: (1) listen to Captain Lopera on VHF Channel 16 (90 seconds, 3 listenings) · (2) classify 10 SMCP phrases by function (confirm / clarify / report / request) · (3) drill the NATO Phonetic Alphabet (Alpha-Zulu) · (4) spell your own name + city in NATO + record 60s audio · (5) confirm 3 SMCP messages with Captain Lopera (instructor in role) · (6) submit your second E3 Listening evidence (5 pts) · (7) receive your SMCP + NATO Reference Cards — permanent companions until Session 12.*",
+    "activacion_vhf_radio_check": {
+      "instruccion": "Instructor proyecta foto de radio VHF + Channel 16 LED + simula chequeo de canal: '*Radio check, radio check. This is Terminal Buenaventura, calling all stations. Channel 16. How do you read me? Over.*' Aprendices responden en eco con gesto físico de presionar botón PTT (Push-to-Talk): '*Loud and clear. Over.*' (pre-modelado en pantalla con stress: 'LOUD and CLEAR · OVer'). Choral repetition 3 veces con gesto PTT.",
+      "tecnica": "Modelo-eco con Total Physical Response (gesto PTT) + Choral repetition + simulación pre-VHF (PM-0 §5.13)"
+    },
+    "icq": [
+      "*What evidence are you submitting today — E3 Reading, E3 Writing, or E3 Listening?* → Esperan: 'E3 Listening'",
+      "*How many points is E3 Listening?* → Esperan: '5 / five'",
+      "*How many times do we listen to the VHF dialogue?* → Esperan: '3 / three (gist · detail · task)'",
+      "*How many SMCP phrases will we drill today?* → Esperan: '10 / ten'",
+      "*Will you spell your own name in NATO Phonetic?* → Esperan: 'Yes / yes Captain'",
+      "*What channel is the VHF maritime channel for distress and calling?* → Esperan: '16 / Channel 16 / one six'"
+    ],
+    "facilitation_notes": [
+      "💡 Día 5 abre RAP-02 (A1.3) — energía debe ser elevada pero concentrada. NO festiva como S1 · sí ritualmente importante.",
+      "💡 La devolución E2 al inicio (3 min total · individual con frase corta) reconecta el ciclo S4 → S5. NO discutir notas en plenaria · respeto a la privacidad emocional.",
+      "💡 Las SMCP/NATO Reference Cards laminadas se guardan en sobre cerrado debajo del escritorio durante SET-UP — entregan al cierre WHILE A (ceremonial) · no antes.",
+      "💡 La narrativa Captain Lopera VHF es la primera vez que el aprendiz lo OYE (en S1-S4 fue mencionado · en S5 entra como voz). Énfasis dramático en el primer audio.",
+      "💡 Si un aprendiz dice '*Profe, no entiendo NADA del audio*': respuesta tranquilizadora '*Andrea also did not understand on Day 1. Today we listen 3 times. The third time you will understand.*' Explicar curva de comprensión escalonada.",
+      "💡 Anote en LIVE ZONE 1-2 SMCP frases inglesas que emergen orgánicamente en Quick Recall (si alguien dice 'Roger' o 'over') — celebrar y vincular: '*Excellent — you already know one SMCP phrase. We will learn 9 more today.*'"
+    ],
+    "checkpoint": "✓ Thumbs Up/Down: '*Have you ever heard a VHF radio in a movie or in real life?*' — registrar % de familiaridad. Si <40% nunca ha escuchado: dar 2 min extra de simulación radio check + mostrar video corto 30s de operación VHF real (YouTube IMO o canal marítimo) antes de avanzar a WHILE A."
+  },
+  "while": {
+    "duracion_min": 280,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "SMCP Toolbelt Activation — 10 SMCP key phrases + clasificación por función (PM-2.5 extensión)",
+        "duracion_min": 50,
+        "worksheet_ref": "PM-2.5 SMCP toolbelt extensión — 10 SMCP key phrases + clasificación por función + drilling intensivo",
+        "agrupacion": "Plenaria → Parejas → Plenaria",
+        "objetivo": "Pre-listening con activación SMCP — distribuir SMCP Reference Card laminada (CEREMONIAL) · presentar 10 SMCP key phrases con stress crítico drilling · clasificar colectivamente por función (4 columnas) · choral repetition + finger drilling intensivo. Cada aprendiz internaliza el set SMCP ANTES de la primera escucha del VHF dialogue. Drilling es BLOQUEANTE — 'Roger' mal pronunciado puede causar accidente operacional (PM-0 §5.13 IMARPOR-CC).",
+        "instrucciones_paso_a_paso": [
+          "1. CEREMONIAL — Distribución SMCP Reference Card laminada (5 min): instructor toma sobre cerrado de debajo del escritorio · '*Today you receive your first permanent companion of RAP-02.*' Cada aprendiz recibe la Card con ambas manos del instructor + frase '*This is yours until Session 12. Bring it every day.*' Pausar para que cada uno la examine.",
+          "2. Presentación 10 SMCP key phrases (15 min): instructor proyecta tabla con 10 frases + función + IPA + stress en MAYÚSCULA. Modelar cada frase con stress: '*RO-ger / WIL-co / afFIRmative / NEGative / STAND-by / OUT / Over / Say aGAIN / Spell THAT / RePEAT.*' Choral repetition 3 veces cada frase con dedo señalando stress en Card.",
+          "3. ⚠️ Micro-Cápsula GRAMMAR/SAFETY RULE — SMCP STRESS (proyectada en pantalla): '*SMCP is standardized by IMO. The stress is FIXED. RO-ger NOT ro-LÉR. WIL-co NOT wil-CO. Wrong stress = wrong message = accident risk.*' (En español: '*SMCP es estandarizada por la OMI. El stress es FIJO. RO-ger NO ro-LÉR. WIL-co NO wil-CO. Stress incorrecto = mensaje incorrecto = riesgo de accidente.*')",
+          "4. Clasificación SMCP por función (20 min): instructor escribe 4 columnas en LIVE ZONE: 🟢 CONFIRMAR · 🔵 PEDIR CLARIFICACIÓN · 🟡 REPORTAR · 🔴 SOLICITAR. Consigna en parejas: '*With your partner, classify the 10 SMCP phrases into 4 functions. Use your Reference Card. 8 minutes.*'",
+          "5. Plenaria 8 min — Discovery Table en LIVE ZONE: instructor pide 1 frase por columna · clase confirma · escribe en tablero. Tabla consolidada: 🟢 CONFIRMAR (Roger · Wilco · Affirmative) · 🔵 PEDIR CLARIFICACIÓN (Say again · Spell that · Repeat) · 🟡 REPORTAR (Out · Over) · 🔴 SOLICITAR (Standby · Negative).",
+          "6. Finger drilling intensivo (10 min): instructor lidera 5+ reps de cada SMCP frase con dedo en stress + gesto PTT. Foco crítico: 'Roger' /ˈrɒdʒər/ (NO 'rolér') · 'Wilco' /ˈwɪlkəʊ/ (PRIMERA stress) · 'Standby' /ˈstændbaɪ/ (compuesta · stress en STAND).",
+          "7. Cierre con eco-pregunta del instructor: '*If you HEAR my message: Roger! · If you HEAR and you WILL DO: Wilco! · If yes: Affirmative! · If no: Negative!*' Choral response 3 rondas."
+        ],
+        "teacher_talk_instruction": "*With your partner, take your SMCP Reference Card. Look at the 10 phrases. Classify them in 4 functions: CONFIRM · CLARIFY · REPORT · REQUEST. 8 minutes. Use your Card. Don't memorize — UNDERSTAND. The 4 functions are colors on the board: green confirm · blue clarify · yellow report · red request. Go.*",
+        "icq": [
+          "*Are you working alone or with your partner?* → Esperan: 'With my partner / in pairs'",
+          "*How many SMCP phrases do you classify?* → Esperan: '10 / ten'",
+          "*How many functions / categories?* → Esperan: '4 / four (confirm · clarify · report · request)'",
+          "*Can I keep my SMCP Reference Card after class?* → Esperan: 'Yes / yes / it is mine until Session 12'",
+          "*Why is the stress fixed in SMCP?* → Esperan: 'Safety / accident risk / IMO standard'"
+        ],
+        "answer_key_inline": {
+          "10_SMCP_key_phrases_with_stress_function": [
+            "🟢 ROger /ˈrɒdʒər/ — CONFIRMAR (I heard your message)",
+            "🟢 WILco /ˈwɪlkəʊ/ — CONFIRMAR (I heard and I will comply)",
+            "🟢 afFIRmative /əˈfɜːrmətɪv/ — CONFIRMAR (Yes)",
+            "🔴 NEGative /ˈnɛɡətɪv/ — SOLICITAR/RECHAZAR (No)",
+            "🔴 STANDby /ˈstændbaɪ/ — SOLICITAR (Wait · I will respond)",
+            "🟡 OUT /aʊt/ — REPORTAR (End of conversation · no response expected)",
+            "🟡 Over /ˈoʊvər/ — REPORTAR (End of my turn · response expected)",
+            "🔵 Say aGAIN /seɪ əˈɡɛn/ — PEDIR CLARIFICACIÓN (Repeat your message)",
+            "🔵 Spell THAT /spɛl ðæt/ — PEDIR CLARIFICACIÓN (Spell with NATO Phonetic)",
+            "🔵 RePEAT /rɪˈpiːt/ — PEDIR CLARIFICACIÓN (Repeat the last item)"
+          ],
+          "clasificacion_funcion_consolidada_LIVE_ZONE": {
+            "verde_CONFIRMAR": ["Roger", "Wilco", "Affirmative"],
+            "azul_PEDIR_CLARIFICACIÓN": ["Say again", "Spell that", "Repeat"],
+            "amarillo_REPORTAR": ["Out", "Over"],
+            "rojo_SOLICITAR": ["Standby", "Negative"]
+          },
+          "differentiacion_critica_pares_SMCP": [
+            "Roger ≠ Wilco — Roger = HEARD only · Wilco = HEARD + WILL COMPLY (action commitment)",
+            "Affirmative ≠ Roger — Affirmative = YES (response to question) · Roger = HEARD (acknowledgment)",
+            "Out ≠ Over — Out = END (no response) · Over = END OF TURN (response expected)",
+            "Standby ≠ Negative — Standby = WAIT · Negative = NO (categorical refusal)"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 La entrega ceremonial de las SMCP Cards laminadas es momento simbólico — preparar gesto pausado · cada Card con dos manos · contacto visual con cada aprendiz.",
+          "💡 NO entregar todas las Cards al inicio de SET-UP — esperar al WHILE A para el ritual.",
+          "💡 Drilling SMCP es BLOQUEANTE — si un aprendiz dice 'rolér' o 'wilcó' (stress español): recast inmediato 'RO-ger · WIL-co' · 3 reps adicionales con dedo en stress.",
+          "💡 La clasificación por función es socrática — NO dictar la categoría · CONSTRUIRLA con preguntas. Si una pareja se atora con 'Standby': pista visual modelando con gesto de mano levantada (esperar).",
+          "💡 Tomar foto de la clasificación final en LIVE ZONE — entra a evidencia del run + se proyecta en S6 warm-up como puente narrativo.",
+          "💡 Si emerge una frase SMCP no prevista (ej: 'Channel 16' o 'Mayday'): celebrar discretamente · '*Excellent — you found another SMCP phrase. We will see Mayday in Session 7.*' (no abrir el tema · respetar el ciclo)."
+        ],
+        "checkpoint": "✓ Pair Check + Plenary Classification: la tabla de 4 columnas está completa con las 10 frases correctamente clasificadas en LIVE ZONE · ≥85% de las parejas tienen 8+ frases correctamente categorizadas. Si menos: dar 5 min extra con consigna '*Look at Roger and Wilco. Both are CONFIRM. The difference is action.*'",
+        "transition": "*You have your SMCP Reference Card. You classified 10 phrases. You drilled the stress. Now — listen to Captain Lopera. Channel 16. 90 seconds. First listening: just the BIG IDEA. Don't worry about details yet.*",
+        "tecnica_didactica": "Pre-listening con activación SMCP toolbelt + clasificación funcional + drilling estress crítico"
+      },
+      {
+        "letra": "B",
+        "nombre": "Listening Master Anchor — 3 escuchas secuenciales VHF dialogue Captain Lopera ↔ Andrea (PM-2.6)",
+        "duracion_min": 70,
+        "worksheet_ref": "PM-2.6 Listening Master Anchor — VHF dialogue 90s con interferencia simulada · 3 escuchas (gist · detail · task) + transcripción post-listening",
+        "agrupacion": "Individual → Parejas → Individual → Plenaria",
+        "objetivo": "Escucha activa secuencial — el aprendiz escucha 3 veces el mismo audio VHF de 90s con foco escalonado: (1) gist (la idea principal · sin detalle) · (2) detail (números · nombres · lugares específicos) · (3) task (completar Radio Log mini con 5 mensajes). Cada escucha tiene answer key específico. Andamiaje moderado: SMCP/NATO Cards a la vista pero SIN transcripción durante listening 1 y 2. La transcripción se distribuye solo POST-listening 2 para validación. Filtrar interferencia VHF es habilidad operacional clave.",
+        "instrucciones_paso_a_paso": [
+          "1. Pre-listening setup (5 min): instructor recuerda contexto narrativo: '*Captain Lopera is calling Andrea on Channel 16 VHF. The pilot is approaching the BUENAVENTURA EXPRESS. Berth 4. There is interference. Listen carefully.*' Modelar postura de escucha (sentado · cuaderno cerrado · concentración).",
+          "2. ESCUCHA 1 — GIST (5 min audio + 10 min preguntas globales · sin transcripción): consigna: '*First listening. Don't write anything. Just listen for the BIG IDEA. Where is the vessel? What does Captain Lopera want?*' Reproducir audio 90s. Pausa silencio 30s. Plenaria 7 min — preguntas globales en pantalla: (a) Where is the vessel? (b) Who is calling? (c) What is the situation? Aprendices responden en parejas → plenaria.",
+          "3. ✓ Pair Check tras Escucha 1 (3 min): cada aprendiz comparte con compañero su respuesta a las 3 preguntas globales · negociación bilingüe permitida.",
+          "4. ESCUCHA 2 — DETAIL (5 min audio + 10 min preguntas específicas · sin transcripción): consigna: '*Second listening. Now write DETAILS — numbers, names, places. Use your SMCP Card. Don't worry about every word — focus on facts.*' Reproducir audio 90s. Pausa 30s. Distribución cuestionario specifc 6 ítems (vessel name · call sign · ETA · berth · channel · pilot status) — aprendices llenan individual 7 min.",
+          "5. Distribución transcripción impresa (5 min): instructor abre sobre 'NO ABRIR HASTA INSTRUCCIÓN' y distribuye transcripción A4 a cada aprendiz. Consigna: '*Now compare your detail answers with the transcript. Highlight the SMCP phrases you can identify.*'",
+          "6. ESCUCHA 3 — TASK (5 min audio + 20 min Radio Log mini · CON transcripción a la vista): consigna: '*Third listening. Now you complete a Radio Log mini — 5 messages. Time · Channel · Speaker · SMCP function · Summary. Use the transcript. Use your SMCP Card.*' Reproducir audio 90s. Llenar Radio Log mini 18 min individual.",
+          "7. ⚠️ Micro-Cápsula AUDIO CUE — INTERFERENCIA VHF (proyectada): '*VHF interference is normal. Static crackle is reality. Captain Lopera repeats key information. SMCP standard phrases survive interference. The pilot's call sign is spelled in NATO. Listen for the structure, not every word.*'",
+          "8. Comparación final colectiva (5 min · plenaria): instructor proyecta Radio Log mini correcto · clase compara y celebra mensajes correctamente identificados."
+        ],
+        "teacher_talk_instruction": "*Three listenings. Three different focuses. First — the BIG idea. Don't write. Just listen. Second — DETAILS. Numbers, names, places. Write them. Third — TASK. Radio Log mini, 5 messages. Use the transcript. Use your SMCP Card. The audio is 90 seconds. There is interference — that is normal. Captain Lopera repeats key information. SMCP phrases survive the noise. Listen like a pilot. Channel 16 — open.*",
+        "icq": [
+          "*During the first listening, do you write?* → Esperan: 'No / no writing / just listen'",
+          "*What do you focus on in the first listening?* → Esperan: 'The big idea / gist / general'",
+          "*When do we receive the transcript?* → Esperan: 'After the second listening / not before'",
+          "*How many messages in the Radio Log mini?* → Esperan: '5 / five'",
+          "*Is interference normal in VHF?* → Esperan: 'Yes / yes normal / real maritime'"
+        ],
+        "answer_key_inline": {
+          "vhf_dialogue_transcript_summary_90s": "Captain Lopera (Pilot Boat) calls BUENAVENTURA EXPRESS on Channel 16 VHF. ETA 07:00 Berth 4. Pilot boarding at Pilot Boarding Point (offshore) at 06:30. Andrea (Port Operations Trainee onshore Andrea Mosquera) confirms with Roger / Wilco. Captain spells call sign 'Charlie-Oscar-Lima' (COL · BUENAVENTURA EXPRESS). Andrea repeats spell with Spell that. Captain asks Standby for berthing instructions. Andrea responds Standby. End: Captain — Out.",
+          "escucha_1_gist_3_preguntas": [
+            "(a) Where is the vessel? → Approaching Berth 4 / inbound to Terminal Buenaventura",
+            "(b) Who is calling? → Captain Lopera (Pilot Boat)",
+            "(c) What is the situation? → Pilot boarding at 06:30 · ETA 07:00 Berth 4 · request berthing instructions"
+          ],
+          "escucha_2_detail_6_items": [
+            "Vessel name: BUENAVENTURA EXPRESS",
+            "Call sign: Charlie-Oscar-Lima (COL)",
+            "ETA: 07:00",
+            "Berth: 4 / berth 4",
+            "Channel: 16 / one six",
+            "Pilot status: boarding at 06:30 at Pilot Boarding Point"
+          ],
+          "escucha_3_radio_log_mini_5_mensajes": [
+            "Msg 1 — 06:25 · Ch 16 · Captain Lopera → BUENAVENTURA EXPRESS · REPORTAR · 'Vessel inbound. Request berthing instructions. Over.'",
+            "Msg 2 — 06:26 · Ch 16 · Andrea → Captain Lopera · CONFIRMAR · 'Roger. Stand by for berthing instructions. Over.'",
+            "Msg 3 — 06:27 · Ch 16 · Captain Lopera → Andrea · PEDIR CLARIFICACIÓN · 'Spell call sign. Over.'",
+            "Msg 4 — 06:28 · Ch 16 · Andrea → Captain Lopera · CONFIRMAR · 'Spell that — Charlie-Oscar-Lima. Affirmative. Over.'",
+            "Msg 5 — 06:29 · Ch 16 · Captain Lopera → Andrea · REPORTAR · 'Berth 4 confirmed. Pilot boarding 06:30. Out.'"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 NO distribuir transcripción ANTES de listening 2. La regla de oro de listening andamiado: scaffolding gradual.",
+          "💡 Si la interferencia parece confundir más que ayudar: bajar volumen del static crackle 20% · NO eliminar (realismo).",
+          "💡 Captain Lopera es lingua franca B1 — su voz tiene acento (no perfectamente nativo) · esto es realidad portuaria internacional.",
+          "💡 Si un aprendiz no detecta la interferencia y no entiende NADA: '*That is OK. Real pilots also don't catch every word. Listen for STRUCTURE — Roger, Wilco, Standby, Out. The structure tells you the meaning.*'",
+          "💡 Música ambient sounds puerto MUY baja entre escuchas (no durante audio · solo en pausas) · refuerza inmersión sin distraer del foco.",
+          "💡 Anote 4-5 confusiones típicas que emergen en plenaria — son los recasts del WHILE E (ej: confundir 'Standby' con 'OK' · confundir 'Roger' con 'Wait')."
+        ],
+        "checkpoint": "✓ Pair Check tras Escucha 1: ≥80% de las parejas identifican correctamente las 3 respuestas globales (vessel inbound · Captain Lopera calling · pilot boarding request). Si <80%: repetir audio 1 vez extra entre escucha 1 y 2 + dar pista visual (señalar BUENAVENTURA EXPRESS en mapa).",
+        "transition": "*You heard Captain Lopera. You filled the Radio Log. Now — break. After break — NATO Phonetic Alphabet. You will spell your own name like a real pilot. 70 minutes ahead.*",
+        "tecnica_didactica": "Escucha activa secuencial 3 escuchas con foco escalonado (gist → detail → task) + transcripción andamiada post-listening 2"
+      },
+      {
+        "letra": "C",
+        "nombre": "NATO Phonetic Alphabet — Drilling Intensivo + Backchaining + Pares Contrastivos (PM-2.5 extensión)",
+        "duracion_min": 70,
+        "worksheet_ref": "PM-2.5 NATO Phonetic Alphabet — Alpha-Zulu (26 letras) + clapping rítmico + backchaining + pares contrastivos",
+        "agrupacion": "Plenaria → Plenaria → Parejas",
+        "objetivo": "Drilling intensivo del NATO Phonetic Alphabet completo (Alpha-Zulu · 26 letras) con foco en 10 letras CRÍTICAS para call signs maritime portuarios (Alpha · Bravo · Charlie · Delta · Lima · November · Oscar · Sierra · Tango · Zulu). Técnicas: distribución NATO Reference Card laminada (CEREMONIAL) · finger drilling 5+ reps cada letra · clapping rítmico (4 letras = 4 palmadas para call signs) · backchaining para letras polisílabas (vember → November) · drilling pares contrastivos para prevenir errores futuros (CHARLIE vs CHARLEE) · práctica deletreo en parejas con call signs cortos. Las 16 letras restantes se consolidan en S6-S7 (no carga excesiva en S5).",
+        "instrucciones_paso_a_paso": [
+          "1. CEREMONIAL — Distribución NATO Reference Card laminada (5 min): instructor toma segundo sobre cerrado · '*Your second permanent companion of RAP-02. The NATO Phonetic Alphabet — Alpha to Zulu.*' Cada aprendiz recibe la Card con ambas manos del instructor + frase '*This is yours until Session 12. Your name will live on this card.*'",
+          "2. Presentación NATO Phonetic Alphabet completo (15 min): instructor proyecta tabla con las 26 letras + IPA + stress en MAYÚSCULA. Modelar cada letra con stress: '*ALpha · BRAvo · CHARlie · DELta · ECHo · FOXtrot · GOLF · HOtel · INdia · JULiet · KIlo · LIma · MIKE · noVEMber · OSCar · PApa · queBEC · ROmeo · SIERra · TANgo · UNiform · VICtor · WHISkey · X-RAY · YANkee · ZUlu.*' Choral repetition 3 veces cada letra · ritmo de marcha (1 letra por segundo).",
+          "3. Foco en 10 letras CRÍTICAS (15 min): instructor escribe en LIVE ZONE las 10 letras críticas para maritime portuario: ALpha · BRAvo · CHARlie · DELta · LIma · noVEMber · OSCar · SIERra · TANgo · ZUlu. Finger drilling intensivo 5+ reps cada una con dedo en stress.",
+          "4. ⚠️ Micro-Cápsula PRONUNCIATION RULE — NATO STRESS (proyectada): '*NATO Phonetic stress is FIXED. CHARlie NOT char-LEE. noVEMber NOT NO-vember. ZUlu NOT zu-LU. Wrong stress = wrong letter = wrong call sign = wrong vessel.*'",
+          "5. Clapping rítmico para call signs (10 min): instructor modela con 4 palmadas para call sign 'COL' (Charlie-Oscar-Lima · 3 letras = 3 palmadas) y 'BVA' (Bravo-Victor-Alpha · 3 letras = 3 palmadas). Aprendices replican con 4-5 call signs cortos en parejas.",
+          "6. Backchaining para letras polisílabas (10 min): instructor modela construcción inversa: '*'vember' → 'November' · 'lie' → 'Charlie' · 'lu' → 'Zulu' · 'ma' → 'Lima' · 'ier' → 'Sierra'.*' Choral repetition con eco backchaining.",
+          "7. Drilling pares contrastivos (10 min): instructor escribe en LIVE ZONE 5 pares de errores típicos: CHARlie vs CHARlee · noVEMber vs NOvember · ZUlu vs ZULU (ambas sílabas iguales · realidad: PRIMERA fuerte) · LIma vs liMA (LIma stress PRIMERA) · OSCar vs OSCAR (OSCar stress PRIMERA). Choral repetition contrastiva 3 reps cada par.",
+          "8. Práctica deletreo en parejas con call signs cortos (5 min): cada pareja recibe 3 call signs cortos (3-4 letras) y deletrean alternadamente con stress correcto + clapping. Ejemplos: 'COL' (Charlie-Oscar-Lima) · 'TBM' (Tango-Bravo-Mike) · 'AVZ' (Alpha-Victor-Zulu)."
+        ],
+        "teacher_talk_instruction": "*Your NATO Reference Card. 26 letters. Alpha to Zulu. Today we focus on 10 critical letters for maritime call signs: Alpha · Bravo · Charlie · Delta · Lima · November · Oscar · Sierra · Tango · Zulu. Drill the stress. The stress is FIXED. CHARlie not char-LEE. noVEMber not NO-vember. ZUlu not zu-LU. Wrong stress = wrong letter = wrong vessel. We clap the rhythm of call signs. We backchain the long letters. We drill the contrastive pairs. Then you spell short call signs with your partner. Channel 16 — ready.*",
+        "icq": [
+          "*How many letters in the NATO Phonetic Alphabet?* → Esperan: '26 / twenty-six (Alpha-Zulu)'",
+          "*How many critical letters do we drill today?* → Esperan: '10 / ten'",
+          "*Where is the stress in CHARlie — first or second syllable?* → Esperan: 'First / CHAR / CHARlie'",
+          "*Why is the stress FIXED in NATO Phonetic?* → Esperan: 'Safety / wrong stress = wrong letter = wrong vessel'",
+          "*Can I keep my NATO Reference Card after class?* → Esperan: 'Yes / yes / it is mine until Session 12'"
+        ],
+        "answer_key_inline": {
+          "10_NATO_critical_letters_with_stress_ipa": [
+            "ALpha /ˈælfə/ — PRIMERA (AL-pha)",
+            "BRAvo /ˈbrɑːvoʊ/ — PRIMERA (BRA-vo)",
+            "CHARlie /ˈtʃɑːrli/ — PRIMERA (CHAR-lie) — CRÍTICO no 'char-LEE'",
+            "DELta /ˈdɛltə/ — PRIMERA (DEL-ta)",
+            "LIma /ˈliːmə/ — PRIMERA (LI-ma) — CRÍTICO no 'li-MA'",
+            "noVEMber /noʊˈvɛmbər/ — SEGUNDA (no-VEM-ber) — CRÍTICO no 'NO-vember'",
+            "OSCar /ˈɒskər/ — PRIMERA (OS-car) — CRÍTICO no 'os-CAR'",
+            "SIERra /siˈɛrə/ — SEGUNDA (si-ER-ra)",
+            "TANgo /ˈtæŋɡoʊ/ — PRIMERA (TAN-go)",
+            "ZUlu /ˈzuːluː/ — PRIMERA (ZU-lu) — CRÍTICO no 'zu-LU'"
+          ],
+          "16_NATO_letters_consolidacion_S6_S7": [
+            "ECHo /ˈɛkoʊ/ · FOXtrot /ˈfɒkstrɒt/ · GOLF /ɡɒlf/ · HOtel /hoʊˈtɛl/ · INdia /ˈɪndiə/ · JULiet /ˈdʒuːliət/ · KIlo /ˈkiːloʊ/ · MIKE /maɪk/ · PApa /pəˈpɑː/ · queBEC /kwɪˈbɛk/ · ROmeo /ˈroʊmioʊ/ · UNiform /ˈjuːnɪfɔːrm/ · VICtor /ˈvɪktər/ · WHISkey /ˈwɪski/ · X-RAY /ˈɛksreɪ/ · YANkee /ˈjæŋki/"
+          ],
+          "5_pares_contrastivos_recast_LIVE_ZONE": [
+            "CHARlie ≠ char-LEE (stress PRIMERA · NO segunda)",
+            "noVEMber ≠ NO-vember (stress SEGUNDA · NO primera)",
+            "ZUlu ≠ zu-LU (stress PRIMERA · NO segunda)",
+            "LIma ≠ li-MA (stress PRIMERA · NO segunda)",
+            "OSCar ≠ os-CAR (stress PRIMERA · NO segunda)"
+          ],
+          "call_signs_practice_pairs_3_letras": [
+            "COL = Charlie-Oscar-Lima (BUENAVENTURA EXPRESS · canon S5)",
+            "TBM = Tango-Bravo-Mike",
+            "AVZ = Alpha-Victor-Zulu",
+            "DSL = Delta-Sierra-Lima",
+            "NOV = November-Oscar-Victor"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Foco SOLO en 10 letras críticas en S5 — las 16 restantes se consolidan en S6 (pronunciación lab) y S7 (extensión Radio Log con call signs reales del IMO YouTube). NO carga excesiva en una sola sesión.",
+          "💡 La entrega ceremonial de la NATO Card (sumada a la SMCP Card de WHILE A) es momento simbólico — el aprendiz ahora tiene 2 compañeros permanentes hasta S12.",
+          "💡 Backchaining es CRÍTICO para letras polisílabas — 'vember' es más fácil que 'November' completo. Construir desde el final.",
+          "💡 Clapping rítmico hace tangible el ritmo del deletreo — el cuerpo aprende antes que la mente.",
+          "💡 Pares contrastivos previenen errores futuros (S6 VHF Response · S7 Radio Log con call signs reales) — invertir 10 min en S5 ahorra 30 min de recast en S6.",
+          "💡 Si un aprendiz dice 'char-LEE' (stress español): recast inmediato 'CHARlie · CHARlie · CHARlie' con dedo en stress + 3 reps adicionales. NO continuar hasta corrección."
+        ],
+        "checkpoint": "✓ Choral Repetition Check tras drilling: ≥85% de la cohorte produce las 10 letras críticas con stress correcto. Si <85%: dar 5 min extra de finger drilling con foco en las 3-4 letras más problemáticas (típicamente CHARlie · noVEMber · ZUlu).",
+        "transition": "*You have your NATO Card. You drilled 10 critical letters. You clapped call signs. Now — production. You spell your own name. You spell your own city. Like a real pilot. 70 minutes of production. Andrea is listening.*",
+        "tecnica_didactica": "Drilling intensivo NATO Phonetic Alphabet con stress crítico + clapping rítmico + backchaining + pares contrastivos"
+      },
+      {
+        "letra": "D",
+        "nombre": "Producción E3 — 5 deletreos NATO + 3 confirmaciones SMCP · Lista Verificación E3 Listening",
+        "duracion_min": 70,
+        "worksheet_ref": "PM-2.6 (E3 Listening rubric · Lista Verificación No 3 · 5 criterios × 1 pt = 5 pts) + PM-2.5 (NATO + SMCP toolbelt aplicado en producción)",
+        "agrupacion": "Individual → Parejas → Individual con instructor → Individual",
+        "objetivo": "Producción central — primer evidencia de comprensión auditiva del programa (E3 Listening 5 pts · Lista Verificación No 3 · PM-4.1). Cada aprendiz produce: (a) 5 deletreos NATO Phonetic correctos (nombre completo del aprendiz + ciudad personal · audio 60s grabado por compañero) · (b) 3 confirmaciones SMCP (Roger · Wilco · Affirmative) en respuesta a prompts cortos del instructor en rol Captain Lopera · (c) auto-monitoreo del audio grabado con SMCP/NATO Cards (self-feedback). El audio 60s entra a portafolio Misión Final S12 (continuidad con sobres Inspection Report S4).",
+        "instrucciones_paso_a_paso": [
+          "1. Preparación cue cards personalizados (10 min): cada aprendiz recibe template con 5 cue lines: (1) full first name · (2) full last name · (3) home city · (4) home country · (5) personal call sign 3 letras (de elección propia). Aprendiz escribe su info en bolígrafo negro.",
+          "2. Inspector's mindset framing: '*Now you ARE a pilot's apprentice. You are about to spell your name on Channel 16. Captain Lopera is listening. The recording is your evidence. 5 spellings. 60 seconds. Use stress. Use rhythm. Like a real pilot.*'",
+          "3. Ronda 1 — Práctica con compañero (25 min): parejas heterogéneas. Cada aprendiz deletrea sus 5 cue lines · compañero escucha + verifica con NATO Card + ofrece 1 sugerencia de mejora (sin corrección de pronunciación · solo de stress). Rotación de roles. Música ambient sounds puerto MUY baja.",
+          "4. Grabación audio 60s individual (parte de Ronda 1 · ~12 min total): cada aprendiz graba su audio 60s con celular del compañero (formato MP3 · nombre archivo: 'NATO_S5_[Nombre]_[Apellido].mp3'). El compañero NO comenta durante grabación. Audio entra a portafolio.",
+          "5. Ronda 2 — Confirmaciones SMCP con instructor en rol Captain Lopera (20 min): instructor sentado en mesa al frente con walkie-talkie simulado · cada aprendiz pasa individualmente (≤45s por aprendiz) · instructor lanza 3 prompts cortos:",
+          "   · Prompt 1 (CONFIRMAR): '*Vessel inbound. Berth 4. Pilot boarding 06:30. How do you copy?*' → Aprendiz responde: '*Roger. Berth 4. Pilot boarding 06:30. Over.*'",
+          "   · Prompt 2 (PEDIR CLARIFICACIÓN): '*Spell call sign Charlie-Oscar-Lima.*' → Aprendiz responde: '*Spell that — Charlie-Oscar-Lima. Affirmative. Over.*'",
+          "   · Prompt 3 (SOLICITAR/CONFIRMAR ACTION): '*Standby for berthing instructions.*' → Aprendiz responde: '*Wilco. Standby. Over.*'",
+          "6. ✓ Board Check tras Ronda 2 (5 min): instructor escribe 2 frases NATO en tablero — '*char-LEE oscar lima*' (incorrecta · stress mal) y '*CHARlie OSCar LIma*' (correcta · stress bien) · pregunta '*Which one is correct? Why?*' Aprendices responden en plenaria breve · sin nombrar autor.",
+          "7. Auto-monitoreo del audio grabado (10 min): cada aprendiz escucha su propio audio 60s con SMCP/NATO Cards en mano · marca con 🟢 las pronunciaciones correctas y 🔴 las que necesita corregir. Esto ENTRA a la Lista Verificación E3 (criterio 5: auto-monitoreo).",
+          "8. Entrega ritual del audio + cue cards a la caja del instructor (5 min): cada aprendiz coloca su archivo MP3 en USB del instructor + cue cards en sobre carta con nombre + fecha. Foto del USB + sobres como evidencia."
+        ],
+        "teacher_talk_instruction": "*Now — production. You ARE a pilot's apprentice. You spell your name on Channel 16. 5 spellings. 60 seconds recording. Then 3 confirmations with Captain Lopera. Roger. Wilco. Affirmative. After — you listen to your own recording. You mark with green what is correct. You mark with red what needs fixing. Lista Verificación E3 — 5 points. I evaluate after class · feedback returns Session 6. Music low. Channel 16 — open.*",
+        "icq": [
+          "*What do you spell in NATO Phonetic — your favorite food or your full name + city?* → Esperan: 'My full name + city / nombre completo + ciudad'",
+          "*How long is the recording?* → Esperan: '60 seconds / sixty seconds / 1 minute'",
+          "*How many SMCP confirmations with Captain Lopera?* → Esperan: '3 / three (Roger · Wilco · Affirmative)'",
+          "*Will I receive my own recording?* → Esperan: 'No / it goes to the instructor box / portfolio S12'",
+          "*When do I receive feedback on E3?* → Esperan: 'Session 6 / next session / S6 warm-up'"
+        ],
+        "answer_key_inline": {
+          "lista_verificacion_E3_listening_5_criterios": [
+            "(1) Comprensión gist VHF dialogue (3 preguntas globales correctas) — 1 pt",
+            "(2) Comprensión detail VHF dialogue (≥4 de 6 ítems detail correctos: vessel · call sign · ETA · berth · channel · pilot status) — 1 pt",
+            "(3) Radio Log mini completado (≥4 de 5 mensajes correctos · función SMCP correcta) — 1 pt",
+            "(4) Producción 5 deletreos NATO con stress correcto (audio 60s · ≥4 de 5 letras críticas con stress correcto) — 1 pt",
+            "(5) Auto-monitoreo del audio + 3 confirmaciones SMCP correctas con Captain Lopera (Roger · Wilco · Affirmative) — 1 pt",
+            "TOTAL: 5 pts"
+          ],
+          "patron_esperado_S5_A1.3": "Promedio 3-4 / 5 pts en S5 (esperable · primer evidencia listening · curva de adaptación VHF). Distribución típica: 50% obtiene 4-5 pts · 35% obtiene 3 pts · 15% obtiene ≤2 pts (estos requieren acompañamiento individual S6 pre-clase con foco en stress NATO).",
+          "feedback_devolucion_S6": "Cada aprendiz recibe su Lista Verificación E3 marcada + acceso al audio grabado con marcas instructor (🟢 correcto · 🔴 corregir) + 1 frase de mejora puntual. Devolución al inicio de S6 warm-up · individual · 3 min. Audio 60s queda en portafolio Misión Final S12.",
+          "ejemplo_audio_60s_modelo_andrea": "[0-10s] '*This is Andrea Mosquera. ALpha · noVEMber · DELta · ROmeo · ECHo · ALpha. Mosquera. MIKE · OSCar · SIERra · queBEC · UNiform · ECHo · ROmeo · ALpha.*' [10-25s] '*City: Buenaventura. BRAvo · UNiform · ECHo · noVEMber · ALpha · VICtor · ECHo · noVEMber · TANgo · UNiform · ROmeo · ALpha.*' [25-35s] '*Country: Colombia. CHARlie · OSCar · LIma · OSCar · MIKE · BRAvo · INdia · ALpha.*' [35-50s] '*Call sign: Charlie-Oscar-Lima. CHARlie · OSCar · LIma. Over.*'",
+          "captain_lopera_role_prompts_3_correct_responses": [
+            "Prompt 1 → Response: 'Roger. Berth 4. Pilot boarding 06:30. Over.' (acknowledgment + repeat key info)",
+            "Prompt 2 → Response: 'Spell that — Charlie-Oscar-Lima. Affirmative. Over.' (clarification request + confirmation)",
+            "Prompt 3 → Response: 'Wilco. Standby. Over.' (will comply + holding)"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 La grabación 60s es ALTA STAKES afectivo · pero LOW STAKES técnico — el aprendiz puede regrabar 1 vez si lo solicita en los primeros 30s.",
+          "💡 Ronda 2 con instructor en rol Captain Lopera es momento simbólico — instructor mantiene rol 100% · NO romper con preguntas técnicas durante los 45s con cada aprendiz.",
+          "💡 Si un aprendiz se atora en el deletreo (3+ letras seguidas con stress español): pausar la grabación · recast 5 reps con dedo en stress · luego continuar grabación.",
+          "💡 La entrega del audio MP3 al instructor es ceremonial — el archivo entra a portafolio Misión Final S12 (junto con Inspection Report S4 sellado).",
+          "💡 Anote en cuaderno mental 4-5 errores típicos detectados durante grabación (ej: 'char-LEE' vs 'CHARlie' · 'NO-vember' vs 'noVEMber' · stress español en 'ZUlu') — son los recasts del WHILE E.",
+          "💡 Si un aprendiz solicita auriculares para auto-monitoreo (privacidad afectiva): acceder · 5 sets disponibles."
+        ],
+        "checkpoint": "✓ Board Check tras Ronda 2 (45 min): ≥85% de la clase identifica correctamente la frase NATO con stress correcto en tablero (CHARlie OSCar LIma) y articula la razón ('*because the stress is on the FIRST syllable in CHARlie · OSCar · LIma*'). Si <85%: pausar producción · dar 5 min de mini-lección colectiva sobre stress NATO con foco en las 3 letras más problemáticas.",
+        "transition": "*Beautiful work, team. Your audios are in the box. Captain Lopera will listen this week. Now — back to plenary. Let's look at 4-5 typical errors and fix them together. Recast time.*",
+        "tecnica_didactica": "Producción NATO + SMCP grabada con cue cards personalizados + auto-monitoreo con SMCP/NATO Cards"
+      },
+      {
+        "letra": "E",
+        "nombre": "Recast Plenaria + Feedback Colectivo + Entrega Ritual SMCP/NATO Cards Permanentes",
+        "duracion_min": 35,
+        "worksheet_ref": "Recast collective in LIVE ZONE + ritual de cierre RAP-02 apertura · entrega permanente SMCP/NATO Cards laminadas",
+        "agrupacion": "Plenaria",
+        "objetivo": "Recast colectivo en LIVE ZONE de 4-5 errores típicos NATO/SMCP detectados durante WHILE C-D · 3 muestras voluntarias de audios NATO leídos en plenaria (sin nombrar autores) · cierre con celebración del primer ciclo VHF + entrega ritual de SMCP/NATO Cards laminadas como 'compañeros permanentes hasta S12'. Recast NO punitivo · normalizar el error como parte del proceso · celebrar valentía de producción VHF.",
+        "instrucciones_paso_a_paso": [
+          "1. Recast Plenaria de 4-5 errores típicos detectados durante WHILE C-D (escritos en LIVE ZONE · 15 min):",
+          "   · Error 1 — NATO stress español: '*char-LEE oscar lima*' → recast: '*CHARlie OSCar LIma*' (stress PRIMERA en cada letra)",
+          "   · Error 2 — November mal stress: '*NO-vember*' → recast: '*noVEMber*' (stress SEGUNDA · CRÍTICO)",
+          "   · Error 3 — Roger pronunciado español: '*rolér*' → recast: '*RO-ger*' /ˈrɒdʒər/ (stress PRIMERA · /dʒ/ no /l/)",
+          "   · Error 4 — Wilco sin stress: '*wilcó*' → recast: '*WIL-co*' (stress PRIMERA)",
+          "   · Error 5 — Standby como una palabra suelta: '*standbai*' → recast: '*STAND-by*' (compuesta · stress en STAND · pausa breve)",
+          "2. Cada error: instructor escribe versión incorrecta + flecha + versión correcta en LIVE ZONE · clase responde con choral repetition de la versión correcta. Cero juicio · solo modelado positivo.",
+          "3. Plenaria — Lectura de Muestras Voluntarias (10 min): instructor invita 3 voluntarios a leer su audio NATO en voz alta (NO el audio grabado · una versión vivo). NO nombrar autores. Permitir aplauso colectivo.",
+          "4. ⚠️ Micro-Cápsula CIERRE — APERTURA RAP-02 (proyectada): '*You opened RAP-02 today. The Pilot's Apprentice level. You have your SMCP Reference Card. You have your NATO Reference Card. They are yours until Session 12. Bring them every day. Captain Lopera is calling next Monday — Session 6 — and you will respond.*'",
+          "5. ENTREGA RITUAL FINAL — confirmación de cards permanentes (10 min): cada aprendiz toma sus 2 Reference Cards (SMCP + NATO) en alto · instructor pronuncia en voz solemne: '*These cards are yours. They are your maritime English passport. Until Session 12 — keep them, use them, study them. Welcome, Pilot's Apprentices.*' Aplauso grupal. Foto colectiva con cards en alto (entra a Drive del run + se proyecta en S12 como cierre del programa)."
+        ],
+        "teacher_talk_instruction": "*Plenary recast — 4-5 typical errors. We fix them together. No names. No judgment. Just listening · noticing · fixing. Then 3 voluntary readings of NATO recordings — live, not the recording. Aplause. After that — the ritual. Your SMCP Card. Your NATO Card. Permanent companions. Welcome to RAP-02.*",
+        "icq": [
+          "*Will the instructor name authors during the recast?* → Esperan: 'No / no names / anonymous'",
+          "*If I made one of the 5 typical errors · is that bad?* → Esperan: 'No / normal / fixing is the work'",
+          "*What do I do with my SMCP/NATO Cards after class?* → Esperan: 'Keep them / bring every day / until Session 12'",
+          "*When does Captain Lopera call next?* → Esperan: 'Session 6 / next Monday / Speaking VHF'"
+        ],
+        "answer_key_inline": {
+          "errores_tipicos_recast_LIVE_ZONE": [
+            "Error 1 — '*char-LEE oscar lima*' → '*CHARlie OSCar LIma*' (NATO stress PRIMERA cada letra)",
+            "Error 2 — '*NO-vember*' → '*noVEMber*' (NATO stress SEGUNDA · CRÍTICO)",
+            "Error 3 — '*rolér*' → '*RO-ger*' /ˈrɒdʒər/ (SMCP stress PRIMERA · /dʒ/ no /l/)",
+            "Error 4 — '*wilcó*' → '*WIL-co*' (SMCP stress PRIMERA)",
+            "Error 5 — '*standbai*' (una palabra) → '*STAND-by*' (compuesta · stress STAND · pausa breve)"
+          ],
+          "celebration_frase_cierre": "ALL of you produced your first NATO recording. ALL of you fixed at least one error. This is what listening + speaking VHF looks like — drilling · noticing · fixing. Welcome to RAP-02 — Pilot's Apprentices.",
+          "ritual_entrega_cards_permanentes_frase": "These cards are yours. They are your maritime English passport. Until Session 12 — keep them, use them, study them. Welcome, Pilot's Apprentices.",
+          "foto_grupal_documentacion": "Cada aprendiz con SMCP + NATO Cards en alto · foto colectiva entra a Drive del run + se proyecta en S12 como cierre del programa (ciclo completo: S5 apertura RAP-02 ↔ S12 cierre Misión Final)."
+        },
+        "facilitation_notes": [
+          "💡 Recast NUNCA es punitivo. Si la mayoría hizo el mismo error: '*This was a tricky one — even Andrea makes it on Day 1.*'",
+          "💡 NO corregir todos los errores · solo los 4-5 más representativos. Sobre-corrección destruye la motivación.",
+          "💡 La frase '*ALL of you produced your first NATO recording*' es CRÍTICA — normaliza el error como parte del proceso.",
+          "💡 Si un voluntario tiene un audio NATO muy excelente: leerlo · pero también leer 1 muestra con errores típicos (ya corregidos) · evita que la cohorte se compare desfavorablemente.",
+          "💡 La entrega ritual de las Cards es momento simbólico del programa — preparar gesto pausado · contacto visual con cada aprendiz · frase solemne.",
+          "💡 La foto colectiva con Cards en alto se proyecta en S12 como cierre del programa — 12 semanas después · momento emotivo. Tomar foto con buena luz."
+        ],
+        "checkpoint": "✓ Foto colectiva tomada con 100% de aprendices con SMCP + NATO Cards en alto + aplauso grupal escuchado. Si <100% (alguien faltó · alguien sin Card): registrar en cuaderno docente · entrega individual S6 warm-up.",
+        "transition": "*Cards in your bag. Recordings in the box. Welcome to RAP-02. Now — Exit Ticket. 3 lines. And we close the day with a preview of Captain Lopera's call next Monday.*",
+        "tecnica_didactica": "Recast colectivo con normalización del error + lectura plenaria anonimizada + ritual ceremonial de entrega permanente Reference Cards"
+      }
+    ],
+    "breaks": [
+      {
+        "tiempo": "2:30-2:45",
+        "duracion_min": 15,
+        "tipo": "Receso activo (café + baño + estiramiento auditivo)",
+        "notas": "Recordar hidratación. Break ANTES del bloque más cognitivamente exigente (WHILE C NATO drilling 70 min · WHILE D producción E3 70 min). NO mover el break · ubicación crítica para sostener atención auditiva durante NATO Phonetic. English Zone se relaja durante break · vuelve al volver. Usar el break para preparar grabadora + cue cards NATO personalizados + organizar mesa al frente para Ronda 2 con instructor en rol Captain Lopera."
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 20,
+    "exit_ticket": {
+      "tarea": "Exit Ticket S5 — Tarjeta 10×15 cm con 3 líneas: (1) ONE SMCP phrase I learned today + its function (en inglés · ej: 'Roger = CONFIRMAR · Wilco = WILL COMPLY') · (2) ONE NATO letter I had trouble with + how I fixed it (en inglés o español · ej: 'November — antes decía NO-vember · ahora digo noVEMber') · (3) ONE thing I'm bringing to Session 6 (en inglés · ej: 'My SMCP Card · My NATO Card · My voice'). Entregar en caja del instructor antes de salir.",
+      "success_criteria": "3 líneas completas. Mínimo 1 línea referencia explícita a una de las 10 SMCP phrases o 10 NATO letras críticas. Línea 3 referencia explícita a SMCP/NATO Cards permanentes (compromiso de traerlas a S6). La caja se abre y se lee S6 warm-up (sin nombrar autores).",
+      "duration_min": 8
+    },
+    "sintesis": "Hoy abriste el Bloque Interno 2 (RAP-02 · A1.3) con tu primera evidencia de comprensión auditiva. Escuchaste a Captain Lopera por VHF Channel 16 (90 segundos · 3 escuchas secuenciales: gist · detail · task). Clasificaste 10 SMCP phrases por función (Roger · Wilco · Affirmative · Negative · Standby · Out · Over · Say again · Spell that · Repeat). Aprendiste el NATO Phonetic Alphabet completo (Alpha-Zulu · 26 letras · 10 críticas). Deletreaste tu nombre completo + ciudad en NATO (audio 60s grabado · entra a portafolio Misión Final S12). Confirmaste 3 mensajes SMCP con Captain Lopera (instructor en rol). Recibiste 2 compañeros permanentes hasta S12 — la SMCP Reference Card y la NATO Phonetic Reference Card laminadas. Mañana — Sesión 6 — abrimos el primer simulador VHF Response: tú llamarás a Captain Lopera por radio · 5 escenarios · 2 minutos de producción oral SMCP. ¿Listo, Pilot's Apprentice?",
+    "asignacion_autonoma": {
+      "actividad": "Deletrear 5 nombres propios del aprendiz usando NATO Phonetic Alphabet en audio 60s · 2.33 horas autónomas (≈140 min) · práctica autónoma · entregable S6 warm-up",
+      "instrucciones_detalladas": [
+        "1. Tomar tu NATO Reference Card (la laminada que recibiste hoy · permanente hasta S12).",
+        "2. Elegir 5 nombres propios significativos para ti: (a) tu nombre completo · (b) tu ciudad de nacimiento · (c) un familiar cercano (mamá / papá / hermano / pareja) · (d) tu mejor amigo/a · (e) una calle o lugar de tu barrio que conozcas bien.",
+        "3. Practicar deletreo cronometrado: cada nombre/lugar en ≤10 segundos (1 deletreo por palabra completa).",
+        "4. Grabar audio 60s total con celular (formato MP3 o WhatsApp note) · nombre archivo: 'NATO_Autonomo_S5_S6_[Nombre]_[Apellido].mp3'.",
+        "5. Auto-monitorear con NATO Card en mano · escuchar 2-3 veces · marcar 🟢 las pronunciaciones correctas y 🔴 las que necesitan corregir.",
+        "6. Enviar audio al instructor por chat antes de S6 (recomendado para feedback formativo · no obligatorio).",
+        "7. Llevar SMCP Reference Card + NATO Reference Card + audio a S6 warm-up (3 min compartir con compañero · sin evaluación)."
+      ],
+      "entregable": "1 audio 60s + 5 deletreos NATO + auto-monitoreo (presentar S6 warm-up).",
+      "cuando_se_revisa": "S6 warm-up (3 min) — compartir audio NATO autónomo con compañero · agregar al Maritime Word Wall si emergen letras nuevas memorables (ej: nombres de ciudades colombianas con letras polisílabas). Sin evaluación formal · el instructor valida presencia (entregó / no entregó) · feedback puntual a quienes lo solicitan vía chat.",
+      "tiempo_estimado_min": 140,
+      "tiempo_estimado_horas": 2.333333
+    },
+    "bridge_to_next": "*Next session — Session 6: VHF Response Drill — Speaking with Captain Lopera. You called Captain Lopera with NATO today. Next Monday — Captain Lopera calls YOU. 5 VHF scenarios. 2 minutes of speaking. SMCP confirmations. Plus imperative negative ('Don't approach') · plus modal must ('Vessel must wait at anchorage') · plus Wh-questions in present simple. Bring your SMCP Card. Bring your NATO Card. Bring your autonomous NATO recording — 5 names of your life. Bring your voice. Channel 16 will be open at 8:00 AM sharp.*",
+    "teacher_talk_closing_en": "*Pilot's Apprentices — today was historic. You opened RAP-02. You listened to Captain Lopera 3 times. You classified 10 SMCP phrases. You drilled 10 critical NATO letters. You spelled your own name like a real pilot — 60 seconds, recorded forever, in the portfolio for Session 12. You confirmed 3 SMCP messages with Captain Lopera in person. You received your two permanent companions — SMCP Reference Card and NATO Reference Card. They are yours until Session 12. Until December, perhaps. Captain Lopera signed your Inspection Reports last week. Today — he heard your voice for the first time. Next Monday — Session 6 — he calls you back. 5 VHF scenarios. 2 minutes of speaking. Bring your cards. Bring your autonomous NATO. Bring your voice. Roger? Wilco? Welcome to A1.3 — the Pilot's Apprentice level. Well done, Junior Trainees. ¡Bienvenidos al RAP-02, aprendices del piloto!*",
+    "teacher_talk_closing_es_cursive": "*(Aprendices del Piloto — hoy fue histórico. Abrieron RAP-02. Escucharon al Capitán Lopera 3 veces. Clasificaron 10 frases SMCP. Drillearon 10 letras NATO críticas. Deletrearon su propio nombre como un piloto real — 60 segundos, grabado para siempre, en el portafolio para la Sesión 12. Confirmaron 3 mensajes SMCP con el Capitán Lopera en persona. Recibieron sus dos compañeros permanentes — la Tarjeta de Referencia SMCP y la Tarjeta de Referencia NATO. Quedan con ustedes hasta la Sesión 12. Hasta diciembre, quizás. El Capitán Lopera firmó sus Inspection Reports la semana pasada. Hoy — escuchó su voz por primera vez. El próximo lunes — Sesión 6 — los llama de vuelta. 5 escenarios VHF. 2 minutos de producción oral. Traigan sus tarjetas. Traigan su audio NATO autónomo. Traigan su voz. ¿Roger? ¿Wilco? Bienvenidos al nivel A1.3 — el aprendiz del piloto. Buen trabajo, Aprendices Junior. ¡Bienvenidos al RAP-02, aprendices del piloto!)*",
+    "reflection_prompt": "Antes de salir · 30 segundos de silencio: '*Hoy escuché por primera vez a Captain Lopera por radio · y deletreé mi propio nombre como un piloto. ¿Qué se siente decir mi nombre en NATO Phonetic — letra por letra · stress por stress · como un profesional? ¿Qué versión de mí abrió RAP-02 esta mañana? ¿Qué versión de mí sale ahora con dos cards laminadas en la mochila?*' (no se responde en voz alta · solo se siente).",
+    "facilitation_notes": [
+      "💡 Cierre con energía concentrada y simbólica — S5 abrió RAP-02 · es momento ritual del programa.",
+      "💡 La frase '*Captain Lopera signed your Inspection Reports last week*' mantiene continuidad narrativa S4 → S5 — refuerza el universo IMARPOR-CC.",
+      "💡 La frase '*Until December, perhaps*' anticipa el cierre del programa S12 — siembra continuidad emocional sin sobre-prometer.",
+      "💡 Si un aprendiz expresa frustración con el stress NATO: respeto + frase puente '*Andrea took 3 weeks to get November right. You have until Session 12. Practice 5 minutes a day.*'",
+      "💡 Si queda tiempo (<3 min): aplauso grupal por la primera evidencia de listening del programa. No subestime el valor simbólico de las 2 cards permanentes.",
+      "💡 La caja con 25 audios MP3 + USB queda con el instructor toda la semana · evaluar cada uno con Lista Verificación E3 + 1 frase de feedback puntual · devolución S6 inicio."
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "WHILE A — SMCP Toolbelt Activation 10 phrases + clasificación 4 funciones (PM-2.5 extensión)",
+      "items": [
+        {
+          "pregunta": "Las 10 SMCP phrases con su función",
+          "respuesta_correcta": "🟢 CONFIRMAR (Roger · Wilco · Affirmative) · 🔵 PEDIR CLARIFICACIÓN (Say again · Spell that · Repeat) · 🟡 REPORTAR (Out · Over) · 🔴 SOLICITAR (Standby · Negative)",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "No evaluado individualmente · construcción colectiva en LIVE ZONE"
+        },
+        {
+          "pregunta": "Diferencia crítica Roger vs Wilco",
+          "respuesta_correcta": "Roger = HEARD only (acknowledgment) · Wilco = HEARD + WILL COMPLY (action commitment)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Diferencia crítica Out vs Over",
+          "respuesta_correcta": "Out = END (no response expected) · Over = END OF TURN (response expected)",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE B — Listening Master Anchor 3 escuchas (PM-2.6)",
+      "items": [
+        {
+          "pregunta": "Escucha 1 (gist) — Where is the vessel?",
+          "respuesta_correcta": "Approaching Berth 4 / inbound to Terminal Buenaventura",
+          "alternativas": ["Inbound to Buenaventura", "Coming to Berth 4"],
+          "puntos": 1,
+          "nota": "Criterio E3 #1 gist comprehension"
+        },
+        {
+          "pregunta": "Escucha 2 (detail) — Vessel name + call sign + ETA + berth + channel + pilot status",
+          "respuesta_correcta": "BUENAVENTURA EXPRESS · Charlie-Oscar-Lima (COL) · ETA 07:00 · Berth 4 · Channel 16 · pilot boarding 06:30 at Pilot Boarding Point",
+          "alternativas": [],
+          "puntos": 1,
+          "nota": "Criterio E3 #2 detail comprehension · ≥4 de 6 ítems correctos"
+        },
+        {
+          "pregunta": "Escucha 3 (task) — Radio Log mini 5 mensajes",
+          "respuesta_correcta": "Msg 1 (06:25 Captain → Andrea REPORTAR Vessel inbound · request berthing) · Msg 2 (06:26 Andrea → Captain CONFIRMAR Roger · Stand by) · Msg 3 (06:27 Captain → Andrea PEDIR CLARIFICACIÓN Spell call sign) · Msg 4 (06:28 Andrea → Captain CONFIRMAR Spell that COL · Affirmative) · Msg 5 (06:29 Captain → Andrea REPORTAR Berth 4 confirmed · pilot boarding 06:30 · Out)",
+          "alternativas": [],
+          "puntos": 1,
+          "nota": "Criterio E3 #3 task completion · ≥4 de 5 mensajes correctos con función SMCP"
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE C — NATO Phonetic Alphabet drilling (PM-2.5 extensión)",
+      "items": [
+        {
+          "pregunta": "10 letras NATO críticas con stress",
+          "respuesta_correcta": "ALpha · BRAvo · CHARlie · DELta · LIma · noVEMber · OSCar · SIERra · TANgo · ZUlu",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "10 críticas para call signs maritime · 16 restantes en S6-S7"
+        },
+        {
+          "pregunta": "5 pares contrastivos para evitar errores",
+          "respuesta_correcta": "CHARlie ≠ char-LEE · noVEMber ≠ NO-vember · ZUlu ≠ zu-LU · LIma ≠ li-MA · OSCar ≠ os-CAR",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Call signs de práctica deletreo",
+          "respuesta_correcta": "COL = Charlie-Oscar-Lima (canon BUENAVENTURA EXPRESS) · TBM · AVZ · DSL · NOV",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE D — Producción E3 (5 deletreos NATO + 3 confirmaciones SMCP)",
+      "items": [
+        {
+          "pregunta": "Audio 60s — qué incluye",
+          "respuesta_correcta": "Nombre completo + ciudad personal + país personal + call sign 3 letras de elección · 5 deletreos NATO · stress correcto · grabado por compañero",
+          "alternativas": [],
+          "puntos": 1,
+          "nota": "Criterio E3 #4 production NATO · ≥4 de 5 letras críticas con stress correcto"
+        },
+        {
+          "pregunta": "3 prompts Captain Lopera + respuestas SMCP",
+          "respuesta_correcta": "(1) 'Vessel inbound. Berth 4. Pilot boarding 06:30. How do you copy?' → 'Roger. Berth 4. Pilot boarding 06:30. Over.' · (2) 'Spell call sign Charlie-Oscar-Lima.' → 'Spell that — Charlie-Oscar-Lima. Affirmative. Over.' · (3) 'Standby for berthing instructions.' → 'Wilco. Standby. Over.'",
+          "alternativas": [],
+          "puntos": 1,
+          "nota": "Criterio E3 #5 producción SMCP correcta + auto-monitoreo del audio"
+        },
+        {
+          "pregunta": "Auto-monitoreo — qué se marca",
+          "respuesta_correcta": "🟢 pronunciaciones correctas · 🔴 pronunciaciones que necesitan corregir · entra a Lista Verificación E3 criterio 5",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE E — Recast Plenaria + Entrega Ritual Cards Permanentes",
+      "items": [
+        {
+          "pregunta": "5 errores típicos recast LIVE ZONE",
+          "respuesta_correcta": "(1) 'char-LEE' → 'CHARlie' · (2) 'NO-vember' → 'noVEMber' · (3) 'rolér' → 'RO-ger' · (4) 'wilcó' → 'WIL-co' · (5) 'standbai' → 'STAND-by'",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Frase ritual entrega Cards permanentes",
+          "respuesta_correcta": "*These cards are yours. They are your maritime English passport. Until Session 12 — keep them, use them, study them. Welcome, Pilot's Apprentices.*",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Hasta qué sesión son permanentes las Reference Cards?",
+          "respuesta_correcta": "Sesión 12 — Misión Final CML Port Turnaround (cierre del programa)",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE D — Lista Verificación E3 Listening",
+      "items": [
+        {
+          "pregunta": "5 criterios Lista Verificación E3 Listening",
+          "respuesta_correcta": "(1) Comprensión gist 3/3 preguntas · (2) Comprensión detail ≥4/6 ítems · (3) Radio Log mini ≥4/5 mensajes · (4) Producción 5 deletreos NATO con stress correcto ≥4/5 letras críticas · (5) 3 confirmaciones SMCP correctas + auto-monitoreo audio",
+          "alternativas": [],
+          "puntos": 5,
+          "nota": "5 pts total (1 pt por criterio) — segundo entregable evaluado del programa"
+        },
+        {
+          "pregunta": "¿Cuándo se devuelve feedback?",
+          "respuesta_correcta": "S6 warm-up · individual · 3 min con audio + 1 frase de mejora puntual",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Dónde queda el audio MP3 de cada aprendiz?",
+          "respuesta_correcta": "USB del instructor + portafolio Misión Final S12 (junto con Inspection Report S4 sellado)",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WRAP-UP — Exit Ticket S5 + Asignación Autónoma",
+      "items": [
+        {
+          "pregunta": "Exit Ticket — 3 líneas",
+          "respuesta_correcta": "(1) Una SMCP phrase + función · (2) Una NATO letra problemática + cómo se corrigió · (3) Una cosa que traer a S6",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Asignación autónoma S5→S6",
+          "respuesta_correcta": "5 deletreos NATO de nombres propios significativos del aprendiz (nombre completo + ciudad + familiar + amigo + lugar) en audio 60s · auto-monitoreo con NATO Card · entregable S6 warm-up · NO evaluada (práctica de transferencia)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Qué traer a S6 obligatoriamente?",
+          "respuesta_correcta": "SMCP Reference Card + NATO Reference Card laminadas + audio NATO autónomo + voz lista para responder a Captain Lopera",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "En WHILE A: clasificar también 5 SMCP phrases adicionales no presentadas (Mayday · Pan-Pan · Securité · Distress · Urgency) en las 4 columnas — sólo si dominan las 10 base.",
+      "En WHILE B: identificar 3 momentos de interferencia en el audio + describir qué se perdió y qué se recuperó por contexto SMCP.",
+      "En WHILE C: aprender 5 letras NATO adicionales del set restante (de las 16 no críticas) + crear 1 call sign personal de 5 letras.",
+      "En WHILE D: deletrear también el nombre del propio supervisor del aprendiz o un familiar en el extranjero (extensión personal del audio 60s).",
+      "En WHILE E: identificar 1 error adicional en la cohorte y proponer su recast en plenaria con consentimiento del autor.",
+      "Ofrecer ayuda peer tutor a un compañero que tiene dificultad con stress NATO (tutoría 5 min · sin corrección · solo modelado de stress)."
+    ],
+    "more_support_needed": [
+      "Tiempo extra en WHILE A (hasta 60 min) si la clasificación SMCP es lenta — reducir a 6 frases primero (Roger · Wilco · Standby · Over · Out · Affirmative) y dejar las 4 restantes para autónomo.",
+      "En WHILE B — ofrecer transcripción ANTES de la escucha 2 (no escucha 1) para aprendices con dificultad auditiva severa · documentar adaptación.",
+      "En WHILE B — sentar al aprendiz cerca de los parlantes + permitir auriculares personales (5 sets disponibles).",
+      "En WHILE C — reducir foco NATO a 5 letras críticas (Alpha · Charlie · Lima · November · Zulu) en lugar de 10 · consolidar las otras 5 en S6.",
+      "En WHILE D — permitir cue cards en español primero (escribir nombre en español con stress marcado) · luego traducir a NATO con apoyo del compañero.",
+      "En WHILE D — reducir audio 60s a 30s (deletrear sólo nombre + ciudad · 2 elementos en lugar de 5) · evaluación 3-4/5 con plan de extensión S6 warm-up.",
+      "En WHILE D — permitir 1 regrabación si el aprendiz lo solicita en los primeros 30s (afectivo).",
+      "En WHILE E — permitir que el aprendiz NO sea voluntario para lectura plenaria (respeto a privacidad afectiva).",
+      "Contacto uno-a-uno al final de la sesión: '*¿Cómo estuvo tu primera VHF? El próximo lunes te ayudo con stress NATO en los primeros 10 min de S6 antes de empezar VHF Response. Trae tu audio.*'"
+    ]
+  },
+  "instructor_self_check": [
+    "✓ ¿Conduje el drilling SMCP en WHILE A con stress crítico bloqueante (RO-ger / WIL-co / STAND-by) · NO permitiendo pronunciación con stress español sin recast inmediato?",
+    "✓ ¿Distribuí las SMCP/NATO Reference Cards laminadas con ceremonia (sobre cerrado · entrega con dos manos · frase ritual) · NO al inicio de SET-UP sino al cierre WHILE A y WHILE C?",
+    "✓ ¿Mantuve la regla de oro de listening andamiado en WHILE B — NO entregué transcripción ANTES de la escucha 2 · respeté el ciclo gist → detail → task?",
+    "✓ ¿Mantuve mi rol de Captain Lopera durante WHILE D Ronda 2 con cada aprendiz (≤45s) · usando SMCP literal sin variación · NO rompí el rol con preguntas técnicas?",
+    "✓ ¿Terminé con preview explícito de S6 (VHF Response Drill · 5 escenarios · 2 min producción oral SMCP · entrega de audio NATO autónomo) + ritual de entrega final de Cards permanentes con foto colectiva?"
+  ],
+  "activity_logistics": {
+    "espacio": "Aula bilingüe — Layout principal en mesas de 4 (para WHILE A clasificación parejas + WHILE B listening individual + parejas + WHILE C drilling plenario + parejas) · individual silencioso (WHILE B detail listening · WHILE D producción NATO grabación · WHILE D auto-monitoreo audio) · plenaria al frente (WHILE A discovery · WHILE B post-listening + WHILE C drilling + WHILE D Ronda 2 con Captain Lopera + WHILE E recast). English Zone reactivada con cinta azul marítima en el piso (ya pegada desde S1) + nueva señal proyectada 'CHANNEL 16 — VHF · ENGLISH ONLY'. Maritime Word Wall pared lateral actualizado con 51 tarjetas (15 S2-S4 + 10 SMCP + 26 NATO) con stress + IPA. Mapa Terminal Buenaventura A2 (con sticker piloto en Pilot Boarding Point) + Diagrama Ship Overview A2 + Diagrama VHF Channel 16 A2 (NUEVO desde S5) en muros frontales y laterales. Mesa al frente reservada para Ronda 2 WHILE D con Captain Lopera (instructor en rol) con walkie-talkie simulado.",
+    "agrupamiento": "Plenaria → Parejas (WHILE A) → Individual + Parejas + Individual + Plenaria (WHILE B) → Plenaria + Parejas (WHILE C) → Individual + Parejas + Individual con instructor + Individual (WHILE D) → Plenaria (WHILE E) → Individual + Plenaria (WRAP-UP). Transiciones explícitas con Teacher Talk corto (max 30 seg cada cambio).",
+    "recursos": [
+      "PM-2.6 Listening Master Anchor handout (3 cuestionarios secuenciales gist · detail · task)",
+      "Audio file VHF dialogue Captain Lopera ↔ Andrea 90s con interferencia simulada",
+      "Parlantes calidad volumen VHF realista + USB respaldo + app móvil respaldo",
+      "Walkie-talkies simulados o app móvil VHF (1 set por pareja) + Plan B barrera cartulina",
+      "SMCP Reference Card laminada (1 por aprendiz · 25 cards + 5 respaldo · permanentes hasta S12)",
+      "NATO Phonetic Alphabet Reference Card laminada (1 por aprendiz · 25 cards + 5 respaldo · permanentes hasta S12)",
+      "PM-2.5 SMCP toolbelt extensión handout (10 SMCP key phrases + clasificación 4 columnas)",
+      "Lista Verificación E3 Listening (5 criterios × 1 pt = 5 pts · PM-4.1)",
+      "Transcripción impresa VHF dialogue (sellada en sobre 'NO ABRIR HASTA INSTRUCCIÓN' · post-listening 2)",
+      "Cue cards NATO personalizados (template 5 cue lines)",
+      "Grabadora digital + USB del instructor + celulares de aprendices respaldo",
+      "Maritime Word Wall pared lateral con 51 tarjetas (15 S2-S4 + 10 SMCP + 26 NATO)",
+      "Diagrama VHF Channel 16 + International Maritime Bands A2 (NUEVO S5)",
+      "Diagrama Ship Overview A2 (BUENAVENTURA EXPRESS lateral · de S3-S4)",
+      "Mapa Terminal Buenaventura A2 con sticker piloto",
+      "Cronómetro visible en pantalla",
+      "Audio ambient sounds puerto MUY bajo (entre escuchas WHILE B + durante WHILE D production)",
+      "Sobres Inspection Report S4 evaluados (devolución E2 al inicio SET-UP)",
+      "Sobres carta para audios MP3 + cue cards NATO + USB instructor (entran a portafolio Misión Final S12)"
+    ],
+    "tiempo": {
+      "set_up": 30,
+      "while_total": 295,
+      "break": 15,
+      "wrap_up": 20,
+      "total_directo_min": 360,
+      "autonomo_min": 140,
+      "autonomo_horas": 2.333333,
+      "total_aprendiz_horas": 8.333
+    },
+    "plan_b": "Si <50% asistencia: aplazar producción NATO 5 deletreos a S5 wrap-up extendido + S6 warm-up · usar tiempo extra en escucha repetida con SMCP Reference Card. Si parlantes fallan: usar app móvil VHF en celulares en parejas (1 audio compartido entre 2-3 aprendices). Si walkie-talkies no llegan: barrera de cartulina entre parejas + voz humana del instructor simulando interferencia VHF (susurros + cubrir boca con mano). Si la cohorte se atora con NATO Phonetic (>40% no recuerda 5 letras tras drilling): reducir alcance a 10 letras críticas (Alpha · Bravo · Charlie · Delta · Lima · November · Oscar · Sierra · Tango · Zulu) y dejar las 16 restantes para autónomo. Si Lista Verificación E3 no está lista: usar checklist genérico de 5 ítems Listening en tablero + foto para registro · Sergio adjunta versión final post-S5. Si SMCP/NATO Reference Cards no están laminadas: distribuir copias en papel A5 con instrucción explícita 'laminar antes de S6 — son permanentes'. Si energía baja en WHILE D production (>30% mira el celular): pausar 3 min · contar 1 anécdota corta de un piloto colombiano aprendiendo NATO en Buenaventura · reactivar narrativa profesional."
+  },
+  "totals_check": {
+    "set_up": 30,
+    "while_bloque_a": 50,
+    "while_bloque_b": 70,
+    "break": 15,
+    "while_bloque_c": 70,
+    "while_bloque_d": 70,
+    "while_bloque_e": 35,
+    "wrap_up": 20,
+    "total_min": 360,
+    "check_result": "EXACTO 360 min directos (6h) + 140 min autónomo (≈2.33h) = 500 min totales = 8.33h aprendiz S5. Coherente con header.duracion_sesion_min de pm-3-1 + horas autónomas pm-2-0 sessions[4]. Suma SET-UP 30 + WHILE A 50 + WHILE B 70 + BREAK 15 + WHILE C 70 + WHILE D 70 + WHILE E 35 + WRAP-UP 20 = 360 min ✓"
+  },
+  "rap_status": "S5 completada (preliminary · pendiente Gate Humano 3) — Apertura Bloque Interno 2 (RAP-02 · A1.3). E3 Listening ENTREGADO (5 pts · Lista Verificación No 3 · PM-4.1) — segundo entregable evaluado del programa · primer evidencia de comprensión auditiva. 25 audios NATO MP3 60s en USB del instructor (entran a portafolio Misión Final S12 junto con Inspection Report S4 sellado). 10 SMCP key phrases activas en Maritime Word Wall (Roger · Wilco · Affirmative · Negative · Standby · Out · Over · Say again · Spell that · Repeat). 26 NATO letras en Maritime Word Wall (Alpha-Zulu · 10 críticas drilladas · 16 para consolidación S6-S7). 25 SMCP Reference Cards + 25 NATO Reference Cards laminadas distribuidas como compañeros permanentes hasta S12 (foto colectiva tomada). 2 grupos gramaticales activos por reconocimiento receptivo (Gr 17 SMCP INTRO · Gr 8 Wh-questions INTRO). Apertura del Bloque Interno 2 RAP-02 abierta para S6 (Speaking VHF Response Drill con Captain Lopera).",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[4]",
+    "__contract_version__": "v2.5.1 (mapping per pm-3-1.pm_3_2_propagation_contract)",
+    "fpi_block": "3.3 Apropiación — Input auditivo",
+    "grammar_groups": {
+      "intro": [
+        {
+          "group_id": "Gr 17",
+          "group_name": "Maritime SMCP key phrases (Roger / Wilco / Affirmative / Negative / Standby / Out / Over / Say again / Spell that / Repeat) + NATO Phonetic Alphabet completo",
+          "nivel_activacion": "Intro",
+          "ejemplo_en_sesion": "Captain Lopera: 'Vessel inbound. Request berthing instructions. Spell call sign Charlie-Oscar-Lima. Standby.' Andrea: 'Roger. Stand by for berthing instructions. Spell that — Charlie-Oscar-Lima. Affirmative. Over.'"
+        },
+        {
+          "group_id": "Gr 8",
+          "group_name": "Presente simple Wh-questions (How / When / Where / What)",
+          "nivel_activacion": "Intro",
+          "ejemplo_en_sesion": "'When does the pilot board? Where is the vessel inbound from? What is your call sign? How many containers?' (reconocimiento receptivo en VHF dialogue · sin producción gramatical formal)"
+        }
+      ],
+      "consolida": [],
+      "aplica": [],
+      "carga_check": "2/2 Intro máximos (PM-0 §9.2) ✓ — entrada al Bloque Interno 2 con SMCP que es categóricamente distinto + Wh-questions soporte receptivo. Sin grupos en Consolida o Aplica · S5 es input auditivo puro · producción gramatical formal llega en S6.",
+      "active_receptive_only": [
+        "Gr 17 SMCP — producción de 3 confirmaciones (Roger · Wilco · Affirmative) en WHILE D Ronda 2 con instructor en rol Captain Lopera · NO producción gramatical formal extensa",
+        "Gr 8 Wh-questions — reconocimiento receptivo en VHF dialogue · sin producción"
+      ]
+    },
+    "feedback": {
+      "mode": "MIXTO (accuracy crítico en SMCP · fluency tolerada en gramática)",
+      "rationale": "SMCP es estandarizada OMI — accuracy es BLOQUEANTE (Roger/Wilco mal pronunciado puede causar accidente). Resto del inglés operativo permite fluency con foco diferido. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_2.",
+      "accuracy_techniques": [
+        "Accuracy crítico SMCP: choral drill cada SMCP + finger drilling 5+ reps + recast inmediato",
+        "Accuracy crítico NATO: deletreo cronometrado (1 deletreo en ≤ 5s) + corrección inmediata + clapping rítmico",
+        "Backchaining para letras polisílabas (vember → November · lie → Charlie)",
+        "Drilling pares contrastivos (CHARlie vs char-LEE · noVEMber vs NO-vember)",
+        "Recast colectivo en LIVE ZONE post-WHILE D (5 errores típicos sin nombrar autores)"
+      ],
+      "fluency_techniques": [
+        "Post-task delayed feedback en tablero global (WHILE B post-listening 3)",
+        "Auto-monitoreo del audio grabado con SMCP/NATO Cards (self-feedback durante WHILE D)",
+        "Fluency en inglés operativo durante negociación bilingüe en WHILE D Ronda 1 con compañero"
+      ],
+      "mixed_techniques": [
+        "Captain Lopera role en WHILE D Ronda 2 — accuracy bloqueante en SMCP · fluency tolerada en respuestas extendidas",
+        "Comparación final colectiva post-listening 3 — fluency en discusión grupal + accuracy en mensajes Radio Log"
+      ],
+      "notes": "S5 transita de S4 ACCURACY pure (cierre Bloque 1) a MIXTO (apertura Bloque 2). Accuracy SMCP/NATO bloqueante se mantiene constante hasta S12 (es categórico de la profesión maritime). Fluency entra como dimensión nueva en negociación bilingüe e inglés operativo no-SMCP."
+    },
+    "l1_management": {
+      "l1_percentage": 12,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_2_RAP02_A1.3.S4 — ≤ 12% (PM-0 §9.1 — entrada Bloque Interno 2)",
+      "l1_rationale": "L1 sólo para meta-instrucción inicial sobre interferencia VHF y rationale del NATO Phonetic (rol de seguridad operacional). SMCP literal e inglés operativo — TODO en L2. Adicionalmente: 1 micro-cápsula en español sobre stress crítico SMCP ('RO-ger NO ro-LÉR · stress incorrecto = mensaje incorrecto = accidente') + negociación bilingüe en WHILE D Ronda 1 con compañero (≤15% en bloque · ≤12% promedio sesión). Resto en L2 con apoyo visual obligatorio (SMCP/NATO Cards + Mapa + Diagrama VHF Channel 16).",
+      "english_zone_declaration": "Reactivada al inicio SET-UP — cinta azul marítima en piso visible · círculo 🔵 en tablero ya está desde S1 + nueva señal proyectada 'CHANNEL 16 — VHF MARITIME · ENGLISH ONLY'. Reforzada verbalmente con simulación radio check.",
+      "l1_allowed_for": [
+        "Meta-instrucción interferencia VHF (1 micro-cápsula proyectada · 30 seg L1 al inicio WHILE B)",
+        "Rationale del NATO Phonetic (1 micro-cápsula sobre seguridad operacional · 30 seg L1 al inicio WHILE C)",
+        "Stress crítico SMCP/NATO (3 micro-cápsulas: 'RO-ger NO ro-LÉR' · 'CHARlie NO char-LEE' · 'noVEMber NO NO-vember' · ≤30 seg cada una)",
+        "Negociación bilingüe en WHILE D Ronda 1 con compañero (≤15% L1 budget en bloque)",
+        "Devolución E2 al inicio SET-UP (frase corta bilingüe por aprendiz · ≤45 seg cada uno)",
+        "1:1 mini-ayuda cuando aprendiz se bloquea afectivamente con producción NATO (≤2 min L1)"
+      ],
+      "reduction_strategy": "S6 → 10% L1 (continuidad Bloque Interno 2 RAP-02) · S7 → 5% (entrada Bloque Interno 3 RAP-03) · S8 → 5% · curva descendente hacia 0% en S12 per pm-0-context.l1_percentage_per_session.single_guide_12_sessions"
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "Roger",
+          "ipa": "/ˈrɒdʒər/",
+          "tonica": "PRIMERA (RO-ger) — CRÍTICO no decir 'rolér' en español"
+        },
+        {
+          "word": "Wilco",
+          "ipa": "/ˈwɪlkəʊ/",
+          "tonica": "PRIMERA (WIL-co)"
+        },
+        {
+          "word": "Affirmative",
+          "ipa": "/əˈfɜːrmətɪv/",
+          "tonica": "SEGUNDA (afFIRmative)"
+        },
+        {
+          "word": "Standby",
+          "ipa": "/ˈstændbaɪ/",
+          "tonica": "PRIMERA (STAND-by)"
+        },
+        {
+          "word": "November (NATO N)",
+          "ipa": "/noʊˈvɛmbər/",
+          "tonica": "SEGUNDA (noVEMber) — CRÍTICO no 'NO-vember'"
+        },
+        {
+          "word": "Charlie (NATO C)",
+          "ipa": "/ˈtʃɑːrli/",
+          "tonica": "PRIMERA (CHARlie) — CRÍTICO no 'char-LEE'"
+        }
+      ],
+      "techniques": [
+        "Finger drilling crítico SMCP (5+ reps cada frase · dedo en stress)",
+        "Backchaining NATO ('vember' → 'November'; 'lie' → 'Charlie'; 'lu' → 'Zulu')",
+        "Clapping rítmico para call signs deletreados (4 letras = 4 palmadas · hace tangible el ritmo)",
+        "Board marking MAYÚSCULA en sílaba tónica de cada SMCP/NATO en LIVE ZONE",
+        "Drilling pares contrastivos para prevenir errores futuros (CHARlie vs CHARlee · noVEMber vs NOvember · ZUlu vs zu-LU · LIma vs liMA · OSCar vs osCAR)",
+        "Choral repetition en formato eco-pregunta (instructor SMCP → clase responde Roger/Wilco/Affirmative)"
+      ],
+      "board_marking": "Las 10 SMCP phrases + 10 NATO letras críticas quedan permanentes en Maritime Word Wall con stress en MAYÚSCULA + IPA en pequeño debajo. SMCP: ROger · WILco · afFIRmative · NEGative · STANDby · OUT · Over · Say aGAIN · Spell THAT · RePEAT. NATO críticas: ALpha · BRAvo · CHARlie · DELta · LIma · noVEMber · OSCar · SIERra · TANgo · ZUlu.",
+      "notes": "S5 introduce SMCP (Roger/Wilco/Standby) + NATO Phonetic — los compañeros permanentes del programa hasta S12. Stress es CRÍTICO BLOQUEANTE — más que cualquier otra sesión hasta el momento. Drilling intensivo es la columna vertebral de la sesión. Las 16 NATO letras restantes (E · F · G · H · I · J · K · M · P · Q · R · U · V · W · X · Y) se consolidan en S6 (pronunciation lab) y S7 (Radio Log con call signs reales del IMO YouTube).",
+      "source": "PM-0 §5.13 — Stress en SMCP es CRÍTICO (PM-0 §5.13 IMARPOR-CC)"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "Roger",
+        "Wilco",
+        "Affirmative",
+        "Negative",
+        "Standby",
+        "Over",
+        "Out",
+        "Say again",
+        "Spell that",
+        "Repeat"
+      ],
+      "factors_applied": [
+        "Sounds",
+        "Encounter",
+        "Use",
+        "Conceptualize"
+      ],
+      "operationalization": "Sounds: SMCP Reference Card con stress marking (CRÍTICO) + NATO Reference Card con stress marking + finger drilling intensivo + clapping rítmico + backchaining + pares contrastivos. Encounter: 3 escuchas VHF dialogue (gist · detail · task) + pre-listening drilling SMCP + post-listening Radio Log + WHILE C NATO drilling + WHILE D producción 5 deletreos NATO + 3 confirmaciones SMCP + WHILE E recast = 6+ encuentros activos en sesión. Use: cada aprendiz produce 5 deletreos NATO (audio 60s grabado) + 3 confirmaciones SMCP en respuesta a Captain Lopera (instructor en rol). Conceptualize: clasificar 10 SMCP phrases por función (4 columnas: confirmar · pedir clarificación · reportar · solicitar) + clasificar 10 NATO letras por stress pattern (PRIMERA · SEGUNDA · ÚNICA).",
+      "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS)"
+    },
+    "physical_environment": "Aula bilingüe — Layout en mesas de 4 (parejas WHILE A · plenaria WHILE B + WHILE C · individual WHILE B detail + WHILE D producción + WHILE D auto-monitoreo) · plenaria al frente con mesa ceremonial reservada para Ronda 2 WHILE D con Captain Lopera (instructor en rol con walkie-talkie simulado). Proyector + tablero con 4 zonas demarcadas (English Zone · Title · SMCP Function Legend · LIVE ZONE). Maritime Word Wall pared lateral con 51 tarjetas (15 S2-S4 + 10 SMCP + 26 NATO). Mapa Terminal Buenaventura A2 con sticker piloto en Pilot Boarding Point + Diagrama Ship Overview A2 + Diagrama VHF Channel 16 + International Maritime Bands A2 (NUEVO desde S5) en muros frontales/laterales. Parlantes calidad volumen VHF realista + USB respaldo + app móvil respaldo + walkie-talkies simulados (1 set por pareja) + Plan B barrera cartulina. Música ambient sounds puerto MUY baja durante momentos individuales (entre escuchas WHILE B + durante WHILE D production). Mesa al frente reservada para devolución E2 al inicio (sobres Inspection Report S4 con Lista Verificación E2 marcada) + entrega ritual final SMCP/NATO Cards permanentes (foto colectiva).",
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.3",
+      "habilidad_principal": "comprension_oral",
+      "descriptor_activo": "Comprende instrucciones de 2-3 pasos via VHF (con interferencia simulada). Decodifica intent en frases SMCP (Vessel inbound · Request pilot · Standby for berthing instructions). Identifica call signs deletreados con NATO Phonetic. Distingue entre confirmar / pedir clarificación / reportar / solicitar en contexto VHF.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_2_S4-S6_RAP02_A1.3.comprension_oral"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Moderada — VHF natural rate con interferencia simulada (no slowed-down · realismo) · pausas entre escuchas (no durante audio · solo entre)",
+      "extension_textos": "Audio 90s + 10 SMCP intercambios + 5 deletreos NATO + Radio Log mini 5 mensajes + producción 5 deletreos NATO + 3 confirmaciones SMCP",
+      "andamiaje": "Moderado — SMCP/NATO Reference Cards a la vista pero sin transcripción durante listening 1 y 2 · transcripción solo POST-listening 2 · cue cards NATO personalizados con template",
+      "rol_docente": "Modelo central en pronunciation lab → Driller intensivo SMCP/NATO → Facilitador en producción → Captain Lopera en rol durante WHILE D Ronda 2 → Recast moderator en WHILE E → Ceremonial host en entrega Cards permanentes",
+      "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_2"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A3 — Trazabilidad descriptores §6 comprension_oral A1.3",
+        "B2 — Drilling SMCP + NATO (CRÍTICO en este sector)",
+        "B3 — Accuracy SMCP bloqueante (recast inmediato + finger drilling 5+ reps)",
+        "B5 — Gestión L1 al 12% (cerca del piso A1.3 entrada Bloque Interno 2)",
+        "D2 — Can-do 'Comprender SMCP via VHF + deletrear con NATO Phonetic' asociado a E3 Listening (5 pts)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S5 IMARPOR-CC. E3 Listening 5 pts es el segundo entregable formal evaluado del programa · primer evidencia de comprensión auditiva · punto bisagra de apertura RAP-02. SMCP/NATO Reference Cards laminadas son hito ritual del programa hasta S12."
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    },
+    "downstream_consumers": [
+      "PM-3.3 Canva Slides — referencias a SMCP Function Legend slide + NATO Phonetic Alphabet Alpha-Zulu slide + VHF dialogue audio cue + Captain Lopera role slide + ritual de entrega Cards permanentes slide",
+      "PM-3.4 Workbook — Maritime Listening + SMCP Toolbelt Chapter 5 + autonomous task NATO 5 deletreos audio 60s",
+      "PM-3.6 Activity Logistics — A5.1 to A5.5 IDs derivados de WHILE A-E",
+      "PM-2.11 Check 14 — validación propagación estrategia_didactica + tecnicas[] + pm0_protocol cross-ref con pm-3-1.pm0_alignment_by_session[4]",
+      "PM-4.1 Lista Verificación No 3 — E3 Listening 5 criterios × 1 pt = 5 pts · evaluación post-clase + devolución S6"
+    ]
+  }
+}

@@ -1,0 +1,1020 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.5",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
+  "session": 6,
+  "session_name": "VHF Response Drill — Speaking with Captain Lopera",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide": "G1 — The Maritime Operations Pro",
+  "guia_numero": 1,
+  "programa": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo": "12340002",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.8 (VHF segment)",
+    "PM-2.10 (Gr 5neg + Gr 6 must + Gr 8 + Gr 17)"
+  ],
+  "habilidades_foco": [
+    "Speaking (S●)",
+    "Pronunciation (P●)",
+    "Grammar (G●)"
+  ],
+  "habilidades_soporte": [
+    "Listening receptivo (L○ — escucha de prompts VHF del instructor/par)"
+  ],
+  "cefr": "A1.3 (Bloque Interno 2 · RAP-02)",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-29",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "preliminary",
+  "_status_preliminary_rationale": "Build-Out S6 generado por subagente PM-3.2 · Gate Humano 3 (aprobación Playbook) pendiente · Sergio confirma cambiando a 'completed' tras revisión de coherencia con PM-2.8 (VHF segment) + PM-2.10 (Gr 5neg/6/8/17) + pm-3-1 sessions[5].",
+  "momento_sena": "3.3 Apropiación — Output oral",
+  "estrategia_didactica": "ABT + Simulación VHF — Pronunciation lab + VHF Response Simulation con Captain Lopera",
+  "justificacion_didactica": "S6 es la primera sesión de OUTPUT ORAL evaluada parcialmente (E4 Speaking VHF segment · 5 pts Escala Estimación No 4). Activa Bloque Interno 2 RAP-02 A1.3 produccion_oral — el aprendiz transita de input auditivo SMCP (S5) a producción oral propia con presión simulada de canal radio. La técnica dominante combina pronunciation lab intensivo (drilling estímulo-respuesta + backchaining + choral) con VHF Response Simulation 2 min en parejas con barrera visual que fuerza canal radio (sin contacto visual · sólo voz). Captain Lopera (rol del instructor o aprendiz par avanzado · lingua franca B2) emite 5 SMCP messages + 1 call sign deletreado NATO Phonetic; el aprendiz confirma con Roger/Wilco/Affirmative/Standby + repite call sign + responde Wh-questions presente simple. Grammar groups activos: Gr 5neg (Imperativo negativo · 'Don't approach the bow during loading') Intro · Gr 6 (Modal must · 'Vessel must wait at anchorage') Intro · Gr 8 (Wh-questions presente simple) Consolida · Gr 17 SMCP key phrases Consolida. Carga 2/2 Intro + 2 Consolida ✓ PM-0 §9.2. L1 ≤ 10% — sólo meta-instrucción del simulator setup; toda VHF Response Simulation 100% L2. Feedback MIXTO: accuracy bloqueante en SMCP (recast inmediato si Roger/Wilco mal pronunciado · alto del simulator) + fluency dominante en intercambios (post-task delayed feedback con notas en tablero). Es la sesión donde el aprendiz EJECUTA por primera vez el oficio cotidiano del Port Operations Trainee — confirmar mensajes VHF con vessel masters no-nativos.",
+  "session_header": {
+    "titulo": "SESSION 6: VHF Response Drill — Speaking with Captain Lopera",
+    "subtitulo": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Build-Out — Playbook v2.5",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.8 — Speaking Simulation (VHF segment · 5 escenarios cue cards · primera mitad S6)",
+      "PM-2.10 — Grammar Awareness (Gr 5neg + Gr 6 must + Gr 8 Wh-questions + Gr 17 SMCP · segunda mitad S6)"
+    ],
+    "habilidades_foco": [
+      "Speaking S● (VHF Response Simulation 2 min × aprendiz · primera evaluación oral parcial E4)",
+      "Pronunciation P● (drilling estímulo-respuesta SMCP + 5 stress focus words: starboard · port side · anchorage · must · approach)",
+      "Grammar G● (Gr 5neg + Gr 6 must Intro · Gr 8 Wh + Gr 17 SMCP Consolida)"
+    ],
+    "habilidades_soporte": [
+      "Listening L○ (recepción de prompts VHF del instructor o par · sin evaluación)"
+    ],
+    "objetivos_pedagogicos": [
+      "(1) Pronunciar correctamente 5 stress focus words críticas (starboard /ˈstɑːrbərd/ · port side /pɔːrt saɪd/ · anchorage /ˈæŋkərɪdʒ/ · must /mʌst/ · approach /əˈproʊtʃ/) en drilling estímulo-respuesta + backchaining.",
+      "(2) Distinguir oralmente imperativo afirmativo (Approach starboard) vs imperativo negativo (Don't approach the bow) vs modal must (Vessel must wait) en contexto VHF.",
+      "(3) Responder Wh-questions presente simple en VHF: 'When does the pilot arrive?' / 'How many containers do you have?' / 'Where is the vessel berthed?'",
+      "(4) Ejecutar VHF Response Simulation de 2 min en parejas — confirmar 5 SMCP messages (Roger · Wilco · Affirmative · Negative · Standby) + deletrear 1 call sign NATO Phonetic.",
+      "(5) Aprobar Escala Estimación No 4 segmento VHF (5 criterios × 1 pt = 5 pts E4 parcial · cierre del segmento Berthing en S8)."
+    ],
+    "plan_b": "Si walkie-talkies/app móvil no disponibles: usar barrera de cartulina A3 entre parejas (oculta visión · sólo voz) + voz natural sin canal radio · marcar inicio/fin de transmisión con 'Over' verbal. Si <50% asistencia día S6: extender SET-UP Pronunciation Lab a 60 min + reducir VHF Response Simulation a 1 ronda × aprendiz (sin grabación) + diferir grabación + autoevaluación a homework autónomo. Si proyector falla: usar Reference Cards SMCP + NATO laminadas (1 por aprendiz desde S5) + cue cards impresas con 5 escenarios. Si grabador celular no disponible: instructor toma notas en planilla Escala Estimación + retroalimenta in-situ post-cada-VHF.",
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk pre-modelado bilingüe (con uso L1 ≤10% sólo meta-instrucción simulator setup). Duración suma exacta 360 min directos + 140 min autónomo (≈2.33h Radio Log grabación 90s simulando call entrante). L1 ≤ 10% del tiempo de instrucción (CURVA DESCENDENTE desde S1 25% → S2 20% → S3 15% → S5 10%). VHF Response Simulation es 100% L2. Esta sesión es el PRIMER PUERTO DE EVALUACIÓN ORAL formal del curso — energía profesional + cero juicio invasivo + cero corrección durante simulación · feedback delayed post-task."
+  },
+  "materials_checklist": [
+    {
+      "item": "PM-2.8 worksheet impreso (Speaking Simulation · VHF segment · 5 escenarios cue cards)",
+      "cantidad": "1 set por aprendiz (estimado 25 sets) + 5 sets de respaldo",
+      "verificado": false
+    },
+    {
+      "item": "PM-2.10 worksheet impreso (Grammar Awareness · Gr 5neg + Gr 6 must + Gr 8 Wh + Gr 17 SMCP · marcación por colores)",
+      "cantidad": "1 por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Walkie-talkies o app móvil VHF (1 set por pareja · simulador canal radio · prueba pre-clase 5 min)",
+      "cantidad": "12-13 sets (1 por pareja) + 2 de respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Cue cards con 5 escenarios VHF Response Simulation pre-impresos (E1 Inbound vessel · E2 Pilot boarding · E3 Berthing instruction · E4 Restricted area warning · E5 Anchorage standby)",
+      "cantidad": "1 set de 5 cue cards por pareja",
+      "verificado": false
+    },
+    {
+      "item": "SMCP Reference Card laminada (1 por aprendiz · permanente desde S5)",
+      "cantidad": "25 unidades en Reference Card holder + 5 respaldo",
+      "verificado": false
+    },
+    {
+      "item": "NATO Phonetic Alphabet Reference Card laminada (1 por aprendiz · permanente desde S5)",
+      "cantidad": "25 unidades + 5 respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Escala Estimación No 4 — 5 criterios VHF segment (planilla instructor + 1 copia por aprendiz para autoevaluación post-VHF)",
+      "cantidad": "1 planilla instructor × 25 aprendices + 25 copias autoevaluación",
+      "verificado": false
+    },
+    {
+      "item": "Grabador celular o app de grabación (1 por pareja · audio 2 min × 5 escenarios · backup en nube)",
+      "cantidad": "12-13 dispositivos (BYOD)",
+      "verificado": false
+    },
+    {
+      "item": "Barrera visual entre parejas (cartulina A3 negra · simula canal radio sin contacto visual · 1 por pareja)",
+      "cantidad": "12-13 cartulinas + 3 respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Tablero permanente con stress focus words S6 — STARboard /ˈstɑːrbərd/ · PORT side /pɔːrt saɪd/ · ANchorage /ˈæŋkərɪdʒ/ · MUST /mʌst/ · apPROACH /əˈproʊtʃ/",
+      "cantidad": "1 zona del tablero pre-escrita (10 min antes de clase)",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Word Wall actualizado Sub-bloque 2 (con starboard · port side · anchorage · pilot · vessel · inbound · outbound · berth · approach + 5 SMCP key phrases recicladas S5)",
+      "cantidad": "Pared lateral · 10 tarjetas nuevas + 10 tarjetas recicladas",
+      "verificado": false
+    },
+    {
+      "item": "Audio modelo Captain Lopera (5 escenarios pre-grabados B2 lingua franca · 30s c/u · usar SOLO si pareja necesita rescate auditivo)",
+      "cantidad": "1 archivo · cargado proyector + bocinas",
+      "verificado": false
+    },
+    {
+      "item": "Cronómetro visible en pantalla + cronómetro pareja (2 min × ronda)",
+      "cantidad": "1 proyector + 12 cronómetros pareja",
+      "verificado": false
+    },
+    {
+      "item": "Marcadores de 4 colores grammar awareness (azul=Gr 5neg · rojo=Gr 6 must · verde=Gr 8 Wh · naranja=Gr 17 SMCP)",
+      "cantidad": "1 set de 4 colores por pareja + 5 sets respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Planilla autoevaluación VHF post-task (5 ítems chequeo: ¿Roger pronunciado claro? · ¿call sign NATO completo? · ¿imperativo negativo correcto? · ¿must usado en contexto? · ¿Wh-question respondida?)",
+      "cantidad": "1 por aprendiz",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO dividido en 4 zonas: (1) ESQUINA SUPERIOR DERECHA — ENGLISH ZONE 🔵 reactivada al inicio (recordatorio · cinta azul piso permanente desde S1). (2) CENTRO — Title 'IMARPOR-CC · S6: VHF Response Drill — Speaking with Captain Lopera' + subtítulo 'Berth 4 · 06:15 a.m. · BUENAVENTURA EXPRESS inbound'. (3) COLUMNA LATERAL IZQUIERDA — STRESS FOCUS WORDS S6 con stress en MAYÚSCULA + IPA: STARboard /ˈstɑːrbərd/ · PORT side /pɔːrt saɪd/ (CRÍTICO distinguir del puerto físico) · ANchorage /ˈæŋkərɪdʒ/ · MUST /mʌst/ · apPROACH /əˈproʊtʃ/. Debajo: GRAMMAR FRAMES por colores — AZUL Gr 5neg 'Don't ___ during loading' · ROJO Gr 6 'Vessel must ___ at anchorage' · VERDE Gr 8 'When does the pilot ___?' · NARANJA Gr 17 SMCP 'Roger · Wilco · Affirmative · Negative · Standby · Over · Out'. (4) ESPACIO INFERIOR LIVE ZONE — vacío al inicio · se llena durante la sesión con: errores comunes pronunciación globales (no individuales · sin nombres) + frases que emergen orgánicamente + post-task delayed feedback notes. Maritime Word Wall pared lateral actualizado Sub-bloque 2 (10 nuevas + 5 SMCP recicladas S5). Zona de SIMULADORES: 12-13 estaciones de pareja con barrera A3 + walkie-talkie/app + cronómetro pareja + grabador celular (configuradas durante BREAK).",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:30",
+      "duracion_min": 30,
+      "bloque": "SET-UP",
+      "actividad": "Welcome reactivación English Zone + objetivos día + reciclaje SMCP/NATO S5 + Pronunciation drill estímulo-respuesta de las 5 stress focus words S6",
+      "agrupacion": "Plenaria → choral repetition",
+      "notas": "Energía operacional alta. L1 ≤ 10% (sólo meta-instrucción del simulator setup). Pronunciation lab activo desde minuto 1."
+    },
+    {
+      "tiempo": "0:30-1:30",
+      "duracion_min": 60,
+      "bloque": "WHILE A (Pronunciation Lab)",
+      "actividad": "PM-2.8 Pronunciation Lab — Drilling estímulo-respuesta SMCP intensivo (Roger/Wilco/Affirmative/Negative/Standby) + Backchaining 'board → starboard' + Choral drill imperativos negativos + autoevaluación pareja",
+      "agrupacion": "Plenaria → parejas mirror drilling",
+      "notas": "Accuracy bloqueante SMCP. Recast inmediato si Roger/Wilco mal pronunciado. Volumen progresivo: susurro → conversacional → VHF projection."
+    },
+    {
+      "tiempo": "1:30-2:30",
+      "duracion_min": 60,
+      "bloque": "WHILE B (Grammar Awareness)",
+      "actividad": "PM-2.10 Grammar Awareness — Marcación por colores 4 grupos (Gr 5neg azul · Gr 6 must rojo · Gr 8 Wh verde · Gr 17 SMCP naranja) + producción guiada de 4 oraciones modelo en parejas",
+      "agrupacion": "Individual silencioso → parejas + plenaria breve",
+      "notas": "Inducción sin metalenguaje pesado. 'Don't approach' / 'Vessel must wait' / 'When does X arrive?' / 'Roger captain.' Cada aprendiz produce las 4."
+    },
+    {
+      "tiempo": "2:30-2:45",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "Receso activo + setup de simuladores VHF (instructor configura 12-13 estaciones de pareja con walkie-talkie/app + barrera A3 + cronómetro)",
+      "agrupacion": "—",
+      "notas": "Hidratación. Instructor + asistente (si lo hay) pre-arman estaciones. English Zone se relaja durante break."
+    },
+    {
+      "tiempo": "2:45-3:30",
+      "duracion_min": 45,
+      "bloque": "WHILE C (Cue Card Prep)",
+      "actividad": "PM-2.8 Cue Card Preparation — Cada pareja recibe 5 cue cards de escenarios VHF (Inbound · Pilot boarding · Berthing instruction · Restricted area · Anchorage standby) + ensayo silencioso 30s × escenario + ICQ instructor",
+      "agrupacion": "Parejas en estación VHF (sin barrera aún)",
+      "notas": "Andamiaje moderado. SMCP/NATO Reference Cards a la vista. No grabar todavía. ICQ check de comprensión escenarios."
+    },
+    {
+      "tiempo": "3:30-5:00",
+      "duracion_min": 90,
+      "bloque": "WHILE D (VHF Response Simulation)",
+      "actividad": "PM-2.8 VHF Response Simulation EVALUADA — 5 escenarios × 2 min × pareja (rotando rol Captain Lopera ↔ Andrea) con barrera visual A3 + grabación celular + Escala Estimación E4 segment VHF",
+      "agrupacion": "Parejas en barrera visual (canal radio simulado)",
+      "notas": "100% L2. Instructor monitor con planilla Escala Estimación. CERO interrupción durante simulación. Recast diferido al WRAP-UP."
+    },
+    {
+      "tiempo": "5:00-5:30",
+      "duracion_min": 30,
+      "bloque": "WHILE E (Post-task Feedback)",
+      "actividad": "Post-task delayed feedback global — Instructor escribe en LIVE ZONE 5 errores comunes globales (sin nombres) + recast modélico + 3 estrellas + 1 deseo grupal + mini-recast pareja-a-pareja (peer 3*+1 wish)",
+      "agrupacion": "Plenaria → parejas peer feedback",
+      "notas": "Fluency-oriented. Sin reglas gramaticales nuevas. Sólo modélico. Cada pareja da 3 estrellas + 1 deseo a otra pareja vecina."
+    },
+    {
+      "tiempo": "5:30-6:00",
+      "duracion_min": 30,
+      "bloque": "WRAP-UP",
+      "actividad": "Self-recording autoevaluación 5 ítems planilla + Exit Ticket S6 + asignación autónoma Radio Log 90s + preview S7 + preview E4 segment Berthing S8",
+      "agrupacion": "Individual → plenaria breve",
+      "notas": "Cierre con energía profesional. Cada aprendiz oye su grabación + autoevalúa los 5 ítems + entrega planilla. E4 parcial cerrado · cierre final E4 en S8."
+    }
+  ],
+  "set_up": {
+    "duracion_min": 30,
+    "warm_up": {
+      "nombre": "VHF Activation — Reciclaje SMCP S5 + Pronunciation Drill 5 Stress Focus Words S6",
+      "pasos": [
+        "1. Instructor reactiva English Zone con gesto + cinta azul piso permanente: '*Welcome back, Junior Trainees. The English Zone is open. Today — radios on. We respond.*'",
+        "2. Reciclaje SMCP S5 plenaria: instructor dice prompt → clase responde en coro. '*Vessel inbound, please confirm.*' → clase: '*ROGER, vessel inbound!*' (4 prompts × 4 respuestas SMCP).",
+        "3. Reciclaje NATO Phonetic 1 nombre del aprendiz al azar: '*Sergio · Sierra-Echo-Romeo-Golf-India-Oscar.*' Choral repetition con palmadas silábicas.",
+        "4. Pronunciation drill 5 stress focus words S6 con board marking + IPA + clapping silábico: STARboard (CLAP-clap) · PORT side (CLAP-clap) · ANchorage (CLAP-clap-clap) · MUST (CLAP único fuerte) · apPROACH (clap-CLAP).",
+        "5. Backchaining 'starboard': instructor modela 'board' → clase repite. 'star-board' → clase repite. 'STAR-board' → clase repite con stress correcto.",
+        "6. Pronunciation pareja mirror drill 3 min: A dice 5 palabras → B repite con stress + ✓/✗. Roles invertidos. Sin corrección invasiva — sólo eco.",
+        "7. Instructor proyecta objetivos día + ICQ verificación.",
+        "8. CRITICAL distinction: 'PORT' (the city / harbor) vs 'PORT side' (left side of vessel) — board marking color distintivo · choral drill contrastivo."
+      ],
+      "duration_min": 15
+    },
+    "teacher_talk_opening_en": "*Good morning, Junior Trainees. Welcome to Session Six. Today the radios are on. Andrea is on Berth 4 — and the BUENAVENTURA EXPRESS is inbound. Captain Lopera is calling. Today YOU answer. Five stress words: STARboard · PORT side · ANchorage · MUST · apPROACH. Five SMCP responses: Roger · Wilco · Affirmative · Negative · Standby. Five scenarios. Five rounds. By the end of today, you have your first official Speaking score — five points, partial E4. Are we ready? Radios on?*",
+    "teacher_talk_opening_es_cursive": "*(Buenos días, Aprendices Junior. Bienvenidos a la Sesión Seis. Hoy las radios están encendidas. Andrea está en el Muelle 4 — y el BUENAVENTURA EXPRESS está entrando. El Capitán Lopera está llamando. Hoy USTEDES responden. Cinco palabras tónicas: STARboard · PORT side · ANchorage · MUST · apPROACH. Cinco respuestas SMCP: Roger · Wilco · Affirmative · Negative · Standby. Cinco escenarios. Cinco rondas. Al final del día, tienen su primer puntaje oficial de Speaking — cinco puntos, E4 parcial. ¿Listos? ¿Radios encendidas?)*",
+    "objetivo_dia_escrito_en_tablero": "*Today you will: (1) drill 5 stress words for VHF · (2) build 4 grammar frames (Don't / Must / When does / SMCP) · (3) prepare 5 cue cards · (4) execute 5 VHF Response rounds 2 min each · (5) earn your first 5 Speaking points (E4 partial). Captain Lopera is waiting.*",
+    "activacion_5_stress_focus_words": {
+      "instruccion": "Instructor señala las 5 tarjetas pre-pegadas en el Maritime Word Wall + las 5 entradas en columna lateral del tablero. Modela stress + IPA: '*STARboard /ˈstɑːrbərd/ — TWO syllables, stress on FIRST. PORT side /pɔːrt saɪd/ — TWO words, equal stress, but PORT is the LEFT of the vessel — NOT the harbor. ANchorage /ˈæŋkərɪdʒ/ — THREE syllables, stress on FIRST. MUST /mʌst/ — ONE syllable, strong. apPROACH /əˈproʊtʃ/ — TWO syllables, stress on SECOND.*' Choral repetition 3 veces × palabra · finger drilling rápido · clapping silábico · backchaining 'starboard' y 'approach'.",
+      "tecnica": "Modelo-eco + Choral repetition + Finger drilling + Board marking + Backchaining + Clapping silábico (PM-0 §5.13 + ABT pronunciation lab)"
+    },
+    "icq": [
+      "*PORT — is it the city or the left side of the vessel?* → Esperan: 'Both / city is PORT, left side is PORT side / two meanings'",
+      "*Where is the stress in STARboard?* → Esperan: 'First / STAR / first syllable'",
+      "*How many SMCP responses do we use today?* → Esperan: '5 / Roger Wilco Affirmative Negative Standby'",
+      "*How many scenarios in the VHF simulation?* → Esperan: '5 / five'",
+      "*How many points is today's Speaking grade?* → Esperan: '5 / E4 partial / five points'"
+    ],
+    "facilitation_notes": [
+      "💡 La distinción PORT (puerto) vs PORT side (babor) es CRÍTICA — el aprendiz debe oír y producirla 5+ veces antes del WHILE D. Use board marking color distintivo + ejemplos en frase contrastivos: 'The PORT of Buenaventura' vs 'The PORT side of the vessel.'",
+      "💡 No interrumpa la pronunciación de un aprendiz para corregir individualmente — use el modelo-eco grupal (clase entera repite mejor) — preserva ego en el primer día de evaluación oral.",
+      "💡 Si un aprendiz pronuncia 'must' con vocal larga (/muːst/ típico hispano) — backchain rápido 'st → ust → mUST' con vocal corta /ʌ/ + pata fuerte.",
+      "💡 Mantenga energía operacional alta — esto NO es una sesión académica · es la mañana del Port Operations Trainee. Use voz proyectada · gestos de radio (mano al oído) · postura erguida.",
+      "💡 Si la cohorte llega cansada · reduzca reciclaje SMCP a 1 prompt + agregue 2 min de movimiento físico (mano-radio + 'Roger captain!' coro) · NO sacrifique el pronunciation lab."
+    ],
+    "checkpoint": "✓ Plenaria choral repetition de las 5 stress focus words: ≥80% de los aprendices producen las 5 con stress correcto en la 3ra repetición. Si menos: dar 5 min extra de mirror drill en parejas + 1 min de backchaining grupal."
+  },
+  "while": {
+    "duracion_min": 285,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "Pronunciation Lab — Drilling SMCP Estímulo-Respuesta + Backchaining (PM-2.8 Pronunciation Lab)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.8, Pronunciation Lab section + SMCP/NATO Reference Cards (laminadas desde S5)",
+        "agrupacion": "Plenaria → parejas mirror drilling",
+        "objetivo": "Activar mecánicamente las 5 SMCP responses (Roger · Wilco · Affirmative · Negative · Standby) en patrón estímulo-respuesta automatizado · backchain 'starboard' y 'approach' · drilling de imperativos negativos + must contrastivo. Accuracy bloqueante SMCP. La meta es que las 5 respuestas SMCP queden disponibles en memoria de trabajo para WHILE D simulation.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor abre con prompt-respuesta intensiva 10 min: instructor proyecta 1 imagen + dice prompt → clase responde en coro la SMCP correcta. Ejemplos: '*Vessel inbound, please confirm.*' → '*ROGER, vessel inbound!*' · '*Pilot will board at 06:30. Acknowledge.*' → '*WILCO, pilot 06:30!*' · '*Position confirmed?*' → '*AFFIRMATIVE, position confirmed!*' · '*Are containers ready?*' → '*NEGATIVE, containers not ready!*' · '*Hold the line.*' → '*STANDBY, holding!*' (5 prompts × 4 reps cada uno = 20 intercambios).",
+          "2. Backchaining 10 min de 'starboard' (palabra crítica): instructor modela '*board · -board · star-board · STAR-board.*' Clase repite cada paso 3 veces. Aplicación en frase: '*Vessel approaches starboard.*' Choral 5 reps. Mismo patrón con 'approach': '*-proach · ap-proach · ap-PROACH · vessel ap-PROACH-es.*'",
+          "3. Drilling imperativos negativos 10 min: instructor modela frame Gr 5neg azul: '*Don't approach the bow during loading.*' Clase repite. '*Do not enter the restricted area.*' Clase repite. '*Don't cross the yellow line.*' Clase repite. Variantes con 5 verbos: enter / approach / cross / move / touch.",
+          "4. Drilling modal must Gr 6 rojo 10 min: instructor modela frame: '*Vessel must wait at anchorage.*' Clase repite. '*Pilot must board before berthing.*' Clase repite. '*Crew must wear hard hats.*' Clase repite. Variantes con 5 sujetos: vessel / pilot / crew / driver / supervisor.",
+          "5. Pareja Mirror Drilling 15 min: A lee 5 prompts de la cue card de pronunciation drill → B responde con SMCP correcta + stress correcto + IPA + ✓/✗ en autoevaluación pareja. Roles invertidos. Total 30 intercambios × pareja (5 prompts × 2 repeticiones × 3 ronditas).",
+          "6. Cierre 5 min plenaria choral con volumen progresivo: susurro → conversacional → VHF projection (volumen alto). Instructor: '*Volume one — whisper. Volume two — talk. Volume THREE — RADIO!*' Cada vez clase responde las 5 SMCP en coro al volumen indicado.",
+          "7. Frase puente al WHILE B: '*Now you have the SOUNDS. Next — we put them inside grammar frames. Don't / Must / When does / Roger.*'"
+        ],
+        "teacher_talk_instruction": "*Stand up if you can. Radios on — pretend you have one in your hand. I am Captain Lopera. You are Andrea on Berth 4. I call — you answer. Five SMCP responses: Roger · Wilco · Affirmative · Negative · Standby. We drill until your mouth knows them without thinking. Then we drill imperatives — Don't approach. Don't enter. Then we drill must — Vessel must wait. Pilot must board. Volume from whisper to RADIO. Sixty minutes. Mouths warm. Let's go.*",
+        "icq": [
+          "*Are we sitting or standing for the drill?* → Esperan: 'Standing / radio in hand'",
+          "*How many SMCP responses do we drill?* → Esperan: '5 / Roger Wilco Affirmative Negative Standby'",
+          "*Can I check my partner's pronunciation?* → Esperan: 'Yes / mirror drill / pair check / ✓✗'",
+          "*If I make a mistake?* → Esperan: 'It's ok / try again / mouth muscles learning'"
+        ],
+        "answer_key_inline": {
+          "smcp_correct_responses": [
+            "Roger /ˈrɒdʒər/ = message received and understood",
+            "Wilco /ˈwɪlkoʊ/ = will comply (acción tomará lugar)",
+            "Affirmative /əˈfɜːrmətɪv/ = yes",
+            "Negative /ˈneɡətɪv/ = no",
+            "Standby /ˈstændbaɪ/ = wait, hold the line"
+          ],
+          "stress_focus_correct": [
+            "STARboard (PRIMERA · /ˈstɑːrbərd/)",
+            "PORT side (cada palabra stress fuerte)",
+            "ANchorage (PRIMERA · /ˈæŋkərɪdʒ/)",
+            "MUST (única · /mʌst/ vocal corta)",
+            "apPROACH (SEGUNDA · /əˈproʊtʃ/)"
+          ],
+          "imperative_negative_frames": [
+            "Don't approach the bow during loading.",
+            "Do not enter the restricted area.",
+            "Don't cross the yellow line.",
+            "Do not move the cargo.",
+            "Don't touch the equipment."
+          ],
+          "must_modal_frames": [
+            "Vessel must wait at anchorage.",
+            "Pilot must board before berthing.",
+            "Crew must wear hard hats.",
+            "Driver must check the brakes.",
+            "Supervisor must sign the report."
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Accuracy BLOQUEANTE SMCP: si Roger/Wilco mal pronunciado · alto del simulator + recast inmediato + clase repite. Es la única corrección invasiva permitida en S6.",
+          "💡 Backchaining 'starboard' funciona 80% mejor que repetición directa — el aprendiz hispano tiende a abreviar la /ɑːr/. Forzar la 2da sílaba '-board' primero garantiza que la primera con stress no se pierda.",
+          "💡 Volumen progresivo (susurro → conversacional → VHF) activa muscle memory + reduce ansiedad — al llegar al volumen RADIO el aprendiz ya pronunció bien 3 veces sin presión.",
+          "💡 Si una pareja no se atreve a corregirse mutuamente · acérquese · modele 1 ronda · luego retírese.",
+          "💡 PORT vs PORT side: si emerge confusión durante el drill · pause + board marking contrastivo + 1 frase ejemplo: '*The PORT of Buenaventura is on the Pacific. The PORT side of the vessel is on the LEFT.*' Choral 3 reps."
+        ],
+        "checkpoint": "✓ Pareja Mirror Drilling: ≥80% de las parejas tienen 4 de 5 SMCP responses pronunciadas correctamente con stress + 4 de 5 stress focus words bien marcadas. Si menos: dar 5 min extra de drilling grupal + repetir backchaining 'starboard' + 'approach'.",
+        "transition": "*Mouths warm. Sounds locked in. Now — frames. Open PM-2.10. Four colors. Four grammar frames. We build the sentences Captain Lopera will hear.*",
+        "tecnica_didactica": "Drilling estímulo-respuesta SMCP intensivo + Backchaining maritime + Choral con volumen progresivo + Pair Mirror Drill con autoevaluación ✓✗"
+      },
+      {
+        "letra": "B",
+        "nombre": "Grammar Awareness — 4 Frames por Colores (PM-2.10 Gr 5neg azul · Gr 6 must rojo · Gr 8 Wh verde · Gr 17 SMCP naranja)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.10, Grammar Awareness page (Gr 5 extension negativo + Gr 6 must + Gr 8 Wh-questions presente simple + Gr 17 SMCP key phrases)",
+        "agrupacion": "Individual silencioso → parejas + plenaria breve",
+        "objetivo": "Inducir 4 frames gramaticales por descubrimiento con marcación cromática SIN metalenguaje pesado. El aprendiz produce 4 oraciones modelo (1 por frame) listas para usar en VHF Response Simulation. Carga 2/2 Intro (Gr 5neg + Gr 6 must) + 2 Consolida (Gr 8 + Gr 17 reciclaje S5). PM-0 §9.2 ✓.",
+        "instrucciones_paso_a_paso": [
+          "1. Distribuir PM-2.10 worksheet · 4 secciones con marcación por colores: AZUL Gr 5neg · ROJO Gr 6 must · VERDE Gr 8 Wh · NARANJA Gr 17 SMCP.",
+          "2. Instructor lee instrucción central: '*Open PM-2.10. Four colors. Four frames. Read 4 examples in each color. Then write ONE sentence in each color about Andrea's morning at Berth 4. 30 minutes silent first.*'",
+          "3. Instructor proyecta los 4 frames + ejemplos modelo (3 por frame): \nAZUL Gr 5neg: 'Don't ___ during loading' · ejemplos: Don't approach the bow / Don't enter the restricted area / Don't cross the yellow line.\nROJO Gr 6: 'Vessel must ___ at anchorage' · ejemplos: Vessel must wait at anchorage / Pilot must board before berthing / Crew must wear hard hats.\nVERDE Gr 8: 'When/Where/How many does ___?' · ejemplos: When does the pilot arrive? · How many containers do you have? · Where is the vessel berthed?\nNARANJA Gr 17 SMCP: 'Roger / Wilco / Affirmative / Negative / Standby + complement' · ejemplos: Roger captain · Wilco position · Affirmative pilot ready · Negative cargo not loaded · Standby radio.",
+          "4. 30 min individuales: cada aprendiz produce 4 oraciones (1 por color) sobre Andrea en Berth 4 — usando PM-2.8 Maritime Word Wall + Reference Cards a la vista.",
+          "5. 15 min parejas: A lee sus 4 oraciones a B → B marca ✓ si pronunciada/construida correcta · ✗ si requiere ajuste · sugerencia 1 línea. Roles invertidos.",
+          "6. 10 min plenaria breve: instructor pide 2 voluntarios por color (8 voluntarios total) · cada uno lee su oración + clase choral repite + instructor escribe en LIVE ZONE como modélicos.",
+          "7. Cierre 5 min: instructor proyecta los 8 modelos + frase puente: '*These are YOUR sentences. Captain Lopera will hear them. Save your worksheet — you bring it to the simulator.*'"
+        ],
+        "teacher_talk_instruction": "*Open PM-2.10. Four colors. Blue is for negative imperative — what NOT to do. Red is for must — vessel rules. Green is for Wh-questions — what you ask Captain Lopera. Orange is for SMCP — your radio responses. Read 3 examples in each color. Then write ONE original sentence in each color — about Andrea, about the BUENAVENTURA EXPRESS, about Berth 4. 30 minutes silent. Then pairs check. Music on. Go.*",
+        "icq": [
+          "*How many sentences do I write?* → Esperan: '4 / one per color'",
+          "*Can I copy the example?* → Esperan: 'No / write your own / about Andrea'",
+          "*Can I use the Reference Cards?* → Esperan: 'Yes / SMCP Card + NATO Card + Word Wall'",
+          "*Will my partner correct me?* → Esperan: 'Yes / pair check / ✓✗ + 1 suggestion'"
+        ],
+        "answer_key_inline": {
+          "azul_gr5neg_modelos_esperados": [
+            "Don't approach the bow during loading.",
+            "Don't enter the restricted area.",
+            "Don't cross the yellow line on the dock.",
+            "Don't touch the cargo without authorization.",
+            "Don't move the vessel during inspection."
+          ],
+          "rojo_gr6_must_modelos_esperados": [
+            "Vessel must wait at anchorage.",
+            "Pilot must board before berthing.",
+            "Crew must wear hard hats on deck.",
+            "Captain must confirm the position.",
+            "Andrea must respond to Captain Lopera on the radio."
+          ],
+          "verde_gr8_wh_modelos_esperados": [
+            "When does the pilot arrive?",
+            "How many containers do you have?",
+            "Where is the vessel berthed?",
+            "What time does the cargo handling start?",
+            "Who is the responsible officer?"
+          ],
+          "naranja_gr17_smcp_modelos_esperados": [
+            "Roger captain.",
+            "Wilco, vessel ready.",
+            "Affirmative, position confirmed.",
+            "Negative, pilot not on board.",
+            "Standby, awaiting instructions."
+          ],
+          "errores_tipicos_esperados": [
+            "Don't *to approach* (omitir 'to' después de don't) → recast: 'Don't approach' (don't + verbo base)",
+            "Vessel *musts* wait (agregar -s a must) → recast: 'must' es invariable",
+            "When the pilot *arrives*? (sin auxiliar does) → recast: 'When DOES the pilot arrive?'",
+            "Roger *the* captain (artículo extra) → recast: 'Roger captain' o 'Roger, Captain Lopera'"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Inducción por descubrimiento + colores activa hemisferio derecho · reduce metalenguaje técnico (que abruma A1.3). NO use 'imperativo negativo' ni 'modal verb' en la primera ronda — sólo 'azul = no hacer · rojo = obligación · verde = preguntas · naranja = radio'.",
+          "💡 Si un aprendiz produce 'Don't to approach' (interferencia con infinitivo español 'no acercar'): recast suave + clase choral 3 reps de la versión correcta · no llame por nombre.",
+          "💡 La frase 'Andrea must respond to Captain Lopera on the radio' es ORO motivacional — si emerge en plenaria · destaque + escriba en LIVE ZONE permanente.",
+          "💡 Si una pareja se traba en ✓✗ por miedo a juzgar al compañero · acérquese · modele 1 ronda diciendo: '*This is good — but stress on FIRST syllable. Try again.*' Que vean cómo se da feedback respetuoso.",
+          "💡 Mantenga el ritmo — 30 min silencio + 15 parejas + 10 plenaria + 5 cierre = 60 estricto. No estire — el WHILE D necesita los 90 min completos."
+        ],
+        "checkpoint": "✓ ≥85% de los aprendices producen 4 de 4 oraciones (1 por color). Si <85%: dar 5 min extra individuales + permitir 'sentence frame' completo (ej: 'Don't ___ the ___' + relleno) para los más rezagados.",
+        "transition": "*Frames built. Sentences ready. Now — break — coffee, water, breath. When you come back — radios are armed. We meet at the simulator stations.*",
+        "tecnica_didactica": "Inducción gramatical por descubrimiento con marcación cromática + Producción guiada con frames bilingües + Pair Check ✓✗ con 1 sugerencia"
+      },
+      {
+        "letra": "C",
+        "nombre": "Cue Card Preparation — 5 Escenarios VHF + Ensayo Silencioso (PM-2.8 Cue Card Prep)",
+        "duracion_min": 45,
+        "worksheet_ref": "PM-2.8, Cue Cards section (5 escenarios pre-impresos)",
+        "agrupacion": "Parejas en estación VHF (sin barrera aún)",
+        "objetivo": "Cada pareja recibe los 5 cue cards (E1-E5) · lee · entiende cada escenario · ensaya en silencio (susurrando) los turnos esperados · prepara grabación. Andamiaje moderado: SMCP/NATO Cards a la vista + cue cards escritas + frases modelo del WHILE B disponibles. Sin grabar todavía.",
+        "instrucciones_paso_a_paso": [
+          "1. Las parejas se reorganizan en sus 12-13 estaciones VHF (ya pre-armadas durante BREAK por instructor + asistente).",
+          "2. Cada pareja recibe set de 5 cue cards: E1 Inbound vessel · E2 Pilot boarding · E3 Berthing instruction · E4 Restricted area warning · E5 Anchorage standby.",
+          "3. Cada cue card tiene: (a) Captain Lopera prompt (en EN · 2-3 oraciones lingua franca B2) · (b) Andrea expected response slots (3-4 turnos · marcados con ___) · (c) SMCP responses esperadas · (d) 1 call sign para deletrear NATO · (e) 1 Wh-question esperada.",
+          "4. 15 min lectura silenciosa pareja: A lee los 5 cue cards en voz baja · B sigue con dedo en su copia · luego invierten.",
+          "5. 20 min ensayo silencioso pareja (susurro): A toma rol Captain Lopera · B toma rol Andrea · ensayan E1 · luego E2 · luego E3. Sin barrera visual aún. Sin grabar. Pueden pausar · consultar Reference Cards · ajustar.",
+          "6. 5 min ICQ instructor: instructor pasa por 4-5 estaciones · pregunta '*Show me your E1 prompt. What does Andrea say first?*' Aprendizaje a aprendiz responde con apoyo de cue card. Si confusión severa · instructor recast modélico 1 turno · luego retira.",
+          "7. 5 min instructor anuncia regla del simulador: '*Next round — barreras visuales arriba. No eyes. Only voice. 2 minutes per scenario. Recording on. Five rounds × five minutes change of role. Captain Lopera prompt — Andrea response — Captain Lopera follow-up — Andrea confirm — over.*'"
+        ],
+        "teacher_talk_instruction": "*Stations. Pair up. Five cue cards on the table. Read silently first — five minutes. Then whisper-rehearse the scenarios — A is Captain Lopera, B is Andrea. Use your worksheet PM-2.10 sentences. Use your SMCP Card. Use your NATO Card. No recording yet. No barriers yet. Just rehearsal. 45 minutes. When I clap twice — barriers up. Go.*",
+        "icq": [
+          "*How many cue cards per pair?* → Esperan: '5 / five scenarios'",
+          "*Are we recording yet?* → Esperan: 'No / not yet / rehearsal first'",
+          "*Are barriers up?* → Esperan: 'No / not yet / WHILE D'",
+          "*Can I look at the SMCP Card?* → Esperan: 'Yes / always / Reference Cards on'"
+        ],
+        "answer_key_inline": {
+          "cue_card_e1_inbound_vessel": {
+            "captain_lopera_prompt": "*Berth 4, BUENAVENTURA EXPRESS inbound. Position 5 nautical miles. Approaching starboard. Confirm berth assignment.*",
+            "andrea_expected_response_slots": [
+              "Roger, BUENAVENTURA EXPRESS — berth 4 confirmed.",
+              "When does the pilot arrive?",
+              "Standby, awaiting pilot."
+            ],
+            "smcp_responses": ["Roger", "Standby"],
+            "wh_question": "When does the pilot arrive?",
+            "call_sign_deletreado": "Bravo-Echo-Romeo-Tango-Hotel-Four (Berth 4)"
+          },
+          "cue_card_e2_pilot_boarding": {
+            "captain_lopera_prompt": "*Pilot boarding requested. ETA 0630 hours. Pilot must board before berthing. Confirm anchorage position.*",
+            "andrea_expected_response_slots": [
+              "Wilco, pilot at 0630.",
+              "Affirmative, anchorage position 1.",
+              "Pilot must board, vessel must wait."
+            ],
+            "smcp_responses": ["Wilco", "Affirmative"],
+            "wh_question": "Where is the anchorage position?",
+            "call_sign_deletreado": "Papa-India-Lima-Oscar-Tango (PILOT)"
+          },
+          "cue_card_e3_berthing_instruction": {
+            "captain_lopera_prompt": "*Approach starboard. Don't approach the bow during loading. Vessel must wait for tug. Acknowledge.*",
+            "andrea_expected_response_slots": [
+              "Roger, approaching starboard.",
+              "Affirmative, no bow approach.",
+              "Standby for tug."
+            ],
+            "smcp_responses": ["Roger", "Affirmative", "Standby"],
+            "wh_question": "How many tugs do we have?",
+            "call_sign_deletreado": "Tango-Uniform-Golf (TUG)"
+          },
+          "cue_card_e4_restricted_area_warning": {
+            "captain_lopera_prompt": "*Restricted area on port side. Don't enter. Don't cross the yellow line. Crew must wear hard hats. Acknowledge.*",
+            "andrea_expected_response_slots": [
+              "Roger, restricted port side.",
+              "Wilco, hard hats on.",
+              "Affirmative, no entry."
+            ],
+            "smcp_responses": ["Roger", "Wilco", "Affirmative"],
+            "wh_question": "Where is the entry point?",
+            "call_sign_deletreado": "Romeo-Echo-Sierra-Tango (REST · restricted)"
+          },
+          "cue_card_e5_anchorage_standby": {
+            "captain_lopera_prompt": "*Vessel must wait at anchorage. Standby on channel 12. Don't move. How many containers ready?*",
+            "andrea_expected_response_slots": [
+              "Roger, anchorage standby channel 12.",
+              "Affirmative, vessel holding.",
+              "Negative, containers not ready. Standby for update."
+            ],
+            "smcp_responses": ["Roger", "Affirmative", "Negative", "Standby"],
+            "wh_question": "When are containers ready?",
+            "call_sign_deletreado": "Charlie-Hotel-One-Two (Channel 12)"
+          }
+        },
+        "facilitation_notes": [
+          "💡 La pre-armada de estaciones durante BREAK es CRÍTICA — si llega WHILE C y no hay walkie-talkies/cronómetros listos · pierde 10 min del bloque · comprometen WHILE D.",
+          "💡 No revele el script completo · el aprendiz debe LEER los cue cards y construir el response — eso es ABT (la tarea es el simulación).",
+          "💡 Si una pareja entiende mal un escenario · use ICQ correctivo: '*Show me on PM-2.10 — which Wh-question goes here?*' · que ellos descubran.",
+          "💡 Permita 1 minuto de toma de notas en español al margen de la cue card si la pareja necesita memo — pero el response final debe ser EN.",
+          "💡 Mantenga el ritmo silencioso — el susurro pre-rehearsal baja la ansiedad antes del simulator real."
+        ],
+        "checkpoint": "✓ ≥90% de las parejas completan rehearsal silencioso de E1+E2+E3 antes de los 45 min. Si menos: dar 5 min extra · pero AVISAR que reduce WHILE D a 4 escenarios (no 5).",
+        "transition": "*Clap clap. Barriers UP. Recording ON. Cronómetro 2 minutes. Captain Lopera — your prompt. Andrea — your voice. Five rounds. Show me what Berth 4 sounds like.*",
+        "tecnica_didactica": "Cue Card Reading + Pair Whisper-Rehearsal con Reference Cards a la vista + ICQ correctivo del instructor"
+      },
+      {
+        "letra": "D",
+        "nombre": "VHF Response Simulation EVALUADA — 5 Escenarios × 2 min × Pareja con Barrera Visual + Grabación + Escala E4 (PM-2.8 VHF Simulation)",
+        "duracion_min": 90,
+        "worksheet_ref": "PM-2.8, VHF Response Simulation (5 escenarios cue cards + grabación obligatoria + Escala Estimación E4 segment VHF)",
+        "agrupacion": "Parejas en estación VHF con barrera visual A3 (canal radio simulado · sin contacto visual · sólo voz)",
+        "objetivo": "Cada aprendiz EJECUTA 5 turnos de Andrea (5 escenarios × 2 min) en intercambio simulado con su par actuando Captain Lopera (luego rotación). Cada turno graba audio · Instructor pasa por 12-13 estaciones con planilla Escala Estimación E4 (5 criterios × 1 pt = 5 pts). 100% L2. CERO interrupción durante simulación · feedback delayed al WHILE E. Es la primera evaluación oral formal del curso.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor da 2 claps + anuncio: '*Barriers UP. Recording ON. Volume RADIO. Cronómetro 2 minutes. Captain Lopera goes first. Andrea responds. Over.*' Cada pareja levanta su barrera A3 entre las 2 sillas (oculta visión · sólo voz pasa).",
+          "2. Pareja gira moneda o decide quién es Captain Lopera primero. Quien es Captain Lopera tiene los 5 cue cards · Andrea tiene PM-2.10 + Reference Cards.",
+          "3. Ronda 1 (E1 Inbound vessel · 2 min): Captain Lopera dice prompt → Andrea responde 3 turnos → Captain Lopera follow-up → Andrea confirma + 'Over'. Grabador celular ON.",
+          "4. Cronómetro suena 2 min · pareja pausa · graba file 'E1.m4a' nombrado.",
+          "5. Repetir secuencia con E2 (Pilot boarding) · E3 (Berthing instruction) · E4 (Restricted area) · E5 (Anchorage standby). Total 5 rondas × 2 min = 10 min × pareja.",
+          "6. ROTACIÓN DE ROLES: pareja invierte roles. Andrea ahora es Captain Lopera. Repite los 5 escenarios con roles cambiados. Total 10 min más × pareja.",
+          "7. Total pareja = 20 min ejecución activa. Resto del WHILE D (~70 min): instructor circula con planilla Escala Estimación E4 + observa cada aprendiz × 5 escenarios + marca 5 criterios.",
+          "8. ESCALA ESTIMACIÓN E4 SEGMENT VHF (5 criterios × 1 pt cada uno):\n   - C1 SMCP correcto pronunciado (Roger/Wilco/Affirmative/Negative/Standby con stress correcto · ≥4 de 5 escenarios)\n   - C2 Imperativo negativo bien construido (Don't + verbo base · ≥3 de 5 ocurrencias)\n   - C3 Modal must usado en contexto (vessel/pilot/crew + must + verbo base · ≥3 de 5 ocurrencias)\n   - C4 Wh-question presente simple bien construida (When/Where/How does ___ ? · ≥3 de 5 escenarios)\n   - C5 Call sign NATO Phonetic deletreado completo (≥1 de 5 escenarios con deletreo correcto)",
+          "9. CERO interrupción durante simulación. Si pareja se traba > 30 seg · instructor susurra al oído de Captain Lopera 'next prompt' (no a Andrea) · que la pareja recupere el flujo.",
+          "10. Cronómetro maestro al frente: 90 min total. Instructor cierra con anuncio: '*5 minutes warning · finish your last scenario · upload your recording.*'",
+          "11. Cada pareja sube los 10 audio files (5 con A=Andrea + 5 con B=Andrea) a carpeta compartida o entrega celular físico al instructor."
+        ],
+        "teacher_talk_instruction": "*Barriers up. Recording on. Captain Lopera — read your cue card prompt. Andrea — respond with what you wrote on PM-2.10. Five scenarios — E1 Inbound, E2 Pilot, E3 Berthing, E4 Restricted, E5 Anchorage. Two minutes each. After five — switch roles. Total 20 minutes per pair. I walk around with my Escala Estimación. I do NOT interrupt. If you are stuck for 30 seconds — keep going to the next prompt. Errors are ok. Silence is the only error. Over.*",
+        "icq": [
+          "*Are we looking at each other?* → Esperan: 'No / barrier up / radio only / voice'",
+          "*Are we recording?* → Esperan: 'Yes / cellphone / 5 audio files per role / 10 total'",
+          "*How long per scenario?* → Esperan: '2 minutes / cronómetro'",
+          "*If I make a mistake?* → Esperan: 'Keep going / silence is the only error / errors ok'",
+          "*Will the instructor stop me to correct?* → Esperan: 'No / no interruption / feedback after'"
+        ],
+        "answer_key_inline": {
+          "escala_estimacion_e4_segment_vhf_5_criterios": {
+            "C1_smcp_correcto": "Roger/Wilco/Affirmative/Negative/Standby con stress correcto en ≥4 de 5 escenarios = 1 pt",
+            "C2_imperativo_negativo": "Don't + verbo base bien construido en ≥3 de 5 ocurrencias = 1 pt",
+            "C3_modal_must": "Sujeto + must + verbo base en contexto en ≥3 de 5 ocurrencias = 1 pt",
+            "C4_wh_question_presente": "Wh + does + sujeto + verbo bien construida en ≥3 de 5 escenarios = 1 pt",
+            "C5_call_sign_nato": "Deletreo NATO Phonetic completo de 1 call sign mínimo = 1 pt",
+            "total_max": "5 pts (E4 partial · cierre final E4 en S8 con segment Berthing tripartito)"
+          },
+          "puntaje_esperado_promedio_S6_A1.3": "3-4 / 5 (esperable · es el primer simulador formal · piso del Bloque Interno 2)",
+          "errores_tipicos_no_corregir_durante_sim": [
+            "Pronunciación 'must' con vocal larga /muːst/ → recast WRAP-UP",
+            "Don't + to-infinitive ('Don't to approach') → recast WRAP-UP",
+            "When + sujeto + verbo (sin auxiliar does) → recast WRAP-UP",
+            "Roger pronunciado /ˈroːɡer/ (vocal larga) → recast WRAP-UP",
+            "Call sign incompleto (omitir 1-2 letras NATO) → recast WRAP-UP"
+          ],
+          "audio_evidencia_para_E4": "10 audio files × pareja (5 con cada aprendiz como Andrea) — guardado en carpeta compartida o instructor descarga celular post-WHILE D"
+        },
+        "facilitation_notes": [
+          "💡 La barrera visual A3 es ESENCIAL — sin contacto visual el aprendiz se ve forzado a producir voz independiente · simula real VHF radio. Si una pareja la baja · re-establezca con voz neutral '*Barriers up · radios on.*'",
+          "💡 NO INTERRUMPIR durante simulación — esta es la regla de oro. La única excepción: SMCP gravemente malformado (Roger pronunciado como 'Rojer' con vocal larga) · pause 1 frase + recast modélico + reanudar.",
+          "💡 La planilla Escala Estimación se llena CIRCULANDO · no después. Si pierde un escenario de un aprendiz · marque ⊘ + observe en la rotación.",
+          "💡 Si una pareja termina sus 20 min antes de los 90 (raro pero posible) · invítelos a un 6to escenario libre + autoevaluación con la planilla copia.",
+          "💡 Tome 1 audio sample destacado (con permiso del aprendiz) para mostrar en S7 como modelo · poderoso para motivación.",
+          "💡 La rotación de roles es CRÍTICA — si no rota · la mitad de la cohorte sólo hace Captain Lopera (más fácil · sólo lee) · NO ejecuta Andrea (más difícil · respuesta libre). Force la rotación con anuncio firme.",
+          "💡 Si proyector con cronómetro maestro falla · use cronómetro pareja + anuncio verbal cada 2 min."
+        ],
+        "checkpoint": "✓ Al cerrar los 90 min: ≥90% de las parejas completaron 5 escenarios × 2 min × 2 roles (10 audio files por pareja). Si <90%: aceptar 4 escenarios mínimos + diferir 5to a homework autónomo (Radio Log).",
+        "transition": "*Recordings saved. Barriers down. Cronómetro stop. Now — water, breath. We meet at the board for global feedback. Three stars and one wish.*",
+        "tecnica_didactica": "Simulación VHF con barrera visual + Cronómetro 2 min × escenario + Grabación obligatoria + Rotación roles + Evaluación Escala Estimación E4 5 criterios × 1 pt"
+      },
+      {
+        "letra": "E",
+        "nombre": "Post-task Delayed Feedback — 3 Estrellas + 1 Deseo Global + Peer 3*+1wish (PM-2.8 Feedback section)",
+        "duracion_min": 30,
+        "worksheet_ref": "PM-2.8, Post-task Feedback section (planilla 3 estrellas + 1 deseo individual y grupal)",
+        "agrupacion": "Plenaria → parejas peer feedback rotado",
+        "objetivo": "Recibir retroalimentación grupal global (sin nombres) sobre 5 errores comunes pronunciación + recast modélico · luego peer feedback estructurado entre pareja-vecina (3 estrellas + 1 deseo). Fluency-oriented · no metalenguaje técnico · sólo modélico. Cierre del ciclo evaluativo S6 con sentido de aprendizaje colectivo.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor recoge planillas Escala Estimación + revisa rápido (3 min mientras parejas se acomodan).",
+          "2. Plenaria 15 min: instructor escribe en LIVE ZONE 5 errores comunes globales (SIN NOMBRES individuales) observados durante WHILE D. Ejemplos típicos:\n   - ERROR 1: 'Roger /ˈroːɡer/ con vocal larga' → modélico CHORAL: '*Roger /ˈrɒdʒər/*' · clase repite 3 reps.\n   - ERROR 2: 'Vessel must waits' (-s en must) → modélico: '*Vessel must wait*' · clase repite.\n   - ERROR 3: 'When the pilot arrive?' (sin does) → modélico: '*When does the pilot arrive?*' · clase repite.\n   - ERROR 4: 'Don't to approach' (con to) → modélico: '*Don't approach*' · clase repite.\n   - ERROR 5: 'Roger captain Lopera' con stress malformado → modélico: '*Roger, Captain Lopera*' · clase repite.",
+          "3. Cierre del recast plenario: '*These were the most common slips today. Mouth muscles still learning. We will drill them again in S7. No shame — just practice.*'",
+          "4. Peer Feedback 12 min: cada pareja se gira a la pareja vecina (rotando) · da 3 estrellas + 1 deseo basado en lo que escuchó (parejas estaban cerca · oyeron mutuamente algunos turnos).\n   - Ejemplo estrella 1: '*Your Roger sounded clear and strong.*'\n   - Ejemplo estrella 2: '*You used must correctly.*'\n   - Ejemplo estrella 3: '*Your call sign NATO was complete.*'\n   - Ejemplo deseo: '*I wish your imperative negative was a little stronger — try Don't enter with full voice.*'",
+          "5. 3 min plenaria de cierre: instructor pide 2 voluntarios que cuenten 1 estrella que recibieron + 1 deseo. Celebra la estrella · valida el deseo como growth area S7."
+        ],
+        "teacher_talk_instruction": "*Recordings done. Now — the wall. Five common errors today — no names, no judgement. We say each one correctly. We repeat together. Then — turn to your neighbor pair. Three stars — what they did well. One wish — what they can grow. No insults. Only growth. 30 minutes.*",
+        "icq": [
+          "*Will I see my own error here?* → Esperan: 'Maybe / no names / global / common'",
+          "*Do I criticize my partner?* → Esperan: 'No / 3 stars + 1 wish / growth / no insults'",
+          "*Are we corrected for individual mistakes today?* → Esperan: 'No / global only / S7 we drill again'",
+          "*What's a wish?* → Esperan: 'Growth area / something to improve'"
+        ],
+        "answer_key_inline": {
+          "errores_tipicos_globales_S6_A1.3": [
+            "ERROR 1: Roger pronunciación con vocal larga (/ˈroːɡer/ ✗ → /ˈrɒdʒər/ ✓)",
+            "ERROR 2: must + s ('Vessel musts wait' ✗ → 'Vessel must wait' ✓)",
+            "ERROR 3: Wh-question sin auxiliar does ('When the pilot arrive?' ✗ → 'When does the pilot arrive?' ✓)",
+            "ERROR 4: Don't + to ('Don't to approach' ✗ → 'Don't approach' ✓)",
+            "ERROR 5: Stress malformado en chunk SMCP ('Roger CAPtain LopeRA' ✗ → 'Roger, CAPtain LoPEra' ✓)"
+          ],
+          "peer_3stars_1wish_estructura": {
+            "star_1": "Pronunciación clara de [SMCP/stress focus word]",
+            "star_2": "Construcción correcta de [imperativo neg / must / Wh / NATO]",
+            "star_3": "Energía / volumen / claridad de canal radio",
+            "wish_1": "Crecer en [un área específica observada]"
+          },
+          "frases_modelo_peer_feedback": [
+            "I heard you say Roger very clear — strong sound.",
+            "Your Wh-question was perfect — When DOES the pilot arrive.",
+            "Your NATO call sign was complete — Bravo Echo Romeo.",
+            "I wish your must sentence was stronger — try VESSEL MUST WAIT with full voice."
+          ]
+        },
+        "facilitation_notes": [
+          "💡 NUNCA mencione nombres individuales en el recast plenario — el feedback global preserva ego + activa metacognición colectiva. Si emerge presión de identificar 'quién dijo eso?' · responda: '*Many of you. We all are still learning.*'",
+          "💡 El peer 3*+1wish puede ser intimidante para A1.3 — provea las frases modelo en LIVE ZONE como andamiaje (4 frases pre-escritas que pueden adaptar).",
+          "💡 Si una pareja no oyó claramente a la pareja vecina (las barreras y volumen radio dificultan) · pídales que den 3 estrellas + 1 deseo a SU PROPIA pareja en lugar.",
+          "💡 Tome foto de la LIVE ZONE con los 5 errores comunes — entra al cuaderno del instructor + se proyecta en S7 warm-up para reciclaje de drilling.",
+          "💡 Cierre con frase poderosa: '*Today you did something brave. You spoke maritime English on a simulated radio. Andrea would be proud.*'"
+        ],
+        "checkpoint": "✓ ≥85% de las parejas dieron 3 estrellas + 1 deseo a la pareja vecina. Si menos: dar 3 min extra + ofrecer modelo de instructor a 1 pareja como demo.",
+        "transition": "*Stars given. Wishes received. Now — last task. You record yourself. You hear yourself. You score yourself. Self-recording autoevaluación.*",
+        "tecnica_didactica": "Post-task Delayed Feedback con recast modélico global anónimo + Peer 3 estrellas + 1 deseo estructurado entre parejas vecinas"
+      }
+    ],
+    "breaks": [
+      {
+        "tiempo": "2:30-2:45",
+        "duracion_min": 15,
+        "tipo": "Receso activo (café + baño + estiramiento) + setup de simuladores VHF por instructor",
+        "notas": "Hidratación. Instructor + asistente (si lo hay) pre-arman las 12-13 estaciones VHF: walkie-talkie/app por estación + cronómetro pareja + barrera A3 + grabador celular conectado + Reference Cards. Si no hay asistente · use 12 min del break para setup + 3 min para café propio. CRÍTICO: la pre-armada determina el éxito de WHILE C+D."
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 30,
+    "exit_ticket": {
+      "tarea": "Exit Ticket S6 — Self-recording Autoevaluación: cada aprendiz oye su grabación de 1 escenario al azar (E1-E5) + completa planilla 5 ítems chequeo: (1) ¿Roger/Wilco pronunciado con stress correcto? ✓✗ · (2) ¿Call sign NATO completo? ✓✗ · (3) ¿Imperativo negativo bien construido (Don't + verbo)? ✓✗ · (4) ¿Must usado en contexto sin -s? ✓✗ · (5) ¿Wh-question con does? ✓✗ + 1 línea reflexión: '*One thing I want to improve before S7.*' (en EN o ES). Entregar planilla en caja del instructor antes de salir.",
+      "success_criteria": "Las 5 casillas marcadas + reflexión escrita. Mínimo 3 ✓ activan E4 partial. Las casillas ✗ alimentan focus de drilling S7 warm-up.",
+      "duration_min": 15
+    },
+    "sintesis": "Hoy ejecutaste tu primera VHF Response Simulation con Captain Lopera. Drilleaste 5 stress focus words críticas (STARboard · PORT side · ANchorage · MUST · apPROACH) + 5 SMCP responses (Roger · Wilco · Affirmative · Negative · Standby). Construiste 4 grammar frames por colores (Don't / Must / When does / SMCP). Ejecutaste 5 escenarios × 2 min con barrera visual + grabación + Escala Estimación E4 segment. Recibiste post-task delayed feedback global + 3 estrellas + 1 deseo de tu pareja vecina. Te autoevaluaste oyendo tu propia voz. Esto es el oficio cotidiano del Port Operations Trainee. Mañana — Sesión 7 — abrimos el Two-Way Radio con Berthing Coordination tripartito.",
+    "asignacion_autonoma": {
+      "actividad": "Radio Log Autónomo S6 → S7: Grabar Radio Log de 90s simulando llamada VHF entrante (incluye 3 SMCP responses + 1 NATO spelling de call sign personal) · 2.33 horas autónomas (≈140 min)",
+      "instrucciones_detalladas": [
+        "1. Esta semana, en casa o en lugar tranquilo, prepara un Radio Log de 90 segundos.",
+        "2. Imagina que eres Andrea recibiendo una llamada VHF de Captain Lopera nueva (no de los 5 escenarios de hoy).",
+        "3. Escribe el script (10-15 oraciones) usando: 3 SMCP responses (Roger / Wilco / Affirmative / Negative / Standby — elige 3) + 1 imperativo negativo (Don't ___) + 1 modal must (Vessel must ___) + 1 Wh-question (When/Where/How does ___?) + 1 call sign NATO Phonetic con tu propio nombre o iniciales.",
+        "4. Practica el script 3 veces frente a espejo o solo · ajusta stress + ritmo + volumen radio.",
+        "5. Graba audio 90 segundos con celular · nombra archivo 'RadioLog_S6_Autónomo_[TuNombre].m4a'.",
+        "6. Sube el archivo a la carpeta compartida del curso (Google Drive o Classroom · enlace en el aula virtual).",
+        "7. (Opcional) Escucha tu grabación 1 vez · marca en la planilla autoevaluación 5 ítems lo que escuchas.",
+        "8. Llevar la planilla autoevaluación marcada a S7 — se revisa en warm-up (3 min · sin nombres)."
+      ],
+      "entregable": "1 audio file 90 segundos + script escrito (1 página) + planilla autoevaluación 5 ítems marcada + reflexión 1 línea ('*Un cosa que crecí esta semana de mi voz radio.*' EN o ES).",
+      "cuando_se_revisa": "S7 warm-up (5 min) — instructor proyecta 2-3 audio files anónimos (con permiso) · clase identifica 1 estrella + 1 deseo grupal. Sin evaluación formal · el instructor valida presencia (entregó / no entregó). E4 segment Berthing final se evalúa en S8.",
+      "tiempo_estimado_min": 140,
+      "tiempo_estimado_horas": 2.333333
+    },
+    "bridge_to_next": "*Next session — Session 7: The Two-Way Radio — Coordinating Berthing Operations. We open the Berthing scenario — yard + bridge + customs simultaneous. Modals should/could/might + present continuous (Vessel is approaching) + past simple + comparatives. We listen tripartite. Bring your Radio Log + 5-criteria self-assessment. Berth 4 is preparing for the BUENAVENTURA EXPRESS to dock.*",
+    "teacher_talk_closing_en": "*Junior Trainees — today was operational. You spoke maritime English on a simulated VHF for the first time. Captain Lopera heard you. Andrea is proud. Your first 5 points of E4 are earned. The recordings are saved. Next Monday — Session 7 — we open the two-way radio. Berthing coordination. Tripartite voices. Bring rest. Bring your Radio Log. Bring your courage. Roger, Junior Trainees. Over and out for today.*",
+    "teacher_talk_closing_es_cursive": "*(Aprendices Junior — hoy fue operacional. Hablaron inglés marítimo por una VHF simulada por primera vez. El Capitán Lopera los oyó. Andrea está orgullosa. Sus primeros 5 puntos de E4 están ganados. Las grabaciones están a salvo. El próximo lunes — Sesión 7 — abrimos la radio bidireccional. Coordinación de berthing. Voces tripartitas. Traigan descanso. Traigan su Radio Log. Traigan su valor. Roger, Aprendices Junior. Cambio y fuera por hoy.)*",
+    "reflection_prompt": "Antes de salir · 30 segundos de silencio escuchando tu propia grabación de 1 escenario al azar: '*¿Qué versión de mi voz entró al simulador esta mañana? ¿Qué versión sale ahora?*' (no se responde · sólo se siente).",
+    "facilitation_notes": [
+      "💡 Cierre con energía profesional + maritime — ya no es Día 1 emocional · es Día 6 operacional. Que se vayan con sensación de oficio.",
+      "💡 Validar las grabaciones públicamente: '*These recordings are evidence — for your portfolio, for your future employer, for your future self.*'",
+      "💡 Si un aprendiz parece desinflado por su autoevaluación con 2-3 ✗ · acérquese: '*The ✗ are the map of S7 — we drill exactly that. You are honest, that is brave.*'",
+      "💡 Recoja TODAS las planillas autoevaluación + Escala Estimación instructor + 1 audio sample × pareja antes de salir — son evidencia E4 partial.",
+      "💡 Si queda tiempo (<3 min) · 'Roger Junior Trainees!' coro grupal con manos al oído · cierre simbólico maritime."
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "WHILE A — Pronunciation Lab (PM-2.8 Pronunciation Lab)",
+      "items": [
+        {
+          "pregunta": "5 SMCP responses correctas con stress",
+          "respuesta_correcta": "Roger /ˈrɒdʒər/ · Wilco /ˈwɪlkoʊ/ · Affirmative /əˈfɜːrmətɪv/ · Negative /ˈneɡətɪv/ · Standby /ˈstændbaɪ/",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Drilling estímulo-respuesta · accuracy bloqueante"
+        },
+        {
+          "pregunta": "5 stress focus words S6",
+          "respuesta_correcta": "STARboard /ˈstɑːrbərd/ · PORT side /pɔːrt saɪd/ · ANchorage /ˈæŋkərɪdʒ/ · MUST /mʌst/ · apPROACH /əˈproʊtʃ/",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Backchaining 'starboard' y 'approach' obligatorio"
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE B — Grammar Awareness 4 Frames (PM-2.10)",
+      "items": [
+        {
+          "pregunta": "Frame Gr 5neg azul (Imperativo negativo)",
+          "respuesta_correcta": "Don't / Do not + verbo base + complement (ej: Don't approach the bow)",
+          "alternativas": ["Don't enter the restricted area", "Don't cross the yellow line", "Don't touch the cargo", "Don't move the vessel"],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Frame Gr 6 rojo (Modal must)",
+          "respuesta_correcta": "Sujeto + must + verbo base + complement (ej: Vessel must wait at anchorage)",
+          "alternativas": ["Pilot must board before berthing", "Crew must wear hard hats", "Captain must confirm position"],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Frame Gr 8 verde (Wh-questions presente simple)",
+          "respuesta_correcta": "Wh + does + sujeto + verbo base + complement (ej: When does the pilot arrive?)",
+          "alternativas": ["How many containers do you have?", "Where is the vessel berthed?", "What time does cargo handling start?"],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Frame Gr 17 naranja (SMCP key phrases)",
+          "respuesta_correcta": "Roger/Wilco/Affirmative/Negative/Standby + complement (ej: Roger captain · Wilco vessel ready)",
+          "alternativas": ["Affirmative position confirmed", "Negative cargo not loaded", "Standby radio"],
+          "puntos": 0,
+          "nota": "Reciclaje S5 · Consolida"
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE C — Cue Card Preparation (PM-2.8)",
+      "items": [
+        {
+          "pregunta": "5 escenarios cue cards",
+          "respuesta_correcta": "E1 Inbound vessel · E2 Pilot boarding · E3 Berthing instruction · E4 Restricted area warning · E5 Anchorage standby",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Estructura cue card",
+          "respuesta_correcta": "Captain Lopera prompt + Andrea response slots + SMCP responses + Wh-question + call sign NATO",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE D — VHF Response Simulation EVALUADA (PM-2.8 · E4 segment VHF)",
+      "items": [
+        {
+          "pregunta": "Escala Estimación E4 — 5 criterios (1 pt cada uno)",
+          "respuesta_correcta": "C1 SMCP correcto pronunciado · C2 Imperativo negativo bien construido · C3 Modal must usado en contexto · C4 Wh-question presente simple · C5 Call sign NATO completo = 5 pts max E4 partial",
+          "alternativas": [],
+          "puntos": 5,
+          "nota": "Cierre final E4 en S8 con segment Berthing tripartito"
+        },
+        {
+          "pregunta": "Duración × escenario × aprendiz",
+          "respuesta_correcta": "2 min × escenario × 5 escenarios × 2 roles = 20 min × pareja",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Audio files entregables",
+          "respuesta_correcta": "10 audio files × pareja (5 con cada aprendiz como Andrea)",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE E — Post-task Delayed Feedback (PM-2.8)",
+      "items": [
+        {
+          "pregunta": "Estructura peer feedback",
+          "respuesta_correcta": "3 estrellas (lo que hicieron bien) + 1 deseo (área de crecimiento)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Errores comunes globales esperados",
+          "respuesta_correcta": "(1) Roger vocal larga · (2) must+s · (3) Wh sin does · (4) Don't+to · (5) Stress malformado SMCP",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Recast modélico anónimo · sin nombres"
+        }
+      ]
+    },
+    {
+      "actividad": "WRAP-UP — Self-recording Autoevaluación + Radio Log Autónomo",
+      "items": [
+        {
+          "pregunta": "5 ítems planilla autoevaluación",
+          "respuesta_correcta": "(1) Roger/Wilco stress · (2) NATO completo · (3) Don't+verbo base · (4) Must sin -s · (5) Wh con does",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Radio Log Autónomo entregable",
+          "respuesta_correcta": "1 audio 90s + script + planilla autoevaluación + reflexión 1 línea",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Tiempo estimado 140 min ≈ 2.33h"
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "En WHILE A: liderar 1 prompt SMCP en plenaria (rol modelo-eco ↔ instructor) — empoderamiento.",
+      "En WHILE B: producir 1 oración extra por color (8 totales en lugar de 4) usando vocabulario Sub-bloque 2.",
+      "En WHILE C: preparar 1 cue card adicional E6 'Cargo handling' como bonus + ensayar con pareja.",
+      "En WHILE D: ejecutar el 6to escenario E6 + autoevaluar con planilla extra.",
+      "En WHILE E: ofrecer 3*+1wish a 2 parejas vecinas (en lugar de 1) con frases modelo más elaboradas.",
+      "Rol de Capitán Lopera Senior — modelar la voz B2 lingua franca para una pareja que necesita rescate auditivo (con permiso del instructor).",
+      "Bonus opcional: grabar el Radio Log Autónomo de 120s (en lugar de 90s) con 5 SMCP responses + 2 NATO spellings + 2 Wh-questions."
+    ],
+    "more_support_needed": [
+      "Tiempo extra en WHILE A (hasta 70 min) si la pronunciación de las 5 stress focus words requiere más backchaining — acompañamiento individual del instructor + audio modelo Captain Lopera 1 a 1.",
+      "En WHILE B — ofrecer PM-2.10 con frame completo pre-rellenado en 1 ejemplo por color (4 ejemplos modelo) · el aprendiz sólo cambia 1-2 palabras (sustitución guiada en lugar de producción libre).",
+      "En WHILE C — permitir tomar notas en español al margen de la cue card (memo bilingüe) — la respuesta final debe ser EN pero el camino puede ser bilingüe.",
+      "En WHILE D — pareja con compañero más fuerte (heterogénea) · el más fuerte hace Captain Lopera primero (modela voz) · el más rezagado hace Andrea con apoyo de PM-2.10 frente a sí.",
+      "En WHILE D si la pareja se traba > 60 seg · permitir 1 'lifeline' del instructor (recast modélico de 1 turno · luego siguen).",
+      "En WHILE D si hay ansiedad severa con la barrera visual · permitir bajarla los primeros 30 seg de cada escenario (transición gradual).",
+      "En WHILE E — ofrecer la planilla 3*+1wish con frases modelo pre-escritas que el aprendiz sólo selecciona (en lugar de producir libre).",
+      "En WRAP-UP — permitir que la planilla autoevaluación se entregue al día siguiente si el aprendiz necesita oír su grabación con calma en casa.",
+      "Contacto uno-a-uno al final de la sesión: '*How was your VHF debut? What scenario do you want to redo before S7? Bring me your Radio Log first draft on Wednesday — I help you adjust before Monday.*'"
+    ]
+  },
+  "instructor_self_check": [
+    "✓ ¿Activé el Pronunciation Lab desde el minuto 1 del SET-UP con drilling estímulo-respuesta de las 5 SMCP + las 5 stress focus words S6?",
+    "✓ ¿Distinguí explícitamente PORT (puerto/harbor) vs PORT side (babor/left of vessel) con board marking color distintivo + 5+ ocurrencias en el SET-UP?",
+    "✓ ¿Mantuve L1 ≤ 10% durante toda la sesión · usándolo SÓLO en meta-instrucción del simulator setup (no en VHF Response Simulation)?",
+    "✓ ¿NO interrumpí durante VHF Response Simulation WHILE D · respetando el 'recast diferido' del feedback delayed model?",
+    "✓ ¿Llené planilla Escala Estimación E4 segment VHF de los 5 criterios × ≥90% de los aprendices DURANTE las rotaciones · no después?",
+    "✓ ¿La barrera visual A3 estuvo presente y respetada en todas las parejas durante WHILE D (sin contacto visual · sólo voz)?",
+    "✓ ¿El post-task feedback en LIVE ZONE fue ANÓNIMO (sin nombres individuales · sólo errores comunes globales)?",
+    "✓ ¿Cerré con preview explícito de S7 (Berthing Coordination tripartito · modales + comparativos + presente continuo + pasado simple) + recolección de planillas autoevaluación?"
+  ],
+  "activity_logistics": {
+    "espacio": "Aula bilingüe configurada en 12-13 estaciones VHF de pareja (mesas separadas por barrera A3 negra · simula canal radio sin contacto visual). English Zone permanente con cinta azul piso. Maritime Word Wall pared lateral actualizado Sub-bloque 2 (10 nuevas + 5 SMCP recicladas S5). Tablero al frente con stress focus words + 4 grammar frames por colores + LIVE ZONE para errores comunes. Cronómetro maestro al frente + cronómetros pareja por estación.",
+    "agrupamiento": "Plenaria → choral repetition (SET-UP) → individual silencioso 30 min (WHILE B) → parejas en estación VHF con barrera A3 (WHILE C+D · 100% L2 con grabación) → plenaria post-task + parejas vecinas peer 3*+1wish (WHILE E) → individual self-recording autoevaluación (WRAP-UP). Transiciones explícitas con Teacher Talk corto (max 30 seg cada cambio · uso de 'Clap clap = Barriers up').",
+    "recursos": [
+      "Proyector + bocinas (audio modelo Captain Lopera de respaldo · 5 escenarios pre-grabados B2)",
+      "Tablero blanco grande con 4 zonas (English Zone + Title + Stress focus words + LIVE ZONE)",
+      "Maritime Word Wall pared lateral · Sub-bloque 2 actualizado",
+      "12-13 walkie-talkies o app móvil VHF por estación + 2 respaldo",
+      "12-13 barreras visuales A3 negras + 3 respaldo",
+      "5 cue cards × pareja (E1-E5 pre-impresas) + 5 sets respaldo",
+      "SMCP Reference Card laminada + NATO Phonetic Reference Card laminada (1 por aprendiz · permanentes desde S5)",
+      "Marcadores de 4 colores grammar awareness (azul/rojo/verde/naranja) · 1 set por pareja",
+      "Grabador celular o app de grabación (BYOD · 1 por pareja · 10 audio files × pareja entregables)",
+      "Cronómetro maestro proyectado + cronómetros pareja (1 por estación)",
+      "Planilla Escala Estimación E4 segment VHF 5 criterios (instructor) + 1 copia por aprendiz para autoevaluación post",
+      "Planilla autoevaluación 5 ítems chequeo para WRAP-UP",
+      "Música instrumental marítima muy baja (sólo durante WHILE B silencioso · OFF durante WHILE D simulación radio)"
+    ],
+    "tiempo": {
+      "set_up": 30,
+      "while_total": 285,
+      "break": 15,
+      "wrap_up": 30,
+      "total_directo_min": 360,
+      "autonomo_min": 140,
+      "autonomo_horas": 2.333333,
+      "total_aprendiz_horas": 8.333
+    },
+    "plan_b": "Si walkie-talkies/app móvil falla: usar barrera de cartulina A3 + voz natural sin canal radio · marcar inicio/fin con 'Over' verbal. Si proyector falla: usar Reference Cards SMCP/NATO laminadas + cue cards impresas + cronómetros pareja. Si <50% asistencia: extender SET-UP Pronunciation Lab a 60 min + reducir VHF Response Simulation a 1 ronda × aprendiz (5 escenarios sin rotación · 10 min × aprendiz) + diferir grabación a homework. Si grabador celular no disponible: instructor toma notas en planilla Escala Estimación + retroalimenta in-situ post-cada-VHF (sin audio evidencia). Si energía baja antes de WHILE D: agregar 3 min de movimiento físico (manos al oído + 'Roger captain!' coro 3 reps) entre WHILE C y D."
+  },
+  "totals_check": {
+    "set_up": 30,
+    "while_bloque_a": 60,
+    "while_bloque_b": 60,
+    "break": 15,
+    "while_bloque_c": 45,
+    "while_bloque_d": 90,
+    "while_bloque_e": 30,
+    "wrap_up": 30,
+    "total_min": 360,
+    "check_result": "EXACTO 360 min directos (6h) + 140 min autónomo (≈2.33h Radio Log) = 500 min totales = 8.33h aprendiz S6. Coherente con header.duracion_sesion_min de pm-3-1 + horas autónomas pm-3-1.overview_table[5].autonomous_hours=2.333333."
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    },
+    "downstream_consumers": [
+      "PM-3.3 Canva Slides — referencias a 5 cue cards VHF + Stress focus words S6 + 4 grammar frames por colores",
+      "PM-3.4 Workbook — Radio Log Chapter 6 + 90s autonomous task + 5-ítem autoevaluación planilla",
+      "PM-3.6 Activity Logistics — A6.1.1 to A6.1.5 IDs derivados de WHILE A-E",
+      "PM-2.11 Check 14 — validación propagación estrategia_didactica + tecnicas[] + pm0_protocol cross-ref grammar_groups (Gr 5neg + Gr 6 + Gr 8 + Gr 17) + l1_target 10% + success_vocab subset"
+    ]
+  },
+  "rap_status": "S6 completada (preliminary · pendiente Gate Humano 3) — VHF Response Simulation EVALUADA con Escala Estimación E4 segment VHF (5 criterios × 1 pt = 5 pts E4 PARTIAL). Cierre final E4 en S8 con segment Berthing tripartito. Activadas 5 stress focus words críticas + 4 grammar frames por colores + 5 SMCP responses recicladas S5 + 1 NATO call sign deletreado por escenario. Audio files entregables: 10 × pareja. Umbral S7 (Berthing Coordination tripartito · modales should/could/might + comparativos + presente continuo + pasado simple) abierto.",
+  "logistics_box": {
+    "momento_sena": "3.3 Apropiación — Output oral",
+    "estrategia": "ABT + Simulación VHF — Pronunciation lab + VHF Response Simulation con Captain Lopera",
+    "justificacion": "S6 es la primera sesión de OUTPUT ORAL evaluada parcialmente (E4 Speaking VHF segment · 5 pts). Combina pronunciation lab intensivo (drilling estímulo-respuesta + backchaining + choral) con VHF Response Simulation 2 min × escenario en parejas con barrera visual que fuerza canal radio. Captain Lopera (rol del instructor o par avanzado · lingua franca B2) emite 5 SMCP messages + 1 call sign NATO; el aprendiz confirma con Roger/Wilco/Affirmative/Standby + repite call sign + responde Wh-questions presente simple. Es la sesión donde el aprendiz EJECUTA por primera vez el oficio cotidiano del Port Operations Trainee — confirmar mensajes VHF con vessel masters no-nativos. Carga gramatical 2/2 Intro + 2 Consolida (Gr 5neg + Gr 6 must Intro · Gr 8 + Gr 17 SMCP Consolida). L1 ≤ 10% — meta-instrucción del simulator setup; toda VHF Response Simulation 100% L2.",
+    "tecnicas": [
+      {"bloque": "A", "tecnica": "Drilling estímulo-respuesta SMCP intensivo + Backchaining maritime + Choral con volumen progresivo + Pair Mirror Drill con autoevaluación ✓✗"},
+      {"bloque": "B", "tecnica": "Inducción gramatical por descubrimiento con marcación cromática + Producción guiada con frames bilingües + Pair Check ✓✗ con 1 sugerencia"},
+      {"bloque": "C", "tecnica": "Cue Card Reading + Pair Whisper-Rehearsal con Reference Cards a la vista + ICQ correctivo del instructor"},
+      {"bloque": "D", "tecnica": "Simulación VHF con barrera visual + Cronómetro 2 min × escenario + Grabación obligatoria + Rotación roles + Evaluación Escala Estimación E4 5 criterios × 1 pt"},
+      {"bloque": "E", "tecnica": "Post-task Delayed Feedback con recast modélico global anónimo + Peer 3 estrellas + 1 deseo estructurado entre parejas vecinas"}
+    ]
+  },
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[5]",
+    "__contract_version__": "v2.5.1 (mapping per pm-3-1.pm_3_2_propagation_contract)",
+    "fpi_block": "3.3 Apropiación — Output oral",
+    "grammar_groups": {
+      "intro": [
+        {
+          "group_id": "Gr 5 (extension)",
+          "group_name": "Imperativo negativo (Don't approach / Do not enter)",
+          "nivel_activacion": "Intro",
+          "ejemplo_en_sesion": "Captain Lopera (Andrea): 'Don't approach the bow during loading. Do not enter the restricted area.'"
+        },
+        {
+          "group_id": "Gr 6",
+          "group_name": "Modal must (Vessel must wait at anchorage)",
+          "nivel_activacion": "Intro",
+          "ejemplo_en_sesion": "Andrea: 'Vessel must wait at anchorage. Pilot must board before berthing.'"
+        }
+      ],
+      "consolida": [
+        {
+          "group_id": "Gr 17 (SMCP)",
+          "group_name": "SMCP key phrases (reciclaje S5)",
+          "nivel_activacion": "Consolida",
+          "ejemplo_en_sesion": "Aplicación intensiva en VHF Response Simulation: Roger · Wilco · Affirmative · Negative · Standby · Over · Out"
+        },
+        {
+          "group_id": "Gr 8",
+          "group_name": "Wh-questions presente simple (reciclaje S5)",
+          "nivel_activacion": "Consolida",
+          "ejemplo_en_sesion": "'When does the pilot arrive? How many containers do you have? Where is the vessel berthed?'"
+        }
+      ],
+      "aplica": [],
+      "carga_check": "2/2 Intro (Gr 5neg + Gr 6) + 2 Consolida (Gr 17 + Gr 8) — PM-0 §9.2 ✓"
+    },
+    "feedback": {
+      "mode": "MIXTO (accuracy SMCP bloqueante · fluency en intercambios)",
+      "rationale": "Accuracy crítico SMCP/NATO se mantiene; fluency dominante en intercambios para no romper flujo de simulación. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_2.",
+      "accuracy_techniques": [
+        "Accuracy bloqueante SMCP: recast inmediato si Roger/Wilco mal pronunciado (alto del simulator)",
+        "Backchaining 'starboard' y 'approach' 3 pasos · obligatorio",
+        "Drilling estímulo-respuesta SMCP × 4 reps cada"
+      ],
+      "fluency_techniques": [
+        "Post-task delayed feedback con notas en tablero (errores comunes globales · sin nombres)",
+        "Peer feedback en rotaciones vecinas (3 estrellas + 1 deseo)",
+        "Self-recording con celular para auto-monitoreo"
+      ],
+      "mixed_techniques": [
+        "Volumen progresivo susurro → conversacional → VHF projection (activa muscle memory + reduce ansiedad)",
+        "Pair Mirror Drill con autoevaluación ✓✗ (peer correction respetuoso)"
+      ],
+      "notes": "S6 PRIMER PUERTO DE EVALUACIÓN ORAL FORMAL — energía profesional + cero juicio invasivo + cero corrección durante simulación · feedback delayed post-task. Recast inmediato sólo en SMCP gravemente malformado."
+    },
+    "l1_management": {
+      "l1_percentage": 10,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_2.S5 — ≤ 10% (PM-0 §9.1 · S6 mantiene piso S5)",
+      "l1_rationale": "L1 sólo para meta-instrucción del simulator setup (Plan B walkie-talkies · explicación de barrera visual · introducción de Escala Estimación). Toda VHF Response Simulation 100% L2 — el aprendiz debe operar como en el puerto real con vessel master no-nativo.",
+      "english_zone_declaration": "Reactivada al inicio de SET-UP — cinta azul piso permanente desde S1. Recordatorio gestual + verbal: 'The English Zone is open.'",
+      "l1_allowed_for": [
+        "Meta-instrucción del simulator setup (Plan B walkie-talkies · barrera visual · cronómetro)",
+        "Recast modélico de errores comunes globales en LIVE ZONE post-task (1 línea contraste ES↔EN max)",
+        "Explicación de Escala Estimación E4 5 criterios + planilla autoevaluación 5 ítems",
+        "Reflexión 1 línea del WRAP-UP self-recording (en EN o ES · ambos válidos)"
+      ],
+      "reduction_strategy": "S5 → S6 sostiene 10% L1 (consolidación piso A1.3 · Bloque Interno 2). S7 → 5% (transición Bloque Interno 3 A2.0). Curva descendente hacia 0% en S12 per pm-0-context.l1_percentage_per_session.single_guide_12_sessions"
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "starboard",
+          "ipa": "/ˈstɑːrbərd/",
+          "tonica": "PRIMERA (STARboard)"
+        },
+        {
+          "word": "port (side)",
+          "ipa": "/pɔːrt/",
+          "tonica": "única (PORT) — CRÍTICO distinguir del puerto físico"
+        },
+        {
+          "word": "anchorage",
+          "ipa": "/ˈæŋkərɪdʒ/",
+          "tonica": "PRIMERA (ANchorage)"
+        },
+        {
+          "word": "must",
+          "ipa": "/mʌst/",
+          "tonica": "única (MUST · vocal corta /ʌ/ — NO /muːst/)"
+        },
+        {
+          "word": "approach",
+          "ipa": "/əˈproʊtʃ/",
+          "tonica": "SEGUNDA (apPROACH)"
+        }
+      ],
+      "techniques": [
+        "Drilling estímulo-respuesta (instructor SMCP → aprendiz responde Roger/Wilco)",
+        "Backchaining 'board' → '-board' → 'star-board' → 'STAR-board' (obligatorio · 3 pasos)",
+        "Backchaining '-proach' → 'ap-proach' → 'apPROACH' (2 pasos)",
+        "Choral drill de imperativos negativos: 'Don't approach…' con stress fuerte en 'Don't'",
+        "Choral drill de must contrastivo (MUST vs MOST con vocal corta)",
+        "Clapping silábico — 1 palmada por sílaba, fuerte en tónica",
+        "Volumen progresivo susurro → conversacional → VHF projection",
+        "Pair Mirror Drill con autoevaluación ✓✗"
+      ],
+      "board_marking": "Las 5 stress focus words quedan permanentes en columna lateral izquierda del tablero con stress en MAYÚSCULA + IPA en pequeño debajo. Maritime Word Wall las replica en pared lateral con foto + 5 SMCP responses recicladas S5 + 4 grammar frames por colores.",
+      "notes": "S6 amplifica el SMCP/NATO de S5 + agrega 5 stress focus words críticas para Bloque Interno 2 RAP-02 (starboard/port side/anchorage/must/approach). Distinción PORT (puerto/harbor) vs PORT side (babor/left of vessel) es CRÍTICA — board marking color distintivo + 5+ ocurrencias en SET-UP.",
+      "source": "PM-0 §5.13 — Noticing de stress con soporte físico + ABT pronunciation lab"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "starboard",
+        "port (side)",
+        "anchorage",
+        "must",
+        "approach",
+        "berth",
+        "pilot",
+        "vessel",
+        "inbound",
+        "outbound"
+      ],
+      "factors_applied": [
+        "Sounds",
+        "Use",
+        "Encounter",
+        "Self-expression"
+      ],
+      "operationalization": "Sounds: stress marking + drilling intensivo en 5 palabras críticas + backchaining 'starboard' y 'approach'. Use: cada aprendiz ejecuta 5 escenarios VHF (5 turnos × ~24s = 2 min × escenario · 2 roles = 20 min × pareja). Encounter: 5 escenarios distintos × 2 rondas (rotación de roles) = 10 encuentros activos × pareja en sesión + reciclaje S5 SMCP/NATO. Self-expression: cada aprendiz invoca su call sign personal (deletreo NATO Phonetic) + nombre del vessel + responde con su propia voz radio simulada. Audio evidencia: 10 audio files × pareja entregables.",
+      "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS)"
+    },
+    "physical_environment": "Aula bilingüe configurada en 12-13 estaciones VHF de pareja con barrera visual A3 negra (canal radio simulado · sin contacto visual · sólo voz). English Zone permanente con cinta azul piso desde S1. Maritime Word Wall pared lateral actualizado Sub-bloque 2 (10 nuevas + 5 SMCP recicladas S5). Tablero al frente con stress focus words + 4 grammar frames por colores + LIVE ZONE para errores comunes globales. Cronómetro maestro al frente + cronómetros pareja por estación. Walkie-talkies o app móvil VHF (1 set por pareja · 12-13 sets + 2 respaldo). Música instrumental marítima OFF durante WHILE D simulación radio (sólo durante WHILE B silencioso).",
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.3",
+      "habilidad_principal": "interaccion_oral",
+      "descriptor_activo": "Confirma recepción usando SMCP (Roger · Wilco · Affirmative · Negative). Pide clarificación específica (Repeat course · Spell call sign).",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_2.produccion_oral"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Moderada — instructor da prompts a velocidad VHF realista; aprendiz controla velocidad de respuesta (2 min × escenario)",
+      "extension_textos": "5 escenarios × ~24s = 2 min producción + ~3 min preparación cue cards + 30 min total × ronda × pareja con rotación",
+      "andamiaje": "Moderado — SMCP/NATO Cards a la vista + cue cards con escenarios escritos + PM-2.10 frames por colores en mesa + Maritime Word Wall pared lateral",
+      "rol_docente": "Modelo (interpreta Captain Lopera en SET-UP) → Driller (Pronunciation Lab WHILE A) → Inductor (Grammar Awareness WHILE B) → Monitor con planilla (durante WHILE C+D simulación) → Retroalimentador modélico anónimo (post-task WHILE E)",
+      "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_2"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A3 — Descriptores §6 produccion_oral A1.3 (Bloque Interno 2 RAP-02)",
+        "B2 — Drilling SMCP intensivo + backchaining maritime",
+        "B4 — Accuracy/fluency diferenciado en mismo bloque (accuracy SMCP bloqueante + fluency en intercambios)",
+        "B7 — Autoevaluación post-VHF (self-check 5 escenarios + planilla 5 ítems chequeo + reflexión 1 línea)",
+        "D3 — Criterio observable (Escala E4 segment VHF · 5 criterios × 1 pt · audio evidencia × 10 files × pareja)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 S6 cumple los 5 ítems priorizados del PM-0 §7. Audio evidencia y planilla Escala Estimación constituyen E4 PARTIAL — cierre final E4 en S8 con segment Berthing tripartito."
+    }
+  }
+}

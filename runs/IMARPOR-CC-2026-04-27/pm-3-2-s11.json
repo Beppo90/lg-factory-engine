@@ -1,0 +1,1007 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.5",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
+  "session": 11,
+  "session_name": "Final Mission Design — The CML Carrier Plan",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide": "G1 — The Maritime Operations Pro",
+  "guia_numero": 1,
+  "programa": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo": "12340002",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-3.5 (fases 1-2 ABP)"
+  ],
+  "habilidades_foco": [
+    "Writing (●) — Berthing Coordination Memo final 1 página + Radio Log final 5 entradas extendido (timestamps + canales + summary + decisiones operacionales) en contexto CML CARRIER 12h"
+  ],
+  "habilidades_soporte": [
+    "Speaking (○) — Ensayo pitch profesional 3 min × 3 ensayos cronometrados (Intro + funciones habituales + funciones momentáneas + cierre) sin evaluación · prep S12",
+    "Reading (○) — Lectura comprensiva del Brief CML CARRIER (Capitán Restrepo · Shanghái → Buenaventura · turno 12h · scenario completo)",
+    "Vocabulary (○) — Integración 25 key_vocabulary completa + 5 occupational structures (responsible for / specialize in / coordinate / supervise / report to)",
+    "Grammar (○) — 3 grupos Intro Aplica: Gr 4 ext superlativos · Gr 11 ext markers already/yet/just/ever/never · Gr 17 ext occupational structures · Gr 1-15 todos en aplicación libre"
+  ],
+  "cefr": "A2.1 (transferencia · Bloque Interno 4 · RAP-04 · umbral hacia B1.0)",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-29",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "preliminary",
+  "_status_preliminary_rationale": "Build-Out S11 generado por subagente PM-3.2 piloto behavioral · Gate Humano 3 (aprobación Playbook S11) pendiente · Sergio confirma cambiando a 'completed' tras revisión de coherencia con PM-3.5 (fases 1-2 ABP · Misión Final design + rehearsal) + pm-3-1.overview_table[10] + pm-3-1.pm0_alignment_by_session[10]. Sesión de TRANSFERENCIA fase exploratoria/diseño — sin evidencia formal (E1-E6 cerradas en S3-S6 + S10 · próxima E-Misión es S12 cierre del programa). Andamiaje mínimo · L2 exclusivo (L1 0%) · feedback diferido FLUENCY dominante.",
+  "momento_sena": "3.4 Transferencia (Diseño + Desempeño preparatorio)",
+  "estrategia_didactica": "ABP — Fase exploratoria/diseño Berthing Memo + Radio Log + ensayo pitch",
+  "justificacion_didactica": "S11 abre la Fase de Transferencia operativa del programa de 100h. Es la primera de dos sesiones de Misión Final ABP (S11 diseño + S12 ejecución). El aprendiz recibe el Brief CML CARRIER de Capitán Restrepo (Shanghái → Buenaventura · turno 12h · scenario realista que integra los 4 bloques internos del curso) y lidera autónomamente la producción de tres entregables que serán ejecutados en S12: (1) Berthing Coordination Memo de 1 página con 4 secciones (vessel particulars · berthing window · coordination roles · contingency plan) que activa Gr 11 ext markers (already/yet/just) + voz pasiva (cargo has been inspected) + occupational structures (I am responsible for · I specialize in); (2) Radio Log template extendido con 5 entradas mínimas (timestamps + canales yard/bridge/customs + summary A2.1 + decisiones operacionales con modales) que recicla productivamente S7 Listening tripartito; (3) Ensayo Pitch Profesional 3 min con 4 secciones (Intro + funciones habituales + funciones momentáneas + cierre con tag question abierta) cronometrado en parejas × 3 ensayos con auto-stress-checking. La estrategia ABP fase exploratoria/diseño combina escritura modelada (samples de pitches modelo + Memo template + Reference Cards permanentes desde S5) con ensayo dirigido en parejas — pero el rol docente es MONITOR/FACILITADOR, NO driller. Feedback es diferido post-task al final de la sesión (no interrumpe diseño ni ensayo). L1 = 0% — el aprendiz lidera diseño en L2 exclusivo · instructor sólo facilita en L2. Andamiaje mínimo: Reference Cards SMCP + NATO + Word Wall completo (Bloques 1+2+3+4 · 25 key vocabulary + occupational structures Reference Card + tag questions cheat sheet · sample pitches modelo) — sin script propio · sin frames pre-rellenados. Feedback FLUENCY dominante (PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_4) con peer consultation durante diseño + ensayo en parejas + auto-corrección con Reference Cards. NO genera evidencia formal — es bisagra exploratoria/diseño preparatoria de S12 E-Misión 5 pts (Rúbrica ABP 6 criterios C01-C13).",
+  "session_header": {
+    "titulo": "SESSION 11: Final Mission Design — The CML Carrier Plan",
+    "subtitulo": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Build-Out — Playbook v2.5",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-3.5 (fases 1-2 ABP) — Misión Final CML CARRIER fase exploratoria/diseño (Brief Capitán Restrepo · Berthing Memo template · Radio Log template extendido · Pitch Profesional 3 min framework · 3 ensayos cronometrados)"
+    ],
+    "habilidades_foco": [
+      "Writing (●) — Berthing Coordination Memo final + Radio Log final extendido"
+    ],
+    "habilidades_soporte": [
+      "Speaking (○) — Ensayo pitch profesional 3 min × 3 ensayos",
+      "Reading (○) — Brief CML CARRIER comprensivo",
+      "Vocabulary (○) — 25 key_vocabulary + 5 occupational structures",
+      "Grammar (○) — Gr 4 ext + Gr 11 ext + Gr 17 ext + Gr 1-15 Aplica"
+    ],
+    "objetivos_pedagogicos": [
+      "(1) Comprender el Brief CML CARRIER de Capitán Restrepo (Shanghái → Buenaventura · turno 12h · vessel particulars + berthing window + cargo + contingencias) tras lectura silenciosa + Q&A en parejas — dimensión cognitiva del scenario.",
+      "(2) Producir un Berthing Coordination Memo de 1 página con 4 secciones (vessel particulars · berthing window · coordination roles · contingency plan) integrando Gr 11 ext markers (already/yet/just/ever/never) + voz pasiva presente (cargo is being inspected) + occupational structures (I am responsible for / specialize in / coordinate / supervise) + 5+ términos del Sub-bloque 4 maritime — dimensión procedimental escrita.",
+      "(3) Producir un Radio Log template extendido con 5 entradas mínimas (timestamps HH:MM + canales yard/bridge/customs + summary A2.1 1-2 oraciones + decisiones operacionales con modales should/must/could/might) — reciclaje productivo S7 Listening tripartito + S8 Berthing Speaking — dimensión procedimental sintética.",
+      "(4) Ensayar el Pitch Profesional 3 min × 3 rondas cronometradas (Intro 30s · funciones habituales 60s · funciones momentáneas 60s · cierre 30s con tag question abierta al panel) en parejas con auto-stress-checking · sin evaluación formal · sólo prep S12 — dimensión actitudinal de ensayo deliberado.",
+      "(5) Valorar la planeación operacional como herramienta profesional — descubrir que la Misión Final NO es improvisación sino diseño + ensayo · y que las 11 sesiones previas son el repertorio que ahora se transfiere autónomamente al CML CARRIER scenario — meta-cognición de transferencia."
+    ],
+    "plan_b": "Si <50% asistencia: aplazar 3ra ronda de ensayo pitch a S12 warm-up · usar tiempo extra en redacción individual del Berthing Memo (con instructor en consulta 1:1 silenciosa). Si computadores no disponibles para diseño: usar planillas físicas A3 del Memo + Radio Log template impresos · degradación aceptable porque S11 prioriza producto verificable sobre formato digital. Si Brief CML CARRIER no se imprimió: instructor proyecta el brief y lee en voz alta 1 vez · luego permite Q&A 10 min antes de iniciar diseño. Si la cohorte se atora con tag questions (>30% no produce 1 tag question correcta en pitch): reducir cierre a 1 tag question modelada por instructor en plenaria · documentar como ajuste y consolidar en S12 warm-up. Si Reference Cards SMCP/NATO + occupational structures + tag questions cheat sheet no están listas: usar mini-cards A5 manuscritas con stress marcado + foto en celular del aprendiz como respaldo. Si energía baja en ensayo pitch (>40% lee del papel sin levantar la vista): pausar 5 min · contar 1 anécdota corta de un Port Operations Trainee colombiano presentando ante panel naviero internacional · reactivar narrativa profesional. Si sample pitches modelo no disponibles: instructor improvisa 1 pitch modelo de 90s en plenaria como demonstration (instructor en rol Andrea avanzada) — degradación aceptable.",
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk pre-modelado en L2 exclusivo (L1 0%). Duración suma exacta 360 min directos + 140 min autónomo (≈2.33h: completar Memo final + Radio Log final + ensayar pitch frente a espejo mínimo 3 ensayos cronometrados). S11 abre Transferencia (Bloque Interno 4 · A2.1) — andamiaje mínimo · feedback diferido FLUENCY dominante · rol docente MONITOR/FACILITADOR (NO driller). NO genera evidencia formal (próxima E-Misión es S12 cierre del programa con Rúbrica ABP 6 criterios C01-C13)."
+  },
+  "materials_checklist": [
+    {
+      "item": "PM-3.5 (fases 1-2 ABP) Misión Final CML CARRIER worksheet impreso (Brief Capitán Restrepo + Berthing Memo template 4 secciones + Radio Log template extendido 5 filas + Pitch framework 4 secciones + Self-check ensayo cronometrado)",
+      "cantidad": "1 set por aprendiz (estimado 25 sets) + 3 sets de respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Brief CML CARRIER detallado A4 (Capitán Restrepo · Shanghái → Buenaventura 12h turn-around · vessel particulars: 220m LOA · 33m beam · 2.500 TEU · ETA 06:15 · ETD 18:15 · cargo: 1.800 contenedores discharge + 1.600 load · contingencias: window de marea + clima previsto)",
+      "cantidad": "1 brief impreso por aprendiz + 1 versión proyectada",
+      "verificado": false
+    },
+    {
+      "item": "Berthing Coordination Memo template A4 (4 secciones: 1. Vessel Particulars · 2. Berthing Window · 3. Coordination Roles · 4. Contingency Plan · campo header con nombre aprendiz + fecha + Berth assignment)",
+      "cantidad": "1 template por aprendiz + 5 de respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Radio Log template extendido A3 (5 filas con columnas: Time HH:MM · Channel yard/bridge/customs · Summary 1-2 oraciones A2.1 · Decision con modal should/must/could/might + Action by + Status)",
+      "cantidad": "1 por aprendiz + 5 de respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Pitch Profesional 3 min framework A4 (4 secciones cronometradas: Intro 30s · Funciones habituales 60s · Funciones momentáneas 60s · Cierre 30s con tag question · espacios para escribir bullets propios · NO script lineal)",
+      "cantidad": "1 por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Tag Questions Cheat Sheet A5 (10 ejemplos canónicos contextualizados al puerto: 'You're the Port Operations Trainee, aren't you?' · 'The vessel arrived at 06:15, didn't it?' · 'We have already discharged the containers, haven't we?' · etc.)",
+      "cantidad": "1 por aprendiz · entrega ceremonial al inicio SET-UP",
+      "verificado": false
+    },
+    {
+      "item": "Occupational Structures Reference Card A5 (5 estructuras canónicas con stress: I am responsible for /rɪˈspɒnsəbəl/ · I specialize in /ˈspɛʃəlaɪz/ · I coordinate /koʊˈɔːrdɪneɪt/ · I supervise /ˈsuːpərvaɪz/ · I report to · ejemplos por cada una en contexto Port Operations Trainee)",
+      "cantidad": "1 por aprendiz · entrega ceremonial al inicio SET-UP",
+      "verificado": false
+    },
+    {
+      "item": "Sample Pitches Modelo (2-3 pitches modelo de 3 min en audio + transcripción bilingüe — ej: Port Operations Trainee Buenaventura ante agente naviero · Junior Logistics Coordinator ante cliente externo · Maritime Apprentice ante OMI inspector)",
+      "cantidad": "2-3 archivos audio + transcripciones impresas para consulta libre · biblioteca del aula",
+      "verificado": false
+    },
+    {
+      "item": "SMCP Reference Card laminada (permanente desde S5 · uso receptivo en S11 para integración Radio Log)",
+      "cantidad": "1 por aprendiz (ya distribuida)",
+      "verificado": false
+    },
+    {
+      "item": "NATO Phonetic Alphabet Reference Card laminada (permanente desde S5 · uso receptivo en S11)",
+      "cantidad": "1 por aprendiz (ya distribuida)",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Word Wall completo (Bloques 1+2+3+4 · 25 key_vocabulary + 30+ SMCP key phrases + NATO completo + 5 occupational structures · pared lateral con foto + IPA + stress)",
+      "cantidad": "1 Word Wall completo (50+ tarjetas)",
+      "verificado": false
+    },
+    {
+      "item": "Estación de grabación para ensayo pitch (celulares + grabadora digital + USB del instructor) — 5 estaciones rotativas para 25 aprendices",
+      "cantidad": "5 estaciones + cables + audífonos para auto-monitoreo",
+      "verificado": false
+    },
+    {
+      "item": "Cronómetro grande visible en pantalla + 1 cronómetro pequeño por pareja (ensayo pitch cronometrado 30s/60s/60s/30s)",
+      "cantidad": "1 grande + 12 pequeños",
+      "verificado": false
+    },
+    {
+      "item": "Computadores o tablets para diseño Memo + Radio Log (con plantillas digitales pre-cargadas) — biblioteca consultable de SMCP/textbook",
+      "cantidad": "1 computador o tablet por aprendiz · 5 de respaldo · biblioteca con SMCP doc + textbook + IMO videos disponibles",
+      "verificado": false
+    },
+    {
+      "item": "Mesas grandes (1 por aprendiz · espaciamiento taller) — re-arreglo aula tipo aula-taller con acceso a biblioteca",
+      "cantidad": "25+ mesas individuales",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO dividido en 5 zonas: (1) ESQUINA SUPERIOR DERECHA — ENGLISH ZONE 🔵 permanente desde S1 · L1 0% tope hoy (recordatorio escrito grande en color rojo: 'L1 = 0% — Misión Final Design'). (2) CENTRO — Title 'IMARPOR-CC · Guía Única · S11: Final Mission Design — The CML Carrier Plan · A2.1 transferencia'. (3) COLUMNA LATERAL IZQUIERDA — 5 OCCUPATIONAL STRUCTURES con stress marcado en MAYÚSCULA + IPA: I am resPONSible for /rɪˈspɒnsəbəl/ · I SPECialize in /ˈspɛʃəlaɪz/ · I coOORdinate /koʊˈɔːrdɪneɪt/ · I SUperVIZE /ˈsuːpərvaɪz/ · I report to. Cada estructura con 1 ejemplo del contexto Port Operations Trainee ('I am responsible for coordinating yard operations' · 'I specialize in VHF communication' · 'I coordinate berthing windows' · 'I supervise container handling' · 'I report to Capitán Restrepo'). (4) ZONA INFERIOR LIVE ZONE — vacío al inicio · se llena durante WHILE C-D con: muestras representativas de Memo y Radio Log de aprendices voluntarios + recast diferido post-task (al final de WHILE E) con bolígrafo verde (correcto) + rojo (a revisar) + 1 frase de feedback colectivo. (5) COLUMNA LATERAL DERECHA — Pitch Framework 4 secciones cronometradas: INTRO 30s · FUNCIONES HABITUALES 60s · FUNCIONES MOMENTÁNEAS 60s · CIERRE 30s + TAG QUESTION. Maritime Word Wall completo en pared lateral con 50+ tarjetas (Bloques 1+2+3+4) · biblioteca consultable de SMCP/textbook + 2-3 sample pitches modelo + Tag Questions Cheat Sheet en 5 mini-posters distribuidos por el aula. CML CARRIER scenario poster A2 (vessel image + Buenaventura terminal layout + 12h timeline) en muro frontal — referencia permanente toda la sesión.",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:25",
+      "duracion_min": 25,
+      "bloque": "SET-UP",
+      "actividad": "Welcome S11 + reactivación English Zone L1 0% + entrega ceremonial Tag Questions Cheat Sheet + Occupational Structures Reference Card + Brief CML CARRIER intro narrativo (Capitán Restrepo entrega misión) + apertura Bloque Interno 4 RAP-04 fase Transferencia + objetivos día + ICQ + ✓ Checkpoint Thumbs Up/Down sobre familiaridad con planeación operacional",
+      "agrupacion": "Plenaria → Individual silencioso (10 min lectura Brief)",
+      "notas": "Apertura solemne de Transferencia. La entrega ceremonial de Cheat Sheet + Reference Card al inicio (no al cierre) es deliberada — los aprendices necesitan los recursos visibles toda la sesión. L1 = 0% — recordar antes y durante. El Brief CML CARRIER se proyecta + se entrega impreso simultáneamente."
+    },
+    {
+      "tiempo": "0:25-1:25",
+      "duracion_min": 60,
+      "bloque": "WHILE A (PM-3.5 fase 1 — Brief comprehension + Q&A en parejas)",
+      "actividad": "Lectura comprensiva Brief CML CARRIER (15 min individual silencioso · marcado en 3 colores: verde = entiendo · amarillo = parcial · rojo = no entiendo) + Q&A en parejas heterogéneas con 8 preguntas guía (20 min) + plenaria de aclaración 15 min con instructor recasting datos críticos (vessel particulars · berthing window · cargo · contingencias) + transición a diseño con frase puente",
+      "agrupacion": "Individual → Parejas → Plenaria",
+      "notas": "Marcado en 3 colores hace tangible la comprensión. Q&A en parejas SIN instructor (solo emergencias). Plenaria recast con data crítica reforzada en LIVE ZONE: vessel 220m LOA · ETA 06:15 · ETD 18:15 · 1.800 discharge + 1.600 load. Andamiaje mínimo — solo Reference Cards a la vista."
+    },
+    {
+      "tiempo": "1:25-2:30",
+      "duracion_min": 65,
+      "bloque": "WHILE B (PM-3.5 fase 2.1 — Berthing Coordination Memo design)",
+      "actividad": "Diseño individual del Berthing Coordination Memo de 1 página con 4 secciones (vessel particulars · berthing window · coordination roles · contingency plan) integrando Gr 11 ext markers (already/yet/just/ever/never) + voz pasiva (cargo is being inspected) + occupational structures (I am responsible for · I specialize in) + 5+ términos del Sub-bloque 4 maritime · auto-revisión con Reference Cards · NO peer review aún (silencio respetuoso)",
+      "agrupacion": "Individual silencioso (instructor monitor + facilitador en consulta 1:1 si solicitan)",
+      "notas": "Producción autónoma. Música instrumental marítima muy baja durante diseño. Instructor circula leyendo sobre el hombro pero NO recasta · NO sugiere · solo modela autocorrección con Reference Cards si aprendiz lo solicita explícitamente. Andamiaje mínimo — sin frames ni script propio."
+    },
+    {
+      "tiempo": "2:30-2:45",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "Receso activo (café + baño + estiramiento)",
+      "agrupacion": "—",
+      "notas": "Hidratación. Mantener Reference Cards visibles. Recordar que el Memo NO está terminado — el diseño continúa en WHILE C con Radio Log + auto-revisión final post-break. NO mover el break."
+    },
+    {
+      "tiempo": "2:45-3:50",
+      "duracion_min": 65,
+      "bloque": "WHILE C (PM-3.5 fase 2.2 — Radio Log template extendido + integración con Memo)",
+      "actividad": "Diseño individual del Radio Log template extendido con 5 entradas mínimas (timestamps HH:MM + canales yard/bridge/customs + summary A2.1 1-2 oraciones + decisiones con modales should/must/could/might + action by + status) reciclando productivamente S7 Listening tripartito + S8 Berthing Speaking + integración cruzada con el Memo (las decisiones del Radio Log deben ser coherentes con la Contingency Plan del Memo)",
+      "agrupacion": "Individual silencioso (instructor monitor + facilitador 1:1) → Pares de revisión cruzada los últimos 15 min",
+      "notas": "Reciclaje productivo S7 + S8 — el aprendiz ya conoce la estructura · ahora la integra con escenario CML CARRIER 12h. Los últimos 15 min en pares cross-check de coherencia Memo ↔ Radio Log (solo 2 ítems: ¿coherente con vessel particulars? ¿coherente con contingency plan?). NO recast del instructor."
+    },
+    {
+      "tiempo": "3:50-5:05",
+      "duracion_min": 75,
+      "bloque": "WHILE D (PM-3.5 fase 2.3 — Ensayo Pitch Profesional 3 min × 3 rondas cronometradas)",
+      "actividad": "Preparación bullets propios del Pitch Framework 4 secciones (Intro 30s + funciones habituales 60s + funciones momentáneas 60s + cierre 30s con tag question) — 15 min individual + Ronda 1 ensayo en parejas con auto-stress-checking (cronometrado · uno presenta · otro escucha con Reference Cards a la vista · 20 min total) + Ronda 2 con grabación (cada aprendiz graba su pitch 3 min en estación rotativa + auto-monitoreo con audífonos · 20 min) + Ronda 3 ensayo final ante 1 espectador adicional (otra pareja · 20 min)",
+      "agrupacion": "Individual → Parejas (Ronda 1) → Individual con grabación (Ronda 2) → Triada (Ronda 3)",
+      "notas": "Ensayo deliberado en 3 rondas con feedback NO punitivo. Auto-stress-checking — cada aprendiz monitorea su propio output. Las grabaciones de Ronda 2 entran a portafolio Misión Final S12 (continuidad con audios NATO S5 + Inspection Report S4 sellado). NO evaluación · sólo prep S12. Cronómetro visible obligatorio para respetar 3 min totales."
+    },
+    {
+      "tiempo": "5:05-5:35",
+      "duracion_min": 30,
+      "bloque": "WHILE E (PM-3.5 fase 2.4 — Feedback diferido FLUENCY + recast colectivo + integración portfolio)",
+      "actividad": "Feedback diferido FLUENCY dominante (PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_4): instructor proyecta 3-5 muestras representativas (1 Memo · 1 Radio Log · 1 fragmento de pitch grabado · sin nombrar autores) en LIVE ZONE + recast colectivo con bolígrafo verde/rojo + clase vota verde/rojo en cada muestra · sin juicio individual + 1 frase de feedback colectivo + integración del Memo + Radio Log + audio Pitch en sobre amarillo del portafolio Misión Final S12 (continuidad con Inspection Report S4 + audios NATO S5)",
+      "agrupacion": "Plenaria",
+      "notas": "Feedback NO punitivo. Recast colectivo con visibility de error sin atribución. Las muestras se proyectan con transparencia · clase aprende observando. La integración al portafolio S12 cierra simbólicamente el ciclo de evidencias acumuladas durante el programa (S4 Inspection Report + S5 audios NATO + S11 Memo + Radio Log + audio Pitch)."
+    },
+    {
+      "tiempo": "5:35-6:00",
+      "duracion_min": 25,
+      "bloque": "WRAP-UP",
+      "actividad": "Exit Ticket S11 (auto-evaluación 4 ítems: Memo completo? Radio Log coherente? Pitch ensayado 3 veces? Tag question producida?) + síntesis de transferencia + preview S12 (CML Port Turnaround Mission · Misión Final ejecutiva 3h + pitch ante panel + Q&A + reflexión metacognitiva 'What I see now that I did not see on Day 1') + asignación autónoma (completar Memo final + Radio Log final + ensayar pitch frente a espejo mínimo 3 ensayos cronometrados · 140 min)",
+      "agrupacion": "Individual → Plenaria",
+      "notas": "Cierre con energía concentrada y anticipación de S12 (cierre del programa). Anunciar S12 con misterio: 'Lunes presentas tu Misión Final ante panel · Capitán Restrepo + agente naviero externo. Estás listo. Ya tienes Memo · Radio Log · Pitch. Sólo falta ejecutar.' Validar que cada aprendiz tiene los 3 entregables del portafolio listos."
+    }
+  ],
+  "set_up": {
+    "duracion_min": 25,
+    "warm_up": {
+      "nombre": "Welcome S11 — From Apprentice to Mission Designer · Brief CML CARRIER intro",
+      "pasos": [
+        "1. Instructor recibe en la puerta saludando: '*Good morning, Mission Designers! Welcome to Session 11 — your first day as Mission Designers of the CML CARRIER turn-around.*' (sonrisa + gesto profesional + usar nombres).",
+        "2. Re-señalar English Zone con énfasis máximo: cinta azul en piso visible · círculo 🔵 en tablero · NUEVO recordatorio en color rojo grande proyectado: '*L1 = 0% TODAY · L2 EXCLUSIVE · You lead the design in English.*' Reforzar verbalmente: '*Today is your day. You design. You decide. You lead. In English. Like a real Port Operations Trainee.*'",
+        "3. Entrega ceremonial Tag Questions Cheat Sheet + Occupational Structures Reference Card (5 min · individual con dos manos · frase ritual): '*This is your toolbelt for the next 2 days. Tag Questions to engage the panel. Occupational Structures to introduce yourself professionally. They stay with you until Session 12. Use them.*'",
+        "4. Quick Recall plenario 5 min: instructor pregunta '*Last session you did the Maritime Operations Check — Cuestionario S6 with 25 items. What is one thing you discovered about yourself as a Maritime English learner?*' — 3 voluntarios comparten 1 frase corta en L2.",
+        "5. Bridging narrativo (5 min): '*Today is Andrea's tenth week at the Terminal. She is no longer a beginner — she is a Port Operations Trainee. Today she receives a real mission from Capitán Restrepo. The CML CARRIER. 220 meters. 2.500 TEU. Shanghai to Buenaventura. Twelve-hour turn-around. ETA 06:15. ETD 18:15. 1.800 containers to discharge. 1.600 to load. The challenge is real. The plan is yours. You are no longer learning English — you are USING English to design operations.*'",
+        "6. Mostrar slide proyectado del Brief CML CARRIER + foto vessel real + Buenaventura terminal layout + 12h timeline — '*This is your mission. Today you DESIGN. Monday you EXECUTE.*' Pegar poster A2 CML CARRIER en muro frontal — referencia permanente toda la sesión + S12."
+      ],
+      "duration_min": 12
+    },
+    "teacher_talk_opening_en": "*Good morning, Mission Designers! Welcome to Session 11. Today is the day Andrea stops being an apprentice — and so do you. For ten weeks, you've been training. You've learned 25 vocabulary terms — Bloques 1, 2, 3, and 4. You've drilled SMCP and NATO Phonetic. You've written your first Inspection Report — sealed in the envelope since Session 4. You've coordinated berthing in three voices — yard, bridge, customs. You've role-carouseled the 5 master functions. You've passed your Maritime Operations Check. Today, Capitán Restrepo gives you a real mission: the CML CARRIER. Two hundred and twenty meters long. Two thousand five hundred TEU. Shanghai to Buenaventura. Twelve-hour turn-around. Eighteen hundred containers to discharge. Sixteen hundred to load. ETA at zero-six-fifteen. Departure at eighteen-fifteen. Today you design THREE deliverables that you will execute on Monday in front of the panel: Capitán Restrepo and an external shipping agent. One — Berthing Coordination Memo, one page, four sections. Two — Radio Log template, five entries minimum, with timestamps, channels, summaries, and decisions. Three — Pitch Profesional, three minutes, four sections, with one tag question to engage the panel at the end. Today is L2 exclusive — zero Spanish. I am not a teacher today. I am a monitor. I am a facilitator. The design is YOURS. The decisions are YOURS. The pitch is YOURS. I trust your eleven sessions of training. Are you ready to design?*",
+    "teacher_talk_opening_es_cursive": "*(Nota interna del instructor — NO LEER en clase · L1 = 0%. Traducción de referencia para preparación: Buenos días, Diseñadores de Misión. Bienvenidos a la Sesión 11. Hoy es el día en que Andrea deja de ser aprendiz — y ustedes también. Durante diez semanas se han entrenado. Aprendieron 25 términos de vocabulario — Bloques 1, 2, 3 y 4. Drillaron SMCP y NATO Phonetic. Escribieron su primer Inspection Report — sellado en el sobre desde la Sesión 4. Coordinaron berthing en tres voces — yarda, puente, aduana. Role-carruselizaron las 5 funciones maestras. Pasaron su Maritime Operations Check. Hoy, Capitán Restrepo les da una misión real: el CML CARRIER. Doscientos veinte metros de eslora. Dos mil quinientos TEU. Shanghái a Buenaventura. Turn-around de doce horas. Mil ochocientos contenedores a descargar. Mil seiscientos a cargar. ETA a las 06:15. Salida a las 18:15. Hoy diseñan TRES entregables que ejecutarán el lunes frente al panel: Capitán Restrepo y un agente naviero externo. Uno — Berthing Coordination Memo, una página, cuatro secciones. Dos — Radio Log template, cinco entradas mínimo, con timestamps, canales, summaries y decisiones. Tres — Pitch Profesional, tres minutos, cuatro secciones, con una tag question para enganchar al panel al final. Hoy es L2 exclusivo — cero español. No soy maestro hoy. Soy monitor. Soy facilitador. El diseño es SUYO. Las decisiones son SUYAS. El pitch es SUYO. Confío en sus once sesiones de entrenamiento. ¿Listos para diseñar?)*",
+    "objetivo_dia_escrito_en_tablero": "*Today you will: (1) read and comprehend the CML CARRIER Brief from Capitán Restrepo (220m LOA · 2.500 TEU · Shanghai-Buenaventura · 12h turn-around) · (2) design a Berthing Coordination Memo (1 page · 4 sections) with already/yet/just markers + occupational structures · (3) design a Radio Log extended template (5 entries · timestamps + channels + summaries + decisions) · (4) rehearse your 3-minute Pitch Profesional × 3 rounds (Intro · habitual · momentary · closing tag question) · (5) integrate Memo + Radio Log + audio Pitch into your Final Mission portfolio. L1 = 0%. You lead.*",
+    "activacion_occupational_structures_drill": {
+      "instruccion": "Instructor proyecta el poster A5 con las 5 occupational structures + modela 1 ejemplo personal: '*I am responsible for facilitating Maritime English. I specialize in ESP for port operations. I coordinate the IMARPOR-CC programme. I supervise 25 Junior Trainees. I report to the SENA Bilingüismo coordinator.*' Choral repetition de las 5 estructuras con stress + clase repite con eco · 4 voluntarios producen su propia versión con 'Port Operations Trainee' (1 estructura cada uno · 30 seg cada uno).",
+      "tecnica": "Modelo personal del instructor + Choral repetition + Producción mínima individual con autocorrección (PM-0 §5.13 con autonomía progresiva)"
+    },
+    "icq": [
+      "*How many deliverables will you design today?* → Esperan: '3 / three / Memo Radio-Log Pitch'",
+      "*What is the L1 percentage today?* → Esperan: '0 / zero / no Spanish / English only'",
+      "*How long is your Pitch Profesional?* → Esperan: '3 minutes / three / cronometered'",
+      "*How many sections in the Berthing Memo?* → Esperan: '4 / four / vessel particulars · berthing window · coordination roles · contingency plan'",
+      "*How many entries minimum in the Radio Log?* → Esperan: '5 / five'",
+      "*Who is in the panel on Monday?* → Esperan: 'Capitán Restrepo · external shipping agent / 2 panelists'",
+      "*Am I a teacher today or a monitor?* → Esperan: 'Monitor / facilitator / not teacher today'"
+    ],
+    "facilitation_notes": [
+      "💡 Día 11 abre Transferencia (A2.1) — energía debe ser elevada y profesional. NO festiva como S1 · sí ritualmente importante como ceremonia de graduación parcial. El aprendiz pasa de aprendiz a diseñador.",
+      "💡 La entrega ceremonial Tag Questions Cheat Sheet + Occupational Structures Reference Card al inicio (no al cierre) es deliberada — los aprendices necesitan los recursos visibles toda la sesión. NO retener.",
+      "💡 L1 = 0% es BLOQUEANTE — si un aprendiz dice una palabra en español, recasting suave en L2 sin interrumpir flujo: '*Yes — in English: containers / berthing / cargo handling.*' NO sancionar · solo modelar.",
+      "💡 La narrativa Capitán Restrepo entrega misión es la primera vez que el aprendiz recibe responsabilidad operacional real (en S1-S10 fue entrenamiento · en S11 entra como Mission Designer). Énfasis dramático en el Brief.",
+      "💡 Si un aprendiz dice '*Profe, no me siento listo para presentar el lunes*': respuesta tranquilizadora en L2 '*Andrea also did not feel ready on Day 11. Today you DESIGN. Monday you EXECUTE. Eleven sessions of training are inside you. Trust your repertoire.*' Explicar la diferencia entre aprender y usar.",
+      "💡 Anote en LIVE ZONE 1-2 occupational structures que emergen orgánicamente en Quick Recall (si alguien dice 'I coordinate' o 'I supervise') — celebrar y vincular: '*Excellent — you already use occupational structures. We have 5 today.*'",
+      "💡 NO entregar el Brief CML CARRIER hasta el WHILE A (lectura comprensiva) — el SET-UP solo presenta el scenario · el detalle viene después. Mantener el suspenso pedagógico."
+    ],
+    "checkpoint": "✓ Thumbs Up/Down: '*Are you ready to lead the design today?*' — registrar % de confianza. Si <40% thumbs up: dar 2 min extra de drilling occupational structures (cada aprendiz produce 1 estructura con 'Port Operations Trainee' o 'Maritime Apprentice' · sin evaluación) + recordar que el repertorio de 11 sesiones está disponible · Reference Cards a la vista · biblioteca consultable. Si >70% thumbs up: avanzar directo a WHILE A con energía profesional."
+  },
+  "while": {
+    "duracion_min": 295,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "Brief CML CARRIER comprehension + Q&A en parejas (PM-3.5 fase 1)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-3.5 fase 1 — Brief CML CARRIER (vessel particulars + berthing window + cargo + contingencias)",
+        "agrupacion": "Individual → Parejas → Plenaria",
+        "objetivo": "Comprender íntegramente el Brief CML CARRIER de Capitán Restrepo mediante lectura silenciosa con marcado en 3 colores (verde = entiendo · amarillo = parcial · rojo = no entiendo) + Q&A en parejas heterogéneas con 8 preguntas guía + plenaria de aclaración con instructor recasting datos críticos. El aprendiz internaliza el scenario antes de iniciar diseño · sin diseño aún. Andamiaje mínimo · L2 exclusivo.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor distribuye el Brief CML CARRIER A4 + 3 marcadores (verde/amarillo/rojo) por aprendiz.",
+          "2. Lee instrucción central proyectada en L2: '*Read the Brief silently. Use three colors. GREEN = I understand. YELLOW = I partially understand. RED = I don't understand. 15 minutes silent. No phone. No partner help yet. Just you and the brief.*'",
+          "3. 15 min individual silencioso: aprendices leen y marcan con 3 colores. Instructor circula sin corregir · solo modela 1 frase con 1 color en silencio (escribe en tablero LIVE ZONE: '*220m LOA*' subraya en verde) como ejemplo.",
+          "4. Recordatorio bilingüe NO — solo L2 a los 8 min: '*If you don't understand a word, mark it red. That's brave. We help each other in pairs next.*'",
+          "5. 20 min en parejas heterogéneas (Q&A): cada pareja recibe 8 preguntas guía proyectadas + impresas: '*(1) What is the LOA of the vessel? (2) What is the cargo discharge target? (3) What is the cargo load target? (4) What is the ETA? (5) What is the ETD? (6) Which berth is assigned? (7) What is the weather forecast? (8) What is the tide window?*' Cada pareja responde colaborativamente · puede consultar Reference Cards + Word Wall. Sin instructor (solo emergencias).",
+          "6. 15 min plenaria de aclaración: instructor proyecta el Brief con datos críticos resaltados + recast colectivo en LIVE ZONE: '*The vessel is the CML CARRIER. LOA = 220 meters. ETA = 06:15. ETD = 18:15. Cargo discharge = 1.800 containers. Cargo load = 1.600 containers. Berth = 4. Tide window = 06:00 to 19:00. Weather = clear morning, possible afternoon rain.*' Cada dato escrito en MAYÚSCULA en LIVE ZONE para referencia visible toda la sesión.",
+          "7. Frase puente al WHILE B: '*Now you understand the mission. Next, you DESIGN. The Berthing Coordination Memo. One page. Four sections. Sixty-five minutes. You. The brief. The Reference Cards. Begin.*'",
+          "8. Instructor invita 2 voluntarios (1 de cada pareja distinta) a leer en voz alta 1 dato crítico que descubrieron en Q&A · choral repetition con stress en números (220 / 06:15 / 18:15 / 1.800 / 1.600)."
+        ],
+        "teacher_talk_instruction": "*Open the Brief. Three colors: green I understand · yellow partial · red I don't. 15 minutes silent. Then 20 minutes in pairs with 8 questions. Then we clarify together. No translation. No phone. Just your eyes, your hands, your colors. The mission begins.*",
+        "icq": [
+          "*Are you alone or with a partner first?* → Esperan: 'Alone first / silent / 15 minutes'",
+          "*What does green mean?* → Esperan: 'I understand'",
+          "*What does red mean?* → Esperan: 'I don't understand'",
+          "*Can I use my phone?* → Esperan: 'No / no Google'",
+          "*How many questions in pair Q&A?* → Esperan: '8 / eight'"
+        ],
+        "answer_key_inline": {
+          "datos_criticos_brief": [
+            "Vessel: CML CARRIER (220m LOA · 33m beam · 2.500 TEU)",
+            "ETA: 06:15 / ETD: 18:15 (12h turn-around)",
+            "Cargo discharge: 1.800 containers / Cargo load: 1.600 containers",
+            "Berth assigned: Berth 4 (Buenaventura Terminal)",
+            "Tide window: 06:00 to 19:00",
+            "Weather forecast: clear morning · possible afternoon rain",
+            "Captain: Capitán Restrepo (Port Captain · mentor)",
+            "Origin: Shanghai · Destination: Buenaventura"
+          ],
+          "marcado_3_colores_pattern_esperado_S11": "60-80% verde · 15-30% amarillo · 5-15% rojo. Si rojo > 25%: dar 5 min extra Q&A con instructor en plenaria con recast de datos rojos.",
+          "8_preguntas_respuestas": [
+            "P1 LOA: 220 meters",
+            "P2 Cargo discharge: 1.800 containers",
+            "P3 Cargo load: 1.600 containers",
+            "P4 ETA: 06:15",
+            "P5 ETD: 18:15",
+            "P6 Berth: Berth 4",
+            "P7 Weather: clear morning · possible afternoon rain",
+            "P8 Tide window: 06:00 to 19:00"
+          ],
+          "nota": "No evaluado — comprehension diagnostic preparatorio del diseño WHILE B-C-D."
+        },
+        "facilitation_notes": [
+          "💡 NO traduzca el Brief — los aprendices lo entienden con Reference Cards + Word Wall + 11 sesiones de repertorio. Confíe en el sistema.",
+          "💡 Si una pareja se atora en una pregunta · acérquese 30 seg · modele 1 estrategia de búsqueda (señalar dato en el Brief · señalar Word Wall · señalar Reference Card) · luego retírese.",
+          "💡 La plenaria de aclaración NO es enseñanza — es recasting de datos críticos para que TODOS tengan la base antes de diseñar. Sea breve · directo · numérico.",
+          "💡 Anote en LIVE ZONE las palabras inglesas que emergen en Q&A — celébrelas en la plenaria final · vinculan a Word Wall.",
+          "💡 Si un aprendiz dice '*This is too much information*': respuesta '*Yes — real port operations are full of data. You have 11 sessions of training. You have Reference Cards. You have Word Wall. You have your partner. Take one piece at a time.*'"
+        ],
+        "checkpoint": "✓ Pair Q&A check: ≥80% de las parejas tienen las 8 preguntas respondidas con dato correcto del Brief. Si <80%: dar 5 min extra de plenaria recast con datos críticos · NO comprometer el WHILE B (diseño Memo).",
+        "transition": "*You understand the mission. Now you DESIGN. The Berthing Coordination Memo. One page. Four sections. Sixty-five minutes. Silent work. Reference Cards visible. Begin.*"
+      },
+      {
+        "letra": "B",
+        "nombre": "Berthing Coordination Memo design (PM-3.5 fase 2.1)",
+        "duracion_min": 65,
+        "worksheet_ref": "PM-3.5 fase 2.1 — Berthing Coordination Memo template (4 secciones · 1 página)",
+        "agrupacion": "Individual silencioso (instructor monitor + facilitador 1:1 si solicitan)",
+        "objetivo": "Producir un Berthing Coordination Memo de 1 página con 4 secciones (vessel particulars · berthing window · coordination roles · contingency plan) integrando productivamente Gr 11 ext markers (already/yet/just/ever/never) + voz pasiva presente (cargo is being inspected) + occupational structures (I am responsible for · I specialize in) + 5+ términos del Sub-bloque 4 maritime. Andamiaje mínimo · L2 exclusivo · sin frames pre-rellenados. Auto-revisión con Reference Cards.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor distribuye el Berthing Coordination Memo template A4 (4 secciones con headers + campo header con nombre aprendiz + fecha + Berth assignment).",
+          "2. Lee instrucción central proyectada en L2: '*One page. Four sections. (1) Vessel Particulars — describe the CML CARRIER. (2) Berthing Window — when, how long. (3) Coordination Roles — who does what (use occupational structures). (4) Contingency Plan — what if (use modal verbs should/must/could/might). Use already, yet, just markers in section 4. Use passive voice in section 2 (cargo is being inspected). 65 minutes silent. Reference Cards visible. No partner help. No phone.*'",
+          "3. Instructor proyecta el Word Wall completo + Tag Questions Cheat Sheet + Occupational Structures Reference Card + Gr 11 markers cheat sheet (already/yet/just/ever/never con ejemplos del puerto).",
+          "4. 65 min individuales silencioso: aprendices diseñan el Memo. Música instrumental marítima muy baja durante diseño (sonidos de puerto suaves · refuerza inmersión profesional).",
+          "5. Instructor circula leyendo sobre el hombro · NO recasta · NO sugiere · solo modela autocorrección con Reference Cards si aprendiz lo solicita explícitamente con la frase: '*Can I check this against the Reference Card?*' (en L2 obligatorio).",
+          "6. Si un aprendiz pregunta una palabra · instructor señala con el dedo el Word Wall · NO traduce · NO escribe la palabra. El aprendiz busca.",
+          "7. Recordatorio visual a los 30 min: instructor escribe en LIVE ZONE '*Reminder: 4 sections · already/yet/just · passive voice · 5+ maritime terms · occupational structures*' (sin interrumpir verbalmente).",
+          "8. Cierre del bloque: instructor anuncia '*5 minutes left. Auto-review with Reference Cards. Check spelling. Check stress on key words.*' (silencio total · todos auto-revisan)."
+        ],
+        "teacher_talk_instruction": "*Sixty-five minutes. Four sections. One page. Vessel Particulars · Berthing Window · Coordination Roles · Contingency Plan. Use already, yet, just. Use passive. Use occupational structures. Use 5+ maritime terms. Music low. Silent work. Reference Cards visible. Trust your training. Begin.*",
+        "icq": [
+          "*Are we working alone or in pairs?* → Esperan: 'Alone / individual / silent'",
+          "*How many sections in the Memo?* → Esperan: '4 / four'",
+          "*Which markers must I use?* → Esperan: 'already / yet / just / ever / never'",
+          "*Which voice in section 2?* → Esperan: 'Passive / cargo is being inspected'",
+          "*Can I ask my partner?* → Esperan: 'No / silent work'"
+        ],
+        "answer_key_inline": {
+          "memo_modelo_4_secciones_A2.1": [
+            "**SECCIÓN 1 — Vessel Particulars**: 'The CML CARRIER is a 220-meter container vessel with 2.500 TEU capacity. The vessel arrives from Shanghai. The estimated time of arrival is 06:15 on Monday. The estimated time of departure is 18:15. The vessel beam is 33 meters.'",
+              "**SECCIÓN 2 — Berthing Window** (passive voice): 'The vessel is being assigned to Berth 4. The pilot is being boarded at 06:05. The lines are being secured at 06:30. Cargo is being inspected at 14:00. The departure clearance is being processed by Customs at 17:00.'",
+              "**SECCIÓN 3 — Coordination Roles** (occupational structures): 'I am responsible for coordinating yard operations. Diego specializes in container handling. Bosun Romero coordinates mooring lines. Captain Lopera supervises bridge operations via VHF Channel 16. Capitán Restrepo reports to the Port Authority.'",
+              "**SECCIÓN 4 — Contingency Plan** (modals + already/yet/just): 'If the weather changes, we should request a tug boat. The afternoon rain has not started yet, but the wind might increase by 14:00. We have already prepared the secondary berth. If the tide window closes earlier, we must complete the discharge by 16:00. The pilot has just confirmed the boarding time.'"
+          ],
+          "longitud_esperada_total": "200-280 palabras · 1 página A4 con headers visibles · 4 secciones balanceadas",
+          "criterios_calidad_referencia_S12": [
+            "C1 Memo completo con 4 secciones · todas pobladas",
+            "C2 Marker activo: ≥3 ocurrencias de already/yet/just (idealmente 5)",
+            "C3 Voz pasiva en sección 2: ≥3 oraciones en pasiva",
+            "C4 Occupational structures en sección 3: ≥3 estructuras canónicas (I am responsible for / specialize in / coordinate / supervise / report to)",
+            "C5 Modales en sección 4: ≥2 modales (should/must/could/might) en contingencias",
+            "C6 Maritime terms: ≥5 términos del Sub-bloque 4 (berthing · mooring · departure · cargo handling · anchor · discharge · clearance · turn-around · etc.)"
+          ],
+          "nota": "No evaluado en S11 — referencia para Rúbrica E-Misión 6 criterios C01-C13 en S12. Permite predicción del nivel de cada aprendiz para Misión Final."
+        },
+        "facilitation_notes": [
+          "💡 Rol docente = MONITOR/FACILITADOR (PM-0 §8 + shifts_metodologicos.Bloque_Interno_4). NO driller. NO recast. Silencio respetuoso del proceso del aprendiz.",
+          "💡 Si un aprendiz solicita ayuda explícita en L2: '*Show me what you have. Let's check the Reference Card together.*' (señala Reference Card · NO traduce · NO escribe · solo modela búsqueda autónoma).",
+          "💡 Música instrumental marítima MUY baja — sonidos de puerto suaves (gaviotas · radios distantes · grúas) refuerza inmersión profesional sin distraer.",
+          "💡 Si un aprendiz se bloquea afectivamente (>5 min sin escribir): acérquese en voz baja 1 min '*Take a deep breath. Look at the Word Wall. Choose ONE word. Start with that.*' Sin presionar.",
+          "💡 Si un aprendiz produce un Memo en <30 min: pídale que extienda con 2 contingencias adicionales en sección 4 (tide closure · weather emergency · cargo damage) — NO darle tarea de otro aprendiz.",
+          "💡 NO revele el Memo modelo del Answer Key en clase — es referencia interna del instructor. Los aprendices descubren su propio modelo via Reference Cards + Word Wall + 11 sesiones de repertorio."
+        ],
+        "checkpoint": "✓ Auto-review check al cierre del bloque: ≥85% de los aprendices tienen las 4 secciones pobladas con texto · sin huecos. Si <85%: dar 5 min extra silenciosos · NO comprometer el WHILE C (Radio Log).",
+        "transition": "*Time. Stop writing. Stretch. Take a breath. The Memo is your first deliverable. Next — the Radio Log. After the break.*"
+      },
+      {
+        "letra": "C",
+        "nombre": "Radio Log template extendido + integración con Memo (PM-3.5 fase 2.2)",
+        "duracion_min": 65,
+        "worksheet_ref": "PM-3.5 fase 2.2 — Radio Log extendido (5 entradas · timestamps + canales + summary + decisión + action by + status)",
+        "agrupacion": "Individual silencioso (instructor monitor + facilitador 1:1) → Pares de revisión cruzada los últimos 15 min",
+        "objetivo": "Producir un Radio Log template extendido con 5 entradas mínimas (timestamps HH:MM + canales yard/bridge/customs + summary A2.1 1-2 oraciones + decisiones operacionales con modales should/must/could/might + action by + status) reciclando productivamente S7 Listening tripartito + S8 Berthing Speaking · integrado con la Contingency Plan del Memo. Cross-check final en pares (2 ítems: ¿coherente con vessel particulars? ¿coherente con contingency plan?).",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor distribuye el Radio Log template extendido A3 (5 filas con columnas: Time HH:MM · Channel yard/bridge/customs · Summary 1-2 oraciones A2.1 · Decision con modal · Action by · Status).",
+          "2. Lee instrucción central proyectada en L2: '*Five entries minimum. Real timestamps from 06:00 to 18:15. Three channels: yard · bridge · customs. Summary in 1-2 sentences A2.1. Decision with modal verb (should · must · could · might). Action by — name the responsible role. Status — pending · in progress · completed. Coherent with your Memo. Forty-five minutes silent. Last fifteen minutes — pair cross-check (2 questions only). Reference Cards visible.*'",
+          "3. 45 min individuales silencioso: aprendices diseñan las 5 entradas. Música instrumental marítima muy baja continúa de WHILE B.",
+          "4. Instructor circula leyendo sobre el hombro · NO recasta · NO sugiere · solo modela autocorrección si solicitan en L2.",
+          "5. Si un aprendiz pregunta una estructura (ej: voz pasiva en summary): instructor señala el Word Wall + Memo previo del aprendiz · NO escribe ni traduce.",
+          "6. 15 min pares cross-check (los últimos 15 min): cada pareja revisa el Radio Log del compañero con 2 preguntas: '*(1) Is your Radio Log coherent with the vessel particulars in your Memo? (2) Is your Radio Log coherent with the contingency plan in your Memo?*' Solo observar · NO corregir · NO enseñar.",
+          "7. Recordatorio bilingüe NO — solo L2 a los 35 min: '*If your Radio Log timing doesn't fit the tide window, adjust. The brief gives you 06:00 to 19:00.*'",
+          "8. Cierre del bloque: instructor anuncia '*Stop. The Radio Log is your second deliverable. Next — the Pitch. The most important. Take a breath.*'"
+        ],
+        "teacher_talk_instruction": "*Forty-five minutes silent. Five entries. Time. Channel. Summary. Decision with modal. Action by. Status. Coherent with your Memo. Last fifteen minutes — pair cross-check, two questions only. Reference Cards visible. Music low. Begin.*",
+        "icq": [
+          "*How many entries minimum?* → Esperan: '5 / five'",
+          "*Which 3 channels?* → Esperan: 'yard · bridge · customs'",
+          "*Modal verbs in decision column?* → Esperan: 'should / must / could / might'",
+          "*Status options?* → Esperan: 'pending · in progress · completed'",
+          "*How many questions in pair cross-check?* → Esperan: '2 / two — coherent with vessel · coherent with contingency'"
+        ],
+        "answer_key_inline": {
+          "radio_log_modelo_5_entradas_A2.1": [
+            "ENTRADA 1 — 06:05 · BRIDGE · 'The pilot is being boarded by the CML CARRIER. The vessel is approaching Berth 4 with starboard side alongside.' · Decision: 'We should confirm the boarding time with Captain Lopera.' · Action by: Captain Lopera (VHF) · Status: in progress",
+            "ENTRADA 2 — 06:30 · YARD · 'The bow lines have just been secured by Bosun Romero. The stern lines are being secured now.' · Decision: 'The crane operator must wait until all lines are secured.' · Action by: Bosun Romero · Status: in progress",
+            "ENTRADA 3 — 07:00 · YARD · 'Cargo discharge has started. 1.800 containers must be discharged by 14:00.' · Decision: 'We could request a second crane if discharge is delayed.' · Action by: Diego (yard supervisor) · Status: in progress",
+            "ENTRADA 4 — 14:00 · CUSTOMS · 'Cargo is being inspected by Customs officer Salazar. Inspection should be completed by 14:45.' · Decision: 'Cargo load might start at 15:00 if customs clears on time.' · Action by: Customs officer Salazar · Status: pending",
+            "ENTRADA 5 — 17:00 · BRIDGE · 'Departure clearance has just been received from Port Authority. The vessel is ready to depart at 18:15.' · Decision: 'The pilot must board for departure at 17:45.' · Action by: Capitán Restrepo · Status: pending"
+          ],
+          "patron_canales": "Yard 2 · Bridge 2 · Customs 1 (mismo patrón que S7 reciclado)",
+          "patron_modales": "should 1-2 · must 1-2 · could 1 · might 1",
+          "patron_grammar_markers": "voz pasiva ≥3 ocurrencias (is being boarded · are being secured · has been received) · marcador just ≥2 · marcador have already ≥1",
+          "criterios_calidad_referencia_S12": [
+            "C7 Radio Log completo con 5 entradas pobladas",
+            "C8 Coherencia temporal: timestamps dentro de tide window 06:00-19:00",
+            "C9 Coherencia operacional: las decisiones del Radio Log son consistentes con la Contingency Plan del Memo",
+            "C10 Modales activos: ≥4 modales distintos en columna Decision (should · must · could · might)",
+            "C11 Voz pasiva activa: ≥3 oraciones en columna Summary",
+            "C12 Markers: ≥1 ocurrencia de just · ≥1 de already (PM-0 §5.13)"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Rol docente = MONITOR/FACILITADOR. NO recast. Silencio respetuoso. Confíe en el repertorio del aprendiz.",
+          "💡 La integración Memo ↔ Radio Log es CRÍTICA — los aprendices descubrirán incoherencias en el cross-check de pares (ej: '*tu Memo dice ETA 06:15 pero tu Radio Log entrada 1 dice 06:30*'). Esto es ORO pedagógico — celebre el descubrimiento sin dirigir la corrección.",
+          "💡 Música baja continúa — refuerza concentración profesional. NO subir volumen.",
+          "💡 Si un aprendiz produce solo 3 entradas en 45 min: respete · pídale que las 3 entradas sean ricas (modal + passive + marker en cada una) · 5 entradas mínimas es ideal pero 3 ricas > 5 pobres.",
+          "💡 NO revele el Radio Log modelo del Answer Key en clase — es referencia interna. Los aprendices descubren su propia versión.",
+          "💡 Si un aprendiz pregunta '*¿Qué pasa si descubro un error en mi Memo?*' (en L2): respuesta '*Mark it. Continue with the Radio Log. We integrate at the end.*' (errores se resuelven en WHILE E feedback diferido)."
+        ],
+        "checkpoint": "✓ Pair cross-check finalizado: ≥85% de las parejas han revisado los 2 ítems de coherencia (vessel particulars + contingency plan). Si <85%: dar 5 min extra de cross-check · NO comprometer el WHILE D (Pitch ensayo).",
+        "transition": "*Stop. The Radio Log is your second deliverable. Memo · Radio Log · ready. Now — the most important. Your voice. The Pitch. Three minutes. Three rounds. Begin preparing your bullets.*"
+      },
+      {
+        "letra": "D",
+        "nombre": "Ensayo Pitch Profesional 3 min × 3 rondas cronometradas (PM-3.5 fase 2.3)",
+        "duracion_min": 75,
+        "worksheet_ref": "PM-3.5 fase 2.3 — Pitch Profesional 3 min framework (4 secciones cronometradas)",
+        "agrupacion": "Individual (preparación) → Parejas (Ronda 1) → Individual con grabación (Ronda 2) → Triada (Ronda 3)",
+        "objetivo": "Ensayar el Pitch Profesional 3 min × 3 rondas cronometradas con 4 secciones (Intro 30s + funciones habituales 60s + funciones momentáneas 60s + cierre 30s con tag question abierta al panel) en parejas con auto-stress-checking. Sin evaluación · sólo prep S12. Las grabaciones de Ronda 2 entran a portafolio Misión Final S12. Ensayo deliberado · feedback NO punitivo.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor distribuye el Pitch Profesional 3 min framework A4 (4 secciones cronometradas con espacios para escribir bullets propios · NO script lineal).",
+          "2. Lee instrucción central proyectada en L2: '*Three rounds. Each round is 3 minutes. Section 1 — Intro 30 seconds. Section 2 — Funciones habituales (what you do every day) 60 seconds. Section 3 — Funciones momentáneas (what is happening right now in the CML CARRIER mission) 60 seconds. Section 4 — Cierre 30 seconds with ONE tag question to engage the panel. Use occupational structures. Use already/just. Use modals. Use 5+ maritime terms. Round 1 — pairs. Round 2 — recording station. Round 3 — triad with one observer. No grade. Just rehearsal. The pitch is YOURS.*'",
+          "3. 15 min preparación individual: cada aprendiz escribe bullets (NO script lineal) en el framework. Reference Cards + Tag Questions Cheat Sheet + Sample Pitches Modelo disponibles en biblioteca del aula.",
+          "4. RONDA 1 (20 min total · parejas con auto-stress-checking · 10 min cada uno cronometrado): aprendiz A presenta · aprendiz B escucha con Reference Cards a la vista + cronómetro pequeño · al finalizar A · feedback NO punitivo de B en 30 seg con 2 preguntas ('*¿Cubriste las 4 secciones? ¿Produjiste 1 tag question?*'). Rotación: B presenta · A escucha. Sin evaluación · sólo observación.",
+          "5. RONDA 2 (20 min total · grabación rotativa · 5 estaciones para 25 aprendices · 4 min cada uno con buffer): cada aprendiz graba su pitch 3 min en estación rotativa con celular o grabadora digital + audífonos para auto-monitoreo post-grabación. Las grabaciones se guardan en USB del instructor (entran a portafolio Misión Final S12).",
+          "6. RONDA 3 (20 min total · triada con 1 observador · 6-7 min cada presentación con feedback estructurado): grupos de 3 (2 parejas combinadas) · 1 presenta · 1 observa coherencia con Memo · 1 observa coherencia con Radio Log · feedback NO punitivo en 60 seg con 3 preguntas ('*¿Las 4 secciones cronometradas? ¿1 tag question? ¿Coherencia con Memo + Radio Log?*'). Rotación 3 veces.",
+          "7. Música instrumental marítima muy baja durante toda Ronda 2 (refuerza concentración) · silencio total durante Ronda 1 y 3 (respeto a la voz del compañero).",
+          "8. Cierre del bloque: instructor anuncia '*Stop. Three rounds done. Memo · Radio Log · Pitch grabado · ready. Take a breath. Next — feedback together.*'"
+        ],
+        "teacher_talk_instruction": "*Three rounds × 3 minutes each. Section 1 Intro 30s · Section 2 habitual 60s · Section 3 momentary 60s · Section 4 closing tag question 30s. Round 1 pairs. Round 2 recording station. Round 3 triad. No grade. Just deliberate rehearsal. Reference Cards visible. Music low Round 2. Trust your voice. Begin preparing bullets.*",
+        "icq": [
+          "*How many rounds today?* → Esperan: '3 / three'",
+          "*Total length per pitch?* → Esperan: '3 minutes / 30+60+60+30'",
+          "*Section 1 length?* → Esperan: '30 seconds / Intro'",
+          "*Section 4 includes what?* → Esperan: '1 tag question / engage the panel'",
+          "*Round 2 — what do I do?* → Esperan: 'Record / recording station / save to USB'",
+          "*Is this evaluated?* → Esperan: 'No / no grade / rehearsal / prep S12'"
+        ],
+        "answer_key_inline": {
+          "pitch_modelo_4_secciones_3_min_A2.1": [
+            "**SECCIÓN 1 — INTRO 30s**: '*Good morning, panel members. My name is [Aprendiz]. I am a Port Operations Trainee at the Buenaventura Container Terminal. I report to Capitán Restrepo. Today I present the CML CARRIER turn-around plan — Berth 4, twelve-hour window, 1.800 containers to discharge, 1.600 to load. Thank you for your attention.*'",
+            "**SECCIÓN 2 — FUNCIONES HABITUALES 60s**: '*In my daily role, I am responsible for coordinating yard operations. I specialize in VHF Channel 16 communication using SMCP standards. I supervise container handling between yard and bridge. I report to the Port Captain on tide windows and berthing schedules. I have already worked on three turn-arounds this month — every operation requires coordination with three voices: yard, bridge, and customs.*'",
+            "**SECCIÓN 3 — FUNCIONES MOMENTÁNEAS 60s**: '*Right now, the CML CARRIER is being berthed at Berth 4. The pilot has just boarded at 06:05. The bow lines have already been secured. Cargo discharge is starting. The crane is being operated by Diego — 1.800 containers must be discharged by 14:00. The customs officer is inspecting at 14:00. The afternoon weather might bring rain — we have a contingency plan ready. The vessel must depart by 18:15 to respect the tide window.*'",
+            "**SECCIÓN 4 — CIERRE 30s con TAG QUESTION**: '*The CML CARRIER turn-around is on schedule. The Memo and the Radio Log are integrated. The team is coordinated. We're ready for any contingency. The plan is complete, isn't it? Thank you, panel members. I welcome your questions.*'"
+          ],
+          "longitud_esperada_total": "270-330 palabras hablados en 3 min cronometrados · ritmo A2.1 con pausas naturales",
+          "criterios_calidad_referencia_S12": [
+            "C13 Pitch coherente 3 min con 4 secciones cronometradas",
+            "C14 Tag question producida activamente en cierre (Gr 16 producción activa S12)",
+            "C15 Occupational structures ≥3 en sección habitual",
+            "C16 Markers already/just/yet ≥3 en sección momentánea",
+            "C17 Voz pasiva ≥3 en sección momentánea",
+            "C18 Maritime terms ≥5 distribuidos",
+            "C19 Coherencia Pitch ↔ Memo ↔ Radio Log (3 entregables alineados)"
+          ],
+          "nota": "No evaluado en S11 — referencia para Rúbrica E-Misión 6 criterios C01-C13 + Q&A panel en S12. Audio grabación entra a portafolio Misión Final junto con Memo + Radio Log."
+        },
+        "facilitation_notes": [
+          "💡 Rol docente = MONITOR/FACILITADOR — NO interrumpa Rondas. Solo medio cronómetro grande visible. Confíe en el ensayo deliberado.",
+          "💡 Si una pareja/triada termina antes de los 3 min cronometrados (pitch <2:30): respete · sugiera que ensayen una segunda vez en silencio antes de pasar a la siguiente actividad. Mejor calidad que duración.",
+          "💡 Si una pareja/triada se pasa de 3 min (pitch >3:15): documente el patrón · feedback diferido en WHILE E como 'reto de timing' colectivo · NO interrumpa la presentación.",
+          "💡 La grabación Ronda 2 es CRÍTICA — entra al portafolio Misión Final S12. Asegúrese que cada aprendiz tiene su archivo guardado con nombre + fecha + S11_Pitch_R2.mp3.",
+          "💡 Auto-monitoreo con audífonos en Ronda 2 (post-grabación) es momento poderoso — el aprendiz se escucha por primera vez en pitch profesional. Respete el silencio reflexivo. NO interrumpa con preguntas.",
+          "💡 Sample Pitches Modelo en biblioteca consultable LIBRE durante preparación inicial 15 min · pero NO durante Rondas (respeta la voz propia del aprendiz).",
+          "💡 NO revele el Pitch modelo del Answer Key en clase — es referencia interna. Los aprendices descubren su propia versión via bullets propios + Reference Cards + repertorio."
+        ],
+        "checkpoint": "✓ Ronda 2 grabación completa: ≥90% de los aprendices tienen su archivo de audio guardado (S11_Pitch_R2.mp3 con nombre + fecha) en USB del instructor. Si <90%: dar 5 min extra rotativos · NO comprometer el WHILE E (feedback diferido).",
+        "transition": "*Three rounds done. Three deliverables ready: Memo · Radio Log · Pitch recorded. Now we look together. Three samples on the board. We celebrate. We learn.*"
+      },
+      {
+        "letra": "E",
+        "nombre": "Feedback diferido FLUENCY + recast colectivo + integración portfolio (PM-3.5 fase 2.4)",
+        "duracion_min": 30,
+        "worksheet_ref": "PM-3.5 fase 2.4 — Feedback diferido + integración portfolio Misión Final S12",
+        "agrupacion": "Plenaria",
+        "objetivo": "Feedback diferido FLUENCY dominante (PM-0 §5.11) con 3-5 muestras representativas (1 Memo · 1 Radio Log · 1 fragmento Pitch grabado · sin nombrar autores) proyectadas en LIVE ZONE + recast colectivo con bolígrafo verde/rojo + clase vota verde/rojo en cada muestra · sin juicio individual + 1 frase de feedback colectivo + integración del Memo + Radio Log + audio Pitch en sobre amarillo del portafolio Misión Final S12 (continuidad con Inspection Report S4 + audios NATO S5 sellados).",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor proyecta 1 muestra de Memo en LIVE ZONE (sin nombre del autor · solo texto del aprendiz seleccionado durante WHILE B circulación) · clase observa 60 seg.",
+          "2. Instructor pregunta en L2: '*Section 4 — Contingency Plan. Does this Memo use already, yet, just markers correctly? Verde or rojo?*' · clase vota con marcadores verdes/rojos levantados (sin nombres · sin juicio individual).",
+          "3. Recast colectivo: instructor escribe corrección en LIVE ZONE con bolígrafo verde (correcto) o rojo (a revisar) · 1 frase de feedback colectivo: '*The marker just is well-used here — \"the pilot has just confirmed\" is correct. Watch already vs ever — they are different times.*'",
+          "4. Repetir con 1 muestra de Radio Log (mismo procedimiento · 60 seg observación + voto + recast).",
+          "5. Repetir con 1 fragmento de Pitch grabado (reproducir 30 seg de audio · clase escucha · vota verde/rojo · recast colectivo en LIVE ZONE).",
+          "6. Cierre simbólico: instructor distribuye sobre amarillo grande (color de zona de carga) por aprendiz · cada aprendiz pone dentro: (1) su Memo · (2) su Radio Log · (3) USB con audio Pitch grabado + 1 frase escrita: '*This is my Final Mission portfolio for Session 12.*' Sello con cinta del instructor.",
+          "7. Vinculación con S4 Inspection Report sellado + S5 audios NATO USB: '*Eleven sessions of evidence. All sealed. All inside. Monday — Session 12 — you open the envelope. You execute.*'",
+          "8. Frase puente al WRAP-UP: '*Take a breath. Three deliverables ready. Eleven sessions inside you. Monday is your day. Time to wrap.*'"
+        ],
+        "teacher_talk_instruction": "*Three samples on the board. No names. Just text and audio. Class votes green or red. I correct collectively. We learn together. Then — the yellow envelope. Memo · Radio Log · Audio Pitch. Sealed. Inside. Ready for Monday.*",
+        "icq": [
+          "*Are we naming authors today?* → Esperan: 'No / no names / no judgment'",
+          "*How do we vote?* → Esperan: 'Green or red / verde or rojo'",
+          "*What goes in the yellow envelope?* → Esperan: '3 deliverables / Memo Radio-Log Pitch'",
+          "*When does the envelope open?* → Esperan: 'Session 12 / Monday'"
+        ],
+        "answer_key_inline": {
+          "muestras_recast_colectivo_pattern_esperado": [
+            "MUESTRA 1 (Memo Sección 4 contingency · marker correcto): 'The afternoon rain has not started yet, but the wind might increase' → ✓ verde (yet correctamente con not + presente perfecto)",
+            "MUESTRA 2 (Memo Sección 4 contingency · marker disonante): 'The pilot already arrives at 06:00' → ✗ rojo (recast: 'has already arrived' o 'arrives' sin already · already + pasado o presente perfecto)",
+            "MUESTRA 3 (Radio Log entrada 3 · voz pasiva correcta): 'Cargo is being inspected by Customs at 14:00' → ✓ verde (passive present continuous correcto)",
+            "MUESTRA 4 (Radio Log entrada 5 · modal disonante): 'The pilot would board for departure' → ✗ rojo (recast: 'must board' u otro modal con fuerza ilocutiva apropiada · would no es contingencia)",
+            "MUESTRA 5 (Pitch fragmento Sección 4 · tag question correcta): 'The plan is complete, isn't it?' → ✓ verde (tag question producción activa anticipo S12 Gr 16 Intro)"
+          ],
+          "patron_voto_clase_esperado": "60-80% verde · 20-40% rojo en cada muestra · cohorte calibra por descubrimiento colectivo",
+          "frase_feedback_colectivo_modelo": [
+            "'The cohort uses already and just well — but watch the difference between yet (questions/negatives) and still (continuing).'",
+            "'The Radio Log timing is coherent across the cohort — well done. The modals need stress practice — should is weak, must is strong.'",
+            "'The Pitch tag questions are emerging well — Session 12 will refine the intonation (rising vs falling).'"
+          ],
+          "nota": "No evaluado individualmente — feedback colectivo · cohorte calibra por descubrimiento. Las muestras se proyectan con transparencia · clase aprende observando."
+        },
+        "facilitation_notes": [
+          "💡 Feedback NO punitivo — celebre la valentía de producción del primer día de Transferencia. Sin juicio individual. Cohorte aprende observando.",
+          "💡 La selección de muestras durante WHILE B-D circulación debe ser DELIBERADA: 1 con marker correcto · 1 con marker disonante · 1 con voz pasiva correcta · 1 con modal disonante · 1 con tag question correcta. Patrón balanceado para aprendizaje colectivo.",
+          "💡 La integración al portafolio Misión Final S12 es momento ceremonial — sobres amarillos sellados con cinta · entran a la caja del instructor visible (junto con sobres S4 Inspection Report + USB audios NATO S5). NO apresurar.",
+          "💡 Vinculación simbólica con S4 + S5 + S11: '*Eleven sessions of evidence. Inspection Report, NATO audios, Memo, Radio Log, Pitch. Inside the envelopes. Monday opens.*' Powerful moment — refuerza arco narrativo del programa.",
+          "💡 Si un aprendiz pregunta en L2 '*¿Mi Memo está bien?*': respuesta '*The cohort calibrated together. You have Reference Cards. You have Word Wall. You have eleven sessions inside you. Trust the design.*' NO juicio individual.",
+          "💡 Tome foto del LIVE ZONE con las 5 muestras + recast colectivo — entra a su carpeta de evidencias del Día 11 para mostrar progreso en S12 reflexión metacognitiva 'What I see now that I did not see on Day 1'."
+        ],
+        "checkpoint": "✓ Sobre amarillo sellado: 100% de los aprendices tienen su sobre con los 3 deliverables (Memo + Radio Log + USB audio Pitch). Si alguien no tiene 1 deliverable: dar 5 min extra de finalización individual · NO sellar incompleto.",
+        "transition": "*Time to wrap. Eleven sessions inside you. Monday is your day. Take a breath. Look at your envelope. It is your training, sealed. Ready.*"
+      }
+    ],
+    "breaks": [
+      {
+        "tiempo": "2:30-2:45",
+        "duracion_min": 15,
+        "tipo": "Receso activo (café + baño + estiramiento)",
+        "notas": "Recordar hidratación. Mantener Reference Cards visibles. Recordar a aprendices que el Memo NO está terminado — el diseño continúa en WHILE C con Radio Log. NO mover el break. English Zone se relaja durante break · vuelve al volver. Usar break para preparar estaciones de grabación + cronómetros pequeños + revisar audio Sample Pitches Modelo si alguien lo solicitará en preparación Ronda 1."
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 25,
+    "exit_ticket": {
+      "tarea": "Exit Ticket S11 — Tarjeta 10×15 cm con 4 ítems de auto-evaluación: (1) ¿Mi Berthing Coordination Memo tiene las 4 secciones completas? Sí/No · (2) ¿Mi Radio Log tiene 5 entradas mínimas con coherencia con el Memo? Sí/No · (3) ¿Ensayé mi Pitch 3 min × 3 rondas hoy? Sí/No · (4) ¿Produje al menos 1 tag question en mi Pitch? Sí/No. Adicional: 1 frase libre en L2 sobre cómo me siento ante S12 ('*I feel ready / I feel nervous / I need more rehearsal / I will trust my training*'). Entregar en la caja del instructor antes de salir.",
+      "success_criteria": "Las 4 preguntas Sí/No respondidas + 1 frase libre en L2 (no en español). El instructor revisa post-clase y prepara contacto 1:1 personalizado con aprendices que respondieron 'No' en alguna pregunta o que escribieron '*I feel nervous / I need more rehearsal*'. La caja se abre y se lee S12 warm-up (sin nombrar autores · solo patrón colectivo).",
+      "duration_min": 8
+    },
+    "sintesis": "Hoy te transformaste de aprendiz a Mission Designer. Recibiste el Brief CML CARRIER de Capitán Restrepo · 220m LOA · 12h turn-around · 1.800 discharge + 1.600 load. Diseñaste tres entregables que ejecutarás el lunes: (1) Berthing Coordination Memo de 1 página con 4 secciones + Gr 11 markers + voz pasiva + occupational structures · (2) Radio Log extendido con 5 entradas integradas con el Memo · (3) Pitch Profesional 3 min × 3 rondas cronometradas con tag question final. Trabajaste en L2 exclusivo (L1 = 0%) por primera vez en el programa. Tu portafolio Misión Final está sellado en el sobre amarillo · junto con tu Inspection Report S4 y tu audio NATO S5. Once sesiones de entrenamiento están dentro de ti. El lunes — Sesión 12 — abres el sobre · ejecutas la Misión · presentas ante panel · respondes Q&A con tag questions · cierras con reflexión metacognitiva 'What I see now that I did not see on Day 1'.",
+    "asignacion_autonoma": {
+      "actividad": "Completar Berthing Memo final + Radio Log final + ensayar pitch 3 min frente a espejo (mínimo 3 ensayos cronometrados) · 2.33 horas autónomas (≈140 min)",
+      "instrucciones_detalladas": [
+        "1. Durante el fin de semana, abre tu sobre amarillo del portafolio en privado y revisa los 3 deliverables.",
+        "2. Pulir Berthing Coordination Memo final (≈30 min): revisar las 4 secciones · agregar 1 contingencia adicional en sección 4 · verificar que tienes ≥3 markers (already/yet/just) + ≥3 oraciones en voz pasiva + ≥3 occupational structures + ≥5 maritime terms.",
+        "3. Pulir Radio Log final (≈30 min): revisar las 5 entradas · agregar 2-3 entradas adicionales si quieres (timeline 06:00-18:15 · cubrir bridge + yard + customs) · verificar coherencia con vessel particulars + contingency plan del Memo.",
+        "4. Ensayar Pitch 3 min frente a espejo × 3 rondas cronometradas (≈45 min total · 15 min cada ronda incluyendo auto-revisión): Ronda 1 con framework + bullets · Ronda 2 sin framework (de memoria) · Ronda 3 con cronómetro estricto + grabación opcional. Auto-stress-checking con Reference Cards.",
+        "5. Auto-revisar audio grabación Ronda 2 de la sesión (en el USB del instructor · pídelo al cierre de S11) — escuchar con audífonos · marcar 1 fortaleza + 1 reto a pulir (≈20 min).",
+        "6. Reflexión escrita personal (≈15 min · privada · NO entregable): '*¿Qué versión de mí entró a esta aula el Día 1? ¿Qué versión de mí ejecutará la Misión el Día 12?*' (puede ser en español o inglés · íntima · prepara la reflexión metacognitiva final de S12).",
+        "7. Llevar todo a S12: sobre amarillo + Memo final + Radio Log final + USB con audio + bullets de pitch + actitud de Mission Designer."
+      ],
+      "entregable": "Memo final pulido (1 página · 4 secciones) + Radio Log final pulido (5+ entradas) + audio Pitch grabado (3 min) + 3 ensayos cronometrados frente a espejo (auto-validados) + actitud profesional para S12.",
+      "cuando_se_revisa": "S12 ejecución (Misión Final 3h + pitch 3 min ante panel + Q&A 10 min con tag questions + reflexión metacognitiva final). Rúbrica E-Misión 6 criterios C01-C13 (5 pts) evalúa la Misión Final completa el lunes — los 3 deliverables S11 son input crítico de la rúbrica.",
+      "tiempo_estimado_min": 140,
+      "tiempo_estimado_horas": 2.333333
+    },
+    "bridge_to_next": "*Next session — Session 12: The Port Professional — CML Port Turnaround Mission. You execute the mission you designed today. Three operational hours condensed. VHF intake with Captain Lopera. Berthing tripartito with Diego, Bosun Romero, Captain. Pitch profesional 3 minutes ante panel — Capitán Restrepo and an external shipping agent. Q&A with tag questions. Closing reflection — what you see now that you did not see on Day 1. Bring your sealed yellow envelope. Bring your training. Bring your voice. The port is waiting.*",
+    "teacher_talk_closing_en": "*Mission Designers — today was monumental. You stopped being apprentices and became designers. You received Capitán Restrepo's brief. You designed three deliverables. You rehearsed in three rounds. You sealed your training in the yellow envelope. Eleven sessions of work — the Inspection Report from Session 4, the NATO audios from Session 5, the Memo, the Radio Log, the Pitch from today — all inside. All sealed. All ready. Monday is Session 12. You open the envelope. You execute the mission. You face the panel. You answer with tag questions. You close with reflection. This is what eleven weeks of training were for. Trust your repertoire. Trust your voice. Trust your design. Welcome to your Final Mission, Port Professionals. The port is waiting.*",
+    "teacher_talk_closing_es_cursive": "*(Nota interna del instructor — NO LEER en clase · L1 = 0%. Traducción de referencia para preparación: Diseñadores de Misión, hoy fue monumental. Dejaron de ser aprendices y se convirtieron en diseñadores. Recibieron el brief de Capitán Restrepo. Diseñaron tres entregables. Ensayaron en tres rondas. Sellaron su entrenamiento en el sobre amarillo. Once sesiones de trabajo — el Inspection Report de la Sesión 4, los audios NATO de la Sesión 5, el Memo, el Radio Log, el Pitch de hoy — todos adentro. Todos sellados. Todos listos. El lunes es la Sesión 12. Abren el sobre. Ejecutan la misión. Enfrentan al panel. Responden con tag questions. Cierran con reflexión. Para esto fueron las once semanas de entrenamiento. Confíen en su repertorio. Confíen en su voz. Confíen en su diseño. Bienvenidos a su Misión Final, Profesionales del Puerto. El puerto está esperando.)*",
+    "reflection_prompt": "Antes de salir · 30 segundos de silencio: '*¿Qué versión de mí entró al puerto en la Sesión 1? ¿Qué versión de mí ejecutará la Misión Final el lunes?*' (no se responde en voz alta · solo se siente · prepara la reflexión metacognitiva final de S12).",
+    "facilitation_notes": [
+      "💡 Cierre con energía profesional y anticipación. S11 es bisagra ABP — que se vayan con sensación de competencia y preparación, no de evaluación inminente.",
+      "💡 La ceremonia de sellado del sobre amarillo es SOLEMNE — no apresure. 30 segundos de silencio después de sellar. Música suave de puerto. Vinculación visible con sobres S4 + USB S5 (caja del instructor con todos los sobres juntos).",
+      "💡 Si un aprendiz muestra ansiedad por S12: respuesta tranquilizadora en L2 '*You designed today. Monday you execute. Eleven sessions of training are inside the envelope. You are not improvising — you are using your repertoire. Trust the design.*'",
+      "💡 Anote en su notebook 1-2 aprendices que mostraron mayor reto en WHILE D Pitch ensayo (>30 seg de silencio sin presentar) — contacto 1:1 al cierre de la sesión + 5 min de coaching pre-S12 el lunes en la mañana antes de empezar.",
+      "💡 Los 25 USB con audios Pitch grabados (Ronda 2 WHILE D) entran a la caja del instructor — se devuelven a los aprendices al inicio de S12 para auto-monitoreo final pre-presentación.",
+      "💡 Si queda tiempo (<3 min): aplauso grupal de transición de aprendiz a Mission Designer. No subestime el valor simbólico — es la antesala del cierre del programa.",
+      "💡 Recordar que S12 abre el sobre amarillo — es la apertura del Maritime Learning Contract firmado en S1 + el portafolio completo. Powerful moment de cierre del arco narrativo del programa de 100h."
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "WHILE A — Brief CML CARRIER comprehension + Q&A en parejas (PM-3.5 fase 1)",
+      "items": [
+        {
+          "pregunta": "Vessel particulars del CML CARRIER",
+          "respuesta_correcta": "CML CARRIER · 220m LOA · 33m beam · 2.500 TEU · Origen Shanghai · Destino Buenaventura",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "No evaluado — comprehension diagnostic"
+        },
+        {
+          "pregunta": "ETA y ETD del CML CARRIER",
+          "respuesta_correcta": "ETA 06:15 · ETD 18:15 (12h turn-around)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Cargo discharge y cargo load targets",
+          "respuesta_correcta": "1.800 contenedores discharge · 1.600 contenedores load",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Berth assignment y tide window",
+          "respuesta_correcta": "Berth 4 · tide window 06:00 a 19:00",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE B — Berthing Coordination Memo design (PM-3.5 fase 2.1)",
+      "items": [
+        {
+          "pregunta": "¿Cuántas secciones tiene el Memo?",
+          "respuesta_correcta": "4 (Vessel Particulars · Berthing Window · Coordination Roles · Contingency Plan)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Qué markers gramaticales debe usar?",
+          "respuesta_correcta": "already / yet / just / ever / never (Gr 11 ext markers · ≥3 ocurrencias)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿En qué sección debe usar voz pasiva?",
+          "respuesta_correcta": "Sección 2 — Berthing Window (≥3 oraciones en voz pasiva: cargo is being inspected · pilot is being boarded · lines are being secured)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿En qué sección debe usar occupational structures?",
+          "respuesta_correcta": "Sección 3 — Coordination Roles (≥3 estructuras: I am responsible for · I specialize in · I coordinate · I supervise · I report to)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿En qué sección debe usar modales?",
+          "respuesta_correcta": "Sección 4 — Contingency Plan (≥2 modales: should · must · could · might para contingencias)",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE C — Radio Log template extendido (PM-3.5 fase 2.2)",
+      "items": [
+        {
+          "pregunta": "¿Cuántas entradas mínimas tiene el Radio Log?",
+          "respuesta_correcta": "5 entradas mínimas",
+          "alternativas": ["Aceptable hasta 8 entradas para fast finishers"],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuántas columnas tiene el template extendido?",
+          "respuesta_correcta": "6 columnas: Time · Channel · Summary · Decision · Action by · Status",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuáles son los 3 canales del Radio Log?",
+          "respuesta_correcta": "yard · bridge · customs (mismo patrón S7 reciclado)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Qué modales debe usar en columna Decision?",
+          "respuesta_correcta": "should · must · could · might (≥4 modales distintos en las 5 entradas)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuáles son los 2 ítems del pair cross-check final?",
+          "respuesta_correcta": "(1) ¿Coherente con vessel particulars del Memo? (2) ¿Coherente con contingency plan del Memo?",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE D — Ensayo Pitch Profesional 3 min × 3 rondas (PM-3.5 fase 2.3)",
+      "items": [
+        {
+          "pregunta": "¿Cuántas secciones tiene el Pitch?",
+          "respuesta_correcta": "4 secciones cronometradas: Intro 30s + Funciones habituales 60s + Funciones momentáneas 60s + Cierre 30s con tag question",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuántas rondas de ensayo?",
+          "respuesta_correcta": "3 rondas: Ronda 1 parejas · Ronda 2 grabación rotativa · Ronda 3 triada con observador",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Qué debe contener la Sección 4 (Cierre)?",
+          "respuesta_correcta": "1 tag question abierta al panel (ej: 'The plan is complete, isn't it?' · Gr 16 producción activa anticipo S12)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Dónde se guarda el audio grabado de Ronda 2?",
+          "respuesta_correcta": "USB del instructor · entra al portafolio Misión Final S12 (junto con Inspection Report S4 + audios NATO S5)",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE E — Feedback diferido FLUENCY + integración portfolio (PM-3.5 fase 2.4)",
+      "items": [
+        {
+          "pregunta": "¿Cuántas muestras se proyectan en LIVE ZONE?",
+          "respuesta_correcta": "3-5 muestras representativas (1 Memo · 1 Radio Log · 1 fragmento Pitch grabado · sin nombrar autores)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cómo vota la clase cada muestra?",
+          "respuesta_correcta": "Marcadores verde (correcto) o rojo (a revisar) levantados · sin nombres · sin juicio individual",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Qué entra en el sobre amarillo del portafolio Misión Final S12?",
+          "respuesta_correcta": "(1) Berthing Coordination Memo final · (2) Radio Log final · (3) USB con audio Pitch grabado",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuándo se abre el sobre amarillo?",
+          "respuesta_correcta": "S12 — CML Port Turnaround Mission · ceremonial reapertura junto con sobre Maritime Learning Contract S1 + Inspection Report S4 + USB audios NATO S5",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WRAP-UP — Exit Ticket auto-evaluación 4 ítems",
+      "items": [
+        {
+          "pregunta": "¿Cuántos ítems tiene el Exit Ticket?",
+          "respuesta_correcta": "4 ítems Sí/No (Memo completo? · Radio Log coherente? · Pitch ensayado 3 veces? · Tag question producida?) + 1 frase libre en L2",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuántas horas autónomas se asignan?",
+          "respuesta_correcta": "2.33 horas (≈140 min): completar Memo final + Radio Log final + 3 ensayos cronometrados frente a espejo + auto-revisión audio Ronda 2 + reflexión personal escrita",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "En WHILE A: identificar 2 datos adicionales del Brief no cubiertos por las 8 preguntas guía (ej: vessel flag · previous port · cargo nature) + escribirlos en LIVE ZONE para enriquecer la cohorte.",
+      "En WHILE B: agregar 2 contingencias adicionales en sección 4 del Memo (ej: cargo damage · medical emergency on board · port labor disruption) con modales should/must/could/might.",
+      "En WHILE C: extender el Radio Log a 7-8 entradas cubriendo el timeline 06:00-18:15 completo (incluir entradas de mediodía + descanso de equipos + crew shift change).",
+      "En WHILE D: ensayar el Pitch en 4ta ronda con video grabación + auto-monitoreo de body language (postura · gestos · contacto visual).",
+      "En WHILE E: voluntariarse para que su Memo / Radio Log / Pitch fragmento sea proyectado como muestra (con consentimiento explícito · sin juicio).",
+      "Rol de peer tutor en preparación Pitch Ronda 1: ayudar a un compañero a estructurar bullets de las 4 secciones (sin escribir por él · solo modelar estructura).",
+      "Crear 1 tag question adicional NO usada en su Pitch para regalársela a un compañero (ej: '*The customs inspection is on schedule, isn't it?*')."
+    ],
+    "more_support_needed": [
+      "Tiempo extra en WHILE A (hasta 80 min) si la lectura del Brief es lenta — acompañamiento individual del instructor en consulta 1:1 silenciosa señalando datos críticos en el Brief sin traducir.",
+      "En WHILE B — permitir que el Memo se redacte primero en bullets (sin oraciones completas) · luego en oraciones con apoyo del Word Wall + Reference Cards. Reducir requisito a 3 secciones (no 4) si la presión cognitiva es alta · sección 4 se completa en autónomo.",
+      "En WHILE B — sentar al aprendiz cerca del Word Wall + Reference Cards en pared lateral · permitir que circule libremente para consultar.",
+      "En WHILE C — reducir Radio Log a 3 entradas mínimas (no 5) · cubrir solo bridge channel · las otras 2 entradas se completan en autónomo.",
+      "En WHILE D — permitir leer el Pitch del framework con bullets en Ronda 1 (no de memoria) · gradualmente reducir lectura en Ronda 2 y 3.",
+      "En WHILE D — reducir audio grabación Ronda 2 a 2 min (en lugar de 3) · cubrir solo Intro + Funciones habituales · Funciones momentáneas + Cierre se ensayan en autónomo.",
+      "En WHILE D — permitir 1 regrabación si el aprendiz lo solicita en los primeros 30s (afectivo · NO punitivo).",
+      "En WHILE E — permitir que el aprendiz NO sea voluntario para muestra plenaria (respeto a privacidad afectiva).",
+      "Contacto uno-a-uno al final de la sesión: '*¿Cómo te sientes ante S12? El lunes en la mañana podemos repasar tu pitch 5 min antes de la Misión. Trae tu USB.*' Coaching pre-S12 reservado para aprendices con ansiedad de presentación.",
+      "L1 dispensa quirúrgica: si un aprendiz se bloquea afectivamente >5 min sin producir, instructor permite 1 frase corta en L1 ('*¿Qué te detiene?*') seguida inmediatamente de retorno a L2 ('*OK — let's start with one word from the Word Wall*')."
+    ]
+  },
+  "instructor_self_check": [
+    "✓ ¿Mantuve L1 = 0% durante toda la sesión · usando recasting suave en L2 cuando aprendices produjeron español · sin sancionar · solo modelando?",
+    "✓ ¿Distribuí Tag Questions Cheat Sheet + Occupational Structures Reference Card al inicio de SET-UP (no al cierre) para que los recursos estuvieran visibles toda la sesión?",
+    "✓ ¿Mantuve mi rol de MONITOR/FACILITADOR durante WHILE B-C-D · NO recasting individual · NO driller · solo facilitador 1:1 cuando aprendices solicitaron explícitamente en L2?",
+    "✓ ¿La selección de muestras para WHILE E recast colectivo fue DELIBERADA y BALANCEADA (1 marker correcto · 1 disonante · 1 voz pasiva correcta · 1 modal disonante · 1 tag question correcta) sin nombrar autores?",
+    "✓ ¿La ceremonia de sellado del sobre amarillo del portafolio Misión Final S12 tuvo silencio + solemnidad + vinculación visible con sobres S4 Inspection Report + USB S5 audios NATO en la caja del instructor?"
+  ],
+  "activity_logistics": {
+    "espacio": "Aula-taller con mesas grandes (1 por aprendiz · espaciamiento taller para diseño autónomo) + acceso a biblioteca consultable de SMCP/textbook + 5 estaciones de grabación rotativas para Ronda 2 Pitch + Word Wall completo (50+ tarjetas Bloques 1+2+3+4) en pared lateral + Maritime Word Wall pared lateral · Mapa Terminal Buenaventura A2 con sticker piloto en Pilot Boarding Point + Diagrama Ship Overview A2 + Diagrama VHF Channel 16 A2 (desde S5) + CML CARRIER scenario poster A2 (NUEVO desde S11) en muros frontales y laterales. Tag Questions Cheat Sheet en 5 mini-posters distribuidos por el aula. Sample Pitches Modelo en biblioteca consultable (2-3 archivos audio + transcripciones impresas). English Zone reactivada con cinta azul marítima en piso (desde S1) + nueva señal proyectada en color rojo grande: 'L1 = 0% TODAY · L2 EXCLUSIVE'. Mesa al frente reservada para entrega ceremonial Tag Questions Cheat Sheet + Occupational Structures Reference Card al inicio + entrega ceremonial sobres amarillos del portafolio Misión Final al cierre WHILE E.",
+    "agrupamiento": "Plenaria → Individual silencioso (Brief reading WHILE A · Memo design WHILE B · Radio Log design WHILE C · auto-monitoreo audio Ronda 2) → Parejas heterogéneas (Q&A WHILE A · cross-check WHILE C · Ronda 1 Pitch WHILE D) → Triada (Ronda 3 Pitch WHILE D) → Plenaria (recast colectivo WHILE E + integración portfolio + WRAP-UP). Transiciones explícitas con Teacher Talk corto (max 30 seg cada cambio). Movimiento físico entre estaciones de grabación durante Ronda 2 WHILE D (5 estaciones rotativas para 25 aprendices · 4 min cada uno con buffer).",
+    "recursos": [
+      "PM-3.5 (fases 1-2 ABP) Misión Final CML CARRIER worksheet impreso (Brief + Memo template + Radio Log template + Pitch framework + Self-check)",
+      "Brief CML CARRIER detallado A4 (impreso + proyectado · vessel particulars + berthing window + cargo + contingencias)",
+      "Berthing Coordination Memo template A4 (4 secciones)",
+      "Radio Log template extendido A3 (5 filas · 6 columnas)",
+      "Pitch Profesional 3 min framework A4 (4 secciones cronometradas)",
+      "Tag Questions Cheat Sheet A5 (10 ejemplos canónicos contextualizados al puerto)",
+      "Occupational Structures Reference Card A5 (5 estructuras canónicas con stress + IPA)",
+      "Sample Pitches Modelo (2-3 audios + transcripciones impresas · biblioteca consultable)",
+      "SMCP Reference Card laminada (permanente desde S5 · 1 por aprendiz)",
+      "NATO Phonetic Alphabet Reference Card laminada (permanente desde S5 · 1 por aprendiz)",
+      "Maritime Word Wall pared lateral con 50+ tarjetas (Bloques 1+2+3+4 · 25 key_vocabulary + 30+ SMCP key phrases + NATO completo + 5 occupational structures)",
+      "Mapa Terminal Buenaventura A2 con sticker piloto · Diagrama Ship Overview A2 · Diagrama VHF Channel 16 A2 · CML CARRIER scenario poster A2 (NUEVO)",
+      "Computadores o tablets para diseño Memo + Radio Log (1 por aprendiz · 5 de respaldo · plantillas digitales pre-cargadas)",
+      "5 estaciones de grabación rotativas (celulares + grabadora digital + USB del instructor + audífonos para auto-monitoreo)",
+      "Cronómetro grande visible en pantalla + 12 cronómetros pequeños (1 por pareja para ensayo Pitch cronometrado)",
+      "Marcadores 3 colores (verde/amarillo/rojo) para WHILE A marcado comprensión (1 set por aprendiz)",
+      "Marcadores verde/rojo para voto colectivo WHILE E (1 set por aprendiz)",
+      "Bolígrafo verde + rojo del instructor para recast colectivo en LIVE ZONE",
+      "Sobres amarillos sellables (1 por aprendiz · portafolio Misión Final S12) + cinta del instructor para sellado",
+      "Caja del instructor con sobres S4 Inspection Report + USB S5 audios NATO (continuidad portfolio · vinculación simbólica)",
+      "Música instrumental marítima MUY baja (sonidos de puerto suaves · gaviotas · radios distantes · grúas) durante WHILE B + C + D Ronda 2",
+      "Cinta azul marítima English Zone (desde S1)"
+    ],
+    "tiempo": {
+      "set_up": 25,
+      "while_total": 295,
+      "break": 15,
+      "wrap_up": 25,
+      "total_directo_min": 360,
+      "autonomo_min": 140,
+      "autonomo_horas": 2.333333,
+      "total_aprendiz_horas": 8.333
+    },
+    "plan_b": "Si <50% asistencia: aplazar 3ra ronda de ensayo Pitch a S12 warm-up · usar tiempo extra en redacción individual del Memo + Radio Log con instructor en consulta 1:1 silenciosa. Si computadores no disponibles: usar planillas físicas A3 del Memo + Radio Log template impresos · degradación aceptable porque S11 prioriza producto verificable sobre formato digital. Si Brief CML CARRIER no se imprimió: instructor proyecta el brief y lee en voz alta 1 vez en L2 · luego permite Q&A 10 min antes de iniciar diseño. Si la cohorte se atora con tag questions (>30% no produce 1 tag question correcta en pitch): reducir cierre Sección 4 a 1 tag question modelada por instructor en plenaria · documentar ajuste y consolidar en S12 warm-up. Si Reference Cards SMCP/NATO + occupational structures + tag questions cheat sheet no están listas: usar mini-cards A5 manuscritas con stress marcado + foto en celular del aprendiz como respaldo. Si energía baja en ensayo pitch (>40% lee del papel sin levantar la vista): pausar 5 min · contar 1 anécdota corta de un Port Operations Trainee colombiano presentando ante panel naviero internacional · reactivar narrativa profesional. Si sample pitches modelo no disponibles: instructor improvisa 1 pitch modelo de 90s en plenaria como demonstration (instructor en rol Andrea avanzada) — degradación aceptable porque el modelo se da en bullets, no en script literal. Si estaciones de grabación fallan (5 estaciones para 25 aprendices): reducir Ronda 2 a grabación con celular propio del aprendiz · USB del instructor recolecta archivos al final. Si energía afectiva alta (aprendiz llora · ansiedad pre-S12): respetar · ofrecer 1 min en silencio · luego frase tranquilizadora en L2 '*Eleven sessions inside you. Trust the design.*'"
+  },
+  "totals_check": {
+    "set_up": 25,
+    "while_bloque_a": 60,
+    "while_bloque_b": 65,
+    "break": 15,
+    "while_bloque_c": 65,
+    "while_bloque_d": 75,
+    "while_bloque_e": 30,
+    "wrap_up": 25,
+    "total_min": 360,
+    "check_result": "EXACTO 360 min directos (6h) + 140 min autónomo (≈2.33h: completar Memo final + Radio Log final + 3 ensayos cronometrados frente a espejo + auto-revisión audio Ronda 2 + reflexión personal) = 500 min totales = 8.33h aprendiz S11. Coherente con header.duracion_sesion_min de pm-3-1 + horas autónomas pm-3-1.overview_table[10].autonomous_hours=2.333333. Suma SET-UP 25 + WHILE A 60 + WHILE B 65 + BREAK 15 + WHILE C 65 + WHILE D 75 + WHILE E 30 + WRAP-UP 25 = 360 min ✓"
+  },
+  "rap_status": "S11 completada (preliminary · pendiente Gate Humano 3) — Apertura Bloque Interno 4 (RAP-04 · A2.1 transferencia) fase exploratoria/diseño ABP cumplida. NO genera evidencia formal (E1-E6 cerradas en S3-S6 + S10 · próxima E-Misión es S12 cierre del programa con Rúbrica ABP 6 criterios C01-C13 5 pts). 25 portafolios Misión Final sellados en sobres amarillos (Memo + Radio Log + USB audio Pitch) integrados con sobres S4 Inspection Report + USB S5 audios NATO en caja del instructor. 3 grupos gramaticales Intro activados productivamente (Gr 4 ext superlativos receptivo · Gr 11 ext markers already/yet/just/ever/never productivo en Memo · Gr 17 ext occupational structures Intro guiado con Reference Card visible). Gr 1-15 todos en aplicación libre. 5 occupational structures internalizadas (responsible for · specialize in · coordinate · supervise · report to). Tag questions producción mínima emergente (anticipo S12 Gr 16 producción activa). 25 audios Pitch Ronda 2 grabados en USB del instructor. L1 = 0% por primera vez en el programa. Umbral S12 (CML Port Turnaround Mission · simulación 3h + pitch 3 min ante panel + Q&A con tag questions + reflexión metacognitiva 'What I see now that I did not see on Day 1' · E-Misión 5 pts) abierto.",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[10]",
+    "__contract_version__": "v2.5.1 (mapping per pm-3-1.pm_3_2_propagation_contract)",
+    "fpi_block": "3.4 Transferencia (Diseño + Desempeño preparatorio)",
+    "grammar_groups": {
+      "intro": [
+        {
+          "group_id": "Gr 4 (extension)",
+          "group_name": "Superlativos (the most critical operation is berthing)",
+          "nivel_activacion": "Intro · receptivo (sólo identificación en Brief comprehension + opcional en Memo sección 4 · producción se difiere a S12 Q&A panel)",
+          "ejemplo_en_sesion": "'Berthing is THE MOST CRITICAL operation. Communication is THE MOST IMPORTANT skill. The CML CARRIER is THE LARGEST vessel this week.'"
+        },
+        {
+          "group_id": "Gr 11 (extension)",
+          "group_name": "Presente perfecto + marcadores already/yet/just/ever/never",
+          "nivel_activacion": "Intro · productivo obligatorio (≥3 ocurrencias en Memo sección 4 + ≥1 en Radio Log entrada + ≥3 en Pitch sección momentánea)",
+          "ejemplo_en_sesion": "'I have ALREADY inspected the cargo. The pilot has JUST received the report. The vessel hasn't berthed YET. Have you EVER worked on a 12-hour turn-around?'"
+        },
+        {
+          "group_id": "Gr 17 (extension)",
+          "group_name": "Estructuras ocupacionales (I'm responsible for / My role involves / I have experience with / I am skilled at / I specialize in)",
+          "nivel_activacion": "Intro · guiado con Reference Card visible (≥3 estructuras en Memo sección 3 + ≥3 en Pitch sección habitual · autonomía completa se logra en S12 ensayo final)",
+          "ejemplo_en_sesion": "'I'm responsible for coordinating yard operations. My role involves supervising container handling. I have experience with VHF communication. I am skilled at SMCP coordination. I specialize in tripartite berthing.'"
+        }
+      ],
+      "consolida": [],
+      "aplica": [
+        {
+          "group_id": "Gr 1-15 (todos)",
+          "group_name": "Todos los grupos previos en aplicación libre integrada",
+          "nivel_activacion": "Aplica",
+          "ejemplo_en_sesion": "Memo + Radio Log + Pitch integran productivamente todo lo previo: be/have/do (Gr 1) · plurales a/an (Gr 3) · imperativo (Gr 5) · IN at/on/next to/near (Gr 14) · imperativo negativo + must (Gr 5neg + Gr 6) · Wh-questions (Gr 8) · pasado simple (Gr 9) · presente continuo (Gr 10) · pasado continuo (Gr 12 anticipo) · voz pasiva presente (Gr 13) · conectores and/but/or/because/so/although (Gr 15)"
+        }
+      ],
+      "carga_check": "2/2 Intro DECLARADOS + 1 Intro adicional Gr 17 ext gestionado como 'Intro receptivo + producción guiada' con Reference Card visible (no autónoma · autonomía S12) — ESCALAR adaptación per pm-3-1.pm0_alignment_by_session[10]._grammar_carga_violation_note. 14 Aplica todos previos (Gr 1-15) en aplicación libre. PM-0 §9.2 ✓ con nota de gestión.",
+      "_grammar_carga_violation_note": "S11 introduce 3 nuevos grupos (Gr 4 ext superlativos · Gr 11 ext markers · Gr 17 ext occupational structures). Decisión Outline (heredada de pm-3-1.pm0_alignment_by_session[10]): Gr 4 ext (superlativos) + Gr 11 ext (markers) producción obligatoria; Gr 17 ext (occupational structures) Intro guiado con Reference Card visible — autonomía completa se logra en S12 ensayo final. La 'violación' es deliberada porque S11 es bisagra de transferencia ABP — el aprendiz debe recibir el toolkit completo de ocupación profesional antes de la Misión Final S12.",
+      "active_groups_detail_S11": [
+        "Gr 4 ext — receptivo (Brief comprehension · opcional Memo · producción S12)",
+        "Gr 11 ext — productivo obligatorio (Memo sección 4 + Radio Log + Pitch sección momentánea)",
+        "Gr 17 ext — Intro guiado con Reference Card (Memo sección 3 + Pitch sección habitual)",
+        "Gr 1-15 — Aplica libre integrado en los 3 deliverables"
+      ]
+    },
+    "feedback": {
+      "mode": "FLUENCY dominante",
+      "rationale": "ABP fase exploratoria — el aprendiz despliega recursos sin interrupción. Feedback diferido post-task. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_4 (fluency dominante). Rol docente = monitor/facilitador (NO driller). El feedback colectivo en WHILE E muestra calibración cohorte sin juicio individual.",
+      "accuracy_techniques": [
+        "Recasting suave SOLO si aprendiz solicita explícitamente en L2 ('*Can I check this against the Reference Card?*')",
+        "Recast colectivo en LIVE ZONE WHILE E con bolígrafo verde/rojo (5 muestras representativas · sin nombrar autores · clase calibra por descubrimiento)"
+      ],
+      "fluency_techniques": [
+        "Feedback diferido post-task (al final de la sesión WHILE E · NO durante diseño WHILE B/C ni ensayo WHILE D)",
+        "Rol docente = MONITOR/FACILITADOR (NO driller · NO recast individual · solo facilitador 1:1 cuando aprendices solicitan)",
+        "Peer consultation durante diseño (cross-check pares WHILE C últimos 15 min · 2 ítems coherencia)",
+        "Ensayo en parejas con auto-stress-checking (Ronda 1 + Ronda 3 WHILE D)",
+        "Auto-corrección con Reference Cards + Word Wall + biblioteca consultable (autonomía progresiva)",
+        "Auto-monitoreo de audio grabación Ronda 2 con audífonos (autoevaluación reflexiva sin instructor)"
+      ],
+      "mixed_techniques": [
+        "Recast colectivo WHILE E con voto verde/rojo de la cohorte (delayed accuracy con visibility colectiva sin juicio individual)"
+      ],
+      "notes": "S11 es la primera sesión con FLUENCY dominante PURO (S7 fue MIXTO transición · S8-S10 mezclaron · S11 va full FLUENCY). Accuracy se difiere a recast plenaria post-task · NO interrumpe flujo individual durante diseño WHILE B/C ni ensayo WHILE D. Rol docente = MONITOR/FACILITADOR es el shift más crítico del programa — el aprendiz lidera · el instructor confía en el repertorio."
+    },
+    "l1_management": {
+      "l1_percentage": 0,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_4.S11 — 0% (L2 exclusivo · PM-0 §9.1)",
+      "l1_rationale": "Bloque Interno 4 — L2 exclusivo. El aprendiz lidera diseño en L2. Instructor sólo facilita en L2. Primera sesión del programa con L1 = 0% · culmina la curva descendente desde S1 (25%) → S2 (20%) → S3 (15%) → S4 (12%) → S5 (12%) → S6 (10%) → S7 (5%) → S8 (3%) → S9 (2%) → S10 (1%) → S11 (0%) → S12 (0%). Recasting suave en L2 cuando aprendices producen español · sin sancionar · solo modelar autocorrección.",
+      "english_zone_declaration": "Permanente desde S1 — reactivada al inicio SET-UP con énfasis máximo: cinta azul marítima en piso visible · círculo 🔵 en tablero · NUEVO recordatorio en color rojo grande proyectado: 'L1 = 0% TODAY · L2 EXCLUSIVE · You lead the design in English'. Reforzada verbalmente en SET-UP + WHILE B + WHILE D.",
+      "l1_allowed_for": [
+        "Dispensa quirúrgica en differentiation more_support_needed: si un aprendiz se bloquea afectivamente >5 min sin producir, instructor permite 1 frase corta en L1 ('*¿Qué te detiene?*') seguida inmediatamente de retorno a L2 ('*OK — let's start with one word from the Word Wall*'). Caso excepcional · NO regla.",
+        "Reflexión escrita personal en autónomo (privada · NO entregable): '*¿Qué versión de mí entró a esta aula el Día 1? ¿Qué versión de mí ejecutará la Misión el Día 12?*' (puede ser en español o inglés · íntima · prepara la reflexión metacognitiva final de S12)."
+      ],
+      "reduction_strategy": "S12 → 0% L1 (Misión Final 100% L2 · cierre del curso · sólo reflexión metacognitiva final permite L1 apartado personal post-evaluación) per pm-0-context.l1_percentage_per_session.single_guide_12_sessions"
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "responsible",
+          "ipa": "/rɪˈspɒnsəbəl/",
+          "tonica": "SEGUNDA (resPONSible)"
+        },
+        {
+          "word": "specialize",
+          "ipa": "/ˈspɛʃəlaɪz/",
+          "tonica": "PRIMERA (SPECialize)"
+        },
+        {
+          "word": "coordinate",
+          "ipa": "/koʊˈɔːrdɪneɪt/",
+          "tonica": "SEGUNDA (coOORdinate)"
+        },
+        {
+          "word": "supervise",
+          "ipa": "/ˈsuːpərvaɪz/",
+          "tonica": "PRIMERA (SUperVIZE)"
+        },
+        {
+          "word": "experience",
+          "ipa": "/ɪkˈspɪəriəns/",
+          "tonica": "SEGUNDA (exPErience)"
+        }
+      ],
+      "techniques": [
+        "Sin drilling formal — el aprendiz monitorea su propio output con autonomía progresiva",
+        "Consulta libre a Reference Cards + Word Wall + diccionario cuando necesita (biblioteca consultable del aula)",
+        "Ensayo en parejas con auto-stress-checking (Ronda 1 + Ronda 3 WHILE D · cronómetro pequeño + Reference Cards a la vista)",
+        "Auto-monitoreo de audio grabación Ronda 2 con audífonos (autoevaluación reflexiva post-grabación · marca 1 fortaleza + 1 reto a pulir)",
+        "Modelo único del instructor en SET-UP activacion_occupational_structures_drill (Choral repetition + clase produce con eco · 4 voluntarios · 30 seg cada uno) — única instancia de drilling en S11"
+      ],
+      "board_marking": "Las 5 occupational structures quedan permanentes en COLUMNA LATERAL IZQUIERDA del tablero con stress en MAYÚSCULA + IPA en pequeño debajo · cada estructura con 1 ejemplo del contexto Port Operations Trainee. Maritime Word Wall pared lateral las replica como tarjetas con foto + IPA + stress.",
+      "notes": "S11 es la primera sesión SIN drilling formal — el aprendiz monitorea su propio output con autonomía progresiva. PM-0 §5.13 aplicado con autonomía progresiva (PM-0 §8 + shifts_metodologicos.Bloque_Interno_4 · andamiaje mínimo). El stress de las 5 occupational structures es CRÍTICO para profesionalismo del Pitch Sección 2 (funciones habituales) y Sección 3 (funciones momentáneas) — pero la responsabilidad del monitoreo se transfiere al aprendiz.",
+      "source": "PM-0 §5.13 — aplicado con autonomía progresiva (PM-0 §8 shifts_metodologicos.Bloque_Interno_4)"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "responsible",
+        "specialize",
+        "coordinate",
+        "supervise",
+        "experience"
+      ],
+      "factors_applied": [
+        "Use",
+        "Creativity",
+        "Self-expression",
+        "Synergy",
+        "Spaced_repetition"
+      ],
+      "operationalization": "Use: producción 1 página Memo + Radio Log completo (5+ entradas) + ensayo Pitch 3 min × 3 ensayos cronometrados. Creativity: aprendiz selecciona detalles del CML CARRIER scenario (peso · clima · incidentes · contingencias · timeline detallado) — cada Misión es única. Self-expression: pitch refleja experiencia personal del aprendiz (rol auto-definido · funciones habituales propias · cierre con tag question propia). Synergy: integra escrito (Memo + Radio Log) + oral (Pitch) + estructuras 4 bloques internos (Bloque 1 vocabulario portuario base · Bloque 2 SMCP/NATO · Bloque 3 berthing tripartito · Bloque 4 occupational structures + tag questions). Spaced repetition: 25 key_vocabulary en uso final + 5 occupational structures + 30+ SMCP key phrases + NATO completo · efecto máximo después de 11 sesiones de práctica distribuida.",
+      "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS)"
+    },
+    "physical_environment": "Aula-taller con mesas grandes (1 por aprendiz · espaciamiento taller para diseño autónomo) + acceso a biblioteca consultable de SMCP/textbook + 5 estaciones de grabación rotativas para Ronda 2 Pitch (celulares + grabadora digital + USB del instructor + audífonos para auto-monitoreo) + Word Wall completo (50+ tarjetas Bloques 1+2+3+4) en pared lateral. Tag Questions Cheat Sheet en 5 mini-posters distribuidos por el aula. Sample Pitches Modelo en biblioteca consultable (2-3 archivos audio + transcripciones impresas). Mapa Terminal Buenaventura A2 con sticker piloto + Diagrama Ship Overview A2 + Diagrama VHF Channel 16 A2 + CML CARRIER scenario poster A2 (NUEVO desde S11) en muros frontales y laterales. English Zone reactivada con cinta azul marítima en piso (desde S1) + nueva señal proyectada en color rojo grande: 'L1 = 0% TODAY · L2 EXCLUSIVE'. Mesa al frente reservada para entregas ceremoniales (Tag Questions Cheat Sheet + Occupational Structures Reference Card al inicio · sobres amarillos del portafolio Misión Final al cierre). Caja del instructor con sobres S4 Inspection Report + USB S5 audios NATO + S11 sobres amarillos sellados (continuidad portafolio). Música instrumental marítima MUY baja durante WHILE B + WHILE C + WHILE D Ronda 2 (sonidos de puerto suaves: gaviotas + radios distantes + grúas) — refuerza inmersión profesional sin distraer.",
+    "cefr_descriptor_focus": {
+      "subnivel": "A2.1 (transferencia)",
+      "habilidad_principal": "produccion_escrita + produccion_oral",
+      "descriptor_activo": "Pitch profesional formal de 3 min: introducción + funciones habituales + funciones momentáneas + cierre. Tag questions producción activa (anticipo S12 Gr 16 Intro). Berthing Coordination Memo 1 página integrando 4 secciones con markers + voz pasiva + occupational structures + modales. Radio Log 5 entradas reciclando Listening tripartito S7 + Berthing Speaking S8.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_4_S10-S12_RAP04_A2.1.produccion_oral + produccion_escrita"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Natural — aprendiz lidera su ritmo (no input ralentizado · no andamiaje temporal del instructor · solo cronómetros visibles para Pitch Ronda 2)",
+      "extension_textos": "Memo 1 página (200-280 palabras · 4 secciones) + Radio Log 5+ entradas (timestamps 06:00-18:15 · 6 columnas) + Pitch 3 min con 4 secciones (~270-330 palabras hablados con pausas naturales A2.1)",
+      "andamiaje": "Mínimo — Reference Cards SMCP + NATO + occupational structures + tag questions cheat sheet + Word Wall completo + sample pitches modelo · sin script propio · sin frames pre-rellenados · biblioteca consultable libre",
+      "rol_docente": "Monitor + facilitador — NO driller · NO recast individual · solo facilitador 1:1 cuando aprendices solicitan explícitamente en L2 · feedback diferido post-task colectivo en WHILE E",
+      "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_4"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "B8 — Andamiaje mínimo (transferencia · Reference Cards + Word Wall + sample pitches · sin script ni frames)",
+        "C2 — Tiempo realista para ABP 2 fases (S11 diseño + S12 ejecución · 360 min × 2 sesiones para Misión Final completa)",
+        "C3 — Lógica PM precedente: S2-S9 Apropiación + S10 Evaluación → S11-S12 Transferencia (arco narrativo del programa cerrado)",
+        "D1 — Contribuye a Misión Final (E-Misión 5 pts S12 · los 3 deliverables S11 son input crítico de Rúbrica ABP 6 criterios C01-C13)",
+        "D2 — Can-do 'Pitch profesional 3 min' transferido al CML CARRIER (Bloque Interno 4 · A2.1 · produccion_oral) + Memo + Radio Log productos verificables",
+        "B5 — Gestión L1 al 0% (primera sesión del programa · culmina curva descendente)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 S11 siembra los 6 más relevantes. Checklist completo se completó post-S10 Consolidation Day en autoevaluación 22-item. S11 cierra simbólicamente el ciclo de evidencias del programa (Inspection Report S4 + audios NATO S5 + Memo + Radio Log + audio Pitch S11) en sobre amarillo del portafolio Misión Final S12. La primera sesión del programa con L1 = 0% es bisagra crítica de transferencia."
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    },
+    "downstream_consumers": [
+      "PM-3.3 Canva Slides — referencias a Brief CML CARRIER vessel image + Buenaventura terminal layout + 12h timeline + 5 occupational structures slide + Tag Questions Cheat Sheet poster + 4 secciones Pitch framework + Word Wall completo",
+      "PM-3.4 Workbook — Misión Final ABP Chapter 11 (Memo template + Radio Log template + Pitch framework + 140 min autónomos: Memo final pulido + Radio Log final pulido + 3 ensayos cronometrados frente a espejo + auto-revisión audio Ronda 2)",
+      "PM-3.6 Activity Logistics — A11.1.1 to A11.1.5 IDs derivados de WHILE A-E (Brief comprehension · Memo design · Radio Log design · Pitch ensayo 3 rondas · Feedback diferido + integración portfolio)",
+      "PM-2.11 Check 14 — validación propagación estrategia_didactica + tecnicas[] + pm0_protocol cross-ref (3 grammar groups Intro: Gr 4 ext + Gr 11 ext + Gr 17 ext · L1 0% · stress focus 5 occupational structures + responsible/specialize/coordinate/supervise/experience · success_vocab subset · feedback FLUENCY dominante)",
+      "PM-3.2 S12 Build-Out — heredera del bridge ejecutivo S11 (3 deliverables sellados en sobre amarillo + 25 audios Pitch Ronda 2 grabados + repertorio L1 0% consolidado + tag questions emergentes anticipo Gr 16 producción activa) → Misión Final CML Port Turnaround 3h + pitch ante panel + Q&A con tag questions + reflexión metacognitiva 'What I see now that I did not see on Day 1' · E-Misión 5 pts Rúbrica ABP 6 criterios C01-C13"
+    ]
+  }
+}

@@ -1,0 +1,814 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.5",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
+  "session": 10,
+  "session_name": "Consolidation Day — The Maritime Operations Check",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide": "G1 — The Maritime Operations Pro",
+  "guia_numero": 1,
+  "programa": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo": "12340002",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-4.2"
+  ],
+  "habilidades_foco": [
+    "Reading evaluativa (5 ítems sección Reading · 5 pts)",
+    "Writing evaluativa (5 ítems sección Writing · 5 pts)",
+    "Listening evaluativa (5 ítems sección Listening con audio 2 escuchas · 5 pts)",
+    "Vocabulary evaluativa (5 ítems sección Vocabulary · 5 pts)",
+    "Grammar evaluativa (5 ítems sección Grammar Gr 1-15+17 Aplica · 5 pts)"
+  ],
+  "habilidades_soporte": [
+    "Speaking metacognitivo (debrief grupal post-cuestionario · sin evaluación)"
+  ],
+  "cefr": "A2.1 (entrada Bloque Interno 4 · evaluación retrospectiva A1.2-A2.0 acumulada S2-S9)",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-29",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "preliminary",
+  "_status_preliminary_rationale": "Build-Out S10 generado por subagente creativo PM-3.2 · Gate Humano 3 (aprobación Playbook) pendiente · Sergio confirma cambiando a 'completed' tras revisión de coherencia con PM-4.2 (Cuestionario Consolidado E6) + pm-3-1.overview_table[9] + pm0_alignment_by_session[9].",
+  "momento_sena": "3.3 Apropiación → 3.4 Transferencia (consolidación · evaluación · Misión Final inicio)",
+  "estrategia_didactica": "Evaluación Formativa Integrada — Cuestionario S6 + retroalimentación + metacognición + Misión Final brief",
+  "justificacion_didactica": "S10 es la sesión bisagra del curso 100h: cierra el Bloque Interno 3 (RAP-03 · A2.0) con un Cuestionario Consolidado E6 de 25 ítems × 1 pt que evalúa de manera integrada las 5 habilidades evaluables (Reading + Writing + Listening + Vocabulary + Grammar) acumuladas en S2-S9, y abre simultáneamente el Bloque Interno 4 (RAP-04 · A2.1) con el Brief operacional de la Misión Final CML CARRIER entregado por el Capitán Restrepo en rol. La estrategia dominante es Evaluación Formativa Integrada (no sumativa pura) — el cuestionario funciona como diagnóstico de cierre Apropiación + insumo para reflexión metacognitiva 22-item PM-0 §7 que el aprendiz hará en autónomo. L1 ≤ 0% (Bloque Interno 4 · L2 exclusivo · PM-0 §9.1) — por primera vez Captain Restrepo entrega su brief 100% en inglés con apoyo visual robusto. Sin enseñanza gramatical nueva (0/2 Intro · 14 grupos en Aplica). El objetivo pedagógico es transformar 9 sesiones de Apropiación en evidencia consolidada (E6 portafolio) y proyectar el aprendiz hacia la fase de Transferencia ABP (S11-S12).",
+  "session_header": {
+    "titulo": "SESSION 10: Consolidation Day — The Maritime Operations Check",
+    "subtitulo": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Build-Out — Playbook v2.5",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-4.2 — Cuestionario Consolidado E6 (25 ítems × 1 pt · 5 secciones × 5 ítems · Reading + Writing + Listening + Vocabulary + Grammar)"
+    ],
+    "habilidades_foco": [
+      "Reading · Writing · Listening · Vocabulary · Grammar (las 5 habilidades evaluables del cuestionario E6)"
+    ],
+    "habilidades_soporte": [
+      "Speaking metacognitivo (debrief grupal post-cuestionario)"
+    ],
+    "objetivos_pedagogicos": [
+      "(1) Demostrar dominio progresivo A1.2 → A2.0 en las 5 habilidades evaluables mediante el Cuestionario Consolidado E6 (25 ítems · 1 hora 30 min).",
+      "(2) Co-evaluar el cuestionario con clave parcial guiada por el instructor (15 min) reconociendo patrones de error globales en tablero.",
+      "(3) Reflexionar metacognitivamente sobre las primeras 9 sesiones aplicando el prompt 22-item PM-0 §7 (autoevaluación de criterios B/C/D).",
+      "(4) Recibir el Brief operacional de la Misión Final CML CARRIER (Capitán Restrepo en rol) entendiendo los 4 componentes ABP: Qué (CML Port Turnaround) · Por qué (escala estratégica Buenaventura) · Cómo (VHF intake + Berthing tripartito + Pitch 3 min ante panel) · Cuándo (S11 diseño + S12 ejecución).",
+      "(5) Iniciar planeación canvas de la Misión Final con sus 3 prioridades del Learning Contract S1 (sobres amarillos sellados re-abiertos en S12) como brújula personal."
+    ],
+    "plan_b": "Si <50% asistencia: posponer co-evaluación a S11 warm-up · usar el tiempo extra para que los presentes lean el Brief CML CARRIER en parejas y empiecen el canvas de planeación. Si audio sección Listening falla: usar transcript impreso como input visual + leer en voz alta dos veces (instructor en rol Captain Lopera). Si Capitán Restrepo no puede asistir presencial al brief: video pre-grabado 5 min + Q&A en parejas con instructor moderando. Si proyector falla durante brief: usar mapa A2 Terminal Buenaventura + ficha CML CARRIER impresa A3 + tablero blanco para timeline 12h.",
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk pre-modelado bilingüe MÍNIMO (L1 0% objetivo · sólo si instrucción de cuestionario requiere precisión evaluativa). Duración suma exacta 360 min directos + 140 min autónomo (≈2.33h). English Zone permanente — Bloque Interno 4 entrada (L2 exclusivo). Cuestionario E6 PRE-IMPRESO 25 ítems con clave del instructor sellada en sobre — abrir ANTE LA CLASE en momento de co-evaluación."
+  },
+  "materials_checklist": [
+    {
+      "item": "Cuestionario Consolidado E6 impreso (PM-4.2 · 25 ítems en 5 secciones × 5 ítems · 1 hr 30 min · instrucciones bilingües sólo en encabezado · ítems 100% L2)",
+      "cantidad": "1 set por aprendiz (estimado 25 sets) + 3 sets de respaldo + 1 clave del instructor en sobre sellado",
+      "verificado": false
+    },
+    {
+      "item": "Audio sección Listening del Cuestionario E6 (90s · VHF dialogue Captain Lopera + Bosun Romero · interferencia ligera autorizada · 2 escuchas permitidas)",
+      "cantidad": "1 archivo cargado en proyector + bocinas probadas + cronómetro entre escuchas (30s pausa)",
+      "verificado": false
+    },
+    {
+      "item": "Hoja de respuestas E6 (bubble sheet o cuadrícula impresa · 25 cuadros para marcar respuesta + campo nombre + campo total)",
+      "cantidad": "1 por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Portafolio template físico (carpeta amarilla con 6 separadores: E1 Reading + E2 Writing + E3 Listening + E4 Speaking + E5 Language Functions + E6 Cuestionario Consolidado · 1 página índice + 1 página reflexión)",
+      "cantidad": "1 carpeta por aprendiz · separadores pre-impresos",
+      "verificado": false
+    },
+    {
+      "item": "Rúbrica de Autoevaluación 22-item PM-0 §7 impresa (criterios A · B · C · D con checkbox + campo evidencia + campo justificación)",
+      "cantidad": "1 por aprendiz · entrega para autónomo",
+      "verificado": false
+    },
+    {
+      "item": "Brief operacional CML CARRIER (Capitán Restrepo · 1 página A4: vessel data + ETA Buenaventura + cargo manifest + 12h turnaround scope + tareas 1-5: VHF intake · Berthing tripartito · Pitch profesional · Q&A · Reflexión)",
+      "cantidad": "1 brief por aprendiz + 1 brief ampliado A3 muro frontal",
+      "verificado": false
+    },
+    {
+      "item": "Canvas Misión Final (formato A3 · 4 cuadrantes Qué / Por qué / Cómo / Cuándo · ejemplo pre-llenado parcial como modelo)",
+      "cantidad": "1 canvas por aprendiz · entrega para autónomo",
+      "verificado": false
+    },
+    {
+      "item": "Tablero resumen S2-S9 pre-preparado (papelógrafo grande con 8 filas · 1 por sesión · columnas: tema + estructura clave + survival words · sin huecos)",
+      "cantidad": "1 papelógrafo grande pegado al muro lateral",
+      "verificado": false
+    },
+    {
+      "item": "Sobres amarillos Learning Contract S1 (firmados día 1 · NO abrir todavía · referencia visual durante reflexión metacognitiva · re-apertura ceremonial es S12)",
+      "cantidad": "Caja con 1 sobre por aprendiz · visible al lado del Brief CML CARRIER",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Word Wall completo Bloques 1+2+3 (25 términos Toolbelt + 30+ SMCP key phrases + occupational structures preview) · referencia visual durante cuestionario",
+      "cantidad": "Word Wall existente (cubrir si se considera ventaja indebida o dejar visible si la consigna es 'evaluación de uso · no de memoria')",
+      "verificado": false
+    },
+    {
+      "item": "SMCP Reference Card laminada + NATO Phonetic Alphabet Reference Card (permanente desde S5 · permitido durante sección Listening · cubierto durante sección Grammar)",
+      "cantidad": "1 set por aprendiz · permanente",
+      "verificado": false
+    },
+    {
+      "item": "Cronómetro grande visible en pantalla (1h30min cuestionario + transiciones marcadas)",
+      "cantidad": "1 timer proyectado",
+      "verificado": false
+    },
+    {
+      "item": "Marcadores rojos + verdes (co-evaluación · errores rojos · aciertos verdes)",
+      "cantidad": "1 set por pareja",
+      "verificado": false
+    },
+    {
+      "item": "Mapa Terminal de Contenedores Buenaventura A2 (muro frontal permanente · referencia para Brief CML CARRIER)",
+      "cantidad": "1 muro frontal",
+      "verificado": false
+    },
+    {
+      "item": "English Zone — cinta azul marítimo permanente + cartel 'L2 EXCLUSIVO · Bloque Interno 4'",
+      "cantidad": "Zona ya señalizada · refuerzo cartel",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO dividido en 5 zonas para S10. (1) ESQUINA SUPERIOR DERECHA — ENGLISH ZONE 🔵 con cartel adicional 'L2 EXCLUSIVO · Bloque Interno 4 · S10-S12'. (2) CENTRO SUPERIOR — Título 'SESSION 10 · Consolidation Day · The Maritime Operations Check' + Objetivo del día: 'Show what you know. Plan what comes next.' (3) COLUMNA IZQUIERDA — Stress marking de meta-vocabulario evaluativo: reVIEW /rɪˈvjuː/ · inSTRUCtion /ɪnˈstrʌkʃən/ · coRRECT /kəˈrɛkt/ · EVidence /ˈɛvɪdəns/ · TURNaround /ˈtɜːrnəraʊnd/. (4) CENTRO INFERIOR — LIVE ZONE para co-evaluación post-cuestionario (instructor anota patrones de error globales con marcador rojo + aciertos colectivos con verde · sólo letras de respuestas correctas A/B/C/D + 1 línea de explicación por sección). (5) COLUMNA DERECHA — Roadmap S10-S12: 'S10 Today · Cuestionario E6 + Brief CML CARRIER → S11 Diseño Memo + Pitch ensayo → S12 Ejecución Misión Final + Pitch ante panel'. Mapa Buenaventura A2 muro frontal + Tablero resumen S2-S9 muro lateral + Word Wall completo + Brief A3 + sobres amarillos S1 visibles.",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:30",
+      "duracion_min": 30,
+      "bloque": "SET-UP",
+      "actividad": "Welcome + roadmap S10-S12 + instrucciones cuestionario + ICQ + recordatorio Reference Cards permitidas/cubiertas",
+      "agrupacion": "Whole class plenary",
+      "notas": "Energía calmada · tono evaluativo profesional · L2 exclusivo. Instructor proyecta mapa Reference Cards permitidas por sección."
+    },
+    {
+      "tiempo": "0:30-2:00",
+      "duracion_min": 90,
+      "bloque": "WHILE A",
+      "actividad": "PM-4.2 Cuestionario Consolidado E6 — 25 ítems · 5 secciones (Reading + Writing + Listening + Vocabulary + Grammar) · 18 min por sección promedio",
+      "agrupacion": "Individual · silencio académico · mesas separadas",
+      "notas": "Instructor circula en silencio · NO corrige · gestiona audio Listening (2 escuchas con 30s pausa entre escuchas). Sección Listening al minuto 0:54-1:12."
+    },
+    {
+      "tiempo": "2:00-2:20",
+      "duracion_min": 20,
+      "bloque": "BREAK",
+      "actividad": "Receso activo (café · estiramiento · descompresión emocional post-evaluación)",
+      "agrupacion": "—",
+      "notas": "Instructor recoge cuestionarios resueltos · marca presencia · NO revela respuestas todavía · permite L1 libre durante receso."
+    },
+    {
+      "tiempo": "2:20-3:20",
+      "duracion_min": 60,
+      "bloque": "WHILE B",
+      "actividad": "Co-evaluación guiada con clave parcial — 5 secciones · 12 min por sección · errores comunes en tablero · aciertos celebrados",
+      "agrupacion": "Whole class plenary · ítem por ítem con peer-check en parejas",
+      "notas": "Instructor abre sobre clave ANTE la clase · cada aprendiz auto-corrige su hoja · pareja chequea suma. Patrones de error en tablero rojo."
+    },
+    {
+      "tiempo": "3:20-4:00",
+      "duracion_min": 40,
+      "bloque": "WHILE C",
+      "actividad": "Reflexión metacognitiva 22-item PM-0 §7 — introducción + 5 ítems modelados en clase + 17 ítems de tarea autónoma",
+      "agrupacion": "Whole class plenary → Individual silencioso",
+      "notas": "Instructor modela completado de ítems A1+B3+B5+C4+D2 con su propia rúbrica · aprendices empiezan los suyos · resto en autónomo."
+    },
+    {
+      "tiempo": "4:00-4:15",
+      "duracion_min": 15,
+      "bloque": "WHILE D",
+      "actividad": "Transición ceremonial — Cierre cuestionario E6 + apertura Bloque Interno 4 + entrada Capitán Restrepo (instructor en rol)",
+      "agrupacion": "Whole class plenary",
+      "notas": "Cambio de configuración aula (mesas individuales → mesas en U para brief) · instructor cambia gorra/chaleco para señalar rol Capitán Restrepo · momento simbólico."
+    },
+    {
+      "tiempo": "4:15-5:15",
+      "duracion_min": 60,
+      "bloque": "WHILE E",
+      "actividad": "Brief Misión Final CML CARRIER (Capitán Restrepo en rol) — entrega · 4 componentes ABP · Q&A · planeación canvas inicial",
+      "agrupacion": "Whole class plenary → Individual canvas",
+      "notas": "Capitán Restrepo entrega brief 100% L2 · responde Q&A · aprendices reciben canvas A3 + completan cuadrante 'Qué' en clase."
+    },
+    {
+      "tiempo": "5:15-6:00",
+      "duracion_min": 45,
+      "bloque": "WRAP-UP",
+      "actividad": "Exit ticket + asignación autónoma 22-item + canvas Misión Final + preview S11 + cierre energético",
+      "agrupacion": "Whole class plenary → Individual",
+      "notas": "Cerrar reconociendo el hito: '9 sesiones detrás · 3 sesiones de transferencia adelante.' Recordar sobres amarillos S1 (re-apertura S12)."
+    }
+  ],
+  "set_up": {
+    "duracion_min": 30,
+    "warm_up": {
+      "nombre": "The Maritime Operations Check — Roadmap & Briefing Protocol",
+      "pasos": [
+        "Instructor recibe en la puerta saludando en L2: 'Good morning, Port Operations Trainees. Today is Consolidation Day. Big day. Big work.' (sonrisa profesional · tono calmado).",
+        "Cada aprendiz recibe Hoja de Respuestas E6 + lápiz #2 + borrador. NO recibe el cuestionario todavía (entrega en bloque WHILE A).",
+        "Instructor dirige a sus puestos individuales (mesas separadas · configuración examen). Música instrumental ambient muy baja.",
+        "Instructor proyecta el roadmap S10-S12: 'Today: 90 minutes test · 1 hour co-evaluation · then we meet Captain Restrepo for your Final Mission Brief.' Señala el cartel L2 EXCLUSIVO.",
+        "Instructor explica las 5 secciones del cuestionario con cronómetro: Reading 18 min · Writing 18 min · Listening 18 min con audio · Vocabulary 18 min · Grammar 18 min (90 min total).",
+        "Instructor explica Reference Cards permitidas/cubiertas: 'Section Reading + Writing: Word Wall covered. Section Listening: SMCP + NATO Cards visible. Section Vocabulary + Grammar: only your brain.' Muestra el cubrimiento físico (tela sobre Word Wall durante secciones 1-2 y 4-5).",
+        "ICQ con respuestas grupales: '¿Reference Cards en Listening?' · '¿Word Wall en Reading?' · '¿Tiempo total cuestionario?' · '¿Cuántas escuchas en Listening?' (Verifica comprensión antes de empezar.)",
+        "Instructor cierra SET-UP: 'Two reminders. First — be honest. This is for you. Second — when you finish a section early, review. Do not rush. Ready? In 30 seconds I distribute the test.'"
+      ],
+      "duration_min": 22
+    },
+    "teacher_talk_opening": "*Good morning, team. Welcome to Session 10. Today is special — it is Consolidation Day. We have walked together for 9 sessions. Today we check the journey: a 25-question test about everything we have built. Reading. Writing. Listening. Vocabulary. Grammar. 5 sections. 18 minutes each. 90 minutes total. After the test, we co-evaluate together — no surprises, no judgment. Then — Captain Restrepo arrives with your Final Mission Brief. Big day. Are you ready? Bueno equipo. Buenos días — pero solo este saludo en español. From now on — English only. Bloque Interno 4 starts today.*",
+    "objective": "Al final de S10, el aprendiz (1) ha completado el Cuestionario Consolidado E6 de 25 ítems con su mejor evidencia honesta de las 9 sesiones previas; (2) ha co-evaluado con la clave del instructor reconociendo patrones de error globales y aciertos colectivos; (3) ha modelado el inicio de su autoevaluación 22-item PM-0 §7 con 5 criterios completados en clase; (4) ha recibido y comprendido el Brief operacional CML CARRIER del Capitán Restrepo (4 componentes ABP); (5) ha iniciado el cuadrante 'Qué' del Canvas Misión Final con su 3 prioridades del Learning Contract S1 como brújula personal.",
+    "icq": [
+      "*How many sections in the test?* → Esperan: 5 / Five sections",
+      "*How many minutes per section?* → Esperan: 18 / 18 minutes",
+      "*Can I use the SMCP card during Listening?* → Esperan: Yes / Yes during Listening only",
+      "*What happens after the test?* → Esperan: Co-evaluation / We check answers together",
+      "*Who arrives at 4:15?* → Esperan: Captain Restrepo / Captain Restrepo with Final Mission Brief"
+    ],
+    "facilitation_notes": [
+      "💡 No prometer 'fácil' ni 'difícil' — describir el cuestionario neutralmente como 'check honest of 9 sessions'.",
+      "💡 Si un aprendiz muestra ansiedad pre-cuestionario: acercarse en voz baja: 'Breathe. You have 9 sessions in your bag. Trust them.'",
+      "💡 Verificar audio Listening 5 min antes de WHILE A — el fallo técnico aquí compromete la sesión completa."
+    ],
+    "checkpoint": "✓ 5 ICQ completados con respuesta correcta de mayoría (≥80%). Si <80% en alguna pregunta crítica (ej: tiempo total · escuchas Listening): repetir explicación + ICQ específica. Verificación visual: todos los aprendices en mesa individual con hoja de respuestas + lápiz visible."
+  },
+  "while": {
+    "duracion_min": 265,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "Cuestionario Consolidado E6 — 25 Ítems · 5 Secciones (PM-4.2)",
+        "duracion_min": 90,
+        "worksheet_ref": "PM-4.2 · Cuestionario Consolidado E6 (5 secciones × 5 ítems × 1 pt = 25 pts)",
+        "agrupacion": "Individual · silencio académico · mesas separadas",
+        "objetivo": "Demostrar dominio progresivo A1.2 → A2.0 acumulado en S2-S9 mediante un cuestionario de 25 ítems integrados que evalúa Reading + Writing + Listening + Vocabulary + Grammar con criterios observables binarios. Producir la evidencia E6 (5 pts hacia portafolio · pre-requisito de E-Misión S12).",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor distribuye cuestionario impreso PM-4.2 boca abajo a cada puesto. NO empezar hasta señal.",
+          "2. Instructor explica con cronómetro proyectado: 'When I say Go, you turn over the paper. Section 1 Reading first. 18 minutes. Then Writing. Then Listening with audio. Then Vocabulary. Then Grammar. Cronómetro grande indica tiempo restante por sección.'",
+          "3. Recordatorio Reference Cards cubierto/visible por sección (instructor cubre Word Wall con tela visible para secciones 1-2 · descubre para sección 3 Listening · cubre nuevamente 4-5).",
+          "4. Señal: 'Ready · Set · GO.' Aprendices voltean cuestionario y empiezan Sección Reading (18 min).",
+          "5. Sección Reading (0:30-0:48): Texto adaptado UNIT 1 SHIP OVERVIEW recortado · 5 ítems comprensión · 4 multiple choice + 1 short answer.",
+          "6. Sección Writing (0:48-1:06): Prompt 'Write 5 sentences about a vessel using be + imperative + IN' · evaluado por checklist 5 criterios.",
+          "7. Sección Listening (1:06-1:24): Instructor descubre SMCP + NATO Reference Cards · play audio VHF dialogue (90s) · 30s pausa · play audio (90s) · 5 ítems multiple choice + 1 short answer.",
+          "8. Sección Vocabulary (1:24-1:42): Instructor cubre Reference Cards nuevamente · 5 ítems matching/labeling sobre 25 términos Toolbelt + SMCP + occupational preview.",
+          "9. Sección Grammar (1:42-2:00): 5 ítems integrados Gr 1-15+17 (be · plural · imperative · IN · must · should · cont · perfect · cond · pasiva · Wh · conectores) · gap-fill + transformation.",
+          "10. A los 2:00: cronómetro suena. Instructor: 'Pencils down. Hand in your sheet plus the question paper. Thank you.'"
+        ],
+        "teacher_talk_instruction": "*OK team. Test time. 90 minutes. 5 sections. 18 minutes each. Cronómetro big and visible. Reading first. Then Writing. Then Listening with audio — I will start the audio at 1 hour 6 minutes mark. Vocabulary fourth. Grammar last. Reference Cards: covered for sections 1, 2, 4, 5. Visible only for section 3 Listening. Silent work. Music off. No questions during the test — raise your hand only for technical issues. When you finish a section early, review your answers. Do not rush. Ready? Set? GO.*",
+        "icq": [
+          "*Can I talk during the test?* → Esperan: No / Silent",
+          "*When can I see the SMCP card?* → Esperan: Section 3 / During Listening",
+          "*How many times will the audio play?* → Esperan: 2 / Twice",
+          "*If I finish early, what do I do?* → Esperan: Review / Check answers"
+        ],
+        "answer_key_inline": {
+          "nota_general": "Cuestionario E6 evaluado con clave del instructor sellada en sobre · abrir ANTE la clase en WHILE B co-evaluación · 25 ítems × 1 pt binario (correcto/incorrecto · sin parcial salvo Writing por checklist).",
+          "reading_section_5_items": [
+            "Item 1 (gist): A — The text is about a container ship.",
+            "Item 2 (detail): C — Bow is at the front.",
+            "Item 3 (vocab in context): B — 'Hull' = the body of the ship.",
+            "Item 4 (inference): D — Andrea visits the vessel for inspection.",
+            "Item 5 (short answer): 'Stern' (1 word · accept variations: 'the stern', 'rear of ship')."
+          ],
+          "writing_section_5_items": [
+            "Checklist criterios (1 pt cada): (1) usa 'be' ≥1 vez · (2) usa imperativo ≥1 vez · (3) usa preposición IN ≥1 vez · (4) usa ≥3 ship parts del Toolbelt · (5) ortografía y mayúsculas correctas mayoría.",
+            "Sample response (5 pts): 'The vessel is at Berth 4. Inspect the hull carefully. The cargo is in the container yard. Stand on the deck. Check the bow and stern.'"
+          ],
+          "listening_section_5_items": [
+            "Item 1 (speaker): B — Captain Lopera speaks to the pilot.",
+            "Item 2 (location): A — The vessel is at the anchorage.",
+            "Item 3 (SMCP key phrase heard): C — 'Wilco'.",
+            "Item 4 (NATO call sign): D — 'Bravo Echo Four' (BE4).",
+            "Item 5 (short answer): 'standby' (accept: 'stand by · standby on channel · standby on 16')."
+          ],
+          "vocabulary_section_5_items": [
+            "Item 1 (matching): bollard ↔ post on quay for mooring lines.",
+            "Item 2 (matching): crane ↔ machine that lifts containers.",
+            "Item 3 (label): bow = front · stern = rear · bridge = control center.",
+            "Item 4 (definition): 'berth' = the place where a vessel docks.",
+            "Item 5 (occupational structure): 'I am responsible for coordinating yard operations' (target structure recognized · 1 pt for correct subject + verb agreement)."
+          ],
+          "grammar_section_5_items": [
+            "Item 1 (Gr 1 be): 'The vessel ___ at Berth 4' → IS.",
+            "Item 2 (Gr 5 imperative + Gr 14 IN): 'Place the cargo ___ the warehouse' → IN.",
+            "Item 3 (Gr 6 modal must): 'Pilots ___ wear safety vests' → MUST.",
+            "Item 4 (Gr 11 present perfect): 'The crane ___ already ___ the container' → HAS · LIFTED.",
+            "Item 5 (Gr 12 conditional 1): 'If the weather is calm, the vessel ___ at 0800' → WILL BERTH / BERTHS."
+          ],
+          "total_max": 25,
+          "umbral_aprobado": "60% = 15 pts (per PM-4.1 estándar SENA · cuestionario consolidado · sin nota numérica · sólo 'aprobado / no aprobado')"
+        },
+        "facilitation_notes": [
+          "💡 NO circular leyendo respuestas durante el cuestionario · sólo circular para gestionar audio + atender problemas técnicos.",
+          "💡 Si un aprendiz termina muy temprano (<60 min): NO permitir salir del aula · invitar a 'review section by section' · entregar hoja sólo al cierre 2:00.",
+          "💡 Audio Listening crítico — verificar 5 min antes con headphones de respaldo. Plan B = leer transcript en voz alta dos veces si falla."
+        ],
+        "checkpoint": "✓ Al cierre 2:00: 25 de 25 (o N de N) hojas de respuestas entregadas con nombre + total preliminar (auto-suma del aprendiz). Instructor confirma recibo verbal: 'Got yours. Got yours. Got yours.' (1 confirmación por hoja). Si falta entrega: pedir explícitamente.",
+        "transition": "*Pencils down. Sheets in. Thank you. Now — break time. 20 minutes. Walk. Stretch. Coffee. We meet back here at sharp 2:20 for the part most teachers don't show: the answer key. We open the envelope together.*",
+        "tecnica_didactica": "Evaluación Formativa Integrada — Cuestionario consolidado 25 ítems en silencio académico"
+      },
+      {
+        "letra": "B",
+        "nombre": "Co-Evaluación Guiada — Patrones de Error + Aciertos Colectivos",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-4.2 · Clave del instructor (sobre sellado abierto ANTE la clase) · Hojas de respuestas devueltas a aprendices",
+        "agrupacion": "Whole class plenary · ítem por ítem con peer-check en parejas",
+        "objetivo": "Co-evaluar el cuestionario E6 con clave parcial del instructor · cada aprendiz auto-corrige su hoja · pareja verifica suma · patrones de error globales se anotan en tablero rojo · aciertos colectivos se celebran en tablero verde · transformar la evaluación en aprendizaje formativo.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor devuelve hojas de respuestas a sus dueños (NO corregidas · solo el original con la auto-suma).",
+          "2. Instructor abre sobre clave ANTE la clase (gesto físico · 'I open it now · we read together').",
+          "3. Sección por sección (12 min cada una · 5 secciones × 12 min = 60 min). Por cada sección: (a) instructor lee la respuesta correcta · (b) aprendices marcan ✓ rojo o ✗ verde en su hoja · (c) cuenta pareja verifica · (d) instructor pregunta '¿Cuántos acertaron Item 1?' por mano alzada · (e) si <50% aciertan: instructor explica el error patrón en tablero rojo + da regla · (f) si >80% aciertan: celebra en tablero verde.",
+          "4. Patrones de error comunes identificados (input para S11-S12 reciclaje): tablero rojo (ej: 'Hull confused with hold' / 'Past perfect not yet active' / 'IN vs ON discrimination').",
+          "5. Aciertos colectivos celebrados: tablero verde (ej: 'NATO spelling: 100% Brazo!' / 'SMCP literacy: strong!').",
+          "6. Cada aprendiz suma total final · escribe en hoja · firma con bolígrafo · entrega definitivamente.",
+          "7. Cierre WHILE B: 'Your scores are yours. Use them. Average is X. We grow from here. Big or small score — same Final Mission ahead.'"
+        ],
+        "teacher_talk_instruction": "*OK team. Welcome back. Now — the part nobody hides. We open the answer key together. Section by section. 12 minutes per section. Listen to the correct answer. Mark your sheet — red X for wrong, green check for right. Your partner verifies your sum. Then I ask 'how many got Item 1 right?' — hands up. We learn from patterns, not from points. Section 1 Reading first. Ready?*",
+        "icq": [
+          "*Do I correct my own paper or my partner's?* → Esperan: My own / I correct mine, partner verifies",
+          "*Red mark means...?* → Esperan: Wrong / Incorrect",
+          "*How many sections do we co-evaluate?* → Esperan: 5 / Five"
+        ],
+        "answer_key_inline": {
+          "nota": "Co-evaluación · respuestas entregadas oralmente por el instructor sección por sección · ver answer_key_inline del WHILE A para listado completo de los 25 ítems · patrones de error globales se anotan en tablero LIVE ZONE durante este bloque.",
+          "patrones_error_esperados_para_tablero_rojo": [
+            "Reading: 'Hull confused with hold/hole' (vocab discrimination)",
+            "Writing: 'Imperative omitted in 5 sentences' (uso bajo de imperativo)",
+            "Listening: 'Wilco vs Roger confusion' (SMCP discrimination)",
+            "Vocabulary: 'Bollard mismatched with crane' (port equipment confusion)",
+            "Grammar: 'has lifted vs lifted past simple' (perfect vs simple)"
+          ],
+          "aciertos_colectivos_esperados_para_tablero_verde": [
+            "NATO spelling: alta tasa por trabajo S5-S6",
+            "Be + ship parts: alta tasa por trabajo S2-S4",
+            "Imperative + IN: alta tasa por trabajo S4 inspection report",
+            "Modal must: alta tasa por trabajo S6 VHF",
+            "Conectores básicos: alta tasa por trabajo S9"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Mantener tono celebrativo · evitar lenguaje punitivo · cada error es 'data for S11-S12'.",
+          "💡 Si la mayoría falla un ítem (>70% error): tomar 2 min extra para mini-lección · gemini no afecta puntaje pero sirve insumo Misión Final.",
+          "💡 Patrones tablero rojo se transferirán a S11-S12 como 'foco de mejora ABP' · documentar fotográficamente."
+        ],
+        "checkpoint": "✓ 5 secciones co-evaluadas con tablero rojo (≥3 patrones) + tablero verde (≥3 aciertos colectivos) · todos los aprendices con hoja firmada + total entregada definitivamente. Si queda tiempo (<5 min): instructor permite preguntas individuales sobre ítems específicos.",
+        "transition": "*Numbers in. Patterns in. Now — the most important question of the day: what does this mean for YOU? Take out your 22-item self-assessment rubric. Let me show you 5 items as examples.*",
+        "tecnica_didactica": "Co-evaluación con clave parcial + Patrones de error globales en tablero (LIVE ZONE)"
+      },
+      {
+        "letra": "C",
+        "nombre": "Reflexión Metacognitiva 22-Item PM-0 §7 — Modeling + Inicio Individual",
+        "duracion_min": 40,
+        "worksheet_ref": "Rúbrica de Autoevaluación 22-item PM-0 §7 (criterios A · B · C · D)",
+        "agrupacion": "Whole class plenary → Individual silencioso",
+        "objetivo": "Modelar el completado de 5 ítems críticos de la rúbrica PM-0 §7 (A1 + B3 + B5 + C4 + D2) usando el cuestionario E6 como evidencia · luego aprendiz inicia individualmente los 17 ítems restantes (continuación en autónomo) · transformar el resultado del cuestionario en metacognición personal accionable.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor distribuye Rúbrica 22-item impresa (1 por aprendiz) + recordatorio de los 4 criterios: A (asignación CEFR) · B (gestión + andamiaje) · C (complejidad cognitiva) · D (alineación can-do/evidencia).",
+          "2. Instructor proyecta su PROPIA rúbrica diligenciada como modelo · explica 5 ítems clave: (a) A1 — '¿Subnivel A1.2-A2.0 coherente con el cuestionario?' · (b) B3 — '¿Fluency dominante o accuracy en mi auto-percepción S2-S9?' · (c) B5 — '¿Gestión L1 cumplida (≤25% S1, 0% S10)?' · (d) C4 — '¿Complejidad cognitiva apply en cuestionario E6?' · (e) D2 — '¿Can-do statements asociados a las 5 evidencias E1-E5?'.",
+          "3. Para cada ítem modelado: instructor proyecta su auto-puntaje (1-5) + evidencia (cita de cuestionario E6 o nota de bloque) + justificación (1 oración). Aprendices observan.",
+          "4. Aprendices reciben 15 min para completar los MISMOS 5 ítems en su propia rúbrica (A1 + B3 + B5 + C4 + D2) usando su cuestionario E6 firmado como evidencia primaria.",
+          "5. Pair share opcional (3 min): aprendiz comparte UN ítem con compañero si lo desea. Sólo escuchar · no aconsejar.",
+          "6. Cierre: 'The other 17 items — at home. This is your homework today. The full 22-item rubric goes in your portfolio with E6.'"
+        ],
+        "teacher_talk_instruction": "*Now — meta. We look at HOW we learned, not just WHAT. PM-0 §7 has 22 questions about you as a learner. I show you my own rubric — 5 items as a model. Then you complete the same 5. The other 17 — homework. 5 items modeled · 5 items individual · 17 items home. Ready?*",
+        "icq": [
+          "*How many items in the rubric?* → Esperan: 22 / Twenty-two",
+          "*How many do I complete in class?* → Esperan: 5 / Five",
+          "*How many at home?* → Esperan: 17 / Seventeen",
+          "*Do I share with my partner?* → Esperan: Optional / If I want"
+        ],
+        "answer_key_inline": {
+          "nota": "Self-assessment metacognitiva · NO hay respuesta correcta · cada aprendiz documenta su propia trayectoria. Modelo de instructor sirve como referencia procedimental no contenido.",
+          "5_items_modelados_en_clase": [
+            "A1 — Asignación subnivel CEFR coherente con desempeño cuestionario E6 (1-5 escala honesta)",
+            "B3 — Auto-percepción Fluency vs Accuracy en S2-S9 (1-5 escala)",
+            "B5 — Gestión L1 cumplida (S1 ≤25% · S10 0%) (1-5 escala con evidencia conductual)",
+            "C4 — Complejidad cognitiva en cuestionario E6 (1-5 escala apply level)",
+            "D2 — Can-do statements asociados a las 5 evidencias del portafolio (1-5 escala)"
+          ],
+          "17_items_para_autonomo": "Ver rúbrica PM-0 §7 completa entregada · cubre A2-A3 · B1-B2 · B4 · B6-B8 · C1-C3 · C5 · D1 · D3-D4."
+        },
+        "facilitation_notes": [
+          "💡 Modelar con honestidad · si instructor se auto-puntúa 3 en algún ítem · decirlo abiertamente · normaliza la honestidad evaluativa.",
+          "💡 NO forzar pair share · respetar a quien prefiera silencio post-cuestionario.",
+          "💡 La rúbrica completa se entrega en S11 warm-up · validación de presencia (entregó / no entregó) · NO evaluación de contenido."
+        ],
+        "checkpoint": "✓ 5 ítems modelados · 5 ítems iniciados individualmente por mayoría (≥80% con al menos 1 ítem auto-puntuado) · rúbrica completa + cuestionario E6 firmado entregado en sobre transparente para portafolio.",
+        "transition": "*Stop here. Save your rubric for tonight. Now — the most important moment of the day. We open Bloque Interno 4. We meet your future. Captain Restrepo is in the building.*",
+        "tecnica_didactica": "Reflexión metacognitiva guiada (modelado instructor + completado individual) + Autoevaluación criterios PM-0 §7"
+      },
+      {
+        "letra": "D",
+        "nombre": "Transición Ceremonial — Cierre Bloque Interno 3 + Apertura Bloque Interno 4",
+        "duracion_min": 15,
+        "worksheet_ref": "—",
+        "agrupacion": "Whole class plenary · cambio de configuración aula",
+        "objetivo": "Marcar simbólicamente el cierre del Bloque Interno 3 (Apropiación) y la apertura del Bloque Interno 4 (Transferencia ABP) mediante un cambio físico de la configuración del aula y un ritual de entrada del Capitán Restrepo (instructor en rol).",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor pide: 'Stand up. Move your tables. Let's make a U shape — facing the front. 3 minutes. Quiet work.' Reconfiguración mesas individuales → mesas en U.",
+          "2. Mientras los aprendices reconfiguran: instructor cambia gorra/chaleco/elemento simbólico para indicar rol Capitán Restrepo (ej: gorra de oficial · chaleco reflectivo amarillo · gafete con foto).",
+          "3. Cuando la U está lista: aprendices se sientan. Instructor (ahora Capitán Restrepo) entra desde la puerta · saluda con autoridad calmada: 'Good afternoon. Captain Iván Restrepo. Operations Director, Terminal de Contenedores Buenaventura. Pleasure to meet you, future Port Operations Trainees.'",
+          "4. Ritual simbólico: Capitán Restrepo señala el papelógrafo S2-S9 en muro lateral · 'You walked from Session 2 to Session 9. Reading. Writing. Listening. Speaking. Vocabulary. Grammar. Now — you walk into the real port.'",
+          "5. Capitán Restrepo señala los sobres amarillos del Learning Contract S1: 'Those envelopes — your contracts from Day 1. We open them in Session 12. After your Final Mission. Your future self will read them.'",
+          "6. Capitán Restrepo abre carpeta y saca Brief CML CARRIER A4 + brief A3 muro frontal: 'Now — your mission. CML CARRIER. Mother vessel from Shanghai. ETA Buenaventura: 12 hours. Your job: coordinate the turnaround. Welcome to your final exam — but more than an exam. Welcome to operations.'"
+        ],
+        "teacher_talk_instruction": "*OK team. 9 sessions behind us. 3 sessions ahead. Stand up. Move tables to U shape. 3 minutes. Quiet · respectful. This moment is symbolic. (Aprendices reconfiguran.) Sit. Eyes on the door. (Instructor sale 30 seg · cambia rol · entra como Capitán Restrepo.) Good afternoon. Captain Iván Restrepo, Operations Director, Terminal de Contenedores Buenaventura.*",
+        "icq": [
+          "*Who am I now?* → Esperan: Captain Restrepo / The Operations Director",
+          "*What is the vessel?* → Esperan: CML CARRIER / Mother vessel from Shanghai",
+          "*When do we open the S1 envelopes?* → Esperan: Session 12 / In Session 12 after the mission"
+        ],
+        "answer_key_inline": {
+          "nota": "Bloque ceremonial · sin respuesta evaluable · cierre simbólico de Apropiación + apertura simbólica de Transferencia.",
+          "elementos_simbolicos_clave": [
+            "Reconfiguración mesas individual → U shape (cierre evaluación · apertura colaboración)",
+            "Cambio rol instructor → Capitán Restrepo (apertura mundo profesional)",
+            "Señalización papelógrafo S2-S9 (reconocimiento trayectoria)",
+            "Recordatorio sobres amarillos S1 (continuidad cíclica del compromiso)",
+            "Entrega Brief CML CARRIER (apertura ABP Misión Final)"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 No apresurar la transición · 15 min es para que el cambio se SIENTA · respetar el silencio reverencial.",
+          "💡 Si algún aprendiz se ríe del rol Capitán Restrepo: respetar pero mantener compostura · 'In real port operations · Captain Restrepo is your boss. Practice the respect now.'",
+          "💡 Música opcional muy baja durante reconfiguración (instrumental cinemático tipo apertura) · refuerza el hito simbólico."
+        ],
+        "checkpoint": "✓ Mesas en U shape · todos sentados · Capitán Restrepo en rol · brief A3 visible muro frontal · sobres S1 visibles en caja al lado.",
+        "transition": "*(Voz de Capitán Restrepo en rol · ahora suave y profesional.) Welcome aboard, team. Open your folders. Brief CML CARRIER. Read with me.*",
+        "tecnica_didactica": "Transición ceremonial simbólica (cierre Bloque 3 · apertura Bloque 4 · entrada rol profesional)"
+      },
+      {
+        "letra": "E",
+        "nombre": "Brief Misión Final CML CARRIER — Capitán Restrepo Entrega Scope ABP",
+        "duracion_min": 60,
+        "worksheet_ref": "Brief operacional CML CARRIER (1 página A4) + Canvas Misión Final (4 cuadrantes A3)",
+        "agrupacion": "Whole class plenary → Individual canvas",
+        "objetivo": "Recibir y comprender el Brief operacional de la Misión Final CML CARRIER (4 componentes ABP: Qué/Por qué/Cómo/Cuándo) entregado por el Capitán Restrepo en rol · iniciar Canvas Misión Final completando el cuadrante 'Qué' (CML Port Turnaround scope) · proyectar el aprendiz hacia la fase de Transferencia (S11 diseño · S12 ejecución).",
+        "instrucciones_paso_a_paso": [
+          "1. Capitán Restrepo distribuye Brief CML CARRIER (1 por aprendiz). Lectura guiada en voz alta · 5 min: 'CML CARRIER. Mother vessel. Length 280m. Beam 32m. Cargo: 2,400 TEUs. Origin: Shanghai. Destination: Buenaventura. ETA: 0600 hours, in 12 hours. Your turnaround scope: full operations.'",
+          "2. Capitán Restrepo explica los 4 componentes ABP en tablero centro: (a) QUÉ — CML Port Turnaround = VHF intake + Berthing tripartito + Pitch profesional 3 min ante panel + Q&A · (b) POR QUÉ — Buenaventura es escala estratégica · CML CARRIER es vessel emblema · turnaround eficiente = empleabilidad inmediata · (c) CÓMO — S11 diseño Memo + Radio Log + ensayo Pitch · S12 ejecución 3h consolidada · (d) CUÁNDO — S11 (60% diseño) · S12 (40% ejecución + reflexión).",
+          "3. Q&A 10 min · aprendices preguntan en L2 · Capitán Restrepo responde profesionalmente. Preguntas frecuentes: '¿Quién es el panel?' (Capitán Restrepo + agente naviero externo) · '¿Cuántos minutos pitch?' (3 min + 2 Q&A) · '¿Vamos solos o en grupo?' (individual con apoyo materiales).",
+          "4. Capitán Restrepo distribuye Canvas Misión Final A3 (4 cuadrantes). Aprendices completan cuadrante 'Qué' · 15 min individual · usando 3 prioridades del Learning Contract S1 como brújula (sobres aún sellados pero recordatorio mental).",
+          "5. Capitán Restrepo cierra: 'Take this canvas home. Fill the other 3 quadrants. Memo template + Radio Log + Pitch framework arrive in Session 11. Today — you have your scope. Tomorrow — you design.'",
+          "6. Cambio de rol: instructor se quita gorra/chaleco · 'Sergio is back. Time for closing.' (transición suave a WRAP-UP)."
+        ],
+        "teacher_talk_instruction": "*(Voz Capitán Restrepo.) CML CARRIER. Mother vessel. 280 meters. 32 meters wide. 2,400 containers. Shanghai to Buenaventura. ETA 0600. 12 hours from now. Your scope: full turnaround. 4 things to know — Qué, Por qué, Cómo, Cuándo. Listen carefully. (5 min lectura.) Questions? (10 min Q&A.) Now — your canvas. Quadrant 1: Qué. 15 minutes. Use your Learning Contract priorities — those envelopes still sealed — as your compass. Quiet work.*",
+        "icq": [
+          "*What is CML CARRIER?* → Esperan: Mother vessel / Container ship from Shanghai",
+          "*ETA in how many hours?* → Esperan: 12 / Twelve",
+          "*Who is on the panel?* → Esperan: Captain Restrepo + naval agent / External shipping agent",
+          "*Pitch length?* → Esperan: 3 minutes + 2 Q&A",
+          "*Which quadrant do I complete in class?* → Esperan: Qué / What",
+          "*Where do I find Memo and Radio Log templates?* → Esperan: Session 11 / Next session"
+        ],
+        "answer_key_inline": {
+          "nota": "Brief comprensión receptiva · sin respuesta evaluable · canvas Misión Final cuadrante 'Qué' es producto procedimental no evaluado en S10 (evaluación final en S12 E-Misión).",
+          "4_componentes_ABP_canonicos": [
+            "QUÉ — CML Port Turnaround condensado 3h: VHF intake (10 min) + Berthing tripartito (45 min) + Pitch profesional 3 min ante panel + Q&A 2 min con tag questions + Reflexión metacognitiva 'What I see now that I did not see on Day 1'",
+            "POR QUÉ — Buenaventura como escala estratégica del Pacífico colombiano · CML CARRIER vessel emblema · turnaround eficiente = empleabilidad como Port Operations Trainee inmediata",
+            "CÓMO — S11 fase exploratoria/diseño (Berthing Coordination Memo 1 página + Radio Log template extendido + ensayo Pitch 3 min con tag questions + occupational structures Reference Card) · S12 fase ejecutiva 3h consolidada (simulación CML CARRIER ante panel + Q&A + reflexión)",
+            "CUÁNDO — S11 60% diseño · S12 40% ejecución · entrega final E-Misión 5 pts evaluada con Rúbrica ABP 6 criterios C01-C13"
+          ],
+          "cuadrante_que_canvas_esperado": "Aprendiz escribe en su canvas (en L2 con apoyo Reference Cards): 'CML Port Turnaround = VHF intake + Berthing tripartito + Pitch 3 min + Q&A + Reflexión'. Conecta con sus 3 prioridades S1 mediante 1 oración: 'My Priority 1 from Day 1 connects to ___ in this mission.'"
+        },
+        "facilitation_notes": [
+          "💡 Capitán Restrepo mantiene tono profesional sin caricaturizar · es un facilitador del mundo real entrando al aula, no un personaje de ficción.",
+          "💡 Si Q&A se extiende >10 min: cortar con elegancia: 'Excellent questions. Save the rest for Session 11. Now — canvas time.'",
+          "💡 Permitir consulta libre a Word Wall + Reference Cards durante completado canvas · es fase de diseño · L2 apoyado, no L2 examen."
+        ],
+        "checkpoint": "✓ Brief leído en voz alta + Q&A ≥3 preguntas respondidas + canvas A3 distribuido + cuadrante 'Qué' iniciado por mayoría (≥80% con al menos 3 líneas escritas) + cambio de rol instructor visible al final.",
+        "transition": "*(Voz de Sergio · sin gorra · sin chaleco.) OK team. Sergio back. Captain Restrepo is heading to the operations office now. We have 45 minutes for closing. Exit ticket time.*",
+        "tecnica_didactica": "Brief ABP entregado por rol profesional (Capitán Restrepo) + Canvas Misión Final cuadrante 'Qué' completado individualmente"
+      }
+    ],
+    "breaks": [
+      {
+        "tiempo": "2:00-2:20",
+        "duracion_min": 20,
+        "tipo": "Receso activo post-cuestionario (descompresión emocional + café + estiramiento)",
+        "notas": "L1 libre durante receso. Instructor recoge cuestionarios resueltos y los marca con presencia. NO revela respuestas todavía · respeta el suspenso evaluativo. Aprendices pueden hablar entre sí sobre lo que sintieron · NO sobre respuestas específicas (norma del receso evaluativo)."
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 45,
+    "exit_ticket": {
+      "tarea": "Exit Ticket S10 — 3 líneas en tarjeta 10×15 cm: (1) ONE thing I am proud of in my E6 questionnaire (vocabulary, grammar, listening — pick one), (2) ONE pattern of error I will work on for the Final Mission, (3) ONE word from the Brief CML CARRIER that I want to add to my Word Wall.",
+      "success_criteria": "Las 3 líneas completas. Línea 1 + Línea 2 en L2 (chunks aprendidos S2-S9). Línea 3 cita una palabra exacta del brief (ej: turnaround · scope · ETA · TEU · pitch · panel).",
+      "duration_min": 12
+    },
+    "teacher_talk_closing": "*Team. Today was huge. You took a 25-question test honestly. You co-evaluated openly. You met Captain Restrepo. You started your Canvas. You walked from Bloque 3 into Bloque 4. Big day. Tonight — finish the 22-item rubric. Fill the canvas quadrants 2, 3, 4 at home. Bring the canvas to Session 11. Memo template arrives Session 11. Pitch framework arrives Session 11. The envelopes from Day 1 — still sealed. We open them in Session 12. After your Mission. Big day. Well done, Port Operations Trainees. See you Session 11. ¡Hasta la próxima sesión! (Único momento permitido en español hoy · cierre afectivo.)*",
+    "trabajo_autonomo": {
+      "actividad": "Homework S10 → S11: (1) Completar los 17 ítems restantes de la Rúbrica de Autoevaluación 22-item PM-0 §7. (2) Completar los 3 cuadrantes restantes del Canvas Misión Final (Por qué · Cómo · Cuándo) usando el Brief CML CARRIER como guía. (3) Pre-revisar Word Wall completo Bloques 1+2+3 (≥40 términos) y SMCP Reference Card como preparación a S11 diseño Memo + Pitch.",
+      "instrucciones_detalladas": "1. Rúbrica 22-item: completar criterios A2-A3 + B1-B2 + B4 + B6-B8 + C1-C3 + C5 + D1 + D3-D4 con auto-puntaje 1-5 + evidencia (cita de bloque · cuestionario E6 · sesión específica) + justificación (1 oración). 2. Canvas Misión Final: cuadrante POR QUÉ — '¿Por qué este turnaround importa profesionalmente?' (3-5 oraciones); cuadrante CÓMO — '¿Cómo voy a coordinar VHF + Berthing + Pitch?' (3-5 oraciones · usar 5 master functions S9 como guía); cuadrante CUÁNDO — '¿Qué hago en S11 vs S12?' (timeline de 2 columnas). 3. Word Wall pre-revisión: leer en voz alta 40 términos cronometrando 5 min · marcar con ✓ los que recuerdo + ✗ los que necesito repasar.",
+      "entregable": "Rúbrica 22-item completa (entregable S11 warm-up) + Canvas Misión Final 4 cuadrantes (entregable S11 warm-up · validación de presencia) + Lista personal de 'palabras a repasar' del Word Wall (uso interno).",
+      "cuando_se_revisa": "S11 warm-up · entrega presencial de Rúbrica + Canvas en sobre transparente al portafolio · validación de PRESENCIA (entregó / no entregó · sin nota numérica) · revisión de calidad cuando portafolio se cierra en S12 con E-Misión.",
+      "tiempo_estimado_min": 140
+    },
+    "preview_next_session": "*Next session — Session 11 — is Mission Design Day. You receive: Berthing Coordination Memo template (1 page · 4 sections) + Radio Log extended template + Pitch Profesional 3 min framework + Tag questions cheat sheet + Occupational structures Reference Card (responsible for / specialize in / coordinate / supervise / report to). You design YOUR mission. Captain Restrepo monitors. Session 12 — you execute. Bring the canvas. Bring the rubric. Come ready to write and rehearse.*",
+    "facilitation_notes": [
+      "💡 Cierre con energía contenida pero positiva · S10 es una sesión emocionalmente intensa (evaluación + ceremonia) · validar el esfuerzo sin sobre-celebrar.",
+      "💡 Si queda tiempo (<3 min): mostrar foto del CML CARRIER real (vessel emblema) o video corto 30s de turnaround real Buenaventura · refuerza el contexto profesional del scope.",
+      "💡 Recordar sobres amarillos S1 al final · su existencia visible es ancla emocional + simbólica del compromiso del primer día."
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "WHILE A — Cuestionario Consolidado E6 · Sección Reading (5 ítems)",
+      "items": [
+        {"pregunta": "Item 1 (gist)", "respuesta_correcta": "A — The text is about a container ship.", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 2 (detail · ship parts)", "respuesta_correcta": "C — Bow is at the front.", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 3 (vocab in context)", "respuesta_correcta": "B — 'Hull' = the body of the ship.", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 4 (inference)", "respuesta_correcta": "D — Andrea visits the vessel for inspection.", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 5 (short answer)", "respuesta_correcta": "Stern", "alternativas": ["the stern", "rear of ship"], "puntos": 1}
+      ]
+    },
+    {
+      "actividad": "WHILE A — Cuestionario E6 · Sección Writing (5 criterios checklist)",
+      "items": [
+        {"pregunta": "Criterio 1 — usa 'be' ≥1 vez", "respuesta_correcta": "1 pt si presente · 0 si ausente", "alternativas": [], "puntos": 1},
+        {"pregunta": "Criterio 2 — usa imperativo ≥1 vez", "respuesta_correcta": "1 pt si presente · 0 si ausente", "alternativas": [], "puntos": 1},
+        {"pregunta": "Criterio 3 — usa preposición IN ≥1 vez", "respuesta_correcta": "1 pt si presente · 0 si ausente", "alternativas": [], "puntos": 1},
+        {"pregunta": "Criterio 4 — usa ≥3 ship parts del Toolbelt", "respuesta_correcta": "1 pt si ≥3 · 0 si <3", "alternativas": [], "puntos": 1},
+        {"pregunta": "Criterio 5 — ortografía y mayúsculas correctas mayoría (>80% palabras)", "respuesta_correcta": "1 pt si >80% · 0 si <80%", "alternativas": [], "puntos": 1}
+      ]
+    },
+    {
+      "actividad": "WHILE A — Cuestionario E6 · Sección Listening (5 ítems · audio 90s · 2 escuchas)",
+      "items": [
+        {"pregunta": "Item 1 (speaker identification)", "respuesta_correcta": "B — Captain Lopera speaks to the pilot.", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 2 (location)", "respuesta_correcta": "A — The vessel is at the anchorage.", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 3 (SMCP key phrase heard)", "respuesta_correcta": "C — Wilco", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 4 (NATO call sign)", "respuesta_correcta": "D — Bravo Echo Four (BE4)", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 5 (short answer)", "respuesta_correcta": "standby", "alternativas": ["stand by", "standby on channel", "standby on 16"], "puntos": 1}
+      ]
+    },
+    {
+      "actividad": "WHILE A — Cuestionario E6 · Sección Vocabulary (5 ítems matching/labeling)",
+      "items": [
+        {"pregunta": "Item 1 (matching bollard)", "respuesta_correcta": "post on quay for mooring lines", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 2 (matching crane)", "respuesta_correcta": "machine that lifts containers", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 3 (label ship parts)", "respuesta_correcta": "bow = front · stern = rear · bridge = control center", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 4 (definition berth)", "respuesta_correcta": "the place where a vessel docks", "alternativas": ["docking spot", "berth = dock"], "puntos": 1},
+        {"pregunta": "Item 5 (occupational structure)", "respuesta_correcta": "I am responsible for coordinating yard operations", "alternativas": [], "puntos": 1}
+      ]
+    },
+    {
+      "actividad": "WHILE A — Cuestionario E6 · Sección Grammar (5 ítems gap-fill/transformation · Gr 1-15+17 Aplica)",
+      "items": [
+        {"pregunta": "Item 1 (Gr 1 be)", "respuesta_correcta": "IS — 'The vessel IS at Berth 4'", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 2 (Gr 5 imperative + Gr 14 IN)", "respuesta_correcta": "IN — 'Place the cargo IN the warehouse'", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 3 (Gr 6 modal must)", "respuesta_correcta": "MUST — 'Pilots MUST wear safety vests'", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 4 (Gr 11 present perfect)", "respuesta_correcta": "HAS · LIFTED — 'The crane HAS already LIFTED the container'", "alternativas": [], "puntos": 1},
+        {"pregunta": "Item 5 (Gr 12 conditional 1)", "respuesta_correcta": "WILL BERTH — 'If the weather is calm, the vessel WILL BERTH at 0800'", "alternativas": ["BERTHS"], "puntos": 1}
+      ]
+    },
+    {
+      "actividad": "WHILE B — Co-Evaluación · Patrones tablero rojo + verde",
+      "items": [
+        {"pregunta": "Patrones esperados rojo (errores comunes)", "respuesta_correcta": "Hull/hold confusion · Imperative omitted · Wilco/Roger confusion · bollard/crane mismatch · perfect vs simple", "alternativas": [], "puntos": 0, "nota": "Diagnóstico · no evaluado · insumo S11-S12"},
+        {"pregunta": "Aciertos esperados verde (logros colectivos)", "respuesta_correcta": "NATO spelling · be + ship parts · imperative + IN · modal must · conectores básicos", "alternativas": [], "puntos": 0, "nota": "Celebrado en plenaria"}
+      ]
+    },
+    {
+      "actividad": "WHILE C — Reflexión 22-item PM-0 §7 · 5 ítems modelados",
+      "items": [
+        {"pregunta": "A1 — Asignación CEFR coherente con E6", "respuesta_correcta": "Auto-puntaje 1-5 + evidencia + justificación", "alternativas": [], "puntos": 0, "nota": "Self-assessment · sin respuesta correcta"},
+        {"pregunta": "B3 — Fluency vs Accuracy auto-percepción S2-S9", "respuesta_correcta": "Auto-puntaje 1-5 + evidencia + justificación", "alternativas": [], "puntos": 0, "nota": "Self-assessment"},
+        {"pregunta": "B5 — Gestión L1 cumplida S1 ≤25% · S10 0%", "respuesta_correcta": "Auto-puntaje 1-5 + evidencia conductual + justificación", "alternativas": [], "puntos": 0, "nota": "Self-assessment"},
+        {"pregunta": "C4 — Complejidad cognitiva apply en E6", "respuesta_correcta": "Auto-puntaje 1-5 + evidencia + justificación", "alternativas": [], "puntos": 0, "nota": "Self-assessment"},
+        {"pregunta": "D2 — Can-do statements asociados a 5 evidencias E1-E5", "respuesta_correcta": "Auto-puntaje 1-5 + evidencia + justificación", "alternativas": [], "puntos": 0, "nota": "Self-assessment"}
+      ]
+    },
+    {
+      "actividad": "WHILE E — Brief CML CARRIER · Comprensión receptiva 4 componentes ABP",
+      "items": [
+        {"pregunta": "What is CML CARRIER?", "respuesta_correcta": "Mother vessel / Container ship from Shanghai", "alternativas": ["Container ship", "Cargo vessel"], "puntos": 0, "nota": "Brief · receptivo · no evaluado"},
+        {"pregunta": "ETA in how many hours?", "respuesta_correcta": "12 / Twelve hours", "alternativas": [], "puntos": 0, "nota": "Brief · receptivo"},
+        {"pregunta": "Mission components (4 ABP)", "respuesta_correcta": "VHF intake + Berthing tripartito + Pitch 3 min + Q&A + Reflexión", "alternativas": [], "puntos": 0, "nota": "Brief · receptivo"},
+        {"pregunta": "Panel composition", "respuesta_correcta": "Captain Restrepo + agente naviero externo", "alternativas": [], "puntos": 0, "nota": "Brief · receptivo"}
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "Tras terminar cuestionario E6 antes de 1h30min: revisar sección por sección con cronómetro · NO permitir salir del aula.",
+      "Tras completar 5 ítems modelados de rúbrica 22-item en 15 min: avanzar a 5 ítems adicionales (B1+B2+C1+C2+D1) en clase como ventaja para autónomo.",
+      "Tras iniciar canvas Misión Final cuadrante 'Qué': pre-completar bullet points de cuadrante 'Cómo' como adelanto.",
+      "Rol opcional 'peer coach' durante co-evaluación WHILE B — ayudar a compañero con suma + chequeo de respuestas (sólo si el compañero acepta y el fast finisher tiene total alto verificado)."
+    ],
+    "more_support_needed": [
+      "Pre-cuestionario: ofrecer 3 min adicionales de instrucciones en parejas (peer-explain) · permitir preguntas L1 sólo en SET-UP final.",
+      "Durante cuestionario: NO extender tiempo total · pero permitir que el aprendiz salte ítems difíciles y vuelva al final · enseñar estrategia 'skip and return' explícitamente en SET-UP.",
+      "Sección Listening: si aprendiz pide tercera escucha por necesidad evidente: permitir pero documentar (impacta evaluación final con nota cualitativa · no descalifica).",
+      "Co-evaluación WHILE B: si aprendiz se desanima por puntaje bajo · acercarse en privado: 'Score is data. Patterns are gold. We use both for Final Mission. You are not behind — you are calibrated.'",
+      "Reflexión 22-item: ofrecer rúbrica con 5 ítems pre-pobladas como modelo + frases sentence-starters: 'I think my CEFR level is ___ because ___', 'My L1 management was ___ because ___'.",
+      "Brief CML CARRIER: si Q&A confunde · proveer Brief con cuadrante Qué pre-llenado parcial (3 bullets de los 5) como scaffold · resto del canvas en autónomo con apoyo familiar/Word Wall.",
+      "Contacto uno-a-uno al final de la sesión — 'How was Consolidation Day for you? What support do you need for Mission Design Session 11?'"
+    ]
+  },
+  "instructor_self_check": [
+    "✓ ¿Mantuve L1 ≤ 0% durante WHILE A cuestionario + WHILE D-E ceremonial brief (instrucciones bilingües sólo en encabezado de cuestionario para precisión evaluativa · ítems 100% L2)?",
+    "✓ ¿Distribuí cuestionario PM-4.2 con sobre clave sellado · audio Listening probado pre-sesión · Reference Cards cubiertas/visibles según sección con tela visible?",
+    "✓ ¿Co-evaluación WHILE B incluyó tablero LIVE ZONE con ≥3 patrones rojos + ≥3 aciertos verdes · todos los aprendices firmaron y entregaron hoja definitiva?",
+    "✓ ¿Modelé 5 ítems de Rúbrica 22-item PM-0 §7 con mi propia auto-puntuación honesta · permitiendo a aprendices iniciar individualmente con sus 5 ítems en clase?",
+    "✓ ¿Transición ceremonial WHILE D ejecutada con cambio físico mesas (individuales → U) + cambio rol instructor (Sergio → Capitán Restrepo) + entrega Brief CML CARRIER 4 componentes ABP + recordatorio sobres S1 (re-apertura S12)?"
+  ],
+  "totals_check": {
+    "set_up": 30,
+    "while_bloque_a": 90,
+    "break": 20,
+    "while_bloque_b": 60,
+    "while_bloque_c": 40,
+    "while_bloque_d": 15,
+    "while_bloque_e": 60,
+    "wrap_up": 45,
+    "total": 360,
+    "check_result": "✓ EXACTO 360 min (6h directas) + 140 min autónomo = 8.33h S10. Distribución: SET-UP 30 + WHILE 265 (90+60+40+15+60) + BREAK 20 + WRAP-UP 45 = 360 ✓"
+  },
+  "rap_status": "S10 completada (preliminary · pendiente Gate Humano 3) — Cuestionario Consolidado E6 25 ítems administrado + co-evaluado · Rúbrica 22-item PM-0 §7 modelada (5 ítems) e iniciada individualmente · Transición ceremonial Bloque Interno 3 → Bloque Interno 4 ejecutada · Brief CML CARRIER entregado por Capitán Restrepo en rol · Canvas Misión Final cuadrante 'Qué' iniciado. GENERA evidencia formal E6 (5 pts cuestionario consolidado · 25 ítems × 1 pt · pre-requisito de E-Misión S12 per pm-3-1.overview_table[9].evidencia='E6 Cuestionario Consolidado (25 pts) — Cuestionario No 6 (PM-4.2)'). Bloque Interno 4 (RAP-04 · A2.1) abierto con L2 exclusivo desde S10. Umbral de S11 (Mission Design · Memo + Radio Log + Pitch ensayo) abierto.",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[9]",
+    "__contract_version__": "v2.6",
+    "__propagation_script__": "pm-3-2-pm0-propagate.js (canon v2.6 · single-guía 12 sesiones)",
+    "grammar_groups": {
+      "intro": [],
+      "consolida": [],
+      "aplica": [
+        {"group_id": "Gr 1-15 + 17", "group_name": "Todos los grupos Intro de Bloques 1+2+3 (be · pronouns · plural · adj · imperative · IN · must · should · cont · perfect · cond · pasiva · Wh · SMCP/NATO · conectores · maritime sector)", "nivel_activacion": "Aplica", "ejemplo_en_sesion": "Evaluación integrada en Cuestionario E6 sección Grammar (5 ítems × 1 grupo cada uno)"}
+      ]
+    },
+    "grammar_carga_check": "0/2 Intro + 14 Aplica (PM-0 §9.2) ✓ — sesión consolidación evaluativa sin introducción nueva (heredado literal de pm-3-1.json.pm0_alignment_by_session[9].grammar_carga_check)",
+    "feedback": {
+      "mode": "MIXTO diferido",
+      "rationale": "Cuestionario = silencio académico. Retroalimentación post-cuestionario = accuracy global + fluency metacognitiva. Brief Misión Final = facilitación. PM-0 §5.11.",
+      "accuracy_techniques": [
+        "Silencio académico durante cuestionario (90 min)",
+        "Error codes globales en tablero post-cuestionario (patrones comunes rojos)",
+        "Co-evaluación con clave parcial (pares chequean respuestas)"
+      ],
+      "fluency_techniques": [
+        "Reflexión metacognitiva con prompt 22-item PM-0 §7 (modelado 5 ítems en clase + 17 ítems autónomo)"
+      ],
+      "mixed_techniques": [
+        "Brief Misión Final entregado en rol con Q&A receptivo guiado",
+        "Canvas Misión Final cuadrante 'Qué' completado con consulta libre Word Wall"
+      ]
+    },
+    "l1_management": {
+      "target_percentage": 0,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_4_RAP04_A2.1.S10 — 0% (L2 exclusivo · PM-0 §9.1)",
+      "l1_rationale": "Bloque Interno 4 entrada — L2 exclusivo desde S10 hasta S12. Cuestionario en L2 con instrucciones bilingües sólo si necesario para precisión evaluativa (encabezado mínimo). Brief Misión Final 100% L2. Único momento bilingüe permitido: cierre WRAP-UP 'Hasta la próxima sesión' como guiño afectivo cultural · no instruccional."
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {"word": "review", "ipa": "/rɪˈvjuː/", "tonica": "SEGUNDA (reVIEW)"},
+        {"word": "instruction", "ipa": "/ɪnˈstrʌkʃən/", "tonica": "SEGUNDA (inSTRUCtion)"},
+        {"word": "correct", "ipa": "/kəˈrɛkt/", "tonica": "SEGUNDA (coRRECT)"},
+        {"word": "evidence", "ipa": "/ˈɛvɪdəns/", "tonica": "PRIMERA (EVidence)"},
+        {"word": "turnaround", "ipa": "/ˈtɜːrnəraʊnd/", "tonica": "PRIMERA (TURNaround) — Misión Final brief"}
+      ],
+      "techniques": [
+        "Brevísimo — sesión prioriza evaluación no instrucción nueva",
+        "Stress marking sólo en meta-vocabulario evaluativo + 'turnaround' Misión Final"
+      ],
+      "source": "PM-0 §5.13 — heredado literal de pm-3-1.json.pm0_alignment_by_session[9].stress_focus"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "review",
+        "instruction",
+        "correct",
+        "evidence",
+        "turnaround",
+        "scope",
+        "panel",
+        "pitch",
+        "ETA",
+        "TEU"
+      ],
+      "factors_applied": [
+        "Encounter (spaced repetition máximo · último encuentro formal de los 25 términos previos)",
+        "Use (evaluativo · cada término en al menos 1 ítem cuestionario)",
+        "Self-expression (portafolio consolida 5 evidencias personales + E6)",
+        "Synergy (5 secciones cubren 5 habilidades evaluables)"
+      ],
+      "operationalization": "Encounter: último encuentro formal de los 25 términos clave (no vocabulario nuevo · efecto spaced repetition máximo después de 9 sesiones). Use: cada término aparece en al menos 1 ítem del cuestionario E6. Self-expression: portafolio consolida 5 evidencias personales E1-E5 + E6 + Rúbrica 22-item. Synergy: 5 secciones cubren 5 habilidades. Meta-vocabulario evaluativo (review · instruction · correct · evidence) + meta-vocabulario Misión Final (turnaround · scope · panel · pitch · ETA · TEU) son los 10 términos target stress focus.",
+      "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS) — heredado de pm-3-1.json.pm0_alignment_by_session[9].success_factors_priorized"
+    },
+    "cefr_descriptor_focus": {
+      "subnivel": "A2.1 (entrada Bloque Interno 4) · evaluación retrospectiva A1.2-A2.0 acumulada",
+      "habilidad_principal": "integración_5_habilidades",
+      "descriptor_activo": "Consolidación y evaluación integrada de los 5 descriptores CEFR A1.2-A2.0: comprension_oral + comprension_lectora + interaccion_oral + produccion_oral + produccion_escrita.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno — Bloques 1+2+3 todos los subcampos (heredado de pm-3-1.json.pm0_alignment_by_session[9].cefr_descriptor_focus)"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Natural — sin apoyo adicional durante cuestionario (audio Listening 2 escuchas · transición a velocidad operacional real)",
+      "extension_textos": "Cuestionario de 25 ítems distribuidos en 5 secciones + Rúbrica 22-item + Brief CML CARRIER 1 página A4 + Canvas Misión Final A3 4 cuadrantes",
+      "andamiaje": "Moderado — instrucciones visuales + audio sección Listening con 2 escuchas permitidas + Reference Cards visibles sólo en sección 3 + Word Wall cubierto/descubierto según sección",
+      "rol_docente": "Evaluador (silencio académico WHILE A) + retroalimentador metacognitivo (WHILE B-C) + facilitador del brief CML CARRIER (WHILE D-E como Capitán Restrepo en rol)",
+      "source": "PM-0 §8 — Hoja de ruta A1.1 → A2.x | methodological_shifts_per_guide[0] · Bloque Interno 4 entrada (heredado de pm-3-1.json.pm0_alignment_by_session[9].pedagogical_shift_hooks)"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "D1 — Contribuye a Misión Final (E6 es pre-requisito de E-Misión S12)",
+        "D2 — Can-do asociado (5 secciones cuestionario → 5 descriptores CEFR A1.2-A2.0)",
+        "D3 — Criterio observable (25 ítems × 1 pt binario · sin parcial salvo Writing checklist)",
+        "D4 — Consistente con descriptor CEFR A1.2-A2.0 (cuestionario evalúa retrospectivamente · brief proyecta a A2.1)",
+        "B7 — Autoevaluación 22-item checklist como trabajo autónomo (entregable S11 warm-up)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems) · heredado de pm-3-1.json.pm0_alignment_by_session[9].traceability_seed_22",
+      "nota": "Build-Out PM-3.2 S10 completa los 5 ítems críticos en clase con modelado · 17 ítems restantes en autónomo · entrega S11 warm-up · validación de presencia (entregó / no entregó · sin nota numérica)."
+    }
+  },
+  "activity_logistics": {
+    "A3.10.1": {
+      "nombre_short": "Cuestionario Consolidado E6 — 25 ítems · 5 secciones",
+      "estrategia": "Evaluación Formativa Integrada",
+      "tecnica": "Cuestionario consolidado con Reference Cards cubiertas/visibles por sección",
+      "duracion_horas": "1.5 horas",
+      "materiales": [
+        "Cuestionario PM-4.2 impreso · 1 set por aprendiz",
+        "Hoja de respuestas · 1 por aprendiz",
+        "Audio Listening cargado · 2 escuchas permitidas",
+        "SMCP + NATO Reference Cards visibles sólo Sección 3",
+        "Word Wall cubierto Secciones 1-2-4-5"
+      ],
+      "material_apoyo": "Cronómetro grande proyectado · clave sellada en sobre",
+      "produce_evidencia": true,
+      "evidencia_id": "E6 Cuestionario Consolidado (5 pts · 25 ítems × 1 pt)"
+    },
+    "A3.10.2": {
+      "nombre_short": "Co-Evaluación Guiada — Patrones de Error + Aciertos Colectivos",
+      "estrategia": "Evaluación Formativa Integrada · Co-evaluación con clave parcial",
+      "tecnica": "Co-evaluación sección por sección con tablero LIVE ZONE rojo/verde",
+      "duracion_horas": "1.0 horas",
+      "materiales": [
+        "Hojas de respuestas devueltas a aprendices",
+        "Clave del instructor abierta ANTE la clase",
+        "Marcadores rojo + verde · 1 set por pareja",
+        "Tablero LIVE ZONE con 5 secciones marcadas"
+      ],
+      "material_apoyo": "Patrones tablero rojo (insumo S11-S12) · documentación fotográfica",
+      "produce_evidencia": false
+    },
+    "A3.10.3": {
+      "nombre_short": "Reflexión Metacognitiva 22-Item — Modelado + Inicio",
+      "estrategia": "Reflexión metacognitiva · Autoevaluación criterios PM-0 §7",
+      "tecnica": "Modelado instructor de 5 ítems + completado individual de mismos 5 ítems",
+      "duracion_horas": "0.67 horas",
+      "materiales": [
+        "Rúbrica PM-0 §7 22-item impresa · 1 por aprendiz",
+        "Modelo de instructor proyectado · 5 ítems pre-pobladas",
+        "Cuestionario E6 firmado como evidencia primaria"
+      ],
+      "material_apoyo": "Sentence-starters para more_support_needed",
+      "produce_evidencia": false,
+      "nota_evidencia": "Rúbrica completa entregable S11 warm-up · validación de presencia · no nota numérica"
+    },
+    "A3.10.4": {
+      "nombre_short": "Transición Ceremonial — Cierre Bloque 3 + Apertura Bloque 4",
+      "estrategia": "Transición ceremonial simbólica",
+      "tecnica": "Cambio físico configuración aula + cambio rol instructor",
+      "duracion_horas": "0.25 horas",
+      "materiales": [
+        "Mesas reconfiguración individual → U shape",
+        "Gorra/chaleco/elemento simbólico Capitán Restrepo",
+        "Sobres amarillos S1 visibles en caja",
+        "Papelógrafo S2-S9 muro lateral señalización"
+      ],
+      "material_apoyo": "Música opcional instrumental cinemático muy baja",
+      "produce_evidencia": false
+    },
+    "A3.10.5": {
+      "nombre_short": "Brief Misión Final CML CARRIER — Capitán Restrepo Entrega Scope",
+      "estrategia": "Brief ABP Misión Final · entrega receptiva + canvas inicial",
+      "tecnica": "Brief en rol profesional + Q&A guiada + Canvas cuadrante 'Qué'",
+      "duracion_horas": "1.0 horas",
+      "materiales": [
+        "Brief CML CARRIER 1 página A4 · 1 por aprendiz + 1 A3 muro frontal",
+        "Canvas Misión Final A3 · 1 por aprendiz",
+        "Word Wall + Reference Cards consulta libre",
+        "Mapa Terminal Buenaventura A2 muro frontal"
+      ],
+      "material_apoyo": "Foto/video CML CARRIER real (opcional)",
+      "produce_evidencia": false,
+      "nota_evidencia": "Canvas completo (4 cuadrantes) entregable S11 warm-up · pre-requisito diseño Memo + Pitch · pre-requisito de E-Misión S12"
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    },
+    "pm0_protocol": {
+      "canon_version": "2.6-pm0-cross-reference-2026-04-20",
+      "inherited_from": "pm-3-1.json.pm0_alignment_by_session[9]",
+      "propagation_script": "pm-3-2-pm0-propagate.js",
+      "validated_by": "PM-2.11 Check 14 extendido (cross-reference PM-0 reglas 9-11)"
+    }
+  }
+}

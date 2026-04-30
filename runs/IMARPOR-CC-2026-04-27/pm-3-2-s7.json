@@ -1,0 +1,1027 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.5",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
+  "session": 7,
+  "session_name": "The Two-Way Radio — Coordinating Berthing Operations",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide": "G1 — The Maritime Operations Pro",
+  "guia_numero": 1,
+  "programa": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo": "12340002",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.6 (extensión)",
+    "PM-2.10 (Gr 4 + Gr 6 ext + Gr 9 + Gr 10)"
+  ],
+  "habilidades_foco": [
+    "Listening (●) — Audio tripartito 3 min (yard + bridge + customs simultáneo) con Radio Log de 5 entradas",
+    "Reading (●) — Grammar Awareness handout PM-2.10 con marcación por colores (4 grupos Intro)",
+    "Grammar (●) — Gr 6 ext (modales should/could/might) · Gr 10 (presente continuo) · Gr 4 (comparativos) · Gr 9 (pasado simple)"
+  ],
+  "habilidades_soporte": [
+    "Vocabulary (○) — Sub-bloque 3 maritime extendido (berthing · mooring · departure · cargo handling · anchor · approaching · securing)",
+    "Speaking (○) — Recovery routines breves en plenaria post-listening (sin evaluación · práctica oral incidental)"
+  ],
+  "cefr": "A2.0 (entrada Bloque Interno 3 · transición A1.3 → A2.0)",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-29",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "preliminary",
+  "_status_preliminary_rationale": "Build-Out generado por subagente PM-3.2 piloto behavioral · Gate Humano 3 (aprobación Playbook S7) pendiente · Sergio confirma cambiando a 'completed' tras revisión de coherencia con PM-2.6 (extensión) + PM-2.10 (Gr 4 + Gr 6 ext + Gr 9 + Gr 10) + pm-3-1 sessions[6].",
+  "momento_sena": "3.3 Apropiación — Integración receptiva-productiva",
+  "estrategia_didactica": "ABT — Inducción gramatical (modales + condicional + pasado/presente continuo) + Listening tripartito",
+  "justificacion_didactica": "S7 abre el Bloque Interno 3 (RAP-03 · A2.0) con un salto cualitativo: el aprendiz ya no escucha una sola voz (Captain Lopera S5) ni produce una sola voz (S6 VHF Drill) — ahora debe procesar TRES canales simultáneos del Terminal de Contenedores Buenaventura: yard (Diego en español portuario · L1) + bridge (Captain Lopera vía VHF · lingua franca B1) + customs (oficial de aduanas · acento neutro). La estrategia ABT con inducción gramatical por descubrimiento de colores convierte 4 grupos gramaticales Intro (modales should/could/might azul · presente continuo rojo · pasado simple verde · comparativos morado) en herramientas perceptivas para el Radio Log productivo. El Radio Log con 5 entradas (timestamp + canal + summary) es el producto verificable que conecta listening receptivo con escritura sintética. L1 ≤ 5% — sólo para giro contrastivo crucial entre presente continuo ('Vessel is approaching') y presente perfecto ('Pilot has boarded' — anticipo S8). Feedback MIXTO transitando a fluency dominante (PM-0 §5.11): accuracy en breakdowns gramaticales · fluency en post-task delayed feedback con peer chequeo cruzado de Radio Logs. Andamiaje moderado-mínimo: Word Wall extendido a Sub-bloque 3 + Radio Log template + sin transcripción durante listening (suspenso pedagógico activo). S7 NO genera evidencia formal (E1-E6 ya cerradas en S3-S6 · próxima E4 final segment es S8 Berthing Speaking) — es bisagra receptivo-productiva preparatoria de S8.",
+  "session_header": {
+    "titulo": "SESSION 7: The Two-Way Radio — Coordinating Berthing Operations",
+    "subtitulo": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Build-Out — Playbook v2.5",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.6 (extensión) — Listening Tripartito Berthing Coordination (audio 3 min · yard + bridge + customs simultáneo · Radio Log 5 entradas)",
+      "PM-2.10 (Gr 4 + Gr 6 ext + Gr 9 + Gr 10) — Grammar Awareness 4 grupos Intro con marcación por colores (azul modales · rojo presente continuo · verde pasado simple · morado comparativos)"
+    ],
+    "habilidades_foco": [
+      "Listening (●) — Audio tripartito con Radio Log de 5 entradas",
+      "Reading (●) — Grammar Awareness handout con marcación por colores",
+      "Grammar (●) — 4 grupos Intro: modales should/could/might · presente continuo · pasado simple · comparativos"
+    ],
+    "habilidades_soporte": [
+      "Vocabulary (○) — Sub-bloque 3 maritime extendido (berthing · mooring · departure · cargo handling · anchor · approaching · securing)",
+      "Speaking (○) — Recovery routines breves en plenaria post-listening"
+    ],
+    "objetivos_pedagogicos": [
+      "(1) Identificar receptivamente las 4 estructuras gramaticales activas (Gr 6 ext modales · Gr 10 presente continuo · Gr 4 comparativos · Gr 9 pasado simple) en audio tripartito Berthing Coordination usando marcación por colores en Grammar Awareness handout.",
+      "(2) Completar Radio Log con 5 mensajes VHF — cada entrada con timestamp (HH:MM) + canal (yard/bridge/customs) + summary 1 oración A2.0 que use al menos 1 estructura gramatical de las 4 activas.",
+      "(3) Discriminar 3 canales simultáneos (yard español portuario L1 · bridge VHF lingua franca B1 · customs neutro) sin transcripción · usando Word Wall extendido Sub-bloque 3 (berthing · mooring · departure · cargo handling · anchor) como andamio léxico mínimo.",
+      "(4) Aplicar inducción gramatical por colores en parejas: cada pareja recibe 4 marcadores (azul/rojo/verde/morado) y subraya en el handout PM-2.10 las ocurrencias de cada grupo gramatical · luego compara con grupo vecino para chequeo cruzado.",
+      "(5) Producir 1-2 oraciones orales A2.0 con modales contrastivos (SHOULD vs MUST vs COULD vs MIGHT) en plenaria de cierre · sin evaluación · sólo activación productiva mínima previa a S8 Berthing tripartito Speaking."
+    ],
+    "plan_b": "Si <50% asistencia: aplazar el chequeo cruzado de Radio Logs a S8 warm-up · usar tiempo extra en escucha individual repetida (2-3 reproducciones del audio tripartito). Si proyector o bocinas fallan: instructor representa los 3 canales en vivo con 2 voces (cambia entonación + gesto + posición física en el aula entre yard/bridge/customs) — degradación aceptable porque S7 prioriza Radio Log productivo sobre fidelidad sonora. Si la cohorte se atora con audio tripartito (5+ aprendices con Radio Log vacío después de la 2da escucha): reducir a 2 canales en la 3ra escucha (yard + bridge · customs se difiere a S8) · escribir transición en LIVE ZONE 'Tripartito completo S8'. Si Word Wall extendido Sub-bloque 3 no se completó en S6: dedicar 5 min adicionales del SET-UP a poblar las 5 tarjetas nuevas (berthing · mooring · departure · cargo handling · anchor) con stress marcado y foto de operación portuaria · NO comprometer el WHILE C (Radio Log productivo) por agregar tiempo arriba. Si walkie-talkies / app móvil VHF no disponible para futuro: notar como acción para S8 (E4 segment final) · S7 no requiere walkie-talkies (input dominante).",
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk pre-modelado bilingüe pero L1 ≤ 5% (uso quirúrgico para giro contrastivo presente continuo / presente perfecto). Duración suma exacta 360 min directos + 140 min autónomo (≈2.33h). S7 abre A2.0 — andamiaje moderado-mínimo · sin transcripción durante listening · feedback MIXTO transición a fluency dominante. NO genera evidencia formal (próxima E4 final es S8 Berthing Speaking)."
+  },
+  "materials_checklist": [
+    {
+      "item": "PM-2.6 (extensión) Listening Tripartito worksheet impreso (Audio script + Radio Log template 5 entradas + 5 tareas post-listening)",
+      "cantidad": "1 set por aprendiz (estimado 25 sets) + 3 sets de respaldo",
+      "verificado": false
+    },
+    {
+      "item": "PM-2.10 Grammar Awareness handout 4 grupos (Gr 4 + Gr 6 ext + Gr 9 + Gr 10) con 12-16 oraciones modelo extraídas del audio tripartito · marcación por colores",
+      "cantidad": "1 set por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Audio tripartito 3 min (yard Diego español portuario + bridge Captain Lopera VHF lingua franca B1 + customs oficial neutro) — formato MP3 con canales paneados (yard izquierda · bridge centro · customs derecha)",
+      "cantidad": "1 archivo · cargado en proyector + bocinas estéreo probadas",
+      "verificado": false
+    },
+    {
+      "item": "Bocinas estéreo orientadas (1 izquierda yard · 1 centro bridge · 1 derecha customs) o 3 bocinas pequeñas en zonas físicas del aula (yard + bridge + customs zonas demarcadas)",
+      "cantidad": "2-3 bocinas + cables",
+      "verificado": false
+    },
+    {
+      "item": "Radio Log template impreso A4 — 5 filas con columnas (Time HH:MM · Channel yard/bridge/customs · Summary 1 oración A2.0 · Grammar marker azul/rojo/verde/morado)",
+      "cantidad": "1 por aprendiz + 5 de respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Marcadores de 4 colores (AZUL modales · ROJO presente continuo · VERDE pasado simple · MORADO comparativos) — set por aprendiz para Grammar Awareness",
+      "cantidad": "1 set de 4 colores por aprendiz · 5 sets de respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Word Wall extendido Sub-bloque 3 — 5 tarjetas nuevas con foto + IPA + stress: BERTH-ing /ˈbɜːrθɪŋ/ · MOO-ring /ˈmʊərɪŋ/ · de-PAR-ture /dɪˈpɑːrtʃər/ · CARgo HANDling · AN-chor /ˈæŋkər/",
+      "cantidad": "5 tarjetas (suman a 25 totales del Word Wall)",
+      "verificado": false
+    },
+    {
+      "item": "3 zonas auditivas demarcadas en aula con cinta de color (yard amarillo · bridge azul · customs verde) — configuración tipo isla central con Andrea (aprendiz líder) en el medio durante listening",
+      "cantidad": "3 rollos de cinta + flechas señalizadoras",
+      "verificado": false
+    },
+    {
+      "item": "SMCP Reference Card laminada (permanente desde S5 · uso receptivo en S7)",
+      "cantidad": "1 por aprendiz (ya distribuida)",
+      "verificado": false
+    },
+    {
+      "item": "NATO Phonetic Alphabet Reference Card laminada (permanente desde S5)",
+      "cantidad": "1 por aprendiz (ya distribuida)",
+      "verificado": false
+    },
+    {
+      "item": "Cronómetro visible en pantalla (timestamps Radio Log)",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Tabla comparativa modales (slide proyectada · 4 columnas SHOULD/COULD/MIGHT/MUST con fuerza ilocutiva: recomendación · permiso · probabilidad · obligación)",
+      "cantidad": "1 slide + 1 mini-card A5 por aprendiz como referencia",
+      "verificado": false
+    },
+    {
+      "item": "Grammar Color Code poster A2 en muro lateral (azul=modales · rojo=presente continuo · verde=pasado simple · morado=comparativos)",
+      "cantidad": "1 poster",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO dividido en 5 zonas: (1) ESQUINA SUPERIOR DERECHA — ENGLISH ZONE 🔵 permanente desde S1 · L1 5% tope hoy (recordatorio escrito). (2) CENTRO — Title 'IMARPOR-CC · Guía Única · S7: The Two-Way Radio — Coordinating Berthing Operations · A2.0 entrada'. (3) COLUMNA LATERAL IZQUIERDA — 4 GRAMMAR COLORS con etiquetas: AZUL = should/could/might (Gr 6 ext modales · recomendación/permiso/probabilidad) · ROJO = is/are + V-ing (Gr 10 presente continuo · acción en curso) · VERDE = arrived/started/did (Gr 9 pasado simple · regulares + irregulares + Wh-) · MORADO = faster than / more critical than (Gr 4 comparativos). Cada color con 1 ejemplo del audio tripartito ('You should approach starboard' azul · 'The vessel is approaching berth 5' rojo · 'The vessel arrived at 06:00' verde · 'Berthing is more critical than departure' morado). (4) ZONA INFERIOR LIVE ZONE — vacío al inicio · se llena durante WHILE C con Radio Log grupal modelo (1 entrada por canal · 3 entradas mínimo) + frases que emergen orgánicamente del listening + corrección de breakdowns gramaticales con recast escrito. (5) COLUMNA LATERAL DERECHA — Sub-bloque 3 Word Wall extendido con las 5 nuevas tarjetas (berthing · mooring · departure · cargo handling · anchor) + recordatorio recycle de Sub-bloques 1+2 (bollard · crane · bow · stern · bridge · pilot · stevedore · captain · vessel · port · etc.). Maritime Word Wall en pared lateral suma a 25 términos totales · 3 zonas auditivas demarcadas con cinta amarilla (yard) + azul (bridge) + verde (customs).",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:25",
+      "duracion_min": 25,
+      "bloque": "SET-UP",
+      "actividad": "Warm-up Recall S6 VHF Drill + Word Wall extendido Sub-bloque 3 (5 tarjetas nuevas) + Bridge a A2.0 + Grammar Color Code intro + objetivos día + ICQ",
+      "agrupacion": "Plenaria → Parejas (Word Wall stress drilling)",
+      "notas": "Energía moderada-alta. Apertura A2.0 — anunciar el salto. L1 ≤ 5% — uso quirúrgico para giro contrastivo presente continuo / presente perfecto."
+    },
+    {
+      "tiempo": "0:25-1:25",
+      "duracion_min": 60,
+      "bloque": "WHILE A (Grammar Awareness 4 colores)",
+      "actividad": "PM-2.10 Grammar Awareness — inducción por descubrimiento de 4 grupos Intro con marcación por colores (azul modales · rojo presente continuo · verde pasado simple · morado comparativos)",
+      "agrupacion": "Individual silencioso → Parejas heterogéneas (chequeo cruzado)",
+      "notas": "Sin enseñanza explícita previa — descubrimiento. Instructor circula sin corregir · sólo modela 1 ejemplo por color en plenaria de cierre."
+    },
+    {
+      "tiempo": "1:25-2:30",
+      "duracion_min": 65,
+      "bloque": "WHILE B (Audio Tripartito · 3 escuchas estructuradas)",
+      "actividad": "PM-2.6 (extensión) Listening Tripartito — 3 escuchas con focos progresivos (gist → specific channels → grammar markers). Sin transcripción.",
+      "agrupacion": "Plenaria con audio (silencio académico)",
+      "notas": "Suspenso pedagógico — Radio Log se llena PROGRESIVAMENTE. Audio paneado 3 canales · si bocinas estéreo no disponibles · plan B con instructor representando los 3 canales en vivo."
+    },
+    {
+      "tiempo": "2:30-2:45",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "Receso activo (café + baño + estiramiento)",
+      "agrupacion": "—",
+      "notas": "Hidratación. Mantener Grammar Color Code visible. Recordar a aprendices que el Radio Log NO está terminado — la 4ta escucha post-break consolida."
+    },
+    {
+      "tiempo": "2:45-3:50",
+      "duracion_min": 65,
+      "bloque": "WHILE C (Radio Log productivo · 4ta escucha + redacción)",
+      "actividad": "PM-2.6 (extensión) Radio Log — 4ta escucha consolidante + redacción individual de 5 entradas (timestamp + canal + summary 1 oración A2.0 con grammar marker)",
+      "agrupacion": "Plenaria con audio → Individual silencioso (redacción)",
+      "notas": "Producto verificable. Music instrumental marítima muy baja durante redacción. Instructor circula leyendo sobre el hombro · recast suave sólo en breakdowns gramaticales."
+    },
+    {
+      "tiempo": "3:50-4:50",
+      "duracion_min": 60,
+      "bloque": "WHILE D (Peer Cross-Check + Recast Plenaria)",
+      "actividad": "PM-2.6 (extensión) Peer Cross-Check Radio Logs en parejas + recast plenaria de 5 muestras representativas (1 por canal · 1 con cada color gramatical) + corrección colectiva en LIVE ZONE",
+      "agrupacion": "Parejas heterogéneas → Plenaria",
+      "notas": "Feedback MIXTO en transición a fluency dominante. Peer feedback con guía de 3 ítems (¿clarísimo? · ¿1 grammar marker correcto? · ¿1 vocabulario Sub-bloque 3?). Recast plenaria con bolígrafo verde (correcto) / rojo (a revisar) en tablero."
+    },
+    {
+      "tiempo": "4:50-5:35",
+      "duracion_min": 45,
+      "bloque": "WHILE E (Modal Contrast Drill + Speaking Mínimo)",
+      "actividad": "Drilling contrastivo de modales (SHOULD vs MUST vs COULD vs MIGHT · fuerza ilocutiva) + producción oral mínima en parejas (1-2 oraciones A2.0 con modales sobre escenario Berthing) — bridge productivo a S8 Berthing Speaking tripartito",
+      "agrupacion": "Plenaria (drilling) → Parejas (producción mínima) → Plenaria (3 voluntarios)",
+      "notas": "Sin evaluación · sólo activación productiva mínima previa a S8. Choral drill + finger drilling + recast. Stress contrastivo SHOULD vs MUST."
+    },
+    {
+      "tiempo": "5:35-6:00",
+      "duracion_min": 25,
+      "bloque": "WRAP-UP",
+      "actividad": "Exit Ticket S7 (Radio Log auto-evaluación 3 ítems) + síntesis + preview S8 (Berthing Speaking tripartito · E4 final segment) + asignación autónoma (Listening cloze SMCP 3 audios IMO YouTube)",
+      "agrupacion": "Plenaria → Individual",
+      "notas": "Cierre con energía positiva y anticipación de S8. Validar que Radio Log de cada aprendiz tiene mínimo 3 entradas con grammar markers visibles."
+    }
+  ],
+  "set_up": {
+    "duracion_min": 25,
+    "warm_up": {
+      "nombre": "VHF Recall + Sub-bloque 3 Word Wall Activation",
+      "pasos": [
+        "1. Instructor recibe en la puerta saludando: '*Good morning, Junior Trainees! Today we open A2.0 — and we open three radios at once.*' (sonrisa + 3 dedos levantados como señal de tripartito).",
+        "2. Plenaria recall S6 VHF Drill (5 min): instructor pregunta '*What did Captain Lopera say last session? What did YOU answer?*' — 3 voluntarios reproducen 1 chunk SMCP cada uno (Roger / Wilco / Standby) con stress.",
+        "3. Activación Word Wall extendido Sub-bloque 3 (10 min): instructor presenta las 5 nuevas tarjetas pre-pegadas — '*BERTH-ing — what we do TODAY when the vessel arrives. MOO-ring — when we tie the lines. de-PAR-ture — when the vessel leaves. CARgo HANDling — what the crane does. AN-chor — what we drop when we wait.*' Choral repetition 3 veces · finger drilling con stress en sílaba tónica · clase responde con eco.",
+        "4. Bridge a A2.0 (5 min): instructor anuncia '*Today we cross from A1.3 to A2.0. The radio is no longer ONE voice — it's THREE voices at the same time. Yard. Bridge. Customs. Like a real port.*' — señala las 3 zonas auditivas demarcadas en el aula con cinta amarilla/azul/verde.",
+        "5. Grammar Color Code intro (3 min): instructor presenta el poster A2 con las 4 columnas — '*Today we hunt 4 grammar colors in the radio. AZUL — should, could, might. ROJO — is, are + ing. VERDE — past words like arrived, started. MORADO — faster than, more critical than. Hunt them like designers hunt fonts.*'",
+        "6. Objetivos día escritos en tablero + ICQ (2 min)."
+      ],
+      "duration_min": 25
+    },
+    "teacher_talk_opening_en": "*Good morning, Junior Trainees! Welcome back. Today is Session 7 — and today we cross a line. Until Session 6, the radio had ONE voice — Captain Lopera. Today, the radio has THREE voices at the same time: yard, bridge, and customs. This is real port work. Andrea is no longer a beginner — she is a Port Operations Trainee handling tripartite coordination. We open A2.0. We hunt four grammar colors in three channels. We complete a Radio Log with five entries. No transcription. Just your ears, your hands, and your color markers. Ready?*",
+    "teacher_talk_opening_es_cursive": "*(Buenos días, Aprendices Junior. Bienvenidos de vuelta. Hoy es la Sesión 7 — y hoy cruzamos una línea. Hasta la Sesión 6, la radio tenía UNA sola voz: Capitán Lopera. Hoy, la radio tiene TRES voces al mismo tiempo: yarda, puente y aduana. Esto es trabajo portuario real. Andrea ya no es principiante — es una Aprendiz de Operaciones Portuarias coordinando comunicación tripartita. Abrimos A2.0. Cazamos cuatro colores gramaticales en tres canales. Completamos un Radio Log con cinco entradas. Sin transcripción. Sólo tus oídos, tus manos, y tus marcadores de colores. ¿Listos?)*",
+    "objetivo_dia_escrito_en_tablero": "*Today you will: (1) hunt 4 grammar colors in PM-2.10 Awareness handout (azul/rojo/verde/morado) · (2) listen to a 3-channel tripartite audio (yard + bridge + customs) — three times, no transcription · (3) complete Radio Log with 5 entries (timestamp + channel + summary + grammar marker) · (4) cross-check your log with a partner · (5) speak 1-2 sentences with modals (SHOULD/COULD/MIGHT) — bridge to Session 8.*",
+    "activacion_grammar_color_code": {
+      "instruccion": "Instructor señala el poster A2 con las 4 columnas y modela un ejemplo por color: '*AZUL — \"You SHOULD approach starboard\" — modal of recommendation. ROJO — \"The vessel IS approaching berth 5\" — action in progress. VERDE — \"The vessel ARRIVED at 06:00\" — past action complete. MORADO — \"Berthing is MORE CRITICAL THAN departure\" — comparison.*' Choral repetition de los 4 ejemplos · clase repite con eco · instructor invita a 4 voluntarios (1 por color) a leer en voz alta.",
+      "tecnica": "Modelo-eco + Choral repetition + Color coding (PM-0 §5.13 noticing con soporte visual cromático)"
+    },
+    "icq": [
+      "*How many grammar colors do we hunt today?* → Esperan: '4 / four / azul rojo verde morado'",
+      "*How many channels in the audio?* → Esperan: '3 / three / yard bridge customs'",
+      "*How many entries in the Radio Log?* → Esperan: '5 / five'",
+      "*Will we see a transcription?* → Esperan: 'No / no transcription / just ears'",
+      "*Are you alone or with a partner today?* → Esperan: 'Both / individual first then partner / cross-check after'"
+    ],
+    "facilitation_notes": [
+      "💡 La apertura de A2.0 es ceremonial — usar las 3 zonas auditivas demarcadas con cinta como umbral físico (instructor camina las 3 zonas mientras presenta).",
+      "💡 Si un aprendiz dice '*¿Tres voces al mismo tiempo? Eso es imposible*' — responda: '*Yes — it sounds impossible on Day 1. Today is Day 7. Andrea also thought it was impossible. We listen 3 times. Slowly. Patiently. You will see.*'",
+      "💡 Si la cohorte tuvo dificultades en S6 VHF Drill (Speaking pobre): NO los presione hoy en producción oral — S7 es input dominante. La producción mínima del WHILE E es sólo bridge a S8.",
+      "💡 El Grammar Color Code visible en muro lateral (poster A2) DEBE quedar permanente desde S7 — se reciclará en S8 (presente perfecto morado nuevo color · agregar quinta columna) y S9 (conectores conectivo nuevo).",
+      "💡 L1 ≤ 5% hoy — uso quirúrgico SÓLO para giro contrastivo presente continuo ('está pasando ahora') vs presente perfecto ('ya pasó · anticipo S8'). NO para vocabulario · NO para instrucciones."
+    ],
+    "checkpoint": "✓ Verbal survey: '*¿Listos para la radio tripartita?*' — ≥85% levantan la mano o dicen 'yes'. Si energía baja, agregue 1 min de drilling contrastivo SHOULD vs MUST con stress (\"You SHOULD approach\" vs \"You MUST approach\") · cuente una anécdota corta (en español ok · usar el 5% L1) sobre la primera vez que escuchó coordinación tripartita en un puerto."
+  },
+  "while": {
+    "duracion_min": 295,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "Grammar Awareness 4 Colores — Inducción por Descubrimiento (PM-2.10 Gr 4 + Gr 6 ext + Gr 9 + Gr 10)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.10 Grammar Awareness handout (4 grupos Intro · 12-16 oraciones modelo extraídas del audio tripartito)",
+        "agrupacion": "Individual silencioso → Parejas heterogéneas",
+        "objetivo": "Identificar receptivamente las 4 estructuras gramaticales activas en oraciones modelo del audio tripartito. El aprendiz subraya con marcadores de 4 colores (AZUL modales · ROJO presente continuo · VERDE pasado simple · MORADO comparativos) las ocurrencias de cada grupo gramatical en el handout · luego compara con pareja para chequeo cruzado. Inducción por descubrimiento — sin enseñanza explícita previa.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor distribuye PM-2.10 Grammar Awareness handout + set de 4 marcadores (azul/rojo/verde/morado) por aprendiz.",
+          "2. Lee instrucción central proyectada: '*Open your handout. You see 12 to 16 sentences from a real port radio. Use FOUR colors. AZUL = modal verbs (should, could, might). ROJO = present continuous (is, are + V-ing). VERDE = past simple (regular -ed and irregular like arrived, was, did). MORADO = comparatives (faster than, more critical than). Underline. No translation. No phone. 25 minutes silent.*'",
+          "3. 25 min individuales: aprendices subrayan con los 4 colores. Instructor circula sin corregir · solo modela 1 oración con 1 color en silencio (escribe en tablero LIVE ZONE: '*The vessel IS APPROACHING berth 5*' — subraya 'is approaching' en rojo).",
+          "4. Recordatorio bilingüe a los 12 min: '*If you don't see all four colors, that's ok. Hunt the easiest first.*' (*Si no ves los cuatro colores, está bien. Caza primero los fáciles.*)",
+          "5. 25 min en parejas heterogéneas (chequeo cruzado): aprendiz A muestra su handout subrayado · aprendiz B compara · '*Same color same sentence? Different color? Why?*' Sin maestro · sólo conversación de descubrimiento (L1 permitido en 1 frase máximo · luego inglés).",
+          "6. Plenaria de cierre 10 min: instructor proyecta el handout completo con la coloración correcta · clase verifica · 4 voluntarios (1 por color) leen 1 oración con stress y explican brevemente '*This is should — recommendation*' / '*This is is approaching — action in progress*' / etc.",
+          "7. Instructor activa la mini-card A5 de modales contrastivos (SHOULD/COULD/MIGHT/MUST) y la pega en cuaderno de cada aprendiz como referencia permanente."
+        ],
+        "teacher_talk_instruction": "*Look at the handout. 12 to 16 sentences from the port radio. Four colors. Hunt them like designers hunt fonts. AZUL — should, could, might. ROJO — is/are doing. VERDE — past simple, arrived, started, did. MORADO — faster than, more critical than. 25 minutes. Silent first. Then 25 minutes with your partner — cross-check. No phone. No teacher answers. Discover.*",
+        "icq": [
+          "*How many colors?* → Esperan: '4 / four'",
+          "*Can I use my phone for translation?* → Esperan: 'No / no phone / discover'",
+          "*Should I cross-check with my partner first or work alone first?* → Esperan: 'Alone first / 25 minutes individual / then partner'",
+          "*If I don't see all four colors, what do I do?* → Esperan: 'Hunt the easiest first / it's ok'"
+        ],
+        "answer_key_inline": {
+          "ejemplos_correctos_por_color": {
+            "AZUL_modales_Gr_6_ext": [
+              "You SHOULD approach starboard.",
+              "We COULD request more lines.",
+              "The wind MIGHT drop in 30 minutes.",
+              "We SHOULD wait for the pilot."
+            ],
+            "ROJO_presente_continuo_Gr_10": [
+              "The vessel IS APPROACHING berth 5.",
+              "We ARE SECURING the bow lines.",
+              "Customs IS INSPECTING cargo.",
+              "Diego IS WAITING at the yard."
+            ],
+            "VERDE_pasado_simple_Gr_9": [
+              "The vessel ARRIVED at 06:00.",
+              "Where DID the pilot board?",
+              "When DID cargo handling start?",
+              "The bosun SECURED the stern lines."
+            ],
+            "MORADO_comparativos_Gr_4": [
+              "Berthing is MORE CRITICAL THAN departure.",
+              "The pilot boards FASTER THAN customs.",
+              "This vessel is BIGGER THAN BUENAVENTURA EXPRESS.",
+              "VHF channel 16 is BUSIER THAN channel 12."
+            ]
+          },
+          "patron_esperado_S7_A2.0": "Promedio 8-12 ocurrencias correctas de 12-16 totales en el handout. Algunos aprendices confundirán pasado simple irregular (was/were) con presente continuo (is/are) — recast en plenaria. Comparativos morados son los más fáciles de detectar (más + adjective + than) · modales azules los más difíciles (las 3 palabras se confunden inicialmente · diferenciar con tabla contrastiva fuerza ilocutiva).",
+          "nota": "Inducción por descubrimiento — el HACER importa más que el resultado perfecto. Recast plenaria al final consolida."
+        },
+        "facilitation_notes": [
+          "💡 NO enseñe gramática explícita antes del descubrimiento — el suspenso pedagógico es el motor (PM-0 §5.13 noticing).",
+          "💡 Si un aprendiz se bloquea con AZUL modales (los más difíciles): acérquese y modele en voz baja '*Can you find SHOULD? Just one. Look here.*' · señala con dedo · luego retírese.",
+          "💡 Mantenga el poster Grammar Color Code visible TODO el bloque — sirve de andamio visual permanente.",
+          "💡 Tome foto de 2-3 handouts representativos al final del bloque · entran a su carpeta de evidencias S7 para mostrar progresión gramatical en S10 Consolidation Day.",
+          "💡 Si el chequeo cruzado en parejas se traba en discusión política '*¿quién tiene razón?*' — intervenga con 1 min de plenaria · dibuje 1 ejemplo en tablero · '*Both of you can have valid markings — let's see which sentence we agree on*'."
+        ],
+        "checkpoint": "✓ ≥85% de los aprendices tienen mínimo 8 ocurrencias subrayadas (de 12-16) con los 4 colores presentes (al menos 1 por color). Si menos: dar 5 min extra con consigna '*1 azul más, 1 rojo más, 1 verde más, 1 morado más — al menos 1 por color*'.",
+        "transition": "*Beautiful work. You hunted 4 colors. Now — close your handout. The radio starts. Three channels. No transcription. Just your ears, your Radio Log, and your color memory.*",
+        "tecnica_didactica": "Inducción gramatical por descubrimiento con marcación cromática + chequeo cruzado en parejas (PM-0 §5.13 noticing)"
+      },
+      {
+        "letra": "B",
+        "nombre": "Audio Tripartito — 3 Escuchas Estructuradas (PM-2.6 extensión)",
+        "duracion_min": 65,
+        "worksheet_ref": "PM-2.6 (extensión) Listening Tripartito — Audio script + Radio Log template",
+        "agrupacion": "Plenaria con audio (silencio académico)",
+        "objetivo": "Procesar receptivamente el audio tripartito 3 min (yard Diego español portuario L1 + bridge Captain Lopera VHF lingua franca B1 + customs oficial neutro) en 3 escuchas progresivas: (1) gist global · (2) discriminación de canales · (3) detección de grammar markers. Sin transcripción — andamiaje moderado-mínimo. Suspenso pedagógico activo — Radio Log se llena progresivamente · NO se completa hasta WHILE C (4ta escucha).",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor distribuye Radio Log template + activa el audio (3 bocinas paneadas o 3 zonas físicas demarcadas).",
+          "2. ESCUCHA 1 — Gist global (10 min · audio + 5 min reflexión silenciosa): '*Listen first time. Do NOT write yet. Just listen. Where are we? Yard, bridge, or customs? What's happening? Use your eyes — close them if you want.*' Audio reproduce 3 min completo · luego 5 min silencio para que cada aprendiz anote en hoja libre 1-2 frases gist (en cualquier idioma).",
+          "3. Plenaria recoger gist (5 min): instructor pregunta '*What did you hear? In one sentence — what is happening?*' — 3-4 voluntarios responden (L1 permitido si necesario). Instructor escribe en LIVE ZONE 1-2 hipótesis grupales · NO confirma todavía.",
+          "4. ESCUCHA 2 — Discriminación de canales (15 min · audio 2x + 5 min Radio Log filas Time + Channel): '*Listen second time. Now — Radio Log. Column 1 (Time) and Column 2 (Channel) ONLY. Yard, bridge, or customs? Use the panning — left, center, right. Or use the words you hear (yard says 'Diego' / bridge says 'Captain' / customs says 'inspection').*' Audio reproduce 2 veces · 5 min para llenar columnas 1+2 (sin summary aún).",
+          "5. Plenaria recoger canales (5 min): plenaria rápida · 3 voluntarios comparten 1 entrada cada uno (timestamp + canal). Instructor verifica panning sin revelar contenido completo.",
+          "6. ESCUCHA 3 — Detección de grammar markers (15 min · audio 1x + 10 min Radio Log filas Grammar Marker): '*Third listen. Now — Grammar Color Code. Listen for AZUL modales, ROJO presente continuo, VERDE pasado simple, MORADO comparativos. Mark in column 4 with one of the four colors.*' Audio reproduce 1 vez · 10 min para llenar columna 4 (sin summary aún).",
+          "7. Plenaria de cierre 10 min: instructor recoge patrón grupal — '*Which color appeared the most?*' (esperable: ROJO presente continuo y AZUL modales · VERDE pasado simple aparece menos · MORADO comparativos 1-2 veces). Escribe en LIVE ZONE el patrón."
+        ],
+        "teacher_talk_instruction": "*Three listens. First — just gist, no writing. Second — fill columns Time and Channel (yard, bridge, customs). Third — fill column Grammar Marker (AZUL, ROJO, VERDE, MORADO). NO transcription. NO phone. Trust your ears. Close your eyes if it helps. The summary column comes after the break — don't worry about it yet.*",
+        "icq": [
+          "*Do I write in the first listen?* → Esperan: 'No / no writing / just listen'",
+          "*What columns do I fill in the second listen?* → Esperan: '1 and 2 / Time and Channel'",
+          "*What about column 3 (Summary)?* → Esperan: 'After the break / not yet / WHILE C'",
+          "*How do I know if it's yard, bridge or customs?* → Esperan: 'Panning / left center right / or words like Diego, Captain, inspection'"
+        ],
+        "answer_key_inline": {
+          "audio_tripartito_estructura_5_mensajes": [
+            "ENTRADA 1 — 06:15 · BRIDGE · Captain Lopera: 'BUENAVENTURA EXPRESS calling Berth 4. We ARE APPROACHING. ETA 15 minutes. Over.' (presente continuo · ROJO)",
+            "ENTRADA 2 — 06:18 · YARD · Diego (español portuario): '¡Andrea, los contenedores están listos! Diga al puente que estamos esperando.' (transición — Andrea traduce: 'Containers are ready, the yard is waiting' · presente continuo · ROJO)",
+            "ENTRADA 3 — 06:22 · CUSTOMS · Officer: 'Customs to Berth 4. We will inspect cargo at 07:00. The vessel SHOULD wait for clearance. Berthing IS MORE CRITICAL THAN departure today — heavy traffic.' (modal AZUL + comparativo MORADO)",
+            "ENTRADA 4 — 06:25 · BRIDGE · Captain Lopera: 'Roger. The pilot ARRIVED at 06:20 and BOARDED at 06:23. We COULD request more lines if customs delays. Please confirm.' (pasado simple VERDE + modal AZUL)",
+            "ENTRADA 5 — 06:28 · YARD · Diego: '¡Listo, Andrea! La grúa estará en posición en 5 minutos. Diga al capitán que se acerque a estribor.' (transición — Andrea reporta a bridge: 'Crane will be ready in 5 minutes. You SHOULD approach starboard.' · modal AZUL)"
+          ],
+          "patron_esperado_S7_columna_canal": "Yard 2 entradas · Bridge 2 entradas · Customs 1 entrada (distribución 2-2-1)",
+          "patron_esperado_S7_columna_grammar_marker": "ROJO 2-3 ocurrencias · AZUL 3-4 · VERDE 1-2 · MORADO 1",
+          "nota": "El summary (columna 3) se redacta en WHILE C post-break. En WHILE B sólo Time + Channel + Grammar Marker."
+        },
+        "facilitation_notes": [
+          "💡 NO permita que los aprendices abran su PM-2.6 (extensión) handout durante WHILE B — sólo Radio Log template. El handout completo con audio script se entrega al final de WHILE D para auto-revisión.",
+          "💡 Si las bocinas estéreo no funcionan correctamente: instructor representa los 3 canales en vivo · cambia entonación + gesto + posición física (yard izquierda · bridge centro · customs derecha · 3 zonas demarcadas con cinta).",
+          "💡 Mantenga silencio académico durante las 3 escuchas — no haga comentarios entre reproducciones · sólo abra plenaria explícita en los momentos pautados.",
+          "💡 Si un aprendiz pide una 4ta escucha durante WHILE B: '*Soon. After the break. Trust your ears now.*' (la 4ta escucha está reservada para WHILE C consolidante).",
+          "💡 Tome foto del LIVE ZONE con el patrón grupal (color predominante) — útil para preview S8 (S8 introducirá presente perfecto · color nuevo MORADO se promueve a OTRO color y se agrega ROSA para perfecto)."
+        ],
+        "checkpoint": "✓ ≥85% de los aprendices tienen las 5 entradas con Time + Channel + Grammar Marker llenas (Summary aún vacío). Si menos · dar 3 min extra de plenaria de orientación · NO repetir audio en este bloque (la 4ta escucha está en WHILE C).",
+        "transition": "*Break time — 15 minutes. Stretch, water, café. When you come back — one final listen. Then you write. Five summaries. One sentence each. Use one of your four colors.*",
+        "tecnica_didactica": "Listening andamiado tripartito con 3 escuchas progresivas (gist → channels → grammar markers · sin transcripción) — PM-0 §8 input moderado-natural"
+      },
+      {
+        "letra": "C",
+        "nombre": "Radio Log Productivo — 4ta Escucha + Redacción 5 Summaries (PM-2.6 extensión)",
+        "duracion_min": 65,
+        "worksheet_ref": "PM-2.6 (extensión) Radio Log template + audio tripartito 4ta reproducción",
+        "agrupacion": "Plenaria con audio → Individual silencioso (redacción)",
+        "objetivo": "Redactar individualmente 5 summaries de 1 oración A2.0 cada uno · cada summary usa al menos 1 grammar marker (de los 4 colores) y al menos 1 término del Sub-bloque 3 maritime (berthing · mooring · departure · cargo handling · anchor · approaching · securing). Producto verificable que sintetiza listening receptivo en escritura A2.0.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor reproduce el audio tripartito 1 vez completa (3 min · 4ta escucha consolidante) — '*Final listen. Now your Radio Log makes sense. Listen with your colors active.*'",
+          "2. Plenaria flash 5 min: instructor recoge 1-2 confirmaciones (canal predominante · grammar color predominante) · NO revela respuestas completas.",
+          "3. 30 min individuales (silencio académico): redacción de 5 summaries — 1 oración A2.0 por entrada · cada summary usa al menos 1 grammar marker visible (subrayar el verbo/adjetivo con el color correspondiente) y al menos 1 término maritime Sub-bloque 3.",
+          "4. Música instrumental marítima muy baja durante los 30 min · sonidos suaves de puerto.",
+          "5. Instructor circula leyendo sobre el hombro · recast suave SÓLO en breakdowns gramaticales graves (ej: omisión total del verbo principal o uso de tiempo verbal totalmente disonante con el grammar marker subrayado · '*You marked azul — what's the modal you're using here?*'). NO corrige vocabulario · NO corrige ortografía · NO corrige spelling SMCP en S7.",
+          "6. Si un aprendiz se atora en una entrada · instructor modela en voz baja '*Look at your time. 06:22. Look at your channel. Customs. What did the customs officer say? One sentence. Use AZUL or MORADO — those were the colors of customs.*'",
+          "7. Cierre 5 min: instructor pide '*Show me your Radio Log. 5 summaries. Hands up.*' — survey visual · 25 manos arriba esperable. Si menos: dar 5 min extra silenciosos."
+        ],
+        "teacher_talk_instruction": "*Final listen — 3 minutes. Then 30 minutes silent. Five summaries. One sentence each — A2.0 level. Each summary uses ONE grammar color (azul, rojo, verde, or morado) — underline the verb. Each summary uses ONE Sub-bloque 3 word (berthing, mooring, departure, cargo handling, anchor, approaching, securing) — circle it. Music on. Music low. Just you and the radio.*",
+        "icq": [
+          "*How many summaries do I write?* → Esperan: '5 / five'",
+          "*How long is each summary?* → Esperan: '1 sentence / one sentence A2.0'",
+          "*Do I underline the grammar marker?* → Esperan: 'Yes / underline the verb with the color'",
+          "*Do I circle the maritime word?* → Esperan: 'Yes / Sub-bloque 3 word'",
+          "*Can I leave one entry blank if I missed it?* → Esperan: 'Better try / one short sentence is ok / be honest'"
+        ],
+        "answer_key_inline": {
+          "summaries_modelo_esperados_por_entrada": [
+            "ENTRADA 1 (06:15 · BRIDGE · ROJO presente continuo): 'The BUENAVENTURA EXPRESS IS APPROACHING (rojo) berth 4 — ETA 15 minutes.' (Sub-bloque 3 word: approaching)",
+            "ENTRADA 2 (06:18 · YARD · ROJO presente continuo): 'The yard IS WAITING (rojo) — containers are ready for cargo handling.' (Sub-bloque 3 word: cargo handling)",
+            "ENTRADA 3 (06:22 · CUSTOMS · AZUL modal + MORADO comparativo): 'The vessel SHOULD WAIT (azul) for customs clearance — berthing IS MORE CRITICAL THAN departure (morado) today.' (Sub-bloque 3 word: berthing · departure)",
+            "ENTRADA 4 (06:25 · BRIDGE · VERDE pasado simple + AZUL modal): 'The pilot ARRIVED (verde) at 06:20 — we COULD REQUEST (azul) more mooring lines if customs delays.' (Sub-bloque 3 word: mooring)",
+            "ENTRADA 5 (06:28 · YARD/BRIDGE · AZUL modal): 'Diego says the crane will be ready — Captain SHOULD APPROACH (azul) starboard for securing.' (Sub-bloque 3 word: securing)"
+          ],
+          "patron_esperado_S7_A2.0_calidad_summaries": "60-70% de aprendices producen 5/5 summaries · 20-30% producen 3-4/5 · 5-10% producen menos. Esperable que 1-2 summaries tengan disonancia entre grammar marker subrayado y verbo real (ej: marcaron AZUL pero usaron presente continuo) — recast en WHILE D plenaria.",
+          "nota": "Producto verificable. NO evaluado formalmente (E1-E6 no en S7) · sí registrado para portafolio progresivo S10."
+        },
+        "facilitation_notes": [
+          "💡 Recast suave dominante — feedback MIXTO transitando a fluency (PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_3). NO interrumpa flujo · sólo señale el desajuste al aprendiz en voz baja.",
+          "💡 Si el aprendiz produce summary 100% correcto · celebre discretamente '*Beautiful — the verb matches the color*' (recast positivo).",
+          "💡 Mantenga la música baja constante — refuerza inmersión sensorial portuaria.",
+          "💡 Si un aprendiz pide la 5ta escucha del audio: '*Trust what you have. The Radio Log is honesty, not perfection.*' La 5ta escucha NO es parte del diseño S7.",
+          "💡 Tome foto de 3-4 Radio Logs representativos al final del bloque · entran a portafolio progresivo + sirven para recast plenaria de WHILE D."
+        ],
+        "checkpoint": "✓ ≥85% de los aprendices tienen 5/5 summaries (al menos 1 oración por entrada · puede ser corta · al menos 1 grammar marker subrayado y 1 maritime word circled). Si menos · dar 5 min extra silenciosos · NO comprometer WHILE D peer cross-check.",
+        "transition": "*Good work. Five summaries on paper. Now — turn to your partner. Cross-check. Find one entry where you marked the same grammar color. Find one where you didn't.*",
+        "tecnica_didactica": "Escritura sintética productiva post-listening con grammar marker explícito + integración léxica Sub-bloque 3 maritime"
+      },
+      {
+        "letra": "D",
+        "nombre": "Peer Cross-Check + Recast Plenaria — 5 Muestras Representativas (PM-2.6 extensión)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.6 (extensión) Peer Cross-Check guide (3 ítems observables)",
+        "agrupacion": "Parejas heterogéneas → Plenaria",
+        "objetivo": "Aplicar peer feedback estructurado en parejas con 3 ítems observables (¿clarísimo? · ¿1 grammar marker correcto? · ¿1 vocabulario Sub-bloque 3?). Luego recast plenaria de 5 muestras representativas (1 por canal mínimo · 1 con cada color gramatical) con corrección colectiva en LIVE ZONE. Feedback MIXTO: peer (formativo · sin nota) + recast docente (delayed · post-task · en plenaria).",
+        "instrucciones_paso_a_paso": [
+          "1. Formar parejas heterogéneas (mezclar aprendiz con muchos summaries vs pocos · mezclar quien marcó AZUL bien con quien marcó ROJO bien).",
+          "2. Distribuir Peer Cross-Check guide A5 con 3 ítems: '*(1) Is the summary clear? Can I understand what happened? · (2) Is the grammar color correct? Does the underlined verb match the color? · (3) Is there a Sub-bloque 3 word circled (berthing, mooring, departure, cargo handling, anchor)?*'",
+          "3. 20 min en parejas: aprendiz A muestra Radio Log a aprendiz B · B chequea los 3 ítems en voz alta (en inglés mínimo · español permitido para clarificación) · B anota observaciones en margen del Radio Log de A. Luego rotación · A chequea Log de B (10 min · 10 min).",
+          "4. Permiso explícito: '*Don't fix. Don't correct grammar. Just observe and ask. If you disagree on a color — write both options in the margin.*'",
+          "5. Plenaria recast 30 min — instructor selecciona 5 muestras representativas (1 con cada color · 1 con disonancia color/verbo · 1 con vocabulario maritime impecable) y proyecta 1 a la vez (anonimizada).",
+          "6. Para cada muestra · instructor lee en voz alta · clase responde con ✓ verde (correcto) o ✗ rojo (a revisar) usando bolígrafos en el aire. Instructor escribe la versión final corregida en LIVE ZONE con bolígrafo verde (correcto) o rojo (recast con tachadura visible del error original).",
+          "7. Cierre del bloque: '*Look at LIVE ZONE. 5 summaries. 5 grammar markers. 5 maritime words. THIS is A2.0. THIS is what Andrea writes after a tripartite radio call. Save it in your portfolio.*'",
+          "8. Instructor entrega ahora SÍ el PM-2.6 (extensión) handout completo con audio script · cada aprendiz puede comparar Radio Log con script real (auto-revisión 5 min · sin grade)."
+        ],
+        "teacher_talk_instruction": "*Pairs. Cross-check. Three items only: clear? color correct? maritime word circled? Don't fix. Don't teach. Just observe. 20 minutes. Then plenary — I show 5 examples. Class votes verde or rojo. We write the final version on the board. This is A2.0 in real action.*",
+        "icq": [
+          "*How many items do I check?* → Esperan: '3 / three'",
+          "*Can I correct my partner's grammar?* → Esperan: 'No / just observe / write both options in margin'",
+          "*Who shows first?* → Esperan: 'A / first one / 10 minutes'",
+          "*What do I do during plenary?* → Esperan: 'Vote verde or rojo / pen in the air'"
+        ],
+        "answer_key_inline": {
+          "5_muestras_representativas_seleccion_instructor": [
+            "MUESTRA 1 (canal BRIDGE · color ROJO correcto): 'The BUENAVENTURA EXPRESS is approaching berth 4.' → ✓ verde (verbo subrayado en rojo · approaching circled).",
+            "MUESTRA 2 (canal YARD · color ROJO con disonancia): 'The yard waits for cargo handling.' marcado en ROJO → ✗ rojo (presente simple · no presente continuo · recast: 'is waiting').",
+            "MUESTRA 3 (canal CUSTOMS · color AZUL + MORADO correctos): 'Customs should wait — berthing is more critical than departure.' → ✓ verde (modal AZUL subrayado · comparativo MORADO subrayado · 2 maritime words circled).",
+            "MUESTRA 4 (canal BRIDGE · color VERDE con error verbo irregular): 'The pilot arriveded at 06:20.' → ✗ rojo (regular -ed agregado a irregular · recast: 'arrived' una sola vez).",
+            "MUESTRA 5 (canal YARD/BRIDGE · color AZUL + maritime word securing): 'Captain should approach starboard for securing.' → ✓ verde (modal AZUL subrayado · securing circled · A2.0 perfecto)."
+          ],
+          "patron_observable_S7_pareja_calibracion": "Esperable 60-70% acuerdo entre pares en color · 80-90% acuerdo en clarity · 70% acuerdo en maritime word circled. La discusión sobre desacuerdo es VALIOSA (PM-0 §5.13 noticing colaborativo).",
+          "nota": "Peer feedback formativo · sin grade. Recast docente delayed (post-task) · feedback dominante MIXTO."
+        },
+        "facilitation_notes": [
+          "💡 NO permita corrección invasiva entre pares — la cultura de cross-check es OBSERVACIÓN sin juicio (PM-0 §5.11 feedback ACCURACY no invasivo).",
+          "💡 Anonimice las muestras en plenaria — diga '*A trainee wrote*' nunca '*Maria wrote*'. Protección afectiva.",
+          "💡 Use bolígrafo VERDE para correcto y ROJO para a-revisar en LIVE ZONE — refuerza el código cromático del Grammar Color Code.",
+          "💡 Si una muestra genera debate plenario sobre la corrección (ej: '*¿es 'arrived' o 'arrives'?*'): aproveche para mini-recast colectivo · escriba ambas opciones en tablero · '*Past simple regular -ed = arrived. Present simple = arrives. Listen to the audio time: 06:20 — past. Arrived.*' (uso del 5% L1 si necesario)",
+          "💡 La entrega del PM-2.6 (extensión) handout completo con audio script al final de WHILE D es el momento '*revelación*' — el aprendiz ahora puede auto-comparar y celebrar coincidencias o aprender de discrepancias. NO conviértalo en evaluación · sólo auto-validación."
+        ],
+        "checkpoint": "✓ ≥85% de las parejas completaron los 3 ítems de cross-check Y la plenaria recast incluyó las 5 muestras con voto verde/rojo de clase. Si tiempo corto: priorizar las 5 muestras plenaria (peer cross-check puede acortarse a 15 min en lugar de 20 min).",
+        "transition": "*Now we have 5 corrected summaries on the board. One last thing — modals. Should, could, might. We drill them once. And then — bridge to Session 8.*",
+        "tecnica_didactica": "Peer feedback formativo estructurado (3 ítems observables) + recast plenaria docente con corrección colectiva visible (PM-0 §5.11)"
+      },
+      {
+        "letra": "E",
+        "nombre": "Modal Contrast Drill + Speaking Mínimo — Bridge a S8 (PM-2.10 Gr 6 ext)",
+        "duracion_min": 45,
+        "worksheet_ref": "PM-2.10 (Gr 6 ext) Modal contrast mini-card + Speaking prompt cards",
+        "agrupacion": "Plenaria (drilling) → Parejas (producción mínima) → Plenaria (3 voluntarios)",
+        "objetivo": "Drillear contrastivamente la fuerza ilocutiva de los 4 modales activos (SHOULD recomendación · COULD permiso/posibilidad · MIGHT probabilidad · MUST obligación · reciclado de S6) en pares contrastivos con stress crítico. Producir oralmente 1-2 oraciones A2.0 con modales en parejas sobre escenario Berthing — sin evaluación · sólo activación productiva mínima como bridge a S8 Berthing tripartito Speaking.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor proyecta tabla comparativa modales (slide A2): 4 columnas SHOULD / COULD / MIGHT / MUST · cada una con (a) fuerza ilocutiva · (b) ejemplo del audio S7 · (c) stress.",
+          "2. Drilling contrastivo (15 min · choral repetition + finger drilling): instructor modela pares contrastivos uno a la vez · clase repite con eco. (1) '*You SHOULD approach starboard.*' / '*You MUST approach starboard.*' (recomendación vs obligación · stress fuerte en ambos modales). (2) '*We COULD request more lines.*' / '*We MIGHT need more lines.*' (permiso/posibilidad vs probabilidad · stress débil en COULD/MIGHT). (3) Repetición 3x cada par · clase responde con eco · luego instructor invita 4 voluntarios (1 por modal) a leer en voz alta.",
+          "3. Stress drift attention 5 min (PM-0 §5.13): instructor modela el sufijo -ing que NO cambia stress en BERTH-ing / APPROACH-ing · clase repite. Marca en LIVE ZONE 'BERTH-ing — stress on FIRST · -ing is weak'.",
+          "4. Producción oral mínima en parejas (15 min): cada pareja recibe 1 prompt card con escenario A2.0 — '*The wind is dropping. The vessel is approaching berth 5. What does Andrea say to Captain Lopera?*' Pareja A produce 1-2 oraciones con MODAL · pareja B escucha y responde con 1 oración con MODAL diferente (alternancia). Cambio de roles después de 7 min.",
+          "5. 3 voluntarios pasan a plenaria (10 min) — cada uno produce 1 oración con modal sobre el escenario. Clase aplaude (no juicio · celebración A2.0 incipiente). Instructor escribe las 3 oraciones en LIVE ZONE con modal subrayado en AZUL.",
+          "6. Cierre del bloque (clave bridge a S8): '*Tomorrow — Session 8 — you will speak this for real. Tripartite. Diego at the yard, Bosun Romero at the bridge, Captain Lopera at the VHF. You will lead. Today you whispered modals. Tomorrow you command them.*'"
+        ],
+        "teacher_talk_instruction": "*Modals. Four. SHOULD — recommendation. COULD — possibility. MIGHT — probability. MUST — obligation. Drill with me. (Plenary 15 min.) Then — your prompt card. With your partner. 1-2 sentences. Use one modal. The other partner uses a different modal. Then 3 volunteers — speak to the class. No grade. Just brave voices. Bridge to Session 8.*",
+        "icq": [
+          "*How many modals?* → Esperan: '4 / four / SHOULD COULD MIGHT MUST'",
+          "*Will we be evaluated today?* → Esperan: 'No / no grade / bridge to S8'",
+          "*How many sentences with my partner?* → Esperan: '1-2 / one or two'",
+          "*Should I use the same modal as my partner?* → Esperan: 'No / different modal / alternance'"
+        ],
+        "answer_key_inline": {
+          "ejemplos_pareja_esperados_A2.0": [
+            "Pareja A (recomendación): 'You SHOULD approach starboard. The wind is dropping.'",
+            "Pareja B (probabilidad): 'The wind MIGHT change in 30 minutes. We MIGHT need more lines.'",
+            "Pareja A (obligación): 'We MUST wait for the pilot. He arrives at 06:20.'",
+            "Pareja B (permiso/posibilidad): 'We COULD request a tug if the wind increases.'"
+          ],
+          "stress_critico_S7": [
+            "SHOULD /ʃʊd/ — stress únic débil (-ould)",
+            "COULD /kʊd/ — stress únic débil (-ould)",
+            "MIGHT /maɪt/ — stress únic fuerte",
+            "MUST /mʌst/ — stress únic fuerte",
+            "BERTH-ing /ˈbɜːrθɪŋ/ — stress PRIMERA · -ing débil",
+            "APPROACH-ing /əˈproʊtʃɪŋ/ — stress SEGUNDA · -ing débil"
+          ],
+          "patron_esperado_S7_speaking_minimo": "60-70% de las parejas producen 2 oraciones con modales correctos · 20-30% producen 1 oración + necesita recast · 5-10% se atoran (intervención docente con modelado de pareja).",
+          "nota": "Sin evaluación. Bridge a S8 Berthing Speaking tripartito (E4 final segment)."
+        },
+        "facilitation_notes": [
+          "💡 Stress contrastivo SHOULD vs MUST es crítico — los aprendices A2.0 confunden fuerza ilocutiva (recomendación vs obligación). Use gestos: SHOULD = mano abierta sugiriendo · MUST = puño firme dictando.",
+          "💡 Si un voluntario plenario produce frase con disonancia modal/contexto (ej: '*You MUST approach if you want*' contradicción): recast amable sin interrumpir · '*Beautiful — and remember, MUST is for orders, IF is for choices. So: 'You SHOULD approach if you want' or 'You MUST approach now'.*'",
+          "💡 NO presione la producción oral — S7 es input dominante. La meta es activar mínimamente ANTES de S8 · no exigir fluidez completa hoy.",
+          "💡 Tome foto del LIVE ZONE con las 3 oraciones plenarias — entran a portafolio bridge S7→S8 + se reciclan en S8 warm-up.",
+          "💡 Cierre el bloque con energía anticipatoria — S8 es el clímax del Bloque Interno 3 (ABT + Simulación tripartita)."
+        ],
+        "checkpoint": "✓ Las parejas completaron al menos 1 oración con modal correctamente Y al menos 3 voluntarios pasaron a plenaria con producción A2.0 visible. Si menos voluntarios: instructor modela 1 oración propia y abre la puerta · '*¿Quién quiere ser el siguiente?*' (uso 5% L1 si necesario).",
+        "transition": "*Beautiful work, Junior Trainees. You hunted 4 colors. You completed 5 Radio Logs. You drilled 4 modals. Tomorrow — Session 8 — you lead the tripartite. Today, the radio listened to you. Tomorrow, the radio answers to you.*",
+        "tecnica_didactica": "Drilling contrastivo de modales con stress crítico + producción oral mínima en parejas con prompt card como bridge a Speaking tripartito S8 (PM-0 §5.13)"
+      }
+    ],
+    "breaks": [
+      {
+        "tiempo": "2:30-2:45",
+        "duracion_min": 15,
+        "tipo": "Receso activo (café + baño + estiramiento)",
+        "notas": "Hidratación. Mantener Grammar Color Code visible. Recordar que Radio Log NO está terminado — la 4ta escucha post-break consolida con redacción de summaries. Usar el break para recargar bocinas/audio + verificar que los 4 colores de marcadores están disponibles para WHILE D peer cross-check."
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 25,
+    "exit_ticket": {
+      "tarea": "Exit Ticket S7 — Tarjeta 10×15 cm con 3 ítems Radio Log auto-evaluación: (1) ONE summary I wrote that I am most proud of (copy it · subrayar grammar marker color · circle maritime word) · (2) ONE grammar color I want to drill more (azul/rojo/verde/morado · in 1 word) · (3) ONE thing about tripartite listening I now understand better (in English or Spanish). Entregar en la caja del instructor antes de salir.",
+      "success_criteria": "Las 3 líneas completas. Mínimo 1 summary copiado con grammar marker visible. La reflexión puede ser en español. La caja se abre y se lee S8 warm-up (sin nombrar autores · 2-3 muestras como bridge motivacional).",
+      "duration_min": 10
+    },
+    "sintesis": "Hoy abriste A2.0. Cazaste 4 grammar colors (azul modales · rojo presente continuo · verde pasado simple · morado comparativos) en 12-16 oraciones del puerto. Escuchaste audio tripartito 3 minutos sin transcripción · 4 escuchas progresivas (gist → channels → grammar markers → consolidación). Completaste Radio Log con 5 entradas (timestamp + canal + summary A2.0 + grammar marker). Cross-check con tu pareja con 3 ítems observables. Recast plenaria de 5 muestras representativas en LIVE ZONE. Drillaste 4 modales contrastivos (SHOULD/COULD/MIGHT/MUST) y produjiste 1-2 oraciones A2.0 en parejas. Mañana — Sesión 8 — coordinas tripartito Speaking en vivo (Diego yard + Bosun Romero bridge + Captain Lopera VHF · 3 minutos · E4 final segment).",
+    "asignacion_autonoma": {
+      "actividad": "Listening Cloze SMCP en 3 audios reales canal IMO YouTube (anchorage · pilot boarding · cargo handling) + completar Radio Log con timestamps · 2.33 horas autónomas (≈140 min)",
+      "instrucciones_detalladas": [
+        "1. Buscar 3 audios cortos en canal IMO YouTube (o videos similares de la flota mercante OMI · sugerencia: 'IMO Maritime English' o 'SMCP example phrases'). Audios sugeridos: (a) ANCHORAGE — buque dropping anchor · (b) PILOT BOARDING — pilot embarcando · (c) CARGO HANDLING — operación de grúa portuaria.",
+          "2. Para cada audio (60-120 segundos cada uno): escuchar 2 veces · primero gist · segundo detalle.",
+        "3. Llenar Radio Log autónomo con 3 entradas (1 por audio · timestamp puede ser estimado · canal yard/bridge/customs según contexto · summary 1 oración A2.0 con al menos 1 grammar marker color).",
+        "4. Identificar al menos 1 SMCP key phrase en cada audio (Roger · Wilco · Standby · Over · Out · Affirmative) · subrayar en summary.",
+        "5. Llevar Radio Log autónomo + el link de los 3 audios a S8 warm-up — chequeo cruzado en parejas (5 min · sin evaluación)."
+      ],
+      "entregable": "Radio Log autónomo con 3 entradas (timestamp + canal + summary A2.0 + grammar marker + 1 SMCP key phrase por audio) + 3 links de audios IMO YouTube.",
+      "cuando_se_revisa": "S8 warm-up (5 min) — chequeo cruzado en parejas + identificación grupal del audio más complejo · sin evaluación formal · el instructor valida presencia (entregó / no entregó). Audio más complejo usado como warm-up del Berthing Speaking tripartito S8.",
+      "tiempo_estimado_min": 140,
+      "tiempo_estimado_horas": 2.333333
+    },
+    "bridge_to_next": "*Next session — Session 8: Coordinating the Quay — Speaking Tripartite. You become the leader. Diego at the yard speaks Spanish. Bosun Romero at the bridge speaks broken English. Captain Lopera on the VHF speaks lingua franca B1. YOU coordinate all three. Three minutes. E4 Speaking final segment — 5 points · Escala Estimación. Bring your Radio Log autonomous + your 3 IMO YouTube audios. Come ready to lead.*",
+    "teacher_talk_closing_en": "*Junior Trainees — today was a leap. From A1.3 to A2.0. From one voice to three voices. From listening to writing. From writing to speaking. You hunted 4 grammar colors. You completed 5 Radio Logs. You drilled 4 modals. You produced your first A2.0 sentences with should, could, might, and must. The radio listened to you today. Tomorrow — Session 8 — the radio answers to you. Tripartite. Diego, Bosun Romero, Captain Lopera. Three voices. One Andrea. You. See you Monday. ¡Nos vemos el lunes, Aprendices Junior!*",
+    "teacher_talk_closing_es_cursive": "*(Aprendices Junior — hoy fue un salto. De A1.3 a A2.0. De una sola voz a tres voces. De escuchar a escribir. De escribir a hablar. Cazaste 4 colores gramaticales. Completaste 5 Radio Logs. Drillaste 4 modales. Produjiste tus primeras oraciones A2.0 con should, could, might y must. La radio te escuchó hoy. Mañana — Sesión 8 — la radio te responde a ti. Tripartito. Diego, Bosun Romero, Captain Lopera. Tres voces. Una Andrea. Tú. Nos vemos el lunes, Aprendices Junior.)*",
+    "reflection_prompt": "Antes de salir · 30 segundos de silencio: '*¿Qué versión de mí entró a esta aula esta mañana? ¿Qué versión de mí sale ahora coordinando 3 canales?*' (no se responde en voz alta · sólo se siente).",
+    "facilitation_notes": [
+      "💡 Cierre con energía anticipatoria de S8 — el Berthing tripartito es el clímax del Bloque Interno 3 · que los aprendices se vayan con sensación de '*mañana puedo*'.",
+      "💡 Si un aprendiz expresa ansiedad por S8 ('*¿yo lidero los 3 canales? imposible*'): respete · responda '*Today you led 5 summaries. Tomorrow you lead 3 voices for 3 minutes. We rehearse together at warm-up. You are not alone.*'",
+      "💡 Tome foto del LIVE ZONE final con las 5 muestras corregidas + las 3 oraciones de modales — entran a su carpeta de evidencias S7 + se proyectan en S8 warm-up como bridge.",
+      "💡 Si queda tiempo (<3 min): mini-celebración del cierre del WHILE C (Radio Log productivo) — '*Show your Radio Log to your neighbor. High five. You wrote A2.0 today.*'",
+      "💡 Recordar a aprendices llevar PM-2.6 (extensión) handout completo a S8 (con audio script · ya entregado al final de WHILE D) — sirve como referencia comparativa cuando hagan el Berthing tripartito."
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "WHILE A — Grammar Awareness 4 Colores (PM-2.10)",
+      "items": [
+        {
+          "pregunta": "AZUL modales (Gr 6 ext · should/could/might) · ejemplos correctos del handout",
+          "respuesta_correcta": "You SHOULD approach starboard · We COULD request more lines · The wind MIGHT drop in 30 minutes · We SHOULD wait for the pilot",
+          "alternativas": ["Cualquier oración con should/could/might subrayada en azul"],
+          "puntos": 0,
+          "nota": "Inducción por descubrimiento · sin grade"
+        },
+        {
+          "pregunta": "ROJO presente continuo (Gr 10 · is/are + V-ing) · ejemplos correctos",
+          "respuesta_correcta": "The vessel IS APPROACHING berth 5 · We ARE SECURING the bow lines · Customs IS INSPECTING cargo · Diego IS WAITING at the yard",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "VERDE pasado simple (Gr 9 · regular + irregular + Wh-) · ejemplos correctos",
+          "respuesta_correcta": "The vessel ARRIVED at 06:00 · Where DID the pilot board? · When DID cargo handling start? · The bosun SECURED the stern lines",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "MORADO comparativos (Gr 4 · -er/more than) · ejemplos correctos",
+          "respuesta_correcta": "Berthing is MORE CRITICAL THAN departure · The pilot boards FASTER THAN customs · This vessel is BIGGER THAN BUENAVENTURA EXPRESS · VHF channel 16 is BUSIER THAN channel 12",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE B — Audio Tripartito 3 Escuchas (PM-2.6 extensión)",
+      "items": [
+        {
+          "pregunta": "Distribución de 5 entradas por canal",
+          "respuesta_correcta": "Yard 2 entradas (06:18 · 06:28) · Bridge 2 entradas (06:15 · 06:25) · Customs 1 entrada (06:22)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Distribución de grammar markers en las 5 entradas",
+          "respuesta_correcta": "ROJO 2-3 ocurrencias · AZUL 3-4 · VERDE 1-2 · MORADO 1",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuántas escuchas estructuradas en WHILE B?",
+          "respuesta_correcta": "3 escuchas (gist · channels · grammar markers) — la 4ta consolidante es WHILE C",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE C — Radio Log Productivo 5 Summaries (PM-2.6 extensión)",
+      "items": [
+        {
+          "pregunta": "Modelo summary entrada 1 (06:15 · BRIDGE · ROJO)",
+          "respuesta_correcta": "The BUENAVENTURA EXPRESS IS APPROACHING berth 4 — ETA 15 minutes",
+          "alternativas": ["The vessel is approaching berth 4 in 15 minutes"],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Modelo summary entrada 3 (06:22 · CUSTOMS · AZUL + MORADO)",
+          "respuesta_correcta": "The vessel SHOULD WAIT for customs clearance — berthing IS MORE CRITICAL THAN departure today",
+          "alternativas": ["Customs should wait — berthing is more critical than departure"],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Modelo summary entrada 4 (06:25 · BRIDGE · VERDE + AZUL)",
+          "respuesta_correcta": "The pilot ARRIVED at 06:20 — we COULD REQUEST more mooring lines if customs delays",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Sub-bloque 3 maritime words esperadas circled en summaries",
+          "respuesta_correcta": "approaching · cargo handling · berthing · departure · mooring · securing · anchor",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE D — Peer Cross-Check + Recast Plenaria",
+      "items": [
+        {
+          "pregunta": "¿Cuántos ítems chequea el peer cross-check?",
+          "respuesta_correcta": "3 ítems (clarísimo? · grammar marker correcto? · maritime word circled?)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Patrón de calibración esperable entre pares",
+          "respuesta_correcta": "60-70% acuerdo en color · 80-90% acuerdo en clarity · 70% acuerdo en maritime word circled",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE E — Modal Contrast Drill (PM-2.10 Gr 6 ext)",
+      "items": [
+        {
+          "pregunta": "4 modales contrastivos con fuerza ilocutiva",
+          "respuesta_correcta": "SHOULD recomendación · COULD permiso/posibilidad · MIGHT probabilidad · MUST obligación",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Stress crítico modales",
+          "respuesta_correcta": "SHOULD /ʃʊd/ débil · COULD /kʊd/ débil · MIGHT /maɪt/ fuerte · MUST /mʌst/ fuerte",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Stress drift attention en -ing",
+          "respuesta_correcta": "BERTH-ing /ˈbɜːrθɪŋ/ stress PRIMERA · APPROACH-ing /əˈproʊtʃɪŋ/ stress SEGUNDA — el sufijo -ing NO cambia stress",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WRAP-UP — Asignación Autónoma",
+      "items": [
+        {
+          "pregunta": "¿Cuántos audios IMO YouTube debe escuchar?",
+          "respuesta_correcta": "3 audios (anchorage · pilot boarding · cargo handling)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuántas entradas en el Radio Log autónomo?",
+          "respuesta_correcta": "3 entradas (1 por audio · con timestamp · canal · summary A2.0 · grammar marker · 1 SMCP key phrase)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuándo se revisa la asignación autónoma?",
+          "respuesta_correcta": "S8 warm-up (5 min · chequeo cruzado en parejas · sin evaluación)",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "En WHILE A: subrayar 2-3 ocurrencias adicionales por color (más allá de las 8-12 esperadas) · agregar 1 quinto color libre para conectores (and/but/because) como anticipo de S9.",
+      "En WHILE B: anotar 1-2 detalles extra por entrada (ej: tono de voz · interferencia · stakes implícitos) en margen del Radio Log.",
+      "En WHILE C: producir 6-7 summaries en lugar de 5 · cubrir transiciones implícitas entre canales (ej: cómo Andrea translate yard español a bridge inglés).",
+      "En WHILE D: en peer cross-check · ofrecer recast escrito al pareja en margen (con permiso · '*¿quieres que te sugiera una corrección?*').",
+      "En WHILE E: producir 3-4 oraciones con modales (en lugar de 1-2) · combinar 2 modales en 1 oración compleja (ej: '*We SHOULD approach starboard but we MIGHT need more lines*').",
+      "Rol de peer tutor en WHILE D: ayudar a un compañero a identificar 1 grammar marker correctamente en su Radio Log (sin corregir el resto).",
+      "Asignación autónoma extendida: 4-5 audios IMO YouTube en lugar de 3 · agregar análisis comparativo SMCP entre los audios."
+    ],
+    "more_support_needed": [
+      "Tiempo extra en WHILE A (hasta 70 min) si la inducción por descubrimiento es lenta — instructor modela 1 oración por color con el aprendiz uno-a-uno (sin revelar el resto).",
+      "En WHILE B — permitir que escuchen el audio una 4ta vez con audífonos individuales (si disponibles) · mantener el silencio académico del resto del grupo.",
+      "En WHILE B — ofrecer Radio Log pre-rellenado con timestamps + canales (las primeras 2 entradas como modelo) · aprendiz completa solo las 3 últimas entradas + grammar markers.",
+      "En WHILE C — permitir que produzcan 3 summaries en lugar de 5 (de los 3 más claros) · siempre con grammar marker subrayado.",
+      "En WHILE C — ofrecer sentence frames bilingües: '*The vessel IS ___ ing at berth 4*' (rojo) · '*The pilot ARRIVED at ___*' (verde) · '*We SHOULD ___*' (azul) · aprendiz completa los blancos.",
+      "En WHILE D — formar pareja heterogénea con un fast finisher como peer tutor explícito (con guía de 3 ítems estricta para evitar invasividad).",
+      "En WHILE E — permitir que reciten 1 oración modelo del audio (en lugar de producir libre) · '*Repeat: 'You SHOULD approach starboard.' Now your turn.*'",
+      "En WHILE E — eximir de plenaria voluntaria si la presión afectiva es alta (no forzar) · sólo trabajo en parejas.",
+      "Asignación autónoma reducida: 2 audios IMO YouTube en lugar de 3 · 2 entradas Radio Log autónomo en lugar de 3.",
+      "Contacto uno-a-uno al final de la sesión: '*How was your A2.0 entry today? How can I help you for Session 8 tripartite Speaking? Bring me a coffee on Monday — I'll rehearse Diego/Bosun/Captain with you 10 minutes before class.*'"
+    ]
+  },
+  "instructor_self_check": [
+    "✓ ¿Activé el Grammar Color Code poster A2 con choral repetition de los 4 ejemplos antes de WHILE A?",
+    "✓ ¿Mantuve silencio académico durante las 3 escuchas estructuradas de WHILE B (sin transcripción)?",
+    "✓ ¿Realicé recast suave durante WHILE C (delayed feedback) sin interrumpir flujo de redacción?",
+    "✓ ¿La plenaria recast de WHILE D incluyó las 5 muestras representativas con voto verde/rojo de clase y corrección colectiva en LIVE ZONE?",
+    "✓ ¿Drillé contrastivamente los 4 modales en WHILE E con stress crítico (SHOULD débil vs MUST fuerte) y produje al menos 3 voluntarios plenarios con oraciones A2.0?",
+    "✓ ¿Cerré con preview explícito de S8 (Berthing Speaking tripartito · E4 final segment · Diego yard + Bosun Romero bridge + Captain Lopera VHF)?",
+    "✓ ¿Mantuve L1 ≤ 5% durante toda la sesión (uso quirúrgico sólo en giro contrastivo presente continuo / presente perfecto · NO para vocabulario · NO para instrucciones)?"
+  ],
+  "activity_logistics": {
+    "espacio": "Aula bilingüe configurada con 3 zonas auditivas demarcadas con cinta de color (yard amarillo · bridge azul · customs verde) — configuración tipo 'isla central' para Andrea (aprendiz líder) durante listening tripartito. Maritime Word Wall extendido Sub-bloque 3 con 5 nuevas tarjetas en pared lateral. Grammar Color Code poster A2 en muro lateral permanente. English Zone 🔵 permanente desde S1. Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 en muros frontal y lateral.",
+    "agrupamiento": "Plenaria (SET-UP + WHILE B audio + recast plenaria WHILE D) → Individual silencioso (WHILE A inducción · WHILE B Radio Log columnas 1+2+4 · WHILE C redacción summaries) → Parejas heterogéneas (WHILE A chequeo cruzado · WHILE D peer cross-check · WHILE E producción mínima) → Plenaria de cierre (3 voluntarios WHILE E + WRAP-UP). Transiciones explícitas con Teacher Talk corto (max 30 seg cada cambio).",
+    "recursos": [
+      "Proyector + bocinas estéreo paneadas (audio tripartito 3 canales · plan B con 3 bocinas en zonas físicas)",
+      "Tablero blanco grande con 5 zonas demarcadas (English Zone + Title + 4 Grammar Colors + LIVE ZONE + Sub-bloque 3 Word Wall)",
+      "Grammar Color Code poster A2 (muro lateral permanente desde S7)",
+      "Maritime Word Wall pared lateral con 5 tarjetas Sub-bloque 3 nuevas (berthing · mooring · departure · cargo handling · anchor)",
+      "PM-2.6 (extensión) Listening Tripartito worksheet impreso + Audio script (entregado al final de WHILE D)",
+      "PM-2.10 Grammar Awareness handout impreso (4 grupos · 12-16 oraciones modelo)",
+      "Radio Log template A4 impreso (5 filas · 4 columnas)",
+      "Set de 4 marcadores por aprendiz (azul · rojo · verde · morado)",
+      "Mini-card A5 modales contrastivos (SHOULD/COULD/MIGHT/MUST + fuerza ilocutiva + stress)",
+      "3 zonas auditivas demarcadas con cinta de color (yard amarillo · bridge azul · customs verde)",
+      "SMCP Reference Card laminada + NATO Phonetic Alphabet Reference Card laminada (permanentes desde S5)",
+      "Cronómetro visible en pantalla (timestamps Radio Log)",
+      "Música instrumental marítima muy baja durante momentos individuales silenciosos (sonidos de puerto suaves)"
+    ],
+    "tiempo": {
+      "set_up": 25,
+      "while_total": 295,
+      "break": 15,
+      "wrap_up": 25,
+      "total_directo_min": 360,
+      "autonomo_min": 140,
+      "autonomo_horas": 2.333333,
+      "total_aprendiz_horas": 8.333
+    },
+    "plan_b": "Si proyector falla: usar Grammar Color Code poster A2 de muro como referencia visual + leer las 12-16 oraciones modelo del PM-2.10 handout en voz alta (Choral repetition). Si bocinas estéreo fallan o audio tripartito no se reproduce: instructor representa los 3 canales en vivo · cambia entonación + gesto + posición física en el aula entre yard amarillo / bridge azul / customs verde — degradación aceptable porque S7 prioriza Radio Log productivo sobre fidelidad sonora. Si <50% asistencia: aplazar peer cross-check a S8 warm-up · usar tiempo extra en redacción individual con scaffolding 1:1. Si la cohorte se atora con audio tripartito (5+ aprendices con Radio Log vacío después de la 2da escucha): reducir a 2 canales en la 3ra escucha (yard + bridge · customs se difiere a S8) · escribir transición en LIVE ZONE 'Tripartito completo S8'. Si Word Wall extendido Sub-bloque 3 no se completó en S6: dedicar 5 min adicionales del SET-UP a poblar las 5 tarjetas nuevas con stress marcado · NO comprometer WHILE C (Radio Log productivo) por agregar tiempo arriba. Si energía baja: agregar 2 min stretch entre WHILE B y break · NO eliminar WHILE D peer cross-check (es donde la calibración entre pares ocurre)."
+  },
+  "totals_check": {
+    "set_up": 25,
+    "while_bloque_a": 60,
+    "while_bloque_b": 65,
+    "break": 15,
+    "while_bloque_c": 65,
+    "while_bloque_d": 60,
+    "while_bloque_e": 45,
+    "wrap_up": 25,
+    "total_min": 360,
+    "check_result": "EXACTO 360 min directos (6h) + 140 min autónomo (≈2.33h) = 500 min totales = 8.33h aprendiz S7. Coherente con header.duracion_sesion_min de pm-3-1 + horas autónomas (autonomous_hours: 2.333333) pm-3-1.overview_table[6]."
+  },
+  "rap_status": "S7 completada (preliminary · pendiente Gate Humano 3) — Apertura A2.0 cumplida + Grammar Awareness 4 colores aplicada + Audio tripartito procesado en 4 escuchas progresivas + Radio Log con 5 entradas (timestamp + canal + summary A2.0 + grammar marker) producido + Peer cross-check ejecutado + Recast plenaria 5 muestras + Modal contrast drill + Producción oral mínima A2.0 (bridge a S8). NO genera evidencia formal (E1-E5 ya cerradas en S3-S6 · próxima E4 final segment es S8 Berthing Speaking). Umbral de S8 (Berthing Coordination tripartito · 3 actores simultáneos · 3 minutos · E4 final 5 pts) abierto.",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[6]",
+    "__contract_version__": "v2.5.1 (mapping per pm-3-1.pm_3_2_propagation_contract)",
+    "fpi_block": "3.3 Apropiación — Integración receptiva-productiva",
+    "grammar_groups": {
+      "intro": ["Gr 6 (extension)", "Gr 10", "Gr 4", "Gr 9"],
+      "consolida": [],
+      "aplica": [],
+      "carga_check": "2/2 Intro DECLARADOS + 2 Intro adicionales tolerados — VIOLA carga estricta · ESCALAR adaptación (PM-0 §9.2 · gestión vía 'Intro receptivo' con marcación por colores · sólo 2 grupos llegan a producción activa por sesión)",
+      "_grammar_carga_violation_note": "Bloque Interno 3 RAP-03 introduce 7 grupos en 3 sesiones (S7-S9). Decisión Outline: distribuir 4 grupos Intro en S7 (con marcación por colores en Grammar Awareness · sin producción inmediata de los 4) y 3 grupos en S8. Build-Out S7 gestiona carga vía 'Intro receptivo' (azul modales + morado comparativos + verde pasado simple = sólo identificación con marcador) vs 'Intro productivo' (rojo presente continuo + azul modales = producción activa en Radio Log + Modal Drill WHILE E).",
+      "active_groups_detail": [
+        {
+          "group_id": "Gr 6 (extension)",
+          "group_name": "Modales should/could/might + I'd like (You should approach starboard)",
+          "nivel_activacion": "Intro · receptivo + productivo (drill WHILE E + producción mínima A2.0)",
+          "ejemplo_en_sesion": "'You should approach starboard. We could request more lines. The wind might drop in 30 minutes.'"
+        },
+        {
+          "group_id": "Gr 10",
+          "group_name": "Presente continuo (Vessel is approaching, We are securing)",
+          "nivel_activacion": "Intro · receptivo + productivo (Radio Log summary entrada 1 + 2 obligatorio)",
+          "ejemplo_en_sesion": "'The vessel is approaching berth 5. We are securing the bow lines. Customs is inspecting cargo.'"
+        },
+        {
+          "group_id": "Gr 4",
+          "group_name": "Comparativos (faster than, more critical than)",
+          "nivel_activacion": "Intro · receptivo (sólo identificación en Grammar Awareness · producción se difiere a S8/S9)",
+          "ejemplo_en_sesion": "'Berthing is more critical than departure. The pilot boards faster than the customs.'"
+        },
+        {
+          "group_id": "Gr 9",
+          "group_name": "Pasado simple (regulares + irregulares + Wh-)",
+          "nivel_activacion": "Intro · receptivo (sólo identificación + recast plenaria de error 'arriveded' como anclaje · producción se difiere a S8 Berthing Memo + S11 Post-Turn Report)",
+          "ejemplo_en_sesion": "'The vessel arrived at 06:00. Where did the pilot board? When did cargo handling start?'"
+        }
+      ]
+    },
+    "feedback": {
+      "mode": "MIXTO (transición a fluency dominante)",
+      "rationale": "S7 transición Bloque Interno 2→3 — el aprendiz debe operar con fluidez integrada. Accuracy sólo en breakdowns gramaticales graves. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_3.",
+      "accuracy_techniques": [
+        "Recast suave en breakdowns gramaticales graves (omisión total del verbo · uso de tiempo verbal totalmente disonante con el grammar marker subrayado)",
+        "Inducción gramatical por descubrimiento de colores (azul=modales / rojo=presente continuo / verde=pasado simple / morado=comparativos)"
+      ],
+      "fluency_techniques": [
+        "Post-task delayed feedback con notas en tablero LIVE ZONE (errores comunes globales recogidos durante WHILE C circulación)",
+        "Peer feedback durante listening tripartito (chequeo cruzado de Radio Logs en parejas con guía de 3 ítems observables)",
+        "Choral drill de modales contrastivos (SHOULD/COULD/MIGHT/MUST con stress crítico) sin corrección invasiva"
+      ],
+      "mixed_techniques": [
+        "Plenaria recast WHILE D — 5 muestras representativas con voto verde/rojo de clase + corrección colectiva en LIVE ZONE (delayed accuracy con visibility colectiva)"
+      ],
+      "notes": "S7 inicia transición fluency dominante (preparación S8 producción tripartita). Accuracy se difiere a recast plenaria post-task · NO interrumpe flujo individual durante redacción WHILE C."
+    },
+    "l1_management": {
+      "l1_percentage": 5,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_3_RAP03_A2.0.S7 — ≤ 5% (PM-0 §9.1)",
+      "l1_rationale": "Entrada Bloque Interno 3 (A2.0). L1 sólo para giro contrastivo entre presente continuo (acción en curso 'Vessel is approaching') vs presente perfecto ('Pilot has boarded' — anticipo S8). Resto L2.",
+      "english_zone_declaration": "Permanente desde S1 — sin re-declaración formal hoy · sólo recordatorio escrito en tablero ('English Zone 🔵 — L1 ≤ 5%').",
+      "l1_allowed_for": [
+        "Giro contrastivo presente continuo / presente perfecto (anticipo S8 · 1 oración bilingüe '*'is approaching' — está pasando ahora · 'has boarded' — ya pasó · S8*')",
+        "Clarificación grammar marker en peer cross-check WHILE D (1 frase máximo · luego inglés)",
+        "Anécdota corta del instructor en SET-UP si energía baja (sobre primera vez que escuchó coordinación tripartita · 1 min máximo)",
+        "Recast colectivo en LIVE ZONE WHILE D ante error común (ej: '*Past simple regular -ed = arrived. Present simple = arrives. Listen audio time: 06:20 — past. Arrived.*')"
+      ],
+      "reduction_strategy": "S8 → 3% L1 · S9 → 2% · S10 → 1% (consolidación · cuestionario en L2 dominante) · curva descendente hacia 0% en S12 per pm-0-context.l1_percentage_per_session.single_guide_12_sessions"
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "berthing",
+          "ipa": "/ˈbɜːrθɪŋ/",
+          "tonica": "PRIMERA (BERTHing) — el sufijo -ing NO cambia stress"
+        },
+        {
+          "word": "mooring",
+          "ipa": "/ˈmʊərɪŋ/",
+          "tonica": "PRIMERA (MOOring)"
+        },
+        {
+          "word": "departure",
+          "ipa": "/dɪˈpɑːrtʃər/",
+          "tonica": "SEGUNDA (dePARture)"
+        },
+        {
+          "word": "approaching",
+          "ipa": "/əˈproʊtʃɪŋ/",
+          "tonica": "SEGUNDA (apPROACHing) — el sufijo -ing NO cambia stress"
+        },
+        {
+          "word": "should",
+          "ipa": "/ʃʊd/",
+          "tonica": "única débil (-ould) — contrastiva con MUST /mʌst/ fuerte"
+        }
+      ],
+      "techniques": [
+        "Stress drift attention: el sufijo -ing NO cambia stress (BERTH-ing / APPROACH-ing) — board marking en LIVE ZONE",
+        "Choral drill de modales con stress contrastivo (SHOULD débil vs MUST fuerte · COULD débil vs MIGHT fuerte)",
+        "Finger drilling con énfasis en sílaba tónica (1 dedo por sílaba · puño cerrado en tónica)",
+        "Modelo-eco (instructor → clase) en pares contrastivos"
+      ],
+      "board_marking": "Las 5 palabras Sub-bloque 3 + 4 modales quedan permanentes en LIVE ZONE con stress en MAYÚSCULA + IPA en pequeño debajo · Maritime Word Wall las replica en pared lateral.",
+      "notes": "S7 incluye drift attention en -ing (PM-0 §5.13 · noticing de morfología sin cambio de stress) — preparación crítica para S8 (-ed pasado simple regular sí cambia stress en algunos casos · ej: secured /sɪˈkjʊərd/).",
+      "source": "PM-0 §5.13 — Noticing de stress con soporte físico"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "berthing",
+        "mooring",
+        "departure",
+        "cargo handling",
+        "anchor",
+        "should",
+        "could",
+        "might",
+        "approaching",
+        "securing"
+      ],
+      "factors_applied": [
+        "Sounds",
+        "Use",
+        "Encounter",
+        "Conceptualize"
+      ],
+      "operationalization": "Sounds: stress marking en 5 palabras Sub-bloque 3 (BERTH-ing · MOO-ring · de-PAR-ture · CARgo HANDling · AN-chor) + drilling modales contrastivos (SHOULD/COULD/MIGHT/MUST). Use: Radio Log obliga producción escrita de 5 summaries con al menos 1 maritime word circled por entrada + Modal Drill WHILE E obliga producción oral mínima de 1-2 oraciones con modales. Encounter: listening tripartito (4 escuchas) + grammar awareness por colores + Radio Log + peer cross-check + recast plenaria + modal drill = 6 encuentros de las palabras target. Conceptualize: modales clasificados por fuerza ilocutiva (SHOULD recomendación / COULD permiso/posibilidad / MIGHT probabilidad / MUST obligación) + maritime words clasificadas por fase operacional (approach → berth → moor → handle cargo → depart).",
+      "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS)"
+    },
+    "physical_environment": "Aula bilingüe configurada con 3 zonas auditivas demarcadas con cinta de color (yard amarillo · bridge azul · customs verde) — configuración tipo 'isla central' para Andrea (aprendiz líder) durante listening tripartito. Bocinas estéreo paneadas (yard izquierda · bridge centro · customs derecha) o 3 bocinas en zonas físicas. Maritime Word Wall extendido Sub-bloque 3 con 5 nuevas tarjetas. Grammar Color Code poster A2 muro lateral permanente desde S7. English Zone 🔵 permanente desde S1.",
+    "cefr_descriptor_focus": {
+      "subnivel": "A2.0",
+      "habilidad_principal": "comprension_oral",
+      "descriptor_activo": "Sigue instrucciones multi-paso en operaciones puerto-buque (berthing · cargo handling · departure).",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_3_S7-S9_RAP03_A2.0.comprension_oral"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Moderada-natural — interferencia VHF + ruido ambiente realista (audio tripartito 3 canales simultáneos · sin transcripción)",
+      "extension_textos": "Audio tripartito 3 min + 5 mensajes VHF + Radio Log con 5 entradas + 12-16 oraciones modelo en Grammar Awareness handout",
+      "andamiaje": "Moderado-mínimo — Word Wall a la vista + Radio Log template + Grammar Color Code poster + sin transcripción durante listening · sólo audio script entregado al final de WHILE D para auto-revisión",
+      "rol_docente": "Facilitador + monitor (peer + self-assessment dominante · recast suave en breakdowns + recast plenaria delayed)",
+      "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_3"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A3 — Descriptores §6 comprension_oral A2.0 (sigue instrucciones multi-paso berthing/cargo/departure)",
+        "B3 — Fluency dominante con accuracy selectiva (recast suave + recast plenaria delayed)",
+        "B8 — Andamiaje moderado (transición A1.3 → A2.0 · Word Wall + Radio Log template + Grammar Color Code · sin transcripción)",
+        "C4 — Complejidad cognitiva L3-L4 Apply→Analyze (Apply: Radio Log productivo · Analyze: peer cross-check 3 ítems)",
+        "D2 — Can-do 'Seguir instrucciones multi-paso' asociado a Radio Log de 5 entradas tripartitas"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 S7 siembra los 5 más relevantes. Checklist completo se completa post-S10 Consolidation Day en autoevaluación 22-item."
+    }
+  },
+  "logistics_box": {
+    "momento_sena": "3.3 Apropiación — Integración receptiva-productiva",
+    "estrategia": "ABT — Inducción gramatical (modales + condicional + pasado/presente continuo) + Listening tripartito",
+    "justificacion": "S7 abre el Bloque Interno 3 (RAP-03 · A2.0) con un salto cualitativo de 1 voz (Captain Lopera S5/S6) a 3 voces simultáneas (yard + bridge + customs). La estrategia ABT con inducción gramatical por descubrimiento de colores convierte 4 grupos gramaticales Intro en herramientas perceptivas para el Radio Log productivo · que conecta listening receptivo con escritura sintética A2.0 · y prepara S8 Berthing Speaking tripartito. Feedback MIXTO transita a fluency dominante. L1 ≤ 5% — uso quirúrgico para giro contrastivo presente continuo / presente perfecto.",
+    "tecnicas": [
+      {
+        "bloque": "A",
+        "tecnica": "Inducción gramatical por descubrimiento con marcación cromática + chequeo cruzado en parejas (PM-0 §5.13 noticing)"
+      },
+      {
+        "bloque": "B",
+        "tecnica": "Listening andamiado tripartito con 3 escuchas progresivas (gist → channels → grammar markers · sin transcripción) — PM-0 §8 input moderado-natural"
+      },
+      {
+        "bloque": "C",
+        "tecnica": "Escritura sintética productiva post-listening con grammar marker explícito + integración léxica Sub-bloque 3 maritime"
+      },
+      {
+        "bloque": "D",
+        "tecnica": "Peer feedback formativo estructurado (3 ítems observables) + recast plenaria docente con corrección colectiva visible (PM-0 §5.11)"
+      },
+      {
+        "bloque": "E",
+        "tecnica": "Drilling contrastivo de modales con stress crítico + producción oral mínima en parejas con prompt card como bridge a Speaking tripartito S8 (PM-0 §5.13)"
+      }
+    ]
+  },
+  "while_a": {
+    "name": "Grammar Awareness 4 Colores — Inducción por Descubrimiento (PM-2.10 Gr 4 + Gr 6 ext + Gr 9 + Gr 10)",
+    "duration_min": 60,
+    "tecnica_didactica": "Inducción gramatical por descubrimiento con marcación cromática + chequeo cruzado en parejas (PM-0 §5.13 noticing)",
+    "teacher_talk": "*Look at the handout. 12 to 16 sentences from the port radio. Four colors. Hunt them like designers hunt fonts. AZUL — should, could, might. ROJO — is/are doing. VERDE — past simple, arrived, started, did. MORADO — faster than, more critical than. 25 minutes. Silent first. Then 25 minutes with your partner — cross-check. No phone. No teacher answers. Discover.*",
+    "answer_key": {
+      "AZUL_modales_Gr_6_ext": ["You SHOULD approach starboard.", "We COULD request more lines.", "The wind MIGHT drop in 30 minutes."],
+      "ROJO_presente_continuo_Gr_10": ["The vessel IS APPROACHING berth 5.", "We ARE SECURING the bow lines.", "Customs IS INSPECTING cargo."],
+      "VERDE_pasado_simple_Gr_9": ["The vessel ARRIVED at 06:00.", "Where DID the pilot board?", "The bosun SECURED the stern lines."],
+      "MORADO_comparativos_Gr_4": ["Berthing is MORE CRITICAL THAN departure.", "The pilot boards FASTER THAN customs."]
+    }
+  },
+  "while_b": {
+    "name": "Audio Tripartito — 3 Escuchas Estructuradas (PM-2.6 extensión)",
+    "duration_min": 65,
+    "tecnica_didactica": "Listening andamiado tripartito con 3 escuchas progresivas (gist → channels → grammar markers · sin transcripción) — PM-0 §8 input moderado-natural",
+    "teacher_talk": "*Three listens. First — just gist, no writing. Second — fill columns Time and Channel (yard, bridge, customs). Third — fill column Grammar Marker (AZUL, ROJO, VERDE, MORADO). NO transcription. NO phone. Trust your ears. Close your eyes if it helps. The summary column comes after the break — don't worry about it yet.*",
+    "answer_key": {
+      "5_entradas_audio_tripartito": [
+        "06:15 · BRIDGE · 'BUENAVENTURA EXPRESS calling Berth 4. We ARE APPROACHING. ETA 15 minutes. Over.' (ROJO)",
+        "06:18 · YARD · Diego (es): 'Andrea, los contenedores están listos.' (ROJO presente continuo via Andrea translation)",
+        "06:22 · CUSTOMS · 'We will inspect cargo at 07:00. Vessel SHOULD wait. Berthing IS MORE CRITICAL THAN departure.' (AZUL + MORADO)",
+        "06:25 · BRIDGE · 'Pilot ARRIVED at 06:20 and BOARDED at 06:23. We COULD request more lines.' (VERDE + AZUL)",
+        "06:28 · YARD/BRIDGE · 'Crane ready in 5 min. SHOULD approach starboard.' (AZUL)"
+      ],
+      "patron_canales": "Yard 2 · Bridge 2 · Customs 1",
+      "patron_grammar_markers": "ROJO 2-3 · AZUL 3-4 · VERDE 1-2 · MORADO 1"
+    }
+  },
+  "while_c": {
+    "name": "Radio Log Productivo — 4ta Escucha + Redacción 5 Summaries (PM-2.6 extensión)",
+    "duration_min": 65,
+    "tecnica_didactica": "Escritura sintética productiva post-listening con grammar marker explícito + integración léxica Sub-bloque 3 maritime",
+    "teacher_talk": "*Final listen — 3 minutes. Then 30 minutes silent. Five summaries. One sentence each — A2.0 level. Each summary uses ONE grammar color (azul, rojo, verde, or morado) — underline the verb. Each summary uses ONE Sub-bloque 3 word (berthing, mooring, departure, cargo handling, anchor, approaching, securing) — circle it. Music on. Music low. Just you and the radio.*",
+    "answer_key": {
+      "5_summaries_modelo": [
+        "ENTRADA 1 (BRIDGE · ROJO): 'The BUENAVENTURA EXPRESS IS APPROACHING berth 4 — ETA 15 minutes.' (approaching circled)",
+        "ENTRADA 2 (YARD · ROJO): 'The yard IS WAITING — containers are ready for cargo handling.' (cargo handling circled)",
+        "ENTRADA 3 (CUSTOMS · AZUL + MORADO): 'The vessel SHOULD WAIT for customs clearance — berthing IS MORE CRITICAL THAN departure today.' (berthing · departure circled)",
+        "ENTRADA 4 (BRIDGE · VERDE + AZUL): 'The pilot ARRIVED at 06:20 — we COULD REQUEST more mooring lines if customs delays.' (mooring circled)",
+        "ENTRADA 5 (YARD/BRIDGE · AZUL): 'Diego says the crane will be ready — Captain SHOULD APPROACH starboard for securing.' (securing circled)"
+      ]
+    }
+  },
+  "while_d": {
+    "name": "Peer Cross-Check + Recast Plenaria — 5 Muestras Representativas (PM-2.6 extensión)",
+    "duration_min": 60,
+    "tecnica_didactica": "Peer feedback formativo estructurado (3 ítems observables) + recast plenaria docente con corrección colectiva visible (PM-0 §5.11)",
+    "teacher_talk": "*Pairs. Cross-check. Three items only: clear? color correct? maritime word circled? Don't fix. Don't teach. Just observe. 20 minutes. Then plenary — I show 5 examples. Class votes verde or rojo. We write the final version on the board. This is A2.0 in real action.*",
+    "answer_key": {
+      "5_muestras_plenaria": [
+        "MUESTRA 1 (BRIDGE · ROJO correcto): 'The vessel is approaching berth 4.' → ✓ verde",
+        "MUESTRA 2 (YARD · ROJO disonante): 'The yard waits for cargo handling.' → ✗ rojo (recast: 'is waiting')",
+        "MUESTRA 3 (CUSTOMS · AZUL+MORADO correcto): 'Customs should wait — berthing is more critical than departure.' → ✓ verde",
+        "MUESTRA 4 (BRIDGE · VERDE error irregular): 'The pilot arriveded at 06:20.' → ✗ rojo (recast: 'arrived')",
+        "MUESTRA 5 (YARD/BRIDGE · AZUL correcto): 'Captain should approach starboard for securing.' → ✓ verde"
+      ],
+      "patron_calibracion_pares": "60-70% acuerdo en color · 80-90% acuerdo en clarity · 70% acuerdo en maritime word"
+    }
+  },
+  "while_e": {
+    "name": "Modal Contrast Drill + Speaking Mínimo — Bridge a S8 (PM-2.10 Gr 6 ext)",
+    "duration_min": 45,
+    "tecnica_didactica": "Drilling contrastivo de modales con stress crítico + producción oral mínima en parejas con prompt card como bridge a Speaking tripartito S8 (PM-0 §5.13)",
+    "teacher_talk": "*Modals. Four. SHOULD — recommendation. COULD — possibility. MIGHT — probability. MUST — obligation. Drill with me. (Plenary 15 min.) Then — your prompt card. With your partner. 1-2 sentences. Use one modal. The other partner uses a different modal. Then 3 volunteers — speak to the class. No grade. Just brave voices. Bridge to Session 8.*",
+    "answer_key": {
+      "ejemplos_pareja_A2.0": [
+        "Pareja A (recomendación): 'You SHOULD approach starboard. The wind is dropping.'",
+        "Pareja B (probabilidad): 'The wind MIGHT change in 30 minutes. We MIGHT need more lines.'",
+        "Pareja A (obligación): 'We MUST wait for the pilot. He arrives at 06:20.'",
+        "Pareja B (permiso/posibilidad): 'We COULD request a tug if the wind increases.'"
+      ],
+      "stress_critico": "SHOULD /ʃʊd/ débil · COULD /kʊd/ débil · MIGHT /maɪt/ fuerte · MUST /mʌst/ fuerte · BERTH-ing stress PRIMERA · APPROACH-ing stress SEGUNDA — el sufijo -ing NO cambia stress"
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    },
+    "downstream_consumers": [
+      "PM-3.3 Canva Slides — referencias a Grammar Color Code poster + 4 grammar colors slide + Radio Log template + Modal contrast slide",
+      "PM-3.4 Workbook — Maritime Listening Cloze SMCP Chapter 7 + 3 IMO YouTube audios autonomous task",
+      "PM-3.6 Activity Logistics — A7.1.1 to A7.1.5 IDs derivados de WHILE A-E",
+      "PM-2.11 Check 14 — validación propagación estrategia_didactica + tecnicas[] + pm0_protocol cross-ref (4 grammar groups Intro · L1 5% · stress focus 5 palabras + 4 modales)",
+      "PM-3.2 S8 Build-Out — heredera del bridge productivo S7 (Modal Drill + 1-2 oraciones A2.0 + audio tripartito ya familiar) → Berthing Coordination tripartito Speaking E4 final segment"
+    ]
+  }
+}

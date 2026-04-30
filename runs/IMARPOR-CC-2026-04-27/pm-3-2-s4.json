@@ -1,0 +1,1069 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.5",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
+  "session": 4,
+  "session_name": "Writing the First Inspection Report — Be + Imperative + IN",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide": "G1 — The Maritime Operations Pro",
+  "guia_numero": 1,
+  "programa": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo": "12340002",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.10 (Gr 1+3+5+14)",
+    "PM-2.4"
+  ],
+  "habilidades_foco": [
+    "Writing (●) — Pre-Shift Vessel Inspection Report 6-8 oraciones · 8/8 grammar targets activos",
+    "Grammar (●) — Gr 1 (be) + Gr 3 (plural a/an) + Gr 5 (imperative) + Gr 14 (IN/at/on/next to/near)"
+  ],
+  "habilidades_soporte": [
+    "Vocabulary (○) — reciclaje 5 Toolbelt Sub-bloque 1 (bollard · crane · bow · stern · bridge) + 5 verbos imperativos nuevos (check · open · move · verify · secure)",
+    "Reading (○) — relectura corta del Master Anchor PM-2.3 (UNIT 1 SHIP OVERVIEW) como mentor text"
+  ],
+  "cefr": "A1.2 (cierre Bloque Interno 1) → A1.3 (apertura Bloque Interno 2 · transición de sesión)",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-29",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "preliminary",
+  "_status_preliminary_rationale": "Build-Out generado por subagente PM-3.2 piloto behavioral · Gate Humano 3 (aprobación Playbook S4) pendiente · Sergio confirma cambiando a 'completed' tras revisión de coherencia con PM-2.4 + PM-2.10 (Gr 1+3+5+14) + pm-3-1 sessions[3].",
+  "momento_sena": "3.3 Apropiación — Output escrito",
+  "estrategia_didactica": "ABT — Inducción gramatical (Gr 1+3+5+14) + escritura modelada Inspection Report + peer review",
+  "justificacion_didactica": "S4 cierra el Bloque Interno 1 (RAP-01 · A1.2) con la primera producción escrita formal del programa · y abre la transición hacia el Bloque Interno 2 (RAP-02 · A1.3). El aprendiz transita de input léxico-receptivo (S2 Toolbelt + S3 Reading anchor) a output escrito andamiado mediante un Pre-Shift Vessel Inspection Report de 6-8 oraciones con 4 grupos gramaticales activos: Gr 1 (be) consolidado · Gr 3 (plural + a/an) consolidado · Gr 5 (imperativo) introducido por descubrimiento · Gr 14 (IN/at/on/next to/near) consolidado. La estrategia ABT con inducción gramatical convierte la regla en producto verificable (E2 Writing 5 pts · Lista Verificación No 2). El peer review estructurado en trios (Apprentice / Mentor / Master) simula la realidad portuaria donde la Inspection Form pasa por mentor + master antes de la firma de Captain Lopera. Error codes visuales (BE azul · IMP rojo · IN verde · PLURAL morado) permiten corrección autónoma sin interrumpir flujo · alineado con feedback ACCURACY dominante (PM-0 §5.11). L1 ≤ 12% — sólo para giro contrastivo crucial: imperativo SIN sujeto en inglés ('Check the bollard' NO 'You check the bollard'). Recast docente en producción pública (lectura de muestras en plenaria). Cierre con preview S5 (apertura RAP-02 · listening VHF SMCP).",
+  "session_header": {
+    "titulo": "SESSION 4: Writing the First Inspection Report — Be + Imperative + IN",
+    "subtitulo": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Build-Out — Playbook v2.5",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.10 (Gr 1+3+5+14) — Grammar Awareness 4 grupos (40 min · inducción guiada por descubrimiento)",
+      "PM-2.4 — Writing Workshop Pre-Shift Vessel Inspection Report (5 archetypes adaptados · producción 60-90 palabras · 8/8 grammar targets)"
+    ],
+    "habilidades_foco": [
+      "Writing (●) — Inspection Report 6-8 oraciones · primer producto escrito formal con E2",
+      "Grammar (●) — 4 grupos awareness (be / plural a-an / imperative / IN-prepositions)"
+    ],
+    "habilidades_soporte": [
+      "Vocabulary (○) — reciclaje 5 Toolbelt Sub-bloque 1 + 5 verbos imperativos nuevos (check · open · move · verify · secure)",
+      "Reading (○) — Master Anchor PM-2.3 como mentor text (relectura corta de 4-5 oraciones modelo)",
+      "Pronunciation (○) — stress en verbos imperativos clave (CHECK · OPen · MOVE · VErify · seCURE)"
+    ],
+    "objetivos_pedagogicos": [
+      "(1) Reconocer por descubrimiento las 4 estructuras gramaticales activas (Gr 1 be · Gr 3 plural a/an · Gr 5 imperativo · Gr 14 IN/at/on/next to/near) en mentor text PM-2.3.",
+      "(2) Producir un Pre-Shift Vessel Inspection Report de 6-8 oraciones (60-90 palabras) sobre el BUENAVENTURA EXPRESS en Berth 4 · usando 8/8 grammar targets activos · usando ≥10 de 25 Toolbelt terms.",
+      "(3) Aplicar peer review estructurado en trios (roles Apprentice / Mentor / Master) con 5 ítems observables — simulación realidad portuaria de revisión pre-firma.",
+      "(4) Auto-corregir el draft usando error codes visuales (BE azul · IMP rojo · IN verde · PLURAL morado).",
+      "(5) Presentar Inspection Report final a Capitán Restrepo (instructor en rol) — primer entregable evaluado E2 (5 pts · Lista Verificación No 2)."
+    ],
+    "plan_b": "Si <50% asistencia: aplazar peer review trio a S5 warm-up · usar tiempo extra en draft individual con scaffolding 1:1. Si proyector falla: usar mentor text PM-2.3 impreso A3 en pared como referencia · Inspection Report template impreso ya distribuido. Si la cohorte se atora con imperativo (5+ aprendices preguntan '¿dónde va el sujeto?'): pausar 5 min adicionales para inducción colectiva — escribir 3 ejemplos contrastivos en tablero ('Tú revisa el bolardo / Check the bollard'). Si error codes confunden (>30% no diferencia BE de IN): reducir a 2 colores (gramática verde / vocabulario amarillo) en S4 · ampliar a 4 colores en S7. Si Lista Verificación E2 no está lista: usar checklist genérico de 5 ítems en tablero + foto para registro · Sergio adjunta versión final post-S4.",
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk pre-modelado bilingüe. Duración suma exacta 360 min directos + 140 min autónomo (≈2.33h). L1 ≤ 12% del tiempo de instrucción (sólo para giro contrastivo imperativo + 1 clarificación pluralización a/an). E2 Writing 5 pts es el primer entregable evaluado del programa — es momento bisagra emocional + técnico."
+  },
+  "materials_checklist": [
+    {
+      "item": "PM-2.10 Grammar Awareness handout (Gr 1+3+5+14 · 12 oraciones huecos guiados + tabla descubrimiento)",
+      "cantidad": "1 set por aprendiz (estimado 25 sets) + 3 sets respaldo",
+      "verificado": false
+    },
+    {
+      "item": "PM-2.4 Writing Workshop handout — Pre-Shift Vessel Inspection Report template con 5 moves + sentence frames (Header / Equipment Location / Deck Status / Shift Operations / Sign-off)",
+      "cantidad": "1 set por aprendiz + 3 sets respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Mentor texts impresos — 2 ejemplares Pre-Shift Vessel Inspection Forms (Exemplar 1: BUENAVENTURA EXPRESS Berth 4 anonimizado · Exemplar 2: SMCP-aligned IMARPOR manual A1.2)",
+      "cantidad": "1 par por trío (≈8 trios) + 4 pares respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Peer Review Checklist 5 ítems (1 set Apprentice / Mentor / Master roles · bilingüe EN+ES cursivo)",
+      "cantidad": "1 trio set por aprendiz · 25 sets",
+      "verificado": false
+    },
+    {
+      "item": "Lista Verificación E2 Writing — 5 criterios × 1 pt = 5 pts (PM-4.1 Inspection Report rubric)",
+      "cantidad": "1 por aprendiz + clave docente impresa",
+      "verificado": false
+    },
+    {
+      "item": "Marcadores de color para error codes — AZUL (BE) · ROJO (IMPERATIVE) · VERDE (IN-prepositions) · MORADO (PLURAL/a-an)",
+      "cantidad": "1 set 4 colores por aprendiz + 5 sets respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Master Anchor PM-2.3 (UNIT 1 SHIP OVERVIEW · Operational Report BUENAVENTURA EXPRESS) impreso para relectura como mentor text",
+      "cantidad": "1 por aprendiz · ya distribuido en S3 (verificar que aprendices lo trajeron)",
+      "verificado": false
+    },
+    {
+      "item": "Diagrama Ship Overview A2 (BUENAVENTURA EXPRESS lateral · 6 partes etiquetadas) en muro frontal — referencia visual permanente",
+      "cantidad": "1 muro · ya pegado desde S3",
+      "verificado": false
+    },
+    {
+      "item": "Mapa Terminal de Contenedores Buenaventura A2 con zonas portuarias + Berth 4 destacado",
+      "cantidad": "1 muro frontal · ya pegado desde S1",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Word Wall actualizado con tarjetas Sub-bloque 1 (bollard · crane · bow · stern · bridge) + 5 ship parts S3 (deck · hull · mast · anchor · berth) + 5 verbos imperativos S4 nuevos (check · open · move · verify · secure) con IPA + stress",
+      "cantidad": "1 Word Wall · 15 tarjetas total al cierre S4",
+      "verificado": false
+    },
+    {
+      "item": "Sample Inspection Reports modelo (3 reportes A1.2 escritos previamente · uno excelente · uno aceptable · uno con errores típicos para detección colectiva)",
+      "cantidad": "3 muestras impresas A4 + proyectables",
+      "verificado": false
+    },
+    {
+      "item": "Cronómetro visible en pantalla",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Música instrumental marítima muy baja (sonidos de puerto suaves) para momento DURING_writing individual",
+      "cantidad": "1 archivo + bocinas",
+      "verificado": false
+    },
+    {
+      "item": "Pizarra LIVE ZONE despejada (espacio para escribir 4 grammar awareness rules descubiertas + recast en plenaria)",
+      "cantidad": "1 zona del tablero",
+      "verificado": false
+    },
+    {
+      "item": "Sobres tamaño carta para guardar Inspection Reports finales (entran al portafolio del aprendiz para Misión Final S12)",
+      "cantidad": "25 sobres",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO dividido en 4 zonas: (1) ESQUINA SUPERIOR DERECHA — ENGLISH ZONE 🔵 reactivada al inicio (cinta azul ya en piso desde S1). (2) CENTRO — Title 'SESSION 4: Writing the First Inspection Report — Be + Imperative + IN · Today: PM-2.10 (Gr 1+3+5+14) + PM-2.4 Inspection Report E2 5 pts'. (3) COLUMNA LATERAL IZQUIERDA — ERROR CODE LEGEND permanente en MAYÚSCULA: 🟦 BE = is/are/am · 🟥 IMP = imperative (Check · Open · Move · Verify · Secure) · 🟩 IN = at/on/in/next to/near/behind/in front of/between · 🟪 PLURAL = -s/-es/a/an. (4) LIVE ZONE inferior — vacía al inicio · se llena durante SET-UP con 4 GRAMMAR DISCOVERIES inducidas (1 regla por grupo gramatical descubierta colectivamente) + durante WHILE C-D-E con 4-5 errores típicos para recast en plenaria + 3 sample sentences modelo. Maritime Word Wall pared lateral actualizado con 5 verbos imperativos nuevos (CHECK /tʃɛk/ · OPen /ˈoʊpən/ · MOVE /muːv/ · VErify /ˈvɛrɪfaɪ/ · seCURE /sɪˈkjʊər/) con stress en MAYÚSCULA. Diagrama Ship Overview A2 visible. Al final de S4: Word Wall tiene 15 tarjetas (5 S2 + 5 S3 + 5 S4) · LIVE ZONE tiene 4 reglas descubiertas + 3 samples modelo + recast notes · 25 Inspection Reports finales en sobres entrega caja del instructor.",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:30",
+      "duracion_min": 30,
+      "bloque": "SET-UP",
+      "actividad": "Welcome Day 4 + reactivación English Zone + Quick Recall S3 (5 ship parts) + intro Inspection Report como género portuario + intro 5 verbos imperativos + objetivos día + ICQ + ✓ Checkpoint Thumbs Up/Down",
+      "agrupacion": "Plenaria → Parejas → Plenaria",
+      "notas": "Energía concentrada (S4 es gramática + writing — más exigente que S1-S3). Activar 5 verbos imperativos S4 nuevos con choral repetition + finger drilling. L1 ≤ 12%."
+    },
+    {
+      "tiempo": "0:30-1:10",
+      "duracion_min": 40,
+      "bloque": "WHILE A (PM-2.10 Grammar Awareness)",
+      "actividad": "Inducción gramatical guiada por descubrimiento — 4 grupos (Gr 1 be · Gr 3 plural a/an · Gr 5 imperativo · Gr 14 IN-prepositions) · 12 oraciones huecos en mentor text PM-2.3 → tabla descubrimiento colectiva → 4 reglas escritas en LIVE ZONE",
+      "agrupacion": "Parejas → Plenaria",
+      "notas": "Inducción NO deducción. NO empezar con regla. CONSTRUIR la regla. Foco en imperativo (más nuevo · Gr 5 Intro)."
+    },
+    {
+      "tiempo": "1:10-2:00",
+      "duracion_min": 50,
+      "bloque": "WHILE B (PM-2.4 Archetype A+E · Pre-writing)",
+      "actividad": "Quickwrite exploratorio 5 min + Genre analysis 2 mentor text ejemplares + extracción colectiva de 'recipe del género Inspection Report' + transfer exercise (4 líneas para CML CARRIER Berth 7 · evening shift)",
+      "agrupacion": "Individual → Plenaria → Parejas",
+      "notas": "Vencer página en blanco con quickwrite (no corregir). Recipe extraction es socrática. Transfer mini para verificar que dominan el género."
+    },
+    {
+      "tiempo": "2:00-2:15",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "Receso activo (café + baño + estiramiento)",
+      "agrupacion": "—",
+      "notas": "Recordar que el draft viene · animar a relajar mente. Hidratación. English Zone se relaja durante break — vuelve al volver."
+    },
+    {
+      "tiempo": "2:15-3:35",
+      "duracion_min": 80,
+      "bloque": "WHILE C (PM-2.4 Archetype B · Drafting)",
+      "actividad": "Producción central — Inspection Report draft 60-90 palabras con sentence frames + 5 moves (Header / Equipment Location / Deck Status / Shift Operations / Sign-off) · 8/8 grammar targets activados · ≥10 de 25 Toolbelt terms · auto-revisión con error codes",
+      "agrupacion": "Individual silencioso (instructor 1:1 mini-conferences ≤2 min por aprendiz)",
+      "notas": "Música instrumental baja. Instructor circula con 1:1 recasts (NO corrige texto · pregunta '¿qué color va aquí?'). Cronómetro visible. ✓ Checkpoint Pair Check a los 40 min."
+    },
+    {
+      "tiempo": "3:35-4:25",
+      "duracion_min": 50,
+      "bloque": "WHILE D (PM-2.4 Archetype C · Peer Review Trios)",
+      "actividad": "Trios con roles asignados (Apprentice = writer · Mentor = Capitán Restrepo · Master = Captain Lopera) · rotación cada 15 min · negociación bilingüe sobre 5 ítems checklist",
+      "agrupacion": "Trios heterogéneos (rotación 3 turnos)",
+      "notas": "L1 permitido para negociación cuando se atoran (≤15% L1 budget en este bloque). Instructor NO corrige · deja peers self-resolve. ✓ Checkpoint Board Check con 2 frases (1 correcta · 1 con error) a los 25 min."
+    },
+    {
+      "tiempo": "4:25-5:15",
+      "duracion_min": 50,
+      "bloque": "WHILE E (Final Edit + Recast Plenaria)",
+      "actividad": "Edición final individual con error codes 4 colores + lectura plenaria de 3 muestras voluntarias (sin nombrar autores) + recast colectivo en LIVE ZONE de 4-5 errores típicos detectados durante WHILE C-D",
+      "agrupacion": "Individual → Plenaria",
+      "notas": "Recast NO punitivo · celebrar valentía. Errores típicos esperados: 'You check' vs 'Check' (Gr 5) · 'There is 24 containers' vs 'There are' (Gr 7 reciclaje) · 'in the bridge' vs 'on the bridge' (Gr 14)."
+    },
+    {
+      "tiempo": "5:15-5:40",
+      "duracion_min": 25,
+      "bloque": "WHILE F (E2 Submission)",
+      "actividad": "Entrega Inspection Report final a Capitán Restrepo (instructor en rol) · firma del aprendiz como Andrea Mosquera + visado del Capitán Restrepo · sobre carta sellado para portafolio Misión Final S12 · Lista Verificación E2 (5 pts) en marcha (instructor evalúa post-clase y devuelve S5)",
+      "agrupacion": "Individual → Plenaria breve",
+      "notas": "Acto ceremonial breve — primer entregable evaluado. Capitán Restrepo (instructor) firma cada uno con marcador rojo. Sobre + nombre + fecha. Foto del montón de sobres como evidencia."
+    },
+    {
+      "tiempo": "5:40-6:00",
+      "duracion_min": 20,
+      "bloque": "WRAP-UP",
+      "actividad": "Exit Ticket S4 + síntesis del cierre Bloque Interno 1 + preview S5 (apertura RAP-02 · A1.3 · listening VHF SMCP) + asignación autónoma (Inspection Report #2 de un buque/elemento del puerto observado por el aprendiz · no evaluada · práctica)",
+      "agrupacion": "Individual → Plenaria",
+      "notas": "Cierre con energía positiva. S4 es bisagra A1.2 → A1.3. Anunciar próxima sesión con misterio: 'Captain Lopera te llamará por radio · ¿estás listo?'"
+    }
+  ],
+  "set_up": {
+    "duracion_min": 30,
+    "warm_up": {
+      "nombre": "Quick Recall Day 4 — From Reading to Writing",
+      "pasos": [
+        "1. Instructor recibe en la puerta saludando: '*Good morning, team! Ready to write your first Inspection Report?*' (sonrisa + gesto · usar nombres).",
+        "2. Re-señalar English Zone — cinta azul en piso visible · círculo 🔵 en tablero ya está · reforzar verbalmente: '*The blue tape is back. We are in English Zone again.*'",
+        "3. Quick Recall plenario 5 min: instructor pregunta '*Last session you read about the BUENAVENTURA EXPRESS. Can you name 5 ship parts?*' — aprendices señalan diagrama A2 en muro · choral repetition de 5 ship parts S3 con stress (BOW · STERN · BRIDGE · DECK · HULL).",
+        "4. Activación de los 5 verbos imperativos S4 nuevos: instructor señala las 5 tarjetas pre-pegadas en Maritime Word Wall y modela stress: '*CHECK · OPen · MOVE · VErify · seCURE. These are 5 verbs you will use TODAY in your Inspection Report.*' Choral repetition 3 veces · finger drilling rápido.",
+        "5. Bridging narrativo: '*Today is Andrea's third week at the Terminal. Captain Restrepo says: ANDREA, I need a Pre-Shift Vessel Inspection Report on my desk before the morning shift starts. The BUENAVENTURA EXPRESS arrives at 07:00. Captain Lopera will sign it. Can you write it? You have 6 hours.*'",
+        "6. Mostrar 1 sample Inspection Report modelo proyectado en pantalla (sample excellent · 60-90 palabras · 5 moves visibles) — '*This is what you write today. 6-8 sentences. Like Andrea writes.*'"
+      ],
+      "duration_min": 12
+    },
+    "teacher_talk_opening_en": "*Good morning, team! Welcome to Session 4. Today is the day Andrea writes her FIRST Pre-Shift Vessel Inspection Report — and so do you. This is your first WRITTEN evidence — E2, 5 points. Captain Restrepo is waiting. Captain Lopera will sign. The BUENAVENTURA EXPRESS arrives at 07:00 at Berth 4 — and the shift does not start without your form. We have 4 grammar tools today: be (the vessel IS at berth 4) · plural with a/an (a bollard, two bollards) · imperative (Check the bollard! Open the gate!) · IN-prepositions (the cargo IS in the warehouse). Four colors for self-editing: blue, red, green, purple. Are you ready to write like Andrea? Let's begin.*",
+    "teacher_talk_opening_es_cursive": "*(Buenos días, equipo. Bienvenidos a la Sesión 4. Hoy es el día en que Andrea escribe su PRIMER Formulario de Inspección Pre-Turno del Buque — y ustedes también. Esta es su primera evidencia ESCRITA — E2, 5 puntos. El Capitán Restrepo espera. El Capitán Lopera firmará. El BUENAVENTURA EXPRESS llega a las 07:00 al Muelle 4 — y el turno no inicia sin su formulario. Tenemos 4 herramientas gramaticales hoy: be (el buque ESTÁ en muelle 4) · plural con a/an (un bolardo, dos bolardos) · imperativo (¡Revisa el bolardo! ¡Abre la puerta!) · preposiciones IN (el cargo ESTÁ en la bodega). Cuatro colores para autoedición: azul, rojo, verde, morado. ¿Listos para escribir como Andrea? Empecemos.)*",
+    "objetivo_dia_escrito_en_tablero": "*Today you will: (1) discover 4 grammar rules in mentor text · (2) write a Pre-Shift Vessel Inspection Report 60-90 words · (3) peer review in trios (Apprentice/Mentor/Master) · (4) self-edit with 4 color codes · (5) submit your first E2 Writing evidence (5 pts).*",
+    "activacion_5_verbos_imperativos": {
+      "instruccion": "Instructor señala las 5 tarjetas pre-pegadas en Maritime Word Wall y modela stress + acción física: '*CHECK — open one eye, look! · OPen — open both hands! · MOVE — walk one step! · VErify — point and confirm! · seCURE — close fist tight!*' Choral repetition 3 veces con gesto · finger drilling rápido · clase responde con eco + acción.",
+      "tecnica": "Modelo-eco con Total Physical Response + Choral repetition + Finger drilling + Board marking (PM-0 §5.13)"
+    },
+    "icq": [
+      "*What evidence are you submitting today — E2 Reading or E2 Writing?* → Esperan: 'E2 Writing'",
+      "*How many points is E2 Writing?* → Esperan: '5 / five'",
+      "*How many words does the Inspection Report have?* → Esperan: '60-90 / sixty to ninety'",
+      "*How many color codes for self-editing?* → Esperan: '4 / four (blue red green purple)'",
+      "*Who signs your Inspection Report at the end?* → Esperan: 'Captain Lopera / the master'"
+    ],
+    "facilitation_notes": [
+      "💡 Día 4 es bisagra emocional + técnico. Mantenga energía concentrada — no festiva. Es el primer día de evaluación real (E2).",
+      "💡 Los 5 verbos imperativos NUEVOS (check · open · move · verify · secure) deben quedar permanentes en Word Wall ANTES de S4 — verificar que las tarjetas con stress mark están pegadas. Si no: pegarlas en el primer minuto de SET-UP.",
+      "💡 Si un aprendiz dice '*Profe, no sé escribir nada en inglés*', responda: '*Andrea also did not know on Day 1. Today she has 4 tools. So do you. Trust the frame.*'",
+      "💡 La narrativa Captain Restrepo + Captain Lopera + Berth 4 mantiene continuidad — no inventar elementos nuevos.",
+      "💡 Anote en LIVE ZONE 1-2 palabras inglesas que emergen orgánicamente en Quick Recall — las celebrará en WHILE A discovery."
+    ],
+    "checkpoint": "✓ Thumbs Up/Down: '*Do you remember the 5 ship parts from Session 3?*' — ≥80% thumbs up. Si <80%: dar 2 min extra de choral repetition con diagrama Ship Overview A2 antes de avanzar a WHILE A."
+  },
+  "while": {
+    "duracion_min": 280,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "Grammar Awareness Inducción Guiada — 4 grupos en mentor text PM-2.3 (PM-2.10)",
+        "duracion_min": 40,
+        "worksheet_ref": "PM-2.10 — Gr 1 (be) · Gr 3 (plural a/an) · Gr 5 (imperativo) · Gr 14 (IN at/on/next to/near)",
+        "agrupacion": "Parejas → Plenaria",
+        "objetivo": "Inducir colectivamente las 4 reglas gramaticales activas a partir de su uso en mentor text PM-2.3 (UNIT 1 SHIP OVERVIEW · Operational Report BUENAVENTURA EXPRESS) · NO presentar la regla primero · CONSTRUIR la regla. Cada pareja extrae 3 ejemplos por grupo · plenaria consolida en LIVE ZONE.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor distribuye PM-2.10 handout (12 oraciones huecos guiados de mentor text PM-2.3) + tabla descubrimiento de 4 columnas (Gr 1 / Gr 3 / Gr 5 / Gr 14).",
+          "2. Cada aprendiz toma su ejemplar PM-2.3 que ya tiene desde S3 (verificar — si alguien no lo tiene · entregar copia).",
+          "3. Consigna en parejas (15 min): '*With your partner, find in the Master Anchor PM-2.3: (a) 3 sentences with be · (b) 3 sentences with a/an or plural · (c) 3 imperative sentences · (d) 3 sentences with IN-prepositions. Underline them with the 4 colors. Fill the discovery table.*'",
+          "4. Instructor circula leyendo sobre el hombro · NO da reglas · solo confirma con preguntas socráticas: '*Look at this sentence: \"The bow is at the front.\" What color do you underline?*' (esperan: BLUE for be · GREEN for at/IN-preposition).",
+          "5. ✓ Pair Check (5 min): cada pareja muestra su tabla a la pareja vecina · comparan diferencias · negocian.",
+          "6. Plenaria 20 min — Discovery Table en LIVE ZONE: instructor pide 1 ejemplo por grupo · clase confirma · escribe en tablero. Después de cada grupo, instructor invita: '*So — what's the rule? You tell me.*' Aprendices intentan formular la regla en español ok · instructor traduce y formaliza con micro-cápsula visual.",
+          "7. Las 4 reglas formalizadas (escritas en LIVE ZONE en MAYÚSCULA permanente · queda visible toda la sesión): · 🟦 BE: Subject + IS / ARE / AM + Adjective/Noun (The vessel IS at berth 4 · The bollards ARE secured) · 🟥 IMP: NO subject + verb + object (Check the bollard · NOT 'You check the bollard') · 🟩 IN-prep: at (point/time) · on (surface) · in (closed space) · next to (proximity) · near (close · less specific) · 🟪 PLURAL: a + consonant sound (a bollard) · an + vowel sound (an inspection) · plural -s/-es (bollards · vessels · containers).",
+          "8. ⚠️ Micro-Cápsula GRAMMAR RULE — IMPERATIVO (proyectada en pantalla): '*In English, imperative does NOT have YOU. We say \"Check the bollard\" — not \"You check the bollard\". (En inglés el imperativo NO lleva sujeto. Decimos \"Check\" no \"Tú revisas\".)*'",
+          "9. Cierre con choral repetition de 4 frases modelo · 1 por grupo: '*The vessel is at berth 4 · Check the bollard · The crane is on the dock · There are two bollards.*'"
+        ],
+        "teacher_talk_instruction": "*With your partner, become detectives. Open the Master Anchor PM-2.3. Find sentences with be — underline BLUE. Find sentences with imperative — underline RED. Find sentences with IN-prepositions — underline GREEN. Find sentences with plural or a/an — underline PURPLE. 15 minutes. Don't tell me the rule yet — find the EXAMPLES. The rules will appear together. Go.*",
+        "icq": [
+          "*Are you working alone or with your partner?* → Esperan: 'With my partner / in pairs'",
+          "*How many examples per color?* → Esperan: '3 examples / three each'",
+          "*Should I tell the rule first or find examples first?* → Esperan: 'Find examples / examples first / no rule yet'",
+          "*Can I use Spanish to discuss with my partner?* → Esperan: 'Yes, sometimes / discussion ok / final answer in English'"
+        ],
+        "answer_key_inline": {
+          "Gr_1_BE_examples_from_PM23": [
+            "The bow IS at the front of the vessel.",
+            "The stern IS at the back.",
+            "The bridge IS on the upper deck.",
+            "The hull IS in the water.",
+            "The containers ARE on deck.",
+            "Captain Lopera IS the master."
+          ],
+          "Gr_3_PLURAL_a_an_examples_from_PM23": [
+            "A bollard / bollards",
+            "An inspection / inspections",
+            "A vessel / vessels",
+            "A container / 24 containers",
+            "A crane / two cranes",
+            "A bow (singular único · ship has 1 bow)",
+            "A stern (singular único · ship has 1 stern)"
+          ],
+          "Gr_5_IMPERATIVE_examples_from_PM23_or_added_by_instructor": [
+            "Check the bollard at berth 5.",
+            "Open the gate.",
+            "Move the forklift to bay 7.",
+            "Verify the cargo manifest.",
+            "Secure the mooring lines."
+          ],
+          "Gr_14_IN_prepositions_examples_from_PM23": [
+            "The bridge is ON the upper deck.",
+            "The vessel is AT berth 4.",
+            "The cargo is IN the warehouse.",
+            "The forklift is NEXT TO the container.",
+            "The crane is NEAR the bow."
+          ],
+          "discovery_rules_consolidadas_en_LIVE_ZONE": [
+            "🟦 BE: Subject + IS / ARE / AM + Adjective/Noun · negative ADD NOT (is not / are not)",
+            "🟥 IMP: NO subject + verb base form + object (Check the bollard · NOT You check)",
+            "🟩 IN-prep: AT (point/time) · ON (surface) · IN (closed space) · NEXT TO (proximity) · NEAR (close less specific)",
+            "🟪 PLURAL: a + consonant sound (a bollard) · an + vowel sound (an inspection) · plural -s/-es"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Inducción NO deducción — NO empezar con la regla. Si un aprendiz dice '*Es así porque sí*' acepte y vaya a otra pareja para más ejemplos.",
+          "💡 La micro-cápsula del IMPERATIVO es CRÍTICA — Gr 5 es el grupo Intro de la sesión · es donde se construye la regla nueva. Modele 3-4 frases contrastivas en tablero: '*Tú revisas el bolardo / Check the bollard*'.",
+          "💡 Si una pareja se atora con plural a/an: dar 1 ejemplo simple ('a bollard / an inspection — escucha el sonido inicial') · luego dejar que descubran 2 más solos.",
+          "💡 Anote en su cuaderno mental qué grupo gramatical genera más confusión — lo abordará en WHILE C 1:1 mini-conferences.",
+          "💡 Si emerge una regla nueva no prevista (ej: contracción 'is not = isn't'): celebrar discretamente · '*Excellent — you found a contraction. We will see it formally in Session 5.*' (no abrir el tema · respetar el ciclo)."
+        ],
+        "checkpoint": "✓ Pair Check + Plenary Discovery: las 4 reglas están escritas en LIVE ZONE con 1 ejemplo modelo cada una · ≥80% de las parejas tienen 8+ ejemplos correctamente subrayados. Si menos: dar 5 min extra con consigna '*Look only at sentences with vessel or bow or stern · those have BE.*'",
+        "transition": "*You discovered the 4 rules. Now — let's see how they live together in a real Inspection Form. Andrea is about to write hers.*",
+        "tecnica_didactica": "Inducción gramatical por descubrimiento (Gr 1+3+5+14) con marcado de color en mentor text"
+      },
+      {
+        "letra": "B",
+        "nombre": "Pre-writing — Quickwrite + Genre Analysis (PM-2.4 Archetypes A + E)",
+        "duracion_min": 50,
+        "worksheet_ref": "PM-2.4 Archetype A (Exploratory Quickwrite 10 min) + Archetype E (Genre-Based 40 min)",
+        "agrupacion": "Individual → Plenaria → Parejas",
+        "objetivo": "Vencer la página en blanco mediante quickwrite individual de 5 min sobre 'todo lo que veo en el BUENAVENTURA EXPRESS desde Berth 4' (Archetype A · Total 10 min) · luego extraer colectivamente la 'recipe del género' Inspection Report a partir de 2 ejemplares mentor texts (Archetype E · 40 min) · cerrando con transfer exercise individual (4 líneas para CML CARRIER en Berth 7).",
+        "instrucciones_paso_a_paso": [
+          "1. Archetype A — Quickwrite (10 min): Instructor proyecta foto del BUENAVENTURA EXPRESS atracado en Berth 4. Consigna: '*Look at the BUENAVENTURA EXPRESS. Open your notebook. Write everything you see for 5 minutes. No grammar, no spelling — just words and phrases. Goal: 30+ words/phrases.*'",
+          "2. Música instrumental marítima muy baja durante quickwrite (5 min cronómetro). Instructor circula sin corregir.",
+          "3. Selection action 5 min: '*Now circle 5-7 items from your quickwrite that you want to use in your formal form.*'",
+          "4. Archetype E — Genre Analysis 40 min: Instructor distribuye 2 ejemplares Pre-Shift Vessel Inspection Form (Exemplar 1: BUENAVENTURA EXPRESS Berth 4 anonimizado · Exemplar 2: SMCP-aligned IMARPOR manual A1.2). Cada trio (8 trios) recibe ambos.",
+          "5. Plenaria 5 min: instructor proyecta los 2 ejemplares y pregunta: '*What 5 sections do BOTH forms have?*' Aprendices identifican: Header · Equipment Location · Deck Status · Shift Operations · Sign-off.",
+          "6. Genre Recipe extraction colectiva 15 min: instructor escribe en LIVE ZONE: '*RECIPE: 1 Header (vessel + berth + date + shift time AT) · ≥4 location lines (ON/AT/IN/BEHIND/IN FRONT OF/NEXT TO) · ≥2 deck status lines (be + there is/are) · ≥3 operations lines (simple present 3rd -s) · sign-off (apprentice + master).*'",
+          "7. Auditor's Checklist 5 ítems escrito en tablero permanente: '*(1) 5 moves present? · (2) Header at top · signatures at bottom? · (3) Formal register (no contractions · no slang)? · (4) Length 60-90 words? · (5) ≤12 words per sentence?*'",
+          "8. Transfer Exercise individual 15 min: '*Now write the same kind of form but for CML CARRIER at Berth 7, evening shift starting AT 19:00. Only 4 lines (1 header + 2 location + 1 operation). Show you can transfer the recipe.*'",
+          "9. Pair share 5 min: cada aprendiz muestra su transfer a su compañero · este verifica '¿tiene los 4 elementos básicos del recipe?' · sin corrección gramatical."
+        ],
+        "teacher_talk_instruction": "*Look at the BUENAVENTURA EXPRESS. 5 minutes — write everything you see. No grammar. Just words and phrases. Then we look at 2 real Inspection Forms together. We extract the recipe — like a chef's recipe. Then you write a small transfer for CML CARRIER. After break — you write your full form for E2 evidence. Music on. Go.*",
+        "icq": [
+          "*During quickwrite, can I correct my spelling?* → Esperan: 'No / no correction / just write'",
+          "*How many sections do both Inspection Forms have?* → Esperan: '5 / five sections'",
+          "*Where does the signature go?* → Esperan: 'At the bottom / sign-off / Move 5'",
+          "*The transfer is for which vessel?* → Esperan: 'CML CARRIER / Berth 7 / evening shift'",
+          "*Can my sentence have 15 words?* → Esperan: 'No / max 12 words / shorter'"
+        ],
+        "answer_key_inline": {
+          "quickwrite_expected_output_sample_maritime": [
+            "containers on deck · big vessel · BUENAVENTURA EXPRESS · bridge on top · captain on the bridge · dock wet · crew working · cargo in warehouse · berth 4 · stern back · bow front · lifeboat orange · crane behind warehouse · 07:00 shift starts · cold morning · Captain Lopera · bollards near bow · mooring lines tight · Channel 16 VHF · arrives at 07:00"
+          ],
+          "genre_recipe_consolidada_LIVE_ZONE": {
+            "Move_1_Header": "vessel name · berth (AT) · date · shift time (AT)",
+            "Move_2_Equipment_Location": "≥4 lines · prepositions ON/AT/IN/BEHIND/IN FRONT OF/NEXT TO/BETWEEN",
+            "Move_3_Deck_Status": "≥2 lines · be + there is/are",
+            "Move_4_Shift_Operations": "≥3 lines · simple present 3rd person -s · optional AND combinator",
+            "Move_5_Signoff": "Apprentice signature line + Master countersignature line",
+            "Register": "Formal operativo · no contractions · no slang · ≤12 words per sentence",
+            "Length": "60-90 words · 8-12 sentences"
+          },
+          "auditors_checklist_5_items": [
+            "(1) Does my form have all 5 moves?",
+            "(2) Header at top · signatures at bottom?",
+            "(3) Is my register formal operativo (no contractions · no slang)?",
+            "(4) Is my length 60-90 words?",
+            "(5) Is each sentence ≤12 words?"
+          ],
+          "transfer_exercise_sample_CML_CARRIER": [
+            "Vessel: CML CARRIER · Berth: AT Berth 7 · Date: 28 April · Shift starts AT 19:00.",
+            "The pilot is ON the bridge.",
+            "The tug is IN FRONT OF the bow.",
+            "The vessel arrives AT 19:00."
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Quickwrite = fluency NO accuracy. Si un aprendiz se atora 2 min sin escribir: acérquese y diga '*Just one word. Anything you see.*' (no corrija).",
+          "💡 Genre recipe extraction es socrática · NO dictar la regla · CONSTRUIRLA con preguntas. Si la cohorte tarda en identificar las 5 moves: pista visual marcando los 2 ejemplares con números de move en el aire.",
+          "💡 Si un aprendiz produce transfer con 5 líneas en lugar de 4: aceptar y celebrar — el principio es que dominen el recipe · no la cantidad exacta.",
+          "💡 Mantenga el quickwrite confidencial — NO lo use como evidencia de E2. Es solo un recurso afectivo.",
+          "💡 Tome foto de 1-2 transfers excelentes (sin nombres) para usar en S5 como puente narrativo: '*Last week some of you wrote about CML CARRIER · this week the radio tells us more about it.*'"
+        ],
+        "checkpoint": "✓ Quickwrite tiene ≥30 palabras en cada cuaderno (survey visual) + Genre Recipe escrita en LIVE ZONE con los 5 moves + Transfer exercise completado por ≥85% de los aprendices con 4 líneas mínimas. Si menos: dar 5 min extra de transfer.",
+        "transition": "*You found the recipe. You wrote a small transfer. Take a 15-minute break. After break — your real Inspection Report. 80 minutes. The shift starts AT 07:00.*",
+        "tecnica_didactica": "Quickwrite exploratorio (low-stakes fluency) + Genre extraction socrática + Transfer exercise individual"
+      },
+      {
+        "letra": "C",
+        "nombre": "Drafting — Inspection Report Borrador Completo (PM-2.4 Archetype B)",
+        "duracion_min": 80,
+        "worksheet_ref": "PM-2.4 Archetype B — Academic/Formal Writing · 60-90 palabras · 5 moves · 8/8 grammar targets · ≥10 de 25 Toolbelt terms",
+        "agrupacion": "Individual silencioso (instructor 1:1 mini-conferences ≤2 min por aprendiz)",
+        "objetivo": "Producción central de la sesión — cada aprendiz produce el primer borrador completo del Pre-Shift Vessel Inspection Report sobre el BUENAVENTURA EXPRESS en Berth 4 · usando los sentence frames de PM-2.4 + las 4 reglas gramaticales descubiertas en WHILE A + ≥10 Toolbelt terms · auto-revisando con error codes de 4 colores. 80 min de trabajo silencioso · instructor en rol de Writing Mentor en mini-conferences.",
+        "instrucciones_paso_a_paso": [
+          "1. Re-distribuir PM-2.4 Inspection Report Template (sentence frames con 5 moves · grammar target labels [GT-S3-01..08] · espacios para llenar · 60-90 words counter en margen).",
+          "2. Re-leer mentor text PM-2.3 colectivamente 5 min · identificar 5 oraciones del texto que coinciden con los 5 moves del template.",
+          "3. Inspector's mindset framing: '*Now you ARE Andrea. The shift starts AT 07:00. Captain Restrepo is on the dock. Captain Lopera will sign. The form must be ready in 80 minutes. Use the template. Use the recipe. Use the rules. The 4 colors are for self-editing afterwards.*'",
+          "4. Producción individual silenciosa 60 min — música instrumental baja · cronómetro visible.",
+          "5. Instructor circula con 1:1 mini-conferences (≤2 min por aprendiz) — preguntas socráticas: '*¿Aquí qué color va?*' · '*Read this aloud — does it sound like Captain Lopera would sign it?*' · NO corregir el texto · solo preguntar.",
+          "6. ✓ Pair Check (a los 40 min · 5 min): '*Look at your draft. Compare with your neighbor — same number of moves? Same length? No translation help · just structure check.*'",
+          "7. Auto-revisión con error codes (15 min finales): cada aprendiz subraya su propio draft con los 4 colores: 🟦 BE · 🟥 IMP · 🟩 IN-prep · 🟪 PLURAL — debe poder identificar al menos 1 instancia de cada color (8 instancias mínimas en el draft completo).",
+          "8. Conteo de palabras + verificación checklist 5 ítems del Auditor's Checklist (que está en tablero permanente desde WHILE B)."
+        ],
+        "teacher_talk_instruction": "*Now — your real Inspection Report. 80 minutes. 60-90 words. 5 moves. 4 grammar tools. 4 colors for self-editing. The vessel is the BUENAVENTURA EXPRESS at Berth 4. The shift starts AT 07:00. Captain Lopera will sign — but only if the form is correct. Music on. Silent work. Trust the frame. I will visit each of you for 2 minutes — to ask, not to correct. Go.*",
+        "icq": [
+          "*How long is the draft?* → Esperan: '60-90 words / sixty to ninety'",
+          "*How many moves must my form have?* → Esperan: '5 / five'",
+          "*Can I correct my partner's draft?* → Esperan: 'No / silent / individual work'",
+          "*When do I use the 4 colors?* → Esperan: 'After writing / for self-editing'",
+          "*What does the instructor do during my 2-min visit?* → Esperan: 'Ask questions / not correct / I think'"
+        ],
+        "answer_key_inline": {
+          "maritime_worked_example_full_draft": "Vessel: BUENAVENTURA EXPRESS · Berth: AT Berth 4 · Date: 28 April · Shift starts AT 07:00. The containers ARE ON deck. The captain IS ON the bridge. The cargo IS IN the warehouse. The lifeboat IS IN FRONT OF the bridge. The crane IS BEHIND the warehouse. The forklift IS NEXT TO the container. There ARE 24 containers ON deck. Check the bollard at berth 5. Open the gate. The vessel arrives AT 07:00. Captain Lopera signs the form. The crew loads the containers. Apprentice: Andrea Mosquera · Master: Captain Lopera. [Word count: 86 · Sentences: 14 · GT coverage: 8/8 · Toolbelt terms used: 12]",
+          "color_code_count_minimum_per_draft": {
+            "BE_blue_minimum": 4,
+            "IMP_red_minimum": 2,
+            "IN_prep_green_minimum": 5,
+            "PLURAL_purple_minimum": 2,
+            "total_minimum_8_target_instances": 13
+          },
+          "toolbelt_terms_minimum": "≥10 de 25 (vessel · bow · stern · deck · bridge · port · dock · berth · container · captain · apprentice · mentor · crew · berthing · cargo · shift · warehouse · lifeboat · crane · bollard · mooring · anchor · departure · master · cargo handling)",
+          "auditors_checklist_5_items_self_check": [
+            "(1) ¿Tiene mi formulario los 5 moves? (Header · Location · Status · Operations · Sign-off)",
+            "(2) ¿Header arriba · firmas abajo?",
+            "(3) ¿Registro formal operativo (no contracciones · no slang)?",
+            "(4) ¿Longitud 60-90 palabras?",
+            "(5) ¿Cada oración ≤12 palabras?"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 1:1 mini-conferences ≤2 min · NO corregir el texto · solo preguntar. Patrón: '*Tell me what you wrote here. Does it sound like a real form? What grammar tool is this?*'",
+          "💡 Si un aprendiz se atora completamente (5 min sin escribir nada): ofrecer 'sentence starter' del template '*Vessel: BUENAVENTURA EXPRESS · Berth: AT Berth 4...*' · pedirle que copie y luego sustituya 1 palabra.",
+          "💡 Si un aprendiz termina antes (45 min): pedirle que haga el extension fast-finisher (escribir 3 líneas adicionales sobre el ambiente físico · '*The dock is wet · The morning is cold · The cargo is heavy*').",
+          "💡 Música instrumental marítima MUY BAJA · sonidos de puerto suaves (gaviotas distantes · radio lejano) · refuerza inmersión sin distraer.",
+          "💡 Anotar en cuaderno mental 4-5 errores típicos detectados (ej: 'You check' · 'There is 24 containers' · 'in the bridge' vs 'on the bridge') para usar en recast plenario WHILE E."
+        ],
+        "checkpoint": "✓ Pair Check (40 min): ≥85% de los drafts tienen ≥4 moves visibles + ≥40 palabras escritas. Si menos: ralentizar el resto del bloque · dar 10 min adicionales · reducir minutos de Pair Check posterior.",
+        "transition": "*Beautiful work, team. Your draft is on paper. Now — Captain Restrepo wants peer review. Form your trios. Apprentice · Mentor · Master.*",
+        "tecnica_didactica": "Escritura modelada andamiada con sentence frames + auto-edición con error codes 4 colores"
+      },
+      {
+        "letra": "D",
+        "nombre": "Peer Review en Trios — Apprentice / Mentor / Master (PM-2.4 Archetype C)",
+        "duracion_min": 50,
+        "worksheet_ref": "PM-2.4 Archetype C — Collaborative TBLT Writing · trio roles · rotación 3 turnos",
+        "agrupacion": "Trios heterogéneos (rotación de roles cada ~15 min · cada miembro pasa por los 3 roles)",
+        "objetivo": "Negociar sentido en trios donde los roles simulan la cadena de revisión real portuaria: Apprentice (escritor · Andrea role) · Mentor (Capitán Restrepo role · revisa coherencia) · Master (Captain Lopera role · revisa accuracy operacional). Cada miembro revisa 2 drafts (rotación). L1 permitido para negociación cuando se atoran (≤15% L1 budget en este bloque). Genuine negotiation of meaning · peers self-resolve · instructor NO corrige.",
+        "instrucciones_paso_a_paso": [
+          "1. Formar 8 trios (24 aprendices ideales · si más · 1-2 cuartetos). Heterogéneos: mezclar fast finishers con quien necesita más apoyo · mezclar quien tiene más Toolbelt activo con quien tiene menos.",
+          "2. Distribuir Peer Review Checklist 3 cards: Apprentice card (1 ítem · acepta/rechaza con razón) · Mentor card (3 ítems · estructura · longitud · oraciones) · Master card (3 ítems · accuracy operacional · registro · firma).",
+          "3. Scenario brief bilingüe proyectado: '*Your trio is the Berth 4 morning team. Apprentice = writer · Mentor = checks structure (Capitán Restrepo) · Master = checks operational truth (Captain Lopera). Rotate every 15 min so each of you reviews TWO drafts. After 50 min, your trio submits ONE final form to the class.*'",
+          "4. TURNO 1 (15 min): Aprendiz A (Apprentice) lee draft en voz alta · Aprendiz B (Mentor) revisa 3 ítems estructura · Aprendiz C (Master) revisa 3 ítems accuracy. Negociación bilingüe permitida.",
+          "5. ✓ Board Check (a los 25 min · 5 min): Instructor escribe 2 frases en tablero — '*The vessel arrive at 07:00*' (incorrecta · -s missing) y '*The vessel arrives at 07:00*' (correcta) · pregunta '*Which one is correct? Why?*' Aprendices responden en plenaria breve · sin nombrar autor.",
+          "6. TURNO 2 (15 min): rotación · A pasa a Mentor · B a Master · C a Apprentice. Mismo proceso.",
+          "7. TURNO 3 (15 min): rotación · A pasa a Master · B a Apprentice · C a Mentor.",
+          "8. Cada aprendiz documenta los cambios sugeridos por sus pares en su propio draft (acepta/rechaza con razón corta '*yes/no + reason*').",
+          "9. Cierre de trio (5 min): cada trio elige el draft que será el 'modelo del trio' (no necesariamente el mejor — el más representativo) y lo presenta al instructor.",
+          "10. Plenaria breve 5 min · 2-3 trios voluntarios leen su draft modelo · clase responde '*Would Captain Lopera sign this?*' yes/no con razón. Sin nombrar autores."
+        ],
+        "teacher_talk_instruction": "*Trios. Three roles: Apprentice · Mentor · Master. Apprentice reads the draft aloud. Mentor checks structure with the 3 mentor items. Master checks operational truth with the 3 master items. Every 15 minutes, rotate roles. Spanish ok when you negotiate — but the FINAL CHANGE on paper must be in English. Listen — don't fix. Don't teach. Negotiate. After 50 minutes, your trio chooses one model draft. Go.*",
+        "icq": [
+          "*How many roles in your trio?* → Esperan: '3 / three (Apprentice / Mentor / Master)'",
+          "*Who reads aloud first?* → Esperan: 'Apprentice / the writer'",
+          "*Can the Master correct the Apprentice's grammar?* → Esperan: 'No / suggest / don't fix / negotiate'",
+          "*How often do we rotate?* → Esperan: 'Every 15 minutes'",
+          "*After 50 min · what does each trio submit?* → Esperan: 'One model draft / the trio model'"
+        ],
+        "answer_key_inline": {
+          "Apprentice_card_1_item": "Read draft aloud · accept/reject each peer suggestion with one-word reason (yes/no + because) · document final version on form.",
+          "Mentor_card_3_items_structure": [
+            "(M1) ¿Tiene los 5 moves visibles? (Header · Location · Status · Operations · Sign-off)",
+            "(M2) ¿Longitud 60-90 palabras? (cuenta colectiva)",
+            "(M3) ¿Oraciones ≤12 palabras cada una? (cuenta de la oración más larga)"
+          ],
+          "Master_card_3_items_accuracy": [
+            "(Ma1) ¿El buque está realmente AT Berth 4? ¿Coincide la hora con el shift?",
+            "(Ma2) ¿Los containers están realmente ON deck? (no IN deck)",
+            "(Ma3) ¿El registro es formal operativo? (no contracciones · no slang · ej: 'arrives' no 'arrives'em·) ¿Forma que firmaría Captain Lopera?"
+          ],
+          "negotiation_prompts_typicos_observados": [
+            "'Is at berth 4' correct or 'In berth 4'? → AT (point/location · GT-S3-02 / Gr 14)",
+            "'The captain leaves' or 'leave'? → leaves (3rd person -s · Gr 9 reciclaje)",
+            "'There IS 24 containers' or 'There ARE'? → ARE (plural · Gr 7 reciclaje)",
+            "'You check the bollard' or 'Check the bollard'? → Check (imperative NO subject · Gr 5 NEW)",
+            "Can we combine 2 sentences with AND? → yes if both short · Gr 8"
+          ],
+          "rotation_documented": "Cada aprendiz pasa por 3 roles · revisa 2 drafts (los de sus 2 compañeros)",
+          "trio_model_selection_criteria": "El trio elige el draft más representativo (no necesariamente el mejor) — para la plenaria"
+        },
+        "facilitation_notes": [
+          "💡 Instructor circula · pero NO corrige · NO da reglas · solo facilita la negociación: '*¿Qué dice tu Mentor card? Léelo en voz alta.*'",
+          "💡 Si un trio se queda en silencio: modelar 1 turno con voz audible: '*Apprentice — read line 3 aloud. Mentor — what do you check?*'",
+          "💡 Si un Master corrige el draft con marcador rojo (impulso paternalista): detener gentilmente: '*The Master suggests · the Apprentice decides. The pen stays with the Apprentice.*'",
+          "💡 L1 budget: ≤15% en este bloque. Si un trio habla 100% en español por 5 min: acercarse y modelar 1 frase en inglés '*OK · so the question is: ON or IN? Tell me in English which one.*'",
+          "💡 Tomar nota mental de los 3-5 errores que más se negocian — son los recasts del WHILE E.",
+          "💡 Los trios heterogéneos generan transferencia · NO mezclar a los 3 fast finishers en un trio."
+        ],
+        "checkpoint": "✓ Board Check (25 min): ≥85% de la clase identifica correctamente la oración con error de la pareja en tablero (-s missing) y articula la razón ('*because vessel is 3rd person singular · needs -s*'). Si <85%: pausar peer review · dar 5 min de mini-lección colectiva sobre Gr 5 imperativo + reciclaje 3rd person -s.",
+        "transition": "*Trios — beautiful negotiation. Now back to your individual draft. Use the 4 colors. Final edit. 50 minutes ahead.*",
+        "tecnica_didactica": "Peer review estructurado con roles trio (Apprentice/Mentor/Master) + negociación bilingüe controlada"
+      },
+      {
+        "letra": "E",
+        "nombre": "Final Edit + Recast Plenaria — 4 Color Codes + 4-5 Errores Típicos",
+        "duracion_min": 50,
+        "worksheet_ref": "PM-2.4 Archetype B (Final Edit POST_writing) + recast collective in LIVE ZONE",
+        "agrupacion": "Individual → Plenaria",
+        "objetivo": "Edición final individual con error codes 4 colores (BE azul · IMP rojo · IN verde · PLURAL morado) · cada aprendiz subraya su draft propio · luego lectura plenaria de 3 muestras voluntarias (sin nombrar autores) · recast colectivo en LIVE ZONE de 4-5 errores típicos detectados durante WHILE C-D · cierre con celebración del primer producto escrito formal.",
+        "instrucciones_paso_a_paso": [
+          "1. Final Edit individual (25 min): cada aprendiz toma su draft post-peer review · subraya con los 4 colores: 🟦 BE · 🟥 IMP · 🟩 IN-prep · 🟪 PLURAL.",
+          "2. Conteo final de instancias por color: instructor proyecta tabla en pantalla — '*BE: ¿4+? · IMP: ¿2+? · IN: ¿5+? · PLURAL: ¿2+? · Total: ≥13 instancias gramaticales.*'",
+          "3. Verificación final del Auditor's Checklist 5 ítems (que está en tablero permanente desde WHILE B): cada aprendiz marca check.",
+          "4. Reescritura en limpio (15 min) — pasar el draft revisado a la versión final para entrega · usar bolígrafo negro para texto + 4 colores para las marcas gramaticales (subrayado).",
+          "5. Plenaria — Lectura de Muestras Voluntarias (15 min): instructor invita 3 voluntarios a leer su draft en voz alta. NO nombrar autores. Permitir aplauso colectivo.",
+          "6. Recast Plenaria de 4-5 errores típicos detectados durante WHILE C-D (escritos en LIVE ZONE):",
+          "   · Error 1 — Imperativo con sujeto: '*You check the bollard*' → recast: '*Check the bollard*'",
+          "   · Error 2 — Plural there is: '*There is 24 containers*' → recast: '*There are 24 containers*'",
+          "   · Error 3 — Preposición incorrecta: '*The captain is in the bridge*' → recast: '*The captain is on the bridge*' (surface)",
+          "   · Error 4 — 3rd person -s missing: '*The vessel arrive at 07:00*' → recast: '*The vessel arrives at 07:00*'",
+          "   · Error 5 — Artículo a/an: '*A inspection*' → recast: '*An inspection*' (vowel sound)",
+          "7. Cada error: instructor escribe versión incorrecta + flecha + versión correcta en LIVE ZONE · clase responde con choral repetition de la versión correcta. Cero juicio · solo modelado positivo.",
+          "8. Cierre del bloque con celebración: '*Look at the LIVE ZONE. 4-5 errors. ALL of you made at least one of them. ALL of you fixed at least one. This is what writing looks like — drafting · noticing · fixing.*'"
+        ],
+        "teacher_talk_instruction": "*Final edit — alone. 25 minutes. Underline your draft with 4 colors: blue for be · red for imperative · green for IN-prepositions · purple for plural. Count: at least 13 grammar instances total. Then rewrite clean — black pen for text · colors for marks. After that — 3 voluntary readings · no names · just listening. Together we look at 5 typical errors — and fix them. Music on.*",
+        "icq": [
+          "*How many color codes in self-editing?* → Esperan: '4 / four (blue red green purple)'",
+          "*Minimum total grammar instances marked?* → Esperan: '13 / thirteen total'",
+          "*Will the instructor name authors during reading?* → Esperan: 'No / no names / anonymous'",
+          "*If I made one of the 5 typical errors · is that bad?* → Esperan: 'No / normal / fixing is the work'"
+        ],
+        "answer_key_inline": {
+          "color_code_count_minimum_final": {
+            "BE_blue_minimum_4": "The vessel IS at berth 4 / The captain IS on the bridge / The crane IS behind the warehouse / There ARE 24 containers",
+            "IMP_red_minimum_2": "Check the bollard / Open the gate / Verify the cargo manifest / Secure the mooring lines",
+            "IN_prep_green_minimum_5": "AT berth 4 / ON deck / IN the warehouse / NEXT TO the container / NEAR the bow",
+            "PLURAL_purple_minimum_2": "a bollard / 24 containers / two cranes / an inspection",
+            "total_minimum_13_instances": "BE 4 + IMP 2 + IN 5 + PLURAL 2 = 13"
+          },
+          "errores_tipicos_recast_LIVE_ZONE": [
+            "Error 1 — '*You check the bollard*' → '*Check the bollard*' (Gr 5 NO subject)",
+            "Error 2 — '*There is 24 containers*' → '*There are 24 containers*' (Gr 7 plural)",
+            "Error 3 — '*The captain is in the bridge*' → '*The captain is on the bridge*' (Gr 14 ON surface)",
+            "Error 4 — '*The vessel arrive at 07:00*' → '*The vessel arrives at 07:00*' (Gr 9 3rd person -s)",
+            "Error 5 — '*A inspection*' → '*An inspection*' (Gr 3 vowel sound)"
+          ],
+          "celebration_frase_cierre": "ALL of you made at least one of them. ALL of you fixed at least one. This is what writing looks like — drafting · noticing · fixing."
+        },
+        "facilitation_notes": [
+          "💡 Recast NUNCA es punitivo. Si la mayoría hizo el mismo error: '*This was a tricky one — even Andrea makes it.*'",
+          "💡 NO corregir todos los errores · solo los 4-5 más representativos. Sobre-corrección destruye la motivación.",
+          "💡 La frase '*ALL of you made at least one*' es CRÍTICA — normaliza el error como parte del proceso.",
+          "💡 Si un voluntario tiene un draft muy excelente: leerlo · pero también leer 1 draft con errores típicos (ya corregidos) · evita que la cohorte se compare desfavorablemente.",
+          "💡 Tomar foto de LIVE ZONE con los 5 errors corregidos · entra a portafolio del aprendiz como evidencia del primer ciclo de drafting-revising-editing."
+        ],
+        "checkpoint": "✓ Color code count + Auditor's Checklist completo: ≥85% de los aprendices tienen 13+ instancias marcadas y 5/5 ítems del Auditor's Checklist verificados. Si menos: dar 5 min extra de auto-edición.",
+        "transition": "*Now — your form is ready. Captain Restrepo is waiting. Time to deliver. Sign · countersign · seal in the envelope.*",
+        "tecnica_didactica": "Auto-edición con error codes 4 colores + lectura plenaria anonimizada + recast colectivo de errores típicos"
+      },
+      {
+        "letra": "F",
+        "nombre": "E2 Submission — Entrega Inspection Report a Capitán Restrepo · Lista Verificación E2",
+        "duracion_min": 25,
+        "worksheet_ref": "Lista Verificación E2 Writing — 5 criterios × 1 pt = 5 pts (PM-4.1 rubric)",
+        "agrupacion": "Individual → Plenaria breve",
+        "objetivo": "Entrega ceremonial del primer entregable evaluado del programa (E2 Writing 5 pts) · cada aprendiz firma su Inspection Report como Andrea Mosquera · Capitán Restrepo (instructor en rol) firma con marcador rojo · sobre carta sellado para portafolio Misión Final S12 · Lista Verificación E2 en marcha (instructor evalúa post-clase y devuelve S5 con feedback).",
+        "instrucciones_paso_a_paso": [
+          "1. Cada aprendiz toma su Inspection Report final reescrito + sobre carta + Lista Verificación E2 (5 criterios).",
+          "2. Aprendiz escribe su nombre como Andrea Mosquera en línea Apprentice signature · usa bolígrafo negro · firma legible.",
+          "3. Aprendiz lleva la Inspection Report al frente del aula donde el instructor (en rol de Capitán Restrepo) está sentado en mesa con marcador rojo.",
+          "4. Brief diálogo bilingüe (≤30 seg por aprendiz):",
+          "   · Capitán Restrepo: '*Good morning Andrea. Is your Pre-Shift Form ready?*'",
+          "   · Aprendiz: '*Yes Captain. Here it is.*' (entrega)",
+          "   · Capitán Restrepo lee 5 seg · firma con marcador rojo en línea Master signature · entrega de vuelta.",
+          "5. Aprendiz coloca su Inspection Report en sobre carta · escribe nombre + fecha en exterior · sella · entrega a la caja del instructor (que se queda con instructor para evaluación post-clase).",
+          "6. Instructor proyecta Lista Verificación E2 en pantalla (5 criterios visibles para todos): · (1) 5 moves presentes (1 pt) · (2) 8/8 grammar targets activos (1 pt) · (3) ≥10 Toolbelt terms (1 pt) · (4) Longitud 60-90 palabras (1 pt) · (5) Registro formal + sentence ≤12 words (1 pt).",
+          "7. Plenaria breve 3 min: '*The form is in the envelope. Captain Lopera will sign it during the week. You receive feedback in Session 5. Today — first written evidence done. Good work, team.*'",
+          "8. Foto del montón de sobres en la caja del instructor — evidencia del primer ciclo de evaluación · entra a Drive del run."
+        ],
+        "teacher_talk_instruction": "*Now — submission. You are Andrea. I am Capitán Restrepo. Sign your form. Bring it to me. I read it 5 seconds. I countersign with red marker. You seal it in the envelope · write your name · write the date. Caja del instructor. Done. Lista Verificación E2 — 5 criteria · 5 points. I evaluate after class · feedback returns Session 5. Go.*",
+        "icq": [
+          "*Who plays Capitán Restrepo today?* → Esperan: 'The instructor / you'",
+          "*With which color does the Capitán sign?* → Esperan: 'Red / red marker'",
+          "*Where does the form go after signing?* → Esperan: 'Envelope / sobre carta · with name and date'",
+          "*When do I receive feedback on my form?* → Esperan: 'Session 5 / next session'",
+          "*How many points is E2 Writing?* → Esperan: '5 / five'"
+        ],
+        "answer_key_inline": {
+          "lista_verificacion_E2_writing_5_criterios": [
+            "(1) 5 moves presentes (Header / Location / Status / Operations / Sign-off) — 1 pt",
+            "(2) 8/8 grammar targets activos (Gr 1 be · Gr 3 plural a/an · Gr 5 imperativo · Gr 14 IN-prep · más reciclaje S2-S3) — 1 pt",
+            "(3) ≥10 de 25 Toolbelt terms usados correctamente — 1 pt",
+            "(4) Longitud 60-90 palabras (8-12 oraciones) — 1 pt",
+            "(5) Registro formal operativo · sentence ≤12 palabras · firmas presentes — 1 pt",
+            "TOTAL: 5 pts"
+          ],
+          "patron_esperado_S4_A1.2": "Promedio 3-4 / 5 pts en S4 (esperable · primer entregable evaluado · curva de adaptación). Distribución típica: 60% obtiene 4-5 pts · 30% obtiene 3 pts · 10% obtiene ≤2 pts (estos requieren acompañamiento individual S5 pre-clase).",
+          "feedback_devolucion_S5": "Cada aprendiz recibe su Inspection Report con marcas instructor + Lista Verificación marcada + 1 frase de mejora puntual. Devolución al inicio de S5 warm-up · individual · 3 min."
+        },
+        "facilitation_notes": [
+          "💡 La ceremonia de entrega es BREVE pero SIGNIFICATIVA · NO la trate como mero trámite · es el primer entregable evaluado del programa.",
+          "💡 El rol de Capitán Restrepo se mantiene durante los 30 seg con cada aprendiz · NO romper el rol con preguntas técnicas.",
+          "💡 La firma con marcador rojo es ceremonial · usar marcador grueso · firma legible.",
+          "💡 Si un aprendiz duda al entregar (afectivo): respeto + mano en el hombro + '*Andrea also doubted on Day 1. Today she signs. So do you.*'",
+          "💡 Si un aprendiz NO terminó draft completo: aceptar versión parcial + nota verbal '*Lo terminamos en S5 warm-up. Aquí la mitad ya es valiente.*' (no cero · evaluación 1/5 con plan de finalización).",
+          "💡 Foto final del montón de sobres entra a Drive del run + se muestra en S5 warm-up como puente narrativo."
+        ],
+        "checkpoint": "✓ ≥90% de aprendices entregan Inspection Report en sobre con firma propia + firma Capitán Restrepo. Si <90%: dar 5 min extra para terminar · resto se completa S5 warm-up.",
+        "transition": "*The forms are sealed. Captain Lopera will sign them this week. Andrea's first morning is done. Now — Exit Ticket. 3 lines. And we close the day.*",
+        "tecnica_didactica": "Entrega ceremonial con role-play (Capitán Restrepo) + Lista Verificación E2 visible + sello a portafolio Misión Final"
+      }
+    ],
+    "breaks": [
+      {
+        "tiempo": "2:00-2:15",
+        "duracion_min": 15,
+        "tipo": "Receso activo (café + baño + estiramiento)",
+        "notas": "Recordar hidratación. El break ocurre ANTES del bloque más pesado (WHILE C Drafting 80 min). NO mover el break — ubicación crítica para sostener atención durante la producción central. English Zone se relaja durante break · vuelve al volver. Usar el break para preparar trio cards + 3 sample Inspection Reports proyectados."
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 20,
+    "exit_ticket": {
+      "tarea": "Exit Ticket S4 — Tarjeta 10×15 cm con 3 líneas: (1) ONE grammar rule I discovered today (en inglés o español · ej: 'Imperative no lleva sujeto' / 'There ARE for plural') · (2) ONE thing I'm proud of in my Inspection Report (en inglés o español · ej: 'I used 12 Toolbelt terms') · (3) ONE question I still have for Captain Lopera or for Session 5. Entregar en caja del instructor antes de salir.",
+      "success_criteria": "3 líneas completas. Mínimo 1 línea referencia explícita a una de las 4 reglas gramaticales. La pregunta puede ser en español. La caja se abre y se lee S5 warm-up (sin nombrar autores).",
+      "duration_min": 8
+    },
+    "sintesis": "Hoy cerraste el Bloque Interno 1 (RAP-01 · A1.2) con tu primer entregable escrito formal. Descubriste 4 reglas gramaticales (be · plural a/an · imperativo · IN-prepositions). Escribiste un Pre-Shift Vessel Inspection Report de 60-90 palabras sobre el BUENAVENTURA EXPRESS en Berth 4 — 5 moves · 8/8 grammar targets · ≥10 Toolbelt terms. Hiciste peer review en trio (Apprentice / Mentor / Master). Editaste con 4 color codes. Firmaste como Andrea Mosquera · Capitán Restrepo firmó con marcador rojo. Tu Inspection Report está sellado en sobre carta · entra a tu portafolio Misión Final S12. Mañana — Sesión 5 — abrimos el Bloque Interno 2 (A1.3): Captain Lopera te llamará por radio VHF. SMCP. NATO Phonetic. ¿Estás listo?",
+    "asignacion_autonoma": {
+      "actividad": "Inspection Report #2 de un buque/elemento del puerto observado · 2.33 horas autónomas (≈140 min) · NO evaluada · práctica autónoma de transferencia",
+      "instrucciones_detalladas": [
+        "1. Durante la semana, observa un buque · una grúa · un container · un elemento del puerto que veas (foto personal · video del muelle · imagen de Google Earth de Buenaventura).",
+        "2. Toma 1 foto/screenshot del elemento observado.",
+        "3. Escribe 1 Pre-Shift Inspection Report o Maintenance Report del elemento · usando el mismo template de hoy (5 moves · 60-90 palabras · 8/8 grammar targets).",
+        "4. Auto-edita con los 4 color codes (BE azul · IMP rojo · IN verde · PLURAL morado).",
+        "5. Si quieres feedback: enviarlo al instructor por chat antes de S6 (no obligatorio · recomendado para quienes obtuvieron <4/5 en E2).",
+        "6. Llevar todo a S5 — se compartirá brevemente en warm-up con compañero (3 min · sin evaluación)."
+      ],
+      "entregable": "1 foto/screenshot + 1 Inspection Report 60-90 palabras + auto-edición 4 color codes (presentar S5 warm-up).",
+      "cuando_se_revisa": "S5 warm-up (3 min) — compartir Inspection Report #2 con compañero · agregar 3 verbos imperativos nuevos al Maritime Word Wall si emergen orgánicamente. Sin evaluación formal · el instructor valida presencia (entregó / no entregó) · feedback puntual a quienes lo solicitan.",
+      "tiempo_estimado_min": 140,
+      "tiempo_estimado_horas": 2.333333
+    },
+    "bridge_to_next": "*Next session — Session 5: The Pilot's Apprentice — Listening to SMCP. Captain Lopera calls Andrea on the VHF radio · 90 seconds · interferencia simulada · 5 SMCP key phrases (Roger · Wilco · Affirmative · Standby · Over) · NATO Phonetic Alphabet (Alpha-Zulu) · spelling Charlie-Oscar-Lima for call sign. New Bloque Interno 2 · A1.3 opens. SMCP Reference Card laminada arrives Monday — permanent companion until Session 12. Bring your Inspection Report #2. Bring your ears. Come hungry for sound.*",
+    "teacher_talk_closing_en": "*Team — today was huge. You closed Bloque Interno 1. You wrote your first formal evidence — E2, 5 points, sealed in the envelope. You discovered 4 grammar rules — not because I told you, but because you found them in Andrea's mentor text. You played 3 roles in your trios — Apprentice, Mentor, Master. You self-edited with 4 colors. Captain Restrepo signed your forms with red. Captain Lopera will sign them this week. Next Monday — Session 5 — Captain Lopera calls. The radio crackles. You hear his voice. You will need 5 SMCP phrases. Roger. Wilco. Affirmative. Standby. Over. Bring your second Inspection Report. Bring your ears. Welcome to A1.3 — the Pilot's Apprentice level. Well done, Junior Trainees. ¡Buen trabajo, aprendices!*",
+    "teacher_talk_closing_es_cursive": "*(Equipo, hoy fue enorme. Cerraron el Bloque Interno 1. Escribieron su primera evidencia formal — E2, 5 puntos, sellada en el sobre. Descubrieron 4 reglas gramaticales — no porque yo se las dije, sino porque las encontraron en el mentor text de Andrea. Jugaron 3 roles en sus tríos — Aprendiz, Mentor, Master. Auto-editaron con 4 colores. El Capitán Restrepo firmó sus formularios en rojo. El Capitán Lopera los firmará esta semana. El próximo lunes — Sesión 5 — el Capitán Lopera llama. La radio cruje. Escuchan su voz. Necesitarán 5 frases SMCP. Roger. Wilco. Affirmative. Standby. Over. Traigan su segundo Inspection Report. Traigan sus oídos. Bienvenidos al nivel A1.3 — el aprendiz del piloto. Buen trabajo, Aprendices Junior. ¡Buen trabajo, aprendices!)*",
+    "reflection_prompt": "Antes de salir · 30 segundos de silencio: '*Hoy escribí mi primer reporte profesional en inglés. ¿Qué se siente leerlo en voz alta como Andrea? ¿Qué versión de mí entró a esta aula esta mañana? ¿Qué versión de mí sale ahora?*' (no se responde en voz alta · solo se siente).",
+    "facilitation_notes": [
+      "💡 Cierre con energía positiva pero concentrada — S4 fue exigente · respetar la fatiga + celebrar el logro.",
+      "💡 La frase '*Captain Lopera will sign them this week*' es ficción narrativa · Sergio NO firma 25 formularios · solo evalúa con Lista Verificación E2 y devuelve. La ficción mantiene la motivación.",
+      "💡 Si un aprendiz expresa frustración o cansancio post-S4: respeto + frase puente '*A1.2 cerrado · A1.3 mañana es nuevo · descansa el fin de semana*'.",
+      "💡 Si queda tiempo (<3 min): aplauso grupal por el primer entregable evaluado del programa. No subestime el valor simbólico.",
+      "💡 La caja con 25 sobres queda con el instructor toda la semana · evaluar cada uno con Lista Verificación E2 + 1 frase de feedback puntual · devolución S5 inicio."
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "WHILE A — Grammar Awareness 4 grupos (PM-2.10 · Gr 1+3+5+14)",
+      "items": [
+        {
+          "pregunta": "Las 4 reglas descubiertas en LIVE ZONE",
+          "respuesta_correcta": "🟦 BE: Subj + IS/ARE/AM + Adj/Noun · 🟥 IMP: NO subject + verb + object · 🟩 IN-prep: AT (point/time) · ON (surface) · IN (closed space) · NEXT TO · NEAR · 🟪 PLURAL: a + consonant sound · an + vowel sound · plural -s/-es",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "No evaluado individualmente · construcción colectiva"
+        },
+        {
+          "pregunta": "Mínimo de ejemplos por grupo en mentor text PM-2.3",
+          "respuesta_correcta": "3 ejemplos por grupo (12 total)",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE B — Pre-writing Quickwrite + Genre Recipe (PM-2.4 Archetype A+E)",
+      "items": [
+        {
+          "pregunta": "¿Cuántos moves tiene la receta del Inspection Report?",
+          "respuesta_correcta": "5 (Header · Equipment Location · Deck Status · Shift Operations · Sign-off)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Mínimo de palabras en quickwrite",
+          "respuesta_correcta": "30 words/phrases",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Fluency over accuracy"
+        },
+        {
+          "pregunta": "Transfer exercise — buque y berth",
+          "respuesta_correcta": "CML CARRIER en Berth 7 · evening shift starts AT 19:00 · 4 líneas",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE C — Drafting Inspection Report (PM-2.4 Archetype B)",
+      "items": [
+        {
+          "pregunta": "Longitud requerida del draft",
+          "respuesta_correcta": "60-90 palabras · 8-12 oraciones · ≤12 palabras por oración",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Mínimo de Toolbelt terms",
+          "respuesta_correcta": "≥10 de 25 Toolbelt terms",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Cobertura de grammar targets",
+          "respuesta_correcta": "8/8 GT-S3 grammar targets activos (be · plural a/an · imperativo · IN-prep + reciclaje S2-S3)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Sample full draft (modelo Andrea)",
+          "respuesta_correcta": "Vessel: BUENAVENTURA EXPRESS · Berth: AT Berth 4 · Date: 28 April · Shift starts AT 07:00. The containers ARE ON deck. The captain IS ON the bridge. The cargo IS IN the warehouse. The lifeboat IS IN FRONT OF the bridge. The crane IS BEHIND the warehouse. The forklift IS NEXT TO the container. There ARE 24 containers ON deck. Check the bollard at berth 5. Open the gate. The vessel arrives AT 07:00. Captain Lopera signs the form. The crew loads the containers. Apprentice: Andrea Mosquera · Master: Captain Lopera. [86 words · 14 sentences · 8/8 GT · 12 Toolbelt]",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE D — Peer Review Trios (PM-2.4 Archetype C)",
+      "items": [
+        {
+          "pregunta": "¿Cuántos roles en cada trio?",
+          "respuesta_correcta": "3 (Apprentice · Mentor=Capitán Restrepo · Master=Captain Lopera)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cada cuánto se rota?",
+          "respuesta_correcta": "Cada 15 min · 3 turnos total · cada miembro pasa por los 3 roles",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Negociaciones típicas observadas",
+          "respuesta_correcta": "AT vs IN para berth (AT) · -s vs no -s para 3rd person (-s) · IS vs ARE para plural (ARE) · YOU check vs Check (Check sin sujeto) · combinar oraciones con AND",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE E — Final Edit + Recast Plenaria",
+      "items": [
+        {
+          "pregunta": "Color codes 4 grupos",
+          "respuesta_correcta": "🟦 BE azul · 🟥 IMP rojo · 🟩 IN-prep verde · 🟪 PLURAL morado",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Mínimo total de instancias gramaticales marcadas",
+          "respuesta_correcta": "13 (BE 4 + IMP 2 + IN 5 + PLURAL 2)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "5 errores típicos recast en LIVE ZONE",
+          "respuesta_correcta": "(1) 'You check' → 'Check' · (2) 'There is 24 containers' → 'There are' · (3) 'in the bridge' → 'on the bridge' · (4) 'The vessel arrive' → 'arrives' · (5) 'A inspection' → 'An inspection'",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE F — E2 Submission + Lista Verificación E2",
+      "items": [
+        {
+          "pregunta": "5 criterios Lista Verificación E2 Writing",
+          "respuesta_correcta": "(1) 5 moves · (2) 8/8 grammar targets · (3) ≥10 Toolbelt terms · (4) 60-90 palabras · (5) Registro formal + sentence ≤12 words",
+          "alternativas": [],
+          "puntos": 5,
+          "nota": "5 pts total (1 pt por criterio)"
+        },
+        {
+          "pregunta": "¿Quién firma con marcador rojo?",
+          "respuesta_correcta": "Capitán Restrepo (instructor en rol)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuándo se devuelve feedback?",
+          "respuesta_correcta": "S5 warm-up · individual · 3 min con 1 frase de mejora puntual",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WRAP-UP — Exit Ticket S4 + Asignación Autónoma",
+      "items": [
+        {
+          "pregunta": "Exit Ticket — 3 líneas",
+          "respuesta_correcta": "(1) Una regla gramatical descubierta · (2) Una cosa de la que estoy orgulloso · (3) Una pregunta para Captain Lopera o S5",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Asignación autónoma S4→S5",
+          "respuesta_correcta": "Inspection Report #2 de un buque/elemento del puerto observado por el aprendiz · 60-90 palabras · 4 color codes · NO evaluada (práctica de transferencia)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuándo se reabre el Inspection Report sellado en sobre?",
+          "respuesta_correcta": "Sesión 12 — Misión Final CML Port Turnaround · ceremonial reapertura del portafolio del aprendiz",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "En WHILE A: encontrar 5 ejemplos por grupo gramatical (en lugar de 3) en mentor text PM-2.3 + 1 ejemplo adicional generado por el aprendiz.",
+      "En WHILE B: hacer transfer exercise para 2 buques diferentes (CML CARRIER + 1 buque de elección propia).",
+      "En WHILE C: producir Inspection Report de 90-100 palabras (limite superior) + agregar 1 línea opcional de descripción ambiental ('The dock is wet · The morning is cold · The cargo is heavy').",
+      "En WHILE D: rotar como mentor o master de un cuarteto adicional si la cohorte tiene número impar.",
+      "En WHILE E: identificar 1 error adicional en la cohorte y proponer su recast en plenaria con consentimiento del autor.",
+      "En WHILE F: ofrecer ayuda peer tutor a un compañero que no terminó su draft (tutoría 5 min · sin corrección · solo preguntas socráticas)."
+    ],
+    "more_support_needed": [
+      "Tiempo extra en WHILE A (hasta 50 min) si la inducción es lenta — reducir a 2 grupos gramaticales primero (Gr 1 + Gr 14) y dejar Gr 5 + Gr 3 para el segundo turno.",
+      "En WHILE B — permitir quickwrite 100% en español primero · luego traducir 5 frases con apoyo del Maritime Word Wall.",
+      "En WHILE C — ofrecer template pre-llenado en el header (Move 1) para arrancar · solo dejan completar Moves 2-5.",
+      "En WHILE C — sentar al aprendiz cerca del Word Wall + Mapa A2 + Diagrama Ship Overview A2 (proximidad visual).",
+      "En WHILE C — extender 1:1 mini-conferences a ≤4 min con quien necesita más apoyo (sacrificar 1-2 mini-conferences a fast finishers).",
+      "En WHILE D — asignar el rol de Apprentice (escritor · más cómodo) durante los 3 turnos · NO rotar a Mentor/Master para reducir carga cognitiva.",
+      "En WHILE E — permitir auto-edición con 2 colores en lugar de 4 (BE azul + IN verde primero · IMP rojo + PLURAL morado en S5).",
+      "En WHILE F — permitir entrega parcial (≥60% del draft completado · ≥40 palabras · ≥3 moves visibles) · evaluación 2-3/5 con plan de finalización en S5 warm-up.",
+      "Contacto uno-a-uno al final de la sesión: '*¿Cómo estuvo tu Inspection Report? El próximo lunes te ayudo a terminarlo en los primeros 10 min de S5 antes de empezar listening. Trae el sobre.*'"
+    ]
+  },
+  "instructor_self_check": [
+    "✓ ¿Conduje la inducción gramatical en WHILE A SIN dar la regla primero · CONSTRUYÉNDOLA con preguntas socráticas y ejemplos del mentor text PM-2.3?",
+    "✓ ¿Hice mini-conferences 1:1 ≤2 min durante WHILE C SIN corregir el texto · solo con preguntas ('¿qué color va aquí?' · '¿suena formal?')?",
+    "✓ ¿Los 5 verbos imperativos NUEVOS (CHECK · OPen · MOVE · VErify · seCURE) quedaron permanentes en Maritime Word Wall con stress + IPA?",
+    "✓ ¿Mantuve mi rol de Capitán Restrepo durante la entrega ceremonial WHILE F · firmando con marcador rojo cada Inspection Report en ≤30 seg por aprendiz?",
+    "✓ ¿Terminé con preview explícito de S5 (apertura RAP-02 · A1.3 · Captain Lopera VHF · 5 SMCP phrases · NATO Phonetic Alphabet · entrega de Inspection Report #2 autónomo)?"
+  ],
+  "activity_logistics": {
+    "espacio": "Aula bilingüe — Layout principal en mesas de 4 (para WHILE A parejas + WHILE D trios) · individual silencioso (WHILE C drafting · WHILE E final edit) · plenaria al frente (WHILE A discovery · WHILE B genre · WHILE E recast · WHILE F submission). English Zone señalizada con cinta azul marítima en el piso (ya pegada desde S1). Maritime Word Wall pared lateral actualizado con 15 tarjetas (5 S2 + 5 S3 + 5 S4) con stress + IPA. Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 en muros frontales y laterales. Mesa al frente reservada para entrega ceremonial WHILE F con Capitán Restrepo (instructor en rol).",
+    "agrupamiento": "Plenaria → Parejas (WHILE A) → Individual + Plenaria + Parejas (WHILE B) → Individual silencioso con 1:1 mini-conferences (WHILE C) → Trios heterogéneos rotativos (WHILE D · 3 turnos) → Individual + Plenaria (WHILE E) → Individual + Plenaria breve (WHILE F) → Individual + Plenaria (WRAP-UP). Transiciones explícitas con Teacher Talk corto (max 30 seg cada cambio).",
+    "recursos": [
+      "PM-2.10 Grammar Awareness handout (12 oraciones huecos + tabla descubrimiento)",
+      "PM-2.4 Writing Workshop handout (template 5 moves + sentence frames + 8 GT labels)",
+      "Master Anchor PM-2.3 impreso (mentor text · ya distribuido S3)",
+      "2 mentor text ejemplares Pre-Shift Inspection Forms (Exemplar 1 BUENAVENTURA EXPRESS + Exemplar 2 SMCP-aligned IMARPOR)",
+      "Peer Review Checklist 3 cards (Apprentice 1 ítem · Mentor 3 ítems · Master 3 ítems)",
+      "Lista Verificación E2 Writing (5 criterios × 1 pt = 5 pts · PM-4.1)",
+      "Marcadores 4 colores (azul · rojo · verde · morado) — error codes",
+      "Marcador rojo ceremonial (instructor en rol Capitán Restrepo · WHILE F)",
+      "Sobres carta para Inspection Reports finales (25 sobres + nombre + fecha)",
+      "3 sample Inspection Reports modelo (excellent · acceptable · with typical errors · proyectables)",
+      "Maritime Word Wall pared lateral con 15 tarjetas",
+      "Diagrama Ship Overview A2 (BUENAVENTURA EXPRESS lateral)",
+      "Mapa Terminal Buenaventura A2",
+      "Cronómetro visible en pantalla",
+      "Música instrumental marítima muy baja (sonidos de puerto suaves) durante WHILE C drafting individual"
+    ],
+    "tiempo": {
+      "set_up": 30,
+      "while_total": 295,
+      "break": 15,
+      "wrap_up": 20,
+      "total_directo_min": 360,
+      "autonomo_min": 140,
+      "autonomo_horas": 2.333333,
+      "total_aprendiz_horas": 8.333
+    },
+    "plan_b": "Si <50% asistencia: aplazar peer review trio (WHILE D) a S5 warm-up · usar tiempo extra en draft individual con scaffolding 1:1. Si proyector falla: usar mentor text PM-2.3 impreso A3 en pared como referencia · template Inspection Report ya impreso por aprendiz. Si la cohorte se atora con imperativo (5+ aprendices preguntan '¿dónde va el sujeto?'): pausar 5 min en WHILE A para inducción colectiva — escribir 3 ejemplos contrastivos en tablero ('Tú revisa el bolardo / Check the bollard'). Si error codes confunden (>30% no diferencia BE de IN): reducir a 2 colores (gramática verde / vocabulario amarillo) en S4 · ampliar a 4 colores en S7. Si Lista Verificación E2 no está lista: usar checklist genérico de 5 ítems en tablero + foto para registro · Sergio adjunta versión final post-S4. Si energía baja en WHILE C drafting (>50% mira el celular): pausar 3 min · contar 1 anécdota corta de Andrea fallando en Día 3 y volviendo a escribir el Día 4 · reactivar narrativa."
+  },
+  "totals_check": {
+    "set_up": 30,
+    "while_bloque_a": 40,
+    "while_bloque_b": 50,
+    "break": 15,
+    "while_bloque_c": 80,
+    "while_bloque_d": 50,
+    "while_bloque_e": 50,
+    "while_bloque_f": 25,
+    "wrap_up": 20,
+    "total_min": 360,
+    "check_result": "EXACTO 360 min directos (6h) + 140 min autónomo (≈2.33h) = 500 min totales = 8.33h aprendiz S4. Coherente con header.duracion_sesion_min de pm-3-1 + horas autónomas pm-2-0 sessions[3]."
+  },
+  "rap_status": "S4 completada (preliminary · pendiente Gate Humano 3) — Cierre Bloque Interno 1 (RAP-01 · A1.2). E2 Writing ENTREGADO (5 pts · Lista Verificación No 2 · PM-4.1) — primer entregable evaluado del programa. 25 Inspection Reports sellados en sobres carta (caja del instructor · entran a portafolio Misión Final S12). 4 grupos gramaticales activos por descubrimiento (Gr 1 be · Gr 3 plural a/an · Gr 5 imperativo INTRO · Gr 14 IN-prepositions). 5 verbos imperativos nuevos en Maritime Word Wall (check · open · move · verify · secure). Apertura del Bloque Interno 2 (RAP-02 · A1.3) abierta para S5 (Listening VHF SMCP).",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[3]",
+    "__contract_version__": "v2.5.1 (mapping per pm-3-1.pm_3_2_propagation_contract)",
+    "fpi_block": "3.3 Apropiación — Output escrito",
+    "grammar_groups": {
+      "intro": [
+        {
+          "group_id": "Gr 5",
+          "group_name": "Imperativo afirmativo (Open / Check / Move / Verify / Secure)",
+          "nivel_activacion": "Intro",
+          "ejemplo_en_sesion": "'Check the bollard at berth 5. Open the gate. Move the forklift. Verify the cargo manifest. Secure the mooring lines.' (sin sujeto · giro contrastivo con español)"
+        }
+      ],
+      "consolida": [
+        {
+          "group_id": "Gr 14",
+          "group_name": "Preposición In + at/on/next to/near (reciclaje S3)",
+          "nivel_activacion": "Consolida",
+          "ejemplo_en_sesion": "'Check the bollard AT berth 5. The cargo is IN the container. The crane is NEAR the bow. The forklift is NEXT TO the container.'"
+        },
+        {
+          "group_id": "Gr 1",
+          "group_name": "Verbo be (reciclaje S3)",
+          "nivel_activacion": "Consolida",
+          "ejemplo_en_sesion": "'The vessel IS at berth 5. The crane IS NOT operational. The bollard IS secured. The captain IS on the bridge.'"
+        },
+        {
+          "group_id": "Gr 3",
+          "group_name": "Plural + a/an (reciclaje S2)",
+          "nivel_activacion": "Consolida",
+          "ejemplo_en_sesion": "'a bollard / bollards · an inspection / inspections · a vessel / vessels · 24 containers'"
+        }
+      ],
+      "aplica": [],
+      "carga_check": "1/2 Intro + 3 Consolida (PM-0 §9.2) ✓ — sesión consolida 3 grupos previos antes de avanzar a Bloque 2 RAP-02 SMCP en S5",
+      "active_receptive_only": []
+    },
+    "feedback": {
+      "mode": "ACCURACY",
+      "rationale": "Producción escrita en A1.2 requiere foco en precisión gramatical. Error codes visuales permiten corrección autónoma sin interrumpir flujo. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_1 (cierre · feedback inmediato accuracy-prioritario).",
+      "accuracy_techniques": [
+        "Error codes visuales en draft (color code: BE azul / IMP rojo / IN verde / PLURAL morado)",
+        "Peer review estructurado con checklist 5 ítems observables (Apprentice/Mentor/Master)",
+        "Recast docente en producción pública (lectura de muestras en plenaria · sin nombrar autores)",
+        "1:1 mini-conferences ≤2 min con preguntas socráticas (NO corrección directa)",
+        "Auditor's Checklist 5 ítems para auto-verificación post-draft"
+      ],
+      "fluency_techniques": [],
+      "mixed_techniques": [],
+      "notes": "S4 NO incorpora fluency techniques · es la última sesión accuracy-pure antes de la transición A1.3 que ya incluye SMCP donde accuracy es bloqueante. Recast es POST-task · no invasivo durante producción."
+    },
+    "l1_management": {
+      "l1_percentage": 12,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_1.S3 (ajuste extrapolado curva descendente entre Bloque 1 y 2) — 12% transición",
+      "l1_rationale": "L1 sólo para giro contrastivo crucial: imperativo SIN sujeto en inglés ('Check the bollard' NO 'You check the bollard') — posición del sujeto entre español/inglés. Adicionalmente: 1 clarificación pluralización a/an (sonido vocálico vs consonántico) + negociación bilingüe en peer review WHILE D (≤15% en bloque · ≤12% promedio sesión). Resto en L2 con apoyo visual obligatorio (diagrama + word wall).",
+      "english_zone_declaration": "Reactivada al inicio SET-UP — cinta azul marítima en piso visible · círculo 🔵 en tablero ya está desde S1. Reforzada verbalmente.",
+      "l1_allowed_for": [
+        "Giro contrastivo del imperativo (1 micro-cápsula proyectada · 30 seg L1)",
+        "Clarificación pluralización a/an (sonido vocálico vs consonántico · ≤30 seg L1)",
+        "Negociación bilingüe en peer review trios WHILE D (≤15% L1 budget en bloque)",
+        "1:1 mini-conferences cuando aprendiz se bloquea afectivamente (≤2 min L1)",
+        "Quickwrite WHILE B archetype A — palabras en español aceptadas (low-stakes)"
+      ],
+      "reduction_strategy": "S5 → 12% L1 (mantenimiento entrada Bloque Interno 2 RAP-02) · S6 → 10% · S7 → 8% · curva descendente hacia 0% en S12 per pm-0-context.l1_percentage_per_session.single_guide_12_sessions"
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "inspection",
+          "ipa": "/ɪnˈspɛkʃən/",
+          "tonica": "SEGUNDA (inSPECtion)"
+        },
+        {
+          "word": "report",
+          "ipa": "/rɪˈpɔːrt/",
+          "tonica": "SEGUNDA (rePORT)"
+        },
+        {
+          "word": "berth",
+          "ipa": "/bɜːrθ/",
+          "tonica": "única (BERTH)"
+        },
+        {
+          "word": "secure",
+          "ipa": "/sɪˈkjʊər/",
+          "tonica": "SEGUNDA (seCURE)"
+        },
+        {
+          "word": "operational",
+          "ipa": "/ˌɒpəˈreɪʃənəl/",
+          "tonica": "TERCERA (operATional)"
+        }
+      ],
+      "techniques": [
+        "Finger drilling de verbos imperativos clave (CHECK · OPen · MOVE · VErify · seCURE)",
+        "Choral drill de writing frame: 'Check the…' · 'The vessel is…' · 'There are…'",
+        "Total Physical Response (TPR) en activación 5 verbos imperativos SET-UP — gesto físico por verbo",
+        "Board marking — MAYÚSCULA en sílaba tónica permanente en columna lateral del tablero"
+      ],
+      "board_marking": "Las 5 verbos imperativos quedan permanentes en Maritime Word Wall con stress en MAYÚSCULA + IPA en pequeño debajo. CHECK /tʃɛk/ · OPen /ˈoʊpən/ · MOVE /muːv/ · VErify /ˈvɛrɪfaɪ/ · seCURE /sɪˈkjʊər/.",
+      "notes": "S4 NO introduce SMCP (Roger/Wilco/Standby) ni NATO Phonetic — esos llegan en S5. S4 solo 5 verbos imperativos del Inspection Report.",
+      "source": "PM-0 §5.13 — Noticing de stress con soporte físico"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "check",
+        "open",
+        "move",
+        "verify",
+        "secure",
+        "inspection",
+        "report",
+        "berth",
+        "operational",
+        "vessel"
+      ],
+      "factors_applied": [
+        "Use",
+        "Self-expression",
+        "Creativity",
+        "Encounter"
+      ],
+      "operationalization": "Use: cada aprendiz escribe Inspection Report con 8 de los 10 verbos/términos target en producción real. Self-expression: elige qué buque/elemento del puerto inspecciona en autonomous task #2 (BUENAVENTURA EXPRESS u otro de elección personal). Creativity: añade 1 detalle observado real en producción + 1 detalle único en draft propio. Encounter: reciclaje 5 términos S2-S3 (bollard · crane · bow · stern · bridge · deck · hull · mast · anchor · berth) + 5 verbos nuevos S4 (check · open · move · verify · secure) = 10 términos activos · ≥10 Toolbelt terms requeridos en producción · 4 encuentros mínimos en sesión (warm-up + WHILE A awareness + WHILE C draft + WHILE E recast).",
+      "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS)"
+    },
+    "physical_environment": "Aula bilingüe — Layout en mesas de 4 (parejas WHILE A · trios WHILE D) · individual silencioso (WHILE C draft · WHILE E final edit) · plenaria al frente (discovery · genre · recast · submission). Proyector + tablero con 4 zonas demarcadas (English Zone + Title + Error Code Legend + LIVE ZONE). Maritime Word Wall pared lateral con 15 tarjetas (5 S2 + 5 S3 + 5 S4). Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 en muros frontales/laterales. Mesa ceremonial al frente reservada WHILE F (instructor en rol Capitán Restrepo + marcador rojo). Música instrumental marítima muy baja durante momentos individuales silenciosos (WHILE C · WHILE E).",
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.2",
+      "habilidad_principal": "produccion_escrita",
+      "descriptor_activo": "Puede completar un formulario con datos personales y técnicos. Puede escribir oraciones simples sobre operaciones cotidianas con frame guiado. Produce Pre-Shift Vessel Inspection Report 60-90 palabras con 5 moves + 8 grammar targets activos.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_1 — adaptado contexto Inspection Report S4"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Lenta — grammar awareness con 12 oraciones de huecos muy guiadas · pausas largas entre cada inducción de regla",
+      "extension_textos": "Inspection Report de 6-8 oraciones simples (Subject + be + Adj/Noun · Imperative + Object + IN-phrase) · 60-90 palabras · ≤12 palabras por oración",
+      "andamiaje": "Alto — writing frame completo con slots (vessel name · berth · status · action · location) · sentence frames bilingües · grammar target labels visibles · Auditor's Checklist 5 ítems en tablero · error codes 4 colores",
+      "rol_docente": "Modelo central + driller + lector imaginario (Capitán Restrepo recibe el reporte) + Writing Mentor en 1:1 mini-conferences + Genre Specialist en Archetype E + Collaborative Architect en Archetype C peer review + Capitán Restrepo en rol durante WHILE F submission",
+      "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_1 (cierre)"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A4 — Vocabulario del Word Wall (verbos imperativos S4 + ship parts reciclaje S3)",
+        "B1 — Pre-enseñanza gramatical (4 grupos antes de writing task) — inducción guiada NO deductiva",
+        "B3 — Accuracy dominante (error codes 4 colores + peer review checklist 5 ítems + recast plenaria)",
+        "B6 — My Turn — personalización (buque/elemento elegido propio en autonomous task #2)",
+        "C3 — Lógica PM precedente: S3 Reading provee léxico → S4 Writing produce · S4 cierra Bloque 1 → S5 abre Bloque 2 RAP-02"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S4 IMARPOR-CC. E2 Writing 5 pts es el primer entregable formal evaluado del programa — punto bisagra de trazabilidad."
+    }
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    },
+    "downstream_consumers": [
+      "PM-3.3 Canva Slides — referencias a 4 Grammar Discovery slides + Inspection Report Template + 5 verbos imperativos cards + Mentor text examples + Error Code Legend slide",
+      "PM-3.4 Workbook — Maritime Inspection Report Chapter 4 + autonomous task Inspection Report #2 (60-90 palabras + 4 color codes)",
+      "PM-3.6 Activity Logistics — A4.1 to A4.6 IDs derivados de WHILE A-F",
+      "PM-2.11 Check 14 — validación propagación estrategia_didactica + tecnicas[] + pm0_protocol cross-ref con pm-3-1.pm0_alignment_by_session[3]",
+      "PM-4.1 Lista Verificación No 2 — E2 Writing 5 criterios × 1 pt = 5 pts · evaluación post-clase + devolución S5"
+    ]
+  }
+}

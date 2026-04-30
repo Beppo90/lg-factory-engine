@@ -1,0 +1,1029 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.5",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
+  "session": 3,
+  "session_name": "Reading the Ship — UNIT 1 SHIP OVERVIEW",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide": "G1 — The Maritime Operations Pro",
+  "guia_numero": 1,
+  "programa": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo": "12340002",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.3",
+    "PM-2.5 (reciclaje)"
+  ],
+  "habilidades_foco": [
+    "Reading (R●) — comprensión literal e inferencial del Master Anchor 'Operational Report — BUENAVENTURA EXPRESS · Berth 4'",
+    "Vocabulary (V●) — 5 ship parts del Sub-bloque 1 + 5 nuevos del texto (deck · hull · mast · anchor · berthing)"
+  ],
+  "habilidades_soporte": [
+    "Grammar (G○) — be (am/is/are) + preposiciones de lugar (at/on/in/near/to) en input receptivo · sin enseñanza formal todavía"
+  ],
+  "cefr": "A1.2 (Bloque Interno 1 · RAP-01 · prereq A1.1 cubierto)",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-29",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "preliminary",
+  "_status_preliminary_rationale": "Build-Out generado por subagente creativo PM-3.2 · Gate Humano 3 (aprobación Playbook) pendiente · Sergio confirma cambiando a 'completed' tras revisión de coherencia con PM-2.3 (Master Anchor + 5 arquetipos) + PM-2.5 (Toolbelt 25 términos · reciclaje Sub-bloque 1) + pm-3-1 sessions[2] + pm0_alignment_by_session[2].",
+  "momento_sena": "3.3 Apropiación — Input receptivo",
+  "estrategia_didactica": "ABT — Reading andamiada Lectura cooperativa Jigsaw (textbook UNIT 1 SHIP OVERVIEW)",
+  "justificacion_didactica": "S3 es la primera sesión del ciclo de Apropiación con input receptivo escrito. El aprendiz pasa del diagnóstico afectivo (S1) y la pre-enseñanza léxica del Toolbelt 5 (S2) al texto auténtico marítimo. La estrategia ABT con jigsaw cooperativo permite distribuir la carga cognitiva del Master Anchor (178 palabras · 25 términos toolbelt · A1.2 estricto) entre 4 expertos por Home Group de 4 — cada experto domina 1 segmento (anatomía buque · SMCP/VHF · operaciones portuarias · funciones de rol) y enseña a sus pares. Esto reduce el filtro afectivo de leer un texto largo solo, refuerza la responsabilidad cooperativa (si tu experto falla, el grupo falla) y produce evidencia E1 Reading (5 pts · Cuestionario No 1 PM-4.1). L1 ≤ 15% del tiempo — sólo para la distinción semántica clave bow ('proa' vs ARM) y bridge ('puente de mando' vs 'puente físico'). Teacher Talk modelo central + driller activo de stress (deck · hull · vessel · container ship · BUENAVENTURA EXPRESS) + facilitador de jigsaw. La sesión cierra el Bloque Interno 1 (RAP-01 A1.2) con la columna L del KWL grupal recibiendo sus primeros 5 ítems consolidados.",
+  "session_header": {
+    "titulo": "SESSION 3: Reading the Ship — UNIT 1 SHIP OVERVIEW",
+    "subtitulo": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Build-Out — Playbook v2.5",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.3 — Reading: The Master Anchor (Operational Report BUENAVENTURA EXPRESS · Berth 4 · 178 palabras A1.2 · 25 términos Toolbelt · 5 arquetipos receptivos)",
+      "PM-2.5 (reciclaje) — Toolbelt 25 términos / Sub-bloque 1 ship parts (bollard · crane · bow · stern · bridge) + extensión 5 partes del texto (deck · hull · mast · anchor · berthing)"
+    ],
+    "habilidades_foco": [
+      "Reading (R●)",
+      "Vocabulary (V●)"
+    ],
+    "habilidades_soporte": [
+      "Grammar (G○) en input receptivo · pronunciation (P○) en stress drilling"
+    ],
+    "objetivos_pedagogicos": [
+      "(1) Comprender literalmente el Master Anchor 'Operational Report — BUENAVENTURA EXPRESS · Berth 4' (178 palabras · A1.2) identificando 5 partes del buque (bow · stern · bridge · deck · hull) y 4 zonas portuarias (berth · dock · gantry crane · warehouse).",
+      "(2) Producir un diagrama etiquetado bilingüe del BUENAVENTURA EXPRESS con 6-8 partes correctamente identificadas desde el texto.",
+      "(3) Demostrar inicio de comprensión inferencial respondiendo el Cuestionario No 1 (E1 Reading · 5 pts · 4 ítems literales + 1 inferencial).",
+      "(4) Ejecutar jigsaw cooperativo en 4 segmentos (anatomía · SMCP · operaciones · funciones) — cada experto enseña 2 minutos en Home Group.",
+      "(5) Activar receptivamente 5 nuevos términos toolbelt (deck /dɛk/ · hull /hʌl/ · mast /mæst/ · anchor /ˈæŋkər/ · berthing /ˈbɜːrθɪŋ/) con stress marcado y agregar 3 ítems a la columna L del KWL grupal."
+    ],
+    "plan_b": "Si el Master Anchor es percibido demasiado denso (>30% aprendices marca >5 palabras desconocidas en pre-reading): hacer lectura plenaria guiada del texto entero antes del jigsaw — cuesta 15 min al WHILE A pero protege la comprensión. Si proyector falla: distribuir el texto en handout impreso A4 + leer en voz alta. Si el Cuestionario E1 no llega impreso: usar pizarra con los 5 ítems + aprendices responden en su cuaderno. Si una pareja del Expert Group queda con 1 sólo experto (ausencia): instructor toma rol de co-experto temporal hasta que el aprendiz se consolide.",
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk pre-modelado bilingüe. Duración suma exacta 360 min directos + 140 min autónomo (≈2.33h). L1 ≤ 15% del tiempo de instrucción. PRIMERA evidencia formal E1 Reading (5 pts) — guardar Cuestionarios firmados en carpeta del aprendiz."
+  },
+  "materials_checklist": [
+    {
+      "item": "PM-2.3 Reading worksheet impreso — Master Anchor 'Operational Report — BUENAVENTURA EXPRESS · Berth 4' (178 palabras · A1.2) + pre/during/post reading tasks de los 5 arquetipos (A Communicative · B Reflective · C Information Gap · D Cooperative Jigsaw · E Multimodal opcional)",
+      "cantidad": "1 set por aprendiz (estimado 25 sets) + 3 sets de respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Diagrama lateral del BUENAVENTURA EXPRESS en blanco (6-8 partes numeradas para etiquetar) · A4 por aprendiz",
+      "cantidad": "1 por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Cuestionario No 1 — E1 Reading (5 ítems · 4 literales + 1 inferencial · 5 pts) + clave instructor",
+      "cantidad": "1 por aprendiz + 1 clave instructor",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Word Wall actualizado — 5 tarjetas Sub-bloque 1 (S2) ya pegadas + 5 tarjetas nuevas pre-impresas (deck /dɛk/ · hull /hʌl/ · mast /mæst/ · anchor /ˈæŋkər/ · berthing /ˈbɜːrθɪŋ/) con foto + IPA + stress mark",
+      "cantidad": "1 Word Wall + 10 tarjetas (5 viejas S2 + 5 nuevas S3)",
+      "verificado": false
+    },
+    {
+      "item": "Tarjetas Jigsaw con 4 segmentos del Master Anchor pre-marcados (Segmento 1 Ship Anatomy · Segmento 2 SMCP/VHF · Segmento 3 Port Operations · Segmento 4 Role Functions)",
+      "cantidad": "4 tarjetas × 6 Home Groups = 24 tarjetas",
+      "verificado": false
+    },
+    {
+      "item": "Mini-lección template (3 frases clave + 1 verification question) para cada Expert Group",
+      "cantidad": "1 por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Diagrama Ship Overview A2 en pared lateral (referencia visual permanente)",
+      "cantidad": "1 (ya en muro desde S1)",
+      "verificado": false
+    },
+    {
+      "item": "Mapa Terminal Buenaventura A2 (ya en muro desde S1) + plano del Berth 4 ampliado A3 para arquetipo Multimodal",
+      "cantidad": "1 + 1",
+      "verificado": false
+    },
+    {
+      "item": "Papelógrafo KWL grupal (de S1) — listo para agregar 3-5 ítems en columna L",
+      "cantidad": "1 (ya en pared)",
+      "verificado": false
+    },
+    {
+      "item": "Marcadores VERDE (✓ marcado claridad) + ROJO (✗ desacuerdo) + AZUL (? no entiende) para HOTS marking en arquetipo F (opcional)",
+      "cantidad": "1 set por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Cronómetro visible en pantalla + temporizador audible para transiciones de jigsaw",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Slides Pixel-puerto S3 (5 slides: Welcome S3 · pre-reading prediction · jigsaw assignment · post-reading classification · E1 reveal)",
+      "cantidad": "1 archivo + proyector",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO dividido en 4 zonas: (1) ESQUINA SUPERIOR DERECHA — ENGLISH ZONE 🔵 ya activada desde S1 (recordatorio visual). (2) CENTRO — Welcome title 'IMARPOR-CC · S3: Reading the Ship — UNIT 1 SHIP OVERVIEW · Berth 4 · BUENAVENTURA EXPRESS'. (3) COLUMNA LATERAL IZQUIERDA — 5 NUEVAS PALABRAS S3 con stress marcado en MAYÚSCULA: DECK /dɛk/ · HULL /hʌl/ · MAST /mæst/ · AN-chor /ˈæŋkər/ · BER-thing /ˈbɜːrθɪŋ/ + recordatorio Sub-bloque 1: BOL-lard · CRANE · BOW · STERN · BRIDGE. (4) ESPACIO INFERIOR LIVE ZONE — vacío al inicio · se llena durante la sesión con: predicciones DRTA (qué dice el reporte) · 4 segmentos jigsaw mapeados (1 Ship Anatomy · 2 SMCP · 3 Operations · 4 Functions) · diagrama clase BUENAVENTURA EXPRESS con etiquetas consolidadas plenarias · 3-5 ítems nuevos para columna L del KWL papelógrafo. FORMULA ZONE permanente: 'The ___ is ___ ' (be + preposition) + 'The ___ is at/on/in/near the ___'. Maritime Word Wall adyacente con 10 tarjetas (5 S2 + 5 S3) + Diagrama Ship Overview A2 visible.",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:25",
+      "duracion_min": 25,
+      "bloque": "SET-UP",
+      "actividad": "Warm-up: Quick Recall S2 Toolbelt + 5 nuevas palabras intro + objetivos S3 + ICQ + checkpoint",
+      "agrupacion": "Plenaria → Parejas → Plenaria",
+      "notas": "Reciclar bollard/crane/bow/stern/bridge. Activar deck/hull/mast/anchor/berthing. L1 ≈ 15%. Pre-reading prediction abierta."
+    },
+    {
+      "tiempo": "0:25-1:15",
+      "duracion_min": 50,
+      "bloque": "WHILE A (Pre-Reading)",
+      "actividad": "PM-2.3 Pre-Reading — Schema activation + DRTA primera predicción + Brainstorm Sub-bloque 1 ship parts + Vocab cloud (15 palabras pre-señaladas)",
+      "agrupacion": "Plenaria + parejas",
+      "notas": "Activación schema con foto del Berth 4. Predicciones se escriben en LIVE ZONE. ✓ Checkpoint: ≥80% predice 3 facts del reporte."
+    },
+    {
+      "tiempo": "1:15-2:25",
+      "duracion_min": 70,
+      "bloque": "WHILE B (Jigsaw Expert Groups)",
+      "actividad": "PM-2.3 Arquetipo D — 4 Expert Groups (1 Ship Anatomy · 2 SMCP/VHF · 3 Port Operations · 4 Role Functions) leen su segmento + preparan mini-lección 2 min con 3 frases clave",
+      "agrupacion": "Expert Groups de 6 (homogéneos por segmento)",
+      "notas": "Lectura silenciosa 25 min + discusión cooperativa 25 min + mini-lección preparation 20 min. Stress drilling de 5 nuevas palabras integrado."
+    },
+    {
+      "tiempo": "2:25-2:40",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "Receso activo (café + baño + estiramiento)",
+      "agrupacion": "—",
+      "notas": "Hidratación. Mantener Maritime Word Wall visible. Instructor reorganiza mesas para Home Groups (4 personas · 1 por segmento)."
+    },
+    {
+      "tiempo": "2:40-3:40",
+      "duracion_min": 60,
+      "bloque": "WHILE C (Jigsaw Home Groups)",
+      "actividad": "PM-2.3 Arquetipo D Home Groups — Cada experto enseña su segmento 2 min · grupo reconstruye reporte completo · responde verification question 'What does Andrea do at the bow station?'",
+      "agrupacion": "Home Groups de 4 (heterogéneos · 1 experto por segmento)",
+      "notas": "✓ Checkpoint: cada Home Group responde verification question correctamente. Si menos: Expert reenseña 1 min más."
+    },
+    {
+      "tiempo": "3:40-4:30",
+      "duracion_min": 50,
+      "bloque": "WHILE D (Diagram Labeling)",
+      "actividad": "Producción individual — Diagrama BUENAVENTURA EXPRESS con 6-8 partes etiquetadas bilingüe + verificación cruzada en parejas",
+      "agrupacion": "Individual → Parejas",
+      "notas": "Evidencia procedimental V●. Verificación cruzada sin enseñar. Recast suave del instructor circulando."
+    },
+    {
+      "tiempo": "4:30-5:10",
+      "duracion_min": 40,
+      "bloque": "WHILE E (E1 Cuestionario)",
+      "actividad": "PM-4.1 Instrumento No 1 · E1 Reading — Cuestionario 5 ítems (4 literales + 1 inferencial) · 5 pts · individual silencioso",
+      "agrupacion": "Individual silencioso",
+      "notas": "PRIMERA evidencia formal del programa. Instructor circula sin ayudar. ✓ Checkpoint final: 100% entrega cuestionario."
+    },
+    {
+      "tiempo": "5:10-5:40",
+      "duracion_min": 30,
+      "bloque": "WHILE F (Plenary Reveal + KWL Update)",
+      "actividad": "Revelación plenaria de respuestas E1 + recast colectivo + actualización columna L del KWL grupal con 3-5 ítems consolidados",
+      "agrupacion": "Plenaria",
+      "notas": "Sin estigma. Errores comunes se corrigen en grupo. KWL papelógrafo recibe primeros ítems de columna L."
+    },
+    {
+      "tiempo": "5:40-6:00",
+      "duracion_min": 20,
+      "bloque": "WRAP-UP",
+      "actividad": "Exit Ticket S3 + síntesis + asignación autónoma (5 ship parts en imágenes BUENAVENTURA EXPRESS) + preview S4 (Writing Inspection Report)",
+      "agrupacion": "Plenaria → Individual",
+      "notas": "Cierre con energía positiva. Reading consolidado · transición a producción escrita en S4."
+    }
+  ],
+  "set_up": {
+    "duracion_min": 25,
+    "warm_up": {
+      "nombre": "Quick Recall S2 Toolbelt + 5 New Ship Parts Activation",
+      "pasos": [
+        "1. Instructor recibe en la puerta saludando: '*Good morning, team! Day 3 — today we read with Andrea.*' (sonrisa + gesto · usar nombres).",
+        "2. Plenaria 3 min: instructor señala el Maritime Word Wall y pregunta '*From Session 2 — name 5 maritime words. Quickly. Choral.*' Clase responde: 'BOL-lard · CRANE · BOW · STERN · BRIDGE.'",
+        "3. Parejas 4 min: cada pareja completa una mini-tabla: '*With your partner — say 1 sentence with 'is' for each of the 5 words. Example: The bollard is on the dock.*' Instructor circula sin corregir.",
+        "4. Plenaria 3 min: 3 voluntarios comparten 1 oración en voz alta. Instructor escribe en LIVE ZONE.",
+        "5. Instructor presenta las 5 NUEVAS tarjetas en el Maritime Word Wall: '*Today, 5 new words. Listen and repeat: DECK — one syllable. HULL — one syllable. MAST — one syllable. AN-chor — TWO syllables, stress on FIRST. BER-thing — TWO syllables, stress on FIRST.*' Choral repetition 3 veces · finger drilling rápido · clase responde con eco.",
+        "6. Transición: '*These 5 words are inside Captain Lopera's report today. You will find them. Ready?*'"
+      ],
+      "duration_min": 10
+    },
+    "teacher_talk_opening_en": "*Good morning, team! Welcome back. Day 3 at the Terminal de Contenedores Buenaventura. Today is a big day — Andrea is on her FIRST FULL SHIFT at Berth 4. Captain Lopera left an operational report on her desk. He wants to know — does Andrea understand? Today, YOU read with Andrea. Five new words. One real text. One Cuestionario at the end — your first formal Reading evidence. We are a team of expert readers today. Let's begin.*",
+    "teacher_talk_opening_es_cursive": "*(Buenos días, equipo. Bienvenidos de regreso. Día 3 en el Terminal de Contenedores Buenaventura. Hoy es un día grande — Andrea está en su PRIMER TURNO COMPLETO en el Muelle 4. El Capitán Lopera dejó un reporte operativo en su escritorio. Quiere saber — ¿Andrea entiende? Hoy ustedes leen con Andrea. Cinco palabras nuevas. Un texto real. Un Cuestionario al final — su primera evidencia formal de Reading. Hoy somos un equipo de lectores expertos. Empecemos.)*",
+    "objetivo_dia_escrito_en_tablero": "*Today you will: (1) read Captain Lopera's Operational Report (178 words A1.2) · (2) learn 5 new ship parts: DECK · HULL · MAST · AN-chor · BER-thing · (3) work as 4 experts in jigsaw cooperative · (4) label your BUENAVENTURA EXPRESS diagram · (5) complete your first E1 Reading Cuestionario (5 points).*",
+    "activacion_5_new_words": {
+      "instruccion": "Instructor señala las 5 tarjetas nuevas pre-pegadas en el Maritime Word Wall y modela stress: '*DECK — one syllable, strong. HULL — one syllable, strong. MAST — one syllable, strong. AN-chor — TWO syllables, stress on FIRST: AN-chor. BER-thing — TWO syllables, stress on FIRST: BER-thing.*' Choral repetition 3 veces · finger drilling rápido · clase responde con eco · backchaining para 'vessel' (sel → vessel · construcción inversa).",
+      "tecnica": "Modelo-eco + Choral repetition + Finger drilling + Backchaining + Board marking en MAYÚSCULA tónica (PM-0 §5.13)"
+    },
+    "icq": [
+      "*How many new words today?* → Esperan: '5 / five'",
+      "*Which words have stress on the FIRST syllable?* → Esperan: 'AN-chor / BER-thing'",
+      "*What is the text about today?* → Esperan: 'Captain Lopera's report / BUENAVENTURA EXPRESS / Berth 4'",
+      "*How many points is the Cuestionario?* → Esperan: '5 / five points'",
+      "*Will we work alone or in groups?* → Esperan: 'Both / first groups, then alone for Cuestionario'"
+    ],
+    "facilitation_notes": [
+      "💡 Reciclar las 5 palabras de S2 (bollard · crane · bow · stern · bridge) ANTES de introducir las 5 nuevas — andamiaje crítico para reducir carga cognitiva.",
+      "💡 Si un aprendiz confunde HULL con HALL (sala) o BERTHING con BIRTHING (parto): aclarar brevemente con dibujo en LIVE ZONE — son confusiones comunes A1.2.",
+      "💡 La distinción semántica bow ('proa') vs bow ('reverencia') NO se trabaja en S3 — está reservada para S5 NATO Phonetic. En S3 sólo 'proa'.",
+      "💡 Si la cohorte tiene aprendices con experiencia portuaria (ex-marinos · familiares de estibadores): invítelos a confirmar pronunciación marítima real ('así dice mi tío en el muelle') — refuerza identidad."
+    ],
+    "checkpoint": "✓ Verbal survey: '*Are you ready to read with Andrea?*' — ≥85% levantan la mano o dicen 'yes'. ✓ Choral check: instructor pide a la clase repetir las 5 nuevas palabras 1 vez más con stress marcado — si falla en >20%, agregar 2 min extra de finger drilling antes de pasar al WHILE A."
+  },
+  "while": {
+    "duracion_min": 270,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "Pre-Reading — Schema Activation + DRTA Prediction (PM-2.3 Arquetipo B)",
+        "duracion_min": 50,
+        "worksheet_ref": "PM-2.3, Pre-Reading (arquetipo B Reflective + Brainstorm cooperativo)",
+        "agrupacion": "Plenaria + parejas",
+        "objetivo": "Activar el schema previo del aprendiz sobre el Berth 4 y el BUENAVENTURA EXPRESS · predecir 3 hechos del reporte antes de leer · sembrar las 10 palabras del Word Wall en producciones orales para reducir carga cognitiva del WHILE B.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor proyecta foto de Berth 4 con BUENAVENTURA EXPRESS atracado + lee bilingüe: '*Look at the photo of Berth 4 at the Port of Buenaventura. Where is the bow? Where is the stern? Where is the bridge? Point with your finger.*' (*Mira la foto del Muelle 4. ¿Dónde está la proa? ¿La popa? ¿El puente?*).",
+          "2. Plenaria 8 min: instructor pregunta · 5 voluntarios señalan · instructor confirma con stress marcado. Survival sentence pattern: 'The ___ is at the ___' modelo 3 veces.",
+          "3. Brainstorm cooperativo 12 min en parejas: '*Brainstorm everything you know about a ship. 8 minutes. Use words from your Word Wall. Categorize at the end: which words are about the SHIP? which are about the DOCK?*'",
+          "4. Reporting plenario 10 min: 1 pareja presenta a la clase usando el frame: '*On the ship: bow, stern, bridge, deck, anchor. On the dock: bollard, crane, mooring lines, berth, port entrance.*' Instructor escribe en LIVE ZONE en 2 columnas.",
+          "5. DRTA First Prediction 15 min individual: instructor proyecta el título del Master Anchor: '*Operational Report — BUENAVENTURA EXPRESS · Berth 4 · by Captain Lopera*'. Aprendices escriben en su worksheet: '*From this title, predict 3 facts the report will contain. 1 sentence each. English where you can, Spanish where you can't yet.*'",
+          "6. Pre-reading vocab cloud 5 min: instructor proyecta las 15 palabras clave del texto (5 viejas + 5 nuevas + 5 verbos: coordinate · supervise · report · use · welcome) — clase identifica cuáles son nuevas para ellos."
+        ],
+        "teacher_talk_instruction": "*Look at the photo. Berth 4. The BUENAVENTURA EXPRESS is at the dock. Captain Lopera is the master. He wrote a report — the same report Andrea reads today. With your partner — 8 minutes brainstorm: ship words, dock words. Use your Word Wall. Then we share. Then you predict 3 facts from the title. Go.*",
+        "icq": [
+          "*Are you alone or with your partner?* → Esperan: 'With my partner / brainstorm'",
+          "*How many minutes brainstorm?* → Esperan: '8 / eight'",
+          "*How many predictions after?* → Esperan: '3 / three'",
+          "*Can I write predictions in Spanish?* → Esperan: 'Yes / where I can't yet / both ok'"
+        ],
+        "answer_key_inline": {
+          "ship_words_esperadas": [
+            "bow · stern · bridge · deck · hull · mast · anchor · vessel · ship · BUENAVENTURA EXPRESS"
+          ],
+          "dock_words_esperadas": [
+            "bollard · crane · mooring lines · berth · dock · gantry crane · warehouse · Berth 4 · port"
+          ],
+          "DRTA_predictions_pattern_esperado_S3_A1.2": [
+            "1. The report is from Captain Lopera. (literal del título)",
+            "2. The report is about the BUENAVENTURA EXPRESS at Berth 4. (literal del título)",
+            "3. Andrea reads the report on her first shift. (inferencial del schema S1-S2)"
+          ],
+          "predicciones_alternativas_aceptables": [
+            "The ship has many parts (general)",
+            "The captain gives instructions (inferencial)",
+            "Andrea must respond by VHF (transferencia desde S5 que aún no llegó · acepter como bonus)"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 NO revele el contenido del reporte aún — el suspenso pedagógico es el motor del WHILE B jigsaw.",
+          "💡 Si un aprendiz se bloquea en la predicción: '*¿Qué crees que dice un reporte de un capitán a una aprendiz? Una sola frase.*'",
+          "💡 Celebre las palabras emergentes de S2 (Sub-bloque 1) — refuerza progreso visible.",
+          "💡 Tome nota de palabras del brainstorm que NO están en el Word Wall — pueden enriquecer el toolbelt en sesiones futuras (S5 SMCP · S7 modales)."
+        ],
+        "checkpoint": "✓ Pair check: ≥80% de las parejas tienen ≥10 palabras totales (5 ship + 5 dock) en su brainstorm. Si menos: dar 5 min extra con consigna '*Look at your Word Wall — borrow 3 words.*' ✓ Individual check: ≥85% tiene 3 predicciones escritas (puede ser bilingüe).",
+        "transition": "*Excellent predictions. Now — 4 expert teams. Each team gets 1 segment of Captain Lopera's report. You become the expert. You will teach your segment to your Home Group later.*",
+        "tecnica_didactica": "Pre-reading brainstorm con Word Wall + DRTA prediction desde título"
+      },
+      {
+        "letra": "B",
+        "nombre": "Jigsaw Expert Groups — 4 Segments of the Master Anchor (PM-2.3 Arquetipo D)",
+        "duracion_min": 70,
+        "worksheet_ref": "PM-2.3, Arquetipo D Cooperative — Expert Groups phase",
+        "agrupacion": "Expert Groups de 6 (homogéneos por segmento)",
+        "objetivo": "Cada Expert Group lee 1 de los 4 segmentos del Master Anchor en profundidad · acuerda mini-lección de 2 min con 3 frases clave · prepara verification question para el Home Group. Cada experto debe poder enseñar SIN el papel encima.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor proyecta el Master Anchor entero (178 palabras) y lee en voz alta lentamente 1 vez (4 min · pausas largas) — sólo para que la clase escuche el ritmo y sienta que es comprensible.",
+          "2. Distribuir las 4 tarjetas de segmento a 4 Expert Groups de ~6 aprendices cada uno (con 25 aprendices = 4 grupos de 6 + 1 grupo de 1 que se une al más débil). Asignación pre-pensada heterogénea por nivel: el Segmento 4 (Role Functions) va al grupo más fuerte porque es más abstracto.",
+          "3. Segmentos del Master Anchor: '*Segment 1 — Ship Anatomy (líneas 1-4: 'Good morning, Andrea... The bridge is on the top deck.'). Segment 2 — SMCP & VHF (líneas 5-8: 'Please confirm by VHF... NATO standard at sea.'). Segment 3 — Port Operations (líneas 9-11: 'The crane is on the dock... berthing is complete.'). Segment 4 — Role Functions (líneas 12-15: 'We are responsible for... You report to me every hour.').*'",
+          "4. Lectura silenciosa individual del segmento — 12 min · cada aprendiz subraya 3 palabras clave + 1 frase que va a enseñar.",
+          "5. Discusión cooperativa Expert Group — 25 min: '*Discuss your segment. Solve doubts. Agree on the 3 key sentences your Home Group needs to know. Each of you will teach this in 2 minutes.*' Instructor circula sin corregir · sólo modela cuando alguien pide ayuda.",
+          "6. Preparación mini-lección — 20 min: cada experto del grupo escribe su mini-lección con frame: '*In my segment, the report says... The key word is... Captain Lopera explains that...*' + 1 verification question para el Home Group.",
+          "7. Verification preview 5 min: instructor pasa por cada Expert Group y pregunta '*What is the verification question for your Home Group?*' — recoge 1 ejemplo por grupo en LIVE ZONE."
+        ],
+        "teacher_talk_instruction": "*OK team — 4 expert teams now. Each team gets ONE segment of Captain Lopera's report. You read it. You discuss it. You become the EXPERT. In one hour, you teach it to your Home Group — 2 minutes each. If your expert fails, your Home Group fails. Cooperative learning — every expert matters. Go.*",
+        "icq": [
+          "*How many segments?* → Esperan: '4 / four'",
+          "*How many minutes silent reading?* → Esperan: '12 / twelve'",
+          "*How many key sentences must your group agree on?* → Esperan: '3 / three'",
+          "*Will I read my paper to the Home Group?* → Esperan: 'No / I teach without paper / I am the expert'"
+        ],
+        "answer_key_inline": {
+          "segment_1_ship_anatomy_key_sentences": [
+            "The ship is at Berth 4.",
+            "The bow is to the north. The stern is to the south.",
+            "The bridge is on the top deck."
+          ],
+          "segment_1_verification_question": "Where is the bridge of the BUENAVENTURA EXPRESS?",
+          "segment_1_answer": "On the top deck.",
+          "segment_2_smcp_vhf_key_sentences": [
+            "Please confirm by VHF. Use Channel 16.",
+            "Say 'Roger' for received. Say 'Wilco' for I will comply.",
+            "We use SMCP for all messages. SMCP is the NATO standard at sea."
+          ],
+          "segment_2_verification_question": "What does 'Wilco' mean?",
+          "segment_2_answer": "I will comply.",
+          "segment_3_port_operations_key_sentences": [
+            "The crane is on the dock. The bollard is near the bow.",
+            "The mooring lines are ready.",
+            "The departure is at 18:00. The berthing is complete."
+          ],
+          "segment_3_verification_question": "What time is the departure of the BUENAVENTURA EXPRESS?",
+          "segment_3_answer": "18:00.",
+          "segment_4_role_functions_key_sentences": [
+            "We are responsible for safe operations.",
+            "We coordinate with the dock team. We supervise cargo handling.",
+            "Andrea, you coordinate the bow station. You report to me every hour."
+          ],
+          "segment_4_verification_question": "What does Andrea do at the bow station?",
+          "segment_4_answer": "She coordinates the bow station and reports every hour.",
+          "language_bank_phrases_para_mini_leccion": [
+            "In my segment, the report says...",
+            "The key word is...",
+            "Captain Lopera explains that..."
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Si un Expert Group se bloquea con vocabulario: NO traduzca · señale el Word Wall y diga '*Look here — what does 'mooring lines' mean? It's on your wall.*'",
+          "💡 La lectura silenciosa de 12 min es CRÍTICA — proteja el silencio · si algún aprendiz quiere hablar antes, indique '*Wait — silent reading first. Talk after.*'",
+          "💡 El Expert Group más débil (lectura más lenta) debe recibir el segmento 1 (Ship Anatomy) — es el más concreto y tiene más reciclaje del Sub-bloque 1.",
+          "💡 Anote en LIVE ZONE las 4 verification questions — las clase entera las verá en el WHILE C cuando los Home Groups respondan.",
+          "💡 Micro-cápsula visual en pizarra: '*🎧 Group Cue: Si tu experto no entiende su segmento, el grupo entero falla. Cada parte importa.*'"
+        ],
+        "checkpoint": "✓ Expert Group check: cada grupo tiene ≥3 frases clave acordadas + 1 verification question lista. Si menos: dar 5 min extra. ✓ Individual check: cada experto puede recitar 1 frase clave SIN el papel.",
+        "transition": "*Break time — 15 minutes. Stretch, water, café. When you come back — you are the expert. Your Home Group needs you.*",
+        "tecnica_didactica": "Lectura cooperativa con jigsaw clásico (4 segmentos × Expert Groups homogéneos)"
+      },
+      {
+        "letra": "C",
+        "nombre": "Jigsaw Home Groups — Reconstructing Captain Lopera's Full Report (PM-2.3 Arquetipo D)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.3, Arquetipo D Cooperative — Home Groups phase",
+        "agrupacion": "Home Groups de 4 (heterogéneos · 1 experto por segmento)",
+        "objetivo": "Cada Home Group reconstruye el reporte completo escuchando a sus 4 expertos · responde la verification question de cada segmento · produce un mini-resumen colectivo del reporte como un Trainee Dock Officer del Puerto de Buenaventura.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor reorganiza las mesas en Home Groups de 4 (1 experto por segmento) — uso de tarjetas de color para asignar (rojo=anatomy · azul=SMCP · verde=operations · amarillo=functions).",
+          "2. Lee instrucción bilingüe: '*Return to your Home Group. Each expert teaches their segment for 2 minutes. The group rebuilds Captain Lopera's full report. After all 4 mini-lessons, your group answers the verification question for each segment.*'",
+          "3. Mini-lecciones — 8 min × 4 segmentos = 32 min total. Cada experto enseña su segmento de 2 min + 30 seg para 1 verification question del grupo + 30 seg de transición al siguiente experto.",
+          "4. Reconstrucción colectiva — 15 min: el Home Group escribe en su worksheet 1 párrafo (4-5 frases) que resume el reporte entero usando frame: '*Captain Lopera's report says: The BUENAVENTURA EXPRESS... The crane... Use SMCP... Andrea coordinates...*'",
+          "5. Reporting plenario — 8 min: 2 Home Groups voluntarios leen su párrafo a la clase. Instructor anota en LIVE ZONE las frases más logradas como modelo.",
+          "6. Cierre del jigsaw 5 min: '*¿Quién aprendió 1 cosa nueva del experto de su grupo? Mano levantada.*' Recoger 3-4 testimonios breves."
+        ],
+        "teacher_talk_instruction": "*Home Groups now — 4 people, one of each color. Expert 1 teaches 2 minutes. Then Expert 2. Then 3. Then 4. Listen. Take notes. After all 4 mini-lessons — your group writes ONE paragraph that contains the full report. 4-5 sentences. Then 2 groups read out loud. Go.*",
+        "icq": [
+          "*How many people in my Home Group?* → Esperan: '4 / four / one of each color'",
+          "*How many minutes per expert?* → Esperan: '2 / two'",
+          "*Do I read my paper while teaching?* → Esperan: 'No / no paper / I am the expert'",
+          "*How many sentences in our paragraph?* → Esperan: '4-5 / four to five'"
+        ],
+        "answer_key_inline": {
+          "home_group_paragraph_modelo_esperado": "Captain Lopera's report says: The BUENAVENTURA EXPRESS is at Berth 4. The bow is to the north and the stern is to the south. The bridge is on the top deck. The crane is on the dock and the bollard is near the bow. We use SMCP — say Roger for received and Wilco for I will comply. The departure is at 18:00. Andrea coordinates the bow station and reports to Captain Lopera every hour.",
+          "verification_questions_consolidadas": [
+            "Q1 (Ship Anatomy): Where is the bridge? → On the top deck.",
+            "Q2 (SMCP): What does Wilco mean? → I will comply.",
+            "Q3 (Operations): What time is the departure? → 18:00.",
+            "Q4 (Functions): What does Andrea do at the bow station? → Coordinates and reports every hour."
+          ],
+          "indicador_jigsaw_exitoso": "Home Group puede responder 4/4 verification questions sin volver al paper de los expertos."
+        },
+        "facilitation_notes": [
+          "💡 Si un Home Group tiene 1 experto débil que no logra enseñar: pasar 1 min para co-modelar la mini-lección con él · no robar el momento del experto · sólo apoyo discreto.",
+          "💡 La reconstrucción del párrafo es PRODUCCIÓN ESCRITA RECEPTIVA — no se evalúa formalmente (S4 lo hará) · sólo se observa coherencia.",
+          "💡 Si una Home Group reconstruye el reporte EN ESPAÑOL: respete · indique '*Now translate ONE sentence into English using your Word Wall.*' — bridge bilingüe.",
+          "💡 Tome foto de 3-4 párrafos modelo · útiles para preview de S4 Inspection Report (mismo género · diferente registro)."
+        ],
+        "checkpoint": "✓ Home Group check: cada grupo responde 4/4 verification questions correctamente. Si <80% de los grupos lo logra: el Expert correspondiente reenseña 1 min más al grupo más débil. ✓ Reporting check: ≥2 Home Groups voluntarios leen su párrafo en plenaria.",
+        "transition": "*Beautiful work — you are now Maritime English readers. Now — close your group. One ship. One diagram. Your eyes only. Label the BUENAVENTURA EXPRESS.*",
+        "tecnica_didactica": "Jigsaw Home Groups con mini-lecciones cruzadas + reconstrucción colectiva de texto + verification questions"
+      },
+      {
+        "letra": "D",
+        "nombre": "Diagram Labeling — BUENAVENTURA EXPRESS Bilingual (PM-2.5 reciclaje · producción procedimental V●)",
+        "duracion_min": 50,
+        "worksheet_ref": "PM-2.5, Toolbelt Sub-bloque 1 + extensión 5 nuevas palabras S3 (diagrama lateral)",
+        "agrupacion": "Individual → Parejas",
+        "objetivo": "Cada aprendiz produce un diagrama etiquetado bilingüe del BUENAVENTURA EXPRESS con 6-8 partes correctamente identificadas desde el texto del Master Anchor (bow · stern · bridge · deck · hull · mast · anchor · bollard) — evidencia procedimental de la dimensión Vocabulary.",
+        "instrucciones_paso_a_paso": [
+          "1. Distribuir el diagrama lateral del BUENAVENTURA EXPRESS A4 con 8 partes numeradas (1-8 sin etiquetar).",
+          "2. Instructor lee instrucción bilingüe: '*This is the BUENAVENTURA EXPRESS — the same ship Andrea reads about. 8 parts numbered. Label each part in English first. If you need help, look at your Master Anchor text. If you really cannot, write the Spanish word — but try English first. 25 minutes silent. Music on.*'",
+          "3. 25 min individuales: cada aprendiz etiqueta · puede consultar el Master Anchor · NO puede consultar al compañero todavía. Instructor circula sin corregir · toma nota mental de errores comunes.",
+          "4. Verificación cruzada en parejas — 15 min: cada pareja compara diagramas · sin enseñarse · sólo señalar diferencias. Frame bilingüe: '*Hmm — you wrote 'mast' for #3 but I wrote 'bridge'. Let's look at the text.*'",
+          "5. Recast plenario 10 min: instructor proyecta el diagrama correcto en la pantalla · clase verifica · choral repetition de las 8 partes con stress marcado: 'BOW · STERN · BRIDGE · DECK · HULL · MAST · AN-chor · BOL-lard.'"
+        ],
+        "teacher_talk_instruction": "*Look at the BUENAVENTURA EXPRESS. 8 parts numbered. Label them in English. Use your Master Anchor — Captain Lopera's report tells you where everything is. 25 minutes silent. Then 15 minutes with your partner — compare, don't teach. No Google. No phone. Just you, the ship, and Captain Lopera.*",
+        "icq": [
+          "*How many parts to label?* → Esperan: '8 / eight'",
+          "*Can I look at the Master Anchor text?* → Esperan: 'Yes / use the report'",
+          "*Can I ask my partner during the 25 minutes?* → Esperan: 'No / silent / alone first'",
+          "*Can I write Spanish?* → Esperan: 'Try English first / Spanish if I cannot'"
+        ],
+        "answer_key_inline": {
+          "diagrama_etiquetado_correcto": [
+            "1 = bow (proa)",
+            "2 = stern (popa)",
+            "3 = bridge (puente de mando)",
+            "4 = deck (cubierta)",
+            "5 = hull (casco)",
+            "6 = mast (mástil)",
+            "7 = anchor (ancla)",
+            "8 = bollard (bita en el muelle, no en el barco — distractor pedagógico)"
+          ],
+          "errores_comunes_S3_A1.2_inicial": [
+            "Confundir bow ↔ stern (proa vs popa) · ocurre en ~20% · señalar dirección del barco en el diagrama",
+            "Confundir deck ↔ bridge · ocurre en ~15% · bridge es UNA habitación, deck es TODA la superficie",
+            "Confundir hull ↔ port side · ocurre en ~10% · hull es la estructura completa exterior",
+            "Confundir bollard como parte del barco · es del muelle (distractor intencional para activar discriminación)"
+          ],
+          "indicador_exito_S3_V": "≥6 de 8 etiquetas correctas en el primer intento individual = competencia procedimental V● lograda. <6 = más reciclaje en S4 warm-up."
+        },
+        "facilitation_notes": [
+          "💡 NO corrija durante los 25 min individuales — el error productivo es parte del aprendizaje · la corrección llega en el recast plenario.",
+          "💡 Si un aprendiz pone 'BUENAVENTURA EXPRESS' como etiqueta de una parte: aclare con sonrisa '*That's the NAME of the ship — not a part. The PART is...*'",
+          "💡 La parte 8 (bollard como distractor): celebrar a quienes detectan que NO es parte del barco · es parte del muelle. Refuerza discriminación visual del Sub-bloque 1.",
+          "💡 Tome foto de 3-4 diagramas representativos · entran al portafolio del aprendiz como evidencia procedimental S3.",
+          "💡 Música instrumental marítima muy baja durante los 25 min silenciosos — refuerza inmersión sensorial."
+        ],
+        "checkpoint": "✓ Individual check: ≥85% de los aprendices etiquetan ≥6 partes correctamente en el primer intento. Si <70% lograron 6+: agregar 5 min de recast con el diagrama proyectado en grande + choral repetition. ✓ Pair check: ≥80% de las parejas detectan ≥1 diferencia entre diagramas y la discuten en inglés con apoyo del Master Anchor.",
+        "transition": "*Excellent. You see the ship. Now — your first formal evidence. Cuestionario No 1. Five questions. Five points. Silent. Solo. Honest.*",
+        "tecnica_didactica": "Producción procedimental con diagrama bilingüe + verificación cruzada en parejas sin corrección"
+      },
+      {
+        "letra": "E",
+        "nombre": "Cuestionario No 1 — E1 Reading (5 ítems · 5 pts) (PM-4.1 Instrumento No 1)",
+        "duracion_min": 40,
+        "worksheet_ref": "PM-4.1 Instrumento No 1 · Cuestionario de Reading · 5 ítems × 1 pt · Reading skill",
+        "agrupacion": "Individual silencioso",
+        "objetivo": "Demostrar comprensión literal e inicio de comprensión inferencial del Master Anchor mediante respuesta a 5 ítems del Cuestionario No 1 — primera evidencia formal del programa (E1 Reading · 5 pts del agregado de 25 pts del Cuestionario Consolidado S6).",
+        "instrucciones_paso_a_paso": [
+          "1. Distribuir Cuestionario No 1 (1 hoja por aprendiz) + asegurar 1 lápiz/lapicero por aprendiz.",
+          "2. Instructor lee instrucción solemne bilingüe: '*This is your first formal Reading evidence. 5 questions. 5 points. 30 minutes. Silent. Alone. You can use your Master Anchor text — but no help from your partner. Be honest. Be careful. Read each question twice before answering. Music off.*'",
+          "3. Estructura del Cuestionario (5 ítems × 1 pt c/u): Item 1 LITERAL ubicación 'Where is the bridge of the BUENAVENTURA EXPRESS?' · Item 2 LITERAL función 'Who is the master of the ship?' · Item 3 LITERAL detalle SMCP 'What does Wilco mean?' · Item 4 LITERAL operación 'What time is the departure?' · Item 5 INFERENCIAL 'Why does Andrea report to Captain Lopera every hour?'",
+          "4. 30 min de respuesta individual silenciosa. Instructor circula sin ayudar · sólo confirma comprensión de instrucción si alguien levanta la mano.",
+          "5. 5 min finales: aprendices revisan sus respuestas · entregan al instructor en orden con su nombre + fecha + firma."
+        ],
+        "teacher_talk_instruction": "*This is the moment, team. Cuestionario No 1. 5 questions. 5 points — your first piece of formal Reading evidence. 30 minutes. Silent. Alone. Use the Master Anchor — but no partner help. Read each question twice. Answer in English where you can — Spanish ok for the inferential question if you struggle. Hand it in with your name and signature when you finish. Go.*",
+        "icq": [
+          "*How many questions?* → Esperan: '5 / five'",
+          "*How many points?* → Esperan: '5 / five points'",
+          "*Can I help my partner?* → Esperan: 'No / silent / alone'",
+          "*Can I look at the Master Anchor text?* → Esperan: 'Yes / use the report'",
+          "*How many minutes?* → Esperan: '30 / thirty'"
+        ],
+        "answer_key_inline": {
+          "item_1_literal_ubicacion": {
+            "pregunta": "Where is the bridge of the BUENAVENTURA EXPRESS?",
+            "respuesta_correcta": "The bridge is on the top deck.",
+            "alternativas_aceptables": ["On the top deck.", "On the top of the ship.", "On the upper deck."],
+            "puntos": 1
+          },
+          "item_2_literal_funcion": {
+            "pregunta": "Who is the master of the BUENAVENTURA EXPRESS?",
+            "respuesta_correcta": "Captain Lopera is the master.",
+            "alternativas_aceptables": ["Captain Lopera.", "The master is Captain Lopera."],
+            "puntos": 1
+          },
+          "item_3_literal_smcp": {
+            "pregunta": "What does 'Wilco' mean?",
+            "respuesta_correcta": "Wilco means 'I will comply'.",
+            "alternativas_aceptables": ["I will comply.", "I will follow / obey the order.", "Cumpliré (acepted en S3 con bonus si lo escribe en EN)"],
+            "puntos": 1
+          },
+          "item_4_literal_operacion": {
+            "pregunta": "What time is the departure of the BUENAVENTURA EXPRESS?",
+            "respuesta_correcta": "The departure is at 18:00.",
+            "alternativas_aceptables": ["At 18:00.", "18:00 / 6 PM.", "Six o'clock in the evening."],
+            "puntos": 1
+          },
+          "item_5_inferencial": {
+            "pregunta": "Why does Andrea report to Captain Lopera every hour?",
+            "respuesta_correcta_modelo": "Because she coordinates the bow station and Captain Lopera supervises safe operations.",
+            "alternativas_aceptables": [
+              "Because Captain Lopera is responsible for safe operations.",
+              "Because Andrea is a trainee and needs supervision.",
+              "Para informar lo que pasa en el muelle / Para que Captain Lopera sepa el progreso (acepter en español con score 0.7 pts)"
+            ],
+            "puntos_distribucion": "1 pt si justifica con texto en EN · 0.7 pts si justifica en ES con razonamiento válido · 0.5 pts si menciona supervisión sin justificar · 0 pts si no responde"
+          },
+          "punto_total_max": 5,
+          "umbral_aprobado_S3_A1.2_inicial": "≥3/5 puntos = competencia inicial · ≥4/5 = competencia consolidada · 5/5 = competencia avanzada (esperar 30-50% del grupo en este nivel S3)"
+        },
+        "facilitation_notes": [
+          "💡 Si un aprendiz parece bloqueado >5 min en el ítem 5 (inferencial): aclare en voz baja '*Look at line 12-15 — the role functions segment. Captain Lopera writes WHY.*'",
+          "💡 NO ayude con vocabulario — los ítems son literales del texto · si no encuentra la palabra, es parte del diagnóstico.",
+          "💡 La firma del aprendiz al final es ceremonial — refuerza responsabilidad sobre la evidencia formal.",
+          "💡 Guarde los Cuestionarios firmados en una carpeta del aprendiz — primera evidencia del portafolio · se mostrará en S12 como 'Day 1 vs Day 12'.",
+          "💡 Calificación se hace post-clase con la clave instructor · resultados se entregan en S4 warm-up con feedback individual breve."
+        ],
+        "checkpoint": "✓ Entrega check: 100% de los aprendices entregan Cuestionario con nombre + firma + fecha. Si alguien no termina en 30 min: dar 5 min extra · NO permitir entregar sin respuesta en el ítem 5 (al menos intento).",
+        "transition": "*Beautiful work. Your first formal Reading evidence — secured. Now — let's see what we learned together. Plenary reveal. Then we update the KWL — column L finally gets its first 5 entries.*",
+        "tecnica_didactica": "Evaluación formativa receptiva con Cuestionario 5 ítems (4 literales + 1 inferencial) · individual silencioso"
+      },
+      {
+        "letra": "F",
+        "nombre": "Plenary Reveal + KWL Column L First Entries (PM-2.2 KWL grupal de S1 + cierre Bloque Interno 1)",
+        "duracion_min": 30,
+        "worksheet_ref": "PM-2.2 KWL grupal (papelógrafo de S1) + LIVE ZONE del tablero",
+        "agrupacion": "Plenaria",
+        "objetivo": "Revelar respuestas correctas del Cuestionario No 1 en plenaria sin estigma · recast colectivo de errores comunes · actualizar la columna L (Learned) del KWL grupal con 3-5 ítems consolidados · cerrar el Bloque Interno 1 (RAP-01 A1.2) con ceremonia de tránsito hacia S4 (apertura A1.3 transición).",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor proyecta el Cuestionario No 1 con respuestas correctas reveladas en verde · marca los ítems con error común en rojo (sin nombrar autores).",
+          "2. Reading plenario de cada ítem 5 min: '*Item 1 — Where is the bridge? Answer: On the top deck. Did you write that? Show me your hand if you wrote 'on the top deck' or 'on the upper deck'. Excellent — most of you got it.*'",
+          "3. Recast colectivo 10 min: para cada error común detectado durante la circulación, escribir en LIVE ZONE: 'Error: \"The bridge is in the deck\" → Fix: \"The bridge is ON the top deck\".' Foco en preposiciones (in/on/at) sin enseñanza formal todavía.",
+          "4. KWL Column L first entries 10 min: instructor pregunta '*Look at our KWL paper from Session 1. Today, after Captain Lopera's report — what did we LEARN? Let's add 3 to 5 items to column L. Who wants to start?*'",
+          "5. Recoger ítems del grupo · escribir en columna L del papelógrafo. Ítems esperados: 'I learned 5 new ship parts (deck · hull · mast · anchor · berthing).' · 'I learned how to read an Operational Report.' · 'I learned what Wilco means.' · 'I learned that Andrea reports every hour to her captain.' · 'I learned to work as an expert in a jigsaw group.'",
+          "6. Cierre del Bloque Interno 1 5 min: instructor proyecta una mini-línea de progreso 'S1 → S2 → S3' con 3 hitos: 'S1 = English Zone activated. S2 = Word Wall built. S3 = First Master Anchor read + first formal evidence E1.' Aplauso grupal."
+        ],
+        "teacher_talk_instruction": "*Eyes on the screen. Cuestionario No 1 revealed. Item 1 — answer in green. Item 2 — answer in green. Did YOU get it? Hands up if yes. No shame if no — we learn together. Common errors — let's fix on the board. Then — we update our KWL paper from Session 1. Column L. What did WE learn today? Three to five items. Together.*",
+        "icq": [
+          "*Should I be ashamed if I got an item wrong?* → Esperan: 'No / no shame / we learn together'",
+          "*Will the teacher write my name on the board?* → Esperan: 'No / no names / just the error and fix'",
+          "*Where do we add the new learning today?* → Esperan: 'Column L / KWL paper / S1 paper'",
+          "*How many items in column L?* → Esperan: '3-5 / three to five'"
+        ],
+        "answer_key_inline": {
+          "respuestas_correctas_proyectadas_en_verde": [
+            "Item 1: On the top deck.",
+            "Item 2: Captain Lopera is the master.",
+            "Item 3: Wilco means I will comply.",
+            "Item 4: At 18:00.",
+            "Item 5 modelo: Because Andrea coordinates the bow station and Captain Lopera supervises safe operations."
+          ],
+          "errores_comunes_recasted": [
+            "'The bridge is in the deck' → 'The bridge is ON the top deck.' (preposición ON · no IN)",
+            "'Wilco is yes' → 'Wilco means I will comply.' (más preciso)",
+            "'Andrea reports every day' → 'Andrea reports every HOUR.' (lectura literal)"
+          ],
+          "kwl_columna_L_items_esperados_S3": [
+            "L1: I learned 5 new ship parts (deck · hull · mast · anchor · berthing).",
+            "L2: I learned how to read a Captain's Operational Report in English.",
+            "L3: I learned what 'Wilco' and 'Roger' mean (SMCP).",
+            "L4: I learned that Andrea coordinates the bow station and reports every hour.",
+            "L5: I learned to work as an expert in a jigsaw cooperative group."
+          ],
+          "cierre_Bloque_Interno_1_milestone": "S3 cierra Bloque Interno 1 (RAP-01 · A1.2): English Zone activada (S1) + Word Wall Sub-bloque 1 construido (S2) + Master Anchor leído + E1 Reading formal entregado (S3). Próxima sesión S4 abre transición a Bloque Interno 2 (A1.3) con Writing Inspection Report."
+        },
+        "facilitation_notes": [
+          "💡 NUNCA nombre al autor de un error — anónimato protege la motivación.",
+          "💡 Si la columna L tiene <3 ítems espontáneos · ofrecer 1 modelo: '*Today we learned 5 new ship parts. Who learned that?*' — provocar acuerdo grupal.",
+          "💡 Tome foto del KWL papelógrafo con las primeras 5 entradas de L · evidencia simbólica del cierre Bloque Interno 1.",
+          "💡 El aplauso grupal del cierre NO es trivial — refuerza el cierre del Bloque Interno 1 como ceremonia.",
+          "💡 Si queda tiempo (<3 min) · invitar 1 voluntario a leer en voz alta el Master Anchor entero — muchos lo logran ahora · refuerzo de competencia."
+        ],
+        "checkpoint": "✓ Verbal survey: '*Did you understand at least 3 of the 5 items?*' — ≥80% mano levantada. Si <60% · planear refuerzo en S4 warm-up con re-lectura del Master Anchor. ✓ KWL check: papelógrafo tiene ≥4 ítems en columna L al cierre.",
+        "transition": "*Time to wrap up. Exit Ticket. Then your homework — bring 5 photos of the BUENAVENTURA EXPRESS or a similar ship from your phone, internet, or a magazine. Label them in English using today's vocabulary. See you in Session 4 — Writing the First Inspection Report.*",
+        "tecnica_didactica": "Recast plenario con respuestas reveladas + actualización colectiva del organizador visual (KWL grupal) · cierre ceremonial de Bloque Interno 1"
+      }
+    ],
+    "breaks": [
+      {
+        "tiempo": "2:25-2:40",
+        "duracion_min": 15,
+        "tipo": "Receso activo (café + baño + estiramiento)",
+        "notas": "Recordar hidratación. Mantener Maritime Word Wall visible. Instructor reorganiza mesas: Expert Groups (4 grupos de 6 homogéneos) → Home Groups (6 grupos de 4 heterogéneos · 1 experto por segmento). Tarjetas de color (rojo/azul/verde/amarillo) listas para asignación rápida."
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 20,
+    "exit_ticket": {
+      "tarea": "Exit Ticket S3 — Tarjeta 10×15 cm con 3 líneas: (1) ONE new ship part I learned today (con stress mark · ej: AN-chor /ˈæŋkər/) · (2) ONE sentence from Captain Lopera's report I remember (in English) · (3) ONE question I still have for Session 4 (English or Spanish). Entregar en la caja del instructor antes de salir.",
+      "success_criteria": "Las 3 líneas completas. Mínimo 1 palabra inglés con stress marcado. La frase puede ser citada literalmente del Master Anchor. La pregunta puede ser en español. La caja se abre en S4 warm-up para conectar con Writing.",
+      "duration_min": 5
+    },
+    "sintesis": "Hoy leíste con Andrea el primer Master Anchor del programa: el Reporte Operativo de Captain Lopera del BUENAVENTURA EXPRESS en Berth 4. Aprendiste 5 nuevas partes del buque (deck · hull · mast · anchor · berthing) más el reciclaje de las 5 de S2 (bollard · crane · bow · stern · bridge). Trabajaste como experto en jigsaw cooperativo · enseñaste tu segmento a tu Home Group · etiquetaste el diagrama del BUENAVENTURA EXPRESS · entregaste tu primera evidencia formal E1 Reading (5 puntos del Cuestionario Consolidado de 25). El KWL grupal tiene sus primeros 5 ítems en la columna L. Cerramos el Bloque Interno 1 (RAP-01 · A1.2). Mañana — Sesión 4 — abrimos transición a A1.3 escribiendo nuestro primer Inspection Report del BUENAVENTURA EXPRESS.",
+    "asignacion_autonoma": {
+      "actividad": "Identificar 5 ship parts en imágenes del BUENAVENTURA EXPRESS + Completar diagrama etiquetado bilingüe · 2.33 horas autónomas (≈140 min)",
+      "instrucciones_detalladas": [
+        "1. Buscar 5 fotos auténticas del BUENAVENTURA EXPRESS o de un container ship similar (Google Images · sitio web Hapag-Lloyd · revistas marítimas · fotos del Puerto de Buenaventura).",
+        "2. Para cada foto, identificar 1-2 partes visibles del buque y etiquetarlas en inglés: bow · stern · bridge · deck · hull · mast · anchor · bollard · gantry crane.",
+        "3. Producir 1 diagrama propio (dibujo a mano o foto editada) del BUENAVENTURA EXPRESS con 8 partes etiquetadas bilingüe (English + Spanish entre paréntesis).",
+        "4. Escribir 5 oraciones del frame: 'The ___ is ___' · 'The ___ is at/on/in/near the ___' usando las 8 partes.",
+        "5. Llevar todo a S4 — se compartirá en warm-up (5 min · sin evaluación · validación de presencia)."
+      ],
+      "entregable": "5 fotos físicas o digitales con etiquetas + 1 diagrama propio del BUENAVENTURA EXPRESS con 8 partes bilingüe + 5 oraciones del frame.",
+      "cuando_se_revisa": "S4 warm-up (5 min) — compartir 1 foto con compañero + recoger 3 oraciones para activar el Inspection Report. Sin evaluación formal · el instructor valida presencia (entregó / no entregó).",
+      "tiempo_estimado_min": 140,
+      "tiempo_estimado_horas": 2.333333
+    },
+    "bridge_to_next": "*Next session — Session 4: Writing the First Inspection Report — Be + Imperative + IN. We open the Bloque Interno 2 transition (A1.2 → A1.3). You will write your first Inspection Report for the BUENAVENTURA EXPRESS using verb 'be', imperatives (Check · Verify · Open) and prepositions (at/on/in/near). Bring your 5 photos and your diagram. Bring your Master Anchor — we will use it as model.*",
+    "teacher_talk_closing_en": "*Team — today was big. You read a real Maritime English text. You worked as an expert. You taught your Home Group. You labeled the BUENAVENTURA EXPRESS. You delivered your first formal Reading evidence — the Cuestionario No 1 is in your portfolio now. Captain Lopera would be proud. Capitán Restrepo too. Andrea is proud. Bring your homework on Monday — 5 photos and your diagram. Next session — we WRITE. We become Inspection Report writers. Welcome to Bloque Interno 2 transition. Strong work today. ¡Excelente trabajo!*",
+    "teacher_talk_closing_es_cursive": "*(Equipo, hoy fue grande. Leyeron un texto real de Inglés Marítimo. Trabajaron como expertos. Enseñaron a su Grupo Hogar. Etiquetaron el BUENAVENTURA EXPRESS. Entregaron su primera evidencia formal de Reading — el Cuestionario No 1 ya está en su portafolio. Captain Lopera estaría orgulloso. Capitán Restrepo también. Andrea está orgullosa. Traigan su tarea el lunes — 5 fotos y su diagrama. La próxima sesión — escribimos. Nos volvemos escritores de Inspection Reports. Bienvenidos a la transición del Bloque Interno 2. Excelente trabajo hoy.)*",
+    "reflection_prompt": "Antes de salir · 30 segundos de silencio: '*¿Qué texto inglés podía leer ayer? ¿Qué texto inglés puedo leer hoy?*' (no se responde en voz alta · solo se siente).",
+    "facilitation_notes": [
+      "💡 Cierre con energía positiva. S3 entrega la PRIMERA evidencia formal del programa — celébrelo · refuerza identidad de aprendiz capaz.",
+      "💡 La asignación autónoma debe sentirse como continuidad del trabajo del aula · no como tarea castigo. Use el frame: '*Andrea would do this if she had time at home.*'",
+      "💡 Si un aprendiz manifiesta ansiedad por el resultado del Cuestionario: '*Tu calificación llega en S4 — antes, te diré 1 cosa que hiciste bien y 1 cosa para mejorar. No es el fin, es el inicio.*'",
+      "💡 Tome foto del KWL papelógrafo con las primeras 5 entradas de L · primera evidencia simbólica de progreso para el portafolio del aprendiz.",
+      "💡 Si queda tiempo (<3 min): aplauso final + 1 frase de cohorte: '*One day, one Master Anchor, one Cuestionario — done.*'"
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "WHILE A — Pre-Reading Schema + DRTA Prediction (PM-2.3 Pre-Reading)",
+      "items": [
+        {
+          "pregunta": "Brainstorm Ship Words esperadas",
+          "respuesta_correcta": "bow · stern · bridge · deck · hull · mast · anchor · vessel · ship · BUENAVENTURA EXPRESS",
+          "alternativas": ["Cualquier subset ≥5 acepter"],
+          "puntos": 0,
+          "nota": "No evaluado · activación schema"
+        },
+        {
+          "pregunta": "Brainstorm Dock Words esperadas",
+          "respuesta_correcta": "bollard · crane · mooring lines · berth · dock · gantry crane · warehouse · Berth 4 · port",
+          "alternativas": ["Cualquier subset ≥5 acepter"],
+          "puntos": 0
+        },
+        {
+          "pregunta": "DRTA 3 predicciones desde título",
+          "respuesta_correcta": "1. The report is from Captain Lopera. 2. About BUENAVENTURA EXPRESS at Berth 4. 3. Andrea reads it on her first shift.",
+          "alternativas": ["Cualquier predicción coherente con schema S1-S2"],
+          "puntos": 0,
+          "nota": "Activación predictiva · bilingüe acepter"
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE B — Jigsaw Expert Groups (PM-2.3 Arquetipo D)",
+      "items": [
+        {
+          "pregunta": "Segment 1 — 3 frases clave Ship Anatomy",
+          "respuesta_correcta": "(1) The ship is at Berth 4. (2) The bow is to the north. The stern is to the south. (3) The bridge is on the top deck.",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Segment 2 — 3 frases clave SMCP/VHF",
+          "respuesta_correcta": "(1) Please confirm by VHF. Use Channel 16. (2) Say Roger for received. Say Wilco for I will comply. (3) We use SMCP for all messages.",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Segment 3 — 3 frases clave Port Operations",
+          "respuesta_correcta": "(1) The crane is on the dock. The bollard is near the bow. (2) The mooring lines are ready. (3) The departure is at 18:00. The berthing is complete.",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Segment 4 — 3 frases clave Role Functions",
+          "respuesta_correcta": "(1) We are responsible for safe operations. (2) We coordinate with the dock team. We supervise cargo handling. (3) Andrea, you coordinate the bow station. You report to me every hour.",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE C — Jigsaw Home Groups (Verification Questions)",
+      "items": [
+        {
+          "pregunta": "Q1 (Ship Anatomy): Where is the bridge?",
+          "respuesta_correcta": "On the top deck.",
+          "alternativas": ["On the upper deck", "On the top of the ship"],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Q2 (SMCP): What does Wilco mean?",
+          "respuesta_correcta": "I will comply.",
+          "alternativas": ["I will follow the order", "I will obey"],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Q3 (Operations): What time is the departure?",
+          "respuesta_correcta": "18:00.",
+          "alternativas": ["At 18:00", "6 PM", "Six o'clock evening"],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Q4 (Functions): What does Andrea do at the bow station?",
+          "respuesta_correcta": "She coordinates the bow station and reports to Captain Lopera every hour.",
+          "alternativas": ["Coordinates and reports every hour", "She is responsible for the bow station"],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE D — Diagram Labeling BUENAVENTURA EXPRESS",
+      "items": [
+        {
+          "pregunta": "Etiquetas correctas (8 partes numeradas)",
+          "respuesta_correcta": "1=bow · 2=stern · 3=bridge · 4=deck · 5=hull · 6=mast · 7=anchor · 8=bollard (distractor del muelle, no del barco)",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Indicador de éxito: ≥6/8 etiquetas correctas en primer intento individual"
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE E — Cuestionario No 1 · E1 Reading (5 ítems · 5 pts) FORMAL",
+      "items": [
+        {
+          "pregunta": "Item 1 LITERAL: Where is the bridge of the BUENAVENTURA EXPRESS?",
+          "respuesta_correcta": "The bridge is on the top deck.",
+          "alternativas": ["On the top deck", "On the upper deck", "On the top of the ship"],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 2 LITERAL: Who is the master of the BUENAVENTURA EXPRESS?",
+          "respuesta_correcta": "Captain Lopera is the master.",
+          "alternativas": ["Captain Lopera", "The master is Captain Lopera"],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 3 LITERAL: What does 'Wilco' mean?",
+          "respuesta_correcta": "Wilco means 'I will comply'.",
+          "alternativas": ["I will comply", "I will follow / obey", "Cumpliré (con bonus si EN)"],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 4 LITERAL: What time is the departure?",
+          "respuesta_correcta": "The departure is at 18:00.",
+          "alternativas": ["At 18:00", "18:00 / 6 PM", "Six o'clock evening"],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 5 INFERENCIAL: Why does Andrea report to Captain Lopera every hour?",
+          "respuesta_correcta": "Because she coordinates the bow station and Captain Lopera supervises safe operations.",
+          "alternativas": [
+            "Because Captain Lopera is responsible for safe operations",
+            "Because Andrea is a trainee and needs supervision",
+            "Para informar lo que pasa en el muelle (ES con score 0.7)"
+          ],
+          "puntos": 1,
+          "nota": "Distribución: 1 pt EN justified · 0.7 pts ES justified · 0.5 pts mención sin justificar · 0 pts sin respuesta"
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE F — KWL Column L Updates (S1 papelógrafo)",
+      "items": [
+        {
+          "pregunta": "Items esperados en columna L tras S3",
+          "respuesta_correcta": "L1: 5 new ship parts (deck · hull · mast · anchor · berthing) · L2: How to read a Captain's Operational Report · L3: What Wilco and Roger mean · L4: Andrea coordinates bow station and reports every hour · L5: How to work as expert in jigsaw cooperative",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WRAP-UP — Exit Ticket S3",
+      "items": [
+        {
+          "pregunta": "¿Cuántas líneas tiene el Exit Ticket?",
+          "respuesta_correcta": "3 líneas (1 ship part con stress · 1 oración del Master Anchor · 1 pregunta para S4)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuándo se abre la caja con los Exit Tickets?",
+          "respuesta_correcta": "S4 warm-up — para conectar con Writing Inspection Report",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "En WHILE A: producir 5 predicciones (en lugar de 3) usando frame 'I predict that the report says ___'.",
+      "En WHILE B Expert Groups: rol de Lead Expert — ayudar al compañero más débil a redactar las 3 frases clave (peer tutor).",
+      "En WHILE C Home Groups: enseñar el segmento 100% en inglés (sin español de soporte) + agregar 1 frase del segmento que NO se discutió en Expert Group.",
+      "En WHILE D Diagram: etiquetar las 8 partes + agregar 4 partes extras del Master Anchor que NO están numeradas (mooring lines · gantry crane · seabed · channel).",
+      "En WHILE E Cuestionario: responder ítem 5 inferencial 100% en inglés con justificación de 2 oraciones.",
+      "En WHILE F: liderar la actualización del KWL grupal proponiendo 2 ítems extras para columna L (más allá de los 5 esperados).",
+      "Rol de peer tutor en WRAP-UP: ayudar a un compañero a producir el Exit Ticket en inglés."
+    ],
+    "more_support_needed": [
+      "Tiempo extra en WHILE A pre-reading (hasta 60 min) si el brainstorm es lento — acompañamiento individual del instructor con el Word Wall.",
+      "En WHILE B Expert Group: ofrecer al aprendiz más débil el Segmento 1 (Ship Anatomy) — más concreto y con reciclaje del Sub-bloque 1 · permitir lectura en parejas durante los 12 min silenciosos si la lectura individual es bloqueante.",
+      "En WHILE C Home Group: permitir que el experto enseñe usando el papel del segmento como soporte si la memorización es bloqueante (el frame 'In my segment, the report says...' ayuda).",
+      "En WHILE D Diagram: ofrecer una hoja de referencia con 4 de las 8 etiquetas pre-rellenas como modelo (bow · stern · bridge · deck) — el aprendiz completa las 4 restantes.",
+      "En WHILE E Cuestionario: permitir respuestas en español para ítems 1-4 con bonus si traduce 1 al inglés post-entrega · Item 5 acepter 100% en español con score 0.7.",
+      "En WHILE F: si el aprendiz no participa en KWL plenario, recoger en privado 1 ítem post-clase: '*¿Qué aprendiste hoy? Una sola cosa.*' — agregar al KWL en S4 warm-up.",
+      "En WRAP-UP: permitir que escriban el Exit Ticket 100% en español si la presión afectiva es alta · validar entrega.",
+      "Contacto uno-a-uno al final de la sesión: '*¿Cómo te fue con el Cuestionario? El lunes te muestro tu calificación con 1 cosa que hiciste bien y 1 cosa para mejorar.*'"
+    ]
+  },
+  "instructor_self_check": [
+    "✓ ¿Dediqué los primeros 8 min del SET-UP a reciclar el Sub-bloque 1 de S2 (bollard · crane · bow · stern · bridge) ANTES de introducir las 5 nuevas palabras?",
+    "✓ ¿El jigsaw cooperativo logró 4 Expert Groups + 6 Home Groups con asignación heterogénea por nivel · y cada Expert Group tuvo lectura silenciosa de 12 min protegida?",
+    "✓ ¿El Cuestionario No 1 (E1 Reading · 5 pts) se aplicó individualmente con silencio · 30 min · sin ayuda de pares · con firma del aprendiz · y se guardó en carpeta de portafolio?",
+    "✓ ¿Actualicé el KWL grupal de S1 con ≥4 ítems en columna L y tomé foto como evidencia de cierre del Bloque Interno 1?",
+    "✓ ¿Terminé con preview explícito de S4 (Writing Inspection Report · be + imperative + preposiciones IN/AT/ON · transición A1.2 → A1.3 · entrega de 5 fotos + diagrama propio del BUENAVENTURA EXPRESS)?"
+  ],
+  "activity_logistics": {
+    "espacio": "Aula bilingüe con 3 configuraciones secuenciales: (1) U o mesas de 4 para SET-UP + WHILE A pre-reading + WHILE F plenario (configuración inicial). (2) Expert Groups en 4 zonas del aula (mesas en isla · cada Expert Group homogéneo) durante WHILE B. (3) Home Groups de 4 (mesas reorganizadas · cada Home Group heterogéneo con 1 experto por color) durante WHILE C. Vuelve a configuración (1) para WHILE D + E + F + WRAP-UP. English Zone permanente · Maritime Word Wall actualizado con 10 tarjetas (5 S2 + 5 S3) · Diagrama Ship Overview A2 + Mapa Terminal Buenaventura A2 visibles · KWL papelógrafo de S1 listo para columna L.",
+    "agrupamiento": "SET-UP: Plenaria → Parejas → Plenaria. WHILE A: Plenaria + Parejas brainstorm. WHILE B: Expert Groups de 6 (homogéneos por segmento · 4 grupos). WHILE C: Home Groups de 4 (heterogéneos · 1 experto por color · 6 grupos). WHILE D: Individual silencioso → Parejas verificación. WHILE E: Individual silencioso (Cuestionario formal). WHILE F: Plenaria. WRAP-UP: Plenaria → Individual. Transiciones explícitas con Teacher Talk corto (max 30 seg cada cambio · uso de tarjetas de color para reorganización rápida en WHILE C).",
+    "recursos": [
+      "Proyector + bocinas + slides Pixel-puerto S3 (5 slides)",
+      "Tablero blanco grande con 4 zonas demarcadas (English Zone + Title S3 + 5 Nuevas Palabras + LIVE ZONE)",
+      "Maritime Word Wall pared lateral con 10 tarjetas (5 S2 + 5 S3 nuevas)",
+      "Diagrama Ship Overview A2 (BUENAVENTURA EXPRESS lateral) + Mapa Terminal Buenaventura A2",
+      "PM-2.3 Reading worksheet con Master Anchor 178 palabras + 5 arquetipos receptivos (impreso 1 set por aprendiz)",
+      "Diagrama lateral del BUENAVENTURA EXPRESS A4 con 8 partes numeradas (1 por aprendiz)",
+      "Cuestionario No 1 — E1 Reading 5 ítems (1 por aprendiz + 1 clave instructor)",
+      "Tarjetas Jigsaw 4 segmentos (4 × 6 = 24 tarjetas)",
+      "Tarjetas de color (rojo/azul/verde/amarillo) para asignación de Home Groups",
+      "Mini-lección template con frame 'In my segment...' (1 por aprendiz)",
+      "KWL papelógrafo grupal (de S1 · listo para columna L)",
+      "Marcadores VERDE (✓) + ROJO (✗) + AZUL (?) opcional para HOTS marking",
+      "Cronómetro visible en pantalla + temporizador audible",
+      "Música instrumental marítima muy baja durante WHILE A + D + E + WRAP-UP",
+      "Carpeta de portafolio del aprendiz (para guardar Cuestionario No 1 firmado)"
+    ],
+    "tiempo": {
+      "set_up": 25,
+      "while_total": 270,
+      "break": 15,
+      "wrap_up": 20,
+      "total_directo_min": 330,
+      "_warning_total_directo_calc": "WHILE_total internal = 50+70+60+50+40+30 = 300 min · pero header dice 270. Validar en totals_check.",
+      "autonomo_min": 140,
+      "autonomo_horas": 2.333333,
+      "total_aprendiz_horas": 8.333
+    },
+    "plan_b": "Si proyector falla: distribuir Master Anchor en handout impreso A4 + leer en voz alta lentamente (2 veces). Si Cuestionario E1 no llega impreso: usar pizarra con los 5 ítems + aprendices responden en su cuaderno con firma al final. Si Expert Group queda con 1 sólo experto (ausencia): instructor toma rol de co-experto temporal hasta que el aprendiz se consolide. Si la cohorte tiene <20 aprendices: reducir a 4 Home Groups de 5 (en lugar de 6 grupos de 4) · cada experto enseña 2.5 min. Si la cohorte tiene >28: agregar 1 Home Group extra y rotar instructor entre los 7 grupos. Si energía baja después del BREAK: agregar 3 min de stretch + 1 minuto de risa antes del WHILE C. Si la lectura del Master Anchor genera ansiedad >30%: hacer lectura plenaria guiada del texto entero antes del jigsaw (cuesta 15 min al WHILE A · re-balancea con WHILE D acortado a 40 min)."
+  },
+  "totals_check": {
+    "set_up": 25,
+    "while_bloque_a": 50,
+    "while_bloque_b": 70,
+    "break": 15,
+    "while_bloque_c": 60,
+    "while_bloque_d": 50,
+    "while_bloque_e": 40,
+    "while_bloque_f": 30,
+    "wrap_up": 20,
+    "total_min": 360,
+    "while_subtotal_recalculado": "50+70+60+50+40+30 = 300 min directos en WHILE",
+    "totales_recalculados": "SET-UP 25 + WHILE 300 + BREAK 15 + WRAP-UP 20 = 360 min · cuadre exacto con header.duracion_min",
+    "check_result": "EXACTO 360 min directos (6h) + 140 min autónomo (≈2.33h) = 500 min totales = 8.33h aprendiz S3. Coherente con header.duracion_sesion_min de pm-3-1 (360) + horas autónomas pm-2-0 sessions[2] (2.333333). NOTA: el campo while.duracion_min muestra 270 que es valor previo · subtotal real recalculado = 300. Sergio valida en QA Gate Humano 3."
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    },
+    "downstream_consumers": [
+      "PM-3.3 Canva Slides — referencias a Master Anchor + Diagrama BUENAVENTURA EXPRESS + 5 nuevas palabras + Cuestionario No 1 reveal slide",
+      "PM-3.4 Workbook — Reading Comprehension Chapter 3 + 5 fotos + diagrama autonomous task",
+      "PM-3.6 Activity Logistics — A1.3.1 to A1.3.7 IDs derivados de WHILE A-F",
+      "PM-2.11 Check 14 — validación propagación estrategia_didactica (ABT + Lectura cooperativa Jigsaw) + tecnicas[] por bloque + pm0_protocol cross-ref con pm-3-1.pm0_alignment_by_session[2]",
+      "PM-4.1 — Cuestionario No 1 entregado · puntajes E1 Reading agregan al Cuestionario Consolidado S6 (25 pts total)"
+    ]
+  },
+  "rap_status": "S3 completada (preliminary · pendiente Gate Humano 3) — Master Anchor leído cooperativamente vía jigsaw 4-segmentos · Diagrama BUENAVENTURA EXPRESS etiquetado bilingüe · Cuestionario No 1 (E1 Reading · 5 pts) entregado y firmado · KWL grupal columna L recibe primeros 5 ítems · Maritime Word Wall actualizado de 5 a 10 tarjetas (Sub-bloque 1 + extensión S3). CIERRA Bloque Interno 1 (RAP-01 · A1.2 cubierto en S1+S2+S3). Umbral de S4 (Writing Inspection Report · transición A1.2 → A1.3) abierto. Primera evidencia formal del programa entregada · portafolios del aprendiz iniciados con Cuestionario No 1.",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[2]",
+    "__contract_version__": "v2.5.1 (mapping per pm-3-1.pm_3_2_propagation_contract)",
+    "fpi_block": "3.3 Apropiación — Input receptivo",
+    "grammar_groups": {
+      "intro": [
+        {
+          "group_id": "Gr 1",
+          "group_name": "Verbo be (afirmativo + negativo + Yes/No questions + respuestas cortas)",
+          "nivel_activacion": "Intro",
+          "ejemplo_en_sesion": "'The bow is at the front. The stern is NOT at the front. Is the bridge above the deck? Yes, it is.' (input receptivo en Master Anchor + recast plenario WHILE F)"
+        },
+        {
+          "group_id": "Gr 14",
+          "group_name": "Preposición In + at/on/next to/near (lugares portuarios y del buque)",
+          "nivel_activacion": "Intro",
+          "ejemplo_en_sesion": "'The bridge is on the upper deck. The hull is in the water. The container is next to the crane.' (input receptivo en Master Anchor)"
+        }
+      ],
+      "consolida": [
+        {
+          "group_id": "Gr 2",
+          "group_name": "Demostrativos this/that/these/those (reciclaje S2)",
+          "nivel_activacion": "Consolida",
+          "ejemplo_en_sesion": "Aplicación en jigsaw: 'This is the deck. Those are bollards.' (uso receptivo en Expert Groups + Home Groups)"
+        }
+      ],
+      "aplica": [],
+      "carga_check": "2/2 Intro máximos + 1 Consolida (PM-0 §9.2) ✓",
+      "active_receptive_only": []
+    },
+    "feedback": {
+      "mode": "ACCURACY",
+      "rationale": "Reading andamiada A1.2 requiere foco en comprensión literal precisa. Recast post-jigsaw para ship parts. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_1.",
+      "accuracy_techniques": [
+        "Pre-reading brainstorm con Word Wall + DRTA prediction",
+        "Jigsaw cooperativo — Expert Groups homogéneos por segmento",
+        "Post-reading recast plenario + Cuestionario E1 con clave inmediata",
+        "Choral repetition de 5 nuevas palabras con stress marcado · finger drilling 3-5 reps",
+        "Backchaining para 'vessel' (sel → vessel) y 'BUENAVENTURA EXPRESS' (express → BUENAVENTURA EXPRESS)"
+      ],
+      "fluency_techniques": [],
+      "mixed_techniques": [],
+      "notes": "S3 prioriza ACCURACY en input receptivo. Recast suave durante circulación · sin estigma de errores en Cuestionario E1."
+    },
+    "l1_management": {
+      "l1_percentage": 15,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_1.S3 — ≤ 15% (PM-0 §9.1)",
+      "l1_rationale": "L1 sólo para clarificar diferencia bow ('proa' vs ARM en S5) y bridge ('puente de mando' vs 'puente físico') — distinción semántica clave. Resto L2 con apoyo del diagrama y Word Wall.",
+      "english_zone_declaration": "English Zone permanente desde S1 — cinta azul marítima en piso + círculo 🔵 en tablero. Recordatorio visual al inicio de SET-UP.",
+      "l1_allowed_for": [
+        "Distinción semántica bow ('proa' vs reverencia) + bridge ('puente de mando' vs físico) — 2 min máximo",
+        "Reflexión metacognitiva Item 5 inferencial del Cuestionario (con bonus si traduce a EN)",
+        "Pregunta Exit Ticket (1 línea de 3) si la presión afectiva es alta",
+        "Asignación autónoma (instrucción inicial bilingüe · entendimiento garantizado)"
+      ],
+      "reduction_strategy": "S2 → 20% L1 · S3 → 15% · S4 → 12% · S5 → 10% · curva descendente per pm-0-context.l1_percentage_per_session.single_guide_12_sessions"
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "deck",
+          "ipa": "/dɛk/",
+          "tonica": "única (DECK · 1 syllable)"
+        },
+        {
+          "word": "hull",
+          "ipa": "/hʌl/",
+          "tonica": "única (HULL · 1 syllable)"
+        },
+        {
+          "word": "vessel",
+          "ipa": "/ˈvɛsəl/",
+          "tonica": "PRIMERA (VES-sel)"
+        },
+        {
+          "word": "container ship",
+          "ipa": "/kənˈteɪnər ʃɪp/",
+          "tonica": "compuesta (conTAIner-SHIP)"
+        },
+        {
+          "word": "BUENAVENTURA EXPRESS",
+          "ipa": "/bwɛnaˈvɛntuɾa ɪkˈsprɛs/",
+          "tonica": "compuesta — nombre propio del vessel · L1 mantenida por respeto territorial"
+        },
+        {
+          "word": "anchor",
+          "ipa": "/ˈæŋkər/",
+          "tonica": "PRIMERA (AN-chor)"
+        },
+        {
+          "word": "berthing",
+          "ipa": "/ˈbɜːrθɪŋ/",
+          "tonica": "PRIMERA (BER-thing)"
+        }
+      ],
+      "techniques": [
+        "Backchaining — 'sel' → 'vessel' (construcción inversa)",
+        "Choral drill de frases del texto: 'The bow is at the front'",
+        "Finger drilling con nombres de partes (3-5 reps)",
+        "Board marking — MAYÚSCULA en sílaba tónica: 'AN-chor / BER-thing / VES-sel'"
+      ],
+      "board_marking": "Las 5 nuevas palabras quedan en columna lateral izquierda del tablero con stress en MAYÚSCULA + IPA en pequeño. Maritime Word Wall las replica en pared lateral con foto.",
+      "notes": "S3 NO introduce SMCP avanzado (Roger/Wilco/Standby drilling oral) — esos llegan en S5. S3 sólo lectura receptiva del SMCP en el Master Anchor.",
+      "source": "PM-0 §5.13 — Noticing de stress con soporte físico"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "bow",
+        "stern",
+        "bridge",
+        "deck",
+        "hull",
+        "mast",
+        "vessel",
+        "container ship",
+        "anchor",
+        "berth"
+      ],
+      "factors_applied": [
+        "Sounds",
+        "Conceptualize",
+        "Encounter",
+        "Use"
+      ],
+      "operationalization": "Sounds: IPA + stress en 5 palabras nuevas (deck · hull · mast · anchor · berthing) + reciclaje 5 viejas (bollard · crane · bow · stern · bridge). Conceptualize: diagrama etiquetado fuerza categorización por ubicación física en el BUENAVENTURA EXPRESS. Encounter: pre-reading brainstorm + Expert Group lectura silenciosa + Home Group mini-lecciones + Diagram labeling + Cuestionario E1 = 5 encuentros consecutivos. Use: cada aprendiz produce 3-5 frases describiendo el BUENAVENTURA EXPRESS en el Diagram + 1 párrafo colectivo en Home Group + 5 oraciones del frame en autónomo.",
+      "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS)"
+    },
+    "physical_environment": "Aula bilingüe con 3 configuraciones secuenciales (U inicial → 4 Expert Group islands → 6 Home Groups de 4). Proyector + tablero blanco con 4 zonas demarcadas + English Zone señalizada. Maritime Word Wall actualizado con 10 tarjetas (5 S2 + 5 S3) · Diagrama Ship Overview A2 + Mapa Terminal Buenaventura A2 visibles · KWL papelógrafo de S1 en pared lista para columna L. Música instrumental marítima muy baja durante momentos individuales silenciosos (WHILE A + D + E + WRAP-UP).",
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.2",
+      "habilidad_principal": "comprension_lectora",
+      "descriptor_activo": "Reconoce nombres y etiquetas en señalética portuaria. Comprende textos cortos descriptivos con apoyo visual (Master Anchor 178 palabras · A1.2 · 80% vocab conocido). Identifica vocabulario técnico marítimo en contexto (25 términos toolbelt).",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_1.comprension_lectora"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Lenta — lectura colectiva primero (instructor lee Master Anchor 1 vez en voz alta · 4 min con pausas largas) · luego jigsaw individual silencioso · luego Home Group mini-lecciones",
+      "extension_textos": "150-200 palabras adaptadas con 80% vocabulario conocido (Word Wall + Toolbelt 5 Sub-bloque 1 + 5 nuevas S3) · oraciones ≤ 12 palabras",
+      "andamiaje": "Alto — pre-reading brainstorm + DRTA prediction + jigsaw con apoyo de pares + diagrama de referencia + Master Anchor disponible durante Cuestionario E1",
+      "rol_docente": "Modelo central + driller (stress marking + recast) + facilitador de jigsaw cooperativo + observador silencioso durante Cuestionario E1",
+      "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_1"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A2 — Descriptores §6 comprension_lectora A1.2",
+        "A5 — Input adaptado (80% vocab conocido · oraciones ≤ 12 palabras · 25 términos toolbelt)",
+        "B1 — Pre-enseñanza vocabulario (Word Wall ship parts antes del texto + DRTA prediction)",
+        "B3 — Accuracy en E1 (5 ítems · 4 literales + 1 inferencial · clave instructor)",
+        "D2 — Can-do 'Reconocer nombres y etiquetas' asociado a E1 + cierre Bloque Interno 1"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S3 IMARPOR-CC."
+    }
+  }
+}

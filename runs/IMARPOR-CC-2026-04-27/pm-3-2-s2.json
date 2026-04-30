@@ -1,0 +1,960 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.5",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
+  "session": 2,
+  "session_name": "The Port Word Walker — Vocabulary of the Quay",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide": "G1 — The Maritime Operations Pro",
+  "guia_numero": 1,
+  "programa": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo": "12340002",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.5",
+    "PM-2.2 (Learning Contract cierre)"
+  ],
+  "habilidades_foco": [
+    "Vocabulary productivo (5 términos Toolbelt Sub-bloque 1: bollard · crane · bow · stern · bridge)"
+  ],
+  "habilidades_soporte": [
+    "Reading receptivo (etiquetas + epígrafes 12 imágenes classification)",
+    "Pronunciation soporte (stress marking + finger drilling de 5 términos)",
+    "Speaking conversacional (Word Wall building + classification en parejas · sin evaluación formal)"
+  ],
+  "cefr": "A1.2 (Bloque Interno 1 RAP-01 · pre-activación léxica portuaria)",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-29",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "preliminary",
+  "_status_preliminary_rationale": "Build-Out generado por subagente creativo PM-3.2 · Gate Humano 3 (aprobación Playbook) pendiente · Sergio confirma cambiando a 'completed' tras revisión de coherencia con PM-2.5 + PM-2.2 (Learning Contract cierre) + pm-3-1 overview_table[1] + pm0_alignment_by_session[1].",
+  "momento_sena": "3.2 Contextualización + apertura 3.3 Apropiación",
+  "estrategia_didactica": "ABT — Pre-enseñanza léxica portuaria (Toolbelt 5 términos Sub-bloque 1) + Word Wall maritime",
+  "justificacion_didactica": "S2 abre la Apropiación del ciclo SENA tras la Reflexión Inicial de S1. La Aprendizaje Basado en Tareas (ABT) toma forma de pre-enseñanza léxica del Sub-bloque 1 (Ship & Port Anatomy: bollard · crane · bow · stern · bridge) con producto verificable: clasificación cooperativa de 12 imágenes en 3 categorías (port infrastructure / ship parts / port equipment) + construcción colaborativa del Maritime Word Wall en pared lateral. La sesión opera el primer pivote del aprendiz: del receptivo afectivo del Día 1 al productivo controlado del Día 2 — Andrea camina del Berth 4 a su Port Glossary de bolsillo. La gramática Gr 3 (plural + a/an) y Gr 2 (this/that/these/those) entra como Intro al servicio del señalar maritime · NO al revés. L1 ≤ 20% del tiempo (curva descendente desde S1=25%) — sólo para distinguir port infrastructure (muelle) vs port equipment (grúas) y para cerrar el ritual del Learning Contract abierto en S1. Feedback ACCURACY-prioritario con recast suave: la primera sesión donde el error gramatical empieza a importar, sin comprometer la confianza maritime construida en S1. Cierra la ceremonia inconclusa del Learning Contract (firma final + sellado) que S1 dejó abierta como parte del contrato de continuidad afectiva.",
+  "session_header": {
+    "titulo": "SESSION 2: The Port Word Walker — Vocabulary of the Quay",
+    "subtitulo": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Build-Out — Playbook v2.5",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.5 — Vocabulary, Literacy & Scenario Setup (Toolbelt Sub-bloque 1: 5 términos Ship & Port Anatomy · primera mitad S2)",
+      "PM-2.2 — Gap Analysis · Learning Contract cierre (firma final + sobre amarillo sellado · WRAP-UP S2)"
+    ],
+    "habilidades_foco": [
+      "Vocabulary productivo (5 términos Toolbelt Sub-bloque 1: bollard · crane · bow · stern · bridge)"
+    ],
+    "habilidades_soporte": [
+      "Reading receptivo (etiquetas + epígrafes 12 imágenes classification)",
+      "Pronunciation soporte (stress marking + finger drilling)",
+      "Speaking conversacional (classification en parejas + Word Wall building plenario)"
+    ],
+    "objetivos_pedagogicos": [
+      "(1) Pre-activar productivamente 5 términos canónicos del Sub-bloque 1 (bollard · crane · bow · stern · bridge) con IPA + stress + foto en Maritime Word Wall.",
+      "(2) Construir colaborativamente el Maritime Word Wall (pared lateral · permanente 12 sesiones) con tarjetas físicas Sub-bloque 1.",
+      "(3) Clasificar 12 imágenes del Puerto de Buenaventura en 3 categorías (port infrastructure / ship parts / port equipment) con argumentación oral.",
+      "(4) Introducir Gr 3 (plural + a/an) + Gr 2 (this/that/these/those) en contexto señalético maritime — sin análisis formal aislado.",
+      "(5) Cerrar la ceremonia del Maritime Learning Contract (firma final + 3 prioridades personales + sobre amarillo sellado · guardado en caja del instructor hasta S12)."
+    ],
+    "plan_b": "Si la cohorte trae menos del 60% del entregable autónomo S1 (5 fotos + KWL pre-llenado): NO castigar · usar 5 min extra de SET-UP para que cada aprendiz dibuje en su cuaderno 1 elemento portuario que recuerde · entrar al Word Wall con menos referencia personal pero sin vergüenza grupal. Si Maritime Word Wall físico no está listo (cinta no pega): pegar tarjetas con masking tape en pizarra blanca como Word Wall provisional · trasladar a pared al final de la sesión. Si las 12 imágenes para classification se imprimen mal (calidad baja): proyectar las imágenes en pantalla y que los aprendices clasifiquen en su cuaderno con números 1-12 + categoría · sin sticker físico. Si la clase se atrasa más de 15 min en WHILE A o B: comprimir WHILE D (Plural awareness) a 20 min · NUNCA comprimir WRAP-UP Learning Contract ceremony (es deuda afectiva de S1).",
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk pre-modelado bilingüe. Duración suma exacta 360 min directos + 140 min autónomo (≈2.33h). L1 ≤ 20% del tiempo de instrucción. El Maritime Word Wall se ACTIVA físicamente en esta sesión (S1 lo dejó vacío con 4 tarjetas survival words · S2 agrega 5 tarjetas Sub-bloque 1). El Learning Contract se CIERRA ceremonialmente en WRAP-UP — deuda afectiva de S1."
+  },
+  "materials_checklist": [
+    {
+      "item": "PM-2.5 worksheet impreso (Toolbelt 5 términos Sub-bloque 1 + classification 12 imágenes + Port Glossary template) + PM-2.2 Learning Contract template",
+      "cantidad": "1 set por aprendiz (estimado 25 sets) + 3 sets de respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Word Wall — 5 tarjetas pre-impresas Sub-bloque 1 (bollard /ˈbɒlərd/ · crane /kreɪn/ · bow /baʊ/ · stern /stɜːrn/ · bridge /brɪdʒ/) con foto del Puerto de Buenaventura + IPA + stress mark en MAYÚSCULA",
+      "cantidad": "1 set de 5 tarjetas A5 + 1 set de respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Classification handout — 12 imágenes del Puerto de Buenaventura (4 port infrastructure: bollard · dock · warehouse · gate · 4 ship parts: bow · stern · bridge · hull · 4 port equipment: gantry crane · forklift · reach stacker · tug boat) + 3 columnas vacías para clasificación",
+      "cantidad": "1 por pareja (≈12-13 sets)",
+      "verificado": false
+    },
+    {
+      "item": "Port Glossary — cuaderno de bolsillo A6 (formato pocket notebook · papel reciclado · 25 páginas · una por término del Toolbelt completo)",
+      "cantidad": "1 por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Mapa del Terminal de Contenedores Buenaventura A2 (de S1 · permanente en muro frontal)",
+      "cantidad": "1 (ya instalado desde S1)",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Learning Contract templates (3 prioridades personales + firma + sobre amarillo sellable · cierre ceremonial)",
+      "cantidad": "1 contrato + 1 sobre amarillo por aprendiz (estimado 25 sets)",
+      "verificado": false
+    },
+    {
+      "item": "5 fotos personales + KWL pre-llenado de cada aprendiz (entregable autónomo de S1)",
+      "cantidad": "Verificar entrega de ≥80% de aprendices en welcome",
+      "verificado": false
+    },
+    {
+      "item": "Tarjetas Plural Awareness (Gr 3) — pre-impresas: 'a bollard / bollards' · 'a crane / cranes' · 'a bow / bows' · 'a stern / sterns' · 'a bridge / bridges' (con flecha visual · -s plural marker)",
+      "cantidad": "1 set A5 (visible en tablero)",
+      "verificado": false
+    },
+    {
+      "item": "Tarjetas Demonstrative Awareness (Gr 2) — pre-impresas: 'this is...' (cerca singular) · 'that is...' (lejos singular) · 'these are...' (cerca plural) · 'those are...' (lejos plural)",
+      "cantidad": "1 set A5 (visible en tablero)",
+      "verificado": false
+    },
+    {
+      "item": "Marcadores VERDE + AZUL + ROJO (1 set por pareja · classification + Word Wall + signaling errors gramaticales con flecha)",
+      "cantidad": "1 set por pareja",
+      "verificado": false
+    },
+    {
+      "item": "Cinta adhesiva fuerte para Maritime Word Wall (resistente · permanente 12 sesiones)",
+      "cantidad": "1 rollo",
+      "verificado": false
+    },
+    {
+      "item": "Cronómetro visible en pantalla",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Caja del instructor (de S1 · contiene Exit Tickets S1 + custodia sobres amarillos Learning Contract sellados · permanente 12 sesiones)",
+      "cantidad": "1 (ya en aula desde S1)",
+      "verificado": false
+    },
+    {
+      "item": "Música instrumental marítima muy baja (sonidos de puerto · mismo loop usado en S1 para continuidad sensorial)",
+      "cantidad": "1 archivo + bocinas probadas",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO dividido en 4 zonas reusando el plan de S1: (1) ESQUINA SUPERIOR DERECHA — ENGLISH ZONE 🔵 ya declarada en S1 · re-trazar con marcador para reactivación visual al inicio del SET-UP. (2) CENTRO — Welcome title 'IMARPOR-CC · S2: The Port Word Walker — Vocabulary of the Quay'. (3) COLUMNA LATERAL IZQUIERDA — 4 SURVIVAL WORDS de S1 (PORT · BERTH · VES-sel · RA-dio · de fondo) + 5 NUEVOS términos Sub-bloque 1 con stress en MAYÚSCULA: BOL-lard /ˈbɒlərd/ · CRANE /kreɪn/ · BOW /baʊ/ · STERN /stɜːrn/ · BRIDGE /brɪdʒ/. (4) ESPACIO INFERIOR LIVE ZONE — vacío al inicio · se llena durante la sesión con: (a) 3 columnas de classification (PORT INFRASTRUCTURE / SHIP PARTS / PORT EQUIPMENT) — clase deposita stickers de las 12 imágenes; (b) frame Plural Awareness 'a + singular / plural -s'; (c) frame Demonstratives 'this/that/these/those + is/are'. Maritime Word Wall en pared lateral RECIBE las 5 nuevas tarjetas Sub-bloque 1 (acto físico ceremonial al final del WHILE C) — al cierre de S2: Word Wall tiene 4 tarjetas survival S1 + 5 tarjetas Sub-bloque 1 = 9 tarjetas físicas + el papelógrafo KWL grupal de S1 actualizado con 3+ ítems en columna K (los 5 nuevos términos pasan a K).",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:30",
+      "duracion_min": 30,
+      "bloque": "SET-UP",
+      "actividad": "Welcome S2 + reactivación English Zone + share-out 5 fotos autónomas + reciclaje 4 survival words S1 + brief de 5 nuevos términos + objetivos día + ICQ",
+      "agrupacion": "Plenaria → Parejas (share-out fotos) → Plenaria",
+      "notas": "Continuidad afectiva con S1. Validar entrega autónoma sin evaluar. L1 ≈ 20% (welcome breve · share-out permite L1 si necesario)."
+    },
+    {
+      "tiempo": "0:30-1:30",
+      "duracion_min": 60,
+      "bloque": "WHILE A (Toolbelt Intro)",
+      "actividad": "PM-2.5 — Pre-enseñanza 5 términos Sub-bloque 1 (bollard · crane · bow · stern · bridge) con foto + IPA + stress + ejemplo del Master Anchor Text + finger drilling intensivo",
+      "agrupacion": "Plenaria → Choral repetition → Finger drilling individual",
+      "notas": "Modelo central + driller activo. Stress marking en MAYÚSCULA + clapping silábico. CERO traducción inicial — sólo foto + sonido."
+    },
+    {
+      "tiempo": "1:30-2:30",
+      "duracion_min": 60,
+      "bloque": "WHILE B (Classification)",
+      "actividad": "PM-2.5 — Classification cooperativa 12 imágenes en 3 categorías (port infrastructure / ship parts / port equipment) con justificación oral usando 'this is...' / 'these are...'",
+      "agrupacion": "Parejas heterogéneas",
+      "notas": "ABT puro — producto verificable. Instructor circula recasting + elicitando frame demostrativo. L1 sólo para distinción crítica infrastructure/equipment."
+    },
+    {
+      "tiempo": "2:30-2:45",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "Receso activo (café + baño + estiramiento)",
+      "agrupacion": "—",
+      "notas": "Hidratación. Instructor prepara Maritime Word Wall pared lateral + tarjetas Plural Awareness + Demonstratives en tablero."
+    },
+    {
+      "tiempo": "2:45-3:30",
+      "duracion_min": 45,
+      "bloque": "WHILE C (Word Wall Building)",
+      "actividad": "PM-2.5 — Construcción colaborativa Maritime Word Wall — cada pareja toma 1 tarjeta Sub-bloque 1 · la pega en pared lateral · explica al grupo 'This is a [TERM]. It is a [category]. Example: ___' con frame demostrativo + plural si aplica",
+      "agrupacion": "Parejas → Plenaria de presentación",
+      "notas": "Acto ceremonial. Pared se transforma físicamente. Cada pareja produce 1 frase con stress marcado. Recast inmediato con flecha en tablero."
+    },
+    {
+      "tiempo": "3:30-4:15",
+      "duracion_min": 45,
+      "bloque": "WHILE D (Grammar Awareness)",
+      "actividad": "PM-2.10 (Gr 3 + Gr 2 Intro) — Inducción gramatical por descubrimiento: aprendices completan tablero con plurales (-s) + demostrativos (this/that/these/those) usando los 5 términos Sub-bloque 1 + reciclaje 4 survival S1",
+      "agrupacion": "Plenaria con elicitación + Individual silencioso (cuaderno)",
+      "notas": "Gr 3 + Gr 2 Intro = 2/2 máximos PM-0 §9.2. NO análisis formal aislado — sólo noticing. 'a bollard' → 'bollards'. 'This is a crane' / 'These are cranes'."
+    },
+    {
+      "tiempo": "4:15-5:00",
+      "duracion_min": 45,
+      "bloque": "WHILE E (Port Glossary Build)",
+      "actividad": "PM-2.5 — Apertura del Port Glossary personal · cada aprendiz copia 5 términos Sub-bloque 1 a su cuaderno bolsillo A6 (1 página por término con: foto pequeña pegada + IPA + ejemplo + 1 frase propia)",
+      "agrupacion": "Individual silencioso (música instrumental)",
+      "notas": "Andamiaje fuerte: instructor proyecta plantilla. Cada aprendiz produce 5 frases propias usando 5 términos en su universo personal del puerto."
+    },
+    {
+      "tiempo": "5:00-5:30",
+      "duracion_min": 30,
+      "bloque": "WHILE F (Learning Contract Drafting)",
+      "actividad": "PM-2.2 — Cada aprendiz redacta 3 prioridades personales del Maritime Learning Contract derivadas de los 3 puntajes más bajos del Gap Card de S1 + revisión silenciosa",
+      "agrupacion": "Individual silencioso (instructor se retira)",
+      "notas": "Bridge entre S1 (Gap Card) y S12 (CML Mission). Honestidad protegida. Bilingüe permitido si presión afectiva alta."
+    },
+    {
+      "tiempo": "5:30-6:00",
+      "duracion_min": 30,
+      "bloque": "WRAP-UP",
+      "actividad": "Maritime Learning Contract ceremony (firma + sobre amarillo sellado + entrega caja instructor) + Exit Ticket S2 + preview S3 + asignación autónoma",
+      "agrupacion": "Plenaria → Individual",
+      "notas": "Ceremonia solemne deuda afectiva de S1. 60 segundos de silencio post-firmas. Música suave. Asignar identificación 5 elementos portuarios + audio 30s."
+    }
+  ],
+  "habilidades_foco": [
+    "Vocabulary productivo (5 términos Toolbelt Sub-bloque 1: bollard · crane · bow · stern · bridge)"
+  ],
+  "habilidades_soporte": [
+    "Reading receptivo (etiquetas + epígrafes 12 imágenes classification)",
+    "Pronunciation soporte (stress marking + finger drilling)",
+    "Speaking conversacional (Word Wall building + classification en parejas)"
+  ],
+  "set_up": {
+    "duracion_min": 30,
+    "warm_up": {
+      "nombre": "Welcome Back to Berth 4 — Photo Share-Out + Survival Words Recall",
+      "pasos": [
+        "1. Instructor recibe en la puerta saludando: '*Good morning, Junior Trainees! Welcome back to Berth 4.*' (sonrisa + gesto · usar nombres si los conoce). Recuerda con la mano la cinta azul de la English Zone.",
+        "2. Re-trazar el círculo ENGLISH ZONE 🔵 en esquina superior derecha del tablero · gesto ceremonial corto (10 seg) · '*The English Zone is back. Cross the blue tape, think in English.*'",
+        "3. Cada aprendiz coloca sobre su mesa el entregable autónomo S1: 5 fotos + KWL pre-llenado. Instructor circula 3 min validando entrega visualmente (sin evaluar contenido) · pone palomita verde a quien entregó.",
+        "4. Reciclaje rápido 4 survival words S1: instructor señala columna lateral del tablero · choral repetition rápida 'PORT · BERTH · VES-sel · RA-dio' (3 reps · 30 seg).",
+        "5. Photo share-out 8 min — parejas: cada aprendiz muestra 1 de sus 5 fotos al compañero y dice (con apoyo del Word Wall): '*This is a [port/berth/vessel/radio/...]. It is in Buenaventura. I see it [near my house / at the malecón / at the terminal].*' L1 permitido si necesario.",
+        "6. Plenaria 5 min: instructor recoge 3-4 voluntarios que comparten una foto al grupo · instructor agrega palabras orgánicas a la columna K del KWL grupal (papelógrafo · permanente desde S1).",
+        "7. Brief de 5 nuevos términos: instructor señala las 5 tarjetas pre-pegadas en columna lateral del tablero (BOL-lard · CRANE · BOW · STERN · BRIDGE) · '*Today, 5 new words. The first 5 words of your Toolbelt. Andrea opens her Port Glossary today — you open yours.*'",
+        "8. Objetivos del día escritos en tablero + ICQ."
+      ],
+      "duration_min": 15
+    },
+    "teacher_talk_opening_en": "*Good morning, Junior Trainees! Welcome back to Berth 4. Yesterday — Day 1 — you met Andrea. You met Captain Lopera. You met yourselves. You wrote your Maritime Learning Contract — but the envelope is still open. Today we close it. But first — your homework. Five photos. The KWL chart. Show your partner. One photo each. English where you can, Spanish where you can't. Then — the heart of today: five maritime words. The Port Word Walker walks the quay with five tools in the belt. By 6:00 p.m. today, you walk too. Ready? English Zone — on.*",
+    "teacher_talk_opening_es_cursive": "*(Buenos días, Aprendices Junior. Bienvenidos de vuelta al Muelle 4. Ayer — Día 1 — conocieron a Andrea. Conocieron al Capitán Lopera. Se conocieron a sí mismos. Escribieron su Contrato Marítimo de Aprendizaje — pero el sobre sigue abierto. Hoy lo cerramos. Pero primero — su tarea. Cinco fotos. La tabla KWL. Muestren al compañero. Una foto cada uno. Inglés donde puedan, español donde no. Después — el corazón de hoy: cinco palabras marítimas. El Caminante de Palabras del Puerto camina el muelle con cinco herramientas en el cinturón. A las 6:00 p.m. hoy, ustedes caminan también. ¿Listos? Zona Inglés — encendida.)*",
+    "objetivo_dia_escrito_en_tablero": "*Today you will: (1) recall your 4 survival words from S1 + share 1 photo with your partner · (2) learn 5 new Toolbelt words: BOL-lard · CRANE · BOW · STERN · BRIDGE · (3) classify 12 images of the Port of Buenaventura into 3 categories · (4) build the Maritime Word Wall together · (5) open your personal Port Glossary · (6) close your Maritime Learning Contract — final signature, yellow envelope sealed.*",
+    "activacion_5_toolbelt_terms_brief": {
+      "instruccion": "Instructor señala las 5 tarjetas pre-pegadas en columna lateral del tablero (BOL-lard · CRANE · BOW · STERN · BRIDGE) y modela el stress en cada una: '*BOL-lard — TWO syllables, stress on FIRST. CRANE — one syllable, strong. BOW — one syllable, like 'how'. STERN — one syllable, with R. BRIDGE — one syllable, soft DJ.*' Choral rep 1 vez (driller largo viene en WHILE A) · '*We will go deep on these in 30 minutes.*'",
+      "tecnica": "Brief receptivo + Modelo-eco rápido + Choral repetition (PM-0 §5.13)"
+    },
+    "icq": [
+      "*What is in your hands today — homework or new words?* → Esperan: 'Both / homework first / new words after'",
+      "*How many new words today?* → Esperan: '5 / five'",
+      "*Can you speak Spanish in the photo share-out?* → Esperan: 'Yes / sometimes / English where I can'",
+      "*Where does the Maritime Learning Contract go today?* → Esperan: 'Yellow envelope / sealed / instructor's box'"
+    ],
+    "facilitation_notes": [
+      "💡 Si <60% trajo el entregable autónomo: NO castigar · activar Plan B (5 min de dibujo elemento portuario en cuaderno · sin vergüenza grupal).",
+      "💡 La reactivación de la English Zone es ritual mínimo (10 seg) — NO repetir la ceremonia completa de S1 · sólo gesto de continuidad.",
+      "💡 Si un aprendiz no trae sus 5 fotos pero sí el KWL: validar igual · '*Photos next week is fine. Today your KWL is the gift.*'",
+      "💡 Photo share-out es bonding · NO evaluación. Observar mentalmente cuáles aprendices reconocen elementos del puerto en su entorno cotidiano (Buenaventura) — son anclas territoriales para personalizar S5 (VHF) y S8 (Berthing tripartito).",
+      "💡 NO presentar gramática formal en SET-UP. La awareness Gr 3 + Gr 2 viene en WHILE D · respeta el flujo ABT (palabra → acción → forma)."
+    ],
+    "checkpoint": "✓ Verbal survey: '*Are you ready to be Word Walkers?*' — ≥80% energía afirmativa. Si baja: agregar 1 min de risa grupal · '*Andrea also lost her words once. Captain Lopera laughed.*' (anécdota corta · español ok)."
+  },
+  "while": {
+    "duracion_min": 255,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "Toolbelt Intro — 5 términos Sub-bloque 1 con foto + IPA + stress (PM-2.5)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.5, Sub-bloque 1 Ship & Port Anatomy",
+        "agrupacion": "Plenaria → Choral repetition → Finger drilling individual",
+        "objetivo": "Pre-activar receptiva-productivamente los 5 términos canónicos del Sub-bloque 1 (bollard · crane · bow · stern · bridge) con triple anclaje: foto del Puerto de Buenaventura + IPA + stress marcado. Cada aprendiz produce las 5 palabras con stress correcto en finger drilling individual antes de cerrar el bloque.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor proyecta foto grande de cada término (1 término × 4 min) en orden: bollard → crane → bow → stern → bridge. Foto = referencia visual del Puerto de Buenaventura (no foto genérica).",
+          "2. Para cada término, instructor sigue protocolo fijo de 4 min: (a) muestra foto SIN palabra · pregunta '*What do you see?*' · acepta cualquier respuesta L1 o L2 · (b) revela palabra escrita con stress en MAYÚSCULA + IPA · (c) modelo-eco 3 reps con stress fuerte · (d) choral repetition de la clase 3 reps · (e) ejemplo del Master Anchor Text leído en voz alta: '*The bollard is near the bow.*' (sin pedir traducción).",
+          "3. Tras los 5 términos (20 min), pausa de 2 min · '*Stand up. Stretch. Now we drill.*'",
+          "4. Finger drilling individual 30 min · cada aprendiz pasa 1 a 1 frente al tablero (10 seg cada uno) · señala con dedo cada término en columna lateral + dice palabra con stress + sigue con la mano la sílaba tónica. Instructor recasts solo si stress está mal (no si pronunciación segmental falla).",
+          "5. Mini-pair drill 8 min: en parejas, A señala una tarjeta del tablero al azar · B dice palabra con stress · luego rotan. 6 rondas total.",
+          "6. Frase puente al WHILE B: '*You said the words. Now you classify them. Is the bollard a ship part or a port part? You decide — with 12 images.*'"
+        ],
+        "teacher_talk_instruction": "*OK Word Walkers — 5 tools for your belt. I show. You listen. You repeat. Then YOU say. Watch the stress mark — capital letters mean LOUDER. Watch the IPA — that's the secret pronunciation map. We do all 5 in 20 minutes. Then you stand up. Then we drill — one by one. No fear. Wrong stress is welcome. We fix together.*",
+        "icq": [
+          "*Capital letters mean what?* → Esperan: 'Stress / louder / strong'",
+          "*If I say bollard wrong, what happens?* → Esperan: 'No problem / we fix / we try again'",
+          "*Do I drill alone or with my partner?* → Esperan: 'First alone front / then with partner'",
+          "*How many words today?* → Esperan: '5 / five new'"
+        ],
+        "answer_key_inline": {
+          "5_terms_canonicos_sub_bloque_1": [
+            {"term": "bollard", "ipa": "/ˈbɒlərd/", "stress": "BOL-lard (2 syllables · stress FIRST)", "definition_en_simple": "A short post on the dock. The ship ties ropes to it.", "definition_es": "Bita / bolardo · poste corto en el muelle para amarrar.", "category": "port infrastructure", "example_from_master_anchor": "The bollard is near the bow."},
+            {"term": "crane", "ipa": "/kreɪn/", "stress": "CRANE (1 syllable · strong)", "definition_en_simple": "A big machine that lifts cargo.", "definition_es": "Grúa portuaria.", "category": "port equipment", "example_from_master_anchor": "The crane is on the dock."},
+            {"term": "bow", "ipa": "/baʊ/", "stress": "BOW (1 syllable · rhymes with 'how')", "definition_en_simple": "The front of the ship.", "definition_es": "Proa · parte delantera del buque.", "category": "ship parts", "example_from_master_anchor": "The bow is to the north."},
+            {"term": "stern", "ipa": "/stɜːrn/", "stress": "STERN (1 syllable · with R)", "definition_en_simple": "The back of the ship.", "definition_es": "Popa · parte trasera del buque.", "category": "ship parts", "example_from_master_anchor": "The stern is to the south."},
+            {"term": "bridge", "ipa": "/brɪdʒ/", "stress": "BRIDGE (1 syllable · soft DJ ending)", "definition_en_simple": "The room where the captain controls the ship.", "definition_es": "Puente de mando.", "category": "ship parts", "example_from_master_anchor": "The bridge is on the top deck."}
+          ],
+          "criterio_de_exito_drilling": "≥85% de aprendices producen los 5 términos con stress correcto en el finger drilling individual. Stress mal en 1 término = recast suave + retry. Stress mal en 3+ términos = mini-soporte 2 min al final del bloque."
+        },
+        "facilitation_notes": [
+          "💡 Foco en stress · NO en pronunciación segmental perfecta. Un aprendiz que dice 'BOWL-ard' (mal) está peor que uno que dice 'BOL-ard' (bien con segmental tibio).",
+          "💡 La distinción crítica BOW vs BOWL (objeto) NO es S2 — viene en S5. Si emerge confusión: '*Different word, same spelling — we will visit again. Today only ship-bow.*'",
+          "💡 Si un aprendiz produce SMCP/SHIP/CARGO orgánicamente: celebrar discretamente · '*Yes — those come in Session 5. You're early.*' Anotar en LIVE ZONE.",
+          "💡 NO traducir 'bollard' al español hasta que el aprendiz lo pida explícitamente. La definición es la foto + el ejemplo del Master Anchor.",
+          "💡 Para el finger drilling individual · que cada aprendiz se PARE frente al tablero · cuerpo entero involucrado · refuerza memoria muscular del stress."
+        ],
+        "checkpoint": "✓ ≥85% de aprendices completan el finger drilling individual con stress correcto en los 5 términos. Si <85%: 5 min extra de choral drill grupal antes de pasar a WHILE B.",
+        "transition": "*Beautiful. Five tools — yours. Now — pair up. Twelve images. Three categories. Ten minutes to argue with your partner. Then we share.*",
+        "tecnica_didactica": "Pre-enseñanza léxica con triple anclaje (foto + IPA + stress) + Finger drilling individual con cuerpo entero"
+      },
+      {
+        "letra": "B",
+        "nombre": "Classification 12 imágenes — port infrastructure / ship parts / port equipment (PM-2.5)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.5, Classification handout",
+        "agrupacion": "Parejas heterogéneas",
+        "objetivo": "Clasificar 12 imágenes del Puerto de Buenaventura en 3 categorías (port infrastructure: 4 imgs · ship parts: 4 imgs · port equipment: 4 imgs) con argumentación oral usando frame demostrativo 'This is a [TERM]. It is a [category] because ___'. Producto verificable ABT.",
+        "instrucciones_paso_a_paso": [
+          "1. Distribuir classification handout · 1 por pareja · 12 imágenes numeradas + 3 columnas vacías (PORT INFRASTRUCTURE / SHIP PARTS / PORT EQUIPMENT).",
+          "2. Instructor lee instrucción bilingüe: '*Twelve images of the Port of Buenaventura. Three categories. Place each image in one column. Argue with your partner — say WHY: 'This is a bollard. It is port infrastructure because it is on the dock.' English where you can, Spanish where you must — but always WITH a reason.*'",
+          "3. Pre-task brainstorm 5 min: instructor proyecta las 3 categorías + da 1 ejemplo modelo: '*The crane — is it on the ship or on the dock? It moves containers. So — it's port equipment.*' Marca crane en columna PORT EQUIPMENT en proyección.",
+          "4. Parejas trabajan 30 min · clasifican las 12 imágenes en su handout · cada pareja debe argumentar al menos 4 imágenes en frase completa.",
+          "5. Instructor circula 30 min con foco doble: (a) recasting suave del frame demostrativo ('This is a...' / 'These are...') · (b) elicitando justificación cuando una pareja sólo coloca sin argumentar — '*Tell me WHY.*'",
+          "6. Plenaria 25 min — share-out por categoría: (a) PORT INFRASTRUCTURE primero (5 min): 2 parejas voluntarias presentan 1 imagen con frame completo 'This is a ___. It is port infrastructure because ___'. Clase confirma con dedo arriba/abajo. (b) SHIP PARTS (5 min · misma dinámica). (c) PORT EQUIPMENT (5 min). (d) Cierre 10 min: instructor proyecta clasificación correcta · clase auto-corrige + recast colectivo.",
+          "7. Frase puente al WHILE C: '*You classified the 12 images. You argued. Now — let's make this PERMANENT. The Maritime Word Wall is waiting. Five tarjetas, five Word Walkers.*'"
+        ],
+        "teacher_talk_instruction": "*Pairs. Twelve images. Three columns. Place each image — but don't just place. ARGUE. 'This is a ___. It is ___ because ___.' Use the Word Wall. Use the photos. 30 minutes pair work. Then we share. English where you can, Spanish where you must — but always with a reason. Go.*",
+        "icq": [
+          "*Do I just place the image, or do I also argue?* → Esperan: 'Argue / say WHY / both'",
+          "*Can my partner and I disagree?* → Esperan: 'Yes / argue / both reasons'",
+          "*How many images per category?* → Esperan: '4 / four each'",
+          "*Should I use 'This is' or 'These are'?* → Esperan: 'This is for one / These are for many'"
+        ],
+        "answer_key_inline": {
+          "clasificacion_correcta_12_imagenes": {
+            "PORT_INFRASTRUCTURE_4_imgs": [
+              "1. Bollard (poste de amarre) — '*This is a bollard. It is port infrastructure because it is on the dock and it does not move.*'",
+              "2. Dock (muelle) — '*This is a dock. It is port infrastructure because the ship comes to it.*'",
+              "3. Warehouse (bodega) — '*This is a warehouse. It is port infrastructure because cargo is stored there.*'",
+              "4. Gate (portón de entrada) — '*This is a gate. It is port infrastructure because trucks enter through it.*'"
+            ],
+            "SHIP_PARTS_4_imgs": [
+              "5. Bow (proa) — '*This is the bow. It is a ship part because it is the front of the vessel.*'",
+              "6. Stern (popa) — '*This is the stern. It is a ship part because it is the back of the vessel.*'",
+              "7. Bridge (puente de mando) — '*This is the bridge. It is a ship part because the captain controls the ship from there.*'",
+              "8. Hull (casco) — '*This is the hull. It is a ship part because it is the body of the vessel in the water.*'"
+            ],
+            "PORT_EQUIPMENT_4_imgs": [
+              "9. Gantry crane (grúa pórtico) — '*This is a gantry crane. It is port equipment because it lifts containers and moves on rails.*'",
+              "10. Forklift (montacargas) — '*This is a forklift. It is port equipment because it moves cargo on the dock.*'",
+              "11. Reach stacker (apilador) — '*This is a reach stacker. It is port equipment because it stacks containers in the yard.*'",
+              "12. Tug boat (remolcador) — '*This is a tug boat. It is port equipment because it pushes vessels into berth.*'"
+            ]
+          },
+          "errores_comunes_y_recast": [
+            "Confusión bow-bowl (objeto): recast con foto · '*Same spelling, different word. Today only ship-bow.*'",
+            "Confusión bridge (puente físico) vs bridge (puente de mando): recast '*Yes — both are bridges. Today on a ship, the bridge is where the captain works.*'",
+            "Confusión port (lado izquierdo) vs port (puerto): recast '*Today PORT means the place — Puerto de Buenaventura. Port-side comes in Session 5.*'",
+            "Plural error 'a bollards': recast '*Either A bollard — one — or bollards — many. Pick one.*'"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 Si una pareja se traba en una imagen: '*If you don't know — argue WHY. Even a wrong reason teaches.*'",
+          "💡 El frame demostrativo 'This is...' se introduce en uso natural — NO se enseña aún formalmente. Esa awareness viene en WHILE D.",
+          "💡 Si emerge la palabra 'pier' (muelle alterno): aceptar como sinónimo de dock y agregar a Maritime Word Wall en el bridge a S5.",
+          "💡 Mantener el ritmo de share-out PLENARIO breve (25 min total) · NO permitir que una pareja monopolice 10 min.",
+          "💡 Tomar foto del classification handout completo de 2-3 parejas · entran al portafolio del aprendiz como evidencia de Apropiación inicial."
+        ],
+        "checkpoint": "✓ ≥80% de las parejas tienen las 12 imágenes correctamente clasificadas (10 de 12 mínimo). Si <80%: dar 5 min extra con consigna '*Look at the Word Wall. Look at the photos. Try again.*' antes de plenaria.",
+        "transition": "*Time for break — 15 minutes. Stretch, water, café. When you come back — the Word Wall is waiting. Five tarjetas. Five Word Walkers. Pure ceremony.*",
+        "tecnica_didactica": "Classification cooperativa con justificación oral usando frame demostrativo + Argumentación en parejas heterogéneas"
+      },
+      {
+        "letra": "C",
+        "nombre": "Word Wall Building — construcción colaborativa Maritime Word Wall (PM-2.5)",
+        "duracion_min": 45,
+        "worksheet_ref": "PM-2.5, Word Wall building protocol",
+        "agrupacion": "Parejas → Plenaria de presentación",
+        "objetivo": "Construir físicamente el Maritime Word Wall (pared lateral · permanente 12 sesiones) agregando 5 tarjetas Sub-bloque 1 a las 4 survival words ya existentes desde S1. Cada pareja toma 1 tarjeta · la presenta al grupo con frame demostrativo + categoría + ejemplo · la pega ceremonialmente.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor recoge 5 tarjetas pre-impresas Sub-bloque 1 (bollard · crane · bow · stern · bridge · cada una con foto + IPA + stress) · las apila en mesa frontal.",
+          "2. Formar 5 grupos de 5 (≈25 aprendices) o 5 parejas + algunos individuales · cada grupo/pareja recibe 1 tarjeta al azar.",
+          "3. Cada grupo prepara 5 min su mini-presentación: '*This is a [TERM]. It is [category]. Example: [frase del Master Anchor o propia].*' Mínimo 1 frase con stress marcado en la palabra clave.",
+          "4. Plenaria de presentaciones 30 min — cada grupo (5 min × 5 grupos) pasa al frente con su tarjeta + presenta + pega tarjeta físicamente en pared lateral. Tras pegarla, el grupo lidera 1 choral repetition de la clase con stress.",
+          "5. Tras las 5 presentaciones · pared queda con: 4 tarjetas survival S1 + 5 tarjetas Sub-bloque 1 = 9 tarjetas físicas Maritime Word Wall.",
+          "6. Cierre del bloque 5 min: instructor pide a la clase entera caminar 1 vez frente al Word Wall · cada aprendiz toca con dedo cada palabra y la dice en voz alta con stress · '*The Port Word Walker walks the wall.*'",
+          "7. Frase puente al WHILE D: '*Now the wall has 9 words. We can play with them. We can change them. One bollard becomes many bollards. This bollard becomes that bollard. Welcome to grammar — but maritime grammar.*'"
+        ],
+        "teacher_talk_instruction": "*Five tarjetas. Five groups. Five minutes to prepare. Five minutes to present. Each group says: 'This is a ___. It is ___. Example: ___.' One sentence with stress. Then pega the tarjeta on the wall. Then we ALL repeat. The Maritime Word Wall is BUILT — by you — today. Forever.*",
+        "icq": [
+          "*Who builds the Word Wall — me or you?* → Esperan: 'We / together / us'",
+          "*How many tarjetas does my group have?* → Esperan: '1 / one each'",
+          "*Do I just say the word, or also use 'This is'?* → Esperan: 'Both / This is + word + category + example'",
+          "*Does the Word Wall stay forever?* → Esperan: 'Yes / 12 sessions / permanente'"
+        ],
+        "answer_key_inline": {
+          "frame_modelo_presentacion": "*This is a [TERM]. It is [category]. Example: [Master Anchor sentence].*",
+          "5_presentaciones_modelo": [
+            "Bollard: '*This is a bollard. It is port infrastructure. Example: The bollard is near the bow.*'",
+            "Crane: '*This is a crane. It is port equipment. Example: The crane is on the dock.*'",
+            "Bow: '*This is the bow. It is a ship part. Example: The bow is to the north.*'",
+            "Stern: '*This is the stern. It is a ship part. Example: The stern is to the south.*'",
+            "Bridge: '*This is the bridge. It is a ship part. Example: The bridge is on the top deck.*'"
+          ],
+          "criterio_de_exito_presentacion": "Cada grupo produce frame completo + stress marcado en término clave + pega tarjeta físicamente + lidera choral repetition. Si un grupo se queda corto en la presentación: instructor completa el frame · NO juzgar."
+        },
+        "facilitation_notes": [
+          "💡 La ceremonia de pegar la tarjeta es FÍSICA · cada grupo se PARA frente al Word Wall · todo el grupo toca la tarjeta antes de pegar · refuerza identidad colectiva.",
+          "💡 Si un grupo está nervioso: instructor lee la presentación con ellos en eco · NO los obliga a hablar solos.",
+          "💡 Tomar foto del Maritime Word Wall completo al cierre del bloque · entra al portafolio del Día 2 + se compara en S12 con Word Wall completo de 25 términos.",
+          "💡 La acción de la clase entera caminando frente al Word Wall (paso 6) es MUSCULAR · refuerza memoria espacial + simbolismo del 'Port Word Walker'.",
+          "💡 NO permitir que el Word Wall quede en zona oscura del aula · debe estar en pared visible iluminada · es el objeto pedagógico permanente más importante de la guía."
+        ],
+        "checkpoint": "✓ Maritime Word Wall pared lateral tiene 9 tarjetas pegadas (4 survival S1 + 5 Sub-bloque 1) + ≥4 de 5 grupos completaron la presentación con frame demostrativo + stress marcado. Si <4 grupos: dar 3 min extra al cierre para que los grupos faltantes completen al menos la frase 'This is a ___'.",
+        "transition": "*The wall is built. Now — we play with the words. One bollard. Many bollards. This crane. Those cranes. Watch what happens when we change just one letter — or one little word.*",
+        "tecnica_didactica": "Construcción colaborativa de organizador visual permanente (Maritime Word Wall) + Presentación grupal con frame demostrativo + acción ceremonial física"
+      },
+      {
+        "letra": "D",
+        "nombre": "Grammar Awareness — Plurales (Gr 3) + Demonstratives (Gr 2) Intro (PM-2.10)",
+        "duracion_min": 45,
+        "worksheet_ref": "PM-2.10, Gr 3 (plural + a/an) + Gr 2 (this/that/these/those) Intro",
+        "agrupacion": "Plenaria con elicitación + Individual silencioso",
+        "objetivo": "Inducir noticing de Gr 3 (plural -s/-es + artículos a/an) + Gr 2 (this/that/these/those) usando los 9 términos del Maritime Word Wall recién construido. NO análisis formal aislado · sólo descubrimiento desde el uso. 2/2 Intro máximos PM-0 §9.2.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor pega en tablero 2 frames pre-impresos: (a) 'a [TERM] / [TERMS]-s' (Gr 3) · (b) 'this/that/these/those + is/are' (Gr 2).",
+          "2. Plenaria de Gr 3 — 15 min: instructor toma 1 tarjeta del Word Wall · pregunta '*One bollard — what about many?*' · clase responde 'bollards' · instructor escribe 'a bollard / bollards' en frame · agrega flecha visual de la -s. Repetir con crane (cranes) · stern (sterns) · bridge (bridges). Para bow (bows), señala que es muy poco común en plural pero válido. Para los términos compound o difíciles: instructor maneja con cuidado (radio → radios, vessel → vessels).",
+          "3. Individual silencioso 8 min: cada aprendiz escribe en su cuaderno los 9 términos del Word Wall en formato 'a [TERM] / [TERMS]'. Excepción 'a bow' (válido pero poco común).",
+          "4. Plenaria de Gr 2 — 15 min: instructor señala una tarjeta cercana al frente '*This is a bollard.*' · luego una lejana '*That is a crane.*' · luego dos cercanas '*These are bridges.*' · luego dos lejanas '*Those are bow lines.*'. Choral repetition con gestos (dedo cerca/lejos · mano abierta singular/plural).",
+          "5. Mini-pair drill 5 min: en parejas, A señala una tarjeta del Word Wall · B dice frame correcto. 8 rondas alternadas. Recast inmediato si error.",
+          "6. Cierre 2 min: '*Two new tools today — plural -s and this/that/these/those. Not perfect — just noticed. We use them all guide. Today, just notice.*'",
+          "7. Frase puente al WHILE E: '*Now you have words. You have plurals. You have this and that. Time to write your own Glossary — your pocket port dictionary. Andrea opens hers.*'"
+        ],
+        "teacher_talk_instruction": "*Two new tools today. First — plural. One bollard becomes bollards. Watch the -s. Second — this and that. This is close. That is far. These are close many. Those are far many. Not a test. Just notice. We use them all guide. 30 minutes — pair drill at the end.*",
+        "icq": [
+          "*Is this a grammar test today?* → Esperan: 'No / just notice / awareness'",
+          "*What is the plural marker?* → Esperan: '-s / s at the end'",
+          "*This is for close or far?* → Esperan: 'Close / near'",
+          "*These are for one or many?* → Esperan: 'Many / plural'"
+        ],
+        "answer_key_inline": {
+          "Gr_3_plural_a_an_aplicado_a_9_word_wall": [
+            "a bollard / bollards",
+            "a crane / cranes",
+            "a bow / bows (raro pero válido — proa)",
+            "a stern / sterns (raro pero válido)",
+            "a bridge / bridges",
+            "a port / ports",
+            "a berth / berths",
+            "a vessel / vessels",
+            "a radio / radios"
+          ],
+          "Gr_2_demonstratives_aplicado_al_word_wall": [
+            "This is a bollard. (cerca singular)",
+            "That is a crane. (lejos singular)",
+            "These are bridges. (cerca plural)",
+            "Those are bow lines. (lejos plural · 'bow lines' = mooring lines from the bow)"
+          ],
+          "noticing_no_analisis_formal": "S2 introduce Gr 3 + Gr 2 como 2/2 Intro máximos · awareness sólo. La consolidación de Gr 3 viene en S4 (writing) y la consolidación de Gr 2 viene en S3 (reading jigsaw). NO se evalúa en S2 · sólo se modela.",
+          "carga_check": "Gr 3 + Gr 2 = 2/2 Intro máximos PM-0 §9.2 ✓ · primera sesión IMARPOR-CC con carga gramatical formal · respeta límite estricto."
+        },
+        "facilitation_notes": [
+          "💡 NO escribir reglas formales en tablero ('add -s to make plural' → NO). Sólo el frame visual + ejemplos vivos del Word Wall.",
+          "💡 Si un aprendiz pregunta por -es (boxes) o -ies (cherries): '*Yes — those come in S4. Today, only -s.*' Respeto al ritmo PM-0 §9.2.",
+          "💡 La metalingual cue (flecha en tablero apuntando a -s) es soporte visual · NO discusión metalingüística extendida.",
+          "💡 Si emergen errores 'a bridges' o 'these is bridges': recast suave + flecha en tablero al error · sin avergonzar al aprendiz.",
+          "💡 La distinción this vs that en aula bilingüe es muscular más que cognitiva · refuerza con gestos físicos (dedo apuntando cerca/lejos)."
+        ],
+        "checkpoint": "✓ ≥80% de aprendices completan los 9 términos en formato 'a [TERM] / [TERMS]' en su cuaderno + ≥80% producen al menos 2 frames demostrativos correctos en pair drill. Si <80%: 3 min de choral drill grupal extra.",
+        "transition": "*Five words. Plural form. This and that. Now — your turn. Open your Port Glossary. Five pages. Five tools. Forever yours.*",
+        "tecnica_didactica": "Inducción gramatical por descubrimiento (noticing) + frame visual con flecha metalinguística + Pair drill con gestos físicos"
+      },
+      {
+        "letra": "E",
+        "nombre": "Port Glossary Build — apertura del cuaderno bolsillo personal (PM-2.5)",
+        "duracion_min": 45,
+        "worksheet_ref": "PM-2.5, Port Glossary template",
+        "agrupacion": "Individual silencioso (música instrumental)",
+        "objetivo": "Cada aprendiz abre su Port Glossary personal (cuaderno bolsillo A6) · copia los 5 términos Sub-bloque 1 con: foto pequeña pegada + IPA + stress + ejemplo del Master Anchor + 1 frase propia usando demonstratives. Producto físico que el aprendiz lleva consigo 12 sesiones (analógico al de Andrea Mosquera · personaje del universo).",
+        "instrucciones_paso_a_paso": [
+          "1. Distribuir Port Glossary cuaderno bolsillo A6 (1 por aprendiz · papel reciclado · 25 páginas · una por término del Toolbelt completo).",
+          "2. Instructor proyecta plantilla por término (1 página): (a) cabecera con TERM + IPA + stress en MAYÚSCULA · (b) foto pequeña pegada (recortar de classification handout o dibujar) · (c) ejemplo del Master Anchor · (d) 1 frase propia usando frame 'This is/These are' o frame 'a / -s'.",
+          "3. Instrucción bilingüe: '*Open your Port Glossary. Five pages today — bollard, crane, bow, stern, bridge. Each page: word + IPA + stress + photo + Master Anchor example + ONE sentence YOU write. Music on. Silent work. 35 minutes.*'",
+          "4. Modelo público (5 min): instructor proyecta su propio Port Glossary con la página BOLLARD ya completa: foto + IPA + 'BOL-lard' + ejemplo del Master Anchor 'The bollard is near the bow.' + frase propia 'In Buenaventura, this is a green bollard at Berth 7.'",
+          "5. Trabajo individual 30 min · música instrumental marítima muy baja · instructor circula sin corregir · sólo modela en silencio (señala con dedo si una página está vacía).",
+          "6. Cierre 5 min — share-out voluntario: 2-3 aprendices muestran 1 página completa al grupo · clase aplaude. Sin evaluación.",
+          "7. Frase puente al WHILE F: '*Andrea has her Port Glossary. You have yours. Five tools. But your Maritime Learning Contract is still open from yesterday. Time to close it. Three priorities. Yellow envelope. Sealed.*'"
+        ],
+        "teacher_talk_instruction": "*Open your Port Glossary — it's small, it fits in your pocket. Five pages today. Each page: word, IPA, stress, photo, Master Anchor example, ONE sentence YOU write. Use 'this is' or 'these are' — it's yours. Music on. Silent. 35 minutes. I am here but I will not look. This is your dictionary, not mine.*",
+        "icq": [
+          "*How many pages today?* → Esperan: '5 / five'",
+          "*Do I write a Master Anchor example or my own?* → Esperan: 'Both / Master Anchor + my own'",
+          "*Will the teacher correct my sentence?* → Esperan: 'No / not today / it's mine'",
+          "*Do I work alone or with my partner?* → Esperan: 'Alone / silent / music on'"
+        ],
+        "answer_key_inline": {
+          "plantilla_pagina_port_glossary": {
+            "header": "TERM (en MAYÚSCULA con stress) + /IPA/",
+            "campo_1_foto": "Foto pequeña pegada o dibujada (puede ser la foto de la classification handout)",
+            "campo_2_ejemplo_master_anchor": "Frase del Master Anchor PM-2.3 (ej: 'The bollard is near the bow.')",
+            "campo_3_frase_propia": "Frame 'This is a [TERM]' o frame plural · contexto puerto Buenaventura del aprendiz · ej: 'In Buenaventura, this is a green bollard at Berth 7.'"
+          },
+          "5_paginas_modelo_S2": [
+            "BOL-lard /ˈbɒlərd/ + foto + Master Anchor 'The bollard is near the bow.' + frase propia 'In Buenaventura, this is a green bollard at Berth 7.'",
+            "CRANE /kreɪn/ + foto + Master Anchor 'The crane is on the dock.' + frase propia 'These are gantry cranes at Berth 4.'",
+            "BOW /baʊ/ + foto + Master Anchor 'The bow is to the north.' + frase propia 'The bow of the BUENAVENTURA EXPRESS is white.'",
+            "STERN /stɜːrn/ + foto + Master Anchor 'The stern is to the south.' + frase propia 'The stern is far from the bow — that is the rule.'",
+            "BRIDGE /brɪdʒ/ + foto + Master Anchor 'The bridge is on the top deck.' + frase propia 'Captain Lopera works on the bridge of the BUENAVENTURA EXPRESS.'"
+          ],
+          "criterio_de_exito_glossary": "Cada aprendiz tiene 5 páginas con header completo + foto/dibujo + Master Anchor example. La frase propia es ideal pero NO obligatoria en S2 (S3 la consolida). 1 página vacía = mini-soporte 1-a-1 al cierre."
+        },
+        "facilitation_notes": [
+          "💡 NO circular leyendo el cuaderno · es objeto privado del aprendiz · puede compartirlo si quiere en share-out voluntario.",
+          "💡 La foto pegada es preferible al dibujo · si el aprendiz no tiene foto · que recorte de la classification handout (es por eso que las imágenes vienen en el handout).",
+          "💡 La frase propia con 'this is/these are' es ABT puro · usa la awareness Gr 2 recién introducida en WHILE D.",
+          "💡 Si un aprendiz se queda en la página 1 los 35 min: respetar · '*One page deep is better than five pages empty. The Glossary grows in 12 sessions.*'",
+          "💡 Música instrumental marítima muy baja · sonidos de puerto · refuerza inmersión sensorial sin distraer · misma música que en S1 (continuidad sensorial)."
+        ],
+        "checkpoint": "✓ ≥85% de aprendices tienen las 5 páginas con al menos: header + foto/dibujo + Master Anchor example. La frase propia es bonus en S2. Si <85%: 5 min extra silencio + opción de completar como autónomo.",
+        "transition": "*Beautiful work. Five pages. Forever yours. Now — one final ceremony. Yesterday you opened your Maritime Learning Contract. Today we close it.*",
+        "tecnica_didactica": "Producción individual de organizador visual personal (Port Glossary) con plantilla modelada + uso de frame demostrativo + apoyo del Master Anchor"
+      },
+      {
+        "letra": "F",
+        "nombre": "Maritime Learning Contract Drafting — 3 prioridades personales (PM-2.2)",
+        "duracion_min": 30,
+        "worksheet_ref": "PM-2.2, Learning Contract template (cierre)",
+        "agrupacion": "Individual silencioso (instructor se retira)",
+        "objetivo": "Cada aprendiz redacta sus 3 prioridades personales del Maritime Learning Contract derivadas de los 3 puntajes más bajos del Gap Card de S1 + revisión silenciosa antes de la firma ceremonial. Cierre afectivo de la deuda inconclusa de S1 (sobre amarillo).",
+        "instrucciones_paso_a_paso": [
+          "1. Distribuir Maritime Learning Contract template · 3 prioridades personales + firma + sobre amarillo sellable.",
+          "2. Instructor lee instrucción central: '*Your Gap Card from yesterday — open it. Look at your 3 LOWEST scores. Those are your 3 priorities. Write them on the Contract: 'I, [name], commit to improving (1) ___, (2) ___, (3) ___ during this guide. Signed: ___ Date: 2026-04-29.' Spanish ok if pressure is high. 25 minutes. Silent. Music on. I step away.*'",
+          "3. Instructor se retira al frente del aula — explícitamente NO circula. Lectura de un cuaderno del instructor = modelado de '*no estoy mirando tu contrato*'.",
+          "4. Aprendices abren su Gap Card de S1 (entregable autónomo · debe estar entre los 5 fotos + KWL) · identifican 3 áreas con puntaje más bajo · redactan compromisos en Contract.",
+          "5. Reflection field final: '*One sentence about why I chose these 3 priorities. (Spanish ok.)*'",
+          "6. Cierre: instructor regresa cuando los 25 min terminan + da 5 min para firma final ceremonial."
+        ],
+        "teacher_talk_instruction": "*Now — the Maritime Learning Contract. Yesterday you mapped your gaps. Today you choose 3 priorities. Pick the 3 LOWEST scores from your Gap Card. Write them. Sign them. Spanish ok. No grade. No teacher watching. I step away. 25 minutes. Music on.*",
+        "icq": [
+          "*How many priorities?* → Esperan: '3 / three / three lowest scores'",
+          "*Where do I find the 3 lowest scores?* → Esperan: 'Gap Card from yesterday'",
+          "*Will the teacher look at my contract?* → Esperan: 'No / he steps away'",
+          "*Spanish ok?* → Esperan: 'Yes / Spanish ok / 1 sentence in English minimum'"
+        ],
+        "answer_key_inline": {
+          "estructura_contract_template": "(1) I, [Andrea Mosquera / nombre del aprendiz], commit to improving [PRIORITY 1] during this 100-hour guide. (2) Commit to improving [PRIORITY 2]. (3) Commit to improving [PRIORITY 3]. Signed: [signature]. Date: 2026-04-29 (S2). To be opened: 2026-XX-XX (S12 · CML Port Turnaround Mission).",
+          "ejemplos_prioridades_modelo_A1.2": [
+            "I commit to improving my VHF Comms — answering Captain Lopera by radio with confidence.",
+            "I commit to improving my Ship Parts vocabulary — naming the 6 parts of the BUENAVENTURA EXPRESS without hesitation.",
+            "I commit to improving my SMCP literacy — using Roger / Wilco / Standby / Over / Out correctly by Session 12."
+          ],
+          "ejemplos_prioridades_modelo_si_gap_card_distinto": [
+            "Mejorar mi pronunciación con stress correcto — quiero sonar profesional, no 'spanglish'.",
+            "Aprender a escribir un Inspection Report en una página sin errores graves.",
+            "Coordinar con el equipo de muelle en inglés sin necesidad de traductor."
+          ],
+          "nota": "El contrato es contrato consigo mismo · no con el instructor. La meta es la firma · no el contenido perfecto."
+        },
+        "facilitation_notes": [
+          "💡 CRÍTICO — no circule. La firma es contrato privado. Si se compromete el silencio · se compromete la solemnidad de S12.",
+          "💡 Si un aprendiz NO trajo el Gap Card de S1: ofrecer Gap Card de respaldo + 5 min para auto-puntuarse rápidamente · NO castigar.",
+          "💡 Si un aprendiz escribe sus 3 prioridades 100% en español: respetar · '*Sign in your language. The promise is the same.*'",
+          "💡 Música instrumental marítima muy baja · misma música del cierre del S1 (continuidad ceremonial).",
+          "💡 Reflection field es íntimo · NO lo lea ni siquiera al final · es para el aprendiz + su yo de S12."
+        ],
+        "checkpoint": "✓ ≥90% de los aprendices tienen 3 prioridades escritas + firma + reflection field completo. Si falta firma: 2 min extra al cierre · firma se hace EN la ceremonia WRAP-UP.",
+        "transition": "*You wrote your promise. Now — one final act. The yellow envelope. The seal. The instructor's box. Forever — until Session 12.*",
+        "tecnica_didactica": "Auto-redacción reflexiva de compromisos personales con instructor retirado + cierre de ciclo afectivo abierto en S1"
+      }
+    ],
+    "breaks": [
+      {
+        "tiempo": "2:30-2:45",
+        "duracion_min": 15,
+        "tipo": "Receso activo (café + baño + estiramiento)",
+        "notas": "Recordar hidratación. Mantener English Zone si alguien pregunta algo técnico — pero el receso permite libre L1. Usar el break para pegar las tarjetas Plural Awareness (Gr 3) + Demonstratives (Gr 2) en tablero · preparar Maritime Word Wall pared lateral con cinta adhesiva resistente."
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 30,
+    "exit_ticket": {
+      "tarea": "Exit Ticket S2 — Tarjeta 10×15 cm con 3 líneas: (1) ONE Sub-bloque 1 word I now own (with stress mark · ej: BOL-lard) · (2) ONE plural or demonstrative I tried today (ej: 'These are cranes' / 'a bollard / bollards') · (3) ONE word I want to add to the Maritime Word Wall by Session 5 (ej: tug, anchor, mooring). Entregar en la caja del instructor antes de salir.",
+      "success_criteria": "Las 3 líneas completas. Mínimo 1 palabra inglés con stress marcado. La tercera línea puede ser en español. La caja se abre y se lee S3 warm-up (sin nombrar autores · refleja ambiciones léxicas del grupo).",
+      "duration_min": 5
+    },
+    "sintesis": "Hoy te volviste Port Word Walker. Aprendiste 5 términos del Toolbelt Sub-bloque 1: BOL-lard · CRANE · BOW · STERN · BRIDGE — con foto, IPA, stress, y ejemplo del Master Anchor de Captain Lopera. Clasificaste 12 imágenes del Puerto de Buenaventura en 3 categorías con argumentación oral. Construiste el Maritime Word Wall con tu grupo — 9 tarjetas físicas que viven en pared 12 sesiones. Notaste plurales (-s) y demonstratives (this/that/these/those) sin que duela. Abriste tu Port Glossary personal — cuaderno bolsillo que llevarás contigo a cada sesión. Y cerraste tu Maritime Learning Contract con 3 prioridades personales — sellado en sobre amarillo, en custodia hasta S12. Mañana — Sesión 3 — leemos el reporte real de Captain Lopera sobre el BUENAVENTURA EXPRESS. El Toolbelt se ensancha. La proa está al norte.",
+    "asignacion_autonoma": {
+      "actividad": "Identificar 5 elementos portuarios en fotos personales/del puerto + grabar audio 30s nombrándolos · 2.33 horas autónomas (≈140 min)",
+      "instrucciones_detalladas": [
+        "1. Toma 5 fotos NUEVAS (distintas de las de S1) de elementos portuarios visibles en tu entorno: muelles · grúas · contenedores · barcos · letreros marítimos.",
+        "2. Para cada foto, identifica si el elemento es: port infrastructure / ship part / port equipment.",
+        "3. Pega cada foto en una página del Port Glossary (puede ser una de las 5 ya existentes O una página nueva entre las 25).",
+        "4. Graba un audio de 30 segundos en celular nombrando los 5 elementos en inglés con stress correcto · usar frame: '*This is a [TERM]. It is a [category].*' o variantes.",
+        "5. Leer el Master Anchor Text de PM-2.3 (178 palabras · Operational Report del BUENAVENTURA EXPRESS) UNA VEZ por encima · sin entender todo · sólo identificar las 5 palabras Sub-bloque 1 que aparecen.",
+        "6. Llevar todo a S3: Port Glossary actualizado + audio en celular + lectura del Master Anchor con 5 palabras subrayadas."
+      ],
+      "entregable": "5 fotos nuevas pegadas en Port Glossary + audio 30s con 5 términos Sub-bloque 1 nombrados con stress + Master Anchor leído con 5 palabras subrayadas (preparación para S3 Reading).",
+      "cuando_se_revisa": "S3 warm-up (5 min) — instructor pide voluntarios para reproducir audio 30s · clase aplaude · sin evaluación formal. Master Anchor pre-leído permite jigsaw fluido en S3 Reading.",
+      "tiempo_estimado_min": 140,
+      "tiempo_estimado_horas": 2.333333
+    },
+    "bridge_to_next": "*Next session — Session 3: Reading the Ship — UNIT 1 SHIP OVERVIEW. Captain Lopera's Operational Report — 178 words — yours to read. We jigsaw it. We diagram the ship. We earn our first formal evidence (E1 Reading 5 pts) in the Cuestionario No 1. Bring your Port Glossary, your audio, and your subrayado Master Anchor. The proof of work begins.*",
+    "teacher_talk_closing_en": "*Team — today was the second step. You opened the Toolbelt. You built the Word Wall. You opened your Port Glossary. You closed your Contract — sealed forever in the yellow envelope, safe with me until Session 12. Tomorrow — Sesión 3 — Andrea reads with you. The Operational Report of the BUENAVENTURA EXPRESS. Bring your Glossary. Bring your photos. Bring your hunger for ship parts. The bow is to the north. The stern is to the south. The bridge is on the top deck. ¡Bienvenidos al Toolbelt, Word Walkers!*",
+    "teacher_talk_closing_es_cursive": "*(Equipo, hoy fue el segundo paso. Abrieron el Toolbelt. Construyeron el Word Wall. Abrieron su Port Glossary. Cerraron su Contrato — sellado para siempre en el sobre amarillo, a salvo conmigo hasta la Sesión 12. Mañana — Sesión 3 — Andrea lee con ustedes. El Reporte Operativo del BUENAVENTURA EXPRESS. Traigan su Glossary. Traigan sus fotos. Traigan su hambre de partes del buque. La proa está al norte. La popa está al sur. El puente de mando está en la cubierta superior. ¡Bienvenidos al Toolbelt, Caminantes de Palabras!)*",
+    "reflection_prompt": "Antes de salir · 30 segundos de silencio: '*¿Qué palabra tengo HOY que no tenía AYER? ¿Qué palabra quiero TENER MAÑANA?*' (no se responde en voz alta · solo se siente).",
+    "facilitation_notes": [
+      "💡 La ceremonia de firma + sellado del sobre amarillo es SOLEMNE — 60 segundos de silencio post-firmas. Música suave de puerto. Cada aprendiz pasa al frente · entrega su sobre amarillo a la caja del instructor (visible · permanente 12 sesiones).",
+      "💡 Si un aprendiz no terminó las 3 prioridades del Contract en WHILE F: NO presionar · puede completar al inicio de S3 warm-up · NO castigar.",
+      "💡 La caja del instructor con TODOS los sobres amarillos sellados es objeto físico simbólico crítico · NO la mueva del aula · refuerza pertenencia.",
+      "💡 Cierre con energía positiva pero contenida (S2 es operativo, no emocional como S1) · que se vayan con sensación de ownership maritime — '*Now I have 5 tools. Now I have a Glossary. Now I have a sealed Contract.*'",
+      "💡 Tomar foto del Maritime Word Wall completo al cierre + foto de la caja del instructor con sobres amarillos · entran al portafolio del Día 2 + son evidencia de Apropiación inicial."
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "WHILE A — Toolbelt Intro 5 términos Sub-bloque 1 (PM-2.5)",
+      "items": [
+        {
+          "pregunta": "5 términos canónicos Sub-bloque 1 con stress",
+          "respuesta_correcta": "BOL-lard /ˈbɒlərd/ · CRANE /kreɪn/ · BOW /baʊ/ · STERN /stɜːrn/ · BRIDGE /brɪdʒ/",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "No evaluado formalmente · contribuye al Cuestionario S6 ítem Vocabulary 5 pts (PM-4.2)"
+        },
+        {
+          "pregunta": "Stress correcto BOL-lard",
+          "respuesta_correcta": "PRIMERA sílaba (BOL-lard · 2 syllables)",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE B — Classification 12 imágenes (PM-2.5)",
+      "items": [
+        {
+          "pregunta": "Clasificación correcta 12 imágenes",
+          "respuesta_correcta": "PORT INFRASTRUCTURE: bollard · dock · warehouse · gate · SHIP PARTS: bow · stern · bridge · hull · PORT EQUIPMENT: gantry crane · forklift · reach stacker · tug boat",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Frame demostrativo modelo",
+          "respuesta_correcta": "*This is a [TERM]. It is [category] because ___.*",
+          "alternativas": ["*These are [TERMS]. They are [category].*"],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE C — Word Wall Building (PM-2.5)",
+      "items": [
+        {
+          "pregunta": "Total tarjetas Maritime Word Wall al cierre S2",
+          "respuesta_correcta": "9 tarjetas (4 survival S1 + 5 Sub-bloque 1)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Frame de presentación grupal",
+          "respuesta_correcta": "*This is a [TERM]. It is [category]. Example: [Master Anchor sentence].*",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE D — Grammar Awareness Gr 3 + Gr 2 (PM-2.10)",
+      "items": [
+        {
+          "pregunta": "Plural -s aplicado a 5 términos Sub-bloque 1",
+          "respuesta_correcta": "a bollard / bollards · a crane / cranes · a bow / bows · a stern / sterns · a bridge / bridges",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "4 demostrativos con uso",
+          "respuesta_correcta": "this is (cerca singular) · that is (lejos singular) · these are (cerca plural) · those are (lejos plural)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Carga gramatical S2",
+          "respuesta_correcta": "Gr 3 + Gr 2 = 2/2 Intro máximos PM-0 §9.2 ✓",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE E — Port Glossary Build (PM-2.5)",
+      "items": [
+        {
+          "pregunta": "¿Cuántas páginas se completan en S2?",
+          "respuesta_correcta": "5 páginas (1 por término Sub-bloque 1)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Plantilla página",
+          "respuesta_correcta": "Header (TERM + IPA + stress) + foto pegada + Master Anchor example + frase propia con frame demostrativo",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE F — Maritime Learning Contract Drafting (PM-2.2)",
+      "items": [
+        {
+          "pregunta": "¿Cuántas prioridades firma el aprendiz?",
+          "respuesta_correcta": "3 prioridades personales (derivadas de los 3 puntajes más bajos del Gap Card S1)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuándo se reabre el contrato?",
+          "respuesta_correcta": "Sesión 12 — CML Port Turnaround Mission · ceremonial reapertura del sobre amarillo",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WRAP-UP — Maritime Learning Contract Ceremony",
+      "items": [
+        {
+          "pregunta": "¿Qué pasa con el sobre amarillo al cierre de S2?",
+          "respuesta_correcta": "Sellado + entregado a la caja del instructor · custodia hasta S12 · objeto físico permanente",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuántos sobres amarillos quedan en la caja del instructor al cierre de S2?",
+          "respuesta_correcta": "1 por aprendiz (≈25 sobres) · acto colectivo de pertenencia maritime",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "En WHILE A: producir cada término en frase oral completa con frame del Master Anchor (ej: 'The bollard is near the bow') sin mirar el tablero · stress marcado.",
+      "En WHILE B: clasificar 3 imágenes adicionales que NO están en el handout · dibujar y argumentar (extensión libre).",
+      "En WHILE C: agregar 1 término orgánico al Maritime Word Wall (ej: tug, anchor, mooring) con tarjeta improvisada · pre-cursor de S5.",
+      "En WHILE D: producir 5 frames demostrativos con los 5 términos Sub-bloque 1 (this is / that is / these are / those are · sin reciclar el mismo).",
+      "En WHILE E: completar 5 páginas del Port Glossary CON frase propia rica (10+ palabras · contexto Buenaventura específico).",
+      "En WHILE F: redactar 3 prioridades del Contract 100% en inglés con frame 'I commit to improving ___ during this guide.'",
+      "Rol de peer tutor en WRAP-UP: ayudar a un compañero a sellar su sobre amarillo + verificar 3 prioridades escritas."
+    ],
+    "more_support_needed": [
+      "Tiempo extra en WHILE A (hasta 75 min) si el finger drilling individual es lento — acompañamiento 1-a-1 del instructor con 1 término cada vez.",
+      "En WHILE B — permitir que la pareja clasifique 8 imágenes (en lugar de 12) con argumentación · las 4 restantes se completan en plenaria con apoyo.",
+      "En WHILE C — el grupo presenta sólo 'This is a [TERM]. It is [category].' sin example · instructor completa el example en eco.",
+      "En WHILE D — ofrecer cuaderno con plantilla pre-rellenada 'a ___ / ___-s' para los primeros 3 términos como modelo · los 2 restantes solos.",
+      "En WHILE E — permitir que copie sólo 3 páginas (no 5) del Port Glossary · las 2 restantes se completan en autónomo S2-S3.",
+      "En WHILE F — permitir que las 3 prioridades del Contract estén 100% en español si la presión afectiva es alta · firma se hace igual en S2.",
+      "Contacto uno-a-uno al final de la sesión: '*How was Day 2? Did the Toolbelt fit? Bring me your Port Glossary on Wednesday — I'll add a sticker.*'"
+    ]
+  },
+  "instructor_self_check": [
+    "✓ ¿Reactivé la English Zone en el primer minuto del SET-UP con re-trazado del círculo 🔵 + reciclaje de las 4 survival words S1 (sin repetir la ceremonia completa)?",
+    "✓ ¿Modelé el stress de los 5 términos Sub-bloque 1 (BOL-lard · CRANE · BOW · STERN · BRIDGE) con choral repetition + finger drilling individual + clapping silábico al menos 3 veces durante la sesión?",
+    "✓ ¿Construimos el Maritime Word Wall físicamente con 5 nuevas tarjetas Sub-bloque 1 + acto ceremonial colectivo de la clase caminando frente al Word Wall?",
+    "✓ ¿Introduje Gr 3 + Gr 2 como awareness sin análisis formal aislado · respetando el límite 2/2 Intro máximos PM-0 §9.2?",
+    "✓ ¿Cerré la ceremonia del Maritime Learning Contract con firma + sellado en sobre amarillo + entrega a caja del instructor visible · cumpliendo la deuda afectiva abierta en S1?",
+    "✓ ¿Preview explícito de S3 (Reading Master Anchor BUENAVENTURA EXPRESS · 178 palabras · jigsaw cooperativo · primera evidencia formal E1 5 pts)?"
+  ],
+  "activity_logistics": {
+    "espacio": "Aula bilingüe en U o mesas de 4 (re-arregladas según bloque). English Zone reactivada en primer minuto con re-trazado del círculo azul. Maritime Word Wall pared lateral activado físicamente — al cierre tiene 9 tarjetas (4 survival S1 + 5 Sub-bloque 1). Mapa Terminal Buenaventura A2 (de S1 · permanente). Caja del instructor visible (de S1 · permanente · ahora con Exit Tickets S1 + sobres amarillos Learning Contract sellados).",
+    "agrupamiento": "Plenaria (SET-UP + WHILE A intro) → Parejas heterogéneas (WHILE B classification + WHILE C Word Wall building) → Plenaria con elicitación (WHILE D grammar awareness) → Individual silencioso (WHILE E Port Glossary + WHILE F Contract drafting) → Plenaria de cierre (WRAP-UP). Transiciones explícitas con Teacher Talk corto (max 30 seg cada cambio).",
+    "recursos": [
+      "Proyector + bocinas (música instrumental marítima muy baja · misma de S1)",
+      "Tablero blanco grande con 4 zonas demarcadas (English Zone + Title + Toolbelt 5 nuevos + LIVE ZONE classification)",
+      "Maritime Word Wall pared lateral (vacío activado en S1 · agrega 5 tarjetas Sub-bloque 1 en S2)",
+      "Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 (de S1 · permanentes)",
+      "5 tarjetas pre-impresas Sub-bloque 1 (foto + IPA + stress)",
+      "Classification handout 12 imágenes Puerto de Buenaventura (1 por pareja)",
+      "Port Glossary cuadernos bolsillo A6 (1 por aprendiz · permanente 12 sesiones)",
+      "Maritime Learning Contract templates + sobres amarillos (1 por aprendiz · cierre ceremonial)",
+      "Tarjetas Plural Awareness (Gr 3) + Demonstratives (Gr 2) pre-impresas",
+      "Marcadores VERDE + AZUL + ROJO (1 set por pareja)",
+      "Cinta adhesiva fuerte para Maritime Word Wall",
+      "Cronómetro visible en pantalla",
+      "Caja del instructor (de S1 · permanente · ahora recibe sobres amarillos sellados)"
+    ],
+    "tiempo": {
+      "set_up": 30,
+      "while_total": 285,
+      "break": 15,
+      "wrap_up": 30,
+      "total_directo_min": 360,
+      "autonomo_min": 140,
+      "autonomo_horas": 2.333333,
+      "total_aprendiz_horas": 8.333
+    },
+    "plan_b": "Si proyector falla: usar mapa A2 de muro como referencia para Welcome + tarjetas físicas Sub-bloque 1 para WHILE A (sin foto proyectada · usar foto pequeña de la tarjeta). Si Maritime Word Wall pared lateral no es viable (cinta no pega): usar pizarra blanca como Word Wall provisional + transferir a pared al cierre. Si las 12 imágenes para classification se imprimen mal: proyectar imágenes en pantalla y que aprendices clasifiquen en cuaderno con números 1-12 + categoría · sin sticker físico. Si el Contract drafting (WHILE F) genera bloqueo afectivo: ofrecer Contract pre-rellenado con 1 prioridad modelo · aprendiz completa las 2 restantes."
+  },
+  "totals_check": {
+    "set_up": 30,
+    "while_bloque_a": 60,
+    "while_bloque_b": 60,
+    "break": 15,
+    "while_bloque_c": 45,
+    "while_bloque_d": 45,
+    "while_bloque_e": 45,
+    "while_bloque_f": 30,
+    "wrap_up": 30,
+    "total_min": 360,
+    "check_result": "EXACTO 360 min directos (6h) + 140 min autónomo (≈2.33h) = 500 min totales = 8.33h aprendiz S2. Coherente con header.duracion_sesion_min de pm-3-1 + horas autónomas pm-2-0 sessions[1] + suma WHILE bloques A-F = 285 min coincide con while.duracion_min."
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    },
+    "downstream_consumers": [
+      "PM-3.3 Canva Slides — referencias a 5 fotos Sub-bloque 1 + 12 imágenes classification + Maritime Word Wall layout",
+      "PM-3.4 Workbook — Port Glossary Chapter 1 (Sub-bloque 1) + classification handout + Master Anchor reading prep",
+      "PM-3.6 Activity Logistics — A1.2.1 to A1.2.7 IDs derivados de WHILE A-F + WRAP-UP",
+      "PM-2.11 Check 14 — validación propagación estrategia_didactica (ABT — Pre-enseñanza léxica portuaria) + tecnicas[] + pm0_protocol cross-ref grammar_groups Gr 3 + Gr 2 Intro"
+    ]
+  },
+  "rap_status": "S2 completada (preliminary · pendiente Gate Humano 3) — Maritime Word Wall construido físicamente con 9 tarjetas (4 survival S1 + 5 Sub-bloque 1) + Toolbelt Sub-bloque 1 activado productivamente (bollard · crane · bow · stern · bridge) + Classification 12 imágenes ejecutada + Port Glossary personal abierto con 5 páginas + Maritime Learning Contract cerrado ceremonialmente (firma + sobre amarillo sellado · custodia hasta S12) + Gr 3 (plural + a/an) + Gr 2 (this/that/these/those) introducidos como awareness. NO genera evidencia formal aún (E1-E6 no activos en S2 per pm-3-1.overview_table[1].evidencia='—'). Umbral de S3 (Reading Master Anchor 178 palabras + E1 Reading 5 pts) abierto.",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[1]",
+    "__contract_version__": "v2.5.1 (mapping per pm-3-1.pm_3_2_propagation_contract)",
+    "fpi_block": "3.2 Contextualización + apertura 3.3 Apropiación",
+    "grammar_groups": {
+      "intro": [
+        {
+          "group_id": "Gr 3",
+          "group_name": "Plural regular -s/-es/-ies + artículos a/an",
+          "nivel_activacion": "Intro",
+          "ejemplo_en_sesion": "'a bollard / bollards | a crane / cranes | a bow (raro plural) | the stern (definite for ship parts) · 5 términos Sub-bloque 1 + reciclaje 4 survival S1'"
+        },
+        {
+          "group_id": "Gr 2",
+          "group_name": "Pronombres demostrativos this/that/these/those",
+          "nivel_activacion": "Intro",
+          "ejemplo_en_sesion": "'This is a bollard. That is a crane. These are bridges. Those are bow lines.' · uso natural en classification + Word Wall building"
+        }
+      ],
+      "consolida": [],
+      "aplica": [],
+      "carga_check": "2/2 Intro máximos (PM-0 §9.2) ✓ — primera sesión con carga gramatical formal IMARPOR-CC; respeta límite estricto",
+      "active_receptive_only": []
+    },
+    "feedback": {
+      "mode": "ACCURACY",
+      "rationale": "Apropiación inicial Sub-bloque 1 — precisión es prioridad. Primera sesión IMARPOR-CC donde el error gramatical empieza a importar · sin comprometer la confianza maritime construida en S1. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_1 (feedback inmediato accuracy-prioritario).",
+      "accuracy_techniques": [
+        "Recast — repetir corregido sin interrumpir flujo (en WHILE B classification + WHILE C Word Wall building)",
+        "Elicitación guiada — instructor empieza frase y aprendiz completa (en WHILE D grammar awareness)",
+        "Metalinguistic cue — flecha en tablero apuntando al error gramatical (-s plural · this/that frame · sin discusión metalingüística extendida)",
+        "Choral repetition con stress marcado (en WHILE A Toolbelt Intro)",
+        "Finger drilling individual con cuerpo entero frente al tablero (en WHILE A)",
+        "Reformulación positiva (CERO corrección invasiva · respeta confianza S1)"
+      ],
+      "fluency_techniques": [],
+      "mixed_techniques": [],
+      "notes": "S2 tiene primer feedback ACCURACY explícito (después del 100% afectivo de S1). Errores se modelan recasted sin interrumpir flujo. La flecha en tablero es soporte visual · NO cátedra metalingüística."
+    },
+    "l1_management": {
+      "l1_percentage": 20,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_1.S2 — ≤ 20% (PM-0 §9.1)",
+      "l1_rationale": "L1 sólo para clarificar diferencia entre port infrastructure (muelle) vs port equipment (grúas) inicialmente y para cierre afectivo del Learning Contract en WRAP-UP. Resto en L2 con apoyo visual obligatorio (Maritime Word Wall + 12 imágenes + Port Glossary).",
+      "english_zone_declaration": "Reactivada al inicio de SET-UP con re-trazado del círculo 🔵 (10 seg · gesto de continuidad · NO repetir ceremonia completa de S1).",
+      "l1_allowed_for": [
+        "Distinción crítica port infrastructure vs port equipment (en WHILE B classification)",
+        "Photo share-out del entregable autónomo S1 (SET-UP)",
+        "Justificación de errores comunes (recast con flecha en tablero · WHILE D)",
+        "Reflection field del Maritime Learning Contract (WHILE F · 1 oración · español ok si presión afectiva alta)",
+        "Firma del Maritime Learning Contract si presión afectiva alta (WRAP-UP)",
+        "Bridge to Next preview del Master Anchor BUENAVENTURA EXPRESS (cierre)"
+      ],
+      "reduction_strategy": "S3 → 15% L1 · S5 → 10% · curva descendente hacia 0% en S12 per pm-0-context.l1_percentage_per_session.single_guide_12_sessions"
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "bollard",
+          "ipa": "/ˈbɒlərd/",
+          "tonica": "PRIMERA (BOL-lard · 2 syllables · stress on FIRST)"
+        },
+        {
+          "word": "crane",
+          "ipa": "/kreɪn/",
+          "tonica": "única (CRANE · 1 syllable · strong)"
+        },
+        {
+          "word": "bow",
+          "ipa": "/baʊ/",
+          "tonica": "única (BOW · 1 syllable · rhymes with 'how')"
+        },
+        {
+          "word": "stern",
+          "ipa": "/stɜːrn/",
+          "tonica": "única (STERN · 1 syllable · with R)"
+        },
+        {
+          "word": "bridge",
+          "ipa": "/brɪdʒ/",
+          "tonica": "única (BRIDGE · 1 syllable · soft DJ ending)"
+        }
+      ],
+      "techniques": [
+        "Finger drilling individual — 5 dedos / 5 repeticiones con énfasis en tónica (cada aprendiz pasa frente al tablero)",
+        "Choral drill de cada par mínimo (BOW vs STERN · diferenciar pronunciación segmental)",
+        "Clapping silábico — 1 palmada por sílaba, fuerte en tónica (BOL-lard = 2 palmadas · CRANE = 1 palmada)",
+        "Board marking — MAYÚSCULA en sílaba tónica: 'BOL-lard / CRANE / BOW / STERN / BRIDGE'",
+        "Modelo-eco con cuerpo entero (instructor produce + clase repite + aprendiz se para frente al tablero)"
+      ],
+      "board_marking": "Las 5 tarjetas Sub-bloque 1 quedan permanentes en columna lateral izquierda del tablero con stress en MAYÚSCULA + IPA en pequeño debajo · Maritime Word Wall las replica en pared lateral con foto del Puerto de Buenaventura.",
+      "notes": "S2 NO introduce SMCP (Roger/Wilco/Standby) ni NATO Phonetic — esos llegan en S5. S2 sólo 5 términos Toolbelt Sub-bloque 1 (Ship & Port Anatomy). La distinción BOW vs BOWL (objeto) NO es S2 — viene en S5.",
+      "source": "PM-0 §5.13 — Noticing de stress con soporte físico"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "bollard",
+        "crane",
+        "bow",
+        "stern",
+        "bridge",
+        "port",
+        "ship",
+        "vessel",
+        "this",
+        "that"
+      ],
+      "factors_applied": [
+        "Sounds",
+        "Conceptualize",
+        "Encounter",
+        "Use"
+      ],
+      "operationalization": "Sounds: IPA + stress en Maritime Word Wall + finger drilling individual + clapping silábico. Conceptualize: clasificación visual port-infrastructure / ship-parts / port-equipment (categorización cognitiva semántica). Encounter: 4 encuentros en 6h (Welcome brief → WHILE A pre-enseñanza → WHILE B classification → WHILE C Word Wall building → WHILE E Port Glossary). Use: cada aprendiz produce 5 frases propias usando 5 términos en Port Glossary + 1 frame demostrativo en pair drill WHILE D + 1 presentación grupal WHILE C.",
+      "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS)"
+    },
+    "physical_environment": "Aula bilingüe en U o mesas de 4 (re-arregladas según bloque). English Zone reactivada con cinta azul de S1. Maritime Word Wall pared lateral activado físicamente — al cierre tiene 9 tarjetas (4 survival S1 + 5 Sub-bloque 1 con foto del Puerto de Buenaventura + IPA + stress). Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 en muros (de S1 · permanentes). Caja del instructor visible (de S1 · permanente · recibe sobres amarillos Learning Contract sellados al cierre). Música instrumental marítima muy baja durante WHILE E + WHILE F (continuidad sensorial con S1).",
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.2",
+      "habilidad_principal": "comprension_lectora",
+      "descriptor_activo": "Reconoce nombres y etiquetas en señalética portuaria (NO SMOKING · MUSTER STATION · HARD HAT AREA). Identifica números (vessel call sign · berth number · container ID). Lee epígrafes de 3-5 palabras en imágenes del puerto.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_1.comprension_lectora"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Lenta — lectura colectiva en voz alta primero (en plenaria), luego individual (Port Glossary). Pausas largas entre términos.",
+      "extension_textos": "Etiquetas + 12 imágenes con epígrafes de 3-5 palabras (classification handout) + frases del Master Anchor de 8-12 palabras (en Port Glossary)",
+      "andamiaje": "Alto — pre-task brainstorm + classification con apoyo de pares + Maritime Word Wall a la vista + frame demostrativo modelado + Plural Awareness frame + Demonstratives frame en tablero",
+      "rol_docente": "Modelo central + driller activo (stress marking + finger drilling individual + recast suave) + facilitador de Word Wall building grupal + retirado en WHILE F Contract drafting",
+      "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_1"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A2 — Descriptores §6 comprension_lectora A1.2 (etiquetas + epígrafes 12 imágenes + Maritime Word Wall)",
+        "A5 — Input adaptado (etiquetas + imágenes + Word Wall · 80% vocabulario conocido o pre-enseñado)",
+        "B1 — Pre-enseñanza vocabulario (5 términos Sub-bloque 1 ANTES de classification · ABT estricto)",
+        "B7 — Autoevaluación post-Word Wall building (self-check 5 términos en Port Glossary)",
+        "C1 — Bloque FPI Contextualización + Apropiación apertura (transición ceremonial Día 1 → Día 2)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S2 IMARPOR-CC."
+    }
+  }
+}
