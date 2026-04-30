@@ -1,12 +1,15 @@
 """
 subagente_pm_3_7_gfpi_f134_matrix.py — Subagente CREATIVO PM-3.7 GFPI-F-134 Matrix Aggregator + xlsx Renderer.
 
-Camino arquitectónico (2): Task tool con master prompt PM-3.7 v1.0 inyectado.
+v2.0 (2026-04-30) · CANON V04 oficial SENA · multi-RAP shape.
+v1.0 (2026-04-29) · Vf legacy · single-RAP single-row.
+
+Camino arquitectónico (2): Task tool con master prompt PM-3.7 v2.0 inyectado.
 Per PLAN-FASE-3-ARQUITECTURA.md v1.4 §5.2 + §7 Hito-Fase3-4 (PM-3.7 NEW Phase 4 derivado · 4to paralelo
 junto a PM-3.3 + PM-3.4 + PM-3.6).
 
-Productor de la Matriz Pedagógica GFPI-F-134 oficial SENA (PM-3.7 master prompt v1.0 · 14 cols xlsx Vf
-canon · vista agregada cross-PM). Dos artefactos:
+Productor de la Matriz Pedagógica GFPI-F-134 oficial SENA (PM-3.7 master prompt v2.0 · 14 cols xlsx V04
+canon · vista agregada cross-PM · multi-RAP rows[]). Dos artefactos:
 - pm-3-7.json (datos organizados 14 cols + metadata · 26+ keys)
 - pm-3-7-gfpi-f134-matrix.xlsx (plantilla canónica `master-prompts/canon/GFPI-F-134_Vf.xlsx` poblada
   hoja 2 · openpyxl template-based · preserve merged cells + styles)
@@ -16,7 +19,7 @@ mecánico post-LLM ejecutado por `lib/xlsx_renderer.py` (futuro · Hito-Fase3-4 
 of concerns canon: LLM = creative aggregation + transformación pedagógica · openpyxl = mechanical
 template population.
 
-Genera pm-3-7.json shape canon v1.0 (per PM-3.7 master prompt §OUTPUT ESPERADO):
+Genera pm-3-7.json shape canon v2.0 (per PM-3.7 master prompt EXTENSIÓN v2.0 REGLAS 8-15):
 - Metadata block (13 keys): pm_id · pm_name · pm_version · run_id · guide_id · generated_date ·
   instructor · phase · subfase_sena · genera_evidencia_formal_gfpi_f134 (False) · tipo_artefacto_sena
   ('vista_agregada_oficial') · xlsx_render_target · xlsx_template_source
@@ -63,7 +66,7 @@ from task_tool_bundler import preparar_bundle_phase4
 
 
 PM_ID = "PM-3.7"
-SUBAGENTE_VERSION = "1.0"  # Hito-Fase3-4 NEW · 2026-04-29
+SUBAGENTE_VERSION = "2.0"  # Canon V04 oficial SENA · 2026-04-30 · multi-RAP shape
 
 
 def preparar_bundle_pm_3_7(run_id, runs_dir, master_prompts_dir, repo_root, guide_id=None, strict_gate3=False):
@@ -96,8 +99,8 @@ def preparar_bundle_pm_3_7(run_id, runs_dir, master_prompts_dir, repo_root, guid
     # Anotaciones específicas de PM-3.7 al bundle
     bundle["pm_id"] = PM_ID
     bundle["subagente_version"] = SUBAGENTE_VERSION
-    bundle["camino_arquitectonico"] = "Camino 2 LLM puro · canon v1.0 · NEW PM nacido 2026-04-29 (master prompt commit d6ac07b)"
-    bundle["productor_de"] = "Matriz Pedagógica GFPI-F-134 oficial SENA (vista agregada · 14 cols xlsx Vf hoja 2)"
+    bundle["camino_arquitectonico"] = "Camino 2 LLM puro · canon v2.0 V04 oficial SENA · multi-RAP shape (master prompt v2.0 · 2026-04-30)"
+    bundle["productor_de"] = "Matriz Pedagógica GFPI-F-134 V04 oficial SENA (vista agregada · 14 cols · 1 hoja PLANEACIÓN POR RAPS · multi-RAP rows R15+)"
     bundle["dependencias_upstream"] = [
         "PM-0 Context (pm-0-context.json · Fase Proyecto + Actividad Proyecto + Saberes derivables · datos institucionales)",
         "PM-2.3..2.10 9 Activity Cards (estrategias didácticas embedded en content + activity_card)",
@@ -132,10 +135,11 @@ def preparar_bundle_pm_3_7(run_id, runs_dir, master_prompts_dir, repo_root, guid
     bundle["xlsx_render_pendiente"] = {
         "estado": "JSON output es entregable de este wrapper · xlsx render es step posterior mecánico",
         "tool": "lib/xlsx_renderer.py (openpyxl · template-based)",
-        "template_source": "master-prompts/canon/GFPI-F-134_Vf.xlsx (commit 77da6bc)",
+        "template_source": "master-prompts/canon/GFPI-F-134_V04.xlsx (canon V04 oficial · 2026-04-30)",
         "output_target": f"runs/{run_id}/{(guide_id+'/') if guide_id else ''}pm-3-7-gfpi-f134-matrix.xlsx",
-        "preserve": "merged cells + styles + headers row 23-24",
-        "populate": "metadata rows 4-21 + data rows 25+",
+        "preserve": "merged cells (48) + styles + headers row 13-14 + SUM formulas R22",
+        "populate": "metadata rows 6-11 (E6-E11) + data rows R15/R18/R20/R21 (one per RAP)",
+        "renderer_function": "lib/xlsx_renderer.py::render_gfpi_f134_v04_matrix(pm37_data, template_path, output_path)",
     }
     bundle["smoke_shape_deuda"] = {
         "estado": "Smoke shape behavioral incompleto · ningún fixture tiene Phase 4 inputs completos",
@@ -162,6 +166,25 @@ def preparar_bundle_pm_3_7(run_id, runs_dir, master_prompts_dir, repo_root, guid
 
     return bundle
 
+
+
+
+def _detect_rap_count(pm12_data):
+    """Detect RAP count from pm-1-2.rap_origen field per REGLA 10.
+
+    Patterns:
+    - 'RAP-CC-INTEGRADO (absorbe RAP-01 a RAP-04 SOFIA)' -> 4
+    - 'RAP-XX absorbe RAP-A a RAP-D' -> 4
+    - 'RAP-01' (single) -> 1
+    """
+    import re
+    rap_origen = pm12_data.get('rap_origen', '') or ''
+    m = re.search(r'RAP-?0?(\d+)\s+a\s+RAP-?0?(\d+)', rap_origen)
+    if m:
+        start = int(m.group(1))
+        end = int(m.group(2))
+        return end - start + 1
+    return 1
 
 if __name__ == "__main__":
     args = parse_subagente_args(__file__)

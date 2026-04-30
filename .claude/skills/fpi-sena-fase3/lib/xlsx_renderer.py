@@ -339,6 +339,333 @@ def _validate_post_render(output_path, pm37_data):
     return checks
 
 
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# V04 CANON · Cell coordinates (template GFPI-F-134_V04.xlsx · 1 hoja PLANEACIÓN POR RAPS)
+# ═══════════════════════════════════════════════════════════════════════════
+# Canon V04 oficial SENA · 2026-04-30 · multi-RAP shape (master prompt PM-3.7 v2.0 REGLA 12)
+
+CANON_V04_TEMPLATE_PATH = "master-prompts/canon/GFPI-F-134_V04.xlsx"
+
+# Metadata cells V04 (from V04 IMARPOR ground truth · Sergio fill-in 2026-04-30)
+V04_METADATA_CELLS = {
+    "fecha_elaboracion": "E6",
+    "denominacion": "E7",        # Denominación del Programa
+    "modalidad": "E8",            # Modalidad de Formación
+    "codigo_version": "E9",       # Código + versión Programa
+    "instructor_1": "E10",        # Primer integrante diseño
+    "instructor_2": "E11",        # Segundo integrante diseño
+}
+
+# RAP → row mapping V04 (Sergio fill convention · 1 RAP por row no consecutivos)
+V04_RAP_ROW = {
+    "RA1": 15,
+    "RA2": 18,
+    "RA3": 20,
+    "RA4": 21,
+}
+
+# 14 cols xlsx V04 → indices (R13-R14 headers · R15+ data)
+V04_DATA_COLUMN_INDICES = {
+    "col_1_competencia": 1,                          # C1: COMPETENCIA
+    "col_2_resultado_aprendizaje": 2,                # C2: RAP
+    "col_3_saberes_conceptos_y_principios": 4,       # C4: SABERES CONCEPTOS Y PRINCIPIOS
+    "col_4_saberes_procesos": 5,                     # C5: SABERES DE PROCESO
+    "col_5_criterios_evaluacion": 6,                 # C6: CRITERIOS EVALUACIÓN
+    "col_6_actividades_aprendizaje_a_desarrollar": 7,# C7: ACTIVIDADES APRENDIZAJE
+    "col_7_horas_trabajo_directo": 8,                # C8: HORAS TRABAJO DIRECTO
+    "col_8_horas_trabajo_independiente": 9,          # C9: HORAS TRABAJO INDEPENDIENTE
+    "col_9_descripcion_evidencia_aprendizaje": 10,   # C10: DESCRIPCIÓN EVIDENCIA
+    "col_10_estrategias_didacticas_activas": 11,     # C11: ESTRATEGIAS DIDÁCTICAS
+    "col_11_ambiente": 12,                           # C12: AMBIENTE
+    "col_12_materiales_formacion": 13,               # C13: MATERIALES FORMACIÓN
+    "col_13_instructores_responsables": 14,          # C14: INSTRUCTORES RESPONSABLES
+    "col_14_observaciones": 15,                      # C15: OBSERVACIONES
+}
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# V04 RENDERER · Public API
+# ═══════════════════════════════════════════════════════════════════════════
+
+def render_gfpi_f134_v04_matrix(pm37_data, output_path,
+                                  template_path=CANON_V04_TEMPLATE_PATH, repo_root=None):
+    """Render GFPI-F-134 V04 xlsx (1 hoja PLANEACIÓN POR RAPS · multi-RAP) from pm-3-7.json v2.0.
+
+    Canon V04 oficial SENA (master prompt PM-3.7 v2.0 REGLAS 8-15) · 2026-04-30.
+    Differs from render_gfpi_f134_matrix (Vf legacy · single-row) en:
+    - Template: GFPI-F-134_V04.xlsx (1 hoja vs Vf 5 hojas)
+    - Shape: multi-RAP rows[] (vs Vf single-row)
+    - Cells: R15/R18/R20/R21 (vs Vf R25)
+    - Metadata: E6-E11 (vs Vf E4-E9)
+    - SUM formulas R22 preservadas
+
+    Args:
+        pm37_data: dict · pm-3-7.json v2.0 content (rows[] + programa_metadata + totals)
+        output_path: str · path donde se guarda el xlsx output (NO sobrescribir template)
+        template_path: str · default master-prompts/canon/GFPI-F-134_V04.xlsx
+        repo_root: str opcional · si template_path es relativo, prepend este
+
+    Returns:
+        dict {
+            output_path, template_used, schema_version_consumed, format_canon_consumed,
+            metadata_cells_written, rap_rows_written, data_cells_written,
+            sum_formulas_preserved, merged_ranges_preserved,
+            validation_post_render
+        }
+
+    Raises:
+        FileNotFoundError si template no existe
+        ValueError si pm37_data shape != v2.0 (rows[] missing) o output == template
+    """
+    import shutil
+
+    # Validate shape v2.0
+    schema_version = pm37_data.get("schema_version", "")
+    format_canon = pm37_data.get("format_canon", "")
+    rows = pm37_data.get("rows", [])
+
+    if schema_version != "v2.0":
+        raise ValueError(
+            f"render_gfpi_f134_v04_matrix requires pm-3-7.json schema_version='v2.0'. "
+            f"Got: '{schema_version}'. Use render_gfpi_f134_matrix for v1.0/Vf legacy."
+        )
+    if format_canon != "V04":
+        raise ValueError(
+            f"render_gfpi_f134_v04_matrix requires format_canon='V04'. "
+            f"Got: '{format_canon}'."
+        )
+    if not isinstance(rows, list) or not rows:
+        raise ValueError("pm-3-7.json rows[] missing or empty (REGLA 9 · multi-RAP shape required)")
+
+    # Resolve paths
+    template = Path(template_path)
+    if repo_root and not template.is_absolute():
+        template = Path(repo_root) / template
+    if not template.exists():
+        raise FileNotFoundError(f"V04 template canon no encontrado: {template}")
+
+    output = Path(output_path)
+    if repo_root and not output.is_absolute():
+        output = Path(repo_root) / output
+
+    # Anti-overwrite (REGLA 7 master prompt)
+    if output.resolve() == template.resolve():
+        raise ValueError(
+            f"REGLA 7 violation: output path == template path · NUNCA sobrescribir canon V04. "
+            f"output={output} · template={template}"
+        )
+
+    # Copy empty template (preserves merged cells + styles + SUM formulas)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy(str(template), str(output))
+
+    # Open output and populate
+    wb = openpyxl.load_workbook(str(output), data_only=False)
+    ws = wb.active  # PLANEACIÓN POR RAPS (single sheet)
+
+    # 1. Populate metadata cells (E6-E11)
+    metadata_written = _populate_v04_metadata(ws, pm37_data)
+
+    # 2. Populate data rows (one per RAP per V04_RAP_ROW mapping)
+    rap_rows_written, data_cells_written = _populate_v04_data_rows(ws, rows)
+
+    # 3. Verify SUM formulas R22 preserved (sanity check · we don't write to R22)
+    sum_h22 = ws.cell(22, 8).value
+    sum_i22 = ws.cell(22, 9).value
+    sum_preserved = (
+        isinstance(sum_h22, str) and sum_h22.startswith('=SUM') and
+        isinstance(sum_i22, str) and sum_i22.startswith('=SUM')
+    )
+
+    # 4. Verify merged ranges preserved (V04 has 48 canonical)
+    merged_count = len(ws.merged_cells.ranges)
+
+    # 5. Save
+    wb.save(str(output))
+
+    # 6. Post-render validation
+    validation = _validate_v04_post_render(str(output), pm37_data)
+
+    return {
+        "output_path": str(output),
+        "template_used": str(template),
+        "schema_version_consumed": schema_version,
+        "format_canon_consumed": format_canon,
+        "rap_rows_written": rap_rows_written,
+        "data_cells_written": data_cells_written,
+        "metadata_cells_written": metadata_written,
+        "sum_formulas_preserved": sum_preserved,
+        "merged_ranges_preserved": merged_count,
+        "validation_post_render": validation,
+    }
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# V04 Helpers privados
+# ═══════════════════════════════════════════════════════════════════════════
+
+def _populate_v04_metadata(ws, pm37_data):
+    """Populate E6-E11 metadata cells V04. Returns count cells written."""
+    md = pm37_data.get("programa_metadata", {})
+    integrantes = md.get("integrantes_diseno", []) or []
+
+    values = {
+        "fecha_elaboracion": md.get("fecha_elaboracion", pm37_data.get("generated_date", "")),
+        "denominacion": md.get("denominacion", ""),
+        "modalidad": md.get("modalidad", ""),
+        "codigo_version": md.get("codigo_version", ""),
+        "instructor_1": integrantes[0] if len(integrantes) > 0 else "",
+        "instructor_2": integrantes[1] if len(integrantes) > 1 else "",
+    }
+
+    written = 0
+    for key, cell_coord in V04_METADATA_CELLS.items():
+        v = values.get(key, "")
+        if v:
+            ws[cell_coord] = str(v)
+            written += 1
+    return written
+
+
+def _populate_v04_data_rows(ws, rows):
+    """Populate data rows R15/R18/R20/R21 from rows[] · one per RAP.
+
+    REGLA 10 single-guía absorpción: RA1 row contains full data · RA2..RAN
+    rows only have rap_titulo populated (cols 3-14 shared with RA1 · NOT re-written).
+
+    Returns:
+        (rap_rows_written, total_data_cells_written)
+    """
+    rap_rows_written = 0
+    total_cells = 0
+
+    for row_data in rows:
+        rap_id = row_data.get("rap_id", "")
+        target_row = V04_RAP_ROW.get(rap_id)
+        if not target_row:
+            continue  # Unknown RAP · skip
+
+        rap_rows_written += 1
+        is_ra1 = (rap_id == "RA1")
+
+        for col_field, col_idx in V04_DATA_COLUMN_INDICES.items():
+            val = row_data.get(col_field)
+            if val is None or val == "":
+                continue
+
+            # Skip horas if 0 (let SUM formulas resolve)
+            if col_field in ("col_7_horas_trabajo_directo", "col_8_horas_trabajo_independiente") and val == 0:
+                continue
+
+            # REGLA 10: For RA2/RA3/RA4 only populate col 2 (rap_titulo)
+            # Other cols stay empty (V04 convention · single-guía absorpción)
+            if not is_ra1 and col_idx != 2:
+                continue
+
+            # Format value · preserve numeric type for horas cells (Excel SUM formulas need numeric)
+            if col_field in ("col_7_horas_trabajo_directo", "col_8_horas_trabajo_independiente"):
+                try:
+                    formatted = int(val)
+                except (ValueError, TypeError):
+                    formatted = val
+            elif isinstance(val, list):
+                formatted = "\n".join(str(v) for v in val if v)
+            elif isinstance(val, dict):
+                formatted = "\n".join(f"{k}: {v}" for k, v in val.items() if v)
+            else:
+                formatted = str(val)
+
+            ws.cell(target_row, col_idx).value = formatted
+            total_cells += 1
+
+    return rap_rows_written, total_cells
+
+
+def _validate_v04_post_render(output_path, pm37_data):
+    """Re-read V04 output xlsx · verify critical assertions.
+
+    Returns dict with check results · status PASS/FAIL/WARN per check.
+    """
+    wb = openpyxl.load_workbook(output_path, data_only=False)
+    ws = wb.active
+
+    checks = {}
+
+    # Check 1: metadata E6-E11 populated (where data available)
+    md = pm37_data.get("programa_metadata", {})
+    metadata_expected = sum([
+        bool(md.get("fecha_elaboracion") or pm37_data.get("generated_date")),
+        bool(md.get("denominacion")),
+        bool(md.get("modalidad")),
+        bool(md.get("codigo_version")),
+        len(md.get("integrantes_diseno", [])) >= 1,
+        len(md.get("integrantes_diseno", [])) >= 2,
+    ])
+    metadata_actual = sum([
+        bool(ws[V04_METADATA_CELLS[k]].value) for k in V04_METADATA_CELLS.keys()
+    ])
+    checks["metadata_cells_populated"] = f"{metadata_actual}/6 (expected ≥{metadata_expected})"
+    checks["metadata_pass"] = metadata_actual >= metadata_expected
+
+    # Check 2: RAP rows populated (RA1 col_1 + col_2 minimum)
+    ra1_row = V04_RAP_ROW["RA1"]
+    ra1_competencia = ws.cell(ra1_row, 1).value
+    ra1_rap = ws.cell(ra1_row, 2).value
+    checks["ra1_competencia_present"] = bool(ra1_competencia)
+    checks["ra1_rap_titulo_present"] = bool(ra1_rap)
+
+    # Check 3: Multi-RAP titles (if rows > 1)
+    rows = pm37_data.get("rows", [])
+    rap_titles_found = 0
+    for r in rows:
+        rid = r.get("rap_id", "")
+        target = V04_RAP_ROW.get(rid)
+        if target and ws.cell(target, 2).value:
+            rap_titles_found += 1
+    checks["rap_titles_populated"] = f"{rap_titles_found}/{len(rows)}"
+    checks["rap_titles_pass"] = rap_titles_found == len(rows)
+
+    # Check 4: Horas RA1 populated
+    horas_directo = ws.cell(ra1_row, 8).value
+    horas_indep = ws.cell(ra1_row, 9).value
+    checks["horas_ra1_directo"] = horas_directo
+    checks["horas_ra1_indep"] = horas_indep
+    totals = pm37_data.get("totals", {})
+    expected_directo = totals.get("horas_directas_total")
+    expected_indep = totals.get("horas_independientes_total")
+    checks["horas_match_totals"] = (
+        horas_directo == expected_directo and horas_indep == expected_indep
+    )
+
+    # Check 5: SUM formulas R22 preserved
+    sum_h22 = ws.cell(22, 8).value
+    sum_i22 = ws.cell(22, 9).value
+    checks["sum_formula_h22_preserved"] = isinstance(sum_h22, str) and sum_h22.startswith('=SUM')
+    checks["sum_formula_i22_preserved"] = isinstance(sum_i22, str) and sum_i22.startswith('=SUM')
+
+    # Check 6: Merged ranges (V04 canon = 48)
+    checks["merged_ranges_count"] = len(ws.merged_cells.ranges)
+    checks["merged_ranges_pass"] = checks["merged_ranges_count"] == 48
+
+    # Veredicto
+    pass_checks = [
+        checks["metadata_pass"],
+        checks["ra1_competencia_present"],
+        checks["ra1_rap_titulo_present"],
+        checks["rap_titles_pass"],
+        checks["horas_match_totals"],
+        checks["sum_formula_h22_preserved"],
+        checks["sum_formula_i22_preserved"],
+        checks["merged_ranges_pass"],
+    ]
+    checks["veredicto"] = "PASS" if all(pass_checks) else "FAIL"
+    checks["pass_count"] = sum(pass_checks)
+    checks["total_checks"] = len(pass_checks)
+
+    return checks
+
 # ═══════════════════════════════════════════════════════════════════════════
 # CLI · self-test
 # ═══════════════════════════════════════════════════════════════════════════
