@@ -399,7 +399,7 @@
           "schema_version": "v2.7",
           "titulo_en": "Tour of the Terminal — Meet your team",
           "titulo_es": "Tour del Terminal — Conoce tu equipo",
-          "tipo_actividad_sena": "Actividad cognitiva + actitudinal",
+          "tipo_actividad_sena": "Actividad cognitiva + Actividad actitudinal",
           "actividad_tipo_label": "Actividad cognitiva + actitudinal",
           "tiempo_min": 60,
           "agrupacion": "plenaria + parejas",
@@ -444,26 +444,68 @@
             "titulo_en": "Character · Role match",
             "titulo_es": "Personaje · Rol",
             "estructura": {
-              "items": [
+              "columnas": [
                 {
-                  "en": "Capitán Restrepo · Port Captain",
-                  "es": "Capitán Restrepo · Capitán de Puerto"
+                  "header_en": "Person",
+                  "header_es": "Persona",
+                  "width_pct": 50
                 },
                 {
-                  "en": "Captain Lopera · Vessel Master",
-                  "es": "Captain Lopera · Capitán del buque"
+                  "header_en": "Role",
+                  "header_es": "Rol",
+                  "width_pct": 50
+                }
+              ],
+              "filas_prellenadas": [
+                {
+                  "en": {
+                    "col_a": "Capitán Restrepo",
+                    "col_b": "Port Captain"
+                  },
+                  "es": {
+                    "col_a": "Capitán Restrepo",
+                    "col_b": "Capitán de Puerto"
+                  }
                 },
                 {
-                  "en": "Officer Vásquez · Deck Officer",
-                  "es": "Officer Vásquez · Oficial de cubierta"
+                  "en": {
+                    "col_a": "Captain Lopera",
+                    "col_b": "Vessel Master"
+                  },
+                  "es": {
+                    "col_a": "Captain Lopera",
+                    "col_b": "Capitán del buque"
+                  }
                 },
                 {
-                  "en": "Diego Mejía · Crane Operator",
-                  "es": "Diego Mejía · Operador de grúa"
+                  "en": {
+                    "col_a": "Officer Vásquez",
+                    "col_b": "Deck Officer"
+                  },
+                  "es": {
+                    "col_a": "Officer Vásquez",
+                    "col_b": "Oficial de cubierta"
+                  }
                 },
                 {
-                  "en": "Bosun Romero · Yard Supervisor",
-                  "es": "Bosun Romero · Supervisor del patio"
+                  "en": {
+                    "col_a": "Diego Mejía",
+                    "col_b": "Crane Operator"
+                  },
+                  "es": {
+                    "col_a": "Diego Mejía",
+                    "col_b": "Operador de grúa"
+                  }
+                },
+                {
+                  "en": {
+                    "col_a": "Bosun Romero",
+                    "col_b": "Yard Supervisor"
+                  },
+                  "es": {
+                    "col_a": "Bosun Romero",
+                    "col_b": "Supervisor del patio"
+                  }
                 }
               ]
             }
@@ -551,26 +593,26 @@
                   "header_es": "Tengo dudas"
                 }
               ],
-              "items": [
+              "terminos": [
                 {
-                  "texto_en": "I will speak English in the Port Operations Trainee Zone.",
-                  "texto_es": "Hablaré inglés en la zona Port Operations Trainee."
+                  "en": "I will speak English in the Port Operations Trainee Zone.",
+                  "es": "Hablaré inglés en la zona Port Operations Trainee."
                 },
                 {
-                  "texto_en": "I will use SMCP standard responses (Roger · Wilco · Standby) in VHF activities.",
-                  "texto_es": "Usaré respuestas SMCP estándar en actividades VHF."
+                  "en": "I will use SMCP standard responses (Roger · Wilco · Standby) in VHF activities.",
+                  "es": "Usaré respuestas SMCP estándar en actividades VHF."
                 },
                 {
-                  "texto_en": "I will spell call signs using NATO Phonetic Alphabet only.",
-                  "texto_es": "Deletrearé call signs solo con alfabeto OTAN."
+                  "en": "I will spell call signs using NATO Phonetic Alphabet only.",
+                  "es": "Deletrearé call signs solo con alfabeto OTAN."
                 },
                 {
-                  "texto_en": "I will respect Diego and Bosun Romero who speak Spanish — I will translate for them in coordination tasks.",
-                  "texto_es": "Respetaré a Diego y Bosun Romero (L1 español) — traduciré en coordinación."
+                  "en": "I will respect Diego and Bosun Romero who speak Spanish — I will translate for them in coordination tasks.",
+                  "es": "Respetaré a Diego y Bosun Romero (L1 español) — traduciré en coordinación."
                 },
                 {
-                  "texto_en": "I will not be afraid to ask 'Say again, please' when Captain Lopera's accent is hard.",
-                  "texto_es": "No tendré miedo de pedir 'Say again' con Captain Lopera."
+                  "en": "I will not be afraid to ask 'Say again, please' when Captain Lopera's accent is hard.",
+                  "es": "No tendré miedo de pedir 'Say again' con Captain Lopera."
                 }
               ]
             }
@@ -608,7 +650,7 @@
           "schema_version": "v2.7",
           "titulo_en": "Toolbelt Sub-block 1 — Build the Port Word Wall",
           "titulo_es": "Toolbelt Sub-bloque 1 — Construye el muro de palabras del puerto",
-          "tipo_actividad_sena": "Actividad cognitiva + procedimental",
+          "tipo_actividad_sena": "Actividad cognitiva + Actividad procedimental",
           "actividad_tipo_label": "Actividad cognitiva + procedimental",
           "tiempo_min": 90,
           "agrupacion": "grupos de 4",
@@ -775,19 +817,22 @@
             "estructura": {
               "turnos": [
                 {
-                  "hablante": "You",
-                  "linea_en": "This is a bollard at berth ___.",
-                  "linea_es": "Esto es una bita en el muelle ___."
+                  "rol": "You",
+                  "prompt_en": "This is a bollard at berth ___.",
+                  "prompt_es": "Esto es una bita en el muelle ___.",
+                  "lines": 2
                 },
                 {
-                  "hablante": "You",
-                  "linea_en": "That is the bow of a vessel.",
-                  "linea_es": "Esa es la proa de un buque."
+                  "rol": "You",
+                  "prompt_en": "That is the bow of a vessel.",
+                  "prompt_es": "Esa es la proa de un buque.",
+                  "lines": 2
                 },
                 {
-                  "hablante": "You",
-                  "linea_en": "These are cranes near the dock.",
-                  "linea_es": "Estas son grúas cerca del muelle."
+                  "rol": "You",
+                  "prompt_en": "These are cranes near the dock.",
+                  "prompt_es": "Estas son grúas cerca del muelle.",
+                  "lines": 2
                 }
               ]
             }
@@ -927,7 +972,7 @@
           "schema_version": "v2.7",
           "titulo_en": "Reading Master Anchor — Operational Report BUENAVENTURA EXPRESS · Berth 4",
           "titulo_es": "Lectura ancla — Reporte operacional BUENAVENTURA EXPRESS · Berth 4",
-          "tipo_actividad_sena": "Actividad cognitiva + procedimental",
+          "tipo_actividad_sena": "Actividad cognitiva + Actividad procedimental",
           "actividad_tipo_label": "Actividad cognitiva + procedimental",
           "tiempo_min": 120,
           "agrupacion": "grupos de 4 (jigsaw cooperativo)",
@@ -1057,7 +1102,7 @@
           "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E1 · Reading Comprehension Quiz — Cuestionario No 1",
           "titulo_es": "EVIDENCIA E1 · Cuestionario de lectura — Cuestionario No 1",
-          "tipo_actividad_sena": "Actividad cognitiva (evidencia formal)",
+          "tipo_actividad_sena": "Actividad cognitiva",
           "actividad_tipo_label": "Actividad cognitiva (evidencia formal)",
           "tiempo_min": 45,
           "agrupacion": "individual",
@@ -1100,33 +1145,98 @@
               "items": [
                 {
                   "n": 1,
-                  "pregunta_en": "What is the name of the vessel? (literal)",
-                  "pregunta_es": "¿Cómo se llama el buque?",
-                  "tipo": "respuesta corta"
+                  "q_en": "What is the name of the vessel? (literal)",
+                  "q_es": "¿Cómo se llama el buque?",
+                  "opts": [
+                    {
+                      "k": "A",
+                      "en": "Short answer (1-3 words)",
+                      "es": "Respuesta corta (1-3 palabras)"
+                    },
+                    {
+                      "k": "B",
+                      "en": "Full sentence",
+                      "es": "Oración completa"
+                    }
+                  ]
                 },
                 {
                   "n": 2,
-                  "pregunta_en": "Where is it berthed? (literal)",
-                  "pregunta_es": "¿Dónde está atracado?",
-                  "tipo": "respuesta corta"
+                  "q_en": "Where is it berthed? (literal)",
+                  "q_es": "¿Dónde está atracado?",
+                  "opts": [
+                    {
+                      "k": "A",
+                      "en": "Short answer (1-3 words)",
+                      "es": "Respuesta corta (1-3 palabras)"
+                    },
+                    {
+                      "k": "B",
+                      "en": "Full sentence",
+                      "es": "Oración completa"
+                    }
+                  ]
                 },
                 {
                   "n": 3,
-                  "pregunta_en": "Which Sub-block 1 term is NOT in the text: bollard · crane · bow · funnel? (literal)",
-                  "pregunta_es": "¿Cuál término NO está?",
-                  "tipo": "opción múltiple"
+                  "q_en": "Which Sub-block 1 term is NOT in the text: bollard · crane · bow · funnel? (literal)",
+                  "q_es": "¿Cuál término NO está?",
+                  "opts": [
+                    {
+                      "k": "A",
+                      "en": "bollard",
+                      "es": "bita"
+                    },
+                    {
+                      "k": "B",
+                      "en": "crane",
+                      "es": "grúa"
+                    },
+                    {
+                      "k": "C",
+                      "en": "bow",
+                      "es": "proa"
+                    },
+                    {
+                      "k": "D",
+                      "en": "funnel",
+                      "es": "chimenea"
+                    }
+                  ]
                 },
                 {
                   "n": 4,
-                  "pregunta_en": "True or False: 'The bridge is at the front of the vessel.' (literal)",
-                  "pregunta_es": "Verdadero/Falso",
-                  "tipo": "T/F"
+                  "q_en": "True or False: 'The bridge is at the front of the vessel.' (literal)",
+                  "q_es": "Verdadero/Falso",
+                  "opts": [
+                    {
+                      "k": "A",
+                      "en": "True",
+                      "es": "Verdadero"
+                    },
+                    {
+                      "k": "B",
+                      "en": "False",
+                      "es": "Falso"
+                    }
+                  ]
                 },
                 {
                   "n": 5,
-                  "pregunta_en": "Why is Captain Lopera mentioned in paragraph 3? (inferential)",
-                  "pregunta_es": "¿Por qué se menciona a Captain Lopera?",
-                  "tipo": "respuesta corta inferencial"
+                  "q_en": "Why is Captain Lopera mentioned in paragraph 3? (inferential)",
+                  "q_es": "¿Por qué se menciona a Captain Lopera?",
+                  "opts": [
+                    {
+                      "k": "A",
+                      "en": "Short answer (1-3 words)",
+                      "es": "Respuesta corta (1-3 palabras)"
+                    },
+                    {
+                      "k": "B",
+                      "en": "Full sentence",
+                      "es": "Oración completa"
+                    }
+                  ]
                 }
               ]
             },
@@ -1172,7 +1282,7 @@
           "schema_version": "v2.7",
           "titulo_en": "Grammar Awareness — Be + Imperative + IN preposition",
           "titulo_es": "Inducción gramatical — Be + Imperativo + IN",
-          "tipo_actividad_sena": "Actividad cognitiva + procedimental",
+          "tipo_actividad_sena": "Actividad cognitiva + Actividad procedimental",
           "actividad_tipo_label": "Actividad cognitiva + procedimental",
           "tiempo_min": 90,
           "agrupacion": "plenaria + parejas",
@@ -1270,7 +1380,7 @@
           "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E2 · Inspection Report Writing — Lista de Verificación No 2",
           "titulo_es": "EVIDENCIA E2 · Inspection Report — Lista de Verificación No 2",
-          "tipo_actividad_sena": "Actividad procedimental (evidencia formal)",
+          "tipo_actividad_sena": "Actividad procedimental",
           "actividad_tipo_label": "Actividad procedimental (evidencia formal)",
           "tiempo_min": 180,
           "agrupacion": "individual + peer review en parejas",
@@ -1314,18 +1424,52 @@
             "titulo_en": "Inspection Report frame · 6-8 sentences",
             "titulo_es": "Frame · 6-8 oraciones",
             "estructura": {
-              "plantilla_en": "INSPECTION REPORT — [Vessel name]\n\n1. The vessel ___ is at berth ___.\n2. The bow is ___.\n3. The stern is ___.\n4. The bridge is on the ___.\n5. Check the ___ at ___.\n6. Open the ___ next to ___.\n7. Verify ___ is ___.\n8. ___ is/are not ___.",
-              "plantilla_es": "(Frame con slots: nombre del buque · berth · 5 ship parts · be · imperative · IN)",
-              "slots": [
-                "vessel name",
-                "berth #",
-                "bow location",
-                "stern location",
-                "bridge deck level",
-                "imperative + bollard/crane location",
-                "imperative + gate/IN office",
-                "verb + status",
-                "negative status"
+              "lineas_gap": [
+                {
+                  "prompt_en": "vessel name",
+                  "prompt_es": "Nombre del buque",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "berth #",
+                  "prompt_es": "Número de berth",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "bow location",
+                  "prompt_es": "Ubicación de la proa",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "stern location",
+                  "prompt_es": "Ubicación de la popa",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "bridge deck level",
+                  "prompt_es": "Nivel del puente",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "imperative + bollard/crane location",
+                  "prompt_es": "Imperativo + ubicación de bita/grúa",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "imperative + gate/IN office",
+                  "prompt_es": "Imperativo + puerta/oficina IN",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "verb + status",
+                  "prompt_es": "Verbo + estado",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "negative status",
+                  "prompt_es": "Estado negativo",
+                  "lines": 1
+                }
               ]
             },
             "badge": "instrument_2_writing"
@@ -1370,7 +1514,7 @@
           "schema_version": "v2.7",
           "titulo_en": "SMCP Reference Card Activation — Roger · Wilco · Standby · Over · Out",
           "titulo_es": "Activación SMCP Reference Card",
-          "tipo_actividad_sena": "Actividad cognitiva + procedimental",
+          "tipo_actividad_sena": "Actividad cognitiva + Actividad procedimental",
           "actividad_tipo_label": "Actividad cognitiva + procedimental",
           "tiempo_min": 90,
           "agrupacion": "plenaria + parejas",
@@ -1419,46 +1563,118 @@
             "titulo_en": "10 SMCP phrases · meaning",
             "titulo_es": "10 frases SMCP · significado",
             "estructura": {
-              "items": [
+              "columnas": [
                 {
-                  "en": "Roger",
-                  "es": "Recibido"
+                  "header_en": "SMCP phrase",
+                  "header_es": "Frase SMCP",
+                  "width_pct": 50
                 },
                 {
-                  "en": "Wilco",
-                  "es": "Comprendido y cumpliré"
+                  "header_en": "Meaning",
+                  "header_es": "Significado",
+                  "width_pct": 50
+                }
+              ],
+              "filas_prellenadas": [
+                {
+                  "en": {
+                    "col_a": "Roger",
+                    "col_b": ""
+                  },
+                  "es": {
+                    "col_a": "Roger",
+                    "col_b": "Recibido"
+                  }
                 },
                 {
-                  "en": "Affirmative",
-                  "es": "Sí / afirmativo"
+                  "en": {
+                    "col_a": "Wilco",
+                    "col_b": ""
+                  },
+                  "es": {
+                    "col_a": "Wilco",
+                    "col_b": "Comprendido y cumpliré"
+                  }
                 },
                 {
-                  "en": "Negative",
-                  "es": "No / negativo"
+                  "en": {
+                    "col_a": "Affirmative",
+                    "col_b": ""
+                  },
+                  "es": {
+                    "col_a": "Affirmative",
+                    "col_b": "Sí / afirmativo"
+                  }
                 },
                 {
-                  "en": "Standby",
-                  "es": "Espere / pausa"
+                  "en": {
+                    "col_a": "Negative",
+                    "col_b": ""
+                  },
+                  "es": {
+                    "col_a": "Negative",
+                    "col_b": "No / negativo"
+                  }
                 },
                 {
-                  "en": "Out",
-                  "es": "Fin de la transmisión"
+                  "en": {
+                    "col_a": "Standby",
+                    "col_b": ""
+                  },
+                  "es": {
+                    "col_a": "Standby",
+                    "col_b": "Espere / pausa"
+                  }
                 },
                 {
-                  "en": "Over",
-                  "es": "Cambio (le toca a usted)"
+                  "en": {
+                    "col_a": "Out",
+                    "col_b": ""
+                  },
+                  "es": {
+                    "col_a": "Out",
+                    "col_b": "Fin de la transmisión"
+                  }
                 },
                 {
-                  "en": "Say again",
-                  "es": "Repita"
+                  "en": {
+                    "col_a": "Over",
+                    "col_b": ""
+                  },
+                  "es": {
+                    "col_a": "Over",
+                    "col_b": "Cambio (le toca a usted)"
+                  }
                 },
                 {
-                  "en": "Spell that",
-                  "es": "Deletree eso"
+                  "en": {
+                    "col_a": "Say again",
+                    "col_b": ""
+                  },
+                  "es": {
+                    "col_a": "Say again",
+                    "col_b": "Repita"
+                  }
                 },
                 {
-                  "en": "Repeat",
-                  "es": "Repita"
+                  "en": {
+                    "col_a": "Spell that",
+                    "col_b": ""
+                  },
+                  "es": {
+                    "col_a": "Spell that",
+                    "col_b": "Deletree eso"
+                  }
+                },
+                {
+                  "en": {
+                    "col_a": "Repeat",
+                    "col_b": ""
+                  },
+                  "es": {
+                    "col_a": "Repeat",
+                    "col_b": "Repita"
+                  }
                 }
               ]
             }
@@ -1497,7 +1713,7 @@
           "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E3 · Listening — VHF Dialogue Captain Lopera ↔ Andrea (Lista de Chequeo No 3)",
           "titulo_es": "EVIDENCIA E3 · Diálogo VHF — Lista de Chequeo No 3",
-          "tipo_actividad_sena": "Actividad cognitiva (evidencia formal)",
+          "tipo_actividad_sena": "Actividad cognitiva",
           "actividad_tipo_label": "Actividad cognitiva (evidencia formal)",
           "tiempo_min": 90,
           "agrupacion": "individual",
@@ -1543,32 +1759,37 @@
             "estructura": {
               "secciones": [
                 {
-                  "label_en": "Item 1: Identifies vessel call sign (NATO Phonetic) — Y/N",
-                  "label_es": "Ítem 1: Call sign",
+                  "header_en": "Item 1: Identifies vessel call sign (NATO Phonetic) — Y/N",
+                  "header_es": "Ítem 1: Call sign",
+                  "tipo": "gap",
                   "guia": "Listen for Papa-Whiskey-Two-Three",
                   "lineas": 1
                 },
                 {
-                  "label_en": "Item 2: Identifies main SMCP message (Vessel inbound) — Y/N",
-                  "label_es": "Ítem 2: SMCP message",
+                  "header_en": "Item 2: Identifies main SMCP message (Vessel inbound) — Y/N",
+                  "header_es": "Ítem 2: SMCP message",
+                  "tipo": "gap",
                   "guia": "Listen for vessel status",
                   "lineas": 1
                 },
                 {
-                  "label_en": "Item 3: Identifies channel (VHF Channel 16) — Y/N",
-                  "label_es": "Ítem 3: Canal",
+                  "header_en": "Item 3: Identifies channel (VHF Channel 16) — Y/N",
+                  "header_es": "Ítem 3: Canal",
+                  "tipo": "gap",
                   "guia": "Listen for channel number",
                   "lineas": 1
                 },
                 {
-                  "label_en": "Item 4: Catches Captain Lopera's request — Y/N",
-                  "label_es": "Ítem 4: Solicitud",
+                  "header_en": "Item 4: Catches Captain Lopera's request — Y/N",
+                  "header_es": "Ítem 4: Solicitud",
+                  "tipo": "gap",
                   "guia": "Listen for berthing request",
                   "lineas": 1
                 },
                 {
-                  "label_en": "Item 5: Identifies Andrea's response — Y/N",
-                  "label_es": "Ítem 5: Respuesta Andrea",
+                  "header_en": "Item 5: Identifies Andrea's response — Y/N",
+                  "header_es": "Ítem 5: Respuesta Andrea",
+                  "tipo": "gap",
                   "guia": "Listen for Roger / Standby",
                   "lineas": 1
                 }
@@ -1619,7 +1840,7 @@
           "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E4 (parcial) · VHF Response Drill — Speaking with Captain Lopera",
           "titulo_es": "EVIDENCIA E4 (parcial) · Drill VHF — Habla con Captain Lopera",
-          "tipo_actividad_sena": "Actividad procedimental (evidencia formal · segmento parcial)",
+          "tipo_actividad_sena": "Actividad procedimental",
           "actividad_tipo_label": "Actividad procedimental (evidencia formal · segmento parcial)",
           "tiempo_min": 120,
           "agrupacion": "parejas",
@@ -1665,29 +1886,34 @@
             "estructura": {
               "turnos": [
                 {
-                  "hablante": "Captain Lopera",
-                  "linea_en": "Buenaventura Port, this is CML CARRIER, call sign Papa-Whiskey-Two-Three. Over.",
-                  "linea_es": "(Captain Lopera llama)"
+                  "rol": "Captain Lopera",
+                  "prompt_en": "Buenaventura Port, this is CML CARRIER, call sign Papa-Whiskey-Two-Three. Over.",
+                  "prompt_es": "(Captain Lopera llama)",
+                  "lines": 2
                 },
                 {
-                  "hablante": "You (Andrea)",
-                  "linea_en": "CML CARRIER, this is Buenaventura Port, Roger, standby. Over.",
-                  "linea_es": "(Tú respondes)"
+                  "rol": "You (Andrea)",
+                  "prompt_en": "CML CARRIER, this is Buenaventura Port, Roger, standby. Over.",
+                  "prompt_es": "(Tú respondes)",
+                  "lines": 2
                 },
                 {
-                  "hablante": "Captain Lopera",
-                  "linea_en": "Request berthing instructions. Over.",
-                  "linea_es": "(Solicita atraque)"
+                  "rol": "Captain Lopera",
+                  "prompt_en": "Request berthing instructions. Over.",
+                  "prompt_es": "(Solicita atraque)",
+                  "lines": 2
                 },
                 {
-                  "hablante": "You (Andrea)",
-                  "linea_en": "Wilco. Berth 4 confirmed. Spell call sign again. Over.",
-                  "linea_es": "(Confirma)"
+                  "rol": "You (Andrea)",
+                  "prompt_en": "Wilco. Berth 4 confirmed. Spell call sign again. Over.",
+                  "prompt_es": "(Confirma)",
+                  "lines": 2
                 },
                 {
-                  "hablante": "Captain Lopera",
-                  "linea_en": "Papa-Whiskey-Two-Three. Out.",
-                  "linea_es": "(Deletrea)"
+                  "rol": "Captain Lopera",
+                  "prompt_en": "Papa-Whiskey-Two-Three. Out.",
+                  "prompt_es": "(Deletrea)",
+                  "lines": 2
                 }
               ]
             },
@@ -1734,7 +1960,7 @@
           "schema_version": "v2.7",
           "titulo_en": "Listening Tripartite — Yard + Bridge + Customs simultaneously",
           "titulo_es": "Listening tripartito — Yard + Bridge + Customs simultáneo",
-          "tipo_actividad_sena": "Actividad cognitiva + procedimental",
+          "tipo_actividad_sena": "Actividad cognitiva + Actividad procedimental",
           "actividad_tipo_label": "Actividad cognitiva + procedimental",
           "tiempo_min": 120,
           "agrupacion": "individual + plenaria",
@@ -1777,32 +2003,37 @@
             "estructura": {
               "secciones": [
                 {
-                  "label_en": "Entry 1 (timestamp · channel · summary · decision · action · status)",
-                  "label_es": "Entrada 1",
+                  "header_en": "Entry 1 (timestamp · channel · summary · decision · action · status)",
+                  "header_es": "Entrada 1",
+                  "tipo": "gap",
                   "guia": "yard message",
                   "lineas": 2
                 },
                 {
-                  "label_en": "Entry 2",
-                  "label_es": "Entrada 2",
+                  "header_en": "Entry 2",
+                  "header_es": "Entrada 2",
+                  "tipo": "gap",
                   "guia": "bridge message",
                   "lineas": 2
                 },
                 {
-                  "label_en": "Entry 3",
-                  "label_es": "Entrada 3",
+                  "header_en": "Entry 3",
+                  "header_es": "Entrada 3",
+                  "tipo": "gap",
                   "guia": "customs message",
                   "lineas": 2
                 },
                 {
-                  "label_en": "Entry 4",
-                  "label_es": "Entrada 4",
+                  "header_en": "Entry 4",
+                  "header_es": "Entrada 4",
+                  "tipo": "gap",
                   "guia": "yard reply",
                   "lineas": 2
                 },
                 {
-                  "label_en": "Entry 5",
-                  "label_es": "Entrada 5",
+                  "header_en": "Entry 5",
+                  "header_es": "Entrada 5",
+                  "tipo": "gap",
                   "guia": "bridge reply",
                   "lineas": 2
                 }
@@ -1843,7 +2074,7 @@
           "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E4 (final) · Berthing Coordination Tripartite — Diego + Bosun Romero + Captain Lopera",
           "titulo_es": "EVIDENCIA E4 (final) · Coordinación Berthing tripartita",
-          "tipo_actividad_sena": "Actividad procedimental (evidencia formal · final)",
+          "tipo_actividad_sena": "Actividad procedimental",
           "actividad_tipo_label": "Actividad procedimental (evidencia formal · final)",
           "tiempo_min": 180,
           "agrupacion": "individual ante 3 actores",
@@ -1894,29 +2125,34 @@
             "estructura": {
               "turnos": [
                 {
-                  "hablante": "You (Andrea, bridge)",
-                  "linea_en": "Bosun Romero, the cargo has been inspected. We could start mooring now. Could you confirm yard status?",
-                  "linea_es": "(Andrea a Bosun)"
+                  "rol": "You (Andrea, bridge)",
+                  "prompt_en": "Bosun Romero, the cargo has been inspected. We could start mooring now. Could you confirm yard status?",
+                  "prompt_es": "(Andrea a Bosun)",
+                  "lines": 3
                 },
                 {
-                  "hablante": "Bosun Romero",
-                  "linea_en": "Yard ready, lines prepared.",
-                  "linea_es": "(Bosun confirma)"
+                  "rol": "Bosun Romero",
+                  "prompt_en": "Yard ready, lines prepared.",
+                  "prompt_es": "(Bosun confirma)",
+                  "lines": 3
                 },
                 {
-                  "hablante": "You (Andrea, VHF)",
-                  "linea_en": "CML CARRIER, this is Buenaventura Port. If the wind drops, we will berth at 06:15. Over.",
-                  "linea_es": "(Andrea a Lopera)"
+                  "rol": "You (Andrea, VHF)",
+                  "prompt_en": "CML CARRIER, this is Buenaventura Port. If the wind drops, we will berth at 06:15. Over.",
+                  "prompt_es": "(Andrea a Lopera)",
+                  "lines": 3
                 },
                 {
-                  "hablante": "Captain Lopera",
-                  "linea_en": "Roger, Wilco. Standby. Over.",
-                  "linea_es": "(Lopera confirma)"
+                  "rol": "Captain Lopera",
+                  "prompt_en": "Roger, Wilco. Standby. Over.",
+                  "prompt_es": "(Lopera confirma)",
+                  "lines": 3
                 },
                 {
-                  "hablante": "You (Andrea, yard)",
-                  "linea_en": "Diego, the containers should be stacked at row 4. The yard has been cleared.",
-                  "linea_es": "(Andrea a Diego)"
+                  "rol": "You (Andrea, yard)",
+                  "prompt_en": "Diego, the containers should be stacked at row 4. The yard has been cleared.",
+                  "prompt_es": "(Andrea a Diego)",
+                  "lines": 3
                 }
               ]
             },
@@ -1963,7 +2199,7 @@
           "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E5 · Role Carousel — 5 Master Functions of the Port Pro",
           "titulo_es": "EVIDENCIA E5 · Carrusel de roles — 5 funciones master",
-          "tipo_actividad_sena": "Actividad procedimental (evidencia formal)",
+          "tipo_actividad_sena": "Actividad procedimental",
           "actividad_tipo_label": "Actividad procedimental (evidencia formal)",
           "tiempo_min": 180,
           "agrupacion": "5 estaciones rotativas",
@@ -2010,29 +2246,34 @@
             "estructura": {
               "turnos": [
                 {
-                  "hablante": "Station 1 · Information Exchange",
-                  "linea_en": "Greet a colleague AND give your role.",
-                  "linea_es": "(Saluda Y da tu rol)"
+                  "rol": "Station 1 · Information Exchange",
+                  "prompt_en": "Greet a colleague AND give your role.",
+                  "prompt_es": "(Saluda Y da tu rol)",
+                  "lines": 2
                 },
                 {
-                  "hablante": "Station 2 · SMCP Literacy",
-                  "linea_en": "Confirm a VHF message BUT request clarification.",
-                  "linea_es": "(Confirma PERO pide aclaración)"
+                  "rol": "Station 2 · SMCP Literacy",
+                  "prompt_en": "Confirm a VHF message BUT request clarification.",
+                  "prompt_es": "(Confirma PERO pide aclaración)",
+                  "lines": 2
                 },
                 {
-                  "hablante": "Station 3 · Coordinating Tripartite",
-                  "linea_en": "Direct yard worker BECAUSE the bridge requested action.",
-                  "linea_es": "(Dirige PORQUE el puente pidió)"
+                  "rol": "Station 3 · Coordinating Tripartite",
+                  "prompt_en": "Direct yard worker BECAUSE the bridge requested action.",
+                  "prompt_es": "(Dirige PORQUE el puente pidió)",
+                  "lines": 2
                 },
                 {
-                  "hablante": "Station 4 · Modals",
-                  "linea_en": "Recommend an action SO operations stay safe.",
-                  "linea_es": "(Recomienda PARA QUE)"
+                  "rol": "Station 4 · Modals",
+                  "prompt_en": "Recommend an action SO operations stay safe.",
+                  "prompt_es": "(Recomienda PARA QUE)",
+                  "lines": 2
                 },
                 {
-                  "hablante": "Station 5 · Describing & Justifying",
-                  "linea_en": "Describe your role ALTHOUGH you are still a trainee.",
-                  "linea_es": "(Describe AUNQUE)"
+                  "rol": "Station 5 · Describing & Justifying",
+                  "prompt_en": "Describe your role ALTHOUGH you are still a trainee.",
+                  "prompt_es": "(Describe AUNQUE)",
+                  "lines": 2
                 }
               ]
             },
@@ -2086,7 +2327,7 @@
           "schema_version": "v2.7",
           "titulo_en": "Portfolio Review — Your 5 evidences so far",
           "titulo_es": "Revisión portafolio — Tus 5 evidencias",
-          "tipo_actividad_sena": "Actividad cognitiva + actitudinal",
+          "tipo_actividad_sena": "Actividad cognitiva + Actividad actitudinal",
           "actividad_tipo_label": "Actividad cognitiva + actitudinal",
           "tiempo_min": 60,
           "agrupacion": "individual",
@@ -2131,27 +2372,27 @@
                 {
                   "prompt_en": "E1 Reading Quiz",
                   "prompt_es": "E1 Reading",
-                  "escala": "✓ ~ ?"
+                  "escala": "emoji"
                 },
                 {
                   "prompt_en": "E2 Inspection Report",
                   "prompt_es": "E2 Writing",
-                  "escala": "✓ ~ ?"
+                  "escala": "emoji"
                 },
                 {
                   "prompt_en": "E3 VHF Listening",
                   "prompt_es": "E3 Listening",
-                  "escala": "✓ ~ ?"
+                  "escala": "emoji"
                 },
                 {
                   "prompt_en": "E4 Berthing Tripartite",
                   "prompt_es": "E4 Speaking",
-                  "escala": "✓ ~ ?"
+                  "escala": "emoji"
                 },
                 {
                   "prompt_en": "E5 Role Carousel",
                   "prompt_es": "E5 Functions",
-                  "escala": "✓ ~ ?"
+                  "escala": "emoji"
                 }
               ]
             }
@@ -2188,7 +2429,7 @@
           "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E6 · Maritime Operations Consolidated Quiz — 25 items",
           "titulo_es": "EVIDENCIA E6 · Cuestionario Consolidado — 25 ítems",
-          "tipo_actividad_sena": "Actividad cognitiva (evidencia formal sumativa)",
+          "tipo_actividad_sena": "Actividad cognitiva",
           "actividad_tipo_label": "Actividad cognitiva (evidencia formal sumativa)",
           "tiempo_min": 180,
           "agrupacion": "individual",
@@ -2230,29 +2471,89 @@
             "estructura": {
               "items": [
                 {
-                  "n": "Section 1",
-                  "pregunta_en": "Reading (5 items × 1 pt) — comprehension of new maritime context (Versión 2 Tres Versiones)",
-                  "pregunta_es": "Reading 5 ítems"
+                  "n": 1,
+                  "q_en": "Reading (5 items × 1 pt) — comprehension of new maritime context (Versión 2 Tres Versiones)",
+                  "q_es": "Reading 5 ítems",
+                  "opts": [
+                    {
+                      "k": "A",
+                      "en": "Items demonstrate transfer to new context",
+                      "es": "Ítems demuestran transferencia al nuevo contexto"
+                    },
+                    {
+                      "k": "B",
+                      "en": "Items repeat already-seen examples",
+                      "es": "Ítems repiten ejemplos ya vistos"
+                    }
+                  ]
                 },
                 {
-                  "n": "Section 2",
-                  "pregunta_en": "Writing (5 items × 1 pt) — completion / sentence construction",
-                  "pregunta_es": "Writing 5 ítems"
+                  "n": 2,
+                  "q_en": "Writing (5 items × 1 pt) — completion / sentence construction",
+                  "q_es": "Writing 5 ítems",
+                  "opts": [
+                    {
+                      "k": "A",
+                      "en": "Items demonstrate transfer to new context",
+                      "es": "Ítems demuestran transferencia al nuevo contexto"
+                    },
+                    {
+                      "k": "B",
+                      "en": "Items repeat already-seen examples",
+                      "es": "Ítems repiten ejemplos ya vistos"
+                    }
+                  ]
                 },
                 {
-                  "n": "Section 3",
-                  "pregunta_en": "Listening (5 items × 1 pt) — new audio with SMCP",
-                  "pregunta_es": "Listening 5 ítems"
+                  "n": 3,
+                  "q_en": "Listening (5 items × 1 pt) — new audio with SMCP",
+                  "q_es": "Listening 5 ítems",
+                  "opts": [
+                    {
+                      "k": "A",
+                      "en": "Items demonstrate transfer to new context",
+                      "es": "Ítems demuestran transferencia al nuevo contexto"
+                    },
+                    {
+                      "k": "B",
+                      "en": "Items repeat already-seen examples",
+                      "es": "Ítems repiten ejemplos ya vistos"
+                    }
+                  ]
                 },
                 {
-                  "n": "Section 4",
-                  "pregunta_en": "Vocabulary (5 items × 1 pt) — Toolbelt 20 in new context",
-                  "pregunta_es": "Vocabulary 5 ítems"
+                  "n": 4,
+                  "q_en": "Vocabulary (5 items × 1 pt) — Toolbelt 20 in new context",
+                  "q_es": "Vocabulary 5 ítems",
+                  "opts": [
+                    {
+                      "k": "A",
+                      "en": "Items demonstrate transfer to new context",
+                      "es": "Ítems demuestran transferencia al nuevo contexto"
+                    },
+                    {
+                      "k": "B",
+                      "en": "Items repeat already-seen examples",
+                      "es": "Ítems repiten ejemplos ya vistos"
+                    }
+                  ]
                 },
                 {
-                  "n": "Section 5",
-                  "pregunta_en": "Grammar (5 items × 1 pt) — modals + conditional + tag questions",
-                  "pregunta_es": "Grammar 5 ítems"
+                  "n": 5,
+                  "q_en": "Grammar (5 items × 1 pt) — modals + conditional + tag questions",
+                  "q_es": "Grammar 5 ítems",
+                  "opts": [
+                    {
+                      "k": "A",
+                      "en": "Items demonstrate transfer to new context",
+                      "es": "Ítems demuestran transferencia al nuevo contexto"
+                    },
+                    {
+                      "k": "B",
+                      "en": "Items repeat already-seen examples",
+                      "es": "Ítems repiten ejemplos ya vistos"
+                    }
+                  ]
                 }
               ]
             },
@@ -2298,7 +2599,7 @@
           "schema_version": "v2.7",
           "titulo_en": "Final Mission Brief Reception — Capitán Restrepo delivers the CML CARRIER scenario",
           "titulo_es": "Recepción Brief Misión Final — Capitán Restrepo entrega CML CARRIER",
-          "tipo_actividad_sena": "Actividad cognitiva + actitudinal",
+          "tipo_actividad_sena": "Actividad cognitiva + Actividad actitudinal",
           "actividad_tipo_label": "Actividad cognitiva + actitudinal",
           "tiempo_min": 60,
           "agrupacion": "plenaria",
@@ -2343,38 +2644,52 @@
             "titulo_en": "8 Guiding Questions · CML CARRIER",
             "titulo_es": "8 preguntas guía",
             "estructura": {
-              "items": [
+              "columnas_check": [
                 {
-                  "texto_en": "What is the name of the vessel?",
-                  "texto_es": "¿Cómo se llama el buque?"
+                  "header_en": "✓ I have it",
+                  "header_es": "Lo tengo"
                 },
                 {
-                  "texto_en": "Where does it arrive from?",
-                  "texto_es": "¿De dónde llega?"
+                  "header_en": "~ Partial",
+                  "header_es": "Parcial"
                 },
                 {
-                  "texto_en": "What is the LOA (length over all)?",
-                  "texto_es": "¿Cuál es el LOA?"
+                  "header_en": "? Missing",
+                  "header_es": "Falta"
+                }
+              ],
+              "terminos": [
+                {
+                  "en": "What is the name of the vessel?",
+                  "es": "¿Cómo se llama el buque?"
                 },
                 {
-                  "texto_en": "How many TEU?",
-                  "texto_es": "¿Cuántos TEU?"
+                  "en": "Where does it arrive from?",
+                  "es": "¿De dónde llega?"
                 },
                 {
-                  "texto_en": "What is the ETA / ETD?",
-                  "texto_es": "¿ETA / ETD?"
+                  "en": "What is the LOA (length over all)?",
+                  "es": "¿Cuál es el LOA?"
                 },
                 {
-                  "texto_en": "Which berth?",
-                  "texto_es": "¿Qué berth?"
+                  "en": "How many TEU?",
+                  "es": "¿Cuántos TEU?"
                 },
                 {
-                  "texto_en": "What is the tide window?",
-                  "texto_es": "¿Tide window?"
+                  "en": "What is the ETA / ETD?",
+                  "es": "¿ETA / ETD?"
                 },
                 {
-                  "texto_en": "Who is the Vessel Master?",
-                  "texto_es": "¿Vessel Master?"
+                  "en": "Which berth?",
+                  "es": "¿Qué berth?"
+                },
+                {
+                  "en": "What is the tide window?",
+                  "es": "¿Tide window?"
+                },
+                {
+                  "en": "Who is the Vessel Master?",
+                  "es": "¿Vessel Master?"
                 }
               ]
             }
@@ -2424,7 +2739,7 @@
           "schema_version": "v2.7",
           "titulo_en": "PLAN — Read the Brief & define your Operational Plan",
           "titulo_es": "PLANEAR — Lee el Brief y define tu Plan Operacional",
-          "tipo_actividad_sena": "Actividad cognitiva + procedimental",
+          "tipo_actividad_sena": "Actividad cognitiva + Actividad procedimental",
           "actividad_tipo_label": "Actividad cognitiva + procedimental",
           "tiempo_min": 60,
           "agrupacion": "individual + Q&A pares",
@@ -2592,23 +2907,77 @@
             "titulo_en": "Berthing Memo + Radio Log · dual deliverable",
             "titulo_es": "Memo + Radio Log · entregable dual",
             "estructura": {
-              "plantilla_en": "BERTHING COORDINATION MEMO\n\nSECTION 1 · VESSEL PARTICULARS\nThe ___ is a ___-meter container vessel with ___ TEU capacity. ETA ___. ETD ___.\n\nSECTION 2 · BERTHING WINDOW\nThe vessel will be berthed at ___ between ___ and ___.\n\nSECTION 3 · COORDINATION ROLES\nI am responsible for ___. Diego specializes in ___. Bosun Romero coordinates ___. Captain Lopera supervises ___ via VHF Channel 16. I report to ___.\n\nSECTION 4 · CONTINGENCY PLAN\nIf the wind drops, ___. If the tide ___, ___.",
-              "plantilla_es": "(Memo con 4 secciones · 5 occupational structures · condicional · pasiva)",
-              "slots": [
-                "vessel name",
-                "LOA",
-                "TEU",
-                "ETA",
-                "ETD",
-                "berth #",
-                "tide times",
-                "responsibility scope",
-                "Diego specialty",
-                "Bosun coordination",
-                "Lopera supervision",
-                "report to",
-                "wind contingency",
-                "tide contingency"
+              "lineas_gap": [
+                {
+                  "prompt_en": "vessel name",
+                  "prompt_es": "Nombre del buque",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "LOA",
+                  "prompt_es": "Eslora total",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "TEU",
+                  "prompt_es": "TEU",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "ETA",
+                  "prompt_es": "ETA (hora estimada de llegada)",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "ETD",
+                  "prompt_es": "ETD (hora estimada de salida)",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "berth #",
+                  "prompt_es": "Número de berth",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "tide times",
+                  "prompt_es": "Horas de marea",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "responsibility scope",
+                  "prompt_es": "Alcance de mi responsabilidad",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "Diego specialty",
+                  "prompt_es": "Especialidad de Diego",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "Bosun coordination",
+                  "prompt_es": "Coordinación de Bosun Romero",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "Lopera supervision",
+                  "prompt_es": "Supervisión de Captain Lopera",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "report to",
+                  "prompt_es": "Reporto a",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "wind contingency",
+                  "prompt_es": "Contingencia de viento",
+                  "lines": 1
+                },
+                {
+                  "prompt_en": "tide contingency",
+                  "prompt_es": "Contingencia de marea",
+                  "lines": 1
+                }
               ]
             }
           },
@@ -2648,7 +3017,7 @@
           "schema_version": "v2.7",
           "titulo_en": "PERFORM — CML Port Turnaround 3h (VHF Intake + Berthing Tripartite + Post-Turn Report)",
           "titulo_es": "EJECUTAR — CML Port Turnaround 3h",
-          "tipo_actividad_sena": "Actividad procedimental + actitudinal",
+          "tipo_actividad_sena": "Actividad procedimental + Actividad actitudinal",
           "actividad_tipo_label": "Actividad procedimental + actitudinal",
           "tiempo_min": 180,
           "agrupacion": "individual rotativo en 3 zonas",
@@ -2699,19 +3068,22 @@
             "estructura": {
               "turnos": [
                 {
-                  "hablante": "Turn 1 · VHF Intake (90s)",
-                  "linea_en": "Captain Lopera radios from CML CARRIER. You confirm with Roger · Wilco · spell call sign Papa-Whiskey-Two-Three.",
-                  "linea_es": "(Turno 1)"
+                  "rol": "Turn 1 · VHF Intake (90s)",
+                  "prompt_en": "Captain Lopera radios from CML CARRIER. You confirm with Roger · Wilco · spell call sign Papa-Whiskey-Two-Three.",
+                  "prompt_es": "(Turno 1)",
+                  "lines": 4
                 },
                 {
-                  "hablante": "Turn 2 · Berthing Tripartite (2 min)",
-                  "linea_en": "You coordinate Diego (yard · ES) + Bosun Romero (yard · ES) + Captain Lopera (VHF · EN). Modals + conditional + passive + tag questions.",
-                  "linea_es": "(Turno 2)"
+                  "rol": "Turn 2 · Berthing Tripartite (2 min)",
+                  "prompt_en": "You coordinate Diego (yard · ES) + Bosun Romero (yard · ES) + Captain Lopera (VHF · EN). Modals + conditional + passive + tag questions.",
+                  "prompt_es": "(Turno 2)",
+                  "lines": 4
                 },
                 {
-                  "hablante": "Turn 3 · Post-Turn Report (90s)",
-                  "linea_en": "You report to Capitán Restrepo: 'The vessel was berthed at 06:15. Cargo was inspected. The yard was secured. If the tide had dropped, we would have delayed. The operation was successful, wasn't it?'",
-                  "linea_es": "(Turno 3)"
+                  "rol": "Turn 3 · Post-Turn Report (90s)",
+                  "prompt_en": "You report to Capitán Restrepo: 'The vessel was berthed at 06:15. Cargo was inspected. The yard was secured. If the tide had dropped, we would have delayed. The operation was successful, wasn't it?'",
+                  "prompt_es": "(Turno 3)",
+                  "lines": 4
                 }
               ]
             }
@@ -2753,7 +3125,7 @@
           "schema_version": "v2.7",
           "titulo_en": "PRESENT — Professional Pitch 3 min before the panel + Q&A with tag questions",
           "titulo_es": "PRESENTAR — Pitch profesional 3 min ante panel",
-          "tipo_actividad_sena": "Actividad procedimental + actitudinal",
+          "tipo_actividad_sena": "Actividad procedimental + Actividad actitudinal",
           "actividad_tipo_label": "Actividad procedimental + actitudinal",
           "tiempo_min": 60,
           "agrupacion": "individual ante panel",
@@ -2804,24 +3176,28 @@
             "estructura": {
               "turnos": [
                 {
-                  "hablante": "INTRO 30s",
-                  "linea_en": "Good morning, Capitán Restrepo and panel. I am Andrea Mosquera, Port Operations Trainee at Berth 4. I report to Capitán Restrepo.",
-                  "linea_es": "(Saludo · rol · reporta a)"
+                  "rol": "INTRO 30s",
+                  "prompt_en": "Good morning, Capitán Restrepo and panel. I am Andrea Mosquera, Port Operations Trainee at Berth 4. I report to Capitán Restrepo.",
+                  "prompt_es": "(Saludo · rol · reporta a)",
+                  "lines": 3
                 },
                 {
-                  "hablante": "HABITUAL FUNCTIONS 60s",
-                  "linea_en": "I am responsible for VHF coordination. I specialize in SMCP literacy. I supervise container handling. I coordinate yard movements with Diego and Bosun Romero. I report directly to Capitán Restrepo.",
-                  "linea_es": "(5 occupational structures)"
+                  "rol": "HABITUAL FUNCTIONS 60s",
+                  "prompt_en": "I am responsible for VHF coordination. I specialize in SMCP literacy. I supervise container handling. I coordinate yard movements with Diego and Bosun Romero. I report directly to Capitán Restrepo.",
+                  "prompt_es": "(5 occupational structures)",
+                  "lines": 3
                 },
                 {
-                  "hablante": "MOMENTARY FUNCTIONS 60s",
-                  "linea_en": "Today, the CML CARRIER has been berthed at 06:15. The cargo has been inspected. The mooring lines were secured by 06:30. If the tide drops below 1.5 meters, we will hold operations.",
-                  "linea_es": "(Perfecto + pasiva + condicional)"
+                  "rol": "MOMENTARY FUNCTIONS 60s",
+                  "prompt_en": "Today, the CML CARRIER has been berthed at 06:15. The cargo has been inspected. The mooring lines were secured by 06:30. If the tide drops below 1.5 meters, we will hold operations.",
+                  "prompt_es": "(Perfecto + pasiva + condicional)",
+                  "lines": 3
                 },
                 {
-                  "hablante": "CLOSING 30s + TAG",
-                  "linea_en": "The operation was successful, wasn't it? I am ready for your questions.",
-                  "linea_es": "(Tag question + invita Q&A)"
+                  "rol": "CLOSING 30s + TAG",
+                  "prompt_en": "The operation was successful, wasn't it? I am ready for your questions.",
+                  "prompt_es": "(Tag question + invita Q&A)",
+                  "lines": 3
                 }
               ]
             }
@@ -2908,43 +3284,9 @@
             "titulo_en": "Self-reflection · 5 emoji + Port Star + What I see now",
             "titulo_es": "Auto-reflexión · 5 emoji + Port Star + What I see now",
             "estructura": {
-              "items": [
-                {
-                  "prompt_en": "1 · My Operational Plan Canvas decisions were clear.",
-                  "prompt_es": "1 · Decisiones claras",
-                  "escala": "🙂 😐 🙁"
-                },
-                {
-                  "prompt_en": "2 · My Berthing Memo + Radio Log were structured.",
-                  "prompt_es": "2 · Memo + Log estructurados",
-                  "escala": "🙂 😐 🙁"
-                },
-                {
-                  "prompt_en": "3 · My VHF Intake used SMCP correctly.",
-                  "prompt_es": "3 · SMCP correcto",
-                  "escala": "🙂 😐 🙁"
-                },
-                {
-                  "prompt_en": "4 · My Berthing Tripartite used modals + conditional + passive.",
-                  "prompt_es": "4 · Estructuras",
-                  "escala": "🙂 😐 🙁"
-                },
-                {
-                  "prompt_en": "5 · My Pitch closed with a real tag question.",
-                  "prompt_es": "5 · Tag question",
-                  "escala": "🙂 😐 🙁"
-                }
-              ],
-              "open_peer": {
-                "prompt_en": "Port Star to (peer name) · 1 sentence reason",
-                "prompt_es": "Port Star · razón",
-                "lines": 2
-              },
-              "open_self": {
-                "prompt_en": "What I see now that I did not see on Day 1 (3-5 sentences EN/ES free)",
-                "prompt_es": "Lo que ahora veo y no veía el Día 1 (3-5 oraciones)",
-                "lines": 5
-              }
+              "prompt_en": "What I see now that I did not see on Day 1 (3-5 sentences EN/ES free)",
+              "prompt_es": "Lo que ahora veo y no veía el Día 1 (3-5 oraciones)",
+              "lines": 5
             }
           },
           "entregable": {
