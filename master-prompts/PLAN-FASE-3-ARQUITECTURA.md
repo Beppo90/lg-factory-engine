@@ -1,7 +1,7 @@
 ---
-title: PLAN FASE 3 — Arquitectura · skill `fpi-sena-fase3` · v1.3
+title: PLAN FASE 3 — Arquitectura · skill `fpi-sena-fase3` · v1.4
 proposito: Plan ejecutable de construcción Fase 3 (Playbook + assessment + derivados) basado en PRE-FLIGHT-FASE-3 + canon DM §11 v2.12 changelog entry + lecciones Fase 2
-status: v1.3 · reshuffle Hito 2/3/Fase3-4 cascada Phase 4 derivados · PM-3.4 + PM-3.6 movidos a Hito-Fase3-4 (verificado INPUT REQUERIDO consume PM-3.2 build-outs) · Hito 2 = solo PM-3.1
+status: v1.4 · NEW PM-3.7 GFPI-F-134 Matrix Aggregator + xlsx Renderer (master prompt v1.0 commit d6ac07b) · agregado a Hito-Fase3-4 (4to Phase 4 derivado paralelo)
 fecha_creacion: 2026-04-29
 sesion: post-cierre Hito 3 Fase 2 + pre-Hito 4 Fase 2 + pre-construcción Fase 3
 prerequisitos: PRE-FLIGHT-FASE-3.md leído + Hito 4 Fase 2 PASS (PLAN-FASE-2 §6.4 estricto)
@@ -187,7 +187,7 @@ Esta separación se canoniza en este plan: la skill `fpi-sena-fase3` cubre AMBAS
 
 ### §5.2 — Resumen camino mix
 
-| PM | Camino 1 | Camino 2 | Renderer | Hito (v1.3) | Corrección |
+| PM | Camino 1 | Camino 2 | Renderer | Hito (v1.4) | Corrección |
 |---|---|---|---|---|---|
 | PM-3.1 | — | ✓ (LLM puro) | docx (post-render) | **Hito 2** | v1.2 · era Camino 1 mecánico inflado |
 | PM-3.2 | — | ✓ ×8 | docx | **Hito 3** | sin cambio |
@@ -195,6 +195,7 @@ Esta separación se canoniza en este plan: la skill `fpi-sena-fase3` cubre AMBAS
 | PM-3.4 | — | ✓ | docx | **Hito-Fase3-4** | v1.3 · Phase 4 derivado · INPUT REQUERIDO consume PM-3.2 build-outs (verificado grep) |
 | PM-3.5 | — | ✓ | docx | **Hito 3** | sin cambio · Phase 3 (cross_references: consume_de_pm32_s6_s7_s8) |
 | PM-3.6 | — | ✓ (LLM puro) | docx (post-render) | **Hito-Fase3-4** | v1.2 LLM + v1.3 reshuffle · Phase 4 derivado · cascada PM-3.4 |
+| **PM-3.7** | — | ✓ (LLM puro) | **xlsx (post-render)** | **Hito-Fase3-4** | **v1.4 NEW · GFPI-F-134 Matrix Aggregator · agregador cross-PM (PM-0 + 9 ACs + PM-2.11 + PM-3.1 + PM-3.2 + PM-4.x) · openpyxl template-based (preserve merged cells + styles)** |
 | PM-4.1 | ✓ (reuse) | — | docx | (Fase 2 mecánico) | sin cambio (mecánico verdadero · derivador) |
 | PM-4.2 | ✓ (reuse) | — | docx | (Fase 2 mecánico) | sin cambio (mecánico verdadero · ensamblador determinístico) |
 
@@ -240,10 +241,13 @@ Esta separación se canoniza en este plan: la skill `fpi-sena-fase3` cubre AMBAS
 └──────────────────────────────────────────────────────────────────┘
               │
               ▼
-┌─ Phase 4 — Derivados estudiante (paralelo) ──────────────────────┐
+┌─ Phase 4 — Derivados estudiante/instructor (paralelo) ───────────┐
 │                                                                   │
-│  PM-3.3 Canva Deck     ║  PM-3.4 Workbook     ║  PM-3.6 GFPI-F-135│
-│  (híbrido · pptx)        (Camino 2 · docx)      (Camino 1 · docx) │
+│  PM-3.3 Canva Deck    ║ PM-3.4 Workbook    ║ PM-3.6 GFPI-F-135    │
+│  (híbrido · pptx)       (Camino 2 · docx)    (Camino 2 · docx)    │
+│                       ║                                            │
+│  PM-3.7 GFPI-F-134 Matrix (Camino 2 · xlsx · v1.4 NEW)            │
+│  (agregador cross-PM · vista oficial SENA · openpyxl template)    │
 │                                                                   │
 └──────────────────────────────────────────────────────────────────┘
               │
@@ -326,27 +330,34 @@ Tasks:
 
 > **Nota nomenclatura:** este Hito es de la skill `fpi-sena-fase3`. NO confundir con **Hito 4 Fase 2** (gating canónico §6.4 · E2E Fase 2 contra IMARPOR-CC con Activity Cards). Hito-Fase3-4 ocurre DESPUÉS de Hito 4 Fase 2 cerrado.
 
-**Objetivo (v1.3 reshuffle):** Construir los 3 Phase 4 derivados (PM-3.3 + PM-3.4 + PM-3.6) que consumen el Playbook completo cerrado en Hito 3 (Gate 3 aprobado por Sergio) · ejecutar Test E2E completo contra IMARPOR-CC real.
+**Objetivo (v1.4 update):** Construir los **4 Phase 4 derivados** (PM-3.3 + PM-3.4 + PM-3.6 + **PM-3.7 NEW**) que consumen el Playbook completo cerrado en Hito 3 (Gate 3 aprobado por Sergio) · ejecutar Test E2E completo contra IMARPOR-CC real.
 
-> **Cambio vs v1.2:** Hito-Fase3-4 ahora contiene los 3 Phase 4 derivados juntos (era solo PM-3.3 + Test E2E). PM-3.4 + PM-3.6 reubicados aquí desde Hito 3/2 respectivamente. Justificación: los 3 dependen de Playbook completo (PM-3.2 ×8 + PM-3.5) · son arquitectura paralela post Gate 3 · co-localizar es honest a §6.1.
+> **Cambio vs v1.3:** Hito-Fase3-4 ahora contiene 4 Phase 4 derivados (era 3). PM-3.7 NEW agregado v1.4 · master prompt v1.0 commit d6ac07b · GFPI-F-134 Matrix Aggregator + xlsx Renderer · vista oficial SENA April 2022. Justificación: agregador cross-PM produce plantilla `GFPI-F-134_Vf.xlsx` poblada · cierra gap entre canon interno (DM 11 cols + pm-2-11) y vista oficial externa (xlsx Vf 14 cols).
 > 
-> **Trabajo ya hecho mantenible (commits anteriores v1.2/v1.3 transition):**
-> - `lib/input_loader.py` · `load_phase4_inputs(strict_gate3=False)` (commit 105e8f9 · NO breaking change · sirve para los 3 derivados)
-> - `lib/task_tool_bundler.py` · `preparar_bundle_phase4(pm_id, ..., strict_gate3=False)` (commit 105e8f9 · genérico para PM-3.3, PM-3.4, PM-3.6)
-> - `subagentes/subagente_pm_3_6_gfpi_f135.py` (commit 105e8f9 · construido en framing Hito 2 Task 2 pre-v1.3 · re-categorizado a Hito-Fase3-4 · code remains valid · smoke shape PARTIAL PASS documentado)
+> **Cambio vs v1.2:** Hito-Fase3-4 ahora contiene los Phase 4 derivados juntos (era solo PM-3.3 + Test E2E). PM-3.4 + PM-3.6 reubicados aquí desde Hito 3/2 respectivamente. Justificación: dependen de Playbook completo (PM-3.2 ×8 + PM-3.5) · arquitectura paralela post Gate 3.
+> 
+> **Trabajo ya hecho mantenible (commits previos transition):**
+> - `lib/input_loader.py` · `load_phase4_inputs(strict_gate3=False)` (commit 105e8f9 · NO breaking change · sirve para los 4 derivados)
+> - `lib/task_tool_bundler.py` · `preparar_bundle_phase4(pm_id, ..., strict_gate3=False)` (commit 105e8f9 · genérico para PM-3.3, PM-3.4, PM-3.6, PM-3.7)
+> - `subagentes/subagente_pm_3_6_gfpi_f135.py` (commit 105e8f9 · code remains valid · smoke behavioral pendiente post-Hito 3)
+> - `master-prompts/PM-3.7 — GFPI-F-134 Matrix Aggregator.md` v1.0 (commit d6ac07b · master prompt canónico · 14 cols mapping + 12 validation checks + xlsx renderer requirements)
+> - `master-prompts/canon/GFPI-F-134_Vf.xlsx` (template oficial SENA April 2022 · canon location · read-only)
 
 Tasks:
 1. Construir `subagente_pm_3_3_canva_deck.py` (híbrido · spec + slides + PPTX render · canon v2.4)
 2. Construir `subagente_pm_3_4_workbook.py` (Camino 2 LLM puro vía `preparar_bundle_phase4`)
 3. (Re-validar) `subagente_pm_3_6_gfpi_f135.py` (ya construido commit 105e8f9 · ahora sí smoke behavioral contra IMARPOR-CC con Phase 3 outputs reales)
-4. Validar PPTX renderable + spec separado de hardcoding (canon v2.4 §) · PM-3.3 específico
-5. Test E2E completo contra IMARPOR-CC real:
+4. **Construir `subagente_pm_3_7_gfpi_f134_matrix.py`** (Camino 2 LLM puro vía `preparar_bundle_phase4` · pero también consume pm-0-context que NO está en load_phase4_inputs base · necesita extensión menor)
+5. **Construir `lib/xlsx_renderer.py`** (openpyxl template-based · preserve merged cells + styles · loads `master-prompts/canon/GFPI-F-134_Vf.xlsx` · saves `runs/<RUN-ID>/pm-3-7-gfpi-f134-matrix.xlsx`)
+6. Validar PPTX renderable + spec separado de hardcoding (canon v2.4 §) · PM-3.3 específico
+7. Validar xlsx renderable: open en Excel/LibreOffice · merged cells preserved · styles preserved · 14 cols data correctly populated · PM-3.7 específico
+8. Test E2E completo contra IMARPOR-CC real:
    - Phase 3: PM-3.1 → 8× PM-3.2 → PM-3.5 → Gate 3 simulado (Sergio marca enriched: true)
-   - Phase 4: PM-3.3 ║ PM-3.4 ║ PM-3.6 → Gate 4 simulado
-6. 5 checks pedagogical fidelity PASS (§8 Check 3.1 a 3.10)
-7. Documentar cierre Fase 3 oficialmente (v1.4+ del PLAN si bugs)
+   - Phase 4: PM-3.3 ║ PM-3.4 ║ PM-3.6 ║ **PM-3.7** → Gate 4 simulado
+9. 5 checks pedagogical fidelity PASS (§8 Check 3.1 a 3.10)
+10. Documentar cierre Fase 3 oficialmente (v1.5+ del PLAN si bugs)
 
-**Gates:** Fase 3 cerrada · `fpi-sena-fase3` lista para producción real con instructores · Test E2E IMARPOR-CC verde.
+**Gates:** Fase 3 cerrada · `fpi-sena-fase3` lista para producción real con instructores · Test E2E IMARPOR-CC verde · PM-3.7 produce xlsx Vf poblado validable en Excel.
 
 ### Hito 5 — Refactor pass renderer API uniforme (1-2h post-Hito 4)
 
@@ -667,11 +678,59 @@ PM-3.5 cross_references: `consume_de_pm32_s6_s7_s8` · solo consume PM-3.2 sessi
 
 **Trigger mutual REGLA 21:** Sergio detectó intent (A) "smoke deuda como excusa" + ordenó verificación PM-3.4 antes de bump (REGLA 20-shape strict) · Claude concedió + verificó. Ejemplo de trigger mutual operacional · cataliza correcciones cascada antes de difundirse a futuros Hitos.
 
-### v1.4 (esperada · post Hito 1 Fase 3 construcción)
+### v1.4 · 2026-04-29 · NEW PM-3.7 GFPI-F-134 Matrix Aggregator + xlsx Renderer
+
+**Contexto:** Sergio uploaded `GFPI-F-134_Planeacion_Pedagógica_Proyecto_Formativo_Vf.xlsx` (canon SENA April 2022 · plantilla oficial Procedimiento Planeación Pedagógica). Pre-flight detectó hoja 2 "PLANEACIÓN" tiene 14 cols lógicas vs DM canon 11 cols · drift aparente.
+
+**Clarificación arquitectónica Sergio (2026-04-29 noche):**
+
+> "Este documento SENA GFPI-F-134_Vf.xlsx es la matriz pedagógica que ubica todas las actividades de aprendizaje que se desarrollan en el momento de apropiación. Cumple el mismo objetivo que da nacimiento al PM-3.1 ... FASE PROYECTO + ACTIVIDAD PROYECTO sale del PM0 ... Saberes Conceptos/Procesos sale del PM0 ... ESTRATEGIAS DIDÁCTICAS y TÉCNICA DIDÁCTICAS salen de cada actividad de apropiación PM-2.3 hasta PM-2.10. Las actividades son generadas sobre una base de estrategias y técnicas didácticas (el qué y el cómo). Para no afectar el desarrollo del trabajo, propongo simplemente recoger toda esa información ya sea como un artefacto 3.7 resultado de todos los hitos previos al desarrollo del hito que da nacimiento al PM-3.6."
+
+**Decisión arquitectónica:** crear NEW PM-3.7 · NO modificar canon existente (DM 11 cols + pm-2-11 schema permanecen sin cambio). xlsx Vf 14 cols = vista agregada oficial SENA · PM-3.7 traduce de canon interno a vista externa.
+
+**REGLA 21 trigger mutual aplicado correctamente:**
+PM-3.7 = NUEVO master prompt + NUEVO wrapper (futuro) + NUEVO xlsx renderer (futuro) = código nuevo · architectural change · merece bump v1.3 → v1.4. Distinto de v1.3 reshuffle (que era scheduling observation · over-correction acknowledged). Esta vez el bump tiene código nuevo concreto (master prompt v1.0 commiteado d6ac07b).
+
+**Cambios estructurales:**
+
+- **§5.2 tabla mix** · row PM-3.7 agregado · Camino 2 LLM puro · xlsx renderer · Hito-Fase3-4
+- **§6.1 workflow** · Phase 4 parallel block expandido a 4 derivados (era 3): PM-3.3 + PM-3.4 + PM-3.6 + PM-3.7
+- **§7 Hito-Fase3-4 task list** · 7 tasks → 10 tasks (agregadas: build subagente_pm_3_7 + build lib/xlsx_renderer.py + validate xlsx renderable)
+- **§13 v1.4 changelog entry** · contexto + clarificación Sergio + decisión + REGLA 21 + cambios estructurales
+
+**Artefactos canonizados (commits previos):**
+- `master-prompts/PM-3.7 — GFPI-F-134 Matrix Aggregator.md` v1.0 · commit d6ac07b · 23,575 bytes · markdown table frontmatter
+- `master-prompts/canon/GFPI-F-134_Vf.xlsx` · canon location · template oficial SENA April 2022 · NO modificar (read-only para PM-3.7 wrapper)
+
+**Mapping xlsx Vf 14 cols ↔ upstream PMs (resumen v1.4):**
+
+| xlsx Col | Fuente upstream | Síntesis requerida |
+|----------|-----------------|--------------------|
+| 1 Fase Proyecto · 2 Actividad Proyecto | PM-0 (derived) | Sí · derivar de programa_nombre + universo |
+| 3 Competencia · 4 RAP | PM-2.11 (col_1, col_2) | No · exact match upstream |
+| 5 Actividades de Aprendizaje | 9 ACs + 8× PM-3.2 | Sí · síntesis S2-S5 apropiación |
+| 6+7 Horas | PM-2.11.col_7_horas | No · suma directa |
+| 8 Estrategias Didácticas | PM-3.1.estrategias_resumen + 9 ACs | Sí · síntesis pedagógica · NO copy-paste |
+| 9-11 Ambiente/Materiales/Instructores | PM-2.11.col_10 + PM-3.1.ambientes_resumen | No · cross-validate |
+| 12 Criterios | PM-2.11.col_5 + col_11 | No · concatenación |
+| 13 Evidencias | PM-2.11.col_8 + PM-4.1 + PM-4.2 | Sí · descripción agregada |
+| 14 Observaciones | PM-3.2-sX + PM-3.1.siguiente_paso | Sí · contextual |
+
+**Tareas siguientes (post v1.4 bump · Hito-Fase3-4):**
+
+1. Build `subagente_pm_3_7_gfpi_f134_matrix.py` Camino 2 LLM puro
+2. Build `lib/xlsx_renderer.py` (openpyxl template-based)
+3. Behavioral validation post-Hito 3 cuando IMARPOR-CC tenga Playbook completo (Gate 3 cerrado)
+4. Generate pm-3-7.json + pm-3-7.xlsx para IMARPOR-CC · validar contra Excel/LibreOffice render
+
+**Trigger mutual REGLA 21 anotación:** Esta vez el bump fue architectural-justified (NEW master prompt · NEW código futuro). Comparado con v1.3 (que era over-correction acknowledged · scheduling observation), el v1.4 cumple criterio strict para bump. Buen test del trigger mutual aplicado correctamente.
+
+### v1.5 (esperada · post Hito 1+ Fase 3 construcción)
 
 - Refinements basados en construcción real de subagentes (cli_parser edge cases · drift script behavior)
 - Adjustments en `document_renderer.py` API según hallazgos diseño emergente
-- Posible canonización adicional si emergen patrones reusables
+- Posibles correcciones cross-PM si emergen drift
+- xlsx renderer canonical patterns post primera ejecución PM-3.7
 
 ### v1.5+ (esperada · post Hito-Fase3-4 + Hito 5 refactor pass)
 
@@ -680,5 +739,5 @@ PM-3.5 cross_references: `consume_de_pm32_s6_s7_s8` · solo consume PM-3.2 sessi
 
 ---
 
-*PLAN-FASE-3-ARQUITECTURA.md v1.3 · escrito 2026-04-29 (reshuffle Hito 2/3/Fase3-4 cascada Phase 4 derivados · PM-3.4 + PM-3.6 movidos a Hito-Fase3-4 · Anti-patrón 12 documentado · trigger mutual REGLA 21 cataliza)*
-*Próximo paso: completar behavioral validation PM-3.1 (Hito 2 Task 1) → arrancar Hito 3 (PM-3.2 ×8 + PM-3.5)*
+*PLAN-FASE-3-ARQUITECTURA.md v1.4 · escrito 2026-04-29 (NEW PM-3.7 GFPI-F-134 Matrix Aggregator + xlsx Renderer · master prompt v1.0 d6ac07b · canon xlsx Vf migrado a master-prompts/canon/ · Hito-Fase3-4 expandido a 4 Phase 4 derivados · trigger mutual REGLA 21 architectural-justified)*
+*Próximo paso: completar behavioral validation PM-3.1 (Hito 2) → arrancar Hito 3 (PM-3.2 ×8 + PM-3.5) → Hito-Fase3-4 (4 Phase 4 derivados · incluye PM-3.7)*
