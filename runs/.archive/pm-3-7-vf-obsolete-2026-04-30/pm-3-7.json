@@ -1,0 +1,325 @@
+{
+  "pm_id": "PM-3.7",
+  "pm_name": "GFPI-F-134 Matrix Aggregator + xlsx Renderer",
+  "pm_version": "1.0",
+  "pm_verified_against_prompt": "PM-3.7 — GFPI-F-134 Matrix Aggregator.md (v1.0 Last Verified 2026-04-29 · NACIMIENTO PM-3.7)",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide_id": "Guia-1-Maritime-Operations-Pro",
+  "generated_date": "2026-04-30",
+  "instructor": "Sergio Cortés Perdomo",
+  "phase": 4,
+  "subfase_sena": "3.1 Reflexión Inicial → 3.4 Transferencia (vista agregada hoja 2 PLANEACIÓN · cubre ciclo completo 12 sesiones single-guía absorpción)",
+  "genera_evidencia_formal_gfpi_f134": false,
+  "tipo_artefacto_sena": "vista_agregada_oficial",
+  "xlsx_render_target": "runs/IMARPOR-CC-2026-04-27/pm-3-7-gfpi-f134-matrix.xlsx",
+  "xlsx_template_source": "master-prompts/canon/GFPI-F-134_Vf.xlsx",
+  "programa_metadata": {
+    "programa_nombre": "Inglés Marítimo y Portuario (Curso Complementario)",
+    "programa_codigo_sofia": "12340002",
+    "tipo": "Curso Complementario",
+    "duracion_total_horas": 100,
+    "horas_directas": 72,
+    "horas_autonomas": 28,
+    "sesiones_total": 12,
+    "duracion_sesion_horas": 6,
+    "regla_bloques": "absorcion_Na1",
+    "modalidad": "Presencial",
+    "regional": "Valle del Cauca",
+    "centro_formacion": "Centro Náutico Pesquero de Buenaventura",
+    "guia_numero": 1,
+    "guia_nombre_esp": "The Maritime Operations Pro",
+    "guia_nombre_espanol": "El Profesional de Operaciones Marítimas"
+  },
+  "col_1_fase_proyecto": "Fase única — El Profesional de Operaciones Marítimas (single-guía absorpción de 4 RAPs SOFÍA · Curso Complementario IMARPOR · A1.2 → A2.1 progresión interna en 4 bloques internos de 3 sesiones c/u · 100 horas totales · escenario Puerto de Buenaventura · Terminal de Contenedores)",
+  "col_2_actividad_proyecto": "Recorrido integral de inglés marítimo-portuario: comprender vocabulario portuario y partes del barco (Bloque Interno 1 · A1.2 · RAP-01) · comprender frases estandarizadas SMCP de la OMI por VHF (Bloque Interno 2 · A1.3 · RAP-02) · aplicar gramática operativa en coordinación puerto-buque (Bloque Interno 3 · A2.0 · RAP-03) · describir funciones profesionales del rol portuario ante panel evaluador (Bloque Interno 4 · A2.1 · RAP-04 · Misión Final The CML Port Turnaround)",
+  "col_3_competencia": "240201050 — INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+  "col_4_resultado_aprendizaje": "RAP-CC-INTEGRADO (single-guía absorpción de los 4 RAPs SOFÍA del programa 12340002): (RAP-01) Reconocer vocablos y expresiones básicas en inglés, de forma escrita y auditiva, enmarcados en el desempeño de funciones propias en el sector marítimo y portuario · (RAP-02) Comprender vocablos principales de las frases estandarizadas por la OMI, en inglés, para iniciar la interacción por medio escrito y oral, de acuerdo con los roles descritos dentro de la industria marítima y portuaria · (RAP-03) Aplicar las reglas gramaticales básicas del idioma inglés que garanticen la comunicación sencilla de puerto a buque y viceversa, según las necesidades originadas en el desarrollo de las operaciones marítimas y portuarias · (RAP-04) Describir en inglés las funciones habituales y/o momentáneas propias, del personal y de los elementos que se encuentran en el contexto marítimo y portuario, en el desempeño de sus labores",
+  "col_5_actividades_aprendizaje_a_desarrollar": [
+    {
+      "fase": "3.1 Reflexión Inicial (S1)",
+      "actividad": "Comprender el universo narrativo del Puerto de Buenaventura mediante escenario de llegada de Andrea Mosquera (Spark) y completar Maritime KWL Chart como diagnóstico de saberes previos sobre operaciones portuarias y vocabulario marítimo"
+    },
+    {
+      "fase": "3.2 Contextualización (S2)",
+      "actividad": "Identificar y firmar el Contrato de Aprendizaje (Learning Contract) y abordar el Toolbelt léxico Sub-bloque 1 (bollard · crane · bow · stern · bridge) para iniciar la apropiación del vocabulario portuario básico"
+    },
+    {
+      "fase": "3.3 Apropiación Bloque Interno 1 (S3-S4 · A1.2 · RAP-01)",
+      "actividad": "Comprender la lectura adaptada del textbook UNIT 1 SHIP OVERVIEW (Andrea visita el BUENAVENTURA EXPRESS con Officer Vásquez) mediante jigsaw cooperativo y producir un Inspection Report aplicando verbo to be · imperativo · plurales · preposición IN (Gr 1+3+5+14)"
+    },
+    {
+      "fase": "3.3 Apropiación Bloque Interno 2 (S5-S6 · A1.3 · RAP-02)",
+      "actividad": "Comprender el diálogo VHF auténtico de Captain Lopera (90s con interferencia simulada) e interactuar mediante simulación VHF Response (2 min) aplicando frases estandarizadas SMCP (Roger · Wilco · Affirmative · Standby) · NATO Phonetic Alphabet · imperativo negativo · modal must (Gr 5neg+6+8+17)"
+    },
+    {
+      "fase": "3.3 Apropiación Bloque Interno 3 (S7-S8 · A2.0 · RAP-03)",
+      "actividad": "Aplicar reglas gramaticales (modales should/could/might · pasado simple · presente continuo · presente perfecto · condicional tipo 1 · voz pasiva presente) en escucha tripartita y simulación de Berthing Coordination Tripartite (3 min · Andrea ↔ Diego crane operator + Bosun Romero yard + Captain Lopera VHF)"
+    },
+    {
+      "fase": "3.3 Apropiación cierre Bloque Interno 3-4 (S9 · transición A2.0→A2.1)",
+      "actividad": "Demostrar las 5 master functions IMARPOR (Information Exchange · SMCP literacy · Coordinating Tripartite · Modals · Describing & Justifying) mediante Role Carousel de 5 estaciones con conectores (and/but/or/because/so/although)"
+    },
+    {
+      "fase": "3.3 Apropiación → 3.4 Transferencia (S10 · evaluación integrada)",
+      "actividad": "Resolver el Cuestionario Consolidado S6 (25 ítems · 5 secciones × 5 pts: Reading + Writing + Listening + Vocabulary + Grammar · Versión 2 EVALUACIÓN principio Tres Versiones) y recibir brief de la Misión Final CML Port Turnaround del Capitán Restrepo"
+    },
+    {
+      "fase": "3.4 Transferencia diseño (S11 · A2.1 · RAP-04)",
+      "actividad": "Diseñar el plan operacional CML CARRIER 12h aplicando estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to) · tag questions · Berthing Coordination Memo · Radio Log template · ensayo cronometrado del pitch profesional 3 min"
+    },
+    {
+      "fase": "3.4 Transferencia desempeño (S12 · A2.1 · RAP-04 · Misión Final)",
+      "actividad": "Demostrar el rol profesional Port Operations Trainee mediante simulación operacional CML Port Turnaround condensada 3h (VHF intake con Captain Lopera · Berthing tripartito · Pitch profesional 3 min ante panel · Q&A con tag questions · Reflexión metacognitiva)"
+    }
+  ],
+  "col_6_horas_trabajo_directo": 72,
+  "col_7_horas_trabajo_independiente": 28,
+  "col_8_estrategias_didacticas_activas": [
+    "Aprendizaje Basado en Tareas (ABT/TBLT) — estrategia dominante en Apropiación S2-S9 con productos verificables (classification · inspection report · VHF response · berthing memo · pitch ensayo)",
+    "Aprendizaje Basado en Proyectos (ABP) — apertura motivacional S1 (escenario llegada de Andrea) y transferencia S11-S12 (Misión Final CML Port Turnaround con fases Planeación → Diseño → Desempeño → Presentación → Evaluación reflexiva)",
+    "Diagnóstico activador — Gap Analysis + Maritime KWL Chart + Learning Contract (S1-S2) para activar saberes previos y comprometer al aprendiz con su ruta",
+    "Simulación marítima auténtica — VHF Response Drill con Captain Lopera (S6 · lingua franca B1) y Berthing Coordination Tripartite con 3 actores simultáneos (S8) usando radios VHF simuladas y SMCP estandarizado",
+    "Pre-enseñanza léxica vía Toolbelt + Word Wall maritime permanente — 25 términos × 4 sub-bloques (5 por bloque interno) con IPA + categoría + reciclaje sesión a sesión",
+    "Lectura cooperativa Jigsaw + andamiaje gramatical inductivo — textbook UNIT 1 SHIP OVERVIEW adaptado (S3) y inducción gramatical contextualizada (S4 · S7) sin metalenguaje excesivo",
+    "Pronunciation lab + drilling SMCP/NATO Phonetic — laboratorio de stress crítico (Roger / Wilco / Affirmative / Standby) y deletreo NATO con Reference Cards laminadas permanentes desde S5",
+    "Evaluación Formativa Integrada + reflexión metacognitiva — Cuestionario S6 + portafolio + autoevaluación 22-item PM-0 §7 (S10) y reflexión 'What I see now that I did not see on Day 1' (S12)"
+  ],
+  "col_9_ambiente": "Aula convencional bilingüe con adaptaciones marítimo-portuarias por sesión: Maritime Word Wall permanente · SMCP/NATO Phonetic Reference Cards laminadas · English Zone señalizada · acceso a biblioteca de referencias OMI (textbook + SMCP doc + videos canal IMO YouTube) · radios VHF simuladas (walkie-talkies o app móvil) · configuración variable por sesión (mesas en U para input pesado · estaciones para producción oral · individuales para evaluación · aula-taller con CML CARRIER mockup para Studio Showcase final)",
+  "col_10_materiales_formacion": [
+    "Proyector con pantalla grande + tablero blanco grande",
+    "Maritime Word Wall permanente (muro lateral) actualizado sesión a sesión con 25 términos Toolbelt + 30+ SMCP key phrases",
+    "SMCP Reference Card laminada (1 por aprendiz · permanente desde S5)",
+    "NATO Phonetic Alphabet Reference Card (1 por aprendiz · permanente desde S5)",
+    "Mapa del Terminal de Contenedores Buenaventura impreso A2 (muro frontal)",
+    "Diagrama Ship Overview impreso A2 (muro lateral)",
+    "Cronómetro visible · cinta de color para señalizar English Zone",
+    "Textbook Maritime English (UNIT 1 SHIP OVERVIEW · UNIT 2 THE CREW · UNIT 3 PLACES IN PORT · UNIT 4 IN PORT · UNIT 5 SMCP) — adaptado para A1.2→A2.1",
+    "Documento OMI SMCP 2001 — Standard Marine Communication Phrases (referencia de docente)",
+    "Selección curada de videos canal IMO YouTube (anchorage · pilot boarding · cargo handling) para Listening cloze",
+    "Walkie-talkies o app móvil VHF para Speaking simulations (S6 VHF Response · S8 Berthing Tripartite · S12 CML Port Turnaround)",
+    "Maritime KWL Chart · Gap Analysis worksheet · Learning Contract (S1-S2)",
+    "Inspection Report frame · Berthing Coordination Memo template · Radio Log template · Post-Turn Report frame",
+    "Cuestionario Consolidado S6 (25 ítems) impreso · Rúbrica ABP 6 criterios C01-C13 para Misión Final"
+  ],
+  "col_11_instructores_responsables": "Sergio Cortés Perdomo — Instructor de Inglés Marítimo y Portuario (FPI SENA Bilingüismo · sergiocoper@gmail.com · responsable único de la guía · Centro Náutico Pesquero de Buenaventura · Regional Valle del Cauca)",
+  "col_12_criterios_evaluacion": [
+    "Reconocer vocabulario portuario y partes del barco en textos auténticos adaptados (RAP-01 · A1.2 · evidenciado en E1 Reading S3 · Cuestionario No 1)",
+    "Producir reportes escritos básicos (Inspection Report) aplicando verbo to be · imperativo · plurales · preposición IN sin errores que comprometan la inteligibilidad operativa (RAP-01/03 · A1.2-A1.3 · evidenciado en E2 Writing S4 · Lista de Verificación No 2)",
+    "Comprender frases estandarizadas SMCP de la OMI en audio auténtico VHF (incluyendo lingua franca B1 no-nativa) e identificar mensajes correctos vs distractores (RAP-02 · A1.3 · evidenciado en E3 Listening S5 · Lista de Verificación No 3)",
+    "Interactuar oralmente vía VHF respondiendo con SMCP estandarizado y deletreando con NATO Phonetic Alphabet con stress correcto en respuestas críticas (Roger · Wilco · Affirmative · Standby) (RAP-02/03 · A1.3-A2.0 · evidenciado en E4 Speaking parcial S6 · Escala de Estimación No 4)",
+    "Coordinar operaciones tripartitas de berthing aplicando modales · condicional tipo 1 · voz pasiva · presente perfecto en intercambio simultáneo con 3 actores (RAP-03 · A2.0 · evidenciado en E4 Speaking final S8 · Escala de Estimación No 4)",
+    "Aplicar las 5 master functions IMARPOR con conectores (and/but/or/because/so/although) en Role Carousel de 5 estaciones (RAP-03/04 · A2.0-A2.1 · evidenciado en E5 Language Functions S9 · Escala de Estimación No 5)",
+    "Demostrar dominio integrado de saberes (Reading + Writing + Listening + Vocabulary + Grammar) en Cuestionario Consolidado S6 (25 ítems · ≥ 70% para PASS) (RAP-01/02/03/04 · evidenciado en E6 Cuestionario S6 · Cuestionario No 6)",
+    "Describir funciones profesionales del rol portuario aplicando estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to) y tag questions producción ante panel evaluador (RAP-04 · A2.1 · evidenciado en E-Misión S12 · Rúbrica ABP 6 criterios C01-C13)"
+  ],
+  "col_13_descripcion_evidencia_aprendizaje": "Seis (6) evidencias formales del ciclo SENA + Misión Final ABP para totalizar 55 puntos canon. (E1) Cuestionario No 1 Reading 5 pts (S3 · técnica Formulación de preguntas · fuente PM-2.3) — comprensión del textbook UNIT 1 SHIP OVERVIEW adaptado. (E2) Lista de Verificación No 2 Writing 5 pts (S4 · técnica Valoración de producto · fuente PM-2.4) — Inspection Report 1 página con peer review. (E3) Lista de Verificación No 3 Listening 5 pts (S5 · técnica Valoración de producto/ejecución · fuente PM-2.6) — comprensión VHF dialogue Captain Lopera. (E4) Escala de Estimación No 4 Speaking 5 pts (S6 parcial VHF + S8 final Berthing · técnica Observación · fuente PM-2.8) — VHF Response Simulation + Berthing Coordination Tripartite. (E5) Escala de Estimación No 5 Language Functions 5 pts (S9 · técnica Observación · fuente PM-2.9) — Role Carousel 5 master functions IMARPOR. (E6) Cuestionario No 6 Consolidado S6 25 pts (S10 · técnica Formulación de preguntas · fuente PM-4.2 · Versión 2 EVALUACIÓN principio Tres Versiones · 5 secciones × 5 pts: Reading + Writing + Listening + Vocabulary + Grammar). (E-Misión) Misión Final 5 pts (S12 · técnica Valoración de desempeño · Rúbrica ABP 6 criterios C01-C13) — simulación operacional CML Port Turnaround condensada 3h con pitch profesional ante panel.",
+  "col_14_observaciones": "Guía 1 IMARPOR-CC · single-guía absorpción (regla_bloques: absorcion_Na1) · 12 sesiones de 6h directas + 2.33h autónomas c/u = 100h totales (72h directas + 28h autónomas). Curso Complementario que absorbe los 4 RAPs SOFÍA del programa 12340002 en una guía única intensiva (no fragmentado en 4 guías separadas porque el escenario Puerto de Buenaventura · Captain Lopera es un continuo único pedagógicamente). Progresión CEFR A1.2 → A2.1 vive INTERNAMENTE en 4 bloques internos de 3 sesiones c/u (1 por RAP). Universo narrativo permanente: Andrea Mosquera (Port Operations Trainee · avatar aprendiz) · Capitán Restrepo (Port Captain · evaluador panel) · Captain Lopera (Vessel Master BUENAVENTURA EXPRESS · cliente externo lingua franca B1). Misión Final = 'The CML Port Turnaround' (S11-S12 ABP). Documento interno del instructor — no distribuir a aprendices. Vista agregada oficial SENA derivada de pm-2-11 + pm-3-1 + 12 pm-3-2-sX + pm-4-1 + pm-4-2 (ver derivations_log).",
+  "saberes_conceptos_y_principios": [
+    "Vocabulario portuario y partes del barco (Sub-bloque 1 RAP-01 · A1.2): bollard · crane · bow · stern · bridge · ship overview · UNIT 1 textbook · UNIT 3 places in port",
+    "Frases estandarizadas SMCP de la OMI (Sub-bloque 2 RAP-02 · A1.3): Roger · Wilco · Affirmative · Negative · Standby · Out · Over · Say again · Spell that · I read you back as",
+    "NATO Phonetic Alphabet completo (26 letras Alpha-Zulu) y message markers OMI (Question · Answer · Request · Information · Warning · Advice · Instruction · Intention)",
+    "Vocabulario de operaciones portuarias (Sub-bloque 3 RAP-03 · A2.0): berthing · mooring · departure · cargo handling · anchor",
+    "Estructuras ocupacionales (Sub-bloque 4 RAP-04 · A2.1): responsible for · specialize in · coordinate · supervise · report to · my role involves · I have experience with",
+    "Silabus gramatical FPI SENA 17 grupos distribuidos por bloque interno: Gr 1 verbo be · Gr 2 pronombres · Gr 3 plurales · Gr 4 comparativos/superlativos · Gr 5 imperativo afirmativo/negativo · Gr 6 modales (must/should/could/might) · Gr 8 presente simple · Gr 9 pasado simple · Gr 10 presente continuo · Gr 11 presente perfecto · Gr 12 condicional tipo 1 · Gr 13 voz pasiva · Gr 14 preposición IN · Gr 15 conectores · Gr 16 tag questions · Gr 17 maritime SMCP sector",
+    "Principios pedagógicos PM-0 §5.1-§5.13 contextualizados al sector marítimo-portuario (curva L1% per session · carga gramatical ≤ 2 grupos Intro/sesión · pm0_protocol obligatorio)",
+    "Marco MCER A1.2 → A2.1 con descriptores por bloque interno (pm-0-context cefr_descriptors_per_guide[0])",
+    "Funciones comunicativas marítimas (8 funciones del programa absorpción): naming and identifying · confirming SMCP messages · spelling NATO Phonetic · coordinating tripartite operations · expressing prohibition/permission/possibility/requests · describing professional functions · justifying decisions · confirming with tag questions"
+  ],
+  "saberes_procesos": [
+    "Comprender lectura adaptada de textbook UNIT 1 SHIP OVERVIEW mediante jigsaw cooperativo y clasificación de partes del barco (S3)",
+    "Producir Inspection Report 1 página con peer review aplicando frame guiado y gramática Sub-bloque 1 (S4)",
+    "Comprender diálogo VHF auténtico (90s con interferencia simulada · lingua franca B1 Captain Lopera) e identificar SMCP key phrases (S5)",
+    "Interactuar oralmente vía VHF Response Simulation 2 min con stress crítico en respuestas SMCP y deletreo NATO Phonetic (S6)",
+    "Aplicar listening cloze SMCP en 3 audios reales canal IMO YouTube (anchorage · pilot boarding · cargo handling) y completar Radio Log con timestamps (S7)",
+    "Coordinar Berthing Coordination Tripartite 3 min con 3 actores simultáneos (Diego crane + Bosun Romero yard + Captain Lopera VHF) aplicando gramática Bloque Interno 3 (S8)",
+    "Demostrar 5 master functions IMARPOR en Role Carousel de 5 estaciones con conectores (S9)",
+    "Resolver Cuestionario Consolidado S6 25 ítems en 5 secciones (Reading · Writing · Listening · Vocabulary · Grammar · Versión 2 EVALUACIÓN) y autoevaluarse con 22-item checklist PM-0 §7 (S10)",
+    "Diseñar plan operacional CML CARRIER 12h con Berthing Memo + Radio Log + ensayo pitch 3 min cronometrado (S11)",
+    "Demostrar rol Port Operations Trainee en simulación CML Port Turnaround 3h con VHF intake + Berthing tripartito + Pitch ante panel + Q&A tag questions + Reflexión metacognitiva (S12)",
+    "Mantener portafolio personal con todas las evidencias E1-E6 + Misión Final + reflexiones metacognitivas a lo largo de las 12 sesiones",
+    "Completar trabajo autónomo (~2.33h por sesión × 12 = 28h) con KWL Chart · audios 30s vocabulario · diagramas etiquetados · Radio Log · NATO spelling · Inspection Report práctica · Berthing Memo · Post-Turn Report · video 90s funciones · canvas Misión Final"
+  ],
+  "validation_checks": {
+    "total_checks": 12,
+    "pass_count": 12,
+    "fail_count": 0,
+    "veredicto": "PASS 12/12",
+    "checks": [
+      {
+        "check_id": "Check 1",
+        "name": "14 cols xlsx Vf populated (no nulls en cols 3, 4, 6, 7, 12, 13 obligatorias)",
+        "status": "PASS",
+        "detail": "14/14 columnas pobladas · cols obligatorias 3 (competencia 240201050) · 4 (RAP-CC-INTEGRADO 4 RAPs absorbidos) · 6 (72h) · 7 (28h) · 12 (8 criterios) · 13 (6 evidencias + Misión) NO null."
+      },
+      {
+        "check_id": "Check 2",
+        "name": "Horas suma correcta: col_6 + col_7 == upstream",
+        "status": "PASS",
+        "detail": "72 + 28 = 100h matches pm-1-1.duracion_total_horas (100) · pm-1-1.horas_directas_total (72) · pm-1-1.horas_autonomas_total (28) · pm-3-1.intensidad_total_horas (100). 12 sesiones × 6h directas = 72h · 12 × 2.33h autónomas ≈ 28h. Suma exacta canon."
+      },
+      {
+        "check_id": "Check 3",
+        "name": "Estrategias didácticas son síntesis · NO copy-paste 12 ACs (length(col_8) ≤ 8 items)",
+        "status": "PASS",
+        "detail": "col_8_estrategias_didacticas_activas tiene 8 items agregación pedagógica (ABT · ABP · Diagnóstico · Simulación marítima · Toolbelt+Word Wall · Jigsaw+andamiaje gramatical · Pronunciation lab+drilling · Evaluación Formativa Integrada+metacognición). REGLA 2 cumplida — NO listadas 12 estrategias por sesión separadas."
+      },
+      {
+        "check_id": "Check 4",
+        "name": "Competencia (col_3) + RAP (col_4) exact match con upstream",
+        "status": "PASS",
+        "detail": "col_3 = '240201050 INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO...' exact match pm-1-1.competencia.codigo + enunciado. col_4 = RAP-CC-INTEGRADO con enunciados literales exact match pm-1-1.raps[0..3] + pm-3-1.header.rap_codigo."
+      },
+      {
+        "check_id": "Check 5",
+        "name": "Ambiente + Materiales + Instructores cross-validate vs upstream (no inventar)",
+        "status": "PASS",
+        "detail": "col_9 ambiente derivado exact pm-3-1.ambientes_resumen (aula convencional + adaptaciones marítimo-portuarias). col_10 materiales derivados exact pm-3-1.recursos_fijos (9 ítems base) + pm-1-2.fichas_curadas (textbook + SMCP doc + IMO videos) + Activity Cards templates. col_11 instructor exact pm-0-context.instructor (Sergio Cortés Perdomo) + pm-1-1.regional/centro derivado."
+      },
+      {
+        "check_id": "Check 6",
+        "name": "Criterios evaluación (col_12) coherentes con evidencias (col_13) · cross-reference",
+        "status": "PASS",
+        "detail": "Los 8 criterios col_12 mapean a las 6 evidencias E1-E6 + Misión col_13 vía referencia explícita: Criterio 1 → E1 · Criterio 2 → E2 · Criterio 3 → E3 · Criterio 4 → E4 parcial S6 · Criterio 5 → E4 final S8 · Criterio 6 → E5 · Criterio 7 → E6 · Criterio 8 → E-Misión. Cross-reference completa con pm-4-1 (6 instrumentos) + pm-4-2 (cuestionario consolidado 25pts)."
+      },
+      {
+        "check_id": "Check 7",
+        "name": "CHECK 9 anti-copia-fantasma vs MGV xlsx · 0 universe leaks",
+        "status": "PASS",
+        "detail": "Universo IMARPOR-CC consistente: 0 motocicleta · 0 mecanica automotriz · 0 contaminación cast cross-program. Términos validados: Puerto de Buenaventura · Terminal de Contenedores · BUENAVENTURA EXPRESS · CML CARRIER · Andrea Mosquera · Capitán Restrepo · Captain Lopera · SMCP · NATO Phonetic · VHF · berthing · mooring. Cero leaks de MGV (industria gastronómica) o DIESEL (motocicleta). REGLA canon §15.20 cumplida."
+      },
+      {
+        "check_id": "Check 8",
+        "name": "xlsx render target valid path · file writable · NO sobreescribir template",
+        "status": "PASS",
+        "detail": "xlsx_render_target = 'runs/IMARPOR-CC-2026-04-27/pm-3-7-gfpi-f134-matrix.xlsx' (NEW file en runs · NO sobreescribe). xlsx_template_source = 'master-prompts/canon/GFPI-F-134_Vf.xlsx' (read-only canon). Render diferido a wrapper subagente_pm_3_7_gfpi_f134_matrix.py + lib/xlsx_renderer.py (Hito-Fase3-4 task list pendiente · post bump PLAN v1.4)."
+      },
+      {
+        "check_id": "Check 9",
+        "name": "Tono SENA formal: verbos infinitivos · sin coloquialismos · sin segunda persona",
+        "status": "PASS",
+        "detail": "Verbos infinitivos canon SENA aplicados consistentemente en col_5 actividades (Comprender · Identificar · Aplicar · Demostrar · Resolver · Diseñar · Producir · Coordinar · Interactuar · Mantener · Reconocer) y col_12 criterios (Reconocer · Producir · Comprender · Interactuar · Coordinar · Aplicar · Demostrar · Describir). REGLA 3 cumplida. 0 imperativos · 0 segunda persona · 0 coloquialismos."
+      },
+      {
+        "check_id": "Check 10",
+        "name": "CEFR level consistente con pm-1-2.cefr_level",
+        "status": "PASS",
+        "detail": "CEFR 'A1.2 → A2.1 (single-guía con progresión interna)' consistente cross-source: pm-0-context.rango_cefr · pm-1-1.cefr_range · pm-1-2.cefr_level · pm-3-1.header.cefr_level. Bloques internos A1.2/A1.3/A2.0/A2.1 documentados en col_1 + col_2 + col_4 + col_14 + saberes_conceptos."
+      },
+      {
+        "check_id": "Check 11",
+        "name": "enriched: false marcado (Gate Humano 4 Derivados pendiente)",
+        "status": "PASS",
+        "detail": "enriched: false con _enriched_false_rationale documentando Gate Humano 4 (aprobación derivados Fase 4) pendiente. Sergio aprobará post-generación cambiando enriched: true."
+      },
+      {
+        "check_id": "Check 12",
+        "name": "cross_references populadas (alimenta_a + consume_de PMs upstream)",
+        "status": "PASS",
+        "detail": "cross_references completo con alimenta_a (3 audiencias) · consume_de (7 fuentes upstream incluyendo pm-3-5 Final Mission del Hito 3 cerrado) · no_consume_de (paralelismo Phase 4 con PM-3.3/3.4/3.6)."
+      }
+    ]
+  },
+  "cross_references": {
+    "alimenta_a": [
+      "Instructor (entrega curricular oficial SENA · plantilla GFPI-F-134_Vf.xlsx hoja 2 PLANEACIÓN poblada · revisión pre-Gate 4)",
+      "Coordinación académica del Centro Náutico Pesquero de Buenaventura (revisión Gate Humano 4 Derivados Fase 4)",
+      "Auditoría SENA SOFÍA Plus (entregable formal del programa 12340002 si requerido para reporte oficial)"
+    ],
+    "consume_de": {
+      "pm0_context": "Fase Proyecto · Actividad Proyecto · Saberes derivables (universo_narrativo + grammar_roadmap + grammar_group_17_sector) · datos institucionales (instructor + programa_codigo_sofia + tipo + duracion_total_horas + final_mission_scenario)",
+      "pm11": "Competencia 240201050 enunciado literal · 4 RAPs SOFÍA enunciados literales · horas_directas_total (72) · horas_autonomas_total (28) · sesiones_proyectadas_total (12) · regla_bloques (absorcion_Na1) · final_mission_scenario · ambiente_productivo · funciones_comunicativas (8)",
+      "pm12": "key_vocabulary 25 términos (5 × 4 sub-bloques) · communicative_functions · language_functions_in_context (4 sub-bloques A1.2/A1.3/A2.0/A2.1) · 3 fichas curadas (textbook + SMCP doc + IMO YouTube videos) · cefr_level",
+      "pm211": "col_7_horas (per_session × 12 = 72h directas + 28h autónomas) · col_9_instrumentos (PM-4.1 + PM-4.2) · validation_16_checks PASS 14/16 ready_for_phase_3=true",
+      "activity_cards_9": "Estrategias didácticas embedded · Actividades de apropiación S2-S5 (ACs 9 sin pm-2-7 deprecated): pm-2-1 Spark · pm-2-2 Gap Analysis · pm-2-3 Reading Anchor · pm-2-4 Writing Task-Based · pm-2-5 Vocabulary Toolbelt · pm-2-6 Listening SMCP · pm-2-8 Speaking Mission · pm-2-9 Language Functions · pm-2-10 Grammar Structure Use",
+      "pm31": "estrategias_resumen (ciclo SENA 3.1-3.4 + estrategia_dominante_por_sesion 12 entries) YA agregado · ambientes_resumen (recursos_fijos + tipo_ambiente) YA agregado · overview_table 12 sesiones · skills_progression_map · pm0_alignment_by_session",
+      "pm32_sessions_12": "Contextual sessions detail S1-S12 (build-outs 12 ejecuciones PM-3.2 · SET-UP/WHILE/WRAP-UP · logistics_box completos · pm0_alignment heredado vía script pm-3-2-pm0-propagate.js v2.5.1)",
+      "pm35": "Final Mission CML Port Turnaround (5 fases ABP) · S11-S12 transferencia · Hito 3 cerrado",
+      "pm41": "6 instrumentos formales (E1 Cuestionario Reading + E2 Lista Verificación Writing + E3 Lista Verificación Listening + E4 Escala Estimación Speaking + E5 Escala Estimación Language Functions + E6 Cuestionario S6 referenciado a PM-4.2) · 25pts + 25pts = 50pts canon",
+      "pm42": "Cuestionario Consolidado S6 · 5 secciones × 5 pts (Reading + Writing + Listening + Vocabulary + Grammar) · 25 pts · 25 ítems · Versión 2 EVALUACIÓN principio Tres Versiones"
+    },
+    "no_consume_de": [
+      "pm33 — Speaking Mission Tracker (paralelo Phase 4)",
+      "pm34 — Final Mission ABP Plan refinado (paralelo Phase 4 · si distinto de pm35)",
+      "pm36 — GFPI-F-135 Acta de Inicio (paralelo Phase 4)"
+    ]
+  },
+  "enriched": false,
+  "_enriched_false_rationale": "Gate Humano 4 Derivados Fase 4 pendiente. Sergio aprueba pm-3-7.json post-generación cambiando enriched: true previo a render xlsx (subagente_pm_3_7_gfpi_f134_matrix.py + lib/xlsx_renderer.py · pendiente bump PLAN-FASE-3 v1.3 → v1.4 per REGLA 21 trigger mutual). PM-3.7 v1.0 NACIMIENTO 2026-04-29 · primera ejecución IMARPOR-CC piloto antes de escalar.",
+  "derivations_log": [
+    {
+      "campo": "col_1_fase_proyecto",
+      "fuente_directa": "Ninguna (pm-2-11 col vacíos · pm-1-1 sin proyecto_formativo_articulador per regla_bloques absorcion_Na1)",
+      "derivacion": "Sintetizado de pm-1-1.bloques[0].nombre_espanol ('El Profesional de Operaciones Marítimas') + pm-1-1._omision_articulador_rationale (single-guía Curso Complementario sin arco entre guías) + pm-0-context.programa_nombre + pm-1-1.cefr_range + pm-0-context.universo_narrativo.escenario_principal. Justificación: Curso Complementario con regla_bloques absorcion_Na1 NO tiene proyecto_formativo_articulador · final_mission_scenario reemplaza el arco · 'Fase única' es la representación canónica de single-guía absorpción."
+    },
+    {
+      "campo": "col_2_actividad_proyecto",
+      "fuente_directa": "Parcial pm-1-1.bloques[0].funciones_comunicativas + tema_tecnico_principal",
+      "derivacion": "Sintetizado de pm-1-1.bloques[0].funciones_comunicativas (8 funciones) + pm-1-1.bloques[0].tema_tecnico_principal + pm-0-context.grammar_roadmap.activation_mapping_internal_blocks (4 bloques internos) + pm-3-1.header.guia_nombre. Estructurado per los 4 bloques internos A1.2/A1.3/A2.0/A2.1 con verbos infinitivos canon SENA (Comprender · Aplicar · Describir)."
+    },
+    {
+      "campo": "col_3_competencia",
+      "fuente_directa": "pm-1-1.competencia.codigo (240201050) + pm-1-1.competencia.enunciado (literal)",
+      "derivacion": "Cita literal del campo pm-1-1.competencia (NO inventar · NO sustituir · REGLA 5 consistencia DM canon)."
+    },
+    {
+      "campo": "col_4_resultado_aprendizaje",
+      "fuente_directa": "pm-1-1.raps[0..3] (literal) + pm-3-1.header.rap_codigo (RAP-CC-INTEGRADO)",
+      "derivacion": "Concatenación literal de los 4 RAPs SOFÍA enunciados (RAP-01 a RAP-04) prefijados con etiqueta 'RAP-CC-INTEGRADO (single-guía absorpción)' per regla_bloques absorcion_Na1. NO inventar · cita literal upstream."
+    },
+    {
+      "campo": "col_5_actividades_aprendizaje_a_desarrollar",
+      "fuente_directa": "Parcial · pm-3-1.overview_table 12 sesiones (foco + momento_sena + bloque_interno)",
+      "derivacion": "Síntesis pedagógica de pm-3-1.overview_table[0..11] agrupando por momento_sena (3.1 → 3.2 → 3.3 → 3.4) y bloque_interno (1/2/3/4) en 9 entradas representativas (NO 12 separadas) + 9 ACs apropiación + pm-3-2-sX context · Cubre ciclo completo S1 (Reflexión) → S12 (Transferencia desempeño Misión Final)."
+    },
+    {
+      "campo": "col_6 + col_7 horas",
+      "fuente_directa": "pm-2-11.col_7_horas.per_session (12 entries × 6h directas + 2.33h autónomas)",
+      "derivacion": "Suma per_session: 12 × 6h = 72h directas (col_6). 12 × 2.333333h = 28h autónomas (col_7). Cross-validated contra pm-1-1.horas_directas_total (72) + horas_autonomas_total (28) + pm-3-1.intensidad_total_horas (100). Nota: pm-2-11.col_7_horas.direct_total y autonomous_total están en 0 (shells null) · derivación correcta vía suma per_session per master prompt §INPUT REQUERIDO."
+    },
+    {
+      "campo": "col_8_estrategias_didacticas_activas",
+      "fuente_directa": "pm-3-1.estrategias_resumen (ciclo_sena + estrategia_dominante_por_sesion)",
+      "derivacion": "Síntesis pedagógica de pm-3-1.estrategias_resumen.ciclo_sena (4 estrategias arco SENA) + estrategia_dominante_por_sesion (12 entries) + 9 ACs estrategias embedded · Agregadas en 8 items canon SENA (REGLA 2 síntesis no-redundante · NO listar 12 separadas). Estrategias canon catálogo: ABT/TBLT · ABP · Diagnóstico · Simulación · Toolbelt+Word Wall · Jigsaw+andamiaje · Pronunciation lab · Evaluación Formativa Integrada."
+    },
+    {
+      "campo": "col_9_ambiente",
+      "fuente_directa": "pm-3-1.ambientes_resumen.tipo_ambiente + ambientes_resumen.nota",
+      "derivacion": "Cita derivada de pm-3-1.ambientes_resumen (string completo nota + tipo_ambiente integrado) + pm-1-1.ambiente_productivo (Puerto de Buenaventura · Terminal de Contenedores · turno de día). pm-2-11.col_10_ambientes.types está empty list (shell null) · derivación correcta vía pm-3-1 per master prompt §INPUT REQUERIDO."
+    },
+    {
+      "campo": "col_10_materiales_formacion",
+      "fuente_directa": "pm-3-1.ambientes_resumen.recursos_fijos (9 items) + pm-1-2.fichas_curadas (3) + Activity Cards templates",
+      "derivacion": "Concatenación pm-3-1.ambientes_resumen.recursos_fijos (Word Wall + SMCP cards + NATO cards + mapa A2 + diagrama Ship + cronómetro + cinta English Zone + proyector + tablero) + pm-1-2.bloque_A.materiales_curados (textbook + SMCP doc + IMO YouTube) + Activity Cards templates referenciados (KWL · Gap Analysis · Learning Contract · Inspection Report · Berthing Memo · Radio Log · Post-Turn Report · Cuestionario S6 · Rúbrica ABP). pm-2-11.col_10.materials shell null · derivación correcta."
+    },
+    {
+      "campo": "col_11_instructores_responsables",
+      "fuente_directa": "pm-0-context.instructor (Sergio Cortés Perdomo) + pm-3-1.instructor + pm-1-1.regional",
+      "derivacion": "Composición pm-0-context.instructor + sergiocoper@gmail.com (memoria userEmail) + Centro Náutico Pesquero de Buenaventura (centro de formación derivable de programa marítimo + Buenaventura) + Regional Valle del Cauca (Buenaventura es Valle del Cauca). Single instructor canon."
+    },
+    {
+      "campo": "col_12_criterios_evaluacion",
+      "fuente_directa": "Parcial · pm-1-1.raps + pm-1-1.bloques[0].funciones_comunicativas + pm-4-1.instrumentos.criterios + pm-3-1.skills_progression_map",
+      "derivacion": "Síntesis de criterios alineados a las 6 evidencias E1-E6 + Misión + RAPs absorbidos. pm-2-11.col_5_criterios_evaluacion y col_11_criterios_detallados están null (shells) · derivación correcta vía RAPs + funciones comunicativas + skills progression + cross-reference a pm-4-1 instrumentos templates (criterios marcados '[A COMPLETAR POR INSTRUCTOR]' en pm-4-1 · agregados acá en forma sintetizada con verbos infinitivos canon SENA)."
+    },
+    {
+      "campo": "col_13_descripcion_evidencia_aprendizaje",
+      "fuente_directa": "pm-4-1.instrumentos (6) + pm-4-2.secciones (5) + pm-3-1.overview_table.evidencia",
+      "derivacion": "Síntesis literal de las 6 evidencias canon (E1 Cuestionario Reading 5pts S3 · E2 Lista Verificación Writing 5pts S4 · E3 Lista Verificación Listening 5pts S5 · E4 Escala Estimación Speaking 5pts S6+S8 · E5 Escala Estimación Language Functions 5pts S9 · E6 Cuestionario Consolidado S6 25pts · E-Misión Rúbrica ABP 5pts S12) totalizando 55 pts canon (50 instrumentos + 5 Misión Final). Cross-validated pm-2-11.col_8_evidencias empty (shell) y pm-2-11.col_9_instrumentos_evaluacion ('PM-4.1 + PM-4.2')."
+    },
+    {
+      "campo": "col_14_observaciones",
+      "fuente_directa": "pm-1-1._omision_articulador_rationale + pm-1-1.regla_bloques + pm-3-1.header.nota + pm-0-context.universo_narrativo",
+      "derivacion": "Síntesis contextual single-guía absorpción IMARPOR-CC: regla_bloques absorcion_Na1 + 12 sesiones × 6h = 100h + progresión interna A1.2→A2.1 + universo permanente Andrea+Lopera+Restrepo + Misión Final CML Port Turnaround + nota 'Documento interno del instructor — no distribuir a aprendices' (pm-3-1.header.nota literal) + nota vista agregada (PM-3.7 v1.0 NACIMIENTO)."
+    },
+    {
+      "campo": "saberes_conceptos_y_principios",
+      "fuente_directa": "pm-0-context.grammar_roadmap + grammar_group_17_sector + universo_narrativo + pm-1-2.key_vocabulary_20_exact + cefr_level",
+      "derivacion": "Síntesis explícita de saberes conceptuales NO surface as named field en pm-0-context · derivados de grammar_roadmap.silabus_source (17 grupos FPI SENA §5.6) + grammar_group_17_sector (SMCP + NATO + message markers + occupational A2.1) + pm-1-2.key_vocabulary 25 términos × 4 sub-bloques + funciones comunicativas. NO en xlsx hoja 2 directly per master prompt §OUTPUT ESPERADO · contexto útil + posible inclusión observaciones."
+    },
+    {
+      "campo": "saberes_procesos",
+      "fuente_directa": "pm-3-1.overview_table.foco + autonomo + pm-3-2-sX sessions detail + 9 ACs activity descriptions",
+      "derivacion": "Síntesis de los 12 procesos clave por sesión (foco + autonomous detail) + procesos transversales (portafolio · trabajo autónomo 28h). NO en xlsx hoja 2 directly · contexto útil para auditoría pedagógica."
+    }
+  ]
+}

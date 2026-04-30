@@ -10,8 +10,8 @@
 |-------|-------|
 | **Código** | PM-3.7 |
 | **Nombre** | GFPI-F-134 Matrix Aggregator + xlsx Renderer |
-| **Versión** | 1.0 |
-| **Last Verified** | 2026-04-29 |
+| **Versión** | 2.0 |
+| **Last Verified** | 2026-04-30 |
 | **Ubicación** | Fase 4 (derivado estudiante/instructor) · paralelo a PM-3.3 + PM-3.4 + PM-3.6 · post Gate 3 |
 | **Output** | (1) `pm-3-7.json` · datos organizados per 14 cols xlsx Vf canon · (2) `pm-3-7.xlsx` · plantilla GFPI-F-134_Vf.xlsx hoja 2 poblada |
 | **Rol en el sistema** | Agrega información distribuida en Phase 1+2+3 outputs · sintetiza por columna xlsx Vf · renderiza plantilla oficial SENA lista para entrega instructor |
@@ -390,3 +390,123 @@ master-prompts/canon/
 
 *PM-3.7 v1.0 · escrito 2026-04-29 (nacimiento · post Hito 2 Fase 3 cerrado · pre PLAN bump v1.4)*
 *Próximo paso: build wrapper `subagente_pm_3_7_gfpi_f134_matrix.py` (Hito-Fase3-4 post Hito 3) + xlsx renderer `lib/xlsx_renderer.py` + bump PLAN-FASE-3 v1.3 → v1.4*
+
+---
+
+## EXTENSIÓN v2.0 — CANON V04 OFICIAL SENA (2026-04-30)
+
+> [!warning] Decisión arquitectónica · V04 reemplaza Vf como canon oficial
+>
+> **Trigger:** Sergio detectó que el formato oficial SENA actualizado es **GFPI-F-134 V04** (no Vf · Vf era versión April 2022 ahora obsoleta). El 2026-04-30 Sergio compartió plantilla V04 con datos manualmente diligenciados para IMARPOR-CC como ground truth de cómo debe verse pm-3-7.xlsx output.
+>
+> **Decisión (Opción III):** V04 es CANON OFICIAL · Vf permanece como reference legacy para programas pre-2026-04 que ya consumieron PM-3.7 v1.0. Programas nuevos generan con v2.0 strict.
+
+### REGLA 8 — V04 SHAPE: 1 HOJA · MULTI-RAP ROWS
+
+| Aspecto | Canon Vf (v1.0 · legacy) | Canon V04 (v2.0 · OFICIAL) |
+|---|---|---|
+| Hojas | 5 (`ANALISIS`, `PLANEACIÓN`, `EJECUCION`, `EVALUACION`, `INSTRUCTIVO`) | **1 sola** (`PLANEACIÓN POR RAPS`) |
+| Estructura datos | 14 cols · single-row 1 RAP | 14 cols · **multi-row · 1 row por RAP** (R15+) |
+| Header rows | R23-R24 hoja 2 | R13-R14 hoja única |
+| Data rows | R25 (single) | R15, R16, R17, ... R21 (one per RAP) |
+| Sumas horas | manual | **fórmulas SUM(H15:H21) automáticas R22** |
+| Tamaño template | 22 cols × 66 rows | 24 cols × 38 rows |
+| Merged ranges | ~150+ | 48 |
+
+### REGLA 9 — pm-3-7.json shape v2.0 · MULTI-RAP
+
+```json
+{
+  "schema_version": "v2.0",
+  "format_canon": "V04",  // NEW · "Vf" para legacy
+  "guide_id": "...",
+  "rows": [               // NEW · array de RAPs · cada uno con 14 cols
+    {
+      "rap_id": "RA1",
+      "rap_titulo": "RECONOCER VOCABLOS Y EXPRESIONES BÁSICAS",
+      "col_1_fase_proyecto": "...",
+      "col_2_actividad_proyecto": "...",
+      "col_3_competencia": "...",
+      "col_4_resultado_aprendizaje": "RA 1 RECONOCER...",
+      "col_5_actividades_aprendizaje_a_desarrollar": "...",
+      "col_6_horas_trabajo_directo": 72,
+      "col_7_horas_trabajo_independiente": 28,
+      "col_8_estrategias_didacticas_activas": "...",
+      "col_9_ambiente": "...",
+      "col_10_materiales_formacion": "...",
+      "col_11_instructores_responsables": "...",
+      "col_12_criterios_evaluacion": "...",
+      "col_13_descripcion_evidencia_aprendizaje": "...",
+      "col_14_observaciones": "..."
+    },
+    { "rap_id": "RA2", ... },
+    { "rap_id": "RA3", ... },
+    { "rap_id": "RA4", ... }
+  ],
+  "totals": {              // NEW · sumas verificación contra fórmulas SUM
+    "horas_directas_total": 72,
+    "horas_independientes_total": 28
+  },
+  // metadata + saberes + validation_checks (mantienen v1.0 shape)
+  ...
+}
+```
+
+### REGLA 10 — Multi-RAP DERIVATION RULES
+
+Cuando `pm-1-1.tipo === "Curso Complementario"` y `pm-1-2.rap_origen` declara absorpción multi-RAP (ej: `"absorbe RAP-01 a RAP-04"`), genera **1 row por cada RAP origen** preservando:
+
+- **Cols 1-3 compartidas** (Fase Proyecto · Actividad Proyecto · Competencia): pueden ser idénticas across RAPs si pertenecen al mismo programa SENA
+- **Col 4 RAP-specific** (Resultado de Aprendizaje): único per row · texto exacto del SOFÍA Plus
+- **Cols 5-14 RAP-specific**: actividades + horas + estrategias + ambientes + evidencias específicas a cada RAP
+- **Col 9 (Ambiente)** suele ser **shared** entre RAPs si es el mismo aula bilingüe
+
+### REGLA 11 — Single-RAP fallback (back-compat)
+
+Si `pm-1-2.rap_origen` declara 1 solo RAP · `rows[]` tiene 1 entry · estructura idéntica · sumas R22 = valores únicos.
+
+### REGLA 12 — xlsx render target V04
+
+- Template canon: `master-prompts/canon/GFPI-F-134_V04.xlsx` (empty · 16 KB)
+- Output: `runs/<RUN-ID>/pm-3-7-gfpi-f134-matrix.xlsx` (filled V04)
+- Renderer: `lib/xlsx_renderer.py::render_gfpi_f134_v04_matrix(pm_3_7_data, template_path, output_path)`
+- Population: rows[] del JSON → cells R15+ secuencial · una fila xlsx por RAP
+
+### REGLA 13 — Migration path Vf → V04
+
+Programas que tienen pm-3-7.json v1.0 (Vf shape · single-row):
+1. Leer pm-1-2.rap_origen para detectar count RAPs
+2. Si single-RAP: migrar formato directo (`format_canon: "Vf"` → `"V04"` · wrap data en `rows[0]`)
+3. Si multi-RAP: re-run subagente PM-3.7 v2.0 con LLM (multi-RAP requires creative aggregation)
+4. Re-render xlsx con `render_gfpi_f134_v04_matrix()`
+
+### REGLA 14 — Pre-generation checklist v2.0 (extends v1.0)
+
+- [ ] **PASO I · Validar `format_canon` decision** (V04 default · Vf solo si Sergio explicit)
+- [ ] **PASO J · Detect multi-RAP from pm-1-2** (`rap_origen` parse "absorbe RAP-XX a RAP-YY")
+- [ ] **PASO K · Validate sumas R22** (suma rows[] horas == valor declarado totals)
+- [ ] **PASO L · Validate merged cells preserved** (V04 template tiene 48 merged ranges)
+
+### REGLA 15 — Validation checks v2.0 (suma a 12 de v1.0 = 16 checks)
+
+13. **Format canon match** · `format_canon` ∈ {"V04", "Vf"} · default V04
+14. **Multi-RAP shape** · `rows[]` array · count > 0 · cada entry tiene 14 cols + rap_id + rap_titulo
+15. **Sumas consistency** · `totals.horas_directas_total === sum(rows[].col_6)`
+16. **xlsx render target** · template V04 existe + writable + 48 merged ranges preservadas
+
+### Operacional canon — IMARPOR-CC ground truth
+
+Sergio compartió 2026-04-30 plantilla V04 manualmente diligenciada para IMARPOR-CC con:
+- 4 RAPs (RA1 + RA2 + RA3 + RA4)
+- COMPETENCIA shared: "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO..."
+- Horas directas: 72 (R15) · independientes: 28 (R15) · sumas SUM aplicadas
+- Ambiente shared: "Aula convencional bilingüe con adaptaciones..."
+- Materiales shared: "Proyector con pantalla grande + tablero..."
+- Instructores: "EL PROGRAMA REQUIERE DE UN INSTRUCTOR C..."
+
+Esa plantilla diligenciada es **referencia operacional** para futuros runs · live en `runs/IMARPOR-CC-2026-04-27/pm-3-7-input-V04-authoritative.xlsx`.
+
+---
+
+*PM-3.7 v2.0 · escrito 2026-04-30 (canon V04 oficial SENA · multi-RAP · IMARPOR-CC ground truth)*
+*Bumps: master prompt PM-3.7 v1.0 → v2.0 · pm-3-7.json schema v1.0 → v2.0 · template canon Vf → V04*

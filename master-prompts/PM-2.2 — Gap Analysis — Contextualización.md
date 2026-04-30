@@ -1,6 +1,6 @@
 ---
-version: 2.0
-last_verified: 2026-04-13
+version: 3.0
+last_verified: 2026-04-28
 session: 1
 fase_sena: "Contextualización"
 activity_type: "cognitiva"
@@ -9,6 +9,14 @@ evidence_type: null
 contributes_to_cuestionario: false
 cuestionario_skill: null
 cuestionario_points: 0
+changelog_v3_0:
+  - "Canonización Opción A (decisión arquitectónica Sergio 2026-04-28)"
+  - "Reconocimiento de jerarquía canónica: directiva del instructor > implementación operacional > master prompt"
+  - "Directiva canónica del instructor 'Quiero todos los arquetipos para todos los PM' (capturada en runs/MGV-2026-04-20/pm-2-11.json:574) ahora aplica explícitamente a PM-2.2"
+  - "v2.0 declaraba 'Único Diagnóstico' exclusivo · v3.0 documenta 2 modos: DEFAULT (The Mirror) + EXTENSIBLE (4 arquetipos secuencia encadenada estilo DIESEL)"
+  - "Nuevo catálogo §44 con 4 arquetipos canónicos extraídos de DIESEL-2026-04-15/18/19: A Self-assessment/KWL · B Diagnosis visual · C Gap card · D Peer interview"
+  - "Modo DEFAULT (The Mirror + WHAT-I-KNOW/BLIND-SPOTS/LEARNING-CONTRACT) preservado como template histórico · ya NO obligatorio"
+  - "Instructor declara modo en arquetipos-elegidos.json (estilo: 'mgv_compendio_metodologico' para default · 'diesel_secuencia_encadenada' para extensible)"
 ---
 
 # PM-2.2: THE GAP ANALYSIS & PRIOR KNOWLEDGE
@@ -27,7 +35,7 @@ cuestionario_points: 0
 | **Ubicación en la Guía** | Sección 3.2 Contextualización |
 | **Tipo de Evidencia SENA** | N/A (actividad diagnóstica) |
 | **Instrumento** | Learner's Worksheet |
-| **Estructura** | THE MIRROR (Único Diagnóstico) |
+| **Estructura** | 2 MODOS canónicos (v3.0): DEFAULT = THE MIRROR · EXTENSIBLE = 4 arquetipos secuencia encadenada |
 
 ---
 
@@ -40,11 +48,15 @@ cuestionario_points: 0
 
 ---
 
-## EL DIAGNÓSTICO ÚNICO: THE MIRROR (SELF-ASSESSMENT)
+## DOS MODOS CANÓNICOS (v3.0 · Opción A canonizada 2026-04-28)
 
-Siguiendo el estándar y asegurando fluidez tras "The Narrative Scenario" (PM-2.1), esta actividad utiliza un diagnóstico reflexivo, honesto y personal ("The Mirror").
+PM-2.2 v3.0 reconoce 2 modos legítimos de implementación según la directiva canónica del instructor *"Quiero todos los arquetipos para todos los PM"* (MGV pm-2-11.json:574). El instructor elige el modo en `arquetipos-elegidos.json` por run.
 
-### ESTRUCTURA INTERNA:
+### MODO DEFAULT: THE MIRROR (estilo `mgv_compendio_metodologico` con 1 arquetipo)
+
+Patrón histórico (v2.0). Sigue siendo válido y recomendado para cohortes simples o cuando la sesión exige diagnóstico reflexivo personal sin rotación. Activación: `arquetipos-elegidos.json` declara `estilo: "mgv_compendio_metodologico"` con `archetypes_integrated: ["THE_MIRROR"]`.
+
+#### ESTRUCTURA INTERNA (modo default):
 
 ```
 🔍 THE DIAGNOSTIC TRIGGER
@@ -66,6 +78,79 @@ Siguiendo el estándar y asegurando fluidez tras "The Narrative Scenario" (PM-2.
    "Las 3 cosas más importantes que quiero aprender:
    1)___ 2)___ 3)___
    Firmo mi compromiso de aprender estas cosas."
+```
+
+---
+
+## MODO EXTENSIBLE: 4 ARQUETIPOS DE SECUENCIA ENCADENADA (estilo `diesel_secuencia_encadenada`)
+
+Patrón canonizado v3.0. Aplica la directiva del instructor con 4 arquetipos rotativos como momentos secuenciales de cierre de S1. Activación: `arquetipos-elegidos.json` declara `estilo: "diesel_secuencia_encadenada"` con `archetype_used: [4 arquetipos]` + `archetype_mode: "secuencia encadenada — cierre de S1"`.
+
+**Evidencia canónica operacional:** DIESEL-2026-04-15 + 04-18 + 04-19 — TODOS los pm-2-2.json usan este patrón.
+
+### CATÁLOGO DE 4 ARQUETIPOS CANÓNICOS:
+
+| ID | Nombre | Foco pedagógico | Aplicabilidad |
+|----|--------|-----------------|---------------|
+| **A** | Self-assessment/KWL | Autoevaluación reflexiva (Know · Want to know · Learned) — el aprendiz mapea su propio nivel inicial | Diagnóstico individual canónico · base sobre la cual se construyen los siguientes arquetipos |
+| **B** | Diagnosis visual | Tabla, mapa o gráfico visual donde el aprendiz coloca sus áreas débiles vs fuertes | Cohortes con preferencia visual · contextos donde la representación gráfica facilita la honestidad diagnóstica |
+| **C** | Gap card | Tarjeta de gaps específicos: "Sé X · necesito aprender Y · para lograr Z" | Cohortes que necesitan estructura formal · contextos laborales donde el gap se vuelve compromiso documentado |
+| **D** | Peer interview | Entrevista guiada entre pares (3-5 preguntas estandarizadas) sobre saberes previos del macrotema | Cohortes participativas · arranques de programa donde la socialización entre aprendices construye comunidad |
+
+### ESTRUCTURA INTERNA (modo extensible):
+
+```
+🔍 4 MOMENTOS SECUENCIALES (cada uno con su archetype específico · cierre de S1)
+
+📋 MOMENTO 1 — ARQUETIPO X (e.g. A — KWL): autoevaluación individual
+📋 MOMENTO 2 — ARQUETIPO Y (e.g. B — Diagnosis visual): mapeo gráfico  
+📋 MOMENTO 3 — ARQUETIPO Z (e.g. C — Gap card): compromisos documentados
+📋 MOMENTO 4 — ARQUETIPO W (e.g. D — Peer interview): socialización entre pares
+
+🎯 SÍNTESIS DE BLOQUE: Los gaps colectivos identificados se convierten
+   en el roadmap implícito de los siguientes 4-7 sesiones de Apropiación.
+```
+
+El instructor decide qué arquetipos usa y en qué orden (ej. DIESEL canon: A → B → C → D). Los 4 momentos pueden tener duración variable (15-30 min cada uno) según importancia pedagógica.
+
+---
+
+## CÓMO SE DECLARA CADA MODO
+
+En `runs/[RUN-ID]/arquetipos-elegidos.json`:
+
+```json
+{
+  "elecciones": [
+    {
+      "pm": "PM-2.2",
+      "estilo": "mgv_compendio_metodologico",
+      "archetypes_integrated": ["THE_MIRROR"],
+      "rationale": "Cohorte simple · diagnóstico reflexivo personal único"
+    }
+  ]
+}
+```
+
+O alternativamente:
+
+```json
+{
+  "elecciones": [
+    {
+      "pm": "PM-2.2",
+      "estilo": "diesel_secuencia_encadenada",
+      "archetype_used": [
+        "A — Self-assessment/KWL",
+        "B — Diagnosis visual",
+        "C — Gap card",
+        "D — Peer interview"
+      ],
+      "archetype_mode": "secuencia encadenada — cierre de S1",
+      "rationale": "Cohorte participativa · directiva del instructor de aplicar todos los arquetipos"
+    }
+  ]
+}
 ```
 
 ---

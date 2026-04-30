@@ -10,7 +10,7 @@
 |-------|-------|
 | **Código** | PM-3.4 |
 | **Nombre** | Workbook — Autonomous Work |
-| **Versión** | 4.0 |
+| **Versión** | 4.1 |
 | **Last Verified** | 2026-04-30 |
 | **Destinatario** | Aprendiz (documento para el estudiante) + Instructor (Answer Key separado) |
 | **Función** | Generar los capítulos del Workbook que el aprendiz completa como trabajo autónomo entre sesiones presenciales |
@@ -254,6 +254,154 @@ Esto cierra el loop pedagógico Apropiación → Autonomía → Pre-activación 
 
 ---
 
+## EXTENSIÓN v4.1 — PARITY CON PM-3.6 v2.7 ANATOMY 6-BLOQUE (2026-04-30)
+
+> [!warning] CANON v4.1 — Cada actividad dentro de REINFORCE/EXTEND/PREPARE usa el mismo Activity Card schema v2.7 que PM-3.6 (anatomía 6-bloque learner-readable)
+> Promovido por Sergio (audit anti-patrón #14): el Workbook (PM-3.4) y el Learning Guide (PM-3.6) son ambos documentos LEARNER-FACING · deben tener consistencia visual + estructural total. Renderer canónico v2.7 (`gen_audit_docx.js::renderActivityCard_v27`) puede reusarse para ambos.
+
+### REGLA 17 — ACTIVITY CARD SCHEMA v2.7 PARITY (REINFORCE / EXTEND / PREPARE)
+
+Cada `activities[*]` dentro de REINFORCE/EXTEND/PREPARE de cada chapter DEBE cumplir el schema canon v2.7 documentado en PM-3.6 §EXTENSIÓN v2.7 (REGLAS 22-27). Los **18 campos canónicos v2.7 OBLIGATORIOS** por activity:
+
+```json
+{
+  "actividad_id":           "ch{N}-{r|e|p}-a{X}",   // ej "ch1-r-a1" · estructura chapter+section+activity
+  "schema_version":         "v2.7",
+  "titulo_en":              "string",
+  "titulo_es":              "string",
+  "tipo_actividad_sena":    "Actividad cognitiva | procedimental | actitudinal | combinaciones con ' + '",
+  "actividad_tipo_label":   "label friendly · same as tipo_actividad_sena o variante",
+  "tiempo_min":             int (subset de section.duracion_min),
+  "agrupacion":             "individual | pares | grupo_pequeno | plenaria",
+  "voc_dimension":          ["cognitiva", "procedimental", "actitudinal"],
+  "produce_evidencia":      false,    // Workbook NO genera evidencia formal · siempre false
+  "enunciado_voc": {
+    "en": "Verbo + Objeto + Condición · gerund-less · ≤200 char",
+    "es": "Verbo infinitivo + Objeto + Condición · ≤200 char",
+    "_review_status": "DRAFT"
+  },
+  "descripcion_narrativa": {
+    "en": "60-120 palabras · 3 movimientos: (1) Qué vas a hacer (2) Por qué importa (3) Promesa pedagógica · 2ª persona",
+    "es": "Traducción support natural · NO equivalente literal · renderer pone italic DKGREY auto"
+  },
+  "paso_a_paso": [
+    {"en": "...", "es": "..."},
+    // 5-7 pasos canon v2.7
+  ],
+  "scaffold_inline": {
+    "tipo": "matching | checklist | form | t_chart | writing_template | listening_capture | quiz_preview | speaking_script | reflection_lines | rating",
+    "titulo_en": "...",
+    "titulo_es": "...",
+    "estructura": { /* específica al tipo · 10 canónicos */ }
+  },
+  "entregable": {
+    "producto": {"en": "...", "es": "..."},
+    "formato": {"en": "...", "es": "..."},
+    "criterio_minimo": {"en": "...", "es": "..."}
+  },
+  "materiales": ["recurso 1", "recurso 2"],
+  "evidencia": null,    // Workbook NO genera evidencia first-class · siempre null
+  "activity_footer": {
+    "ambiente": "string · espacio autónomo (casa · biblioteca · plataforma virtual)",
+    "estrategia": "Trabajo Autónomo Guiado | ABT autónoma | Reflexión metacognitiva",
+    "tecnica": "string · técnica didáctica específica de la activity",
+    "materiales": "string concatenado",
+    "material_apoyo": "Workbook Ch. X | audio recording | platform link | no aplica",
+    "duracion_horas": "X.Y horas"
+  }
+}
+```
+
+### REGLA 18 — CAMPOS OBSOLETOS PROHIBIDOS (v4.1 strict · alineado con PM-3.6 REGLA 24)
+
+Los siguientes campos NUNCA aparecen en PM-3.4 v4.1 activities (heredados de PM-3.6 REGLA 24):
+
+| Campo obsoleto | Reemplazado por | Razón |
+|----------------|------------------|-------|
+| `nombre_aprendiz` | `titulo_en` + `titulo_es` | Bilingüismo first-class |
+| `etiquetas_dimension` | `voc_dimension` (lowercase array) | Datos estructurados sin syntax label |
+| `instruccion_2pers_en` | `descripcion_narrativa.en` + `paso_a_paso[].en` | Anatomía 6-bloque (descripción + pasos separados) |
+| `instruccion_supervivencia_es` | `descripcion_narrativa.es` + `paso_a_paso[].es` | Anatomía 6-bloque bilingüe simétrica |
+| `descripcion_aprendiz` | `descripcion_narrativa` | Cambio nombre canónico v2.6.3 → v2.7 |
+
+Plus PM-3.4-specific shallow fields que se REEMPLAZAN por v2.7:
+- ❌ `id` shallow → ✅ `actividad_id` canon
+- ❌ `type` shallow → ✅ `tipo_actividad_sena` + `scaffold_inline.tipo` (split)
+- ❌ `items` shallow → ✅ `scaffold_inline.estructura` per tipo canónico
+- ❌ `prompt` flat → ✅ `enunciado_voc` + `descripcion_narrativa` + `paso_a_paso`
+- ❌ `scaffold` string → ✅ `scaffold_inline` dict canon
+
+### REGLA 19 — META OBLIGATORIO v4.1
+
+```json
+{
+  "meta": {
+    "activities_schema_version": "v2.7",
+    "workbook_canon_version": "v4.1",
+    "activities_rewritten_at": "ISO-8601",
+    "anatomy_parity_with_pm36": true,
+    "renderer_compatible": "gen_audit_docx.js::renderActivityCard_v27"
+  }
+}
+```
+
+### REGLA 20 — VISUAL RENDERING PATTERN v2.6.2 (idéntico PM-3.6)
+
+PM-3.4 hereda el visual rendering pattern v2.6.2 de PM-3.6:
+
+| Pattern | Aplicación |
+|---------|------------|
+| **EN-dominant + ES subordinado** | Inglés primary · español italic DKGREY auto-renderizado |
+| **V+O+C invisible** | `enunciado_voc` JSON · NO renderizado como header visible (opcional · per master prompt) |
+| **Breadcrumb dimensional sutil** | `voc_dimension` etiqueta visual mínima · NO bracket-syntax legacy |
+| **Step numbers verde SENA** | `paso_a_paso` numeración renderizada en GREEN #39A900 |
+
+### REGLA 21 — PALETA SENA v3.3 (idéntica PM-3.6 v2.6.6)
+
+PM-3.4 DOCX renderer DEBE aplicar paleta SENA institucional:
+- **Verde SENA `#39A900`** · accents · CTAs · step numbers · headers tablas
+- **Azul oscuro SENA `#0B2E45`** · navyHeader · titles
+- **DKGREY** · español italic subordinado
+- **CREAM `#FFF6E8`** · evidencia formal cells (cuando aplique)
+
+### REGLA 22 — PRINCIPIO TRES VERSIONES STRICT (alineado v4.0)
+
+Reaffirma REGLA original v2.0 + REGLA 11 v4.0:
+- **Versión 1 (Apropiación · PM-2.x · in-class):** tasks originales
+- **Versión 2 (Evaluación S6 · PM-4.2):** cuestionario consolidado 25pts
+- **Versión 3 (Workbook · PM-3.4):** tasks DIFERENTES de V1 y V2
+
+Las activity cards v2.7 (REGLA 17) deben respetar este principio · NO copy literal de PM-3.6 actividades · son tasks NUEVAS pero canon-conforme schema.
+
+### Pipeline canónico v4.1
+
+| Script (futuro · Hito 5) | Función | Input | Output |
+|------|---------|-------|--------|
+| `subagente_pm_3_4_workbook.py` | Camino 2 LLM v4.1 strict | load_phase4_inputs + canon v2.7 anatomy strict | bundle Task tool |
+| `validators · check-workbook-schema.js` | Schema v4.1 + v2.7 anatomy parity | pm-3-4.json | exit 0/1 |
+| `lib/docx_renderer.py::render_pm_3_4_workbook` | Render learner DOCX (futuro · reuse PM-3.6 renderer) | pm-3-4.json | pm-3-4-workbook.docx |
+| `gen_audit_docx.js::renderActivityCard_v27` | **MISMO renderer que PM-3.6** · canon v2.7 anatomy | activity card v2.7 | rendered card |
+
+### Caso-origen v4.1
+
+- **Run origen:** IMARPOR-CC-2026-04-27 v4.1 (NEW · primer run con anatomy 6-bloque parity)
+- **Triggered por:** Sergio audit pregunta 2026-04-30 "PM-3.4 debe tener mismas configuraciones de formato y estructura que PM-3.6"
+- **Anti-patrón #14 mitigation:** audit shallow no detectó parity gap · v4.1 documenta canon explícito
+
+### Consecuencia arquitectónica v4.1
+
+PM-3.4 (Workbook) y PM-3.6 (Learning Guide) ahora son **gemelos canon v2.7** desde el punto de vista de Activity Card schema:
+- Mismo schema 18 fields anatomy 6-bloque
+- Mismo renderer canónico (gen_audit_docx.js::renderActivityCard_v27)
+- Misma paleta SENA + visual pattern v2.6.2
+- Diferentes documentos · misma forma activity card
+
+Esto cierra la consistencia learner-facing E2E · el aprendiz ve mismo formato visual en clase (Learning Guide · seccion_3) y en autonomía (Workbook · REINFORCE+EXTEND+PREPARE activities).
+
+*Lección aprendida 2026-04-30 (anti-patrón #14 strict applied 2nd time): Mi audit "PASS canon v4.0 strict" verificó top-level schema + REINFORCE/EXTEND/PREPARE structure pero NO verificó parity de Activity Card anatomy con PM-3.6 v2.7. Sergio detectó · forzó bump v4.0 → v4.1 documentando parity OBLIGATORIA.*
+
+---
+
 ## 10 REGLAS DE DISEÑO
 
 ### REGLA 1 — UN CAPÍTULO POR SESIÓN QUE ASIGNA TRABAJO
@@ -402,5 +550,6 @@ Para CADA capítulo genera:
 |---------|-------|--------|
 | v2.0 | 2026-04-13 | Principio Tres Versiones · 7 capítulos default · estructura simple (encabezado + instrucciones + spaces) |
 | **v4.0** | **2026-04-30** | **REINFORCE/EXTEND/PREPARE anatomía tripartita canon · 8 capítulos default (NOT 7) · bloom_level per sección · derivation_source trazabilidad · consolidated_answer_key separate · schema 13 top-level keys canon · REGLAS 11-16 documentadas (promoted from operational evidence DIESEL v4.0 + MGV v4.1)** |
+| **v4.1** | **2026-04-30** | **PARITY CON PM-3.6 v2.7 ANATOMY 6-BLOQUE · Activity Card schema v2.7 OBLIGATORIO en cada activities[*] · 18 fields canon (actividad_id · schema_version · titulo_en/es · tipo_actividad_sena · actividad_tipo_label · tiempo_min · agrupacion · voc_dimension · produce_evidencia · enunciado_voc · descripcion_narrativa · paso_a_paso · scaffold_inline · entregable · materiales · evidencia · activity_footer) · 5 obsoletos PROHIBIDOS · meta.activities_schema_version: v2.7 · paleta SENA v3.3 + visual pattern v2.6.2 · renderer compatible gen_audit_docx.js::renderActivityCard_v27 · REGLAS 17-22 documentadas (anti-patrón #14 mitigation post-audit Sergio)** |
 
 **v3.x skipped:** versions 3.x existieron como drafts internos en runs DIESEL/MGV pero nunca se documentaron formalmente en master prompt. v4.0 absorbe la evolución completa post-v2.0 hasta operational reality.

@@ -1,6 +1,6 @@
 ---
-version: 2.0
-last_verified: 2026-04-13
+version: 3.0
+last_verified: 2026-04-28
 session: 1
 fase_sena: "Reflexión Inicial"
 activity_type: "cognitiva"
@@ -9,6 +9,14 @@ evidence_type: null
 contributes_to_cuestionario: false
 cuestionario_skill: null
 cuestionario_points: 0
+changelog_v3_0:
+  - "Canonización Opción A (decisión arquitectónica Sergio 2026-04-28)"
+  - "Reconocimiento de jerarquía canónica: directiva del instructor > implementación operacional > master prompt"
+  - "Directiva canónica del instructor 'Quiero todos los arquetipos para todos los PM' (capturada en runs/MGV-2026-04-20/pm-2-11.json:574) ahora aplica explícitamente a PM-2.1"
+  - "v2.0 declaraba 'Único Detonante' exclusivo · v3.0 documenta 2 modos: DEFAULT (Narrative Scenario) + EXTENSIBLE (4 arquetipos secuencia encadenada estilo DIESEL)"
+  - "Nuevo catálogo §48 con 4 arquetipos canónicos extraídos de DIESEL-2026-04-15/18/19: A Visual/Infografía · B Story/Narrativa · C News/Noticia técnica · D Debate/Encuesta"
+  - "Modo DEFAULT (Narrative Scenario + EXPLORE/ENGAGE/DISCOVER) preservado como template histórico · ya NO obligatorio"
+  - "Instructor declara modo en arquetipos-elegidos.json (estilo: 'mgv_compendio_metodologico' para default · 'diesel_secuencia_encadenada' para extensible)"
 ---
 
 # PM-2.1: THE SPARK & PROBLEMATIC SITUATION
@@ -27,7 +35,7 @@ cuestionario_points: 0
 | **Ubicación en la Guía** | Sección 3.1 Reflexión Inicial |
 | **Tipo de Evidencia SENA** | N/A (actividad motivacional/diagnóstica) |
 | **Instrumento** | Learner's Worksheet |
-| **Estructura** | THE NARRATIVE SCENARIO (Único Detonante) |
+| **Estructura** | 2 MODOS canónicos (v3.0): DEFAULT = THE NARRATIVE SCENARIO · EXTENSIBLE = 4 arquetipos secuencia encadenada |
 
 ---
 
@@ -44,11 +52,15 @@ cuestionario_points: 0
 
 ---
 
-## EL DETONANTE ÚNICO: THE NARRATIVE SCENARIO
+## DOS MODOS CANÓNICOS (v3.0 · Opción A canonizada 2026-04-28)
 
-Siguiendo el estándar, PM-2.1 utiliza exclusivamente un "Narrative Detonator" para atrapar la atención. Este detonante usa la historia y el personaje generados en Story A y B para crear un problema realista, humano y técnico.
+PM-2.1 v3.0 reconoce 2 modos legítimos de implementación según la directiva canónica del instructor *"Quiero todos los arquetipos para todos los PM"* (MGV pm-2-11.json:574). El instructor elige el modo en `arquetipos-elegidos.json` por run.
 
-### ESTRUCTURA INTERNA:
+### MODO DEFAULT: THE NARRATIVE SCENARIO (estilo `mgv_compendio_metodologico` con 1 arquetipo)
+
+Patrón histórico (v2.0). Sigue siendo válido y recomendado para cohortes simples o cuando la sesión exige foco narrativo único. Activación: `arquetipos-elegidos.json` declara `estilo: "mgv_compendio_metodologico"` con `archetypes_integrated: ["NARRATIVE_SCENARIO"]`.
+
+#### ESTRUCTURA INTERNA (modo default):
 
 ```
 🎬 THE SCENARIO (escenario urgente narrativo)
@@ -71,6 +83,79 @@ Siguiendo el estándar, PM-2.1 utiliza exclusivamente un "Narrative Detonator" p
 📋 ACTIVITY 3 — DISCOVER: El puente técnico
    Qué necesitan aprender en esta guía para resolver problemas
    como este en inglés.
+```
+
+---
+
+## MODO EXTENSIBLE: 4 ARQUETIPOS DE SECUENCIA ENCADENADA (estilo `diesel_secuencia_encadenada`)
+
+Patrón canonizado v3.0. Aplica la directiva del instructor con 4 arquetipos rotativos como momentos secuenciales en S1. Activación: `arquetipos-elegidos.json` declara `estilo: "diesel_secuencia_encadenada"` con `archetype_used: [4 arquetipos]` + `archetype_mode: "secuencia encadenada — 4 momentos en S1"`.
+
+**Evidencia canónica operacional:** DIESEL-2026-04-15 + 04-18 + 04-19 — TODOS los pm-2-1.json usan este patrón.
+
+### CATÁLOGO DE 4 ARQUETIPOS CANÓNICOS:
+
+| ID | Nombre | Foco pedagógico | Aplicabilidad |
+|----|--------|-----------------|---------------|
+| **A** | Visual/Infografía | Activación visual de problema técnico mediante infografía o diagrama del incidente/escenario | Cohortes con baja literacidad inicial · contextos donde la imagen comunica más rápido que el texto |
+| **B** | Story/Narrativa | Narrativa breve (1-2 párrafos) del escenario laboral con personaje y conflicto | Cohortes con interés en lectura · narrativa empática que conecta con experiencia del aprendiz |
+| **C** | News/Noticia técnica | Titular o noticia real adaptada del sector técnico que evoca el problema | Cohortes mayores · contextos donde la realidad del oficio es el motor (ej. "Workshop fire — what IT learned") |
+| **D** | Debate/Encuesta | Pregunta provocadora o encuesta rápida que polariza posiciones del grupo | Cohortes participativas · arranques de sesión donde la discusión genera energía social |
+
+### ESTRUCTURA INTERNA (modo extensible):
+
+```
+🎬 4 MOMENTOS SECUENCIALES (cada uno con su archetype específico)
+
+📋 MOMENTO 1 — ARQUETIPO X (e.g. C — News): titular técnico
+📋 MOMENTO 2 — ARQUETIPO Y (e.g. A — Visual): infografía o diagrama  
+📋 MOMENTO 3 — ARQUETIPO Z (e.g. B — Story): narrativa del escenario
+📋 MOMENTO 4 — ARQUETIPO W (e.g. D — Debate): polaridad y discusión
+
+🎯 SÍNTESIS DE BLOQUE: ¿Qué necesitamos aprender en esta guía
+   para responder a esto en inglés?
+```
+
+El instructor decide qué arquetipos usa y en qué orden (ej. DIESEL canon: C → A → B → D). Los 4 momentos pueden tener duración variable (15-30 min cada uno) según importancia pedagógica.
+
+---
+
+## CÓMO SE DECLARA CADA MODO
+
+En `runs/[RUN-ID]/arquetipos-elegidos.json`:
+
+```json
+{
+  "elecciones": [
+    {
+      "pm": "PM-2.1",
+      "estilo": "mgv_compendio_metodologico",
+      "archetypes_integrated": ["NARRATIVE_SCENARIO"],
+      "rationale": "Cohorte simple · foco narrativo único"
+    }
+  ]
+}
+```
+
+O alternativamente:
+
+```json
+{
+  "elecciones": [
+    {
+      "pm": "PM-2.1",
+      "estilo": "diesel_secuencia_encadenada",
+      "archetype_used": [
+        "A — Visual/Infografía",
+        "B — Story/Narrativa",
+        "C — News/Noticia técnica",
+        "D — Debate/Encuesta"
+      ],
+      "archetype_mode": "secuencia encadenada — 4 momentos en S1",
+      "rationale": "Cohorte participativa · directiva del instructor de aplicar todos los arquetipos"
+    }
+  ]
+}
 ```
 
 ---

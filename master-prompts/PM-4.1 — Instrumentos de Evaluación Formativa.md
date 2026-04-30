@@ -125,6 +125,19 @@ PM-4.1 genera **6 instrumentos** que corresponden exactamente a las 6 evidencias
 3. PM-4.2 implementa el Instrumento #6 (25 pts = 5 secciones × 5 pts).
 4. PM-3.6 (Learning Guide Generator) debe mostrar al aprendiz el total de 50 pts y explicar que la Misión Final no computa al total.
 
+### REGLA DE DUAL-PRESENCIA DE CRITERIOS (v3.2 · 2026-04-21)
+
+Los **criterios de evaluación** de cada instrumento formal (INST-1 a INST-5 + E6 Cuestionario Consolidado) deben aparecer **literalmente y en dos ubicaciones sincronizadas**:
+
+1. **Dentro del instrumento mismo** (`pm-4-1.json.instruments[*].criteria[*]` para INST-1..5; `pm-4-2.json.canon_structure.sections_list` para E6). Esta es la fuente autoritativa usada por el instructor al aplicar el instrumento.
+2. **En la Sección 4 de la Guía del Aprendiz** (`pm-3-6-learning-guide.md` o `pm-3-6.json.seccion_4_planteamiento_evidencias.filas_evidencia[*].criterios`), Columna 5 "Criterios de evaluación". Esta es la versión que el aprendiz ve en el GFPI-F-135.
+
+**Regla dura:** el texto de Columna 5 en Sección 4 de PM-3.6 debe derivar **verbatim** de los `criteria[*].criterion` del instrumento correspondiente en PM-4.1 (o del `sections_list` de PM-4.2 para E6). Se permite consolidación de múltiples criterios en una celda (ej: "10 criterios × 0.5 pt: …") pero no paráfrasis ni invención. Cada celda cita su origen al final: `(Fuente: PM-4.1 INST-X)` o `(Fuente: PM-4.2)`.
+
+**Validador automático:** un script `check-criteria-dual-presence.js` debe comparar strings de `criterion` entre `pm-4-1.json` y `pm-3-6.json` (o `pm-3-6-learning-guide.md`) y reportar drift. Ejecución sugerida antes de regenerar el DOCX canónico.
+
+**Canon FM-1 (Final Mission formativa):** INST-6 existe en `pm-4-1.json` como **Escala de Estimación No 6** (capstone formativo de 6 criterios en escala 1–5 → promedio /5), pero su puntaje **NO suma** al total formal de 50 pts. La Sección 4 de PM-3.6 la lista como Actividad 12 con tag "Transferencia · formativa" y nota explícita "(no cuenta en los 50 pts)". Esta dualidad es intencional: el instrumento existe y se aplica, pero no computa al canon.
+
 ---
 
 ## OUTPUTS ESPERADOS — ESPECIFICACIÓN DE LOS 6 INSTRUMENTOS

@@ -650,23 +650,32 @@ Cada ejecución completa del sistema produce el siguiente paquete:
 
 ### FASE 1 — SCOPE (1-2 horas)
 
-**PASO 1:** Ejecutar **PM-1.1 — Ruta Macrotemática**
-- Input: Competencia + contexto técnico + **`pm-0-context.json`** (v2.6, referenciado como `pm0_anchors_ref`)
-- El output pm-1-1.json DEBE incluir el campo `pm0_anchors_ref` apuntando al archivo pm-0-context.json del programa
-- **⚠️ VALIDACIÓN OBLIGATORIA ANTES DE GENERAR:** Confirmar con el instructor el tipo de programa Y la regla de ramificación aplicable:
-  - **Regla estándar (RAPs derivados):** Cuando los RAPs no vienen numerados en SOFÍA y hay que derivarlos del programa:
-    - **Técnico** (≈180h duración) → **exactamente 5 bloques**
-    - **Tecnológico** (≈350h duración) → **exactamente 10 bloques**
-  - **Regla alternativa 1:1 (RAPs pre-numerados):** Cuando el diseño curricular de SOFÍA ya entrega los RAPs explícitos y numerados (ej: RAP 01, RAP 02, …, RAP N):
-    - **N RAPs → N bloques**, alineación 1:1 (1 RAP = 1 bloque = 1 guía = 8 sesiones = 60h)
-    - Aplicable tanto a Técnico como a Tecnológico
-    - Respeta la trazabilidad matricial GFPI-F-134 (1 fila = 1 RAP = 1 bloque)
-    - *Lección aprendida MGV-2026-04-20: programa Tecnológico con 6 RAPs pre-numerados → 6 bloques (no 10) por alineación 1:1 aprobada por Instructor.*
-  - Registrar como `"tipo": "Técnico"` o `"tipo": "Tecnológico"` + `"regla_bloques": "estandar"` o `"regla_bloques": "alineacion_1a1"` en pm-1-1.json
-  - Si el tipo o la regla no están confirmados explícitamente, PREGUNTAR antes de continuar
-  - *Lección aprendida DIESEL-2026-04-15: programa técnico ejecutado como tecnológico → 10 bloques incorrectos. Corrección aplicada 2026-04-18.*
-- Output: N macrotemáticas (bloques) según regla confirmada (5, 10, o N=cantidad de RAPs pre-numerados)
-- Artefacto: pm-1-1.json con campos `tipo`, `regla_bloques` y `total_guias` correctos
+**PASO 1:** Ejecutar **PM-1.1 — Ruta Macrotemática** (v2.7 — flujo formulario + activación manual)
+
+**Sub-paso 1A — Capturar inputs en el Formulario LG Factory (Claude Design):**
+- El instructor abre el formulario web del LG Factory (artefacto Claude Design) y diligencia las Secciones A (Programa, una sola vez) y B (Contexto Curricular, una vez por guía).
+- El formulario produce dos archivos descargables:
+  - `pm-0-context.json` — capa fundacional del programa (Sección A)
+  - `pm-1-1-input.json` — input curricular para el prompt PM-1.1 (Sección B)
+- **⚠️ NAMING CRÍTICO:** El archivo descargado de la Sección B se llama `pm-1-1-input.json`, NO `pm-1-1.json`. Esto deja claro que es el INPUT del prompt PM-1.1, no el output final del pipeline.
+- Guardar los dos archivos en `runs/[RUN-ID]/` (`pm-0-context.json` en raíz; `pm-1-1-input.json` por guía bajo `runs/[RUN-ID]/g[N]/`).
+
+**Sub-paso 1B — Activación manual del prompt PM-1.1 (genera el output final):**
+- Abrir una conversación nueva de Claude (claude.ai o API).
+- Pegar el master prompt de `master-prompts/PM-1.1 — Ruta Macrotemática — 5-10 Bloques.md` (sección "PROMPT PARA IA").
+- Adjuntar los dos archivos JSON: `pm-0-context.json` (contexto del programa) + `pm-1-1-input.json` (input específico de la guía).
+- Claude ejecuta la generación según las 6 Reglas de PM-1.1 v2.7 (Regla 1 reformulada: `total_guias` libre, soft warning a 48h, variante Curso Especial con `total_guias=1`).
+- Guardar la respuesta de Claude como `pm-1-1.json` en `runs/[RUN-ID]/g[N]/`. Este es el output final que PM-1.2 consumirá.
+
+**⚠️ Validación post-generación:**
+- Verificar que `pm-1-1.json` contenga: `pm0_anchors_ref` apuntando al archivo correcto, `tipo` heredado del input, `total_guias` coincidente con el input, `bloques[]` con N elementos (donde N = `total_guias`), `proyecto_formativo_articulador` (omitido si `tipo=Curso Especial` Y `total_guias=1`).
+- Si `horas_por_bloque < 48`, el output incluye `horas_por_bloque_warning: true` — el instructor debe confirmar que acepta el ajuste.
+- *Lecciones aprendidas: DIESEL-2026-04-15 (técnico ejecutado como tecnológico → 10 bloques incorrectos) y MGV-2026-04-20 (Tecnológico con 6 RAPs pre-numerados → 6 bloques 1:1 correctos) — ambas resueltas en v2.7 al desacoplar `tipo` de `total_guias`.*
+
+**Artefactos generados en este paso:**
+- `runs/[RUN-ID]/pm-0-context.json` (del formulario, una vez por programa)
+- `runs/[RUN-ID]/g[N]/pm-1-1-input.json` (del formulario, una vez por guía)
+- `runs/[RUN-ID]/g[N]/pm-1-1.json` (de Claude ejecutando el prompt PM-1.1, una vez por guía)
 
 **PASO 2:** Ejecutar **PM-1.2 — Scope & Sequence + Curación** (v2.6 estructura 4-bloques)
 - Input: 1 macrotemática (ej: "The Hardware Specialist") + `pm-0-context.json` + pm-1-1.json
@@ -831,6 +840,248 @@ Cada ejecución completa del sistema produce el siguiente paquete:
 ---
 
 ## 11. HISTORIAL DE VERSIONES
+
+### v2.12 — Canonización Opción A: jerarquía canónica directiva > operacional > master prompt + PM-2.1/PM-2.2 v3.0 con 2 modos — 2026-04-28
+
+**Contexto:** Durante la sesión arquitectónica de Fase 2 (PLAN-FASE-2-ARQUITECTURA.md v1.1 → v1.3), Sergio detectó una "discrepancia" aparente entre los runs DIESEL (que aplicaban 4 arquetipos a PM-2.1/PM-2.2 con `archetype_mode: "secuencia encadenada"`) y MGV-2026-04-20 (que respetaba el master prompt original "DETONANTE/DIAGNÓSTICO ÚNICO" marcando `applicable_to_this_pm: false`). La investigación reveló que NO era discrepancia — era una jerarquía canónica que el sistema no había documentado.
+
+**Reconocimiento de la jerarquía canónica de autoridad (NUEVO):**
+
+El sistema FPI SENA tiene 3 niveles de autoridad canónica que deben respetarse en orden:
+
+| Nivel | Fuente | Autoridad | Ejemplo |
+|---|---|---|---|
+| **1** | Directiva del instructor | MÁXIMA | "Quiero todos los arquetipos para todos los PM" (capturada en MGV pm-2-11.json:574) |
+| **2** | Implementación operacional canonizada | Refleja directiva | DIESEL `archetype_used [N]` + `archetype_mode "secuencia encadenada"` aplicado a TODOS los PMs · MGV `integration_all_archetypes_policy` con N arquetipos |
+| **3** | Master prompts canon | Debe actualizarse cuando contradiga niveles 1-2 | PM-2.1/PM-2.2 v2.0 decían "ÚNICO" — desactualizado respecto a directiva nivel 1 |
+
+**Decisión arquitectónica Sergio 2026-04-28 (Opción A canonizada):**
+
+La directiva del instructor "Quiero todos los arquetipos para todos los PM" aplica también a PM-2.1 y PM-2.2 (no son excepción). Master prompts PM-2.1.md y PM-2.2.md actualizados a v3.0 con 2 modos:
+
+- **Modo DEFAULT** (`mgv_compendio_metodologico` con 1 arquetipo): preserva el patrón histórico — PM-2.1 con "Narrative Scenario" (EXPLORE/ENGAGE/DISCOVER) y PM-2.2 con "The Mirror" (WHAT-I-KNOW/BLIND-SPOTS/LEARNING-CONTRACT). Sigue siendo válido.
+- **Modo EXTENSIBLE** (`diesel_secuencia_encadenada` con 4 arquetipos): canoniza el patrón DIESEL operacional. Catálogos canonizados:
+  - PM-2.1: A Visual/Infografía · B Story/Narrativa · C News/Noticia técnica · D Debate/Encuesta
+  - PM-2.2: A Self-assessment/KWL · B Diagnosis visual · C Gap card · D Peer interview
+
+El instructor declara modo en `runs/[RUN-ID]/arquetipos-elegidos.json` por run.
+
+**Lección sistémica:**
+
+Cuando un master prompt y la realidad operacional de runs maduros se contradicen, NO es necesariamente discrepancia — puede ser jerarquía canónica no reconocida. Las directivas del instructor capturadas en runs reales tienen autoridad sobre master prompts antiguos. **Patrón meta:** antes de declarar "discrepancia", buscar la directiva del instructor literal en pm-2-11.json del run más maduro · si existe, el master prompt es lo que debe actualizarse, no el comportamiento operacional.
+
+**Archivos actualizados en v2.12:**
+- `master-prompts/PM-2.1 — The Spark — Reflexión Inicial.md` → v2.0 → v3.0 (2 modos canonizados)
+- `master-prompts/PM-2.2 — Gap Analysis — Contextualización.md` → v2.0 → v3.0 (2 modos canonizados)
+- `master-prompts/PLAN-FASE-2-ARQUITECTURA.md` → v1.2 → v1.3 (§11.5 RESUELTO con Opción A)
+- `master-prompts/DOCUMENTO MAESTRO ... .md` → v2.11 → v2.12 (esta entrada)
+
+**Implicaciones para Fase 2 (cuando arranque):**
+- Hito 1 (§11.5 del plan) ahora desbloqueado — jerarquía canónica documentada
+- Subagentes PM-2.1/PM-2.2 deben leer `arquetipos-elegidos.json` y ramificar según `estilo: "mgv_compendio_metodologico"` vs `estilo: "diesel_secuencia_encadenada"`
+- MGV-2026-04-20 pm-2-1.json + pm-2-2.json pueden regenerarse retroactivamente en modo extensible cuando se ejecute Fase 2 sobre MGV en producción real
+
+---
+
+### v2.11 — Correcciones canónicas: 4 patrones regla_bloques + asimetría tipo-programa (proyecto formativo vs final_mission_scenario) — 2026-04-27
+
+**Contexto:** Durante el probe IMARPOR-CC (variante single-guía 100h del programa Inglés Marítimo y Portuario), Instructor Sergio detectó dos simplificaciones erróneas que la v2.7 había introducido. Las dos correcciones se aplican en PM-1.1 v2.7 → v2.7.1.
+
+**Corrección 1 — Restaurar `regla_bloques` con enum de 4 patrones canónicos:**
+
+La v2.7 había ELIMINADO `regla_bloques` asumiendo que el patrón implícito (`alineacion_1a1`) cubría todo. Sergio señaló la pregunta crítica: *"¿cuándo sean programas técnicos o tecnológicos que requieran varias guías por RAP?"*. La realidad SENA tiene al menos 4 patrones legítimos:
+
+| Patrón | Significado | Caso de uso |
+|--------|-------------|-------------|
+| `alineacion_1a1` | 1 RAP = 1 guía | MGV (6 RAPs → 6 guías) |
+| `absorcion_Na1` | N RAPs absorbidos en 1 guía única | IMARPOR-CC (4 RAPs → 1 guía 100h) |
+| `desdoblamiento_1aN` | 1 RAP desdoblado en N guías | RAP complejo subdividido pedagógicamente |
+| `alineacion_NaM` | Mapeo libre N RAPs ↔ M guías | Programa con agrupaciones híbridas |
+
+`regla_bloques` se RESTAURA como campo OBLIGATORIO en pm-1-1.json con enum cerrado a estos 4 valores.
+
+**Corrección 2 — Asimetría tipo-programa para proyecto formativo:**
+
+La v2.7 trataba `proyecto_formativo_*` como campo opcional uniforme. Sergio señaló: *"Cuando es un curso complementario no hay proyecto formativo. Proyecto formativo fase hace parte de eso también. Lo que hay es una final misión. Pero eso ya tiene que ver con la fase 2."*
+
+Asimetría canónica corregida:
+
+| Tipo | proyecto_formativo (con fases articuladas) | final_mission_scenario |
+|------|--------------------------------------------|------------------------|
+| Técnico | ✓ Obligatorio | ✓ Uno por guía (Fase 2) |
+| Tecnológico | ✓ Obligatorio | ✓ Uno por guía (Fase 2) |
+| Curso Especial | ✗ NO aplica | ✓ Uno integral del curso |
+| Curso Complementario | ✗ NO aplica | ✓ Uno integral del curso |
+
+Cursos Complementarios/Especiales NO tienen proyecto formativo en SENA — solo Misión Final. Lo que parece "proyecto formativo fase" en programas complementarios es realmente el escenario integral de la Misión Final (que es Fase 2). Para no confundir nomenclatura, se introduce el campo `final_mission_scenario` exclusivo para cursos cortos.
+
+**Lección sistémica:**
+
+Mi v2.7 fue una simplificación honesta pero perdió 3 patrones canónicos legítimos de mapping RAP↔guía + olvidó la asimetría arquitectónica entre programas titulados (con proyecto formativo) y cursos cortos (sin él). El probe IMARPOR-CC expuso ambos en menos de 5 minutos. **Patrón meta:** cada vez que se "simplifica" el canon (eliminando campos, asumiendo defaults uniformes), revisar primero contra los 4 tipos de programa existentes (Técnico, Tecnológico, Especial, Complementario) y los N RAPs↔M guías posibles. Sin esa revisión cross-tipo, la simplificación pierde casos reales.
+
+**Archivos actualizados en v2.11:**
+- `master-prompts/PM-1.1 — Ruta Macrotemática — 5-10 Bloques.md` → v2.7 → v2.7.1
+- `form-schema-pm0-pm11.json` → enum regla_bloques + lógica condicional UX (en proceso)
+- `runs/IMARPOR-rework-2026-04-25/gaps-encountered.md` → GAP 4 + GAP 5 documentados
+- (Pendiente) `v4/schemas/pm-1-1.schema.json` → re-derivar desde canon completo (Path B)
+
+---
+
+### v2.10 — Formulario LG Factory + PM-1.1 v2.7 (desacople tipo/total_guias) — 2026-04-26
+
+**Contexto**: Instructor Sergio formaliza el flujo de captura de inputs vía Formulario LG Factory (artefacto Claude Design) y refactoriza PM-1.1 para desacoplar el `tipo` (metadata SENA) del `total_guias` (decisión pedagógica libre).
+
+**Cambios principales:**
+
+1. **PM-1.1 v2.7** — Regla 1 reformulada:
+   - Eliminado `regla_bloques`. La alineación 1 RAP = 1 bloque pasa de excepción a patrón implícito por defecto.
+   - `tipo` (Técnico / Tecnológico / Curso Especial) deja de determinar el número de bloques. Es solo metadata administrativa de certificación SENA.
+   - `total_guias` se decide libremente por el instructor según la lógica del diseño curricular.
+   - Soft warning a 48h/bloque (no bloquea export, útil para micro-guías legítimas).
+   - Variante Curso Especial con `total_guias=1`: omite "proyecto formativo articulador"; Misión Final = entrega completa del curso.
+
+2. **Formulario LG Factory** — flujo de captura formal:
+   - Artefacto Claude Design (React + shadcn) que diligencia Sección A (Programa) + Sección B (Contexto Curricular) + Sección C (Aprobaciones).
+   - Genera `pm-0-context.json` (Sección A, una vez por programa) y `pm-1-1-input.json` (Sección B, una vez por guía).
+   - **Naming crítico:** el output del formulario para Sección B se llama `pm-1-1-input.json`, NO `pm-1-1.json`. Diferencia explícita entre INPUT del prompt PM-1.1 vs OUTPUT final del pipeline.
+
+3. **PASO 1 del DM §10** — reescrito en dos sub-pasos:
+   - **Sub-paso 1A:** capturar inputs en el formulario web → descarga `pm-0-context.json` + `pm-1-1-input.json`
+   - **Sub-paso 1B:** activación manual del prompt PM-1.1 — abrir Claude, pegar master prompt PM-1.1, adjuntar los dos JSONs, guardar respuesta como `pm-1-1.json` final.
+
+4. **Catálogos PM-0 expuestos en el formulario:**
+   - 13 principios pedagógicos §5.1–§5.13 con tooltip mostrando resumen
+   - Descriptores CEFR por subnivel (A1.1–A2.2) que pre-rellenan automáticamente al elegir `guia_subnivel_cefr`
+   - 5 plantillas del Grupo Gramatical 17 (DIESEL/MGV/MARÍTIMO/ADSO/Personalizado)
+
+**Artefactos generados en este bloque:**
+- `Formulario-PM0-PM1.1.docx` (versión imprimible del formulario, branding SENA)
+- `Formulario-PM0-PM1.1.xlsx` (versión spreadsheet con dropdowns + JSON Preview)
+- `form-schema-pm0-pm11.json` (schema canónico v2.7 con catálogos completos PM-0)
+- `claude-design-prompt.md` (prompt para construir el formulario en Claude Design + DELTA v2.7 + DELTA v2.7.1)
+- Artefacto Claude Design (formulario web React)
+
+**Lecciones consolidadas en v2.10:**
+- DIESEL-2026-04-15 (técnico ejecutado como tecnológico) y MGV-2026-04-20 (Tecnológico con 6 RAPs pre-numerados → 6 bloques 1:1) — ambas resueltas estructuralmente al desacoplar `tipo` de `total_guias` en v2.7. Ya no es posible el error porque el instructor decide explícitamente `total_guias` independiente del `tipo`.
+
+---
+
+### v2.9 — REGLA 20 · Absorción de Instrumentos en Sesiones Propietarias (canon mínimo footprint) — 2026-04-26
+
+**Contexto**: Instructor Sergio aplicó decisión arquitectónica para reducir footprint del run absorbiendo PM-4.1 (5 instrumentos) y PM-4.2 (E6 Cuestionario Consolidado) en sus sesiones propietarias `pm-3-2-sX` siguiendo el patrón canónico ya establecido con PM-2.11 → PM-3.1 (canon Sergio v3.0 Self-Contained).
+
+#### REGLA 20 — Los instrumentos viven absorbidos en sus sesiones propietarias
+
+> **REGLA 20**: Los instrumentos formales (PM-4.1 INST-1 a INST-5 + PM-4.2 INST-6) viven absorbidos en sus sesiones propietarias (`pm-3-2-sX`), NO como archivos separados con contenido completo. Los archivos `pm-4-1.json` y `pm-4-2.json` se reemplazan con stubs redirect que apuntan a las nuevas rutas canónicas. INST-7 E_FINAL Misión Final vive nativamente en `pm-3-5.json` (NO se absorbe).
+
+#### Tabla canónica de absorción
+
+| Instrumento | Sesión propietaria | Sub-key absorbida en pm-3-2-sX |
+|-------------|---------------------|--------------------------------|
+| INST-1 Reading (E1) | pm-3-2-s2 | `instrumento_inst_1_reading_completo` |
+| INST-2 Writing (E2) | pm-3-2-s3 | `instrumento_inst_2_writing_completo` |
+| INST-3 Listening (E3) | pm-3-2-s4 | `instrumento_inst_3_listening_completo` |
+| INST-4 Speaking (E4) | pm-3-2-s4 | `instrumento_inst_4_speaking_completo` |
+| INST-5 Functions (E5) | pm-3-2-s5 | `instrumento_inst_5_language_functions_completo` |
+| INST-6 Cuestionario Consolidado E6 | pm-3-2-s6 | `cuestionario_consolidado_e6` |
+| INST-7 E_FINAL Misión Final | pm-3-5 | (vive nativamente · NO se absorbe) |
+
+#### Razón pedagógica + arquitectónica de la REGLA 20
+
+1. **Single source of truth**: cero drift posible entre instrumento + administración (ambos en mismo archivo)
+2. **Canon mínimo footprint**: reduce 2 archivos del run footprint (pm-4-1.json + pm-4-2.json full → stubs ligeros)
+3. **Patrón canónico ya establecido**: análogo a PM-2.11 → PM-3.1 (Sergio v3.0 Self-Contained · DM v2.5 Principio 7)
+4. **Coherencia sesión propietaria**: el instrumento vive donde se administra (la sesión pedagógica)
+5. **Dual-presencia v3.2 sigue funcionando**: PM-3.6 Sección 4 Columna 5 lee desde nueva ruta (sin cambio de protocolo)
+
+#### Stubs redirect canónicos
+
+```json
+// pm-4-1.json (STUB)
+{
+  "_stub_redirect": true,
+  "absorbed_in_distributed": [
+    "pm-3-2-s2.json#instrumento_inst_1_reading_completo (INST-1 Reading)",
+    "pm-3-2-s3.json#instrumento_inst_2_writing_completo (INST-2 Writing)",
+    "pm-3-2-s4.json#instrumento_inst_3_listening_completo (INST-3 Listening)",
+    "pm-3-2-s4.json#instrumento_inst_4_speaking_completo (INST-4 Speaking)",
+    "pm-3-2-s5.json#instrumento_inst_5_language_functions_completo (INST-5 Functions)"
+  ],
+  "absorbed_at": "YYYY-MM-DD",
+  "rationale": "Decisión instructor Sergio · canon mínimo footprint",
+  "canon_pattern": "Análogo a PM-2.11 → PM-3.1"
+}
+```
+
+#### Aplicabilidad prospectiva
+
+REGLA 20 aplica a IMARPOR G1 (piloto) + G2-G4 + futuros runs IMARPOR. **Para otros programas (MGV · DIESEL · ADSO)**, la absorción es OPCIONAL y debe declararse explícitamente por el instructor del programa. Si NO se aplica REGLA 20, los archivos pm-4-1.json y pm-4-2.json existen como archivos completos canon MGV.
+
+#### Lección sistémica · trío de reglas arquitectónicas
+
+REGLA 20 complementa REGLA 19 (PRE-GENERATION CHECKLIST · v2.8) y canon §15.20 (anti-copia-fantasma · v2.3):
+- **REGLA 19**: NO improvisar schema · leer master prompt + MGV/DIESEL refs antes de generar
+- **REGLA 20**: ABSORBER instrumentos en sesiones propietarias (canon mínimo footprint)
+- **§15.20**: NO contaminar cast cross-program
+
+Las 3 reglas operan al mismo nivel arquitectónico: cada PM tiene UN schema canónico (REGLA 19) + UN universo de contenido propio (§15.20) + UN footprint mínimo absorbido (REGLA 20).
+
+#### Versionado
+
+- **Documento Maestro**: v2.8 → v2.9 (REGLA 20 + lección CP4-FIX-2)
+- **CANON-CHECKLIST.md programa-level**: añadida §REGLA 20 con tabla canónica + stubs canon + aplicabilidad prospectiva
+
+---
+
+### v2.8 — REGLA 19 · PRE-GENERATION CHECKLIST por PM (auditoría preventiva master prompt + MGV/DIESEL refs) — 2026-04-26
+
+**Contexto**: En CP4 PASO 1 IMARPOR G1 (regeneración), se generó pm-3-5 sin leer master prompt + MGV/DIESEL references previamente. Resultado: schema híbrido improvisado (23 keys vs 27 canon MGV), omisión de 6 elementos canon obligatorios (`arquetipo_elegido` + `activity_footer × 5` v2.6 + `documento_2_observation_checklist` separado de `documento_3_product_rubric` + `validation_checks` + `cross_references` + `rap_status`). Re-trabajo completo CP4-FIX-1 requerido.
+
+#### REGLA 19 — Antes de generar CUALQUIER PM, completar PRE-GENERATION CHECKLIST
+
+> **REGLA 19**: Antes de generar pm-X-Y.json para CUALQUIER programa/guía/run, ejecutar PASOS A-G del PRE-GENERATION CHECKLIST documentado en el master prompt del PM. NO improvisar schemas. Cada PM tiene un contrato canónico documentado en su master prompt + MGV reference + DIESEL reference (si aplica).
+
+**PASOS A-G del PRE-GENERATION CHECKLIST (canon REGLA 19):**
+
+| Paso | Acción | Validación |
+|------|--------|------------|
+| A | Leer master prompt MD completo del PM | Schema canónico identificado + checks obligatorios + errores históricos a evitar |
+| B | Leer MGV-2026-04-20 reference del PM (template oficial) | Lista keys canon + ejemplos de cada campo |
+| C | Leer DIESEL-2026-04-19 reference del PM (si aplica · v3.0 Self-Contained) | Mejoras opcionales (e.g., `model_assets` con sample script) |
+| D | Validar schema canónico (lista de keys obligatorios) | Conteo keys present/missing |
+| E | Validar campos canónicos OBLIGATORIOS por canon | e.g., `activity_footer × 5` v2.6 en pm-3-5 |
+| F | Validar checks canónicos PASS | e.g., 14 validation_checks en pm-3-5 |
+| G | Validar canon §15.20 anti-copia-fantasma | Cero contaminación cast cross-program |
+
+#### Implementación canon REGLA 19
+
+**Master prompt PM-3.5** (referencia obligatoria por todos los demás master prompts):
+- §⚠️ PRE-GENERATION CHECKLIST — CANON v2.6 OBLIGATORIO agregada al inicio del MD (línea 6 ANTES de §IDENTIDAD)
+- 7 PASOS A-G obligatorios + tabla 27 keys canon + 6 errores históricos a NO repetir
+- Lección aprendida IMARPOR-2026-04-26 explícita
+
+**Programa-level CANON-CHECKLIST.md** (template para todos los programas):
+- Política de auditoría preventiva por PM
+- Tabla referencias canónicas para los 13 PMs (master prompt + MGV + DIESEL refs)
+- Errores históricos por PM (PM-3.5 CP4-FIX-1 + PM-1.1 DIESEL + PM-2.X DIESEL)
+- Comando estándar validación CHECK 9 anti-copia-fantasma
+
+**Política sistémica aplicable a todos los PMs**:
+- PM-1.1 + PM-1.2 + PM-2.0 + PM-2.1-2.10 + PM-2.11 (Fase 1-2)
+- PM-3.1 + PM-3.2 (Fase 3 Playbook)
+- **PM-3.5 + PM-3.6 + PM-3.4 + PM-3.3** (Fase 4 derivaciones · ALTO RIESGO de improvisación)
+- PM-4.1 + PM-4.2 (Instrumentos · ALTO RIESGO de improvisación)
+
+#### Lección sistémica
+
+La REGLA 19 complementa el canon §15.20 anti-copia-fantasma (que previene copia entre guías) con prevención del error análogo a nivel de SCHEMA: improvisar estructura sin leer canon. Ambas reglas operan al mismo nivel: cada PM tiene UN schema canónico documentado + cada guía tiene UN universo de contenido propio. Violar cualquiera = re-trabajo.
+
+#### Versionado
+
+- **Master prompt PM-3.5**: v2.6 → v2.6.1 (PRE-GENERATION CHECKLIST agregado)
+- **Documento Maestro**: v2.7 → v2.8 (REGLA 19 + lección CP4-FIX-1)
+
+---
 
 ### v2.4 — REGLA 18 · Granularidad Opción A (parent activities) + Canon FM-1 (50 pts) + header verde SENA en Sección 4 — 2026-04-21
 

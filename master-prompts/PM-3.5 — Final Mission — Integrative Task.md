@@ -4,6 +4,49 @@
 
 ---
 
+## ⚠️ PRE-GENERATION CHECKLIST — CANON v2.6 OBLIGATORIO
+
+> **LECCIÓN APRENDIDA · IMARPOR-2026-04-26 (CP4-FIX-1):** En el primer intento de generar pm-3-5 IMARPOR G1 se omitió leer este master prompt + MGV/DIESEL references. Resultado: schema híbrido improvisado (23 keys) que omitió `arquetipo_elegido`, `activity_footer × 5`, separación Doc 2/Doc 3, `validation_checks`, `cross_references`. Re-trabajo completo requerido. **Esta sección existe para que NUNCA se repita.**
+
+**ANTES de generar pm-3-5.json para CUALQUIER programa/guía, completar este checklist:**
+
+- [ ] **PASO A · Leer este master prompt completo** (especialmente §ESTRUCTURA ABP + §EXTENSIÓN v2.6 activity_footer + §LAS DOS EVIDENCIAS + §5 ARQUETIPOS + §FORMATO DE SALIDA ESTÁNDAR)
+- [ ] **PASO B · Leer MGV-2026-04-20 reference**: `/runs/MGV-2026-04-20/pm-3-5.json` (27 keys canónicos · template oficial v2.6)
+- [ ] **PASO C · Leer DIESEL-2026-04-19 reference** (opcional · 15 keys v3.0 Self-Contained · útil para `model_assets` con sample script si aplica)
+- [ ] **PASO D · Validar 27 keys canon presentes** (ver lista abajo)
+- [ ] **PASO E · Validar `activity_footer` × 5 sub-fases ABP** (canon v2.6 OBLIGATORIO · 6 campos cada uno)
+- [ ] **PASO F · Validar 14 checks PASS** (ver §VALIDATION CHECKS abajo)
+- [ ] **PASO G · Validar canon §15.20 anti-copia-fantasma** (cero contaminación cast cross-program)
+
+### 27 keys canon MGV v2.6 (orden canónico)
+
+| # | Key | Tipo | Notas |
+|---|-----|------|-------|
+| 1-15 | Metadata block | metadata | pm_id · pm_name · pm_version · run_id · guide · programa · instructor · generated_date · subfase_sena · ubicacion_en_guia · fase_sena · genera_evidencia_formal_gfpi_f134 (False) · tipo_evidencia_sena_no_sumativa · puntos_canon_55 · instrumentos_de_evaluación_referenciados |
+| 16 | `arquetipo_elegido` | dict | primario + combinado_con + justificación_pedagógica · DEBE seleccionar de 5 arquetipos canon (A Professional Simulation · B Problem-Solution · C Production · D Collaborative · E Gamified) |
+| 17 | `universo_narrativo` | dict | estudio + personajes_de_referencia + escenario_familiar (declarar explícitamente "NO nuevo") |
+| 18 | `abp_5_subfases` | dict | 5 sub-fases (subfase_1_plan + subfase_2_design + subfase_3_perform + subfase_4_present + subfase_5_assess) · CADA UNA con `activity_footer` 6 campos OBLIGATORIO v2.6 |
+| 19 | `documento_1_mission_brief` | dict | 9 sub-secciones canon (titulo + header_bilingual + the_mission + the_team_and_roles + the_briefing + the_deliverable + the_rules + your_toolkit + micro_capsulas_visuales) |
+| 20 | `documento_2_observation_checklist` | dict | DESEMPEÑO oral · 5 criterios calificable · canon SENA: SEPARADO de Doc 3 |
+| 21 | `documento_3_product_rubric` | dict | ARTEFACTO · 5 criterios analítico formativo · canon SENA: SEPARADO de Doc 2 (NO combinar) |
+| 22 | `ficha_autoevaluacion_subfase5` | dict | items_emoji_scale + design_star_peer_evaluation |
+| 23 | `logistics_box_misión_final` | dict | 5 campos (duracion + ambientes + materiales + rol_instructor + plan_b) |
+| 24 | `alineación_curricular` | dict | rap + alineación_evidencias + transferencia_demostrada |
+| 25 | `validation_checks` | dict | 12 checks canon MGV + opcional check_13 anti-copia-fantasma + check_14 doc3-separado-de-doc2 = 14 checks total |
+| 26 | `cross_references` | dict | alimenta_a_pm36 + alimenta_a_pm41 + consume_de_pm12 + consume_de_pm32_s6_s7_s8 + consume_de_pm21_pm210 |
+| 27 | `rap_status` | dict | rap_origen + rap_subcompetencia + estado_al_cierre + preparación_para_próxima_guía |
+
+### Errores históricos a NO repetir
+
+1. **NO improvisar schema híbrido** — usar 27 keys MGV v2.6 estricto
+2. **NO omitir `arquetipo_elegido`** — declarar primario de los 5 canon (A/B/C/D/E) + justificación
+3. **NO omitir `activity_footer` × 5** — canon v2.6 OBLIGATORIO 6 campos cada sub-fase
+4. **NO combinar Doc 2 + Doc 3** — canon SENA exige 2 instrumentos distintos (desempeño oral + producto artefacto)
+5. **NO contaminar cast cross-program** — canon §15.20 anti-copia-fantasma · 0 menciones Valentina/Sophia/Pixel/Patty/Carlos/[cast otro programa]
+6. **NO consumir solo pm-3-2-sX upstream** — leer también este master prompt + MGV reference
+
+---
+
 ## IDENTIDAD DEL PROMPT
 
 | Campo | Valor |
