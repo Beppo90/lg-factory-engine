@@ -1,0 +1,1300 @@
+{
+  "pm_id": "PM-3.1",
+  "pm_name": "Playbook Outline — Session Map",
+  "pm_version": "2.6",
+  "pm_verified_against_prompt": "PM-3.1 — Playbook Outline — Session Map.md (v2.6 Last Verified 2026-04-20 · BUG-PM31-001 cerrado)",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "generated_date": "2026-04-29",
+  "generated_by": "Instructor Sergio Cortés Perdomo (sergiocoper@gmail.com)",
+  "instructor": "Sergio Cortés Perdomo",
+  "pipeline_version": "2.11 (form-schema v2.7.1 · master prompts PM-3.1 v2.6 · single-guía absorpcion_Na1)",
+  "status": "draft",
+  "enriched": false,
+  "_enriched_false_rationale": "Gate Humano 3 (aprobación Playbook Outline) pendiente. Sergio aprueba post-generación cambiando enriched: true.",
+  "bug_fix_reference": {
+    "bug_id": "BUG-PM31-001",
+    "descripcion": "PM-0 no declarado como dependencia de PM-3.1; pm-3-1.json no pre-cargaba vectores PM-0 para herencia en PM-3.2.",
+    "fix_version": "v2.5.1 (2026-04-20)",
+    "este_json_implementa_el_fix": true,
+    "mecanismo_fix": "Bloque top-level 'pm0_alignment_by_session' (§11.5) pobla L1%, grammar carga, feedback mode, stress focus, SUCCESS factors, CEFR descriptor focus, pedagogical shift hooks y traceability seed para 12 sesiones — eliminando deriva entre Outline y Build-Out."
+  },
+  "header": {
+    "pm_id": "PM-3.1",
+    "pm_name": "Playbook Outline — Session Map",
+    "pm_version": "2.6",
+    "run_id": "IMARPOR-CC-2026-04-27",
+    "generated_date": "2026-04-29",
+    "instructor": "Sergio Cortés Perdomo",
+    "programa": "Inglés Marítimo y Portuario (Curso Complementario)",
+    "programa_codigo": "12340002",
+    "programa_nombre": "Inglés Marítimo y Portuario (Curso Complementario)",
+    "tipo": "Curso Complementario",
+    "guia_numero": 1,
+    "guia_nombre": "The Maritime Operations Pro",
+    "guia_nombre_esp": "El Profesional de Operaciones Marítimas",
+    "cefr_level": "A1.2 → A2.1 (single-guía con progresión interna A1.2 / A1.3 / A2.0 / A2.1 por bloque interno)",
+    "rap_codigo": "RAP-CC-INTEGRADO (absorbe RAP-01 + RAP-02 + RAP-03 + RAP-04 SOFÍA)",
+    "intensidad_total_horas": 100,
+    "horas_directa": 72,
+    "horas_autonoma": 28,
+    "sesiones_total": 12,
+    "duracion_sesion_min": 360,
+    "duracion_sesion_horas": 6,
+    "duracion_autonoma_por_sesion": 2.333333,
+    "regla_bloques": "absorcion_Na1",
+    "nota": "Unidad base = 6h directas + ~2.33h autónomas por sesión × 12 sesiones = 72h + 28h = 100h totales. Single-guía absorbe los 4 RAPs SOFÍA; progresión CEFR A1.2→A2.1 vive INTERNAMENTE en 4 bloques internos de 3 sesiones c/u. Documento interno del instructor — no distribuir a aprendices.",
+    "destinatario": "Instructor de Inglés Marítimo y Portuario",
+    "universo_narrativo": "Puerto de Buenaventura · Terminal de Contenedores",
+    "avatares": {
+      "Andrea Mosquera": "Port Operations Trainee — avatar del aprendiz (A1.1 inicial · 22 años · técnica recién egresada SENA)",
+      "Capitán Restrepo": "Port Captain — autoridad y mentor cercano (50+ años · B1 técnico · evalúa en S12)",
+      "Captain Lopera": "Vessel Master del BUENAVENTURA EXPRESS — cliente externo permanente (45 años · chino-singapurense · lingua franca B1 · representa inglés real no-nativo del sector)",
+      "Officer Vásquez": "Deck Officer — cameo Bloque Interno 1 (visita al BUENAVENTURA EXPRESS)",
+      "Sailor García": "Sailor — cameo Bloque Interno 1 (inspección de cubierta)",
+      "Diego Mejía": "Crane Operator — cameo Bloque Interno 3 (yard operations)",
+      "Bosun Romero": "Yard Supervisor — cameo Bloque Interno 3 (berthing tripartito)"
+    }
+  },
+  "inputs_consumed": {
+    "entrada_1_gfpi_f134": "pm-2-11.json — Fila GFPI-F-134 11 columnas completa (col_7_horas: 12 sesiones × 6h directas + 2.33h autónomas)",
+    "entrada_2_worksheets": [
+      "pm-1-2.json — Scope & Sequence + 25 key_vocabulary (5 × 4 sub-bloques) + 3 fichas curadas (Maritime English textbook + IMO SMCP 2001 + Videos OMI YouTube)",
+      "pm-2-0.json — Session Blueprint adaptado N=12 (no canon 8) + horas_distribution + N!=8 adaptation_note explicitada",
+      "pm-2-1.json — The Spark (S1-S2 — apertura motivacional puerto Buenaventura)",
+      "pm-2-2.json — Gap Analysis + Learning Contract (S1-S2)",
+      "pm-2-3.json — Reading Master Anchor (Bloque Interno 1 RAP-01 — textbook adaptado UNIT 1+3)",
+      "pm-2-4.json — Writing Task-Based (Berthing Coordination Memo · Radio Log · Post-Turn Report)",
+      "pm-2-5.json — Literacy & Vocabulary (Toolbelt 25 términos × 4 categorías sub-bloque)",
+      "pm-2-6.json — Listening Auditory Anchor (SMCP VHF dialogue Captain Lopera ↔ Andrea)",
+      "pm-2-8.json — Speaking The Mission (VHF Response Simulation + Berthing Coordination Tripartite + Port Operations Pitch)",
+      "pm-2-9.json — Language Functions (5 master functions agrupando F1-F8 IMARPOR — material transversal)",
+      "pm-2-10.json — Grammar Structure Use (17 grupos distribuidos en 4 bloques internos · NATO Phonetic + SMCP + occupational A2.1)"
+    ],
+    "entrada_3_pm0_anchor": {
+      "source_primary": "pm-0-context.json (run IMARPOR-CC-2026-04-27)",
+      "source_fallback": "master-prompts/PM-0 — CEFR Framework & Pedagogical Foundation.md (v1.1)",
+      "vectores_consumidos": [
+        "cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno — 4 sub-snapshots (A1.2 / A1.3 / A2.0 / A2.1)",
+        "grammar_roadmap.activation_mapping_internal_blocks — 17 grupos distribuidos en 4 bloques",
+        "l1_percentage_per_session.single_guide_12_sessions — curva 25% S1 → 0% S12",
+        "shifts_metodologicos — 4 bloques internos (lenta/máximo+driller → natural/cero+evaluador externo)",
+        "principios_aplicables §5.1–§5.13 + grupo §10.5 sector específico maritime SMCP",
+        "traceability_checklist_ref §7 (22 ítems · ≥ 20/22 aprobación)",
+        "final_mission_scenario — The CML Port Turnaround"
+      ]
+    },
+    "entrada_4_evaluacion": {
+      "pm_4_1": "pm-4-1.json — 6 instrumentos (5 formales E1-E5 × 5 pts + Cuestionario E6 25 pts) = 50 pts + Misión 5 pts = 55 pts canon",
+      "pm_4_2": "pm-4-2.json — Cuestionario Consolidado S6 25 pts (5 secciones × 5 pts: Reading + Writing + Listening + Vocabulary + Grammar) — Versión 2 EVALUACIÓN principio Tres Versiones"
+    }
+  },
+  "overview_table": [
+    {
+      "session": 1,
+      "nombre": "First Day at the Terminal — Andrea Arrives",
+      "worksheets": ["PM-2.1", "PM-2.2"],
+      "momento_sena": "3.1 Reflexión Inicial",
+      "bloque_interno": "Bloque Interno 1 (RAP-01 · A1.2)",
+      "foco": "Bienvenida narrativa a Puerto de Buenaventura + Spark (escenario llegada de Andrea) + Gap Analysis maritime saberes previos",
+      "habilidades": "—",
+      "evidencia": "—",
+      "autonomous_hours": 2.333333,
+      "autonomo": "Llenar Maritime KWL Chart (Know/Want/Learned sobre puerto + buque) + traer 5 fotos del puerto/operaciones que el aprendiz reconoce"
+    },
+    {
+      "session": 2,
+      "nombre": "The Port Word Walker — Vocabulary of the Quay",
+      "worksheets": ["PM-2.5", "PM-2.2 (Learning Contract cierre)"],
+      "momento_sena": "3.2 Contextualización + apertura 3.3 Apropiación",
+      "bloque_interno": "Bloque Interno 1 (RAP-01 · A1.2)",
+      "foco": "Toolbelt 5 términos Sub-bloque 1 (bollard · crane · bow · stern · bridge) + Word Wall maritime + Learning Contract firma",
+      "habilidades": "V● R○",
+      "evidencia": "—",
+      "autonomous_hours": 2.333333,
+      "autonomo": "Identificar 5 elementos portuarios en fotos personales/del puerto + grabar audio 30s nombrándolos"
+    },
+    {
+      "session": 3,
+      "nombre": "Reading the Ship — UNIT 1 SHIP OVERVIEW",
+      "worksheets": ["PM-2.3", "PM-2.5 (reciclaje)"],
+      "momento_sena": "3.3 Apropiación — Input receptivo",
+      "bloque_interno": "Bloque Interno 1 (RAP-01 · A1.2)",
+      "foco": "Reading Master Anchor (textbook UNIT 1 adaptado · 150-200 pal · Andrea visita BUENAVENTURA EXPRESS con Officer Vásquez) + jigsaw cooperativo + classification ship parts",
+      "habilidades": "R● V● G○",
+      "evidencia": "E1 Reading (5 pts) — Cuestionario No 1 (PM-4.1)",
+      "autonomous_hours": 2.333333,
+      "autonomo": "Identificar 5 ship parts en imágenes del BUENAVENTURA EXPRESS + completar diagrama etiquetado bilingüe"
+    },
+    {
+      "session": 4,
+      "nombre": "Writing the First Inspection Report — Be + Imperative + IN",
+      "worksheets": ["PM-2.10 (Gr 1+3+5+14)", "PM-2.4"],
+      "momento_sena": "3.3 Apropiación — Output escrito",
+      "bloque_interno": "Bloque Interno 1 → Bloque Interno 2 transición (cierre A1.2 · apertura A1.3)",
+      "foco": "Grammar awareness Gr 1 (be) + Gr 3 (plural a/an) + Gr 5 (imperative) + Gr 14 (IN at/on/next to/near) + writing frame Inspection Report 1 página + peer review",
+      "habilidades": "W● G● V○ R○",
+      "evidencia": "E2 Writing (5 pts) — Lista Verificación No 2 (PM-4.1)",
+      "autonomous_hours": 2.333333,
+      "autonomo": "Inspection Report #2 de un buque/elemento del puerto que el aprendiz observa (no evaluada · práctica autónoma)"
+    },
+    {
+      "session": 5,
+      "nombre": "The Pilot's Apprentice — Listening to SMCP",
+      "worksheets": ["PM-2.6", "PM-2.5 (extensión SMCP toolbelt)"],
+      "momento_sena": "3.3 Apropiación — Input auditivo",
+      "bloque_interno": "Bloque Interno 2 (RAP-02 · A1.3)",
+      "foco": "Listening anchor (VHF dialogue Captain Lopera 90s · interferencia simulada) + 5 SMCP key phrases (Roger · Wilco · SMCP · NATO Phonetic · VHF) + Reference Card laminada + NATO Phonetic Alphabet drill",
+      "habilidades": "L● V● P● G○",
+      "evidencia": "E3 Listening (5 pts) — Lista Verificación No 3 (PM-4.1)",
+      "autonomous_hours": 2.333333,
+      "autonomo": "Deletrear 5 nombres propios del aprendiz (nombre completo + ciudad) usando NATO Phonetic Alphabet en audio 60s"
+    },
+    {
+      "session": 6,
+      "nombre": "VHF Response Drill — Speaking with Captain Lopera",
+      "worksheets": ["PM-2.8 (VHF segment)", "PM-2.10 (Gr 5neg + Gr 6 must + Gr 8 + Gr 17)"],
+      "momento_sena": "3.3 Apropiación — Output oral",
+      "bloque_interno": "Bloque Interno 2 (RAP-02 · A1.3)",
+      "foco": "Pronunciation lab SMCP (Roger / Wilco / Affirmative / Standby — stress crítico) + Speaking task: VHF Response Simulation 2 min con Captain Lopera (lingua franca B1) + must/imperativo negativo en contexto",
+      "habilidades": "S● P● L○ G●",
+      "evidencia": "E4 Speaking (5 pts) — Escala Estimación No 4 (PM-4.1) [parcial — VHF segment]",
+      "autonomous_hours": 2.333333,
+      "autonomo": "Grabar Radio Log de 90s simulando llamada VHF entrante (incluye 3 SMCP responses + 1 NATO spelling de call sign)"
+    },
+    {
+      "session": 7,
+      "nombre": "The Two-Way Radio — Coordinating Berthing Operations",
+      "worksheets": ["PM-2.6 (extensión)", "PM-2.10 (Gr 4 + Gr 6 ext + Gr 9 + Gr 10)"],
+      "momento_sena": "3.3 Apropiación — Integración receptiva-productiva",
+      "bloque_interno": "Bloque Interno 3 (RAP-03 · A2.0)",
+      "foco": "Modales should/could/might + comparativos + presente continuo + pasado simple en contexto puerto-buque + Berthing Coordination input (yard + bridge + customs simultáneo)",
+      "habilidades": "L● R● G● V○ S○",
+      "evidencia": "—",
+      "autonomous_hours": 2.333333,
+      "autonomo": "Listening cloze SMCP en 3 audios reales canal IMO YouTube (anchorage · pilot boarding · cargo handling) + completar Radio Log con timestamps"
+    },
+    {
+      "session": 8,
+      "nombre": "Coordinating the Quay — Speaking Tripartite",
+      "worksheets": ["PM-2.8 (Berthing segment)", "PM-2.10 (Gr 11 + Gr 12 + Gr 13)"],
+      "momento_sena": "3.3 Apropiación — Output integrado",
+      "bloque_interno": "Bloque Interno 3 (RAP-03 · A2.0)",
+      "foco": "Presente perfecto + condicional tipo 1 + voz pasiva presente + Speaking Berthing Coordination Tripartite 3 min (Andrea ↔ Diego crane + Bosun Romero yard + Captain Lopera VHF)",
+      "habilidades": "S● G● L○ V○ W○",
+      "evidencia": "E4 Speaking (5 pts) — Escala Estimación No 4 (PM-4.1) [final — Berthing segment]",
+      "autonomous_hours": 2.333333,
+      "autonomo": "Berthing Coordination Memo 1 página + Post-Turn Report draft (incident analysis con condicional 1 + voz pasiva)"
+    },
+    {
+      "session": 9,
+      "nombre": "Studio Language — 5 Master Functions of the Port Pro",
+      "worksheets": ["PM-2.9", "PM-2.10 (Gr 15 conectores)"],
+      "momento_sena": "3.3 Apropiación — Cierre integración pragmática",
+      "bloque_interno": "Bloque Interno 3 → Bloque Interno 4 transición (cierre A2.0 · apertura A2.1)",
+      "foco": "5 master functions IMARPOR (Information Exchange · SMCP literacy · Coordinating Tripartite · Modals · Describing & Justifying) + Role Carousel 5 estaciones + connector awareness (and/but/or/because/so/although)",
+      "habilidades": "S● LF● V○ G○",
+      "evidencia": "E5 Language Functions (5 pts) — Escala Estimación No 5 (PM-4.1)",
+      "autonomous_hours": 2.333333,
+      "autonomo": "Video 90s presentándose como Port Operations Trainee del Terminal de Contenedores Buenaventura usando 5 funciones + 3 conectores"
+    },
+    {
+      "session": 10,
+      "nombre": "Consolidation Day — The Maritime Operations Check",
+      "worksheets": ["PM-4.2"],
+      "momento_sena": "3.3 Apropiación → 3.4 Transferencia (consolidación/evaluación · Misión Final inicio)",
+      "bloque_interno": "Bloque Interno 4 (RAP-04 · A2.1)",
+      "foco": "Cuestionario Consolidado S6 25 ítems (5 Reading + 5 Writing + 5 Listening + 5 Vocabulary + 5 Grammar) + retroalimentación grupal + Misión Final brief (Capitán Restrepo entrega CML CARRIER scenario) + portafolio prep",
+      "habilidades": "R● W● L● V● G●",
+      "evidencia": "E6 Cuestionario Consolidado (25 pts) — Cuestionario No 6 (PM-4.2)",
+      "autonomous_hours": 2.333333,
+      "autonomo": "Autoevaluación 22-item checklist PM-0 §7 + planeación canvas Misión Final (Qué/Por qué/Cómo/Cuándo coordinar CML CARRIER)"
+    },
+    {
+      "session": 11,
+      "nombre": "Final Mission Design — The CML Carrier Plan",
+      "worksheets": ["PM-3.5 (fases 1-2 ABP)"],
+      "momento_sena": "3.4 Transferencia (Diseño + Desempeño)",
+      "bloque_interno": "Bloque Interno 4 (RAP-04 · A2.1)",
+      "foco": "Brief Capitán Restrepo + diseño plan operacional CML CARRIER 12h + Berthing Coordination Memo + Radio Log template + ensayo pitch profesional 3 min con tag questions + occupational structures (responsible for / specialize in / coordinate / supervise / report to)",
+      "habilidades": "W● S○ R○ V○ G○",
+      "evidencia": "— (ABP sin evidencia formal en S11 · prep para S12)",
+      "autonomous_hours": 2.333333,
+      "autonomo": "Completar Berthing Memo final + Radio Log final + ensayar pitch 3 min frente a espejo (mínimo 3 ensayos cronometrados)"
+    },
+    {
+      "session": 12,
+      "nombre": "The Port Professional — CML Port Turnaround Mission",
+      "worksheets": ["PM-3.5 (fases 3-5 ABP)"],
+      "momento_sena": "3.4 Transferencia (Cierre · Misión Final delivery)",
+      "bloque_interno": "Bloque Interno 4 (RAP-04 · A2.1)",
+      "foco": "Simulación operacional CML Port Turnaround condensada 3h: (1) VHF intake con Captain Lopera + (2) Berthing tripartito Diego/Bosun Romero/Captain + (3) Pitch profesional 3 min ante panel (Capitán Restrepo + agente naviero externo) + (4) Q&A con tag questions + (5) Reflexión metacognitiva 'What I see now that I did not see on Day 1'",
+      "habilidades": "S● W○ V○ G○ R○ L○",
+      "evidencia": "E-Misión (5 pts) — Rúbrica ABP 6 criterios C01-C13",
+      "autonomous_hours": 2.333333,
+      "autonomo": "Actualizar portafolio personal con Misión Final completa (Berthing Memo + Radio Log + Post-Turn Report + audio Pitch + reflexión 'What I see now')"
+    }
+  ],
+  "sessions_detail": "Cada sesión se desarrolla individualmente en pm-3-2-s1.json a pm-3-2-s12.json (Build-Outs · 12 ejecuciones de PM-3.2). Este PM-3.1 provee el contrato pedagógico (overview + pm0_alignment + skills_progression + estrategias + ambientes + voc_dimensions). PM-3.2 materializa SET-UP (30 min) / WHILE (260-280 min) / WRAP-UP (50-70 min) con detalle de Teacher Talk bilingüe, bloques A/B/C/D, transiciones y logistics_box completo. Cada pm-3-2-sX.json hereda pm0_alignment_by_session[X-1] vía script pm-3-2-pm0-propagate.js (canon v2.5.1) sin redefinir pm0_protocol — sólo expandir con detalle de facilitación.",
+  "skills_progression_map": {
+    "leyenda": "● foco | ○ soporte/reciclaje | — no activa",
+    "habilidades": {
+      "R": "Reading",
+      "L": "Listening",
+      "V": "Vocabulary",
+      "P": "Pronunciation (incluye stress · IPA · NATO Phonetic · SMCP)",
+      "G": "Grammar (17 grupos PM-0 §5.6 + Gr 17 maritime sector)",
+      "W": "Writing",
+      "S": "Speaking"
+    },
+    "tabla": [
+      {"session": 1, "R": "—", "L": "—", "V": "○", "P": "—", "G": "—", "W": "—", "S": "○"},
+      {"session": 2, "R": "○", "L": "—", "V": "●", "P": "○", "G": "—", "W": "—", "S": "—"},
+      {"session": 3, "R": "●", "L": "—", "V": "●", "P": "○", "G": "○", "W": "—", "S": "—"},
+      {"session": 4, "R": "○", "L": "—", "V": "○", "P": "○", "G": "●", "W": "●", "S": "—"},
+      {"session": 5, "R": "—", "L": "●", "V": "●", "P": "●", "G": "○", "W": "—", "S": "○"},
+      {"session": 6, "R": "—", "L": "○", "V": "○", "P": "●", "G": "●", "W": "—", "S": "●"},
+      {"session": 7, "R": "●", "L": "●", "V": "○", "P": "○", "G": "●", "W": "—", "S": "○"},
+      {"session": 8, "R": "—", "L": "○", "V": "○", "P": "○", "G": "●", "W": "○", "S": "●"},
+      {"session": 9, "R": "—", "L": "○", "V": "○", "P": "○", "G": "○", "W": "—", "S": "●"},
+      {"session": 10, "R": "●", "L": "●", "V": "●", "P": "—", "G": "●", "W": "●", "S": "○"},
+      {"session": 11, "R": "○", "L": "—", "V": "○", "P": "○", "G": "○", "W": "●", "S": "○"},
+      {"session": 12, "R": "○", "L": "○", "V": "○", "P": "○", "G": "○", "W": "○", "S": "●"}
+    ]
+  },
+  "ambientes_resumen": {
+    "nota": "Aula bilingüe con Maritime Word Wall permanente + SMCP/NATO Phonetic Reference Cards laminadas + English Zone señalizada. Configuración variable por sesión: input pesado (lectura/listening) → mesas en U; producción oral (VHF/Berthing) → estaciones + radios simuladas; evaluación (S10) → mesas individuales; transferencia (S11-S12) → aula-taller + Studio Showcase con CML CARRIER mockup.",
+    "tipo_ambiente": "Aula convencional con adaptaciones marítimo-portuarias por sesión + acceso a biblioteca de referencias OMI (textbook + SMCP doc + videos) + radios VHF simuladas (walkie-talkies o app móvil)",
+    "recursos_fijos": [
+      "Proyector con pantalla grande",
+      "Tablero blanco grande",
+      "Maritime Word Wall permanente (muro lateral) — actualizado sesión a sesión con 25 términos Toolbelt + 30+ SMCP key phrases",
+      "SMCP Reference Card laminada (1 por aprendiz · permanente desde S5)",
+      "NATO Phonetic Alphabet Reference Card (1 por aprendiz · permanente desde S5)",
+      "English Zone señalizada con cinta de color",
+      "Cronómetro visible",
+      "Mapa del Terminal de Contenedores Buenaventura impreso A2 (muro frontal)",
+      "Diagrama Ship Overview impreso A2 (muro lateral)"
+    ],
+    "recursos_variables_por_sesion": "Ver campo 'ambiente' en pm0_alignment_by_session[n] + cada session_detail[n].logistics_box (delegado a pm-3-2-sX.json)."
+  },
+  "estrategias_resumen": {
+    "nota": "Arco de 4 estrategias SENA distribuidas en el ciclo de 12 sesiones (single-guía absorpción 4 RAPs): ABP como apertura motivacional (S1) + Diagnóstico (S1-S2), ABT en apropiación intensiva (S2-S9 con simulación VHF y berthing en S6-S8), Evaluación Formativa Integrada en S10, ABP de transferencia con Misión Final CML Port Turnaround (S11-S12).",
+    "ciclo_sena": {
+      "3.1_reflexion_inicial": "S1 — ABP (escenario llegada de Andrea al puerto motiva el inglés marítimo) + Diagnóstico activador",
+      "3.2_contextualizacion": "S2 — Diagnóstico (Gap Analysis + Learning Contract + Maritime KWL) — apertura Apropiación",
+      "3.3_apropiacion": "S3-S9 — ABT dominante (tareas con producto verificable: classification · inspection report · VHF response · berthing memo · pitch ensayo) + Simulación maritime en S6 (VHF) y S8 (Berthing tripartito) | S10 — Evaluación Formativa Integrada (Cuestionario S6 + portafolio + metacognición + Misión Final brief)",
+      "3.4_transferencia": "S11-S12 — ABP Misión Final (CML Port Turnaround) con fases Planeación → Diseño → Desempeño → Presentación → Evaluación reflexiva"
+    },
+    "estrategia_dominante_por_sesion": [
+      {"session": 1, "estrategia": "ABP + Diagnóstico activador (escenario Andrea + Gap Analysis maritime)"},
+      {"session": 2, "estrategia": "ABT — Pre-enseñanza léxica portuaria (Toolbelt 5 términos Sub-bloque 1) + Word Wall maritime"},
+      {"session": 3, "estrategia": "ABT — Reading andamiada Lectura cooperativa Jigsaw (textbook UNIT 1 SHIP OVERVIEW)"},
+      {"session": 4, "estrategia": "ABT — Inducción gramatical (Gr 1+3+5+14) + escritura modelada Inspection Report + peer review"},
+      {"session": 5, "estrategia": "ABT — Escucha activa secuencial VHF + Drilling SMCP + NATO Phonetic Alphabet"},
+      {"session": 6, "estrategia": "ABT + Simulación VHF — Pronunciation lab + VHF Response Simulation con Captain Lopera"},
+      {"session": 7, "estrategia": "ABT — Inducción gramatical (modales + condicional + pasado/presente continuo) + Listening tripartito"},
+      {"session": 8, "estrategia": "ABT + Simulación tripartita — Berthing Coordination con 3 actores (Diego + Bosun Romero + Captain Lopera)"},
+      {"session": 9, "estrategia": "Simulación rotativa — Role Carousel 5 estaciones (5 master functions IMARPOR)"},
+      {"session": 10, "estrategia": "Evaluación Formativa Integrada — Cuestionario S6 + retroalimentación + metacognición + Misión Final brief"},
+      {"session": 11, "estrategia": "ABP — Fase exploratoria/diseño Berthing Memo + Radio Log + ensayo pitch"},
+      {"session": 12, "estrategia": "ABP — Fase ejecutiva CML Port Turnaround + presentación + evaluación reflexiva"}
+    ]
+  },
+  "voc_dimensions_table": [
+    {
+      "session": 1,
+      "nombre": "First Day at the Terminal — Andrea Arrives",
+      "cognitiva": "Reconocer elementos visibles del Terminal de Contenedores Buenaventura (muelle · grúa · contenedor · barco · radio VHF) nombrándolos en inglés mediante Maritime Mood Board icebreaker.",
+      "procedimental": "Completar una Maritime Gap Card y un KWL chart con vocabulario portuario previo vs. vocabulario target del programa de 100h.",
+      "actitudinal": "Comprometerse con el contrato de English Zone reconociendo el valor del inglés marítimo-portuario operacional para empleabilidad inmediata como Port Operations Trainee."
+    },
+    {
+      "session": 2,
+      "nombre": "The Port Word Walker — Vocabulary of the Quay",
+      "cognitiva": "Identificar 5 elementos canónicos del Terminal Buenaventura (bollard · crane · bow · stern · bridge) en fotos auténticas y diagramas con apoyo visual.",
+      "procedimental": "Clasificar 12 imágenes portuarias en 3 categorías (port infrastructure / ship parts / port equipment) completando un handout con etiquetado bilingüe.",
+      "actitudinal": "Valorar el vocabulario portuario preciso como herramienta profesional del Port Operations Trainee para comunicación operativa con compañeros y supervisores."
+    },
+    {
+      "session": 3,
+      "nombre": "Reading the Ship — UNIT 1 SHIP OVERVIEW",
+      "cognitiva": "Identificar las partes del buque BUENAVENTURA EXPRESS (bow / stern / bridge / deck / hull / mast) en un texto adaptado del Maritime English textbook UNIT 1 (150-200 palabras A1.2) mediante jigsaw.",
+      "procedimental": "Producir un diagrama etiquetado bilingüe de un container ship con 6-8 partes identificadas correctamente desde el texto.",
+      "actitudinal": "Valorar la precisión lectora técnica como herramienta profesional del Port Trainee para interpretar manuales OMI y manifiestos reales."
+    },
+    {
+      "session": 4,
+      "nombre": "Writing the First Inspection Report — Be + Imperative + IN",
+      "cognitiva": "Identificar las estructuras Verb to Be (afirm./neg./preg.) + plural a/an + imperativo + preposición IN en oraciones del contexto inspección portuaria.",
+      "procedimental": "Producir un Inspection Report escrito de 6-8 oraciones simples sobre el BUENAVENTURA EXPRESS usando be + imperativo + IN + 5 ship parts con writing frame.",
+      "actitudinal": "Valorar la precisión gramatical y léxica en la documentación técnica escrita como condición del profesionalismo en operaciones marítimo-portuarias."
+    },
+    {
+      "session": 5,
+      "nombre": "The Pilot's Apprentice — Listening to SMCP",
+      "cognitiva": "Comprender 10 frases SMCP estandarizadas (Roger · Wilco · Affirmative · Negative · Standby · Out · Over · Say again · Spell that · Repeat) + NATO Phonetic Alphabet completo en un diálogo VHF de 90 segundos entre Captain Lopera y Andrea con interferencia simulada.",
+      "procedimental": "Producir 5 deletreos NATO Phonetic correctos (nombre completo + ciudad del aprendiz) y 3 confirmaciones SMCP (Roger / Wilco / Affirmative) en respuesta a prompts del instructor.",
+      "actitudinal": "Demostrar concentración auditiva al filtrar interferencia VHF reconociendo que la escucha precisa es condición de seguridad operacional en el sector marítimo internacional."
+    },
+    {
+      "session": 6,
+      "nombre": "VHF Response Drill — Speaking with Captain Lopera",
+      "cognitiva": "Comprender la diferencia imperativo afirmativo / imperativo negativo / modal must + presente simple Wh-questions en contexto VHF.",
+      "procedimental": "Ejecutar VHF Response Simulation de 2 minutos en parejas con Captain Lopera (rol del instructor o aprendiz par) confirmando 5 SMCP messages + deletreando 1 call sign con NATO Phonetic.",
+      "actitudinal": "Demostrar confianza oral al confirmar mensajes VHF y pedir clarificación reconociendo que el inglés operacional con vessel masters no-nativos es el oficio cotidiano del Port Trainee."
+    },
+    {
+      "session": 7,
+      "nombre": "The Two-Way Radio — Coordinating Berthing Operations",
+      "cognitiva": "Identificar las estructuras modales (should/could/might) + comparativos + presente continuo + pasado simple en un audio tripartito (yard + bridge + customs) de 3 minutos.",
+      "procedimental": "Completar Radio Log con timestamps + canales + summary de 5 mensajes VHF entrantes durante listening tripartito.",
+      "actitudinal": "Valorar la coordinación tripartita simultánea como competencia profesional clave del Port Operations Trainee reconociendo que el inglés es el medio de mantener seguridad operacional."
+    },
+    {
+      "session": 8,
+      "nombre": "Coordinating the Quay — Speaking Tripartite",
+      "cognitiva": "Comprender presente perfecto + condicional tipo 1 + voz pasiva presente en operaciones de berthing reales.",
+      "procedimental": "Producir un Berthing Coordination tripartito oral de 3 minutos coordinando simultáneamente Diego (crane · L1 español) + Bosun Romero (yard · L1 español) + Captain Lopera (VHF · lingua franca B1) usando modales + condicional + voz pasiva.",
+      "actitudinal": "Demostrar liderazgo operacional al dirigir 3 actores simultáneos en inglés reconociendo que el Port Trainee es el nodo lingüístico del puerto."
+    },
+    {
+      "session": 9,
+      "nombre": "Studio Language — 5 Master Functions of the Port Pro",
+      "cognitiva": "Identificar las 5 master functions del Port Operations Trainee (Information Exchange · SMCP literacy · Coordinating Tripartite · Modals · Describing & Justifying) y los 6 conectores básicos (and/but/or/because/so/although).",
+      "procedimental": "Ejecutar las 5 funciones en 5 estaciones del Role Carousel (90s por estación) enlazando ideas con al menos 4 conectores y respetando estructuras A1.3-A2.0.",
+      "actitudinal": "Comprometerse con el uso cotidiano del inglés en el puerto reconociendo que las 5 master functions son el mínimo profesional de interacción diaria del Port Trainee."
+    },
+    {
+      "session": 10,
+      "nombre": "Consolidation Day — The Maritime Operations Check",
+      "cognitiva": "Demostrar dominio progresivo A1.2-A2.0 en Reading, Writing, Listening, Vocabulary y Grammar mediante un cuestionario consolidado de 25 ítems × 1 pt.",
+      "procedimental": "Organizar las 6 evidencias (E1-E5 + E6) en un portafolio físico/digital aplicando el template entregado y planear canvas Misión Final CML CARRIER.",
+      "actitudinal": "Reflexionar metacognitivamente sobre el proceso de aprendizaje de las primeras 9 sesiones reconociendo logros y brechas mediante autoevaluación 22-item PM-0 §7."
+    },
+    {
+      "session": 11,
+      "nombre": "Final Mission Design — The CML Carrier Plan",
+      "cognitiva": "Comprender el brief operacional del Capitán Restrepo (CML CARRIER · Shanghái → Buenaventura · turno 12h) identificando los 4 componentes ABP (Qué/Por qué/Cómo/Cuándo).",
+      "procedimental": "Producir Berthing Coordination Memo (1 página) + Radio Log template + ensayo de Pitch Profesional 3 min con tag questions y occupational structures (responsible for / specialize in / coordinate / supervise / report to).",
+      "actitudinal": "Valorar la planeación operacional como fase profesional previa a la ejecución reconociendo que el Port Trainee organiza antes de coordinar."
+    },
+    {
+      "session": 12,
+      "nombre": "The Port Professional — CML Port Turnaround Mission",
+      "cognitiva": "Identificar los elementos de un pitch profesional bilingüe de 3 minutos en la propia presentación y en las de los pares + tag questions producción activa.",
+      "procedimental": "Ejecutar la simulación CML Port Turnaround durante 3 horas: VHF intake + Berthing tripartito + Pitch profesional 3 min ante panel + Q&A con tag questions aplicando el vocabulario y estructuras de las 11 sesiones anteriores.",
+      "actitudinal": "Reflexionar metacognitivamente sobre el proceso completo del curso intensivo 100h reconociendo la distancia recorrida ('What I see now that I did not see on Day 1') y comprometiéndose con empleabilidad inmediata como Port Operations Professional."
+    }
+  ],
+  "pm0_alignment_by_session": [
+    {
+      "session": 1,
+      "nombre": "First Day at the Terminal — Andrea Arrives",
+      "momento_sena": "3.1 Reflexión Inicial",
+      "estrategias_didacticas": ["ABP", "Diagnóstico activador"],
+      "dimensiones_voc": ["Cognitiva: reconocer elementos del puerto", "Procedimental: completar Gap Card + KWL", "Actitudinal: comprometerse con English Zone"],
+      "ambiente_aprendizaje": "Aula bilingüe en U o mesas de 4. Proyector + tablero + English Zone señalizada. Maritime Word Wall vacío activado. Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 en muro.",
+      "materiales_clave": ["Welcome presentation slides Pixel-puerto Buenaventura", "Maritime Gap Card template", "Maritime KWL chart handout", "5 fotos de Andrea/Captain Lopera/BUENAVENTURA EXPRESS", "English Zone tape"],
+      "l1_percentage_target": {
+        "value": 25,
+        "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S1 — ≤ 25% (PM-0 §9.1 adaptado prereq A1.1 cubierto)",
+        "rationale": "Día 1 establecer confianza y motivación. L1 dominante en welcome narrativo (Andrea + Captain Lopera + CML CARRIER) — onboarding al universo antes de contenido inglés. Curva más agresiva que MGV (30% S1) porque IMARPOR-CC asume A1.1 prereq."
+      },
+      "grammar_groups_active": [
+        {"group_id": "Gr 1", "group_name": "Verbo be (afirmativo contraído · reciclaje receptivo)", "nivel_activacion": "Reciclaje receptivo", "ejemplo_en_sesion": "Teacher Talk: 'I am Sergio. This is the Terminal de Contenedores. Andrea is a Port Operations Trainee.' (sin análisis formal)"},
+        {"group_id": "Gr 5", "group_name": "Imperativo afirmativo (reciclaje receptivo)", "nivel_activacion": "Reciclaje receptivo", "ejemplo_en_sesion": "Teacher Talk: 'Open your notebook. Look at the photo. Share with your partner.' (sin análisis formal)"}
+      ],
+      "grammar_carga_check": "0/2 Intro — S1 es sesión de diagnóstico sin enseñanza gramatical explícita (PM-0 §9.2) ✓",
+      "dominant_feedback_mode": {
+        "mode": "ACCURACY",
+        "rationale": "Día 1 prioriza precisión en chunks sociales fijos (greetings + nombres maritime). Fluency vendrá desde S6. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_1.",
+        "techniques": ["Choral repetition en saludos + 5 elementos Toolbelt portuario base", "Finger drilling muy breve (3-5 reps) para palabras tónicas (bollard / crane / bow / stern / bridge)", "Modelo-eco (instructor dice → clase repite)"]
+      },
+      "stress_focus": {
+        "target_words": [
+          {"word": "Buenaventura", "ipa": "/bwenavenˈtuɾa/", "tonica": "CUARTA (Buenaven-TU-ra) — pronunciación L1 mantenida"},
+          {"word": "terminal", "ipa": "/ˈtɜːrmɪnəl/", "tonica": "PRIMERA (TERminal)"},
+          {"word": "container", "ipa": "/kənˈteɪnər/", "tonica": "SEGUNDA (conTAIner)"},
+          {"word": "Andrea", "ipa": "/ˈændriə/", "tonica": "PRIMERA (ANdrea) — pronunciación L2"},
+          {"word": "Lopera", "ipa": "/loˈpeɾa/", "tonica": "SEGUNDA (loPEra) — L1 mantenida"}
+        ],
+        "techniques": ["Clapping silábico — 1 palmada por sílaba, fuerte en tónica", "Board marking — MAYÚSCULA en sílaba tónica: 'TERminal / conTAIner'"],
+        "source": "PM-0 §5.13 — Noticing de stress con soporte físico"
+      },
+      "success_factors_priorized": {
+        "target_vocabulary": ["terminal", "container", "port", "vessel", "ship", "Buenaventura", "trainee", "operations", "captain", "radio"],
+        "factors_applied": ["Sounds", "Encounter", "Self-expression"],
+        "operationalization": "Sounds: stress marking inicial de 5 palabras + IPA en Word Wall maritime. Encounter: primer contacto controlado en Welcome presentation + Maritime Gap Card icebreaker (múltiples exposiciones). Self-expression: cada aprendiz nombra 5 elementos visibles del Terminal Buenaventura (puerto familiar para todos los aprendices) usando las 10 palabras target.",
+        "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS)"
+      },
+      "cefr_descriptor_focus": {
+        "subnivel": "A1.2",
+        "habilidad_principal": "produccion_oral",
+        "descriptor_activo": "Produce palabras y frases aisladas. Nombra elementos visibles del muelle.",
+        "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_1_S1-S3_RAP01_A1.2.produccion_oral"
+      },
+      "pedagogical_shift_hooks": {
+        "velocidad_input": "Lenta — pausas largas entre palabras, repetir cada frase 2x",
+        "extension_textos": "1-3 oraciones + apoyo visual obligatorio (foto puerto / diagrama)",
+        "andamiaje": "Alto — frames completos, word banks a la vista, visuales en cada slide",
+        "rol_docente": "Modelo central + driller activo + facilitador emocional del Día 1",
+        "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_1"
+      },
+      "traceability_seed_22": {
+        "items_priorizados_para_esta_sesion": ["A1 — Asignación subnivel A1.2 coherente (prereq A1.1 cubierto)", "B5 — Gestión L1 (25% tope S1)", "B8 — Andamiaje alto (frames + visuales)", "C1 — Bloque FPI Reflexión Inicial", "D1 — Contribuye al canon 55 (no formalmente, sí contrato)"],
+        "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+        "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S1."
+      }
+    },
+    {
+      "session": 2,
+      "nombre": "The Port Word Walker — Vocabulary of the Quay",
+      "momento_sena": "3.2 Contextualización + apertura 3.3 Apropiación",
+      "estrategias_didacticas": ["ABT", "Construcción de organizador visual (Word Wall)"],
+      "dimensiones_voc": ["Cognitiva: identificar 5 elementos canónicos", "Procedimental: clasificar 12 imágenes en 3 categorías", "Actitudinal: valorar vocabulario portuario preciso"],
+      "ambiente_aprendizaje": "Aula + mesas de 4 para classification + Maritime Word Wall activado en pared lateral con 5 tarjetas Sub-bloque 1 + Mapa Terminal Buenaventura visible.",
+      "materiales_clave": ["Maritime Word Wall — 5 tarjetas Sub-bloque 1 (bollard/crane/bow/stern/bridge) con IPA + foto", "Classification handout (12 imágenes + 3 columnas: port infra / ship parts / port equipment)", "Learning Contract handout", "Cinta para English Zone"],
+      "l1_percentage_target": {
+        "value": 20,
+        "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_1.S2 — ≤ 20% (PM-0 §9.1)",
+        "rationale": "L1 sólo para clarificar diferencia entre port infrastructure (muelle) vs port equipment (grúas) inicialmente y firma del Learning Contract. Resto en L2 con apoyo visual obligatorio."
+      },
+      "grammar_groups_active": [
+        {"group_id": "Gr 3", "group_name": "Plural regular -s/-es/-ies + artículos a/an", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'a bollard / bollards | a crane / cranes | a bow (singular único) | the stern (definite for ship parts)'"},
+        {"group_id": "Gr 2", "group_name": "Pronombres demostrativos this/that/these/those", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'This is a bollard. That is a crane. These are containers. Those are bow lines.'"}
+      ],
+      "grammar_carga_check": "2/2 Intro máximos (PM-0 §9.2) ✓ — primera sesión con carga gramatical formal; respeta límite",
+      "dominant_feedback_mode": {
+        "mode": "ACCURACY",
+        "rationale": "Apropiación inicial Sub-bloque 1 — precisión es prioridad. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_1 (feedback inmediato accuracy-prioritario).",
+        "techniques": ["Recast — repetir corregido sin interrumpir flujo", "Elicitación guiada — instructor empieza frase y aprendiz completa", "Metalinguistic cue — flecha en tablero apuntando al error gramatical"]
+      },
+      "stress_focus": {
+        "target_words": [
+          {"word": "bollard", "ipa": "/ˈbɒlərd/", "tonica": "PRIMERA (BOlLARD)"},
+          {"word": "crane", "ipa": "/kreɪn/", "tonica": "única (CRANE)"},
+          {"word": "bow", "ipa": "/baʊ/", "tonica": "única (BOW)"},
+          {"word": "stern", "ipa": "/stɜːrn/", "tonica": "única (STERN)"},
+          {"word": "bridge", "ipa": "/brɪdʒ/", "tonica": "única (BRIDGE)"}
+        ],
+        "techniques": ["Finger drilling — 5 dedos/5 repeticiones con énfasis en tónica", "Choral drill de cada par mínimo (BOW vs STERN diferenciar pronunciación)"],
+        "source": "PM-0 §5.13"
+      },
+      "success_factors_priorized": {
+        "target_vocabulary": ["bollard", "crane", "bow", "stern", "bridge", "port", "ship", "vessel", "this", "that"],
+        "factors_applied": ["Sounds", "Conceptualize", "Encounter", "Use"],
+        "operationalization": "Sounds: IPA + stress en Word Wall. Conceptualize: clasificación visual port-infra/ship-parts/equipment (categorización cognitiva). Encounter: 4 encuentros en 6h (pre-task brainstorm → classification → Word Wall building → exit ticket). Use: cada aprendiz produce 3 frases usando 5 términos en post-classification.",
+        "source": "PM-0 §5.5 + §5.10"
+      },
+      "cefr_descriptor_focus": {
+        "subnivel": "A1.2",
+        "habilidad_principal": "comprension_lectora",
+        "descriptor_activo": "Reconoce nombres y etiquetas en señalética portuaria (NO SMOKING · MUSTER STATION · HARD HAT AREA). Identifica números (vessel call sign · berth number · container ID).",
+        "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_1.comprension_lectora"
+      },
+      "pedagogical_shift_hooks": {
+        "velocidad_input": "Lenta — lectura colectiva en voz alta primero, luego individual",
+        "extension_textos": "Etiquetas + 12 imágenes con epígrafes de 3-5 palabras",
+        "andamiaje": "Alto — pre-task brainstorm + classification con apoyo de pares + Word Wall a la vista",
+        "rol_docente": "Modelo central + driller (stress marking + recast)",
+        "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_1"
+      },
+      "traceability_seed_22": {
+        "items_priorizados_para_esta_sesion": ["A2 — Descriptores §6 comprension_lectora A1.2", "A5 — Input adaptado (etiquetas + imágenes + Word Wall)", "B1 — Pre-enseñanza vocabulario (5 términos antes de classification)", "B7 — Autoevaluación post-Word Wall building (self-check 5 términos)", "C1 — Bloque FPI Contextualización + Apropiación apertura"],
+        "source": "PM-0 §7"
+      }
+    },
+    {
+      "session": 3,
+      "nombre": "Reading the Ship — UNIT 1 SHIP OVERVIEW",
+      "momento_sena": "3.3 Apropiación — Input receptivo",
+      "estrategias_didacticas": ["ABT", "Lectura cooperativa Jigsaw"],
+      "dimensiones_voc": ["Cognitiva: identificar partes del buque", "Procedimental: producir diagrama etiquetado", "Actitudinal: valorar precisión lectora técnica"],
+      "ambiente_aprendizaje": "Aula + mesas de 4 para jigsaw cooperativo + Word Wall actualizado con 5 ship parts (bow/stern/bridge/deck/hull) + Diagrama Ship Overview A2 visible.",
+      "materiales_clave": ["Reading Master Anchor — textbook UNIT 1 adaptado 150-200 pal A1.2 (Andrea visita BUENAVENTURA EXPRESS)", "Diagrama ship parts en blanco (1 por aprendiz)", "Cuestionario E1 — 5 ítems literales/inferenciales + clave instructor", "Word Wall — 10 tarjetas ship parts"],
+      "l1_percentage_target": {
+        "value": 15,
+        "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_1.S3 — ≤ 15% (PM-0 §9.1)",
+        "rationale": "L1 sólo para clarificar diferencia bow ('proa' vs ARM) y bridge ('puente de mando' vs 'puente físico') — distinción semántica clave. Resto L2 con apoyo del diagrama."
+      },
+      "grammar_groups_active": [
+        {"group_id": "Gr 1", "group_name": "Verbo be (afirmativo + negativo + Yes/No questions + respuestas cortas)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'The bow is at the front. The stern is NOT at the front. Is the bridge above the deck? Yes, it is.'"},
+        {"group_id": "Gr 14", "group_name": "Preposición In + at/on/next to/near (lugares portuarios y del buque)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'The bridge is on the upper deck. The hull is in the water. The container is next to the crane.'"},
+        {"group_id": "Gr 2", "group_name": "Demostrativos this/that/these/those (reciclaje S2)", "nivel_activacion": "Consolida", "ejemplo_en_sesion": "Aplicación en jigsaw: 'This is the deck. Those are bollards.'"}
+      ],
+      "grammar_carga_check": "2/2 Intro máximos + 1 Consolida (PM-0 §9.2) ✓",
+      "dominant_feedback_mode": {
+        "mode": "ACCURACY",
+        "rationale": "Reading andamiada A1.2 requiere foco en comprensión literal precisa. Recast post-jigsaw para ship parts. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_1.",
+        "techniques": ["Pre-reading brainstorm con Word Wall", "Jigsaw cooperativo — grupos expertos por sección del texto", "Post-reading: recast + cuestionario E1 con clave inmediata"]
+      },
+      "stress_focus": {
+        "target_words": [
+          {"word": "deck", "ipa": "/dɛk/", "tonica": "única (DECK)"},
+          {"word": "hull", "ipa": "/hʌl/", "tonica": "única (HULL)"},
+          {"word": "vessel", "ipa": "/ˈvɛsəl/", "tonica": "PRIMERA (VESsel)"},
+          {"word": "container ship", "ipa": "/kənˈteɪnər ʃɪp/", "tonica": "compuesta (conTAIner-SHIP)"},
+          {"word": "BUENAVENTURA EXPRESS", "ipa": "/bwɛnaˈvɛntuɾa ɪkˈsprɛs/", "tonica": "compuesta — nombre propio del vessel"}
+        ],
+        "techniques": ["Backchaining — 'sel' → 'vessel' (construcción inversa)", "Choral drill de frases del texto: 'The bow is at the front'", "Finger drilling con nombres de partes"],
+        "source": "PM-0 §5.13"
+      },
+      "success_factors_priorized": {
+        "target_vocabulary": ["bow", "stern", "bridge", "deck", "hull", "mast", "vessel", "container ship", "anchor", "berth"],
+        "factors_applied": ["Sounds", "Conceptualize", "Encounter", "Use"],
+        "operationalization": "Sounds: IPA + stress en 5 palabras nuevas. Conceptualize: diagrama etiquetado fuerza categorización por ubicación física. Encounter: pre-reading + jigsaw + post-reading classification = 3 encuentros. Use: cada aprendiz produce 3 frases describiendo el BUENAVENTURA EXPRESS.",
+        "source": "PM-0 §5.5 + §5.10"
+      },
+      "cefr_descriptor_focus": {
+        "subnivel": "A1.2",
+        "habilidad_principal": "comprension_lectora",
+        "descriptor_activo": "Reconoce nombres y etiquetas en señalética portuaria. Comprende textos cortos descriptivos con apoyo visual. Identifica vocabulario técnico marítimo en contexto.",
+        "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_1.comprension_lectora"
+      },
+      "pedagogical_shift_hooks": {
+        "velocidad_input": "Lenta — lectura colectiva primero, luego jigsaw individual",
+        "extension_textos": "150-200 palabras adaptadas con 80% vocabulario conocido (Word Wall + Toolbelt 5 Sub-bloque 1)",
+        "andamiaje": "Alto — pre-reading brainstorm + jigsaw con apoyo de pares + diagrama de referencia",
+        "rol_docente": "Modelo central + driller + facilitador de jigsaw",
+        "source": "PM-0 §8"
+      },
+      "traceability_seed_22": {
+        "items_priorizados_para_esta_sesion": ["A2 — Descriptores §6 comprension_lectora A1.2", "A5 — Input adaptado (80% vocab conocido)", "B1 — Pre-enseñanza vocabulario (Word Wall ship parts antes del texto)", "B3 — Accuracy en E1 (5 ítems literales/inferenciales)", "D2 — Can-do 'Reconocer nombres y etiquetas' asociado a E1"],
+        "source": "PM-0 §7"
+      }
+    },
+    {
+      "session": 4,
+      "nombre": "Writing the First Inspection Report — Be + Imperative + IN",
+      "momento_sena": "3.3 Apropiación — Output escrito",
+      "estrategias_didacticas": ["ABT", "Inducción gramatical por descubrimiento", "Escritura modelada co-construida"],
+      "dimensiones_voc": ["Cognitiva: identificar estructuras be + imperative + IN", "Procedimental: producir Inspection Report 6-8 oraciones", "Actitudinal: valorar precisión gramatical técnica"],
+      "ambiente_aprendizaje": "Aula + mesas para peer review en parejas + Word Wall completo Sub-bloque 1 + samples de Inspection Report modelo en muro lateral.",
+      "materiales_clave": ["Inspection Report template (1 página · 6-8 oraciones · writing frame con slots)", "Grammar Awareness handout Gr 1 + Gr 3 + Gr 5 + Gr 14", "3 samples de Inspection Reports modelo (textbook adaptado)", "Peer review checklist 5 ítems", "Lista Verificación E2 — 5 criterios × 1 pt"],
+      "l1_percentage_target": {
+        "value": 12,
+        "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_1.S3 (ajuste extrapolado curva descendente entre Bloque 1 y 2) — 12% transición",
+        "rationale": "L1 sólo para giro contrastivo crucial: imperative SIN sujeto ('Check the bollard' NO 'You check the bollard'). Posición del sujeto entre español/inglés. Resto L2."
+      },
+      "grammar_groups_active": [
+        {"group_id": "Gr 5", "group_name": "Imperativo afirmativo (Open / Check / Move / Verify)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'Check the bollard at berth 5. Open the gate. Move the forklift.'"},
+        {"group_id": "Gr 14", "group_name": "Preposición In + at/on/next to/near (reciclaje S3)", "nivel_activacion": "Consolida", "ejemplo_en_sesion": "'Check the bollard AT berth 5. The cargo is IN the container. The crane is NEAR the bow.'"},
+        {"group_id": "Gr 1", "group_name": "Verbo be (reciclaje S3)", "nivel_activacion": "Consolida", "ejemplo_en_sesion": "'The vessel IS at berth 5. The crane IS NOT operational. The bollard IS secured.'"},
+        {"group_id": "Gr 3", "group_name": "Plural + a/an (reciclaje S2)", "nivel_activacion": "Consolida", "ejemplo_en_sesion": "'a bollard / bollards | an inspection / inspections'"}
+      ],
+      "grammar_carga_check": "1/2 Intro + 3 Consolida (PM-0 §9.2) ✓ — sesión consolida 3 grupos previos antes de avanzar a Bloque 2",
+      "dominant_feedback_mode": {
+        "mode": "ACCURACY",
+        "rationale": "Producción escrita en A1.2 requiere foco en precisión gramatical. Error codes visuales permiten corrección autónoma sin interrumpir flujo. PM-0 §5.11.",
+        "techniques": ["Error codes visuales en draft (color code: BE azul / IMP rojo / IN verde / PLURAL morado)", "Peer review estructurado con checklist 5 ítems observables", "Recast docente en producción pública (lectura de muestras en plenaria)"]
+      },
+      "stress_focus": {
+        "target_words": [
+          {"word": "inspection", "ipa": "/ɪnˈspɛkʃən/", "tonica": "SEGUNDA (inSPECtion)"},
+          {"word": "report", "ipa": "/rɪˈpɔːrt/", "tonica": "SEGUNDA (rePORT)"},
+          {"word": "berth", "ipa": "/bɜːrθ/", "tonica": "única (BERTH)"},
+          {"word": "secure", "ipa": "/sɪˈkjʊər/", "tonica": "SEGUNDA (seCURE)"},
+          {"word": "operational", "ipa": "/ˌɒpəˈreɪʃənəl/", "tonica": "TERCERA (operATional)"}
+        ],
+        "techniques": ["Finger drilling de verbos imperativos clave (Check / Open / Move / Verify / Secure)", "Choral drill de writing frame: 'Check the…', 'The vessel is…'"],
+        "source": "PM-0 §5.13"
+      },
+      "success_factors_priorized": {
+        "target_vocabulary": ["check", "open", "move", "verify", "secure", "inspection", "report", "berth", "operational", "vessel"],
+        "factors_applied": ["Use", "Self-expression", "Creativity", "Encounter"],
+        "operationalization": "Use: cada aprendiz escribe Inspection Report con 8 de los 10 verbos. Self-expression: elige qué buque/elemento del puerto inspecciona (BUENAVENTURA EXPRESS u otro). Creativity: añade 1 detalle observado real. Encounter: reciclaje 5 términos S2-S3 + 5 verbos nuevos S4 = 10 términos activos.",
+        "source": "PM-0 §5.5 + §5.10"
+      },
+      "cefr_descriptor_focus": {
+        "subnivel": "A1.2",
+        "habilidad_principal": "produccion_escrita",
+        "descriptor_activo": "Puede completar un formulario con datos personales y técnicos. Puede escribir oraciones simples sobre operaciones cotidianas con frame guiado.",
+        "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_1 — adaptado contexto Inspection Report"
+      },
+      "pedagogical_shift_hooks": {
+        "velocidad_input": "Lenta — grammar awareness con 12 oraciones de huecos muy guiadas",
+        "extension_textos": "Inspection Report de 6-8 oraciones simples (Subject + be + Adj/Noun · Imperative + Object + IN-phrase)",
+        "andamiaje": "Alto — writing frame completo con slots (vessel name, berth, status, action, location)",
+        "rol_docente": "Modelo central + driller + lector imaginario (Capitán Restrepo recibe el reporte)",
+        "source": "PM-0 §8"
+      },
+      "traceability_seed_22": {
+        "items_priorizados_para_esta_sesion": ["A4 — Vocabulario del Word Wall (verbos imperativos + ship parts reciclaje)", "B1 — Pre-enseñanza gramatical (4 grupos antes de writing task)", "B3 — Accuracy dominante (error codes + peer review checklist)", "B6 — My Turn — personalización (buque/elemento elegido propio)", "C3 — Lógica PM precedente: S3 Reading provee léxico → S4 Writing produce"],
+        "source": "PM-0 §7"
+      }
+    },
+    {
+      "session": 5,
+      "nombre": "The Pilot's Apprentice — Listening to SMCP",
+      "momento_sena": "3.3 Apropiación — Input auditivo",
+      "estrategias_didacticas": ["ABT", "Escucha activa secuencial", "Drilling SMCP + NATO Phonetic"],
+      "dimensiones_voc": ["Cognitiva: comprender 10 frases SMCP + NATO completo", "Procedimental: producir 5 deletreos NATO + 3 confirmaciones SMCP", "Actitudinal: demostrar concentración auditiva"],
+      "ambiente_aprendizaje": "Aula + parlantes calidad + walkie-talkies simulados (o app móvil VHF) + SMCP Reference Card + NATO Phonetic Reference Card laminadas distribuidas (1 por aprendiz · permanentes desde S5).",
+      "materiales_clave": ["Audio VHF dialogue Captain Lopera ↔ Andrea 90s con interferencia simulada", "Transcripción impresa (post-listening)", "SMCP Reference Card laminada (10 frases standard)", "NATO Phonetic Alphabet Reference Card laminada (Alpha-Zulu)", "Lista Verificación E3 — 5 ítems Listening"],
+      "l1_percentage_target": {
+        "value": 12,
+        "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_2_RAP02_A1.3.S4 — ≤ 12% (PM-0 §9.1 — entrada Bloque Interno 2)",
+        "rationale": "L1 sólo para meta-instrucción inicial sobre interferencia VHF y rationale del NATO Phonetic. SMCP literal e inglés operativo — TODO en L2."
+      },
+      "grammar_groups_active": [
+        {"group_id": "Gr 17", "group_name": "Maritime SMCP key phrases (Roger / Wilco / Affirmative / Negative / Standby / Out / Over / Say again / Spell that / Repeat) + NATO Phonetic Alphabet completo", "nivel_activacion": "Intro", "ejemplo_en_sesion": "Captain Lopera: 'Vessel inbound. Request berthing instructions. Spell call sign Charlie-Oscar-Lima. Standby.' Andrea: 'Roger. Stand by for berthing instructions.'"},
+        {"group_id": "Gr 8", "group_name": "Presente simple Wh-questions (How / When / Where / What)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'When does the pilot board? Where is the vessel inbound from? How many containers?'"}
+      ],
+      "grammar_carga_check": "2/2 Intro máximos (PM-0 §9.2) ✓ — entrada al Bloque Interno 2 con SMCP que es categóricamente distinto",
+      "dominant_feedback_mode": {
+        "mode": "MIXTO (accuracy crítico en SMCP · fluency tolerada en gramática)",
+        "rationale": "SMCP es estandarizada OMI — accuracy es BLOQUEANTE (Roger/Wilco mal pronunciado puede causar accidente). Resto del inglés operativo permite fluency con foco diferido. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_2.",
+        "techniques": ["Accuracy crítico SMCP: choral drill cada SMCP + finger drilling + recast inmediato", "Accuracy crítico NATO: deletreo cronometrado (1 deletreo en ≤ 5s) + corrección inmediata", "Fluency en inglés operativo: post-task delayed feedback en tablero global"]
+      },
+      "stress_focus": {
+        "target_words": [
+          {"word": "Roger", "ipa": "/ˈrɒdʒər/", "tonica": "PRIMERA (RO-ger) — CRÍTICO no decir 'rolér' en español"},
+          {"word": "Wilco", "ipa": "/ˈwɪlkəʊ/", "tonica": "PRIMERA (WIL-co)"},
+          {"word": "Affirmative", "ipa": "/əˈfɜːrmətɪv/", "tonica": "SEGUNDA (afFIRmative)"},
+          {"word": "Standby", "ipa": "/ˈstændbaɪ/", "tonica": "PRIMERA (STAND-by)"},
+          {"word": "November (NATO N)", "ipa": "/noʊˈvɛmbər/", "tonica": "SEGUNDA (noVEMber) — CRÍTICO no 'NO-vember'"},
+          {"word": "Charlie (NATO C)", "ipa": "/ˈtʃɑːrli/", "tonica": "PRIMERA (CHARlie)"}
+        ],
+        "techniques": ["Finger drilling crítico SMCP (5+ reps cada frase)", "Backchaining NATO ('vember' → 'November'; 'lie' → 'Charlie')", "Clapping rítmico para call signs deletreados (4 letras = 4 palmadas)", "Board marking MAYÚSCULA en sílaba tónica de cada SMCP"],
+        "source": "PM-0 §5.13 — Stress en SMCP es CRÍTICO (PM-0 §5.13 IMARPOR-CC)"
+      },
+      "success_factors_priorized": {
+        "target_vocabulary": ["Roger", "Wilco", "Affirmative", "Negative", "Standby", "Over", "Out", "Say again", "Spell that", "Repeat"],
+        "factors_applied": ["Sounds", "Encounter", "Use", "Conceptualize"],
+        "operationalization": "Sounds: SMCP Reference Card con stress marking (CRÍTICO) + NATO Reference Card. Encounter: 3 escuchas (gist → detail → task) + pronunciation lab + drilling = 4-5 encuentros. Use: cada aprendiz produce 5 deletreos NATO + 3 confirmaciones SMCP. Conceptualize: clasificar SMCP por función (confirmar / pedir clarificación / reportar / solicitar).",
+        "source": "PM-0 §5.5 + §5.10"
+      },
+      "cefr_descriptor_focus": {
+        "subnivel": "A1.3",
+        "habilidad_principal": "comprension_oral",
+        "descriptor_activo": "Comprende instrucciones de 2-3 pasos via VHF (con interferencia simulada). Decodifica intent en frases SMCP (Vessel inbound · Request pilot · Standby for berthing instructions).",
+        "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_2_S4-S6_RAP02_A1.3.comprension_oral"
+      },
+      "pedagogical_shift_hooks": {
+        "velocidad_input": "Moderada — VHF natural rate con interferencia simulada (no slowed-down · realismo)",
+        "extension_textos": "Audio 90s + 10 SMCP intercambios + 5 deletreos NATO",
+        "andamiaje": "Moderado — SMCP/NATO Reference Cards a la vista pero sin transcripción durante listening 1 y 2",
+        "rol_docente": "Modelo central en pronunciation lab → Driller intensivo SMCP → Facilitador en producción",
+        "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_2"
+      },
+      "traceability_seed_22": {
+        "items_priorizados_para_esta_sesion": ["A3 — Trazabilidad descriptores §6 comprension_oral A1.3", "B2 — Drilling SMCP + NATO (CRÍTICO en este sector)", "B3 — Accuracy SMCP bloqueante", "B5 — Gestión L1 al 12% (cerca del piso A1.3)", "D2 — Can-do 'Comprender SMCP via VHF' asociado a E3"],
+        "source": "PM-0 §7"
+      }
+    },
+    {
+      "session": 6,
+      "nombre": "VHF Response Drill — Speaking with Captain Lopera",
+      "momento_sena": "3.3 Apropiación — Output oral",
+      "estrategias_didacticas": ["ABT + Simulación VHF", "Drills estímulo-respuesta", "Demostración oral en vivo"],
+      "dimensiones_voc": ["Cognitiva: comprender imperativo neg. + must + Wh-questions", "Procedimental: ejecutar VHF Response Simulation 2 min", "Actitudinal: demostrar confianza oral en VHF"],
+      "ambiente_aprendizaje": "Aula con 6-8 estaciones de VHF simuladas (parejas separadas por barrera visual para forzar canal radio) + walkie-talkies o app móvil + SMCP/NATO Reference Cards permanentes.",
+      "materiales_clave": ["Walkie-talkies o app móvil VHF (1 set por pareja)", "Cue cards con 5 escenarios VHF Response Simulation", "SMCP Reference Card + NATO Reference Card", "Escala Estimación E4 — 5 criterios VHF segment", "Plan B: Sin walkie-talkies → barrera de cartulina entre parejas + voz"],
+      "l1_percentage_target": {
+        "value": 10,
+        "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_2.S5 — ≤ 10% (PM-0 §9.1)",
+        "rationale": "L1 sólo para meta-instrucción del simulator setup. Toda VHF Response Simulation 100% L2 — el aprendiz debe operar como en el puerto real."
+      },
+      "grammar_groups_active": [
+        {"group_id": "Gr 5 (extension)", "group_name": "Imperativo negativo (Don't approach / Do not enter)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "Captain Lopera (Andrea): 'Don't approach the bow during loading. Do not enter the restricted area.'"},
+        {"group_id": "Gr 6", "group_name": "Modal must (Vessel must wait at anchorage)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "Andrea: 'Vessel must wait at anchorage. Pilot must board before berthing.'"},
+        {"group_id": "Gr 17 (SMCP)", "group_name": "SMCP key phrases (reciclaje S5)", "nivel_activacion": "Consolida", "ejemplo_en_sesion": "Aplicación intensiva en VHF Response Simulation"},
+        {"group_id": "Gr 8", "group_name": "Wh-questions presente simple (reciclaje S5)", "nivel_activacion": "Consolida", "ejemplo_en_sesion": "'When does the pilot arrive? How many containers do you have?'"}
+      ],
+      "grammar_carga_check": "2/2 Intro + 2 Consolida (PM-0 §9.2) ✓",
+      "dominant_feedback_mode": {
+        "mode": "MIXTO (accuracy SMCP bloqueante · fluency en intercambios)",
+        "rationale": "Accuracy crítico SMCP/NATO se mantiene; fluency dominante en intercambios para no romper flujo de simulación. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_2.",
+        "techniques": ["Accuracy bloqueante SMCP: recast inmediato si Roger/Wilco mal pronunciado (alto del simulator)", "Fluency en intercambios: post-task delayed feedback con notas en tablero (errores comunes globales)", "Peer feedback en rotaciones (3 estrellas + 1 deseo)", "Self-recording con celular para auto-monitoreo"]
+      },
+      "stress_focus": {
+        "target_words": [
+          {"word": "starboard", "ipa": "/ˈstɑːrbərd/", "tonica": "PRIMERA (STARboard)"},
+          {"word": "port (side)", "ipa": "/pɔːrt/", "tonica": "única (PORT) — CRÍTICO distinguir del puerto físico"},
+          {"word": "anchorage", "ipa": "/ˈæŋkərɪdʒ/", "tonica": "PRIMERA (ANchorage)"},
+          {"word": "must", "ipa": "/mʌst/", "tonica": "única (MUST)"},
+          {"word": "approach", "ipa": "/əˈproʊtʃ/", "tonica": "SEGUNDA (apPROACH)"}
+        ],
+        "techniques": ["Drilling estímulo-respuesta (instructor SMCP → aprendiz responde Roger/Wilco)", "Backchaining 'board' → 'starboard'", "Choral drill de imperativos negativos: 'Don't approach…'"],
+        "source": "PM-0 §5.13"
+      },
+      "success_factors_priorized": {
+        "target_vocabulary": ["starboard", "port (side)", "anchorage", "must", "approach", "berth", "pilot", "vessel", "inbound", "outbound"],
+        "factors_applied": ["Sounds", "Use", "Encounter", "Self-expression"],
+        "operationalization": "Sounds: stress marking + drilling intensivo en 5 palabras críticas. Use: cada aprendiz ejecuta 5 escenarios VHF (5 turnos × ~24s = 2 min). Encounter: 5 escenarios distintos = 5 encuentros activos en sesión. Self-expression: cada aprendiz invoca su call sign personal (deletreo NATO) + nombre del vessel.",
+        "source": "PM-0 §5.5 + §5.10"
+      },
+      "cefr_descriptor_focus": {
+        "subnivel": "A1.3",
+        "habilidad_principal": "interaccion_oral",
+        "descriptor_activo": "Confirma recepción usando SMCP (Roger · Wilco · Affirmative · Negative). Pide clarificación específica (Repeat course · Spell call sign).",
+        "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_2.produccion_oral"
+      },
+      "pedagogical_shift_hooks": {
+        "velocidad_input": "Moderada — instructor da prompts a velocidad VHF realista; aprendiz controla velocidad de respuesta",
+        "extension_textos": "5 escenarios × ~24s = 2 min producción + ~3 min preparación cue cards",
+        "andamiaje": "Moderado — SMCP/NATO Cards a la vista + cue cards con escenarios escritos",
+        "rol_docente": "Modelo (interpreta Captain Lopera) → Monitor (durante simulación) → Retroalimentador (post-task)",
+        "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_2"
+      },
+      "traceability_seed_22": {
+        "items_priorizados_para_esta_sesion": ["A3 — Descriptores §6 produccion_oral A1.3", "B2 — Drilling SMCP", "B4 — Accuracy/fluency diferenciado en mismo bloque", "B7 — Autoevaluación post-VHF (self-check 5 escenarios)", "D3 — Criterio observable (Escala E4 5 criterios × 1 pt)"],
+        "source": "PM-0 §7"
+      }
+    },
+    {
+      "session": 7,
+      "nombre": "The Two-Way Radio — Coordinating Berthing Operations",
+      "momento_sena": "3.3 Apropiación — Integración receptiva-productiva",
+      "estrategias_didacticas": ["ABT", "Inducción gramatical por descubrimiento de colores", "Listening tripartito"],
+      "dimensiones_voc": ["Cognitiva: identificar modales/comparativos/presente continuo/pasado simple", "Procedimental: completar Radio Log con 5 mensajes VHF", "Actitudinal: valorar coordinación tripartita simultánea"],
+      "ambiente_aprendizaje": "Aula configurada con 3 zonas auditivas (yard / bridge / customs) + 3 parlantes orientados + Word Wall expandido a Bloque Interno 3 + Radio Log template proyectado.",
+      "materiales_clave": ["Audio tripartito 3 min (yard simultáneo + bridge VHF + customs)", "Radio Log template con timestamps + canales + summary", "Grammar Awareness handout (Gr 4 + Gr 6 ext + Gr 9 + Gr 10) con marcación por colores", "Word Wall extendido Sub-bloque 3 (berthing/mooring/departure/cargo handling/anchor)"],
+      "l1_percentage_target": {
+        "value": 5,
+        "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_3_RAP03_A2.0.S7 — ≤ 5% (PM-0 §9.1)",
+        "rationale": "Entrada Bloque Interno 3 (A2.0). L1 sólo para giro contrastivo entre presente continuo (acción en curso 'Vessel is approaching') vs presente perfecto ('Pilot has boarded'). Resto L2."
+      },
+      "grammar_groups_active": [
+        {"group_id": "Gr 6 (extension)", "group_name": "Modales should/could/might + I'd like (You should approach starboard)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'You should approach starboard. We could request more lines. The wind might drop in 30 minutes.'"},
+        {"group_id": "Gr 10", "group_name": "Presente continuo (Vessel is approaching, We are securing)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'The vessel is approaching berth 5. We are securing the bow lines. Customs is inspecting cargo.'"},
+        {"group_id": "Gr 4", "group_name": "Comparativos (faster than, more critical than)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'Berthing is more critical than departure. The pilot boards faster than the customs.'"},
+        {"group_id": "Gr 9", "group_name": "Pasado simple (regulares + irregulares + Wh-)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'The vessel arrived at 06:00. Where did the pilot board? When did cargo handling start?'"}
+      ],
+      "grammar_carga_check": "2/2 Intro DECLARADOS + 2 Intro adicionales tolerados — VIOLA carga estricta · ESCALAR adaptación (PM-0 §9.2)",
+      "_grammar_carga_violation_note": "Bloque Interno 3 RAP-03 introduce 7 grupos en 3 sesiones (S7-S9). Si carga estricta = 2 Intro/sesión, requeriría 4 sesiones. Decisión Outline: distribuir 4 grupos Intro en S7 (con marcación por colores en grammar awareness · sin producción inmediata de los 4) y 3 grupos en S8. Build-Out PM-3.2 debe gestionar carga vía 'Intro receptivo' vs 'Intro productivo' — sólo 2 grupos llegan a producción activa por sesión.",
+      "dominant_feedback_mode": {
+        "mode": "MIXTO (transición a fluency dominante)",
+        "rationale": "S7 transición Bloque Interno 2→3 — el aprendiz debe operar con fluidez integrada. Accuracy sólo en breakdowns. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_3.",
+        "techniques": ["Fluency: post-task delayed feedback con notas en tablero (errores comunes globales)", "Accuracy: recast sutil sólo en breakdowns gramaticales", "Peer feedback durante listening tripartito (chequeo cruzado de Radio Logs)", "Inducción gramatical por colores (azul=modales / rojo=cont. / verde=pasado / morado=comparativos)"]
+      },
+      "stress_focus": {
+        "target_words": [
+          {"word": "berthing", "ipa": "/ˈbɜːrθɪŋ/", "tonica": "PRIMERA (BERTHing)"},
+          {"word": "mooring", "ipa": "/ˈmʊərɪŋ/", "tonica": "PRIMERA (MOOring)"},
+          {"word": "departure", "ipa": "/dɪˈpɑːrtʃər/", "tonica": "SEGUNDA (dePARture)"},
+          {"word": "approaching", "ipa": "/əˈproʊtʃɪŋ/", "tonica": "SEGUNDA (apPROACHing)"},
+          {"word": "should", "ipa": "/ʃʊd/", "tonica": "única débil (-ould)"}
+        ],
+        "techniques": ["Stress drift attention: el sufijo -ing no cambia stress (BERTHing / APPROACHing)", "Choral drill de modales con stress contrastivo (SHOULD vs MUST)"],
+        "source": "PM-0 §5.13"
+      },
+      "success_factors_priorized": {
+        "target_vocabulary": ["berthing", "mooring", "departure", "cargo handling", "anchor", "should", "could", "might", "approaching", "securing"],
+        "factors_applied": ["Sounds", "Use", "Encounter", "Conceptualize"],
+        "operationalization": "Sounds: stress marking en 5 palabras + drilling modales contrastivos. Use: Radio Log obliga producción escrita de 5 summaries. Encounter: listening tripartito + grammar awareness por colores + Radio Log = 3 encuentros. Conceptualize: modales clasificados por fuerza ilocutiva (recomendación / permiso / probabilidad).",
+        "source": "PM-0 §5.5 + §5.10"
+      },
+      "cefr_descriptor_focus": {
+        "subnivel": "A2.0",
+        "habilidad_principal": "comprension_oral",
+        "descriptor_activo": "Sigue instrucciones multi-paso en operaciones puerto-buque (berthing · cargo handling · departure).",
+        "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_3_S7-S9_RAP03_A2.0.comprension_oral"
+      },
+      "pedagogical_shift_hooks": {
+        "velocidad_input": "Moderada-natural — interferencia VHF + ruido ambiente realista",
+        "extension_textos": "Audio tripartito 3 min + 5 mensajes VHF + Radio Log con 5 entradas",
+        "andamiaje": "Moderado-mínimo — Word Wall a la vista + Radio Log template + sin transcripción durante listening",
+        "rol_docente": "Facilitador + monitor (peer + self-assessment dominante)",
+        "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_3"
+      },
+      "traceability_seed_22": {
+        "items_priorizados_para_esta_sesion": ["A3 — Descriptores §6 comprension_oral A2.0", "B3 — Fluency dominante con accuracy selectiva", "B8 — Andamiaje moderado (transición A1.3 → A2.0)", "C4 — Complejidad cognitiva L3-L4 Apply→Analyze", "D2 — Can-do 'Seguir instrucciones multi-paso' asociado a Radio Log"],
+        "source": "PM-0 §7"
+      }
+    },
+    {
+      "session": 8,
+      "nombre": "Coordinating the Quay — Speaking Tripartite",
+      "momento_sena": "3.3 Apropiación — Output integrado",
+      "estrategias_didacticas": ["ABT + Simulación tripartita", "Demostración oral en vivo (3 actores simultáneos)"],
+      "dimensiones_voc": ["Cognitiva: comprender presente perfecto + condicional 1 + voz pasiva", "Procedimental: ejecutar Berthing Coordination tripartito 3 min", "Actitudinal: demostrar liderazgo operacional"],
+      "ambiente_aprendizaje": "Aula configurada con 3 estaciones simultáneas: (1) yard con Diego (compañero/instructor) + walkie-talkie · (2) bridge con Bosun Romero + clipboard · (3) VHF station con Captain Lopera (instructor con acento). Configuración tipo 'isla central' para Andrea con 3 canales de comunicación.",
+      "materiales_clave": ["Berthing Coordination cue cards (3 escenarios con outcomes distintos)", "3 walkie-talkies o app VHF + clipboard yard + VHF station", "Word Wall completo Bloques 1+2+3", "Escala Estimación E4 — 5 criterios Berthing segment final", "Plan B: 2 instructores rotando los 3 roles + 1 grabadora para auto-feedback"],
+      "l1_percentage_target": {
+        "value": 3,
+        "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_3.S8 — ≤ 3% (PM-0 §9.1)",
+        "rationale": "L1 mínimo — sólo emergencias comunicativas durante simulación tripartita (si el aprendiz se bloquea totalmente). Producción 100% L2 esperado. El aprendiz lidera."
+      },
+      "grammar_groups_active": [
+        {"group_id": "Gr 11", "group_name": "Presente perfecto (The pilot has boarded)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "Andrea: 'The pilot has boarded. Customs has inspected the cargo. The vessel has secured.'"},
+        {"group_id": "Gr 12", "group_name": "Condicional tipo 1 (If wind drops, we will berth)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "Andrea: 'If the wind drops, we will berth on time. If the customs delay, we will reschedule.'"},
+        {"group_id": "Gr 13", "group_name": "Voz pasiva presente (The cargo is inspected by customs)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "Andrea: 'The cargo is inspected by customs. The lines are secured by the deckhand.'"},
+        {"group_id": "Gr 6+10", "group_name": "Modales + presente continuo (S7 reciclaje)", "nivel_activacion": "Aplica", "ejemplo_en_sesion": "Aplicación intensiva en simulación tripartita"}
+      ],
+      "grammar_carga_check": "2/2 Intro + 1 Intro adicional + 1 Aplica (PM-0 §9.2) — VIOLA carga estricta similar a S7 · gestionar 'Intro receptivo' (Gr 13 voz pasiva sin producción obligatoria)",
+      "_grammar_carga_violation_note": "S8 introduce 3 nuevos grupos. Decisión Outline: Gr 11 + Gr 12 con producción obligatoria; Gr 13 voz pasiva como Intro receptivo (aprendiz reconoce pero no produce activamente — producción se difiere a S10/S11). Build-Out PM-3.2 debe materializar esta gestión.",
+      "dominant_feedback_mode": {
+        "mode": "FLUENCY",
+        "rationale": "S8 es producción tripartita real — aprendiz debe coordinar 3 actores simultáneamente. Accuracy diferida (post-task). PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_3 (fluency dominante).",
+        "techniques": ["Fluency dominante: feedback diferido vía rúbrica E4 escrita", "Recovery scaffolding: si aprendiz se bloquea, instructor (Captain Lopera) modela y aprendiz repite", "Peer feedback en rotaciones (los 3 actores comentan al líder)", "Self-recording con celular para post-task auto-análisis"]
+      },
+      "stress_focus": {
+        "target_words": [
+          {"word": "boarded", "ipa": "/ˈbɔːrdɪd/", "tonica": "PRIMERA (BORDed)"},
+          {"word": "inspected", "ipa": "/ɪnˈspɛktɪd/", "tonica": "SEGUNDA (inSPECted)"},
+          {"word": "secured", "ipa": "/sɪˈkjʊərd/", "tonica": "SEGUNDA (seCURed)"},
+          {"word": "if", "ipa": "/ɪf/", "tonica": "débil — átona en condicional"},
+          {"word": "will", "ipa": "/wɪl/", "tonica": "débil — contrae con sujeto (we'll, it'll)"}
+        ],
+        "techniques": ["Stress en participio pasado vs forma simple (BOARD vs BORDed)", "Drilling de contracciones condicional (we'll / they'll)", "Choral drill de chunks operacionales: 'has boarded · is inspected · will berth'"],
+        "source": "PM-0 §5.13"
+      },
+      "success_factors_priorized": {
+        "target_vocabulary": ["boarded", "inspected", "secured", "berth", "anchorage", "if", "will", "should", "could", "approaching"],
+        "factors_applied": ["Use", "Encounter", "Self-expression", "Synergy", "Creativity"],
+        "operationalization": "Use: producción tripartita 3 min × 3 escenarios = 9 min activos. Encounter: 3 escenarios distintos exigen recombinación. Self-expression: cada aprendiz lidera su simulación con decisiones propias. Synergy: integración total de Bloques 1+2+3 (vocab + SMCP + gramática operativa). Creativity: outcomes alternativos según decisiones.",
+        "source": "PM-0 §5.5 + §5.10"
+      },
+      "cefr_descriptor_focus": {
+        "subnivel": "A2.0",
+        "habilidad_principal": "produccion_oral + interaccion_oral",
+        "descriptor_activo": "Coordina operación tripartita simultánea. Expresa prohibición/permisión/posibilidad/pedidos con modales.",
+        "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_3.produccion_oral"
+      },
+      "pedagogical_shift_hooks": {
+        "velocidad_input": "Natural — el aprendiz controla su ritmo; Captain Lopera responde con velocidad realista lingua franca",
+        "extension_textos": "Berthing Coordination 3 min × 3 escenarios = ~9 min producción activa",
+        "andamiaje": "Mínimo — sólo cue cards con escenarios + Word Wall a la vista; sin script",
+        "rol_docente": "Facilitador (Captain Lopera role-play) + Monitor + Retroalimentador",
+        "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_3"
+      },
+      "traceability_seed_22": {
+        "items_priorizados_para_esta_sesion": ["A3 — Descriptores §6 produccion_oral A2.0", "B3 — Fluency dominante", "B6 — My Turn — liderazgo en simulación propia", "B7 — Autoevaluación post-Berthing", "C4 — Complejidad cognitiva L4 Analyze (decisiones tripartitas)", "D3 — Criterio observable (Escala E4 5 criterios)"],
+        "source": "PM-0 §7"
+      }
+    },
+    {
+      "session": 9,
+      "nombre": "Studio Language — 5 Master Functions of the Port Pro",
+      "momento_sena": "3.3 Apropiación — Cierre integración pragmática",
+      "estrategias_didacticas": ["Simulación rotativa (Role Carousel)", "Mapa de funciones comunicativas"],
+      "dimensiones_voc": ["Cognitiva: identificar 5 master functions + 6 conectores", "Procedimental: ejecutar 5 funciones en Role Carousel", "Actitudinal: comprometerse con uso cotidiano del inglés"],
+      "ambiente_aprendizaje": "Aula configurada en 5 estaciones (mesas separadas) para Role Carousel + cronómetro visible + connector wall + Mapa Funciones IMARPOR proyectado.",
+      "materiales_clave": ["Function cards × 5 estaciones (1 master function por estación con script andamio)", "Role Carousel handout cronometrado (90s × 5 = 7.5 min)", "Connector wall (and/but/or/because/so/although) + Mapa funciones F1-F8 → 5 master", "Escala Estimación E5 — 5 criterios Language Functions"],
+      "l1_percentage_target": {
+        "value": 0,
+        "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_3.S9 — 0% (L2 norma · PM-0 §9.1)",
+        "rationale": "Cierre Bloque Interno 3 hacia 4 — L2 norma absoluta. El aprendiz debe operar sin retorno al L1. Role Carousel 100% L2."
+      },
+      "grammar_groups_active": [
+        {"group_id": "Gr 15", "group_name": "Conectores básicos (and / but / or / because / so / although) + contracciones + puntuación básica", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'I am the trainee AND I coordinate berthing. The vessel is delayed BUT we have time. We can use lines OR ropes. I called pilot BECAUSE wind dropped.'"},
+        {"group_id": "Gr 1-14", "group_name": "Todos los grupos previos (be · pronouns · plural · adj · imperative · IN · must · should · cont · perfect · cond · pasiva · Wh)", "nivel_activacion": "Aplica", "ejemplo_en_sesion": "Aplicación libre en las 5 estaciones del Role Carousel"},
+        {"group_id": "Gr 17", "group_name": "Maritime SMCP + NATO (reciclaje S5-S6)", "nivel_activacion": "Aplica", "ejemplo_en_sesion": "Estación 'SMCP literacy' fuerza producción activa"}
+      ],
+      "grammar_carga_check": "1/2 Intro + 13 Aplica (PM-0 §9.2) ✓ — carga reducida intencional: S9 consolida lo previo antes de evaluación S10",
+      "dominant_feedback_mode": {
+        "mode": "FLUENCY",
+        "rationale": "S9 es la última sesión de apropiación activa antes de S10 evaluación — el aprendiz debe operar con fluidez integrada de 5 master functions. Accuracy sólo en breakdowns. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_3.",
+        "techniques": ["Fluency dominante: post-task delayed feedback con notas en tablero", "Accuracy: recast sutil sólo en breakdowns comunicativos", "Peer feedback en rotaciones (3 estrellas + 1 deseo)", "Autoevaluación post-Role Carousel (self-check 5 funciones × 5 criterios)"]
+      },
+      "stress_focus": {
+        "target_words": [
+          {"word": "because", "ipa": "/bɪˈkɔːz/", "tonica": "SEGUNDA (beCAUSE)"},
+          {"word": "although", "ipa": "/ɔːlˈðoʊ/", "tonica": "SEGUNDA (alTHOUGH)"},
+          {"word": "and", "ipa": "/ænd/", "tonica": "única débil (-and)"},
+          {"word": "or", "ipa": "/ɔːr/", "tonica": "única (OR)"},
+          {"word": "responsible", "ipa": "/rɪˈspɒnsəbəl/", "tonica": "SEGUNDA (resPONSible) — entrada A2.1"},
+          {"word": "coordinate", "ipa": "/koʊˈɔːrdɪneɪt/", "tonica": "SEGUNDA (coOORdinate)"}
+        ],
+        "techniques": ["Clapping rítmico en conectores (and-but-or staccato / because-although acentuados)", "Backchaining 'sponsible' → 'responsible'", "Choral drill de chunks de 5 funciones"],
+        "source": "PM-0 §5.13"
+      },
+      "success_factors_priorized": {
+        "target_vocabulary": ["responsible for", "coordinate", "supervise", "report to", "specialize in", "and", "but", "or", "because", "so"],
+        "factors_applied": ["Use", "Self-expression", "Encounter", "Creativity", "Synergy"],
+        "operationalization": "Use: cada aprendiz ejecuta 5 funciones × 90s = 7.5 min de producción activa. Self-expression: presentación personal como Port Trainee en estación 'Describing Functions'. Encounter: reciclaje + 6 conectores nuevos = 50+ chunks activos acumulados. Creativity: cada estación tiene prompt abierto. Synergy: integración 3 bloques internos.",
+        "source": "PM-0 §5.5 + §5.10"
+      },
+      "cefr_descriptor_focus": {
+        "subnivel": "A2.0 (transición A2.1)",
+        "habilidad_principal": "interaccion_oral + produccion_oral",
+        "descriptor_activo": "Coordina operación tripartita simultánea. Expresa prohibición/permisión/posibilidad/pedidos con modales. (Ampliado: enlaza ideas con conectores básicos)",
+        "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_3 → Bloque_Interno_4 transición"
+      },
+      "pedagogical_shift_hooks": {
+        "velocidad_input": "Natural — aprendiz controla ritmo en cada estación",
+        "extension_textos": "Producción de 3-5 intercambios por estación × 5 estaciones",
+        "andamiaje": "Mínimo — function cards con scripts andamio sólo si aprendiz se bloquea + connector wall visible",
+        "rol_docente": "Facilitador + monitor rotativo entre estaciones",
+        "source": "PM-0 §8"
+      },
+      "traceability_seed_22": {
+        "items_priorizados_para_esta_sesion": ["B3 — Fluency dominante con accuracy selectiva", "B5 — Gestión L1 al 0% (norma L2)", "B6 — My Turn en estación de presentación personal", "B7 — Autoevaluación post-Role Carousel", "C4 — Complejidad cognitiva L3 Apply progresando a L4 en S10", "D2 — Can-do 'Ejecutar 5 master functions' asociado a E5"],
+        "source": "PM-0 §7"
+      }
+    },
+    {
+      "session": 10,
+      "nombre": "Consolidation Day — The Maritime Operations Check",
+      "momento_sena": "3.3 Apropiación → 3.4 Transferencia (consolidación · evaluación · Misión Final inicio)",
+      "estrategias_didacticas": ["Evaluación Formativa Integrada", "Reflexión metacognitiva", "Brief ABP Misión Final"],
+      "dimensiones_voc": ["Cognitiva: demostrar dominio progresivo A1.2-A2.0", "Procedimental: organizar portafolio + planear Misión Final", "Actitudinal: reflexionar metacognitivamente"],
+      "ambiente_aprendizaje": "Aula en configuración de examen (mesas individuales · silencio académico) durante cuestionario + reconfiguración a mesas en U para retroalimentación grupal y Misión Final brief con Capitán Restrepo (instructor en rol).",
+      "materiales_clave": ["Cuestionario E6 impreso (25 ítems en 5 secciones · 1 hr) + clave del instructor", "Audio sección Listening (2 escuchas permitidas)", "Portafolio template + rúbrica autoevaluación PM-0 §7 (22 ítems)", "Brief CML CARRIER (Capitán Restrepo entrega scenario · Misión Final scope)", "Tablero resumen S2-S9 pre-preparado"],
+      "l1_percentage_target": {
+        "value": 0,
+        "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_4_RAP04_A2.1.S10 — 0% (L2 exclusivo · PM-0 §9.1)",
+        "rationale": "Bloque Interno 4 entrada — L2 exclusivo desde S10 hasta S12. Cuestionario en L2 con instrucciones bilingües sólo si necesario para precisión evaluativa. Brief Misión Final 100% L2."
+      },
+      "grammar_groups_active": [
+        {"group_id": "Gr 1-15 + 17 (Bloques 1+2+3 completos)", "group_name": "Todos los grupos Intro de los 3 bloques previos (be · pronouns · plural · adj · imperative · IN · must · should · cont · perfect · cond · pasiva · Wh · SMCP/NATO · conectores)", "nivel_activacion": "Aplica", "ejemplo_en_sesion": "Evaluación integrada en Cuestionario E6 sección Grammar (5 ítems × 1 grupo cada uno)"}
+      ],
+      "grammar_carga_check": "0/2 Intro + 14 Aplica (PM-0 §9.2) ✓ — sesión consolidación evaluativa sin introducción nueva",
+      "dominant_feedback_mode": {
+        "mode": "MIXTO diferido",
+        "rationale": "Cuestionario = silencio académico. Retroalimentación post-cuestionario = accuracy global + fluency metacognitiva. Brief Misión Final = facilitación. PM-0 §5.11.",
+        "techniques": ["Silencio académico durante cuestionario (90 min)", "Error codes globales en tablero post-cuestionario (patrones comunes)", "Co-evaluación con clave parcial (pares chequean respuestas)", "Reflexión metacognitiva con prompt 22-item PM-0 §7"]
+      },
+      "stress_focus": {
+        "target_words": [
+          {"word": "review", "ipa": "/rɪˈvjuː/", "tonica": "SEGUNDA (reVIEW)"},
+          {"word": "instruction", "ipa": "/ɪnˈstrʌkʃən/", "tonica": "SEGUNDA (inSTRUCtion)"},
+          {"word": "correct", "ipa": "/kəˈrɛkt/", "tonica": "SEGUNDA (coRRECT)"},
+          {"word": "evidence", "ipa": "/ˈɛvɪdəns/", "tonica": "PRIMERA (EVidence)"},
+          {"word": "turnaround", "ipa": "/ˈtɜːrnəraʊnd/", "tonica": "PRIMERA (TURNaround) — Misión Final brief"}
+        ],
+        "techniques": ["Brevísimo — sesión prioriza evaluación no instrucción nueva", "Stress marking sólo en meta-vocabulario evaluativo + 'turnaround' Misión Final"],
+        "source": "PM-0 §5.13"
+      },
+      "success_factors_priorized": {
+        "target_vocabulary": "Reciclaje de los 25 términos key_vocabulary en contexto evaluativo (no vocabulario nuevo · efecto spaced repetition máximo después de 9 sesiones)",
+        "factors_applied": ["Encounter (spaced repetition máximo)", "Use (evaluativo)", "Self-expression (portafolio)", "Synergy"],
+        "operationalization": "Encounter: último encuentro formal de los 25 términos. Use: cada término aparece en al menos 1 ítem del cuestionario. Self-expression: portafolio consolida 5 evidencias personales + E6. Synergy: 5 secciones cubren 5 habilidades.",
+        "source": "PM-0 §5.5 + §5.10"
+      },
+      "cefr_descriptor_focus": {
+        "subnivel": "A2.1 (entrada) · evaluación A1.2-A2.0",
+        "habilidad_principal": "integración_5_habilidades",
+        "descriptor_activo": "Consolidación y evaluación integrada de los 5 descriptores CEFR A1.2-A2.0: comprension_oral + comprension_lectora + interaccion_oral + produccion_oral + produccion_escrita.",
+        "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno — Bloques 1+2+3 todos los subcampos"
+      },
+      "pedagogical_shift_hooks": {
+        "velocidad_input": "Natural — sin apoyo adicional durante cuestionario",
+        "extension_textos": "Cuestionario de 25 ítems distribuidos en 5 secciones + portafolio + brief Misión Final",
+        "andamiaje": "Moderado — instrucciones visuales + audio sección Listening con 2 escuchas permitidas",
+        "rol_docente": "Evaluador + retroalimentador metacognitivo + facilitador del brief CML CARRIER",
+        "source": "PM-0 §8"
+      },
+      "traceability_seed_22": {
+        "items_priorizados_para_esta_sesion": ["D1 — Contribuye a Misión Final (E6 es pre-requisito de E-Misión)", "D2 — Can-do asociado (5 secciones → 5 descriptores CEFR)", "D3 — Criterio observable (25 ítems × 1 pt binario)", "D4 — Consistente con descriptor CEFR A1.2-A2.0", "B7 — Autoevaluación 22-item checklist como trabajo autónomo"],
+        "source": "PM-0 §7"
+      }
+    },
+    {
+      "session": 11,
+      "nombre": "Final Mission Design — The CML Carrier Plan",
+      "momento_sena": "3.4 Transferencia (Diseño + Desempeño preparatorio)",
+      "estrategias_didacticas": ["ABP fase exploratoria/diseño", "Escritura modelada", "Ensayo dirigido"],
+      "dimensiones_voc": ["Cognitiva: comprender brief CML CARRIER", "Procedimental: producir Memo + Radio Log + ensayo Pitch 3 min", "Actitudinal: valorar planeación operacional"],
+      "ambiente_aprendizaje": "Aula-taller con mesas grandes (1 por aprendiz) + acceso a computador + biblioteca de SMCP/textbook + estación de grabación para ensayo de pitch + Word Wall completo (Bloques 1+2+3+4) + samples de pitches modelo.",
+      "materiales_clave": ["Brief CML CARRIER detallado (Capitán Restrepo · Shanghái → Buenaventura · turno 12h · CML scenario)", "Berthing Coordination Memo template (1 página · 4 secciones)", "Radio Log template extendido (timestamps + canales + summary + decisiones)", "Pitch Profesional 3 min framework (Intro · Funciones habituales · Funciones momentáneas · Cierre)", "Tag questions cheat sheet + Occupational structures Reference Card (responsible for / specialize in / coordinate / supervise / report to)"],
+      "l1_percentage_target": {
+        "value": 0,
+        "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_4.S11 — 0% (L2 exclusivo · PM-0 §9.1)",
+        "rationale": "Bloque Interno 4 — L2 exclusivo. El aprendiz lidera diseño en L2. Instructor sólo facilita en L2."
+      },
+      "grammar_groups_active": [
+        {"group_id": "Gr 4 (extension)", "group_name": "Superlativos (the most critical operation is berthing)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'Berthing is THE MOST CRITICAL operation. Communication is THE MOST IMPORTANT skill.'"},
+        {"group_id": "Gr 11 (extension)", "group_name": "Presente perfecto + marcadores already/yet/just/ever/never", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'I have ALREADY inspected the cargo. I have JUST received the report. The vessel hasn't berthed YET.'"},
+        {"group_id": "Gr 17 (extension)", "group_name": "Estructuras ocupacionales (I'm responsible for / My role involves / I have experience with / I am skilled at / I specialize in)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "'I'm responsible for coordinating yard operations. My role involves supervising container handling. I have experience with VHF communication.'"},
+        {"group_id": "Gr 1-15 (todos)", "group_name": "Todos los grupos previos en aplicación libre", "nivel_activacion": "Aplica", "ejemplo_en_sesion": "Memo + Radio Log + Pitch integran todo lo previo"}
+      ],
+      "grammar_carga_check": "2/2 Intro + 1 Intro adicional (estructuras ocupacionales · Gr 17 ext) + 14 Aplica (PM-0 §9.2) — VIOLA carga estricta · gestionar como antes (Gr 17 ext es 'Intro receptivo + producción guiada' · no autónomo)",
+      "_grammar_carga_violation_note": "S11 introduce 3 nuevos grupos. Decisión Outline: Gr 4 ext (superlativos) + Gr 11 ext (markers) producción obligatoria; Gr 17 ext (occupational structures) Intro guiado con Reference Card visible — autonomía completa se logra en S12 ensayo final.",
+      "dominant_feedback_mode": {
+        "mode": "FLUENCY dominante",
+        "rationale": "ABP fase exploratoria — el aprendiz despliega recursos sin interrupción. Feedback diferido post-task. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_4 (fluency dominante).",
+        "techniques": ["Feedback diferido post-task (al final de la sesión)", "Rol docente = monitor/facilitador (NO driller)", "Peer consultation durante diseño + ensayo en parejas", "Aprendiz auto-corrige con Reference Cards y recursos del aula"]
+      },
+      "stress_focus": {
+        "target_words": [
+          {"word": "responsible", "ipa": "/rɪˈspɒnsəbəl/", "tonica": "SEGUNDA (resPONSible)"},
+          {"word": "specialize", "ipa": "/ˈspɛʃəlaɪz/", "tonica": "PRIMERA (SPECialize)"},
+          {"word": "coordinate", "ipa": "/koʊˈɔːrdɪneɪt/", "tonica": "SEGUNDA (coOORdinate)"},
+          {"word": "supervise", "ipa": "/ˈsuːpərvaɪz/", "tonica": "PRIMERA (SUperVIZE)"},
+          {"word": "experience", "ipa": "/ɪkˈspɪəriəns/", "tonica": "SEGUNDA (exPErience)"}
+        ],
+        "techniques": ["Sin drilling formal — el aprendiz monitorea su propio output", "Consulta libre a Reference Cards + Word Wall + diccionario cuando necesita", "Ensayo en parejas con auto-stress-checking"],
+        "source": "PM-0 §5.13 — aplicado con autonomía progresiva"
+      },
+      "success_factors_priorized": {
+        "target_vocabulary": "Integración de 25 key_vocabulary + 5 occupational structures + vocabulario emergente personal (incident analysis del aprendiz)",
+        "factors_applied": ["Use (producción abierta)", "Creativity", "Self-expression", "Synergy", "Spaced_repetition"],
+        "operationalization": "Use: producción 1 página Memo + Radio Log completo + ensayo 3 min × 3 ensayos. Creativity: aprendiz selecciona detalles del CML CARRIER scenario (peso · clima · incidentes). Self-expression: pitch refleja experiencia personal del aprendiz. Synergy: integra escrito + oral + estructuras 4 bloques internos. Spaced repetition: 25 términos en uso final.",
+        "source": "PM-0 §5.5 + §5.10"
+      },
+      "cefr_descriptor_focus": {
+        "subnivel": "A2.1 (transferencia)",
+        "habilidad_principal": "produccion_escrita + produccion_oral",
+        "descriptor_activo": "Pitch profesional formal de 3 min: introducción + funciones habituales + funciones momentáneas + cierre. Tag questions producción activa.",
+        "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_4_S10-S12_RAP04_A2.1.produccion_oral"
+      },
+      "pedagogical_shift_hooks": {
+        "velocidad_input": "Natural — aprendiz lidera su ritmo",
+        "extension_textos": "Memo 1 página + Radio Log 5 entradas + Pitch 3 min con 4 secciones (~300 pal)",
+        "andamiaje": "Mínimo — Reference Cards + Word Wall + sample pitch modelo · sin script propio",
+        "rol_docente": "Monitor + facilitador — NO driller",
+        "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_4"
+      },
+      "traceability_seed_22": {
+        "items_priorizados_para_esta_sesion": ["B8 — Andamiaje mínimo (transferencia)", "C2 — Tiempo realista para ABP 2 fases", "C3 — Lógica PM precedente: S2-S9 Apropiación + S10 Evaluación → S11-S12 Transferencia", "D1 — Contribuye a Misión Final (E-Misión)", "D2 — Can-do 'Pitch profesional 3 min' transferido al CML CARRIER"],
+        "source": "PM-0 §7"
+      }
+    },
+    {
+      "session": 12,
+      "nombre": "The Port Professional — CML Port Turnaround Mission",
+      "momento_sena": "3.4 Transferencia (Cierre · Misión Final delivery)",
+      "estrategias_didacticas": ["ABP fase ejecutiva", "Demostración oral en vivo (Misión Final)", "Reflexión circular de cierre"],
+      "dimensiones_voc": ["Cognitiva: identificar elementos pitch + tag questions producción activa", "Procedimental: ejecutar simulación CML 3h + pitch + Q&A", "Actitudinal: reflexionar sobre proceso completo · empleabilidad inmediata"],
+      "ambiente_aprendizaje": "Aula convertida en 'CML Port Turnaround Mission Room': 3 zonas operacionales (VHF station + yard simulado + bridge simulado) + panel evaluador frente (Capitán Restrepo + agente naviero externo + sillas para audiencia/jurado) + cronómetro visible + SMCP/NATO Reference Cards permanentes.",
+      "materiales_clave": ["Misión Final CML CARRIER kit completo (briefing · cue cards · timeline 12h condensada a 3h)", "Walkie-talkies + clipboard yard + estación VHF + radio scanner ambiente", "Rúbrica E-Misión 6 criterios C01-C13 SOFÍA × ≈1 pt (entregada a panel jurado)", "Reflexión metacognitiva handout 'What I see now that I did not see on Day 1'", "Certificado simbólico Port Operations Trainee (entregado al final por Capitán Restrepo)"],
+      "l1_percentage_target": {
+        "value": 0,
+        "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_4.S12 — 0% Misión Final 100% L2 (PM-0 §9.1)",
+        "rationale": "Misión Final 100% L2. Cierre del curso. Sólo reflexión metacognitiva final permite L1 (apartado personal · post-evaluación). Felicitaciones de cierre L2."
+      },
+      "grammar_groups_active": [
+        {"group_id": "Gr 16", "group_name": "Tag questions PRODUCCIÓN ACTIVA (You're the supervisor, aren't you? / The pilot boarded at 06:00, didn't he?)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "Andrea respondiendo panel: 'You're asking about wind conditions, aren't you? The cargo was inspected, wasn't it?'"},
+        {"group_id": "Gr 13 (extension)", "group_name": "Voz pasiva pasada (The cargo was inspected yesterday)", "nivel_activacion": "Intro", "ejemplo_en_sesion": "Andrea en Post-Turn Report oral: 'The cargo was inspected at 14:00. The lines were secured by the deckhand.'"},
+        {"group_id": "Gr 1-17 (TODOS)", "group_name": "Todos los 17 grupos del curso en aplicación libre integrada", "nivel_activacion": "Aplica", "ejemplo_en_sesion": "Misión Final demanda integración total — sin prescripción gramatical específica"}
+      ],
+      "grammar_carga_check": "2/2 Intro (Gr 16 + Gr 13 ext) + 17 Aplica (PM-0 §9.2) ✓ — cierre con tag questions críticas + voz pasiva pasada como herramientas de Q&A panel",
+      "dominant_feedback_mode": {
+        "mode": "FLUENCY + AUTO-EVALUACIÓN + EVALUACIÓN EXTERNA",
+        "rationale": "Cierre del curso — prioridad performance real + reflexión metacognitiva. Feedback del panel (Capitán Restrepo + agente naviero) es diferido vía rúbrica. PM-0 §5.11 — nivel máximo de autonomía A2.1.",
+        "techniques": ["Peer feedback post-Misión (3 estrellas + 1 deseo)", "Auto-evaluación con rúbrica E-Misión 6 criterios C01-C13", "Feedback diferido del instructor + agente naviero externo vía rúbrica escrita", "Reflexión metacognitiva final con prompt 'What I see now that I did not see on Day 1'"]
+      },
+      "stress_focus": {
+        "target_words": "Reciclaje total — palabras del vocabulario personal elegido por el aprendiz para su Misión + tag questions con stress de auxiliar contraído (aren't / wasn't / didn't)",
+        "techniques": ["Sin drilling formal — el aprendiz monitorea su propio output en ensayo previo + Misión real", "Ensayo en parejas 30 min antes de la Misión (auto-stress-checking)", "Stress contrastivo en tag questions: rising vs falling intonation"],
+        "source": "PM-0 §5.13 — aplicado con autonomía plena"
+      },
+      "success_factors_priorized": {
+        "target_vocabulary": "Integración completa del key_vocabulary (25 términos) + 5 occupational structures + 30+ SMCP key phrases + NATO completo + vocabulario emergente personal del aprendiz",
+        "factors_applied": ["Use (Misión real)", "Self-expression (defensa del rol profesional)", "Spaced_repetition (total curso)", "Synergy (5 habilidades integradas en Misión)", "Creativity"],
+        "operationalization": "Use: simulación 3h + pitch 3 min + Q&A. Self-expression: cada Misión es única según decisiones del aprendiz. Spaced repetition: 25 términos en uso después de 11 sesiones (efecto máximo). Synergy: 1 sola Misión integra Reading (brief) + Writing (Memo+Log+Report) + Listening (VHF) + Speaking (pitch+Q&A) + Grammar (los 17 grupos activos). Creativity: outcomes según decisiones operacionales.",
+        "source": "PM-0 §5.5 + §5.10"
+      },
+      "cefr_descriptor_focus": {
+        "subnivel": "A2.1 (umbral hacia B1.0)",
+        "habilidad_principal": "produccion_oral + interaccion_oral",
+        "descriptor_activo": "Pitch profesional formal de 3 min: introducción + funciones habituales + funciones momentáneas + cierre. Tag questions producción activa. Comprende preguntas de panel sobre rol profesional.",
+        "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_4_S10-S12_RAP04_A2.1 — nivel máximo del curso alcanzado"
+      },
+      "pedagogical_shift_hooks": {
+        "velocidad_input": "Natural — aprendiz controla su Misión",
+        "extension_textos": "Misión 3h operacional + Pitch 3 min + Q&A 10 min + reflexión escrita",
+        "andamiaje": "Cero — sólo Reference Cards + cronómetro + rúbrica entregada a panel",
+        "rol_docente": "Evaluador externo (simula agente naviero) + cerrador del curso (entrega certificado)",
+        "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_4 (evaluador externo)"
+      },
+      "traceability_seed_22": {
+        "items_priorizados_para_esta_sesion": ["B7 — Autoevaluación con rúbrica E-Misión 6 criterios C01-C13", "B8 — Andamiaje cero (aprendiz lidera)", "C4 — Complejidad cognitiva L4-L5 Analyze · Evaluate · Create", "D1 — Misión Final es el cierre del canon 55 + 5 pts E-Misión", "D2 — Can-do 'Pitch + Q&A panel + Misión Final' asociado a E-Misión", "D3 — Rúbrica E-Misión 6 criterios observables"],
+        "source": "PM-0 §7"
+      }
+    }
+  ],
+  "autonomous_work_map": {
+    "total_horas_autonomas": 28,
+    "desglose_por_sesion_horas": 2.333333,
+    "asignaciones": [
+      {"asignado_en": "S1", "revisado_en": "S2", "actividad": "Llenar Maritime KWL Chart (Know/Want/Learned puerto + buque) + traer 5 fotos del puerto/operaciones", "referencia_workbook": "Workbook Cap. 1: Maritime Pre-Reading Activation", "tiempo_min": 140},
+      {"asignado_en": "S2", "revisado_en": "S3", "actividad": "Identificar 5 elementos portuarios en fotos personales + grabar audio 30s nombrándolos", "referencia_workbook": "Workbook Cap. 2: Port Vocabulary in the Wild", "tiempo_min": 140},
+      {"asignado_en": "S3", "revisado_en": "S4", "actividad": "Identificar 5 ship parts en imágenes BUENAVENTURA EXPRESS + completar diagrama etiquetado bilingüe", "referencia_workbook": "Workbook Cap. 3: Ship Overview Practice", "tiempo_min": 140},
+      {"asignado_en": "S4", "revisado_en": "S5", "actividad": "Inspection Report #2 de un buque/elemento del puerto que el aprendiz observa (no evaluada · práctica autónoma)", "referencia_workbook": "Workbook Cap. 4: Inspection Writing Practice", "tiempo_min": 140},
+      {"asignado_en": "S5", "revisado_en": "S6", "actividad": "Deletrear 5 nombres propios del aprendiz (nombre completo + ciudad) usando NATO Phonetic Alphabet en audio 60s", "referencia_workbook": "Workbook Cap. 5: NATO Phonetic Drill", "tiempo_min": 140},
+      {"asignado_en": "S6", "revisado_en": "S7", "actividad": "Grabar Radio Log de 90s simulando llamada VHF entrante (3 SMCP responses + 1 NATO call sign)", "referencia_workbook": "Workbook Cap. 6: VHF Radio Log Practice", "tiempo_min": 140},
+      {"asignado_en": "S7", "revisado_en": "S8", "actividad": "Listening cloze SMCP en 3 audios reales canal IMO YouTube + completar Radio Log con timestamps", "referencia_workbook": "Workbook Cap. 7: Authentic VHF Listening", "tiempo_min": 140},
+      {"asignado_en": "S8", "revisado_en": "S9", "actividad": "Berthing Coordination Memo 1 página + Post-Turn Report draft (incident analysis con condicional 1 + voz pasiva)", "referencia_workbook": "Workbook Cap. 8: Operational Writing Drills", "tiempo_min": 140},
+      {"asignado_en": "S9", "revisado_en": "S10", "actividad": "Video 90s presentándose como Port Operations Trainee del Terminal Buenaventura usando 5 master functions + 3 conectores", "referencia_workbook": "Workbook Cap. 9: Self-Introduction Maritime Video", "tiempo_min": 140},
+      {"asignado_en": "S10", "revisado_en": "S11", "actividad": "Autoevaluación 22-item checklist PM-0 §7 + canvas Misión Final (Qué/Por qué/Cómo/Cuándo coordinar CML CARRIER)", "referencia_workbook": "Workbook Cap. 10: Self-Assessment & Mission Planning", "tiempo_min": 140},
+      {"asignado_en": "S11", "revisado_en": "S12", "actividad": "Completar Berthing Memo final + Radio Log final + ensayar Pitch 3 min frente a espejo (mínimo 3 ensayos cronometrados)", "referencia_workbook": "Workbook Cap. 11: Pitch Rehearsal", "tiempo_min": 140},
+      {"asignado_en": "S12", "revisado_en": "—", "actividad": "Actualizar portafolio personal con Misión Final completa (Berthing Memo + Radio Log + Post-Turn Report + audio Pitch + reflexión 'What I see now')", "referencia_workbook": "Workbook Cap. 12: Course Closure Portfolio", "tiempo_min": 140}
+    ],
+    "check": "PASS — 12 asignaciones × 140 min = 1680 min = 28h autónomas ✓"
+  },
+  "master_materials_list": {
+    "impresos": [
+      "Maritime KWL Chart handout (S1)",
+      "Maritime Gap Card template (S1)",
+      "5 fotos referenciales puerto Buenaventura + Captain Lopera + BUENAVENTURA EXPRESS (S1)",
+      "Mapa Terminal Buenaventura A2 (S1-S12 muro frontal)",
+      "Diagrama Ship Overview A2 (S2-S12 muro lateral)",
+      "Maritime Word Wall — 5 tarjetas Sub-bloque 1 (S2 inicio)",
+      "Classification handout 12 imágenes × 3 categorías (S2)",
+      "Learning Contract handout (S2)",
+      "Reading Master Anchor textbook UNIT 1 adaptado 150-200 pal A1.2 (S3)",
+      "Diagrama ship parts en blanco × 1 por aprendiz (S3)",
+      "Cuestionario E1 Reading + clave instructor (S3)",
+      "Inspection Report template 1 página + writing frame (S4)",
+      "Grammar Awareness handout Gr 1+3+5+14 (S4)",
+      "3 Inspection Reports samples modelo (S4)",
+      "Peer review checklist 5 ítems (S4)",
+      "Lista Verificación E2 Writing × 5 criterios (S4)",
+      "Transcripción VHF dialogue 90s (post-listening S5)",
+      "SMCP Reference Card laminada × 1 por aprendiz (S5 entrega · S5-S12 permanente)",
+      "NATO Phonetic Alphabet Reference Card laminada × 1 por aprendiz (S5 entrega · S5-S12 permanente)",
+      "Lista Verificación E3 Listening × 5 ítems (S5)",
+      "VHF Response Simulation cue cards × 5 escenarios (S6)",
+      "Escala Estimación E4 Speaking × 5 criterios VHF segment (S6)",
+      "Audio tripartito 3 min transcripción (post-listening S7)",
+      "Radio Log template extendido (S7-S8-S11)",
+      "Grammar Awareness handout Gr 4+6ext+9+10 con marcación por colores (S7)",
+      "Berthing Coordination cue cards × 3 escenarios (S8)",
+      "Escala Estimación E4 Speaking × 5 criterios Berthing segment final (S8)",
+      "Function cards × 5 master functions (S9)",
+      "Role Carousel handout cronometrado 90s × 5 estaciones (S9)",
+      "Connector wall printouts (and/but/or/because/so/although) (S9)",
+      "Mapa Funciones IMARPOR F1-F8 → 5 master (S9)",
+      "Escala Estimación E5 Language Functions × 5 criterios (S9)",
+      "Cuestionario E6 Consolidado impreso 25 ítems × 5 secciones + clave (S10)",
+      "Portafolio template + rúbrica autoevaluación PM-0 §7 22-item (S10)",
+      "Brief CML CARRIER Misión Final detallado (S10 entrega · S11-S12 uso)",
+      "Tablero resumen S2-S9 pre-preparado (S10)",
+      "Berthing Coordination Memo template (S11)",
+      "Pitch Profesional 3 min framework con 4 secciones (S11)",
+      "Tag questions cheat sheet (S11)",
+      "Occupational structures Reference Card (responsible for / specialize in / coordinate / supervise / report to) (S11)",
+      "Sample Pitch modelo grabado + transcripción (S11)",
+      "Misión Final CML CARRIER kit completo: briefing + cue cards + timeline 12h condensada (S12)",
+      "Rúbrica E-Misión 6 criterios C01-C13 SOFÍA (S12 entregada a panel)",
+      "Reflexión metacognitiva handout 'What I see now that I did not see on Day 1' (S12)",
+      "Certificado simbólico Port Operations Trainee (S12)"
+    ],
+    "digitales": [
+      "Welcome presentation slides S1 (Puerto Buenaventura · Andrea + Captain Lopera + universo · cameos)",
+      "Audio VHF dialogue 90s con interferencia simulada Captain Lopera ↔ Andrea (S5)",
+      "Audio tripartito 3 min (yard + bridge + customs) (S7)",
+      "3 audios reales canal IMO YouTube curados ≤3 años (S7 autónomo · S10 cuestionario Listening)",
+      "Slides Canva del deck PM-3.3 (28 slides · apoyo visual S1-S12)",
+      "Timer digital visible + cronómetro proyectable (S6, S8, S9, S10, S11, S12)",
+      "App móvil VHF simulator o walkie-talkies digitales (S6, S8, S12)",
+      "Sample Pitch grabado 3 min A2.1 (S11 modelo)"
+    ],
+    "equipamiento": [
+      "Proyector con pantalla grande (S1-S12)",
+      "Tablero blanco grande (S1-S12)",
+      "Parlantes de calidad (S5, S7, S10)",
+      "Walkie-talkies × 6-8 sets (S6, S8, S12) — Plan B: app móvil VHF",
+      "Micrófono para presentaciones (S12 panel)",
+      "Cámara / tablet para grabar audios y videos autónomos (S2, S5-S11 homework + S12 archivo)",
+      "Cronómetro visible (S6, S8, S9, S10, S11, S12)",
+      "Radio scanner ambiente (opcional · S12 ambiente realista)"
+    ],
+    "aula": [
+      "Configuración en U o mesas de 4 (S1, S2, S3, S4, S5, S7)",
+      "Maritime Word Wall permanente en pared lateral — actualizado sesión a sesión (S2-S12)",
+      "English Zone señalizada con cinta de color en el piso (S1-S12)",
+      "6-8 estaciones VHF simuladas con barreras visuales para parejas (S6)",
+      "3 estaciones operacionales (yard + bridge + VHF) tipo isla central con Andrea al medio (S8)",
+      "5 estaciones separadas para Role Carousel (S9)",
+      "Configuración de examen (mesas individuales · silencio académico) (S10 cuestionario)",
+      "Aula-taller con mesas grandes 1 por aprendiz + acceso a computador (S11)",
+      "'CML Port Turnaround Mission Room' con 3 zonas + panel evaluador frente + sillas para audiencia (S12)"
+    ]
+  },
+  "validation_pm31_v251": {
+    "check_1_sesiones_presenciales": {
+      "status": "PASS",
+      "detail": "12 sesiones × 6h directas = 72h ✓ (regla_bloques: absorcion_Na1 single-guía con N=12 declarado en pm-2-0.session_blueprint.num_sessions)"
+    },
+    "check_2_horas_totales": {
+      "status": "PASS",
+      "detail": "72 directas + 28 autónomas = 100h canónicas single-guía (12 × 2.33h aut ≈ 28h) ✓"
+    },
+    "check_3_estructura_tripartita": {
+      "status": "PASS (deferido)",
+      "detail": "SET-UP/WHILE/WRAP-UP se materializa en pm-3-2-sX.json (12 ejecuciones) — Outline declara contrato"
+    },
+    "check_4_distribucion_natural": {
+      "status": "PASS",
+      "detail": "S1 apertura + S2-S9 apropiación 4-bloques-internos + S10 evaluación-transición + S11-S12 transferencia ABP CML ✓ (no 1 worksheet = 1 sesión rígido · agrupación por afinidad)"
+    },
+    "check_5_nombres_comunicativos": {
+      "status": "PASS",
+      "detail": "12 sesiones con nombre comunicativo motivador alineado al universo Puerto Buenaventura (First Day at the Terminal / The Port Word Walker / Reading the Ship / ... / The Port Professional)"
+    },
+    "check_6_teacher_talk_por_sesion": {
+      "status": "PASS (deferido)",
+      "detail": "Teacher Talk samples se materializan en pm-3-2-sX.json"
+    },
+    "check_7_logistics_box_completo": {
+      "status": "PASS",
+      "detail": "ambientes_resumen poblado top-level + ambiente declarado por sesión en pm0_alignment_by_session[n].ambiente_aprendizaje; materiales + agrupación + canva + plan_b en pm-3-2-sX.json"
+    },
+    "check_8_plan_b_sesiones_criticas": {
+      "status": "PASS (deferido)",
+      "detail": "Plan B se declara en pm-3-2-sX.json para S5 (audio VHF), S6 (walkie-talkies), S8 (simulación tripartita), S12 (Misión Final ambiente)"
+    },
+    "check_9_progresion_habilidades": {
+      "status": "PASS",
+      "detail": "skills_progression_map con 12 filas × 7 habilidades ✓"
+    },
+    "check_10_mapa_autonomo": {
+      "status": "PASS",
+      "detail": "autonomous_work_map con 12 asignaciones × 140 min = 28h ✓"
+    },
+    "check_11_zero_meta_talk": {
+      "status": "PASS",
+      "detail": "Output operativo — justificaciones pedagógicas viven en pm0_alignment_by_session (fuente de verdad PM-0), no en cuerpo de sessions_detail (delegado a pm-3-2-sX)"
+    },
+    "check_12_ambientes_resumen": {
+      "status": "PASS",
+      "detail": "§11.1 poblado top-level + por sesión en pm0_alignment_by_session[n].ambiente_aprendizaje + pm0_alignment_by_session[n].materiales_clave ✓"
+    },
+    "check_13_estrategias_resumen": {
+      "status": "PASS",
+      "detail": "§11.2 poblado con ciclo SENA + 12 estrategias dominantes + estrategias_didacticas + momento_sena por sesión en pm0_alignment_by_session[n] ✓"
+    },
+    "check_14_voc_dimensions_table": {
+      "status": "PASS",
+      "detail": "§11.3 poblado con 12 sesiones × 3 dimensiones (cognitiva/procedimental/actitudinal) con fórmula V+O+C aplicada al sector marítimo-portuario ✓"
+    },
+    "check_15_pm0_alignment_by_session_NUEVO_v251": {
+      "status": "PASS",
+      "detail": "§11.5 poblado con 12 sesiones × 8 campos (l1_percentage_target + grammar_groups_active + grammar_carga_check + dominant_feedback_mode + stress_focus + success_factors_priorized + cefr_descriptor_focus + pedagogical_shift_hooks + traceability_seed_22 + momento_sena + estrategias_didacticas + dimensiones_voc + ambiente_aprendizaje + materiales_clave). Cierra BUG-PM31-001.",
+      "sub_checks": {
+        "15a_l1_progresion_descendente": "PASS — S1=25 → S2=20 → S3=15 → S4=12 → S5=12 → S6=10 → S7=5 → S8=3 → S9=0 → S10=0 → S11=0 → S12=0 monotónicamente decreciente con plateau Bloque 4 en 0% ✓",
+        "15b_grammar_carga_2_intro_max": "WARN — S7 y S8 declaran 4 grupos Intro (Bloque Interno 3 RAP-03 introduce 7 grupos en 3 sesiones). Documentado en _grammar_carga_violation_note: 'Intro receptivo' vs 'Intro productivo' — sólo 2 grupos llegan a producción activa por sesión. Build-Out PM-3.2 debe materializar gestión. S11 también con extensión Gr 17 ext.",
+        "15c_feedback_mode_transicion": "PASS — ACCURACY (S1-S4) → MIXTO (S5-S7) → FLUENCY (S8-S12) coherente con shifts_metodologicos por bloque interno ✓",
+        "15d_stress_focus_poblado": "PASS — 12 sesiones con target_words IPA + técnicas + source PM-0 §5.13 (con énfasis CRÍTICO en SMCP/NATO en Bloque 2) ✓",
+        "15e_success_factors_coherencia": "PASS — factors aplicados coherentes con actividades de cada sesión (Sounds dominante en Bloques 1-2 · Use+Synergy dominante en Bloques 3-4) ✓",
+        "15f_cefr_descriptor_foco": "PASS — 12 sesiones con subnivel + habilidad_principal + descriptor_activo citado de pm-0-context.json descriptor_snapshot_por_bloque_interno ✓",
+        "15g_pedagogical_shift_progresivo": "PASS — velocidad/andamiaje/rol docente progresan lenta+alto+driller (B1) → moderada+moderado+facilitador (B2-B3) → natural+cero+evaluador externo (B4) ✓"
+      }
+    },
+    "check_16_bug_fix_reference": {
+      "status": "PASS",
+      "detail": "Campo bug_fix_reference declarado + mecanismo_fix documentado + este_json_implementa_el_fix: true ✓"
+    },
+    "check_17_single_guia_absorpcion_Na1": {
+      "status": "PASS",
+      "detail": "Single-guía con 4 RAPs absorbidos confirmado: 12 sesiones × 4 bloques internos × 3 sesiones c/u + progresión interna A1.2→A1.3→A2.0→A2.1 documentada en cada pm0_alignment_by_session[n].cefr_descriptor_focus.subnivel ✓ + final_mission_scenario CML Port Turnaround presente (no proyecto_formativo_articulador) ✓"
+    },
+    "overall": "PASS — pm-3-1.json v2.6 IMARPOR-CC cierra BUG-PM31-001 + cumple regla absorcion_Na1 single-guía 12 sesiones. WARN en check 15b documentado y mitigado. Listo para Gate Humano 3 (Sergio aprueba) → Fase 3 PM-3.2 Build-Out 12 ejecuciones con pm0_protocol heredado de pm0_alignment_by_session."
+  },
+  "pm_3_2_propagation_contract": {
+    "nota": "Contrato de herencia para PM-3.2 Build-Out v2.5.1 — single-guía 12 sesiones IMARPOR-CC.",
+    "regla": "Cada pm-3-2-sX.json (X=1..12) debe construir su bloque pm0_protocol tomando los campos de pm-3-1.json.pm0_alignment_by_session[X-1] como fuente de verdad. No redefinir — sólo expandir con detalle de facilitación (Teacher Talk específico bilingüe, materiales físicos puerto Buenaventura, Plan B walkie-talkies/app móvil, ambiente físico).",
+    "mapping_pm0_alignment_to_pm0_protocol": {
+      "l1_percentage_target.value": "pm0_protocol.l1_management.l1_percentage",
+      "l1_percentage_target.rationale": "pm0_protocol.l1_management.l1_rationale",
+      "grammar_groups_active[]": "pm0_protocol.grammar_groups[]",
+      "dominant_feedback_mode.mode": "pm0_protocol.feedback.mode",
+      "dominant_feedback_mode.techniques[]": "pm0_protocol.feedback.accuracy_techniques[] + fluency_techniques[]",
+      "stress_focus.target_words[]": "pm0_protocol.stress_pronunciation.focus_words[]",
+      "stress_focus.techniques[]": "pm0_protocol.stress_pronunciation.techniques[]",
+      "success_factors_priorized.target_vocabulary": "pm0_protocol.success_vocabulary.target_words",
+      "success_factors_priorized.factors_applied": "pm0_protocol.success_vocabulary.factors_applied",
+      "ambiente_aprendizaje": "pm0_protocol.physical_environment + logistics_box.ambiente",
+      "materiales_clave[]": "logistics_box.materiales[]",
+      "momento_sena": "pm0_protocol.fpi_block + logistics_box.momento_sena",
+      "estrategias_didacticas[]": "logistics_box.estrategia + tecnicas[].tecnica"
+    },
+    "script_canonico": "pm-3-2-pm0-propagate.js (a crear por run · adaptado a single-guía 12 sesiones — toma pm-3-1.json.pm0_alignment_by_session[n] y lo inyecta en pm-3-2-sX.json.pm0_protocol)",
+    "validacion_check_14_extendida_v252": "PM-2.11 Check 14 se ampliará en v2.5.2 para validar pm0_propagation además de strategy_propagation — ver BUG-FIX LOG de PM-3.1"
+  },
+  "siguiente_paso": "Gate Humano 3 pendiente: Sergio Cortés Perdomo aprueba este Playbook Outline (cambia enriched: false → enriched: true). Post-aprobación: ejecutar PM-3.2 Build-Out × 12 sesiones (pm-3-2-s1.json a pm-3-2-s12.json) heredando pm0_alignment_by_session[n] vía script pm-3-2-pm0-propagate.js. Paralelo recomendado: PM-3.3 Canva Deck (28 slides según overview_table 12 sesiones) + PM-3.4 Workbook Autónomo (12 capítulos según autonomous_work_map). Compuerta a Fase 4: re-ejecutar PM-2.11 Check 14 extendida (strategy + pm0 propagation) + PM-3.5 Misión Final CML Port Turnaround + PM-3.6 GFPI-F-135 activity_footer derivado downstream."
+}
