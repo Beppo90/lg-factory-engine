@@ -1,12 +1,43 @@
 {
   "pm_id": "PM-3.6",
   "pm_name": "GFPI-F-135 Learning Guide Generator",
-  "pm_version": "2.6.5",
+  "pm_version": "2.7.0",
   "run_id": "IMARPOR-CC-2026-04-27",
   "generated_date": "2026-04-30",
   "instructor": "Sergio Cortés Perdomo",
   "phase": 4,
   "subfase_sena": "Documento oficial GFPI-F-135 V02 — Guía de Aprendizaje del Aprendiz",
+  "meta": {
+    "activities_schema_version": "v2.7",
+    "activities_rewritten_at": "2026-04-30T11:32:40Z",
+    "v27_full_ids": [
+      "A3.1.1",
+      "A3.1.2",
+      "A3.2.1",
+      "A3.2.2",
+      "A3.2.3",
+      "A3.3.S2.1",
+      "A3.3.S3.1",
+      "A3.3.S3.2",
+      "A3.3.S3.3",
+      "A3.3.S4.1",
+      "A3.3.S4.2",
+      "A3.3.S5.1",
+      "A3.3.S5.2",
+      "A3.3.S6.1",
+      "A3.3.S7.1",
+      "A3.3.S8.1",
+      "A3.3.S9.1",
+      "A3.3b.1",
+      "A3.3b.2",
+      "A3.3b.3",
+      "A3.4.1",
+      "A3.4.2",
+      "A3.4.3",
+      "A3.4.4",
+      "A3.4.5"
+    ]
+  },
   "tono_redaccion": "2ª persona singular en inglés A1.2→A2.1 (progresión interna por bloques), con apoyo de supervivencia bilingüe en español al inicio (Bloque Interno 1) decreciendo hasta 0% (Bloque Interno 4)",
   "fuente_unica_de_verdad": "PM-3.2 Build-Out S1-S12 (Playbook IMARPOR-CC) + PM-2.11 fila GFPI-F-134 ensamblada + PM-3.5 Final Mission CML Port Turnaround + PM-1.2 Scope & Sequence (Toolbelt 20 términos · 5 sub-bloques) + PM-4.1 instrumentos (E1-E5) + PM-4.2 Cuestionario Consolidado S6 (E6 25pts)",
   "seccion_1_identificacion": {
@@ -79,10 +110,11 @@
       "actividades": [
         {
           "actividad_id": "A3.1.1",
+          "schema_version": "v2.7",
           "titulo_en": "Maritime Mood Board — A trainee's first look at Buenaventura",
           "titulo_es": "Mood Board marítimo — La primera mirada de un trainee a Buenaventura",
           "tipo_actividad_sena": "Actividad cognitiva",
-          "etiquetas_dimension": "[COGNITIVA] [ACTITUDINAL]",
+          "actividad_tipo_label": "Actividad cognitiva",
           "tiempo_min": 45,
           "agrupacion": "individual + dúo",
           "voc_dimension": [
@@ -90,8 +122,15 @@
             "actitudinal"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[COGNITIVA] [ACTITUDINAL] Walk along the wall and look at the 6 photos of the Terminal de Contenedores Buenaventura. Choose the one that pulls your eye. In the table below, write its number and one English word that describes it (a color, a part, an action). Pair up and share: 'I chose number ___ because it is ___.'",
-          "instruccion_supervivencia_es": "(Recorre la pared y observa las 6 fotos del Terminal de Contenedores Buenaventura. Elige la que más te llame la atención. Escribe su número y una palabra en inglés que la describa.)",
+          "enunciado_voc": {
+            "en": "Identify one striking visual reference from the Buenaventura terminal wall and label it with one English descriptor in the shared comparison table",
+            "es": "Identificar una referencia visual del Terminal Buenaventura y etiquetarla con un descriptor en inglés dentro de la tabla compartida",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will walk along a wall of six photos from the Terminal de Contenedores Buenaventura — gantry crane, mooring lines, Captain Lopera on the bridge, the BUENAVENTURA EXPRESS at Berth 4 — and let one image pull your eye. You will write a single English word about it: a color, a part, an action. This is your soft opening to maritime English. It matters because the language begins with what you actually see at a real Pacific port; you will not memorize abstract terms, you will name what is in front of you. By the end, you will have your first English maritime word on the table — and the word of a partner next to it.",
+            "es": "En esta primera actividad recorres una pared con seis fotos del Terminal de Contenedores Buenaventura y dejas que una imagen te llame la atención. Escribes una palabra en inglés sobre ella — color, parte, acción. Es tu apertura suave al inglés marítimo: no memorizas términos abstractos, nombras lo que está frente a ti. Al cerrar, tienes tu primera palabra marítima en la tabla y la palabra de un compañero al lado."
+          },
           "paso_a_paso": [
             {
               "en": "Walk along the wall and look at the 6 photos of the terminal.",
@@ -154,33 +193,43 @@
               "es": "Mínimo 1 fila con 3 columnas diligenciadas."
             }
           },
+          "materiales": [
+            "6 fotos impresas A4 (Terminal Buenaventura · BUENAVENTURA EXPRESS · gantry crane · Captain Lopera · bollards · radio VHF)",
+            "Post-it amarillos",
+            "Marcadores"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula bilingüe en U o mesas de 4. Proyector + tablero + English Zone señalizada. Maritime Word Wall vacío activado. 6 fotos del Terminal Buenaventura impresas A4 en pared.",
             "estrategia": "ABP + Diagnóstico activador (escenario Andrea + Gap Analysis maritime)",
             "tecnica": "Maritime Mood Board / galería visual portuaria",
-            "duracion_horas": 0.75,
-            "materiales": [
-              "6 fotos impresas A4 (Terminal Buenaventura · BUENAVENTURA EXPRESS · gantry crane · Captain Lopera · bollards · radio VHF)",
-              "Post-it amarillos",
-              "Marcadores"
-            ],
-            "material_apoyo": "Mapa Terminal Buenaventura A2 (muro frontal · permanente)"
+            "materiales": "6 fotos impresas A4 (Terminal Buenaventura · BUENAVENTURA EXPRESS · gantry crane · Captain Lopera · bollards · radio VHF) · Post-it amarillos · Marcadores",
+            "material_apoyo": "Mapa Terminal Buenaventura A2 (muro frontal · permanente)",
+            "duracion_horas": "0.75 horas"
           }
         },
         {
           "actividad_id": "A3.1.2",
+          "schema_version": "v2.7",
           "titulo_en": "Maritime KWL Chart — Map your starting point",
           "titulo_es": "KWL marítimo — Tu punto de partida",
           "tipo_actividad_sena": "Actividad cognitiva",
-          "etiquetas_dimension": "[COGNITIVA]",
+          "actividad_tipo_label": "Actividad cognitiva",
           "tiempo_min": 30,
           "agrupacion": "individual",
           "voc_dimension": [
             "cognitiva"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[COGNITIVA] Read each Toolbelt term below slowly. For every row, mark exactly one box: ✓ if you can explain it in English, ~ if it looks familiar, ? if it is new. Zero blanks. Keep this page — we will reopen it at the end of Session 10.",
-          "instruccion_supervivencia_es": "(Lee cada término Toolbelt despacio. Marca una casilla por fila: ✓ lo sé · ~ lo he visto · ? es nuevo. Conserva esta página.)",
+          "enunciado_voc": {
+            "en": "Self-rate the twenty Toolbelt maritime terms with three diagnostic marks across all rows without leaving any blanks",
+            "es": "Auto-diagnosticar los veinte términos del Toolbelt marítimo con tres marcas distintas sin dejar filas en blanco",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will read each of the twenty Toolbelt maritime terms slowly — bollard, crane, bow, stern, bridge, Roger, Wilco, SMCP, NATO Phonetic, VHF, and ten more — and mark each row honestly: a check if you can explain it, a tilde if it looks familiar, a question mark if it is new. Zero blanks. This page is your starting line; you will reopen it at the end of Session 10 and you will see how far you have moved. It matters because honesty here is what makes the rest of the course efficient — the instructor calibrates the next sessions based on your marks.",
+            "es": "Lees los veinte términos del Toolbelt marítimo despacio y marcas cada fila con honestidad: check si puedes explicarlo, tilde si te suena, signo de interrogación si es nuevo. Cero vacíos. Esta página es tu línea de partida; la abrirás de nuevo al final de la Sesión 10 y verás cuánto te has movido. La honestidad aquí calibra todo el curso."
+          },
           "paso_a_paso": [
             {
               "en": "Read each maritime term slowly, one at a time.",
@@ -324,16 +373,18 @@
               "es": "Cero vacíos en 20 filas."
             }
           },
+          "materiales": [
+            "Maritime KWL Chart handout",
+            "Bolígrafos"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula bilingüe en U + Maritime Word Wall vacío + Mapa Terminal A2",
             "estrategia": "Diagnóstico activador",
             "tecnica": "Self-rating checklist · KWL pre-K column",
-            "duracion_horas": 0.5,
-            "materiales": [
-              "Maritime KWL Chart handout",
-              "Bolígrafos"
-            ],
-            "material_apoyo": "no aplica"
+            "materiales": "Maritime KWL Chart handout · Bolígrafos",
+            "material_apoyo": "no aplica",
+            "duracion_horas": "0.5 horas"
           }
         }
       ]
@@ -345,10 +396,11 @@
       "actividades": [
         {
           "actividad_id": "A3.2.1",
+          "schema_version": "v2.7",
           "titulo_en": "Tour of the Terminal — Meet your team",
           "titulo_es": "Tour del Terminal — Conoce tu equipo",
           "tipo_actividad_sena": "Actividad cognitiva + actitudinal",
-          "etiquetas_dimension": "[COGNITIVA] [ACTITUDINAL]",
+          "actividad_tipo_label": "Actividad cognitiva + actitudinal",
           "tiempo_min": 60,
           "agrupacion": "plenaria + parejas",
           "voc_dimension": [
@@ -356,8 +408,15 @@
             "actitudinal"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[COGNITIVA] [ACTITUDINAL] Look at the 5 character cards. Match each character with their role: Capitán Restrepo · Captain Lopera · Officer Vásquez · Diego · Bosun Romero. With a partner, choose 1 character and write 1 English sentence about them.",
-          "instruccion_supervivencia_es": "(Mira las 5 tarjetas de personajes. Empareja cada uno con su rol. Con un compañero, elige 1 y escribe 1 oración en inglés.)",
+          "enunciado_voc": {
+            "en": "Match five port team characters with their professional roles and produce one English sentence about a chosen character with a partner",
+            "es": "Emparejar cinco personajes del equipo portuario con sus roles y producir una oración en inglés sobre uno con un compañero",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will meet your team. Five character cards lie on your desk — Capitán Restrepo (Port Captain), Captain Lopera (Vessel Master), Officer Vásquez (Deck Officer), Diego Mejía (Crane Operator), Bosun Romero (Yard Supervisor). You match each face to a role, then with a partner you choose one and write a sentence: 'Captain Lopera is the Vessel Master.' This matters because, before you ever pick up the VHF, you must know who is on the other side. By the end you can name the people you will work with for the next twelve sessions — in English.",
+            "es": "En esta actividad conoces tu equipo. Cinco tarjetas: Capitán Restrepo, Captain Lopera, Officer Vásquez, Diego Mejía, Bosun Romero. Emparejas cada cara con un rol y, en pareja, escribes una oración en inglés sobre uno. Antes de levantar el VHF debes saber quién está al otro lado. Al cerrar, sabes nombrar a las personas con las que trabajarás 12 sesiones."
+          },
           "paso_a_paso": [
             {
               "en": "Look at the 5 character cards on your desk.",
@@ -423,32 +482,42 @@
               "es": "5/5 + 1 oración."
             }
           },
+          "materiales": [
+            "5 character cards laminadas",
+            "Banco de roles handout"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula + 5 character cards laminadas en pared",
             "estrategia": "ABT — Pre-enseñanza personajes universo narrativo",
             "tecnica": "Matching + producción escrita controlada",
-            "duracion_horas": 1.0,
-            "materiales": [
-              "5 character cards laminadas",
-              "Banco de roles handout"
-            ],
-            "material_apoyo": "Maritime Word Wall (pre-pegada con 5 tarjetas Sub-bloque 1)"
+            "materiales": "5 character cards laminadas · Banco de roles handout",
+            "material_apoyo": "Maritime Word Wall (pre-pegada con 5 tarjetas Sub-bloque 1)",
+            "duracion_horas": "1.0 horas"
           }
         },
         {
           "actividad_id": "A3.2.2",
+          "schema_version": "v2.7",
           "titulo_en": "Learning Contract — Sign the English Zone",
           "titulo_es": "Contrato de aprendizaje — Firma la English Zone",
           "tipo_actividad_sena": "Actividad actitudinal",
-          "etiquetas_dimension": "[ACTITUDINAL]",
+          "actividad_tipo_label": "Actividad actitudinal",
           "tiempo_min": 30,
           "agrupacion": "individual + plenaria",
           "voc_dimension": [
             "actitudinal"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[ACTITUDINAL] Read the 5 English Zone rules. Mark each one with ✓ (I commit) or ✗ (I have doubts). Write your name and sign the contract. Share 1 rule you find difficult with the group.",
-          "instruccion_supervivencia_es": "(Lee las 5 reglas de la English Zone. Marca cada una. Firma. Comparte una regla difícil con el grupo.)",
+          "enunciado_voc": {
+            "en": "Read the five English Zone rules of the Port Trainee contract and sign your commitment after marking each rule and sharing one difficulty",
+            "es": "Leer las cinco reglas de la English Zone del contrato Port Trainee y firmar tu compromiso tras marcar cada regla y compartir una dificultad",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will sign the English Zone Learning Contract — five rules that protect your maritime English progress: speak English in the trainee zone, use SMCP responses on VHF, spell call signs in NATO Phonetic, respect Diego and Bosun Romero (Spanish L1) by translating in coordination, and never be afraid to say 'Say again, please.' You mark each rule with a check or a doubt, write your name, and sign. This matters because intent without commitment fades by Session 3. By the end, your signature is on the wall — and the class becomes accountable to itself.",
+            "es": "Firmas el contrato de la English Zone — cinco reglas que protegen tu avance: hablar inglés en la zona, usar SMCP en VHF, deletrear con OTAN, respetar a Diego y Bosun (L1 español), y pedir 'Say again' sin miedo. Marcas, firmas y compartes una regla difícil. La intención sin compromiso se pierde en S3; tu firma queda en la pared."
+          },
           "paso_a_paso": [
             {
               "en": "Read each of the 5 rules below slowly.",
@@ -520,24 +589,27 @@
               "es": "5 reglas marcadas + firma."
             }
           },
+          "materiales": [
+            "Learning Contract handout",
+            "Bolígrafos azules"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula + English Zone tape activada + Maritime Word Wall + plenaria final S1",
             "estrategia": "Diagnóstico actitudinal + ceremonia de compromiso",
             "tecnica": "Learning Contract + plenaria reflexiva",
-            "duracion_horas": 0.5,
-            "materiales": [
-              "Learning Contract handout",
-              "Bolígrafos azules"
-            ],
-            "material_apoyo": "Cinta de color para English Zone"
+            "materiales": "Learning Contract handout · Bolígrafos azules",
+            "material_apoyo": "Cinta de color para English Zone",
+            "duracion_horas": "0.5 horas"
           }
         },
         {
           "actividad_id": "A3.2.3",
+          "schema_version": "v2.7",
           "titulo_en": "Toolbelt Sub-block 1 — Build the Port Word Wall",
           "titulo_es": "Toolbelt Sub-bloque 1 — Construye el muro de palabras del puerto",
           "tipo_actividad_sena": "Actividad cognitiva + procedimental",
-          "etiquetas_dimension": "[COGNITIVA] [PROCEDIMENTAL]",
+          "actividad_tipo_label": "Actividad cognitiva + procedimental",
           "tiempo_min": 90,
           "agrupacion": "grupos de 4",
           "voc_dimension": [
@@ -545,8 +617,15 @@
             "procedimental"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[COGNITIVA] [PROCEDIMENTAL] Classify 12 maritime photos into 3 categories: port infrastructure / ship parts / port equipment. Place the 5 Sub-block 1 cards (bollard · crane · bow · stern · bridge) on the Word Wall under their category. Write 3 English sentences using 3 of these terms.",
-          "instruccion_supervivencia_es": "(Clasifica 12 fotos marítimas en 3 categorías. Pega las 5 tarjetas en el Word Wall. Escribe 3 oraciones usando 3 términos.)",
+          "enunciado_voc": {
+            "en": "Classify twelve port photos into three categories and place the five Sub-block 1 word cards on the wall while writing three short English sentences",
+            "es": "Clasificar doce fotos portuarias en tres categorías y fijar las cinco tarjetas Sub-bloque 1 en el muro escribiendo tres oraciones cortas",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will build the Maritime Word Wall with your group of four. Twelve port photos must be sorted into three columns: port infrastructure, ship parts, port equipment. You place the five Sub-block 1 cards (bollard · crane · bow · stern · bridge) on the wall under their right category, drill the stress with the instructor (BOL-lard · CRANE · BOW), and write three short sentences using the new terms. It matters because this wall stays up for twelve sessions — every term you add is a term you can point to. By the end, your first five maritime words live on a wall you can see from any seat.",
+            "es": "Construyes el Maritime Word Wall en grupos de cuatro. Doce fotos en tres columnas; cinco tarjetas Sub-bloque 1 (bollard · crane · bow · stern · bridge) en su categoría; drill de stress; tres oraciones cortas. El muro queda 12 sesiones; cada término que pegas es un término que puedes señalar."
+          },
           "paso_a_paso": [
             {
               "en": "Sort 12 maritime photos into 3 columns: port infrastructure / ship parts / port equipment.",
@@ -625,18 +704,20 @@
               "es": "5/5 tarjetas + 3 oraciones."
             }
           },
+          "materiales": [
+            "12 fotos marítimas",
+            "5 tarjetas Word Wall (bollard · crane · bow · stern · bridge) con IPA + foto",
+            "Classification handout",
+            "Marcadores"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula + mesas de 4 + Maritime Word Wall activado en pared lateral con 5 tarjetas Sub-bloque 1",
             "estrategia": "ABT — Pre-enseñanza léxica portuaria + construcción Word Wall",
             "tecnica": "Classification handout + finger drilling + producción escrita",
-            "duracion_horas": 1.5,
-            "materiales": [
-              "12 fotos marítimas",
-              "5 tarjetas Word Wall (bollard · crane · bow · stern · bridge) con IPA + foto",
-              "Classification handout",
-              "Marcadores"
-            ],
-            "material_apoyo": "Diagrama Ship Overview A2 + Mapa Terminal Buenaventura A2"
+            "materiales": "12 fotos marítimas · 5 tarjetas Word Wall (bollard · crane · bow · stern · bridge) con IPA + foto · Classification handout · Marcadores",
+            "material_apoyo": "Diagrama Ship Overview A2 + Mapa Terminal Buenaventura A2",
+            "duracion_horas": "1.5 horas"
           }
         }
       ]
@@ -649,18 +730,26 @@
       "actividades": [
         {
           "actividad_id": "A3.3.S2.1",
+          "schema_version": "v2.7",
           "titulo_en": "Word Wall Drill — Sub-block 1 fixed (bollard · crane · bow · stern · bridge)",
           "titulo_es": "Drill Word Wall — Sub-bloque 1 fijado",
           "tipo_actividad_sena": "Actividad procedimental",
-          "etiquetas_dimension": "[PROCEDIMENTAL]",
+          "actividad_tipo_label": "Actividad procedimental",
           "tiempo_min": 90,
           "agrupacion": "grupos de 4",
           "voc_dimension": [
             "procedimental"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[PROCEDIMENTAL] Record a 30-second audio naming 5 port elements you see in your personal photos using the 5 Sub-block 1 terms.",
-          "instruccion_supervivencia_es": "(Graba 30s nombrando 5 elementos del puerto.)",
+          "enunciado_voc": {
+            "en": "Record a thirty-second audio naming five port elements from your personal photos using the five Sub-block 1 terms with audible accuracy",
+            "es": "Grabar un audio de treinta segundos nombrando cinco elementos portuarios con los cinco términos Sub-bloque 1",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will fix the first five maritime terms in your mouth, not just on paper. You take out the five photos you brought from autonomous work, name each element using a Sub-block 1 word, and record a thirty-second audio on your phone — 'This is a bollard at berth four. That is the bow of a vessel. These are cranes near the dock.' Then you play it back to your group of four and listen for stress. It matters because port operations are spoken first, written second. By the end, your voice has said the words at least once — and that is the beginning of fluency.",
+            "es": "Fijas los cinco términos Sub-bloque 1 en tu boca, no solo en papel. Sacas tus cinco fotos, nombras cada elemento y grabas 30 segundos en el móvil. Reproduces al grupo. El puerto se habla antes que se escribe; tu voz ya dijo las palabras al menos una vez."
+          },
           "paso_a_paso": [
             {
               "en": "Pull out the 5 photos you brought from autonomous work.",
@@ -717,33 +806,43 @@
               "es": "5 términos usados."
             }
           },
+          "materiales": [
+            "Fotos personales",
+            "Smartphones",
+            "Word Wall Sub-bloque 1"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula + Word Wall completo + grabadoras móviles",
             "estrategia": "ABT — Producción oral controlada con Toolbelt 5",
             "tecnica": "Recorded audio drill + peer playback",
-            "duracion_horas": 1.5,
-            "materiales": [
-              "Fotos personales",
-              "Smartphones",
-              "Word Wall Sub-bloque 1"
-            ],
-            "material_apoyo": "Mapa Terminal Buenaventura A2"
+            "materiales": "Fotos personales · Smartphones · Word Wall Sub-bloque 1",
+            "material_apoyo": "Mapa Terminal Buenaventura A2",
+            "duracion_horas": "1.5 horas"
           }
         },
         {
           "actividad_id": "A3.3.S3.1",
+          "schema_version": "v2.7",
           "titulo_en": "Pre-reading Brainstorm — Ship parts you remember",
           "titulo_es": "Brainstorm pre-lectura — Partes que recuerdas",
           "tipo_actividad_sena": "Actividad cognitiva",
-          "etiquetas_dimension": "[COGNITIVA]",
+          "actividad_tipo_label": "Actividad cognitiva",
           "tiempo_min": 30,
           "agrupacion": "plenaria",
           "voc_dimension": [
             "cognitiva"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[COGNITIVA] Look at the diagram of a container vessel on the wall. Name in English as many parts as you can in 3 minutes. Write them in your notebook.",
-          "instruccion_supervivencia_es": "(Mira el diagrama del container vessel. Nombra en inglés todas las partes que recuerdes en 3 min.)",
+          "enunciado_voc": {
+            "en": "Brainstorm in plenary as many container vessel parts in English as you can recall in three minutes using the wall diagram as a reference",
+            "es": "Hacer brainstorm en plenaria de partes del buque en inglés durante tres minutos usando el diagrama de la pared como referencia",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will activate everything your brain already knows about ship parts before reading the Master Anchor text. You look at the Diagram Ship Overview A2 on the wall and, in three minutes, write in your notebook every English part name you can recall — bow, stern, bridge, deck, hull, mast, anchor, funnel, whatever surfaces. Then you compare with a partner and the instructor consolidates a class list. It matters because reading without activation is reading half-asleep. By the end, your prior knowledge is on the page — ready to bond with new vocabulary in Activity A3.3.S3.2.",
+            "es": "Antes de leer el Master Anchor, activas lo que tu cerebro ya sabe. Miras el diagrama A2 y escribes en 3 min todas las partes en inglés que recuerdes. Comparas con tu pareja y el instructor consolida. Leer sin activación es leer dormido; tu conocimiento previo queda listo para enlazar con nuevo vocabulario en S3.2."
+          },
           "paso_a_paso": [
             {
               "en": "Look at the Diagram Ship Overview A2 on the wall.",
@@ -810,23 +909,26 @@
               "es": "Mín 3 partes."
             }
           },
+          "materiales": [
+            "Cuadernos"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula + Diagrama Ship Overview A2",
             "estrategia": "ABT — Activación previa a lectura (jigsaw)",
             "tecnica": "Brainstorm + plenaria",
-            "duracion_horas": 0.5,
-            "materiales": [
-              "Cuadernos"
-            ],
-            "material_apoyo": "Diagrama A2 + Word Wall actualizado"
+            "materiales": "Cuadernos",
+            "material_apoyo": "Diagrama A2 + Word Wall actualizado",
+            "duracion_horas": "0.5 horas"
           }
         },
         {
           "actividad_id": "A3.3.S3.2",
+          "schema_version": "v2.7",
           "titulo_en": "Reading Master Anchor — Operational Report BUENAVENTURA EXPRESS · Berth 4",
           "titulo_es": "Lectura ancla — Reporte operacional BUENAVENTURA EXPRESS · Berth 4",
           "tipo_actividad_sena": "Actividad cognitiva + procedimental",
-          "etiquetas_dimension": "[COGNITIVA] [PROCEDIMENTAL]",
+          "actividad_tipo_label": "Actividad cognitiva + procedimental",
           "tiempo_min": 120,
           "agrupacion": "grupos de 4 (jigsaw cooperativo)",
           "voc_dimension": [
@@ -834,8 +936,15 @@
             "procedimental"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[COGNITIVA] [PROCEDIMENTAL] Read the Master Anchor text inline (Appendix A). In your Home Group, you become an expert in 1 of 4 segments (Ship Anatomy · SMCP/VHF · Port Operations · Role Functions). Move to your Expert Group, master the segment, return and teach your Home Group in 2 minutes.",
-          "instruccion_supervivencia_es": "(Lee el Master Anchor. En Home Group cada uno es experto en 1 de 4 segmentos. Va al Expert Group, domina, regresa y enseña.)",
+          "enunciado_voc": {
+            "en": "Read the Master Anchor on the BUENAVENTURA EXPRESS in jigsaw cooperative mode and label six to eight ship parts on the diagram after teaching your home group",
+            "es": "Leer el Master Anchor del BUENAVENTURA EXPRESS en jigsaw y etiquetar seis a ocho partes del buque tras enseñar a tu home group",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will read the Master Anchor — a 178-word operational report about the BUENAVENTURA EXPRESS at Berth 4 — and become an expert in one of four segments: ship anatomy, SMCP/VHF, port operations, or role functions. You move to your Expert Group, master your slice, return to your Home Group, and teach for two minutes using three key sentences plus one verification question. Then you label six to eight parts on the vessel diagram. It matters because reading alone is fragile; reading and teaching makes the words yours. By the end, you can recognize and name the anatomy of a real container vessel.",
+            "es": "Lees el Master Anchor del BUENAVENTURA EXPRESS y te vuelves experto en un segmento (anatomía · SMCP · operaciones · roles). Vas al Expert Group, regresas al Home Group y enseñas 2 min con 3 frases clave y 1 pregunta de verificación. Etiquetas 6-8 partes en el diagrama. Leer y enseñar hace que las palabras sean tuyas."
+          },
           "paso_a_paso": [
             {
               "en": "Read the Master Anchor inline (Appendix A) silently — 5 min.",
@@ -925,37 +1034,46 @@
               "es": "6/8 partes correctas."
             }
           },
-          "apendices_referenciados": [
-            "apendice_a_master_anchor_buenaventura_express"
+          "materiales": [
+            "Master Anchor handout (178 palabras A1.2)",
+            "Diagrama BUENAVENTURA EXPRESS en blanco × aprendiz",
+            "Tarjetas jigsaw 4 segmentos"
           ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula + mesas de 4 jigsaw + Word Wall actualizado con 5 nuevos términos (deck · hull · mast · anchor · berthing)",
             "estrategia": "ABT — Lectura cooperativa Jigsaw",
             "tecnica": "Jigsaw cooperativo expert/home + diagrama etiquetado",
-            "duracion_horas": 2.0,
-            "materiales": [
-              "Master Anchor handout (178 palabras A1.2)",
-              "Diagrama BUENAVENTURA EXPRESS en blanco × aprendiz",
-              "Tarjetas jigsaw 4 segmentos"
-            ],
-            "material_apoyo": "Diagrama Ship Overview A2 + Word Wall completo"
-          }
+            "materiales": "Master Anchor handout (178 palabras A1.2) · Diagrama BUENAVENTURA EXPRESS en blanco × aprendiz · Tarjetas jigsaw 4 segmentos",
+            "material_apoyo": "Diagrama Ship Overview A2 + Word Wall completo",
+            "duracion_horas": "2.0 horas"
+          },
+          "apendices_referenciados": [
+            "apendice_a_master_anchor_buenaventura_express"
+          ]
         },
         {
           "actividad_id": "A3.3.S3.3",
+          "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E1 · Reading Comprehension Quiz — Cuestionario No 1",
           "titulo_es": "EVIDENCIA E1 · Cuestionario de lectura — Cuestionario No 1",
           "tipo_actividad_sena": "Actividad cognitiva (evidencia formal)",
-          "etiquetas_dimension": "[COGNITIVA]",
+          "actividad_tipo_label": "Actividad cognitiva (evidencia formal)",
           "tiempo_min": 45,
           "agrupacion": "individual",
           "voc_dimension": [
             "cognitiva"
           ],
           "produce_evidencia": true,
-          "evidencia_codigo": "E1",
-          "instruccion_2pers_en": "[COGNITIVA] Answer the 5-item quiz on the Master Anchor text individually. 4 literal items + 1 inferential item. No notes. 30 minutes.",
-          "instruccion_supervivencia_es": "(Responde el cuestionario individual de 5 ítems. Sin notas. 30 min.)",
+          "enunciado_voc": {
+            "en": "Answer five Reading comprehension items individually about the Master Anchor under exam conditions to demonstrate cognitive understanding",
+            "es": "Responder individualmente cinco ítems de comprensión sobre el Master Anchor en condiciones de examen para demostrar comprensión cognitiva",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will produce your first formal evidence — Evidence E1 Reading. You sit individually, no notes, and answer five items on the Master Anchor: four literal questions (vessel name, berthing location, term identification, true/false) and one inferential question about why Captain Lopera is mentioned. Thirty minutes. It matters because this is the moment when reading stops being practice and becomes proof — the instructor checks Cuestionario No 1 (PM-4.1) against your sheet. By the end, you submit five answers; minimum four out of five for a satisfactory.",
+            "es": "Produces tu primera evidencia formal — E1 Reading. Sentado individualmente, sin notas, respondes 5 ítems sobre el Master Anchor: 4 literales y 1 inferencial sobre Captain Lopera. 30 minutos. Aquí la lectura deja de ser práctica y se vuelve prueba; el instructor coteja con el Cuestionario No 1 (PM-4.1). Mínimo 4/5 para satisfactorio."
+          },
           "paso_a_paso": [
             {
               "en": "Sit at individual desk position.",
@@ -978,7 +1096,6 @@
             "tipo": "quiz_preview",
             "titulo_en": "E1 Reading Quiz · 5 items × 1 pt = 5 pts",
             "titulo_es": "E1 Reading · 5 ítems × 1 pt = 5 pts",
-            "badge": "instrument_1_reading",
             "estructura": {
               "items": [
                 {
@@ -1012,34 +1129,51 @@
                   "tipo": "respuesta corta inferencial"
                 }
               ]
+            },
+            "badge": "instrument_1_reading"
+          },
+          "entregable": {
+            "producto": {
+              "en": "Completed Reading Comprehension Quiz (5 items × 1 pt = 5 pts).",
+              "es": "Cuestionario de Reading resuelto (5 ítems × 1 pt = 5 pts)."
+            },
+            "formato": {
+              "en": "Printed quiz handed in to instructor.",
+              "es": "Cuestionario impreso entregado al instructor."
+            },
+            "criterio_minimo": {
+              "en": "5 items answered; minimum 4/5 satisfactory.",
+              "es": "5 ítems respondidos; mínimo 4/5 satisfactorio."
             }
           },
-          "entregable_evidencia": {
-            "header": "EVIDENCIA E1 — Reading Comprehension Quiz",
-            "producto_a_entregar": "Cuestionario de Reading impreso resuelto (5 ítems · 5 pts)",
-            "formato": "Físico-observable / PDF firmado",
-            "extension_minimo": "5 ítems respondidos · mínimo aprobación 4/5",
-            "entrega": "Instructor en clase al minuto 30 de la actividad"
+          "materiales": [
+            "Cuestionario No 1 impreso × aprendiz",
+            "Bolígrafos azules",
+            "Cronómetro"
+          ],
+          "evidencia": {
+            "codigo": "E1",
+            "nombre": "Reading Comprehension Quiz — Cuestionario No 1",
+            "tipo_sena": "Conocimiento",
+            "tecnica_evaluacion": "Formulación de preguntas",
+            "instrumento": "Cuestionario No 1 (PM-4.1)"
           },
           "activity_footer": {
             "ambiente": "Aula + mesas individuales separadas + Diagrama Ship Overview oculto",
             "estrategia": "Evaluación Formativa de Conocimiento",
             "tecnica": "Formulación de preguntas — Cuestionario No 1 (PM-4.1)",
-            "duracion_horas": 0.75,
-            "materiales": [
-              "Cuestionario No 1 impreso × aprendiz",
-              "Bolígrafos azules",
-              "Cronómetro"
-            ],
-            "material_apoyo": "Master Anchor texto disponible (Apéndice A)"
+            "materiales": "Cuestionario No 1 impreso × aprendiz · Bolígrafos azules · Cronómetro",
+            "material_apoyo": "Master Anchor texto disponible (Apéndice A)",
+            "duracion_horas": "0.75 horas"
           }
         },
         {
           "actividad_id": "A3.3.S4.1",
+          "schema_version": "v2.7",
           "titulo_en": "Grammar Awareness — Be + Imperative + IN preposition",
           "titulo_es": "Inducción gramatical — Be + Imperativo + IN",
           "tipo_actividad_sena": "Actividad cognitiva + procedimental",
-          "etiquetas_dimension": "[COGNITIVA] [PROCEDIMENTAL]",
+          "actividad_tipo_label": "Actividad cognitiva + procedimental",
           "tiempo_min": 90,
           "agrupacion": "plenaria + parejas",
           "voc_dimension": [
@@ -1047,8 +1181,15 @@
             "procedimental"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[COGNITIVA] [PROCEDIMENTAL] Examine 8 sample sentences from the Inspection Report model. Identify: (a) be · (b) imperative · (c) IN preposition · (d) plural a/an. Color-code each in your handout (BE blue · IMP red · IN green · PLURAL purple).",
-          "instruccion_supervivencia_es": "(Examina 8 oraciones del modelo. Identifica be · imperative · IN · plural. Marca con colores.)",
+          "enunciado_voc": {
+            "en": "Identify and color-code four grammar elements across eight Inspection Report sample sentences with peer cross-checking",
+            "es": "Identificar y marcar con cuatro colores cuatro elementos gramaticales en ocho oraciones modelo del Inspection Report con cotejo entre pares",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will see how port grammar actually works. Eight sample sentences from a real Inspection Report sit on your handout — and you must color-code each one with four markers: blue for be (is, are), red for imperative (check, open, verify), green for IN preposition (in office, in container), purple for plural a/an determiners. You compare with a partner; the instructor recasts errors in plenary. It matters because before writing your own report you need to see the bones underneath. By the end, you can spot the four grammar moves that hold every Inspection Report together.",
+            "es": "Ves cómo funciona la gramática portuaria real. Ocho oraciones modelo del Inspection Report; las marcas con 4 colores: azul para be · rojo para imperativo · verde para IN · morado para a/an. Comparas con pareja; el instructor recasting en plenaria. Antes de escribir tu reporte, ves los huesos. Reconoces los 4 movimientos gramaticales que sostienen todo Inspection Report."
+          },
           "paso_a_paso": [
             {
               "en": "Read 8 sample sentences from the Inspection Report.",
@@ -1110,33 +1251,42 @@
               "es": "8/8 marcadas."
             }
           },
+          "materiales": [
+            "Grammar Awareness handout 8 oraciones",
+            "Marcadores azul/rojo/verde/morado"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula + samples de Inspection Report en muro lateral",
             "estrategia": "ABT — Inducción gramatical por descubrimiento",
             "tecnica": "Color-coded grammar awareness + recasting plenario",
-            "duracion_horas": 1.5,
-            "materiales": [
-              "Grammar Awareness handout 8 oraciones",
-              "Marcadores azul/rojo/verde/morado"
-            ],
-            "material_apoyo": "3 samples Inspection Report modelo"
+            "materiales": "Grammar Awareness handout 8 oraciones · Marcadores azul/rojo/verde/morado",
+            "material_apoyo": "3 samples Inspection Report modelo",
+            "duracion_horas": "1.5 horas"
           }
         },
         {
           "actividad_id": "A3.3.S4.2",
+          "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E2 · Inspection Report Writing — Lista de Verificación No 2",
           "titulo_es": "EVIDENCIA E2 · Inspection Report — Lista de Verificación No 2",
           "tipo_actividad_sena": "Actividad procedimental (evidencia formal)",
-          "etiquetas_dimension": "[PROCEDIMENTAL]",
+          "actividad_tipo_label": "Actividad procedimental (evidencia formal)",
           "tiempo_min": 180,
           "agrupacion": "individual + peer review en parejas",
           "voc_dimension": [
             "procedimental"
           ],
           "produce_evidencia": true,
-          "evidencia_codigo": "E2",
-          "instruccion_2pers_en": "[PROCEDIMENTAL] Write an Inspection Report of 6-8 sentences about the BUENAVENTURA EXPRESS. Use the writing frame. Include 5 ship parts + be + imperative + IN preposition. Submit final draft after peer review.",
-          "instruccion_supervivencia_es": "(Escribe un Inspection Report de 6-8 oraciones. Usa el frame. 5 ship parts + be + imp + IN.)",
+          "enunciado_voc": {
+            "en": "Write an Inspection Report of six to eight sentences about the BUENAVENTURA EXPRESS using five ship parts plus be plus imperative plus IN preposition for formal evidence",
+            "es": "Redactar un Inspection Report de seis a ocho oraciones sobre el BUENAVENTURA EXPRESS usando cinco ship parts más be más imperativo más IN como evidencia formal",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will produce your second formal evidence — Evidence E2 Writing. Using the inline writing frame, you draft six to eight sentences about the BUENAVENTURA EXPRESS: vessel location, bow position, stern position, bridge deck level, and imperatives commanding action at the port. Five ship parts must appear, and the four grammar moves from S4.1 must be visible. You exchange with a partner for peer review using the five-item checklist, revise, and submit. It matters because the Lista de Verificación No 2 (PM-4.1) is what the instructor will mark. By the end, you have written your first technical report in English.",
+            "es": "Produces tu segunda evidencia formal — E2 Writing. Usando el frame, redactas 6-8 oraciones sobre el BUENAVENTURA EXPRESS con 5 ship parts y los 4 movimientos gramaticales de S4.1. Peer review con checklist de 5 ítems, revisas y entregas. La Lista de Verificación No 2 (PM-4.1) es lo que el instructor marca. Has escrito tu primer reporte técnico en inglés."
+          },
           "paso_a_paso": [
             {
               "en": "Use the writing frame template (inline below).",
@@ -1163,7 +1313,6 @@
             "tipo": "writing_template",
             "titulo_en": "Inspection Report frame · 6-8 sentences",
             "titulo_es": "Frame · 6-8 oraciones",
-            "badge": "instrument_2_writing",
             "estructura": {
               "plantilla_en": "INSPECTION REPORT — [Vessel name]\n\n1. The vessel ___ is at berth ___.\n2. The bow is ___.\n3. The stern is ___.\n4. The bridge is on the ___.\n5. Check the ___ at ___.\n6. Open the ___ next to ___.\n7. Verify ___ is ___.\n8. ___ is/are not ___.",
               "plantilla_es": "(Frame con slots: nombre del buque · berth · 5 ship parts · be · imperative · IN)",
@@ -1178,34 +1327,51 @@
                 "verb + status",
                 "negative status"
               ]
+            },
+            "badge": "instrument_2_writing"
+          },
+          "entregable": {
+            "producto": {
+              "en": "Inspection Report (1 page A4 · 6-8 sentences) about BUENAVENTURA EXPRESS.",
+              "es": "Inspection Report (1 A4 · 6-8 oraciones) del BUENAVENTURA EXPRESS."
+            },
+            "formato": {
+              "en": "Physical A4 or PDF, after peer review.",
+              "es": "Físico A4 o PDF, tras peer review."
+            },
+            "criterio_minimo": {
+              "en": "6-8 sentences · 5 ship parts · be + imperative + IN + a/an visible · 5 criteria × 1 pt.",
+              "es": "6-8 oraciones · 5 ship parts · be + imp + IN + a/an · 5 criterios × 1 pt."
             }
           },
-          "entregable_evidencia": {
-            "header": "EVIDENCIA E2 — Inspection Report",
-            "producto_a_entregar": "Inspection Report 1 página A4 escrito a mano o digital (6-8 oraciones simples · uso de be + imperativo + IN + 5 ship parts)",
-            "formato": "Físico A4 / PDF",
-            "extension_minimo": "6-8 oraciones · 5 criterios × 1pt = 5 pts (Lista de Verificación No 2)",
-            "entrega": "Instructor en clase tras peer review"
+          "materiales": [
+            "Inspection Report template",
+            "Peer review checklist 5 ítems",
+            "Lista de Verificación No 2 instructor"
+          ],
+          "evidencia": {
+            "codigo": "E2",
+            "nombre": "Inspection Report — Lista de Verificación No 2",
+            "tipo_sena": "Producto",
+            "tecnica_evaluacion": "Verificación del producto",
+            "instrumento": "Lista de Verificación No 2 (PM-4.1)"
           },
           "activity_footer": {
             "ambiente": "Aula + mesas para escritura individual + parejas para peer review + Word Wall completo",
             "estrategia": "ABT — Escritura modelada genre-based + peer review",
             "tecnica": "Writing frame + peer review checklist + recasting",
-            "duracion_horas": 3.0,
-            "materiales": [
-              "Inspection Report template",
-              "Peer review checklist 5 ítems",
-              "Lista de Verificación No 2 instructor"
-            ],
-            "material_apoyo": "3 samples Inspection Report modelo + Grammar Reference Cards"
+            "materiales": "Inspection Report template · Peer review checklist 5 ítems · Lista de Verificación No 2 instructor",
+            "material_apoyo": "3 samples Inspection Report modelo + Grammar Reference Cards",
+            "duracion_horas": "3.0 horas"
           }
         },
         {
           "actividad_id": "A3.3.S5.1",
+          "schema_version": "v2.7",
           "titulo_en": "SMCP Reference Card Activation — Roger · Wilco · Standby · Over · Out",
           "titulo_es": "Activación SMCP Reference Card",
           "tipo_actividad_sena": "Actividad cognitiva + procedimental",
-          "etiquetas_dimension": "[COGNITIVA] [PROCEDIMENTAL]",
+          "actividad_tipo_label": "Actividad cognitiva + procedimental",
           "tiempo_min": 90,
           "agrupacion": "plenaria + parejas",
           "voc_dimension": [
@@ -1213,8 +1379,15 @@
             "procedimental"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[COGNITIVA] [PROCEDIMENTAL] Receive your SMCP Reference Card laminated (yours forever). Read the 10 standard phrases. Drill choral 3x. Practice NATO Phonetic Alphabet by spelling your full name and city.",
-          "instruccion_supervivencia_es": "(Recibe la SMCP Reference Card. Lee 10 frases. Drill coral. Deletrea tu nombre + ciudad en alfabeto OTAN.)",
+          "enunciado_voc": {
+            "en": "Activate the laminated SMCP Reference Card with ten standard phrases and spell your full name plus city using NATO Phonetic Alphabet aloud",
+            "es": "Activar la SMCP Reference Card laminada con diez frases estándar y deletrear tu nombre completo y ciudad en alfabeto OTAN en voz alta",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will receive a laminated SMCP Reference Card — yours forever — with ten standard phrases (Roger, Wilco, Affirmative, Negative, Standby, Out, Over, Say again, Spell that, Repeat). You read them aloud with the instructor, choral-drill each three times, then spell your full name and your city using the NATO Phonetic Alphabet (Alpha, Bravo, Charlie...). In pairs, you spell your partner's name back to them. It matters because every VHF call you make for the rest of your career uses these phrases and this alphabet. By the end, the card lives in your pocket, and the spelling lives in your mouth.",
+            "es": "Recibes la SMCP Reference Card laminada — tuya para siempre — con 10 frases estándar. Lees, drill coral 3x, deletreas tu nombre y ciudad en alfabeto OTAN. En pareja, deletreas el nombre del compañero. Todas tus llamadas VHF de carrera usan estas frases y este alfabeto. La tarjeta queda en tu bolsillo; el deletreo en tu boca."
+          },
           "paso_a_paso": [
             {
               "en": "Receive SMCP Reference Card laminated (keep forever).",
@@ -1304,34 +1477,43 @@
               "es": "Nombre correctamente deletreado."
             }
           },
+          "materiales": [
+            "SMCP Reference Cards laminadas × 25",
+            "NATO Phonetic Reference Cards laminadas × 25",
+            "Smartphones para grabar"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula + 25 SMCP Reference Cards laminadas + 25 NATO Phonetic Reference Cards laminadas",
             "estrategia": "ABT — Drilling SMCP + NATO Phonetic Alphabet",
             "tecnica": "Choral drill + finger drilling + NATO spelling individual",
-            "duracion_horas": 1.5,
-            "materiales": [
-              "SMCP Reference Cards laminadas × 25",
-              "NATO Phonetic Reference Cards laminadas × 25",
-              "Smartphones para grabar"
-            ],
-            "material_apoyo": "Maritime Word Wall actualizado"
+            "materiales": "SMCP Reference Cards laminadas × 25 · NATO Phonetic Reference Cards laminadas × 25 · Smartphones para grabar",
+            "material_apoyo": "Maritime Word Wall actualizado",
+            "duracion_horas": "1.5 horas"
           }
         },
         {
           "actividad_id": "A3.3.S5.2",
+          "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E3 · Listening — VHF Dialogue Captain Lopera ↔ Andrea (Lista de Chequeo No 3)",
           "titulo_es": "EVIDENCIA E3 · Diálogo VHF — Lista de Chequeo No 3",
           "tipo_actividad_sena": "Actividad cognitiva (evidencia formal)",
-          "etiquetas_dimension": "[COGNITIVA]",
+          "actividad_tipo_label": "Actividad cognitiva (evidencia formal)",
           "tiempo_min": 90,
           "agrupacion": "individual",
           "voc_dimension": [
             "cognitiva"
           ],
           "produce_evidencia": true,
-          "evidencia_codigo": "E3",
-          "instruccion_2pers_en": "[COGNITIVA] Listen to the 90-second VHF dialogue between Captain Lopera and Andrea (Appendix B audio script inline). Audio plays 2 times with simulated interference. Complete the 5-item observation checklist.",
-          "instruccion_supervivencia_es": "(Escucha el diálogo VHF 90s 2 veces. Completa la checklist de 5 ítems.)",
+          "enunciado_voc": {
+            "en": "Listen to the ninety-second VHF dialogue with simulated interference and complete five observation checklist items individually for formal evidence",
+            "es": "Escuchar el diálogo VHF de noventa segundos con interferencia simulada y completar cinco ítems de la lista de chequeo individualmente como evidencia formal",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will produce your third formal evidence — Evidence E3 Listening. You sit individually, phones away. The instructor plays a 90-second VHF dialogue between Captain Lopera and Andrea, twice, with simulated static. You catch the gist on the first listening, then on the second you mark Yes/No on five observation items: call sign in NATO Phonetic, main SMCP message (vessel inbound), VHF Channel 16, Captain Lopera's request, Andrea's response. It matters because Lista de Chequeo No 3 (PM-4.1) is the instrument. By the end, you submit five marks; minimum four out of five for a satisfactory.",
+            "es": "Produces tu tercera evidencia — E3 Listening. Individual, sin móvil. El instructor reproduce 90s de VHF Lopera/Andrea con estática simulada, dos veces. Primera para gist; segunda para marcar Y/N en 5 ítems: call sign · SMCP · Channel 16 · solicitud de Lopera · respuesta de Andrea. Lista de Chequeo No 3 (PM-4.1). Mínimo 4/5."
+          },
           "paso_a_paso": [
             {
               "en": "Sit individually. Phones away.",
@@ -1358,7 +1540,6 @@
             "tipo": "listening_capture",
             "titulo_en": "E3 Listening Checklist · 5 items × 1 pt = 5 pts",
             "titulo_es": "E3 Listening · 5 ítems × 1 pt = 5 pts",
-            "badge": "instrument_3_listening",
             "estructura": {
               "secciones": [
                 {
@@ -1392,46 +1573,69 @@
                   "lineas": 1
                 }
               ]
+            },
+            "badge": "instrument_3_listening"
+          },
+          "entregable": {
+            "producto": {
+              "en": "Lista de Chequeo No 3 with 5 Yes/No items completed.",
+              "es": "Lista de Chequeo No 3 con 5 ítems Y/N completados."
+            },
+            "formato": {
+              "en": "Printed checklist · physical-observable.",
+              "es": "Checklist físico-observable."
+            },
+            "criterio_minimo": {
+              "en": "5 items marked; minimum 4/5 Yes for satisfactory.",
+              "es": "5 ítems marcados; mínimo 4/5 Sí para satisfactorio."
             }
           },
-          "entregable_evidencia": {
-            "header": "EVIDENCIA E3 — Listening: VHF Dialogue",
-            "producto_a_entregar": "Lista de Chequeo No 3 con 5 ítems Sí/No completados (5 pts)",
-            "formato": "Físico-observable / PDF",
-            "extension_minimo": "5 ítems · mínimo aprobación 4/5 Sí",
-            "entrega": "Instructor en clase tras 2 escuchas"
-          },
-          "apendices_referenciados": [
-            "apendice_b_vhf_dialogue_lopera_andrea"
+          "materiales": [
+            "Audio VHF dialogue 90s",
+            "Lista de Chequeo No 3 × aprendiz",
+            "Parlante + cable estática"
           ],
+          "evidencia": {
+            "codigo": "E3",
+            "nombre": "VHF Listening Dialogue — Lista de Chequeo No 3",
+            "tipo_sena": "Desempeño",
+            "tecnica_evaluacion": "Observación",
+            "instrumento": "Lista de Chequeo No 3 (PM-4.1)"
+          },
           "activity_footer": {
             "ambiente": "Aula + mesas individuales + parlante con interferencia simulada (estática)",
             "estrategia": "Evaluación Formativa de Desempeño",
             "tecnica": "Observación directa — Lista de Chequeo No 3 (PM-4.1)",
-            "duracion_horas": 1.5,
-            "materiales": [
-              "Audio VHF dialogue 90s",
-              "Lista de Chequeo No 3 × aprendiz",
-              "Parlante + cable estática"
-            ],
-            "material_apoyo": "SMCP Reference Card + NATO Phonetic Reference Card (permanentes)"
-          }
+            "materiales": "Audio VHF dialogue 90s · Lista de Chequeo No 3 × aprendiz · Parlante + cable estática",
+            "material_apoyo": "SMCP Reference Card + NATO Phonetic Reference Card (permanentes)",
+            "duracion_horas": "1.5 horas"
+          },
+          "apendices_referenciados": [
+            "apendice_b_vhf_dialogue_lopera_andrea"
+          ]
         },
         {
           "actividad_id": "A3.3.S6.1",
+          "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E4 (parcial) · VHF Response Drill — Speaking with Captain Lopera",
           "titulo_es": "EVIDENCIA E4 (parcial) · Drill VHF — Habla con Captain Lopera",
           "tipo_actividad_sena": "Actividad procedimental (evidencia formal · segmento parcial)",
-          "etiquetas_dimension": "[PROCEDIMENTAL]",
+          "actividad_tipo_label": "Actividad procedimental (evidencia formal · segmento parcial)",
           "tiempo_min": 120,
           "agrupacion": "parejas",
           "voc_dimension": [
             "procedimental"
           ],
           "produce_evidencia": true,
-          "evidencia_codigo": "E4_partial",
-          "instruccion_2pers_en": "[PROCEDIMENTAL] Pair up. One plays Captain Lopera (lingua franca B1), the other plays Andrea (you). Run a 2-minute VHF Response Simulation: confirm 5 SMCP messages + spell 1 call sign in NATO Phonetic. Swap roles after.",
-          "instruccion_supervivencia_es": "(En parejas, simula 2 min: confirma 5 mensajes SMCP + deletrea 1 call sign. Cambien roles.)",
+          "enunciado_voc": {
+            "en": "Run a two-minute VHF Response Simulation in pairs confirming five SMCP messages and spelling one call sign in NATO Phonetic with role swap",
+            "es": "Ejecutar una simulación VHF de dos minutos en parejas confirmando cinco mensajes SMCP y deletreando un call sign en OTAN con cambio de roles",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will produce a partial segment of Evidence E4 Speaking. You pair up: one of you plays Captain Lopera with his lingua franca B1 accent, the other plays Andrea answering at Buenaventura Port. Two minutes: confirm five SMCP messages (Roger, Wilco, Standby, Over, Out) and spell one call sign (Papa-Whiskey-Two-Three) in NATO Phonetic. The instructor observes with Escala de Estimación No 4 partial. Then you swap. It matters because this segment plus the S8 Berthing Tripartite consolidate your full E4 score. By the end, your voice has carried five SMCP responses on a real walkie-talkie.",
+            "es": "Produces el segmento parcial de E4 Speaking. En pareja: uno es Captain Lopera (lingua franca B1), otro es Andrea. 2 min: confirma 5 SMCP y deletrea Papa-Whiskey-Two-Three. Instructor observa Escala No 4 parcial. Cambian roles. Este segmento + Berthing S8 consolidan tu E4. Tu voz ya pasó 5 SMCP por walkie-talkie real."
+          },
           "paso_a_paso": [
             {
               "en": "Take turns playing Andrea + Captain Lopera.",
@@ -1458,7 +1662,6 @@
             "tipo": "speaking_script",
             "titulo_en": "VHF Response · 2 min × 5 SMCP confirmations",
             "titulo_es": "VHF Response · 2 min × 5 confirmaciones",
-            "badge": "instrument_4_speaking",
             "estructura": {
               "turnos": [
                 {
@@ -1487,35 +1690,52 @@
                   "linea_es": "(Deletrea)"
                 }
               ]
+            },
+            "badge": "instrument_4_speaking"
+          },
+          "entregable": {
+            "producto": {
+              "en": "2-minute VHF audio recording (5 SMCP confirmations + 1 NATO call sign).",
+              "es": "Audio VHF de 2 min (5 SMCP + 1 call sign OTAN)."
+            },
+            "formato": {
+              "en": "Audio + instructor partial observation (Escala No 4 partial).",
+              "es": "Audio + observación parcial del instructor (Escala No 4 parcial)."
+            },
+            "criterio_minimo": {
+              "en": "2 min within time · 5 SMCP messages confirmed · 1 call sign spelled.",
+              "es": "2 min en tiempo · 5 SMCP confirmados · 1 call sign deletreado."
             }
           },
-          "entregable_evidencia": {
-            "header": "EVIDENCIA E4 (segmento parcial) — VHF Speaking",
-            "producto_a_entregar": "Audio grabado de simulación 2 min · contribuye al puntaje de E4 final (consolidado en S8 Berthing)",
-            "formato": "Audio + observación instructor (Escala de Estimación No 4 parcial)",
-            "extension_minimo": "2 min · 5 SMCP messages + 1 call sign deletreado",
-            "entrega": "Instructor en clase + audio personal portafolio"
+          "materiales": [
+            "Walkie-talkies × 6 (3 pares simultáneos)",
+            "SMCP Reference Card",
+            "NATO Phonetic Reference Card",
+            "Cronómetro"
+          ],
+          "evidencia": {
+            "codigo": "E4",
+            "nombre": "VHF Speaking — Lista de Chequeo No 4 (segmento parcial)",
+            "tipo_sena": "Desempeño",
+            "tecnica_evaluacion": "Observación",
+            "instrumento": "Lista de Chequeo No 4 (PM-4.1) [parcial]"
           },
           "activity_footer": {
             "ambiente": "Aula + 2 estaciones VHF simuladas (walkie-talkies o app móvil) + barrera visual instructor/aprendiz",
             "estrategia": "ABT + Simulación VHF",
             "tecnica": "Pair role-play VHF + observación parcial Escala No 4",
-            "duracion_horas": 2.0,
-            "materiales": [
-              "Walkie-talkies × 6 (3 pares simultáneos)",
-              "SMCP Reference Card",
-              "NATO Phonetic Reference Card",
-              "Cronómetro"
-            ],
-            "material_apoyo": "Audio VHF dialogue de S5 como modelo"
+            "materiales": "Walkie-talkies × 6 (3 pares simultáneos) · SMCP Reference Card · NATO Phonetic Reference Card · Cronómetro",
+            "material_apoyo": "Audio VHF dialogue de S5 como modelo",
+            "duracion_horas": "2.0 horas"
           }
         },
         {
           "actividad_id": "A3.3.S7.1",
+          "schema_version": "v2.7",
           "titulo_en": "Listening Tripartite — Yard + Bridge + Customs simultaneously",
           "titulo_es": "Listening tripartito — Yard + Bridge + Customs simultáneo",
           "tipo_actividad_sena": "Actividad cognitiva + procedimental",
-          "etiquetas_dimension": "[COGNITIVA] [PROCEDIMENTAL]",
+          "actividad_tipo_label": "Actividad cognitiva + procedimental",
           "tiempo_min": 120,
           "agrupacion": "individual + plenaria",
           "voc_dimension": [
@@ -1523,8 +1743,15 @@
             "procedimental"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[COGNITIVA] [PROCEDIMENTAL] Listen to a 3-minute tripartite audio (yard + bridge + customs simultaneously). Complete a Radio Log with 5 entries: timestamp · channel · summary · decision · action by · status.",
-          "instruccion_supervivencia_es": "(Escucha audio tripartito 3 min. Completa Radio Log con 5 entradas.)",
+          "enunciado_voc": {
+            "en": "Listen to a three-minute tripartite audio with simultaneous yard bridge and customs sources and complete a Radio Log of five entries with six fields each",
+            "es": "Escuchar un audio tripartito de tres minutos con yard bridge y customs simultáneos y completar un Radio Log de cinco entradas con seis campos cada una",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will train your ear for the chaos of real port communication. Three speakers play at the same time from three speakers in the room — yard left, bridge center, customs right. You listen first for gist, then a second time you capture five messages in your Radio Log: timestamp, channel, summary, decision, action by, status. The instructor consolidates in plenary. It matters because no real port has only one channel speaking at a time — multitasking listening is a survival skill. By the end, you have a five-entry Radio Log of overlapping messages.",
+            "es": "Entrenas tu oído para el caos del puerto real. Tres parlantes simultáneos: yard izq · bridge centro · customs der. Primera escucha gist; segunda capturas 5 mensajes en Radio Log con 6 campos. Plenaria. Ningún puerto real escucha un canal a la vez — el listening múltiple es supervivencia. Tienes Radio Log de 5 entradas de mensajes solapados."
+          },
           "paso_a_paso": [
             {
               "en": "Listen first time for gist.",
@@ -1596,25 +1823,28 @@
               "es": "5 entradas × 6 campos."
             }
           },
+          "materiales": [
+            "Audio tripartito 3 min",
+            "Radio Log template × aprendiz",
+            "3 parlantes Bluetooth"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula + 3 parlantes posicionados (yard izq · bridge centro · customs der)",
             "estrategia": "ABT — Listening tripartito andamiado",
             "tecnica": "Listening with simultaneous audio sources + Radio Log capture",
-            "duracion_horas": 2.0,
-            "materiales": [
-              "Audio tripartito 3 min",
-              "Radio Log template × aprendiz",
-              "3 parlantes Bluetooth"
-            ],
-            "material_apoyo": "Word Wall + SMCP Reference"
+            "materiales": "Audio tripartito 3 min · Radio Log template × aprendiz · 3 parlantes Bluetooth",
+            "material_apoyo": "Word Wall + SMCP Reference",
+            "duracion_horas": "2.0 horas"
           }
         },
         {
           "actividad_id": "A3.3.S8.1",
+          "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E4 (final) · Berthing Coordination Tripartite — Diego + Bosun Romero + Captain Lopera",
           "titulo_es": "EVIDENCIA E4 (final) · Coordinación Berthing tripartita",
           "tipo_actividad_sena": "Actividad procedimental (evidencia formal · final)",
-          "etiquetas_dimension": "[PROCEDIMENTAL] [ACTITUDINAL]",
+          "actividad_tipo_label": "Actividad procedimental (evidencia formal · final)",
           "tiempo_min": 180,
           "agrupacion": "individual ante 3 actores",
           "voc_dimension": [
@@ -1622,9 +1852,15 @@
             "actitudinal"
           ],
           "produce_evidencia": true,
-          "evidencia_codigo": "E4",
-          "instruccion_2pers_en": "[PROCEDIMENTAL] [ACTITUDINAL] You coordinate 3 actors simultaneously for 3 minutes: Diego (crane · Spanish L1) + Bosun Romero (yard · Spanish L1) + Captain Lopera (VHF · lingua franca B1). Use modals (should/could/might) + conditional 1 + present perfect + passive voice. Demonstrate operational leadership.",
-          "instruccion_supervivencia_es": "(Coordina 3 actores 3 min. Usa modales + condicional + presente perfecto + voz pasiva. Lidera la operación.)",
+          "enunciado_voc": {
+            "en": "Coordinate three actors simultaneously for three minutes using modals plus conditional one plus present perfect plus passive voice as the final segment of formal Speaking evidence",
+            "es": "Coordinar tres actores simultáneos durante tres minutos usando modales más condicional uno más presente perfecto más voz pasiva como segmento final de la evidencia formal de Speaking",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will close Evidence E4 Speaking with the Berthing Coordination Tripartite. You stand at the bridge station with VHF and clipboard. For three minutes you coordinate Diego (crane, Spanish L1) plus Bosun Romero (yard, Spanish L1) plus Captain Lopera (VHF, lingua franca B1) — all at once. Five grammatical structures must be visible: should/could/might modals, conditional 1, present perfect, passive voice present. The instructor observes with Escala de Estimación No 4 final. It matters because this is operational leadership in English. By the end, you have led a three-minute tripartite operation; minimum four out of five criteria for a satisfactory.",
+            "es": "Cierras E4 Speaking con la Berthing Tripartite. En la bridge station con VHF y clipboard, coordinas 3 min a Diego (yard L1 ES) + Bosun Romero (yard L1 ES) + Captain Lopera (VHF B1) simultáneamente. 5 estructuras visibles: modales · condicional 1 · presente perfecto · pasiva. Instructor observa Escala No 4 final. Liderazgo operacional en inglés. Mínimo 4/5."
+          },
           "paso_a_paso": [
             {
               "en": "Stand at the bridge station with VHF + clipboard.",
@@ -1655,7 +1891,6 @@
             "tipo": "speaking_script",
             "titulo_en": "Berthing Tripartite · 3 min coordination",
             "titulo_es": "Berthing tripartita · 3 min",
-            "badge": "instrument_4_speaking",
             "estructura": {
               "turnos": [
                 {
@@ -1684,35 +1919,52 @@
                   "linea_es": "(Andrea a Diego)"
                 }
               ]
+            },
+            "badge": "instrument_4_speaking"
+          },
+          "entregable": {
+            "producto": {
+              "en": "3-minute audio/video of tripartite coordination demonstrating 5 grammatical structures A2.0.",
+              "es": "Audio/video de 3 min de coordinación tripartita con 5 estructuras A2.0."
+            },
+            "formato": {
+              "en": "Audio/video + instructor observation (Escala No 4 final).",
+              "es": "Audio/video + observación instructor (Escala No 4 final)."
+            },
+            "criterio_minimo": {
+              "en": "3 min · 5 criteria × 1 pt; minimum 4/5 for satisfactory.",
+              "es": "3 min · 5 criterios × 1 pt; mínimo 4/5 para satisfactorio."
             }
           },
-          "entregable_evidencia": {
-            "header": "EVIDENCIA E4 — Speaking: Berthing Coordination Tripartite",
-            "producto_a_entregar": "Audio/video grabado de coordinación 3 min · 5 estructuras gramaticales A2.0 demostradas",
-            "formato": "Audio/video + observación instructor (Escala de Estimación No 4 final)",
-            "extension_minimo": "3 min · 5 criterios × 1 pt = 5 pts",
-            "entrega": "Instructor en clase + audio personal portafolio"
+          "materiales": [
+            "Walkie-talkies × 3",
+            "Cascos × 2 (Diego + Bosun)",
+            "Cronómetro",
+            "Escala No 4 instructor"
+          ],
+          "evidencia": {
+            "codigo": "E4",
+            "nombre": "Berthing Coordination Tripartite Speaking — Lista de Chequeo No 4 (final)",
+            "tipo_sena": "Desempeño",
+            "tecnica_evaluacion": "Observación",
+            "instrumento": "Lista de Chequeo No 4 (PM-4.1)"
           },
           "activity_footer": {
             "ambiente": "Aula transformada en 3 zonas: bridge centro · yard izq · VHF station der + cronómetro",
             "estrategia": "ABT + Simulación tripartita",
             "tecnica": "Role-play tripartito + observación Escala No 4 final",
-            "duracion_horas": 3.0,
-            "materiales": [
-              "Walkie-talkies × 3",
-              "Cascos × 2 (Diego + Bosun)",
-              "Cronómetro",
-              "Escala No 4 instructor"
-            ],
-            "material_apoyo": "Word Wall completo + SMCP/NATO Reference Cards"
+            "materiales": "Walkie-talkies × 3 · Cascos × 2 (Diego + Bosun) · Cronómetro · Escala No 4 instructor",
+            "material_apoyo": "Word Wall completo + SMCP/NATO Reference Cards",
+            "duracion_horas": "3.0 horas"
           }
         },
         {
           "actividad_id": "A3.3.S9.1",
+          "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E5 · Role Carousel — 5 Master Functions of the Port Pro",
           "titulo_es": "EVIDENCIA E5 · Carrusel de roles — 5 funciones master",
           "tipo_actividad_sena": "Actividad procedimental (evidencia formal)",
-          "etiquetas_dimension": "[PROCEDIMENTAL] [ACTITUDINAL]",
+          "actividad_tipo_label": "Actividad procedimental (evidencia formal)",
           "tiempo_min": 180,
           "agrupacion": "5 estaciones rotativas",
           "voc_dimension": [
@@ -1720,9 +1972,15 @@
             "actitudinal"
           ],
           "produce_evidencia": true,
-          "evidencia_codigo": "E5",
-          "instruccion_2pers_en": "[PROCEDIMENTAL] [ACTITUDINAL] Rotate through 5 stations × 90 seconds: (1) Information Exchange · (2) SMCP Literacy · (3) Coordinating Tripartite · (4) Modals · (5) Describing & Justifying. Use 4+ connectors (and · but · or · because · so · although) across stations.",
-          "instruccion_supervivencia_es": "(Rota 5 estaciones × 90s. Usa 4+ conectores.)",
+          "enunciado_voc": {
+            "en": "Rotate through five language function stations of ninety seconds each using four or more connectors across all stations as formal Language Functions evidence",
+            "es": "Rotar por cinco estaciones de funciones de lenguaje de noventa segundos cada una usando cuatro o más conectores como evidencia formal de Language Functions",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will produce Evidence E5 — five master functions of the Port Pro on a 90-second carousel. You rotate through five stations: Information Exchange (use AND), SMCP Literacy (use BUT), Coordinating Tripartite (use BECAUSE), Modals (use SO), Describing & Justifying (use ALTHOUGH). At each station you read the role card, execute the function in 90 seconds with the connector, self-mark, and move to the next at the bell. It matters because real port communication is not one act but a chain of functions. By the end, you have demonstrated five language functions; minimum four out of five connectors used for satisfactory.",
+            "es": "Produces E5 — cinco funciones master en carrusel de 90s. Rotas por: Information Exchange (AND) · SMCP Literacy (BUT) · Coordinating Tripartite (BECAUSE) · Modals (SO) · Describing & Justifying (ALTHOUGH). Lees role card, ejecutas con conector, auto-marcas, avanzas al timbre. La comunicación real es cadena de funciones. Mínimo 4/5 conectores."
+          },
           "paso_a_paso": [
             {
               "en": "Read your role card at each station.",
@@ -1749,7 +2007,6 @@
             "tipo": "speaking_script",
             "titulo_en": "Role Carousel · 5 stations × 90s",
             "titulo_es": "Carrusel · 5 estaciones",
-            "badge": "instrument_5_language_functions",
             "estructura": {
               "turnos": [
                 {
@@ -1778,27 +2035,43 @@
                   "linea_es": "(Describe AUNQUE)"
                 }
               ]
+            },
+            "badge": "instrument_5_language_functions"
+          },
+          "entregable": {
+            "producto": {
+              "en": "Performance across 5 stations · audio recording · 4+ connectors used.",
+              "es": "Performance en 5 estaciones · audio · 4+ conectores."
+            },
+            "formato": {
+              "en": "Audio + instructor observation (Lista de Chequeo No 5).",
+              "es": "Audio + observación instructor (Lista de Chequeo No 5)."
+            },
+            "criterio_minimo": {
+              "en": "5 functions executed · minimum 4/5 connectors used.",
+              "es": "5 funciones ejecutadas · mínimo 4/5 conectores."
             }
           },
-          "entregable_evidencia": {
-            "header": "EVIDENCIA E5 — Language Functions: Role Carousel",
-            "producto_a_entregar": "Performance en 5 estaciones · audio grabado · 5 criterios × 1 pt = 5 pts",
-            "formato": "Audio + observación instructor (Escala de Estimación No 5)",
-            "extension_minimo": "5 funciones ejecutadas + 4+ conectores demostrados",
-            "entrega": "Instructor durante carrusel + audio personal portafolio"
+          "materiales": [
+            "5 role cards estación",
+            "5 connector cue cards",
+            "Cronómetro proyectable",
+            "Escala No 5 instructor"
+          ],
+          "evidencia": {
+            "codigo": "E5",
+            "nombre": "Role Carousel Language Functions — Lista de Chequeo No 5",
+            "tipo_sena": "Desempeño",
+            "tecnica_evaluacion": "Observación",
+            "instrumento": "Lista de Chequeo No 5 (PM-4.1)"
           },
           "activity_footer": {
             "ambiente": "Aula configurada con 5 estaciones rotativas + cronómetro proyectable + Word Wall completo",
             "estrategia": "Simulación rotativa — Role Carousel 5 funciones",
             "tecnica": "Carrusel de roles + observación Escala No 5",
-            "duracion_horas": 3.0,
-            "materiales": [
-              "5 role cards estación",
-              "5 connector cue cards",
-              "Cronómetro proyectable",
-              "Escala No 5 instructor"
-            ],
-            "material_apoyo": "Maritime Word Wall + SMCP/NATO Reference Cards permanentes"
+            "materiales": "5 role cards estación · 5 connector cue cards · Cronómetro proyectable · Escala No 5 instructor",
+            "material_apoyo": "Maritime Word Wall + SMCP/NATO Reference Cards permanentes",
+            "duracion_horas": "3.0 horas"
           }
         }
       ]
@@ -1810,10 +2083,11 @@
       "actividades": [
         {
           "actividad_id": "A3.3b.1",
+          "schema_version": "v2.7",
           "titulo_en": "Portfolio Review — Your 5 evidences so far",
           "titulo_es": "Revisión portafolio — Tus 5 evidencias",
           "tipo_actividad_sena": "Actividad cognitiva + actitudinal",
-          "etiquetas_dimension": "[COGNITIVA] [ACTITUDINAL]",
+          "actividad_tipo_label": "Actividad cognitiva + actitudinal",
           "tiempo_min": 60,
           "agrupacion": "individual",
           "voc_dimension": [
@@ -1821,8 +2095,15 @@
             "actitudinal"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[COGNITIVA] [ACTITUDINAL] Review your portfolio with your 5 evidences (E1 Reading + E2 Writing + E3 Listening + E4 Speaking + E5 Language Functions). Mark each one with self-rating: ✓ strong · ~ acceptable · ? needs revision.",
-          "instruccion_supervivencia_es": "(Revisa tus 5 evidencias. Marca cada una.)",
+          "enunciado_voc": {
+            "en": "Self-rate your five evidences in the portfolio with a three-level scale and note one specific improvement before the Final Mission begins",
+            "es": "Auto-calificar tus cinco evidencias del portafolio con escala de tres niveles y anotar una mejora específica antes de la Misión Final",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will look back at your portfolio with honest eyes. Five evidences sit in your binder: E1 Reading Quiz, E2 Inspection Report, E3 VHF Listening, E4 Berthing Tripartite, E5 Role Carousel. You re-read each and self-rate: a check for strong, a tilde for acceptable, a question mark for needs revision. Then you note one specific thing to improve before the Final Mission. It matters because metacognition is what separates a learner from a professional — knowing where you stand is half of getting better. By the end, you have a 5-rating self-portrait of your readiness for the CML CARRIER.",
+            "es": "Miras tu portafolio con ojos honestos. 5 evidencias: E1 Reading · E2 Writing · E3 Listening · E4 Speaking · E5 Functions. Re-lees y auto-calificas (✓ ~ ?) y anotas una mejora específica antes de la Misión Final. La metacognición separa al aprendiz del profesional — saber dónde estás es la mitad del avance. Tienes un autorretrato de 5 ratings de tu preparación."
+          },
           "paso_a_paso": [
             {
               "en": "Open your portfolio binder.",
@@ -1889,32 +2170,41 @@
               "es": "5/5 marcadas."
             }
           },
+          "materiales": [
+            "Portafolio aprendiz × 25"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula + portafolios físicos + mesas individuales",
             "estrategia": "Evaluación reflexiva pre-Cuestionario",
             "tecnica": "Self-rating + portfolio review",
-            "duracion_horas": 1.0,
-            "materiales": [
-              "Portafolio aprendiz × 25"
-            ],
-            "material_apoyo": "no aplica"
+            "materiales": "Portafolio aprendiz × 25",
+            "material_apoyo": "no aplica",
+            "duracion_horas": "1.0 horas"
           }
         },
         {
           "actividad_id": "A3.3b.2",
+          "schema_version": "v2.7",
           "titulo_en": "EVIDENCE E6 · Maritime Operations Consolidated Quiz — 25 items",
           "titulo_es": "EVIDENCIA E6 · Cuestionario Consolidado — 25 ítems",
           "tipo_actividad_sena": "Actividad cognitiva (evidencia formal sumativa)",
-          "etiquetas_dimension": "[COGNITIVA]",
+          "actividad_tipo_label": "Actividad cognitiva (evidencia formal sumativa)",
           "tiempo_min": 180,
           "agrupacion": "individual",
           "voc_dimension": [
             "cognitiva"
           ],
           "produce_evidencia": true,
-          "evidencia_codigo": "E6",
-          "instruccion_2pers_en": "[COGNITIVA] Solve the consolidated 25-item quiz: 5 Reading + 5 Writing + 5 Listening + 5 Vocabulary + 5 Grammar. 25 minutes total. No notes.",
-          "instruccion_supervivencia_es": "(Resuelve el Cuestionario Consolidado de 25 ítems. 25 min.)",
+          "enunciado_voc": {
+            "en": "Solve the twenty-five-item consolidated maritime quiz across five sections individually under exam conditions for the integrative formal evidence",
+            "es": "Resolver el cuestionario consolidado marítimo de veinticinco ítems en cinco secciones individualmente en condiciones de examen para la evidencia formal integradora",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will produce Evidence E6 — the integrative cognitive check that closes the Apropiación phase. Twenty-five items wait, organized in five sections of five: Reading (new maritime context), Writing (sentence construction), Listening (new SMCP audio), Vocabulary (Toolbelt 20 in new contexts), Grammar (modals, conditional, tag questions). Phones away, no notes, individual seating. Each item is one point; minimum eighteen out of twenty-five for a satisfactory. It matters because Cuestionario Consolidado No 6 (PM-4.2) is the door to the Final Mission. By the end, the Apropiación phase is formally closed.",
+            "es": "Produces E6 — el cierre cognitivo integrador. 25 ítems en 5 secciones: Reading · Writing · Listening · Vocabulary · Grammar. Sin móvil, sin notas, individual. Cada ítem 1 pt; mínimo 18/25 para satisfactorio. Cuestionario Consolidado No 6 (PM-4.2) es la puerta a la Misión Final. La Apropiación queda formalmente cerrada."
+          },
           "paso_a_paso": [
             {
               "en": "Sit individually. Phones away.",
@@ -1937,7 +2227,6 @@
             "tipo": "quiz_preview",
             "titulo_en": "E6 Consolidated · 5 sections × 5 items × 1 pt = 25 pts",
             "titulo_es": "E6 Consolidado · 5 secciones × 5 ítems × 1 pt = 25 pts",
-            "badge": "pm_4_2_consolidado",
             "estructura": {
               "items": [
                 {
@@ -1966,34 +2255,51 @@
                   "pregunta_es": "Grammar 5 ítems"
                 }
               ]
+            },
+            "badge": "pm_4_2_consolidado"
+          },
+          "entregable": {
+            "producto": {
+              "en": "Completed 25-item consolidated quiz (5 sections × 5 items × 1 pt).",
+              "es": "Cuestionario Consolidado de 25 ítems (5 secciones × 5 ítems × 1 pt)."
+            },
+            "formato": {
+              "en": "Printed quiz physical-observable.",
+              "es": "Cuestionario impreso físico-observable."
+            },
+            "criterio_minimo": {
+              "en": "25 items answered · minimum 18/25 for satisfactory.",
+              "es": "25 ítems respondidos · mínimo 18/25 para satisfactorio."
             }
           },
-          "entregable_evidencia": {
-            "header": "EVIDENCIA E6 — Cuestionario Consolidado S6 (25 pts)",
-            "producto_a_entregar": "Cuestionario impreso resuelto · 25 ítems × 1 pt",
-            "formato": "Físico-observable / PDF",
-            "extension_minimo": "25 ítems · mínimo aprobación 18/25",
-            "entrega": "Instructor en clase al minuto 180"
+          "materiales": [
+            "Cuestionario Consolidado × 25",
+            "Bolígrafos azules",
+            "Cronómetro proyectable"
+          ],
+          "evidencia": {
+            "codigo": "E6",
+            "nombre": "Maritime Operations Consolidated Quiz S6 — 25 items",
+            "tipo_sena": "Conocimiento",
+            "tecnica_evaluacion": "Formulación de preguntas",
+            "instrumento": "Cuestionario Consolidado No 6 (PM-4.2)"
           },
           "activity_footer": {
             "ambiente": "Aula + mesas individuales separadas + Word Wall + Diagrama Ship Overview ocultos",
             "estrategia": "Evaluación Formativa Integrada (sumativa)",
             "tecnica": "Formulación de preguntas — Cuestionario Consolidado No 6 (PM-4.2)",
-            "duracion_horas": 3.0,
-            "materiales": [
-              "Cuestionario Consolidado × 25",
-              "Bolígrafos azules",
-              "Cronómetro proyectable"
-            ],
-            "material_apoyo": "Audio Listening Section 3"
+            "materiales": "Cuestionario Consolidado × 25 · Bolígrafos azules · Cronómetro proyectable",
+            "material_apoyo": "Audio Listening Section 3",
+            "duracion_horas": "3.0 horas"
           }
         },
         {
           "actividad_id": "A3.3b.3",
+          "schema_version": "v2.7",
           "titulo_en": "Final Mission Brief Reception — Capitán Restrepo delivers the CML CARRIER scenario",
           "titulo_es": "Recepción Brief Misión Final — Capitán Restrepo entrega CML CARRIER",
           "tipo_actividad_sena": "Actividad cognitiva + actitudinal",
-          "etiquetas_dimension": "[COGNITIVA] [ACTITUDINAL]",
+          "actividad_tipo_label": "Actividad cognitiva + actitudinal",
           "tiempo_min": 60,
           "agrupacion": "plenaria",
           "voc_dimension": [
@@ -2001,8 +2307,15 @@
             "actitudinal"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[COGNITIVA] [ACTITUDINAL] Receive the CML CARRIER Brief from Capitán Restrepo (Appendix C inline). Read silently. Mark in 3 colors: ✓ understood · ~ partial · ✗ unclear. Q&A in pairs with 8 guiding questions.",
-          "instruccion_supervivencia_es": "(Recibe Brief CML CARRIER. Lee. Marca en 3 colores. Q&A en parejas.)",
+          "enunciado_voc": {
+            "en": "Receive the CML CARRIER Mission Brief from Capitán Restrepo silently and answer eight guiding questions in pairs after color-marking comprehension",
+            "es": "Recibir el Brief CML CARRIER del Capitán Restrepo en silencio y responder ocho preguntas guía en pareja tras marcar comprensión por colores",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity Capitán Restrepo enters the room ceremonially and hands you the CML CARRIER Mission Brief. You read the two-page document silently for ten minutes and mark the text in three colors: green for understood, yellow for partial, red for unclear. Then in pairs you answer eight guiding questions: vessel name, origin, LOA, TEU, ETA/ETD, berth, tide window, vessel master. Plenary clarification follows. It matters because this is the moment your Final Mission becomes real — twelve hours of operations on paper. By the end, you understand exactly what the panel will ask of you in S11 and S12.",
+            "es": "Capitán Restrepo entra ceremonialmente y entrega el Brief CML CARRIER. Lees 10 min en silencio y marcas en 3 colores: verde · amarillo · rojo. En pareja respondes 8 preguntas guía: nombre · origen · LOA · TEU · ETA/ETD · berth · tide window · vessel master. Plenaria. La Misión Final se vuelve real — 12 horas de operaciones en papel. Sabes qué te pedirá el panel en S11 y S12."
+          },
           "paso_a_paso": [
             {
               "en": "Receive Brief CML CARRIER from Capitán Restrepo.",
@@ -2080,21 +2393,23 @@
               "es": "8/8."
             }
           },
-          "apendices_referenciados": [
-            "apendice_c_cml_carrier_mission_brief"
+          "materiales": [
+            "Brief CML CARRIER A4 × 25",
+            "Marcadores 3 colores",
+            "8 preguntas handout"
           ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula formal + Capitán Restrepo (instructor con uniforme/casco) + Brief impreso A4 ceremonial",
             "estrategia": "ABP — Apertura ceremonial Misión Final",
             "tecnica": "Reading comprehension + Q&A pares + plenaria",
-            "duracion_horas": 1.0,
-            "materiales": [
-              "Brief CML CARRIER A4 × 25",
-              "Marcadores 3 colores",
-              "8 preguntas handout"
-            ],
-            "material_apoyo": "CML CARRIER scenario poster A2"
-          }
+            "materiales": "Brief CML CARRIER A4 × 25 · Marcadores 3 colores · 8 preguntas handout",
+            "material_apoyo": "CML CARRIER scenario poster A2",
+            "duracion_horas": "1.0 horas"
+          },
+          "apendices_referenciados": [
+            "apendice_c_cml_carrier_mission_brief"
+          ]
         }
       ]
     },
@@ -2106,10 +2421,11 @@
       "actividades": [
         {
           "actividad_id": "A3.4.1",
+          "schema_version": "v2.7",
           "titulo_en": "PLAN — Read the Brief & define your Operational Plan",
           "titulo_es": "PLANEAR — Lee el Brief y define tu Plan Operacional",
           "tipo_actividad_sena": "Actividad cognitiva + procedimental",
-          "etiquetas_dimension": "[COGNITIVA] [PROCEDIMENTAL]",
+          "actividad_tipo_label": "Actividad cognitiva + procedimental",
           "tiempo_min": 60,
           "agrupacion": "individual + Q&A pares",
           "voc_dimension": [
@@ -2117,8 +2433,15 @@
             "procedimental"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[COGNITIVA] [PROCEDIMENTAL] Read your Brief CML CARRIER (Appendix C) once more. Complete the Operational Plan Canvas (Appendix D) with 4 quadrants: Vessel Particulars · Coordination Roles · Timeline 12h · Contingencies.",
-          "instruccion_supervivencia_es": "(Lee Brief. Completa Operational Plan Canvas con 4 cuadrantes.)",
+          "enunciado_voc": {
+            "en": "Complete the four-quadrant Operational Plan Canvas individually after re-reading the CML CARRIER Brief and cross-check coherence with a partner",
+            "es": "Completar el Operational Plan Canvas de cuatro cuadrantes individualmente tras re-leer el Brief CML CARRIER y cotejar coherencia con un compañero",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will turn the CML CARRIER Brief into a plan you can act on. You re-read the brief once more, then complete the Operational Plan Canvas (Appendix D) with four quadrants: Vessel Particulars (LOA, beam, TEU, ETA, ETD, berth), Coordination Roles (using the five occupational structures), Timeline 12h (six milestones from 06:00 to 19:00), and Contingencies (tide, weather, cargo delay). You pair Q&A to cross-check coherence. It matters because in a real port you do not improvise turn-arounds — you plan them. By the end, you have a four-quadrant canvas that becomes the skeleton of your Berthing Memo in S11.",
+            "es": "Conviertes el Brief en un plan accionable. Re-lees el Brief; completas el Operational Plan Canvas con 4 cuadrantes: Vessel Particulars · Coordination Roles · Timeline 12h · Contingencies. Q&A en pareja para cross-check. En puerto real no se improvisa — se planea. El canvas se vuelve el esqueleto de tu Memo en S11."
+          },
           "paso_a_paso": [
             {
               "en": "Re-read Brief CML CARRIER.",
@@ -2146,7 +2469,7 @@
             }
           ],
           "scaffold_inline": {
-            "tipo": "planning_template",
+            "tipo": "form",
             "titulo_en": "Operational Plan Canvas · 4 quadrants",
             "titulo_es": "Plan Operacional Canvas · 4 cuadrantes",
             "estructura": {
@@ -2188,38 +2511,48 @@
               "es": "4/4 con datos."
             }
           },
-          "apendices_referenciados": [
-            "apendice_c_cml_carrier_mission_brief",
-            "apendice_d_operational_plan_canvas"
+          "materiales": [
+            "Brief CML CARRIER A4",
+            "Marcadores verde/amarillo/rojo",
+            "Operational Plan Canvas A4",
+            "8 preguntas guía Q&A"
           ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula con mesas en U + LIVE ZONE para datos críticos del Brief proyectados + Maritime Word Wall completo + CML CARRIER scenario poster A2",
             "estrategia": "ABP · fase exploratoria",
             "tecnica": "Lectura comprensiva con marcado en 3 colores + Q&A guiado + plenaria recasting",
-            "duracion_horas": 1.0,
-            "materiales": [
-              "Brief CML CARRIER A4",
-              "Marcadores verde/amarillo/rojo",
-              "Operational Plan Canvas A4",
-              "8 preguntas guía Q&A"
-            ],
-            "material_apoyo": "CML CARRIER scenario poster A2 + Mapa Terminal Buenaventura A2"
-          }
+            "materiales": "Brief CML CARRIER A4 · Marcadores verde/amarillo/rojo · Operational Plan Canvas A4 · 8 preguntas guía Q&A",
+            "material_apoyo": "CML CARRIER scenario poster A2 + Mapa Terminal Buenaventura A2",
+            "duracion_horas": "1.0 horas"
+          },
+          "apendices_referenciados": [
+            "apendice_c_cml_carrier_mission_brief",
+            "apendice_d_operational_plan_canvas"
+          ]
         },
         {
           "actividad_id": "A3.4.2",
+          "schema_version": "v2.7",
           "titulo_en": "DESIGN — Berthing Coordination Memo + Radio Log production",
           "titulo_es": "DISEÑAR — Berthing Memo + Radio Log",
           "tipo_actividad_sena": "Actividad procedimental",
-          "etiquetas_dimension": "[PROCEDIMENTAL]",
+          "actividad_tipo_label": "Actividad procedimental",
           "tiempo_min": 180,
           "agrupacion": "individual + consulta peer libre",
           "voc_dimension": [
             "procedimental"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[PROCEDIMENTAL] Produce 2 written deliverables: (1) Berthing Coordination Memo (1 page · 4 sections) + (2) Radio Log (5 entries minimum · 6 columns). Use 5 occupational structures + present perfect + passive voice + 4+ connectors.",
-          "instruccion_supervivencia_es": "(Produce Memo + Radio Log. Usa 5 estructuras + perfecto + pasiva + 4 conectores.)",
+          "enunciado_voc": {
+            "en": "Produce two written deliverables Berthing Memo with four sections and Radio Log with five entries using five occupational structures plus present perfect plus passive plus four connectors",
+            "es": "Producir dos entregables escritos Berthing Memo con cuatro secciones y Radio Log con cinco entradas usando cinco estructuras ocupacionales más presente perfecto más pasiva más cuatro conectores",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will write the two pieces of your Mission Portfolio that the panel will read. The Berthing Coordination Memo (one A4 page, four sections: Vessel Particulars, Berthing Window, Coordination Roles with five occupational structures, Contingency Plan). The Radio Log (five minimum entries, six columns, timeline 06:00-19:00). You use the writing frame, draft, peer cross-check coherence Memo↔Log, and revise. Maximum two instructor consultations allowed. It matters because the panel will judge your written professionalism before they hear you speak. By the end, your Mission Portfolio has its written half ready.",
+            "es": "Escribes las dos piezas que el panel leerá del Mission Portfolio. Berthing Memo (1 A4 · 4 secciones · 5 estructuras ocupacionales · pasiva · perfecto). Radio Log (5 entradas · 6 columnas · timeline 06:00-19:00). Usas el frame, redactas, cross-check con peer Memo↔Log, revisas. Máx 2 consultas al instructor. El panel juzga tu profesionalismo escrito antes de escucharte hablar."
+          },
           "paso_a_paso": [
             {
               "en": "Use Berthing Memo template (4 sections).",
@@ -2293,27 +2626,30 @@
               "es": "4 + 5 · 5 estructuras."
             }
           },
+          "materiales": [
+            "Berthing Memo template 4 secciones A4",
+            "Radio Log template 5 filas extendido",
+            "Tag Questions Cheat Sheet (entrega ceremonial S11)",
+            "Occupational Structures Reference Card",
+            "Lapiceros · marcadores"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula-taller con mesas amplias + acceso a impresora + Maritime Word Wall + SMCP/NATO Reference Cards laminadas + Tag Questions Cheat Sheet + Occupational Structures Reference Card",
             "estrategia": "ABP · fase de diseño",
             "tecnica": "Escritura técnica genre-based + cross-check entre pares + recasting puntual del instructor (máx 2 consultas/aprendiz)",
-            "duracion_horas": 3.0,
-            "materiales": [
-              "Berthing Memo template 4 secciones A4",
-              "Radio Log template 5 filas extendido",
-              "Tag Questions Cheat Sheet (entrega ceremonial S11)",
-              "Occupational Structures Reference Card",
-              "Lapiceros · marcadores"
-            ],
-            "material_apoyo": "Maritime Word Wall completo (20 términos Toolbelt) + SMCP/NATO Reference Cards laminadas"
+            "materiales": "Berthing Memo template 4 secciones A4 · Radio Log template 5 filas extendido · Tag Questions Cheat Sheet (entrega ceremonial S11) · Occupational Structures Reference Card · Lapiceros · marcadores",
+            "material_apoyo": "Maritime Word Wall completo (20 términos Toolbelt) + SMCP/NATO Reference Cards laminadas",
+            "duracion_horas": "3.0 horas"
           }
         },
         {
           "actividad_id": "A3.4.3",
+          "schema_version": "v2.7",
           "titulo_en": "PERFORM — CML Port Turnaround 3h (VHF Intake + Berthing Tripartite + Post-Turn Report)",
           "titulo_es": "EJECUTAR — CML Port Turnaround 3h",
           "tipo_actividad_sena": "Actividad procedimental + actitudinal",
-          "etiquetas_dimension": "[PROCEDIMENTAL] [ACTITUDINAL]",
+          "actividad_tipo_label": "Actividad procedimental + actitudinal",
           "tiempo_min": 180,
           "agrupacion": "individual rotativo en 3 zonas",
           "voc_dimension": [
@@ -2321,8 +2657,15 @@
             "actitudinal"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[PROCEDIMENTAL] [ACTITUDINAL] Execute 3 timed turns: (1) VHF Intake with Captain Lopera 90s · SMCP + NATO Phonetic spelling of Papa-Whiskey-Two-Three. (2) Berthing Tripartite 2 min · coordinate Diego + Bosun Romero + Captain Lopera. (3) Post-Turn Report 90s to Capitán Restrepo · passive voice past + occupational structures + tag question.",
-          "instruccion_supervivencia_es": "(3 turnos cronometrados: VHF Intake 90s + Berthing 2 min + Post-Turn Report 90s.)",
+          "enunciado_voc": {
+            "en": "Execute three timed turns VHF Intake plus Berthing Tripartite plus Post-Turn Report individually rotating through three operational zones for transfer demonstration",
+            "es": "Ejecutar tres turnos cronometrados VHF Intake más Berthing Tripartite más Post-Turn Report rotando individualmente por tres zonas operacionales para demostración de transferencia",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will perform the three-hour CML Port Turnaround in front of the panel. Turn 1, ninety seconds at the VHF station: Captain Lopera radios from CML CARRIER and you respond with SMCP plus NATO Phonetic for Papa-Whiskey-Two-Three. Turn 2, two minutes at the yard: you coordinate Diego, Bosun Romero, and Captain Lopera using modals, conditional 1, passive, tag questions. Turn 3, ninety seconds at the bridge: oral Post-Turn Report to Capitán Restrepo using passive past, occupational structures, closing tag question. It matters because this is your final operational simulation. By the end, the panel has seen you operate the port in English.",
+            "es": "Ejecutas el CML Port Turnaround de 3h ante el panel. Turno 1 (90s VHF): respondes a Captain Lopera con SMCP + OTAN Papa-Whiskey-Two-Three. Turno 2 (2 min yard): coordinas Diego + Bosun + Lopera con modales · condicional · pasiva · tag. Turno 3 (90s bridge): Post-Turn Report a Capitán Restrepo con pasiva pasada · estructuras · tag de cierre. Es tu simulación operacional final."
+          },
           "paso_a_paso": [
             {
               "en": "Turn 1 · VHF Intake station: respond to Captain Lopera in 90s.",
@@ -2387,28 +2730,31 @@
               "es": "3 turnos + 5 estructuras."
             }
           },
+          "materiales": [
+            "Walkie-talkies × 3",
+            "CML CARRIER kit completo",
+            "Berthing Memo + Radio Log aprendiz",
+            "Cascos · clipboard · barrera visual VHF",
+            "Cronómetro proyectable + cámara grabadora",
+            "Rúbrica E-Misión 6 criterios"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula transformada ceremonialmente en 3 zonas operacionales: (1) VHF station con barrera visual · walkie-talkie · (2) yard station con Bosun Romero (voluntario advanced) + clipboard + cascos · (3) bridge station tipo isla central con cronómetro proyectable + panel evaluador frente (Capitán Restrepo + agente naviero externo)",
             "estrategia": "ABP · fase ejecutiva con Simulación operacional condensada",
             "tecnica": "Simulación operacional rotativa cronometrada + Role-play tripartito simultáneo + grabación audio para portafolio + panel observación con rúbrica E-Misión silenciosa",
-            "duracion_horas": 3.0,
-            "materiales": [
-              "Walkie-talkies × 3",
-              "CML CARRIER kit completo",
-              "Berthing Memo + Radio Log aprendiz",
-              "Cascos · clipboard · barrera visual VHF",
-              "Cronómetro proyectable + cámara grabadora",
-              "Rúbrica E-Misión 6 criterios"
-            ],
-            "material_apoyo": "CML CARRIER scenario poster A2 + Maritime Word Wall completo + SMCP/NATO Reference Cards laminadas + sonidos de puerto bajo de fondo"
+            "materiales": "Walkie-talkies × 3 · CML CARRIER kit completo · Berthing Memo + Radio Log aprendiz · Cascos · clipboard · barrera visual VHF · Cronómetro proyectable + cámara grabadora · Rúbrica E-Misión 6 criterios",
+            "material_apoyo": "CML CARRIER scenario poster A2 + Maritime Word Wall completo + SMCP/NATO Reference Cards laminadas + sonidos de puerto bajo de fondo",
+            "duracion_horas": "3.0 horas"
           }
         },
         {
           "actividad_id": "A3.4.4",
+          "schema_version": "v2.7",
           "titulo_en": "PRESENT — Professional Pitch 3 min before the panel + Q&A with tag questions",
           "titulo_es": "PRESENTAR — Pitch profesional 3 min ante panel",
           "tipo_actividad_sena": "Actividad procedimental + actitudinal",
-          "etiquetas_dimension": "[PROCEDIMENTAL] [ACTITUDINAL]",
+          "actividad_tipo_label": "Actividad procedimental + actitudinal",
           "tiempo_min": 60,
           "agrupacion": "individual ante panel",
           "voc_dimension": [
@@ -2416,8 +2762,15 @@
             "actitudinal"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[PROCEDIMENTAL] [ACTITUDINAL] Deliver a 3-minute Pitch in 4 sections: (1) INTRO 30s · greeting + role + reports to Capitán Restrepo. (2) HABITUAL FUNCTIONS 60s · 5 occupational structures. (3) MOMENTARY FUNCTIONS 60s · CML CARRIER turnaround in present perfect + passive + conditional 1. (4) CLOSING 30s with TAG QUESTION + invitation to Q&A.",
-          "instruccion_supervivencia_es": "(Pitch 3 min · 4 secciones · cierre con tag question.)",
+          "enunciado_voc": {
+            "en": "Deliver a three-minute professional Pitch in four sections before the evaluator panel and respond to two panel questions with tag questions",
+            "es": "Entregar un Pitch profesional de tres minutos en cuatro secciones ante el panel evaluador y responder a dos preguntas del panel con tag questions",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will stand at the microphone before Capitán Restrepo and the external naval agent and deliver your professional Pitch. Three minutes, four sections: 30-second intro (greeting, role, reports to), 60-second habitual functions (five occupational structures), 60-second momentary functions (CML CARRIER turnaround in present perfect, passive, conditional 1), 30-second closing with tag question and Q&A invitation. Then you take two panel questions with tag responses. It matters because this is the moment the program crystallizes — three minutes of operational English in front of an external agent. By the end, you have spoken professionally about your work for three minutes in English.",
+            "es": "En el micrófono ante Capitán Restrepo y el agente naviero externo entregas tu Pitch. 3 min · 4 secciones: INTRO 30s · HABITUAL 60s (5 estructuras) · MOMENTARY 60s (perfecto · pasiva · condicional) · CIERRE 30s con tag. Respondes 2 preguntas del panel con tag responses. Es el momento en que el programa cristaliza. Has hablado 3 min profesionalmente en inglés."
+          },
           "paso_a_paso": [
             {
               "en": "Walk to the front · stand at microphone.",
@@ -2487,37 +2840,47 @@
               "es": "3 min + 5 + 2."
             }
           },
+          "materiales": [
+            "Micrófono inalámbrico + amplificador",
+            "Cámara grabadora",
+            "Cronómetro proyectable",
+            "Pitch framework 4 secciones impreso",
+            "Tag Questions Cheat Sheet",
+            "Rúbrica E-Misión panel (3 copias)",
+            "USBs vacíos"
+          ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula reconfigurada para presentación formal: micrófono inalámbrico al frente + panel evaluador sentado + cámara grabadora + cronómetro proyectable 3 min + audiencia compañeros + Maritime Word Wall iluminado",
             "estrategia": "ABP · fase de presentación con Evaluación Formativa Integrada",
             "tecnica": "Presentación oral simulada cronometrada + Q&A panel + peer feedback 3-stars/1-wish post-Q&A",
-            "duracion_horas": 1.0,
-            "materiales": [
-              "Micrófono inalámbrico + amplificador",
-              "Cámara grabadora",
-              "Cronómetro proyectable",
-              "Pitch framework 4 secciones impreso",
-              "Tag Questions Cheat Sheet",
-              "Rúbrica E-Misión panel (3 copias)",
-              "USBs vacíos"
-            ],
-            "material_apoyo": "Pitch framework slide proyectado + Tag Questions Cheat Sheet poster + Word Wall iluminado"
+            "materiales": "Micrófono inalámbrico + amplificador · Cámara grabadora · Cronómetro proyectable · Pitch framework 4 secciones impreso · Tag Questions Cheat Sheet · Rúbrica E-Misión panel (3 copias) · USBs vacíos",
+            "material_apoyo": "Pitch framework slide proyectado + Tag Questions Cheat Sheet poster + Word Wall iluminado",
+            "duracion_horas": "1.0 horas"
           }
         },
         {
           "actividad_id": "A3.4.5",
+          "schema_version": "v2.7",
           "titulo_en": "ASSESS — Self-Reflection + Peer Port Star + 'What I see now' metacognitive close",
           "titulo_es": "EVALUAR — Auto-reflexión + Port Star + 'What I see now'",
           "tipo_actividad_sena": "Actividad actitudinal",
-          "etiquetas_dimension": "[ACTITUDINAL]",
+          "actividad_tipo_label": "Actividad actitudinal",
           "tiempo_min": 60,
           "agrupacion": "individual + plenaria",
           "voc_dimension": [
             "actitudinal"
           ],
           "produce_evidencia": false,
-          "instruccion_2pers_en": "[ACTITUDINAL] Complete: (1) Self-reflection card with 5 emoji-scale items + 1 open question · (2) Award 1 Port Star to a peer with 1 sentence reason · (3) Write 'What I see now that I did not see on Day 1' in 3-5 sentences (EN/ES free).",
-          "instruccion_supervivencia_es": "(Self-reflection 5 emoji + Port Star + 'What I see now'.)",
+          "enunciado_voc": {
+            "en": "Complete a five-emoji self-reflection plus a Port Star peer award plus a three to five sentence metacognitive close to formally end the hundred-hour journey",
+            "es": "Completar una auto-reflexión de cinco emoji más un Port Star a un compañero más un cierre metacognitivo de tres a cinco oraciones para cerrar formalmente las cien horas",
+            "_review_status": "DRAFT"
+          },
+          "descripcion_narrativa": {
+            "en": "In this activity you will close the hundred-hour journey with three reflective acts. First, you answer five emoji-scale items honestly about your performance: plan canvas decisions, memo structure, SMCP literacy, modals/conditional/passive use, tag question closing. Second, you award one Port Star post-it to a peer with a one-sentence reason. Third, you write three to five sentences answering 'What I see now that I did not see on Day 1.' Finally, you receive your symbolic certificate and USB with your Pitch audio. It matters because the program does not close with the panel — it closes with you, in silence, naming what changed. By the end, you have your reflection on paper and your voice on a USB.",
+            "es": "Cierras las 100h con tres actos reflexivos. (1) Respondes 5 emoji honestamente sobre tu desempeño. (2) Entregas un Port Star a un compañero con razón en 1 oración. (3) Escribes 3-5 oraciones a 'What I see now that I did not see on Day 1'. Recibes certificado simbólico + USB con tu Pitch. El programa no cierra con el panel — cierra contigo, en silencio, nombrando lo que cambió."
+          },
           "paso_a_paso": [
             {
               "en": "Answer 5 emoji items honestly.",
@@ -2541,7 +2904,7 @@
             }
           ],
           "scaffold_inline": {
-            "tipo": "self_assessment",
+            "tipo": "reflection_lines",
             "titulo_en": "Self-reflection · 5 emoji + Port Star + What I see now",
             "titulo_es": "Auto-reflexión · 5 emoji + Port Star + What I see now",
             "estructura": {
@@ -2598,24 +2961,26 @@
               "es": "5 + 1 + 3+ oraciones."
             }
           },
-          "apendices_referenciados": [
-            "apendice_e_self_reflection_card"
+          "materiales": [
+            "Self-Reflection card A5",
+            "'What I see now' template formato libre",
+            "Post-its amarillos Port Star",
+            "Bolígrafos",
+            "Certificados simbólicos Port Operations Trainee × 25",
+            "USBs con audio Pitch personal × 25"
           ],
+          "evidencia": null,
           "activity_footer": {
             "ambiente": "Aula en silencio reflexivo · luz cálida + Maritime Word Wall iluminado + sonidos de puerto bajo de fondo · sillas en círculo para plenaria final + mesa central para certificados simbólicos + espacio frontal para foto grupal con CML CARRIER scenario poster A2",
             "estrategia": "Evaluación Formativa Integrada (autoevaluación + coevaluación + reflexión metacognitiva) · cierre ABP",
             "tecnica": "Self-reflection emoji + reflexión metacognitiva escrita + Port Star peer award + ceremonia de cierre del curso 100h",
-            "duracion_horas": 1.0,
-            "materiales": [
-              "Self-Reflection card A5",
-              "'What I see now' template formato libre",
-              "Post-its amarillos Port Star",
-              "Bolígrafos",
-              "Certificados simbólicos Port Operations Trainee × 25",
-              "USBs con audio Pitch personal × 25"
-            ],
-            "material_apoyo": "Auto-evaluación 22-item checklist PM-0 §7 + foto grupal con CML CARRIER scenario poster A2"
-          }
+            "materiales": "Self-Reflection card A5 · 'What I see now' template formato libre · Post-its amarillos Port Star · Bolígrafos · Certificados simbólicos Port Operations Trainee × 25 · USBs con audio Pitch personal × 25",
+            "material_apoyo": "Auto-evaluación 22-item checklist PM-0 §7 + foto grupal con CML CARRIER scenario poster A2",
+            "duracion_horas": "1.0 horas"
+          },
+          "apendices_referenciados": [
+            "apendice_e_self_reflection_card"
+          ]
         }
       ],
       "evaluacion_misión_final_total": {
