@@ -10,8 +10,8 @@
 |-------|-------|
 | **Código** | PM-3.6 |
 | **Nombre** | GFPI-F-135 Learning Guide Generator |
-| **Versión** | 2.6.5 |
-| **Last Verified** | 2026-04-21 |
+| **Versión** | 2.7 |
+| **Last Verified** | 2026-04-30 |
 | **Ubicación** | Fase 4, posterior a PM-3.2 (Playbook Build-Out completo) |
 | **Output** | Documento GFPI-F-135 V02 — Guía de Aprendizaje del Aprendiz (redactada en 2ª persona) |
 | **Rol en el sistema** | Transforma el Playbook del Instructor (PM-3.2) en la Guía del Aprendiz (GFPI-F-135) |
@@ -507,6 +507,40 @@ Y contener una **tabla única de 6 columnas × N filas** (1 fila por cada activi
 - ❌ `evidencia_complementaria_no_formal` — **info migrada a `canon_reference.misión_final_nota`**
 - ❌ `tabla_resumen_canon_55` — **info migrada a `canon_reference`**
 
+#### Revisión v3.2 — Granularidad Opción A (parent activities · 12 filas) + Canon FM-1 (50 pts) + Paleta SENA
+
+A partir de v3.2 (DIESEL-2026-04-19 · 2026-04-21), la REGLA 18 admite **dos granularidades válidas** según la densidad pedagógica de la guía:
+
+| Granularidad | Filas | Cuándo usar | Ejemplo canon |
+|---|---|---|---|
+| **Opción A — parent activities** | 12 | Una fila por actividad padre (no por sub-actividad). Para guías markdown-native donde cada PM-2.x genera 1-2 actividades agregadas. | DIESEL-2026-04-19 (Workshop Specialist) |
+| **Opción B — full activity map** | 30 | Una fila por cada sub-actividad. Para guías JSON-native con `pm-3-6.json` completo y 28-30 actividades atómicas. | MGV-2026-04-20 (Visual Communicator) |
+
+**Canon FM-1 (aplicable a ambas granularidades):**
+
+- La Misión Final es **evaluación de transferencia formativa**, NO formal.
+- Puntaje total = **E1 + E2 + E3 + E4 + E5 + E6 = 5+5+5+5+5+25 = 50 pts** (NO 55).
+- La Misión Final genera retroalimentación con puntaje /5 usando la Escala de Estimación No 6 (PM-4.1) pero **no suma** al canon.
+- `canon_reference.total_canon` = 50; `canon_reference.misión_final_pts` = 5 (formativo, no sumativo).
+
+**Paleta de header de la tabla canónica (v3.2 SENA institucional):**
+
+- Header de la tabla de 6 columnas: **verde SENA `#39A900`** (reemplaza el naranja `#F59316` de v2.6.4).
+- Títulos de sección (navyHeader): **azul oscuro SENA `#0B2E45`** (reemplaza el navy `#1C2B3C` de v2.6.4).
+- Celdas de evidencia formal: mantener fondo crema (`#FFF6E8`) o equivalente claro.
+
+**Ruta de implementación canónica (v3.2):**
+
+Para guías markdown-native (Opción A), la REGLA 18 se aplica editando directamente la Sección 4 del archivo `pm-3-6-learning-guide.md` y actualizando `scripts/pm-3-6-assemble.js::sec4()` para generar el DOCX equivalente. Para guías JSON-native (Opción B), se mantiene el flujo original via `pm-3-6.json.seccion_4_planteamiento_evidencias` → `pm-3-6-gen.js`.
+
+**Script canónico DIESEL (v3.2 · Opción A):**
+
+```
+runs/DIESEL-2026-04-19/scripts/pm-3-6-assemble.js::sec4()
+```
+
+Incluye el helper `simpleTable(headers, rows, colWidths, { headerFill })` que acepta color de fondo de header como opción — permite verde SENA para la tabla canónica Sección 4 mientras el resto de tablas del documento conservan el navy institucional.
+
 ### REGLA 19 — CONSISTENCIA UPSTREAM→DOWNSTREAM (CHECK 17)
 
 El learner-facing guide (`pm-3-6.json`) debe ser **espejo fiel** de las decisiones arquitectónicas tomadas en Fase 2 (`pm-2-X.json`) y Fase 3 (`pm-4-1.json`, `pm-4-2.json`). Cualquier drift downstream (rename de producto, cambio de criterios, alteración de puntajes) es un **BUG**, no una feature.
@@ -643,6 +677,202 @@ Regla de pulgar: **si una sección se renderiza en review + FINAL, vive en `lib/
 | `scripts/check-generator-parity.js` | Validador de drift |
 
 *Lección aprendida MGV-2026-04-20 G1 v2.6.5 (2026-04-21): durante la aplicación de v2.6.4 se detectó que Sección 4 tenía 2 implementaciones independientes en 2 generadores DOCX. Cuando el instructor revisó el FINAL-G1, encontró que no tenía los cambios de formato SENA que sí aparecían en el review. Sin shared renderer, el drift es inevitable a escala (22 PMs × 8 sesiones × 8 guías × múltiples schemas). v2.6.5 cierra esta clase de bug de forma arquitectónica.*
+
+---
+
+## EXTENSIÓN v2.6.6 — PALETA SENA INSTITUCIONAL
+
+> [!warning] CANON v2.6.6 (2026-04-21) — Paleta SENA institucional reemplaza Pixel branding
+> Toda guía generada por PM-3.6 desde v2.6.6 hereda la paleta canónica SENA.
+
+### REGLA 21 — PALETA SENA CANÓNICA
+
+La paleta institucional SENA es OBLIGATORIA en todo render DOCX/PPTX/XLSX:
+
+| Color | Hex | Rol canon | Uso |
+|-------|-----|-----------|-----|
+| **Verde SENA** | `#39A900` | Header tablas + accents protagonistas | Header Sección 4 · CEFR badges A1/A2 · accents pedagógicos |
+| **Azul oscuro SENA** | `#0B2E45` | Headings + títulos sección | H1/H2/H3 · `navyHeader` |
+| **Verde oscuro SENA** | `#007832` | Highlights secundarios | Subheadings + dividers |
+
+### Cambios v2.6.6 (vs v2.6.5)
+
+- Header tabla Sección 4: naranja `#F59316` → **verde `#39A900`**
+- Headings sección (navyHeader): navy `#1C2B3C` → **azul oscuro SENA `#0B2E45`**
+- Celdas de evidencia formal: mantener fondo crema (`#FFF6E8`) o equivalente claro
+- Nombres legacy preservados (`NAVY/ORANGE`) por backward compat · solo el VALOR remapea
+
+### Implementación canónica v2.6.6
+
+Aplicada en MGV-2026-04-20 G1 a:
+- `scripts/gen_audit_docx.js`
+- `scripts/gen_35_36_docx.js`
+- `scripts/gen_3_docx.js`
+- `scripts/lib/render_seccion4_evidencias.js` (shared renderer · single source of truth)
+
+Backup pre-paleta preservado en `scripts/backup-pre-sena-palette-20260421-052405/`.
+
+### Consecuencia arquitectónica v2.6.6
+
+Todos los runs futuros heredan paleta SENA institucional · cero residuales naranja/navy/cream legacy.
+
+*Lección aprendida MGV-2026-04-20 G1 v2.6.6 (2026-04-21): la paleta Pixel & Ink era branding del programa MGV-G1 (estudio gráfico ficticio del universo narrativo), NO branding institucional SENA. Coordinación académica solicitó marca institucional canónica. v2.6.6 promueve verde+azul SENA como canon permanente para todos los programas.*
+
+---
+
+## EXTENSIÓN v2.7 — LEARNER-READABLE ACTIVITY · ANATOMÍA 6-BLOQUE
+
+> [!warning] CANON v2.7 (2026-04-22) — Anatomía learner-readable de 6 bloques + supresión metadata pipeline
+> Migración completa del schema activity card v2.6.3 → v2.7. **Schema v2.6.3 deprecado** · v2.7 es canon vigente.
+
+### REGLA 22 — ANATOMÍA 6-BLOQUE LEARNER-READABLE
+
+Cada actividad de §3 `seccion_3_actividades_aprendizaje` debe renderizar la siguiente anatomía visual de 6 bloques pedagógicamente coherente:
+
+```
+┌─ BLOQUE 1 · ENCABEZADO V+O+C ───────────────────────────────────┐
+│  enunciado_voc.{en, es} — Verbo + Objeto + Condición             │
+│  titulo_en / titulo_es                                           │
+│  Metadata: tiempo_min · agrupacion · tipo_actividad_sena         │
+├─ BLOQUE 2 · DESCRIPCIÓN NARRATIVA (60–120 palabras) ────────────┤
+│  descripcion_narrativa.{en, es} — 3 movimientos:                 │
+│    (1) Qué vas a hacer                                          │
+│    (2) Por qué importa                                          │
+│    (3) Promesa pedagógica (qué dominas al final)                │
+├─ BLOQUE 3 · STEP-BY-STEP (5–7 pasos) ───────────────────────────┤
+│  paso_a_paso[].{en, es} — Verbos imperativos · economía         │
+├─ BLOQUE 4 · ENTREGABLE ─────────────────────────────────────────┤
+│  entregable.{producto, formato, criterio_minimo}.{en, es}        │
+├─ BLOQUE 5 · EVIDENCIA FIRST-CLASS (solo si produce_evidencia) ──┤
+│  evidencia.{codigo, nombre, tipo_sena, tecnica, instrumento, ...}│
+├─ BLOQUE 6 · FOOTER LOGÍSTICO ───────────────────────────────────┤
+│  activity_footer.{ambiente, estrategia, tecnica, materiales,    │
+│                   material_apoyo, duracion_horas}                │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+### REGLA 23 — SCHEMA v2.7 (CAMPOS CANÓNICOS)
+
+**17 campos canónicos por actividad** (reemplaza schema v2.6.3 de 12 campos):
+
+```json
+{
+  "actividad_id":           "A3.3.S2.4",
+  "schema_version":         "v2.7",
+  "titulo_en":              "string",
+  "titulo_es":              "string",
+  "tipo_actividad_sena":    "Actividad cognitiva | Actividad procedimental | Actividad actitudinal | combinaciones con ' + '",
+  "actividad_tipo_label":   "label friendly para render",
+  "tiempo_min":             45,
+  "agrupacion":             "individual | pares | grupo_pequeno | plenaria | combinaciones",
+  "voc_dimension":          ["cognitiva", "procedimental", "actitudinal"],
+  "produce_evidencia":      true | false,
+  "enunciado_voc":          { "en": "...", "es": "...", "_review_status": "DRAFT|APPROVED" },
+  "descripcion_narrativa":  { "en": "60–120 palabras 3 movimientos", "es": "..." },
+  "paso_a_paso":            [{ "en": "...", "es": "..." }, ...],   // 5–7 pasos
+  "scaffold_inline":        { "tipo": "...", "titulo_en": "...", "titulo_es": "...", "estructura": {...}, "badge"?: "..." },
+  "entregable":             { "producto": {en,es}, "formato": {en,es}, "criterio_minimo": {en,es} },
+  "materiales":             ["...", "..."],
+  "evidencia":              null | { "codigo": "E1", "nombre": "...", "tipo_sena": "...", "tecnica_evaluacion": "...", "instrumento": "..." },
+  "activity_footer":        { /* derived v2.6.1 · 6 campos */ },
+  "_legacy"?:               { /* snapshot pre-migration · preserved */ }
+}
+```
+
+### REGLA 24 — CAMPOS OBSOLETOS PROHIBIDOS (v2.7 estricto)
+
+Los siguientes campos están **PROHIBIDOS** desde v2.7 (deben estar AUSENTES):
+
+| Campo obsoleto | Reemplazado por | Razón |
+|----------------|------------------|-------|
+| `nombre_aprendiz` | `titulo_en` + `titulo_es` | Bilingüismo first-class |
+| `etiquetas_dimension` (e.g. `"[COGNITIVA]"`) | `voc_dimension` (e.g. `["cognitiva"]`) | Datos estructurados sin syntax label |
+| `instruccion_2pers_en` | `descripcion_narrativa.en` + `paso_a_paso[].en` | Anatomía 6-bloque (descripción + pasos separados) |
+| `instruccion_supervivencia_es` | `descripcion_narrativa.es` + `paso_a_paso[].es` | Anatomía 6-bloque bilingüe simétrica |
+| `descripcion_aprendiz` (v2.6.3) | `descripcion_narrativa` | Cambio nombre canónico v2.6.3 → v2.7 |
+
+### REGLA 25 — META OBLIGATORIO
+
+`pm-3-6.json.meta.activities_schema_version === "v2.7"` obligatorio.
+
+```json
+{
+  "meta": {
+    "activities_schema_version": "v2.7",
+    "activities_rewritten_at": "ISO-8601",
+    "v27_piloto_ids"?: [...],   // si rollout incremental
+    "v27_full_ids"?: [...]      // si rollout completo
+  }
+}
+```
+
+### REGLA 26 — SUPRESIÓN PIPELINE METADATA EN DOCX APRENDIZ
+
+Los siguientes campos se preservan en JSON pero **SE SUPRIMEN** del DOCX que ve el aprendiz:
+
+- `fuente_pm_*` (referencias upstream pipeline)
+- `cross_references`
+- `voc_dimension` (datos · pero NO etiqueta visible · se etiqueta vía `tipo_actividad_sena` user-friendly)
+- `schema_version`
+
+Renderer canónico DEBE filtrar estos campos en output DOCX learner-facing. JSON conserva todo (machine-readable · auditoría · pipeline downstream).
+
+### REGLA 27 — 10 TIPOS CANÓNICOS scaffold_inline (PRESERVED FROM v2.6.3)
+
+Los 10 tipos canónicos REGLA 14 v2.6.3 se mantienen en v2.7:
+
+| `tipo` | Uso |
+|---|---|
+| `matching` | Pre-activación vocabulario, glosario bilingüe |
+| `checklist` | Verificación procedural |
+| `form` | Captura estructurada |
+| `t_chart` | Comparación binaria |
+| `writing_template` | Producción escrita guiada |
+| `listening_capture` | Notas durante escucha |
+| `quiz_preview` | Pre-test / Cuestionario |
+| `speaking_script` | Diálogo pautado |
+| `reflection_lines` | Reflexión abierta |
+| `rating` | Auto-evaluación / escala |
+
+### Pipeline canónico v2.7
+
+| Script | Función | Input | Output |
+|--------|---------|-------|--------|
+| `rewrite_activities_v27.js` | Migrador idempotente v2.6.3 → v2.7 (con backup) | `pm-3-6.json` (v2.6.3) | `pm-3-6.json` (v2.7) |
+| `check-activity-card-schema.js` (v2.7) | Validador 17 campos + 5 obsoletos AUSENTES + tipos canónicos | `pm-3-6.json` | exit 0 PASS / 1 FAIL |
+| `derive_activity_footer_from_playbook.js` | activity_footer v2.6.1 derivation (preserved) | `pm-3-6.json` + upstream | `pm-3-6.json` enriched |
+| `gen_audit_docx.js` (v2.7) | Renderer DOCX con `renderActivityCard_v27` (anatomía 6-bloque) + supresión pipeline metadata | `pm-3-6.json` | `pm-3-6-FINAL-G*.docx` |
+
+**Modos del migrador `rewrite_activities_v27.js`:**
+- `--dry-run` produce migration-report-v27.md sin tocar pm-3-6.json
+- `--apply` escribe pm-3-6.json (backup .pre-v27.bak obligatorio)
+- `--activity ID` procesa una sola actividad (override)
+- `--batch {piloto,A,B,C,D}` procesa batch específico
+
+**Salvaguardas:**
+- Idempotente · si schema_version === "v2.7" la actividad se salta
+- Validación run_id explícita
+- Backup obligatorio antes de --apply
+
+### Caso-origen y estado actual v2.7
+
+- **Run origen:** MGV-2026-04-20 G1 (The Visual Communicator)
+- **Actividades migradas:** 30/30 (rollout en 4 batches: piloto 3 + A 7 + B 8 + C 8 + D 4)
+- **DOCX final:** `pm-3-6-FINAL-G1.docx` 103.7 KB (+13% vs v2.6.6 por anatomía narrativa)
+- **0 fugas de jerga de pipeline** en DOCX aprendiz (`fuente_pm_*` · `cross_references` · `schema_version` filtrados)
+- **JSON preserva todo** (machine-readable · pipeline downstream consume metadata)
+
+### Consecuencia arquitectónica v2.7
+
+La Guía del Aprendiz alcanza **paridad completa con expectativa pedagógica SENA**: cada actividad como capsula de 6 bloques visualmente coherentes · narrativa motivacional ANTES de los pasos · evidencia first-class (no escondida en footer) · 0 fugas de metadata pipeline. El instructor puede entregar el DOCX directo al aprendiz · cero edición manual.
+
+*Lección aprendida MGV-2026-04-20 G1 Fase 4 v2.7 (2026-04-22): el v2.6.3 schema renderizaba "instrucción + scaffold + footer" sin contexto narrativo · aprendices reportaron "no entiendo POR QUÉ hago esto". v2.7 anatomía 6-bloque incluye descripción narrativa 60-120 palabras en 3 movimientos (qué/por qué/promesa) ANTES de los pasos · genera engagement + claridad pedagógica antes del scaffolding ejecutivo.*
+
+### Compatibilidad backward v2.7
+
+- v2.6.3 marcado **DEPRECATED** · pero schema_version no-v2.7 permitido en runs legacy con backup preservado
+- `_legacy` field preserva snapshot pre-migration (auditabilidad)
+- Renderers v2.7 dispatch por `schema_version`: v2.7 usa anatomía 6-bloque · v2.6.3 fallback al renderer legacy
 
 ---
 
@@ -798,6 +1028,21 @@ NO agregar bloque en actividades de práctica, drills o reflexión sin evidencia
 
 ---
 
-*PM-3.6: GFPI-F-135 Integrator — v2.6*
+*PM-3.6: GFPI-F-135 Integrator — v2.7*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
+
+---
+
+## CHANGELOG MASTER PROMPT
+
+| Versión | Fecha | Cambio |
+|---------|-------|--------|
+| v2.0 | 2026-04-13 | Nueva naturaleza · Playbook → Guía Aprendiz transformación |
+| v2.6 | 2026-04-20 | activity_footer + apendices_embebidos + apendices_referenciados (REGLAS 10-12) |
+| v2.6.1 | 2026-04-20 | activity_footer DERIVADO (no autoreado) · derive_activity_footer_from_playbook.js |
+| v2.6.3 | 2026-04-20 | Activity Card v2.6.3 · 12 campos + 10 tipos scaffold + REGLAS 13-17 |
+| v2.6.4 | 2026-04-21 | Sección 4 formato SENA (6 cols × N filas) · CHECK 17 upstream-downstream (REGLAS 18-19) |
+| v2.6.5 | 2026-04-21 | Shared Renderer Pattern · render_seccion4_evidencias.js fuente única (REGLA 20) |
+| **v2.6.6** | **2026-04-21** | **Paleta SENA institucional (verde #39A900 + azul oscuro #0B2E45) · REGLA 21** |
+| **v2.7** | **2026-04-30** | **Learner-Readable Activity · Anatomía 6-bloque · 17 campos schema v2.7 · 5 obsoletos PROHIBIDOS · supresión pipeline metadata · REGLAS 22-27 · v2.6.3 deprecated** |
 *Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV)*
