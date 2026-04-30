@@ -1,0 +1,967 @@
+{
+  "pm_id": "PM-3.2",
+  "pm_name": "Playbook Build-Out — Step by Step",
+  "pm_version": "2.5",
+  "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
+  "session": 1,
+  "session_name": "First Day at the Terminal — Andrea Arrives",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide": "G1 — The Maritime Operations Pro",
+  "guia_numero": 1,
+  "programa": "Inglés Marítimo y Portuario (Curso Complementario)",
+  "programa_codigo": "12340002",
+  "duracion_min": 360,
+  "worksheets": [
+    "PM-2.1",
+    "PM-2.2"
+  ],
+  "habilidades_foco": [],
+  "habilidades_soporte": [
+    "Vocabulary receptivo (4 survival words: port · berth · vessel · radio)",
+    "Speaking conversacional (icebreaker plenario · sin evaluación)"
+  ],
+  "cefr": "A1.2 (entrada single-guía · prereq A1.1 cubierto)",
+  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-29",
+  "generated_by": "Instructor Sergio Cortés Perdomo",
+  "status": "preliminary",
+  "_status_preliminary_rationale": "Build-Out generado por subagente creativo PM-3.2 piloto behavioral · Gate Humano 3 (aprobación Playbook) pendiente · Sergio confirma cambiando a 'completed' tras revisión de coherencia con PM-2.1 + PM-2.2 + pm-3-1 sessions[0].",
+  "momento_sena": "3.1 Reflexión Inicial",
+  "estrategia_didactica": "ABP + Diagnóstico activador (escenario Andrea + Gap Analysis maritime)",
+  "justificacion_didactica": "S1 NO es sesión de enseñanza — es sesión de activación afectiva (English Zone + Learning Contract con firma) y cartografía cognitiva (KWL + Gap Card + voto cromático). El aprendiz entra al universo narrativo IMARPOR-CC (Andrea Mosquera llegando a Berth 4 del Puerto de Buenaventura · BUENAVENTURA EXPRESS atracando · Captain Lopera y Capitán Restrepo) y se compromete públicamente con el contrato de inglés marítimo. Sin producción evaluada (E1-E6 no activos). L1 ≤ 25% del RAP — andamiaje emocional máximo. Teacher Talk modelo central + driller suave de 4 survival words (port · berth · vessel · radio). El objetivo pedagógico es reducir el filtro afectivo del primer día, mapear gaps reales, y construir base motivacional para S2 (Toolbelt 5 términos Sub-bloque 1).",
+  "session_header": {
+    "titulo": "SESSION 1: First Day at the Terminal — Andrea Arrives",
+    "subtitulo": "IMARPOR-CC · Guía Única · The Maritime Operations Pro · Build-Out — Playbook v2.5",
+    "duracion_horas": 6,
+    "duracion_min": 360,
+    "worksheets_asignados": [
+      "PM-2.1 — The Spark (Reflexión Inicial · 4 momentos encadenados ABCD · primera mitad S1)",
+      "PM-2.2 — Gap Analysis (Contextualización · 4 momentos encadenados ABCD · segunda mitad S1)"
+    ],
+    "habilidades_foco": [],
+    "habilidades_soporte": [
+      "Vocabulary receptivo (4 survival words: port · berth · vessel · radio)",
+      "Speaking conversacional (icebreaker plenario · sin evaluación)"
+    ],
+    "objetivos_pedagogicos": [
+      "(1) Declarar y firmar contrato English Zone bilingüe del Maritime Word Wall.",
+      "(2) Vivir la primera mañana de Andrea en Berth 4 — recorrer 4 momentos Spark (Map → Radio Call → Headline → Debate).",
+      "(3) Activar receptivamente 4 survival words del universo portuario (port · berth · vessel · radio) con stress marcado.",
+      "(4) Completar KWL Chart maritime + Diagnosis visual sobre BUENAVENTURA EXPRESS + Gap Card personal por sub-bloque RAP + Peer Interview con compañero.",
+      "(5) Firmar Learning Contract con 3 prioridades personales — sobre sellado guardado hasta S12 (CML Port Turnaround)."
+    ],
+    "plan_b": "Si <50% asistencia día 1: aplazar la ceremonia de firma del Learning Contract a S2 warm-up · usar el tiempo extra para repetir el momento 2 Spark (Andrea's First Radio Call) y permitir más práctica oral con las 4 survival words. Si proyector falla: usar el mapa A2 del Terminal Buenaventura impreso en muro como infografía A del Spark. Si walkie-talkies/app móvil no disponible para futura referencia: apuntar como acción para S5.",
+    "nota_instructor": "Documento interno del instructor — no distribuir a aprendices. Teacher Talk pre-modelado bilingüe. Duración suma exacta 360 min directos + 140 min autónomo (≈2.33h). L1 ≤ 25% del tiempo de instrucción. English Zone se ACTIVA EN ESTA SESIÓN — acto constitutivo del curso 100h."
+  },
+  "materials_checklist": [
+    {
+      "item": "PM-2.1 + PM-2.2 worksheets impresos (Spark + Gap Analysis)",
+      "cantidad": "1 set por aprendiz (estimado 25 sets) + 3 sets de respaldo",
+      "verificado": false
+    },
+    {
+      "item": "Mapa del Terminal de Contenedores Buenaventura A2 con zonas numeradas (Berth 4 + Port Captain Office + Container Yard + Pilot Station + VHF Radio Tower + Customs Gate)",
+      "cantidad": "1 muro frontal + 1 mini A4 por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Audio Andrea's First Radio Call (90 segundos · voz Captain Lopera B2 lingua franca · sin interferencia en S1)",
+      "cantidad": "1 archivo · cargado en proyector + bocinas probadas",
+      "verificado": false
+    },
+    {
+      "item": "Imagen lateral del BUENAVENTURA EXPRESS atracado en Berth 4 con 6 partes numeradas (bow · stern · port side · starboard · hull · deck) + 4 zonas portuarias numeradas (berth · dock · gantry crane · warehouse)",
+      "cantidad": "1 set A3 por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "KWL Chart maritime handout (3 columnas K/W/L · prompts en EN+ES cursivo)",
+      "cantidad": "1 por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Gap Card maritime (lista personalizada de blind-spots por sub-bloque RAP-01 · 4 áreas: VHF Comms · Ship Parts · Port Operations · SMCP literacy)",
+      "cantidad": "1 por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Learning Contract plantilla (3 prioridades personales + firma + sobre amarillo sellado)",
+      "cantidad": "1 contrato + 1 sobre amarillo por aprendiz",
+      "verificado": false
+    },
+    {
+      "item": "Maritime Word Wall vacío en pared lateral + 4 tarjetas survival words pre-impresas (port /pɔːrt/ · berth /bɜːrθ/ · vessel /ˈvesəl/ · radio /ˈreɪdiəʊ/) con foto + IPA + stress mark",
+      "cantidad": "1 Word Wall + 4 tarjetas",
+      "verificado": false
+    },
+    {
+      "item": "English Zone — cinta de color (azul marítimo) para señalizar zona del aula",
+      "cantidad": "1 rollo",
+      "verificado": false
+    },
+    {
+      "item": "Marcadores VERDE + ROJO (diagnosis visual + voto cromático Spark momento D)",
+      "cantidad": "1 set por pareja",
+      "verificado": false
+    },
+    {
+      "item": "Papelógrafo grande (KWL grupal · queda en pared 12 sesiones)",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Cronómetro visible en pantalla",
+      "cantidad": "1",
+      "verificado": false
+    },
+    {
+      "item": "Welcome presentation slides (Pixel-puerto Buenaventura · 5 fotos: Andrea · Captain Lopera · BUENAVENTURA EXPRESS · Capitán Restrepo · Berth 4)",
+      "cantidad": "1 archivo + proyector",
+      "verificado": false
+    }
+  ],
+  "board_plan": "TABLERO dividido en 4 zonas: (1) ESQUINA SUPERIOR DERECHA — ENGLISH ZONE 🔵 declarada y dibujada al inicio de SET-UP. (2) CENTRO — Welcome title 'IMARPOR-CC · Guía Única · S1: First Day at the Terminal — Andrea Arrives'. (3) COLUMNA LATERAL IZQUIERDA — 4 SURVIVAL WORDS con stress marcado en MAYÚSCULA: PORT /pɔːrt/ · BERTH /bɜːrθ/ · VES-sel /ˈvesəl/ · RA-dio /ˈreɪdiəʊ/. (4) ESPACIO INFERIOR LIVE ZONE — vacío al inicio · se llena durante la sesión con: KWL grupal (3 columnas K/W/L) + voto cromático del momento D Spark (¿inglés portuario obligatorio o nice-to-have? → marcas verde/rojo) + frases que emergen orgánicamente. Maritime Word Wall adyacente en pared lateral con las 4 tarjetas survival words + foto del Terminal Buenaventura A2 + diagrama Ship Overview A2. Al final de S1: Word Wall tiene 4 tarjetas + KWL grupal con K llena (saberes previos) + W llena (deseos del grupo) + L vacía (se llenará progresivamente S3/S6/S9/S12).",
+  "timeline": [
+    {
+      "tiempo": "0:00-0:30",
+      "duracion_min": 30,
+      "bloque": "SET-UP",
+      "actividad": "Welcome ceremony + English Zone declaration + 4 survival words intro + objetivos día + ICQ",
+      "agrupacion": "Plenaria → Individual",
+      "notas": "Energía alta. Instructor modelo central + driller suave. L1 ≈ 25% (welcome narrativo dominante)."
+    },
+    {
+      "tiempo": "0:30-1:15",
+      "duracion_min": 45,
+      "bloque": "WHILE A (Spark M1)",
+      "actividad": "PM-2.1 Momento 1 — The Map · Vista aérea de Buenaventura (infografía + 6 zonas numeradas)",
+      "agrupacion": "Plenaria + parejas (señalar zonas)",
+      "notas": "Activación visual. Survival words port + berth introducidas receptivamente."
+    },
+    {
+      "tiempo": "1:15-2:15",
+      "duracion_min": 60,
+      "bloque": "WHILE B (Spark M2)",
+      "actividad": "PM-2.1 Momento 2 — Andrea's First Radio Call · Captain Lopera + Capitán Restrepo (audio 90s + reflexión individual 4 palabras)",
+      "agrupacion": "Plenaria con audio → Individual silencioso",
+      "notas": "Survival words vessel + radio introducidas. Cada aprendiz escribe 4 palabras inglés que diría como Andrea."
+    },
+    {
+      "tiempo": "2:15-2:30",
+      "duracion_min": 15,
+      "bloque": "BREAK",
+      "actividad": "Receso activo (café + baño + estiramiento)",
+      "agrupacion": "—",
+      "notas": "Hidratación. English Zone se relaja durante break — vuelve al volver."
+    },
+    {
+      "tiempo": "2:30-3:30",
+      "duracion_min": 60,
+      "bloque": "WHILE C (Spark M3+M4)",
+      "actividad": "PM-2.1 Momento 3 — Headline marítimo 'English failure causes container collision' (News C) + Momento 4 — Voto cromático debate (D)",
+      "agrupacion": "Parejas → Plenaria",
+      "notas": "Stakes reales del inglés portuario. Voto verde/rojo del grupo se queda en LIVE ZONE."
+    },
+    {
+      "tiempo": "3:30-4:00",
+      "duracion_min": 30,
+      "bloque": "WHILE D (Gap M1)",
+      "actividad": "PM-2.2 Momento 1 — KWL Chart Diagnostic individual + KWL grupal en papelógrafo",
+      "agrupacion": "Individual → Plenaria",
+      "notas": "Reciclar 4 survival words en columna K. KWL grupal queda en pared 12 sesiones."
+    },
+    {
+      "tiempo": "4:00-4:35",
+      "duracion_min": 35,
+      "bloque": "WHILE E (Gap M2)",
+      "actividad": "PM-2.2 Momento 2 — Diagnosis Visual sobre BUENAVENTURA EXPRESS (6 partes buque + 4 zonas puerto · marcado verde/rojo)",
+      "agrupacion": "Individual → Parejas → Plenaria breve",
+      "notas": "Sin traducción — solo ojo honesto. Marcador verde = sé nombrar · rojo = no aún."
+    },
+    {
+      "tiempo": "4:35-5:05",
+      "duracion_min": 30,
+      "bloque": "WHILE F (Gap M3)",
+      "actividad": "PM-2.2 Momento 3 — Gap Card personal (4 áreas: VHF Comms · Ship Parts · Port Operations · SMCP literacy)",
+      "agrupacion": "Individual silencioso (instructor se retira)",
+      "notas": "Honestidad protegida. Instructor NO circula durante este momento."
+    },
+    {
+      "tiempo": "5:05-5:30",
+      "duracion_min": 25,
+      "bloque": "WHILE G (Gap M4)",
+      "actividad": "PM-2.2 Momento 4 — Peer Interview en parejas (Andrea entrevista a otro trainee · 5 preguntas guion)",
+      "agrupacion": "Parejas",
+      "notas": "Comparación cruzada de gaps. Sin juicio — solo escucha activa."
+    },
+    {
+      "tiempo": "5:30-6:00",
+      "duracion_min": 30,
+      "bloque": "WRAP-UP",
+      "actividad": "Learning Contract ceremony + firma + sobre sellado + Exit Ticket S1 + preview S2 + asignación autónoma",
+      "agrupacion": "Plenaria → Individual",
+      "notas": "Ceremonia solemne de firma. Cierre con energía positiva. Asignar Maritime KWL pre-llenado + 5 fotos del puerto."
+    }
+  ],
+  "habilidades_foco": [],
+  "habilidades_soporte": [
+    "Vocabulary receptivo (4 survival words: port · berth · vessel · radio)",
+    "Speaking conversacional (icebreaker plenario · sin evaluación)"
+  ],
+  "set_up": {
+    "duracion_min": 30,
+    "warm_up": {
+      "nombre": "Welcome to the Terminal — Maritime Mood Board Icebreaker",
+      "pasos": [
+        "1. Instructor recibe en la puerta saludando: '*Good morning! Welcome to the Terminal de Contenedores Buenaventura.*' (sonrisa + gesto · usar nombres si los conoce).",
+        "2. Cada aprendiz recibe una mini-hoja con la silueta del Terminal Buenaventura — se les pide marcar 3 cosas portuarias que reconocen de su vida (un letrero, un buque, una grúa visto desde el malecón).",
+        "3. Instructor circula 3 min leyendo en voz alta algunos ejemplos: '*Nice! A red ship. The crane. The container. Good eye!*' (modelado de lenguaje sin exigir respuesta).",
+        "4. Transición: '*Everything you saw is the PORT. Today you become Port Operations Trainees — like Andrea Mosquera.*'",
+        "5. Instructor declara y dibuja el símbolo ENGLISH ZONE 🔵 en esquina superior derecha del tablero · pega cinta azul en el piso señalizando la zona física.",
+        "6. Instructor presenta los 5 personajes proyectados: Andrea Mosquera (avatar del aprendiz · A1.2) · Captain Lopera (cliente externo BUENAVENTURA EXPRESS · B2 lingua franca) · Capitán Restrepo (mentor C1) · Officer Vásquez · Sailor García."
+      ],
+      "duration_min": 10
+    },
+    "teacher_talk_opening_en": "*Good morning, team! Welcome to our classroom — but today, this room is the Terminal de Contenedores Buenaventura. I am Sergio. I am your instructor. For the next 12 sessions, we are going to walk through the first months of Andrea Mosquera — a Port Operations Trainee, just like you. She arrives Monday at 6:15 a.m. at Berth 4. She has a radio. She has four words. And from her radio, the BUENAVENTURA EXPRESS is calling. From today — this corner is the ENGLISH ZONE. When you cross the blue tape, try to think in English. It's ok to make mistakes. It's ok to use Spanish sometimes — especially today. We grow together. Ready? Let's begin.*",
+    "teacher_talk_opening_es_cursive": "*(Buenos días, equipo. Bienvenidos a nuestro salón — pero hoy este salón es el Terminal de Contenedores de Buenaventura. Soy Sergio, su instructor. Durante las próximas 12 sesiones vamos a caminar los primeros meses de Andrea Mosquera — una Aprendiz de Operaciones Portuarias, como ustedes. Llega un lunes a las 6:15 a.m. al Muelle 4. Tiene una radio. Tiene cuatro palabras. Y desde su radio, el BUENAVENTURA EXPRESS está llamando. Desde hoy, esta esquina es la ZONA INGLÉS. Cuando cruces la cinta azul, intenta pensar en inglés. Está bien equivocarse. Está bien usar español a veces — sobre todo hoy. Crecemos juntos. ¿Listos? Empecemos.)*",
+    "objetivo_dia_escrito_en_tablero": "*Today you will: (1) meet Andrea, Captain Lopera and Capitán Restrepo · (2) learn 4 survival words: PORT · BERTH · VESSEL · RADIO · (3) map your gaps with KWL + Gap Card + Peer Interview · (4) sign your Maritime Learning Contract.*",
+    "activacion_4_survival_words": {
+      "instruccion": "Instructor señala las 4 tarjetas pre-pegadas en el Maritime Word Wall y modela stress: '*PORT — one syllable, strong. BERTH — one syllable, strong. VES-sel — TWO syllables, stress on FIRST. RA-dio — TWO syllables, stress on FIRST.*' Choral repetition 3 veces · finger drilling rápido · clase responde con eco.",
+      "tecnica": "Modelo-eco + Choral repetition + Finger drilling + Board marking (PM-0 §5.13)"
+    },
+    "icq": [
+      "*Where are we right now — in a classroom or in a port?* → Esperan: 'In the port / Terminal Buenaventura'",
+      "*Can you speak Spanish today?* → Esperan: 'Yes, sometimes / A little bit'",
+      "*What's that blue tape on the floor?* → Esperan: 'English Zone / The English place'",
+      "*How many survival words today?* → Esperan: '4 / four'"
+    ],
+    "facilitation_notes": [
+      "💡 No presente gramática formal. S1 es 100% actitudinal — construir confianza maritime.",
+      "💡 Si un aprendiz dice '*no sé inglés*', responda: '*Perfect — that's why you are here. Andrea also did not know on Day 1. We start from zero together.*'",
+      "💡 La declaración de English Zone es ceremonial. Dibuje el círculo azul 🔵 deliberadamente y pegue la cinta azul con calma — es un momento de umbral marítimo.",
+      "💡 Si la cohorte tiene aprendices de Buenaventura, invítelos a contar 1 dato del puerto que pocos saben — refuerza identidad territorial."
+    ],
+    "checkpoint": "✓ Verbal survey: '*Are you ready to begin?*' — ≥80% levantan la mano o dicen 'yes'. Si energía baja, agregue 1 min de risa: cuente una anécdota corta (en español ok) de la primera vez que escuchó VHF radio en un puerto."
+  },
+  "while": {
+    "duracion_min": 280,
+    "bloques": [
+      {
+        "letra": "A",
+        "nombre": "The Map — Vista aérea de Buenaventura (PM-2.1 Momento 1)",
+        "duracion_min": 45,
+        "worksheet_ref": "PM-2.1, Momento 1 — Spark Visual",
+        "agrupacion": "Plenaria + parejas",
+        "objetivo": "Activar esquema espacial sobre el Terminal de Buenaventura. El aprendiz reconoce 6 zonas portuarias en infografía aérea (Berth 4 · Port Captain Office · Container Yard · Pilot Station · VHF Radio Tower · Customs Gate) y las nombra receptivamente. Survival words PORT + BERTH se introducen.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor proyecta vista aérea del Terminal de Buenaventura + reparte mini-mapa A4 a cada aprendiz.",
+          "2. Lee en voz alta la instrucción bilingüe: '*Look at the map of Puerto de Buenaventura. Find Berth 4. This is where Andrea works on her first morning. Point to the ship, the dock, and the radio antenna.*' (*Mira el mapa del Puerto de Buenaventura. Encuentra el Muelle 4...*).",
+          "3. Plenaria 5 min: instructor pregunta '*Where is Berth 4?*' — aprendices señalan en su mapa. Instructor confirma '*Yes, here. This is the PORT. This is the BERTH where the BUENAVENTURA EXPRESS arrives.*'",
+          "4. Parejas 15 min: cada pareja recibe 6 tarjetas con nombres de zonas (Berth 4 · Port Captain Office · Container Yard · Pilot Station · VHF Radio Tower · Customs Gate) y las pega en el mapa A4.",
+          "5. Instructor circula sin corregir errores · solo modela: si una pareja confunde Container Yard con Pilot Station, dice '*Hmm — let's look again. Containers are big metal boxes. Where do you stack them?*' (señala con dedo).",
+          "6. Plenaria de cierre 10 min: instructor proyecta el mapa con etiquetas correctas · clase verifica · choral repetition de las 6 zonas con stress marcado.",
+          "7. Frase puente al WHILE B: '*Now you see WHERE Andrea works. Next, you will hear WHO speaks to her on her first morning.*'"
+        ],
+        "teacher_talk_instruction": "*Look at the map. This is Puerto de Buenaventura — your port. Six zones. Find Berth 4 first — that's where Andrea works. Then with your partner, place the 6 cards on the map. 15 minutes. Use the photo, use your eyes — no Google. Go.*",
+        "icq": [
+          "*Are you alone or with your partner?* → Esperan: 'With my partner'",
+          "*How many zones to find?* → Esperan: '6 / six'",
+          "*Can you use your phone?* → Esperan: 'No / no Google'"
+        ],
+        "answer_key_inline": {
+          "zonas_correctas": [
+            "Berth 4 = the dock where BUENAVENTURA EXPRESS arrives",
+            "Port Captain Office = where Capitán Restrepo works",
+            "Container Yard = where containers are stacked",
+            "Pilot Station = where pilots board the vessels",
+            "VHF Radio Tower = where radio calls are received",
+            "Customs Gate = entrance for trucks"
+          ],
+          "survival_words_activadas_receptivamente": ["port /pɔːrt/", "berth /bɜːrθ/"]
+        },
+        "facilitation_notes": [
+          "💡 No corrija pronunciación de Buenaventura — mantenga la pronunciación L1 (Buenaven-TU-ra) por respeto territorial · marca de identidad.",
+          "💡 Si una pareja termina rápido, pídales que dibujen la silueta del BUENAVENTURA EXPRESS atracando en Berth 4 — extensión visual.",
+          "💡 Anote en LIVE ZONE las palabras inglesas que emergen orgánicamente — las celebrará en WHILE C."
+        ],
+        "checkpoint": "✓ Pair check: ≥80% de las parejas tienen 5 de 6 tarjetas correctamente ubicadas. Si menos: dar 5 min extra con consigna '*Look at the photo, not at the cards*'.",
+        "transition": "*Good. You see the map. Now — close your eyes. Listen. Captain Lopera is calling Andrea on the radio. Three short sentences. Each sentence is one breath.*",
+        "tecnica_didactica": "Investigación guiada con infografía portuaria + Pre-listening con activación de vocabulario receptivo"
+      },
+      {
+        "letra": "B",
+        "nombre": "Andrea's First Radio Call — Encuentro con Captain Lopera (PM-2.1 Momento 2)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.1, Momento 2 — Spark Story",
+        "agrupacion": "Plenaria con audio → Individual silencioso",
+        "objetivo": "Vivir narrativamente la primera llamada por radio de Andrea. El aprendiz escucha audio 90s con Captain Lopera (B2 lingua franca) · capta la presión emocional de los stakes (puerto pierde tiempo · mentor escribe nota · Andrea pierde confianza) · escribe en su Learner's Worksheet 4 palabras inglés que diría como Andrea (sin evaluación). Survival words VESSEL + RADIO se introducen.",
+        "instrucciones_paso_a_paso": [
+          "1. Instructor lee la narrativa proyectada en voz alta (78 palabras EN · seguido de espejo ES cursivo): '*Monday. 6:15 a.m. Puerto de Buenaventura. Berth 4. Andrea Mosquera stands on the dock with her hard hat and her radio. The BUENAVENTURA EXPRESS is arriving. From the bridge, Captain Lopera waves and speaks: \"Good morning! Berth 4? Captain Lopera. Vessel ready.\" Capitán Restrepo, her mentor, watches in silence from the dock. He waits. He does not help. Andrea has the radio in her hand. She has four words. She must answer.*'",
+          "2. Reproducir audio 90 segundos (voz Captain Lopera lingua franca B2 · sin interferencia en S1 · interferencia se introduce S5).",
+          "3. Repetir audio 1 vez más con la consigna: '*Listen for ONE word you understand.*'",
+          "4. Lectura plenaria de los STAKES (proyectados EN+ES cursivo): '*If Andrea does not answer in English, three things happen: (1) Captain Lopera switches to a different berth and the port loses time and money. (2) Capitán Restrepo writes a note in her first-week report. (3) Andrea loses confidence on her first morning.*'",
+          "5. Instructor activa survival words VESSEL + RADIO en Maritime Word Wall · stress marking '*VES-sel · RA-dio*' · choral repetition + finger drilling.",
+          "6. Tarea individual silenciosa 25 min — Learner's Worksheet PM-2.1 M2: '*If YOU were Andrea, what 4 English words would you say into the radio? Write them here.*' Música instrumental marítima de fondo (sonidos de puerto suaves).",
+          "7. Permiso explícito: '*Wrong answers are welcome — this is NOT an evaluation. Just write 4 words. Any 4 words.*'",
+          "8. Instructor circula leyendo sobre el hombro sin corregir · toma nota mental de palabras inglesas que aparecen orgánicamente."
+        ],
+        "teacher_talk_instruction": "*OK team — close your worksheet for a moment. Listen first. (Audio plays.) Now — imagine you are Andrea. You have the radio. Captain Lopera said: 'Good morning! Berth 4? Captain Lopera. Vessel ready.' What 4 English words do you say back? Write them on your Learner's Worksheet. Just words. No sentences. 25 minutes. Silent work. Music on. (Be wrong. It's ok.)*",
+        "icq": [
+          "*Can I write a sentence?* → Esperan: 'No / just words / 4 words'",
+          "*Can I be wrong?* → Esperan: 'Yes / wrong is ok / wrong is welcome'",
+          "*Should I talk with my partner?* → Esperan: 'No / silent / alone'",
+          "*How many words?* → Esperan: '4 / four'"
+        ],
+        "answer_key_inline": {
+          "respuestas_esperadas_organicas": [
+            "Yes / Yes captain / OK",
+            "Berth 4 / Berth four",
+            "Good morning",
+            "Roger / Copy (raras en S1 — celebrar si aparecen)",
+            "Andrea / I am Andrea",
+            "Welcome / Welcome captain"
+          ],
+          "palabras_supervivencia_observables": [
+            "yes · ok · captain · radio · vessel · berth · morning · port"
+          ],
+          "nota": "No evaluado. La meta es que cada aprendiz produzca 4 palabras inglés EN PAPEL — el qué importa menos que el HACERLO."
+        },
+        "facilitation_notes": [
+          "💡 No corrija errores en la lista de palabras. Este bloque es activación afectiva + diagnóstico, NO evaluación gramatical.",
+          "💡 Si un aprendiz se bloquea 5 min sin escribir nada, acérquese en voz baja: '*¿Una palabra? Solo una. ¿Qué dirías por la radio?*'",
+          "💡 Si emergen palabras SMCP (Roger / Wilco / Copy / Standby) — celebrar discretamente y anotar para mencionar en bridge a S5: '*Look! Some of you already know SMCP — Maritime English. We will master it in Session 5.*'",
+          "💡 Mantenga el audio bajo de fondo durante los 25 min silenciosos — refuerza inmersión sensorial."
+        ],
+        "checkpoint": "✓ Al cerrar los 25 min: instructor hace survey visual — ¿quién escribió al menos 3 palabras? ≥85% = proceed. <85% = dar 5 min extra con consigna '*1 palabra más, en cualquier idioma*' (luego se traducirá en plenaria).",
+        "transition": "*Good work. You felt Andrea's pressure. You wrote your 4 words. Now read what happens in real ports when the radio call fails — and then take a side.*",
+        "tecnica_didactica": "Narrative immersion + Escritura libre de supervivencia individual"
+      },
+      {
+        "letra": "C",
+        "nombre": "Headline + Voto Cromático — Stakes del inglés portuario (PM-2.1 Momentos 3+4)",
+        "duracion_min": 60,
+        "worksheet_ref": "PM-2.1, Momentos 3 (News) + 4 (Debate)",
+        "agrupacion": "Parejas → Plenaria",
+        "objetivo": "Encarnar las consecuencias reales del inglés portuario fallido (titular News C) y posicionarse personalmente sobre la obligatoriedad del inglés en puertos colombianos (Debate D · voto cromático). Cierre del Spark con compromiso afectivo grupal.",
+        "instrucciones_paso_a_paso": [
+          "1. Momento 3 — News (30 min): Instructor proyecta el headline marítimo: '*ENGLISH FAILURE CAUSES CONTAINER COLLISION AT PACIFIC PORT — 2 injuries, USD 1.2 million in damages, 18-hour delay.*' (titular ficticio basado en patrón de incidentes reales OMI).",
+          "2. Lectura en parejas del breve (3 párrafos · 80 palabras EN + espejo ES cursivo) — cada pareja subraya 1 palabra que reconoce + 1 palabra que NO reconoce.",
+          "3. Plenaria 10 min: instructor pregunta '*¿Por qué pasó esto?*' (L1 permitido) — recoge 3-5 hipótesis de aprendices · escribe en LIVE ZONE.",
+          "4. Frase puente al M4: '*Now you read what happens when English fails. So — should English be obligatorio in Colombian ports? Or just nice-to-have? Take a side.*'",
+          "5. Momento 4 — Debate Voto Cromático (30 min): cada aprendiz recibe 1 marcador VERDE (sí, obligatorio) + 1 ROJO (no, nice-to-have) · 5 min de reflexión individual silenciosa.",
+          "6. Voto plenario: cada aprendiz pasa al tablero LIVE ZONE y marca su voto en una tabla pre-dibujada — 'OBLIGATORIO' (verde) vs 'NICE-TO-HAVE' (rojo).",
+          "7. Plenaria abierta 15 min: instructor invita 2-3 voluntarios de cada lado a justificar en español + 1 palabra inglés mínimo. CERO juicio · solo escucha.",
+          "8. Cierre del Spark (frase puente al WHILE D Gap): '*Now we know the stakes. Now — same morning, same radio, deeper questions — we measure exactly what English you have.*'"
+        ],
+        "teacher_talk_instruction": "*With your partner, read the headline. Three paragraphs. 5 minutes. Underline ONE word you know — green. Underline ONE word you don't know — red. Then we talk together. After that — green or red? Obligatorio English in our ports — or just nice-to-have? You vote. There is no wrong vote. Just your honest voice.*",
+        "icq": [
+          "*Green underline means...?* → Esperan: 'I know / I recognize'",
+          "*Red underline means...?* → Esperan: 'I don't know'",
+          "*Can I vote both green and red?* → Esperan: 'No / one vote / pick one'"
+        ],
+        "answer_key_inline": {
+          "headline_palabras_clave": [
+            "English failure · container collision · Pacific port · injuries · damages · delay"
+          ],
+          "respuestas_tipicas_por_que_paso": [
+            "El capitán no entendió la radio · El piloto no podía traducir · El operador de la grúa no sabía SMCP",
+            "The captain did not understand · The pilot could not translate · The crane operator did not know English"
+          ],
+          "voto_cromatico_pattern_esperado_S1": "70-90% verde (obligatorio) · 10-30% rojo (nice-to-have). Si rojo > 30% — perfecto · sirve de combustible para Misión Final S12 (probar lo contrario).",
+          "nota": "No evaluado. El voto es declaración política personal · queda en tablero foto + entra al portafolio del aprendiz como evidencia afectiva del Día 1."
+        },
+        "facilitation_notes": [
+          "💡 NUNCA juzgue el voto rojo — los aprendices que votan 'nice-to-have' suelen ser los más motivados después · su gap es de FE en sí mismos, no de actitud.",
+          "💡 Tome foto del LIVE ZONE con el voto cromático — la mostrará en S12 como 'antes vs ahora' (powerful moment).",
+          "💡 Si el debate se enciende mucho (esperable en cohortes con experiencia portuaria), no apague — pero límite a 15 min para respetar el timeline.",
+          "💡 Cierre con la voz baja: '*Whatever you voted today — Andrea needs you. Captain Lopera is calling. Are we ready?*'"
+        ],
+        "checkpoint": "✓ Voto cromático completo: 100% de aprendices marcaron una opción (verde o rojo). Si alguien se abstiene — respete · pídale que escriba en su Worksheet '*I am still thinking*' (no se lo presione).",
+        "transition": "*Break time — 15 minutes. Stretch, water, café. When you come back — we open four mirrors.*",
+        "tecnica_didactica": "Lectura cooperativa con marcado dual (verde/rojo) + Posicionamiento personal con voto cromático plenario"
+      },
+      {
+        "letra": "D",
+        "nombre": "KWL Chart Maritime — What I Know · What I Want · What I'll Learn (PM-2.2 Momento 1)",
+        "duracion_min": 30,
+        "worksheet_ref": "PM-2.2, Momento 1 — Gap KWL",
+        "agrupacion": "Individual → Plenaria",
+        "objetivo": "Cartografiar saberes maritime previos del aprendiz en 3 columnas KWL (K = lo que ya sé · W = lo que quiero saber para hacer el trabajo de Andrea · L = lo que aprenderé · queda vacía hasta S12). El KWL grupal queda visible en pared 12 sesiones como agenda viva.",
+        "instrucciones_paso_a_paso": [
+          "1. Distribuir KWL Chart Maritime handout · 3 columnas con prompts EN+ES cursivo.",
+          "2. Instructor lee instrucción bilingüe: '*Open your KWL Chart. Three columns: K = what I KNOW about port and ship English already · W = what I WANT to know to do Andrea's job · L = what I'LL LEARN (you complete this column in Session 12). Write in English where you can, in Spanish where you can't yet — both are welcome today.*'",
+          "3. 15 min individuales: aprendices completan K + W (L queda vacía).",
+          "4. Reciclar las 4 survival words como semilla de K: '*Already in your K column you can write: port · berth · vessel · radio. You learned them today.*'",
+          "5. KWL grupal en papelógrafo (15 min plenaria): cada aprendiz aporta 1 ítem a K + 1 ítem a W. Instructor escribe en columnas correspondientes.",
+          "6. Cierre: '*This KWL stays on the wall for 12 sessions. We will fill the L column slowly — Session 3, Session 6, Session 9, Session 12. Today, K and W only.*'"
+        ],
+        "teacher_talk_instruction": "*Look at your KWL — three columns. K is what you already know about Maritime English. W is what you want to know to do Andrea's job at Berth 4. L stays blank — that's for Session 12. 15 minutes silent. Write English where you can, Spanish where you can't. Both ok today. Music on.*",
+        "icq": [
+          "*Do I write in column L today?* → Esperan: 'No / leave blank / Session 12'",
+          "*Can I write in Spanish?* → Esperan: 'Yes / both / English where I can'",
+          "*How many minutes?* → Esperan: '15 / fifteen'"
+        ],
+        "answer_key_inline": {
+          "K_know_ejemplos_esperados_A1.2": [
+            "port · berth · vessel · radio (de hoy mismo)",
+            "Greetings: Good morning · Hello · Hi · Goodbye",
+            "Numbers 1-20 (berth numbers · ship sizes)",
+            "Yes / No / Please / Thank you",
+            "Cualquier palabra inglesa que recuerden de A1.1 (school · home · family etc · validar todas)"
+          ],
+          "W_want_ejemplos_esperados": [
+            "How to answer Captain Lopera on the VHF radio",
+            "How to say the parts of a vessel (bow, stern, port side, starboard)",
+            "How to report what is happening on the dock",
+            "How to ask the pilot or stevedore for help",
+            "Cómo dar instrucciones por radio · Cómo escribir un Inspection Report"
+          ],
+          "L_columna": "VACÍA en S1. Se completa progresivamente: S3 (Reading anchor) · S6 (VHF Speaking) · S9 (Master Functions) · S12 (Misión Final)."
+        },
+        "facilitation_notes": [
+          "💡 Acepte respuestas en español — no traduzca · solo valide '*Yes, that's a good one.*'",
+          "💡 El KWL grupal es objeto físico CRÍTICO — péguelo en pared visible · NO lo mueva durante 12 sesiones.",
+          "💡 Si la columna W está pobre (<5 ítems grupales) · agregue 5 min de brainstorm: '*What does Andrea need to do TOMORROW? She arrives Day 2 — she needs ___.*'"
+        ],
+        "checkpoint": "✓ KWL grupal en papelógrafo tiene ≥10 ítems en K + ≥10 ítems en W. Si menos: dar 3 min extra de plenaria.",
+        "transition": "*Now you wrote what you KNOW in words. Next, look at a real vessel — the BUENAVENTURA EXPRESS — and mark what you SEE.*",
+        "tecnica_didactica": "Think-Pair-Share con tabla KWL bilingüe + Construcción de organizador visual grupal"
+      },
+      {
+        "letra": "E",
+        "nombre": "Diagnosis Visual — BUENAVENTURA EXPRESS en Berth 4 (PM-2.2 Momento 2)",
+        "duracion_min": 35,
+        "worksheet_ref": "PM-2.2, Momento 2 — Gap Diagnosis Visual",
+        "agrupacion": "Individual → Parejas → Plenaria breve",
+        "objetivo": "Reconocer visualmente 6 partes del buque BUENAVENTURA EXPRESS (bow · stern · port side · starboard · hull · deck) + 4 zonas portuarias (berth · dock · gantry crane · warehouse) y discriminar honestamente lo que YA puede nombrar en inglés vs lo que NO aún. Marcado dual con marcador VERDE (sé) + ROJO (no sé).",
+        "instrucciones_paso_a_paso": [
+          "1. Distribuir diagnosis sheet A3 con vista lateral del BUENAVENTURA EXPRESS atracado en Berth 4 · 6 partes numeradas + 4 zonas portuarias numeradas.",
+          "2. Instructor lee instrucción bilingüe: '*The vessel has six numbered parts and the dock has four numbered zones. Use a GREEN marker to circle what you can already name in English. Use a RED marker to circle what you cannot name yet. No translation help — only your honest eye.*'",
+          "3. 10 min individuales: cada aprendiz marca verde/rojo en su sheet. Instructor circula sin corregir.",
+          "4. 15 min en parejas: comparar marcado · sin enseñarse mutuamente · solo observar diferencias '*¿Tú marcaste verde lo que yo marqué rojo? Cuéntame.*' (L1 permitido).",
+          "5. 10 min plenaria breve: instructor pregunta '*Which numbers were the easiest? Which were the hardest?*' — recoge patrón grupal · escribe en LIVE ZONE 'EASY: ___' / 'HARD: ___'.",
+          "6. Instructor NO revela las respuestas correctas en S1 — '*The answers come in Session 3, when we read about the ship. Today we just MAP the gap.*'"
+        ],
+        "teacher_talk_instruction": "*Look at the BUENAVENTURA EXPRESS. Six parts. Four port zones. Green marker — I can name this. Red marker — I cannot name this yet. Be honest. No phone, no Google, no partner help yet. 10 minutes. Just YOU and the ship.*",
+        "icq": [
+          "*What does green mean?* → Esperan: 'I know / I can name'",
+          "*What does red mean?* → Esperan: 'I don't know yet'",
+          "*Can I ask my partner first?* → Esperan: 'No / alone first / 10 minutes'"
+        ],
+        "answer_key_inline": {
+          "respuestas_correctas_NO_REVELADAS_HOY": "Las respuestas reales (bow · stern · port side · starboard · hull · deck · berth · dock · gantry crane · warehouse) se trabajan formalmente en S3 (Reading Master Anchor UNIT 1 SHIP OVERVIEW). En S1 SOLO se mapea el gap — no se enseña.",
+          "patron_esperado_S1_A1.2_inicial": "Promedio 1-3 verdes de 10 + 7-9 rojos. Es el piso esperado — celebrarlo como honestidad valiente.",
+          "ship_parts_referencia_para_instructor": [
+            "1 = bow (proa) · 2 = stern (popa) · 3 = port side (babor) · 4 = starboard (estribor) · 5 = hull (casco) · 6 = deck (cubierta)"
+          ],
+          "port_zones_referencia_para_instructor": [
+            "7 = berth (atraque) · 8 = dock (muelle) · 9 = gantry crane (grúa pórtico) · 10 = warehouse (bodega)"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 NO REVELE las respuestas correctas hoy — el suspenso pedagógico es el motor de S3 Reading.",
+          "💡 Si un aprendiz marca 10 verdes (autopercepción inflada): respete · el BUG se auto-corregirá en S3 cuando lea el texto y vea lo que faltaba.",
+          "💡 Si un aprendiz marca 10 rojos (autopercepción deflactada): valide '*Honest is brave. Now we have 12 sessions to fill those reds with greens.*'",
+          "💡 Tome foto de 3-4 sheets representativos · entran a su carpeta de evidencias del Día 1 para mostrar progreso en S12."
+        ],
+        "checkpoint": "✓ ≥85% de los aprendices tienen las 10 zonas marcadas (verde o rojo). Si quedan zonas sin marcar — pregunte '*¿En blanco significa qué? Tienes que elegir verde o rojo · no hay tercera opción.*'",
+        "transition": "*Good. You see the gap. Now — let's go deeper. Where exactly are YOUR blind spots in maritime English?*",
+        "tecnica_didactica": "Autoevaluación visual con marcado dual (verde/rojo) + comparación cruzada en parejas"
+      },
+      {
+        "letra": "F",
+        "nombre": "Gap Card Maritime — Personal Blind Spots por Sub-bloque RAP (PM-2.2 Momento 3)",
+        "duracion_min": 30,
+        "worksheet_ref": "PM-2.2, Momento 3 — Gap Card",
+        "agrupacion": "Individual silencioso (instructor se retira)",
+        "objetivo": "Cada aprendiz identifica honestamente sus blind-spots por 4 áreas operacionales clave del Port Operations Trainee: (A1) VHF Comms · (A2) Ship Parts · (A3) Port Operations · (A4) SMCP literacy. Diagnóstico personal sin juicio · input para Learning Contract en WRAP-UP.",
+        "instrucciones_paso_a_paso": [
+          "1. Distribuir Gap Card maritime · 4 áreas con escala 1-5 (1 🔴 nada · 2 🟠 he escuchado · 3 🟡 sé un poco · 4 🟢 puedo en situaciones simples · 5 🔵 fluido).",
+          "2. Instructor lee instrucción central: '*This is your Maritime Gap Card. Four areas. Rate yourself 1 to 5. Red to Blue. Be honest. There is no grade. This is for YOU — not for me. I will NOT look at your card. 25 minutes. Silent work. Music on.*'",
+          "3. Instructor se retira al frente del aula — explícitamente NO circula. Lectura visible de un cuaderno = modelado de '*no estoy mirando tu puntaje*'.",
+          "4. Aprendices marcan 1-5 en cada área + suman total (4-20).",
+          "5. Reflection field final: '*One honest sentence about me as a Maritime English learner today.*' (1 oración · español ok).",
+          "6. Cierre: instructor regresa cuando los 25 min terminan + da 5 min para cualquiera que falte."
+        ],
+        "teacher_talk_instruction": "*Now — the Maritime Mirror. Four areas of port and ship English. Rate yourself 1 to 5. Red to Blue. Be REAL. No grade. No teacher watching. I step away. 25 minutes. Music on. Silence.*",
+        "icq": [
+          "*Will I get a grade?* → Esperan: 'No / no grade'",
+          "*Should I lie if I'm bad?* → Esperan: 'No / be honest / be real'",
+          "*Will the teacher look?* → Esperan: 'No / he steps away'",
+          "*How long?* → Esperan: '25 minutes'"
+        ],
+        "answer_key_inline": {
+          "nota": "Self-assessment — no hay respuesta correcta. Patrón observado: la mayoría se auto-puntúa 1-2 en VHF Comms y SMCP literacy en S1 (esperable · es el piso del RAP-CC-INTEGRADO). Ship Parts y Port Operations pueden tener algún 3 si el aprendiz tiene experiencia previa portuaria.",
+          "total_esperado_promedio_A1.2_inicio": "4-10 / 20 (es decir: promedio 1-2.5 por área)",
+          "areas_diagnosticadas": [
+            "A1 VHF Comms (responder a Captain Lopera por radio)",
+            "A2 Ship Parts (nombrar las 6 partes del BUENAVENTURA EXPRESS)",
+            "A3 Port Operations (describir lo que pasa en Berth 4)",
+            "A4 SMCP literacy (Roger · Wilco · Standby · Over · Out)"
+          ]
+        },
+        "facilitation_notes": [
+          "💡 CRÍTICO — no circule. Si lo ven mirar, comprometen la honestidad del diagnóstico.",
+          "💡 Si alguien pregunta '*¿debo ser duro conmigo?*' responda: '*Be real. Just real.*'",
+          "💡 Si alguien se auto-puntúa 5 en todo: respete — el BUG de autopercepción es auto-corregible en S3-S5 con tarea real (Reading + VHF Listening).",
+          "💡 Música instrumental marítima muy baja — sonidos de puerto suaves (gaviotas · radios distantes) · refuerza inmersión sin distraer."
+        ],
+        "checkpoint": "✓ ≥90% de los aprendices tienen las 4 áreas puntuadas + total + reflection field escrito. Si falta — dar 5 min extra silenciosos.",
+        "transition": "*You looked at yourself. Now — turn to your partner. You will hear another trainee's gaps · they will hear yours.*",
+        "tecnica_didactica": "Autoevaluación diagnóstica (escala cualitativa 1-5) + metacognición reflexiva con instructor retirado"
+      },
+      {
+        "letra": "G",
+        "nombre": "Peer Interview — Andrea entrevista a otro trainee (PM-2.2 Momento 4)",
+        "duracion_min": 25,
+        "worksheet_ref": "PM-2.2, Momento 4 — Gap Peer Interview",
+        "agrupacion": "Parejas",
+        "objetivo": "Comparar saberes entre 2 aprendices con guion de 5 preguntas estructuradas (en EN+ES cursivo). Cada uno descubre que el gap NO es solo suyo — es compartido · normaliza la vulnerabilidad maritime. Cierre del Gap Analysis con descubrimiento social.",
+        "instrucciones_paso_a_paso": [
+          "1. Formar parejas heterogéneas (mezclar quien marcó muchos verdes con quien marcó muchos rojos en Diagnosis Visual).",
+          "2. Distribuir Peer Interview Card · 5 preguntas: '*(1) What is the easiest English word for you today? (2) What is the hardest? (3) What part of Andrea's job feels closest to your real life? (4) What would you tell Andrea on Day 1? (5) On a scale of 1-5, how ready do you feel for Session 12?*'",
+          "3. Aprendiz A entrevista a Aprendiz B (10 min) · luego rotación · B entrevista a A (10 min).",
+          "4. Permiso explícito de español: '*You can answer in Spanish. But try ONE answer in English.*'",
+          "5. Plenaria breve 5 min: '*¿Quién encontró que su pareja tiene un gap parecido al suyo?*' Mano levantada · sin nombres específicos.",
+          "6. Cierre conmovido: '*You are not alone. We all start at Day 1 together. Now — let's seal our promises.*'"
+        ],
+        "teacher_talk_instruction": "*Pairs. Five questions. A asks B for 10 minutes. Then B asks A for 10 minutes. Spanish ok — but try ONE answer in English. Listen — don't fix. Don't teach. Just listen. Go.*",
+        "icq": [
+          "*Who asks first?* → Esperan: 'A / first one'",
+          "*Can I correct my partner's English?* → Esperan: 'No / just listen / no teach'",
+          "*Can my partner answer in Spanish?* → Esperan: 'Yes / Spanish ok / one in English'"
+        ],
+        "answer_key_inline": {
+          "preguntas_pattern_esperado": [
+            "P1 Easiest word: '*radio · port · yes*' (palabras cortas + ya conocidas)",
+            "P2 Hardest word: '*starboard · gantry · stevedore*' (palabras técnicas SMCP-adyacentes)",
+            "P3 Closest to real life: '*Andrea is from Buenaventura · I am too · Andrea has fear · I have fear*'",
+            "P4 What I'd tell Andrea: '*Tranquila · You can do it · Vamos*'",
+            "P5 Readiness 1-5 for S12: '*1 or 2 · es muy lejos · necesito mucho*' (esperable · es S1)"
+          ],
+          "nota": "No evaluado. La meta es PRACTICAR escucha activa de pares + descubrir solidaridad en gaps."
+        },
+        "facilitation_notes": [
+          "💡 Si una pareja se queda en silencio · acérquese · modele 1 pregunta: '*[A], what is the easiest English word for you today?*'",
+          "💡 No fuerce que respondan en inglés · una palabra inglés mínima ya es éxito en S1.",
+          "💡 Tome nota mental de las respuestas P3 (closest to real life) — son oro para personalizar S2 y vincular el aprendizaje al territorio del aprendiz.",
+          "💡 La pregunta P5 (readiness for S12) baja la presión — es OK estar en 1-2 hoy."
+        ],
+        "checkpoint": "✓ Las parejas hablan activamente (no en silencio). Si una pareja se traba · instructor interviene 1 min con modelado de pregunta.",
+        "transition": "*Beautiful work. You heard each other. Now — one final ceremony. We sign our Maritime Learning Contracts.*",
+        "tecnica_didactica": "Entrevista estructurada en parejas con guion bilingüe + escucha activa sin corrección"
+      }
+    ],
+    "breaks": [
+      {
+        "tiempo": "2:15-2:30",
+        "duracion_min": 15,
+        "tipo": "Receso activo (café + baño + estiramiento)",
+        "notas": "Recordar hidratación. Mantener English Zone si alguien pregunta algo técnico — pero el receso permite libre L1. Usar el break para preparar el papelógrafo KWL + cards de Diagnosis Visual."
+      }
+    ]
+  },
+  "wrap_up": {
+    "duracion_min": 30,
+    "exit_ticket": {
+      "tarea": "Exit Ticket S1 — Tarjeta 10×15 cm con 3 líneas: (1) ONE English maritime word I learned today (+ stress mark · ej: VES-sel) · (2) ONE thing I understand better now (in English or Spanish) · (3) ONE question I still have about Andrea or about Maritime English. Entregar en la caja del instructor antes de salir.",
+      "success_criteria": "Las 3 líneas completas. Mínimo 1 palabra inglés con stress marcado. La pregunta puede ser en español. La caja se abre y se lee S2 warm-up (sin nombrar autores).",
+      "duration_min": 10
+    },
+    "sintesis": "Hoy viviste la primera mañana de Andrea Mosquera en Berth 4 del Puerto de Buenaventura. Aprendiste 4 survival words: PORT · BERTH · VES-sel · RA-dio. Mapaste tus gaps con KWL + Diagnosis Visual + Gap Card + Peer Interview. Firmaste tu Maritime Learning Contract con 3 prioridades personales — sellado en sobre amarillo · se abre en S12. Tu English Zone está activada. Mañana — Sesión 2 — caminamos al muelle a aprender los primeros 5 términos del Toolbelt portuario.",
+    "asignacion_autonoma": {
+      "actividad": "Maritime KWL Pre-Llenado + 5 Fotos del Puerto · 2.33 horas autónomas (≈140 min)",
+      "instrucciones_detalladas": [
+        "1. Durante la semana, observa tu entorno con ojos de Port Operations Trainee.",
+        "2. Toma 5 fotos (con celular o recortes de revistas) de elementos portuarios o marítimos que reconozcas: muelles · grúas · contenedores · barcos · letreros marítimos.",
+        "3. Para cada foto, anota en español: ¿Qué elemento portuario reconoces? ¿Qué palabra inglés crees que se llama?",
+        "4. Pre-llena la columna K (Know) del Maritime KWL chart con 5 palabras maritime que conoces hoy (ej: port · berth · vessel · radio + 1 más libre).",
+        "5. Pre-llena la columna W (Want) con 5 cosas que quieres saber para hacer el trabajo de Andrea (ej: ¿Cómo decir 'quédese en stand-by' por radio? · ¿Cómo se llama la grúa amarilla en inglés?).",
+        "6. Llevar todo a S2 — se compartirá en warm-up (5 min · sin evaluación)."
+      ],
+      "entregable": "5 fotos físicas o digitales + Maritime KWL chart con K llena (5 ítems) + W llena (5 ítems) + L vacía.",
+      "cuando_se_revisa": "S2 warm-up (5 min) — compartir 1 foto con compañero + agregar 3 palabras nuevas a la columna K del KWL grupal en pared. Sin evaluación formal · el instructor valida presencia (entregó / no entregó).",
+      "tiempo_estimado_min": 140,
+      "tiempo_estimado_horas": 2.333333
+    },
+    "bridge_to_next": "*Next session — Session 2: The Port Word Walker — Vocabulary of the Quay. We learn 5 maritime terms: BOL-lard · CRANE · BOW · STERN · BRIDGE. We sign your Learning Contract officially. We walk to the muelle in our minds. Bring your 5 photos and your KWL.*",
+    "teacher_talk_closing_en": "*Team — today was big. You met Andrea. You met Captain Lopera. You met yourselves — your gaps, your hopes, your contracts. You learned 4 maritime words. You signed your promise — sealed in the yellow envelope, safe with me until Session 12. This is a gift to your future selves. Next Monday — Session 2 — we open the Toolbelt. Bring your photos. Bring your KWL. Come rested. Come hungry for words. Welcome to the port, Junior Trainees. ¡Bienvenidos al puerto!*",
+    "teacher_talk_closing_es_cursive": "*(Equipo, hoy fue grande. Conociste a Andrea. Conociste al Capitán Lopera. Te conociste a ti mismo — tus gaps, tus esperanzas, tu contrato. Aprendiste 4 palabras marítimas. Firmaste tu promesa — sellada en el sobre amarillo, a salvo conmigo hasta la Sesión 12. Es un regalo para tu yo futuro. El próximo lunes — Sesión 2 — abrimos el Toolbelt. Trae tus fotos. Trae tu KWL. Ven descansado. Ven con hambre de palabras. Bienvenidos al puerto, Aprendices Junior.)*",
+    "reflection_prompt": "Antes de salir · 30 segundos de silencio: '*¿Qué versión de mí entró a esta aula esta mañana? ¿Qué versión de mí sale ahora?*' (no se responde en voz alta · solo se siente).",
+    "facilitation_notes": [
+      "💡 Cierre con energía positiva. S1 es emocional — que se vayan con sensación de pertenencia maritime.",
+      "💡 La ceremonia de firma del Learning Contract es SOLEMNE — no apresure. 60 segundos de silencio después de las firmas. Música suave de puerto.",
+      "💡 Si un aprendiz llora o muestra emoción fuerte: respete — S1 puede ser catártica para quienes 'nunca entendieron inglés' antes de IMARPOR-CC.",
+      "💡 Los sobres amarillos (color marítimo de zona de carga peligrosa) son objeto físico poderoso — guárdelos en una caja visible del instructor toda la guía.",
+      "💡 Si queda tiempo (<3 min): aplauso grupal de bienvenida al puerto. No subestime el valor simbólico."
+    ]
+  },
+  "answer_key_consolidado": [
+    {
+      "actividad": "WHILE A — The Map (PM-2.1 Momento 1)",
+      "items": [
+        {
+          "pregunta": "Las 6 zonas del Terminal Buenaventura",
+          "respuesta_correcta": "Berth 4 · Port Captain Office · Container Yard · Pilot Station · VHF Radio Tower · Customs Gate",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "No evaluado — diagnóstico visual"
+        },
+        {
+          "pregunta": "Survival words activadas en M1",
+          "respuesta_correcta": "port /pɔːrt/ · berth /bɜːrθ/",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE B — Andrea's First Radio Call (PM-2.1 Momento 2)",
+      "items": [
+        {
+          "pregunta": "¿Cuántas palabras escribe el aprendiz como Andrea?",
+          "respuesta_correcta": "4 palabras inglés (sin evaluación · cualquier 4)",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Wrong answers welcome — diagnóstico afectivo"
+        },
+        {
+          "pregunta": "Survival words activadas en M2",
+          "respuesta_correcta": "vessel /ˈvesəl/ (VES-sel) · radio /ˈreɪdiəʊ/ (RA-dio)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuáles son los 3 stakes si Andrea no responde?",
+          "respuesta_correcta": "(1) Captain Lopera cambia berth · puerto pierde tiempo+dinero · (2) Capitán Restrepo escribe nota en reporte · (3) Andrea pierde confianza Día 1",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE C — Headline + Voto Cromático (PM-2.1 Momentos 3+4)",
+      "items": [
+        {
+          "pregunta": "Palabras clave del headline marítimo",
+          "respuesta_correcta": "English failure · container collision · Pacific port · 2 injuries · USD 1.2 million damages · 18-hour delay",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Voto cromático esperado patrón S1",
+          "respuesta_correcta": "70-90% verde (obligatorio) · 10-30% rojo (nice-to-have)",
+          "alternativas": ["Cualquier distribución es válida — no hay voto correcto"],
+          "puntos": 0,
+          "nota": "Voto político personal · no evaluado"
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE D — KWL Chart Maritime (PM-2.2 Momento 1)",
+      "items": [
+        {
+          "pregunta": "¿Cuántas columnas tiene el KWL?",
+          "respuesta_correcta": "3 (K = Know · W = Want to know · L = Learned)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuándo se completa la columna L?",
+          "respuesta_correcta": "Progresivamente en S3 · S6 · S9 · S12 (no en S1)",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE E — Diagnosis Visual BUENAVENTURA EXPRESS (PM-2.2 Momento 2)",
+      "items": [
+        {
+          "pregunta": "6 partes del buque (referencia instructor · NO revelar S1)",
+          "respuesta_correcta": "1=bow · 2=stern · 3=port side · 4=starboard · 5=hull · 6=deck",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Respuestas se trabajan formalmente en S3 Reading Master Anchor"
+        },
+        {
+          "pregunta": "4 zonas portuarias (referencia instructor · NO revelar S1)",
+          "respuesta_correcta": "7=berth · 8=dock · 9=gantry crane · 10=warehouse",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE F — Gap Card Maritime (PM-2.2 Momento 3)",
+      "items": [
+        {
+          "pregunta": "¿Cuántas áreas se autoevalúan?",
+          "respuesta_correcta": "4 (A1 VHF Comms · A2 Ship Parts · A3 Port Operations · A4 SMCP literacy)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "Escala usada",
+          "respuesta_correcta": "1 🔴 nada · 2 🟠 he escuchado · 3 🟡 sé un poco · 4 🟢 puedo en situaciones simples · 5 🔵 fluido",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WHILE G — Peer Interview (PM-2.2 Momento 4)",
+      "items": [
+        {
+          "pregunta": "¿Cuántas preguntas tiene el guion?",
+          "respuesta_correcta": "5 preguntas estructuradas",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuánto dura cada turno?",
+          "respuesta_correcta": "10 min A→B + 10 min B→A",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    },
+    {
+      "actividad": "WRAP-UP — Maritime Learning Contract",
+      "items": [
+        {
+          "pregunta": "¿Cuántas prioridades firma el aprendiz?",
+          "respuesta_correcta": "3 prioridades personales (derivadas de los 3 puntajes más bajos del Gap Card)",
+          "alternativas": [],
+          "puntos": 0
+        },
+        {
+          "pregunta": "¿Cuándo se reabre el contrato?",
+          "respuesta_correcta": "Sesión 12 — CML Port Turnaround Mission · ceremonial reapertura del sobre amarillo",
+          "alternativas": [],
+          "puntos": 0
+        }
+      ]
+    }
+  ],
+  "differentiation": {
+    "fast_finishers": [
+      "En WHILE A: dibujar la silueta del BUENAVENTURA EXPRESS atracando en Berth 4 + etiquetar 3 partes en inglés.",
+      "En WHILE B: escribir 6 palabras inglés (en lugar de 4) que diría como Andrea + 1 frase completa de bonus.",
+      "En WHILE D: agregar 3 ítems extra en columna W (cosas que quiere saber sobre el puerto).",
+      "En WHILE F: agregar reflection field en inglés (en lugar de español).",
+      "En WHILE G: hacer Peer Interview 100% en inglés (con permiso de cambiar a español 2 veces máximo).",
+      "Rol de peer tutor en WRAP-UP: ayudar a un compañero a redactar 1 prioridad del Learning Contract."
+    ],
+    "more_support_needed": [
+      "Tiempo extra en WHILE A (hasta 60 min) si la lectura del mapa A4 es lenta — acompañamiento individual del instructor.",
+      "En WHILE B — permitir que escriban las 4 palabras en español primero · luego buscar 2 en inglés con apoyo del Maritime Word Wall.",
+      "En WHILE D — ofrecer KWL pre-rellenado con 3 ítems modelo en columna K (port · berth · radio) para arrancar.",
+      "En WHILE E — permitir que un compañero les diga 1 palabra como ejemplo (1 sola · luego siguen solos).",
+      "En WHILE F — ofrecer Gap Card con ejemplos pre-rellenados para 1 área como modelo (ej: 'A2 Ship Parts: 1 🔴 — I don't know any ship part name yet').",
+      "En WRAP-UP — permitir que escriban el Learning Contract 100% en español si la presión afectiva es alta · la versión bilingüe se completa en casa antes de S2.",
+      "Contacto uno-a-uno al final de la sesión: '*How was your Day 1? How can I help you for Session 2? Bring me a coffee on Monday — I'll explain the Toolbelt 5 minutes before class.*'"
+    ]
+  },
+  "instructor_self_check": [
+    "✓ ¿Declaré la English Zone con dibujo ceremonial 🔵 + cinta azul en el piso en el primer minuto de SET-UP?",
+    "✓ ¿Modelé el stress de las 4 survival words (PORT · BERTH · VES-sel · RA-dio) con choral repetition + finger drilling al menos 2 veces durante la sesión?",
+    "✓ ¿Me retiré físicamente durante el WHILE F Gap Card Maritime para proteger la honestidad del autodiagnóstico?",
+    "✓ ¿La ceremonia de firma del Maritime Learning Contract tuvo silencio + solemnidad + sellado en sobre amarillo + guardado en caja visible?",
+    "✓ ¿Terminé con preview explícito de S2 (Toolbelt 5 términos: BOL-lard · CRANE · BOW · STERN · BRIDGE · entrega de KWL pre-llenado + 5 fotos)?"
+  ],
+  "activity_logistics": {
+    "espacio": "Aula bilingüe en U o mesas de 4 (re-arregladas según bloque). English Zone señalizada con cinta azul marítima en el piso. Maritime Word Wall vacío activado en pared lateral con 4 tarjetas survival words. Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 en muro frontal y lateral.",
+    "agrupamiento": "Plenaria → Individual silencioso (WHILE B + F) → Parejas heterogéneas (WHILE A + E + G) → Plenaria de cierre (WRAP-UP). Transiciones explícitas con Teacher Talk corto (max 30 seg cada cambio).",
+    "recursos": [
+      "Proyector + bocinas (audio Andrea's First Radio Call probado)",
+      "Tablero blanco grande con 4 zonas demarcadas (English Zone + Title + Survival Words + LIVE ZONE)",
+      "Maritime Word Wall pared lateral",
+      "Mapa Terminal Buenaventura A2 + mini-mapas A4 por aprendiz",
+      "Diagrama Ship Overview A2 (BUENAVENTURA EXPRESS lateral)",
+      "Cinta azul marítima (English Zone)",
+      "Marcadores VERDE + ROJO (1 set por pareja)",
+      "Papelógrafo grande KWL grupal (queda en pared 12 sesiones)",
+      "Sobres amarillos sellables (1 por aprendiz · Maritime Learning Contract)",
+      "Cronómetro visible en pantalla",
+      "Música instrumental marítima muy baja (sonidos de puerto suaves)"
+    ],
+    "tiempo": {
+      "set_up": 30,
+      "while_total": 280,
+      "break": 15,
+      "wrap_up": 30,
+      "total_directo_min": 360,
+      "autonomo_min": 140,
+      "autonomo_horas": 2.333333,
+      "total_aprendiz_horas": 8.333
+    },
+    "plan_b": "Si proyector falla: usar mapa A2 de muro como infografía A. Si audio Andrea's First Radio Call falla: instructor lee la narrativa en voz alta 2 veces lentamente (representa Captain Lopera con voz B2). Si <50% asistencia: aplazar firma Learning Contract a S2 + repetir M2 Spark. Si energía baja: agregar 5 min icebreaker físico (movimiento + risa) entre WHILE C y D · NO comprometer el WHILE F (autoevaluación) por agregar tiempo arriba."
+  },
+  "totals_check": {
+    "set_up": 30,
+    "while_bloque_a": 45,
+    "while_bloque_b": 60,
+    "while_bloque_c": 60,
+    "break": 15,
+    "while_bloque_d": 30,
+    "while_bloque_e": 35,
+    "while_bloque_f": 30,
+    "while_bloque_g": 25,
+    "wrap_up": 30,
+    "total_min": 360,
+    "check_result": "EXACTO 360 min directos (6h) + 140 min autónomo (≈2.33h) = 500 min totales = 8.33h aprendiz S1. Coherente con header.duracion_sesion_min de pm-3-1 + horas autónomas pm-2-0 sessions[0]."
+  },
+  "data_flow_contract": {
+    "activity_logistics": {
+      "canon_version": "2.6-dataflow-inversion-2026-04-20",
+      "keyed_by": "pm-3-6 activity_id",
+      "consumed_by": "scripts/derive_activity_footer_from_playbook.js"
+    },
+    "downstream_consumers": [
+      "PM-3.3 Canva Slides — referencias a Mapa Buenaventura + Welcome slides + 4 survival word cards",
+      "PM-3.4 Workbook — Maritime KWL Chapter 1 + 5 fotos del puerto autonomous task",
+      "PM-3.6 Activity Logistics — A1.1.1 to A1.1.7 IDs derivados de WHILE A-G",
+      "PM-2.11 Check 14 — validación propagación estrategia_didactica + tecnicas[] + pm0_protocol cross-ref"
+    ]
+  },
+  "rap_status": "S1 completada (preliminary · pendiente Gate Humano 3) — Maritime Learning Contract firmado + Maritime KWL grupal creado + Diagnosis Visual mapeada + Gap Card personal completada + Peer Interview ejecutada + 4 survival words activadas (port · berth · vessel · radio). NO genera evidencia formal (E1-E6 no activos en S1 per pm-3-1.overview_table[0].evidencia='—'). Umbral de S2 (Toolbelt 5 términos Sub-bloque 1) abierto.",
+  "pm0_protocol": {
+    "__inherited_from__": "pm-3-1.json.pm0_alignment_by_session[0]",
+    "__contract_version__": "v2.5.1 (mapping per pm-3-1.pm_3_2_propagation_contract)",
+    "fpi_block": "3.1 Reflexión Inicial",
+    "grammar_groups": {
+      "intro": [],
+      "consolida": [],
+      "aplica": [],
+      "carga_check": "0/2 Intro — S1 es sesión de diagnóstico sin enseñanza gramatical explícita (PM-0 §9.2) ✓",
+      "active_receptive_only": [
+        {
+          "group_id": "Gr 1",
+          "group_name": "Verbo be (afirmativo contraído · reciclaje receptivo)",
+          "nivel_activacion": "Reciclaje receptivo",
+          "ejemplo_en_sesion": "Teacher Talk: 'I am Sergio. This is the Terminal de Contenedores. Andrea is a Port Operations Trainee.' (sin análisis formal)"
+        },
+        {
+          "group_id": "Gr 5",
+          "group_name": "Imperativo afirmativo (reciclaje receptivo)",
+          "nivel_activacion": "Reciclaje receptivo",
+          "ejemplo_en_sesion": "Teacher Talk: 'Open your notebook. Look at the photo. Share with your partner. Listen to the radio.' (sin análisis formal)"
+        }
+      ]
+    },
+    "feedback": {
+      "mode": "ACCURACY",
+      "rationale": "Día 1 prioriza precisión en chunks sociales fijos (greetings + 4 survival words maritime). Fluency vendrá desde S6. PM-0 §5.11 + shifts_metodologicos.Bloque_Interno_1.",
+      "accuracy_techniques": [
+        "Choral repetition en saludos + 4 survival words Toolbelt portuario base",
+        "Finger drilling muy breve (3-5 reps) para palabras tónicas (port · berth · vessel · radio)",
+        "Modelo-eco (instructor dice → clase repite)",
+        "Recast suave + Reformulación positiva (CERO corrección invasiva en S1)"
+      ],
+      "fluency_techniques": [],
+      "mixed_techniques": [],
+      "notes": "S1 NO tiene corrección invasiva. Errores se modelan recasted sin interrumpir flujo afectivo."
+    },
+    "l1_management": {
+      "l1_percentage": 25,
+      "l1_percentage_unit": "%",
+      "source": "pm-0-context.json l1_percentage_per_session.single_guide_12_sessions.Bloque_Interno_1_RAP01_A1.2.S1 — ≤ 25% (PM-0 §9.1 adaptado prereq A1.1 cubierto)",
+      "l1_rationale": "Día 1 establecer confianza y motivación. L1 dominante en welcome narrativo (Andrea + Captain Lopera + CML CARRIER) — onboarding al universo antes de contenido inglés. Curva más agresiva que MGV (30% S1) porque IMARPOR-CC asume A1.1 prereq.",
+      "english_zone_declaration": "Activada al inicio de SET-UP — cinta azul marítima en piso + círculo 🔵 dibujado en tablero. Acto constitutivo del curso 100h.",
+      "l1_allowed_for": [
+        "Welcome narrativo (presentación Andrea + Captain Lopera + Capitán Restrepo)",
+        "Stakes del headline marítimo (M3 Spark)",
+        "Justificación del voto cromático (M4 Spark)",
+        "Reflection field del Gap Card (M3 Gap · 1 oración)",
+        "Peer Interview (M4 Gap · permitido con 1 respuesta inglés mínima)",
+        "Firma del Maritime Learning Contract si presión afectiva alta"
+      ],
+      "reduction_strategy": "S2 → 20% L1 · S3 → 15% · S5 → 10% · curva descendente hacia 0% en S12 per pm-0-context.l1_percentage_per_session.single_guide_12_sessions"
+    },
+    "stress_pronunciation": {
+      "focus_words": [
+        {
+          "word": "port",
+          "ipa": "/pɔːrt/",
+          "tonica": "única (PORT · 1 syllable)"
+        },
+        {
+          "word": "berth",
+          "ipa": "/bɜːrθ/",
+          "tonica": "única (BERTH · 1 syllable)"
+        },
+        {
+          "word": "vessel",
+          "ipa": "/ˈvesəl/",
+          "tonica": "PRIMERA (VES-sel)"
+        },
+        {
+          "word": "radio",
+          "ipa": "/ˈreɪdiəʊ/",
+          "tonica": "PRIMERA (RA-dio)"
+        },
+        {
+          "word": "Buenaventura",
+          "ipa": "/bwenavenˈtuɾa/",
+          "tonica": "CUARTA (Buenaven-TU-ra) — pronunciación L1 mantenida por respeto territorial"
+        }
+      ],
+      "techniques": [
+        "Clapping silábico — 1 palmada por sílaba, fuerte en tónica",
+        "Board marking — MAYÚSCULA en sílaba tónica: 'VES-sel / RA-dio'",
+        "Finger drilling rápido (3-5 reps con énfasis en tónica)",
+        "Choral repetition modelo-eco (instructor → clase)"
+      ],
+      "board_marking": "Las 4 survival words quedan permanentes en columna lateral izquierda del tablero con stress en MAYÚSCULA + IPA en pequeño debajo · Maritime Word Wall las replica en pared lateral con foto.",
+      "notes": "S1 NO introduce SMCP (Roger/Wilco/Standby) ni NATO Phonetic — esos llegan en S5. S1 solo 4 survival words base.",
+      "source": "PM-0 §5.13 — Noticing de stress con soporte físico"
+    },
+    "success_vocabulary": {
+      "target_words": [
+        "port",
+        "berth",
+        "vessel",
+        "radio",
+        "captain",
+        "terminal",
+        "container",
+        "Buenaventura",
+        "trainee",
+        "operations"
+      ],
+      "factors_applied": [
+        "Sounds",
+        "Encounter",
+        "Self-expression"
+      ],
+      "operationalization": "Sounds: stress marking inicial de 5 palabras (port · berth · vessel · radio · Buenaventura) + IPA en Maritime Word Wall. Encounter: primer contacto controlado en Welcome presentation + Spark M1 (Map) + Spark M2 (Radio Call) + KWL columna K + Diagnosis Visual (múltiples exposiciones · ≥4 encuentros). Self-expression: cada aprendiz nombra 4 palabras maritime visibles del Terminal Buenaventura (puerto familiar) usando las 10 palabras target en el Learner's Worksheet PM-2.1 M2.",
+      "source": "PM-0 §5.5 (Memorización) + §5.10 (Factor SUCCESS)"
+    },
+    "physical_environment": "Aula bilingüe en U o mesas de 4. Proyector + tablero + English Zone señalizada con cinta azul. Maritime Word Wall vacío activado · 4 tarjetas survival words pegadas. Mapa Terminal Buenaventura A2 + Diagrama Ship Overview A2 en muros. Música instrumental marítima muy baja durante momentos individuales silenciosos.",
+    "cefr_descriptor_focus": {
+      "subnivel": "A1.2",
+      "habilidad_principal": "produccion_oral",
+      "descriptor_activo": "Produce palabras y frases aisladas. Nombra elementos visibles del muelle (port · berth · vessel · radio) tras modelado.",
+      "source": "pm-0-context.json cefr_descriptors_per_guide[0].descriptor_snapshot_por_bloque_interno.Bloque_Interno_1_S1-S3_RAP01_A1.2.produccion_oral"
+    },
+    "pedagogical_shift_hooks": {
+      "velocidad_input": "Lenta — pausas largas entre palabras, repetir cada frase 2x",
+      "extension_textos": "1-3 oraciones + apoyo visual obligatorio (foto puerto / diagrama buque)",
+      "andamiaje": "Alto — frames completos, word banks a la vista, visuales en cada slide, instrucciones bilingües unificadas",
+      "rol_docente": "Modelo central + driller activo + facilitador emocional del Día 1",
+      "source": "PM-0 §8 + shifts_metodologicos.Bloque_Interno_1"
+    },
+    "traceability_seed_22": {
+      "items_priorizados_para_esta_sesion": [
+        "A1 — Asignación subnivel A1.2 coherente (prereq A1.1 cubierto · BUG-PM31-001 fix aplicado)",
+        "B5 — Gestión L1 (25% tope S1)",
+        "B8 — Andamiaje alto (frames + visuales · bilingüe unificada)",
+        "C1 — Bloque FPI Reflexión Inicial",
+        "D1 — Contribuye al canon 55 (no formalmente · sí Maritime Learning Contract sellado para Misión Final S12)"
+      ],
+      "source": "PM-0 §7 — Instrumento de Trazabilidad Pedagógica (22 ítems)",
+      "nota": "Build-Out PM-3.2 debe completar checklist completo. Aquí se siembran los 5 más relevantes para S1 IMARPOR-CC."
+    }
+  }
+}
