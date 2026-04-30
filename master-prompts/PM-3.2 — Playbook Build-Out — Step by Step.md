@@ -10,8 +10,8 @@
 |-------|-------|
 | **Código** | PM-3.2 |
 | **Nombre** | Playbook Build-Out — Step by Step |
-| **Versión** | 2.5 |
-| **Last Verified** | 2026-04-20 |
+| **Versión** | 2.6 |
+| **Last Verified** | 2026-04-30 |
 | **Destinatario** | Instructor (documento interno, NO para el aprendiz) |
 | **Función** | Expandir UNA sesión del Playbook Outline (PM-3.1) a un plan de clase detallado, minuto a minuto, con Teacher Talk completo, answer keys, notas de facilitación, diferenciación **y propagación obligatoria de las estrategias didácticas definidas en PM-3.1 §11.2** |
 | **Analogía** | Si PM-3.1 es el guion de rodaje (qué escenas se filman cada día), PM-3.2 es el storyboard completo (cada toma, cada ángulo, cada línea de diálogo) |

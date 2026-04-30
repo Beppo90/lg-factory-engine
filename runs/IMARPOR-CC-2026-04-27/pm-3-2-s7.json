@@ -1,7 +1,7 @@
 {
   "pm_id": "PM-3.2",
   "pm_name": "Playbook Build-Out — Step by Step",
-  "pm_version": "2.5",
+  "pm_version": "2.6",
   "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
   "session": 7,
   "session_name": "The Two-Way Radio — Coordinating Berthing Operations",
@@ -510,7 +510,7 @@
       "actividad": "Listening Cloze SMCP en 3 audios reales canal IMO YouTube (anchorage · pilot boarding · cargo handling) + completar Radio Log con timestamps · 2.33 horas autónomas (≈140 min)",
       "instrucciones_detalladas": [
         "1. Buscar 3 audios cortos en canal IMO YouTube (o videos similares de la flota mercante OMI · sugerencia: 'IMO Maritime English' o 'SMCP example phrases'). Audios sugeridos: (a) ANCHORAGE — buque dropping anchor · (b) PILOT BOARDING — pilot embarcando · (c) CARGO HANDLING — operación de grúa portuaria.",
-          "2. Para cada audio (60-120 segundos cada uno): escuchar 2 veces · primero gist · segundo detalle.",
+        "2. Para cada audio (60-120 segundos cada uno): escuchar 2 veces · primero gist · segundo detalle.",
         "3. Llenar Radio Log autónomo con 3 entradas (1 por audio · timestamp puede ser estimado · canal yard/bridge/customs según contexto · summary 1 oración A2.0 con al menos 1 grammar marker color).",
         "4. Identificar al menos 1 SMCP key phrase en cada audio (Roger · Wilco · Standby · Over · Out · Affirmative) · subrayar en summary.",
         "5. Llevar Radio Log autónomo + el link de los 3 audios a S8 warm-up — chequeo cruzado en parejas (5 min · sin evaluación)."
@@ -539,7 +539,9 @@
         {
           "pregunta": "AZUL modales (Gr 6 ext · should/could/might) · ejemplos correctos del handout",
           "respuesta_correcta": "You SHOULD approach starboard · We COULD request more lines · The wind MIGHT drop in 30 minutes · We SHOULD wait for the pilot",
-          "alternativas": ["Cualquier oración con should/could/might subrayada en azul"],
+          "alternativas": [
+            "Cualquier oración con should/could/might subrayada en azul"
+          ],
           "puntos": 0,
           "nota": "Inducción por descubrimiento · sin grade"
         },
@@ -592,13 +594,17 @@
         {
           "pregunta": "Modelo summary entrada 1 (06:15 · BRIDGE · ROJO)",
           "respuesta_correcta": "The BUENAVENTURA EXPRESS IS APPROACHING berth 4 — ETA 15 minutes",
-          "alternativas": ["The vessel is approaching berth 4 in 15 minutes"],
+          "alternativas": [
+            "The vessel is approaching berth 4 in 15 minutes"
+          ],
           "puntos": 0
         },
         {
           "pregunta": "Modelo summary entrada 3 (06:22 · CUSTOMS · AZUL + MORADO)",
           "respuesta_correcta": "The vessel SHOULD WAIT for customs clearance — berthing IS MORE CRITICAL THAN departure today",
-          "alternativas": ["Customs should wait — berthing is more critical than departure"],
+          "alternativas": [
+            "Customs should wait — berthing is more critical than departure"
+          ],
           "puntos": 0
         },
         {
@@ -759,7 +765,12 @@
     "__contract_version__": "v2.5.1 (mapping per pm-3-1.pm_3_2_propagation_contract)",
     "fpi_block": "3.3 Apropiación — Integración receptiva-productiva",
     "grammar_groups": {
-      "intro": ["Gr 6 (extension)", "Gr 10", "Gr 4", "Gr 9"],
+      "intro": [
+        "Gr 6 (extension)",
+        "Gr 10",
+        "Gr 4",
+        "Gr 9"
+      ],
       "consolida": [],
       "aplica": [],
       "carga_check": "2/2 Intro DECLARADOS + 2 Intro adicionales tolerados — VIOLA carga estricta · ESCALAR adaptación (PM-0 §9.2 · gestión vía 'Intro receptivo' con marcación por colores · sólo 2 grupos llegan a producción activa por sesión)",
@@ -941,10 +952,25 @@
     "tecnica_didactica": "Inducción gramatical por descubrimiento con marcación cromática + chequeo cruzado en parejas (PM-0 §5.13 noticing)",
     "teacher_talk": "*Look at the handout. 12 to 16 sentences from the port radio. Four colors. Hunt them like designers hunt fonts. AZUL — should, could, might. ROJO — is/are doing. VERDE — past simple, arrived, started, did. MORADO — faster than, more critical than. 25 minutes. Silent first. Then 25 minutes with your partner — cross-check. No phone. No teacher answers. Discover.*",
     "answer_key": {
-      "AZUL_modales_Gr_6_ext": ["You SHOULD approach starboard.", "We COULD request more lines.", "The wind MIGHT drop in 30 minutes."],
-      "ROJO_presente_continuo_Gr_10": ["The vessel IS APPROACHING berth 5.", "We ARE SECURING the bow lines.", "Customs IS INSPECTING cargo."],
-      "VERDE_pasado_simple_Gr_9": ["The vessel ARRIVED at 06:00.", "Where DID the pilot board?", "The bosun SECURED the stern lines."],
-      "MORADO_comparativos_Gr_4": ["Berthing is MORE CRITICAL THAN departure.", "The pilot boards FASTER THAN customs."]
+      "AZUL_modales_Gr_6_ext": [
+        "You SHOULD approach starboard.",
+        "We COULD request more lines.",
+        "The wind MIGHT drop in 30 minutes."
+      ],
+      "ROJO_presente_continuo_Gr_10": [
+        "The vessel IS APPROACHING berth 5.",
+        "We ARE SECURING the bow lines.",
+        "Customs IS INSPECTING cargo."
+      ],
+      "VERDE_pasado_simple_Gr_9": [
+        "The vessel ARRIVED at 06:00.",
+        "Where DID the pilot board?",
+        "The bosun SECURED the stern lines."
+      ],
+      "MORADO_comparativos_Gr_4": [
+        "Berthing is MORE CRITICAL THAN departure.",
+        "The pilot boards FASTER THAN customs."
+      ]
     }
   },
   "while_b": {

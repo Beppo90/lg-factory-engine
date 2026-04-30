@@ -1,7 +1,7 @@
 {
   "pm_id": "PM-3.2",
   "pm_name": "Playbook Build-Out — Step by Step",
-  "pm_version": "2.5",
+  "pm_version": "2.6",
   "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
   "session": 10,
   "session_name": "Consolidation Day — The Maritime Operations Check",
@@ -517,77 +517,283 @@
     {
       "actividad": "WHILE A — Cuestionario Consolidado E6 · Sección Reading (5 ítems)",
       "items": [
-        {"pregunta": "Item 1 (gist)", "respuesta_correcta": "A — The text is about a container ship.", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 2 (detail · ship parts)", "respuesta_correcta": "C — Bow is at the front.", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 3 (vocab in context)", "respuesta_correcta": "B — 'Hull' = the body of the ship.", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 4 (inference)", "respuesta_correcta": "D — Andrea visits the vessel for inspection.", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 5 (short answer)", "respuesta_correcta": "Stern", "alternativas": ["the stern", "rear of ship"], "puntos": 1}
+        {
+          "pregunta": "Item 1 (gist)",
+          "respuesta_correcta": "A — The text is about a container ship.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 2 (detail · ship parts)",
+          "respuesta_correcta": "C — Bow is at the front.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 3 (vocab in context)",
+          "respuesta_correcta": "B — 'Hull' = the body of the ship.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 4 (inference)",
+          "respuesta_correcta": "D — Andrea visits the vessel for inspection.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 5 (short answer)",
+          "respuesta_correcta": "Stern",
+          "alternativas": [
+            "the stern",
+            "rear of ship"
+          ],
+          "puntos": 1
+        }
       ]
     },
     {
       "actividad": "WHILE A — Cuestionario E6 · Sección Writing (5 criterios checklist)",
       "items": [
-        {"pregunta": "Criterio 1 — usa 'be' ≥1 vez", "respuesta_correcta": "1 pt si presente · 0 si ausente", "alternativas": [], "puntos": 1},
-        {"pregunta": "Criterio 2 — usa imperativo ≥1 vez", "respuesta_correcta": "1 pt si presente · 0 si ausente", "alternativas": [], "puntos": 1},
-        {"pregunta": "Criterio 3 — usa preposición IN ≥1 vez", "respuesta_correcta": "1 pt si presente · 0 si ausente", "alternativas": [], "puntos": 1},
-        {"pregunta": "Criterio 4 — usa ≥3 ship parts del Toolbelt", "respuesta_correcta": "1 pt si ≥3 · 0 si <3", "alternativas": [], "puntos": 1},
-        {"pregunta": "Criterio 5 — ortografía y mayúsculas correctas mayoría (>80% palabras)", "respuesta_correcta": "1 pt si >80% · 0 si <80%", "alternativas": [], "puntos": 1}
+        {
+          "pregunta": "Criterio 1 — usa 'be' ≥1 vez",
+          "respuesta_correcta": "1 pt si presente · 0 si ausente",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Criterio 2 — usa imperativo ≥1 vez",
+          "respuesta_correcta": "1 pt si presente · 0 si ausente",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Criterio 3 — usa preposición IN ≥1 vez",
+          "respuesta_correcta": "1 pt si presente · 0 si ausente",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Criterio 4 — usa ≥3 ship parts del Toolbelt",
+          "respuesta_correcta": "1 pt si ≥3 · 0 si <3",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Criterio 5 — ortografía y mayúsculas correctas mayoría (>80% palabras)",
+          "respuesta_correcta": "1 pt si >80% · 0 si <80%",
+          "alternativas": [],
+          "puntos": 1
+        }
       ]
     },
     {
       "actividad": "WHILE A — Cuestionario E6 · Sección Listening (5 ítems · audio 90s · 2 escuchas)",
       "items": [
-        {"pregunta": "Item 1 (speaker identification)", "respuesta_correcta": "B — Captain Lopera speaks to the pilot.", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 2 (location)", "respuesta_correcta": "A — The vessel is at the anchorage.", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 3 (SMCP key phrase heard)", "respuesta_correcta": "C — Wilco", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 4 (NATO call sign)", "respuesta_correcta": "D — Bravo Echo Four (BE4)", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 5 (short answer)", "respuesta_correcta": "standby", "alternativas": ["stand by", "standby on channel", "standby on 16"], "puntos": 1}
+        {
+          "pregunta": "Item 1 (speaker identification)",
+          "respuesta_correcta": "B — Captain Lopera speaks to the pilot.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 2 (location)",
+          "respuesta_correcta": "A — The vessel is at the anchorage.",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 3 (SMCP key phrase heard)",
+          "respuesta_correcta": "C — Wilco",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 4 (NATO call sign)",
+          "respuesta_correcta": "D — Bravo Echo Four (BE4)",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 5 (short answer)",
+          "respuesta_correcta": "standby",
+          "alternativas": [
+            "stand by",
+            "standby on channel",
+            "standby on 16"
+          ],
+          "puntos": 1
+        }
       ]
     },
     {
       "actividad": "WHILE A — Cuestionario E6 · Sección Vocabulary (5 ítems matching/labeling)",
       "items": [
-        {"pregunta": "Item 1 (matching bollard)", "respuesta_correcta": "post on quay for mooring lines", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 2 (matching crane)", "respuesta_correcta": "machine that lifts containers", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 3 (label ship parts)", "respuesta_correcta": "bow = front · stern = rear · bridge = control center", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 4 (definition berth)", "respuesta_correcta": "the place where a vessel docks", "alternativas": ["docking spot", "berth = dock"], "puntos": 1},
-        {"pregunta": "Item 5 (occupational structure)", "respuesta_correcta": "I am responsible for coordinating yard operations", "alternativas": [], "puntos": 1}
+        {
+          "pregunta": "Item 1 (matching bollard)",
+          "respuesta_correcta": "post on quay for mooring lines",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 2 (matching crane)",
+          "respuesta_correcta": "machine that lifts containers",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 3 (label ship parts)",
+          "respuesta_correcta": "bow = front · stern = rear · bridge = control center",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 4 (definition berth)",
+          "respuesta_correcta": "the place where a vessel docks",
+          "alternativas": [
+            "docking spot",
+            "berth = dock"
+          ],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 5 (occupational structure)",
+          "respuesta_correcta": "I am responsible for coordinating yard operations",
+          "alternativas": [],
+          "puntos": 1
+        }
       ]
     },
     {
       "actividad": "WHILE A — Cuestionario E6 · Sección Grammar (5 ítems gap-fill/transformation · Gr 1-15+17 Aplica)",
       "items": [
-        {"pregunta": "Item 1 (Gr 1 be)", "respuesta_correcta": "IS — 'The vessel IS at Berth 4'", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 2 (Gr 5 imperative + Gr 14 IN)", "respuesta_correcta": "IN — 'Place the cargo IN the warehouse'", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 3 (Gr 6 modal must)", "respuesta_correcta": "MUST — 'Pilots MUST wear safety vests'", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 4 (Gr 11 present perfect)", "respuesta_correcta": "HAS · LIFTED — 'The crane HAS already LIFTED the container'", "alternativas": [], "puntos": 1},
-        {"pregunta": "Item 5 (Gr 12 conditional 1)", "respuesta_correcta": "WILL BERTH — 'If the weather is calm, the vessel WILL BERTH at 0800'", "alternativas": ["BERTHS"], "puntos": 1}
+        {
+          "pregunta": "Item 1 (Gr 1 be)",
+          "respuesta_correcta": "IS — 'The vessel IS at Berth 4'",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 2 (Gr 5 imperative + Gr 14 IN)",
+          "respuesta_correcta": "IN — 'Place the cargo IN the warehouse'",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 3 (Gr 6 modal must)",
+          "respuesta_correcta": "MUST — 'Pilots MUST wear safety vests'",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 4 (Gr 11 present perfect)",
+          "respuesta_correcta": "HAS · LIFTED — 'The crane HAS already LIFTED the container'",
+          "alternativas": [],
+          "puntos": 1
+        },
+        {
+          "pregunta": "Item 5 (Gr 12 conditional 1)",
+          "respuesta_correcta": "WILL BERTH — 'If the weather is calm, the vessel WILL BERTH at 0800'",
+          "alternativas": [
+            "BERTHS"
+          ],
+          "puntos": 1
+        }
       ]
     },
     {
       "actividad": "WHILE B — Co-Evaluación · Patrones tablero rojo + verde",
       "items": [
-        {"pregunta": "Patrones esperados rojo (errores comunes)", "respuesta_correcta": "Hull/hold confusion · Imperative omitted · Wilco/Roger confusion · bollard/crane mismatch · perfect vs simple", "alternativas": [], "puntos": 0, "nota": "Diagnóstico · no evaluado · insumo S11-S12"},
-        {"pregunta": "Aciertos esperados verde (logros colectivos)", "respuesta_correcta": "NATO spelling · be + ship parts · imperative + IN · modal must · conectores básicos", "alternativas": [], "puntos": 0, "nota": "Celebrado en plenaria"}
+        {
+          "pregunta": "Patrones esperados rojo (errores comunes)",
+          "respuesta_correcta": "Hull/hold confusion · Imperative omitted · Wilco/Roger confusion · bollard/crane mismatch · perfect vs simple",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Diagnóstico · no evaluado · insumo S11-S12"
+        },
+        {
+          "pregunta": "Aciertos esperados verde (logros colectivos)",
+          "respuesta_correcta": "NATO spelling · be + ship parts · imperative + IN · modal must · conectores básicos",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Celebrado en plenaria"
+        }
       ]
     },
     {
       "actividad": "WHILE C — Reflexión 22-item PM-0 §7 · 5 ítems modelados",
       "items": [
-        {"pregunta": "A1 — Asignación CEFR coherente con E6", "respuesta_correcta": "Auto-puntaje 1-5 + evidencia + justificación", "alternativas": [], "puntos": 0, "nota": "Self-assessment · sin respuesta correcta"},
-        {"pregunta": "B3 — Fluency vs Accuracy auto-percepción S2-S9", "respuesta_correcta": "Auto-puntaje 1-5 + evidencia + justificación", "alternativas": [], "puntos": 0, "nota": "Self-assessment"},
-        {"pregunta": "B5 — Gestión L1 cumplida S1 ≤25% · S10 0%", "respuesta_correcta": "Auto-puntaje 1-5 + evidencia conductual + justificación", "alternativas": [], "puntos": 0, "nota": "Self-assessment"},
-        {"pregunta": "C4 — Complejidad cognitiva apply en E6", "respuesta_correcta": "Auto-puntaje 1-5 + evidencia + justificación", "alternativas": [], "puntos": 0, "nota": "Self-assessment"},
-        {"pregunta": "D2 — Can-do statements asociados a 5 evidencias E1-E5", "respuesta_correcta": "Auto-puntaje 1-5 + evidencia + justificación", "alternativas": [], "puntos": 0, "nota": "Self-assessment"}
+        {
+          "pregunta": "A1 — Asignación CEFR coherente con E6",
+          "respuesta_correcta": "Auto-puntaje 1-5 + evidencia + justificación",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Self-assessment · sin respuesta correcta"
+        },
+        {
+          "pregunta": "B3 — Fluency vs Accuracy auto-percepción S2-S9",
+          "respuesta_correcta": "Auto-puntaje 1-5 + evidencia + justificación",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Self-assessment"
+        },
+        {
+          "pregunta": "B5 — Gestión L1 cumplida S1 ≤25% · S10 0%",
+          "respuesta_correcta": "Auto-puntaje 1-5 + evidencia conductual + justificación",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Self-assessment"
+        },
+        {
+          "pregunta": "C4 — Complejidad cognitiva apply en E6",
+          "respuesta_correcta": "Auto-puntaje 1-5 + evidencia + justificación",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Self-assessment"
+        },
+        {
+          "pregunta": "D2 — Can-do statements asociados a 5 evidencias E1-E5",
+          "respuesta_correcta": "Auto-puntaje 1-5 + evidencia + justificación",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Self-assessment"
+        }
       ]
     },
     {
       "actividad": "WHILE E — Brief CML CARRIER · Comprensión receptiva 4 componentes ABP",
       "items": [
-        {"pregunta": "What is CML CARRIER?", "respuesta_correcta": "Mother vessel / Container ship from Shanghai", "alternativas": ["Container ship", "Cargo vessel"], "puntos": 0, "nota": "Brief · receptivo · no evaluado"},
-        {"pregunta": "ETA in how many hours?", "respuesta_correcta": "12 / Twelve hours", "alternativas": [], "puntos": 0, "nota": "Brief · receptivo"},
-        {"pregunta": "Mission components (4 ABP)", "respuesta_correcta": "VHF intake + Berthing tripartito + Pitch 3 min + Q&A + Reflexión", "alternativas": [], "puntos": 0, "nota": "Brief · receptivo"},
-        {"pregunta": "Panel composition", "respuesta_correcta": "Captain Restrepo + agente naviero externo", "alternativas": [], "puntos": 0, "nota": "Brief · receptivo"}
+        {
+          "pregunta": "What is CML CARRIER?",
+          "respuesta_correcta": "Mother vessel / Container ship from Shanghai",
+          "alternativas": [
+            "Container ship",
+            "Cargo vessel"
+          ],
+          "puntos": 0,
+          "nota": "Brief · receptivo · no evaluado"
+        },
+        {
+          "pregunta": "ETA in how many hours?",
+          "respuesta_correcta": "12 / Twelve hours",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Brief · receptivo"
+        },
+        {
+          "pregunta": "Mission components (4 ABP)",
+          "respuesta_correcta": "VHF intake + Berthing tripartito + Pitch 3 min + Q&A + Reflexión",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Brief · receptivo"
+        },
+        {
+          "pregunta": "Panel composition",
+          "respuesta_correcta": "Captain Restrepo + agente naviero externo",
+          "alternativas": [],
+          "puntos": 0,
+          "nota": "Brief · receptivo"
+        }
       ]
     }
   ],
@@ -636,7 +842,12 @@
       "intro": [],
       "consolida": [],
       "aplica": [
-        {"group_id": "Gr 1-15 + 17", "group_name": "Todos los grupos Intro de Bloques 1+2+3 (be · pronouns · plural · adj · imperative · IN · must · should · cont · perfect · cond · pasiva · Wh · SMCP/NATO · conectores · maritime sector)", "nivel_activacion": "Aplica", "ejemplo_en_sesion": "Evaluación integrada en Cuestionario E6 sección Grammar (5 ítems × 1 grupo cada uno)"}
+        {
+          "group_id": "Gr 1-15 + 17",
+          "group_name": "Todos los grupos Intro de Bloques 1+2+3 (be · pronouns · plural · adj · imperative · IN · must · should · cont · perfect · cond · pasiva · Wh · SMCP/NATO · conectores · maritime sector)",
+          "nivel_activacion": "Aplica",
+          "ejemplo_en_sesion": "Evaluación integrada en Cuestionario E6 sección Grammar (5 ítems × 1 grupo cada uno)"
+        }
       ]
     },
     "grammar_carga_check": "0/2 Intro + 14 Aplica (PM-0 §9.2) ✓ — sesión consolidación evaluativa sin introducción nueva (heredado literal de pm-3-1.json.pm0_alignment_by_session[9].grammar_carga_check)",
@@ -664,11 +875,31 @@
     },
     "stress_pronunciation": {
       "focus_words": [
-        {"word": "review", "ipa": "/rɪˈvjuː/", "tonica": "SEGUNDA (reVIEW)"},
-        {"word": "instruction", "ipa": "/ɪnˈstrʌkʃən/", "tonica": "SEGUNDA (inSTRUCtion)"},
-        {"word": "correct", "ipa": "/kəˈrɛkt/", "tonica": "SEGUNDA (coRRECT)"},
-        {"word": "evidence", "ipa": "/ˈɛvɪdəns/", "tonica": "PRIMERA (EVidence)"},
-        {"word": "turnaround", "ipa": "/ˈtɜːrnəraʊnd/", "tonica": "PRIMERA (TURNaround) — Misión Final brief"}
+        {
+          "word": "review",
+          "ipa": "/rɪˈvjuː/",
+          "tonica": "SEGUNDA (reVIEW)"
+        },
+        {
+          "word": "instruction",
+          "ipa": "/ɪnˈstrʌkʃən/",
+          "tonica": "SEGUNDA (inSTRUCtion)"
+        },
+        {
+          "word": "correct",
+          "ipa": "/kəˈrɛkt/",
+          "tonica": "SEGUNDA (coRRECT)"
+        },
+        {
+          "word": "evidence",
+          "ipa": "/ˈɛvɪdəns/",
+          "tonica": "PRIMERA (EVidence)"
+        },
+        {
+          "word": "turnaround",
+          "ipa": "/ˈtɜːrnəraʊnd/",
+          "tonica": "PRIMERA (TURNaround) — Misión Final brief"
+        }
       ],
       "techniques": [
         "Brevísimo — sesión prioriza evaluación no instrucción nueva",

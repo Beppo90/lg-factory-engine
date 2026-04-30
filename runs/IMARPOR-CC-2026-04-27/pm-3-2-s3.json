@@ -1,7 +1,7 @@
 {
   "pm_id": "PM-3.2",
   "pm_name": "Playbook Build-Out — Step by Step",
-  "pm_version": "2.5",
+  "pm_version": "2.6",
   "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
   "session": 3,
   "session_name": "Reading the Ship — UNIT 1 SHIP OVERVIEW",
@@ -471,25 +471,40 @@
           "item_1_literal_ubicacion": {
             "pregunta": "Where is the bridge of the BUENAVENTURA EXPRESS?",
             "respuesta_correcta": "The bridge is on the top deck.",
-            "alternativas_aceptables": ["On the top deck.", "On the top of the ship.", "On the upper deck."],
+            "alternativas_aceptables": [
+              "On the top deck.",
+              "On the top of the ship.",
+              "On the upper deck."
+            ],
             "puntos": 1
           },
           "item_2_literal_funcion": {
             "pregunta": "Who is the master of the BUENAVENTURA EXPRESS?",
             "respuesta_correcta": "Captain Lopera is the master.",
-            "alternativas_aceptables": ["Captain Lopera.", "The master is Captain Lopera."],
+            "alternativas_aceptables": [
+              "Captain Lopera.",
+              "The master is Captain Lopera."
+            ],
             "puntos": 1
           },
           "item_3_literal_smcp": {
             "pregunta": "What does 'Wilco' mean?",
             "respuesta_correcta": "Wilco means 'I will comply'.",
-            "alternativas_aceptables": ["I will comply.", "I will follow / obey the order.", "Cumpliré (acepted en S3 con bonus si lo escribe en EN)"],
+            "alternativas_aceptables": [
+              "I will comply.",
+              "I will follow / obey the order.",
+              "Cumpliré (acepted en S3 con bonus si lo escribe en EN)"
+            ],
             "puntos": 1
           },
           "item_4_literal_operacion": {
             "pregunta": "What time is the departure of the BUENAVENTURA EXPRESS?",
             "respuesta_correcta": "The departure is at 18:00.",
-            "alternativas_aceptables": ["At 18:00.", "18:00 / 6 PM.", "Six o'clock in the evening."],
+            "alternativas_aceptables": [
+              "At 18:00.",
+              "18:00 / 6 PM.",
+              "Six o'clock in the evening."
+            ],
             "puntos": 1
           },
           "item_5_inferencial": {
@@ -622,20 +637,26 @@
         {
           "pregunta": "Brainstorm Ship Words esperadas",
           "respuesta_correcta": "bow · stern · bridge · deck · hull · mast · anchor · vessel · ship · BUENAVENTURA EXPRESS",
-          "alternativas": ["Cualquier subset ≥5 acepter"],
+          "alternativas": [
+            "Cualquier subset ≥5 acepter"
+          ],
           "puntos": 0,
           "nota": "No evaluado · activación schema"
         },
         {
           "pregunta": "Brainstorm Dock Words esperadas",
           "respuesta_correcta": "bollard · crane · mooring lines · berth · dock · gantry crane · warehouse · Berth 4 · port",
-          "alternativas": ["Cualquier subset ≥5 acepter"],
+          "alternativas": [
+            "Cualquier subset ≥5 acepter"
+          ],
           "puntos": 0
         },
         {
           "pregunta": "DRTA 3 predicciones desde título",
           "respuesta_correcta": "1. The report is from Captain Lopera. 2. About BUENAVENTURA EXPRESS at Berth 4. 3. Andrea reads it on her first shift.",
-          "alternativas": ["Cualquier predicción coherente con schema S1-S2"],
+          "alternativas": [
+            "Cualquier predicción coherente con schema S1-S2"
+          ],
           "puntos": 0,
           "nota": "Activación predictiva · bilingüe acepter"
         }
@@ -676,25 +697,38 @@
         {
           "pregunta": "Q1 (Ship Anatomy): Where is the bridge?",
           "respuesta_correcta": "On the top deck.",
-          "alternativas": ["On the upper deck", "On the top of the ship"],
+          "alternativas": [
+            "On the upper deck",
+            "On the top of the ship"
+          ],
           "puntos": 0
         },
         {
           "pregunta": "Q2 (SMCP): What does Wilco mean?",
           "respuesta_correcta": "I will comply.",
-          "alternativas": ["I will follow the order", "I will obey"],
+          "alternativas": [
+            "I will follow the order",
+            "I will obey"
+          ],
           "puntos": 0
         },
         {
           "pregunta": "Q3 (Operations): What time is the departure?",
           "respuesta_correcta": "18:00.",
-          "alternativas": ["At 18:00", "6 PM", "Six o'clock evening"],
+          "alternativas": [
+            "At 18:00",
+            "6 PM",
+            "Six o'clock evening"
+          ],
           "puntos": 0
         },
         {
           "pregunta": "Q4 (Functions): What does Andrea do at the bow station?",
           "respuesta_correcta": "She coordinates the bow station and reports to Captain Lopera every hour.",
-          "alternativas": ["Coordinates and reports every hour", "She is responsible for the bow station"],
+          "alternativas": [
+            "Coordinates and reports every hour",
+            "She is responsible for the bow station"
+          ],
           "puntos": 0
         }
       ]
@@ -717,25 +751,40 @@
         {
           "pregunta": "Item 1 LITERAL: Where is the bridge of the BUENAVENTURA EXPRESS?",
           "respuesta_correcta": "The bridge is on the top deck.",
-          "alternativas": ["On the top deck", "On the upper deck", "On the top of the ship"],
+          "alternativas": [
+            "On the top deck",
+            "On the upper deck",
+            "On the top of the ship"
+          ],
           "puntos": 1
         },
         {
           "pregunta": "Item 2 LITERAL: Who is the master of the BUENAVENTURA EXPRESS?",
           "respuesta_correcta": "Captain Lopera is the master.",
-          "alternativas": ["Captain Lopera", "The master is Captain Lopera"],
+          "alternativas": [
+            "Captain Lopera",
+            "The master is Captain Lopera"
+          ],
           "puntos": 1
         },
         {
           "pregunta": "Item 3 LITERAL: What does 'Wilco' mean?",
           "respuesta_correcta": "Wilco means 'I will comply'.",
-          "alternativas": ["I will comply", "I will follow / obey", "Cumpliré (con bonus si EN)"],
+          "alternativas": [
+            "I will comply",
+            "I will follow / obey",
+            "Cumpliré (con bonus si EN)"
+          ],
           "puntos": 1
         },
         {
           "pregunta": "Item 4 LITERAL: What time is the departure?",
           "respuesta_correcta": "The departure is at 18:00.",
-          "alternativas": ["At 18:00", "18:00 / 6 PM", "Six o'clock evening"],
+          "alternativas": [
+            "At 18:00",
+            "18:00 / 6 PM",
+            "Six o'clock evening"
+          ],
           "puntos": 1
         },
         {

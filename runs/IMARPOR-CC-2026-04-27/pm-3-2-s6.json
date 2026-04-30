@@ -1,7 +1,7 @@
 {
   "pm_id": "PM-3.2",
   "pm_name": "Playbook Build-Out — Step by Step",
-  "pm_version": "2.5",
+  "pm_version": "2.6",
   "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
   "session": 6,
   "session_name": "VHF Response Drill — Speaking with Captain Lopera",
@@ -410,7 +410,10 @@
               "When does the pilot arrive?",
               "Standby, awaiting pilot."
             ],
-            "smcp_responses": ["Roger", "Standby"],
+            "smcp_responses": [
+              "Roger",
+              "Standby"
+            ],
             "wh_question": "When does the pilot arrive?",
             "call_sign_deletreado": "Bravo-Echo-Romeo-Tango-Hotel-Four (Berth 4)"
           },
@@ -421,7 +424,10 @@
               "Affirmative, anchorage position 1.",
               "Pilot must board, vessel must wait."
             ],
-            "smcp_responses": ["Wilco", "Affirmative"],
+            "smcp_responses": [
+              "Wilco",
+              "Affirmative"
+            ],
             "wh_question": "Where is the anchorage position?",
             "call_sign_deletreado": "Papa-India-Lima-Oscar-Tango (PILOT)"
           },
@@ -432,7 +438,11 @@
               "Affirmative, no bow approach.",
               "Standby for tug."
             ],
-            "smcp_responses": ["Roger", "Affirmative", "Standby"],
+            "smcp_responses": [
+              "Roger",
+              "Affirmative",
+              "Standby"
+            ],
             "wh_question": "How many tugs do we have?",
             "call_sign_deletreado": "Tango-Uniform-Golf (TUG)"
           },
@@ -443,7 +453,11 @@
               "Wilco, hard hats on.",
               "Affirmative, no entry."
             ],
-            "smcp_responses": ["Roger", "Wilco", "Affirmative"],
+            "smcp_responses": [
+              "Roger",
+              "Wilco",
+              "Affirmative"
+            ],
             "wh_question": "Where is the entry point?",
             "call_sign_deletreado": "Romeo-Echo-Sierra-Tango (REST · restricted)"
           },
@@ -454,7 +468,12 @@
               "Affirmative, vessel holding.",
               "Negative, containers not ready. Standby for update."
             ],
-            "smcp_responses": ["Roger", "Affirmative", "Negative", "Standby"],
+            "smcp_responses": [
+              "Roger",
+              "Affirmative",
+              "Negative",
+              "Standby"
+            ],
             "wh_question": "When are containers ready?",
             "call_sign_deletreado": "Charlie-Hotel-One-Two (Channel 12)"
           }
@@ -656,25 +675,42 @@
         {
           "pregunta": "Frame Gr 5neg azul (Imperativo negativo)",
           "respuesta_correcta": "Don't / Do not + verbo base + complement (ej: Don't approach the bow)",
-          "alternativas": ["Don't enter the restricted area", "Don't cross the yellow line", "Don't touch the cargo", "Don't move the vessel"],
+          "alternativas": [
+            "Don't enter the restricted area",
+            "Don't cross the yellow line",
+            "Don't touch the cargo",
+            "Don't move the vessel"
+          ],
           "puntos": 0
         },
         {
           "pregunta": "Frame Gr 6 rojo (Modal must)",
           "respuesta_correcta": "Sujeto + must + verbo base + complement (ej: Vessel must wait at anchorage)",
-          "alternativas": ["Pilot must board before berthing", "Crew must wear hard hats", "Captain must confirm position"],
+          "alternativas": [
+            "Pilot must board before berthing",
+            "Crew must wear hard hats",
+            "Captain must confirm position"
+          ],
           "puntos": 0
         },
         {
           "pregunta": "Frame Gr 8 verde (Wh-questions presente simple)",
           "respuesta_correcta": "Wh + does + sujeto + verbo base + complement (ej: When does the pilot arrive?)",
-          "alternativas": ["How many containers do you have?", "Where is the vessel berthed?", "What time does cargo handling start?"],
+          "alternativas": [
+            "How many containers do you have?",
+            "Where is the vessel berthed?",
+            "What time does cargo handling start?"
+          ],
           "puntos": 0
         },
         {
           "pregunta": "Frame Gr 17 naranja (SMCP key phrases)",
           "respuesta_correcta": "Roger/Wilco/Affirmative/Negative/Standby + complement (ej: Roger captain · Wilco vessel ready)",
-          "alternativas": ["Affirmative position confirmed", "Negative cargo not loaded", "Standby radio"],
+          "alternativas": [
+            "Affirmative position confirmed",
+            "Negative cargo not loaded",
+            "Standby radio"
+          ],
           "puntos": 0,
           "nota": "Reciclaje S5 · Consolida"
         }
@@ -851,11 +887,26 @@
     "estrategia": "ABT + Simulación VHF — Pronunciation lab + VHF Response Simulation con Captain Lopera",
     "justificacion": "S6 es la primera sesión de OUTPUT ORAL evaluada parcialmente (E4 Speaking VHF segment · 5 pts). Combina pronunciation lab intensivo (drilling estímulo-respuesta + backchaining + choral) con VHF Response Simulation 2 min × escenario en parejas con barrera visual que fuerza canal radio. Captain Lopera (rol del instructor o par avanzado · lingua franca B2) emite 5 SMCP messages + 1 call sign NATO; el aprendiz confirma con Roger/Wilco/Affirmative/Standby + repite call sign + responde Wh-questions presente simple. Es la sesión donde el aprendiz EJECUTA por primera vez el oficio cotidiano del Port Operations Trainee — confirmar mensajes VHF con vessel masters no-nativos. Carga gramatical 2/2 Intro + 2 Consolida (Gr 5neg + Gr 6 must Intro · Gr 8 + Gr 17 SMCP Consolida). L1 ≤ 10% — meta-instrucción del simulator setup; toda VHF Response Simulation 100% L2.",
     "tecnicas": [
-      {"bloque": "A", "tecnica": "Drilling estímulo-respuesta SMCP intensivo + Backchaining maritime + Choral con volumen progresivo + Pair Mirror Drill con autoevaluación ✓✗"},
-      {"bloque": "B", "tecnica": "Inducción gramatical por descubrimiento con marcación cromática + Producción guiada con frames bilingües + Pair Check ✓✗ con 1 sugerencia"},
-      {"bloque": "C", "tecnica": "Cue Card Reading + Pair Whisper-Rehearsal con Reference Cards a la vista + ICQ correctivo del instructor"},
-      {"bloque": "D", "tecnica": "Simulación VHF con barrera visual + Cronómetro 2 min × escenario + Grabación obligatoria + Rotación roles + Evaluación Escala Estimación E4 5 criterios × 1 pt"},
-      {"bloque": "E", "tecnica": "Post-task Delayed Feedback con recast modélico global anónimo + Peer 3 estrellas + 1 deseo estructurado entre parejas vecinas"}
+      {
+        "bloque": "A",
+        "tecnica": "Drilling estímulo-respuesta SMCP intensivo + Backchaining maritime + Choral con volumen progresivo + Pair Mirror Drill con autoevaluación ✓✗"
+      },
+      {
+        "bloque": "B",
+        "tecnica": "Inducción gramatical por descubrimiento con marcación cromática + Producción guiada con frames bilingües + Pair Check ✓✗ con 1 sugerencia"
+      },
+      {
+        "bloque": "C",
+        "tecnica": "Cue Card Reading + Pair Whisper-Rehearsal con Reference Cards a la vista + ICQ correctivo del instructor"
+      },
+      {
+        "bloque": "D",
+        "tecnica": "Simulación VHF con barrera visual + Cronómetro 2 min × escenario + Grabación obligatoria + Rotación roles + Evaluación Escala Estimación E4 5 criterios × 1 pt"
+      },
+      {
+        "bloque": "E",
+        "tecnica": "Post-task Delayed Feedback con recast modélico global anónimo + Peer 3 estrellas + 1 deseo estructurado entre parejas vecinas"
+      }
     ]
   },
   "pm0_protocol": {

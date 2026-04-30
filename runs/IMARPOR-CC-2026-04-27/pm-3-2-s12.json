@@ -1,7 +1,7 @@
 {
   "pm_id": "PM-3.2",
   "pm_name": "Playbook Build-Out — Step by Step",
-  "pm_version": "2.5",
+  "pm_version": "2.6",
   "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
   "session": 12,
   "session_name": "The Port Professional — CML Port Turnaround Mission",
@@ -208,16 +208,6 @@
       "agrupacion": "Plenaria ceremonial",
       "notas": "Energía positiva. Aplauso grupal. Foto grupal opcional. Certificado por nombre. Cierre solemne pero celebratorio. Asignar portafolio personal con Misión Final completa."
     }
-  ],
-  "habilidades_foco": [
-    "Speaking (S●) — Pitch profesional 3 min + Q&A panel + simulación CML 3h con tag questions producción activa"
-  ],
-  "habilidades_soporte": [
-    "Writing (W○) — actualización Berthing Memo + Radio Log + Post-Turn Report en archivo final",
-    "Vocabulary (V○) — integración 25 términos Toolbelt + 30+ SMCP + NATO completo en uso real",
-    "Grammar (G○) — 17 grupos en aplicación libre integrada (foco Gr 16 tag questions + Gr 13 ext voz pasiva pasada)",
-    "Reading (R○) — relectura del briefing CML CARRIER + Berthing Memo en plenaria de cierre",
-    "Listening (L○) — comprensión panel Q&A (Capitán Restrepo + agente naviero externo)"
   ],
   "set_up": {
     "duracion_min": 30,
@@ -642,6 +632,18 @@
         "transition": "*Sacred silence. Now — your certificates. Captain Restrepo will call your name. Come forward. Receive your symbolic Port Operations Trainee certificate. This is the close of 100 hours of work.*",
         "tecnica_didactica": "Reflexión circular de cierre con reapertura simbólica de contrato + autoevaluación cualitativa + L1 permitida (apartado personal post-evaluación)"
       }
+    ],
+    "breaks": [
+      {
+        "duracion_min": 15,
+        "ubicacion": "Después de bloque C",
+        "tiempo_aproximado": "3:15",
+        "teacher_talk": "Ok, take a 15-minute break. Stretch, water, restroom. Come back ready to continue.",
+        "reglas": [
+          "English Zone pausada durante el break",
+          "Regreso puntual obligatorio"
+        ]
+      }
     ]
   },
   "wrap_up": {
@@ -688,7 +690,9 @@
         {
           "pregunta": "SMCP markers obligatorios en respuesta VHF",
           "respuesta_correcta": "Roger · Wilco · Standby · Over · Out (mínimo 3 de 5)",
-          "alternativas": ["Affirmative en lugar de Roger es aceptable"],
+          "alternativas": [
+            "Affirmative en lugar de Roger es aceptable"
+          ],
           "puntos": 1,
           "nota": "C01 SMCP literacy ≈1 pt"
         },
@@ -869,7 +873,9 @@
         {
           "pregunta": "Suma total puntos rúbrica E-Misión",
           "respuesta_correcta": "C01 + C02 + C03 + C04 + C05 + C06 = 6 criterios × ≈0.83 pts = 5 pts E-Misión total",
-          "alternativas": ["Distribución alterna: C01-C03 ≈2 pts (técnica) + C04-C05 ≈2 pts (presentación) + C06 ≈1 pt (reflexión) = 5 pts"],
+          "alternativas": [
+            "Distribución alterna: C01-C03 ≈2 pts (técnica) + C04-C05 ≈2 pts (presentación) + C06 ≈1 pt (reflexión) = 5 pts"
+          ],
           "puntos": 5,
           "nota": "E-Misión 5 pts es la última evidencia formal del curso 100h"
         }

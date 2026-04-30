@@ -1,7 +1,7 @@
 {
   "pm_id": "PM-3.2",
   "pm_name": "Playbook Build-Out — Step by Step",
-  "pm_version": "2.5",
+  "pm_version": "2.6",
   "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
   "session": 5,
   "session_name": "The Pilot's Apprentice — Listening to SMCP",
@@ -300,10 +300,24 @@
             "🔵 RePEAT /rɪˈpiːt/ — PEDIR CLARIFICACIÓN (Repeat the last item)"
           ],
           "clasificacion_funcion_consolidada_LIVE_ZONE": {
-            "verde_CONFIRMAR": ["Roger", "Wilco", "Affirmative"],
-            "azul_PEDIR_CLARIFICACIÓN": ["Say again", "Spell that", "Repeat"],
-            "amarillo_REPORTAR": ["Out", "Over"],
-            "rojo_SOLICITAR": ["Standby", "Negative"]
+            "verde_CONFIRMAR": [
+              "Roger",
+              "Wilco",
+              "Affirmative"
+            ],
+            "azul_PEDIR_CLARIFICACIÓN": [
+              "Say again",
+              "Spell that",
+              "Repeat"
+            ],
+            "amarillo_REPORTAR": [
+              "Out",
+              "Over"
+            ],
+            "rojo_SOLICITAR": [
+              "Standby",
+              "Negative"
+            ]
           },
           "differentiacion_critica_pares_SMCP": [
             "Roger ≠ Wilco — Roger = HEARD only · Wilco = HEARD + WILL COMPLY (action commitment)",
@@ -638,7 +652,10 @@
         {
           "pregunta": "Escucha 1 (gist) — Where is the vessel?",
           "respuesta_correcta": "Approaching Berth 4 / inbound to Terminal Buenaventura",
-          "alternativas": ["Inbound to Buenaventura", "Coming to Berth 4"],
+          "alternativas": [
+            "Inbound to Buenaventura",
+            "Coming to Berth 4"
+          ],
           "puntos": 1,
           "nota": "Criterio E3 #1 gist comprehension"
         },

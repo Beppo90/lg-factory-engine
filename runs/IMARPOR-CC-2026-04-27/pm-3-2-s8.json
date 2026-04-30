@@ -1,7 +1,7 @@
 {
   "pm_id": "PM-3.2",
   "pm_name": "Playbook Build-Out — Step by Step",
-  "pm_version": "2.5",
+  "pm_version": "2.6",
   "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
   "session": 8,
   "session_name": "Coordinating the Quay — Speaking Tripartite",
@@ -361,7 +361,8 @@
           "💡 Música ambient marítima muy baja durante todo el break — mantiene clima operacional sin presión.",
           "💡 Si un aprendiz se acerca con dudas afectivas ('estoy nervioso'): responda 1-2 oraciones EN brevemente · NO inicie coaching extenso · '*You've trained 7 sessions for this. The recorder doesn't judge — neither do I. Trust your training.*'",
           "💡 Verifique técnicamente walkie-talkies + grabación celular de muestra (5 seg) durante el break — NO confíe en que están listos · pruebe."
-        ]
+        ],
+        "tecnica_didactica": "Berthing Coordination con 3 actores (Diego + Bosun Romero + Captain Lopera) (bloque BREAK: Receso activo + revisión cue cards individual)"
       },
       {
         "letra": "C",
@@ -485,6 +486,18 @@
         "transition": "*Final stretch. Exit Ticket — your reflection. Sello del Capitán Restrepo on your E4. Asignación autónoma. Preview Session 9.*",
         "tecnica_didactica": "Drilling contrastivo de modales con stress crítico + producción oral mínima en parejas con prompt card como bridge productivo a S9 Role Carousel (PM-0 §5.13 noticing + automatización chunks operacionales)"
       }
+    ],
+    "breaks": [
+      {
+        "duracion_min": 15,
+        "ubicacion": "Después de bloque C",
+        "tiempo_aproximado": "3:45",
+        "teacher_talk": "Ok, take a 15-minute break. Stretch, water, restroom. Come back ready to continue.",
+        "reglas": [
+          "English Zone pausada durante el break",
+          "Regreso puntual obligatorio"
+        ]
+      }
     ]
   },
   "wrap_up": {
@@ -528,14 +541,22 @@
         {
           "pregunta": "Gr 11 presente perfecto — 3 oraciones modelo (sección A handout)",
           "respuesta_correcta": "(1) Andrea HAS BOARDED the vessel at 06:15. (2) Captain Lopera HAS INSPECTED the bridge. (3) The bosun HAS SECURED the bow lines.",
-          "alternativas": ["Customs HAS APPROVED the cargo manifest", "The pilot HAS COMPLETED the boarding procedure", "We HAVE COORDINATED the berthing with all 3 actors"],
+          "alternativas": [
+            "Customs HAS APPROVED the cargo manifest",
+            "The pilot HAS COMPLETED the boarding procedure",
+            "We HAVE COORDINATED the berthing with all 3 actors"
+          ],
           "puntos": 0,
           "nota": "No evaluado — drilling productivo. Alternativas válidas si subject + has/have + participle correcto."
         },
         {
           "pregunta": "Gr 12 condicional 1 — 3 oraciones modelo (sección B handout)",
           "respuesta_correcta": "(1) IF the wind drops, we WILL berth on time. (2) IF customs delays, we WILL reschedule the operation. (3) IF Diego is ready, we WILL start the crane.",
-          "alternativas": ["IF the pilot boards now, we WILL save 30 minutes", "IF the wind rises to 25 knots, we WILL hold position", "IF customs approves cargo, we WILL begin unloading"],
+          "alternativas": [
+            "IF the pilot boards now, we WILL save 30 minutes",
+            "IF the wind rises to 25 knots, we WILL hold position",
+            "IF customs approves cargo, we WILL begin unloading"
+          ],
           "puntos": 0,
           "nota": "Estructura IF + present, WILL + verb. Cualquier escenario operacional válido."
         },
@@ -573,21 +594,27 @@
         {
           "pregunta": "ESCENARIO 1 'Routine Berthing' — modelo completo 3 min",
           "respuesta_correcta": "Andrea: 'Berth 4, this is Andrea — BUENAVENTURA EXPRESS approaching. ETA 15 min. Over.' Captain Lopera: 'Roger Andrea. Pilot has boarded. Wind 10 knots. Standby.' Andrea: 'Diego, are containers ready?' Diego: 'Sí, ready in 5.' Andrea: 'Bosun Romero, secure bow lines first.' Bosun: 'Copiado, bow lines first.' Andrea: 'Captain Lopera, the pilot HAS BOARDED. IF the wind holds, we WILL complete berthing in 15 min. Confirm starboard approach.' Captain: 'Confirmed starboard. Pilot on bridge. Standby.' Andrea: 'Diego, crane ready?' Diego: 'Crane ready.' Andrea: 'Operation complete. The vessel HAS SECURED. Out.'",
-          "alternativas": ["Variaciones aceptables siempre que mantengan: 1+ Gr 11 productivo + 1+ Gr 12 productivo + 5+ términos Sub-bloque 3 + apertura/cierre formal + 3 actores coordinados"],
+          "alternativas": [
+            "Variaciones aceptables siempre que mantengan: 1+ Gr 11 productivo + 1+ Gr 12 productivo + 5+ términos Sub-bloque 3 + apertura/cierre formal + 3 actores coordinados"
+          ],
           "puntos": 5,
           "nota": "EVIDENCIA E4 — 5 pts via Escala Estimación PM-4.1 5 criterios C1-C5."
         },
         {
           "pregunta": "ESCENARIO 2 'Wind Alert' — decisión modelo al min 1:30",
           "respuesta_correcta": "'Wind has increased to 25 knots. IF the wind continues, we WILL delay berthing 30 min. Captain Lopera, request: pause approach. Diego, hold the crane. Bosun Romero, secure mooring lines anyway — wind might drop.' [Gr 11: 1 + Gr 12: 2 + decisión propia]",
-          "alternativas": ["Cualquier decisión razonable: continuar con cautela O pausar. Lo evaluable es la PRODUCCIÓN de Gr 11 + Gr 12 + decisión clara coordinada con 3 actores."],
+          "alternativas": [
+            "Cualquier decisión razonable: continuar con cautela O pausar. Lo evaluable es la PRODUCCIÓN de Gr 11 + Gr 12 + decisión clara coordinada con 3 actores."
+          ],
           "puntos": 5,
           "nota": "Escenario 2 fuerza Gr 12 condicional 1 productivo (IF + present, WILL + verb)."
         },
         {
           "pregunta": "ESCENARIO 3 'Customs Delay' — decisión modelo al min 1:00",
           "respuesta_correcta": "'Customs has delayed 30 min. IF customs delays, we WILL reschedule the cargo inspection. Captain Lopera, request: continue berthing without customs clearance — cargo will be inspected at berth. Diego, prepare yard for delayed unload. Bosun Romero, secure all lines now.' [Gr 11: 1 + Gr 12: 1 + decisión propia]",
-          "alternativas": ["Decisión válida: reasignar canal O esperar customs O continuar berthing. Lo evaluable es la PRODUCCIÓN coordinada."],
+          "alternativas": [
+            "Decisión válida: reasignar canal O esperar customs O continuar berthing. Lo evaluable es la PRODUCCIÓN coordinada."
+          ],
           "puntos": 5,
           "nota": "Escenario 3 fuerza decisión bajo presión + Gr 11 (HAS DELAYED) + Gr 12 (IF delays, WILL reschedule)."
         },
@@ -620,7 +647,9 @@
         {
           "pregunta": "1 oración reflexiva final — modelo",
           "respuesta_correcta": "'I agreed with the instructor on C2 (Gr 11/12 productive) but disagreed on C4 (pronunciation). I will improve stress on participle endings before Session 9.'",
-          "alternativas": ["Cualquier oración EN con: criterio acordado + criterio diferido + 1 mejora declarada"],
+          "alternativas": [
+            "Cualquier oración EN con: criterio acordado + criterio diferido + 1 mejora declarada"
+          ],
           "puntos": 0,
           "nota": "Input clave para WHILE E drill bridge."
         }
@@ -639,7 +668,9 @@
         {
           "pregunta": "Prompt card libre — respuesta modelo 2 oraciones",
           "respuesta_correcta": "'What WILL you do if customs delays?' → 'I COULD reassign the channel. IF customs delays more than 30 min, we WILL reschedule.'",
-          "alternativas": ["Cualquier respuesta con: 1 modal + 1 condicional = 2 oraciones"],
+          "alternativas": [
+            "Cualquier respuesta con: 1 modal + 1 condicional = 2 oraciones"
+          ],
           "puntos": 0,
           "nota": "Bridge directo a S9 Role Carousel — chunks operacionales prácticos."
         }

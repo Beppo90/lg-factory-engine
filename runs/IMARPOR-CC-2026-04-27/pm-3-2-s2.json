@@ -1,7 +1,7 @@
 {
   "pm_id": "PM-3.2",
   "pm_name": "Playbook Build-Out — Step by Step",
-  "pm_version": "2.5",
+  "pm_version": "2.6",
   "pm_verified_against_prompt": "PM-3.2 — Playbook Build-Out — Step by Step.md (v2.5 Required Output Schema) + PM-3.1 v2.6 propagation contract pm_3_2_propagation_contract",
   "session": 2,
   "session_name": "The Port Word Walker — Vocabulary of the Quay",
@@ -20,8 +20,8 @@
   ],
   "habilidades_soporte": [
     "Reading receptivo (etiquetas + epígrafes 12 imágenes classification)",
-    "Pronunciation soporte (stress marking + finger drilling de 5 términos)",
-    "Speaking conversacional (Word Wall building + classification en parejas · sin evaluación formal)"
+    "Pronunciation soporte (stress marking + finger drilling)",
+    "Speaking conversacional (Word Wall building + classification en parejas)"
   ],
   "cefr": "A1.2 (Bloque Interno 1 RAP-01 · pre-activación léxica portuaria)",
   "model": "claude-opus-4-7",
@@ -206,14 +206,6 @@
       "notas": "Ceremonia solemne deuda afectiva de S1. 60 segundos de silencio post-firmas. Música suave. Asignar identificación 5 elementos portuarios + audio 30s."
     }
   ],
-  "habilidades_foco": [
-    "Vocabulary productivo (5 términos Toolbelt Sub-bloque 1: bollard · crane · bow · stern · bridge)"
-  ],
-  "habilidades_soporte": [
-    "Reading receptivo (etiquetas + epígrafes 12 imágenes classification)",
-    "Pronunciation soporte (stress marking + finger drilling)",
-    "Speaking conversacional (Word Wall building + classification en parejas)"
-  ],
   "set_up": {
     "duracion_min": 30,
     "warm_up": {
@@ -279,11 +271,51 @@
         ],
         "answer_key_inline": {
           "5_terms_canonicos_sub_bloque_1": [
-            {"term": "bollard", "ipa": "/ˈbɒlərd/", "stress": "BOL-lard (2 syllables · stress FIRST)", "definition_en_simple": "A short post on the dock. The ship ties ropes to it.", "definition_es": "Bita / bolardo · poste corto en el muelle para amarrar.", "category": "port infrastructure", "example_from_master_anchor": "The bollard is near the bow."},
-            {"term": "crane", "ipa": "/kreɪn/", "stress": "CRANE (1 syllable · strong)", "definition_en_simple": "A big machine that lifts cargo.", "definition_es": "Grúa portuaria.", "category": "port equipment", "example_from_master_anchor": "The crane is on the dock."},
-            {"term": "bow", "ipa": "/baʊ/", "stress": "BOW (1 syllable · rhymes with 'how')", "definition_en_simple": "The front of the ship.", "definition_es": "Proa · parte delantera del buque.", "category": "ship parts", "example_from_master_anchor": "The bow is to the north."},
-            {"term": "stern", "ipa": "/stɜːrn/", "stress": "STERN (1 syllable · with R)", "definition_en_simple": "The back of the ship.", "definition_es": "Popa · parte trasera del buque.", "category": "ship parts", "example_from_master_anchor": "The stern is to the south."},
-            {"term": "bridge", "ipa": "/brɪdʒ/", "stress": "BRIDGE (1 syllable · soft DJ ending)", "definition_en_simple": "The room where the captain controls the ship.", "definition_es": "Puente de mando.", "category": "ship parts", "example_from_master_anchor": "The bridge is on the top deck."}
+            {
+              "term": "bollard",
+              "ipa": "/ˈbɒlərd/",
+              "stress": "BOL-lard (2 syllables · stress FIRST)",
+              "definition_en_simple": "A short post on the dock. The ship ties ropes to it.",
+              "definition_es": "Bita / bolardo · poste corto en el muelle para amarrar.",
+              "category": "port infrastructure",
+              "example_from_master_anchor": "The bollard is near the bow."
+            },
+            {
+              "term": "crane",
+              "ipa": "/kreɪn/",
+              "stress": "CRANE (1 syllable · strong)",
+              "definition_en_simple": "A big machine that lifts cargo.",
+              "definition_es": "Grúa portuaria.",
+              "category": "port equipment",
+              "example_from_master_anchor": "The crane is on the dock."
+            },
+            {
+              "term": "bow",
+              "ipa": "/baʊ/",
+              "stress": "BOW (1 syllable · rhymes with 'how')",
+              "definition_en_simple": "The front of the ship.",
+              "definition_es": "Proa · parte delantera del buque.",
+              "category": "ship parts",
+              "example_from_master_anchor": "The bow is to the north."
+            },
+            {
+              "term": "stern",
+              "ipa": "/stɜːrn/",
+              "stress": "STERN (1 syllable · with R)",
+              "definition_en_simple": "The back of the ship.",
+              "definition_es": "Popa · parte trasera del buque.",
+              "category": "ship parts",
+              "example_from_master_anchor": "The stern is to the south."
+            },
+            {
+              "term": "bridge",
+              "ipa": "/brɪdʒ/",
+              "stress": "BRIDGE (1 syllable · soft DJ ending)",
+              "definition_en_simple": "The room where the captain controls the ship.",
+              "definition_es": "Puente de mando.",
+              "category": "ship parts",
+              "example_from_master_anchor": "The bridge is on the top deck."
+            }
           ],
           "criterio_de_exito_drilling": "≥85% de aprendices producen los 5 términos con stress correcto en el finger drilling individual. Stress mal en 1 término = recast suave + retry. Stress mal en 3+ términos = mini-soporte 2 min al final del bloque."
         },
@@ -633,7 +665,9 @@
         {
           "pregunta": "Frame demostrativo modelo",
           "respuesta_correcta": "*This is a [TERM]. It is [category] because ___.*",
-          "alternativas": ["*These are [TERMS]. They are [category].*"],
+          "alternativas": [
+            "*These are [TERMS]. They are [category].*"
+          ],
           "puntos": 0
         }
       ]
