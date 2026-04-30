@@ -36,7 +36,7 @@ VERSIONES_VIGENTES = {
     # Fase 3 (agregados Hito 2 Task 1 · 2026-04-29 · versiones verificadas frontmatter pre-flight focused)
     "PM-3.1": "2.6",     # Playbook Outline — Session Map (last_verified 2026-04-20 v2.5.1 BUG-PM31-001 cierre · canonizado v2.6)
     "PM-3.2": "2.5",     # Playbook Build-Out — Step by Step
-    "PM-3.3": "2.4",     # Canva Deck — Visual Support (canon prohíbe hardcoding desde v2.4)
+    "PM-3.3": "3.0",     # Visual Aid Generator student-facing tool-agnostic (v2.4 deck deprecated · 2026-04-30)
     "PM-3.4": "4.0",     # Workbook — Autonomous Work
     "PM-3.5": "2.6",     # Final Mission — Integrative Task (PRE-GENERATION CHECKLIST obligatorio v2.6)
     "PM-3.6": "2.6.5",
