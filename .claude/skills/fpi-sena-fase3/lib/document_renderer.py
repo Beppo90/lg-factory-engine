@@ -134,19 +134,85 @@ def validate_rendered_pptx(pptx_path: str) -> dict:
     }
 
 
-# === API EMERGENTE (NO DEFINIR AQUÍ) ===
+# === API EMERGENTE · Hito 5 ===
 #
-# Las funciones específicas render_pm_3_1_docx, render_pm_3_2_docx, render_pm_3_3_pptx,
-# render_pm_3_4_docx, render_pm_3_5_docx, render_pm_3_6_docx emergen en cada subagente
-# correspondiente conforme Hito 2-3-4. NO definir signatures aquí · esto es I.2 strict.
+# Hito 5 (2026-04-30) inicia el refactor pass uniformando signatures.
+# Signature canónica:
 #
-# Hito 5 refactor pass (1-2h) uniforma las 6 funciones a signature canónica unified
-# después de que la API converja iterando.
+#   render_pm_3_X_docx(run_dir: str | Path, output_name: str | None = None) -> dict
+#     run_dir: ruta al run (e.g. runs/IMARPOR-CC-2026-04-27)
+#     output_name: nombre del docx output (default canon: pm-3-X-FINAL-<RUN-ID>.docx)
+#     return: {success, output_path, size_bytes, errors[], stdout, stderr}
+#
+# Implementación: subprocess al script node `gen_audit_docx.js` del run.
+# Cada run mantiene su propio script (port from MGV/IMARPOR-CC con paths adapt).
+
+
+def render_pm_3_6_docx(run_dir, output_name=None):
+    """Render PM-3.6 GFPI-F-135 Guia del Aprendiz a DOCX.
+
+    Canon v2.7: invoca scripts/gen_audit_docx.js del run, espera pm-3-6.json
+    presente, genera output con paleta SENA institucional + apendices embebidos.
+
+    Args:
+        run_dir: ruta al directorio del run (e.g. 'runs/IMARPOR-CC-2026-04-27')
+        output_name: nombre del docx output. Default: 'pm-3-6-FINAL-<RUN-ID>.docx'
+
+    Returns:
+        {success, output_path, size_bytes, errors, stdout, stderr}
+    """
+    run_path = Path(run_dir)
+    if not run_path.exists():
+        raise FileNotFoundError(f"run_dir no existe: {run_dir}")
+
+    script_path = run_path / 'scripts' / 'gen_audit_docx.js'
+    if not script_path.exists():
+        raise FileNotFoundError(
+            f"gen_audit_docx.js no existe en {script_path} . "
+            f"copia desde runs/MGV-2026-04-20/scripts/ y adapta RUN_DIR"
+        )
+
+    result = run_node_script(str(script_path), timeout=120)
+
+    run_id = run_path.name
+    default_name = f'pm-3-6-FINAL-{run_id}.docx'
+    output_path = run_path / (output_name or default_name)
+
+    if not output_path.exists():
+        candidates = list(run_path.glob('pm-3-6-FINAL-*.docx'))
+        if candidates:
+            output_path = candidates[0]
+
+    validation = validate_rendered_docx(str(output_path)) if output_path.exists() else {
+        'valid': False, 'size_bytes': 0, 'errors': ['output docx no encontrado post-render']
+    }
+
+    return {
+        'success': result['success'] and validation['valid'],
+        'output_path': str(output_path),
+        'size_bytes': validation['size_bytes'],
+        'errors': validation['errors'] + ([result['stderr']] if result['stderr'] else []),
+        'stdout': result['stdout'],
+        'stderr': result['stderr'],
+    }
 
 
 if __name__ == "__main__":
-    print(f"document_renderer · self-test")
+    import sys
+    print("document_renderer . self-test")
     print(f"  node_available: {node_available()}")
     print(f"  node version: {get_node_version()}")
     print(f"  validate_rendered_docx('/nonexistent.docx'): {validate_rendered_docx('/nonexistent.docx')}")
     print(f"  validate_rendered_pptx('/nonexistent.pptx'): {validate_rendered_pptx('/nonexistent.pptx')}")
+
+    if len(sys.argv) > 1:
+        run_dir = sys.argv[1]
+        print(f"\n  render_pm_3_6_docx({run_dir!r}):")
+        try:
+            r = render_pm_3_6_docx(run_dir)
+            print(f"    success: {r['success']}")
+            print(f"    output: {r['output_path']} ({r['size_bytes']} bytes)")
+            if r['errors']: print(f"    errors: {r['errors']}")
+            if r['stdout']: print(f"    stdout: {r['stdout'].strip()}")
+        except Exception as e:
+            print(f"    FAIL: {type(e).__name__}: {e}")
