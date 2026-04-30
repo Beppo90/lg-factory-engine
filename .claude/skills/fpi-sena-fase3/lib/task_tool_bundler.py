@@ -281,15 +281,27 @@ REF_OPERACIONALES_PHASE3 = {
     "PM-3.4": "runs/MGV-2026-04-20/pm-3-4-content.json",
     "PM-3.5": "runs/MGV-2026-04-20/pm-3-5.json",
     "PM-3.6": "runs/MGV-2026-04-20/pm-3-6.json",
+    "PM-3.7": None,  # NEW v1.4 · NO MGV reference (genuinely new PM nacido 2026-04-29 · master prompt v1.0 mapping table es la spec canónica)
 }
 
 
 def cargar_ref_operacional_phase3(pm_id, repo_root):
-    """Carga ref operacional Fase 3 desde MGV-2026-04-20 (canon más maduro v2.6)."""
+    """Carga ref operacional Fase 3 desde MGV-2026-04-20 (canon mas maduro v2.6).
+    
+    Returns (None, reason_str) si:
+    - pm_id no esta en REF_OPERACIONALES_PHASE3 (PM no registrado)
+    - rel_path es None (PM registrado SIN ref · ej. PM-3.7 v1.0 nuevo · master prompt es canon)
+    - file no existe en disco
+    
+    El consumidor (construir_prompt_canonico_phase3) maneja None gracefully · skip ref op block.
+    """
     if pm_id not in REF_OPERACIONALES_PHASE3:
         return None, f"PM {pm_id} no tiene ref operacional Fase 3 registrado"
     
     rel_path = REF_OPERACIONALES_PHASE3[pm_id]
+    if rel_path is None:
+        return None, f"PM {pm_id} registrado SIN ref operacional (master prompt canónico es la spec única · ej. PM nacimiento)"
+    
     abs_path = Path(repo_root) / rel_path
     
     if not abs_path.exists():
@@ -328,9 +340,11 @@ def construir_prompt_canonico_phase3(master_prompt_text, inputs, ref_op, deliver
     )
     
     # Inputs estructurados
+    is_phase4 = inputs.get("phase") == 4
+    phase_label = "Fase 1 + Fase 2 + Fase 3 cerrada · Phase 4 derivado · Gate 3 cumplido" if is_phase4 else "Fase 1 + Fase 2 cerrada · canon §6.4 cumplido"
     sections.append(
         "═══════════════════════════════════════════════════════════════════════════\n"
-        "INPUTS DEL RUN ACTUAL (Fase 1 + Fase 2 cerrada · canon §6.4 cumplido)\n"
+        f"INPUTS DEL RUN ACTUAL ({phase_label})\n"
         "═══════════════════════════════════════════════════════════════════════════\n"
         f"\nrun_id: {inputs.get('run_id', 'UNKNOWN')}\n"
         f"guide_id: {inputs.get('guide_id', 'None (single-guía absorpción)')}\n"
@@ -341,6 +355,23 @@ def construir_prompt_canonico_phase3(master_prompt_text, inputs, ref_op, deliver
         f"\n--- pm-2-0.json (Session Blueprint) ---\n{json.dumps(inputs.get('pm20', {}), indent=2, ensure_ascii=False)[:2000]}...\n"
         f"\nNota: las 9 Activity Cards completas están disponibles si necesitas inspeccionarlas (path runs/{inputs.get('run_id')}/pm-2-X.json).\n"
     )
+
+    # Phase 3 outputs · solo cuando phase==4 (Phase 4 derivados consumen Playbook completo)
+    if is_phase4:
+        pm32_sessions = inputs.get("pm32_sessions", [])
+        pm32_summary = f"list[{len(pm32_sessions)}] sessions S1->S{len(pm32_sessions)} (read paths runs/{inputs.get('run_id')}/pm-3-2-s{{1..{len(pm32_sessions)}}}.json para detalle completo)"
+        sections.append(
+            "═══════════════════════════════════════════════════════════════════════════\n"
+            "PLAYBOOK COMPLETO (Phase 3 outputs · Gate 3 aprobado por Sergio)\n"
+            "═══════════════════════════════════════════════════════════════════════════\n"
+            f"\n⚠ Phase 4 derivado · DEBES consumir el Playbook completo coherentemente.\n"
+            f"\n--- pm-3-1.json (Playbook Outline · Session Map) ---\n{json.dumps(inputs.get('pm31', {}), indent=2, ensure_ascii=False)[:3000]}...\n"
+            f"\n--- pm-3-2-sX.json (8 Build-Outs · Session Plans) ---\n{pm32_summary}\n"
+            f"\n--- pm-3-5.json (Final Mission · Integrative Task) ---\n{json.dumps(inputs.get('pm35', {}), indent=2, ensure_ascii=False)[:3000]}...\n"
+            f"\n--- pm-4-1.json + pm-4-2.json (Instrumentos + Cuestionario S6 consolidado) ---\n"
+            f"pm-4-1 keys: {list(inputs.get('pm41', {}).keys())[:10] if isinstance(inputs.get('pm41'), dict) else 'N/A'}\n"
+            f"pm-4-2 keys: {list(inputs.get('pm42', {}).keys())[:10] if isinstance(inputs.get('pm42'), dict) else 'N/A'}\n"
+        )
     
     # Ref operacional ground truth
     if ref_op:

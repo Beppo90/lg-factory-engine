@@ -39,7 +39,8 @@ VERSIONES_VIGENTES = {
     "PM-3.3": "2.4",     # Canva Deck — Visual Support (canon prohíbe hardcoding desde v2.4)
     "PM-3.4": "2.0",     # Workbook — Autonomous Work
     "PM-3.5": "2.6",     # Final Mission — Integrative Task (PRE-GENERATION CHECKLIST obligatorio v2.6)
-    "PM-3.6": "2.6.5",   # GFPI-F-135 Integrator (esquema canon v2.6.5)
+    "PM-3.6": "2.6.5",
+    "PM-3.7": "1.0",  # NEW v1.4 · GFPI-F-134 Matrix Aggregator (commit d6ac07b)   # GFPI-F-135 Integrator (esquema canon v2.6.5)
     # Phase 4 mecánicos (también referenciables desde fpi-sena-fase3 · ubicación física fpi-sena-fase2)
     "PM-4.1": "2.6.5",   # actualizado 2026-04-29 post smoke-test (frontmatter real)
     "PM-4.2": "2.0"      # confirmado 2026-04-29 pre-flight focused Hito 2 Task 1
@@ -66,6 +67,7 @@ MASTER_PROMPT_PATHS = {
     "PM-3.4": "PM-3.4 — Workbook — Autonomous Work.md",
     "PM-3.5": "PM-3.5 — Final Mission — Integrative Task.md",
     "PM-3.6": "PM-3.6 — GFPI-F-135 Integrator.md",
+    "PM-3.7": "PM-3.7 — GFPI-F-134 Matrix Aggregator.md",
     # Phase 4 mecánicos
     "PM-4.1": "PM-4.1 — Instrumentos de Evaluación Formativa.md",
     "PM-4.2": "PM-4.2 — Cuestionario Técnico — Evidencia de Conocimiento.md"
