@@ -278,7 +278,7 @@ REF_OPERACIONALES_PHASE3 = {
     "PM-3.1": "runs/MGV-2026-04-20/pm-3-1.json",
     "PM-3.2": "runs/MGV-2026-04-20/pm-3-2-s1.json",  # ejemplo · subagente PM-3.2 elige sesión específica
     "PM-3.3": "runs/DIESEL-2026-04-15/pm-3-3-spec.json",  # único run con PPTX completo
-    "PM-3.4": "runs/MGV-2026-04-20/pm-3-4-content.json",
+    "PM-3.4": "runs/DIESEL-2026-04-19/pm-3-4.json",
     "PM-3.5": "runs/MGV-2026-04-20/pm-3-5.json",
     "PM-3.6": "runs/MGV-2026-04-20/pm-3-6.json",
     "PM-3.7": None,  # NEW v1.4 · NO MGV reference (genuinely new PM nacido 2026-04-29 · master prompt v1.0 mapping table es la spec canónica)

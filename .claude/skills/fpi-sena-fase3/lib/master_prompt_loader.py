@@ -37,7 +37,7 @@ VERSIONES_VIGENTES = {
     "PM-3.1": "2.6",     # Playbook Outline — Session Map (last_verified 2026-04-20 v2.5.1 BUG-PM31-001 cierre · canonizado v2.6)
     "PM-3.2": "2.5",     # Playbook Build-Out — Step by Step
     "PM-3.3": "2.4",     # Canva Deck — Visual Support (canon prohíbe hardcoding desde v2.4)
-    "PM-3.4": "2.0",     # Workbook — Autonomous Work
+    "PM-3.4": "4.0",     # Workbook — Autonomous Work
     "PM-3.5": "2.6",     # Final Mission — Integrative Task (PRE-GENERATION CHECKLIST obligatorio v2.6)
     "PM-3.6": "2.6.5",
     "PM-3.7": "1.0",  # NEW v1.4 · GFPI-F-134 Matrix Aggregator (commit d6ac07b)   # GFPI-F-135 Integrator (esquema canon v2.6.5)

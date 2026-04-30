@@ -10,8 +10,8 @@
 |-------|-------|
 | **Código** | PM-3.4 |
 | **Nombre** | Workbook — Autonomous Work |
-| **Versión** | 2.0 |
-| **Last Verified** | 2026-04-13 |
+| **Versión** | 4.0 |
+| **Last Verified** | 2026-04-30 |
 | **Destinatario** | Aprendiz (documento para el estudiante) + Instructor (Answer Key separado) |
 | **Función** | Generar los capítulos del Workbook que el aprendiz completa como trabajo autónomo entre sesiones presenciales |
 | **Analogía** | Es el "gimnasio" de la guía — donde el aprendiz practica solo lo que vio en clase |
@@ -69,6 +69,188 @@ Contiene respuestas para cada capítulo:
 > - **Versión 3 (Workbook — esta versión):** Tasks adicionales de práctica autónoma — parecidas pero diferentes a las anteriores — para trabajo independiente.
 > 
 > Las tres versiones abordan el mismo contenido desde ángulos ligeramente distintos. No son las mismas tasks copiadas.
+
+---
+
+## EXTENSIÓN v4.0 — REINFORCE/EXTEND/PREPARE ANATOMÍA CANON (2026-04-30)
+
+> [!warning] CANON v4.0 — Cada capítulo del Workbook usa estructura tripartita REINFORCE / EXTEND / PREPARE
+> Promovido de operational evidence DIESEL-2026-04-19 (v4.0) + MGV-2026-04-20 (v4.1) a master prompt canon. Master prompt v2.0 quedaba shallow · solo documentaba "encabezado + instrucciones + spaces". Operational reality usa anatomía 3-section canon ya validada en runs DIESEL+MGV.
+
+### REGLA 11 — ANATOMÍA TRIPARTITA POR CAPÍTULO (REINFORCE / EXTEND / PREPARE)
+
+Cada capítulo del Workbook tiene **3 secciones canónicas** que reflejan el ciclo Apropiación → Autonomía → Pre-activación:
+
+#### Sección 1 · REINFORCE (refuerzo de Apropiación · Bloom L1-L2)
+
+- Revisita el contenido de la sesión presencial recién terminada
+- Tasks parecidas a las trabajadas en clase pero DIFERENTES (Principio Tres Versiones · NO copy)
+- Bloom Level: L1-L2 (Remember · Understand)
+- Activities: labeling · matching · vocabulary_match · reflection · drill básico
+
+```json
+"reinforce": {
+  "title": "string",
+  "instructions_es": "string (bilingüe support)",
+  "instructions_en": "string (primary instruction)",
+  "duracion_min": int (15-25 min recomendado),
+  "bloom_level": "L1-L2 (Remember, Understand)",
+  "activities": [
+    {
+      "id": "ch{N}-r-a{X}",
+      "type": "labeling | matching | vocabulary_match | reflection | drill",
+      "title": "string",
+      "items": [...] // o estructura por tipo
+    }
+  ]
+}
+```
+
+#### Sección 2 · EXTEND (extensión HOTS · Bloom L3-L5)
+
+- Lleva el contenido a aplicación · análisis · creación
+- Aprendiz transfiere a contexto personal/profesional propio
+- Bloom Level: L3-L5 (Apply · Analyze · Evaluate · Create)
+- Activities: drawing/mapping · categorization+writing · justification · production
+
+```json
+"extend": {
+  "title": "string",
+  "instructions_es": "string",
+  "instructions_en": "string",
+  "duracion_min": int (15-25 min recomendado),
+  "bloom_level": "L3-L5 (Apply, Analyze, Create)",
+  "activities": [
+    {
+      "id": "ch{N}-e-a{X}",
+      "type": "drawing | mapping | categorization | writing | justification | production",
+      "title": "string",
+      "prompt": "string (HOTS prompt)",
+      "scaffolding": [...]
+    }
+  ]
+}
+```
+
+#### Sección 3 · PREPARE (pre-activación flipped · sesión siguiente)
+
+- Pre-activa contenido de la sesión PRÓXIMA (flipped learning canon)
+- Aprendiz llega a clase con primer contacto al input
+- Bloom Level: L1-L2 (Remember · Understand) primer contacto
+- Activities: pre-reading + underlining · pre-listening + note-taking · vocabulary preview
+
+```json
+"prepare": {
+  "title": "Pre-activation for S{N+1} — [tema]",
+  "target_session": int (sesión siguiente),
+  "instructions_es": "string",
+  "instructions_en": "string",
+  "duracion_min": int (10-20 min recomendado),
+  "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped",
+  "activities": [
+    {
+      "id": "ch{N}-p-a{X}",
+      "type": "pre_reading | pre_listening | vocabulary_preview",
+      "title": "string",
+      "content": "string | text | scaffolding"
+    }
+  ]
+}
+```
+
+### REGLA 12 — VOLUMEN CANON v4.0 (8 capítulos · NO 7)
+
+**Default canon v4.0:** 8 capítulos para una guía de 8 sesiones (NOT 7 como decía v2.0).
+
+Razón canon v4.0:
+- Cada sesión presencial S1-S8 puede tener trabajo autónomo asignado
+- Total intensidad autónoma 6 horas distribuida en 8 chapters
+- Última sesión S8 tiene "PREPARE for next guide" si aplica · o reflective close
+
+**Para guías con N sesiones diferentes** (ej IMARPOR-CC 12 sesiones · single-guía Curso Complementario): N capítulos canónicos · 1 por sesión · respetando estructura tripartita.
+
+### REGLA 13 — SCHEMA TOP-LEVEL CANON v4.0 (13 keys)
+
+```json
+{
+  "version": "4.0",
+  "pm_id": "PM-3.4",
+  "run_id": "string",
+  "guide": "string · ej 'Guía 1 — IMARPOR-CC'",
+  "generated_at": "ISO-8601",
+  "model": "string · LLM utilizado",
+  "status": "draft | parametricity_test | completed",
+  "header": { /* 9 sub-keys · programa metadata */ },
+  "introduction": "string · párrafo motivacional bilingüe al aprendiz",
+  "description": "string · qué cubre este Workbook",
+  "chapters": [ /* N items · estructura tripartita REGLA 11 */ ],
+  "consolidated_answer_key": {
+    "note": "Las respuestas viven en documento separado Workbook Answer Key (Instructor)",
+    "reinforce_keys_ref": "path/al/answer-key"
+  },
+  "derivation_source": {
+    "playbook_ref": "pm-3-1.json",
+    "learner_guide_ref": "pm-3-6.json",
+    "activity_cards_ref": ["pm-2-3", "pm-2-4", "pm-2-5", "pm-2-6", "pm-2-10"],
+    "final_mission_ref": "pm-3-5.json",
+    "notes": "string · trazabilidad upstream"
+  }
+}
+```
+
+### REGLA 14 — TRAZABILIDAD UPSTREAM (derivation_source)
+
+Cada Workbook DEBE documentar `derivation_source` con paths upstream:
+- `playbook_ref` (PM-3.1 outline)
+- `learner_guide_ref` (PM-3.6 GFPI-F-135)
+- `activity_cards_ref` (lista PMs Fase 2 que alimentaron)
+- `final_mission_ref` (PM-3.5)
+- `notes` (cualquier decisión arquitectónica)
+
+Esto cierra la cadena Phase 2 → Phase 3 → Phase 4 derivado · auditable.
+
+### REGLA 15 — ANSWER KEY SEPARADO (consolidated_answer_key reference)
+
+El Workbook del aprendiz NO tiene respuestas inline (REGLA 8 v2.0 strict). Pero el JSON canónico v4.0 incluye `consolidated_answer_key` con referencia al documento Answer Key del Instructor. Esto permite:
+- Auditoría cross-section
+- Generación posterior del Answer Key DOCX
+- Validation que cada activity tiene respuesta canon
+
+### REGLA 16 — bloom_level POR SECCIÓN OBLIGATORIO
+
+Cada sección REINFORCE/EXTEND/PREPARE debe declarar `bloom_level` explícitamente:
+- REINFORCE: "L1-L2 (Remember, Understand)"
+- EXTEND: "L3-L5 (Apply, Analyze, Evaluate, Create)" — específico por activity si varía
+- PREPARE: "L1-L2 (Remember, Understand) · primer contacto flipped"
+
+Justificación: progresión Bloom canónica DM (Apropiación L1-2 → Workbook EXTEND L3-5 → Pre-activación L1-2 nuevo ciclo).
+
+### Pipeline canónico v4.0
+
+| Script (futuro · pendiente Hito 5) | Función | Input | Output |
+|------|---------|-------|--------|
+| `subagente_pm_3_4_workbook.py` | Camino 2 LLM bundle prep | Phase 4 inputs (load_phase4_inputs) | bundle Task tool |
+| `validators · check-workbook-schema.js` | Schema validation v4.0 strict | pm-3-4.json | exit 0/1 |
+| `lib/docx_renderer.py::render_pm_3_4_workbook` | Render learner DOCX (futuro) | pm-3-4.json | pm-3-4-workbook.docx |
+| `lib/docx_renderer.py::render_pm_3_4_answer_key` | Render answer key DOCX | pm-3-4.json + answer key | pm-3-4-answer-key.docx |
+
+### Caso-origen y estado canon v4.0
+
+- **Run origen:** DIESEL-2026-04-19 v4.0 + MGV-2026-04-20 v4.1 (parametricity_test)
+- **Capítulos:** 8 (DIESEL completed) · 8 (MGV piloto)
+- **REINFORCE/EXTEND/PREPARE:** validado operacional en ambos runs
+- **bloom_level por sección:** populated DIESEL · canon promovido v4.0
+
+### Consecuencia arquitectónica v4.0
+
+El Workbook deja de ser "encabezado + instrucciones + spaces" (v2.0 shallow) y pasa a ser **artefacto pedagógicamente estructurado tripartito** con:
+- Refuerzo (Bloom L1-L2)
+- Extensión HOTS (Bloom L3-L5)
+- Pre-activación flipped (Bloom L1-L2 nuevo input)
+
+Esto cierra el loop pedagógico Apropiación → Autonomía → Pre-activación canónicamente.
+
+*Lección aprendida 2026-04-30 (audit disciplinado anti-patrón #15): Master prompt v2.0 quedaba shallow vs operational reality v4.0. Bump documenta canon ya operativo · cierra documental drift detectado en pre-flight 5 layers.*
 
 ---
 
@@ -208,6 +390,17 @@ Para CADA capítulo genera:
 
 ---
 
-*PM-3.4: Workbook — Autonomous Work*
+*PM-3.4: Workbook — Autonomous Work — v4.0*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
-*Instructor Sergio Cortés Perdomo · Marzo 2026*
+*Instructor Sergio Cortés Perdomo · Marzo 2026 · v4.0 bump 2026-04-30 (operational canon promoted)*
+
+---
+
+## CHANGELOG MASTER PROMPT
+
+| Versión | Fecha | Cambio |
+|---------|-------|--------|
+| v2.0 | 2026-04-13 | Principio Tres Versiones · 7 capítulos default · estructura simple (encabezado + instrucciones + spaces) |
+| **v4.0** | **2026-04-30** | **REINFORCE/EXTEND/PREPARE anatomía tripartita canon · 8 capítulos default (NOT 7) · bloom_level per sección · derivation_source trazabilidad · consolidated_answer_key separate · schema 13 top-level keys canon · REGLAS 11-16 documentadas (promoted from operational evidence DIESEL v4.0 + MGV v4.1)** |
+
+**v3.x skipped:** versions 3.x existieron como drafts internos en runs DIESEL/MGV pero nunca se documentaron formalmente en master prompt. v4.0 absorbe la evolución completa post-v2.0 hasta operational reality.

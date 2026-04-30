@@ -1,0 +1,866 @@
+{
+  "version": "4.0",
+  "pm_id": "PM-3.4",
+  "run_id": "IMARPOR-CC-2026-04-27",
+  "guide": "Guía 1 — Inglés Marítimo y Portuario (IMARPOR-CC) — The Maritime Operations Pro",
+  "generated_at": "2026-04-30T00:00:00-05:00",
+  "model": "claude-opus-4-7-1m",
+  "status": "draft",
+  "header": {
+    "programa_codigo": "12340002",
+    "programa_nombre": "Inglés Marítimo y Portuario (Curso Complementario)",
+    "tipo_programa": "Curso Complementario",
+    "guia_numero": 1,
+    "guia_nombre": "The Maritime Operations Pro",
+    "cefr_level": "A1.2 → A2.1 (single-guía con progresión interna por bloques)",
+    "intensidad_total_horas": 100,
+    "intensidad_autonoma_horas": 28,
+    "total_chapters": 12
+  },
+  "introduction": "Welcome aboard, Port Operations Trainee. This Workbook is your personal logbook for the 100-hour journey of Inglés Marítimo y Portuario. (Bienvenido a bordo, aprendiz de Operaciones Portuarias. Este Workbook es tu bitácora personal para el recorrido de 100 horas del curso.) Each of the 12 chapters maps to one in-class session at the Terminal de Contenedores Buenaventura and gives you three tracks of work: REINFORCE — to consolidate what you and Andrea Mosquera saw in class today; EXTEND — to push you into higher-order thinking, where you analyze, justify and create around the same content; and PREPARE — to get a first contact with what is coming in the next session, so you arrive to class with the radio already warm. (Cada capítulo te da tres pistas: REINFORCE para consolidar, EXTEND para analizar/crear y PREPARE para anticipar la próxima sesión.) Use this Workbook the way a real Port Operations Trainee uses a Radio Log: short, clean, honest. There are no grades here — just practice that earns you the right to coordinate the CML CARRIER turnaround in Session 12. The Three Versions Principle applies: tasks here are different from the ones you worked in class (Version 1) and from the consolidated quiz (Version 2). Same content, fresh angle. Roger? Wilco. Let's start.",
+  "description": "Workbook autónomo de 12 capítulos para Guía 1 IMARPOR-CC (single-guía absorpción RAP-CC-INTEGRADO). 100h total · 28h autónomas distribuidas en ~140 min por sesión (REINFORCE + EXTEND + PREPARE) siguiendo canon REGLA 11 anatomía tripartita.",
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "session": 1,
+      "session_name": "First Day at the Terminal — Andrea Arrives",
+      "duracion_autonoma_min": 140,
+      "habilidades_foco_sesion": ["Vocabulary (preview)", "Self-assessment"],
+      "reinforce": {
+        "title": "Maritime KWL Pre-Llenado — What I already know about the Port",
+        "instructions_es": "Después de tu primera sesión, completa tu Maritime KWL Chart en el espacio asignado: 5 cosas que YA sabes en inglés sobre el puerto (K), 5 que QUIERES aprender (W) y deja la columna L vacía hasta S12. Soporte bilingüe entre paréntesis SOLO para palabras de supervivencia.",
+        "instructions_en": "Fill in your Maritime KWL Chart: 5 things you already KNOW in English about the port, 5 things you WANT to learn, leave L blank until S12.",
+        "duracion_min": 50,
+        "bloom_level": "L1-L2 (Remember, Understand)",
+        "activities": [
+          {
+            "id": "ch1-r-a1",
+            "type": "reflection",
+            "title": "Maritime KWL Chart",
+            "items": [
+              "K · 5 cosas que YA sé del puerto en inglés (sentence starter: 'I know that ___ is ___')",
+              "W · 5 cosas que QUIERO aprender en estas 100h (sentence starter: 'I want to learn how to ___')",
+              "L · DEJAR EN BLANCO — se llena en Session 12"
+            ],
+            "scaffold": "Word bank: port · ship · container · radio · captain · trainee · terminal · operations · vessel · Buenaventura"
+          },
+          {
+            "id": "ch1-r-a2",
+            "type": "labeling",
+            "title": "5 Photos from MY Port",
+            "prompt_en": "Take or find 5 photos from the Buenaventura port (or any container terminal). Label each photo with 1 English word you recognize and 1 question you have about it.",
+            "prompt_es": "Toma o encuentra 5 fotos del puerto de Buenaventura (o cualquier terminal de contenedores). Etiqueta cada foto con 1 palabra en inglés y 1 pregunta que tengas sobre el objeto.",
+            "items_count": 5,
+            "scaffold": "Sentence starter: 'This is a ___. What do they call this in English?'"
+          }
+        ]
+      },
+      "extend": {
+        "title": "Personal Maritime Mood Board — Why am I here?",
+        "instructions_es": "Crea tu Maritime Mood Board personal (1 página · papel o digital): pega o dibuja 6 imágenes que representan POR QUÉ estás haciendo este curso de inglés marítimo y POR QUÉ Buenaventura te importa. Justifica cada imagen con 1 oración en español + 1 frase corta en inglés (puede ser 2-3 palabras).",
+        "instructions_en": "Build your personal Maritime Mood Board (1 page): 6 images explaining why you are taking this course and why Buenaventura matters to you. Justify each image with 1 ES sentence + 1 short EN phrase.",
+        "duracion_min": 60,
+        "bloom_level": "L3-L5 (Apply, Analyze, Create)",
+        "activities": [
+          {
+            "id": "ch1-e-a1",
+            "type": "production",
+            "title": "Maritime Mood Board",
+            "prompt": "6 images + 6 ES justifications + 6 short EN phrases. Bring the board to S2 — we will share it during the warm-up.",
+            "scaffolding": [
+              "Image categories suggested: family · workplace · port view · vessel · radio · future-self",
+              "EN phrase frames: 'My future job', 'I want to coordinate', 'My port', 'My family', 'My uniform'",
+              "Productive open-ended — no single right answer"
+            ]
+          }
+        ]
+      },
+      "prepare": {
+        "title": "Pre-activation for S2 — The Port Word Walker",
+        "target_session": 2,
+        "instructions_es": "Antes de S2, mira atentamente 3 fotos del Terminal de Buenaventura (en línea o las que tomaste). Sin buscar traducción, marca con flechas 5 elementos que crees que vas a aprender en S2. NO escribas nombres en inglés todavía — sólo flechas y un signo de interrogación.",
+        "instructions_en": "Before S2: study 3 photos of Buenaventura Terminal. Mark 5 elements with arrows + question marks. Do NOT translate — just notice.",
+        "duracion_min": 30,
+        "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped",
+        "activities": [
+          {
+            "id": "ch1-p-a1",
+            "type": "vocabulary_preview",
+            "title": "Five Arrows on the Quay",
+            "content": "Print or open 3 photos of the Terminal de Contenedores Buenaventura. Add 5 arrows pointing at things you think have an English name. Add a '?' next to each. Bring the photos to S2."
+          },
+          {
+            "id": "ch1-p-a2",
+            "type": "pre_listening",
+            "title": "Listen Once — Captain Lopera intro (30 sec)",
+            "content": "Listen ONCE to the 30-second teaser audio of Captain Lopera introducing himself in English with a non-native accent. Do not pause, do not replay. Write 1 word you THINK you heard."
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "session": 2,
+      "session_name": "The Port Word Walker — Vocabulary of the Quay",
+      "duracion_autonoma_min": 140,
+      "habilidades_foco_sesion": ["Vocabulary", "Reading (support)"],
+      "reinforce": {
+        "title": "Toolbelt Sub-bloque 1 — 5 Terms in My Pocket",
+        "instructions_es": "Repasa los 5 términos del Sub-bloque 1 (bollard · crane · bow · stern · bridge) con 3 rondas: (1) palabra → imagen, (2) imagen → palabra, (3) palabra → oración propia. Graba un audio de 30 segundos nombrando los 5 elementos.",
+        "instructions_en": "Drill the 5 Sub-bloque 1 terms in 3 rounds (word→image, image→word, word→own sentence). Record a 30-second audio naming the 5 elements.",
+        "duracion_min": 50,
+        "bloom_level": "L1-L2 (Remember, Understand)",
+        "activities": [
+          {
+            "id": "ch2-r-a1",
+            "type": "vocabulary_match",
+            "title": "Three-Round Toolbelt Drill",
+            "items": [
+              {"term": "bollard", "ipa": "/ˈbɒlərd/", "stress": "BOlLARD"},
+              {"term": "crane", "ipa": "/kreɪn/", "stress": "CRANE"},
+              {"term": "bow", "ipa": "/baʊ/", "stress": "BOW"},
+              {"term": "stern", "ipa": "/stɜːrn/", "stress": "STERN"},
+              {"term": "bridge", "ipa": "/brɪdʒ/", "stress": "BRIDGE"}
+            ],
+            "rounds": 3,
+            "scaffold": "After each round, mark a check next to the word if you said it correctly without looking."
+          },
+          {
+            "id": "ch2-r-a2",
+            "type": "drill",
+            "title": "30-second Audio — My Personal Toolbelt",
+            "prompt_en": "Record a 30-second audio. Use the 5 terms in 5 different sentences using 'This is a ___' or 'These are ___' from a real photo of your port.",
+            "prompt_es": "Graba 30 segundos. Usa los 5 términos en 5 oraciones usando 'This is a ___' o 'These are ___' apoyándote en 1 foto real del puerto."
+          }
+        ]
+      },
+      "extend": {
+        "title": "Categorize 12 Photos — Build Your Own Mini Word Wall",
+        "instructions_es": "Toma 12 fotos del puerto (las tuyas o de internet). Clasifícalas en 3 categorías: PORT INFRASTRUCTURE / SHIP PARTS / PORT EQUIPMENT. Justifica en español por qué pusiste cada foto en su categoría (1 oración por foto) y propón 1 término nuevo (que NO esté en el Toolbelt) para 1 de las fotos. Investiga el término por contexto, no traducción.",
+        "instructions_en": "Take 12 port photos. Sort them in 3 categories (Port Infrastructure / Ship Parts / Port Equipment). Justify each in ES + propose 1 NEW non-Toolbelt term deduced from context.",
+        "duracion_min": 60,
+        "bloom_level": "L3-L5 (Apply, Analyze, Create)",
+        "activities": [
+          {
+            "id": "ch2-e-a1",
+            "type": "categorization",
+            "title": "Mini Word Wall Personal",
+            "prompt": "Sort 12 photos in 3 columns. Justify each in 1 ES sentence. Add 1 new term (own research) with context-deduced meaning.",
+            "scaffolding": [
+              "Category labels: PORT INFRASTRUCTURE (muelle, edificios fijos) / SHIP PARTS (componentes del buque) / PORT EQUIPMENT (máquinas móviles)",
+              "Output: 12 photos justified + 1 new term with reasoning paragraph (3-4 sentences)"
+            ]
+          }
+        ]
+      },
+      "prepare": {
+        "title": "Pre-activation for S3 — Reading the Ship",
+        "target_session": 3,
+        "instructions_es": "Antes de S3, lee SILENCIOSAMENTE el primer párrafo (3 oraciones) del texto adaptado UNIT 1 SHIP OVERVIEW que recibirás en clase digital. Subraya las palabras que NO entiendas. NO traduzcas — sólo subraya.",
+        "instructions_en": "Pre-read ONLY the first paragraph (3 sentences) of UNIT 1 SHIP OVERVIEW. Underline unknown words; do not translate.",
+        "duracion_min": 30,
+        "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped",
+        "activities": [
+          {
+            "id": "ch2-p-a1",
+            "type": "pre_reading",
+            "title": "Underline Unknown Words",
+            "content": "Read the 3-sentence teaser provided in your S2 handout. Underline 3-7 words you do not recognize. Bring the underlined paper to S3.",
+            "reflection_question": "¿Cuántas de las palabras subrayadas son ship parts? ¿Cuántas son verbos?"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 3,
+      "session": 3,
+      "session_name": "Reading the Ship — UNIT 1 SHIP OVERVIEW",
+      "duracion_autonoma_min": 140,
+      "habilidades_foco_sesion": ["Reading", "Vocabulary", "Grammar (support)"],
+      "reinforce": {
+        "title": "Diagram of the BUENAVENTURA EXPRESS — Label 8 Parts",
+        "instructions_es": "Imprime o dibuja un diagrama simple de un container ship. Etiqueta 8 partes en inglés (al menos 6 del Toolbelt + 2 nuevas que viste en el texto UNIT 1). Acompaña cada etiqueta con su artículo (a/an/the) y plural si aplica.",
+        "instructions_en": "Print or draw a container ship diagram. Label 8 parts in English (6+ from Toolbelt + 2 new from UNIT 1). Include article + plural if applicable.",
+        "duracion_min": 50,
+        "bloom_level": "L1-L2 (Remember, Understand)",
+        "activities": [
+          {
+            "id": "ch3-r-a1",
+            "type": "labeling",
+            "title": "Label the Container Ship",
+            "items": ["bow", "stern", "bridge", "deck", "hull", "mast", "container", "lifejacket"],
+            "scaffold": "Use 'a/an' for singular countables, 'the' for unique parts (the bow, the stern). Mark stress with CAPS on each word."
+          },
+          {
+            "id": "ch3-r-a2",
+            "type": "matching",
+            "title": "Ship Part ↔ Function",
+            "items": [
+              {"part": "bow", "function_options": ["front of the ship", "back of the ship", "command room"]},
+              {"part": "stern", "function_options": ["front of the ship", "back of the ship", "engine area"]},
+              {"part": "bridge", "function_options": ["walkway", "command room", "anchor point"]},
+              {"part": "hull", "function_options": ["body of the ship", "ceiling", "rope"]},
+              {"part": "deck", "function_options": ["top floor of the ship", "underwater part", "flag"]}
+            ]
+          }
+        ]
+      },
+      "extend": {
+        "title": "Choose Your Vessel — Justify with 5 Reasons",
+        "instructions_es": "De los 5 tipos de buques mercantes (container ship · bulk carrier · tanker · reefer · tugboat), elige UNO en el que te gustaría trabajar como Port Operations Trainee. Justifica tu elección en un párrafo bilingüe: 5 oraciones en español + 2 oraciones clave en inglés usando 'This vessel is ___ because ___' y 'I prefer ___ because ___'.",
+        "instructions_en": "Choose 1 of 5 vessel types (container/bulk/tanker/reefer/tugboat). Justify with a bilingual paragraph: 5 ES + 2 EN sentences using 'This vessel is ___ because ___'.",
+        "duracion_min": 60,
+        "bloom_level": "L3-L5 (Apply, Analyze, Evaluate)",
+        "activities": [
+          {
+            "id": "ch3-e-a1",
+            "type": "justification",
+            "title": "My Future Vessel — Justification Paragraph",
+            "prompt": "5 ES + 2 EN sentences. Argue from at least 3 angles: cargo type · crew size · operations rhythm.",
+            "scaffolding": [
+              "EN frames: 'This vessel is ___ because ___', 'I prefer ___ because ___', 'A ___ ship handles ___'",
+              "Vessel research source: free 1-paragraph search on each ship type",
+              "Word bank: cargo · crew · safe · fast · large · specialized · liquid · refrigerated"
+            ]
+          }
+        ]
+      },
+      "prepare": {
+        "title": "Pre-activation for S4 — Writing the First Inspection Report",
+        "target_session": 4,
+        "instructions_es": "Antes de S4, observa un objeto/espacio del puerto (real o foto) durante 5 minutos. Escribe 5 frases observacionales usando la plantilla 'There is a ___ in the ___ ' o 'There are ___ in the ___'. NO uses la guía — sólo el patrón.",
+        "instructions_en": "Observe a port object/space for 5 min. Write 5 observation sentences using 'There is a ___ in the ___' or 'There are ___ in the ___'.",
+        "duracion_min": 30,
+        "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped",
+        "activities": [
+          {
+            "id": "ch3-p-a1",
+            "type": "pre_reading",
+            "title": "5 'There is/are' Observations",
+            "content": "Sentence frames: 'There is a ___ in the ___' · 'There are ___ in the ___'. Bring 5 sentences to S4.",
+            "reflection_question": "¿Notas cuándo usas 'is' vs 'are'? ¿Qué cambia en la oración?"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 4,
+      "session": 4,
+      "session_name": "Writing the First Inspection Report — Be + Imperative + IN",
+      "duracion_autonoma_min": 140,
+      "habilidades_foco_sesion": ["Writing", "Grammar"],
+      "reinforce": {
+        "title": "Mini-drill — Be · Imperative · Prepositions IN",
+        "instructions_es": "Completa 12 oraciones fill-in-the-blank distribuidas en 3 grupos (4 con verb to be · 4 imperativos · 4 preposiciones in/on/next to/near). Marca con un asterisco las 2 oraciones donde tuviste más duda.",
+        "instructions_en": "Complete 12 fill-in-the-blank sentences (4 verb to be · 4 imperatives · 4 prepositions). Mark the 2 hardest with an asterisk.",
+        "duracion_min": 45,
+        "bloom_level": "L1-L2 (Remember, Understand)",
+        "activities": [
+          {
+            "id": "ch4-r-a1",
+            "type": "drill",
+            "title": "12 Fill-in-the-Blanks",
+            "items": [
+              "Group A — Verb to be: 'The bridge ___ on the upper deck.', 'These bollards ___ at berth 5.', 'I ___ a Port Operations Trainee.', 'Captain Lopera ___ the master of the BUENAVENTURA EXPRESS.'",
+              "Group B — Imperative: '___ (check) the bollard.', '___ (do not / approach) the bow during loading.', '___ (open) the gate.', '___ (report) to the supervisor.'",
+              "Group C — Prepositions: 'The pilot is ___ the bridge.', 'The customs office is ___ to the gate.', 'Berth 5 is ___ the container yard.', 'The crane is ___ the quay.'"
+            ],
+            "scaffold": "Word bank for verbs: am/is/are/check/do not approach/open/report. Word bank for prepositions: in/on/next/near."
+          }
+        ]
+      },
+      "extend": {
+        "title": "Inspection Report #2 — A Real Object at the Port",
+        "instructions_es": "Toma de tu propia experiencia (o de una foto real) UN objeto del puerto que NO usamos en clase (ej: un fender, una grúa específica, una grada). Escribe un Inspection Report de 8-10 oraciones usando be + imperativo + IN + al menos 4 ship parts. Auto-corrige con esta checklist: ¿Tengo verbo to be correcto? ¿Imperativos sin sujeto? ¿Preposiciones de lugar correctas?",
+        "instructions_en": "Pick 1 real port object NOT used in class. Write an 8-10 sentence Inspection Report using be + imperative + IN + 4+ ship parts. Self-correct using checklist.",
+        "duracion_min": 60,
+        "bloom_level": "L3-L5 (Apply, Analyze, Create)",
+        "activities": [
+          {
+            "id": "ch4-e-a1",
+            "type": "writing",
+            "title": "Inspection Report #2",
+            "prompt": "1-page report on a real port object you observed. Submit autonomous (no grade) — bring to S5 in your portfolio folder.",
+            "scaffolding": [
+              "Structure: (1) Object header — name, location · (2) 3 observational sentences — there is/are · (3) 3 imperative sentences — directives to crew · (4) 1 closing sentence — overall status",
+              "Self-check checklist: 'be correct?' / 'imperatives without subject?' / 'prepositions in/on/next to/near correct?'",
+              "Word bank: ship part · status · damaged · clean · safe · ready · check · inspect · report"
+            ]
+          }
+        ]
+      },
+      "prepare": {
+        "title": "Pre-activation for S5 — Listening to SMCP",
+        "target_session": 5,
+        "instructions_es": "Antes de S5, escucha UNA SOLA VEZ el audio teaser SMCP (90 segundos) que recibirás en el chat de clase. NO subtítulos, NO repetir. Anota: (1) cuántas veces escuchaste 'Roger', (2) si reconociste 'over' o 'out', (3) qué letra del NATO Phonetic alfabeto creíste oír.",
+        "instructions_en": "Listen ONCE to the 90-sec SMCP teaser. No subtitles, no replays. Note: (1) Roger count, (2) Over/Out detected?, (3) which NATO letter you THINK you heard.",
+        "duracion_min": 35,
+        "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped",
+        "activities": [
+          {
+            "id": "ch4-p-a1",
+            "type": "pre_listening",
+            "title": "First Contact with SMCP — One Listen Only",
+            "content": "Audio teaser: 90-second VHF dialogue (Captain Lopera ↔ Andrea). Listen once. Make 3 notes (Roger count, Over/Out, NATO letter).",
+            "reflection_question": "¿Te sentiste perdido? Es normal. SMCP funciona porque las frases se REPITEN."
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 5,
+      "session": 5,
+      "session_name": "The Pilot's Apprentice — Listening to SMCP",
+      "duracion_autonoma_min": 140,
+      "habilidades_foco_sesion": ["Listening", "Vocabulary", "Pronunciation"],
+      "reinforce": {
+        "title": "NATO Phonetic — Spell My Name and My City",
+        "instructions_es": "Graba un audio de 60 segundos donde deletreas 5 nombres propios usando NATO Phonetic Alphabet completo: (1) tu nombre completo, (2) tu apellido, (3) la palabra BUENAVENTURA, (4) un nombre de buque cualquiera, (5) un call sign inventado de 5 letras. Luego escucha tu audio y marca con un asterisco las letras donde dudaste.",
+        "instructions_en": "Record 60-sec audio spelling 5 proper nouns with NATO Phonetic: full name, surname, BUENAVENTURA, vessel name, made-up 5-letter call sign. Replay and mark hesitations.",
+        "duracion_min": 50,
+        "bloom_level": "L1-L2 (Remember, Understand)",
+        "activities": [
+          {
+            "id": "ch5-r-a1",
+            "type": "drill",
+            "title": "NATO Phonetic Personal Drill",
+            "items": [
+              "Spell your full first name (ej: SERGIO → Sierra-Echo-Romeo-Golf-India-Oscar)",
+              "Spell your surname (apellido)",
+              "Spell BUENAVENTURA",
+              "Spell a vessel name of your choice (ej: BUENAVENTURA EXPRESS)",
+              "Spell an invented 5-letter call sign"
+            ],
+            "scaffold": "Reference Card NATO laminada en mano. After audio, replay and mark stars on hesitation letters."
+          },
+          {
+            "id": "ch5-r-a2",
+            "type": "matching",
+            "title": "SMCP Standard Responses Match",
+            "items": [
+              {"smcp": "Roger", "meaning_options": ["I received your message", "I disagree", "Wait"]},
+              {"smcp": "Wilco", "meaning_options": ["I will comply", "I am confused", "Repeat please"]},
+              {"smcp": "Affirmative", "meaning_options": ["Yes", "No", "Maybe"]},
+              {"smcp": "Negative", "meaning_options": ["Yes", "No", "Stand by"]},
+              {"smcp": "Standby", "meaning_options": ["Wait, I will respond", "Stop now", "Repeat"]},
+              {"smcp": "Say again", "meaning_options": ["Repeat your message", "Speak louder", "End of call"]}
+            ]
+          }
+        ]
+      },
+      "extend": {
+        "title": "Decode a Real VHF Audio — Build Your Own Radio Log",
+        "instructions_es": "Busca en YouTube un audio real de comunicación VHF marítima (canal IMO o cualquier video oficial · 1-2 minutos). Escúchalo 3 veces e identifica: (1) cuántos 'Roger' escuchas, (2) cuántos 'Over' o 'Out', (3) 1 frase SMCP que reconoces, (4) 1 letra NATO Phonetic. Construye un mini Radio Log (timestamp + speaker + summary) de al menos 3 entradas.",
+        "instructions_en": "Find a real VHF audio (IMO YouTube · 1-2 min). Listen 3x. Identify Roger count, Over/Out count, 1 known SMCP phrase, 1 NATO letter. Build a 3-entry Radio Log.",
+        "duracion_min": 60,
+        "bloom_level": "L3-L5 (Apply, Analyze)",
+        "activities": [
+          {
+            "id": "ch5-e-a1",
+            "type": "production",
+            "title": "Mini Radio Log — Real VHF",
+            "prompt": "Real audio + 3-entry Radio Log (timestamp · speaker · summary in EN ≤ 8 words per row). Bring to S6.",
+            "scaffolding": [
+              "Radio Log columns: TIME · SPEAKER · CHANNEL · SUMMARY (EN)",
+              "Summary frames: 'Vessel reports ___', 'Pilot requests ___', 'Captain confirms ___'",
+              "If you cannot identify the speaker, write 'Unknown vessel'"
+            ]
+          }
+        ]
+      },
+      "prepare": {
+        "title": "Pre-activation for S6 — VHF Response Drill",
+        "target_session": 6,
+        "instructions_es": "Antes de S6, practica en voz alta 5 SMCP responses con el patrón estímulo-respuesta. Lee la frase del Captain Lopera y responde en voz alta. Repite 3 veces cada una. NO grabes — es para warm-up muscular de la boca.",
+        "instructions_en": "Practice 5 SMCP stimulus-responses aloud, 3x each. No recording — mouth warm-up.",
+        "duracion_min": 30,
+        "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped",
+        "activities": [
+          {
+            "id": "ch5-p-a1",
+            "type": "pre_listening",
+            "title": "5 Stimulus-Response Pairs",
+            "content": "Pairs to drill aloud: (1) 'Vessel inbound, request berthing instructions' → 'Roger, standby for berth assignment'. (2) 'Spell your call sign' → 'Charlie-Oscar-Lima-One-Two'. (3) 'Wind speed 15 knots, advise' → 'Wilco, reducing approach speed'. (4) 'Are you ready to moor?' → 'Affirmative, all lines ready'. (5) 'Say again your last message' → 'I say again: pilot on board, over.'",
+            "reflection_question": "¿Cuál de los 5 patrones se siente más natural? ¿Cuál sientes más rígido?"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 6,
+      "session": 6,
+      "session_name": "VHF Response Drill — Speaking with Captain Lopera",
+      "duracion_autonoma_min": 140,
+      "habilidades_foco_sesion": ["Speaking", "Pronunciation", "Grammar (modals)"],
+      "reinforce": {
+        "title": "60-Second VHF Audio — Incoming Call from Captain Lopera",
+        "instructions_es": "Graba un audio de 90 segundos simulando una llamada VHF entrante. Debes incluir: (1) tu identificación con call sign deletreado en NATO Phonetic, (2) 3 SMCP responses (Roger / Wilco / Affirmative o Negative), (3) 1 imperativo negativo ('Do not approach the bow'), (4) 1 modal must ('Vessel must wait at anchorage'). Reproduce el audio y marca con asterisco las palabras donde el stress fue débil.",
+        "instructions_en": "Record a 90-sec incoming VHF call audio: NATO call sign + 3 SMCP responses + 1 negative imperative + 1 modal must. Replay and mark weak-stress words.",
+        "duracion_min": 50,
+        "bloom_level": "L1-L2 (Remember, Understand)",
+        "activities": [
+          {
+            "id": "ch6-r-a1",
+            "type": "drill",
+            "title": "Radio Log Recording — 90 sec",
+            "prompt_en": "Record 90-sec audio. Components: NATO Phonetic call sign + 3 SMCP + 1 imperative negative + 1 modal must.",
+            "scaffold": "Sentence frames: 'This is [your call sign Charlie-Oscar-Lima]. Roger your last message. Wilco. Do not approach the bow. Vessel must wait at anchorage. Standby. Out.'"
+          },
+          {
+            "id": "ch6-r-a2",
+            "type": "reflection",
+            "title": "Stress Self-Audit",
+            "prompt_es": "Después de grabar, escucha tu audio. Marca con asterisco 3 palabras donde sientes que el stress fue débil o desplazado. Listado target: MAINtenance · presSURE · inSPECtion · STARboard · PORTside · CONtainer · BOLLard.",
+            "items_count": 3
+          }
+        ]
+      },
+      "extend": {
+        "title": "Modal Pivot — Rewrite 5 Imperatives as Modals",
+        "instructions_es": "Toma 5 imperativos del aula (de tu cuaderno o de los carteles del aula) y reescribe cada uno con modales según el matiz: must (obligación) · should (recomendación) · could (posibilidad) · may (permiso) · might (probabilidad). Justifica en 1 oración española por qué elegiste ese modal para cada caso.",
+        "instructions_en": "Take 5 classroom imperatives. Rewrite each as a modal (must/should/could/may/might). Justify the choice in 1 ES sentence.",
+        "duracion_min": 60,
+        "bloom_level": "L3-L5 (Apply, Analyze)",
+        "activities": [
+          {
+            "id": "ch6-e-a1",
+            "type": "writing",
+            "title": "Imperative ↔ Modal Pivot",
+            "prompt": "Output table: ORIGINAL IMPERATIVE | MODAL VERSION | JUSTIFICATION (ES). 5 rows minimum.",
+            "scaffolding": [
+              "Examples: 'Check the oil.' → 'You should check the oil because it is recommended every shift.'",
+              "'Do not enter the bay.' → 'You must not enter the bay because it is a safety zone.'",
+              "Justification frames: 'because it is mandatory' / 'because it is recommended' / 'because it is possible but not certain'"
+            ]
+          }
+        ]
+      },
+      "prepare": {
+        "title": "Pre-activation for S7 — The Two-Way Radio (Berthing Coordination)",
+        "target_session": 7,
+        "instructions_es": "Antes de S7, completa un cloze test (5 huecos) con un audio breve de berthing operation. NO traduzcas — sólo completa con la palabra que escuchas. Si dudas, escribe '?' y sigue.",
+        "instructions_en": "Complete a 5-blank cloze on a short berthing audio. Do not translate; mark '?' if unsure.",
+        "duracion_min": 30,
+        "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped",
+        "activities": [
+          {
+            "id": "ch6-p-a1",
+            "type": "pre_listening",
+            "title": "Cloze — 5 Blanks Berthing Audio",
+            "content": "Audio: 60-sec dialogue between Captain Lopera and Andrea about berthing approach. Cloze sentences: '(1) The vessel is _____ to berth 5.', '(2) Wind speed is _____ knots.', '(3) The pilot _____ already on board.', '(4) Standby for _____ instructions.', '(5) ETA is _____ hundred hours.'",
+            "reflection_question": "¿Notaste que algunos huecos pueden tener varias respuestas posibles? ¿Cuáles?"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 7,
+      "session": 7,
+      "session_name": "The Two-Way Radio — Coordinating Berthing Operations",
+      "duracion_autonoma_min": 140,
+      "habilidades_foco_sesion": ["Reading", "Listening", "Grammar"],
+      "reinforce": {
+        "title": "Listening Cloze on 3 Real IMO Audios",
+        "instructions_es": "Selecciona 3 audios cortos del canal IMO YouTube (anchorage / pilot boarding / cargo handling · 30-60s c/u). Para cada uno completa un Radio Log con: timestamp inicio + canal + 1 frase SMCP que oíste + 1 modal que oíste + 1 nombre propio deletreado en NATO Phonetic.",
+        "instructions_en": "Pick 3 short IMO audios (anchorage/pilot boarding/cargo handling). Fill Radio Log: timestamp + channel + 1 SMCP + 1 modal + 1 NATO-spelled name.",
+        "duracion_min": 50,
+        "bloom_level": "L1-L2 (Remember, Understand)",
+        "activities": [
+          {
+            "id": "ch7-r-a1",
+            "type": "drill",
+            "title": "3 Audios → 3 Radio Log Entries",
+            "items": [
+              {"audio": "Anchorage", "log_fields": ["timestamp", "channel (default 16 or 12)", "1 SMCP heard", "1 modal heard", "1 NATO name"]},
+              {"audio": "Pilot boarding", "log_fields": ["timestamp", "channel", "1 SMCP heard", "1 modal heard", "1 NATO name"]},
+              {"audio": "Cargo handling", "log_fields": ["timestamp", "channel", "1 SMCP heard", "1 modal heard", "1 NATO name"]}
+            ],
+            "scaffold": "If you cannot detect a NATO letter, write 'Not detected'. Honesty > guessing."
+          }
+        ]
+      },
+      "extend": {
+        "title": "Predict the Next Berthing Move — Conditional Type 1",
+        "instructions_es": "Escenario: el viento subió a 20 nudos y la marea está bajando rápido. Andrea debe coordinar 3 actores (Diego crane · Bosun Romero yard · Captain Lopera VHF). Escribe 6 oraciones condicionales tipo 1 (If + present, will + base) prediciendo qué pasará y qué hará cada actor. Usa al menos 2 modales (should/could) y 1 voz pasiva ('The cargo is inspected by ___').",
+        "instructions_en": "Scenario: wind up to 20 knots, tide falling fast. Write 6 conditional Type 1 sentences predicting next moves. Include 2+ modals + 1 passive voice.",
+        "duracion_min": 60,
+        "bloom_level": "L3-L5 (Apply, Analyze, Create)",
+        "activities": [
+          {
+            "id": "ch7-e-a1",
+            "type": "writing",
+            "title": "Conditional Type 1 Prediction Set",
+            "prompt": "6 conditional Type 1 sentences + 2 modals + 1 passive voice. Each sentence covers a different actor (Diego/Bosun/Captain Lopera) or condition.",
+            "scaffolding": [
+              "Frames: 'If the wind drops, we will berth on time.' / 'If the tide falls, the pilot should request a tug.' / 'If cargo is delayed, the crane could pause loading.'",
+              "Passive voice frame: 'The cargo is inspected by customs.'",
+              "Modal verbs allowed: must · should · could · might · may"
+            ]
+          }
+        ]
+      },
+      "prepare": {
+        "title": "Pre-activation for S8 — Coordinating the Quay (Speaking Tripartite)",
+        "target_session": 8,
+        "instructions_es": "Antes de S8, ensaya en voz alta DOS comandos paralelos a 2 actores diferentes (uno para Diego crane, otro para Bosun Romero yard). Usa la fórmula 'Diego, ___ . Bosun, at the same time, ___ '. Repite 3 veces.",
+        "instructions_en": "Aloud rehearsal: 2 parallel commands to 2 actors using 'Diego, ___ . Bosun, at the same time, ___'. 3 reps.",
+        "duracion_min": 30,
+        "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped",
+        "activities": [
+          {
+            "id": "ch7-p-a1",
+            "type": "pre_listening",
+            "title": "Parallel Commands Aloud Rehearsal",
+            "content": "Sentence frames: 'Diego, lower the spreader to bay 12. Bosun, at the same time, secure the bollard at berth 5.' Variations: switch verbs (lower/raise/check/inspect/secure) and locations (bay/berth/yard).",
+            "reflection_question": "¿Sientes que tu voz proyecta autoridad? ¿O necesitas hablar más fuerte?"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 8,
+      "session": 8,
+      "session_name": "Coordinating the Quay — Speaking Tripartite",
+      "duracion_autonoma_min": 140,
+      "habilidades_foco_sesion": ["Speaking", "Grammar", "Writing (support)"],
+      "reinforce": {
+        "title": "Berthing Coordination Memo — 1 page",
+        "instructions_es": "Escribe un Berthing Coordination Memo de 1 página dirigido al Capitán Restrepo. Incluye: (a) header con vessel name (CML CARRIER) + ETA + berth assigned, (b) 3 instrucciones a Diego con imperativo o modal, (c) 3 instrucciones a Bosun Romero, (d) 1 confirmación VHF a Captain Lopera con SMCP, (e) cierre con presente perfecto ('All lines have been ___').",
+        "instructions_en": "Write a 1-page Berthing Coordination Memo to Capitán Restrepo. Header + 3 commands to Diego + 3 commands to Bosun + 1 SMCP VHF confirmation + present perfect closing.",
+        "duracion_min": 60,
+        "bloom_level": "L1-L2 (Remember, Understand)",
+        "activities": [
+          {
+            "id": "ch8-r-a1",
+            "type": "writing",
+            "title": "Berthing Memo v1",
+            "prompt_en": "1-page memo, structured in 5 blocks. Output saved as 'Memo-S8-v1' for portfolio.",
+            "scaffold": "Header template: 'TO: Capitán Restrepo · FROM: [your name] · DATE: [today] · RE: CML CARRIER Berthing Coordination'."
+          }
+        ]
+      },
+      "extend": {
+        "title": "Post-Turn Report Draft — Incident Analysis",
+        "instructions_es": "Imagina que durante el turno hubo un incidente: la grúa de Diego falló durante la descarga. Escribe un Post-Turn Report draft de 12-15 oraciones con 3 partes: (1) WHAT HAPPENED — pasado simple + voz pasiva (3-4 oraciones), (2) ROOT CAUSE — condicional Type 1 reverso ('If the maintenance had been done...') o causa-efecto presente (3-4 oraciones), (3) CORRECTIVE ACTION — modales (should/must/could) + estructura ocupacional A2.1 ('I will be responsible for ___', 5-7 oraciones).",
+        "instructions_en": "Draft a 12-15 sentence Post-Turn Report on a crane failure incident: WHAT HAPPENED (past + passive) · ROOT CAUSE (conditional or cause-effect) · CORRECTIVE ACTION (modals + occupational A2.1).",
+        "duracion_min": 60,
+        "bloom_level": "L3-L5 (Apply, Analyze, Evaluate, Create)",
+        "activities": [
+          {
+            "id": "ch8-e-a1",
+            "type": "writing",
+            "title": "Post-Turn Report Draft",
+            "prompt": "12-15 sentences. 3 sections labeled WHAT HAPPENED / ROOT CAUSE / CORRECTIVE ACTION.",
+            "scaffolding": [
+              "WHAT frames: 'The crane failed at 14:30. The cargo was delayed by 45 minutes. The yard was secured by Bosun Romero.'",
+              "CAUSE frames: 'The hydraulic system overheated.' / 'If preventive maintenance had been done, the failure could have been avoided.'",
+              "CORRECTIVE frames: 'I am responsible for coordinating the next inspection. We must implement a daily hydraulic check.'"
+            ]
+          }
+        ]
+      },
+      "prepare": {
+        "title": "Pre-activation for S9 — Studio Language (5 Master Functions)",
+        "target_session": 9,
+        "instructions_es": "Antes de S9, lee la lista de las 5 master functions del Port Operations Trainee y rankea de 1 (más fuerte) a 5 (más débil) según cómo te sientes. NO es evaluación — es autodiagnóstico para enfocar el Role Carousel.",
+        "instructions_en": "Rank the 5 master functions from 1 (strongest) to 5 (weakest) by self-perception. Self-diagnostic only.",
+        "duracion_min": 20,
+        "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped",
+        "activities": [
+          {
+            "id": "ch8-p-a1",
+            "type": "vocabulary_preview",
+            "title": "5 Functions Self-Ranking",
+            "content": "Functions: (1) Information Exchange · (2) SMCP literacy · (3) Coordinating Tripartite Operations · (4) Modals (prohibition/permission/possibility/requests) · (5) Describing & Justifying Professional Functions. Rank 1-5 honestly.",
+            "reflection_question": "¿Cuál es tu función #1 y por qué?"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 9,
+      "session": 9,
+      "session_name": "Studio Language — 5 Master Functions of the Port Pro",
+      "duracion_autonoma_min": 140,
+      "habilidades_foco_sesion": ["Speaking", "Language Functions"],
+      "reinforce": {
+        "title": "Self-Introduction Video — Port Operations Trainee",
+        "instructions_es": "Graba un video de 90 segundos presentándote como Port Operations Trainee del Terminal de Contenedores Buenaventura. Debes usar las 5 master functions (al menos 1 oración por función) y al menos 3 conectores (and · but · because · so · although · or). Mírate después y marca con asterisco la función donde sentiste menos fluidez.",
+        "instructions_en": "Record a 90-sec self-intro video as Port Operations Trainee. Use 5 master functions (1+ sentence each) + 3 connectors. Replay and mark weakest function with asterisk.",
+        "duracion_min": 60,
+        "bloom_level": "L1-L2 (Remember, Understand)",
+        "activities": [
+          {
+            "id": "ch9-r-a1",
+            "type": "drill",
+            "title": "90-sec Self-Intro Video",
+            "prompt_en": "Video format · 90 sec · 5 functions × 1 sentence min + 3 connectors. Save as 'Intro-S9-v1' for portfolio.",
+            "scaffold": "Sentence frames per function: F1 'I work at ___ and report to ___' · F2 'I can use SMCP responses such as Roger and Wilco' · F3 'I coordinate Diego, Bosun, and Captain Lopera at the same time' · F4 'You must wear PPE because it is mandatory' · F5 'I am responsible for coordination of yard operations.'"
+          }
+        ]
+      },
+      "extend": {
+        "title": "Function Mapping — Real Port Operations YouTube Clip",
+        "instructions_es": "Busca un video real de operaciones portuarias (canal IMO o cualquier puerto internacional · 2-3 min). Mapea: ¿qué master function usa el speaker en cada momento? Anota timestamp + function code (F1-F5) + cita corta en inglés (3-5 palabras) + tu interpretación en español.",
+        "instructions_en": "Pick a 2-3 min real port operations video. Map function usage: timestamp + F1-F5 code + short EN quote + ES interpretation.",
+        "duracion_min": 60,
+        "bloom_level": "L3-L5 (Apply, Analyze, Evaluate)",
+        "activities": [
+          {
+            "id": "ch9-e-a1",
+            "type": "categorization",
+            "title": "Function Map of a Real Operation",
+            "prompt": "Output table: TIMESTAMP | FUNCTION (F1-F5) | EN QUOTE | ES INTERPRETATION. Minimum 6 rows.",
+            "scaffolding": [
+              "If the function is unclear, write 'Mixed F1+F3' rather than guessing one",
+              "EN quote should be a direct phrase you actually heard",
+              "ES interpretation in 1 short sentence — the WHY of the speaker's choice"
+            ]
+          }
+        ]
+      },
+      "prepare": {
+        "title": "Pre-activation for S10 — Consolidation Day (Quiz S6)",
+        "target_session": 10,
+        "instructions_es": "Antes de S10, resuelve 5 ítems de práctica (1 por sección del Cuestionario Consolidado: Reading + Writing + Listening + Vocabulary + Grammar). NO chequees respuestas — sólo MARCA cuál te costó más. Esto te ayuda a llegar focalizado al S10.",
+        "instructions_en": "Solve 5 practice items (1 per quiz section). DO NOT check answers — mark hardest one only.",
+        "duracion_min": 20,
+        "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped",
+        "activities": [
+          {
+            "id": "ch9-p-a1",
+            "type": "vocabulary_preview",
+            "title": "5 Practice Items — One per Section",
+            "content": "Items provided in S9 handout (1 reading short answer · 1 writing prompt 3-4 lines · 1 listening cloze · 1 vocabulary match · 1 grammar transform). Solve untimed. Flag hardest.",
+            "reflection_question": "¿La sección más difícil es la que esperabas o te sorprendió?"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 10,
+      "session": 10,
+      "session_name": "Consolidation Day — The Maritime Operations Check",
+      "duracion_autonoma_min": 140,
+      "habilidades_foco_sesion": ["All 5 skills — consolidation", "Self-assessment"],
+      "reinforce": {
+        "title": "22-Item Self-Assessment — PM-0 Traceability Checklist",
+        "instructions_es": "Completa la autoevaluación de 22 ítems (instrumento PM-0 §7) marcando ✓ si cumples · ⚠ si dudas · ✗ si no aún. Para cada ✗ escribe 1 oración en español: ¿qué necesitas para llegar a ✓ antes de S12?",
+        "instructions_en": "Complete the 22-item self-assessment (PM-0 §7). Mark ✓/⚠/✗. For each ✗ write 1 ES sentence: what do you need to reach ✓ before S12?",
+        "duracion_min": 60,
+        "bloom_level": "L1-L2 (Remember, Understand)",
+        "activities": [
+          {
+            "id": "ch10-r-a1",
+            "type": "reflection",
+            "title": "22-Item Checklist + Action Notes",
+            "items_count": 22,
+            "scaffold": "Honest assessment > pretty assessment. ✗ marks are gold — they tell you where to focus S11-S12 prep.",
+            "output": "22 marked items + action notes for each ✗"
+          },
+          {
+            "id": "ch10-r-a2",
+            "type": "reflection",
+            "title": "Quiz Error Analysis",
+            "prompt_es": "Recupera el cuestionario consolidado de S10. Para los 5 errores principales: identifica habilidad (R/W/L/V/G), escribe la regla correcta en 1 oración, produce 1 ejemplo propio.",
+            "items_count": 5
+          }
+        ]
+      },
+      "extend": {
+        "title": "Mission Canvas — Plan the CML Port Turnaround",
+        "instructions_es": "Usando el brief del Capitán Restrepo entregado en S10, construye tu Mission Canvas personal de 1 página: (1) WHAT — qué hay que coordinar (CML CARRIER · ETA 06:15 · ETD 18:15), (2) WHY — por qué importa (cliente CML Logistics · turn-around 12h), (3) HOW — cómo lo harás (3 sub-fases: VHF Intake + Berthing Tripartito + Pitch), (4) WHEN — cronograma simulación 3h. Pega o dibuja imágenes/iconos.",
+        "instructions_en": "Build your 1-page personal Mission Canvas: WHAT/WHY/HOW/WHEN of the CML Port Turnaround. Use icons/images.",
+        "duracion_min": 50,
+        "bloom_level": "L3-L5 (Apply, Analyze, Create)",
+        "activities": [
+          {
+            "id": "ch10-e-a1",
+            "type": "production",
+            "title": "Personal Mission Canvas",
+            "prompt": "1-page canvas with 4 quadrants (WHAT/WHY/HOW/WHEN). Bring to S11 — instructor will use it as your planning baseline.",
+            "scaffolding": [
+              "WHAT bullets: vessel + ETA + ETD + cargo + crew",
+              "WHY bullets: client name + turn-around target + commercial impact",
+              "HOW bullets: 3 sub-phases × 1 sentence each",
+              "WHEN bullets: simulated 12h compressed to 3h real time"
+            ]
+          }
+        ]
+      },
+      "prepare": {
+        "title": "Pre-activation for S11 — Final Mission Design",
+        "target_session": 11,
+        "instructions_es": "Antes de S11, identifica 3 estructuras ocupacionales A2.1 que vas a usar en el Pitch Profesional ('I am responsible for ___' · 'I specialize in ___' · 'I coordinate ___' · 'I supervise ___' · 'I report to ___'). Para cada una, escribe 1 oración propia conectándolas con tu rol como Port Operations Trainee.",
+        "instructions_en": "Pre-pick 3 of 5 occupational A2.1 structures + write 1 own sentence per structure connected to your trainee role.",
+        "duracion_min": 30,
+        "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped",
+        "activities": [
+          {
+            "id": "ch10-p-a1",
+            "type": "vocabulary_preview",
+            "title": "3 Occupational Structures Preview",
+            "content": "Structures: 'I am responsible for ___' · 'I specialize in ___' · 'I coordinate ___' · 'I supervise ___' · 'I report to ___'. Pick 3 and personalize each.",
+            "reflection_question": "¿Cuál estructura sientes más natural? ¿Cuál sientes más rígida?"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 11,
+      "session": 11,
+      "session_name": "Final Mission Design — The CML Carrier Plan",
+      "duracion_autonoma_min": 140,
+      "habilidades_foco_sesion": ["Writing", "Speaking (rehearsal)"],
+      "reinforce": {
+        "title": "Berthing Memo Final + Radio Log Final — Polished",
+        "instructions_es": "Toma tu Berthing Memo v1 (S8) y tu mini Radio Log (S5) y produce versiones finales pulidas para la Misión Final: (a) Berthing Memo final 1 página con header CML CARRIER · ETA 06:15 · berth assigned + 3 instrucciones a Diego + 3 a Bosun + 1 SMCP a Captain Lopera, (b) Radio Log template con 6 entradas en blanco (timestamp · channel · speaker · summary · SMCP usado · NATO spelling).",
+        "instructions_en": "Polish your S8 Berthing Memo and S5 Radio Log into final-mission-ready versions: 1-page Memo + 6-row Radio Log template.",
+        "duracion_min": 60,
+        "bloom_level": "L1-L2 (Remember, Understand)",
+        "activities": [
+          {
+            "id": "ch11-r-a1",
+            "type": "writing",
+            "title": "Berthing Memo Final — CML CARRIER",
+            "prompt_en": "1-page polished memo. Apply 2 self-edits: grammar + clarity. Save as 'Memo-S11-final'.",
+            "scaffold": "Use the GFPI-F-135 style: short, declarative, professional. No filler words."
+          },
+          {
+            "id": "ch11-r-a2",
+            "type": "drill",
+            "title": "Radio Log Template — 6 Empty Rows",
+            "prompt_en": "Build a 6-row blank Radio Log table. Columns: TIME · CHANNEL · SPEAKER · SUMMARY · SMCP · NATO. To be filled live during S12 simulation.",
+            "scaffold": "Print 2 copies — one for S12 use, one for portfolio backup."
+          }
+        ]
+      },
+      "extend": {
+        "title": "Pitch Rehearsal — 3 Timed Reps with Self-Critique",
+        "instructions_es": "Ensaya tu Pitch Profesional de 3 minutos frente al espejo o cámara. Mínimo 3 repeticiones cronometradas. Después de cada repetición, identifica: (1) ¿estás dentro del límite 3 min?, (2) ¿incluiste 5 master functions?, (3) ¿usaste 3 occupational structures?, (4) ¿usaste 2 tag questions? Marca por escrito qué cambias en la siguiente repetición.",
+        "instructions_en": "Rehearse 3-min Pitch in front of mirror/camera. 3+ timed reps. After each: time check + functions check + structures check + tag questions check. Write what changes for next rep.",
+        "duracion_min": 60,
+        "bloom_level": "L3-L5 (Apply, Analyze, Evaluate)",
+        "activities": [
+          {
+            "id": "ch11-e-a1",
+            "type": "production",
+            "title": "Pitch Rehearsal Cycle 3x",
+            "prompt": "3 reps + 3 self-critiques. Output: critique log with 3 changes per cycle.",
+            "scaffolding": [
+              "Critique frames: 'Rep 1 — too fast on opening / Rep 2 — forgot Function 4 / Rep 3 — tag question landed weak'",
+              "Tag questions to embed: 'You're the supervisor, aren't you? · The pilot boarded at 06:00, didn't he?'",
+              "Pitch structure: (1) Greeting + role intro · (2) 3 responsibilities · (3) 1 turn-around achievement · (4) 1 reflection close"
+            ]
+          }
+        ]
+      },
+      "prepare": {
+        "title": "Pre-activation for S12 — The Port Professional (Mission Delivery)",
+        "target_session": 12,
+        "instructions_es": "La noche antes de S12: (1) revisa tu Berthing Memo final, (2) revisa tu Radio Log template, (3) lee en voz alta tu pitch 2 veces sin pausar, (4) duerme bien, (5) llega al aula 15 minutos antes con todos los materiales (Reference Cards SMCP + NATO + Memo + Log + Mission Canvas).",
+        "instructions_en": "Night before S12: review materials, read pitch aloud 2x, sleep well, arrive 15 min early with all materials.",
+        "duracion_min": 20,
+        "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped",
+        "activities": [
+          {
+            "id": "ch11-p-a1",
+            "type": "pre_listening",
+            "title": "Pre-Performance Ritual",
+            "content": "Checklist: (1) Berthing Memo Final printed · (2) Radio Log template printed (2 copies) · (3) Mission Canvas at hand · (4) SMCP Reference Card + NATO Reference Card · (5) Pitch read aloud 2x · (6) Arrive 15 min early.",
+            "reflection_question": "¿Qué te genera más confianza? ¿Qué te genera más nervios? Las dos respuestas son normales."
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 12,
+      "session": 12,
+      "session_name": "The Port Professional — CML Port Turnaround Mission",
+      "duracion_autonoma_min": 140,
+      "habilidades_foco_sesion": ["All 5 skills — transfer"],
+      "reinforce": {
+        "title": "Post-Mission Debrief — What I See Now That I Did Not See on Day 1",
+        "instructions_es": "Después de la simulación CML Port Turnaround del S12, escribe un debrief personal: 12 oraciones en español (qué salió bien · qué fue difícil · qué aprendí de Captain Lopera · qué aprendí de coordinar a Diego y Bosun · qué frase SMCP usaste con más confianza) + 4 oraciones clave en inglés (1 sobre el Pitch · 1 sobre el VHF Intake · 1 sobre el Berthing Tripartito · 1 sobre tu identidad como Port Operations Pro).",
+        "instructions_en": "Post-mission debrief: 12 ES sentences + 4 key EN sentences. Cover Pitch, VHF Intake, Berthing Tripartite, Port Pro identity.",
+        "duracion_min": 50,
+        "bloom_level": "L1-L2 (Remember, Understand)",
+        "activities": [
+          {
+            "id": "ch12-r-a1",
+            "type": "reflection",
+            "title": "Mission Debrief — 12 ES + 4 EN",
+            "prompt_en": "12 ES + 4 EN sentences. Save as 'Debrief-S12' for portfolio.",
+            "scaffold": "EN frames: 'During the Pitch I felt ___' / 'Captain Lopera taught me ___' / 'Coordinating Diego and Bosun showed me that ___' / 'Now I am a Port Operations Pro because ___'."
+          },
+          {
+            "id": "ch12-r-a2",
+            "type": "reflection",
+            "title": "KWL Chart Closure — Fill the L Column",
+            "prompt_es": "Recupera tu Maritime KWL Chart de Capítulo 1. Llena la columna L (Learned) con 5 cosas concretas que aprendiste en estas 100h. Compara con tu columna W (Wanted) y marca con ✓ las que cumpliste, con → las que aún quieres profundizar.",
+            "items_count": 5
+          }
+        ]
+      },
+      "extend": {
+        "title": "Maritime Operations Pro Portfolio — Synthesis",
+        "instructions_es": "Reúne TODOS tus artefactos del curso en un portafolio único (digital o físico): Maritime KWL · Mood Board · Toolbelt audio S2 · Diagrama BUENAVENTURA EXPRESS · Inspection Reports · NATO Phonetic audio · Radio Logs · Berthing Memo final · Post-Turn Report · Self-Intro video · Pitch video · Mission Canvas · 22-item self-assessment · Debrief S12. Escribe una introducción de 1 página bilingüe (300 palabras ES + 150 palabras EN) presentándote como 'The Maritime Operations Pro' al mercado laboral portuario colombiano.",
+        "instructions_en": "Compile ALL artifacts into a portfolio (digital/physical). Write 1-page bilingual intro (300 ES + 150 EN words) presenting yourself as 'The Maritime Operations Pro'.",
+        "duracion_min": 60,
+        "bloom_level": "L3-L5 (Apply, Analyze, Evaluate, Create)",
+        "activities": [
+          {
+            "id": "ch12-e-a1",
+            "type": "production",
+            "title": "Maritime Operations Pro Portfolio + Bilingual Intro",
+            "prompt": "Portfolio compiled + 1-page bilingual intro. Output: portfolio link/folder + intro saved as 'Intro-PortfolioFinal'.",
+            "scaffolding": [
+              "Required artifacts list (14 items above)",
+              "Intro structure ES: (1) ¿Quién soy? · (2) ¿Qué dominé en 100h? · (3) ¿Qué puedo coordinar mañana? · (4) Cierre con identidad profesional",
+              "Intro structure EN: (1) Role identity · (2) Top 3 skills · (3) Operational claim · (4) Closing tag question to recruiter",
+              "Word bank EN: responsible for · specialize in · coordinate · supervise · report to · SMCP · NATO Phonetic · berthing · turnaround"
+            ]
+          }
+        ]
+      },
+      "prepare": {
+        "title": "Look Forward — Beyond the 100 Hours",
+        "target_session": "post-curso (empleabilidad inmediata · próximo curso opcional)",
+        "instructions_es": "Anota 3 cosas que quieres seguir aprendiendo de inglés marítimo después del curso (ej: navegación avanzada · seguridad SOLAS · port logistics B1) + 1 pregunta concreta que quieres investigar antes de tu primera entrevista laboral en el sector portuario. Esta no es una sesión siguiente — es tu bridge hacia tu vida profesional.",
+        "instructions_en": "List 3 maritime English topics you want to keep learning + 1 specific research question for your first port-sector interview.",
+        "duracion_min": 30,
+        "bloom_level": "L1-L2 (Remember, Understand) · primer contacto flipped (reflective close · no S13)",
+        "activities": [
+          {
+            "id": "ch12-p-a1",
+            "type": "vocabulary_preview",
+            "title": "Bridge to the Workforce — Reflective Close",
+            "content": "3 future learning goals + 1 research question. Output: 1 paragraph (4-6 sentences ES + 1 sentence EN).",
+            "reflection_question": "Si Captain Lopera te ofreciera un trabajo en su próximo viaje, ¿qué le dirías en 30 segundos en inglés?"
+          }
+        ]
+      }
+    }
+  ],
+  "consolidated_answer_key": {
+    "note": "Las actividades de REINFORCE tienen respuestas convergentes (claves disponibles en el paquete instructor). Las actividades de EXTEND y PREPARE son productivas abiertas — se evalúan por completitud, esfuerzo y aplicación correcta de patrones (no por respuesta única). Ver PM-4.1 INST-REINFORCE para rúbrica de autocorrección y PM-3.7 para criterios de portafolio. Las respuestas viven en documento separado Workbook Answer Key (Instructor) — derivado posterior fuera de scope PM-3.4.",
+    "reinforce_keys_ref": "runs/IMARPOR-CC-2026-04-27/pm-3-4-answer-key.json (futuro · paquete instructor — no se distribuye con versión aprendiz)"
+  },
+  "derivation_source": {
+    "playbook_ref": "pm-3-1.json (overview_table 12 sesiones + skills_progression_map + voc_dimensions_table) + pm-3-2-s1.json...pm-3-2-s12.json (12 Build-Outs · WRAP-UP autonomous assignments)",
+    "learner_guide_ref": "pm-3-6.json (GFPI-F-135 evidencias mapping)",
+    "activity_cards_ref": [
+      "pm-2-1 (Spark + Maritime Mood Board S1-S2)",
+      "pm-2-2 (Gap Analysis + Learning Contract S1-S2)",
+      "pm-2-3 (Reading Master Anchor — textbook UNIT 1 SHIP OVERVIEW adaptado · S3)",
+      "pm-2-4 (Writing Task-Based — Berthing Memo + Radio Log + Post-Turn Report · S4 + S8)",
+      "pm-2-5 (Vocabulary Toolbelt 25 términos × 5 sub-categorías · S2 + S5 reciclaje)",
+      "pm-2-6 (Listening SMCP VHF dialogue Captain Lopera ↔ Andrea · S5 + S7)",
+      "pm-2-8 (Speaking Mission — VHF Response + Berthing Tripartito + Pitch · S6 + S8 + S11)",
+      "pm-2-9 (Language Functions — 5 master functions IMARPOR · S9)",
+      "pm-2-10 (Grammar Structure Use — 17 grupos · NATO Phonetic + SMCP + occupational A2.1 · transversal)"
+    ],
+    "final_mission_ref": "pm-3-5.json (CML Port Turnaround — Andrea Coordinates a Full Vessel Operation · ejecuta S11-S12)",
+    "notes": "Workbook 12 capítulos canon REGLA 12 single-guía 12 sesiones (NO 8 default). Cada capítulo respeta REGLA 11 anatomía tripartita REINFORCE/EXTEND/PREPARE con bloom_level explícito (REGLA 16). Total horas autónomas Workbook: 12 capítulos × ~140 min = 1680 min ≈ 28h alineadas con header.intensidad_autonoma_horas pm-3-1. Principio Tres Versiones aplicado: tasks DIFERENTES de PM-2.x (V1 in-class) y PM-4.2 Cuestionario S6 (V2 evaluación). Capítulo 12 PREPARE es reflective close (bridge to workforce · no S13). Universo IMARPOR consistente: Andrea Mosquera + Captain Lopera + Diego Mejía + Bosun Romero + CML CARRIER + BUENAVENTURA EXPRESS + Buenaventura · 0 cast contamination DIESEL (Carlos/Valentina/Santiago/wrench/diesel) ni MGV (Pixel/Sophia/Patty/motocicleta). Trazabilidad upstream completa REGLA 14."
+  }
+}
