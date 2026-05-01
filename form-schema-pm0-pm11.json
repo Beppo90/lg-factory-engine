@@ -1,0 +1,795 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-form-pm0-pm11-v2",
+  "title": "FPI SENA — Formulario de Inputs PM-0 + PM-1.1",
+  "description": "Schema canónico del formulario que captura los inputs necesarios para activar PM-0 (Capa Fundacional, una vez por programa) y PM-1.1 (Ruta Macrotemática, una vez por guía) del pipeline LG Factory v2.6. Incluye el catálogo completo de los 13 principios pedagógicos PM-0 §5 y los 9 descriptores CEFR por subnivel PM-0 §6.",
+  "version": "3.0",
+  "last_updated": "2026-05-01",
+  "changelog_v2_7_1": [
+    "RESTAURADO regla_bloques con enum cerrado de 4 patrones canónicos: alineacion_1a1 (1 RAP = 1 guía, default), absorcion_Na1 (N RAPs en 1 guía single-guía), desdoblamiento_1aN (1 RAP en N guías), alineacion_NaM (mapeo libre).",
+    "AÑADIDO Curso Complementario al enum tipo (sinónimo administrativo SOFÍA de Curso Especial).",
+    "ASIMETRÍA tipo-programa: Técnico/Tecnológico usan proyecto_formativo + proyecto_formativo_articulador. Curso Especial/Complementario usan SOLO final_mission_scenario.",
+    "AÑADIDO campo final_mission_scenario para cursos cortos (reemplaza arquitectónicamente a proyecto_formativo en programas sin proyecto formativo)."
+  ],
+  "changelog_v2_7": [
+    "Eliminado regla_bloques: SIMPLIFICACIÓN ERRÓNEA — revertida en v2.7.1.",
+    "tipo (Técnico/Tecnológico/Curso Especial) deja de determinar el número de bloques — es solo metadata administrativa.",
+    "total_guias es libre; se sugiere = número de RAPs del programa.",
+    "Validación SOFT: warning amarillo si horas_por_bloque < 48 (no bloquea export).",
+    "Variante Curso Especial con total_guias=1: omite proyecto formativo articulador; Misión Final = entrega completa del curso.",
+    "RENAMING: el output del formulario para Sección B se llama pm-1-1-INPUT.json (no pm-1-1.json). Este es el INPUT que alimenta al prompt PM-1.1; el output final pm-1-1.json se genera corriendo el master prompt con este input + pm-0-context.json."
+  ],
+  "branding_sena": {
+    "verde_sena": "#39A900",
+    "navy_sena": "#0B2E45",
+    "dkgrey": "#565656",
+    "logo_url_referencia": "/Users/Beppo/Projects/fpi-sena-factory/frontend/public/sena-logo-green.svg"
+  },
+  "catalogos_pm0": {
+    "principios_pedagogicos": [
+      {
+        "id": "5.1",
+        "titulo": "Contenido técnico como punto de partida",
+        "resumen": "El contenido técnico del programa es el motor de la comunicación, no un pretexto para gramática. La transferencia laboral hace del input un vehículo de práctica mapeado a CEFR."
+      },
+      {
+        "id": "5.2",
+        "titulo": "Fotografía y realia técnica",
+        "resumen": "Realia del taller (herramientas, diagramas, etiquetas, instrumentos) como punto de entrada afectivo y cognitivo. Show, don't tell — reduce dependencia del L1."
+      },
+      {
+        "id": "5.3",
+        "titulo": "Video e instrucción en vivo (Live Listening)",
+        "resumen": "Estructura Before/While/After. El instructor habla inglés en tiempo real describiendo procedimientos: el inglés técnico es habilidad viva en el taller."
+      },
+      {
+        "id": "5.4",
+        "titulo": "Pensamiento crítico y diagnóstico técnico",
+        "resumen": "Razonamiento diagnóstico técnico: leer reporte, analizar síntomas, llegar a conclusiones fundamentadas en inglés. Progresión Bloom L1→L6 en cada sesión."
+      },
+      {
+        "id": "5.5",
+        "titulo": "Memorización y retención (factores SUCCESS)",
+        "resumen": "Aplicación de Simplicity, Unexpectedness, Concreteness, Credibility, Emotion, Stories. Reciclaje de vocabulario y gramática entre sesiones y guías."
+      },
+      {
+        "id": "5.6",
+        "titulo": "Tratamiento de la gramática (noticing)",
+        "resumen": "Gramática presentada en textos técnicos auténticos. Noticing antes que producción mecánica. Cuadro resumen con ejemplos del texto. Drilling explícito."
+      },
+      {
+        "id": "5.7",
+        "titulo": "Tratamiento del vocabulario (chunks)",
+        "resumen": "Conjuntos léxicos por dominio (Lexical Sets), Word Wall permanente, glosario fonético por guía. Pre-enseñanza con 4 propósitos: reducir carga, comprometer, preparar producción, generar interés."
+      },
+      {
+        "id": "5.8",
+        "titulo": "Habilidades de aprendizaje autónomo",
+        "resumen": "Gap Cards, KWL, Learning Contract, Can-do statements. Desarrolla metacognición y registro autónomo del léxico."
+      },
+      {
+        "id": "5.9",
+        "titulo": "Evaluación formativa diferenciada",
+        "resumen": "Can-do statements al cierre de sesión + Misión Final con rúbrica mapeada a descriptores CEFR. Learning Contract como línea de base."
+      },
+      {
+        "id": "5.10",
+        "titulo": "Estructura de sesión FPI (progresión pedagógica)",
+        "resumen": "240 min: SET-UP (25) → WHILE A/B/C/D/E (35×5) → BREAK → WRAP-UP (25). Cierre con My Turn (producción oral personalizada)."
+      },
+      {
+        "id": "5.11",
+        "titulo": "Feedback diferenciado: accuracy vs. fluency",
+        "resumen": "Accuracy en drilling (recast, elicitación, corrección explícita). Fluency en role play y My Turn (no interrumpir; feedback diferido post-tarea). Códigos de error en escritura."
+      },
+      {
+        "id": "5.12",
+        "titulo": "Gestión del L1 en el aula técnica",
+        "resumen": "L1 como recurso, no enemigo. Reducción progresiva: A1.1 alto → A2+ L2 exclusivo. English Zone visual, Show before tell. Mapa de usos legítimos vs no legítimos."
+      },
+      {
+        "id": "5.13",
+        "titulo": "Noticing de stress con soporte físico",
+        "resumen": "Inglés stress-timed vs español syllable-timed. Word stress y sentence stress con técnicas físicas: finger drilling, clapping, backchaining, marcación en pizarra, gesto coral."
+      }
+    ],
+    "grupo_17_plantillas": [
+      {
+        "id": "DIESEL",
+        "nombre": "Engine troubleshooting modals",
+        "ejemplos": [
+          "should",
+          "must",
+          "might",
+          "can't"
+        ],
+        "descripcion": "Modales para diagnóstico técnico"
+      },
+      {
+        "id": "MGV",
+        "nombre": "Visual design verbs + adjectives",
+        "ejemplos": [
+          "design",
+          "sketch",
+          "render",
+          "bold",
+          "minimal"
+        ],
+        "descripcion": "Diseño gráfico"
+      },
+      {
+        "id": "MARITIMO",
+        "nombre": "Navigation imperatives",
+        "ejemplos": [
+          "steer",
+          "anchor",
+          "berth",
+          "clear"
+        ],
+        "descripcion": "Comandos de navegación"
+      },
+      {
+        "id": "ADSO",
+        "nombre": "Software conditional",
+        "ejemplos": [
+          "if + present",
+          "subject + will"
+        ],
+        "descripcion": "Debugging logic"
+      },
+      {
+        "id": "PERSONALIZADO",
+        "nombre": "Definir personalizado",
+        "ejemplos": [],
+        "descripcion": "Instructor define grupo específico de su sector"
+      }
+    ],
+    "competencias_cefr": [
+      "comprension_oral",
+      "comprension_lectora",
+      "interaccion_oral",
+      "produccion_oral",
+      "produccion_escrita",
+      "vocabulario_activo",
+      "gramatica",
+      "fonologia",
+      "funciones_comunicativas"
+    ],
+    "descriptores_cefr_por_subnivel": {
+      "A1.1": {
+        "nombre": "Breakthrough inicial",
+        "descriptores": {
+          "comprension_oral": "Comprende instrucciones de 1–2 pasos pronunciadas muy despacio, con pausas largas. Reconoce términos técnicos básicos pronunciados aislados con apoyo visual.",
+          "comprension_lectora": "Reconoce nombres, etiquetas y símbolos en herramientas y equipos. Lee listas con apoyo visual. Identifica números y unidades básicas.",
+          "interaccion_oral": "Puede saludar, presentarse y responder Sí/No. Puede dar nombre, programa y turno. Puede pedir repetición con frase fija (Please repeat).",
+          "produccion_oral": "Produce palabras y frases aisladas. Puede nombrar objetos presentes en el entorno laboral.",
+          "produccion_escrita": "Puede completar un formulario con datos personales. Puede escribir listas de palabras o ítems.",
+          "vocabulario_activo": "50–100 términos del dominio técnico del programa. Usa palabras de manera aislada o en frases muy fijas.",
+          "gramatica": "Presente simple afirmativo (I use / He checks). Imperativo básico (Open / Close / Check). Números y unidades básicas.",
+          "fonologia": "Pronuncia palabras conocidas de manera comprensible con esfuerzo. Identifica el número de sílabas de palabras familiares.",
+          "funciones_comunicativas": "Saludar, presentarse, agradecer, pedir repetición, nombrar objetos."
+        }
+      },
+      "A1.2": {
+        "nombre": "Breakthrough consolidado",
+        "descriptores": {
+          "comprension_oral": "Comprende instrucciones de 2–3 pasos pronunciadas despacio. Comprende valores numéricos y unidades de medida en contexto. Sigue un diálogo simple si el ritmo es lento.",
+          "comprension_lectora": "Lee procedimientos simples de mantenimiento (pasos numerados). Identifica valores en especificaciones básicas. Comprende advertencias de seguridad simples.",
+          "interaccion_oral": "Puede describir brevemente lo que está haciendo. Puede pedir aclaración (Can you say that again?). Puede reportar el estado simple de una tarea a su supervisor.",
+          "produccion_oral": "Produce frases completas simples. Puede describir un procedimiento de 2–3 pasos. Puede reportar un hallazgo simple.",
+          "produccion_escrita": "Puede completar un formato de reporte con datos técnicos. Puede escribir una lista de verificación básica.",
+          "vocabulario_activo": "150–250 términos. Conoce collocations básicas del dominio (check the level / drain the filter / tighten the bolt).",
+          "gramatica": "Presente simple afirmativo, negativo e interrogativo. Imperativo con expresiones de seguridad. Modal must para obligación. Números ordinales y cardinales en contexto técnico.",
+          "fonologia": "Pronuncia frases cortas con stress correcto en la palabra clave. Produce ritmo reconocible en frases de 3–5 palabras. Distingue pares mínimos frecuentes en el dominio.",
+          "funciones_comunicativas": "Describir acciones en curso, reportar estado, pedir aclaración, dar instrucción simple."
+        }
+      },
+      "A1.3": {
+        "nombre": "Breakthrough avanzado",
+        "descriptores": {
+          "comprension_oral": "Comprende instrucciones de procedimiento multi-paso. Sigue un briefing técnico breve con apoyo visual. Comprende la idea principal de una explicación simple si el hablante habla despacio y articula.",
+          "comprension_lectora": "Lee un reporte de inspección básico. Comprende diagramas con leyendas. Localiza información específica en una especificación técnica de extensión media.",
+          "interaccion_oral": "Puede describir un problema técnico con vocabulario limitado. Puede solicitar información técnica específica. Puede participar en un intercambio de información estructurado con pares.",
+          "produccion_oral": "Puede presentar los hallazgos de una inspección básica. Puede describir un proceso de 4–5 pasos en secuencia. Puede hacer recomendaciones simples.",
+          "produccion_escrita": "Puede redactar un reporte de inspección básico. Puede escribir una nota técnica simple. Puede completar un formato de diagnóstico estructurado.",
+          "vocabulario_activo": "300–400 términos. Usa collocations con confianza. Comienza a usar expresiones fraseológicas del dominio.",
+          "gramatica": "Presente perfecto para historial de servicio. Condicional tipo 1 para advertencias. Voz pasiva básica para procedimientos. Conectores de secuencia (first, then, next, after that, finally).",
+          "fonologia": "Produce frases y oraciones cortas con ritmo reconocible. Aplica stress de manera consistente en vocabulario técnico conocido. Procesa listening con velocidad ligeramente aumentada.",
+          "funciones_comunicativas": "Describir problema, recomendar acción, presentar hallazgos, solicitar información técnica, expresar obligación/necesidad."
+        }
+      },
+      "A2.0": {
+        "nombre": "Waystage inicial — derivado del roadmap PM-0 §8",
+        "descriptores": {
+          "comprension_oral": "Sigue feedback detallado con explicaciones de causa-efecto. Comprende instrucciones de mejora multi-paso a velocidad moderada natural.",
+          "comprension_lectora": "Lee textos multi-párrafo (reportes, bitácoras, comentarios de revisión con justificación técnica). Apoyo visual como enriquecimiento.",
+          "interaccion_oral": "Puede participar en sesión de feedback, dar y recibir correcciones, justificar cambios implementados.",
+          "produccion_oral": "Presenta acciones correctivas con justificación. Describe cambios en secuencia con conectores complejos.",
+          "produccion_escrita": "Bitácora de mejoras, reporte de revisión, documentación de cambios iterativos.",
+          "vocabulario_activo": "400–500 términos. Expresiones de mejora/corrección/revisión específicas del dominio.",
+          "gramatica": "Presente perfecto (I have corrected). Condicional tipo 1 (If I apply…, the result will be…). Voz pasiva presente. Comparativos y superlativos.",
+          "fonologia": "Stress correcto consistente en vocabulario técnico. Ritmo de oración con palabras de contenido vs función diferenciadas.",
+          "funciones_comunicativas": "Dar feedback, recibir feedback, justificar decisiones, describir mejoras, reportar cambios."
+        }
+      },
+      "A2.1": {
+        "nombre": "Waystage consolidado — derivado del roadmap PM-0 §8",
+        "descriptores": {
+          "comprension_oral": "Comprende presentaciones técnicas a ritmo natural con terminología del dominio.",
+          "comprension_lectora": "Lee documentación de proceso completa (flujos de producción, SOPs, manuales).",
+          "interaccion_oral": "Presenta un proceso completo, responde preguntas técnicas, negocia cambios en el flujo.",
+          "produccion_oral": "Presentación formal de proceso con secuenciación, voz pasiva, vocabulario técnico ocupacional.",
+          "produccion_escrita": "Documentación formal de proceso: flujo, roles, entregables, hitos.",
+          "vocabulario_activo": "500–600 términos. Vocabulario ocupacional especializado del oficio.",
+          "gramatica": "Voz pasiva presente y pasada. Condicional tipo 1 consolidado. Conectores complejos (however, therefore, in addition).",
+          "fonologia": "Ritmo natural en presentaciones formales. Stress de oración manejado con seguridad.",
+          "funciones_comunicativas": "Presentar proceso, explicar pasos, responder preguntas técnicas, resumir."
+        }
+      },
+      "A2.2": {
+        "nombre": "Waystage avanzado — descriptores generados por pipeline (instructor puede sobrescribir)",
+        "descriptores": {
+          "comprension_oral": "[A generar por el pipeline desde universo del programa]",
+          "comprension_lectora": "[A generar por el pipeline]",
+          "interaccion_oral": "[A generar por el pipeline]",
+          "produccion_oral": "[A generar por el pipeline]",
+          "produccion_escrita": "[A generar por el pipeline]",
+          "vocabulario_activo": "600+ términos",
+          "gramatica": "Condicional tipo 2, reported speech, modales de posibilidad",
+          "fonologia": "[A generar por el pipeline]",
+          "funciones_comunicativas": "[A generar por el pipeline]"
+        }
+      }
+    },
+    "_v3_0_note": "v1.x: principios_pedagogicos (13 ítems) · grupo_17_plantillas (17 grupos) · descriptores_cefr_por_subnivel (6 subniveles) · obligatorios. v3.0: REFERENCIA · NO requirements operacionales. PM-0 v3.0 aplica 5 principios maestros · LLM decide grupos gramaticales sector-relevantes (5-8 típico) · produce descriptores SOLO del subnivel target de la guía."
+  },
+  "schema_input_seccion_a_programa": {
+    "description": "SECCIÓN A — Datos a nivel de programa. Diligenciar UNA SOLA VEZ. Genera pm-0-context.json.",
+    "type": "object",
+    "required": [
+      "programa_id",
+      "programa_nombre",
+      "programa_codigo_sofia",
+      "tipo",
+      "duracion_total_horas",
+      "numero_sesiones_competencia",
+      "rango_cefr",
+      "numero_guias",
+      "progresion_cefr_decision",
+      "total_guias"
+    ],
+    "properties": {
+      "programa_id": {
+        "type": "string",
+        "examples": [
+          "MGV-2026",
+          "DIESEL-2026",
+          "ADSO-2026"
+        ],
+        "description": "Código interno SECTOR-AÑO"
+      },
+      "programa_nombre": {
+        "type": "string",
+        "examples": [
+          "Desarrollo de Medios Gráficos Visuales"
+        ]
+      },
+      "programa_codigo_sofia": {
+        "type": "string",
+        "examples": [
+          "522309"
+        ],
+        "description": "Código numérico SOFÍA Plus"
+      },
+      "tipo": {
+        "type": "string",
+        "enum": [
+          "Técnico",
+          "Tecnológico",
+          "Curso Especial",
+          "Curso Complementario"
+        ],
+        "description": "Metadata administrativa de certificación SENA. Desde v2.7 NO determina el número de bloques. Curso Especial y Curso Complementario son sinónimos arquitectónicos (NO tienen proyecto formativo, solo diseño curricular + final_mission_scenario)."
+      },
+      "regla_bloques": {
+        "type": "string",
+        "enum": [
+          "alineacion_1a1",
+          "absorcion_Na1",
+          "desdoblamiento_1aN",
+          "alineacion_NaM"
+        ],
+        "description": "v2.7.1: patrón canónico de mapping RAP↔guía. alineacion_1a1 = default Técnico/Tecnológico (1 RAP = 1 guía). absorcion_Na1 = Curso Especial/Complementario single-guía (N RAPs en 1 guía). desdoblamiento_1aN = RAP complejo subdividido. alineacion_NaM = mapeo libre."
+      },
+      "duracion_total_horas": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "numero_sesiones_competencia": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "Número de sesiones para el desarrollo de la competencia"
+      },
+      "rango_cefr": {
+        "type": "string",
+        "enum": [
+          "A1.1 → A1.2",
+          "A1.1 → A1.3",
+          "A1.1 → A2.0",
+          "A1.1 → A2.1",
+          "A1.1 → A2.2",
+          "A1.2 → A2.0",
+          "A1.2 → A2.2"
+        ]
+      },
+      "numero_guias": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 10
+      },
+      "progresion_cefr_decision": {
+        "type": "string",
+        "enum": [
+          "Opción A — lineal (1 sub-nivel/guía)",
+          "Opción B — con refuerzo (2 guías/sub-nivel)",
+          "Otro — ad-hoc"
+        ]
+      },
+      "progresion_cefr_justificacion": {
+        "type": "string",
+        "description": "Justificación si Opción Otro"
+      },
+      "total_guias": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "Número libre de bloques/guías. Patrón recomendado: 1 RAP = 1 guía. Para Curso Especial puede ser 1."
+      },
+      "horas_por_bloque_calculado": {
+        "type": "number",
+        "description": "Campo derivado en vivo en el formulario: duracion_total_horas / total_guias. Si < 48 → soft warning amarillo (no bloquea export)."
+      },
+      "universo_narrativo": {
+        "type": "object",
+        "description": "OPCIONAL — si vacío, lo autogenera PM-1.1/PM-1.2 desde el sector",
+        "properties": {
+          "empresa_ficticia": {
+            "type": "string",
+            "examples": [
+              "Pixel & Ink Studio"
+            ]
+          },
+          "sector": {
+            "type": "string",
+            "examples": [
+              "Diseño gráfico / Medios visuales"
+            ]
+          },
+          "escenario_principal": {
+            "type": "string"
+          },
+          "personajes": {
+            "type": "array",
+            "minItems": 0,
+            "maxItems": 3,
+            "description": "OPCIONAL: Aprendiz, Mentor/Senior, Cliente/Supervisor",
+            "items": {
+              "type": "object",
+              "properties": {
+                "nombre": {
+                  "type": "string"
+                },
+                "rol": {
+                  "type": "string"
+                },
+                "descripcion": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "productos_tipicos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "terminologia_sector": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "grammar_group_17_sector": {
+        "type": "object",
+        "description": "OPCIONAL — Selecciona plantilla de catalogos_pm0.grupo_17_plantillas o define personalizado",
+        "properties": {
+          "template_id": {
+            "type": "string",
+            "enum": [
+              "DIESEL",
+              "MGV",
+              "MARITIMO",
+              "ADSO",
+              "PERSONALIZADO",
+              null
+            ]
+          },
+          "nombre": {
+            "type": "string",
+            "description": "Solo si PERSONALIZADO"
+          },
+          "ejemplos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "aplicabilidad": {
+            "type": "string"
+          }
+        }
+      },
+      "principios_pedagogicos_seleccionados": {
+        "type": "array",
+        "description": "OPCIONAL — Lista de IDs (5.1, 5.2, ..., 5.13). Si vacía o null, el pipeline aplica TODOS los 13.",
+        "items": {
+          "type": "string",
+          "enum": [
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.4",
+            "5.5",
+            "5.6",
+            "5.7",
+            "5.8",
+            "5.9",
+            "5.10",
+            "5.11",
+            "5.12",
+            "5.13"
+          ]
+        }
+      }
+    }
+  },
+  "schema_input_seccion_b_guia": {
+    "description": "SECCIÓN B — Contexto curricular por guía. Diligenciar UNA VEZ POR GUÍA. Genera pm-1-1-input.json (input para el prompt PM-1.1, NO el output final del pipeline).",
+    "type": "object",
+    "required": [
+      "modo_informacion"
+    ],
+    "properties": {
+      "guia_numero": {
+        "type": "integer",
+        "minimum": 1,
+        "examples": [
+          1,
+          2,
+          3
+        ]
+      },
+      "guia_subnivel_cefr": {
+        "type": "string",
+        "enum": [
+          "A1.1",
+          "A1.2",
+          "A1.3",
+          "A2.0",
+          "A2.1",
+          "A2.2"
+        ],
+        "description": "Subnivel asignado a esta guía. Pre-rellena los descriptores CEFR desde catalogos_pm0.descriptores_cefr_por_subnivel."
+      },
+      "modo_informacion": {
+        "type": "string",
+        "enum": [
+          "MODO 1 — Diseño Curricular SOFÍA Plus",
+          "MODO 2 — Información Externa (Instructor)"
+        ]
+      },
+      "modo_1_diseño_curricular": {
+        "type": "object",
+        "description": "Aplica si modo_informacion = MODO 1",
+        "required": [
+          "diseño_curricular",
+          "codigo_competencia",
+          "nombre_competencia",
+          "codigo_rap",
+          "nombre_rap",
+          "conocimientos_de_proceso",
+          "conocimientos_de_saber",
+          "criterios_de_evaluacion"
+        ],
+        "properties": {
+          "diseño_curricular": {
+            "type": "string"
+          },
+          "proyecto_formativo": {
+            "type": "object",
+            "description": "Omitir si tipo=Curso Especial",
+            "required": [
+              "nombre",
+              "fase"
+            ],
+            "properties": {
+              "nombre": {
+                "type": "string",
+                "description": "Nombre del proyecto formativo articulador"
+              },
+              "fase": {
+                "type": "string",
+                "examples": [
+                  "Fase 2"
+                ]
+              },
+              "contexto_adicional": {
+                "type": "string",
+                "description": "Cliente, sector, escenario real, restricciones técnicas"
+              }
+            }
+          },
+          "codigo_competencia": {
+            "type": "string",
+            "examples": [
+              "22030101"
+            ]
+          },
+          "nombre_competencia": {
+            "type": "string"
+          },
+          "codigo_rap": {
+            "type": "string",
+            "examples": [
+              "220301011"
+            ]
+          },
+          "nombre_rap": {
+            "type": "string"
+          },
+          "conocimientos_de_proceso": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Qué se hace"
+          },
+          "conocimientos_de_saber": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Qué se sabe"
+          },
+          "criterios_de_evaluacion": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Cómo se evalúa"
+          }
+        }
+      },
+      "modo_2_informacion_externa": {
+        "type": "object",
+        "description": "Aplica si modo_informacion = MODO 2",
+        "required": [
+          "temas_tecnicos",
+          "objetivos_aprendizaje_evaluar",
+          "criterios_de_evaluacion"
+        ],
+        "properties": {
+          "proyecto_formativo": {
+            "type": "object",
+            "description": "Opcional — omitir si tipo=Curso Especial o si no aplica",
+            "properties": {
+              "nombre": {
+                "type": "string"
+              },
+              "fase": {
+                "type": "string"
+              },
+              "contexto_adicional": {
+                "type": "string"
+              }
+            }
+          },
+          "temas_tecnicos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "objetivos_aprendizaje_evaluar": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "criterios_de_evaluacion": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "cefr_descriptors_snapshot": {
+        "type": "object",
+        "description": "Pre-rellenado automáticamente desde catalogos_pm0.descriptores_cefr_por_subnivel[guia_subnivel_cefr]. Instructor puede sobrescribir cualquier descriptor para esta guía específica.",
+        "properties": {
+          "comprension_oral": {
+            "type": "string"
+          },
+          "comprension_lectora": {
+            "type": "string"
+          },
+          "interaccion_oral": {
+            "type": "string"
+          },
+          "produccion_oral": {
+            "type": "string"
+          },
+          "produccion_escrita": {
+            "type": "string"
+          },
+          "vocabulario_activo": {
+            "type": "string"
+          },
+          "gramatica": {
+            "type": "string"
+          },
+          "fonologia": {
+            "type": "string"
+          },
+          "funciones_comunicativas": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "schema_input_seccion_c_aprobaciones": {
+    "type": "object",
+    "required": [
+      "aprobado_por_instructor",
+      "fecha_aprobacion"
+    ],
+    "properties": {
+      "aprobado_por_instructor": {
+        "type": "string"
+      },
+      "fecha_aprobacion": {
+        "type": "string",
+        "format": "date"
+      },
+      "observaciones": {
+        "type": "string"
+      }
+    }
+  },
+  "logica_condicional_ux": [
+    "SI tipo ∈ {'Curso Especial', 'Curso Complementario'} → OCULTAR todos los campos proyecto_formativo_* (no aplica canon SENA) Y MOSTRAR campo final_mission_scenario (obligatorio para cursos cortos).",
+    "SI tipo ∈ {'Técnico', 'Tecnológico'} → OCULTAR final_mission_scenario Y MOSTRAR campos proyecto_formativo (con sub-fases articuladas).",
+    "SI tipo ∈ {'Curso Especial', 'Curso Complementario'} Y total_guias === 1 → mostrar info-banner verde: 'Variante single-guía activada (regla_bloques = absorcion_Na1): los N RAPs se absorben en 1 sola guía. Misión Final = entrega completa del curso.'",
+    "regla_bloques se PRE-RELLENA según tipo + total_guias: Técnico/Tecnológico con N guías = N RAPs → 'alineacion_1a1' (default). Curso Especial/Complementario con total_guias=1 → 'absorcion_Na1'. Si el instructor quiere desdoblamiento o mapeo libre, debe seleccionarlo explícitamente del enum.",
+    "EN VIVO: calcular horas_por_bloque = duracion_total_horas / total_guias y mostrar el resultado al usuario en A2 (badge informativo)",
+    "SI horas_por_bloque < 48 → mostrar warning amarillo: 'Aviso: con menos de 48h por guía probablemente tendrás que comprimir actividades. Aceptable para micro-guías de refuerzo o módulos cortos. Puedes continuar.' NO bloquear el botón Exportar JSON.",
+    "SI modo_informacion === 'MODO 1' → mostrar modo_1_diseño_curricular y ocultar modo_2_informacion_externa",
+    "SI modo_informacion === 'MODO 2' → mostrar modo_2_informacion_externa y ocultar modo_1_diseño_curricular",
+    "SI grammar_group_17_sector.template_id === 'PERSONALIZADO' → mostrar campos nombre/ejemplos/aplicabilidad para edición; en otro caso bloquearlos como readonly",
+    "SI principios_pedagogicos_seleccionados está vacío → al exportar JSON, marcar como 'ALL_DEFAULT' (el pipeline aplica los 13)",
+    "SI guia_subnivel_cefr cambia → pre-rellenar cefr_descriptors_snapshot desde catalogos_pm0.descriptores_cefr_por_subnivel[ese subnivel]",
+    "SI guia_subnivel_cefr === 'A2.2' → mostrar mensaje: 'Estos descriptores son placeholder; el pipeline los generará desde el universo del programa. Puedes sobrescribir manualmente.'"
+  ],
+  "ejemplo_output_pm0_context_json": {
+    "_descripcion": "Ejemplo del JSON que el formulario debe producir para PM-0 (sección A). El pipeline lo guarda como pm-0-context.json en runs/[RUN-ID]/.",
+    "programa_id": "MGV-2026",
+    "programa_nombre": "Desarrollo de Medios Gráficos Visuales",
+    "programa_codigo_sofia": "522309",
+    "tipo": "Tecnológico",
+    "duracion_total_horas": 360,
+    "numero_sesiones_competencia": 8,
+    "rango_cefr": "A1.1 → A2.2",
+    "numero_guias": 6,
+    "progresion_cefr_decision": "Opción A — lineal (1 sub-nivel/guía)",
+    "progresion_cefr_justificacion": "Cohorte homogénea, 1 sub-nivel por guía",
+    "total_guias": 6,
+    "horas_por_bloque_calculado": 60,
+    "universo_narrativo": null,
+    "grammar_group_17_sector": {
+      "template_id": "MGV"
+    },
+    "principios_pedagogicos_seleccionados": "ALL_DEFAULT",
+    "fase_0_metadata": {
+      "fecha_generacion": "2026-04-26",
+      "version": "2.0"
+    }
+  },
+  "ejemplo_output_pm1_1_json": {
+    "_descripcion": "Ejemplo del JSON que el formulario debe producir para PM-1.1 (sección B + C). Se guarda como pm-1-1-INPUT.json en runs/[RUN-ID]/g[N]/. ATENCIÓN: este es el INPUT que alimenta al prompt PM-1.1, NO el output final pm-1-1.json del pipeline (que se genera corriendo el master prompt PM-1.1 con este input + pm-0-context.json como contexto).",
+    "pm0_anchors_ref": {
+      "file": "pm-0-context.json",
+      "programa_id": "MGV-2026",
+      "auto_derived": true
+    },
+    "guia_numero": 1,
+    "guia_subnivel_cefr": "A1.1",
+    "horas_asignadas_guia": 60,
+    "modo_informacion": "MODO 1 — Diseño Curricular SOFÍA Plus",
+    "modo_1_diseño_curricular": {
+      "diseño_curricular": "Desarrollo de Medios Gráficos Visuales — Código 522309",
+      "proyecto_formativo": {
+        "nombre": "Diseño de Identidad Visual para Marca Local",
+        "fase": "Fase 1 — Análisis y conceptualización",
+        "contexto_adicional": "Cliente real: panadería local La Esquina Bakery. Restricción presupuestal."
+      },
+      "codigo_competencia": "22030101",
+      "nombre_competencia": "Aplicar elementos de diseño gráfico según requerimientos del cliente",
+      "codigo_rap": "220301011",
+      "nombre_rap": "Identificar requerimientos del cliente para definir el alcance del diseño",
+      "conocimientos_de_proceso": [
+        "Realizar entrevista de levantamiento de brief",
+        "Documentar requerimientos en formato estandarizado",
+        "Validar interpretación con el cliente"
+      ],
+      "conocimientos_de_saber": [
+        "Tipos de brief de diseño",
+        "Estructura de un mood board",
+        "Vocabulario técnico de diseño visual"
+      ],
+      "criterios_de_evaluacion": [
+        "El brief documenta todos los requerimientos del cliente",
+        "El alcance está delimitado en términos medibles"
+      ]
+    },
+    "cefr_descriptors_snapshot": {
+      "comprension_oral": "Comprende instrucciones de 1–2 pasos pronunciadas muy despacio, con pausas largas. Reconoce términos técnicos básicos pronunciados aislados con apoyo visual.",
+      "comprension_lectora": "Reconoce nombres, etiquetas y símbolos en herramientas y equipos. Lee listas con apoyo visual. Identifica números y unidades básicas.",
+      "interaccion_oral": "Puede saludar, presentarse y responder Sí/No. Puede dar nombre, programa y turno. Puede pedir repetición con frase fija.",
+      "produccion_oral": "Produce palabras y frases aisladas. Puede nombrar objetos presentes en el entorno laboral.",
+      "produccion_escrita": "Puede completar un formulario con datos personales. Puede escribir listas de palabras o ítems.",
+      "vocabulario_activo": "50–100 términos del dominio gráfico básico (tools, colors, shapes, materials, fonts).",
+      "gramatica": "Presente simple afirmativo. Imperativo básico. Números y unidades básicas.",
+      "fonologia": "Pronuncia palabras conocidas de manera comprensible con esfuerzo.",
+      "funciones_comunicativas": "Saludar, presentarse, agradecer, pedir repetición, nombrar objetos gráficos."
+    },
+    "aprobaciones": {
+      "aprobado_por_instructor": "Sergio Cortés Perdomo",
+      "fecha_aprobacion": "2026-04-26",
+      "observaciones": ""
+    }
+  },
+  "changelog_v3_0": [
+    "v3.0 paradigm shift (2026-05-01): NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1.",
+    "Form xlsx mantiene shape estable · NO refactor mayor.",
+    "Workflow nuevo: form xlsx → pm-0-0-input.json → subagente PM-0.0 ALINEA por RAP → pm-0-0-matriz-alineada.json → PM-0 v3.0 simplificado.",
+    "saberes_conceptos · saberes_proceso · criterios_evaluacion se entregan AGREGADOS en form (sin pre-clasificar) · PM-0.0 los alinea en runtime.",
+    "PM-0 v1.1 → v3.0 simplificado: 5 principios maestros · libertad LLM · NO 17 grupos gramaticales hardcoded · schema mínimo viable."
+  ],
+  "workflow_v3_0_paradigm_shift": {
+    "descripcion": "Workflow operacional Phase 0 + Phase 1 post-paradigm shift PM-0.0 (2026-05-01)",
+    "pipeline_canon": [
+      "STEP 0.1 · Form xlsx Sergio (este schema) → parse a pm-0-0-input.json",
+      "STEP 0.2 · subagente_pm_0_0_matriz.py (Camino 2 LLM) ALINEA por cada RAP",
+      "STEP 0.3 · pm-0-0-matriz-alineada.json (output canónico · N RAPs · 7 validation)",
+      "GATE 0 · Sergio aprueba alineación matriz",
+      "STEP 1.1 · PM-0 v3.0 simplificado consume matriz → pm-0-context.json (8 fields min)",
+      "STEP 1.2 · PM-1.1 ruta macrotemática POR RAP",
+      "STEP 1.3 · PM-1.2 scope/curación POR RAP",
+      "GATE 1 · Sergio aprueba pm-1-2 · transition Phase 2"
+    ],
+    "campos_form_críticos_para_pm00": [
+      "schema_input_seccion_b_guia.modo_1_diseño_curricular.codigo_competencia",
+      "schema_input_seccion_b_guia.modo_1_diseño_curricular.nombre_competencia",
+      "schema_input_seccion_b_guia.modo_1_diseño_curricular.codigo_rap (per RAP)",
+      "schema_input_seccion_b_guia.modo_1_diseño_curricular.nombre_rap (per RAP)",
+      "schema_input_seccion_b_guia.modo_1_diseño_curricular.conocimientos_de_saber[] (agregado)",
+      "schema_input_seccion_b_guia.modo_1_diseño_curricular.conocimientos_de_proceso[] (agregado)",
+      "schema_input_seccion_b_guia.modo_1_diseño_curricular.criterios_de_evaluacion[] (agregado)"
+    ],
+    "nota_para_instructor": "Los conocimientos_de_saber, conocimientos_de_proceso y criterios_de_evaluacion se entregan COMO LISTAS PLANAS (sin pre-clasificar por RAP). El subagente PM-0.0 hace la alineación por cada RAP en runtime · respeta canon SOFÍA · documenta rationale pedagógico."
+  }
+}
