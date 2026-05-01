@@ -1,8 +1,188 @@
 # PM-0 — CEFR Framework & FPI SENA Pedagogical Foundation
 
-**Status:** Capa fundacional del sistema — referencia obligatoria para todos los PM-2.x, PM-3.x y PM-4.x  
-**Alcance CEFR:** A1.1 — A2.2 (v2.6 expandido; anterior: A1.1 — A1.2)  
-**Versión:** 1.1 — 2026-04-20 (v1.0 publicada 2026-04-18; v1.1 añade §10 Implementación Técnica por Run con `pm-0-context.json` como artefacto de instancia)
+**Status:** Capa fundacional del sistema — referencia obligatoria para todos los PM-2.x, PM-3.x y PM-4.x
+**Alcance CEFR:** A1.1 — A2.2
+**Versión:** 3.0 — 2026-05-01 (v3.0 SIMPLIFICADO post-PM-0.0 paradigm shift · 5 principios maestros · libertad LLM)
+**Versiones legacy:** v1.0 (2026-04-18) · v1.1 (2026-04-20 · pm-0-context.json schema)
+
+> [!warning] PARADIGM SHIFT v3.0 · 2026-05-01
+>
+> PM-0 v2.x (1077 líneas · 13 sub-principios pedagógicos prescriptivos · 17 grupos gramaticales hardcoded · 22 ítems trazabilidad · schema 30+ fields) está DEPRECATED como spec operacional. v3.0 simplifica a ~300 líneas · 5 principios maestros · schema mínimo viable · libertad LLM.
+>
+> **Razón:** Sergio detectó (2026-05-01) que PM-0 v2.x sobre-prescribe · el LLM repite mecánicamente · pierde capacidad analítica. Además · la matriz pedagógica curricular ahora se alinea explícitamente en PM-0.0 (NEW · pre-PM-0) · entonces PM-0 ya NO necesita reconstruir alineación · solo aplica principios pedagógicos contra matriz heredada.
+>
+> **Cambio cascada:** PM-0 ahora consume `pm-0-0-matriz-alineada.json` (PM-0.0 output) como insumo principal · agrega CEFR descriptors + universo narrativo + principios pedagógicos · NO duplica info de matriz curricular.
+>
+> **Legacy preserved:** las secciones v1.x con tabla 17 grupos gramaticales · L1 reduction tabla · 22 ítems trazabilidad permanecen en este documento como REFERENCIA · NO son requirements operacionales v3.0 · son sugerencias que el LLM puede consultar cuando necesite profundizar.
+
+---
+
+## EXTENSIÓN v3.0 — SIMPLIFICACIÓN CANÓNICA (2026-05-01)
+
+### REGLA 1 — INPUT PRINCIPAL · pm-0-0-matriz-alineada.json
+
+PM-0 v3.0 consume como input PRIMARIO el output de PM-0.0 (matriz pedagógica alineada por RAP):
+
+```json
+{
+  "competencia": "...",
+  "raps_count": N,
+  "raps": [
+    {"rap_id": "RA1", "rap_titulo": "...", "saberes_conceptos_y_principios": [...], "saberes_proceso": [...], "criterios_evaluacion": [...]},
+    ...
+  ]
+}
+```
+
+**PM-0 NO reconstruye alineación.** PM-0 NO toca saberes/criterios. PM-0 solo agrega capa pedagógica (CEFR + universo + principios) sobre la matriz heredada.
+
+### REGLA 2 — 5 PRINCIPIOS MAESTROS (sintetizados de §5 v1.x)
+
+El LLM aplica estos 5 principios maestros al contexto del programa · CON LIBERTAD ANALÍTICA · NO mecánicamente:
+
+1. **CONTENIDO TÉCNICO PRIMARIO** · El idioma se enseña ALREDEDOR de contenido técnico real del sector. Realia · fotografías · video · vocabulario auténtico SOFÍA. No se enseña gramática descontextualizada · se enseña gramática que sirve la operación.
+
+2. **PROGRESIÓN CEFR DIFERENCIADA** · Cada guía sirve un subnivel CEFR específico (A1.1 / A1.2 / A1.3 / A2.0 / A2.1 / A2.2). El LLM elige el subnivel basándose en el RAP target · NO obligado a producir descriptores de los 6 subniveles.
+
+3. **L1 DECRECE PROGRESIVAMENTE** · El L1 (español) cae de ~30% en S1 a 0% en sesiones finales. NO hardcoded por sesión · el LLM ajusta per cohort/perfil aprendices con justificación explícita.
+
+4. **FEEDBACK DIFERENCIADO accuracy ↔ fluency** · Accuracy (gramática · pronunciación · spelling) se corrige inmediato. Fluency (oralidad · interacción) se respeta · feedback diferido. El LLM decide cuándo cada tipo según la actividad.
+
+5. **EVIDENCIA ALINEADA AL CRITERIO** · Cada actividad genera evidencia que valida un criterio específico del RAP (heredado de PM-0.0). NO se inventan criterios · se asignan instrumentos a criterios canon.
+
+### REGLA 3 — GRAMÁTICA SECTOR-RELEVANTE · NO 17 GRUPOS HARDCODED
+
+PM-0 v3.0 NO obliga a cubrir 17 grupos gramaticales prescriptivos. El LLM:
+- Lee `saberes_conceptos_y_principios` de cada RAP en `pm-0-0-matriz-alineada.json` (donde PM-0.0 ya asignó la gramática del sector)
+- Identifica los grupos gramaticales relevantes al sector (típicamente 5-8 · NO 17)
+- Decide qué grupos activar Intro / Consolida / Aplica per guía · CON LIBERTAD
+
+Ejemplo IMARPOR-CC: gramática activa son `verb to be · simple tense · imperative · tag questions · progressive · prepositions · quantifiers · modals` (~8 grupos · NO 17). NO se fuerza Past Tense ni Future Perfect porque el sector NO los necesita en A1-A2.
+
+**Tabla v1.x de 17 grupos permanece como referencia · NO requirement.**
+
+### REGLA 4 — SCHEMA MÍNIMO VIABLE · 8 fields esenciales
+
+El output `pm-0-context.json` v3.0 requiere mínimo 8 campos:
+
+| Field | Required | Origen |
+|-------|----------|--------|
+| `pm_id`, `pm_name`, `pm_version`, `run_id` | ✅ | metadata canónica |
+| `generated_date`, `instructor` | ✅ | metadata canónica |
+| `programa` (denominacion · sector · CEFR) | ✅ | form xlsx parseado |
+| `universo_narrativo` | ✅ | LLM decide · personajes · escenarios · vocabulario sector |
+| `cefr_subnivel_objetivo` | ✅ | LLM decide para esta guía |
+| `principios_pedagogicos_aplicables` | ✅ | LLM aplica los 5 principios maestros |
+| `_matriz_alineada_ref` | ✅ | path o referencia a pm-0-0-matriz-alineada.json |
+
+**Campos opcionales** (LLM agrega si el sector lo pide):
+- `final_mission_scenario`
+- `grammar_focus_per_session`
+- `l1_policy_per_session`
+- `imagery_guidance_sector`
+- `iconografia_tone`
+- `cultural_realia`
+
+NO requerimos schema 30+ fields como v1.x. LLM tiene libertad de innovar campos sector-específicos.
+
+### REGLA 5 — TRAZABILIDAD ESENCIAL · 6 ÍTEMS (no 22)
+
+Validación post-output v3.0 requiere 6 checks · NO 22:
+
+1. ✅ `_matriz_alineada_ref` apunta a archivo válido pm-0-0-matriz-alineada.json
+2. ✅ `cefr_subnivel_objetivo` ∈ {A1.1, A1.2, A1.3, A2.0, A2.1, A2.2}
+3. ✅ `universo_narrativo` non-empty · sector-coherent · personajes >= 2
+4. ✅ `principios_pedagogicos_aplicables` referencia los 5 principios maestros (todos · selectivo · combinación · documentado)
+5. ✅ NO duplicación con matriz alineada (pm-0-context.json NO debe contener saberes/criterios literales · solo referencia a matriz)
+6. ✅ Anti-copia-fantasma · 0 cross-program leaks (universo es ESTE programa · NO copy de IMARPOR-CC u otro)
+
+### REGLA 6 — DESCRIPTORES CEFR · SOLO NIVEL RELEVANTE
+
+PM-0 v3.0 produce descriptores CEFR SOLO del subnivel objetivo de la guía. NO produce los 6 subniveles A1.1 → A2.2.
+
+Ejemplo:
+- Guía 1 técnico CEFR A1.1 → solo descriptors A1.1
+- Guía 3 tecnológico CEFR A2.0 → solo descriptors A2.0
+- Curso Complementario A1.2 → A2.1 progresivo → solo descriptors entrada A1.2 + salida A2.1
+
+Tabla v1.x §6 con 6 subniveles permanece como REFERENCIA · NO requirement.
+
+### REGLA 7 — VALIDATION POST-GENERATION · 6 CHECKS
+
+```json
+"validation_checks": [
+  {"id": 1, "name": "matriz_alineada_ref_valid", "status": "PASS|FAIL"},
+  {"id": 2, "name": "cefr_subnivel_canonical", "status": "PASS|FAIL"},
+  {"id": 3, "name": "universo_narrativo_complete", "status": "PASS|FAIL"},
+  {"id": 4, "name": "principios_aplicados", "status": "PASS|FAIL"},
+  {"id": 5, "name": "no_duplication_matriz", "status": "PASS|FAIL"},
+  {"id": 6, "name": "anti_copia_fantasma", "status": "PASS|FAIL"}
+]
+```
+
+Si CUALQUIER check FAIL · output marcado `enriched: false` · Sergio revisa antes de avanzar a PM-1.1.
+
+### REGLA 8 — RELACIÓN CON OTROS PROMPTS v3.0
+
+| Relación | Prompt | v1.x → v3.0 |
+|----------|--------|-------------|
+| **Consume de (NEW · CRÍTICO)** | PM-0.0 | matriz pedagógica alineada |
+| Alimenta a | PM-1.1 | ruta macrotemática (NO duplicar matriz · solo agregar capa visual/temática) |
+| Alimenta a | PM-1.2 | scope (NO duplicar matriz · solo curar fuentes auténticas per RAP) |
+| Alimenta a | PM-2.x | universo narrativo + principios pedagógicos |
+| Alimenta a | PM-3.x | universo + CEFR descriptores · NO matriz curricular (esa va de PM-0.0) |
+
+PM-2.11 NO consume PM-0 · consume directamente PM-0.0 (matriz alineada).
+PM-3.7 NO consume PM-0 · consume PM-0.0 + PM-2.11.
+
+### REGLA 9 — DEPRECATION PATH v1.x → v3.0
+
+Programas con `pm-0-context.json` v1.x (30+ fields · 22 ítems trazabilidad · descriptores 6 subniveles):
+- KEEP los archivos legacy en run dir (NO eliminar · son canon histórico)
+- Generar nuevo pm-0-context.json v3.0 cuando se re-run el programa
+- Marcar artefactos v1.x como `*.legacy-v1x` (sufijo informativo · NO mover)
+
+Run resultante puede tener AMBOS: legacy v1.x (para auditoría) + v3.0 (operacional).
+
+### REGLA 10 — LIBERTAD LLM EXPLÍCITA
+
+El LLM tiene libertad analítica sobre:
+- Cuántos personajes inventa (mínimo 2 · sin máximo)
+- Qué escenario laboral elige como hero del universo
+- Cómo redacta los principios pedagógicos aplicables (selectivo · combinado · todos)
+- Qué campos opcionales agrega según el sector (e.g., `cold_chain_notes` si banana · `vhf_protocol_focus` si marítimo · etc.)
+- Tono pedagógico que propone (concentrado · colaborativo · ágil · reflexivo · etc.)
+- Cuántos grupos gramaticales activar (5-10 típico · NO los 17 v1.x)
+
+El LLM NO tiene libertad sobre:
+- Cambiar la matriz alineada (esa viene de PM-0.0 · canon)
+- Inventar criterios de evaluación (vienen de SOFÍA · canon)
+- Reordenar RAPs
+- Saltar validation_checks
+
+---
+
+## ESTRUCTURA OPERACIONAL v3.0 (resumen ejecutivo)
+
+```
+Form xlsx parseado → PM-0.0 (NEW · alinea matriz por RAP) → pm-0-0-matriz-alineada.json
+                                                            ↓
+                                                          PM-0 v3.0
+                                                            ↓
+                                                    pm-0-context.json (8 fields min)
+                                                       - universo_narrativo
+                                                       - cefr_subnivel_objetivo
+                                                       - principios_pedagogicos_aplicables
+                                                       - _matriz_alineada_ref (no duplicate)
+                                                            ↓
+                                                          PM-1.1 / PM-1.2 / PM-2.x / etc.
+```
+
+---
+
+## SECCIONES LEGACY v1.x (REFERENCIA · NO REQUIREMENTS)
+
+> [!info] Las siguientes secciones permanecen como REFERENCIA del canon v1.x. NO son requirements operacionales v3.0. El LLM puede consultarlas cuando necesite profundizar en un tema · pero NO está obligado a cumplirlas mecánicamente.
 
 ---
 
