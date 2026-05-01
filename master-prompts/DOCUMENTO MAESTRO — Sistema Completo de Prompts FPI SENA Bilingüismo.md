@@ -1,9 +1,10 @@
 ---
 title: DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo
-version: 2.7
-last_updated: 2026-04-22
-status: Learner-Readable Activity canonizada — las 30 Activity Cards de PM-3.6 G1 migradas a schema_version v2.7 con anatomía fija de 6 bloques (Encabezado V+O+C · Descripción narrativa 60-120 palabras · Step-by-step 5-7 pasos · Entregable · Evidencia first-class · Footer logístico). Pipeline metadata (fuente_pm_*, voc_dimension, schema_version, cross_references) preservado en JSON pero suprimido del DOCX del aprendiz. Script canónico `scripts/rewrite_activities_v27.js` es el migrador idempotente v2.6.3 → v2.7 con dispatch por schema_version y por batch (piloto/A/B/C/D). Rollout completado en run MGV-2026-04-20 G1; portable a otros runs extendiendo los diccionarios VOC_DRAFTS + NARRATIVA_DRAFTS con el universo pedagógico de cada guía (respetando la regla v2.3 de universo original). DOCX final: 103.7 KB, 30/30 v2.7, 0 fugas de jerga. Caso-origen: instructor Sergio solicitó 2026-04-22 clarificar la voz de las actividades hacia el aprendiz sin perder la trazabilidad del pipeline.
+version: 3.0
+last_updated: 2026-05-01
+status: PARADIGM SHIFT FUNDAMENTAL · NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1. Sergio Cortés decisión arquitectónica 2026-05-01: el sistema diseñaba "de adentro hacia afuera" en teoría (DM declaraba UbD desde v2.0) pero en práctica reconstruía la matriz GFPI-F-134 retroactivamente en PM-2.11 (al final de Fase 2) usando información agregada que el LLM había procesado sin saber a qué RAP pertenecía cada saber/criterio. v3.0 corrige: PM-0.0 (NEW) toma información curricular SOFÍA agregada (saberes_conceptos + saberes_proceso + criterios_evaluacion + N RAPs · sin pre-clasificar) y ALINEA explícitamente por RAP. Output `pm-0-0-matriz-alineada.json` se vuelve fundamento pedagógico de toda la cadena downstream. PM-0 simplifica de 1077 → ~270 lines operacionales (5 principios maestros · libertad LLM · schema mínimo viable). Cascade impact: PM-0 + PM-1.1 + PM-1.2 + PM-2.0 + PM-2.x + PM-2.11 + PM-3.7 ahora consumen matriz alineada como insumo. PM-3.7 V04 multi-RAP rows se llenan con contenido REAL por RAP (no solo título RAP en R18-R21). DOCX/JSON learner-readable v2.7 (30 Activity Cards anatomy 6-bloque) preservado · NO afectado.
 previous_versions:
+  - "2.7 (2026-04-22) — Learner-Readable Activity canonizada · 30 Activity Cards PM-3.6 G1 anatomy 6-bloque"
   - "2.6.6 (2026-04-21) — Paleta SENA institucional (verde #39A900 + azul oscuro #0B2E45 + verde oscuro #007832)"
   - "2.6.5 (2026-04-21) — Canon Shared Renderer Pattern (fuente única de verdad por sección DOCX)"
   - "2.6.4 (2026-04-20) — Sección 4 del GFPI-F-135 reorganizada al formato SENA oficial + CHECK 17 upstream→downstream"
@@ -1888,6 +1889,82 @@ pm-4-2-gen.js                 → generador PM-4.2
 
 ---
 
-*DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo*  
-*Fábrica Curricular v2.6.5 — Shared Renderer Pattern (REGLA 20: secciones multi-output viven en `scripts/lib/` como fuente única, ambos generadores las importan) + validador automático `check-generator-parity.js` para detectar drift + Sección 4 del GFPI-F-135 formato SENA oficial (tabla 6 cols × N filas) + CHECK 17 upstream→downstream + doble-presencia canónica de criterios (PM-4.1 ↔ PM-3.6) + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion del Activity Footer + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json (Fase 0) + Regla Arquetipos + pm0_alignment_by_session + PM-1.2 4-Bloques*  
-*Instructor Sergio · Abril 2026*
+---
+
+## EXTENSIÓN v3.0 — PARADIGM SHIFT PM-0.0 MATRIZ ALINEADORA (2026-05-01)
+
+### Decisión arquitectónica fundamental · Sergio Cortés
+
+**Problema identificado:** el sistema declaraba "diseño de adentro hacia afuera" desde v2.0 (UbD framework) pero operacionalmente reconstruía la matriz pedagógica GFPI-F-134 retroactivamente en PM-2.11 (al final de Fase 2). El LLM tomaba decisiones en PM-0 / PM-1.x / PM-2.x sin saber qué saber/criterio correspondía a qué RAP. La alineación matriz era heurística reverse-engineered, NO de origen.
+
+**Cambio canónico v3.0:** crear NEW PM-0.0 "Matriz Pedagógica Alineadora" como PRIMER subagente del pipeline (Phase 0 · pre-PM-0).
+
+### Pipeline canon v3.0
+
+```
+Form xlsx Sergio → datos AGREGADOS (saberes/procesos/criterios sin clasificar por RAP)
+   ↓
+PM-0.0 [NEW · CRÍTICO] · alinea matriz por RAP
+   ↓ pm-0-0-matriz-alineada.json (output canónico · N RAPs dinámico · schema strict)
+   ↓
+PM-0 v3.0 [SIMPLIFICADO] · agrega capa pedagógica (CEFR + universo + principios) sobre matriz heredada
+   ↓ pm-0-context.json (8 fields min · resto opcional · libertad LLM)
+   ↓
+PM-1.1 / PM-1.2 / PM-2.0 / PM-2.x / PM-2.11 / PM-3.7 V04 — TODOS consumen matriz alineada como fundamento
+```
+
+### Cascade impact por PM
+
+| PM | Cambio v3.0 | Magnitud |
+|----|------------|----------|
+| **PM-0.0 (NEW)** | Crear master prompt + subagente Python wrapper | NEW canon |
+| **PM-0 v1.1 → v3.0** | Simplificar 1077 → ~270 lines operacionales · 5 principios maestros · libertad LLM · schema mínimo · NO duplica matriz | Major refactor |
+| **PM-1.1** | Ruta macrotemática construida POR RAP (no agregada) · consume matriz | Cascade light · consume input distinto |
+| **PM-1.2** | Scope/curación POR RAP · saberes target específicos del RAP | Cascade light |
+| **PM-2.0** | Session blueprint con awareness explícita RAP por sesión | Cascade light |
+| **PM-2.x ACs** | Cada actividad atribuida a RAP target · NO heurística | Cascade medium · activity_card.rap_target field |
+| **PM-2.11** | Simplificado · matriz YA viene alineada · solo agrega horas/instrumentos/ambientes | Cascade light · workload reducido |
+| **PM-3.7 V04** | Multi-RAP rows con contenido REAL por RAP (no solo título RAP en R18-R21) | Cascade major · canon V04 ya soporta · contenido completado |
+
+### Beneficios pedagógicos canon
+
+1. **Trazabilidad SOFÍA explícita** · "este criterio · este saber · esta actividad · esta evidencia" sin invención retroactiva
+2. **Diseño UbD verdadero** · de adentro hacia afuera por RAP desde día 0 (no solo en teoría)
+3. **GFPI-F-134 V04 multi-RAP completa** · contenido pedagógico real per fila · respeta filosofía SENA original
+4. **PM-0 con libertad analítica** · LLM aplica principios pedagógicos contra matriz canónica · NO duplica trabajo curricular
+5. **Auditoría clara** · cualquier instructor/coordinación pueda verificar alineación criterios↔evidencias↔saberes per RAP
+
+### Documentos canonizados v3.0
+
+- ✅ `master-prompts/PM-0.0 — Matriz Pedagógica Alineadora.md` (NEW · 509 lines · 7 REGLAS · schema completo · ejemplo IMARPOR-CC)
+- ✅ `master-prompts/PM-0 — CEFR Framework & Pedagogical Foundation.md` (v1.1 → v3.0 · EXTENSIÓN v3.0 · 10 REGLAS canon simplificado)
+- ✅ `master-prompts/DOCUMENTO MAESTRO — ...md` (v2.7 → v3.0 · esta extensión)
+- ⏳ `master-prompts/PLAN-FASE-1-ARQUITECTURA.md` (NEW pendiente · próximo hito)
+- ⏳ `subagentes/subagente_pm_0_0_matriz.py` (Camino 2 LLM puro · próximo hito)
+- ⏳ `form-schema-pm0-pm11.json` bump menor + `claude-design-prompt.md` (próximo hito)
+- ⏳ Skill `fpi-sena-fase1` workflow update (próximo hito)
+
+### Form xlsx · NO requiere refactor mayor
+
+Hallazgo crítico del pre-flight: el form actual ya pide los 4 campos críticos:
+- `nombre_competencia` (Sheet B · R8-12)
+- `raps[]` (Sheet B · R19-22 · etc.)
+- `conocimientos_de_saber[]` agregado (Sheet B · R23-28)
+- `conocimientos_de_proceso[]` agregado (Sheet B · R29-39)
+- `criterios_de_evaluacion[]` agregado (Sheet B · R40-48)
+
+El gap NO está en captura · está en alineación. PM-0.0 hace la alineación en runtime · el form mantiene su shape actual con bump menor de documentación únicamente.
+
+### Migration path runs existentes
+
+Programas con pipeline v2.7 y previo (IMARPOR-CC-2026-04-27 · MGV-2026-04-20 · DIESEL-2026-04-19 · etc.):
+- KEEP runs legacy intactos (canon histórico · auditoría)
+- Nuevos runs (e.g., IMARPOR-CC-2026-04-30-V2) generan v3.0 desde Phase 0
+- Re-runs de programas existentes pueden optar por upgrade · NO obligatorio
+
+---
+
+*DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo*
+*Fábrica Curricular v3.0 — PARADIGM SHIFT NEW PM-0.0 Matriz Pedagógica Alineadora · diseño UbD verdadero de adentro hacia afuera por RAP · PM-0 simplificado · libertad LLM · 5 principios maestros · cascade impact PM-1.1/1.2/2.0/2.x/2.11/3.7 · canon Sergio Cortés 2026-05-01*
+*Versiones legacy preserved: v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
+*Instructor Sergio · Abril–Mayo 2026*
