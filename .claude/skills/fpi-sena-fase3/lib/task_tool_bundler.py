@@ -508,6 +508,156 @@ def preparar_bundle_phase3(pm_id, run_id, runs_dir, master_prompts_dir, repo_roo
     }
 
 
+def preparar_bundle_phase0(pm_id, run_id, runs_dir, master_prompts_dir, repo_root, guide_id=None):
+    """Bundler Fase 0 · NEW · pre-PM-0 Matriz Pedagogica Alineadora (PM-0.0).
+
+    Diferencias vs preparar_bundle_phase3() / phase4():
+    - Inputs MINIMAL: solo pm-0-0-input.json (parsed del form xlsx) o contenido pegado directo
+    - NO consume Phase 1+2+3 outputs (esos no existen aun · PM-0.0 es PRIMER subagente)
+    - NO ref operacional (PM-0.0 v1.0 NEW · sin precedente)
+    - Master prompt PM-0.0 inyectado (canon v1.0 · 7 REGLAS · 7 validation_checks)
+
+    Per PLAN-FASE-1-ARQUITECTURA.md v1.0 §3.2 + DM v3.0 paradigm shift.
+
+    Args:
+        pm_id: "PM-0.0"
+        run_id: ej "IMARPOR-CC-2026-04-30-V2"
+        runs_dir: path al directorio runs/
+        master_prompts_dir: path al directorio master-prompts/
+        repo_root: path raiz del repo
+        guide_id: opcional · single-guia absorpcion
+
+    Returns:
+        dict con keys (subagent_type, prompt, expected_output_file, validation_post_hoc, inputs_loaded, bundle_size_chars)
+
+    Raises:
+        FileNotFoundError si master prompt PM-0.0 no existe
+        ValueError si pm-0-0-input.json malformado (cuando se provee)
+    """
+    import os
+    import json as _json
+    from pathlib import Path
+
+    # 1. Pre-flight: cargar master prompt PM-0.0
+    mp = load_master_prompt(pm_id, master_prompts_dir, strict_version=True)
+
+    # 2. Cargar pm-0-0-input.json si existe (opcional · puede venir contenido pegado)
+    run_path = Path(runs_dir) / run_id
+    if guide_id:
+        run_path = run_path / guide_id
+
+    pm00_input_path = run_path / "pm-0-0-input.json"
+    pm00_input = None
+    if pm00_input_path.exists():
+        with open(pm00_input_path) as f:
+            pm00_input = _json.load(f)
+
+    # 3. Cargar pm-0-context-input.json si existe (legacy form-parsed)
+    legacy_input_path = run_path / "pm-0-context-input.json"
+    legacy_input = None
+    if legacy_input_path.exists():
+        with open(legacy_input_path) as f:
+            legacy_input = _json.load(f)
+
+    # 4. Construir inputs bundle minimal Phase 0
+    inputs_bundle = {
+        "pm_id_target": pm_id,
+        "run_id": run_id,
+        "guide_id": guide_id,
+        "pm00_input": pm00_input,
+        "legacy_input_form_parsed": legacy_input,
+        "input_source_note": (
+            "pm-0-0-input.json" if pm00_input else
+            "pm-0-context-input.json (legacy form parsed)" if legacy_input else
+            "contenido pegado directo (orquestador inyecta · NO archivo pre-existente)"
+        )
+    }
+
+    # 5. Deliverable spec PM-0.0
+    deliverable_spec = {
+        "pm_id": pm_id,
+        "expected_output_file": f"runs/{run_id}/{guide_id+'/' if guide_id else ''}pm-0-0-matriz-alineada.json",
+        "shape_reference": "Ver master prompt PM-0.0 v1.0 §OUTPUT ESPERADO · 7 REGLAS canon-strict · 7 validation_checks bloqueantes",
+        "enriched_initial": False,
+        "gate_humano_pendiente": "Gate 0 (Sergio aprueba alineacion matriz) pre-PM-0"
+    }
+
+    # 6. Construir prompt canonico Phase 0
+    # Pattern minimal · NO incluye ref operacional (NEW v1.0)
+    prompt_parts = [
+        "# MASTER PROMPT PM-0.0 v1.0 · INYECTADO COMPLETO",
+        "",
+        mp["text"],
+        "",
+        "---",
+        "",
+        "# INPUTS RECIBIDOS · CONTEXTO RUN-ID " + run_id,
+        "",
+        "## Source del input",
+        inputs_bundle["input_source_note"],
+        "",
+        "## pm-0-0-input.json (si existe)",
+        "```json",
+        _json.dumps(pm00_input, ensure_ascii=False, indent=2) if pm00_input else "(no existe · usar legacy_input o contenido pegado)",
+        "```",
+        "",
+        "## pm-0-context-input.json (legacy · si existe)",
+        "```json",
+        _json.dumps(legacy_input, ensure_ascii=False, indent=2) if legacy_input else "(no existe)",
+        "```",
+        "",
+        "---",
+        "",
+        "# DELIVERABLE ESPERADO",
+        "",
+        "Output file: " + deliverable_spec["expected_output_file"],
+        "",
+        "Shape: 7 REGLAS canon strict del master prompt arriba",
+        "",
+        "Validation post-output: 7 checks bloqueantes (ver master prompt §VALIDATION CHECKS)",
+        "",
+        "enriched_initial: False (Gate 0 Sergio approval pending)",
+        "",
+        "---",
+        "",
+        "# DISCIPLINA · 7 PASOS PRE-GENERATION CHECKLIST",
+        "",
+        "Antes de escribir output: cumplir REGLA 19 PASOS A-F del master prompt PM-0.0.",
+        "Si algun input critico falta · STOP · documentar gap · NO inventar.",
+        "",
+        "Verbatim RAPs · NO parafrasis (REGLA 4).",
+        "Cobertura 100% · cero huerfanos (REGLA 2).",
+        "Rationale pedagogico 50-200 words por RAP (REGLA 5).",
+        "Dynamic raps_count · NO asumir 4 (REGLA 7)."
+    ]
+
+    prompt = "\n".join(prompt_parts)
+
+    return {
+        "subagent_type": "general-purpose",
+        "prompt": prompt,
+        "expected_output_file": deliverable_spec["expected_output_file"],
+        "expected_output_schema": deliverable_spec["shape_reference"],
+        "validation_post_hoc": [
+            "shape conforme master prompt PM-0.0 v1.0",
+            "7 validation_checks bloqueantes pre-Gate 0",
+            "verbatim RAPs preserved (REGLA 4)",
+            "cobertura 100% saberes/procesos/criterios (REGLA 2)",
+            "rationale_alineacion 50-200 words per RAP (REGLA 5)",
+            "raps_count match input (REGLA 7 · dynamic N)",
+            "anti-copia-fantasma · 0 cross-program leaks"
+        ],
+        "inputs_loaded": {
+            "master_prompt": {"pm_id": mp["pm_id"], "version": mp["version"], "size_bytes": mp["size_bytes"]},
+            "pm00_input_loaded": pm00_input is not None,
+            "legacy_input_loaded": legacy_input is not None,
+            "input_source": inputs_bundle["input_source_note"]
+        },
+        "bundle_size_chars": len(prompt)
+    }
+
+
+
 def preparar_bundle_phase4(pm_id, run_id, runs_dir, master_prompts_dir, repo_root, guide_id=None, strict_gate3=False):
     """Bundler Fase 4 (derivados estudiante: PM-3.3, PM-3.4, PM-3.6) · paralelo a preparar_bundle_phase3
     pero consume Phase 3 outputs (Playbook completo).

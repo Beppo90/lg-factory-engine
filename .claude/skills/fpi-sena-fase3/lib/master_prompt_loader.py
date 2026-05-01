@@ -21,6 +21,9 @@ from pathlib import Path
 
 # Registro canónico de versiones vigentes — actualizar cuando suba un master prompt
 VERSIONES_VIGENTES = {
+    # Fase 0 (NEW · paradigm shift PM-0.0 · 2026-05-01)
+    "PM-0.0": "1.0",     # Matriz Pedagógica Alineadora (NEW canon · pre-PM-0)
+    "PM-0": "3.0",       # CEFR Framework simplificado · 5 principios maestros · libertad LLM (v1.1 → v3.0)
     # Fase 2 (heredados de fpi-sena-fase2)
     "PM-2.0": "2.6",
     "PM-2.1": "3.0",
@@ -37,10 +40,10 @@ VERSIONES_VIGENTES = {
     "PM-3.1": "2.6",     # Playbook Outline — Session Map (last_verified 2026-04-20 v2.5.1 BUG-PM31-001 cierre · canonizado v2.6)
     "PM-3.2": "2.5",     # Playbook Build-Out — Step by Step
     "PM-3.3": "3.0",     # Visual Aid Generator student-facing tool-agnostic (v2.4 deck deprecated · 2026-04-30)
-    "PM-3.4": "4.0",     # Workbook — Autonomous Work
+    "PM-3.4": "4.1",     # Workbook — Autonomous Work (v2.7 anatomy parity con PM-3.6 · 2026-04-30)
     "PM-3.5": "2.6",     # Final Mission — Integrative Task (PRE-GENERATION CHECKLIST obligatorio v2.6)
-    "PM-3.6": "2.6.5",
-    "PM-3.7": "1.0",  # NEW v1.4 · GFPI-F-134 Matrix Aggregator (commit d6ac07b)   # GFPI-F-135 Integrator (esquema canon v2.6.5)
+    "PM-3.6": "2.7",  # Learner-Readable Activity Anatomía 6-bloque (REGLAS 21-27 · 2026-04-30)
+    "PM-3.7": "2.0",  # GFPI-F-134 Matrix Aggregator V04 oficial SENA · multi-RAP (2026-04-30)
     # Phase 4 mecánicos (también referenciables desde fpi-sena-fase3 · ubicación física fpi-sena-fase2)
     "PM-4.1": "2.6.5",   # actualizado 2026-04-29 post smoke-test (frontmatter real)
     "PM-4.2": "2.0"      # confirmado 2026-04-29 pre-flight focused Hito 2 Task 1
@@ -48,6 +51,9 @@ VERSIONES_VIGENTES = {
 
 # Mapping pm_id → glob path (los nombres de archivo no son uniformes)
 MASTER_PROMPT_PATHS = {
+    # Fase 0 (NEW · paradigm shift PM-0.0 · 2026-05-01)
+    "PM-0.0": "PM-0.0 — Matriz Pedagógica Alineadora.md",
+    "PM-0": "PM-0 — CEFR Framework & Pedagogical Foundation.md",
     # Fase 2
     "PM-2.0": "PM-2.0 — RAP Session Architect.md",
     "PM-2.1": "PM-2.1 — The Spark — Reflexión Inicial.md",
