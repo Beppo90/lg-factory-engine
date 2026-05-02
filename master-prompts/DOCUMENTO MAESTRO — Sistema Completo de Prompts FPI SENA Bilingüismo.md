@@ -1,9 +1,10 @@
 ---
 title: DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo
-version: 3.6
+version: 3.7
 last_updated: 2026-05-02
 status: PARADIGM SHIFT FUNDAMENTAL · NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1. Sergio Cortés decisión arquitectónica 2026-05-01: el sistema diseñaba "de adentro hacia afuera" en teoría (DM declaraba UbD desde v2.0) pero en práctica reconstruía la matriz GFPI-F-134 retroactivamente en PM-2.11 (al final de Fase 2) usando información agregada que el LLM había procesado sin saber a qué RAP pertenecía cada saber/criterio. v3.0 corrige: PM-0.0 (NEW) toma información curricular SOFÍA agregada (saberes_conceptos + saberes_proceso + criterios_evaluacion + N RAPs · sin pre-clasificar) y ALINEA explícitamente por RAP. Output `pm-0-0-matriz-alineada.json` se vuelve fundamento pedagógico de toda la cadena downstream. PM-0 simplifica de 1077 → ~270 lines operacionales (5 principios maestros · libertad LLM · schema mínimo viable). Cascade impact: PM-0 + PM-1.1 + PM-1.2 + PM-2.0 + PM-2.x + PM-2.11 + PM-3.7 ahora consumen matriz alineada como insumo. PM-3.7 V04 multi-RAP rows se llenan con contenido REAL por RAP (no solo título RAP en R18-R21). DOCX/JSON learner-readable v2.7 (30 Activity Cards anatomy 6-bloque) preservado · NO afectado.
 previous_versions:
+  - "3.6 (2026-05-02) — PM-2.0 v3.0 architect heredero cascade tripartita · cero invención · libertad LIMITADA · 3 schemas diferenciados por tipo_bloque sesión · 8 validation_checks · 3 master docs bumps (PM-2.0 v3.0 · PLAN-FASE-1 v1.5 · PLAN-FASE-2 v1.4 · DM v3.6)"
   - "3.5 (2026-05-02) — Cadena pedagógica canónica UbD invertida (Saber Concepto → Saber Proceso → Actividad → Evidencia → Criterio → Instrumento) · saber_proceso DICTA tipo de actividad PM-2.x · verbo cognitivo RAP DICTA dominio · re-cascade IMARPOR-V2 Opción A refinada (matriz v1.3 + pm-1-1 v2 + pm-1-2 v2 · 23/23 PASS)"
   - "3.4 (2026-05-01) — PM-1.2 v4.2 scope diferenciado por tipo_bloque (APERTURA motivacional+diagnóstico NO conocimiento nuevo · APROPIACIÓN vivero E1-E6 · TRANSFERENCIA capstone) · _produces_evidencia mapping · 3 master docs bumps (PM-1.2 v4.2 · PLAN-FASE-1 v1.4 · DM v3.4)"
   - "3.3 (2026-05-01) — PM-1.1 v2.8 estructura tripartita + tiempos canon universales (APERTURA=6h/1s · TRANSFERENCIA≤12h/≤2s · APROPIACIÓN=resto) · 3 master docs bumps (PM-1.1 v2.8 · PLAN-FASE-1 v1.3 · DM v3.3)"
@@ -2434,7 +2435,38 @@ PM-2.0 v3.0 funciona con cualquier programa que tenga cascade Phase 1 v3.x valid
 
 ---
 
+## EXTENSIÓN v3.7 — REPORTE APRENDIZAJE PARADIGM SHIFT v3.x INTEGRADO (2026-05-02)
+
+**Trigger del bump:** Sergio solicitó (2026-05-02 post-Step 1.5.PILOT) reporte de aprendizaje meta-arquitectónico que capture lecciones profundas · anti-patrones · patrones canónicos · conclusiones del paradigm shift v3.x completo. El reporte fue producido y aprobado · ahora se integra al sistema como meta-documento de referencia obligatoria.
+
+**Documento integrado:**
+
+📚 **`master-prompts/REPORTE-APRENDIZAJE-PARADIGMA-V3.md`** (canon meta-documento · v1.0)
+
+Contiene:
+- Línea temporal del paradigm shift completo (10 etapas · 2026-05-01 a 2026-05-02)
+- 10 lecciones núcleo cross-program (cadena UbD · verbo cognitivo dicta dominio · libertad LLM con niveles · audit cruzado obligatorio · re-cascade desde fuente · estructura tripartita universal · NO toda apropiación produce evidencia · schema canónico antes de bumps masivos · safety margin > canon estricto)
+- 10 anti-patrones canonizados (#11-#16 + NEW A/B/C/D)
+- 7 patrones canónicos emergentes (heredancia cascade · validación bloqueante · 3 schemas diferenciados · backup legacy + sufijo · audit cruzado Python · master prompt EXTENSIÓN al final · memory snapshot por bump)
+- Conclusiones meta-arquitectónicas (sistema cambió de "generador docs" a "materializador matriz canon")
+- Cómo usar el reporte (cuándo consultar · onboarding nuevos programas · onboarding nuevos agentes/instructores)
+
+**Memory snapshot apuntador:** `feedback_reporte_aprendizaje_paradigma_v3.md` (resumen ejecutivo + apuntador al doc completo)
+
+**Cuándo CONSULTAR el reporte:**
+- Antes de bumpear cualquier master prompt (entender qué decisiones canónicas hay y POR QUÉ)
+- Antes de arrancar nuevo programa (Diesel · Agro · Tecnología · etc. · entender qué es heredado v3.x · qué es decisión per programa)
+- Cuando se detecte drift cross-PM (anti-patrones documentados con triggers internos orchestrator)
+- Cuando un nuevo agente/instructor entra al sistema (onboarding meta-arquitectónico OBLIGATORIO)
+
+**Disciplina canon Sergio (los 3 mantras del sistema):**
+> "Esa es la trazabilidad de cada cosa · A eso es a lo que quiero llegar."
+> "Nada por fuera de la matriz."
+> "Verbo cognitivo del RAP dicta dominio de saberes."
+
+---
+
 *DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo*
-*Fábrica Curricular v3.6 — PM-2.0 v3.0 ARCHITECT HEREDERO CASCADE TRIPARTITA · cero invención · secuenciador temporal · libertad LIMITADA del LLM · 3 schemas diferenciados por tipo_bloque sesión · heredancia automática `_anclaje_matriz_heredado` + `_produces_evidencia` + `_consumed_by_pm` · 8 validation_checks BLOQUEANTES (6 v2.6 preservados + 2 NEW) · catálogo 52 arquetipos v2.6 PRESERVADO · canon Sergio Cortés 2026-05-02*
-*Versiones legacy preserved: v3.5 Cadena pedagógica UbD + v3.4 PM-1.2 Scope Diferenciado + v3.3 PM-1.1 Tripartita + v3.2 Criterios canon + Traceability + v3.1 Anti-patrón #16 + v3.0 PARADIGM SHIFT NEW PM-0.0 + v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
+*Fábrica Curricular v3.7 — REPORTE APRENDIZAJE PARADIGM SHIFT v3.x INTEGRADO · meta-documento canon · 10 lecciones núcleo + 10 anti-patrones + 7 patrones canónicos emergentes · referencia obligatoria onboarding cross-program · canon Sergio Cortés + Claude orchestrator 2026-05-02*
+*Versiones legacy preserved: v3.6 PM-2.0 v3.0 architect heredero + v3.5 Cadena pedagógica UbD + v3.4 PM-1.2 Scope Diferenciado + v3.3 PM-1.1 Tripartita + v3.2 Criterios canon + Traceability + v3.1 Anti-patrón #16 + v3.0 PARADIGM SHIFT NEW PM-0.0 + v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
 *Instructor Sergio · Abril–Mayo 2026*
