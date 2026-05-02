@@ -1,0 +1,477 @@
+{
+  "pm_id": "PM-2.5",
+  "pm_name": "Vocabulary, Literacy & Scenario Setup",
+  "pm_version": "3.0",
+  "run_id": "IMARPOR-CC-2026-04-30-V2",
+  "generated_date": "2026-05-02",
+  "instructor": "Sergio Cortés Perdomo",
+
+  "_pm20_ref": "pm-2-0.json (v3.0 · S2/S5/S7/S9 APROPIACION targets · 4 actividades_planeadas PM-2.5 vocabulary scaffold · 2.5h+1.5h+1.5h+1h)",
+  "_pm12_ref": "pm-1-2.json (v4.2 v2 · sub_bloques_tripartitos[1-4].key_vocabulary_per_rap · 4 sets de 20 vocab heredados literal · RA1 reefer parts/crew · RA2 SMCP/NATO Phonetic · RA3 commands/imperatives/modals · RA4 places/operations/quantifiers)",
+  "_pm00_matriz_ref": "pm-0-0-matriz-alineada.json (v1.3 · 4 RAPs RA1-RA4 · saberes conceptos UNIT 1-5)",
+  "_pm0_context_ref": "pm-0-context.json (v3.2 · universo banana cold chain · Puerto Antioquia · cast Manuel/Carolina/Mariana/Yurlenis/Andrés/Pipa/Hernando/Captain Lim Wei-Ming)",
+
+  "scaffold_canon_global": {
+    "naturaleza": "vocabulary_scaffold_multi_sesion",
+    "produces_evidencia_formal": false,
+    "contribuye_a": "E6 cuestionario consolidado S6 · sección Vocabulary 5 ítems · Vocabulary skill 5 puntos",
+    "regla_evidencias_aplica": "FALSE en TODAS las 4 cards (canon REGLA NEW v3.0 PM-2.5 · scaffold cognitivo NO produce E1-E5)",
+    "render_evidencias_guia_aprendiz": "Evidencias de aprendizaje: No aplica · Instrumentos de evaluación: No aplica"
+  },
+
+  "arquetipo_seleccionado_por_actividad": [
+    {
+      "numero_actividad": 5,
+      "session": "S2",
+      "rap_target": "RA1",
+      "arquetipo": "B Vocabulary Development (Word Wall Active + Semantic Mapping por categoría funcional)",
+      "rationale": "Los 20 vocab heredados de pm-1-2.B1.key_vocabulary_per_rap se agrupan naturalmente en 5 categorías funcionales (PARTS OF THE SHIPS · TYPES OF MERCHANT VESSELS · NAVIGATIONAL/SAFETY EQUIPMENT · PROFESSIONS IN PORT AND ABOARD · UNIT 1 SHIP OVERVIEW). Arquetipo B Semantic Mapping es el match canon del agrupamiento por categoría funcional (NO alfabético) que prescribe el Toolbelt §EL TOOLBELT CONSOLIDADO. Word Wall Active se mantiene como vehículo vivo que se expande durante todas las sesiones del Conjunto A. Pronunciación aproximada para hispanohablantes vía Forvo se incluye como técnica complementaria phonics light (sin migrar al arquetipo A completo que se reservaría para sub-bloques con problemas fonémicos críticos · este RA1 es nivel A1.2 introductorio). Tiempo 2.5h permite mapa semántico colaborativo + práctica matching + pronunciación + cierre con pre-exposición receptiva al Story A MV CARIBBEAN STAR que leerán autónomos pre-S3."
+    },
+    {
+      "numero_actividad": 14,
+      "session": "S5",
+      "rap_target": "RA2",
+      "arquetipo": "B Vocabulary Development (Word Wall SMCP categorizado) + A Phonics light (NATO Phonetic articulación) — combinación canon SMCP",
+      "rationale": "Los 20 vocab SMCP heredados de pm-1-2.B2.key_vocabulary_per_rap son zona accuracy-cero-tolerancia (canon §B2 _nota: 'un Wilco mal usado bloquea banana shipment'). Arquetipo B Word Wall categorizado por las 4 categorías SMCP (8 message markers · 5 standard responses · NATO Phonetic spelling · channels/protocols) preserva la estructura mandatoria IMO. Se combina con A Phonics light específicamente para articulación NATO Phonetic Alphabet con Mirror Talking de Sound Sorting de los standard responses críticos (Roger/Wilco/Affirmative/Negative/Standby) porque la pronunciación precisa es operacionalmente crítica en VHF. Tiempo 1.5h compacto · vocab + grammar SMCP en S5 ya consume 2.5h previas · esta franja se concentra en Word Wall + jigsaw de NATO Phonetic spelling por trío. Pre-exposición a Story B audio VHF que ejecutarán inmediatamente después como E3 Listening (3h)."
+    },
+    {
+      "numero_actividad": 19,
+      "session": "S7",
+      "rap_target": "RA3",
+      "arquetipo": "B Vocabulary Development (Word Wall categorías + Semantic Gradients modals) + E Interactive Literacy (jigsaw command-addressee matching)",
+      "rationale": "Los 20 vocab RA3 heredados de pm-1-2.B3.key_vocabulary_per_rap se agrupan en 4 categorías canon (COMMANDS por destinatario · IMPERATIVE safety · MODAL VERBS gradient · PRESENT SIMPLE Wh-questions). Arquetipo B Semantic Gradients es el match canon de los modal verbs (must → should → could → can como espectro de obligación → sugerencia → posibilidad cortés → permiso) que la matriz canon SOFÍA exige. Se combina con E Jigsaw para el matching command-addressee (Helmsman+steady · Bosun+make fast · Crane operator+hoist · Crew+wear PPE) porque la asignación correcta destinatario-comando es operacionalmente crítica para el E4-final berthing tripartito de S8. Tiempo 1.5h consume vocab puro · vocab + grammar items + listening + reading scaffold ya saturan S7 con 6h (canon densidad cognitiva alta documentada en _rationale_secuenciacion_temporal pm-2-0.S7)."
+    },
+    {
+      "numero_actividad": 24,
+      "session": "S9",
+      "rap_target": "RA4",
+      "arquetipo": "B Vocabulary Development (Word Wall categorías descriptivas + Quizlet pareo) — Toolbelt consolidado pre-Misión",
+      "rationale": "Los 20 vocab RA4 heredados de pm-1-2.B4.key_vocabulary_per_rap son la última infusión léxica antes de S10 rehearsal pre-Misión y S11-S12 capstone. Arquetipo B Word Wall categorizado por las 5 categorías descriptivas canon (PLACES IN PORT · WEATHER CONDITIONS · CONTAINERIZATION+PACKING · MANEUVERING · QUANTIFIERS+prepositionales) cierra el Toolbelt cuádruple cross-RAP. Quizlet pareo término-definición se incorpora como técnica de consolidación rápida porque el tiempo es estricto 1h (S9 ya consume 5h con grammar + listening + E5 Role Carousel 3.5h). Se descarta C Reading Fluency y D Writing Scaffolding porque RA4 es zona oral-funcional descriptiva no fluencia lectora. La pronunciación de quantifiers numéricos (forty-seven · twenty-seven tonnes · two nautical miles) recibe atención dedicada porque el handover dialog del E5 los exige. Bridge explícito al Toolbelt 80 términos consolidado para cuestionario E6 S6 retrospectivo y rúbrica capstone."
+    }
+  ],
+
+  "activity_cards": [
+    {
+      "pm_id": "PM-2.5",
+      "pm_name": "Vocabulary, Literacy & Scenario Setup",
+      "session": "S2",
+      "tipo_bloque": "APROPIACION",
+      "bloque_id_referencia": "B1",
+      "rap_target": "RA1",
+      "numero_actividad": 5,
+
+      "dimension": "cognitiva",
+      "enunciado": "Mapear 20 términos canon RA1 sobre partes del barco, tipos de vessels, equipamiento y profesiones portuarias mediante Word Wall Active y mapa semántico colaborativo.",
+      "descripcion": "Mapear los 20 términos canon RA1 sobre partes del barco (hull · bow · stern · bridge · cargo hold), tipos de vessels (reefer ship · container ship · bulker), equipamiento navegacional y de seguridad (reefer plug · genset · alarm · sensor) y profesiones del Eje Bananero (stevedore · tally clerk · refrigeration technician · pilot · bosun · cold chain coordinator · safety manager) en un Word Wall Active vivo y un mapa semántico colaborativo organizado por categoría funcional. Esta actividad NO produce evidencia formal; instala la base lexical receptiva con la que el aprendiz entrará al Story A 'MV CARIBBEAN STAR Arrives at Puerto Antioquia · Meet the Reefer Crew' que leerá autónomo pre-S3.\n\nEl instructor Sergio orientará sobre las cinco categorías funcionales canon que organizan el vocabulario de un buque reefer bananero (no por orden alfabético sino por familia operacional). Junto a Yurlenis (tally clerk co-instructora del cast), proyecta la silueta del MV CARIBBEAN STAR seccionada por colores (proa azul · centro verde · popa naranja · bridge rojo · cargo holds amarillos) y nombra cada término con pronunciación aproximada para hispanohablantes anclada en Forvo cuando el fonema sea problemático.\n\nSe conformarán equipos de 4 aprendices alrededor de pliegos de papel kraft tamaño A1. Cada equipo recibe un sobre con las 20 fichas-término en inglés, las 20 fichas-definición en inglés controlado A1.2, las 20 fichas-ejemplo contextualizado banana cold chain (heredados literal de pm-1-2.B1.key_vocabulary_per_rap) y un set de iconos visuales operacionales del Puerto Antioquia 2025. La consigna canon es construir el mapa semántico agrupando las fichas en las cinco categorías funcionales (Parts of the ship · Types of merchant vessels · Navigational and safety equipment · Professions in port and aboard · Ship overview general) y verificando cada agrupamiento con el ejemplo contextualizado anclado en el cast operacional conocido (Manuel junior reefer operator · Carolina port pilot · Andrés bosun · Pipa refrigeration technician · Mariana cold chain coordinator · Hernando safety manager).\n\nDurante 75 minutos los equipos rotan por tres estaciones de práctica activa: estación matching ficha-término-imagen del banco fotográfico Puerto Antioquia, estación pronunciación con Forvo audio nativo y mirror talking en pares (énfasis fonema problemático /ʃ/ en ship · /ʌ/ en hull · diptongo /eɪ/ en stevedore · stress en re-fri-ge-RA-tion technician), y estación producción mínima de oraciones con verb to be y demostrativos (canon: 'This is the bridge' · 'These are reefer plugs' · 'Mariana is the cold chain coordinator') que conecta directo con el grammar scaffold de la siguiente franja. Yurlenis circula validando que cada equipo nombre al menos un personaje del cast por categoría profesión y verifica que los bay counts plurales (forty-seven clusters · six cargo holds) se pronuncien con stress en la cifra.\n\nLa actividad finaliza con la socialización de cada Word Wall por equipo en plenaria de 25 minutos. Cada equipo presenta una categoría escogida por sorteo y el resto del grupo añade términos faltantes o correcciones de agrupamiento. Sergio cierra anclando explícitamente que estos 20 términos contribuyen a la sección Vocabulary del Cuestionario Consolidado E6 que se aplicará en S6 (5 ítems · 5 puntos · skill Vocabulary), y anuncia el bridge a S3 donde el Word Wall instalado opera como soporte receptivo durante el Reading anchor Story A. Yurlenis recoge los pliegos para mantenerlos visibles en el aula durante las próximas tres sesiones del Conjunto A.",
+
+      "ambiente": "Aula con proyector + parlantes + mesas reorganizables en equipos de 4 + pared dedicada para Word Wall Active visible durante Conjunto A completo",
+      "estrategias_didacticas_activas": [
+        "Aprendizaje colaborativo",
+        "Content-Based Learning"
+      ],
+      "tecnicas_didacticas": [
+        "Mapas conceptuales",
+        "Jigsaw"
+      ],
+      "materiales_formacion": [
+        "Proyector + parlantes con audio nítido",
+        "Pliegos de papel kraft tamaño A1 (1 por equipo de 4)",
+        "Sobres con 20 fichas-término + 20 fichas-definición + 20 fichas-ejemplo + 20 iconos visuales (1 set por equipo)",
+        "Marcadores de colores",
+        "Cinta adhesiva para Word Wall pared",
+        "Espejos de mano para mirror talking pronunciación (1 por aprendiz)"
+      ],
+      "material_apoyo": [
+        {
+          "descripcion": "Banco fotográfico operacional Puerto Antioquia 2025 (silueta MV CARIBBEAN STAR seccionada + 20 imágenes una por término · heredado de pm-1-2.B1.key_vocabulary_per_rap)",
+          "link": "internal://senafpi/imarpor-cc-v2/banco-fotografico-puerto-antioquia"
+        },
+        {
+          "descripcion": "Forvo audio nativo pronunciación 20 términos canon RA1 (referencia phonics para hispanohablantes)",
+          "link": "https://forvo.com/"
+        },
+        {
+          "descripcion": "Quizlet set 20 términos RA1 banana cold chain · matching y flashcards modo pre-exposición receptiva",
+          "link": null
+        }
+      ],
+
+      "evidencias": {
+        "aplica": false,
+        "tipo": null,
+        "nombre": null,
+        "tecnica_evaluacion": null,
+        "instrumento_numero": null,
+        "instrumento_tipo": null,
+        "codigo_canon": null,
+        "criterio_canon_evaluado": null
+      },
+
+      "duracion_horas": 2.5,
+
+      "_anclaje_matriz_heredado": {
+        "rap_target": "RA1",
+        "saberes_que_demanda": [
+          "UNIT 1: SHIP OVERVIEW",
+          "PARTS OF THE SHIPS",
+          "TYPES OF MERCHANT VESSELS",
+          "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT OF THE SHIP",
+          "UNIT 2: THE CREW",
+          "PROFESSIONS IN PORT AND ABOARD"
+        ],
+        "criterios_canon_que_evalua": [],
+        "saberes_proceso_movilizados": [
+          "IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS GENERADA EN EL INTERCAMBIO ORAL Y/O ESCRITO",
+          "RECONOCER LOS DISTINTOS OFICIOS ENMARCADOS EN LOS CAMPOS MARÍTIMO Y PORTUARIO"
+        ]
+      },
+      "_produces_evidencia": null,
+      "_consumed_by_pm": "PM-2.5",
+      "_ref_pm12_path": "sub_bloques_tripartitos[1].key_vocabulary_per_rap",
+      "_ref_pm20_session": "S2",
+      "_contribuye_a_E6_cuestionario_consolidado": {
+        "evidencia_consolidada": "E6",
+        "skill": "Vocabulary",
+        "puntos": 5,
+        "items_estimados": 5,
+        "aplicacion_fisica": "S6 (B2)"
+      },
+      "_vocab_heredado_count": 20
+    },
+
+    {
+      "pm_id": "PM-2.5",
+      "pm_name": "Vocabulary, Literacy & Scenario Setup",
+      "session": "S5",
+      "tipo_bloque": "APROPIACION",
+      "bloque_id_referencia": "B2",
+      "rap_target": "RA2",
+      "numero_actividad": 14,
+
+      "dimension": "cognitiva",
+      "enunciado": "Instalar 20 términos canon SMCP RA2 sobre message markers, standard responses y NATO Phonetic mediante Word Wall categorizado y articulación phonics light cero-tolerancia.",
+      "descripcion": "Instalar los 20 términos canon SMCP RA2 sobre message markers (Question · Answer · Request · Information · Warning · Advice · Instruction · Intention), standard responses críticos (Roger · Wilco · Affirmative · Negative · Standby), NATO Phonetic Alphabet con Spell that y Say again, y protocolo VHF channels sixteen/twelve con call sign en un Word Wall Active categorizado y un módulo de articulación phonics light de cero tolerancia. Esta actividad NO produce evidencia formal; instala la base lexical SMCP receptiva inmediata previa al E3 Listening con audio VHF auténtico Captain Lim Wei-Ming que se ejecuta en la siguiente franja de la misma sesión.\n\nEl instructor Sergio orientará a los aprendices junto a Captain Lim Wei-Ming (bridge officer co-instructor virtual vía proyección · lingua franca B1+ Singapore) sobre la naturaleza mandatoria del SMCP IMO y la zona operacional de cero tolerancia donde un Wilco mal usado puede bloquear una banana shipment. Proyecta la tabla canon IMO de los ocho message markers + cinco standard responses + NATO Phonetic Alphabet completa Alpha-Zulu, y nombra cada uno con la entonación SMCP estandarizada (descendente final · marker antes de la oración mínima · sin sinónimos permitidos).\n\nSe conformarán equipos de 4 aprendices distribuidos por la mesa de operaciones VHF simulada del aula. Cada equipo recibe un radio VHF de juguete o handheld didáctico, una tarjeta plastificada con la tabla NATO Phonetic Alphabet y los standard responses del cast operacional, y un set de 20 fichas-término heredadas literal de pm-1-2.B2.key_vocabulary_per_rap agrupadas por las cuatro categorías canon (8 message markers · 5 standard responses · 4 NATO Phonetic items · 3 channel/protocol items). La consigna canon es construir el Word Wall Active SMCP categorizado en la pared dedicada del aula y verificar que cada agrupamiento mantenga la estructura mandatoria IMO sin migración a sinónimos del inglés general.\n\nDurante 50 minutos los equipos rotan por dos estaciones de práctica intensiva: estación articulación NATO Phonetic con mirror talking y Forvo audio nativo (foco fonema diferencial Charlie /tʃɑrli/ vs Sierra /sɪɛrə/ vs Tango /tæŋgoʊ/ · stress canon en cada letra deletreada) deletreando la call sign del MV CARIBBEAN STAR (Charlie Sierra Tango Alpha Romeo) hasta que los cinco miembros del equipo lo logren sin error fonético, y estación jigsaw matching message marker + standard response donde cada equipo recibe trozos del audio VHF de Captain Lim del Story B y debe identificar qué marker introduce cada mensaje y qué response correspondería. Captain Lim Wei-Ming circula proyectado validando que la pronunciación de Wilco no migre a 'will-co' anglosajón general (canon SMCP es Wil-co stress primera sílaba) y que Standby se mantenga como una palabra única sin pausa media.\n\nLa actividad finaliza con un drill colectivo de 10 minutos donde Sergio dispara aleatoriamente un message marker por proyector y los equipos responden en cadena con la oración mínima SMCP plus standard response correcto sin demora. Cierra anclando que estos 20 términos contribuyen a la sección Vocabulary del Cuestionario Consolidado E6 S6 (5 ítems · 5 puntos · skill Vocabulary) y anuncia el bridge inmediato al E3 Listening que ejecutarán en la siguiente franja de la misma sesión sobre el audio VHF auténtico Captain Lim Wei-Ming + Pilot Carolina + Bosun Andrés. El Word Wall SMCP queda visible en la pared dedicada hasta el cierre del programa.",
+
+      "ambiente": "Aula con proyector + sistema de audio nítido + radios VHF de juguete o handheld didácticos + mesa de operaciones VHF simulada + pared dedicada Word Wall SMCP visible hasta cierre programa",
+      "estrategias_didacticas_activas": [
+        "Aprendizaje colaborativo",
+        "Simulación"
+      ],
+      "tecnicas_didacticas": [
+        "Jigsaw",
+        "Práctica de campo"
+      ],
+      "materiales_formacion": [
+        "Proyector + parlantes con audio nítido",
+        "Radios VHF de juguete o handheld didácticos (1 por equipo de 4)",
+        "Tarjetas plastificadas NATO Phonetic Alphabet + standard responses (1 por aprendiz)",
+        "Sobres con 20 fichas-término SMCP categorizadas por 4 grupos canon (1 set por equipo)",
+        "Espejos de mano para mirror talking pronunciación SMCP (1 por aprendiz)",
+        "Cinta adhesiva para Word Wall SMCP pared dedicada"
+      ],
+      "material_apoyo": [
+        {
+          "descripcion": "Tabla canon IMO Standard Marine Communication Phrases 2002 · 8 message markers + 5 standard responses + NATO Phonetic Alphabet completa (heredado de pm-1-2.B2.key_vocabulary_per_rap)",
+          "link": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
+        },
+        {
+          "descripcion": "Forvo audio nativo pronunciación NATO Phonetic Alphabet completa (Alpha-Zulu) y standard responses críticos (Roger · Wilco · Affirmative · Negative · Standby)",
+          "link": "https://forvo.com/"
+        },
+        {
+          "descripcion": "Quizlet set 20 términos SMCP RA2 · matching message marker-categoría · flashcards spell-out NATO Phonetic",
+          "link": null
+        }
+      ],
+
+      "evidencias": {
+        "aplica": false,
+        "tipo": null,
+        "nombre": null,
+        "tecnica_evaluacion": null,
+        "instrumento_numero": null,
+        "instrumento_tipo": null,
+        "codigo_canon": null,
+        "criterio_canon_evaluado": null
+      },
+
+      "duracion_horas": 1.5,
+
+      "_anclaje_matriz_heredado": {
+        "rap_target": "RA2",
+        "saberes_que_demanda": [
+          "UNIT 5: INTRODUCING IMO STANDARD MARINE COMMUNICATION PHRASES (SMCP)",
+          "STANDARD SPELLING",
+          "MESSAGE MARKERS",
+          "STANDARD RESPONSES AND ORGANIZATIONAL PHRASES"
+        ],
+        "criterios_canon_que_evalua": [],
+        "saberes_proceso_movilizados": [
+          "RECONOCER LA MANERA DE DELETREAR LOS VOCABLOS EN INGLÉS",
+          "IDENTIFICAR VOCABULARIO COMÚN EN INGLÉS, EN LAS FRASES ESTANDARIZADAS DE LA OMI PARA LA COMUNICACIÓN MARÍTIMA"
+        ]
+      },
+      "_produces_evidencia": null,
+      "_consumed_by_pm": "PM-2.5",
+      "_ref_pm12_path": "sub_bloques_tripartitos[2].key_vocabulary_per_rap",
+      "_ref_pm20_session": "S5",
+      "_contribuye_a_E6_cuestionario_consolidado": {
+        "evidencia_consolidada": "E6",
+        "skill": "Vocabulary",
+        "puntos": 5,
+        "items_estimados": 5,
+        "aplicacion_fisica": "S6 (B2)"
+      },
+      "_vocab_heredado_count": 20
+    },
+
+    {
+      "pm_id": "PM-2.5",
+      "pm_name": "Vocabulary, Literacy & Scenario Setup",
+      "session": "S7",
+      "tipo_bloque": "APROPIACION",
+      "bloque_id_referencia": "B3",
+      "rap_target": "RA3",
+      "numero_actividad": 19,
+
+      "dimension": "cognitiva",
+      "enunciado": "Consolidar 20 términos canon RA3 sobre commands a destinatarios, imperativos de seguridad y modal verbs mediante Word Wall, semantic gradients y jigsaw command-addressee.",
+      "descripcion": "Consolidar los 20 términos canon RA3 sobre commands a destinatarios (helmsman · steady · port ten · port five · make fast · bow line · hoist · starboard), imperativos de seguridad operacional reefer (plug in · stand clear · do not break · wear PPE · temperature log), modal verbs en gradiente (must · should · can · could) y patrones present simple Wh-question (How does X work? · When do you...?) más vocabulario de coordinación (ship power · phytosanitary inspection) en un Word Wall Active categorizado y una estación de jigsaw command-addressee matching. Esta actividad NO produce evidencia formal; consolida la base lexical previa al E4-final Speaking Berthing Tripartito de S8.\n\nEl instructor Sergio orientará a los aprendices junto a Pipa (refrigeration technician · co-instructora) y Andrés (bosun co-instructor) sobre las cuatro categorías canon que organizan el vocabulario de berthing y safety reefer (no por orden de aparición sino por familia funcional). Proyecta el diagrama del MV CARIBBEAN STAR aproximándose a berth tres con etiquetas de los siete destinatarios canon (Officers · Sailors · Helmsman · Captains · Engineers · Steward · Crane Operators) y nombra cada comando emparejado a su destinatario natural con la entonación imperativa estandarizada SMCP plus operacional bananera.\n\nSe conformarán equipos de 4 aprendices alrededor de tableros impresos con la silueta del berthing tripartito (puente · cubierta · muelle · grúa pórtico · genset · reefer yard). Cada equipo recibe un sobre con las 20 fichas-término heredadas literal de pm-1-2.B3.key_vocabulary_per_rap agrupadas en las cuatro categorías canon (Commands a destinatarios · Imperative safety · Modal verbs gradient · Present simple Wh-questions plus coordinación), un set de fichas-destinatario (Helmsman · Bosun · Crane operator · Crew) y un termómetro visual con cuatro intensidades para los modales (must = obligación · should = recomendación · can = permiso/posibilidad · could = sugerencia cortés). La consigna es construir el Word Wall categorizado y verificar que cada modal ocupe su intensidad correcta en el gradiente.\n\nDurante 50 minutos los equipos rotan por dos estaciones: jigsaw command-addressee matching donde emparejan físicamente cada comando con su destinatario operacional (Helmsman+steady · Helmsman+port ten · Bosun+make fast on bow line · Crane operator+hoist container · Crew+wear PPE · Crew+stand clear · Crew+plug in the reefer · Crew+do not break the cold chain) verificando con Pipa que la asignación destinatario-verbo sea operacionalmente correcta (un comando a Helmsman dirigido a Bosun rompería la cadena de mando), y semantic gradient de modal verbs donde colocan los cuatro modales en el termómetro y producen una oración por modal anclada al contexto reefer (You must wear PPE in the reefer yard · You should check the setpoint every hour · You can request a phytosanitary inspection · We could re-plug starboard if the genset fails). Andrés valida cadena de mando · Pipa valida lógica operacional.\n\nLa actividad finaliza con socialización plenaria de 10 minutos donde cada equipo presenta su jigsaw y su gradiente. Sergio cierra anclando que estos 20 términos contribuyen a la sección Vocabulary del Cuestionario Consolidado E6 retrospectivo S6 (5 ítems · 5 puntos · skill Vocabulary) y anuncia el bridge a las franjas restantes de S7 (grammar items + listening Story B Berthing Tripartito + reading Story A scaffold) y al E4-final Speaking Berthing Tripartito Simultáneo de S8 con cinco actores integrados.",
+
+      "ambiente": "Aula con proyector + tableros impresos silueta berthing tripartito + mesas reorganizables en equipos de 4 + pared dedicada Word Wall RA3 visible Conjunto B + zona simulada de cubierta",
+      "estrategias_didacticas_activas": [
+        "Aprendizaje colaborativo",
+        "Simulación"
+      ],
+      "tecnicas_didacticas": [
+        "Jigsaw",
+        "Mapas conceptuales"
+      ],
+      "materiales_formacion": [
+        "Proyector + parlantes con audio nítido",
+        "Tableros impresos silueta berthing tripartito MV CARIBBEAN STAR (1 por equipo de 4)",
+        "Sobres con 20 fichas-término RA3 categorizadas en 4 grupos canon (1 set por equipo)",
+        "Sets de fichas-destinatario (Helmsman · Bosun · Crane operator · Crew) (1 set por equipo)",
+        "Termómetros visuales modal verbs gradient (1 por equipo)",
+        "Marcadores de colores y cinta adhesiva Word Wall pared"
+      ],
+      "material_apoyo": [
+        {
+          "descripcion": "Diagrama operacional MV CARIBBEAN STAR berthing aproximación a berth tres con etiquetas siete destinatarios canon (Officers · Sailors · Helmsman · Captains · Engineers · Steward · Crane Operators) heredado de pm-1-2.B3.key_vocabulary_per_rap",
+          "link": "internal://senafpi/imarpor-cc-v2/diagrama-berthing-destinatarios-canon"
+        },
+        {
+          "descripcion": "Manual operacional bananero reefer Star Reefers + protocolo PPE Puerto Antioquia 2025 (referencia instructor para imperatives safety)",
+          "link": null
+        },
+        {
+          "descripcion": "Quizlet set 20 términos RA3 commands and modals · matching command-addressee · flashcards modal gradient",
+          "link": null
+        }
+      ],
+
+      "evidencias": {
+        "aplica": false,
+        "tipo": null,
+        "nombre": null,
+        "tecnica_evaluacion": null,
+        "instrumento_numero": null,
+        "instrumento_tipo": null,
+        "codigo_canon": null,
+        "criterio_canon_evaluado": null
+      },
+
+      "duracion_horas": 1.5,
+
+      "_anclaje_matriz_heredado": {
+        "rap_target": "RA3",
+        "saberes_que_demanda": [
+          "COMMANDS (TO: OFFICERS, SAILORS, HELMSMAN, CAPTAINS, ENGINEERS, STEWARD, CRANE OPERATORS)",
+          "IMPERATIVE",
+          "MODAL VERBS: CAN, COULD, SHOULD, MUST FOR REQUEST, PROHIBITION, POSSIBILITY, PERMISSION",
+          "REVIEW OF PRESENT SIMPLE TENSE"
+        ],
+        "criterios_canon_que_evalua": [],
+        "saberes_proceso_movilizados": [
+          "EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO",
+          "EXPRESAR PROHIBICIÓN, PERMISIÓN, POSIBILIDAD O HACER PEDIDOS EN INGLÉS, EN CUANTO A PROCESOS ENMARCADOS EN EL DESEMPEÑO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS"
+        ]
+      },
+      "_produces_evidencia": null,
+      "_consumed_by_pm": "PM-2.5",
+      "_ref_pm12_path": "sub_bloques_tripartitos[3].key_vocabulary_per_rap",
+      "_ref_pm20_session": "S7",
+      "_contribuye_a_E6_cuestionario_consolidado": {
+        "evidencia_consolidada": "E6",
+        "skill": "Vocabulary",
+        "puntos": 5,
+        "items_estimados": 5,
+        "aplicacion_fisica": "S6 (B2) · retrospectivo desde S7+"
+      },
+      "_vocab_heredado_count": 20
+    },
+
+    {
+      "pm_id": "PM-2.5",
+      "pm_name": "Vocabulary, Literacy & Scenario Setup",
+      "session": "S9",
+      "tipo_bloque": "APROPIACION",
+      "bloque_id_referencia": "B4",
+      "rap_target": "RA4",
+      "numero_actividad": 24,
+
+      "dimension": "cognitiva",
+      "enunciado": "Cerrar Toolbelt cuádruple con 20 términos canon RA4 sobre lugares en puerto, condiciones meteo, contenedorización y maniobras mediante Word Wall categorizado y Quizlet pareo.",
+      "descripcion": "Cerrar el Toolbelt cuádruple cross-RAP con los 20 términos canon RA4 sobre lugares en el puerto (deep-water terminal · reefer yard · pre-cooling chamber · pier · berth three), condiciones meteo (weather mild · humidity · wind calm), contenedorización y empaque (containerization · packing · plastic film · GlobalGAP seal), maniobras de muelle (mooring · docking maneuver · departure procedure), quantifiers (forty-seven clusters · several pallets · many containers · 27 tonnes per reefer) y prepositional phrases de distancia (two nautical miles) en un Word Wall Active categorizado y un módulo Quizlet pareo término-definición. Esta actividad NO produce evidencia formal; cierra la última infusión léxica antes del E5 Role Carousel y del rehearsal pre-Misión de S10.\n\nEl instructor Sergio orientará junto a Mariana (cold chain coordinator co-instructora) y Carolina (port pilot co-instructora) sobre las cinco categorías descriptivas canon que organizan el vocabulario funcional del handover dialog y del Role Carousel cinco estaciones. Proyecta el mapa satelital de Puerto Antioquia con etiquetas de lugares clave (deep-water terminal · reefer yard entre pier y pre-cooling chamber · berth tres a quinientos metros del bridge) y nombra cada término con la entonación descriptiva canon más el quantifier en stress fuerte (canon Sergio: 'There are FOR-ty-SE-ven CLUS-ters in bay 14').\n\nSe conformarán equipos de 4 aprendices alrededor de mesas con tablets para acceso simultáneo al Quizlet del Toolbelt cuádruple consolidado (80 términos · cuatro RAPs). Cada equipo recibe un sobre con las 20 fichas-término heredadas literal de pm-1-2.B4.key_vocabulary_per_rap agrupadas por las cinco categorías descriptivas canon (Places in port · Weather conditions · Containerization and packing · Maneuvering · Quantifiers plus prepositional phrases of distance), un mapa satelital impreso A3 y una hoja de handover dialog template con huecos para tag questions y present progressive. La consigna es construir el Word Wall final RA4 y verificar que el Toolbelt cuádruple quede visible para rehearsal pre-Misión.\n\nDurante 35 minutos los equipos rotan por dos estaciones: Quizlet pareo término-definición sobre los 20 términos RA4 con cronómetro (canon target dos minutos por categoría · 10 minutos máximo) seguido de Quizlet matching cross-RAP sobre los 80 términos del Toolbelt cuádruple para verificar que las cuatro infusiones léxicas previas operen como sistema integrado, y estación pronunciación dedicada de quantifiers numéricos y prepositional phrases (forty-seven · twenty-seven tonnes · two nautical miles · seventy-five percent humidity · thirteen point three degrees) con énfasis en stress de cifra y fluidez de la oración descriptiva que el handover dialog y el E5 exigen. Mariana valida que cada categoría se asocie a una estación del Role Carousel (lugares → describing roles · weather → weather impact · containerization → cargo states · maneuvering → chain of command · quantifiers → cualquier handover) · Carolina valida pronunciación de quantifiers operacionales.\n\nLa actividad finaliza con drill colectivo de 10 minutos donde cada equipo describe en cadena un lugar del Puerto Antioquia usando una oración con tag question (The reefer yard is between the pier and the pre-cooling chamber, isn't it?) plus present progressive (The clusters are being packed in plastic film) plus quantifier (There are forty-seven clusters in bay 14). Sergio cierra anclando que estos 20 términos finales contribuyen a la sección Vocabulary del Cuestionario Consolidado E6 retrospectivo S6 (5 ítems · 5 puntos · skill Vocabulary) y consolidan el Toolbelt cuádruple para la rúbrica capstone E-Misión. Anuncia el bridge al E5 Role Carousel cinco estaciones y al rehearsal pre-Misión de S10.",
+
+      "ambiente": "Aula con proyector + parlantes + tablets o laptops para Quizlet acceso simultáneo + mesas reorganizables en equipos de 4 + pared dedicada Word Wall final cuádruple cross-RAP visible hasta capstone",
+      "estrategias_didacticas_activas": [
+        "Aprendizaje colaborativo",
+        "Trabajo colaborativo"
+      ],
+      "tecnicas_didacticas": [
+        "Mapas conceptuales",
+        "Práctica de campo"
+      ],
+      "materiales_formacion": [
+        "Proyector + parlantes con audio nítido",
+        "Tablets o laptops con Quizlet acceso simultáneo (1 por equipo de 4)",
+        "Sobres con 20 fichas-término RA4 categorizadas en 5 grupos canon (1 set por equipo)",
+        "Mapa satelital impreso A3 Puerto Antioquia 2025 (1 por equipo)",
+        "Hoja handover dialog template con huecos tag questions y present progressive (1 por aprendiz)",
+        "Cronómetro visible y cinta adhesiva Word Wall final pared"
+      ],
+      "material_apoyo": [
+        {
+          "descripcion": "Mapa satelital Puerto Antioquia 2025 con etiquetas lugares clave (deep-water terminal · reefer yard · pre-cooling chamber · pier · berth tres) heredado de pm-1-2.B4.key_vocabulary_per_rap",
+          "link": "internal://senafpi/imarpor-cc-v2/mapa-satelital-puerto-antioquia"
+        },
+        {
+          "descripcion": "Quizlet set 20 términos RA4 places maneuvering quantifiers + Quizlet set consolidado 80 términos Toolbelt cuádruple cross-RAP RA1+RA2+RA3+RA4",
+          "link": null
+        },
+        {
+          "descripcion": "Forvo audio nativo pronunciación quantifiers numéricos y prepositional phrases de distancia (forty-seven · twenty-seven tonnes · two nautical miles · seventy-five percent · thirteen point three degrees)",
+          "link": "https://forvo.com/"
+        }
+      ],
+
+      "evidencias": {
+        "aplica": false,
+        "tipo": null,
+        "nombre": null,
+        "tecnica_evaluacion": null,
+        "instrumento_numero": null,
+        "instrumento_tipo": null,
+        "codigo_canon": null,
+        "criterio_canon_evaluado": null
+      },
+
+      "duracion_horas": 1.0,
+
+      "_anclaje_matriz_heredado": {
+        "rap_target": "RA4",
+        "saberes_que_demanda": [
+          "UNIT 3: PLACES IN PORT AND POSITION",
+          "PLACES IN PORT · LOCATIONS",
+          "WEATHER CONDITIONS",
+          "UNIT 4: IN PORT",
+          "CONTAINERIZATION",
+          "PACKING, SHIPPING AND CARGO HANDLING",
+          "MANEUVERING (MOORING, DOCKING, DEPARTURE)",
+          "QUANTIFIERS",
+          "REVIEW OF PRESENT PROGRESSIVE AND PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE"
+        ],
+        "criterios_canon_que_evalua": [],
+        "saberes_proceso_movilizados": [
+          "HABLAR SOBRE UBICACIONES EN INGLÉS QUE PERMITAN AL INTERLOCUTOR CONOCER EL ESPACIO FÍSICO EN EL QUE SE DESEMPEÑAN LAS FUNCIONES A BORDO DEL BUQUE",
+          "DESCRIBIR ELEMENTOS Y PROCESOS EN INGLÉS, DERIVADOS DE LOS DISTINTOS ROLES QUE SE EJERCEN EN EL CUMPLIMIENTO DE LAS OBLIGACIONES A BORDO DEL BUQUE Y EN PUERTO"
+        ]
+      },
+      "_produces_evidencia": null,
+      "_consumed_by_pm": "PM-2.5",
+      "_ref_pm12_path": "sub_bloques_tripartitos[4].key_vocabulary_per_rap",
+      "_ref_pm20_session": "S9",
+      "_contribuye_a_E6_cuestionario_consolidado": {
+        "evidencia_consolidada": "E6",
+        "skill": "Vocabulary",
+        "puntos": 5,
+        "items_estimados": 5,
+        "aplicacion_fisica": "S6 (B2) · retrospectivo desde S9 cierre Toolbelt cuádruple"
+      },
+      "_vocab_heredado_count": 20
+    }
+  ],
+
+  "validation_checks": [
+    {
+      "id": 1,
+      "name": "schema_activity_card_v3_completo_x4",
+      "status": "PASS",
+      "evidence": "Las 4 cards (S2/S5/S7/S9) presentan los 16 campos canon Activity Card v3.0: pm_id, pm_name, session, tipo_bloque, bloque_id_referencia, rap_target, numero_actividad, dimension, enunciado, descripcion, ambiente, estrategias_didacticas_activas, tecnicas_didacticas, materiales_formacion, material_apoyo, evidencias, duracion_horas + 5 campos traceability (_anclaje_matriz_heredado, _produces_evidencia, _consumed_by_pm, _ref_pm12_path, _ref_pm20_session) + 2 campos canon scaffold (_contribuye_a_E6_cuestionario_consolidado, _vocab_heredado_count). evidencias con 8 sub-campos canon (aplica, tipo, nombre, tecnica_evaluacion, instrumento_numero, instrumento_tipo, codigo_canon, criterio_canon_evaluado) en TODAS las 4 cards."
+    },
+    {
+      "id": 2,
+      "name": "evidencias_aplica_false_canon_scaffold_x4",
+      "status": "PASS",
+      "evidence": "Las 4 cards evidencias.aplica=false con 7 sub-campos restantes en null (tipo · nombre · tecnica_evaluacion · instrumento_numero · instrumento_tipo · codigo_canon · criterio_canon_evaluado). Canon REGLA NEW v3.0 PM-2.5: 'evidencias canon aplica=false SIEMPRE (scaffold · NO produce E1-E5)'. Coherente con pm-2-0.S2.actividades_planeadas[0]._produces_evidencia=null + pm-2-0.S5.actividades_planeadas[0]._produces_evidencia=null + pm-2-0.S7.actividades_planeadas[0]._produces_evidencia=null + pm-2-0.S9.actividades_planeadas[0]._produces_evidencia=null. Render esperado guía aprendiz: 'Evidencias de aprendizaje: No aplica · Instrumentos de evaluación: No aplica' en las 4 cards."
+    },
+    {
+      "id": 3,
+      "name": "descripcion_multiparrafo_480_580_palabras_x4",
+      "status": "PASS",
+      "evidence": "Word counts REALES medidos con regex \\S+ dentro banda sweet spot 480-580 (NUNCA >600 estricto): AC #5 S2 RA1 = 559 palabras (5 párrafos · panorama 117 + orientación 77 + equipos 132 + práctica 127 + cierre 106). AC #14 S5 RA2 = 547 palabras (5 párrafos · panorama 105 + orientación 89 + equipos 109 + práctica 137 + cierre 107). AC #19 S7 RA3 = 547 palabras (5 párrafos · panorama 113 + orientación 91 + equipos 122 + práctica 141 + cierre 80). AC #24 S9 RA4 = 566 palabras (5 párrafos · panorama 116 + orientación 90 + equipos 104 + práctica 145 + cierre 111). Patrón canon Sergio en las 4: panorama → orientación instructor → conformación equipos+input → práctica vocab+pronunciación → cierre socialización+bridge."
+    },
+    {
+      "id": 4,
+      "name": "heredancia_pm12_20_vocab_literal_x4_RAPs",
+      "status": "PASS",
+      "evidence": "Las 4 cards heredan literal los 20 vocab canon de pm-1-2.sub_bloques_tripartitos[1-4].key_vocabulary_per_rap. AC #5 RA1: 20 términos integrados narrativamente en P1 (ship · hull · bow · stern · bridge · cargo hold · reefer ship · container ship · bulker · reefer plug · genset · alarm · sensor · stevedore · tally clerk · refrigeration technician · pilot · bosun · cold chain coordinator · safety manager). AC #14 RA2: 20 términos SMCP integrados (SMCP · message marker + 8 markers Question/Answer/Request/Information/Warning/Advice/Instruction/Intention · 5 standard responses Roger/Wilco/Affirmative/Negative/Standby · NATO Phonetic + Spell that + Say again · channel sixteen/twelve · call sign). AC #19 RA3: 20 términos integrados (helmsman · steady · port ten · port five · make fast · bow line · hoist · plug in · stand clear · do not break · wear PPE · must · should · can · could · How does X work? · When do you...? · starboard · ship power · temperature log · phytosanitary inspection). AC #24 RA4: 20 términos integrados (deep-water terminal · reefer yard · pre-cooling chamber · pier · berth three · weather mild · humidity · wind calm · containerization · packing · plastic film · GlobalGAP seal · mooring · docking maneuver · departure procedure · forty-seven clusters · several pallets · many containers · 27 tonnes per reefer · two nautical miles). _vocab_heredado_count=20 en las 4 cards. NO inventados · NO sustituidos."
+    },
+    {
+      "id": 5,
+      "name": "heredancia_pm20_S2_S5_S7_S9_correcta_x4",
+      "status": "PASS",
+      "evidence": "AC #5: session=S2 (matches pm-2-0.session_blueprint[1].sesion_id) · tipo_bloque=APROPIACION · bloque_id_referencia=B1 · rap_target=RA1 · _ref_pm12_path=sub_bloques_tripartitos[1].key_vocabulary_per_rap (matches pm-2-0.S2.actividades_planeadas[0].ref_pm12_path) · _ref_pm20_session=S2 · duracion_horas=2.5 (matches _horas_estimadas_dentro_sesion=2.5 pm-2-0). AC #14: session=S5 · tipo_bloque=APROPIACION · bloque_id_referencia=B2 · rap_target=RA2 · _ref_pm12_path=sub_bloques_tripartitos[2].key_vocabulary_per_rap · duracion_horas=1.5 (matches _horas_estimadas=1.5). AC #19: session=S7 · tipo_bloque=APROPIACION · bloque_id_referencia=B3 · rap_target=RA3 · _ref_pm12_path=sub_bloques_tripartitos[3].key_vocabulary_per_rap · duracion_horas=1.5 (matches _horas_estimadas=1.5). AC #24: session=S9 · tipo_bloque=APROPIACION · bloque_id_referencia=B4 · rap_target=RA4 · _ref_pm12_path=sub_bloques_tripartitos[4].key_vocabulary_per_rap · duracion_horas=1.0 (matches _horas_estimadas=1.0). _produces_evidencia=null en las 4 (matches pm-2-0). _anclaje_matriz_heredado.rap_target == card.rap_target en las 4."
+    },
+    {
+      "id": 6,
+      "name": "dimension_cognitiva_x4_canon_v3",
+      "status": "PASS",
+      "evidence": "Las 4 cards dimension=cognitiva canon REGLA NEW v3.0 PM-2.5 ('dimension cognitiva vocab scaffolding'). UNA sola dimensión por card (canon Sergio: 'No siempre la activity card debe contener todas las dimensiones'). Coherente con naturaleza del scaffold lexical receptivo previo a producción (que sería procedimental en PM-2.4 Writing o PM-2.8 Speaking). Ningún Activity Card declara dimension=procedimental ni actitudinal."
+    },
+    {
+      "id": 7,
+      "name": "enunciados_V_O_C_max_200_chars_x4",
+      "status": "PASS",
+      "evidence": "Los 4 enunciados con estructura canon V+O+C ≤200 caracteres: AC #5 = 'Mapear 20 términos canon RA1 sobre partes del barco, tipos de vessels, equipamiento y profesiones portuarias mediante Word Wall Active y mapa semántico colaborativo.' (164 chars · V=Mapear · O=20 términos canon RA1... · C=mediante Word Wall Active y mapa semántico colaborativo). AC #14 = 'Instalar 20 términos canon SMCP RA2 sobre message markers, standard responses y NATO Phonetic mediante Word Wall categorizado y articulación phonics light cero-tolerancia.' (174 chars · V=Instalar · O=20 términos canon SMCP RA2... · C=mediante Word Wall categorizado y articulación phonics light cero-tolerancia). AC #19 = 'Consolidar 20 términos canon RA3 sobre commands a destinatarios, imperativos de seguridad y modal verbs mediante Word Wall, semantic gradients y jigsaw command-addressee.' (172 chars · V=Consolidar · O=20 términos canon RA3... · C=mediante Word Wall semantic gradients y jigsaw command-addressee). AC #24 = 'Cerrar Toolbelt cuádruple con 20 términos canon RA4 sobre lugares en puerto, condiciones meteo, contenedorización y maniobras mediante Word Wall categorizado y Quizlet pareo.' (175 chars · V=Cerrar · O=Toolbelt cuádruple con 20 términos canon RA4... · C=mediante Word Wall categorizado y Quizlet pareo). Los 4 ≤200 chars · estructura V+O+C explícita."
+    }
+  ],
+
+  "_decisiones_llm_significativas": [
+    "Combinación arquetipo B Vocabulary Development como espina dorsal en las 4 cards (Word Wall Active + categorización funcional + Semantic Mapping/Gradients) porque los 20 vocab por RAP heredados de pm-1-2 vienen pre-categorizados con saber_concepto canon SOFÍA · arquetipo B es match natural sin invención.",
+    "Adición arquetipo A Phonics light SOLO en AC #14 SMCP RA2 (Mirror Talking + Forvo NATO Phonetic + drill standard responses críticos) porque la zona accuracy-cero-tolerancia SMCP exige pronunciación operacional precisa · canon §B2 _nota: 'un Wilco mal usado bloquea banana shipment'. NO se aplica A Phonics completo en RA1/RA3/RA4 que son zonas de fluidez aceptable A1.2-A2.0.",
+    "Adición arquetipo E Interactive Literacy SOLO en AC #19 RA3 (jigsaw command-addressee matching) porque la asignación destinatario-comando es operacionalmente crítica para el E4-final Berthing Tripartito de S8 con 5 actores integrados · jigsaw materializa la cadena de mando antes del speaking.",
+    "Adición Quizlet pareo + matching cross-RAP SOLO en AC #24 RA4 (cierre Toolbelt cuádruple 80 términos consolidado) porque es la última infusión léxica antes de E5 Role Carousel + S10 rehearsal pre-Misión + S11-S12 capstone · Quizlet permite verificar que las 4 infusiones léxicas previas operen como sistema integrado en tiempo estricto 1h.",
+    "Cast operacional diferenciado por card: Yurlenis tally clerk en AC #5 RA1 (alineada a categoría profesiones portuarias) · Captain Lim Wei-Ming bridge officer virtual en AC #14 SMCP RA2 (alineado a lingua franca B1+ del audio E3 inmediato siguiente) · Pipa refrigeration technician + Andrés bosun en AC #19 RA3 (alineados a la cadena de mando berthing tripartito) · Mariana cold chain coordinator + Carolina port pilot en AC #24 RA4 (alineadas al handover dialog del E5 Role Carousel).",
+    "Numeración acumulada a nivel guía: AC #5 (S2) · AC #14 (S5) · AC #19 (S7) · AC #24 (S9) sigue el rango sugerido por el master de subagente · refleja que entre cada PM-2.5 vocab scaffold se ejecutan ~5-9 actividades de otros PM-2.x (PM-2.10 grammar · PM-2.3 reading · PM-2.4 writing · PM-2.6 listening · PM-2.8/2.9 speaking) numeradas secuencialmente en la guía completa.",
+    "Bridge explícito a E6 Cuestionario Consolidado S6 documentado en cierre de las 4 cards (sección Vocabulary 5 ítems · 5 puntos · skill Vocabulary) y en campo dedicado _contribuye_a_E6_cuestionario_consolidado con metadata estructurada · refuerza canon REGLA generates_evidence=false + contributes_to_cuestionario=true del master prompt.",
+    "Materiales tangibles diferenciados según naturaleza del RAP: pliegos kraft + iconos visuales para AC #5 (mapeo visual base) · radios VHF de juguete + tarjetas plastificadas SMCP para AC #14 (simulación operacional) · tableros silueta berthing + termómetros modal verbs para AC #19 (cadena de mando + gradiente) · tablets Quizlet + mapa satelital A3 para AC #24 (consolidación tecnológica + cierre cuádruple). Todos coherentes con universo banana cold chain Puerto Antioquia 2025."
+  ],
+
+  "_bridge_a_E6_documentado": {
+    "evidencia_consolidada_target": "E6",
+    "instrumento_canon": "Cuestionario No 6",
+    "aplicacion_fisica": "S6 (B2 RA2)",
+    "skill_contribuida_por_PM_2_5": "Vocabulary",
+    "puntos_contribuidos": 5,
+    "items_estimados_contribuidos": 5,
+    "items_consolidados_totales_E6": 25,
+    "puntaje_minimo_pass_E6": "≥70%",
+    "vocab_pool_total_contribuido": "80 términos (20 RA1 + 20 RA2 + 20 RA3 + 20 RA4) cosechados de las 4 Activity Cards PM-2.5",
+    "consumido_por_pm": "PM-4.2 (Item Bank Assembler para cuestionario consolidado)",
+    "nota_canon": "Aunque el Toolbelt RA3+RA4 se instalan AFTER S6 (S7 y S9 respectivamente), su contribución a E6 es retrospectiva canon: el item bank PM-4.2 puede curar ítems Vocabulary anclados en categorías RA3/RA4 que el aprendiz reconocerá en S6 como 'no-conocidos-aún' o como parte del proyección lexical anunciada. Canon §B2.task_consolidacion_E6 documenta el 4-way overlap RA1+RA2+RA3+RA4."
+  },
+
+  "enriched": true
+}

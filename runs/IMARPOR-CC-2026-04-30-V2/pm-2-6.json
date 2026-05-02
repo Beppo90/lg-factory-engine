@@ -1,0 +1,384 @@
+{
+  "pm_version": "3.0",
+  "_meta": {
+    "pm_id": "PM-2.6",
+    "pm_name": "Listening — The Auditory Anchor",
+    "pm_version": "v3.0",
+    "schema_version": "Activity Card v3.0 (canon Sergio 2026-05-02)",
+    "run_id": "IMARPOR-CC-2026-04-30-V2",
+    "wave": "Wave 2 IMARPOR-V2",
+    "generated_at": "2026-05-02",
+    "pattern": "DUAL anchor+scaffolds",
+    "_consumed_by_pm": "PM-2.6",
+    "input_canonical": [
+      "master-prompts/PM-2.6 — Listening — The Auditory Anchor.md (v3.0 EXTENSIÓN)",
+      "master-prompts/Activity Card — Schema.md (§11 v3.0 canon Sergio)",
+      "runs/IMARPOR-CC-2026-04-30-V2/pm-2-0.json (S3·S5·S7·S9 actividades_planeadas para PM-2.6)",
+      "runs/IMARPOR-CC-2026-04-30-V2/pm-1-2.json (sub_bloques_tripartitos[1-4].story_b_listening · 4 audios)"
+    ],
+    "decision_arquitectonica_dual": "1 ANCHOR S5 produce E3 C03 Lista de Chequeo No 3 (audio VHF auténtico Captain Lim Wei-Ming · zona accuracy-cero-tolerancia SMCP) + 3 SCAFFOLDS S3/S7/S9 NO producen evidencia (refuerzo lexical RA1 · pre-E4-final RA3 · pre-E5 RA4)"
+  },
+  "_arquetipos_por_card": {
+    "scaffold_S3": {
+      "arquetipo_principal": "A — Micro-Skills Foundation + B — Phase-Based Framework (combinación)",
+      "rationale": "Refuerzo lexical receptivo del cast crew portuario y entrenamiento de chunking auditivo en bay counts mediante tres pasadas progresivas con micro-skills (Sentence Bingo + Delayed Repetition) sin presión instrumento formal."
+    },
+    "anchor_S5": {
+      "arquetipo_principal": "C — TBLT Listening (Information-gap + Reasoning-gap)",
+      "rationale": "Tarea TBLT de identificación SMCP con asignación diferenciada por integrante de equipo (cada uno captura una porción canon: markers / responses / NATO Phonetic+clarification) y observación instructor estructurada en Lista de Chequeo No 3 sobre la zona accuracy-cero-tolerancia VHF auténtico Captain Lim."
+    },
+    "scaffold_S7": {
+      "arquetipo_principal": "E — Advanced Techniques (Predictive Listening + Dictogloss ligero)",
+      "rationale": "Anticipación procedimental de las órdenes berthing y reconstrucción colaborativa por bloque (commands / modals / extensiones C05) preparando el capstone Speaking E4-final S8 sin instrumento formal."
+    },
+    "scaffold_S9": {
+      "arquetipo_principal": "B — Phase-Based Framework simplificado + F — Multimedia Production (briefing analítico)",
+      "rationale": "Briefing receptivo individual de muy corta duración (30 min) que decodifica las 5 master functions canon antes de la rotación Speaking E5 Role Carousel inmediato de la misma sesión · captura analítica directa por estación."
+    }
+  },
+  "activity_cards": [
+    {
+      "pm_id": "PM-2.6",
+      "pm_name": "Listening — The Auditory Anchor",
+      "session": "S3",
+      "tipo_bloque": "APROPIACION",
+      "bloque_id_referencia": "B1",
+      "rap_target": "RA1",
+      "numero_actividad": 8,
+      "dimension": "cognitiva",
+      "enunciado": "Reforzar comprensión auditiva del vocabulario portuario y bay counts en audio Reefer Yard Walk de Yurlenis.",
+      "descripcion": "Reforzar el reconocimiento auditivo del vocabulario portuario básico y el conteo de bays mediante escucha guiada del audio de Yurlenis the Tally Clerk durante el reefer yard walk del MV CARIBBEAN STAR. Esta actividad NO produce evidencia formal de aprendizaje sumativa; opera como andamiaje lexical receptivo previo a la consolidación escrita del Inspection Report de la sesión cuatro, donde el aprendiz aplicará el vocabulario aquí reforzado en producción escrita evaluada formalmente con Lista de Verificación No 2.\n\nPara el desarrollo de la actividad, el instructor presentará el panorama del audio: noventa segundos de duración, acento colombiano bananero auténtico del Eje, personajes canon ya conocidos (Yurlenis tally clerk como voz principal, Manuel junior reefer operator interlocutor, Hernando safety manager y Pipa refrigeration technician mencionados) y orientará brevemente sobre la lógica pedagógica de escucha activa en tres pasadas progresivas: comprensión general o gist en la primera pasada; foco en micro-skills lexicales (reefer container, clusters, setpoint, genset, bay, Cavendish, dry containers, profesiones portuarias) en la segunda pasada; y foco en chunking auditivo (frases there is/are con cuantificadores numéricos en bay counts auténticos) en la tercera pasada. La instrucción del instructor se entregará bilingüe para reducir carga cognitiva inicial pero la ejecución del aprendiz se hará exclusivamente en inglés receptivo.\n\nPosteriormente se conformarán equipos de tres aprendices y cada equipo recibirá una plantilla impresa bilingüe de toma de notas estructurada en cuatro columnas: bays mencionados en el audio, containers identificados con su tipo (Cavendish reefer versus dry containers), profesionales del equipo asignados a cada bay y estado reportado del cold chain. Antes de la primera escucha, los aprendices realizarán en pares una predicción rápida de tres minutos sobre qué información esperan extraer del walk-around, basándose en la imagen panorámica del bay 14 con sus reefer plugs proyectada por el instructor en la pantalla principal del aula.\n\nSeguidamente, los aprendices completarán las tres pasadas de escucha pausada y monitoreada por el instructor. En la primera pasada anotan únicamente el panorama general en la columna izquierda de su plantilla; en la segunda hacen Sentence Bingo marcando los plurales y demostrativos efectivamente escuchados (these reefer containers, those dry containers, forty-seven clusters, thirty-two reefer containers); en la tercera ejecutan Delayed Repetition coral de los bay counts más representativos del audio (forty-seven clusters in bay fourteen, thirty-two reefer containers in bay fifteen, thirteen point three degrees Celsius setpoint) para entrenar el chunking auditivo y la prosodia natural de los numerales en inglés. El instructor pausará el audio entre frases clave para permitir la consolidación neurolingüística sin sobrecarga de la memoria de trabajo A1.\n\nLa actividad cierra con socialización breve en plenaria de quince minutos comparando las plantillas completadas equipo por equipo y verificando colectivamente que el cast crew (Yurlenis, Pipa, Manuel, Hernando) y el estado del cold chain del bay 14 estén correctamente identificados, sin instrumento formal de evaluación asociado a esta actividad. La salida operativa es un insumo lexical y prosódico de chunking que prepara directamente al aprendiz para la producción escrita evaluada del Inspection Report E2 de la sesión cuatro siguiente, donde estos términos y estructuras serán aplicados en redacción real evaluada con Lista de Verificación No 2 sobre el template real del bay 14.",
+      "ambiente": "Ambiente convencional de aula con proyector, parlantes para reproducción de audio en inglés y plantillas impresas bilingües por equipo.",
+      "estrategias_didacticas_activas": [
+        "Aprendizaje colaborativo"
+      ],
+      "tecnicas_didacticas": [
+        "Investigación guiada",
+        "Práctica de campo"
+      ],
+      "materiales_formacion": [
+        "Audio MP3 Yurlenis Reefer Yard Walk (90 segundos)",
+        "Parlantes o sistema de audio del aula",
+        "Plantilla bilingüe impresa de toma de notas (4 columnas)",
+        "Proyector con imagen panorámica del bay 14",
+        "Lapiceros y marcadores"
+      ],
+      "material_apoyo": [
+        {
+          "descripcion": "Audio Story B B1 · Reefer Yard Walk · Yurlenis the Tally Clerk Counts the Bays (90 segundos · acento colombiano bananero)",
+          "link": "internal://senafpi/imarpor-cc-v2/story-b-rap1-audio"
+        },
+        {
+          "descripcion": "Transcript referencial bilingüe del audio (entregado al instructor · NO al aprendiz)",
+          "link": null
+        }
+      ],
+      "evidencias": {
+        "aplica": false,
+        "tipo": null,
+        "nombre": null,
+        "tecnica_evaluacion": null,
+        "instrumento_numero": null,
+        "instrumento_tipo": null,
+        "codigo_canon": null,
+        "criterio_canon_evaluado": null
+      },
+      "duracion_horas": 1.5,
+      "_anclaje_matriz_heredado": {
+        "rap_target": "RA1",
+        "saberes_que_demanda": [
+          "PARTS OF THE SHIPS",
+          "PROFESSIONS IN PORT AND ABOARD",
+          "REVIEW OF DEMONSTRATIVES ADJECTIVES AND VERB TO BE",
+          "SINGULAR AND PLURAL NOUNS"
+        ],
+        "criterios_canon_que_evalua": [
+          "C01"
+        ]
+      },
+      "_produces_evidencia": null,
+      "_consumed_by_pm": "PM-2.6",
+      "_ref_pm12_path": "sub_bloques_tripartitos[1].story_b_listening",
+      "_ref_pm20_session": "S3",
+      "_nota_no_produce_E3": "B1 RA1 NO produce E3 (E3 Listening pertenece canon a B2 RA2 SMCP S5). Esta actividad es scaffolding lexical RA1 reforzando comprensión auditiva del cast crew · NO evaluada formalmente."
+    },
+    {
+      "pm_id": "PM-2.6",
+      "pm_name": "Listening — The Auditory Anchor",
+      "session": "S5",
+      "tipo_bloque": "APROPIACION",
+      "bloque_id_referencia": "B2",
+      "rap_target": "RA2",
+      "numero_actividad": 13,
+      "dimension": "procedimental",
+      "enunciado": "Identificar mensajes correctos y distractores SMCP en audio VHF auténtico de Captain Lim Wei-Ming según protocolo OMI.",
+      "descripcion": "Identificar mensajes correctos y distractores en el audio VHF auténtico del MV CARIBBEAN STAR Arrival Exchange con Captain Lim Wei-Ming aplicando el protocolo SMCP de la OMI, mediante tarea TBLT de listening estructurada con observación directa del instructor evaluada en Lista de Chequeo No 3.\n\nEsta actividad constituye la primera evidencia formal de comprensión auditiva del programa: E3 Listening anclada al criterio canon C03, ejecutada en zona accuracy-cero-tolerancia SMCP. Para su desarrollo el instructor presentará el panorama operacional del audio: ciento cinco segundos de intercambio VHF auténtico entre Pilot Carolina (B2 colombiana), Captain Lim Wei-Ming (B1+ Singapore lingua franca explícita per anclaje canon C03) y Bosun Andrés Mejía (B1 colombiano de Turbo) durante la maniobra de aproximación al berth tres del Puerto Antioquia. El stake operacional será explicado con claridad: un standard response mal interpretado puede detener una embarcación banana reefer y romper la cold chain del MV CARIBBEAN STAR.\n\nPosteriormente el instructor orientará sobre los componentes técnicos canon que la escucha exige reconocer: los ocho message markers SMCP (Question, Answer, Request, Information, Warning, Advice, Instruction, Intention), los cinco standard responses críticos (Roger, Wilco, Affirmative, Negative, Standby), las clarification phrases SMCP (Spell that, Say again, I spell), el NATO Phonetic Alphabet aplicado al call sign Charlie Sierra Tango Alpha Romeo, y el protocolo Over/Out de cierre de turno VHF. Se proyectará la tabla de los ocho message markers como referencia visual durante la primera pasada únicamente, retirándose en pasadas posteriores.\n\nSeguidamente se conformarán equipos de tres aprendices con asignación TBLT diferenciada por information-gap interno: cada integrante recibirá una porción distinta de la plantilla de captura (un aprendiz captura los message markers usados con su atribución al actor; otro captura los standard responses emitidos secuencialmente por cada actor; el tercero captura el NATO Phonetic spelling completo del call sign más las dos clarification requests activadas por Bosun Andrés). El instructor proyectará el audio en tres pasadas controladas: primera pasada con tabla de markers visible para captura general; segunda pasada sin apoyo visual para captura específica por rol asignado; tercera pasada para verificación cruzada entre integrantes del equipo y resolución de discrepancias mediante negociación oral en español permitido bajo cinco por ciento del tiempo total de la actividad.\n\nCada equipo entregará al instructor su plantilla consolidada con los mensajes correctos identificados y los distractores rechazados con justificación textual breve. La aplicación formal de la evidencia E3 se ejecuta sobre la plantilla individual mediante la Lista de Chequeo No 3, instrumento estructurado con criterios observables binarios: identificación correcta de los ocho message markers presentes en el audio, atribución precisa de standard responses al actor correspondiente, transcripción exacta del NATO Phonetic spelling sin sustitución de letras, y reconocimiento de las dos clarification phrases activadas por Bosun Andrés. El instructor aplicará la lista de chequeo en tiempo real durante la tercera pasada y la verificación cruzada, marcando observación directa por aprendiz.\n\nLa actividad finaliza con socialización en plenaria de los hallazgos por equipo, debrief instructor sobre los puntos críticos del SMCP en lingua franca real B1+ Singapore, y aplicación cerrada de la evidencia de desempeño con retroalimentación formativa inmediata sobre la zona accuracy-cero-tolerancia que abre el bloque B2 RA2 y prepara el Speaking E4-parcial VHF de la sesión seis siguiente.",
+      "ambiente": "Ambiente convencional de aula con sistema de audio profesional para reproducción VHF, proyector para tabla de message markers SMCP y plantillas de captura por integrante de equipo.",
+      "estrategias_didacticas_activas": [
+        "TBLT",
+        "Aprendizaje colaborativo"
+      ],
+      "tecnicas_didacticas": [
+        "Práctica de campo",
+        "Jigsaw"
+      ],
+      "materiales_formacion": [
+        "Audio MP3 VHF Arrival Exchange Captain Lim Wei-Ming (105 segundos)",
+        "Sistema de audio profesional del aula con bafles direccionales",
+        "Plantilla TBLT diferenciada por integrante (3 versiones · markers / responses / NATO+clarification)",
+        "Proyector con tabla de 8 message markers SMCP IMO",
+        "Lista de Chequeo No 3 impresa (1 por aprendiz · uso instructor)",
+        "Lapiceros, tabla NATO Phonetic Alphabet de referencia"
+      ],
+      "material_apoyo": [
+        {
+          "descripcion": "Audio Story B B2 · MV CARIBBEAN STAR Arrival · Live VHF Exchange with Captain Lim Wei-Ming (105 segundos · lingua franca B1+ Singapore + Pilot B2 colombiana + Bosun B1 Turbo)",
+          "link": "internal://senafpi/imarpor-cc-v2/story-b-rap2-audio"
+        },
+        {
+          "descripcion": "IMO SMCP 2002 Standard Marine Communication Phrases (referencia oficial OMI)",
+          "link": null
+        },
+        {
+          "descripcion": "Tabla NATO Phonetic Alphabet aplicada a call signs banana reefer",
+          "link": null
+        }
+      ],
+      "evidencias": {
+        "aplica": true,
+        "tipo": "Desempeño",
+        "nombre": "Comprensión auditiva SMCP · identificación de message markers, standard responses y NATO Phonetic en VHF Arrival Exchange MV CARIBBEAN STAR",
+        "tecnica_evaluacion": "Observación",
+        "instrumento_numero": 3,
+        "instrumento_tipo": "Lista de Chequeo",
+        "codigo_canon": "E3",
+        "criterio_canon_evaluado": "C03"
+      },
+      "duracion_horas": 3.0,
+      "_anclaje_matriz_heredado": {
+        "rap_target": "RA2",
+        "saberes_que_demanda": [
+          "UNIT 5: INTRODUCING IMO STANDARD MARINE COMMUNICATION PHRASES (SMCP)",
+          "STANDARD SPELLING",
+          "MESSAGE MARKERS",
+          "STANDARD RESPONSES AND ORGANIZATIONAL PHRASES"
+        ],
+        "criterios_canon_que_evalua": [
+          "C03"
+        ]
+      },
+      "_produces_evidencia": "E3",
+      "_consumed_by_pm": "PM-2.6",
+      "_ref_pm12_path": "sub_bloques_tripartitos[2].story_b_listening",
+      "_ref_pm20_session": "S5",
+      "_nota_anchor_E3_C03": "Anchor canon DUAL · única actividad PM-2.6 que produce evidencia formal · Lista de Chequeo No 3 · zona accuracy-cero-tolerancia SMCP per anclaje C03 'audio auténtico VHF (incluyendo lingua franca B1 no-nativa)'."
+    },
+    {
+      "pm_id": "PM-2.6",
+      "pm_name": "Listening — The Auditory Anchor",
+      "session": "S7",
+      "tipo_bloque": "APROPIACION",
+      "bloque_id_referencia": "B3",
+      "rap_target": "RA3",
+      "numero_actividad": 17,
+      "dimension": "cognitiva",
+      "enunciado": "Anticipar y reconstruir órdenes y modal verbs del Berthing Tripartito mediante Predictive Listening y Dictogloss ligero.",
+      "descripcion": "Anticipar y reconstruir las órdenes operacionales y los modal verbs canon del berthing tripartito del MV CARIBBEAN STAR mediante escucha predictiva y reconstrucción colaborativa del audio de coordinación entre Pilot Carolina, Captain Lim Wei-Ming, Bosun Andrés Mejía y Pipa el refrigeration technician. Esta actividad NO produce evidencia formal de aprendizaje; opera como andamiaje auditivo procedimental previo al capstone Speaking E4-final del berthing tripartito simultáneo de la sesión ocho, donde estas órdenes y modals serán aplicados en producción oral evaluada con Escala de Estimación No 4.\n\nPara el desarrollo de la actividad, el instructor presentará el panorama operativo del audio: ciento diez segundos de coordinación tripartita real durante la maniobra de aproximación al berth tres, con cuatro actores simultáneos modelando los cuatro saberes canon RA3 (commands dirigidos a destinatarios específicos como helmsman y bosun y crane operator, imperative de safety signage tipo Plug in the reefer y Stand clear, present simple de rutinas operacionales tipo How does the reefer plug work, modal verbs canon must should can could) más las tres extensiones C05 emergentes documentadas en matriz v1.3 (conditional tipo uno If the genset fails we will switch to ship power, voz pasiva The cargo was inspected by ICA this morning, presente perfecto The pilot has boarded the vessel). El stake pedagógico se enuncia con transparencia al inicio: este scaffold consolida el insumo auditivo que la sesión ocho requerirá para la producción Speaking simultánea evaluada formalmente.\n\nPosteriormente se conformarán equipos de tres aprendices y cada equipo recibirá una plantilla de Predictive Listening estructurada en cuatro filas (una por actor canon: Pilot Carolina, Captain Lim, Bosun Andrés, Pipa) y cuatro columnas (commands recibidos o emitidos, modals canon usados, extensión C05 detectada como condicional o pasiva o perfecto, conector discursivo activado). El instructor reproducirá el audio una primera vez sin interrupciones para que los aprendices capten el flujo natural de la coordinación tripartita y registren predicciones iniciales sobre qué órdenes y estructuras emergen del intercambio multi-actor en tiempo real.\n\nSeguidamente, el instructor reproducirá el audio una segunda vez pausando estratégicamente en cuatro marcadores predictivos clave seleccionados pedagógicamente (después de Helmsman steady; después de Bosun make fast on bow line one; después del marker condicional If the genset fails; después del present perfect The pilot has boarded) y los aprendices predicen colaborativamente en cada pausa lo que sigue antes de continuar la reproducción. Verificada cada predicción, completan la plantilla con la atribución exacta de cada estructura al actor correspondiente y al saber canon RA3 o extensión C05 movilizado, marcando explícitamente los puntos de overlap.\n\nLa actividad finaliza con reconstrucción colaborativa tipo Dictogloss ligero distribuida por bloques: cada equipo reconstruye en plenaria una sección distinta del audio (un equipo el bloque commands directos a destinatarios, otro el bloque modals canon must should can could, otro el bloque extensiones C05 condicional pasiva perfecto) usando exclusivamente las notas de su propia plantilla, y el instructor cierra con debrief de quince minutos sobre la lógica operacional de la coordinación tripartita y su anclaje al criterio C05, sin aplicación de instrumento formal de evaluación. El insumo así consolidado prepara directamente al aprendiz para el Berthing Tripartito Simultáneo evaluado en la sesión ocho siguiente con Escala de Estimación No 4.",
+      "ambiente": "Ambiente convencional de aula con sistema de audio para pausas precisas, proyector para guías visuales del berthing y plantillas de Predictive Listening por equipo.",
+      "estrategias_didacticas_activas": [
+        "Aprendizaje colaborativo"
+      ],
+      "tecnicas_didacticas": [
+        "Investigación guiada"
+      ],
+      "materiales_formacion": [
+        "Audio MP3 Berthing Tripartito (110 segundos · 4 actores)",
+        "Sistema de audio del aula con control de pausa fina",
+        "Plantilla Predictive Listening estructurada (4 filas × 4 columnas)",
+        "Proyector con diagrama berthing maneuver MV CARIBBEAN STAR",
+        "Lapiceros y plantillas de reconstrucción Dictogloss"
+      ],
+      "material_apoyo": [
+        {
+          "descripcion": "Audio Story B B3 · Berthing Tripartito · Pilot, Captain Lim, Bosun & Pipa Coordinate Live (110 segundos · multi-actor procedural A2.0)",
+          "link": "internal://senafpi/imarpor-cc-v2/story-b-rap3-audio"
+        },
+        {
+          "descripcion": "Diagrama berthing maneuver Puerto Antioquia berth tres",
+          "link": null
+        }
+      ],
+      "evidencias": {
+        "aplica": false,
+        "tipo": null,
+        "nombre": null,
+        "tecnica_evaluacion": null,
+        "instrumento_numero": null,
+        "instrumento_tipo": null,
+        "codigo_canon": null,
+        "criterio_canon_evaluado": null
+      },
+      "duracion_horas": 1.0,
+      "_anclaje_matriz_heredado": {
+        "rap_target": "RA3",
+        "saberes_que_demanda": [
+          "COMMANDS (TO: OFFICERS, SAILORS, HELMSMAN, CAPTAINS, ENGINEERS, STEWARD, CRANE OPERATORS)",
+          "REVIEW OF PRESENT SIMPLE TENSE",
+          "IMPERATIVE",
+          "MODAL VERBS: CAN, COULD, SHOULD, MUST FOR REQUEST, PROHIBITION, POSSIBILITY, PERMISSION"
+        ],
+        "criterios_canon_que_evalua": [
+          "C05"
+        ]
+      },
+      "_produces_evidencia": null,
+      "_consumed_by_pm": "PM-2.6",
+      "_ref_pm12_path": "sub_bloques_tripartitos[3].story_b_listening",
+      "_ref_pm20_session": "S7",
+      "_nota_no_produce_E3": "B3 RA3 NO produce E3 (E3 Listening pertenece canon a B2 RA2 SMCP S5). Esta actividad es scaffolding pre-E4-final S8 con Predictive Listening + Dictogloss ligero · NO evaluada formalmente."
+    },
+    {
+      "pm_id": "PM-2.6",
+      "pm_name": "Listening — The Auditory Anchor",
+      "session": "S9",
+      "tipo_bloque": "APROPIACION",
+      "bloque_id_referencia": "B4",
+      "rap_target": "RA4",
+      "numero_actividad": 23,
+      "dimension": "cognitiva",
+      "enunciado": "Analizar y categorizar las 5 master functions IMARPOR del Role Carousel Briefing audio de Mariana, Carolina y Yurlenis.",
+      "descripcion": "Analizar y categorizar las cinco master functions IMARPOR modeladas por Mariana, Carolina y Yurlenis en el audio Role Carousel Briefing mediante escucha analítica con captura por estación previa al Role Carousel Speaking evaluado E5 de la misma sesión. Esta actividad NO produce evidencia formal de aprendizaje; opera como briefing receptivo de muy corta duración (treinta minutos efectivos de instructor más estudiantes) que orienta directamente la rotación de cinco estaciones del Role Carousel Speaking ejecutado inmediatamente después en la misma sesión nueve.\n\nPara el desarrollo de la actividad, el instructor presentará el panorama del audio: cien segundos de briefing dialogal multi-voice descriptivo donde tres profesionales canon del Eje Bananero (Mariana B2 cold chain coordinator, Carolina B2 port pilot, Yurlenis A2 colombiana tally clerk) modelan explícitamente las cinco master functions canon que cada aprendiz deberá ejecutar minutos después en rotación de doce minutos por estación. Las cinco functions canon IMARPOR son enunciadas explícitamente: describing roles and chain of command (función uno), describing maneuvers and port operations (función dos), describing weather and ambient conditions (función tres), describing cargo states and quantification (función cuatro), y closing handover with tag questions producción activa (función cinco).\n\nPosteriormente el instructor entregará individualmente una plantilla compacta de captura analítica con cinco filas (una por master function) y tres columnas (actor canon que la modela, exponente lingüístico textual capturado del audio, estructura gramatical asociada como tag question, present progressive, quantifier o conector discursivo). No se conforman equipos en este scaffold dado que el aprendiz necesita captura individual previa antes de su propia ejecución Role Carousel inminente, y la rotación posterior será evaluada individualmente por estación con Escala de Estimación No 5.\n\nSeguidamente el instructor reproducirá el audio dos veces con pausa intermedia de dos minutos para reflexión silenciosa. En la primera pasada los aprendices capturan únicamente el actor canon y la function asociada en cada intervención; en la segunda pasada completan los exponentes lingüísticos textuales y la estructura gramatical activada (por ejemplo The setpoints are 13.3 degrees aren't they como tag question producción activa de Mariana, o The vessel is approaching at two nautical miles como present progressive más prepositional phrase de Carolina, o There are forty-seven clusters in bay 14 como quantifier numérico de Yurlenis).\n\nLa actividad cierra inmediatamente con verificación rápida en plenaria de cinco minutos donde el instructor enuncia secuencialmente cada master function canon y solicita confirmación coral del exponente lingüístico capturado por la mayoría del grupo, resolviendo discrepancias menores con replay focalizado del fragmento correspondiente, sin aplicación de instrumento formal de evaluación asociado a esta escucha receptiva. El insumo de captura completado por cada aprendiz se conserva físicamente como guía operativa de bolsillo durante el Role Carousel Speaking E5 inmediato que se ejecuta en la misma sesión nueve a continuación, donde el aprendiz aplicará en producción oral evaluada formalmente con Escala de Estimación No 5 las mismas cinco master functions aquí decodificadas receptivamente, cerrando el ciclo pedagógico input-output dentro de la misma sesión sin pérdida de momentum cognitivo entre comprensión auditiva y producción funcional descriptiva.",
+      "ambiente": "Ambiente convencional de aula con sistema de audio, proyector para tabla de las 5 master functions IMARPOR y plantilla individual de captura por aprendiz.",
+      "estrategias_didacticas_activas": [
+        "Aprendizaje basado en tareas"
+      ],
+      "tecnicas_didacticas": [
+        "Análisis de casos"
+      ],
+      "materiales_formacion": [
+        "Audio MP3 Role Carousel Briefing (100 segundos · 3 voces canon)",
+        "Sistema de audio del aula",
+        "Plantilla individual de captura analítica (5 filas × 3 columnas)",
+        "Proyector con tabla de 5 master functions IMARPOR",
+        "Lapiceros"
+      ],
+      "material_apoyo": [
+        {
+          "descripcion": "Audio Story B B4 · Role Carousel Briefing · Mariana, Carolina & Yurlenis Describe Their Functions (100 segundos · A2.0-A2.1)",
+          "link": "internal://senafpi/imarpor-cc-v2/story-b-rap4-audio"
+        },
+        {
+          "descripcion": "Tabla referencial de las 5 master functions IMARPOR (canon Sergio post-Wave 1)",
+          "link": null
+        }
+      ],
+      "evidencias": {
+        "aplica": false,
+        "tipo": null,
+        "nombre": null,
+        "tecnica_evaluacion": null,
+        "instrumento_numero": null,
+        "instrumento_tipo": null,
+        "codigo_canon": null,
+        "criterio_canon_evaluado": null
+      },
+      "duracion_horas": 0.5,
+      "_anclaje_matriz_heredado": {
+        "rap_target": "RA4",
+        "saberes_que_demanda": [
+          "TAG QUESTIONS",
+          "QUANTIFIERS",
+          "REVIEW OF PRESENT PROGRESSIVE AND PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE",
+          "MANEUVERING (MOORING, DOCKING, DEPARTURE)"
+        ],
+        "criterios_canon_que_evalua": [
+          "C06"
+        ]
+      },
+      "_produces_evidencia": null,
+      "_consumed_by_pm": "PM-2.6",
+      "_ref_pm12_path": "sub_bloques_tripartitos[4].story_b_listening",
+      "_ref_pm20_session": "S9",
+      "_nota_no_produce_E3": "B4 RA4 NO produce E3 (E3 Listening pertenece canon a B2 RA2 SMCP S5). Esta actividad es scaffolding pre-E5 Role Carousel S9 (misma sesión · ciclo input-output cerrado) · NO evaluada formalmente."
+    }
+  ],
+  "validation_checks": [
+    {
+      "check_id": 1,
+      "name": "identidad_y_heredancia_pm20",
+      "description": "Cada Activity Card hereda pm_id PM-2.6, session ∈ {S3, S5, S7, S9}, tipo_bloque APROPIACION, bloque_id_referencia ∈ {B1, B2, B3, B4}, rap_target ∈ {RA1, RA2, RA3, RA4} y _ref_pm20_session == session, todos consistentes con pm-2-0.json.session_blueprint.",
+      "status": "PASS",
+      "evidence": "S3→B1·RA1 ✓ · S5→B2·RA2 ✓ · S7→B3·RA3 ✓ · S9→B4·RA4 ✓ · 4/4 cards heredan correctamente de pm-2-0.json"
+    },
+    {
+      "check_id": 2,
+      "name": "duracion_coincide_pm20",
+      "description": "duracion_horas de cada card coincide con _horas_estimadas_dentro_sesion en pm-2-0.json para la actividad listening del consumed_by_pm PM-2.6.",
+      "status": "PASS",
+      "evidence": "S3 1.5h ✓ (pm-2-0[S3].actividades_planeadas[story_b_listening]._horas_estimadas_dentro_sesion=1.5) · S5 3.0h ✓ · S7 1.0h ✓ · S9 0.5h ✓ · suma 6.0h listening total"
+    },
+    {
+      "check_id": 3,
+      "name": "evidencias_DUAL_anchor_vs_scaffolds",
+      "description": "Pattern DUAL canon: anchor S5 evidencias.aplica=true con tipo=Desempeño + tecnica_evaluacion=Observación + instrumento_numero=3 + instrumento_tipo='Lista de Chequeo' + codigo_canon=E3 + criterio_canon_evaluado=C03. Scaffolds S3/S7/S9 evidencias.aplica=false con todos los campos relacionados null.",
+      "status": "PASS",
+      "evidence": "S5 anchor: aplica=true · tipo=Desempeño · técnica=Observación · instrumento_numero=3 · instrumento_tipo='Lista de Chequeo' · codigo_canon=E3 · criterio_canon_evaluado=C03 ✓ TODOS coincide canon. S3/S7/S9 scaffolds: aplica=false · 6 campos relacionados null ✓ render 'No aplica' literal."
+    },
+    {
+      "check_id": 4,
+      "name": "dimension_dual_anchor_procedimental_scaffolds_cognitiva",
+      "description": "Pattern dimension DUAL canon v3.0: anchor S5 dimension='procedimental' (ejecuta tarea TBLT con observación). Scaffolds S3/S7/S9 dimension='cognitiva' (análisis receptivo sin ejecución evaluada).",
+      "status": "PASS",
+      "evidence": "S5 procedimental ✓ · S3 cognitiva ✓ · S7 cognitiva ✓ · S9 cognitiva ✓ · 4/4 alineado canon dimension dual."
+    },
+    {
+      "check_id": 5,
+      "name": "descripcion_word_count_480_580",
+      "description": "Cada descripcion debe tener entre 200 y 600 palabras en español (target sweet spot 480-580). Multi-párrafo permitido con saltos \\n\\n preservados.",
+      "status": "PASS",
+      "evidence": "S3 528 palabras ✓ · S5 535 palabras ✓ · S7 530 palabras ✓ · S9 500 palabras ✓ · todas en sweet spot 480-580 · todas multi-párrafo 5 segmentos canon (panorama→orientación→equipos→práctica→cierre)."
+    },
+    {
+      "check_id": 6,
+      "name": "heredancia_traceability_anclaje_matriz",
+      "description": "_anclaje_matriz_heredado de cada card es literal copy de pm-1-2.sub_bloques_tripartitos[N].story_b_listening._anclaje_matriz · _ref_pm12_path apunta a path JSON válido en pm-1-2.json · _produces_evidencia coincide con evidencias.codigo_canon (o ambos null).",
+      "status": "PASS",
+      "evidence": "S3 ref sub_bloques[1] RA1 C01 ✓ · S5 ref sub_bloques[2] RA2 C03 _produces_evidencia E3 ✓ coincide evidencias.codigo_canon ✓ · S7 ref sub_bloques[3] RA3 C05 ✓ · S9 ref sub_bloques[4] RA4 C06 ✓ · 4/4 traceability literal preservada."
+    },
+    {
+      "check_id": 7,
+      "name": "saberes_subset_matriz_v13",
+      "description": "_anclaje_matriz_heredado.saberes_que_demanda es subset literal de pm-0-0-matriz-alineada.raps[rap_target].saberes_conceptos_y_principios para cada card.",
+      "status": "PASS",
+      "evidence": "S3 RA1: PARTS OF THE SHIPS + PROFESSIONS + DEMONSTRATIVES + PLURAL NOUNS ⊆ matriz RA1 ✓ · S5 RA2: SMCP + STANDARD SPELLING + MESSAGE MARKERS + STANDARD RESPONSES ⊆ matriz RA2 ✓ · S7 RA3: COMMANDS + PRESENT SIMPLE + IMPERATIVE + MODAL VERBS ⊆ matriz RA3 ✓ · S9 RA4: TAG QUESTIONS + QUANTIFIERS + PRESENT PROGRESSIVE + MANEUVERING ⊆ matriz RA4 ✓"
+    }
+  ],
+  "enriched": {
+    "summary_dual": {
+      "total_cards": 4,
+      "anchor_count": 1,
+      "scaffold_count": 3,
+      "anchor_session": "S5",
+      "anchor_evidencia": "E3 C03 Lista de Chequeo No 3",
+      "scaffold_sessions": [
+        "S3",
+        "S7",
+        "S9"
+      ],
+      "scaffold_evidencia": "No aplica",
+      "duracion_horas_total": 6.0
+    },
+    "decision_arquetipo_anchor": "TBLT Listening (Arquetipo C) con asignación information-gap diferenciada por integrante de equipo + Lista de Chequeo No 3 estructurada con criterios observables binarios. Justificación: (1) audio canon C03 exige 'audio auténtico VHF (incluyendo lingua franca B1 no-nativa)' lo que descarta arquetipos sin tarea (A Micro-Skills sería sub-óptimo para evaluar comprensión SMCP funcional); (2) information-gap permite captura colaborativa cubriendo los 3 dominios canon (markers + responses + NATO Phonetic) sin sobrecarga individual; (3) Lista de Chequeo No 3 mapea limpiamente a observación instructor en tiempo real durante 3 pasadas controladas; (4) zona accuracy-cero-tolerancia SMCP requiere instrumento binario (cumple/no cumple) coherente con Lista de Chequeo más que con escala continua.",
+    "v3_0_compliance": {
+      "schema_version": "Activity Card v3.0",
+      "pattern": "DUAL anchor+scaffolds",
+      "cards_emit_evidencia_formal": 1,
+      "cards_render_no_aplica": 3,
+      "validation_checks_pass": "7/7"
+    },
+    "heredancia_cascade_phase1_v3x": "OK · todos los _anclaje_matriz_heredado son literal copy de pm-1-2.sub_bloques_tripartitos[N].story_b_listening._anclaje_matriz · ningún saber inventado · todos los criterios canon C01/C03/C05/C06 trazables a matriz v1.3 + pm-1-1 v2.8 v2 + pm-1-2 v4.2.",
+    "bridge_a_pm_211": "Estas 4 Activity Cards v3.0 alimentan PM-2.11 GFPI-F-134 Row Assembler (cols 6-11) sin transformación · campo evidencias.aplica DUAL preservado para render renderer canon Sergio (true → bloque completo · false → 'No aplica' literal).",
+    "bridge_a_pm_36": "Estas 4 Activity Cards v3.0 alimentan PM-3.6 Learning Guide Generator para render learner-readable en GFPI-F-135 Sección 3.3 Apropiación · numero_actividad acumulado (8, 13, 17, 23) preserva secuencia guía completa.",
+    "bridge_a_pm_41": "Solo la card S5 anchor alimenta PM-4.1 Instrumentos: instrumento_numero=3 + instrumento_tipo='Lista de Chequeo' + nombre evidencia + criterios observables del cuerpo de descripcion serán insumo para construcción del instrumento formal Lista de Chequeo No 3."
+  }
+}
