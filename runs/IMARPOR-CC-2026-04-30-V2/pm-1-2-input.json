@@ -1,0 +1,41 @@
+{
+  "_pm12_version_target": "4.2",
+  "_paradigm": "scope_diferenciado_por_tipo_bloque",
+  "_inputs_canon_refs": {
+    "pm_1_1": {"file": "pm-1-1.json", "version": "2.8", "validation_status": "9/9 PASS", "bloques_count": 6},
+    "pm_0_0_matriz": {"file": "pm-0-0-matriz-alineada.json", "version": "1.1", "criterios_canon": "C01-C08", "raps_count": 4},
+    "pm_0_context": {"file": "pm-0-context.json", "version": "3.2", "validation_status": "7/7 PASS", "anclajes": 44}
+  },
+  "run_id": "IMARPOR-CC-2026-04-30-V2",
+  "instructor": "Sergio Cortés Perdomo",
+  "fecha_dispatch": "2026-05-01",
+  "onboarding_l1_decision": {
+    "incluir_meta_bloque_presentacion_l1": true,
+    "alcance": "programa_entero",
+    "narrativa_l1_lengua": "español",
+    "encuadre_temas": ["bienvenida programa", "expectativas aprendiz", "estructura tripartita", "rol instructor", "evaluación 7 evidencias E1-E6+E-Misión"]
+  },
+  "via_curacion_preferida": "IA",
+  "via_curacion_alternativas_disponibles": ["Instructor", "Híbrida"],
+  "materiales_aportados_instructor": {
+    "presente": false,
+    "fuentes_propias": []
+  },
+  "restricciones_curacion": {
+    "extension_story_a_palabras_max": 250,
+    "extension_story_a_palabras_min": 150,
+    "duracion_story_b_segundos_max": 120,
+    "duracion_story_b_segundos_min": 60,
+    "cefr_subnivel_minimo_aceptable": "A1.1",
+    "cefr_subnivel_maximo_aceptable": "A2.2"
+  },
+  "filtros_v2_6_aplicar_a_apropiacion": {
+    "8_filtros_seleccion": "REGLA v2.6 #6 · LLM aplica los 8 filtros canon",
+    "ficha_curacion_completa": "REGLA v2.6 #4 · ficha por fuente",
+    "diversidad_generos_textuales": "REGLA v2.6 #8 · LLM diversifica entre RAPs"
+  },
+  "aprobaciones": {
+    "pm_1_1_v2_8": "Sergio aprobó 2026-05-02",
+    "pm_1_2_master_v4_2_bumps": "Sergio aprobó 2026-05-02 (PM-1.2 + PLAN-FASE-1 v1.4 + DM v3.4)"
+  }
+}

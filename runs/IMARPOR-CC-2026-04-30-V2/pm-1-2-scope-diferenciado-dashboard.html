@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><title>PM-1.2 v4.2 IMARPOR-V2 Dashboard COMPUESTO</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F8F9FA; color: #212529; line-height: 1.5; padding: 24px; }
+.header { background: #0B2E45; color: white; padding: 24px; border-radius: 8px; margin-bottom: 24px; }
+.header h1 { font-size: 24px; margin-bottom: 8px; }
+.header .meta { font-size: 14px; opacity: 0.85; }
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.summary-card { background: #FFFFFF; padding: 20px; border-radius: 8px; border-left: 4px solid #39A900; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.summary-card .label { font-size: 11px; color: #6C757D; text-transform: uppercase; letter-spacing: 0.5px; }
+.summary-card .value { font-size: 28px; font-weight: bold; color: #0B2E45; margin-top: 4px; }
+.summary-card .sublabel { font-size: 11px; color: #6C757D; margin-top: 4px; }
+.section-title { font-size: 18px; font-weight: 600; color: #0B2E45; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #39A900; }
+.bloque-card { background: #FFFFFF; border-radius: 8px; padding: 22px; margin-bottom: 18px; border-top: 5px solid; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.bloque-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.bloque-tipo { display: inline-block; padding: 4px 12px; border-radius: 14px; color: white; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.bloque-titulo { font-size: 17px; font-weight: 600; color: #0B2E45; margin-top: 8px; }
+.bloque-meta { font-size: 12px; color: #6C757D; margin-top: 4px; }
+.elementos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-top: 14px; }
+.elemento-card { background: #F8F9FA; padding: 12px; border-radius: 6px; border-left: 3px solid #DEE2E6; }
+.elemento-titulo { font-size: 12px; font-weight: 700; color: #6C757D; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.elemento-cuenta { font-size: 20px; font-weight: 700; color: #0B2E45; }
+.elemento-detalle { font-size: 12px; color: #6C757D; margin-top: 4px; }
+.evid-tag { display: inline-block; padding: 3px 10px; border-radius: 12px; color: white; font-size: 11px; font-weight: 700; margin: 2px 4px 2px 0; }
+.tag { display: inline-block; padding: 2px 8px; background: #F8F9FA; border-radius: 10px; font-size: 11px; margin: 2px 2px 2px 0; border: 1px solid #DEE2E6; color: #0B2E45; }
+.tag-criterio { background: #FFF3E0; color: #E65100; border-color: #FFB74D; font-weight: 600; }
+.tag-rap { background: #E8F5E9; color: #1B5E20; border-color: #81C784; font-weight: 600; }
+.checks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.check-card { background: #FFFFFF; padding: 12px 16px; border-radius: 6px; border-left: 4px solid; display: flex; justify-content: space-between; align-items: center; }
+.check-pass { border-color: #39A900; }
+.check-name { font-size: 13px; color: #212529; font-family: monospace; }
+.check-status { font-size: 11px; font-weight: 700; padding: 2px 10px; border-radius: 10px; color: white; background: #39A900; }
+.evidencias-flow { background: #FFFFFF; padding: 24px; border-radius: 8px; margin-bottom: 24px; }
+.evid-row { display: grid; grid-template-columns: 100px 1fr 100px 80px; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px dashed #DEE2E6; }
+.evid-row:last-child { border-bottom: none; }
+.evid-row .badge { font-weight: 700; font-family: monospace; padding: 4px 10px; border-radius: 6px; color: white; text-align: center; }
+.evid-row .source { font-size: 13px; color: #212529; }
+.evid-row .pm-dest { font-size: 11px; color: #6C757D; font-family: monospace; text-align: right; }
+.evid-row .session { font-size: 11px; color: #6C757D; font-family: monospace; text-align: center; }
+</style></head>
+<body>
+<div class="header">
+  <h1>📚 PM-1.2 v4.2 · Dashboard COMPUESTO · Scope Diferenciado por tipo_bloque · IMARPOR-V2</h1>
+  <div class="meta">Run: IMARPOR-CC-2026-04-30-V2 · Tripartita Diferenciada · Vivero de Evidencias E1-E6+E-Misión · 2026-05-01</div>
+</div>
+
+<div class="summary-grid">
+  <div class="summary-card"><div class="label">Sub-bloques tripartitos</div><div class="value">6</div><div class="sublabel">1 + 4 + 1 (canon)</div></div>
+  <div class="summary-card"><div class="label">Meta-bloque L1</div><div class="value">✓</div><div class="sublabel">Onboarding único · pre-S1</div></div>
+  <div class="summary-card"><div class="label">Validation Checks</div><div class="value">6/6</div><div class="sublabel">6 BLOQUEANTES</div></div>
+  <div class="summary-card"><div class="label">Tamaño output</div><div class="value">142 KB</div><div class="sublabel">scope completo + curación</div></div>
+  <div class="summary-card"><div class="label">Enriched</div><div class="value">✓</div><div class="sublabel">listo cascade Step 1.4</div></div>
+</div>
+
+<div class="section-title">📜 Meta-bloque PRESENTACIÓN L1 (onboarding único · pre-S1)</div>
+<div class="bloque-card" style="border-top-color: #7B1FA2;">
+  <div class="bloque-header"><div>
+    <span class="bloque-tipo" style="background: #7B1FA2;">META_BLOQUE_ONBOARDING</span>
+    <div class="bloque-titulo">Bienvenida + Encuadre Programa Bilingüe Marítimo Portuario</div>
+    <div class="bloque-meta">📅 previo_a_S1_apertura · sesión 0 onboarding · 30 min L1 antes del primer Spark de B0 · ⏱️ ~30 min · L1 español puro</div>
+  </div></div>
+  <div class="elementos-grid">
+    <div class="elemento-card"><div class="elemento-titulo">Objetivos L1</div><div class="elemento-cuenta">5</div><div class="elemento-detalle">presentados en español</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">Encuadre evidencias</div><div class="elemento-cuenta">7</div><div class="elemento-detalle">E1-E6 + E-Misión transparente</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">Estructura tripartita</div><div class="elemento-cuenta">3</div><div class="elemento-detalle">APERTURA · APROPIACIÓN · TRANSFERENCIA</div></div>
+  </div>
+</div>
+
+<div class="section-title">🎯 6 Sub-bloques Tripartitos (scope diferenciado por tipo_bloque)</div>
+
+<div class="bloque-card" style="border-top-color: #FFB300;">
+  <div class="bloque-header"><div>
+    <span class="bloque-tipo" style="background: #FFB300;">B0 · APERTURA</span>
+    <div class="bloque-titulo">Welcome Aboard the Cold Chain · Spark & Diagnostic Stand-Down</div>
+    <div class="bloque-meta"> </div>
+  </div></div>
+  <div class="elementos-grid">
+    <div class="elemento-card"><div class="elemento-titulo">materiales_spark</div><div class="elemento-cuenta">4</div><div class="elemento-detalle">2 PM-2.1 + 2 PM-2.2 con enfoque_motivacional</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">vocabulario_diagnostico</div><div class="elemento-cuenta">12</div><div class="elemento-detalle">10-15 transversales · NO apropiación</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">aprendizajes_previos</div><div class="elemento-cuenta">4</div><div class="elemento-detalle">a activar diagnósticamente</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">contexto general RAPs</div><div class="elemento-cuenta">4</div><div class="elemento-detalle">overview presentación</div></div></div>
+</div>
+<div class="bloque-card" style="border-top-color: #1E88E5;">
+  <div class="bloque-header"><div>
+    <span class="bloque-tipo" style="background: #1E88E5;">B1 · APROPIACION</span>
+    <div class="bloque-titulo">The Reefer Ship Vocabulary · Recognizing Vessel Parts & Port Crew</div>
+    <div class="bloque-meta"><span class="tag tag-rap">RA1</span> <span class="tag tag-criterio">C01</span><span class="tag tag-criterio">C02</span></div>
+  </div></div>
+  <div class="elementos-grid">
+    <div class="elemento-card"><div class="elemento-titulo">story_a_reading (E1)</div><div class="elemento-cuenta">215p</div><div class="elemento-detalle">A1.2 · Inside a Reefer Container: How Bananas S</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">story_b_listening (E3)</div><div class="elemento-cuenta">95s</div><div class="elemento-detalle">Reefer Yard Walkaround: Cold Chain Coord</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">key_vocabulary</div><div class="elemento-cuenta">20</div><div class="elemento-detalle">canon REGLA v2.6 #3</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">language_functions (E5)</div><div class="elemento-cuenta">5</div><div class="elemento-detalle">F1-F5 canon</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">grammar_items</div><div class="elemento-cuenta">4</div><div class="elemento-detalle">CEFR-derived</div></div></div>
+</div>
+<div class="bloque-card" style="border-top-color: #1E88E5;">
+  <div class="bloque-header"><div>
+    <span class="bloque-tipo" style="background: #1E88E5;">B2 · APROPIACION</span>
+    <div class="bloque-titulo">SMCP & VHF Voice · Understanding the Standard Marine Channel</div>
+    <div class="bloque-meta"><span class="tag tag-rap">RA2</span> <span class="tag tag-criterio">C03</span><span class="tag tag-criterio">C04</span><span class="tag tag-criterio">C07</span></div>
+  </div></div>
+  <div class="elementos-grid">
+    <div class="elemento-card"><div class="elemento-titulo">story_a_reading (E1)</div><div class="elemento-cuenta">235p</div><div class="elemento-detalle">A1.3 · IMO SMCP Pocket Guide: Standard Marine C</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">story_b_listening (E3)</div><div class="elemento-cuenta">110s</div><div class="elemento-detalle">VHF Arrival Exchange · MV CARIBBEAN STAR</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">key_vocabulary</div><div class="elemento-cuenta">20</div><div class="elemento-detalle">canon REGLA v2.6 #3</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">language_functions (E5)</div><div class="elemento-cuenta">5</div><div class="elemento-detalle">F1-F5 canon</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">grammar_items</div><div class="elemento-cuenta">4</div><div class="elemento-detalle">CEFR-derived</div></div></div>
+</div>
+<div class="bloque-card" style="border-top-color: #1E88E5;">
+  <div class="bloque-header"><div>
+    <span class="bloque-tipo" style="background: #1E88E5;">B3 · APROPIACION</span>
+    <div class="bloque-titulo">Grammar at Work · Applying Modals, Conditionals & Passive at the Berth</div>
+    <div class="bloque-meta"><span class="tag tag-rap">RA3</span> <span class="tag tag-criterio">C05</span></div>
+  </div></div>
+  <div class="elementos-grid">
+    <div class="elemento-card"><div class="elemento-titulo">story_a_reading (E1)</div><div class="elemento-cuenta">240p</div><div class="elemento-detalle">A2.0 · Reefer Incident Response: When the Gense</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">story_b_listening (E3)</div><div class="elemento-cuenta">105s</div><div class="elemento-detalle">Berth Coordination · Tripartite Briefing</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">key_vocabulary</div><div class="elemento-cuenta">20</div><div class="elemento-detalle">canon REGLA v2.6 #3</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">language_functions (E5)</div><div class="elemento-cuenta">5</div><div class="elemento-detalle">F1-F5 canon</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">grammar_items</div><div class="elemento-cuenta">7</div><div class="elemento-detalle">CEFR-derived</div></div></div>
+</div>
+<div class="bloque-card" style="border-top-color: #1E88E5;">
+  <div class="bloque-header"><div>
+    <span class="bloque-tipo" style="background: #1E88E5;">B4 · APROPIACION</span>
+    <div class="bloque-titulo">Describing Roles & Operations · The 5 Master Functions of Banana Cold Chain</div>
+    <div class="bloque-meta"><span class="tag tag-rap">RA4</span> <span class="tag tag-criterio">C06</span></div>
+  </div></div>
+  <div class="elementos-grid">
+    <div class="elemento-card"><div class="elemento-titulo">story_a_reading (E1)</div><div class="elemento-cuenta">245p</div><div class="elemento-detalle">A2.1 · Inside the Cold Chain Coordinator's Day </div></div>
+    <div class="elemento-card"><div class="elemento-titulo">story_b_listening (E3)</div><div class="elemento-cuenta">115s</div><div class="elemento-detalle">Operations Briefing · Pre-Departure Cold</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">key_vocabulary</div><div class="elemento-cuenta">20</div><div class="elemento-detalle">canon REGLA v2.6 #3</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">language_functions (E5)</div><div class="elemento-cuenta">5</div><div class="elemento-detalle">F1-F5 canon</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">grammar_items</div><div class="elemento-cuenta">6</div><div class="elemento-detalle">CEFR-derived</div></div></div>
+</div>
+<div class="bloque-card" style="border-top-color: #D81B60;">
+  <div class="bloque-header"><div>
+    <span class="bloque-tipo" style="background: #D81B60;">BT · TRANSFERENCIA</span>
+    <div class="bloque-titulo">Final Mission · Pre-Departure Banana Reefer Compliance Check & Tripartite Handov</div>
+    <div class="bloque-meta"> <span class="tag tag-criterio">C08</span></div>
+  </div></div>
+  <div class="elementos-grid">
+    <div class="elemento-card"><div class="elemento-titulo">mission_brief</div><div class="elemento-cuenta">✓</div><div class="elemento-detalle">El MV CARIBBEAN STAR (reefer ship Star Reefers · 240 reefers</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">sub-fases ABP</div><div class="elemento-cuenta">5</div><div class="elemento-detalle">total 12.0h ≤12h canon</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">materiales_simulacion</div><div class="elemento-cuenta">8</div><div class="elemento-detalle">templates + checklists</div></div>
+    <div class="elemento-card"><div class="elemento-titulo">rúbrica capstone</div><div class="elemento-cuenta">6</div><div class="elemento-detalle">criterios → E-Misión</div></div></div>
+</div>
+<div class="section-title">🔄 PARTE 2 · `_produces_evidencia` Mapping (Vivero Evidencias E1-E6+E-Misión)</div>
+<div class="evidencias-flow">
+  <div class="evid-row">
+    <div class="badge" style="background: #1976D2;">E1</div>
+    <div class="source">B1 · <code>story_a_reading</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">PM-2.3</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #388E3C;">E2</div>
+    <div class="source">B1 · <code>task_writing_derivada</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">PM-2.4</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #F57C00;">E3</div>
+    <div class="source">B2 · <code>story_b_listening</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">PM-2.6</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #C2185B;">E4-parcial</div>
+    <div class="source">B2 · <code>task_speaking_derivada</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">PM-2.8</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #C2185B;">E4-final</div>
+    <div class="source">B3 · <code>task_speaking_derivada</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">PM-2.8</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #7B1FA2;">E5</div>
+    <div class="source">B4 · <code>task_speaking_derivada</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">PM-2.9</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #00796B;">E6</div>
+    <div class="source">B2 · <code>task_consolidacion_E6_derivada</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">PM-4.2</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #6C757D;">E-Misión</div>
+    <div class="source">BT · <code>mission_brief</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">PM-3.5</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #6C757D;">E-Misión</div>
+    <div class="source">BT · <code>rubrica_abp_capstone</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">PM-3.5</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #6C757D;">E2 (cara reading-to-writing transfer)</div>
+    <div class="source">B1 · <code>F3: Reading and reporting basic equipmen</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #C2185B;">E4-parcial (cara RA2)</div>
+    <div class="source">B2 · <code>F1: Initiating a VHF call (calling and i</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #C2185B;">E4-parcial (cara RA2)</div>
+    <div class="source">B2 · <code>F2: Acknowledging messages (Roger/Wilco/</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #C2185B;">E4-parcial (cara RA2)</div>
+    <div class="source">B2 · <code>F3: Spelling with NATO Phonetic Alphabet</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #C2185B;">E4-parcial (cara RA2 · Bosun Mejía generador de demanda)</div>
+    <div class="source">B2 · <code>F4: Requesting clarification (Say again </code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #6C757D;">E5 (cara RA2 · si funciones movilizadas en Role Carousel S9 · NO directo · E5 está en B4)</div>
+    <div class="source">B2 · <code>F5: Using message markers (INSTRUCTION ·</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #C2185B;">E4-final (cara RA3)</div>
+    <div class="source">B3 · <code>F1: Reporting current operations (presen</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #C2185B;">E4-final (cara RA3)</div>
+    <div class="source">B3 · <code>F2: Predicting and planning (conditional</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #C2185B;">E4-final (cara RA3)</div>
+    <div class="source">B3 · <code>F3: Reporting completed actions (present</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #C2185B;">E4-final (cara RA3)</div>
+    <div class="source">B3 · <code>F4: Describing certifications (passive v</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #C2185B;">E4-final (cara RA3 · primary)</div>
+    <div class="source">B3 · <code>F5: Requesting/permitting/prohibiting (m</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #6C757D;">E5 (cara RA4 · primary)</div>
+    <div class="source">B4 · <code>F1: Describing roles (5 master functions</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #6C757D;">E5 (cara RA4)</div>
+    <div class="source">B4 · <code>F2: Describing maneuvers (mooring · dock</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #6C757D;">E5 (cara RA4)</div>
+    <div class="source">B4 · <code>F3: Describing weather impact on operati</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #6C757D;">E5 (cara RA4)</div>
+    <div class="source">B4 · <code>F4: Describing cargo states (pre-cooled </code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div>
+  <div class="evid-row">
+    <div class="badge" style="background: #6C757D;">E5 (cara RA4) · E-Misión (capstone)</div>
+    <div class="source">B4 · <code>F5: Describing chain of command (command</code></div>
+    <div class="session">→</div>
+    <div class="pm-dest">?</div>
+  </div></div><div class="section-title">✅ Validation Checks (6 BLOQUEANTES)</div><div class="checks-grid">
+<div class="check-card check-pass"><div class="check-name">1. scope_diferenciado_por_tipo_bloque</div><span class="check-status">PASS</span></div>
+<div class="check-card check-pass"><div class="check-name">2. apertura_scope_transversal</div><span class="check-status">PASS</span></div>
+<div class="check-card check-pass"><div class="check-name">3. apropiacion_scope_completo_por_rap</div><span class="check-status">PASS</span></div>
+<div class="check-card check-pass"><div class="check-name">4. transferencia_scope_capstone</div><span class="check-status">PASS</span></div>
+<div class="check-card check-pass"><div class="check-name">5. cobertura_criterios_canon_heredada</div><span class="check-status">PASS</span></div>
+<div class="check-card check-pass"><div class="check-name">6. traceability_matriz_completa</div><span class="check-status">PASS</span></div></div>
+
+<div class="header" style="background: #007832; margin-top: 32px;">
+  <h1>🎓 Resumen Ejecutivo PM-1.2 v4.2</h1>
+  <div class="meta">
+    Scope diferenciado por tipo_bloque · 3 schemas distintos · APERTURA motivacional+diagnóstico (NO conocimiento nuevo · canon Sergio) ·
+    APROPIACIÓN vivero de evidencias formales (Story A E1 · task writing E2 · Story B E3 · task speaking E4 · functions E5 · vocab+grammar E6) ·
+    TRANSFERENCIA capstone ABP (5 sub-fases · 12h · E-Misión) · 8 evidencias canon mapeadas · 6/6 PASS · listo cascade Step 1.4 PM-2.0
+  </div>
+</div>
+
+</body></html>
