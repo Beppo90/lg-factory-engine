@@ -2,7 +2,7 @@
 
 **Status:** Capa fundacional del sistema — referencia obligatoria para todos los PM-2.x, PM-3.x y PM-4.x
 **Alcance CEFR:** A1.1 — A2.2
-**Versión:** 3.1 — 2026-05-01 (v3.1 agrega REGLA 11 anti-prescriptive prompt operacional · canonizada del cascade Step 1.1 IMARPOR-V2 · v3.0 fue paradigm shift simplificado post-PM-0.0)
+**Versión:** 3.2 — 2026-05-01 (v3.2 agrega REGLA 12 traceability `_anclaje_matriz` + NEW validation_check 7 traceability_matriz_completa · canonizada del re-cascade IMARPOR-V2 · v3.1 fue REGLA 11 anti-prescriptive · v3.0 fue paradigm shift simplificado post-PM-0.0)
 **Versiones legacy:** v1.0 (2026-04-18) · v1.1 (2026-04-20 · pm-0-context.json schema)
 
 > [!warning] PARADIGM SHIFT v3.0 · 2026-05-01
@@ -224,6 +224,158 @@ universal.
 **Aplicabilidad cross-PM:** REGLA 11 aplica a TODOS los subagentes downstream (PM-1.1 · PM-1.2 · PM-2.x · PM-3.x · etc.) cuando su master prompt declare libertad LLM. Documentado en memory operacional `feedback_anti_patron_16_prompt_operacional_prescriptivo.md` (trigger interno orchestrator).
 
 **Caso operacional confirmado:** Step 1.1 IMARPOR-V2 RE-RUN · 19 keys emergentes (vs 25 prescriptive) · 6 innovaciones libres detectadas · 6/6 validation PASS · 2026-05-01.
+
+### REGLA 12 — TRACEABILITY EXPLÍCITA · `_anclaje_matriz` EN CADA ELEMENTO PEDAGÓGICO (v3.2 · 2026-05-01)
+
+> [!warning] Disciplina canon "nada por fuera de la matriz" · Sergio Cortés enfático
+>
+> REGLA 10 declara LIBERTAD LLM. REGLA 11 declara cómo el orchestrator debe respetarla. REGLA 12 declara el LÍMITE de esa libertad: **cada elemento de la capa pedagógica DEBE tener `_anclaje_matriz` visible vinculando a saberes/criterios específicos canon de la matriz alineada (PM-0.0)**.
+
+**Trigger del problema:** detectado 2026-05-01 en cascade Phase 1 IMARPOR-V2. PM-0 v3.1 RE-RUN tenía libertad LLM correcta · pero NO vinculaba explícitamente cada elemento (personajes · principios · grammar · final mission · L1 policy · evidencias) a la matriz. El lector NO sabía CUÁL saber/criterio específico anclaba a cada elemento. Sergio enfático: *"EL AGENTE TIENE LIBERTAD TOTAL PERO SU LÍMITE SIEMPRE SON LOS SABERES Y CRITERIOS QUE ESTÁN ALINEADOS EN LA MATRIZ."*
+
+**Mecánica canónica del traceability:**
+
+Cada elemento de `pm-0-context.json` v3.2 DEBE incluir sub-campo `_anclaje_matriz` (o equivalente nombrado consistentemente) con referencia explícita a saberes/criterios específicos canon:
+
+```jsonc
+{
+  "personajes": [
+    {
+      "nombre": "...",
+      "rol": "...",
+      "_anclaje_matriz": {
+        "saberes_que_modela": ["RA1.SC.1", "RA1.SP.2"],
+        "criterios_especificos_que_evalúa": ["C01", "C04"],
+        "raps_que_atraviesa": ["RA1", "RA2", "RA3"]
+      }
+    }
+  ],
+  "final_mission": {
+    "scenario": "...",
+    "_anclaje_matriz": {
+      "criterios_específicos_evaluados": ["C08"],
+      "saberes_movilizados": ["RA4.SC.1", "RA4.SP.3"],
+      "evidencia_capstone": "E-Misión"
+    }
+  },
+  "principios_pedagogicos_aplicables": [
+    {
+      "principio": "...",
+      "_anclaje_matriz": {
+        "cefr_progresion_canon": "A1.2 → A2.1",
+        "evidencias_anchor": ["E1", "E3", "E5"],
+        "saberes_progresion": ["RA1.SP.1", "RA3.SP.2"]
+      }
+    }
+  ],
+  "grammar_focus_per_session": {
+    "S3": [
+      {
+        "estructura": "verb to be · descripción equipo",
+        "_anclaje_matriz": {
+          "rap_target": "RA1",
+          "criterio_que_demanda": "C01",
+          "cefr_subnivel": "A1.2"
+        }
+      }
+    ]
+  },
+  "l1_policy_per_session": {
+    "S1-S3": {
+      "porcentaje": "30%",
+      "_anclaje_matriz": {
+        "evidencias_anchor": ["E1"],
+        "criterios_especificos": ["C01"]
+      }
+    }
+  },
+  "evidencias_formales_traceability": {
+    "E1_S3_Reading": {"criterio_especifico": "C01", "rap": "RA1", "instrumento": "Cuestionario No 1"},
+    "E2_S4_Writing": {"criterio_especifico": "C02", "rap": ["RA1", "RA3"], "instrumento": "Lista de Verificación No 2"},
+    "E3_S5_Listening": {"criterio_especifico": "C03", "rap": "RA2", "instrumento": "Lista de Verificación No 3"},
+    "E4parcial_S6_Speaking": {"criterio_especifico": "C04", "rap": ["RA2", "RA3"], "instrumento": "Escala de Estimación No 4"},
+    "E4final_S8_Speaking": {"criterio_especifico": "C05", "rap": "RA3", "instrumento": "Escala de Estimación No 4"},
+    "E5_S9_LangFunctions": {"criterio_especifico": "C06", "rap": ["RA3", "RA4"], "instrumento": "Escala de Estimación No 5"},
+    "E6_S6_Cuestionario": {"criterio_especifico": "C07", "rap": ["RA1", "RA2", "RA3", "RA4"], "instrumento": "Cuestionario No 6"},
+    "EMision_S12_ABP": {"criterio_especifico": "C08", "rap": "RA4", "instrumento": "Rúbrica ABP"}
+  }
+}
+```
+
+**NEW validation_check 7 · `traceability_matriz_completa` (BLOQUEANTE):**
+
+```python
+def check_traceability_matriz_completa(pm0_context):
+    """Cuenta anclajes recursivamente · 0 elementos pedagógicos sin _anclaje_matriz."""
+    anclajes_detectados = 0
+    elementos_sin_anclaje = []
+
+    def walk(obj, path=""):
+        nonlocal anclajes_detectados
+        if isinstance(obj, dict):
+            es_elemento_pedagogico = any(k in obj for k in ['nombre', 'rol', 'principio', 'estructura', 'porcentaje', 'scenario'])
+            tiene_anclaje = any(k in obj for k in ['_anclaje_matriz', 'criterios_especificos_que_evalúa', 'saberes_movilizados', 'criterio_específico'])
+            if es_elemento_pedagogico:
+                if tiene_anclaje:
+                    anclajes_detectados += 1
+                else:
+                    elementos_sin_anclaje.append(path)
+            for k, v in obj.items():
+                walk(v, f"{path}.{k}")
+        elif isinstance(obj, list):
+            for i, item in enumerate(obj):
+                walk(item, f"{path}[{i}]")
+
+    walk(pm0_context)
+    return {
+        "id": 7,
+        "name": "traceability_matriz_completa",
+        "status": "PASS" if len(elementos_sin_anclaje) == 0 else "FAIL",
+        "anclajes_detectados": anclajes_detectados,
+        "elementos_sin_anclaje": elementos_sin_anclaje
+    }
+```
+
+Si check 7 FAIL · output marcado `enriched: false` · BLOQUEANTE para Phase 2 (PM-2.x ACs no se generan).
+
+**Trigger interno orchestrator** (ANTES de dispatchear Agent que ejecute PM-0 v3.2):
+
+1. ¿La matriz alineada (PM-0.0) incluye `criterios_evaluacion_especificos_canon_sistema`? Si NO · STOP · pedirlos a Sergio antes de PM-0 (REGLA 9 PM-0.0).
+2. ¿Mi prompt al Agent enfatiza TRACEABILITY EXPLÍCITA con ejemplos de `_anclaje_matriz`? Si NO · refactor.
+3. ¿Mi prompt incluye check 7 `traceability_matriz_completa` como bloqueante? Si NO · agregar.
+4. ¿El Agent puede acceder a `pm-0-0-matriz-alineada.json` con criterios C01-C08 visibles? Si NO · adjuntarlo.
+
+**Aplicabilidad cross-PM (TRACEABILITY se propaga downstream):**
+
+| PM | `_anclaje_matriz` requerido en |
+|---|---|
+| PM-0.0 | criterios específicos sistema asignados a RAPs · overlap documentation |
+| PM-0 v3.2 | personajes · principios · grammar · L1 · evidencias · final mission |
+| PM-1.1 | bloques macrotemáticos → declarar saberes/criterios específicos cubiertos |
+| PM-1.2 | scope per RAP → fuentes auténticas vinculadas a saberes específicos |
+| PM-2.x ACs | cada AC → declara `rap_target` + `criterio_específico_que_demanda` + `saberes_que_moviliza` |
+| PM-2.11 | matriz GFPI-F-134 hereda traceability completa |
+| PM-3.6 GFPI-F-135 | cada actividad documentada con anclaje a evidencia E1-E6+E-Misión |
+| PM-3.7 V04 | multi-RAP rows con criterios específicos sistema visibles |
+
+**Caso operacional confirmado:** IMARPOR-V2 re-cascade · 2026-05-01 ·
+- pm-0-context.json v3.2 · 21 keys · 51,794 bytes · 44 anclajes detectados recursivamente · 7/7 validation PASS
+- 8/8 personajes con `_anclaje_matriz`
+- 5/5 principios + P6 emergente con `_anclaje_matriz`
+- 9/9 grammar focus per session con `_anclaje_matriz`
+- 8/8 evidencias formales mapeadas (S3→E1·C01 ... S12→E-Misión·C08)
+- L1 policy 4 bandas (S1-S3 / S4-S5 / S6-S8 / S9-S12) con `_anclaje_matriz`
+- Final mission `_anclaje_matriz` C08 RA4 evidencia capstone
+
+**Schema actualizado v3.2 — fields obligatorios:**
+
+| Field | Required | Origen |
+|-------|----------|--------|
+| (REGLA 4 v3.0 fields) | ✅ | metadata + universo + cefr + principios + matriz_ref |
+| `evidencias_formales_traceability` | ✅ NEW v3.2 | mapping S3-S12 → E1-E6+E-Misión con criterio_especifico + rap + instrumento |
+| `_anclaje_matriz` (en cada elemento pedagógico) | ✅ NEW v3.2 | obligatorio en personajes · principios · grammar · L1 · final_mission |
+
+Documentado en memory operacional `feedback_traceability_anclaje_matriz_canon.md` (trigger interno orchestrator + pattern cross-PM).
 
 ---
 

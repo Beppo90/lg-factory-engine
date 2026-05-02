@@ -10,8 +10,8 @@
 |-------|-------|
 | **Código** | PM-0.0 |
 | **Nombre** | Matriz Pedagógica Alineadora · alineación curricular pre-Fase 1 |
-| **Versión** | 1.1 |
-| **Last Verified** | 2026-05-01 (v1.1 agrega REGLA 8 anti-prescriptive prompt operacional) |
+| **Versión** | 1.2 |
+| **Last Verified** | 2026-05-01 (v1.2 agrega REGLA 9 criterios específicos canon sistema con anclas E1-E6+E-Misión · v1.1 agregó REGLA 8 anti-prescriptive prompt operacional) |
 | **Destinatario** | Pipeline (insumo CRÍTICO de PM-0 · PM-1.1 · PM-1.2 · PM-2.x · PM-2.11 · PM-3.7) |
 | **Función** | Tomar la información curricular SOFÍA agregada (saberes de concepto + saberes de proceso + criterios de evaluación) y ALINEARLA explícitamente por cada RAP del programa. Produce matriz pedagógica que se vuelve fundamento de toda la cadena downstream. |
 | **Analogía** | Es el "ADN curricular pre-clasificado" · sin esto, todo el pipeline opera sobre información agregada y la alineación se reconstruye retroactivamente al final (PM-2.11) · con esto, el diseño es verdaderamente de adentro hacia afuera por RAP desde día 0. |
@@ -580,3 +580,136 @@ Documentado en `feedback_anti_patron_16_prompt_operacional_prescriptivo.md` (mem
 ---
 
 *PM-0.0 v1.1 · 2026-05-01 (REGLA 8 anti-prescriptive prompt operacional · canonizada del cascade Step 1.1 IMARPOR-V2)*
+
+---
+
+## REGLA 9 — CRITERIOS ESPECÍFICOS CANON SISTEMA CON ANCLAS EVIDENCIAS (v1.2 · 2026-05-01)
+
+> [!warning] Detectado vía REGLA 21 trigger mutual · re-cascade IMARPOR-V2
+>
+> Sergio enfático: "EL AGENTE TIENE LIBERTAD TOTAL PERO SU LÍMITE SIEMPRE SON LOS SABERES Y CRITERIOS QUE ESTÁN ALINEADOS EN LA MATRIZ. La libertad del LLM debe tomar como primera fuente de verdad este insumo."
+>
+> La matriz alineada PM-0.0 NO basta con saberes/criterios SOFÍA básicos. Debe incluir TAMBIÉN criterios específicos canon sistema (con anclas a evidencias E1-E6 + E-Misión + sesiones + instrumentos + CEFR subniveles). Estos son la TRACEABILITY canon del sistema FPI Factory.
+
+### REGLA 9.1 — Schema canónico criterios específicos sistema
+
+`pm-0-0-input.json` debe incluir sección NEW:
+
+```json
+"criterios_evaluacion_especificos_canon_sistema": [
+  {
+    "id": "C01",
+    "criterio": "<descripción operacional verbatim>",
+    "rap_target": "RAP-XX" | ["RAP-XX", "RAP-YY"],
+    "cefr_subnivel": "A1.X" | "A1.X-A2.X",
+    "evidencia": "E1" | "E2" | "E3" | "E4-parcial" | "E4-final" | "E5" | "E6" | "E-Misión",
+    "evidencia_nombre": "Reading" | "Writing" | "Listening" | "Speaking parcial" | "Speaking final" | "Language Functions" | "Cuestionario Consolidado" | "Misión Final ABP",
+    "sesion": "S3" | "S4" | "S5" | "S6" | "S8" | "S9" | "S12",
+    "instrumento": "Cuestionario No N" | "Lista de Verificación No N" | "Escala de Estimación No N" | "Rúbrica ABP X criterios"
+  }
+]
+```
+
+### REGLA 9.2 — Distribución por RAP
+
+Cada RAP en `pm-0-0-matriz-alineada.json` debe incluir 4 sub-arrays (NO 3):
+
+```json
+"raps": [
+  {
+    "rap_id": "RA1",
+    "saberes_conceptos_y_principios": [...],
+    "saberes_proceso": [...],
+    "criterios_evaluacion": [...],  // SOFÍA generales (existente)
+    "criterios_evaluacion_especificos_canon_sistema": [  // NEW
+      {
+        "id": "C01",
+        "criterio": "...",
+        "cefr_subnivel": "A1.2",
+        "evidencia": "E1 · Reading",
+        "sesion": "S3",
+        "instrumento": "Cuestionario No 1"
+      }
+    ],
+    "rationale_alineacion": "<DEBE referenciar cómo C0X anclan a evidencias canon>"
+  }
+]
+```
+
+### REGLA 9.3 — Asignación basada en `rap_target`
+
+- Criterio con `rap_target: "RAP-01"` → solo aparece en RA1
+- Criterio con `rap_target: ["RAP-01", "RAP-03"]` → aparece en RA1 Y RA3 (overlap multi-RAP documentado)
+- Criterio con `rap_target: ["RAP-01", "RAP-02", "RAP-03", "RAP-04"]` → 4-way overlap (típico para E6 Cuestionario Consolidado)
+
+### REGLA 9.4 — Cobertura 100% obligatoria
+
+Todos los criterios específicos sistema deben asignarse a 1+ RAPs · 0 huérfanos.
+
+`alignment_audit` debe incluir NEW sub-bloque:
+
+```json
+"alignment_audit": {
+  "criterios_especificos_canon_sistema": {
+    "total_input": 8,
+    "total_asignados_en_raps": 14,  // suma · puede ser > 8 si overlaps multi-RAP
+    "huerfanos": [],
+    "con_overlap": [
+      {"id": "C02", "raps": ["RA1", "RA3"], "razon_overlap": "..."},
+      {"id": "C04", "raps": ["RA2", "RA3"], "razon_overlap": "..."},
+      ...
+    ]
+  },
+  "trazabilidad_evidencias_E1_E6_E_Mision": {
+    "E1_Reading_S3": "RA1 (vocabulario portuario · partes barco)",
+    "E2_Writing_S4": "RA1 + RA3 (Inspection Report · gramática)",
+    "E3_Listening_S5": "RA2 (SMCP audio auténtico)",
+    "E4_parcial_Speaking_S6": "RA2 + RA3 (VHF NATO Phonetic)",
+    "E6_Cuestionario_S6": "4-way (consolidación)",
+    "E4_final_Speaking_S8": "RA3 (berthing tripartito)",
+    "E5_Language_Functions_S9": "RA3 + RA4 (5 master functions Role Carousel)",
+    "E_Mision_S12": "RA4 (descripción funciones · panel ABP)"
+  }
+}
+```
+
+### REGLA 9.5 — NEW validation_check 8
+
+Agregar a `validation_checks` array:
+
+```json
+{
+  "id": 8,
+  "name": "criterios_especificos_canon_sistema_cobertura_100",
+  "status": "PASS|FAIL",
+  "evidence": "<N>/<N> criterios específicos C0X asignados a 1+ RAPs · 0 huérfanos · <M> overlaps documentados con razón pedagógica"
+}
+```
+
+Validation_checks ahora son 8 (originales 7 + NEW 8).
+
+### REGLA 9.6 — Caso operacional confirmado IMARPOR-V2
+
+Distribución re-cascade 2026-05-01:
+- RA1 RECONOCER · 3 criterios (C01, C02, C07)
+- RA2 COMPRENDER · 3 criterios (C03, C04, C07)
+- RA3 APLICAR · 5 criterios (C02, C04, C05, C06, C07) ← densidad máxima gramática
+- RA4 DESCRIBIR · 3 criterios (C06, C07, C08)
+- Total asignados: 14 (8 input · 4 multi-RAP overlaps · 1 4-way overlap)
+- Cobertura 100% · 0 huérfanos
+- 8/8 validation_checks PASS
+
+### REGLA 9.7 — Aplicabilidad cross-program
+
+Cuando se inicia un nuevo programa · el orchestrator SIEMPRE solicita a Sergio (o lee del form):
+1. Saberes SOFÍA básicos (siempre han estado)
+2. Criterios SOFÍA generales (siempre han estado)
+3. **NEW**: Criterios específicos canon sistema con anclas evidencias
+
+Si los criterios específicos NO están disponibles · STOP · pedir a Sergio antes de PM-0.0 (evita matriz incompleta y cascade contaminado).
+
+Documentado en `feedback_traceability_anclaje_matriz_canon.md` (memoria operacional).
+
+---
+
+*PM-0.0 v1.2 · 2026-05-01 (REGLA 9 criterios específicos canon sistema con anclas E1-E6+E-Misión · canonizada del re-cascade IMARPOR-V2)*

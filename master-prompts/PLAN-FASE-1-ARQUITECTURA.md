@@ -1,8 +1,8 @@
 ---
 title: PLAN-FASE-1-ARQUITECTURA — Phase 1 (Scope) + Phase 0 (Matriz Pedagógica Alineadora)
-version: 1.1
+version: 1.2
 last_updated: 2026-05-01
-status: v1.1 agrega §10 Anti-Prescriptive Pattern · canonizado del cascade Step 1.1 IMARPOR-V2 (anti-patrón #16) · v1.0 fue NEW workflow Phase 0+1 post-paradigm shift PM-0.0 (DM v3.0)
+status: v1.2 agrega §11 Criterios Específicos Pattern + §12 Traceability Pattern · canonizado del re-cascade IMARPOR-V2 con matriz canon completa · v1.1 fue §10 Anti-Prescriptive · v1.0 fue NEW workflow Phase 0+1 post-paradigm shift PM-0.0 (DM v3.0)
 canon: Sergio Cortés decisión arquitectónica 2026-05-01
 ---
 
@@ -380,3 +380,206 @@ ANTES de dispatchear cualquier Agent que ejecute un PM:
 ### §10.5 · Memoria operacional referenciada
 
 Documentado en `feedback_anti_patron_16_prompt_operacional_prescriptivo.md` (memory snapshot · trigger interno orchestrator · pattern canonical · template reusable cross-PM).
+
+---
+
+## §11 · CRITERIOS ESPECÍFICOS SISTEMA — PATTERN (v1.2 · 2026-05-01)
+
+### §11.1 · Trigger del problema
+
+**Detectado:** 2026-05-01 re-cascade IMARPOR-V2. Después de cerrar §10 (anti-prescriptive), Sergio observó que la matriz alineada (PM-0.0 v1.0) producía solo `saberes_conceptos_y_principios` + `saberes_proceso` + `criterios_evaluacion` SOFÍA básicos. Faltaban los **criterios específicos canon del sistema** con anclas a evidencias E1-E6 + E-Misión, sesiones, instrumentos y subniveles CEFR. Sin ellos, la traceability downstream (cada AC → un criterio específico → una evidencia → un instrumento) no podía cerrarse.
+
+Sergio aportó el set de 8 criterios específicos canónicos:
+
+| ID | RAP target | CEFR | Evidencia | Sesión | Instrumento |
+|---|---|---|---|---|---|
+| C01 | RA1 | A1.2 | E1 Reading | S3 | Cuestionario No 1 |
+| C02 | RA1+RA3 | A1.2-A1.3 | E2 Writing | S4 | Lista de Verificación No 2 |
+| C03 | RA2 | A1.3 | E3 Listening | S5 | Lista de Verificación No 3 |
+| C04 | RA2+RA3 | A1.3-A2.0 | E4 Speaking parcial | S6 | Escala de Estimación No 4 |
+| C05 | RA3 | A2.0 | E4 Speaking final | S8 | Escala de Estimación No 4 |
+| C06 | RA3+RA4 | A2.0-A2.1 | E5 Language Functions | S9 | Escala de Estimación No 5 |
+| C07 | RA1+RA2+RA3+RA4 (4-way) | consolidación | E6 Cuestionario | S6 | Cuestionario No 6 |
+| C08 | RA4 | A2.1 | E-Misión ABP | S12 | Rúbrica ABP |
+
+### §11.2 · Schema canonical
+
+El form xlsx (o el orchestrator) DEBE capturar la sección `criterios_evaluacion_especificos_canon_sistema` en `pm-0-0-input.json`:
+
+```json
+"criterios_evaluacion_especificos_canon_sistema": [
+  {
+    "id": "C01",
+    "criterio": "<descripción operacional>",
+    "rap_target": "RAP-XX" | ["RAP-XX", "RAP-YY"],
+    "cefr_subnivel": "A1.X" | "A1.X-A2.X",
+    "evidencia": "E1" | "E2" | ... | "E6" | "E-Misión",
+    "evidencia_nombre": "Reading" | "Writing" | "Listening" | "Speaking parcial" | "Speaking final" | "Language Functions" | "Cuestionario Consolidado" | "Misión Final ABP",
+    "sesion": "S3" | "S4" | ... | "S12",
+    "instrumento": "Cuestionario No N" | "Lista de Verificación No N" | "Escala de Estimación No N" | "Rúbrica ABP X criterios"
+  }
+]
+```
+
+### §11.3 · Distribución por RAP (4 sub-arrays)
+
+PM-0.0 v1.1+ alinea estos criterios a RAPs basándose en `rap_target`. Cada RAP en `pm-0-0-matriz-alineada.json` ahora tiene 4 sub-arrays:
+
+```jsonc
+{
+  "rap_id": "RA1",
+  "saberes_conceptos_y_principios": [...],     // SOFÍA agregados
+  "saberes_proceso": [...],                     // SOFÍA agregados
+  "criterios_evaluacion": [...],                // SOFÍA generales
+  "criterios_evaluacion_especificos_canon_sistema": [   // NEW · subset según rap_target
+    {"id": "C01", ...},
+    {"id": "C02", ...},   // overlap RA1+RA3
+    {"id": "C07", ...}    // overlap 4-way
+  ]
+}
+```
+
+**Overlaps multi-RAP** se documentan explícitamente. Ejemplo IMARPOR-V2: 4 overlaps (C02 RA1+RA3 · C04 RA2+RA3 · C06 RA3+RA4 · C07 4-way RA1+RA2+RA3+RA4). Distribución total: RA1=3 · RA2=3 · RA3=5 · RA4=3 · 14 asignaciones para 8 criterios únicos.
+
+### §11.4 · Trigger interno orchestrator
+
+ANTES de dispatchear PM-0.0:
+1. ¿El form/input incluye `criterios_evaluacion_especificos_canon_sistema`? Si NO · STOP · pedirlos a Sergio.
+2. ¿Cobertura 100% E1-E6+E-Misión? Si NO · gap → completar antes de PM-0.0.
+3. ¿Cada criterio tiene los 8 campos canónicos del schema §11.2? Si NO · validation FAIL.
+
+### §11.5 · NEW validation_check 8 PM-0.0 (BLOQUEANTE)
+
+```python
+def check_criterios_especificos_canon_completos(matriz):
+    """8 criterios C01-C08 deben estar asignados a >=1 RAP cada uno · cobertura 100%."""
+    asignados = set()
+    for rap in matriz["raps"]:
+        for crit in rap.get("criterios_evaluacion_especificos_canon_sistema", []):
+            asignados.add(crit["id"])
+    canon_required = {"C01","C02","C03","C04","C05","C06","C07","C08"}
+    return {
+        "id": 8,
+        "name": "criterios_especificos_canon_completos",
+        "status": "PASS" if asignados >= canon_required else "FAIL",
+        "asignados": sorted(asignados),
+        "missing": sorted(canon_required - asignados)
+    }
+```
+
+---
+
+## §12 · TRACEABILITY PATTERN — `_anclaje_matriz` CROSS-PM (v1.2 · 2026-05-01)
+
+### §12.1 · Trigger del problema
+
+**Detectado:** 2026-05-01 re-cascade IMARPOR-V2. PM-0 v3.1 RE-RUN (post §10) tenía libertad LLM correcta · pero NO vinculaba explícitamente cada elemento (personajes · principios · grammar · final mission · L1 policy · evidencias) a la matriz canon. El lector NO sabía CUÁL saber/criterio específico anclaba a cada elemento. Sergio enfático: *"EL AGENTE TIENE LIBERTAD TOTAL PERO SU LÍMITE SIEMPRE SON LOS SABERES Y CRITERIOS QUE ESTÁN ALINEADOS EN LA MATRIZ."*
+
+### §12.2 · Pattern canonical
+
+Cada elemento de capa pedagógica (en cualquier PM downstream) DEBE incluir sub-campo `_anclaje_matriz` (o nombrado consistentemente) vinculando a saberes/criterios específicos canon:
+
+```jsonc
+{
+  "personaje": {
+    "nombre": "...",
+    "_anclaje_matriz": {
+      "saberes_que_modela": ["RA1.SC.1"],
+      "criterios_especificos_que_evalúa": ["C01", "C04"],
+      "raps_que_atraviesa": ["RA1", "RA2"]
+    }
+  },
+  "principio_pedagogico": {
+    "principio": "...",
+    "_anclaje_matriz": {
+      "cefr_progresion_canon": "A1.2 → A2.1",
+      "evidencias_anchor": ["E1", "E5"],
+      "saberes_progresion": ["RA1.SP.1"]
+    }
+  },
+  "grammar_focus_session": {
+    "estructura": "...",
+    "_anclaje_matriz": {
+      "rap_target": "RA1",
+      "criterio_que_demanda": "C01",
+      "cefr_subnivel": "A1.2"
+    }
+  },
+  "final_mission": {
+    "scenario": "...",
+    "_anclaje_matriz": {
+      "criterios_específicos_evaluados": ["C08"],
+      "saberes_movilizados": ["RA4.SP.3"],
+      "evidencia_capstone": "E-Misión"
+    }
+  }
+}
+```
+
+### §12.3 · Validation check canonical (cross-PM)
+
+Cada PM downstream agrega un `traceability_matriz_completa` check al final de su validation suite:
+
+```python
+def check_traceability(output):
+    """Recursivamente cuenta anclajes · 0 elementos pedagógicos sin _anclaje_matriz."""
+    anclajes = 0
+    sin_anclaje = []
+    def walk(obj, path=""):
+        nonlocal anclajes
+        if isinstance(obj, dict):
+            es_pedagogico = any(k in obj for k in ['nombre','rol','principio','estructura','porcentaje','scenario'])
+            tiene_anclaje = any(k in obj for k in ['_anclaje_matriz','criterios_especificos_que_evalúa','saberes_movilizados','criterio_específico'])
+            if es_pedagogico:
+                if tiene_anclaje: anclajes += 1
+                else: sin_anclaje.append(path)
+            for k, v in obj.items(): walk(v, f"{path}.{k}")
+        elif isinstance(obj, list):
+            for i, item in enumerate(obj): walk(item, f"{path}[{i}]")
+    walk(output)
+    return {"name":"traceability_matriz_completa","status":"PASS" if not sin_anclaje else "FAIL",
+            "anclajes":anclajes,"sin_anclaje":sin_anclaje}
+```
+
+### §12.4 · Tabla aplicabilidad cross-PM
+
+| PM | `_anclaje_matriz` requerido en | Validation check |
+|---|---|---|
+| **PM-0.0** v1.2 | criterios específicos sistema asignados a RAPs · overlap documentation | check 8 `criterios_especificos_canon_completos` |
+| **PM-0** v3.2 | personajes · principios · grammar · L1 · evidencias · final_mission | check 7 `traceability_matriz_completa` |
+| **PM-1.1** v2.7.2+ | bloques macrotemáticos → declarar saberes/criterios específicos cubiertos | check `bloque_anclaje_completo` |
+| **PM-1.2** v4.2+ | scope per RAP → fuentes auténticas vinculadas a saberes específicos | check `fuentes_ancladas` |
+| **PM-2.x ACs** v3.x+ | cada AC → declara `rap_target` + `criterio_específico_que_demanda` + `saberes_que_moviliza` | check `ac_anclaje_explicito` |
+| **PM-2.11** v2.7+ | matriz GFPI-F-134 hereda traceability completa | check `gfpi_134_traceability_heredado` |
+| **PM-3.6** GFPI-F-135 v2.8+ | cada actividad documentada con anclaje a evidencia E1-E6+E-Misión | check `gfpi_135_evidencias_ancladas` |
+| **PM-3.7** V04 v2.1+ | multi-RAP rows con criterios específicos sistema visibles | check `v04_criterios_canon_visibles` |
+
+### §12.5 · Trigger interno orchestrator (3 checks pre-dispatch)
+
+ANTES de dispatchear cualquier PM downstream:
+
+1. **¿La matriz alineada (PM-0.0) incluye `criterios_evaluacion_especificos_canon_sistema`?**
+   - Si NO → STOP · re-run PM-0.0 con input completo §11.2
+
+2. **¿Mi prompt al Agent enfatiza TRACEABILITY EXPLÍCITA con ejemplos de `_anclaje_matriz`?**
+   - Si NO → refactor prompt (agregar bloque template §12.2)
+
+3. **¿Mi prompt incluye check `traceability_matriz_completa` como bloqueante?**
+   - Si NO → agregar al validation suite
+
+### §12.6 · Caso operacional confirmado · IMARPOR-V2 re-cascade
+
+- `pm-0-0-matriz-alineada.json` v1.1 · 22 keys · 8/8 criterios específicos asignados
+- `pm-0-context.json` v3.2 · 21 keys · 51,794 bytes · 44 anclajes detectados recursivamente · 7/7 validation PASS
+- 8/8 personajes con `_anclaje_matriz`
+- 5 principios + P6 emergente con `_anclaje_matriz`
+- 9/9 grammar focus per session con `_anclaje_matriz`
+- 8/8 evidencias formales mapeadas (S3→E1·C01 ... S12→E-Misión·C08)
+- 4 multi-RAP overlaps documentados (C02 RA1+RA3 · C04 RA2+RA3 · C06 RA3+RA4 · C07 4-way)
+- Dashboard COMPUESTO v2 · PARTE 1 matriz completa visible (4 RAPs × 4 columnas) · PARTE 2 capa pedagógica con anclajes visibles
+
+### §12.7 · Memoria operacional referenciada
+
+Documentado en `feedback_traceability_anclaje_matriz_canon.md` (memory snapshot · pattern canonical · template reusable cross-PM · trigger interno orchestrator).
+
+**Disciplina canon:** "nada por fuera de la matriz" — el LLM tiene libertad TOTAL pero su límite siempre son los saberes y criterios que están alineados en la matriz.

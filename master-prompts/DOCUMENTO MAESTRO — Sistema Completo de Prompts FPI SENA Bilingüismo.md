@@ -1,9 +1,10 @@
 ---
 title: DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo
-version: 3.1
+version: 3.2
 last_updated: 2026-05-01
 status: PARADIGM SHIFT FUNDAMENTAL · NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1. Sergio Cortés decisión arquitectónica 2026-05-01: el sistema diseñaba "de adentro hacia afuera" en teoría (DM declaraba UbD desde v2.0) pero en práctica reconstruía la matriz GFPI-F-134 retroactivamente en PM-2.11 (al final de Fase 2) usando información agregada que el LLM había procesado sin saber a qué RAP pertenecía cada saber/criterio. v3.0 corrige: PM-0.0 (NEW) toma información curricular SOFÍA agregada (saberes_conceptos + saberes_proceso + criterios_evaluacion + N RAPs · sin pre-clasificar) y ALINEA explícitamente por RAP. Output `pm-0-0-matriz-alineada.json` se vuelve fundamento pedagógico de toda la cadena downstream. PM-0 simplifica de 1077 → ~270 lines operacionales (5 principios maestros · libertad LLM · schema mínimo viable). Cascade impact: PM-0 + PM-1.1 + PM-1.2 + PM-2.0 + PM-2.x + PM-2.11 + PM-3.7 ahora consumen matriz alineada como insumo. PM-3.7 V04 multi-RAP rows se llenan con contenido REAL por RAP (no solo título RAP en R18-R21). DOCX/JSON learner-readable v2.7 (30 Activity Cards anatomy 6-bloque) preservado · NO afectado.
 previous_versions:
+  - "3.1 (2026-05-01) — Anti-patrón #16 prompt operacional prescriptivo canonizado · 4 master docs bumps (PM-0.0 v1.1 · PM-0 v3.1 · PLAN-FASE-1 v1.1 · DM v3.1)"
   - "3.0 (2026-05-01) — PARADIGM SHIFT FUNDAMENTAL · NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1 · PM-0 v1.x → v3.0 simplificado · cascade impact toda pipeline"
   - "2.7 (2026-04-22) — Learner-Readable Activity canonizada · 30 Activity Cards PM-3.6 G1 anatomy 6-bloque"
   - "2.6.6 (2026-04-21) — Paleta SENA institucional (verde #39A900 + azul oscuro #0B2E45 + verde oscuro #007832)"
@@ -1998,7 +1999,74 @@ Si check 2 NO o check 3 SÍ → STOP · refactor.
 
 ---
 
+## EXTENSIÓN v3.2 — CRITERIOS ESPECÍFICOS CANON SISTEMA + TRACEABILITY `_anclaje_matriz` (2026-05-01)
+
+**Trigger del bump:** Sergio detectó vía REGLA 21 trigger mutual (re-cascade IMARPOR-V2 después de §10/§11 anti-prescriptive) dos gaps adicionales:
+
+**Gap 1 · Matriz incompleta:** PM-0.0 v1.1 producía solo `saberes_conceptos_y_principios` + `saberes_proceso` + `criterios_evaluacion` SOFÍA básicos. Sergio aportó 8 criterios específicos canónicos del sistema (C01-C08) con anclas a evidencias E1-E6 + E-Misión, sesiones, instrumentos y subniveles CEFR. Sin ellos, la traceability downstream (cada AC → un criterio específico → una evidencia → un instrumento) NO podía cerrarse.
+
+**Gap 2 · Capa pedagógica sin traceability:** PM-0 v3.1 RE-RUN tenía libertad LLM correcta pero NO vinculaba explícitamente cada elemento (personajes · principios · grammar · final_mission · L1 policy · evidencias) a la matriz canon. El lector NO sabía CUÁL saber/criterio específico anclaba a cada elemento. Sergio enfático: *"EL AGENTE TIENE LIBERTAD TOTAL PERO SU LÍMITE SIEMPRE SON LOS SABERES Y CRITERIOS QUE ESTÁN ALINEADOS EN LA MATRIZ."*
+
+**Lección canonizada universal:**
+
+- La matriz alineada (PM-0.0) NO basta con saberes/criterios SOFÍA · DEBE incluir TAMBIÉN criterios específicos canon sistema con anclas a evidencias E1-E6 + E-Misión + sesiones + instrumentos + CEFR subniveles.
+- La capa pedagógica (PM-0 v3.x y downstream) NO inventa nada · cada elemento debe tener `_anclaje_matriz` explícito vinculando a saberes/criterios canon de la matriz alineada.
+- Disciplina canon: **"nada por fuera de la matriz"** — el LLM tiene libertad TOTAL pero su límite siempre son los saberes y criterios alineados.
+
+**8 criterios específicos canon sistema (C01-C08):**
+
+| ID | RAP | CEFR | Evidencia | Sesión | Instrumento |
+|---|---|---|---|---|---|
+| C01 | RA1 | A1.2 | E1 Reading | S3 | Cuestionario No 1 |
+| C02 | RA1+RA3 | A1.2-A1.3 | E2 Writing | S4 | Lista de Verificación No 2 |
+| C03 | RA2 | A1.3 | E3 Listening | S5 | Lista de Verificación No 3 |
+| C04 | RA2+RA3 | A1.3-A2.0 | E4 Speaking parcial | S6 | Escala de Estimación No 4 |
+| C05 | RA3 | A2.0 | E4 Speaking final | S8 | Escala de Estimación No 4 |
+| C06 | RA3+RA4 | A2.0-A2.1 | E5 Language Functions | S9 | Escala de Estimación No 5 |
+| C07 | RA1+RA2+RA3+RA4 (4-way) | consolidación | E6 Cuestionario | S6 | Cuestionario No 6 |
+| C08 | RA4 | A2.1 | E-Misión ABP | S12 | Rúbrica ABP |
+
+**Bumps ejecutados (4 master docs):**
+
+- **PM-0.0 v1.1 → v1.2** (REGLA 9 criterios específicos canon sistema · NEW validation_check 8 `criterios_especificos_canon_completos` · 7 sub-reglas: schema canónico · distribución por RAP · asignación basada en `rap_target` · cobertura 100% · validation bloqueante · caso operacional · aplicabilidad cross-program)
+- **PM-0 v3.1 → v3.2** (REGLA 12 traceability `_anclaje_matriz` · NEW validation_check 7 `traceability_matriz_completa` · pattern canonical para personajes/principios/grammar/L1/final_mission/evidencias · trigger interno orchestrator · tabla aplicabilidad cross-PM)
+- **PLAN-FASE-1 v1.1 → v1.2** (NEW §11 Criterios Específicos Pattern + NEW §12 Traceability Pattern · ambos con tabla aplicabilidad cross-PM · trigger interno orchestrator · caso operacional confirmado · memoria operacional referenciada)
+- **DM v3.1 → v3.2** (esta extensión documenta canon)
+- Memory snapshot: `feedback_traceability_anclaje_matriz_canon.md`
+
+**Pattern canonical orchestrator (cross-program · cross-PM):**
+
+```
+ANTES de dispatchear cualquier PM downstream:
+
+1. ¿La matriz alineada (PM-0.0) incluye `criterios_evaluacion_especificos_canon_sistema`?
+   - Si NO → STOP · re-run PM-0.0 con input completo (8 criterios C01-C08)
+
+2. ¿Mi prompt al Agent enfatiza TRACEABILITY EXPLÍCITA con ejemplos de `_anclaje_matriz`?
+   - Si NO → refactor (agregar bloque template canonical)
+
+3. ¿Mi prompt incluye check `traceability_matriz_completa` como bloqueante?
+   - Si NO → agregar al validation suite
+```
+
+**Caso operacional confirmado:** IMARPOR-V2 re-cascade · 2026-05-01 ·
+- `pm-0-0-matriz-alineada.json` v1.1 · 22 keys · 8/8 criterios específicos asignados · 4 multi-RAP overlaps documentados (C02 RA1+RA3 · C04 RA2+RA3 · C06 RA3+RA4 · C07 4-way)
+- `pm-0-context.json` v3.2 · 21 keys · 51,794 bytes · 44 anclajes detectados recursivamente · 7/7 validation PASS
+- 8/8 personajes con `_anclaje_matriz`
+- 5 principios + P6 emergente con `_anclaje_matriz`
+- 9/9 grammar focus per session con `_anclaje_matriz`
+- 8/8 evidencias formales mapeadas (S3→E1·C01 ... S12→E-Misión·C08)
+- L1 policy 4 bandas (S1-S3 / S4-S5 / S6-S8 / S9-S12) con `_anclaje_matriz`
+- Final mission `_anclaje_matriz` C08 RA4 evidencia capstone
+- Dashboard COMPUESTO v2 · 61.6 KB · PARTE 1 matriz completa visible (4 RAPs × 4 columnas) + PARTE 2 capa pedagógica con anclajes visibles
+
+**Aplicabilidad cross-PM (TRACEABILITY se propaga downstream):**
+
+PM-0.0 → PM-0 → PM-1.1 → PM-1.2 → PM-2.x ACs → PM-2.11 → PM-3.6 (GFPI-F-135) → PM-3.7 V04. Cada PM downstream agrega su propia validation `_anclaje_matriz` o equivalente. Tabla canonical en PLAN-FASE-1 §12.4.
+
+---
+
 *DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo*
-*Fábrica Curricular v3.1 — PARADIGM SHIFT NEW PM-0.0 + ANTI-PATRÓN #16 PROMPT OPERACIONAL · diseño UbD verdadero de adentro hacia afuera por RAP · PM-0 simplificado · libertad LLM REAL (canon doc + canon operacional) · 5 principios maestros · cascade impact PM-1.1/1.2/2.0/2.x/2.11/3.7 · canon Sergio Cortés 2026-05-01*
-*Versiones legacy preserved: v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
+*Fábrica Curricular v3.2 — CRITERIOS ESPECÍFICOS CANON SISTEMA + TRACEABILITY · disciplina "nada por fuera de la matriz" · libertad LLM con límites canon visibles · 8 criterios C01-C08 con anclas E1-E6+E-Misión · `_anclaje_matriz` cross-PM · validation bloqueantes · canon Sergio Cortés 2026-05-01*
+*Versiones legacy preserved: v3.1 Anti-patrón #16 + v3.0 PARADIGM SHIFT NEW PM-0.0 + v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
 *Instructor Sergio · Abril–Mayo 2026*
