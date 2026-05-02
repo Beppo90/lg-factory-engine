@@ -1,38 +1,14 @@
 {
-  "_pm11_version": "2.8",
-  "_v28_changes": "added pm00_matriz_ref + sesiones_count + horas_por_sesion (REGLA 7-12 PM-1.1 v2.8)",
-  "pm00_matriz_ref": {
-    "file": "pm-0-0-matriz-alineada.json",
-    "version": "1.1",
-    "raps_count": 4,
-    "criterios_canon_count": 8,
-    "overlaps_multi_rap": 4
-  },
   "pm0_anchors_ref": {
     "file": "pm-0-context.json",
-    "version": "3.2",
     "programa_id": "IMARPOR-CC-2026-04-27",
     "auto_derived": true
   },
   "tipo": "Curso Complementario",
   "regla_bloques": "absorcion_Na1",
-  "_regla_bloques_nota_v28": "regla_bloques aplica a nivel guía (1 guía absorbe 4 RAPs). La guía interna tiene N+2=6 bloques tripartitos según REGLA 7 v2.8. regla_bloques se aplica al sub-tipo APROPIACIÓN.",
   "total_guias": 1,
   "duracion_total_horas": 100,
   "horas_por_bloque": 100.0,
-  "sesiones_count": 12,
-  "horas_por_sesion": 6,
-  "_horas_canon_distribution": {
-    "apertura_horas": 6,
-    "apertura_sesiones": 1,
-    "transferencia_horas": 12,
-    "transferencia_sesiones": 2,
-    "apropiacion_horas_directas": 54,
-    "apropiacion_sesiones": 9,
-    "total_directas": 72,
-    "horas_autonomas_implicadas": 28,
-    "nota": "100h totales = 72h directas (12 sesiones × 6h) + 28h autónomas implícitas para alcanzar duracion_total_horas=100"
-  },
   "guia_numero": 1,
   "modo_informacion": "MODO 1 — Diseño Curricular SOFÍA Plus",
   "modo_1_diseño_curricular": {
