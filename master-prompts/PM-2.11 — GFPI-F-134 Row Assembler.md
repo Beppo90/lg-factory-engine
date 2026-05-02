@@ -5,10 +5,21 @@ phase: 2
 session: null
 fase_sena: Post-diseño
 type: assembler
-version: 3.1
+version: 3.2
 created: 2026-04-13
 last_verified: 2026-05-02
-status: v3.1 AGRUPACIÓN TRIPARTITA POR RA · PM-2.11 emite gfpi_f134_v04_rows[] (6 filas heredadas 1:1 de pm-1-2 sub_bloques_tripartitos · NO 1 fila agregada) · cascade Phase 1+2 v3.x COMPLETO (matriz v1.3 + pm-1-1 v2.8 v2 + pm-1-2 v4.2 v2 + pm-2-0 v3.0 + 30 Activity Cards) · xlsx V04 oficial SENA con 6 filas (B0 APERTURA + B1 RA1 + B2 RA2 + B3 RA3 + B4 RA4 + BT TRANSFERENCIA capstone) · honra patrón canon "agrupado por RA así como PM-0.0/PM-0/PM-1.1/PM-1.2"
+status: v3.2 FORMATO CANON SERGIO · C7+C10+C11 estructurados según ejemplos canónicos GFPI-F-134 V04 SENA + agrupación tripartita 6 filas (v3.1) · honra heredancia cascade Phase 1+2 v3.x COMPLETA · xlsx oficial con 6 filas pobladas formato canon Sergio · cross-program canon
+v3_2_changes:
+  - "NEW REGLA formato canon C7 ACTIVIDADES: '<numero>. Actividad <dimension>:\\n<enunciado verbo+objeto+condición>'"
+  - "NEW REGLA formato canon C10 EVIDENCIAS: 3 líneas estructuradas por evidencia ([Actividad N · codigo_canon] / Evidencia de <tipo>: <nombre> / Técnica de evaluación: <técnica> / Instrumento de evaluación No <N>: <tipo instrumento>)"
+  - "NEW REGLA formato canon C11 ESTRATEGIAS: por actividad (NO deduplicado) (Actividad <N>. / Estrategia didáctica: <est1> + <est2> / Técnica Didáctica: <tec1> + <tec2>)"
+  - "NEW REGLA cards ordenadas por numero_actividad ascendente para legibilidad cross-RA"
+  - "NEW REGLA C7 dimension lowercase (cognitiva|procedimental|actitudinal) · enunciado verbo+objeto+condición canónico (sin 'mediante' redundante)"
+  - "NEW REGLA C10 evidencia.tipo lowercase (conocimiento|producto|desempeño) · headers en negritas implícitas"
+  - "NEW REGLA C11 lista de estrategias_didacticas_activas[] joined con ' + ' · lista tecnicas_didacticas[] joined con ' + '"
+  - "BREAKING FORMATO · Strings simples con bullets ('• ...') → Multi-línea estructurada con headers canónicos"
+  - "Honor canon Sergio 2026-05-02 · ejemplos canónicos provistos verbatim del formato GFPI-F-134 V04 oficial SENA"
+  - "Heredancia 1:1 Activity Cards v3.0: numero_actividad · dimension · enunciado · evidencias.{tipo,nombre,tecnica_evaluacion,instrumento_numero,instrumento_tipo,codigo_canon} · estrategias_didacticas_activas[] · tecnicas_didacticas[]"
 v3_1_changes:
   - "BREAKING SCHEMA · gfpi_f134_v04_row (single object) → gfpi_f134_v04_rows[] (array de 6 objetos)"
   - "NEW REGLA agrupación 1:1 con pm-1-2 sub_bloques_tripartitos (6 sub-bloques: 1 APERTURA + 4 APROPIACIÓN una por RA + 1 TRANSFERENCIA capstone)"
@@ -1206,3 +1217,159 @@ C12 AMBIENTE · C13 MATERIALES_FORMACIÓN · C14 INSTRUCTORES · C15 OBSERVACION
 
 *PM-2.11 v3.0 · GFPI-F-134 Row Assembler Heredero · CIERRE Phase 2 boundary · pm-2-11.json + xlsx V04 oficial · universo banana cold chain canon · 18 checks BLOQUEANTES*
 *Sergio Cortés decisión 2026-05-02 · cascade Wave 5 IMARPOR-V2 · cierre Step 1.5*
+
+---
+
+## EXTENSIÓN v3.1 — AGRUPACIÓN TRIPARTITA POR RA · 6 FILAS HEREDADAS (2026-05-02 PM)
+
+### Decisión canónica Sergio
+
+PM-2.11 emite `gfpi_f134_v04_rows[]` (array de N objetos) en lugar de `gfpi_f134_v04_row` (single object monolítico). Honra patrón canon establecido en PM-0.0/PM-0/PM-1.1/PM-1.2: **todo agrupado por RA**.
+
+### Estructura canon de N filas tripartitas
+
+Heredancia 1:1 desde `pm-1-2.json.sub_bloques_tripartitos[]`:
+
+| # | bloque_id | tipo_bloque | rap_target | sesiones | rationale saberes/criterios |
+|---|-----------|-------------|------------|----------|------------------------------|
+| 1 | B0 | APERTURA | (transversal) | S1 | NO produce saberes/criterios formales · activación + diagnóstico |
+| 2 | B1 | APROPIACIÓN | RA1 | S2-S4 | saberes_conceptos + saberes_proceso + criterios SOFÍA + canon assigned |
+| 3 | B2 | APROPIACIÓN | RA2 | S5-S6 | (idem RA2) |
+| 4 | B3 | APROPIACIÓN | RA3 | S7-S8 | (idem RA3) |
+| 5 | B4 | APROPIACIÓN | RA4 | S9-S10 | (idem RA4) |
+| 6 | BT | TRANSFERENCIA | (capstone transversal) | S11-S12 | NO introduce saberes nuevos · integra y transfiere · E-Misión ABP |
+
+### Reglas v3.1
+
+1. **Cada row[] tiene SUS** saberes/criterios/actividades/evidencias/horas/estrategias del bloque.
+2. **APERTURA** declara `rationale_sin_evidencias` y movilizes `criterios_canon_assigned` (e.g., C03 activación afectiva).
+3. **TRANSFERENCIA capstone** declara saberes movilizados de RA1-RA4 + criterios canon C08 + Rúbrica ABP.
+4. **xlsx V04** emite N filas pobladas (rows 15-20 en formato Sergio referencia · NO solo row 15).
+5. Implementación requiere **unmerge** de celdas data-row del template V04 (A15:A21, D15:D21, etc.) para honrar N filas independientes.
+
+### Anti-patrón evitado
+
+Aplastar 30 actividades + 26 saberes + 13 criterios en strings monolíticos (gfpi_f134_v04_row single object) **rompe trazabilidad heredancia upstream**. PM-0.0/PM-0/PM-1.1/PM-1.2 ya agrupan por RA — PM-2.11 debe replicar el patrón canon, no quebrarlo.
+
+### Scripts canon establecidos (cross-program)
+
+- `scripts/pm-2-11-v3-1-regroup-tripartita.py` — re-agrupador desde 30 Activity Cards heredadas
+- `scripts/pm-2-11-v3-1-render-xlsx-6-rows.py` — renderer xlsx V04 con N filas tripartitas
+
+### NEW Validation check v3.1 (19)
+
+- **Check 19:** `agrupacion_tripartita_N_filas` · `gfpi_f134_v04_rows[].length == pm-1-2.sub_bloques_tripartitos.length` (típicamente 6)
+
+---
+
+## EXTENSIÓN v3.2 — FORMATO CANON SERGIO C7 + C10 + C11 (2026-05-02 PM)
+
+### Decisión canónica Sergio (verbatim)
+
+Sergio provee 2026-05-02 los **3 ejemplos canónicos** del formato GFPI-F-134 V04 oficial SENA:
+
+#### Ejemplo C7 — ACTIVIDADES DE APRENDIZAJE A DESARROLLAR (Verbo en infinitivo+objeto+condición)
+
+```
+2. Actividad cognitiva:
+Identificar los componentes, características, instrumentos y controles del equipo apilador
+de contenedores de acuerdo con manual del fabricante
+```
+
+**Plantilla canónica:**
+```
+<numero_actividad>. Actividad <dimension>:
+<enunciado verbo+objeto+condición>
+```
+
+#### Ejemplo C10 — DESCRIPCIÓN DE LA EVIDENCIA DE APRENDIZAJE
+
+```
+Evidencia de producto: Códigos de comunicación portuaria
+Técnica de evaluación:  Verificación del producto
+Instrumento de evaluación No 2: Lista de verificación
+```
+
+**Plantilla canónica (3 líneas estructuradas por evidencia):**
+```
+[Actividad <numero_actividad> · <codigo_canon E1-E6+E-Misión>]
+Evidencia de <tipo lowercase: conocimiento|producto|desempeño>: <nombre>
+Técnica de evaluación: <Preguntas|Verificación de producto|Observación>
+Instrumento de evaluación No <N>: <Cuestionario|Lista de verificación|Lista de Chequeo|Escala de estimación|Rúbrica>
+```
+
+#### Ejemplo C11 — ESTRATEGIAS DIDÁCTICAS ACTIVAS
+
+```
+Actividad 3.
+Estrategia didáctica: Aprendizaje colaborativo
+Técnica Didáctica: simulación
+```
+
+**Plantilla canónica (por actividad · NO deduplicado por bloque):**
+```
+Actividad <numero_actividad>.
+Estrategia didáctica: <est1> + <est2> + ...
+Técnica Didáctica: <tec1> + <tec2> + ...
+```
+
+### Reglas v3.2 (formato canon obligatorio)
+
+1. **C7 dimension** lowercase: `cognitiva` | `procedimental` | `actitudinal`
+2. **C7 enunciado** verbo+objeto+condición (sin redundancia "mediante" cuando el verbo ya implica método)
+3. **C10 evidencia.tipo** lowercase: `conocimiento` | `producto` | `desempeño`
+4. **C10 instrumento_numero** literal (1, 2, 3, 4, 5, 6) heredado de Activity Card · NO renumerar
+5. **C11 estrategias_didacticas_activas[]** joined con ` + ` · idem `tecnicas_didacticas[]`
+6. **C11 entries por activity_card** (NO deduplicado por bloque) · ordenadas por `numero_actividad` ascendente
+7. **Cards ordenadas** por `numero_actividad` ascendente cross-RA para legibilidad
+8. **Multi-línea separados** por `\n\n` (línea en blanco) para legibilidad en xlsx wrap_text
+
+### Heredancia 1:1 desde Activity Cards v3.0 (campos consumidos)
+
+```
+ACTIVITY CARD v3.0 → C7 (PM-2.11 v3.2)
+  numero_actividad → "<N>. "
+  dimension       → "Actividad <dimension>:"
+  enunciado       → "\n<enunciado>"
+
+ACTIVITY CARD v3.0 → C10 (PM-2.11 v3.2)
+  numero_actividad         → "[Actividad <N>"
+  evidencias.codigo_canon  → " · <codigo>]"
+  evidencias.tipo          → "Evidencia de <tipo lowercase>:"
+  evidencias.nombre        → " <nombre>"
+  evidencias.tecnica_evaluacion    → "Técnica de evaluación: <técnica>"
+  evidencias.instrumento_numero    → "Instrumento de evaluación No <N>:"
+  evidencias.instrumento_tipo      → " <tipo instrumento>"
+
+ACTIVITY CARD v3.0 → C11 (PM-2.11 v3.2)
+  numero_actividad                    → "Actividad <N>."
+  estrategias_didacticas_activas[]    → "Estrategia didáctica: <est1> + <est2>"
+  tecnicas_didacticas[]               → "Técnica Didáctica: <tec1> + <tec2>"
+```
+
+### Anti-patrón evitado
+
+- Strings simples con bullets `• <enunciado>` en C7 → **NO honra V+O+C ni dimensión**
+- Evidencias resumidas en 1 línea con `[codigo] nombre · tipo=X · instrumento=Y` → **NO formato V04 oficial**
+- Estrategias deduplicadas en lista plana → **NO permite mapear estrategia ↔ actividad** (rompe trazabilidad pedagógica)
+
+### Scripts canon establecidos (cross-program)
+
+- `scripts/pm-2-11-v3-1-regroup-tripartita.py` (funciones `format_actividad_canon_sergio` + `format_evidencia_canon_sergio` + `format_estrategia_canon_sergio`)
+- `scripts/pm-2-11-v3-1-render-xlsx-6-rows.py` (separación `\n\n` para multi-línea)
+
+### Cross-PM canonization
+
+Este formato canon C7+C10+C11 aplica downstream a:
+- **PM-3.6 (GFPI-F-135 Learning Guide)** — debe usar mismo formato en su tabla de evidencias
+- **PM-3.7 (GFPI-F-134 Matrix Aggregator)** — debe preservar formato canon en xlsx multi-RAP
+- **PM-3.4 (Workbook)** — referencia formato evidencias en captulos PREPARE
+
+### NEW Validation check v3.2 (20)
+
+- **Check 20:** `formato_canon_sergio_c7_c10_c11` · verifica que C7 use plantilla "<N>. Actividad <dim>:\n<enun>" · C10 use 3 líneas estructuradas · C11 use 3 líneas por actividad
+
+---
+
+*PM-2.11 v3.2 · Formato canon Sergio C7+C10+C11 · cross-program forever · honra V+O+C + GFPI-F-134 V04 oficial SENA*
+*Sergio Cortés decisión 2026-05-02 PM · canon establecido para todos los runs futuros*
