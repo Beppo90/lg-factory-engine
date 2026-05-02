@@ -149,8 +149,8 @@ for idx, row_data in enumerate(rows):
     # C6 Criterios Evaluación
     set_cell(xlsx_row, 6, fmt_criterios(row_data['C6_criterios_evaluacion']))
 
-    # C7 Actividades Aprendizaje
-    set_cell(xlsx_row, 7, fmt_list(row_data['C7_actividades_aprendizaje']))
+    # C7 Actividades Aprendizaje (formato canon Sergio: items multi-línea separados por línea en blanco)
+    set_cell(xlsx_row, 7, '\n\n'.join(row_data['C7_actividades_aprendizaje']))
 
     # C8 Horas Trabajo Directo
     set_cell(xlsx_row, 8, str(row_data['C8_horas_directo']))
@@ -158,11 +158,11 @@ for idx, row_data in enumerate(rows):
     # C9 Horas Trabajo Independiente
     set_cell(xlsx_row, 9, str(row_data['C9_horas_independiente']))
 
-    # C10 Descripción Evidencia
-    set_cell(xlsx_row, 10, fmt_list(row_data['C10_evidencias']))
+    # C10 Descripción Evidencia (formato canon Sergio: 3-4 líneas por evidencia · separación en blanco)
+    set_cell(xlsx_row, 10, '\n\n'.join(row_data['C10_evidencias']))
 
-    # C11 Estrategias Didácticas
-    set_cell(xlsx_row, 11, fmt_list(row_data['C11_estrategias_didacticas']))
+    # C11 Estrategias Didácticas (formato canon Sergio: por actividad · 3 líneas · separación en blanco)
+    set_cell(xlsx_row, 11, '\n\n'.join(row_data['C11_estrategias_didacticas']))
 
     # C12 Ambientes (texto único transversal)
     set_cell(xlsx_row, 12, str(row_data['C12_ambiente'])[:1000])

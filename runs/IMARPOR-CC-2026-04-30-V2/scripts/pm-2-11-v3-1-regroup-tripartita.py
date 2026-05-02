@@ -76,7 +76,9 @@ for c in all_cards:
         cards_por_bloque[bid].append(c)
 
 for bid, cs in cards_por_bloque.items():
-    print(f'  {bid}: {len(cs)} cards')
+    # Sort by numero_actividad ascendente para legibilidad
+    cs.sort(key=lambda c: int(str(c.get('numero_actividad', 0)).replace('SS','').replace('S','')))
+    print(f'  {bid}: {len(cs)} cards (sorted)')
 
 # === BUILD MAPPING rap_id → matriz data ===
 matriz_por_rap = {}
@@ -116,27 +118,61 @@ def get_criterios_canon_assigned(sb):
     anclaje = sb.get('_anclaje_matriz_bloque', {})
     return anclaje.get('criterios_canon_assigned', anclaje.get('criterios_canon', []))
 
-def format_actividad_text(c):
-    """Format una activity card para C7 (texto legible)."""
+def format_actividad_canon_sergio(c):
+    """Format una activity card para C7 según canon Sergio:
+        <numero>. Actividad <dimension>:
+        <enunciado verbo+objeto+condicion>
+    """
     num = c.get('numero_actividad', '?')
-    s = str(c.get('session', '?')).replace('SS', 'S')
-    pm = c.get('_source_pm', '?').replace('.json', '')
-    dim = c.get('dimension', '?')
-    h = c.get('duracion_horas', c.get('duracion_h', '?'))
+    dim = c.get('dimension', 'cognitiva').lower()
     enun = c.get('enunciado') or c.get('titulo') or '?'
-    return f"#{num} {s} ({pm} · {dim} · {h}h) — {enun}"
+    return f"{num}. Actividad {dim}:\n{enun}"
 
-def format_evidencia(ev):
-    """Format una evidencia para C10."""
-    if not ev or ev is False:
+def format_evidencia_canon_sergio(c):
+    """Format evidencia según canon Sergio (3 líneas):
+        Evidencia de <tipo>: <nombre>
+        Técnica de evaluación: <técnica>
+        Instrumento de evaluación No <N>: <tipo instrumento>
+    """
+    ev = c.get('evidencias')
+    if not ev or ev is False or not isinstance(ev, dict):
         return None
-    if isinstance(ev, dict):
-        nombre = ev.get('nombre', '?')
-        tipo = ev.get('tipo', '?')
-        instr = ev.get('instrumento_evaluacion', ev.get('instrumento', '?'))
-        codigo = ev.get('codigo', '?')
-        return f"[{codigo}] {nombre} · tipo={tipo} · instrumento={instr}"
-    return str(ev)
+    if not ev.get('aplica', False):
+        return None
+    tipo = (ev.get('tipo') or '').lower()
+    nombre = ev.get('nombre', '?')
+    tecnica = ev.get('tecnica_evaluacion', '?')
+    instr_num = ev.get('instrumento_numero', '?')
+    instr_tipo = ev.get('instrumento_tipo', '?')
+    codigo = ev.get('codigo_canon', '')
+    num_act = c.get('numero_actividad', '?')
+
+    header = f"[Actividad {num_act} · {codigo}]" if codigo else f"[Actividad {num_act}]"
+    return (f"{header}\n"
+            f"Evidencia de {tipo}: {nombre}\n"
+            f"Técnica de evaluación: {tecnica}\n"
+            f"Instrumento de evaluación No {instr_num}: {instr_tipo}")
+
+def format_estrategia_canon_sergio(c):
+    """Format estrategia didáctica según canon Sergio:
+        Actividad <N>.
+        Estrategia didáctica: <estrategia>
+        Técnica Didáctica: <técnica>
+    """
+    num = c.get('numero_actividad', '?')
+    estrategias = c.get('estrategias_didacticas_activas', c.get('estrategias', []))
+    tecnicas = c.get('tecnicas_didacticas', c.get('tecnicas', []))
+    if not isinstance(estrategias, list):
+        estrategias = [str(estrategias)] if estrategias else []
+    if not isinstance(tecnicas, list):
+        tecnicas = [str(tecnicas)] if tecnicas else []
+    if not estrategias and not tecnicas:
+        return None
+    est_str = ' + '.join(estrategias) if estrategias else '(no declarada)'
+    tec_str = ' + '.join(tecnicas) if tecnicas else '(no declarada)'
+    return (f"Actividad {num}.\n"
+            f"Estrategia didáctica: {est_str}\n"
+            f"Técnica Didáctica: {tec_str}")
 
 def get_horas_directo(sb, cards):
     """Sum horas_directas del bloque."""
@@ -222,8 +258,8 @@ for bid in ['B0', 'B1', 'B2', 'B3', 'B4', 'BT']:
         c6['sofia_assigned'] = ['(integra los 7 criterios SOFÍA cubiertos en B1-B4 vía evidencia E-Misión ABP)']
         c6['canon_sistema_assigned'] = get_criterios_canon_assigned(sb)
 
-    # === C7 ACTIVIDADES APRENDIZAJE ===
-    c7 = [format_actividad_text(c) for c in cards]
+    # === C7 ACTIVIDADES APRENDIZAJE (formato canon Sergio) ===
+    c7 = [format_actividad_canon_sergio(c) for c in cards]
 
     # === C8 HORAS DIRECTO ===
     c8 = get_horas_directo(sb, cards)
@@ -231,31 +267,28 @@ for bid in ['B0', 'B1', 'B2', 'B3', 'B4', 'BT']:
     # === C9 HORAS INDEPENDIENTE ===
     c9 = get_horas_independiente(sb, cards)
 
-    # === C10 EVIDENCIAS ===
+    # === C10 EVIDENCIAS (formato canon Sergio: 3 líneas por evidencia) ===
     evidencias_bloque = []
     for c in cards:
-        ev = c.get('evidencias')
-        if ev and ev is not False and isinstance(ev, dict) and ev.get('nombre'):
-            evidencias_bloque.append(format_evidencia(ev))
+        formatted = format_evidencia_canon_sergio(c)
+        if formatted:
+            evidencias_bloque.append(formatted)
     if not evidencias_bloque:
         if tipo == 'APERTURA':
             evidencias_bloque = ['(N/A — bloque APERTURA NO produce evidencias formales por diseño · rationale_sin_evidencias)']
         elif tipo == 'TRANSFERENCIA':
-            # Si no se encontró, declararlo
             evidencias_bloque = ['(esperado: E-Misión Pre-Departure Banana Reefer Compliance Check vía Rúbrica ABP capstone)']
         else:
             evidencias_bloque = ['(verificar — bloque APROPIACIÓN sin evidencia formal detectada)']
 
-    # === C11 ESTRATEGIAS DIDÁCTICAS ===
-    estrategias_bloque = set()
+    # === C11 ESTRATEGIAS DIDÁCTICAS (formato canon Sergio: por actividad) ===
+    c11 = []
     for c in cards:
-        est = c.get('estrategias', c.get('estrategia_didactica', []))
-        if isinstance(est, list):
-            for e in est:
-                estrategias_bloque.add(str(e))
-        elif est:
-            estrategias_bloque.add(str(est))
-    c11 = sorted(estrategias_bloque) if estrategias_bloque else ['(heredar de logistics_box pm-3-2 downstream)']
+        formatted = format_estrategia_canon_sergio(c)
+        if formatted:
+            c11.append(formatted)
+    if not c11:
+        c11 = ['(heredar de logistics_box pm-3-2 downstream)']
 
     # === C12 AMBIENTE ===
     c12 = ambiente_global  # Transversal a todo el RAP
