@@ -1,15 +1,12 @@
 {
   "pm_id": "PM-2.11",
   "pm_name": "GFPI-F-134 Row Assembler · Heredero Cascade Tripartita Final",
-  "pm_version": "3.0",
+  "pm_version": "3.1",
   "run_id": "IMARPOR-CC-2026-04-30-V2",
-  "generated_date": "2026-05-02",
+  "generated_date": "2026-05-02T20:09:51",
   "instructor": "Sergio Cortés Perdomo",
-
-  "_paradigm": "row_assembler_heredero_cascade_v3 · CIERRE Phase 2 boundary · cero invención · agregación literal de outputs cascade Phase 1+2 v3.x · genera fila GFPI-F-134 V04 oficial SENA con universo banana cold chain canon",
-
+  "_paradigm": "row_assembler_heredero_cascade_v3 · CIERRE Phase 2 boundary · cero invención · agregación literal de outputs cascade Phase 1+2 v3.x · genera fila GFPI-F-134 V04 oficial SENA con universo banana cold chain canon | v3.1: agrupación tripartita por RA · gfpi_f134_v04_rows[] heredados 1:1 de pm-1-2 sub_bloques_tripartitos",
   "_canon_authority": "Sergio Cortés Perdomo · arquitecto/instructor FPI SENA Bilingüismo · aprobación PM-2.11 v3.0 master 2026-05-02",
-
   "_cascade_inputs_consumed": {
     "matriz_v1_3": "pm-0-0-matriz-alineada.json (8/8 PASS · 4 RAPs · 26 saberes_conceptos + 10 saberes_proceso + 5 SOFÍA + 8 canon C01-C08)",
     "pm_1_1_v2_8": "pm-1-1.json (9/9 PASS · estructura tripartita 1 APERTURA + 4 APROPIACIÓN + 1 TRANSFERENCIA · 12 sesiones)",
@@ -31,7 +28,6 @@
     "total_activity_cards": 30,
     "xlsx_referencia_formato": "GFPI-F-134-V04-REFERENCIA-formato-Sergio.xlsx (formato 11 cols únicamente · contenido Buenaventura IGNORADO · canon contenido = cascade v3.x banana cold chain)"
   },
-
   "programa_metadata": {
     "denominacion": "Inglés Marítimo y Portuario · Curso Complementario · Línea Banana/Cold Chain",
     "codigo_sofia": "12340002",
@@ -47,395 +43,6 @@
     "terminal": "Puerto Antioquia · Urabá · Necoclí · Antioquia (Eje Bananero)",
     "centro_formacion": "FPI SENA Bilingüismo"
   },
-
-  "gfpi_f134_v04_row": {
-    "_estructura_canon": "1 fila multi-RAP V04 oficial SENA · 11 cols pobladas · heredancia cascade v3.x · universo banana cold chain Puerto Antioquia MV CARIBBEAN STAR",
-
-    "C1_competencia": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA IDIOMAS.",
-
-    "C2_raps": [
-      {
-        "rap_id": "RA1",
-        "rap_codigo_sofia": "220301011-RA1",
-        "rap_titulo": "RA 1 RECONOCER VOCABLOS Y EXPRESIONES BÁSICAS EN INGLÉS, DE FORMA ESCRITA Y AUDITIVA, ENMARCADOS EN EL DESEMPEÑO DE FUNCIONES PROPIAS EN EL SECTOR MARÍTIMO Y PORTUARIO.",
-        "verbo_cognitivo": "RECONOCER",
-        "bloom_level": "L1 (Recordar/Reconocer)"
-      },
-      {
-        "rap_id": "RA2",
-        "rap_codigo_sofia": "220301011-RA2",
-        "rap_titulo": "RA2 COMPRENDER VOCABLOS PRINCIPALES DE LAS FRASES ESTANDARIZADAS POR LA OMI, EN INGLÉS, PARA INICIAR LA INTERACCIÓN POR MEDIO ESCRITO Y ORAL, DE ACUERDO CON LOS ROLES DESCRITOS DENTRO DE LA INDUSTRIA MARÍTIMA Y PORTUARIA.",
-        "verbo_cognitivo": "COMPRENDER",
-        "bloom_level": "L2 (Comprender)"
-      },
-      {
-        "rap_id": "RA3",
-        "rap_codigo_sofia": "220301011-RA3",
-        "rap_titulo": "RA3 APLICAR LAS REGLAS GRAMATICALES BÁSICAS DEL IDIOMA INGLÉS QUE GARANTICEN LA COMUNICACIÓN SENCILLA DE PUERTO A BUQUE Y VICEVERSA, SEGÚN LAS NECESIDADES ORIGINADAS EN EL DESARROLLO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS.",
-        "verbo_cognitivo": "APLICAR",
-        "bloom_level": "L3 (Aplicar)"
-      },
-      {
-        "rap_id": "RA4",
-        "rap_codigo_sofia": "220301011-RA4",
-        "rap_titulo": "RA 4 DESCRIBIR EN INGLÉS LAS FUNCIONES HABITUALES Y/O MOMENTÁNEAS PROPIAS, DEL PERSONAL Y DE LOS ELEMENTOS QUE SE ENCUENTRAN EN EL CONTEXTO MARÍTIMO Y PORTUARIO, EN EL DESEMPEÑO DE SUS LABORES.",
-        "verbo_cognitivo": "DESCRIBIR",
-        "bloom_level": "L2-L3 (Comprender → Aplicar)"
-      }
-    ],
-
-    "C4_saberes_conceptos": [
-      "UNIT 1: SHIP OVERVIEW",
-      "PARTS OF THE SHIPS",
-      "TYPES OF MERCHANT VESSELS",
-      "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT OF THE SHIP",
-      "REVIEW OF DEMONSTRATIVES ADJECTIVES AND VERB TO BE",
-      "SINGULAR AND PLURAL NOUNS",
-      "UNIT 2: THE CREW",
-      "PROFESSIONS IN PORT AND ABOARD",
-      "UNIT 5: INTRODUCING IMO STANDARD MARINE COMMUNICATION PHRASES (SMCP)",
-      "STANDARD SPELLING",
-      "MESSAGE MARKERS",
-      "STANDARD RESPONSES AND ORGANIZATIONAL PHRASES",
-      "COMMANDS (TO: OFFICERS, SAILORS, HELMSMAN, CAPTAINS, ENGINEERS, STEWARD, CRANE OPERATORS)",
-      "REVIEW OF PRESENT SIMPLE TENSE",
-      "IMPERATIVE",
-      "MODAL VERBS: CAN, COULD, SHOULD, MUST FOR REQUEST, PROHIBITION, POSSIBILITY, PERMISSION",
-      "UNIT 3: PLACES IN PORT AND POSITION",
-      "PLACES IN PORT · LOCATIONS",
-      "WEATHER CONDITIONS",
-      "TAG QUESTIONS",
-      "REVIEW OF PRESENT PROGRESSIVE AND PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE",
-      "UNIT 4: IN PORT",
-      "CONTAINERIZATION",
-      "PACKING, SHIPPING AND CARGO HANDLING",
-      "MANEUVERING (MOORING, DOCKING, DEPARTURE)",
-      "QUANTIFIERS"
-    ],
-    "_C4_total": 26,
-    "_C4_breakdown_por_rap": "RA1=8 + RA2=4 + RA3=4 + RA4=10 = 26 (canon Opción A refinada Sergio 2026-05-02)",
-
-    "C5_saberes_proceso": [
-      "IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS GENERADA EN EL INTERCAMBIO ORAL Y/O ESCRITO EN ESTE IDIOMA, DADO EN EL CUMPLIMIENTO DE LAS ACCIONES REQUERIDAS A BORDO DEL BUQUE Y EN PUERTO.",
-      "RECONOCER LOS DISTINTOS OFICIOS ENMARCADOS EN LOS CAMPOS MARÍTIMO Y PORTUARIO.",
-      "RECONOCER LA MANERA DE DELETREAR LOS VOCABLOS EN INGLÉS.",
-      "RESPONDER EN INGLÉS EN CONVERSACIONES SENCILLAS Y UTILIZANDO LAS FRASES ESTANDARIZADAS POR LA OMI, EN EL DESEMPEÑO DE LAS OPERACIONES QUE SE GENEREN EN EL CONTEXTO.",
-      "IDENTIFICAR VOCABULARIO COMÚN EN INGLÉS, EN LAS FRASES ESTANDARIZADAS DE LA OMI PARA LA COMUNICACIÓN MARÍTIMA.",
-      "IDENTIFICAR ESTRUCTURAS GRAMATICALES BÁSICAS EN INGLÉS, TALES COMO VERBOS RELACIONADOS CON LAS ACCIONES EMPRENDIDAS DENTRO DE LOS OFICIOS A BORDO DEL BUQUE Y EN PUERTO.",
-      "EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO.",
-      "EXPRESAR PROHIBICIÓN, PERMISIÓN, POSIBILIDAD O HACER PEDIDOS EN INGLÉS, EN CUANTO A PROCESOS ENMARCADOS EN EL DESEMPEÑO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS.",
-      "HABLAR SOBRE UBICACIONES EN INGLÉS QUE PERMITAN AL INTERLOCUTOR CONOCER EL ESPACIO FÍSICO EN EL QUE SE DESEMPEÑAN LAS FUNCIONES A BORDO DEL BUQUE.",
-      "DESCRIBIR ELEMENTOS Y PROCESOS EN INGLÉS, DERIVADOS DE LOS DISTINTOS ROLES QUE SE EJERCEN EN EL CUMPLIMIENTO DE LAS OBLIGACIONES A BORDO DEL BUQUE Y EN PUERTO."
-    ],
-    "_C5_total": 10,
-    "_C5_breakdown_por_rap": "RA1=2 + RA2=3 + RA3=3 + RA4=2 = 10",
-
-    "C6_criterios_evaluacion": {
-      "sofia_generales": [
-        "INTERPRETA MENSAJES SENCILLOS DE COMUNICACIÓN EN INGLÉS, SEGÚN CONTEXTO DE LAS OPERACIONES A BORDO Y EN EL PUERTO.",
-        "IDENTIFICA VOCABLOS BÁSICOS EN INGLÉS RELACIONADOS CON ELEMENTOS FÍSICOS DEL BUQUE Y PUERTO.",
-        "RESPONDE EN INGLÉS EN CONVERSACIONES SENCILLAS UTILIZANDO LAS FRASES ESTANDARIZADAS POR LA OMI.",
-        "APLICA REGLAS GRAMATICALES BÁSICAS EN INGLÉS PARA COMUNICACIÓN PUERTO-BUQUE.",
-        "DESCRIBE EN INGLÉS PROCESOS Y FUNCIONES PROPIAS DEL CONTEXTO MARÍTIMO Y PORTUARIO."
-      ],
-      "_sofia_count": 5,
-      "canon_sistema": [
-        {
-          "id": "C01",
-          "criterio": "Reconocer vocabulario portuario y partes del barco en textos auténticos adaptados",
-          "rap_target": "RA1",
-          "cefr_subnivel": "A1.2",
-          "evidencia": "E1",
-          "evidencia_nombre": "Reading",
-          "sesion": "S3",
-          "instrumento": "Cuestionario No 1"
-        },
-        {
-          "id": "C02",
-          "criterio": "Producir reportes escritos básicos (Inspection Report) aplicando verbo to be · imperativo · plurales · preposición IN sin errores que comprometan la inteligibilidad operativa",
-          "rap_target": ["RA1", "RA3"],
-          "cefr_subnivel": "A1.2-A1.3",
-          "evidencia": "E2",
-          "evidencia_nombre": "Writing",
-          "sesion": "S4",
-          "instrumento": "Lista de Verificación No 2"
-        },
-        {
-          "id": "C03",
-          "criterio": "Comprender frases estandarizadas SMCP de la OMI en audio auténtico VHF (incluyendo lingua franca B1 no-nativa) e identificar mensajes correctos vs distractores",
-          "rap_target": "RA2",
-          "cefr_subnivel": "A1.3",
-          "evidencia": "E3",
-          "evidencia_nombre": "Listening",
-          "sesion": "S5",
-          "instrumento": "Lista de Chequeo No 3"
-        },
-        {
-          "id": "C04",
-          "criterio": "Interactuar oralmente vía VHF respondiendo con SMCP estandarizado y deletreando con NATO Phonetic Alphabet con stress correcto en respuestas críticas (Roger · Wilco · Affirmative · Standby)",
-          "rap_target": ["RA2", "RA3"],
-          "cefr_subnivel": "A1.3-A2.0",
-          "evidencia": "E4-parcial",
-          "evidencia_nombre": "Speaking parcial",
-          "sesion": "S6",
-          "instrumento": "Escala de Estimación No 4"
-        },
-        {
-          "id": "C05",
-          "criterio": "Coordinar operaciones tripartitas de berthing aplicando modales · condicional tipo 1 · voz pasiva · presente perfecto en intercambio simultáneo con 3 actores",
-          "rap_target": "RA3",
-          "cefr_subnivel": "A2.0",
-          "evidencia": "E4-final",
-          "evidencia_nombre": "Speaking final",
-          "sesion": "S8",
-          "instrumento": "Escala de Estimación No 4"
-        },
-        {
-          "id": "C06",
-          "criterio": "Aplicar las 5 master functions IMARPOR con conectores (and/but/or/because/so/although) en Role Carousel de 5 estaciones",
-          "rap_target": ["RA3", "RA4"],
-          "cefr_subnivel": "A2.0-A2.1",
-          "evidencia": "E5",
-          "evidencia_nombre": "Language Functions",
-          "sesion": "S9",
-          "instrumento": "Escala de Estimación No 5"
-        },
-        {
-          "id": "C07",
-          "criterio": "Demostrar dominio integrado de saberes (Reading + Writing + Listening + Vocabulary + Grammar) en Cuestionario Consolidado S6 · 25 ítems · ≥ 70% para PASS",
-          "rap_target": ["RA1", "RA2", "RA3", "RA4"],
-          "cefr_subnivel": "consolidación A1.2-A2.0",
-          "evidencia": "E6",
-          "evidencia_nombre": "Cuestionario Consolidado",
-          "sesion": "S6",
-          "instrumento": "Cuestionario No 6"
-        },
-        {
-          "id": "C08",
-          "criterio": "Describir funciones profesionales del rol portuario aplicando estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to) y tag questions producción ante panel evaluador",
-          "rap_target": "RA4",
-          "cefr_subnivel": "A2.1",
-          "evidencia": "E-Misión",
-          "evidencia_nombre": "Misión Final ABP",
-          "sesion": "S12",
-          "instrumento": "Rúbrica ABP capstone (6 criterios C01-C13)"
-        }
-      ],
-      "_canon_count": 8
-    },
-
-    "C7_actividades_aprendizaje": [
-      {"numero": 1, "session": "S1", "pm_id": "PM-2.1", "tipo_bloque": "APERTURA", "rap_target": null, "dimension": "actitudinal", "enunciado": "Reflexionar sobre el miedo operacional al inglés VHF mediante video testimonio dramatizado de Manuel Padilla activando interés afectivo en operaciones cold chain Puerto Antioquia.", "duracion_horas": 1.0, "produces_evidencia": null},
-      {"numero": 2, "session": "S1", "pm_id": "PM-2.1", "tipo_bloque": "APERTURA", "rap_target": null, "dimension": "actitudinal", "enunciado": "Reflexionar sobre el arquetipo destino cold chain coordinator mediante artefacto ICA Phytosanitary Certificate firmado por Mariana Suárez activando proyección afectiva operaciones bilingües.", "duracion_horas": 1.0, "produces_evidencia": null},
-      {"numero": 3, "session": "S1", "pm_id": "PM-2.2", "tipo_bloque": "APERTURA", "rap_target": null, "dimension": "cognitiva", "enunciado": "Diagnosticar el reconocimiento léxico portuario reefer mediante galería visual diagnóstica y KWL bilingüe activando saberes operacionales previos.", "duracion_horas": 1.5, "produces_evidencia": null},
-      {"numero": 4, "session": "S1", "pm_id": "PM-2.2", "tipo_bloque": "APERTURA", "rap_target": null, "dimension": "cognitiva", "enunciado": "Diagnosticar el baseline auditivo SMCP mediante audio VHF auténtico de 90 segundos y checklist binaria triangulada sin enseñar frases nuevas.", "duracion_horas": 1.5, "produces_evidencia": null},
-      {"numero": 5, "session": "S2", "pm_id": "PM-2.5", "tipo_bloque": "APROPIACION", "rap_target": "RA1", "dimension": "cognitiva", "enunciado": "Mapear 20 términos canon RA1 sobre partes del barco, tipos de vessels, equipamiento y profesiones portuarias mediante Word Wall Active y mapa semántico colaborativo.", "duracion_horas": 2.5, "produces_evidencia": null},
-      {"numero": 6, "session": "S2", "pm_id": "PM-2.10", "tipo_bloque": "APROPIACION", "rap_target": "RA1", "dimension": "cognitiva", "enunciado": "Inducir el patrón canon de verb to be, demostrativos this/that/these/those y plurales -s/-es a partir de un corpus reefer y formular la regla en propias palabras.", "duracion_horas": 2.5, "produces_evidencia": null},
-      {"numero": 7, "session": "S3", "pm_id": "PM-2.3", "tipo_bloque": "APROPIACION", "rap_target": "RA1", "dimension": "cognitiva", "enunciado": "Reconocer vocabulario portuario y partes del barco en el Story A 'MV CARIBBEAN STAR Arrives at Puerto Antioquia' aplicando DRTA + K-W-L + Story Map.", "duracion_horas": 4.0, "produces_evidencia": "E1"},
-      {"numero": 8, "session": "S3", "pm_id": "PM-2.6", "tipo_bloque": "APROPIACION", "rap_target": "RA1", "dimension": "cognitiva", "enunciado": "Reforzar comprensión auditiva del vocabulario portuario y bay counts en audio Reefer Yard Walk de Yurlenis.", "duracion_horas": 1.5, "produces_evidencia": null},
-      {"numero": 10, "session": "S4", "pm_id": "PM-2.4", "tipo_bloque": "APROPIACION", "rap_target": "RA1", "dimension": "procedimental", "enunciado": "Producir un Inspection Report técnico de una página sobre el walk-around del bay 14 del MV CARIBBEAN STAR aplicando vocabulario portuario y estructuras gramaticales A1.2-A1.3.", "duracion_horas": 4.5, "produces_evidencia": "E2"},
-      {"numero": 12, "session": "S4", "pm_id": "PM-4.2", "tipo_bloque": "APROPIACION", "rap_target": "RA1", "dimension": "cognitiva", "enunciado": "Diseñar el banco proto de ítems Vocabulary y Reading cara RA1 del Cuestionario Consolidado E6 mediante curaduría colaborativa de 6-8 ítems sobre vocabulario portuario.", "duracion_horas": 1.0, "produces_evidencia": "E6 (preparatorio)"},
-      {"numero": 13, "session": "S5", "pm_id": "PM-2.6", "tipo_bloque": "APROPIACION", "rap_target": "RA2", "dimension": "procedimental", "enunciado": "Identificar mensajes correctos y distractores SMCP en audio VHF auténtico de Captain Lim Wei-Ming según protocolo OMI.", "duracion_horas": 3.0, "produces_evidencia": "E3"},
-      {"numero": 14, "session": "S5", "pm_id": "PM-2.5", "tipo_bloque": "APROPIACION", "rap_target": "RA2", "dimension": "cognitiva", "enunciado": "Instalar 20 términos canon SMCP RA2 sobre message markers, standard responses y NATO Phonetic mediante Word Wall categorizado y articulación phonics light cero-tolerancia.", "duracion_horas": 1.5, "produces_evidencia": null},
-      {"numero": 15, "session": "S5", "pm_id": "PM-2.10", "tipo_bloque": "APROPIACION", "rap_target": "RA2", "dimension": "cognitiva", "enunciado": "Descubrir y automatizar la sintaxis SMCP IMO de message markers, standard responses, NATO Phonetic y protocolo Over/Out mediante consciousness-raising y drill cero-tolerancia.", "duracion_horas": 1.0, "produces_evidencia": null},
-      {"numero": 15, "session": "S6", "pm_id": "PM-2.8", "tipo_bloque": "APROPIACION", "rap_target": "RA2", "dimension": "procedimental", "enunciado": "Aplicar respuestas estandarizadas SMCP y deletreo NATO Phonetic en role-play VHF con Captain Lim del MV CARIBBEAN STAR.", "duracion_horas": 2.5, "produces_evidencia": "E4-parcial", "_nota_renumeracion": "duplicado numero=15 entre PM-2.10 S5 (grammar) y PM-2.8 S6 (speaking) heredado literal de Activity Cards · ambos preservados sin reasignar (REGLA cero invención)"},
-      {"numero": 16, "session": "S6", "pm_id": "PM-4.2", "tipo_bloque": "APROPIACION", "rap_target": "RA2 (ejecución física) · 4-way RA1+RA2+RA3+RA4 (contenido C07)", "dimension": "cognitiva", "enunciado": "Demostrar dominio integrado consolidado de Reading + Writing + Listening + Vocabulary + Grammar mediante el Cuestionario Consolidado E6 de 25 ítems con criterio PASS ≥ 70%.", "duracion_horas": 3.0, "produces_evidencia": "E6"},
-      {"numero": 17, "session": "S7", "pm_id": "PM-2.6", "tipo_bloque": "APROPIACION", "rap_target": "RA3", "dimension": "cognitiva", "enunciado": "Anticipar y reconstruir órdenes y modal verbs del Berthing Tripartito mediante Predictive Listening y Dictogloss ligero.", "duracion_horas": 1.0, "produces_evidencia": null},
-      {"numero": 19, "session": "S7", "pm_id": "PM-2.5", "tipo_bloque": "APROPIACION", "rap_target": "RA3", "dimension": "cognitiva", "enunciado": "Consolidar 20 términos canon RA3 sobre commands a destinatarios, imperativos de seguridad y modal verbs mediante Word Wall, semantic gradients y jigsaw command-addressee.", "duracion_horas": 1.5, "produces_evidencia": null},
-      {"numero": 20, "session": "S7", "pm_id": "PM-2.10", "tipo_bloque": "APROPIACION", "rap_target": "RA3", "dimension": "cognitiva", "enunciado": "Consolidar commands a destinatarios, imperative, present simple Wh-questions y modals gradient con tres extensiones C05 (conditional t1, voz pasiva, presente perfecto) mediante rule formulation, transformation drills y reasoning-gap berthing.", "duracion_horas": 2.0, "produces_evidencia": null},
-      {"numero": 21, "session": "S8", "pm_id": "PM-2.8", "tipo_bloque": "APROPIACION", "rap_target": "RA3", "dimension": "procedimental", "enunciado": "Coordinar berthing tripartito simultáneo del MV CARIBBEAN STAR aplicando commands, imperative, modals y extensiones C05 (condicional, pasiva, presente perfecto).", "duracion_horas": 4.0, "produces_evidencia": "E4-final"},
-      {"numero": 22, "session": "S8", "pm_id": "PM-2.9", "tipo_bloque": "APROPIACION", "rap_target": "RA3", "dimension": "cognitiva", "enunciado": "Activar las 5 funciones comunicativas canon RA3 mediante drill de function cards previo al Berthing Tripartito Simultáneo.", "duracion_horas": 1.5, "produces_evidencia": null},
-      {"numero": 23, "session": "S9", "pm_id": "PM-2.6", "tipo_bloque": "APROPIACION", "rap_target": "RA4", "dimension": "cognitiva", "enunciado": "Analizar y categorizar las 5 master functions IMARPOR del Role Carousel Briefing audio de Mariana, Carolina y Yurlenis.", "duracion_horas": 0.5, "produces_evidencia": null},
-      {"numero": 24, "session": "S9", "pm_id": "PM-2.5", "tipo_bloque": "APROPIACION", "rap_target": "RA4", "dimension": "cognitiva", "enunciado": "Cerrar Toolbelt cuádruple con 20 términos canon RA4 sobre lugares en puerto, condiciones meteo, contenedorización y maniobras mediante Word Wall categorizado y Quizlet pareo.", "duracion_horas": 1.0, "produces_evidencia": null},
-      {"numero": 25, "session": "S9", "pm_id": "PM-2.10", "tipo_bloque": "APROPIACION", "rap_target": "RA4", "dimension": "cognitiva", "enunciado": "Producir tag questions, present progressive con prepositional phrases y quantifiers definidos/indefinidos mediante data-based discovery, sentence building y chain story descriptiva pre-Role Carousel.", "duracion_horas": 1.0, "produces_evidencia": null},
-      {"numero": 25, "session": "S9", "pm_id": "PM-2.9", "tipo_bloque": "APROPIACION", "rap_target": "RA4", "dimension": "procedimental", "enunciado": "Ejecutar las 5 master functions IMARPOR mediante Role Carousel de 5 estaciones rotativas con conectores discursivos canon C06.", "duracion_horas": 3.5, "produces_evidencia": "E5", "_nota_renumeracion": "duplicado numero=25 entre PM-2.10 S9 (grammar) y PM-2.9 S9 (E5 Role Carousel) heredado literal · ambos preservados (REGLA cero invención)"},
-      {"numero": 28, "session": "S10", "pm_id": "PM-2.10", "tipo_bloque": "APROPIACION", "rap_target": "RA4 (consolidación cross-RAP RA1+RA2+RA3+RA4)", "dimension": "cognitiva", "enunciado": "Integrar las estructuras gramaticales de B1+B2+B3+B4 en un rehearsal cross-RAP del Pre-Departure Banana Reefer Compliance Check con feedback formativo cohesión gramatical no calificativo.", "duracion_horas": 5.0, "produces_evidencia": null},
-      {"numero": 29, "session": "S11", "pm_id": "PM-3.5", "tipo_bloque": "TRANSFERENCIA", "rap_target": "todos_los_raps_integrados", "dimension": "cognitiva", "enunciado": "Comprender el Mission Brief Pre-Departure Banana Reefer Compliance Check & Tripartite Handover MV CARIBBEAN STAR confirmando role assignment y rúbrica ABP capstone.", "duracion_horas": 1.5, "produces_evidencia": null},
-      {"numero": 30, "session": "S11", "pm_id": "PM-3.5", "tipo_bloque": "TRANSFERENCIA", "rap_target": "todos_los_raps_integrados", "dimension": "cognitiva", "enunciado": "Preparar visitor checklist + VHF script SMCP + handover pitch outline integrando vocabulario y estructuras de los 4 RAPs para el capstone.", "duracion_horas": 1.5, "produces_evidencia": null},
-      {"numero": 31, "session": "S11", "pm_id": "PM-3.5", "tipo_bloque": "TRANSFERENCIA", "rap_target": "todos_los_raps_integrados", "dimension": "procedimental", "enunciado": "Ensayar la jornada completa de 90 minutos cuadrilla por cuadrilla recibiendo feedback formativo NO calificativo sobre SMCP accuracy y handover fluency.", "duracion_horas": 3.0, "produces_evidencia": null},
-      {"numero": 32, "session": "S12", "pm_id": "PM-3.5", "tipo_bloque": "TRANSFERENCIA", "rap_target": "todos_los_raps_integrados", "dimension": "procedimental", "enunciado": "Ejecutar la jornada operacional Pre-Departure Banana Reefer Compliance Check & Tripartite Handover de 90 minutos por cuadrilla ante panel evaluador externo aplicando los 4 RAPs integrados.", "duracion_horas": 3.0, "produces_evidencia": "E-Misión"},
-      {"numero": 33, "session": "S12", "pm_id": "PM-3.5", "tipo_bloque": "TRANSFERENCIA", "rap_target": "todos_los_raps_integrados", "dimension": "actitudinal", "enunciado": "Reflexionar sobre el journey CEFR A1.2 → A2.1 mediante debrief panel + entrega de diplomas + ritual de cierre programa cold chain integrity.", "duracion_horas": 3.0, "produces_evidencia": null}
-    ],
-    "_C7_total_actividades": 30,
-    "_C7_breakdown_por_bloque": "APERTURA B0 S1=4 + APROPIACION B1 RA1 (S2-S4)=6 + APROPIACION B2 RA2 (S5-S6)=5 + APROPIACION B3 RA3 (S7-S8)=5 + APROPIACION B4 RA4 (S9-S10)=5 + TRANSFERENCIA BT (S11-S12)=5 = 30",
-    "_C7_breakdown_por_dimension": "actitudinal=4 (sparks S1 + cierre S12) · cognitiva=18 · procedimental=8",
-
-    "C8_horas_directo": 72,
-    "_C8_breakdown": "12 sesiones × 6h directas = 72h (canon REGLA 8 v2.8 · pm-1-1 estructura tripartita)",
-
-    "C9_horas_independiente": 28,
-    "_C9_breakdown": "28h autónomas implicadas (lectura preview + post-task reflexión + memorization NATO Phonetic + estudio rúbrica ABP + lectura autónoma extra-aula)",
-
-    "C10_evidencias": [
-      {
-        "codigo": "E1",
-        "tipo": "Conocimiento",
-        "nombre": "Comprensión lectora del Story A 'MV CARIBBEAN STAR Arrives at Puerto Antioquia · Meet the Reefer Crew' (vocabulario portuario · partes del barco · oficios bananeros del cast operacional)",
-        "tecnica_evaluacion": "Preguntas",
-        "instrumento_numero": 1,
-        "instrumento_tipo": "Cuestionario",
-        "sesion": "S3",
-        "rap_target": "RA1",
-        "criterio_canon_evaluado": "C01",
-        "cefr_subnivel": "A1.2",
-        "pm_source": "PM-2.3"
-      },
-      {
-        "codigo": "E2",
-        "tipo": "Producto",
-        "nombre": "Inspection Report técnico del walk-around bay 14 MV CARIBBEAN STAR (vocabulario portuario · partes del barco · oficios bananeros · verb to be · plurales · imperative en safety commands · preposición IN para location)",
-        "tecnica_evaluacion": "Verificación de producto",
-        "instrumento_numero": 2,
-        "instrumento_tipo": "Lista de verificación",
-        "sesion": "S4",
-        "rap_target": "RA1+RA3 (overlap C02)",
-        "criterio_canon_evaluado": "C02",
-        "cefr_subnivel": "A1.2-A1.3",
-        "pm_source": "PM-2.4"
-      },
-      {
-        "codigo": "E3",
-        "tipo": "Desempeño",
-        "nombre": "Comprensión auditiva SMCP · identificación de message markers, standard responses y NATO Phonetic en VHF Arrival Exchange MV CARIBBEAN STAR",
-        "tecnica_evaluacion": "Observación",
-        "instrumento_numero": 3,
-        "instrumento_tipo": "Lista de Chequeo",
-        "sesion": "S5",
-        "rap_target": "RA2",
-        "criterio_canon_evaluado": "C03",
-        "cefr_subnivel": "A1.3",
-        "pm_source": "PM-2.6"
-      },
-      {
-        "codigo": "E4-parcial",
-        "tipo": "Desempeño",
-        "nombre": "VHF Role-Play SMCP · respuestas críticas estandarizadas y deletreo NATO Phonetic con Captain Lim Wei-Ming y Bosun Andrés Mejía (zona accuracy-cero-tolerancia)",
-        "tecnica_evaluacion": "Observación",
-        "instrumento_numero": 4,
-        "instrumento_tipo": "Escala de estimación",
-        "sesion": "S6",
-        "rap_target": "RA2+RA3 (overlap C04)",
-        "criterio_canon_evaluado": "C04",
-        "cefr_subnivel": "A1.3-A2.0",
-        "pm_source": "PM-2.8"
-      },
-      {
-        "codigo": "E6",
-        "tipo": "Conocimiento",
-        "nombre": "Cuestionario Consolidado S6 · 25 ítems · 5 skills × 5 puntos (Reading + Writing + Listening + Vocabulary + Grammar) · 4-way overlap C07 RA1+RA2+RA3+RA4 · ≥70% PASS",
-        "tecnica_evaluacion": "Preguntas",
-        "instrumento_numero": 6,
-        "instrumento_tipo": "Cuestionario",
-        "sesion": "S6",
-        "rap_target": "RA1+RA2+RA3+RA4 (overlap C07 4-way)",
-        "criterio_canon_evaluado": "C07",
-        "cefr_subnivel": "consolidación A1.2-A2.0",
-        "pm_source": "PM-4.2"
-      },
-      {
-        "codigo": "E4-final",
-        "tipo": "Desempeño",
-        "nombre": "Berthing Tripartito Simultáneo del MV CARIBBEAN STAR · coordinación 5 actores aplicando 4 saberes canon RA3 + 3 extensiones C05 emergentes (zona accuracy+fluency híbrida)",
-        "tecnica_evaluacion": "Observación",
-        "instrumento_numero": 4,
-        "instrumento_tipo": "Escala de estimación",
-        "sesion": "S8",
-        "rap_target": "RA3",
-        "criterio_canon_evaluado": "C05",
-        "cefr_subnivel": "A2.0",
-        "pm_source": "PM-2.8"
-      },
-      {
-        "codigo": "E5",
-        "tipo": "Desempeño",
-        "nombre": "Producción funcional descriptiva en Role Carousel · 5 master functions IMARPOR con conectores discursivos canon en escenario banana cold chain Puerto Antioquia",
-        "tecnica_evaluacion": "Observación",
-        "instrumento_numero": 5,
-        "instrumento_tipo": "Escala de estimación",
-        "sesion": "S9",
-        "rap_target": "RA3+RA4 (overlap C06)",
-        "criterio_canon_evaluado": "C06",
-        "cefr_subnivel": "A2.0-A2.1",
-        "pm_source": "PM-2.9"
-      },
-      {
-        "codigo": "E-Misión",
-        "tipo": "Desempeño",
-        "nombre": "Pre-Departure Banana Reefer Compliance Check & Tripartite Handover · Performance Panel MV CARIBBEAN STAR (capstone integrador 4 RAPs · 90 min/cuadrilla · panel evaluador externo 3 personas Captain Lim + Mariana + Hernando)",
-        "tecnica_evaluacion": "Observación",
-        "instrumento_numero": null,
-        "instrumento_tipo": "Rúbrica ABP capstone (6 criterios C01-C13 · 100 puntos · ≥70 PASS)",
-        "sesion": "S12",
-        "rap_target": "todos_los_raps_integrados (capstone)",
-        "criterio_canon_evaluado": "C08",
-        "cefr_subnivel": "A2.1 terminal",
-        "pm_source": "PM-3.5"
-      }
-    ],
-    "_C10_total_evidencias": 8,
-    "_C10_breakdown": "E1 (Reading S3 RA1) + E2 (Writing S4 RA1+RA3) + E3 (Listening S5 RA2) + E4-parcial (Speaking S6 RA2+RA3) + E6 (Cuestionario S6 4-way) + E4-final (Speaking S8 RA3) + E5 (Functions S9 RA3+RA4) + E-Misión (Capstone S12 todos)",
-
-    "C11_estrategias_didacticas": [
-      "Aprendizaje colaborativo",
-      "Aprendizaje basado en experiencias",
-      "Aprendizaje basado en proyectos (ABP)",
-      "Trabajo colaborativo",
-      "Content-Based Learning",
-      "Task-Based Language Teaching (TBLT)",
-      "Juego de roles",
-      "Simulación",
-      "Aprendizaje por descubrimiento (consciousness-raising)",
-      "Estudio de caso"
-    ],
-    "_C11_total_unicas": 10,
-    "_C11_origen": "lista única deduplicada agregada de las 30 Activity Cards v3.0 (campo estrategias_didacticas_activas) · técnicas didácticas asociadas: Lluvia de ideas · Narrativa y testimonio · Investigación guiada · Jigsaw · Taller · Role play · Conversatorio · Práctica de campo · Drill · Dictogloss",
-
-    "C12_ambiente": "Ambiente formativo multimodal con 3 configuraciones según tipo de actividad: (1) AULA REGULAR con proyector interactivo + sistema de audio + computadores con acceso a Moodle + mesas reorganizables para tríos / equipos de 3-6 / cuadrillas de 6 aprendices + pizarrón colaborativo (sesiones APERTURA S1 + scaffolds APROPIACIÓN vocab/grammar/reading S2/S4/S5/S7/S9 + ejecución E1/E2/E3/E6 S3/S4/S5/S6 + briefing/preparación BT S11). (2) AMBIENTE PLURITECNOLÓGICO SIMULADO con sistema VHF + micrófonos de diadema dobles por equipo + sala handover meeting con mesa tripartita + diagrama berthing tridimensional (sesiones E4-parcial S6 + E4-final S8 berthing tripartito + E5 Role Carousel S9 + rehearsal S10/S11). (3) AMBIENTE PLURITECNOLÓGICO INDUSTRIAL COMPLETO reefer yard operativo con plug + genset + bays simuladas + cluster Cavendish real + termómetro digital + señalética bilingüe pier (NO SMOKING · COLD CHAIN ZONE · MUSTER STATION · GENSET WARNING) + sistema VHF operativo + bridge simulado + sala handover tripartita con disposición panel-cuadrilla (sesión S12 E-Misión capstone + cierre programa). Universo operacional: Puerto Antioquia · Terminal Multipropósito de Urabá · MV CARIBBEAN STAR atracado bay 14 · cluster Cavendish destino Hamburgo · ventana exportación 90 min · contenedor 25,000 USD.",
-
-    "C13_materiales_formacion": [
-      "Proyector interactivo",
-      "Sistema de audio nítido",
-      "Computadores con acceso a Moodle",
-      "Pizarrón colaborativo",
-      "Mesas reorganizables (tríos · equipos de 3-6 · cuadrillas de 6)",
-      "Post-it amarillos · marcadores amarillos · marcadores rojos · stickers verde/amarillo/rojo",
-      "Carpetas personales del curso (1 por aprendiz)",
-      "Galería 12 imágenes etiquetadas reefer/genset/clusters/equipment portuario",
-      "Audio VHF auténtico 90 seg lingua franca B1 (Captain Lim Wei-Ming · Pilot Carolina · Bosun Andrés)",
-      "Audio Reefer Yard Walk Yurlenis Tally Clerk",
-      "Audio Berthing Tripartito 110 seg",
-      "Audio Role Carousel Briefing Mariana+Carolina+Yurlenis",
-      "Video testimonio dramatizado 'Manuel freezes on the VHF' (3 min)",
-      "ICA Phytosanitary Certificate auténtico anonimizado firmado Mariana Suárez (1 copia A4 laminada por aprendiz)",
-      "Story A impreso 'MV CARIBBEAN STAR Arrives at Puerto Antioquia' (5 copias por equipo)",
-      "Story A 'Berthing the CARIBBEAN STAR' procedural narrative + safety signage",
-      "Plantillas K-W-L bilingüe + Story Map + checklist binaria SMCP NATO Phonetic / Message Markers / Standard Responses",
-      "Word Wall Active 80 términos canon (20 RA1 + 20 RA2 SMCP + 20 RA3 + 20 RA4)",
-      "Cuestionario No 1 impreso (5 ítems Reading)",
-      "Lista de Verificación No 2 impresa (10 criterios Inspection Report)",
-      "Lista de Chequeo No 3 impresa (Listening SMCP)",
-      "Escala de Estimación No 4 impresa (Speaking VHF + Berthing)",
-      "Escala de Estimación No 5 impresa (Functions Role Carousel)",
-      "Cuestionario No 6 impreso (25 ítems Consolidado)",
-      "Rúbrica ABP capstone impresa (6 criterios C01-C13)",
-      "Function cards F1-F5 RA3 + F1-F5 master functions IMARPOR RA4",
-      "Sistema VHF simulado + micrófonos de diadema (1 por aprendiz · simulación VHF handset · pares por equipo)",
-      "Diagrama berthing maneuver tridimensional o impreso A2",
-      "Reefer plug demo + termómetro digital + cluster Cavendish real",
-      "Señalética bilingüe pier (NO SMOKING · COLD CHAIN ZONE · MUSTER STATION · GENSET WARNING)",
-      "Templates digitales visitor checklist + VHF script + handover pitch outline",
-      "Mission Brief impreso 'Pre-Departure Banana Reefer Compliance Check + Tripartite Handover'",
-      "Diplomas + pocket cards laminadas continuidad profesional",
-      "Foto contextual MV CARIBBEAN STAR + organigrama visual cast crew bananero (Manuel · Carolina · Mariana · Yurlenis · Hernando · Andrés · Pipa · Captain Lim Wei-Ming)"
-    ],
-    "_C13_total": 35,
-    "_C13_origen": "lista única deduplicada agregada de las 30 Activity Cards v3.0 (campo materiales_formacion + material_apoyo)",
-
-    "C14_instructores_responsables": "Sergio Cortés Perdomo (instructor líder · arquitecto pedagógico FPI SENA Bilingüismo · responsable tripartita ABP capstone) + Diana Samboni (co-instructora · soporte didáctico + acompañamiento E1-E6) · Co-instructores invitados al universo operacional: Pipa (refrigeration technician · co-instructor experiencial VHF/SMCP) + Hernando Ospina (panel evaluador externo capstone E-Misión S12) · Personajes operacionales encarnados (cuando logística lo permite): Mariana Suárez (cold chain coordinator · arquetipo destino · narradora ICA Certificate spark + panel S12) + Captain Lim Wei-Ming (panel S12 evaluador externo · audio VHF auténtico)",
-
-    "C15_observaciones": "Programa Curso Complementario 100h (72 directas + 28 independientes · 12 sesiones × 6h) ejecutado bajo paradigma cascade v3.x heredancia tripartita: APERTURA (S1) · APROPIACIÓN (S2-S10) · TRANSFERENCIA capstone ABP (S11-S12). Universo canon banana cold chain Puerto Antioquia con cast 9 personajes (Manuel Padilla aprendiz avatar · Captain Lim Wei-Ming · Mariana Suárez · Carolina Vélez · Yurlenis Hinestroza · Pipa · Hernando Ospina · Andrés Mejía + Sergio/Diana instructores). 8 evidencias canon C01-C08 secuenciadas con anclaje matriz v1.3 explícito: E1 Reading S3 (C01·RA1) → E2 Writing S4 (C02·RA1+RA3 overlap) → E3 Listening S5 (C03·RA2) → E4-parcial Speaking S6 (C04·RA2+RA3 overlap) + E6 Cuestionario S6 (C07·4-way · checkpoint medio doble evidencia canon) → E4-final Speaking S8 (C05·RA3 berthing tripartito) → E5 Functions S9 (C06·RA3+RA4 overlap) → E-Misión S12 (C08·todos integrados · panel externo · 90 min/cuadrilla · 100% L2). 4 overlaps documentados matriz: C02 RA1+RA3 (lexical+morfosintáctica E2) · C04 RA2+RA3 (SMCP+gramática E4-parcial) · C06 RA3+RA4 (gramática+descriptiva E5) · C07 4-way (consolidación integrada E6). Densidad criterios canon máxima en RA3 (5/8 = 62.5%). Volumen saberes_conceptos máximo en RA4 (10/26 = 38.5%). S6 doble evidencia canon (E4-parcial + E6 checkpoint medio) · S10 sesión bisagra rehearsal pre-Misión sin evidencia formal. ZERO leak xlsx referencia Buenaventura: contenido 100% cascade v3.x banana cold chain · cast canon · MV CARIBBEAN STAR. Instrumentos canon estricto: Cuestionario No 1 (E1) · Lista de Verificación No 2 (E2) · Lista de Chequeo No 3 (E3) · Escala de Estimación No 4 (E4-parcial S6 + E4-final S8) · Escala de Estimación No 5 (E5) · Cuestionario No 6 (E6) · Rúbrica ABP capstone NO numerado (E-Misión). Renumeraciones heredadas literal Activity Cards: numero=15 duplicado entre PM-2.10 S5 grammar y PM-2.8 S6 speaking · numero=25 duplicado entre PM-2.10 S9 grammar y PM-2.9 S9 E5 Role Carousel · ambos preservados sin reasignar (REGLA cero invención · trazabilidad bidireccional bloqueante)."
-  },
-
   "heredancia_traceability_resumen": {
     "saberes_concepto_total": 26,
     "saberes_concepto_breakdown_por_rap": "RA1=8 + RA2=4 + RA3=4 + RA4=10 = 26",
@@ -453,7 +60,6 @@
     "universo": "banana cold chain · Puerto Antioquia (Terminal Multipropósito Urabá · Necoclí) · MV CARIBBEAN STAR (atracado bay 14) · cluster Cavendish destino Hamburgo · cast 9 personajes (Manuel Padilla · Captain Lim Wei-Ming · Mariana Suárez · Carolina Vélez · Yurlenis Hinestroza · Pipa · Hernando Ospina · Andrés Mejía · Sergio/Diana instructores) · 47 clusters · 80 reefer plugs · ICA Phytosanitary · USD 25,000 stake operacional",
     "_anti_drift_buenaventura": "ZERO leak xlsx referencia: contenido 100% cascade v3.x banana cold chain · NO Buenaventura · NO BUENAVENTURA EXPRESS · NO Captain Lopera · NO referencia Pacífico · todos los anchors operacionales corresponden a Puerto Antioquia + Eje Bananero + cast canon Manuel/Mariana/Captain Lim Wei-Ming"
   },
-
   "validation_checks": [
     {
       "id": 1,
@@ -562,18 +168,24 @@
       "name": "universe_consistency_v3",
       "status": "PASS",
       "evidence": "Universo banana cold chain canon preservado integralmente · ZERO leak Buenaventura/BUENAVENTURA EXPRESS/Captain Lopera/Pacífico desde xlsx referencia. Anchors operacionales 100% Puerto Antioquia + Terminal Multipropósito Urabá + Necoclí · MV CARIBBEAN STAR (NO BUENAVENTURA EXPRESS) · cast canon 9 personajes (Manuel Padilla · Captain Lim Wei-Ming · Mariana Suárez · Carolina Vélez · Yurlenis Hinestroza · Pipa · Hernando Ospina · Andrés Mejía + Sergio/Diana) · cluster Cavendish destino Hamburgo · ICA Phytosanitary Certificate · USD 25,000 stake · 47 clusters · 80 reefer plugs. Verificado en C7 (todos los enunciados) + C10 (nombres evidencias) + C12 (ambiente) + C13 (materiales) + C14 (instructores) + C15 (observaciones)."
+    },
+    {
+      "id": "C19_agrupacion_tripartita_6_filas",
+      "name": "Agrupación tripartita por RA · 6 filas heredadas 1:1 de pm-1-2 sub_bloques_tripartitos",
+      "status": "PASS",
+      "evidence": "Generadas 6 filas (esperado 6: B0+B1+B2+B3+B4+BT). Bloques: ['B0', 'B1', 'B2', 'B3', 'B4', 'BT']"
     }
   ],
-
   "_validation_summary": {
-    "total_checks": 18,
+    "total_checks": 19,
     "checks_pass": 18,
     "checks_fail": 0,
     "v2_6_3_preservados": "16 (1-16 estructurales row assembler)",
     "v3_0_NEW": "2 (17 cascade_completeness + 18 universe_consistency_v3)",
-    "status_global": "READY · 18/18 PASS · enriched=true · listo entrega xlsx V04 oficial SENA"
+    "status_global": "READY · 18/18 PASS · enriched=true · listo entrega xlsx V04 oficial SENA",
+    "pass_count": 19,
+    "v3_1_added": 1
   },
-
   "_decisiones_agregacion_significativas": [
     {
       "decision": "Renumeraciones duplicadas (numero=15 dual PM-2.10 S5 vs PM-2.8 S6 · numero=25 dual PM-2.10 S9 vs PM-2.9 S9) preservadas LITERAL sin reasignar",
@@ -600,7 +212,6 @@
       "rationale": "Universo cascade v3.x integra personajes operacionales como co-instructores experienciales (Pipa VHF · Hernando panel) y narradores en sesiones específicas (Mariana ICA spark S1 · Mariana+Captain Lim panel evaluador S12). Heredado literal pm-0-context cast 9 personajes + pm-3-5 panel externo capstone. NO confundir con instructores SENA formales (Sergio + Diana documentados por separado)."
     }
   ],
-
   "_audit": {
     "input_sources": [
       "Master prompt PM-2.11 v3.0 (EXTENSIÓN final 2026-05-02 · REGLAS NEW heredancia + 18 checks)",
@@ -640,17 +251,1353 @@
       "Universo cascade v3.x preservado (banana cold chain + Puerto Antioquia + MV CARIBBEAN STAR + cast 9)"
     ],
     "version_history": [
-      {"version": "v3.0 (este archivo)", "fecha": "2026-05-02", "estado": "primera ejecución PM-2.11 v3.0 row assembler heredero cascade tripartita IMARPOR-V2 · 18/18 validation_checks PASS · CIERRE Phase 2 boundary · Wave 5 IMARPOR-V2 final · listo entrega xlsx V04 oficial SENA"}
+      {
+        "version": "v3.0 (este archivo)",
+        "fecha": "2026-05-02",
+        "estado": "primera ejecución PM-2.11 v3.0 row assembler heredero cascade tripartita IMARPOR-V2 · 18/18 validation_checks PASS · CIERRE Phase 2 boundary · Wave 5 IMARPOR-V2 final · listo entrega xlsx V04 oficial SENA"
+      }
     ]
   },
-
   "downstream_consumers": [
     "Sergio Cortés (genera xlsx V04 oficial SENA desde este JSON · entrega formal)",
     "PM-3.1 (Playbook builder · consume row GFPI-F-134 ensamblada como base curricular)",
     "PM-4.1 (instrumentos evaluación · consume C10 evidencias + C6 criterios canon)",
     "PM-4.2 (Cuestionario Consolidado E6 · ya consumido en cascade · validación final)"
   ],
-
   "enriched": true,
-  "_block_downstream": false
+  "_block_downstream": false,
+  "_v3_1_correction": "Corrección Sergio 2026-05-02 · gfpi_f134_v04_row (single object) → gfpi_f134_v04_rows[] (6 objects). Honra patrón canon 'agrupado por RA así como PM-0.0 · PM-0 · PM-1.1 · PM-1.2'. Cada bloque tripartito (B0 APERTURA · B1-B4 APROPIACIÓN una por RA · BT TRANSFERENCIA) tiene SUS saberes/criterios/actividades/evidencias/horas/estrategias. NO más agregado monolítico.",
+  "gfpi_f134_v04_rows": [
+    {
+      "_orden": 1,
+      "_bloque_id": "B0",
+      "_tipo_bloque": "APERTURA",
+      "_sub_bloque_titulo": "The Banana Reefer Welcome · Cold Chain Stand-Down & Diagnostic Spark",
+      "_sesiones_anchor": [
+        "S1"
+      ],
+      "_cefr_subnivel": "transversal",
+      "_anclaje_matriz_bloque_heredado": {
+        "alcance": "competencia_completa",
+        "raps_atravesados": [
+          "RA1",
+          "RA2",
+          "RA3",
+          "RA4"
+        ],
+        "pms_destino": [
+          "PM-2.1",
+          "PM-2.2"
+        ],
+        "arquetipos_target": 4,
+        "evidencias_target": [],
+        "criterios_canon": [],
+        "rationale_sin_evidencias": "APERTURA es transversal pre-evaluación · ninguna evidencia formal canon (E1-E6+E-Misión) cae en S1 · primera evidencia es E1 Reading S3 que pertenece a B1 RA1"
+      },
+      "C1_competencia": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA IDIOMAS.",
+      "C2_rap": {
+        "rap_id": "transversal",
+        "codigo": "N/A",
+        "enunciado": "Apertura transversal · activación + diagnóstico baseline · NO cubre RAP específico (cobertura via B1-B4 APROPIACIÓN)"
+      },
+      "C4_saberes_conceptos": [
+        "(N/A — bloque APERTURA: activación + diagnóstico · NO introduce saberes formales nuevos · cobertura via B1-B4 APROPIACIÓN)"
+      ],
+      "C5_saberes_proceso": [
+        "(N/A — bloque APERTURA: NO produce saberes proceso formales · habilita Spark + Gap Analysis activación afectiva)"
+      ],
+      "C6_criterios_evaluacion": {
+        "sofia_assigned": [],
+        "canon_sistema_assigned": [],
+        "_rationale": "APERTURA NO produce evidencias formales · criterios canon = activación afectiva + diagnóstico baseline"
+      },
+      "C7_actividades_aprendizaje": [
+        "#1 S1 (pm-2-1 · actitudinal · 1.0h) — Reflexionar sobre el miedo operacional al inglés VHF mediante video testimonio dramatizado de Manuel Padilla activando interés afectivo en operaciones cold chain Puerto Antioquia.",
+        "#2 S1 (pm-2-1 · actitudinal · 1.0h) — Reflexionar sobre el arquetipo destino cold chain coordinator mediante artefacto ICA Phytosanitary Certificate firmado por Mariana Suárez activando proyección afectiva operaciones bilingües.",
+        "#3 S1 (pm-2-2 · cognitiva · 1.5h) — Diagnosticar el reconocimiento léxico portuario reefer mediante galería visual diagnóstica y KWL bilingüe activando saberes operacionales previos.",
+        "#4 S1 (pm-2-2 · cognitiva · 1.5h) — Diagnosticar el baseline auditivo SMCP mediante audio VHF auténtico de 90 segundos y checklist binaria triangulada sin enseñar frases nuevas."
+      ],
+      "_C7_total": 4,
+      "C8_horas_directo": 6,
+      "C9_horas_independiente": 1.5,
+      "C10_evidencias": [
+        "(N/A — bloque APERTURA NO produce evidencias formales por diseño · rationale_sin_evidencias)"
+      ],
+      "_C10_total": 1,
+      "C11_estrategias_didacticas": [
+        "(heredar de logistics_box pm-3-2 downstream)"
+      ],
+      "C12_ambiente": "Ambiente formativo multimodal con 3 configuraciones según tipo de actividad: (1) AULA REGULAR con proyector interactivo + sistema de audio + computadores con acceso a Moodle + mesas reorganizables para tríos / equipos de 3-6 / cuadrillas de 6 aprendices + pizarrón colaborativo (sesiones APERTURA S1 + scaffolds APROPIACIÓN vocab/grammar/reading S2/S4/S5/S7/S9 + ejecución E1/E2/E3/E6 S3/S4/S5/S6 + briefing/preparación BT S11). (2) AMBIENTE PLURITECNOLÓGICO SIMULADO con sistema VHF + micrófonos de diadema dobles por equipo + sala handover meeting con mesa tripartita + diagrama berthing tridimensional (sesiones E4-parcial S6 + E4-final S8 berthing tripartito + E5 Role Carousel S9 + rehearsal S10/S11). (3) AMBIENTE PLURITECNOLÓGICO INDUSTRIAL COMPLETO reefer yard operativo con plug + genset + bays simuladas + cluster Cavendish real + termómetro digital + señalética bilingüe pier (NO SMOKING · COLD CHAIN ZONE · MUSTER STATION · GENSET WARNING) + sistema VHF operativo + bridge simulado + sala handover tripartita con disposición panel-cuadrilla (sesión S12 E-Misión capstone + cierre programa). Universo operacional: Puerto Antioquia · Terminal Multipropósito de Urabá · MV CARIBBEAN STAR atracado bay 14 · cluster Cavendish destino Hamburgo · ventana exportación 90 min · contenedor 25,000 USD.",
+      "C13_materiales_formacion": [
+        "Audio VHF auténtico 90 segundos MV CARIBBEAN STAR aproximándose al berth · lingua franca B1 entre Captain Lim Wei-Ming + bridge officer + pilot Carolina (heredado pm-1-2.B0.materiales_spark[3])",
+        "Banco fotográfico interno Puerto Antioquia 2025 + glosario MARPOR SENA (fuente original galería · referencia instructor)",
+        "Checklist binaria SMCP 3 bloques: NATO Phonetic Alphabet (26 letras Alpha-Zulu) · Message Markers (Question/Instruction/Advice/Request/Information/Warning) · Standard Responses (Affirmative/Negative/Wilco/Stand by/Read back/Say again)",
+        "Foto contextual MV CARIBBEAN STAR atracado en Puerto Antioquia + organigrama visual del cast crew bananero (Manuel · Carolina · Mariana · Yurlenis · Hernando · Andrés · Pipa · Captain Lim Wei-Ming) · recurso visual pre-spark para anclar el universo antes del clip",
+        "Galería diagnóstica 12 imágenes etiquetadas operacionales Puerto Antioquia: reefer container · reefer plug · genset · banana cluster · stem · pre-cooling chamber · plastic film bagging · Cavendish bunch · stevedore · tally clerk · refrigeration technician · bay 14 (heredado pm-1-2.B0.materiales_spark[2])",
+        "ICA Phytosanitary Certificate auténtico anonimizado firmado en inglés por Mariana Suárez cold chain coordinator (cluster Cavendish destino Hamburgo · ventana exportación 90 min · contenedor 25,000 USD · MV CARIBBEAN STAR bay 14) · proyección + entrega copia laminada A4 a cada aprendiz",
+        "Mariana Suárez en vivo (o videoconferencia) narrando en primera persona los 3 minutos críticos de firma bajo presión real un viernes 4pm · arquetipo destino encarnado para el aula",
+        "Maritime Phrasebook open archive + Star Reefers VHF arrival samples (≤3 años · fuente original audio · referencia instructor)",
+        "Plantilla KWL bilingüe simplificada · columnas K (español saberes previos) · W (inglés intuido) · L (vacía · se llena al final del programa)",
+        "Video testimonio dramatizado 'Manuel freezes on the VHF' (3 minutos · clip Manuel Padilla junior reefer operator congelando frente al micrófono VHF cuando Captain Lim Wei-Ming pregunta el reefer setpoint · cierre con debrief en español de Mariana Suárez · producción interna SENA + audio VHF auténtico Star Reefers Maritime Phrasebook open archive)"
+      ],
+      "C14_instructores_responsables": "Sergio Cortés Perdomo (instructor líder · arquitecto pedagógico FPI SENA Bilingüismo · responsable tripartita ABP capstone) + Diana Samboni (co-instructora · soporte didáctico + acompañamiento E1-E6) · Co-instructores invitados al universo operacional: Pipa (refrigeration technician · co-instructor experiencial VHF/SMCP) + Hernando Ospina (panel evaluador externo capstone E-Misión S12) · Personajes operacionales encarnados (cuando logística lo permite): Mariana Suárez (cold chain coordinator · arquetipo destino · narradora ICA Certificate spark + panel S12) + Captain Lim Wei-Ming (panel S12 evaluador externo · audio VHF auténtico)",
+      "C15_observaciones": "Bloque B0 · APERTURA · The Banana Reefer Welcome · Cold Chain Stand-Down & Diagnostic Spark · sesiones ['S1'] · CEFR transversal"
+    },
+    {
+      "_orden": 2,
+      "_bloque_id": "B1",
+      "_tipo_bloque": "APROPIACION",
+      "_sub_bloque_titulo": "The Reefer Crew · Recognizing Ships, Parts & Port Professions",
+      "_sesiones_anchor": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "_cefr_subnivel": "A1.2",
+      "_anclaje_matriz_bloque_heredado": {
+        "rap_target": "RA1",
+        "saberes_conceptos_cubiertos": [
+          "UNIT 1: SHIP OVERVIEW",
+          "PARTS OF THE SHIPS",
+          "TYPES OF MERCHANT VESSELS",
+          "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT OF THE SHIP",
+          "REVIEW OF DEMONSTRATIVES ADJECTIVES AND VERB TO BE",
+          "SINGULAR AND PLURAL NOUNS",
+          "UNIT 2: THE CREW",
+          "PROFESSIONS IN PORT AND ABOARD"
+        ],
+        "saberes_proceso_cubiertos": [
+          "IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS GENERADA EN EL INTERCAMBIO ORAL Y/O ESCRITO",
+          "RECONOCER LOS DISTINTOS OFICIOS ENMARCADOS EN LOS CAMPOS MARÍTIMO Y PORTUARIO"
+        ],
+        "criterios_canon_assigned": [
+          "C01",
+          "C02",
+          "C07"
+        ],
+        "evidencias_target": [
+          "E1",
+          "E2",
+          "E6 (cara RA1)"
+        ],
+        "pms_destino": [
+          "PM-2.3",
+          "PM-2.4",
+          "PM-2.5",
+          "PM-2.6",
+          "PM-2.10",
+          "PM-4.2"
+        ],
+        "cefr_subnivel": "A1.2"
+      },
+      "C1_competencia": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA IDIOMAS.",
+      "C2_rap": {
+        "rap_id": "RA1",
+        "codigo": "",
+        "enunciado": ""
+      },
+      "C4_saberes_conceptos": [
+        "UNIT 1: SHIP OVERVIEW",
+        "PARTS OF THE SHIPS",
+        "TYPES OF MERCHANT VESSELS",
+        "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT OF THE SHIP",
+        "REVIEW OF DEMONSTRATIVES ADJECTIVES AND VERB TO BE",
+        "SINGULAR AND PLURAL NOUNS",
+        "UNIT 2: THE CREW",
+        "PROFESSIONS IN PORT AND ABOARD"
+      ],
+      "C5_saberes_proceso": [
+        "IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS GENERADA EN EL INTERCAMBIO ORAL Y/O ESCRITO EN ESTE IDIOMA, DADO EN EL CUMPLIMIENTO DE LAS ACCIONES REQUERIDAS A BORDO DEL BUQUE Y EN PUERTO.",
+        "RECONOCER LOS DISTINTOS OFICIOS ENMARCADOS EN LOS CAMPOS MARÍTIMO Y PORTUARIO."
+      ],
+      "C6_criterios_evaluacion": {
+        "sofia_assigned": [
+          "INTERPRETA MENSAJES SENCILLOS DE COMUNICACIÓN EN INGLÉS, SEGÚN CONTEXTO DE LAS OPERACIONES A BORDO Y EN EL PUERTO. (cara reading vocab básico)",
+          "IDENTIFICA VOCABLOS BÁSICOS EN INGLÉS RELACIONADOS CON ELEMENTOS FÍSICOS DEL BUQUE Y PUERTO."
+        ],
+        "canon_sistema_assigned": [
+          "C01",
+          "C02",
+          "C07"
+        ]
+      },
+      "C7_actividades_aprendizaje": [
+        "#7 S3 (pm-2-3 · cognitiva · 4h) — Reconocer vocabulario portuario y partes del barco en el Story A 'MV CARIBBEAN STAR Arrives at Puerto Antioquia' aplicando DRTA + K-W-L + Story Map.",
+        "#10 S4 (pm-2-4 · procedimental · 4.5h) — Producir un Inspection Report técnico de una página sobre el walk-around del bay 14 del MV CARIBBEAN STAR aplicando vocabulario portuario y estructuras gramaticales A1.2-A1.3.",
+        "#5 S2 (pm-2-5 · cognitiva · 2.5h) — Mapear 20 términos canon RA1 sobre partes del barco, tipos de vessels, equipamiento y profesiones portuarias mediante Word Wall Active y mapa semántico colaborativo.",
+        "#8 S3 (pm-2-6 · cognitiva · 1.5h) — Reforzar comprensión auditiva del vocabulario portuario y bay counts en audio Reefer Yard Walk de Yurlenis.",
+        "#6 S2 (pm-2-10 · cognitiva · 2.5h) — Inducir el patrón canon de verb to be, demostrativos this/that/these/those y plurales -s/-es a partir de un corpus reefer y formular la regla en propias palabras.",
+        "#12 S4 (pm-4-2 · cognitiva · 1.0h) — Diseñar el banco proto de ítems Vocabulary y Reading cara RA1 del Cuestionario Consolidado E6 mediante curaduría colaborativa de 6-8 ítems sobre vocabulario portuario."
+      ],
+      "_C7_total": 6,
+      "C8_horas_directo": 18,
+      "C9_horas_independiente": 4.5,
+      "C10_evidencias": [
+        "[?] Comprensión lectora del Story A 'MV CARIBBEAN STAR Arrives at Puerto Antioquia · Meet the Reefer Crew' (vocabulario portuario · partes del barco · oficios bananeros del cast operacional) · tipo=Conocimiento · instrumento=?",
+        "[?] Inspection Report técnico del walk-around bay 14 MV CARIBBEAN STAR (vocabulario portuario · partes del barco · oficios bananeros · verb to be · plurales · imperative en safety commands · preposición IN para location) · tipo=Producto · instrumento=?"
+      ],
+      "_C10_total": 2,
+      "C11_estrategias_didacticas": [
+        "(heredar de logistics_box pm-3-2 downstream)"
+      ],
+      "C12_ambiente": "Ambiente formativo multimodal con 3 configuraciones según tipo de actividad: (1) AULA REGULAR con proyector interactivo + sistema de audio + computadores con acceso a Moodle + mesas reorganizables para tríos / equipos de 3-6 / cuadrillas de 6 aprendices + pizarrón colaborativo (sesiones APERTURA S1 + scaffolds APROPIACIÓN vocab/grammar/reading S2/S4/S5/S7/S9 + ejecución E1/E2/E3/E6 S3/S4/S5/S6 + briefing/preparación BT S11). (2) AMBIENTE PLURITECNOLÓGICO SIMULADO con sistema VHF + micrófonos de diadema dobles por equipo + sala handover meeting con mesa tripartita + diagrama berthing tridimensional (sesiones E4-parcial S6 + E4-final S8 berthing tripartito + E5 Role Carousel S9 + rehearsal S10/S11). (3) AMBIENTE PLURITECNOLÓGICO INDUSTRIAL COMPLETO reefer yard operativo con plug + genset + bays simuladas + cluster Cavendish real + termómetro digital + señalética bilingüe pier (NO SMOKING · COLD CHAIN ZONE · MUSTER STATION · GENSET WARNING) + sistema VHF operativo + bridge simulado + sala handover tripartita con disposición panel-cuadrilla (sesión S12 E-Misión capstone + cierre programa). Universo operacional: Puerto Antioquia · Terminal Multipropósito de Urabá · MV CARIBBEAN STAR atracado bay 14 · cluster Cavendish destino Hamburgo · ventana exportación 90 min · contenedor 25,000 USD.",
+      "C13_materiales_formacion": [
+        "Audio Story B B1 · Reefer Yard Walk · Yurlenis the Tally Clerk Counts the Bays (90 segundos · acento colombiano bananero)",
+        "Auditor's Checklist con 10 criterios visibles (verb to be · plurales con number · imperative en safety commands · preposición IN para location · 8+ términos Word Wall · cobertura partes barco · cobertura oficios · cohesión párrafos · formato plantilla · ortografía controlada)",
+        "Banco fotográfico Puerto Antioquia 2025 silueta MV CARIBBEAN STAR seccionada para anclaje deíctico this/that/these/those",
+        "Banco fotográfico operacional Puerto Antioquia 2025 (silueta MV CARIBBEAN STAR seccionada + 20 imágenes una por término · heredado de pm-1-2.B1.key_vocabulary_per_rap)",
+        "Catálogo 20 key terms canon RA1 con definición operacional banana cold chain (ship · hull · bow · stern · bridge · cargo holds · reefer plugs · genset · stevedore · tally clerk · pilot · bosun · refrigeration technician · cold chain coordinator · safety manager · cluster · bay · setpoint · pre-cooling · phytosanitary)",
+        "Corpus canon 12 oraciones contextualizadas bay 14 MV CARIBBEAN STAR (verb to be + demostrativos + plurales + there is/are + articles · heredado literal de pm-1-2.B1.grammar_items_per_rap)",
+        "Ejemplo modelo Inspection Report ya completado por Mariana (cold chain coordinator) sobre bay 12 del MV PACIFIC GREEN (mentor text genre analysis · 1 página A1.2-A1.3 · 4 recursos lingüísticos visibles)",
+        "Forvo audio nativo pronunciación 20 términos canon RA1 (referencia phonics para hispanohablantes)",
+        "Forvo audio nativo pronunciación plurales -s/-es críticos (clusters /klʌstərz/ · containers /kənˈteɪnərz/ · stevedores /ˈstiːvədɔːrz/) y stress en cifras numéricas",
+        "Foto referencial MV CARIBBEAN STAR + mapa Puerto Antioquia + organigrama crew bananero (recurso visual pre-reading DRTA · activación de esquemas)",
+        "Glosario portuario A1.2 con los 15 términos vocab_extraible canon RA1 (reefer ship · hull · bow · stern · bridge · cargo holds · reefer plugs · containers · stevedore · pilot · bosun · tally clerk · refrigeration technician · cold chain coordinator · genset)",
+        "Glosario portuario A1.2 con los 20 términos canon RA1 + 4 imperative verbs canónicos del walk-around (Check · Verify · Inspect · Report)",
+        "Guía Principio de Tres Versiones PM-4.2 (parecido pero diferente · nuevo personaje · nuevo bay count · nuevo merchant vessel · mismo nivel CEFR A1.2)",
+        "Plantilla Inspection Report MV CARIBBEAN STAR bay 14 (template real banana cold chain · campos: Vessel Name · Berth Number · Date of Inspection · Bay Inspected · Vessel Parts Checked · Containers Identified · Reefer Plugs Status · Genset Setpoint · Cold Chain Team On Duty · Safety Commands Issued · Final Status)",
+        "Plantilla Item Bank Cara RA1 con 8 slots diferenciados en Vocabulary RA1 (multiple choice + matching) y Reading RA1 (true/false/not given + short answer)",
+        "Quizlet set 20 términos RA1 banana cold chain · matching y flashcards modo pre-exposición receptiva",
+        "Story A Reading: 'MV CARIBBEAN STAR Arrives at Puerto Antioquia · Meet the Reefer Crew' (texto fundacional 205 palabras A1.2 · narrativa descriptiva técnica adaptada de Star Reefers Vessel Profiles + IMO STCW crew nomenclature)",
+        "Transcript referencial bilingüe del audio (entregado al instructor · NO al aprendiz)"
+      ],
+      "C14_instructores_responsables": "Sergio Cortés Perdomo (instructor líder · arquitecto pedagógico FPI SENA Bilingüismo · responsable tripartita ABP capstone) + Diana Samboni (co-instructora · soporte didáctico + acompañamiento E1-E6) · Co-instructores invitados al universo operacional: Pipa (refrigeration technician · co-instructor experiencial VHF/SMCP) + Hernando Ospina (panel evaluador externo capstone E-Misión S12) · Personajes operacionales encarnados (cuando logística lo permite): Mariana Suárez (cold chain coordinator · arquetipo destino · narradora ICA Certificate spark + panel S12) + Captain Lim Wei-Ming (panel S12 evaluador externo · audio VHF auténtico)",
+      "C15_observaciones": "Bloque B1 · APROPIACION · The Reefer Crew · Recognizing Ships, Parts & Port Professions · sesiones ['S2', 'S3', 'S4'] · CEFR A1.2"
+    },
+    {
+      "_orden": 3,
+      "_bloque_id": "B2",
+      "_tipo_bloque": "APROPIACION",
+      "_sub_bloque_titulo": "The VHF Voice · Comprehending IMO Standard Marine Communication Phrases",
+      "_sesiones_anchor": [
+        "S5",
+        "S6"
+      ],
+      "_cefr_subnivel": "A1.3",
+      "_anclaje_matriz_bloque_heredado": {
+        "rap_target": "RA2",
+        "saberes_conceptos_cubiertos": [
+          "UNIT 5: INTRODUCING IMO STANDARD MARINE COMMUNICATION PHRASES (SMCP)",
+          "STANDARD SPELLING",
+          "MESSAGE MARKERS",
+          "STANDARD RESPONSES AND ORGANIZATIONAL PHRASES"
+        ],
+        "saberes_proceso_cubiertos": [
+          "RECONOCER LA MANERA DE DELETREAR LOS VOCABLOS EN INGLÉS",
+          "RESPONDER EN INGLÉS EN CONVERSACIONES SENCILLAS Y UTILIZANDO LAS FRASES ESTANDARIZADAS POR LA OMI",
+          "IDENTIFICAR VOCABULARIO COMÚN EN INGLÉS, EN LAS FRASES ESTANDARIZADAS DE LA OMI PARA LA COMUNICACIÓN MARÍTIMA"
+        ],
+        "criterios_canon_assigned": [
+          "C03",
+          "C04",
+          "C07"
+        ],
+        "evidencias_target": [
+          "E3",
+          "E4-parcial (cara RA2)",
+          "E6 (4-way)"
+        ],
+        "pms_destino": [
+          "PM-2.3",
+          "PM-2.6",
+          "PM-2.8",
+          "PM-4.2"
+        ],
+        "cefr_subnivel": "A1.3"
+      },
+      "C1_competencia": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA IDIOMAS.",
+      "C2_rap": {
+        "rap_id": "RA2",
+        "codigo": "",
+        "enunciado": ""
+      },
+      "C4_saberes_conceptos": [
+        "UNIT 5: INTRODUCING IMO STANDARD MARINE COMMUNICATION PHRASES (SMCP)",
+        "STANDARD SPELLING",
+        "MESSAGE MARKERS",
+        "STANDARD RESPONSES AND ORGANIZATIONAL PHRASES"
+      ],
+      "C5_saberes_proceso": [
+        "RECONOCER LA MANERA DE DELETREAR LOS VOCABLOS EN INGLÉS.",
+        "RESPONDER EN INGLÉS EN CONVERSACIONES SENCILLAS Y UTILIZANDO LAS FRASES ESTANDARIZADAS POR LA OMI, EN EL DESEMPEÑO DE LAS OPERACIONES QUE SE GENEREN EN EL CONTEXTO.",
+        "IDENTIFICAR VOCABULARIO COMÚN EN INGLÉS, EN LAS FRASES ESTANDARIZADAS DE LA OMI PARA LA COMUNICACIÓN MARÍTIMA."
+      ],
+      "C6_criterios_evaluacion": {
+        "sofia_assigned": [
+          "INTERPRETA MENSAJES SENCILLOS DE COMUNICACIÓN EN INGLÉS, SEGÚN CONTEXTO DE LAS OPERACIONES A BORDO Y EN EL PUERTO. (cara SMCP listening)",
+          "RESPONDE EN INGLÉS EN CONVERSACIONES SENCILLAS UTILIZANDO LAS FRASES ESTANDARIZADAS POR LA OMI."
+        ],
+        "canon_sistema_assigned": [
+          "C03",
+          "C04",
+          "C07"
+        ]
+      },
+      "C7_actividades_aprendizaje": [
+        "#14 S5 (pm-2-5 · cognitiva · 1.5h) — Instalar 20 términos canon SMCP RA2 sobre message markers, standard responses y NATO Phonetic mediante Word Wall categorizado y articulación phonics light cero-tolerancia.",
+        "#13 S5 (pm-2-6 · procedimental · 3.0h) — Identificar mensajes correctos y distractores SMCP en audio VHF auténtico de Captain Lim Wei-Ming según protocolo OMI.",
+        "#15 S6 (pm-2-8 · procedimental · 2.5h) — Aplicar respuestas estandarizadas SMCP y deletreo NATO Phonetic en role-play VHF con Captain Lim del MV CARIBBEAN STAR.",
+        "#15 S5 (pm-2-10 · cognitiva · 1.0h) — Descubrir y automatizar la sintaxis SMCP IMO de message markers, standard responses, NATO Phonetic y protocolo Over/Out mediante consciousness-raising y drill cero-tolerancia.",
+        "#16 S6 (pm-4-2 · cognitiva · 3.0h) — Demostrar dominio integrado consolidado de Reading + Writing + Listening + Vocabulary + Grammar mediante el Cuestionario Consolidado E6 de 25 ítems con criterio PASS ≥ 70%."
+      ],
+      "_C7_total": 5,
+      "C8_horas_directo": 12,
+      "C9_horas_independiente": 3.0,
+      "C10_evidencias": [
+        "[?] Comprensión auditiva SMCP · identificación de message markers, standard responses y NATO Phonetic en VHF Arrival Exchange MV CARIBBEAN STAR · tipo=Desempeño · instrumento=?",
+        "[?] VHF Role-Play SMCP · respuestas críticas estandarizadas y deletreo NATO Phonetic con Captain Lim Wei-Ming y Bosun Andrés Mejía (zona accuracy-cero-tolerancia) · tipo=Desempeño · instrumento=?",
+        "[?] Cuestionario Consolidado S6 · 25 ítems · 5 skills × 5 puntos (Reading + Writing + Listening + Vocabulary + Grammar) · 4-way overlap C07 RA1+RA2+RA3+RA4 · ≥70% PASS · tipo=Conocimiento · instrumento=?"
+      ],
+      "_C10_total": 3,
+      "C11_estrategias_didacticas": [
+        "(heredar de logistics_box pm-3-2 downstream)"
+      ],
+      "C12_ambiente": "Ambiente formativo multimodal con 3 configuraciones según tipo de actividad: (1) AULA REGULAR con proyector interactivo + sistema de audio + computadores con acceso a Moodle + mesas reorganizables para tríos / equipos de 3-6 / cuadrillas de 6 aprendices + pizarrón colaborativo (sesiones APERTURA S1 + scaffolds APROPIACIÓN vocab/grammar/reading S2/S4/S5/S7/S9 + ejecución E1/E2/E3/E6 S3/S4/S5/S6 + briefing/preparación BT S11). (2) AMBIENTE PLURITECNOLÓGICO SIMULADO con sistema VHF + micrófonos de diadema dobles por equipo + sala handover meeting con mesa tripartita + diagrama berthing tridimensional (sesiones E4-parcial S6 + E4-final S8 berthing tripartito + E5 Role Carousel S9 + rehearsal S10/S11). (3) AMBIENTE PLURITECNOLÓGICO INDUSTRIAL COMPLETO reefer yard operativo con plug + genset + bays simuladas + cluster Cavendish real + termómetro digital + señalética bilingüe pier (NO SMOKING · COLD CHAIN ZONE · MUSTER STATION · GENSET WARNING) + sistema VHF operativo + bridge simulado + sala handover tripartita con disposición panel-cuadrilla (sesión S12 E-Misión capstone + cierre programa). Universo operacional: Puerto Antioquia · Terminal Multipropósito de Urabá · MV CARIBBEAN STAR atracado bay 14 · cluster Cavendish destino Hamburgo · ventana exportación 90 min · contenedor 25,000 USD.",
+      "C13_materiales_formacion": [
+        "Audio Captain Lim Wei-Ming Story B 105 segundos lingua franca B1+ Singapore + Pilot Carolina + Bosun Andrés (referencia auténtica para corpus consciousness-raising)",
+        "Audio Story B B2 · MV CARIBBEAN STAR Arrival · Live VHF Exchange with Captain Lim Wei-Ming (105 segundos · lingua franca B1+ Singapore + Pilot B2 colombiana + Bosun B1 Turbo)",
+        "Audio Story B Listening 'MV CARIBBEAN STAR Arrival · Live VHF Exchange with Captain Lim Wei-Ming' (105 segundos · ya conocido de S5 · usado para shadowing pre-task)",
+        "Audio voicemail SMCP Captain Lim Wei-Ming nuevo (paralelo al Story B Listening de S5 · TTS pausado 0.85x · ≈90 segundos · uso Sección 3)",
+        "Cuestionario Consolidado E6 ensamblado PM-4.2 v3.0 · 25 ítems · 5 secciones × 5 puntos · Reading + Writing + Listening + Vocabulary + Grammar · Principio de Tres Versiones · ≥70% PASS · checkpoint medio programa",
+        "Forvo audio nativo NATO Phonetic Alphabet completa (Charlie/Sierra/Tango stress canon) y standard responses críticos (Wilco/Roger/Affirmative/Negative/Standby)",
+        "Forvo audio nativo pronunciación NATO Phonetic Alphabet completa (Alpha-Zulu) y standard responses críticos (Roger · Wilco · Affirmative · Negative · Standby)",
+        "IMO SMCP 2002 Standard Marine Communication Phrases (referencia oficial OMI)",
+        "Quizlet set 20 términos SMCP RA2 · matching message marker-categoría · flashcards spell-out NATO Phonetic",
+        "Tabla 8 Message Markers SMCP IMO + 5 Standard Responses con definición operacional y stress fonológico marcado para hispanohablantes",
+        "Tabla NATO Phonetic Alphabet aplicada a call signs banana reefer",
+        "Tabla NATO Phonetic Alphabet completa (Alpha · Bravo · Charlie · Delta · Echo · Foxtrot · Golf · Hotel · India · Juliet · Kilo · Lima · Mike · November · Oscar · Papa · Quebec · Romeo · Sierra · Tango · Uniform · Victor · Whiskey · X-ray · Yankee · Zulu)",
+        "Tabla canon IMO SMCP 2002 message markers + standard responses + NATO Phonetic Alphabet + protocolo Over/Out (heredado de pm-1-2.B2.grammar_items_per_rap)",
+        "Tabla canon IMO Standard Marine Communication Phrases 2002 · 8 message markers + 5 standard responses + NATO Phonetic Alphabet completa (heredado de pm-1-2.B2.key_vocabulary_per_rap)",
+        "Tabla scaffolding inventario container para Sección 5 Grammar HOTS (datos input + formula proporcionada para sentence construction)",
+        "Texto paralelo Reading cara RA1 con personaje Laura del cast bananero (≈220 palabras A1.2 · scenario alterno banana cold chain · uso Sección 1)"
+      ],
+      "C14_instructores_responsables": "Sergio Cortés Perdomo (instructor líder · arquitecto pedagógico FPI SENA Bilingüismo · responsable tripartita ABP capstone) + Diana Samboni (co-instructora · soporte didáctico + acompañamiento E1-E6) · Co-instructores invitados al universo operacional: Pipa (refrigeration technician · co-instructor experiencial VHF/SMCP) + Hernando Ospina (panel evaluador externo capstone E-Misión S12) · Personajes operacionales encarnados (cuando logística lo permite): Mariana Suárez (cold chain coordinator · arquetipo destino · narradora ICA Certificate spark + panel S12) + Captain Lim Wei-Ming (panel S12 evaluador externo · audio VHF auténtico)",
+      "C15_observaciones": "Bloque B2 · APROPIACION · The VHF Voice · Comprehending IMO Standard Marine Communication Phrases · sesiones ['S5', 'S6'] · CEFR A1.3"
+    },
+    {
+      "_orden": 4,
+      "_bloque_id": "B3",
+      "_tipo_bloque": "APROPIACION",
+      "_sub_bloque_titulo": "The Bridge-to-Yard Bridge · Applying Operational Grammar Port-to-Ship",
+      "_sesiones_anchor": [
+        "S7",
+        "S8"
+      ],
+      "_cefr_subnivel": "A2.0",
+      "_anclaje_matriz_bloque_heredado": {
+        "rap_target": "RA3",
+        "saberes_conceptos_cubiertos": [
+          "COMMANDS (TO: OFFICERS, SAILORS, HELMSMAN, CAPTAINS, ENGINEERS, STEWARD, CRANE OPERATORS)",
+          "REVIEW OF PRESENT SIMPLE TENSE",
+          "IMPERATIVE",
+          "MODAL VERBS: CAN, COULD, SHOULD, MUST FOR REQUEST, PROHIBITION, POSSIBILITY, PERMISSION"
+        ],
+        "saberes_proceso_cubiertos": [
+          "IDENTIFICAR ESTRUCTURAS GRAMATICALES BÁSICAS EN INGLÉS, TALES COMO VERBOS RELACIONADOS CON LAS ACCIONES EMPRENDIDAS DENTRO DE LOS OFICIOS A BORDO DEL BUQUE Y EN PUERTO",
+          "EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO",
+          "EXPRESAR PROHIBICIÓN, PERMISIÓN, POSIBILIDAD O HACER PEDIDOS EN INGLÉS, EN CUANTO A PROCESOS ENMARCADOS EN EL DESEMPEÑO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS"
+        ],
+        "criterios_canon_assigned": [
+          "C02",
+          "C04",
+          "C05",
+          "C06",
+          "C07"
+        ],
+        "evidencias_target": [
+          "E2 (cara RA3)",
+          "E4-parcial (cara RA3)",
+          "E4-final",
+          "E5 (cara RA3)",
+          "E6 (cara RA3)"
+        ],
+        "pms_destino": [
+          "PM-2.3",
+          "PM-2.6",
+          "PM-2.8",
+          "PM-2.9",
+          "PM-2.10",
+          "PM-4.2"
+        ],
+        "cefr_subnivel": "A2.0",
+        "_nota_densidad": "RA3 concentra 5/8 criterios canon (62.5%) reflejando densidad gramatical operacional canon matriz v1.3",
+        "_nota_overlap_ejecucion_fisica": "C02 ejecuta físicamente en S4 (B1 cara léxica) · C04 ejecuta físicamente en S6 (B2 cara SMCP) · C06 ejecuta físicamente en S9 (B4 cara descriptiva) · pero todas tienen cara RA3 documentada aquí"
+      },
+      "C1_competencia": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA IDIOMAS.",
+      "C2_rap": {
+        "rap_id": "RA3",
+        "codigo": "",
+        "enunciado": ""
+      },
+      "C4_saberes_conceptos": [
+        "COMMANDS (TO: OFFICERS, SAILORS, HELMSMAN, CAPTAINS, ENGINEERS, STEWARD, CRANE OPERATORS)",
+        "REVIEW OF PRESENT SIMPLE TENSE",
+        "IMPERATIVE",
+        "MODAL VERBS: CAN, COULD, SHOULD, MUST FOR REQUEST, PROHIBITION, POSSIBILITY, PERMISSION"
+      ],
+      "C5_saberes_proceso": [
+        "IDENTIFICAR ESTRUCTURAS GRAMATICALES BÁSICAS EN INGLÉS, TALES COMO VERBOS RELACIONADOS CON LAS ACCIONES EMPRENDIDAS DENTRO DE LOS OFICIOS A BORDO DEL BUQUE Y EN PUERTO.",
+        "EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO.",
+        "EXPRESAR PROHIBICIÓN, PERMISIÓN, POSIBILIDAD O HACER PEDIDOS EN INGLÉS, EN CUANTO A PROCESOS ENMARCADOS EN EL DESEMPEÑO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS."
+      ],
+      "C6_criterios_evaluacion": {
+        "sofia_assigned": [
+          "RESPONDE EN INGLÉS CON INFORMACIÓN PERTINENTE A COMANDOS E INTERCAMBIOS SENCILLOS (cara comandos/imperativo)",
+          "APLICA REGLAS GRAMATICALES BÁSICAS EN INGLÉS PARA COMUNICACIÓN PUERTO-BUQUE."
+        ],
+        "canon_sistema_assigned": [
+          "C02",
+          "C04",
+          "C05",
+          "C06",
+          "C07"
+        ]
+      },
+      "C7_actividades_aprendizaje": [
+        "#19 S7 (pm-2-5 · cognitiva · 1.5h) — Consolidar 20 términos canon RA3 sobre commands a destinatarios, imperativos de seguridad y modal verbs mediante Word Wall, semantic gradients y jigsaw command-addressee.",
+        "#17 S7 (pm-2-6 · cognitiva · 1.0h) — Anticipar y reconstruir órdenes y modal verbs del Berthing Tripartito mediante Predictive Listening y Dictogloss ligero.",
+        "#21 S8 (pm-2-8 · procedimental · 4.0h) — Coordinar berthing tripartito simultáneo del MV CARIBBEAN STAR aplicando commands, imperative, modals y extensiones C05 (condicional, pasiva, presente perfecto).",
+        "#22 S8 (pm-2-9 · cognitiva · 1.5h) — Activar las 5 funciones comunicativas canon RA3 mediante drill de function cards previo al Berthing Tripartito Simultáneo.",
+        "#20 S7 (pm-2-10 · cognitiva · 2.0h) — Consolidar commands a destinatarios, imperative, present simple Wh-questions y modals gradient con tres extensiones C05 (conditional t1, voz pasiva, presente perfecto) mediante rule formulation, transformation drills y reasoning-gap berthing."
+      ],
+      "_C7_total": 5,
+      "C8_horas_directo": 12,
+      "C9_horas_independiente": 3.0,
+      "C10_evidencias": [
+        "[?] Berthing Tripartito Simultáneo del MV CARIBBEAN STAR · coordinación 5 actores aplicando 4 saberes canon RA3 + 3 extensiones C05 emergentes (zona accuracy+fluency híbrida) · tipo=Desempeño · instrumento=?"
+      ],
+      "_C10_total": 1,
+      "C11_estrategias_didacticas": [
+        "(heredar de logistics_box pm-3-2 downstream)"
+      ],
+      "C12_ambiente": "Ambiente formativo multimodal con 3 configuraciones según tipo de actividad: (1) AULA REGULAR con proyector interactivo + sistema de audio + computadores con acceso a Moodle + mesas reorganizables para tríos / equipos de 3-6 / cuadrillas de 6 aprendices + pizarrón colaborativo (sesiones APERTURA S1 + scaffolds APROPIACIÓN vocab/grammar/reading S2/S4/S5/S7/S9 + ejecución E1/E2/E3/E6 S3/S4/S5/S6 + briefing/preparación BT S11). (2) AMBIENTE PLURITECNOLÓGICO SIMULADO con sistema VHF + micrófonos de diadema dobles por equipo + sala handover meeting con mesa tripartita + diagrama berthing tridimensional (sesiones E4-parcial S6 + E4-final S8 berthing tripartito + E5 Role Carousel S9 + rehearsal S10/S11). (3) AMBIENTE PLURITECNOLÓGICO INDUSTRIAL COMPLETO reefer yard operativo con plug + genset + bays simuladas + cluster Cavendish real + termómetro digital + señalética bilingüe pier (NO SMOKING · COLD CHAIN ZONE · MUSTER STATION · GENSET WARNING) + sistema VHF operativo + bridge simulado + sala handover tripartita con disposición panel-cuadrilla (sesión S12 E-Misión capstone + cierre programa). Universo operacional: Puerto Antioquia · Terminal Multipropósito de Urabá · MV CARIBBEAN STAR atracado bay 14 · cluster Cavendish destino Hamburgo · ventana exportación 90 min · contenedor 25,000 USD.",
+      "C13_materiales_formacion": [
+        "Audio Story B B3 · Berthing Tripartito · Pilot, Captain Lim, Bosun & Pipa Coordinate Live (110 segundos · multi-actor procedural A2.0)",
+        "Audio Story B Berthing Tripartito 110 segundos Pilot+Captain Lim+Bosun+Pipa (referencia auténtica para reasoning-gap)",
+        "Audio Story B Listening 'Berthing Tripartito · Pilot, Captain Lim, Bosun & Pipa Coordinate Live' (110 segundos · ya conocido de S7 · usado para shadowing pre-task de las 3 extensiones C05 emergentes)",
+        "Corpus canon 7 estructuras RA3 (4 canon + 3 extensiones C05) con ejemplos contextualizados berthing tripartito (heredado literal de pm-1-2.B3.grammar_items_per_rap)",
+        "Diagrama berthing maneuver Puerto Antioquia berth tres",
+        "Diagrama operacional MV CARIBBEAN STAR berthing aproximación a berth tres con etiquetas siete destinatarios canon (Officers · Sailors · Helmsman · Captains · Engineers · Steward · Crane Operators) heredado de pm-1-2.B3.key_vocabulary_per_rap",
+        "Function cards F1-F5 RA3 heredadas de PM-2.9 S8 warm-up (commands a destinatarios · safety imperatives · Wh-questions present simple · modals · coordinación tripartita conditional+pasiva+presente perfecto)",
+        "Guía operativa bilingüe Berthing Tripartito MV CARIBBEAN STAR (referencia de actores canon Pilot Carolina, Captain Lim, Bosun Andrés, Pipa)",
+        "Manual operacional bananero reefer Star Reefers + protocolo PPE Puerto Antioquia 2025 (referencia instructor para imperatives safety)",
+        "Mapa visual 5 actores berthing + procedural narrative Story A Reading 215 palabras (referencia espacial reasoning-gap)",
+        "Quizlet set 20 términos RA3 commands and modals · matching command-addressee · flashcards modal gradient",
+        "Story A Reading 'Berthing the CARIBBEAN STAR · Commands, Imperatives and Modals on the Pier' (215 palabras A2.0 · ya conocido de S7 · referencia procedural)",
+        "Tabla referencial de las 5 funciones canon RA3 con exponentes validados en pm-1-2 (F1 commands · F2 imperatives · F3 Wh-questions · F4 modales · F5 extensiones C05)",
+        "Tabla resumen 4 saberes canon RA3 (commands · imperative · present simple Wh-questions · modal verbs) + 3 extensiones C05 emergentes (conditional tipo 1 · voz pasiva · presente perfecto) con patrón canónico y ejemplos contextualizados berthing"
+      ],
+      "C14_instructores_responsables": "Sergio Cortés Perdomo (instructor líder · arquitecto pedagógico FPI SENA Bilingüismo · responsable tripartita ABP capstone) + Diana Samboni (co-instructora · soporte didáctico + acompañamiento E1-E6) · Co-instructores invitados al universo operacional: Pipa (refrigeration technician · co-instructor experiencial VHF/SMCP) + Hernando Ospina (panel evaluador externo capstone E-Misión S12) · Personajes operacionales encarnados (cuando logística lo permite): Mariana Suárez (cold chain coordinator · arquetipo destino · narradora ICA Certificate spark + panel S12) + Captain Lim Wei-Ming (panel S12 evaluador externo · audio VHF auténtico)",
+      "C15_observaciones": "Bloque B3 · APROPIACION · The Bridge-to-Yard Bridge · Applying Operational Grammar Port-to-Ship · sesiones ['S7', 'S8'] · CEFR A2.0"
+    },
+    {
+      "_orden": 5,
+      "_bloque_id": "B4",
+      "_tipo_bloque": "APROPIACION",
+      "_sub_bloque_titulo": "The Cold Chain Storyteller · Describing Places, Operations & Roles",
+      "_sesiones_anchor": [
+        "S9",
+        "S10"
+      ],
+      "_cefr_subnivel": "A2.0-A2.1",
+      "_anclaje_matriz_bloque_heredado": {
+        "rap_target": "RA4",
+        "saberes_conceptos_cubiertos": [
+          "UNIT 3: PLACES IN PORT AND POSITION",
+          "PLACES IN PORT · LOCATIONS",
+          "WEATHER CONDITIONS",
+          "TAG QUESTIONS",
+          "REVIEW OF PRESENT PROGRESSIVE AND PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE",
+          "UNIT 4: IN PORT",
+          "CONTAINERIZATION",
+          "PACKING, SHIPPING AND CARGO HANDLING",
+          "MANEUVERING (MOORING, DOCKING, DEPARTURE)",
+          "QUANTIFIERS"
+        ],
+        "saberes_proceso_cubiertos": [
+          "HABLAR SOBRE UBICACIONES EN INGLÉS QUE PERMITAN AL INTERLOCUTOR CONOCER EL ESPACIO FÍSICO EN EL QUE SE DESEMPEÑAN LAS FUNCIONES A BORDO DEL BUQUE",
+          "DESCRIBIR ELEMENTOS Y PROCESOS EN INGLÉS, DERIVADOS DE LOS DISTINTOS ROLES QUE SE EJERCEN EN EL CUMPLIMIENTO DE LAS OBLIGACIONES A BORDO DEL BUQUE Y EN PUERTO"
+        ],
+        "criterios_canon_assigned": [
+          "C06",
+          "C07"
+        ],
+        "evidencias_target": [
+          "E5",
+          "E6 (cara RA4)"
+        ],
+        "pms_destino": [
+          "PM-2.3",
+          "PM-2.6",
+          "PM-2.9",
+          "PM-2.10",
+          "PM-4.2"
+        ],
+        "cefr_subnivel": "A2.0-A2.1",
+        "_nota_C08_no_aqui": "C08 capstone NO se asigna a B4 sino a BT TRANSFERENCIA · canon REGLA 12 v2.8 · matriz v1.3 confirma C08 anclado a S12 que pertenece canónicamente a TRANSFERENCIA",
+        "_nota_overlap_ejecucion_fisica_C06": "C06 overlap RA3+RA4 ejecuta físicamente AQUÍ en S9 (cara descriptiva) · cara aplicación gramatical conectores RA3 documentada retrospectivo en B3"
+      },
+      "C1_competencia": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA IDIOMAS.",
+      "C2_rap": {
+        "rap_id": "RA4",
+        "codigo": "",
+        "enunciado": ""
+      },
+      "C4_saberes_conceptos": [
+        "UNIT 3: PLACES IN PORT AND POSITION",
+        "PLACES IN PORT · LOCATIONS",
+        "WEATHER CONDITIONS",
+        "TAG QUESTIONS",
+        "REVIEW OF PRESENT PROGRESSIVE AND PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE",
+        "UNIT 4: IN PORT",
+        "CONTAINERIZATION",
+        "PACKING, SHIPPING AND CARGO HANDLING",
+        "MANEUVERING (MOORING, DOCKING, DEPARTURE)",
+        "QUANTIFIERS"
+      ],
+      "C5_saberes_proceso": [
+        "HABLAR SOBRE UBICACIONES EN INGLÉS QUE PERMITAN AL INTERLOCUTOR CONOCER EL ESPACIO FÍSICO EN EL QUE SE DESEMPEÑAN LAS FUNCIONES A BORDO DEL BUQUE.",
+        "DESCRIBIR ELEMENTOS Y PROCESOS EN INGLÉS, DERIVADOS DE LOS DISTINTOS ROLES QUE SE EJERCEN EN EL CUMPLIMIENTO DE LAS OBLIGACIONES A BORDO DEL BUQUE Y EN PUERTO."
+      ],
+      "C6_criterios_evaluacion": {
+        "sofia_assigned": [
+          "DESCRIBE EN INGLÉS PROCESOS Y FUNCIONES PROPIAS DEL CONTEXTO MARÍTIMO Y PORTUARIO."
+        ],
+        "canon_sistema_assigned": [
+          "C06",
+          "C07"
+        ]
+      },
+      "C7_actividades_aprendizaje": [
+        "#24 S9 (pm-2-5 · cognitiva · 1.0h) — Cerrar Toolbelt cuádruple con 20 términos canon RA4 sobre lugares en puerto, condiciones meteo, contenedorización y maniobras mediante Word Wall categorizado y Quizlet pareo.",
+        "#23 S9 (pm-2-6 · cognitiva · 0.5h) — Analizar y categorizar las 5 master functions IMARPOR del Role Carousel Briefing audio de Mariana, Carolina y Yurlenis.",
+        "#25 S9 (pm-2-9 · procedimental · 3.5h) — Ejecutar las 5 master functions IMARPOR mediante Role Carousel de 5 estaciones rotativas con conectores discursivos canon C06.",
+        "#25 S9 (pm-2-10 · cognitiva · 1.0h) — Producir tag questions, present progressive con prepositional phrases y quantifiers definidos/indefinidos mediante data-based discovery, sentence building y chain story descriptiva pre-Role Carousel.",
+        "#28 S10 (pm-2-10 · cognitiva · 5.0h) — Integrar las estructuras gramaticales de B1+B2+B3+B4 en un rehearsal cross-RAP del Pre-Departure Banana Reefer Compliance Check con feedback formativo cohesión gramatical no calificativo."
+      ],
+      "_C7_total": 5,
+      "C8_horas_directo": 12,
+      "C9_horas_independiente": 3.0,
+      "C10_evidencias": [
+        "[?] Producción funcional descriptiva en Role Carousel · 5 master functions IMARPOR con conectores discursivos canon en escenario banana cold chain Puerto Antioquia · tipo=Desempeño · instrumento=?"
+      ],
+      "_C10_total": 1,
+      "C11_estrategias_didacticas": [
+        "(heredar de logistics_box pm-3-2 downstream)"
+      ],
+      "C12_ambiente": "Ambiente formativo multimodal con 3 configuraciones según tipo de actividad: (1) AULA REGULAR con proyector interactivo + sistema de audio + computadores con acceso a Moodle + mesas reorganizables para tríos / equipos de 3-6 / cuadrillas de 6 aprendices + pizarrón colaborativo (sesiones APERTURA S1 + scaffolds APROPIACIÓN vocab/grammar/reading S2/S4/S5/S7/S9 + ejecución E1/E2/E3/E6 S3/S4/S5/S6 + briefing/preparación BT S11). (2) AMBIENTE PLURITECNOLÓGICO SIMULADO con sistema VHF + micrófonos de diadema dobles por equipo + sala handover meeting con mesa tripartita + diagrama berthing tridimensional (sesiones E4-parcial S6 + E4-final S8 berthing tripartito + E5 Role Carousel S9 + rehearsal S10/S11). (3) AMBIENTE PLURITECNOLÓGICO INDUSTRIAL COMPLETO reefer yard operativo con plug + genset + bays simuladas + cluster Cavendish real + termómetro digital + señalética bilingüe pier (NO SMOKING · COLD CHAIN ZONE · MUSTER STATION · GENSET WARNING) + sistema VHF operativo + bridge simulado + sala handover tripartita con disposición panel-cuadrilla (sesión S12 E-Misión capstone + cierre programa). Universo operacional: Puerto Antioquia · Terminal Multipropósito de Urabá · MV CARIBBEAN STAR atracado bay 14 · cluster Cavendish destino Hamburgo · ventana exportación 90 min · contenedor 25,000 USD.",
+      "C13_materiales_formacion": [
+        "Audio Story B B4 · Role Carousel Briefing · Mariana, Carolina & Yurlenis Describe Their Functions (100 segundos · A2.0-A2.1)",
+        "Audio Story B Role Carousel Briefing 100 segundos Mariana+Carolina+Yurlenis (referencia auténtica entonación tag questions rising/falling)",
+        "Corpus canon 8 intercambios contextualizados handover Mariana-Carolina bay 14 (tag questions + present progressive prepositional + quantifiers + conectores · heredado literal de pm-1-2.B4.grammar_items_per_rap)",
+        "Escenario Pre-Departure Banana Reefer Compliance Check 4 fases con script-skeleton operacional (heredado de pm-1-2.B4.rehearsal_pre_mision_S10)",
+        "Forvo audio nativo entonación tag questions afirmativas-negativas y stress en quantifiers numéricos (forty-seven · twenty-seven · two)",
+        "Forvo audio nativo pronunciación quantifiers numéricos y prepositional phrases de distancia (forty-seven · twenty-seven tonnes · two nautical miles · seventy-five percent · thirteen point three degrees)",
+        "Guía feedback formativo cohesión gramatical 7 checks NO calificativos (canon REGLA v3.0 PM-2.10 rehearsal S10)",
+        "Guía operativa bilingüe Universo Banana Cold Chain Puerto Antioquia (referencia de actores canon Carolina, Mariana, Yurlenis y vocabulario contextualizado)",
+        "Mapa satelital Puerto Antioquia 2025 con etiquetas lugares clave (deep-water terminal · reefer yard · pre-cooling chamber · pier · berth tres) heredado de pm-1-2.B4.key_vocabulary_per_rap",
+        "Quizlet set 20 términos RA4 places maneuvering quantifiers + Quizlet set consolidado 80 términos Toolbelt cuádruple cross-RAP RA1+RA2+RA3+RA4",
+        "Tabla canon 18 estructuras gramaticales programa (B1 5 + B2 5 + B3 7 + B4 5 incluyendo extensiones C05 y C06 marcadas) consolidada cross-RAP (heredada literal de pm-1-2.sub_bloques_tripartitos[1-4].grammar_items_per_rap)",
+        "Tabla canon Sergio post-Wave 1 de las 5 master functions IMARPOR (F1 roles & chain of command · F2 maneuvers · F3 weather · F4 cargo & quantification · F5 handover tag questions)",
+        "Tabla referencial de 6 conectores discursivos canon C06 con ejemplos contextualizados (and · but · or · because · so · although)",
+        "Tabla referencial de las 5 master functions IMARPOR (canon Sergio post-Wave 1)"
+      ],
+      "C14_instructores_responsables": "Sergio Cortés Perdomo (instructor líder · arquitecto pedagógico FPI SENA Bilingüismo · responsable tripartita ABP capstone) + Diana Samboni (co-instructora · soporte didáctico + acompañamiento E1-E6) · Co-instructores invitados al universo operacional: Pipa (refrigeration technician · co-instructor experiencial VHF/SMCP) + Hernando Ospina (panel evaluador externo capstone E-Misión S12) · Personajes operacionales encarnados (cuando logística lo permite): Mariana Suárez (cold chain coordinator · arquetipo destino · narradora ICA Certificate spark + panel S12) + Captain Lim Wei-Ming (panel S12 evaluador externo · audio VHF auténtico)",
+      "C15_observaciones": "Bloque B4 · APROPIACION · The Cold Chain Storyteller · Describing Places, Operations & Roles · sesiones ['S9', 'S10'] · CEFR A2.0-A2.1"
+    },
+    {
+      "_orden": 6,
+      "_bloque_id": "BT",
+      "_tipo_bloque": "TRANSFERENCIA",
+      "_sub_bloque_titulo": "Final Mission · Pre-Departure Banana Reefer Compliance Check & Tripartite Handover · The CARIBBEAN STAR Departure",
+      "_sesiones_anchor": [
+        "S11",
+        "S12"
+      ],
+      "_cefr_subnivel": "A2.1 (terminal)",
+      "_anclaje_matriz_bloque_heredado": {
+        "alcance": "todos_los_raps_integrados",
+        "raps_movilizados": [
+          "RA1",
+          "RA2",
+          "RA3",
+          "RA4"
+        ],
+        "raps_movilizados_breakdown": {
+          "RA1": "Vocablos portuarios al recorrer reefer yard con visitor checklist (UNIT 1 + UNIT 2 lexical en uso integrado)",
+          "RA2": "SMCP en VHF exchange con bridge antes de departure clearance (UNIT 5 SMCP + NATO Phonetic + message markers + standard responses)",
+          "RA3": "Gramática puerto-buque al verificar/reportar reefer plugs + temperature logs + phytosanitary certificates (modales · pasiva · presente perfecto · imperativo · conditional)",
+          "RA4": "Estructuras ocupacionales A2.1 al presentar Pre-Shipment Cold Chain Audit y conducir handover tripartito (responsible for · specialize in · coordinate · supervise · report to · tag questions · 5 master functions)"
+        },
+        "pms_destino": [
+          "PM-3.5"
+        ],
+        "criterios_canon": [
+          "C08"
+        ],
+        "criterios_canon_rationale": "C08 PRIMARIO capstone (E-Misión S12 · Rúbrica ABP 6 criterios C01-C13 · A2.1 · panel evaluador 3 personas · descripción funciones profesionales con estructuras ocupacionales + tag questions). Capstone moviliza los 4 RAPs simultáneamente.",
+        "evidencias_target": [
+          "E-Misión"
+        ],
+        "subfases_abp": 5,
+        "cefr_subnivel": "A2.1 (terminal del programa)",
+        "l1_max_banda": "S11-S12 0% L2 exclusivo (canon C08 obligatorio)"
+      },
+      "C1_competencia": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA IDIOMAS.",
+      "C2_rap": {
+        "rap_id": "transversal_capstone",
+        "codigo": "N/A",
+        "enunciado": "Transferencia capstone · integra RA1+RA2+RA3+RA4 vía Misión ABP (Pre-Departure Banana Reefer Compliance Check) · NO cubre nuevo RAP"
+      },
+      "C4_saberes_conceptos": [
+        "(N/A — bloque TRANSFERENCIA capstone: integra y transfiere saberes ya cubiertos en B1-B4 · NO introduce saberes nuevos · cobertura via Misión ABP)"
+      ],
+      "C5_saberes_proceso": [
+        "[Movilizado de RA1] IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS GENERADA EN EL INTERCAMBIO ORAL Y/O ESCRITO EN ESTE IDIOMA, DADO EN EL CUMPLIMIENTO DE LAS ACCIONES REQUERIDAS A BORDO DEL BUQUE Y EN PUERTO.",
+        "[Movilizado de RA1] RECONOCER LOS DISTINTOS OFICIOS ENMARCADOS EN LOS CAMPOS MARÍTIMO Y PORTUARIO.",
+        "[Movilizado de RA2] RECONOCER LA MANERA DE DELETREAR LOS VOCABLOS EN INGLÉS.",
+        "[Movilizado de RA2] RESPONDER EN INGLÉS EN CONVERSACIONES SENCILLAS Y UTILIZANDO LAS FRASES ESTANDARIZADAS POR LA OMI, EN EL DESEMPEÑO DE LAS OPERACIONES QUE SE GENEREN EN EL CONTEXTO.",
+        "[Movilizado de RA2] IDENTIFICAR VOCABULARIO COMÚN EN INGLÉS, EN LAS FRASES ESTANDARIZADAS DE LA OMI PARA LA COMUNICACIÓN MARÍTIMA.",
+        "[Movilizado de RA3] IDENTIFICAR ESTRUCTURAS GRAMATICALES BÁSICAS EN INGLÉS, TALES COMO VERBOS RELACIONADOS CON LAS ACCIONES EMPRENDIDAS DENTRO DE LOS OFICIOS A BORDO DEL BUQUE Y EN PUERTO.",
+        "[Movilizado de RA3] EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO.",
+        "[Movilizado de RA3] EXPRESAR PROHIBICIÓN, PERMISIÓN, POSIBILIDAD O HACER PEDIDOS EN INGLÉS, EN CUANTO A PROCESOS ENMARCADOS EN EL DESEMPEÑO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS.",
+        "[Movilizado de RA4] HABLAR SOBRE UBICACIONES EN INGLÉS QUE PERMITAN AL INTERLOCUTOR CONOCER EL ESPACIO FÍSICO EN EL QUE SE DESEMPEÑAN LAS FUNCIONES A BORDO DEL BUQUE.",
+        "[Movilizado de RA4] DESCRIBIR ELEMENTOS Y PROCESOS EN INGLÉS, DERIVADOS DE LOS DISTINTOS ROLES QUE SE EJERCEN EN EL CUMPLIMIENTO DE LAS OBLIGACIONES A BORDO DEL BUQUE Y EN PUERTO."
+      ],
+      "C6_criterios_evaluacion": {
+        "sofia_assigned": [
+          "(integra los 7 criterios SOFÍA cubiertos en B1-B4 vía evidencia E-Misión ABP)"
+        ],
+        "canon_sistema_assigned": [
+          "C08"
+        ]
+      },
+      "C7_actividades_aprendizaje": [
+        "#29 S11 (pm-3-5 · cognitiva · 1.5h) — Comprender el Mission Brief Pre-Departure Banana Reefer Compliance Check & Tripartite Handover MV CARIBBEAN STAR confirmando role assignment y rúbrica ABP capstone.",
+        "#30 S11 (pm-3-5 · cognitiva · 1.5h) — Preparar visitor checklist + VHF script SMCP + handover pitch outline integrando vocabulario y estructuras de los 4 RAPs para el capstone.",
+        "#31 S11 (pm-3-5 · procedimental · 3.0h) — Ensayar la jornada completa de 90 minutos cuadrilla por cuadrilla recibiendo feedback formativo NO calificativo sobre SMCP accuracy y handover fluency.",
+        "#32 S12 (pm-3-5 · procedimental · 3.0h) — Ejecutar la jornada operacional Pre-Departure Banana Reefer Compliance Check & Tripartite Handover de 90 minutos por cuadrilla ante panel evaluador externo aplicando los 4 RAPs integrados.",
+        "#33 S12 (pm-3-5 · actitudinal · 3.0h) — Reflexionar sobre el journey CEFR A1.2 → A2.1 mediante debrief panel + entrega de diplomas + ritual de cierre programa cold chain integrity."
+      ],
+      "_C7_total": 5,
+      "C8_horas_directo": 12,
+      "C9_horas_independiente": 3.0,
+      "C10_evidencias": [
+        "[?] Pre-Departure Banana Reefer Compliance Check & Tripartite Handover · Performance Panel MV CARIBBEAN STAR (capstone integrador 4 RAPs · 90 min/cuadrilla · panel evaluador externo 3 personas Captain Lim + Mariana + Hernando) · tipo=Desempeño · instrumento=?"
+      ],
+      "_C10_total": 1,
+      "C11_estrategias_didacticas": [
+        "(heredar de logistics_box pm-3-2 downstream)"
+      ],
+      "C12_ambiente": "Ambiente formativo multimodal con 3 configuraciones según tipo de actividad: (1) AULA REGULAR con proyector interactivo + sistema de audio + computadores con acceso a Moodle + mesas reorganizables para tríos / equipos de 3-6 / cuadrillas de 6 aprendices + pizarrón colaborativo (sesiones APERTURA S1 + scaffolds APROPIACIÓN vocab/grammar/reading S2/S4/S5/S7/S9 + ejecución E1/E2/E3/E6 S3/S4/S5/S6 + briefing/preparación BT S11). (2) AMBIENTE PLURITECNOLÓGICO SIMULADO con sistema VHF + micrófonos de diadema dobles por equipo + sala handover meeting con mesa tripartita + diagrama berthing tridimensional (sesiones E4-parcial S6 + E4-final S8 berthing tripartito + E5 Role Carousel S9 + rehearsal S10/S11). (3) AMBIENTE PLURITECNOLÓGICO INDUSTRIAL COMPLETO reefer yard operativo con plug + genset + bays simuladas + cluster Cavendish real + termómetro digital + señalética bilingüe pier (NO SMOKING · COLD CHAIN ZONE · MUSTER STATION · GENSET WARNING) + sistema VHF operativo + bridge simulado + sala handover tripartita con disposición panel-cuadrilla (sesión S12 E-Misión capstone + cierre programa). Universo operacional: Puerto Antioquia · Terminal Multipropósito de Urabá · MV CARIBBEAN STAR atracado bay 14 · cluster Cavendish destino Hamburgo · ventana exportación 90 min · contenedor 25,000 USD.",
+      "C13_materiales_formacion": [
+        "Bitácora feedback panel triangulado (template registro descriptores cualitativos por cuadrilla · NO sumativo sino mapa continuidad profesional)",
+        "Bitácora rehearsal feedback formativo (template registro 3 errores + 3 aciertos por cuadrilla observada · uso individual cross-cuadrilla)",
+        "Cluster Cavendish real con plastic film bagging + sello GlobalGAP/Rainforest Alliance (asset físico usado en rehearsal cold chain integrity)",
+        "ICA Phytosanitary Certificate template (formato real anonimizado · campos en inglés · base para handover pitch + Q&A)",
+        "Línea de tiempo visual journey programa CEFR A1.2 → A2.1 (hitos canon: S1 spark Manuel + S3 E1 + S6 E4-parcial+E6 + S8 E4-final + S9 E5 + S12 E-Misión capstone)",
+        "Mapa Puerto Antioquia con bays 14/15/18 + pier + berth 3 (asset visual escenario operacional)",
+        "Mapa Puerto Antioquia con bays 14/15/18 + pier + pre-cooling chamber + genset + berth 3 (asset visual usado en rehearsal yard walk)",
+        "Mission Brief 'Pre-Departure Banana Reefer Compliance Check & Tripartite Handover · The CARIBBEAN STAR Departure' (escenario auténtico viernes 4pm Puerto Antioquia · 80 reefer containers Cavendish bananas hacia Hamburgo · panel evaluador 3 personas · cuadrillas 6 personas · 90 min en 3 fases internas)",
+        "Pocket card laminada continuidad profesional post-programa (80 términos canon RA1+RA2+RA3+RA4 + 5 master functions IMARPOR + QR acceso material consolidado)",
+        "Pocket cards laminadas SMCP Quick Reference + NATO Phonetic Alphabet (asset operacional cuadrilla durante VHF)",
+        "Pre-Shipment Cold Chain Audit Checklist template (1 página A4 · banana cold chain Puerto Antioquia · campos en inglés · base para visitor checklist cuadrilla)",
+        "Reefer Temperature Log (24h tracking · setpoint validation · alarmas · base para VHF script + handover meeting)",
+        "Rúbrica ABP capstone 6 criterios C01-C13 (C01-aplicado vocab 15pts + C03+C04-aplicado SMCP/VHF 20pts + C05-aplicado tripartite handover 20pts + C06-aplicado master functions 15pts + C08-PRIMARIO estructuras ocupacionales 20pts + cold chain integrity P6 10pts · ponderación 100 puntos · ≥70 PASS)",
+        "Rúbrica ABP capstone 6 criterios C01-C13 (instrumento canon evaluador panel · ponderación 100 puntos · ≥70 PASS · descriptores nivelados A1.3 a A2.1+)",
+        "SMCP Quick Reference card (8 message markers + standard responses + NATO Phonetic Alphabet · base para VHF script cuadrilla)"
+      ],
+      "C14_instructores_responsables": "Sergio Cortés Perdomo (instructor líder · arquitecto pedagógico FPI SENA Bilingüismo · responsable tripartita ABP capstone) + Diana Samboni (co-instructora · soporte didáctico + acompañamiento E1-E6) · Co-instructores invitados al universo operacional: Pipa (refrigeration technician · co-instructor experiencial VHF/SMCP) + Hernando Ospina (panel evaluador externo capstone E-Misión S12) · Personajes operacionales encarnados (cuando logística lo permite): Mariana Suárez (cold chain coordinator · arquetipo destino · narradora ICA Certificate spark + panel S12) + Captain Lim Wei-Ming (panel S12 evaluador externo · audio VHF auténtico)",
+      "C15_observaciones": "Bloque BT · TRANSFERENCIA · Final Mission · Pre-Departure Banana Reefer Compliance Check & Tripartite Handover · The CARIBBEAN STAR Departure · sesiones ['S11', 'S12'] · CEFR A2.1 (terminal)"
+    }
+  ],
+  "_gfpi_f134_v04_row_v3_0_LEGACY": {
+    "_estructura_canon": "1 fila multi-RAP V04 oficial SENA · 11 cols pobladas · heredancia cascade v3.x · universo banana cold chain Puerto Antioquia MV CARIBBEAN STAR",
+    "C1_competencia": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA IDIOMAS.",
+    "C2_raps": [
+      {
+        "rap_id": "RA1",
+        "rap_codigo_sofia": "220301011-RA1",
+        "rap_titulo": "RA 1 RECONOCER VOCABLOS Y EXPRESIONES BÁSICAS EN INGLÉS, DE FORMA ESCRITA Y AUDITIVA, ENMARCADOS EN EL DESEMPEÑO DE FUNCIONES PROPIAS EN EL SECTOR MARÍTIMO Y PORTUARIO.",
+        "verbo_cognitivo": "RECONOCER",
+        "bloom_level": "L1 (Recordar/Reconocer)"
+      },
+      {
+        "rap_id": "RA2",
+        "rap_codigo_sofia": "220301011-RA2",
+        "rap_titulo": "RA2 COMPRENDER VOCABLOS PRINCIPALES DE LAS FRASES ESTANDARIZADAS POR LA OMI, EN INGLÉS, PARA INICIAR LA INTERACCIÓN POR MEDIO ESCRITO Y ORAL, DE ACUERDO CON LOS ROLES DESCRITOS DENTRO DE LA INDUSTRIA MARÍTIMA Y PORTUARIA.",
+        "verbo_cognitivo": "COMPRENDER",
+        "bloom_level": "L2 (Comprender)"
+      },
+      {
+        "rap_id": "RA3",
+        "rap_codigo_sofia": "220301011-RA3",
+        "rap_titulo": "RA3 APLICAR LAS REGLAS GRAMATICALES BÁSICAS DEL IDIOMA INGLÉS QUE GARANTICEN LA COMUNICACIÓN SENCILLA DE PUERTO A BUQUE Y VICEVERSA, SEGÚN LAS NECESIDADES ORIGINADAS EN EL DESARROLLO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS.",
+        "verbo_cognitivo": "APLICAR",
+        "bloom_level": "L3 (Aplicar)"
+      },
+      {
+        "rap_id": "RA4",
+        "rap_codigo_sofia": "220301011-RA4",
+        "rap_titulo": "RA 4 DESCRIBIR EN INGLÉS LAS FUNCIONES HABITUALES Y/O MOMENTÁNEAS PROPIAS, DEL PERSONAL Y DE LOS ELEMENTOS QUE SE ENCUENTRAN EN EL CONTEXTO MARÍTIMO Y PORTUARIO, EN EL DESEMPEÑO DE SUS LABORES.",
+        "verbo_cognitivo": "DESCRIBIR",
+        "bloom_level": "L2-L3 (Comprender → Aplicar)"
+      }
+    ],
+    "C4_saberes_conceptos": [
+      "UNIT 1: SHIP OVERVIEW",
+      "PARTS OF THE SHIPS",
+      "TYPES OF MERCHANT VESSELS",
+      "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT OF THE SHIP",
+      "REVIEW OF DEMONSTRATIVES ADJECTIVES AND VERB TO BE",
+      "SINGULAR AND PLURAL NOUNS",
+      "UNIT 2: THE CREW",
+      "PROFESSIONS IN PORT AND ABOARD",
+      "UNIT 5: INTRODUCING IMO STANDARD MARINE COMMUNICATION PHRASES (SMCP)",
+      "STANDARD SPELLING",
+      "MESSAGE MARKERS",
+      "STANDARD RESPONSES AND ORGANIZATIONAL PHRASES",
+      "COMMANDS (TO: OFFICERS, SAILORS, HELMSMAN, CAPTAINS, ENGINEERS, STEWARD, CRANE OPERATORS)",
+      "REVIEW OF PRESENT SIMPLE TENSE",
+      "IMPERATIVE",
+      "MODAL VERBS: CAN, COULD, SHOULD, MUST FOR REQUEST, PROHIBITION, POSSIBILITY, PERMISSION",
+      "UNIT 3: PLACES IN PORT AND POSITION",
+      "PLACES IN PORT · LOCATIONS",
+      "WEATHER CONDITIONS",
+      "TAG QUESTIONS",
+      "REVIEW OF PRESENT PROGRESSIVE AND PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE",
+      "UNIT 4: IN PORT",
+      "CONTAINERIZATION",
+      "PACKING, SHIPPING AND CARGO HANDLING",
+      "MANEUVERING (MOORING, DOCKING, DEPARTURE)",
+      "QUANTIFIERS"
+    ],
+    "_C4_total": 26,
+    "_C4_breakdown_por_rap": "RA1=8 + RA2=4 + RA3=4 + RA4=10 = 26 (canon Opción A refinada Sergio 2026-05-02)",
+    "C5_saberes_proceso": [
+      "IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS GENERADA EN EL INTERCAMBIO ORAL Y/O ESCRITO EN ESTE IDIOMA, DADO EN EL CUMPLIMIENTO DE LAS ACCIONES REQUERIDAS A BORDO DEL BUQUE Y EN PUERTO.",
+      "RECONOCER LOS DISTINTOS OFICIOS ENMARCADOS EN LOS CAMPOS MARÍTIMO Y PORTUARIO.",
+      "RECONOCER LA MANERA DE DELETREAR LOS VOCABLOS EN INGLÉS.",
+      "RESPONDER EN INGLÉS EN CONVERSACIONES SENCILLAS Y UTILIZANDO LAS FRASES ESTANDARIZADAS POR LA OMI, EN EL DESEMPEÑO DE LAS OPERACIONES QUE SE GENEREN EN EL CONTEXTO.",
+      "IDENTIFICAR VOCABULARIO COMÚN EN INGLÉS, EN LAS FRASES ESTANDARIZADAS DE LA OMI PARA LA COMUNICACIÓN MARÍTIMA.",
+      "IDENTIFICAR ESTRUCTURAS GRAMATICALES BÁSICAS EN INGLÉS, TALES COMO VERBOS RELACIONADOS CON LAS ACCIONES EMPRENDIDAS DENTRO DE LOS OFICIOS A BORDO DEL BUQUE Y EN PUERTO.",
+      "EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO.",
+      "EXPRESAR PROHIBICIÓN, PERMISIÓN, POSIBILIDAD O HACER PEDIDOS EN INGLÉS, EN CUANTO A PROCESOS ENMARCADOS EN EL DESEMPEÑO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS.",
+      "HABLAR SOBRE UBICACIONES EN INGLÉS QUE PERMITAN AL INTERLOCUTOR CONOCER EL ESPACIO FÍSICO EN EL QUE SE DESEMPEÑAN LAS FUNCIONES A BORDO DEL BUQUE.",
+      "DESCRIBIR ELEMENTOS Y PROCESOS EN INGLÉS, DERIVADOS DE LOS DISTINTOS ROLES QUE SE EJERCEN EN EL CUMPLIMIENTO DE LAS OBLIGACIONES A BORDO DEL BUQUE Y EN PUERTO."
+    ],
+    "_C5_total": 10,
+    "_C5_breakdown_por_rap": "RA1=2 + RA2=3 + RA3=3 + RA4=2 = 10",
+    "C6_criterios_evaluacion": {
+      "sofia_generales": [
+        "INTERPRETA MENSAJES SENCILLOS DE COMUNICACIÓN EN INGLÉS, SEGÚN CONTEXTO DE LAS OPERACIONES A BORDO Y EN EL PUERTO.",
+        "IDENTIFICA VOCABLOS BÁSICOS EN INGLÉS RELACIONADOS CON ELEMENTOS FÍSICOS DEL BUQUE Y PUERTO.",
+        "RESPONDE EN INGLÉS EN CONVERSACIONES SENCILLAS UTILIZANDO LAS FRASES ESTANDARIZADAS POR LA OMI.",
+        "APLICA REGLAS GRAMATICALES BÁSICAS EN INGLÉS PARA COMUNICACIÓN PUERTO-BUQUE.",
+        "DESCRIBE EN INGLÉS PROCESOS Y FUNCIONES PROPIAS DEL CONTEXTO MARÍTIMO Y PORTUARIO."
+      ],
+      "_sofia_count": 5,
+      "canon_sistema": [
+        {
+          "id": "C01",
+          "criterio": "Reconocer vocabulario portuario y partes del barco en textos auténticos adaptados",
+          "rap_target": "RA1",
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E1",
+          "evidencia_nombre": "Reading",
+          "sesion": "S3",
+          "instrumento": "Cuestionario No 1"
+        },
+        {
+          "id": "C02",
+          "criterio": "Producir reportes escritos básicos (Inspection Report) aplicando verbo to be · imperativo · plurales · preposición IN sin errores que comprometan la inteligibilidad operativa",
+          "rap_target": [
+            "RA1",
+            "RA3"
+          ],
+          "cefr_subnivel": "A1.2-A1.3",
+          "evidencia": "E2",
+          "evidencia_nombre": "Writing",
+          "sesion": "S4",
+          "instrumento": "Lista de Verificación No 2"
+        },
+        {
+          "id": "C03",
+          "criterio": "Comprender frases estandarizadas SMCP de la OMI en audio auténtico VHF (incluyendo lingua franca B1 no-nativa) e identificar mensajes correctos vs distractores",
+          "rap_target": "RA2",
+          "cefr_subnivel": "A1.3",
+          "evidencia": "E3",
+          "evidencia_nombre": "Listening",
+          "sesion": "S5",
+          "instrumento": "Lista de Chequeo No 3"
+        },
+        {
+          "id": "C04",
+          "criterio": "Interactuar oralmente vía VHF respondiendo con SMCP estandarizado y deletreando con NATO Phonetic Alphabet con stress correcto en respuestas críticas (Roger · Wilco · Affirmative · Standby)",
+          "rap_target": [
+            "RA2",
+            "RA3"
+          ],
+          "cefr_subnivel": "A1.3-A2.0",
+          "evidencia": "E4-parcial",
+          "evidencia_nombre": "Speaking parcial",
+          "sesion": "S6",
+          "instrumento": "Escala de Estimación No 4"
+        },
+        {
+          "id": "C05",
+          "criterio": "Coordinar operaciones tripartitas de berthing aplicando modales · condicional tipo 1 · voz pasiva · presente perfecto en intercambio simultáneo con 3 actores",
+          "rap_target": "RA3",
+          "cefr_subnivel": "A2.0",
+          "evidencia": "E4-final",
+          "evidencia_nombre": "Speaking final",
+          "sesion": "S8",
+          "instrumento": "Escala de Estimación No 4"
+        },
+        {
+          "id": "C06",
+          "criterio": "Aplicar las 5 master functions IMARPOR con conectores (and/but/or/because/so/although) en Role Carousel de 5 estaciones",
+          "rap_target": [
+            "RA3",
+            "RA4"
+          ],
+          "cefr_subnivel": "A2.0-A2.1",
+          "evidencia": "E5",
+          "evidencia_nombre": "Language Functions",
+          "sesion": "S9",
+          "instrumento": "Escala de Estimación No 5"
+        },
+        {
+          "id": "C07",
+          "criterio": "Demostrar dominio integrado de saberes (Reading + Writing + Listening + Vocabulary + Grammar) en Cuestionario Consolidado S6 · 25 ítems · ≥ 70% para PASS",
+          "rap_target": [
+            "RA1",
+            "RA2",
+            "RA3",
+            "RA4"
+          ],
+          "cefr_subnivel": "consolidación A1.2-A2.0",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado",
+          "sesion": "S6",
+          "instrumento": "Cuestionario No 6"
+        },
+        {
+          "id": "C08",
+          "criterio": "Describir funciones profesionales del rol portuario aplicando estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to) y tag questions producción ante panel evaluador",
+          "rap_target": "RA4",
+          "cefr_subnivel": "A2.1",
+          "evidencia": "E-Misión",
+          "evidencia_nombre": "Misión Final ABP",
+          "sesion": "S12",
+          "instrumento": "Rúbrica ABP capstone (6 criterios C01-C13)"
+        }
+      ],
+      "_canon_count": 8
+    },
+    "C7_actividades_aprendizaje": [
+      {
+        "numero": 1,
+        "session": "S1",
+        "pm_id": "PM-2.1",
+        "tipo_bloque": "APERTURA",
+        "rap_target": null,
+        "dimension": "actitudinal",
+        "enunciado": "Reflexionar sobre el miedo operacional al inglés VHF mediante video testimonio dramatizado de Manuel Padilla activando interés afectivo en operaciones cold chain Puerto Antioquia.",
+        "duracion_horas": 1.0,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 2,
+        "session": "S1",
+        "pm_id": "PM-2.1",
+        "tipo_bloque": "APERTURA",
+        "rap_target": null,
+        "dimension": "actitudinal",
+        "enunciado": "Reflexionar sobre el arquetipo destino cold chain coordinator mediante artefacto ICA Phytosanitary Certificate firmado por Mariana Suárez activando proyección afectiva operaciones bilingües.",
+        "duracion_horas": 1.0,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 3,
+        "session": "S1",
+        "pm_id": "PM-2.2",
+        "tipo_bloque": "APERTURA",
+        "rap_target": null,
+        "dimension": "cognitiva",
+        "enunciado": "Diagnosticar el reconocimiento léxico portuario reefer mediante galería visual diagnóstica y KWL bilingüe activando saberes operacionales previos.",
+        "duracion_horas": 1.5,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 4,
+        "session": "S1",
+        "pm_id": "PM-2.2",
+        "tipo_bloque": "APERTURA",
+        "rap_target": null,
+        "dimension": "cognitiva",
+        "enunciado": "Diagnosticar el baseline auditivo SMCP mediante audio VHF auténtico de 90 segundos y checklist binaria triangulada sin enseñar frases nuevas.",
+        "duracion_horas": 1.5,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 5,
+        "session": "S2",
+        "pm_id": "PM-2.5",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA1",
+        "dimension": "cognitiva",
+        "enunciado": "Mapear 20 términos canon RA1 sobre partes del barco, tipos de vessels, equipamiento y profesiones portuarias mediante Word Wall Active y mapa semántico colaborativo.",
+        "duracion_horas": 2.5,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 6,
+        "session": "S2",
+        "pm_id": "PM-2.10",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA1",
+        "dimension": "cognitiva",
+        "enunciado": "Inducir el patrón canon de verb to be, demostrativos this/that/these/those y plurales -s/-es a partir de un corpus reefer y formular la regla en propias palabras.",
+        "duracion_horas": 2.5,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 7,
+        "session": "S3",
+        "pm_id": "PM-2.3",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA1",
+        "dimension": "cognitiva",
+        "enunciado": "Reconocer vocabulario portuario y partes del barco en el Story A 'MV CARIBBEAN STAR Arrives at Puerto Antioquia' aplicando DRTA + K-W-L + Story Map.",
+        "duracion_horas": 4.0,
+        "produces_evidencia": "E1"
+      },
+      {
+        "numero": 8,
+        "session": "S3",
+        "pm_id": "PM-2.6",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA1",
+        "dimension": "cognitiva",
+        "enunciado": "Reforzar comprensión auditiva del vocabulario portuario y bay counts en audio Reefer Yard Walk de Yurlenis.",
+        "duracion_horas": 1.5,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 10,
+        "session": "S4",
+        "pm_id": "PM-2.4",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA1",
+        "dimension": "procedimental",
+        "enunciado": "Producir un Inspection Report técnico de una página sobre el walk-around del bay 14 del MV CARIBBEAN STAR aplicando vocabulario portuario y estructuras gramaticales A1.2-A1.3.",
+        "duracion_horas": 4.5,
+        "produces_evidencia": "E2"
+      },
+      {
+        "numero": 12,
+        "session": "S4",
+        "pm_id": "PM-4.2",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA1",
+        "dimension": "cognitiva",
+        "enunciado": "Diseñar el banco proto de ítems Vocabulary y Reading cara RA1 del Cuestionario Consolidado E6 mediante curaduría colaborativa de 6-8 ítems sobre vocabulario portuario.",
+        "duracion_horas": 1.0,
+        "produces_evidencia": "E6 (preparatorio)"
+      },
+      {
+        "numero": 13,
+        "session": "S5",
+        "pm_id": "PM-2.6",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA2",
+        "dimension": "procedimental",
+        "enunciado": "Identificar mensajes correctos y distractores SMCP en audio VHF auténtico de Captain Lim Wei-Ming según protocolo OMI.",
+        "duracion_horas": 3.0,
+        "produces_evidencia": "E3"
+      },
+      {
+        "numero": 14,
+        "session": "S5",
+        "pm_id": "PM-2.5",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA2",
+        "dimension": "cognitiva",
+        "enunciado": "Instalar 20 términos canon SMCP RA2 sobre message markers, standard responses y NATO Phonetic mediante Word Wall categorizado y articulación phonics light cero-tolerancia.",
+        "duracion_horas": 1.5,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 15,
+        "session": "S5",
+        "pm_id": "PM-2.10",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA2",
+        "dimension": "cognitiva",
+        "enunciado": "Descubrir y automatizar la sintaxis SMCP IMO de message markers, standard responses, NATO Phonetic y protocolo Over/Out mediante consciousness-raising y drill cero-tolerancia.",
+        "duracion_horas": 1.0,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 15,
+        "session": "S6",
+        "pm_id": "PM-2.8",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA2",
+        "dimension": "procedimental",
+        "enunciado": "Aplicar respuestas estandarizadas SMCP y deletreo NATO Phonetic en role-play VHF con Captain Lim del MV CARIBBEAN STAR.",
+        "duracion_horas": 2.5,
+        "produces_evidencia": "E4-parcial",
+        "_nota_renumeracion": "duplicado numero=15 entre PM-2.10 S5 (grammar) y PM-2.8 S6 (speaking) heredado literal de Activity Cards · ambos preservados sin reasignar (REGLA cero invención)"
+      },
+      {
+        "numero": 16,
+        "session": "S6",
+        "pm_id": "PM-4.2",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA2 (ejecución física) · 4-way RA1+RA2+RA3+RA4 (contenido C07)",
+        "dimension": "cognitiva",
+        "enunciado": "Demostrar dominio integrado consolidado de Reading + Writing + Listening + Vocabulary + Grammar mediante el Cuestionario Consolidado E6 de 25 ítems con criterio PASS ≥ 70%.",
+        "duracion_horas": 3.0,
+        "produces_evidencia": "E6"
+      },
+      {
+        "numero": 17,
+        "session": "S7",
+        "pm_id": "PM-2.6",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA3",
+        "dimension": "cognitiva",
+        "enunciado": "Anticipar y reconstruir órdenes y modal verbs del Berthing Tripartito mediante Predictive Listening y Dictogloss ligero.",
+        "duracion_horas": 1.0,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 19,
+        "session": "S7",
+        "pm_id": "PM-2.5",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA3",
+        "dimension": "cognitiva",
+        "enunciado": "Consolidar 20 términos canon RA3 sobre commands a destinatarios, imperativos de seguridad y modal verbs mediante Word Wall, semantic gradients y jigsaw command-addressee.",
+        "duracion_horas": 1.5,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 20,
+        "session": "S7",
+        "pm_id": "PM-2.10",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA3",
+        "dimension": "cognitiva",
+        "enunciado": "Consolidar commands a destinatarios, imperative, present simple Wh-questions y modals gradient con tres extensiones C05 (conditional t1, voz pasiva, presente perfecto) mediante rule formulation, transformation drills y reasoning-gap berthing.",
+        "duracion_horas": 2.0,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 21,
+        "session": "S8",
+        "pm_id": "PM-2.8",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA3",
+        "dimension": "procedimental",
+        "enunciado": "Coordinar berthing tripartito simultáneo del MV CARIBBEAN STAR aplicando commands, imperative, modals y extensiones C05 (condicional, pasiva, presente perfecto).",
+        "duracion_horas": 4.0,
+        "produces_evidencia": "E4-final"
+      },
+      {
+        "numero": 22,
+        "session": "S8",
+        "pm_id": "PM-2.9",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA3",
+        "dimension": "cognitiva",
+        "enunciado": "Activar las 5 funciones comunicativas canon RA3 mediante drill de function cards previo al Berthing Tripartito Simultáneo.",
+        "duracion_horas": 1.5,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 23,
+        "session": "S9",
+        "pm_id": "PM-2.6",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA4",
+        "dimension": "cognitiva",
+        "enunciado": "Analizar y categorizar las 5 master functions IMARPOR del Role Carousel Briefing audio de Mariana, Carolina y Yurlenis.",
+        "duracion_horas": 0.5,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 24,
+        "session": "S9",
+        "pm_id": "PM-2.5",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA4",
+        "dimension": "cognitiva",
+        "enunciado": "Cerrar Toolbelt cuádruple con 20 términos canon RA4 sobre lugares en puerto, condiciones meteo, contenedorización y maniobras mediante Word Wall categorizado y Quizlet pareo.",
+        "duracion_horas": 1.0,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 25,
+        "session": "S9",
+        "pm_id": "PM-2.10",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA4",
+        "dimension": "cognitiva",
+        "enunciado": "Producir tag questions, present progressive con prepositional phrases y quantifiers definidos/indefinidos mediante data-based discovery, sentence building y chain story descriptiva pre-Role Carousel.",
+        "duracion_horas": 1.0,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 25,
+        "session": "S9",
+        "pm_id": "PM-2.9",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA4",
+        "dimension": "procedimental",
+        "enunciado": "Ejecutar las 5 master functions IMARPOR mediante Role Carousel de 5 estaciones rotativas con conectores discursivos canon C06.",
+        "duracion_horas": 3.5,
+        "produces_evidencia": "E5",
+        "_nota_renumeracion": "duplicado numero=25 entre PM-2.10 S9 (grammar) y PM-2.9 S9 (E5 Role Carousel) heredado literal · ambos preservados (REGLA cero invención)"
+      },
+      {
+        "numero": 28,
+        "session": "S10",
+        "pm_id": "PM-2.10",
+        "tipo_bloque": "APROPIACION",
+        "rap_target": "RA4 (consolidación cross-RAP RA1+RA2+RA3+RA4)",
+        "dimension": "cognitiva",
+        "enunciado": "Integrar las estructuras gramaticales de B1+B2+B3+B4 en un rehearsal cross-RAP del Pre-Departure Banana Reefer Compliance Check con feedback formativo cohesión gramatical no calificativo.",
+        "duracion_horas": 5.0,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 29,
+        "session": "S11",
+        "pm_id": "PM-3.5",
+        "tipo_bloque": "TRANSFERENCIA",
+        "rap_target": "todos_los_raps_integrados",
+        "dimension": "cognitiva",
+        "enunciado": "Comprender el Mission Brief Pre-Departure Banana Reefer Compliance Check & Tripartite Handover MV CARIBBEAN STAR confirmando role assignment y rúbrica ABP capstone.",
+        "duracion_horas": 1.5,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 30,
+        "session": "S11",
+        "pm_id": "PM-3.5",
+        "tipo_bloque": "TRANSFERENCIA",
+        "rap_target": "todos_los_raps_integrados",
+        "dimension": "cognitiva",
+        "enunciado": "Preparar visitor checklist + VHF script SMCP + handover pitch outline integrando vocabulario y estructuras de los 4 RAPs para el capstone.",
+        "duracion_horas": 1.5,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 31,
+        "session": "S11",
+        "pm_id": "PM-3.5",
+        "tipo_bloque": "TRANSFERENCIA",
+        "rap_target": "todos_los_raps_integrados",
+        "dimension": "procedimental",
+        "enunciado": "Ensayar la jornada completa de 90 minutos cuadrilla por cuadrilla recibiendo feedback formativo NO calificativo sobre SMCP accuracy y handover fluency.",
+        "duracion_horas": 3.0,
+        "produces_evidencia": null
+      },
+      {
+        "numero": 32,
+        "session": "S12",
+        "pm_id": "PM-3.5",
+        "tipo_bloque": "TRANSFERENCIA",
+        "rap_target": "todos_los_raps_integrados",
+        "dimension": "procedimental",
+        "enunciado": "Ejecutar la jornada operacional Pre-Departure Banana Reefer Compliance Check & Tripartite Handover de 90 minutos por cuadrilla ante panel evaluador externo aplicando los 4 RAPs integrados.",
+        "duracion_horas": 3.0,
+        "produces_evidencia": "E-Misión"
+      },
+      {
+        "numero": 33,
+        "session": "S12",
+        "pm_id": "PM-3.5",
+        "tipo_bloque": "TRANSFERENCIA",
+        "rap_target": "todos_los_raps_integrados",
+        "dimension": "actitudinal",
+        "enunciado": "Reflexionar sobre el journey CEFR A1.2 → A2.1 mediante debrief panel + entrega de diplomas + ritual de cierre programa cold chain integrity.",
+        "duracion_horas": 3.0,
+        "produces_evidencia": null
+      }
+    ],
+    "_C7_total_actividades": 30,
+    "_C7_breakdown_por_bloque": "APERTURA B0 S1=4 + APROPIACION B1 RA1 (S2-S4)=6 + APROPIACION B2 RA2 (S5-S6)=5 + APROPIACION B3 RA3 (S7-S8)=5 + APROPIACION B4 RA4 (S9-S10)=5 + TRANSFERENCIA BT (S11-S12)=5 = 30",
+    "_C7_breakdown_por_dimension": "actitudinal=4 (sparks S1 + cierre S12) · cognitiva=18 · procedimental=8",
+    "C8_horas_directo": 72,
+    "_C8_breakdown": "12 sesiones × 6h directas = 72h (canon REGLA 8 v2.8 · pm-1-1 estructura tripartita)",
+    "C9_horas_independiente": 28,
+    "_C9_breakdown": "28h autónomas implicadas (lectura preview + post-task reflexión + memorization NATO Phonetic + estudio rúbrica ABP + lectura autónoma extra-aula)",
+    "C10_evidencias": [
+      {
+        "codigo": "E1",
+        "tipo": "Conocimiento",
+        "nombre": "Comprensión lectora del Story A 'MV CARIBBEAN STAR Arrives at Puerto Antioquia · Meet the Reefer Crew' (vocabulario portuario · partes del barco · oficios bananeros del cast operacional)",
+        "tecnica_evaluacion": "Preguntas",
+        "instrumento_numero": 1,
+        "instrumento_tipo": "Cuestionario",
+        "sesion": "S3",
+        "rap_target": "RA1",
+        "criterio_canon_evaluado": "C01",
+        "cefr_subnivel": "A1.2",
+        "pm_source": "PM-2.3"
+      },
+      {
+        "codigo": "E2",
+        "tipo": "Producto",
+        "nombre": "Inspection Report técnico del walk-around bay 14 MV CARIBBEAN STAR (vocabulario portuario · partes del barco · oficios bananeros · verb to be · plurales · imperative en safety commands · preposición IN para location)",
+        "tecnica_evaluacion": "Verificación de producto",
+        "instrumento_numero": 2,
+        "instrumento_tipo": "Lista de verificación",
+        "sesion": "S4",
+        "rap_target": "RA1+RA3 (overlap C02)",
+        "criterio_canon_evaluado": "C02",
+        "cefr_subnivel": "A1.2-A1.3",
+        "pm_source": "PM-2.4"
+      },
+      {
+        "codigo": "E3",
+        "tipo": "Desempeño",
+        "nombre": "Comprensión auditiva SMCP · identificación de message markers, standard responses y NATO Phonetic en VHF Arrival Exchange MV CARIBBEAN STAR",
+        "tecnica_evaluacion": "Observación",
+        "instrumento_numero": 3,
+        "instrumento_tipo": "Lista de Chequeo",
+        "sesion": "S5",
+        "rap_target": "RA2",
+        "criterio_canon_evaluado": "C03",
+        "cefr_subnivel": "A1.3",
+        "pm_source": "PM-2.6"
+      },
+      {
+        "codigo": "E4-parcial",
+        "tipo": "Desempeño",
+        "nombre": "VHF Role-Play SMCP · respuestas críticas estandarizadas y deletreo NATO Phonetic con Captain Lim Wei-Ming y Bosun Andrés Mejía (zona accuracy-cero-tolerancia)",
+        "tecnica_evaluacion": "Observación",
+        "instrumento_numero": 4,
+        "instrumento_tipo": "Escala de estimación",
+        "sesion": "S6",
+        "rap_target": "RA2+RA3 (overlap C04)",
+        "criterio_canon_evaluado": "C04",
+        "cefr_subnivel": "A1.3-A2.0",
+        "pm_source": "PM-2.8"
+      },
+      {
+        "codigo": "E6",
+        "tipo": "Conocimiento",
+        "nombre": "Cuestionario Consolidado S6 · 25 ítems · 5 skills × 5 puntos (Reading + Writing + Listening + Vocabulary + Grammar) · 4-way overlap C07 RA1+RA2+RA3+RA4 · ≥70% PASS",
+        "tecnica_evaluacion": "Preguntas",
+        "instrumento_numero": 6,
+        "instrumento_tipo": "Cuestionario",
+        "sesion": "S6",
+        "rap_target": "RA1+RA2+RA3+RA4 (overlap C07 4-way)",
+        "criterio_canon_evaluado": "C07",
+        "cefr_subnivel": "consolidación A1.2-A2.0",
+        "pm_source": "PM-4.2"
+      },
+      {
+        "codigo": "E4-final",
+        "tipo": "Desempeño",
+        "nombre": "Berthing Tripartito Simultáneo del MV CARIBBEAN STAR · coordinación 5 actores aplicando 4 saberes canon RA3 + 3 extensiones C05 emergentes (zona accuracy+fluency híbrida)",
+        "tecnica_evaluacion": "Observación",
+        "instrumento_numero": 4,
+        "instrumento_tipo": "Escala de estimación",
+        "sesion": "S8",
+        "rap_target": "RA3",
+        "criterio_canon_evaluado": "C05",
+        "cefr_subnivel": "A2.0",
+        "pm_source": "PM-2.8"
+      },
+      {
+        "codigo": "E5",
+        "tipo": "Desempeño",
+        "nombre": "Producción funcional descriptiva en Role Carousel · 5 master functions IMARPOR con conectores discursivos canon en escenario banana cold chain Puerto Antioquia",
+        "tecnica_evaluacion": "Observación",
+        "instrumento_numero": 5,
+        "instrumento_tipo": "Escala de estimación",
+        "sesion": "S9",
+        "rap_target": "RA3+RA4 (overlap C06)",
+        "criterio_canon_evaluado": "C06",
+        "cefr_subnivel": "A2.0-A2.1",
+        "pm_source": "PM-2.9"
+      },
+      {
+        "codigo": "E-Misión",
+        "tipo": "Desempeño",
+        "nombre": "Pre-Departure Banana Reefer Compliance Check & Tripartite Handover · Performance Panel MV CARIBBEAN STAR (capstone integrador 4 RAPs · 90 min/cuadrilla · panel evaluador externo 3 personas Captain Lim + Mariana + Hernando)",
+        "tecnica_evaluacion": "Observación",
+        "instrumento_numero": null,
+        "instrumento_tipo": "Rúbrica ABP capstone (6 criterios C01-C13 · 100 puntos · ≥70 PASS)",
+        "sesion": "S12",
+        "rap_target": "todos_los_raps_integrados (capstone)",
+        "criterio_canon_evaluado": "C08",
+        "cefr_subnivel": "A2.1 terminal",
+        "pm_source": "PM-3.5"
+      }
+    ],
+    "_C10_total_evidencias": 8,
+    "_C10_breakdown": "E1 (Reading S3 RA1) + E2 (Writing S4 RA1+RA3) + E3 (Listening S5 RA2) + E4-parcial (Speaking S6 RA2+RA3) + E6 (Cuestionario S6 4-way) + E4-final (Speaking S8 RA3) + E5 (Functions S9 RA3+RA4) + E-Misión (Capstone S12 todos)",
+    "C11_estrategias_didacticas": [
+      "Aprendizaje colaborativo",
+      "Aprendizaje basado en experiencias",
+      "Aprendizaje basado en proyectos (ABP)",
+      "Trabajo colaborativo",
+      "Content-Based Learning",
+      "Task-Based Language Teaching (TBLT)",
+      "Juego de roles",
+      "Simulación",
+      "Aprendizaje por descubrimiento (consciousness-raising)",
+      "Estudio de caso"
+    ],
+    "_C11_total_unicas": 10,
+    "_C11_origen": "lista única deduplicada agregada de las 30 Activity Cards v3.0 (campo estrategias_didacticas_activas) · técnicas didácticas asociadas: Lluvia de ideas · Narrativa y testimonio · Investigación guiada · Jigsaw · Taller · Role play · Conversatorio · Práctica de campo · Drill · Dictogloss",
+    "C12_ambiente": "Ambiente formativo multimodal con 3 configuraciones según tipo de actividad: (1) AULA REGULAR con proyector interactivo + sistema de audio + computadores con acceso a Moodle + mesas reorganizables para tríos / equipos de 3-6 / cuadrillas de 6 aprendices + pizarrón colaborativo (sesiones APERTURA S1 + scaffolds APROPIACIÓN vocab/grammar/reading S2/S4/S5/S7/S9 + ejecución E1/E2/E3/E6 S3/S4/S5/S6 + briefing/preparación BT S11). (2) AMBIENTE PLURITECNOLÓGICO SIMULADO con sistema VHF + micrófonos de diadema dobles por equipo + sala handover meeting con mesa tripartita + diagrama berthing tridimensional (sesiones E4-parcial S6 + E4-final S8 berthing tripartito + E5 Role Carousel S9 + rehearsal S10/S11). (3) AMBIENTE PLURITECNOLÓGICO INDUSTRIAL COMPLETO reefer yard operativo con plug + genset + bays simuladas + cluster Cavendish real + termómetro digital + señalética bilingüe pier (NO SMOKING · COLD CHAIN ZONE · MUSTER STATION · GENSET WARNING) + sistema VHF operativo + bridge simulado + sala handover tripartita con disposición panel-cuadrilla (sesión S12 E-Misión capstone + cierre programa). Universo operacional: Puerto Antioquia · Terminal Multipropósito de Urabá · MV CARIBBEAN STAR atracado bay 14 · cluster Cavendish destino Hamburgo · ventana exportación 90 min · contenedor 25,000 USD.",
+    "C13_materiales_formacion": [
+      "Proyector interactivo",
+      "Sistema de audio nítido",
+      "Computadores con acceso a Moodle",
+      "Pizarrón colaborativo",
+      "Mesas reorganizables (tríos · equipos de 3-6 · cuadrillas de 6)",
+      "Post-it amarillos · marcadores amarillos · marcadores rojos · stickers verde/amarillo/rojo",
+      "Carpetas personales del curso (1 por aprendiz)",
+      "Galería 12 imágenes etiquetadas reefer/genset/clusters/equipment portuario",
+      "Audio VHF auténtico 90 seg lingua franca B1 (Captain Lim Wei-Ming · Pilot Carolina · Bosun Andrés)",
+      "Audio Reefer Yard Walk Yurlenis Tally Clerk",
+      "Audio Berthing Tripartito 110 seg",
+      "Audio Role Carousel Briefing Mariana+Carolina+Yurlenis",
+      "Video testimonio dramatizado 'Manuel freezes on the VHF' (3 min)",
+      "ICA Phytosanitary Certificate auténtico anonimizado firmado Mariana Suárez (1 copia A4 laminada por aprendiz)",
+      "Story A impreso 'MV CARIBBEAN STAR Arrives at Puerto Antioquia' (5 copias por equipo)",
+      "Story A 'Berthing the CARIBBEAN STAR' procedural narrative + safety signage",
+      "Plantillas K-W-L bilingüe + Story Map + checklist binaria SMCP NATO Phonetic / Message Markers / Standard Responses",
+      "Word Wall Active 80 términos canon (20 RA1 + 20 RA2 SMCP + 20 RA3 + 20 RA4)",
+      "Cuestionario No 1 impreso (5 ítems Reading)",
+      "Lista de Verificación No 2 impresa (10 criterios Inspection Report)",
+      "Lista de Chequeo No 3 impresa (Listening SMCP)",
+      "Escala de Estimación No 4 impresa (Speaking VHF + Berthing)",
+      "Escala de Estimación No 5 impresa (Functions Role Carousel)",
+      "Cuestionario No 6 impreso (25 ítems Consolidado)",
+      "Rúbrica ABP capstone impresa (6 criterios C01-C13)",
+      "Function cards F1-F5 RA3 + F1-F5 master functions IMARPOR RA4",
+      "Sistema VHF simulado + micrófonos de diadema (1 por aprendiz · simulación VHF handset · pares por equipo)",
+      "Diagrama berthing maneuver tridimensional o impreso A2",
+      "Reefer plug demo + termómetro digital + cluster Cavendish real",
+      "Señalética bilingüe pier (NO SMOKING · COLD CHAIN ZONE · MUSTER STATION · GENSET WARNING)",
+      "Templates digitales visitor checklist + VHF script + handover pitch outline",
+      "Mission Brief impreso 'Pre-Departure Banana Reefer Compliance Check + Tripartite Handover'",
+      "Diplomas + pocket cards laminadas continuidad profesional",
+      "Foto contextual MV CARIBBEAN STAR + organigrama visual cast crew bananero (Manuel · Carolina · Mariana · Yurlenis · Hernando · Andrés · Pipa · Captain Lim Wei-Ming)"
+    ],
+    "_C13_total": 35,
+    "_C13_origen": "lista única deduplicada agregada de las 30 Activity Cards v3.0 (campo materiales_formacion + material_apoyo)",
+    "C14_instructores_responsables": "Sergio Cortés Perdomo (instructor líder · arquitecto pedagógico FPI SENA Bilingüismo · responsable tripartita ABP capstone) + Diana Samboni (co-instructora · soporte didáctico + acompañamiento E1-E6) · Co-instructores invitados al universo operacional: Pipa (refrigeration technician · co-instructor experiencial VHF/SMCP) + Hernando Ospina (panel evaluador externo capstone E-Misión S12) · Personajes operacionales encarnados (cuando logística lo permite): Mariana Suárez (cold chain coordinator · arquetipo destino · narradora ICA Certificate spark + panel S12) + Captain Lim Wei-Ming (panel S12 evaluador externo · audio VHF auténtico)",
+    "C15_observaciones": "Programa Curso Complementario 100h (72 directas + 28 independientes · 12 sesiones × 6h) ejecutado bajo paradigma cascade v3.x heredancia tripartita: APERTURA (S1) · APROPIACIÓN (S2-S10) · TRANSFERENCIA capstone ABP (S11-S12). Universo canon banana cold chain Puerto Antioquia con cast 9 personajes (Manuel Padilla aprendiz avatar · Captain Lim Wei-Ming · Mariana Suárez · Carolina Vélez · Yurlenis Hinestroza · Pipa · Hernando Ospina · Andrés Mejía + Sergio/Diana instructores). 8 evidencias canon C01-C08 secuenciadas con anclaje matriz v1.3 explícito: E1 Reading S3 (C01·RA1) → E2 Writing S4 (C02·RA1+RA3 overlap) → E3 Listening S5 (C03·RA2) → E4-parcial Speaking S6 (C04·RA2+RA3 overlap) + E6 Cuestionario S6 (C07·4-way · checkpoint medio doble evidencia canon) → E4-final Speaking S8 (C05·RA3 berthing tripartito) → E5 Functions S9 (C06·RA3+RA4 overlap) → E-Misión S12 (C08·todos integrados · panel externo · 90 min/cuadrilla · 100% L2). 4 overlaps documentados matriz: C02 RA1+RA3 (lexical+morfosintáctica E2) · C04 RA2+RA3 (SMCP+gramática E4-parcial) · C06 RA3+RA4 (gramática+descriptiva E5) · C07 4-way (consolidación integrada E6). Densidad criterios canon máxima en RA3 (5/8 = 62.5%). Volumen saberes_conceptos máximo en RA4 (10/26 = 38.5%). S6 doble evidencia canon (E4-parcial + E6 checkpoint medio) · S10 sesión bisagra rehearsal pre-Misión sin evidencia formal. ZERO leak xlsx referencia Buenaventura: contenido 100% cascade v3.x banana cold chain · cast canon · MV CARIBBEAN STAR. Instrumentos canon estricto: Cuestionario No 1 (E1) · Lista de Verificación No 2 (E2) · Lista de Chequeo No 3 (E3) · Escala de Estimación No 4 (E4-parcial S6 + E4-final S8) · Escala de Estimación No 5 (E5) · Cuestionario No 6 (E6) · Rúbrica ABP capstone NO numerado (E-Misión). Renumeraciones heredadas literal Activity Cards: numero=15 duplicado entre PM-2.10 S5 grammar y PM-2.8 S6 speaking · numero=25 duplicado entre PM-2.10 S9 grammar y PM-2.9 S9 E5 Role Carousel · ambos preservados sin reasignar (REGLA cero invención · trazabilidad bidireccional bloqueante)."
+  }
 }

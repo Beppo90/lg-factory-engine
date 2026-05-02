@@ -5,10 +5,18 @@ phase: 2
 session: null
 fase_sena: Post-diseño
 type: assembler
-version: 3.0
+version: 3.1
 created: 2026-04-13
 last_verified: 2026-05-02
-status: v3.0 PARADIGM SHIFT FINAL · PM-2.11 hereda cascade Phase 1+2 v3.x COMPLETO (matriz v1.3 + pm-1-1 v2.8 v2 + pm-1-2 v4.2 v2 + pm-2-0 v3.0 + 30+ Activity Cards de PM-2.1/2.2/2.3/2.4/2.5/2.6/2.8/2.9/2.10/3.5/4.2) · genera fila GFPI-F-134 V04 oficial SENA (1 fila multi-RAP · 11 cols) · pm-2-11.json + xlsx output con universo banana cold chain cascade canon · 8 validation_checks BLOQUEANTES · CIERRE Phase 2 boundary
+status: v3.1 AGRUPACIÓN TRIPARTITA POR RA · PM-2.11 emite gfpi_f134_v04_rows[] (6 filas heredadas 1:1 de pm-1-2 sub_bloques_tripartitos · NO 1 fila agregada) · cascade Phase 1+2 v3.x COMPLETO (matriz v1.3 + pm-1-1 v2.8 v2 + pm-1-2 v4.2 v2 + pm-2-0 v3.0 + 30 Activity Cards) · xlsx V04 oficial SENA con 6 filas (B0 APERTURA + B1 RA1 + B2 RA2 + B3 RA3 + B4 RA4 + BT TRANSFERENCIA capstone) · honra patrón canon "agrupado por RA así como PM-0.0/PM-0/PM-1.1/PM-1.2"
+v3_1_changes:
+  - "BREAKING SCHEMA · gfpi_f134_v04_row (single object) → gfpi_f134_v04_rows[] (array de 6 objetos)"
+  - "NEW REGLA agrupación 1:1 con pm-1-2 sub_bloques_tripartitos (6 sub-bloques: 1 APERTURA + 4 APROPIACIÓN una por RA + 1 TRANSFERENCIA capstone)"
+  - "NEW REGLA cada row[] tiene SUS saberes/criterios/actividades/evidencias/horas/estrategias del bloque (NO agregado monolítico)"
+  - "NEW REGLA APERTURA y TRANSFERENCIA usan rationale_sin_evidencias / capstone-sin-saberes-nuevos respectivamente"
+  - "NEW REGLA xlsx V04 emite 6 filas (rows 15-20 en formato Sergio referencia · NO solo row 15)"
+  - "Honor patrón canon Sergio 2026-05-02 · 'todo agrupado por RA' replica heredancia upstream"
+  - "Anti-patrón evitado: aplastar 30 actividades + 26 saberes + 13 criterios en strings monolíticos rompe trazabilidad heredancia"
 v3_0_changes:
   - "NEW REGLA heredancia cascade COMPLETA · consume 30+ Activity Cards v3.0 + matriz v1.3 + pm-1-1 + pm-1-2 + pm-2-0"
   - "NEW REGLA agregación cols 6-11 GFPI-F-134 V04 desde Activity Cards heredadas"
