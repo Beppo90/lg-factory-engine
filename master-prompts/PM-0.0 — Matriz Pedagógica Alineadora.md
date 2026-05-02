@@ -10,8 +10,8 @@
 |-------|-------|
 | **Código** | PM-0.0 |
 | **Nombre** | Matriz Pedagógica Alineadora · alineación curricular pre-Fase 1 |
-| **Versión** | 1.0 |
-| **Last Verified** | 2026-05-01 |
+| **Versión** | 1.1 |
+| **Last Verified** | 2026-05-01 (v1.1 agrega REGLA 8 anti-prescriptive prompt operacional) |
 | **Destinatario** | Pipeline (insumo CRÍTICO de PM-0 · PM-1.1 · PM-1.2 · PM-2.x · PM-2.11 · PM-3.7) |
 | **Función** | Tomar la información curricular SOFÍA agregada (saberes de concepto + saberes de proceso + criterios de evaluación) y ALINEARLA explícitamente por cada RAP del programa. Produce matriz pedagógica que se vuelve fundamento de toda la cadena downstream. |
 | **Analogía** | Es el "ADN curricular pre-clasificado" · sin esto, todo el pipeline opera sobre información agregada y la alineación se reconstruye retroactivamente al final (PM-2.11) · con esto, el diseño es verdaderamente de adentro hacia afuera por RAP desde día 0. |
@@ -506,4 +506,77 @@ Después · PM-0 consume `pm-0-0-matriz-alineada.json` para generar `pm-0-contex
 ---
 
 *PM-0.0 v1.0 · escrito 2026-05-01 (NEW · paradigm shift Phase 1 · pre-PM-0 alineación matriz pedagógica · Sergio Cortés decisión arquitectónica)*
-*Próximo paso: build wrapper `subagente_pm_0_0_matriz.py` (Camino 2 LLM) + bump PM-0 v3.0 simplificado + bump DM v3.0 + bump PLAN-FASE-1 + form-schema clarification + skill update*
+*v1.1 · 2026-05-01 (post-cascade Step 1.1) · agrega REGLA 8 anti-prescriptive prompt operacional · canon emergente del primer cascade*
+
+---
+
+## REGLA 8 — PROMPT OPERACIONAL DEBE RESPETAR LIBERTAD LLM (v1.1 · 2026-05-01)
+
+> [!warning] Anti-patrón #16 canonizado · Sergio Cortés trigger mutual REGLA 21
+>
+> Master prompt PM-0.0 declara LIBERTAD LLM EXPLÍCITA en múltiples REGLAS (1, 3, 5 · "rationale pedagógico" · "decisión analítica" · etc.). Pero el orchestrator (Claude principal) puede caer en pasar al subagente un template JSON literal con keys pre-fabricadas + listas cerradas + estructura prescriptiva. Eso CONTRADICE la libertad declarada.
+
+### Trigger del problema
+
+Detectado 2026-05-01 en cascade Phase 1 IMARPOR-V2 Step 1.1 (PM-0 v3.0). Pattern aplica también a PM-0.0 cuando se subagenta. Si el orchestrator pasa template literal, el Agent solo rellena · NO innova · output mecánico-prescriptivo.
+
+### Mecánica canónica del prompt operacional al subagente
+
+Cuando se invoque el subagente `subagente_pm_0_0_matriz.py` o cualquier Agent que ejecute PM-0.0:
+
+**SÍ pasar al Agent:**
+- Master prompt PM-0.0 completo (canon strict · 7 REGLAS originales)
+- Inputs (form xlsx parsed o contenido pegado)
+- 7 fields obligatorios mínimos (REGLA 9 si bumpeada · ver abajo)
+- Bloque "INSTRUCCIÓN CRÍTICA · LIBERTAD LLM REAL" explícito
+- Pista (NO obligatoria · marcada como ejemplo)
+
+**NO pasar al Agent:**
+- Template JSON literal con todas las keys pre-fabricadas
+- Listas cerradas que el Agent debe "llenar"
+- Estructura prescriptiva del output (e.g., `"5 principios numbered: 1_X, 2_Y, ..."`)
+- Tono pedagógico decidido por orchestrator
+- Decisiones analíticas que son del subagente
+
+### Bloque template canonical (reusable cross-PM)
+
+```
+## INSTRUCCIÓN CRÍTICA · LIBERTAD LLM REAL
+
+Master prompt PM-0.0 declara REGLAS [1, 3, 5] LIBERTAD LLM. Este prompt
+operacional debe respetarla. NO sigas plantilla · NO inventes keys numbered
+fijas · NO enumeres listas cerradas si una narrativa funciona mejor.
+
+TIENES LIBERTAD REAL sobre:
+- Cómo redactas rationale_alineacion (narrativa · enumerados · combinados)
+- Cómo documentas overlaps (con razón pedagógica · NO arbitrario)
+- Cómo estructuras alignment_strategy
+- Qué campos opcionales agregas según el sector
+
+NO TIENES LIBERTAD sobre:
+- 8 fields obligatorios canon strict (schema_version · pm_id · ... · validation_checks)
+- Verbatim RAPs (REGLA 4)
+- Cobertura 100% (REGLA 2)
+- Orden secuencial (REGLA 6)
+- 7 validation_checks bloqueantes (REGLA 7)
+
+Diseña la estructura coherente con [SECTOR/PROGRAMA] · NO sigas template
+universal.
+```
+
+### Aplicabilidad
+
+Esta REGLA 8 se aplica a TODOS los runs operacionales del subagente PM-0.0 · presente y futuro · cross-program. Si el orchestrator viola este pattern, el output del subagente es mecánico-prescriptivo · incumple intent canónico.
+
+### Trigger interno orchestrator
+
+ANTES de dispatchear Agent que ejecute PM-0.0:
+1. ¿Mi prompt incluye bloque "INSTRUCCIÓN CRÍTICA · LIBERTAD LLM REAL"? Si NO · refactor.
+2. ¿Mi prompt pasa template JSON literal con keys pre-fabricadas? Si SÍ · STOP · solo obligatorios mínimos + contexto.
+3. ¿Mi prompt indica explícitamente qué SÍ/NO libertad? Si NO · agregar.
+
+Documentado en `feedback_anti_patron_16_prompt_operacional_prescriptivo.md` (memoria operacional · trigger interno orchestrator).
+
+---
+
+*PM-0.0 v1.1 · 2026-05-01 (REGLA 8 anti-prescriptive prompt operacional · canonizada del cascade Step 1.1 IMARPOR-V2)*

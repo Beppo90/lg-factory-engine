@@ -2,7 +2,7 @@
 
 **Status:** Capa fundacional del sistema — referencia obligatoria para todos los PM-2.x, PM-3.x y PM-4.x
 **Alcance CEFR:** A1.1 — A2.2
-**Versión:** 3.0 — 2026-05-01 (v3.0 SIMPLIFICADO post-PM-0.0 paradigm shift · 5 principios maestros · libertad LLM)
+**Versión:** 3.1 — 2026-05-01 (v3.1 agrega REGLA 11 anti-prescriptive prompt operacional · canonizada del cascade Step 1.1 IMARPOR-V2 · v3.0 fue paradigm shift simplificado post-PM-0.0)
 **Versiones legacy:** v1.0 (2026-04-18) · v1.1 (2026-04-20 · pm-0-context.json schema)
 
 > [!warning] PARADIGM SHIFT v3.0 · 2026-05-01
@@ -159,6 +159,71 @@ El LLM NO tiene libertad sobre:
 - Inventar criterios de evaluación (vienen de SOFÍA · canon)
 - Reordenar RAPs
 - Saltar validation_checks
+
+### REGLA 11 — PROMPT OPERACIONAL DEBE RESPETAR LIBERTAD LLM (v3.1 · 2026-05-01)
+
+> [!warning] Anti-patrón #16 canonizado · Sergio Cortés trigger mutual REGLA 21
+>
+> REGLA 10 declara libertad analítica del LLM. Pero el orchestrator (Claude principal) puede caer en pasar al subagente un template JSON literal con todas las keys pre-fabricadas + listas cerradas + estructura prescriptiva. Eso CONTRADICE la libertad declarada en REGLA 10. El Agent solo rellena · NO innova · output mecánico-prescriptivo.
+
+**Trigger del problema:** detectado 2026-05-01 en cascade Phase 1 IMARPOR-V2 Step 1.1 inicial. Mi (orchestrator) prompt al Agent fue prescriptivo: "5 principios numbered fijas" · "grupos_activos: [...]" · "rituales_canon: [...]" · "L1 policy: S1-S3 30% · S4-S8 15% · S9-S12 0%". El Agent rellenó · output 25 keys fijos · contradice REGLA 10. Sergio detectó: "FUE MUY MECÁNICO Y NO TUVO LA LIBERTAD DEL LLM?". RE-RUN restaurativo produjo output muy distinto: 19 keys emergentes · `instructor_briefing` narrativo 1ª persona · 6 innovaciones sector-driven · `pedagogical_compass` entrelazado.
+
+**Mecánica canónica del prompt operacional al Agent (cuando se ejecute PM-0):**
+
+SÍ pasar al Agent:
+- Master prompt PM-0 v3.x completo (canon strict · REGLAS 1-11)
+- pm-0-0-matriz-alineada.json (input principal · NO duplicar)
+- pm-0-context-input.json (programa metadata)
+- 8 fields obligatorios mínimos (REGLA 4)
+- Bloque "INSTRUCCIÓN CRÍTICA · LIBERTAD LLM REAL" explícito
+- Pista (NO obligatoria · marcada como ejemplo)
+
+NO pasar al Agent:
+- Template JSON literal con todas las keys pre-fabricadas
+- 5 principios numbered fijos como dict keys obligatorios
+- Listas cerradas que el Agent debe "llenar"
+- Tono pedagógico decidido por orchestrator (e.g., "colaborativo" porque YO lo dije)
+- Grupos gramaticales enumerados pre-decididos
+- L1 policy con tabla per fase pre-decidida
+- Rituales pedagógicos lista cerrada
+
+**Bloque template canonical (reusable cross-PM):**
+
+```
+## INSTRUCCIÓN CRÍTICA · LIBERTAD LLM REAL
+
+Master prompt PM-0 v3.1 declara REGLA 10 LIBERTAD LLM EXPLÍCITA. Este prompt
+operacional debe respetarla. NO sigas plantilla · NO inventes keys numbered
+fijas · NO enumeres listas cerradas si una narrativa funciona mejor.
+
+TIENES LIBERTAD REAL sobre:
+- Cuántas keys top-level usas (8 obligatorias · resto LLM decide cuántas y cuáles)
+- Cómo redactas los principios pedagógicos (narrativa · enumerados · combinados · selectivos)
+- Cuántos personajes inventas (mínimo 2 · sin máximo)
+- Qué escenarios laborales eliges como hero del universo
+- Tono pedagógico que propones (NO me dices porque yo te lo dije · DECIDES tú)
+- Cuántos grupos gramaticales activar (5-10 típico · NO 17)
+- Qué campos opcionales agregas según el sector
+- L1 policy (puede ser tabla · narrativa · principio sin números · TÚ decides)
+
+NO TIENES LIBERTAD sobre:
+- 8 fields obligatorios canon strict (REGLA 4)
+- Cambiar matriz alineada (REGLA 1 · canon PM-0.0)
+- Inventar criterios SOFÍA
+- Saltar 6 validation_checks (REGLA 7)
+
+Diseña la estructura coherente con [SECTOR/PROGRAMA] · NO sigas template
+universal.
+```
+
+**Trigger interno orchestrator** (ANTES de dispatchear Agent que ejecute PM-0):
+1. ¿Mi prompt incluye bloque "INSTRUCCIÓN CRÍTICA · LIBERTAD LLM REAL"? Si NO · refactor.
+2. ¿Mi prompt pasa template JSON literal con keys pre-fabricadas? Si SÍ · STOP · solo obligatorios + contexto + libertad explícita.
+3. ¿Mi prompt indica explícitamente qué SÍ/NO libertad LLM tiene? Si NO · agregar.
+
+**Aplicabilidad cross-PM:** REGLA 11 aplica a TODOS los subagentes downstream (PM-1.1 · PM-1.2 · PM-2.x · PM-3.x · etc.) cuando su master prompt declare libertad LLM. Documentado en memory operacional `feedback_anti_patron_16_prompt_operacional_prescriptivo.md` (trigger interno orchestrator).
+
+**Caso operacional confirmado:** Step 1.1 IMARPOR-V2 RE-RUN · 19 keys emergentes (vs 25 prescriptive) · 6 innovaciones libres detectadas · 6/6 validation PASS · 2026-05-01.
 
 ---
 

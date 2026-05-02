@@ -1,9 +1,10 @@
 ---
 title: DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo
-version: 3.0
+version: 3.1
 last_updated: 2026-05-01
 status: PARADIGM SHIFT FUNDAMENTAL · NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1. Sergio Cortés decisión arquitectónica 2026-05-01: el sistema diseñaba "de adentro hacia afuera" en teoría (DM declaraba UbD desde v2.0) pero en práctica reconstruía la matriz GFPI-F-134 retroactivamente en PM-2.11 (al final de Fase 2) usando información agregada que el LLM había procesado sin saber a qué RAP pertenecía cada saber/criterio. v3.0 corrige: PM-0.0 (NEW) toma información curricular SOFÍA agregada (saberes_conceptos + saberes_proceso + criterios_evaluacion + N RAPs · sin pre-clasificar) y ALINEA explícitamente por RAP. Output `pm-0-0-matriz-alineada.json` se vuelve fundamento pedagógico de toda la cadena downstream. PM-0 simplifica de 1077 → ~270 lines operacionales (5 principios maestros · libertad LLM · schema mínimo viable). Cascade impact: PM-0 + PM-1.1 + PM-1.2 + PM-2.0 + PM-2.x + PM-2.11 + PM-3.7 ahora consumen matriz alineada como insumo. PM-3.7 V04 multi-RAP rows se llenan con contenido REAL por RAP (no solo título RAP en R18-R21). DOCX/JSON learner-readable v2.7 (30 Activity Cards anatomy 6-bloque) preservado · NO afectado.
 previous_versions:
+  - "3.0 (2026-05-01) — PARADIGM SHIFT FUNDAMENTAL · NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1 · PM-0 v1.x → v3.0 simplificado · cascade impact toda pipeline"
   - "2.7 (2026-04-22) — Learner-Readable Activity canonizada · 30 Activity Cards PM-3.6 G1 anatomy 6-bloque"
   - "2.6.6 (2026-04-21) — Paleta SENA institucional (verde #39A900 + azul oscuro #0B2E45 + verde oscuro #007832)"
   - "2.6.5 (2026-04-21) — Canon Shared Renderer Pattern (fuente única de verdad por sección DOCX)"
@@ -1964,7 +1965,40 @@ Programas con pipeline v2.7 y previo (IMARPOR-CC-2026-04-27 · MGV-2026-04-20 ·
 
 ---
 
+---
+
+## EXTENSIÓN v3.1 — ANTI-PATRÓN #16 PROMPT OPERACIONAL PRESCRIPTIVO (2026-05-01)
+
+**Trigger del bump:** Sergio detectó vía REGLA 21 trigger mutual ("FUE MUY MECÁNICO Y NO TUVO LA LIBERTAD DEL LLM?") que en Step 1.1 cascade IMARPOR-V2, mi prompt operacional al subagente PM-0 v3.0 fue prescriptivo (template JSON literal · 25 keys fijos · 5 principios numbered · listas cerradas · tono pedagógico decidido). El Agent rellenó · output mecánico · contradice REGLA 10 LIBERTAD LLM EXPLÍCITA del master prompt.
+
+**Lección canonizada universal:**
+- Master prompt declara libertad LLM ≠ prompt operacional respeta libertad
+- Anti-patrón #16: prompt operacional prescriptivo cuando master prompt declara libertad
+- Aplicabilidad: TODOS los subagentes Phase 0/1/2/3/4
+
+**Bumps ejecutados:**
+- PM-0.0 v1.0 → v1.1 (REGLA 8 anti-prescriptive prompt operacional)
+- PM-0 v3.0 → v3.1 (REGLA 11 idem · más detallada)
+- PLAN-FASE-1-ARQUITECTURA v1.0 → v1.1 (§10 Anti-Prescriptive Pattern + tabla aplicabilidad cross-PM + 3 checks pre-dispatch + template canonical reusable)
+- DM v3.0 → v3.1 (esta extensión documenta canon)
+- Memory snapshot: `feedback_anti_patron_16_prompt_operacional_prescriptivo.md`
+
+**Pattern canonical para futuros runs (cross-program · cross-PM):**
+
+```
+ANTES de dispatchear Agent:
+1. ¿Master prompt declara libertad LLM? Si SÍ:
+2. ¿Mi prompt incluye bloque "INSTRUCCIÓN CRÍTICA · LIBERTAD LLM REAL"?
+3. ¿Mi prompt pasa template JSON literal con keys pre-fabricadas?
+
+Si check 2 NO o check 3 SÍ → STOP · refactor.
+```
+
+**Caso operacional confirmado:** Step 1.1 IMARPOR-V2 RE-RUN · 19 keys emergentes vs 25 fijos · 6 innovaciones libres detectadas (instructor_briefing narrativo · P6 emergente · 2 personajes funcionales agregados · sector_specific_fields banana-driven · pedagogical_compass entrelazado · l1_policy_narrativa) · 6/6 validation PASS · 2026-05-01.
+
+---
+
 *DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo*
-*Fábrica Curricular v3.0 — PARADIGM SHIFT NEW PM-0.0 Matriz Pedagógica Alineadora · diseño UbD verdadero de adentro hacia afuera por RAP · PM-0 simplificado · libertad LLM · 5 principios maestros · cascade impact PM-1.1/1.2/2.0/2.x/2.11/3.7 · canon Sergio Cortés 2026-05-01*
+*Fábrica Curricular v3.1 — PARADIGM SHIFT NEW PM-0.0 + ANTI-PATRÓN #16 PROMPT OPERACIONAL · diseño UbD verdadero de adentro hacia afuera por RAP · PM-0 simplificado · libertad LLM REAL (canon doc + canon operacional) · 5 principios maestros · cascade impact PM-1.1/1.2/2.0/2.x/2.11/3.7 · canon Sergio Cortés 2026-05-01*
 *Versiones legacy preserved: v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
 *Instructor Sergio · Abril–Mayo 2026*

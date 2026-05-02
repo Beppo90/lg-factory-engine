@@ -1,8 +1,8 @@
 ---
 title: PLAN-FASE-1-ARQUITECTURA — Phase 1 (Scope) + Phase 0 (Matriz Pedagógica Alineadora)
-version: 1.0
+version: 1.1
 last_updated: 2026-05-01
-status: NEW · documenta workflow Phase 0+1 post-paradigm shift PM-0.0 (DM v3.0)
+status: v1.1 agrega §10 Anti-Prescriptive Pattern · canonizado del cascade Step 1.1 IMARPOR-V2 (anti-patrón #16) · v1.0 fue NEW workflow Phase 0+1 post-paradigm shift PM-0.0 (DM v3.0)
 canon: Sergio Cortés decisión arquitectónica 2026-05-01
 ---
 
@@ -269,4 +269,114 @@ Sumas SUM(H15:H21) coherentes con horas distribuidas reales por RAP (no concentr
 
 *PLAN-FASE-1-ARQUITECTURA v1.0 · escrito 2026-05-01*
 *Documenta workflow Phase 0 (NEW · PM-0.0) + Phase 1 (PM-0 v3.0 simplificado + PM-1.1 + PM-1.2) post-paradigm shift DM v3.0*
+*v1.1 · 2026-05-01 (post-cascade Step 1.1) · agrega §10 Anti-Prescriptive Pattern · anti-patrón #16 canonizado*
 *Sergio Cortés · canon strict*
+
+---
+
+## §10 · ANTI-PRESCRIPTIVE PATTERN (v1.1 · 2026-05-01)
+
+### Anti-patrón #16 · prompt operacional prescriptivo contradice libertad LLM
+
+**Detectado:** 2026-05-01 cascade Step 1.1 IMARPOR-V2. Master prompt PM-0 v3.0 declara REGLA 10 LIBERTAD LLM EXPLÍCITA · pero el orchestrator (Claude principal) pasó al Agent un template JSON literal con 25 keys pre-fabricadas + listas cerradas + tono pedagógico decidido. El Agent rellenó · output mecánico-prescriptivo · contradice REGLA 10. Sergio detectó vía REGLA 21 trigger mutual: "FUE MUY MECÁNICO Y NO TUVO LA LIBERTAD DEL LLM?".
+
+**RE-RUN restaurativo** con prompt corregido (8 obligatorios + contexto + libertad explícita) produjo output muy distinto:
+- 19 keys vs 25 fijos
+- `instructor_briefing` narrativo 1ª persona ~430 words
+- 8 personajes (LLM agregó 2 funcionales con justificación gramatical)
+- P6 emergente "Cold Chain Integrity como ancla afectiva"
+- `pedagogical_compass` narrativa entrelazada (NO 5 keys numbered)
+- 6 sector_specific_fields banana-driven
+
+**Lección canonizada:** master prompt declara libertad ≠ prompt operacional respeta libertad.
+
+### §10.1 · Pattern operacional canonical (cross-PM)
+
+Cuando un master prompt declare LIBERTAD LLM (cualquier REGLA explícita), el prompt operacional al Agent DEBE incluir bloque "INSTRUCCIÓN CRÍTICA · LIBERTAD LLM REAL":
+
+```
+## INSTRUCCIÓN CRÍTICA · LIBERTAD LLM REAL
+
+Master prompt [PM-X.Y v_X] declara REGLA N "LIBERTAD LLM EXPLÍCITA". Este
+prompt operacional debe respetarla. NO sigas plantilla · NO inventes keys
+numbered fijas · NO enumeres listas cerradas si una narrativa funciona mejor.
+
+TIENES LIBERTAD REAL sobre:
+- [campo 1: tipo de libertad]
+- [campo 2: ...]
+- ...
+
+NO TIENES LIBERTAD sobre:
+- [N] fields obligatorios canon strict (REGLA M)
+- Validation_checks bloqueantes (REGLA M)
+- [otras restricciones canon]
+
+Diseña la estructura coherente con [SECTOR/PROGRAMA] · NO sigas template
+universal.
+
+## Pista (NO obligatorio · solo ejemplo de libertad)
+
+[ejemplo de cómo PODRÍA verse · clarificando que NO es prescripción]
+```
+
+### §10.2 · Trigger interno orchestrator (3 checks pre-dispatch)
+
+ANTES de dispatchear cualquier Agent que ejecute un PM:
+
+1. **¿Master prompt declara libertad LLM en alguna REGLA?**
+   - Si SÍ → continuar checks 2-3
+   - Si NO → prompt operacional puede ser más prescriptivo
+
+2. **¿Mi prompt al Agent incluye bloque "INSTRUCCIÓN CRÍTICA · LIBERTAD LLM REAL"?**
+   - Si NO → STOP · refactor prompt antes de dispatch
+
+3. **¿Mi prompt pasa template JSON literal con keys pre-fabricadas?**
+   - Si SÍ → STOP · solo obligatorios mínimos + contexto + libertad explícita
+   - Si NO → dispatch OK
+
+### §10.3 · Tabla aplicabilidad cross-PM
+
+| PM | Master prompt declara libertad? | Pattern §10 obligatorio? |
+|---|---|---|
+| **PM-0.0** v1.1 | SÍ (REGLAS 1, 3, 5 · rationale + decisión analítica) | SÍ |
+| **PM-0** v3.1 | SÍ (REGLA 10 LIBERTAD LLM EXPLÍCITA + REGLA 11) | SÍ |
+| **PM-1.1** v2.7.1 | SÍ (4 patrones regla_bloques · LLM elige) | SÍ |
+| **PM-1.2** v4.1 | SÍ (LLM cura fuentes auténticas · selecciona Story A/B) | SÍ |
+| **PM-2.0** v2.6 | SÍ (LLM decide arquetipos session blueprint) | SÍ |
+| **PM-2.1-2.10** v2.0-3.0 | SÍ (cada AC es LLM creativo) | SÍ |
+| **PM-2.11** v2.6.3 | Parcial (canon strict cols 1-11 · pero LLM síntesis) | SÍ con caveats |
+| **PM-3.1** v2.6 | SÍ (LLM diseña flow playbook outline) | SÍ |
+| **PM-3.2** v2.6 | SÍ (LLM decide facilitación SET-UP/WHILE/WRAP-UP) | SÍ |
+| **PM-3.5** v2.6 | SÍ (LLM diseña final mission scenario) | SÍ |
+| **PM-3.3** v3.0 | SÍ (visual aid · LLM decide layout + sections) | SÍ |
+| **PM-3.4** v4.1 | SÍ (LLM decide REINFORCE/EXTEND/PREPARE content) | SÍ |
+| **PM-3.6** v2.7 | SÍ (LLM decide narrative GFPI-F-135) | SÍ |
+| **PM-3.7** v2.0 | Parcial (V04 canon strict · LLM aggregation) | SÍ con caveats |
+| **PM-4.1, PM-4.2** v2.x | SÍ (LLM decide 6 instrumentos / cuestionario S6) | SÍ |
+
+**Conclusión:** TODOS los subagentes Phase 0/1/2/3/4 deben recibir prompts operacionales NO prescriptivos. §10 aplica universalmente.
+
+### §10.4 · Caso operacional confirmado · IMARPOR-V2 Step 1.1
+
+**Antes (prescriptive · 2026-05-01 inicial):**
+- 25 keys fijos templated
+- 5 principios numbered keys
+- 6 personajes lista cerrada
+- Tono "colaborativo" decidido por orchestrator
+- 8 grupos gramaticales enumerados
+- L1 policy tabla S1-S3/S4-S8/S9-S12
+
+**Después (libertad · 2026-05-01 RE-RUN):**
+- 19 keys (8 obligatorias + 11 emergentes)
+- `pedagogical_compass` narrativa entrelazada
+- 8 personajes (LLM agregó Yurlenis Tally Clerk + Pipa Refrigeration Tech)
+- Tono LLM-decidido desde análisis sector
+- Grammar focus emergente del análisis matriz
+- `l1_policy_narrativa` con justificación contextual
+- 6 innovaciones libres detectadas
+
+**Validation 6/6 PASS en ambos · pero cualitativamente muy distinto.**
+
+### §10.5 · Memoria operacional referenciada
+
+Documentado en `feedback_anti_patron_16_prompt_operacional_prescriptivo.md` (memory snapshot · trigger interno orchestrator · pattern canonical · template reusable cross-PM).
