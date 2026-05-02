@@ -1,150 +1,199 @@
-# PM-0 Context · IMARPOR-CC V2 (Fresh Re-Run · Puerto Antioquia · Banana Cold Chain)
+# PM-0 v3.0 · Contexto Pedagógico · IMARPOR-CC-2026-04-30-V2
 
-**Run ID:** `IMARPOR-CC-2026-04-30-V2`
-**Generado:** 2026-05-01 · Sergio Cortés (lead) · Diana Samboni (co-instructor)
-**Pipeline:** 2.11 · form-schema v2.7.1 · master prompt PM-0 v1.1
-**Status:** Fresh analysis · NO copy de V1 · disponible para evaluación de variabilidad pedagógica
-**Versión:** 1.1 (corregido 2026-05-01 · sub-sector ahora banana/fruta refrigerada en Puerto Antioquia tras anchor explícito Sergio)
-
----
-
-## Por qué V2 existe
-
-V1 (`runs/IMARPOR-CC-2026-04-27`) está cerrado y validado. V2 es una **segunda iteración con disciplina** desde Fase 1, con el mismo programa SOFÍA pero decisiones analíticas distintas — un experimento controlado para que Sergio observe dónde un PM-0 fresh diverge del primero.
-
-> Mismo programa. Mismo input xlsx. Mismo CEFR range. Diferente sabor.
+**Run ID:** IMARPOR-CC-2026-04-30-V2
+**Guide ID:** IMARPOR-CC-V2-G1
+**Master Prompt:** PM-0 v3.0 (simplificado · paradigm shift post PM-0.0)
+**Generado:** 2026-05-01
+**Instructores:** Sergio Leonardo Cortés · Diana Rocío Samboni
+**Centro:** FPI SENA Bilingüismo
 
 ---
 
-## Corrección 2026-05-01 (auditoría Sergio)
+## 1. Por qué este artefacto es distinto (paradigm shift v3.0)
 
-La generación previa de V2 inventó un contexto Cartagena/granel que no corresponde a la realidad operacional del run target. Sergio ancló el contexto correcto:
+PM-0 v3.0 abandona el rol de **constructor de matriz pedagógica** y asume el rol de **capa pedagógica liviana**. La matriz curricular (saberes, procesos, criterios alineados por RAP) ya vive canónicamente en `pm-0-0-matriz-alineada.json` (output de PM-0.0). PM-0 NO duplica esa información — solo la **referencia** y agrega tres capas que la matriz no contiene:
 
-- **Puerto Antioquia** (real · operacional desde 2025) — multipropósito en Urabá · Necoclí · Antioquia · Caribe colombiano
-- **Vocación principal:** Eje Bananero (~80% del banano colombiano de exportación pasa por Urabá)
-- **Sub-sector:** banana/fruta refrigerada · cold chain reefer
-- **Hinterland:** Antioquia + Eje Cafetero (conectado vía Túnel del Toyo desde Medellín)
+1. **Universo narrativo** (terminal, personajes, escenarios, vocabulario sector específico).
+2. **CEFR descriptors** del subnivel objetivo (A2.1) — solo target, no los 6 subniveles del marco.
+3. **Principios pedagógicos aplicables** (5 maestros, NO 13 sub-principios prescriptivos).
 
-Lo que se preservó: tono colaborativo, debrief circles, peer-pilot rotaciones, stand-down ritual, L1 huddles S1-S3, CEFR A1.2→A2.1, single-guía absorcion_Na1, schema canon. Lo que se reemplazó: terminal, sub-sector, vocabulario clave, cliente externo, vessel y Final Mission. Detalle completo en `pm-0-context.json._v2_correction_log`.
-
----
-
-## Decisiones analíticas que diferencian V2 de V1
-
-| Eje | V1 (2026-04-27) | V2 (2026-04-30 · corregido) |
-|---|---|---|
-| Sub-sector | Contenedores genéricos | **Banana/fruta refrigerada** (Cavendish · cold chain reefer) |
-| Terminal | Buenaventura · Terminal de Contenedores | **Puerto Antioquia · Urabá · Necoclí** (Eje Bananero) |
-| Avatar | Andrea Mosquera (Port Operations Trainee) | **Manuel Padilla** (Junior Reefer Operator + Cold Chain Technician Track) |
-| Mentor interno | Capitán Restrepo (Port Captain · B1) | **Carolina Vélez** (Port Pilot mujer · B2) + **Hernando Ospina** (Safety Manager · B1+) + **Mariana Suárez** (Cold Chain Coordinator + ICA Phytosanitary Liaison · B2) |
-| Cliente externo | Captain Lopera (chino-singapurense · BUENAVENTURA EXPRESS portacontenedores) | **Captain Lim Wei-Ming** (singapurense · MV CARIBBEAN STAR banana reefer ship Star Reefers) + **Bosun Andrés Mejía** (colombiano · Turbo) |
-| Final Mission | CML Port Turnaround · coordinación tripartite VHF en Berth 4 | **Pre-Departure Banana Reefer Compliance Check + Tripartite Handover (Vessel + Port + ICA)** |
-| Tono pedagógico | Concentrado-disciplinado · instructor central | **Colaborativo-trabajo-equipo** · debrief circles · peer-pilot rotaciones · stand-down ritual |
-| Vocabulario énfasis | VHF · berthing · cargo manifest · container | **Reefer plug-in · cold chain · pre-cooling · setpoint · ICA phytosanitary · GlobalGAP · Cavendish · ATP certificate** |
-
-CEFR progression idéntica (A1.2 → A2.1 single-guía absorcion_Na1) — eje canon que NO se mueve por respeto al programa SOFÍA.
+Resultado práctico: **18 fields top-level** (vs ~41 del schema v1.x), **6 validation_checks** (vs 22), **8 grupos gramaticales sector-relevantes** (vs 17 hardcoded). Libertad LLM explícita REGLA 10.
 
 ---
 
-## El universo narrativo V2
+## 2. Matriz alineada heredada (referencia · NO duplicada)
 
-**Empresa ficticia:** Puerto Antioquia · Terminal Multipropósito de Urabá (Necoclí · Antioquia · Caribe colombiano · operacional desde 2025 · vocación principal Eje Bananero).
+PM-0 consume `runs/IMARPOR-CC-2026-04-30-V2/pm-0-0-matriz-alineada.json` como insumo principal. Resumen ejecutivo:
 
-**Ambiente productivo:** Operación 24/7 en banana/fruta refrigerada de exportación. Tres zonas críticas — Pre-cooling chamber (cámaras de pre-enfriamiento del cluster banana antes de embarque), Reefer yard (filas de reefer containers con plug-in eléctrico + genset backup), y front de muelle (ramp-up para vessels reefer ships y container ships con reefer plugs). Hinterland Antioquia + Eje Cafetero conectado vía Túnel del Toyo desde Medellín. Tripulación rota cada 4-6 meses; turnos colombianos coordinan vía VHF y briefings físicos junto al inspector ICA.
+| RAP | Verbo cognitivo | Foco temático |
+|-----|-----------------|---------------|
+| RA1 | RECONOCER | Vocablos básicos físicos buque/puerto + oficios |
+| RA2 | COMPRENDER | Frases SMCP estandarizadas OMI |
+| RA3 | APLICAR | Reglas gramaticales básicas puerto-buque |
+| RA4 | DESCRIBIR | Funciones habituales/momentáneas marítimo-portuarias |
 
-**Personajes:**
+**Overlaps documentados** (no arbitrarios, justificados pedagógicamente en PM-0.0):
+- MODAL VERBS · RA3 (regla gramatical) ↔ RA4 (función descriptiva).
+- EXPRESAR E INTERPRETAR ÓRDENES · RA3 (imperative aplicado) ↔ RA4 (acto descriptivo del rol).
 
-- **Manuel Padilla** — 24 años, Apartadó (Urabá), técnico SENA recién promovido al Cold Chain Technician Track. Su esposa es enfermera (vocabulario de protocolos de temperatura y trazabilidad bilingüe en casa = recurso afectivo). Sus dudas son las del aula: *"¿cómo digo el setpoint subió dos grados en inglés sin sonar inseguro frente al capitán?"*
-- **Carolina Vélez** — 38 años, primera mujer pilota práctica de Puerto Antioquia. Bilingüe nativa-funcional. Modela inglés operativo en VHF y conduce el on-the-job coaching de Manuel.
-- **Hernando Ospina** — 55 años, ex-marino mercante, ahora Terminal Safety Manager. Estricto con safety briefings y procedimientos de emergencia en reefer yard. Auditor interno en la Misión Final.
-- **Mariana Suárez** — 41 años, ingeniera agroindustrial de Apartadó. Cold Chain Coordinator + ICA Phytosanitary Liaison · figura banana-essential. Domina el vocabulario técnico bilingüe (USDA/ICA phytosanitary certificate · GlobalGAP · Rainforest Alliance · Cavendish · gas flush · CO2/O2 modified atmosphere). Mentora directa de Manuel en RAP-04.
-- **Captain Lim Wei-Ming** — 48 años, Singapur. Master del MV CARIBBEAN STAR (banana reefer ship Star Reefers, bandera Singapur, 9,200 DWT con 580 reefer plugs). Inglés singapurense — lingua franca real del shipping reefer.
-- **Bosun Andrés Mejía** — 42 años, colombiano de Turbo (Urabá), contratado por Star Reefers para coordinar stevedores locales. SMCP estandarizado con errores comunes que Manuel debe aprender a clarificar.
-
----
-
-## Final Mission Scenario
-
-**Pre-Departure Banana Reefer Compliance Check & Tripartite Handover: The CARIBBEAN STAR Departure**
-
-Manuel coordina la fase pre-zarpe del MV CARIBBEAN STAR en Puerto Antioquia. Demuestra los 4 RAPs absorbidos:
-
-1. **RAP-01** — vocabulario banana/cold chain al recorrer el reefer yard con un visitor checklist (30 min yard walk + plug-in inspection)
-2. **RAP-02** — SMCP en el VHF arrival/departure exchange con el bridge (20 min)
-3. **RAP-03** — gramática puerto-buque verificando reefer plugs, temperature logs y phytosanitary certificates (durante yard walk)
-4. **RAP-04** — estructuras ocupacionales en handover tripartito con Captain Lim Wei-Ming + Bosun Andrés Mejía + Mariana Suárez (ICA liaison) + Hernando Ospina (Safety) (40 min + Q&A)
-
-**Formato:** 90 minutos · 100% L2 · panel evaluador externo (3 evaluadores).
+PM-0 NO toca esta matriz. Cualquier downstream que necesite saberes/criterios canon debe leer `_matriz_alineada_ref` y consumir directamente `pm-0-0-matriz-alineada.json`.
 
 ---
 
-## Estructura interna de la guía única
+## 3. Programa · datos canónicos
 
-| Bloque | Sesiones | RAP | CEFR | Foco |
-|---|---|---|---|---|
-| Interno 1 | S1-S3 | RAP-01 vocablos banana/cold chain | A1.2 | Toolbelt-30 + realia (clusters, plugs, termómetros) + L1 huddles |
-| Interno 2 | S4-S6 | RAP-02 SMCP reefer ops | A1.3 | VHF + NATO Phonetic + reefer/cold-chain markers |
-| Interno 3 | S7-S9 | RAP-03 gramática puerto-buque | A2.0 | Modales + condicionales + voz pasiva |
-| Interno 4 | S10-S12 | RAP-04 descripción funciones | A2.1 | Tag questions + handover tripartito + cold chain audit |
-
-100h totales = 72h directas (12 sesiones × 6h) + 28h autónomas. S12 = Misión Final.
-
----
-
-## Curva L1 (adaptación canon §9.1)
-
-Curva escalonada por bloque interno. V2 introduce **L1 huddles formales** en S1-S3 (2-5 min al inicio de sesión, alineación de seguridad cold chain en español; cierran progresivamente).
-
-| Bloque | Sesiones | L1 % máximo |
-|---|---|---|
-| 1 (A1.2) | S1 / S2 / S3 | ≤25% / ≤20% / ≤15% |
-| 2 (A1.3) | S4 / S5 / S6 | ≤12% / ≤10% / ≤8% |
-| 3 (A2.0) | S7 / S8 / S9 | ≤5% / ≤3% / 0% |
-| 4 (A2.1) | S10 / S11 / S12 | 0% / 0% / 0% (Misión Final 100% L2) |
-
-**Anclaje colaborativo:** S3 cierra con "last huddle bilingüe" — ritual grupal donde el aula declara colectivamente el switch a L2 puro.
+- **Denominación:** Inglés Marítimo y Portuario (Curso Complementario).
+- **Código SOFÍA:** 12340002.
+- **Duración:** 100h (72h directas + 28h independientes).
+- **Sesiones:** 12 × 6h.
+- **Regla bloques:** absorción Na1 (single-guía absorbe los 4 RAPs internamente).
+- **Total guías:** 1.
+- **Sector:** marítimo y portuario.
+- **Subsector:** banana / fruta refrigerada · cold chain reefer · Cavendish export.
 
 ---
 
-## Grammar Roadmap (silabus 17 grupos)
+## 4. CEFR · subnivel objetivo A2.1 (entrada A1.2 → salida A2.1)
 
-Activación distribuida por bloque interno (carga ≤2 grupos Intro/sesión). Detalle completo en `pm-0-context.json.grammar_roadmap.activation_mapping_internal_blocks`.
+PM-0 v3.0 produce descriptores **solo** del subnivel target. Los 6 subniveles A1.1→A2.2 permanecen en la sección legacy del master prompt como referencia, no como requirement.
 
-**Gr 17 sector-específico V2:** SMCP + NATO Phonetic + **reefer/cold-chain markers** (Setpoint confirmed · Plug-in complete · Pre-cooling ready · Phytosanitary cleared · Genset backup online · Temperature log within tolerance · Cold chain integrity maintained · ICA inspection in progress) + **safety briefing structures** (cold chain hazards) + estructuras ocupacionales A2.1.
+### Descriptors A2.1 sector-aplicados
 
----
-
-## Shifts metodológicos (curva colaborativa)
-
-- **B1 (S1-S3):** velocidad lenta · choral drilling · stand-down ritual · L1 huddle cold chain · Carolina Vélez modela live listening · Mariana Suárez aparece en S3
-- **B2 (S4-S6):** velocidad moderada · interferencia VHF · primeras peer-pilot rotaciones (5 min) · accuracy SMCP bloqueante
-- **B3 (S7-S9):** velocidad moderada-natural · ruido ambiente realista (genset hum, reefer compressors, forklifts) · feedback peer-first · Captain Lim Wei-Ming entra en S8
-- **B4 (S10-S12):** velocidad natural · cero andamiaje · panel externo simulado · evaluador profesional + ICA inspector
-
----
-
-## Principios pedagógicos contextualizados
-
-Los 13 principios PM-0 §5.1-§5.13 aplican a la guía única V2 con énfasis colaborativo y sectorial banana/cold chain:
-
-- **§5.5 Memorización:** Toolbelt banana/cold chain (50 términos) + 30 SMCP key phrases + **Pre-Shipment Cold Chain Audit checklist como anchor de retención** (factor SUCCESS aplicado)
-- **§5.7 Vocabulario:** **Word Wall colaborativo** — los aprendices aportan términos cada sesión
-- **§5.8 Autonomía:** Gap Cards en parejas + **Cold Chain Stand-Down Journal** diario + **Peer-Pilot Rotation** (cada aprendiz lidera un debrief de 5 min)
-- **§5.13 Stress:** SMCP estandarizado + sector banana/cold chain específico (REE-fer · CA-vendish · phy-to-SAN-i-ta-ry · pre-COO-ling · SET-point) · finger drilling + clapping + **back-chaining colectivo en círculo**
-
-Detalle completo en `pm-0-context.json.pedagogical_principles`.
+- **Comprensión oral:** capta operaciones reefer · seguridad puerto · instrucciones SMCP simples · órdenes pilot vía VHF.
+- **Comprensión lectora:** reefer logs · ATP cert · phytosanitary cert · SMCP message markers · safety signage.
+- **Interacción oral:** intercambios sencillos cold chain familiares · reefer plug-in · setpoint reporting al capitán · briefings ICA.
+- **Producción oral:** describe rol (Junior Reefer Operator) · equipo (cold chain crew Puerto Antioquia) · funciones (plug-in inspection · temperature monitoring · tripartite handover).
+- **Producción escrita:** refrigeration log entries · short reports temperature deviation · email simple a Captain Lim.
+- **Vocabulario activo:** ~1500 palabras · 70% sector + 30% general.
+- **Gramática:** verb to be + simple present · imperative · modal verbs · tag questions · present progressive + prepositional phrases · quantifiers · first conditional emergente.
+- **Fonología:** NATO Phonetic automatizado · stress correcto en lexicón sector (REE-fer · phy-to-SAN-i-ta-ry).
 
 ---
 
-## Próximo paso del pipeline
+## 5. Universo narrativo · Puerto Antioquia · Eje Bananero
 
-`PM-1.1 IMARPOR-CC V2` — single-guía absorción 4 RAPs · entrada: este `pm-0-context.json` + `pm-1-1-input.json` (a generar) · salida esperada: `pm-1-1.md` + `pm-1-1.json` con universo narrativo derivado (Manuel + Carolina + Hernando + Mariana Suárez + Captain Lim Wei-Ming + Bosun Andrés Mejía) + Misión Final Pre-Shipment Cold Chain Audit + Tripartite Handover + sin proyecto_formativo_articulador (asimetría v2.7.1).
+> **Preservado del análisis V2 anterior** (Hito 7 · pre-paradigm-shift). NO re-inventado. Solo reorganizado bajo schema v3.0.
+
+### Terminal
+
+Puerto Antioquia · Terminal Multipropósito de Urabá · Necoclí · Antioquia · Caribe colombiano. Operacional desde 2025. Vocación principal Eje Bananero (~80% del banano colombiano de exportación). Tres zonas críticas: Pre-cooling chamber · Reefer yard (plug-in + genset backup) · Front de muelle (vessels reefer + container ships con reefer plugs). Hinterland Antioquia + Eje Cafetero vía Túnel del Toyo desde Medellín.
+
+### Personajes
+
+- **Manuel Padilla** (avatar aprendiz, 24 años, Apartadó) — Junior Reefer Operator + Cold Chain Technician Track · 2ª semana en el rol · A1.1 inicial → A2.1 final.
+- **Carolina Vélez** (mentor pilot, B2) — Port Pilot · primera mujer pilota práctica del Terminal · bilingüe nativa-funcional · modela inglés operativo VHF.
+- **Hernando Ospina** (mentor safety, B1+) — Terminal Safety Manager · supervisa Toolbox Talks bilingües.
+- **Mariana Suárez** (mentor banana-specific, B2) — Cold Chain Coordinator + ICA Phytosanitary Liaison · figura banana-essential.
+- **Captain Lim Wei-Ming** (cliente externo, singapurense) — Vessel Master MV CARIBBEAN STAR (Star Reefers · 9,200 DWT · 580 reefer plugs).
+- **Andrés Mejía** (bosun secundario, colombiano de Turbo) — coordina cuadrilla local stevedores reefer.
+
+### Vocabulario sector central (19 términos)
+
+reefer · cold chain · banana cluster · Cavendish · CFR · ICA · phytosanitary · pre-cooling · temperature setpoint 13.3-13.9°C · genset · ATP certificate · weight tolerance · refrigeration log · VHF · SMCP · plug-in inspection · tripartite handover · GlobalGAP · Rainforest Alliance.
+
+### Scenarios operacionales
+
+Reefer plug-in inspection · Cold chain audit pre-shipment · Pre-shipment phytosanitary check · Banana export manifest verification · Bridge VHF coordination · Tripartite handover (Vessel + Port + ICA).
+
+### Imagery & iconography
+
+Real photos profesionales del Eje Bananero (NO cartoon · NO infantil). Uniformes safety, grúas reefer, contenedores Star Reefers, muelle banano Urabá, pre-cooling chamber, reefer yard, ICA inspector con clipboard fitosanitario, banana cluster Cavendish. Iconografía técnica adulta: anchor · radio VHF · contenedor reefer · termómetro digital · grúa portuaria · plug socket · phytosanitary stamp · cluster banana.
 
 ---
 
-## Trazabilidad
+## 6. Final Mission · Pre-Departure Banana Reefer Compliance Check & Tripartite Handover
 
-- **Schema:** PM-0 §10.2 (canon)
-- **V1 reference (shape only · NO content copy):** `runs/IMARPOR-CC-2026-04-27/pm-0-context.json`
-- **Aprobación instructor:** pendiente (Sergio · 2026-05-01)
-- **Validación:** shape canon-conforme · campos obligatorios presentes · NO byte-identical to V1 · contexto Puerto Antioquia + banana cold chain anclado por Sergio 2026-05-01
+**Título completo:** "The CARIBBEAN STAR Departure".
+**Duración:** 90 min · **L2:** 100% · **Panel:** 3 evaluadores (Captain Lim · Hernando Ospina · Mariana Suárez).
+
+| Fase | Duración | Actividad |
+|------|----------|-----------|
+| 1 | 30 min | Reefer yard walk + plug-in inspection (Manuel verifica 6 reefer containers) |
+| 2 | 20 min | VHF bridge call (arrival exchange con MV CARIBBEAN STAR · SMCP message markers) |
+| 3 | 40 min | Tripartite handover (Manuel presenta Cold Chain Audit + Reefer Temperature Log + ATP cert + Phytosanitary cert al panel) |
+
+Evidencia alineada cubre los 4 RAPs (RA1 vocablos reconocidos · RA2 SMCP usado · RA3 modals/imperatives/tag questions aplicados · RA4 descripción funcional roles+processes+ubicaciones).
+
+---
+
+## 7. Principios pedagógicos aplicables (5 maestros REGLA 2)
+
+1. **Contenido técnico primario** — el idioma se enseña ALREDEDOR de cold chain real banana. Realia (ATP cert · refrigeration log · SMCP cards · phytosanitary cert · reefer manifest). Yard walks y bridge VHF, no aulas abstractas.
+2. **Progresión CEFR diferenciada** — A1.2 → A2.1 en 12 sesiones. Bloques internos por RAP: S1-S3 RA1 vocablos · S4-S6 RA2 SMCP · S7-S9 RA3 gramática aplicada · S10-S12 RA4 descripción funcional + Final Mission. Solo descriptors A2.1 (NO los 6 subniveles).
+3. **L1 decrece progresivamente** — S1-S3: 30% L1 (huddles formalizados para conceptos densos: ICA regs · phytosanitary · concord modals) · S4-S8: 15% (aclaraciones puntuales) · S9-S12: 0-5% (L2 dominante). LLM ajusta per cohort observed.
+4. **Feedback diferenciado accuracy ↔ fluency** — accuracy (modal verbs · simple present · SMCP exact phrases · NATO Phonetic · imperative form) corregido inmediato durante drills. Fluency (VHF roleplay · tripartite handover · debrief circles · peer-pilot rotaciones) feedback diferido al cierre, respetando flow.
+5. **Evidencia alineada al criterio** — cada actividad valida un criterio específico del RAP heredado de matriz PM-0.0. Trazabilidad criterio↔evidencia obligatoria en cada `pm-3-2-sX.json`.
+
+---
+
+## 8. Tono pedagógico V2
+
+**Estilo:** colaborativo · trabajo-equipo · cold-chain-first.
+
+**Rituales canon:**
+- Debrief circles post-actividad (3-5 min · 1 takeaway por aprendiz en L2).
+- Peer-pilot rotaciones (rotar rol mentor cada 3 sesiones · aprendiz designado coachea peer).
+- Stand-down ritual cierre de sesión (3 takeaways: 1 cold-chain risk · 1 vocabulario nuevo · 1 SMCP phrase).
+- L1 huddles formalizados S1-S3 (15 min · ICA regulations · phytosanitary terminology densa).
+
+**Diferenciador V2 vs V1:** V1 IMARPOR-CC fue concentrado-disciplinado (instructor central). V2 es colaborativo-grupal (debrief, peer-pilot, stand-down).
+
+---
+
+## 9. Grammar focus per session (sector-relevante · 8 grupos · NO 17)
+
+REGLA 3 explícita: la gramática del programa hereda de PM-0.0 RA3 (donde toda la gramática está concentrada). El LLM activa solo los grupos sector-relevantes:
+
+| Grupo | Sesiones | Justificación sector |
+|-------|----------|----------------------|
+| verb to be + simple present | S1-S3 | Rutinas reefer ops · identificación roles |
+| demonstratives + singular/plural nouns | S2-S4 | Señalética · vocabulario físico |
+| imperative + commands SMCP | S2-S5 | Órdenes capitán→timonel · pilot→tug |
+| modal verbs CAN/COULD/SHOULD/MUST/MAY | S4-S8 | Phytosanitary regs · safety · permission |
+| tag questions | S6-S9 | VHF confirmation exchanges |
+| present progressive + prep phrases | S5-S10 | Maniobras · ubicación dinámica buque |
+| quantifiers | S7-S10 | Carga banana · tonelaje · weight tolerance |
+| first conditional emergente | S9-S12 | Contingency cold chain ('if temp rises >14°C, then alert ICA') |
+
+**Excluidos justificadamente:** past tense · future perfect · subjunctive · pasiva compleja. El sector cold chain pre-departure opera en presente + imperativo + modal + condicional simple. Past/future complejos NO aparecen en realia operacional A1-A2.
+
+---
+
+## 10. Validation checks · 6/6 PASS
+
+| # | Check | Status |
+|---|-------|--------|
+| 1 | matriz_alineada_ref_valid | PASS |
+| 2 | cefr_subnivel_canonical | PASS |
+| 3 | universo_narrativo_complete | PASS |
+| 4 | principios_aplicados | PASS |
+| 5 | no_duplication_matriz | PASS |
+| 6 | anti_copia_fantasma | PASS |
+
+Detalle de evidencia en `pm-0-context.json` campo `validation_checks`. Ningún check FAIL → `enriched: false` se mantiene a la espera de gate Sergio pre-PM-1.1, no por error de generación.
+
+---
+
+## 11. Downstream consumers
+
+- **PM-1.1** ruta macrotemática POR RAP (consume matriz + universo + CEFR target).
+- **PM-1.2** scope POR RAP (curación fuentes auténticas con universo banana cold chain).
+- **PM-2.x** ACs (universo + principios + matriz como context creativo).
+- **PM-3.x** generación (universo + CEFR descriptors A2.1).
+- **PM-2.11** consume directamente PM-0.0 (NO PM-0).
+- **PM-3.7 V04** consume PM-0.0 + PM-2.11 (NO PM-0).
+
+---
+
+## 12. Audit · simplificación v3.0
+
+- `fields_count_top_level: 18` (objetivo 12-18 cumplido).
+- `matriz_curricular_NOT_duplicated: true`.
+- `saberes_conceptos_array_present: false`, `saberes_proceso_array_present: false`, `criterios_evaluacion_array_present: false`.
+- `cefr_descriptors_only_target_subnivel: true`, `cefr_descriptors_6_subniveles_NOT_present: true`.
+- `grammar_groups_count: 8` (vs 17 v1.x).
+- `validation_checks_count: 6` (vs 22 v1.x).
+
+---
+
+**Gate pendiente:** Sergio approval pre-PM-1.1 cascade.
