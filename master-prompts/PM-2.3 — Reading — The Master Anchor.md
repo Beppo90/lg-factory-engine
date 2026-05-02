@@ -1,14 +1,37 @@
 ---
-version: 2.0
-last_verified: 2026-04-13
-session: 2
-fase_sena: "Apropiación"
-activity_type: "cognitiva"
+version: 3.0
+last_verified: 2026-05-02
+session: "S3"
+session_legacy_v2: 2
+tipo_bloque: "APROPIACION"
+bloque_id_referencia_canon_imarpor: "B1"
+rap_target_canon_imarpor: "RA1"
+dimension: "cognitiva"
 generates_evidence: true
-evidence_type: "Conocimiento"
+evidence_type_canon: "Conocimiento"
+codigo_canon_evidencia: "E1"
+criterio_canon_evaluado: "C01"
+instrumento_canon: "Cuestionario No 1"
 contributes_to_cuestionario: true
 cuestionario_skill: "Reading"
 cuestionario_points: 5
+status: v3.0 PARADIGM SHIFT · PM-2.3 hereda cascade Phase 1 v3.x (pm-2-0 v3.0 + pm-1-2 v4.2 + matriz v1.3) · emite Activity Card v3.0 canon Sergio (16 campos · descripcion multi-párrafo 200-600 palabras patrón panorama→orientación→equipos→práctica→cierre) · evidencia E1 anchor Reading C01 (Cuestionario No 1) · 7 validation_checks BLOQUEANTES · anti-prescriptive prompt operacional · 6 arquetipos v2.0 PRESERVADOS como REFERENCIA (LLM elige · canon Sergio "todos los arquetipos disponibles")
+v3_0_changes:
+  - "NEW REGLA 8 input cascade Phase 1 v3.x · consume pm-2-0 (S3 target) + pm-1-2.B1.story_a_reading + matriz v1.3 + universo PM-0 v3.2"
+  - "NEW REGLA 9 emisión Activity Card v3.0 canon Sergio · 16 campos schema completo"
+  - "NEW REGLA 10 descripcion multi-párrafo 200-600 palabras patrón canon (panorama→orientación instructor→equipos/lectura→práctica→cierre/socialización)"
+  - "NEW REGLA 11 evidencia obligatoria E1 C01 · tipo Conocimiento · técnica Preguntas · Cuestionario No 1 · APROPIACIÓN B1 RA1"
+  - "NEW REGLA 12 anti-prescriptive prompt operacional · libertad LLM en redacción descripción + selección arquetipo · canon estricto en heredancia"
+  - "NEW REGLA 13 7 validation_checks BLOQUEANTES (4 schema Activity Card v3.0 + 3 heredancia traceability)"
+  - "session: 2 (v2.0) → S3 (v3.0 · alineado con pm-2-0.session_blueprint canon CC 12 sesiones)"
+  - "activity_type: cognitiva → dimension: cognitiva (canon Sergio · Activity Card v3.0)"
+  - "evidence_type: Conocimiento → evidencias.tipo: Conocimiento (Activity Card v3.0)"
+  - "6 arquetipos v2.0 PRESERVADOS como REFERENCIA · LLM elige uno o combinación · canon Sergio 'todos los arquetipos disponibles'"
+v2_0_legacy_preserved:
+  - "6 arquetipos canon (TBLT CYCLE · COMPREHENSION STRATEGIES · INFORMATION GAP · COOPERATIVE · MULTIMODAL · HOTS FOCUS)"
+  - "Modelo de menú instructor elige arquetipo"
+  - "Texto Maestro (The Master Anchor Text) · ahora heredado de pm-1-2.B1.story_a_reading"
+  - "Estructura sesión legacy 2h directo + 0.5h autónomo (ahora session S3 con horas heredadas pm-2-0)"
 ---
 
 # PM-2.3: READING COMPREHENSION — THE MASTER ANCHOR & HOTS
@@ -597,3 +620,291 @@ activity_card:
 *Manual Clínico de Intervención Didáctica para la Comprensión Lectora*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+
+---
+
+## EXTENSIÓN v3.0 — PM-2.3 HEREDERO CASCADE PHASE 1 v3.x + ACTIVITY CARD v3.0 (2026-05-02)
+
+> [!warning] PARADIGM SHIFT canonizado · Sergio Cortés decisión arquitectónica 2026-05-02
+>
+> PM-2.3 v2.0 era manual clínico con 6 arquetipos · instructor elegía. v3.0 canoniza PM-2.3 como **emisor de Activity Card v3.0** que HEREDA literal de cascade Phase 1 v3.x (pm-2-0 v3.0 + pm-1-2 v4.2 + matriz v1.3) y produce evidencia E1 anchor Reading C01.
+>
+> **6 arquetipos v2.0 PRESERVADOS como REFERENCIA** · LLM elige el arquetipo dominante o combinación · canon Sergio "todos los arquetipos disponibles para todos los PM".
+
+### REGLA 8 — INPUT CASCADE PHASE 1 v3.x
+
+PM-2.3 v3.0 consume como input PRIMARIO:
+
+```json
+{
+  "pm_2_0_ref": "pm-2-0.json (v3.0+ · session_blueprint heredero · sesión target S3 APROPIACIÓN B1 RA1)",
+  "pm_1_2_ref": "pm-1-2.json (v4.2+ · sub_bloques_tripartitos[1].story_a_reading · _produces_evidencia: E1 · _consumed_by_pm: PM-2.3)",
+  "pm_0_0_matriz_ref": "pm-0-0-matriz-alineada.json (v1.2+ · RA1 saberes_conceptos + criterios C01+C02+C07)",
+  "pm_0_context_ref": "pm-0-context.json (v3.2+ · universo banana cold chain · personajes Manuel/Carolina/Mariana/Lim/Yurlenis)"
+}
+```
+
+**PM-2.3 NO inventa** Story A Reading · LO HEREDA literal de pm-1-2.B1.story_a_reading. PM-2.3 NO redistribuye sesión · LA HEREDA de pm-2-0 (S3 canon C01).
+
+### REGLA 9 — EMISIÓN ACTIVITY CARD v3.0 CANON SERGIO
+
+PM-2.3 v3.0 DEBE emitir Activity Card v3.0 con los 16 campos canon Sergio (ver Activity Card Schema §11.2):
+
+```yaml
+activity_card:
+  pm_id: "PM-2.3"
+  pm_name: "Reading Comprehension — The Master Anchor & HOTS"
+  session: "S3"                                # heredado pm-2-0
+  tipo_bloque: "APROPIACION"                   # heredado pm-2-0
+  bloque_id_referencia: "B1"                   # heredado pm-2-0
+  rap_target: "RA1"                            # heredado pm-1-1.B1.rap_target (vía pm-2-0)
+  numero_actividad: N                          # secuencial acumulado guía (LLM asigna · típicamente 5-7 en S3)
+
+  dimension: "cognitiva"                       # canon PM-2.3 · Reading es cognitiva
+  enunciado: "Comprender [story_a.titulo] mediante [arquetipo elegido] aplicando estrategia SQ3R"
+                                                # V+O+C ≤200 chars · LLM redacta desde universo + arquetipo
+  descripcion: |                              # multi-párrafo 200-600 palabras patrón canon Sergio
+    [PANORAMA: qué se identifica/comprende del texto técnico + contexto operacional]
+
+    [ORIENTACIÓN INSTRUCTOR: qué explica antes (concepto · estrategia SQ3R · vocabulario clave)]
+
+    [CONFORMACIÓN EQUIPOS + LECTURA: cómo se organizan + acceso al Story A Reading heredado de pm-1-2]
+
+    [PRÁCTICA/COMPRENSIÓN: qué hacen con el texto · arquetipo elegido (TBLT/Comprehension Strategies/etc.)]
+
+    [CIERRE/SOCIALIZACIÓN: qué entregan + Cuestionario No 1 (E1 evidencia) + socialización aprendizajes]
+
+  ambiente: "Aula con proyector + computadores con acceso a Moodle"
+                                                # texto operacional · LLM ajusta según contexto programa
+  estrategias_didacticas_activas:               # array · LLM elige según arquetipo
+    - "Content-Based Learning"                  # típico arquetipo A TBLT CYCLE
+    # o "Aprendizaje colaborativo" (arquetipo D COOPERATIVE)
+    # o "Aprendizaje basado en problemas" (arquetipo F HOTS)
+  tecnicas_didacticas:                          # array · LLM elige según arquetipo
+    - "Investigación guiada"                    # típico arquetipo B
+    # o "Jigsaw" (arquetipo D)
+    # o "SQ3R guided reading" (arquetipo A)
+  materiales_formacion:                         # array · típico Reading
+    - "Proyector"
+    - "Computadores con acceso a Moodle"
+    - "Plantilla SQ3R impresa"
+    - "Texto Story A impreso (5 copias por equipo)"
+  material_apoyo:                               # array de objetos · heredado pm-1-2.B1.story_a_reading.fuente
+    - descripcion: "Story A Reading: [titulo heredado pm-1-2]"
+      link: "[URL fuente auténtica heredada pm-1-2]"
+
+  evidencias:
+    aplica: true                               # CANON PM-2.3 APROPIACIÓN B1 RA1 · siempre genera E1
+    tipo: "Conocimiento"                        # canon Reading anchor
+    nombre: "[Nombre legible específico · ej 'Comprensión lectora del artículo Maersk Reefer Vessel Inspection']"
+    tecnica_evaluacion: "Preguntas"
+    instrumento_numero: 1
+    instrumento_tipo: "Cuestionario"
+    codigo_canon: "E1"                          # heredado pm-1-2.B1.story_a_reading._produces_evidencia
+    criterio_canon_evaluado: "C01"              # heredado pm-2-0.evidencias_secuencia_temporal.E1.criterio_canon
+
+  duracion_horas: [4 típico · heredado pm-2-0.session_blueprint.S3.actividades_planeadas[story_a_reading].horas]
+
+  _anclaje_matriz_heredado:                    # LITERAL COPY de pm-1-2.B1.story_a_reading._anclaje_matriz
+    rap_target: "RA1"
+    saberes_que_demanda: [...]                  # subset 8 saberes RA1 que demanda este Story A
+    criterios_canon_que_evalua: ["C01"]
+    saberes_proceso_movilizados: ["IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS GENERADA EN EL INTERCAMBIO ORAL Y/O ESCRITO"]
+
+  _produces_evidencia: "E1"                    # literal copy
+  _consumed_by_pm: "PM-2.3"                    # self-reference
+  _ref_pm12_path: "sub_bloques_tripartitos[1].story_a_reading"
+  _ref_pm20_session: "S3"
+```
+
+### REGLA 10 — DESCRIPCIÓN MULTI-PÁRRAFO PATRÓN CANON SERGIO
+
+La `descripcion` debe seguir el patrón pedagógico canon de los 3 ejemplos Sergio (NO template literal · GUÍA estructural · libertad LLM):
+
+```
+Párrafo 1 (PANORAMA · 30-50 palabras):
+  Qué se comprende del texto técnico Story A + contexto operacional banana cold chain
+
+Párrafo 2 (ORIENTACIÓN INSTRUCTOR · 40-80 palabras):
+  Qué explica el instructor antes (concepto + estrategia de comprensión + vocabulario clave del RAP)
+
+Párrafo 3 (CONFORMACIÓN EQUIPOS + LECTURA · 50-100 palabras):
+  Cómo se organizan los aprendices + cómo acceden al Story A heredado + lectura inicial (silenciosa o en voz alta)
+
+Párrafo 4 (PRÁCTICA/COMPRENSIÓN · 50-150 palabras):
+  Qué hacen con el texto según arquetipo elegido (TBLT task / Comprehension strategies / Information gap / etc.)
+  Referencia explícita a Story A heredado + activación gramática + identificación key vocabulary RA1
+
+Párrafo 5 (CIERRE/SOCIALIZACIÓN · 30-80 palabras):
+  Aplicación Cuestionario No 1 (E1 · evidencia formal · 5 puntos) + socialización aprendizajes + bridge a S4 (Writing E2)
+```
+
+**Voz:** 3ª persona ("el instructor orientará..." · "los aprendices identificarán..." · "se conformarán equipos de 3...").
+
+**Universo:** contextualizado al universo del programa (banana cold chain · CML port · personajes heredados de pm-0-context.json).
+
+**Multi-párrafo:** saltos `\n\n` preservados literal en render.
+
+### REGLA 11 — EVIDENCIA OBLIGATORIA E1 C01 ANCHOR READING
+
+PM-2.3 SIEMPRE genera evidencia formal E1 cuando opera en su sesión canon S3 (anchor Reading). Esto es CANON estricto:
+
+- `evidencias.aplica` = **true** (no opcional)
+- `evidencias.tipo` = "Conocimiento" (canon Reading anchor SENA)
+- `evidencias.tecnica_evaluacion` = "Preguntas" (canon Reading)
+- `evidencias.instrumento_numero` = **1** (Cuestionario No 1 canon PM-4.1)
+- `evidencias.instrumento_tipo` = "Cuestionario"
+- `evidencias.codigo_canon` = **"E1"** (heredado pm-1-2)
+- `evidencias.criterio_canon_evaluado` = **"C01"** (heredado pm-2-0)
+- `evidencias.nombre` = LIBERTAD LLM legible específico (ej "Comprensión lectora del artículo IMARPOR Reefer Vessel Inspection")
+
+**Excepción:** PM-2.3 puede ser invocado en sesiones APROPIACIÓN scaffold (e.g., S7 RA3 según pm-2-0.S7) donde NO produce evidencia formal · en ese caso `evidencias.aplica = false` y campos null. Esto se determina por `_ref_pm12_path` heredado:
+- Si `_ref_pm12_path` apunta a `story_a_reading` con `_produces_evidencia: "E1"` → SÍ genera (S3 canon)
+- Si `_ref_pm12_path` apunta a `story_a_reading` con `_produces_evidencia: null` → NO genera (S7 scaffold canon)
+
+### REGLA 12 — PROMPT OPERACIONAL ANTI-PRESCRIPTIVE (Anti-patrón #16)
+
+El orchestrator que dispatchea Agent ejecutando PM-2.3 v3.0 DEBE:
+
+SÍ pasar al Agent:
+- Master prompt PM-2.3 v3.0 (REGLAS 8-13 EXTENSIÓN v3.0)
+- pm-2-0.json v3.0 (session_blueprint · indicar S3 target)
+- pm-1-2.json v4.2 (recurso primario: B1.story_a_reading + B1 contexto completo)
+- matriz v1.3 (RA1 saberes + C01-C07 canon)
+- pm-0-context.json v3.2 (universo banana cold chain · personajes)
+- Schema Activity Card v3.0 (16 campos · §11 del Schema)
+- 3 ejemplos canon Sergio (referencia estructural · NO template literal)
+- 7 validation_checks BLOQUEANTES
+
+NO pasar al Agent:
+- Descripción pre-redactada (LLM redacta libre siguiendo patrón canon)
+- Arquetipo pre-decidido (LLM elige uno o combinación de los 6)
+- Materiales hardcoded (LLM cura según contexto)
+- Nombre de evidencia pre-redactado
+
+**LIBERTAD LLM:**
+- Selección arquetipo de los 6 (TBLT/Comprehension/Information Gap/Cooperative/Multimodal/HOTS) · puede combinar
+- Redacción `descripcion` siguiendo patrón canon (panorama→orientación→equipos→práctica→cierre)
+- Selección estrategias_didacticas + tecnicas_didacticas según arquetipo
+- Materiales formación específicos
+- `nombre` específico legible de evidencia (contextualizado a Story A heredado)
+- Numeración secuencial (LLM asigna basado en posición en guía)
+
+**SIN LIBERTAD (canon estricto):**
+- Schema 16 campos Activity Card v3.0
+- evidencias canon (E1 · C01 · Cuestionario No 1) cuando es S3 anchor
+- Heredancia traceability literal (5 campos `_*`)
+- saberes_que_demanda ⊆ matriz RA1 · criterios_canon_que_evalua ⊆ {C01, C02, C07}
+
+### REGLA 13 — VALIDATION POST-GENERATION · 7 CHECKS BLOQUEANTES
+
+```jsonc
+"validation_checks": [
+  // 4 schema Activity Card v3.0:
+  {"id": 1, "name": "schema_activity_card_v3_completo", "status": "PASS|FAIL", "evidence": "16 campos canon"},
+  {"id": 2, "name": "descripcion_multipárrafo_200_600_palabras", "status": "...", "evidence": "..."},
+  {"id": 3, "name": "evidencias_canonical_E1_C01", "status": "...", "evidence": "tipo=Conocimiento·instrumento=1"},
+  {"id": 4, "name": "render_no_aplica_ausente", "status": "...", "evidence": "S3 anchor genera evidencia · 'No aplica' NO debe aparecer"},
+  // 3 heredancia traceability:
+  {"id": 5, "name": "heredancia_pm12_literal", "status": "...", "evidence": "_anclaje_matriz_heredado matches pm-1-2.B1.story_a_reading"},
+  {"id": 6, "name": "heredancia_pm20_sesion_correcta", "status": "...", "evidence": "session=S3 · tipo_bloque=APROPIACION · bloque_ref=B1"},
+  {"id": 7, "name": "saberes_subset_matriz_v13", "status": "...", "evidence": "saberes_que_demanda ⊆ matriz.RA1.saberes_conceptos"}
+]
+```
+
+Si CUALQUIER check FAIL · output marcado `enriched: false` · BLOQUEANTE para Wave 2 (PM-2.4 cascade).
+
+### REGLA 14 — ESTRUCTURA OUTPUT pm-2-3.json v3.0
+
+```jsonc
+{
+  "pm_id": "PM-2.3",
+  "pm_name": "Reading Comprehension — The Master Anchor & HOTS",
+  "pm_version": "3.0",
+  "run_id": "...",
+  "generated_date": "...",
+
+  "_pm20_ref": "pm-2-0.json (v3.0+ · S3 target)",
+  "_pm12_ref": "pm-1-2.json (v4.2+ · B1.story_a_reading)",
+  "_pm00_matriz_ref": "pm-0-0-matriz-alineada.json (v1.2+)",
+  "_pm0_context_ref": "pm-0-context.json (v3.2+)",
+
+  "arquetipo_seleccionado": "TBLT CYCLE | COMPREHENSION STRATEGIES | INFORMATION GAP | COOPERATIVE | MULTIMODAL | HOTS FOCUS | combinación",
+  "arquetipo_rationale": "...",   // LLM justifica selección
+
+  "activity_card": { /* 16 campos schema v3.0 (§11.2 Activity Card Schema) */ },
+
+  "validation_checks": [...],
+  "enriched": true|false
+}
+```
+
+### REGLA 15 — RELACIÓN CON OTROS PROMPTS v3.0
+
+| Relación | Prompt | Cambio v3.0 |
+|----------|--------|-------------|
+| **Consume de (NEW · CRÍTICO)** | PM-2.0 v3.0 | session_blueprint heredero (S3 target) |
+| **Consume de (NEW · CRÍTICO)** | PM-1.2 v4.2+ | B1.story_a_reading literal (Story A · ficha curación · _produces_evidencia E1) |
+| **Consume de** | PM-0.0 v1.2+ | matriz RA1 saberes + criterios canon C01-C07 |
+| **Consume de** | PM-0 v3.2+ | universo banana cold chain + personajes |
+| **Alimenta a** | PM-2.5 | key_vocabulary del Story A (vocab scaffold scaffold S2 + reinforcement S3) |
+| **Alimenta a** | PM-2.11 | Activity Card v3.0 → cols 6-11 GFPI-F-134 |
+| **Alimenta a** | PM-3.6 | Activity Card v3.0 → render learner-readable GFPI-F-135 |
+| **Alimenta a** | PM-4.1 | evidencias.{tipo, nombre, instrumento} → Cuestionario No 1 (E1) |
+| **Alimenta a** | PM-4.2 | quiz_skill: Reading + 5 ítems → Cuestionario consolidado E6 |
+
+### REGLA 16 — DEPRECATION PATH v2.0 → v3.0
+
+Programas con `pm-2-3.json` v2.0 (sin Activity Card v3.0 · sin heredancia · session: 2 hardcoded):
+- KEEP archivos legacy en run dir como `*.legacy-pre-v3-0`
+- Generar nuevo pm-2-3.json v3.0 cuando se re-run el programa post-cascade Phase 1 v3.x
+- Run resultante puede tener AMBOS: legacy v2.0 + v3.0
+
+---
+
+## ESTRUCTURA OPERACIONAL v3.0 (resumen ejecutivo)
+
+```
+pm-2-0.json v3.0 (session_blueprint · S3 APROPIACIÓN B1 RA1 · actividad story_a_reading)
+  +
+pm-1-2.json v4.2 (B1.story_a_reading · _produces_evidencia: E1 · _consumed_by_pm: PM-2.3)
+  +
+matriz v1.3 (RA1 8 saberes + C01-C07 canon)
+  +
+pm-0-context v3.2 (universo banana cold chain)
+  ↓
+PM-2.3 v3.0 dispatcher (Agent · libertad LLM en redacción · canon estricto en heredancia)
+  ↓
+pm-2-3.json v3.0
+  ├─ arquetipo_seleccionado + rationale (LLM elige de los 6 v2.0)
+  ├─ activity_card v3.0 (16 campos canon Sergio · descripcion multi-párrafo · E1 C01)
+  └─ validation_checks (7 BLOQUEANTES)
+  ↓
+Activity Card v3.0 → consumida por PM-2.5 + PM-2.11 + PM-3.6 + PM-4.1 + PM-4.2
+```
+
+---
+
+## CASO OPERACIONAL ESPERADO IMARPOR-V2 (Step 1.5.PILOT.B dispatch)
+
+**Input:**
+- pm-2-0.json v3.0 (S3 target · APROPIACIÓN B1 RA1 · actividad story_a_reading)
+- pm-1-2.json v4.2 v2 (B1.story_a_reading "Maersk Reefer Vessel Inspection" · 215p A1.2 · _produces E1 → PM-2.3)
+- matriz v1.3 (RA1: 8 saberes UNIT 1+UNIT 2 · canon C01+C02+C07)
+- universo PM-0 v3.2 (banana cold chain · CML CARIBBEAN STAR · Manuel/Carolina/Mariana)
+
+**Output esperado pm-2-3.json v3.0:**
+- arquetipo_seleccionado: "TBLT CYCLE" o "COMPREHENSION STRATEGIES" (LLM decide)
+- activity_card v3.0 con:
+  - dimension: "cognitiva"
+  - enunciado: "Comprender artículo Maersk Reefer Vessel Inspection mediante estrategia SQ3R aplicada a partes del barco" (≤200 chars V+O+C)
+  - descripcion: 200-600 palabras patrón canon Sergio · contextualizado banana cold chain
+  - evidencias.aplica=true · tipo=Conocimiento · nombre="Comprensión lectora del artículo Maersk..." · instrumento No 1 Cuestionario · codigo E1 · criterio C01
+  - heredancia traceability completa (saberes RA1 · ref_pm12 path · ref_pm20 S3)
+- 7/7 validation_checks PASS
+- enriched: true
+
+---
+
+*PM-2.3 v3.0 · Reading Anchor Heredero · Activity Card v3.0 canon Sergio · evidencia E1 C01 · 6 arquetipos v2.0 PRESERVADOS para libertad LLM*
+*Sergio Cortés decisión arquitectónica 2026-05-02 · cascade Step 1.5.PILOT IMARPOR-V2*
