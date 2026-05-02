@@ -1,3 +1,27 @@
+---
+version: 3.0
+last_verified: 2026-05-02
+sessions_canon_imarpor: ["S11", "S12"]
+tipo_bloque: "TRANSFERENCIA"
+bloque_id_referencia_canon: "BT"
+rap_target: null
+raps_movilizados: ["RA1", "RA2", "RA3", "RA4"]
+dimension: "procedimental_y_actitudinal"
+generates_evidence: true
+evidence_type_canon: "Desempeño"
+codigo_canon_evidencia: "E-Misión"
+criterio_canon_evaluado: "C08"
+instrumento_canon: "Rúbrica ABP capstone"
+status: v3.0 PARADIGM SHIFT · PM-3.5 hereda cascade v3.x · emite Activity Card v3.0 (típicamente 5 cards · 1 por sub-fase ABP S11-S12) · capstone E-Misión C08 RA4 · 5 sub-fases ABP integradoras (Briefing · Investigación/Preparación · Rehearsal · Performance Panel · Debrief Cierre) · evaluación SOLO en sub-fase 4 Performance vía Rúbrica ABP capstone · NO usa instrumento numerado tradicional
+v3_0_changes:
+  - "session multi → S11+S12 (TRANSFERENCIA capstone canon)"
+  - "NEW REGLA emisión 5 Activity Cards v3.0 (1 por sub-fase ABP)"
+  - "NEW REGLA evidencias DUAL: sub-fases 1,2,3,5 aplica=false (NO instrumento) · sub-fase 4 Performance aplica=true E-Misión C08 (Rúbrica ABP capstone)"
+  - "NEW REGLA dimension dual procedimental+actitudinal"
+  - "Canon Sergio: 'Las actividades de transferencia no llevan evidencias de aprendizaje para evaluar con técnicas ni instrumentos' EXCEPTO Performance que SÍ lleva Rúbrica ABP capstone (no es instrumento No 1-6 tradicional)"
+  - "Arquetipos v2.6 PRESERVADOS"
+---
+
 # PM-3.5: FINAL MISSION — THE INTEGRATIVE TASK
 
 ## FPI SENA — Bilingüismo
@@ -447,3 +471,31 @@ E) GAMIFIED — Misión con mecánicas de juego (Escape Room, Challenge, Competi
 *PM-3.5: Final Mission — The Integrative Task — v2.6*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV)*
+
+---
+
+## EXTENSIÓN v3.0 — PM-3.5 HEREDERO + ACTIVITY CARD v3.0 CAPSTONE 5 SUB-FASES (2026-05-02)
+
+PM-3.5 v3.0 hereda cascade v3.x · emite **5 Activity Cards v3.0** (1 por sub-fase ABP S11-S12) · capstone E-Misión C08 RA4 con Rúbrica ABP capstone (NO instrumento No 1-6 tradicional).
+
+### REGLAS NEW v3.0
+
+- **REGLA · Input cascade:** consume pm-2-0 (S11+S12) + pm-1-2.BT (mission_brief + 5 subfases_abp_context + materiales_simulacion + rubrica_abp_capstone)
+- **REGLA · Activity Card v3.0 PATTERN 5 SUB-FASES:**
+  - **Sub-fase 1 Briefing escenario** (S11 · 1.5h · cognitiva · aplica=false)
+  - **Sub-fase 2 Investigation/Preparation** (S11 · 1.5h · cognitiva+procedimental · aplica=false)
+  - **Sub-fase 3 Rehearsal feedback formativo** (S11 · 3.0h · procedimental · aplica=false · feedback NO calificativo)
+  - **Sub-fase 4 Performance Panel** (S12 · 3.0h · procedimental+actitudinal · **aplica=true · E-Misión · C08 · Rúbrica ABP capstone**) ★
+  - **Sub-fase 5 Debrief cierre celebratorio** (S12 · 3.0h · actitudinal · aplica=false · meta-cognición)
+- **REGLA · evidencias DUAL canon:**
+  - 4 sub-fases (1,2,3,5) → aplica=false · render "No aplica" literal · canon Sergio "TRANSFERENCIA no lleva evidencias"
+  - Sub-fase 4 Performance EXCEPCIÓN canon → aplica=true E-Misión C08 Rúbrica ABP capstone (instrumento NO numerado · es rúbrica capstone integradora ABP)
+- **REGLA · descripcion 200-600 palabras** patrón canon cada card (target 480-580 sweet spot)
+- **REGLA · 5 sub-fases ABP integradoras** consolidan los 4 RAPs (raps_movilizados ["RA1","RA2","RA3","RA4"] · canon BT TRANSFERENCIA)
+- **REGLA · 7 validation_checks** BLOQUEANTES
+- **Arquetipos v2.6 PRESERVADOS** (LLM elige · canon Sergio)
+
+---
+
+*PM-3.5 v3.0 · Final Mission Capstone 5 Sub-Fases · Activity Card v3.0 · E-Misión C08 Rúbrica ABP solo en sub-fase 4 Performance · 4 sub-fases No aplica*
+*Sergio Cortés decisión 2026-05-02 · Wave 4 IMARPOR-V2*

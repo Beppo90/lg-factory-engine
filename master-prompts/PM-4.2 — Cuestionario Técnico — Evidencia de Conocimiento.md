@@ -1,3 +1,32 @@
+---
+version: 3.0
+last_verified: 2026-05-02
+sessions_canon_imarpor: ["S4", "S6"]
+session_legacy_v2: 6
+tipo_bloque: "APROPIACION"
+session_anchor_canon: "S6"
+sessions_consolidacion_intra_apropiacion: ["S4"]
+bloque_id_referencia_canon: "B2"
+bloques_contributors: ["B1", "B2", "B3", "B4"]
+raps_target_4way: ["RA1", "RA2", "RA3", "RA4"]
+dimension: "cognitiva"
+generates_evidence: true
+evidence_type_canon: "Conocimiento"
+codigo_canon_evidencia: "E6"
+criterio_canon_evaluado: "C07"
+instrumento_canon: "Cuestionario No 6"
+puntos_totales: 25
+distribucion_puntos: "5 skills × 5 puntos (Reading + Writing + Listening + Vocabulary + Grammar)"
+status: v3.0 PARADIGM SHIFT · PM-4.2 hereda cascade v3.x · emite Activity Card v3.0 (típicamente 2 cards · S4 preparación cara RA1 + S6 anchor cuestionario consolidado E6) · 4-way overlap (consume contributors B1-B4 vocab+grammar+functions) · 25 puntos · ≥70% PASS
+v3_0_changes:
+  - "session 6 → multi-S [S4 preparación + S6 anchor]"
+  - "NEW REGLA emisión 2 Activity Cards v3.0"
+  - "NEW REGLA evidencias DUAL: S4 preparación aplica=false (scaffold) · S6 anchor aplica=true E6 C07 Cuestionario No 6"
+  - "NEW REGLA dimension cognitiva ambas (test consolidación · NO procedimental)"
+  - "NEW REGLA 4-way overlap C07: consume vocab PM-2.5 (5 ítems) + grammar PM-2.10 (5 ítems) + reading PM-2.3 (5 ítems) + writing PM-2.4 (5 ítems) + listening PM-2.6 (5 ítems) = 25 puntos · 5 skills × 5 pts"
+  - "Frontmatter v2.0 PRESERVADO en sección FRONTMATTER (legacy)"
+---
+
 # PM-4.2: CUESTIONARIO CONSOLIDADO S6 — ENSAMBLADOR
 
 ## FPI SENA — Bilingüismo
@@ -455,3 +484,25 @@ Para CADA sección, compara con lo que se trabajó en S2-S5 y asegúrate de que 
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
 *Actualizado: 2026-04-13 (v2.0)*
+
+---
+
+## EXTENSIÓN v3.0 — PM-4.2 HEREDERO + ACTIVITY CARD v3.0 CONSOLIDACIÓN E6 (2026-05-02)
+
+PM-4.2 v3.0 hereda cascade v3.x · emite **2 Activity Cards v3.0** (S4 preparación cara RA1 + S6 anchor cuestionario consolidado E6 4-way) · 25 puntos · 5 skills × 5 pts.
+
+### REGLAS NEW v3.0
+
+- **REGLA · Input cascade:** consume pm-2-0 (S4+S6) + pm-1-2.B1.task_consolidacion_C07_cara_RA1 + pm-1-2.B2.task_consolidacion_E6 + pools de PM-2.3 (5 ítems Reading) + PM-2.4 (5 Writing) + PM-2.5 (5 Vocabulary) + PM-2.6 (5 Listening) + PM-2.10 (5 Grammar)
+- **REGLA · Activity Card v3.0 DUAL:**
+  - **S4 preparación cara RA1** (B1 · 1.0h · cognitiva · aplica=false · scaffold pre-consolidación · render "No aplica")
+  - **S6 anchor consolidado** (B2 · 3.0h · cognitiva · aplica=true · tipo Conocimiento · técnica Preguntas · instrumento No 6 Cuestionario · codigo_canon E6 · criterio C07 4-way overlap)
+- **REGLA · 25 puntos canon:** 5 skills × 5 puntos exactos · Reading + Writing + Listening + Vocabulary + Grammar · ≥70% PASS
+- **REGLA · 4-way overlap C07:** consume contributors B1+B2+B3+B4 (todos los RAPs) · ítems extraídos de pools acumulados de PM-2.3/2.4/2.5/2.6/2.10
+- **REGLA · descripcion 200-600 palabras** patrón canon cada card (target 480-580)
+- **REGLA · 7 validation_checks** BLOQUEANTES
+
+---
+
+*PM-4.2 v3.0 · Cuestionario Consolidado S6 · Activity Card v3.0 DUAL · S4 preparación + S6 anchor E6 C07 · 25 puntos · 5 skills × 5 pts*
+*Sergio Cortés decisión 2026-05-02 · Wave 4 IMARPOR-V2*
