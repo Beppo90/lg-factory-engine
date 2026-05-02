@@ -1,14 +1,26 @@
 ---
-version: 2.0
-last_verified: 2026-04-13
-session: 2
-fase_sena: "Apropiación"
-activity_type: "cognitiva"
+version: 3.0
+last_verified: 2026-05-02
+sessions_canon_imarpor: ["S2", "S5", "S7", "S9"]
+session_legacy_v2: 2
+tipo_bloque: "APROPIACION"
+bloques_id_referencia_imarpor: ["B1", "B2", "B3", "B4"]
+raps_target_imarpor: ["RA1", "RA2", "RA3", "RA4"]
+dimension: "cognitiva"
 generates_evidence: false
 evidence_type: null
 contributes_to_cuestionario: true
 cuestionario_skill: "Vocabulary"
 cuestionario_points: 5
+status: v3.0 PARADIGM SHIFT · PM-2.5 hereda cascade Phase 1 v3.x · emite Activity Card v3.0 (típicamente 4 cards · una por sesión vocab scaffold canon S2/S5/S7/S9) · scaffold cognitivo NO produce evidencia formal · contribuye E6 cuestionario consolidado S6
+v3_0_changes:
+  - "session 2 (v2.0) → sessions_canon_imarpor [S2,S5,S7,S9] (alineado pm-2-0)"
+  - "NEW REGLA heredancia cascade Phase 1 v3.x (pm-2-0 multi-S + pm-1-2.Bn.key_vocabulary_per_rap por RAP)"
+  - "NEW REGLA emisión N Activity Cards v3.0 (1 por sesión scaffold · típico 4)"
+  - "NEW REGLA evidencias canon: aplica=false SIEMPRE (scaffold · NO produce E1-E5 · contribuye a E6)"
+  - "NEW REGLA dimension cognitiva (vocab scaffolding)"
+  - "NEW REGLA 20 vocab por RAP heredados literal de pm-1-2.Bn.key_vocabulary_per_rap"
+  - "Arquetipos v2.0 PRESERVADOS como REFERENCIA"
 ---
 
 # PM-2.5: VOCABULARY, LITERACY & SCENARIO SETUP
@@ -300,3 +312,29 @@ activity_card:
 *Informe Clínico de Actividades de Lectoescritura, Vocabulario y Escenario*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+
+---
+
+## EXTENSIÓN v3.0 — PM-2.5 HEREDERO CASCADE PHASE 1 v3.x + ACTIVITY CARD v3.0 (2026-05-02)
+
+PM-2.5 v3.0 es **scaffold cognitivo multi-sesión** · típicamente emite N Activity Cards v3.0 (una por sesión scaffold canon · IMARPOR S2/S5/S7/S9 · 1 por RAP). NO produce evidencia formal · contribuye a E6 cuestionario consolidado S6.
+
+### REGLAS NEW v3.0
+
+- **REGLA · Input cascade:** consume pm-2-0 (multi-sesión) + pm-1-2.Bn.key_vocabulary_per_rap (4 RAPs · 20 vocab por RAP)
+- **REGLA · Activity Card v3.0:** N cards (típico 4 IMARPOR) · cada una `dimension: cognitiva` · `enunciado` V+O+C ≤200 chars · `descripcion` 200-600 palabras patrón canon (panorama→orientación→equipos→vocab práctica→cierre)
+- **REGLA · evidencias canon:** `aplica=false` SIEMPRE (scaffold · NO produce E1-E5) · render "No aplica" literal · contribuye a E6 (5 ítems Vocabulary Cuestionario No 6 S6)
+- **REGLA · 20 vocab por RAP:** heredados literal de pm-1-2.Bn.key_vocabulary_per_rap · NO inventar
+- **REGLA · Heredancia traceability:** `_anclaje_matriz_heredado` literal copy + `_produces_evidencia: null`
+- **REGLA · 7 validation_checks** BLOQUEANTES
+- **Arquetipos v2.0 PRESERVADOS** como REFERENCIA
+
+### Caso operacional esperado IMARPOR-V2
+
+- Input: pm-2-0 (S2 RA1 + S5 RA2 + S7 RA3 + S9 RA4 · 4 actividades scaffold) + pm-1-2 (4 sets de 20 vocab cada uno)
+- Output esperado: 4 Activity Cards v3.0 (una por RAP) · evidencias.aplica=false en todas · 7/7 PASS
+
+---
+
+*PM-2.5 v3.0 · Vocabulary Scaffold Heredero · Activity Card v3.0 canon Sergio · NO produce evidencia formal · contribuye E6*
+*Sergio Cortés decisión arquitectónica 2026-05-02 · cascade Wave 2 IMARPOR-V2*

@@ -1,14 +1,32 @@
 ---
-version: 2.0
-last_verified: 2026-04-13
-session: 4
-fase_sena: "Apropiación"
-activity_type: "procedimental"
-generates_evidence: true
-evidence_type: "Desempeño"
+version: 3.0
+last_verified: 2026-05-02
+sessions_canon_imarpor: ["S3", "S5", "S7", "S9"]
+session_anchor_S5: "produce E3 C03 (anchor)"
+sessions_scaffold: ["S3", "S7", "S9"]
+session_legacy_v2: 4
+tipo_bloque: "APROPIACION"
+bloque_anchor_canon: "B2"
+rap_target_anchor: "RA2"
+dimension_anchor: "procedimental"
+dimension_scaffold: "cognitiva"
+generates_evidence_anchor: true
+generates_evidence_scaffold: false
+evidence_type_canon: "Desempeño"
+codigo_canon_evidencia_anchor: "E3"
+criterio_canon_evaluado_anchor: "C03"
+instrumento_canon_anchor: "Lista de Verificación No 3"
 contributes_to_cuestionario: true
 cuestionario_skill: "Listening"
 cuestionario_points: 5
+status: v3.0 PARADIGM SHIFT · PM-2.6 hereda cascade Phase 1 v3.x · emite Activity Card v3.0 (típicamente 4 cards · 1 anchor S5 produce E3 + 3 scaffolds S3/S7/S9 NO producen) · pattern multi-modal anchor+scaffolds según _ref_pm12_path._produces_evidencia
+v3_0_changes:
+  - "session 4 (v2.0) → multi-S [S3,S5,S7,S9] (alineado pm-2-0 · S5 anchor + S3/S7/S9 scaffolds)"
+  - "NEW REGLA heredancia cascade Phase 1 v3.x · cada actividad determina aplica según _produces_evidencia heredado"
+  - "NEW REGLA emisión N Activity Cards v3.0 (típico 4 IMARPOR · 1 anchor + 3 scaffolds)"
+  - "NEW REGLA evidencias canon DUAL: anchor S5 aplica=true E3 C03 Lista Verificación No 3 · scaffolds aplica=false"
+  - "NEW REGLA dimension dual: anchor procedimental · scaffolds cognitiva"
+  - "Arquetipos v2.0 PRESERVADOS como REFERENCIA"
 ---
 
 # PM-2.6: LISTENING COMPREHENSION — THE AUDITORY ANCHOR
@@ -609,3 +627,31 @@ activity_card:
 *Manual Clínico de Actividades para el Desarrollo de la Comprensión Auditiva*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+
+---
+
+## EXTENSIÓN v3.0 — PM-2.6 HEREDERO CASCADE PHASE 1 v3.x + ACTIVITY CARD v3.0 (2026-05-02)
+
+PM-2.6 v3.0 hereda cascade Phase 1 v3.x · emite Activity Card v3.0 con **pattern dual anchor+scaffolds** · típicamente N cards (1 anchor S5 produce E3 + N-1 scaffolds que NO producen evidencia formal).
+
+### REGLAS NEW v3.0 (pattern DUAL · más complejo que PM-2.3/2.4)
+
+- **REGLA · Input cascade:** consume pm-2-0 (multi-S) + pm-1-2.Bn.story_b_listening (varios bloques)
+- **REGLA · Activity Card v3.0 DUAL:**
+  - **Anchor S5 (B2 RA2):** `dimension: procedimental` · `evidencias.aplica=true` · `tipo: "Desempeño"` · `tecnica_evaluacion: "Observación"` · `instrumento_numero: 3` · `instrumento_tipo: "Lista de Chequeo"` · `codigo_canon: "E3"` · `criterio_canon_evaluado: "C03"`
+  - **Scaffolds S3/S7/S9:** `dimension: cognitiva` · `evidencias.aplica=false` · campos null · render "No aplica" literal
+- **REGLA · Determinación anchor vs scaffold:** lectura de `_produces_evidencia` heredado de pm-2-0.actividad target. Si `"E3"` → anchor S5. Si `null` → scaffold.
+- **REGLA · descripcion 200-600 palabras patrón canon** (target 480-580 sweet spot)
+- **REGLA · Heredancia traceability:** `_anclaje_matriz_heredado` literal copy de pm-1-2.Bn.story_b_listening
+- **REGLA · 7 validation_checks** BLOQUEANTES (con check 3 dual: anchor → aplica=true E3 · scaffold → aplica=false)
+- **Arquetipos v2.0 PRESERVADOS** como REFERENCIA
+
+### Caso operacional esperado IMARPOR-V2
+
+- Input: pm-2-0 4 actividades (S3 scaffold RA1 + S5 anchor RA2 E3 + S7 scaffold RA3 + S9 scaffold RA4)
+- Output esperado: 4 Activity Cards v3.0 · 1 anchor (E3 C03) + 3 scaffolds (No aplica) · 7/7 PASS
+
+---
+
+*PM-2.6 v3.0 · Listening Anchor+Scaffolds Heredero · Activity Card v3.0 canon Sergio · pattern DUAL · evidencia E3 C03 anchor S5 + scaffolds S3/S7/S9*
+*Sergio Cortés decisión arquitectónica 2026-05-02 · cascade Wave 2 IMARPOR-V2*

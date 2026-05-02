@@ -1,14 +1,29 @@
 ---
-version: 2.0
-last_verified: 2026-04-13
-session: 3
-fase_sena: "Apropiación"
-activity_type: "procedimental"
+version: 3.0
+last_verified: 2026-05-02
+session: "S4"
+session_legacy_v2: 3
+tipo_bloque: "APROPIACION"
+bloque_id_referencia_canon_imarpor: "B1"
+rap_target_canon_imarpor: "RA1"
+rap_secundario_overlap: "RA3"
+dimension: "procedimental"
 generates_evidence: true
-evidence_type: "Producto"
+evidence_type_canon: "Producto"
+codigo_canon_evidencia: "E2"
+criterio_canon_evaluado: "C02"
+instrumento_canon: "Lista de Verificación No 2"
 contributes_to_cuestionario: true
 cuestionario_skill: "Writing"
 cuestionario_points: 5
+status: v3.0 PARADIGM SHIFT · PM-2.4 hereda cascade Phase 1 v3.x · emite Activity Card v3.0 · S4 APROPIACIÓN B1 RA1 · evidencia E2 anchor Writing C02 (Lista de Verificación No 2 · overlap RA1+RA3 cara morfosintáctica)
+v3_0_changes:
+  - "session 3 → S4 (alineado pm-2-0 12 sesiones CC)"
+  - "NEW REGLA heredancia cascade Phase 1 v3.x (pm-2-0 S4 + pm-1-2.B1.task_writing_derivada + matriz v1.3)"
+  - "NEW REGLA emisión Activity Card v3.0 canon Sergio (16 campos · descripcion 200-600 palabras safety margin)"
+  - "NEW REGLA evidencias canon E2 C02: Producto · Verificación de producto · Lista de Verificación No 2"
+  - "NEW REGLA overlap RA1+RA3 documentado (lexical retention RA1 + morfosintáctica RA3)"
+  - "Arquetipos v2.0 PRESERVADOS como REFERENCIA (LLM elige · canon Sergio)"
 ---
 
 # PM-2.4: WRITING SKILLS & PRAGMATICS — TASK-BASED
@@ -519,3 +534,29 @@ activity_card:
 *Fichero Clínico de Actividades y Estrategias para el Desarrollo de la Escritura*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+
+---
+
+## EXTENSIÓN v3.0 — PM-2.4 HEREDERO CASCADE PHASE 1 v3.x + ACTIVITY CARD v3.0 (2026-05-02)
+
+PM-2.4 v3.0 hereda cascade Phase 1 v3.x · emite Activity Card v3.0 canon Sergio · S4 APROPIACIÓN B1 RA1 produce evidencia E2 anchor Writing C02 (Lista de Verificación No 2 · overlap RA1+RA3).
+
+### REGLAS NEW v3.0
+
+- **REGLA · Input cascade:** consume pm-2-0.S4 + pm-1-2.B1.task_writing_derivada + matriz v1.3 RA1+RA3 + universo PM-0 v3.2
+- **REGLA · Activity Card v3.0:** 16 campos completos · `dimension: procedimental` · `enunciado` V+O+C ≤200 chars · `descripcion` 200-600 palabras (target 480-580 sweet spot · pattern PILOT validado) patrón canon panorama→orientación instructor→equipos/setup→escritura guiada→cierre/socialización Inspection Report
+- **REGLA · evidencias canon:** `aplica=true` · `tipo: "Producto"` · `tecnica_evaluacion: "Verificación de producto"` · `instrumento_numero: 2` · `instrumento_tipo: "Lista de verificación"` · `codigo_canon: "E2"` · `criterio_canon_evaluado: "C02"`
+- **REGLA · overlap RA1+RA3:** Inspection Report integra lexical RA1 (verb to be · plural · partes barco) + morfosintáctica RA3 (imperative en safety commands · prep IN para location)
+- **REGLA · Heredancia traceability:** `_anclaje_matriz_heredado` literal copy de pm-1-2.B1.task_writing_derivada
+- **REGLA · 7 validation_checks** BLOQUEANTES (4 schema + 3 traceability) · pattern PILOT PM-2.3
+- **Arquetipos v2.0 PRESERVADOS** como REFERENCIA · LLM elige (canon Sergio "todos arquetipos disponibles")
+
+### Caso operacional esperado IMARPOR-V2
+
+- Input: pm-2-0.S4 (4.5h writing task E2) + pm-1-2.B1.task_writing_derivada (Inspection Report Maersk)
+- Output esperado: Activity Card v3.0 con descripción patrón canon · evidencias canon E2 C02 · heredancia literal · 7/7 PASS
+
+---
+
+*PM-2.4 v3.0 · Writing Anchor Heredero · Activity Card v3.0 canon Sergio · evidencia E2 C02 · overlap RA1+RA3*
+*Sergio Cortés decisión arquitectónica 2026-05-02 · cascade Wave 2 IMARPOR-V2*
