@@ -1,14 +1,33 @@
 ---
-version: 3.0
-last_verified: 2026-04-28
-session: 1
+version: 3.1
+last_verified: 2026-05-02
+session: "S1"
+session_legacy_v2: 1
+tipo_bloque: "APERTURA"
+bloque_id_referencia_canon: "B0"
+rap_target_canon: null
 fase_sena: "Reflexión Inicial"
-activity_type: "cognitiva"
+dimension_canon: "actitudinal_o_cognitiva"
 generates_evidence: false
 evidence_type: null
 contributes_to_cuestionario: false
 cuestionario_skill: null
 cuestionario_points: 0
+status: v3.1 minor bump · PM-2.1 hereda cascade Phase 1 v3.x (pm-2-0 v3.0 + pm-1-2 v4.2 + matriz v1.3) · emite Activity Card v3.0 canon Sergio · APERTURA transversal · evidencias.aplica=false canon (NO conocimiento ni habilidades nuevas · motivacional + primer acercamiento + activación afectiva) · 4 arquetipos v3.0 PRESERVADOS como modo extensible
+v3_1_changes:
+  - "NEW REGLA heredancia cascade Phase 1 v3.x · consume pm-2-0.S1.actividades_planeadas[consumed_by_pm=PM-2.1] + pm-1-2.B0.materiales_spark + matriz v1.3 + universo PM-0 v3.2"
+  - "NEW REGLA emisión Activity Card v3.0 canon Sergio · 16 campos schema completo"
+  - "NEW REGLA evidencias.aplica = false SIEMPRE (canon APERTURA · render 'No aplica' literal)"
+  - "NEW REGLA dimension actitudinal o cognitiva (típicamente actitudinal · motivacional/diagnóstico)"
+  - "NEW REGLA descripcion multi-párrafo 200-600 palabras (target 480-580 sweet spot · pattern PM-2.3 PILOT validado) patrón canon panorama→orientación→equipos→activación afectiva→cierre"
+  - "NEW REGLA enfoque_motivacional + primer_acercamiento_a_temas obligatorios (canon Sergio · spark genuino al universo)"
+  - "session: 1 (v3.0) → S1 (v3.1 alineado pm-2-0 12 sesiones CC)"
+  - "activity_type: cognitiva → dimension: actitudinal_o_cognitiva (canon Activity Card v3.0)"
+  - "4 arquetipos v3.0 PRESERVADOS (Visual/Infografía · Story/Narrativa · News · Debate/Encuesta) · LLM elige según universo + 2 modos DEFAULT/EXTENSIBLE"
+v3_0_legacy_preserved:
+  - "Catálogo §48 4 arquetipos canónicos (Visual · Story · News · Debate)"
+  - "2 modos DEFAULT (Narrative Scenario) + EXTENSIBLE (secuencia encadenada estilo DIESEL)"
+  - "Directiva canónica instructor 'Quiero todos los arquetipos disponibles'"
 changelog_v3_0:
   - "Canonización Opción A (decisión arquitectónica Sergio 2026-04-28)"
   - "Reconocimiento de jerarquía canónica: directiva del instructor > implementación operacional > master prompt"
@@ -306,3 +325,132 @@ activity_card:
 *PM-2.1: The Spark & Problematic Situation*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+
+---
+
+## EXTENSIÓN v3.1 — PM-2.1 HEREDERO CASCADE PHASE 1 v3.x + ACTIVITY CARD v3.0 (2026-05-02)
+
+> [!warning] Bump minor v3.0 → v3.1 · canon Sergio 2026-05-02 · cascade Wave 1 IMARPOR-V2
+>
+> v3.0 canonizó 2 modos + 4 arquetipos. v3.1 agrega heredancia explícita cascade v3.x + emisión Activity Card v3.0. PRESERVA 4 arquetipos + 2 modos v3.0 sin cambios.
+
+### REGLA NEW · INPUT CASCADE PHASE 1 v3.x
+
+PM-2.1 v3.1 consume:
+- `pm-2-0.json v3.0` (S1 APERTURA · `actividades_planeadas[consumed_by_pm=PM-2.1]` típicamente 2 spark)
+- `pm-1-2.json v4.2+` (`B0.materiales_spark` array · ítems con `_consumed_by_pm: PM-2.1`)
+- `pm-0-0-matriz-alineada.json v1.2+` (canon transversal · 4 RAPs cubiertos · sin criterio canon específico evaluable en S1)
+- `pm-0-context.json v3.2+` (universo + personajes · CRÍTICO para spark genuino)
+
+### REGLA NEW · EMISIÓN ACTIVITY CARD v3.0 CANON SERGIO
+
+PM-2.1 v3.1 emite N Activity Cards v3.0 (típicamente 2 · una por spark heredada de pm-2-0):
+
+```yaml
+activity_card:
+  pm_id: "PM-2.1"
+  pm_name: "The Spark — Reflexión Inicial"
+  session: "S1"
+  tipo_bloque: "APERTURA"
+  bloque_id_referencia: "B0"
+  rap_target: null                              # transversal
+  numero_actividad: N                            # secuencial guía (típicamente 1-2 en S1)
+
+  dimension: "actitudinal"                       # típico spark · puede ser cognitiva si más diagnóstico
+  enunciado: "Reflexionar sobre [tema motivacional] mediante [arquetipo elegido] activando interés afectivo en operaciones [contexto]."
+  descripcion: |                               # 200-600 palabras (target 480-580)
+    [PANORAMA: qué se reflexiona + contexto motivacional banana cold chain]
+
+    [ORIENTACIÓN INSTRUCTOR: presenta el spark · video/imagen/testimonio/anécdota]
+
+    [CONFORMACIÓN GRUPO + PRIMER ACERCAMIENTO: cómo se organizan + primera reacción afectiva]
+
+    [ACTIVACIÓN AFECTIVA: discusión grupal · enfoque motivacional + primer acercamiento a temas]
+
+    [CIERRE: socialización + bridge a PM-2.2 gap analysis]
+
+  ambiente: "Aula con proyector + pizarrón colaborativo"
+  estrategias_didacticas_activas: ["Aprendizaje colaborativo"]
+  tecnicas_didacticas: ["Lluvia de ideas", "Panel discussion"]   # según arquetipo elegido
+  materiales_formacion: ["proyector", "pizarrón", "marcadores", "tarjetas dimensionales"]
+  material_apoyo:                              # heredado pm-1-2.B0.materiales_spark[i]
+    - descripcion: "[material spark heredado]"
+      link: "[URL si aplica · null si no]"
+
+  evidencias:
+    aplica: false                              # CANON APERTURA · NO genera evidencia formal
+    tipo: null
+    nombre: null
+    tecnica_evaluacion: null
+    instrumento_numero: null
+    instrumento_tipo: null
+    codigo_canon: null
+    criterio_canon_evaluado: null
+
+  duracion_horas: 1                             # típico spark · 1h por actividad
+
+  _anclaje_matriz_heredado:                    # LITERAL COPY pm-1-2.B0.materiales_spark[i]._anclaje_matriz
+    alcance: "competencia_completa"
+    raps_atravesados: ["RA1", "RA2", "RA3", "RA4"]
+    criterios_canon_que_evalua: []             # transversal · sin canon específico
+    saberes_proceso_movilizados: []            # opcional · motivacional puro
+  _produces_evidencia: null                    # APERTURA NO produce E1-E6
+  _consumed_by_pm: "PM-2.1"
+  _ref_pm12_path: "sub_bloques_tripartitos[0].materiales_spark[N]"
+  _ref_pm20_session: "S1"
+```
+
+### REGLA NEW · evidencias.aplica = false SIEMPRE (canon APERTURA)
+
+Canon Sergio: "Las actividades de reflexión inicial · de contextualización y de transferencia no llevan evidencias de aprendizaje para evaluar con técnicas ni instrumentos."
+
+PM-2.1 SIEMPRE emite `evidencias.aplica = false` · campos null · render "No aplica" literal en guía.
+
+### REGLA NEW · enfoque_motivacional + primer_acercamiento_a_temas obligatorios
+
+Heredados de pm-1-2.B0.materiales_spark[i]:
+- `enfoque_motivacional`: por qué este artefacto motiva al aprendiz
+- `primer_acercamiento_a_temas`: qué temas del programa "huele" el aprendiz aquí
+
+Ambos deben quedar reflejados en la `descripcion` (no como campos separados · integrados narrativamente).
+
+### REGLA NEW · 4 arquetipos v3.0 PRESERVADOS
+
+LLM elige uno o combinación de los 4 v3.0 según universo:
+- **A · Visual/Infografía:** spark visual impactante (foto · infografía · meme técnico)
+- **B · Story/Narrativa:** anécdota personal o caso real (testimonio Mariana sobre cold chain · etc.)
+- **C · News/Noticia técnica:** noticia real del sector (puerto Antioquia · cold chain crisis · etc.)
+- **D · Debate/Encuesta:** pregunta provocadora · debate inicial · encuesta diagnóstica
+
+### REGLA NEW · LIBERTAD vs CANON ESTRICTO
+
+LIBERTAD LLM:
+- Arquetipo seleccionado (1 de 4 o combinación)
+- Redacción descripcion siguiendo patrón canon
+- Selección estrategias + técnicas
+- Materiales + materiales_apoyo desde universo
+
+CANON ESTRICTO (no inventar):
+- Schema 16 campos Activity Card v3.0
+- evidencias.aplica = false (APERTURA canon)
+- Heredancia traceability literal
+- Universo banana cold chain heredado
+
+### REGLA NEW · 7 VALIDATION CHECKS BLOQUEANTES
+
+```jsonc
+[
+  {"id": 1, "name": "schema_activity_card_v3_completo"},
+  {"id": 2, "name": "descripcion_multipárrafo_200_600_palabras"},
+  {"id": 3, "name": "evidencias_aplica_false_canon_apertura"},   # CRÍTICO PM-2.1
+  {"id": 4, "name": "render_no_aplica_correcto"},                # APERTURA → "No aplica" literal
+  {"id": 5, "name": "heredancia_pm12_materiales_spark_literal"},
+  {"id": 6, "name": "heredancia_pm20_S1_correcta"},
+  {"id": 7, "name": "raps_atravesados_4_de_4"}                   # canon transversal
+]
+```
+
+---
+
+*PM-2.1 v3.1 · The Spark Heredero · Activity Card v3.0 canon Sergio · evidencias.aplica=false APERTURA · 4 arquetipos v3.0 PRESERVADOS*
+*Sergio Cortés decisión arquitectónica 2026-05-02 · cascade Wave 1 IMARPOR-V2*

@@ -1,14 +1,33 @@
 ---
-version: 3.0
-last_verified: 2026-04-28
-session: 1
+version: 3.1
+last_verified: 2026-05-02
+session: "S1"
+session_legacy_v2: 1
+tipo_bloque: "APERTURA"
+bloque_id_referencia_canon: "B0"
+rap_target_canon: null
 fase_sena: "Contextualización"
-activity_type: "cognitiva"
+dimension_canon: "actitudinal_o_cognitiva"
 generates_evidence: false
 evidence_type: null
 contributes_to_cuestionario: false
 cuestionario_skill: null
 cuestionario_points: 0
+status: v3.1 minor bump · PM-2.2 hereda cascade Phase 1 v3.x · emite Activity Card v3.0 canon Sergio · APERTURA Contextualización transversal · evidencias.aplica=false (canon · diagnosticar + activar aprendizajes previos + brindar contexto general · NO conocimiento ni habilidades nuevas · Sergio enfático) · 4 arquetipos v3.0 PRESERVADOS
+v3_1_changes:
+  - "NEW REGLA heredancia cascade Phase 1 v3.x · consume pm-2-0.S1.actividades_planeadas[consumed_by_pm=PM-2.2] + pm-1-2.B0.materiales_spark/aprendizajes_previos/contexto_general + matriz v1.3 + universo PM-0 v3.2"
+  - "NEW REGLA emisión Activity Card v3.0 canon Sergio · 16 campos schema completo"
+  - "NEW REGLA evidencias.aplica = false SIEMPRE (canon APERTURA · render 'No aplica' literal)"
+  - "NEW REGLA dimension actitudinal o cognitiva (típicamente cognitiva-diagnóstica · activación previos)"
+  - "NEW REGLA descripcion multi-párrafo 200-600 palabras (target 480-580 sweet spot · pattern PM-2.3 PILOT validado) patrón canon panorama→orientación→equipos→diagnóstico/activación→contexto general RAPs→cierre"
+  - "NEW REGLA aprendizajes_previos_a_activar + contexto_general_raps_presentado obligatorios (canon Sergio · gap analysis genuino)"
+  - "session: 1 (v3.0) → S1 (v3.1 alineado pm-2-0)"
+  - "activity_type: cognitiva → dimension: actitudinal_o_cognitiva (canon Activity Card v3.0)"
+  - "4 arquetipos v3.0 PRESERVADOS (Self-assessment/KWL · Diagnosis visual · Gap card · Peer interview)"
+v3_0_legacy_preserved:
+  - "Catálogo §44 4 arquetipos canónicos (Self-assessment · Diagnosis visual · Gap card · Peer interview)"
+  - "2 modos DEFAULT (The Mirror) + EXTENSIBLE (secuencia encadenada estilo DIESEL)"
+  - "Directiva canónica instructor 'Quiero todos los arquetipos disponibles'"
 changelog_v3_0:
   - "Canonización Opción A (decisión arquitectónica Sergio 2026-04-28)"
   - "Reconocimiento de jerarquía canónica: directiva del instructor > implementación operacional > master prompt"
@@ -289,3 +308,124 @@ activity_card:
 *PM-2.2: The Gap Analysis & Prior Knowledge*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+
+---
+
+## EXTENSIÓN v3.1 — PM-2.2 HEREDERO CASCADE PHASE 1 v3.x + ACTIVITY CARD v3.0 (2026-05-02)
+
+> [!warning] Bump minor v3.0 → v3.1 · canon Sergio 2026-05-02 · cascade Wave 1 IMARPOR-V2 · gemelo de PM-2.1 v3.1
+
+v3.0 canonizó 2 modos + 4 arquetipos diagnósticos. v3.1 agrega heredancia explícita cascade v3.x + emisión Activity Card v3.0 canon Sergio. PRESERVA 4 arquetipos + 2 modos v3.0 sin cambios.
+
+### REGLA NEW · INPUT CASCADE PHASE 1 v3.x
+
+PM-2.2 v3.1 consume:
+- `pm-2-0.json v3.0` (S1 APERTURA · `actividades_planeadas[consumed_by_pm=PM-2.2]` típicamente 2 gap analysis)
+- `pm-1-2.json v4.2+` (`B0.materiales_spark` · `B0.aprendizajes_previos_a_activar` · `B0.contexto_general_raps_presentado`)
+- `pm-0-0-matriz-alineada.json v1.2+` (4 RAPs cubiertos transversalmente · sin criterio canon específico evaluable en S1)
+- `pm-0-context.json v3.2+` (universo + personajes · CRÍTICO para diagnóstico genuino)
+
+### REGLA NEW · EMISIÓN ACTIVITY CARD v3.0 CANON SERGIO
+
+PM-2.2 v3.1 emite N Activity Cards v3.0 (típicamente 2 · una por gap analysis heredada):
+
+```yaml
+activity_card:
+  pm_id: "PM-2.2"
+  pm_name: "The Gap Analysis & Prior Knowledge"
+  session: "S1"
+  tipo_bloque: "APERTURA"
+  bloque_id_referencia: "B0"
+  rap_target: null                              # transversal
+  numero_actividad: N                            # secuencial guía (típicamente 3-4 después de PM-2.1)
+
+  dimension: "cognitiva"                         # típico gap analysis · cognitiva-diagnóstica
+  enunciado: "Diagnosticar [conocimientos previos] mediante [arquetipo elegido] activando [contexto operacional]."
+  descripcion: |                               # 200-600 palabras (target 480-580)
+    [PANORAMA: qué se diagnostica + por qué importa para el programa]
+
+    [ORIENTACIÓN INSTRUCTOR: presenta el contexto general 4 RAPs + introduce instrumento diagnóstico]
+
+    [CONFORMACIÓN GRUPO + ACCESO: cómo se organizan + acceso al material diagnóstico (KWL · self-assessment · gap card · peer interview)]
+
+    [DIAGNÓSTICO + ACTIVACIÓN PREVIOS: qué hacen los aprendices · activación afectiva sin amenaza · captura honesta de baseline]
+
+    [CIERRE: socialización + bridge a S2 (primera APROPIACIÓN B1 RA1)]
+
+  ambiente: "Aula con proyector + mesas en grupos pequeños"
+  estrategias_didacticas_activas: ["Trabajo colaborativo"]
+  tecnicas_didacticas: ["Investigación guiada", "Self-assessment"]   # según arquetipo
+  materiales_formacion: ["proyector", "tarjetas KWL", "marcadores", "stickers de colores"]
+  material_apoyo:
+    - descripcion: "[material gap analysis heredado pm-1-2.B0]"
+      link: "[URL si aplica · null si no]"
+
+  evidencias:
+    aplica: false                              # CANON APERTURA · NO genera evidencia formal
+    tipo: null
+    nombre: null
+    tecnica_evaluacion: null
+    instrumento_numero: null
+    instrumento_tipo: null
+    codigo_canon: null
+    criterio_canon_evaluado: null
+
+  duracion_horas: 1.5                          # típico gap analysis · 1.5h por actividad
+
+  _anclaje_matriz_heredado:
+    alcance: "competencia_completa"
+    raps_atravesados: ["RA1", "RA2", "RA3", "RA4"]
+    criterios_canon_que_evalua: []             # transversal
+    saberes_proceso_movilizados: []            # diagnóstico puro · no movilización formal
+  _produces_evidencia: null                    # APERTURA NO produce E1-E6
+  _consumed_by_pm: "PM-2.2"
+  _ref_pm12_path: "sub_bloques_tripartitos[0].materiales_spark[N]"
+  _ref_pm20_session: "S1"
+```
+
+### REGLA NEW · evidencias.aplica = false SIEMPRE (canon APERTURA · gemelo PM-2.1)
+
+Canon Sergio: "Las actividades de reflexión inicial · de contextualización y de transferencia no llevan evidencias de aprendizaje para evaluar con técnicas ni instrumentos."
+
+PM-2.2 SIEMPRE emite `evidencias.aplica = false` · campos null · render "No aplica" literal.
+
+### REGLA NEW · aprendizajes_previos_a_activar + contexto_general_raps_presentado obligatorios
+
+Heredados de pm-1-2.B0:
+- `aprendizajes_previos_a_activar`: qué espera saber el aprendiz al entrar (lista heredada)
+- `contexto_general_raps_presentado`: narrativa que presenta los 4 RAPs sin entrar a apropiación
+
+Ambos deben quedar reflejados en la `descripcion` (integrados narrativamente · NO listas literales).
+
+### REGLA NEW · 4 arquetipos v3.0 PRESERVADOS
+
+LLM elige uno o combinación según universo:
+- **A · Self-assessment / KWL:** Know-Want-Learned · auto-evaluación honesta sin amenaza
+- **B · Diagnosis visual:** mapa visual de baseline · imagen + iconos
+- **C · Gap card:** tarjeta personal con gaps identificados (privado primero · socializado después)
+- **D · Peer interview:** entrevista entre pares · descubrir baseline mutual
+
+### REGLA NEW · 7 VALIDATION CHECKS BLOQUEANTES
+
+```jsonc
+[
+  {"id": 1, "name": "schema_activity_card_v3_completo"},
+  {"id": 2, "name": "descripcion_multipárrafo_200_600_palabras"},
+  {"id": 3, "name": "evidencias_aplica_false_canon_apertura"},   # CRÍTICO PM-2.2
+  {"id": 4, "name": "render_no_aplica_correcto"},
+  {"id": 5, "name": "heredancia_pm12_aprendizajes_previos_literal"},
+  {"id": 6, "name": "heredancia_pm20_S1_correcta"},
+  {"id": 7, "name": "raps_atravesados_4_de_4"}                   # canon transversal
+]
+```
+
+### REGLA NEW · NO conocimiento ni habilidades nuevas (canon Sergio)
+
+PM-2.2 diagnóstica + activa previos + brinda contexto general. **NO inicia construcción de conocimiento o habilidades nuevas** (esa es función APROPIACIÓN B1-B4 · S2 en adelante).
+
+Si la descripcion empieza a "enseñar" vocabulario nuevo · grammar nuevo · etc. · violación canon Sergio · NO PASS check 3.
+
+---
+
+*PM-2.2 v3.1 · The Gap Analysis Heredero · Activity Card v3.0 canon Sergio · evidencias.aplica=false APERTURA · 4 arquetipos v3.0 PRESERVADOS · NO conocimiento nuevo*
+*Sergio Cortés decisión arquitectónica 2026-05-02 · cascade Wave 1 IMARPOR-V2 · gemelo PM-2.1 v3.1*
