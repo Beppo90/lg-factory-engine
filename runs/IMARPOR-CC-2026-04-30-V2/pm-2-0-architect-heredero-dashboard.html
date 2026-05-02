@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>PM-2.0 v3.0 Architect Heredero · IMARPOR-V2</title><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#F8F9FA;color:#212529;line-height:1.5;padding:24px}
+.header{background:linear-gradient(135deg,#007832 0%,#0B2E45 100%);color:white;padding:24px;border-radius:8px;margin-bottom:24px}
+.header h1{font-size:22px;margin-bottom:8px}
+.header .meta{font-size:13px;opacity:0.9}
+.section-title{font-size:18px;font-weight:600;color:#0B2E45;margin:28px 0 14px;padding-bottom:8px;border-bottom:2px solid #39A900}
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:20px}
+.summary-card{background:#FFFFFF;padding:16px;border-radius:8px;border-left:4px solid #39A900;box-shadow:0 2px 4px rgba(0,0,0,0.05)}
+.summary-card .label{font-size:11px;color:#6C757D;text-transform:uppercase;letter-spacing:0.5px}
+.summary-card .value{font-size:26px;font-weight:bold;color:#0B2E45;margin-top:4px}
+.summary-card .sublabel{font-size:10px;color:#6C757D;margin-top:4px}
+.timeline-grid{display:grid;grid-template-columns:60px 110px 1fr 100px;gap:10px;align-items:center;background:#FFFFFF;padding:14px 18px;border-radius:6px;margin-bottom:8px;box-shadow:0 1px 2px rgba(0,0,0,0.04);border-left:5px solid}
+.timeline-sesion{font-weight:700;font-family:monospace;color:#0B2E45;font-size:14px}
+.timeline-tipo{font-size:10px;font-weight:700;text-transform:uppercase;color:white;padding:3px 8px;border-radius:10px;text-align:center;letter-spacing:0.5px}
+.timeline-content{font-size:12px;color:#212529}
+.timeline-meta{text-align:right;font-size:11px;color:#6C757D}
+.tag{display:inline-block;padding:2px 7px;background:#F8F9FA;border-radius:10px;font-size:10px;margin:2px 2px 2px 0;border:1px solid #DEE2E6}
+.tag-rap{background:#E8F5E9;color:#1B5E20;border-color:#81C784;font-weight:600}
+.tag-pm{background:#E3F2FD;color:#0D47A1;border-color:#64B5F6;font-family:monospace;font-weight:600;font-size:10px}
+.tag-evid{color:white;font-weight:700;padding:3px 8px;font-size:11px}
+.tag-criterio{background:#FFF3E0;color:#E65100;border-color:#FFB74D;font-weight:600}
+.evid-flow{background:#FFFFFF;padding:18px;border-radius:8px;margin-bottom:18px}
+.evid-row{display:grid;grid-template-columns:80px 60px 1fr 100px 200px;gap:12px;align-items:center;padding:8px 0;border-bottom:1px dashed #DEE2E6}
+.evid-row:last-child{border-bottom:none}
+.checks-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.check-card{background:#FFFFFF;padding:10px 14px;border-radius:6px;border-left:4px solid #39A900;display:flex;justify-content:space-between;align-items:center}
+.check-name{font-size:12px;font-family:monospace}
+.check-status{font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px;color:white;background:#39A900}
+.fix-banner{background:#E8F5E9;border-left:4px solid #39A900;padding:12px 16px;margin-bottom:18px;border-radius:6px;font-size:13px;color:#007832;font-weight:500}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px;font-size:11px}
+.legend-item{display:flex;align-items:center;gap:5px}
+.legend-color{width:12px;height:12px;border-radius:3px}
+</style></head><body>
+<div class="header">
+  <h1>🎯 PM-2.0 v3.0 · Session Blueprint Heredero · IMARPOR-V2</h1>
+  <div class="meta">Run: IMARPOR-CC-2026-04-30-V2 · 12 sesiones · architect como secuenciador temporal puro · cero invención · 2026-05-02</div>
+</div>
+
+<div class="fix-banner">
+  ✓ <strong>Architect HEREDA literal de cascade Phase 1 v3.x:</strong> pm-1-1 v2.8 v2 (estructura tripartita) + pm-1-2 v4.2 v2 (scope diferenciado · 23 elementos productores) + matriz v1.3 (8 criterios canon C01-C08) · 32 actividades_planeadas con _anclaje_matriz_heredado literal copy · 8/8 evidencias canon mapeadas · libertad LIMITADA del LLM ejercida solo en secuenciación temporal interna
+</div>
+
+<div class="summary-grid">
+  <div class="summary-card"><div class="label">Sesiones</div><div class="value">12</div><div class="sublabel">heredadas pm-1-1 (CC)</div></div>
+  <div class="summary-card"><div class="label">Horas directas</div><div class="value">72h</div><div class="sublabel">12 × 6h</div></div>
+  <div class="summary-card"><div class="label">Actividades planeadas</div><div class="value">32</div><div class="sublabel">heredadas pm-1-2</div></div>
+  <div class="summary-card"><div class="label">Evidencias canon</div><div class="value">8/8</div><div class="sublabel">E1-E6+E-Misión</div></div>
+  <div class="summary-card"><div class="label">Validation</div><div class="value">8/8</div><div class="sublabel">8 BLOQUEANTES</div></div>
+  <div class="summary-card"><div class="label">Drift cruzado</div><div class="value">0</div><div class="sublabel">tipo_bloque consistente</div></div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-color" style="background:#FFB300"></div>APERTURA (transversal · S1)</div>
+  <div class="legend-item"><div class="legend-color" style="background:#1E88E5"></div>APROPIACIÓN (por RAP · S2-S10)</div>
+  <div class="legend-item"><div class="legend-color" style="background:#D81B60"></div>TRANSFERENCIA (capstone · S11-S12)</div>
+</div>
+
+<div class="section-title">📅 Session Blueprint · 12 sesiones HEREDADAS de cascade tripartita</div>
+<div class="timeline-grid" style="border-left-color:#FFB300;">
+<div class="timeline-sesion">S1</div>
+<div class="timeline-tipo" style="background:#FFB300;">APERTURA</div>
+<div class="timeline-content">
+  <strong>Spark + Diagnostic Stand-Down</strong> · ref B0 
+  <div style="margin-top:4px;"><span class="tag tag-pm">PM-2.1</span><span class="tag tag-pm">PM-2.2</span></div>
+</div>
+<div class="timeline-meta">
+  4 actividades · 6h
+  <div style="margin-top:4px;"><span style="opacity:0.4">—</span></div>
+</div>
+</div><div class="timeline-grid" style="border-left-color:#1E88E5;">
+<div class="timeline-sesion">S2</div>
+<div class="timeline-tipo" style="background:#1E88E5;">APROPIACION</div>
+<div class="timeline-content">
+  <strong>APROPIACIÓN RA1</strong> · ref B1 <span class="tag tag-rap">RA1</span>
+  <div style="margin-top:4px;"><span class="tag tag-pm">PM-2.5</span><span class="tag tag-pm">PM-2.10</span></div>
+</div>
+<div class="timeline-meta">
+  2 actividades · 6h
+  <div style="margin-top:4px;"><span style="opacity:0.4">—</span></div>
+</div>
+</div><div class="timeline-grid" style="border-left-color:#1E88E5;">
+<div class="timeline-sesion">S3</div>
+<div class="timeline-tipo" style="background:#1E88E5;">APROPIACION</div>
+<div class="timeline-content">
+  <strong>APROPIACIÓN RA1</strong> · ref B1 <span class="tag tag-rap">RA1</span>
+  <div style="margin-top:4px;"><span class="tag tag-pm">PM-2.3</span><span class="tag tag-pm">PM-2.6</span></div>
+</div>
+<div class="timeline-meta">
+  2 actividades · 6h
+  <div style="margin-top:4px;"><span class="tag tag-evid" style="background:#1976D2;">E1</span></div>
+</div>
+</div><div class="timeline-grid" style="border-left-color:#1E88E5;">
+<div class="timeline-sesion">S4</div>
+<div class="timeline-tipo" style="background:#1E88E5;">APROPIACION</div>
+<div class="timeline-content">
+  <strong>APROPIACIÓN RA1</strong> · ref B1 <span class="tag tag-rap">RA1</span>
+  <div style="margin-top:4px;"><span class="tag tag-pm">PM-2.4</span><span class="tag tag-pm">PM-4.2</span></div>
+</div>
+<div class="timeline-meta">
+  2 actividades · 6h
+  <div style="margin-top:4px;"><span class="tag tag-evid" style="background:#388E3C;">E2</span></div>
+</div>
+</div><div class="timeline-grid" style="border-left-color:#1E88E5;">
+<div class="timeline-sesion">S5</div>
+<div class="timeline-tipo" style="background:#1E88E5;">APROPIACION</div>
+<div class="timeline-content">
+  <strong>APROPIACIÓN RA2</strong> · ref B2 <span class="tag tag-rap">RA2</span>
+  <div style="margin-top:4px;"><span class="tag tag-pm">PM-2.5</span><span class="tag tag-pm">PM-2.6</span><span class="tag tag-pm">PM-2.10</span></div>
+</div>
+<div class="timeline-meta">
+  3 actividades · 6h
+  <div style="margin-top:4px;"><span class="tag tag-evid" style="background:#F57C00;">E3</span></div>
+</div>
+</div><div class="timeline-grid" style="border-left-color:#1E88E5;">
+<div class="timeline-sesion">S6</div>
+<div class="timeline-tipo" style="background:#1E88E5;">APROPIACION</div>
+<div class="timeline-content">
+  <strong>APROPIACIÓN RA2</strong> · ref B2 <span class="tag tag-rap">RA2</span>
+  <div style="margin-top:4px;"><span class="tag tag-pm">PM-2.8</span><span class="tag tag-pm">PM-4.2</span></div>
+</div>
+<div class="timeline-meta">
+  2 actividades · 6h
+  <div style="margin-top:4px;"><span class="tag tag-evid" style="background:#C2185B;">E4-parcial</span><span class="tag tag-evid" style="background:#00796B;">E6</span></div>
+</div>
+</div><div class="timeline-grid" style="border-left-color:#1E88E5;">
+<div class="timeline-sesion">S7</div>
+<div class="timeline-tipo" style="background:#1E88E5;">APROPIACION</div>
+<div class="timeline-content">
+  <strong>APROPIACIÓN RA3</strong> · ref B3 <span class="tag tag-rap">RA3</span>
+  <div style="margin-top:4px;"><span class="tag tag-pm">PM-2.3</span><span class="tag tag-pm">PM-2.5</span><span class="tag tag-pm">PM-2.6</span><span class="tag tag-pm">PM-2.10</span></div>
+</div>
+<div class="timeline-meta">
+  4 actividades · 6h
+  <div style="margin-top:4px;"><span style="opacity:0.4">—</span></div>
+</div>
+</div><div class="timeline-grid" style="border-left-color:#1E88E5;">
+<div class="timeline-sesion">S8</div>
+<div class="timeline-tipo" style="background:#1E88E5;">APROPIACION</div>
+<div class="timeline-content">
+  <strong>APROPIACIÓN RA3</strong> · ref B3 <span class="tag tag-rap">RA3</span>
+  <div style="margin-top:4px;"><span class="tag tag-pm">PM-2.8</span><span class="tag tag-pm">PM-2.9</span></div>
+</div>
+<div class="timeline-meta">
+  2 actividades · 6h
+  <div style="margin-top:4px;"><span class="tag tag-evid" style="background:#AD1457;">E4-final</span></div>
+</div>
+</div><div class="timeline-grid" style="border-left-color:#1E88E5;">
+<div class="timeline-sesion">S9</div>
+<div class="timeline-tipo" style="background:#1E88E5;">APROPIACION</div>
+<div class="timeline-content">
+  <strong>APROPIACIÓN RA4</strong> · ref B4 <span class="tag tag-rap">RA4</span>
+  <div style="margin-top:4px;"><span class="tag tag-pm">PM-2.5</span><span class="tag tag-pm">PM-2.6</span><span class="tag tag-pm">PM-2.9</span><span class="tag tag-pm">PM-2.10</span></div>
+</div>
+<div class="timeline-meta">
+  4 actividades · 6h
+  <div style="margin-top:4px;"><span class="tag tag-evid" style="background:#7B1FA2;">E5</span></div>
+</div>
+</div><div class="timeline-grid" style="border-left-color:#1E88E5;">
+<div class="timeline-sesion">S10</div>
+<div class="timeline-tipo" style="background:#1E88E5;">APROPIACION</div>
+<div class="timeline-content">
+  <strong>APROPIACIÓN RA4</strong> · ref B4 <span class="tag tag-rap">RA4</span>
+  <div style="margin-top:4px;"><span class="tag tag-pm">PM-2.10</span></div>
+</div>
+<div class="timeline-meta">
+  1 actividades · 6h
+  <div style="margin-top:4px;"><span style="opacity:0.4">—</span></div>
+</div>
+</div><div class="timeline-grid" style="border-left-color:#D81B60;">
+<div class="timeline-sesion">S11</div>
+<div class="timeline-tipo" style="background:#D81B60;">TRANSFERENC</div>
+<div class="timeline-content">
+  <strong>Final Mission Capstone</strong> · ref BT 
+  <div style="margin-top:4px;"><span class="tag tag-pm">PM-3.5</span></div>
+</div>
+<div class="timeline-meta">
+  3 actividades · 6h
+  <div style="margin-top:4px;"><span style="opacity:0.4">—</span></div>
+</div>
+</div><div class="timeline-grid" style="border-left-color:#D81B60;">
+<div class="timeline-sesion">S12</div>
+<div class="timeline-tipo" style="background:#D81B60;">TRANSFERENC</div>
+<div class="timeline-content">
+  <strong>Final Mission Capstone</strong> · ref BT 
+  <div style="margin-top:4px;"><span class="tag tag-pm">PM-3.5</span></div>
+</div>
+<div class="timeline-meta">
+  3 actividades · 6h
+  <div style="margin-top:4px;"><span class="tag tag-evid" style="background:#D32F2F;">E-Misión</span></div>
+</div>
+</div><div class="section-title">🔄 Evidencias Secuencia Temporal · 8 evidencias canon E1-E6+E-Misión</div><div class="evid-flow"><div class="evid-row">
+<div class="tag tag-evid" style="background:#1976D2;text-align:center;">E1</div>
+<div style="font-family:monospace;font-weight:700;color:#0B2E45;">S3</div>
+<div style="font-size:12px;">B1 · <span class="tag tag-rap">RA1</span> · <span class="tag tag-criterio">C01</span></div>
+<div><span class="tag tag-pm">PM-2.3</span></div>
+<div style="font-size:11px;color:#6C757D;">Cuestionario No 1</div>
+</div><div class="evid-row">
+<div class="tag tag-evid" style="background:#388E3C;text-align:center;">E2</div>
+<div style="font-family:monospace;font-weight:700;color:#0B2E45;">S4</div>
+<div style="font-size:12px;">B1 · <span class="tag tag-rap">RA1+RA3 (overlap C02)</span> · <span class="tag tag-criterio">C02</span></div>
+<div><span class="tag tag-pm">PM-2.4</span></div>
+<div style="font-size:11px;color:#6C757D;">Lista de Verificación No 2</div>
+</div><div class="evid-row">
+<div class="tag tag-evid" style="background:#F57C00;text-align:center;">E3</div>
+<div style="font-family:monospace;font-weight:700;color:#0B2E45;">S5</div>
+<div style="font-size:12px;">B2 · <span class="tag tag-rap">RA2</span> · <span class="tag tag-criterio">C03</span></div>
+<div><span class="tag tag-pm">PM-2.6</span></div>
+<div style="font-size:11px;color:#6C757D;">Lista de Verificación No 3</div>
+</div><div class="evid-row">
+<div class="tag tag-evid" style="background:#C2185B;text-align:center;">E4-parcial</div>
+<div style="font-family:monospace;font-weight:700;color:#0B2E45;">S6</div>
+<div style="font-size:12px;">B2 (4-way intersectivo en checkpoint medio) · <span class="tag tag-rap">RA2+RA3 (overlap C04)</span> · <span class="tag tag-criterio">C04</span></div>
+<div><span class="tag tag-pm">PM-2.8</span></div>
+<div style="font-size:11px;color:#6C757D;">Escala de Estimación No 4</div>
+</div><div class="evid-row">
+<div class="tag tag-evid" style="background:#AD1457;text-align:center;">E4-final</div>
+<div style="font-family:monospace;font-weight:700;color:#0B2E45;">S8</div>
+<div style="font-size:12px;">B3 · <span class="tag tag-rap">RA3</span> · <span class="tag tag-criterio">C05</span></div>
+<div><span class="tag tag-pm">PM-2.8</span></div>
+<div style="font-size:11px;color:#6C757D;">Escala de Estimación No 4</div>
+</div><div class="evid-row">
+<div class="tag tag-evid" style="background:#7B1FA2;text-align:center;">E5</div>
+<div style="font-family:monospace;font-weight:700;color:#0B2E45;">S9</div>
+<div style="font-size:12px;">B4 · <span class="tag tag-rap">RA3+RA4 (overlap C06)</span> · <span class="tag tag-criterio">C06</span></div>
+<div><span class="tag tag-pm">PM-2.9</span></div>
+<div style="font-size:11px;color:#6C757D;">Escala de Estimación No 5</div>
+</div><div class="evid-row">
+<div class="tag tag-evid" style="background:#00796B;text-align:center;">E6</div>
+<div style="font-family:monospace;font-weight:700;color:#0B2E45;">S6</div>
+<div style="font-size:12px;">B2 (ejecución física) · 4-way contenido (B1+B2+B3+B4) · <span class="tag tag-rap">RA1+RA2+RA3+RA4 (overlap C07 4-way)</span> · <span class="tag tag-criterio">C07</span></div>
+<div><span class="tag tag-pm">PM-4.2</span></div>
+<div style="font-size:11px;color:#6C757D;">Cuestionario No 6</div>
+</div><div class="evid-row">
+<div class="tag tag-evid" style="background:#D32F2F;text-align:center;">E-Misión</div>
+<div style="font-family:monospace;font-weight:700;color:#0B2E45;">S12</div>
+<div style="font-size:12px;">BT · <span class="tag tag-rap">todos_los_raps_integrados (capstone)</span> · <span class="tag tag-criterio">C08</span></div>
+<div><span class="tag tag-pm">PM-3.5</span></div>
+<div style="font-size:11px;color:#6C757D;">Rúbrica ABP 6 criterios C01-C13 · ponderación 100 puntos · ≥70 PASS</div>
+</div></div><div class="section-title">✅ Validation Checks (8/8 PASS)</div><div class="checks-grid"><div class="check-card"><div class="check-name">1. horas_directas_match_pm11</div><span class="check-status">PASS</span></div><div class="check-card"><div class="check-name">2. horas_autonomas_balanceadas</div><span class="check-status">PASS</span></div><div class="check-card"><div class="check-name">3. secuencia_bloom_progresiva</div><span class="check-status">PASS</span></div><div class="check-card"><div class="check-name">4. continuidad_transversal_apertura_transferencia</div><span class="check-status">PASS</span></div><div class="check-card"><div class="check-name">5. distribucion_evidencias_canon_respetada</div><span class="check-status">PASS</span></div><div class="check-card"><div class="check-name">6. alineacion_pm12_actividades_planeadas</div><span class="check-status">PASS</span></div><div class="check-card"><div class="check-name">7. tipo_bloque_consistente_por_sesion</div><span class="check-status">PASS</span></div><div class="check-card"><div class="check-name">8. traceability_heredada_completa</div><span class="check-status">PASS</span></div></div></body></html>

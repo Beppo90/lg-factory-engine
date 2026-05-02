@@ -1,0 +1,37 @@
+{
+  "_pm20_version_target": "3.0",
+  "_paradigm": "architect_heredero_cascade_tripartita",
+  "_inputs_canon_refs": {
+    "pm_1_1": {"file": "pm-1-1.json", "version": "2.8 v2 corregida", "validation_status": "9/9 PASS", "bloques_count": 6},
+    "pm_1_2": {"file": "pm-1-2.json", "version": "4.2 v2 corregida", "validation_status": "6/6 PASS", "sub_bloques_count": 6, "elementos_productores": 23},
+    "pm_0_0_matriz": {"file": "pm-0-0-matriz-alineada.json", "version": "1.3 corregida", "validation_status": "8/8 PASS", "criterios_canon": "C01-C08"},
+    "pm_0_context": {"file": "pm-0-context.json", "version": "3.2", "validation_status": "7/7 PASS", "anclajes": 44}
+  },
+  "run_id": "IMARPOR-CC-2026-04-30-V2",
+  "instructor": "Sergio Cortés Perdomo",
+  "fecha_dispatch": "2026-05-02",
+  "programa": {
+    "denominacion": "Curso Complementario: Inglés Marítimo y Portuario",
+    "tipo": "Curso Complementario",
+    "sesiones_count": 12,
+    "horas_por_sesion": 6,
+    "horas_directas_total": 72,
+    "horas_autonomas_implicadas": 28,
+    "duracion_total_horas": 100
+  },
+  "arquetipos_elegidos_opcional": {
+    "_nota": "Arquetipos PM-2.1-2.10 son selección upfront por instructor. Si NO se especifica · LLM hereda los arquetipos canon documentados en pm-1-1.bloques (e.g., B0 APERTURA define 4 arquetipos: 2 spark + 2 gap analysis · cada bloque APROPIACIÓN tiene set canon de PM-2.x según _consumed_by_pm de pm-1-2 elementos)",
+    "selection_mode": "auto-heredar de cascade Phase 1 v3.x",
+    "override_arquetipos": null
+  },
+  "secuenciacion_temporal_decisions_open_to_llm": {
+    "_doc": "Decisiones temporales que el LLM puede tomar dentro de las restricciones canon (libertad LIMITADA REGLA 11)",
+    "orden_actividades_dentro_de_sesion": "LLM decide secuencia óptima entre actividades de la misma sesión (warm-up → main task → wrap-up típicamente)",
+    "ratio_directo_autonomo_por_sesion": "LLM puede ajustar reparto directo/autónomo dentro de la sesión (default 5h directo + 1h autónomo · pero variable según tipo_bloque)",
+    "transiciones_entre_sesiones": "LLM puede sugerir bridges/conectores entre sesiones consecutivas"
+  },
+  "aprobaciones": {
+    "pm_2_0_master_v3_0": "Sergio aprobó 2026-05-02 (PM-2.0 + PLAN-FASE-1 v1.5 + PLAN-FASE-2 v1.4 + DM v3.6)",
+    "cascade_phase_1_re_validated": "Sergio aprobó 2026-05-02 · re-cascade Opción A refinada · 23/23 PASS"
+  }
+}
