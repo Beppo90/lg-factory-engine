@@ -1,13 +1,23 @@
 ---
 pm_id: PM-2.11
-name: GFPI-F-134 Row Assembler
+name: GFPI-F-134 Row Assembler · Heredero Cascade Tripartita Final
 phase: 2
 session: null
 fase_sena: Post-diseño
 type: assembler
-version: 2.6.3
+version: 3.0
 created: 2026-04-13
-last_verified: 2026-04-20
+last_verified: 2026-05-02
+status: v3.0 PARADIGM SHIFT FINAL · PM-2.11 hereda cascade Phase 1+2 v3.x COMPLETO (matriz v1.3 + pm-1-1 v2.8 v2 + pm-1-2 v4.2 v2 + pm-2-0 v3.0 + 30+ Activity Cards de PM-2.1/2.2/2.3/2.4/2.5/2.6/2.8/2.9/2.10/3.5/4.2) · genera fila GFPI-F-134 V04 oficial SENA (1 fila multi-RAP · 11 cols) · pm-2-11.json + xlsx output con universo banana cold chain cascade canon · 8 validation_checks BLOQUEANTES · CIERRE Phase 2 boundary
+v3_0_changes:
+  - "NEW REGLA heredancia cascade COMPLETA · consume 30+ Activity Cards v3.0 + matriz v1.3 + pm-1-1 + pm-1-2 + pm-2-0"
+  - "NEW REGLA agregación cols 6-11 GFPI-F-134 V04 desde Activity Cards heredadas"
+  - "NEW REGLA xlsx output V04 oficial SENA (referencia: GFPI-F-134V04 IMARPOR -576c8190.xlsx subido por Sergio 2026-05-02)"
+  - "NEW REGLA universo cascade v3.x canon: banana cold chain · Puerto Antioquia · MV CARIBBEAN STAR · cast 9 personajes (Manuel · Captain Lim · Mariana · Carolina · Yurlenis · Pipa · Hernando · Andrés · Mejía)"
+  - "NEW REGLA instrumentos canon E1-E6+E-Misión: Cuestionario No 1 (E1) · Lista Verificación No 2 (E2) · Lista Chequeo No 3 (E3) · Escala de Estimación No 4 (E4) · Escala de Estimación No 5 (E5) · Cuestionario No 6 (E6) · Rúbrica ABP capstone (E-Misión)"
+  - "NEW REGLA cero invención · todo agregado heredado literal de Activity Cards v3.0"
+  - "Checks v2.6.3 PRESERVADOS (16) + 2 NEW v3.0 = 18 validation_checks total"
+  - "Xlsx subido 2026-05-02 = REFERENCIA formato V04 (NO ground truth contenido · cascade v3.x es canon)"
 changelog:
   - "2.6.3 (2026-04-20) — Check 16 añadido: activity card schema v2.6.3 en pm-3-6.json (12 campos canónicos, 10 tipos de scaffold_inline, 4 campos obsoletos prohibidos, meta.activities_schema_version, badges en 6 evidencias). Bloquea emisión de DOCX si falla. Delega ejecución al script canónico check-activity-card-schema.js. Total de checks: 16."
   - "2.6.1 (2026-04-20) — Check 15 añadido: activity_footer derivado desde upstream (PM-3.1 sessions_logistics + PM-3.2-sX activity_logistics + PM-4.1/PM-4.2 evidencia). Prohíbe footer autoreado en pm-3-5/pm-3-6. Delega ejecución al script canónico check-no-orphan-footer.js. Total de checks: 15."
@@ -1129,3 +1139,62 @@ validation_report:
 *PM-2.11: GFPI-F-134 Row Assembler*  
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*  
 *Versión 2.6.3 — 2026-04-20 (Check 15 añadido en v2.6.1: data-flow inversion del activity_footer · Check 16 añadido en v2.6.3: activity card schema con scaffold_inline embebido)*
+
+---
+
+## EXTENSIÓN v3.0 — PM-2.11 HEREDERO CASCADE FINAL + GFPI-F-134 V04 OFICIAL (2026-05-02)
+
+PM-2.11 v3.0 es el **CIERRE Phase 2 boundary** · agrega TODOS los outputs cascade v3.x en la fila oficial GFPI-F-134 V04 SENA.
+
+### REGLAS NEW v3.0
+
+- **REGLA · Input cascade COMPLETO:** consume:
+  - matriz v1.3 (cols 1-5: competencia + RAPs + saberes + criterios canon)
+  - pm-1-1.json v2.8 v2 (estructura tripartita)
+  - pm-1-2.json v4.2 v2 (scope diferenciado)
+  - pm-2-0.json v3.0 (session blueprint)
+  - **30+ Activity Cards v3.0 de**: PM-2.1 (2) + PM-2.2 (2) + PM-2.3 (1) + PM-2.4 (1) + PM-2.5 (4) + PM-2.6 (4) + PM-2.8 (2) + PM-2.9 (2) + PM-2.10 (5) + PM-3.5 (5) + PM-4.2 (2) = 30 cards
+- **REGLA · Output dual:**
+  - `pm-2-11.json` (estructura JSON canon · 11 cols GFPI-F-134 + validation report)
+  - `pm-2-11-GFPI-F-134-V04.xlsx` (formato V04 oficial SENA · 1 fila multi-RAP · referencia formato: xlsx subido por Sergio 2026-05-02)
+- **REGLA · Universo canon:** banana cold chain Puerto Antioquia MV CARIBBEAN STAR cast 9 personajes (heredado pm-0-context v3.2 · NO Buenaventura del xlsx referencia)
+- **REGLA · Instrumentos canon E1-E6+E-Misión:**
+  - E1: Cuestionario No 1 (PM-2.3 · Reading)
+  - E2: Lista de Verificación No 2 (PM-2.4 · Writing)
+  - E3: Lista de Chequeo No 3 (PM-2.6 · Listening)
+  - E4-parcial: Escala de Estimación No 4 (PM-2.8 S6 · Speaking)
+  - E4-final: Escala de Estimación No 4 (PM-2.8 S8 · Speaking)
+  - E5: Escala de Estimación No 5 (PM-2.9 · Functions)
+  - E6: Cuestionario No 6 (PM-4.2 · Consolidado)
+  - E-Misión: Rúbrica ABP capstone (PM-3.5 · NO numerado)
+- **REGLA · Cero invención:** todo agregado heredado literal de Activity Cards · NO inventar contenido nuevo
+- **REGLA · Validation checks:** 16 v2.6.3 PRESERVADOS + 2 NEW v3.0 = 18 BLOQUEANTES
+
+### NEW Validation checks v3.0 (17, 18)
+
+- **Check 17:** `cascade_completeness` · todas las 30+ Activity Cards v3.0 esperadas presentes y `enriched: true`
+- **Check 18:** `universe_consistency_v3` · zero leak de universo Buenaventura (xlsx referencia) · todo el contenido agregado debe usar universo banana cold chain Puerto Antioquia + MV CARIBBEAN STAR + cast canon
+
+### Estructura cols GFPI-F-134 V04 oficial (heredada de xlsx Sergio 2026-05-02)
+
+```
+C1 COMPETENCIA · C2 RAPs (4 sub-rows) · C4 SABERES_CONCEPTOS (26)
+C5 SABERES_PROCESO (10) · C6 CRITERIOS_EVALUACIÓN (5 SOFÍA + 8 canon C01-C08)
+C7 ACTIVIDADES_DE_APRENDIZAJE (lista con numero_actividad + dimension + V+O+C enunciado)
+C8 HORAS_TRABAJO_DIRECTO (72) · C9 HORAS_TRABAJO_INDEPENDIENTE (28)
+C10 EVIDENCIAS (E1-E6+E-Misión con tipo + nombre + técnica + instrumento)
+C11 ESTRATEGIAS_DIDÁCTICAS_ACTIVAS (agregado por actividad)
+C12 AMBIENTE · C13 MATERIALES_FORMACIÓN · C14 INSTRUCTORES · C15 OBSERVACIONES
+```
+
+### Output esperado IMARPOR-V2
+
+- `pm-2-11.json` v3.0 (estructura JSON 11 cols + heredancia traceability completa)
+- `pm-2-11-GFPI-F-134-V04.xlsx` (formato V04 oficial · 1 fila multi-RAP · listo entrega SENA)
+- 30 actividades agregadas en C7 con universo banana cold chain canon
+- 18/18 validation_checks PASS
+
+---
+
+*PM-2.11 v3.0 · GFPI-F-134 Row Assembler Heredero · CIERRE Phase 2 boundary · pm-2-11.json + xlsx V04 oficial · universo banana cold chain canon · 18 checks BLOQUEANTES*
+*Sergio Cortés decisión 2026-05-02 · cascade Wave 5 IMARPOR-V2 · cierre Step 1.5*
