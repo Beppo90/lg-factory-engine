@@ -1,14 +1,26 @@
 ---
-version: 2.0
-last_verified: 2026-04-13
-session: 3
-fase_sena: "Apropiación"
-activity_type: "cognitiva"
+version: 3.0
+last_verified: 2026-05-02
+sessions_canon_imarpor: ["S2", "S5", "S7", "S9", "S10"]
+session_legacy_v2: 3
+tipo_bloque: "APROPIACION"
+bloques_id_referencia_imarpor: ["B1", "B2", "B3", "B4"]
+raps_target_imarpor: ["RA1", "RA2", "RA3", "RA4"]
+dimension: "cognitiva"
 generates_evidence: false
 evidence_type: null
 contributes_to_cuestionario: true
 cuestionario_skill: "Grammar"
 cuestionario_points: 5
+status: v3.0 PARADIGM SHIFT · PM-2.10 hereda cascade v3.x · emite N Activity Cards v3.0 (típicamente 5 IMARPOR · scaffolds multi-S S2/S5/S7/S9/S10) · NO produce E1-E5 · contribuye a E6 cuestionario consolidado S6 (5 ítems Grammar)
+v3_0_changes:
+  - "session 3 (v2.0) → multi-S [S2, S5, S7, S9, S10] (5 scaffolds)"
+  - "NEW REGLA emisión N Activity Cards v3.0 (1 por sesión scaffold · típico 5 IMARPOR)"
+  - "NEW REGLA evidencias.aplica=false TODAS (scaffold · NO produce E1-E5)"
+  - "NEW REGLA dimension cognitiva todas"
+  - "NEW REGLA grammar items por sesión heredados literal de pm-1-2.Bn.grammar_items_per_rap (excepto S10 rehearsal cross-RAP que consolida)"
+  - "S10 especial: rehearsal_pre_mision_consolidacion_cross_rap (5h · consolida grammar de los 4 RAPs pre-Misión)"
+  - "Arquetipos v2.0 PRESERVADOS"
 ---
 
 # PM-2.10: STRUCTURE USE & GRAMMAR — INDUCTIVE TO AUTOMATIC
@@ -456,3 +468,29 @@ activity_card:
 *Fichero Clínico de Actividades Gramaticales y Estructurales*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+
+---
+
+## EXTENSIÓN v3.0 — PM-2.10 HEREDERO + ACTIVITY CARD v3.0 MULTI-SCAFFOLD (2026-05-02)
+
+PM-2.10 v3.0 hereda cascade v3.x · emite **N Activity Cards v3.0** (típicamente 5 IMARPOR · scaffolds multi-sesión S2/S5/S7/S9/S10) · NO produce E1-E5 · contribuye a E6 cuestionario consolidado S6 (5 ítems Grammar).
+
+### REGLAS NEW v3.0
+
+- **REGLA · Input cascade:** consume pm-2-0 (S2/S5/S7/S9/S10) + pm-1-2.Bn.grammar_items_per_rap (4 RAPs) + S10 especial rehearsal_pre_mision_consolidacion_cross_rap
+- **REGLA · Activity Card v3.0:** N cards (típico 5 IMARPOR) · todas dimension cognitiva · todas evidencias.aplica=false (scaffold · render "No aplica" literal)
+- **REGLA · Diferencias por sesión:**
+  - S2 RA1 (B1 · 2.5h): verb to be · demostrativos · plurales
+  - S5 RA2 (B2 · 1.0h): SMCP syntax (sintaxis estandarizada · NO tense tradicional)
+  - S7 RA3 (B3 · 2.0h): 4 canon (commands/imperative/present simple/modals) + 3 extensiones C05 emergentes (condicional/pasiva/PP)
+  - S9 RA4 (B4 · 1.0h): tag questions · present progressive+prepositional · quantifiers
+  - S10 (B4 rehearsal · 5.0h): consolidación cross-RAP pre-Misión · NO grammar nueva · práctica integrada
+- **REGLA · descripcion 200-600 palabras** patrón canon cada card (target 480-580)
+- **REGLA · Heredancia traceability:** `_anclaje_matriz_heredado` literal por card
+- **REGLA · 7 validation_checks** BLOQUEANTES
+- **Arquetipos v2.0 PRESERVADOS**
+
+---
+
+*PM-2.10 v3.0 · Grammar Multi-Scaffold · Activity Card v3.0 · NO produce E1-E5 · contribuye E6 (5 ítems Grammar)*
+*Sergio Cortés decisión 2026-05-02 · Wave 3 IMARPOR-V2*

@@ -1,14 +1,31 @@
 ---
-version: 2.0
-last_verified: 2026-04-13
-session: 5
-fase_sena: "Apropiación"
-activity_type: "procedimental"
-generates_evidence: true
-evidence_type: "Desempeño"
+version: 3.0
+last_verified: 2026-05-02
+sessions_canon_imarpor: ["S8", "S9"]
+session_legacy_v2: 5
+tipo_bloque: "APROPIACION"
+bloques_id_referencia: ["B3", "B4"]
+raps_target: ["RA3", "RA4"]
+session_anchor: "S9"
+session_scaffold: "S8"
+dimension_anchor: "procedimental"
+dimension_scaffold: "cognitiva"
+generates_evidence_anchor: true
+generates_evidence_scaffold: false
+evidence_type_canon: "Desempeño"
+codigo_canon_evidencia_anchor: "E5"
+criterio_canon_evaluado_anchor: "C06"
+instrumento_canon_anchor: "Escala de Estimación No 5"
 contributes_to_cuestionario: false
 cuestionario_skill: null
 cuestionario_points: 0
+status: v3.0 PARADIGM SHIFT · PM-2.9 hereda cascade v3.x · emite Activity Card v3.0 DUAL (S8 scaffold pre-speaking RA3 NO produce + S9 anchor E5 C06 RA3+RA4 Role Carousel 5 master functions IMARPOR)
+v3_0_changes:
+  - "session 5 → multi-S [S8 scaffold + S9 anchor E5]"
+  - "NEW REGLA emisión 2 Activity Cards v3.0 (DUAL pattern)"
+  - "NEW REGLA evidencias DUAL: S8 aplica=false scaffold · S9 aplica=true E5 C06 (overlap RA3+RA4) · instrumento No 5 Escala de Estimación"
+  - "NEW REGLA Role Carousel 5 stations IMARPOR canon (5 master functions con conectores · canon C06)"
+  - "Arquetipos v2.0 PRESERVADOS"
 ---
 
 # PM-2.9: LANGUAGE FUNCTIONS & COMMUNICATIVE COMPETENCE
@@ -412,3 +429,25 @@ activity_card:
 *Fichero Clínico de Actividades para el Desarrollo de Funciones Lingüísticas*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+
+---
+
+## EXTENSIÓN v3.0 — PM-2.9 HEREDERO + ACTIVITY CARD v3.0 DUAL (2026-05-02)
+
+PM-2.9 v3.0 hereda cascade v3.x · emite **2 Activity Cards v3.0** DUAL (S8 scaffold pre-speaking + S9 anchor Role Carousel E5).
+
+### REGLAS NEW v3.0
+
+- **REGLA · Input cascade:** consume pm-2-0 (S8+S9) + pm-1-2.B3.language_functions_per_rap + pm-1-2.B4.task_speaking_derivada (Role Carousel)
+- **REGLA · Activity Card v3.0 DUAL:**
+  - **S8 scaffold (B3 RA3):** dimension cognitiva · aplica=false · scaffold pre-speaking · 1.5h · render "No aplica" literal
+  - **S9 anchor (B4 RA4 con overlap RA3 cara estructuras):** dimension procedimental · aplica=true · tipo Desempeño · técnica Observación · instrumento No 5 Escala de Estimación · codigo_canon E5 · criterio C06 · 3.5h · Role Carousel 5 stations 5 master functions IMARPOR con conectores discursivos
+- **REGLA · Role Carousel canon:** 5 master functions IMARPOR (describing roles/maneuvers/weather/cargo/chain of command) con conectores (and/but/or/because/so/although) en 5 estaciones rotativas
+- **REGLA · descripcion 200-600 palabras** patrón canon cada card (target 480-580)
+- **REGLA · 7 validation_checks** BLOQUEANTES
+- **Arquetipos v2.0 PRESERVADOS**
+
+---
+
+*PM-2.9 v3.0 · Functions DUAL · scaffold S8 + anchor Role Carousel E5 S9 · instrumento No 5*
+*Sergio Cortés decisión 2026-05-02 · Wave 3 IMARPOR-V2*

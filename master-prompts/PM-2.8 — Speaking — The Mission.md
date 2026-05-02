@@ -1,14 +1,28 @@
 ---
-version: 2.0
-last_verified: 2026-04-13
-session: 4
-fase_sena: "Apropiación"
-activity_type: "procedimental"
+version: 3.0
+last_verified: 2026-05-02
+sessions_canon_imarpor: ["S6", "S8"]
+session_legacy_v2: 4
+tipo_bloque: "APROPIACION"
+bloques_id_referencia: ["B2", "B3"]
+raps_target: ["RA2", "RA3"]
+dimension: "procedimental"
 generates_evidence: true
-evidence_type: "Desempeño"
+evidence_type_canon: "Desempeño"
+codigos_canon_evidencia: ["E4-parcial", "E4-final"]
+criterios_canon_evaluados: ["C04", "C05"]
+instrumento_canon: "Escala de Estimación No 4"
 contributes_to_cuestionario: false
 cuestionario_skill: null
 cuestionario_points: 0
+status: v3.0 PARADIGM SHIFT · PM-2.8 hereda cascade Phase 1 v3.x · emite Activity Card v3.0 · DUAL anchors (S6 E4-parcial C04 RA2+RA3 VHF NATO 2.5h · S8 E4-final C05 RA3 berthing tripartito 4h) · ambos procedimental · instrumento No 4
+v3_0_changes:
+  - "session 4 → multi-S [S6, S8] (ambos anchors · ambos procedimental · ambos producen E4)"
+  - "NEW REGLA heredancia cascade Phase 1 v3.x"
+  - "NEW REGLA emisión 2 Activity Cards v3.0 (S6 + S8) · ambas anchors"
+  - "NEW REGLA evidencias DUAL: S6 E4-parcial C04 (RA2+RA3 overlap SMCP+grammatical) · S8 E4-final C05 (RA3 puro berthing)"
+  - "NEW REGLA mismo instrumento (No 4 Escala de Estimación) usado 2 veces · canon"
+  - "Arquetipos v2.0 PRESERVADOS"
 ---
 
 # PM-2.8: SPEAKING PRODUCTION & SIMULATION — THE MISSION (incl. pronunciation scaffolding activities)
@@ -209,3 +223,25 @@ activity_card:
 *PM-2.8: Speaking Production & Simulation — The Mission*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+
+---
+
+## EXTENSIÓN v3.0 — PM-2.8 HEREDERO + ACTIVITY CARD v3.0 DUAL ANCHORS (2026-05-02)
+
+PM-2.8 v3.0 hereda cascade Phase 1 v3.x · emite **2 Activity Cards v3.0** · ambas anchors Speaking · ambas dimension procedimental · ambas producen evidencia formal con instrumento canon No 4 Escala de Estimación.
+
+### REGLAS NEW v3.0
+
+- **REGLA · Input cascade:** consume pm-2-0 (S6+S8) + pm-1-2.B2.task_speaking_derivada (E4-parcial) + pm-1-2.B3.task_speaking_derivada (E4-final)
+- **REGLA · Activity Card v3.0 DUAL:**
+  - **S6 anchor (B2 RA2 con overlap RA3):** dimension procedimental · aplica=true · tipo Desempeño · técnica Observación · instrumento No 4 Escala de Estimación · codigo_canon E4-parcial · criterio C04 · 2.5h · VHF NATO Phonetic
+  - **S8 anchor (B3 RA3 puro):** dimension procedimental · aplica=true · tipo Desempeño · técnica Observación · instrumento No 4 Escala de Estimación · codigo_canon E4-final · criterio C05 · 4.0h · berthing tripartito (modales+condicional+pasiva+presente perfecto extensiones C05)
+- **REGLA · descripcion 200-600 palabras** patrón canon cada card (target 480-580 sweet spot)
+- **REGLA · Heredancia traceability:** `_anclaje_matriz_heredado` literal por card
+- **REGLA · 7 validation_checks** BLOQUEANTES
+- **Arquetipos v2.0 PRESERVADOS** (LLM elige)
+
+---
+
+*PM-2.8 v3.0 · Speaking DUAL Anchors · Activity Card v3.0 · E4-parcial S6 + E4-final S8 · instrumento No 4*
+*Sergio Cortés decisión 2026-05-02 · Wave 3 IMARPOR-V2*
