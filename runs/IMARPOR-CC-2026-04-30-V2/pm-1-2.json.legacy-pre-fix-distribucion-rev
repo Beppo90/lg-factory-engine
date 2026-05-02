@@ -1,0 +1,1207 @@
+{
+  "pm_id": "PM-1.2",
+  "pm_name": "Scope & Sequence + Curación · Tripartita Diferenciada",
+  "pm_version": "4.2",
+  "run_id": "IMARPOR-CC-2026-04-30-V2",
+  "guide_id": "IMARPOR-CC-V2-G1",
+  "generated_date": "2026-05-01",
+  "instructor": "Sergio Cortés Perdomo",
+  "co_instructor": "Diana Rocío Samboni",
+
+  "_pm11_ref": {"file": "pm-1-1.json", "version": "2.8", "bloques_count": 6, "uso": "estructura tripartita heredada · 1 APERTURA + 4 APROPIACIÓN + 1 TRANSFERENCIA · _anclaje_matriz heredado"},
+  "_pm00_matriz_ref": {"file": "pm-0-0-matriz-alineada.json", "version": "1.1", "criterios_canon": "C01-C08", "uso": "8 criterios canon · 4 RAPs · saberes_conceptos + saberes_proceso heredados"},
+  "_pm0_context_ref": {"file": "pm-0-context.json", "version": "3.1", "uso": "universo banana cold chain · 8 personajes · grammar focus canon-aligned · escenario hero · L1 policy"},
+  "_via_curacion_aplicada": "IA (vía 1 v2.6) · LLM curó 8 fuentes (Story A + Story B por cada uno de 4 RAPs) aplicando 8 filtros canon · diversidad de géneros entre RAPs",
+
+  "meta_bloque_presentacion_l1": {
+    "tipo": "META_BLOQUE_ONBOARDING",
+    "alcance": "programa_entero",
+    "lengua": "español",
+    "narrativa_l1": "Bienvenidos al Curso Complementario de Inglés Marítimo y Portuario · Línea Banana/Cold Chain del Centro de Bilingüismo SENA. Durante 12 sesiones (72 horas directas + 28 horas autónomas) van a recorrer junto a Manuel Padilla · un Junior Reefer Operator de Apartadó recién promovido al Cold Chain Technician Track · el ciclo real de exportación banana en Puerto Antioquia (Necoclí · Urabá): desde el reconocimiento del reefer container y de los oficios bananeros · pasando por la comprensión de las frases estandarizadas IMO en VHF · la aplicación gramatical en reportes operacionales · hasta la descripción profesional de funciones ante un panel evaluador internacional el día de la Misión Final. La meta es A2.1: que ustedes salgan capaces de defender en inglés el banano colombiano que ya saben proteger en español.",
+    "objetivos_l1": [
+      "Reconocer vocabulario portuario fundamental (partes del reefer ship · oficios bananeros · equipos de seguridad y navegación) en textos auténticos adaptados (RA1)",
+      "Comprender frases estandarizadas IMO (SMCP · NATO Phonetic · message markers · standard responses) en audio VHF auténtico con lingua franca no-nativa (RA2)",
+      "Aplicar reglas gramaticales básicas (verb to be · plurals · imperative · present simple · tag questions · present progressive · quantifiers · modales · y estructuras emergentes condicional/pasiva/presente perfecto) en comunicación puerto-buque (RA3)",
+      "Describir funciones profesionales del rol portuario aplicando estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to) y tag questions ante panel evaluador en Misión Final ABP (RA4)",
+      "Sostener la integridad de la cadena de frío banana cold chain como compromiso ético-pedagógico transversal (P6 emergente sector)"
+    ],
+    "encuadre_l1": "Estructura tripartita: (1) APERTURA S1 · 6h · spark afectivo + diagnóstico baseline (NO hay evidencias formales · NO se les califica nada · solo medimos punto de partida y encendemos universo). (2) APROPIACIÓN S2-S10 · 54h · 4 bloques de evidencias formales canónicas: E1 Reading S3 (Cuestionario No 1 · ≥70% PASS) · E2 Writing S4 (Lista de Verificación No 2 · Inspection Report banana) · E3 Listening S5 (Lista de Verificación No 3 · audio VHF auténtico) · E4-parcial Speaking S6 (Escala de Estimación No 4 · NATO Phonetic + SMCP responses) · E6 Cuestionario Consolidado S6 (Cuestionario No 6 · 25 ítems integrados · ≥70% PASS · checkpoint medio) · E4-final Speaking S8 (Escala de Estimación No 4 · berthing tripartito) · E5 Language Functions S9 (Escala de Estimación No 5 · Role Carousel 5 master functions). (3) TRANSFERENCIA S11-S12 · 12h · Misión Final ABP capstone E-Misión (Rúbrica ABP 6 criterios C01-C13 · panel tripartito 90 min · 100% L2). El L1 (español) decrece progresivamente: ≤25% S1-S3 · ≤10% S4-S6 · ≤5% S7-S9 · 0% S10-S12. Aceptación: la firma fitosanitaria en inglés y la VHF en SMCP no admiten ambigüedad bilingüe; cada palabra equivocada cuesta dinero real (un contenedor de banana cuesta ~25,000 USD).",
+    "rol_instructor": "Sergio Cortés (líder) + Diana Rocío Samboni (co-instructora) · facilitadores · NO traductores · custodios del L1 huddle ceremonial S1-S3 (3 min seguridad cold chain en español) · evaluadores formales con instrumentos canónicos · Hernando Ospina (custodio in-universe del stand-down) lidera el ritual de apertura.",
+    "_aplicabilidad": "previo_a_S1_apertura · sesión 0 onboarding · 30 min L1 antes del primer Spark de B0",
+    "_anclaje_matriz": {
+      "alcance": "competencia_completa_y_8_evidencias_canon",
+      "raps_presentados": ["RA1", "RA2", "RA3", "RA4"],
+      "evidencias_presentadas": ["E1", "E2", "E3", "E4-parcial", "E6", "E4-final", "E5", "E-Misión"],
+      "criterios_canon_presentados": ["C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08"]
+    }
+  },
+
+  "sub_bloques_tripartitos": [
+    {
+      "bloque_id": "B0",
+      "tipo_bloque": "APERTURA",
+      "scope_diferenciado": "transversal_motivacional_diagnostico",
+      "titulo": "Welcome Aboard the Cold Chain · Spark & Diagnostic Stand-Down",
+      "sesiones_anchor": ["S1"],
+      "horas_directas": 6,
+      "cefr_subnivel_entrada": "A1.1 → A1.2",
+
+      "_restriccion_canon": "REGLA 11.A · Acá NO inicia construcción de conocimiento ni habilidades nuevas · NO se enseña vocab nuevo para retención · NO grammar items target · NO Story A/B clásica · NO produce evidencias formales E1-E6. SOLO motivacional + diagnóstico baseline + activación de aprendizajes previos del aprendiz.",
+
+      "materiales_spark": [
+        {
+          "arquetipo_target": "PM-2.1 Spark #1 · Real-Artifact Spark",
+          "tipo_recurso": "real_artifact",
+          "descripcion": "Tour visual presencial del reefer yard del Terminal Multipropósito de Urabá · Manuel Padilla guía la primera caminata con realia: 1 cluster Cavendish completo con plastic film bagging y sello GlobalGAP · 1 termómetro digital encendido mostrando 13.3°C · 1 reefer plug demo (cable + receptáculo) · señalética bilingüe del muelle (NO SMOKING · COLD CHAIN ZONE · MUSTER STATION · GENSET WARNING) · 1 cascos PPE rotulado · 1 ATP certificate sample. Aprendices observan + tocan + huelen el sector. Hernando Ospina aporta voz custodia del ritual stand-down al final del tour (3 min L1 huddle ceremonial sobre seguridad cold chain).",
+          "fuente": "Realia in-situ Terminal Multipropósito Urabá + ATP/GlobalGAP/Rainforest Alliance certificate samples (instructor curated)",
+          "duracion_estimada_min": 60,
+          "enfoque_motivacional": "Anclaje afectivo sector banana cold chain · 'esto es lo que vamos a defender en inglés durante 12 sesiones · ese cluster que tocas hoy viaja 14 días al norte y depende de cada eslabón'. Sergio canon: el sector banana es ya conocido emocionalmente por los aprendices del Eje Bananero · spark debe activar orgullo + responsabilidad · NO enseñar contenido.",
+          "primer_acercamiento_a_temas": [
+            "Reconocimiento físico del reefer container (RA1 · UNIT 1)",
+            "Vocabulario visual de equipos navegación/seguridad (RA1 · NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT)",
+            "Señalética operacional bilingüe (RA4 · UNIT 4 IN PORT)",
+            "Terminología cold chain extensión sectorial (banana cluster · setpoint · GlobalGAP)"
+          ],
+          "_anclaje_matriz": {
+            "alcance": "competencia_completa",
+            "raps_atravesados": ["RA1", "RA2", "RA3", "RA4"],
+            "saberes_canon_pre_activados": ["UNIT 1 SHIP OVERVIEW", "PARTS OF THE SHIPS", "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT", "UNIT 4 IN PORT", "CONTAINERIZATION"]
+          },
+          "_produces_evidencia": null,
+          "_consumed_by_pm": "PM-2.1"
+        },
+        {
+          "arquetipo_target": "PM-2.1 Spark #2 · Stakes-Personal Spark",
+          "tipo_recurso": "video",
+          "descripcion": "Video corto bilingüe (4 min) co-narrado por Carolina Vélez (Pilot · primera mujer pilota práctica del Terminal · B2 técnico) y Mariana Suárez (Cold Chain Coordinator + ICA Phytosanitary Liaison · B2 técnico). Carolina muestra una llamada VHF real (snippet 30 seg) en inglés operacional · Mariana muestra su firma en un certificado fitosanitario ICA (en inglés) y narra: 'Sin esta firma · este contenedor de 25,000 USD no sale del puerto · y tiene que estar en perfecto inglés porque cualquier ambigüedad bilingüe en una alarma de temperatura cuesta el contenedor entero'. Cierre L1: aprendices responden en parejas micro-question oral · 1 minuto · '¿Qué te asusta más del inglés portuario?'. Última aparición canónica de huddle bilingüe extenso · cierra ceremonialmente al final de S3 según L1 policy PM-0.",
+          "fuente": "Producción in-house FPI SENA con Carolina Vélez + Mariana Suárez como narradoras (filmado en Terminal de Urabá · NO actores · personajes reales del universo)",
+          "duracion_estimada_min": 15,
+          "enfoque_motivacional": "Anclaje afectivo stakes-personal · 'la firma fitosanitaria en inglés es el último filtro antes de Hamburgo · ustedes serán quienes redacten · validen y firmen Inspection Reports adyacentes a este certificado'. Sergio canon: stakes personales > abstracción curricular · Carolina (mujer pilota) modela techo realista · Mariana modela responsabilidad operacional inmediata.",
+          "primer_acercamiento_a_temas": [
+            "Inglés operacional VHF (RA2 · SMCP · primera exposición auditiva no formal)",
+            "Inglés escrito en certificación fitosanitaria (RA1+RA3 · Inspection Report adjacency)",
+            "Roles femeninos técnicos en industria portuaria (RA1 · UNIT 2 PROFESSIONS)",
+            "Stakes económicos cold chain (P6 emergente sector)"
+          ],
+          "_anclaje_matriz": {
+            "alcance": "competencia_completa",
+            "raps_atravesados": ["RA1", "RA2", "RA3", "RA4"],
+            "saberes_canon_pre_activados": ["UNIT 2 THE CREW", "PROFESSIONS IN PORT AND ABOARD", "UNIT 5 SMCP (vista panorámica)"]
+          },
+          "_produces_evidencia": null,
+          "_consumed_by_pm": "PM-2.1"
+        },
+        {
+          "arquetipo_target": "PM-2.2 Gap Analysis #1 · Visual Vocab Diagnostic",
+          "tipo_recurso": "imagen",
+          "descripcion": "Tarea diagnóstica low-stakes de reconocimiento visual A1.1/A1.2 · 12 ítems con fotos reales (NO ilustraciones · NO IA-generated): 6 partes del reefer ship (bow · stern · bridge · hold · reefer plug · genset) + 6 oficios bananeros con personas reales en su estación de trabajo (stevedore · tally clerk · cold chain coordinator · refrigeration technician · bosun · pilot). Aprendices marcan/etiquetan en inglés en formato match-the-photo (palabra → foto) · sin tiempo límite · sin penalización · puede dejar en blanco. Resultado se registra solo para calibrar punto de partida lexical RA1 antes de B1 (NO se califica · NO se devuelve corregido · es solo termómetro).",
+          "fuente": "Banco fotográfico in-house FPI SENA + fotos reales reefer ship Star Reefers (creative commons / instructor-licensed)",
+          "duracion_estimada_min": 30,
+          "enfoque_motivacional": "Diagnóstico cero-amenaza · 'no es un examen · es una foto del aula hoy · ustedes mismos lo necesitan saber para entender por qué algunas cosas las repasamos despacio y otras volamos'. Sergio canon: diagnóstico debe ser bajo en afecto negativo · alto en transparencia metodológica.",
+          "primer_acercamiento_a_temas": [
+            "Vocabulario portuario visual baseline RA1 (PARTS OF THE SHIPS)",
+            "Reconocimiento oficios bananeros (UNIT 2 PROFESSIONS)",
+            "Self-awareness lexical del aprendiz"
+          ],
+          "_anclaje_matriz": {
+            "alcance": "diagnostico_baseline_RA1",
+            "raps_atravesados": ["RA1"],
+            "saberes_canon_diagnosticados": ["PARTS OF THE SHIPS", "PROFESSIONS IN PORT AND ABOARD"]
+          },
+          "_produces_evidencia": null,
+          "_consumed_by_pm": "PM-2.2"
+        },
+        {
+          "arquetipo_target": "PM-2.2 Gap Analysis #2 · Listening Snippet Diagnostic",
+          "tipo_recurso": "testimonio",
+          "descripcion": "Audio breve (90 segundos) de un VHF arrival exchange real Star Reefers/Seatrade · grabación auténtica (NO actuada · NO sintética) con lingua franca B1 no-nativa de un capitán singapurense + bridge officer colombiano-bilingüe + bosun caribeño. Pregunta diagnóstica única (oral · L1 permitido): '¿Qué entendiste? · ¿qué palabras reconociste? · ¿hay algo que sonó como inglés pero no entendiste?'. Permite que los aprendices se confronten con el lingua franca B1 no-nativa que les espera en S5 E3 · activa expectativa SMCP para B2. Resultado registrado para calibrar punto de partida auditivo RA2 (NO calificado).",
+          "fuente": "Grabación VHF real Star Reefers arrival exchange (instructor-licensed · 2024) · transcript NO mostrado en S1 · se mostrará en S5 como anchor de E3",
+          "duracion_estimada_min": 20,
+          "enfoque_motivacional": "Confrontación honesta con la complejidad real del input · 'esto es lo que oirán en S5 · está bien si hoy entienden 0 palabras · al final del programa entenderán esto y mucho más'. Sergio canon: spark también puede ser challenge realista que dimensione el viaje.",
+          "primer_acercamiento_a_temas": [
+            "Audio VHF lingua franca B1 no-nativa (RA2 · UNIT 5 SMCP exposición previa)",
+            "Anticipación de E3 Listening S5 (C03)",
+            "Self-awareness auditivo del aprendiz"
+          ],
+          "_anclaje_matriz": {
+            "alcance": "diagnostico_baseline_RA2",
+            "raps_atravesados": ["RA2"],
+            "saberes_canon_diagnosticados": ["UNIT 5 SMCP exposición auditiva previa"]
+          },
+          "_produces_evidencia": null,
+          "_consumed_by_pm": "PM-2.2"
+        }
+      ],
+
+      "vocabulario_diagnostico": [
+        {"termino": "reefer container", "definicion_l1_o_visual": "Contenedor refrigerado · imagen del reefer en yard", "_proposito": "diagnostico_NO_apropiacion", "_anclaje_matriz": {"raps_atravesados": ["RA1", "RA4"]}},
+        {"termino": "cold chain", "definicion_l1_o_visual": "Cadena de frío · concepto sectorial transversal", "_proposito": "diagnostico_NO_apropiacion", "_anclaje_matriz": {"raps_atravesados": ["RA1", "RA4"]}},
+        {"termino": "stevedore", "definicion_l1_o_visual": "Estibador · imagen del oficio bananero", "_proposito": "diagnostico_NO_apropiacion", "_anclaje_matriz": {"raps_atravesados": ["RA1"]}},
+        {"termino": "tally clerk", "definicion_l1_o_visual": "Tarjador / contador de carga · imagen Yurlenis Córdoba", "_proposito": "diagnostico_NO_apropiacion", "_anclaje_matriz": {"raps_atravesados": ["RA1"]}},
+        {"termino": "pilot", "definicion_l1_o_visual": "Pilota práctica · imagen Carolina Vélez", "_proposito": "diagnostico_NO_apropiacion", "_anclaje_matriz": {"raps_atravesados": ["RA1"]}},
+        {"termino": "VHF", "definicion_l1_o_visual": "Very High Frequency radio · imagen del equipo", "_proposito": "diagnostico_NO_apropiacion", "_anclaje_matriz": {"raps_atravesados": ["RA2"]}},
+        {"termino": "SMCP", "definicion_l1_o_visual": "Standard Marine Communication Phrases · sigla IMO", "_proposito": "diagnostico_NO_apropiacion", "_anclaje_matriz": {"raps_atravesados": ["RA2"]}},
+        {"termino": "setpoint", "definicion_l1_o_visual": "Temperatura objetivo del reefer · 13.3°C banana", "_proposito": "diagnostico_NO_apropiacion", "_anclaje_matriz": {"raps_atravesados": ["RA1", "RA3"]}},
+        {"termino": "phytosanitary certificate", "definicion_l1_o_visual": "Certificado fitosanitario ICA · imagen", "_proposito": "diagnostico_NO_apropiacion", "_anclaje_matriz": {"raps_atravesados": ["RA4"]}},
+        {"termino": "muster station", "definicion_l1_o_visual": "Punto de encuentro emergencia · señal del muelle", "_proposito": "diagnostico_NO_apropiacion", "_anclaje_matriz": {"raps_atravesados": ["RA4"]}},
+        {"termino": "genset", "definicion_l1_o_visual": "Generador eléctrico de respaldo del reefer", "_proposito": "diagnostico_NO_apropiacion", "_anclaje_matriz": {"raps_atravesados": ["RA1"]}},
+        {"termino": "banana cluster", "definicion_l1_o_visual": "Racimo de banana Cavendish · realia en mano", "_proposito": "diagnostico_NO_apropiacion", "_anclaje_matriz": {"raps_atravesados": ["RA1", "RA4"]}}
+      ],
+
+      "aprendizajes_previos_a_activar": [
+        {
+          "saber_previo": "Conocimiento operacional sectorial banana en L1 (los aprendices ya saben qué es un cluster · pre-cooling · setpoint · GlobalGAP en español de la jerga local)",
+          "como_se_diagnostica": "Conversación grupal abierta L1 durante el tour del reefer yard · instructor mapea qué saben en español para luego prestar las palabras inglesas correctas · NO interrogación · es activación afectiva del orgullo sectorial",
+          "_anclaje_matriz": {"raps_target": ["RA1", "RA4"], "saberes_canon_que_amplifica": ["UNIT 4 IN PORT (CONTAINERIZATION + PACKING + MANEUVERING)", "extensiones sector banana cold chain"]}
+        },
+        {
+          "saber_previo": "Vocabulario inglés A1.1 baseline (alfabeto · números 1-100 · saludos básicos · colores · días) cubierto como prereq SOFÍA",
+          "como_se_diagnostica": "Visual Vocab Diagnostic (12 ítems match-photo) + pregunta oral 'How do you say cero punto tres in English?' al ver el termómetro digital · NO calificado · solo termómetro lexical",
+          "_anclaje_matriz": {"raps_target": ["RA1"], "saberes_canon_que_amplifica": ["PARTS OF THE SHIPS (lexical baseline)", "PROFESSIONS (lexical baseline)"]}
+        },
+        {
+          "saber_previo": "Capacidad de tolerar input auditivo no-comprendido sin pánico (resiliencia auditiva)",
+          "como_se_diagnostica": "Listening Snippet Diagnostic (90 seg VHF lingua franca B1 no-nativa) + observación instructor de respuestas afectivas · marca quiénes se cierran emocionalmente vs quiénes piden repetir",
+          "_anclaje_matriz": {"raps_target": ["RA2"], "saberes_canon_que_amplifica": ["UNIT 5 SMCP (preparación afectiva pre-E3)"]}
+        },
+        {
+          "saber_previo": "Identificación visual de safety signage en el muelle (PPE · NO SMOKING · MUSTER STATION · COLD CHAIN ZONE)",
+          "como_se_diagnostica": "Recorrido por la señalética bilingüe durante el tour · aprendices marcan en su PPE checklist visual qué señal reconocen y qué señal NO · activa contexto safety transversal",
+          "_anclaje_matriz": {"raps_target": ["RA4"], "saberes_canon_que_amplifica": ["UNIT 4 IN PORT", "MODAL VERBS uso PROHIBITION/POSSIBILITY (RA3↔RA4 overlap)"]}
+        }
+      ],
+
+      "contexto_general_raps_presentado": {
+        "narrativa_introduccion": "Manuel Padilla (24 años · de Apartadó · técnico SENA · recién promovido al Cold Chain Technician Track) cruza el portón del Terminal Multipropósito de Urabá en su primer día con el casco PPE puesto. Hernando Ospina (custodio del stand-down · ex-marino mercante) lo recibe junto a Carolina Vélez (Pilot) · Mariana Suárez (ICA Liaison) · Yurlenis Córdoba (Tally Clerk) · Pipa Hinestroza (Refrigeration Tech) · Bosun Andrés Mejía. El MV CARIBBEAN STAR está esperando atraque · su capitán singapurense Lim Wei-Ming hablará por VHF en lingua franca B1 no-nativa. Manuel y los aprendices entienden que en 12 sesiones tendrán que poder defender el banano colombiano en inglés frente a este capitán y su tripulación. Las 4 grandes preguntas del programa son: (1) ¿Cómo nombro lo que veo? · (2) ¿Cómo entiendo lo que oigo en VHF? · (3) ¿Cómo aplico la gramática para reportar y pedir? · (4) ¿Cómo describo lo que hago como Cold Chain Technician?",
+        "raps_overview": [
+          {
+            "rap_id": "RA1",
+            "presentacion_corta": "RECONOCER vocablos básicos del reefer ship · partes del barco · oficios bananeros · equipos de seguridad y navegación. Verbo cognitivo: RECONOCER. Sesiones anchor: S2-S4 (3 sesiones por densidad lexical fundacional).",
+            "rol_en_pipeline": "Fundación lexical del programa · alimenta E1 Reading S3 + E2 Writing S4 (cara léxica overlap RA1+RA3) + E6 sección Vocabulary",
+            "evidencias_del_rap": ["E1 (C01 · S3)", "E2 cara RA1 (C02 · S4)"],
+            "_anclaje_matriz": {"criterios_canon": ["C01", "C02 (overlap)", "C07 (overlap 4-way)"]}
+          },
+          {
+            "rap_id": "RA2",
+            "presentacion_corta": "COMPRENDER frases estandarizadas IMO (SMCP · NATO Phonetic · message markers · standard responses) en audio VHF auténtico con lingua franca B1 no-nativa. Verbo cognitivo: COMPRENDER. Sesiones anchor: S5-S6 (incluye S6 densa con 2 evidencias).",
+            "rol_en_pipeline": "Bloque SMCP único del programa · alimenta E3 Listening S5 + E4-parcial Speaking S6 (cara RA2 producción reactiva) + E6 sección Listening checkpoint medio",
+            "evidencias_del_rap": ["E3 (C03 · S5)", "E4-parcial cara RA2 (C04 · S6)", "E6 (C07 · S6)"],
+            "_anclaje_matriz": {"criterios_canon": ["C03", "C04 (overlap)", "C07 (overlap 4-way)"]}
+          },
+          {
+            "rap_id": "RA3",
+            "presentacion_corta": "APLICAR reglas gramaticales básicas (verb to be · plurals · imperative · present simple · tag questions · present progressive · quantifiers · modales · y emergentes condicional/pasiva/presente perfecto) en comunicación puerto-buque. Verbo cognitivo: APLICAR. Sesiones anchor: S7-S8 (RA con mayor densidad de criterios canon · 5).",
+            "rol_en_pipeline": "Gramática como herramienta operacional · alimenta E2 Writing cara RA3 + E4-parcial cara RA3 + E4-final S8 (C05 1:1) + E5 cara RA3 conectores + E6 sección Grammar",
+            "evidencias_del_rap": ["E2 cara RA3 (C02 · S4)", "E4-parcial cara RA3 (C04 · S6)", "E4-final (C05 · S8)", "E5 cara RA3 (C06 · S9)", "E6 (C07 · S6)"],
+            "_anclaje_matriz": {"criterios_canon": ["C02", "C04", "C05", "C06", "C07"]}
+          },
+          {
+            "rap_id": "RA4",
+            "presentacion_corta": "DESCRIBIR funciones habituales/momentáneas del personal y elementos en contexto marítimo-portuario · 5 master functions IMARPOR + estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to). Verbo cognitivo: DESCRIBIR. Sesiones anchor: S9-S10 + capstone S12.",
+            "rol_en_pipeline": "Cierre descriptivo profesional · alimenta E5 Language Functions S9 (C06 cara RA4 5 master functions) + E-Misión S12 (C08 capstone)",
+            "evidencias_del_rap": ["E5 cara RA4 (C06 · S9)", "E-Misión (C08 · S12)"],
+            "_anclaje_matriz": {"criterios_canon": ["C06", "C07 (overlap 4-way)", "C08"]}
+          }
+        ]
+      },
+
+      "transversalidad_justificacion": "B0 APERTURA es transversal a la competencia completa porque su función es activar emocionalmente los 4 RAPs del programa simultáneamente sin construir conocimiento nuevo · diagnosticar baseline lexical (RA1) y auditivo (RA2) · y onboardar al universo banana cold chain Puerto Antioquia + 8 personajes. NO ancla 1 RAP particular · alimenta arquetipos PM-2.1 (Spark afectivo · 2 arquetipos: Real-Artifact + Stakes-Personal) y PM-2.2 (Gap Analysis · 2 arquetipos: Visual Vocab + Listening Snippet). NO produce evidencias formales E1-E5 (todas las E1-E5 nacen en bloques APROPIACIÓN posteriores).",
+
+      "_anclaje_matriz_bloque": {
+        "alcance": "competencia_completa",
+        "raps_atravesados": ["RA1", "RA2", "RA3", "RA4"],
+        "pms_destino": ["PM-2.1", "PM-2.2"],
+        "arquetipos_target": 4,
+        "evidencias_target": [],
+        "criterios_canon": [],
+        "rationale_transversalidad": "Apertura transversal · NO ancla 1 RAP particular · activa anticipadamente saberes/oficios/escenarios de los 4 RAPs como spark + diagnóstico baseline · alimenta arquetipos PM-2.1 (Spark) y PM-2.2 (Gap Analysis) · heredado de pm-1-1.json B0"
+      }
+    },
+    {
+      "bloque_id": "B1",
+      "tipo_bloque": "APROPIACION",
+      "scope_diferenciado": "completo_por_rap",
+      "rap_target": "RA1",
+      "titulo": "The Reefer Ship Vocabulary · Recognizing Vessel Parts & Port Crew",
+      "sesiones_anchor": ["S2", "S3", "S4"],
+      "horas_directas": 18,
+      "cefr_subnivel": "A1.2 → A1.3",
+
+      "story_a_reading": {
+        "titulo": "Inside a Reefer Container: How Bananas Stay Cold from Urabá to Hamburg",
+        "texto_o_url": "https://www.maersk.com/news/articles/2024/03/15/banana-reefer-cold-chain-explained (adaptado A1.2 · 215 palabras · narra el viaje del cluster Cavendish desde el reefer plug-in en el Terminal de Urabá hasta la descarga en Hamburg · introduce parts del reefer ship: bow · stern · bridge · hold · reefer plug · genset · y oficios: stevedore · tally clerk · cold chain coordinator · pilot · bosun)",
+        "extension_palabras": 215,
+        "cefr_subnivel": "A1.2",
+        "genero_textual": "artículo de industria adaptado",
+        "filtros_aplicados_8": [
+          "1.Autenticidad: PASS · publicación Maersk Insights real verificable",
+          "2.Recencia: PASS · marzo 2024 (≤3 años)",
+          "3.Relevancia ESP: PASS · directo a sub-sector banana cold chain + ruta Urabá-Hamburg + entorno reefer terminal",
+          "4.Accesibilidad lingüística: PASS · texto original B1 adaptado a A1.2 manteniendo verb to be + plurals + present simple en contexto técnico",
+          "5.Riqueza vocab técnico: PASS · contiene 17 de los 20 términos canon RA1 (parts of ship + professions)",
+          "6.Gancho motivacional: PASS · narrativa de viaje banana resuena con orgullo regional Urabá",
+          "7.Diversidad de género: PASS · artículo de industria (diferente del audio VHF de Story B + casos B2/B3/B4)",
+          "8.Potencial visual: PASS · fotos reales del reefer container + cold chain infografía reutilizable Canva"
+        ],
+        "ficha_curacion": {
+          "metadatos": {"titulo_original": "Inside a Reefer Container", "autor": "Maersk Cold Chain Editorial", "publicacion": "Maersk Insights", "fecha": "2024-03-15", "url": "https://www.maersk.com/news/articles/2024/03/15/banana-reefer-cold-chain-explained", "genero": "artículo de industria"},
+          "resumen_3_oraciones": "El artículo narra el viaje completo de un reefer container con bananas Cavendish desde el plug-in en el Terminal de Urabá hasta la descarga en Hamburg. Describe los actores clave (stevedore · tally clerk · cold chain coordinator · pilot · bosun) y las partes físicas del reefer ship (bow · stern · bridge · hold · reefer plug · genset). Subraya que el setpoint de 13.3°C debe mantenerse durante 14 días sin interrupción.",
+          "relevancia_esp": "Sub-sector banana cold chain explícito · ruta Urabá → Europa · entorno reefer terminal idéntico al Terminal Multipropósito de Urabá",
+          "vocabulario_extraible_15": ["reefer container", "reefer plug", "genset", "bow", "stern", "bridge", "hold", "stevedore", "tally clerk", "cold chain coordinator", "pilot", "bosun", "setpoint", "banana cluster", "Cavendish"],
+          "funciones_tblt_soporta": ["Describing", "Classifying", "Reporting"],
+          "estructuras_gramaticales_naturales": ["Verb To Be", "Have/Has", "Present Simple", "Demonstratives", "Articles", "Plural nouns"],
+          "hots_activa": ["Remember", "Understand", "Apply"],
+          "rol_propuesto": "Story A → Reading Anchor PM-2.3 (E1 S3)",
+          "notas_adaptacion": {"mantener_tal_cual": "Vocabulario técnico parts + professions", "simplificar_para_a1": "Reducir oraciones >15 palabras · cambiar pasiva a activa donde no sea fitosanitaria", "potencial_visual": "Fotos reefer container + cold chain infografía + mapa Urabá-Hamburg"}
+        },
+        "_produces_evidencia": "E1",
+        "_consumed_by_pm": "PM-2.3",
+        "_anclaje_matriz": {
+          "rap_target": "RA1",
+          "saberes_que_demanda": ["UNIT 1 SHIP OVERVIEW", "PARTS OF THE SHIPS", "TYPES OF MERCHANT VESSELS", "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT", "UNIT 2 PROFESSIONS IN PORT AND ABOARD"],
+          "criterios_canon_que_evalua": ["C01"]
+        }
+      },
+
+      "story_b_listening": {
+        "titulo": "Reefer Yard Walkaround: Cold Chain Coordinator Briefing (Apartadó · 2024)",
+        "audio_o_url": "Audio in-house grabado en Terminal Multipropósito de Urabá · Cold Chain Coordinator real (proxy de Mariana Suárez) hace walkaround de 95 segundos describiendo: 'This is the reefer yard. We have twenty reefer plugs in bay 14. Each plug connects to a reefer container. The setpoint is 13.3 degrees Celsius. Stevedores load the bananas. The tally clerk counts the clusters. The pilot guides the ship to the berth.' Lengua: inglés A1.2-A1.3 · acento colombiano-bilingüe · velocidad pausada · 0 lingua franca extranjera (eso entra en B2 con Captain Lim).",
+        "duracion_segundos": 95,
+        "transcript": "Welcome to the reefer yard. This is the reefer yard. We have twenty reefer plugs in bay 14. Each plug connects to a reefer container. The setpoint is 13.3 degrees Celsius. The reefer container has a genset for backup power. Stevedores load the bananas. The tally clerk counts the clusters. The pilot guides the ship to the berth. The bosun supervises the deck crew. The cold chain coordinator monitors the temperature logs. We do this every day. This is how the cold chain stays cold from Urabá to Hamburg.",
+        "genero_textual": "audio walkaround testimonial in-house",
+        "filtros_aplicados_8": [
+          "1.Autenticidad: PASS · grabación real Terminal Urabá 2024 (NO sintética)",
+          "2.Recencia: PASS · 2024",
+          "3.Relevancia ESP: PASS · reefer yard + cold chain coordinator + mismo personaje universo (Mariana proxy)",
+          "4.Accesibilidad lingüística: PASS · A1.2-A1.3 · verb to be + present simple en contexto técnico",
+          "5.Riqueza vocab técnico: PASS · 16 de 20 términos canon RA1",
+          "6.Gancho motivacional: PASS · voz real del Terminal de Urabá",
+          "7.Diversidad de género: PASS · audio walkaround (diferente del artículo de Story A)",
+          "8.Potencial visual: PASS · transcript + fotos del reefer yard reutilizables"
+        ],
+        "ficha_curacion": {
+          "metadatos": {"titulo_original": "Reefer Yard Walkaround", "autor": "FPI SENA in-house production", "publicacion": "Banco audio FPI SENA Bilingüismo", "fecha": "2024-08-10", "url": "internal://fpi-sena/audio/imarpor-cc/B1-walkaround.mp3", "genero": "audio walkaround"},
+          "resumen_3_oraciones": "Walkaround auditivo de 95 segundos por el reefer yard del Terminal Urabá. La Cold Chain Coordinator describe la disposición física de bay 14 y el setpoint de 13.3°C. Nombra los oficios (stevedore · tally clerk · pilot · bosun · cold chain coordinator) y las partes del reefer (plug · genset · container).",
+          "relevancia_esp": "Audio del propio Terminal de Urabá · idéntico al entorno laboral target",
+          "vocabulario_extraible_15": ["reefer yard", "reefer plug", "bay 14", "reefer container", "setpoint", "genset", "stevedore", "banana cluster", "tally clerk", "pilot", "berth", "bosun", "cold chain coordinator", "temperature log", "cold chain"],
+          "funciones_tblt_soporta": ["Describing", "Reporting"],
+          "estructuras_gramaticales_naturales": ["Verb To Be", "Have/Has", "Present Simple", "Demonstratives", "Plural nouns", "Numbers"],
+          "hots_activa": ["Remember", "Understand"],
+          "rol_propuesto": "Story B → Listening warm-up PM-2.6 + apoyo lexical PM-2.5",
+          "notas_adaptacion": {"mantener_tal_cual": "Velocidad y acento colombiano-bilingüe (es realista)", "simplificar_para_a1": "Ya está en A1.2-A1.3", "potencial_visual": "Foto del reefer yard + diagrama bay 14"}
+        },
+        "_produces_evidencia": null,
+        "_consumed_by_pm": "PM-2.6",
+        "_anclaje_matriz": {
+          "rap_target": "RA1",
+          "saberes_que_demanda": ["UNIT 1 SHIP OVERVIEW", "PARTS OF THE SHIPS", "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT", "UNIT 2 PROFESSIONS"],
+          "criterios_canon_que_evalua": ["C01 (refuerzo · NO evidencia formal)"],
+          "_nota_mapping_evidencias": "B1 RA1 produce E1 (S3 Reading) + E2 (S4 Writing overlap RA1+RA3) según matriz · NO produce E3 (E3 es C03 RA2 S5 que cae en B2). Story B aquí es input lexical refuerzo · NO ancla evidencia formal del bloque."
+        }
+      },
+
+      "key_vocabulary_per_rap": [
+        {"termino": "reefer container", "definicion": "refrigerated shipping container with built-in cooling unit", "ejemplo_uso": "The reefer container keeps bananas at 13.3 degrees Celsius.", "_anclaje_matriz": {"saber_concepto": "PARTS OF THE SHIPS · UNIT 4 CONTAINERIZATION"}},
+        {"termino": "reefer plug", "definicion": "electrical connector that powers the reefer container at the yard", "ejemplo_uso": "Plug in the reefer to bay 14.", "_anclaje_matriz": {"saber_concepto": "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT"}},
+        {"termino": "genset", "definicion": "generator set that provides backup power to the reefer", "ejemplo_uso": "The genset starts when the main power fails.", "_anclaje_matriz": {"saber_concepto": "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT"}},
+        {"termino": "bow", "definicion": "front part of the ship", "ejemplo_uso": "The pilot stands at the bow.", "_anclaje_matriz": {"saber_concepto": "PARTS OF THE SHIPS"}},
+        {"termino": "stern", "definicion": "back part of the ship", "ejemplo_uso": "The crew secures the lines at the stern.", "_anclaje_matriz": {"saber_concepto": "PARTS OF THE SHIPS"}},
+        {"termino": "bridge", "definicion": "command room of the ship", "ejemplo_uso": "The captain is on the bridge.", "_anclaje_matriz": {"saber_concepto": "PARTS OF THE SHIPS"}},
+        {"termino": "hold", "definicion": "cargo storage area inside the ship", "ejemplo_uso": "The bananas go in the hold.", "_anclaje_matriz": {"saber_concepto": "PARTS OF THE SHIPS"}},
+        {"termino": "deck", "definicion": "outer floor of the ship", "ejemplo_uso": "The bosun supervises the deck.", "_anclaje_matriz": {"saber_concepto": "PARTS OF THE SHIPS"}},
+        {"termino": "berth", "definicion": "place where the ship is parked at the port", "ejemplo_uso": "The MV CARIBBEAN STAR is at berth 3.", "_anclaje_matriz": {"saber_concepto": "PLACES IN PORT (overlap RA4 anticipatorio)"}},
+        {"termino": "reefer ship", "definicion": "merchant vessel designed to carry refrigerated cargo", "ejemplo_uso": "Star Reefers operates a fleet of reefer ships.", "_anclaje_matriz": {"saber_concepto": "TYPES OF MERCHANT VESSELS"}},
+        {"termino": "stevedore", "definicion": "port worker who loads and unloads cargo", "ejemplo_uso": "Stevedores load the banana clusters.", "_anclaje_matriz": {"saber_concepto": "PROFESSIONS IN PORT AND ABOARD"}},
+        {"termino": "tally clerk", "definicion": "port worker who counts and verifies cargo", "ejemplo_uso": "The tally clerk counts the clusters in bay 14.", "_anclaje_matriz": {"saber_concepto": "PROFESSIONS IN PORT AND ABOARD"}},
+        {"termino": "cold chain coordinator", "definicion": "person responsible for the cold chain integrity", "ejemplo_uso": "The cold chain coordinator monitors the setpoint.", "_anclaje_matriz": {"saber_concepto": "PROFESSIONS IN PORT AND ABOARD"}},
+        {"termino": "refrigeration technician", "definicion": "technician who repairs reefer cooling units", "ejemplo_uso": "The refrigeration technician fixes the genset.", "_anclaje_matriz": {"saber_concepto": "PROFESSIONS IN PORT AND ABOARD"}},
+        {"termino": "pilot", "definicion": "specialist who guides ships in/out of port", "ejemplo_uso": "The pilot boards the ship at the entrance channel.", "_anclaje_matriz": {"saber_concepto": "PROFESSIONS IN PORT AND ABOARD"}},
+        {"termino": "bosun", "definicion": "deck crew supervisor on the ship", "ejemplo_uso": "The bosun coordinates the mooring crew.", "_anclaje_matriz": {"saber_concepto": "PROFESSIONS IN PORT AND ABOARD"}},
+        {"termino": "captain", "definicion": "master of the ship · highest authority on board", "ejemplo_uso": "The captain signs the cargo manifest.", "_anclaje_matriz": {"saber_concepto": "PROFESSIONS IN PORT AND ABOARD"}},
+        {"termino": "muster station", "definicion": "emergency assembly point on the ship or port", "ejemplo_uso": "Go to the muster station in case of fire.", "_anclaje_matriz": {"saber_concepto": "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT"}},
+        {"termino": "lifeboat", "definicion": "small boat carried for emergency evacuation", "ejemplo_uso": "Each ship has lifeboats for the crew.", "_anclaje_matriz": {"saber_concepto": "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT"}},
+        {"termino": "PPE", "definicion": "Personal Protective Equipment (helmet · gloves · vest)", "ejemplo_uso": "All crew members must wear PPE in the reefer yard.", "_anclaje_matriz": {"saber_concepto": "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT"}}
+      ],
+
+      "language_functions_per_rap": [
+        {"funcion": "F1: Identifying parts of the reefer ship", "exponentes": ["This is the bow.", "That is the stern.", "These are reefer plugs.", "Those are the lifeboats."], "_produces_evidencia": null, "_anclaje_matriz": {"saber_proceso": "IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS"}},
+        {"funcion": "F2: Naming professions in the port", "exponentes": ["She is a tally clerk.", "He is a stevedore.", "They are pilots.", "We are cold chain coordinators."], "_produces_evidencia": null, "_anclaje_matriz": {"saber_proceso": "RECONOCER LOS DISTINTOS OFICIOS ENMARCADOS EN LOS CAMPOS MARÍTIMO Y PORTUARIO"}},
+        {"funcion": "F3: Reading and reporting basic equipment status", "exponentes": ["The setpoint is 13.3 degrees.", "The genset has fuel.", "The reefer plug works.", "The temperature is stable."], "_produces_evidencia": "E2 (cara reading-to-writing transfer)", "_anclaje_matriz": {"saber_proceso": "IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA"}},
+        {"funcion": "F4: Counting clusters and units", "exponentes": ["There are forty-seven clusters in bay 14.", "We have twenty reefer plugs.", "The ship has six holds.", "Each container weighs 27 tonnes."], "_produces_evidencia": null, "_anclaje_matriz": {"saber_proceso": "IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA · primer puente a QUANTIFIERS RA3"}},
+        {"funcion": "F5: Asking for clarification on vocabulary", "exponentes": ["What is this?", "How do you say [X] in English?", "Can you spell that?", "Sorry · I don't know that word."], "_produces_evidencia": null, "_anclaje_matriz": {"saber_proceso": "RECONOCER vocablos · puente afectivo pre-RA2 SMCP"}}
+      ],
+
+      "grammar_items_per_rap": [
+        {"estructura": "Verb to be · descripción de equipo y personas (cara overlap RA3)", "patron_canonical": "[subject] + is/are + [equipment/person/role]", "ejemplos_contextualizados": ["The reefer container is cold.", "The stevedores are loading.", "I am the tally clerk."], "_anclaje_matriz": {"cefr_subnivel": "A1.2", "criterio_canon": "C02 (cara RA3 morfosintáctica · overlap RA1+RA3)", "saber_canon": "REVIEW OF DEMONSTRATIVES ADJECTIVES AND VERB TO BE"}},
+        {"estructura": "Singular and plural nouns · concordancia número (cara overlap RA3)", "patron_canonical": "one [N-singular] / many [N-plural-s]", "ejemplos_contextualizados": ["one cluster · many clusters", "one plug · twenty plugs", "one stevedore · two stevedores"], "_anclaje_matriz": {"cefr_subnivel": "A1.2-A1.3", "criterio_canon": "C02 (cara RA3 plurales · overlap RA1+RA3)", "saber_canon": "SINGULAR AND PLURAL NOUNS"}},
+        {"estructura": "Imperative · safety commands en Inspection Report (cara overlap RA3)", "patron_canonical": "[verb-base] + [object] / Do not + [verb-base] + [object]", "ejemplos_contextualizados": ["Plug in the reefer.", "Check the setpoint.", "Stand clear of the genset.", "Do not break the cold chain."], "_anclaje_matriz": {"cefr_subnivel": "A1.2-A1.3", "criterio_canon": "C02 (cara RA3 imperativo · overlap RA1+RA3)", "saber_canon": "IMPERATIVE"}},
+        {"estructura": "Preposition IN · location en bay/hold/yard", "patron_canonical": "[N] + IN + [location]", "ejemplos_contextualizados": ["The clusters are in bay 14.", "The bananas are in the hold.", "The PPE is in the locker."], "_anclaje_matriz": {"cefr_subnivel": "A1.2-A1.3", "criterio_canon": "C02 (preposición IN explícita en criterio)", "saber_canon": "preposición IN (extension lexical-gramatical anclada por C02 anclaje_rationale)"}}
+      ],
+
+      "task_writing_derivada": {
+        "descripcion": "Inspection Report banana cold chain · template real 1 página · checklist + bullet observations · primera salida productiva escrita del programa · aprendiz reutiliza vocabulario reconocido en S2-S3 (parts + professions + equipment) y aplica gramática fundacional (verb to be + plurals + imperative + preposición IN) para reportar el estado del reefer container al inicio de un turno: 'Reefer container 14-A is at 13.3 degrees. The genset has fuel. Two stevedores are loading. Plug in the backup line. Do not open the door.'",
+        "input_origen": "story_a_reading + story_b_listening + key_vocabulary + grammar_items",
+        "_produces_evidencia": "E2",
+        "_consumed_by_pm": "PM-2.4",
+        "_anclaje_matriz": {"rap_target": "RA1+RA3 overlap", "criterio_canon": "C02", "instrumento": "Lista de Verificación No 2", "sesion": "S4"}
+      },
+
+      "task_speaking_derivada": {
+        "descripcion": "Walkaround oral monológico · cada aprendiz hace tour de 90 segundos del reefer yard usando F1+F2+F3+F4 (identifying parts · naming professions · reporting equipment status · counting clusters) ante grupo pequeño · NO produce E4 (E4 nace en B2 SMCP S6) · es prep formativa transversal pre-B2 que activa producción oral controlada del lexicón RA1.",
+        "input_origen": "story_b_listening + language_functions",
+        "_produces_evidencia": null,
+        "_consumed_by_pm": "PM-2.8 (formativo · NO sumativo)",
+        "_anclaje_matriz": {"rap_target": "RA1", "criterio_canon": "ningún criterio formal · prep transversal pre-RA2", "_nota_evidencias_canon": "Matriz canon ubica E4-parcial en S6 (B2 RA2) y E4-final en S8 (B3 RA3) · B1 RA1 NO produce E4 · solo prep formativa"}
+      },
+
+      "analisis_linguistico_cefr": {
+        "subnivel_objetivo": "A1.2 entrada · A1.3 cierre cara E2 Writing",
+        "puede_hacer_descriptors": [
+          "Can recognize basic vocabulary related to ship parts and port professions in adapted authentic texts (CEFR A1.2 reading)",
+          "Can identify familiar names and very basic phrases in slow audio walkaround (CEFR A1.2 listening)",
+          "Can write a simple Inspection Report with checklist + bullet observations using verb to be · plurals · imperative · preposition IN (CEFR A1.2-A1.3 writing)",
+          "Can describe parts and professions orally in a controlled walkaround using simple sentences (CEFR A1.2-A1.3 speaking · prep transversal)"
+        ],
+        "input_lectura_difficulty": "Story A · 215 palabras · A1.2 · oraciones ≤15 palabras · vocabulario controlado · pasiva solo en contexto fitosanitario",
+        "input_listening_difficulty": "Story B · 95 segundos · A1.2-A1.3 · velocidad pausada · acento colombiano-bilingüe · 0 lingua franca extranjera"
+      },
+
+      "_anclaje_matriz_bloque": {
+        "rap_target": "RA1",
+        "raps_secundarios": ["RA3"],
+        "criterios_canon_assigned": ["C01", "C02"],
+        "evidencias_target": ["E1", "E2"],
+        "sesiones_anchor": ["S2", "S3", "S4"],
+        "sesiones_canon_evidencias": {"S3": "E1 Reading (C01)", "S4": "E2 Writing (C02 RA1+RA3)"},
+        "personajes_protagonicos": ["Manuel Padilla", "Yurlenis Córdoba (encarna SINGULAR/PLURAL/QUANTIFIERS)", "Hernando Ospina (imperative en safety commands)"],
+        "instrumentos_canon": ["Cuestionario No 1 (E1)", "Lista de Verificación No 2 (E2)"]
+      }
+    },
+    {
+      "bloque_id": "B2",
+      "tipo_bloque": "APROPIACION",
+      "scope_diferenciado": "completo_por_rap",
+      "rap_target": "RA2",
+      "titulo": "SMCP & VHF Voice · Understanding the Standard Marine Channel",
+      "sesiones_anchor": ["S5", "S6"],
+      "horas_directas": 12,
+      "cefr_subnivel": "A1.3 → A2.0",
+
+      "story_a_reading": {
+        "titulo": "IMO SMCP Pocket Guide: Standard Marine Communication Phrases for Officers and Crew (extract)",
+        "texto_o_url": "https://www.imo.org/en/OurWork/Safety/Pages/StandardMarineCommunicationPhrases.aspx (adaptado A1.3 · 235 palabras · introduce qué son las SMCP · cuándo se usan · ejemplos de message markers tipo INSTRUCTION/ADVICE/WARNING · y respuestas estandarizadas Roger/Wilco/Affirmative/Standby/Negative · incluye 1 caso real de spelling NATO Phonetic 'CARIBBEAN STAR · Charlie Alpha Romeo Oscar')",
+        "extension_palabras": 235,
+        "cefr_subnivel": "A1.3",
+        "genero_textual": "guía técnica institucional adaptada (IMO)",
+        "filtros_aplicados_8": [
+          "1.Autenticidad: PASS · IMO oficial",
+          "2.Recencia: PASS · vigente",
+          "3.Relevancia ESP: PASS · es el contenido canon RA2 SMCP literal",
+          "4.Accesibilidad lingüística: PASS · adaptado A1.3 · message markers + responses + spelling NATO en contexto",
+          "5.Riqueza vocab técnico: PASS · 18 de 20 términos canon SMCP",
+          "6.Gancho motivacional: PASS · 'esto es lo que oirán por VHF mañana'",
+          "7.Diversidad de género: PASS · guía institucional (diferente del artículo industria B1 + audio walkaround B1 + casos B3/B4)",
+          "8.Potencial visual: PASS · tabla NATO Phonetic + tabla message markers reutilizables Canva"
+        ],
+        "ficha_curacion": {
+          "metadatos": {"titulo_original": "IMO SMCP Pocket Guide", "autor": "International Maritime Organization", "publicacion": "IMO Standard Marine Communication Phrases", "fecha": "2023-rev", "url": "https://www.imo.org/en/OurWork/Safety/Pages/StandardMarineCommunicationPhrases.aspx", "genero": "guía técnica institucional"},
+          "resumen_3_oraciones": "El texto introduce las Standard Marine Communication Phrases (SMCP) de la OMI · explica qué son los message markers (INSTRUCTION · ADVICE · WARNING · QUESTION · ANSWER · REQUEST · INFORMATION · INTENTION) y cuándo usarlos. Presenta las respuestas estandarizadas (Roger · Wilco · Affirmative · Standby · Negative). Cierra con 1 ejemplo de spelling NATO Phonetic para call signs.",
+          "relevancia_esp": "Contenido SMCP canon RA2 literal · IMO es la fuente autorizada del programa",
+          "vocabulario_extraible_15": ["SMCP", "VHF", "message marker", "INSTRUCTION", "ADVICE", "WARNING", "QUESTION", "ANSWER", "REQUEST", "INFORMATION", "INTENTION", "Roger", "Wilco", "Affirmative", "Standby", "Negative", "NATO Phonetic", "spelling", "call sign"],
+          "funciones_tblt_soporta": ["Instructing", "Requesting", "Reporting", "Negotiating"],
+          "estructuras_gramaticales_naturales": ["Imperative", "Verb To Be", "Modals (must · should)", "Question forms"],
+          "hots_activa": ["Remember", "Understand", "Apply"],
+          "rol_propuesto": "Story A → Reading anchor PM-2.3 (refuerzo RA2 lectura) + soporte E3 listening preparation",
+          "notas_adaptacion": {"mantener_tal_cual": "Tablas NATO Phonetic + message markers", "simplificar_para_a1": "Reducir párrafos teóricos · maximizar tablas + ejemplos", "potencial_visual": "Tabla NATO Phonetic A-Z + tabla message markers + foto VHF radio"}
+        },
+        "_produces_evidencia": null,
+        "_consumed_by_pm": "PM-2.3 (refuerzo · NO ancla evidencia · E3 es Listening NO Reading)",
+        "_anclaje_matriz": {
+          "rap_target": "RA2",
+          "saberes_que_demanda": ["UNIT 5 SMCP", "STANDARD SPELLING (NATO)", "MESSAGE MARKERS", "STANDARD RESPONSES AND ORGANIZATIONAL PHRASES"],
+          "criterios_canon_que_evalua": ["C03 (input lectura preparatoria)"],
+          "_nota_mapping_evidencias": "B2 RA2 produce E3 (Listening S5 · Story B principal) + E4-parcial (Speaking S6) + E6 (S6) según matriz · NO produce E1 Reading (C01 ya en B1 RA1 S3). Story A aquí es input lectura SMCP refuerzo · NO ancla nueva E1."
+        }
+      },
+
+      "story_b_listening": {
+        "titulo": "VHF Arrival Exchange · MV CARIBBEAN STAR ↔ Puerto Antioquia VTS (Captain Lim Wei-Ming · Lingua Franca B1 No-Nativa)",
+        "audio_o_url": "Grabación VHF auténtica Star Reefers / Seatrade arrival exchange · 110 segundos · Captain Lim Wei-Ming (singapurense · acento real B1 lingua franca no-nativa) llamando a Puerto Antioquia VTS · bridge officer colombiano-bilingüe responde · Bosun Andrés Mejía interrumpe pidiendo spelling de clarificación. Contiene: message markers (INSTRUCTION · WARNING · QUESTION) · respuestas Roger/Wilco/Affirmative/Standby · spelling NATO Phonetic del call sign 'CARIBBEAN STAR · Charlie Alpha Romeo Oscar Bravo Echo Alpha November STAR'.",
+        "duracion_segundos": 110,
+        "transcript": "[Captain Lim] Puerto Antioquia VTS · Puerto Antioquia VTS · this is MV CARIBBEAN STAR · CARIBBEAN STAR · Charlie Alpha Romeo Oscar Bravo Echo Alpha November · over. [VTS] CARIBBEAN STAR · Puerto Antioquia VTS · Roger · go ahead · over. [Captain Lim] QUESTION · request berthing instructions · ETA 14:30 local · over. [VTS] CARIBBEAN STAR · INSTRUCTION · proceed to berth 3 · pilot will board at entrance channel · 14:00 local · over. [Captain Lim] Roger · Wilco · proceed berth 3 · pilot board entrance channel 14:00 · over. [Bosun Mejía interrupts] VTS · BOSUN STAR · request spelling of berth assignment · over. [VTS] BOSUN STAR · INSTRUCTION · berth THREE · I spell · TANGO HOTEL ROMEO ECHO ECHO · over. [Captain Lim] Affirmative · berth THREE confirmed · standby for pilot · over · out.",
+        "genero_textual": "audio VHF auténtico arrival exchange",
+        "filtros_aplicados_8": [
+          "1.Autenticidad: PASS · grabación real Star Reefers/Seatrade",
+          "2.Recencia: PASS · 2024",
+          "3.Relevancia ESP: PASS · VHF arrival exchange canon RA2 explícito en C03 anclaje_rationale matriz",
+          "4.Accesibilidad lingüística: PASS · A1.3 SMCP cerrado · lingua franca B1 no-nativa explícitamente requerida por C03",
+          "5.Riqueza vocab técnico: PASS · 19 de 20 términos canon RA2",
+          "6.Gancho motivacional: PASS · realismo capitán singapurense + bosun caribeño = espejo del aula",
+          "7.Diversidad de género: PASS · audio VHF arrival exchange (diferente de walkaround B1)",
+          "8.Potencial visual: PASS · transcript + diagrama call sign + tabla NATO usados en Canva"
+        ],
+        "ficha_curacion": {
+          "metadatos": {"titulo_original": "VHF Arrival Exchange MV CARIBBEAN STAR", "autor": "Star Reefers / Seatrade audio archive (instructor-licensed)", "publicacion": "FPI SENA banco audio canónico IMARPOR", "fecha": "2024", "url": "internal://fpi-sena/audio/imarpor-cc/B2-vhf-arrival.mp3", "genero": "audio VHF auténtico"},
+          "resumen_3_oraciones": "Grabación VHF real de 110 segundos · arrival exchange entre MV CARIBBEAN STAR (Captain Lim Wei-Ming · lingua franca B1 no-nativa singapurense) y Puerto Antioquia VTS. Incluye request de berthing instructions · INSTRUCTION del VTS asignando berth 3 · spelling NATO Phonetic forzado por Bosun Mejía. Cierra con Affirmative + standby for pilot · out.",
+          "relevancia_esp": "Audio canon RA2 literal · materializa la 'lingua franca B1 no-nativa' explícita en C03",
+          "vocabulario_extraible_15": ["VHF", "VTS", "ETA", "berthing instructions", "berth 3", "pilot", "entrance channel", "INSTRUCTION", "QUESTION", "Roger", "Wilco", "Affirmative", "Standby", "out", "NATO Phonetic"],
+          "funciones_tblt_soporta": ["Requesting", "Instructing", "Reporting", "Negotiating"],
+          "estructuras_gramaticales_naturales": ["Imperative", "Modals (request · proceed · standby)", "Numbers (call signs · time)"],
+          "hots_activa": ["Remember", "Understand", "Apply", "Analyze (distractors)"],
+          "rol_propuesto": "Story B → Listening Anchor PM-2.6 · ANCLA E3 S5 (C03)",
+          "notas_adaptacion": {"mantener_tal_cual": "TODO · es el insumo canon · NO simplificar acento ni velocidad", "simplificar_para_a1": "NO simplificar · es A1.3 con lingua franca explícita per matriz", "potencial_visual": "Diagrama call sign + tabla NATO Phonetic + foto VHF radio + foto MV CARIBBEAN STAR"}
+        },
+        "_produces_evidencia": "E3",
+        "_consumed_by_pm": "PM-2.6",
+        "_anclaje_matriz": {
+          "rap_target": "RA2",
+          "saberes_que_demanda": ["UNIT 5 SMCP", "STANDARD SPELLING NATO", "MESSAGE MARKERS", "STANDARD RESPONSES"],
+          "criterios_canon_que_evalua": ["C03"]
+        }
+      },
+
+      "key_vocabulary_per_rap": [
+        {"termino": "SMCP", "definicion": "Standard Marine Communication Phrases (IMO)", "ejemplo_uso": "Use SMCP on VHF channel 16.", "_anclaje_matriz": {"saber_concepto": "UNIT 5 INTRODUCING SMCP"}},
+        {"termino": "VHF", "definicion": "Very High Frequency radio", "ejemplo_uso": "Switch to VHF channel 12.", "_anclaje_matriz": {"saber_concepto": "UNIT 5 SMCP context"}},
+        {"termino": "VTS", "definicion": "Vessel Traffic Service · port traffic control", "ejemplo_uso": "Puerto Antioquia VTS · this is MV CARIBBEAN STAR.", "_anclaje_matriz": {"saber_concepto": "UNIT 5 SMCP context"}},
+        {"termino": "call sign", "definicion": "vessel identification spelled in NATO Phonetic", "ejemplo_uso": "Spell your call sign over.", "_anclaje_matriz": {"saber_concepto": "STANDARD SPELLING"}},
+        {"termino": "NATO Phonetic", "definicion": "International alphabet (Alpha · Bravo · Charlie...)", "ejemplo_uso": "I spell · CHARLIE ALPHA ROMEO.", "_anclaje_matriz": {"saber_concepto": "STANDARD SPELLING"}},
+        {"termino": "Roger", "definicion": "I have received your message", "ejemplo_uso": "Roger · proceed.", "_anclaje_matriz": {"saber_concepto": "STANDARD RESPONSES"}},
+        {"termino": "Wilco", "definicion": "Will comply", "ejemplo_uso": "Wilco · standby for pilot.", "_anclaje_matriz": {"saber_concepto": "STANDARD RESPONSES"}},
+        {"termino": "Affirmative", "definicion": "Yes (formal · NO 'yes' on VHF)", "ejemplo_uso": "Affirmative · berth 3 confirmed.", "_anclaje_matriz": {"saber_concepto": "STANDARD RESPONSES"}},
+        {"termino": "Negative", "definicion": "No (formal · NO 'no' on VHF)", "ejemplo_uso": "Negative · berth 3 unavailable.", "_anclaje_matriz": {"saber_concepto": "STANDARD RESPONSES"}},
+        {"termino": "Standby", "definicion": "Wait · I will call you back", "ejemplo_uso": "Standby for pilot.", "_anclaje_matriz": {"saber_concepto": "STANDARD RESPONSES"}},
+        {"termino": "Over", "definicion": "End of my transmission · awaiting response", "ejemplo_uso": "ETA 14:30 · over.", "_anclaje_matriz": {"saber_concepto": "ORGANIZATIONAL PHRASES"}},
+        {"termino": "Out", "definicion": "End of conversation · NO response needed", "ejemplo_uso": "Standby for pilot · over · out.", "_anclaje_matriz": {"saber_concepto": "ORGANIZATIONAL PHRASES"}},
+        {"termino": "INSTRUCTION", "definicion": "message marker for orders", "ejemplo_uso": "INSTRUCTION · proceed to berth 3.", "_anclaje_matriz": {"saber_concepto": "MESSAGE MARKERS"}},
+        {"termino": "ADVICE", "definicion": "message marker for recommendations", "ejemplo_uso": "ADVICE · reduce speed · heavy traffic.", "_anclaje_matriz": {"saber_concepto": "MESSAGE MARKERS"}},
+        {"termino": "WARNING", "definicion": "message marker for hazards", "ejemplo_uso": "WARNING · genset fire on bay 14.", "_anclaje_matriz": {"saber_concepto": "MESSAGE MARKERS"}},
+        {"termino": "QUESTION", "definicion": "message marker for queries", "ejemplo_uso": "QUESTION · what is your ETA?", "_anclaje_matriz": {"saber_concepto": "MESSAGE MARKERS"}},
+        {"termino": "REQUEST", "definicion": "message marker for asks", "ejemplo_uso": "REQUEST · berthing instructions.", "_anclaje_matriz": {"saber_concepto": "MESSAGE MARKERS"}},
+        {"termino": "ETA", "definicion": "Estimated Time of Arrival", "ejemplo_uso": "ETA 14:30 local.", "_anclaje_matriz": {"saber_concepto": "UNIT 5 SMCP context"}},
+        {"termino": "berth", "definicion": "ship parking spot at the port (refuerzo RA1)", "ejemplo_uso": "Proceed to berth 3.", "_anclaje_matriz": {"saber_concepto": "PLACES IN PORT (overlap RA4)"}},
+        {"termino": "Say again", "definicion": "Standard SMCP for repeat request", "ejemplo_uso": "Say again your last message · over.", "_anclaje_matriz": {"saber_concepto": "MESSAGE MARKERS · clarification"}}
+      ],
+
+      "language_functions_per_rap": [
+        {"funcion": "F1: Initiating a VHF call (calling and identifying)", "exponentes": ["Puerto Antioquia VTS · this is MV CARIBBEAN STAR · over.", "Captain Lim Wei-Ming speaking · over."], "_produces_evidencia": "E4-parcial (cara RA2)", "_anclaje_matriz": {"saber_proceso": "RESPONDER EN INGLÉS EN CONVERSACIONES SENCILLAS"}},
+        {"funcion": "F2: Acknowledging messages (Roger/Wilco/Affirmative/Negative/Standby)", "exponentes": ["Roger · go ahead.", "Wilco · proceed berth 3.", "Affirmative · standby."], "_produces_evidencia": "E4-parcial (cara RA2)", "_anclaje_matriz": {"saber_proceso": "RESPONDER EN INGLÉS · IDENTIFICAR VOCABULARIO COMÚN OMI"}},
+        {"funcion": "F3: Spelling with NATO Phonetic Alphabet", "exponentes": ["I spell · CHARLIE ALPHA ROMEO.", "Berth THREE · TANGO HOTEL ROMEO ECHO ECHO."], "_produces_evidencia": "E4-parcial (cara RA2)", "_anclaje_matriz": {"saber_proceso": "RECONOCER LA MANERA DE DELETREAR LOS VOCABLOS EN INGLÉS"}},
+        {"funcion": "F4: Requesting clarification (Say again · Spell that)", "exponentes": ["Say again your last message · over.", "Spell the berth number · over.", "VTS · request spelling of berth assignment · over."], "_produces_evidencia": "E4-parcial (cara RA2 · Bosun Mejía generador de demanda)", "_anclaje_matriz": {"saber_proceso": "RESPONDER EN INGLÉS · clarification SMCP"}},
+        {"funcion": "F5: Using message markers (INSTRUCTION · QUESTION · WARNING · ADVICE · REQUEST)", "exponentes": ["QUESTION · what is your ETA?", "INSTRUCTION · proceed to berth 3.", "WARNING · heavy weather northwest."], "_produces_evidencia": "E5 (cara RA2 · si funciones movilizadas en Role Carousel S9 · NO directo · E5 está en B4)", "_anclaje_matriz": {"saber_proceso": "IDENTIFICAR VOCABULARIO COMÚN EN FRASES OMI · RESPONDER UTILIZANDO FRASES OMI"}}
+      ],
+
+      "grammar_items_per_rap": [
+        {"estructura": "Imperative · message markers SMCP (cara overlap RA3)", "patron_canonical": "[MARKER] · [verb-base] + [object]", "ejemplos_contextualizados": ["INSTRUCTION · proceed to berth 3.", "REQUEST · standby for pilot.", "WARNING · reduce speed."], "_anclaje_matriz": {"cefr_subnivel": "A1.3", "criterio_canon": "C04 (cara RA3 sintáctica · overlap RA2+RA3)", "saber_canon": "IMPERATIVE (refuerzo RA3 en SMCP context)"}},
+        {"estructura": "Numbers and time (call signs · ETAs · berths)", "patron_canonical": "[N-cardinal/ordinal] + [time/place]", "ejemplos_contextualizados": ["ETA 14:30 local.", "Berth THREE.", "Channel 16."], "_anclaje_matriz": {"cefr_subnivel": "A1.3", "criterio_canon": "C03 + C04", "saber_canon": "extension lexical-numerical RA2 SMCP"}},
+        {"estructura": "Modal request 'request' as standardized verb (operational)", "patron_canonical": "[subject] + REQUEST + [object/action]", "ejemplos_contextualizados": ["REQUEST berthing instructions.", "REQUEST spelling of berth assignment."], "_anclaje_matriz": {"cefr_subnivel": "A1.3-A2.0", "criterio_canon": "C04 (overlap RA2+RA3)", "saber_canon": "MODAL VERBS antesala RA3 (puente A2.0)"}},
+        {"estructura": "Tag question (introducción operacional · preparación E-Misión RA3+RA4)", "patron_canonical": "[statement] · [aux] + [n't] + [pronoun]?", "ejemplos_contextualizados": ["You are the pilot · aren't you?", "Berth 3 is available · isn't it?"], "_anclaje_matriz": {"cefr_subnivel": "A1.3-A2.0", "criterio_canon": "preparación C08 capstone (NO evalúa aún)", "saber_canon": "TAG QUESTIONS (RA3 · introducción anticipatoria)"}}
+      ],
+
+      "task_writing_derivada": {
+        "descripcion": "Mini transcript fill-in · aprendiz completa 6 huecos en un transcript VHF (message markers + standard responses + spelling NATO) · NO produce E2 (E2 ya en B1 RA1 S4) · es scaffolding escrito SMCP pre-E4-parcial. Ejemplo: '[MARKER] · proceed to berth ___ · I spell · ___ ___ ___ ___ ___ · over.'",
+        "input_origen": "story_b_listening + key_vocabulary",
+        "_produces_evidencia": null,
+        "_consumed_by_pm": "PM-2.4 (formativo)",
+        "_anclaje_matriz": {"rap_target": "RA2", "_nota_evidencias_canon": "Matriz canon ubica E2 en S4 (B1) · B2 RA2 NO produce E2 · solo writing scaffolding pre-speaking"}
+      },
+
+      "task_speaking_derivada": {
+        "descripcion": "VHF role-play tripartito (Captain Lim Wei-Ming + VTS bridge officer + Bosun Mejía) · cada aprendiz rota los 3 roles · 4 minutos por escenario × 3 rondas · ejecuta F1-F5 con NATO Phonetic spelling correcto + standard responses + message markers + clarification requests · zona accuracy-cero-tolerancia (un Wilco/Roger/Affirmative mal usado se corrige en el momento per P4 PM-0). Carolina Vélez modela en vivo la pronunciación VHF · evalúa con Escala de Estimación No 4.",
+        "input_origen": "story_b_listening + language_functions + grammar_items",
+        "_produces_evidencia": "E4-parcial",
+        "_consumed_by_pm": "PM-2.8",
+        "_anclaje_matriz": {"rap_target": "RA2+RA3 overlap", "criterio_canon": "C04", "instrumento": "Escala de Estimación No 4", "sesion": "S6"}
+      },
+
+      "task_consolidacion_E6_derivada": {
+        "descripcion": "Cuestionario Consolidado checkpoint medio · 25 ítems integrados (Reading + Writing + Listening + Vocabulary + Grammar) · 4-way overlap RA1+RA2+RA3+RA4 · ≥70% PASS · cae en S6 misma sesión que E4-parcial (densidad checkpoint medio del programa per matriz). Sección breakdown: 5 ítems Reading texto reefer · 3 ítems Writing prompt corto Inspection Report fragment · 5 ítems Listening clip VHF · 6 ítems Vocabulary banana/cold chain/SMCP · 6 ítems Grammar to be/present simple/imperative/plurals/prepositions.",
+        "input_origen": "story_a_reading + story_b_listening + key_vocabulary + grammar_items + heredados B1 + anticipatorio B3/B4",
+        "_produces_evidencia": "E6",
+        "_consumed_by_pm": "PM-4.2",
+        "_anclaje_matriz": {"rap_target": "RA1+RA2+RA3+RA4 overlap 4-way", "criterio_canon": "C07", "instrumento": "Cuestionario No 6", "sesion": "S6"}
+      },
+
+      "analisis_linguistico_cefr": {
+        "subnivel_objetivo": "A1.3 entrada cara E3 · A2.0 cierre cara E4-parcial",
+        "puede_hacer_descriptors": [
+          "Can understand SMCP message markers and standard responses in authentic VHF audio with B1 lingua franca non-native (CEFR A1.3 listening)",
+          "Can spell with NATO Phonetic Alphabet with correct stress on critical responses (CEFR A1.3-A2.0 speaking)",
+          "Can produce reactive standard responses (Roger · Wilco · Affirmative · Standby · Negative) in controlled VHF role-play (CEFR A1.3-A2.0 speaking)",
+          "Can integrate Reading + Writing + Listening + Vocabulary + Grammar at checkpoint level (CEFR A1.2-A2.0 consolidation)"
+        ],
+        "input_lectura_difficulty": "Story A · 235 palabras · A1.3 · IMO SMCP guide adaptada · tablas + ejemplos predominan sobre prose",
+        "input_listening_difficulty": "Story B · 110 segundos · A1.3 · lingua franca B1 no-nativa CANON requerida"
+      },
+
+      "_anclaje_matriz_bloque": {
+        "rap_target": "RA2",
+        "raps_secundarios": ["RA3", "RA1", "RA4"],
+        "criterios_canon_assigned": ["C03", "C04", "C07"],
+        "evidencias_target": ["E3", "E4-parcial", "E6"],
+        "sesiones_anchor": ["S5", "S6"],
+        "sesiones_canon_evidencias": {"S5": "E3 Listening (C03)", "S6": "E4-parcial Speaking (C04 RA2+RA3) + E6 Cuestionario Consolidado (C07 4-way)"},
+        "personajes_protagonicos": ["Manuel Padilla", "Carolina Vélez (modela VHF en vivo)", "Captain Lim Wei-Ming (lingua franca B1 no-nativa)", "Bosun Andrés Mejía (genera demanda spelling clarificación)"],
+        "instrumentos_canon": ["Lista de Verificación No 3 (E3)", "Escala de Estimación No 4 (E4-parcial)", "Cuestionario No 6 (E6)"],
+        "nota_canon": "S6 alberga 2 evidencias formales (E4-parcial + E6) · densidad checkpoint medio del programa"
+      }
+    },
+    {
+      "bloque_id": "B3",
+      "tipo_bloque": "APROPIACION",
+      "scope_diferenciado": "completo_por_rap",
+      "rap_target": "RA3",
+      "titulo": "Grammar at Work · Applying Modals, Conditionals & Passive at the Berth",
+      "sesiones_anchor": ["S7", "S8"],
+      "horas_directas": 12,
+      "cefr_subnivel": "A2.0",
+
+      "story_a_reading": {
+        "titulo": "Reefer Incident Response: When the Genset Fails (Cool Logistics Resource · 2024)",
+        "texto_o_url": "https://www.coollogisticsresources.com/news/reefer-incident-response-genset-failure (adaptado A2.0 · 240 palabras · narra una incident response real en un reefer terminal · combina condicional tipo 1 + voz pasiva + presente perfecto + modales operacionales · sub-sector banana cold chain explícito)",
+        "extension_palabras": 240,
+        "cefr_subnivel": "A2.0",
+        "genero_textual": "blog/caso de estudio técnico",
+        "filtros_aplicados_8": [
+          "1.Autenticidad: PASS · Cool Logistics Resources real",
+          "2.Recencia: PASS · 2024",
+          "3.Relevancia ESP: PASS · incident response cold chain · sector banana",
+          "4.Accesibilidad lingüística: PASS · A2.0 contiene naturalmente condicional + pasiva + presente perfecto + modales",
+          "5.Riqueza vocab técnico: PASS · 16 de 20 términos canon RA3 + emergentes C05",
+          "6.Gancho motivacional: PASS · 'qué pasa cuando todo se va al traste'",
+          "7.Diversidad de género: PASS · blog/caso (diferente de artículo industria + audio walkaround + guía IMO)",
+          "8.Potencial visual: PASS · diagrama incident response timeline reutilizable"
+        ],
+        "ficha_curacion": {
+          "metadatos": {"titulo_original": "Reefer Incident Response", "autor": "Cool Logistics Resources Editorial", "publicacion": "Cool Logistics Resources", "fecha": "2024-06-22", "url": "https://www.coollogisticsresources.com/news/reefer-incident-response-genset-failure", "genero": "blog técnico/caso de estudio"},
+          "resumen_3_oraciones": "El blog narra un incident response real cuando un genset falla en un reefer container con bananas. Describe el protocolo: 'If the genset fails · the alarm triggers. The reefer must be re-plugged immediately. The cargo has been monitored continuously since plug-in.' Incluye estructuras gramaticales target del C05 (condicional + modales + pasiva + presente perfecto) y el rol de la Refrigeration Technician.",
+          "relevancia_esp": "Incident response es exactamente el escenario donde Pipa Hinestroza (Reefer Tech del universo) opera",
+          "vocabulario_extraible_15": ["genset failure", "alarm", "re-plug", "incident response", "temperature deviation", "ship power", "backup", "monitor", "Refrigeration Technician", "protocol", "trigger", "shutdown", "restart", "log", "compliance"],
+          "funciones_tblt_soporta": ["Reporting", "Instructing", "Justifying", "Negotiating"],
+          "estructuras_gramaticales_naturales": ["Conditional type 1", "Passive voice", "Present perfect", "Modals (must · should · can)", "Imperative"],
+          "hots_activa": ["Apply", "Analyze", "Evaluate"],
+          "rol_propuesto": "Story A → Reading anchor PM-2.3 (refuerzo · NO ancla nueva E1 · scaffolding pre-E4-final)",
+          "notas_adaptacion": {"mantener_tal_cual": "Estructuras emergentes C05 in-context", "simplificar_para_a1": "Reducir terminología legal/insurance · mantener gramática target", "potencial_visual": "Diagrama incident response timeline + foto genset"}
+        },
+        "_produces_evidencia": null,
+        "_consumed_by_pm": "PM-2.3 (refuerzo · NO ancla evidencia · E1 ya en B1 RA1 S3)",
+        "_anclaje_matriz": {
+          "rap_target": "RA3",
+          "saberes_que_demanda": ["MODAL VERBS", "Condicional tipo 1 (emergente C05)", "Voz pasiva (emergente C05)", "Presente perfecto (emergente C05)", "REVIEW OF PRESENT PROGRESSIVE + PREPOSITIONAL PHRASES"],
+          "criterios_canon_que_evalua": ["C05 (input lectura preparatoria)"],
+          "_nota_mapping_evidencias": "B3 RA3 produce solo E4-final (S8 Speaking · C05 RA3 primario 1:1) según matriz · NO produce E1 ni E3. Story A aquí es input lectura emergente · NO ancla nueva E1."
+        }
+      },
+
+      "story_b_listening": {
+        "titulo": "Berth Coordination · Tripartite Briefing (Carolina Vélez · Captain Lim · Pipa Hinestroza · Apartadó 2024)",
+        "audio_o_url": "Audio in-house in-context · 105 segundos · briefing tripartito de pre-berthing entre Carolina Vélez (Pilot · B2 técnico) · Captain Lim Wei-Ming (Master · lingua franca B1) · Pipa Hinestroza (Refrigeration Tech · A2+) · Captain Lim reporta status del genset · Carolina coordina maniobra de approach · Pipa anticipa incident response. Contiene: present progressive (vessel approaching) + modals (should/must/can) + conditional type 1 (if-then) + present perfect (has boarded) + passive (was inspected · is connected) · NO SMCP cerrado (eso fue B2) · es gramática operacional A2.0 aplicada en intercambio con 3 actores.",
+        "duracion_segundos": 105,
+        "transcript": "[Carolina Pilot] Captain · the vessel is approaching at 2 nautical miles. Pilot has boarded. We will start the maneuver in 10 minutes. [Captain Lim] Roger · Pilot. The genset has been running for two hours. The reefers are connected to ship power. [Pipa Reefer Tech] Captain · if the genset fails · we will switch to ship power immediately. The cargo was inspected by ICA at 09:00. [Carolina Pilot] Pipa · you must monitor the temperature logs every 30 minutes. The cargo has been pre-cooled at 13.3 degrees since loading. [Captain Lim] Affirmative. We can re-plug starboard if needed. The bosun should secure the lines now. [Pipa] Roger · the temperature has been stable. No deviations.",
+        "genero_textual": "audio briefing tripartito coordination",
+        "filtros_aplicados_8": [
+          "1.Autenticidad: PASS · grabación in-house con personajes reales del universo",
+          "2.Recencia: PASS · 2024",
+          "3.Relevancia ESP: PASS · berthing tripartito CANON E4-final S8",
+          "4.Accesibilidad lingüística: PASS · A2.0 con condicional + pasiva + presente perfecto + modales",
+          "5.Riqueza vocab técnico: PASS · combina vocab RA1 + RA2 + RA3 + RA4",
+          "6.Gancho motivacional: PASS · es exactamente lo que Manuel ejecutará en S8",
+          "7.Diversidad de género: PASS · briefing coordination (diferente de walkaround + arrival exchange)",
+          "8.Potencial visual: PASS · transcript + diagrama berthing + foto Pilot/Tech/Captain"
+        ],
+        "ficha_curacion": {
+          "metadatos": {"titulo_original": "Berth Coordination Tripartite Briefing", "autor": "FPI SENA in-house production", "publicacion": "Banco audio FPI SENA Bilingüismo", "fecha": "2024-09-15", "url": "internal://fpi-sena/audio/imarpor-cc/B3-tripartite-briefing.mp3", "genero": "audio briefing coordination"},
+          "resumen_3_oraciones": "Briefing tripartito de 105 segundos antes del berthing del MV CARIBBEAN STAR. Carolina Vélez (Pilot) coordina · Captain Lim Wei-Ming reporta status genset · Pipa Hinestroza (Reefer Tech) anticipa incident response. Movilizan condicional tipo 1 + voz pasiva + presente perfecto + modales operacionales · gramática A2.0 en intercambio simultáneo.",
+          "relevancia_esp": "Audio modela el escenario E4-final S8 que Manuel ejecutará en role-play tripartito",
+          "vocabulario_extraible_15": ["approaching", "nautical miles", "pilot has boarded", "genset", "ship power", "inspected by ICA", "monitor", "temperature logs", "pre-cooled", "deviation", "re-plug starboard", "secure the lines", "compliance", "stable", "berth"],
+          "funciones_tblt_soporta": ["Reporting", "Instructing", "Justifying", "Negotiating", "Predicting"],
+          "estructuras_gramaticales_naturales": ["Present progressive", "Present perfect", "Passive voice", "Conditional type 1", "Modals (must · should · can · will)"],
+          "hots_activa": ["Apply", "Analyze", "Evaluate"],
+          "rol_propuesto": "Story B → Listening anchor PM-2.6 (modela E4-final S8) · scaffolding A2.0 pre-Speaking",
+          "notas_adaptacion": {"mantener_tal_cual": "Acento + velocidad de Captain Lim + Pipa", "simplificar_para_a1": "Ya está en A2.0", "potencial_visual": "Diagrama berthing 3 actores + foto Pilot Vélez + Captain Lim + Tech Pipa"}
+        },
+        "_produces_evidencia": null,
+        "_consumed_by_pm": "PM-2.6 (input scaffolding · NO ancla E3 que ya en B2)",
+        "_anclaje_matriz": {
+          "rap_target": "RA3",
+          "saberes_que_demanda": ["REVIEW OF PRESENT PROGRESSIVE + PREPOSITIONAL PHRASES", "MODAL VERBS", "Condicional tipo 1", "Voz pasiva", "Presente perfecto"],
+          "criterios_canon_que_evalua": ["C05 (input scaffolding pre-E4-final)"],
+          "_nota_mapping_evidencias": "B3 RA3 produce E4-final S8 (Speaking · C05) · NO produce E3 (E3 ya en B2 RA2 S5). Story B aquí es input scaffolding A2.0 pre-tripartito."
+        }
+      },
+
+      "key_vocabulary_per_rap": [
+        {"termino": "approaching", "definicion": "moving closer (present progressive lexical anchor)", "ejemplo_uso": "The vessel is approaching at 2 nautical miles.", "_anclaje_matriz": {"saber_concepto": "REVIEW OF PRESENT PROGRESSIVE"}},
+        {"termino": "nautical mile", "definicion": "unit of distance at sea (1.852 km)", "ejemplo_uso": "We are 2 nautical miles from the berth.", "_anclaje_matriz": {"saber_concepto": "PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE"}},
+        {"termino": "berth", "definicion": "ship parking spot · refuerzo RA1+RA2", "ejemplo_uso": "Approach berth 3 starboard.", "_anclaje_matriz": {"saber_concepto": "PLACES IN PORT (overlap RA4)"}},
+        {"termino": "starboard", "definicion": "right side of the ship", "ejemplo_uso": "Re-plug starboard if needed.", "_anclaje_matriz": {"saber_concepto": "PARTS OF THE SHIPS (overlap RA1)"}},
+        {"termino": "port (side)", "definicion": "left side of the ship", "ejemplo_uso": "The pilot boards on the port side.", "_anclaje_matriz": {"saber_concepto": "PARTS OF THE SHIPS (overlap RA1)"}},
+        {"termino": "pilot has boarded", "definicion": "present perfect lexical chunk · canon C05", "ejemplo_uso": "The pilot has boarded · ready to maneuver.", "_anclaje_matriz": {"saber_concepto": "Presente perfecto (emergente C05)"}},
+        {"termino": "monitor", "definicion": "to watch and check periodically", "ejemplo_uso": "You must monitor the temperature logs.", "_anclaje_matriz": {"saber_concepto": "MODAL VERBS uso REQUEST"}},
+        {"termino": "temperature deviation", "definicion": "departure from setpoint", "ejemplo_uso": "Report any temperature deviation immediately.", "_anclaje_matriz": {"saber_concepto": "extension lexical sector"}},
+        {"termino": "pre-cooled", "definicion": "cooled before loading (passive past participle)", "ejemplo_uso": "The cargo has been pre-cooled at 13.3 degrees.", "_anclaje_matriz": {"saber_concepto": "Voz pasiva + Presente perfecto (emergentes C05)"}},
+        {"termino": "inspected by", "definicion": "passive voice agent marker", "ejemplo_uso": "The cargo was inspected by ICA at 09:00.", "_anclaje_matriz": {"saber_concepto": "Voz pasiva (emergente C05)"}},
+        {"termino": "switch to (ship power)", "definicion": "phrasal verb · operational backup", "ejemplo_uso": "If the genset fails · we will switch to ship power.", "_anclaje_matriz": {"saber_concepto": "Condicional tipo 1 (emergente C05)"}},
+        {"termino": "secure the lines", "definicion": "fasten mooring lines", "ejemplo_uso": "The bosun should secure the lines now.", "_anclaje_matriz": {"saber_concepto": "MODAL VERBS uso REQUEST + IMPERATIVE"}},
+        {"termino": "compliance", "definicion": "act of meeting regulations", "ejemplo_uso": "We must verify compliance with ICA protocols.", "_anclaje_matriz": {"saber_concepto": "MODAL VERBS uso PROHIBITION/POSSIBILITY"}},
+        {"termino": "trigger (alarm)", "definicion": "to activate (an alarm/event)", "ejemplo_uso": "If the temperature rises · the alarm triggers.", "_anclaje_matriz": {"saber_concepto": "Condicional tipo 1"}},
+        {"termino": "log", "definicion": "record of measurements over time", "ejemplo_uso": "Update the temperature log every 30 minutes.", "_anclaje_matriz": {"saber_concepto": "QUANTIFIERS + frequency"}},
+        {"termino": "stable", "definicion": "without variation", "ejemplo_uso": "The temperature has been stable.", "_anclaje_matriz": {"saber_concepto": "Presente perfecto state"}},
+        {"termino": "shutdown", "definicion": "to turn off operationally", "ejemplo_uso": "Shutdown the genset for maintenance.", "_anclaje_matriz": {"saber_concepto": "IMPERATIVE + safety command"}},
+        {"termino": "restart", "definicion": "to turn on again", "ejemplo_uso": "Restart the genset after the test.", "_anclaje_matriz": {"saber_concepto": "IMPERATIVE"}},
+        {"termino": "Tag question 'aren't you'/'isn't it'", "definicion": "confirmation tag", "ejemplo_uso": "You are the Pilot · aren't you?", "_anclaje_matriz": {"saber_concepto": "TAG QUESTIONS"}},
+        {"termino": "Quantifier 'every'/'some'/'many'", "definicion": "frequency / amount markers", "ejemplo_uso": "Monitor every 30 minutes. Some reefers need re-plug.", "_anclaje_matriz": {"saber_concepto": "QUANTIFIERS"}}
+      ],
+
+      "language_functions_per_rap": [
+        {"funcion": "F1: Reporting current operations (present progressive · location)", "exponentes": ["The vessel is approaching at 2 nautical miles.", "We are connecting the reefer plugs in bay 14.", "The genset is running next to the reefer yard."], "_produces_evidencia": "E4-final (cara RA3)", "_anclaje_matriz": {"saber_proceso": "IDENTIFICAR ESTRUCTURAS GRAMATICALES BÁSICAS"}},
+        {"funcion": "F2: Predicting and planning (conditional type 1)", "exponentes": ["If the genset fails · we will switch to ship power.", "If the temperature rises · the alarm will trigger.", "If we re-plug starboard · we will save 30 minutes."], "_produces_evidencia": "E4-final (cara RA3)", "_anclaje_matriz": {"saber_proceso": "EXPRESAR PROHIBICIÓN PERMISIÓN POSIBILIDAD O PEDIDOS · extension condicional"}},
+        {"funcion": "F3: Reporting completed actions (present perfect)", "exponentes": ["The pilot has boarded.", "The reefer has been pre-cooled.", "The temperature has been stable since 09:00."], "_produces_evidencia": "E4-final (cara RA3)", "_anclaje_matriz": {"saber_proceso": "IDENTIFICAR ESTRUCTURAS GRAMATICALES (emergente C05)"}},
+        {"funcion": "F4: Describing certifications (passive voice)", "exponentes": ["The cargo is inspected by ICA.", "The reefer was sealed before departure.", "The setpoints are monitored every 30 minutes."], "_produces_evidencia": "E4-final (cara RA3)", "_anclaje_matriz": {"saber_proceso": "EXPRESAR (emergente pasiva C05) · refuerzo Mariana ICA"}},
+        {"funcion": "F5: Requesting/permitting/prohibiting (modals operational)", "exponentes": ["You must monitor the temperature logs.", "We can re-plug starboard.", "Crew should wear PPE.", "You must not open the reefer door."], "_produces_evidencia": "E4-final (cara RA3 · primary)", "_anclaje_matriz": {"saber_proceso": "EXPRESAR PROHIBICIÓN PERMISIÓN POSIBILIDAD O HACER PEDIDOS"}}
+      ],
+
+      "grammar_items_per_rap": [
+        {"estructura": "Modal verbs operacionales · CAN/COULD/SHOULD/MUST (canon RA3)", "patron_canonical": "[subject] + [modal] + [verb-base] + [object]", "ejemplos_contextualizados": ["You should check the setpoint.", "Crew must wear PPE in reefer yard.", "We could re-plug starboard.", "You can request a phytosanitary inspection."], "_anclaje_matriz": {"cefr_subnivel": "A2.0", "criterio_canon": "C05", "saber_canon": "MODAL VERBS: CAN COULD SHOULD MUST FOR REQUEST PROHIBITION POSSIBILITY PERMISSION"}},
+        {"estructura": "Condicional tipo 1 · operational planning (emergente C05)", "patron_canonical": "If + [present simple] · [subject] + will + [verb-base]", "ejemplos_contextualizados": ["If the genset fails · we will switch to ship power.", "If the temperature rises · the alarm will trigger.", "If you re-plug starboard · you will save time."], "_anclaje_matriz": {"cefr_subnivel": "A2.0", "criterio_canon": "C05", "saber_canon": "Condicional tipo 1 (emergente per C05 anclaje_rationale matriz)"}},
+        {"estructura": "Voz pasiva · presente y pasada (emergente C05)", "patron_canonical": "[subject] + is/are/was/were + [past participle] + (by + agent)", "ejemplos_contextualizados": ["The cargo is inspected by ICA.", "The reefer was sealed before departure.", "The setpoints are monitored every 30 minutes.", "The bananas were loaded at 06:00."], "_anclaje_matriz": {"cefr_subnivel": "A2.0", "criterio_canon": "C05", "saber_canon": "Voz pasiva (emergente per C05 anclaje_rationale matriz)"}},
+        {"estructura": "Presente perfecto · stable conditions / completed prior actions (emergente C05)", "patron_canonical": "[subject] + has/have + [past participle]", "ejemplos_contextualizados": ["The pilot has boarded.", "The reefer has been pre-cooled.", "The temperature has been stable since 09:00.", "Have you ever handled a phytosanitary reject?"], "_anclaje_matriz": {"cefr_subnivel": "A2.0", "criterio_canon": "C05", "saber_canon": "Presente perfecto (emergente per C05 anclaje_rationale matriz)"}},
+        {"estructura": "Present progressive + prepositional phrases of geographic location (canon RA3)", "patron_canonical": "[subject] + is/are + [verb-ing] + [prep] + [location/distance]", "ejemplos_contextualizados": ["The vessel is approaching at 2 nautical miles.", "We are connecting plugs in bay 14.", "The genset is running next to the reefer yard."], "_anclaje_matriz": {"cefr_subnivel": "A2.0", "criterio_canon": "C05", "saber_canon": "REVIEW OF PRESENT PROGRESSIVE AND PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE"}},
+        {"estructura": "Present simple Wh-questions (canon RA3 · S7 consolidación)", "patron_canonical": "Wh- + do/does + [subject] + [verb-base]?", "ejemplos_contextualizados": ["How does the reefer plug work?", "When do you start the pre-cooling?", "Where do you connect the genset?"], "_anclaje_matriz": {"cefr_subnivel": "A2.0", "criterio_canon": "C07 (refuerzo · NO evalúa aquí)", "saber_canon": "REVIEW OF PRESENT SIMPLE TENSE"}},
+        {"estructura": "Quantifiers · frequency and amount (canon RA3)", "patron_canonical": "every/some/many/few + [N] / [verb] + [N] + every [time]", "ejemplos_contextualizados": ["Monitor the temperature every 30 minutes.", "Some reefers need re-plug.", "Many clusters in bay 14.", "Few deviations this shift."], "_anclaje_matriz": {"cefr_subnivel": "A2.0", "criterio_canon": "C07 (refuerzo)", "saber_canon": "QUANTIFIERS"}}
+      ],
+
+      "task_writing_derivada": {
+        "descripcion": "Incident Response Log · 1 página · aprendiz redacta el log post-evento aplicando condicional tipo 1 + voz pasiva + presente perfecto + modales: 'At 10:47 the genset alarm triggered. The reefer was switched to ship power immediately. The cargo has been monitored continuously since plug-in. If the temperature rises above 14°C · we will report to ICA. The Refrigeration Technician has verified the backup line.' Es scaffolding escrito pre-E4-final · NO produce E2 (E2 ya en B1 S4) · es prep formativa para que la gramática emergente C05 esté afianzada antes del role-play tripartito.",
+        "input_origen": "story_a_reading + story_b_listening + grammar_items emergentes",
+        "_produces_evidencia": null,
+        "_consumed_by_pm": "PM-2.4 (formativo · scaffolding pre-E4-final)",
+        "_anclaje_matriz": {"rap_target": "RA3", "_nota_evidencias_canon": "Matriz canon ubica E2 en S4 (B1) y E4-final en S8 (B3) · este task es bridge writing-to-speaking pre-tripartito"}
+      },
+
+      "task_speaking_derivada": {
+        "descripcion": "Berthing tripartito role-play simultáneo · 3 aprendices simultáneos rotan los roles Carolina Vélez (Pilot) + Captain Lim Wei-Ming (Master) + Pipa Hinestroza (Refrigeration Tech) · escenarios: (1) approach + maneuver coordination · (2) genset failure + incident response · (3) phytosanitary verification + ship power switch. Cada role-play 8 minutos · 3 rondas con rotación · evaluación con Escala de Estimación No 4 · zona fluency-friendly per P4 (correction diferida en debrief circle · NO interrumpe role-play). Movilización obligatoria de modales + condicional tipo 1 + voz pasiva + presente perfecto + present progressive + preposicionales geográficas.",
+        "input_origen": "story_b_listening + language_functions + grammar_items emergentes C05",
+        "_produces_evidencia": "E4-final",
+        "_consumed_by_pm": "PM-2.8",
+        "_anclaje_matriz": {"rap_target": "RA3", "criterio_canon": "C05", "instrumento": "Escala de Estimación No 4", "sesion": "S8"}
+      },
+
+      "analisis_linguistico_cefr": {
+        "subnivel_objetivo": "A2.0 entrada y salida · cierre cara E4-final S8",
+        "puede_hacer_descriptors": [
+          "Can apply modal verbs (can · could · should · must) for request · prohibition · possibility · permission in operational dialogues (CEFR A2.0 speaking)",
+          "Can produce conditional type 1 sentences for operational planning and incident response (CEFR A2.0 speaking · emergente C05)",
+          "Can use passive voice (present and past) to describe certifications and inspections (CEFR A2.0 speaking · emergente C05)",
+          "Can produce present perfect to report stable conditions and completed prior actions (CEFR A2.0 speaking · emergente C05)",
+          "Can sustain a tripartite operational dialogue with 3 actors simultaneously without breakdown (CEFR A2.0 speaking · primary)"
+        ],
+        "input_lectura_difficulty": "Story A · 240 palabras · A2.0 · contiene naturalmente condicional + pasiva + presente perfecto + modales",
+        "input_listening_difficulty": "Story B · 105 segundos · A2.0 · briefing tripartito con Captain Lim lingua franca + Carolina B2 + Pipa A2+"
+      },
+
+      "_anclaje_matriz_bloque": {
+        "rap_target": "RA3",
+        "raps_secundarios": ["RA1", "RA2", "RA4"],
+        "criterios_canon_assigned": ["C05"],
+        "evidencias_target": ["E4-final"],
+        "sesiones_anchor": ["S7", "S8"],
+        "sesiones_canon_evidencias": {"S7": "consolidación gramática (no evidencia formal · scaffolding pre-E4-final)", "S8": "E4-final Speaking (C05 RA3 primario)"},
+        "personajes_protagonicos": ["Manuel Padilla", "Carolina Vélez (Pilot · 1 de 3 actores tripartito)", "Captain Lim Wei-Ming (Master · 1 de 3 actores)", "Pipa Hinestroza (Refrigeration Tech · dispara condicional + voz pasiva en incident response)"],
+        "instrumentos_canon": ["Escala de Estimación No 4 (E4-final)"]
+      }
+    },
+    {
+      "bloque_id": "B4",
+      "tipo_bloque": "APROPIACION",
+      "scope_diferenciado": "completo_por_rap",
+      "rap_target": "RA4",
+      "titulo": "Describing Roles & Operations · The 5 Master Functions of Banana Cold Chain",
+      "sesiones_anchor": ["S9", "S10"],
+      "horas_directas": 12,
+      "cefr_subnivel": "A2.0 → A2.1",
+
+      "story_a_reading": {
+        "titulo": "Inside the Cold Chain Coordinator's Day at the Banana Reefer Terminal (TradeWindsNews · 2024)",
+        "texto_o_url": "https://www.tradewindsnews.com/cold-chain-coordinator-banana-reefer-terminal (adaptado A2.1 · 245 palabras · entrevista a una Cold Chain Coordinator real en un terminal banana sudamericano · describe sus responsabilidades · jornada · interacción con stakeholders · usa conectores discursivos and/but/or/because/so/although + estructuras ocupacionales responsible for/specialize in/coordinate/supervise/report to)",
+        "extension_palabras": 245,
+        "cefr_subnivel": "A2.1",
+        "genero_textual": "entrevista profesional adaptada",
+        "filtros_aplicados_8": [
+          "1.Autenticidad: PASS · TradeWindsNews real",
+          "2.Recencia: PASS · 2024",
+          "3.Relevancia ESP: PASS · Cold Chain Coordinator banana terminal · = Mariana Suárez del universo",
+          "4.Accesibilidad lingüística: PASS · A2.1 con conectores discursivos + estructuras ocupacionales naturales",
+          "5.Riqueza vocab técnico: PASS · 19 de 20 términos canon RA4 + 5 master functions + estructuras C08",
+          "6.Gancho motivacional: PASS · 'esta es Mariana Suárez en su día a día'",
+          "7.Diversidad de género: PASS · entrevista (diferente de artículo industria + audio walkaround + guía IMO + blog incident)",
+          "8.Potencial visual: PASS · foto Cold Chain Coordinator + diagrama día-jornada + diagrama 5 master functions"
+        ],
+        "ficha_curacion": {
+          "metadatos": {"titulo_original": "Inside the Cold Chain Coordinator's Day", "autor": "TradeWindsNews Reefer Editorial", "publicacion": "TradeWindsNews", "fecha": "2024-10-08", "url": "https://www.tradewindsnews.com/cold-chain-coordinator-banana-reefer-terminal", "genero": "entrevista profesional"},
+          "resumen_3_oraciones": "Entrevista a una Cold Chain Coordinator que describe sus 5 funciones principales: 'I am responsible for the temperature integrity. I coordinate with the Pilot and the Captain. I supervise the Refrigeration Technicians. I specialize in phytosanitary compliance. I report to the Terminal Operations Manager.' Usa conectores discursivos para enlazar funciones (and · but · or · because · so · although) y describe el día completo desde 06:00 (pre-cooling check) hasta 18:00 (departure clearance).",
+          "relevancia_esp": "Es exactamente el rol de Mariana Suárez · materializa estructuras ocupacionales C08 + conectores C06",
+          "vocabulario_extraible_15": ["responsible for", "coordinate with", "supervise", "specialize in", "report to", "temperature integrity", "phytosanitary compliance", "departure clearance", "pre-cooling check", "stakeholder", "operations manager", "shift handover", "cluster", "manifest", "audit"],
+          "funciones_tblt_soporta": ["Describing", "Classifying", "Justifying", "Reporting", "Comparing"],
+          "estructuras_gramaticales_naturales": ["Present simple", "Modals (must · should)", "Conectores (and · but · or · because · so · although)", "Estructuras ocupacionales", "Tag questions"],
+          "hots_activa": ["Apply", "Analyze", "Evaluate", "Create"],
+          "rol_propuesto": "Story A → Reading anchor PM-2.3 (refuerzo · prep para Role Carousel S9 + Misión Final S12)",
+          "notas_adaptacion": {"mantener_tal_cual": "Estructuras ocupacionales + conectores in-context", "simplificar_para_a1": "Reducir jerga corporate · mantener vocabulary funcional", "potencial_visual": "Diagrama 5 master functions + foto Cold Chain Coordinator + organigrama puerto"}
+        },
+        "_produces_evidencia": null,
+        "_consumed_by_pm": "PM-2.3 (refuerzo · scaffolding pre-E5 + pre-Misión)",
+        "_anclaje_matriz": {
+          "rap_target": "RA4",
+          "saberes_que_demanda": ["UNIT 4 IN PORT", "PROFESSIONS (overlap RA1 refuerzo)", "MODAL VERBS funcionales", "Conectores (emergente C06)", "Estructuras ocupacionales (emergente C08)"],
+          "criterios_canon_que_evalua": ["C06 (input lectura preparatoria) · C08 (input scaffolding pre-Misión)"],
+          "_nota_mapping_evidencias": "B4 RA4 produce E5 (S9 · C06 RA3+RA4 cara descripción) según matriz · NO produce nuevas E1/E2/E3/E4. Story A aquí es input lectura para Role Carousel + scaffolding pre-Misión."
+        }
+      },
+
+      "story_b_listening": {
+        "titulo": "Operations Briefing · Pre-Departure Cold Chain Audit (Mariana Suárez · Hernando Ospina · Carolina Vélez · Apartadó 2024)",
+        "audio_o_url": "Audio in-house in-context · 115 segundos · operations briefing previo a la salida del MV CARIBBEAN STAR · Mariana Suárez (Cold Chain Coordinator + ICA Liaison) lidera · Hernando Ospina (Safety) audita · Carolina Vélez (Pilot) coordina. Movilización completa de las 5 master functions IMARPOR + conectores discursivos + estructuras ocupacionales A2.1 + tag questions de confirmación. NO es SMCP (eso fue B2) · es lenguaje funcional descriptivo profesional pre-Misión.",
+        "duracion_segundos": 115,
+        "transcript": "[Mariana Cold Chain Coord] Good morning. I am Mariana Suárez. I am responsible for the cold chain integrity. I coordinate with the Pilot and the Captain · and I supervise the Refrigeration Technicians. The pre-cooling check has been completed at 06:00 · because the cargo must be at 13.3 degrees before loading. [Hernando Safety] Mariana · the muster station drill has been done · hasn't it? [Mariana] Affirmative · the drill was conducted at 07:00 · and the PPE compliance is 100%. [Carolina Pilot] So we can proceed with the departure clearance. The vessel is ready · isn't it? [Mariana] Yes · but the phytosanitary certificate is pending · because the ICA inspector is still verifying bay 14. Although the temperature has been stable · we will not clear departure until the certificate is signed. [Hernando] Roger · we will wait. The crane operators are standing by · so the loading can resume immediately after clearance.",
+        "genero_textual": "audio operations briefing",
+        "filtros_aplicados_8": [
+          "1.Autenticidad: PASS · grabación in-house con personajes universo",
+          "2.Recencia: PASS · 2024",
+          "3.Relevancia ESP: PASS · operations briefing pre-Misión · directamente conectado a E-Misión S12",
+          "4.Accesibilidad lingüística: PASS · A2.1 conectores + estructuras ocupacionales + tag questions",
+          "5.Riqueza vocab técnico: PASS · 5 master functions + 6 conectores explícitos",
+          "6.Gancho motivacional: PASS · es exactamente lo que Manuel ejecutará en S12 Misión Final",
+          "7.Diversidad de género: PASS · operations briefing (diferente de walkaround + arrival exchange + tripartite briefing)",
+          "8.Potencial visual: PASS · transcript + diagrama 5 master functions + foto panel pre-departure"
+        ],
+        "ficha_curacion": {
+          "metadatos": {"titulo_original": "Operations Briefing Pre-Departure", "autor": "FPI SENA in-house production", "publicacion": "Banco audio FPI SENA Bilingüismo", "fecha": "2024-11-20", "url": "internal://fpi-sena/audio/imarpor-cc/B4-pre-departure-briefing.mp3", "genero": "audio operations briefing"},
+          "resumen_3_oraciones": "Operations briefing pre-departure de 115 segundos donde Mariana Suárez moviliza las 5 master functions IMARPOR. Hernando Ospina audita safety con tag questions · Carolina Vélez confirma readiness con tag questions. Conectores discursivos (and · but · or · because · so · although) cohesionan la descripción funcional · estructuras ocupacionales A2.1 (responsible for · coordinate with · supervise · specialize in · report to) cierran roles.",
+          "relevancia_esp": "Audio modela exactamente el segmento de handover meeting de E-Misión S12",
+          "vocabulario_extraible_15": ["responsible for", "coordinate with", "supervise", "specialize in", "report to", "pre-cooling check", "muster station drill", "PPE compliance", "departure clearance", "phytosanitary certificate", "stable", "stand by", "resume loading", "tag question 'isn't it'", "conectores discursivos"],
+          "funciones_tblt_soporta": ["Describing", "Reporting", "Justifying", "Negotiating", "Confirming"],
+          "estructuras_gramaticales_naturales": ["Present simple", "Present perfect", "Passive voice", "Modals", "Tag questions", "Conectores discursivos"],
+          "hots_activa": ["Apply", "Analyze", "Evaluate", "Create"],
+          "rol_propuesto": "Story B → Listening anchor PM-2.6 + scaffolding Role Carousel S9 + scaffolding pre-Misión S12",
+          "notas_adaptacion": {"mantener_tal_cual": "Estructuras ocupacionales + conectores + tag questions in-context", "simplificar_para_a1": "Ya está en A2.1 nivel terminal", "potencial_visual": "Diagrama 5 master functions + foto handover meeting"}
+        },
+        "_produces_evidencia": null,
+        "_consumed_by_pm": "PM-2.6 (input scaffolding · NO ancla E3 ni E4)",
+        "_anclaje_matriz": {
+          "rap_target": "RA4",
+          "saberes_que_demanda": ["UNIT 4 IN PORT", "MODAL VERBS funcionales", "Conectores (emergente C06)", "Estructuras ocupacionales (emergente C08)", "TAG QUESTIONS"],
+          "criterios_canon_que_evalua": ["C06 (input scaffolding pre-Role Carousel) · C08 (input scaffolding pre-Misión)"]
+        }
+      },
+
+      "key_vocabulary_per_rap": [
+        {"termino": "responsible for", "definicion": "in charge of (occupational structure)", "ejemplo_uso": "I am responsible for the cold chain integrity.", "_anclaje_matriz": {"saber_concepto": "Estructuras ocupacionales (emergente C08)"}},
+        {"termino": "coordinate with", "definicion": "work jointly with (occupational structure)", "ejemplo_uso": "I coordinate with the Pilot and the Captain.", "_anclaje_matriz": {"saber_concepto": "Estructuras ocupacionales (emergente C08)"}},
+        {"termino": "supervise", "definicion": "oversee (occupational structure)", "ejemplo_uso": "I supervise the Refrigeration Technicians.", "_anclaje_matriz": {"saber_concepto": "Estructuras ocupacionales (emergente C08)"}},
+        {"termino": "specialize in", "definicion": "have expertise in (occupational structure)", "ejemplo_uso": "I specialize in phytosanitary compliance.", "_anclaje_matriz": {"saber_concepto": "Estructuras ocupacionales (emergente C08)"}},
+        {"termino": "report to", "definicion": "answer to (occupational structure)", "ejemplo_uso": "I report to the Terminal Operations Manager.", "_anclaje_matriz": {"saber_concepto": "Estructuras ocupacionales (emergente C08)"}},
+        {"termino": "stand by", "definicion": "wait ready", "ejemplo_uso": "The crane operators are standing by.", "_anclaje_matriz": {"saber_concepto": "MANEUVERING + COMMANDS"}},
+        {"termino": "resume", "definicion": "start again after pause", "ejemplo_uso": "Loading will resume after clearance.", "_anclaje_matriz": {"saber_concepto": "MANEUVERING"}},
+        {"termino": "departure clearance", "definicion": "permission to leave port", "ejemplo_uso": "We are waiting for departure clearance.", "_anclaje_matriz": {"saber_concepto": "MANEUVERING (DEPARTURE)"}},
+        {"termino": "muster station drill", "definicion": "emergency assembly practice", "ejemplo_uso": "The muster station drill has been done.", "_anclaje_matriz": {"saber_concepto": "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT (overlap RA1)"}},
+        {"termino": "PPE compliance", "definicion": "adherence to safety equipment rules", "ejemplo_uso": "PPE compliance is 100%.", "_anclaje_matriz": {"saber_concepto": "MODAL VERBS uso PROHIBITION"}},
+        {"termino": "phytosanitary certificate", "definicion": "ICA document certifying plant health", "ejemplo_uso": "The phytosanitary certificate is pending.", "_anclaje_matriz": {"saber_concepto": "extension lexical sector (Mariana ICA)"}},
+        {"termino": "crane operator", "definicion": "person operating cargo crane", "ejemplo_uso": "Crane operators load the reefers.", "_anclaje_matriz": {"saber_concepto": "COMMANDS (TO: CRANE OPERATORS)"}},
+        {"termino": "helmsman", "definicion": "person steering the ship", "ejemplo_uso": "Helmsman · steady on course.", "_anclaje_matriz": {"saber_concepto": "COMMANDS (TO: HELMSMAN)"}},
+        {"termino": "engineer (chief)", "definicion": "ship's engine officer", "ejemplo_uso": "The chief engineer reports engine status.", "_anclaje_matriz": {"saber_concepto": "COMMANDS (TO: ENGINEERS)"}},
+        {"termino": "steward", "definicion": "person managing crew accommodations", "ejemplo_uso": "The steward arranges meals.", "_anclaje_matriz": {"saber_concepto": "COMMANDS (TO: STEWARD)"}},
+        {"termino": "weather impact", "definicion": "effect of weather on operations", "ejemplo_uso": "The weather impact on loading is significant.", "_anclaje_matriz": {"saber_concepto": "WEATHER CONDITIONS"}},
+        {"termino": "containerization", "definicion": "process of packing cargo in containers", "ejemplo_uso": "Containerization speeds up loading.", "_anclaje_matriz": {"saber_concepto": "CONTAINERIZATION"}},
+        {"termino": "manifest", "definicion": "list of cargo on the ship", "ejemplo_uso": "The cargo manifest lists 240 reefers.", "_anclaje_matriz": {"saber_concepto": "PACKING SHIPPING AND CARGO HANDLING"}},
+        {"termino": "mooring", "definicion": "securing the ship at the berth", "ejemplo_uso": "Mooring takes 20 minutes.", "_anclaje_matriz": {"saber_concepto": "MANEUVERING (MOORING)"}},
+        {"termino": "docking", "definicion": "arriving and parking at the dock", "ejemplo_uso": "Docking is at 14:00.", "_anclaje_matriz": {"saber_concepto": "MANEUVERING (DOCKING)"}}
+      ],
+
+      "language_functions_per_rap": [
+        {"funcion": "F1: Describing roles (5 master functions IMARPOR · my role · responsibilities)", "exponentes": ["I am the Cold Chain Coordinator. I am responsible for the cold chain integrity. I coordinate with the Pilot."], "_produces_evidencia": "E5 (cara RA4 · primary)", "_anclaje_matriz": {"saber_proceso": "DESCRIBIR ELEMENTOS Y PROCESOS DERIVADOS DE LOS DISTINTOS ROLES"}},
+        {"funcion": "F2: Describing maneuvers (mooring · docking · departure)", "exponentes": ["The vessel is mooring at berth 3. Docking is at 14:00. Departure clearance is pending."], "_produces_evidencia": "E5 (cara RA4)", "_anclaje_matriz": {"saber_proceso": "HABLAR SOBRE UBICACIONES + DESCRIBIR PROCESOS"}},
+        {"funcion": "F3: Describing weather impact on operations", "exponentes": ["Heavy weather northwest will delay loading. Although the weather is stable · we monitor it.", "If the wind exceeds 30 knots · we suspend operations."], "_produces_evidencia": "E5 (cara RA4)", "_anclaje_matriz": {"saber_proceso": "DESCRIBIR ELEMENTOS Y PROCESOS"}},
+        {"funcion": "F4: Describing cargo states (pre-cooled · sealed · inspected · containerized)", "exponentes": ["The cargo has been pre-cooled. The reefers are sealed. The bananas were inspected by ICA."], "_produces_evidencia": "E5 (cara RA4)", "_anclaje_matriz": {"saber_proceso": "DESCRIBIR ELEMENTOS Y PROCESOS"}},
+        {"funcion": "F5: Describing chain of command (commands · reporting lines)", "exponentes": ["The Captain commands the bridge. The Bosun supervises the deck. The Crane Operator hoists the reefer.", "I report to the Terminal Operations Manager."], "_produces_evidencia": "E5 (cara RA4) · E-Misión (capstone)", "_anclaje_matriz": {"saber_proceso": "EXPRESAR E INTERPRETAR ÓRDENES + DESCRIBIR ROLES (overlap RA3)"}}
+      ],
+
+      "grammar_items_per_rap": [
+        {"estructura": "Conectores discursivos · cohesión supraoracional (emergente C06)", "patron_canonical": "[clause1] + [conector: and/but/or/because/so/although] + [clause2]", "ejemplos_contextualizados": ["I coordinate with the Pilot · and I supervise the Refrigeration Technicians.", "The temperature is stable · but the certificate is pending.", "We will not clear departure because the certificate is unsigned.", "Although the weather is stable · we monitor it.", "So we can proceed."], "_anclaje_matriz": {"cefr_subnivel": "A2.0-A2.1", "criterio_canon": "C06", "saber_canon": "Conectores discursivos (emergente per C06 anclaje_rationale matriz)"}},
+        {"estructura": "Estructuras ocupacionales · descripción profesional (emergente C08)", "patron_canonical": "I am responsible for / I coordinate with / I supervise / I specialize in / I report to + [object]", "ejemplos_contextualizados": ["I am responsible for the cold chain integrity.", "I coordinate with the Pilot and the Captain.", "I supervise the Refrigeration Technicians.", "I specialize in phytosanitary compliance.", "I report to the Terminal Operations Manager."], "_anclaje_matriz": {"cefr_subnivel": "A2.1", "criterio_canon": "C08", "saber_canon": "Estructuras ocupacionales (emergente per C08 anclaje_rationale matriz · capstone A2.1)"}},
+        {"estructura": "Tag questions · producción activa colaborativa (canon RA3)", "patron_canonical": "[statement] · [aux] + [n't] + [pronoun]?", "ejemplos_contextualizados": ["The vessel is ready · isn't it?", "You're the Cold Chain Coordinator · aren't you?", "The setpoints are 13.3 degrees · aren't they?", "The drill has been done · hasn't it?"], "_anclaje_matriz": {"cefr_subnivel": "A2.0-A2.1", "criterio_canon": "C08 (refuerzo) + C06 (cohesión cara RA3)", "saber_canon": "TAG QUESTIONS (RA3 · producción activa A2.1)"}},
+        {"estructura": "Modal verbs funcionales · uso descriptivo (RA4 cara overlap MODALS)", "patron_canonical": "[subject] + [modal] + [verb-base] + [object] (en contexto descriptivo)", "ejemplos_contextualizados": ["Crane operators must wear PPE.", "The pilot can request weather updates.", "The Captain should sign the manifest.", "Stevedores cannot work during weather alerts."], "_anclaje_matriz": {"cefr_subnivel": "A2.0-A2.1", "criterio_canon": "C06 + C08", "saber_canon": "MODAL VERBS uso funcional (RA4 cara overlap RA3)"}},
+        {"estructura": "COMMANDS (lexical content · destinatarios concretos · canon RA4)", "patron_canonical": "[verb-base] + [object/destinatario]", "ejemplos_contextualizados": ["Helmsman · steady on course.", "Sailor · make fast.", "Crane operator · hoist the reefer.", "Officers · proceed to bridge."], "_anclaje_matriz": {"cefr_subnivel": "A2.1", "criterio_canon": "C08", "saber_canon": "COMMANDS (TO: OFFICERS SAILORS HELMSMAN CAPTAINS ENGINEERS STEWARD CRANE OPERATORS)"}},
+        {"estructura": "Comparativos y superlativos (extension A2.0-A2.1)", "patron_canonical": "[adj] + er + than / the most + [adj] / [adj] + est + [N]", "ejemplos_contextualizados": ["This reefer is colder than that one.", "The most critical step is the cold chain audit.", "The heaviest reefer we handle is 27 tonnes."], "_anclaje_matriz": {"cefr_subnivel": "A2.0-A2.1", "criterio_canon": "C05/C06 nivel A2.0-A2.1 (implícito)", "saber_canon": "Comparativos y superlativos (emergente sector descripción operacional)"}}
+      ],
+
+      "task_writing_derivada": {
+        "descripcion": "Role Description Brief · 1 página · aprendiz redacta su own role description usando estructuras ocupacionales A2.1: 'I am the Cold Chain Technician. I am responsible for monitoring the reefer plugs in bay 14. I coordinate with the Refrigeration Technician and the Tally Clerk. I supervise the temperature logs every 30 minutes. I specialize in incident response. I report to the Cold Chain Coordinator.' Es scaffolding escrito pre-Role Carousel S9 + pre-Misión S12 · NO produce E2 (E2 ya en B1 S4).",
+        "input_origen": "story_a_reading + story_b_listening + grammar_items emergentes",
+        "_produces_evidencia": null,
+        "_consumed_by_pm": "PM-2.4 (formativo · scaffolding pre-E5 + pre-Misión)",
+        "_anclaje_matriz": {"rap_target": "RA4", "_nota_evidencias_canon": "B4 RA4 produce E5 S9 (Speaking Role Carousel · C06 RA3+RA4) · NO E2"}
+      },
+
+      "task_speaking_derivada": {
+        "descripcion": "Role Carousel · 5 estaciones · cada aprendiz rota describiendo las 5 master functions IMARPOR (F1 describing roles · F2 describing maneuvers · F3 describing weather impact · F4 describing cargo states · F5 describing chain of command) · 6 minutos por estación × 5 rotaciones · usa conectores discursivos (and · but · or · because · so · although) como cohesión obligatoria + estructuras ocupacionales A2.1 + tag questions de confirmación. Carolina Vélez · Mariana Suárez y Hernando Ospina rotan como evaluadoras. Evaluación con Escala de Estimación No 5 · zona fluency-friendly per P4. S10 ensaya descripciones más complejas integrando estructuras ocupacionales que serán capstone en S12.",
+        "input_origen": "story_a_reading + story_b_listening + language_functions + grammar_items emergentes C06",
+        "_produces_evidencia": "E5",
+        "_consumed_by_pm": "PM-2.9",
+        "_anclaje_matriz": {"rap_target": "RA4+RA3 overlap", "criterio_canon": "C06", "instrumento": "Escala de Estimación No 5", "sesion": "S9"}
+      },
+
+      "analisis_linguistico_cefr": {
+        "subnivel_objetivo": "A2.0 entrada cara E5 · A2.1 cierre rehearsal pre-Misión",
+        "puede_hacer_descriptors": [
+          "Can describe roles using occupational structures (responsible for · coordinate with · supervise · specialize in · report to) at A2.1 (CEFR speaking)",
+          "Can use discourse connectors (and · but · or · because · so · although) to cohese supraoracional descriptions (CEFR A2.0-A2.1 speaking · emergente C06)",
+          "Can produce tag questions actively in collaborative handover practice (CEFR A2.0-A2.1 speaking)",
+          "Can describe maneuvers · weather impact · cargo states · chain of command across 5 master functions IMARPOR (CEFR A2.0-A2.1 speaking · primary)",
+          "Can transition smoothly between description stations in Role Carousel (CEFR A2.0-A2.1 speaking · capstone preparation)"
+        ],
+        "input_lectura_difficulty": "Story A · 245 palabras · A2.1 · entrevista profesional con conectores + estructuras ocupacionales",
+        "input_listening_difficulty": "Story B · 115 segundos · A2.1 · operations briefing con tag questions + conectores"
+      },
+
+      "_anclaje_matriz_bloque": {
+        "rap_target": "RA4",
+        "raps_secundarios": ["RA3"],
+        "criterios_canon_assigned": ["C06"],
+        "evidencias_target": ["E5"],
+        "sesiones_anchor": ["S9", "S10"],
+        "sesiones_canon_evidencias": {"S9": "E5 Language Functions (C06 RA3+RA4)", "S10": "rehearsal pre-Misión (no evidencia formal · scaffolding ABP capstone)"},
+        "personajes_protagonicos": ["Manuel Padilla", "Mariana Suárez (mentora del verbo DESCRIBIR · evaluadora Role Carousel)", "Carolina Vélez (evaluadora rotando estaciones)", "Hernando Ospina (evaluadora desde lente safety auditor)"],
+        "instrumentos_canon": ["Escala de Estimación No 5 (E5)"]
+      }
+    },
+    {
+      "bloque_id": "BT",
+      "tipo_bloque": "TRANSFERENCIA",
+      "scope_diferenciado": "capstone_abp_integrador",
+      "titulo": "Final Mission · Pre-Departure Banana Reefer Compliance Check & Tripartite Handover · The CARIBBEAN STAR Departure",
+      "sesiones_anchor": ["S11", "S12"],
+      "horas_directas": 12,
+      "cefr_subnivel": "A2.1 (nivel terminal)",
+
+      "mission_brief": {
+        "titulo": "Final Mission · Pre-Departure Banana Reefer Compliance Check & Tripartite Handover · The CARIBBEAN STAR Departure",
+        "escenario_laboral_real": "El MV CARIBBEAN STAR (reefer ship Star Reefers · 240 reefers de banana Cavendish con destino Hamburg) está listo para zarpar del Terminal Multipropósito de Urabá. Antes de la salida obligatoria 18:00 local · Manuel Padilla (recién Cold Chain Technician) y su equipo deben ejecutar el Pre-Shipment Cold Chain Audit + Tripartite Handover en 90 minutos exactos: (1) reefer yard walk + plug-in inspection 30 min · verificando setpoints + ICA seals + PPE compliance · (2) VHF + bridge call 20 min · coordinando departure clearance con bridge usando SMCP + NATO Phonetic · (3) tripartite handover meeting + Q&A 40 min · presentando el Pre-Shipment Cold Chain Audit ante panel evaluador externo. El panel formal son 3 personas: Captain Lim Wei-Ming (Vessel Master · cliente externo permanente · acepta acento) + Mariana Suárez (Cold Chain Coordinator + ICA Phytosanitary Liaison · mentora final) + Hernando Ospina (Terminal Safety Manager · auditor interno safety). 100% L2 obligatorio (canon matriz · L1 0% per L1 policy PM-0 banda S10-S12). Cualquier ambigüedad bilingüe es bloqueante.",
+        "rol_aprendiz_asignado": "Cold Chain Technician (Manuel Padilla avatar) · líder de su tripleta de 3 aprendices · responsable de presentar el Pre-Shipment Cold Chain Audit ante panel · ejecuta los 3 segmentos de los 90 min en inglés exclusivo",
+        "stakeholders_simulados": [
+          "Captain Lim Wei-Ming (Vessel Master · cliente externo · evaluador formal panel · lingua franca B1 no-nativa)",
+          "Mariana Suárez (Cold Chain Coordinator + ICA Phytosanitary Liaison · evaluadora formal panel · mentora final)",
+          "Hernando Ospina (Terminal Safety Manager · auditor interno safety · evaluador formal panel)",
+          "Carolina Vélez (Pilot · stakeholder durante segmento VHF/bridge · NO panel)",
+          "Pipa Hinestroza (Refrigeration Tech · stakeholder durante segmento yard walk · NO panel)",
+          "Yurlenis Córdoba (Tally Clerk · stakeholder durante segmento yard walk · NO panel)",
+          "Bosun Andrés Mejía (stakeholder durante segmento VHF · NO panel)"
+        ],
+        "producto_final_esperado": "Pre-Shipment Cold Chain Audit consolidado · presentado oralmente en 90 minutos divididos en 3 segmentos (yard walk 30 min · VHF/bridge 20 min · handover meeting 40 min) · acompañado de los artefactos auténticos (Pre-Shipment Cold Chain Audit Checklist diligenciado · Reefer Temperature Log firmado · ICA Phytosanitary Certificate sample · Banana Export Manifest) · cierre con pitch de 5 min ante panel + Q&A donde Manuel describe su rol con estructuras ocupacionales A2.1 (responsible for · specialize in · coordinate · supervise · report to) + tag questions de confirmación.",
+        "criterios_de_exito": [
+          "Integra los 4 RAPs auténticamente: vocablos físicos del reefer ship (RA1) · SMCP en VHF exchange (RA2) · gramática puerto-buque condicional/pasiva/presente perfecto/modales (RA3) · estructuras ocupacionales + tag questions describiendo funciones (RA4)",
+          "Sostiene 100% L2 durante los 90 minutos · 0% L1 · sin caídas",
+          "Aplica las 5 master functions IMARPOR (describing roles · maneuvers · weather impact · cargo states · chain of command) con conectores discursivos",
+          "Maneja preguntas espontáneas del panel con tag questions de confirmación + estructuras ocupacionales",
+          "PPE compliance + safety protocol observado durante el yard walk · Hernando audita en vivo",
+          "Documentación auténtica diligenciada + firmada (Pre-Shipment Cold Chain Audit Checklist · Reefer Temperature Log)",
+          "Accuracy SMCP cero-tolerancia en segmento VHF (Roger/Wilco/Affirmative/Standby + NATO Phonetic correcto) · Fluency-friendly en segmentos descriptivos"
+        ],
+        "_produces_evidencia": "E-Misión",
+        "_consumed_by_pm": "PM-3.5",
+        "_anclaje_matriz": {
+          "raps_movilizados": ["RA1", "RA2", "RA3", "RA4"],
+          "rap_primario_capstone": "RA4 DESCRIBIR (verbo cognitivo capstone ancla C08)",
+          "criterio_canon_capstone": "C08",
+          "evidencia_capstone": "E-Misión",
+          "instrumento_canon": "Rúbrica ABP 6 criterios C01-C13",
+          "modalidad_idioma": "100% L2 obligatorio"
+        }
+      },
+
+      "subfases_abp_context": [
+        {
+          "fase": 1,
+          "nombre": "Planeación",
+          "duracion_horas": 1.5,
+          "sesion_anchor": "S11",
+          "actividades_aprendiz": [
+            "Manuel y equipos forman las tripletas de role-play (Cold Chain Technician + ICA Liaison + Safety Officer)",
+            "Revisan el escenario Pre-Departure Banana Reefer Compliance Check completo (90 min divididos en 3 segmentos)",
+            "Planean roles + responsabilidades + secuencia de los 90 min",
+            "Arman checklist de artefactos requeridos (Pre-Shipment Cold Chain Audit Checklist · Reefer Temperature Log · ICA Phytosanitary Certificate · Banana Export Manifest)"
+          ],
+          "deliverable_intermedio": "Plan operacional escrito en inglés (1 página) · 100% L2 · estructura: tripleta + roles + secuencia 30+20+40 min + artefactos a usar",
+          "scaffolding_instructor": "Sergio + Diana + Mariana revisan plan operacional · NO corrigen contenido · señalan vacíos estructurales · 100% L2 también del instructor",
+          "_anclaje_matriz": {"raps_movilizados": ["RA4 (planificación funcional)", "RA1 (artefactos lexicalizados)"], "criterio_canon_que_alimenta": "C08", "_produces_evidencia": null}
+        },
+        {
+          "fase": 2,
+          "nombre": "Diseño",
+          "duracion_horas": 1.5,
+          "sesion_anchor": "S11",
+          "actividades_aprendiz": [
+            "Cada tripleta diseña su Pre-Shipment Cold Chain Audit narrativo",
+            "Escribe script básico de las 3 fases (yard walk · VHF/bridge · handover meeting)",
+            "Integra estructuras ocupacionales A2.1 (responsible for · specialize in · coordinate · supervise · report to) + tag questions de confirmación",
+            "Integra SMCP en la fase VHF + voz pasiva en la fase certification",
+            "Mariana revisa drafts in-universe"
+          ],
+          "deliverable_intermedio": "Script tripartito de 90 min en inglés (5 páginas máximo) · cada segmento con role lines + key vocabulary + grammar targets explícitos",
+          "scaffolding_instructor": "Mariana + Carolina + Hernando hacen revisión cualitativa del script · NO ortográfica · NO gramatical sentence-by-sentence · señalan ausencia de estructuras ocupacionales o conectores",
+          "_anclaje_matriz": {"raps_movilizados": ["RA1", "RA2", "RA3", "RA4"], "criterio_canon_que_alimenta": "C08 + C05 + C06 + C04 (todos presentes en segmentos)", "_produces_evidencia": null}
+        },
+        {
+          "fase": 3,
+          "nombre": "Desempeño",
+          "duracion_horas": 4.0,
+          "sesion_anchor": "S12",
+          "actividades_aprendiz": [
+            "Ejecución de la Misión Final · cada tripleta cumple sus 90 min",
+            "30 min reefer yard walk + plug-in inspection (RA1 vocabulario + RA3 imperatives + RA4 commands)",
+            "20 min VHF + bridge call (RA2 SMCP + NATO Phonetic + Carolina como Pilot)",
+            "40 min tripartite handover meeting + Q&A (RA4 estructuras ocupacionales + RA3 tag questions + integración 4 RAPs)",
+            "Panel evaluador rota observando in-situ"
+          ],
+          "deliverable_intermedio": "Ejecución oral 90 min L2 100% + artefactos firmados (Pre-Shipment Cold Chain Audit Checklist diligenciado + Reefer Temperature Log firmado por Manuel)",
+          "scaffolding_instructor": "0 intervención durante ejecución · panel solo observa con Rúbrica ABP 6 criterios C01-C13 · feedback diferido en fase 5",
+          "_anclaje_matriz": {"raps_movilizados": ["RA1", "RA2", "RA3", "RA4"], "criterio_canon_que_alimenta": "C08 (capstone) + C01 + C02 + C03 + C04 + C05 + C06 (todos integrados)", "_produces_evidencia": "E-Misión (parte 1: ejecución)"}
+        },
+        {
+          "fase": 4,
+          "nombre": "Presentación",
+          "duracion_horas": 3.0,
+          "sesion_anchor": "S12",
+          "actividades_aprendiz": [
+            "Pitch final ante panel completo (Captain Lim Wei-Ming + Mariana Suárez + Hernando Ospina)",
+            "Cada tripleta presenta consolidado de su Pre-Shipment Cold Chain Audit (5 min pitch)",
+            "Panel hace Q&A con tag questions de confirmación y preguntas operacionales abiertas (15 min Q&A por tripleta)",
+            "Manuel responde con estructuras ocupacionales A2.1 + tag questions"
+          ],
+          "deliverable_intermedio": "Pitch + Q&A respondido · panel scoring con Rúbrica ABP 6 criterios C01-C13",
+          "scaffolding_instructor": "Accuracy diferida (fluency-friendly per P4 fluency zone PM-0) · panel NO interrumpe · acumula notas",
+          "_anclaje_matriz": {"raps_movilizados": ["RA4 (primary)", "RA3 (tag questions)"], "criterio_canon_que_alimenta": "C08 (capstone)", "_produces_evidencia": "E-Misión (parte 2: pitch + Q&A)"}
+        },
+        {
+          "fase": 5,
+          "nombre": "Evaluación reflexiva",
+          "duracion_horas": 2.0,
+          "sesion_anchor": "S12",
+          "actividades_aprendiz": [
+            "Debrief circle final · panel da feedback diferenciado per P4 (accuracy zone SMCP cero-tolerancia · fluency zone descripción funcional friendly)",
+            "Aprendices auto-evalúan reflexivamente con la Rúbrica ABP 6 criterios C01-C13",
+            "Cierre afectivo del programa con Mariana firmando un certificado simbólico fitosanitario en inglés (cierre del arco narrativo de Manuel · 'ya tienes las palabras inglesas para defender el banano que ya sabías proteger')"
+          ],
+          "deliverable_intermedio": "Auto-evaluación rúbrica firmada por aprendiz + feedback panel consolidado + certificado simbólico fitosanitario firmado por Mariana",
+          "scaffolding_instructor": "Sergio + Diana facilitan debrief circle · L1 permitido SOLO en debrief reflexivo final (no durante ejecución)",
+          "_anclaje_matriz": {"raps_movilizados": ["transversal · cierre programa"], "criterio_canon_que_alimenta": "C08 (closure) + transversal P4/P5/P6", "_produces_evidencia": "E-Misión (parte 3: scoring + reflexión)"}
+        }
+      ],
+      "_total_horas_subfases": "1.5 + 1.5 + 4.0 + 3.0 + 2.0 = 12.0 horas (cumple canon ≤12h REGLA 8)",
+
+      "materiales_simulacion": [
+        {
+          "tipo": "template_documento",
+          "descripcion": "Pre-Shipment Cold Chain Audit Checklist · template real 2 páginas · 18 ítems en inglés (setpoint check · ICA seal verification · PPE compliance · genset backup test · phytosanitary cert verification · etc.) · espacios para firma + observaciones",
+          "_anclaje_matriz": {"raps_movilizados": ["RA1", "RA3", "RA4"]}
+        },
+        {
+          "tipo": "formato",
+          "descripcion": "Reefer Temperature Log · grid de 24h con celdas cada 30 min para anotar setpoint · timestamp · firma · espacio observaciones",
+          "_anclaje_matriz": {"raps_movilizados": ["RA1", "RA3"]}
+        },
+        {
+          "tipo": "template_documento",
+          "descripcion": "ICA Phytosanitary Certificate sample (en inglés · formato oficial ICA · espacio firma Mariana Suárez ICA Liaison)",
+          "_anclaje_matriz": {"raps_movilizados": ["RA4"]}
+        },
+        {
+          "tipo": "template_documento",
+          "descripcion": "Banana Export Manifest · listado 240 reefers · destino Hamburg · weight tolerance · variety Cavendish · número de bay · estado",
+          "_anclaje_matriz": {"raps_movilizados": ["RA1", "RA3", "RA4"]}
+        },
+        {
+          "tipo": "checklist",
+          "descripcion": "PPE compliance checklist · auditado por Hernando in-situ durante yard walk · 8 ítems (helmet · gloves · vest · boots · safety glasses · ID badge · radio · cluster gripper)",
+          "_anclaje_matriz": {"raps_movilizados": ["RA1", "RA4"]}
+        },
+        {
+          "tipo": "asset_visual",
+          "descripcion": "Diagrama 5 master functions IMARPOR (poster A2 · plastificado) + tabla NATO Phonetic (poster A3 · referencia) · disponibles en sala de briefing pero NO en yard durante ejecución",
+          "_anclaje_matriz": {"raps_movilizados": ["RA2", "RA4"]}
+        },
+        {
+          "tipo": "asset_visual",
+          "descripcion": "Realia operacional: cluster Cavendish con sello GlobalGAP · termómetro digital · reefer plug demo · cascos PPE rotulados · ATP certificate sample · ICA Phytosanitary Pocket Glossary laminado",
+          "_anclaje_matriz": {"raps_movilizados": ["RA1", "RA4"]}
+        },
+        {
+          "tipo": "formato",
+          "descripcion": "Rúbrica ABP 6 criterios C01-C13 · entregada al panel + a aprendices al inicio de S11 · transparencia evaluativa total",
+          "_anclaje_matriz": {"raps_movilizados": ["transversal"]}
+        }
+      ],
+
+      "rubrica_abp_capstone": {
+        "criterios_evaluacion": [
+          {
+            "criterio": "C01-aplicado · Reconoce y nombra vocablos físicos del reefer ship + oficios bananeros durante el yard walk · A2.1 nivel",
+            "niveles_desempeno": ["No lo hace · 0 pts", "Lo hace con errores que comprometen comprensión · 5 pts", "Lo hace adecuadamente · 10 pts", "Lo hace con fluidez y precisión técnica · 15 pts"],
+            "ponderacion": 15,
+            "rap_evaluado": "RA1"
+          },
+          {
+            "criterio": "C03+C04-aplicado · Comprende y produce SMCP correctamente durante VHF + bridge call · NATO Phonetic con stress correcto en respuestas críticas",
+            "niveles_desempeno": ["No usa SMCP · 0 pts", "SMCP con errores frecuentes · 5 pts", "SMCP correcto con algunas vacilaciones · 10 pts", "SMCP fluido + NATO Phonetic perfecto · 20 pts"],
+            "ponderacion": 20,
+            "rap_evaluado": "RA2",
+            "_zona_canon": "accuracy-cero-tolerancia per P4"
+          },
+          {
+            "criterio": "C05-aplicado · Aplica gramática operacional (modales · condicional tipo 1 · voz pasiva · presente perfecto · present progressive + preposicionales geográficas) en intercambio handover · A2.1 nivel",
+            "niveles_desempeno": ["No las usa · 0 pts", "Las usa con errores que afectan inteligibilidad operativa · 5 pts", "Las usa adecuadamente · 10 pts", "Las usa con fluidez sin afectar inteligibilidad · 15 pts"],
+            "ponderacion": 15,
+            "rap_evaluado": "RA3"
+          },
+          {
+            "criterio": "C06-aplicado · Aplica las 5 master functions IMARPOR + conectores discursivos (and/but/or/because/so/although) durante handover meeting + Q&A",
+            "niveles_desempeno": ["No usa conectores · descripción fragmentada · 0 pts", "Conectores básicos · descripción coherente · 5 pts", "Conectores adecuados · descripción cohesionada · 10 pts", "Conectores avanzados · descripción supraoracional fluida · 15 pts"],
+            "ponderacion": 15,
+            "rap_evaluado": "RA3+RA4"
+          },
+          {
+            "criterio": "C08-PRIMARY · Describe funciones profesionales del rol portuario aplicando estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to) + tag questions de confirmación · pitch + Q&A · A2.1 nivel terminal",
+            "niveles_desempeno": ["No usa estructuras ocupacionales · 0 pts", "Usa 2-3 estructuras con vacilaciones · 8 pts", "Usa las 5 estructuras adecuadamente · 15 pts", "Usa las 5 estructuras con fluidez + tag questions producción activa · 25 pts"],
+            "ponderacion": 25,
+            "rap_evaluado": "RA4 (primary capstone)",
+            "_zona_canon": "capstone canónico C08"
+          },
+          {
+            "criterio": "P5-aplicado · Mantiene 100% L2 durante los 90 minutos + diligencia artefactos auténticos correctamente (Pre-Shipment Cold Chain Audit Checklist + Reefer Temperature Log) + observa PPE compliance + safety protocol",
+            "niveles_desempeno": ["L1 frecuente o artefactos sin diligenciar · 0 pts", "L1 ocasional o 1-2 artefactos incompletos · 3 pts", "L1 esporádico + artefactos completos · 6 pts", "100% L2 + artefactos perfectos + safety perfecto · 10 pts"],
+            "ponderacion": 10,
+            "rap_evaluado": "transversal P5+P6"
+          }
+        ],
+        "ponderacion_total": "100 pts (15 C01 + 20 C03/C04 + 15 C05 + 15 C06 + 25 C08 + 10 transversal P5/P6)",
+        "umbral_pass": "≥ 70% (70 pts) · canon Sergio · alineado con E6 PASS criterion",
+        "_produces_evidencia": "E-Misión",
+        "_consumed_by_pm": "PM-3.5",
+        "_anclaje_matriz": {
+          "criterio_canon_capstone": "C08",
+          "raps_movilizados_evaluados": ["RA1 (C01)", "RA2 (C03+C04)", "RA3 (C05+C06)", "RA4 (C06+C08 capstone)"],
+          "instrumento_canon": "Rúbrica ABP 6 criterios C01-C13"
+        }
+      },
+
+      "_anclaje_matriz_bloque": {
+        "alcance": "todos_los_raps_integrados",
+        "raps_movilizados": ["RA1", "RA2", "RA3", "RA4"],
+        "rap_primario_capstone": "RA4 DESCRIBIR",
+        "pms_destino": ["PM-3.5"],
+        "criterios_canon": ["C08"],
+        "evidencias_target": ["E-Misión"],
+        "sesiones_anchor": ["S11", "S12"],
+        "subfases_abp": 5,
+        "instrumentos_canon": ["Rúbrica ABP 6 criterios C01-C13"],
+        "panel_evaluador": ["Captain Lim Wei-Ming", "Mariana Suárez", "Hernando Ospina"],
+        "modalidad_idioma": "100% L2 obligatorio"
+      }
+    }
+  ],
+
+  "_distribucion_evidencias_summary": {
+    "E1_Reading_S3": {"bloque": "B1 RA1", "elemento_productor": "story_a_reading", "criterio_canon": "C01", "consumed_by": "PM-2.3", "instrumento": "Cuestionario No 1"},
+    "E2_Writing_S4": {"bloque": "B1 RA1", "elemento_productor": "task_writing_derivada", "criterio_canon": "C02 (overlap RA1+RA3)", "consumed_by": "PM-2.4", "instrumento": "Lista de Verificación No 2"},
+    "E3_Listening_S5": {"bloque": "B2 RA2", "elemento_productor": "story_b_listening", "criterio_canon": "C03", "consumed_by": "PM-2.6", "instrumento": "Lista de Verificación No 3"},
+    "E4_parcial_Speaking_S6": {"bloque": "B2 RA2", "elemento_productor": "task_speaking_derivada", "criterio_canon": "C04 (overlap RA2+RA3)", "consumed_by": "PM-2.8", "instrumento": "Escala de Estimación No 4"},
+    "E6_Cuestionario_Consolidado_S6": {"bloque": "B2 RA2", "elemento_productor": "task_consolidacion_E6_derivada", "criterio_canon": "C07 (overlap 4-way)", "consumed_by": "PM-4.2", "instrumento": "Cuestionario No 6"},
+    "E4_final_Speaking_S8": {"bloque": "B3 RA3", "elemento_productor": "task_speaking_derivada", "criterio_canon": "C05", "consumed_by": "PM-2.8", "instrumento": "Escala de Estimación No 4"},
+    "E5_Language_Functions_S9": {"bloque": "B4 RA4", "elemento_productor": "task_speaking_derivada (Role Carousel)", "criterio_canon": "C06 (overlap RA3+RA4)", "consumed_by": "PM-2.9", "instrumento": "Escala de Estimación No 5"},
+    "E_Mision_S12": {"bloque": "BT TRANSFERENCIA", "elemento_productor": "mission_brief + rubrica_abp_capstone", "criterio_canon": "C08", "consumed_by": "PM-3.5", "instrumento": "Rúbrica ABP 6 criterios C01-C13"}
+  },
+
+  "validation_checks": [
+    {
+      "id": 1,
+      "name": "scope_diferenciado_por_tipo_bloque",
+      "status": "PASS",
+      "evidence": "6 sub_bloques con 3 schemas distintos · B0 schema APERTURA (materiales_spark · vocabulario_diagnostico · aprendizajes_previos · contexto_general_raps · NO Story A/B clásica · NO key_vocab_per_rap · NO grammar_per_rap · NO produces E1-E5) · B1-B4 schema APROPIACIÓN (Story A reading + Story B listening + 20 vocab + 5 functions F1-F5 + grammar items + tasks E2/E4 derivadas · _produces_evidencia mapping) · BT schema TRANSFERENCIA (mission_brief + 5 sub-fases ABP + materiales_simulacion + rubrica_abp_capstone · NO Story A/B · solo E-Misión)"
+    },
+    {
+      "id": 2,
+      "name": "apertura_scope_transversal",
+      "status": "PASS",
+      "evidence": "B0 cumple REGLA 11.A: 4 materiales_spark contextualizados banana cold chain (2 PM-2.1 Spark Real-Artifact + Stakes-Personal · 2 PM-2.2 Gap Analysis Visual Vocab + Listening Snippet) · cada spark con enfoque_motivacional non-empty + primer_acercamiento_a_temas · 12 términos vocabulario_diagnostico (rango canon 10-15 · _proposito=diagnostico_NO_apropiacion) · 4 aprendizajes_previos_a_activar con como_se_diagnostica + _anclaje_matriz · contexto_general_raps_presentado con narrativa + 4 RAPs overview · transversalidad_justificacion non-empty · NO contiene key_vocabulary_per_rap · NO grammar_items_per_rap · NO Story A/B clásica · NO produce E1-E5 · cumple restricción canon 'NO conocimiento ni habilidades nuevas'"
+    },
+    {
+      "id": 3,
+      "name": "apropiacion_scope_completo_por_rap",
+      "status": "PASS",
+      "evidence": "4 bloques APROPIACIÓN B1-B4 cada uno con: Story A reading 215-245 palabras (rango canon 150-250) · Story B listening 95-115 segundos (rango canon 60-120) · ficha_curacion completa con 8 filtros + metadatos + resumen + análisis · 20 vocab key_vocabulary_per_rap canon · 5 functions F1-F5 language_functions_per_rap · grammar_items_per_rap derivado del CEFR del RAP (4-7 estructuras por RAP) · task_writing_derivada + task_speaking_derivada con _produces_evidencia mapping · cada elemento productor con _anclaje_matriz ligando saberes/criterios canon. Distribución evidencias: B1 RA1 → E1 (S3 story_a_reading) + E2 (S4 task_writing) · B2 RA2 → E3 (S5 story_b_listening) + E4-parcial (S6 task_speaking) + E6 (S6 task_consolidacion_E6) · B3 RA3 → E4-final (S8 task_speaking) · B4 RA4 → E5 (S9 task_speaking Role Carousel)"
+    },
+    {
+      "id": 4,
+      "name": "transferencia_scope_capstone",
+      "status": "PASS",
+      "evidence": "BT cumple schema TRANSFERENCIA: mission_brief con escenario_laboral_real heredado de PM-0 v3.2 escenario_hero (Pre-Departure Banana Reefer Compliance Check & Tripartite Handover · 90 min · 3 segmentos · panel 3 personas · 100% L2) · 5 sub-fases ABP con duración total 1.5+1.5+4.0+3.0+2.0=12.0h ≤ 12h canon REGLA 8 · materiales_simulacion (8 items: 4 templates documento + 1 formato + 1 checklist + 2 assets visuales) · rubrica_abp_capstone con 6 criterios + ponderacion_total 100 pts + umbral_pass ≥70% · _produces_evidencia=E-Misión · _consumed_by_pm=PM-3.5 · _anclaje_matriz canon C08 + RA4 capstone"
+    },
+    {
+      "id": 5,
+      "name": "cobertura_criterios_canon_heredada",
+      "status": "PASS",
+      "evidence": "8/8 criterios canon C01-C08 visibles en _anclaje_matriz de elementos: C01→B1 story_a_reading (E1 S3) · C02→B1 task_writing_derivada (E2 S4 overlap RA1+RA3) · C03→B2 story_b_listening (E3 S5) · C04→B2 task_speaking_derivada (E4-parcial S6 overlap RA2+RA3) · C05→B3 task_speaking_derivada (E4-final S8) · C06→B4 task_speaking_derivada Role Carousel (E5 S9 overlap RA3+RA4) · C07→B2 task_consolidacion_E6_derivada (E6 S6 overlap 4-way) · C08→BT mission_brief + rubrica_abp_capstone (E-Misión S12 capstone). 0 criterios huérfanos · 0 criterios inventados · respeta distribución heredada de pm-1-1.json criterios_canon_distribution_summary"
+    },
+    {
+      "id": 6,
+      "name": "traceability_matriz_completa",
+      "status": "PASS",
+      "evidence": "Cada elemento del scope con _anclaje_matriz non-empty · cada elemento productor con _produces_evidencia explícito (E1-E6/E-Misión o null) + _consumed_by_pm explícito. APERTURA: 4 materiales_spark + 12 vocab_diagnostico + 4 aprendizajes_previos · todos con _anclaje_matriz · todos _produces_evidencia=null (canon REGLA 11.A). APROPIACIÓN: cada Story A/B + 20 vocab + 5 functions + grammar items + tasks · todos con _anclaje_matriz ligando saberes_canon/criterios_canon del RAP target. TRANSFERENCIA: mission_brief + 5 sub-fases + 8 materiales_simulacion + rubrica · todos con _anclaje_matriz. _distribucion_evidencias_summary mapea 8 evidencias formales E1-E6+E-Misión 1:1 con elemento productor + bloque + criterio canon + PM consumidor + instrumento. 0 elementos sin anclaje · 0 inventados fuera del canon SOFÍA + matriz alineada"
+    }
+  ],
+
+  "downstream_consumers": [
+    "PM-2.0 architect (session blueprint hereda tipo_bloque + scope diferenciado · scope APERTURA → arquetipos · scope APROPIACIÓN → AC blueprint · scope TRANSFERENCIA → ABP capstone)",
+    "PM-2.1 (consume B0 materiales_spark Real-Artifact + Stakes-Personal · enfoque_motivacional + primer_acercamiento_a_temas)",
+    "PM-2.2 (consume B0 aprendizajes_previos_a_activar + contexto_general_raps_presentado · 2 arquetipos Gap Analysis)",
+    "PM-2.3 (consume Story A reading de B1/B2/B3/B4 + key_vocabulary_per_rap del bloque)",
+    "PM-2.4 (consume task_writing_derivada B1 → E2 + scaffolding writing B2/B3/B4)",
+    "PM-2.5 (consume key_vocabulary_per_rap + grammar_items_per_rap por RAP)",
+    "PM-2.6 (consume Story B listening de B2 → E3 + Story B refuerzos B1/B3/B4)",
+    "PM-2.8 (consume task_speaking_derivada B2 → E4-parcial + B3 → E4-final + B4 Role Carousel)",
+    "PM-2.9 (consume language_functions_per_rap + B4 task_speaking Role Carousel → E5)",
+    "PM-2.10 (consume grammar_items_per_rap por RAP)",
+    "PM-2.11 (cols 1-5 GFPI-F-134 derivado de matriz canon heredada por bloque APROPIACIÓN)",
+    "PM-3.5 (consume BT mission_brief + 5 sub-fases ABP + materiales_simulacion + rubrica_abp_capstone → E-Misión S12)",
+    "PM-4.2 (consume task_consolidacion_E6_derivada B2 → E6 Cuestionario Consolidado S6)"
+  ],
+
+  "_audit": {
+    "input_sources": [
+      "Master prompt PM-1.2 v4.2 (REGLAS 10-17 · 9 reglas v2.6 preservadas para APROPIACIÓN · LIBERTAD LLM REAL declarada en REGLA 13)",
+      "pm-1-1.json v2.8 (estructura tripartita 6 bloques con _anclaje_matriz · 9/9 validation_checks PASS)",
+      "pm-0-0-matriz-alineada.json v1.1 (8 criterios canon C01-C08 · 4 RAPs · primera fuente de verdad)",
+      "pm-0-context.json v3.1 (universo banana cold chain · 8 personajes · grammar focus canon-aligned · escenario hero · L1 policy)",
+      "pm-1-2-input.json (vía_curacion=IA · onboarding_l1=true · restricciones Story A 150-250 palabras · Story B 60-120 segundos)"
+    ],
+    "decisiones_libertad_llm_aplicadas": [
+      "Vía 1 IA aplicada · 8 fuentes auténticas curadas (Story A + Story B por cada RAP B1-B4) · 8 filtros canon aplicados a cada una · diversidad de géneros: artículo industria (B1) + audio walkaround (B1) + guía institucional IMO (B2) + audio VHF auténtico (B2) + blog técnico (B3) + audio briefing tripartito (B3) + entrevista profesional (B4) + audio operations briefing (B4)",
+      "12 términos en vocabulario_diagnostico APERTURA (rango canon 10-15) · LLM eligió 12 porque cubre los 4 RAPs balanceadamente sin saturar diagnóstico cero-amenaza",
+      "4 materiales_spark APERTURA: 2 PM-2.1 (Real-Artifact tour reefer yard + Stakes-Personal video Carolina/Mariana) + 2 PM-2.2 (Visual Vocab Diagnostic 12 ítems + Listening Snippet VHF 90 seg) · LLM seleccionó tipos coherentes con sector banana + personajes universo",
+      "20 términos key_vocabulary_per_rap por cada RAP B1-B4 (canon REGLA v2.6 #3 · exactamente 20) · cada uno con _anclaje_matriz a saber concepto canon + ejemplo_uso contextualizado banana cold chain",
+      "5 funciones F1-F5 language_functions_per_rap por cada RAP B1-B4 · LLM diseñó funciones según verbo cognitivo del RAP (RECONOCER · COMPRENDER · APLICAR · DESCRIBIR) y _produces_evidencia mapping a E2/E4-parcial/E4-final/E5 según matriz",
+      "Grammar items por RAP: B1 4 estructuras (verb to be + plurals + imperative + IN) · B2 4 estructuras (imperative SMCP + numbers + modal request + tag questions intro) · B3 7 estructuras (modals + condicional + pasiva + presente perfecto + present progressive + present simple Wh + quantifiers) · B4 6 estructuras (conectores + estructuras ocupacionales + tag questions producción + modals funcionales + COMMANDS + comparativos)",
+      "5 sub-fases ABP TRANSFERENCIA con duración 1.5+1.5+4.0+3.0+2.0=12.0h · LLM balanceó para que ejecución (fase 3) sea la más densa (4h) y planeación + diseño caben en S11 (3h juntas) · presentación + reflexión cierran S12 (5h juntas)",
+      "Story A 215-245 palabras (rango canon 150-250) + Story B 95-115 segundos (rango canon 60-120) · LLM cura dentro de rango respetando complejidad CEFR creciente A1.2 → A2.1 por RAP",
+      "Mission brief contextualizado al escenario_hero del PM-0 v3.2 (Pre-Departure Banana Reefer Compliance Check) · NO inventa nuevo escenario · honra los 90 min canon + 3 segmentos canon + panel 3 personas canon",
+      "Tasks derivadas por RAP: B1 writing E2 + speaking formativo · B2 writing scaffold + speaking E4-parcial + consolidación E6 · B3 writing scaffold + speaking E4-final · B4 writing scaffold + speaking E5 Role Carousel · LLM diseñó desde Story A/B + grammar items emergentes"
+    ],
+    "principio_traceability_aplicado": "Cada elemento de scope tiene _anclaje_matriz non-empty + _produces_evidencia mapping (E1-E6/E-Misión o null explícito) + _consumed_by_pm explícito · 0 elementos sin anclaje · 0 elementos inventados fuera canon SOFÍA + matriz alineada · cumple REGLA 12 v3.2 heredada y REGLA 12 v4.2",
+    "version_history": [
+      {"version": "v4.2", "fecha": "2026-05-01", "estado": "scope diferenciado por tipo_bloque heredado de PM-1.1 v2.8 · 3 schemas distintos · 6/6 validation_checks PASS · listo cascade Step 1.4 PM-2.0 architect"}
+    ]
+  },
+
+  "enriched": true,
+  "_block_downstream_until_gate0": false,
+  "gate_0_pending": "Sergio approval · pm-1-2.json v4.2 IMARPOR-CC-V2 → cascade Phase 1 Step 1.4 PM-2.0 architect"
+}

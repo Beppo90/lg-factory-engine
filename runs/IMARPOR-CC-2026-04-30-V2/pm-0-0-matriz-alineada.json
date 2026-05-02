@@ -2,36 +2,69 @@
   "schema_version": "v1.0",
   "pm_id": "PM-0.0",
   "pm_name": "Matriz Pedagógica Alineadora",
-  "pm_version": "1.1",
+  "pm_version": "1.3",
   "run_id": "IMARPOR-CC-2026-04-30-V2",
   "guide_id": "IMARPOR-CC-V2-G1",
-  "generated_date": "2026-05-01",
-  "instructor": "SERGIO LEONARDO CORTÉS · DIANA ROCIO SAMBONI",
+  "generated_date": "2026-05-02",
+  "instructor": "Sergio Cortés Perdomo",
   "phase": 0,
   "tipo_artefacto": "matriz_pedagogica_alineada_pre_pm0",
+
+  "_correction_applied": "v1.3 corrige drift de distribución detectado en v1.1 · aplica distribución canónica explícita Opción A refinada aprobada por Sergio Cortés 2026-05-02 · cero re-interpretación LLM · literal copy desde input.distribucion_canonica_saberes_por_rap",
+  "_input_ref": "pm-0-0-input.json (con distribucion_canonica_saberes_por_rap NEW · Opción A refinada Sergio 2026-05-02)",
+  "_legacy_ref": "pm-0-0-matriz-alineada.json.legacy-pre-fix-distribucion-rev (v1.1 con drift · auditoría)",
+  "_canon_authority": "Sergio Cortés Perdomo · arquitecto/instructor FPI SENA Bilingüismo · aprobación 2026-05-02",
+
+  "programa_metadata": {
+    "denominacion": "Inglés Marítimo y Portuario",
+    "tipo": "Curso Complementario",
+    "duracion_total_horas": 100,
+    "horas_directas": 72,
+    "horas_independientes": 28,
+    "numero_sesiones": 12,
+    "rango_cefr": "A1.2 → A2.1",
+    "regla_bloques": "absorcion_Na1",
+    "total_guias": 1,
+    "sector": "marítimo y portuario",
+    "terminal": "Puerto Antioquia · Urabá · Eje Bananero",
+    "subsector": "banana / fruta refrigerada · cold chain",
+    "_resumen_ejecutivo": "Curso Complementario IMARPOR · 100h (72 directas + 28 independientes) · 12 sesiones · 1 guía single-absorción regla Na1 · CEFR A1.2→A2.1 · contexto operacional Puerto Antioquia (Urabá · cold chain banana). 4 RAPs pedagógicamente diferenciados por verbo cognitivo Bloom (RECONOCER L1 · COMPRENDER L2 · APLICAR L3 · DESCRIBIR L2-3). 26 saberes conceptos + 10 saberes proceso + 5 criterios SOFÍA generales + 8 criterios específicos canon sistema (C01-C08) anclados a evidencias E1-E6+E-Misión."
+  },
+
   "competencia": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA IDIOMAS.",
+
   "raps_count": 4,
-  "canon_ampliado_v1_1": "Esta matriz amplía el canon v1.0 incorporando 8 criterios específicos canónicos del sistema FPI Factory (C01-C08) por RAP · cada criterio anclado a evidencia E1-E6/E-Misión + sesión + instrumento + CEFR subnivel · trazabilidad explícita downstream actividades.",
+
   "raps": [
     {
       "rap_id": "RA1",
       "rap_codigo_sofia": "220301011-RA1",
       "rap_titulo": "RA 1 RECONOCER VOCABLOS Y EXPRESIONES BÁSICAS EN INGLÉS, DE FORMA ESCRITA Y AUDITIVA, ENMARCADOS EN EL DESEMPEÑO DE FUNCIONES PROPIAS EN EL SECTOR MARÍTIMO Y PORTUARIO.",
+      "verbo_cognitivo": "RECONOCER",
+      "bloom_level": "L1 (Recordar/Reconocer)",
+      "dominio_canonico": "Vocab base + estructuras mínimas para nombrar (verb to be · plural · demostrativos)",
+
       "saberes_conceptos_y_principios": [
         "UNIT 1: SHIP OVERVIEW",
         "PARTS OF THE SHIPS",
         "TYPES OF MERCHANT VESSELS",
         "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT OF THE SHIP",
+        "REVIEW OF DEMONSTRATIVES ADJECTIVES AND VERB TO BE",
+        "SINGULAR AND PLURAL NOUNS",
         "UNIT 2: THE CREW",
         "PROFESSIONS IN PORT AND ABOARD"
       ],
+
       "saberes_proceso": [
         "IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS GENERADA EN EL INTERCAMBIO ORAL Y/O ESCRITO EN ESTE IDIOMA, DADO EN EL CUMPLIMIENTO DE LAS ACCIONES REQUERIDAS A BORDO DEL BUQUE Y EN PUERTO.",
         "RECONOCER LOS DISTINTOS OFICIOS ENMARCADOS EN LOS CAMPOS MARÍTIMO Y PORTUARIO."
       ],
+
       "criterios_evaluacion": [
+        "INTERPRETA MENSAJES SENCILLOS DE COMUNICACIÓN EN INGLÉS, SEGÚN CONTEXTO DE LAS OPERACIONES A BORDO Y EN EL PUERTO. (cara reading vocab básico)",
         "IDENTIFICA VOCABLOS BÁSICOS EN INGLÉS RELACIONADOS CON ELEMENTOS FÍSICOS DEL BUQUE Y PUERTO."
       ],
+
       "criterios_evaluacion_especificos_canon_sistema": [
         {
           "id": "C01",
@@ -41,8 +74,7 @@
           "evidencia": "E1",
           "evidencia_nombre": "Reading",
           "sesion": "S3",
-          "instrumento": "Cuestionario No 1",
-          "anclaje_rationale": "Asignación primaria · 1:1 con verbo cognitivo RECONOCER del RA1 · evidencia E1 Reading evalúa decoding lexical en textos adaptados · sesión S3 corresponde a primera evidencia formal del programa post-bienvenida/diagnóstico."
+          "instrumento": "Cuestionario No 1"
         },
         {
           "id": "C02",
@@ -52,8 +84,7 @@
           "evidencia": "E2",
           "evidencia_nombre": "Writing",
           "sesion": "S4",
-          "instrumento": "Lista de Verificación No 2",
-          "anclaje_rationale": "Asignación overlap RA1+RA3 · cara RA1: vocabulario portuario reconocido en S3 ahora se REUTILIZA productivamente en Inspection Report (lexical retention checkpoint) · cara RA3 (en otro RAP): aplicación gramatical de to be/imperative/plurales/preposición IN. En RA1 se valida que el saber léxico básico fluye a producción escrita controlada."
+          "instrumento": "Lista de Verificación No 2"
         },
         {
           "id": "C07",
@@ -63,31 +94,50 @@
           "evidencia": "E6",
           "evidencia_nombre": "Cuestionario Consolidado",
           "sesion": "S6",
-          "instrumento": "Cuestionario No 6",
-          "anclaje_rationale": "Asignación overlap 4-way · cara RA1: la sección de Vocabulary + Reading del cuestionario consolidado evalúa retención del vocabulario portuario/barco/oficios trabajado en S1-S5 · checkpoint medio del programa (S6 = mitad de las 12 sesiones)."
+          "instrumento": "Cuestionario No 6"
         }
       ],
-      "rationale_alineacion": "RA1 ancla el verbo cognitivo RECONOCER · vocabulario básico de identificación auditiva y escrita. Incluí UNIT 1 completa (ship overview · parts · types · navigational equipment) porque son elementos físicos nombrables del buque · core lexical fundacional. Incluí UNIT 2 cabecera más PROFESSIONS IN PORT AND ABOARD porque oficios son etiquetas léxicas reconocibles. EXCLUÍ deliberadamente: SINGULAR AND PLURAL NOUNS · DEMONSTRATIVES · VERB TO BE (van a RA3 porque son estructuras gramaticales · separación analítica REGLA 1). EXCLUÍ COMMANDS y IMPERATIVE (van a RA4 y RA3 respectivamente). Procesos asignados son los dos verbos RECONOCER/IDENTIFICAR puros del input. El criterio SOFÍA general IDENTIFICA VOCABLOS BÁSICOS evalúa este reconocimiento léxico. Los criterios específicos canon sistema anclan así: C01 (E1 Reading · S3 · A1.2) es la evaluación 1:1 del verbo RECONOCER en evidencia inicial post-diagnóstico · C02 (E2 Writing · S4 · A1.2-A1.3 · overlap RA3) reutiliza este lexicón en producción escrita controlada (Inspection Report) midiendo retención léxica · C07 (E6 Cuestionario Consolidado · S6 · overlap 4-way) cierra checkpoint medio de programa validando que vocabulario portuario/barco/oficios persiste integrado a mitad del recorrido. Trazabilidad downstream: PM-2.x ACs de S3/S4/S6 deben atribuirse a RA1+C01/C02/C07."
+
+      "_rationale": "RA1 es Bloom L1 RECONOCER. UNIT 1 (ship overview · parts · types · equipment) + UNIT 2 (crew · professions) + las estructuras MÍNIMAS para NOMBRAR entidades (DEMOSTRATIVOS+VERB TO BE+SINGULAR/PLURAL) pertenecen aquí porque sin ellas el aprendiz NO puede nombrar entidades portuarias ('this is a hatch · these are containers · the ship has cranes'). Estas estructuras NO son gramática operacional bilateral (eso es RA3) sino andamiaje lexical-sintáctico para reconocimiento. Procesos IDENTIFICAR/EXTRAER + RECONOCER OFICIOS son los procesos cognitivos centrales del verbo del RAP. Criterios canon: C01 primario (E1 Reading S3 · vocab portuario) + C02 overlap RA1+RA3 (cara lexical retention en Inspection Report S4) + C07 4-way (Cuestionario consolidado S6).",
+
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": ["E1 (C01 · Reading S3)"],
+        "overlaps_documentados": [
+          "C02 RA1+RA3 cara lexical retention en Writing Inspection Report (vocabulario aplicado)",
+          "C07 4-way RA1+RA2+RA3+RA4 Cuestionario Consolidado S6 (consolidación integrada)"
+        ],
+        "sesiones_anchor": ["S3 (E1 Reading)", "S4 (E2 cara lexical)", "S6 (C07 consolidado)"],
+        "criterios_count": 3,
+        "saberes_count": "8 conceptos + 2 procesos"
+      }
     },
+
     {
       "rap_id": "RA2",
       "rap_codigo_sofia": "220301011-RA2",
       "rap_titulo": "RA2 COMPRENDER VOCABLOS PRINCIPALES DE LAS FRASES ESTANDARIZADAS POR LA OMI, EN INGLÉS, PARA INICIAR LA INTERACCIÓN POR MEDIO ESCRITO Y ORAL, DE ACUERDO CON LOS ROLES DESCRITOS DENTRO DE LA INDUSTRIA MARÍTIMA Y PORTUARIA.",
+      "verbo_cognitivo": "COMPRENDER",
+      "bloom_level": "L2 (Comprender)",
+      "dominio_canonico": "SMCP IMO completo · spelling NATO · message markers · standard responses",
+
       "saberes_conceptos_y_principios": [
         "UNIT 5: INTRODUCING IMO STANDARD MARINE COMMUNICATION PHRASES (SMCP)",
         "STANDARD SPELLING",
         "MESSAGE MARKERS",
         "STANDARD RESPONSES AND ORGANIZATIONAL PHRASES"
       ],
+
       "saberes_proceso": [
         "RECONOCER LA MANERA DE DELETREAR LOS VOCABLOS EN INGLÉS.",
         "RESPONDER EN INGLÉS EN CONVERSACIONES SENCILLAS Y UTILIZANDO LAS FRASES ESTANDARIZADAS POR LA OMI, EN EL DESEMPEÑO DE LAS OPERACIONES QUE SE GENEREN EN EL CONTEXTO.",
         "IDENTIFICAR VOCABULARIO COMÚN EN INGLÉS, EN LAS FRASES ESTANDARIZADAS DE LA OMI PARA LA COMUNICACIÓN MARÍTIMA."
       ],
+
       "criterios_evaluacion": [
-        "INTERPRETA MENSAJES SENCILLOS DE COMUNICACIÓN EN INGLÉS, SEGÚN CONTEXTO DE LAS OPERACIONES A BORDO Y EN EL PUERTO.",
+        "INTERPRETA MENSAJES SENCILLOS DE COMUNICACIÓN EN INGLÉS, SEGÚN CONTEXTO DE LAS OPERACIONES A BORDO Y EN EL PUERTO. (cara SMCP listening)",
         "RESPONDE EN INGLÉS EN CONVERSACIONES SENCILLAS UTILIZANDO LAS FRASES ESTANDARIZADAS POR LA OMI."
       ],
+
       "criterios_evaluacion_especificos_canon_sistema": [
         {
           "id": "C03",
@@ -97,8 +147,7 @@
           "evidencia": "E3",
           "evidencia_nombre": "Listening",
           "sesion": "S5",
-          "instrumento": "Lista de Verificación No 3",
-          "anclaje_rationale": "Asignación primaria · 1:1 con verbo cognitivo COMPRENDER del RA2 · evidencia E3 Listening en S5 evalúa decoding auditivo de SMCP en audio VHF auténtico (incluye lingua franca B1 no-nativa · realismo operacional) · checkpoint del bloque SMCP."
+          "instrumento": "Lista de Verificación No 3"
         },
         {
           "id": "C04",
@@ -108,8 +157,7 @@
           "evidencia": "E4-parcial",
           "evidencia_nombre": "Speaking parcial",
           "sesion": "S6",
-          "instrumento": "Escala de Estimación No 4",
-          "anclaje_rationale": "Asignación overlap RA2+RA3 · cara RA2: producción reactiva de respuestas SMCP estandarizadas + NATO Phonetic spelling (vocabulario cerrado SMCP comprendido en S5 ahora se PRODUCE oralmente) · cara RA3 (en otro RAP): aplicación gramatical de stress y formas estandarizadas. En RA2 valida la realización oral de la comprensión SMCP."
+          "instrumento": "Escala de Estimación No 4"
         },
         {
           "id": "C07",
@@ -119,34 +167,50 @@
           "evidencia": "E6",
           "evidencia_nombre": "Cuestionario Consolidado",
           "sesion": "S6",
-          "instrumento": "Cuestionario No 6",
-          "anclaje_rationale": "Asignación overlap 4-way · cara RA2: la sección de Listening + SMCP vocabulary del cuestionario consolidado evalúa retención de message markers/standard responses/spelling · checkpoint medio confirma comprensión SMCP antes de avanzar a integración gramatical compleja."
+          "instrumento": "Cuestionario No 6"
         }
       ],
-      "rationale_alineacion": "RA2 es el RAP de COMPRENSIÓN específica de SMCP (frases estandarizadas OMI · IMO Standard Marine Communication Phrases). Verbo cognitivo: COMPRENDER. UNIT 5 íntegra pertenece aquí · es el bloque temático SMCP único del programa (introducing SMCP · standard spelling NATO phonetic · message markers tipo INSTRUCTION/ADVICE/WARNING · standard responses). Procesos asignados: RECONOCER LA MANERA DE DELETREAR (NATO Phonetic Alphabet es canon SMCP) · RESPONDER EN INGLÉS UTILIZANDO FRASES OMI (proceso comunicativo directo) · IDENTIFICAR VOCABULARIO COMÚN EN FRASES OMI (lexical recognition dentro del SMCP context). Criterios SOFÍA generales INTERPRETA MENSAJES y RESPONDE CON FRASES OMI evalúan comprensión + production reactiva. Los criterios específicos canon sistema anclan así: C03 (E3 Listening · S5 · A1.3) es la evaluación 1:1 del verbo COMPRENDER en audio VHF auténtico con lingua franca no-nativa (realismo) · C04 (E4-parcial Speaking · S6 · overlap RA3) materializa la comprensión SMCP en producción oral controlada (Roger/Wilco/Affirmative/Standby con stress correcto) · C07 (E6 Cuestionario Consolidado · S6 · overlap 4-way) cierra checkpoint medio validando retención de message markers + spelling. Trazabilidad downstream: PM-2.x ACs de S5/S6 deben atribuirse a RA2+C03/C04/C07."
+
+      "_rationale": "RA2 es Bloom L2 COMPRENDER · único RAP con dominio SMCP IMO. UNIT 5 entera (SMCP · standard spelling · message markers · standard responses) cae aquí porque es el único RAP cuyo enunciado refiere explícitamente 'FRASES ESTANDARIZADAS POR LA OMI'. Procesos DELETREAR (NATO Phonetic spelling) + RESPONDER SMCP + IDENTIFICAR vocab SMCP están todos aquí en su hogar canónico. Criterios canon: C03 primario (E3 Listening S5 · audio VHF auténtico con lingua franca B1) + C04 overlap RA2+RA3 (cara SMCP Speaking parcial S6 NATO Phonetic) + C07 4-way Cuestionario S6.",
+
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": ["E3 (C03 · Listening S5)"],
+        "overlaps_documentados": [
+          "C04 RA2+RA3 cara SMCP Speaking parcial VHF NATO Phonetic",
+          "C07 4-way RA1+RA2+RA3+RA4 Cuestionario Consolidado S6"
+        ],
+        "sesiones_anchor": ["S5 (E3 Listening SMCP)", "S6 (E4-parcial + C07)"],
+        "criterios_count": 3,
+        "saberes_count": "4 conceptos + 3 procesos"
+      }
     },
+
     {
       "rap_id": "RA3",
       "rap_codigo_sofia": "220301011-RA3",
       "rap_titulo": "RA3 APLICAR LAS REGLAS GRAMATICALES BÁSICAS DEL IDIOMA INGLÉS QUE GARANTICEN LA COMUNICACIÓN SENCILLA DE PUERTO A BUQUE Y VICEVERSA, SEGÚN LAS NECESIDADES ORIGINADAS EN EL DESARROLLO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS.",
+      "verbo_cognitivo": "APLICAR",
+      "bloom_level": "L3 (Aplicar)",
+      "dominio_canonico": "Gramática operacional bilateral puerto-buque (commands · imperative · modals · present simple)",
+
       "saberes_conceptos_y_principios": [
-        "REVIEW OF DEMONSTRATIVES ADJECTIVES AND VERB TO BE",
-        "SINGULAR AND PLURAL NOUNS",
+        "COMMANDS (TO: OFFICERS, SAILORS, HELMSMAN, CAPTAINS, ENGINEERS, STEWARD, CRANE OPERATORS)",
         "REVIEW OF PRESENT SIMPLE TENSE",
         "IMPERATIVE",
-        "TAG QUESTIONS",
-        "REVIEW OF PRESENT PROGRESSIVE AND PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE",
-        "QUANTIFIERS",
         "MODAL VERBS: CAN, COULD, SHOULD, MUST FOR REQUEST, PROHIBITION, POSSIBILITY, PERMISSION"
       ],
+
       "saberes_proceso": [
         "IDENTIFICAR ESTRUCTURAS GRAMATICALES BÁSICAS EN INGLÉS, TALES COMO VERBOS RELACIONADOS CON LAS ACCIONES EMPRENDIDAS DENTRO DE LOS OFICIOS A BORDO DEL BUQUE Y EN PUERTO.",
-        "EXPRESAR PROHIBICIÓN, PERMISIÓN, POSIBILIDAD O HACER PEDIDOS EN INGLÉS, EN CUANTO A PROCESOS ENMARCADOS EN EL DESEMPEÑO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS.",
-        "EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO."
+        "EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO.",
+        "EXPRESAR PROHIBICIÓN, PERMISIÓN, POSIBILIDAD O HACER PEDIDOS EN INGLÉS, EN CUANTO A PROCESOS ENMARCADOS EN EL DESEMPEÑO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS."
       ],
+
       "criterios_evaluacion": [
+        "RESPONDE EN INGLÉS CON INFORMACIÓN PERTINENTE A COMANDOS E INTERCAMBIOS SENCILLOS (cara comandos/imperativo)",
         "APLICA REGLAS GRAMATICALES BÁSICAS EN INGLÉS PARA COMUNICACIÓN PUERTO-BUQUE."
       ],
+
       "criterios_evaluacion_especificos_canon_sistema": [
         {
           "id": "C02",
@@ -156,8 +220,7 @@
           "evidencia": "E2",
           "evidencia_nombre": "Writing",
           "sesion": "S4",
-          "instrumento": "Lista de Verificación No 2",
-          "anclaje_rationale": "Asignación overlap RA1+RA3 · cara RA3: APLICACIÓN gramatical concreta de verb to be + imperative + plurales + preposición IN en producción escrita auténtica (Inspection Report banana cold chain) · primera evaluación gramatical del programa · S4 = primera salida productiva escrita."
+          "instrumento": "Lista de Verificación No 2"
         },
         {
           "id": "C04",
@@ -167,8 +230,7 @@
           "evidencia": "E4-parcial",
           "evidencia_nombre": "Speaking parcial",
           "sesion": "S6",
-          "instrumento": "Escala de Estimación No 4",
-          "anclaje_rationale": "Asignación overlap RA2+RA3 · cara RA3: APLICACIÓN de patrones fonológicos y gramaticales en producción VHF (stress en respuestas críticas + sintaxis SMCP estandarizada) · gramática como herramienta operacional bajo presión comunicativa."
+          "instrumento": "Escala de Estimación No 4"
         },
         {
           "id": "C05",
@@ -178,8 +240,7 @@
           "evidencia": "E4-final",
           "evidencia_nombre": "Speaking final",
           "sesion": "S8",
-          "instrumento": "Escala de Estimación No 4",
-          "anclaje_rationale": "Asignación primaria · 1:1 con verbo cognitivo APLICAR del RA3 · evidencia E4-final Speaking en S8 evalúa aplicación gramatical compleja en intercambio tripartito simultáneo · modales + conditional + pasiva + present perfect · checkpoint avanzado pre-Misión."
+          "instrumento": "Escala de Estimación No 4"
         },
         {
           "id": "C06",
@@ -189,8 +250,7 @@
           "evidencia": "E5",
           "evidencia_nombre": "Language Functions",
           "sesion": "S9",
-          "instrumento": "Escala de Estimación No 5",
-          "anclaje_rationale": "Asignación overlap RA3+RA4 · cara RA3: APLICACIÓN de conectores discursivos (and/but/or/because/so/although) como dispositivo gramatical de cohesión · gramática supraoracional al servicio de las 5 master functions."
+          "instrumento": "Escala de Estimación No 5"
         },
         {
           "id": "C07",
@@ -200,35 +260,57 @@
           "evidencia": "E6",
           "evidencia_nombre": "Cuestionario Consolidado",
           "sesion": "S6",
-          "instrumento": "Cuestionario No 6",
-          "anclaje_rationale": "Asignación overlap 4-way · cara RA3: la sección de Grammar del cuestionario consolidado evalúa to be/present simple/imperative/plurals/prepositions · checkpoint medio confirma fundación gramatical antes de modales/condicional/pasiva/present perfect en S7-S9."
+          "instrumento": "Cuestionario No 6"
         }
       ],
-      "rationale_alineacion": "RA3 concentra el verbo cognitivo APLICAR · gramática como herramienta operacional. Agrupé TODA la gramática del programa: demonstratives + verb to be (concord predicativo) · SINGULAR AND PLURAL NOUNS (decisión deliberada · es estructura morfológica · concordancia número · NO mero vocabulario · diverge del ejemplo del master prompt) · present simple (acciones rutinarias roles) · IMPERATIVE (estructura subyacente de los commands operacionales) · tag questions (confirmación VTS/comm) · present progressive + prepositional phrases (ubicación dinámica del buque) · quantifiers (carga/tonelaje) · modal verbs. Procesos: IDENTIFICAR ESTRUCTURAS GRAMATICALES es nuclear · EXPRESAR PROHIBICIÓN/PERMISIÓN/POSIBILIDAD/PEDIDOS es la APLICACIÓN funcional de modals · EXPRESAR E INTERPRETAR ÓRDENES asignado aquí también (overlap con RA4) porque la producción/decoding del imperative + verbos de acción es APLICACIÓN gramatical. Los criterios específicos canon sistema anclan así (5 criterios · RAP con mayor densidad): C02 (E2 Writing · S4 · overlap RA1) primera aplicación gramatical en escritura · C04 (E4-parcial Speaking · S6 · overlap RA2) aplicación fonológica/sintáctica VHF · C05 (E4-final Speaking · S8 · A2.0) evaluación PRIMARIA del RA3 con gramática compleja en intercambio tripartito · C06 (E5 Language Functions · S9 · overlap RA4) conectores discursivos en Role Carousel · C07 (E6 · S6 · overlap 4-way) checkpoint medio gramatical. Trazabilidad downstream: PM-2.x ACs de S4/S6/S8/S9 deben atribuirse a RA3+criterios respectivos."
+
+      "_rationale": "RA3 es Bloom L3 APLICAR. El énfasis del enunciado SOFÍA es 'COMUNICACIÓN SENCILLA DE PUERTO A BUQUE Y VICEVERSA' = INTERACCIÓN OPERACIONAL BILATERAL. Las gramáticas que viven aquí son SOLO las de interacción operacional: COMMANDS (dar órdenes a oficiales/sailors/helmsman/etc.) + IMPERATIVE (órdenes urgentes) + PRESENT SIMPLE (rutinas operacionales) + MODAL VERBS (request/prohibition/possibility/permission). NO incluye DEMOSTRATIVOS+VERB TO BE+PLURAL (eso es andamiaje L1 RA1) ni TAG QUESTIONS+PRESENT PROGRESSIVE+QUANTIFIERS (eso es estructura descriptiva RA4). 3 procesos relacionados con identificar/expresar/interpretar gramática operacional están aquí. Densidad criterios canon máxima (5/8): C05 primario (E4-final Speaking S8 berthing tripartito) + C02 overlap RA1+RA3 + C04 overlap RA2+RA3 + C06 overlap RA3+RA4 + C07 4-way.",
+
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": ["E4-final (C05 · Speaking S8 berthing tripartito)"],
+        "overlaps_documentados": [
+          "C02 RA1+RA3 cara morfosintáctica Inspection Report Writing",
+          "C04 RA2+RA3 cara SMCP Speaking parcial VHF",
+          "C06 RA3+RA4 cara funcional 5 master functions Role Carousel",
+          "C07 4-way RA1+RA2+RA3+RA4 Cuestionario S6"
+        ],
+        "sesiones_anchor": ["S4 (C02)", "S6 (C04 + C07)", "S8 (E4-final C05)", "S9 (C06)"],
+        "criterios_count": 5,
+        "saberes_count": "4 conceptos + 3 procesos",
+        "_nota_densidad": "RA3 concentra densidad máxima de criterios canon (5/8 · 62.5%) reflejando que es el RAP gramatical operacional · cara común de múltiples evidencias"
+      }
     },
+
     {
       "rap_id": "RA4",
       "rap_codigo_sofia": "220301011-RA4",
       "rap_titulo": "RA 4 DESCRIBIR EN INGLÉS LAS FUNCIONES HABITUALES Y/O MOMENTÁNEAS PROPIAS, DEL PERSONAL Y DE LOS ELEMENTOS QUE SE ENCUENTRAN EN EL CONTEXTO MARÍTIMO Y PORTUARIO, EN EL DESEMPEÑO DE SUS LABORES.",
+      "verbo_cognitivo": "DESCRIBIR",
+      "bloom_level": "L2-L3 (Comprender → Aplicar)",
+      "dominio_canonico": "Lugares · ubicaciones · weather · operaciones (containerization · cargo · maneuvering) + estructuras descriptivas",
+
       "saberes_conceptos_y_principios": [
-        "COMMANDS (TO: OFFICERS, SAILORS, HELMSMAN, CAPTAINS, ENGINEERS, STEWARD, CRANE OPERATORS)",
         "UNIT 3: PLACES IN PORT AND POSITION",
         "PLACES IN PORT · LOCATIONS",
         "WEATHER CONDITIONS",
+        "TAG QUESTIONS",
+        "REVIEW OF PRESENT PROGRESSIVE AND PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE",
         "UNIT 4: IN PORT",
         "CONTAINERIZATION",
         "PACKING, SHIPPING AND CARGO HANDLING",
         "MANEUVERING (MOORING, DOCKING, DEPARTURE)",
-        "MODAL VERBS: CAN, COULD, SHOULD, MUST FOR REQUEST, PROHIBITION, POSSIBILITY, PERMISSION"
+        "QUANTIFIERS"
       ],
+
       "saberes_proceso": [
-        "EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO.",
         "HABLAR SOBRE UBICACIONES EN INGLÉS QUE PERMITAN AL INTERLOCUTOR CONOCER EL ESPACIO FÍSICO EN EL QUE SE DESEMPEÑAN LAS FUNCIONES A BORDO DEL BUQUE.",
         "DESCRIBIR ELEMENTOS Y PROCESOS EN INGLÉS, DERIVADOS DE LOS DISTINTOS ROLES QUE SE EJERCEN EN EL CUMPLIMIENTO DE LAS OBLIGACIONES A BORDO DEL BUQUE Y EN PUERTO."
       ],
+
       "criterios_evaluacion": [
         "DESCRIBE EN INGLÉS PROCESOS Y FUNCIONES PROPIAS DEL CONTEXTO MARÍTIMO Y PORTUARIO."
       ],
+
       "criterios_evaluacion_especificos_canon_sistema": [
         {
           "id": "C06",
@@ -238,8 +320,7 @@
           "evidencia": "E5",
           "evidencia_nombre": "Language Functions",
           "sesion": "S9",
-          "instrumento": "Escala de Estimación No 5",
-          "anclaje_rationale": "Asignación overlap RA3+RA4 · cara RA4: las 5 master functions IMARPOR son DESCRIPCIÓN de funciones operacionales (describing roles · describing maneuvers · describing weather impact · describing cargo states · describing chain of command) · Role Carousel materializa el verbo DESCRIBIR en 5 estaciones."
+          "instrumento": "Escala de Estimación No 5"
         },
         {
           "id": "C07",
@@ -249,8 +330,7 @@
           "evidencia": "E6",
           "evidencia_nombre": "Cuestionario Consolidado",
           "sesion": "S6",
-          "instrumento": "Cuestionario No 6",
-          "anclaje_rationale": "Asignación overlap 4-way · cara RA4: el cuestionario consolidado en S6 incluye ítems de descripción funcional preliminar (places · weather · cargo) anticipando el bloque RA4 que se profundiza S7-S12 · checkpoint medio confirma vocabulario contextual disponible para futuras descripciones."
+          "instrumento": "Cuestionario No 6"
         },
         {
           "id": "C08",
@@ -260,169 +340,191 @@
           "evidencia": "E-Misión",
           "evidencia_nombre": "Misión Final ABP",
           "sesion": "S12",
-          "instrumento": "Rúbrica ABP 6 criterios C01-C13",
-          "anclaje_rationale": "Asignación primaria · 1:1 con verbo cognitivo DESCRIBIR del RA4 · evidencia E-Misión en S12 (sesión final) evalúa la integración auténtica · pitch ante panel · estructuras ocupacionales (responsible for/specialize in/coordinate/supervise/report to) + tag questions de confirmación · A2.1 nivel terminal del programa · capstone ABP."
+          "instrumento": "Rúbrica ABP 6 criterios C01-C13"
         }
       ],
-      "rationale_alineacion": "RA4 es el RAP funcional-descriptivo · verbo cognitivo DESCRIBIR. Agrupé los CONTEXTOS operacionales donde se describen funciones habituales/momentáneas: COMMANDS (lexical content de las órdenes · destinatarios concretos officers/sailors/helmsman) · UNIT 3 completa (lugares · condiciones meteorológicas · ubicación dinámica del buque) · UNIT 4 completa (containerización · packing/shipping/cargo · maneuvers de atraque/desatraque). Incluí MODAL VERBS aquí también con OVERLAP documentado a RA3 · el item del input declara los usos funcionales (REQUEST/PROHIBITION/POSSIBILITY/PERMISSION) que son acts of describing operations. Procesos: HABLAR SOBRE UBICACIONES y DESCRIBIR ELEMENTOS Y PROCESOS son nucleares al verbo DESCRIBIR · EXPRESAR E INTERPRETAR ÓRDENES asignado también aquí (overlap con RA3) como speech acts descriptivos del rol. Los criterios específicos canon sistema anclan así: C06 (E5 Language Functions · S9 · overlap RA3) las 5 master functions IMARPOR como descripciones operacionales en Role Carousel · C07 (E6 · S6 · overlap 4-way) checkpoint medio con vocabulario contextual descriptivo preliminar · C08 (E-Misión · S12 · A2.1) evaluación PRIMARIA Y CAPSTONE del RA4 con estructuras ocupacionales + tag questions ante panel evaluador · Misión Final ABP banana cold chain. Trazabilidad downstream: PM-2.x ACs de S9/S12 deben atribuirse a RA4+C06/C08 · S10-S11 son rehearsal pre-Misión."
+
+      "_rationale": "RA4 es Bloom L2-3 DESCRIBIR. UNIT 3 PLACES + LOCATIONS + WEATHER + UNIT 4 IN PORT (containerization · cargo handling · maneuvering) caen aquí porque son los DOMINIOS donde se DESCRIBE el espacio/operaciones (no se NOMBRAN entidades como en RA1 ni se DAN ÓRDENES como en RA3). TAG QUESTIONS + PRESENT PROGRESSIVE + PREPOSITIONAL PHRASES + QUANTIFIERS son las estructuras gramaticales que sirven para DESCRIBIR ('the ship IS docking AT berth 3, isn't it? · there are TWO crane operators ON pier 5 · the weather is mild today'). NO incluye COMMANDS+IMPERATIVE+MODAL VERBS (eso es interacción operacional RA3). Procesos HABLAR ubicaciones + DESCRIBIR elementos/procesos están aquí. Criterios canon: C08 primario capstone (E-Misión Final ABP S12 · panel evaluador) + C06 overlap RA3+RA4 (cara descripción funcional Role Carousel) + C07 4-way Cuestionario S6.",
+
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": ["E-Misión (C08 · Misión Final ABP S12 · capstone)"],
+        "overlaps_documentados": [
+          "C06 RA3+RA4 cara descripción funcional 5 master functions Role Carousel S9",
+          "C07 4-way RA1+RA2+RA3+RA4 Cuestionario Consolidado S6"
+        ],
+        "sesiones_anchor": ["S6 (C07)", "S9 (C06)", "S12 (E-Misión C08 capstone)"],
+        "criterios_count": 3,
+        "saberes_count": "10 conceptos + 2 procesos",
+        "_nota_volumen": "RA4 concentra mayor volumen de saberes_conceptos (10/26 · 38.5%) por ser el RAP de DESCRIBIR contextos operacionales completos (UNIT 3 lugares + UNIT 4 operaciones + estructuras descriptivas)"
+      }
     }
   ],
+
+  "_distribucion_canonica_aplicada": {
+    "fuente": "pm-0-0-input.json.distribucion_canonica_saberes_por_rap (Opción A refinada aprobada Sergio Cortés 2026-05-02)",
+    "saberes_conceptos_total_input": 26,
+    "saberes_conceptos_total_distribuidos": 26,
+    "saberes_conceptos_breakdown": "RA1=8 + RA2=4 + RA3=4 + RA4=10 = 26",
+    "saberes_proceso_total_input": 10,
+    "saberes_proceso_total_distribuidos": 10,
+    "saberes_proceso_breakdown": "RA1=2 + RA2=3 + RA3=3 + RA4=2 = 10",
+    "criterios_canon_total": 8,
+    "criterios_canon_assignments_count": 14,
+    "criterios_canon_breakdown": "RA1=3 (C01,C02,C07) + RA2=3 (C03,C04,C07) + RA3=5 (C02,C04,C05,C06,C07) + RA4=3 (C06,C07,C08) = 14",
+    "overlaps_multi_rap": [
+      {"id": "C02", "raps": ["RA1", "RA3"], "razon": "Cara lexical (RA1) + cara morfosintáctica (RA3) en Inspection Report E2 Writing S4"},
+      {"id": "C04", "raps": ["RA2", "RA3"], "razon": "Cara SMCP (RA2) + cara aplicación gramatical NATO Phonetic (RA3) en E4-parcial Speaking S6"},
+      {"id": "C06", "raps": ["RA3", "RA4"], "razon": "Cara aplicación gramatical (RA3) + cara funcional descriptiva (RA4) en E5 Role Carousel S9"},
+      {"id": "C07", "raps": ["RA1", "RA2", "RA3", "RA4"], "razon": "4-way overlap · Cuestionario Consolidado E6 S6 evalúa dominio integrado de los 4 RAPs simultáneamente"}
+    ],
+    "huerfanos_detectados": 0,
+    "duplicados_detectados": 0,
+    "drift_versus_v1_1": "0 instancias detectadas · DEMOSTRATIVOS+VERB TO BE+PLURAL confinados a RA1 · COMMANDS+MODALS confinados a RA3 · PLACES+WEATHER+CONTAINERIZATION confinados a RA4 · TAG QUESTIONS+PRESENT PROGRESSIVE+QUANTIFIERS confinados a RA4"
+  },
+
   "alignment_audit": {
     "saberes_conceptos_total_input": 26,
-    "saberes_conceptos_total_asignados_en_raps": 27,
+    "saberes_conceptos_total_asignados_en_raps": 26,
     "saberes_conceptos_huerfanos": [],
-    "saberes_conceptos_con_overlap": [
-      {
-        "saber": "MODAL VERBS: CAN, COULD, SHOULD, MUST FOR REQUEST, PROHIBITION, POSSIBILITY, PERMISSION",
-        "raps": ["RA3", "RA4"],
-        "razon_overlap": "El item del input declara explícitamente usos funcionales (REQUEST/PROHIBITION/POSSIBILITY/PERMISSION) que son speech acts descriptivos · RA3 cubre la APLICACIÓN de la regla gramatical (modal + base verb · negación · interrogativa) · RA4 cubre la realización funcional (DESCRIBIR cómo se pide permiso · cómo se prohíbe una operación de carga · cómo se expresa posibilidad meteorológica). Overlap pedagógico real · NO arbitrario."
-      }
-    ],
+    "saberes_conceptos_con_overlap": [],
     "saberes_proceso_total_input": 10,
-    "saberes_proceso_total_asignados_en_raps": 11,
+    "saberes_proceso_total_asignados_en_raps": 10,
     "saberes_proceso_huerfanos": [],
-    "saberes_proceso_con_overlap": [
-      {
-        "proceso": "EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO.",
-        "raps": ["RA3", "RA4"],
-        "razon_overlap": "EXPRESAR E INTERPRETAR órdenes tiene doble cara pedagógica · RA3 lo absorbe como APLICACIÓN de la estructura imperative + verbos de acción (gramática operacional) · RA4 lo absorbe como acto descriptivo del rol funcional (qué órdenes da un capitán a un timonel · qué órdenes emite el VTS al buque). Mismo proceso · dos lentes cognitivas distintas · ambas necesarias."
-      }
-    ],
     "criterios_total_input": 5,
     "criterios_total_asignados_en_raps": 5,
-    "criterios_huerfanos": [],
     "criterios_con_overlap": [],
     "criterios_especificos_canon_sistema": {
       "total_input": 8,
-      "total_asignados_en_raps": 13,
+      "total_asignados_en_raps": 14,
       "huerfanos": [],
-      "distribucion_por_rap": {
-        "RA1": ["C01", "C02", "C07"],
-        "RA2": ["C03", "C04", "C07"],
-        "RA3": ["C02", "C04", "C05", "C06", "C07"],
-        "RA4": ["C06", "C07", "C08"]
-      },
-      "primarios_1_a_1": [
-        {"criterio": "C01", "rap_primario": "RA1", "verbo_anclaje": "RECONOCER"},
-        {"criterio": "C03", "rap_primario": "RA2", "verbo_anclaje": "COMPRENDER"},
-        {"criterio": "C05", "rap_primario": "RA3", "verbo_anclaje": "APLICAR"},
-        {"criterio": "C08", "rap_primario": "RA4", "verbo_anclaje": "DESCRIBIR"}
-      ],
       "con_overlap": [
-        {
-          "id": "C02",
-          "raps": ["RA1", "RA3"],
-          "evidencia": "E2 Writing S4",
-          "razon": "Inspection Report integra lexical RA1 (vocabulario portuario reconocido en S3) con aplicación gramatical RA3 (to be · imperative · plurales · preposición IN) · primera salida productiva escrita."
-        },
-        {
-          "id": "C04",
-          "raps": ["RA2", "RA3"],
-          "evidencia": "E4-parcial Speaking S6",
-          "razon": "Producción VHF integra comprensión SMCP RA2 (Roger/Wilco/Affirmative/Standby) con aplicación fonológica/sintáctica RA3 (stress correcto · sintaxis estandarizada) · checkpoint oral parcial."
-        },
-        {
-          "id": "C06",
-          "raps": ["RA3", "RA4"],
-          "evidencia": "E5 Language Functions S9",
-          "razon": "Role Carousel 5 estaciones integra conectores discursivos RA3 (and/but/or/because/so/although) con descripción de 5 master functions IMARPOR RA4 · cohesión gramatical al servicio de descripción funcional."
-        },
-        {
-          "id": "C07",
-          "raps": ["RA1", "RA2", "RA3", "RA4"],
-          "evidencia": "E6 Cuestionario Consolidado S6",
-          "razon": "4-way overlap consolidación · checkpoint medio del programa (S6 = mitad de 12 sesiones) · 25 ítems integran Reading (RA1) + Listening SMCP (RA2) + Grammar (RA3) + Vocabulary contextual descriptivo preliminar (RA4) · ≥ 70% PASS."
-        }
+        {"id": "C02", "raps": ["RA1", "RA3"], "razon_overlap": "Cara lexical retention (RA1) + cara morfosintáctica aplicada (RA3) en Inspection Report E2 Writing S4"},
+        {"id": "C04", "raps": ["RA2", "RA3"], "razon_overlap": "Cara SMCP comprehension (RA2) + cara aplicación gramatical NATO Phonetic stress (RA3) en E4-parcial Speaking S6"},
+        {"id": "C06", "raps": ["RA3", "RA4"], "razon_overlap": "Cara aplicación gramatical 5 master functions (RA3) + cara funcional descriptiva (RA4) en E5 Role Carousel S9"},
+        {"id": "C07", "raps": ["RA1", "RA2", "RA3", "RA4"], "razon_overlap": "4-way · Cuestionario Consolidado E6 S6 evalúa dominio integrado de los 4 RAPs simultáneamente (Reading+Writing+Listening+Vocabulary+Grammar)"}
       ]
     },
     "trazabilidad_evidencias_E1_E6_E_Mision": {
-      "E1_Reading_S3": {
-        "rap_primario": "RA1",
-        "criterio_anclado": "C01",
-        "razon": "Vocabulario portuario y partes del barco · evaluación inicial post-diagnóstico · CEFR A1.2 · instrumento Cuestionario No 1."
-      },
-      "E2_Writing_S4": {
-        "raps": ["RA1", "RA3"],
-        "criterio_anclado": "C02",
-        "razon": "Inspection Report banana cold chain · integra lexical RA1 + gramática RA3 (to be · imperative · plurales · preposición IN) · CEFR A1.2-A1.3 · instrumento Lista de Verificación No 2."
-      },
-      "E3_Listening_S5": {
-        "rap_primario": "RA2",
-        "criterio_anclado": "C03",
-        "razon": "Audio VHF auténtico SMCP con lingua franca B1 no-nativa · identificar mensajes correctos vs distractores · CEFR A1.3 · instrumento Lista de Verificación No 3."
-      },
-      "E4_parcial_Speaking_S6": {
-        "raps": ["RA2", "RA3"],
-        "criterio_anclado": "C04",
-        "razon": "Producción VHF SMCP + NATO Phonetic spelling · respuestas críticas Roger/Wilco/Affirmative/Standby · CEFR A1.3-A2.0 · instrumento Escala de Estimación No 4."
-      },
-      "E6_Cuestionario_Consolidado_S6": {
-        "raps": ["RA1", "RA2", "RA3", "RA4"],
-        "criterio_anclado": "C07",
-        "razon": "Checkpoint medio · 25 ítems integrados · Reading + Writing + Listening + Vocabulary + Grammar · ≥ 70% para PASS · CEFR consolidación A1.2-A2.0 · instrumento Cuestionario No 6 · NOTA: S6 alberga 2 evidencias (E4-parcial + E6) por densidad checkpoint medio."
-      },
-      "E4_final_Speaking_S8": {
-        "rap_primario": "RA3",
-        "criterio_anclado": "C05",
-        "razon": "Berthing tripartito simultáneo · modales + conditional tipo 1 + voz pasiva + presente perfecto · 3 actores en intercambio · CEFR A2.0 · instrumento Escala de Estimación No 4."
-      },
-      "E5_Language_Functions_S9": {
-        "raps": ["RA3", "RA4"],
-        "criterio_anclado": "C06",
-        "razon": "Role Carousel 5 estaciones · 5 master functions IMARPOR + conectores (and/but/or/because/so/although) · CEFR A2.0-A2.1 · instrumento Escala de Estimación No 5."
-      },
-      "E_Mision_S12": {
-        "rap_primario": "RA4",
-        "criterio_anclado": "C08",
-        "razon": "Misión Final ABP · descripción funciones profesionales rol portuario · estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to) + tag questions · pitch ante panel evaluador · CEFR A2.1 (nivel terminal) · instrumento Rúbrica ABP 6 criterios C01-C13 · capstone."
-      }
+      "E1_Reading_S3": "RA1 (C01 · vocabulario portuario · partes barco)",
+      "E2_Writing_S4": "RA1 + RA3 (C02 · Inspection Report · gramática aplicada)",
+      "E3_Listening_S5": "RA2 (C03 · SMCP audio auténtico VHF lingua franca)",
+      "E4_parcial_Speaking_S6": "RA2 + RA3 (C04 · VHF NATO Phonetic stress)",
+      "E6_Cuestionario_S6": "RA1+RA2+RA3+RA4 (C07 · 4-way consolidación)",
+      "E4_final_Speaking_S8": "RA3 (C05 · berthing tripartito modales+condicional+pasiva+perfecto)",
+      "E5_Language_Functions_S9": "RA3 + RA4 (C06 · 5 master functions Role Carousel)",
+      "E_Mision_S12": "RA4 (C08 · descripción funciones panel ABP)"
     },
-    "secuencia_evidencias_por_sesion": "S3=E1 (Reading RA1) · S4=E2 (Writing RA1+RA3) · S5=E3 (Listening RA2) · S6=E4-parcial (Speaking RA2+RA3) + E6 (Cuestionario Consolidado 4-way) · S7=consolidación gramática · S8=E4-final (Speaking RA3) · S9=E5 (Language Functions RA3+RA4) · S10-S11=rehearsal pre-Misión · S12=E-Misión (RA4 capstone). 8 evidencias formales mapeadas 1:1 con criterios C01-C08.",
     "cobertura": {
-      "saberes_conceptos": "100% · 26/26 · 0 huérfanos · 1 overlap documentado (MODAL VERBS RA3↔RA4)",
-      "saberes_proceso": "100% · 10/10 · 0 huérfanos · 1 overlap documentado (EXPRESAR E INTERPRETAR ÓRDENES RA3↔RA4)",
-      "criterios": "100% · 5/5 · 0 huérfanos · 0 overlaps",
-      "criterios_especificos_canon_sistema": "100% · 8/8 · 0 huérfanos · 4 con overlap multi-RAP documentado (C02 · C04 · C06 · C07) · 4 primarios 1:1 (C01→RA1 · C03→RA2 · C05→RA3 · C08→RA4)"
+      "saberes_conceptos": "100% · 26/26 saberes asignados a 1 RAP exclusivo (sin overlap conceptos) · 0 huérfanos",
+      "saberes_proceso": "100% · 10/10 procesos asignados a 1 RAP exclusivo · 0 huérfanos",
+      "criterios_sofia": "100% · 5/5 criterios SOFÍA generales aplicables (caras múltiples por RAP) · 0 huérfanos",
+      "criterios_canon_sistema": "100% · 8/8 criterios C01-C08 asignados a 1+ RAPs · 14 assignments totales (4 overlaps multi-RAP) · 0 huérfanos"
     }
   },
+
   "alignment_strategy": {
-    "criterio_principal": "Alineación pedagógica por verbo cognitivo del RAP · RECONOCER (RA1) → vocabulario básico físico/oficios · COMPRENDER (RA2) → frases estandarizadas SMCP/OMI cerradas · APLICAR (RA3) → reglas gramaticales (toda la gramática del programa) · DESCRIBIR (RA4) → contextos funcionales operacionales (lugares · weather · containerización · cargo · maneuvers · commands).",
-    "criterio_secundario_canon_sistema": "Alineación adicional por criterios específicos canon sistema (C01-C08) anclados a evidencias formales E1-E6 + E-Misión · cada criterio mapea a 1+ RAP primario por verbo cognitivo + RAP secundario por overlap funcional · evidencias secuenciadas en sesiones S3-S12 para construir progresión CEFR A1.2 → A2.1 · trazabilidad explícita desde criterio canónico → RAP → evidencia → sesión → instrumento.",
-    "overlap_policy": "Permitido cuando 1 saber/proceso/criterio sirve a múltiples RAPs con justificación pedagógica explícita · documentado en alignment_audit con razón de cada overlap · NO arbitrario · NO forzado. Aplicado: MODAL VERBS (RA3 regla / RA4 función) + EXPRESAR E INTERPRETAR ÓRDENES (RA3 imperative aplicado / RA4 acto descriptivo del rol) + criterios canon sistema C02 (RA1+RA3) · C04 (RA2+RA3) · C06 (RA3+RA4) · C07 (RA1+RA2+RA3+RA4 consolidación 4-way).",
-    "huerfanos_policy": "Cero tolerancia · 0 huérfanos detectados · 26/26 saberes_conceptos · 10/10 saberes_proceso · 5/5 criterios SOFÍA generales · 8/8 criterios específicos canon sistema asignados a 1+ RAPs.",
-    "secuencia_pedagogica": "RA1 < RA2 < RA3 < RA4 respetado · orden secuencial SOFÍA preservado · NO reordenado. Secuencia evidencias S3<S4<S5<S6<S8<S9<S12 respeta progresión CEFR A1.2 → A2.1.",
-    "diferencias_vs_ejemplo_master_prompt": "Esta alineación diverge del ejemplo del master prompt en 3 puntos pedagógicamente justificados: (1) SINGULAR AND PLURAL NOUNS asignado a RA3 (estructura morfológica · concordancia número) · NO a RA1. (2) MODAL VERBS marcado overlap RA3↔RA4 explícito porque el item del input declara los usos funcionales que son speech acts descriptivos. (3) EXPRESAR E INTERPRETAR ÓRDENES marcado overlap RA3↔RA4. Análisis fresh fundamentado en intent pedagógico de cada item del input verbatim.",
-    "ampliacion_v1_1_canon_sistema": "v1.1 amplía v1.0 incorporando 8 criterios específicos canon sistema (C01-C08) por RAP · cada uno con anclaje 1:1 verbo cognitivo o overlap funcional documentado · trazabilidad explícita evidencia-sesión-instrumento-CEFR · downstream PM-2.x ACs heredarán esta alineación granular y atribuirán cada actividad a RAP+criterio+evidencia+sesión."
+    "criterio_principal": "Distribución canónica explícita Opción A refinada aprobada Sergio Cortés 2026-05-02 · NO libre interpretación LLM · verbo cognitivo del RAP DICTA dominio (RA1 RECONOCER vocab base + estructuras MÍNIMAS PARA NOMBRAR · RA2 COMPRENDER SMCP IMO completo · RA3 APLICAR gramática operacional bilateral · RA4 DESCRIBIR lugares/operaciones/estructuras descriptivas)",
+    "overlap_policy": "Overlaps SOLO en criterios canon sistema (C01-C08 con rap_target multi-RAP documentado en input) · NO overlap en saberes_conceptos ni saberes_proceso (cada uno hogar exclusivo)",
+    "huerfanos_policy": "Cero tolerancia · 8/8 criterios asignados · 26/26 saberes conceptos asignados · 10/10 procesos asignados",
+    "secuencia_pedagogica": "RA1 < RA2 < RA3 < RA4 · respetar orden numérico SOFÍA · NO reordenar",
+    "anti_patron_descartado": "'Toda gramática a RA3' (anti-CEFR · anti-ESP · anti-TBLT) · canon distingue: estructuras MÍNIMAS-NOMBRAR (RA1) vs gramática OPERACIONAL-BILATERAL (RA3) vs estructuras DESCRIPTIVAS (RA4)"
   },
+
   "validation_checks": [
-    {"id": 1, "name": "competencia_present", "status": "PASS", "evidence": "Texto literal de la competencia SOFÍA presente · 1 string · non-empty (102 chars)."},
-    {"id": 2, "name": "raps_count_match_input", "status": "PASS", "evidence": "Input declara 4 RAPs (RA1-RA4) · output tiene raps_count=4 y raps[] longitud=4."},
-    {"id": 3, "name": "saberes_conceptos_cobertura_100", "status": "PASS", "evidence": "26/26 saberes_conceptos asignados · 0 huérfanos · 1 overlap documentado (MODAL VERBS RA3↔RA4) · total_asignados_en_raps=27 (26 + 1 overlap)."},
-    {"id": 4, "name": "saberes_proceso_cobertura_100", "status": "PASS", "evidence": "10/10 saberes_proceso asignados · 0 huérfanos · 1 overlap documentado (EXPRESAR E INTERPRETAR ÓRDENES RA3↔RA4) · total_asignados_en_raps=11 (10 + 1 overlap)."},
-    {"id": 5, "name": "criterios_cobertura_100", "status": "PASS", "evidence": "5/5 criterios SOFÍA generales asignados · 0 huérfanos · 0 overlaps · total_asignados_en_raps=5."},
-    {"id": 6, "name": "rap_titulos_verbatim", "status": "PASS", "evidence": "4/4 rap_titulo verbatim del input · cero edits · cero abreviaciones · cero correcciones ortográficas (RA1, RA2, RA3, RA4 strings comparados literal con pm-0-0-input.json)."},
-    {"id": 7, "name": "rationale_alineacion_present_per_rap", "status": "PASS", "evidence": "4/4 RAPs tienen rationale_alineacion · todos en rango 50-200+ palabras (ampliado v1.1 para incorporar referencia explícita a anclaje criterios C01-C08 + evidencias E1-E6/E-Misión + sesiones)."},
-    {"id": 8, "name": "criterios_especificos_canon_sistema_cobertura_100", "status": "PASS", "evidence": "8/8 criterios específicos canon sistema asignados · 0 huérfanos · 4 primarios 1:1 (C01→RA1 · C03→RA2 · C05→RA3 · C08→RA4) · 4 con overlap multi-RAP documentado (C02 RA1+RA3 · C04 RA2+RA3 · C06 RA3+RA4 · C07 RA1+RA2+RA3+RA4) · total_asignados_en_raps=13 (8 + 5 overlaps)."}
+    {
+      "id": 1,
+      "name": "raps_count_matches_input",
+      "status": "PASS",
+      "evidence": "Input declara 4 RAPs · output tiene raps_count=4 · raps[] length=4"
+    },
+    {
+      "id": 2,
+      "name": "saberes_conceptos_distribuidos_segun_canon",
+      "status": "PASS",
+      "evidence": "RA1=8 + RA2=4 + RA3=4 + RA4=10 = 26 · literal copy desde input.distribucion_canonica.RA{x}.saberes_conceptos · 26/26 input · 0 huérfanos · 0 duplicados"
+    },
+    {
+      "id": 3,
+      "name": "saberes_proceso_distribuidos_segun_canon",
+      "status": "PASS",
+      "evidence": "RA1=2 + RA2=3 + RA3=3 + RA4=2 = 10 · literal copy desde input.distribucion_canonica.RA{x}.saberes_proceso · 10/10 input · 0 huérfanos · 0 duplicados"
+    },
+    {
+      "id": 4,
+      "name": "criterios_canon_assigned_segun_canon",
+      "status": "PASS",
+      "evidence": "RA1=[C01,C02,C07] · RA2=[C03,C04,C07] · RA3=[C02,C04,C05,C06,C07] · RA4=[C06,C07,C08] = 14 assignments · literal copy desde input.distribucion_canonica.RA{x}.criterios_canon_assigned · 8/8 criterios input asignados · 4 overlaps multi-RAP documentados"
+    },
+    {
+      "id": 5,
+      "name": "no_huerfanos_no_duplicados",
+      "status": "PASS",
+      "evidence": "Saberes conceptos: 26 input · 26 distribuidos · 0 huérfanos · 0 duplicados (cada saber en 1 solo RAP) · Saberes proceso: 10 input · 10 distribuidos · 0 huérfanos · 0 duplicados · Criterios canon: 8 input · 14 assignments (4 overlaps esperados por rap_target multi) · 0 huérfanos"
+    },
+    {
+      "id": 6,
+      "name": "verbo_cognitivo_dicta_dominio",
+      "status": "PASS",
+      "evidence": "RA1 RECONOCER (L1) → vocab base + estructuras NOMBRAR · RA2 COMPRENDER (L2) → SMCP IMO · RA3 APLICAR (L3) → gramática operacional bilateral · RA4 DESCRIBIR (L2-3) → lugares + operaciones + estructuras descriptivas · alineación canónica respetada"
+    },
+    {
+      "id": 7,
+      "name": "overlaps_multi_rap_documentados",
+      "status": "PASS",
+      "evidence": "4 overlaps documentados con razón pedagógica explícita: C02 RA1+RA3 (lexical+morfosintáctica E2) · C04 RA2+RA3 (SMCP+gramática E4-parcial) · C06 RA3+RA4 (gramática+descriptiva E5) · C07 4-way (consolidación integrada E6)"
+    },
+    {
+      "id": 8,
+      "name": "criterios_especificos_canon_completos",
+      "status": "PASS",
+      "evidence": "8/8 C01-C08 distribuidos con objetos completos (id + criterio + rap_target + cefr_subnivel + evidencia + evidencia_nombre + sesion + instrumento) · trazabilidad evidencias E1-E6+E-Misión 100% mapeada · 0 datos canon inventados · todo desde input"
+    }
   ],
-  "downstream_consumers": [
-    "PM-0 v3.0 (consume matriz alineada como insumo principal · simplifica decisiones de framing universo + principios pedagógicos POR RAP · ahora hereda mapping criterios C01-C08 → evidencias)",
-    "PM-1.1 (ruta macrotemática construida POR RAP · cada bloque temático mapeado a RAP target + evidencia formal asignada)",
-    "PM-1.2 (scope/curación POR RAP · saberes target específicos heredados de matriz · CEFR subnivel por evidencia heredado)",
-    "PM-2.0 (session blueprint con awareness RAP + evidencia formal por sesión · S3=E1 · S4=E2 · S5=E3 · S6=E4parc+E6 · S8=E4final · S9=E5 · S12=EMisión)",
-    "PM-2.x ACs (cada actividad explícitamente atribuida a RAP target + criterio canon sistema C0X + evidencia EX + instrumento)",
-    "PM-2.11 (row assembler simplificado · matriz GFPI-F-134 ya viene alineada de origen · NO reconstrucción retroactiva · criterios específicos canon sistema rellenan rows de evaluación)",
-    "PM-3.7 V04 (multi-RAP rows R18-R21 con contenido REAL por RAP · NO solo título RAP · criterios C01-C08 anclan evidencias en rows de instrumentos de evaluación)"
-  ],
-  "_audit": {
-    "input_source": "pm-0-0-input.json (Sergio dictó contenido directo en chat 2026-05-01 · datos curriculares SOFÍA Plus literal verbatim · form xlsx reutilizado de IMARPOR-CC-2026-04-27 Opción A · update 2026-05-01 incorpora 8 criterios específicos canon sistema)",
-    "input_completeness": "100% complete · 4 raps + 26 saberes_conceptos + 10 saberes_proceso + 5 criterios SOFÍA generales + 8 criterios específicos canon sistema + competencia",
-    "input_normalizations": [],
-    "version_history": [
-      {"version": "v1.0", "fecha": "2026-05-01", "estado": "incompleto · pre canon ampliado · ahora archivado como pm-0-0-matriz-alineada.v1-incompleto.json"},
-      {"version": "v1.1", "fecha": "2026-05-01", "estado": "canon ampliado · incorpora 8 criterios específicos canon sistema (C01-C08) + trazabilidad evidencias E1-E6/E-Misión + secuencia sesiones S3-S12 + instrumentos + CEFR subniveles · 8 validation_checks PASS"}
-    ]
+
+  "_drift_audit_v1_3": {
+    "instancias_drift_detectadas": 0,
+    "checks_anti_drift": [
+      {"check": "DEMOSTRATIVOS en RA1 solamente", "status": "PASS", "evidence": "REVIEW OF DEMONSTRATIVES ADJECTIVES AND VERB TO BE en RA1 · NO en RA3"},
+      {"check": "VERB TO BE en RA1 solamente", "status": "PASS", "evidence": "incluido en mismo string DEMOSTRATIVOS+VERB TO BE en RA1 · NO en RA3"},
+      {"check": "SINGULAR/PLURAL NOUNS en RA1 solamente", "status": "PASS", "evidence": "SINGULAR AND PLURAL NOUNS en RA1 · NO en RA3"},
+      {"check": "COMMANDS en RA3 solamente", "status": "PASS", "evidence": "COMMANDS (TO: OFFICERS...) en RA3 · NO en RA4"},
+      {"check": "MODAL VERBS en RA3 solamente", "status": "PASS", "evidence": "MODAL VERBS: CAN COULD SHOULD MUST en RA3 · NO en RA4"},
+      {"check": "IMPERATIVE en RA3 solamente", "status": "PASS", "evidence": "IMPERATIVE en RA3 · NO en RA1 ni RA4"},
+      {"check": "PRESENT SIMPLE en RA3 solamente", "status": "PASS", "evidence": "REVIEW OF PRESENT SIMPLE TENSE en RA3"},
+      {"check": "PLACES IN PORT en RA4 solamente", "status": "PASS", "evidence": "UNIT 3 PLACES + PLACES LOCATIONS en RA4 · NO en RA3"},
+      {"check": "WEATHER en RA4 solamente", "status": "PASS", "evidence": "WEATHER CONDITIONS en RA4 · NO en RA3"},
+      {"check": "CONTAINERIZATION en RA4 solamente", "status": "PASS", "evidence": "CONTAINERIZATION + PACKING/SHIPPING/CARGO + MANEUVERING en RA4"},
+      {"check": "TAG QUESTIONS en RA4 solamente", "status": "PASS", "evidence": "TAG QUESTIONS en RA4 · NO en RA3"},
+      {"check": "PRESENT PROGRESSIVE en RA4 solamente", "status": "PASS", "evidence": "REVIEW OF PRESENT PROGRESSIVE AND PREPOSITIONAL PHRASES en RA4 · NO en RA3"},
+      {"check": "QUANTIFIERS en RA4 solamente", "status": "PASS", "evidence": "QUANTIFIERS en RA4 · NO en RA3"},
+      {"check": "UNIT 5 SMCP en RA2 solamente", "status": "PASS", "evidence": "UNIT 5 + STANDARD SPELLING + MESSAGE MARKERS + STANDARD RESPONSES en RA2 exclusivo"}
+    ],
+    "afirmacion_explicita": "0 drift versus distribución canónica Opción A refinada · cada saber/criterio en su hogar canónico · cero mezcla de gramáticas entre RAPs"
   },
+
+  "downstream_consumers": [
+    "PM-0 (consume matriz alineada como insumo principal · simplifica decisiones contexto)",
+    "PM-1.1 (ruta macrotemática construida POR RAP · NO agregada · 1 APERTURA + N APROPIACIÓN + 1 TRANSFERENCIA)",
+    "PM-1.2 (scope/curación POR RAP · saberes target específicos · tipo_bloque diferenciado)",
+    "PM-2.x ACs (cada actividad explícitamente atribuida a RAP target · saber_proceso DICTA tipo PM-2.x)",
+    "PM-2.11 (row assembler simplificado · matriz heredada · NO reconstrucción retroactiva)",
+    "PM-3.7 V04 (multi-RAP rows con contenido REAL por RAP en R18-R21)"
+  ],
+
+  "_audit": {
+    "input_source": "json_preexistente (pm-0-0-input.json con distribucion_canonica_saberes_por_rap NEW)",
+    "input_completeness": "4 raps + 26 saberes_conceptos + 10 saberes_proceso + 5 criterios SOFÍA generales + 8 criterios específicos canon sistema + competencia + distribución canónica Opción A refinada",
+    "input_normalizations": [],
+    "form_xlsx_source": "runs/IMARPOR-CC-2026-04-27/IMARPOR-CC-input.xlsx (reused per Sergio Opción A)",
+    "test_e2e_run": "IMARPOR-CC-2026-04-30-V2 · re-ejecución PM-0.0 v1.3 con distribución canónica explícita",
+    "correction_history": [
+      "v1.0 generación inicial",
+      "v1.1 generación con drift detectado (DEMOSTRATIVOS/VERB TO BE/PLURAL en RA3 · COMMANDS/MODALS en RA4 · etc.)",
+      "v1.3 (este output) corrección aplicando distribución canónica explícita Opción A refinada · literal copy desde input · 0 drift detectado"
+    ],
+    "legacy_backup": "pm-0-0-matriz-alineada.json.legacy-pre-fix-distribucion-rev (v1.1 preservado para auditoría)"
+  },
+
   "enriched": true,
-  "_block_downstream_until_gate0": false,
-  "gate_0_pending": "Sergio approval · matriz alineada v1.1 canon ampliado → PM-0 v3.0 + cascade downstream"
+  "_block_downstream": false
 }

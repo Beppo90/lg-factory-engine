@@ -1,9 +1,10 @@
 ---
 title: DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo
-version: 3.4
-last_updated: 2026-05-01
+version: 3.5
+last_updated: 2026-05-02
 status: PARADIGM SHIFT FUNDAMENTAL · NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1. Sergio Cortés decisión arquitectónica 2026-05-01: el sistema diseñaba "de adentro hacia afuera" en teoría (DM declaraba UbD desde v2.0) pero en práctica reconstruía la matriz GFPI-F-134 retroactivamente en PM-2.11 (al final de Fase 2) usando información agregada que el LLM había procesado sin saber a qué RAP pertenecía cada saber/criterio. v3.0 corrige: PM-0.0 (NEW) toma información curricular SOFÍA agregada (saberes_conceptos + saberes_proceso + criterios_evaluacion + N RAPs · sin pre-clasificar) y ALINEA explícitamente por RAP. Output `pm-0-0-matriz-alineada.json` se vuelve fundamento pedagógico de toda la cadena downstream. PM-0 simplifica de 1077 → ~270 lines operacionales (5 principios maestros · libertad LLM · schema mínimo viable). Cascade impact: PM-0 + PM-1.1 + PM-1.2 + PM-2.0 + PM-2.x + PM-2.11 + PM-3.7 ahora consumen matriz alineada como insumo. PM-3.7 V04 multi-RAP rows se llenan con contenido REAL por RAP (no solo título RAP en R18-R21). DOCX/JSON learner-readable v2.7 (30 Activity Cards anatomy 6-bloque) preservado · NO afectado.
 previous_versions:
+  - "3.4 (2026-05-01) — PM-1.2 v4.2 scope diferenciado por tipo_bloque (APERTURA motivacional+diagnóstico NO conocimiento nuevo · APROPIACIÓN vivero E1-E6 · TRANSFERENCIA capstone) · _produces_evidencia mapping · 3 master docs bumps (PM-1.2 v4.2 · PLAN-FASE-1 v1.4 · DM v3.4)"
   - "3.3 (2026-05-01) — PM-1.1 v2.8 estructura tripartita + tiempos canon universales (APERTURA=6h/1s · TRANSFERENCIA≤12h/≤2s · APROPIACIÓN=resto) · 3 master docs bumps (PM-1.1 v2.8 · PLAN-FASE-1 v1.3 · DM v3.3)"
   - "3.2 (2026-05-01) — Criterios específicos canon sistema (8 C01-C08) + TRACEABILITY `_anclaje_matriz` cross-PM · 4 master docs bumps (PM-0.0 v1.2 · PM-0 v3.2 · PLAN-FASE-1 v1.2 · DM v3.2)"
   - "3.1 (2026-05-01) — Anti-patrón #16 prompt operacional prescriptivo canonizado · 4 master docs bumps (PM-0.0 v1.1 · PM-0 v3.1 · PLAN-FASE-1 v1.1 · DM v3.1)"
@@ -2240,7 +2241,125 @@ PM-1.2 v4.2 funciona con cualquier programa que tenga pm-1-1.json v2.8 validado:
 
 ---
 
+## EXTENSIÓN v3.5 — CADENA PEDAGÓGICA CANÓNICA UbD INVERTIDA (2026-05-02)
+
+**Trigger del bump:** Sergio canonizó (2026-05-02 post-validación pm-1-2.json v4.2 IMARPOR-V2) el modelo mental fundamental del sistema FPI Factory · la cadena pedagógica de 6 eslabones que cada PM materializa progresivamente:
+
+> "Si un saber de proceso es 'IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS GENERADA EN EL INTERCAMBIO ORAL Y/O ESCRITO' acá me está diciendo que debo hacer una actividad en donde el aprendiz haga eso. Y cuando haga eso y lo evidencie debe responder con un criterio de evaluación (ej: INTERPRETA MENSAJES SENCILLOS) que ya está definido. **ESA ES LA TRAZABILIDAD DE CADA COSA. A ESO ES A LO QUE QUIERO LLEGAR.**"
+
+### La cadena canónica (6 eslabones · UbD invertido adaptado SENA)
+
+```
+SABER DE CONCEPTO  →  SABER DE PROCESO  →  ACTIVIDAD       →  EVIDENCIA  →  CRITERIO         →  INSTRUMENTO
+(temática · QUÉ)      (operación · CÓMO)    (DÓNDE ocurre)    (QUÉ produce)  (CÓMO se mide)     (CON QUÉ)
+   ↓                       ↓                    ↓                  ↓             ↓                  ↓
+"COMMANDS              "IDENTIFICAR         "Reading anchor:    E1 Reading    C01 canon         Cuestionario
+ (TO: OFFICERS,         Y EXTRAER            aprendiz lee        (S3)          + criterio SOFÍA   No 1
+ SAILORS...)"           INFORMACIÓN          Inspection                        general
+                        PRECISA EN INGLÉS    Report y extrae                   "INTERPRETA
+                        ORAL Y/O ESCRITO"    5 órdenes                         mensajes
+                                             específicas"                      sencillos"
+```
+
+### Verbo cognitivo del RAP DICTA dominio de saberes
+
+| RAP | Verbo cognitivo | Bloom | Dominio canónico |
+|---|---|---|---|
+| RA1 | RECONOCER | L1 (Recordar/Reconocer) | Vocab base + estructuras MÍNIMAS PARA NOMBRAR (verb to be · plural · demostrativos) |
+| RA2 | COMPRENDER | L2 (Comprender) | Dominio especializado (e.g., SMCP completo) |
+| RA3 | APLICAR | L3 (Aplicar) | Gramática operacional para INTERACCIÓN bilateral (commands · imperative · modals) |
+| RA4 | DESCRIBIR | L2-L3 | Lugares + operaciones + estructuras para DESCRIBIR (tag questions · progressive · prepositional · quantifiers) |
+
+**Principio canon:** El verbo cognitivo del RAP NO solo describe lo que el aprendiz hará · DICTA QUÉ SABERES PERTENECEN al RAP. RA1 RECONOCER necesita verb to be + plural para poder nombrar · NO es "gramática" abstracta · es vehículo lexical mínimo. Por eso esos saberes pertenecen a RA1, no a RA3.
+
+### Saber de proceso DICTA tipo de actividad PM-2.x
+
+| Saber de proceso | Modalidad | Tipo de actividad PM-2.x | Evidencia formal |
+|---|---|---|---|
+| IDENTIFICAR/EXTRAER información oral | Listening | PM-2.6 Listening Anchor | **E3** |
+| IDENTIFICAR/EXTRAER información escrita | Reading | PM-2.3 Reading Anchor | **E1** |
+| EXPRESAR/INTERPRETAR órdenes (operacional bilateral) | Speaking | PM-2.8 Speaking Mission | **E4** |
+| RECONOCER oficios/elementos | Vocabulary + Reading | PM-2.5 + PM-2.3 | E1 + E6 |
+| RECONOCER deletreo (NATO Phonetic) | Pronunciation + Speaking | PM-2.8 (con scaffolding pronunciación) | E4 + E6 |
+| RESPONDER con frases estandarizadas (e.g., SMCP) | Speaking | PM-2.8 Speaking Mission | E4 |
+| EXPRESAR prohibición/permisión/posibilidad | Speaking + Functions | PM-2.8 + PM-2.9 | E4 + E5 |
+| HABLAR ubicaciones | Speaking + Functions | PM-2.8 + PM-2.9 | E4 + E5 |
+| DESCRIBIR elementos/procesos | Speaking + Writing + Functions | PM-2.4 + PM-2.8 + PM-2.9 | E2 + E4 + E5 |
+| IDENTIFICAR estructuras gramaticales | Grammar consciousness raising | PM-2.10 Grammar | E2 + E6 |
+
+### Cómo cada PM materializa un eslabón de la cadena
+
+| PM | Eslabones que materializa | Campo canon que vehicula traceability |
+|---|---|---|
+| **PM-0.0** v1.2+ | 1 (saberes concepto) + 2 (saberes proceso) + 5 (criterios) + 6 (instrumentos asignados) | `criterios_evaluacion_especificos_canon_sistema[].evidencia + sesion + instrumento` |
+| **PM-0** v3.2+ | Capa pedagógica sobre cadena (universo · personajes · grammar focus · L1 policy) | `_anclaje_matriz` en cada elemento pedagógico |
+| **PM-1.1** v2.8+ | Distribución estructural en bloques tripartitos · cada bloque hereda saberes/criterios canon | `_anclaje_matriz_bloque` (rap_target + saberes_cubiertos + criterios_assigned + evidencias_target + sesiones_anchor) |
+| **PM-1.2** v4.2+ | 3 (actividad) + 4 (evidencia mapping) | Cada elemento de scope con `_anclaje_matriz` + `_produces_evidencia` + `_consumed_by_pm` |
+| **PM-2.3-2.10** | Materialización en Activity Card detallada | Hereda traceability hacia atrás · genera evidencia hacia adelante |
+| **PM-2.11** + **PM-3.6** | Ensamblado matriz GFPI-F-134 + Learning Guide GFPI-F-135 | Cada actividad en cols 6-11 trazable a saber/criterio/evidencia/instrumento |
+
+### Trazabilidad bidireccional (test canon)
+
+Una actividad bien diseñada DEBE poder responder ambas preguntas SIN inventar:
+
+**Hacia atrás (¿de dónde viene?):**
+- ¿Qué saberes_concepto demanda? → debe estar en `_anclaje_matriz.saberes_que_demanda`
+- ¿Qué saber_proceso ejecuta el aprendiz? → debe ser uno de los saberes_proceso del RAP target
+- ¿De qué bloque viene? → uno de los bloques tripartitos heredados de PM-1.1
+
+**Hacia adelante (¿adónde va?):**
+- ¿Qué evidencia produce? → `_produces_evidencia` apuntando a E1-E6+E-Misión o null explícito
+- ¿Qué criterio se evalúa? → `_anclaje_matriz.criterios_canon_que_evalua`
+- ¿Qué instrumento se usará? → heredado del criterio canon (documentado en PM-0.0)
+- ¿Qué PM downstream la consume? → `_consumed_by_pm`
+
+Si CUALQUIER respuesta es "inventado" o "vacío" · la actividad VIOLA "nada por fuera de la matriz".
+
+### Anti-patrones pedagógicos identificados
+
+**Anti-patrón A · "Toda gramática a un solo RAP" (Opción B descartada en deliberación 2026-05-02):**
+- Anti-CEFR A1-A2 (los aprendices NO aprenden gramática aislada)
+- Anti-ESP (rompe principio "gramática al servicio del contenido")
+- Anti-TBLT (tareas reales requieren múltiples gramáticas simultáneas desde S1)
+- Solución: Opción A refinada · gramática sigue UNIT pedagógico donde sirve
+
+**Anti-patrón B · "Distribución por libre interpretación LLM":**
+- Cada generación produce distribución ligeramente distinta · no reproducible
+- Solución canon: distribución explícita en `pm-0-0-input.json.distribucion_canonica_saberes_por_rap`
+
+**Anti-patrón C · "Saberes con `_anclaje_matriz` vacío":**
+- Detectado en PM-1.2 v4.2 IMARPOR-V2 inicial: `task_writing_derivada` con `saberes_que_demanda: []`
+- Solución canon: validation_check 6 `traceability_matriz_completa` BLOQUEANTE en PM-1.2
+
+### Aplicabilidad cross-program
+
+Esta cadena pedagógica canónica aplica a TODO programa FPI Factory independiente del sector (marítimo · diesel · agricultura · tecnología · etc.):
+- Técnico (8 sesiones · ~4 RAPs)
+- Tecnológico (16 sesiones · ~6 RAPs)
+- Curso Complementario / Especial (12 sesiones · ~2-4 RAPs)
+
+Lo que cambia entre programas: saberes_concepto del sector + criterios canon C01-C08 (Sergio aporta) + universo narrativo (PM-0 v3.2 LLM crea desde sector). El modelo conceptual de la cadena es UNIVERSAL.
+
+### Caso operacional confirmado IMARPOR-V2
+
+- pm-0-0-matriz-alineada.json v1.2 con distribución canónica corregida (Opción A refinada)
+- pm-1-1.json v2.8 con bloques tripartitos heredando matriz
+- pm-1-2.json v4.2 con actividades trazables hacia atrás Y adelante
+- 22 validation_checks (PM-0 7 + PM-1.1 9 + PM-1.2 6) PASS
+- Cadena bidireccional verificada · cada actividad responde "de dónde viene" Y "adónde va" sin huecos
+
+### Memoria operacional referenciada
+
+Documentado en `feedback_cadena_pedagogica_ubd_canon.md` (modelo mental + tabla saber_proceso DICTA tipo PM-2.x + trazabilidad bidireccional + anti-patrones).
+
+**Disciplina canon Sergio:**
+> "Esa es la trazabilidad de cada cosa. A eso es a lo que quiero llegar."
+> "Nada por fuera de la matriz."
+> "Verbo cognitivo del RAP dicta dominio de saberes."
+
+---
+
 *DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo*
-*Fábrica Curricular v3.4 — PM-1.2 SCOPE DIFERENCIADO POR `tipo_bloque` · 3 schemas distintos (APERTURA motivacional+diagnóstico · APROPIACIÓN vivero evidencias · TRANSFERENCIA capstone) · `_produces_evidencia` mapping E1-E6+E-Misión · 6 validation_checks BLOQUEANTES · clarificaciones pedagógicas Sergio integradas (NO conocimiento nuevo en APERTURA · vivero evidencias en APROPIACIÓN) · canon Sergio Cortés 2026-05-01*
-*Versiones legacy preserved: v3.3 PM-1.1 Tripartita + v3.2 Criterios canon + Traceability + v3.1 Anti-patrón #16 + v3.0 PARADIGM SHIFT NEW PM-0.0 + v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
+*Fábrica Curricular v3.5 — CADENA PEDAGÓGICA CANÓNICA UbD INVERTIDA · 6 eslabones (Saber Concepto → Saber Proceso → Actividad → Evidencia → Criterio → Instrumento) · saber_proceso DICTA tipo de actividad PM-2.x · verbo cognitivo RAP DICTA dominio de saberes · trazabilidad bidireccional canon · anti-patrón "toda gramática a un solo RAP" descartado · canon Sergio Cortés 2026-05-02*
+*Versiones legacy preserved: v3.4 PM-1.2 Scope Diferenciado + v3.3 PM-1.1 Tripartita + v3.2 Criterios canon + Traceability + v3.1 Anti-patrón #16 + v3.0 PARADIGM SHIFT NEW PM-0.0 + v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
 *Instructor Sergio · Abril–Mayo 2026*

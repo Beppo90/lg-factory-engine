@@ -1,69 +1,53 @@
 {
-  "schema_version": "v2.8",
   "pm_id": "PM-1.1",
-  "pm_name": "Ruta Macrotemática Tripartita",
+  "pm_name": "Ruta Macrotemática Tripartita · v2 corregida",
   "pm_version": "2.8",
+  "pm_iteration": "v2",
   "run_id": "IMARPOR-CC-2026-04-30-V2",
-  "guide_id": "IMARPOR-CC-V2-G1",
-  "generated_date": "2026-05-01",
+  "generated_date": "2026-05-02",
   "instructor": "Sergio Cortés Perdomo",
-  "co_instructor": "Diana Rocío Samboni",
 
-  "_pm00_matriz_ref": {
-    "file": "pm-0-0-matriz-alineada.json",
-    "version": "1.1",
-    "raps_count": 4,
-    "criterios_canon_count": 8,
-    "overlaps_multi_rap": 4,
-    "uso": "Fuente primaria de verdad · cada bloque APROPIACIÓN ancla 1 RAP target + criterios canon heredados · BT capstone ancla C08 + E-Misión"
-  },
-  "_pm0_context_ref": {
-    "file": "pm-0-context.json",
-    "version": "3.1",
-    "uso": "Universo banana cold chain · Puerto Antioquia · 8 personajes · grammar focus canon-aligned · L1 policy anclada a evidencias · final_mission_scenario tripartite handover · todos elementos con _anclaje_matriz heredado v3.2"
-  },
+  "_pm00_matriz_ref": "pm-0-0-matriz-alineada.json (v1.3 · CORREGIDA · zero drift · Opción A refinada)",
+  "_pm0_context_ref": "pm-0-context.json (v3.2)",
+  "_pm11_input_ref": "pm-1-1-input.json (tipo=Curso Complementario · sesiones=12 · 6h/sesión · 72h directas)",
+  "_correction_applied": "v2 hereda matriz v1.3 · cada bloque APROPIACIÓN con saberes/criterios CORREGIDOS sin drift cruzado · DEMOSTRATIVOS+VERB TO BE+SINGULAR/PLURAL confinados a B1 RA1 · COMMANDS+IMPERATIVE+MODALS confinados a B3 RA3 · TAG QUESTIONS+PRESENT PROGRESSIVE+QUANTIFIERS+CONTAINERIZATION confinados a B4 RA4",
+  "_legacy_v1_ref": "pm-1-1.json.legacy-pre-fix-distribucion-rev (v1 heredó matriz v1.1 con drift · 8 instancias drift cruzado documentadas)",
+  "_canon_authority": "Sergio Cortés Perdomo · arquitecto/instructor FPI SENA Bilingüismo · aprobación matriz v1.3 Opción A refinada 2026-05-02",
 
   "programa": {
-    "denominacion": "Curso Complementario: Inglés Marítimo y Portuario · Línea Banana/Cold Chain",
+    "denominacion": "Inglés Marítimo y Portuario · Curso Complementario · Línea Banana/Cold Chain",
     "codigo_sofia": "12340002",
     "tipo": "Curso Complementario",
+    "regla_bloques_guia": "absorcion_Na1 (4 RAPs absorbidos en 1 guía única · canon SENA)",
     "duracion_total_horas": 100,
-    "horas_directas_total": 72,
-    "horas_autonomas_implicadas": 28,
+    "horas_directas": 72,
+    "horas_autonomas": 28,
     "sesiones_count": 12,
     "horas_por_sesion": 6,
-    "modalidad_estructural": "single-guía absorpción 4 RAPs (regla_bloques=absorcion_Na1 a nivel guía · estructura tripartita interna v2.8)",
+    "rango_cefr": "A1.2 → A2.1",
     "competencia": "INTERACTUAR CON OTROS EN IDIOMA EXTRANJERO SEGÚN ESTIPULACIONES DEL MARCO COMÚN EUROPEO DE REFERENCIA PARA IDIOMAS",
-    "cefr_progresion": "A1.2 → A2.1 (entrada vocablos básicos S1-S3 → salida producción descriptiva ocupacional S10-S12)",
-    "final_mission_scenario": "Pre-Departure Banana Reefer Compliance Check & Tripartite Handover · The CARIBBEAN STAR Departure"
+    "raps_count": 4,
+    "final_mission_scenario": "Pre-Departure Banana Reefer Compliance Check & Tripartite Handover · The CARIBBEAN STAR Departure (heredado universo PM-0 v3.2)",
+    "sector": "marítimo y portuario · sub-sector banana cold chain · Puerto Antioquia (Urabá · Necoclí · Eje Bananero)"
   },
 
   "estructura_tripartita_summary": {
-    "apertura": {
-      "bloques_count": 1,
-      "sesiones": ["S1"],
-      "horas_directas": 6
-    },
-    "apropiacion": {
-      "bloques_count": 4,
-      "sesiones": ["S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10"],
-      "horas_directas": 54,
-      "distribucion_sesiones_por_rap": {
-        "B1_RA1": ["S2", "S3", "S4"],
-        "B2_RA2": ["S5", "S6"],
-        "B3_RA3": ["S7", "S8"],
-        "B4_RA4": ["S9", "S10"]
-      }
-    },
-    "transferencia": {
-      "bloques_count": 1,
-      "sesiones": ["S11", "S12"],
-      "horas_directas": 12
-    },
     "total_bloques": 6,
-    "total_sesiones": 12,
-    "total_horas_directas": 72,
-    "ecuacion_canon": "1 APERTURA (6h/1s) + 4 APROPIACIÓN (54h/9s) + 1 TRANSFERENCIA (12h/2s) = 6 bloques · 12 sesiones · 72h directas ✓"
+    "formula_canon": "1 APERTURA + 4 APROPIACIÓN (1 por RAP) + 1 TRANSFERENCIA = 6 bloques (REGLA 7 v2.8)",
+    "regla_bloques_apropiacion_aplicada": "alineacion_1a1 (1 RAP por bloque APROPIACIÓN · canon · NO desdoblamiento porque ningún RAP requiere subdivisión interna a nivel macro)",
+    "tiempos_canon_aplicados": {
+      "apertura": {"sesiones": 1, "horas": 6, "canon": "exactamente 6h/1sesión REGLA 8"},
+      "apropiacion_total": {"sesiones": 9, "horas": 54, "canon": "resto 72-6-12=54h"},
+      "transferencia": {"sesiones": 2, "horas": 12, "canon": "≤12h/≤2sesiones REGLA 8"},
+      "total_directas": {"sesiones": 12, "horas": 72, "match": "PASS = sesiones_count × horas_por_sesion"}
+    },
+    "distribucion_apropiacion_entre_raps": {
+      "B1_RA1": {"sesiones": 3, "horas": 18, "rationale": "RA1 RECONOCER (Bloom L1) cubre UNIT 1 + UNIT 2 + 3 estructuras gramaticales mínimas (8 saberes_conceptos · más volumen léxico fundacional · necesita S2 vocab introduction + S3 E1 Reading + S4 E2 Writing). Es el bloque entry-point del programa post-APERTURA."},
+      "B2_RA2": {"sesiones": 2, "horas": 12, "rationale": "RA2 COMPRENDER (Bloom L2) SMCP IMO · solo 4 saberes_conceptos pero alta densidad técnica (UNIT 5 íntegra). 2 sesiones suficientes: S5 E3 Listening SMCP + S6 (E4-parcial Speaking + E6 Cuestionario Consolidado). S6 es checkpoint medio del programa con doble evidencia documentada en matriz."},
+      "B3_RA3": {"sesiones": 2, "horas": 12, "rationale": "RA3 APLICAR (Bloom L3) gramática operacional bilateral · 4 saberes (COMMANDS + PRESENT SIMPLE + IMPERATIVE + MODAL VERBS). Densidad criterios canon máxima (5/8: C02 cara morfo · C04 cara gramatical · C05 primario · C06 cara aplicación · C07). 2 sesiones: S7 consolidación gramática + S8 E4-final Speaking berthing tripartito."},
+      "B4_RA4": {"sesiones": 2, "horas": 12, "rationale": "RA4 DESCRIBIR (Bloom L2-3) · mayor volumen saberes_conceptos (10/26 · 38.5%) pero gran parte ya pre-tocada en bloques anteriores como vocab contextual. 2 sesiones: S9 E5 Language Functions Role Carousel + S10 consolidación pre-Misión. La C08 capstone NO vive en B4 sino en BT TRANSFERENCIA (sesiones S11-S12 · canon)."}
+    },
+    "distribucion_decisiones_analiticas": "v1 propuso 3-2-2-2 · v2 mantiene 3-2-2-2 porque: (1) RA1 lidera entry-point con peso léxico fundacional + 2 evidencias formales en sus 3 sesiones (E1 Reading S3 + E2 Writing S4 cara léxica) · (2) RA2-RA3 comparten densidad media · (3) RA4 cierra APROPIACIÓN con 2 sesiones rehearsal pre-capstone · TRANSFERENCIA absorbe S11-S12 capstone."
   },
 
   "bloques": [
@@ -71,50 +55,31 @@
       "bloque_id": "B0",
       "tipo_bloque": "APERTURA",
       "transversal": true,
-      "orden": 1,
-      "titulo": "Welcome Aboard the Cold Chain · Spark & Diagnostic Stand-Down",
-      "narrativa_macrotematica": "Bloque de apertura transversal a la competencia completa. Manuel Padilla cruza el portón del Terminal Multipropósito de Urabá en su primer día como Junior Reefer Operator promovido al Cold Chain Technician Track. La sesión inaugura con el ritual stand-down (3 min · L1 huddle ceremonial guiado por Hernando Ospina sobre seguridad cold chain) y rápidamente vira al inglés operacional. El propósito es doble: (1) Spark afectivo · activar la conexión emocional del aprendiz con la integridad de la cadena de frío banana cold chain (un cluster Cavendish que viaja 14 días a Hamburgo o Antwerp depende de cada eslabón) y con su rol en el Terminal · y (2) Gap Analysis · diagnóstico de entrada del nivel CEFR A1.1/A1.2 mediante tareas comunicativas low-stakes alrededor del reefer yard (vocabulario visual de partes del barco · reconocimiento de oficios bananeros en fotos reales · escucha breve de un VHF arrival exchange de muestra). NO hay evidencias formales · NO hay criterios canon evaluados · es la sesión donde el universo se enciende y donde se mide el punto de partida real del aula para calibrar la progresión A1.2 → A2.1.",
+      "titulo": "The Banana Reefer Welcome · Cold Chain Stand-Down & Diagnostic Spark",
+      "narrativa_macrotematica": "Sesión inaugural en Puerto Antioquia (Urabá). Manuel Padilla — junior reefer operator recién promovido al Cold Chain Technician Track — entra al aula con sus 11 colegas del Eje Bananero. Hernando Ospina abre con stand-down ritual de 3 minutos en L1 (seguridad cold chain · setpoint 13.3-13.9°C es la línea de muerte del banano Cavendish). Carolina Vélez se presenta como port pilot bilingüe y proyecta dos arquetipos de aprendiz frente al inglés operacional: el reefer operator que congela en VHF (arquetipo miedo) y el aprendiz que ya conoce el banano y solo necesita las palabras inglesas para defenderlo (arquetipo valentía). Mariana Suárez muestra un certificado fitosanitario ICA real firmado en inglés y plantea la pregunta-puente: ¿qué necesitarías saber en inglés para firmar este documento sin ambigüedad bilingüe? Diagnostic spark ABP + gap analysis transversal de los 4 RAPs · sin evidencias formales · pre-CEFR baseline A1.1-A1.2 · L1 ≤25%.",
       "sesiones_anchor": ["S1"],
       "horas_directas": 6,
-      "cefr_subnivel_entrada": "A1.1 → A1.2",
       "_anclaje_matriz": {
         "alcance": "competencia_completa",
         "raps_atravesados": ["RA1", "RA2", "RA3", "RA4"],
         "pms_destino": ["PM-2.1", "PM-2.2"],
         "arquetipos_target": 4,
+        "arquetipos_breakdown": "2 arquetipos PM-2.1 spark (miedo VHF · valentía cold chain operator) + 2 arquetipos PM-2.2 gap (vocab portuario gap · SMCP exposure gap)",
         "evidencias_target": [],
         "criterios_canon": [],
-        "rationale_transversalidad": "Apertura transversal · NO ancla 1 RAP particular · activa anticipadamente saberes/oficios/escenarios de los 4 RAPs como spark + diagnóstico baseline · alimenta arquetipos PM-2.1 (Spark) y PM-2.2 (Gap Analysis)"
+        "rationale_sin_evidencias": "APERTURA es transversal pre-evaluación · ninguna evidencia formal canon (E1-E6+E-Misión) cae en S1 · primera evidencia es E1 Reading S3 que pertenece a B1 RA1"
       },
       "diseño_pedagogico_apertura": {
         "pm_2_1_spark_arquetipos": [
-          {
-            "arquetipo": "Real-Artifact Spark · Visual Cold Chain Walkthrough",
-            "descripcion": "Tour visual del reefer yard con realia (cluster Cavendish con plastic film bagging + sello GlobalGAP · termómetro digital · reefer plug demo · señalética bilingüe NO SMOKING · COLD CHAIN ZONE · MUSTER STATION). Manuel y los aprendices identifican los anchors físicos del universo · ancla afectiva sector banana cold chain. Tono: motivacional · 'esto es lo que vamos a defender en inglés durante 12 sesiones'.",
-            "pm_destino": "PM-2.1"
-          },
-          {
-            "arquetipo": "Stakes-Personal Spark · Mariana's Signature",
-            "descripcion": "Carolina Vélez (Pilot · primera mujer pilota práctica del Terminal) y Mariana Suárez (ICA Liaison) presentan en video corto bilingüe por qué su firma en el certificado fitosanitario se hace en inglés. Anclaje afectivo: 'cualquier ambigüedad bilingüe en una alarma de temperatura cuesta un contenedor de 25,000 USD'. Aprendices responden en parejas micro-question: '¿Qué te asusta más del inglés portuario?' (L1 permitido · último huddle bilingüe ceremonial).",
-            "pm_destino": "PM-2.1"
-          }
+          "Spark 1 · Miedo VHF: Manuel ante el micrófono congelando frente al Captain Lim Wei-Ming · realismo del costo emocional del silencio operacional",
+          "Spark 2 · Valentía Cold Chain Operator: Mariana firmando el certificado ICA en inglés con la confianza de quien protege un contenedor de 25,000 USD"
         ],
         "pm_2_2_gap_arquetipos": [
-          {
-            "arquetipo": "Visual Vocab Diagnostic · Parts of the Reefer Ship",
-            "descripcion": "Tarea diagnóstica de reconocimiento visual A1.1/A1.2 · 12 ítems con fotos reales de partes del reefer ship + oficios bananeros (stevedore · tally clerk · cold chain coordinator · refrigeration technician · bosun · pilot). Aprendices marcan/etiquetan en formato low-stakes. Resultado calibra punto de partida lexical RA1 antes de entrar a B1.",
-            "pm_destino": "PM-2.2"
-          },
-          {
-            "arquetipo": "Listening Snippet Diagnostic · VHF Sample",
-            "descripcion": "Audio breve (90 seg) de un VHF arrival exchange real Star Reefers/Seatrade · pregunta diagnóstica única: '¿Qué entendiste? · ¿qué palabras reconociste?'. Permite que los aprendices se confronten con el lingua franca B1 no-nativa que les espera en S5/E3 (C03). Resultado calibra punto de partida auditivo RA2 + activa expectativa SMCP para B2.",
-            "pm_destino": "PM-2.2"
-          }
+          "Gap 1 · Vocabulario portuario reefer: aprendices reconocen banana en español pero NO 'reefer container · genset · plug · setpoint' en inglés (target RA1 lexical)",
+          "Gap 2 · Exposición SMCP cero: aprendices NO han escuchado nunca audio VHF auténtico · NO conocen NATO Phonetic ni message markers (target RA2 audición operacional)"
         ],
-        "rituales_apertura": {
-          "stand_down_inicial": "3 min · L1 huddle seguridad cold chain guiado por Hernando Ospina (custodio del ritual) · ÚNICA aparición canónica de huddle bilingüe extenso · cierra ceremonialmente al final de S3 según L1 policy PM-0",
-          "tono_pedagogico": "Colaborativo-trabajo-equipo · cold-chain-first · ancla emocional sector banana"
-        }
+        "stand_down_ritual": "3 minutos L1 inicio S1 · ritual cold chain seguridad · documenta canon afectivo P6 emergente PM-0 v3.2",
+        "diagnostic_baseline": "Pre-CEFR informal · ≤25% L1 · L2 introducción a 6 anchors léxicos transversales · sin instrumento formal · output PM-2.1+PM-2.2 alimenta personalización de bloques B1-B4"
       }
     },
 
@@ -122,43 +87,43 @@
       "bloque_id": "B1",
       "tipo_bloque": "APROPIACION",
       "transversal": false,
-      "orden": 2,
-      "titulo": "The Reefer Ship Vocabulary · Recognizing Vessel Parts & Port Crew",
-      "narrativa_macrotematica": "Primer bloque APROPIACIÓN · ancla el verbo cognitivo RECONOCER del RA1 sobre la nomenclatura física del reefer container · partes del barco · equipos de seguridad/navegación · y los oficios bananeros del Terminal de Urabá (UNIT 1 SHIP OVERVIEW + UNIT 2 PROFESSIONS). Manuel atraviesa S2 construyendo lexical inventory con realia y vocabulary boards (banana cluster · stem · setpoint 13.3°C · genset backup · plug · stevedore · tally clerk · cold chain coordinator). En S3 aterriza la primera evidencia formal del programa · E1 Reading (C01 · A1.2 · Cuestionario No 1) sobre texto auténtico adaptado del reefer terminal. En S4 escala a la primera salida productiva escrita · E2 Writing (C02 · A1.2-A1.3 · Lista de Verificación No 2) · Inspection Report banana cold chain donde reutiliza el lexicón RA1 + aplica gramática fundacional RA3 (verb to be · plurals · imperative · preposición IN). El bloque sigue el principio P5 (evidencia alineada al criterio): cada actividad atribuible a C01 o C02. L1 cae rápido (S2 ≤25% · S3 ≤25% último huddle bilingüe ceremonial · S4 ≤12%).",
+      "titulo": "The Reefer Crew · Recognizing Ships, Parts & Port Professions",
+      "narrativa_macrotematica": "Manuel y la cuadrilla recorren el reefer yard del Terminal Multipropósito de Urabá con visitor checklist. Reconocen partes del MV CARIBBEAN STAR (hull · bow · stern · bridge · cargo holds · reefer plugs en bay 14) y nombran tipos de merchant vessels en operación (reefer ship · container ship · bulker). Identifican el navigational and safety equipment del reefer (genset · alarmas · plug · sensores). Yurlenis Córdoba entra como tally clerk encarnando demonstrativos+verb to be ('this is a reefer plug · these are clusters · those are containers') y SINGULAR/PLURAL nouns en bay counts. Aparece el cast de oficios bananeros: stevedore · tally clerk · refrigeration technician · pilot · bosun · cold chain coordinator. CEFR A1.2 entry-point. L1 ≤25% S1-S2 cerrando ceremonialmente en S3 con E1 Reading. S4 ejecuta E2 Writing Inspection Report (cara léxica RA1 + cara morfosintáctica RA3 documentada matriz como overlap C02).",
       "sesiones_anchor": ["S2", "S3", "S4"],
       "horas_directas": 18,
       "regla_bloques_aplicada": "alineacion_1a1",
-      "cefr_subnivel": "A1.2 → A1.3 (entrada A1.2 · cierre cara A1.3 en E2 Writing)",
       "_anclaje_matriz": {
         "rap_target": "RA1",
-        "raps_secundarios": ["RA3"],
-        "raps_secundarios_rationale": "C02 es overlap RA1+RA3 · cara RA1 lexical retention de vocabulario portuario reconocido en S3 reutilizado en Inspection Report S4 · primera salida productiva escrita ancla naturalmente al RAP del verbo cognitivo RECONOCER (lexical-first) · RA3 entra como herramienta gramatical operacional en este bloque",
+        "rap_titulo_matriz": "RECONOCER VOCABLOS Y EXPRESIONES BÁSICAS EN INGLÉS, DE FORMA ESCRITA Y AUDITIVA, ENMARCADOS EN EL DESEMPEÑO DE FUNCIONES PROPIAS EN EL SECTOR MARÍTIMO Y PORTUARIO",
+        "verbo_cognitivo": "RECONOCER",
+        "bloom_level": "L1",
+        "raps_secundarios": ["RA3 (cara morfosintáctica overlap C02 en S4 Writing)"],
         "saberes_conceptos_cubiertos": [
           "UNIT 1: SHIP OVERVIEW",
           "PARTS OF THE SHIPS",
           "TYPES OF MERCHANT VESSELS",
           "NAVIGATIONAL AND SAFETY-RELATED EQUIPMENT OF THE SHIP",
+          "REVIEW OF DEMONSTRATIVES ADJECTIVES AND VERB TO BE",
+          "SINGULAR AND PLURAL NOUNS",
           "UNIT 2: THE CREW",
-          "PROFESSIONS IN PORT AND ABOARD",
-          "REVIEW OF DEMONSTRATIVES ADJECTIVES AND VERB TO BE (cara overlap RA3)",
-          "SINGULAR AND PLURAL NOUNS (cara overlap RA3)",
-          "IMPERATIVE (cara overlap RA3 · imperative en Inspection Report instructions)"
+          "PROFESSIONS IN PORT AND ABOARD"
         ],
+        "saberes_conceptos_count": 8,
         "saberes_proceso_cubiertos": [
           "IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS GENERADA EN EL INTERCAMBIO ORAL Y/O ESCRITO EN ESTE IDIOMA, DADO EN EL CUMPLIMIENTO DE LAS ACCIONES REQUERIDAS A BORDO DEL BUQUE Y EN PUERTO",
           "RECONOCER LOS DISTINTOS OFICIOS ENMARCADOS EN LOS CAMPOS MARÍTIMO Y PORTUARIO"
         ],
-        "criterios_canon_assigned": ["C01", "C02"],
-        "criterios_canon_rationale": "C01 (RA1 primario · 1:1 verbo RECONOCER · E1 Reading S3 A1.2 · Cuestionario No 1) cae naturalmente en S3 dentro del bloque · C02 (overlap RA1+RA3) asignado a este bloque cara RA1 (lexical retention en E2 Writing S4) · cara RA3 morfosintáctica también se trabaja aquí porque S4 es la primera salida productiva escrita y la matriz reza 'primera evaluación gramatical del programa · S4 = primera salida productiva escrita'",
+        "saberes_proceso_count": 2,
+        "criterios_canon_assigned": ["C01", "C02", "C07"],
+        "criterios_canon_rationale": "C01 PRIMARIO RA1 (E1 Reading S3 · vocab portuario · partes barco · A1.2 · Cuestionario No 1) · C02 OVERLAP RA1+RA3 cara léxica RA1 (E2 Writing S4 · Inspection Report · vocabulario aplicado · A1.2-A1.3 · Lista de Verificación No 2) · C07 4-WAY consolidación (E6 S6 · cara Reading + Vocabulary RA1 · sección 25 ítems integrados)",
         "pms_destino": ["PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.8", "PM-2.9", "PM-2.10"],
-        "evidencias_target": ["E1", "E2"],
-        "sesiones_anchor": ["S2", "S3", "S4"],
+        "evidencias_target": ["E1", "E2", "E6 (cara RA1)"],
         "sesiones_canon_evidencias": {
-          "S3": "E1 Reading (C01)",
-          "S4": "E2 Writing (C02 RA1+RA3)"
+          "S3": "E1 Reading (C01 · Cuestionario No 1 · vocab portuario · partes barco)",
+          "S4": "E2 Writing (C02 cara léxica RA1 · Inspection Report · vocabulario aplicado en plurales+demostrativos)"
         },
-        "personajes_protagonicos": ["Manuel Padilla (avatar)", "Yurlenis Córdoba (Tally Clerk · encarna SINGULAR/PLURAL/QUANTIFIERS)", "Hernando Ospina (custodio stand-down · imperative en safety commands)"],
-        "instrumentos_canon": ["Cuestionario No 1 (E1)", "Lista de Verificación No 2 (E2)"]
+        "cefr_subnivel": "A1.2",
+        "l1_max_banda": "S2 ≤20% · S3 ≤15% último huddle bilingüe ceremonial · S4 ≤12%"
       }
     },
 
@@ -166,40 +131,40 @@
       "bloque_id": "B2",
       "tipo_bloque": "APROPIACION",
       "transversal": false,
-      "orden": 3,
-      "titulo": "SMCP & VHF Voice · Understanding the Standard Marine Channel",
-      "narrativa_macrotematica": "Segundo bloque APROPIACIÓN · ancla el verbo cognitivo COMPRENDER del RA2 sobre las frases estandarizadas IMO Standard Marine Communication Phrases (UNIT 5 íntegra: introducing SMCP · standard spelling NATO Phonetic · message markers tipo INSTRUCTION/ADVICE/WARNING · standard responses Roger/Wilco/Affirmative/Standby). Manuel entra en S5 a la cabina virtual VHF y enfrenta E3 Listening (C03 · A1.3 · Lista de Verificación No 3) con audio auténtico VHF arrival exchange MV CARIBBEAN STAR + lingua franca B1 no-nativa de Captain Lim Wei-Ming (canon explícito en matriz). En S6 ocurre la sesión más densa del programa (canon: S6 alberga 2 evidencias): E4-parcial Speaking (C04 · A1.3-A2.0 · overlap RA2+RA3 · respuestas críticas SMCP + NATO Phonetic spelling con stress correcto) Y E6 Cuestionario Consolidado (C07 · 4-way overlap · 25 ítems integrados Reading+Writing+Listening+Vocabulary+Grammar · ≥70% PASS · checkpoint medio del programa). Carolina Vélez (B2 técnico · primera mujer pilota práctica) modela en vivo la pronunciación VHF · Captain Lim aporta el realismo lingua franca · Bosun Mejía dispara la necesidad de spelling de clarificación. Zona accuracy-cero-tolerancia: un Wilco/Roger/Affirmative mal usado se corrige en el momento. L1: S5 ≤10% · S6 ≤8%.",
+      "titulo": "The VHF Voice · Comprehending IMO Standard Marine Communication Phrases",
+      "narrativa_macrotematica": "El bloque del oído operacional. Carolina Vélez (port pilot B2) modela inglés VHF en vivo y proyecta audio auténtico del MV CARIBBEAN STAR aproximándose al berth · Captain Lim Wei-Ming (lingua franca singapurense B1+ no-nativa · realismo canon explícito en C03) lanza message markers SMCP (Question · Answer · Request · Information · Warning · Advice · Instruction · Intention) y standard responses (Roger · Wilco · Affirmative · Standby · Negative). Bosun Andrés Mejía deletrea el call sign con NATO Phonetic Alphabet forzando standard spelling. UNIT 5 íntegra es el corazón del bloque: SMCP + STANDARD SPELLING + MESSAGE MARKERS + STANDARD RESPONSES AND ORGANIZATIONAL PHRASES. CEFR A1.3. S5 ejecuta E3 Listening (audio VHF identificación mensajes correctos vs distractores). S6 es checkpoint medio doble: E4-parcial Speaking con NATO Phonetic stress en respuestas críticas (overlap RA2+RA3 documentado C04) + E6 Cuestionario Consolidado 4-way (C07). Zona accuracy-cero-tolerancia: un Wilco/Roger/Affirmative mal usado bloquea. L1 ≤8% pre-S6.",
       "sesiones_anchor": ["S5", "S6"],
       "horas_directas": 12,
       "regla_bloques_aplicada": "alineacion_1a1",
-      "cefr_subnivel": "A1.3 → A2.0 (entrada A1.3 E3 · cierre cara A2.0 E4-parcial)",
       "_anclaje_matriz": {
         "rap_target": "RA2",
-        "raps_secundarios": ["RA3", "RA1", "RA4"],
-        "raps_secundarios_rationale": "C04 overlap RA2+RA3 (cara RA2 producción reactiva SMCP encarnada en respuestas Roger/Wilco/Affirmative/Standby · cara RA3 fonológico-sintáctica vive en S6 dentro del bloque RA2 porque la sesión es densa de COMPRENDER + responder) · C07 overlap 4-way (RA1+RA2+RA3+RA4) checkpoint medio S6 dentro del bloque RA2 porque la matriz lo ubica en S6 · sección Listening + SMCP vocabulary del cuestionario es el alma del bloque",
+        "rap_titulo_matriz": "COMPRENDER VOCABLOS PRINCIPALES DE LAS FRASES ESTANDARIZADAS POR LA OMI, EN INGLÉS, PARA INICIAR LA INTERACCIÓN POR MEDIO ESCRITO Y ORAL, DE ACUERDO CON LOS ROLES DESCRITOS DENTRO DE LA INDUSTRIA MARÍTIMA Y PORTUARIA",
+        "verbo_cognitivo": "COMPRENDER",
+        "bloom_level": "L2",
+        "raps_secundarios": ["RA3 (cara aplicación gramatical NATO Phonetic stress en C04 S6)"],
         "saberes_conceptos_cubiertos": [
           "UNIT 5: INTRODUCING IMO STANDARD MARINE COMMUNICATION PHRASES (SMCP)",
-          "STANDARD SPELLING (NATO Phonetic Alphabet)",
-          "MESSAGE MARKERS (Question/Answer/Request/Information/Warning/Advice/Instruction/Intention)",
-          "STANDARD RESPONSES AND ORGANIZATIONAL PHRASES (Roger · Wilco · Affirmative · Standby · Negative)"
+          "STANDARD SPELLING",
+          "MESSAGE MARKERS",
+          "STANDARD RESPONSES AND ORGANIZATIONAL PHRASES"
         ],
+        "saberes_conceptos_count": 4,
         "saberes_proceso_cubiertos": [
           "RECONOCER LA MANERA DE DELETREAR LOS VOCABLOS EN INGLÉS",
           "RESPONDER EN INGLÉS EN CONVERSACIONES SENCILLAS Y UTILIZANDO LAS FRASES ESTANDARIZADAS POR LA OMI, EN EL DESEMPEÑO DE LAS OPERACIONES QUE SE GENEREN EN EL CONTEXTO",
           "IDENTIFICAR VOCABULARIO COMÚN EN INGLÉS, EN LAS FRASES ESTANDARIZADAS DE LA OMI PARA LA COMUNICACIÓN MARÍTIMA"
         ],
+        "saberes_proceso_count": 3,
         "criterios_canon_assigned": ["C03", "C04", "C07"],
-        "criterios_canon_rationale": "C03 (RA2 primario · 1:1 verbo COMPRENDER · E3 Listening S5 A1.3 · Lista de Verificación No 3 · audio VHF auténtico con lingua franca B1 no-nativa) cae 1:1 en S5 dentro del bloque · C04 (overlap RA2+RA3 · E4-parcial S6 A1.3-A2.0 · Escala de Estimación No 4) asignado a B2 cara RA2 producción reactiva SMCP · C07 (overlap 4-way · E6 S6 A1.2-A2.0 · Cuestionario No 6 · checkpoint medio) asignado a B2 porque la sesión canónica S6 cae aquí (NOTA: C07 es transversal a 4 RAPs pero su anchor sesional es S6 · matriz dicta esta ubicación)",
+        "criterios_canon_rationale": "C03 PRIMARIO RA2 (E3 Listening S5 · audio VHF auténtico INCLUYE lingua franca B1 no-nativa Captain Lim Wei-Ming · A1.3 · Lista de Verificación No 3) · C04 OVERLAP RA2+RA3 cara SMCP RA2 (E4-parcial Speaking S6 · respuestas críticas Roger/Wilco/Affirmative/Standby + NATO Phonetic stress · A1.3-A2.0 · Escala de Estimación No 4) · C07 4-WAY consolidación (E6 S6 · cara Listening + secciones SMCP del Cuestionario Consolidado)",
         "pms_destino": ["PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.8", "PM-2.9", "PM-2.10"],
-        "evidencias_target": ["E3", "E4-parcial", "E6"],
-        "sesiones_anchor": ["S5", "S6"],
+        "evidencias_target": ["E3", "E4-parcial (cara RA2)", "E6 (cara RA2)"],
         "sesiones_canon_evidencias": {
-          "S5": "E3 Listening (C03)",
-          "S6": "E4-parcial Speaking (C04 RA2+RA3) + E6 Cuestionario Consolidado (C07 4-way)"
+          "S5": "E3 Listening (C03 · Lista de Verificación No 3 · SMCP audio VHF auténtico Captain Lim Wei-Ming)",
+          "S6": "E4-parcial Speaking (C04 cara SMCP RA2 · respuestas críticas + NATO Phonetic) + E6 Cuestionario Consolidado (C07 4-way · sección Listening+SMCP)"
         },
-        "personajes_protagonicos": ["Manuel Padilla", "Carolina Vélez (Pilot · modela VHF en vivo)", "Captain Lim Wei-Ming (lingua franca B1 no-nativa)", "Bosun Andrés Mejía (genera demanda de spelling de clarificación)"],
-        "instrumentos_canon": ["Lista de Verificación No 3 (E3)", "Escala de Estimación No 4 (E4-parcial)", "Cuestionario No 6 (E6)"],
-        "nota_canon": "S6 alberga 2 evidencias formales (E4-parcial + E6) · densidad checkpoint medio del programa · documentado en matriz secuencia_evidencias_por_sesion"
+        "cefr_subnivel": "A1.3",
+        "l1_max_banda": "S5 ≤10% · S6 ≤8% (zona accuracy-cero-tolerancia SMCP)"
       }
     },
 
@@ -207,43 +172,49 @@
       "bloque_id": "B3",
       "tipo_bloque": "APROPIACION",
       "transversal": false,
-      "orden": 4,
-      "titulo": "Grammar at Work · Applying Modals, Conditionals & Passive at the Berth",
-      "narrativa_macrotematica": "Tercer bloque APROPIACIÓN · ancla el verbo cognitivo APLICAR del RA3 · gramática como herramienta operacional · el RAP con mayor densidad de criterios canon en la matriz (5 criterios). En S7 ocurre la consolidación gramatical declarada por la matriz ('S7=consolidación gramática') · se construyen los andamiajes para present progressive + prepositional phrases of geographic location and distance (la ubicación dinámica del buque que se aproxima a 2 millas náuticas) · modal verbs operacionales (CAN/COULD/SHOULD/MUST para REQUEST/PROHIBITION/POSSIBILITY/PERMISSION) · y las estructuras emergentes que C05 demanda explícitamente: condicional tipo 1 ('If the genset fails, we will switch to ship power') · voz pasiva ('The cargo was inspected by ICA') · presente perfecto ('The pilot has boarded'). En S8 se aterriza E4-final Speaking (C05 · RA3 primario 1:1 · A2.0 · Escala de Estimación No 4) en el berthing tripartito simultáneo: Manuel coordina con Carolina Vélez (Pilot) · Captain Lim Wei-Ming (Master) · Pipa Hinestroza (Refrigeration Technician que dispara incident-response language). Es el checkpoint avanzado pre-Misión. L1: S7 ≤5% · S8 ≤3%.",
+      "titulo": "The Bridge-to-Yard Bridge · Applying Operational Grammar Port-to-Ship",
+      "narrativa_macrotematica": "Bloque de gramática operacional bilateral. Manuel debe APLICAR las reglas que sostienen la comunicación puerto-buque y viceversa. Aquí viven los COMMANDS dirigidos a destinatarios específicos (helmsman steady · sailor make fast · crane operator hoist) · IMPERATIVE de safety (plug in the reefer · stand clear of the genset · do not break the cold chain) · PRESENT SIMPLE de rutinas operacionales (How does the reefer plug work? When do you start the pre-cooling?) · y MODAL VERBS funcionales (you should check the setpoint · crew must wear PPE · we could re-plug starboard · you can request a phytosanitary inspection). Pipa Hinestroza (refrigeration technician) entra como receptor del condicional tipo 1 emergente per C05 ('If the genset fails, we will switch to ship power'). CEFR A2.0. S7 consolida los 4 saberes gramaticales en flight check + simulacros · S8 ejecuta E4-final Speaking berthing tripartito simultáneo (Manuel + Pilot Carolina + Captain Lim Wei-Ming + Bosun Mejía + Pipa Hinestroza · modales + condicional + voz pasiva + presente perfecto · cara primaria RA3). Densidad criterios canon máxima del programa (5/8). L1 ≤5% S7 · ≤3% S8.",
       "sesiones_anchor": ["S7", "S8"],
       "horas_directas": 12,
       "regla_bloques_aplicada": "alineacion_1a1",
-      "cefr_subnivel": "A2.0 (consolidación gramática + E4-final)",
       "_anclaje_matriz": {
         "rap_target": "RA3",
-        "raps_secundarios": ["RA1", "RA2", "RA4"],
-        "raps_secundarios_rationale": "RA3 es el RAP de mayor densidad canon (5 criterios) · pero C02 (overlap RA1+RA3) ya fue asignado a B1 cara lexical retention · C04 (overlap RA2+RA3) ya fue asignado a B2 cara producción SMCP · C06 (overlap RA3+RA4) será asignado a B4 cara descripción funcional · C07 (4-way) ya en B2 · QUEDA C05 puro RA3 primario en B3 · PERO la consolidación gramatical S7 sirve transversalmente a todos los RAPs anteriores (retroactivo) y prepara RA4 (anticipatorio)",
+        "rap_titulo_matriz": "APLICAR LAS REGLAS GRAMATICALES BÁSICAS DEL IDIOMA INGLÉS QUE GARANTICEN LA COMUNICACIÓN SENCILLA DE PUERTO A BUQUE Y VICEVERSA, SEGÚN LAS NECESIDADES ORIGINADAS EN EL DESARROLLO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS",
+        "verbo_cognitivo": "APLICAR",
+        "bloom_level": "L3",
+        "raps_secundarios": ["RA1 (cara morfosintáctica overlap C02 en E2 S4 retrospectivo)", "RA2 (cara aplicación overlap C04 en E4-parcial S6 retrospectivo)", "RA4 (cara aplicación overlap C06 en E5 S9 prospectivo)"],
         "saberes_conceptos_cubiertos": [
+          "COMMANDS (TO: OFFICERS, SAILORS, HELMSMAN, CAPTAINS, ENGINEERS, STEWARD, CRANE OPERATORS)",
           "REVIEW OF PRESENT SIMPLE TENSE",
-          "TAG QUESTIONS",
-          "REVIEW OF PRESENT PROGRESSIVE AND PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE",
-          "QUANTIFIERS",
-          "MODAL VERBS: CAN, COULD, SHOULD, MUST FOR REQUEST, PROHIBITION, POSSIBILITY, PERMISSION (cara RA3 regla gramatical)",
-          "Condicional tipo 1 (estructura emergente · demandada por C05)",
-          "Voz pasiva (estructura emergente · demandada por C05)",
-          "Presente perfecto (estructura emergente · demandada por C05)"
+          "IMPERATIVE",
+          "MODAL VERBS: CAN, COULD, SHOULD, MUST FOR REQUEST, PROHIBITION, POSSIBILITY, PERMISSION"
+        ],
+        "saberes_conceptos_count": 4,
+        "saberes_conceptos_NO_incluidos_anti_drift": [
+          "REVIEW OF DEMONSTRATIVES + VERB TO BE (pertenece a B1 RA1 · NO RA3 · canon v1.3)",
+          "SINGULAR AND PLURAL NOUNS (pertenece a B1 RA1 · NO RA3 · canon v1.3)",
+          "TAG QUESTIONS (pertenece a B4 RA4 · NO RA3 · canon v1.3)",
+          "REVIEW OF PRESENT PROGRESSIVE + PREPOSITIONAL PHRASES (pertenece a B4 RA4 · NO RA3 · canon v1.3)",
+          "QUANTIFIERS (pertenece a B4 RA4 · NO RA3 · canon v1.3)"
         ],
         "saberes_proceso_cubiertos": [
           "IDENTIFICAR ESTRUCTURAS GRAMATICALES BÁSICAS EN INGLÉS, TALES COMO VERBOS RELACIONADOS CON LAS ACCIONES EMPRENDIDAS DENTRO DE LOS OFICIOS A BORDO DEL BUQUE Y EN PUERTO",
-          "EXPRESAR PROHIBICIÓN, PERMISIÓN, POSIBILIDAD O HACER PEDIDOS EN INGLÉS, EN CUANTO A PROCESOS ENMARCADOS EN EL DESEMPEÑO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS",
-          "EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO (cara RA3 imperative + verbos de acción)"
+          "EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO",
+          "EXPRESAR PROHIBICIÓN, PERMISIÓN, POSIBILIDAD O HACER PEDIDOS EN INGLÉS, EN CUANTO A PROCESOS ENMARCADOS EN EL DESEMPEÑO DE LAS OPERACIONES MARÍTIMAS Y PORTUARIAS"
         ],
-        "criterios_canon_assigned": ["C05"],
-        "criterios_canon_rationale": "C05 (RA3 primario · 1:1 verbo APLICAR · E4-final Speaking S8 A2.0 · Escala de Estimación No 4 · berthing tripartito simultáneo con 3 actores · modales + condicional tipo 1 + voz pasiva + presente perfecto) cae 1:1 en S8 dentro del bloque · ÚNICO criterio canon asignado al bloque B3 porque los otros 4 criterios overlap del RA3 ya fueron distribuidos pedagógicamente: C02→B1 (cara lexical) · C04→B2 (cara SMCP) · C06→B4 (cara descripción funcional) · C07→B2 (anchor sesional S6). Este es el patrón canónico de distribución overlap multi-RAP descrito en master prompt REGLA 10.",
+        "saberes_proceso_count": 3,
+        "criterios_canon_assigned": ["C02", "C04", "C05", "C06", "C07"],
+        "criterios_canon_rationale": "C02 OVERLAP RA1+RA3 cara morfosintáctica RA3 (E2 Writing S4 retrospectivo · imperativo + plurales + verbo to be aplicados · ejecución física en B1 pero asignación canon RA3 documentada matriz) · C04 OVERLAP RA2+RA3 cara aplicación gramatical RA3 (E4-parcial S6 retrospectivo · NATO Phonetic stress + estructura imperativa de respuesta · ejecución física en B2) · C05 PRIMARIO RA3 (E4-final Speaking S8 · berthing tripartito · MODAL VERBS + condicional tipo 1 + voz pasiva + presente perfecto · A2.0 · Escala de Estimación No 4) · C06 OVERLAP RA3+RA4 cara aplicación gramatical RA3 (E5 S9 prospectivo · 5 master functions con conectores discursivos · ejecución física en B4) · C07 4-WAY consolidación (E6 S6 retrospectivo · cara Grammar del Cuestionario Consolidado: present simple + imperative + plurals + prepositions + modals)",
+        "_nota_densidad": "RA3 concentra 5/8 criterios canon (62.5%) reflejando que es el RAP gramatical operacional · cara común de múltiples evidencias · documentado matriz v1.3 _anclaje_matriz_summary RA3",
+        "_nota_overlap_ejecucion_fisica": "Algunos criterios overlap (C02 ejecutado en S4 · C04 ejecutado en S6 · C06 ejecutado en S9) tienen 'ejecución física' en sesiones de OTROS bloques pero su 'cara RA3' está canónicamente assigned a este B3 · downstream PM-2.x debe entender ambas atribuciones",
         "pms_destino": ["PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.8", "PM-2.9", "PM-2.10"],
-        "evidencias_target": ["E4-final"],
-        "sesiones_anchor": ["S7", "S8"],
+        "evidencias_target": ["E2 (cara RA3)", "E4-parcial (cara RA3)", "E4-final", "E5 (cara RA3)", "E6 (cara RA3)"],
         "sesiones_canon_evidencias": {
-          "S7": "consolidación gramática (no evidencia formal · scaffolding pre-E4-final)",
-          "S8": "E4-final Speaking (C05 RA3 primario)"
+          "S7": "Consolidación gramatical operacional pre-E4-final (sin evidencia formal · prep capstone gramatical S8)",
+          "S8": "E4-final Speaking (C05 · Escala de Estimación No 4 · berthing tripartito · modales + conditional + pasiva + present perfecto)"
         },
-        "personajes_protagonicos": ["Manuel Padilla", "Carolina Vélez (Pilot · 1 de 3 actores tripartito)", "Captain Lim Wei-Ming (Master · 1 de 3 actores)", "Pipa Hinestroza (Refrigeration Tech · dispara condicional + voz pasiva en incident response)"],
-        "instrumentos_canon": ["Escala de Estimación No 4 (E4-final)"]
+        "cefr_subnivel": "A2.0",
+        "l1_max_banda": "S7 ≤5% · S8 ≤3%"
       }
     },
 
@@ -251,46 +222,51 @@
       "bloque_id": "B4",
       "tipo_bloque": "APROPIACION",
       "transversal": false,
-      "orden": 5,
-      "titulo": "Describing Roles & Operations · The 5 Master Functions of Banana Cold Chain",
-      "narrativa_macrotematica": "Cuarto bloque APROPIACIÓN · ancla el verbo cognitivo DESCRIBIR del RA4 · contextos funcionales operacionales (UNIT 3 PLACES + WEATHER + UNIT 4 IN PORT con CONTAINERIZATION + PACKING/SHIPPING + MANEUVERING + COMMANDS a destinatarios concretos + MODAL VERBS funcionales). En S9 se materializa E5 Language Functions (C06 · overlap RA3+RA4 · A2.0-A2.1 · Escala de Estimación No 5) en el Role Carousel de 5 estaciones · cada aprendiz rota describiendo las 5 master functions IMARPOR (describing roles · describing maneuvers · describing weather impact · describing cargo states · describing chain of command) usando conectores discursivos emergentes per C06 (and · but · or · because · so · although) como dispositivo de cohesión supraoracional. Carolina · Mariana y Hernando rotan como evaluadoras. En S10 se entra a la fase rehearsal pre-Misión declarada por la matriz ('S10-S11=rehearsal pre-Misión'): Manuel ensaya descripciones funcionales más complejas integrando estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to) que serán capstone en S12. Tag questions (RA3) entran como producción activa colaborativa en handover practice. L1: S9 0% (L2 norma) · S10 0%.",
+      "titulo": "The Cold Chain Storyteller · Describing Places, Operations & Roles",
+      "narrativa_macrotematica": "Bloque de descripción operacional. Manuel debe DESCRIBIR los lugares (UNIT 3 PLACES IN PORT AND POSITION · LOCATIONS · WEATHER CONDITIONS) y las operaciones (UNIT 4 IN PORT · CONTAINERIZATION · PACKING · SHIPPING · CARGO HANDLING · MANEUVERING: MOORING · DOCKING · DEPARTURE) usando estructuras descriptivas (TAG QUESTIONS · PRESENT PROGRESSIVE + PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE · QUANTIFIERS). Yurlenis Córdoba reaparece encarnando QUANTIFIERS en bay counts ('forty-seven clusters in bay 14 · several pallets · 27 tonnes per reefer'). Carolina Vélez modela PRESENT PROGRESSIVE en ubicación dinámica del buque ('the vessel is approaching at 2 nautical miles · we are connecting the reefer plugs in bay 14'). Mariana Suárez modela TAG QUESTIONS de confirmación con Captain Lim Wei-Ming ('the setpoints are 13.3 degrees, aren't they? · you're the cold chain coordinator, aren't you?'). CEFR A2.0-A2.1. S9 ejecuta E5 Language Functions Role Carousel 5 estaciones (5 master functions IMARPOR + conectores discursivos · cara descriptiva RA4). S10 es rehearsal pre-Misión consolidando UNIT 3 + UNIT 4 + estructuras descriptivas en preparación para BT. La C08 capstone NO vive aquí (vive en BT TRANSFERENCIA · canon).",
       "sesiones_anchor": ["S9", "S10"],
       "horas_directas": 12,
       "regla_bloques_aplicada": "alineacion_1a1",
-      "cefr_subnivel": "A2.0 → A2.1 (entrada cara A2.0 E5 · cierre A2.1 rehearsal pre-Misión)",
       "_anclaje_matriz": {
         "rap_target": "RA4",
-        "raps_secundarios": ["RA3"],
-        "raps_secundarios_rationale": "C06 overlap RA3+RA4 · cara RA4 (las 5 master functions IMARPOR son descripción de funciones operacionales según matriz · 'Role Carousel materializa el verbo DESCRIBIR en 5 estaciones') · cara RA3 (conectores discursivos como dispositivo gramatical de cohesión) · S10 rehearsal integra TAG QUESTIONS (RA3) como producción activa colaborativa anticipando E-Misión",
+        "rap_titulo_matriz": "DESCRIBIR EN INGLÉS LAS FUNCIONES HABITUALES Y/O MOMENTÁNEAS PROPIAS, DEL PERSONAL Y DE LOS ELEMENTOS QUE SE ENCUENTRAN EN EL CONTEXTO MARÍTIMO Y PORTUARIO, EN EL DESEMPEÑO DE SUS LABORES",
+        "verbo_cognitivo": "DESCRIBIR",
+        "bloom_level": "L2-L3",
+        "raps_secundarios": ["RA3 (cara aplicación gramatical overlap C06 en E5 S9)"],
         "saberes_conceptos_cubiertos": [
-          "COMMANDS (TO: OFFICERS, SAILORS, HELMSMAN, CAPTAINS, ENGINEERS, STEWARD, CRANE OPERATORS)",
           "UNIT 3: PLACES IN PORT AND POSITION",
           "PLACES IN PORT · LOCATIONS",
           "WEATHER CONDITIONS",
+          "TAG QUESTIONS",
+          "REVIEW OF PRESENT PROGRESSIVE AND PREPOSITIONAL PHRASES OF GEOGRAPHIC LOCATION AND DISTANCE",
           "UNIT 4: IN PORT",
           "CONTAINERIZATION",
           "PACKING, SHIPPING AND CARGO HANDLING",
           "MANEUVERING (MOORING, DOCKING, DEPARTURE)",
-          "MODAL VERBS (cara RA4 uso funcional REQUEST/PROHIBITION/POSSIBILITY/PERMISSION)",
-          "Conectores discursivos and/but/or/because/so/although (estructura emergente · demandada por C06)",
-          "Estructuras ocupacionales responsible for/specialize in/coordinate/supervise/report to (estructura emergente · rehearsal pre-C08)"
+          "QUANTIFIERS"
+        ],
+        "saberes_conceptos_count": 10,
+        "saberes_conceptos_NO_incluidos_anti_drift": [
+          "COMMANDS (pertenece a B3 RA3 · NO RA4 · canon v1.3 · diverge de master prompt PM-0 ejemplo histórico)",
+          "MODAL VERBS (pertenece a B3 RA3 · NO RA4 · canon v1.3)",
+          "IMPERATIVE (pertenece a B3 RA3 · NO RA4 · canon v1.3)"
         ],
         "saberes_proceso_cubiertos": [
-          "EXPRESAR E INTERPRETAR ÓRDENES QUE SE DAN EN EL CUMPLIMIENTO DE LAS DISTINTAS FUNCIONES REQUERIDAS EN EL EJERCICIO DE LOS ROLES A BORDO DEL BUQUE Y EN PUERTO (cara RA4 acto descriptivo del rol)",
           "HABLAR SOBRE UBICACIONES EN INGLÉS QUE PERMITAN AL INTERLOCUTOR CONOCER EL ESPACIO FÍSICO EN EL QUE SE DESEMPEÑAN LAS FUNCIONES A BORDO DEL BUQUE",
           "DESCRIBIR ELEMENTOS Y PROCESOS EN INGLÉS, DERIVADOS DE LOS DISTINTOS ROLES QUE SE EJERCEN EN EL CUMPLIMIENTO DE LAS OBLIGACIONES A BORDO DEL BUQUE Y EN PUERTO"
         ],
-        "criterios_canon_assigned": ["C06"],
-        "criterios_canon_rationale": "C06 (overlap RA3+RA4 · E5 Language Functions S9 A2.0-A2.1 · Escala de Estimación No 5 · Role Carousel 5 estaciones · 5 master functions IMARPOR + conectores) asignado a B4 cara RA4 · S9 cae dentro de las sesiones del bloque · descripción funcional es el alma del verbo DESCRIBIR. C08 NO se asigna aquí pese a ser RA4 primario porque es capstone capstone E-Misión S12 que pertenece estructuralmente al bloque TRANSFERENCIA (BT) según REGLA 12 master prompt.",
+        "saberes_proceso_count": 2,
+        "criterios_canon_assigned": ["C06", "C07"],
+        "_nota_C08_no_aqui": "C08 (E-Misión S12 capstone) NO se asigna a B4 sino a BT TRANSFERENCIA · canon REGLA 12 v2.8 · matriz v1.3 confirma C08 anclado a S12 que pertenece canónicamente a TRANSFERENCIA per REGLA 12 v2.8",
+        "criterios_canon_rationale": "C06 OVERLAP RA3+RA4 cara funcional descriptiva RA4 (E5 Language Functions S9 · Role Carousel 5 master functions IMARPOR + conectores discursivos · A2.0-A2.1 · Escala de Estimación No 5 · ejecución física AQUÍ en B4) · C07 4-WAY consolidación (E6 S6 retrospectivo · cara Vocabulary descriptivo del Cuestionario Consolidado: places + locations + weather + cargo)",
         "pms_destino": ["PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.8", "PM-2.9", "PM-2.10"],
-        "evidencias_target": ["E5"],
-        "sesiones_anchor": ["S9", "S10"],
+        "evidencias_target": ["E5", "E6 (cara RA4)"],
         "sesiones_canon_evidencias": {
-          "S9": "E5 Language Functions (C06 RA3+RA4)",
-          "S10": "rehearsal pre-Misión (no evidencia formal · scaffolding ABP capstone)"
+          "S9": "E5 Language Functions (C06 · Escala de Estimación No 5 · Role Carousel 5 estaciones · 5 master functions IMARPOR + conectores)",
+          "S10": "Rehearsal pre-Misión (sin evidencia formal · prep E-Misión S12 · consolidación UNIT 3 + UNIT 4 + estructuras descriptivas)"
         },
-        "personajes_protagonicos": ["Manuel Padilla", "Mariana Suárez (Cold Chain Coordinator + ICA Liaison · mentora del verbo DESCRIBIR · evaluadora Role Carousel)", "Carolina Vélez (evaluadora rotando estaciones)", "Hernando Ospina (evaluadora desde lente safety auditor)"],
-        "instrumentos_canon": ["Escala de Estimación No 5 (E5)"]
+        "cefr_subnivel": "A2.0-A2.1",
+        "l1_max_banda": "S9 0% (L2 norma) · S10 0% (rehearsal pre-Misión)"
       }
     },
 
@@ -299,174 +275,185 @@
       "tipo_bloque": "TRANSFERENCIA",
       "transversal": true,
       "capstone": true,
-      "orden": 6,
       "titulo": "Final Mission · Pre-Departure Banana Reefer Compliance Check & Tripartite Handover · The CARIBBEAN STAR Departure",
-      "narrativa_macrotematica": "Bloque de transferencia transversal capstone · cierra el programa integrando los 4 RAPs en una Misión Final ABP auténtica. El escenario hero del universo (declarado en pm-0-context.json): 90 minutos divididos en (1) reefer yard walk + plug-in inspection 30 min · (2) VHF + bridge call 20 min · (3) tripartite handover meeting + Q&A 40 min · panel evaluador externo de 3 personas (Captain Lim Wei-Ming + Mariana Suárez ICA Liaison + Hernando Ospina Safety) · 100% L2 obligatorio per matriz. S11 es la sesión final de rehearsal/preparación logística de la Misión (canon matriz: 'S10-S11=rehearsal pre-Misión'). S12 ejecuta E-Misión (C08 · RA4 primario · A2.1 · Rúbrica ABP 6 criterios C01-C13 · capstone ABP) integrando: vocablos físicos del reefer ship (RA1) · SMCP en VHF exchange con bridge antes de departure clearance (RA2) · gramática puerto-buque al verificar/reportar reefer plugs + temperature logs + phytosanitary certificates (RA3) · estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to) + tag questions de confirmación al presentar Pre-Shipment Cold Chain Audit y conducir handover tripartito (RA4 capstone). 5 sub-fases ABP estructuran el bloque (Planeación · Diseño · Desempeño · Presentación · Evaluación reflexiva). NO es ceremonial · es la evaluación canónica del verbo DESCRIBIR del RA4 + integración auténtica de los 4 RAPs.",
+      "narrativa_macrotematica": "Capstone ABP integrador. Manuel y la cuadrilla ejecutan la Misión Final del programa: Pre-Shipment Cold Chain Audit + Tripartite Handover ante panel evaluador externo de 3 personas (Captain Lim Wei-Ming + Mariana Suárez ICA Liaison + Hernando Ospina Safety Manager). 90 minutos divididos en 3 fases ABP: (1) reefer yard walk + plug-in inspection 30 min · (2) VHF + bridge call 20 min · (3) tripartite handover meeting + Q&A 40 min. 100% L2 obligatorio. Los 4 RAPs se integran simultáneamente: RA1 vocablos al recorrer reefer yard · RA2 SMCP en VHF exchange · RA3 gramática puerto-buque al verificar setpoints en pasiva y modales · RA4 estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to) + tag questions de confirmación al presentar el audit. S11 es rehearsal final + briefing instrumento (Rúbrica ABP 6 criterios C01-C13). S12 ejecuta E-Misión completa. CEFR A2.1 terminal. Cero L1.",
       "sesiones_anchor": ["S11", "S12"],
       "horas_directas": 12,
-      "cefr_subnivel": "A2.1 (nivel terminal)",
       "_anclaje_matriz": {
         "alcance": "todos_los_raps_integrados",
         "raps_movilizados": ["RA1", "RA2", "RA3", "RA4"],
-        "rap_primario_capstone": "RA4 DESCRIBIR (verbo cognitivo capstone ancla C08)",
+        "raps_movilizados_breakdown": {
+          "RA1": "Vocablos portuarios al recorrer reefer yard con visitor checklist (UNIT 1 + UNIT 2 lexical en uso integrado)",
+          "RA2": "SMCP en VHF exchange con bridge antes de departure clearance (UNIT 5 SMCP + NATO Phonetic + message markers + standard responses)",
+          "RA3": "Gramática puerto-buque al verificar/reportar reefer plugs + temperature logs + phytosanitary certificates (modales · pasiva · presente perfecto · imperativo)",
+          "RA4": "Estructuras ocupacionales A2.1 al presentar Pre-Shipment Cold Chain Audit y conducir handover tripartito (responsible for · specialize in · coordinate · supervise · report to · tag questions)"
+        },
         "pms_destino": ["PM-3.5"],
         "criterios_canon": ["C08"],
+        "criterios_canon_rationale": "C08 PRIMARIO capstone (E-Misión S12 · Rúbrica ABP 6 criterios C01-C13 · A2.1 · panel evaluador 3 personas · descripción funciones profesionales con estructuras ocupacionales + tag questions)",
         "evidencias_target": ["E-Misión"],
         "sesiones_anchor": ["S11", "S12"],
+        "sesiones_canon_evidencias": {
+          "S11": "Rehearsal final + briefing Rúbrica ABP (sin evidencia formal · prep capstone)",
+          "S12": "E-Misión Final ABP (C08 · Rúbrica ABP 6 criterios C01-C13 · 90 min L2 100% · panel 3 evaluadores)"
+        },
         "subfases_abp": 5,
-        "instrumentos_canon": ["Rúbrica ABP 6 criterios C01-C13"],
-        "panel_evaluador": ["Captain Lim Wei-Ming (Vessel Master · cliente externo permanente)", "Mariana Suárez (Cold Chain Coordinator + ICA Phytosanitary Liaison · mentora final)", "Hernando Ospina (Terminal Safety Manager · auditor interno safety)"],
-        "modalidad_idioma": "100% L2 obligatorio (canon matriz · L1 0% per L1 policy PM-0 banda S10-S12)",
-        "rationale_transversalidad_capstone": "TRANSFERENCIA es transversal a todos los RAPs porque el ABP integra auténticamente · capstone porque C08 es nivel terminal A2.1 · sesiones canon S11 (rehearsal final · preparación logística + dry run) y S12 (Misión Final ejecución · 90 min L2 100%) respetan tiempos canon REGLA 8 (≤2 sesiones · ≤12h)"
-      },
-      "diseño_pedagogico_transferencia": {
-        "subfases_abp": [
-          {
-            "fase": 1,
-            "nombre": "Planeación",
-            "descripcion": "S11 mañana · 3h · Manuel y equipos forman las tripletas de role-play (Cold Chain Technician + ICA Liaison + Safety Officer) · revisan el escenario Pre-Departure Banana Reefer Compliance Check · planean roles + responsabilidades + secuencia de los 90 min · arman checklist de artefactos requeridos (Pre-Shipment Cold Chain Audit Checklist · Reefer Temperature Log · ICA Phytosanitary Certificate · Banana Export Manifest). 100% L2.",
-            "sesion_anchor": "S11"
-          },
-          {
-            "fase": 2,
-            "nombre": "Diseño",
-            "descripcion": "S11 tarde · 3h · cada tripleta diseña su Pre-Shipment Cold Chain Audit narrativo · escribe script básico de las 3 fases (yard walk · VHF/bridge · handover meeting) integrando estructuras ocupacionales A2.1 (responsible for · specialize in · coordinate · supervise · report to) + tag questions de confirmación + SMCP en la fase VHF + voz pasiva en la fase certification. Mariana revisa drafts.",
-            "sesion_anchor": "S11"
-          },
-          {
-            "fase": 3,
-            "nombre": "Desempeño",
-            "descripcion": "S12 mañana · 4h · ejecución de la Misión Final · cada tripleta cumple sus 90 min: 30 min reefer yard walk + plug-in inspection (RA1 + RA3 imperatives + RA4 commands) → 20 min VHF + bridge call (RA2 SMCP + NATO Phonetic) → 40 min tripartite handover meeting + Q&A (RA4 estructuras ocupacionales + RA3 tag questions + integración 4 RAPs). Panel evaluador rota observando.",
-            "sesion_anchor": "S12"
-          },
-          {
-            "fase": 4,
-            "nombre": "Presentación",
-            "descripcion": "S12 mediodía · 1.5h · pitch final ante panel completo (Captain Lim Wei-Ming + Mariana Suárez + Hernando Ospina) · cada tripleta presenta consolidado de su Pre-Shipment Cold Chain Audit · panel hace Q&A con tag questions de confirmación y preguntas operacionales abiertas · accuracy diferida (fluency-friendly per P4 fluency zone PM-0).",
-            "sesion_anchor": "S12"
-          },
-          {
-            "fase": 5,
-            "nombre": "Evaluación reflexiva",
-            "descripcion": "S12 tarde · 1.5h · debrief circle final · panel da feedback diferenciado per P4 (accuracy zone SMCP cero-tolerancia · fluency zone descripción funcional friendly) · aprendices auto-evalúan reflexivamente con la Rúbrica ABP 6 criterios C01-C13 · cierre afectivo del programa con Mariana firmando un certificado simbólico fitosanitario en inglés (cierre del arco narrativo de Manuel · 'ya tienes las palabras inglesas para defender el banano que ya sabías proteger').",
-            "sesion_anchor": "S12"
-          }
+        "subfases_abp_breakdown": [
+          "Sub-fase 1 · Briefing & escenario contextual (S11 · Mariana presenta el contexto operacional CARIBBEAN STAR)",
+          "Sub-fase 2 · Investigation & preparation (S11 · cuadrillas preparan checklist · revisión Rúbrica ABP)",
+          "Sub-fase 3 · Rehearsal con feedback formativo (S11 · ensayo + correcciones + último drill)",
+          "Sub-fase 4 · Performance ante panel (S12 · 90 min · 3 fases internas · 100% L2)",
+          "Sub-fase 5 · Debrief + cierre celebratorio (S12 · debrief panel + reconocimiento certificación + cierre programa)"
         ],
-        "tono_pedagogico": "Capstone auténtico · 100% L2 · cold-chain-first · ancla afectiva final con cierre del arco de Manuel Padilla A1.2 → A2.1",
-        "ancla_canon_explícito": "Escenario hero declarado en pm-0-context.json universe_grounding.escenario_hero_del_universo · evidencia E-Misión declarada en evidencias_formales_traceability.E_Mision_S12 · criterio C08 declarado en pm-0-0-matriz-alineada.json RA4 criterios_evaluacion_especificos_canon_sistema"
+        "cefr_subnivel": "A2.1 (terminal del programa)",
+        "l1_max_banda": "S11-S12 0% L2 exclusivo (canon C08 obligatorio)"
       }
     }
   ],
-
-  "criterios_canon_distribution_summary": {
-    "regla_general": "C01-C07 distribuidos en bloques APROPIACIÓN según matriz alineada · C08 capstone exclusivo en TRANSFERENCIA",
-    "asignacion_bloque_x_criterio": {
-      "B0_APERTURA": [],
-      "B1_RA1": ["C01 (1:1 RA1 RECONOCER · S3)", "C02 (overlap RA1+RA3 · S4 · cara RA1 lexical retention)"],
-      "B2_RA2": ["C03 (1:1 RA2 COMPRENDER · S5)", "C04 (overlap RA2+RA3 · S6 · cara RA2 producción SMCP)", "C07 (4-way overlap · S6 · anchor sesional checkpoint medio)"],
-      "B3_RA3": ["C05 (1:1 RA3 APLICAR · S8)"],
-      "B4_RA4": ["C06 (overlap RA3+RA4 · S9 · cara RA4 descripción funcional)"],
-      "BT_TRANSFERENCIA": ["C08 (1:1 RA4 DESCRIBIR · S12 · capstone)"]
-    },
-    "decisiones_overlap_multi_rap": {
-      "C02_RA1_RA3": "Asignado a B1 cara RA1 lexical retention (Inspection Report S4 = primera salida productiva escrita · matriz declara 'primera evaluación gramatical del programa') · cara RA3 morfosintáctica también se trabaja en B1 porque la sesión es S4 dentro del bloque",
-      "C04_RA2_RA3": "Asignado a B2 cara RA2 producción reactiva SMCP (S6 dentro del bloque RA2) · cara RA3 fonológico-sintáctica también vive en B2 porque S6 es densa de COMPRENDER+responder",
-      "C06_RA3_RA4": "Asignado a B4 cara RA4 descripción funcional (S9 dentro del bloque RA4 · 5 master functions IMARPOR son descripciones operacionales según matriz · Role Carousel materializa el verbo DESCRIBIR)",
-      "C07_4_way": "Asignado a B2 por anchor sesional S6 (matriz dicta que S6 alberga E4-parcial + E6) · pese a ser 4-way overlap RA1+RA2+RA3+RA4 · su sesión canónica es S6 que cae estructuralmente en bloque RA2"
-    },
-    "cobertura_total": "8/8 criterios C01-C08 distribuidos · 0 huérfanos · 4 primarios 1:1 (C01→B1 · C03→B2 · C05→B3 · C08→BT) · 4 con overlap multi-RAP resuelto (C02→B1 · C04→B2 · C06→B4 · C07→B2)"
-  },
 
   "validation_checks": [
     {
       "id": 1,
       "name": "estructura_tripartita_completa",
       "status": "PASS",
-      "evidence": "6 bloques generados · 1 APERTURA (B0) + 4 APROPIACIÓN (B1 RA1 · B2 RA2 · B3 RA3 · B4 RA4) + 1 TRANSFERENCIA (BT) = 1 + N + 1 con N=4 ✓ · ecuación canon REGLA 7 v2.8 cumplida"
+      "evidence": "6 bloques = 1 APERTURA (B0) + 4 APROPIACIÓN (B1 RA1 · B2 RA2 · B3 RA3 · B4 RA4) + 1 TRANSFERENCIA (BT) · cumple fórmula REGLA 7 v2.8 (1 + N + 1 con N=4 RAPs) · cada bloque con tipo_bloque declarado"
     },
     {
       "id": 2,
       "name": "apropiacion_cobertura_raps_1a1",
       "status": "PASS",
-      "evidence": "4 bloques APROPIACIÓN = 4 RAPs de matriz (RA1→B1 · RA2→B2 · RA3→B3 · RA4→B4) · regla_bloques_aplicada=alineacion_1a1 en cada uno · 0 RAPs huérfanos · 0 RAPs duplicados"
+      "evidence": "4 bloques APROPIACIÓN = 4 RAPs matriz v1.3 · 1:1 alineacion_1a1 · B1→RA1 · B2→RA2 · B3→RA3 · B4→RA4 · sin RAPs huérfanos · sin bloques sin RAP target"
     },
     {
       "id": 3,
       "name": "transversalidad_correcta",
       "status": "PASS",
-      "evidence": "B0 APERTURA transversal:true (raps_atravesados=[RA1,RA2,RA3,RA4]) · B1-B4 APROPIACIÓN transversal:false (rap_target único + raps_secundarios documentados) · BT TRANSFERENCIA transversal:true + capstone:true (raps_movilizados=[RA1,RA2,RA3,RA4])"
+      "evidence": "B0 APERTURA transversal:true · BT TRANSFERENCIA transversal:true + capstone:true · B1-B4 APROPIACIÓN transversal:false · alineado REGLA 9 v2.8 schema diferenciado"
     },
     {
       "id": 4,
       "name": "cobertura_criterios_canon_completa",
       "status": "PASS",
-      "evidence": "8/8 criterios C01-C08 asignados · C01→B1 · C02→B1 · C03→B2 · C04→B2 · C07→B2 · C05→B3 · C06→B4 · C08→BT · 0 huérfanos · distribución overlap multi-RAP documentada en criterios_canon_distribution_summary · respeta REGLA 12 (sesiones canon de evidencias preservadas)"
+      "evidence": "8/8 criterios C01-C08 distribuidos: C01 B1 · C02 B1+B3 (overlap RA1+RA3) · C03 B2 · C04 B2+B3 (overlap RA2+RA3) · C05 B3 · C06 B3+B4 (overlap RA3+RA4) · C07 B1+B2+B3+B4 (4-way) · C08 BT capstone · 14 assignments en bloques APROPIACIÓN + 1 en TRANSFERENCIA = 15 menciones · 4 overlaps multi-RAP documentados · coincide matriz v1.3 _distribucion_canonica_aplicada.criterios_canon_breakdown salvo C08 movido de RA4 a BT per REGLA 12 v2.8 (capstone canon)"
     },
     {
       "id": 5,
       "name": "pms_destino_correctos_por_tipo",
       "status": "PASS",
-      "evidence": "B0 APERTURA pms_destino=[PM-2.1, PM-2.2] (Spark + Gap Analysis · 4 arquetipos) · B1-B4 APROPIACIÓN pms_destino=[PM-2.3, PM-2.4, PM-2.5, PM-2.6, PM-2.8, PM-2.9, PM-2.10] · BT TRANSFERENCIA pms_destino=[PM-3.5] · cumple master prompt REGLA 9 schema diferenciado"
+      "evidence": "B0 APERTURA → [PM-2.1, PM-2.2] (transversal pre-evaluación) · B1-B4 APROPIACIÓN → [PM-2.3 ... PM-2.10] (curación POR RAP) · BT TRANSFERENCIA → [PM-3.5] (capstone Final Mission) · alineado REGLA 13 v2.8"
     },
     {
       "id": 6,
       "name": "apertura_horas_canon",
       "status": "PASS",
-      "evidence": "B0 APERTURA: sesiones_anchor=[S1] (1 sesión exacto) · horas_directas=6 (exacto) · cumple REGLA 8 v2.8 'APERTURA = exactamente 1 sesión + exactamente 6h'"
+      "evidence": "B0 APERTURA: sesiones_anchor=[S1] (1 sesión exacto) · horas_directas=6 (6h exacto) · cumple REGLA 8 v2.8 'OBLIGATORIO ='"
     },
     {
       "id": 7,
       "name": "transferencia_horas_canon",
       "status": "PASS",
-      "evidence": "BT TRANSFERENCIA: sesiones_anchor=[S11, S12] (2 sesiones · ≤2 ✓) · horas_directas=12 (≤12 ✓) · cumple REGLA 8 v2.8 'TRANSFERENCIA ≤ 2 sesiones AND ≤ 12h'"
+      "evidence": "BT TRANSFERENCIA: sesiones_anchor=[S11, S12] (2 sesiones ≤2 ✓) · horas_directas=12 (12h ≤12 ✓) · cumple REGLA 8 v2.8 'OBLIGATORIO ≤'"
     },
     {
       "id": 8,
       "name": "apropiacion_horas_balanced",
       "status": "PASS",
-      "evidence": "Suma APROPIACIÓN = B1(18h S2-S4) + B2(12h S5-S6) + B3(12h S7-S8) + B4(12h S9-S10) = 54h · 9 sesiones · cumple ecuación canon: 72h directas - 6h APERTURA - 12h TRANSFERENCIA = 54h ✓ · distribución LLM analítica (RA1=3 sesiones por densidad lexical fundacional E1+E2 · RA2/RA3/RA4=2 sesiones c/u por densidad criteria-per-RAP)"
+      "evidence": "sum(APROPIACIÓN.horas_directas) = B1(18) + B2(12) + B3(12) + B4(12) = 54h · sum(APROPIACIÓN.sesiones) = 3+2+2+2 = 9 sesiones · ecuación canon: 72 total - 6 APERTURA - 12 TRANSFERENCIA = 54 APROPIACIÓN ✓ · 12 sesiones - 1 - 2 = 9 ✓"
     },
     {
       "id": 9,
       "name": "traceability_matriz_completa",
       "status": "PASS",
-      "evidence": "6/6 bloques con _anclaje_matriz non-empty · B0 (alcance=competencia_completa · raps_atravesados+pms_destino+arquetipos_target) · B1-B4 (rap_target+raps_secundarios+saberes_conceptos_cubiertos+saberes_proceso_cubiertos+criterios_canon_assigned+pms_destino+evidencias_target+sesiones_anchor+sesiones_canon_evidencias+cefr_subnivel) · BT (alcance=todos_los_raps_integrados+raps_movilizados+pms_destino+criterios_canon+evidencias_target+sesiones_anchor+subfases_abp) · 0 bloques sin anclaje · hereda PM-0 v3.2 REGLA 12"
+      "evidence": "6/6 bloques con _anclaje_matriz non-empty · B0 con alcance=competencia_completa + 4 raps_atravesados + arquetipos_target=4 · B1-B4 con rap_target + saberes_conceptos_cubiertos (literal copy de matriz v1.3 sin drift) + saberes_proceso + criterios_canon_assigned + pms_destino + evidencias_target + sesiones_canon_evidencias + cefr_subnivel · BT con alcance=todos_los_raps_integrados + criterios_canon=[C08] + evidencias_target=[E-Misión] + subfases_abp=5 · 0 elementos sin anclaje · 0 saberes inventados fuera matriz canon SOFÍA"
+    }
+  ],
+
+  "_anti_drift_audit_v2": {
+    "instancias_drift_detectadas_vs_v1": 0,
+    "checks_correccion_aplicados": [
+      {"check": "B1 RA1 saberes_conceptos = 8 (UNIT 1 + UNIT 2 + DEMOSTRATIVOS+VERB TO BE + SINGULAR/PLURAL)", "status": "PASS", "evidence": "Literal copy desde matriz v1.3 raps[RA1].saberes_conceptos_y_principios · 8/8 saberes presentes · NO mezclados con RA3"},
+      {"check": "B2 RA2 saberes_conceptos = 4 (UNIT 5 SMCP + STANDARD SPELLING + MESSAGE MARKERS + STANDARD RESPONSES)", "status": "PASS", "evidence": "Literal copy desde matriz v1.3 raps[RA2].saberes_conceptos_y_principios · 4/4 saberes presentes"},
+      {"check": "B3 RA3 saberes_conceptos = 4 (COMMANDS + PRESENT SIMPLE + IMPERATIVE + MODAL VERBS)", "status": "PASS", "evidence": "Literal copy desde matriz v1.3 raps[RA3].saberes_conceptos_y_principios · 4/4 saberes presentes · NO incluye DEMOSTRATIVOS+VERB TO BE+SINGULAR/PLURAL (eso es B1) · NO incluye TAG QUESTIONS+PRESENT PROGRESSIVE+QUANTIFIERS (eso es B4) · documentado explícitamente en saberes_conceptos_NO_incluidos_anti_drift"},
+      {"check": "B4 RA4 saberes_conceptos = 10 (UNIT 3 + LOCATIONS + WEATHER + TAG + PROGRESSIVE + UNIT 4 + CONTAINERIZATION + PACKING + MANEUVERING + QUANTIFIERS)", "status": "PASS", "evidence": "Literal copy desde matriz v1.3 raps[RA4].saberes_conceptos_y_principios · 10/10 saberes presentes · NO incluye COMMANDS+IMPERATIVE+MODAL VERBS (eso es B3) · documentado explícitamente en saberes_conceptos_NO_incluidos_anti_drift"},
+      {"check": "Total saberes_conceptos distribuidos = 8+4+4+10 = 26 = total matriz v1.3 input", "status": "PASS", "evidence": "26/26 cobertura · 0 huérfanos · 0 duplicados (cada saber en 1 solo bloque APROPIACIÓN)"},
+      {"check": "Total saberes_proceso distribuidos = 2+3+3+2 = 10 = total matriz v1.3 input", "status": "PASS", "evidence": "10/10 cobertura · 0 huérfanos · 0 duplicados"},
+      {"check": "Criterios canon assigned = RA1[C01,C02,C07] + RA2[C03,C04,C07] + RA3[C02,C04,C05,C06,C07] + RA4[C06,C07] + BT[C08]", "status": "PASS", "evidence": "Coincide matriz v1.3 con la salvedad canon REGLA 12 v2.8: C08 movido de B4 a BT (capstone) · documentado en B4._anclaje_matriz._nota_C08_no_aqui"},
+      {"check": "C08 capstone confinado a BT TRANSFERENCIA", "status": "PASS", "evidence": "C08 NO aparece en criterios_canon_assigned de B1/B2/B3/B4 · solo en BT.criterios_canon · matriz v1.3 lo asigna a RA4 con sesion=S12 que pertenece canónicamente a TRANSFERENCIA per REGLA 12 v2.8"},
+      {"check": "Sesiones canon evidencias preservadas", "status": "PASS", "evidence": "S3=E1 (B1 RA1) · S4=E2 (B1 RA1 cara léxica) · S5=E3 (B2 RA2) · S6=E4-parcial+E6 (B2 RA2 cara SMCP + B1/B2/B3/B4 4-way C07) · S8=E4-final (B3 RA3) · S9=E5 (B4 RA4 cara descriptiva) · S12=E-Misión (BT) · 8/8 evidencias en sesiones canon matriz"}
+    ],
+    "afirmacion_explicita": "0 drift versus matriz v1.3 Opción A refinada · cada saber en su hogar canónico exclusivo · cada criterio canon asignado per matriz · C08 capstone en BT (canon REGLA 12 v2.8 · single divergencia documentada vs lectura literal matriz)"
+  },
+
+  "_decisiones_analiticas_significativas": [
+    {
+      "decision": "Distribución sesiones APROPIACIÓN 3-2-2-2 (B1=3 · B2=2 · B3=2 · B4=2)",
+      "rationale": "Mantenida vs v1 porque (1) RA1 lidera entry-point con peso léxico fundacional (8 saberes_conceptos · 30.8% volumen total) Y 2 evidencias formales en sus 3 sesiones (E1 S3 + E2 S4) · (2) RA2-RA3-RA4 cada uno con 2 sesiones balanceadas porque su volumen pedagógico se concentra en evidencias canon específicas (E3+E4parc+E6 / E4final / E5) · (3) BT TRANSFERENCIA absorbe S11-S12 capstone preservando canon REGLA 8.",
+      "alternativas_descartadas": "2-2-3-2 (más a RA3) descartado porque B3 ya tiene densidad criterios canon máxima (5/8) con solo 2 sesiones · agregar 3ra sesión sería over-allocation · 3-3-2-1 descartado porque B4 con 1 sesión + rehearsal en BT no permite consolidar 10 saberes_conceptos descriptivos antes del capstone."
+    },
+    {
+      "decision": "B1 RA1 incluye S2 (vocab introduction sin evidencia formal) + S3 (E1) + S4 (E2)",
+      "rationale": "S2 es necesaria pre-E1 para introducir UNIT 1 SHIP OVERVIEW + PARTS + TYPES + EQUIPMENT como exposure léxica antes de la primera evaluación canon S3. S4 cierra el bloque con E2 Writing Inspection Report ejecutando cara léxica RA1 + cara morfosintáctica RA3 (overlap C02 documentado matriz)."
+    },
+    {
+      "decision": "C02 cara morfosintáctica RA3 asignada como overlap en B3 (no ejecución física)",
+      "rationale": "Matriz v1.3 asigna C02 a ambos RA1 y RA3 (overlap multi-RAP documentado). Ejecución física E2 Writing está en S4 que pertenece a B1 (cara léxica primaria). Sin embargo la cara morfosintáctica (imperativo + plurales + verbo to be aplicados) es RA3 canon · por eso se documenta en B3.criterios_canon_assigned con _nota_overlap_ejecucion_fisica explicando la atribución doble. Downstream PM-2.x debe entender que S4 ejecuta E2 pero los saberes_proceso evaluados son atribuibles a B1 (lexical) Y B3 (morfosintáctico)."
+    },
+    {
+      "decision": "C04 cara aplicación RA3 análogamente en B3 (ejecución física en S6 B2)",
+      "rationale": "Idéntico patrón a C02. E4-parcial Speaking ejecuta físicamente en S6 (B2 RA2 cara SMCP) pero la cara NATO Phonetic stress + estructura imperativa de respuesta es aplicación gramatical RA3 · documentada en B3.criterios_canon_assigned."
+    },
+    {
+      "decision": "C06 cara aplicación RA3 análogamente en B3 (ejecución física en S9 B4)",
+      "rationale": "Idéntico patrón. E5 Language Functions ejecuta físicamente en S9 (B4 RA4 cara descriptiva) pero los conectores discursivos (and/but/or/because/so/although) son cara aplicación gramatical RA3 · documentada en B3."
+    },
+    {
+      "decision": "C07 4-way Cuestionario Consolidado distribuido en los 4 bloques APROPIACIÓN",
+      "rationale": "C07 es overlap 4-way RA1+RA2+RA3+RA4 documentado matriz v1.3. Se asigna en criterios_canon_assigned de B1, B2, B3, B4 con la sub-cara correspondiente: B1=Vocabulary+Reading · B2=Listening+SMCP · B3=Grammar · B4=Vocabulary descriptivo. Ejecución física única en S6 (B2)."
+    },
+    {
+      "decision": "C08 capstone movido de B4 a BT TRANSFERENCIA",
+      "rationale": "Matriz v1.3 asigna C08 a RA4 con sesion=S12. Pero REGLA 12 v2.8 establece que C08 capstone vive en bloque TRANSFERENCIA (S12 pertenece canónicamente a BT). Documentado explícitamente en B4._anclaje_matriz._nota_C08_no_aqui y en BT.criterios_canon=[C08]. RA4 capstone descriptivo se ejecuta en BT NO en B4 · B4 prepara con E5 + rehearsal S10."
     }
   ],
 
   "downstream_consumers": [
-    "PM-1.2 v4.2+ (scope diferenciado por tipo_bloque · APROPIACIÓN requiere curación POR RAP · APERTURA/TRANSFERENCIA NO)",
-    "PM-2.0 architect (session blueprint hereda tipo_bloque + tiempos canon + sesiones_anchor por bloque)",
-    "PM-2.1 / PM-2.2 (consumen B0 APERTURA · 4 arquetipos: 2 Spark + 2 Gap Analysis)",
-    "PM-2.3 a PM-2.10 (consumen B1-B4 APROPIACIÓN del RAP correspondiente · ACs atribuidas a criterios canon)",
-    "PM-3.5 (consume BT TRANSFERENCIA · 5 sub-fases ABP · capstone E-Misión C08)"
+    "PM-1.2 v4.2+ (scope diferenciado por tipo_bloque · APROPIACIÓN requiere curación POR RAP heredando saberes_conceptos_cubiertos · APERTURA/TRANSFERENCIA NO requieren curación granular)",
+    "PM-2.0 architect (session blueprint hereda tipo_bloque + tiempos canon + sesiones_anchor)",
+    "PM-2.1, PM-2.2 (toman input del bloque B0 APERTURA · arquetipos spark + gap)",
+    "PM-2.3 a PM-2.10 (toman input del bloque APROPIACIÓN del RAP correspondiente · 7 PMs × 4 bloques = 28 dispatches)",
+    "PM-3.5 (toma input del bloque BT TRANSFERENCIA · capstone Final Mission · 5 sub-fases ABP)",
+    "PM-2.11 (row assembler · matriz heredada · criterios_canon_assigned por bloque alimentan rows GFPI-F-134)",
+    "PM-3.7 V04 (multi-RAP rows R18-R21 · contenido REAL por RAP heredado de saberes_conceptos_cubiertos)"
   ],
 
   "_audit": {
     "input_sources": [
-      "Master prompt PM-1.1 v2.8 (REGLAS 1-14 · canon estricto · LIBERTAD LLM REAL declarada en REGLA 10)",
-      "pm-0-0-matriz-alineada.json v1.1 (4 RAPs · 8 criterios C01-C08 · 4 overlaps multi-RAP · primera fuente de verdad)",
-      "pm-0-context.json v3.1 (universo banana cold chain · 8 personajes · grammar focus canon-aligned · L1 policy · escenario hero · todos con _anclaje_matriz)",
-      "pm-1-1-input.json (tipo=Curso Complementario · sesiones_count=12 · horas_por_sesion=6 · _horas_canon_distribution declarada)",
-      "PLAN-FASE-1-ARQUITECTURA.md §13 (workflow operacional tripartita)"
+      "Master prompt PM-1.1 v2.8 (REGLAS 1-14 · estructura tripartita + tiempos canon + traceability)",
+      "pm-0-0-matriz-alineada.json v1.3 (CORREGIDA · Opción A refinada · 0 drift · canon strict)",
+      "pm-0-context.json v3.2 (universo banana cold chain · 8 personajes con _anclaje_matriz)",
+      "pm-1-1-input.json (tipo=Curso Complementario · 12 sesiones × 6h = 72h directas)",
+      "pm-1-1.json.legacy-pre-fix-distribucion-rev (v1 referencia para auditoría · NO copiado · drift documentado)"
     ],
     "decisiones_libertad_llm_aplicadas": [
-      "Distribución sesiones APROPIACIÓN entre 4 RAPs: 3-2-2-2 · RA1 obtiene 3 sesiones (S2-S4) por densidad lexical fundacional + 2 evidencias formales E1+E2 · RA2/RA3/RA4 obtienen 2 sesiones c/u",
-      "regla_bloques_aplicada=alineacion_1a1 en los 4 bloques APROPIACIÓN (NO desdoblamiento) · pese a RA3 tener 5 criterios canon overlap · porque la matriz ya distribuyó los overlaps a otros bloques (C02→B1 · C04→B2 · C06→B4 · C07→B2) quedando solo C05 puro en B3",
-      "Asignación criterios overlap multi-RAP: C02→B1 cara RA1 lexical · C04→B2 cara RA2 SMCP · C06→B4 cara RA4 descripción · C07→B2 anchor sesional S6 · documentado en criterios_canon_distribution_summary",
-      "Títulos ESP industriales redactados desde universo banana cold chain Puerto Antioquia (NO genéricos · NO inventando otro universo)",
-      "Narrativa macrotemática anclada a personajes PM-0 (Manuel · Carolina · Mariana · Lim · Mejía · Yurlenis · Pipa · Hernando) y a evidencias canónicas con sesiones canon",
-      "B0 APERTURA: 4 arquetipos = 2 Spark (Real-Artifact + Stakes-Personal) + 2 Gap Analysis (Visual Vocab + Listening Snippet) · LLM eligió tipos coherentes con sector banana",
-      "BT TRANSFERENCIA: 5 sub-fases ABP redactadas con tiempos específicos S11+S12 distribuidos en 6h+6h · panel evaluador heredado de pm-0-context escenario_hero",
-      "Cefr_subnivel por bloque anclado a evidencias canon de PM-0 evidencias_formales_traceability"
+      "Distribución sesiones APROPIACIÓN 3-2-2-2 (mantenida vs v1 con rationale pedagógico explícito)",
+      "Títulos ESP industriales contextualizados a banana cold chain Puerto Antioquia (re-derivados desde universo PM-0 v3.2)",
+      "Narrativas macrotemáticas redactadas desde personajes canon (Manuel · Carolina · Mariana · Hernando · Captain Lim Wei-Ming · Bosun Mejía · Yurlenis · Pipa)",
+      "Asignación overlaps multi-RAP (C02 cara morfo en B3 retrospectivo · C04 análogo · C06 análogo) con documentación de ejecución física vs atribución canon",
+      "Diseño BT 5 sub-fases ABP contextualizadas a Pre-Departure Banana Reefer Compliance Check"
     ],
-    "principio_traceability_aplicado": "Cada bloque tiene _anclaje_matriz non-empty con campos requeridos según tipo_bloque · 0 elementos sin anclaje · NO inventado fuera del canon SOFÍA + matriz alineada · cumple REGLA 12 v3.2 heredada y REGLA 9 v2.8 PM-1.1",
+    "limites_canon_aplicados_estrictos": [
+      "Estructura tripartita 6 bloques (1+4+1) · NO opcional",
+      "Tiempos canon: APERTURA=6h/1s exacto · TRANSFERENCIA=12h/2s exacto · APROPIACIÓN=54h/9s",
+      "Saberes_conceptos por bloque APROPIACIÓN = literal copy matriz v1.3 sin drift cruzado · 8/4/4/10 = 26",
+      "Criterios canon assigned por bloque = matriz v1.3 RA1[C01,C02,C07] · RA2[C03,C04,C07] · RA3[C02,C04,C05,C06,C07] · RA4[C06,C07] (C08 movido a BT per REGLA 12 v2.8)",
+      "Sesiones canon evidencias = matriz v1.3 + heredadas PM-0 v3.2 (S3=E1 · S4=E2 · S5=E3 · S6=E4-parcial+E6 · S8=E4-final · S9=E5 · S12=E-Misión)"
+    ],
     "version_history": [
-      {"version": "v2.8", "fecha": "2026-05-01", "estado": "estructura tripartita + tiempos canon universales + traceability completa · 9/9 validation_checks PASS"}
+      {"version": "v1", "fecha": "pre 2026-05-02", "estado": "heredó matriz v1.1 con drift · 8 instancias drift cruzado documentadas · archivado pm-1-1.json.legacy-pre-fix-distribucion-rev"},
+      {"version": "v2 (este archivo)", "fecha": "2026-05-02", "estado": "hereda matriz v1.3 CORREGIDA · 0 drift · 9/9 validation_checks PASS · cascade Phase 1 Step 1.2 IMARPOR-V2 OK"}
     ]
   },
 
   "enriched": true,
-  "_block_downstream_until_gate0": false,
-  "gate_0_pending": "Sergio approval · pm-1-1.json v2.8 estructura tripartita IMARPOR-CC-V2 → cascade Phase 1 Step 1.3 PM-1.2"
+  "_block_downstream": false
 }
