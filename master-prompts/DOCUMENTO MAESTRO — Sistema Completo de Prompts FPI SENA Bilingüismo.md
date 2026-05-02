@@ -1,9 +1,10 @@
 ---
 title: DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo
-version: 3.5
+version: 3.6
 last_updated: 2026-05-02
 status: PARADIGM SHIFT FUNDAMENTAL · NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1. Sergio Cortés decisión arquitectónica 2026-05-01: el sistema diseñaba "de adentro hacia afuera" en teoría (DM declaraba UbD desde v2.0) pero en práctica reconstruía la matriz GFPI-F-134 retroactivamente en PM-2.11 (al final de Fase 2) usando información agregada que el LLM había procesado sin saber a qué RAP pertenecía cada saber/criterio. v3.0 corrige: PM-0.0 (NEW) toma información curricular SOFÍA agregada (saberes_conceptos + saberes_proceso + criterios_evaluacion + N RAPs · sin pre-clasificar) y ALINEA explícitamente por RAP. Output `pm-0-0-matriz-alineada.json` se vuelve fundamento pedagógico de toda la cadena downstream. PM-0 simplifica de 1077 → ~270 lines operacionales (5 principios maestros · libertad LLM · schema mínimo viable). Cascade impact: PM-0 + PM-1.1 + PM-1.2 + PM-2.0 + PM-2.x + PM-2.11 + PM-3.7 ahora consumen matriz alineada como insumo. PM-3.7 V04 multi-RAP rows se llenan con contenido REAL por RAP (no solo título RAP en R18-R21). DOCX/JSON learner-readable v2.7 (30 Activity Cards anatomy 6-bloque) preservado · NO afectado.
 previous_versions:
+  - "3.5 (2026-05-02) — Cadena pedagógica canónica UbD invertida (Saber Concepto → Saber Proceso → Actividad → Evidencia → Criterio → Instrumento) · saber_proceso DICTA tipo de actividad PM-2.x · verbo cognitivo RAP DICTA dominio · re-cascade IMARPOR-V2 Opción A refinada (matriz v1.3 + pm-1-1 v2 + pm-1-2 v2 · 23/23 PASS)"
   - "3.4 (2026-05-01) — PM-1.2 v4.2 scope diferenciado por tipo_bloque (APERTURA motivacional+diagnóstico NO conocimiento nuevo · APROPIACIÓN vivero E1-E6 · TRANSFERENCIA capstone) · _produces_evidencia mapping · 3 master docs bumps (PM-1.2 v4.2 · PLAN-FASE-1 v1.4 · DM v3.4)"
   - "3.3 (2026-05-01) — PM-1.1 v2.8 estructura tripartita + tiempos canon universales (APERTURA=6h/1s · TRANSFERENCIA≤12h/≤2s · APROPIACIÓN=resto) · 3 master docs bumps (PM-1.1 v2.8 · PLAN-FASE-1 v1.3 · DM v3.3)"
   - "3.2 (2026-05-01) — Criterios específicos canon sistema (8 C01-C08) + TRACEABILITY `_anclaje_matriz` cross-PM · 4 master docs bumps (PM-0.0 v1.2 · PM-0 v3.2 · PLAN-FASE-1 v1.2 · DM v3.2)"
@@ -2359,7 +2360,81 @@ Documentado en `feedback_cadena_pedagogica_ubd_canon.md` (modelo mental + tabla 
 
 ---
 
+## EXTENSIÓN v3.6 — PM-2.0 v3.0 ARCHITECT HEREDERO CASCADE TRIPARTITA (2026-05-02)
+
+**Trigger del bump:** Sergio canonizó (2026-05-02 Step 1.4 IMARPOR-V2) que el architect (PM-2.0) ya NO debe inventar la distribución de sesiones · debe HEREDARLA del cascade tripartita v3.x (pm-1-1 v2.8 + pm-1-2 v4.2 + matriz v1.2+).
+
+PM-2.0 v2.6 inventaba estructura 8-sesiones-fijas hardcoded para Técnico/Tecnológico (NO compatible con CC 12 sesiones × 6h ni con Tecnológico 16 sesiones × 7.5h). v3.0 canoniza el architect como **secuenciador temporal puro** que hereda literal de la cascade.
+
+**Lección canonizada universal:**
+
+- **Architect ya NO inventa nada** · es un secuenciador temporal que toma bloques pm-1-1 + elementos pm-1-2 y los expande sesión-a-sesión
+- **Distribución sesiones HEREDADA** de pm-1-1.bloques.sesiones_anchor (NO hardcoded · dinámico según tipo programa)
+- **PMs por sesión HEREDADOS** de pm-1-1.bloques.pms_destino + pm-1-2.elementos.`_consumed_by_pm`
+- **Evidencias mapping HEREDADO** literal de pm-1-2.elementos.`_produces_evidencia` (zero invent)
+- **Libertad LIMITADA del LLM** (vs PM-1.1/1.2 amplia) · solo presentación + rationale temporal
+
+**Bumps ejecutados (3 master docs):**
+
+- **PM-2.0 v2.6 → v3.0** (EXTENSIÓN v3.0 · REGLAS 7-15 · 8 validation_checks BLOQUEANTES · 3 schemas diferenciados por `tipo_bloque` sesión · heredancia automática `_anclaje_matriz_heredado` + `_produces_evidencia` + `_consumed_by_pm` literal copy · catálogo 52 arquetipos v2.6 PRESERVADO)
+- **PLAN-FASE-1 v1.4 → v1.5** (NEW §15 PM-2.0 v3.0 Architect Heredero · 11 sub-secciones · workflow boundary Phase 1→2 · ejemplos por tipo programa · trigger interno orchestrator · cascade impact downstream)
+- **DM v3.5 → v3.6** (esta extensión documenta canon)
+- **PLAN-FASE-2 v1.x → update mínimo** (PM-2.0 v3.0 hereda input cascade tripartita Phase 1 · pendiente bumps PM-2.x downstream Step 1.5+)
+
+**Esencia v3.0 (visual):**
+
+```
+pm-1-1 v2.8 (estructura tripartita) + pm-1-2 v4.2 (scope diferenciado) + matriz v1.2+ (canon)
+  ↓ HEREDA literal
+PM-2.0 v3.0 architect (secuenciador temporal · cero invención · libertad LIMITADA)
+  ↓
+pm-2-0.json v3.0 maestro
+  ├─ session_blueprint (N sesiones · tipo_bloque + bloque_id_referencia + actividades_planeadas heredadas)
+  └─ evidencias_secuencia_temporal (E1-E6+E-Misión mapping ordenado canon)
+  ↓ alimenta a Step 1.5
+PM-2.1 / 2.2 / 2.3-2.10 / 2.11 / 3.5 / 4.2 (cada uno hereda su sesión target)
+```
+
+**Pattern canonical orchestrator (cross-program · cross-PM):**
+
+```
+ANTES de dispatchear Agent PM-2.0 v3.0:
+
+1. ¿pm-1-1.json v2.8+ Y pm-1-2.json v4.2+ están validados PASS?
+   - Si NO → STOP · re-run upstream
+
+2. ¿Mi prompt al Agent enfatiza HEREDANCIA + secuenciación temporal + libertad LIMITADA?
+   - Si NO → refactor (cero invención · cero PMs preset · cero distribución hardcoded)
+
+3. ¿Mi prompt incluye 8 validation_checks BLOQUEANTES (especialmente checks 7-8 nuevos)?
+   - Si NO → agregar
+```
+
+**Caso operacional confirmado IMARPOR-V2 (pendiente Step 1.4.D dispatch):**
+
+- Input: pm-1-1 v2.8 v2 (6 bloques · 9/9 PASS) + pm-1-2 v4.2 v2 (6 sub-bloques · 6/6 PASS · 23 elementos) + matriz v1.3 (8/8 PASS)
+- Output esperado: 12 sesiones (S1-S12) · cada una con tipo_bloque + bloque_id_referencia + actividades heredadas
+- Evidencias_secuencia_temporal: E1@S3 · E2@S4 · E3@S5 · E4-parcial@S6 · E6@S6 · E4-final@S8 · E5@S9 · E-Misión@S12
+- 8/8 validation_checks PASS
+
+**Aplicabilidad cross-program:**
+
+PM-2.0 v3.0 funciona con cualquier programa que tenga cascade Phase 1 v3.x validada:
+- IMARPOR-V2 (CC · 12 sesiones) · MGV (Tecnológico · 16) · INGBAS4 (CC · 12) · INGBAS1-AGRO (CC · 12) · Técnico ADSO (8)
+
+**Cascade impact downstream (pendiente Step 1.5+):**
+
+- **PM-2.1 / PM-2.2** consume sesión APERTURA (pms_destino + actividades_planeadas heredadas)
+- **PM-2.3-2.10** cada uno consume su sesión APROPIACIÓN (rap_target + actividades con `_anclaje_matriz_heredado`)
+- **PM-2.11** Row Assembler agrega cols 1-11 GFPI-F-134 desde session_blueprint
+- **PM-3.5** consume sesión TRANSFERENCIA (mission_brief + 5 sub-fases ABP + rúbrica)
+- **PM-4.2** consume sesión S6 (task_consolidacion → E6)
+
+**Memory snapshot:** `feedback_pm20_architect_heredero_cascade.md` (canon pattern · 3 schemas · heredancia literal · 8 validation_checks · trigger interno orchestrator · libertad LIMITADA vs PM-1.1/1.2 amplia)
+
+---
+
 *DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo*
-*Fábrica Curricular v3.5 — CADENA PEDAGÓGICA CANÓNICA UbD INVERTIDA · 6 eslabones (Saber Concepto → Saber Proceso → Actividad → Evidencia → Criterio → Instrumento) · saber_proceso DICTA tipo de actividad PM-2.x · verbo cognitivo RAP DICTA dominio de saberes · trazabilidad bidireccional canon · anti-patrón "toda gramática a un solo RAP" descartado · canon Sergio Cortés 2026-05-02*
-*Versiones legacy preserved: v3.4 PM-1.2 Scope Diferenciado + v3.3 PM-1.1 Tripartita + v3.2 Criterios canon + Traceability + v3.1 Anti-patrón #16 + v3.0 PARADIGM SHIFT NEW PM-0.0 + v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
+*Fábrica Curricular v3.6 — PM-2.0 v3.0 ARCHITECT HEREDERO CASCADE TRIPARTITA · cero invención · secuenciador temporal · libertad LIMITADA del LLM · 3 schemas diferenciados por tipo_bloque sesión · heredancia automática `_anclaje_matriz_heredado` + `_produces_evidencia` + `_consumed_by_pm` · 8 validation_checks BLOQUEANTES (6 v2.6 preservados + 2 NEW) · catálogo 52 arquetipos v2.6 PRESERVADO · canon Sergio Cortés 2026-05-02*
+*Versiones legacy preserved: v3.5 Cadena pedagógica UbD + v3.4 PM-1.2 Scope Diferenciado + v3.3 PM-1.1 Tripartita + v3.2 Criterios canon + Traceability + v3.1 Anti-patrón #16 + v3.0 PARADIGM SHIFT NEW PM-0.0 + v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
 *Instructor Sergio · Abril–Mayo 2026*

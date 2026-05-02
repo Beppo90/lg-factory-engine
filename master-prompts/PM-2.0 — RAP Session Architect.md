@@ -1,23 +1,38 @@
 ---
 pm_id: PM-2.0
-name: RAP Session Architect
+name: RAP Session Architect · Heredero Cascade Tripartita
 phase: 2
 session: null
 fase_sena: Pre-diseño
 type: architect
-version: 2.6
+version: 3.0
 created: 2026-04-13
-last_verified: 2026-04-20
+last_verified: 2026-05-02
+status: v3.0 PARADIGM SHIFT · architect ya NO inventa distribución sesiones · HEREDA estructura tripartita de pm-1-1 v2.8 + scopes diferenciados de pm-1-2 v4.2 + criterios canon de matriz v1.3+ · cada sesión con tipo_bloque + _anclaje_matriz + _produces_evidencia mapping completo · 8 validation_checks BLOQUEANTES (6 v2.6 preservados + 2 NEW) · anti-prescriptive prompt operacional (cascade Step 1.4 IMARPOR-V2 · post PM-1.2 v4.2 v2)
 inputs:
-  - PM-1.2 output (RAP completo con los 4 bloques canónicos v2.6: Bloque 0 / A / B / C)
-  - pm-0-context.json (Fase 0)
-  - program_info (opcional: diseño curricular, proyecto formativo, código competencia, código RAP)
+  - pm-1-1.json (v2.8+ · estructura tripartita validada · 6+ bloques con sesiones_anchor + _anclaje_matriz)
+  - pm-1-2.json (v4.2+ · scope diferenciado por tipo_bloque · _produces_evidencia mapping E1-E6+E-Misión)
+  - pm-0-0-matriz-alineada.json (v1.2+ · 8 criterios canon C01-C08 + saberes distribuidos)
+  - pm-0-context.json (v3.2+ · universo + personajes + grammar focus)
+  - pm-2-0-input.json (gates input · arquetipos elegidos opcional)
 outputs:
-  - Session Blueprint (8 sesiones con contratos de horas, PMs asignados, transversales)
-  - Confirmación de la distribución de horas antes de ejecutar PM-2.1
-  - Catálogo completo de 52 arquetipos (PM-2.1 a PM-2.10) para selección upfront por el instructor (v2.6)
-depends_on: [PM-1.2, pm-0-context.json]
-feeds_into: [PM-2.1, PM-2.2, PM-2.3, PM-2.4, PM-2.5, PM-2.6, PM-2.8, PM-2.9, PM-2.10]
+  - pm-2-0.json maestro v3.0 (1 archivo · session_blueprint con N sesiones HEREDADAS · cada una con tipo_bloque + bloque_id_referencia + actividades_planeadas heredadas de pm-1-2 + traceability completa)
+  - Catálogo arquetipos PM-2.1 a PM-2.10 (preservado v2.6)
+depends_on: [pm-1-1.json v2.8+, pm-1-2.json v4.2+, pm-0-0-matriz-alineada.json v1.2+, pm-0-context.json v3.2+]
+feeds_into: [PM-2.1, PM-2.2, PM-2.3, PM-2.4, PM-2.5, PM-2.6, PM-2.8, PM-2.9, PM-2.10, PM-2.11, PM-3.5]
+v3_0_changes:
+  - "NEW REGLA 7 input principal cascade tripartita (NO columnas sueltas)"
+  - "NEW REGLA 8 distribución sesiones HEREDADA de pm-1-1.sesiones_anchor (NO hardcoded)"
+  - "NEW REGLA 9 schema output diferenciado por tipo_bloque (3 tipos por sesión)"
+  - "NEW REGLA 10 heredancia automática _anclaje_matriz + _produces_evidencia + _consumed_by_pm"
+  - "NEW REGLA 11 anti-prescriptive prompt operacional (canon §10/§11/§12 PLAN-FASE-1)"
+  - "NEW REGLA 12 traceability bidireccional canon"
+  - "NEW 8 validation_checks (6 v2.6 preservados + 2 nuevos: tipo_bloque_consistente + traceability_heredada)"
+  - "Distribución 8-sesiones-fijas v2.6 DEPRECATED (era para Técnico/Tecnológico hardcoded · v3.0 dinámico)"
+v2_6_legacy_preserved:
+  - "Catálogo 52 arquetipos PM-2.1-2.10 (Tabla-resumen)"
+  - "6 checkpoints validación originales (incorporados en validation_checks v3.0)"
+  - "Fases proceso arquitectura 1-6 (referencia · v3.0 las simplifica porque hereda)"
 ---
 
 # PM-2.0: RAP SESSION ARCHITECT
@@ -707,3 +722,307 @@ session_blueprint:
 *PM-2.0: RAP Session Architect*  
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*  
 *Versión 2.0 — 2026-04-13*
+
+---
+
+## EXTENSIÓN v3.0 — ARCHITECT HEREDERO CASCADE TRIPARTITA (2026-05-02)
+
+> [!warning] PARADIGM SHIFT canonizado · Sergio Cortés decisión arquitectónica 2026-05-02
+>
+> PM-2.0 v2.6 inventaba la distribución de sesiones (estructura 8-sesiones-fijas hardcoded para Técnico/Tecnológico) y asignaba PMs por sesión preset. v3.0 canoniza que el architect ya **NO inventa nada** · es un **secuenciador temporal** que HEREDA estructura tripartita de pm-1-1 v2.8 + scopes diferenciados de pm-1-2 v4.2 + criterios canon de matriz v1.2+.
+>
+> **Razón:** Sergio canonizó (2026-05-02 Step 1.4 IMARPOR-V2) que después del cascade v3.x (PM-0.0 → PM-0 → PM-1.1 v2.8 → PM-1.2 v4.2) cada bloque tripartito YA tiene `sesiones_anchor` + `pms_destino` + `_anclaje_matriz` + cada elemento de scope YA tiene `_produces_evidencia` + `_consumed_by_pm`. PM-2.0 v3.0 SOLO los expande a un blueprint sesión-a-sesión con traceability completa. Cero invención.
+
+### REGLA 7 — INPUT PRINCIPAL · CASCADE TRIPARTITA
+
+PM-2.0 v3.0 consume como input PRIMARIO los outputs cascade v3.x:
+
+```json
+{
+  "pm_1_1_ref": "pm-1-1.json (v2.8+ · estructura tripartita validada · sesiones_anchor por bloque)",
+  "pm_1_2_ref": "pm-1-2.json (v4.2+ · scope diferenciado por tipo_bloque · _produces_evidencia mapping)",
+  "pm_0_0_matriz_ref": "pm-0-0-matriz-alineada.json (v1.2+ · criterios canon C01-C08 + saberes distribuidos)",
+  "pm_0_context_ref": "pm-0-context.json (v3.2+ · universo + personajes + grammar focus)"
+}
+```
+
+**PM-2.0 NO inventa.** PM-2.0 NO redistribuye sesiones. PM-2.0 NO asigna PMs preset. SOLO secuencia temporal con traceability heredada.
+
+### REGLA 8 — DISTRIBUCIÓN SESIONES HEREDADA (NO HARDCODED)
+
+v2.6 tenía estructura fija 8 sesiones (S1=apertura · S2-S5=apropiación · S6=eval · S6½-S8=transferencia). **v3.0 NO usa estructura fija.** En v3.0:
+
+- Total sesiones = `programa.sesiones_count` heredado de pm-1-1 (12 CC · 8 técnico · 16 tecnológico · etc.)
+- Cada sesión `Sn` tiene un `bloque_id_referencia` que apunta al bloque pm-1-1 que contiene `Sn` en su `sesiones_anchor`
+- Cada sesión hereda `tipo_bloque` de su bloque referenciado (APERTURA · APROPIACION · TRANSFERENCIA)
+- Las sesiones APROPIACIÓN además heredan `rap_target` del bloque
+
+**Ejemplo IMARPOR-V2 (12 sesiones):**
+
+```
+S1  ← B0 APERTURA       (bloque B0.sesiones_anchor incluye S1)
+S2  ← B1 APROPIACION RA1 (bloque B1.sesiones_anchor incluye S2)
+S3  ← B1 APROPIACION RA1 (S3 también en B1)
+S4  ← B1 APROPIACION RA1 (S4 también en B1)
+S5  ← B2 APROPIACION RA2 (S5 en B2)
+S6  ← B2 APROPIACION RA2 (S6 en B2)
+S7  ← B3 APROPIACION RA3
+S8  ← B3 APROPIACION RA3
+S9  ← B4 APROPIACION RA4
+S10 ← B4 APROPIACION RA4
+S11 ← BT TRANSFERENCIA  (BT.sesiones_anchor=[S11,S12])
+S12 ← BT TRANSFERENCIA
+```
+
+**Para Técnico** (8 sesiones × 7.5h): heredada similarmente desde pm-1-1 técnico (S1=APERTURA · S2-S7=APROPIACIÓN según RAPs · S8=TRANSFERENCIA). **Para Tecnológico** (16 sesiones): idem 16.
+
+### REGLA 9 — SCHEMA OUTPUT DIFERENCIADO POR `tipo_bloque`
+
+Cada sesión en `session_blueprint` tiene schema diferente según el `tipo_bloque` del bloque heredado:
+
+#### Schema sesión APERTURA
+
+```jsonc
+{
+  "sesion_id": "S1",
+  "tipo_bloque": "APERTURA",
+  "bloque_id_referencia": "B0",
+  "rap_target": null,
+  "transversal": true,
+  "horas_directas": 6,
+  "pms_destino_canon": ["PM-2.1", "PM-2.2"],   // heredado de pm-1-1.B0.pms_destino
+  "actividades_planeadas": [
+    {
+      "ref_pm12_path": "sub_bloques_tripartitos[0].materiales_spark[0]",
+      "consumed_by_pm": "PM-2.1",
+      "tipo": "spark_motivacional",
+      "_produces_evidencia": null,
+      "_anclaje_matriz_heredado": { /* heredado de pm-1-2.B0.materiales_spark[0]._anclaje_matriz */ }
+    }
+    // ... 4 actividades total (2 PM-2.1 + 2 PM-2.2)
+  ]
+}
+```
+
+#### Schema sesión APROPIACIÓN
+
+```jsonc
+{
+  "sesion_id": "S3",
+  "tipo_bloque": "APROPIACION",
+  "bloque_id_referencia": "B1",
+  "rap_target": "RA1",
+  "transversal": false,
+  "horas_directas": 6,
+  "pms_destino_canon": ["PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.8", "PM-2.9", "PM-2.10"],   // subset según actividades de la sesión
+  "criterios_canon_evaluables_en_sesion": ["C01"],   // canon S3 = E1 Reading
+  "actividades_planeadas": [
+    {
+      "ref_pm12_path": "sub_bloques_tripartitos[1].story_a_reading",
+      "consumed_by_pm": "PM-2.3",
+      "tipo": "reading_anchor",
+      "_produces_evidencia": "E1",
+      "_anclaje_matriz_heredado": { /* heredado · saberes_que_demanda + criterios_canon_que_evalua */ }
+    },
+    {
+      "ref_pm12_path": "sub_bloques_tripartitos[1].key_vocabulary_per_rap",
+      "consumed_by_pm": "PM-2.5",
+      "tipo": "vocabulary_scaffold",
+      "_produces_evidencia": null
+    }
+  ]
+}
+```
+
+#### Schema sesión TRANSFERENCIA
+
+```jsonc
+{
+  "sesion_id": "S12",
+  "tipo_bloque": "TRANSFERENCIA",
+  "bloque_id_referencia": "BT",
+  "rap_target": null,
+  "transversal": true,
+  "capstone": true,
+  "horas_directas": 6,
+  "pms_destino_canon": ["PM-3.5"],
+  "actividades_planeadas": [
+    {
+      "ref_pm12_path": "sub_bloques_tripartitos[5].mission_brief",
+      "consumed_by_pm": "PM-3.5",
+      "tipo": "abp_capstone_evaluacion",
+      "subfase_abp": [3, 4, 5],   // Desempeño + Presentación + Eval reflexiva
+      "_produces_evidencia": "E-Misión",
+      "_anclaje_matriz_heredado": { "criterio_canon_capstone": "C08" }
+    }
+  ]
+}
+```
+
+### REGLA 10 — HEREDANCIA AUTOMÁTICA TRACEABILITY
+
+PM-2.0 v3.0 NO recrea ni reescribe metadatos de traceability. SOLO los **copia literal** de pm-1-2.json al campo `_anclaje_matriz_heredado` de cada `actividad_planeada`. Cada actividad mantiene:
+
+- `ref_pm12_path`: ruta JSON al elemento original en pm-1-2.json (e.g., `sub_bloques_tripartitos[1].story_a_reading`)
+- `consumed_by_pm`: copiado literal de `pm-1-2.{path}._consumed_by_pm`
+- `_produces_evidencia`: copiado literal de `pm-1-2.{path}._produces_evidencia` (E1-E6+E-Misión o null)
+- `_anclaje_matriz_heredado`: copiado literal de `pm-1-2.{path}._anclaje_matriz`
+
+**ZERO invención.** Si pm-1-2 tiene drift, PM-2.0 hereda drift (auditoría upstream resuelve).
+
+### REGLA 11 — PROMPT OPERACIONAL DEBE RESPETAR LIBERTAD LIMITADA POR CANON
+
+El orchestrator que dispatchea Agent ejecutando PM-2.0 v3.0 DEBE:
+
+SÍ pasar al Agent:
+- Master prompt PM-2.0 v3.0 (REGLAS 7-12)
+- pm-1-1.json v2.8+ (estructura tripartita)
+- pm-1-2.json v4.2+ (scope diferenciado)
+- matriz v1.2+ (canon)
+- pm-0-context.json v3.2+ (universo)
+- 8 validation_checks BLOQUEANTES
+- Bloque "INSTRUCCIÓN CRÍTICA · LIBERTAD LIMITADA"
+
+NO pasar al Agent:
+- Distribución sesiones pre-decidida (LLM hereda de pm-1-1.sesiones_anchor)
+- PMs por sesión preset (LLM hereda de pm-1-1.bloques.pms_destino + pm-1-2.elementos._consumed_by_pm)
+- Evidencias mapping inventado (LLM hereda literal)
+
+**LIBERTAD LIMITADA del LLM** (vs PM-1.1/1.2 que tenían libertad amplia):
+- Cómo presenta el output JSON (orden de campos · agregar campos auxiliares)
+- Agregar `_rationale_secuenciacion_temporal` por sesión explicando por qué qué actividad va en qué momento dentro de las 6h
+- Agregar `_decisiones_analiticas_significativas` documentando ajustes
+- Cómo distribuye actividades pm-1-2 dentro de las 6h de la sesión (si hay 2 actividades planeadas · LLM decide cuál primero)
+
+**SIN LIBERTAD** (canon estricto):
+- Estructura tripartita (heredada)
+- Distribución sesiones (heredada)
+- Asignación PMs por sesión (heredada)
+- `_anclaje_matriz` + `_produces_evidencia` (heredados literal)
+
+### REGLA 12 — TRACEABILITY BIDIRECCIONAL CANON
+
+Cada sesión del session_blueprint v3.0 DEBE poder responder estas preguntas SIN inventar:
+
+**Hacia atrás (¿de dónde viene esta sesión?):**
+- ¿Qué bloque tripartito la contiene? → `bloque_id_referencia`
+- ¿Qué tipo es? → `tipo_bloque`
+- ¿Qué saberes demanda? → unión de `_anclaje_matriz_heredado.saberes_que_demanda` de todas sus actividades
+
+**Hacia adelante (¿adónde va esta sesión?):**
+- ¿Qué evidencias produce? → unión de `_produces_evidencia` non-null de sus actividades
+- ¿Qué PMs downstream consumen estos insumos? → unión de `_consumed_by_pm`
+- ¿Qué criterios canon se pueden evaluar aquí? → `criterios_canon_evaluables_en_sesion`
+
+### REGLA 13 — VALIDATION POST-GENERATION · 8 CHECKS
+
+```jsonc
+"validation_checks": [
+  // 6 preservados v2.6 (re-formulados v3.0):
+  {"id": 1, "name": "horas_directas_match_pm11", "status": "PASS|FAIL", "evidence": "..."},   // sum sesiones = total directo pm-1-1
+  {"id": 2, "name": "horas_autonomas_balanceadas", "status": "..."},
+  {"id": 3, "name": "secuencia_bloom_progresiva", "status": "..."},   // L1→L2-3→L4-6 a través de tipo_bloque
+  {"id": 4, "name": "continuidad_transversal_apertura_transferencia", "status": "..."},
+  {"id": 5, "name": "distribucion_evidencias_canon_respetada", "status": "..."},   // E1@S3 · E2@S4 · etc. canon
+  {"id": 6, "name": "alineacion_pm12_actividades_planeadas", "status": "..."},
+  // 2 NEW v3.0:
+  {"id": 7, "name": "tipo_bloque_consistente_por_sesion", "status": "..."},   // cada sesión hereda tipo del bloque pm-1-1
+  {"id": 8, "name": "traceability_heredada_completa", "status": "..."}        // cada actividad con _anclaje_matriz_heredado + _produces_evidencia non-empty
+]
+```
+
+Si CUALQUIER check FAIL · output marcado `enriched: false` · BLOQUEANTE para Step 1.5 (PM-2.x downstream).
+
+### REGLA 14 — ESTRUCTURA OUTPUT pm-2-0.json v3.0 (1 ARCHIVO MAESTRO)
+
+```jsonc
+{
+  "pm_id": "PM-2.0",
+  "pm_name": "RAP Session Architect · Heredero Cascade Tripartita",
+  "pm_version": "3.0",
+  "run_id": "...",
+  "generated_date": "...",
+
+  "_pm11_ref": "pm-1-1.json (v2.8+)",
+  "_pm12_ref": "pm-1-2.json (v4.2+)",
+  "_pm00_matriz_ref": "pm-0-0-matriz-alineada.json (v1.2+)",
+
+  "programa": {
+    "denominacion": "...",
+    "tipo": "Curso Complementario|Técnico|Tecnológico|Curso Especial",
+    "sesiones_count": 12,
+    "horas_por_sesion": 6,
+    "horas_directas_total": 72
+  },
+
+  "session_blueprint": [
+    /* 1 entry por sesión · schema diferenciado según tipo_bloque heredado */
+    /* S1 APERTURA · S2-S(N-2) APROPIACIÓN · S(N-1)-SN TRANSFERENCIA */
+  ],
+
+  "evidencias_secuencia_temporal": {
+    /* Resumen E1-E6+E-Misión con sesión donde se produce + bloque + criterio canon */
+    "E1": {"sesion": "S3", "bloque": "B1", "rap": "RA1", "criterio_canon": "C01", "pm": "PM-2.3"},
+    "E2": {"sesion": "S4", "bloque": "B1", "rap": "RA1+RA3", "criterio_canon": "C02", "pm": "PM-2.4"},
+    /* ... E3-E6 + E-Misión */
+  },
+
+  "validation_checks": [...],
+  "enriched": true|false
+}
+```
+
+### REGLA 15 — DEPRECATION PATH v2.6 → v3.0
+
+Programas con `pm-2-0.json` v2.6 (8 sesiones hardcoded · sin tipo_bloque · sin heredancia):
+- KEEP archivos legacy en run dir como `*.legacy-pre-fix-v3-0`
+- Generar nuevo pm-2-0.json v3.0 cuando se re-run el programa post-Phase 1 cascade
+- Run resultante puede tener AMBOS: legacy v2.6 + v3.0
+
+---
+
+## ESTRUCTURA OPERACIONAL v3.0 (resumen ejecutivo)
+
+```
+pm-1-1.json v2.8+ (estructura tripartita 6+ bloques con sesiones_anchor + _anclaje_matriz)
+  +
+pm-1-2.json v4.2+ (scope diferenciado · cada elemento con _produces_evidencia + _consumed_by_pm + _anclaje_matriz)
+  +
+pm-0-0-matriz-alineada.json v1.2+ (8 criterios canon C01-C08)
+  +
+pm-0-context.json v3.2+ (universo + personajes)
+  ↓
+PM-2.0 v3.0 dispatcher (Agent · libertad LIMITADA · solo secuenciación temporal)
+  ↓
+pm-2-0.json v3.0 maestro (1 archivo)
+  ├─ programa metadata
+  ├─ session_blueprint (N sesiones · cada una con tipo_bloque + bloque_id_referencia + actividades_planeadas heredadas + _anclaje_matriz_heredado)
+  ├─ evidencias_secuencia_temporal (E1-E6+E-Misión mapping)
+  └─ validation_checks (8 BLOQUEANTES)
+  ↓
+Step 1.5 PM-2.x downstream (PM-2.1 a PM-2.10 + PM-2.11 + PM-3.5 · cada uno hereda su sesión target)
+```
+
+---
+
+## CASO OPERACIONAL CONFIRMADO (pendiente Step 1.4.D dispatch IMARPOR-V2)
+
+**Input esperado IMARPOR-V2:**
+- pm-1-1.json v2.8 v2 CORREGIDA · 6 bloques tripartitos · 9/9 PASS
+- pm-1-2.json v4.2 v2 CORREGIDA · 1 meta + 6 sub_bloques · 6/6 PASS · 23 elementos productores
+- matriz v1.3 CORREGIDA · 4 RAPs · 8 criterios canon · 8/8 PASS
+
+**Output esperado pm-2-0.json v3.0:**
+- 12 sesiones (S1-S12) · cada una con tipo_bloque + bloque_id_referencia + actividades_planeadas heredadas
+- S1 APERTURA · pm-2.1 + pm-2.2 (4 arquetipos)
+- S2-S4 APROPIACIÓN B1 RA1 · pm-2.3 (E1 S3) + pm-2.4 (E2 S4) + pm-2.5 + pm-2.10
+- S5-S6 APROPIACIÓN B2 RA2 · pm-2.6 (E3 S5) + pm-2.8 (E4-parcial S6) + pm-4.2 (E6 S6)
+- S7-S8 APROPIACIÓN B3 RA3 · pm-2.8 (E4-final S8) + pm-2.10
+- S9-S10 APROPIACIÓN B4 RA4 · pm-2.9 (E5 S9) + rehearsal S10
+- S11-S12 TRANSFERENCIA · pm-3.5 (E-Misión S12)
+- 8/8 validation_checks PASS
+
+---
+
+*PM-2.0 v3.0 · RAP Session Architect Heredero Cascade Tripartita · cero invención · secuenciador temporal · traceability bidireccional canon*
+*Sergio Cortés decisión arquitectónica 2026-05-02 · cascade Phase 1→2 boundary IMARPOR-V2 · post PM-1.2 v4.2 v2 corregida*

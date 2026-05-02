@@ -1,8 +1,17 @@
 ---
 title: PLAN ARQUITECTÓNICO — Fase 2 (PM-2.0 a PM-2.11) — Skill Orquestador con Subagentes
-version: 1.3
-status: DRAFT-PLAN — esperando validación de Fase 1 en producción real (2-3 semanas)
-last_updated: 2026-04-28
+version: 1.4
+status: ACTIVE — PM-2.0 v3.0 architect heredero canonizado · Fase 1 validada en IMARPOR-V2 (cascade tripartita 23/23 PASS) · listo para Step 1.5 PM-2.x downstream
+last_updated: 2026-05-02
+changelog_v1_4_pm20_v30_heredero:
+  - "PM-2.0 v2.6 → v3.0 (paradigm shift architect heredero · cascade Step 1.4 IMARPOR-V2 · post Phase 1 v3.x)"
+  - "Architect ya NO inventa distribución sesiones · HEREDA literal de pm-1-1 v2.8 (sesiones_anchor) + pm-1-2 v4.2 (_consumed_by_pm + _produces_evidencia) + matriz v1.2+ (criterios canon)"
+  - "Schema output diferenciado por tipo_bloque sesión (3 schemas: APERTURA + APROPIACIÓN + TRANSFERENCIA)"
+  - "8 validation_checks BLOQUEANTES (6 v2.6 preservados re-formulados + 2 NEW: tipo_bloque_consistente + traceability_heredada_completa)"
+  - "Distribución 8-sesiones-fijas v2.6 DEPRECATED (era hardcoded Técnico/Tecnológico · v3.0 dinámico hereda)"
+  - "Catálogo 52 arquetipos PM-2.1-2.10 v2.6 PRESERVADO (selección upfront por instructor · sin cambios)"
+  - "Status DRAFT-PLAN → ACTIVE (Fase 1 validada · re-cascade IMARPOR-V2 23/23 PASS · listo PM-2.x downstream Step 1.5+)"
+  - "Documentación cascade impact: PM-2.0 v3.0 alimenta PM-2.1/2.2/2.3-2.10/2.11/3.5/4.2 con sesión target heredada"
 autor: Sergio Cortés Perdomo + Claude (skill fpi-sena-fase1 · sesión arquitectónica 2026-04-28)
 changelog_v1_3_decision_canonizada:
   - "Decisión arquitectónica Sergio 2026-04-28: Opción A canonizada (interpretación DIESEL adoptada como canon)"

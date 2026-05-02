@@ -1,8 +1,8 @@
 ---
 title: PLAN-FASE-1-ARQUITECTURA — Phase 1 (Scope) + Phase 0 (Matriz Pedagógica Alineadora)
-version: 1.4
-last_updated: 2026-05-01
-status: v1.4 agrega §14 PM-1.2 v4.2 Scope Diferenciado por tipo_bloque · canonizado del Step 1.3 IMARPOR-V2 · v1.3 fue §13 PM-1.1 Tripartita · v1.2 fue §11+§12 Criterios+Traceability · v1.1 fue §10 Anti-Prescriptive · v1.0 fue NEW workflow Phase 0+1
+version: 1.5
+last_updated: 2026-05-02
+status: v1.5 agrega §15 PM-2.0 v3.0 Architect Heredero (boundary Phase 1→2) · canonizado Step 1.4 IMARPOR-V2 · v1.4 fue §14 PM-1.2 v4.2 Scope Diferenciado · v1.3 fue §13 PM-1.1 Tripartita · v1.2 fue §11+§12 Criterios+Traceability · v1.1 fue §10 Anti-Prescriptive · v1.0 fue NEW workflow Phase 0+1
 canon: Sergio Cortés decisión arquitectónica 2026-05-01
 ---
 
@@ -979,4 +979,188 @@ Pattern canonical PM-1.2 v4.2 documentado en master prompt PM-1.2 EXTENSIÓN v4.
 3. Construir prompt anti-prescriptive con los 4 elementos canónicos v4.2
 4. Dispatchear Agent
 5. Validar 6/6 checks PASS
-6. Si PASS → Step 1.4 PM-2.0 architect (que requiere bump pendiente con tipo_bloque heredado)
+6. Si PASS → Step 1.4 PM-2.0 architect (bump v2.6 → v3.0 con heredancia cascade tripartita · COMPLETADO en §15)
+
+---
+
+## §15 · PM-2.0 v3.0 ARCHITECT HEREDERO (BOUNDARY PHASE 1→2) (v1.5 · 2026-05-02)
+
+### §15.1 · Trigger del paradigm shift PM-2.0
+
+**Detectado:** 2026-05-02 cascade Step 1.4 IMARPOR-V2. PM-2.0 v2.6 inventaba la distribución de sesiones (estructura 8-sesiones-fijas hardcoded para Técnico/Tecnológico) y asignaba PMs por sesión preset. Esto causaba:
+
+- NO compatible con CC (12 sesiones × 6h) ni con Tecnológico (16 sesiones × 7.5h)
+- Duplicaba la información que YA viene en pm-1-1 v2.8 (sesiones_anchor por bloque) y pm-1-2 v4.2 (`_consumed_by_pm` por elemento)
+- Inventaba evidencias mapping cuando YA viene en pm-1-2.elementos.`_produces_evidencia`
+- Rompía la disciplina canon "nada por fuera de la matriz" porque inventaba
+
+Sergio canonizó (2026-05-02):
+
+> "PM-2.0 architect bump (session blueprint hereda tipo_bloque + scopes diferenciados + `_produces_evidencia` mapping). Las actividades concretas PM-2.3-2.10 luego materializarán la cadena con instrucciones detalladas."
+
+### §15.2 · Esencia v3.0 · architect como secuenciador temporal
+
+PM-2.0 v3.0 ya **NO inventa nada**. Es un **secuenciador temporal** que:
+
+1. Toma la estructura tripartita de pm-1-1.json (6+ bloques con `sesiones_anchor`)
+2. Toma los elementos de scope de pm-1-2.json (cada uno con `_consumed_by_pm` + `_produces_evidencia` + `_anclaje_matriz`)
+3. Los expande a un blueprint sesión-a-sesión con traceability heredada literal
+4. Cero invención · libertad LIMITADA del LLM (solo presentación + rationale temporal)
+
+### §15.3 · Distribución sesiones HEREDADA (NO hardcoded)
+
+v2.6 tenía estructura fija 8 sesiones. **v3.0 NO usa estructura fija.**
+
+Cada sesión `Sn` del blueprint:
+- Tiene `bloque_id_referencia` apuntando al bloque pm-1-1 que contiene `Sn` en `sesiones_anchor`
+- Hereda `tipo_bloque` (APERTURA · APROPIACIÓN · TRANSFERENCIA)
+- Sesiones APROPIACIÓN heredan `rap_target` del bloque
+
+**Ejemplo IMARPOR-V2 (12 sesiones · CC):**
+
+```
+S1  ← B0 APERTURA (transversal)
+S2,S3,S4 ← B1 APROPIACIÓN RA1
+S5,S6 ← B2 APROPIACIÓN RA2
+S7,S8 ← B3 APROPIACIÓN RA3
+S9,S10 ← B4 APROPIACIÓN RA4
+S11,S12 ← BT TRANSFERENCIA (capstone)
+```
+
+**Ejemplo Técnico (8 sesiones × 7.5h):**
+
+```
+S1     ← B0 APERTURA
+S2-S7  ← B1-B4 APROPIACIÓN (4 RAPs · LLM distribuye en pm-1-1 v2.8)
+S8     ← BT TRANSFERENCIA
+```
+
+**Ejemplo Tecnológico (16 sesiones):**
+
+```
+S1     ← B0 APERTURA
+S2-S14 ← B1-B6 APROPIACIÓN (6 RAPs)
+S15-S16 ← BT TRANSFERENCIA
+```
+
+### §15.4 · Tabla 3 schemas diferenciados por tipo_bloque (sesión)
+
+| tipo_bloque sesión | Campos clave | Heredados de |
+|---|---|---|
+| **APERTURA** | `pms_destino_canon`, `actividades_planeadas` (4 spark + diagnóstico) · `transversal: true` · sin evidencias formales | pm-1-1.B0 + pm-1-2.B0 (materiales_spark · vocab_diagnostico · etc.) |
+| **APROPIACIÓN** | `rap_target` · `pms_destino_canon` (subset 2.3-2.10) · `criterios_canon_evaluables_en_sesion` · `actividades_planeadas` con `_produces_evidencia` E1-E6 mapping | pm-1-1.B[N] + pm-1-2.B[N] (story_a_reading · story_b_listening · vocab · functions · grammar · tasks) |
+| **TRANSFERENCIA** | `capstone: true` · `pms_destino_canon` ([PM-3.5]) · `actividades_planeadas` con `_produces_evidencia: E-Misión` + `subfase_abp` (1-5) | pm-1-1.BT + pm-1-2.BT (mission_brief · subfases_abp · materiales_simulacion · rubrica_capstone) |
+
+### §15.5 · Heredancia automática traceability (REGLA 10 PM-2.0)
+
+PM-2.0 v3.0 NO recrea metadata. SOLO copia literal de pm-1-2 a `_anclaje_matriz_heredado`:
+
+```jsonc
+{
+  "actividades_planeadas": [
+    {
+      "ref_pm12_path": "sub_bloques_tripartitos[1].story_a_reading",
+      "consumed_by_pm": "PM-2.3",            // literal copy de pm-1-2.story_a._consumed_by_pm
+      "_produces_evidencia": "E1",           // literal copy de pm-1-2.story_a._produces_evidencia
+      "_anclaje_matriz_heredado": { /* literal copy de pm-1-2.story_a._anclaje_matriz */ }
+    }
+  ]
+}
+```
+
+**ZERO invención.** Si pm-1-2 tiene drift, PM-2.0 hereda drift (auditoría upstream resuelve).
+
+### §15.6 · Workflow operacional Step 1.4
+
+```
+Input gates:
+  ✓ pm-1-1.json v2.8+ (validado 9/9 PASS · estructura tripartita)
+  ✓ pm-1-2.json v4.2+ (validado 6/6 PASS · scope diferenciado)
+  ✓ pm-0-0-matriz-alineada.json v1.2+ (8 criterios canon)
+  ✓ pm-0-context.json v3.2+ (universo)
+        ↓
+Trigger interno orchestrator (3 checks pre-dispatch):
+  1. ¿pm-1-1 + pm-1-2 ambos validados PASS? Si NO → STOP
+  2. ¿Mi prompt enfatiza HEREDANCIA + secuenciación temporal + libertad LIMITADA? Si NO → refactor
+  3. ¿Mi prompt incluye 8 validation_checks BLOQUEANTES? Si NO → agregar
+        ↓
+Dispatch Agent PM-2.0 v3.0 (prompt anti-prescriptive · libertad LIMITADA)
+        ↓
+Output pm-2-0.json v3.0 maestro:
+  ├─ programa metadata
+  ├─ session_blueprint (N sesiones · cada una con tipo_bloque + actividades heredadas)
+  ├─ evidencias_secuencia_temporal (E1-E6+E-Misión mapping ordenado)
+  └─ validation_checks
+        ↓
+Validation 8/8 PASS:
+  1-6 (preservados v2.6 re-formulados) · 7-8 (NEW v3.0)
+        ↓
+Si 8/8 PASS → Step 1.5 PM-2.x downstream cascade (PM-2.1-2.10 + PM-2.11 + PM-3.5)
+```
+
+### §15.7 · Trigger interno orchestrator (3 checks pre-dispatch)
+
+ANTES de dispatchear Agent PM-2.0 v3.0:
+
+1. **¿pm-1-1.json v2.8+ Y pm-1-2.json v4.2+ están validados PASS?**
+   - Si NO → STOP · re-run upstream antes de PM-2.0
+
+2. **¿Mi prompt al Agent contiene los 4 elementos canónicos v3.0?**
+   - HEREDANCIA explícita (sesiones_anchor + pms_destino + _anclaje_matriz + _produces_evidencia)
+   - SECUENCIACIÓN temporal (cómo distribuir actividades dentro de las 6h de cada sesión)
+   - LIBERTAD LIMITADA explicita (vs PM-1.1/1.2 amplia)
+   - Cero invención (LLM NO inventa distribución · NO inventa evidencias · NO inventa PMs preset)
+
+3. **¿Mi prompt incluye 8 validation_checks como BLOQUEANTES?**
+   - Si NO → agregar (especialmente checks 7-8 nuevos: tipo_bloque_consistente + traceability_heredada_completa)
+
+### §15.8 · Caso operacional confirmado IMARPOR-V2 (pendiente Step 1.4.D dispatch)
+
+**Input:**
+- pm-1-1.json v2.8 v2 CORREGIDA · 6 bloques (B0+B1-B4+BT) · 9/9 PASS
+- pm-1-2.json v4.2 v2 CORREGIDA · 1 meta + 6 sub_bloques · 6/6 PASS · 23 elementos productores
+- matriz v1.3 CORREGIDA · 4 RAPs · 8 criterios canon · 8/8 PASS
+- pm-0-context.json v3.2 · 21 keys · 44 anclajes · 7/7 PASS
+
+**Output esperado pm-2-0.json v3.0:**
+- 12 sesiones (S1-S12) · cada una con tipo_bloque + bloque_id_referencia + actividades_planeadas heredadas
+- Evidencias_secuencia_temporal: E1@S3 · E2@S4 · E3@S5 · E4-parcial@S6 · E6@S6 · E4-final@S8 · E5@S9 · E-Misión@S12
+- 8/8 validation_checks PASS
+
+### §15.9 · Aplicabilidad cross-program
+
+| Programa | Sesiones | Distribución heredada |
+|---|---|---|
+| IMARPOR-V2 (CC) | 12 | S1 / S2-S10 / S11-S12 |
+| MGV (Tecnológico) | 16 | S1 / S2-S14 / S15-S16 |
+| INGBAS4-2026 (CC) | 12 | S1 / S2-S10 / S11-S12 |
+| INGBAS1-AGRO-2026 (CC) | 12 | S1 / S2-S10 / S11-S12 |
+| Técnico ADSO (4 RAPs) | 8 | S1 / S2-S7 / S8 |
+
+### §15.10 · Cascade impact downstream
+
+PM-2.0 v3.0 alimenta a:
+- **PM-2.1** (S1 APERTURA · consume `actividades_planeadas[type=spark]`)
+- **PM-2.2** (S1 APERTURA · consume `actividades_planeadas[type=gap_analysis]`)
+- **PM-2.3** (S3 APROPIACIÓN B1 · consume `actividades_planeadas[ref_pm12_path=*story_a_reading]` · produce E1)
+- **PM-2.4** (S4 APROPIACIÓN B1 · consume `task_writing_derivada` · produce E2)
+- **PM-2.5** (varias S APROPIACIÓN · consume `key_vocabulary_per_rap`)
+- **PM-2.6** (S5 APROPIACIÓN B2 · consume `story_b_listening` · produce E3)
+- **PM-2.8** (S6 + S8 APROPIACIÓN B2/B3 · consume `task_speaking_derivada` · produce E4)
+- **PM-2.9** (S9 APROPIACIÓN B4 · consume `task_speaking_derivada` Role Carousel · produce E5)
+- **PM-2.10** (varias S APROPIACIÓN · consume `grammar_items_per_rap`)
+- **PM-2.11** (Row Assembler · agrega cols 1-11 GFPI-F-134 desde session_blueprint)
+- **PM-3.5** (S11-S12 TRANSFERENCIA · consume `mission_brief + rubrica_capstone` · produce E-Misión)
+- **PM-4.2** (S6 · consume `task_consolidacion_E6` · produce E6 Cuestionario S6)
+
+### §15.11 · Memoria operacional referenciada
+
+Pattern canonical PM-2.0 v3.0 documentado en master prompt PM-2.0 EXTENSIÓN v3.0 (REGLAS 7-15). Esta sección §15 documenta workflow operacional + cases canónicos + trigger interno orchestrator.
+
+**Cuando dispatchear Agent PM-2.0 v3.0 en cualquier programa nuevo:**
+1. Validar 4 input gates (pm-1-1 v2.8+ · pm-1-2 v4.2+ · matriz · contexto)
+2. Aplicar 3 checks pre-dispatch (§15.7)
+3. Construir prompt anti-prescriptive con énfasis HEREDANCIA (libertad LIMITADA)
+4. Dispatchear Agent
+5. Validar 8/8 checks PASS
+6. Si PASS → Step 1.5 PM-2.x downstream cascade
