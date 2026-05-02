@@ -1,9 +1,10 @@
 ---
 title: DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo
-version: 3.2
+version: 3.3
 last_updated: 2026-05-01
 status: PARADIGM SHIFT FUNDAMENTAL · NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1. Sergio Cortés decisión arquitectónica 2026-05-01: el sistema diseñaba "de adentro hacia afuera" en teoría (DM declaraba UbD desde v2.0) pero en práctica reconstruía la matriz GFPI-F-134 retroactivamente en PM-2.11 (al final de Fase 2) usando información agregada que el LLM había procesado sin saber a qué RAP pertenecía cada saber/criterio. v3.0 corrige: PM-0.0 (NEW) toma información curricular SOFÍA agregada (saberes_conceptos + saberes_proceso + criterios_evaluacion + N RAPs · sin pre-clasificar) y ALINEA explícitamente por RAP. Output `pm-0-0-matriz-alineada.json` se vuelve fundamento pedagógico de toda la cadena downstream. PM-0 simplifica de 1077 → ~270 lines operacionales (5 principios maestros · libertad LLM · schema mínimo viable). Cascade impact: PM-0 + PM-1.1 + PM-1.2 + PM-2.0 + PM-2.x + PM-2.11 + PM-3.7 ahora consumen matriz alineada como insumo. PM-3.7 V04 multi-RAP rows se llenan con contenido REAL por RAP (no solo título RAP en R18-R21). DOCX/JSON learner-readable v2.7 (30 Activity Cards anatomy 6-bloque) preservado · NO afectado.
 previous_versions:
+  - "3.2 (2026-05-01) — Criterios específicos canon sistema (8 C01-C08) + TRACEABILITY `_anclaje_matriz` cross-PM · 4 master docs bumps (PM-0.0 v1.2 · PM-0 v3.2 · PLAN-FASE-1 v1.2 · DM v3.2)"
   - "3.1 (2026-05-01) — Anti-patrón #16 prompt operacional prescriptivo canonizado · 4 master docs bumps (PM-0.0 v1.1 · PM-0 v3.1 · PLAN-FASE-1 v1.1 · DM v3.1)"
   - "3.0 (2026-05-01) — PARADIGM SHIFT FUNDAMENTAL · NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1 · PM-0 v1.x → v3.0 simplificado · cascade impact toda pipeline"
   - "2.7 (2026-04-22) — Learner-Readable Activity canonizada · 30 Activity Cards PM-3.6 G1 anatomy 6-bloque"
@@ -2066,7 +2067,94 @@ PM-0.0 → PM-0 → PM-1.1 → PM-1.2 → PM-2.x ACs → PM-2.11 → PM-3.6 (GFP
 
 ---
 
+## EXTENSIÓN v3.3 — PM-1.1 ESTRUCTURA TRIPARTITA + TIEMPOS CANON UNIVERSALES (2026-05-01)
+
+**Trigger del bump:** Sergio canonizó (2026-05-01 Step 1.2 IMARPOR-V2) que la pipeline pedagógica FPI Factory NO es plana. Tiene estructura tripartita real:
+
+- **PM-2.1 + PM-2.2 son TRANSVERSALES** por competencia (4 arquetipos · 2+2 · MÁXIMO 6h directas = 1 sesión)
+- **PM-2.3 a PM-2.10 son POR RAP** (apropiación · cada RAP tiene su set completo de habilidades)
+- **PM-3.5 Final Mission es CAPSTONE INTEGRADOR** transversal (5 sub-fases ABP · MÁXIMO 12h directas = 2 sesiones)
+
+PM-1.1 v2.7.1 NO reflejaba esto. Generaba bloques uniformes · downstream tenía que re-decidir tipo. v2.8 canoniza estructura tripartita + tiempos canon UNIVERSALES (cualquier programa: técnico · tecnológico · CC · curso especial).
+
+**Lección canonizada universal:**
+
+- Las restricciones APERTURA=6h/1sesión y TRANSFERENCIA≤12h/≤2sesiones son CANON UNIVERSAL · independiente del tipo de programa
+- APROPIACIÓN consume el resto de horas/sesiones · LLM distribuye entre N RAPs respetando sesiones canon de evidencias C01-C07
+- Cada bloque tiene schema diferenciado por `tipo_bloque` (APERTURA · APROPIACION · TRANSFERENCIA) con `_anclaje_matriz` apropiado
+- `regla_bloques` v2.7.1 (alineacion_1a1, etc.) aplica SOLO al sub-tipo APROPIACIÓN
+
+**Bumps ejecutados (3 master docs):**
+
+- **PM-1.1 v2.7.1 → v2.8** (EXTENSIÓN v2.8 · REGLAS 7-14 · 9 validation_checks BLOQUEANTES · 3 schemas diferenciados · canon tiempos universales · tabla cross-PM destino)
+- **PLAN-FASE-1 v1.2 → v1.3** (NEW §13 PM-1.1 Tripartita Workflow · 11 sub-secciones · ejemplos por tipo programa · trigger interno orchestrator · aplicabilidad cross-program)
+- **DM v3.2 → v3.3** (esta extensión documenta canon)
+
+**Estructura tripartita canon (visual):**
+
+```
+1 BLOQUE APERTURA       → PM-2.1 + PM-2.2  → 6h / 1 sesión exacto
+N BLOQUES APROPIACIÓN   → PM-2.3-2.10      → resto (LLM distribuye entre RAPs)
+1 BLOQUE TRANSFERENCIA  → PM-3.5           → ≤12h / ≤2 sesiones (capstone E-Misión C08)
+
+Total bloques = 1 + N + 1 = N + 2 donde N = raps_count
+```
+
+**Tabla tiempos canon universales:**
+
+| `tipo_bloque` | `sesiones_count` | `horas_directas` | Canon |
+|---|---|---|---|
+| APERTURA | exactamente 1 | exactamente 6h | OBLIGATORIO `=` |
+| APROPIACIÓN | N (LLM distribuye) | total − 6 − transferencia | flexible |
+| TRANSFERENCIA | ≤ 2 | ≤ 12h | OBLIGATORIO `≤` ambas |
+
+**Pattern canonical orchestrator (cross-program · cross-PM):**
+
+```
+ANTES de dispatchear Agent PM-1.1 v2.8:
+
+1. ¿pm-0-0-matriz-alineada.json incluye 8 criterios canon C01-C08?
+   - Si NO → STOP · re-run PM-0.0 v1.2
+
+2. ¿Mi prompt al Agent contiene ESTRUCTURA TRIPARTITA + TIEMPOS CANON + TRACEABILITY?
+   - Si NO → refactor (agregar 3 elementos canónicos v2.8)
+
+3. ¿Mi prompt pasa template literal con bloques pre-fabricados?
+   - Si SÍ → STOP · solo obligatorios + contexto + libertad LLM real
+```
+
+**Caso operacional confirmado IMARPOR-V2 (pendiente dispatch):**
+
+- Input: 4 RAPs + 8 criterios C01-C08 + 12 sesiones × 6h
+- Output esperado: 6 bloques (1 + 4 + 1)
+  - APERTURA: S1 · 6h
+  - APROPIACIÓN: S2-S10 · 54h · 4 RAPs
+  - TRANSFERENCIA: S11-S12 · 12h
+- 9/9 validation_checks PASS
+
+**Aplicabilidad cross-program (cualquier tipo · cualquier RAPs count):**
+
+| Programa | RAPs | Bloques | Distribución |
+|---|---|---|---|
+| IMARPOR-V2 (CC) | 4 | 6 | S1 / S2-S10 / S11-S12 |
+| MGV (Tecnológico) | 6 | 8 | S1 / S2-S14 / S15-S16 |
+| INGBAS4-2026 (CC) | 3 | 5 | S1 / S2-S10 / S11-S12 |
+| INGBAS1-AGRO-2026 (CC) | 2 | 4 | S1 / S2-S10 / S11-S12 |
+| Técnico ADSO (4 RAPs) | 4 | 6 | S1 / S2-S7 / S8 |
+
+**Cascade impact downstream (pendiente Step 1.3+):**
+
+- PM-1.2 v4.1 → v4.2 (NEW REGLA scope diferenciado por tipo_bloque · APROPIACIÓN requiere curación POR RAP · APERTURA/TRANSFERENCIA NO)
+- PM-2.0 architect (session blueprint hereda tipo_bloque + tiempos canon)
+- PM-2.1, PM-2.2 (toman input bloque APERTURA · transversal)
+- PM-2.3-2.10 (toman input bloque APROPIACIÓN del RAP correspondiente)
+- PM-3.5 (toma input bloque TRANSFERENCIA capstone)
+
+**Memory snapshot:** `feedback_pm11_tripartita_tiempos_canon.md` (canon pattern · 3 schemas · 9 validation_checks · trigger interno orchestrator · ejemplos cross-program)
+
+---
+
 *DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo*
-*Fábrica Curricular v3.2 — CRITERIOS ESPECÍFICOS CANON SISTEMA + TRACEABILITY · disciplina "nada por fuera de la matriz" · libertad LLM con límites canon visibles · 8 criterios C01-C08 con anclas E1-E6+E-Misión · `_anclaje_matriz` cross-PM · validation bloqueantes · canon Sergio Cortés 2026-05-01*
-*Versiones legacy preserved: v3.1 Anti-patrón #16 + v3.0 PARADIGM SHIFT NEW PM-0.0 + v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
+*Fábrica Curricular v3.3 — PM-1.1 ESTRUCTURA TRIPARTITA + TIEMPOS CANON UNIVERSALES · 1 APERTURA (6h/1s) + N APROPIACIÓN (resto) + 1 TRANSFERENCIA (≤12h/≤2s) · `tipo_bloque` con schema diferenciado · `_anclaje_matriz` heredado v3.2 · 9 validation_checks BLOQUEANTES · canon Sergio Cortés 2026-05-01*
+*Versiones legacy preserved: v3.2 Criterios canon + Traceability + v3.1 Anti-patrón #16 + v3.0 PARADIGM SHIFT NEW PM-0.0 + v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
 *Instructor Sergio · Abril–Mayo 2026*

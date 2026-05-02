@@ -6,14 +6,18 @@
 
 **Metadata:**
 ```yaml
-version: 2.7.1
-last_verified: 2026-04-27
+version: 2.8
+last_verified: 2026-05-01
+status: v2.8 PARADIGM SHIFT estructura tripartita + tiempos canon universales + traceability _anclaje_matriz heredado v3.2 (cascade Phase 1 IMARPOR-V2 Step 1.2 · post PM-0.0 v1.2 + PM-0 v3.2)
 required_inputs:
-  - pm0_anchors_ref       # Ruta a pm-0-context.json del programa (v2.6)
+  - pm00_matriz_ref       # NEW v2.8 · referencia a pm-0-0-matriz-alineada.json (PM-0.0 v1.2 · 8 criterios canon)
+  - pm0_anchors_ref       # Ruta a pm-0-context.json del programa (v2.6) · ahora PM-0 v3.2
   - tipo                  # "Técnico" | "Tecnológico" | "Curso Especial" | "Curso Complementario" (v2.7.1)
   - total_guias           # Número libre de bloques decidido por el instructor (v2.7)
-  - duracion_total_horas  # Para validación horas/bloque ≥ 48h (v2.7)
-  - regla_bloques         # RESTAURADO en v2.7.1 — debe declarar uno de los 4 patrones canónicos
+  - duracion_total_horas  # Para validación horas/bloque ≥ 48h (v2.7) + tiempos canon tripartita (v2.8)
+  - regla_bloques         # RESTAURADO en v2.7.1 · v2.8 aplica SOLO a sub-tipo APROPIACIÓN
+  - sesiones_count        # NEW v2.8 · número total de sesiones del programa (típicos: 8 técnico · 12 CC · 16 tecnológico)
+  - horas_por_sesion      # NEW v2.8 · típicamente 6h CC / 7.5h técnico · usado para tiempos canon tripartita
 conditional_inputs:
   # Si tipo ∈ {Técnico, Tecnológico}:
   - diseño_curricular
@@ -27,6 +31,13 @@ optional_inputs:
   - nombre_competencia
   - codigo_rap
   - nombre_rap
+v2_8_changes:
+  - "NEW estructura tripartita obligatoria: 1 APERTURA + N APROPIACIÓN + 1 TRANSFERENCIA (REGLA 7)"
+  - "NEW tiempos canon universales: APERTURA=6h/1sesión · TRANSFERENCIA≤12h/≤2sesiones · APROPIACIÓN=resto (REGLA 8)"
+  - "NEW schema diferenciado por tipo_bloque + _anclaje_matriz heredado v3.2 (REGLA 9)"
+  - "NEW prompt operacional anti-prescriptivo · libertad LLM REAL (REGLA 10 · canonización Anti-patrón #16)"
+  - "NEW 8 validation_checks (5 estructurales + 3 tiempos) + check 7 traceability heredado"
+  - "regla_bloques v2.7.1 PRESERVADA aplicando SOLO a sub-tipo APROPIACIÓN"
 v2_7_1_corrections:
   - "Restaurado regla_bloques con enum de 4 patrones (no eliminado, expandido)"
   - "Asimetría tipo-programa para proyecto formativo: solo aplica Técnico/Tecnológico"
@@ -340,4 +351,295 @@ Si NO se proporcionaron estos datos, establece `provided: false` y deja los camp
 
 *PM-1.1: Ruta Macrotemática (5/10 Bloques)*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
+
+---
+
+## EXTENSIÓN v2.8 — ESTRUCTURA TRIPARTITA + TIEMPOS CANON + TRACEABILITY (2026-05-01)
+
+> [!warning] PARADIGM SHIFT canonizado · Sergio Cortés decisión arquitectónica 2026-05-01
+>
+> PM-1.1 v2.7.1 generaba bloques macrotemáticos sin diferenciar TIPO de bloque pedagógico. v2.8 canoniza la **estructura tripartita** que refleja cómo realmente se despliega la pipeline FPI Factory: APERTURA (transversal) + APROPIACIÓN (por RAP) + TRANSFERENCIA (transversal capstone). Esta estructura se hereda de la realidad operacional: PM-2.1/PM-2.2 son transversales por competencia, PM-2.3 a PM-2.10 son por RAP, PM-3.5 Final Mission es capstone integrador.
+>
+> **Razón:** Sergio detectó (2026-05-01 Step 1.2 IMARPOR-V2) que PM-1.1 v2.7.1 trataba todos los bloques uniformemente. Esto causaba que downstream (PM-1.2, PM-2.0) tuviera que re-decidir qué bloques son apropiación vs transversales, perdiendo la traceability canon. La matriz alineada (PM-0.0 v1.2) ya tiene la información canónica · PM-1.1 v2.8 la respeta y la propaga.
+>
+> **Reglas v2.7.1** (1-6) permanecen como REFERENCIA para `regla_bloques` aplicado a sub-tipo APROPIACIÓN. Las nuevas REGLAS 7-10 son canon obligatorio.
+
+### REGLA 7 — ESTRUCTURA TRIPARTITA OBLIGATORIA
+
+El output `pm-1-1.json` v2.8 DEBE contener exactamente 3 tipos de bloque:
+
+```
+1. BLOQUE APERTURA       (transversal · 1 bloque único)
+2. BLOQUES APROPIACIÓN   (1 bloque por RAP · alimenta PM-2.3 a PM-2.10 de ese RAP)
+3. BLOQUE TRANSFERENCIA  (transversal capstone · 1 bloque único)
+```
+
+Para `N` RAPs en la matriz alineada (PM-0.0):
+
+```
+total_bloques = 1 (APERTURA) + N (APROPIACIÓN) + 1 (TRANSFERENCIA) = N + 2
+```
+
+Ejemplo IMARPOR-V2 (4 RAPs) → 6 bloques (1 + 4 + 1).
+Ejemplo Tecnológico (6 RAPs) → 8 bloques (1 + 6 + 1).
+Ejemplo Técnico (4 RAPs) → 6 bloques (1 + 4 + 1).
+
+**NO ES OPCIONAL.** Si el output tiene un bloque sin `tipo_bloque` declarado, validation_check 1 FAIL → BLOQUEANTE.
+
+### REGLA 8 — TIEMPOS CANON UNIVERSALES
+
+Independiente del tipo de programa (Técnico · Tecnológico · Curso Especial · Curso Complementario):
+
+| `tipo_bloque` | `sesiones_count` | `horas_directas` | Canon |
+|---|---|---|---|
+| **APERTURA** | exactamente 1 | exactamente 6h | OBLIGATORIO `=` |
+| **APROPIACIÓN** | N (LLM distribuye entre RAPs) | (total_programa − APERTURA − TRANSFERENCIA) | flexible · LLM balancea |
+| **TRANSFERENCIA** | máximo 2 | máximo 12h | OBLIGATORIO `≤` |
+
+**Caso operacional IMARPOR-V2 (12 sesiones × 6h = 72h directas):**
+```
+S1                  APERTURA      6h    1 sesión
+S2 — S10            APROPIACIÓN   54h   9 sesiones (4 RAPs · LLM distribuye)
+S11 — S12           TRANSFERENCIA 12h   2 sesiones
+                                  ───   ──────────
+                                  72h   12 sesiones ✓
+```
+
+**Caso operacional Técnico (8 sesiones × 7.5h = 60h directas):**
+```
+S1                  APERTURA      6h    1 sesión (canon universal · NO 7.5h)
+S2 — S7             APROPIACIÓN   42h   6 sesiones (LLM distribuye entre RAPs)
+S8                  TRANSFERENCIA 12h   2 sesiones... wait, S8 sola = 1 sesión × 7.5h
+                                                       
+Ajuste: TRANSFERENCIA ≤ 12h ≤ 2 sesiones · si programa tiene sesiones de 7.5h, 
+TRANSFERENCIA puede ser 1 sesión × 7.5h (si suficiente) o 2 sesiones × 7.5h = 15h... 
+PERO canon dice ≤ 12h. Entonces TRANSFERENCIA = 1 sesión × 7.5h cuando sesión > 6h.
+
+Regla refinada: TRANSFERENCIA = MIN(2 sesiones, 12h)
+```
+
+**Resolución regla refinada:**
+- TRANSFERENCIA tiene `sesiones_count ≤ 2` Y `horas_directas ≤ 12`
+- Ambas condiciones deben cumplirse simultáneamente
+- LLM elige la combinación apropiada al programa
+
+### REGLA 9 — SCHEMA DIFERENCIADO POR `tipo_bloque` + `_anclaje_matriz` HEREDADO v3.2
+
+Cada bloque del output tiene schema diferente según su `tipo_bloque`:
+
+#### Schema APERTURA (transversal)
+
+```jsonc
+{
+  "bloque_id": "B0",
+  "tipo_bloque": "APERTURA",
+  "transversal": true,
+  "titulo": "...",                          // LLM elige · ESP industrial
+  "narrativa_macrotematica": "...",         // LLM redacta
+  "sesiones_anchor": ["S1"],                // canon: 1 sesión
+  "horas_directas": 6,                      // canon: exactamente 6h
+  "_anclaje_matriz": {
+    "alcance": "competencia_completa",
+    "raps_atravesados": ["RA1", "RA2", "RA3", "RA4"],   // todos
+    "pms_destino": ["PM-2.1", "PM-2.2"],
+    "arquetipos_target": 4,                              // 2 PM-2.1 + 2 PM-2.2
+    "evidencias_target": [],                             // sin evidencias formales
+    "criterios_canon": []                                // sin criterios canon
+  }
+}
+```
+
+#### Schema APROPIACIÓN (por RAP)
+
+```jsonc
+{
+  "bloque_id": "B1",
+  "tipo_bloque": "APROPIACION",
+  "transversal": false,
+  "titulo": "...",                          // LLM elige · ESP industrial
+  "narrativa_macrotematica": "...",         // LLM redacta
+  "sesiones_anchor": ["S2", "S3", "S4"],    // LLM decide
+  "horas_directas": 18,                     // LLM calcula = sum(sesiones × 6h)
+  "regla_bloques_aplicada": "alineacion_1a1",  // del v2.7.1 · obligatorio aquí
+  "_anclaje_matriz": {
+    "rap_target": "RA1",                              // UN RAP principal
+    "raps_secundarios": [],                           // si overlap multi-RAP
+    "saberes_conceptos_cubiertos": ["RA1.SC.1", "RA1.SC.2"],
+    "saberes_proceso_cubiertos": ["RA1.SP.1"],
+    "criterios_canon_assigned": ["C01", "C02"],       // subset de los que PM-0.0 asignó a RA1
+    "pms_destino": ["PM-2.3", "PM-2.4", "PM-2.5", "PM-2.6", "PM-2.8", "PM-2.9", "PM-2.10"],
+    "evidencias_target": ["E1", "E2"],
+    "sesiones_anchor": ["S2", "S3", "S4"],            // debe incluir sesiones canon de evidencias
+    "cefr_subnivel": "A1.2"
+  }
+}
+```
+
+#### Schema TRANSFERENCIA (capstone)
+
+```jsonc
+{
+  "bloque_id": "BT",
+  "tipo_bloque": "TRANSFERENCIA",
+  "transversal": true,
+  "capstone": true,
+  "titulo": "...",                          // LLM elige · típicamente "Final Mission · ..."
+  "narrativa_macrotematica": "...",         // LLM redacta · 5 sub-fases ABP
+  "sesiones_anchor": ["S11", "S12"],        // canon: ≤ 2 sesiones
+  "horas_directas": 12,                     // canon: ≤ 12h
+  "_anclaje_matriz": {
+    "alcance": "todos_los_raps_integrados",
+    "raps_movilizados": ["RA1", "RA2", "RA3", "RA4"],   // todos
+    "pms_destino": ["PM-3.5"],
+    "criterios_canon": ["C08"],                          // canon: C08 capstone
+    "evidencias_target": ["E-Misión"],                   // canon: E-Misión
+    "sesiones_anchor": ["S11", "S12"],
+    "subfases_abp": 5                                    // 5 sub-fases canon ABP
+  }
+}
+```
+
+**Disciplina canon (heredada de PM-0 v3.2 REGLA 12):** cada bloque DEBE tener `_anclaje_matriz` non-empty con los campos requeridos según su `tipo_bloque`. Sin esto, validation_check 7 FAIL → BLOQUEANTE.
+
+### REGLA 10 — PROMPT OPERACIONAL DEBE RESPETAR LIBERTAD LLM (heredado §10/§11/§12 PLAN-FASE-1)
+
+El orchestrator que dispatchea Agent ejecutando PM-1.1 v2.8 DEBE:
+
+SÍ pasar al Agent:
+- Master prompt PM-1.1 v2.8 completo (canon strict · REGLAS 7-10)
+- `pm-0-0-matriz-alineada.json` (input principal · matriz canon con 8 criterios C01-C08)
+- `pm-0-context.json` v3.2 (universo narrativo · personajes · grammar focus · todos con `_anclaje_matriz`)
+- 8 validation_checks (5 estructurales + 3 tiempos) como BLOQUEANTES
+- Bloque "INSTRUCCIÓN CRÍTICA · LIBERTAD LLM REAL" explícito
+
+NO pasar al Agent:
+- Template JSON literal con N+2 bloques pre-fabricados
+- Distribución sesiones APROPIACIÓN entre RAPs decidida por orchestrator
+- Títulos de bloques pre-decididos
+- `regla_bloques` decidido por orchestrator (LLM elige `alineacion_1a1` · `desdoblamiento_1aN` · etc.)
+- Narrativa macrotemática pre-redactada
+
+**LIBERTAD LLM REAL** sobre:
+- Cuántas sesiones APROPIACIÓN consume cada RAP (LLM balancea 9 sesiones entre 4 RAPs según complejidad)
+- Qué `regla_bloques` aplica a APROPIACIÓN (`alineacion_1a1` típico · `desdoblamiento_1aN` si un RAP es muy complejo)
+- Títulos ESP industriales (LLM crea desde universo PM-0 v3.2)
+- Narrativa macrotemática (LLM redacta desde personajes/grammar focus PM-0)
+- Cómo distribuye criterios canon overlap multi-RAP (e.g., C02 RA1+RA3: en bloque RA1 o RA3 o ambos)
+
+**LIBERTAD LLM SOBRE NADA**:
+- Estructura tripartita (REGLA 7 canon obligatorio)
+- Tiempos canon (REGLA 8 universal)
+- Schema diferenciado por tipo (REGLA 9 obligatorio)
+- 8 validation_checks (todos BLOQUEANTES)
+- Sesiones canon de evidencias C01-C08 (heredadas de PM-0.0 · NO modificables)
+
+### REGLA 11 — VALIDATION POST-GENERATION · 8 CHECKS
+
+```jsonc
+"validation_checks": [
+  {"id": 1, "name": "estructura_tripartita_completa", "status": "PASS|FAIL"},   // 1 + N + 1
+  {"id": 2, "name": "apropiacion_cobertura_raps_1a1", "status": "PASS|FAIL"},   // N bloques APROPIACIÓN = N RAPs
+  {"id": 3, "name": "transversalidad_correcta", "status": "PASS|FAIL"},         // APERTURA/TRANSFERENCIA transversal:true
+  {"id": 4, "name": "cobertura_criterios_canon_completa", "status": "PASS|FAIL"}, // C01-C07 en APROPIACIÓN según PM-0.0 · C08 en TRANSFERENCIA
+  {"id": 5, "name": "pms_destino_correctos_por_tipo", "status": "PASS|FAIL"},   // APERTURA→{2.1,2.2} · APROPIACIÓN→{2.3-2.10} · TRANSFERENCIA→{3.5}
+  {"id": 6, "name": "apertura_horas_canon", "status": "PASS|FAIL"},             // APERTURA = 6h · 1 sesión exacto
+  {"id": 7, "name": "transferencia_horas_canon", "status": "PASS|FAIL"},        // TRANSFERENCIA ≤ 12h · ≤ 2 sesiones
+  {"id": 8, "name": "apropiacion_horas_balanced", "status": "PASS|FAIL"},       // sum(APROPIACIÓN.horas) = total_horas - APERTURA - TRANSFERENCIA
+  {"id": 9, "name": "traceability_matriz_completa", "status": "PASS|FAIL"}      // hereda PM-0 v3.2 REGLA 12 · _anclaje_matriz en cada bloque
+]
+```
+
+Si CUALQUIER check FAIL · output marcado `enriched: false` · BLOQUEANTE para Step 1.3 (PM-1.2 cascade).
+
+### REGLA 12 — SESIONES CANON DE EVIDENCIAS PRESERVADAS
+
+PM-0.0 v1.2 asigna sesiones canon a las 8 evidencias C01-C08:
+
+| Evidencia | Sesión canon | Asignada a bloque |
+|---|---|---|
+| C01 Reading | S3 | bloque APROPIACIÓN del RAP target (RA1) |
+| C02 Writing | S4 | bloque APROPIACIÓN del RAP target principal (RA1 o RA3 · LLM elige) |
+| C03 Listening | S5 | bloque APROPIACIÓN del RAP target (RA2) |
+| C04 Speaking parcial | S6 | bloque APROPIACIÓN del RAP target principal (RA2 o RA3) |
+| C05 Speaking final | S8 | bloque APROPIACIÓN del RAP target (RA3) |
+| C06 Lang Functions | S9 | bloque APROPIACIÓN del RAP target principal (RA3 o RA4) |
+| C07 Cuestionario S6 | S6 | bloque APROPIACIÓN intersectivo (4-way · típicamente RA2 o RA3) |
+| C08 Misión Final | S12 | bloque TRANSFERENCIA capstone |
+
+**Cada bloque APROPIACIÓN debe declarar `sesiones_anchor` que INCLUYA las sesiones canon donde caen sus criterios asignados.**
+
+Ejemplo IMARPOR-V2 distribución posible:
+- Bloque RA1 (B1): sesiones_anchor=[S2,S3,S4] · incluye S3 (C01) y S4 (C02)
+- Bloque RA2 (B2): sesiones_anchor=[S5,S6] · incluye S5 (C03) y S6 (C04, C07)
+- Bloque RA3 (B3): sesiones_anchor=[S7,S8] · incluye S8 (C05)
+- Bloque RA4 (B4): sesiones_anchor=[S9,S10] · incluye S9 (C06)
+- Bloque TRANSFERENCIA (BT): sesiones_anchor=[S11,S12] · incluye S12 (C08)
+
+LLM tiene libertad de proponer otra distribución siempre que sesiones canon de evidencias se respeten.
+
+### REGLA 13 — RELACIÓN CON OTROS PROMPTS v2.8
+
+| Relación | Prompt | Cambio v2.8 |
+|----------|--------|-------------|
+| **Consume de (NEW · CRÍTICO)** | PM-0.0 v1.2 | matriz pedagógica alineada con 8 criterios canon |
+| **Consume de** | PM-0 v3.2 | universo narrativo + personajes + grammar focus + L1 policy |
+| **Alimenta a** | PM-1.2 v4.2+ | scope diferenciado por tipo_bloque (APROPIACIÓN requiere curación POR RAP · APERTURA/TRANSFERENCIA NO) |
+| **Alimenta a** | PM-2.0 architect | session blueprint hereda tipo_bloque + tiempos canon |
+| **Alimenta a** | PM-2.1, PM-2.2 | toman input del bloque APERTURA (transversal) |
+| **Alimenta a** | PM-2.3 a PM-2.10 | toman input del bloque APROPIACIÓN del RAP correspondiente |
+| **Alimenta a** | PM-3.5 | toma input del bloque TRANSFERENCIA capstone |
+
+### REGLA 14 — DEPRECATION PATH v2.7.1 → v2.8
+
+Programas con `pm-1-1.json` v2.7.1 (sin estructura tripartita · sin `_anclaje_matriz` · sin tiempos canon):
+- KEEP los archivos legacy en run dir (NO eliminar · son canon histórico)
+- Generar nuevo `pm-1-1.json` v2.8 cuando se re-run el programa
+- Marcar artefactos v2.7.1 como `*.legacy-v2-7-1` (sufijo informativo · NO mover)
+
+Run resultante puede tener AMBOS: legacy v2.7.1 (para auditoría) + v2.8 (operacional).
+
+---
+
+## ESTRUCTURA OPERACIONAL v2.8 (resumen ejecutivo)
+
+```
+pm-0-0-matriz-alineada.json (PM-0.0 v1.2 · 8 criterios canon C01-C08)
+  +
+pm-0-context.json (PM-0 v3.2 · universo + _anclaje_matriz)
+  +
+pm-1-1-input.json (tipo programa · sesiones_count · horas_por_sesion · regla_bloques default)
+  ↓
+PM-1.1 v2.8 dispatcher (Agent con prompt anti-prescriptive · libertad LLM REAL)
+  ↓
+pm-1-1.json v2.8
+  ├─ bloque APERTURA   (1 · transversal · 6h · S1 · pms→{2.1,2.2})
+  ├─ bloques APROPIACIÓN (N · 1 por RAP · sum=resto · pms→{2.3-2.10} · _anclaje C01-C07)
+  └─ bloque TRANSFERENCIA (1 · transversal · ≤12h · ≤2 sesiones · pms→{3.5} · _anclaje C08)
+  ↓
+9 validation_checks (8 estructurales/tiempos + 1 traceability heredado)
+  ↓
+Step 1.3 PM-1.2 cascade (scope diferenciado por tipo_bloque)
+```
+
+---
+
+## CASO OPERACIONAL CONFIRMADO (pendiente Step 1.2 IMARPOR-V2 dispatch)
+
+**Input esperado IMARPOR-V2:**
+- pm-0-0-matriz-alineada.json v1.1 · 4 RAPs · 8 criterios C01-C08 · 4 overlaps multi-RAP
+- pm-0-context.json v3.2 · 21 keys · 44 anclajes · 7/7 PASS
+- tipo: Curso Complementario · sesiones_count: 12 · horas_por_sesion: 6
+
+**Output esperado pm-1-1.json v2.8:**
+- 6 bloques (1 + 4 + 1)
+- Bloque APERTURA (B0) · S1 · 6h · transversal a competencia
+- 4 bloques APROPIACIÓN (B1-B4) · S2-S10 · 54h total · 1 por RAP
+- Bloque TRANSFERENCIA (BT) · S11-S12 · 12h · capstone E-Misión C08
+- 9/9 validation_checks PASS
+- 0 elementos sin `_anclaje_matriz` (traceability completa)
+
+---
+
+*PM-1.1 v2.8 · Ruta Macrotemática Tripartita · Tiempos Canon Universales · Traceability Heredada PM-0.0 v1.2 + PM-0 v3.2 · Anti-prescriptive prompt operacional*
+*Sergio Cortés decisión arquitectónica 2026-05-01 · cascade Phase 1 Step 1.2 IMARPOR-V2*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
