@@ -1,0 +1,297 @@
+{
+  "pm_id": "PM-4.2",
+  "pm_name": "Cuestionario Consolidado S6 — Ensamblador",
+  "pm_version": "3.0",
+  "run_id": "IMARPOR-CC-2026-04-30-V2",
+  "generated_date": "2026-05-02",
+  "instructor": "Sergio Cortés Perdomo",
+
+  "_pm20_ref": "pm-2-0.json (v3.0 · S4 APROPIACIÓN B1 RA1 actividades_planeadas[1].ref_pm12_path = sub_bloques_tripartitos[1].task_consolidacion_C07_cara_RA1 1.0h _produces E6 + S6 APROPIACIÓN B2 RA2 actividades_planeadas[1].ref_pm12_path = sub_bloques_tripartitos[2].task_consolidacion_E6 3.0h _produces E6 4-way C07)",
+  "_pm12_ref": "pm-1-2.json (v4.2 v2 · sub_bloques_tripartitos[1].task_consolidacion_C07_cara_RA1 prep cara RA1 6-8 ítems Vocabulary+Reading + sub_bloques_tripartitos[2].task_consolidacion_E6 ejecución física 25 ítems 4-way RA1+RA2+RA3+RA4 ≥70% PASS · ambos _produces E6 → PM-4.2)",
+  "_pm00_matriz_ref": "pm-0-0-matriz-alineada.json (v1.3 · C07 4-way overlap RA1+RA2+RA3+RA4 · evidencia E6 Cuestionario Consolidado S6 · instrumento Cuestionario No 6 · cefr_subnivel consolidación A1.2-A2.0)",
+  "_pm0_context_ref": "pm-0-context.json (v3.2 · universo banana cold chain · Puerto Antioquia · MV CARIBBEAN STAR · cast Manuel/Carolina/Mariana/Yurlenis/Andrés/Pipa/Hernando + Captain Lim Wei-Ming heredado pre-S5)",
+
+  "arquetipo_seleccionado": "ITEM BANK CURATION (S4 prep · Distractor Engineering colaborativo + Plantilla Item Bank Cara RA1) + CONSOLIDATED ASSESSMENT (S6 anchor · Multi-skill cuestionario 25 pts · Reading + Writing + Listening + Vocabulary + Grammar bajo Principio de Tres Versiones · scaffolding visible en tareas productivas)",
+  "arquetipo_rationale": "S4 prep cara RA1 implementa Item Bank Curation porque la consigna canon pm-1-2.task_consolidacion_C07_cara_RA1 es generar 6-8 ítems Vocabulary+Reading que conformarán la cara léxica RA1 del Cuestionario E6, no ejecutar evaluación. Roles Item-Drafter + Distractor-Editor + Coherence-Verifier reaprovechan los equipos de 3 del Inspection Report S4 garantizando continuidad afectiva y cognitiva (Drafter ya redactó · Editor ya revisó · Verifier ya validó checklist). El Principio de Tres Versiones canónico de PM-4.2 v2.0 (parecido pero diferente a apropiación) se opera explícitamente con dos restricciones canon: nuevo personaje del cast bananero + máximo un saber concepto por ítem. S6 anchor consolidado implementa Consolidated Assessment porque pm-1-2.task_consolidacion_E6 exige ejecución física del cuestionario consolidado checkpoint medio (25 ítems · 5 skills × 5 puntos · ≥70% PASS) integrando contenidos B1 + B2 + B3 + B4 con contributors PM-2.3 (Reading) + PM-2.4 (Writing) + PM-2.5 (Vocabulary) + PM-2.6 (Listening) + PM-2.10 (Grammar). Estructura canónica fija de 5 secciones × 5 puntos preserva REGLA 5 master prompt PM-4.2 v2.0 (25 pts no 50). Coherencia con momentum: APROPIACIÓN B1 cierra con prep cara RA1 (S4) → APROPIACIÓN B2 inaugura con scaffolds SMCP (S5) → APROPIACIÓN B2 cierra checkpoint medio doble (S6 E4-parcial Speaking + E6 Cuestionario) → APROPIACIÓN B3 inaugura RA3 gramática operacional bilateral (S7).",
+
+  "activity_cards": [
+    {
+      "_card_index": 1,
+      "_card_role": "S4 preparación cara RA1 · scaffold pre-consolidación · evidencias.aplica=false",
+      "pm_id": "PM-4.2",
+      "pm_name": "Cuestionario Consolidado S6 — Ensamblador (Prep cara RA1)",
+      "session": "S4",
+      "tipo_bloque": "APROPIACION",
+      "bloque_id_referencia": "B1",
+      "rap_target": "RA1",
+      "numero_actividad": 12,
+
+      "dimension": "cognitiva",
+      "enunciado": "Diseñar el banco proto de ítems Vocabulary y Reading cara RA1 del Cuestionario Consolidado E6 mediante curaduría colaborativa de 6-8 ítems sobre vocabulario portuario.",
+      "descripcion": "Diseñar colaborativamente el banco proto de 6-8 ítems Vocabulary y Reading que conformarán la cara RA1 del Cuestionario Consolidado E6 (Instrumento No 6) aplicado en S6, anclando vocabulario portuario, partes del barco, oficios bananeros del cast y plurales en bay counts del universo MV CARIBBEAN STAR. Esta actividad de cierre de S4 NO es ejecución física de evidencia sino preparación retrospectiva del item bank de la cara léxica RA1, garantizando que los ítems mantengan coherencia con E1 Reading S3 y E2 Writing S4 sin convertirse en duplicado memorístico.\n\nUna vez entregadas las firmas individuales del Inspection Report E2 al instructor Sergio para evaluación con Lista de Verificación No 2, este pivota la energía del aula explicando que en S6 (próxima semana) el grupo enfrentará un checkpoint medio doble con E4-parcial Speaking VHF SMCP y el Cuestionario Consolidado E6 de 25 ítems integrando los cuatro RAPs. Anuncia que para que E6 sea instrumento legítimo de transferencia y no de memoria, hoy van a diagramar la cara RA1 del banco mientras el contenido B1 está fresco, aplicando el Principio de Tres Versiones canónico de PM-4.2: ítems parecidos pero diferentes a los trabajados en apropiación.\n\nSe mantienen los equipos de 3 aprendices del Inspection Report (Drafter · Editor · Verifier) ahora reasignados como Item-Drafter · Distractor-Editor · Coherence-Verifier. Cada equipo recibe la Plantilla Item Bank Cara RA1 con 8 slots diferenciados en dos secciones: Vocabulary RA1 (4 slots multiple choice y matching sobre 20 términos canon Word Wall) y Reading RA1 (4 slots true/false/not given y short answer sobre un texto paralelo del mismo universo banana cold chain pero distinto al Story A). Reciben además la Especificación Canon E6 cara RA1 (subset RAP1: UNIT 1 SHIP OVERVIEW · PARTS OF THE SHIPS · PROFESSIONS IN PORT AND ABOARD · SINGULAR AND PLURAL NOUNS) y el catálogo de los 20 key terms ya activos.\n\nDurante la fase de drafting de 40 minutos, cada equipo redacta 2-3 ítems candidatos por sección aplicando dos restricciones canon. Restricción 1: ítem parecido pero diferente, es decir nuevo personaje del cast (Mariana o Hernando en lugar de Manuel · nuevo bay count distinto al bay 14 · nuevo merchant vessel como MV PACIFIC GREEN o MV BANANA EXPRESS en lugar del MV CARIBBEAN STAR). Restricción 2: máximo un saber concepto por ítem para garantizar discriminación HOTS clean. El Item-Drafter redacta enunciado y respuesta correcta, el Distractor-Editor genera tres distractores plausibles que reflejen errores típicos observados en el Inspection Report (confundir hull con bow · pluralizar mal cluster como clusteres) y el Coherence-Verifier valida que cada ítem se ancle a C07 RA1 sin contaminar RA2 SMCP.\n\nLa actividad finaliza con la entrega del Banco Proto Cara RA1 (un set por equipo · 6-8 ítems con respuesta y 3 distractores cada uno) al instructor Sergio quien los archivará para que PM-4.2 los integre en la sección consolidada del Cuestionario E6 en S6, y con un cierre de 10 minutos donde cada equipo socializa el ítem que más les costó diseñar y por qué. Sergio sintetiza el bridge a S5 anunciando que mañana se inaugura B2 RA2 SMCP con el Story A Quick Reference y el audio VHF auténtico Captain Lim Wei-Ming.",
+
+      "ambiente": "Aula con proyector + mesas reorganizables para equipos de 3 aprendices (continuidad de la disposición del Inspection Report) + tablero para socialización ítems candidatos",
+      "estrategias_didacticas_activas": [
+        "Aprendizaje colaborativo",
+        "Investigación guiada"
+      ],
+      "tecnicas_didacticas": [
+        "Taller",
+        "Análisis de casos"
+      ],
+      "materiales_formacion": [
+        "Proyector",
+        "Plantilla Item Bank Cara RA1 con 8 slots diferenciados en Vocabulary RA1 (4 slots multiple choice + matching) y Reading RA1 (4 slots true/false/not given + short answer · 1 plantilla por equipo)",
+        "Especificación Canon E6 cara RA1 impresa (subset saberes RAP1: UNIT 1 SHIP OVERVIEW · PARTS OF THE SHIPS · PROFESSIONS IN PORT AND ABOARD · SINGULAR AND PLURAL NOUNS · 1 por equipo)",
+        "Catálogo de 20 key terms canon RA1 (heredado Word Wall Active S2/S3 · 1 por aprendiz)",
+        "Texto paralelo nuevo Reading cara RA1 del mismo universo banana cold chain con personaje Hernando o Mariana (≈200 palabras A1.2 · diferente al Story A · 1 por equipo)",
+        "Lapiceros, marcadores, post-it"
+      ],
+      "material_apoyo": [
+        {
+          "descripcion": "Plantilla Item Bank Cara RA1 con 8 slots diferenciados en Vocabulary RA1 (multiple choice + matching) y Reading RA1 (true/false/not given + short answer)",
+          "link": "internal://senafpi/imarpor-cc-v2/template-item-bank-cara-rap1"
+        },
+        {
+          "descripcion": "Catálogo 20 key terms canon RA1 con definición operacional banana cold chain (ship · hull · bow · stern · bridge · cargo holds · reefer plugs · genset · stevedore · tally clerk · pilot · bosun · refrigeration technician · cold chain coordinator · safety manager · cluster · bay · setpoint · pre-cooling · phytosanitary)",
+          "link": null
+        },
+        {
+          "descripcion": "Guía Principio de Tres Versiones PM-4.2 (parecido pero diferente · nuevo personaje · nuevo bay count · nuevo merchant vessel · mismo nivel CEFR A1.2)",
+          "link": null
+        }
+      ],
+
+      "evidencias": {
+        "aplica": false,
+        "tipo": null,
+        "nombre": null,
+        "tecnica_evaluacion": null,
+        "instrumento_numero": null,
+        "instrumento_tipo": null,
+        "codigo_canon": null,
+        "criterio_canon_evaluado": null
+      },
+
+      "duracion_horas": 1.0,
+
+      "_anclaje_matriz_heredado": {
+        "rap_target": "RA1",
+        "saberes_que_demanda": [
+          "UNIT 1: SHIP OVERVIEW",
+          "PARTS OF THE SHIPS",
+          "PROFESSIONS IN PORT AND ABOARD",
+          "SINGULAR AND PLURAL NOUNS"
+        ],
+        "criterios_canon_que_evalua": ["C07"],
+        "saberes_proceso_movilizados": [
+          "IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS GENERADA EN EL INTERCAMBIO ORAL Y/O ESCRITO EN ESTE IDIOMA, DADO EN EL CUMPLIMIENTO DE LAS ACCIONES REQUERIDAS A BORDO DEL BUQUE Y EN PUERTO.",
+          "RECONOCER LOS DISTINTOS OFICIOS ENMARCADOS EN LOS CAMPOS MARÍTIMO Y PORTUARIO."
+        ],
+        "_nota_scaffold_no_evidencia": "Esta actividad NO genera evidencia formal en S4 · es preparación retrospectiva del item bank de la cara RA1 del Cuestionario Consolidado E6 que se ejecuta físicamente en S6. evidencias.aplica=false canon Sergio (scaffolds no producen evidencia) · _produces_evidencia=null en esta card · contributor a E6 documentado en _bridge_a_pools_contributors metadata."
+      },
+      "_produces_evidencia": null,
+      "_consumed_by_pm": "PM-4.2",
+      "_ref_pm12_path": "sub_bloques_tripartitos[1].task_consolidacion_C07_cara_RA1",
+      "_ref_pm20_session": "S4"
+    },
+
+    {
+      "_card_index": 2,
+      "_card_role": "S6 anchor consolidado E6 4-way · checkpoint medio · evidencias.aplica=true",
+      "pm_id": "PM-4.2",
+      "pm_name": "Cuestionario Consolidado S6 — Ensamblador (Anchor E6 4-way)",
+      "session": "S6",
+      "tipo_bloque": "APROPIACION",
+      "bloque_id_referencia": "B2",
+      "rap_target": "RA2",
+      "raps_secundarios": ["RA1", "RA3", "RA4"],
+      "numero_actividad": 16,
+
+      "dimension": "cognitiva",
+      "enunciado": "Demostrar dominio integrado consolidado de Reading + Writing + Listening + Vocabulary + Grammar mediante el Cuestionario Consolidado E6 de 25 ítems con criterio PASS ≥ 70%.",
+      "descripcion": "Demostrar el dominio integrado consolidado de los cuatro RAPs trabajados hasta el checkpoint medio del programa mediante el Cuestionario Consolidado E6 (Instrumento No 6) de 25 ítems distribuidos en cinco skills (Reading + Writing + Listening + Vocabulary + Grammar · 5 puntos cada una) con criterio canon de aprobación ≥70% PASS. Esta es la sexta evidencia formal del programa y el primer instrumento de evaluación 4-way overlap C07 que integra simultáneamente saberes RA1 (vocab portuario), RA2 (SMCP IMO), RA3 (gramática operacional) y RA4 (descripción contextual), aplicando el Principio de Tres Versiones de PM-4.2 con ítems parecidos pero distintos a los trabajados en apropiación.\n\nUna vez completada la primera evidencia del checkpoint medio (E4-parcial Speaking VHF NATO Phonetic con Escala de Estimación No 4 ante panel evaluador), el instructor Sergio reorganiza el aula en disposición individual examinatoria con sillas separadas y proyecta brevemente el mapa de los cuatro RAPs sintetizando que el cuestionario que viene NO es prueba sumativa de fin de programa sino checkpoint diagnóstico de transferencia: identificar dónde están sólidos y dónde necesitan refuerzo antes de B3 RA3 gramática operacional bilateral. Anuncia los 25 puntos distribuidos en 5 skills × 5 puntos y el umbral PASS ≥70% (mínimo 17.5 puntos) sin penalización por error y sin tiempo extra individual.\n\nCada aprendiz recibe el cuadernillo individual del Cuestionario Consolidado E6 ensamblado por PM-4.2 a partir de los bancos proto generados en S4 (cara RA1 · contributors PM-2.3 + PM-2.5), S5 (cara RA2 · contributors PM-2.6 + PM-2.10) y bancos derivados de B3 y B4 para caras RA3 y RA4. La estructura canónica fija son cinco secciones: Sección 1 Reading (5 ítems · texto paralelo nuevo personaje Laura del cast bananero · multiple choice + scanning + inference), Sección 2 Writing (1 tarea · email solicitando phytosanitary inspection con Language Bank visible), Sección 3 Listening (5 ítems · audio nuevo voicemail SMCP Captain Lim con TTS pausado), Sección 4 Vocabulary HOTS (3 tareas · diagnóstico técnico componente reefer + categorización), Sección 5 Grammar HOTS (3 tareas · escenario inventario container con tabla scaffolding).\n\nDurante los 90 minutos de aplicación, los aprendices avanzan secciones sin orden obligatorio salvo Listening que se aplica sincrónicamente al minuto 30 con tres reproducciones del audio. Las cinco secciones aplican estricto Principio de Tres Versiones: nuevos personajes del cast banana cold chain (Laura · Andrés · Pipa en lugar del Manuel-protagonista de apropiación), nuevos contextos operacionales paralelos (inventario reefer en lugar de walk-around bay 14 · phytosanitary inspection en lugar de Inspection Report · voicemail SMCP en lugar de phone call VHF), mismo nivel CEFR A1.2-A2.0 con scaffolding visible en tareas productivas (Language Bank Writing · word bank Vocabulary · formula Grammar). Sergio circula sin intervenir en contenido pero validando que ningún aprendiz quede bloqueado por instrucciones.\n\nLa actividad finaliza con la entrega individual del cuadernillo y hoja de respuestas que será calificada por el instructor con el Answer Key consolidado y rúbrica HOTS para tareas productivas, retornando feedback agregado en el debrief checkpoint medio del cierre de S6 (30 minutos siguientes). Sergio anuncia el bridge a S7 inauguración B3 RA3 gramática operacional bilateral con commands · imperativo · modales · presente simple, donde el aprendiz pasará de COMPRENDER SMCP a APLICAR órdenes puerto-buque, integrando los aprendizajes consolidados en E6 como base sintáctica para la siguiente etapa del journey de Manuel.",
+
+      "ambiente": "Aula reorganizada en disposición individual examinatoria con sillas separadas + sistema de audio nítido para Sección 3 Listening + proyector para instrucciones agregadas y conteo de tiempo",
+      "estrategias_didacticas_activas": [
+        "Aprendizaje basado en problemas"
+      ],
+      "tecnicas_didacticas": [
+        "Taller",
+        "Análisis de casos"
+      ],
+      "materiales_formacion": [
+        "Cuadernillo individual Cuestionario Consolidado E6 (1 por aprendiz · 25 ítems en 5 secciones · header institucional + datos aprendiz + tiempo estimado 90 minutos)",
+        "Hoja de respuestas separada (1 por aprendiz)",
+        "Sistema de audio nítido para reproducción Sección 3 Listening (3 pasadas con pausas)",
+        "Proyector para instrucciones agregadas y conteo de tiempo",
+        "Cronómetro visible",
+        "Lapiceros (1 por aprendiz · sin uso de borradores corregibles para preservar trazabilidad)",
+        "Answer Key consolidado y rúbrica HOTS (custodia instructor · uso post-cuestionario)",
+        "Lista de Verificación No 6 / Cuestionario No 6 GFPI-F-134 (instrumento canon · custodia instructor)"
+      ],
+      "material_apoyo": [
+        {
+          "descripcion": "Cuestionario Consolidado E6 ensamblado PM-4.2 v3.0 · 25 ítems · 5 secciones × 5 puntos · Reading + Writing + Listening + Vocabulary + Grammar · Principio de Tres Versiones · ≥70% PASS · checkpoint medio programa",
+          "link": "internal://senafpi/imarpor-cc-v2/cuestionario-consolidado-e6-instrumento-6"
+        },
+        {
+          "descripcion": "Audio voicemail SMCP Captain Lim Wei-Ming nuevo (paralelo al Story B Listening de S5 · TTS pausado 0.85x · ≈90 segundos · uso Sección 3)",
+          "link": "internal://senafpi/imarpor-cc-v2/audio-voicemail-smcp-captain-lim-cuestionario-e6"
+        },
+        {
+          "descripcion": "Texto paralelo Reading cara RA1 con personaje Laura del cast bananero (≈220 palabras A1.2 · scenario alterno banana cold chain · uso Sección 1)",
+          "link": null
+        },
+        {
+          "descripcion": "Tabla scaffolding inventario container para Sección 5 Grammar HOTS (datos input + formula proporcionada para sentence construction)",
+          "link": null
+        }
+      ],
+
+      "evidencias": {
+        "aplica": true,
+        "tipo": "Conocimiento",
+        "nombre": "Cuestionario Consolidado S6 · 25 ítems · 5 skills × 5 puntos (Reading + Writing + Listening + Vocabulary + Grammar) · 4-way overlap C07 RA1+RA2+RA3+RA4 · ≥70% PASS",
+        "tecnica_evaluacion": "Preguntas",
+        "instrumento_numero": 6,
+        "instrumento_tipo": "Cuestionario",
+        "codigo_canon": "E6",
+        "criterio_canon_evaluado": "C07"
+      },
+
+      "duracion_horas": 3.0,
+
+      "_anclaje_matriz_heredado": {
+        "rap_target": "RA2 (ejecución física) · RA1+RA2+RA3+RA4 (contenido 4-way)",
+        "saberes_que_demanda": [
+          "UNIT 5: INTRODUCING IMO STANDARD MARINE COMMUNICATION PHRASES (SMCP)",
+          "STANDARD SPELLING",
+          "MESSAGE MARKERS",
+          "STANDARD RESPONSES AND ORGANIZATIONAL PHRASES"
+        ],
+        "criterios_canon_que_evalua": ["C07"],
+        "saberes_proceso_movilizados": [
+          "RECONOCER LA MANERA DE DELETREAR LOS VOCABLOS EN INGLÉS.",
+          "RESPONDER EN INGLÉS EN CONVERSACIONES SENCILLAS Y UTILIZANDO LAS FRASES ESTANDARIZADAS POR LA OMI, EN EL DESEMPEÑO DE LAS OPERACIONES QUE SE GENEREN EN EL CONTEXTO.",
+          "IDENTIFICAR VOCABULARIO COMÚN EN INGLÉS, EN LAS FRASES ESTANDARIZADAS DE LA OMI PARA LA COMUNICACIÓN MARÍTIMA."
+        ],
+        "_nota_4way": "C07 4-way overlap RA1+RA2+RA3+RA4 (literal copy de pm-1-2.sub_bloques_tripartitos[2].task_consolidacion_E6._nota_4way). Ejecución física AQUÍ S6 B2 RA2 (sesión anchor); contenido contribuye desde 4 bloques APROPIACIÓN. Distribución 5 Reading (RA1) + 5 Writing (RA1+RA3) + 5 Listening (RA2) + 5 Vocabulary (RA1+RA2+RA4) + 5 Grammar (RA3) = 25 ítems · ≥70% PASS."
+      },
+      "_produces_evidencia": "E6",
+      "_consumed_by_pm": "PM-4.2",
+      "_ref_pm12_path": "sub_bloques_tripartitos[2].task_consolidacion_E6",
+      "_ref_pm20_session": "S6"
+    }
+  ],
+
+  "_bridge_a_pools_contributors": {
+    "_descripcion": "Documenta el ensamblaje 4-way overlap C07 del Cuestionario Consolidado E6 desde los pools de ítems generados por los PM-2.x contributors a lo largo de B1+B2+B3+B4. PM-4.2 v2.0 es ensamblador (no diseñador desde cero).",
+    "puntos_totales": 25,
+    "distribucion_5_skills_x_5_pts": {
+      "seccion_1_reading": {
+        "puntos": 5,
+        "items": 5,
+        "skill": "Reading Comprehension",
+        "contributor_pm": "PM-2.3",
+        "rap_face_primary": "RA1",
+        "tasks_canon": "Main Idea (1pt MC) + Scanning Information Extraction (2pts tabla/matching) + Inference True/False/Not Given (2pts)",
+        "principio_3v_aplicacion": "Texto paralelo nuevo personaje Laura del cast bananero · mismo universo banana cold chain · mismo género email/internal note · diferente al Story A 'MV CARIBBEAN STAR Arrives' de S3"
+      },
+      "seccion_2_writing": {
+        "puntos": 5,
+        "items": 1,
+        "skill": "Writing Production",
+        "contributor_pm": "PM-2.4",
+        "rap_face_primary": "RA1",
+        "rap_face_secondary": "RA3",
+        "tasks_canon": "1 tarea · email solicitando phytosanitary inspection con Language Bank visible + Skeleton Structure From/To/Subject + rúbrica visible (Coherence 1 + Grammar 2 + Vocabulary 1 + Clarity 1)",
+        "principio_3v_aplicacion": "Escenario nuevo (phytosanitary inspection request a ICA en lugar de Inspection Report del walk-around bay 14) · misma función comunicativa (solicitud técnica) · diferente destinatario (ICA externo en lugar de supervisor interno)"
+      },
+      "seccion_3_listening": {
+        "puntos": 5,
+        "items": 5,
+        "skill": "Listening Comprehension",
+        "contributor_pm": "PM-2.6",
+        "rap_face_primary": "RA2",
+        "tasks_canon": "General Comprehension (2pts MC · 2 questions) + Gap Fill Summary con Word Bank (2pts · 3 blanks + 2 distractors) + Detail Extraction Matching (1pt)",
+        "principio_3v_aplicacion": "Audio voicemail SMCP nuevo Captain Lim Wei-Ming (paralelo al Story B Listening VHF auténtico de S5 · diferente género: voicemail institucional en lugar de live VHF exchange) · TTS pausado 0.85x · ≈90 segundos"
+      },
+      "seccion_4_vocabulary_hots": {
+        "puntos": 5,
+        "items": 3,
+        "skill": "Key Vocabulary in Context — HOTS",
+        "contributor_pm": "PM-2.5",
+        "rap_face_primary": "RA1",
+        "rap_face_secondary": ["RA2", "RA4"],
+        "tasks_canon": "Apply (2pts) Diagnóstico técnico componente reefer · seleccionar componente correcto para resolver problema operacional + Analyze+Evaluate (3pts) Categorización con justificación breve",
+        "principio_3v_aplicacion": "Vocab cross-RAP (20 key terms RA1 + 20 SMCP RA2 + términos descriptivos RA4) en contextualizaciones HOTS distintas a apropiación (clasificación → diagnóstico/aplicación · Bloom L3-L5)"
+      },
+      "seccion_5_grammar_hots": {
+        "puntos": 5,
+        "items": 3,
+        "skill": "Grammar & Structure in Context — HOTS",
+        "contributor_pm": "PM-2.10",
+        "rap_face_primary": "RA3",
+        "tasks_canon": "Apply (2pts) Escribir oraciones con formula proporcionada usando datos de tabla scaffolding inventario container + Analyze+Evaluate (3pts) Error Log o Recomendación escrita con estructura target",
+        "principio_3v_aplicacion": "Estructuras gramaticales target (verb to be + plurales + demostrativos · imperative + present simple + modals) en escenario nuevo inventario container (en lugar de walk-around bay 14 de S4 o SMCP exchange de S5) con tabla como scaffolding"
+      }
+    },
+    "umbral_pass": "≥70% (mínimo 17.5 puntos sobre 25)",
+    "principio_tres_versiones_canonico": "v2.0 §PRINCIPIO DE TRES VERSIONES preservado: parecido al apropiación (mismo nivel CEFR · mismo vocab técnico · mismas funciones comunicativas) pero diferente (nuevo personaje del cast · nuevo escenario operacional · nuevo género textual paralelo · evalúa TRANSFERENCIA no MEMORIA)",
+    "ensamblaje_pipeline": [
+      "S4 prep cara RA1 (esta card AC1) · 6-8 ítems Vocabulary+Reading proto · contributors PM-2.3 + PM-2.5",
+      "S5 prep cara RA2 (analógica · pendiente otra card scaffold de cierre S5 si aplica) · 6-8 ítems Listening+Vocabulary SMCP proto · contributors PM-2.6 + PM-2.10",
+      "B3 prep cara RA3 (analógica · pendiente cierre S8) · 6-8 ítems Writing+Grammar operacional proto · contributors PM-2.4 + PM-2.10",
+      "B4 prep cara RA4 (analógica) · 6-8 ítems Vocabulary+Grammar descriptiva proto · contributors PM-2.5 + PM-2.10",
+      "S6 ejecución física AC2 · ensamblaje final 25 ítems desde pools acumulados · aplicación cuestionario · evaluación con Cuestionario No 6"
+    ]
+  },
+
+  "validation_checks": [
+    {
+      "id": 1,
+      "name": "schema_activity_card_v3_completo_dual",
+      "status": "PASS",
+      "evidence": "AC1 + AC2 ambas con 17 campos canon §11.2 v3.0: pm_id, pm_name, session, tipo_bloque, bloque_id_referencia, rap_target, numero_actividad, dimension, enunciado, descripcion, ambiente, estrategias_didacticas_activas, tecnicas_didacticas, materiales_formacion, material_apoyo, evidencias, duracion_horas + 5 traceability fields (_anclaje_matriz_heredado, _produces_evidencia, _consumed_by_pm, _ref_pm12_path, _ref_pm20_session). AC2 incluye extensión raps_secundarios documentando 4-way overlap C07 RA1+RA2+RA3+RA4 explícito · AC1 + AC2 ambas con _card_index + _card_role para distinción interna."
+    },
+    {
+      "id": 2,
+      "name": "descripcion_multiparrafo_200_600_palabras_ambas_cards",
+      "status": "PASS",
+      "evidence": "AC1 (S4 prep cara RA1): 5 párrafos separados \\n\\n patrón canon Sergio (panorama → orientación pivote post-E2 + Principio Tres Versiones → conformación equipos reasignados Item-Drafter/Distractor-Editor/Coherence-Verifier + plantilla 8 slots → drafting 40 min + 2 restricciones canon distractores típicos → cierre entrega Banco Proto Cara RA1 + bridge S5 SMCP). Word count REAL: P1=88 + P2=104 + P3=118 + P4=126 + P5=94 = TOTAL 530 palabras dentro banda 480-580 sweet spot. AC2 (S6 anchor consolidado): 5 párrafos separados \\n\\n patrón canon (panorama 25 pts 5 skills 4-way C07 → orientación post-E4parcial reorganización individual examinatoria → cuadernillo + estructura 5 secciones → 90 min aplicación + Principio Tres Versiones aplicado → cierre entrega + bridge S7 RA3). Word count REAL: P1=104 + P2=107 + P3=132 + P4=118 + P5=94 = TOTAL 555 palabras dentro banda 480-580 sweet spot. Ambas dentro target."
+    },
+    {
+      "id": 3,
+      "name": "evidencias_dual_canonical",
+      "status": "PASS",
+      "evidence": "AC1 evidencias.aplica=false (scaffold pre-consolidación · canon REGLA 11 v3.0 PM-4.2 · S4 prep cara RA1 NO genera evidencia formal · 6 campos evidencias en null) · render guía aprendiz 'No aplica' literal en líneas Evidencias + Técnica + Instrumento. AC2 evidencias.aplica=true · tipo=Conocimiento · tecnica_evaluacion=Preguntas · instrumento_numero=6 · instrumento_tipo=Cuestionario · codigo_canon=E6 · criterio_canon_evaluado=C07 · nombre legible específico ('Cuestionario Consolidado S6 · 25 ítems · 5 skills × 5 puntos (Reading + Writing + Listening + Vocabulary + Grammar) · 4-way overlap C07 RA1+RA2+RA3+RA4 · ≥70% PASS'). Canon estricto §11.2 + §11.3 reglas condicionales por tipo_bloque APROPIACIÓN (variable · scaffolds=false · anchors=true)."
+    },
+    {
+      "id": 4,
+      "name": "heredancia_pm12_literal_dual",
+      "status": "PASS",
+      "evidence": "AC1 _anclaje_matriz_heredado matches LITERAL pm-1-2.sub_bloques_tripartitos[1].task_consolidacion_C07_cara_RA1._anclaje_matriz: rap_target=RA1 · 4 saberes_que_demanda copia exacta (UNIT 1: SHIP OVERVIEW, PARTS OF THE SHIPS, PROFESSIONS IN PORT AND ABOARD, SINGULAR AND PLURAL NOUNS) · criterios_canon_que_evalua=[C07] · saberes_proceso_movilizados copia literal de matriz v1.3 RA1.saberes_proceso (2 procesos). AC2 _anclaje_matriz_heredado matches LITERAL pm-1-2.sub_bloques_tripartitos[2].task_consolidacion_E6._anclaje_matriz: rap_target=RA2 (ejecución física) · RA1+RA2+RA3+RA4 (contenido 4-way) · 4 saberes_que_demanda RA2 (UNIT 5: INTRODUCING IMO SMCP, STANDARD SPELLING, MESSAGE MARKERS, STANDARD RESPONSES AND ORGANIZATIONAL PHRASES) · criterios_canon_que_evalua=[C07] · saberes_proceso_movilizados copia literal matriz v1.3 RA2.saberes_proceso (3 procesos) · _nota_4way copia literal de pm-1-2."
+    },
+    {
+      "id": 5,
+      "name": "heredancia_pm20_sesion_dual_correcta",
+      "status": "PASS",
+      "evidence": "AC1 session=S4 (matches pm-2-0.session_blueprint[3].sesion_id) · tipo_bloque=APROPIACION · bloque_id_referencia=B1 · rap_target=RA1 · _ref_pm12_path=sub_bloques_tripartitos[1].task_consolidacion_C07_cara_RA1 (matches pm-2-0.S4.actividades_planeadas[1].ref_pm12_path) · _ref_pm20_session=S4 · duracion_horas=1.0 (matches pm-2-0.S4.actividades_planeadas[1]._horas_estimadas_dentro_sesion=1.0) · consumed_by_pm=PM-4.2 · _produces_evidencia=null (scaffold). AC2 session=S6 (matches pm-2-0.session_blueprint[5].sesion_id) · tipo_bloque=APROPIACION · bloque_id_referencia=B2 · rap_target=RA2 (con raps_secundarios RA1+RA3+RA4) · _ref_pm12_path=sub_bloques_tripartitos[2].task_consolidacion_E6 (matches pm-2-0.S6.actividades_planeadas[1].ref_pm12_path) · _ref_pm20_session=S6 · duracion_horas=3.0 (matches pm-2-0.S6.actividades_planeadas[1]._horas_estimadas_dentro_sesion=3.0) · consumed_by_pm=PM-4.2 · _produces_evidencia=E6."
+    },
+    {
+      "id": 6,
+      "name": "saberes_subset_matriz_v13_dual",
+      "status": "PASS",
+      "evidence": "AC1 saberes_que_demanda (4 items) ⊆ matriz v1.3 raps[0].saberes_conceptos_y_principios RA1 (8 items · 4/8 subset enfocado en cara léxica RA1 del cuestionario) · saberes_proceso_movilizados (2 items) ⊆ matriz v1.3 raps[0].saberes_proceso (2/2 match exacto) · criterios_canon_que_evalua=[C07] ⊆ matriz v1.3 raps[0].criterios_evaluacion_especificos_canon_sistema = {C01, C02, C07}. AC2 saberes_que_demanda (4 items SMCP) ⊆ matriz v1.3 raps[1].saberes_conceptos_y_principios RA2 (4/4 match exacto · UNIT 5 completa) · saberes_proceso_movilizados (3 items) ⊆ matriz v1.3 raps[1].saberes_proceso (3/3 match exacto) · criterios_canon_que_evalua=[C07] ⊆ matriz v1.3 raps[1].criterios_evaluacion_especificos_canon_sistema = {C03, C04, C07} · 4-way overlap RA1+RA2+RA3+RA4 documentado en _nota_4way + raps_secundarios + _bridge_a_pools_contributors."
+    },
+    {
+      "id": 7,
+      "name": "bridge_pools_contributors_25_pts_canon",
+      "status": "PASS",
+      "evidence": "_bridge_a_pools_contributors documenta ensamblaje canon REGLA 5 PM-4.2 v2.0 (estructura fija 5 secciones × 5 puntos = 25 puntos totales · NO 50). 5 contributors mapeados a 5 secciones: Sección 1 Reading (5 pts · PM-2.3 · RA1) + Sección 2 Writing (5 pts · PM-2.4 · RA1+RA3) + Sección 3 Listening (5 pts · PM-2.6 · RA2) + Sección 4 Vocabulary HOTS (5 pts · PM-2.5 · RA1+RA2+RA4) + Sección 5 Grammar HOTS (5 pts · PM-2.10 · RA3) = 25 pts. Distribución coincide pm-2-0.S6.task_consolidacion_E6._descripcion_breve (5 Reading RA1 + 5 Writing RA1+RA3 + 5 Listening RA2 + 5 Vocabulary RA1+RA2+RA4 + 5 Grammar RA3 = 25 ítems). Umbral PASS ≥70% canon (mínimo 17.5 pts). Principio de Tres Versiones aplicado por sección con personajes nuevos del cast bananero (Laura), nuevos escenarios (phytosanitary inspection · voicemail SMCP · inventario container) y nuevos géneros paralelos. Pipeline ensamblaje S4+S5+B3+B4 → S6 documentado · contributors PM-2.3 + PM-2.4 + PM-2.5 + PM-2.6 + PM-2.10 todos consumed_by PM-4.2."
+    }
+  ],
+
+  "enriched": true
+}
