@@ -4,18 +4,36 @@
 
 **Metadata:**
 ```yaml
-version: 2.6
-last_verified: 2026-04-20
+version: 4.2
+last_verified: 2026-05-01
+status: v4.2 PARADIGM SHIFT scope diferenciado por tipo_bloque heredado de PM-1.1 v2.8 (estructura tripartita) · 3 schemas distintos (APERTURA motivacional+activación · APROPIACIÓN curación POR RAP con _produces_evidencia · TRANSFERENCIA capstone) · 6 validation_checks BLOQUEANTES · traceability _anclaje_matriz heredado v3.2 · anti-prescriptive prompt operacional (cascade Step 1.3 IMARPOR-V2 · post PM-1.1 v2.8)
 outputs:
-  - pm-1-2.json con 4 bloques canónicos (v2.6): Bloque 0 / A / B / C
-  - Scope & Sequence del bloque (Bloque A)
-  - GFPI-F-134 cols 1-5 (Bloque B, para PM-2.0 y PM-2.11)
-  - 3 fichas de curación + universo narrativo (Bloque C)
-  - program_context (pasado desde PM-1.1)
+  - pm-1-2.json maestro v4.2 con 6 secciones tripartitas + meta-bloque PRESENTACIÓN L1 onboarding único
+  - Scope diferenciado por tipo_bloque (3 schemas distintos)
+  - GFPI-F-134 cols 1-5 derivado por bloque APROPIACIÓN
+  - Curación de material auténtico SOLO en sub-tipo APROPIACIÓN (Story A/B + vocab + functions + grammar POR RAP)
+  - Materiales spark + diagnóstico transversal en APERTURA (NO conocimiento nuevo)
+  - Mission brief + 5 sub-fases ABP en TRANSFERENCIA
 required_inputs:
-  - pm-0-context.json (Fase 0)
-  - pm-1-1.json (con campo pm0_anchors_ref v2.6)
-feeds_into: [PM-2.0, PM-2.1, PM-2.11, G1]
+  - pm-1-1.json (v2.8 · estructura tripartita · 6 bloques con _anclaje_matriz)
+  - pm-0-0-matriz-alineada.json (v1.2 · 8 criterios canon C01-C08)
+  - pm-0-context.json (v3.2 · universo + personajes + grammar focus + L1 policy)
+  - pm-1-2-input.json (input gates · raps_count · sesiones_count · onboarding_l1_decision)
+feeds_into: [PM-2.0 (architect · hereda tipo_bloque), PM-2.1 (consume APERTURA), PM-2.2 (consume APERTURA), PM-2.3-2.10 (consumen APROPIACIÓN del RAP correspondiente), PM-3.5 (consume TRANSFERENCIA), PM-2.11 (Row Assembler · cols 1-5 hereda)]
+v4_2_changes:
+  - "NEW REGLA 10 input principal pm-1-1.json v2.8 + scope diferenciado por tipo_bloque heredado"
+  - "NEW REGLA 11 schema diferenciado por tipo_bloque (3 schemas: APERTURA · APROPIACIÓN · TRANSFERENCIA)"
+  - "NEW REGLA 12 traceability _anclaje_matriz heredado v3.2 + _produces_evidencia E1-E6"
+  - "NEW REGLA 13 anti-prescriptive prompt operacional (canon §10/§11/§12 PLAN-FASE-1)"
+  - "NEW 6 validation_checks BLOQUEANTES"
+  - "9 REGLAS v2.6 PRESERVADAS aplicando SOLO a sub-tipo APROPIACIÓN (8 filtros · ficha curación · 20 vocab · etc.)"
+  - "NEW restricción APERTURA: NO conocimiento ni habilidades nuevas (motivacional + diagnóstico + activación de previos)"
+  - "NEW _produces_evidencia mapping: Story A → E1 · task derivada → E2 · Story B → E3 · speaking task → E4 · functions roleplay → E5"
+v2_6_legacy_preserved:
+  - "9 REGLAS de diseño v2.6 (DNA · Content Core · 20 vocab · curación · integrative task · eval matrix · coherencia · diversidad géneros · lenguaje híbrido)"
+  - "8 filtros de selección"
+  - "Ficha de curación por fuente (3 fuentes)"
+  - "3 vías de curación (IA · Instructor · Híbrida)"
 ```
 
 ## FPI SENA — Bilingüismo
@@ -439,3 +457,457 @@ A partir de esas 2 stories se levantará TODO el universo narrativo de la guía.
 *PM-1.2: Scope & Sequence — Desarrollo por Bloque + Curación de Material Auténtico*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+
+---
+
+## EXTENSIÓN v4.2 — SCOPE DIFERENCIADO POR `tipo_bloque` HEREDADO DE PM-1.1 v2.8 (2026-05-01)
+
+> [!warning] PARADIGM SHIFT canonizado · Sergio Cortés decisión arquitectónica 2026-05-01
+>
+> PM-1.2 v2.6 generaba scope + curación uniforme por bloque del PM-1.1. v4.2 canoniza scope DIFERENCIADO según `tipo_bloque` heredado de PM-1.1 v2.8 (estructura tripartita): APERTURA (motivacional + diagnóstico + activación · NO conocimiento nuevo) · APROPIACIÓN (curación POR RAP · vivero de evidencias formales E1-E6) · TRANSFERENCIA (capstone · mission brief + 5 sub-fases ABP).
+>
+> **Razón:** Sergio canonizó (2026-05-01) la realidad pedagógica de la pipeline: cada `tipo_bloque` requiere scope cualitativamente distinto · NO hay un schema universal · forzar uniformidad pierde traceability canon.
+>
+> **REGLAS v2.6** (1-9) permanecen como REFERENCIA aplicando SOLO a sub-tipo APROPIACIÓN. Las nuevas REGLAS 10-13 son canon obligatorio v4.2.
+
+### REGLA 10 — INPUT PRINCIPAL · pm-1-1.json v2.8 + scope diferenciado por tipo_bloque
+
+PM-1.2 v4.2 consume como input PRIMARIO:
+
+```json
+{
+  "pm_1_1_ref": "pm-1-1.json (v2.8 · 6 bloques tripartitos · _anclaje_matriz por bloque)",
+  "pm_0_0_matriz_ref": "pm-0-0-matriz-alineada.json (v1.2 · 8 criterios canon C01-C08)",
+  "pm_0_context_ref": "pm-0-context.json (v3.2 · universo + personajes + grammar focus)"
+}
+```
+
+**PM-1.2 NO reconstruye estructura tripartita.** PM-1.2 toma los 6 bloques heredados y para cada uno PRODUCE scope según su `tipo_bloque`.
+
+### REGLA 11 — SCHEMA DIFERENCIADO POR `tipo_bloque` (3 SCHEMAS DISTINTOS)
+
+#### Schema APERTURA (transversal · sub-bloque ÚNICO en pm-1-2.json)
+
+```jsonc
+{
+  "bloque_id": "B0",
+  "tipo_bloque": "APERTURA",
+  "scope_diferenciado": "transversal_motivacional_diagnostico",
+
+  "_restriccion_canon": "Acá NO inicia construcción de conocimiento ni habilidades nuevas. Solo motivacional + diagnóstico + activación de aprendizajes previos.",
+
+  "materiales_spark": [
+    {
+      "arquetipo_target": "PM-2.1 Spark #1",
+      "tipo_recurso": "real_artifact|video|imagen|testimonio|simulacion",
+      "descripcion": "...",
+      "fuente": "...",
+      "duracion_estimada_min": 15,
+      "enfoque_motivacional": "...",        // CLAVE Sergio: por qué este artefacto motiva al aprendiz
+      "primer_acercamiento_a_temas": ["..."], // qué temas del programa "huele" el aprendiz aquí
+      "_anclaje_matriz": {
+        "alcance": "competencia_completa",
+        "raps_atravesados": ["RA1","RA2","RA3","RA4"]
+      }
+    }
+    // ... 4 arquetipos total (2 Spark PM-2.1 + 2 Gap Analysis PM-2.2)
+  ],
+
+  "vocabulario_diagnostico": [
+    {
+      "termino": "...",
+      "definicion_l1_o_visual": "...",
+      "_proposito": "diagnostico_NO_apropiacion",  // marca canon · NO se enseña
+      "_anclaje_matriz": {"raps_atravesados": ["..."]}
+    }
+    // ~10-15 términos diagnósticos (NO los 20 canon de APROPIACIÓN)
+  ],
+
+  "aprendizajes_previos_a_activar": [
+    {
+      "saber_previo": "...",                       // qué espera saber el aprendiz al entrar
+      "como_se_diagnostica": "...",                // técnica de diagnóstico (NO eval formal)
+      "_anclaje_matriz": {"raps_target": ["..."]}
+    }
+  ],
+
+  "contexto_general_raps_presentado": {
+    "narrativa_introduccion": "...",               // historia/escenario que presenta los 4 RAPs
+    "raps_overview": [
+      {"rap_id": "RA1", "presentacion_corta": "...", "rol_en_pipeline": "..."},
+      // ... RA2 RA3 RA4
+    ]
+  },
+
+  "transversalidad_justificacion": "...",
+  "_anclaje_matriz_bloque": { /* heredado de pm-1-1.json B0 */ }
+}
+```
+
+**Validaciones canon APERTURA:**
+- NO contiene `key_vocabulary_per_rap` (eso es APROPIACIÓN)
+- NO contiene `grammar_items_per_rap` (eso es APROPIACIÓN)
+- NO contiene `story_a_reading` ni `story_b_listening` clásica (eso es APROPIACIÓN)
+- NO produce evidencias formales E1-E6
+- Cada material tiene `enfoque_motivacional` non-empty (SERGIO canon)
+- Cada arquetipo declara `primer_acercamiento_a_temas`
+
+#### Schema APROPIACIÓN (por RAP · N sub-bloques en pm-1-2.json)
+
+```jsonc
+{
+  "bloque_id": "B1",
+  "tipo_bloque": "APROPIACION",
+  "scope_diferenciado": "completo_por_rap",
+  "rap_target": "RA1",
+
+  "story_a_reading": {
+    "titulo": "...",
+    "texto_o_url": "...",
+    "extension_palabras": 200,
+    "cefr_subnivel": "A1.2",
+    "filtros_aplicados_8": [...],                  // ver REGLA v2.6 #6
+    "ficha_curacion": { /* ver REGLA v2.6 #4 ficha completa */ },
+    "_produces_evidencia": "E1",                   // CANON v4.2 · trazabilidad de evidencias
+    "_consumed_by_pm": "PM-2.3",
+    "_anclaje_matriz": {
+      "rap_target": "RA1",
+      "saberes_que_demanda": ["RA1.SC.1","RA1.SC.2"],
+      "criterios_canon_que_evalua": ["C01"]
+    }
+  },
+
+  "story_b_listening": {
+    "titulo": "...",
+    "audio_o_url": "...",
+    "duracion_segundos": 90,
+    "transcript": "...",
+    "filtros_aplicados_8": [...],
+    "ficha_curacion": { /* ficha completa */ },
+    "_produces_evidencia": "E3",
+    "_consumed_by_pm": "PM-2.6",
+    "_anclaje_matriz": {
+      "rap_target": "RA1",
+      "saberes_que_demanda": ["..."],
+      "criterios_canon_que_evalua": ["..."]
+    }
+  },
+
+  "key_vocabulary_per_rap": [
+    {
+      "termino": "...",
+      "definicion": "...",
+      "ejemplo_uso": "...",
+      "_anclaje_matriz": {"saber_concepto": "RA1.SC.1"}
+    }
+    // 20 términos canon (REGLA v2.6 #3)
+  ],
+
+  "language_functions_per_rap": [
+    {
+      "funcion": "F1: requesting clarification",
+      "exponentes": ["Could you say that again?", "..."],
+      "_produces_evidencia": "E5",                 // si esta función va a roleplay E5
+      "_anclaje_matriz": {"saber_proceso": "RA1.SP.1"}
+    }
+    // 5 funciones canon F1-F5
+  ],
+
+  "grammar_items_per_rap": [
+    {
+      "estructura": "Verb to be · descripción equipo",
+      "patron_canonical": "[subject] + is/are + [equipment]",
+      "ejemplos_contextualizados": ["..."],
+      "_anclaje_matriz": {"cefr_subnivel": "A1.2", "criterio_canon": "C01"}
+    }
+  ],
+
+  "task_writing_derivada": {
+    "descripcion": "...",                          // task que produce E2
+    "input_origen": "story_a_reading",
+    "_produces_evidencia": "E2",
+    "_consumed_by_pm": "PM-2.4"
+  },
+
+  "task_speaking_derivada": {
+    "descripcion": "...",                          // task que produce E4 parcial/final
+    "input_origen": "story_b_listening + language_functions",
+    "_produces_evidencia": "E4",
+    "_consumed_by_pm": "PM-2.8"
+  },
+
+  "analisis_linguistico_cefr": {
+    "subnivel_objetivo": "A1.2",
+    "puede_hacer_descriptors": ["..."],
+    "input_lectura_difficulty": "...",
+    "input_listening_difficulty": "..."
+  },
+
+  "_anclaje_matriz_bloque": { /* heredado de pm-1-1.json B1 */ }
+}
+```
+
+**Validaciones canon APROPIACIÓN:**
+- TIENE `story_a_reading` + `story_b_listening` (Story A/B canon)
+- TIENE 20 términos `key_vocabulary_per_rap` (REGLA v2.6 #3)
+- TIENE 5 funciones `language_functions_per_rap` (F1-F5)
+- TIENE `grammar_items_per_rap` derivado del CEFR del RAP
+- Cada elemento productor declara `_produces_evidencia` apuntando a E1-E6 (canon v4.2 traceability evidencias)
+- Cada elemento productor declara `_consumed_by_pm` apuntando a PM-2.x destino
+- Cada elemento tiene `_anclaje_matriz` ligando a saberes/criterios canon del RAP
+
+#### Schema TRANSFERENCIA (capstone · sub-bloque ÚNICO en pm-1-2.json)
+
+```jsonc
+{
+  "bloque_id": "BT",
+  "tipo_bloque": "TRANSFERENCIA",
+  "scope_diferenciado": "capstone_abp_integrador",
+
+  "mission_brief": {
+    "titulo": "Final Mission · ...",
+    "escenario_laboral_real": "...",               // contexto auténtico de trabajo
+    "rol_aprendiz_asignado": "...",                // qué rol asume el aprendiz
+    "stakeholders_simulados": ["..."],
+    "producto_final_esperado": "...",
+    "criterios_de_exito": ["..."],
+    "_anclaje_matriz": {
+      "raps_movilizados": ["RA1","RA2","RA3","RA4"],
+      "criterio_canon_capstone": "C08",
+      "evidencia_capstone": "E-Misión"
+    }
+  },
+
+  "subfases_abp_context": [
+    {
+      "fase": 1,
+      "nombre": "Planeación",
+      "duracion_horas": 1.5,
+      "actividades_aprendiz": ["..."],
+      "deliverable_intermedio": "...",
+      "scaffolding_instructor": "..."
+    },
+    // fases 2-5 (Diseño · Desempeño · Presentación · Eval reflexiva)
+  ],
+
+  "materiales_simulacion": [
+    {
+      "tipo": "template_documento|formato|checklist|asset_visual",
+      "descripcion": "...",
+      "_anclaje_matriz": {"raps_movilizados": ["..."]}
+    }
+  ],
+
+  "rubrica_abp_capstone": {
+    "criterios_evaluacion": [
+      {"criterio": "...", "niveles_desempeño": [...], "ponderacion": 25}
+    ],
+    "_consumed_by_pm": "PM-3.5",
+    "_produces_evidencia": "E-Misión"
+  },
+
+  "_anclaje_matriz_bloque": { /* heredado de pm-1-1.json BT */ }
+}
+```
+
+**Validaciones canon TRANSFERENCIA:**
+- TIENE `mission_brief` con escenario auténtico
+- TIENE 5 sub-fases ABP (Planeación · Diseño · Desempeño · Presentación · Eval reflexiva)
+- TIENE `materiales_simulacion` (templates · formatos)
+- TIENE `rubrica_abp_capstone` ancla a C08 + E-Misión
+- NO tiene Story A/B clásica (eso es APROPIACIÓN)
+- NO produce E1-E5 (solo E-Misión)
+
+### REGLA 12 — TRACEABILITY `_anclaje_matriz` HEREDADO v3.2 + `_produces_evidencia` MAPPING
+
+Cada elemento del scope (en cualquier sub-bloque) DEBE tener `_anclaje_matriz` con:
+- Para APERTURA: `alcance` + `raps_atravesados` (transversal)
+- Para APROPIACIÓN: `rap_target` + `saberes_que_demanda` + `criterios_canon_que_evalua`
+- Para TRANSFERENCIA: `raps_movilizados` + `criterio_canon_capstone` + `evidencia_capstone`
+
+**NEW v4.2 — `_produces_evidencia` mapping (canon traceability evidencias):**
+
+| Elemento de scope | `_produces_evidencia` | `_consumed_by_pm` |
+|---|---|---|
+| `story_a_reading` (APROPIACIÓN) | E1 | PM-2.3 |
+| `task_writing_derivada` (APROPIACIÓN) | E2 | PM-2.4 |
+| `story_b_listening` (APROPIACIÓN) | E3 | PM-2.6 |
+| `task_speaking_derivada` (APROPIACIÓN) | E4 | PM-2.8 |
+| `language_functions_per_rap` (algunas · APROPIACIÓN) | E5 | PM-2.9 |
+| `key_vocabulary_per_rap` + `grammar_items_per_rap` consolidados | E6 | PM-4.2 |
+| `mission_brief` + `rubrica_abp_capstone` (TRANSFERENCIA) | E-Misión | PM-3.5 |
+
+Si un elemento NO produce evidencia formal (e.g., `aprendizajes_previos_a_activar` en APERTURA · `materiales_simulacion` en TRANSFERENCIA), declara `_produces_evidencia: null`.
+
+### REGLA 13 — PROMPT OPERACIONAL DEBE RESPETAR LIBERTAD LLM (heredado §10/§11/§12 PLAN-FASE-1)
+
+El orchestrator que dispatchea Agent ejecutando PM-1.2 v4.2 DEBE:
+
+SÍ pasar al Agent:
+- Master prompt PM-1.2 v4.2 completo (REGLAS 10-13)
+- pm-1-1.json v2.8 (estructura tripartita · 6 bloques con `_anclaje_matriz`)
+- pm-0-0-matriz-alineada.json v1.2 (8 criterios canon)
+- pm-0-context.json v3.2 (universo + personajes + grammar focus)
+- pm-1-2-input.json (gates input)
+- 6 validation_checks BLOQUEANTES
+- Bloque "INSTRUCCIÓN CRÍTICA · LIBERTAD LLM REAL" explícito
+
+NO pasar al Agent:
+- Template literal con scope pre-fabricado por bloque
+- Elección de fuentes auténticas pre-decidida (LLM cura via 8 filtros)
+- 20 términos vocab pre-listados (LLM extrae del universo + matriz)
+- 5 funciones F1-F5 pre-redactadas
+- Mission brief pre-redactado (LLM diseña desde escenario_hero del PM-0 v3.2)
+- Sub-fases ABP pre-detalladas (LLM contextualiza al sector)
+
+**LIBERTAD LLM REAL** sobre:
+- Curación de fuentes (3 vías v2.6 · LLM elige)
+- Selección de Story A vs Story B candidatas (8 filtros v2.6)
+- Vocabulario diagnóstico APERTURA (cantidad + términos · LLM ajusta)
+- Materiales spark APERTURA (tipos de recursos · LLM diseña según universo)
+- Grammar items APROPIACIÓN (LLM elige del CEFR del RAP)
+- Mission brief TRANSFERENCIA (escenario laboral · LLM contextualiza)
+- 5 sub-fases ABP (duración + actividades · LLM balancea ≤12h total)
+
+**LIBERTAD LLM SOBRE NADA (canon estricto):**
+- Estructura 6 sub-bloques tripartitos (REGLA 11 · 1+N+1 + meta-bloque PRESENTACIÓN L1)
+- Schemas diferenciados por tipo_bloque (REGLA 11 · 3 schemas)
+- `_anclaje_matriz` obligatorio en cada elemento (REGLA 12)
+- `_produces_evidencia` mapping canon (REGLA 12 · E1-E6+E-Misión)
+- 6 validation_checks BLOQUEANTES (REGLA 14)
+- 9 REGLAS v2.6 preservadas dentro de APROPIACIÓN (8 filtros · 20 vocab · 5 funciones · etc.)
+
+### REGLA 14 — VALIDATION POST-GENERATION · 6 CHECKS
+
+```jsonc
+"validation_checks": [
+  {"id": 1, "name": "scope_diferenciado_por_tipo_bloque", "status": "PASS|FAIL"},
+  {"id": 2, "name": "apertura_scope_transversal", "status": "PASS|FAIL"},        // NO conocimiento nuevo · sí motivacional + diagnóstico
+  {"id": 3, "name": "apropiacion_scope_completo_por_rap", "status": "PASS|FAIL"}, // Story A + Story B + 20 vocab + 5 functions + grammar + tasks E2/E4
+  {"id": 4, "name": "transferencia_scope_capstone", "status": "PASS|FAIL"},      // mission brief + 5 sub-fases ABP + materiales + rúbrica
+  {"id": 5, "name": "cobertura_criterios_canon_heredada", "status": "PASS|FAIL"},// C01-C08 visibles en _anclaje_matriz de elementos
+  {"id": 6, "name": "traceability_matriz_completa", "status": "PASS|FAIL"}        // _anclaje_matriz + _produces_evidencia en cada elemento (heredado v3.2)
+]
+```
+
+Si CUALQUIER check FAIL · output marcado `enriched: false` · BLOQUEANTE para Step 1.4 (PM-2.0 architect cascade).
+
+### REGLA 15 — ESTRUCTURA OUTPUT pm-1-2.json v4.2
+
+Output schema:
+
+```jsonc
+{
+  "pm_id": "PM-1.2",
+  "pm_name": "Scope & Sequence + Curación · Tripartita Diferenciada",
+  "pm_version": "4.2",
+  "run_id": "...",
+  "generated_date": "...",
+
+  "_pm11_ref": "pm-1-1.json (v2.8 · 6 bloques tripartitos)",
+  "_pm00_matriz_ref": "pm-0-0-matriz-alineada.json",
+  "_pm0_context_ref": "pm-0-context.json",
+
+  "meta_bloque_presentacion_l1": {                 // ÚNICO · onboarding L1 al programa entero
+    "tipo": "META_BLOQUE_ONBOARDING",
+    "narrativa_l1": "...",
+    "objetivos_l1": [...],
+    "encuadre_l1": "...",
+    "_aplicabilidad": "previo_a_S1_apertura"
+  },
+
+  "sub_bloques_tripartitos": [
+    { /* B0 APERTURA · schema APERTURA */ },
+    { /* B1 APROPIACIÓN RA1 · schema APROPIACIÓN */ },
+    { /* B2 APROPIACIÓN RA2 · schema APROPIACIÓN */ },
+    { /* ... */ },
+    { /* BT TRANSFERENCIA · schema TRANSFERENCIA */ }
+  ],
+
+  "validation_checks": [...],
+  "enriched": true|false
+}
+```
+
+### REGLA 16 — RELACIÓN CON OTROS PROMPTS v4.2
+
+| Relación | Prompt | Cambio v4.2 |
+|----------|--------|-------------|
+| **Consume de (NEW · CRÍTICO)** | PM-1.1 v2.8 | estructura tripartita 6 bloques con _anclaje_matriz |
+| **Consume de** | PM-0.0 v1.2 | matriz alineada con 8 criterios canon |
+| **Consume de** | PM-0 v3.2 | universo + personajes + grammar focus |
+| **Alimenta a** | PM-2.0 architect (NEW v2.x) | session blueprint hereda tipo_bloque + scopes diferenciados |
+| **Alimenta a** | PM-2.1 | toma `materiales_spark` + `enfoque_motivacional` del bloque APERTURA |
+| **Alimenta a** | PM-2.2 | toma `aprendizajes_previos_a_activar` + `contexto_general_raps_presentado` del bloque APERTURA |
+| **Alimenta a** | PM-2.3 | toma `story_a_reading` + `key_vocabulary_per_rap` del bloque APROPIACIÓN del RAP |
+| **Alimenta a** | PM-2.4 | toma `task_writing_derivada` (E2) + grammar |
+| **Alimenta a** | PM-2.5 | toma `key_vocabulary_per_rap` + scaffolds |
+| **Alimenta a** | PM-2.6 | toma `story_b_listening` (E3) |
+| **Alimenta a** | PM-2.8 | toma `task_speaking_derivada` (E4) |
+| **Alimenta a** | PM-2.9 | toma `language_functions_per_rap` (E5) |
+| **Alimenta a** | PM-2.10 | toma `grammar_items_per_rap` |
+| **Alimenta a** | PM-2.11 | Cols 1-5 GFPI-F-134 derivado de matriz heredada |
+| **Alimenta a** | PM-3.5 | toma `mission_brief` + `subfases_abp_context` + `rubrica_abp_capstone` del bloque TRANSFERENCIA |
+
+### REGLA 17 — DEPRECATION PATH v2.6 → v4.2
+
+Programas con `pm-1-2.json` v2.6 (sin estructura tripartita · sin `_produces_evidencia` · sin scope diferenciado):
+- KEEP los archivos legacy en run dir (NO eliminar)
+- Generar nuevo `pm-1-2.json` v4.2 cuando se re-run el programa
+- Marcar artefactos v2.6 como `*.legacy-v2-6` (sufijo informativo)
+
+Run resultante puede tener AMBOS: legacy v2.6 (auditoría) + v4.2 (operacional).
+
+---
+
+## ESTRUCTURA OPERACIONAL v4.2 (resumen ejecutivo)
+
+```
+pm-1-1.json v2.8 (6 bloques tripartitos · _anclaje_matriz por bloque)
+  +
+pm-0-0-matriz-alineada.json v1.2 (8 criterios canon)
+  +
+pm-0-context.json v3.2 (universo + personajes)
+  +
+pm-1-2-input.json (gates input)
+  ↓
+PM-1.2 v4.2 dispatcher (Agent con prompt anti-prescriptive · libertad LLM REAL)
+  ↓
+pm-1-2.json v4.2 maestro
+  ├─ meta_bloque_presentacion_l1 (ÚNICO · onboarding L1)
+  └─ sub_bloques_tripartitos:
+      ├─ B0 APERTURA   (motivacional + diagnóstico + activación · NO conocimiento nuevo)
+      ├─ B1-Bn APROPIACIÓN (Story A + B + vocab + functions + grammar + tasks · _produces_evidencia E1-E5)
+      └─ BT TRANSFERENCIA (mission brief + 5 sub-fases ABP + rúbrica · _produces_evidencia E-Misión)
+  ↓
+6 validation_checks (5 estructurales + 1 traceability heredado)
+  ↓
+Step 1.4 PM-2.0 architect cascade (session blueprint hereda tipo_bloque)
+```
+
+---
+
+## CASO OPERACIONAL CONFIRMADO (pendiente Step 1.3.D dispatch IMARPOR-V2)
+
+**Input esperado IMARPOR-V2:**
+- pm-1-1.json v2.8 · 6 bloques tripartitos (1 + 4 + 1) con _anclaje_matriz validados
+- pm-0-0-matriz-alineada.json v1.1 · 4 RAPs · 8 criterios C01-C08 · 4 overlaps
+- pm-0-context.json v3.2 · 21 keys · universo banana cold chain
+- tipo: Curso Complementario · sesiones_count: 12
+
+**Output esperado pm-1-2.json v4.2:**
+- 1 meta_bloque PRESENTACIÓN L1
+- 6 sub_bloques tripartitos:
+  - B0 APERTURA: 4 materiales_spark contextualizados banana cold chain + ~12 vocab diagnóstico + 4 aprendizajes_previos_a_activar + contexto_general 4 RAPs
+  - B1 APROPIACIÓN RA1: Story A reefer ship vocabulary + Story B SMCP audio + 20 vocab RA1 + 5 functions + grammar + task writing E2 + task speaking E4-parcial
+  - B2 APROPIACIÓN RA2: Story A SMCP messages + Story B VHF transmission + 20 vocab RA2 + 5 functions + grammar + tasks
+  - B3 APROPIACIÓN RA3: Story A grammar applications + Story B port commands + 20 vocab RA3 + 5 functions + grammar + tasks
+  - B4 APROPIACIÓN RA4: Story A role descriptions + Story B operations briefing + 20 vocab RA4 + 5 functions + grammar + tasks
+  - BT TRANSFERENCIA: mission brief Pre-Departure Banana Reefer Compliance Check + 5 sub-fases ABP S11+S12 + materiales simulación + rúbrica capstone C08
+- 6/6 validation_checks PASS
+- Cada elemento con `_anclaje_matriz` + `_produces_evidencia` mapping completo
+
+---
+
+*PM-1.2 v4.2 · Scope & Sequence Tripartita Diferenciada · 3 schemas distintos por tipo_bloque · `_produces_evidencia` mapping canon · Anti-prescriptive prompt operacional*
+*Sergio Cortés decisión arquitectónica 2026-05-01 · cascade Phase 1 Step 1.3 IMARPOR-V2 · post PM-1.1 v2.8*

@@ -1,9 +1,10 @@
 ---
 title: DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo
-version: 3.3
+version: 3.4
 last_updated: 2026-05-01
 status: PARADIGM SHIFT FUNDAMENTAL · NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1. Sergio Cortés decisión arquitectónica 2026-05-01: el sistema diseñaba "de adentro hacia afuera" en teoría (DM declaraba UbD desde v2.0) pero en práctica reconstruía la matriz GFPI-F-134 retroactivamente en PM-2.11 (al final de Fase 2) usando información agregada que el LLM había procesado sin saber a qué RAP pertenecía cada saber/criterio. v3.0 corrige: PM-0.0 (NEW) toma información curricular SOFÍA agregada (saberes_conceptos + saberes_proceso + criterios_evaluacion + N RAPs · sin pre-clasificar) y ALINEA explícitamente por RAP. Output `pm-0-0-matriz-alineada.json` se vuelve fundamento pedagógico de toda la cadena downstream. PM-0 simplifica de 1077 → ~270 lines operacionales (5 principios maestros · libertad LLM · schema mínimo viable). Cascade impact: PM-0 + PM-1.1 + PM-1.2 + PM-2.0 + PM-2.x + PM-2.11 + PM-3.7 ahora consumen matriz alineada como insumo. PM-3.7 V04 multi-RAP rows se llenan con contenido REAL por RAP (no solo título RAP en R18-R21). DOCX/JSON learner-readable v2.7 (30 Activity Cards anatomy 6-bloque) preservado · NO afectado.
 previous_versions:
+  - "3.3 (2026-05-01) — PM-1.1 v2.8 estructura tripartita + tiempos canon universales (APERTURA=6h/1s · TRANSFERENCIA≤12h/≤2s · APROPIACIÓN=resto) · 3 master docs bumps (PM-1.1 v2.8 · PLAN-FASE-1 v1.3 · DM v3.3)"
   - "3.2 (2026-05-01) — Criterios específicos canon sistema (8 C01-C08) + TRACEABILITY `_anclaje_matriz` cross-PM · 4 master docs bumps (PM-0.0 v1.2 · PM-0 v3.2 · PLAN-FASE-1 v1.2 · DM v3.2)"
   - "3.1 (2026-05-01) — Anti-patrón #16 prompt operacional prescriptivo canonizado · 4 master docs bumps (PM-0.0 v1.1 · PM-0 v3.1 · PLAN-FASE-1 v1.1 · DM v3.1)"
   - "3.0 (2026-05-01) — PARADIGM SHIFT FUNDAMENTAL · NEW PM-0.0 Matriz Pedagógica Alineadora canonizado pre-Fase 1 · PM-0 v1.x → v3.0 simplificado · cascade impact toda pipeline"
@@ -2154,7 +2155,92 @@ ANTES de dispatchear Agent PM-1.1 v2.8:
 
 ---
 
+## EXTENSIÓN v3.4 — PM-1.2 SCOPE DIFERENCIADO POR `tipo_bloque` (2026-05-01)
+
+**Trigger del bump:** Sergio canonizó (2026-05-01 Step 1.3 IMARPOR-V2) que cada `tipo_bloque` heredado de PM-1.1 v2.8 requiere scope cualitativamente distinto. PM-1.2 v2.6 generaba scope uniforme · forzaba misma curación a APERTURA · APROPIACIÓN y TRANSFERENCIA · perdía traceability canon de evidencias E1-E6.
+
+**Lección canonizada universal:**
+
+- **APERTURA** es motivacional + diagnóstico + activación de aprendizajes previos · **NO conocimiento ni habilidades nuevas** (canon Sergio): `materiales_spark` con `enfoque_motivacional` + `vocabulario_diagnostico` (10-15 NO 20) + `aprendizajes_previos_a_activar` + `contexto_general_raps_presentado`
+- **APROPIACIÓN** es vivero de evidencias formales E1-E6: cada elemento productor declara `_produces_evidencia` apuntando a una de las 7 evidencias canon (E1 Reading · E2 Writing · E3 Listening · E4 Speaking · E5 Functions · E6 Cuestionario consolidado · E-Misión)
+- **TRANSFERENCIA** es capstone integrador: mission brief + 5 sub-fases ABP + materiales simulación + rúbrica → produce E-Misión (PM-3.5)
+
+**Bumps ejecutados (3 master docs):**
+
+- **PM-1.2 v2.6 → v4.2** (EXTENSIÓN v4.2 · REGLAS 10-17 · 6 validation_checks BLOQUEANTES · 3 schemas diferenciados · `_produces_evidencia` mapping · 9 reglas v2.6 PRESERVADAS aplicando solo a APROPIACIÓN)
+- **PLAN-FASE-1 v1.3 → v1.4** (NEW §14 PM-1.2 v4.2 Scope Diferenciado · 10 sub-secciones · tabla `_produces_evidencia` mapping · ejemplos por tipo programa · trigger interno orchestrator · cascade impact)
+- **DM v3.3 → v3.4** (esta extensión documenta canon)
+
+**3 schemas diferenciados (visual):**
+
+```
+APERTURA:        materiales_spark (enfoque_motivacional) + vocab diagnóstico + activación
+                 ↓ NO conocimiento nuevo · NO Story A/B · NO produce E1-E5
+
+APROPIACIÓN:     story_a_reading (E1) + story_b_listening (E3) + 20 vocab + 5 functions (E5) + grammar
+                 + task_writing (E2) + task_speaking (E4) + key_vocab+grammar consolidados (E6)
+                 ↓ vivero de evidencias formales
+
+TRANSFERENCIA:   mission_brief + 5 sub-fases ABP + materiales_simulacion + rubrica_capstone (E-Misión)
+                 ↓ capstone integrador · NO Story A/B
+```
+
+**Tabla `_produces_evidencia` mapping (canon traceability evidencias):**
+
+| Elemento | Schema | Evidencia | PM destino |
+|---|---|---|---|
+| `story_a_reading` | APROPIACIÓN | E1 | PM-2.3 |
+| `task_writing_derivada` | APROPIACIÓN | E2 | PM-2.4 |
+| `story_b_listening` | APROPIACIÓN | E3 | PM-2.6 |
+| `task_speaking_derivada` | APROPIACIÓN | E4 | PM-2.8 |
+| `language_functions_per_rap` | APROPIACIÓN | E5 | PM-2.9 |
+| `vocab+grammar consolidados` | APROPIACIÓN | E6 | PM-4.2 |
+| `mission_brief+rubrica` | TRANSFERENCIA | E-Misión | PM-3.5 |
+| `materiales_spark+diagnóstico+activación` | APERTURA | null | PM-2.1, PM-2.2 |
+
+**Pattern canonical orchestrator (cross-program · cross-PM):**
+
+```
+ANTES de dispatchear Agent PM-1.2 v4.2:
+
+1. ¿pm-1-1.json v2.8 está validado 9/9 PASS?
+   - Si NO → STOP · re-run PM-1.1 v2.8
+
+2. ¿Mi prompt al Agent contiene SCOPE DIFERENCIADO + 3 SCHEMAS + _produces_evidencia + restricción APERTURA "NO conocimiento nuevo"?
+   - Si NO → refactor (agregar 4 elementos canónicos v4.2)
+
+3. ¿Mi prompt pasa template literal con scope pre-fabricado?
+   - Si SÍ → STOP · solo obligatorios + contexto + libertad LLM real
+```
+
+**Caso operacional confirmado IMARPOR-V2 (pendiente Step 1.3.D dispatch):**
+
+- Input: pm-1-1.json v2.8 (6 bloques) + matriz alineada (8 criterios) + universo v3.2
+- Output esperado: 1 meta_bloque PRESENTACIÓN L1 + 6 sub_bloques tripartitos
+  - B0 APERTURA: 4 spark contextualizados banana cold chain + diagnóstico + activación
+  - B1-B4 APROPIACIÓN: curación POR RAP con `_produces_evidencia` E1-E6 mapping
+  - BT TRANSFERENCIA: Pre-Departure Banana Reefer Compliance Check + 5 sub-fases + E-Misión
+- 6/6 validation_checks PASS
+
+**Aplicabilidad cross-program:**
+
+PM-1.2 v4.2 funciona con cualquier programa que tenga pm-1-1.json v2.8 validado:
+- IMARPOR-V2 (CC · 4 RAPs) · MGV (Tecnológico · 6 RAPs) · INGBAS4 (CC · 3 RAPs) · INGBAS1-AGRO (CC · 2 RAPs) · Técnico ADSO (4 RAPs)
+
+**Cascade impact downstream (pendiente Step 1.4+):**
+
+- **PM-2.0 architect** (bump pendiente · session blueprint hereda tipo_bloque + scopes diferenciados + `_produces_evidencia`)
+- **PM-2.1 / PM-2.2** consume APERTURA (materiales_spark + diagnóstico + activación)
+- **PM-2.3-2.10** consume APROPIACIÓN del RAP correspondiente (cada uno toma su elemento productor)
+- **PM-2.11** Cols 1-5 GFPI-F-134 derivado de matriz heredada
+- **PM-3.5** consume TRANSFERENCIA (mission brief + 5 sub-fases + rúbrica)
+- **PM-4.2** consume vocab + grammar + functions consolidados para Cuestionario S6 (E6)
+
+**Memory snapshot:** `feedback_pm12_scope_diferenciado_tipo_bloque.md` (canon pattern · 3 schemas · `_produces_evidencia` mapping · 6 validation_checks · trigger interno orchestrator · ejemplos cross-program)
+
+---
+
 *DOCUMENTO MAESTRO — Sistema Completo de Prompts FPI SENA Bilingüismo*
-*Fábrica Curricular v3.3 — PM-1.1 ESTRUCTURA TRIPARTITA + TIEMPOS CANON UNIVERSALES · 1 APERTURA (6h/1s) + N APROPIACIÓN (resto) + 1 TRANSFERENCIA (≤12h/≤2s) · `tipo_bloque` con schema diferenciado · `_anclaje_matriz` heredado v3.2 · 9 validation_checks BLOQUEANTES · canon Sergio Cortés 2026-05-01*
-*Versiones legacy preserved: v3.2 Criterios canon + Traceability + v3.1 Anti-patrón #16 + v3.0 PARADIGM SHIFT NEW PM-0.0 + v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
+*Fábrica Curricular v3.4 — PM-1.2 SCOPE DIFERENCIADO POR `tipo_bloque` · 3 schemas distintos (APERTURA motivacional+diagnóstico · APROPIACIÓN vivero evidencias · TRANSFERENCIA capstone) · `_produces_evidencia` mapping E1-E6+E-Misión · 6 validation_checks BLOQUEANTES · clarificaciones pedagógicas Sergio integradas (NO conocimiento nuevo en APERTURA · vivero evidencias en APROPIACIÓN) · canon Sergio Cortés 2026-05-01*
+*Versiones legacy preserved: v3.3 PM-1.1 Tripartita + v3.2 Criterios canon + Traceability + v3.1 Anti-patrón #16 + v3.0 PARADIGM SHIFT NEW PM-0.0 + v2.7 Learner-Readable + v2.6.x Shared Renderer Pattern + v2.6.4 Sección 4 SENA + v2.6.3 Inline Scaffolds + v2.6.1 Data-Flow Inversion + v2.6 Activity Footer + Apéndices Doble Render + pm-0-context.json + Regla Arquetipos + PM-1.2 4-Bloques*
 *Instructor Sergio · Abril–Mayo 2026*
