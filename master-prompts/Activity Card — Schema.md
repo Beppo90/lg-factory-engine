@@ -1,10 +1,25 @@
 ---
 type: data-contract
-version: 2.7
+version: 3.0
 created: 2026-04-13
-last_verified: 2026-04-21
-last_updated: 2026-04-21
+last_verified: 2026-05-02
+last_updated: 2026-05-02
 status: active
+v3_0_changes:
+  - "NEW dimension enum {cognitiva · procedimental · actitudinal} · UNA dimensión por activity card (canon Sergio 2026-05-02)"
+  - "NEW activities[].descripcion multi-párrafo 200-600 palabras · panorama→orientación→equipos→práctica→cierre (canon Sergio 3 ejemplos guía SENA real)"
+  - "NEW material_apoyo array de objetos {descripcion, link} · múltiples permitidos · array vacío [] si NO aplica → render 'No aplica' literal"
+  - "NEW evidencia.nombre · nombre específico legible (no solo tipo · ej 'Códigos de comunicación portuaria')"
+  - "NEW numero_actividad · numeración secuencial acumulada a nivel guía completa (referencia para aprendiz)"
+  - "NEW estrategias_didacticas_activas + tecnicas_didacticas como array (incluso si tiene 1 elemento · simplifica renderer)"
+  - "NEW ambiente como texto operacional compuesto (NO solo enum · puede ser 'Ambiente pluritecnológico o simulado...')"
+  - "NEW heredancia traceability obligatoria: _anclaje_matriz_heredado + _produces_evidencia + _consumed_by_pm + _ref_pm12_path + _ref_pm20_session"
+  - "NEW reglas condicionales por tipo_bloque: APERTURA + TRANSFERENCIA → evidencias.aplica=false (render 'No aplica') · APROPIACIÓN puede ser true o false (scaffolds NO · anchors SÍ)"
+  - "v2.0/v2.6.3/v2.7 PRESERVADOS como REFERENCIA legacy (back-compat para runs anteriores)"
+canon_origin:
+  - "Sergio Cortés Perdomo dictó schema canon 2026-05-02 con 3 ejemplos literal de guía aprendizaje SENA modelo (códigos portuarios + riesgos SST + inspección apilador)"
+  - "Renombrado activities[].type → activities[].dimension (canon SENA V+O+C dimensiones del aprendizaje)"
+  - "Schema v3.0 alineado con cascade Phase 1 v3.x (PM-0.0 v1.2+ + PM-0 v3.2+ + PM-1.1 v2.8+ + PM-1.2 v4.2+ + PM-2.0 v3.0+)"
 ---
 
 # Activity Card — Schema
@@ -1009,3 +1024,401 @@ Antes de emitir `pm-3-6.json` con `schema_version: "v2.7"`:
 **Versión v2.7:** A partir del 2026-04-21
 **Caso de origen:** MGV-2026-04-20 G1 (The Visual Communicator) — reescritura piloto de las 30 actividades con anatomía Learner-Readable inspirada en GFPI-F-135 canon SENA.
 **Próxima guía:** DIESEL-2026-04-19 G1 (The Workshop Specialist) — portará v2.7 tras validación en MGV.
+
+---
+
+## 11. Activity Card v3.0 — CANON SERGIO 2026-05-02 (sucesor de v2.0 para Fase 2 GFPI-F-134 feed)
+
+**Nueva en v3.0 (2026-05-02).** Sergio Cortés Perdomo dictó el schema canónico con 3 ejemplos literal de guía de aprendizaje SENA modelo · alineado con cascade Phase 1 v3.x (matriz v1.3 + pm-1-1 v2.8 + pm-1-2 v4.2 + pm-2-0 v3.0). Esta versión **reemplaza** el schema v2.0 de Fase 2 para todo programa post-cascade v3.x. v2.0 + v2.6.3 + v2.7 preservados como REFERENCIA legacy para back-compat.
+
+### 11.1 Propósito v3.0
+
+Cada PM-2.x downstream (PM-2.1 a PM-2.10) emite **una o más Activity Cards v3.0** que serán:
+
+- **Renderizadas en la guía del aprendiz GFPI-F-135** con el formato exacto de los 3 ejemplos canon (panorama → orientación → equipos/lectura → práctica → cierre/socialización)
+- **Consumidas por PM-2.11 Row Assembler** para ensamblar columnas 6-11 de GFPI-F-134
+- **Consumidas por PM-4.1** para elaborar instrumentos de evaluación (cuando `evidencias.aplica = true`)
+
+### 11.2 Schema completo v3.0
+
+```yaml
+activity_card:
+  # === IDENTIDAD (heredada de PM-2.0 v3.0 session_blueprint) ===
+  pm_id: "PM-2.x"                              # PM emisor (PM-2.1 a PM-2.10)
+  pm_name: "Reading — The Master Anchor"
+  session: "S3"                                # heredado de pm-2-0
+  tipo_bloque: "APROPIACION"                   # APERTURA | APROPIACION | TRANSFERENCIA · heredado pm-2-0
+  bloque_id_referencia: "B1"                   # B0|B1|B2|...|BT · heredado pm-1-1
+  rap_target: "RA1"                            # heredado pm-1-1 · null si transversal (APERTURA/TRANSFERENCIA)
+  numero_actividad: 3                          # NEW v3.0 · numeración secuencial ACUMULADA a nivel guía completa (1, 2, 3, ..., N total)
+
+  # === DIMENSIÓN + ENUNCIADO + DESCRIPCIÓN ===
+  dimension: "cognitiva"                       # NEW v3.0 · UNA: cognitiva | procedimental | actitudinal
+                                                # canon Sergio: "No siempre la activity card debe contener todas las dimensiones"
+                                                # típicamente actitudinal en APERTURA (reflexión inicial/contextualización)
+  enunciado: "Reconocer códigos de comunicación portuaria de acuerdo con normativa."
+                                                # V+O+C estructura · ≤200 caracteres · canon SENA
+  descripcion: |
+    Identificar códigos según normatividad portuaria, referente a señales de comunicación
+    y señalización necesarias para la operación.
+
+    Para el desarrollo de la actividad, el instructor orientará a los aprendices sobre
+    concepto, tipos y características del código de comunicación portuaria y del sistema
+    baroti, así como del sistema operativo de terminal.
+
+    Posteriormente se conformarán equipos de 3 aprendices, quienes darán lectura a los
+    siguientes documentos: ...
+
+    Seguidamente, los aprendices, a partir del material referenciado, realizarán
+    simulaciones de pedidos de auxilio, operación terminada u otras similares...
+
+    La actividad finaliza con la entrega de un documento que resuma las señales más
+    utilizadas en el ámbito portuario, y con la socialización de los aprendizajes
+    alcanzados en desarrollo de la actividad.
+                                                # NEW v3.0 · multi-párrafo 200-600 palabras
+                                                # patrón canon: panorama → orientación → equipos/lectura → práctica → cierre/socialización
+                                                # render literal en guía (saltos `\n\n` preservados)
+
+  # === LOGÍSTICA ===
+  ambiente: "Ambiente convencional"            # texto operacional · puede ser compuesto
+                                                # ej: "Ambiente pluritecnológico o simulado que cuente con equipo apilador y contenedores 20/40 pies"
+                                                # NO enum cerrado (canon SENA permite descripciones operacionales)
+  estrategias_didacticas_activas:              # NEW v3.0 · array (siempre · 1+ elementos)
+    - "Aprendizaje colaborativo"
+                                                # enum: Aprendizaje colaborativo, Trabajo colaborativo, Aprendizaje basado en proyectos,
+                                                # ABP, ABT, TBLT, CLIL, Content-Based Learning, Aprendizaje basado en problemas,
+                                                # Investigación guiada, Simulación, Juego de roles
+  tecnicas_didacticas:                         # NEW v3.0 · array (siempre · 1+ elementos)
+    - "Simulación"
+                                                # enum: Simulación, Práctica de campo, Investigación guiada, Dramatización,
+                                                # Exposición y debate, Role play, Jigsaw, Think-Pair-Share, Mapas conceptuales,
+                                                # Análisis de casos, Lluvia de ideas, Mesa redonda, Conversatorio, Taller, Panel discussion
+  materiales_formacion:                        # array
+    - "papel bond"
+    - "lapiceros"
+    - "marcadores"
+    - "computadores"
+                                                # materiales TANGIBLES de aula (no recursos de apoyo · esos son material_apoyo)
+  material_apoyo:                              # NEW v3.0 · array de objetos · MÚLTIPLES permitidos
+    - descripcion: "Documento en PDF sobre Código internacional de señales"
+      link: "https://es.scribd.com/presentation/478805289/BAROTI"
+                                                # array vacío `[]` si NO aplica → render "No aplica" literal
+                                                # cada objeto tiene descripcion + link (URL o "no aplica" si descripcion sin link)
+
+  # === EVIDENCIAS (CONDICIONAL · render "No aplica" literal si aplica=false) ===
+  evidencias:
+    aplica: true                               # boolean · APERTURA+TRANSFERENCIA siempre false · APROPIACIÓN variable
+    tipo: "Producto"                           # Producto | Conocimiento | Desempeño · null si !aplica
+    nombre: "Códigos de comunicación portuaria"   # NEW v3.0 · nombre específico legible para aprendiz
+    tecnica_evaluacion: "Verificación de producto"   # Preguntas | Observación | Verificación de producto · null si !aplica
+    instrumento_numero: 2                      # 1-6 (heredado del canon PM-4.1) · null si !aplica
+    instrumento_tipo: "Lista de verificación"  # Cuestionario | Lista de Chequeo | Lista de verificación | Escala de estimación | null si !aplica
+    codigo_canon: "E2"                         # NEW v3.0 · heredado de pm-1-2._produces_evidencia (E1-E6+E-Misión)
+    criterio_canon_evaluado: "C02"             # NEW v3.0 · heredado de pm-2-0.evidencias_secuencia_temporal
+
+  # === DURACIÓN ===
+  duracion_horas: 4                            # numérico · debe coincidir con tiempo asignado en pm-2-0.session_blueprint
+
+  # === HEREDANCIA TRACEABILITY (literal copy de pm-1-2 + pm-2-0) ===
+  _anclaje_matriz_heredado:                    # NEW v3.0 · literal copy de pm-1-2.elementos[ref_pm12_path]._anclaje_matriz
+    rap_target: "RA1"
+    saberes_que_demanda: ["UNIT 1: SHIP OVERVIEW", "PARTS OF THE SHIPS"]   # subset saberes_conceptos del RAP
+    criterios_canon_que_evalua: ["C02"]        # subset C01-C08 del bloque
+    saberes_proceso_movilizados: ["IDENTIFICAR Y EXTRAER INFORMACIÓN PRECISA EN INGLÉS..."]   # subset saberes_proceso del RAP
+  _produces_evidencia: "E2"                    # NEW v3.0 · literal copy
+  _consumed_by_pm: "PM-2.4"                    # NEW v3.0 · self-reference
+  _ref_pm12_path: "sub_bloques_tripartitos[1].task_writing_derivada"   # NEW v3.0 · trazabilidad explícita
+  _ref_pm20_session: "S4"                      # NEW v3.0 · sesión target en pm-2-0.session_blueprint
+```
+
+### 11.3 Reglas condicionales canon por `tipo_bloque`
+
+| `tipo_bloque` | `dimension` típica | `evidencias.aplica` | Render evidencias |
+|---|---|---|---|
+| **APERTURA** (PM-2.1 spark · PM-2.2 gap analysis) | actitudinal o cognitiva (motivacional/diagnóstico) | **siempre `false`** (canon Sergio: "Las actividades de reflexión inicial y contextualización no llevan evidencias") | `"No aplica"` literal |
+| **APROPIACIÓN** (PM-2.3-2.10) | cognitiva o procedimental | **variable** (anchors → `true` · scaffolds → `false`) · canon Sergio: "no todas las evidencias de apropiación tienen que tener evidencias de aprendizaje a evaluar" | `true` → render completo · `false` → "No aplica" literal |
+| **TRANSFERENCIA** (PM-3.5) | procedimental + actitudinal | **siempre `false`** en este schema · E-Misión vive en rúbrica capstone separada (no es "evidencia de aprendizaje" tipificada SENA estándar) | `"No aplica"` literal |
+
+### 11.4 Patrón estructural canon de `descripcion` (multi-párrafo)
+
+La descripción debe seguir el patrón pedagógico SENA observado en los 3 ejemplos canon de Sergio · NO como template literal sino como GUÍA estructural (Anti-patrón #16 respetado · libertad LLM real):
+
+```
+Párrafo 1 (PANORAMA): qué se identifica/aplica/describe + contexto operacional breve
+Párrafo 2 (ORIENTACIÓN INSTRUCTOR): qué explica el instructor (concepto, características, tipos)
+Párrafo 3 (CONFORMACIÓN EQUIPOS + INPUT): cómo se organizan + qué leen/consultan/escuchan
+Párrafo 4 (PRÁCTICA/SIMULACIÓN): qué hacen con el material referenciado · simulación, ejercicio, investigación, práctica de campo
+Párrafo 5 (CIERRE + SOCIALIZACIÓN): qué entregan + socialización aprendizajes + (si aplica) aplicación de evidencia formal
+```
+
+**Voz:** descriptiva (3ª persona · "el instructor orientará..." · "se conformarán equipos de 3..." · "los aprendices realizarán...").
+
+**Longitud:** 200-600 palabras típico · multi-párrafo permitido (saltos `\n\n` preservados literalmente en render).
+
+**Universo:** debe estar contextualizado al universo del programa heredado de pm-0-context.json (banana cold chain · CML port · personajes · etc.).
+
+### 11.5 3 Ejemplos canónicos · referencia Sergio 2026-05-02
+
+#### Ejemplo 1 · Actividad cognitiva (APROPIACIÓN · genera evidencia Producto)
+
+```yaml
+activity_card:
+  pm_id: "PM-2.x"
+  numero_actividad: 3
+  dimension: "cognitiva"
+  enunciado: "Reconocer códigos de comunicación portuaria de acuerdo con normativa."
+  descripcion: |
+    Identificar códigos según normatividad portuaria, referente a señales de comunicación y señalización necesarias para la operación.
+
+    Para el desarrollo de la actividad, el instructor orientará a los aprendices sobre concepto, tipos y características del código de comunicación portuaria y del sistema baroti, así como del sistema operativo de terminal.
+
+    Posteriormente se conformarán equipos de 3 aprendices, quienes darán lectura a los siguientes documentos: Código internacional de señales, el cual se encuentra disponible en el siguiente link y en material de apoyo. ¿Cómo identificar la posición del contenedor a bordo?, el cual se encuentra disponible en el siguiente link: https://es.scribd.com/presentation/478805289/BAROTI
+
+    Seguidamente, los aprendices, a partir del material referenciado, realizarán simulaciones de pedidos de auxilio, operación terminada u otras similares, para lo cual deberán utilizar los códigos de señales establecidas, y según lo indique el instructor.
+
+    La actividad finaliza con la entrega de un documento que resuma las señales más utilizadas en el ámbito portuario, y con la socialización de los aprendizajes alcanzados en desarrollo de la actividad.
+  ambiente: "Ambiente convencional"
+  estrategias_didacticas_activas: ["Aprendizaje colaborativo"]
+  tecnicas_didacticas: ["Simulación"]
+  materiales_formacion: ["papel bond", "lapiceros", "marcadores", "computadores"]
+  material_apoyo:
+    - descripcion: "Documento en PDF sobre Código internacional de señales"
+      link: "https://es.scribd.com/presentation/478805289/BAROTI"
+  evidencias:
+    aplica: true
+    tipo: "Producto"
+    nombre: "Códigos de comunicación portuaria"
+    tecnica_evaluacion: "Verificación de producto"
+    instrumento_numero: 2
+    instrumento_tipo: "Lista de verificación"
+  duracion_horas: 4
+```
+
+#### Ejemplo 2 · Actividad cognitiva (APROPIACIÓN · NO genera evidencia · scaffold)
+
+```yaml
+activity_card:
+  pm_id: "PM-2.x"
+  numero_actividad: 4
+  dimension: "cognitiva"
+  enunciado: "Diferenciar los riesgos y peligros de acuerdo con normativa de Seguridad y Salud en el Trabajo."
+  descripcion: |
+    Los aprendices se dividirán en grupos de 3 aprendices y se les proporcionará material sobre los conceptos de riesgo y peligro, así como la normativa SST vigente (Decreto 1443 de 2014, Por el cual se dictan disposiciones para la implementación del Sistema de Gestión de la Seguridad y Salud en el Trabajo (SG-SST)), al cual puede acceder desde el material de apoyo.
+
+    A través de una investigación guiada por el instructor, cada grupo consultará sobre los tipos de riesgo químico, auditivo, ergonómico y físico; posteriormente identificarán de los tipos riesgos y peligros en la operación del equipo apilador de contenedores, diferenciando ambos términos y facilitando el intercambio de ideas y experiencias, a través de la socialización de sus conclusiones y las mejores prácticas para la gestión de riesgos en el trabajo.
+  ambiente: "Ambiente convencional"
+  estrategias_didacticas_activas: ["Trabajo colaborativo"]
+  tecnicas_didacticas: ["Investigación guiada"]
+  materiales_formacion: ["Elementos de oficina", "computadores"]
+  material_apoyo:
+    - descripcion: "Manual de Operación equipo srsc4531g – Reach Stacker"
+      link: null
+    - descripcion: "Decreto 1443 de 2014"
+      link: null
+  evidencias:
+    aplica: false              # NO genera evidencia formal · scaffold cognitivo
+    tipo: null
+    nombre: null
+    tecnica_evaluacion: null
+    instrumento_numero: null
+    instrumento_tipo: null
+  duracion_horas: 4
+```
+
+**Render esperado en guía:**
+```
+Evidencias de aprendizaje: No aplica
+Instrumentos de evaluación: No aplica
+```
+
+#### Ejemplo 3 · Actividad procedimental (APROPIACIÓN · genera evidencia Desempeño)
+
+```yaml
+activity_card:
+  pm_id: "PM-2.x"
+  numero_actividad: 5
+  dimension: "procedimental"
+  enunciado: "Inspeccionar área de operación del equipo apilador según procedimiento de la organización."
+  descripcion: |
+    Para el desarrollo de esta actividad, el instructor orientará sobre el procedimiento que se debe realizar para hacer alistamiento de área de operación, para lo cual abordará lo relacionado a concepto, características, plan de operaciones de ruta de traslado y técnicas de inspección de obstáculos; posteriormente, y una vez apropiados los conceptos, se realizará actividad práctica la cual consiste en:
+
+    Se conformarán equipos de 3 aprendices.
+
+    Cada equipo deberá formular un plan para la inspección del área de operación, ya sea en una terminal portuaria, o en otro sector productivo donde opere el equipo apilador de contenedores. Los aprendices, con la orientación del instructor, propondrán un plan de trabajo que incluya las características requeridas por la organización para la operación del equipo apilador de contenedores, a través de una lista de chequeo. Se propone la creación de un plan de disposición del área de operación.
+
+    Una vez elaborado el plan, se realizará práctica de campo en ambiente pluritecnológico, o terminal portuaria, y cada equipo deberá delimitar, organizar y preparar el área donde se realizará la operación de apilado. Esto incluye la delimitación de espacios, señalización, limpieza e iluminación del área, así como ubicación de objetos o elementos que obstaculicen la operación en las rutas de traslado, a fin de crear un entorno seguro y eficiente para la operación del equipo.
+
+    La actividad finaliza con la aplicación de evidencia de desempeño y socialización de los aprendizajes logrados en desarrollo del proceso.
+  ambiente: "Ambiente pluritecnológico o simulado que cuente con equipo o simulador de apilado de contenedores y contenedores de 20 y 40 pies. Ambiente convencional."
+  estrategias_didacticas_activas: ["Aprendizaje basado en proyectos"]
+  tecnicas_didacticas: ["Práctica de campo"]
+  materiales_formacion: ["Elementos de oficina", "computadores", "equipo apilador de contenedores", "contenedores"]
+  material_apoyo:
+    - descripcion: "Manual de Operación equipo srsc4531g – Reach Stacker"
+      link: null
+  evidencias:
+    aplica: true
+    tipo: "Desempeño"
+    nombre: "Delimitar áreas de operación y rutas de traslado"
+    tecnica_evaluacion: "Observación"
+    instrumento_numero: 3
+    instrumento_tipo: "Lista de Chequeo"
+  duracion_horas: 10
+```
+
+### 11.6 Reglas de validación obligatorias v3.0
+
+```
+✓ pm_id ∈ {PM-2.1, PM-2.2, PM-2.3, PM-2.4, PM-2.5, PM-2.6, PM-2.8, PM-2.9, PM-2.10}
+✓ session = "S1"-"SN" (heredado de pm-2-0)
+✓ tipo_bloque ∈ {APERTURA, APROPIACION, TRANSFERENCIA} (heredado pm-2-0)
+✓ bloque_id_referencia matches pm-1-1.bloques[].bloque_id
+✓ rap_target = pm-1-1.bloques[bloque_id_referencia]._anclaje_matriz.rap_target (null si transversal)
+✓ numero_actividad ≥ 1 · secuencial · sin gaps a nivel guía completa
+✓ dimension ∈ {cognitiva, procedimental, actitudinal} · UN solo valor
+✓ enunciado ≤ 200 caracteres · estructura V+O+C (Verbo + Objeto + Condición)
+✓ descripcion ≥ 200 palabras Y ≤ 600 palabras · multi-párrafo permitido (\n\n)
+✓ ambiente non-empty
+✓ estrategias_didacticas_activas array len ≥ 1
+✓ tecnicas_didacticas array len ≥ 1
+✓ materiales_formacion array len ≥ 1
+✓ material_apoyo array (puede ser vacío `[]` si NO aplica · render "No aplica")
+✓ Cada material_apoyo[] tiene descripcion non-empty (link puede ser null)
+
+REGLAS CONDICIONALES por tipo_bloque:
+SI tipo_bloque == "APERTURA" o tipo_bloque == "TRANSFERENCIA":
+  ✓ evidencias.aplica DEBE SER false
+  ✓ evidencias.{tipo, nombre, tecnica_evaluacion, instrumento_numero, instrumento_tipo} DEBEN SER null
+
+SI tipo_bloque == "APROPIACION":
+  SI evidencias.aplica == true:
+    ✓ evidencias.tipo ∈ {Producto, Conocimiento, Desempeño}
+    ✓ evidencias.nombre non-empty
+    ✓ evidencias.tecnica_evaluacion ∈ {Preguntas, Observación, Verificación de producto}
+    ✓ evidencias.instrumento_numero ∈ {1, 2, 3, 4, 5, 6}
+    ✓ evidencias.instrumento_tipo ∈ {Cuestionario, Lista de Chequeo, Lista de verificación, Escala de estimación}
+    ✓ evidencias.codigo_canon ∈ {E1, E2, E3, E4-parcial, E4-final, E5, E6, E-Misión}
+    ✓ evidencias.criterio_canon_evaluado ∈ {C01, C02, ..., C08}
+  SI evidencias.aplica == false:
+    ✓ evidencias.{tipo, nombre, tecnica_evaluacion, instrumento_numero, instrumento_tipo} DEBEN SER null
+    ✓ evidencias.{codigo_canon, criterio_canon_evaluado} pueden ser null o referenciales (scaffolding contributivo)
+
+✓ duracion_horas > 0 · numérico
+✓ duracion_horas coincide con horas asignadas en pm-2-0.session_blueprint[session_id]
+
+REGLAS HEREDANCIA TRACEABILITY:
+✓ _anclaje_matriz_heredado non-empty
+✓ _anclaje_matriz_heredado.rap_target == rap_target
+✓ _anclaje_matriz_heredado.saberes_que_demanda ⊆ pm-0-0-matriz-alineada.raps[rap_target].saberes_conceptos_y_principios
+✓ _anclaje_matriz_heredado.criterios_canon_que_evalua ⊆ pm-1-1.bloques[bloque_id_referencia]._anclaje_matriz.criterios_canon_assigned
+✓ _produces_evidencia coincide con evidencias.codigo_canon (o ambos null)
+✓ _ref_pm12_path apunta a path JSON válido en pm-1-2.json
+✓ _ref_pm20_session == session
+```
+
+### 11.7 Render esperado en guía del aprendiz (formato canon Sergio)
+
+```
+3. Actividad cognitiva:
+Reconocer códigos de comunicación portuaria de acuerdo con normativa.
+
+Descripción de la actividad:
+Identificar códigos según normatividad portuaria, referente a señales de comunicación y señalización necesarias para la operación.
+
+Para el desarrollo de la actividad, el instructor orientará a los aprendices sobre concepto, tipos y características del código de comunicación portuaria y del sistema baroti, así como del sistema operativo de terminal.
+
+Posteriormente se conformarán equipos de 3 aprendices...
+[continúa multi-párrafo de la descripción]
+
+Ambiente requerido: Ambiente convencional.
+Estrategias didácticas activas: Aprendizaje colaborativo
+Técnica didáctica: Simulación
+Materiales de formación: papel bond, lapiceros, marcadores, computadores
+Material de apoyo: Documento en PDF sobre Código internacional de señales.
+Link: https://es.scribd.com/presentation/478805289/BAROTI
+
+Evidencias de aprendizaje: Evidencia de producto: Códigos de comunicación portuaria
+Técnica de evaluación: Verificación de producto.
+Instrumentos de evaluación No 2: Lista de verificación.
+
+Duración de la actividad: 4 horas.
+```
+
+**Renderer canónico** debe respetar:
+- Numeración secuencial (3, 4, 5, ...) con punto + espacio
+- "Actividad [dimension]:" como subtítulo (Actividad cognitiva | Actividad procedimental | Actividad actitudinal)
+- Enunciado V+O+C en línea separada después del subtítulo
+- "Descripción de la actividad:" header explícito · seguido del texto multi-párrafo literal
+- Logística en líneas con header bold (Ambiente / Estrategias / Técnica / Materiales / Material de apoyo)
+- Si `material_apoyo[]` no vacío: render "Material de apoyo: [descripcion]." + nueva línea "Link: [url]" (si link non-null)
+- "Evidencias de aprendizaje:" + (si aplica → "Evidencia de [tipo]: [nombre]" · si no aplica → "No aplica")
+- "Técnica de evaluación: [tecnica]." (o "No aplica")
+- "Instrumentos de evaluación No [N]: [tipo]." (o "No aplica")
+- "Duración de la actividad: [N] horas." al final
+
+### 11.8 Heredancia obligatoria de cascade Phase 1 v3.x
+
+Cada Activity Card v3.0 DEBE poder responder estas preguntas SIN inventar:
+
+**Hacia atrás (¿de dónde viene?):**
+- ¿Qué saberes_concepto demanda? → `_anclaje_matriz_heredado.saberes_que_demanda` (subset literal de matriz v1.3)
+- ¿Qué saber_proceso ejecuta? → `_anclaje_matriz_heredado.saberes_proceso_movilizados`
+- ¿De qué bloque viene? → `bloque_id_referencia` (referencia pm-1-1)
+- ¿De qué elemento de scope viene? → `_ref_pm12_path` (ruta JSON literal en pm-1-2)
+- ¿En qué sesión va? → `_ref_pm20_session` (sesión en pm-2-0)
+
+**Hacia adelante (¿adónde va?):**
+- ¿Qué evidencia produce? → `_produces_evidencia` (E1-E6+E-Misión o null)
+- ¿Qué criterio canon evalúa? → `evidencias.criterio_canon_evaluado` (C01-C08)
+- ¿Qué instrumento se usa? → `evidencias.instrumento_numero + instrumento_tipo`
+- ¿Quién renderiza? → `_consumed_by_pm` (PM-2.x emisor + downstream PM-2.11/PM-3.6)
+
+Si CUALQUIER respuesta es "inventado" o "vacío" injustificado · la actividad VIOLA "nada por fuera de la matriz".
+
+### 11.9 Pipeline canónico v3.0
+
+```
+pm-2-0.json v3.0 (session_blueprint heredero)
+  ↓ por cada actividad_planeada
+PM-2.x v3.x (PM-2.1 a PM-2.10) genera Activity Card v3.0:
+  - Hereda _anclaje_matriz literal de pm-1-2.elementos[ref_pm12_path]
+  - Redacta dimension + enunciado V+O+C + descripcion multi-párrafo (libertad LLM Anti-patrón #16)
+  - Define logística (ambiente + estrategias + técnicas + materiales + material_apoyo)
+  - Si tipo_bloque=APROPIACION y produce evidencia: completa bloque evidencias
+  - Si tipo_bloque=APERTURA o TRANSFERENCIA: evidencias.aplica=false (canon Sergio)
+  ↓
+Activity Card v3.0 → consumida por:
+  - PM-2.11 Row Assembler (cols 6-11 GFPI-F-134)
+  - PM-3.6 Learning Guide Generator (render learner-readable en GFPI-F-135)
+  - PM-4.1 Instrumentos (cuando evidencias.aplica=true · usa nombre + tipo + instrumento_numero)
+```
+
+### 11.10 Checklist implementación PM-2.x v3.x
+
+Antes de emitir Activity Card v3.0:
+
+- [ ] `pm_id` correcto · `session` heredado pm-2-0 · `tipo_bloque` heredado · `bloque_id_referencia` válido · `rap_target` heredado pm-1-1
+- [ ] `numero_actividad` secuencial sin gaps a nivel guía
+- [ ] `dimension` UN solo valor (cognitiva | procedimental | actitudinal)
+- [ ] `enunciado` ≤ 200 chars con estructura V+O+C
+- [ ] `descripcion` 200-600 palabras multi-párrafo siguiendo patrón canon (panorama→orientación→equipos→práctica→cierre)
+- [ ] `ambiente` operacional (puede ser compuesto)
+- [ ] `estrategias_didacticas_activas` array len ≥ 1
+- [ ] `tecnicas_didacticas` array len ≥ 1
+- [ ] `materiales_formacion` array len ≥ 1
+- [ ] `material_apoyo` array (vacío `[]` o con objetos `{descripcion, link}`)
+- [ ] `evidencias.aplica` consistente con tipo_bloque (APERTURA/TRANSFERENCIA → false)
+- [ ] Si `evidencias.aplica = true`: tipo + nombre + tecnica + instrumento + codigo_canon + criterio_canon_evaluado completos
+- [ ] `duracion_horas` numérico > 0 coincide con pm-2-0.session_blueprint
+- [ ] `_anclaje_matriz_heredado` literal copy de pm-1-2 + saberes ⊆ matriz v1.3
+- [ ] `_produces_evidencia` consistente con evidencias.codigo_canon
+- [ ] `_consumed_by_pm` self-reference correcto
+- [ ] `_ref_pm12_path` apunta a path válido en pm-1-2.json
+- [ ] `_ref_pm20_session` == session
+
+---
+
+**Versión v3.0:** A partir del 2026-05-02
+**Caso de origen:** Sergio Cortés Perdomo dictó schema canon con 3 ejemplos literal de guía aprendizaje SENA modelo (códigos portuarios + riesgos SST + inspección apilador) · alineado con cascade Phase 1 v3.x post-IMARPOR-V2
+**Próximo dispatch:** Step 1.5.PILOT PM-2.3 IMARPOR-V2 (primera Activity Card v3.0 en run real)
+**Versiones legacy preserved:** v2.0 (Fase 2 GFPI-F-134 feed) · v2.6.3 (Fase 4 Learner-Facing) · v2.7 (Fase 4 Learner-Readable 6 bloques)
