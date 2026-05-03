@@ -94,17 +94,7 @@
       "_consumed_by_pm": "PM-2.9",
       "_ref_pm12_path": "sub_bloques_tripartitos[3].language_functions_per_rap",
       "_ref_pm20_session": "S8",
-      "_nota_scaffold_pre_speaking_e4_final": "Scaffold cognitivo pre-E4-final S8 · activación 5 funciones canon RA3 (F1-F5) inmediatamente antes del Berthing Tripartito Simultáneo capstone B3 · NO evaluada formalmente · ciclo input-output cerrado dentro de S8 (1.5h scaffold + 4h E4-final + 0.5h debrief = 6h sesión).",
-      "criterios_evaluacion": [
-        "Identifica las 5 funciones comunicativas canon RA3."
-      ],
-      "_alineamiento_criterio_sofia": "RA3_saber_proceso (alineación semántica débil · revisar manualmente)",
-      "_criterio_derivacion": {
-        "verbo_origen_enunciado": "Activar",
-        "verbo_sofia_aplicado": "Identifica",
-        "dimension": "cognitiva",
-        "method": "mecanico_deterministic_v3.1"
-      }
+      "_nota_scaffold_pre_speaking_e4_final": "Scaffold cognitivo pre-E4-final S8 · activación 5 funciones canon RA3 (F1-F5) inmediatamente antes del Berthing Tripartito Simultáneo capstone B3 · NO evaluada formalmente · ciclo input-output cerrado dentro de S8 (1.5h scaffold + 4h E4-final + 0.5h debrief = 6h sesión)."
     },
     {
       "pm_id": "PM-2.9",
@@ -113,9 +103,7 @@
       "tipo_bloque": "APROPIACION",
       "bloque_id_referencia": "B4",
       "rap_target": "RA4",
-      "raps_secundarios": [
-        "RA3"
-      ],
+      "raps_secundarios": ["RA3"],
       "numero_actividad": 25,
       "dimension": "procedimental",
       "enunciado": "Ejecutar las 5 master functions IMARPOR mediante Role Carousel de 5 estaciones rotativas con conectores discursivos canon C06.",
@@ -183,17 +171,7 @@
       "_consumed_by_pm": "PM-2.9",
       "_ref_pm12_path": "sub_bloques_tripartitos[4].task_speaking_derivada",
       "_ref_pm20_session": "S9",
-      "_nota_anchor_E5_C06": "Anchor canon DUAL · única actividad PM-2.9 que produce evidencia formal · Escala de Estimación No 5 · zona fluency-friendly per anclaje C06 · Role Carousel 5 stations canon Sergio post-Wave 1 · 5 master functions IMARPOR (describing roles & chain of command · maneuvers · weather impact · cargo states & quantification · closing handover tag questions) + 6 conectores discursivos canon (and, but, or, because, so, although).",
-      "criterios_evaluacion": [
-        "Ejecuta las 5 master functions IMARPOR."
-      ],
-      "_alineamiento_criterio_sofia": "RA4_saber_proceso (alineación semántica débil · revisar manualmente)",
-      "_criterio_derivacion": {
-        "verbo_origen_enunciado": "Ejecutar",
-        "verbo_sofia_aplicado": "Ejecuta",
-        "dimension": "procedimental",
-        "method": "mecanico_deterministic_v3.1"
-      }
+      "_nota_anchor_E5_C06": "Anchor canon DUAL · única actividad PM-2.9 que produce evidencia formal · Escala de Estimación No 5 · zona fluency-friendly per anclaje C06 · Role Carousel 5 stations canon Sergio post-Wave 1 · 5 master functions IMARPOR (describing roles & chain of command · maneuvers · weather impact · cargo states & quantification · closing handover tag questions) + 6 conectores discursivos canon (and, but, or, because, so, although)."
     }
   ],
   "validation_checks": [
@@ -259,50 +237,13 @@
       "duracion_horas_total": 5.0
     },
     "five_master_functions_imarpor_canon": [
-      {
-        "id": "F1",
-        "nombre": "Describing roles & chain of command",
-        "estructura_gramatical_asociada": "Estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to) + prepositional phrases",
-        "estacion_role_carousel": 1,
-        "evaluadora_canon": "Carolina Vélez (Pilot)"
-      },
-      {
-        "id": "F2",
-        "nombre": "Describing maneuvers & port operations",
-        "estructura_gramatical_asociada": "Present progressive + prepositional phrases of geographic location and distance",
-        "estacion_role_carousel": 2,
-        "evaluadora_canon": "Carolina Vélez (Pilot) rotativa"
-      },
-      {
-        "id": "F3",
-        "nombre": "Describing weather & ambient conditions",
-        "estructura_gramatical_asociada": "Verb to be + adjectives + numeric quantifiers (degrees Celsius, percent)",
-        "estacion_role_carousel": 3,
-        "evaluadora_canon": "Mariana Suárez (ICA Liaison)"
-      },
-      {
-        "id": "F4",
-        "nombre": "Describing cargo states & quantification",
-        "estructura_gramatical_asociada": "Quantifiers definidos e indefinidos (forty-seven clusters, several pallets, many containers, some pallets)",
-        "estacion_role_carousel": 4,
-        "evaluadora_canon": "Yurlenis Hinestroza (Tally Clerk)"
-      },
-      {
-        "id": "F5",
-        "nombre": "Closing handover with tag questions producción activa",
-        "estructura_gramatical_asociada": "Tag questions afirmativas y negativas + verb to be + modals",
-        "estacion_role_carousel": 5,
-        "evaluadora_canon": "Mariana Suárez (ICA Liaison) rotativa"
-      }
+      {"id": "F1", "nombre": "Describing roles & chain of command", "estructura_gramatical_asociada": "Estructuras ocupacionales (responsible for · specialize in · coordinate · supervise · report to) + prepositional phrases", "estacion_role_carousel": 1, "evaluadora_canon": "Carolina Vélez (Pilot)"},
+      {"id": "F2", "nombre": "Describing maneuvers & port operations", "estructura_gramatical_asociada": "Present progressive + prepositional phrases of geographic location and distance", "estacion_role_carousel": 2, "evaluadora_canon": "Carolina Vélez (Pilot) rotativa"},
+      {"id": "F3", "nombre": "Describing weather & ambient conditions", "estructura_gramatical_asociada": "Verb to be + adjectives + numeric quantifiers (degrees Celsius, percent)", "estacion_role_carousel": 3, "evaluadora_canon": "Mariana Suárez (ICA Liaison)"},
+      {"id": "F4", "nombre": "Describing cargo states & quantification", "estructura_gramatical_asociada": "Quantifiers definidos e indefinidos (forty-seven clusters, several pallets, many containers, some pallets)", "estacion_role_carousel": 4, "evaluadora_canon": "Yurlenis Hinestroza (Tally Clerk)"},
+      {"id": "F5", "nombre": "Closing handover with tag questions producción activa", "estructura_gramatical_asociada": "Tag questions afirmativas y negativas + verb to be + modals", "estacion_role_carousel": 5, "evaluadora_canon": "Mariana Suárez (ICA Liaison) rotativa"}
     ],
-    "six_conectores_discursivos_canon_C06": [
-      "and",
-      "but",
-      "or",
-      "because",
-      "so",
-      "although"
-    ],
+    "six_conectores_discursivos_canon_C06": ["and", "but", "or", "because", "so", "although"],
     "decision_arquetipo_anchor_S9": "Combinación Arquetipo C (Social & Interpersonal · Role Carousel) + Arquetipo D (Gamified Functions · rotación temporizada). Justificación: (1) Role Carousel canon Sergio post-Wave 1 dispone 5 estaciones físicas con master functions IMARPOR descriptivas operacionales canon banana cold chain; (2) rotación cronometrada 12 min/estación introduce presión lúdica controlada que fuerza producción autónoma sin depender de scaffolds residuales; (3) E5 evalúa producción funcional descriptiva fluency-friendly coherente con Escala de Estimación No 5 continua frente a Lista de Chequeo binaria; (4) overlap C06 RA3+RA4 ejecuta físicamente AQUÍ en B4 cara descriptiva con conectores discursivos (and · but · or · because · so · although) anclados retrospectivo a B3 documentación matriz; (5) tres evaluadoras canon (Carolina + Mariana + Yurlenis) en posiciones rotativas distribuyen carga observacional manteniendo zona accuracy graduada y preservan universo narrativo del programa.",
     "decision_arquetipo_scaffold_S8": "Combinación Arquetipo C (Social & Interpersonal · function cards drill operacional) + Arquetipo A (Information Exchange · F3 Wh-questions present simple). Justificación: (1) las 5 funciones canon RA3 (F1 commands + F2 imperatives + F3 Wh-questions + F4 modales + F5 extensiones C05) son interpersonales operacionales del berthing tripartito; (2) drill de function cards laminadas en 3 rondas escalonadas activa exponentes sin sobrecarga; (3) scaffold corto (1.5h) precede inmediatamente al capstone E4-final S8 garantizando momentum cognitivo input-output dentro de la misma sesión; (4) NO produce evidencia formal (canon Sergio: 'no todas las evidencias de apropiación tienen que tener evidencias de aprendizaje a evaluar') liberando al aprendiz de presión instrumento durante activación.",
     "v3_0_compliance": {
