@@ -10,10 +10,10 @@
 |-------|-------|
 | **Código** | PM-3.6 |
 | **Nombre** | GFPI-F-135 Learning Guide Generator · Heredero formato canon Sergio narrativo |
-| **Versión** | 3.1 |
+| **Versión** | 3.2 |
 | **Last Verified** | 2026-05-02 |
 | **Ubicación** | Fase 4 · post Playbook (PM-3.2 ×N sesiones) · post PM-2.11 v3.2 |
-| **Output** | **1 docx único** GFPI-F-135 (Guía de Aprendizaje del Aprendiz · brújula del estudiante · narrativa pedagógica) · 3 secciones canónicas (1 Identificación + 2 Presentación bilingüe + 3 Actividades en 3 bloques tripartitos) · footer "GFPI-F-135 V04" visible · logo SENA central en Sección 1 · tono minimalista accesible |
+| **Output** | **1 docx único** GFPI-F-135 (Guía de Aprendizaje del Aprendiz · brújula del estudiante · narrativa pedagógica) · 3 secciones canónicas SENA (1 Identificación + 2 Presentación bilingüe + 3 Formulación Actividades con numeración jerárquica 3.1 reflexión / 3.2 contextualización / 3.3 apropiación con sub-headers RAP / 3.4 transferencia del conocimiento) · numeración POR RAP reset en 3.3 · omisión Evidencias/Instrumentos en 3.1+3.2 · footer "GFPI-F-135 V04" · logo SENA central · tono SENA estandarizado |
 | **Rol en el sistema** | Materializa el contenido pedagógico canon (matriz v1.3 + 30 Activity Cards v3.0) en formato narrativo orientado al aprendiz · "traduce todo el trabajo técnico de la planeación pedagógica en una ruta clara, paso a paso, para el aprendiz" (Sergio canon) |
 | **Phase** | 4 |
 | **Depends On** | [PM-2.11 v3.2 (gfpi_f134_v04_rows[]), 30 Activity Cards v3.0 (PM-2.1...PM-3.5+PM-4.2), PM-1.2 v4.2 (sub_bloques_tripartitos), PM-0.0 (matriz alineada · enunciados RAPs SOFÍA)] |
@@ -1049,7 +1049,8 @@ NO agregar bloque en actividades de práctica, drills o reflexión sin evidencia
 | **v2.7** | **2026-04-30** | **Learner-Readable Activity · Anatomía 6-bloque · 17 campos schema v2.7 · 5 obsoletos PROHIBIDOS · supresión pipeline metadata · REGLAS 22-27 · v2.6.3 deprecated** |
 | **v3.0** | **2026-05-02** | **⚠️ BREAKING · Formato canon Sergio narrativo (REEMPLAZA anatomy 6-bloque v2.7) · Sección 3 estructura 3 bloques (Reflexión+Contextualización + Apropiación×N RAPs + Transferencia) · 1 docx único · heredancia 1:1 30 Activity Cards v3.0 · REGLAS 28-35** |
 | **v3.1** | **2026-05-02** | **Sección 1 IDENTIFICACIÓN canon (logo SENA central + 8 campos heredados) + Sección 2 PRESENTACIÓN bilingüe (texto canon SENA personalizado por programa · ESP+EN paralelos · footer GFPI-F-135 V04) + bilingüismo escalonado por sección + tono minimalista accesible al aprendiz · REGLAS 36-39** |
-*Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV) · v3.0 paradigm shift narrativo Sergio 2026-05-02 · v3.1 Secciones 1+2 + bilingüismo Sergio 2026-05-02 PM*
+| **v3.2** | **2026-05-02** | **Sección 3 numeración jerárquica SENA (3.1 reflexión inicial · 3.2 contextualización + identificación conocimientos · 3.3 apropiación con headers RAP · 3.4 transferencia del conocimiento) + numeración POR RAP reset (1, 2, 3... cada RAP) + omisión Evidencias/Instrumentos en 3.1+3.2 + preguntas embebidas en Descripción + tono SENA estandarizado verbos canon · REGLAS 40-48** |
+*Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV) · v3.0 paradigm shift narrativo Sergio 2026-05-02 · v3.1 Secciones 1+2 + bilingüismo Sergio 2026-05-02 PM · v3.2 Sección 3 jerárquica SENA Sergio 2026-05-02 PM (iteración con guía modelo Reach Stacker)*
 
 ---
 
@@ -1515,3 +1516,330 @@ Welcome aboard.
 
 *PM-3.6 v3.1 · Secciones 1+2 canon SENA + bilingüismo escalonado + tono minimalista accesible al aprendiz*
 *Sergio Cortés decisión 2026-05-02 PM · 4 reglas NEW (36-39) + 6 validation checks bloqueantes · cross-program forever*
+
+---
+
+## EXTENSIÓN v3.2 — SECCIÓN 3 NUMERACIÓN JERÁRQUICA SENA + 9 REGLAS NEW (2026-05-02 PM)
+
+### Decisión canónica Sergio (verbatim · iteración con guía modelo Reach Stacker)
+
+> Sergio aporta guía SENA modelo "Operación de equipo apilador de contenedores" (Reach Stacker · Programa 8441...) · Sección 3 completa · canon GFPI-F-135 V04. Detalla numeración jerárquica · subsecciones canónicas · estructura RAP · omisiones · combinación ambientes · tono SENA estandarizado.
+
+### Estructura completa Sección 3 v3.2 (canon SENA verbatim)
+
+```
+3. FORMULACIÓN DE LAS ACTIVIDADES DE APRENDIZAJE
+
+[Descripción de la(s) Actividad(es): párrafo introductorio canon SENA personalizado
+con la competencia del programa]
+
+3.1 Actividades de reflexión inicial
+   [actividad(es) reflexivas · NO RAP header · NO Evidencias/Instrumentos]
+
+3.2 Actividades de contextualización e identificación de conocimientos
+necesarios para el aprendizaje
+   [actividad(es) contextualizadoras · preguntas embebidas · NO Evidencias/Instrumentos]
+
+3.3 Actividades de apropiación
+
+   RAP 1: <enunciado SOFÍA completo>
+      1. Actividad <dimensión>: <enunciado V+O+C>
+         [campos canon completos · CON Evidencias/Instrumentos]
+      2. Actividad <dimensión>: <enunciado V+O+C>
+         [...]
+
+   RAP 2: <enunciado SOFÍA completo>
+      1. Actividad <dimensión>: <enunciado V+O+C>
+         [reset numeración desde 1]
+      2. ...
+
+   RAP 3: <enunciado SOFÍA completo>
+      1. ...
+
+   RAP 4: <enunciado SOFÍA completo>
+      1. ...
+
+3.4 Actividades de Transferencia del Conocimiento
+   [actividad(es) capstone · CON Evidencias/Instrumentos · si N>1 numerar 1, 2, 3...]
+```
+
+### REGLA 40 — Numeración jerárquica SENA (REEMPLAZA "Bloque 1/2/3" v3.0)
+
+Sección 3 usa numeración jerárquica SENA · NO "Bloques":
+
+| Subsección canon | Mapping cascade | Mapping Activity Card |
+|---|---|---|
+| **3.1 Actividades de reflexión inicial** | B0 APERTURA | cards con `_source_pm: pm-2-1.json` (Spark · reflexión) |
+| **3.2 Actividades de contextualización e identificación de conocimientos necesarios para el aprendizaje** | B0 APERTURA | cards con `_source_pm: pm-2-2.json` (Gap Analysis · contextualización) |
+| **3.3 Actividades de apropiación** | B1+B2+B3+B4 APROPIACIÓN | cards con bloque_id_referencia ∈ {B1,B2,B3,B4} · agrupadas por RAP |
+| **3.4 Actividades de Transferencia del Conocimiento** | BT TRANSFERENCIA | cards con `_source_pm: pm-3-5.json` (Final Mission ABP) |
+
+### REGLA 41 — Header Sección 3 con párrafo introductorio canon SENA
+
+Antes de las subsecciones · texto canon personalizado con la competencia:
+
+```
+3. FORMULACIÓN DE LAS ACTIVIDADES DE APRENDIZAJE
+
+Descripción de la(s) Actividad(es): Las actividades de aprendizaje son
+las acciones planeadas y estructuradas, de tal forma que los aprendices
+pueden lograr la apropiación de conocimientos, el desarrollo de sus
+habilidades y destrezas y alcanzar la competencia en <competencia heredada
+de pm-2-11.gfpi_f134_v04_rows[0].C1_competencia · texto literal SOFÍA>.
+Las actividades que se proponen en esta guía de aprendizaje, están
+distribuidas entre actividades a desarrollar antes de aprender, mientras
+se aprende y después de aprender.
+```
+
+### REGLA 42 — Nombres exactos canon SENA de subsecciones
+
+Texto literal obligatorio (NO abreviar · NO traducir · NO modificar):
+
+- `3.1 Actividades de reflexión inicial`
+- `3.2 Actividades de contextualización e identificación de conocimientos necesarios para el aprendizaje`
+- `3.3 Actividades de apropiación`
+- `3.4 Actividades de Transferencia del Conocimiento`
+
+### REGLA 43 — Header RAP simple (texto plano · canon SENA)
+
+Dentro de 3.3 · antes de las actividades de cada bloque APROPIACIÓN:
+
+```
+RAP <N>: <enunciado SOFÍA completo>
+```
+
+NO usar arrow Unicode (▶ · → · ►) · NO bullets · NO emojis · texto plano canon SENA. Enunciado heredado literal de matriz v1.3 (`pm-0-0-matriz-alineada.json.raps[N].enunciado_rap`).
+
+### REGLA 44 — Numeración POR RAP reset en 3.3 (NO acumulada cross-RAP)
+
+Las actividades dentro de cada RAP empiezan en **1, 2, 3, ...** (reseteo desde 1 al pasar al siguiente RAP).
+
+Ejemplo IMARPOR-V2:
+```
+RAP 1: <enunciado RA1>
+  1. Actividad cognitiva: ...
+  2. Actividad cognitiva: ...
+  3. Actividad cognitiva: ...
+  4. Actividad procedimental: ...
+  5. Actividad cognitiva: ...
+  6. Actividad cognitiva: ...
+
+RAP 2: <enunciado RA2>
+  1. Actividad cognitiva: ...     ← reset desde 1
+  2. Actividad cognitiva: ...
+  ...
+```
+
+**Implementación render PM-3.6:** ignorar `numero_actividad` acumulado de cards (1-30) · regenerar índice POR bloque APROPIACIÓN.
+
+### REGLA 45 — Omisión absoluta de Evidencias/Instrumentos en 3.1 y 3.2
+
+En 3.1 reflexión inicial y 3.2 contextualización, las líneas "Evidencias de aprendizaje" y "Instrumentos de evaluación" **NO aparecen en absoluto** (líneas eliminadas · NO "No aplica" visible).
+
+| Sección | Líneas Evidencias/Instrumentos |
+|---|---|
+| 3.1 reflexión inicial | OMITIDAS (no aparecen) |
+| 3.2 contextualización | OMITIDAS (no aparecen) |
+| 3.3 apropiación · cada actividad | SIEMPRE aparecen (con datos o "No aplica") |
+| 3.4 transferencia · cada actividad | SIEMPRE aparecen (con datos o "No aplica") |
+
+**Razón canon:** 3.1 y 3.2 son fase de activación · por diseño NO producen evidencia formal. Mostrar líneas con "No aplica" sería ruido visual innecesario para el aprendiz.
+
+### REGLA 46 — Preguntas embebidas en Descripción de 3.1 y 3.2
+
+Las preguntas reflexivas (3.1) y de identificación (3.2) son **parte de la "Descripción de la actividad"** · NO campos separados. Formato canon:
+
+**3.1 ejemplo:**
+```
+Descripción de la actividad: Teniendo en cuenta que el programa a desarrollar
+es <programa>, ... se solicita que de manera individual, se reflexione sobre
+lo siguiente:
+
+¿<pregunta reflexiva 1>?
+¿<pregunta reflexiva 2>?
+...
+
+Una vez realizada la reflexión, se deberá consolidar la información y en
+mesa redonda, socializar las conclusiones con los demás compañeros.
+```
+
+**3.2 ejemplo:**
+```
+Descripción de la actividad: Para el desarrollo de esta actividad, cada
+aprendiz, teniendo en cuenta sus conocimientos previos, dará respuesta
+a las siguientes preguntas:
+
+¿Sabe usted <pregunta 1>?
+¿Conoce usted <pregunta 2>?
+...
+
+Posteriormente, ... [siguientes pasos · materiales · socialización]
+```
+
+### REGLA 47 — Combinación de Ambientes (cuando aplica)
+
+Cuando una actividad requiere múltiples ambientes (principal + convencional para teoría), formato canon en una sola línea:
+
+```
+Ambiente requerido: Ambiente pluritecnológico o simulado que cuente con
+<equipos específicos del programa>. Ambiente convencional.
+```
+
+NO crear bullets · NO líneas separadas · combinación textual literal.
+
+### REGLA 48 — Tono SENA estandarizado · verbos canon institucionales
+
+Verbos y frases canon SENA (heredados de guía modelo Reach Stacker):
+
+| Categoría | Verbos canon |
+|---|---|
+| Solicitud al aprendiz | "se solicita" · "se invita" · "se sugiere" |
+| Acciones del instructor | "el instructor orientará" · "el instructor proporcionará" · "el instructor explicará" · "iniciará con una exposición" |
+| Acciones de los aprendices | "los aprendices darán lectura" · "deberán entregar" · "se conformarán equipos" · "cada equipo deberá" · "se dividirán en grupos" |
+| Estructura procedimental | "Posteriormente" · "A continuación" · "Seguidamente" · "Finalmente" · "La actividad culmina" · "La actividad finaliza con" |
+| Voz | Pasiva refleja + 2ª persona impersonal |
+
+**Anti-patrones tono v3.2:**
+- ❌ "Vas a hacer X" (informal · 2ª persona singular tú)
+- ❌ "Hay que..." (impersonal genérico)
+- ❌ "El estudiante realizará..." (mejor "los aprendices realizarán..." · canon SENA)
+- ❌ Verbos en imperativo directo ("Lee el documento" → mejor "los aprendices darán lectura al documento")
+- ✅ "Para el desarrollo de la actividad, el instructor orientará a los aprendices sobre..."
+- ✅ "Posteriormente se conformarán equipos de N aprendices, quienes darán lectura a..."
+
+### Formato canon de cada actividad (refinado v3.2)
+
+#### Actividad en 3.3 o 3.4 CON evidencia
+
+```
+<N>. Actividad <dimension lowercase>:
+<enunciado verbo+objeto+condición>
+
+Descripción de la actividad: <narrativa pedagógica multi-párrafo · tono
+SENA · qué orienta el instructor · qué hacen los aprendices · paso a
+paso · links · entregable final · socialización>
+
+Ambiente requerido: <Convencional | Pluritecnológico | Simulado | combinaciones>
+
+Estrategias didácticas activas: <estrategia>
+
+Técnica didáctica: <técnica>
+
+Materiales de formación: <papel, lapiceros, computadores, equipos...>
+
+Material de apoyo: <PDFs, links, manuales...>
+
+Evidencias de aprendizaje:
+   Evidencia de <tipo lowercase>: <nombre>
+Técnica de evaluación: <técnica>
+Instrumento de evaluación No <N>: <tipo instrumento>
+
+Duración de la actividad: <N> horas.
+```
+
+#### Actividad en 3.3 o 3.4 SIN evidencia (No aplica)
+
+```
+<N>. Actividad <dimension lowercase>:
+<enunciado verbo+objeto+condición>
+
+Descripción de la actividad: <narrativa>
+
+Ambiente requerido: ...
+Estrategias didácticas activas: ...
+Técnica didáctica: ...
+Materiales de formación: ...
+Material de apoyo: ...
+
+Evidencias de aprendizaje: No aplica.
+Técnica de evaluación: No aplica.
+Instrumento de evaluación: No aplica.
+
+Duración de la actividad: <N> horas.
+```
+
+(NOTA: cuando "No aplica", las 3 líneas son separadas · cada una "No aplica" · NO indentadas · NO numeración No N en instrumento)
+
+#### Actividad en 3.1 o 3.2 (sin numeración cuando es 1 sola actividad por subsección)
+
+```
+Descripción de la actividad: <narrativa con preguntas embebidas>
+
+Ambiente requerido: ...
+Estrategias o técnicas didácticas activas: ...
+Técnica didáctica: ...
+Materiales de formación: ...
+Material de apoyo: ...
+
+Duración de la actividad: <N> horas.
+```
+
+(NOTA: NO líneas Evidencias/Instrumentos · OMITIDAS por diseño · ver REGLA 45)
+
+### Bilingüismo aplicado IMARPOR-V2 (REGLA 38 detallado para Sección 3)
+
+| Subsección | Lengua | Razón |
+|---|---|---|
+| 3.1 Actividades de reflexión inicial | **ESP** | Activación afectiva en lengua materna · scaffold para bajar barrera CEFR A1 (alineado con guía modelo Reach Stacker) |
+| 3.2 Actividades de contextualización | **ESP** | Conocimientos previos del aprendiz están en lengua materna · CEFR A1 no permite contextualización compleja en EN |
+| 3.3 Actividades de apropiación · 4 RAPs | **EN principal · scaffolds ESP** | Donde vive el inglés del programa · descripción de actividades en EN · scaffolds críticos en ESP |
+| 3.4 Actividades de Transferencia | **EN producto · ESP reflexión** | Misión Final ABP en EN (output bilingüe oral/escrito) · reflexión metacognitiva en ESP |
+
+### Validation checks v3.2 (NEW · BLOQUEANTES)
+
+- **Check v3.2-A · numeracion_jerarquica_sena** — Sección 3 usa 3.1, 3.2, 3.3, 3.4 (NO "Bloque 1/2/3")
+- **Check v3.2-B · header_descripcion_introductoria** — Sección 3 inicia con párrafo "Descripción de la(s) Actividad(es):" personalizado con competencia
+- **Check v3.2-C · nombres_subsecciones_canon** — texto exacto: "Actividades de reflexión inicial" / "Actividades de contextualización..." / "Actividades de apropiación" / "Actividades de Transferencia del Conocimiento"
+- **Check v3.2-D · header_rap_simple** — `RAP <N>: <enunciado>` texto plano · NO arrow Unicode
+- **Check v3.2-E · numeracion_por_rap_reset** — actividades dentro de cada RAP de 3.3 empiezan en 1 (NO acumulado cross-RAP)
+- **Check v3.2-F · omision_evidencias_3_1_3_2** — 3.1 y 3.2 NO contienen líneas "Evidencias de aprendizaje" ni "Instrumentos de evaluación"
+- **Check v3.2-G · preguntas_embebidas** — preguntas reflexivas/contextualizadoras dentro de "Descripción de la actividad" (NO campos separados)
+- **Check v3.2-H · combinacion_ambientes** — cuando aplica, formato "Ambiente <principal>. Ambiente convencional." en una línea
+- **Check v3.2-I · tono_sena_canon** — verbos institucionales SENA presentes ("se solicita" · "el instructor orientará" · "los aprendices darán lectura" · etc.)
+
+### Anti-patrones v3.2 evitados
+
+- ❌ Numeración acumulada cross-RAP (1-30) en lugar de reset POR RAP
+- ❌ Headers "Bloque 1/2/3" en lugar de numeración jerárquica SENA
+- ❌ Header RAP con arrow Unicode "▶ RAP 1" en lugar de texto plano
+- ❌ Líneas "Evidencias de aprendizaje: No aplica" visibles en 3.1 y 3.2 (deben omitirse completamente)
+- ❌ Preguntas reflexivas como campos separados (deben ir embebidas en Descripción)
+- ❌ Bullets para combinación de ambientes (debe ser una línea textual)
+- ❌ Nombres abreviados de subsecciones ("3.2 Contextualización" en lugar del nombre completo SENA)
+- ❌ Verbos imperativos directos ("Lee X" en lugar de "los aprendices darán lectura a X")
+
+### Resumen estructura final docx GFPI-F-135 v3.2
+
+```
+[Encabezado: logo SENA central + título institucional]
+
+1. IDENTIFICACIÓN DE LA GUÍA DE APRENDIZAJE
+   (8 campos heredados · solo ESP)
+
+2. PRESENTACIÓN
+   (bilingüe ESP+EN paralelos · personalizada por programa · adaptada al sector)
+
+3. FORMULACIÓN DE LAS ACTIVIDADES DE APRENDIZAJE
+   [Descripción introductoria canon personalizada con competencia]
+
+   3.1 Actividades de reflexión inicial          [ESP · sin Evidencias/Instrumentos]
+   3.2 Actividades de contextualización e
+       identificación de conocimientos necesarios
+       para el aprendizaje                       [ESP · sin Evidencias/Instrumentos]
+   3.3 Actividades de apropiación               [EN principal · scaffolds ESP]
+       RAP 1: <enunciado SOFÍA>
+         1. Actividad <dim>: <enun>             [reset desde 1]
+         2. ...
+       RAP 2: <enunciado SOFÍA>
+         1. ...                                 [reset desde 1]
+       RAP 3, RAP 4 ...
+   3.4 Actividades de Transferencia              [EN producto · ESP reflexión]
+       del Conocimiento
+
+[Footer todas páginas: "GFPI-F-135 V04"]
+```
+
+---
+
+*PM-3.6 v3.2 · Sección 3 numeración jerárquica SENA + 9 reglas NEW (40-48) + 9 validation checks bloqueantes*
+*Sergio Cortés decisión 2026-05-02 PM (iteración con guía modelo Reach Stacker) · cross-program forever*
