@@ -1,16 +1,31 @@
 """
 subagente_pm_3_6_gfpi_f135.py — Subagente CREATIVO PM-3.6 GFPI-F-135 Learning Guide Integrator.
 
+Camino arquitectónico (2): Task tool con master prompt PM-3.6 v3.5 inyectado.
+
+⚠️ CANON v3.5 ACTUALIZADO (2026-05-03 · post-validación preview v6 prólogo cinematográfico):
+- Hereda descripcion_aprendiz + recursos_aprendiz[] desde Activity Cards v3.2 (NO descripcion legacy)
+- Bilingüismo Opción D escalada CEFR-aware (3.1+3.2 ESP · 3.3+3.4 EN protagonista + ES cursiva 9pt #707070 scaffold)
+- 3 secciones materiales separadas: Recursos preparados (cuerpo) + Materiales formación (footer cursivo) + Material apoyo (footer cursivo)
+- Footer info actividad cursiva 9pt color gris discreta (Ambiente · Estrategias · Técnica · Materiales · Evidencias · Duración)
+- Sec 2 PRESENTACIÓN estilo PRÓLOGO cinematográfico 4 párrafos bilingüe
+- Logo SENA real centrado en encabezado (PNG real · NO placeholder)
+- 7 reglas NEW PM-3.6 v3.5 (60-66) + 7 validation checks bloqueantes
+
+PIPELINE ETL CANON (cuando wrappers PM-2.x todavía emiten cards v3.0/v3.1):
+.claude/skills/fpi-sena-fase3/scripts/canon/etl-cards-v32-aprendiz/
+ejecutar este pipeline ANTES del subagente PM-3.6 para migrar cards a v3.2.
+
 Camino arquitectónico (2): Task tool con master prompt PM-3.6 v2.6.5 inyectado.
 Per PLAN-FASE-3-ARQUITECTURA.md v1.2 §5.3 corregido (REGLA 21 cascada · NO Camino 1
 mecánico · pm-3-6-new-gen.js prohibido como port · contiene contenido pedagógico
 hardcoded que viola canon "fuente única de verdad" del master prompt).
 
-Productor de la Guía del Aprendiz GFPI-F-135 (PM-3.6 master prompt v2.6.5 · 26 keys
+Productor de la Guía del Aprendiz GFPI-F-135 (PM-3.6 master prompt v3.5 · 26 keys
 canónicos · transformación INSTRUCTOR → APRENDIZ en 2ª persona) que consume Playbook
 completo (PM-3.1 + 8× PM-3.2 + PM-3.5) y la fila GFPI-F-134 ensamblada (PM-2.11).
 
-Genera pm-3-6.json shape MGV v2.6.5 canon:
+Genera pm-3-6.json shape canon v3.5 (APRENDIZ-FACING SHIFT post-validación 2026-05-03):
 - header (pm_id, pm_name, pm_version, run_id, generated_date, instructor, phase, subfase_sena)
 - tono_redaccion · fuente_unica_de_verdad
 - seccion_1_identificacion (programa, guía, nivel, intensidad)

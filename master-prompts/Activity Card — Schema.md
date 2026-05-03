@@ -1,10 +1,20 @@
 ---
 type: data-contract
-version: 3.1
+version: 3.2
 created: 2026-04-13
-last_verified: 2026-05-02
-last_updated: 2026-05-02
+last_verified: 2026-05-03
+last_updated: 2026-05-03
 status: active
+v3_2_changes:
+  - "NEW campo OBLIGATORIO `descripcion_aprendiz` (80-150 palabras canon SENA · tono impersonal · cero personajes · arquetipos visibles · paradigm fix instructor-facing → aprendiz-facing)"
+  - "NEW campo OBLIGATORIO `recursos_aprendiz[]` (bullets tangibles preparados por instructor · worksheets · tarjetas · sobres · plantillas físicas)"
+  - "NEW campo CONDICIONAL `descripcion_aprendiz_en` (versión EN CEFR-controlled · solo APROPIACIÓN+TRANSFERENCIA · NULL en APERTURA)"
+  - "NEW campo CONDICIONAL `recursos_aprendiz_en[]` (versión EN paralela · cardinality match con ES · solo APROPIACIÓN+TRANSFERENCIA · NULL en APERTURA)"
+  - "NEW campo OPCIONAL `_cefr_level_en` (CEFR target del bloque: A1.2/A1.3/A2.0/A2.1)"
+  - "DEPRECATION SOFT: `descripcion` (200-600 palabras técnica) sigue existiendo · pero AHORA es instructor-facing puro (Playbook PM-3.2) · NO consumido por PM-3.6 v3.5"
+  - "Cleanup obligatorio: cero menciones de personajes en cualquier campo string (ver lista canon prohibida)"
+  - "Decisión Sergio canon 2026-05-03 (post-validación preview v6 prólogo cinematográfico aprobado)"
+  - "Cascade impact: PM-3.6 v3.5 + subagente_pm_3_6_gfpi_f135.py + scripts ETL canon library"
 v3_1_changes:
   - "NEW campo OBLIGATORIO `criterios_evaluacion[]` (array de strings · 1-5 criterios SOFÍA verbal por activity card)"
   - "NEW REGLA criterio independiente de evidencia: actividad puede tener criterios_evaluacion[] aún cuando evidencias.aplica=false"
@@ -1576,3 +1586,130 @@ PM-3.6 v3.3 .Sección 4 tabla 6 cols · Columna 5 "Criterios de Evaluación"
 **Versión v3.1:** A partir del 2026-05-02 PM
 **Caso de origen:** Sergio iteró Sección 4 GFPI-F-135 con guía modelo Reach Stacker · detectó necesidad campo `criterios_evaluacion[]` per-activity para alimentar tabla Sección 4
 **Próximo dispatch:** regeneración 30 Activity Cards IMARPOR-V2 con criterios + cascade re-run pm-2-11 + xlsx
+
+---
+
+## 13. Activity Card v3.2 — APRENDIZ-FACING SHIFT + BILINGÜISMO ESCALADO (canon Sergio 2026-05-03)
+
+### 13.1 Decisión canónica Sergio (post-validación preview v6 cinematográfico)
+
+> Sergio detectó 2026-05-02 PM que `descripcion` (200-600 palabras instructor-facing meta-pedagógica) era inadecuada para renderizado en GFPI-F-135 aprendiz · contenía jerga sistémica ("baseline lexical · bridge cognitivo · sparks de Mariana") + nombres de personajes que rompían el tono SENA. Solución: 4 campos NEW aprendiz-facing + bilingüismo escalado CEFR-aware. Validación: preview v6 cinematográfico aprobado.
+
+### 13.2 Campos NEW v3.2
+
+```json
+{
+  ...
+  "descripcion_aprendiz": "Diagnosticar el reconocimiento del vocabulario portuario reefer mediante una galería visual de doce imágenes operacionales del Eje Bananero. Esta actividad no enseña vocabulario nuevo · documenta lo que cada aprendiz ya reconoce. Para el desarrollo de la actividad, el instructor proyectará el mapa de los cuatro RAPs del programa para que los aprendices visualicen el viaje de aprendizaje completo...",
+
+  "recursos_aprendiz": [
+    "Mapa visual proyectable de los 4 RAPs como las 4 estaciones del journey · 1 imagen · pantalla principal",
+    "Set bilingüe de 12 imágenes operacionales del Eje Bananero formato A5 sin etiqueta visible (etiquetas inglesas custodiadas por instructor · pantalla principal)",
+    "Hoja K-W-L bilingüe simplificada formato A4 · 1 por aprendiz",
+    "Bloc post-it amarillos · marcadores punta fina · 1 set por trío",
+    "Stickers verde/amarillo/rojo · 12 sets por trío"
+  ],
+
+  "descripcion_aprendiz_en": "Map twenty key RA1 terms about ship parts, vessel types, equipment and port professions through Word Wall Active and collaborative semantic mapping...",
+
+  "recursos_aprendiz_en": [
+    "MV CARIBBEAN STAR projectable silhouette sectioned by colours · 1 image · main classroom screen",
+    "..."
+  ],
+
+  "_cefr_level_en": "A1.2",
+  ...
+}
+```
+
+### 13.3 Reglas obligatorias v3.2
+
+**REGLA 13.3.A — `descripcion_aprendiz` obligatorio cross-bloque · 80-150 palabras · canon SENA tono**
+
+| Característica | Valor |
+|---|---|
+| Audiencia | Aprendiz (NO instructor) |
+| Longitud | 80-150 palabras |
+| Tono | SENA impersonal: "el instructor", "los aprendices", "cada equipo" · voz pasiva refleja |
+| Verbos canon | "se conformarán", "el instructor orientará", "los aprendices darán lectura", "la actividad finaliza con" |
+| Personajes | **PROHIBIDO**: Manuel/Mariana/Hernando/Carolina/Yurlenis/Pipa/Andrés/Captain Lim/Sergio/Luis Mejía → usar roles funcionales ("el operador junior reefer", "el cold chain coordinator", "el capitán del buque", etc.) |
+| Permitido | MV CARIBBEAN STAR · Puerto Antioquia · Eje Bananero · términos técnicos (SMCP · NATO · setpoint · Cavendish · etc.) |
+| Arquetipos visibles | Galería visual · K-W-L · post-it · tríos · DRTA · simulación · mesa redonda · etc. |
+
+**REGLA 13.3.B — `recursos_aprendiz[]` obligatorio · target 2-8 bullets · tangibles preparados**
+
+| Característica | Valor |
+|---|---|
+| Tipo | Worksheets · tarjetas · sobres · plantillas · sets físicos preparados por instructor |
+| Distinción canon | Material **PRINCIPAL** preparado para esta actividad · NO Materiales de formación (oficina genérica) · NO Material de apoyo (videos/links/manuales complementarios) |
+| Cantidad target | 2-8 bullets · típico 4-6 (APERTURA 2-4 · APROPIACIÓN 3-6 · TRANSFERENCIA 5-8) |
+| Format | "<Tipo recurso · descripción específica · cantidad · formato>" |
+
+**REGLA 13.3.C — `descripcion_aprendiz_en` CONDICIONAL: solo APROPIACIÓN + TRANSFERENCIA**
+
+| tipo_bloque | descripcion_aprendiz_en | _cefr_level_en |
+|---|---|---|
+| APERTURA (3.1+3.2) | NULL (cards solo en ESP por canon CEFR pre-A1 activación afectiva) | NULL |
+| APROPIACION B1 (RA1) | EN A1.2 controlled · oraciones cortas | "A1.2" |
+| APROPIACION B2 (RA2) | EN A1.3 controlled · SMCP markers + standard responses | "A1.3" |
+| APROPIACION B3 (RA3) | EN A2.0 controlled · modals + imperative + present simple Wh-questions | "A2.0" |
+| APROPIACION B4 (RA4) | EN A2.0-A2.1 controlled · present continuous + prepositional phrases + quantifiers | "A2.0-A2.1" |
+| TRANSFERENCIA (BT) | EN A2.1 terminal integrativo | "A2.1" |
+
+**REGLA 13.3.D — `recursos_aprendiz_en[]` cardinality match con ES**
+
+Si `recursos_aprendiz` (ES) tiene N bullets · `recursos_aprendiz_en` (EN) DEBE tener N bullets paralelos · misma orden · mismo contenido (translated NO transcreated).
+
+**REGLA 13.3.E — `descripcion` (legacy técnica 200-600 palabras) sigue existiendo · pero scope cambia**
+
+| Versión | Audiencia | Consumido por |
+|---|---|---|
+| `descripcion` v3.0/v3.1 | INSTRUCTOR (Playbook PM-3.2) | PM-3.2 build-out · NO PM-3.6 v3.5 |
+| `descripcion_aprendiz` v3.2 | APRENDIZ (Guía GFPI-F-135) | PM-3.6 v3.5 obligatorio |
+| `descripcion_aprendiz_en` v3.2 | APRENDIZ bilingüe | PM-3.6 v3.5 (solo APROPIACIÓN+TRANSFERENCIA · render bilingüe) |
+
+### 13.4 Heredancia downstream v3.2
+
+```
+AC v3.2 .descripcion_aprendiz + .recursos_aprendiz + .descripcion_aprendiz_en + .recursos_aprendiz_en
+     ↓
+PM-3.6 v3.5 .Sección 3 actividades (bilingüe Opción D escalada · 3 categorías materiales)
+```
+
+### 13.5 Validation checks v3.2 (NEW · BLOQUEANTES)
+
+- **Check v3.2-A · descripcion_aprendiz_obligatorio** · TODAS las cards tienen `descripcion_aprendiz` 80-150 palabras
+- **Check v3.2-B · recursos_aprendiz_obligatorio** · TODAS las cards tienen `recursos_aprendiz[]` ≥2 bullets
+- **Check v3.2-C · cero_personajes_aprendiz_facing** · `descripcion_aprendiz` + `recursos_aprendiz` + `material_apoyo` + `evidencias.nombre` sin nombres prohibidos
+- **Check v3.2-D · en_solo_apropiacion_transferencia** · `descripcion_aprendiz_en` y `recursos_aprendiz_en` NULL en APERTURA · presentes en APROPIACION+TRANSFERENCIA
+- **Check v3.2-E · cefr_level_match_bloque** · `_cefr_level_en` corresponde al bloque del card (B1=A1.2 · B2=A1.3 · B3=A2.0 · B4=A2.0-A2.1 · BT=A2.1)
+- **Check v3.2-F · cardinality_match_es_en** · `recursos_aprendiz_en[].length === recursos_aprendiz[].length`
+
+### 13.6 ETL canon library (cross-program reusable)
+
+Scripts canónicos para migrar cards v3.0/v3.1 → v3.2 (cuando wrappers PM-2.x todavía no nacen v3.2):
+
+```
+.claude/skills/fpi-sena-fase3/scripts/canon/etl-cards-v32-aprendiz/
+├── README.md (documentación pipeline)
+├── 01-extract-descripciones-input.py
+├── 02-llm-rewrite-descripcion-aprendiz.py (wrapper Agent dispatch)
+├── 03-llm-extract-recursos-aprendiz.py (wrapper Agent dispatch)
+├── 04-llm-translate-en-cefr-aware.py (wrapper Agent dispatch)
+├── 05-mechanical-clean-personajes.py
+├── 06-apply-all-to-cards.py
+└── 07-validate-v32-checks.py
+```
+
+Pipeline ejecutable end-to-end · cross-program reusable hasta que wrappers PM-2.x sean bumpeados a v3.2 (próxima fase).
+
+### 13.7 Deuda explícita post-canon v3.2
+
+- Wrappers PM-2.x (11 master prompts) bumpear para emitir cards nacidas v3.2 desde el inicio (NO post-procesamiento ETL) · próxima fase canonización Nivel 3
+- Subagente PM-3.6 actualizado · ya consume v3.2 ✅
+
+---
+
+**Versión v3.2:** A partir del 2026-05-03
+**Caso de origen:** Sergio detectó paradigm shift instructor-facing → aprendiz-facing post-validación preview v6 prólogo cinematográfico
+**Próximo dispatch:** Wave E completo IMARPOR-V2 (consume cards v3.2 · render canon completo)

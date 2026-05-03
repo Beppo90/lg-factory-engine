@@ -10,7 +10,7 @@
 |-------|-------|
 | **Código** | PM-3.6 |
 | **Nombre** | GFPI-F-135 Learning Guide Generator · Heredero formato canon Sergio narrativo |
-| **Versión** | 3.4 |
+| **Versión** | 3.5 |
 | **Last Verified** | 2026-05-02 |
 | **Ubicación** | Fase 4 · post Playbook (PM-3.2 ×N sesiones) · post PM-2.11 v3.2 |
 | **Output** | **1 docx único** GFPI-F-135 (Guía de Aprendizaje del Aprendiz · brújula del estudiante · narrativa pedagógica) · 3 secciones canónicas SENA (1 Identificación + 2 Presentación bilingüe + 3 Formulación Actividades con numeración jerárquica 3.1 reflexión / 3.2 contextualización / 3.3 apropiación con sub-headers RAP / 3.4 transferencia del conocimiento) · numeración POR RAP reset en 3.3 · omisión Evidencias/Instrumentos en 3.1+3.2 · footer "GFPI-F-135 V04" · logo SENA central · tono SENA estandarizado |
@@ -1052,6 +1052,7 @@ NO agregar bloque en actividades de práctica, drills o reflexión sin evidencia
 | **v3.2** | **2026-05-02** | **Sección 3 numeración jerárquica SENA (3.1 reflexión inicial · 3.2 contextualización + identificación conocimientos · 3.3 apropiación con headers RAP · 3.4 transferencia del conocimiento) + numeración POR RAP reset (1, 2, 3... cada RAP) + omisión Evidencias/Instrumentos en 3.1+3.2 + preguntas embebidas en Descripción + tono SENA estandarizado verbos canon · REGLAS 40-48** |
 | **v3.3** | **2026-05-02** | **Sección 4 PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE PARA LA EVALUACIÓN EN EL PROCESO FORMATIVO · tabla 6 columnas canon SENA · solo actividades 3.3 Apropiación (NO 3.1 · NO 3.2 · NO 3.4) · headers RAP separadores · numeración instrumentos ACUMULADA cross-RAP · criterios múltiples por actividad · criterios independientes de evidencia · heredancia desde AC.criterios_evaluacion[] · REGLAS 49-56 · cascade requiere AC v3.1 + PM-2.11 v3.3** |
 | **v3.4** | **2026-05-02** | **Check NEW dimension_consistency_seccion_3_vs_4 + REGLA 57 evidencias formales target 2-3 por RAP (NO todas las 30 cards · selectivo · criterios_evaluacion[] sigue obligatorio independiente) + REGLA 58 Sección 5 GLOSARIO bilingüe extenso (4 fields por entrada: EN word/phrase/chunk + EN definition + EN ejemplo contextualizado + ES translation · sin límite arbitrario · vocabulario técnico programa) · REGLAS 57-58** |
+| **v3.5** | **2026-05-03** | **APRENDIZ-FACING SHIFT canon (paradigm fix) · REGLA 60 hereda descripcion_aprendiz (NO descripcion legacy) · REGLA 61 recursos_aprendiz canon después de Descripción · REGLA 62 3 secciones materiales separadas (Recursos preparados + Materiales formación + Material apoyo) · REGLA 63 Bilingüismo Opción D escalada CEFR-aware (3.1+3.2 ESP · 3.3+3.4 EN protagonista regular + ES cursiva pequeña scaffold gris #707070) · REGLA 64 Footer info actividad cursiva 9pt color gris discreta (Ambiente · Estrategias · Técnica · Materiales formación · Material apoyo · Evidencias · Instrumentos · Duración) · REGLA 65 Sec 2 Presentación estilo PRÓLOGO cinematográfico (4 párrafos: escena+protagonista+viaje+SENA) · REGLA 66 Logo SENA real centrado en encabezado (PNG real · NO placeholder)** |
 *Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV) · v3.0 paradigm shift narrativo Sergio 2026-05-02 · v3.1 Secciones 1+2 + bilingüismo Sergio 2026-05-02 PM · v3.2 Sección 3 jerárquica SENA Sergio 2026-05-02 PM (iteración con guía modelo Reach Stacker)*
 
 ---
@@ -2249,3 +2250,198 @@ Para cada actividad de 3.3 Apropiación:
 
 *PM-3.6 v3.4 · Evidencias selectivas 2-3 por RAP + Sección 5 GLOSARIO bilingüe extenso + Check dimension consistency*
 *Sergio Cortés decisión 2026-05-02 PM (5a iteración con guía modelo Reach Stacker · refinamiento pedagógico) · 3 reglas NEW (57-59) + 6 validation checks bloqueantes · cross-program forever*
+
+---
+
+## EXTENSIÓN v3.5 — APRENDIZ-FACING SHIFT + 7 REGLAS NEW (60-66) (2026-05-03)
+
+### Decisión canónica Sergio (post-validación preview v6 prólogo cinematográfico)
+
+> Sergio detectó 2026-05-02 PM que la versión v3.4 todavía tenía 2 anti-patrones críticos: (1) `descripcion` rendereada literal era 535 palabras instructor-facing meta-pedagógica con jerga + nombres de personajes · (2) `recursos` mencionados pero no listados como tangibles preparados. Solución: 5 layers fix (descripcion_aprendiz · recursos_aprendiz · cleanup personajes · 3 categorías materiales · footer cursivo) + bilingüismo Opción D escalada CEFR-aware + estilo prólogo cinematográfico Sec 2 + logo SENA real. Validación: preview v6 aprobado 2026-05-03.
+
+### REGLA 60 — Heredancia descripcion_aprendiz · NO descripcion legacy
+
+PM-3.6 v3.5 hereda **`descripcion_aprendiz`** (canon AC v3.2) en lugar de `descripcion` (instructor-facing legacy):
+
+| Versión | Audiencia | Consumido en |
+|---|---|---|
+| `descripcion` legacy | INSTRUCTOR (Playbook PM-3.2) | Build-out v3.x · NO en GFPI-F-135 v3.5 |
+| `descripcion_aprendiz` v3.2 | APRENDIZ (Guía SENA) | PM-3.6 v3.5 · Sec 3 obligatorio |
+
+**Anti-patrón evitado:** renderizar `descripcion` 535 palabras instructor-facing con jerga sistémica ("baseline lexical · bridge cognitivo · sparks de Mariana") + nombres de personajes prohibidos.
+
+### REGLA 61 — Bloque "Recursos preparados por el instructor" · después de Descripción
+
+Estructura de cada actividad en Sec 3:
+
+```
+<N>. Activity (<dimensión>): <enunciado V+O+C>          ← header
+<N>. Actividad <dimensión>: <enunciado>                ← scaffold cursiva (si bilingüe)
+
+Activity description: <descripcion_aprendiz_en>         ← cuerpo principal (regular)
+Descripción de la actividad: <descripcion_aprendiz>     ← scaffold cursiva ES (si bilingüe)
+
+Resources prepared by the instructor:                   ← NEW v3.5 ↓
+   • <recursos_aprendiz_en[0]>
+   • <recursos_aprendiz_en[1]>
+   ...
+Recursos preparados por el instructor:                  ← scaffold cursiva ES
+   • <recursos_aprendiz[0]>
+   ...
+
+[FOOTER cursiva discreta · ver REGLA 64]
+```
+
+**Heredancia:** `recursos_aprendiz[]` y `recursos_aprendiz_en[]` (AC v3.2) · cardinality match obligatorio.
+
+### REGLA 62 — 3 secciones materiales SEPARADAS (canon SENA distinción)
+
+Sergio canon 2026-05-03: distinción operacional clara entre 3 categorías de material en cada actividad:
+
+| Categoría | Naturaleza | Origen field AC |
+|---|---|---|
+| **Recursos preparados por el instructor** (NEW v3.5) | Worksheets · tarjetas · sobres · plantillas · sets físicos preparados específicamente | `recursos_aprendiz[]` |
+| **Materiales de formación** (componente formativo · CORE) | Insumos/equipos/herramientas/recursos didácticos PRINCIPALES estrictamente OBLIGATORIOS · núcleo técnico indispensable | `materiales_formacion[]` |
+| **Material de apoyo** (complementario · ILUSTRAR/PROFUNDIZAR) | Recursos ADICIONALES sugeridos (manuales · videos · artículos · webgrafía · biblioteca SENA) | `material_apoyo[]` |
+
+**Render:**
+- Recursos preparados por el instructor: cuerpo principal (después de Descripción · regular)
+- Materiales de formación: footer cursiva discreta
+- Material de apoyo: footer cursiva discreta
+
+**Anti-patrón evitado:** juntar las 3 categorías en una sola sección (anti-patrón v3.4 corregido v3.5) · confunde al instructor sobre qué preparar específicamente.
+
+### REGLA 63 — Bilingüismo Opción D escalada CEFR-aware
+
+Por sección de la guía:
+
+| Sección | Lengua principal (regular) | Scaffold (cursiva 9pt gris #707070) |
+|---|---|---|
+| Sec 1 Identificación | ESP | – |
+| Sec 2 Presentación | EN protagonista (cinematográfico) | ES cursiva pequeña paralela |
+| Sec 3.1 Reflexión inicial (B0 · pre-A1) | ESP | – (sin EN · canon CEFR pre-A1 activación afectiva) |
+| Sec 3.2 Contextualización (B0 · pre-A1) | ESP | – (sin EN · idem 3.1) |
+| Sec 3.3 Apropiación RAP 1 (B1 · A1.2) | EN A1.2 controlled | ES cursiva pequeña scaffold |
+| Sec 3.3 Apropiación RAP 2 (B2 · A1.3) | EN A1.3 controlled | ES cursiva pequeña scaffold |
+| Sec 3.3 Apropiación RAP 3 (B3 · A2.0) | EN A2.0 controlled | ES cursiva pequeña scaffold |
+| Sec 3.3 Apropiación RAP 4 (B4 · A2.0-A2.1) | EN A2.0-A2.1 controlled | ES cursiva pequeña scaffold |
+| Sec 3.4 Transferencia (BT · A2.1) | EN A2.1 terminal integrativo | ES cursiva pequeña scaffold |
+| Sec 4 Tabla evidencias | ESP (administrativo) | – |
+| Sec 5 Glosario | EN protagonista (4 fields) | ES cursiva en Equivalente español |
+
+**Razón pedagógica:** programas SENA bilingüismo enseñan inglés EN inglés (immersive · ESP solo cuando ayuda). 3.1+3.2 son activación afectiva · ESP funciona pedagógicamente · 3.3+3.4 escalan EN con scaffold ES decreciente.
+
+### REGLA 64 — Footer info actividad cursiva 9pt color gris discreta
+
+Después de "Recursos preparados por el instructor" + scaffold ES, los campos auxiliares de cada actividad van en formato discreto:
+
+| Campo | Format |
+|---|---|
+| Ambiente requerido | cursiva · 9pt · color #707070 |
+| Estrategias didácticas activas | cursiva · 9pt · color #707070 |
+| Técnica didáctica | cursiva · 9pt · color #707070 |
+| Materiales de formación | cursiva · 9pt · color #707070 |
+| Material de apoyo | cursiva · 9pt · color #707070 |
+| Evidencias de aprendizaje (header + 3 líneas) | cursiva · 9pt · color #707070 |
+| Instrumentos de evaluación (si NO aplica) | cursiva · 9pt · color #707070 |
+| Duración de la actividad | cursiva · 9pt · color #707070 |
+
+**Razón visual:** estos son metadatos operacionales del instructor · NO son contenido de aprendizaje · su prominencia visual debe ser discreta para no competir con la descripción + recursos preparados (cuerpo principal del aprendiz).
+
+### REGLA 65 — Sec 2 Presentación estilo PRÓLOGO cinematográfico
+
+Estructura canon 4 párrafos cinematográficos · EN protagonista + ES cursiva paralela:
+
+```
+PÁRRAFO 1 · ESCENA APERTURA (sensorial · contextual · stakes)
+  EN: situación específica del sector + anclaje universo canon (lugar/hora/sentidos)
+  ES: cursiva paralela traducida
+
+PÁRRAFO 2 · APRENDIZ PROTAGONISTA (yours · you are · because you are there)
+  EN: el aprendiz como héroe del programa · su rol único
+  ES: cursiva paralela traducida
+
+PÁRRAFO 3 · VIAJE PEDAGÓGICO (12 sesiones · CEFR · RAPs · evidencias · misión final)
+  EN: la promesa formativa con destino real (empleo/futuro)
+  ES: cursiva paralela traducida
+
+PÁRRAFO 4 · MENCIÓN SENA + LLAMADO
+  EN: instrucción directa + autoaprendizaje + biblioteca SENA + cierre cinematográfico
+  ES: cursiva paralela traducida
+```
+
+**Anti-patrón evitado:** texto SENA estándar plano "Estimado Aprendiz, bienvenido a esta formación..." · sin engagement · sin protagonismo · sin promesa.
+
+**Características obligatorias:**
+- Anclaje universo canon (lugar específico · personajes generales · objetos icónicos del sector)
+- Aprendiz protagonista ("you · yours · your training journey")
+- Promesa pedagógica concreta (CEFR · sesiones · evidencias · misión final · destino real)
+- Cierre cinematográfico ("Welcome aboard · The ship is waiting" · etc.)
+- CEFR-controlled English (A1.2-A2.1 según programa)
+
+### REGLA 66 — Logo SENA real centrado en encabezado
+
+Logo SENA institucional (PNG real · NO placeholder texto) centrado en parte superior de Sec 1.
+
+**Path canon:** `<repo_root>/sena-logo.png` (alternativo: `frontend/public/sena-logo-green.svg`)
+
+**Especificaciones:**
+- Tamaño: 80x80 px (proporcional)
+- Alineación: centrada
+- Posición: encima del título "PROCESO DE GESTIÓN..." en encabezado documento
+- Espaciado: 120 spacing after
+
+**Anti-patrón evitado:** placeholder "[LOGO SENA]" o "[LOGO SENA CENTRAL]" texto plano.
+
+### Validation checks v3.5 (NEW · BLOQUEANTES)
+
+- **Check v3.5-A · descripcion_aprendiz_consumed** · PM-3.6 hereda de `descripcion_aprendiz` (NO `descripcion` legacy)
+- **Check v3.5-B · recursos_aprendiz_rendered_after_description** · "Recursos preparados por el instructor" aparece después de Descripción y antes del footer cursivo
+- **Check v3.5-C · 3_categorias_materiales_separadas** · Recursos preparados (cuerpo) + Materiales formación (footer) + Material apoyo (footer) renderizadas como secciones distintas
+- **Check v3.5-D · bilinguismo_opcion_D_escalado** · 3.1+3.2 solo ESP · 3.3+3.4 EN protagonista regular + ES cursiva 9pt #707070 · Sec 2 estilo prólogo bilingüe · Sec 5 EN protagonista
+- **Check v3.5-E · footer_cursivo_metadata_actividad** · Ambiente · Estrategias · Técnica · Materiales formación · Material apoyo · Evidencias · Instrumentos · Duración en cursiva 9pt color #707070
+- **Check v3.5-F · prologo_cinematografico_4_parrafos** · Sec 2 contiene exactamente 4 párrafos cinematográficos bilingües (escena · protagonista · viaje · SENA)
+- **Check v3.5-G · logo_sena_real_centered** · Logo SENA PNG real centrado en encabezado · NO placeholder texto
+
+### Anti-patrones v3.5 evitados
+
+- ❌ Renderizar `descripcion` (instructor-facing 535 palabras) en Sec 3 actividades
+- ❌ Mezclar Recursos preparados + Materiales formación + Material apoyo en una sola sección
+- ❌ Footer info actividad con visibilidad regular (compite con cuerpo principal)
+- ❌ Sec 2 Presentación SENA estándar plano sin engagement cinematográfico
+- ❌ Placeholder "[LOGO SENA]" en lugar del logo real
+- ❌ Mencionar nombres de personajes en cualquier campo aprendiz-facing
+
+### Cascade impact v3.5 (canonización Nivel 2 reducido + ETL canon library)
+
+| Componente | Acción | Estado |
+|---|---|---|
+| Activity Card schema v3.1 → v3.2 | Bump · 4 campos NEW (descripcion_aprendiz · recursos_aprendiz · descripcion_aprendiz_en · recursos_aprendiz_en) | ✅ master prompt actualizado |
+| PM-3.6 v3.4 → v3.5 | Bump · 7 reglas NEW (60-66) | ✅ master prompt actualizado |
+| DM v3.13 → v3.14 | Status footnote canonización Nivel 2 reducido | ⚠️ pending |
+| `subagente_pm_3_6_gfpi_f135.py` | Update · consume cards v3.2 + render canon v3.5 | ⚠️ pending |
+| Scripts ETL canon library | Mover wave-e-fix-* a `.claude/skills/fpi-sena-fase3/scripts/canon/etl-cards-v32-aprendiz/` | ⚠️ pending |
+| Wrappers PM-2.x (11 master prompts) | Bump · próxima fase canonización Nivel 3 (deuda explícita) | 🔵 deferred |
+
+### Resumen estructura final docx GFPI-F-135 v3.5
+
+```
+[Encabezado: LOGO SENA REAL centrado · título institucional]
+
+1. IDENTIFICACIÓN DE LA GUÍA DE APRENDIZAJE       (8 campos · ESP)
+2. PRESENTACIÓN                                    (PRÓLOGO cinematográfico 4 párrafos · EN protagonista + ES cursiva)
+3. FORMULACIÓN DE LAS ACTIVIDADES DE APRENDIZAJE  (jerárquico 3.1+3.2+3.3+3.4)
+   3.1 Reflexión inicial          (ESP · sin EN · descripcion_aprendiz + recursos_aprendiz + footer cursivo)
+   3.2 Contextualización          (ESP · sin EN · idem)
+   3.3 Apropiación RAP 1-4        (EN protagonista + ES cursiva scaffold · descripcion_aprendiz_en + recursos_aprendiz_en + footer cursivo)
+   3.4 Transferencia              (EN protagonista + ES cursiva scaffold · idem)
+4. PLANTEAMIENTO DE EVIDENCIAS PARA LA EVALUACIÓN  (tabla 6 cols · ESP administrativo)
+5. GLOSARIO BILINGÜE / BILINGUAL GLOSSARY          (EN protagonista + ES cursiva en Equivalente)
+
+[Footer todas páginas: "GFPI-F-135 V04" + página]
+```
+
+---
+
+*PM-3.6 v3.5 · APRENDIZ-FACING SHIFT canon · 7 reglas NEW (60-66) + 7 validation checks bloqueantes*
+*Sergio Cortés decisión 2026-05-03 · post-validación preview v6 prólogo cinematográfico aprobado · canon cross-program forever*
