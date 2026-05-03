@@ -1362,7 +1362,7 @@ ACTIVITY CARD v3.0 → C11 (PM-2.11 v3.2)
 
 Este formato canon C7+C10+C11 aplica downstream a:
 - **PM-3.6 (GFPI-F-135 Learning Guide)** — debe usar mismo formato en su tabla de evidencias
-- **PM-3.7 (GFPI-F-134 Matrix Aggregator)** — debe preservar formato canon en xlsx multi-RAP
+- ~~**PM-3.7 (GFPI-F-134 Matrix Aggregator)**~~ ⛔ DEPRECATED 2026-05-02 — V04 (PM-2.11 v3.2) reemplaza Vf · ya NO emite xlsx · ver `master-prompts/PM-3.7 — GFPI-F-134 Matrix Aggregator.md` § DEPRECATED
 - **PM-3.4 (Workbook)** — referencia formato evidencias en captulos PREPARE
 
 ### NEW Validation check v3.2 (20)

@@ -1,4 +1,26 @@
 """
+⚠️ DEPRECATED 2026-05-02 ⚠️
+subagente_pm_3_7_gfpi_f134_matrix.py — DEPRECATED · NO USAR EN RUNS NUEVOS.
+
+DECISIÓN ARQUITECTÓNICA SERGIO 2026-05-02 PM:
+- Plantilla source `GFPI-F-134_Vf.xlsx` (April 2022) REEMPLAZADA por
+  `GFPI-F-134-V04-REFERENCIA-formato-Sergio.xlsx` (2026-05-02)
+- PM-2.11 v3.1+ ya genera xlsx V04 oficial con agrupación tripartita por RA
+  (gfpi_f134_v04_rows[] · 6 filas heredadas 1:1 pm-1-2 sub_bloques_tripartitos)
+- PM-3.7 queda obsoleto (drift de formato Phase 2 V04 vs Phase 4 Vf)
+
+REEMPLAZO CANÓNICO:
+- Para xlsx GFPI-F-134 V04 oficial SENA → PM-2.11 v3.2 + scripts canon en runs/[RUN]/scripts/:
+  · pm-2-11-v3-1-regroup-tripartita.py (regroup 30 Activity Cards en N filas tripartitas)
+  · pm-2-11-v3-1-render-xlsx-6-rows.py (renderer xlsx V04 con N filas pobladas)
+
+Master prompt deprecation: `master-prompts/PM-3.7 — GFPI-F-134 Matrix Aggregator.md` § DEPRECATED 2026-05-02
+
+DO NOT EXECUTE THIS SUBAGENTE IN NEW RUNS · raise RuntimeError on import.
+
+---
+[Documentación histórica preservada abajo · NO ejecutar]
+
 subagente_pm_3_7_gfpi_f134_matrix.py — Subagente CREATIVO PM-3.7 GFPI-F-134 Matrix Aggregator + xlsx Renderer.
 
 v2.0 (2026-04-30) · CANON V04 oficial SENA · multi-RAP shape.
@@ -70,7 +92,19 @@ SUBAGENTE_VERSION = "2.0"  # Canon V04 oficial SENA · 2026-04-30 · multi-RAP s
 
 
 def preparar_bundle_pm_3_7(run_id, runs_dir, master_prompts_dir, repo_root, guide_id=None, strict_gate3=False):
-    """Prepara bundle Task tool canónico para PM-3.7 GFPI-F-134 Matrix Aggregator.
+    """
+
+import sys as _sys
+import warnings as _warnings
+_warnings.warn(
+    "PM-3.7 (subagente_pm_3_7_gfpi_f134_matrix) is DEPRECATED since 2026-05-02. "
+    "Use PM-2.11 v3.2 + scripts canon (pm-2-11-v3-1-regroup-tripartita.py + "
+    "pm-2-11-v3-1-render-xlsx-6-rows.py) for GFPI-F-134 V04 oficial SENA. "
+    "See master-prompts/PM-3.7 — GFPI-F-134 Matrix Aggregator.md for migration.",
+    DeprecationWarning,
+    stacklevel=2,
+)
+Prepara bundle Task tool canónico para PM-3.7 GFPI-F-134 Matrix Aggregator.
 
     Returns:
         dict bundle completo (subagent_type + prompt + expected_output + validation_post_hoc)

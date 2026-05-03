@@ -1,8 +1,42 @@
-# PM-3.7: GFPI-F-134 MATRIX AGGREGATOR
+# PM-3.7: GFPI-F-134 MATRIX AGGREGATOR · ⚠️ DEPRECATED 2026-05-02
 
 ## FPI SENA — Bilingüismo
 
 ---
+
+## ⛔ ESTE PROMPT MODULE ESTÁ DEPRECATED · NO USAR EN RUNS NUEVOS
+
+> **Decisión arquitectónica Sergio 2026-05-02 PM:**
+> El xlsx `GFPI-F-134-V04-REFERENCIA-formato-Sergio.xlsx` (subido 2026-05-02) **REEMPLAZA** la plantilla `GFPI-F-134_Vf.xlsx` (April 2022) que PM-3.7 consumía. La nueva plantilla V04 es el formato oficial SENA actual.
+>
+> **PM-2.11 v3.1+ ya genera el xlsx V04 oficial** con agrupación tripartita por RA (gfpi_f134_v04_rows[] · 6 filas heredadas 1:1 de pm-1-2 sub_bloques_tripartitos) en formato canon Sergio C7+C10+C11 (v3.2).
+>
+> **PM-3.7 queda obsoleto** porque:
+> 1. Su plantilla source (Vf April 2022) ya no es canon SENA
+> 2. Su rol "agregador multi-RAP post-Playbook" se cumple ya en PM-2.11 v3.1+ (6 sub-filas tripartitas equivalen funcionalmente al multi-RAP rollup que Vf intentaba)
+> 3. Mantenerlo activo crea **drift de formato** entre lo que produce Phase 2 (V04 canon) y Phase 4 (Vf obsoleto)
+>
+> **Reemplazo canónico:**
+> - **Use:** `PM-2.11 v3.2` para generar el xlsx GFPI-F-134 V04 oficial SENA por RAP
+> - **Para multi-RAP futuro** (programas con N RAPs): ejecutar PM-2.11 v3.2 N veces · agregar resultados manualmente o crear `PM-2.11-multi-RAP` (NEW · NO renombrar PM-3.7) si se justifica volumen
+>
+> **Estado de assets PM-3.7:**
+> - Master prompt: este archivo · marcado DEPRECATED · preservado para historial
+> - Subagente Python: `.claude/skills/fpi-sena-fase3/subagentes/subagente_pm_3_7_gfpi_f134_matrix.py` · marcar DEPRECATED · NO ejecutar en nuevos runs
+> - lib/xlsx_renderer.py función V04: REUSABLE · ya migró a scripts canon de PM-2.11 v3.1 (`pm-2-11-v3-1-render-xlsx-6-rows.py`)
+> - Outputs históricos en runs (IMARPOR-CC v1 · pm-3-7.json/.xlsx): preservados para historial · NO regenerar
+>
+> **Cross-PM downstream cleanup pending:**
+> - DM v3.8 → v3.9 (deprecation footnote)
+> - PLAN-FASE-3 v1.5 → v1.6 (PM-3.7 eliminado de Hito-Fase3-4)
+> - PM-2.11 v3.2 (remover PM-3.7 de cross-PM canonization downstream list)
+> - PM-3.3 / PM-0 / PM-0.0 / PM-1.1 (remover referencias PM-3.7 si las hay)
+
+**Si llegaste aquí buscando generar GFPI-F-134 oficial → usa PM-2.11 v3.2 (Row Assembler · v3.1 agrupación tripartita 6 filas · v3.2 formato canon Sergio C7+C10+C11).**
+
+---
+
+
 
 ## IDENTIDAD DEL PROMPT
 
