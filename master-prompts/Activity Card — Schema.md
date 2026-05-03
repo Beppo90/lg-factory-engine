@@ -1,10 +1,25 @@
 ---
 type: data-contract
-version: 3.2
+version: 3.4
 created: 2026-04-13
 last_verified: 2026-05-03
 last_updated: 2026-05-03
 status: active
+v3_4_changes:
+  - "NEW campo OPCIONAL `_anclaje_pedagogico_pm0_pre_pm32`: hook para anclaje rápido PM-0 antes de pasar la card a PM-3.2 v3.0 (capa 1 PEDAGOGICAL ANCHORING)"
+  - "Schema {principios_pm0_pre[]: array IDs §5.x · siop_components_pre[]: array enum SIOP · ubd_stage_pre: enum {Stage1|Stage2|Stage3} · krashen_input_pre: string i+1 brief}"
+  - "RAZÓN: PM-3.2 v3.0 capa 1 (Pedagogical Anchoring) requiere insumos pre-anclaje · cuando wrappers PM-2.x bumpeen a v3.4+ podrán emitirlos directamente · evita doble carga al subagente PM-3.2"
+  - "DEUDA EXPLÍCITA: campo es OPCIONAL hasta que wrappers PM-2.x sean bumpeados Nivel 3 · si NULL · PM-3.2 v3.0 hace anclaje from scratch"
+  - "Decisión Sergio canon 2026-05-03 (post-bump PM-3.2 v3.0 · cierre cascade Nivel 2 reducido)"
+  - "Cascade impact: hook anticipatorio Nivel 3 wrappers PM-2.x · NO bloquea Nivel 2 actual"
+v3_3_changes:
+  - "PARADIGM SHIFT canon Sergio 2026-05-03: distinción RECURSOS DISEÑO (instructor · PM-3.2) vs MATERIALES APRENDIZ (PM-3.6 docx)"
+  - "DEPRECATION SOFT: `recursos_aprendiz[]` (NEW v3.2) era ambiguo · contenía info logística instructor (cantidades · tamaños) que NO debe leer el aprendiz · migra a PM-3.2 Playbook"
+  - "NEW campo `materiales_aprendiz_inline[]`: scaffolds CORTOS embebibles dentro de la actividad (preguntas reflexivas · KWL bilingüe simple · checklist 3-5 ítems · plantilla pequeña 1 cuadrante) · render inline después de Descripción"
+  - "NEW campo `worksheets_aprendiz_anexo[]`: lista de objetos para recursos LARGOS estructurados (Item Bank Template · texto paralelo Reading · catálogo extenso · diagrama 1+ páginas) · render como ANEXO numerado al final de la guía · referenciado desde la actividad"
+  - "Schema worksheets_aprendiz_anexo[]: {id_anexo · titulo · titulo_en · tipo_recurso (template_blank | catalogo | texto_paralelo | diagrama | etc.) · contenido_renderizable · cardinality (1 por aprendiz | 1 por equipo · etc.)}"
+  - "Decisión Sergio: aprendiz DESARROLLA actividades · NO lee información logística del instructor"
+  - "Cascade impact: PM-3.6 v3.5 → v3.6 con 3 reglas NEW (67-69) · NEW Sección 6 ANEXOS"
 v3_2_changes:
   - "NEW campo OBLIGATORIO `descripcion_aprendiz` (80-150 palabras canon SENA · tono impersonal · cero personajes · arquetipos visibles · paradigm fix instructor-facing → aprendiz-facing)"
   - "NEW campo OBLIGATORIO `recursos_aprendiz[]` (bullets tangibles preparados por instructor · worksheets · tarjetas · sobres · plantillas físicas)"
@@ -1713,3 +1728,73 @@ Pipeline ejecutable end-to-end · cross-program reusable hasta que wrappers PM-2
 **Versión v3.2:** A partir del 2026-05-03
 **Caso de origen:** Sergio detectó paradigm shift instructor-facing → aprendiz-facing post-validación preview v6 prólogo cinematográfico
 **Próximo dispatch:** Wave E completo IMARPOR-V2 (consume cards v3.2 · render canon completo)
+
+---
+
+## 14. Activity Card v3.4 — HOOK ANTICIPATORIO `_anclaje_pedagogico_pm0_pre_pm32` (canon Sergio 2026-05-03)
+
+### 14.1 Decisión canónica Sergio (post-bump PM-3.2 v3.0 · cierre cascade Nivel 2 reducido)
+
+> Tras la canonización PM-3.2 v3.0 (capa 1 PEDAGOGICAL ANCHORING + capa 2 PRACTICAL IMPLEMENTATION · anti-patrón #18 cerrado), surge la deuda anticipatoria: cuando los wrappers PM-2.x bumpeen Nivel 3 (próxima fase) podrán emitir cards con anclaje pedagógico PM-0 nacido en origen. Para evitar bloquear Nivel 2 actual (donde PM-3.2 v3.0 hace anclaje desde cero) se introduce un campo OPCIONAL `_anclaje_pedagogico_pm0_pre_pm32` que sirve de hook adelantado.
+
+### 14.2 Schema NEW v3.4 (campo OPCIONAL)
+
+```json
+{
+  ...
+  "_anclaje_pedagogico_pm0_pre_pm32": {
+    "principios_pm0_pre": ["§5.1", "§5.4", "§5.6"],
+    "siop_components_pre": ["Building Background", "Comprehensible Input", "Strategies"],
+    "ubd_stage_pre": "Stage 3 — Learning Plan",
+    "krashen_input_pre": "Visual + L1 bridge + chunked oral input · i+1 grade A1.2"
+  }
+}
+```
+
+| Campo | Tipo | Cardinalidad | Notas |
+|---|---|---|---|
+| `principios_pm0_pre[]` | array string | 1-5 | IDs §5.x del PM-0 (ej: §5.1 ESP, §5.4 i+1, §5.6 SIOP) |
+| `siop_components_pre[]` | array enum | 0-8 | SIOP 8 features {Lesson Preparation · Building Background · Comprehensible Input · Strategies · Interaction · Practice/Application · Lesson Delivery · Review/Assessment} |
+| `ubd_stage_pre` | enum | 1 | {Stage 1 — Desired Results · Stage 2 — Evidence · Stage 3 — Learning Plan} |
+| `krashen_input_pre` | string | 1 | Brief 1-2 oraciones describiendo aplicación i+1 en esta card |
+
+### 14.3 Reglas v3.4
+
+**REGLA 14.3.A — Campo OPCIONAL hasta Nivel 3 wrappers**
+
+Mientras los wrappers PM-2.x emitan cards v3.0/v3.1/v3.2/v3.3 (sin anclaje pre-PM-3.2), PM-3.2 v3.0 hace el anclaje from scratch en su capa 1. Cuando los wrappers bumpeen Nivel 3 podrán emitirlo directamente.
+
+**REGLA 14.3.B — Si presente, PM-3.2 v3.0 lo HEREDA literal · NO regenera**
+
+PM-3.2 v3.0 capa 1 (Pedagogical Anchoring) lee `_anclaje_pedagogico_pm0_pre_pm32` si existe y lo trasvasa a `pedagogical_anchoring.activities_anchoring[*]` con campos extendidos (gaps + correcciones + modelo_ejemplo + derivación `*_aprendiz`).
+
+**REGLA 14.3.C — Si AUSENTE, PM-3.2 v3.0 hace anclaje from scratch (path actual)**
+
+No bloquea pipeline. Es hook anticipatorio puro. Estado actual IMARPOR-V2: cards v3.2/v3.3 sin este campo · PM-3.2 v3.0 ancla desde cero.
+
+### 14.4 Cascade impact v3.4
+
+```
+v3.4 hook (cards opcional)
+     ↓
+PM-3.2 v3.0 capa 1 (lee si presente · genera si ausente)
+     ↓
+PM-3.6 v3.7 (hereda *_aprendiz literal desde PM-3.2 v3.0 · NO importa origen anclaje)
+```
+
+### 14.5 Validation checks v3.4 (NEW · NO BLOQUEANTES en Nivel 2)
+
+- **Check v3.4-A · schema_si_presente** · Si `_anclaje_pedagogico_pm0_pre_pm32` existe · debe cumplir schema (4 keys · arrays no vacíos)
+- **Check v3.4-B · principios_pm0_validos** · IDs en `principios_pm0_pre[]` deben matchear §5.x existentes en PM-0 (§5.1-§5.13)
+- **Check v3.4-C · ubd_stage_enum** · `ubd_stage_pre` debe ser uno de los 3 enums
+
+### 14.6 Deuda explícita post-canon v3.4
+
+- Wrappers PM-2.x (11 master prompts) bumpear Nivel 3 para emitir cards nacidas v3.4 con anclaje pedagógico desde origen · próxima fase canonización Nivel 3 (post-Phase 4 IMARPOR-V2)
+- Hook anticipatorio activo · sin bloqueo Nivel 2 actual
+
+---
+
+**Versión v3.4:** A partir del 2026-05-03
+**Caso de origen:** Sergio canonizó PM-3.2 v3.0 (cierre anti-patrón #18) · introduce hook adelantado para Nivel 3
+**Próximo dispatch:** PM-3.2 v3.0 ejecuta capa 1 Pedagogical Anchoring para 30 cards IMARPOR-V2 (campo ausente · anclaje from scratch)

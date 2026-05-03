@@ -9,19 +9,20 @@
 | Campo | Valor |
 |-------|-------|
 | **Código** | PM-3.2 |
-| **Nombre** | Playbook Build-Out — Step by Step |
-| **Versión** | 2.6 |
-| **Last Verified** | 2026-04-30 |
-| **Destinatario** | Instructor (documento interno, NO para el aprendiz) |
-| **Función** | Expandir UNA sesión del Playbook Outline (PM-3.1) a un plan de clase detallado, minuto a minuto, con Teacher Talk completo, answer keys, notas de facilitación, diferenciación **y propagación obligatoria de las estrategias didácticas definidas en PM-3.1 §11.2** |
-| **Analogía** | Si PM-3.1 es el guion de rodaje (qué escenas se filman cada día), PM-3.2 es el storyboard completo (cada toma, cada ángulo, cada línea de diálogo) |
-| **Granularidad** | Se genera UNA sesión por ejecución. Para una guía de 8 sesiones, se ejecuta PM-3.2 ocho veces |
+| **Nombre** | Playbook Build-Out — 2 capas (Pedagogical Anchoring + Practical Implementation) |
+| **Versión** | 3.0 |
+| **Last Verified** | 2026-05-03 |
+| **Destinatario** | Instructor (documento interno, NO para el aprendiz · pero deriva campos `*_aprendiz` para PM-3.6) |
+| **Función** | (Capa 1) ENRIQUECIMIENTO PEDAGÓGICO de cada actividad anclando explícitamente a PM-0 §5.1-5.13 + PM-0.0 saberes/criterios + PM-1.x estructura · identifica gaps · genera modelo_ejemplo · deriva `*_aprendiz` para PM-3.6 || (Capa 2) IMPLEMENTACIÓN PRÁCTICA con Teacher Talk minuto a minuto · timeline · materials_checklist · answer_keys |
+| **Analogía** | (Capa 1) PM-3.2 es el cardiólogo que ANCLA cada actividad a la teoría (PM-0 SIOP/UbD/Krashen) · identifica deficiencias · prescribe enrichment || (Capa 2) PM-3.2 es el storyboard completo del rodaje práctico (cada toma · cada ángulo · cada línea de diálogo) |
+| **Granularidad** | Se genera UNA sesión por ejecución. Para una guía de 12 sesiones, se ejecuta PM-3.2 doce veces |
 | **Phase** | 3 |
 | **Status** | mandatory |
 | **Confirmation Required** | false |
-| **Depends On** | [PM-3.1] |
-| **Feeds Into** | [PM-3.3, PM-3.4, PM-3.6, PM-4.1] |
-| **Output JSON contract** | `pm-3-2-sX.json` — ver §"Required Output Schema (v2.5)" abajo |
+| **Depends On** | [PM-3.1, PM-2.x cards, PM-0.0 matriz, PM-0 principios, PM-1.1, PM-1.2] |
+| **Feeds Into** | [PM-3.3, PM-3.4, PM-3.6 (consume `*_aprendiz` derivados), PM-4.1] |
+| **Output JSON contract** | `pm-3-2-sX.json` v3.0 — schema 2 capas: `pedagogical_anchoring` + `practical_implementation` (legacy v2.6 preservado) |
+| **v3.0 changes** | NEW Sección PEDAGOGICAL ANCHORING (capa 1 obligatoria) · anclaje §5.x PM-0 per actividad · SIOP modeling · UbD stages · Krashen i+1 · bilingüismo escalado CEFR-aware · gaps identificados + correcciones · modelo_ejemplo · derivación `descripcion_aprendiz` + `recursos_aprendiz` + `modelo_ejemplo_en` para PM-3.6 || PRESERVAR Sección PRACTICAL IMPLEMENTATION (capa 2 · legacy v2.6) Teacher Talk + timeline + checklist · ELIMINAR contradicción "cero referencias teóricas" SOLO en Anchoring (Implementation sigue prohibiendo teoría en Teacher Talk) || Resuelve anti-patrón #18 "PM-3.6 saltado PM-3.2 enrichment" |
 
 ---
 
@@ -589,4 +590,178 @@ ADSO — GUÍA 1: The Hardware Specialist — Build-Out
 *PM-3.2: Playbook Build-Out — Step by Step*
 *Sistema de Prompts Maestros — LG Factory — FPI SENA — Bilingüismo*
 *Versión 2.5 — 2026-04-20 (Required Output Schema: propagación de estrategias didácticas obligatoria)*
+*Versión 3.0 — 2026-05-03 (Paradigm shift 2 capas · Pedagogical Anchoring + Practical Implementation)*
 *Instructor Sergio Cortés Perdomo · Marzo 2026*
+
+---
+
+## EXTENSIÓN v3.0 — PARADIGM SHIFT · 2 CAPAS · PEDAGOGICAL ANCHORING + PRACTICAL IMPLEMENTATION (2026-05-03)
+
+### Decisión arquitectónica Sergio (2026-05-03)
+
+> Sergio detectó que PM-3.6 (Guía Aprendiz) saltaba el enrichment pedagógico anclado en PM-0 § principios. La causa raíz: PM-3.2 v2.6 PROHIBÍA explícitamente referencias a marcos teóricos (Bloom · SIOP · UbD) — incluso en el lugar canónico donde DEBÍA hacerse el anclaje pedagógico. Anti-patrón #18 canonizado: "PM-3.6 saltado PM-3.2 enrichment · ad-hoc dentro de output aprendiz · pierde anclaje sistemático PM-0".
+>
+> Solución v3.0: 2 capas explícitas en PM-3.2 (Pedagogical Anchoring obligatorio + Practical Implementation legacy preservado) · ELIMINA contradicción anti-teórica solo en Capa 1 · mantiene en Teacher Talk de Capa 2.
+
+### CAPA 1 · PEDAGOGICAL ANCHORING (NEW v3.0 OBLIGATORIO)
+
+Cada actividad de la sesión se enriquece pedagógicamente ANTES de planificarse prácticamente. Schema NEW:
+
+```json
+"pedagogical_anchoring": {
+  "session_anchoring_summary": {
+    "principios_pm0_aplicados_en_sesion": ["§5.1 ESP realia", "§5.4 L1 scaffolding", "§5.7 Vocabulary chunks", "§5.12 L1 management S2≤25%"],
+    "siop_components_dominantes": ["building background", "comprehensible input", "scaffolding", "interaction"],
+    "ubd_stage_dominante": "Stage 3 · Plan Learning Experiences · WHERETO framework",
+    "krashen_i_plus_1_strategy": "Story A reading at A1.2 with visual scaffolds · 80% known + 20% new chunks",
+    "bilinguismo_escalado_cefr": {
+      "cefr_target_sesion": "A1.2",
+      "l1_max_porcentaje_canon_pm0_5_12": "S2 ≤ 25%",
+      "l1_uso_estrategico": "concept clarification · safety · affective filter reduction",
+      "en_protagonista_zonas": ["Story A reading · vocabulary cards · choral drills"],
+      "es_scaffold_zonas": ["pre-task framing · post-task debrief · K-W-L L column"]
+    }
+  },
+  "activities_anchoring": [
+    {
+      "activity_id": "S2-A1-WordWall",
+      "linked_card_uid": "pm-2-5_5",
+      "principios_pm0_aplicados": ["§5.7 Vocabulary chunks", "§5.4 L1 scaffolding receptive", "§5.10 Word Wall lexical anchoring"],
+      "siop_components": ["building background", "comprehensible input", "interaction"],
+      "ubd_stage": "Stage 3 · WHERETO E (Equip with knowledge · 20 key terms)",
+      "krashen_application": "Visual + L1 scaffold for unknown chunks · i+1 controlled (5-7 new per session ceiling)",
+      "bilinguismo_per_actividad": {
+        "en_protagonista": "Mapping 20 terms in EN · pronunciation drilling · semantic mapping",
+        "es_scaffold_cursiva": "Definition fallback · only when visual scaffold insufficient",
+        "l1_porcentaje_estimado": "≤ 20% · within S2 canon"
+      },
+      "gaps_pedagogicos_identificados": [
+        "GAP: card original carece de modelo de ejemplo · aprendiz no ve cómo mapear · agregar ejemplo de un término completamente etiquetado"
+      ],
+      "correcciones_aplicadas": [
+        "ADD modelo_ejemplo_en: 'Term: REEFER PLUG · Visual: outlet diagram · L1 anchor: enchufe reefer · Use: Plug in the reefer.'",
+        "ADD recursos_aprendiz: Mini Word Wall card template (1 per learner) for individual vocabulary log"
+      ],
+      "modelo_ejemplo_pedagogico": {
+        "rationale_siop": "Modeling reduces task ambiguity · learner sees expected output before producing",
+        "modelo_ejemplo_en": "Term: REEFER PLUG. Definition: Electrical socket for refrigerated containers. Example in context: Pipe connects the reefer plug to the shore power. Equivalent: Enchufe reefer.",
+        "modelo_ejemplo_es_scaffold": "Término: REEFER PLUG. Definición: Toma eléctrica para contenedores refrigerados. Ejemplo en contexto: Pipe conecta el reefer plug a la energía del muelle. Equivalente: Enchufe reefer."
+      },
+      "derivacion_para_pm36_aprendiz": {
+        "descripcion_aprendiz": "Mapear veinte términos clave de RA1 sobre partes del barco · tipos de vessels · equipamiento y profesiones portuarias mediante Word Wall Active y mapa semántico colaborativo. Para el desarrollo de la actividad · el instructor orientará sobre las cinco categorías funcionales canon · proyectará la silueta del MV CARIBBEAN STAR seccionada por colores · y se conformarán equipos de cuatro aprendices alrededor de pliegos kraft tamaño A1. Cada equipo recibirá un sobre canon con veinte fichas-término en inglés y veinte fichas-definición en inglés controlado A1.2. Durante setenta y cinco minutos los equipos rotarán por tres estaciones: matching ficha-término-imagen · pronunciación con audio nativo y mirror talking en pares · y producción mínima de oraciones con verb to be y demostrativos. La actividad finaliza con socialización plenaria de veinticinco minutos donde cada equipo presenta una categoría sorteada.",
+        "descripcion_aprendiz_en": "Map twenty key RA1 terms about ship parts · vessel types · equipment and port professions using a Word Wall Active and a collaborative semantic map. For the activity · the instructor will guide on the five canon functional categories · will project the MV CARIBBEAN STAR silhouette sectioned by colors · and teams of four learners will form around A1 kraft paper sheets. Each team will receive a canon envelope with twenty term cards in English plus twenty definition cards in controlled English A1.2. During seventy-five minutes teams will rotate through three stations: card-term-image matching · pronunciation with native audio and mirror talking in pairs · and minimal sentence production with verb to be and demonstratives. The activity ends with a twenty-five-minute plenary share where each team presents a sorted category.",
+        "recursos_aprendiz": [
+          "Mapa visual proyectable de los 4 RAPs como las 4 estaciones del journey",
+          "Silueta del MV CARIBBEAN STAR seccionada por colores · pantalla principal",
+          "Pliego kraft A1 + sobre canon 20 fichas-término + 20 fichas-definición · 1 por equipo de 4",
+          "Mini Word Wall card template (NEW · gap correction) · 1 por aprendiz",
+          "Audio Forvo nativo de pronunciación · reproducible aula"
+        ],
+        "recursos_aprendiz_en": [
+          "Projectable visual map of the 4 RAPs as 4 journey stations",
+          "MV CARIBBEAN STAR silhouette sectioned by colors · main classroom screen",
+          "A1 kraft paper sheet + canon envelope with 20 term cards + 20 definition cards · 1 per team of 4",
+          "Mini Word Wall card template (NEW · gap correction) · 1 per learner",
+          "Native pronunciation Forvo audio · classroom playback"
+        ],
+        "modelo_ejemplo_en": "Example · How to fill one card: Term: REEFER PLUG · Visual: outlet diagram · Use in context: 'The technician plugs the reefer into bay 14.' Try with your team: pick one term · draw the visual · write one short sentence using verb to be or there is.",
+        "anexo_referencias": [
+          "Annex 1.5 · Word Wall Active · RA1 Bilingual Catalogue (20 terms with check boxes)"
+        ]
+      }
+    }
+  ]
+}
+```
+
+### CAPA 2 · PRACTICAL IMPLEMENTATION (LEGACY v2.6 PRESERVADO)
+
+Todo lo de v2.6 sigue VIGENTE: Teacher Talk + timeline minuto a minuto + materials_checklist + answer_key_consolidado + differentiation + facilitation_notes + board_plan. Schema preservado intacto. Restricción "cero teoría en Teacher Talk" SE MANTIENE en esta capa (las notas son prácticas · no teóricas · cero referencia a Bloom/SIOP/UbD en lo que el instructor lee al ejecutar la sesión).
+
+### Reglas NEW v3.0 (13-18)
+
+**REGLA 13 — Anclaje §5.x PM-0 OBLIGATORIO per actividad**
+Cada actividad en `activities_anchoring[]` declara `principios_pm0_aplicados[]` con referencias §5.x explícitas. Mínimo 2 principios por actividad de Apropiación · 1 por actividad de Apertura/Transferencia.
+
+**REGLA 14 — SIOP components OBLIGATORIO per actividad**
+Cada actividad declara `siop_components[]` desde lista canon SIOP (Lesson Preparation · Building Background · Comprehensible Input · Strategies · Interaction · Practice/Application · Lesson Delivery · Review/Assessment). Mínimo 2 components per actividad.
+
+**REGLA 15 — Bilingüismo escalado CEFR-aware OBLIGATORIO per sesión**
+`bilinguismo_escalado_cefr` declara: cefr_target_sesion · l1_max_porcentaje (canon §5.12 PM-0 tabla) · zonas EN protagonista · zonas ES scaffold cursiva. Coherente con sesión number (S1≤30% · S2≤25% · S3≤20% · S4≤15% · S5≤12% · S6≤10%).
+
+**REGLA 16 — Identificación de gaps + correcciones OBLIGATORIO**
+`gaps_pedagogicos_identificados[]` analiza cada activity card original contra principios PM-0 + canon SIOP + UbD · identifica deficiencias (ej: "carece modelo · falta scaffolding L1 · density too high · etc.") · `correcciones_aplicadas[]` propone enrichment.
+
+**REGLA 17 — Modelo de ejemplo pedagógico OBLIGATORIO en Apropiación + Transferencia**
+`modelo_ejemplo_pedagogico` con: rationale_siop (por qué SIOP modeling principle) · modelo_ejemplo_en (50-150 palabras CEFR-controlled) · modelo_ejemplo_es_scaffold (cursiva traducción). NULL en Apertura (B0).
+
+**REGLA 18 — Derivación campos `*_aprendiz` para PM-3.6**
+`derivacion_para_pm36_aprendiz{}` produce los campos canon v3.4 que PM-3.6 hereda LITERAL: descripcion_aprendiz · descripcion_aprendiz_en · recursos_aprendiz · recursos_aprendiz_en · modelo_ejemplo_en · anexo_referencias. PM-3.6 NO genera estos campos · solo los hereda enriquecidos desde PM-3.2.
+
+### Validation checks v3.0 (NEW · BLOQUEANTES)
+
+- **Check v3.0-A · pedagogical_anchoring_present** · cada `pm-3-2-sX.json` contiene clave top-level `pedagogical_anchoring` con `session_anchoring_summary` + `activities_anchoring[]` (1 entrada por activity card de la sesión)
+- **Check v3.0-B · principios_pm0_per_activity** · cada actividad de Apropiación tiene ≥2 `principios_pm0_aplicados[]` con formato §5.X · APERTURA/TRANSFERENCIA mínimo 1
+- **Check v3.0-C · siop_components_per_activity** · cada actividad declara ≥2 `siop_components[]` desde lista canon
+- **Check v3.0-D · bilinguismo_escalado_cefr_canon** · `l1_max_porcentaje_canon_pm0_5_12` coincide con tabla §5.12 PM-0 según session number
+- **Check v3.0-E · modelo_ejemplo_obligatorio** · APROPIACIÓN+TRANSFERENCIA cards tienen `modelo_ejemplo_pedagogico` completo (rationale_siop + modelo_ejemplo_en + modelo_ejemplo_es_scaffold)
+- **Check v3.0-F · derivacion_aprendiz_completa** · `derivacion_para_pm36_aprendiz` tiene los 6 campos obligatorios para PM-3.6 v3.5+ heredancia
+- **Check v3.0-G · gaps_correcciones_documented** · `gaps_pedagogicos_identificados[]` y `correcciones_aplicadas[]` no vacíos · cada gap tiene corrección correspondiente
+
+### Anti-patrones v3.0 evitados
+
+- ❌ Anti-patrón #18: PM-3.6 saltando PM-3.2 enrichment · generando ad-hoc dentro del output aprendiz
+- ❌ PM-3.2 sin anclaje §5.x explícito (v2.6 lo prohibía teóricamente · v3.0 lo OBLIGA en Capa 1)
+- ❌ Modelo de ejemplo ausente (canon Sergio: "el aprendiz necesita ver cómo se hace")
+- ❌ Bilingüismo sin escalonamiento canon CEFR §5.12 (improvisación L1 %)
+- ❌ Derivación `*_aprendiz` ad-hoc en PM-3.6 (debe heredarse desde PM-3.2 enrichment)
+
+### Cascade impact v3.0
+
+| Componente | Acción | Estado |
+|---|---|---|
+| Activity Card schema v3.3 → v3.4 | Bump · agregar campo `_anclaje_pedagogico_pm0_pre_pm32` opcional (cuando wrappers PM-2.x bumpeen a v3.x · próxima fase Nivel 3) | ⚠️ pending |
+| PM-3.2 v2.6 → v3.0 | Bump · 2 capas + 6 reglas NEW + 7 validation checks | ✅ completado este bump |
+| DM v3.14 → v3.15 | Status footnote paradigm shift PM-3.2 v3.0 · anti-patrón #18 canonizado | ⚠️ pending |
+| PM-3.6 v3.6 → v3.7 | Bump · REGLA NEW: PM-3.6 hereda `*_aprendiz` LITERAL desde PM-3.2 v3.0 enrichment · NO genera ad-hoc | ⚠️ pending |
+| Pipeline ETL canon | Update · ahora PM-3.2 hace lo que ETL hacía manualmente · pipeline ETL marcado como SECONDARY (solo para runs sin PM-3.2 ejecutado) | ⚠️ pending |
+
+### Resumen estructura final pm-3-2-sX.json v3.0
+
+```
+{
+  "pm_id": "PM-3.2", "pm_version": "3.0",
+  "session": N, "session_name": "...",
+  // CAPA 1 · NEW v3.0 (obligatoria) ────────────────────────────────────
+  "pedagogical_anchoring": {
+    "session_anchoring_summary": { ... },
+    "activities_anchoring": [
+      {
+        "activity_id": "...", "linked_card_uid": "pm-2-X_N",
+        "principios_pm0_aplicados": [...],
+        "siop_components": [...],
+        "ubd_stage": "...",
+        "krashen_application": "...",
+        "bilinguismo_per_actividad": { ... },
+        "gaps_pedagogicos_identificados": [...],
+        "correcciones_aplicadas": [...],
+        "modelo_ejemplo_pedagogico": { ... },
+        "derivacion_para_pm36_aprendiz": { ... }   ← PM-3.6 hereda LITERAL
+      }
+    ]
+  },
+  // CAPA 2 · LEGACY v2.6 (preservada) ──────────────────────────────────
+  "momento_sena": "...", "estrategia_didactica": "...", "justificacion_didactica": "...",
+  "session_header": { ... }, "materials_checklist": [...], "board_plan": "...",
+  "timeline": [...], "set_up": { ... }, "while": { ... }, "wrap_up": { ... },
+  "answer_key_consolidado": [...], "differentiation": { ... },
+  "instructor_self_check": [...], "activity_logistics": { ... },
+  "totals_check": { ... }, "data_flow_contract": { ... }, "rap_status": "...",
+  "pm0_protocol": { ... }
+}
+```
+
+---
+
+*PM-3.2 v3.0 · 2 capas · Pedagogical Anchoring (NEW · canon enrichment PM-0 explícito) + Practical Implementation (legacy v2.6 preservado)*
+*Sergio Cortés decisión 2026-05-03 · resuelve anti-patrón #18 (PM-3.6 saltando PM-3.2) · cascade IMARPOR-V2 Phase 3 unblocked*

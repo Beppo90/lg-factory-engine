@@ -10,8 +10,8 @@
 |-------|-------|
 | **Código** | PM-3.6 |
 | **Nombre** | GFPI-F-135 Learning Guide Generator · Heredero formato canon Sergio narrativo |
-| **Versión** | 3.5 |
-| **Last Verified** | 2026-05-02 |
+| **Versión** | 3.7 |
+| **Last Verified** | 2026-05-03 |
 | **Ubicación** | Fase 4 · post Playbook (PM-3.2 ×N sesiones) · post PM-2.11 v3.2 |
 | **Output** | **1 docx único** GFPI-F-135 (Guía de Aprendizaje del Aprendiz · brújula del estudiante · narrativa pedagógica) · 3 secciones canónicas SENA (1 Identificación + 2 Presentación bilingüe + 3 Formulación Actividades con numeración jerárquica 3.1 reflexión / 3.2 contextualización / 3.3 apropiación con sub-headers RAP / 3.4 transferencia del conocimiento) · numeración POR RAP reset en 3.3 · omisión Evidencias/Instrumentos en 3.1+3.2 · footer "GFPI-F-135 V04" · logo SENA central · tono SENA estandarizado |
 | **Rol en el sistema** | Materializa el contenido pedagógico canon (matriz v1.3 + 30 Activity Cards v3.0) en formato narrativo orientado al aprendiz · "traduce todo el trabajo técnico de la planeación pedagógica en una ruta clara, paso a paso, para el aprendiz" (Sergio canon) |
@@ -1053,6 +1053,8 @@ NO agregar bloque en actividades de práctica, drills o reflexión sin evidencia
 | **v3.3** | **2026-05-02** | **Sección 4 PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE PARA LA EVALUACIÓN EN EL PROCESO FORMATIVO · tabla 6 columnas canon SENA · solo actividades 3.3 Apropiación (NO 3.1 · NO 3.2 · NO 3.4) · headers RAP separadores · numeración instrumentos ACUMULADA cross-RAP · criterios múltiples por actividad · criterios independientes de evidencia · heredancia desde AC.criterios_evaluacion[] · REGLAS 49-56 · cascade requiere AC v3.1 + PM-2.11 v3.3** |
 | **v3.4** | **2026-05-02** | **Check NEW dimension_consistency_seccion_3_vs_4 + REGLA 57 evidencias formales target 2-3 por RAP (NO todas las 30 cards · selectivo · criterios_evaluacion[] sigue obligatorio independiente) + REGLA 58 Sección 5 GLOSARIO bilingüe extenso (4 fields por entrada: EN word/phrase/chunk + EN definition + EN ejemplo contextualizado + ES translation · sin límite arbitrario · vocabulario técnico programa) · REGLAS 57-58** |
 | **v3.5** | **2026-05-03** | **APRENDIZ-FACING SHIFT canon (paradigm fix) · REGLA 60 hereda descripcion_aprendiz (NO descripcion legacy) · REGLA 61 recursos_aprendiz canon después de Descripción · REGLA 62 3 secciones materiales separadas (Recursos preparados + Materiales formación + Material apoyo) · REGLA 63 Bilingüismo Opción D escalada CEFR-aware (3.1+3.2 ESP · 3.3+3.4 EN protagonista regular + ES cursiva pequeña scaffold gris #707070) · REGLA 64 Footer info actividad cursiva 9pt color gris discreta (Ambiente · Estrategias · Técnica · Materiales formación · Material apoyo · Evidencias · Instrumentos · Duración) · REGLA 65 Sec 2 Presentación estilo PRÓLOGO cinematográfico (4 párrafos: escena+protagonista+viaje+SENA) · REGLA 66 Logo SENA real centrado en encabezado (PNG real · NO placeholder)** |
+| **v3.6** | **2026-05-03** | **DESARROLLO APRENDIZ canon · REGLA 67 NO renderizar `recursos_aprendiz` en docx aprendiz (DEPRECATION SOFT · es info logística instructor · migra a PM-3.2 Playbook) · REGLA 68 SÍ renderizar `materiales_aprendiz_inline` después de Descripción (scaffolds CORTOS embebibles: preguntas reflexivas · KWL · checklist · plantilla pequeña) · REGLA 69 NEW Sección 6 "Anexos · Workspace del aprendiz" al final de la guía con worksheets renderizados (plantillas reales con espacios para llenar · catálogos · textos paralelos) referenciados desde cada actividad por id_anexo (Anexo N.M)** |
+| **v3.7** | **2026-05-03** | **HEREDANCIA LITERAL DESDE PM-3.2 v3.0 · REGLA 70 PM-3.6 hereda `descripcion_aprendiz` + `descripcion_aprendiz_en` + `materiales_aprendiz_inline[]` + `worksheets_aprendiz_anexo[]` + `modelo_ejemplo_completo` LITERAL desde `pm-3-2-sX.json.pedagogical_anchoring.activities_anchoring[*].derivacion_para_pm36_aprendiz` · NO genera ad-hoc · NO regenera · solo render · REGLA 71 trazabilidad obligatoria `_derivado_desde: "pm-3-2-sX.json#activities_anchoring[N].derivacion_para_pm36_aprendiz"` por actividad · REGLA 72 si PM-3.2 v3.0 no ejecutado · PM-3.6 BLOQUEA con error claro "PM-3.2 v3.0 enrichment requerido · ejecutar Phase 3 antes de Phase 4" · resuelve anti-patrón #18 cierre cascade** |
 *Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV) · v3.0 paradigm shift narrativo Sergio 2026-05-02 · v3.1 Secciones 1+2 + bilingüismo Sergio 2026-05-02 PM · v3.2 Sección 3 jerárquica SENA Sergio 2026-05-02 PM (iteración con guía modelo Reach Stacker)*
 
 ---
@@ -2445,3 +2447,131 @@ Logo SENA institucional (PNG real · NO placeholder texto) centrado en parte sup
 
 *PM-3.6 v3.5 · APRENDIZ-FACING SHIFT canon · 7 reglas NEW (60-66) + 7 validation checks bloqueantes*
 *Sergio Cortés decisión 2026-05-03 · post-validación preview v6 prólogo cinematográfico aprobado · canon cross-program forever*
+
+---
+
+## EXTENSIÓN v3.7 — HEREDANCIA LITERAL DESDE PM-3.2 v3.0 ENRICHMENT (2026-05-03)
+
+### Decisión canónica Sergio (post-bump PM-3.2 v3.0 · cierre cascade Nivel 2 reducido)
+
+> Tras canonización PM-3.2 v3.0 (anti-patrón #18 cerrado: PM-3.2 capa 1 PEDAGOGICAL ANCHORING + capa 2 PRACTICAL IMPLEMENTATION), PM-3.6 NO debe regenerar `descripcion_aprendiz` ni `materiales_aprendiz_inline` ad-hoc. La canon source-of-truth aprendiz-facing es ahora **el output de PM-3.2 v3.0** en `pm-3-2-sX.json.pedagogical_anchoring.activities_anchoring[*].derivacion_para_pm36_aprendiz`. PM-3.6 v3.7 hereda LITERAL desde ahí · solo render · cero invención.
+
+### REGLA 70 — Heredancia LITERAL desde PM-3.2 v3.0 enrichment (canon)
+
+PM-3.6 v3.7 **DEBE leer y heredar literal** los siguientes campos desde `pm-3-2-sX.json.pedagogical_anchoring.activities_anchoring[*].derivacion_para_pm36_aprendiz`:
+
+| Campo PM-3.6 | Origen PM-3.2 v3.0 |
+|---|---|
+| `descripcion_aprendiz` | `derivacion_para_pm36_aprendiz.descripcion_aprendiz_enriquecida` |
+| `descripcion_aprendiz_en` | `derivacion_para_pm36_aprendiz.descripcion_aprendiz_en_enriquecida` |
+| `materiales_aprendiz_inline[]` | `derivacion_para_pm36_aprendiz.materiales_aprendiz_inline[]` |
+| `worksheets_aprendiz_anexo[]` | `derivacion_para_pm36_aprendiz.worksheets_aprendiz_anexo[]` |
+| `modelo_ejemplo_completo` | `derivacion_para_pm36_aprendiz.modelo_ejemplo_completo` |
+
+**PROHIBIDO:** PM-3.6 NO puede generar estos campos desde cero, NO puede usar LLM Agent dispatch para reescribirlos, NO puede consumir `descripcion` legacy v3.0.
+
+**Path canon de heredancia:**
+```
+PM-3.2 v3.0 capa 1 (Pedagogical Anchoring · LLM Agent enriquece con anclaje PM-0 §5.x + SIOP + UbD + Krashen + gaps + correcciones)
+     ↓
+pm-3-2-sX.json.pedagogical_anchoring.activities_anchoring[N].derivacion_para_pm36_aprendiz
+     ↓
+PM-3.6 v3.7 lee LITERAL · render fiel · cero modificación
+     ↓
+GFPI-F-135 docx aprendiz
+```
+
+### REGLA 71 — Trazabilidad obligatoria `_derivado_desde` por actividad
+
+Cada bloque de actividad rendered en Sección 3 (3.1, 3.2, 3.3 ×N RAPs, 3.4) DEBE incluir en su pipeline metadata (NO renderizado al aprendiz · solo en `pm-3-6.json`) el campo:
+
+```json
+{
+  "numero_actividad": 7,
+  "_derivado_desde": "pm-3-2-s3.json#pedagogical_anchoring.activities_anchoring[2].derivacion_para_pm36_aprendiz",
+  ...
+}
+```
+
+**Propósito:** auditabilidad cross-document · permite re-validar heredancia byte-by-byte cuando se regenera la guía o se aplican correcciones en PM-3.2 v3.0.
+
+### REGLA 72 — BLOQUEO si PM-3.2 v3.0 no ejecutado
+
+Si **alguna sesión** del programa no tiene `pm-3-2-sX.json.pedagogical_anchoring` (capa 1 ausente o vacía), PM-3.6 v3.7 **DEBE BLOQUEAR la ejecución** con error claro:
+
+```
+ERROR PM-3.6 v3.7 BLOCKED — PM-3.2 v3.0 enrichment requerido
+Sesión faltante: S{N}
+Path esperado: pm-3-2-s{N}.json.pedagogical_anchoring.activities_anchoring[]
+Acción requerida: ejecutar Phase 3 (PM-3.1 + PM-3.2 v3.0 ×{N} sesiones) ANTES de Phase 4 (PM-3.6).
+Anti-patrón #18 detectado: PM-3.6 NO puede generar contenido aprendiz-facing ad-hoc · debe heredar de PM-3.2 v3.0 enrichment.
+```
+
+**Propósito arquitectónico:** cierre definitivo del anti-patrón #18 · garantiza que toda guía aprendiz GFPI-F-135 esté pedagógicamente anclada en PM-0 §5.x · NO ejecutable sin Phase 3 completa.
+
+### Ejemplo flujo end-to-end (canon IMARPOR-V2 post-bump)
+
+```
+1. PM-3.1 v1.0 · genera pm-3-1.json (Outline 12 sesiones)
+2. PM-3.2 v3.0 ×12 · cada sesión:
+   - Capa 1 PEDAGOGICAL ANCHORING (LLM Agent): ancla cada actividad a §5.x PM-0 + SIOP + UbD + Krashen + identifica gaps + correcciones + redacta modelo_ejemplo + deriva *_aprendiz enriquecido
+   - Capa 2 PRACTICAL IMPLEMENTATION (legacy v2.6): Teacher Talk + timeline + materials_checklist + answer_keys
+3. PM-3.6 v3.7:
+   - PRE-FLIGHT: verifica 12 pm-3-2-sX.json existen + cada uno tiene pedagogical_anchoring no vacío → si falla · BLOQUEA con mensaje REGLA 72
+   - HEREDANCIA: lee LITERAL los campos derivacion_para_pm36_aprendiz
+   - RENDER: aplica reglas v3.0-v3.6 (formato canon Sergio narrativo + estructura jerárquica + bilingüismo Opción D + 6 secciones)
+   - TRAZABILIDAD: emite pm-3-6.json con _derivado_desde por actividad
+   - OUTPUT: 1 docx único GFPI-F-135 V04 + ANEXOS Sección 6
+```
+
+### Validation checks v3.7 (NEW · BLOQUEANTES)
+
+- **Check v3.7-A · pm32_v3_present** · TODOS los `pm-3-2-sX.json` requeridos existen y tienen `pedagogical_anchoring.activities_anchoring[]` no vacío
+- **Check v3.7-B · derivacion_completa** · Cada activity en 3.1+3.2+3.3+3.4 tiene los 5 campos heredados (descripcion_aprendiz · descripcion_aprendiz_en si aplica · materiales_aprendiz_inline · worksheets_aprendiz_anexo · modelo_ejemplo_completo)
+- **Check v3.7-C · trazabilidad_derivado_desde** · `pm-3-6.json.seccion_3_actividades[*]._derivado_desde` apunta a path válido en pm-3-2-sX.json
+- **Check v3.7-D · cero_invencion_aprendiz_facing** · Diff byte-by-byte entre `pm-3-2-sX.json.pedagogical_anchoring.activities_anchoring[N].derivacion_para_pm36_aprendiz.descripcion_aprendiz_enriquecida` y `pm-3-6.json.seccion_3_actividades[M].descripcion_aprendiz` debe ser 0 (idéntico)
+- **Check v3.7-E · no_descripcion_legacy_consumida** · grep en `pm-3-6.json` NO debe haber referencias a `activity.descripcion` (legacy 200-600 palabras instructor-facing) · solo `descripcion_aprendiz`
+
+### Anti-patrones v3.7 evitados
+
+| Anti-patrón | Síntoma | Bloqueado por |
+|---|---|---|
+| #18 PM-3.6 genera ad-hoc | Capa pedagógica reescribe lo que PM-3.2 ya enriqueció · doble esfuerzo · drift | REGLA 70 + Check v3.7-D |
+| #18.A Phase 3 skipped | PM-3.6 ejecuta sin PM-3.2 v3.0 (Playbook ausente) | REGLA 72 + Check v3.7-A |
+| #18.B Heredancia parcial | PM-3.6 hereda algunos campos pero regenera otros | Check v3.7-B + v3.7-D |
+| #14 audit shallow | No se puede auditar de dónde vino cada actividad | REGLA 71 trazabilidad |
+
+### Cascade impact v3.7 (deuda explícita)
+
+| Componente | Estado | Acción requerida |
+|---|---|---|
+| PM-3.2 v3.0 master prompt | ✅ canonizado 2026-05-03 | Listo para dispatch |
+| `subagente_pm_3_2_playbook_buildout.py` | ⚠️ pending Nivel 3 | Refactor para emitir `pedagogical_anchoring` capa 1 (próxima fase) |
+| `subagente_pm_3_6_gfpi_f135.py` | ⚠️ pending update | Update consume `derivacion_para_pm36_aprendiz` literal · BLOQUEO si ausente · trazabilidad `_derivado_desde` |
+| AC schema v3.4 hook `_anclaje_pedagogico_pm0_pre_pm32` | ✅ canonizado 2026-05-03 | Hook anticipatorio · OPCIONAL hasta Nivel 3 |
+| IMARPOR-V2 pm-3-6.docx actual | ⚠️ pre-cascade | Se regenera tras dispatch Phase 3 (PM-3.1 + PM-3.2 v3.0 ×12) |
+| DM v3.15 status footnote | ✅ canonizado 2026-05-03 | Documenta paradigm shift |
+
+### Resumen estructura final docx GFPI-F-135 v3.7
+
+```
+[Encabezado: LOGO SENA REAL centrado · título institucional]
+
+1. IDENTIFICACIÓN DE LA GUÍA DE APRENDIZAJE       (8 campos · ESP)
+2. PRESENTACIÓN                                    (PRÓLOGO cinematográfico 4 párrafos · EN protagonista + ES cursiva)
+3. FORMULACIÓN DE LAS ACTIVIDADES DE APRENDIZAJE  (jerárquico 3.1+3.2+3.3+3.4)
+   3.1 Reflexión inicial          (HEREDADO LITERAL desde PM-3.2 v3.0)
+   3.2 Contextualización          (HEREDADO LITERAL desde PM-3.2 v3.0)
+   3.3 Apropiación RAP 1-N        (HEREDADO LITERAL desde PM-3.2 v3.0 · bilingüe)
+   3.4 Transferencia              (HEREDADO LITERAL desde PM-3.2 v3.0 · bilingüe)
+4. PLANTEAMIENTO DE EVIDENCIAS PARA LA EVALUACIÓN  (tabla 6 cols · ESP)
+5. GLOSARIO BILINGÜE / BILINGUAL GLOSSARY          (EN protagonista + ES cursiva)
+6. ANEXOS · WORKSPACE DEL APRENDIZ                 (worksheets renderizados desde derivacion_para_pm36_aprendiz.worksheets_aprendiz_anexo[])
+
+[Footer todas páginas: "GFPI-F-135 V04" + página]
+```
+
+---
+
+*PM-3.6 v3.7 · HEREDANCIA LITERAL desde PM-3.2 v3.0 enrichment · 3 reglas NEW (70-72) + 5 validation checks bloqueantes*
+*Sergio Cortés decisión 2026-05-03 · cierre anti-patrón #18 cascade · canon cross-program forever*
