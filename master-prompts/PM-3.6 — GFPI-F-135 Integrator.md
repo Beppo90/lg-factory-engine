@@ -1,4 +1,4 @@
-# PM-3.6: GFPI-F-135 INTEGRATOR
+# PM-3.6: GFPI-F-135 INTEGRATOR · LEARNING GUIDE GENERATOR
 
 ## FPI SENA — Bilingüismo
 
@@ -9,15 +9,17 @@
 | Campo | Valor |
 |-------|-------|
 | **Código** | PM-3.6 |
-| **Nombre** | GFPI-F-135 Learning Guide Generator |
-| **Versión** | 2.7 |
-| **Last Verified** | 2026-04-30 |
-| **Ubicación** | Fase 4, posterior a PM-3.2 (Playbook Build-Out completo) |
-| **Output** | Documento GFPI-F-135 V02 — Guía de Aprendizaje del Aprendiz (redactada en 2ª persona) |
-| **Rol en el sistema** | Transforma el Playbook del Instructor (PM-3.2) en la Guía del Aprendiz (GFPI-F-135) |
+| **Nombre** | GFPI-F-135 Learning Guide Generator · Heredero formato canon Sergio narrativo |
+| **Versión** | 3.0 |
+| **Last Verified** | 2026-05-02 |
+| **Ubicación** | Fase 4 · post Playbook (PM-3.2 ×N sesiones) · post PM-2.11 v3.2 |
+| **Output** | **1 docx único** GFPI-F-135 (Guía de Aprendizaje del Aprendiz · brújula del estudiante · narrativa pedagógica) · Sección 3 estructurada en 3 bloques (Reflexión+Contextualización + Apropiación×N RAPs + Transferencia) |
+| **Rol en el sistema** | Materializa el contenido pedagógico canon (matriz v1.3 + 30 Activity Cards v3.0) en formato narrativo orientado al aprendiz · "traduce todo el trabajo técnico de la planeación pedagógica en una ruta clara, paso a paso, para el aprendiz" (Sergio canon) |
 | **Phase** | 4 |
-| **Depends On** | [PM-3.2, PM-2.11] |
-| **Trigger** | post_playbook_confirmation |
+| **Depends On** | [PM-2.11 v3.2 (gfpi_f134_v04_rows[]), 30 Activity Cards v3.0 (PM-2.1...PM-3.5+PM-4.2), PM-1.2 v4.2 (sub_bloques_tripartitos), PM-0.0 (matriz alineada · enunciados RAPs SOFÍA)] |
+| **Trigger** | post_playbook_confirmation (Gate 3) · OR direct cascade post PM-2.11 v3.2 si Phase 3 Playbook diferido |
+| **Formato canon** | v3.0 narrativo Sergio (3 ejemplos verbatim) — REEMPLAZA "Activity Card anatomy 6-bloque" v2.7 |
+| **Status v3.0** | ⚠️ BREAKING CHANGE · v2.7 anatomy 6-bloque DEPRECATED · v3.0 formato canon Sergio narrativo OBLIGATORIO · cross-program forever |
 
 ---
 
@@ -1045,4 +1047,288 @@ NO agregar bloque en actividades de práctica, drills o reflexión sin evidencia
 | v2.6.5 | 2026-04-21 | Shared Renderer Pattern · render_seccion4_evidencias.js fuente única (REGLA 20) |
 | **v2.6.6** | **2026-04-21** | **Paleta SENA institucional (verde #39A900 + azul oscuro #0B2E45) · REGLA 21** |
 | **v2.7** | **2026-04-30** | **Learner-Readable Activity · Anatomía 6-bloque · 17 campos schema v2.7 · 5 obsoletos PROHIBIDOS · supresión pipeline metadata · REGLAS 22-27 · v2.6.3 deprecated** |
-*Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV)*
+| **v3.0** | **2026-05-02** | **⚠️ BREAKING · Formato canon Sergio narrativo (REEMPLAZA anatomy 6-bloque v2.7) · Sección 3 estructura 3 bloques (Reflexión+Contextualización + Apropiación×N RAPs + Transferencia) · 1 docx único · heredancia 1:1 30 Activity Cards v3.0 · REGLAS 28-35** |
+*Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV) · v3.0 paradigm shift narrativo Sergio 2026-05-02*
+
+---
+
+## EXTENSIÓN v3.0 — FORMATO CANON SERGIO NARRATIVO + ESTRUCTURA 3 BLOQUES SECCIÓN 3 (2026-05-02 PM)
+
+### Decisión canónica Sergio (verbatim)
+
+> "La Guía de Aprendizaje es un recurso didáctico escrito que funciona como la brújula del estudiante, facilitando un aprendizaje activo y centrado en él. En el proceso de Gestión de Formación Profesional Integral, sirve para articular la enseñanza, el aprendizaje y la evaluación. A través de ella se orienta el desarrollo de las competencias del programa en sus tres dimensiones: cognitiva (saber), procedimental (hacer) y valorativo-actitudinal (ser).
+>
+> Es fundamental diseñarla y usarla porque traduce todo el trabajo técnico de la planeación pedagógica en una ruta clara, paso a paso, para el aprendiz. Además, permite estandarizar la calidad de la formación en la institución y asegura que el aprendizaje siga un ciclo didáctico lógico (reflexión, contextualización, apropiación y transferencia) enfocado en resolver problemas reales."
+>
+> — Sergio · 2026-05-02 PM
+
+### REGLA 28 — Output: 1 docx único
+
+PM-3.6 v3.0 emite **un único docx** GFPI-F-135 (no múltiples). Toda la guía del aprendiz vive en ese documento, cubriendo todos los RAPs del programa con su ciclo didáctico completo.
+
+### REGLA 29 — Estructura canónica Sección 3 (Actividades de Aprendizaje) · 3 bloques
+
+```
+SECCIÓN 3 — ACTIVIDADES DE APRENDIZAJE
+│
+├─ BLOQUE 1: REFLEXIÓN INICIAL + CONTEXTUALIZACIÓN
+│      (heredado de pm-1-2.sub_bloques_tripartitos[B0 APERTURA])
+│      Actividades formato canon · NO header de RAP
+│      Típicamente 2 actividades reflexión + 2 actividades contextualización
+│
+├─ BLOQUE 2: APROPIACIÓN (dividido entre los N RAPs)
+│      (heredado de pm-1-2.sub_bloques_tripartitos[B1..BN APROPIACION])
+│      ├─ ▶ RAP 1: <enunciado completo SOFÍA>
+│      │      → todas las actividades del bloque B1 en formato canon
+│      ├─ ▶ RAP 2: <enunciado completo SOFÍA>
+│      │      → todas las actividades del bloque B2 en formato canon
+│      ├─ ... ▶ RAP N
+│
+└─ BLOQUE 3: TRANSFERENCIA / MISIÓN FINAL
+       (heredado de pm-1-2.sub_bloques_tripartitos[BT TRANSFERENCIA])
+       Actividades capstone formato canon
+       Típicamente 5 actividades misión integradora
+```
+
+**Orden estricto:** RAP enunciado **PRIMERO** (visible al aprendiz como ancla pedagógica) · luego SUS actividades de apropiación abajo. NO actividades primero · NO RAPs implícitos.
+
+### REGLA 30 — Formato canon de cada actividad (verbatim ejemplos Sergio)
+
+Cada actividad se redacta así (heredado 1:1 de Activity Card v3.0):
+
+```
+<numero>. Actividad <dimension>: <enunciado verbo+objeto+condición>
+
+Descripción de la actividad: <narrativa pedagógica multi-párrafo · qué orienta
+el instructor · qué hacen los aprendices · paso a paso · links · entregable
+final · socialización>
+
+Ambiente requerido: <Convencional | Pluritecnológico | Simulado | combinaciones>
+
+Estrategias didácticas activas: <estrategia>
+
+Técnica didáctica: <técnica>
+
+Materiales de formación: <papel, lapiceros, computadores, equipos...>
+
+Material de apoyo: <PDFs, links, manuales, decretos...>
+
+Evidencias de aprendizaje:
+   Evidencia de <tipo>: <nombre>
+   Técnica de evaluación: <técnica>
+   Instrumento de evaluación No <N>: <tipo instrumento>
+   [O si NO aplica:]
+   No aplica
+   Instrumentos de evaluación: No aplica
+
+Duración de la actividad: <N> horas.
+```
+
+### REGLA 31 — Mapping AC v3.0 → render PM-3.6 narrativo (heredancia 1:1 · CERO INVENCIÓN)
+
+| Campo Activity Card v3.0 | Render PM-3.6 v3.0 |
+|---|---|
+| `numero_actividad` + `dimension` (lowercase) + `enunciado` | Header: `<N>. Actividad <dim>: <enun>` |
+| `descripcion` (200-600 palabras canon AC v3.0) | "Descripción de la actividad:" párrafo(s) directo(s) |
+| `ambiente` | "Ambiente requerido:" |
+| `estrategias_didacticas_activas[]` | "Estrategias didácticas activas:" (joined ' + ' si múltiples) |
+| `tecnicas_didacticas[]` | "Técnica didáctica:" (joined ' + ' si múltiples) |
+| `materiales[]` | "Materiales de formación:" (joined ', ') |
+| `material_apoyo[]` (con descripcion + link cuando aplique) | "Material de apoyo:" (cada item: descripcion · "Link: <url>" si existe) |
+| `evidencias.{tipo, nombre, tecnica_evaluacion, instrumento_numero, instrumento_tipo}` | "Evidencias de aprendizaje:" 3-4 líneas estructuradas (o "No aplica" + "Instrumentos de evaluación: No aplica") |
+| `duracion_horas` | "Duración de la actividad: <N> horas." |
+
+### REGLA 32 — Headers RAP enunciado (entre actividades de apropiación)
+
+Antes de listar las actividades de cada bloque APROPIACIÓN, se renderiza header con:
+
+```
+▶ RAP <N>: <enunciado completo SOFÍA del RAP>
+```
+
+Fuente del enunciado: `pm-0-0-matriz-alineada.json.raps[N].enunciado_rap` (matriz canon v1.3+).
+
+NO se omite · NO se abrevia · debe ir el enunciado completo SOFÍA tal cual está en la matriz.
+
+### REGLA 33 — Tono "brújula del aprendiz"
+
+- Redacción en 2ª persona singular ("usted") O impersonal ("el aprendiz") según convención SENA del programa.
+- Nivel CEFR adecuado al programa (heredado de pm-1-2.cefr_subnivel del bloque).
+- Tono motivador y claro · ruta paso a paso.
+- "Descripción de la actividad" cuenta lo que el aprendiz hará y lo que el instructor orientará — NO es metadata, es relato pedagógico.
+
+### REGLA 34 — Cero invención · heredancia upstream estricta
+
+NO se inventa contenido nuevo en PM-3.6 v3.0. Toda la "Descripción de la actividad" viene literal del campo `descripcion` de la Activity Card v3.0 (que ya fue diseñada con narrativa pedagógica 200-600 palabras según canon Sergio AC v3.0).
+
+Si una activity card carece de `descripcion` rica → **STOP** · regresar a Activity Card upstream y enriquecer · NO improvisar en PM-3.6.
+
+### REGLA 35 — v2.7 anatomy 6-bloque DEPRECATED
+
+El esquema "Activity Card anatomy 6-bloque · 17 campos schema v2.7 · 10 tipos scaffold_inline · 5 obsoletos prohibidos" de v2.7 queda **DEPRECATED** desde 2026-05-02. Razones:
+
+1. v2.7 era schema interno fragmentado · v3.0 honra formato verbatim ejemplos Sergio
+2. v2.7 mezclaba metadata pipeline con contenido aprendiz · v3.0 separa
+3. v2.7 no agrupaba por RAP · v3.0 agrupa por estructura tripartita upstream
+
+Outputs históricos GFPI-F-135 v2.7 en runs (IMARPOR-CC v1) preservados para historial. NO regenerar.
+
+### Ejemplo de salida (verbatim ejemplos Sergio · 3 actividades de Reach Stacker · guía modelo)
+
+#### Ejemplo 1 (cognitiva · con evidencia · ámbito convencional)
+
+```
+3. Actividad cognitiva: Reconocer códigos de comunicación portuaria de
+acuerdo con normativa.
+
+Descripción de la actividad: Identificar códigos según normatividad
+portuaria, referente a señales de comunicación y señalización necesarias
+para la operación. Para el desarrollo de la actividad, el instructor
+orientará a los aprendices sobre concepto, tipos y características del
+código de comunicación portuaria y del sistema baroti, así como del
+sistema operativo de terminal. Posteriormente se conformarán equipos de
+3 aprendices, quienes darán lectura a los siguientes documentos: Código
+internacional de señales, el cual se encuentra disponible en el
+siguiente link y en material de apoyo. 2. ¿Cómo identificar la posición
+del contenedor a bordo?, el cual se encuentra disponible en el
+siguiente link: https://es.scribd.com/presentation/478805289/BAROTI
+Seguidamente, los aprendices, a partir del material referenciado,
+realizarán simulaciones de pedidos de auxilio, operación terminada u
+otras similares, para lo cual deberán utilizar los códigos de señales
+establecidas, y según lo indique el instructor. La actividad finaliza
+con la entrega de un documento que resuma las señales más utilizadas en
+el ámbito portuario, y con la socialización de los aprendizajes
+alcanzados en desarrollo de la actividad.
+
+Ambiente requerido: Ambiente convencional.
+
+Estrategias didácticas activas: Aprendizaje colaborativo
+
+Técnica didáctica: simulación
+
+Materiales de formación: papel bond, lapiceros, marcadores, computadores
+
+Material de apoyo: Documento en PDF sobre Código internacional de señales.
+Link: https://es.scribd.com/presentation/478805289/BAROTI
+
+Evidencias de aprendizaje:
+   Evidencia de producto: Códigos de comunicación portuaria
+   Técnica de evaluación: Verificación de producto.
+   Instrumentos de evaluación No 2: Lista de verificación.
+
+Duración de la actividad: 4 horas.
+```
+
+#### Ejemplo 2 (cognitiva · sin evidencia formal)
+
+```
+1. Actividad cognitiva: Diferenciar los riesgos y peligros de acuerdo con
+normativa de Seguridad y Salud en el Trabajo.
+
+Descripción de la actividad: Los aprendices se dividirán en grupos de 3
+aprendices y se les proporcionará material sobre los conceptos de riesgo
+y peligro, así como la normativa SST vigente (Decreto 1443 de 2014, Por
+el cual se dictan disposiciones para la implementación del Sistema de
+Gestión de la Seguridad y Salud en el Trabajo (SG-SST)), al cual puede
+acceder desde el material de apoyo. A través de una investigación guiada
+por el instructor, cada grupo consultará sobre los tipos de riesgo
+químico, auditivo, ergonómico y físico; posteriormente identificarán de
+los tipos riesgos y peligros en la operación del equipo apilador de
+contenedores, diferenciando ambos términos y facilitando el intercambio
+de ideas y experiencias, a través de la socialización de sus
+conclusiones y las mejores prácticas para la gestión de riesgos en el
+trabajo.
+
+Ambiente requerido: Ambiente convencional.
+
+Estrategias didácticas activas: Trabajo colaborativo
+
+Técnica didáctica: Investigación guiada
+
+Materiales de formación: Elementos de oficina, computadores
+
+Material de apoyo: Manual de Operación equipo srsc4531g – Reach Stacker,
+Decreto 1443 de 2014.
+
+Evidencias de aprendizaje: No aplica
+Instrumentos de evaluación: No aplica
+
+Duración de la actividad: 4 horas.
+```
+
+#### Ejemplo 3 (procedimental · con evidencia · ámbito mixto)
+
+```
+5. Actividad procedimental: Inspeccionar área de operación del equipo
+apilador según procedimiento de la organización.
+
+Descripción de la actividad: Para el desarrollo de esta actividad, el
+instructor orientará sobre el procedimiento que se debe realizar para
+hacer alistamiento de área de operación, para lo cual abordará lo
+relacionado a concepto, características, plan de operaciones de ruta de
+traslado y técnicas de inspección de obstáculos; posteriormente, y una
+vez apropiados los conceptos, se realizará actividad práctica la cual
+consiste en: se conformarán equipos de 3 aprendices. Cada equipo deberá
+formular un plan para la inspección del área de operación, ya sea en una
+terminal portuaria, o en otro sector productivo donde opere el equipo
+apilador de contenedores. Los aprendices, con la orientación del
+instructor, propondrán un plan de trabajo que incluya las
+características requeridas por la organización para la operación del
+equipo apilador de contenedores, a través de una lista de chequeo. Se
+propone la creación de un plan de disposición del área de operación.
+Una vez elaborado el plan, se realizará práctica de campo en ambiente
+pluritecnológico, o terminal portuaria, y cada equipo deberá delimitar,
+organizar y preparar el área donde se realizará la operación de
+apilado. Esto incluye la delimitación de espacios, señalización,
+limpieza e iluminación del área, así como ubicación de objetos o
+elementos que obstaculicen la operación en las rutas de traslado, a fin
+de crear un entorno seguro y eficiente para la operación del equipo. La
+actividad finaliza con la aplicación de evidencia de desempeño y
+socialización de los aprendizajes logrados en desarrollo del proceso.
+
+Ambiente requerido: Ambiente pluritecnológico o simulado que cuente con
+equipo o simulador de apilado de contenedores y contenedores de 20 y 40
+pies. Ambiente convencional.
+
+Estrategias didácticas activas: Aprendizaje basado en proyectos
+
+Técnica didáctica: Práctica de campo
+
+Materiales de formación: Elementos de oficina, computadores, equipo
+apilador de contenedores y contenedores.
+
+Material de apoyo: Manual de Operación equipo srsc4531g – Reach Stacker
+
+Evidencias de aprendizaje:
+   Desempeño: Delimitar áreas de operación y rutas de traslado
+   Técnica de evaluación: Observación.
+   Instrumentos de evaluación No 3: Lista de Chequeo
+
+Duración de la actividad: 10 horas.
+```
+
+### Validation checks v3.0 (NEW · BLOQUEANTES)
+
+- **Check v3.0-A · estructura_seccion_3_3_bloques** · Sección 3 contiene exactamente 3 bloques en este orden: REFLEXIÓN+CONTEXTUALIZACIÓN, APROPIACIÓN, TRANSFERENCIA
+- **Check v3.0-B · header_rap_visible_por_bloque_apropiacion** · cada sub-bloque APROPIACIÓN tiene header `▶ RAP <N>: <enunciado>` ANTES de sus actividades · enunciado heredado de matriz v1.3 sin abreviar
+- **Check v3.0-C · formato_canon_sergio_actividad** · cada actividad rendereada cumple plantilla 9 campos (header + descripcion + ambiente + estrategias + técnica + materiales + material_apoyo + evidencias + duración)
+- **Check v3.0-D · cero_invencion_descripcion** · cada `Descripción de la actividad` proviene literal del campo `descripcion` de la Activity Card upstream · NO improvisada
+- **Check v3.0-E · 1_docx_unico** · output es 1 archivo `pm-3-6.docx` (no múltiples archivos por sub-RAP)
+
+### Anti-patrones v3.0 evitados
+
+- ❌ Activity Card anatomy 6-bloque (v2.7 schema fragmentado)
+- ❌ Múltiples docx (1 por sub-RAP)
+- ❌ Actividades antes de RAP header
+- ❌ RAP header abreviado (debe ser enunciado SOFÍA completo de matriz v1.3)
+- ❌ Inventar `Descripción de la actividad` (debe heredarse literal de AC.descripcion)
+- ❌ Bullets en lugar de plantilla canónica 9 campos
+
+### Cross-PM consistency
+
+PM-3.6 v3.0 honra el mismo formato canon Sergio que PM-2.11 v3.2 (C7+C10+C11), pero en **vista narrativa orientada al aprendiz** (PM-3.6) vs **vista tabular orientada al instructor** (PM-2.11). Misma fuente upstream (30 Activity Cards v3.0) · diferente render según destinatario.
+
+---
+
+*PM-3.6 v3.0 · GFPI-F-135 Learning Guide Generator · formato canon Sergio narrativo · 1 docx único · brújula del aprendiz · cross-program forever*
+*Sergio Cortés decisión 2026-05-02 PM · 3 ejemplos verbatim canon establecidos · cascade IMARPOR-V2 Phase 4 · cierre Step 1.6*
