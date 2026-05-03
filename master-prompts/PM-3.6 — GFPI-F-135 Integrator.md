@@ -10,7 +10,7 @@
 |-------|-------|
 | **Código** | PM-3.6 |
 | **Nombre** | GFPI-F-135 Learning Guide Generator · Heredero formato canon Sergio narrativo |
-| **Versión** | 3.2 |
+| **Versión** | 3.3 |
 | **Last Verified** | 2026-05-02 |
 | **Ubicación** | Fase 4 · post Playbook (PM-3.2 ×N sesiones) · post PM-2.11 v3.2 |
 | **Output** | **1 docx único** GFPI-F-135 (Guía de Aprendizaje del Aprendiz · brújula del estudiante · narrativa pedagógica) · 3 secciones canónicas SENA (1 Identificación + 2 Presentación bilingüe + 3 Formulación Actividades con numeración jerárquica 3.1 reflexión / 3.2 contextualización / 3.3 apropiación con sub-headers RAP / 3.4 transferencia del conocimiento) · numeración POR RAP reset en 3.3 · omisión Evidencias/Instrumentos en 3.1+3.2 · footer "GFPI-F-135 V04" · logo SENA central · tono SENA estandarizado |
@@ -1050,6 +1050,7 @@ NO agregar bloque en actividades de práctica, drills o reflexión sin evidencia
 | **v3.0** | **2026-05-02** | **⚠️ BREAKING · Formato canon Sergio narrativo (REEMPLAZA anatomy 6-bloque v2.7) · Sección 3 estructura 3 bloques (Reflexión+Contextualización + Apropiación×N RAPs + Transferencia) · 1 docx único · heredancia 1:1 30 Activity Cards v3.0 · REGLAS 28-35** |
 | **v3.1** | **2026-05-02** | **Sección 1 IDENTIFICACIÓN canon (logo SENA central + 8 campos heredados) + Sección 2 PRESENTACIÓN bilingüe (texto canon SENA personalizado por programa · ESP+EN paralelos · footer GFPI-F-135 V04) + bilingüismo escalonado por sección + tono minimalista accesible al aprendiz · REGLAS 36-39** |
 | **v3.2** | **2026-05-02** | **Sección 3 numeración jerárquica SENA (3.1 reflexión inicial · 3.2 contextualización + identificación conocimientos · 3.3 apropiación con headers RAP · 3.4 transferencia del conocimiento) + numeración POR RAP reset (1, 2, 3... cada RAP) + omisión Evidencias/Instrumentos en 3.1+3.2 + preguntas embebidas en Descripción + tono SENA estandarizado verbos canon · REGLAS 40-48** |
+| **v3.3** | **2026-05-02** | **Sección 4 PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE PARA LA EVALUACIÓN EN EL PROCESO FORMATIVO · tabla 6 columnas canon SENA · solo actividades 3.3 Apropiación (NO 3.1 · NO 3.2 · NO 3.4) · headers RAP separadores · numeración instrumentos ACUMULADA cross-RAP · criterios múltiples por actividad · criterios independientes de evidencia · heredancia desde AC.criterios_evaluacion[] · REGLAS 49-56 · cascade requiere AC v3.1 + PM-2.11 v3.3** |
 *Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV) · v3.0 paradigm shift narrativo Sergio 2026-05-02 · v3.1 Secciones 1+2 + bilingüismo Sergio 2026-05-02 PM · v3.2 Sección 3 jerárquica SENA Sergio 2026-05-02 PM (iteración con guía modelo Reach Stacker)*
 
 ---
@@ -1843,3 +1844,202 @@ Duración de la actividad: <N> horas.
 
 *PM-3.6 v3.2 · Sección 3 numeración jerárquica SENA + 9 reglas NEW (40-48) + 9 validation checks bloqueantes*
 *Sergio Cortés decisión 2026-05-02 PM (iteración con guía modelo Reach Stacker) · cross-program forever*
+
+---
+
+## EXTENSIÓN v3.3 — SECCIÓN 4 PLANTEAMIENTO DE EVIDENCIAS · TABLA 6 COLUMNAS CANON SENA (2026-05-02 PM)
+
+### Decisión canónica Sergio (verbatim · 4a iteración con guía modelo Reach Stacker)
+
+> Sergio aporta Sección 4 de la guía SENA modelo · estructura tabular 6 columnas mapeando cada actividad de Apropiación con sus evidencias · criterios SOFÍA · técnicas/instrumentos. Detecta que **CADA actividad necesita un campo `criterios_evaluacion[]`** (1-5 criterios verbal SOFÍA) · cascade impact: bump Activity Card schema v3.0 → v3.1 + PM-2.11 v3.3.
+
+### Estructura completa Sección 4 v3.3
+
+```
+4. PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE PARA LA EVALUACIÓN
+   EN EL PROCESO FORMATIVO
+
+[Tabla con 6 columnas obligatorias · una fila por cada actividad de
+3.3 Apropiación · headers RAP como separadores]
+
+| Fase del   | Actividad del | Actividad de  | Evidencias de | Criterios de | Técnicas e          |
+| proyecto   | proyecto      | Aprendizaje   | Aprendizaje   | Evaluación   | Instrumentos de     |
+| formativo  | formativo     |               |               |              | Evaluación          |
+|------------|---------------|---------------|---------------|--------------|---------------------|
+| No aplica  | No aplica     | RAP 1: <enunciado>                                                  |
+| No aplica  | No aplica     | 1. Actividad  | <evidencia o  | <criterio    | <técnica + No N>    |
+|            |               | <dim>:        |  No aplica>   |  o múltiples>|  o "No aplica"      |
+|            |               | <enunciado>   |               |              |                     |
+| ...        | ...           | 2. ...        | ...           | ...          | ...                 |
+| No aplica  | No aplica     | RAP 2: <enunciado>                                                  |
+| No aplica  | No aplica     | 1. ...        | ...           | ...          | ...                 |
+```
+
+### REGLA 49 — Sección 4 estructura tabular 6 columnas canon SENA
+
+Tabla obligatoria post-Sección 3. Headers exactos:
+
+1. **Fase del proyecto formativo** — "No aplica" si Curso Especial (no proyecto)
+2. **Actividad del proyecto formativo** — "No aplica" si idem
+3. **Actividad de Aprendizaje** — `<num>. Actividad <dim>: <enunciado>`
+4. **Evidencias de Aprendizaje** — `Evidencia de <tipo>: <nombre>` o "No aplica"
+5. **Criterios de Evaluación** — frase(s) verbal SOFÍA (1+ criterios) heredados de AC.criterios_evaluacion[]
+6. **Técnicas e Instrumentos de Evaluación** — `Técnica: <X>\nInstrumento de Evaluación No <N>: <tipo>` o "No aplica"
+
+### REGLA 50 — Filas Sección 4 = SOLO actividades de 3.3 Apropiación
+
+| Subsección Sección 3 | Aparece en Sección 4 tabla? |
+|---|---|
+| 3.1 Reflexión inicial | NO (omitida) |
+| 3.2 Contextualización | NO (omitida) |
+| 3.3 Apropiación (RAP 1-N) | **SÍ · todas las actividades** |
+| 3.4 Transferencia del Conocimiento | **NO** (decisión Sergio · aunque tenga evidencia formal) |
+
+**Razón canon:** Sección 4 mapea evidencias de la fase de Apropiación · 3.4 transferencia tiene su propia rúbrica ABP capstone (PM-3.5) · 3.1 y 3.2 no producen evidencia formal.
+
+### REGLA 51 — Headers RAP como separadores tipográficos entre filas
+
+Antes de las filas de cada RAP de 3.3, insertar header en una fila completa que ocupa toda la tabla:
+
+```
+| No aplica | No aplica | RAP 1: <enunciado SOFÍA completo>                  |
+```
+
+NO usar arrow Unicode · NO bullets · texto plano `RAP <N>: <enunciado>`. El enunciado es heredado literal de matriz v1.3.
+
+### REGLA 52 — Numeración instrumentos ACUMULADA cross-RAP
+
+Los instrumentos de evaluación se numeran de forma ACUMULADA a través de todos los RAPs (NO reset por RAP):
+
+| RAP | Actividades con evidencia formal | Instrumentos asignados |
+|---|---|---|
+| RAP 1 | Actividad 2, 3, 5, 6 (4 evidencias) | No 1, No 2, No 3, No 4 |
+| RAP 2 | Actividad 1, 4 (2 evidencias) | No 5, No 6 |
+| RAP 3 | Actividad 2 (1 evidencia) | No 7 |
+| RAP 4 | Actividad 1 (1 evidencia) | No 8 |
+| **TOTAL** | **8 evidencias** | **No 1 ... No 8 acumulado** |
+
+Contraste · IMPORTANTE:
+- **Actividades** en 3.3 → numeración POR RAP reset (1, 2, 3... cada RAP) · REGLA 44
+- **Instrumentos** en Sección 4 → numeración ACUMULADA cross-RAP (1, 2, ... 8) · REGLA 52
+
+### REGLA 53 — Criterios múltiples por actividad cuando corresponda
+
+Cuando una actividad tiene `criterios_evaluacion[]` con N>1 elementos, cada criterio va en línea separada dentro de la celda Col 5:
+
+**Ejemplo guía modelo Reach Stacker · RAP 2 actividad #4:**
+```
+| Actividad de Aprendizaje | Criterios de Evaluación |
+|--------------------------|--------------------------|
+| 4. Actividad procedimental: | Asegura el contenedor de acuerdo con manual de operación. |
+| Asegurar, levantar,         | Iza el contenedor de acuerdo con manual de operación... |
+| trasladar y posicionar...   | Traslada el contenedor de acuerdo con normas de seguridad... |
+|                             | Posiciona el contenedor de acuerdo con requerimiento... |
+```
+
+### REGLA 54 — Criterios independientes de evidencia formal
+
+Una actividad puede tener `criterios_evaluacion[]` aún cuando NO produce evidencia formal (`evidencias.aplica = false`). En ese caso:
+
+| Col 4 Evidencias | Col 5 Criterios | Col 6 Técnicas/Instrumentos |
+|---|---|---|
+| No aplica | (criterio o múltiples) | No aplica |
+
+**Ejemplo guía modelo · RAP 1 actividad #1 "Portar EPI":**
+- Col 4: No aplica
+- Col 5: "Utiliza los Elementos de Protección Individual de acuerdo con protocolos de Seguridad y Salud en el Trabajo."
+- Col 6: No aplica
+
+### REGLA 55 — Cell Col 6 formato corto "Técnica: X · Instrumento de Evaluación No N: tipo"
+
+Variante de Sección 3 (donde se usa "Técnica de evaluación:" texto completo). En Sección 4 tabla:
+
+```
+Técnica: <Formulación de preguntas | Verificación de producto | Observación>
+Instrumento de Evaluación No <N>: <Cuestionario | Lista de verificación | Lista de Chequeo>
+```
+
+Cuando NO aplica:
+```
+No aplica
+```
+(una sola línea · NO 3 líneas separadas como en Sección 3.4 con "No aplica")
+
+### REGLA 56 — Heredancia obligatoria desde Activity Card v3.1 .criterios_evaluacion[]
+
+Los criterios en Col 5 se heredan **literal 1:1** desde:
+
+```
+AC v3.1 .criterios_evaluacion[]
+     ↓ (cero invención · sin reformular)
+PM-2.11 v3.3 .criterios_por_actividad{numero_acumulado: [criterios]}
+     ↓
+PM-3.6 v3.3 .Sección 4 tabla Col 5 Criterios de Evaluación
+```
+
+**Implicación:** las 30 Activity Cards de IMARPOR-V2 deben tener `criterios_evaluacion[]` poblado. Esto es deuda explícita post-bump (regenerar las cards o agregar el campo).
+
+### Validation checks v3.3 (NEW · BLOQUEANTES)
+
+- **Check v3.3-A · seccion_4_tabla_6_cols** — Sección 4 contiene tabla con exactas 6 columnas en orden canon
+- **Check v3.3-B · solo_actividades_3_3** — filas de tabla son solo de 3.3 Apropiación (NO 3.1, 3.2, 3.4)
+- **Check v3.3-C · headers_rap_separadores** — `RAP <N>: <enunciado>` aparece como separador entre grupos de filas
+- **Check v3.3-D · numeracion_instrumentos_acumulada** — instrumentos numerados 1, 2, ... N acumulado cross-RAP (NO reset)
+- **Check v3.3-E · criterios_per_activity_heredados** — Col 5 Criterios proviene literal de AC.criterios_evaluacion[] (cero invención)
+- **Check v3.3-F · criterios_multiples_inline** — cuando AC.criterios_evaluacion[] tiene N>1, cada criterio en línea separada dentro de Col 5
+- **Check v3.3-G · criterios_independientes_evidencia** — actividades con `evidencias.aplica=false` aún muestran criterios en Col 5 si AC.criterios_evaluacion[] no vacío
+
+### Anti-patrones v3.3 evitados
+
+- ❌ Tabla Sección 4 con menos/más de 6 columnas (estructura canon SENA fija)
+- ❌ Incluir filas de 3.1, 3.2 o 3.4 en la tabla (decisión Sergio)
+- ❌ Numeración de instrumentos POR RAP reset (deben ser acumulados)
+- ❌ 1 fila por criterio en lugar de criterios múltiples en una sola celda
+- ❌ Inventar criterios (deben heredarse 1:1 de AC.criterios_evaluacion[])
+- ❌ Omitir criterios cuando NO hay evidencia formal (criterios independientes)
+- ❌ Bullets o emojis en headers RAP (texto plano canon)
+
+### Cascade impact (deuda explícita post-bump)
+
+| Componente | Acción | Estado |
+|---|---|---|
+| Activity Card schema v3.0 → v3.1 | Bump · NEW campo `criterios_evaluacion[]` | ✅ master prompt actualizado |
+| PM-2.11 v3.2 → v3.3 | Bump · NEW campo `criterios_por_actividad` | ✅ master prompt actualizado |
+| PM-3.6 v3.2 → v3.3 | Bump · NEW Sección 4 + 8 reglas | ✅ master prompt actualizado |
+| 30 Activity Cards IMARPOR-V2 | Regenerar con `criterios_evaluacion[]` | ⚠️ pending dispatch Agent |
+| pm-2-11.json + xlsx IMARPOR-V2 | Re-render post-regeneración cards | ⚠️ pending |
+| DM v3.11 → v3.12 | Status footnote cascade 4-bumps | ⚠️ pending |
+
+### Resumen estructura final docx GFPI-F-135 v3.3
+
+```
+[Encabezado: logo SENA central + título institucional]
+
+1. IDENTIFICACIÓN DE LA GUÍA DE APRENDIZAJE
+   (8 campos heredados · solo ESP)
+
+2. PRESENTACIÓN
+   (bilingüe ESP+EN paralelos · personalizada por programa)
+
+3. FORMULACIÓN DE LAS ACTIVIDADES DE APRENDIZAJE
+   3.1 Actividades de reflexión inicial
+   3.2 Actividades de contextualización...
+   3.3 Actividades de apropiación
+       RAP 1: <enunciado>
+         1. Actividad ... · 2. Actividad ... · ...
+       RAP 2: <enunciado>
+         1. ...
+       ...
+   3.4 Actividades de Transferencia del Conocimiento
+
+4. PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE PARA LA EVALUACIÓN
+   EN EL PROCESO FORMATIVO
+   (tabla 6 columnas · solo actividades 3.3 · headers RAP separadores)
+
+[Footer todas páginas: "GFPI-F-135 V04"]
+```
+
+---
+
+*PM-3.6 v3.3 · Sección 4 PLANTEAMIENTO DE EVIDENCIAS canon SENA · tabla 6 columnas + 8 reglas NEW (49-56) + 7 validation checks bloqueantes*
+*Sergio Cortés decisión 2026-05-02 PM (4a iteración con guía modelo Reach Stacker) · cascade impact AC v3.1 + PM-2.11 v3.3 · cross-program forever*

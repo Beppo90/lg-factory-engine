@@ -5,10 +5,19 @@ phase: 2
 session: null
 fase_sena: Post-diseño
 type: assembler
-version: 3.2
+version: 3.3
 created: 2026-04-13
 last_verified: 2026-05-02
-status: v3.2 FORMATO CANON SERGIO · C7+C10+C11 estructurados según ejemplos canónicos GFPI-F-134 V04 SENA + agrupación tripartita 6 filas (v3.1) · honra heredancia cascade Phase 1+2 v3.x COMPLETA · xlsx oficial con 6 filas pobladas formato canon Sergio · cross-program canon
+status: v3.3 CRITERIOS_POR_ACTIVIDAD HEREDADOS · NEW campo `criterios_por_actividad{numero_acumulado: [criterios]}` heredado 1:1 de Activity Card v3.1 .criterios_evaluacion[] · alimenta PM-3.6 v3.3 Sección 4 tabla 6 cols (Col 5 Criterios de Evaluación) · v3.2 formato canon Sergio C7+C10+C11 PRESERVADO · v3.1 agrupación tripartita 6 filas PRESERVADA · cascade impact: requiere regeneración 30 AC IMARPOR-V2 con criterios_evaluacion[]
+v3_3_changes:
+  - "NEW campo `criterios_por_actividad` dict {numero_acumulado: [criterios]} heredado 1:1 de Activity Card v3.1 .criterios_evaluacion[]"
+  - "NEW REGLA cero invención · criterios literal de cada AC.criterios_evaluacion[]"
+  - "NEW REGLA APERTURA cards (3.1+3.2) → criterios_evaluacion[] vacío permitido · OMITIDOS de criterios_por_actividad output"
+  - "NEW REGLA APROPIACIÓN cards (3.3) → criterios_evaluacion[] obligatorio 1+ · INCLUIDOS en criterios_por_actividad"
+  - "NEW REGLA TRANSFERENCIA cards (3.4) → criterios_evaluacion[] obligatorio 1+ · INCLUIDOS en criterios_por_actividad (aunque PM-3.6 v3.3 NO los renderice en Sección 4 tabla)"
+  - "Heredancia downstream: criterios_por_actividad → consumido por PM-3.6 v3.3 Sección 4"
+  - "Decisión Sergio canon 2026-05-02 PM (iteración guía modelo Reach Stacker)"
+  - "v3.2 formato canon C7+C10+C11 PRESERVADO · v3.1 agrupación tripartita PRESERVADA"
 v3_2_changes:
   - "NEW REGLA formato canon C7 ACTIVIDADES: '<numero>. Actividad <dimension>:\\n<enunciado verbo+objeto+condición>'"
   - "NEW REGLA formato canon C10 EVIDENCIAS: 3 líneas estructuradas por evidencia ([Actividad N · codigo_canon] / Evidencia de <tipo>: <nombre> / Técnica de evaluación: <técnica> / Instrumento de evaluación No <N>: <tipo instrumento>)"

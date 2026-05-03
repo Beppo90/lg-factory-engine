@@ -1,10 +1,19 @@
 ---
 type: data-contract
-version: 3.0
+version: 3.1
 created: 2026-04-13
 last_verified: 2026-05-02
 last_updated: 2026-05-02
 status: active
+v3_1_changes:
+  - "NEW campo OBLIGATORIO `criterios_evaluacion[]` (array de strings · 1-5 criterios SOFÍA verbal por activity card)"
+  - "NEW REGLA criterio independiente de evidencia: actividad puede tener criterios_evaluacion[] aún cuando evidencias.aplica=false"
+  - "NEW REGLA verbo del criterio acorde a dimensión: cognitiva → verbos cognitivos (Identifica · Reconoce · Diferencia · Relaciona); procedimental → verbos procedimentales (Utiliza · Asegura · Iza · Traslada · Posiciona · Activa · Inspecciona · Documenta); actitudinal → verbos actitudinales"
+  - "NEW REGLA criterios múltiples cuando actividad compleja (ej: 'Asegurar/levantar/trasladar/posicionar contenedor' → 4 criterios separados)"
+  - "NEW REGLA cardinalidad: APERTURA → criterios_evaluacion=[] vacío permitido · APROPIACIÓN → 1+ obligatorio · TRANSFERENCIA → 1+ obligatorio"
+  - "NEW heredancia downstream: criterios_evaluacion[] → PM-2.11 v3.3 (criterios_por_actividad) → PM-3.6 v3.3 (Sección 4 tabla Col 5)"
+  - "Decisión Sergio canon 2026-05-02 PM (iteración guía modelo Reach Stacker · Sección 4 PLANTEAMIENTO DE EVIDENCIAS)"
+  - "Cascade impact: bump PM-2.11 v3.3 + PM-3.6 v3.3 · regenerar 30 Activity Cards IMARPOR-V2 con criterios"
 v3_0_changes:
   - "NEW dimension enum {cognitiva · procedimental · actitudinal} · UNA dimensión por activity card (canon Sergio 2026-05-02)"
   - "NEW activities[].descripcion multi-párrafo 200-600 palabras · panorama→orientación→equipos→práctica→cierre (canon Sergio 3 ejemplos guía SENA real)"
@@ -1422,3 +1431,148 @@ Antes de emitir Activity Card v3.0:
 **Caso de origen:** Sergio Cortés Perdomo dictó schema canon con 3 ejemplos literal de guía aprendizaje SENA modelo (códigos portuarios + riesgos SST + inspección apilador) · alineado con cascade Phase 1 v3.x post-IMARPOR-V2
 **Próximo dispatch:** Step 1.5.PILOT PM-2.3 IMARPOR-V2 (primera Activity Card v3.0 en run real)
 **Versiones legacy preserved:** v2.0 (Fase 2 GFPI-F-134 feed) · v2.6.3 (Fase 4 Learner-Facing) · v2.7 (Fase 4 Learner-Readable 6 bloques)
+
+---
+
+## 12. Activity Card v3.1 — NEW campo `criterios_evaluacion[]` (canon Sergio 2026-05-02 PM)
+
+### 12.1 Decisión canónica Sergio
+
+> Sergio Cortés Perdomo iteró 2026-05-02 PM con guía SENA modelo (Reach Stacker · Sección 4 PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE). Detectó que cada actividad en la tabla Sección 4 tiene una **columna de Criterios de Evaluación** independiente con frase verbal SOFÍA específica · NO heredada del agregado SOFÍA general. Necesario campo `criterios_evaluacion[]` por activity card.
+
+### 12.2 Campo NEW en schema v3.1
+
+```json
+{
+  ...
+  "criterios_evaluacion": [
+    "Utiliza los Elementos de Protección Individual de acuerdo con protocolos de Seguridad y Salud en el Trabajo."
+  ],
+  ...
+}
+```
+
+**Tipo:** `array of strings` (1 a ~5 criterios verbal SOFÍA por activity card).
+
+### 12.3 Reglas obligatorias
+
+**REGLA 12.3.A — Cardinalidad por tipo_bloque:**
+
+| tipo_bloque | criterios_evaluacion[] |
+|---|---|
+| APERTURA (3.1 reflexión + 3.2 contextualización) | `[]` vacío PERMITIDO (omitidos en Sección 4 GFPI-F-135) |
+| APROPIACION (3.3) | **1+ criterio OBLIGATORIO** (cada actividad debe ser observable) |
+| TRANSFERENCIA (3.4) | **1+ criterio OBLIGATORIO** (aunque NO aparezca en Sección 4 tabla · sí en rúbrica ABP) |
+
+**REGLA 12.3.B — Verbo del criterio acorde a dimensión:**
+
+| dimension | Verbos canon SOFÍA permitidos |
+|---|---|
+| cognitiva | Identifica · Reconoce · Diferencia · Relaciona · Conoce · Comprende · Interpreta |
+| procedimental | Utiliza · Asegura · Iza · Traslada · Posiciona · Activa · Inspecciona · Documenta · Aplica · Ejecuta · Realiza |
+| actitudinal | Asume · Demuestra · Adopta · Manifiesta · Asegura (compromiso) · Practica |
+
+**REGLA 12.3.C — Criterios múltiples cuando actividad compleja:**
+
+Si el `enunciado` de la actividad incluye múltiples acciones procedimentales (ej: "Asegurar, levantar, trasladar y posicionar contenedor"), generar **un criterio separado por cada acción**:
+
+```json
+{
+  "enunciado": "Asegurar, levantar, trasladar y posicionar el contenedor de acuerdo con manual de operación",
+  "dimension": "procedimental",
+  "criterios_evaluacion": [
+    "Asegura el contenedor de acuerdo con manual de operación.",
+    "Iza el contenedor de acuerdo con manual de operación y procedimiento de la organización.",
+    "Traslada el contenedor de acuerdo con normas de seguridad y salud en el trabajo, de tránsito y manual de operación.",
+    "Posiciona el contenedor de acuerdo con requerimiento de la organización y manual de operación."
+  ]
+}
+```
+
+**REGLA 12.3.D — Criterio independiente de evidencia formal:**
+
+Una actividad puede tener `criterios_evaluacion[]` aún cuando `evidencias.aplica = false` (NO produce evidencia formal evaluada). Ejemplo guía modelo Reach Stacker:
+
+```json
+{
+  "numero_actividad": 1,
+  "dimension": "procedimental",
+  "enunciado": "Portar los elementos de protección Individual de acuerdo con protocolos de seguridad y salud en el trabajo.",
+  "evidencias": {"aplica": false},
+  "criterios_evaluacion": [
+    "Utiliza los Elementos de Protección Individual de acuerdo con protocolos de Seguridad y Salud en el Trabajo."
+  ]
+}
+```
+
+**REGLA 12.3.E — Heredancia desde matriz canon:**
+
+Los `criterios_evaluacion[]` deben derivar de los criterios SOFÍA de la matriz v1.3 (`pm-0-0-matriz-alineada.json.raps[N].criterios_evaluacion`) + criterios canon C01-C08 cuando aplique. NO inventar criterios fuera de la matriz upstream.
+
+### 12.4 Heredancia downstream (cascade impact)
+
+```
+AC v3.1 .criterios_evaluacion[]
+     ↓
+PM-2.11 v3.3 .criterios_por_actividad{numero_acumulado: [criterios]}
+     ↓
+PM-3.6 v3.3 .Sección 4 tabla 6 cols · Columna 5 "Criterios de Evaluación"
+```
+
+### 12.5 Ejemplos verbatim guía SENA modelo (Reach Stacker · Sección 4)
+
+**Ejemplo 1 · cognitiva CON evidencia:**
+```
+"numero_actividad": 2,
+"dimension": "cognitiva",
+"enunciado": "Identificar los componentes, características, instrumentos y controles del equipo apilador de contenedores de acuerdo con manual del fabricante",
+"evidencias": {"aplica": true, "tipo": "Conocimiento", "nombre": "Inspección y preparación equipo apilador", ...},
+"criterios_evaluacion": [
+  "Identifica componentes, características, instrumentos y controles del equipo apilador de contenedores de acuerdo con manual del fabricante."
+]
+```
+
+**Ejemplo 2 · procedimental CON evidencia múltiple:**
+```
+"numero_actividad": 4,
+"dimension": "procedimental",
+"enunciado": "Asegurar, levantar, trasladar y posicionar el contenedor de acuerdo con manual de operación",
+"evidencias": {"aplica": true, "tipo": "Desempeño", "nombre": "Operación del equipo apilador", ...},
+"criterios_evaluacion": [
+  "Asegura el contenedor de acuerdo con manual de operación.",
+  "Iza el contenedor de acuerdo con manual de operación y procedimiento de la organización.",
+  "Traslada el contenedor de acuerdo con normas de seguridad y salud en el trabajo, de tránsito y manual de operación.",
+  "Posiciona el contenedor de acuerdo con requerimiento de la organización y manual de operación."
+]
+```
+
+**Ejemplo 3 · procedimental SIN evidencia (No aplica):**
+```
+"numero_actividad": 1,
+"dimension": "procedimental",
+"enunciado": "Portar los elementos de protección Individual de acuerdo con protocolos de seguridad y salud en el trabajo.",
+"evidencias": {"aplica": false},
+"criterios_evaluacion": [
+  "Utiliza los Elementos de Protección Individual de acuerdo con protocolos de Seguridad y Salud en el Trabajo."
+]
+```
+
+### 12.6 Validation checks v3.1 (NEW · BLOQUEANTES)
+
+- **Check v3.1-AC-A · campo_obligatorio_criterios** — campo `criterios_evaluacion` presente (puede ser `[]` vacío en APERTURA · debe ser ≥1 en APROPIACIÓN/TRANSFERENCIA)
+- **Check v3.1-AC-B · verbo_acorde_dimension** — verbos canon SOFÍA según dimensión (cognitiva → cognitivo · procedimental → procedimental · actitudinal → actitudinal)
+- **Check v3.1-AC-C · criterio_anclado_matriz** — criterios derivan de matriz v1.3 SOFÍA + canon C01-C08 (NO inventados)
+- **Check v3.1-AC-D · criterios_multiples_si_enunciado_complejo** — si enunciado incluye múltiples acciones procedimentales, criterios_evaluacion[] tiene 1 entrada por acción
+
+### 12.7 Cascade impact (deuda explícita)
+
+- **Bump PM-2.11 v3.2 → v3.3** · agregar campo `criterios_por_actividad` dict
+- **Bump PM-3.6 v3.2 → v3.3** · Sección 4 tabla consume criterios per-activity
+- **Regenerar 30 Activity Cards IMARPOR-V2** v3.0 → v3.1 con `criterios_evaluacion[]` derivados de matriz v1.3
+- **Re-render `pm-2-11.json` + `pm-2-11-GFPI-F-134-V04.xlsx`** post-regeneración
+
+---
+
+**Versión v3.1:** A partir del 2026-05-02 PM
+**Caso de origen:** Sergio iteró Sección 4 GFPI-F-135 con guía modelo Reach Stacker · detectó necesidad campo `criterios_evaluacion[]` per-activity para alimentar tabla Sección 4
+**Próximo dispatch:** regeneración 30 Activity Cards IMARPOR-V2 con criterios + cascade re-run pm-2-11 + xlsx
