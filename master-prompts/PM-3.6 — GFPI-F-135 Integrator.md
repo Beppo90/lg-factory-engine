@@ -10,7 +10,7 @@
 |-------|-------|
 | **Código** | PM-3.6 |
 | **Nombre** | GFPI-F-135 Learning Guide Generator · Heredero formato canon Sergio narrativo |
-| **Versión** | 3.3 |
+| **Versión** | 3.4 |
 | **Last Verified** | 2026-05-02 |
 | **Ubicación** | Fase 4 · post Playbook (PM-3.2 ×N sesiones) · post PM-2.11 v3.2 |
 | **Output** | **1 docx único** GFPI-F-135 (Guía de Aprendizaje del Aprendiz · brújula del estudiante · narrativa pedagógica) · 3 secciones canónicas SENA (1 Identificación + 2 Presentación bilingüe + 3 Formulación Actividades con numeración jerárquica 3.1 reflexión / 3.2 contextualización / 3.3 apropiación con sub-headers RAP / 3.4 transferencia del conocimiento) · numeración POR RAP reset en 3.3 · omisión Evidencias/Instrumentos en 3.1+3.2 · footer "GFPI-F-135 V04" · logo SENA central · tono SENA estandarizado |
@@ -1051,6 +1051,7 @@ NO agregar bloque en actividades de práctica, drills o reflexión sin evidencia
 | **v3.1** | **2026-05-02** | **Sección 1 IDENTIFICACIÓN canon (logo SENA central + 8 campos heredados) + Sección 2 PRESENTACIÓN bilingüe (texto canon SENA personalizado por programa · ESP+EN paralelos · footer GFPI-F-135 V04) + bilingüismo escalonado por sección + tono minimalista accesible al aprendiz · REGLAS 36-39** |
 | **v3.2** | **2026-05-02** | **Sección 3 numeración jerárquica SENA (3.1 reflexión inicial · 3.2 contextualización + identificación conocimientos · 3.3 apropiación con headers RAP · 3.4 transferencia del conocimiento) + numeración POR RAP reset (1, 2, 3... cada RAP) + omisión Evidencias/Instrumentos en 3.1+3.2 + preguntas embebidas en Descripción + tono SENA estandarizado verbos canon · REGLAS 40-48** |
 | **v3.3** | **2026-05-02** | **Sección 4 PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE PARA LA EVALUACIÓN EN EL PROCESO FORMATIVO · tabla 6 columnas canon SENA · solo actividades 3.3 Apropiación (NO 3.1 · NO 3.2 · NO 3.4) · headers RAP separadores · numeración instrumentos ACUMULADA cross-RAP · criterios múltiples por actividad · criterios independientes de evidencia · heredancia desde AC.criterios_evaluacion[] · REGLAS 49-56 · cascade requiere AC v3.1 + PM-2.11 v3.3** |
+| **v3.4** | **2026-05-02** | **Check NEW dimension_consistency_seccion_3_vs_4 + REGLA 57 evidencias formales target 2-3 por RAP (NO todas las 30 cards · selectivo · criterios_evaluacion[] sigue obligatorio independiente) + REGLA 58 Sección 5 GLOSARIO bilingüe extenso (4 fields por entrada: EN word/phrase/chunk + EN definition + EN ejemplo contextualizado + ES translation · sin límite arbitrario · vocabulario técnico programa) · REGLAS 57-58** |
 *Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV) · v3.0 paradigm shift narrativo Sergio 2026-05-02 · v3.1 Secciones 1+2 + bilingüismo Sergio 2026-05-02 PM · v3.2 Sección 3 jerárquica SENA Sergio 2026-05-02 PM (iteración con guía modelo Reach Stacker)*
 
 ---
@@ -2043,3 +2044,208 @@ PM-3.6 v3.3 .Sección 4 tabla Col 5 Criterios de Evaluación
 
 *PM-3.6 v3.3 · Sección 4 PLANTEAMIENTO DE EVIDENCIAS canon SENA · tabla 6 columnas + 8 reglas NEW (49-56) + 7 validation checks bloqueantes*
 *Sergio Cortés decisión 2026-05-02 PM (4a iteración con guía modelo Reach Stacker) · cascade impact AC v3.1 + PM-2.11 v3.3 · cross-program forever*
+
+---
+
+## EXTENSIÓN v3.4 — REGLA EVIDENCIAS SELECTIVAS + SECCIÓN 5 GLOSARIO BILINGÜE EXTENSO + CHECK CONSISTENCY (2026-05-02 PM)
+
+### Decisión canónica Sergio (verbatim · 5a iteración)
+
+> "No todas las 30 actividades necesariamente deben contener evidencias de evaluación formales. Calificar 30 actividades es muy desgastante! Yo digo que unas 3 por cada RAP estaría bien. Total 12 actividades con sus respectivas evidencias de aprendizaje formales."
+>
+> "En el glosario: debes ser lo más extenso posible, incluir todo lo que considere necesario incluir. Palabras, frases, chunks. Palabra en inglés, definición en inglés. Un ejemplo contextualizado del uso de ese término o frase y finalmente el equivalente en español."
+>
+> Validation check `dimension_consistency_seccion_3_vs_4` confirmado.
+
+### REGLA 57 — Evidencias formales SELECTIVAS · target 2-3 por RAP (8-12 total)
+
+**Distinción crítica entre dos conceptos:**
+
+| Concepto | Cardinalidad | Cuándo |
+|---|---|---|
+| **`criterios_evaluacion[]`** (qué se mide) | **OBLIGATORIO 1+ en TODAS las cards de Apropiación** | Siempre presente (REGLA 54 v3.3 · cómo se observa el aprendizaje) |
+| **`evidencias.aplica = true`** (evaluación formal con instrumento) | **SELECTIVO · 2-3 por RAP · 8-12 total** | Solo en actividades-anchor (anchor activity ESP) · NO en cada actividad |
+
+**Regla operacional (cascade impact):**
+
+| RAP | Evidencias formales target | Tipo predominante |
+|---|---|---|
+| RAP 1 | 2-4 (densidad inicial) | Cuestionario + Lista verificación + Lista chequeo (mix tipos) |
+| RAP 2 | 2-3 | mix |
+| RAP 3 | 1-2 | Lista chequeo + producto |
+| RAP 4 | 1-2 | Producto + desempeño final |
+| **TOTAL** | **8-12 evidencias formales** | NO 30 evidencias |
+
+**Razón pedagógica Sergio:** "calificar 30 actividades es muy desgastante" · evidencias formales son anchor del proceso, no fricción constante para el instructor. Las demás actividades tienen criterio observable pero NO instrumento formal.
+
+**Anti-patrón evitado:**
+- ❌ Marcar `evidencias.aplica = true` en TODAS las 30 cards (sobrecarga al instructor)
+- ❌ Eliminar `criterios_evaluacion[]` de las cards sin evidencia formal (confunde · criterios siguen siendo obligatorios)
+- ✅ Selectivo: solo cards-anchor llevan instrumento formal · todas llevan criterio observable
+
+**Validación cascade IMARPOR-V2 (Phase 2 ya cerrado):**
+- Estado actual: 9 evidencias formales distribuidas asimétricamente (B0=1 · B1=2 · B2=3 · B3=1 · B4=1 · BT=1)
+- Target Sergio: 8-12 → ✅ DENTRO del target (9 evidencias)
+- NO requiere ajuste retroactivo del cascade · cumple regla v3.4
+
+### REGLA 58 — Sección 5 GLOSARIO bilingüe extenso (canon Sergio)
+
+**Plantilla obligatoria por entrada · 4 fields:**
+
+```
+<English term · word | phrase | chunk>
+   English definition: <definición técnica clara en inglés>
+   Example in context: <oración o párrafo corto mostrando uso real
+   en el sector del programa · narrativa contextualizada>
+   Equivalente en español: <traducción · puede incluir nota de uso
+   o variante regional cuando aplique>
+```
+
+**Reglas de composición:**
+
+1. **Entradas amplias** (NO solo single words): incluir `phrases` (verb phrases · noun phrases) y `chunks` (collocations típicas del sector)
+2. **Sin límite arbitrario** ("lo más extenso posible") · objetivo: cobertura completa del vocabulario técnico del programa
+3. **Definición en inglés** (NO traducción literal · definición técnica)
+4. **Ejemplo contextualizado** del sector específico (NO ejemplos genéricos · debe usar el universo del programa: marítimo · portuario · cold chain · motor diesel · etc.)
+5. **Equivalente en español** al final (cierra el bilingüismo)
+6. **Orden:** alfabético por English term (default) · ALTERNATIVA: agrupado por RAP / categoría temática si justifica pedagógicamente
+
+**Fuentes upstream para el glosario (heredancia 1:1 · cero invención):**
+
+| Fuente | Aporta |
+|---|---|
+| `pm-1-2.json.sub_bloques_tripartitos[].key_vocabulary_per_rap[]` | ~20 términos canon por RAP × 4 RAPs = 80 términos base |
+| `pm-1-2.json.sub_bloques_tripartitos[B0].vocabulario_diagnostico[]` | ~15 términos baseline diagnostic |
+| Activity Cards `descripcion`, `enunciado` y `material_apoyo` | Términos técnicos embedded en narrativa pedagógica |
+| `pm-0-context.json.programa_metadata.sector_economico` | Términos del sector que aún no estén explícitos |
+
+**Cobertura objetivo IMARPOR-V2** (estimación):
+- Vocabulario canon: 4 RAPs × 20 términos = 80 entries
+- Vocabulario diagnostic B0: 15 entries
+- Vocabulario embebido en cards: ~40-60 entries adicionales
+- **TOTAL estimado: 130-150 entradas en el glosario**
+
+### Ejemplo de entrada glosario IMARPOR-V2 (formato canon)
+
+```
+Reefer container
+   English definition: Refrigerated shipping container designed to maintain
+   a controlled temperature for perishable cargo such as bananas,
+   pharmaceuticals, or frozen goods.
+   Example in context: "The MV CARIBBEAN STAR is loaded with 80 reefer
+   containers carrying bananas at 13.3°C bound for the European market."
+   Equivalente en español: Contenedor refrigerado · contenedor reefer
+   (uso técnico también acepta el anglicismo "reefer" en español).
+```
+
+```
+SMCP (Standard Marine Communication Phrases)
+   English definition: Standardized vocabulary and phrases adopted by the
+   International Maritime Organization (IMO) to ensure unambiguous
+   communication between ships, ports, and authorities, especially in
+   safety-critical situations.
+   Example in context: "Captain Lim used SMCP message markers like
+   'INSTRUCTION:' and 'WARNING:' during the VHF exchange with the pilot
+   approaching Puerto Antioquia."
+   Equivalente en español: Frases Estandarizadas de Comunicación Marítima
+   (FECM) · adoptadas por la Organización Marítima Internacional (OMI).
+```
+
+```
+To berth (verb phrase)
+   English definition: To bring a ship alongside a wharf, pier, or other
+   mooring structure for loading, unloading, or other operations.
+   Example in context: "The pilot guided the vessel to berth 14 at the
+   Puerto Antioquia banana terminal at 04:30 local time."
+   Equivalente en español: Atracar el buque · amarrar el buque al muelle.
+```
+
+### Estructura completa Sección 5 v3.4
+
+```
+5. GLOSARIO BILINGÜE / BILINGUAL GLOSSARY
+
+[Introducción breve sobre el propósito del glosario · ESP+EN paralelos]
+
+[Entradas ordenadas alfabéticamente por English term · típico 80-150
+entradas según programa · cada entrada con 4 fields canon]
+
+A
+  <Entry 1>
+  <Entry 2>
+  ...
+
+B
+  <Entry N>
+  ...
+
+...
+
+Z
+  <Entry M>
+```
+
+### REGLA 59 — Check NEW dimension_consistency_seccion_3_vs_4 (validación cross-secciones)
+
+Validation check NEW que detecta inconsistencias de dimensión entre Sección 3 y Sección 4:
+
+```
+Para cada actividad de 3.3 Apropiación:
+   - Capturar dimension declarada en Sección 3 ("1. Actividad <dim>:")
+   - Capturar dimension declarada en Sección 4 tabla Col 3 ("N. Actividad <dim>:")
+   - VERIFY: dimension(S3) === dimension(S4)
+   - Si NO match: FAIL · reportar inconsistencia (ej: "Reach Stacker activity #3 RAP 1 · S3=cognitiva · S4=procedimental · MISMATCH")
+```
+
+**Razón:** la guía modelo Reach Stacker tenía esta inconsistencia (actividad #3 RAP 1 "Reconocer códigos" · S3=cognitiva · S4=procedimental). Es un error humano fácil de cometer · check automatizado lo previene en futuros runs.
+
+### Validation checks v3.4 (NEW · BLOQUEANTES)
+
+- **Check v3.4-A · evidencias_formales_target_2_3_por_rap** — count(`evidencias.aplica=true`) por RAP esté entre 2-4 · total 8-12
+- **Check v3.4-B · criterios_evaluacion_independiente_evidencia** — TODAS las cards de Apropiación tienen `criterios_evaluacion[]` ≥1 · INDEPENDIENTE de `evidencias.aplica` (REGLA 54 PRESERVADA · v3.3)
+- **Check v3.4-C · seccion_5_glosario_present** — Sección 5 GLOSARIO BILINGÜE presente · ≥50 entradas (mínimo razonable · target 80-150)
+- **Check v3.4-D · glosario_4_fields_por_entrada** — cada entrada tiene 4 campos: English term + English definition + Example in context + Equivalente en español
+- **Check v3.4-E · glosario_ejemplos_contextualizados** — Example in context usa universo del programa (NO genérico)
+- **Check v3.4-F · dimension_consistency_seccion_3_vs_4** (REGLA 59) — dimension declarada en S3 === dimension declarada en S4 para cada actividad de 3.3
+
+### Anti-patrones v3.4 evitados
+
+- ❌ 30 evidencias formales (sobrecarga instructor · contradice canon Sergio)
+- ❌ Eliminar `criterios_evaluacion[]` de cards sin evidencia formal (confunde · criterios siguen siendo obligatorios)
+- ❌ Glosario corto (≤30 entradas) · "lo más extenso posible" canon Sergio
+- ❌ Glosario solo single words (debe incluir phrases + chunks)
+- ❌ Definición traducida literal en lugar de definición técnica en inglés
+- ❌ Ejemplos genéricos en lugar de contextualizados al sector del programa
+- ❌ Inconsistencia silenciosa de dimensión entre Sección 3 y Sección 4 (debe detectarse)
+
+### Cascade impact v3.4 (deuda explícita actualizada)
+
+| Componente | Acción | Estado |
+|---|---|---|
+| Activity Card schema v3.1 | Sin bump (campo criterios_evaluacion[] ya v3.1) | ✅ |
+| PM-2.11 v3.3 | Sin bump (criterios_por_actividad ya v3.3) | ✅ |
+| PM-3.6 v3.3 → v3.4 | Bump · 3 reglas NEW (57-59) + 6 validation checks NEW | ✅ master prompt actualizado |
+| 30 Activity Cards IMARPOR-V2 | Regenerar TODAS con `criterios_evaluacion[]` · NO modificar `evidencias.aplica` (cascade actual ya cumple target 8-12) | ⚠️ pending dispatch Agent |
+| pm-2-11.json + xlsx IMARPOR-V2 | Re-render post-regeneración cards (criterios visibles en Col 5 Sección 4) | ⚠️ pending |
+| Sección 5 GLOSARIO IMARPOR-V2 | Construir desde upstream key_vocabulary_per_rap + vocabulario_diagnostico + términos embedded · ~80-150 entradas · 4 fields cada una | ⚠️ pending dispatch Agent |
+| DM v3.12 → v3.13 | Status footnote v3.4 cross-bump | ⚠️ pending |
+
+### Resumen estructura final docx GFPI-F-135 v3.4
+
+```
+[Encabezado: logo SENA central + título institucional]
+
+1. IDENTIFICACIÓN DE LA GUÍA DE APRENDIZAJE          (8 campos · ESP)
+2. PRESENTACIÓN                                       (bilingüe ESP+EN)
+3. FORMULACIÓN DE LAS ACTIVIDADES DE APRENDIZAJE     (jerárquico 3.1+3.2+3.3+3.4)
+4. PLANTEAMIENTO DE EVIDENCIAS DE APRENDIZAJE PARA   (tabla 6 cols · evidencias formales selectivas 8-12)
+   LA EVALUACIÓN EN EL PROCESO FORMATIVO
+5. GLOSARIO BILINGÜE / BILINGUAL GLOSSARY            (NEW v3.4 · 80-150 entradas · 4 fields)
+
+[Footer todas páginas: "GFPI-F-135 V04"]
+```
+
+---
+
+*PM-3.6 v3.4 · Evidencias selectivas 2-3 por RAP + Sección 5 GLOSARIO bilingüe extenso + Check dimension consistency*
+*Sergio Cortés decisión 2026-05-02 PM (5a iteración con guía modelo Reach Stacker · refinamiento pedagógico) · 3 reglas NEW (57-59) + 6 validation checks bloqueantes · cross-program forever*
