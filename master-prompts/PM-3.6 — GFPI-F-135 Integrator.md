@@ -10,10 +10,10 @@
 |-------|-------|
 | **Código** | PM-3.6 |
 | **Nombre** | GFPI-F-135 Learning Guide Generator · Heredero formato canon Sergio narrativo |
-| **Versión** | 3.0 |
+| **Versión** | 3.1 |
 | **Last Verified** | 2026-05-02 |
 | **Ubicación** | Fase 4 · post Playbook (PM-3.2 ×N sesiones) · post PM-2.11 v3.2 |
-| **Output** | **1 docx único** GFPI-F-135 (Guía de Aprendizaje del Aprendiz · brújula del estudiante · narrativa pedagógica) · Sección 3 estructurada en 3 bloques (Reflexión+Contextualización + Apropiación×N RAPs + Transferencia) |
+| **Output** | **1 docx único** GFPI-F-135 (Guía de Aprendizaje del Aprendiz · brújula del estudiante · narrativa pedagógica) · 3 secciones canónicas (1 Identificación + 2 Presentación bilingüe + 3 Actividades en 3 bloques tripartitos) · footer "GFPI-F-135 V04" visible · logo SENA central en Sección 1 · tono minimalista accesible |
 | **Rol en el sistema** | Materializa el contenido pedagógico canon (matriz v1.3 + 30 Activity Cards v3.0) en formato narrativo orientado al aprendiz · "traduce todo el trabajo técnico de la planeación pedagógica en una ruta clara, paso a paso, para el aprendiz" (Sergio canon) |
 | **Phase** | 4 |
 | **Depends On** | [PM-2.11 v3.2 (gfpi_f134_v04_rows[]), 30 Activity Cards v3.0 (PM-2.1...PM-3.5+PM-4.2), PM-1.2 v4.2 (sub_bloques_tripartitos), PM-0.0 (matriz alineada · enunciados RAPs SOFÍA)] |
@@ -1048,7 +1048,8 @@ NO agregar bloque en actividades de práctica, drills o reflexión sin evidencia
 | **v2.6.6** | **2026-04-21** | **Paleta SENA institucional (verde #39A900 + azul oscuro #0B2E45) · REGLA 21** |
 | **v2.7** | **2026-04-30** | **Learner-Readable Activity · Anatomía 6-bloque · 17 campos schema v2.7 · 5 obsoletos PROHIBIDOS · supresión pipeline metadata · REGLAS 22-27 · v2.6.3 deprecated** |
 | **v3.0** | **2026-05-02** | **⚠️ BREAKING · Formato canon Sergio narrativo (REEMPLAZA anatomy 6-bloque v2.7) · Sección 3 estructura 3 bloques (Reflexión+Contextualización + Apropiación×N RAPs + Transferencia) · 1 docx único · heredancia 1:1 30 Activity Cards v3.0 · REGLAS 28-35** |
-*Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV) · v3.0 paradigm shift narrativo Sergio 2026-05-02*
+| **v3.1** | **2026-05-02** | **Sección 1 IDENTIFICACIÓN canon (logo SENA central + 8 campos heredados) + Sección 2 PRESENTACIÓN bilingüe (texto canon SENA personalizado por programa · ESP+EN paralelos · footer GFPI-F-135 V04) + bilingüismo escalonado por sección + tono minimalista accesible al aprendiz · REGLAS 36-39** |
+*Instructor Sergio Cortés Perdomo · Marzo 2026 · v2.6 promovido 2026-04-20 (MGV) · v3.0 paradigm shift narrativo Sergio 2026-05-02 · v3.1 Secciones 1+2 + bilingüismo Sergio 2026-05-02 PM*
 
 ---
 
@@ -1332,3 +1333,185 @@ PM-3.6 v3.0 honra el mismo formato canon Sergio que PM-2.11 v3.2 (C7+C10+C11), p
 
 *PM-3.6 v3.0 · GFPI-F-135 Learning Guide Generator · formato canon Sergio narrativo · 1 docx único · brújula del aprendiz · cross-program forever*
 *Sergio Cortés decisión 2026-05-02 PM · 3 ejemplos verbatim canon establecidos · cascade IMARPOR-V2 Phase 4 · cierre Step 1.6*
+
+---
+
+## EXTENSIÓN v3.1 — SECCIONES 1 + 2 + BILINGÜISMO ESCALONADO + TONO MINIMALISTA (2026-05-02 PM)
+
+### Decisión canónica Sergio (verbatim · 2026-05-02 PM)
+
+> "Necesito profundizar en los detalles del pm-3-6 porque lo necesito muy simple, minimalista, muy accesible y accesible y fácil de entender para el aprendiz. La Guía es bilingüe desde la parte 2 (presentación) y 3 (actividades de aprendizaje)."
+
+### Estructura completa del docx GFPI-F-135 v3.1
+
+```
+ENCABEZADO (logo SENA central + título institucional)
+"PROCESO DE GESTIÓN DE FORMACIÓN PROFESIONAL INTEGRAL
+GUÍA DE APRENDIZAJE"
+
+SECCIÓN 1 — IDENTIFICACIÓN DE LA GUÍA DE APRENDIZAJE
+   (solo español · datos estructurales heredados del cascade)
+
+SECCIÓN 2 — PRESENTACIÓN
+   (bilingüe ESP + EN paralelos · texto canon SENA personalizado por programa)
+
+SECCIÓN 3 — ACTIVIDADES DE APRENDIZAJE
+   (bilingüe escalonado por bloque · ver REGLA 38)
+   ├─ Bloque 1: Reflexión Inicial + Contextualización (B0)
+   ├─ Bloque 2: Apropiación (▶ RAP 1 · ▶ RAP 2 · ▶ RAP N)
+   └─ Bloque 3: Transferencia / Misión Final (BT)
+
+FOOTER (todas las páginas): "GFPI-F-135 V04"
+```
+
+### REGLA 36 — SECCIÓN 1 IDENTIFICACIÓN (canon SENA · solo español · logo central)
+
+**Logo SENA central** en encabezado de Sección 1 (institucional · NO opcional).
+
+**Plantilla obligatoria** (8 campos heredados del cascade · SOLO ESPAÑOL):
+
+```
+1. IDENTIFICACIÓN DE LA GUÍA DE APRENDIZAJE
+
+- Denominación del Programa de Formación: <heredado de pm-0-context.programa_metadata.denominacion>
+- Código del Programa de Formación: <heredado de pm-0-context.programa_metadata.codigo>
+- Nombre del Proyecto Formativo (si aplica): <pm-1-1 o "No aplica">
+- Fase del Proyecto (si aplica): <pm-1-1 o "No aplica">
+- Actividad de Proyecto Formativo (si aplica): <pm-1-1 o "No aplica">
+- Competencia: <heredado de pm-2-11.gfpi_f134_v04_rows[0].C1_competencia · texto literal SOFÍA>
+- Resultados de Aprendizaje:
+  - RAP 1: <enunciado SOFÍA matriz v1.3 raps[0].enunciado_rap>
+  - RAP 2: <enunciado SOFÍA matriz v1.3 raps[1].enunciado_rap>
+  - ... (uno por RAP del programa · típicamente 4 en programas tripartitos)
+- Duración de la Guía de Aprendizaje: <heredado de pm-1-1.duracion_total_horas> horas
+```
+
+**Reglas Sección 1:**
+- Solo español (datos estructurales SOFÍA · NO requieren traducción)
+- "No aplica" cuando el campo no aplique al tipo de programa (Curso Especial / Curso Complementario)
+- Enunciados RAP completos (NO abreviados) · texto literal SOFÍA
+- Logo SENA central en parte superior
+
+### REGLA 37 — SECCIÓN 2 PRESENTACIÓN (bilingüe · personalizada por programa)
+
+**Estructura canon · ESP + EN paralelos:**
+
+```
+2. PRESENTACIÓN
+
+[ESP]
+Estimado Aprendiz, bienvenido a esta formación SENA en <nombre programa>,
+que busca incentivar su interés por nuevos conocimientos y para alcanzar
+o mejorar tanto sus habilidades y destrezas demostradas como aquellas
+que pueden ser adquiridas.
+
+En desarrollo de la formación se presentan dos momentos en las
+actividades de aprendizaje: el trabajo directo y el trabajo independiente
+considerado como autoaprendizaje, desde el cual se ofrece material
+organizado, para que de la misma manera, sus actividades de aprendizaje
+y sus evidencias entregadas, sean sistemáticas, ordenadas y metódicas.
+Se sugiere para que organice su tiempo de manera que pueda revisar,
+explorar y apropiar tanto los accesos al material de apoyo, como los
+documentos descritos en la bibliografía. Por este motivo, se invita
+para que realice un aprendizaje colaborativo y al final pueda
+evidenciarse el crecimiento integral del grupo.
+
+Para lograr un aprendizaje significativo, puede acceder a la bibliografía
+referenciada para su consulta o profundización de los temas y se le
+sugiere el uso de acceso al integrador de recursos de información del
+SENA, dentro del portal del Sistema de Bibliotecas SENA
+https://biblioteca.sena.edu.co.
+
+Bienvenidos.
+
+[EN — Adaptado al sector específico del programa]
+Dear Learner, welcome to this SENA training program in <programa adaptado al sector>,
+which aims to spark your interest in new knowledge and help you reach or
+improve both your demonstrated skills and abilities and those you can
+still acquire.
+
+[Traducción adaptada al sector mantiene la intención pedagógica del SENA
+y al mismo tiempo refleja el universo del programa específico — sector
+marítimo/portuario, motor diesel, banana cold chain, etc.]
+
+Welcome aboard.
+```
+
+**Reglas Sección 2:**
+- **Personalizada por programa**: el nombre del programa + sector se inserta en ambos idiomas (NO texto genérico)
+- **Traducción al inglés adaptada al sector específico** (NO literal palabra por palabra · debe reflejar el universo del programa: marítimo, portuario, agrícola, etc.)
+- Bienvenida + estructura formación (trabajo directo + autónomo) + invitación biblioteca SENA
+- Footer "GFPI-F-135 V04" visible en pie de página
+
+### REGLA 38 — BILINGÜISMO ESCALONADO POR SECCIÓN
+
+| Sección | Bilingüismo | Lengua principal | Notas |
+|---|---|---|---|
+| Sección 1 IDENTIFICACIÓN | NO | ESP | Datos estructurales SOFÍA · NO requieren traducción |
+| Sección 2 PRESENTACIÓN | SÍ paralelo | ESP + EN | Texto canon SENA personalizado por programa · adaptado al sector |
+| Sección 3 BLOQUE 1 (Reflexión + Contextualización) | SÍ | ESP principal · input EN | Activación afectiva · scaffolds en ESP · pueden incluir input en inglés (videos, conceptos disparadores) |
+| Sección 3 BLOQUE 2 (Apropiación · 4 RAPs) | SÍ | EN principal · scaffolds ESP | El contenido de aprendizaje **se enseña en EN** (es el objeto de la formación) · scaffolds + instrucciones críticas en ESP cuando ayudan |
+| Sección 3 BLOQUE 3 (Transferencia / Misión) | SÍ | EN producto · ESP reflexión | Resultado en EN (Mission integradora) con reflexión final del aprendiz en ESP |
+| Footer / Encabezado | NO | ESP | Institucional SENA |
+
+**Razón pedagógica:** programas de bilingüismo SENA enseñan inglés EN inglés (immersive · ESP solo cuando ayuda). La sección 1 es administrativa (no pedagógica). La sección 2 es bienvenida (alta visibilidad · merece traducción paralela completa). La sección 3 escala el inglés según el momento didáctico (input → producción → transferencia).
+
+### REGLA 39 — TONO "MINIMALISTA ACCESIBLE" PARA EL APRENDIZ
+
+**Sergio canon (2026-05-02 PM):** "muy simple, minimalista, muy accesible y accesible y fácil de entender para el aprendiz".
+
+**Reglas operacionales:**
+
+1. **2ª persona "usted"** (formal SENA · NO "tú" informal)
+2. **NO jerga pedagógica innecesaria** — términos como "scaffold", "overlap", "anclaje matriz", "tripartito", "consciousness-raising" → traducir a lenguaje del aprendiz
+3. **NO términos sistémicos** — no mencionar "PM-2.x", "Activity Card", "cascade", "schema", "validation_check", "metadata", "pm-1-2 sub_bloques_tripartitos" — todo eso es interno · invisible al aprendiz
+4. **NO menciones a metadata pipeline** — el aprendiz NO necesita saber el codigo_canon Eévid (E1-E6) ni el numero de activity card cross-RA · solo lo que él hará
+5. **Frases cortas + voz activa** — "Usted leerá el documento X" mejor que "El aprendiz procederá a la lectura del documento X"
+6. **Estructura visual clara** — espacios en blanco · headers visibles · listas cuando hay pasos secuenciales · NO bloques densos de párrafo
+7. **Vocabulario del programa** — usar términos del sector (marítimo, portuario, motor, etc.) · NO vocabulario técnico-pedagógico
+8. **Eliminar redundancias** — si la actividad es "Identificar X según Y" no añadir "El propósito de esta actividad es identificar X..."
+
+**Anti-patrones tono v3.1:**
+- ❌ "Esta actividad es antecedente de la actividad N+1 mediante reciclaje circular de input"
+- ❌ "Las estrategias didácticas activas se materializan en técnicas didácticas tipo simulación"
+- ❌ "El criterio canon C04 se evidenciará vía instrumento No 4 escala estimación"
+- ✅ "Usted participará en una simulación VHF con sus compañeros · al final entregará el guión escrito · su instructor evaluará con la lista de chequeo"
+
+### Validation checks v3.1 (NEW · BLOQUEANTES)
+
+- **Check v3.1-A · seccion_1_identificacion_completa** — 8 campos heredados presentes · "No aplica" cuando corresponda
+- **Check v3.1-B · seccion_2_presentacion_bilingue** — texto ESP + EN ambos presentes · personalizado con nombre programa · sector reflejado en traducción
+- **Check v3.1-C · footer_gfpi_f135_v04** — pie de página visible "GFPI-F-135 V04"
+- **Check v3.1-D · logo_sena_central** — Sección 1 incluye logo institucional SENA central
+- **Check v3.1-E · bilinguismo_escalonado** — bilingüismo aplicado según REGLA 38 (Sección 3 escala EN → producción → transferencia)
+- **Check v3.1-F · tono_minimalista_aprendiz** — NO jerga pedagógica · NO términos sistémicos · 2ª persona "usted" · vocabulario del sector
+
+### Anti-patrones v3.1 evitados
+
+- ❌ Sección 1 con campos faltantes ("Proyecto Formativo: -" en lugar de "No aplica")
+- ❌ Sección 2 solo en español (rompe naturaleza bilingüe del programa)
+- ❌ Sección 2 con texto genérico (no menciona el nombre del programa)
+- ❌ Traducción literal palabra-por-palabra (NO refleja sector)
+- ❌ Sección 3 toda en español (rompe inmersión inglesa)
+- ❌ Sección 3 toda en inglés sin scaffold (rompe accesibilidad A1.x)
+- ❌ Footer ausente o versión incorrecta (debe ser GFPI-F-135 V04)
+- ❌ Logo SENA ausente en Sección 1
+- ❌ Tono académico-pedagógico que aleja al aprendiz
+
+### Cross-cascade · datos requeridos para Secciones 1+2
+
+| Campo Sección 1+2 | Fuente cascade | Status IMARPOR-V2 |
+|---|---|---|
+| Denominación Programa | pm-0-context.programa_metadata.denominacion | ✅ disponible |
+| Código Programa | pm-0-context.programa_metadata.codigo (verificar campo) | ⚠️ verificar existencia campo |
+| Proyecto Formativo / Fase / Actividad | pm-1-1.json (asimetría tipo programa) | ✅ "No aplica" si Curso Especial |
+| Competencia | pm-2-11.gfpi_f134_v04_rows[0].C1_competencia | ✅ disponible |
+| RAPs (4 enunciados) | matriz v1.3.raps[].enunciado_rap | ✅ disponible |
+| Duración total | pm-1-1.duracion_total_horas | ✅ disponible |
+| Nombre programa para Presentación | pm-0-context.programa_metadata.denominacion | ✅ |
+| Sector para traducción adaptada | pm-0-context.programa_metadata.sector_economico | ✅ disponible |
+
+---
+
+*PM-3.6 v3.1 · Secciones 1+2 canon SENA + bilingüismo escalonado + tono minimalista accesible al aprendiz*
+*Sergio Cortés decisión 2026-05-02 PM · 4 reglas NEW (36-39) + 6 validation checks bloqueantes · cross-program forever*
