@@ -179,9 +179,20 @@ function checkEnumTipoPrograma() {
     return;
   }
 
+  // pm-0-context.schema.json v3.4 refactoró program_scope → programa (top-level)
+  // mantenemos múltiples paths candidatos para que el check sobreviva refactors futuros
   const targets = [
-    { schemaPath: 'v4/schemas/pm-0-context.schema.json', enumPath: ['properties', 'program_scope', 'properties', 'tipo', 'enum'] },
-    { schemaPath: 'v4/schemas/pm-1-1-input.schema.json', enumPath: ['properties', 'tipo', 'enum'] },
+    {
+      schemaPath: 'v4/schemas/pm-0-context.schema.json',
+      enumPaths: [
+        ['properties', 'programa', 'properties', 'tipo', 'enum'],         // v3.4+
+        ['properties', 'program_scope', 'properties', 'tipo', 'enum'],   // legacy v4.0 spike
+      ],
+    },
+    {
+      schemaPath: 'v4/schemas/pm-1-1-input.schema.json',
+      enumPaths: [['properties', 'tipo', 'enum']],
+    },
   ];
 
   for (const t of targets) {
@@ -193,13 +204,24 @@ function checkEnumTipoPrograma() {
       record('MENOR', 'enum-tipo_programa', `${t.schemaPath}: no existe o no parseable`);
       continue;
     }
-    let cursor = schema;
-    for (const k of t.enumPath) {
-      cursor = cursor?.[k];
-      if (cursor === undefined) break;
+    // Probar paths candidatos · primer match gana
+    let cursor;
+    let matchedPath;
+    for (const candidatePath of t.enumPaths) {
+      let walker = schema;
+      let ok = true;
+      for (const k of candidatePath) {
+        walker = walker?.[k];
+        if (walker === undefined) { ok = false; break; }
+      }
+      if (ok && Array.isArray(walker)) {
+        cursor = walker;
+        matchedPath = candidatePath.join('.');
+        break;
+      }
     }
     if (!Array.isArray(cursor)) {
-      record('SIGNIFICATIVO', 'enum-tipo_programa', `${t.schemaPath}: ${t.enumPath.join('.')} no encontrado o no es array`);
+      record('SIGNIFICATIVO', 'enum-tipo_programa', `${t.schemaPath}: ningún path candidato encontró tipo enum (probados: ${t.enumPaths.map(p => p.join('.')).join(' · ')})`);
       continue;
     }
     const missing = canonValues.filter((v) => !cursor.includes(v));
@@ -207,7 +229,7 @@ function checkEnumTipoPrograma() {
       record(
         'CRITICAL',
         'enum-tipo_programa',
-        `${t.schemaPath}: faltan valores [${missing.join(', ')}] vs canon registry.yaml. (D-001 abierto)`
+        `${t.schemaPath} (${matchedPath}): faltan valores [${missing.join(', ')}] vs canon registry.yaml. (D-001 reabierto)`
       );
     }
   }
@@ -232,8 +254,15 @@ function checkEnumReglaBloques() {
   }
   const canonValues = Object.keys(valuesNode);
 
+  // pm-0-context.schema.json v3.4 refactoró program_scope → programa
   const targets = [
-    { schemaPath: 'v4/schemas/pm-0-context.schema.json', enumPath: ['properties', 'program_scope', 'properties', 'regla_bloques', 'enum'] },
+    {
+      schemaPath: 'v4/schemas/pm-0-context.schema.json',
+      enumPaths: [
+        ['properties', 'programa', 'properties', 'regla_bloques', 'enum'],         // v3.4+
+        ['properties', 'program_scope', 'properties', 'regla_bloques', 'enum'],   // legacy
+      ],
+    },
   ];
 
   for (const t of targets) {
@@ -245,22 +274,32 @@ function checkEnumReglaBloques() {
       record('MENOR', 'enum-regla_bloques', `${t.schemaPath}: no existe o no parseable`);
       continue;
     }
-    let cursor = schema;
-    for (const k of t.enumPath) {
-      cursor = cursor?.[k];
-      if (cursor === undefined) break;
+    let cursor;
+    let matchedPath;
+    for (const candidatePath of t.enumPaths) {
+      let walker = schema;
+      let ok = true;
+      for (const k of candidatePath) {
+        walker = walker?.[k];
+        if (walker === undefined) { ok = false; break; }
+      }
+      if (ok && Array.isArray(walker)) {
+        cursor = walker;
+        matchedPath = candidatePath.join('.');
+        break;
+      }
     }
     if (!Array.isArray(cursor)) {
-      record('SIGNIFICATIVO', 'enum-regla_bloques', `${t.schemaPath}: ${t.enumPath.join('.')} no encontrado o no es array`);
+      record('SIGNIFICATIVO', 'enum-regla_bloques', `${t.schemaPath}: ningún path candidato encontró regla_bloques enum`);
       continue;
     }
     const missing = canonValues.filter((v) => !cursor.includes(v));
     const extra = cursor.filter((v) => !canonValues.includes(v));
     if (missing.length > 0) {
-      record('CRITICAL', 'enum-regla_bloques', `${t.schemaPath}: faltan [${missing.join(', ')}] vs canon registry. (D-002 reabierto)`);
+      record('CRITICAL', 'enum-regla_bloques', `${t.schemaPath} (${matchedPath}): faltan [${missing.join(', ')}] vs canon registry. (D-002 reabierto)`);
     }
     if (extra.length > 0) {
-      record('CRITICAL', 'enum-regla_bloques', `${t.schemaPath}: valores stale [${extra.join(', ')}] no canon v2.7.1. (D-002 reabierto)`);
+      record('CRITICAL', 'enum-regla_bloques', `${t.schemaPath} (${matchedPath}): valores stale [${extra.join(', ')}] no canon v2.7.1. (D-002 reabierto)`);
     }
   }
 }
