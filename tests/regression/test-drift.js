@@ -96,20 +96,30 @@ function parseFrontmatterVersion(mdPath) {
   } catch {
     return null;
   }
+  // 4 formatos canon soportados (verificado 2026-05-05 · convergencia con
+  // master_prompt_loader.py · captura semver MAJOR.MINOR[.PATCH])
+  const semver = '([0-9]+\\.[0-9]+(?:\\.[0-9]+)?)';
+
   // Formato 1: YAML frontmatter delimitado al inicio (--- ... ---)
   const yamlFrontmatter = text.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (yamlFrontmatter) {
-    const m = yamlFrontmatter[1].match(/^version:\s*["']?([^"'\n]+?)["']?\s*$/m);
+    const m = yamlFrontmatter[1].match(new RegExp(`^version:\\s*["']?${semver}["']?\\s*$`, 'm'));
     if (m) return m[1].trim();
   }
-  // Formato 2: bloque yaml embedded ```yaml ... ``` (PM-4.1 style)
-  // Escaneamos todos los bloques ```yaml y buscamos el primero con `version:`
+  // Formato 2: bloque yaml embedded ```yaml ... ``` (PM-4.1)
   const yamlBlockRe = /```yaml\r?\n([\s\S]*?)\r?\n```/g;
   let block;
   while ((block = yamlBlockRe.exec(text)) !== null) {
-    const m = block[1].match(/^version:\s*["']?([^"'\n]+?)["']?\s*$/m);
+    const m = block[1].match(new RegExp(`^version:\\s*["']?${semver}["']?\\s*$`, 'm'));
     if (m) return m[1].trim();
   }
+  // Formato 3: Markdown bold `**Versión:** X.Y[.Z]` (PM-0)
+  const boldMatch = text.match(new RegExp(`\\*\\*Versión:\\*\\*\\s*${semver}`));
+  if (boldMatch) return boldMatch[1].trim();
+  // Formato 4: Markdown table row `| **Versión** | X.Y[.Z] |` (PM-0.0)
+  const tableMatch = text.match(new RegExp(`\\|\\s*\\*\\*Versión\\*\\*\\s*\\|\\s*${semver}\\s*\\|`));
+  if (tableMatch) return tableMatch[1].trim();
+
   return null;
 }
 
