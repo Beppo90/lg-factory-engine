@@ -1,0 +1,13 @@
+{
+  "name": "fpi-sena-factory-tests-regression",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pilar 4 — Test-as-Documentation regression suite. Hito 1: piloto DIESEL pm-2-3 vs v4 schema.",
+  "scripts": {
+    "test:canon": "node test-canon.js"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}
