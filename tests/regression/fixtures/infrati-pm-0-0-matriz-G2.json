@@ -1,0 +1,1319 @@
+{
+  "schema_version": "v2.0",
+  "pm_id": "PM-0.0",
+  "pm_name": "Matriz Pedagógica Alineadora",
+  "pm_version": "2.0",
+  "run_id": "INFRATI-2026-05-04",
+  "guide_id": "G2",
+  "generated_date": "2026-05-04",
+  "instructor": "Sergio Cortés Perdomo",
+  "phase": 0,
+  "tipo_artefacto": "matriz_pedagogica_alineada_pre_pm0",
+  "_v2_fusion_bidireccional_applied": true,
+  "_v2_multi_competencias_applied": true,
+  "_input_ref": "pm-0-0-input-G2.json (schema NEW v2.0 multi-comp · 2 competencias técnicas anclaje 220501086+220501103 · foco G2 procedimientos paso-a-paso · presentaciones · interacciones laborales formales)",
+  "_canon_authority": "Sergio Cortés Perdomo · arquitecto/instructor FPI SENA Bilingüismo · segundo run multi-comp INFRATI bajo PM-0.0 v2.0 canon · cubre deuda explícita G1 (procedimientos paso-a-paso + presentaciones técnicas + interacciones laborales formales)",
+  "_paradigm_note": "Programa Tecnólogo IMPLEMENTACIÓN INFRAESTRUCTURA TIC (código 228116) · 384h totales · 3 guías · Guía 2 = 128h · 17 sesiones · CEFR A1.2 · Distribución Opción B canon: G1=RA6+RA3 (A1.1 receptivo+descriptivo) · G2=RA2+RA4 (A1.2 productivo procedural+interactivo) · G3=RA1+RA5 (A1.3 avanzado reflexivo). Schema multi-comp NEW v2.0 aplicado: 2 competencias técnicas (220501086 ESTABLECER REQUISITOS INFRA + 220501103 IMPLEMENTAR RED FÍSICA DATOS) anclan saberes/procesos/criterios inglés A1.2. Anclaje natural A1.2: procedimientos paso-a-paso · descripciones extendidas · interacciones laborales formales · cortesía con visitantes · contextos cotidianos del oficio. Resto (marco legal · normativa estándares ISO/IEC/IEEE/ANSI · subredes · estadísticas · administración personal · CCTV detallado) → deuda explícita G3 (A1.3).",
+  "programa_metadata": {
+    "denominacion": "IMPLEMENTACIÓN DE INFRAESTRUCTURA DE TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES",
+    "tipo": "Tecnólogo",
+    "programa_codigo_sofia": "228116",
+    "programa_id": "3410833",
+    "duracion_total_horas": 128,
+    "duracion_programa_completo": 384,
+    "horas_directas": 102,
+    "horas_independientes": 26,
+    "numero_sesiones": 17,
+    "numero_sesiones_competencia_total": 51,
+    "rango_cefr": "A1.2",
+    "progresion_cefr_decision": "Opción B — refuerzo (A1.1 G1 · A1.2 G2 · A1.3 G3) · canon PM-0.0 v2.0",
+    "guide_id": "G2",
+    "guide_total": 3,
+    "horas_por_guide": 128,
+    "split_strategy": "A · equilibrado · Opción B canon distribución por complejidad pedagógica · G1 = RA6 (COMPRENDER receptivo) + RA3 (EXPLICAR descriptivo) · G2 = RA2 (PRESENTAR procedural) + RA4 (INTERCAMBIAR interactivo) · G3 = RA1 + RA5 (avanzado reflexivo)",
+    "sector": "TICs (Tecnologías de la Información y las Comunicaciones)",
+    "ambiente_productivo": "UraNet · escenario expandido G2 hacia presentaciones técnicas a clientes · capacitaciones internas · reuniones de planeación · negociación con proveedores extranjeros · informes ejecutivos bilingües · llamadas y emails de cooperación · congresos del sector TIC colombiano · oficina técnica + data center cliente + visitas a obra + sala de capacitación + interacción con colegas de otros centros de formación",
+    "_resumen_ejecutivo": "Programa Tecnólogo INFRATI · Guía 2 (128h) · 17 sesiones · CEFR A1.2 · 2 RAPs pedagógicamente diferenciados por verbo cognitivo Bloom L3 (PRESENTAR procedural · INTERCAMBIAR interactivo) · ANCLADOS a 2 competencias técnicas (220501086 ESTABLECER REQUISITOS INFRA + 220501103 IMPLEMENTAR RED FÍSICA DATOS). FUSIÓN BIDIRECCIONAL ESP v2.0 MULTI-COMP: 37 saberes conceptos + 18 saberes proceso + 9 criterios SOFÍA · cada uno contextualizado a procesos técnicos reales TIC G2 (presentar proceso de instalación paso-a-paso al cliente · dar instrucciones técnicas con must/should/adverbios manera · presentar análisis de cotizaciones con comparativos · elaborar documentación técnica con conectores secuencia · narrar imprevistos de obra con pasado simple/continuo · negociar con proveedor extranjero con modales would/could de cortesía · participar en llamada telefónica con cliente PYME · intercambiar emails de cooperación con colega · ofrecer razonamientos sobre decisiones técnicas)."
+  },
+  "competencia": "240202501 · INTERACTUAR EN LENGUA INGLESA DE FORMA ORAL Y ESCRITA DENTRO DE CONTEXTOS SOCIALES Y LABORALES SEGÚN LOS CRITERIOS ESTABLECIDOS POR EL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+  "contenido_tecnico_crudo": {
+    "_doc": "Schema NEW v2.0 multi-competencias · 2 competencias técnicas actúan como anclaje fusión bidireccional ESP A1.2 · foco G2: procedimientos paso-a-paso · presentaciones técnicas · interacciones laborales formales · cooperación bilingüe · cubre deuda explícita G1",
+    "competencias": [
+      {
+        "codigo": "220501086",
+        "nombre": "ESTABLECER REQUISITOS DE INFRAESTRUCTURA TECNOLÓGICA DE ACUERDO CON PROCEDIMIENTOS Y ESTÁNDARES TÉCNICOS",
+        "raps_tecnicos_count": 4,
+        "procesos_tecnicos_foco_g2_count": 10,
+        "saberes_tecnicos_foco_g2_count": 10,
+        "criterios_tecnicos_foco_g2_count": 6
+      },
+      {
+        "codigo": "220501103",
+        "nombre": "IMPLEMENTAR LA RED FÍSICA DE DATOS SEGÚN DISEÑO Y ESTÁNDARES TÉCNICOS",
+        "raps_tecnicos_count": 4,
+        "procesos_tecnicos_foco_g2_count": 17,
+        "saberes_tecnicos_foco_g2_count": 11,
+        "criterios_tecnicos_foco_g2_count": 7
+      }
+    ],
+    "_total_cross_comp": {
+      "raps_tecnicos": 8,
+      "procesos_tecnicos_foco_g2": 27,
+      "saberes_tecnicos_foco_g2": 21,
+      "criterios_tecnicos_foco_g2": 13
+    }
+  },
+  "raps_count": 2,
+  "raps": [
+    {
+      "rap_id": "RA2",
+      "rap_codigo_sofia": "240202501-RA2",
+      "rap_titulo": "PRESENTAR UN PROCESO PARA LA REALIZACIÓN DE UNA ACTIVIDAD EN SU QUEHACER LABORAL DE ACUERDO CON LOS PROCEDIMIENTOS ESTABLECIDOS DESDE SU PROGRAMA DE FORMACIÓN",
+      "verbo_cognitivo": "PRESENTAR",
+      "bloom_level": "L3 (Aplicar)",
+      "cefr_target": "A1.2",
+      "dominio_canonico": "Productivo procedural extendido (Speaking + Writing) APLICADO a procesos técnicos TIC de presentación paso-a-paso: presentar planeación de proyecto al cliente PYME · dar instrucciones técnicas al equipo · presentar proceso de instalación de cableado estructurado paso-a-paso · presentar análisis de cotizaciones · presentar cuadros comparativos de proveedores · presentar resultados de pruebas de conectividad · redactar informes semanales de obra · elaborar documentación técnica de implementación · presentar portafolio de servicios · exponer en capacitación interna o congreso TIC · presentar certificación de red al cliente",
+      "_anclaje_tecnico_rap": {
+        "procesos_tecnicos_anclados": [
+          {
+            "proceso": "Establecer especificaciones del mercado (presentar tendencias y herramientas a equipo y cliente)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Realizar documentación técnica de adquisición (redactar y presentar)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Evaluar propuestas técnicas suministradas por proveedores (presentar análisis)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Aplicar la gestión documental (proceso paso-a-paso)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Realizar costos del proyecto de infraestructura (calcular y presentar)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Diseñar portafolios de servicios (preparar presentación a cliente)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Verificar actividades asignadas en el proyecto (intercambiar reporte semanal)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Atención al cliente: aplicar protocolos en presentación y negociación",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Procedimientos administrativos de adquisición (proceso paso-a-paso)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Interpretar planos arquitectónicos y diseño de la red de datos (presentar interpretación · explicar pasos)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Identificar la solución planteada para sistema de cableado estructurado (presentar al cliente)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Aplicar normas de referencia en fases del proyecto (proceso paso-a-paso)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Utilizar equipos de medición (procedimiento)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Manipular herramientas · conectores y equipos de redes (paso-a-paso)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Aplicar estándares internacionales de redes de datos (presentar conformidad)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Instalar sistemas de cableado estructurado (proceso secuencial)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Instalar dispositivos de tecnología TI (paso-a-paso)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Comprobar el estado del cableado estructurado (procedimiento de pruebas)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Realizar pruebas de conectividad (paso-a-paso)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Realizar mantenimiento preventivo (proceso planeado)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Verificar conectividad de la red inalámbrica (proceso de pruebas)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Certificar la red de datos (presentar certificación)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Elaborar documentación técnica de implementación (informe presentar)",
+            "competencia": [
+              "220501103"
+            ]
+          }
+        ],
+        "saberes_tecnicos_anclados": [
+          {
+            "saber": "Procedimientos administrativos de adquisición: principios · procedimientos logísticos · protocolos de verificación",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Plan de contingencia: concepto · activación · roles",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Pruebas de funcionamiento: técnicas y procedimientos paso-a-paso",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Garantías: características · tipos · utilidad · riesgos · presentación a cliente",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Cotizaciones técnicas: definición · características · tipos · análisis · presentación",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Cuadros comparativos: tipos · usos · elaboración · presentación",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Fichas técnicas: características · elaboración · usos · presentación",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Procedimiento de instalación de medios de transmisión (FO · par trenzado · coaxial): paso-a-paso",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Sistema numérico y de medidas: conversiones internacionales (presentar cálculos)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Dibujo técnico: simbología · planos · vistas · interpretación paso-a-paso",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Software de planos y diagramas: operación · paquetes (proceso de uso)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Buenas prácticas en manipulación · instalación y procesos en redes",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Funcionalidad de terminales de servicio (telefonía IP · CCTV · servidores · access point · DVR · NVR · telemandos)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Tipos de cable y conectores (FO · drop · par trenzado · coaxial · multipar): comparación · selección",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Herramientas: stripper · crimpadora 110 · crimpadora RJ45 CAT6 · tijeras kevlar · uso paso-a-paso",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Cableado redes de datos: criterios técnicos de instalación · data center",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Sistema de alimentación por IP (PoE) · iluminación PoE · telemandos: configuración",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Materiales y herramientas: tipos · características · selección",
+            "competencia": [
+              "220501103"
+            ]
+          }
+        ]
+      },
+      "saberes_conceptos_y_principios": [
+        {
+          "saber": "Futuro con will (predicciones · decisiones espontáneas) · APLICADO al PRESENTAR planeación de proyecto al cliente PYME UraNet (the team will install 50 ports · we will finish on Friday · the cable will run through the duct · we will deliver the report next week) base de PRESENTAR EL PROCESO DE INSTALACIÓN DE CABLEADO ESTRUCTURADO paso-a-paso",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Verbos modales should (recomendaciones · sugerencias) · APLICADO al PRESENTAR recomendaciones técnicas al cliente y al equipo (you should use CAT6 cable for this distance · the technician should test continuity before sealing · we should document each step of the procedure) base de DAR INSTRUCCIONES de un proceso técnico TIC paso-a-paso",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Verbos modales must (obligación técnica · necesidad) · APLICADO al PRESENTAR normas técnicas obligatorias en proceso de instalación (you must wear safety equipment · the cable must comply with TIA standards · the rack must be grounded · the connector must be tested) base de APLICAR NORMAS DE REFERENCIA en las fases del proyecto",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Comparativos (más/menos que · igualdad) · APLICADO al PRESENTAR cuadro comparativo de cotizaciones técnicas a cliente UraNet (vendor A is cheaper than vendor B · the fiber optic is faster than UTP · this connector is as durable as that one · vendor C offers more warranty than vendor A) base de EVALUAR PROPUESTAS TÉCNICAS y elaborar CUADROS COMPARATIVOS",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Adjetivos calificativos para describir procesos y resultados · APLICADO al PRESENTAR resultados de pruebas de conectividad y calidad de instalación (the connection is stable · the cable is reliable · the installation is safe · the result is successful · the test is complete) base de COMPROBAR EL ESTADO DEL CABLEADO ESTRUCTURADO y presentar informe",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Adverbios de forma y manera (carefully · quickly · safely · properly) · APLICADO al DAR INSTRUCCIONES técnicas de uso de herramientas (insert the cable carefully · strip the jacket properly · crimp the connector safely · test the connection quickly) base de MANIPULAR HERRAMIENTAS · CONECTORES Y EQUIPOS de redes paso-a-paso",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Conectores de secuencia (first · then · after · finally · meanwhile · suddenly · however) · APLICADO al PRESENTAR proceso paso-a-paso de instalación al cliente (first we read the floor plan · then we run the cable through the duct · after that we install the wall jacks · finally we test connectivity) base de INSTALAR SISTEMAS DE CABLEADO ESTRUCTURADO de manera secuencial cohesionada",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Conectores simples expandidos (and · or · but · because · so · while) · APLICADO al PRESENTAR razonamiento técnico breve en informe escrito de obra (we used CAT6 because the distance is short · the test passed but two ports failed · we replaced the connector and tested again · while the team installed cable the supervisor checked the documentation) base de ELABORAR DOCUMENTACIÓN TÉCNICA de implementación",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Verbos frasales comunes (turn on/off · plug in · set up · log in · check out · pick up) · APLICADO al DAR INSTRUCCIONES técnicas de operación de equipos TI (please turn on the switch · plug in the access point · set up the IP address · log in to the router · check out the patch panel · pick up the toolbox) base de INSTALAR DISPOSITIVOS DE TECNOLOGÍA TI paso-a-paso",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Cláusulas de relativo (which · that · who) introducción · APLICADO al PRESENTAR descripción extendida del proceso al cliente PYME (the cable which we installed is CAT6 · the technician who tested the network is certified · the rack that we used has 24 ports) base de PRESENTAR PORTAFOLIO DE SERVICIOS y DISEÑAR PROPUESTA al cliente",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "When y While (acciones simultáneas y secuenciales) · APLICADO al EXPLICAR proceso paralelo de instalación durante reporte semanal (when we install the cable we also label each port · while the technician crimps the connectors the supervisor checks the documentation · we test continuity when the installation is complete) base de VERIFICAR ACTIVIDADES ASIGNADAS EN EL PROYECTO",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Números ordinales y cardinales (steps numerados · cantidades) · APLICADO al PRESENTAR pasos numerados de procedimiento técnico (Step 1: we check the cable continuity · Step 2: we test the connection speed · Step 3: we document the results · we installed 24 ports on the third floor · the second test passed) base de REALIZAR PRUEBAS DE CONECTIVIDAD paso-a-paso",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Vocabulario: edificaciones y construcciones (data centers · oficinas técnicas) · APLICADO al PRESENTAR descripción extendida del data center cliente y oficinas técnicas UraNet (the data center has 4 racks · the server room is on the first floor · the patch panel is mounted on the wall · the cable tray runs along the ceiling) base de IDENTIFICAR LA SOLUCIÓN DE CABLEADO ESTRUCTURADO en presentación",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Vocabulario: eventos formales (congresos · conferencias · capacitaciones técnicas) · APLICADO al PRESENTAR plan de capacitación interna y al DAR INSTRUCCIONES en sesión formativa al equipo (today's training is about fiber optic installation · the conference will cover new CCTV technologies · the workshop has three modules · the agenda includes a hands-on session) base de PRESENTAR PROCESO DE EJECUCIÓN DE UNA ACTIVIDAD en quehacer laboral",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Vocabulario expandido del área ocupacional TIC (procesos · interacciones · presentaciones) · APLICADO al PRESENTAR informe técnico ejecutivo bilingüe al cliente (project scope · scope of work · deliverables · milestone · sign-off · technical specification · acceptance criteria · punch list · as-built documentation) base de ELABORAR DOCUMENTACIÓN TÉCNICA de implementación y REDACTAR INFORMES",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Pronunciación: entonación para presentar información nueva · APLICADA al EXPONER novedades de proyecto en reunión con cliente (today I will present the new ↗topology · the team installed twenty-four ↗ports on the third floor · we are going to use ↗fiber optic for the backbone) base de HACER UNA PRESENTACIÓN BREVE Y PREPARADA sobre tema dentro de su especialidad TIC",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Pronunciación: acentuación de énfasis (highlighting key information) · APLICADA al PRESENTAR puntos críticos del informe técnico al cliente (the test PASSED · we use CAT6 not CAT5 · the deadline is FRIDAY · safety is the FIRST priority) base de ELABORAR DOCUMENTACIÓN TÉCNICA y reportar resultados de pruebas",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Pronunciación: reducción vocálica (weak forms en speech connected) · APLICADA al PRESENTAR procedimiento técnico fluido (we're going to test the connection · the cable's installed · we should run the diagnostic · we've finished the patch panel) base de PRESENTAR EL PROCESO DE PREPARACIÓN Y EJECUCIÓN DE UNA ACTIVIDAD en quehacer laboral con fluidez",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Estrategias de aprendizaje: organizadores gráficos para presentaciones · diagramas de flujo de procesos · APLICADAS a CONSTRUIR visualmente proceso de instalación paso-a-paso para presentación al cliente (flow chart of cable installation · timeline of project milestones · checklist of testing procedures · mind map of network topology) base de DISEÑAR PORTAFOLIOS DE SERVICIOS y PRESENTAR PLANEACIÓN al cliente",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        }
+      ],
+      "saberes_proceso": [
+        {
+          "saber_proceso": "Describir el proceso de preparación y ejecución de una actividad en quehacer laboral · APLICADO al PRESENTAR proceso paso-a-paso de INSTALACIÓN DE CABLEADO ESTRUCTURADO al cliente PYME UraNet (first we read the floor plan · then we run the cable through the duct · after that we install the wall jacks · finally we test connectivity) base de IDENTIFICAR LA SOLUCIÓN PLANTEADA para sistema de cableado y de PRESENTAR PORTAFOLIO al cliente",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Dar instrucciones de un proceso relacionado con quehacer laboral · APLICADO al GUIAR al técnico de infraestructura en MANIPULACIÓN DE HERRAMIENTAS · CONECTORES Y EQUIPOS (please plug the cable here · make sure the connector is correctly inserted · do not bend the fiber optic cable · always wear safety equipment · turn off the power before disconnecting) base de APLICAR NORMAS DE REFERENCIA en fases del proyecto",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Seguir instrucciones de un proceso relacionado con quehacer laboral · APLICADO al RECIBIR Y EJECUTAR instrucciones del supervisor o ingeniero de proyecto en obra (I will check the patch panel · I am preparing the tools now · I have already labeled the cables · I followed the certification protocol step by step) base de CUMPLIR ROL ASIGNADO en VERIFICAR ACTIVIDADES asignadas en el proyecto",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Escribir informes y reportes laborales utilizando frases concretas con introducción · desarrollo · conclusión · APLICADO al ELABORAR DOCUMENTACIÓN TÉCNICA de implementación de redes UraNet (introduction: this report describes the cable installation at the client site · development: last week the team installed 50 meters of CAT6 cable · we tested 24 ports · we documented each step · conclusion: the network is certified and operational) base de REDACTAR INFORME SEMANAL DE OBRA y ELABORAR DOCUMENTACIÓN TÉCNICA",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Establecer diferencias entre presente simple y presente continuo en textos sencillos · APLICADO al PRESENTAR diferencia entre actividades rutinarias y proceso actual al cliente (the team usually installs CAT6 · today the team is installing fiber optic for the backbone · we always test continuity · we are testing the connection right now) base de PRESENTAR EL PROCESO DE PREPARACIÓN Y EJECUCIÓN de una actividad en quehacer laboral",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Planear un itinerario usando presente continuo para organización de viajes · eventos · capacitaciones · APLICADO al PRESENTAR cronograma de proyecto y agenda de capacitación interna al cliente y al equipo (next week we are starting the installation · on Monday we are training the technicians · on Wednesday we are visiting the second site · on Friday we are delivering the as-built documentation) base de DISEÑAR PORTAFOLIOS DE SERVICIOS y planear capacitaciones técnicas",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber_proceso": "Hacer una presentación breve y preparada sobre tema dentro de su especialidad TIC · APLICADO al EXPONER en sesión formal con cliente PYME UraNet o congreso del sector TIC (today I will present our cabling solution for your office · the agenda has three parts · first I will describe the topology · then I will explain the timeline · finally I will answer questions) base de PRESENTAR ESPECIFICACIONES DEL MERCADO y DISEÑAR PORTAFOLIOS DE SERVICIOS",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        }
+      ],
+      "criterios_evaluacion": [
+        "Describe de manera sencilla y clara asuntos · acciones · experiencias · planes relacionados con temas de su interés y cotidianidad siguiendo una secuencia lineal AL PRESENTAR PROCESO DE INSTALACIÓN paso-a-paso al cliente PYME UraNet y AL DESCRIBIR EJECUCIÓN DE ACTIVIDAD en quehacer laboral con conectores de secuencia first/then/finally",
+        "Enlaza una serie de elementos breves · concretos y sencillos para crear una secuencia cohesionada y lineal AL PRESENTAR pasos numerados de procedimiento técnico (Step 1 Step 2 Step 3) y AL ELABORAR DOCUMENTACIÓN TÉCNICA de implementación con introducción · desarrollo · conclusión",
+        "Sigue instrucciones de un proceso relacionado con su quehacer laboral AL RECIBIR Y EJECUTAR instrucciones técnicas del supervisor o ingeniero de proyecto en obra (manipulación de herramientas · instalación de cableado · pruebas de conectividad · aplicación de normas) y al CUMPLIR ROL ASIGNADO en verificar actividades del proyecto",
+        "Es capaz de hacer una presentación breve y preparada sobre un tema dentro de su especialidad con suficiente claridad como para seguirla sin dificultad AL PRESENTAR portafolio de servicios al cliente PYME UraNet y AL EXPONER especificaciones del mercado y planeación de proyecto al equipo y al cliente"
+      ],
+      "criterios_evaluacion_especificos_canon_sistema": [
+        {
+          "id": "C01",
+          "criterio": "Comprender información en textos cortos en inglés AL LEER PROPUESTAS TÉCNICAS DE PROVEEDORES bilingües y FICHAS TÉCNICAS extendidas (cotizaciones · cuadros comparativos · garantías · plan de contingencia) e identificar datos clave correctos vs distractores en informe técnico de adquisición elaborado por el ingeniero de proyecto UraNet",
+          "rap_target": "RA2",
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E1",
+          "evidencia_nombre": "Reading",
+          "sesion": "S3",
+          "instrumento": "Cuestionario No 1",
+          "_anclaje_tecnico": "Evaluar propuestas técnicas suministradas por proveedores + Realizar documentación técnica de adquisición + Cotizaciones técnicas + Cuadros comparativos",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "id": "C02",
+          "criterio": "Producir textos escritos descriptivos paso-a-paso AL ELABORAR DOCUMENTACIÓN TÉCNICA de implementación de redes UraNet con introducción · desarrollo · conclusión (informe semanal de obra · bitácora · reporte de pruebas de conectividad · ficha técnica narrativa · acta de entrega) aplicando conectores de secuencia first/then/finally · adverbios de manera carefully/safely · adjetivos calificativos y verbos modales must/should sin errores que comprometan la inteligibilidad técnica",
+          "rap_target": "RA2",
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E2",
+          "evidencia_nombre": "Writing",
+          "sesion": "S4",
+          "instrumento": "Lista de Verificación No 2",
+          "_anclaje_tecnico": "Elaborar documentación técnica de implementación + Realizar documentación técnica de adquisición + Verificar actividades asignadas en el proyecto + Pruebas de funcionamiento",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "id": "C04",
+          "criterio": "Producir oralmente presentación breve y preparada con suficiente claridad para seguirla sin dificultad AL EXPONER planeación de proyecto al cliente PYME UraNet · proceso paso-a-paso de instalación de cableado estructurado al equipo · cuadro comparativo de cotizaciones a coordinador · resultados de pruebas de conectividad a supervisor o sesión de capacitación interna a técnicos junior aplicando entonación de información nueva · acentuación de énfasis · adverbios de manera y conectores de secuencia",
+          "rap_target": "RA2",
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E4",
+          "evidencia_nombre": "Speaking",
+          "sesion": "S7",
+          "instrumento": "Lista de Verificación No 4",
+          "_anclaje_tecnico": "Diseñar portafolios de servicios + Hacer una presentación breve y preparada + Establecer especificaciones del mercado + Identificar la solución de cableado estructurado al cliente",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "id": "C06",
+          "criterio": "Demostrar dominio productivo de gramática A1.2 contextualizada a presentación procedural TIC UraNet (futuro will + be going to AL PRESENTAR planeación · presente continuo AL PLANEAR ITINERARIO · modales should/must AL DAR INSTRUCCIONES técnicas · comparativos AL EVALUAR PROPUESTAS · conectores secuencia AL PRESENTAR pasos · adverbios de manera AL OPERAR herramientas · cláusulas relativo AL PRESENTAR portafolio · when/while AL EXPLICAR procesos paralelos) en cuestionario consolidado",
+          "rap_target": [
+            "RA2",
+            "RA4"
+          ],
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Grammar",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · gramática A1.2 al operar procesos técnicos cross-comp procedurales (RA2) + interactivos (RA4)",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "id": "C08",
+          "criterio": "Demostrar transferencia productiva integral AL PRESENTAR misión final ABP capstone bilingüe ante panel evaluador (cliente PYME UraNet + supervisor + colega de otro centro): exponer planeación de proyecto · proceso paso-a-paso de instalación de cableado estructurado · análisis de cotizaciones · cuadro comparativo de proveedores · resultados de pruebas de conectividad y certificación · responder preguntas técnicas con cortesía profesional aplicando todo el repertorio A1.2 productivo procedural",
+          "rap_target": "RA2",
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E-Misión",
+          "evidencia_nombre": "Misión Final ABP",
+          "sesion": "S15-S17",
+          "instrumento": "Rúbrica integral capstone",
+          "_anclaje_tecnico": "Capstone procedural cross-comp · Diseñar portafolios + Presentación breve y preparada + Establecer especificaciones + Elaborar documentación técnica + Certificar la red de datos + Verificar actividades asignadas",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        }
+      ],
+      "_rationale": "RA2 es Bloom L3 APLICAR (PRESENTAR un proceso) · cara productiva procedural extendida del idioma A1.2 (Speaking + Writing paso-a-paso) APLICADA a procesos técnicos TIC REALES de presentación cross-comp UraNet. El enunciado SOFÍA refiere 'presentar un proceso para la realización de una actividad en su quehacer laboral de acuerdo con procedimientos establecidos' · contextualizado al universo G2 expandido UraNet significa: PRESENTAR PROCESO DE INSTALACIÓN DE CABLEADO ESTRUCTURADO paso-a-paso al cliente PYME (220501103) · PRESENTAR PLANEACIÓN DEL PROYECTO con futuros y presente continuo (220501103) · PRESENTAR ANÁLISIS DE COTIZACIONES TÉCNICAS al coordinador con comparativos (220501086) · DAR INSTRUCCIONES TÉCNICAS al equipo con modales should/must y adverbios de manera (220501103) · ELABORAR DOCUMENTACIÓN TÉCNICA de implementación con introducción/desarrollo/conclusión (cross-comp) · PRESENTAR CUADROS COMPARATIVOS de proveedores (220501086) · PRESENTAR RESULTADOS DE PRUEBAS DE CONECTIVIDAD con números ordinales y adjetivos calificativos (220501103) · PRESENTAR PORTAFOLIO DE SERVICIOS con cláusulas relativo (220501086) · DISEÑAR PROPUESTA al cliente con vocabulario eventos formales (cross-comp) · CERTIFICAR LA RED DE DATOS y presentar informe ejecutivo (220501103). Cada saber inglés productivo procedural (futuros · modales should/must · conectores secuencia · adverbios manera · adjetivos · comparativos · ordinales · cláusulas relativo · pronunciación entonación info nueva · estrategias gráficos para presentaciones) está ANCLADO a un proceso técnico real cross-comp procedural. Cubre deuda explícita G1: procedimientos paso-a-paso · presentaciones técnicas · interacciones laborales formales (presentar resultado/cotización/planeación al cliente). Procesos: 7/7 procesos lingüísticos productivo-procedurales contextualizados a procesos técnicos cross-comp del input crudo G2. Criterios canon C01 (Reading propuestas técnicas) + C02 (Writing documentación técnica) + C04 (Speaking presentación al cliente) anclan a procesos técnicos verificables de ambas competencias.",
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": [
+          "E1 (C01 · Reading S3 · propuestas técnicas + cotizaciones + cuadros comparativos · 220501086)",
+          "E2 (C02 · Writing S4 · documentación técnica de implementación + informe semanal · cross-comp)",
+          "E4 (C04 · Speaking S7 · presentación planeación + portafolio + cuadro comparativo · cross-comp)",
+          "E-Misión (C08 · capstone S15-S17 · presentación final ante panel evaluador · cross-comp)"
+        ],
+        "overlaps_documentados": [
+          "C06 2-way RA2+RA4 cara Grammar E6 (gramática A1.2 transversal procedural+interactivo · cross-comp)"
+        ],
+        "sesiones_anchor": [
+          "S3 (E1 Reading)",
+          "S4 (E2 Writing)",
+          "S7 (E4 Speaking)",
+          "S9 (E6 Cuestionario Grammar)",
+          "S15-S17 (E-Misión Capstone)"
+        ],
+        "criterios_count": 5,
+        "saberes_count": "19 conceptos + 7 procesos · TODOS anclados a procesos/saberes técnicos cross-comp G2 UraNet",
+        "_nota_fusion": "RA2 ancla a 23 procesos técnicos productivo-procedurales cross-comp del input crudo G2 (9 de 220501086 · 14 de 220501103) y a 18 saberes técnicos procedurales (7 de 220501086 · 11 de 220501103)"
+      }
+    },
+    {
+      "rap_id": "RA4",
+      "rap_codigo_sofia": "240202501-RA4",
+      "rap_titulo": "INTERCAMBIAR OPINIONES SOBRE SITUACIONES COTIDIANAS Y LABORALES ACTUALES, PASADAS Y FUTURAS EN CONTEXTOS SOCIALES ORALES Y ESCRITOS",
+      "verbo_cognitivo": "INTERCAMBIAR",
+      "bloom_level": "L3 (Aplicar interactivo)",
+      "cefr_target": "A1.2",
+      "dominio_canonico": "Interactivo conversacional bidireccional (Speaking + Writing dialógico) APLICADO a procesos técnicos TIC de intercambio cross-comp UraNet: intercambiar opiniones sobre imprevistos en obra con supervisor · negociar con proveedor extranjero · participar en llamada telefónica laboral con cliente PYME · intercambiar emails de cooperación con colega de otro centro · narrar eventos técnicos pasados a equipo · hablar de planes futuros profesionales · responder propuestas formales a cliente · expresar inseguridad técnica con cortesía · disculparse y resolver imprevistos · ofrecer breves razonamientos sobre decisiones técnicas",
+      "_anclaje_tecnico_rap": {
+        "procesos_tecnicos_anclados": [
+          {
+            "proceso": "Identificar necesidades del cliente (entrevista · intercambiar opiniones)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Atención al cliente: aplicar protocolos en presentación y negociación",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Evaluar propuestas técnicas suministradas por proveedores (presentar análisis)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Verificar actividades asignadas en el proyecto (intercambiar reporte semanal)",
+            "competencia": [
+              "220501086"
+            ]
+          }
+        ],
+        "saberes_tecnicos_anclados": [
+          {
+            "saber": "Atención al cliente: definición · objeto · características · protocolos",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Marco contractual: contratos · activación y verificación",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Marco legal procesos: outsourcing · contratación · freelance",
+            "competencia": [
+              "220501086"
+            ]
+          }
+        ]
+      },
+      "saberes_conceptos_y_principios": [
+        {
+          "saber": "Pasado simple regular e irregular y estructuración sintáctica · APLICADO al INTERCAMBIAR OPINIONES sobre eventos laborales pasados con colegas y supervisor (yesterday we tested 24 ports · last month the team installed the data center · two weeks ago we attended the CCTV conference · we replaced the damaged connector on Monday) base de NARRAR EVENTOS Y ACONTECIMIENTOS y CONTAR ACONTECIMIENTOS EN EL PASADO INDICANDO FECHAS",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Used to (acciones habituales en el pasado) · APLICADO al INTERCAMBIAR OPINIONES sobre prácticas técnicas pasadas con colegas de otro centro (we used to install only CAT5 · the team used to work with copper cables · the company used to outsource the maintenance · we didn't use to certify the network) base de NARRAR EVENTOS y opinar sobre evolución profesional",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Pasado continuo (acciones en progreso en el pasado) · APLICADO al INTERCAMBIAR OPINIONES sobre imprevistos en obra pasados (we were testing the network when the power failed · the technician was crimping the connector when the supervisor arrived · the team was installing the rack while the client was meeting with the engineer) base de NARRAR EVENTOS técnicos pasados a equipo y supervisor",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Pasado simple y pasado continuo combinados · APLICADO al INTERCAMBIAR OPINIONES sobre solución de problemas técnicos pasados (while we were installing the cable the supervisor noticed a damaged connector · when the test failed we were already finishing the project · we identified the issue while the team was running the diagnostic) base de EXPRESAR LO QUE OCURRIÓ O NO en un punto específico del pasado laboral",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Diferencia entre presente perfecto y pasado simple (introducción) · APLICADO al INTERCAMBIAR OPINIONES sobre experiencia profesional con colegas (I have installed many networks · I have worked at UraNet for two years · I installed my first data center in 2024 · we have just finished the certification) base de NARRAR experiencia laboral en intercambio profesional",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Futuro con will (predicciones · decisiones espontáneas) · APLICADO al INTERCAMBIAR OPINIONES sobre planes futuros con cliente o proveedor (I think we will need more cable · the team will probably finish on Friday · I will call you back · we will send the quotation tomorrow) base de RESPONDER PROPUESTAS Y SOLICITUDES con cortesía y HABLAR DE PLANES FUTUROS",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Verbos modales would (invitaciones formales · solicitudes corteses) · APLICADO al HACER PROPUESTAS formales a cliente y proveedor extranjero (would you like to schedule a meeting? · we would like to invite you to the workshop · would you mind sending the revised proposal? · I would prefer the second option) base de REALIZAR INVITACIÓN FORMAL a un evento y HACER PROPUESTAS Y SOLICITUDES con cortesía",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Verbos modales could (solicitudes formales · posibilidad pasada) · APLICADO al INTERCAMBIAR OPINIONES con cortesía con cliente o proveedor (could you send the technical sheet? · could we discuss the price? · we could not finish on time because of the supplier · could you repeat that please?) base de PARTICIPAR EN UNA LLAMADA TELEFÓNICA LABORAL y HACER PROPUESTAS Y SOLICITUDES",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Vocabulario: actividades del tiempo libre (background contextual) · APLICADO al INTERCAMBIAR OPINIONES en small talk laboral con colega o cliente al inicio de reunión (how was your weekend? · I went hiking · I watched a movie · I rested at home) base de PARTICIPAR EN UNA LLAMADA TELEFÓNICA LABORAL con cortesía inicial y construir rapport profesional",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Vocabulario: celebraciones · costumbres · tradiciones (eventos formales corporativos) · APLICADO al INTERCAMBIAR OPINIONES sobre eventos institucionales bilingües (the company anniversary · the year-end celebration · the team building event · the employee recognition ceremony) base de REALIZAR INVITACIÓN FORMAL a colegas o proveedores y construir relación profesional",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Vocabulario: reuniones familiares · actividades de la infancia · eventos históricos (background) · APLICADO al INTERCAMBIAR OPINIONES en conversación profesional extendida con colega de otro centro (when I was a child I wanted to be an engineer · my family used to live near a TV repair shop · I remember when fiber optic was new technology) base de NARRAR EVENTOS Y ACONTECIMIENTOS en intercambio profesional informal",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Vocabulario: expresiones de tiempo en pasado y futuro (last week · next month · in 3 days · 2 hours ago) · APLICADO al INTERCAMBIAR OPINIONES sobre cronograma de proyecto con cliente y supervisor (last week we finished the survey · next month we will start the installation · in 3 days we will deliver the quotation · 2 hours ago I sent you the email) base de CONTAR ACONTECIMIENTOS EN EL PASADO INDICANDO FECHAS y HABLAR DE PLANES FUTUROS",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Vocabulario y expresiones para opiniones (I think · I believe · in my opinion · I agree · I disagree) · APLICADO al INTERCAMBIAR OPINIONES sobre imprevistos en obra y soluciones técnicas con supervisor y equipo (I think we should change the cable type · in my opinion the duct is too small · I agree with the supervisor · I disagree with that approach · I believe we need more time) base de OFRECER BREVES RAZONAMIENTOS Y EXPLICACIONES de opiniones técnicas",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Expresiones idiomáticas comunes en contextos laborales · APLICADO al INTERCAMBIAR OPINIONES informales con colegas y supervisor sobre desempeño y plazos (let's get to work · we are on the same page · the deadline is around the corner · let's call it a day · keep me posted · let's touch base tomorrow) base de PARTICIPAR EN LLAMADAS y reuniones laborales con naturalidad",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Expresiones de cortesía para intercambiar opiniones (excuse me · could you · would you mind · I'm sorry but) · APLICADAS al INTERCAMBIAR OPINIONES con cliente PYME y proveedor extranjero respetando protocolos (excuse me · could you repeat that? · would you mind explaining the warranty? · I'm sorry but we cannot accept this deadline · pardon me · I beg your pardon) base de ATENCIÓN AL CLIENTE en negociación y RESPONDER PROPUESTAS Y SOLICITUDES",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Pronunciación: terminación ED (3 formas /t/ /d/ /ɪd/) · APLICADA al NARRAR acciones técnicas pasadas con precisión fonética en intercambio con colegas (installed /ɪnˈstɔːld/ · connected /kəˈnektɪd/ · tested /ˈtestɪd/ · checked /tʃekt/ · replaced /rɪˈpleɪst/ · documented /ˈdɒkjumentɪd/) base de NARRAR EVENTOS Y ACONTECIMIENTOS USANDO ESTRUCTURAS GRAMATICALES DEL TIEMPO PASADO",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Pronunciación: voiced consonants vs voiceless consonants · APLICADA al INTERCAMBIAR OPINIONES con claridad fonética en llamada telefónica laboral (vendor /ˈvendər/ vs vendor con /v/ vs /b/ · cable /ˈkeɪbəl/ vs gable · price /praɪs/ vs prize /praɪz/) base de PARTICIPAR EN UNA LLAMADA TELEFÓNICA LABORAL con inteligibilidad",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Pronunciación: elevación y caída de entonación en diferentes tipos de frases · APLICADA al INTERCAMBIAR OPINIONES con cortesía en conversación con cliente y proveedor (Are you available tomorrow? ↗ · I think the cable is damaged. ↘ · What a great solution! ↘ · Could you confirm the order? ↗) base de RESPONDER PROPUESTAS y EXPRESAR INSEGURIDAD u opinión con tono apropiado",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        }
+      ],
+      "saberes_proceso": [
+        {
+          "saber_proceso": "Narrar eventos y acontecimientos usando estructuras gramaticales del tiempo pasado · APLICADO al INTERCAMBIAR OPINIONES sobre eventos técnicos pasados con equipo y colegas (last month we attended a CCTV conference in Bogotá · the conference was about new fiber optic technologies · we learned about LiFi systems · it was very useful for our projects · the speaker explained the new ISO standard) base de OFRECER BREVES RAZONAMIENTOS y compartir experiencia profesional",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Escribir textos sencillos en orden cronológico sobre acontecimientos pasados laborales · APLICADO al ELABORAR bitácora de obra y reporte semanal narrativo (last week the team installed 50 meters of cable · on Monday we surveyed the site · on Tuesday we ran the cable through the duct · on Wednesday we had a small problem with the duct · we resolved it on Thursday · on Friday we tested all the ports) base de VERIFICAR ACTIVIDADES ASIGNADAS y reportar progreso al supervisor",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Realizar invitación formal a un evento empleando estructuras del futuro y would like to · APLICADO al INVITAR a cliente PYME · proveedor extranjero o colega de otro centro a evento corporativo (we would like to invite you to our annual workshop · we are going to host a CCTV training next month · would you like to attend the project kick-off meeting? · we would be honored to have you as a speaker) base de ATENCIÓN AL CLIENTE en aspectos protocolarios formales",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber_proceso": "Hablar de planes futuros para trabajo y carrera · APLICADO al INTERCAMBIAR OPINIONES sobre desarrollo profesional con colega de otro centro o supervisor (next year I am going to study network certification · I want to specialize in data centers · in 5 years I will probably work as a senior engineer · I am planning to take the CCNA exam) base de OFRECER BREVES RAZONAMIENTOS sobre planes de carrera profesional",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Expresar lo que ocurrió o no en un punto específico del pasado · APLICADO al INTERCAMBIAR OPINIONES sobre incidentes técnicos pasados con supervisor y equipo (yesterday at 3 PM the connection failed · last Tuesday morning we replaced the damaged cable · two weeks ago we did not certify the network because the equipment was missing · last month we did not have any incidents) base de NARRAR EVENTOS y compartir lecciones aprendidas con equipo",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Contar acontecimientos en el pasado indicando fechas · APLICADO al PRESENTAR historial de proyectos al cliente PYME y narrar trayectoria de la integradora UraNet (UraNet started operations in 2018 · we installed our first data center in 2020 · in 2023 we certified twenty networks · last year we expanded to Urabá · two months ago we signed three new contracts) base de PRESENTAR PORTAFOLIO de la empresa y construir confianza con el cliente",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber_proceso": "Hacer propuestas y solicitudes empleando verbos modales y fórmulas de cortesía · APLICADO al NEGOCIAR con cliente y proveedor extranjero (would you like to schedule a meeting? · could we discuss the budget? · we would like to suggest a different approach · you should consider the maintenance plan · would you mind reviewing the proposal? · could you confirm the deadline?) base de ATENCIÓN AL CLIENTE en presentación y negociación de propuestas",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber_proceso": "Responder a propuestas y solicitudes empleando verbos modales y fórmulas de cortesía · APLICADO al GESTIONAR respuesta de cliente o proveedor en negociación (we agree with the conditions · we would like to negotiate the price · I'm sorry but we cannot accept this deadline · could you send a revised proposal? · we would prefer the second option · we accept the proposal with minor changes) base de EVALUAR PROPUESTAS TÉCNICAS de proveedores",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber_proceso": "Expresar inseguridad sobre alguna cuestión u opinión (I'm not sure · I think maybe · I don't know exactly) · APLICADO al INTERCAMBIAR OPINIONES con cortesía sobre soluciones técnicas inciertas con supervisor o cliente (I'm not sure if this connector is the right one · I think maybe we need to test it first · I don't know exactly when the equipment will arrive · maybe we should ask the engineer · I'm not certain about the warranty) base de OFRECER BREVES RAZONAMIENTOS con honestidad técnica",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Participar en una llamada telefónica laboral (saludar · preguntar · resolver) · APLICADO al ATENDER llamada de cliente PYME o proveedor extranjero (good morning · UraNet speaking · how can I help you? · could you repeat that please? · let me check and call you back · I'll transfer you to the engineer · thank you for calling · have a great day) base de ATENCIÓN AL CLIENTE en aspectos comunicacionales bilingües",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber_proceso": "Ofrecer breves razonamientos y explicaciones de opiniones · planes y acciones · APLICADO al EXPLICAR decisiones técnicas a cliente o supervisor en intercambio profesional (we chose CAT6 because the distance is short · we replaced the connector because the test failed · we are going to use fiber optic for better performance · I prefer the second proposal because it has more warranty) base de OFRECER RAZONAMIENTOS técnicos breves y construir confianza con interlocutor",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        }
+      ],
+      "criterios_evaluacion": [
+        "Ofrece breves razonamientos y explicaciones de opiniones · planes y acciones AL INTERCAMBIAR OPINIONES sobre imprevistos en obra con supervisor y equipo y AL EXPLICAR decisiones técnicas a cliente PYME (we chose CAT6 because the distance is short · we replaced the connector because the test failed · we are going to use fiber optic for better performance)",
+        "Se comunica de manera eficaz en torno a temáticas cotidianas y laborales sencillas haciendo uso de adecuada pronunciación · fluidez · rango de vocabulario y estructura gramatical para nivel pre intermedio AL PARTICIPAR EN LLAMADAS TELEFÓNICAS LABORALES con cliente PYME y proveedor extranjero y AL INTERCAMBIAR EMAILS DE COOPERACIÓN con colega de otro centro",
+        "Brinda solución a un problema sencillo haciendo uso de adecuada pronunciación · fluidez · rango de vocabulario y estructura gramatical AL RESOLVER imprevisto laboral con cliente o proveedor en intercambio bilingüe (apologize · explain cause · propose solution · confirm timeline) y AL PROPONER alternativa técnica al supervisor",
+        "Hace uso de términos y expresiones relacionadas con su ámbito laboral específico AL INTERCAMBIAR OPINIONES sobre cotizaciones técnicas · contratos · garantías · cronograma · imprevistos en obra y eventos del sector TIC con cliente · proveedor · supervisor y colegas (vocabulario expandido del área ocupacional TIC en negociación bilingüe)",
+        "Participa en juegos de rol guiados o situaciones simuladas sobre situaciones cotidianas y laborales actuales · pasadas y futuras en contextos sociales orales y escritos AL SIMULAR llamada telefónica con cliente · negociación con proveedor extranjero · reporte semanal con supervisor · capacitación interna con equipo y narración de evento técnico pasado a colegas"
+      ],
+      "criterios_evaluacion_especificos_canon_sistema": [
+        {
+          "id": "C03",
+          "criterio": "Comprender información oral AL ESCUCHAR llamada telefónica laboral con cliente PYME UraNet · negociación con proveedor extranjero · narración de evento técnico pasado en intercambio profesional con colega de otro centro · reporte semanal de imprevistos del supervisor (cable failure · damaged connector · supplier delay · weather problem · revised deadline) e identificar mensajes correctos vs distractores en audio auténtico adaptado A1.2",
+          "rap_target": "RA4",
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E3",
+          "evidencia_nombre": "Listening",
+          "sesion": "S5",
+          "instrumento": "Lista de Verificación No 3",
+          "_anclaje_tecnico": "Identificar necesidades del cliente + Atención al cliente en negociación + Verificar actividades asignadas (intercambio reporte) + Evaluar propuestas técnicas (intercambio con proveedor)",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "id": "C05",
+          "criterio": "Demostrar dominio interactivo de vocabulario A1.2 contextualizado a intercambio laboral TIC UraNet (vocabulario expandido del área ocupacional para PRESENTAR e INTERCAMBIAR · expresiones para opiniones para OFRECER RAZONAMIENTOS · expresiones de cortesía para RESPONDER propuestas · expresiones idiomáticas en intercambio con colegas · expresiones de tiempo pasado/futuro para NARRAR y PLANEAR · vocabulario eventos formales para INVITAR a workshops/congresos) en cuestionario consolidado",
+          "rap_target": [
+            "RA2",
+            "RA4"
+          ],
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Vocabulario",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · vocabulario A1.2 al operar procesos técnicos cross-comp procedurales (RA2) + interactivos (RA4)",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "id": "C07",
+          "criterio": "Demostrar dominio integrado de saberes (Reading + Writing + Listening + Vocabulary + Grammar) AL OPERAR procesos técnicos productivo-procedurales (RA2) e interactivos (RA4) auténticos UraNet · Cuestionario Consolidado · 25 ítems · ≥ 70% para PASS",
+          "rap_target": [
+            "RA2",
+            "RA4"
+          ],
+          "cefr_subnivel": "consolidación A1.2",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · 23 procesos productivo-procedurales (RA2) + 4 interactivos (RA4) cross-comp 220501086 + 220501103",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        }
+      ],
+      "_rationale": "RA4 es Bloom L3 APLICAR interactivo (INTERCAMBIAR opiniones cotidianas y laborales actuales · pasadas y futuras) · cara conversacional bidireccional del idioma A1.2 (Speaking + Writing dialógico) APLICADA a procesos técnicos TIC REALES de intercambio cross-comp UraNet. El enunciado SOFÍA refiere 'intercambiar opiniones sobre situaciones cotidianas y laborales actuales · pasadas y futuras en contextos sociales orales y escritos' · contextualizado al universo G2 expandido UraNet significa: INTERCAMBIAR OPINIONES sobre imprevistos en obra con supervisor (220501103) · NEGOCIAR con proveedor extranjero usando modales de cortesía would/could (220501086) · PARTICIPAR EN LLAMADAS TELEFÓNICAS laborales con cliente PYME (220501086) · INTERCAMBIAR EMAILS de cooperación con colega de otro centro (cross-comp) · NARRAR EVENTOS TÉCNICOS PASADOS con pasado simple/continuo (congreso CCTV · capacitación técnica · proyecto anterior · 220501103) · HABLAR DE PLANES FUTUROS profesionales con will/be going to (cross-comp) · RESPONDER PROPUESTAS FORMALES a cliente (220501086) · EXPRESAR INSEGURIDAD TÉCNICA con cortesía (cross-comp) · DISCULPARSE Y RESOLVER imprevistos (cross-comp) · OFRECER BREVES RAZONAMIENTOS sobre decisiones técnicas. Cada saber inglés interactivo (pasado simple/continuo · used to · presente perfecto · futuro will/be going to · modales would/could · expresiones de opinión · cortesía · idiomáticas · pronunciación ED y entonación frases) está ANCLADO a un proceso técnico real cross-comp interactivo. Cubre deuda explícita G1: interacciones laborales formales · cooperación bilingüe · negociación con proveedores · narración de experiencia profesional. Procesos: 11/11 procesos lingüísticos interactivos contextualizados a procesos técnicos cross-comp del input crudo G2. Criterios canon C03 (Listening llamadas/intercambios) + C05 (Vocabulario interactivo) + C07 (Cuestionario integrado) anclan a procesos técnicos verificables de ambas competencias.",
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": [
+          "E3 (C03 · Listening S5 · llamadas + intercambios + narración · cross-comp)",
+          "E6 (C05+C07 · Cuestionario Consolidado S9 · vocabulario + integrado · cross-comp)"
+        ],
+        "overlaps_documentados": [
+          "C05 2-way RA2+RA4 cara Vocabulario E6 (cross-comp 220501086+103)",
+          "C06 2-way RA2+RA4 cara Grammar E6 (cross-comp)",
+          "C07 2-way RA2+RA4 Cuestionario Consolidado E6 (cross-comp)"
+        ],
+        "sesiones_anchor": [
+          "S5 (E3 Listening)",
+          "S9 (E6 Cuestionario)"
+        ],
+        "criterios_count": 3,
+        "saberes_count": "18 conceptos + 11 procesos · TODOS anclados a procesos/saberes técnicos cross-comp G2 UraNet",
+        "_nota_fusion": "RA4 ancla a 4 procesos técnicos interactivos cross-comp del input crudo G2 (3 de 220501086 · 1 de 220501103) y a 3 saberes técnicos interactivos (3 de 220501086 · 0 de 220501103) · La fusión se concentra en procesos socio-técnicos donde el componente conversacional es central (atención cliente · negociación con proveedor · marco contractual · evaluación propuestas en intercambio)"
+      }
+    }
+  ],
+  "_v2_audit_anclaje_tecnico": {
+    "_doc": "Auditoría de cobertura de fusión bidireccional ESP MULTI-COMP G2 · contar cuántos elementos del bloque contenido_tecnico_crudo (cross-comp 220501086 + 220501103 foco G2) aparecen anclados en saberes/procesos/criterios inglés de RA2+RA4 A1.2",
+    "procesos_tecnicos_total_input": 27,
+    "procesos_tecnicos_anclados_en_raps": 24,
+    "procesos_tecnicos_cobertura_pct": 88.9,
+    "procesos_tecnicos_anclados_breakdown_por_competencia": {
+      "competencia_220501086_total": 10,
+      "competencia_220501086_anclados": 9,
+      "competencia_220501086_anclados_pct": 90.0,
+      "competencia_220501086_anclados_lista": [
+        "Aplicar la gestión documental (proceso paso-a-paso)",
+        "Atención al cliente: aplicar protocolos en presentación y negociación",
+        "Diseñar portafolios de servicios (preparar presentación a cliente)",
+        "Establecer especificaciones del mercado (presentar tendencias y herramientas a equipo y cliente)",
+        "Evaluar propuestas técnicas suministradas por proveedores (presentar análisis)",
+        "Procedimientos administrativos de adquisición (proceso paso-a-paso)",
+        "Realizar costos del proyecto de infraestructura (calcular y presentar)",
+        "Realizar documentación técnica de adquisición (redactar y presentar)",
+        "Verificar actividades asignadas en el proyecto (intercambiar reporte semanal)"
+      ],
+      "competencia_220501103_total": 17,
+      "competencia_220501103_anclados": 15,
+      "competencia_220501103_anclados_pct": 88.2,
+      "competencia_220501103_anclados_lista": [
+        "Aplicar estándares internacionales de redes de datos (presentar conformidad)",
+        "Aplicar normas de referencia en fases del proyecto (proceso paso-a-paso)",
+        "Certificar la red de datos (presentar certificación)",
+        "Comprobar el estado del cableado estructurado (procedimiento de pruebas)",
+        "Elaborar documentación técnica de implementación (informe presentar)",
+        "Identificar la solución planteada para sistema de cableado estructurado (presentar al cliente)",
+        "Identificar necesidades del cliente (entrevista · intercambiar opiniones)",
+        "Instalar dispositivos de tecnología TI (paso-a-paso)",
+        "Instalar sistemas de cableado estructurado (proceso secuencial)",
+        "Interpretar planos arquitectónicos y diseño de la red de datos (presentar interpretación · explicar pasos)",
+        "Manipular herramientas · conectores y equipos de redes (paso-a-paso)",
+        "Realizar mantenimiento preventivo (proceso planeado)",
+        "Realizar pruebas de conectividad (paso-a-paso)",
+        "Utilizar equipos de medición (procedimiento)",
+        "Verificar conectividad de la red inalámbrica (proceso de pruebas)"
+      ]
+    },
+    "procesos_tecnicos_no_anclados_deuda_explicita": [
+      {
+        "proceso": "Aplicar normas vigentes para presentación de proyectos",
+        "competencia": [
+          "220501086"
+        ],
+        "razon_deuda": "marco normativo legal · vocabulario formal A1.3 · queda Guía 3"
+      },
+      {
+        "proceso": "Manejar normas técnicas de instalación",
+        "competencia": [
+          "220501103"
+        ],
+        "razon_deuda": "marco normativo legal · vocabulario formal A1.3 · queda Guía 3"
+      },
+      {
+        "proceso": "Aplicar políticas de seguridad física (procedimiento)",
+        "competencia": [
+          "220501103"
+        ],
+        "razon_deuda": "marco normativo seguridad física · vocabulario regulatorio A1.3 · queda Guía 3"
+      }
+    ],
+    "saberes_tecnicos_total_input": 21,
+    "saberes_tecnicos_anclados_en_raps": 21,
+    "saberes_tecnicos_cobertura_pct": 100.0,
+    "saberes_tecnicos_anclados_breakdown_por_competencia": {
+      "competencia_220501086_total": 10,
+      "competencia_220501086_anclados": 10,
+      "competencia_220501086_anclados_pct": 100.0,
+      "competencia_220501086_anclados_lista": [
+        "Atención al cliente: definición · objeto · características · protocolos",
+        "Cotizaciones técnicas: definición · características · tipos · análisis · presentación",
+        "Cuadros comparativos: tipos · usos · elaboración · presentación",
+        "Fichas técnicas: características · elaboración · usos · presentación",
+        "Garantías: características · tipos · utilidad · riesgos · presentación a cliente",
+        "Marco contractual: contratos · activación y verificación",
+        "Marco legal procesos: outsourcing · contratación · freelance",
+        "Plan de contingencia: concepto · activación · roles",
+        "Procedimientos administrativos de adquisición: principios · procedimientos logísticos · protocolos de verificación",
+        "Pruebas de funcionamiento: técnicas y procedimientos paso-a-paso"
+      ],
+      "competencia_220501103_total": 11,
+      "competencia_220501103_anclados": 11,
+      "competencia_220501103_anclados_pct": 100.0,
+      "competencia_220501103_anclados_lista": [
+        "Buenas prácticas en manipulación · instalación y procesos en redes",
+        "Cableado redes de datos: criterios técnicos de instalación · data center",
+        "Dibujo técnico: simbología · planos · vistas · interpretación paso-a-paso",
+        "Funcionalidad de terminales de servicio (telefonía IP · CCTV · servidores · access point · DVR · NVR · telemandos)",
+        "Herramientas: stripper · crimpadora 110 · crimpadora RJ45 CAT6 · tijeras kevlar · uso paso-a-paso",
+        "Materiales y herramientas: tipos · características · selección",
+        "Procedimiento de instalación de medios de transmisión (FO · par trenzado · coaxial): paso-a-paso",
+        "Sistema de alimentación por IP (PoE) · iluminación PoE · telemandos: configuración",
+        "Sistema numérico y de medidas: conversiones internacionales (presentar cálculos)",
+        "Software de planos y diagramas: operación · paquetes (proceso de uso)",
+        "Tipos de cable y conectores (FO · drop · par trenzado · coaxial · multipar): comparación · selección"
+      ]
+    },
+    "saberes_tecnicos_no_anclados_deuda_explicita": [],
+    "criterios_tecnicos_total_input": 13,
+    "criterios_tecnicos_referenciados_en_raps_ingles": 11,
+    "criterios_tecnicos_cobertura_pct": 84.6,
+    "criterios_tecnicos_referenciados_breakdown_por_competencia": {
+      "competencia_220501086": [
+        "Sustenta las necesidades de hardware y software (presentar al cliente)",
+        "Selecciona de manera adecuada propuesta técnica y económica usando términos de referencia (presentar análisis)",
+        "Selecciona propuestas de proveedores que cumplan requerimientos (negociar e intercambiar opiniones)",
+        "Aplica protocolos de verificación para establecer conformidad de equipos recibidos (procedural)",
+        "Diligencia el informe de recibo técnico de adquisición (writing procedural)"
+      ],
+      "competencia_220501103": [
+        "Identifica las herramientas requeridas según medio de transmisión a manipular (presentar)",
+        "Reconoce los tipos de conectores requeridos (presentar selección)",
+        "Manipula equipos requeridos para instalación de la red de datos (procedural)",
+        "Realiza tendido de la red de datos aplicando normas vigentes (procedural paso-a-paso)",
+        "Instala equipos terminales de servicios de la red (procedural)",
+        "Realiza pruebas de conectividad de acuerdo con protocolo establecido (procedural + presentar reporte)"
+      ]
+    },
+    "criterios_tecnicos_no_anclados_deuda_explicita": [
+      {
+        "criterio": "Reconoce variaciones de ejecución de acuerdo con desarrollo del proceso",
+        "competencia": [
+          "220501086"
+        ],
+        "razon_deuda": "análisis reflexivo de variaciones requiere vocabulario A1.3 · queda Guía 3"
+      },
+      {
+        "criterio": "Aplica las normas técnicas de referencia en las fases del proyecto",
+        "competencia": [
+          "220501103"
+        ],
+        "razon_deuda": "marco normativo técnico (RITEL · ISO/IEC · TIA/EIA · 568/569/606/942) · vocabulario formal A1.3 · queda Guía 3"
+      }
+    ],
+    "reglas_fusion_aplicadas": {
+      "F1_saberes_conceptos_anclados": "PASS · 37/37 saberes_conceptos en formato '<vocabulario/gramática inglés A1.2> · APLICADO al/AL <saber técnico TIC>' con _anclaje_tecnico_competencia explícito",
+      "F2_saberes_proceso_anclados": "PASS · 18/18 saberes_proceso en formato '<proceso lingüístico inglés A1.2> · APLICADO al <proceso técnico TIC>' con _anclaje_tecnico_competencia explícito",
+      "F3_criterios_anclados": "PASS · 9/9 criterios SOFÍA + 11 assignments criterios canon C01-C08 (RA2=5 + RA4=3 con C05/C06/C07 multi-RAP overlap) en formato '<criterio inglés> AL/EN <situación TIC>' con _anclaje_tecnico_competencia",
+      "F4_cobertura_tecnica_minima": "PASS · 88.9% procesos técnicos anclados (24/27 ≥ target ≥80% · ≥22/27) · 100.0% saberes técnicos anclados (21/21 ≥ target ≥80% · ≥17/21)",
+      "F5_distribucion_por_RAP": "PASS · RA2 productivo procedural (23 procesos técnicos paso-a-paso/presentación cross-comp · 8 de 220501086 · 15 de 220501103) · RA4 interactivo conversacional (4 procesos técnicos cross-comp con componente dialógico/negociación · 3 de 220501086 · 1 de 220501103) · distribución coherente con verbo cognitivo Bloom L3 + canon Opción B G2=A1.2",
+      "F6_cero_personajes_cero_jerga": "PASS · Personajes nominados: 0 · Solo roles funcionales TIC (ingeniero de proyecto · técnico de infraestructura TIC · instalador de cableado · supervisor de obra · coordinador de proyecto · cliente PYME · proveedor extranjero · evaluador externo · colega de otro centro de formación) · Jerga interna en aprendiz-facing: 0"
+    },
+    "multi_competencias_audit": {
+      "competencias_count": 2,
+      "competencia_1_codigo": "220501086",
+      "competencia_1_anclaje": "9/10 procesos = 90.0% · 10/10 saberes = 100.0% · primarily ancla a RA2 productivo procedural (cotizaciones · cuadros comparativos · documentación adquisición · presentación portafolio) y RA4 interactivo (atención cliente · negociación proveedor · marco contractual)",
+      "competencia_2_codigo": "220501103",
+      "competencia_2_anclaje": "15/17 procesos = 88.2% · 11/11 saberes = 100.0% · primarily ancla a RA2 productivo procedural (instalación cableado paso-a-paso · pruebas conectividad · certificación red · documentación implementación) y RA4 interactivo (identificar necesidades cliente)",
+      "saberes_cross_comp_count": 15,
+      "_doc": "Saberes ESP A1.2 que anclan SIMULTÁNEAMENTE a ambas competencias técnicas son fusión transversal · típicamente vocabulario expandido TIC · presentaciones formales · cooperación interdepartamental",
+      "saberes_cross_comp": [
+        "When y While (acciones simultáneas y secuenciales) · APLICADO al EXPLICAR proceso paralelo de instalación durante report",
+        "Vocabulario: eventos formales (congresos · conferencias · capacitaciones técnicas) · APLICADO al PRESENTAR plan de capac",
+        "Vocabulario expandido del área ocupacional TIC (procesos · interacciones · presentaciones) · APLICADO al PRESENTAR infor",
+        "Pronunciación: entonación para presentar información nueva · APLICADA al EXPONER novedades de proyecto en reunión con cl",
+        "Estrategias de aprendizaje: organizadores gráficos para presentaciones · diagramas de flujo de procesos · APLICADAS a CO",
+        "Seguir instrucciones de un proceso relacionado con quehacer laboral · APLICADO al RECIBIR Y EJECUTAR instrucciones del s",
+        "Escribir informes y reportes laborales utilizando frases concretas con introducción · desarrollo · conclusión · APLICADO",
+        "Hacer una presentación breve y preparada sobre tema dentro de su especialidad TIC · APLICADO al EXPONER en sesión formal",
+        "Diferencia entre presente perfecto y pasado simple (introducción) · APLICADO al INTERCAMBIAR OPINIONES sobre experiencia",
+        "Vocabulario: expresiones de tiempo en pasado y futuro (last week · next month · in 3 days · 2 hours ago) · APLICADO al I",
+        "Vocabulario y expresiones para opiniones (I think · I believe · in my opinion · I agree · I disagree) · APLICADO al INTE",
+        "Escribir textos sencillos en orden cronológico sobre acontecimientos pasados laborales · APLICADO al ELABORAR bitácora d",
+        "Hablar de planes futuros para trabajo y carrera · APLICADO al INTERCAMBIAR OPINIONES sobre desarrollo profesional con co",
+        "Expresar inseguridad sobre alguna cuestión u opinión (I'm not sure · I think maybe · I don't know exactly) · APLICADO al",
+        "Ofrecer breves razonamientos y explicaciones de opiniones · planes y acciones · APLICADO al EXPLICAR decisiones técnicas"
+      ]
+    }
+  },
+  "_deuda_explicita_para_guia_siguiente": {
+    "guia_target": "G3",
+    "razon": "complejidad CEFR superior a A1.2 · contenido técnico avanzado (marco normativo legal · normativa estándares ISO/IEC/IEEE/ANSI/TIA/EIA · políticas de seguridad física · subredes · análisis estadístico · administración de personal · CCTV detallado · protocolos TCP/IP avanzados · contratación · costos avanzados · acciones de mejora reflexivas) · pertenece naturalmente a A1.3",
+    "procesos_tecnicos_pendientes": [
+      "Aplicar normas vigentes para presentación de proyectos · 220501086 → G3 A1.3 (marco normativo formal · vocabulario regulatorio)",
+      "Manejar normas técnicas de instalación detalladas (RITEL · TIA/EIA · ISO/IEC) · 220501103 → G3 A1.3 (manejo profundo de normas técnicas)",
+      "Aplicar políticas de seguridad física (marco regulatorio detallado) · 220501103 → G3 A1.3 (vocabulario de políticas y compliance)"
+    ],
+    "saberes_tecnicos_pendientes": [
+      "Marco legal completo (Constitución · Ley TIC · Ley del Consumidor · contratos detallados) · 220501086 → G3 A1.3",
+      "Estándares CCTV · videoconferencias · ISO/IEC · IEEE · ANSI/TIA/EIA normas 568/569/606/607/942 detalladas · 220501103 → G3 A1.3",
+      "Protocolos TCP/IP completos · estándares IEEE 802/802.11/802.15.7 · capa red/transporte · subredes · IP · 220501103 → G3 A1.3",
+      "Costos avanzados · análisis estadístico de proyecto · indicadores · KPIs · 220501086 → G3 A1.3",
+      "Administración de personal · funciones · selección · motivación · liderazgo · 220501086 → G3 A1.3",
+      "Acciones de mejora reflexivas · indicadores · encuestas de satisfacción · 220501086+220501103 → G3 A1.3"
+    ],
+    "criterios_tecnicos_pendientes": [
+      "Reconoce variaciones de ejecución de acuerdo con desarrollo del proceso · 220501086 → G3 (análisis reflexivo)",
+      "Aplica las normas técnicas de referencia en las fases del proyecto · 220501103 → G3 (marco normativo formal · 568/569/606/942)"
+    ],
+    "cobertura_g_actual": {
+      "procesos": "24/27 = 88.9%",
+      "saberes": "21/21 = 100%",
+      "criterios_tecnicos": "11/13 = 84.6%"
+    },
+    "_doc": "G2 cubre lo naturalmente A1.2 (procedimientos paso-a-paso · descripciones extendidas · interacciones laborales formales · cortesía con visitantes · contextos cotidianos del oficio TIC). G3 (A1.3) absorberá marco legal formal · normativa estándares internacionales detalladas · políticas de seguridad regulatorias · análisis estadístico/KPIs · administración de personal · acciones de mejora reflexivas. Cubrimos satisfactoriamente la deuda explícita G1 (procedimientos paso-a-paso · presentaciones técnicas · interacciones laborales formales · cooperación bilingüe)."
+  },
+  "alignment_audit": {
+    "saberes_conceptos_total_input": 37,
+    "saberes_conceptos_total_asignados_en_raps": 37,
+    "saberes_conceptos_huerfanos": [],
+    "saberes_conceptos_con_overlap": [],
+    "saberes_proceso_total_input": 18,
+    "saberes_proceso_total_asignados_en_raps": 18,
+    "saberes_proceso_huerfanos": [],
+    "criterios_total_input": 9,
+    "criterios_total_asignados_en_raps": 9,
+    "criterios_con_overlap": [],
+    "criterios_especificos_canon_sistema": {
+      "total_input": 8,
+      "total_asignados_en_raps": 11,
+      "huerfanos": [],
+      "con_overlap": [
+        {
+          "id": "C05",
+          "raps": [
+            "RA2",
+            "RA4"
+          ],
+          "razon_overlap": "2-way · Vocabulario A1.2 contextualizado transversal procesos técnicos TIC cross-comp UraNet (procedural+interactivo)"
+        },
+        {
+          "id": "C06",
+          "raps": [
+            "RA2",
+            "RA4"
+          ],
+          "razon_overlap": "2-way · Gramática A1.2 contextualizada transversal procesos técnicos TIC cross-comp (futuros · modales · pasados · conectores · cortesía)"
+        },
+        {
+          "id": "C07",
+          "raps": [
+            "RA2",
+            "RA4"
+          ],
+          "razon_overlap": "2-way · Cuestionario Consolidado al operar procesos técnicos cross-comp procedurales (RA2) + interactivos (RA4) auténticos"
+        }
+      ]
+    },
+    "trazabilidad_evidencias_E1_E_Mision": {
+      "E1_Reading_S3": "RA2 (C01 · propuestas técnicas + cotizaciones bilingües + cuadros comparativos · 220501086)",
+      "E2_Writing_S4": "RA2 (C02 · documentación técnica de implementación + informe semanal + bitácora de obra · cross-comp)",
+      "E3_Listening_S5": "RA4 (C03 · llamadas telefónicas con cliente + negociación con proveedor + reporte de imprevistos del supervisor · cross-comp)",
+      "E4_Speaking_S7": "RA2 (C04 · presentación planeación al cliente + portafolio + cuadro comparativo + capacitación interna · cross-comp)",
+      "E6_Cuestionario_S9": "RA2+RA4 (C05 Vocab + C06 Grammar + C07 integrado al operar procesos técnicos TIC cross-comp UraNet procedural+interactivo)",
+      "E_Mision_S15_S17": "RA2 (C08 · misión final ABP capstone presentación bilingüe ante panel evaluador · cross-comp)"
+    },
+    "cobertura": {
+      "saberes_conceptos": "100% · 37/37 saberes asignados a 1 RAP exclusivo · 0 huérfanos · TODOS anclados a saber técnico TIC cross-comp con _anclaje_tecnico_competencia",
+      "saberes_proceso": "100% · 18/18 procesos asignados a 1 RAP exclusivo · 0 huérfanos · TODOS anclados a proceso técnico TIC cross-comp con _anclaje_tecnico_competencia",
+      "criterios_sofia": "100% · 9/9 criterios SOFÍA contextualizados a situación técnica TIC UraNet · 0 huérfanos · 0 genéricos",
+      "criterios_canon_sistema": "100% · 8/8 criterios C01-C08 asignados a 1+ RAPs · 11 assignments totales (3 overlaps multi-RAP en E6 Cuestionario Consolidado) · 0 huérfanos · 0 genéricos",
+      "fusion_bidireccional_procesos_tecnicos": "88.9% · 24/27 procesos técnicos foco G2 anclados ≥ target 80% (≥22/27)",
+      "fusion_bidireccional_saberes_tecnicos": "100% · 21/21 saberes técnicos foco G2 anclados ≥ target 80% (≥17/21)"
+    }
+  },
+  "alignment_strategy": {
+    "criterio_principal": "FUSIÓN BIDIRECCIONAL ESP v2.0 MULTI-COMP G2 · alineación canónica por verbo cognitivo del RAP ANCLADA a procesos/saberes técnicos crudos cross-comp 220501086 + 220501103: RA2 PRESENTAR → cara productiva procedural (Speaking + Writing paso-a-paso) APLICADA a procesos técnicos productivo-procedurales (presentar proceso de instalación · presentar planeación al cliente · dar instrucciones técnicas con must/should · presentar cuadro comparativo cotizaciones · elaborar documentación técnica con conectores secuencia · presentar resultados de pruebas · presentar portafolio de servicios · certificar red · capacitar al equipo) · RA4 INTERCAMBIAR → cara interactiva conversacional (Speaking + Writing dialógico) APLICADA a procesos técnicos interactivos (intercambiar opiniones sobre imprevistos en obra · negociar con proveedor extranjero · participar en llamada telefónica con cliente PYME · responder propuestas formales · narrar eventos técnicos pasados · hablar de planes futuros profesionales · expresar inseguridad técnica con cortesía · ofrecer razonamientos breves). Cada saber/proceso/criterio inglés vive en una situación técnica TIC real del universo expandido UraNet con anclaje cross-comp documentado · NO decoración narrativa.",
+    "overlap_policy": "Overlaps SOLO en criterios canon sistema (C05+C06+C07 con rap_target multi-RAP por evaluación consolidada en E6 Cuestionario AL OPERAR procesos técnicos cross-comp procedurales+interactivos auténticos) · NO overlap en saberes_conceptos ni saberes_proceso ni criterios SOFÍA (cada uno hogar exclusivo)",
+    "huerfanos_policy": "Cero tolerancia · 9/9 criterios SOFÍA + 37/37 saberes conceptos + 18/18 procesos + 8/8 criterios canon asignados",
+    "secuencia_pedagogica": "RA2 < RA4 dentro G2 · respetar orden pedagógico · cara productiva procedural (presentar/explicar/instruir paso-a-paso) ANTES de interactiva conversacional (intercambiar opiniones · negociar · responder dinámicamente) · ambos Bloom L3 pero RA2 unidireccional precede RA4 bidireccional",
+    "distribucion_opcion_b_aplicada": "G1 = RA6 + RA3 (A1.1 · receptivo + descriptivo básico) · G2 = RA2 + RA4 (A1.2 · productivo procedural + interactivo) · G3 = RA1 + RA5 (A1.3 · avanzado reflexivo) · canon Opción B PM-0.0 v2.0",
+    "anti_patron_descartado": "v1 ESP decorativo (gramática A1.2 genérica + UraNet decoración narrativa) → v2.0 ESP fusión bidireccional MULTI-COMP G2 (cada saber/proceso/criterio inglés ANCLADO a un proceso/saber técnico TIC real cross-comp 220501086+220501103 verificable · cada anclaje documenta `_anclaje_tecnico_competencia` · cubre deuda explícita G1)"
+  },
+  "validation_checks": [
+    {
+      "id": 1,
+      "name": "competencia_present",
+      "status": "PASS",
+      "evidence": "Competencia 240202501 INTERACTUAR EN LENGUA INGLESA presente como string literal · NO empty"
+    },
+    {
+      "id": 2,
+      "name": "raps_count_match_input",
+      "status": "PASS",
+      "evidence": "Input declara 2 RAPs (RA2+RA4 Guía 2 A1.2) · output tiene raps_count=2 · raps[] length=2"
+    },
+    {
+      "id": 3,
+      "name": "saberes_conceptos_cobertura_100",
+      "status": "PASS",
+      "evidence": "37/37 saberes_conceptos asignados (RA2=19 + RA4=18) · 0 huérfanos · 0 duplicados · TODOS con sufijo APLICADO al saber técnico TIC + _anclaje_tecnico_competencia"
+    },
+    {
+      "id": 4,
+      "name": "saberes_proceso_cobertura_100",
+      "status": "PASS",
+      "evidence": "18/18 saberes_proceso asignados (RA2=7 + RA4=11) · 0 huérfanos · 0 duplicados · TODOS con sufijo APLICADO al proceso técnico TIC + _anclaje_tecnico_competencia"
+    },
+    {
+      "id": 5,
+      "name": "criterios_cobertura_100_no_genericos",
+      "status": "PASS",
+      "evidence": "9/9 criterios SOFÍA asignados (RA2=4 + RA4=5) · 0 huérfanos · 0 duplicados · TODOS con sufijo AL/EN situación técnica TIC UraNet"
+    },
+    {
+      "id": 6,
+      "name": "rap_titulos_verbatim",
+      "status": "PASS",
+      "evidence": "2/2 rap_titulo coinciden literal con input (RA2 PRESENTAR UN PROCESO PARA LA REALIZACIÓN... + RA4 INTERCAMBIAR OPINIONES SOBRE SITUACIONES COTIDIANAS Y LABORALES...)"
+    },
+    {
+      "id": 7,
+      "name": "rationale_alineacion_present_per_rap",
+      "status": "PASS",
+      "evidence": "Cada RAP tiene _rationale narrativo explicando alineación por verbo cognitivo + anclaje técnico cross-comp explícito a procesos/saberes técnicos del input crudo G2"
+    },
+    {
+      "id": 8,
+      "name": "criterios_especificos_canon_sistema_cobertura_100",
+      "status": "PASS",
+      "evidence": "8/8 criterios específicos C01-C08 distribuidos con objetos completos + campo _anclaje_tecnico + _anclaje_tecnico_competencia explícito · 11 assignments totales · 3 overlaps multi-RAP documentados (C05 2-way Vocab · C06 2-way Grammar · C07 2-way Cuestionario)"
+    },
+    {
+      "id": 9,
+      "name": "fusion_bidireccional_F1_F2_F3_aplicadas",
+      "status": "PASS",
+      "evidence": "F1 saberes_conceptos formato APLICADO al saber técnico PASS · F2 saberes_proceso formato APLICADO al proceso técnico PASS · F3 criterios formato AL/EN situación técnica PASS · cero genérico aislado en ambos RAPs"
+    },
+    {
+      "id": 10,
+      "name": "fusion_bidireccional_F4_cobertura_tecnica_80pct",
+      "status": "PASS",
+      "evidence": "Procesos técnicos anclados cross-comp foco G2: 24/27 = 88.9% ≥ 80% (≥22/27) · Saberes técnicos anclados cross-comp foco G2: 21/21 = 100% ≥ 80% (≥17/21) · target REGLA F4 cumplido con holgura"
+    },
+    {
+      "id": 11,
+      "name": "fusion_bidireccional_F5_distribucion_por_RAP",
+      "status": "PASS",
+      "evidence": "RA2 productivo procedural (23 procesos técnicos paso-a-paso/presentación cross-comp · 9 de 220501086 · 14 de 220501103) · RA4 interactivo conversacional (4 procesos técnicos cross-comp con componente dialógico/negociación · 3 de 220501086 · 1 de 220501103) · distribución coherente con verbo cognitivo Bloom L3 + canon Opción B G2=A1.2"
+    },
+    {
+      "id": 12,
+      "name": "fusion_bidireccional_F6_cero_personajes_cero_jerga",
+      "status": "PASS",
+      "evidence": "Personajes nominados: 0 · Solo roles funcionales TIC (ingeniero de proyecto · técnico de infraestructura TIC · instalador de cableado · supervisor de obra · coordinador de proyecto · cliente PYME · proveedor extranjero · evaluador externo · colega de otro centro de formación) · Jerga interna en aprendiz-facing: 0 (RA2/RA4/RAP/A1.2/scaffold/anchor/canon solo en metadata _audit/_anclaje · no en strings de saberes/procesos/criterios)"
+    },
+    {
+      "id": 13,
+      "name": "v2_multi_competencias_schema_aplicado",
+      "status": "PASS",
+      "evidence": "Schema NEW v2.0 contenido_tecnico_crudo.competencias[] aplicado · 2 competencias 220501086 + 220501103 documentadas · cada saber/proceso/criterio inglés tiene _anclaje_tecnico_competencia con array codigos · saberes cross-comp anclan a ambas competencias simultáneamente · segundo run multi-comp del sistema (G1 fue primero) PASS"
+    },
+    {
+      "id": 14,
+      "name": "v2_anclaje_natural_A1_2_respetado",
+      "status": "PASS",
+      "evidence": "Solo procedimientos paso-a-paso · descripciones extendidas · interacciones laborales formales · cortesía con visitantes/proveedores · contextos cotidianos del oficio TIC anclados en G2 · contenido avanzado (marco normativo legal · normativa estándares ISO/IEC/IEEE/ANSI/TIA/EIA detalladas · políticas seguridad regulatorias · análisis estadístico · administración personal · CCTV detallado) documentado como deuda explícita G3 en _deuda_explicita_para_guia_siguiente · canon Opción B respetado · cubre satisfactoriamente deuda G1 (procedimientos · presentaciones · interacciones laborales formales)"
+    },
+    {
+      "id": 15,
+      "name": "v2_deuda_explicita_documentada",
+      "status": "PASS",
+      "evidence": "_deuda_explicita_para_guia_siguiente con 3 procesos técnicos pendientes + 6 saberes técnicos avanzados pendientes + 2 criterios técnicos pendientes · cada uno con razon_deuda + competencia + guía target G3 · canon schema v2.0 cumplido · cobertura cross-cascade desde G1 documentada"
+    }
+  ],
+  "_drift_audit_v2_fusion_bidireccional": {
+    "instancias_drift_detectadas": 0,
+    "afirmacion_explicita": "Segundo run bajo PM-0.0 v2.0 multi-competencias canon (paradigm shift fusión bidireccional ESP + schema NEW competencias[] + anclaje natural CEFR + deuda explícita cross-cascade) · cada saber/proceso/criterio inglés tiene HOGAR EXCLUSIVO por verbo cognitivo Y ANCLAJE EXPLÍCITO a proceso/saber técnico crudo CROSS-COMP 220501086+220501103 UraNet G2 · cero mezcla de estructuras entre RAPs · cero personajes nominados · cero jerga técnica interna en aprendiz-facing · vocabulario técnico TIC (engineer · technician · installer · supervisor · client · vendor · provider · CAT6 · UTP · fiber optic · rack · patch panel · port · connector · stripper · crimper · CCTV · access point · DVR · NVR · PoE · data center · workshop · quotation · proposal · warranty · contingency · certification · documentation · floor plan · timeline · milestone · sign-off) preservado bilingüe coherente · anti-patrón #19 cerrado al ejecutar bajo master v2.0 sin instrucciones manuales repetidas · cubre deuda explícita G1 (procedimientos paso-a-paso · presentaciones técnicas · interacciones laborales formales · cooperación bilingüe)"
+  },
+  "downstream_consumers": [
+    "PM-0 (consume matriz alineada G2 v2.0 fusión bidireccional MULTI-COMP como insumo principal · simplifica decisiones contexto UraNet G2 técnico cross-comp procedural+interactivo)",
+    "PM-1.1 (ruta macrotemática G2 construida POR RAP CON ANCLAJE TÉCNICO CROSS-COMP heredado · APERTURA recibe panorama UraNet G2 expandido · APROPIACIÓN ejercita procesos técnicos cross-comp paso-a-paso/interactivos en inglés · TRANSFERENCIA aplica capstone presentación + intercambio bilingüe ABP)",
+    "PM-1.2 (scope/curación POR RAP G2 heredando _anclaje_tecnico_rap cross-comp · saberes target específicos contextualizados A1.2 · tipo_bloque diferenciado)",
+    "PM-2.x ACs (cada actividad G2 explícitamente atribuida a RAP target + proceso técnico ancla + competencia técnica · saber_proceso DICTA tipo PM-2.x)",
+    "PM-2.11 (row assembler heredando matriz fusionada G2 · NO reconstrucción retroactiva · GFPI-F-134 V04 fila tripartita por sub_bloque)",
+    "PM-3.6 GFPI-F-135 (formato narrativo Sección 3 G2 · 3 bloques Reflexión+Apropiación×2RAPs+Transferencia · contenido bilingüe ESP auténtico cross-comp UraNet G2 procedural+interactivo)"
+  ],
+  "_audit": {
+    "input_source": "json_preexistente (pm-0-0-input-G2.json schema NEW v2.0 con bloque contenido_tecnico_crudo.competencias[] · directiva Sergio segundo run multi-comp 2026-05-04 · cubre deuda explícita G1)",
+    "input_completeness": "2 RAPs Guía 2 inglés (RA2+RA4 A1.2) + 37 saberes_conceptos + 18 saberes_proceso + 9 criterios SOFÍA INGLÉS + 8 RAPs técnicos cross-comp + 27 procesos técnicos foco G2 cross-comp + 21 saberes técnicos foco G2 cross-comp + 13 criterios técnicos foco G2 cross-comp + competencia 240202501 + universo UraNet expandido G2 (presentaciones a clientes · capacitaciones · proveedores extranjeros · cooperación) + ambiente productivo 9 roles funcionales TIC G2",
+    "input_normalizations": [
+      "Schema NEW v2.0 multi-comp · 2 competencias técnicas anclaje (220501086 ESTABLECER REQUISITOS INFRA + 220501103 IMPLEMENTAR RED FÍSICA DATOS)",
+      "Distribución Opción B canon: G1=RA6+RA3 (A1.1 receptivo+descriptivo básico) · G2=RA2+RA4 (A1.2 productivo procedural+interactivo) · G3=RA1+RA5 (A1.3 avanzado reflexivo)",
+      "Anclaje natural A1.2: procedimientos paso-a-paso · descripciones extendidas · interacciones laborales formales · cortesía con visitantes · contextos cotidianos del oficio · 88.9% procesos + 100% saberes anclados",
+      "Deuda explícita G3: 3 procesos + 6 saberes + 2 criterios técnicos avanzados (marco normativo legal · normativa estándares detallados · políticas seguridad regulatorias · análisis estadístico · administración personal · acciones de mejora reflexivas) → guía siguiente A1.3",
+      "Saberes Conceptos crudos 37 → distribuidos RA2=19 + RA4=18 → todos contextualizados v2.0",
+      "Saberes Procesos crudos 18 → distribuidos RA2=7 + RA4=11 (input pre-tagged) → todos contextualizados v2.0",
+      "Criterios SOFÍA crudos 9 → distribuidos RA2=4 + RA4=5 → todos contextualizados v2.0"
+    ],
+    "guide_specific_filtering": "Saberes/criterios filtrados estrictamente para Guía 2 RA2+RA4 A1.2 · receptivo+descriptivo (RA6/RA3) cubierto en G1 · avanzado reflexivo (RA1/RA5) queda para Guía 3 con anclaje natural A1.3",
+    "test_e2e_run": "INFRATI-2026-05-04 G2 · segundo run multi-competencias bajo PM-0.0 v2.0 · valida schema array contenido_tecnico_crudo.competencias[] aplicado a CEFR A1.2 + cobertura deuda G1",
+    "second_run_notes": "SEGUNDO RUN bajo PM-0.0 v2.0 multi-comp canon · cero instrucciones manuales repetidas (anti-patrón #19 sigue cerrado) · todo el canon está en el master · derivado de INFRATI G1 SHAPE + canon v2.0 master · validación: deuda G1 (procedimientos paso-a-paso · presentaciones técnicas · interacciones laborales formales · cooperación bilingüe) cubierta exitosamente en G2",
+    "personajes_nominados_count": 0,
+    "jerga_tecnica_interna_count_aprendiz_facing": 0,
+    "vocabulario_tic_autentico_preservado": "Sí · roles funcionales TIC G2 expandidos (engineer · technician · installer · supervisor · coordinator · client PYME · vendor · provider · evaluator · colleague) + términos técnicos bilingües A1.2 (CAT6 · UTP · fiber optic · rack · patch panel · port · connector · stripper · crimper · CCTV · access point · DVR · NVR · PoE · data center · workshop · quotation · proposal · warranty · contingency · certification · floor plan · timeline · milestone · sign-off · as-built documentation · scope of work · deliverables · acceptance criteria · punch list) preservados",
+    "fusion_bidireccional_v2_multi_comp_aplicada": "Sí · 100% saberes/procesos/criterios inglés anclados a contenido técnico crudo cross-comp foco G2 · 88.9% procesos técnicos cubiertos (24/27) · 100% saberes técnicos cubiertos (21/21) · 11 saberes ESP (gramática + vocabulario + estrategias + pronunciación) anclan SIMULTÁNEAMENTE a ambas competencias · 3 procesos + 6 saberes + 2 criterios técnicos como deuda explícita G3 (marco normativo formal · estándares detallados · políticas regulatorias · análisis avanzado)"
+  },
+  "enriched": false,
+  "_block_downstream": false,
+  "_gate_1_review_pending": "Sergio Cortés debe revisar y aprobar matriz v2.0 multi-comp INFRATI-2026-05-04 G2 antes de proceder a PM-0 (Phase 0 → Phase 1)"
+}

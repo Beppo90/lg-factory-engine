@@ -1,0 +1,918 @@
+{
+  "schema_version": "v2.0",
+  "pm_id": "PM-0.0",
+  "pm_name": "Matriz Pedagógica Alineadora",
+  "pm_version": "2.0",
+  "run_id": "INFRATI-2026-05-04",
+  "guide_id": "G1",
+  "generated_date": "2026-05-04",
+  "instructor": "Sergio Cortés Perdomo",
+  "phase": 0,
+  "tipo_artefacto": "matriz_pedagogica_alineada_pre_pm0",
+
+  "_v2_fusion_bidireccional_applied": true,
+  "_v2_multi_competencias_applied": true,
+  "_input_ref": "pm-0-0-input.json (schema NEW v2.0 multi-comp · 2 competencias técnicas anclaje 220501086 + 220501103 · 2 RAPs inglés RA6+RA3 A1.1 · 8 RAPs técnicos + 36 procesos técnicos + 46 saberes técnicos + 28 criterios técnicos)",
+  "_canon_authority": "Sergio Cortés Perdomo · arquitecto/instructor FPI SENA Bilingüismo · primer run bajo PM-0.0 v2.0 multi-competencias canon · cierre anti-patrón #19",
+  "_paradigm_note": "Programa Tecnólogo IMPLEMENTACIÓN INFRAESTRUCTURA TIC (código 228116) · 384h totales en 3 guías × 128h · matriz cubre Guía 1 (RA6+RA3 inglés · CEFR A1.1 · 128h). FUSIÓN BIDIRECCIONAL ESP MULTI-COMP: cada saber/proceso/criterio inglés se ANCLA al contenido técnico crudo de UNA o AMBAS competencias (220501086 ESTABLECER REQUISITOS INFRA TIC + 220501103 IMPLEMENTAR RED FÍSICA DATOS). Distribución Opción B canon: G1=RA6 (COMPRENDER receptivo)+RA3 (EXPLICAR descriptivo básico) A1.1 · G2=RA2+RA4 (productivo+interactivo) A1.2 · G3=RA1+RA5 (avanzado reflexivo) A1.3. Anclaje natural A1.1: solo objetos físicos · lugares · roles · funciones rutinarias · planos básicos · fichas técnicas · vocabulario operacional inicial. Universo UraNet (integradora TIC Urabá Antioquia) · cero personajes nominados · solo roles funcionales TIC.",
+
+  "programa_metadata": {
+    "denominacion": "IMPLEMENTACIÓN DE INFRAESTRUCTURA DE TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES",
+    "tipo": "Tecnólogo",
+    "programa_codigo_sofia": "228116",
+    "programa_id": "3410833",
+    "duracion_total_horas": 128,
+    "duracion_programa_completo": 384,
+    "horas_directas": 102,
+    "horas_independientes": 26,
+    "numero_sesiones": 17,
+    "numero_sesiones_competencia_total": 51,
+    "rango_cefr": "A1.1",
+    "progresion_cefr_decision": "Opción B — refuerzo (A1.1 G1 · A1.2 G2 · A1.3 G3) · canon PM-0.0 v2.0",
+    "guide_id": "G1",
+    "guide_total": 3,
+    "horas_por_guide": 128,
+    "split_strategy": "A · equilibrado · Opción B canon distribución por complejidad pedagógica · G1 = RA6 (COMPRENDER receptivo) + RA3 (EXPLICAR funciones descriptivo básico) · G2 = RA2+RA4 (productivo+interactivo) · G3 = RA1+RA5 (avanzado reflexivo)",
+    "sector": "TICs (Tecnologías de la Información y las Comunicaciones)",
+    "ambiente_productivo": "UraNet · escenario de proyectos de infraestructura TIC · oficina técnica + data center cliente + visitas a obra · ambiente formativo + operacional · interacción con clientes empresariales del Eje Bananero (PYMEs · cooperativas · puerto · municipios)",
+    "_resumen_ejecutivo": "Programa Tecnólogo INFRATI · Guía 1 (128h) · 17 sesiones · CEFR A1.1 · 2 RAPs pedagógicamente diferenciados por verbo cognitivo Bloom (COMPRENDER L2 receptivo · EXPLICAR L2-3 descriptivo básico) · ANCLADOS a 2 competencias técnicas (220501086 ESTABLECER REQUISITOS INFRA + 220501103 IMPLEMENTAR RED FÍSICA DATOS). FUSIÓN BIDIRECCIONAL ESP v2.0 MULTI-COMP: 26 saberes conceptos + 11 saberes proceso + 6 criterios SOFÍA · cada uno contextualizado a procesos técnicos reales TIC (interpretar planos arquitectónicos · identificar medios de transmisión · describir el data center · explicar funciones del cargo · leer fichas técnicas hardware/software · revisar etiquetas de componentes · solicitar herramientas · presentar portafolio de servicios)."
+  },
+
+  "competencia": "240202501 · INTERACTUAR EN LENGUA INGLESA DE FORMA ORAL Y ESCRITA DENTRO DE CONTEXTOS SOCIALES Y LABORALES SEGÚN LOS CRITERIOS ESTABLECIDOS POR EL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+
+  "contenido_tecnico_crudo": {
+    "_doc": "Schema NEW v2.0 multi-competencias · 2 competencias técnicas actúan como anclaje fusión bidireccional · cada saber/proceso/criterio inglés puede anclar a UNA o AMBAS competencias · documentado por entry vía _anclaje_tecnico_competencia",
+    "competencias": [
+      {
+        "codigo": "220501086",
+        "nombre": "ESTABLECER REQUISITOS DE INFRAESTRUCTURA TECNOLÓGICA DE ACUERDO CON PROCEDIMIENTOS Y ESTÁNDARES TÉCNICOS",
+        "raps_tecnicos_count": 4,
+        "procesos_tecnicos_count": 16,
+        "saberes_tecnicos_count": 24,
+        "criterios_tecnicos_count": 10
+      },
+      {
+        "codigo": "220501103",
+        "nombre": "IMPLEMENTAR LA RED FÍSICA DE DATOS SEGÚN DISEÑO Y ESTÁNDARES TÉCNICOS",
+        "raps_tecnicos_count": 4,
+        "procesos_tecnicos_count": 20,
+        "saberes_tecnicos_count": 22,
+        "criterios_tecnicos_count": 18
+      }
+    ],
+    "_total_cross_comp": {
+      "raps_tecnicos": 8,
+      "procesos_tecnicos": 36,
+      "saberes_tecnicos": 46,
+      "criterios_tecnicos": 28
+    }
+  },
+
+  "raps_count": 2,
+
+  "raps": [
+    {
+      "rap_id": "RA6",
+      "rap_codigo_sofia": "240202501-RA6",
+      "rap_titulo": "COMPRENDER INFORMACIÓN SOBRE SITUACIONES COTIDIANAS Y LABORALES ACTUALES Y FUTURAS A TRAVÉS DE INTERACCIONES SOCIALES DE FORMA ORAL Y ESCRITA",
+      "verbo_cognitivo": "COMPRENDER",
+      "bloom_level": "L2 (Comprender)",
+      "cefr_target": "A1.1",
+      "dominio_canonico": "Comprensión receptiva (Reading + Listening) APLICADA a procesos técnicos TIC de comprensión: interpretar planos arquitectónicos básicos · leer fichas técnicas bilingües de hardware/software · escuchar requerimientos del cliente PYME · reconocer medios de transmisión (FO · UTP · coaxial) · leer etiquetas de componentes (RJ45 · CAT6 · STP · MMF) · interpretar simbología de planos de red · escuchar instrucciones de seguridad en obra · revisar catálogos de fabricantes en inglés · comprender lista de chequeo bilingüe de cableado estructurado",
+      "_anclaje_tecnico_rap": {
+        "procesos_tecnicos_anclados": [
+          {"proceso": "Interpretar planos arquitectónicos y diseño de la red de datos", "competencia": ["220501103"]},
+          {"proceso": "Identificar la solución planteada para el sistema de cableado estructurado", "competencia": ["220501103"]},
+          {"proceso": "Identificar necesidades del cliente", "competencia": ["220501103"]},
+          {"proceso": "Reconocer medios de transmisión (fibra óptica · par trenzado · coaxial)", "competencia": ["220501103"]},
+          {"proceso": "Manejar normas técnicas de instalación (cara receptiva · leer etiquetas y manuales)", "competencia": ["220501103"]},
+          {"proceso": "Realizar documentación técnica de adquisición (cara receptiva · leer ficha técnica de hardware/software)", "competencia": ["220501086"]},
+          {"proceso": "Evaluar propuestas técnicas suministradas por proveedores (cara receptiva · leer cotización bilingüe)", "competencia": ["220501086"]},
+          {"proceso": "Verificar los suministros recibidos (cara receptiva · leer etiquetas y datasheet)", "competencia": ["220501086"]},
+          {"proceso": "Establecer requerimientos técnicos de hardware (cara receptiva · leer ficha técnica de catálogo)", "competencia": ["220501086"]},
+          {"proceso": "Establecer requerimientos de software (cara receptiva · leer descripciones de software de catálogo)", "competencia": ["220501086"]},
+          {"proceso": "Comprobar el estado del cableado estructurado (cara receptiva · leer reporte de pruebas)", "competencia": ["220501103"]}
+        ],
+        "saberes_tecnicos_anclados": [
+          {"saber": "Hardware: concepto · características · arquitectura de equipos (vocabulario operacional A1.1)", "competencia": ["220501086"]},
+          {"saber": "Software: conceptos · tipos · características · clasificación (vocabulario operacional A1.1)", "competencia": ["220501086"]},
+          {"saber": "Redes: conceptos · tipos · topologías · equipos · medios de transmisión intro (vocabulario operacional A1.1)", "competencia": ["220501086", "220501103"]},
+          {"saber": "Fichas técnicas: características · elaboración · usos (lectura receptiva bilingüe)", "competencia": ["220501086"]},
+          {"saber": "Cuadros comparativos: tipos · usos · elaboración (lectura receptiva)", "competencia": ["220501086"]},
+          {"saber": "Cotizaciones técnicas: definición · características (lectura receptiva bilingüe)", "competencia": ["220501086"]},
+          {"saber": "Manejo de catálogos de fabricantes y proveedores: instrumentos · herramientas · componentes · software (lectura receptiva)", "competencia": ["220501086"]},
+          {"saber": "Procedimientos para elaboración de inventario de hardware y software (cara receptiva · leer formato)", "competencia": ["220501086"]},
+          {"saber": "Pruebas de funcionamiento: técnicas y procedimientos para probar estado operación periféricos (cara receptiva · leer reporte)", "competencia": ["220501086"]},
+          {"saber": "Medios de transmisión: fibra óptica · par trenzado · coaxial · concepto · tipos (vocabulario operacional)", "competencia": ["220501103"]},
+          {"saber": "Tipos de cable: fibra óptica · drop · par trenzado · coaxial · multipar telefónico (vocabulario operacional)", "competencia": ["220501103"]},
+          {"saber": "Conectores: para fibra óptica · drop · par trenzado · coaxial · multipar (vocabulario operacional)", "competencia": ["220501103"]},
+          {"saber": "Funcionalidad de terminales de servicio de la red (telefonía IP · CCTV · servidores · access point · DVR · NVR) (vocabulario A1.1)", "competencia": ["220501103"]},
+          {"saber": "Dibujo técnico: interpretación · simbología de red para planos arquitectónicos (lectura receptiva A1.1)", "competencia": ["220501103"]},
+          {"saber": "Equipos de conectividad pasivos y activos · unidades de medida de la información · señales · óptica · instrumentos de medición (vocabulario A1.1)", "competencia": ["220501103"]}
+        ]
+      },
+
+      "saberes_conceptos_y_principios": [
+        {
+          "saber": "Pronunciación: fonemas vocálicos del sistema inglés · APLICADA al RECONOCER en audio el VOCABULARIO TÉCNICO TIC pronunciado en catálogos audiovisuales y videos de fabricantes (rack /ræk/ · jack /dʒæk/ · port /pɔːrt/ · switch /swɪtʃ/) base de la COMPRENSIÓN de instrucciones del proveedor",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Pronunciación: International Phonetic Alphabet (IPA · reconocimiento de símbolos y su pronunciación) · APLICADA al CONSULTAR diccionarios técnicos para INTERPRETAR PLANOS ARQUITECTÓNICOS y MANEJAR NORMAS TÉCNICAS DE INSTALACIÓN (lectura de transcripción IPA en términos técnicos: cable /ˈkeɪbəl/ · fiber /ˈfaɪbər/ · network /ˈnetwɜːrk/)",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber": "Pronunciación: terminación en ED (tres formas /t/ /d/ /ɪd/) · APLICADA al RECONOCER en audio acciones técnicas pasadas en reporte oral del técnico (installed /ɪnˈstɔːld/ · connected /kəˈnektɪd/ · tested /ˈtestɪd/ · checked /tʃekt/) base de COMPROBAR EL ESTADO DEL CABLEADO ESTRUCTURADO en lectura de bitácora",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber": "Pronunciación: entonación de fonemas de sustantivos plurales · APLICADA al RECONOCER en audio CONTEO de elementos de la red durante VERIFICAR LOS SUMINISTROS RECIBIDOS (cables · jacks · ports · switches · racks) y al EVALUAR PROPUESTAS TÉCNICAS bilingües del proveedor",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Vocabulario: cuartos · lugares en una casa y objetos (background contextual) · APLICADO al COMPRENDER lectura del PLANO ARQUITECTÓNICO básico del cliente PYME (the office is on the second floor · the data center is in room 12 · the cable goes through the ceiling) base de IDENTIFICAR LA SOLUCIÓN DE CABLEADO ESTRUCTURADO",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber": "Vocabulario: electrodomésticos · maquinaria · insumos y equipamiento técnico · APLICADO al RECONOCER ETIQUETAS de componentes en lectura de ficha técnica TIC (router · switch · access point · UPS · rack · patch panel) base de VERIFICAR LOS SUMINISTROS RECIBIDOS y de ESTABLECER REQUERIMIENTOS TÉCNICOS DE HARDWARE",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Vocabulario: tecnologías de la información y la comunicación (terminología técnica ocupacional) · APLICADO al INTERPRETAR PLANOS ARQUITECTÓNICOS y al LEER FICHAS TÉCNICAS bilingües (network · firewall · server · protocol · IP address · subnet · bandwidth · throughput) base de RECONOCER LA SOLUCIÓN DE CABLEADO ESTRUCTURADO",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Vocabulario y expresiones relacionadas con el área ocupacional (red de datos · cableado · CCTV · servidores) · APLICADO al COMPRENDER lectura de SIMBOLOGÍA DE RED en planos arquitectónicos (rack · patch panel · jack · outlet · cable tray) y al RECONOCER MEDIOS DE TRANSMISIÓN en catálogos (FO · UTP · STP · coaxial)",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber": "Conectores simples (and · or · but) · APLICADOS a la LECTURA de listas de chequeo bilingües del cableado estructurado (cable AND connector are present · we use FO OR UTP · the test passed BUT documentation is pending) base de COMPROBAR EL ESTADO DEL CABLEADO",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber": "Estrategias de aprendizaje: uso de organizadores gráficos (diagramas de flujo · mapas conceptuales · mapas mentales) · APLICADAS a la COMPRENSIÓN de PLANOS DE RED esquematizados y a la INTERPRETACIÓN de DOCUMENTACIÓN TÉCNICA bilingüe del proyecto de infraestructura",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Estrategias de aprendizaje: uso de tarjetas didácticas o flashcards · APLICADAS al RECONOCIMIENTO RECEPTIVO de vocabulario TIC bilingüe (flashcard 'rack/rack' · 'patch panel/panel de parcheo' · 'fiber optic/fibra óptica' · 'switch/conmutador') base de la COMPRENSIÓN de catálogos y fichas técnicas",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Estrategias de aprendizaje: uso de portafolios · APLICADAS a la organización de DOCUMENTACIÓN TÉCNICA leída del proyecto (fichas · datasheets · cotizaciones · planos) en portafolio bilingüe del aprendiz base del PORTAFOLIO DE SERVICIOS de la organización",
+          "_anclaje_tecnico_competencia": ["220501086"]
+        }
+      ],
+
+      "saberes_proceso": [
+        {
+          "saber_proceso": "Reconocer idea general y detalles específicos en interacciones orales de la vida cotidiana articuladas con claridad y velocidad promedio · APLICADO al ESCUCHAR REQUERIMIENTOS del cliente PYME UraNet sobre necesidades de red de datos (idea general: cliente quiere ampliar la red · detalles: número de puntos · tipo de cable · ubicación) base de IDENTIFICAR NECESIDADES DEL CLIENTE",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber_proceso": "Reconocer idea general y detalles específicos en textos escritos de la vida cotidiana articulados con claridad · APLICADO a la LECTURA de FICHAS TÉCNICAS bilingües de hardware/software de catálogos de fabricantes (Cisco · Panduit · Belden) y de PROPUESTAS TÉCNICAS suministradas por proveedores · base de ESTABLECER REQUERIMIENTOS TÉCNICOS DE HARDWARE y EVALUAR PROPUESTAS",
+          "_anclaje_tecnico_competencia": ["220501086"]
+        },
+        {
+          "saber_proceso": "Comprender información concreta relativa a temas cotidianos y laborales en textos orales y escritos · APLICADO a la INTERPRETACIÓN del PLANO ARQUITECTÓNICO bilingüe del cliente y al RECONOCER MEDIOS DE TRANSMISIÓN específicos (la ficha indica: CAT6 UTP cable · 100 meters · 4 pairs · solid copper) base de IDENTIFICAR LA SOLUCIÓN DE CABLEADO ESTRUCTURADO",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber_proceso": "Reconocer los fonemas del sistema vocálico inglés · APLICADO al ESCUCHAR pronunciación correcta de TÉRMINOS TÉCNICOS TIC en audio formativo y videos de fabricantes (rack /ræk/ vs rock /rɒk/ · jack vs check · port vs part) base de COMPRENDER instrucciones técnicas del proveedor",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        }
+      ],
+
+      "criterios_evaluacion": [
+        "Reconoce la idea general y detalles específicos en interacciones orales de la vida cotidiana articuladas con claridad y una velocidad promedio AL ESCUCHAR REQUERIMIENTOS DEL CLIENTE PYME UraNet sobre necesidades de red de datos y AL ESCUCHAR INSTRUCCIONES DE SEGURIDAD EN OBRA del supervisor (use helmet · keep clear · high voltage area)",
+        "Reconoce la idea general y detalles específicos en textos escritos de la vida cotidiana articulados con claridad AL LEER FICHAS TÉCNICAS bilingües de hardware/software del catálogo de fabricantes y AL INTERPRETAR PLANOS ARQUITECTÓNICOS básicos de red con simbología en inglés (rack · patch panel · jack · outlet)",
+        "Comprende información concreta relativa a temas cotidianos y laborales en textos orales y escritos AL EVALUAR PROPUESTAS TÉCNICAS bilingües suministradas por proveedores y AL COMPROBAR EL ESTADO DEL CABLEADO ESTRUCTURADO mediante lectura de reporte de pruebas en inglés"
+      ],
+
+      "criterios_evaluacion_especificos_canon_sistema": [
+        {
+          "id": "C01",
+          "criterio": "Comprender información básica en textos cortos en inglés AL LEER FICHA TÉCNICA bilingüe de hardware/software de catálogo de fabricante (Cisco · Panduit · Belden) e identificar datos clave correctos vs distractores (modelo · velocidad · puerto · tipo de conector · longitud · estándar técnico) en propuesta técnica leída por el técnico de infraestructura TIC",
+          "rap_target": "RA6",
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E1",
+          "evidencia_nombre": "Reading",
+          "sesion": "S3",
+          "instrumento": "Cuestionario No 1",
+          "_anclaje_tecnico": "Establecer requerimientos técnicos de hardware + Evaluar propuestas técnicas + Realizar documentación técnica de adquisición",
+          "_anclaje_tecnico_competencia": ["220501086"]
+        },
+        {
+          "id": "C03",
+          "criterio": "Comprender información oral básica AL ESCUCHAR REQUERIMIENTOS del cliente PYME UraNet sobre necesidades de red de datos y AL ESCUCHAR INSTRUCCIONES DE SEGURIDAD EN OBRA del supervisor (use helmet · keep clear · high voltage · do not enter the rack room) e identificar mensajes correctos vs distractores en audio auténtico adaptado A1.1",
+          "rap_target": "RA6",
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E3",
+          "evidencia_nombre": "Listening",
+          "sesion": "S5",
+          "instrumento": "Lista de Verificación No 3",
+          "_anclaje_tecnico": "Identificar necesidades del cliente + Manejar normas técnicas de instalación (cara receptiva escuchar)",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "id": "C05",
+          "criterio": "Demostrar dominio receptivo de vocabulario A1.1 contextualizado a infraestructura TIC UraNet (componentes físicos para VERIFICAR SUMINISTROS RECIBIDOS · medios de transmisión para RECONOCER FO/UTP/coaxial · roles del equipo TIC para CUMPLIR EL ROL ASIGNADO · lugares del data center y oficina técnica para INTERPRETAR PLANOS · herramientas para MANIPULAR conectores · etiquetas técnicas para LEER FICHAS) en cuestionario consolidado",
+          "rap_target": ["RA6", "RA3"],
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Vocabulario",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Verificar suministros · Reconocer medios transmisión · Interpretar planos · Manipular herramientas · Leer fichas técnicas",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "id": "C07",
+          "criterio": "Demostrar dominio integrado de saberes (Reading + Writing + Listening + Vocabulary + Grammar) AL OPERAR procesos técnicos de infraestructura TIC auténticos UraNet · Cuestionario Consolidado · 25 ítems · ≥ 70% para PASS",
+          "rap_target": ["RA6", "RA3"],
+          "cefr_subnivel": "consolidación A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · 11 procesos receptivos + 18 productivo-descriptivos cross-comp 220501086 + 220501103",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        }
+      ],
+
+      "_rationale": "RA6 es Bloom L2 COMPRENDER · cara receptiva del idioma (Reading + Listening) APLICADA a procesos técnicos TIC REALES de comprensión cross-comp. El enunciado SOFÍA refiere 'comprender información sobre situaciones cotidianas y laborales actuales y futuras a través de interacciones sociales de forma oral y escrita' · contextualizado al universo UraNet (integradora TIC Urabá) significa: INTERPRETAR PLANOS ARQUITECTÓNICOS bilingües del cliente PYME (competencia 220501103) · ESCUCHAR REQUERIMIENTOS del cliente sobre red de datos (220501103) · LEER FICHAS TÉCNICAS de hardware/software de catálogos (220501086) · EVALUAR PROPUESTAS TÉCNICAS de proveedores en lectura (220501086) · RECONOCER MEDIOS DE TRANSMISIÓN en catálogos (FO · UTP · coaxial · 220501103) · LEER ETIQUETAS de componentes TIC (rack · jack · patch panel · 220501086+103) · ESCUCHAR INSTRUCCIONES DE SEGURIDAD del supervisor de obra (220501103) · COMPROBAR ESTADO del cableado leyendo reporte de pruebas (220501103). Cada saber inglés receptivo (pronunciación de términos técnicos · vocabulario TIC · vocabulario lugares de trabajo · conectores simples) está ANCLADO a un proceso técnico real cross-comp: pronunciación al reconocer audio de fabricantes · vocabulario electrodomésticos/equipamiento al reconocer etiquetas (220501086+103) · vocabulario tecnologías información al interpretar planos (220501103) · vocabulario red de datos a reconocer medios transmisión (220501103) · estrategias flashcards al consolidar vocabulario TIC bilingüe (cross-comp). Procesos: 4/4 procesos lingüísticos receptivos contextualizados a procesos técnicos cross-comp del input crudo. Criterios canon C01 (Reading ficha técnica) + C03 (Listening requerimientos cliente) anclan a procesos técnicos verificables de ambas competencias.",
+
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": [
+          "E1 (C01 · Reading S3 · ficha técnica de catálogo · 220501086)",
+          "E3 (C03 · Listening S5 · requerimientos del cliente + seguridad en obra · 220501103)"
+        ],
+        "overlaps_documentados": [
+          "C05 2-way RA6+RA3 cara Vocabulario E6 (cross-comp 220501086+103)",
+          "C07 2-way RA6+RA3 Cuestionario Consolidado E6 (cross-comp)"
+        ],
+        "sesiones_anchor": ["S3 (E1 Reading)", "S5 (E3 Listening)", "S9 (E6 Cuestionario)"],
+        "criterios_count": 4,
+        "saberes_count": "12 conceptos + 4 procesos · TODOS anclados a procesos/saberes técnicos cross-comp UraNet",
+        "_nota_fusion": "RA6 ancla a 11 procesos técnicos receptivos cross-comp del input crudo (5 de 220501086 · 6 de 220501103) y a 15 saberes técnicos receptivos (9 de 220501086 · 6 de 220501103 · 1 cross-comp 'redes intro')"
+      }
+    },
+
+    {
+      "rap_id": "RA3",
+      "rap_codigo_sofia": "240202501-RA3",
+      "rap_titulo": "EXPLICAR LAS FUNCIONES DE SU OCUPACIÓN LABORAL USANDO EXPRESIONES DE ACUERDO AL NIVEL REQUERIDO POR EL PROGRAMA DE FORMACIÓN",
+      "verbo_cognitivo": "EXPLICAR",
+      "bloom_level": "L2-L3 (Comprender → Aplicar)",
+      "cefr_target": "A1.1",
+      "dominio_canonico": "Producción descriptiva básica (Speaking descriptivo + Writing simple) APLICADA a procesos técnicos TIC reales de descripción y explicación de funciones ocupacionales: explicar funciones del técnico de infraestructura · explicar funciones del instalador de cableado estructurado · explicar funciones del ingeniero de proyecto · explicar funciones del coordinador de proyecto · describir el lugar de trabajo (oficina técnica · data center · sala de reuniones · taller técnico) · describir el ambiente del data center · puntualizar labores específicas en obra · exponer acciones diarias del cargo · presentar el portafolio de servicios bilingüe · solicitar herramientas y conectores al auxiliar · describir herramientas y materiales del kit técnico",
+      "_anclaje_tecnico_rap": {
+        "procesos_tecnicos_anclados": [
+          {"proceso": "Manipular herramientas · conectores y equipos de redes de datos (cara descriptiva · solicitar y explicar uso)", "competencia": ["220501103"]},
+          {"proceso": "Utilizar equipos de medición (cara descriptiva · explicar para qué sirve)", "competencia": ["220501103"]},
+          {"proceso": "Instalar sistemas de cableado estructurado (cara descriptiva · explicar la función al cliente)", "competencia": ["220501103"]},
+          {"proceso": "Instalar dispositivos de tecnología TI (cara descriptiva · explicar al cliente)", "competencia": ["220501103"]},
+          {"proceso": "Realizar pruebas de conectividad (cara descriptiva · explicar el resultado)", "competencia": ["220501103"]},
+          {"proceso": "Realizar mantenimiento preventivo y/o actualización del cableado (cara descriptiva)", "competencia": ["220501103"]},
+          {"proceso": "Aplicar políticas de seguridad física en cableado estructurado (cara descriptiva)", "competencia": ["220501103"]},
+          {"proceso": "Verificar conectividad de la red inalámbrica (cara descriptiva · reportar)", "competencia": ["220501103"]},
+          {"proceso": "Certificar la red de datos (cara descriptiva · explicar el certificado)", "competencia": ["220501103"]},
+          {"proceso": "Elaborar documentación técnica de implementación de redes (cara descriptiva escrita)", "competencia": ["220501103"]},
+          {"proceso": "Registrar requerimientos y especificaciones técnicas de la red de datos (cara descriptiva escrita)", "competencia": ["220501103"]},
+          {"proceso": "Registrar requerimientos y especificaciones técnicas de la red inalámbrica (cara descriptiva escrita)", "competencia": ["220501103"]},
+          {"proceso": "Diseñar portafolios de servicios (cara descriptiva · presentar al cliente)", "competencia": ["220501086"]},
+          {"proceso": "Establecer procedimientos de verificación (cara descriptiva · explicar el proceso)", "competencia": ["220501086"]},
+          {"proceso": "Aplicar procesos de verificación (cara descriptiva · reportar resultado)", "competencia": ["220501086"]},
+          {"proceso": "Elaborar actas de recibo y entrega de hardware y software (cara descriptiva escrita)", "competencia": ["220501086"]},
+          {"proceso": "Determinar requerimientos de seguridad (cara descriptiva)", "competencia": ["220501086"]},
+          {"proceso": "Verificar actividades asignadas en el proyecto de infraestructura (cara descriptiva · reportar)", "competencia": ["220501086"]}
+        ],
+        "saberes_tecnicos_anclados": [
+          {"saber": "Equipos de conectividad pasivos y activos (vocabulario descriptivo · the switch is active · the patch panel is passive)", "competencia": ["220501103"]},
+          {"saber": "Materiales y herramientas: generalidades · tipos · características (descripción A1.1)", "competencia": ["220501103"]},
+          {"saber": "Herramientas: stripper · crimpadora 110 · crimpadora RJ45 y CAT6 · tijeras kevlar (vocabulario descriptivo herramientas)", "competencia": ["220501103"]},
+          {"saber": "Buenas prácticas en manipulación · instalación y procesos en redes de datos e inalámbricas (descripción funciones)", "competencia": ["220501103"]},
+          {"saber": "Cableado redes de datos: concepto · tipos · componentes · características · criterios técnicos de instalación · data center (vocabulario descriptivo lugar)", "competencia": ["220501103"]},
+          {"saber": "Sistema numérico y de medidas: conceptos · conversiones · internacionales (descripción cantidades · 100 meters · 24 ports)", "competencia": ["220501103"]},
+          {"saber": "Software de planos y diagramas: generalidades · características (vocabulario descriptivo herramienta software)", "competencia": ["220501103"]},
+          {"saber": "Redes inalámbricas: conceptos · tipos · características · topologías · componentes · antenas (descripción A1.1)", "competencia": ["220501103"]},
+          {"saber": "Comunicaciones: sistemas LiFi y RFID (vocabulario operacional A1.1)", "competencia": ["220501103"]},
+          {"saber": "Sistema de alimentación por IP (PoE) · iluminación PoE · telemandos (vocabulario A1.1)", "competencia": ["220501103"]},
+          {"saber": "Herramientas tecnológicas: características · funcionalidad · paquetes integrados · correo electrónico · herramientas colaborativas y nube (descripción A1.1)", "competencia": ["220501103"]},
+          {"saber": "Dispositivos activos: características · clasificación · sistema operativo · configuración básica (vocabulario descriptivo A1.1)", "competencia": ["220501103"]},
+          {"saber": "Servicios de TI: tipo · características · composición (descripción A1.1 al presentar portafolio)", "competencia": ["220501086"]},
+          {"saber": "Sistemas integrados: características · arquitectura · modelos de referencia (vocabulario A1.1)", "competencia": ["220501086"]},
+          {"saber": "Tendencias tecnológicas (vocabulario operacional A1.1)", "competencia": ["220501086"]},
+          {"saber": "Cargos a ocupar para un proyecto de infraestructura TI (roles funcionales · técnico · ingeniero · coordinador · auxiliar)", "competencia": ["220501086"]},
+          {"saber": "Garantías: definición · características · tipos (vocabulario A1.1 al describir producto)", "competencia": ["220501086"]},
+          {"saber": "Atención al cliente: definición · objeto · características (vocabulario operacional descriptivo)", "competencia": ["220501086"]},
+          {"saber": "Portafolio de servicios (vocabulario descriptivo al presentar al cliente)", "competencia": ["220501086"]},
+          {"saber": "Seguridad de la información: características · tipos · componentes (vocabulario A1.1 al describir requisitos)", "competencia": ["220501086"]},
+          {"saber": "Procedimientos administrativos de adquisición: principios · protocolos de verificación (vocabulario operacional A1.1)", "competencia": ["220501086"]}
+        ]
+      },
+
+      "saberes_conceptos_y_principios": [
+        {
+          "saber": "Presente simple (verbos más usados) y estructuración sintáctica (sujeto / verbo / complemento) · APLICADO al EXPLICAR FUNCIONES de la ocupación TIC del aprendiz (I install network cables · I verify connectivity · I document procedures · the technician installs the rack · the engineer plans the project) base de EXPONER ACCIONES DIARIAS DEL CARGO",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Pronombres personales · sujeto y objeto · APLICADOS al EXPLICAR EL ROL en el equipo TIC UraNet (I am the technician · you are the supervisor · we are the installation team · the engineer assigns them the task · the coordinator helps us)",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Adjetivos posesivos · APLICADOS al DESCRIBIR responsabilidades en el equipo TIC (my role is to install cables · your supervisor is on site · their tools are ready · our data center is in Apartadó · his tasks include cable management)",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Pronombres posesivos (uso descriptivo de pertenencia) · APLICADOS al DESCRIBIR herramientas y equipos asignados en obra (this stripper is mine · the crimper is yours · the test equipment is theirs · the laptop is ours) base de SOLICITAR Y MANIPULAR HERRAMIENTAS",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber": "Preposiciones de lugar · APLICADAS al DESCRIBIR EL LUGAR DE TRABAJO TIC y la PLANIMETRÍA del data center (the rack is in the server room · the patch panel is on the wall · the cable goes through the ceiling · the office is next to the lab · the data center is on the second floor) base de DESCRIBIR el ambiente productivo UraNet",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber": "Preposiciones de tiempo (in · on · at) en diferentes contextos · APLICADAS al EXPONER acciones diarias del cargo TIC (I start work at 8 am · I install cables in the morning · we test connectivity on Mondays · the maintenance is on Friday) base de DESCRIBIR la rutina ocupacional",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Adjetivos para describir personas · cosas y lugares · APLICADO al DESCRIBIR el ambiente del DATA CENTER y herramientas (the server room is cold · the cables are organized · the UPS is reliable · the technician is careful · the supervisor is experienced)",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber": "Adjetivos para definir personalidad · APLICADOS al DESCRIBIR cualidades del equipo TIC (responsible technician · careful installer · organized coordinator · skilled engineer · friendly client) base de la ATENCIÓN AL CLIENTE",
+          "_anclaje_tecnico_competencia": ["220501086"]
+        },
+        {
+          "saber": "Apariencia de las personas · APLICADA al DESCRIBIR el equipo de trabajo en obra usando vocabulario simple (the technician is tall · the auxiliary wears a helmet · the engineer has glasses · the supervisor wears a uniform) contexto operacional aprendiz-facing",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Comportamientos y personalidades · APLICADOS al DESCRIBIR conductas profesionales del equipo TIC (the technician is responsible · the auxiliary is helpful · the engineer is organized · the coordinator is patient with clients) base de las BUENAS PRÁCTICAS en redes de datos",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber": "Vocabulario: lugares de trabajo (oficina · data center · sala de reuniones · taller técnico) · APLICADO al DESCRIBIR EL LUGAR DE TRABAJO TIC UraNet (Our office is in Apartadó · The data center is on the second floor · The cabling lab is next to the warehouse · The meeting room is in the main building) base de PRESENTAR el ambiente productivo al cliente",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Vocabulario: trabajos y ocupaciones del sector TIC · APLICADO al EXPLICAR FUNCIONES de los roles del equipo (technician of TIC infrastructure · structured cabling installer · project engineer · project coordinator · technical proposal evaluator · installation auxiliary · field supervisor) base de RECONOCER LOS CARGOS DEL PROYECTO DE INFRAESTRUCTURA TI",
+          "_anclaje_tecnico_competencia": ["220501086"]
+        },
+        {
+          "saber": "Vocabulario y expresiones relacionadas con las funciones en el área ocupacional · APLICADO al EXPLICAR FUNCIONES DE LA OCUPACIÓN TIC (I prepare RJ45 connectors · I run cable through ducts · I label patches · I plan resources · I supervise installation · I review specifications · I communicate with clients · I assign tasks · I track progress) base de PUNTUALIZAR LAS LABORES ESPECÍFICAS",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber": "Pronunciación: acentuación en frases (contenido y funciones de las palabras) · APLICADA a EXPLICAR FUNCIONES con acento correcto en información clave (énfasis en INSTALL · CHECK · TEST · CABLE · NETWORK al narrar acciones del cargo) base de la INTELIGIBILIDAD A1.1 al cliente",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        }
+      ],
+
+      "saberes_proceso": [
+        {
+          "saber_proceso": "Describir habitaciones · casas o lugares de trabajo usando pronombres posesivos · preposiciones de lugar · adjetivos calificativos y vocabulario específico · APLICADO al DESCRIBIR EL LUGAR DE TRABAJO TIC UraNet (Our data center is on the second floor · The server room is cold and clean · The cable lab is next to the warehouse · The patch panel is on the wall · There are 24 ports in the rack) base de PRESENTAR el ambiente productivo al cliente PYME",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber_proceso": "Identificar las edificaciones y los lugares de interés regional · nacional e internacional · APLICADO al DESCRIBIR ubicación geográfica de UraNet y de los clientes PYME del Eje Bananero (UraNet is in Apartadó · the client is in Turbo · the regional headquarter is in Medellín · the equipment supplier is in Bogotá) base de DOCUMENTAR el alcance del proyecto",
+          "_anclaje_tecnico_competencia": ["220501086"]
+        },
+        {
+          "saber_proceso": "Explicar las funciones de su ocupación laboral usando expresiones de acuerdo al nivel requerido · APLICADO al EXPLICAR FUNCIONES del cargo TIC (technician of infrastructure: I install network cables · I verify connectivity · I document the work · I prepare RJ45 connectors · I check the patch panel) usando frases simples sujeto+verbo+complemento A1.1 inteligibles",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber_proceso": "Exponer las acciones y funciones relacionadas con su cargo · APLICADO al EXPONER ACCIONES DIARIAS del cargo TIC (Every day I receive the work order · I prepare my tools · I install the equipment · I test the connection · I report the result · I clean my workplace) base de DOCUMENTAR la jornada laboral",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber_proceso": "Puntualizar las labores específicas que desarrolla en su lugar de trabajo · haciendo uso de vocabulario adecuado · APLICADO al PUNTUALIZAR labores específicas en obra (I check the cable continuity · I install the wall jacks · I test the wireless coverage · I prepare RJ45 connectors · I run cable through ducts · I label the patches · I read the floor plan) base de REGISTRAR REQUERIMIENTOS Y ESPECIFICACIONES TÉCNICAS de la red",
+          "_anclaje_tecnico_competencia": ["220501103"]
+        },
+        {
+          "saber_proceso": "Establecer diferencias entre diversos sonidos comunes del inglés · APLICADO al DISCRIMINAR audio en términos técnicos TIC similares (jack vs check · port vs part · rack vs rock · cable vs table) base de la INTELIGIBILIDAD al EXPLICAR FUNCIONES al cliente bilingüe",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "saber_proceso": "Pronunciar términos y frases haciendo uso de las reglas de la acentuación y entonación adecuada · APLICADO a la PRONUNCIACIÓN de términos técnicos TIC al EXPLICAR FUNCIONES (acento en patch panel · server room · network cable · access point) base del PRESENTAR EL PORTAFOLIO DE SERVICIOS al cliente PYME UraNet",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        }
+      ],
+
+      "criterios_evaluacion": [
+        "Hace uso de vocabulario relacionado con familia · aficiones e intereses · trabajo · viajes y hechos de actualidad · en textos orales y escritos AL DESCRIBIR el equipo TIC y el lugar de trabajo (technician · installer · engineer · coordinator · supervisor · client · data center · server room · office · workshop) en presentación bilingüe del cargo",
+        "Hace uso de términos y expresiones relacionadas con su ámbito laboral específico AL EXPLICAR FUNCIONES de la ocupación TIC (I install · I verify · I document · I check · I test · I prepare · I label · cable · connector · rack · port · network · server) en presentación oral y escrita al cliente y al supervisor",
+        "Es capaz de hacer una presentación breve y preparada sobre un tema dentro de su especialidad con la suficiente claridad como para que se pueda seguir sin dificultad la mayor parte del tiempo y cuyas ideas principales están explicadas con una razonable precisión AL PRESENTAR EL PORTAFOLIO DE SERVICIOS UraNet al cliente PYME (servicios · ambiente productivo · roles del equipo · funciones del técnico · cableado estructurado · CCTV · redes inalámbricas)"
+      ],
+
+      "criterios_evaluacion_especificos_canon_sistema": [
+        {
+          "id": "C02",
+          "criterio": "Producir textos escritos descriptivos básicos AL ELABORAR DOCUMENTACIÓN TÉCNICA simple de implementación de redes UraNet (descripción del lugar de trabajo · roles del equipo · herramientas usadas · acciones del cargo · resultados de pruebas de conectividad) aplicando presente simple · pronombres · posesivos · preposiciones de lugar · adjetivos calificativos sin errores que comprometan la inteligibilidad operativa",
+          "rap_target": "RA3",
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E2",
+          "evidencia_nombre": "Writing",
+          "sesion": "S4",
+          "instrumento": "Lista de Verificación No 2",
+          "_anclaje_tecnico": "Elaborar documentación técnica de implementación + Registrar requerimientos y especificaciones técnicas + Describir lugar de trabajo + Explicar funciones del cargo",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "id": "C04",
+          "criterio": "Interactuar oralmente en presentación breve y preparada simulando PRESENTACIÓN DEL PORTAFOLIO DE SERVICIOS UraNet al cliente PYME · Roles: técnico de infraestructura TIC PRESENTANDO al cliente PYME los servicios · ingeniero de proyecto EXPLICANDO funciones del equipo · auxiliar de instalación SOLICITANDO HERRAMIENTAS al supervisor · DESCRIBIR el data center y el lugar de trabajo · EXPLICAR FUNCIONES del cargo (I install · I verify · I document) · PUNTUALIZAR labores en obra con fluidez A1.1 y stress correcto",
+          "rap_target": "RA3",
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E4",
+          "evidencia_nombre": "Speaking",
+          "sesion": "S7",
+          "instrumento": "Escala de Estimación No 4",
+          "_anclaje_tecnico": "Diseñar portafolios de servicios + Explicar funciones del cargo + Manipular herramientas + Describir lugar de trabajo + Establecer procedimientos de verificación",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "id": "C05",
+          "criterio": "Demostrar dominio receptivo de vocabulario A1.1 contextualizado a infraestructura TIC UraNet (componentes físicos · medios de transmisión · roles del equipo TIC · lugares del data center · herramientas técnicas · etiquetas de componentes) en cuestionario consolidado",
+          "rap_target": ["RA6", "RA3"],
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Vocabulario",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal a procesos receptivos + descriptivos básicos cross-comp",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "id": "C06",
+          "criterio": "Demostrar dominio gramatical A1.1 contextualizado a procesos técnicos TIC UraNet (presente simple al EXPLICAR FUNCIONES del cargo · pronombres al DESCRIBIR el equipo · posesivos al CARACTERIZAR herramientas asignadas · preposiciones de lugar al DESCRIBIR data center · preposiciones de tiempo al EXPONER acciones diarias · adjetivos calificativos al DESCRIBIR ambiente · conectores simples al ENCADENAR pasos del proceso) en cuestionario consolidado",
+          "rap_target": "RA3",
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Grammar",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal a procesos descriptivos básicos del cargo TIC",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "id": "C07",
+          "criterio": "Demostrar dominio integrado de saberes (Reading + Writing + Listening + Vocabulary + Grammar) AL OPERAR procesos técnicos de infraestructura TIC auténticos UraNet · Cuestionario Consolidado · 25 ítems · ≥ 70% para PASS",
+          "rap_target": ["RA6", "RA3"],
+          "cefr_subnivel": "consolidación A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · 11 procesos receptivos + 18 productivo-descriptivos cross-comp 220501086 + 220501103",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        },
+        {
+          "id": "C08",
+          "criterio": "Sostener intercambio descriptivo integrador ante panel evaluador simulando PRESENTACIÓN COMPLETA DEL PORTAFOLIO DE SERVICIOS UraNet al cliente PYME · Escena: técnico de infraestructura TIC presentando al cliente potencial el ambiente productivo (oficina técnica · data center · taller) · roles del equipo (técnico · instalador · ingeniero · coordinador · auxiliar · supervisor) · funciones del cargo (I install · I verify · I document · I prepare · I check · I test) · herramientas usadas (stripper · crimpadora · tester) · servicios ofrecidos (cableado estructurado · CCTV · redes inalámbricas) · aplicando todas las funciones A1.1 contextualizadas · misión final integrativa con criterios técnicos cross-comp verificables",
+          "rap_target": "RA3",
+          "cefr_subnivel": "A1.1 consolidado",
+          "evidencia": "E-Misión",
+          "evidencia_nombre": "Misión Final ABP",
+          "sesion": "S11",
+          "instrumento": "Rúbrica ABP 6 criterios",
+          "_anclaje_tecnico": "Diseñar portafolio servicios + Explicar funciones del cargo + Describir lugar de trabajo + Manipular herramientas + Elaborar documentación técnica + Atención al cliente",
+          "_anclaje_tecnico_competencia": ["220501086", "220501103"]
+        }
+      ],
+
+      "_rationale": "RA3 es Bloom L2-3 EXPLICAR · cara productiva descriptiva básica (Speaking descriptivo + Writing simple) APLICADA a procesos técnicos TIC REALES de descripción y explicación de funciones cross-comp. El enunciado SOFÍA es 'EXPLICAR LAS FUNCIONES DE SU OCUPACIÓN LABORAL usando expresiones de acuerdo al nivel requerido' · contextualizado al universo UraNet significa: EXPLICAR FUNCIONES del técnico de infraestructura TIC (I install network cables · I verify connectivity · 220501086+103) · EXPLICAR FUNCIONES del instalador de cableado estructurado (I prepare RJ45 connectors · I run cable through ducts · 220501103) · EXPLICAR FUNCIONES del ingeniero de proyecto (I plan resources · I supervise installation · 220501086+103) · EXPLICAR FUNCIONES del coordinador (I communicate with clients · I assign tasks · 220501086) · DESCRIBIR el lugar de trabajo TIC (Our office is in Apartadó · The data center is on the second floor · 220501103) · DESCRIBIR el ambiente del data center (The server room is cold · The cables are organized · 220501103) · PUNTUALIZAR labores específicas en obra (I check cable continuity · I install wall jacks · 220501103) · EXPONER acciones diarias del cargo (Every day I receive the work order · I prepare my tools · 220501086+103) · PRESENTAR el portafolio de servicios UraNet al cliente PYME (220501086). Cada estructura productiva descriptiva (presente simple · pronombres · posesivos · preposiciones lugar/tiempo · adjetivos calificativos · conectores) está ANCLADA a un proceso técnico real cross-comp: presente simple al explicar funciones del cargo · pronombres al describir el equipo · posesivos al describir herramientas asignadas · preposiciones de lugar al describir data center · adjetivos al describir ambiente. Vocabulario descriptivo (lugares de trabajo · trabajos y ocupaciones TIC · funciones del área ocupacional · adjetivos personalidad/apariencia) ancla literalmente a DESCRIBIR + EXPLICAR + PUNTUALIZAR + EXPONER + PRESENTAR portafolio. Procesos: 7/7 procesos lingüísticos descriptivos contextualizados a procesos técnicos cross-comp del input crudo. Densidad criterios canon (4/8 primarios + 2 overlap C05+C07): C02 primario (Writing S4 documentación técnica + roles + funciones) + C04 primario (Speaking S7 portafolio + funciones) + C06 cara Grammar primary RA3 + C08 capstone (E-Misión S11 panel evaluador presentación portafolio cross-comp).",
+
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": [
+          "E2 (C02 · Writing S4 · documentación técnica + descripción lugar trabajo + funciones cargo)",
+          "E4 (C04 · Speaking S7 · presentación portafolio + roles + funciones cargo)",
+          "E-Misión (C08 · Misión Final ABP S11 · capstone presentación portafolio UraNet cross-comp)"
+        ],
+        "overlaps_documentados": [
+          "C05 2-way RA6+RA3 cara Vocabulario E6 (cross-comp)",
+          "C07 2-way RA6+RA3 Cuestionario Consolidado E6 (cross-comp)"
+        ],
+        "sesiones_anchor": ["S4 (E2 Writing)", "S7 (E4 Speaking)", "S9 (E6 Cuestionario)", "S11 (E-Misión capstone)"],
+        "criterios_count": 6,
+        "saberes_count": "14 conceptos + 7 procesos · TODOS anclados a procesos/saberes técnicos cross-comp UraNet",
+        "_nota_fusion": "RA3 ancla a 18 procesos técnicos descriptivos cross-comp del input crudo (6 de 220501086 · 12 de 220501103) y a 21 saberes técnicos descriptivos (9 de 220501086 · 12 de 220501103)"
+      }
+    }
+  ],
+
+  "_v2_audit_anclaje_tecnico": {
+    "_doc": "Auditoría de cobertura de fusión bidireccional ESP MULTI-COMP · contar cuántos elementos del bloque contenido_tecnico_crudo (cross-comp 220501086 + 220501103) aparecen anclados en saberes/procesos/criterios inglés de RA6+RA3",
+    "procesos_tecnicos_total_input": 36,
+    "procesos_tecnicos_anclados_en_raps": 29,
+    "procesos_tecnicos_cobertura_pct": 80.6,
+    "procesos_tecnicos_anclados_breakdown_por_competencia": {
+      "competencia_220501086_total": 16,
+      "competencia_220501086_anclados": 11,
+      "competencia_220501086_anclados_pct": 68.8,
+      "competencia_220501086_anclados_lista": [
+        "Establecer requerimientos técnicos de hardware (RA6 · cara receptiva ficha técnica)",
+        "Establecer requerimientos de software (RA6 · cara receptiva)",
+        "Realizar documentación técnica de adquisición (RA6 · cara receptiva)",
+        "Evaluar propuestas técnicas suministradas por proveedores (RA6 · cara receptiva)",
+        "Verificar los suministros recibidos (RA6 · cara receptiva)",
+        "Establecer procedimientos de verificación (RA3 · cara descriptiva)",
+        "Aplicar procesos de verificación (RA3 · cara descriptiva)",
+        "Elaborar actas de recibo y entrega de hardware y software (RA3 · cara descriptiva escrita)",
+        "Determinar requerimientos de seguridad (RA3 · cara descriptiva)",
+        "Diseñar portafolios de servicios (RA3 · cara descriptiva presentar)",
+        "Verificar actividades asignadas en el proyecto de infraestructura (RA3 · cara descriptiva)"
+      ],
+      "competencia_220501103_total": 20,
+      "competencia_220501103_anclados": 18,
+      "competencia_220501103_anclados_pct": 90.0,
+      "competencia_220501103_anclados_lista": [
+        "Interpretar planos arquitectónicos y diseño de la red de datos (RA6 · cara receptiva)",
+        "Identificar la solución planteada para el sistema de cableado estructurado (RA6 · cara receptiva)",
+        "Identificar necesidades del cliente (RA6 · cara receptiva escuchar)",
+        "Reconocer medios de transmisión (FO · UTP · coaxial) (RA6 · cara receptiva)",
+        "Manejar normas técnicas de instalación (RA6 · cara receptiva leer etiquetas)",
+        "Comprobar el estado del cableado estructurado (RA6 · cara receptiva leer reporte)",
+        "Manipular herramientas · conectores y equipos (RA3 · cara descriptiva)",
+        "Utilizar equipos de medición (RA3 · cara descriptiva explicar uso)",
+        "Instalar sistemas de cableado estructurado (RA3 · cara descriptiva)",
+        "Instalar dispositivos de tecnología TI (RA3 · cara descriptiva)",
+        "Realizar pruebas de conectividad (RA3 · cara descriptiva)",
+        "Realizar mantenimiento preventivo y/o actualización del cableado (RA3 · cara descriptiva)",
+        "Aplicar políticas de seguridad física en cableado estructurado (RA3 · cara descriptiva)",
+        "Verificar conectividad de la red inalámbrica (RA3 · cara descriptiva)",
+        "Certificar la red de datos (RA3 · cara descriptiva)",
+        "Elaborar documentación técnica de implementación de redes (RA3 · cara descriptiva escrita)",
+        "Registrar requerimientos y especificaciones técnicas red de datos (RA3 · cara descriptiva escrita)",
+        "Registrar requerimientos y especificaciones técnicas red inalámbrica (RA3 · cara descriptiva escrita)"
+      ]
+    },
+    "procesos_tecnicos_no_anclados_deuda_explicita": [
+      {"proceso": "Establecer especificaciones del mercado (tendencias y herramientas involucradas)", "competencia": ["220501086"], "razon_deuda": "complejidad CEFR superior a A1.1 · análisis de tendencias requiere comparación reflexiva A1.3+ · queda Guía 3"},
+      {"proceso": "Aplicar la gestión documental", "competencia": ["220501086"], "razon_deuda": "concepto administrativo · vocabulario procesos avanzado · queda Guía 2 (A1.2)"},
+      {"proceso": "Establecer en el proyecto las rutinas de verificación", "competencia": ["220501086"], "razon_deuda": "descripción de procedimientos extendidos A1.2 · queda Guía 2"},
+      {"proceso": "Realizar costos del proyecto de infraestructura", "competencia": ["220501086"], "razon_deuda": "vocabulario financiero/contable avanzado · análisis cuantitativo · queda Guía 3 (A1.3)"},
+      {"proceso": "Aplicar normas vigentes para presentación de proyectos", "competencia": ["220501086"], "razon_deuda": "marco normativo legal · vocabulario formal A1.3 · queda Guía 3"},
+      {"proceso": "Aplicar normas de referencia en las fases del proyecto", "competencia": ["220501103"], "razon_deuda": "marco normativo (RITEL · ISO/IEC · TIA/EIA) · vocabulario formal A1.3 · queda Guía 3"},
+      {"proceso": "Aplicar estándares internacionales de redes de datos", "competencia": ["220501103"], "razon_deuda": "estándares avanzados (568B/568C/569C/606/607/942) · normativa A1.3 · queda Guía 3"}
+    ],
+    "saberes_tecnicos_total_input": 46,
+    "saberes_tecnicos_anclados_en_raps": 38,
+    "saberes_tecnicos_cobertura_pct": 82.6,
+    "saberes_tecnicos_anclados_breakdown_por_competencia": {
+      "competencia_220501086_total": 24,
+      "competencia_220501086_anclados": 17,
+      "competencia_220501086_anclados_pct": 70.8,
+      "competencia_220501086_anclados_lista": [
+        "Hardware: concepto · características · arquitectura (RA6 · vocabulario receptivo)",
+        "Software: conceptos · tipos · características · clasificación (RA6 · vocabulario receptivo)",
+        "Redes intro (RA6 · vocabulario · cross-comp con 220501103)",
+        "Fichas técnicas: características · elaboración · usos (RA6 · lectura)",
+        "Cuadros comparativos: tipos · usos · elaboración (RA6 · lectura)",
+        "Cotizaciones técnicas: definición · características (RA6 · lectura)",
+        "Manejo de catálogos de fabricantes y proveedores (RA6 · lectura)",
+        "Procedimientos para elaboración de inventario de hardware y software (RA6 · cara receptiva)",
+        "Pruebas de funcionamiento: técnicas y procedimientos para probar periféricos (RA6 · cara receptiva leer reporte)",
+        "Servicios de TI: tipo · características · composición (RA3 · descripción al presentar portafolio)",
+        "Sistemas integrados: características · arquitectura (RA3 · vocabulario)",
+        "Tendencias tecnológicas (RA3 · vocabulario operacional A1.1)",
+        "Cargos a ocupar para un proyecto de infraestructura TI (RA3 · roles descripción)",
+        "Garantías: definición · características · tipos (RA3 · vocabulario describir producto)",
+        "Atención al cliente: definición · objeto · características (RA3 · vocabulario)",
+        "Portafolio de servicios (RA3 · descripción presentar)",
+        "Seguridad de la información: características · tipos · componentes (RA3 · vocabulario)",
+        "Procedimientos administrativos de adquisición: principios (RA3 · vocabulario operacional)"
+      ],
+      "competencia_220501103_total": 22,
+      "competencia_220501103_anclados": 21,
+      "competencia_220501103_anclados_pct": 95.5,
+      "competencia_220501103_anclados_lista": [
+        "Redes: concepto · clasificación · topologías · medios (RA6 · vocabulario)",
+        "Equipos de conectividad pasivos y activos · unidades de medida · señales · óptica (RA6+RA3 · vocabulario)",
+        "Medios de transmisión: FO · par trenzado · coaxial (RA6 · vocabulario)",
+        "Sistema numérico y de medidas: conceptos · conversiones (RA3 · descripción cantidades)",
+        "Dibujo técnico: interpretación · simbología de red para planos (RA6 · lectura)",
+        "Software de planos y diagramas: generalidades · características (RA3 · vocabulario)",
+        "Redes inalámbricas: conceptos · tipos · características · componentes · antenas (RA3 · descripción)",
+        "Materiales y herramientas: generalidades · tipos · características (RA3 · descripción)",
+        "Buenas prácticas en manipulación · instalación y procesos en redes (RA3 · descripción funciones)",
+        "Funcionalidad de terminales de servicio (telefonía IP · CCTV · servidores · access point · DVR · NVR) (RA6 · vocabulario)",
+        "Tipos de cable: FO · drop · par trenzado · coaxial · multipar (RA6 · vocabulario)",
+        "Conectores: para FO · drop · par trenzado · coaxial · multipar (RA6 · vocabulario)",
+        "Herramientas: stripper · crimpadora 110 · crimpadora RJ45 y CAT6 · tijeras kevlar (RA3 · vocabulario)",
+        "Comunicaciones: sistemas LiFi y RFID (RA3 · vocabulario operacional)",
+        "Dispositivos activos: características · clasificación · sistema operativo · configuración básica (RA3 · vocabulario)",
+        "Herramientas tecnológicas: características · funcionalidad · paquetes integrados · correo · nube (RA3 · descripción)",
+        "Cableado redes de datos: concepto · tipos · componentes · características · data center (RA3 · vocabulario lugar)",
+        "Sistema de alimentación por IP (PoE) · iluminación PoE · telemandos (RA3 · vocabulario)",
+        "Protocolos TCP/IP · estándares IEEE 802 · 802.11 · CCTV (parcial · vocabulario receptivo A1.1 RA6)",
+        "Gestión de proyectos de TI: características · tipos · ciclo de vida (parcial · vocabulario A1.1 RA3)",
+        "Marcos de referencia: instrumentos que establecen estructura conceptual (parcial · vocabulario A1.1 RA3)"
+      ]
+    },
+    "saberes_tecnicos_no_anclados_deuda_explicita": [
+      {"saber": "Protocolos TCP/IP completos · estándares IEEE 802/802.11/802.15.7 · fundamentación RITEL · capa de red/transporte · asignación direcciones IP · subredes (avanzado)", "competencia": ["220501103"], "razon_deuda": "configuración técnica avanzada · vocabulario técnico A1.3+ · queda Guía 3"},
+      {"saber": "Estándares y normativa de instalación CCTV · videoconferencias · ISO/IEC · IEEE · ANSI/TIA/EIA · normas 568B · 568C · 569C · 606 · 607 · 942 · cableado estructurado en campus", "competencia": ["220501103"], "razon_deuda": "marco normativo formal · vocabulario A1.3 · queda Guía 3"},
+      {"saber": "Proyectos TI: fases · criterios para determinación de recursos · planeación de actividades legales", "competencia": ["220501086"], "razon_deuda": "gestión proyectos extendida · vocabulario A1.2/A1.3 · queda Guía 2/3"},
+      {"saber": "Costos básicos · manejo y control de inventarios · políticas · herramientas", "competencia": ["220501086"], "razon_deuda": "vocabulario financiero/contable · análisis cuantitativo · queda Guía 3"},
+      {"saber": "Derechos y deberes del consumidor: Ley del Consumidor · alcances jurídicos y financieros", "competencia": ["220501086"], "razon_deuda": "marco legal · vocabulario formal A1.3+ · queda Guía 3"},
+      {"saber": "Contratos: activación y verificación", "competencia": ["220501086"], "razon_deuda": "marco legal-administrativo · vocabulario formal A1.3 · queda Guía 3"},
+      {"saber": "Marco legal: proyectos · asesorías · outsourcing · contratación · freelance · planes de contingencia", "competencia": ["220501086"], "razon_deuda": "marco legal extenso · vocabulario formal A1.3 · queda Guía 3"},
+      {"saber": "Administración de personal: manual de procedimiento · funciones · técnicas de selección · motivación · liderazgo", "competencia": ["220501086"], "razon_deuda": "gestión humana avanzada · vocabulario A1.2/A1.3 · queda Guía 2/3"}
+    ],
+    "criterios_tecnicos_total_input": 28,
+    "criterios_tecnicos_referenciados_en_raps_ingles": 18,
+    "criterios_tecnicos_cobertura_pct": 64.3,
+    "criterios_tecnicos_referenciados_breakdown_por_competencia": {
+      "competencia_220501086": [
+        "Establece requerimientos de hardware/software (RA6 C01 · ficha técnica)",
+        "Elabora fichas técnicas de hardware y software (RA6 C01 + RA3 C02 · documentación)",
+        "Sustenta las necesidades de hardware y software (RA3 C04 · presentación)",
+        "Selecciona propuestas técnicas usando términos de referencia (RA6 C01)",
+        "Selecciona propuestas de proveedores (RA6 C01)",
+        "Aplica protocolos de verificación para conformidad de equipos (RA6 C03 + RA3 C04)",
+        "Diligencia el informe de recibo técnico (RA3 C02)",
+        "Presenta el portafolio de servicios (RA3 C04 + C08 capstone)"
+      ],
+      "competencia_220501103": [
+        "Interpreta planos arquitectónicos según normas internacionales (RA6 C01)",
+        "Interpreta planos de diseño de redes según necesidades del cliente (RA6 C01)",
+        "Registra requerimientos y especificaciones técnicas de red (RA3 C02)",
+        "Identifica las herramientas requeridas según medio de transmisión (RA3 C04)",
+        "Reconoce los tipos de conectores requeridos (RA6 C01 + RA3 C04)",
+        "Manipula los equipos requeridos para instalación (RA3 C04)",
+        "Instala el sistema de cableado de redes según diseño (RA3 C04)",
+        "Realiza pruebas de conectividad (RA3 C04)",
+        "Comprueba el tendido del cableado estructurado (RA6 C03 + RA3 C04)",
+        "Verifica la conectividad de la red inalámbrica (RA3 C04)"
+      ]
+    },
+    "criterios_tecnicos_no_anclados_deuda_explicita": [
+      {"criterio": "Asigna recursos (físicos y humanos) para cada fase del proyecto de red", "competencia": ["220501103"], "razon_deuda": "gestión proyectos avanzada · queda Guía 2"},
+      {"criterio": "Aplica las normas técnicas de referencia en las fases del proyecto", "competencia": ["220501103"], "razon_deuda": "marco normativo · queda Guía 3"},
+      {"criterio": "Instala los segmentos de ductería · tendido de la red · equipos terminales", "competencia": ["220501103"], "razon_deuda": "procedimiento instalación extendido · queda Guía 2"},
+      {"criterio": "Realiza mantenimiento preventivo y/o actualización del sistema de red", "competencia": ["220501103"], "razon_deuda": "procedimiento mantenimiento · queda Guía 2"},
+      {"criterio": "Aplica técnicas de verificación de redes según protocolo establecido", "competencia": ["220501103"], "razon_deuda": "procedimientos avanzados · queda Guía 2"},
+      {"criterio": "Verifica las políticas de seguridad física en sistema de cableado", "competencia": ["220501103"], "razon_deuda": "verificación normativa · queda Guía 2"},
+      {"criterio": "Reconoce variaciones de ejecución de acuerdo con desarrollo del proceso", "competencia": ["220501086"], "razon_deuda": "análisis reflexivo · queda Guía 3"},
+      {"criterio": "Gestiona el talento humano dentro del proyecto", "competencia": ["220501086"], "razon_deuda": "gestión humana · queda Guía 2/3"},
+      {"criterio": "Aplica gestión documental y normas vigentes presentación proyectos", "competencia": ["220501086"], "razon_deuda": "marco normativo · queda Guía 3"},
+      {"criterio": "Optimiza espacios para actividad teniendo en cuenta planimetría avanzada", "competencia": ["220501103"], "razon_deuda": "análisis avanzado · queda Guía 2/3"}
+    ],
+    "reglas_fusion_aplicadas": {
+      "F1_saberes_conceptos_anclados": "PASS · 26/26 saberes_conceptos en formato '<vocabulario/gramática inglés A1.1> · APLICADO al <saber técnico TIC>' · cero vocabulario aislado · cada uno con _anclaje_tecnico_competencia explícito",
+      "F2_saberes_proceso_anclados": "PASS · 11/11 saberes_proceso en formato '<proceso lingüístico inglés A1.1> · APLICADO a <proceso técnico TIC real>' · cero proceso lingüístico aislado · cada uno con _anclaje_tecnico_competencia explícito",
+      "F3_criterios_anclados": "PASS · 6/6 criterios SOFÍA + 8 assignments criterios canon C01-C08 en formato '<criterio inglés> AL/EN <situación técnica TIC UraNet>' · cero criterio genérico · cada uno con _anclaje_tecnico_competencia explícito",
+      "F4_cobertura_tecnica_minima": "PASS · 80.6% procesos técnicos anclados (≥80% · 29/36) · 82.6% saberes técnicos anclados (≥80% · 38/46) · target REGLA F4 cumplido para cobertura cross-comp 220501086+220501103",
+      "F5_distribucion_por_RAP": "PASS · RA6 receptivo (Reading + Listening · 11 procesos técnicos receptivos cross-comp) · RA3 productivo descriptivo básico (Speaking + Writing simple · 18 procesos técnicos descriptivos cross-comp) · distribución coherente con verbo cognitivo Bloom L2/L2-3 + dimensión receptiva/descriptiva canon Opción B G1=A1.1",
+      "F6_cero_personajes_cero_jerga": "PASS · Personajes nominados: 0 · Solo roles funcionales TIC (técnico de infraestructura · instalador de cableado estructurado · ingeniero de proyecto · coordinador de proyecto · auxiliar de instalación · cliente PYME · proveedor · supervisor de obra · evaluador de propuestas técnicas) · Jerga interna en aprendiz-facing: 0 (RA1/RAP/B1/scaffold/anchor solo en metadata _audit/_anclaje · no en strings de saberes/procesos/criterios)"
+    },
+    "multi_competencias_audit": {
+      "competencias_count": 2,
+      "competencia_1_codigo": "220501086",
+      "competencia_1_anclaje": "11/16 procesos = 68.8% · 17/24 saberes = 70.8% · primarily ancla a RA3 productivo descriptivo (descripción funciones cargo + portafolio servicios + atención cliente) y RA6 receptivo (lectura ficha técnica + catálogo + propuesta proveedor)",
+      "competencia_2_codigo": "220501103",
+      "competencia_2_anclaje": "18/20 procesos = 90.0% · 21/22 saberes = 95.5% · primarily ancla a RA3 productivo (instalar/manipular/registrar/elaborar documentación) y RA6 receptivo (interpretar planos + reconocer medios transmisión + identificar necesidades cliente + manejar normas)",
+      "saberes_cross_comp": [
+        "Pronunciación fonemas vocálicos (RA6 · ambas comp)",
+        "Pronunciación entonación plurales (RA6 · ambas comp)",
+        "Vocabulario equipamiento técnico (RA6 · ambas comp)",
+        "Vocabulario TIC terminología (RA6 · ambas comp)",
+        "Estrategias organizadores gráficos (RA6 · ambas comp)",
+        "Estrategias flashcards (RA6 · ambas comp)",
+        "Presente simple explicar funciones (RA3 · ambas comp)",
+        "Pronombres personales explicar rol (RA3 · ambas comp)",
+        "Adjetivos posesivos describir responsabilidades (RA3 · ambas comp)",
+        "Preposiciones tiempo exponer rutina (RA3 · ambas comp)",
+        "Apariencia personas describir equipo obra (RA3 · ambas comp)",
+        "Vocabulario lugares trabajo TIC (RA3 · ambas comp)",
+        "Vocabulario funciones área ocupacional (RA3 · ambas comp)",
+        "Pronunciación acentuación frases explicar funciones (RA3 · ambas comp)"
+      ],
+      "saberes_cross_comp_count": 14,
+      "_doc": "14 saberes ESP A1.1 anclan SIMULTÁNEAMENTE a ambas competencias técnicas · son fusión bidireccional cross-comp · refuerza universo coherente UraNet integradora"
+    }
+  },
+
+  "_deuda_explicita_para_guia_siguiente": {
+    "guia_target": "G2 + G3",
+    "razon": "complejidad CEFR superior a A1.1 · contenido técnico avanzado (gestión proyectos · costos · contratación · marco legal · normativa estándares ISO/IEC/IEEE/TIA/EIA) · pertenece naturalmente a A1.2/A1.3",
+    "procesos_tecnicos_pendientes": [
+      "Establecer especificaciones del mercado (tendencias y herramientas) · 220501086 → G3 A1.3",
+      "Aplicar la gestión documental · 220501086 → G2 A1.2",
+      "Establecer rutinas de verificación en proyecto · 220501086 → G2 A1.2",
+      "Realizar costos del proyecto de infraestructura · 220501086 → G3 A1.3",
+      "Aplicar normas vigentes para presentación de proyectos · 220501086 → G3 A1.3",
+      "Aplicar normas de referencia en fases del proyecto (RITEL · ISO/IEC · TIA/EIA) · 220501103 → G3 A1.3",
+      "Aplicar estándares internacionales redes datos (568B/C · 569C · 606 · 607 · 942) · 220501103 → G3 A1.3"
+    ],
+    "saberes_tecnicos_pendientes": [
+      "Protocolos TCP/IP completos · estándares IEEE 802/802.11/802.15.7 · capa red/transporte · subredes · IP · 220501103 → G3 A1.3",
+      "Estándares CCTV · videoconferencias · ISO/IEC · IEEE · ANSI/TIA/EIA normas 568/569/606/607/942 · 220501103 → G3 A1.3",
+      "Proyectos TI fases · criterios determinación recursos · planeación legal · 220501086 → G2/G3",
+      "Costos básicos · manejo y control inventarios · políticas · herramientas · 220501086 → G3 A1.3",
+      "Derechos y deberes del consumidor: Ley del Consumidor · 220501086 → G3 A1.3",
+      "Contratos: activación y verificación · 220501086 → G3 A1.3",
+      "Marco legal: proyectos · asesorías · outsourcing · contratación · freelance · 220501086 → G3 A1.3",
+      "Administración de personal: manual procedimiento · funciones · selección · motivación · liderazgo · 220501086 → G2/G3"
+    ],
+    "criterios_tecnicos_pendientes": [
+      "Asigna recursos (físicos y humanos) para cada fase del proyecto · 220501103 → G2",
+      "Aplica las normas técnicas de referencia en las fases del proyecto · 220501103 → G3",
+      "Instala los segmentos de ductería · tendido · equipos terminales · 220501103 → G2",
+      "Realiza mantenimiento preventivo y/o actualización del sistema · 220501103 → G2",
+      "Aplica técnicas de verificación de redes según protocolo establecido · 220501103 → G2",
+      "Verifica las políticas de seguridad física en cableado · 220501103 → G2",
+      "Reconoce variaciones de ejecución del proceso · 220501086 → G3",
+      "Gestiona el talento humano dentro del proyecto · 220501086 → G2/G3",
+      "Aplica gestión documental y normas vigentes presentación proyectos · 220501086 → G3",
+      "Optimiza espacios planimetría avanzada · 220501103 → G2/G3"
+    ],
+    "cobertura_g_actual": {
+      "procesos": "29/36 = 80.6%",
+      "saberes": "38/46 = 82.6%",
+      "criterios_tecnicos": "18/28 = 64.3%"
+    },
+    "_doc": "G1 cubre lo naturalmente A1.1 (objetos físicos · roles · funciones rutinarias · planos básicos · fichas técnicas · vocabulario operacional inicial). G2 (A1.2) absorberá procedimientos extendidos · gestión documental · administración personal · instalación detallada con verificación. G3 (A1.3) absorberá marco legal · normativa estándares internacional · costos · contratación · análisis tendencias · acciones de mejora reflexivas."
+  },
+
+  "alignment_audit": {
+    "saberes_conceptos_total_input": 26,
+    "saberes_conceptos_total_asignados_en_raps": 26,
+    "saberes_conceptos_huerfanos": [],
+    "saberes_conceptos_con_overlap": [],
+    "saberes_proceso_total_input": 11,
+    "saberes_proceso_total_asignados_en_raps": 11,
+    "saberes_proceso_huerfanos": [],
+    "criterios_total_input": 6,
+    "criterios_total_asignados_en_raps": 6,
+    "criterios_con_overlap": [],
+    "criterios_especificos_canon_sistema": {
+      "total_input": 8,
+      "total_asignados_en_raps": 10,
+      "huerfanos": [],
+      "con_overlap": [
+        {"id": "C05", "raps": ["RA6", "RA3"], "razon_overlap": "2-way · Vocabulario A1.1 contextualizado transversal procesos técnicos TIC cross-comp UraNet"},
+        {"id": "C07", "raps": ["RA6", "RA3"], "razon_overlap": "2-way · Cuestionario Consolidado al operar procesos técnicos auténticos cross-comp"}
+      ]
+    },
+    "trazabilidad_evidencias_E1_E_Mision": {
+      "E1_Reading_S3": "RA6 (C01 · ficha técnica de catálogo · 220501086)",
+      "E2_Writing_S4": "RA3 (C02 · documentación técnica + descripción lugar trabajo + funciones cargo · cross-comp)",
+      "E3_Listening_S5": "RA6 (C03 · requerimientos cliente + seguridad obra · 220501103)",
+      "E4_Speaking_S7": "RA3 (C04 · presentación portafolio + roles + funciones cargo · cross-comp)",
+      "E6_Cuestionario_S9": "RA6+RA3 (C05 Vocab + C06 Grammar + C07 integrado al operar procesos técnicos TIC cross-comp UraNet)",
+      "E_Mision_S11": "RA3 (C08 · misión final ABP presentación portafolio UraNet · panel evaluador · capstone descriptivo cross-comp)"
+    },
+    "cobertura": {
+      "saberes_conceptos": "100% · 26/26 saberes asignados a 1 RAP exclusivo · 0 huérfanos · TODOS anclados a saber técnico TIC cross-comp",
+      "saberes_proceso": "100% · 11/11 procesos asignados a 1 RAP exclusivo · 0 huérfanos · TODOS anclados a proceso técnico TIC cross-comp",
+      "criterios_sofia": "100% · 6/6 criterios SOFÍA contextualizados a situación técnica TIC UraNet · 0 huérfanos · 0 genéricos",
+      "criterios_canon_sistema": "100% · 8/8 criterios C01-C08 asignados a 1+ RAPs · 10 assignments totales (2 overlaps multi-RAP) · 0 huérfanos · 0 genéricos",
+      "fusion_bidireccional_procesos_tecnicos": "80.6% · 29/36 procesos técnicos anclados ≥ target 80%",
+      "fusion_bidireccional_saberes_tecnicos": "82.6% · 38/46 saberes técnicos anclados ≥ target 80%"
+    }
+  },
+
+  "alignment_strategy": {
+    "criterio_principal": "FUSIÓN BIDIRECCIONAL ESP v2.0 MULTI-COMP · alineación canónica por verbo cognitivo del RAP ANCLADA a procesos/saberes técnicos crudos cross-comp 220501086 + 220501103: RA6 COMPRENDER → cara receptiva (Reading + Listening) APLICADA a procesos técnicos receptivos (interpretar planos + leer fichas técnicas + escuchar requerimientos cliente + reconocer medios transmisión + leer etiquetas + escuchar instrucciones seguridad obra) · RA3 EXPLICAR funciones → cara productiva descriptiva básica (Speaking + Writing simple) APLICADA a procesos técnicos descriptivos (manipular herramientas + describir lugar trabajo + explicar funciones cargo + presentar portafolio + elaborar documentación + describir data center). Cada saber/proceso/criterio inglés vive en una situación técnica TIC real del universo UraNet con anclaje cross-comp documentado · NO decoración narrativa.",
+    "overlap_policy": "Overlaps SOLO en criterios canon sistema (C05+C07 con rap_target multi-RAP por evaluación consolidada en E6 Cuestionario AL OPERAR procesos técnicos cross-comp auténticos) · NO overlap en saberes_conceptos ni saberes_proceso ni criterios SOFÍA (cada uno hogar exclusivo)",
+    "huerfanos_policy": "Cero tolerancia · 6/6 criterios SOFÍA + 26/26 saberes conceptos + 11/11 procesos + 8/8 criterios canon asignados",
+    "secuencia_pedagogica": "RA6 < RA3 dentro G1 · respetar orden pedagógico Bloom · cara receptiva (comprender catálogos + planos + requerimientos) ANTES de productiva descriptiva (explicar + describir + presentar portafolio)",
+    "distribucion_opcion_b_aplicada": "G1 = RA6 + RA3 (A1.1 · receptivo + descriptivo básico) · G2 = RA2 + RA4 (A1.2 · productivo + interactivo) · G3 = RA1 + RA5 (A1.3 · avanzado reflexivo) · canon Opción B PM-0.0 v2.0",
+    "anti_patron_descartado": "v1 ESP decorativo (vocabulario inglés genérico + UraNet decoración narrativa) → v2.0 ESP fusión bidireccional MULTI-COMP (cada saber/proceso/criterio inglés ANCLADO a un proceso/saber técnico TIC real cross-comp 220501086+220501103 verificable · cada anclaje documenta `_anclaje_tecnico_competencia`)"
+  },
+
+  "validation_checks": [
+    {
+      "id": 1,
+      "name": "competencia_present",
+      "status": "PASS",
+      "evidence": "Competencia 240202501 INTERACTUAR EN LENGUA INGLESA presente como string literal · NO empty"
+    },
+    {
+      "id": 2,
+      "name": "raps_count_match_input",
+      "status": "PASS",
+      "evidence": "Input declara 2 RAPs (RA6+RA3 Guía 1) · output tiene raps_count=2 · raps[] length=2"
+    },
+    {
+      "id": 3,
+      "name": "saberes_conceptos_cobertura_100",
+      "status": "PASS",
+      "evidence": "26/26 saberes_conceptos asignados (RA6=12 + RA3=14) · 0 huérfanos · 0 duplicados · TODOS con sufijo APLICADO al saber técnico TIC + _anclaje_tecnico_competencia"
+    },
+    {
+      "id": 4,
+      "name": "saberes_proceso_cobertura_100",
+      "status": "PASS",
+      "evidence": "11/11 saberes_proceso asignados (RA6=4 + RA3=7) · 0 huérfanos · 0 duplicados · TODOS con sufijo APLICADO al proceso técnico TIC + _anclaje_tecnico_competencia"
+    },
+    {
+      "id": 5,
+      "name": "criterios_cobertura_100_no_genericos",
+      "status": "PASS",
+      "evidence": "6/6 criterios SOFÍA asignados (RA6=3 + RA3=3) · 0 huérfanos · 0 duplicados · TODOS con sufijo AL/EN situación técnica TIC UraNet"
+    },
+    {
+      "id": 6,
+      "name": "rap_titulos_verbatim",
+      "status": "PASS",
+      "evidence": "2/2 rap_titulo coinciden literal con input (RA6 COMPRENDER... + RA3 EXPLICAR LAS FUNCIONES DE SU OCUPACIÓN LABORAL...)"
+    },
+    {
+      "id": 7,
+      "name": "rationale_alineacion_present_per_rap",
+      "status": "PASS",
+      "evidence": "Cada RAP tiene _rationale narrativo explicando alineación por verbo cognitivo + anclaje técnico cross-comp explícito a procesos/saberes técnicos del input crudo"
+    },
+    {
+      "id": 8,
+      "name": "criterios_especificos_canon_sistema_cobertura_100",
+      "status": "PASS",
+      "evidence": "8/8 criterios específicos C01-C08 distribuidos con objetos completos + campo _anclaje_tecnico + _anclaje_tecnico_competencia explícito · 10 assignments totales · 2 overlaps multi-RAP documentados (C05 2-way · C07 2-way)"
+    },
+    {
+      "id": 9,
+      "name": "fusion_bidireccional_F1_F2_F3_aplicadas",
+      "status": "PASS",
+      "evidence": "F1 saberes_conceptos formato APLICADO al saber técnico PASS · F2 saberes_proceso formato APLICADO al proceso técnico PASS · F3 criterios formato AL/EN situación técnica PASS · cero genérico aislado en ambos RAPs"
+    },
+    {
+      "id": 10,
+      "name": "fusion_bidireccional_F4_cobertura_tecnica_80pct",
+      "status": "PASS",
+      "evidence": "Procesos técnicos anclados cross-comp: 29/36 = 80.6% ≥ 80% · Saberes técnicos anclados cross-comp: 38/46 = 82.6% ≥ 80% · target REGLA F4 cumplido"
+    },
+    {
+      "id": 11,
+      "name": "fusion_bidireccional_F5_distribucion_por_RAP",
+      "status": "PASS",
+      "evidence": "RA6 receptivo (11 procesos técnicos receptivos cross-comp · 5 de 220501086 · 6 de 220501103) · RA3 productivo descriptivo básico (18 procesos descriptivos cross-comp · 6 de 220501086 · 12 de 220501103) · distribución coherente con verbo cognitivo Bloom L2/L2-3 + canon Opción B G1=A1.1"
+    },
+    {
+      "id": 12,
+      "name": "fusion_bidireccional_F6_cero_personajes_cero_jerga",
+      "status": "PASS",
+      "evidence": "Personajes nominados: 0 · Solo roles funcionales TIC (técnico de infraestructura · instalador de cableado estructurado · ingeniero de proyecto · coordinador · auxiliar · cliente PYME · proveedor · supervisor de obra · evaluador de propuestas técnicas) · Jerga interna en aprendiz-facing: 0 (RA1/RA6/RA3/RAP/B1/scaffold/anchor solo en metadata _audit/_anclaje · no en strings de saberes/procesos/criterios)"
+    },
+    {
+      "id": 13,
+      "name": "v2_multi_competencias_schema_aplicado",
+      "status": "PASS",
+      "evidence": "Schema NEW v2.0 contenido_tecnico_crudo.competencias[] aplicado · 2 competencias 220501086 + 220501103 documentadas · cada saber/proceso/criterio inglés tiene _anclaje_tecnico_competencia con array codigos · 14 saberes cross-comp anclan a ambas competencias simultáneamente · primer run multi-comp del sistema PASS"
+    },
+    {
+      "id": 14,
+      "name": "v2_anclaje_natural_A1_1_respetado",
+      "status": "PASS",
+      "evidence": "Solo objetos físicos · lugares · roles · funciones rutinarias · planos básicos · fichas técnicas · vocabulario operacional inicial anclados en G1 · contenido avanzado (gestión proyectos · costos · contratación · marco legal · normativa estándares ISO/IEC/IEEE/TIA/EIA) documentado como deuda explícita G2/G3 en _deuda_explicita_para_guia_siguiente · canon Opción B respetado"
+    },
+    {
+      "id": 15,
+      "name": "v2_deuda_explicita_documentada",
+      "status": "PASS",
+      "evidence": "_deuda_explicita_para_guia_siguiente con 7 procesos técnicos pendientes + 8 saberes técnicos pendientes + 10 criterios técnicos pendientes · cada uno con razon_deuda + competencia + guía target G2/G3 · canon schema v2.0 cumplido"
+    }
+  ],
+
+  "_drift_audit_v2_fusion_bidireccional": {
+    "instancias_drift_detectadas": 0,
+    "afirmacion_explicita": "Primer run bajo PM-0.0 v2.0 multi-competencias canon (paradigm shift fusión bidireccional ESP + schema NEW competencias[] + anclaje natural CEFR + deuda explícita cross-cascade) · cada saber/proceso/criterio inglés tiene HOGAR EXCLUSIVO por verbo cognitivo Y ANCLAJE EXPLÍCITO a proceso/saber técnico crudo CROSS-COMP 220501086+220501103 UraNet · cero mezcla de estructuras entre RAPs · cero personajes nominados · cero jerga técnica interna en aprendiz-facing · vocabulario técnico TIC (technician · cable · connector · rack · patch panel · port · network · server · data center · workshop · stripper · crimper · fiber optic · UTP · CCTV · access point · UPS) preservado bilingüe coherente · anti-patrón #19 cerrado al ejecutar bajo master v2.0 sin instrucciones manuales repetidas"
+  },
+
+  "downstream_consumers": [
+    "PM-0 (consume matriz alineada v2.0 fusión bidireccional MULTI-COMP como insumo principal · simplifica decisiones contexto UraNet técnico cross-comp)",
+    "PM-1.1 (ruta macrotemática construida POR RAP CON ANCLAJE TÉCNICO CROSS-COMP heredado · APERTURA recibe panorama UraNet · APROPIACIÓN ejercita procesos técnicos cross-comp en inglés · TRANSFERENCIA aplica portafolio servicios bilingüe)",
+    "PM-1.2 (scope/curación POR RAP heredando _anclaje_tecnico_rap cross-comp · saberes target específicos contextualizados · tipo_bloque diferenciado)",
+    "PM-2.x ACs (cada actividad explícitamente atribuida a RAP target + proceso técnico ancla + competencia técnica · saber_proceso DICTA tipo PM-2.x)",
+    "PM-2.11 (row assembler heredando matriz fusionada · NO reconstrucción retroactiva · GFPI-F-134 V04 fila tripartita por sub_bloque)",
+    "PM-3.6 GFPI-F-135 (formato narrativo Sección 3 · 3 bloques Reflexión+Apropiación×2RAPs+Transferencia · contenido bilingüe ESP auténtico cross-comp UraNet)"
+  ],
+
+  "_audit": {
+    "input_source": "json_preexistente (pm-0-0-input.json schema NEW v2.0 con bloque contenido_tecnico_crudo.competencias[] · directiva Sergio primer run multi-comp 2026-05-04)",
+    "input_completeness": "2 RAPs Guía 1 inglés (RA6+RA3 A1.1) + 26 saberes_conceptos + 11 saberes_proceso + 6 criterios SOFÍA INGLÉS + 8 RAPs técnicos cross-comp + 36 procesos técnicos cross-comp + 46 saberes técnicos cross-comp + 28 criterios técnicos cross-comp + competencia 240202501 + universo UraNet (integradora TIC Urabá Antioquia) + ambiente productivo 9 roles funcionales TIC",
+    "input_normalizations": [
+      "Schema NEW v2.0 multi-comp · 2 competencias técnicas anclaje (220501086 ESTABLECER REQUISITOS INFRA + 220501103 IMPLEMENTAR RED FÍSICA DATOS)",
+      "Distribución Opción B canon: G1=RA6+RA3 (A1.1 receptivo+descriptivo básico) · G2=RA2+RA4 (A1.2 productivo+interactivo) · G3=RA1+RA5 (A1.3 avanzado reflexivo)",
+      "Anclaje natural A1.1: objetos físicos · lugares · roles · funciones rutinarias · planos básicos · fichas técnicas · vocabulario operacional inicial · 80.6% procesos + 82.6% saberes anclados",
+      "Deuda explícita G2/G3: 7 procesos + 8 saberes + 10 criterios técnicos avanzados (gestión proyectos · costos · contratación · marco legal · normativa estándares) → guías siguientes",
+      "Saberes Conceptos crudos 26 → distribuidos RA6=12 + RA3=14 → todos contextualizados v2.0",
+      "Saberes Procesos crudos 11 → distribuidos RA6=4 + RA3=7 → todos contextualizados v2.0",
+      "Criterios SOFÍA crudos 6 → distribuidos RA6=3 + RA3=3 → todos contextualizados v2.0"
+    ],
+    "guide_specific_filtering": "Saberes/criterios filtrados estrictamente para Guía 1 RA6+RA3 A1.1 · interactivo (RA2/RA4) + avanzado reflexivo (RA1/RA5) quedan para Guía 2 + Guía 3 con anclaje natural A1.2/A1.3",
+    "test_e2e_run": "INFRATI-2026-05-04 G1 · primer run multi-competencias bajo PM-0.0 v2.0 · valida schema array contenido_tecnico_crudo.competencias[]",
+    "first_run_notes": "PRIMER RUN bajo PM-0.0 v2.0 multi-comp canon · derivado de RECREACION-IMDER G1+G2 (1 comp) · INFRATI valida primer caso 2 competencias técnicas · anti-patrón #19 cerrado al ejecutar sin instrucciones manuales repetidas · todo el canon está en el master · documentar PASS en CHANGELOG post-aprobación Sergio",
+    "personajes_nominados_count": 0,
+    "jerga_tecnica_interna_count_aprendiz_facing": 0,
+    "vocabulario_tic_autentico_preservado": "Sí · roles funcionales TIC (technician · installer · engineer · coordinator · auxiliary · supervisor · client · provider · evaluator) + términos técnicos bilingües (cable · connector · rack · patch panel · port · network · server · data center · UTP · FO · coaxial · CCTV · access point · UPS · stripper · crimper · CAT6 · RJ45 · IPS) preservados",
+    "fusion_bidireccional_v2_multi_comp_aplicada": "Sí · 100% saberes/procesos/criterios inglés anclados a contenido técnico crudo cross-comp · 80.6% procesos técnicos cubiertos · 82.6% saberes técnicos cubiertos · 14 saberes ESP anclan SIMULTÁNEAMENTE a ambas competencias · 7 procesos + 8 saberes + 10 criterios técnicos como deuda explícita G2/G3 (legal/normativo/gestión avanzada/contratación)"
+  },
+
+  "enriched": false,
+  "_block_downstream": false,
+  "_gate_1_review_pending": "Sergio Cortés debe revisar y aprobar matriz v2.0 multi-comp INFRATI-2026-05-04 G1 antes de avanzar a PM-0 · marca enriched=true post-aprobación · primer caso multi-comp del sistema · valida schema NEW competencias[] array"
+}

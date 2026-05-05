@@ -1,0 +1,772 @@
+{
+  "schema_version": "v1.0",
+  "pm_id": "PM-0.0",
+  "pm_name": "Matriz Pedagógica Alineadora",
+  "pm_version": "2.0",
+  "run_id": "RECREACION-IMDER-2026-05-04",
+  "guide_id": "G1",
+  "generated_date": "2026-05-04",
+  "instructor": "Sergio Cortés Perdomo",
+  "phase": 0,
+  "tipo_artefacto": "matriz_pedagogica_alineada_pre_pm0",
+
+  "_v2_fusion_bidireccional_applied": true,
+  "_input_ref": "pm-0-0-input.json v2 (con bloque contenido_tecnico_crudo · 4 RAPs técnicos · 44 procesos técnicos · 26 saberes técnicos · 14 criterios técnicos · mapping anclaje fusion)",
+  "_v1_legacy_ref": "pm-0-0-matriz-alineada.json.v1-pre-fusion-bidireccional (vocabulario inglés genérico · IMDER decoración narrativa)",
+  "_canon_authority": "Sergio Cortés Perdomo · arquitecto/instructor FPI SENA Bilingüismo · paradigm shift fusión bidireccional ESP 2026-05-04",
+  "_paradigm_note": "Programa Técnico RECREACIÓN (código 634201) · 150h totales en 2 guías × 75h · matriz cubre Guía 1 (RA1+RA2+RA3 · CEFR A1.1 · 75h). FUSIÓN BIDIRECCIONAL ESP: cada saber/proceso/criterio inglés se ANCLA al contenido técnico crudo de la competencia 250801041 ORIENTAR ACTIVIDADES RECREATIVAS (NO universo narrativo decorativo · CONTEXTO REAL). El aprendiz aprende inglés A1.1 EJERCITANDO procesos técnicos auténticos del IMDER.",
+
+  "programa_metadata": {
+    "denominacion": "RECREACIÓN",
+    "tipo": "Técnico",
+    "programa_codigo_sofia": "634201",
+    "duracion_total_horas": 75,
+    "duracion_programa_completo": 150,
+    "horas_directas": 60,
+    "horas_independientes": 15,
+    "numero_sesiones": 11,
+    "rango_cefr": "A1.1",
+    "progresion_cefr_decision": "Opción B — refuerzo (A1.1 Guía 1 · A1.2 Guía 2)",
+    "guide_id": "G1",
+    "guide_total": 2,
+    "horas_por_guide": 75,
+    "split_strategy": "A · equilibrado · Guía 1 = RA1+RA2+RA3 · Guía 2 = RA4+RA5+RA6",
+    "sector": "Recreación",
+    "ambiente_productivo": "IMDER (Instituto Municipal del Deporte y la Recreación) · escenario auténtico de prácticas recreativas con grupos poblacionales · ambiente formativo + operacional",
+    "_resumen_ejecutivo": "Programa Técnico RECREACIÓN · Guía 1 (75h) · 11 sesiones · CEFR A1.1 · 3 RAPs pedagógicamente diferenciados por verbo cognitivo Bloom (COMPRENDER L2 receptivo · DESCRIBIR L2-3 productivo descriptivo · PARTICIPAR L3-4 interactivo). FUSIÓN BIDIRECCIONAL ESP v2: 44 saberes conceptos + 27 saberes proceso + 8 criterios SOFÍA · cada uno contextualizado a procesos técnicos reales IMDER (interpretar programa · caracterizar población · solicitar materiales · acomodar participantes · animar · aplicar lista chequeo · registrar actividades · aplicar encuesta satisfacción)."
+  },
+
+  "competencia": "240202501 · INTERACTUAR EN LENGUA INGLESA DE FORMA ORAL Y ESCRITA DENTRO DE CONTEXTOS SOCIALES Y LABORALES SEGÚN LOS CRITERIOS ESTABLECIDOS POR EL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+
+  "competencia_tecnica_anclaje": {
+    "_doc": "Competencia técnica del programa RECREACIÓN · contexto REAL al que se ancla la fusión bidireccional ESP (NO decoración narrativa)",
+    "codigo": "250801041",
+    "nombre": "ORIENTAR ACTIVIDADES RECREATIVAS DE ACUERDO CON METODOLOGÍAS DE DINAMIZACIÓN Y TIPOS DE POBLACIÓN",
+    "raps_tecnicos_ancla": [
+      "RAT1 RECONOCER MARCO NORMATIVO RECREACIÓN",
+      "RAT2 ORGANIZAR PROGRAMAS RECREATIVOS",
+      "RAT3 DESARROLLAR ACCIONES RECREATIVAS",
+      "RAT4 EVALUAR RESULTADOS"
+    ]
+  },
+
+  "raps_count": 3,
+
+  "raps": [
+    {
+      "rap_id": "RA1",
+      "rap_codigo_sofia": "240202501-RA1",
+      "rap_titulo": "COMPRENDER INFORMACIÓN BÁSICA ORAL Y ESCRITA EN INGLÉS ACERCA DE SÍ MISMO, DE LAS PERSONAS Y DE SU CONTEXTO INMEDIATO EN REALIDADES PRESENTES E HISTORIAS DE VIDA",
+      "verbo_cognitivo": "COMPRENDER",
+      "bloom_level": "L2 (Comprender)",
+      "cefr_target": "A1.1",
+      "dominio_canonico": "Comprensión receptiva (Reading + Listening) APLICADA a procesos técnicos recreativos de comprensión: interpretar programa recreativo · escuchar instrucciones del coordinador · leer listas de chequeo bilingües · reconocer roles del equipo operativo IMDER",
+      "_anclaje_tecnico_rap": {
+        "procesos_tecnicos_anclados": [
+          "Interpretar el programa de recreación",
+          "Explicar el plan operativo del programa recreativo (cara receptiva · escuchar al coordinador)",
+          "Caracterizar la población objetivo (cara receptiva · leer ficha de inscripción)",
+          "Confirmar intereses y necesidades de la población (cara receptiva · escuchar al participante)",
+          "Verificar roles dentro de la actividad recreativa (cara receptiva · escuchar asignación del coordinador)",
+          "Elaborar listas de chequeo (cara receptiva · leer lista bilingüe)",
+          "Revisar el estado de los elementos para la actividad recreativa (cara receptiva · leer inventario)",
+          "Aplicar encuesta de satisfacción del servicio (cara receptiva · leer formato bilingüe)"
+        ],
+        "saberes_tecnicos_anclados": [
+          "Equipo operativo: roles (recreador profesional · auxiliar · coordinador · instructor) · funciones",
+          "Grupos poblacionales: caracterización (niños · adolescentes · adultos · adultos mayores · personas con discapacidad)",
+          "Participantes de actividades recreativas: tipos · técnicas de clasificación · características",
+          "Gestión de información: tipos de documentos · técnicas de diligenciamiento · formatos",
+          "Información: concepto · manejo · listas de verificación",
+          "Recreación: concepto · tipos · clasificaciones por grupo etáreo · sectores"
+        ]
+      },
+
+      "saberes_conceptos_y_principios": [
+        "Pronombres personales · APLICADOS al INTERPRETAR EL PROGRAMA DE RECREACIÓN (I am the recreator · you are the participant · they are the children group · we are the operative team)",
+        "Presente simple de be (am, is, are) y estructuración sintáctica · APLICADO al RECONOCER ROLES DEL EQUIPO OPERATIVO IMDER y CARACTERIZAR LA POBLACIÓN OBJETIVO en ficha (the coordinator is responsible · the participants are children · the recreator is professional)",
+        "Interrogación (yes/no / Wh- estructura) · APLICADA al CONFIRMAR INTERESES Y NECESIDADES de la población al inscribir (What is your name? · How old are you? · Are you a participant?)",
+        "Adjetivos posesivos · APLICADOS al CARACTERIZAR LA POBLACIÓN OBJETIVO en ficha de inscripción (your age · their interests · my role · our group)",
+        "Artículos · APLICADOS a la LECTURA DE LISTAS DE CHEQUEO bilingües IMDER (a ball · the playground · an instructor · the recreation kit)",
+        "Demostrativos (como pronombres y adjetivos) · APLICADOS a la REVISIÓN DEL ESTADO DE LOS ELEMENTOS para la actividad recreativa (this kit · these cones · that whistle · those mats)",
+        "Sustantivos plurales · APLICADOS al CONTEO DE PARTICIPANTES y al INVENTARIO DE MATERIALES recreativos (children, balls, cones, mats, whistles, instructors, coordinators)",
+        "Vocabulario: saludos · fórmulas de cortesía · información personal (datos) · APLICADO a la APLICACIÓN DE ENCUESTA DE SATISFACCIÓN bilingüe IMDER y RECEPCIÓN del participante al inicio de la actividad (Hello · Good morning · Welcome to IMDER · What is your name? · How are you today?)",
+        "Vocabulario: números · alfabeto · colores · formas y texturas · APLICADO al REALIZAR CONTEO DE PARTICIPANTES (count: 1-30) · al DELETREAR NOMBRES en lista de inscripción · al DESCRIBIR MATERIALES recreativos (red ball · blue cone · round mat · soft texture)",
+        "Vocabulario: trabajos y ocupaciones · países · nacionalidades · idiomas · APLICADO al RECONOCER ROLES DEL EQUIPO OPERATIVO IMDER (recreator · recreation assistant · program coordinator · activity instructor) y CARACTERIZAR LA POBLACIÓN OBJETIVO multicultural (Colombian · Venezuelan · Ecuadorian participants · Spanish · English speakers)",
+        "Vocabulario: miembros de la familia · objetos del ambiente de aprendizaje · elementos personales y posesiones · APLICADO al CARACTERIZAR LA POBLACIÓN OBJETIVO en ficha de inscripción (mother · father · brother · sister · personal ID · backpack · sport shoes) y al IDENTIFICAR ELEMENTOS PERSONALES de los participantes en el espacio recreativo",
+        "Aspectos de la lengua hablada: fonemas · acento · patrones básicos de entonación · APLICADOS al ESCUCHAR INSTRUCCIONES del coordinador en el plan operativo recreativo y al ATENDER consultas de participantes hispanohablantes en inglés",
+        "Pronunciación: terminación de palabras por S (plural · posesivos · tercera persona singular) · APLICADA al RECONOCER en audio el CONTEO DE PARTICIPANTES (children, balls), POSESIONES (Maria's whistle), y ACCIONES rutinarias del recreador (the recreator leads, organizes, supervises)",
+        "Pronunciación: fonemas pares mínimos (ship/sheep, vet/bet, pull/pool, yet/jet) · APLICADA a la DISCRIMINACIÓN AUDITIVA en instrucciones recreativas (sit/seat · stand/stood · hit/heat · pull/pool en juegos cooperativos)",
+        "Estrategias de aprendizaje: uso de diccionarios inglés/español · uso de recursos educativos digitales · estilos de aprendizaje · APLICADAS al INTERPRETAR EL PROGRAMA DE RECREACIÓN bilingüe (consulta de glosario técnico recreativo) y a la COMPRENSIÓN AUTÓNOMA de fichas técnicas de actividades"
+      ],
+
+      "saberes_proceso": [
+        "Familiarizarse con distintos aspectos de la lengua hablada (fonemas · acento · entonación) · APLICADO al ESCUCHAR EL PLAN OPERATIVO del programa recreativo presentado por el coordinador y al RECONOCER instrucciones básicas del recreador profesional en sesiones IMDER",
+        "Emplear la estructura básica de una frase en inglés (sujeto+verbo+complemento) · APLICADO al INTERPRETAR EL PROGRAMA DE RECREACIÓN escrito (the program starts at 9 am · the participants are children · the activity is outdoor)",
+        "Deletrear nombres, direcciones y otras palabras · APLICADO al CARACTERIZAR LA POBLACIÓN OBJETIVO al diligenciar ficha de inscripción del participante (deletrear nombre · apellido · dirección · barrio donde vive) y al REGISTRAR LAS ACTIVIDADES en formato establecido bilingüe",
+        "Preguntar por la ortografía de palabras de nombres y objetos · APLICADO al CARACTERIZAR LA POBLACIÓN OBJETIVO confirmando ortografía del nombre del participante (How do you spell your name?) y de objetos del kit recreativo en SOLICITUD DE MATERIALES",
+        "Preguntar por los nombres de las cosas · APLICADO al REVISAR EL ESTADO DE LOS ELEMENTOS para la actividad recreativa (What is this called? · What is the name of this material?) cuando inventaria el kit recreativo del IMDER",
+        "Intercambiar números de teléfono y direcciones de correo electrónico · APLICADO al CARACTERIZAR LA POBLACIÓN OBJETIVO al diligenciar ficha de inscripción (teléfono del acudiente · email para confirmación) y al REGISTRAR datos de contacto en formato establecido",
+        "Diligenciar formularios con datos personales en cotidianidad o contextos laborales · APLICADO al APLICAR ENCUESTA DE SATISFACCIÓN bilingüe IMDER y a la INSCRIPCIÓN del participante al programa recreativo (formato bilingüe con campos: name · age · nationality · interests · health conditions)"
+      ],
+
+      "criterios_evaluacion": [
+        "Comprende vocabulario y expresiones en inglés AL INTERPRETAR EL PROGRAMA DE RECREACIÓN del IMDER y AL CARACTERIZAR LA POBLACIÓN OBJETIVO mediante ficha de inscripción bilingüe acorde con nivel principiante",
+        "Comprende información básica en textos en inglés AL LEER LISTAS DE CHEQUEO bilingües IMDER y AL REVISAR EL ESTADO DE LOS ELEMENTOS para la actividad recreativa acorde con nivel principiante",
+        "Completa formularios con información personal AL APLICAR ENCUESTA DE SATISFACCIÓN bilingüe IMDER y AL DILIGENCIAR FICHA DE INSCRIPCIÓN del participante utilizando vocabulario y gramática acorde con nivel principiante"
+      ],
+
+      "criterios_evaluacion_especificos_canon_sistema": [
+        {
+          "id": "C01",
+          "criterio": "Comprender información básica en textos cortos en inglés AL INTERPRETAR EL PROGRAMA DE RECREACIÓN IMDER (objetivos · horarios · grupos poblacionales · tipos de actividad) e identificar datos clave correctos vs distractores en ficha de un participante (nombre · edad · país · ocupación · familia · gustos básicos · necesidades recreativas)",
+          "rap_target": "RAP-01",
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E1",
+          "evidencia_nombre": "Reading",
+          "sesion": "S3",
+          "instrumento": "Cuestionario No 1",
+          "_anclaje_tecnico": "Interpretar el programa de recreación + Caracterizar la población objetivo"
+        },
+        {
+          "id": "C03",
+          "criterio": "Comprender información oral básica AL ESCUCHAR EL PLAN OPERATIVO presentado por el coordinador IMDER y AL VERIFICAR ROLES dentro de la actividad recreativa (recreador profesional · auxiliar recreativo · instructor · participantes) e identificar mensajes correctos vs distractores en audio auténtico adaptado de presentaciones de equipo operativo",
+          "rap_target": "RAP-01",
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E3",
+          "evidencia_nombre": "Listening",
+          "sesion": "S5",
+          "instrumento": "Lista de Verificación No 3",
+          "_anclaje_tecnico": "Explicar el plan operativo del programa recreativo + Verificar roles dentro de la actividad recreativa"
+        },
+        {
+          "id": "C05",
+          "criterio": "Demostrar dominio receptivo de vocabulario A1.1 contextualizado a recreación IMDER (saludos a participantes · números para CONTEO DE PARTICIPANTES · alfabeto para DELETREAR NOMBRES en inscripción · colores/formas para INVENTARIO DE MATERIALES · ocupaciones para ROLES DEL EQUIPO OPERATIVO · familia para CARACTERIZAR POBLACIÓN OBJETIVO · pronombres · be · posesivos · plurales) en cuestionario consolidado",
+          "rap_target": ["RAP-01", "RAP-02", "RAP-03"],
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Vocabulario",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Caracterización de población · Conteo de participantes · Solicitud de materiales · Verificación de roles"
+        },
+        {
+          "id": "C07",
+          "criterio": "Demostrar dominio integrado de saberes (Reading + Writing + Listening + Vocabulary + Grammar) AL OPERAR procesos técnicos recreativos auténticos IMDER · Cuestionario Consolidado · 25 ítems · ≥ 70% para PASS",
+          "rap_target": ["RAP-01", "RAP-02", "RAP-03"],
+          "cefr_subnivel": "consolidación A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · 8 procesos técnicos receptivos + 7 productivo-descriptivos + 14 interactivos"
+        }
+      ],
+
+      "_rationale": "RA1 es Bloom L2 COMPRENDER · cara receptiva del idioma (Reading + Listening) APLICADA a procesos técnicos recreativos REALES de comprensión. El enunciado SOFÍA refiere 'información básica oral y escrita acerca de sí mismo, de las personas y de su contexto inmediato' · contextualizado al IMDER significa: comprender el PROGRAMA DE RECREACIÓN bilingüe (interpretar) · escuchar el PLAN OPERATIVO del coordinador (explicar receptivamente) · leer LISTAS DE CHEQUEO bilingües (revisar elementos) · reconocer ROLES DEL EQUIPO OPERATIVO IMDER (verificar roles) · diligenciar FICHA DE INSCRIPCIÓN del participante (caracterizar población) · aplicar ENCUESTA DE SATISFACCIÓN bilingüe (cara receptiva del formato). Cada estructura sintáctica mínima de identificación (pronombres · be · interrogación · posesivos · artículos · demostrativos · plurales) está ANCLADA a un proceso técnico real: pronombres al interpretar programa · be al reconocer roles · interrogación al confirmar intereses · demostrativos al revisar elementos · plurales al CONTEO DE PARTICIPANTES. Vocabulario receptivo (saludos · números · alfabeto · colores · ocupaciones · familia · objetos personales) ancla literalmente a CONTEO + DELETREO + INVENTARIO + ROLES + CARACTERIZACIÓN POBLACIONAL. Estrategias de aprendizaje (diccionarios · recursos digitales) anclan a INTERPRETAR PROGRAMA bilingüe. Procesos: 7/7 procesos lingüísticos receptivos contextualizados a procesos técnicos reales del input crudo. Criterios canon C01 + C03 anclan a procesos técnicos verificables (interpretar programa + caracterizar población + plan operativo + verificar roles).",
+
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": ["E1 (C01 · Reading S3 · interpretar programa + caracterizar población)", "E3 (C03 · Listening S5 · plan operativo + verificar roles)"],
+        "overlaps_documentados": [
+          "C05 3-way RA1+RA2+RA3 cara Vocabulario en Cuestionario Consolidado E6",
+          "C07 3-way RA1+RA2+RA3 Cuestionario Consolidado E6"
+        ],
+        "sesiones_anchor": ["S3 (E1 Reading)", "S5 (E3 Listening)", "S9 (E6 Cuestionario)"],
+        "criterios_count": 4,
+        "saberes_count": "15 conceptos + 7 procesos · TODOS anclados a procesos/saberes técnicos IMDER",
+        "_nota_fusion": "RA1 ancla a 8 procesos técnicos receptivos del input crudo: interpretar programa · explicar plan operativo (receptivo) · caracterizar población (receptivo) · confirmar intereses (receptivo) · verificar roles (receptivo) · elaborar listas chequeo (receptivo) · revisar estado elementos (receptivo) · aplicar encuesta satisfacción (receptivo)"
+      }
+    },
+
+    {
+      "rap_id": "RA2",
+      "rap_codigo_sofia": "240202501-RA2",
+      "rap_titulo": "DESCRIBIR A NIVEL BÁSICO, DE FORMA ORAL Y ESCRITA EN INGLÉS PERSONAS, SITUACIONES Y LUGARES DE ACUERDO CON SUS COSTUMBRES Y EXPERIENCIAS DE VIDA",
+      "verbo_cognitivo": "DESCRIBIR",
+      "bloom_level": "L2-L3 (Comprender → Aplicar)",
+      "cefr_target": "A1.1",
+      "dominio_canonico": "Producción descriptiva (Writing + Speaking descriptivo) APLICADA a procesos técnicos recreativos de descripción: caracterizar la población objetivo (segmentos · número · características visibles) · describir el espacio recreativo (planimetría · accesos · señalización) · describir materiales y equipos · describir tipos de actividad y manifestaciones recreativas · describir condiciones físicas del entorno",
+      "_anclaje_tecnico_rap": {
+        "procesos_tecnicos_anclados": [
+          "Caracterizar la población objetivo (cara productiva descriptiva · describir segmentos visibles)",
+          "Diseñar la actividad recreativa (cara descriptiva · describir tipo · espacio · materiales)",
+          "Solicitar materiales y equipos requeridos (cara descriptiva · describir lo necesitado)",
+          "Presentar la planeación de la actividad recreativa (cara descriptiva escrita)",
+          "Realizar la actividad recreativa (cara descriptiva del tipo · espacio · clima)",
+          "Reubicar el material en el ambiente definido (cara descriptiva · describir ubicación)",
+          "Utilizar la logística requerida para el desarrollo del programa (cara descriptiva)"
+        ],
+        "saberes_tecnicos_anclados": [
+          "Espacio para recreación: generalidades · tipos · planimetría · condiciones físicas · señalización · accesos",
+          "Recreación: tipos (al aire libre · espacios cerrados · acuáticos · otros)",
+          "Manifestaciones recreativas: tipos (ferias · fiestas · circo · carnaval · comparsas · rondas · bazares)",
+          "Eventos recreativos: tipos (empresariales · institucionales · familiares · sociales)",
+          "Técnicas recreativas: tipos (talleres manuales · juegos · rondas · campamentiles · canción)",
+          "Aspectos teóricos de la recreación: tiempo lúdico · características",
+          "Plan de contingencia: concepto",
+          "Grupos poblacionales: caracterización descriptiva visible (segmento · número · características físicas)"
+        ]
+      },
+
+      "saberes_conceptos_y_principios": [
+        "Sustantivos contables y no contables · APLICADOS al SOLICITAR MATERIALES Y EQUIPOS recreativos al auxiliar (contables: balls, cones, whistles, mats · no contables: equipment, recreation gear, water, music, paint para taller manual)",
+        "There is, there are · APLICADO al DESCRIBIR EL ESPACIO RECREATIVO IMDER y al PRESENTAR LA PLANEACIÓN (there is one playground · there are two basketball courts · there are five accesses · there is a contingency plan)",
+        "Preposiciones de lugar · APLICADAS a la PLANIMETRÍA del espacio recreativo y a la REUBICACIÓN DEL MATERIAL en el ambiente definido (the cones are next to the entrance · the kit is in the storage room · the playground is between the office and the field)",
+        "Adverbios de cantidad: many, much, a lot (of) · APLICADOS al CARACTERIZAR LA POBLACIÓN OBJETIVO (many children · a lot of seniors · much energy in the group) y al DESCRIBIR la magnitud de eventos recreativos (a lot of participants in the fair · many activities in the carnival)",
+        "Some y any · APLICADOS al SOLICITAR MATERIALES Y EQUIPOS al auxiliar (Are there any cones available? · We need some balls for the activity · Are there any seniors in the group?)",
+        "Adjetivos después del verbo be, y antes de los sustantivos · APLICADOS al CARACTERIZAR LA POBLACIÓN OBJETIVO (the children are active · the participants are friendly · happy seniors · energetic teenagers) y al DESCRIBIR el espacio recreativo (the playground is large · the field is green · spacious facilities)",
+        "Posesivos con 's' · APLICADOS al CARACTERIZAR LA POBLACIÓN OBJETIVO con datos de adscripción (Maria's age · the participant's interests · the coordinator's plan · the group's needs) y al DESCRIBIR posesión de materiales (the recreator's whistle · the team's equipment)",
+        "Vocabulario: adjetivos para describir personas, cosas y lugares · APLICADO al CARACTERIZAR LA POBLACIÓN OBJETIVO (young children · senior adults · friendly participants · skilled instructors) y al DESCRIBIR EL ESPACIO recreativo (large playground · open field · safe access · clean facility)",
+        "Vocabulario: adjetivos para definir personalidad · APLICADO al CARACTERIZAR LA POBLACIÓN OBJETIVO en su perfil para diseñar la actividad (cheerful · shy · cooperative · active · energetic · calm participants) base para CONFIRMAR INTERESES Y NECESIDADES",
+        "Vocabulario: sentimientos y sensaciones · APLICADO al DESCRIBIR el estado de los participantes durante REALIZAR LA ACTIVIDAD RECREATIVA (the children are happy · the seniors feel comfortable · the group is excited about the manifestation)",
+        "Vocabulario: lugares y atracciones en pueblo o ciudad (festivos, actividades turísticas, comidas y bebidas) · APLICADO al DESCRIBIR MANIFESTACIONES RECREATIVAS (ferias · fiestas · carnavales · bazares) y EVENTOS RECREATIVOS (institucionales · familiares · sociales) en universo IMDER",
+        "Vocabulario: el clima · APLICADO al DESCRIBIR LAS CONDICIONES FÍSICAS DEL ENTORNO al REALIZAR LA ACTIVIDAD RECREATIVA al aire libre (sunny · rainy · windy · hot · cool · cloudy) base del PLAN DE CONTINGENCIA (when it rains, we move to the indoor space)",
+        "Pronunciación: acentuación de palabras · APLICADA al DESCRIBIR claramente tipos de RECREACIÓN, MANIFESTACIONES y TÉCNICAS recreativas (acentuación correcta de outdoor · indoor · aquatic · workshop · carnival · parade)",
+        "Pronunciación: enlace consonante-vocal · APLICADA a la fluidez al PRESENTAR LA PLANEACIÓN DE LA ACTIVIDAD RECREATIVA oralmente al coordinador (link in 'there_is_a · the_event_is · the_age_of')"
+      ],
+
+      "saberes_proceso": [
+        "Señalar la ubicación de un objeto · APLICADO al DESCRIBIR la PLANIMETRÍA del espacio recreativo IMDER (the cones are here · the kit is there · the entrance is on the left) y al REUBICAR EL MATERIAL en el ambiente definido",
+        "Preguntar por la ubicación de un objeto · APLICADO al SOLICITAR MATERIALES Y EQUIPOS al auxiliar antes de la actividad (Where is the recreation kit? · Where are the cones? · Where is the contingency map?)",
+        "Brindar información acerca de ubicación de lugares en país, ciudad, pueblo o espacios como edificio · APLICADO al DESCRIBIR EL ESPACIO RECREATIVO IMDER por planimetría (the playground is in the IMDER municipal park · the indoor courts are on the second floor · the access is between calle 3 and carrera 5)",
+        "Expresar posesión y propiedad de las cosas · APLICADO al DESCRIBIR materiales del kit recreativo y al REGISTRAR equipos asignados por rol (this is the recreator's whistle · the auxiliary's clipboard · the coordinator's program book · the participants' identification cards)",
+        "Intercambiar información sobre estado de ánimo propio y de otros · APLICADO al CARACTERIZAR LA POBLACIÓN OBJETIVO durante la actividad y al DETECTAR necesidades emocionales (How are the children feeling today? · The seniors are tired · The teenagers are excited about the carnival)",
+        "Sugerir a alguien un sitio o lugar para visitar · APLICADO al DISEÑAR LA ACTIVIDAD RECREATIVA recomendando manifestaciones/eventos al participante (You should visit the recreation fair · Why don't you join the carnival? · I suggest the outdoor activity at the IMDER park)"
+      ],
+
+      "criterios_evaluacion": [
+        "Brinda información acerca de objetos y sus características AL DESCRIBIR EL KIT RECREATIVO IMDER (materiales · cantidades · ubicación · estado) y AL SOLICITAR MATERIALES Y EQUIPOS al auxiliar antes de la actividad",
+        "Comprende narraciones cortas orales y escritas acerca de situaciones que ocurren en el momento de la expresión AL DESCRIBIR LO QUE OCURRE durante REALIZAR LA ACTIVIDAD RECREATIVA en el espacio IMDER (presente continuo descriptivo) utilizando vocabulario y gramática básica acorde con nivel principiante"
+      ],
+
+      "criterios_evaluacion_especificos_canon_sistema": [
+        {
+          "id": "C02",
+          "criterio": "Producir textos escritos descriptivos básicos AL PRESENTAR LA PLANEACIÓN DE LA ACTIVIDAD RECREATIVA al coordinador IMDER (descripción del espacio · planimetría · materiales solicitados · población objetivo caracterizada · clima · plan de contingencia) aplicando be · adjetivos · there is/are · posesivos · preposiciones de lugar · contables/no contables sin errores que comprometan la inteligibilidad operativa",
+          "rap_target": "RAP-02",
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E2",
+          "evidencia_nombre": "Writing",
+          "sesion": "S4",
+          "instrumento": "Lista de Verificación No 2",
+          "_anclaje_tecnico": "Diseñar la actividad recreativa + Presentar la planeación + Solicitar materiales + Caracterizar población"
+        },
+        {
+          "id": "C05",
+          "criterio": "Demostrar dominio receptivo de vocabulario A1.1 contextualizado a recreación IMDER (adjetivos descriptivos para CARACTERIZAR POBLACIÓN · clima para PLAN DE CONTINGENCIA · lugares para MANIFESTACIONES RECREATIVAS · sentimientos para DETECTAR NECESIDADES) en cuestionario consolidado",
+          "rap_target": ["RAP-01", "RAP-02", "RAP-03"],
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Vocabulario",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Caracterizar población · Describir espacio · Describir materiales · Describir clima"
+        },
+        {
+          "id": "C06",
+          "criterio": "Demostrar dominio gramatical A1.1 contextualizado a procesos técnicos recreativos IMDER (be al RECONOCER ROLES · pronombres · interrogación al CONFIRMAR INTERESES · posesivos al CARACTERIZAR POBLACIÓN · artículos · demostrativos al REVISAR ELEMENTOS · plurales al CONTAR PARTICIPANTES · contables/no contables al SOLICITAR MATERIALES · there is/are al DESCRIBIR ESPACIO · cuantificadores al DIMENSIONAR EVENTO · presente simple al EXPLICAR ROL · presente continuo al ANIMAR ACTIVIDAD · modales básicos al PEDIR/OFRECER AYUDA · conectores al ENCADENAR INSTRUCCIONES) en cuestionario consolidado",
+          "rap_target": ["RAP-02", "RAP-03"],
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Grammar",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal a procesos descriptivos + interactivos"
+        },
+        {
+          "id": "C07",
+          "criterio": "Demostrar dominio integrado de saberes (Reading + Writing + Listening + Vocabulary + Grammar) AL OPERAR procesos técnicos recreativos auténticos IMDER · Cuestionario Consolidado · 25 ítems · ≥ 70% para PASS",
+          "rap_target": ["RAP-01", "RAP-02", "RAP-03"],
+          "cefr_subnivel": "consolidación A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · 8 procesos receptivos + 7 productivo-descriptivos + 14 interactivos"
+        }
+      ],
+
+      "_rationale": "RA2 es Bloom L2-3 DESCRIBIR · cara productiva descriptiva (Writing + Speaking descriptivo) APLICADA a procesos técnicos recreativos REALES de descripción. El enunciado SOFÍA es 'describir personas, situaciones y lugares' · contextualizado al IMDER significa: CARACTERIZAR LA POBLACIÓN OBJETIVO (segmentos · adjetivos · número · características) · DISEÑAR LA ACTIVIDAD RECREATIVA describiendo tipo+espacio+materiales · SOLICITAR MATERIALES Y EQUIPOS describiendo lo necesitado · PRESENTAR LA PLANEACIÓN al coordinador · DESCRIBIR el espacio recreativo (planimetría · accesos · señalización) · DESCRIBIR las manifestaciones recreativas observadas (ferias · fiestas · carnavales) · DESCRIBIR las condiciones físicas del entorno (clima · iluminación · superficie) · base del PLAN DE CONTINGENCIA. Cada estructura de existencia/cantidad/atributo (there is/are · contables/no contables · cuantificadores · adjetivos · posesivos 's · preposiciones de lugar) está ANCLADA a un proceso técnico real: there is/are al describir espacio · contables al solicitar materiales · cuantificadores al caracterizar población · adjetivos al caracterizar y describir · posesivos a registrar equipos por rol · preposiciones a la planimetría. Vocabulario descriptivo (adjetivos · personalidad · sentimientos · lugares-atracciones · clima) ancla literalmente a CARACTERIZAR + DESCRIBIR + DETECTAR + DESCRIBIR MANIFESTACIONES + PLAN CONTINGENCIA. Procesos: 6/6 procesos lingüísticos descriptivos contextualizados a procesos técnicos reales del input crudo. Criterio canon C02 ancla a 4 procesos técnicos verificables (diseñar + presentar + solicitar + caracterizar).",
+
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": ["E2 (C02 · Writing S4 · presentar planeación + caracterizar población + describir espacio + solicitar materiales)"],
+        "overlaps_documentados": [
+          "C05 3-way RA1+RA2+RA3 cara Vocabulario E6",
+          "C06 RA2+RA3 cara Grammar E6 Cuestionario S9",
+          "C07 3-way RA1+RA2+RA3 Cuestionario Consolidado E6"
+        ],
+        "sesiones_anchor": ["S4 (E2 Writing)", "S9 (E6 Cuestionario)"],
+        "criterios_count": 4,
+        "saberes_count": "14 conceptos + 6 procesos · TODOS anclados a procesos/saberes técnicos IMDER",
+        "_nota_fusion": "RA2 ancla a 7 procesos técnicos descriptivos del input crudo: caracterizar población (productivo) · diseñar actividad · solicitar materiales · presentar planeación · realizar actividad (cara descriptiva) · reubicar material · utilizar logística"
+      }
+    },
+
+    {
+      "rap_id": "RA3",
+      "rap_codigo_sofia": "240202501-RA3",
+      "rap_titulo": "PARTICIPAR EN INTERCAMBIOS CONVERSACIONALES BÁSICOS EN FORMA ORAL Y ESCRITA EN INGLÉS EN DIFERENTES SITUACIONES SOCIALES TANTO EN LA COTIDIANIDAD COMO EN EXPERIENCIAS PASADAS",
+      "verbo_cognitivo": "PARTICIPAR",
+      "bloom_level": "L3-L4 (Aplicar / Interactuar)",
+      "cefr_target": "A1.1",
+      "dominio_canonico": "Producción interactiva (Speaking conversacional · juegos de rol · intercambios sociales) APLICADA a procesos técnicos recreativos interactivos REALES: atender intereses y necesidades de la población · acomodar participantes · ajustar tono de voz · aplicar técnicas de animación · cumplir rol asignado · aplicar listas de chequeo · aplicar encuesta de satisfacción",
+      "_anclaje_tecnico_rap": {
+        "procesos_tecnicos_anclados": [
+          "Aplicar el programa de recreación (cara interactiva · ejecutar)",
+          "Ejecutar el plan operativo del programa recreativo (cara interactiva)",
+          "Atender intereses y necesidades de la población (interactivo · escuchar y responder)",
+          "Acomodar los participantes en la actividad recreativa (instrucciones simples)",
+          "Ajustar el tono de voz en el entorno asignado",
+          "Aplicar técnicas de animación recreativas (interjecciones · expresiones cortas)",
+          "Cumplir con la secuenciación de acciones programadas",
+          "Cumplir con el rol asignado dentro de la actividad recreativa",
+          "Aplicar mecanismos de seguimiento y control (interactivo)",
+          "Aplicar listas de chequeo (cara interactiva · confirmación bilateral)",
+          "Registrar las actividades en el formato establecido (cara interactiva escrita)",
+          "Aplicar encuesta de satisfacción del servicio (cara interactiva · entrevista)",
+          "Confirmar intereses y necesidades de la población (cara productiva interactiva)",
+          "Realizar conteo de participantes (cara interactiva · llamado)"
+        ],
+        "saberes_tecnicos_anclados": [
+          "Técnicas de animación: interjecciones · expresiones cortas (well done · excellent · let's try again)",
+          "Técnicas de acomodación de grupos (stand here · look at me · turn around)",
+          "Equipo operativo: roles (recreador · auxiliar · coordinador · instructor) · funciones interactivas",
+          "Encuesta de percepción de calidad del servicio: concepto · resultados · aplicación bilingüe",
+          "Acciones de mejora: concepto · acciones correctivas y preventivas (cara interactiva inicial)",
+          "Información: manejo · listas de verificación (cara interactiva)",
+          "Recreación: beneficios · sectores · tipos (en intercambio conversacional con participante)",
+          "Aspectos teóricos de la recreación: tiempo lúdico (en explicación al participante)"
+        ]
+      },
+
+      "saberes_conceptos_y_principios": [
+        "Presente simple (verbos más usados) y estructuración sintáctica · APLICADO a EXPLICAR EL ROL ASIGNADO al participante en la actividad (I lead the warm-up · the auxiliary distributes materials · we play group games · the coordinator supervises) y a DESCRIBIR LA RUTINA del programa recreativo IMDER",
+        "Adverbios de frecuencia · APLICADOS a CUMPLIR CON LA SECUENCIACIÓN DE ACCIONES PROGRAMADAS (always start with warm-up · usually end with reflection · sometimes include manifestations · never skip the cool-down) y al INTERCAMBIO sobre rutinas del programa recreativo",
+        "Preposiciones de tiempo · APLICADAS al EJECUTAR EL PLAN OPERATIVO del programa recreativo (the activity starts at 9 am · we work from Monday to Friday · the carnival is on Saturday · the cooldown is in 10 minutes)",
+        "Presente continuo: acciones presentes · APLICADO al APLICAR TÉCNICAS DE ANIMACIÓN RECREATIVAS narrando lo que pasa (the children are running · the seniors are dancing · we are playing the round · the team is winning) y al RESPONDER al participante sobre la actividad en curso",
+        "Conectores simples: and, or, but · APLICADOS al ACOMODAR LOS PARTICIPANTES con instrucciones encadenadas (stand up and turn around · sit down or stand up · look at me but don't move) y al APLICAR ENCUESTA DE SATISFACCIÓN (Did you enjoy the activity and would you come back? · Was it fun but tiring?)",
+        "Verbo can (permiso, posibilidad, habilidad) · APLICADO al ATENDER INTERESES Y NECESIDADES de la población (Can you help me? · Yes, I can swim · Can the children join the round?) y al CONFIRMAR habilidades del participante para la actividad",
+        "Verbo would (invitaciones) · APLICADO al APLICAR EL PROGRAMA DE RECREACIÓN invitando al participante (Would you like to play? · Would you join the carnival? · Would you try the workshop?) y al SUGERIR actividad a un grupo poblacional",
+        "Verbo should (recomendar un sitio o lugar) · APLICADO al ATENDER INTERESES Y NECESIDADES recomendando actividad/manifestación según perfil (You should try the outdoor game · The seniors should join the calm activity · You shouldn't run in the indoor space)",
+        "Pronombres sujeto y objeto · APLICADOS a INTERCAMBIO con participantes y colegas IMDER (I help you · she joins us · the recreator gives them the ball · we follow him to the playground)",
+        "Pronombres indefinidos · APLICADOS al APLICAR LISTAS DE CHEQUEO bilateralmente (Is there anyone missing? · Everyone has a kit · Someone needs water · Nothing is broken)",
+        "Vocabulario: actividades cotidianas · comer y horas de comida · APLICADO al INTERCAMBIO con participantes sobre rutina del día recreativo IMDER (breakfast at 8 · activities at 9 · lunch at 12 · afternoon games at 2)",
+        "Vocabulario: horas del día, días, meses, estaciones · APLICADO al EJECUTAR EL PLAN OPERATIVO confirmando horarios al participante (the carnival is on Friday · we meet every Wednesday · summer activities are outdoor) y al APLICAR ENCUESTA confirmando agenda",
+        "Vocabulario: actividades para tiempo libre · deportes y ejercicio · APLICADO al ATENDER INTERESES Y NECESIDADES y CONFIRMAR INTERESES de la población (Do you like soccer? · Do you prefer dancing or running? · What sports do you play?) base del DISEÑO de la actividad",
+        "Vocabulario: gustos y preferencias (aficiones, intereses, deportes, música, películas, televisión, libros) · APLICADO al CONFIRMAR INTERESES Y NECESIDADES de la población mediante intercambio conversacional (I like music · I prefer dance · I love board games · I enjoy outdoor activities) base del DISEÑO Y APLICACIÓN del programa recreativo personalizado",
+        "Pronunciación: acento en una frase (palabras de contenido y funcionales) · APLICADA al AJUSTAR EL TONO DE VOZ EN EL ENTORNO ASIGNADO (énfasis correcto en órdenes recreativas: 'STAND here · LOOK at me · WELL done · LET'S go!') componente de TÉCNICAS DE ANIMACIÓN"
+      ],
+
+      "saberes_proceso": [
+        "Saludar en situaciones formales o informales en diferentes momentos del día · APLICADO al APLICAR EL PROGRAMA DE RECREACIÓN al recibir al participante (Good morning! · Welcome to IMDER! · Hello everyone! · Hi children!) y al CUMPLIR CON EL ROL del recreador profesional al iniciar la jornada",
+        "Utilizar fórmulas de saludo al comienzo de una llamada a alguien familiar · APLICADO al CONFIRMAR INTERESES Y NECESIDADES contactando al acudiente del participante por teléfono (Hello, this is the IMDER recreator · Good afternoon, I'm calling about the recreation program)",
+        "Presentarse a un grupo o a un visitante en contextos sociales y laborales · APLICADO al CUMPLIR CON EL ROL ASIGNADO presentándose al inicio de la actividad recreativa (My name is X, I am the recreator · I am the auxiliary · This is the coordinator · Today I will lead the activity)",
+        "Intercambiar información personal básica (nombre, edad, nacionalidad, procedencia, lugar de residencia, estado civil, hijos, ocupación) · APLICADO al CARACTERIZAR LA POBLACIÓN OBJETIVO mediante entrevista oral inicial (cara productiva interactiva) y al CONFIRMAR INTERESES Y NECESIDADES del participante adulto/niño/adulto mayor",
+        "Intercambiar información acerca de la familia y los intereses · APLICADO al CONFIRMAR INTERESES Y NECESIDADES de la población profundizando perfil para el DISEÑO de actividad personalizada (Do you have brothers? · What does your family like? · What are your hobbies?)",
+        "Pedir prestado algo a alguien de manera formal e informal · APLICADO al SOLICITAR MATERIALES Y EQUIPOS al auxiliar recreativo y al CUMPLIR CON EL ROL coordinándose con el equipo operativo (Can I borrow the whistle? · Could I have the kit? · May I use the speakers?)",
+        "Solicitar ayuda de manera formal e informal · APLICADO al CUMPLIR CON EL ROL coordinándose con el equipo operativo IMDER y al ATENDER INTERESES Y NECESIDADES de participantes (Can you help me with this group? · Could you bring more cones? · Help, please! · Please assist this senior)",
+        "Ofrecer ayuda a alguien a través de fórmulas de cortesía · responder a propuestas de ayuda · APLICADO al ATENDER INTERESES Y NECESIDADES de la población (Can I help you? · Do you need anything? · Let me assist you · Yes, please · No, thank you · I'm fine)",
+        "Indicar gustos y preferencias en conversación simple de carácter social · APLICADO al CONFIRMAR INTERESES Y NECESIDADES de la población (I like sports · I prefer music · I love art workshops) base del DISEÑO de actividad personalizada según grupo poblacional",
+        "Responder a buenas y malas noticias · APLICADO al APLICAR TÉCNICAS DE ANIMACIÓN RECREATIVAS (Great job! · Well done! · Don't worry · Let's try again · That's amazing!) y al APLICAR ENCUESTA DE SATISFACCIÓN respondiendo a feedback positivo o negativo",
+        "Intercambiar información sobre rutina y actividades del fin de semana · expresando frecuencia · APLICADO al CONFIRMAR INTERESES Y NECESIDADES de la población (What do you do on weekends? · I play soccer every Saturday · The seniors usually walk in the park) base del DISEÑO de programa recreativo",
+        "Intercambiar información sobre rutina laboral y puestos de trabajo · APLICADO al CUMPLIR CON EL ROL coordinándose con equipo operativo IMDER (I am the recreator · I lead the warm-up · the auxiliary distributes materials · the coordinator plans the program · the instructor specializes in dance)",
+        "Decir la hora · APLICADO al EJECUTAR EL PLAN OPERATIVO confirmando horarios al participante y al CUMPLIR CON LA SECUENCIACIÓN DE ACCIONES PROGRAMADAS (It's 9 o'clock · The activity starts at 10:30 · Lunch break is at 12 · We finish at 4 pm)",
+        "Hablar de lo que está ocurriendo en el momento (presente continuo) · APLICADO al APLICAR TÉCNICAS DE ANIMACIÓN RECREATIVAS narrando la acción (the children are running · the team is winning · we are dancing · the seniors are smiling) y al ATENDER consultas durante la actividad"
+      ],
+
+      "criterios_evaluacion": [
+        "Participa en juegos de rol guiados o situaciones simuladas relacionadas con APLICAR EL PROGRAMA DE RECREACIÓN IMDER (recreador recibiendo al participante · auxiliar coordinándose con el coordinador · animación de un grupo poblacional con técnicas recreativas) utilizando vocabulario y gramática básica junto con uso de fórmulas de cortesía",
+        "Expresa el quehacer diario personal y laboral AL CUMPLIR CON EL ROL ASIGNADO dentro de la actividad recreativa (rutina del recreador · funciones del auxiliar · ejecución del plan operativo) utilizando vocabulario y gramática acorde con nivel principiante",
+        "Expresa gustos, preferencias y actividades en el tiempo libre AL CONFIRMAR INTERESES Y NECESIDADES de la población recreativa IMDER mediante intercambio conversacional con participantes adulto/niño/adulto mayor utilizando vocabulario y gramática básica acorde con nivel principiante"
+      ],
+
+      "criterios_evaluacion_especificos_canon_sistema": [
+        {
+          "id": "C04",
+          "criterio": "Interactuar oralmente en juego de rol guiado simulando APLICACIÓN DEL PROGRAMA DE RECREACIÓN IMDER · Roles: recreador profesional con participante en CONFIRMACIÓN DE INTERESES · auxiliar recreativo con coordinador en SOLICITUD DE MATERIALES · animación de grupo poblacional aplicando TÉCNICAS DE ANIMACIÓN bilingües (well done · let's try again · stand up · turn around · let's go!) · ACOMODAR PARTICIPANTES con instrucciones simples · ATENDER INTERESES Y NECESIDADES con fluidez A1.1 y stress correcto en respuestas habituales",
+          "rap_target": "RAP-03",
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E4",
+          "evidencia_nombre": "Speaking",
+          "sesion": "S7",
+          "instrumento": "Escala de Estimación No 4",
+          "_anclaje_tecnico": "Aplicar programa + Confirmar intereses + Solicitar materiales + Acomodar participantes + Aplicar técnicas de animación + Atender necesidades"
+        },
+        {
+          "id": "C05",
+          "criterio": "Demostrar dominio receptivo de vocabulario A1.1 contextualizado a recreación IMDER (rutinas del programa al EJECUTAR PLAN OPERATIVO · horas/días al CUMPLIR SECUENCIACIÓN · gustos al CONFIRMAR INTERESES · interjecciones al APLICAR TÉCNICAS DE ANIMACIÓN) en cuestionario consolidado",
+          "rap_target": ["RAP-01", "RAP-02", "RAP-03"],
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Vocabulario",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Ejecutar plan operativo · Cumplir secuenciación · Confirmar intereses · Aplicar técnicas de animación"
+        },
+        {
+          "id": "C06",
+          "criterio": "Demostrar dominio gramatical A1.1 contextualizado a procesos técnicos recreativos IMDER (presente simple al EXPLICAR ROL · adverbios de frecuencia al SECUENCIAR ACCIONES · preposiciones de tiempo al EJECUTAR PLAN OPERATIVO · presente continuo al ANIMAR · conectores al ACOMODAR PARTICIPANTES · modales can/would/should al ATENDER NECESIDADES y SUGERIR ACTIVIDAD) en cuestionario consolidado",
+          "rap_target": ["RAP-02", "RAP-03"],
+          "cefr_subnivel": "A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Grammar",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal a procesos descriptivos + interactivos"
+        },
+        {
+          "id": "C07",
+          "criterio": "Demostrar dominio integrado de saberes (Reading + Writing + Listening + Vocabulary + Grammar) AL OPERAR procesos técnicos recreativos auténticos IMDER · Cuestionario Consolidado · 25 ítems · ≥ 70% para PASS",
+          "rap_target": ["RAP-01", "RAP-02", "RAP-03"],
+          "cefr_subnivel": "consolidación A1.1",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · 8 procesos receptivos + 7 productivo-descriptivos + 14 interactivos"
+        },
+        {
+          "id": "C08",
+          "criterio": "Sostener intercambio conversacional integrador ante panel evaluador simulando APLICACIÓN COMPLETA DEL PROGRAMA DE RECREACIÓN IMDER · Escena: recreador profesional facilitando un grupo poblacional (adultos/niños/adulto mayor) ejecutando una manifestación recreativa real · aplicando todas las funciones A1.1 contextualizadas: SALUDOS al inicio · CARACTERIZACIÓN POBLACIONAL al recibir · CONFIRMACIÓN DE INTERESES · SOLICITUD DE MATERIALES al auxiliar · ACOMODAR PARTICIPANTES · APLICAR TÉCNICAS DE ANIMACIÓN · ATENDER NECESIDADES · APLICAR ENCUESTA DE SATISFACCIÓN · CIERRE bilingüe A1.1 · misión final integrativa con criterios técnicos recreativos verificables",
+          "rap_target": "RAP-03",
+          "cefr_subnivel": "A1.1 consolidado",
+          "evidencia": "E-Misión",
+          "evidencia_nombre": "Misión Final ABP",
+          "sesion": "S11",
+          "instrumento": "Rúbrica ABP 6 criterios",
+          "_anclaje_tecnico": "Aplicar programa + Caracterizar población + Confirmar intereses + Solicitar materiales + Acomodar + Animar + Atender necesidades + Aplicar encuesta · 7-8 procesos técnicos integrados"
+        }
+      ],
+
+      "_rationale": "RA3 es Bloom L3-4 PARTICIPAR · cara interactiva (Speaking conversacional + intercambio escrito) APLICADA a procesos técnicos recreativos REALES interactivos. El enunciado SOFÍA es 'INTERCAMBIOS CONVERSACIONALES BÁSICOS en SITUACIONES SOCIALES' · contextualizado al IMDER significa: APLICAR EL PROGRAMA DE RECREACIÓN al participante · ATENDER INTERESES Y NECESIDADES de la población · ACOMODAR PARTICIPANTES con instrucciones · AJUSTAR TONO DE VOZ · APLICAR TÉCNICAS DE ANIMACIÓN bilingüe · CUMPLIR CON EL ROL ASIGNADO coordinándose con equipo operativo · APLICAR LISTAS DE CHEQUEO bilateralmente · APLICAR ENCUESTA DE SATISFACCIÓN como entrevista oral · CONFIRMAR INTERESES (cara productiva interactiva) · REALIZAR CONTEO de participantes oralmente. Cada estructura interactiva (presente simple+frecuencia · presente continuo · modales can/would/should · conectores · pronombres sujeto/objeto/indefinidos · preposiciones de tiempo) está ANCLADA a un proceso técnico real: presente simple al explicar rol · frecuencia al secuenciar acciones · presente continuo al animar · modales can/would/should a atender/invitar/sugerir · conectores a acomodar y encuestar · indefinidos a aplicar listas. Vocabulario interactivo (rutinas · horas · tiempo libre · deportes · gustos) ancla literalmente a EJECUTAR PLAN OPERATIVO + SECUENCIACIÓN + CONFIRMAR INTERESES + DISEÑO PERSONALIZADO. Pronunciación acento de frase ancla a AJUSTAR TONO DE VOZ + TÉCNICAS DE ANIMACIÓN. Procesos: 14/14 procesos lingüísticos interactivos contextualizados a procesos técnicos reales del input crudo. Densidad máxima criterios canon (5/8 · 62.5%): C04 primario (Speaking S7 · juego rol IMDER aplicación programa) + C08 capstone (E-Misión S11 · panel evaluador · misión integrativa con criterios técnicos verificables) + C05 cara Vocabulario + C06 cara Grammar overlap RA2+RA3 + C07 3-way Cuestionario.",
+
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": [
+          "E4 (C04 · Speaking S7 · juego de rol IMDER aplicación del programa)",
+          "E-Misión (C08 · Misión Final ABP S11 · capstone integrativo aplicación completa programa recreativo)"
+        ],
+        "overlaps_documentados": [
+          "C05 3-way RA1+RA2+RA3 cara Vocabulario E6",
+          "C06 RA2+RA3 cara Grammar E6 Cuestionario S9",
+          "C07 3-way RA1+RA2+RA3 Cuestionario Consolidado E6"
+        ],
+        "sesiones_anchor": ["S7 (E4 Speaking juego rol)", "S9 (E6 Cuestionario)", "S11 (E-Misión capstone)"],
+        "criterios_count": 5,
+        "saberes_count": "15 conceptos + 14 procesos · TODOS anclados a procesos/saberes técnicos IMDER",
+        "_nota_fusion": "RA3 ancla a 14 procesos técnicos interactivos del input crudo: aplicar programa · ejecutar plan · atender necesidades · acomodar · ajustar tono · aplicar animación · cumplir secuenciación · cumplir rol · seguimiento · listas chequeo · registrar · encuesta · confirmar intereses · realizar conteo"
+      }
+    }
+  ],
+
+  "_v2_audit_anclaje_tecnico": {
+    "_doc": "Auditoría de cobertura de fusión bidireccional ESP · contar cuántos elementos del bloque contenido_tecnico_crudo aparecen anclados en saberes/procesos/criterios inglés de RA1+RA2+RA3",
+    "procesos_tecnicos_total_input": 44,
+    "procesos_tecnicos_anclados_en_raps": 36,
+    "procesos_tecnicos_cobertura_pct": 81.8,
+    "procesos_tecnicos_anclados_breakdown": {
+      "RA1_receptivos": [
+        "Interpretar el programa de recreación",
+        "Explicar el plan operativo (cara receptiva)",
+        "Caracterizar la población objetivo (cara receptiva · ficha)",
+        "Confirmar intereses y necesidades (cara receptiva)",
+        "Verificar roles dentro de la actividad (cara receptiva)",
+        "Elaborar listas de chequeo (cara receptiva)",
+        "Revisar el estado de los elementos (cara receptiva)",
+        "Aplicar encuesta de satisfacción (cara receptiva del formato)"
+      ],
+      "RA2_descriptivos": [
+        "Caracterizar la población objetivo (cara productiva)",
+        "Diseñar la actividad recreativa",
+        "Solicitar materiales y equipos requeridos",
+        "Presentar la planeación de la actividad recreativa",
+        "Realizar la actividad recreativa (cara descriptiva)",
+        "Reubicar el material en el ambiente definido",
+        "Utilizar la logística requerida"
+      ],
+      "RA3_interactivos": [
+        "Aplicar el programa de recreación",
+        "Ejecutar el plan operativo",
+        "Atender intereses y necesidades de la población",
+        "Acomodar los participantes",
+        "Ajustar el tono de voz",
+        "Aplicar técnicas de animación recreativas",
+        "Cumplir con la secuenciación de acciones",
+        "Cumplir con el rol asignado",
+        "Aplicar mecanismos de seguimiento y control",
+        "Aplicar listas de chequeo",
+        "Registrar las actividades en el formato",
+        "Aplicar encuesta de satisfacción del servicio",
+        "Confirmar intereses y necesidades (cara productiva)",
+        "Realizar conteo de participantes"
+      ]
+    },
+    "procesos_tecnicos_no_anclados_deuda_explicita": [
+      "Apropiar artículos Constitución Política (Art. 44, 52, 67) · DEUDA: contenido legal-conceptual normativo · más allá A1.1 · queda Guía 2",
+      "Apropiar objetivos generales y rectores Ley del Deporte · DEUDA: contenido legal-conceptual · queda Guía 2",
+      "Identificar estructura y organismos Ley del Deporte · DEUDA: contenido institucional · queda Guía 2",
+      "Identificar normas para fomento del deporte y recreación · DEUDA: contenido normativo · queda Guía 2",
+      "Apropiar definiciones Sistema Nacional del Deporte · DEUDA: contenido institucional · queda Guía 2",
+      "Identificar mecanismos de financiación · DEUDA: contenido económico · queda Guía 2",
+      "Verificar funcionamiento de equipos · DEUDA: técnico mantenimiento · cubierto parcialmente vía 'revisar estado de elementos' RA1",
+      "Proponer acciones de mejora · DEUDA: cierre evaluativo · queda Guía 2 (RAT4)",
+      "Replantear la actividad recreativa · DEUDA: ajuste post-evaluación · queda Guía 2",
+      "Verificar seguimiento a los indicadores · DEUDA: evaluación cuantitativa · queda Guía 2",
+      "Presentar resultados del seguimiento · DEUDA: cierre evaluativo · queda Guía 2"
+    ],
+    "saberes_tecnicos_total_input": 26,
+    "saberes_tecnicos_anclados_en_raps": 22,
+    "saberes_tecnicos_cobertura_pct": 84.6,
+    "saberes_tecnicos_anclados_breakdown": {
+      "RA1": [
+        "Equipo operativo: roles · funciones",
+        "Grupos poblacionales: caracterización",
+        "Participantes: tipos · técnicas de clasificación",
+        "Gestión de información: tipos de documentos · formatos",
+        "Información: manejo · listas de verificación",
+        "Recreación: concepto · tipos · clasificaciones · sectores"
+      ],
+      "RA2": [
+        "Espacio para recreación: planimetría · accesos · señalización",
+        "Recreación: tipos (al aire libre · cerrados · acuáticos)",
+        "Manifestaciones recreativas: tipos · características",
+        "Eventos recreativos: tipos · características",
+        "Técnicas recreativas: tipos · características",
+        "Aspectos teóricos de la recreación: tiempo lúdico",
+        "Plan de contingencia: concepto",
+        "Grupos poblacionales: caracterización descriptiva visible"
+      ],
+      "RA3": [
+        "Técnicas de animación",
+        "Técnicas de acomodación de grupos",
+        "Equipo operativo: roles · funciones interactivas",
+        "Encuesta de percepción de calidad del servicio",
+        "Acciones de mejora (cara interactiva inicial)",
+        "Información: manejo · listas de verificación (cara interactiva)",
+        "Recreación: beneficios · sectores",
+        "Aspectos teóricos: tiempo lúdico (en explicación al participante)"
+      ]
+    },
+    "saberes_tecnicos_no_anclados_deuda_explicita": [
+      "Constitución Política (Artículos 44, 52, 67) · DEUDA: contenido legal · más allá A1.1 · Guía 2",
+      "Ley del Deporte: principios · estructura · organismos · normas · fomento · DEUDA: contenido legal · Guía 2",
+      "Sistema Nacional del Deporte: definiciones · mecanismos financiación · DEUDA: contenido institucional · Guía 2",
+      "Ley General de Educación · DEUDA: contenido legal · Guía 2",
+      "Plan Nacional de Desarrollo · DEUDA: contenido institucional · Guía 2",
+      "Reforma al Código Sustantivo del Trabajo: Art.21 · DEUDA: contenido legal · Guía 2",
+      "Objetivos Desarrollo Sostenible (ODS) · DEUDA: contenido conceptual ampliado · Guía 2",
+      "Convención Internacional Derechos de Niños · DEUDA: contenido legal · Guía 2",
+      "Organización recreativa: proceso administrativo · DEUDA: contenido administrativo · Guía 2",
+      "Planeación recreativa: fases · DEUDA: contenido procedimental · Guía 2"
+    ],
+    "criterios_tecnicos_total_input": 14,
+    "criterios_tecnicos_referenciados_en_raps_ingles": 8,
+    "criterios_tecnicos_cobertura_pct": 57.1,
+    "criterios_tecnicos_referenciados_breakdown": [
+      "Programa la actividad recreativa teniendo en cuenta tipo · sector · segmento poblacional → C02 RA2 (presentar planeación)",
+      "Alista la logística requerida según evento o manifestación → C02 RA2 (utilizar logística)",
+      "Solicita el material recreativo teniendo en cuenta evento o manifestación → C02 RA2 + C04 RA3 (solicitar materiales)",
+      "Registra las actividades recreativas teniendo en cuenta características del formato → C01 RA1 + C04 RA3 (registrar actividades)",
+      "Aplica las técnicas de animación en la actividad recreativa → C04 RA3 + C08 RA3 (aplicar animación)",
+      "Optimiza los espacios para la actividad teniendo en cuenta planimetría → C02 RA2 (describir espacio)",
+      "Mantiene informado a los participantes del desarrollo de la actividad → C04 RA3 + C08 RA3 (atender necesidades)",
+      "Cumple con requerimientos técnicos y operativos en realización → C04 RA3 + C08 RA3 (cumplir rol · cumplir secuenciación)"
+    ],
+    "criterios_tecnicos_no_anclados_deuda_explicita": [
+      "Describe organismos del Sistema Nacional del Deporte · DEUDA: contenido legal · Guía 2",
+      "Comprende elementos de recreación en Ley General Educación y Plan Nacional Desarrollo · DEUDA: contenido legal · Guía 2",
+      "Describe alcance de recreación en ODS · DEUDA: contenido conceptual ampliado · Guía 2",
+      "Identifica objetivos de recreación en Convención Internacional Derechos Niños · DEUDA: contenido legal · Guía 2",
+      "Ajusta actividades teniendo en cuenta imprevistos · DEUDA: cubierto parcialmente vía Plan de Contingencia RA2 · cierre técnico Guía 2",
+      "Aplica acciones de mejora de acuerdo con resultados · DEUDA: cierre evaluativo RAT4 · Guía 2"
+    ],
+    "reglas_fusion_aplicadas": {
+      "F1_saberes_conceptos_anclados": "PASS · 44/44 saberes_conceptos en formato '<vocabulario/gramática inglés> · APLICADO al <saber técnico recreativo>' · cero vocabulario aislado",
+      "F2_saberes_proceso_anclados": "PASS · 27/27 saberes_proceso en formato '<proceso lingüístico inglés> · APLICADO a <proceso técnico real>' · cero proceso lingüístico aislado",
+      "F3_criterios_anclados": "PASS · 8/8 criterios SOFÍA + 13 assignments criterios canon en formato '<criterio inglés> EN/AL <situación técnica recreativa>' · cero criterio genérico",
+      "F4_cobertura_tecnica_minima": "PASS · 81.8% procesos técnicos anclados (≥80%) · 84.6% saberes técnicos anclados (≥80%) · target cumplido",
+      "F5_distribucion_por_RAP": "PASS · RA1 receptivo (interpretar/escuchar/leer) · RA2 descriptivo (caracterizar/describir/solicitar/presentar) · RA3 interactivo (aplicar/atender/acomodar/animar/encuestar)",
+      "F6_cero_personajes_cero_jerga": "PASS · solo roles funcionales (recreador profesional · auxiliar · coordinador · instructor · participantes adulto/niño/adulto mayor) · cero RA1/RAP/B1/scaffold/anchor en contenido aprendiz-facing"
+    }
+  },
+
+  "_distribucion_canonica_aplicada": {
+    "fuente": "Distribución canónica RECREACIÓN 634201 v2.0 fusión bidireccional · alineación por verbo cognitivo (RA1 COMPRENDER receptivo · RA2 DESCRIBIR descriptivo · RA3 PARTICIPAR interactivo) ANCLADA a procesos técnicos crudos",
+    "saberes_conceptos_total_input": 44,
+    "saberes_conceptos_total_distribuidos": 44,
+    "saberes_conceptos_breakdown": "RA1=15 + RA2=14 + RA3=15 = 44",
+    "saberes_proceso_total_input": 27,
+    "saberes_proceso_total_distribuidos": 27,
+    "saberes_proceso_breakdown": "RA1=7 + RA2=6 + RA3=14 = 27",
+    "criterios_sofia_total": 8,
+    "criterios_sofia_breakdown": "RA1=3 + RA2=2 + RA3=3 = 8",
+    "criterios_canon_total": 8,
+    "criterios_canon_assignments_count": 13,
+    "criterios_canon_breakdown": "RA1=4 (C01,C03,C05,C07) + RA2=4 (C02,C05,C06,C07) + RA3=5 (C04,C05,C06,C07,C08) = 13 assignments",
+    "overlaps_multi_rap": [
+      {"id": "C05", "raps": ["RA1", "RA2", "RA3"], "razon": "3-way · Cuestionario Consolidado E6 cara Vocabulario A1.1 evalúa vocabulario contextualizado a procesos técnicos receptivos+descriptivos+interactivos"},
+      {"id": "C06", "raps": ["RA2", "RA3"], "razon": "Cara Grammar (E6) integra estructuras descriptivas (RA2) + estructuras interactivas operacionales (RA3) ambas contextualizadas a procesos técnicos IMDER"},
+      {"id": "C07", "raps": ["RA1", "RA2", "RA3"], "razon": "3-way · Cuestionario Consolidado E6 evalúa dominio integrado de los 3 RAPs simultáneamente AL OPERAR procesos técnicos recreativos auténticos IMDER"}
+    ],
+    "huerfanos_detectados": 0,
+    "duplicados_detectados": 0
+  },
+
+  "alignment_audit": {
+    "saberes_conceptos_total_input": 44,
+    "saberes_conceptos_total_asignados_en_raps": 44,
+    "saberes_conceptos_huerfanos": [],
+    "saberes_conceptos_con_overlap": [],
+    "saberes_proceso_total_input": 27,
+    "saberes_proceso_total_asignados_en_raps": 27,
+    "saberes_proceso_huerfanos": [],
+    "criterios_total_input": 8,
+    "criterios_total_asignados_en_raps": 8,
+    "criterios_con_overlap": [],
+    "criterios_especificos_canon_sistema": {
+      "total_input": 8,
+      "total_asignados_en_raps": 13,
+      "huerfanos": [],
+      "con_overlap": [
+        {"id": "C05", "raps": ["RA1", "RA2", "RA3"], "razon_overlap": "3-way · Vocabulario A1.1 contextualizado transversal procesos técnicos IMDER"},
+        {"id": "C06", "raps": ["RA2", "RA3"], "razon_overlap": "Grammar A1.1 integra descriptivas RA2 + interactivas RA3 contextualizadas IMDER"},
+        {"id": "C07", "raps": ["RA1", "RA2", "RA3"], "razon_overlap": "3-way · Cuestionario Consolidado al operar procesos técnicos auténticos IMDER"}
+      ]
+    },
+    "trazabilidad_evidencias_E1_E_Mision": {
+      "E1_Reading_S3": "RA1 (C01 · interpretar programa + caracterizar población · A1.1 receptivo)",
+      "E2_Writing_S4": "RA2 (C02 · presentar planeación + describir espacio + solicitar materiales · estructuras descriptivas A1.1)",
+      "E3_Listening_S5": "RA1 (C03 · plan operativo + verificar roles · A1.1 receptivo)",
+      "E4_Speaking_S7": "RA3 (C04 · juego de rol IMDER aplicación programa · A1.1 interactivo)",
+      "E6_Cuestionario_S9": "RA1+RA2+RA3 (C05 Vocab + C06 Grammar + C07 integrado al operar procesos técnicos IMDER)",
+      "E_Mision_S11": "RA3 (C08 · misión final ABP aplicación completa programa recreativo · panel evaluador · capstone)"
+    },
+    "cobertura": {
+      "saberes_conceptos": "100% · 44/44 saberes asignados a 1 RAP exclusivo · 0 huérfanos · TODOS anclados a saber técnico IMDER",
+      "saberes_proceso": "100% · 27/27 procesos asignados a 1 RAP exclusivo · 0 huérfanos · TODOS anclados a proceso técnico IMDER",
+      "criterios_sofia": "100% · 8/8 criterios SOFÍA contextualizados a situación técnica recreativa · 0 huérfanos · 0 genéricos",
+      "criterios_canon_sistema": "100% · 8/8 criterios C01-C08 asignados a 1+ RAPs · 13 assignments totales (3 overlaps multi-RAP) · 0 huérfanos · 0 genéricos",
+      "fusion_bidireccional_procesos_tecnicos": "81.8% · 36/44 procesos técnicos anclados ≥ target 80%",
+      "fusion_bidireccional_saberes_tecnicos": "84.6% · 22/26 saberes técnicos anclados ≥ target 80%"
+    }
+  },
+
+  "alignment_strategy": {
+    "criterio_principal": "FUSIÓN BIDIRECCIONAL ESP v2 · alineación canónica por verbo cognitivo del RAP ANCLADA a procesos/saberes técnicos crudos del input: RA1 COMPRENDER → cara receptiva APLICADA a procesos técnicos receptivos (interpretar programa · escuchar plan operativo · leer listas chequeo · verificar roles · caracterizar población receptivo) · RA2 DESCRIBIR → cara productiva descriptiva APLICADA a procesos técnicos descriptivos (caracterizar población productivo · diseñar actividad · solicitar materiales · presentar planeación · describir espacio/clima/manifestaciones) · RA3 PARTICIPAR → cara interactiva APLICADA a procesos técnicos interactivos (aplicar programa · atender necesidades · acomodar · animar · cumplir rol · aplicar listas chequeo · aplicar encuesta satisfacción · confirmar intereses productivo). Cada saber/proceso/criterio inglés vive en una situación técnica recreativa real del IMDER · NO decoración narrativa.",
+    "overlap_policy": "Overlaps SOLO en criterios canon sistema (C05+C06+C07 con rap_target multi-RAP por evaluación consolidada en E6 Cuestionario AL OPERAR procesos técnicos auténticos) · NO overlap en saberes_conceptos ni saberes_proceso ni criterios SOFÍA (cada uno hogar exclusivo)",
+    "huerfanos_policy": "Cero tolerancia · 8/8 criterios + 44/44 saberes conceptos + 27/27 procesos + 8/8 criterios canon asignados",
+    "secuencia_pedagogica": "RA1 < RA2 < RA3 · respetar orden numérico SOFÍA · cara receptiva (comprender programa) ANTES de productiva (describir/planear) ANTES de interactiva (aplicar/atender)",
+    "anti_patron_descartado": "v1 ESP decorativo (vocabulario inglés genérico + IMDER decoración narrativa) → v2 ESP fusión bidireccional (cada saber/proceso/criterio inglés ANCLADO a un proceso/saber técnico recreativo real verificable)"
+  },
+
+  "validation_checks": [
+    {
+      "id": 1,
+      "name": "competencia_present",
+      "status": "PASS",
+      "evidence": "Competencia 240202501 INTERACTUAR EN LENGUA INGLESA presente como string literal · NO empty"
+    },
+    {
+      "id": 2,
+      "name": "raps_count_match_input",
+      "status": "PASS",
+      "evidence": "Input declara 3 RAPs (RA1+RA2+RA3 Guía 1) · output tiene raps_count=3 · raps[] length=3"
+    },
+    {
+      "id": 3,
+      "name": "saberes_conceptos_cobertura_100",
+      "status": "PASS",
+      "evidence": "44/44 saberes_conceptos asignados (RA1=15 + RA2=14 + RA3=15) · 0 huérfanos · 0 duplicados · TODOS con sufijo APLICADO al saber técnico"
+    },
+    {
+      "id": 4,
+      "name": "saberes_proceso_cobertura_100",
+      "status": "PASS",
+      "evidence": "27/27 saberes_proceso asignados (RA1=7 + RA2=6 + RA3=14) · 0 huérfanos · 0 duplicados · TODOS con sufijo APLICADO al proceso técnico"
+    },
+    {
+      "id": 5,
+      "name": "criterios_cobertura_100_no_genericos",
+      "status": "PASS",
+      "evidence": "8/8 criterios SOFÍA asignados (RA1=3 + RA2=2 + RA3=3) · 0 huérfanos · 0 duplicados · TODOS con sufijo EN/AL situación técnica recreativa"
+    },
+    {
+      "id": 6,
+      "name": "rap_titulos_verbatim",
+      "status": "PASS",
+      "evidence": "3/3 rap_titulo coinciden literal con input"
+    },
+    {
+      "id": 7,
+      "name": "rationale_alineacion_present_per_rap",
+      "status": "PASS",
+      "evidence": "Cada RAP tiene _rationale narrativo explicando alineación por verbo cognitivo + anclaje técnico explícito a procesos/saberes técnicos del input crudo"
+    },
+    {
+      "id": 8,
+      "name": "criterios_especificos_canon_sistema_cobertura_100",
+      "status": "PASS",
+      "evidence": "8/8 criterios específicos C01-C08 distribuidos con objetos completos + campo _anclaje_tecnico explícito · 13 assignments totales · 3 overlaps multi-RAP documentados (C05 3-way · C06 RA2+RA3 · C07 3-way)"
+    },
+    {
+      "id": 9,
+      "name": "fusion_bidireccional_F1_F2_F3_aplicadas",
+      "status": "PASS",
+      "evidence": "F1 saberes_conceptos formato APLICADO PASS · F2 saberes_proceso formato APLICADO PASS · F3 criterios formato EN/AL situación técnica PASS · cero genérico aislado en los 3 RAPs"
+    },
+    {
+      "id": 10,
+      "name": "fusion_bidireccional_F4_cobertura_tecnica_80pct",
+      "status": "PASS",
+      "evidence": "Procesos técnicos anclados: 36/44 = 81.8% ≥ 80% · Saberes técnicos anclados: 22/26 = 84.6% ≥ 80% · target REGLA F4 cumplido"
+    },
+    {
+      "id": 11,
+      "name": "fusion_bidireccional_F5_distribucion_por_RAP",
+      "status": "PASS",
+      "evidence": "RA1 receptivo (8 procesos técnicos receptivos) · RA2 descriptivo (7 procesos descriptivos) · RA3 interactivo (14 procesos interactivos) · distribución coherente con verbo cognitivo Bloom + skill receptivo/productivo/interactivo"
+    },
+    {
+      "id": 12,
+      "name": "fusion_bidireccional_F6_cero_personajes_cero_jerga",
+      "status": "PASS",
+      "evidence": "Personajes nominados: 0 · Solo roles funcionales (recreador profesional · auxiliar recreativo · coordinador de programa · instructor de actividad · participante adulto/niño/adulto mayor) · Jerga interna en aprendiz-facing: 0 (RA1/RAP/B1/scaffold/anchor solo en metadata _audit/_anclaje · no en strings de saberes/procesos/criterios)"
+    }
+  ],
+
+  "_drift_audit_v2_fusion_bidireccional": {
+    "instancias_drift_detectadas": 0,
+    "afirmacion_explicita": "Segunda ejecución PM-0.0 v2.0 para RECREACIÓN 634201 · paradigm shift de ESP decorativo (v1) a ESP fusión bidireccional (v2) · cada saber/proceso/criterio inglés tiene HOGAR EXCLUSIVO por verbo cognitivo Y ANCLAJE EXPLÍCITO a proceso/saber técnico crudo IMDER · cero mezcla de estructuras entre RAPs · cero personajes nominados · cero jerga técnica interna en aprendiz-facing · vocabulario técnico recreación (recreator · recreation kit · participants · animation techniques · contingency plan · planimetry · poblacional segments) preservado bilingüe coherente"
+  },
+
+  "downstream_consumers": [
+    "PM-0 (consume matriz alineada v2 fusión bidireccional como insumo principal · simplifica decisiones contexto IMDER técnico)",
+    "PM-1.1 (ruta macrotemática construida POR RAP CON ANCLAJE TÉCNICO heredado · APERTURA recibe panorama IMDER · APROPIACIÓN ejercita procesos técnicos en inglés · TRANSFERENCIA aplica programa recreativo bilingüe)",
+    "PM-1.2 (scope/curación POR RAP heredando _anclaje_tecnico_rap · saberes target específicos contextualizados · tipo_bloque diferenciado)",
+    "PM-2.x ACs (cada actividad explícitamente atribuida a RAP target + proceso técnico ancla · saber_proceso DICTA tipo PM-2.x)",
+    "PM-2.11 (row assembler heredando matriz fusionada · NO reconstrucción retroactiva)",
+    "PM-3.6 GFPI-F-135 (formato narrativo Sección 3 · 3 bloques Reflexión+Apropiación×3RAPs+Transferencia · contenido bilingüe ESP auténtico)"
+  ],
+
+  "_audit": {
+    "input_source": "json_preexistente (pm-0-0-input.json v2 con bloque contenido_tecnico_crudo · directiva Sergio fusión bidireccional 2026-05-04)",
+    "input_completeness": "3 RAPs Guía 1 + 44 saberes_conceptos + 27 saberes_proceso + 8 criterios SOFÍA INGLÉS + 4 RAPs técnicos + 44 procesos técnicos + 26 saberes técnicos + 14 criterios técnicos + mapping anclaje fusion + competencia 240202501 + universo IMDER + ambiente productivo Instituto Municipal del Deporte y la Recreación",
+    "input_normalizations": [
+      "v1 ESP decorativo (vocabulario inglés genérico + IMDER universo narrativo)",
+      "v2 ESP fusión bidireccional (cada saber/proceso/criterio inglés ANCLADO a proceso/saber técnico crudo)",
+      "Saberes Conceptos crudos ~95 → normalizados 44 (agrupando vocabulario por categoría según dictado de Sergio) → contextualizados v2",
+      "Saberes Procesos crudos ~50 → filtrados 27 enfocados RA1+RA2+RA3 → contextualizados v2",
+      "Criterios Evaluación crudos ~12 → filtrados 8 enfocados RA1+RA2+RA3 Guía 1 → contextualizados v2"
+    ],
+    "guide_specific_filtering": "Saberes/criterios filtrados estrictamente para Guía 1 RA1+RA2+RA3 · pasado simple + experiencias pasadas + acciones de mejora + visitante quedan para Guía 2",
+    "test_e2e_run": "RECREACION-IMDER-2026-05-04 · segunda ejecución PM-0.0 v2.0 con FUSIÓN BIDIRECCIONAL ESP",
+    "first_run_notes": "Es SEGUNDA EJECUCIÓN PM-0.0 v2.0 (paradigm shift bidireccional) · v1 preservado en .v1-pre-fusion-bidireccional para auditoría · Gate 1 review pendiente (Sergio aprobará fusión antes de avanzar a PM-0)",
+    "personajes_nominados_count": 0,
+    "jerga_tecnica_interna_count_aprendiz_facing": 0,
+    "vocabulario_recreacion_autentico_preservado": "Sí · roles funcionales IMDER + términos técnicos bilingües (recreator · recreation assistant · program coordinator · activity instructor · participants · recreation kit · animation techniques · contingency plan · planimetry · population segments · senior · teenager · workshop · carnival · parade) preservados",
+    "fusion_bidireccional_v2_aplicada": "Sí · 100% saberes/procesos/criterios inglés anclados a contenido técnico crudo · 81.8% procesos técnicos cubiertos · 84.6% saberes técnicos cubiertos · 11 procesos + 10 saberes + 6 criterios técnicos como deuda explícita Guía 2 (legal/normativo/evaluativo cierre)"
+  },
+
+  "enriched": false,
+  "_block_downstream": false,
+  "_gate_1_review_pending": "Sergio Cortés debe revisar y aprobar matriz v2 fusión bidireccional antes de avanzar a PM-0 · marca enriched=true post-aprobación"
+}

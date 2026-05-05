@@ -10,8 +10,18 @@ const FIXTURES_DIR = path.resolve(__dirname, 'fixtures');
 
 const testCases = [
   {
-    label: 'DIESEL · pm-2-3 (Reading — The Master Anchor) vs v4 schema',
+    label: 'DIESEL · pm-2-3 (Reading) vs v4 schema',
     fixture: path.join(FIXTURES_DIR, 'diesel-pm-2-3.json'),
+    schemaId: 'fpi-sena-factory/v4/schemas/pm-2-3.schema.json',
+  },
+  {
+    label: 'MGV · pm-2-3 (Reading) vs v4 schema',
+    fixture: path.join(FIXTURES_DIR, 'mgv-pm-2-3.json'),
+    schemaId: 'fpi-sena-factory/v4/schemas/pm-2-3.schema.json',
+  },
+  {
+    label: 'IMARPOR-CC-V2 · pm-2-3 (Reading) vs v4 schema',
+    fixture: path.join(FIXTURES_DIR, 'imarpor-cc-v2-pm-2-3.json'),
     schemaId: 'fpi-sena-factory/v4/schemas/pm-2-3.schema.json',
   },
 ];
