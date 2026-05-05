@@ -5,14 +5,14 @@ con verificación de versión en frontmatter.
 Implementa REGLA 19 PASO operacional: antes de generar, leer el master prompt
 correspondiente Y verificar que la versión coincide con la canónica vigente.
 
-Versiones canónicas vigentes (al 2026-04-29):
-  PM-2.0 == 2.6
-  PM-2.1 == 3.0  (canonizada Opción A)
-  PM-2.2 == 3.0  (canonizada Opción A)
-  PM-2.3 a PM-2.10 == 2.0
-  PM-2.11 == 2.6.3
-  PM-4.1 == 2.6.4 (o vigente · verificar)
-  PM-4.2 == vigente
+Versiones canónicas vigentes (al 2026-05-05 · post paradigm shift IMARPOR-V2 waves 1-5):
+  PM-2.0 == 3.0  (heredero cascade tripartita)
+  PM-2.1 == 3.1  (Wave 1.A · Activity Card v3.0 heredero)
+  PM-2.2 == 3.1  (Wave 1.A)
+  PM-2.3 a PM-2.10 == 3.0  (Pilots + Waves 2-4 · Activity Card v3.0)
+  PM-2.11 == 3.3  (Wave 5.D · GFPI-F-134 V04)
+  PM-4.1 == 2.6.5
+  PM-4.2 == 3.0  (Wave 4.A · canon)
 """
 
 import re
@@ -20,20 +20,22 @@ import os
 from pathlib import Path
 
 # Registro canónico de versiones vigentes — actualizar cuando suba un master prompt
+# Bump 2026-05-05 (Pilar 4 test-drift detectó drift sistémico master/skill post
+# paradigm shift IMARPOR-V2). Verificado contra frontmatter real de cada master.
 VERSIONES_VIGENTES = {
-    "PM-2.0": "2.6",
-    "PM-2.1": "3.0",
-    "PM-2.2": "3.0",
-    "PM-2.3": "2.0",
-    "PM-2.4": "2.0",
-    "PM-2.5": "2.0",
-    "PM-2.6": "2.0",
-    "PM-2.8": "2.0",
-    "PM-2.9": "2.0",
-    "PM-2.10": "2.0",
-    "PM-2.11": "2.6.3",
-    "PM-4.1": "2.6.5",   # actualizado 2026-04-29 post smoke-test (frontmatter real es v2.6.5)
-    "PM-4.2": "vigente"  # verificar contra frontmatter real
+    "PM-2.0": "3.0",
+    "PM-2.1": "3.1",
+    "PM-2.2": "3.1",
+    "PM-2.3": "3.0",
+    "PM-2.4": "3.0",
+    "PM-2.5": "3.0",
+    "PM-2.6": "3.0",
+    "PM-2.8": "3.0",
+    "PM-2.9": "3.0",
+    "PM-2.10": "3.0",
+    "PM-2.11": "3.3",
+    "PM-4.1": "2.6.5",
+    "PM-4.2": "3.0"
 }
 
 # Mapping pm_id → glob path (los nombres de archivo no son uniformes)
