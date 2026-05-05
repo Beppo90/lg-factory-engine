@@ -40,7 +40,7 @@ drift_exit=$?
 if [ $drift_exit -ne 0 ]; then
   echo ""
   echo "  ℹ test-drift detectó drifts conocidos · NO bloquea commit"
-  echo "    D-001 (Curso Complementario en schemas) abierto · resolver en Hito 4 o branch separado"
+  echo "    Drifts SIGNIFICATIVO master/skill abiertos · D-001/002/003 cerrados en branch fix/"
 fi
 
 echo ""
