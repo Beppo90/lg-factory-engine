@@ -131,6 +131,7 @@ Los tres targets responden correctamente a cambios. Cambios `cp` reverted desde 
 - [x] **Hito 2** — cobertura 3 fixtures Phase 2 + 5 fixtures Phase 0 + target separado `test-phase0` + smoke en ambos targets + pre-commit hook bloqueo opción (b) (`test-phase0` bloqueante · `test-canon` informativo)
 - [x] **Hito 3 fase A** — `test-drift` con 3/4 checks F2.8: (1) Master prompt frontmatter vs skill VERSIONES_VIGENTES, (2) enum `tipo_programa` registry vs schemas, (4) Activity Card `schema_version`. Hook informativo. **14 drifts detectados primer run** (2 CRITICAL D-001 · 11 SIGNIFICATIVO master/skill · 1 MENOR PM-4.1 sin frontmatter)
 - [x] **Hito 3 fase B** — checks F2.8 completos (5/5): parser amplificado para soportar yaml embedded (cierra MENOR PM-4.1) · enum `regla_bloques` (detección D-002) · `final_mission_scenario` allOf if/then (detección D-003) · drift-matrix.md sync con cross-check de regresiones post-cierre · F2.8 spec actualizada · hook message genérico
+- [x] **Hito 3 fase B.2** — Check 6 NEW: schemas v2.0 NEW declarados en master vs presencia en `v4/schemas/`. Lista hardcoded de 10 fields canonizados por cluster cascade Cowork (PM-0.0 v2.0/v2.3 + PM-0 v3.3.1 + PM-1.1 v2.9 + PM-1.2 v4.3.1). Severidad SIGNIFICATIVO · TODO sync en Hito 4 opción d. Convergencia 2-LLM exitosa con HANDOFF-2026-05-05.md §3.
 - [ ] **Hito 4 (semana 4)** — bifurcación: F2.5 close · Sprint 2 E2E IMARPOR-CC · o Opción C (promover `test-phase0` a bloqueante + migrar fixtures legacy o schema v4)
 
 ## Cómo agregar un fixture nuevo

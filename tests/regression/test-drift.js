@@ -3,7 +3,7 @@
 // Pilar 4 · test-drift — implementa F2.8 schema-drift CI check.
 // Spec: english-engine-lab/specs/schema-drift.spec.md
 //
-// 4 checks declarados en F2.8 + 1 sync auxiliar (Hito 3 fase B completo):
+// 4 checks declarados en F2.8 + 2 auxiliares (Hito 3 fase B.2 · 6 checks):
 //   1. Master prompt frontmatter version vs skill VERSIONES_VIGENTES   ✓
 //      (parser soporta --- ... --- delimited y ```yaml embedded)
 //   2. Enums registry.yaml ⊆ enums schemas v4                           ✓
@@ -13,6 +13,9 @@
 //   4. Activity Card schema_version vigente                             ✓
 //   5. Drift-matrix sync                                                ✓ aux
 //      (cross-check D-NNN entries marked closed vs detection automática)
+//   6. Schema fields v2.0 NEW declarados en master vs presencia en v4/  ✓ aux
+//      (cluster cascade Cowork canonizó schemas en master-prompts ·
+//      v4/schemas/ pendiente de sync · ver HANDOFF-2026-05-05.md §3)
 //
 // Severidades F2.8:
 //   CRITICAL       bloquea merge (D-001/002/003 son CRITICAL)
@@ -363,8 +366,71 @@ function checkDriftMatrixSync() {
   }
 }
 
+// ─── Check 6: Schema fields v2.0 NEW declarados en master vs v4/schemas/ ──
+// Source: HANDOFF-2026-05-05.md §3 (cluster cascade Cowork 2026-05-04/05)
+// Severidad: SIGNIFICATIVO (deuda explícita post-cluster · sync v4/schemas/
+// es trabajo Hito 4 opción d · NO hard-block).
+//
+// Mantenimiento: cada vez que un field se sincronice a v4/schemas/, eliminar
+// su entrada de EXPECTED_V2_FIELDS abajo. Cuando array esté vacío → check pasa
+// sin reportar nada (deuda cerrada).
+const EXPECTED_V2_FIELDS = [
+  { field: 'competencias', source: 'PM-0.0 v2.0 multi-comp · array técnicas anchor (N≥2)' },
+  { field: '_v2_audit_anclaje_tecnico', source: 'PM-0.0 v2.0 · auditoría cobertura fusión bidireccional ESP' },
+  { field: '_deuda_explicita_para_guia_siguiente', source: 'PM-0.0 v2.0 · cross-cascade G1→G2→G3' },
+  { field: '_cobertura_total_programa', source: 'PM-0.0 v2.3 · CIERRE PROGRAMA (G3 multi-comp)' },
+  { field: '_competencias_tecnicas_modo', source: 'PM-0 v3.3.1 + PM-1.1 v2.9 + PM-1.2 v4.3.1 top-level' },
+  { field: '_split_strategy_heredado', source: 'PM-0 v3.3.1 + PM-1.1 v2.9 + PM-1.2 v4.3.1 top-level' },
+  { field: '_raps_metadata', source: 'PM-0 v3.3.1 + PM-1.1 v2.9 + PM-1.2 v4.3.1 top-level' },
+  { field: '_anclaje_tecnico_competencia', source: 'Multi-PM v2.0+ · per saber/fuente/bloque' },
+  { field: 'competencias_tecnicas', source: 'PM-1.1 v2.9 · per bloque tripartito _anclaje_matriz' },
+  { field: 'cierre_programa', source: 'PM-0 v3.3.1 + PM-1.1 v2.9 + PM-1.2 v4.3.1 BT (TRANSFERENCIA)' },
+];
+
+function checkSchemaFieldsV2New() {
+  const schemasDir = path.join(FACTORY_ROOT, 'v4/schemas');
+  let allContent = '';
+  function walk(dir) {
+    let entries;
+    try {
+      entries = fs.readdirSync(dir, { withFileTypes: true });
+    } catch {
+      return;
+    }
+    for (const entry of entries) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (entry.isFile() && entry.name.endsWith('.schema.json')) {
+        try {
+          allContent += fs.readFileSync(full, 'utf8') + '\n';
+        } catch {
+          // skip unreadable
+        }
+      }
+    }
+  }
+  walk(schemasDir);
+
+  if (allContent === '') {
+    record('SIGNIFICATIVO', 'schema-fields-v2-new', `v4/schemas/ no leído o vacío · skip cross-check`);
+    return;
+  }
+
+  for (const e of EXPECTED_V2_FIELDS) {
+    // Buscamos como property key (entre comillas dobles)
+    const needle = `"${e.field}"`;
+    if (!allContent.includes(needle)) {
+      record(
+        'SIGNIFICATIVO',
+        'schema-fields-v2-new',
+        `Field "${e.field}" declarado en master (${e.source}) · NO encontrado en v4/schemas/ · TODO sync Hito 4 opción d.`
+      );
+    }
+  }
+}
+
 function main() {
-  console.log('test-drift · F2.8 schema drift detection (Hito 3 fase B · 5 checks)');
+  console.log('test-drift · F2.8 schema drift detection (Hito 3 fase B.2 · 6 checks)');
   console.log('');
 
   checkActivityCardSchemaVersion();
@@ -372,10 +438,11 @@ function main() {
   checkEnumTipoPrograma();
   checkEnumReglaBloques();
   checkFinalMissionScenarioAllOf();
+  checkSchemaFieldsV2New();
   checkDriftMatrixSync();
 
   if (drifts.length === 0) {
-    console.log('✓ PASS · 0 drifts detectados (5/5 checks PASS)');
+    console.log('✓ PASS · 0 drifts detectados (6/6 checks PASS)');
     process.exit(0);
   }
 
