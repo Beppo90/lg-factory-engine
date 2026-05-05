@@ -2,6 +2,7 @@
 # Pilar 4 · Pre-commit hook
 # Bloqueante:    test-phase0 (matrices PM-0.0 validation_checks deben PASS)
 # Informativo:   test-canon  (drift Phase 2 schema v4 stale vs runs v3.x · NO bloquea)
+# Informativo:   test-drift  (F2.8 schema drift CI · drifts conocidos abiertos · NO bloquea)
 #
 # Bypass explícito: git commit --no-verify
 # Setup: make setup-hooks (configura core.hooksPath = .githooks)
@@ -29,6 +30,17 @@ if [ $canon_exit -ne 0 ]; then
   echo ""
   echo "  ℹ test-canon FAIL · drift Phase 2 conocido (schema v4 stale vs runs v3.x)"
   echo "    Migración pendiente Hito 4 Opción C · NO bloquea commit"
+fi
+
+echo ""
+echo "▶ pre-commit · test-drift (informativo)"
+node tests/regression/test-drift.js
+drift_exit=$?
+
+if [ $drift_exit -ne 0 ]; then
+  echo ""
+  echo "  ℹ test-drift detectó drifts conocidos · NO bloquea commit"
+  echo "    D-001 (Curso Complementario en schemas) abierto · resolver en Hito 4 o branch separado"
 fi
 
 echo ""

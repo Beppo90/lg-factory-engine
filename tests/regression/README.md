@@ -1,13 +1,14 @@
 # tests/regression — Pilar 4 Test-as-Documentation
 
-> Suite de regresión: golden runs como fixtures, schemas v4 + master prompts como contratos. Dos targets: `test-canon` (Phase 2 — Activity Cards vs JSON Schema) y `test-phase0` (Phase 0 — matrices PM-0.0 vs validation_checks emitidos por LLM).
+> Suite de regresión: golden runs como fixtures, schemas v4 + master prompts como contratos. Tres targets: `test-canon` (Phase 2 — Activity Cards vs JSON Schema), `test-phase0` (Phase 0 — matrices PM-0.0 vs validation_checks emitidos por LLM) y `test-drift` (F2.8 schema-drift CI cross-layer).
 
 ## Cómo correr
 
 ```bash
 make test-canon                # Phase 2 (Activity Cards vs v4 JSON Schema)
 make test-phase0               # Phase 0 (PM-0.0 matrices · validation_checks PASS)
-make test-all                  # corre ambos
+make test-drift                # F2.8 schema drift CI cross-layer (master ↔ schemas ↔ skill)
+make test-all                  # corre los tres
 ```
 
 Primera vez:
@@ -28,6 +29,7 @@ Política de bloqueo elegida (Hito 2 fase C): **opción (b)** — bloquea solo l
 |---|---|
 | `test-phase0` | **Bloqueante** · si alguna matriz PM-0.0 deja de tener `validation_checks` todos PASS, el commit aborta |
 | `test-canon` | **Informativo** · drift Phase 2 cross-versions schema/runs es deuda conocida (Hito 4 Opción C) · NO bloquea |
+| `test-drift` | **Informativo** · drifts F2.8 conocidos (D-001/002/003) abiertos · resolver en Hito 4 o branch separado · NO bloquea |
 
 Bypass explícito: `git commit --no-verify`.
 
@@ -107,13 +109,21 @@ Modify RECREACION G1 check #1 status PASS→FAIL → 4/5 PASS · runner detecta 
 Revert                                         → 5/5 PASS
 ```
 
-Ambos targets responden correctamente a cambios. Cambios `cp` reverted desde backup.
+**test-drift (induce drift fix):**
+```
+Baseline                                                 → 14 drifts (CRITICAL=2 · SIGNIFICATIVO=11 · MENOR=1)
+Add "Curso Complementario" to pm-1-1-input.schema.json   → 13 drifts (CRITICAL=1)  ← cierra D-001 parcial
+Revert                                                   → 14 drifts (CRITICAL=2)
+```
+
+Los tres targets responden correctamente a cambios. Cambios `cp` reverted desde backup.
 
 ## Roadmap Pilar 4
 
 - [x] **Hito 1** — piloto DIESEL pm-2-3 + infraestructura ajv + Makefile + drift detectado
 - [x] **Hito 2** — cobertura 3 fixtures Phase 2 + 5 fixtures Phase 0 + target separado `test-phase0` + smoke en ambos targets + pre-commit hook bloqueo opción (b) (`test-phase0` bloqueante · `test-canon` informativo)
-- [ ] **Hito 3 (semana 3)** — F2.8 schema drift CI (master prompts ↔ v4/schemas) · va a detectar (a) los 4 schemas v2.0 NEW pendientes y (b) que activity-card schema está stale en v2.7
+- [x] **Hito 3 fase A** — `test-drift` con 3/4 checks F2.8: (1) Master prompt frontmatter vs skill VERSIONES_VIGENTES, (2) enum `tipo_programa` registry vs schemas, (4) Activity Card `schema_version`. Hook informativo. **14 drifts detectados primer run** (2 CRITICAL D-001 · 11 SIGNIFICATIVO master/skill · 1 MENOR PM-4.1 sin frontmatter)
+- [ ] **Hito 3 fase B** — checks F2.8 restantes: enum `regla_bloques` (D-002), `final_mission_scenario` allOf if/then (D-003), drift-matrix.md sync · update F2.8 spec (canon AC v2.7 → v3.0+ post IMARPOR-V2)
 - [ ] **Hito 4 (semana 4)** — bifurcación: F2.5 close · Sprint 2 E2E IMARPOR-CC · o Opción C (promover `test-phase0` a bloqueante + migrar fixtures legacy o schema v4)
 
 ## Cómo agregar un fixture nuevo
@@ -132,7 +142,9 @@ Ambos targets responden correctamente a cambios. Cambios `cp` reverted desde bac
 
 ## Deuda explícita conocida
 
-1. **Activity Card schema v4 está stale** — declara `enum: ["activity-card-v2.7"]` pero los runs evolucionaron a v3.0/v3.1. Decisión pendiente Hito 4 Opción C: migrar schema o migrar runs
+1. **Activity Card schema v4 está stale** — declara `enum: ["activity-card-v2.7"]` pero los runs evolucionaron a v3.0/v3.1. `test-drift` check 4 NO la detecta (verifica contra spec F2.8 que dice canon=v2.7); el meta-drift es de F2.8 vs realidad runtime, requiere update de spec en Hito 3 fase B
 2. **No existe `v4/schemas/pm-0-0.schema.json`** — Phase 0 valida solo `validation_checks` flags. Construir un schema PM-0.0 formal sería deuda separada
-3. **4 schemas v2.0 NEW pendientes en `v4/schemas/`** (post-paradigm shift 2026-05-04): `contenido_tecnico_crudo.competencias[]`, `_v2_audit_anclaje_tecnico`, `_deuda_explicita_para_guia_siguiente`, `_cobertura_total_programa`. Hito 3 F2.8 los detectará automáticamente
-4. **Backups `.pre-wave-*` y `.pre-v*` en runs/** confunden el ls; los fixtures se eligen por path exacto sin sufijos para evitar ambigüedad
+3. **4 schemas v2.0 NEW pendientes en `v4/schemas/`** (post-paradigm shift 2026-05-04): `contenido_tecnico_crudo.competencias[]`, `_v2_audit_anclaje_tecnico`, `_deuda_explicita_para_guia_siguiente`, `_cobertura_total_programa`. `test-drift` actual NO los detecta (no están listados como check en F2.8); agregar como check NEW en fase B
+4. **D-001 abierto** — `Curso Especial`/`Curso Complementario` faltan en schemas. Detectado por `test-drift` como CRITICAL. Resolver en branch `fix/d-001-curso-complementario-enum` separado o Hito 4
+5. **Drift sistémico master prompts vs skill VERSIONES_VIGENTES** — 11 PMs en master están adelante del dict del skill loader (ej. PM-2.3 master v3.0 vs skill v2.0). Skill loader necesita catch-up bump
+6. **Backups `.pre-wave-*` y `.pre-v*` en runs/** confunden el ls; los fixtures se eligen por path exacto sin sufijos para evitar ambigüedad

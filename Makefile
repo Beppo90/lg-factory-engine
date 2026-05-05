@@ -1,10 +1,13 @@
-.PHONY: test-canon test-phase0 test-all test-canon-install setup-hooks
+.PHONY: test-canon test-phase0 test-drift test-all test-canon-install setup-hooks
 
 test-canon:
 	@node tests/regression/test-canon.js
 
 test-phase0:
 	@node tests/regression/test-phase0.js
+
+test-drift:
+	@node tests/regression/test-drift.js
 
 test-all:
 	@node tests/regression/test-canon.js; \
@@ -13,8 +16,11 @@ test-all:
 	 node tests/regression/test-phase0.js; \
 	 phase0_exit=$$?; \
 	 echo ""; \
-	 echo "--- test-all summary: test-canon exit=$$canon_exit · test-phase0 exit=$$phase0_exit ---"; \
-	 exit $$((canon_exit + phase0_exit))
+	 node tests/regression/test-drift.js; \
+	 drift_exit=$$?; \
+	 echo ""; \
+	 echo "--- test-all summary: canon=$$canon_exit · phase0=$$phase0_exit · drift=$$drift_exit ---"; \
+	 exit $$((canon_exit + phase0_exit + drift_exit))
 
 test-canon-install:
 	@npm install --prefix tests/regression
