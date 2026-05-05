@@ -116,14 +116,21 @@ Add "Curso Complementario" to pm-1-1-input.schema.json   → 13 drifts (CRITICAL
 Revert                                                   → 14 drifts (CRITICAL=2)
 ```
 
-Los tres targets responden correctamente a cambios. Cambios `cp` reverted desde backup.
+**test-drift fase B (induce regresión post-cierre):**
+```
+Baseline post-fix completo                               → 0 drifts (5/5 PASS)
+Rollback regla_bloques a enum stale en pm-0-context     → 3 CRITICAL: 2 directos del check + 1 cross-check drift-matrix-sync (D-002 reabierto)
+Revert                                                   → 0 drifts
+```
+
+Los tres targets responden correctamente a cambios. Cambios `cp` reverted desde backup. El cross-check drift-matrix-sync detecta regresiones post-cierre: cuando un drift `D-NNN` está marcado cerrado en drift-matrix.md pero la detección automática lo encuentra, se reporta como CRITICAL.
 
 ## Roadmap Pilar 4
 
 - [x] **Hito 1** — piloto DIESEL pm-2-3 + infraestructura ajv + Makefile + drift detectado
 - [x] **Hito 2** — cobertura 3 fixtures Phase 2 + 5 fixtures Phase 0 + target separado `test-phase0` + smoke en ambos targets + pre-commit hook bloqueo opción (b) (`test-phase0` bloqueante · `test-canon` informativo)
 - [x] **Hito 3 fase A** — `test-drift` con 3/4 checks F2.8: (1) Master prompt frontmatter vs skill VERSIONES_VIGENTES, (2) enum `tipo_programa` registry vs schemas, (4) Activity Card `schema_version`. Hook informativo. **14 drifts detectados primer run** (2 CRITICAL D-001 · 11 SIGNIFICATIVO master/skill · 1 MENOR PM-4.1 sin frontmatter)
-- [ ] **Hito 3 fase B** — checks F2.8 restantes: enum `regla_bloques` (D-002), `final_mission_scenario` allOf if/then (D-003), drift-matrix.md sync · update F2.8 spec (canon AC v2.7 → v3.0+ post IMARPOR-V2)
+- [x] **Hito 3 fase B** — checks F2.8 completos (5/5): parser amplificado para soportar yaml embedded (cierra MENOR PM-4.1) · enum `regla_bloques` (detección D-002) · `final_mission_scenario` allOf if/then (detección D-003) · drift-matrix.md sync con cross-check de regresiones post-cierre · F2.8 spec actualizada · hook message genérico
 - [ ] **Hito 4 (semana 4)** — bifurcación: F2.5 close · Sprint 2 E2E IMARPOR-CC · o Opción C (promover `test-phase0` a bloqueante + migrar fixtures legacy o schema v4)
 
 ## Cómo agregar un fixture nuevo

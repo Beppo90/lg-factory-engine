@@ -2,7 +2,7 @@
 # Pilar 4 · Pre-commit hook
 # Bloqueante:    test-phase0 (matrices PM-0.0 validation_checks deben PASS)
 # Informativo:   test-canon  (drift Phase 2 schema v4 stale vs runs v3.x · NO bloquea)
-# Informativo:   test-drift  (F2.8 schema drift CI · drifts conocidos abiertos · NO bloquea)
+# Informativo:   test-drift  (F2.8 schema drift CI · 5 checks cross-layer · NO bloquea)
 #
 # Bypass explícito: git commit --no-verify
 # Setup: make setup-hooks (configura core.hooksPath = .githooks)
@@ -39,8 +39,8 @@ drift_exit=$?
 
 if [ $drift_exit -ne 0 ]; then
   echo ""
-  echo "  ℹ test-drift detectó drifts conocidos · NO bloquea commit"
-  echo "    Drifts SIGNIFICATIVO master/skill abiertos · D-001/002/003 cerrados en branch fix/"
+  echo "  ℹ test-drift detectó drifts · ver detalle arriba · NO bloquea commit"
+  echo "    Drifts CRITICAL nuevos → considerar fix antes de merge a main"
 fi
 
 echo ""
