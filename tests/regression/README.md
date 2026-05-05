@@ -14,9 +14,24 @@ Primera vez:
 
 ```bash
 make test-canon-install        # instala ajv + ajv-formats
+make setup-hooks               # activa pre-commit hook (configura core.hooksPath)
 ```
 
 Exit code: `0` si todos los fixtures pasan, `1` si alguno falla.
+
+## Pre-commit hook
+
+Activado vía `make setup-hooks` (configura `git config core.hooksPath .githooks`).
+Política de bloqueo elegida (Hito 2 fase C): **opción (b)** — bloquea solo lo verde.
+
+| Test | Comportamiento en pre-commit |
+|---|---|
+| `test-phase0` | **Bloqueante** · si alguna matriz PM-0.0 deja de tener `validation_checks` todos PASS, el commit aborta |
+| `test-canon` | **Informativo** · drift Phase 2 cross-versions schema/runs es deuda conocida (Hito 4 Opción C) · NO bloquea |
+
+Bypass explícito: `git commit --no-verify`.
+
+Hook script en `.githooks/pre-commit` (versionado · ejecutable). `core.hooksPath` es config local — cada clone necesita correr `make setup-hooks` una vez.
 
 ## Decisiones de diseño
 
@@ -97,7 +112,7 @@ Ambos targets responden correctamente a cambios. Cambios `cp` reverted desde bac
 ## Roadmap Pilar 4
 
 - [x] **Hito 1** — piloto DIESEL pm-2-3 + infraestructura ajv + Makefile + drift detectado
-- [x] **Hito 2** — cobertura 3 fixtures Phase 2 (DIESEL + MGV + IMARPOR-CC-V2) + 5 fixtures Phase 0 (RECREACION + INFRATI) + target separado `test-phase0` + smoke en ambos targets
+- [x] **Hito 2** — cobertura 3 fixtures Phase 2 + 5 fixtures Phase 0 + target separado `test-phase0` + smoke en ambos targets + pre-commit hook bloqueo opción (b) (`test-phase0` bloqueante · `test-canon` informativo)
 - [ ] **Hito 3 (semana 3)** — F2.8 schema drift CI (master prompts ↔ v4/schemas) · va a detectar (a) los 4 schemas v2.0 NEW pendientes y (b) que activity-card schema está stale en v2.7
 - [ ] **Hito 4 (semana 4)** — bifurcación: F2.5 close · Sprint 2 E2E IMARPOR-CC · o Opción C (promover `test-phase0` a bloqueante + migrar fixtures legacy o schema v4)
 

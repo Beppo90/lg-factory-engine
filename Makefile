@@ -1,4 +1,4 @@
-.PHONY: test-canon test-phase0 test-all test-canon-install
+.PHONY: test-canon test-phase0 test-all test-canon-install setup-hooks
 
 test-canon:
 	@node tests/regression/test-canon.js
@@ -18,3 +18,9 @@ test-all:
 
 test-canon-install:
 	@npm install --prefix tests/regression
+
+setup-hooks:
+	@git config core.hooksPath .githooks
+	@echo "✓ git core.hooksPath = .githooks"
+	@echo "  Pre-commit hook activo · test-phase0 bloqueante · test-canon informativo"
+	@echo "  Bypass: git commit --no-verify"

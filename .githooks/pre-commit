@@ -1,0 +1,36 @@
+#!/bin/sh
+# Pilar 4 · Pre-commit hook
+# Bloqueante:    test-phase0 (matrices PM-0.0 validation_checks deben PASS)
+# Informativo:   test-canon  (drift Phase 2 schema v4 stale vs runs v3.x · NO bloquea)
+#
+# Bypass explícito: git commit --no-verify
+# Setup: make setup-hooks (configura core.hooksPath = .githooks)
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT" || exit 1
+
+echo "▶ pre-commit · test-phase0 (bloqueante)"
+node tests/regression/test-phase0.js
+phase0_exit=$?
+
+if [ $phase0_exit -ne 0 ]; then
+  echo ""
+  echo "✗ Pre-commit ABORTED · test-phase0 detectó regresión en matrices PM-0.0"
+  echo "  Resolvé el FAIL antes de commitear · bypass explícito: git commit --no-verify"
+  exit 1
+fi
+
+echo ""
+echo "▶ pre-commit · test-canon (informativo)"
+node tests/regression/test-canon.js
+canon_exit=$?
+
+if [ $canon_exit -ne 0 ]; then
+  echo ""
+  echo "  ℹ test-canon FAIL · drift Phase 2 conocido (schema v4 stale vs runs v3.x)"
+  echo "    Migración pendiente Hito 4 Opción C · NO bloquea commit"
+fi
+
+echo ""
+echo "✓ pre-commit OK"
+exit 0
