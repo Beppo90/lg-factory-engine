@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/common/voc-descriptor.schema.json",
+  "title": "V+O+C Descriptor — Verbo + Objeto + Condición",
+  "description": "Fórmula SENA para descriptores observables y medibles. Aplica a 3 dimensiones: Cognitiva (Saber), Procedimental (Hacer), Actitudinal (Ser). Documentada en PM-3.1 §11.3. Script canónico: pm-3-1-voc-patch.js (v2.1).",
+  "type": "object",
+  "required": ["dimension", "verbo", "objeto", "condicion"],
+  "properties": {
+    "dimension": {
+      "type": "string",
+      "enum": ["cognitiva", "procedimental", "actitudinal"],
+      "description": "Cognitiva = Saber; Procedimental = Hacer; Actitudinal = Ser"
+    },
+    "verbo": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Verbo en infinitivo coherente con la dimensión (ej. cognitivo: identificar, analizar; procedimental: aplicar, demostrar; actitudinal: valorar, asumir)"
+    },
+    "objeto": {
+      "type": "string",
+      "minLength": 5,
+      "description": "Objeto concreto sobre el que actúa el verbo"
+    },
+    "condicion": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Condición contextual bajo la que se realiza la acción — ancla al universo laboral/técnico de la guía"
+    }
+  },
+  "additionalProperties": false
+}

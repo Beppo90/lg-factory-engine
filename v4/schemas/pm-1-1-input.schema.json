@@ -1,0 +1,401 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-1-1-input.schema.json",
+  "title": "PM-1.1 INPUT — Form Output Contract (no es el output final del PM-1.1)",
+  "_status": "FORM-OUTPUT-CONTRACT-NOT-CANON",
+  "_warning": "Este schema describe el OUTPUT del Formulario LG Factory (lo que produce el formulario al cerrar Sección B), NO el OUTPUT del prompt PM-1.1 (que es pm-1-1.json y vive en pm-1-1.schema.json). El formulario captura solo el subset MÍNIMO necesario para activar el prompt PM-1.1 — no captura el canon completo. La SOT pedagógica para el prompt PM-1.1 son los master prompts; este schema solo valida el handoff formulario→prompt. No usar como referencia del canon completo.",
+  "_purpose": "validar handoff: formulario LG Factory → activación manual del prompt PM-1.1",
+  "description": "Contrato del JSON que produce el FORMULARIO LG Factory para activar PM-1.1. NO es el output final del PM-1.1 (ese es pm-1-1.json — ver pm-1-1.schema.json). Este artefacto es el INPUT que se adjunta al master prompt PM-1.1 junto con pm-0-context.json para generar el pm-1-1.json final. Schema v1.0 (2026-04-26) — derivado de form-schema-pm0-pm11.json v2.7 sección B.",
+  "type": "object",
+  "required": [
+    "pm0_anchors_ref",
+    "tipo",
+    "total_guias",
+    "modo_informacion"
+  ],
+  "properties": {
+    "pm0_anchors_ref": {
+      "type": "object",
+      "description": "Referencia obligatoria al pm-0-context.json del programa (DM v2.6 PASO 0).",
+      "required": [
+        "file",
+        "programa_id"
+      ],
+      "properties": {
+        "file": {
+          "type": "string",
+          "const": "pm-0-context.json"
+        },
+        "programa_id": {
+          "type": "string",
+          "description": "Debe coincidir con pm-0-context.programa_id"
+        },
+        "auto_derived": {
+          "type": "boolean",
+          "description": "true si los campos derivados (rango_cefr, progresion_cefr_decision, numero_guias) se resuelven en runtime desde pm-0-context.json"
+        },
+        "rango_cefr": {
+          "type": "string",
+          "description": "Opcional — heredado de pm-0-context"
+        },
+        "progresion_cefr_decision": {
+          "type": "string",
+          "description": "Opcional — heredado de pm-0-context"
+        },
+        "numero_guias": {
+          "type": "integer",
+          "description": "Opcional — heredado de pm-0-context"
+        }
+      },
+      "additionalProperties": false
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "Técnico",
+        "Tecnológico",
+        "Curso Especial",
+        "Curso Complementario"
+      ],
+      "description": "v2.7.1: metadata administrativa SENA. NO determina total_guias. Curso Complementario = sinónimo SOFÍA de Curso Especial."
+    },
+    "total_guias": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20,
+      "description": "v2.7: número libre de bloques. Recomendado = número de RAPs del programa."
+    },
+    "horas_por_bloque": {
+      "type": "number",
+      "minimum": 1,
+      "description": "v2.7: calculado por el formulario en vivo = duracion_total_horas / total_guias. Si < 48 → soft warning."
+    },
+    "horas_por_bloque_warning": {
+      "type": "boolean",
+      "description": "v2.7: true si horas_por_bloque < 48. Indica que el instructor aceptó el aviso de comprimir actividades."
+    },
+    "guia_numero": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Número de guía dentro del programa (1..total_guias). Cada formulario diligenciado corresponde a una guía."
+    },
+    "guia_subnivel_cefr": {
+      "type": "string",
+      "enum": [
+        "A1.1",
+        "A1.2",
+        "A1.3",
+        "A2.0",
+        "A2.1",
+        "A2.2"
+      ],
+      "description": "Subnivel CEFR asignado a esta guía. Pre-rellena cefr_descriptors_snapshot desde el catálogo PM-0 §6."
+    },
+    "modo_informacion": {
+      "type": "string",
+      "enum": [
+        "MODO 1 — Diseño Curricular SOFÍA Plus",
+        "MODO 2 — Información Externa (Instructor)"
+      ],
+      "description": "Selección obligatoria: alimenta uno de los dos sub-bloques (modo_1 o modo_2)."
+    },
+    "modo_1_diseño_curricular": {
+      "type": "object",
+      "description": "Aplica si modo_informacion = MODO 1. Datos del diseño curricular oficial SOFÍA Plus.",
+      "required": [
+        "diseño_curricular",
+        "codigo_competencia",
+        "nombre_competencia",
+        "codigo_rap",
+        "nombre_rap",
+        "conocimientos_de_proceso",
+        "conocimientos_de_saber",
+        "criterios_de_evaluacion"
+      ],
+      "properties": {
+        "final_mission_scenario": {
+          "type": "string",
+          "minLength": 20,
+          "description": "v2.7.1 — OBLIGATORIO si tipo ∈ {Curso Especial, Curso Complementario} (reemplaza proyecto_formativo). Escenario laboral integral del curso que ancla la Misión Final."
+        },
+        "diseño_curricular": {
+          "type": "string",
+          "minLength": 3
+        },
+        "proyecto_formativo": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "null si tipo=Curso Especial.",
+          "properties": {
+            "nombre": {
+              "type": "string",
+              "description": "v2.7: nombre del proyecto formativo articulador"
+            },
+            "fase": {
+              "type": "string",
+              "description": "v2.7: ej. 'Fase 2'"
+            },
+            "contexto_adicional": {
+              "type": "string",
+              "description": "v2.7: cliente, sector, escenario real, restricciones"
+            }
+          },
+          "additionalProperties": false
+        },
+        "codigo_competencia": {
+          "type": "string"
+        },
+        "nombre_competencia": {
+          "type": "string",
+          "minLength": 10
+        },
+        "codigo_rap": {
+          "type": "string"
+        },
+        "nombre_rap": {
+          "type": "string",
+          "minLength": 10
+        },
+        "conocimientos_de_proceso": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        },
+        "conocimientos_de_saber": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        },
+        "criterios_de_evaluacion": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "modo_2_informacion_externa": {
+      "type": "object",
+      "description": "Aplica si modo_informacion = MODO 2. Para programas/guías sin diseño curricular formal SOFÍA Plus.",
+      "required": [
+        "temas_tecnicos",
+        "objetivos_aprendizaje_evaluar",
+        "criterios_de_evaluacion"
+      ],
+      "properties": {
+        "final_mission_scenario": {
+          "type": "string",
+          "minLength": 20,
+          "description": "v2.7.1 — OBLIGATORIO si tipo ∈ {Curso Especial, Curso Complementario} (reemplaza proyecto_formativo). Escenario laboral integral del curso que ancla la Misión Final."
+        },
+        "proyecto_formativo": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Opcional — null si no aplica o si tipo=Curso Especial.",
+          "properties": {
+            "nombre": {
+              "type": "string"
+            },
+            "fase": {
+              "type": "string"
+            },
+            "contexto_adicional": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "temas_tecnicos": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 3
+          }
+        },
+        "objetivos_aprendizaje_evaluar": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        },
+        "criterios_de_evaluacion": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "cefr_descriptors_snapshot": {
+      "type": "object",
+      "description": "Pre-rellenado desde catálogo PM-0 §6 según guia_subnivel_cefr. Instructor puede sobrescribir cualquier descriptor para esta guía específica.",
+      "properties": {
+        "comprension_oral": {
+          "type": "string"
+        },
+        "comprension_lectora": {
+          "type": "string"
+        },
+        "interaccion_oral": {
+          "type": "string"
+        },
+        "produccion_oral": {
+          "type": "string"
+        },
+        "produccion_escrita": {
+          "type": "string"
+        },
+        "vocabulario_activo": {
+          "type": "string"
+        },
+        "gramatica": {
+          "type": "string"
+        },
+        "fonologia": {
+          "type": "string"
+        },
+        "funciones_comunicativas": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "aprobaciones": {
+      "type": "object",
+      "required": [
+        "aprobado_por_instructor",
+        "fecha_aprobacion"
+      ],
+      "properties": {
+        "aprobado_por_instructor": {
+          "type": "string",
+          "minLength": 3
+        },
+        "fecha_aprobacion": {
+          "type": "string",
+          "format": "date"
+        },
+        "observaciones": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "description": "Si modo_informacion=MODO 1 → modo_1_diseño_curricular es obligatorio.",
+      "if": {
+        "properties": {
+          "modo_informacion": {
+            "const": "MODO 1 — Diseño Curricular SOFÍA Plus"
+          }
+        },
+        "required": [
+          "modo_informacion"
+        ]
+      },
+      "then": {
+        "required": [
+          "modo_1_diseño_curricular"
+        ]
+      }
+    },
+    {
+      "description": "Si modo_informacion=MODO 2 → modo_2_informacion_externa es obligatorio.",
+      "if": {
+        "properties": {
+          "modo_informacion": {
+            "const": "MODO 2 — Información Externa (Instructor)"
+          }
+        },
+        "required": [
+          "modo_informacion"
+        ]
+      },
+      "then": {
+        "required": [
+          "modo_2_informacion_externa"
+        ]
+      }
+    },
+    {
+      "description": "Si tipo ∈ {Curso Especial, Curso Complementario} y MODO 1 → final_mission_scenario obligatorio dentro de modo_1.",
+      "if": {
+        "properties": {
+          "tipo": {
+            "enum": [
+              "Curso Especial",
+              "Curso Complementario"
+            ]
+          },
+          "modo_informacion": {
+            "const": "MODO 1 — Diseño Curricular SOFÍA Plus"
+          }
+        },
+        "required": [
+          "tipo",
+          "modo_informacion"
+        ]
+      },
+      "then": {
+        "properties": {
+          "modo_1_diseño_curricular": {
+            "required": [
+              "final_mission_scenario"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "description": "Si tipo ∈ {Curso Especial, Curso Complementario} y MODO 2 → final_mission_scenario obligatorio dentro de modo_2.",
+      "if": {
+        "properties": {
+          "tipo": {
+            "enum": [
+              "Curso Especial",
+              "Curso Complementario"
+            ]
+          },
+          "modo_informacion": {
+            "const": "MODO 2 — Información Externa (Instructor)"
+          }
+        },
+        "required": [
+          "tipo",
+          "modo_informacion"
+        ]
+      },
+      "then": {
+        "properties": {
+          "modo_2_informacion_externa": {
+            "required": [
+              "final_mission_scenario"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

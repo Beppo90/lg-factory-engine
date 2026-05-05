@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/common/run-id.schema.json",
+  "title": "Run ID — Identificador de Ejecución",
+  "description": "Formato PROGRAM-YYYY-MM-DD. Ej: DIESEL-2026-04-19, MGV-2026-04-20.",
+  "type": "string",
+  "pattern": "^[A-Z]+-[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+}

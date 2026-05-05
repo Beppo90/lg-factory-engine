@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-2-10.schema.json",
+  "title": "PM-2.10 — Grammar · Structure Use (v4.0)",
+  "description": "PM de Apropiación (S3). Inducción + práctica + integración de 3 estructuras gramaticales target de la guía. Implementa Discovery First: noticing en texto de PM-2.3 → inferencia grupal → Formula Box como confirmación. NO genera evidencia standalone — aporta 5 pts al Quiz Consolidado S6 (skill: Grammar). Extiende pm-2-x-base y agrega: grammar_targets (3 estructuras con formula_box), error_log (10 oraciones con 1 trap correcta).",
+  "allOf": [
+    { "$ref": "common/pm-2-x-base.schema.json" }
+  ],
+  "type": "object",
+  "properties": {
+    "grammar_targets": {
+      "type": "array",
+      "description": "3 estructuras gramaticales activas en la sesión. Cada una: structure (grupo Gr#), formulaciones afirmativa/negativa/pregunta (según aplique), workshop_examples (contextualizados al universo) o prepositions (si aplica), formula_box.",
+      "minItems": 2,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["structure", "formula_box"],
+        "properties": {
+          "structure": { "type": "string", "minLength": 10 },
+          "affirmative": { "type": "string" },
+          "negative": { "type": "string" },
+          "question": { "type": "string" },
+          "prepositions": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "workshop_examples": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 10 },
+            "minItems": 3,
+            "maxItems": 10
+          },
+          "formula_box": {
+            "type": "string",
+            "minLength": 10,
+            "description": "Fórmula visual proyectada al aprendiz (ej. '✅ [Verb] + [Object] | ❌ Don't + [Verb] + [Object]')"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "error_log": {
+      "type": "object",
+      "description": "Log de 10 oraciones (9 con errores + 1 correcta como trap de comprensión). Cada item: number, error (oración presentada), y o bien correction+target (si hay error) o correct:true+note (si es la trap correcta).",
+      "required": ["title", "instructions", "sentences"],
+      "properties": {
+        "title": { "type": "string", "minLength": 10 },
+        "instructions": { "type": "string", "minLength": 20 },
+        "sentences": {
+          "type": "array",
+          "minItems": 8,
+          "maxItems": 15,
+          "items": {
+            "type": "object",
+            "required": ["number", "error"],
+            "properties": {
+              "number": { "type": "integer", "minimum": 1 },
+              "error": { "type": "string", "minLength": 10 },
+              "correction": { "type": "string", "minLength": 10 },
+              "target": { "type": "string", "minLength": 10 },
+              "correct": { "type": "boolean" },
+              "note": { "type": "string", "minLength": 10 }
+            },
+            "oneOf": [
+              {
+                "required": ["correction", "target"],
+                "not": { "required": ["correct"] }
+              },
+              {
+                "required": ["correct", "note"],
+                "properties": { "correct": { "const": true } },
+                "not": { "required": ["correction"] }
+              }
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["grammar_targets", "error_log"],
+  "unevaluatedProperties": false
+}

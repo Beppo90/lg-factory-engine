@@ -1,0 +1,308 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-3-2.schema.json",
+  "title": "PM-3.2 — Playbook Build-Out · Per-Session Facilitator (v4.0)",
+  "description": "Facilitator pivot — 1 sesión del Playbook Build-Out. Una instancia por sesión (s1..s8) valida contra este schema. Absorbe PM-4.1 (instrumentos formativos) como anexos en el build final y PM-4.2 (Cuestionario Consolidado E6) queda incorporado en el answer_key_consolidado de s6. Estructura: session_header + materials_checklist + board_plan + timeline + set_up + while (bloques A-E con breaks) + wrap_up + answer_key_consolidado + differentiation + instructor_self_check + totals_check + momento_sena + estrategia_didactica + pm0_protocol.",
+  "type": "object",
+  "required": [
+    "pm_id",
+    "session",
+    "session_name",
+    "run_id",
+    "guide",
+    "programa",
+    "duracion_min",
+    "worksheets",
+    "habilidades_foco",
+    "habilidades_soporte",
+    "cefr",
+    "generated_at",
+    "status",
+    "session_header",
+    "materials_checklist",
+    "board_plan",
+    "timeline",
+    "set_up",
+    "while",
+    "wrap_up",
+    "answer_key_consolidado",
+    "differentiation",
+    "instructor_self_check",
+    "totals_check",
+    "momento_sena",
+    "estrategia_didactica",
+    "justificacion_didactica",
+    "pm0_protocol"
+  ],
+  "properties": {
+    "pm_id": { "type": "string", "const": "PM-3.2" },
+    "session": {
+      "description": "Identificador de sesión. Canon: 1-8 (enteros) o S6b/S6c/S7 etc (strings).",
+      "oneOf": [
+        { "type": "integer", "minimum": 1, "maximum": 8 },
+        { "type": "string", "minLength": 1 }
+      ]
+    },
+    "session_name": { "type": "string", "minLength": 5 },
+    "run_id": { "type": "string", "minLength": 3 },
+    "guide": { "type": "string", "minLength": 1 },
+    "programa": { "type": "string", "minLength": 5 },
+    "duracion_min": { "type": "integer", "minimum": 60, "maximum": 1440 },
+    "worksheets": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 10,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "habilidades_foco": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 8,
+      "items": { "type": "string", "minLength": 2 }
+    },
+    "habilidades_soporte": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 8,
+      "items": { "type": "string", "minLength": 2 }
+    },
+    "cefr": { "type": "string", "pattern": "^[ABC][12](\\.[0-9])?$" },
+    "model": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "status": { "type": "string", "minLength": 2 },
+    "session_header": {
+      "type": "object",
+      "required": ["titulo", "duracion_min"],
+      "properties": {
+        "titulo": { "type": "string", "minLength": 5 },
+        "subtitulo": { "type": "string" },
+        "duracion_horas": { "type": "number" },
+        "duracion_min": { "type": "integer" },
+        "worksheets_asignados": { "type": "array", "items": { "type": "string" } },
+        "habilidades_soporte": { "type": "array", "items": { "type": "string" } },
+        "habilidades_foco": { "type": "array", "items": { "type": "string" } },
+        "nota_instructor": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "materials_checklist": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 40,
+      "items": {
+        "oneOf": [
+          { "type": "string", "minLength": 5 },
+          { "type": "object", "additionalProperties": true }
+        ]
+      }
+    },
+    "board_plan": { "type": "string", "minLength": 20 },
+    "timeline": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 20,
+      "description": "Cronograma interno de la sesión. Canon: ~8 ítems (warm-up, objective, bloques A-E, break, wrap-up).",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "set_up": {
+      "type": "object",
+      "required": ["duracion_min", "warm_up", "objective"],
+      "properties": {
+        "duracion_min": { "type": "integer", "minimum": 5, "maximum": 60 },
+        "warm_up": { "type": "object", "additionalProperties": true },
+        "teacher_talk_opening": { "type": "object", "additionalProperties": true },
+        "objective": { "type": "object", "additionalProperties": true },
+        "icq": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+        "facilitation_notes": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string" } }
+          ]
+        },
+        "checkpoint": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "while": {
+      "type": "object",
+      "required": ["duracion_min", "bloques"],
+      "properties": {
+        "duracion_min": { "type": "integer", "minimum": 60, "maximum": 600 },
+        "bloques": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 8,
+          "description": "Bloques A-E de la sección WHILE. Cada bloque incluye técnica didáctica (desde logistics_box.estrategia propagado por pm-3-2-estrategias-patch.js).",
+          "items": {
+            "type": "object",
+            "required": ["bloque", "duracion_min"],
+            "properties": {
+              "bloque": { "type": "string", "pattern": "^[A-E]$" },
+              "titulo": { "type": "string" },
+              "duracion_min": { "type": "integer", "minimum": 10, "maximum": 180 },
+              "tecnica_didactica": { "type": "string" }
+            },
+            "additionalProperties": true
+          }
+        },
+        "breaks": {
+          "type": "array",
+          "items": { "type": "object", "additionalProperties": true }
+        }
+      },
+      "additionalProperties": true
+    },
+    "wrap_up": {
+      "type": "object",
+      "required": ["duracion_min"],
+      "properties": {
+        "duracion_min": { "type": "integer", "minimum": 5, "maximum": 60 },
+        "exit_ticket": { "type": "object", "additionalProperties": true },
+        "teacher_talk_closing": { "type": "object", "additionalProperties": true },
+        "trabajo_autonomo": { "type": "object", "additionalProperties": true },
+        "preview_next_session": { "type": "object", "additionalProperties": true },
+        "facilitation_notes": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string" } }
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "answer_key_consolidado": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 30,
+      "description": "Respuestas modelo de todos los worksheets de la sesión. En S6 incluye el Cuestionario Consolidado E6 (5 secciones × 5 ítems = 25 pts).",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "differentiation": {
+      "type": "object",
+      "required": ["fast_finishers", "more_support_needed"],
+      "properties": {
+        "fast_finishers": {
+          "oneOf": [
+            { "type": "array" },
+            { "type": "object" }
+          ]
+        },
+        "more_support_needed": {
+          "oneOf": [
+            { "type": "array" },
+            { "type": "object" }
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "instructor_self_check": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 15,
+      "items": {
+        "oneOf": [
+          { "type": "string", "minLength": 10 },
+          { "type": "object", "additionalProperties": true }
+        ]
+      }
+    },
+    "totals_check": {
+      "type": "object",
+      "required": ["total", "check_result"],
+      "properties": {
+        "set_up": { "type": "integer" },
+        "wrap_up": { "type": "integer" },
+        "total": { "type": "integer", "minimum": 60, "maximum": 600 },
+        "check_result": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "rap_status": { "type": "string" },
+    "momento_sena": {
+      "type": "string",
+      "description": "Momento del ciclo SENA. Canon: 3.1 Reflexión Inicial | 3.2 Contextualización | 3.3 Apropiación | 3.4 Transferencia.",
+      "pattern": "^3\\.[1-4]"
+    },
+    "estrategia_didactica": { "type": "string", "minLength": 3 },
+    "justificacion_didactica": { "type": "string", "minLength": 20 },
+    "pm0_protocol": {
+      "type": "object",
+      "required": [
+        "grammar_groups",
+        "feedback",
+        "l1_management",
+        "stress_pronunciation",
+        "success_vocabulary"
+      ],
+      "description": "Puente entre PM-0 y la sesión. Canon §5.Principio 5 del DM.",
+      "properties": {
+        "grammar_groups": {
+          "type": "array",
+          "description": "Grupos del silabus gramatical activos (Intro/Consolida/Aplica).",
+          "items": { "type": "object", "additionalProperties": true }
+        },
+        "feedback": {
+          "type": "object",
+          "description": "Modo dominante + técnicas de accuracy/fluency.",
+          "additionalProperties": true
+        },
+        "l1_management": {
+          "type": "object",
+          "description": "Porcentaje L1 + English Zone + usos legítimos + estrategia de reducción.",
+          "required": ["l1_percentage"],
+          "properties": {
+            "l1_percentage": {
+              "oneOf": [
+                { "type": "integer", "minimum": 0, "maximum": 100 },
+                { "type": "string" }
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "stress_pronunciation": {
+          "type": "object",
+          "description": "Palabras foco + técnicas físicas + marcado en tablero.",
+          "additionalProperties": true
+        },
+        "success_vocabulary": {
+          "type": "object",
+          "description": "Términos target + factores SUCCESS aplicados.",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "anexos": {
+      "type": "array",
+      "description": "Instrumentos formativos absorbidos desde PM-4.1 para las sesiones donde aplica (s2 Reading, s3 Writing, s4 Listening+Speaking, s5 Language Functions, s8 Integrative). Ausente en s1/s6/s7. Cada item es un instrumento completo (no una referencia).",
+      "minItems": 0,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["instrument_id", "evidence_number", "title", "skill", "session", "total_points"],
+        "properties": {
+          "instrument_id": { "type": "string", "pattern": "^INST-[0-9]+$" },
+          "evidence_number": { "oneOf": [ { "type": "integer" }, { "type": "string" } ] },
+          "title": { "type": "string", "minLength": 5 },
+          "skill": { "type": "string" },
+          "session": { "oneOf": [ { "type": "integer" }, { "type": "string" } ] },
+          "tipo_evidencia": { "type": "string" },
+          "technique": { "type": "string" },
+          "total_points": { "type": "number", "minimum": 0 },
+          "administered": { "type": "string" },
+          "gfpi_tag": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

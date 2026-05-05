@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/common/bloom-level.schema.json",
+  "title": "Bloom Level — Taxonomía Revisada (Anderson & Krathwohl 2001)",
+  "description": "Niveles cognitivos L1-L6. LOTS (L1-L3) predomina en S1-S2 (Reflexión+Apropiación inicial). MOTS (L3-L4) en S3-S5 (Apropiación avanzada). HOTS (L4-L6) en S6-S8 (Evaluación + Transferencia ABP).",
+  "type": "string",
+  "enum": [
+    "L1-Recordar",
+    "L2-Comprender",
+    "L3-Aplicar",
+    "L4-Analizar",
+    "L5-Evaluar",
+    "L6-Crear"
+  ]
+}

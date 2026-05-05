@@ -1,0 +1,315 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-0-context.schema.json",
+  "title": "PM-0 Context — CEFR Framework & FPI SENA Pedagogical Foundation per Run",
+  "description": "Contrato del anclaje PM-0 a un run específico. Insumo obligatorio para pm-1-2, pm-3-1 y todos los pm-3-2-sX. Schema v4.0 spike 2026-04-22.",
+  "type": "object",
+  "required": [
+    "run_id",
+    "pm_code",
+    "pm_name",
+    "artifact_purpose",
+    "generated_date",
+    "pipeline_version",
+    "pm0_source_version",
+    "program_scope",
+    "pm0_section_mapping",
+    "cefr_descriptors_per_guide",
+    "grammar_roadmap",
+    "l1_policy_per_guide",
+    "methodological_shifts_per_guide",
+    "principios_aplicables",
+    "traceability_checklist_ref",
+    "pm0_protocol_template_per_guide"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "pattern": "^[A-Z]+-[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Formato: PROGRAM-YYYY-MM-DD (ej. DIESEL-2026-04-19)"
+    },
+    "pm_code": {
+      "type": "string",
+      "const": "PM-0"
+    },
+    "pm_name": {
+      "type": "string",
+      "minLength": 10
+    },
+    "artifact_purpose": {
+      "type": "string",
+      "minLength": 30,
+      "description": "Propósito del artefacto — debe enlazar con pm-1-2, pm-3-1, pm-3-2-sX"
+    },
+    "generated_date": {
+      "type": "string",
+      "format": "date",
+      "description": "YYYY-MM-DD"
+    },
+    "pipeline_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$",
+      "description": "Semver — ej. 2.6.6, 4.0.0"
+    },
+    "pm0_source_version": {
+      "type": "string",
+      "description": "Versión del documento PM-0 fuente (ej. '1.0 (2026-04-18)')"
+    },
+
+    "program_scope": {
+      "type": "object",
+      "required": [
+        "programa",
+        "ficha",
+        "tipo",
+        "cefr_range",
+        "total_guias",
+        "regla_bloques",
+        "proyecto_formativo_articulador"
+      ],
+      "properties": {
+        "programa": { "type": "string", "minLength": 5 },
+        "ficha": {
+          "type": "string",
+          "pattern": "^[0-9]{6,8}$",
+          "description": "Número de ficha SOFIA Plus"
+        },
+        "tipo": {
+          "type": "string",
+          "enum": ["Técnico", "Tecnológico", "Curso Especial", "Curso Complementario"],
+          "description": "Técnico (≈180h) · Tecnológico (≈350h) · Curso Especial / Curso Complementario (sin proyecto formativo articulador, usan final_mission_scenario). PM-1.1 v2.7.1 canon. Curso Complementario = sinónimo administrativo SOFÍA de Curso Especial."
+        },
+        "cefr_range": {
+          "type": "string",
+          "pattern": "^(A1\\.[1-3]|A2\\.[0-2]|B1\\.[0-2])(\\s*—\\s*(A1\\.[1-3]|A2\\.[0-2]|B1\\.[0-2]))?$",
+          "description": "Rango CEFR del programa (ej. 'A1.1 — A2.1')"
+        },
+        "total_guias": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20,
+          "description": "Número total de guías del programa (= número de bloques)"
+        },
+        "regla_bloques": {
+          "type": "string",
+          "enum": ["alineacion_1a1", "absorcion_Na1", "desdoblamiento_1aN", "alineacion_NaM"],
+          "description": "PM-1.1 v2.7.1 — 4 patrones canónicos. 1a1: 1 RAP = 1 guía (default Técnico/Tecnológico). Na1: N RAPs absorbidos en 1 guía única (default Curso Especial/Complementario). 1aN: 1 RAP desdoblado en N guías. NaM: mapeo libre."
+        },
+        "proyecto_formativo_articulador": {
+          "type": "string",
+          "minLength": 50,
+          "description": "Narrativa del universo formativo — contexto que articula las guías"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "pm0_section_mapping": {
+      "type": "object",
+      "description": "Mapeo de secciones del documento PM-0 a su aplicación en este run",
+      "minProperties": 5,
+      "additionalProperties": { "type": "string" }
+    },
+
+    "cefr_descriptors_per_guide": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["guia", "nombre_esp", "rap", "cefr", "descriptor_snapshot"],
+        "properties": {
+          "guia": { "type": "integer", "minimum": 1 },
+          "nombre_esp": { "type": "string", "minLength": 5 },
+          "rap": {
+            "type": "string",
+            "description": "Código RAP (ej. 220501096) o 'pendiente' si no está definido aún"
+          },
+          "cefr": {
+            "type": "string",
+            "enum": ["A1.1", "A1.2", "A1.3", "A2.0", "A2.1", "A2.2", "B1.0", "B1.1", "B1.2"]
+          },
+          "descriptor_snapshot": {
+            "type": "object",
+            "description": "Contenido CEFR puro — qué puede hacer el aprendiz en este subnivel. Sin metadata de estado.",
+            "required": [
+              "comprension_oral",
+              "comprension_lectora",
+              "interaccion_oral",
+              "produccion_oral",
+              "produccion_escrita",
+              "vocabulario_activo",
+              "gramatica",
+              "funciones_comunicativas"
+            ],
+            "properties": {
+              "comprension_oral": { "type": "string", "minLength": 20 },
+              "comprension_lectora": { "type": "string", "minLength": 20 },
+              "interaccion_oral": { "type": "string", "minLength": 20 },
+              "produccion_oral": { "type": "string", "minLength": 20 },
+              "produccion_escrita": { "type": "string", "minLength": 20 },
+              "vocabulario_activo": { "type": "string", "minLength": 10 },
+              "gramatica": { "type": "string", "minLength": 10 },
+              "funciones_comunicativas": { "type": "string", "minLength": 10 }
+            },
+            "additionalProperties": false
+          },
+          "placeholder_note": {
+            "type": "string",
+            "minLength": 10,
+            "description": "Metadata del item (no del snapshot): explica por qué el descriptor es provisional. Ausente en guías ya diseñadas (p.ej. G1). Decisión v4.0 spike 2026-04-22: sibling de descriptor_snapshot para separar contenido CEFR de metadata de estado."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "grammar_roadmap": {
+      "type": "object",
+      "required": ["silabus_source", "activation_mapping", "carga_principle"],
+      "properties": {
+        "silabus_source": { "type": "string" },
+        "activation_mapping": {
+          "type": "object",
+          "description": "Mapeo por guía de grupos gramaticales Intro/Consolida/Aplica",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "object",
+            "required": ["intro", "consolida", "aplica"],
+            "properties": {
+              "intro": { "type": "array", "items": { "type": "string" } },
+              "consolida": { "type": "array", "items": { "type": "string" } },
+              "aplica": { "type": "array", "items": { "type": "string" } }
+            },
+            "additionalProperties": false
+          }
+        },
+        "carga_principle": { "type": "string", "minLength": 20 },
+        "grupo_17_sector_especifico": {
+          "type": "object",
+          "description": "Slot abierto del silabus (Grupo 17) para estructuras del sector específico"
+        }
+      }
+    },
+
+    "l1_policy_per_guide": {
+      "type": "object",
+      "required": ["source", "per_guide"],
+      "properties": {
+        "source": { "type": "string" },
+        "per_guide": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["guia", "cefr", "s1_to_s8", "rationale"],
+            "properties": {
+              "guia": { "type": "integer", "minimum": 1 },
+              "cefr": { "type": "string" },
+              "s1_to_s8": { "type": "string", "description": "Descripción legible del porcentaje L1 por sesión" },
+              "rationale": { "type": "string", "minLength": 20 }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+
+    "methodological_shifts_per_guide": {
+      "type": "object",
+      "required": ["source", "per_guide"],
+      "properties": {
+        "source": { "type": "string" },
+        "per_guide": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "guia",
+              "cefr",
+              "velocidad_input",
+              "extension_textos",
+              "autonomia",
+              "andamiaje",
+              "feedback",
+              "rol_docente",
+              "pensamiento_critico"
+            ],
+            "properties": {
+              "guia": { "type": "integer" },
+              "cefr": { "type": "string" },
+              "velocidad_input": { "type": "string" },
+              "extension_textos": { "type": "string" },
+              "autonomia": { "type": "string" },
+              "andamiaje": { "type": "string" },
+              "feedback": { "type": "string" },
+              "rol_docente": { "type": "string" },
+              "pensamiento_critico": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+
+    "principios_aplicables": {
+      "type": "object",
+      "required": ["source", "aplicacion_al_programa"],
+      "description": "13 principios pedagógicos §5.1–§5.13 con su aplicación al programa. Decisión v4.0 spike 2026-04-22: el campo es program-agnostic (renombrado de 'aplicacion_a_DIESEL' a 'aplicacion_al_programa').",
+      "properties": {
+        "source": { "type": "string" },
+        "aplicacion_al_programa": {
+          "type": "array",
+          "minItems": 13,
+          "maxItems": 13,
+          "items": { "type": "string", "minLength": 20 },
+          "description": "13 strings, uno por principio §5.1–§5.13, describiendo cómo aplica al programa de este run"
+        }
+      }
+    },
+
+    "traceability_checklist_ref": {
+      "type": "object",
+      "required": ["source", "uso", "secciones"],
+      "properties": {
+        "source": { "type": "string" },
+        "uso": { "type": "string" },
+        "secciones": {
+          "type": "object",
+          "required": [
+            "A_trazabilidad_cefr",
+            "B_trazabilidad_pedagogica",
+            "C_trazabilidad_estructura_sesion",
+            "D_trazabilidad_evaluacion"
+          ],
+          "additionalProperties": { "type": "string" }
+        }
+      }
+    },
+
+    "pm0_protocol_template_per_guide": {
+      "type": "object",
+      "required": ["purpose", "source_schema", "campos_obligatorios"],
+      "properties": {
+        "purpose": { "type": "string" },
+        "source_schema": { "type": "string" },
+        "campos_obligatorios": {
+          "type": "array",
+          "minItems": 12,
+          "items": { "type": "string" }
+        }
+      }
+    },
+
+    "next_step": {
+      "type": "object",
+      "description": "Puntero al siguiente PM en la cadena — opcional pero recomendado"
+    },
+
+    "_retroactive_note": {
+      "type": "string",
+      "description": "Nota si el artefacto se creó retroactivamente"
+    }
+  },
+  "additionalProperties": false
+}

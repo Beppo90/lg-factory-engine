@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-2-6.schema.json",
+  "title": "PM-2.6 — Listening · The Auditory Anchor (v4.0)",
+  "description": "PM de Apropiación (S4). Input auditivo: escucha del diálogo ancla del universo técnico de la guía (Story B). Genera E3 Desempeño (Cuestionario No 3) + aporta 5 pts al Quiz Consolidado S6 (skill: Listening). Extiende pm-2-x-base y agrega: source (ficha curada Story B), audio_script (metadata TTS + guión), comprehension_questions (N preguntas con opciones, respuesta, Bloom).",
+  "allOf": [
+    { "$ref": "common/pm-2-x-base.schema.json" }
+  ],
+  "type": "object",
+  "properties": {
+    "source": {
+      "type": "object",
+      "description": "Ficha bibliográfica de la fuente curada (Story B) que alimenta el diálogo. Proviene del source_assignment de pm-1-2.",
+      "required": ["title", "author", "url", "role"],
+      "properties": {
+        "title": { "type": "string", "minLength": 5 },
+        "author": { "type": "string", "minLength": 2 },
+        "publication": { "type": "string" },
+        "date": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "role": {
+          "type": "string",
+          "description": "Rol canónico de la fuente (ej. 'Story B — Listening Auditory Anchor')"
+        }
+      },
+      "additionalProperties": false
+    },
+    "audio_script": {
+      "type": "object",
+      "description": "Metadata del audio + guión completo del diálogo. Diseñado para TTS (2 voces alternas por default).",
+      "required": ["title", "duration_sec", "tts_settings", "script"],
+      "properties": {
+        "title": { "type": "string", "minLength": 5 },
+        "duration_sec": { "type": "integer", "minimum": 30, "maximum": 300 },
+        "tts_settings": {
+          "type": "object",
+          "required": ["speed", "voices"],
+          "properties": {
+            "speed": { "type": "number", "minimum": 0.5, "maximum": 1.2 },
+            "voices": { "type": "integer", "minimum": 1, "maximum": 4 },
+            "voice_A": { "type": "string" },
+            "voice_B": { "type": "string" },
+            "voice_C": { "type": "string" },
+            "voice_D": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "script": {
+          "type": "array",
+          "description": "Turnos del diálogo, cada uno con speaker + line.",
+          "minItems": 6,
+          "maxItems": 30,
+          "items": {
+            "type": "object",
+            "required": ["speaker", "line"],
+            "properties": {
+              "speaker": { "type": "string", "minLength": 2 },
+              "line": { "type": "string", "minLength": 5 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "oral_markers_present": {
+          "type": "array",
+          "description": "Marcadores orales explícitamente presentes en el script (OK, Right, Well, Look, ...). Refuerza Listening naturalness.",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      },
+      "additionalProperties": false
+    },
+    "comprehension_questions": {
+      "type": "array",
+      "description": "Preguntas del Cuestionario No 3 (E3 Desempeño). Patrón canónico: 5 ítems × 1 pt = 5 pts Quiz S6.",
+      "minItems": 5,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["number", "question", "answer", "bloom"],
+        "properties": {
+          "number": { "type": "integer", "minimum": 1 },
+          "question": { "type": "string", "minLength": 10 },
+          "options": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 2 },
+            "minItems": 2,
+            "maxItems": 5
+          },
+          "answer": { "type": "string", "minLength": 1 },
+          "bloom": {
+            "type": "string",
+            "pattern": "^L[1-6] .+$"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["source", "audio_script", "comprehension_questions"],
+  "unevaluatedProperties": false
+}

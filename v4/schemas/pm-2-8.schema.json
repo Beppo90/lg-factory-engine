@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-2-8.schema.json",
+  "title": "PM-2.8 — Speaking · The Mission (v4.0)",
+  "description": "PM de Apropiación (S4). Producción oral task-based con pronunciation scaffolding integrado (absorbe funcionalidad de PM-2.7 DEPRECATED). Genera E4 Desempeño evaluado con Escala de estimación. NO aporta al Quiz S6. Extiende pm-2-x-base y agrega: estimation_scale (criterios de la Escala E4), role_play_scenario (setting + roles + pronunciation_targets), stock_cards (Stock Card A + B para scaffolding guided/semi-guided/free).",
+  "allOf": [
+    { "$ref": "common/pm-2-x-base.schema.json" }
+  ],
+  "type": "object",
+  "properties": {
+    "estimation_scale": {
+      "type": "object",
+      "description": "Escala de estimación del producto oral. Canon: 5 criterios × 1 pt = 5 pts.",
+      "required": ["instrument", "scale", "total_points", "criteria"],
+      "properties": {
+        "instrument": {
+          "type": "string",
+          "pattern": "^Escala de estimación No [0-9]+$"
+        },
+        "scale": { "type": "string", "minLength": 10 },
+        "total_points": { "type": "integer", "const": 5 },
+        "note": { "type": "string" },
+        "evaluation_mode": { "type": "string" },
+        "criteria": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": ["number", "criterion", "weight"],
+            "properties": {
+              "number": { "type": "integer", "minimum": 1, "maximum": 5 },
+              "criterion": { "type": "string", "minLength": 20 },
+              "weight": { "type": "integer", "const": 1 }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "role_play_scenario": {
+      "type": "object",
+      "description": "Escenario del role play oral. Contextualiza al aprendiz en rol laboral del universo técnico.",
+      "required": ["setting", "situation", "roles", "pronunciation_targets"],
+      "properties": {
+        "setting": { "type": "string", "minLength": 20 },
+        "situation": { "type": "string", "minLength": 30 },
+        "roles": {
+          "type": "object",
+          "description": "Roles involucrados. Canon: role_A = aprendiz, role_B = instructor/compañero.",
+          "required": ["role_A", "role_B"],
+          "properties": {
+            "role_A": { "type": "string", "minLength": 20 },
+            "role_B": { "type": "string", "minLength": 20 }
+          },
+          "additionalProperties": false
+        },
+        "pronunciation_targets": {
+          "type": "array",
+          "description": "Términos foco de pronunciación en chunk card drilling.",
+          "minItems": 3,
+          "maxItems": 10,
+          "items": { "type": "string", "minLength": 3 }
+        }
+      },
+      "additionalProperties": false
+    },
+    "stock_cards": {
+      "type": "object",
+      "description": "Stock Cards para scaffolding progresivo guided → semi-guided → free. Canon: Stock Card A (estado/datos), Stock Card B (sentence starters).",
+      "required": ["stock_card_A_bay_status", "stock_card_B_sentence_starters"],
+      "properties": {
+        "stock_card_A_bay_status": {
+          "type": "object",
+          "required": ["title", "items"],
+          "properties": {
+            "title": { "type": "string", "minLength": 10 },
+            "items": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 15,
+              "items": { "type": "string", "minLength": 10 }
+            }
+          },
+          "additionalProperties": false
+        },
+        "stock_card_B_sentence_starters": {
+          "type": "object",
+          "required": ["title", "frames"],
+          "properties": {
+            "title": { "type": "string", "minLength": 10 },
+            "frames": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 15,
+              "items": { "type": "string", "minLength": 10 }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["estimation_scale", "role_play_scenario", "stock_cards"],
+  "unevaluatedProperties": false
+}

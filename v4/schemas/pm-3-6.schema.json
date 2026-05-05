@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-3-6.schema.json",
+  "title": "PM-3.6 — Learner Guide · GFPI-F-135 + Final Mission (v4.0)",
+  "description": "Learner pivot v4.0 — Guía del Aprendiz oficial SENA (formato GFPI-F-135). Absorbe PM-3.5 Final Mission (antes sección standalone) como actividad terminal de Sección 3.4 Transferencia. Estructura canónica GFPI-F-135: 7 secciones obligatorias (identificación, presentación, actividades, evaluación, glosario, bibliografía, control). Sección 3 subdividida en 4 subsecciones (ciclo SENA 3.1 Reflexión / 3.2 Contextualización / 3.3 Apropiación / 3.4 Transferencia — donde vive Final Mission). Sección 4 contiene tabla_evidencias con las 6 evidencias canónicas E1-E6 + Misión Final (55 pts total: E1-E5 × 5 + E6 × 25 + Misión Final × 5).",
+  "type": "object",
+  "required": [
+    "pm_id",
+    "run_id",
+    "guide",
+    "generated_at",
+    "status",
+    "document_title",
+    "gfpi_ref",
+    "section1_identificacion",
+    "section2_presentacion",
+    "section3_actividades",
+    "section4_evaluacion",
+    "section5_glosario",
+    "section6_bibliografia",
+    "section7_control"
+  ],
+  "properties": {
+    "pm_id": { "type": "string", "const": "PM-3.6" },
+    "run_id": { "type": "string", "minLength": 3 },
+    "guide": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "model": { "type": "string" },
+    "status": { "type": "string" },
+    "version": { "type": "string" },
+    "note": { "type": "string" },
+    "document_title": { "type": "string", "minLength": 10 },
+    "gfpi_ref": {
+      "type": "string",
+      "description": "Referencia al formato institucional. Canon: 'GFPI-F-135' o similar.",
+      "pattern": "^GFPI-F-[0-9]{3}"
+    },
+    "section1_identificacion": {
+      "type": "object",
+      "description": "Sección 1 GFPI-F-135: identificación institucional del programa + RAP + duración.",
+      "required": [
+        "programa_formacion",
+        "codigo_programa",
+        "competencia",
+        "rap_code",
+        "rap_descripcion",
+        "duracion_guia"
+      ],
+      "properties": {
+        "programa_formacion": { "type": "string", "minLength": 5 },
+        "codigo_programa": { "type": "string" },
+        "version_programa": { "type": "string" },
+        "nombre_proyecto": { "type": "string" },
+        "fase_proyecto": { "type": "string" },
+        "actividad_proyecto": { "type": "string" },
+        "competencia": { "type": "string", "minLength": 10 },
+        "rap_code": { "type": "string", "minLength": 3 },
+        "rap_descripcion": { "type": "string", "minLength": 10 },
+        "duracion_guia": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "integer" }
+          ]
+        },
+        "ambiente_formacion": { "type": "string" },
+        "material_formacion": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "array" }
+          ]
+        },
+        "fecha_elaboracion": { "type": "string" },
+        "elaboro": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "section2_presentacion": {
+      "description": "Sección 2 GFPI-F-135: presentación narrativa del aprendiz. Canon v2.7: prólogo + universo técnico.",
+      "oneOf": [
+        { "type": "string", "minLength": 100 },
+        {
+          "type": "object",
+          "additionalProperties": true
+        }
+      ]
+    },
+    "section3_actividades": {
+      "type": "object",
+      "description": "Sección 3 GFPI-F-135: actividades de aprendizaje. Canon SENA: 4 subsecciones (3.1-3.4). La sub-sección 3.4 Transferencia contiene la Misión Final (absorbida desde PM-3.5 en v4.0).",
+      "required": [
+        "3_1_reflexion",
+        "3_2_contextualizacion",
+        "3_3_apropiacion",
+        "3_4_transferencia"
+      ],
+      "properties": {
+        "3_1_reflexion": {
+          "description": "Reflexión Inicial (S1). Debe contener actividades del ciclo SENA 3.1.",
+          "oneOf": [
+            { "type": "array", "minItems": 1 },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "3_2_contextualizacion": {
+          "description": "Contextualización (S1). Debe contener actividades del ciclo SENA 3.2.",
+          "oneOf": [
+            { "type": "array", "minItems": 1 },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "3_3_apropiacion": {
+          "description": "Apropiación (S2-S6). Canon: 10+ actividades de las 5 habilidades (Reading, Writing, Vocab, Listening, Speaking, Functions, Grammar) + Cuestionario S6.",
+          "oneOf": [
+            { "type": "array", "minItems": 3 },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "3_4_transferencia": {
+          "description": "Transferencia (S6½-S8). Canon v4.0: contiene la Misión Final ABP (absorbida desde PM-3.5) con 5 sub-fases (Planeación, Diseño, Desempeño, Presentación, Evaluación reflexiva).",
+          "oneOf": [
+            { "type": "array", "minItems": 1 },
+            { "type": "object", "additionalProperties": true }
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "section4_evaluacion": {
+      "type": "object",
+      "description": "Sección 4 GFPI-F-135: tabla GFPI-F-135 de evidencias con las 6 evidencias canónicas E1-E6 + Misión Final. Total: 55 pts (E1-E5 × 5 + E6 × 25 + Misión Final × 5).",
+      "required": ["tabla_evidencias", "total_puntos"],
+      "properties": {
+        "tabla_evidencias": {
+          "oneOf": [
+            { "type": "array", "minItems": 6, "maxItems": 10 },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "total_puntos": {
+          "oneOf": [
+            { "type": "integer", "const": 55 },
+            { "type": "string" }
+          ]
+        },
+        "bandas_cuestionario_e6": {
+          "oneOf": [
+            { "type": "array" },
+            { "type": "object" }
+          ]
+        },
+        "filosofia_evaluacion": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "object", "additionalProperties": true }
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "section5_glosario": {
+      "type": "object",
+      "description": "Sección 5 GFPI-F-135: glosario técnico. Canon: términos del universo técnico de la guía (vocabulary_toolbelt de PM-2.5).",
+      "properties": {
+        "terminos": {
+          "oneOf": [
+            { "type": "array", "minItems": 5 },
+            { "type": "object" }
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "section6_bibliografia": {
+      "description": "Sección 6 GFPI-F-135: bibliografía. Debe incluir fuentes curadas de PM-1.2.",
+      "oneOf": [
+        {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "oneOf": [
+              { "type": "string", "minLength": 10 },
+              { "type": "object", "additionalProperties": true }
+            ]
+          }
+        },
+        { "type": "object", "additionalProperties": true }
+      ]
+    },
+    "section7_control": {
+      "description": "Sección 7 GFPI-F-135: control de cambios del documento.",
+      "oneOf": [
+        { "type": "array", "minItems": 1 },
+        { "type": "object", "additionalProperties": true }
+      ]
+    },
+    "integration_note": {
+      "type": "string",
+      "description": "Nota sobre integración PM-3.5 → PM-3.6 en v4.0."
+    }
+  },
+  "additionalProperties": true
+}

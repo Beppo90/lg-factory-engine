@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-2-9.schema.json",
+  "title": "PM-2.9 — Language Functions · Communicative Competence (v4.0)",
+  "description": "PM de Apropiación (S5). Integración de 5 funciones comunicativas canónicas (F1–F5) del universo técnico de la guía. Genera E5 Desempeño evaluado con Escala de estimación + aporta 5 pts al Quiz Consolidado S6 (skill: Language Functions). Extiende pm-2-x-base y agrega: language_functions (F1–F5 con estructura, contexto, chunk_examples), classification_cards (15 tarjetas para clasificar frase → función), estimation_scale (criterios de la Escala E5).",
+  "allOf": [
+    { "$ref": "common/pm-2-x-base.schema.json" }
+  ],
+  "type": "object",
+  "properties": {
+    "language_functions": {
+      "type": "array",
+      "description": "5 funciones comunicativas canónicas del universo técnico (F1–F5). Cada una: función, estructura, contexto laboral, chunk_examples.",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["number", "function", "structure", "context", "chunk_examples"],
+        "properties": {
+          "number": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "function": { "type": "string", "minLength": 10 },
+          "structure": { "type": "string", "minLength": 15 },
+          "context": { "type": "string", "minLength": 20 },
+          "chunk_examples": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 8,
+            "items": { "type": "string", "minLength": 5 }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "classification_cards": {
+      "type": "object",
+      "description": "Set de tarjetas para Actividad 1 (clasificación frase → función). Canon: 15 tarjetas, 3 por función.",
+      "required": ["title", "cards"],
+      "properties": {
+        "title": { "type": "string", "minLength": 10 },
+        "note": { "type": "string" },
+        "cards": {
+          "type": "array",
+          "minItems": 10,
+          "maxItems": 20,
+          "items": {
+            "type": "object",
+            "required": ["card", "phrase", "function"],
+            "properties": {
+              "card": { "type": "integer", "minimum": 1 },
+              "phrase": { "type": "string", "minLength": 10 },
+              "function": {
+                "type": "string",
+                "pattern": "^F[1-5]$"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "estimation_scale": {
+      "type": "object",
+      "description": "Escala de estimación del producto oral integrado (5 funciones). Canon: 5 criterios × 1 pt = 5 pts.",
+      "required": ["instrument", "scale", "total_points", "criteria"],
+      "properties": {
+        "instrument": {
+          "type": "string",
+          "pattern": "^Escala de estimación No [0-9]+$"
+        },
+        "scale": { "type": "string", "minLength": 10 },
+        "total_points": { "type": "integer", "const": 5 },
+        "evaluation_mode": { "type": "string" },
+        "criteria": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": ["number", "criterion", "weight"],
+            "properties": {
+              "number": { "type": "integer", "minimum": 1, "maximum": 5 },
+              "criterion": { "type": "string", "minLength": 20 },
+              "weight": { "type": "integer", "const": 1 }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["language_functions", "classification_cards", "estimation_scale"],
+  "unevaluatedProperties": false
+}

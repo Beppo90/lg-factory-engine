@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/common/pm0-protocol.schema.json",
+  "title": "PM-0 Protocol — Campo Estándar de Facilitación Pedagógica por Sesión",
+  "description": "Protocolo obligatorio en cada pm-3-2-sX. Conecta PM-0 §5.1-§5.13 con la sesión específica. Script canónico de referencia (v2.1 DIESEL G1): pm-3-2-pm0-patch.js. Decisión arquitectónica DM v2.1 §5 Principio 5: ningún Build-Out está completo sin este campo.",
+  "type": "object",
+  "required": [
+    "grammar_groups",
+    "feedback",
+    "l1_management",
+    "stress_pronunciation",
+    "success_vocabulary"
+  ],
+  "properties": {
+    "grammar_groups": {
+      "type": "object",
+      "description": "Grupos del silabus gramatical PM-0 §2 activos en esta sesión con su estado (Intro / Consolida / Aplica)",
+      "required": ["intro", "consolida", "aplica"],
+      "properties": {
+        "intro": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Grupos gramaticales introducidos por primera vez"
+        },
+        "consolida": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Grupos trabajados previamente que se consolidan"
+        },
+        "aplica": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Grupos ya consolidados que se aplican sin instrucción explícita"
+        }
+      },
+      "additionalProperties": false
+    },
+    "feedback": {
+      "type": "object",
+      "description": "Modo dominante de feedback + técnicas específicas",
+      "required": ["modo_dominante", "accuracy_tecnicas", "fluency_tecnicas"],
+      "properties": {
+        "modo_dominante": {
+          "type": "string",
+          "enum": ["accuracy", "fluency", "mixed"],
+          "description": "accuracy = precisión formal; fluency = fluidez comunicativa; mixed = balance"
+        },
+        "accuracy_tecnicas": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Ej. recast, elicitation, metalingüística, clarification request"
+        },
+        "fluency_tecnicas": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Ej. scaffolded prompting, paraphrasing, topic extension"
+        }
+      },
+      "additionalProperties": false
+    },
+    "l1_management": {
+      "type": "object",
+      "description": "Política de uso del español (L1) en la sesión",
+      "required": [
+        "porcentaje_l1",
+        "english_zone",
+        "usos_legitimos",
+        "estrategia_reduccion"
+      ],
+      "properties": {
+        "porcentaje_l1": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 60,
+          "description": "Porcentaje sugerido de uso del español — decrece progresivamente de A1.1 a B1.2"
+        },
+        "english_zone": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Zona o momento de la sesión con uso exclusivo de inglés"
+        },
+        "usos_legitimos": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Usos aceptables de L1 (ej. aclaración conceptual técnica, afecto, instrucciones de seguridad)"
+        },
+        "estrategia_reduccion": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Cómo se reduce progresivamente L1 hacia el final de la sesión o guía"
+        }
+      },
+      "additionalProperties": false
+    },
+    "stress_pronunciation": {
+      "type": "object",
+      "description": "Noticing de stress y técnicas de pronunciación de PM-0 §5.9",
+      "required": ["palabras_foco", "tecnicas_fisicas", "marcado_tablero"],
+      "properties": {
+        "palabras_foco": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 3,
+          "description": "Palabras de la sesión con stress trabajado explícitamente"
+        },
+        "tecnicas_fisicas": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Ej. palmada, salto, choque de manos, movimiento de cabeza"
+        },
+        "marcado_tablero": {
+          "type": "string",
+          "minLength": 5,
+          "description": "Convención visual para marcar stress en el tablero (ej. círculo sobre sílaba, mayúscula, subrayado)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "success_vocabulary": {
+      "type": "object",
+      "description": "Vocabulario trabajado con factores SUCCESS (PM-0 §5.10-§5.11)",
+      "required": ["terminos_target", "factores_success"],
+      "properties": {
+        "terminos_target": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 3,
+          "description": "Términos del vocabulario sesional"
+        },
+        "factores_success": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 2,
+          "description": "Factores SUCCESS aplicados — Spelling, Use, Collocations, Connotations, Exemplification, Synonyms/Antonyms, Stress (o variantes del marco docente)"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/common/sena-fase.schema.json",
+  "title": "Fase SENA — Ciclo Pedagógico",
+  "description": "Fases del ciclo pedagógico SENA aplicadas a sesiones de 1 RAP (8 sesiones × 60h). Mapeo típico: S1=Reflexión Inicial+Contextualización; S2-S5=Apropiación; S6=Evaluación; S6½-S8=Transferencia.",
+  "type": "string",
+  "enum": [
+    "Reflexión Inicial",
+    "Contextualización",
+    "Apropiación",
+    "Evaluación",
+    "Transferencia"
+  ]
+}

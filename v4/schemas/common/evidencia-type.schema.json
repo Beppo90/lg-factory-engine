@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/common/evidencia-type.schema.json",
+  "title": "Evidencia Formal — 6 Tipos Canónicos",
+  "description": "Las 6 evidencias formales obligatorias por RAP. E1-E5 = 5 pts c/u (formativo, skills lingüísticas). E6 = 25 pts (cuestionario consolidado S6, 5 skills × 5 items × 1 pt). Total de evidencias = 50 pts; con Misión Final (5 pts) = 55 pts (canon v2.1).",
+  "type": "object",
+  "required": ["codigo", "habilidad", "sesion_destino", "puntaje", "tipo"],
+  "properties": {
+    "codigo": {
+      "type": "string",
+      "enum": ["E1", "E2", "E3", "E4", "E5", "E6"],
+      "description": "E1=Reading, E2=Writing, E3=Listening, E4=Speaking, E5=Language Functions, E6=Cuestionario Consolidado"
+    },
+    "habilidad": {
+      "type": "string",
+      "enum": [
+        "Reading",
+        "Writing",
+        "Listening",
+        "Speaking",
+        "Language Functions",
+        "Knowledge"
+      ]
+    },
+    "sesion_destino": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 6,
+      "description": "Sesión donde se genera la evidencia (S2-S5 apropiación; S6 evaluación)"
+    },
+    "puntaje": {
+      "type": "integer",
+      "enum": [5, 25],
+      "description": "5 pts para E1-E5; 25 pts para E6"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": ["Conocimiento", "Desempeño", "Producto"],
+      "description": "Tipificación SENA: Conocimiento (cognitivo), Desempeño (procedimental observable), Producto (artefacto tangible)"
+    },
+    "instrumento": {
+      "type": "string",
+      "enum": [
+        "Lista de Chequeo",
+        "Rúbrica",
+        "Cuestionario",
+        "Escala de Valoración"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

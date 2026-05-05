@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/common/cefr-level.schema.json",
+  "title": "CEFR Level — FPI SENA Subniveles",
+  "description": "Enum de subniveles CEFR operativos en el marco PM-0 §6. Rango A1.1 (inicial técnico) a B1.2 (avanzado tecnológico). Fuente: PM-0 CEFR Framework.",
+  "type": "string",
+  "enum": [
+    "A1.1",
+    "A1.2",
+    "A1.3",
+    "A2.0",
+    "A2.1",
+    "A2.2",
+    "B1.0",
+    "B1.1",
+    "B1.2"
+  ]
+}

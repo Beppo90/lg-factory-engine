@@ -1,0 +1,364 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-3-1.schema.json",
+  "title": "PM-3.1 — Designer Playbook Outline + GFPI-F-134 Row (v4.0)",
+  "description": "Designer pivot v4.0: absorbe PM-2.11 (GFPI-F-134 Row Assembler) y se convierte en documento pedagógico único del DISEÑADOR. Contiene: (1) session map de 8 sesiones con set_up/while/wrap_up/logistics_box, (2) skills progression map, (3) autonomous work map, (4) master materials list, (5) voc_dimensions_table (V+O+C), (6) ambientes_resumen + estrategias_resumen, (7) gfpi_f134_row (11 columnas), (8) validation_report (G5 checks), (9) trazabilidad (fuentes PM-1.2 / PMs-2.x / destinos PM-3.2/3.6/4.1/4.2).",
+  "type": "object",
+  "required": [
+    "pm_id",
+    "run_id",
+    "guide",
+    "generated_at",
+    "model",
+    "status",
+    "header",
+    "overview_table",
+    "sessions_detail",
+    "skills_progression_map",
+    "autonomous_work_map",
+    "master_materials_list",
+    "totals",
+    "voc_dimensions_table",
+    "ambientes_resumen",
+    "estrategias_resumen",
+    "gfpi_f134_row",
+    "validation_report",
+    "trazabilidad"
+  ],
+  "properties": {
+    "pm_id": { "type": "string", "const": "PM-3.1" },
+    "run_id": { "$ref": "common/run-id.schema.json" },
+    "guide": { "type": "string", "minLength": 3 },
+    "generated_at": { "type": "string" },
+    "model": { "type": "string", "minLength": 3 },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "pending", "pending_review", "approved", "completed", "locked"]
+    },
+    "header": {
+      "type": "object",
+      "required": ["programa", "tipo", "guia_numero", "guia_nombre", "cefr_level", "intensidad_total_horas", "horas_directa", "horas_autonoma", "sesiones_total", "duracion_sesion_min"],
+      "properties": {
+        "programa": { "type": "string", "minLength": 5 },
+        "tipo": { "type": "string", "enum": ["Técnico", "Tecnológico"] },
+        "guia_numero": { "type": "integer", "minimum": 1 },
+        "guia_nombre": { "type": "string", "minLength": 5 },
+        "cefr_level": { "$ref": "common/cefr-level.schema.json" },
+        "intensidad_total_horas": { "type": "integer", "minimum": 30, "maximum": 120 },
+        "horas_directa": { "type": "number", "minimum": 20 },
+        "horas_autonoma": { "type": "number", "minimum": 0 },
+        "sesiones_total": { "type": "integer", "minimum": 6, "maximum": 10 },
+        "duracion_sesion_min": { "type": "integer", "minimum": 120 },
+        "nota": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "overview_table": {
+      "type": "array",
+      "description": "Tabla resumen de 8 sesiones — fila por sesión con worksheets, foco, habilidades, autonomo.",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["session", "nombre", "worksheets", "foco", "habilidades", "autonomo"],
+        "properties": {
+          "session": { "type": "integer", "minimum": 1, "maximum": 8 },
+          "nombre": { "type": "string", "minLength": 5 },
+          "worksheets": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+          "foco": { "type": "string", "minLength": 20 },
+          "habilidades": { "type": "string" },
+          "autonomo": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "sessions_detail": {
+      "type": "array",
+      "description": "Session playbook detallado: set_up / while (bloques) / wrap_up / logistics_box por sesión.",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["session", "nombre", "duracion_min", "set_up", "while", "wrap_up", "logistics_box"],
+        "properties": {
+          "session": { "type": "integer", "minimum": 1, "maximum": 8 },
+          "nombre": { "type": "string", "minLength": 5 },
+          "worksheets": { "type": "array", "items": { "type": "string" } },
+          "duracion_min": { "type": "integer", "minimum": 120 },
+          "habilidades_foco": { "oneOf": [ { "type": "string" }, { "type": "array", "items": { "type": "string" } } ] },
+          "habilidades_soporte": { "oneOf": [ { "type": "string" }, { "type": "array", "items": { "type": "string" } } ] },
+          "set_up": {
+            "type": "object",
+            "required": ["duracion_min", "warm_up", "objective", "teacher_talk"],
+            "properties": {
+              "duracion_min": { "type": "integer", "minimum": 5 },
+              "warm_up": { "type": "string", "minLength": 30 },
+              "objective": { "type": "string", "minLength": 30 },
+              "teacher_talk": { "type": "string", "minLength": 30 }
+            },
+            "additionalProperties": false
+          },
+          "while": {
+            "type": "object",
+            "required": ["duracion_min", "bloques"],
+            "properties": {
+              "duracion_min": { "type": "integer", "minimum": 60 },
+              "bloques": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 8,
+                "items": {
+                  "type": "object",
+                  "required": ["letra", "duracion_min", "actividad", "agrupacion", "instruccion"],
+                  "properties": {
+                    "letra": { "type": "string", "pattern": "^[A-F]$" },
+                    "duracion_min": { "type": "integer", "minimum": 10 },
+                    "actividad": { "type": "string", "minLength": 30 },
+                    "agrupacion": { "type": "string" },
+                    "instruccion": { "type": "string", "minLength": 30 }
+                  },
+                  "additionalProperties": true
+                }
+              },
+              "transiciones": { "type": "array", "items": { "type": "string" } }
+            },
+            "additionalProperties": false
+          },
+          "wrap_up": {
+            "type": "object",
+            "required": ["duracion_min", "exit_ticket", "teacher_talk"],
+            "properties": {
+              "duracion_min": { "type": "integer", "minimum": 5 },
+              "exit_ticket": { "type": "string", "minLength": 20 },
+              "teacher_talk": { "type": "string", "minLength": 20 }
+            },
+            "additionalProperties": true
+          },
+          "logistics_box": {
+            "type": "object",
+            "required": ["worksheets", "materiales", "agrupacion", "plan_b", "ambiente", "momento_sena", "estrategia", "tecnicas"],
+            "properties": {
+              "worksheets": { "type": "array", "items": { "type": "string" } },
+              "materiales": { "type": "array", "items": { "type": "string" } },
+              "agrupacion": { "type": "string" },
+              "recursos_canva": { "oneOf": [ { "type": "string" }, { "type": "array", "items": { "type": "string" } } ] },
+              "plan_b": { "type": "string", "minLength": 20 },
+              "ambiente": { "type": "string", "minLength": 20 },
+              "momento_sena": {
+                "type": "string",
+                "pattern": "^3\\.[1-4]"
+              },
+              "estrategia": { "type": "string", "minLength": 10 },
+              "justificacion": { "type": "string" },
+              "tecnicas": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["bloque", "tecnica"],
+                  "properties": {
+                    "bloque": { "type": "string", "pattern": "^[A-F]$" },
+                    "actividad": { "type": "string" },
+                    "tecnica": { "type": "string" }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "skills_progression_map": {
+      "type": "array",
+      "description": "Progresión de 7 skills por sesión (R/L/V/P/G/W/S).",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["session", "R", "L", "V", "P", "G", "W", "S"],
+        "properties": {
+          "session": { "type": "integer", "minimum": 1, "maximum": 8 },
+          "R": { "type": "string" },
+          "L": { "type": "string" },
+          "V": { "type": "string" },
+          "P": { "type": "string" },
+          "G": { "type": "string" },
+          "W": { "type": "string" },
+          "S": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "autonomous_work_map": {
+      "type": "array",
+      "description": "Mapa de trabajo autónomo: actividad asignada en sesión X, revisada en sesión Y.",
+      "minItems": 6,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["asignado_en", "actividad", "tiempo_min"],
+        "properties": {
+          "asignado_en": { "type": "string", "pattern": "^S[0-9]+(\\.[0-9]+)?$" },
+          "revisado_en": { "type": "string" },
+          "actividad": { "type": "string", "minLength": 20 },
+          "workbook_ref": { "type": "string" },
+          "tiempo_min": { "type": "integer", "minimum": 30 }
+        },
+        "additionalProperties": true
+      }
+    },
+    "master_materials_list": {
+      "type": "object",
+      "description": "Lista maestra de materiales agregada de todas las sesiones.",
+      "required": ["impresos", "digitales", "equipamiento", "aula"],
+      "properties": {
+        "impresos": { "type": "array", "items": { "type": "string" } },
+        "digitales": { "type": "array", "items": { "type": "string" } },
+        "equipamiento": { "type": "array", "items": { "type": "string" } },
+        "aula": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "totals": {
+      "type": "object",
+      "required": ["direct_hours", "autonomous_hours", "sessions", "session_duration_min", "total_hours"],
+      "properties": {
+        "direct_hours": { "type": "number", "minimum": 20 },
+        "autonomous_hours": { "type": "number", "minimum": 0 },
+        "sessions": { "type": "integer", "const": 8 },
+        "session_duration_min": { "type": "integer", "minimum": 120 },
+        "total_hours": { "type": "integer", "minimum": 30 }
+      },
+      "additionalProperties": false
+    },
+    "notes": { "type": "array", "items": { "type": "string" } },
+    "rap_status": { "type": "string" },
+    "voc_dimensions_table": {
+      "type": "array",
+      "description": "Tabla V+O+C canónica — 3 dimensiones SENA (cognitiva/procedimental/actitudinal) por sesión.",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["session", "nombre", "cognitiva", "procedimental", "actitudinal"],
+        "properties": {
+          "session": { "type": "integer", "minimum": 1, "maximum": 8 },
+          "nombre": { "type": "string", "minLength": 5 },
+          "cognitiva": { "type": "string", "minLength": 30 },
+          "procedimental": { "type": "string", "minLength": 30 },
+          "actitudinal": { "type": "string", "minLength": 30 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "voc_dimensions_note": { "type": "string" },
+    "ambientes_resumen": {
+      "type": "object",
+      "required": ["nota", "tipo_ambiente", "recursos_fijos"],
+      "properties": {
+        "nota": { "type": "string", "minLength": 30 },
+        "tipo_ambiente": { "type": "string", "minLength": 10 },
+        "recursos_fijos": { "type": "array", "items": { "type": "string" }, "minItems": 3 },
+        "recursos_variables_por_sesion": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "estrategias_resumen": {
+      "type": "object",
+      "required": ["nota", "ciclo_sena"],
+      "properties": {
+        "nota": { "type": "string", "minLength": 30 },
+        "ciclo_sena": {
+          "type": "object",
+          "required": ["3.1_reflexion_inicial", "3.2_contextualizacion", "3.3_apropiacion", "3.4_transferencia"],
+          "properties": {
+            "3.1_reflexion_inicial": { "type": "string" },
+            "3.2_contextualizacion": { "type": "string" },
+            "3.3_apropiacion": { "type": "string" },
+            "3.4_transferencia": { "type": "string" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "gfpi_f134_row": {
+      "type": "object",
+      "description": "Fila GFPI-F-134 completa (11 columnas) — absorbido desde PM-2.11 en v4.0.",
+      "required": [
+        "col_1_competencia",
+        "col_2_rap",
+        "col_3_saberes_conceptos_principios",
+        "col_4_saberes_proceso",
+        "col_5_criterios_evaluacion",
+        "col_6_actividades_aprendizaje",
+        "col_7_duracion_horas",
+        "col_8_evidencias_aprendizaje",
+        "col_9_tecnicas_instrumentos_evaluacion",
+        "col_10_ambientes_aprendizaje",
+        "col_11_observaciones"
+      ],
+      "properties": {
+        "col_1_competencia": { "type": "object" },
+        "col_2_rap": { "type": "object" },
+        "col_3_saberes_conceptos_principios": { "type": "array", "minItems": 4 },
+        "col_4_saberes_proceso": { "type": "array", "minItems": 4 },
+        "col_5_criterios_evaluacion": { "type": "array", "minItems": 4 },
+        "col_6_actividades_aprendizaje": { "type": "array", "minItems": 5 },
+        "col_7_duracion_horas": { "type": "object" },
+        "col_8_evidencias_aprendizaje": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "description": "Canon v4.0: exactamente 6 evidencias (E1-E5 formativas × 5 pts + E6 Quiz Consolidado × 25 pts)."
+        },
+        "col_9_tecnicas_instrumentos_evaluacion": { "type": "array", "minItems": 5 },
+        "col_10_ambientes_aprendizaje": { "type": "array", "minItems": 3 },
+        "col_11_observaciones": { "type": "string", "minLength": 50 }
+      },
+      "additionalProperties": false
+    },
+    "validation_report": {
+      "type": "object",
+      "description": "Reporte G5 de validación del ensamblaje — absorbido desde PM-2.11.",
+      "required": ["rap_id", "rap_name", "checks", "overall_passed", "overall_status"],
+      "properties": {
+        "rap_id": { "type": "string" },
+        "rap_name": { "type": "string" },
+        "cefr_level": { "type": "string" },
+        "assembly_date": { "type": "string" },
+        "assembled_by": { "type": "string" },
+        "checks": {
+          "oneOf": [
+            { "type": "array", "minItems": 5 },
+            { "type": "object", "minProperties": 5 }
+          ]
+        },
+        "overall_passed": { "type": "boolean" },
+        "overall_status": { "type": "string" },
+        "warnings": { "type": "array" },
+        "errors": { "type": "array" },
+        "recommendation": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "trazabilidad": {
+      "type": "object",
+      "description": "Trazabilidad de fuentes/destinos — desde PM-1.2 y PMs-2.x hacia PM-3.2/3.6/4.1/4.2. Absorbido desde PM-2.11.",
+      "required": ["fuentes_pm_12", "fuentes_pms_2x", "destino_pm_31"],
+      "properties": {
+        "fuentes_pm_12": { "oneOf": [ { "type": "object" }, { "type": "array" } ] },
+        "fuentes_pms_2x": { "oneOf": [ { "type": "object" }, { "type": "array" } ] },
+        "pms_deprecated": { "type": "array" },
+        "destino_pm_31": { "type": "string" },
+        "destino_pm_41": { "type": "string" },
+        "destino_pm_42": { "type": "string" },
+        "destino_pm_36": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

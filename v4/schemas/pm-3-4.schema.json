@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-3-4.schema.json",
+  "title": "PM-3.4 — Workbook · Autonomous Work (v4.0)",
+  "description": "Workbook NEW en v4.0 — material de trabajo autónomo del aprendiz. 8 capítulos (1 por sesión). Cada capítulo sigue la estructura canónica de 3 secciones alineadas al Principio 3 del DM (Tres Versiones del Mismo Contenido Lingüístico): REINFORCE (refuerzo de Apropiación de esa sesión) + EXTEND (extensión HOTS Bloom L4-6 sobre el mismo contenido) + PREPARE (pre-activación flipped de la sesión siguiente). Cruza arquetipos de PM-2.x vía $ref a activity-card.schema.json. Deriva del Playbook (PM-3.2) + learner guide (PM-3.6). No genera evidencia formal — es autónomo.",
+  "type": "object",
+  "required": [
+    "pm_id",
+    "run_id",
+    "guide",
+    "generated_at",
+    "status",
+    "header",
+    "chapters"
+  ],
+  "properties": {
+    "pm_id": { "type": "string", "const": "PM-3.4" },
+    "run_id": { "type": "string", "minLength": 3 },
+    "guide": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "model": { "type": "string" },
+    "status": { "type": "string" },
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "header": {
+      "type": "object",
+      "required": ["programa", "guia_numero", "guia_nombre", "cefr", "total_horas_autonomas"],
+      "properties": {
+        "programa": { "type": "string", "minLength": 5 },
+        "tipo_programa": { "type": "string", "enum": ["Técnico", "Tecnológico"] },
+        "guia_numero": {
+          "oneOf": [
+            { "type": "integer", "minimum": 1, "maximum": 20 },
+            { "type": "string" }
+          ]
+        },
+        "guia_nombre": { "type": "string", "minLength": 5 },
+        "cefr": { "type": "string", "pattern": "^[ABC][12](\\.[0-9])?$" },
+        "total_horas_autonomas": {
+          "description": "Canon: 12h autónomas por guía (distribuidas en 8 capítulos ≈ 1.5h/sesión).",
+          "oneOf": [
+            { "type": "integer", "minimum": 6, "maximum": 24 },
+            { "type": "string" }
+          ]
+        },
+        "total_chapters": {
+          "type": "integer",
+          "const": 8,
+          "description": "Canon: 8 capítulos (1 por sesión S1..S8)."
+        },
+        "rap_code": { "type": "string" },
+        "gfpi_ref": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "introduction": {
+      "description": "Nota introductoria al aprendiz sobre cómo usar el workbook.",
+      "oneOf": [
+        { "type": "string", "minLength": 50 },
+        { "type": "object", "additionalProperties": true }
+      ]
+    },
+    "chapters": {
+      "type": "array",
+      "description": "Canon: exactamente 8 capítulos (1 por sesión S1-S8). Cada capítulo: reinforce + extend + prepare.",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["chapter_number", "session", "session_name", "reinforce", "extend", "prepare"],
+        "properties": {
+          "chapter_number": { "type": "integer", "minimum": 1, "maximum": 8 },
+          "session": {
+            "oneOf": [
+              { "type": "integer", "minimum": 1, "maximum": 8 },
+              { "type": "string", "minLength": 1 }
+            ]
+          },
+          "session_name": { "type": "string", "minLength": 5 },
+          "habilidades_foco_sesion": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "duracion_autonoma_min": {
+            "type": "integer",
+            "minimum": 30,
+            "maximum": 180,
+            "description": "Canon: ~90 min por capítulo (1.5h autónomas)."
+          },
+          "reinforce": {
+            "type": "object",
+            "description": "Sección REINFORCE — refuerzo directo de Apropiación. Mismo arquetipo que la sesión, con ejercicios de baja-media dificultad (Bloom L1-3).",
+            "required": ["title", "activities"],
+            "properties": {
+              "title": { "type": "string", "minLength": 5 },
+              "instructions_es": { "type": "string" },
+              "instructions_en": { "type": "string" },
+              "duracion_min": { "type": "integer", "minimum": 10, "maximum": 90 },
+              "activities": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 8,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          "extend": {
+            "type": "object",
+            "description": "Sección EXTEND — extensión HOTS (Bloom L4-6) sobre el mismo contenido de Apropiación. Tareas de aplicación, análisis, evaluación, creación.",
+            "required": ["title", "activities"],
+            "properties": {
+              "title": { "type": "string", "minLength": 5 },
+              "instructions_es": { "type": "string" },
+              "instructions_en": { "type": "string" },
+              "duracion_min": { "type": "integer", "minimum": 10, "maximum": 90 },
+              "bloom_level_target": {
+                "type": "string",
+                "pattern": "^L[4-6]",
+                "description": "Canon: L4 (Analyze) | L5 (Evaluate) | L6 (Create)."
+              },
+              "activities": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 8,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          "prepare": {
+            "type": "object",
+            "description": "Sección PREPARE — pre-activación flipped de la sesión siguiente. Micro-input + pregunta de reflexión. Activa schema del aprendiz antes de la próxima clase. El último capítulo (S8) puede preparar para la guía siguiente o dejarse como síntesis.",
+            "required": ["title"],
+            "properties": {
+              "title": { "type": "string", "minLength": 5 },
+              "target_session": {
+                "oneOf": [
+                  { "type": "integer", "minimum": 2, "maximum": 9 },
+                  { "type": "string" },
+                  { "type": "null" }
+                ]
+              },
+              "instructions_es": { "type": "string" },
+              "instructions_en": { "type": "string" },
+              "duracion_min": { "type": "integer", "minimum": 5, "maximum": 30 },
+              "pre_activation": {
+                "oneOf": [
+                  { "type": "string" },
+                  { "type": "object", "additionalProperties": true }
+                ]
+              },
+              "reflection_question": {
+                "oneOf": [
+                  { "type": "string" },
+                  { "type": "array", "items": { "type": "string" } }
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "answer_key": {
+            "description": "Claves de respuesta del capítulo (opcional para versión instructor).",
+            "oneOf": [
+              { "type": "array" },
+              { "type": "object", "additionalProperties": true }
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "consolidated_answer_key": {
+      "description": "Claves consolidadas de los 8 capítulos (versión instructor).",
+      "oneOf": [
+        { "type": "array" },
+        { "type": "object", "additionalProperties": true }
+      ]
+    },
+    "derivation_source": {
+      "type": "object",
+      "description": "Trazabilidad: qué documentos upstream alimentaron este workbook.",
+      "properties": {
+        "playbook_ref": { "type": "string", "description": "Canon: 'pm-3-2-s1..s8'" },
+        "learner_guide_ref": { "type": "string", "description": "Canon: 'pm-3-6'" },
+        "activity_cards_ref": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Referencias a activity_cards de PM-2.x consumidas."
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

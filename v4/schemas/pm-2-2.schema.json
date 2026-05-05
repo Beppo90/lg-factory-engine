@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-2-2.schema.json",
+  "title": "PM-2.2 — Gap Analysis · Contextualización (v4.0)",
+  "description": "Segundo PM de Fase 2 en S1 (tras PM-2.1 Spark). Diagnóstico del grupo — mapea conocimiento previo del aprendiz sobre vocabulario técnico, procedimientos de taller, funciones comunicativas, autopercepción frente a los RAPs de la guía. No genera evidencia formal. Bloom L1-L2. Extiende pm-2-x-base y agrega: gap_card_statements (I can statements autoevaluados), kwl_columns (K-W-L), diagnostic_images (set visual de errores/escenarios), peer_interview_script (5-7 preguntas guía), structures_target_preview (estructuras que emergerán S2+).",
+  "allOf": [
+    { "$ref": "common/pm-2-x-base.schema.json" }
+  ],
+  "type": "object",
+  "properties": {
+    "gap_card_statements": {
+      "type": "array",
+      "description": "I can statements autoevaluados por el aprendiz en escala 1-5. Cubren el perfil de salida completo de la guía.",
+      "minItems": 4,
+      "maxItems": 10,
+      "items": {
+        "type": "string",
+        "pattern": "^I can .+",
+        "minLength": 25
+      }
+    },
+    "kwl_columns": {
+      "type": "object",
+      "description": "Columnas del organizador KWL (Know-Want-Learned). L se completa al final de la guía (S8).",
+      "required": ["K_know", "W_want", "L_learned"],
+      "properties": {
+        "K_know": { "type": "string", "minLength": 20 },
+        "W_want": { "type": "string", "minLength": 20 },
+        "L_learned": { "type": "string", "minLength": 20 }
+      },
+      "additionalProperties": false
+    },
+    "diagnostic_images": {
+      "type": "array",
+      "description": "Set de imágenes de diagnóstico visual. Cada imagen modela errores o escenarios técnicos para activar descripción espontánea.",
+      "minItems": 3,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["id", "descripcion", "errores_target", "estructura_modelo"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^IMG-[0-9]{2}$",
+            "description": "ID del recurso visual (IMG-01, IMG-02, ...)"
+          },
+          "descripcion": { "type": "string", "minLength": 20 },
+          "errores_target": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 5 },
+            "minItems": 1,
+            "description": "Errores o elementos clave que el aprendiz debe identificar"
+          },
+          "estructura_modelo": {
+            "type": "string",
+            "minLength": 15,
+            "description": "Frame sentence con blanks para guiar producción del aprendiz"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "peer_interview_script": {
+      "type": "array",
+      "description": "Guión de entrevista entre pares — preguntas en inglés que el aprendiz hace a un compañero para diagnosticar conocimiento compartido.",
+      "minItems": 3,
+      "maxItems": 10,
+      "items": {
+        "type": "string",
+        "minLength": 15,
+        "pattern": "\\?$"
+      }
+    },
+    "structures_target_preview": {
+      "type": "array",
+      "description": "Estructuras gramaticales que emergen naturalmente en el diagnóstico y se consolidan en S2+. Son preview no evaluado.",
+      "minItems": 2,
+      "maxItems": 10,
+      "items": { "type": "string", "minLength": 15 }
+    }
+  },
+  "required": [
+    "gap_card_statements",
+    "kwl_columns",
+    "diagnostic_images",
+    "peer_interview_script"
+  ],
+  "unevaluatedProperties": false
+}

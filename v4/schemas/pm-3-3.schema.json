@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-3-3.schema.json",
+  "title": "PM-3.3 — Canva Deck · Visual Support (v4.0)",
+  "description": "Especificación completa del deck visual (Canva + PowerPoint) derivado del Playbook. Dual-input: se alimenta de pm-3-2 (slides por sesión) + pm-3-6 (learner guide para cover/overview). Contiene: design_system (paleta institucional SENA verde #39A900 + azul #0B2E45), design_rules (10 reglas tipográficas/visuales), slides (45+ slides canónicos), slide_index (agrupación por sesión S1..S8), evidence_slides (E1-E6 dedicados), reusable_slides (overview, communication_map, word_wall), image_guide (fuentes + assets requeridos).",
+  "type": "object",
+  "required": [
+    "_meta",
+    "design_system",
+    "design_rules",
+    "slides",
+    "slide_index",
+    "evidence_slides",
+    "reusable_slides",
+    "image_guide"
+  ],
+  "properties": {
+    "_meta": {
+      "type": "object",
+      "required": ["schema_version", "run_id", "guide", "total_slides"],
+      "properties": {
+        "schema_version": { "type": "string" },
+        "generated_at": { "type": "string", "format": "date-time" },
+        "run_id": { "type": "string", "minLength": 3 },
+        "model": { "type": "string" },
+        "status": { "type": "string" },
+        "guide": { "type": "string" },
+        "program": { "type": "string" },
+        "cefr": { "type": "string", "pattern": "^[ABC][12](\\.[0-9])?$" },
+        "total_slides": { "type": "integer", "minimum": 20, "maximum": 80 },
+        "platform_note": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "design_system": {
+      "type": "object",
+      "required": ["colors", "fonts"],
+      "description": "Sistema de diseño canónico SENA (paleta verde #39A900 + azul #0B2E45 per CLAUDE v2.6.6).",
+      "properties": {
+        "colors": {
+          "type": "object",
+          "description": "Paleta institucional. Canon: primary SENA green (#39A900), secondary SENA blue (#0B2E45), accent, background, text.",
+          "additionalProperties": true
+        },
+        "fonts": { "type": "object", "additionalProperties": true },
+        "font_sizes": { "type": "object", "additionalProperties": true },
+        "logo": { "type": "object", "additionalProperties": true },
+        "accessibility": { "type": "object", "additionalProperties": true },
+        "master_layouts": {
+          "oneOf": [
+            { "type": "array" },
+            { "type": "object" }
+          ]
+        },
+        "canva_setup": { "type": "object", "additionalProperties": true },
+        "powerpoint_setup": { "type": "object", "additionalProperties": true }
+      },
+      "additionalProperties": true
+    },
+    "design_rules": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 30,
+      "items": {
+        "oneOf": [
+          { "type": "string", "minLength": 10 },
+          { "type": "object", "additionalProperties": true }
+        ]
+      }
+    },
+    "slides": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 80,
+      "description": "Slides del deck. Canon: 45+ slides cubriendo cover + S1..S8 + evidencias + closing.",
+      "items": {
+        "type": "object",
+        "required": ["slide_number"],
+        "properties": {
+          "slide_number": {
+            "oneOf": [
+              { "type": "integer", "minimum": 1 },
+              { "type": "string", "minLength": 1 }
+            ]
+          },
+          "slide_id": { "type": "string" },
+          "session": {
+            "oneOf": [
+              { "type": "integer" },
+              { "type": "string" }
+            ]
+          },
+          "title": { "type": "string" },
+          "layout": { "type": "string" },
+          "type": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "slide_index": {
+      "type": "object",
+      "description": "Índice de slides agrupados por sección. Canon: cover_overview + s1..s6a + s6b_s7_s8 + closing.",
+      "required": ["s1", "s2", "s3", "s4", "s5"],
+      "properties": {
+        "cover_overview": {
+          "oneOf": [
+            { "type": "array", "items": { "type": ["integer", "string"] } },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "s1": {
+          "oneOf": [
+            { "type": "array", "items": { "type": ["integer", "string"] } },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "s2": {
+          "oneOf": [
+            { "type": "array", "items": { "type": ["integer", "string"] } },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "s3": {
+          "oneOf": [
+            { "type": "array", "items": { "type": ["integer", "string"] } },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "s4": {
+          "oneOf": [
+            { "type": "array", "items": { "type": ["integer", "string"] } },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "s5": {
+          "oneOf": [
+            { "type": "array", "items": { "type": ["integer", "string"] } },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "s6a": {
+          "oneOf": [
+            { "type": "array", "items": { "type": ["integer", "string"] } },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "s6b_s7_s8": {
+          "oneOf": [
+            { "type": "array", "items": { "type": ["integer", "string"] } },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "closing": {
+          "oneOf": [
+            { "type": "array", "items": { "type": ["integer", "string"] } },
+            { "type": "object", "additionalProperties": true }
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "evidence_slides": {
+      "type": "object",
+      "description": "Slides dedicados a las 6 evidencias canónicas E1-E6.",
+      "required": [
+        "E1_reading",
+        "E2_writing",
+        "E3_listening",
+        "E4_speaking",
+        "E5_language_functions",
+        "E6_cuestionario"
+      ],
+      "properties": {
+        "E1_reading": {
+          "oneOf": [
+            { "type": "integer" },
+            { "type": "string" },
+            { "type": "array" },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "E2_writing": {
+          "oneOf": [
+            { "type": "integer" },
+            { "type": "string" },
+            { "type": "array" },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "E3_listening": {
+          "oneOf": [
+            { "type": "integer" },
+            { "type": "string" },
+            { "type": "array" },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "E4_speaking": {
+          "oneOf": [
+            { "type": "integer" },
+            { "type": "string" },
+            { "type": "array" },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "E5_language_functions": {
+          "oneOf": [
+            { "type": "integer" },
+            { "type": "string" },
+            { "type": "array" },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "E6_cuestionario": {
+          "oneOf": [
+            { "type": "integer" },
+            { "type": "string" },
+            { "type": "array" },
+            { "type": "object", "additionalProperties": true }
+          ]
+        },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "reusable_slides": {
+      "type": "object",
+      "description": "Slides reutilizables a lo largo del deck (overview, communication_map, word_wall).",
+      "additionalProperties": true
+    },
+    "image_guide": {
+      "type": "object",
+      "required": ["sources", "required_images"],
+      "properties": {
+        "sources": {
+          "oneOf": [
+            { "type": "array" },
+            { "type": "object" }
+          ]
+        },
+        "required_images": {
+          "oneOf": [
+            { "type": "array" },
+            { "type": "object" }
+          ]
+        },
+        "style": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "object", "additionalProperties": true }
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

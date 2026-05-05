@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-2-5.schema.json",
+  "title": "PM-2.5 — Vocabulary, Literacy & Scenario Setup (v4.0)",
+  "description": "PM de Apropiación (S2). Pre-activación léxica del Toolbelt de 20 términos técnicos canónicos de la guía + literacy scaffolding. NO genera evidencia standalone (contributes_to_consolidated_quiz:true → aporta 5 pts al Quiz S6 skill Vocabulary). Extiende pm-2-x-base y agrega: vocabulary_toolbelt (categories + stress_map del universo de ESA guía).",
+  "allOf": [
+    { "$ref": "common/pm-2-x-base.schema.json" }
+  ],
+  "type": "object",
+  "properties": {
+    "vocabulary_toolbelt": {
+      "type": "object",
+      "description": "Toolbelt canónico de 20 términos técnicos organizados en 5 categorías semánticas. Cada término tiene stress_map con notación ●○.",
+      "required": ["categories", "stress_map"],
+      "properties": {
+        "categories": {
+          "type": "object",
+          "description": "5 categorías semánticas del universo técnico. Keys libres (Environment, Tools & Equipment, Safety, Maintenance, Documents & Roles, etc.). Values = arrays de términos.",
+          "minProperties": 3,
+          "maxProperties": 8,
+          "additionalProperties": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 2 },
+            "minItems": 1,
+            "maxItems": 10
+          }
+        },
+        "stress_map": {
+          "type": "object",
+          "description": "Mapa término → stress marcado. Notación: ● tónica, ○ átona, '-' separador de sílaba. Ej: 'WORK-shop (●○)'.",
+          "minProperties": 15,
+          "maxProperties": 30,
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 3,
+            "description": "String con stress marcado (ej. 'WORK-shop (●○)')"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["vocabulary_toolbelt"],
+  "unevaluatedProperties": false
+}

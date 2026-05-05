@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-2-4.schema.json",
+  "title": "PM-2.4 — Writing · Task-Based Production (v4.0)",
+  "description": "PM de Apropiación (S3). Producción escrita task-based del género del universo técnico de la guía (Daily Inspection Checklist, RCA Report, Risk Assessment, etc.). Genera E2 Producto evaluado con Lista de verificación. NO aporta al Quiz S6. Extiende pm-2-x-base y agrega: scenario (contexto laboral del producto), verification_list_criteria (criterios ponderados de la Lista de verificación), total_evidence_points.",
+  "allOf": [
+    { "$ref": "common/pm-2-x-base.schema.json" }
+  ],
+  "type": "object",
+  "properties": {
+    "scenario": {
+      "type": "object",
+      "description": "Escenario laboral que contextualiza la producción escrita. Nutre el prompt del aprendiz y el role de evaluación.",
+      "required": ["setting", "situation", "deliverables"],
+      "properties": {
+        "setting": { "type": "string", "minLength": 20 },
+        "situation": { "type": "string", "minLength": 30 },
+        "deliverables": {
+          "type": "array",
+          "description": "Lista de productos escritos concretos que el aprendiz entrega (ej. Checklist, Work Order header).",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": { "type": "string", "minLength": 20 }
+        }
+      },
+      "additionalProperties": false
+    },
+    "verification_list_criteria": {
+      "type": "array",
+      "description": "Criterios ponderados de la Lista de verificación (E2). Cada criterio tiene su puntaje parcial — la suma debe igualar total_evidence_points.",
+      "minItems": 5,
+      "maxItems": 15,
+      "items": {
+        "type": "object",
+        "required": ["criterion", "points"],
+        "properties": {
+          "criterion": { "type": "string", "minLength": 20 },
+          "points": { "type": "number", "minimum": 0.1, "maximum": 5 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "total_evidence_points": {
+      "type": "integer",
+      "const": 5,
+      "description": "Canon v4.0: cada evidencia formativa E1-E5 vale 5 pts."
+    }
+  },
+  "required": ["scenario", "verification_list_criteria", "total_evidence_points"],
+  "unevaluatedProperties": false
+}

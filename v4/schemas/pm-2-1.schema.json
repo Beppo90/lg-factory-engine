@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-2-1.schema.json",
+  "title": "PM-2.1 — The Spark · Reflexión Inicial (v4.0)",
+  "description": "Primer PM de Fase 2 en S1. Activación + contextualización (Bloom L1-L2). No genera evidencia formal. Extiende pm-2-x-base y agrega momentos[] — secuencia de segmentos pedagógicos concretos (Headline / Map / Debate / Story / etc.) con duración, archetype, materiales y estructuras target.",
+  "allOf": [
+    { "$ref": "common/pm-2-x-base.schema.json" }
+  ],
+  "type": "object",
+  "properties": {
+    "momentos": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "description": "Secuencia de segmentos pedagógicos que componen la sesión PM-2.1. Cada momento: número + nombre + archetype + duración + contenido específico (variable según archetype).",
+      "items": {
+        "type": "object",
+        "required": ["numero", "nombre", "archetype", "duracion_min"],
+        "properties": {
+          "numero": { "type": "integer", "minimum": 1 },
+          "nombre": { "type": "string", "minLength": 3 },
+          "archetype": {
+            "type": "string",
+            "pattern": "^[A-Z]( \\+ [A-Z])* — .+$",
+            "description": "Arquetipo canónico: letra(s) + ' — ' + nombre descriptivo. Ejemplos: 'C — News', 'A — Visual', 'B — Debate', 'B + D — Story + Debate'. Patrón laxo (no enum) para permitir combinaciones cross-archetype emergentes; la validación fina del contenido del momento vive en PM-2.x específico."
+          },
+          "duracion_min": {
+            "type": "integer",
+            "minimum": 10,
+            "maximum": 180
+          },
+          "headline": { "type": "string" },
+          "source": { "type": "string" },
+          "source_url": { "type": "string", "format": "uri" },
+          "survival_words": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "preguntas": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "estructura_target": { "type": "string" },
+          "zonas": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "sentence_starters": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "characters": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "setting": { "type": "string" },
+          "afirmaciones_debate": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "frases_ancla": {
+            "type": "object",
+            "properties": {
+              "agree": { "type": "array", "items": { "type": "string" } },
+              "disagree": { "type": "array", "items": { "type": "string" } }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["momentos"],
+  "unevaluatedProperties": false
+}

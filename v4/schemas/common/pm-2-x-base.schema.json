@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/common/pm-2-x-base.schema.json",
+  "title": "PM-2.x Activity Emitter — Base Shell (v4.0)",
+  "description": "Envoltorio común de pm-2-1 .. pm-2-10. Cada PM-2.x usa allOf con este base y agrega su bloque de contenido específico (source/adapted_text para 2.3, vocabulary_toolbelt para 2.5, audio_script para 2.6, etc.). El base impone: (a) _meta estandarizado, (b) pm_envelope con metadatos PM-level, (c) activity_cards[] obligatorio — array de tarjetas v2.7 6-bloque que $ref a common/activity-card.schema.json, (d) pm0_constraints_applied alineado con pm0-protocol.schema.json, (e) archetype_used, (f) trabajo_autonomo, (g) gfpi_tag, (h) instructor_notes.",
+  "type": "object",
+  "required": [
+    "_meta",
+    "pm_envelope",
+    "activity_cards",
+    "pm0_constraints_applied",
+    "archetype_used",
+    "trabajo_autonomo",
+    "gfpi_tag",
+    "instructor_notes"
+  ],
+  "properties": {
+    "_meta": {
+      "type": "object",
+      "required": ["schema_version", "generated_at", "run_id", "model", "status", "guide"],
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "enum": ["activity-card-v2.7"],
+          "description": "v4.0 canon: solo v2.7 6-bloque. Legacy v2.0 debe migrar."
+        },
+        "schema_ref": { "type": "string" },
+        "pm0_ref": { "type": "string" },
+        "generated_at": { "type": "string", "format": "date-time" },
+        "run_id": { "$ref": "run-id.schema.json" },
+        "model": { "type": "string", "minLength": 3 },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "pending_review", "approved", "locked"]
+        },
+        "guide": { "type": "string", "minLength": 3 }
+      },
+      "additionalProperties": false
+    },
+    "pm_envelope": {
+      "type": "object",
+      "description": "Metadata PM-level + índice grueso de actividades. Complementa (no reemplaza) las activity_cards v2.7 6-bloque.",
+      "required": [
+        "pm_id",
+        "pm_name",
+        "session",
+        "phase_sena_principal",
+        "rap_id",
+        "activities_outline",
+        "hours",
+        "evidence_link",
+        "environment",
+        "contributes_to_consolidated_quiz"
+      ],
+      "properties": {
+        "pm_id": {
+          "type": "string",
+          "pattern": "^PM-[0-9]+(\\.[0-9]+)?$"
+        },
+        "pm_name": { "type": "string", "minLength": 3 },
+        "session": {
+          "oneOf": [
+            { "type": "integer", "minimum": 1, "maximum": 8 },
+            { "type": "string", "enum": ["6_primera_mitad", "6_segunda_mitad_7_8"] }
+          ]
+        },
+        "phase_sena_principal": { "$ref": "sena-fase.schema.json" },
+        "rap_id": { "type": "string", "minLength": 3 },
+        "activities_outline": {
+          "type": "array",
+          "description": "Índice grueso de actividades dentro del PM (número, dimensión, enunciado, estrategia, técnica). Versión condensada — las tarjetas completas viven en activity_cards[].",
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": ["number", "type", "statement", "didactic_strategy", "didactic_technique"],
+            "properties": {
+              "number": { "type": "integer", "minimum": 1 },
+              "type": {
+                "type": "string",
+                "enum": ["cognitiva", "procedimental", "actitudinal"]
+              },
+              "statement": { "type": "string", "minLength": 30 },
+              "didactic_strategy": { "type": "string", "minLength": 5 },
+              "didactic_technique": { "type": "string", "minLength": 5 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "hours": {
+          "type": "object",
+          "required": ["direct", "autonomous"],
+          "properties": {
+            "direct": { "type": "number", "minimum": 0.5 },
+            "autonomous": { "type": "number", "minimum": 0 }
+          },
+          "additionalProperties": false
+        },
+        "evidence_link": {
+          "type": "object",
+          "description": "Referencia cruzada con la evidencia canónica (E1-E6) que esta PM alimenta. Si generates_evidence:false, el resto de campos es null/vacío. Si generates_evidence:true, evidence_code debe ser E1-E5 (PM-2.x no emiten E6 directamente — E6 es el Cuestionario Consolidado ensamblado por PM-4.2).",
+          "required": ["generates_evidence"],
+          "properties": {
+            "generates_evidence": { "type": "boolean" },
+            "evidence_code": {
+              "oneOf": [
+                { "type": "string", "enum": ["E1", "E2", "E3", "E4", "E5", "E6"] },
+                { "type": "null" }
+              ]
+            },
+            "type": {
+              "oneOf": [
+                { "type": "string", "enum": ["Conocimiento", "Producto", "Desempeño"] },
+                { "type": "null" },
+                { "type": "string", "maxLength": 0 }
+              ]
+            },
+            "description": { "type": "string" },
+            "evaluation_technique": { "type": "string" },
+            "instrument_number": {
+              "oneOf": [
+                { "type": "integer", "minimum": 1, "maximum": 6 },
+                { "type": "null" }
+              ]
+            },
+            "instrument_type": {
+              "oneOf": [
+                { "type": "string", "enum": ["Lista de Chequeo", "Rúbrica", "Cuestionario", "Escala de Valoración", "Escala de Estimación"] },
+                { "type": "null" },
+                { "type": "string", "maxLength": 0 }
+              ]
+            }
+          },
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": { "properties": { "generates_evidence": { "const": true } }, "required": ["generates_evidence"] },
+              "then": {
+                "required": ["evidence_code", "type", "instrument_number", "instrument_type"],
+                "properties": {
+                  "evidence_code": { "type": "string", "enum": ["E1", "E2", "E3", "E4", "E5"] },
+                  "type": { "type": "string", "enum": ["Conocimiento", "Producto", "Desempeño"] },
+                  "instrument_number": { "type": "integer", "minimum": 1, "maximum": 6 },
+                  "instrument_type": { "type": "string", "enum": ["Lista de Chequeo", "Rúbrica", "Cuestionario", "Escala de Valoración", "Escala de Estimación"] }
+                }
+              }
+            }
+          ]
+        },
+        "environment": {
+          "type": "object",
+          "required": ["type", "materials", "instructors"],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["Aula", "Laboratorio", "Virtual", "Campo", "Híbrido", "Taller"]
+            },
+            "materials": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 5 },
+              "minItems": 1
+            },
+            "instructors": { "type": "string", "minLength": 10 }
+          },
+          "additionalProperties": false
+        },
+        "contributes_to_consolidated_quiz": { "type": "boolean" },
+        "quiz_skill": {
+          "type": "string",
+          "description": "Vacío si no contribuye al Quiz S6; Reading/Vocabulary/Grammar/Listening/Language Functions si contribuye"
+        },
+        "quiz_points": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "quiz_item_count": { "type": "integer", "minimum": 0, "maximum": 5 }
+      },
+      "additionalProperties": false
+    },
+    "activity_cards": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "description": "Tarjetas de actividad v2.7 6-bloque — una por cada actividad concreta del PM. Cada card es la especificación completa (V+O+C, narrativa bilingüe, pasos, entregable, evidencia, footer).",
+      "items": { "$ref": "activity-card.schema.json" }
+    },
+    "pm0_constraints_applied": { "$ref": "pm0-protocol.schema.json" },
+    "archetype_used": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 3 },
+      "minItems": 1,
+      "description": "Arquetipos canónicos usados en las actividades (ej. 'C — News', 'A — Visual', 'B — Debate')"
+    },
+    "trabajo_autonomo": {
+      "type": "object",
+      "required": ["duracion_h", "actividades"],
+      "properties": {
+        "duracion_h": { "type": "number", "minimum": 0.25, "maximum": 6 },
+        "actividades": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 20 },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "gfpi_tag": {
+      "type": "string",
+      "pattern": "^3\\.[1-4]-[A-Z_]+$",
+      "description": "Tag de fase SENA + etiqueta corta (ej. '3.1-REFLEXION', '3.2-APROPIACION', '3.3-EVALUACION', '3.4-TRANSFERENCIA')"
+    },
+    "instructor_notes": {
+      "type": "object",
+      "description": "Notas operativas libres para el instructor (keys arbitrarias, values string)",
+      "additionalProperties": { "type": "string" }
+    }
+  }
+}

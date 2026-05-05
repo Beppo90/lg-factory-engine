@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-2-3.schema.json",
+  "title": "PM-2.3 — Reading · The Master Anchor (v4.0)",
+  "description": "Primer PM de Apropiación (S2). Input receptivo: lectura del texto auténtico adaptado al CEFR de la guía. Genera E1 Conocimiento (Cuestionario No 1) + aporta 5 pts al Quiz Consolidado S6 (skill: Reading). Extiende pm-2-x-base y agrega: source (ficha bibliográfica curada), adapted_text (metadata de adaptación CEFR + secciones Jigsaw), comprehension_questions (N preguntas con opciones, respuesta, Bloom).",
+  "allOf": [
+    { "$ref": "common/pm-2-x-base.schema.json" }
+  ],
+  "type": "object",
+  "properties": {
+    "source": {
+      "type": "object",
+      "description": "Ficha bibliográfica de la fuente curada (Story A) que alimenta la lectura ancla. Proviene del source_assignment de pm-1-2.",
+      "required": ["title", "author", "url", "role"],
+      "properties": {
+        "title": { "type": "string", "minLength": 5 },
+        "author": { "type": "string", "minLength": 2 },
+        "publication": { "type": "string" },
+        "date": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "role": {
+          "type": "string",
+          "description": "Rol canónico de la fuente (ej. 'Story A — Reading Master Anchor')"
+        }
+      },
+      "additionalProperties": false
+    },
+    "adapted_text": {
+      "type": "object",
+      "description": "Metadata de la adaptación CEFR del texto + organización del scaffolding (Jigsaw u otra estructura cooperativa).",
+      "required": ["title", "cefr_adaptation"],
+      "properties": {
+        "title": { "type": "string", "minLength": 5 },
+        "cefr_adaptation": {
+          "type": "string",
+          "minLength": 20,
+          "description": "Constraints de adaptación (ej. 'A1.1 — frases ≤10 palabras, estructuras Gr1+Gr2, 12+ términos Toolbelt')"
+        },
+        "jigsaw_sections": {
+          "type": "array",
+          "description": "Secciones del texto organizadas para Jigsaw cooperativo. Cada sección = 1 rol experto.",
+          "minItems": 2,
+          "maxItems": 6,
+          "items": { "type": "string", "minLength": 20 }
+        },
+        "full_text": {
+          "type": "string",
+          "description": "Texto completo adaptado en CEFR target. Opcional — puede vivir en un recurso externo referenciado."
+        }
+      },
+      "additionalProperties": false
+    },
+    "comprehension_questions": {
+      "type": "array",
+      "description": "Preguntas del Cuestionario No 1 (Evidencia de Conocimiento). Patrón canónico: 5 ítems × 1 pt = 5 pts Quiz S6.",
+      "minItems": 5,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["number", "question", "answer", "bloom"],
+        "properties": {
+          "number": { "type": "integer", "minimum": 1 },
+          "question": { "type": "string", "minLength": 10 },
+          "options": {
+            "type": "array",
+            "description": "Opciones múltiples (a, b, c...). Opcional para preguntas abiertas o True/False con rationale.",
+            "items": { "type": "string", "minLength": 2 },
+            "minItems": 2,
+            "maxItems": 5
+          },
+          "answer": { "type": "string", "minLength": 1 },
+          "bloom": {
+            "type": "string",
+            "pattern": "^L[1-6] .+$",
+            "description": "Nivel Bloom del ítem (ej. 'L1 Remember', 'L2 Understand', 'L3 Apply')"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["source", "adapted_text", "comprehension_questions"],
+  "unevaluatedProperties": false
+}
