@@ -152,9 +152,16 @@ Los tres targets responden correctamente a cambios. Cambios `cp` reverted desde 
 
 ## Deuda explícita conocida
 
-1. **Activity Card schema v4 está stale** — declara `enum: ["activity-card-v2.7"]` pero los runs evolucionaron a v3.0/v3.1. `test-drift` check 4 NO la detecta (verifica contra spec F2.8 que dice canon=v2.7); el meta-drift es de F2.8 vs realidad runtime, requiere update de spec en Hito 3 fase B
+1. **Activity Card schema v4 está stale** — `test-drift` Check 4 actualizado a aceptar v2.7-v3.4 rango canon (Hito 4 d sub-task 3 sincronizó schema a v3.4)
 2. **No existe `v4/schemas/pm-0-0.schema.json`** — Phase 0 valida solo `validation_checks` flags. Construir un schema PM-0.0 formal sería deuda separada
-3. **4 schemas v2.0 NEW pendientes en `v4/schemas/`** (post-paradigm shift 2026-05-04): `contenido_tecnico_crudo.competencias[]`, `_v2_audit_anclaje_tecnico`, `_deuda_explicita_para_guia_siguiente`, `_cobertura_total_programa`. `test-drift` actual NO los detecta (no están listados como check en F2.8); agregar como check NEW en fase B
-4. **D-001/002/003 ✅ cerrados** — patches aplicados en branch `fix/schemas-pm-1-1-v271-alignment` (commit `dbead06`): `Curso Especial`/`Curso Complementario` agregados a `pm-0-context.schema.json` + `pm-1-1-input.schema.json`; `regla_bloques` reemplazado con 4 patrones canónicos v2.7.1; `final_mission_scenario` agregado con `allOf if/then` condicional. Verificado por `test-drift` (CRITICAL 2→0) y `v4/ajv-regression.js` (PASS). Cierre formal en `english-engine-lab/specs/_inventory/drift-matrix.md` commit `68da4b0`
-5. **Drift sistémico master prompts vs skill VERSIONES_VIGENTES** — 11 PMs en master están adelante del dict del skill loader (ej. PM-2.3 master v3.0 vs skill v2.0). Skill loader necesita catch-up bump
-6. **Backups `.pre-wave-*` y `.pre-v*` en runs/** confunden el ls; los fixtures se eligen por path exacto sin sufijos para evitar ambigüedad
+3. **D-001/002/003 ✅ cerrados** — patches aplicados en branch `fix/schemas-pm-1-1-v271-alignment` (commit `dbead06`). Verificado por `test-drift` (CRITICAL 2→0) y `v4/ajv-regression.js` (PASS)
+4. **Drift sistémico master prompts vs skill VERSIONES_VIGENTES ✅ cerrado** — Cowork (f) skill loader fase2 expansion 2026-05-05 + bump CC del 2026-05-04. Dict cubre PM-0.0/PM-0/PM-1.1/PM-1.2/PM-2.x/PM-4.x con frontmatter actuales
+5. **Check 7 · deuda matrices PM-0.0 · ground truth pedagógico legacy · regenerable on-demand cuando programas se re-ejecuten** (decisión Sergio 2026-05-06). Cowork regeneró `pm-0-context.json` (PM-0 outputs Phase 1) en Hito 4 (e) pero NO `pm-0-0-matriz-alineada-G*.json` (PM-0.0 outputs Phase 0 · que es lo que mi Check 7 valida). Las matrices legacy 2026-05-04 NO fueron regeneradas a canon vigente PM-0.0 v2.3+. Drifts permanentes documentados:
+   - RECREACION G2 · `_cobertura_total_programa` missing (REGLA 13.3 PM-0)
+   - RECREACION G2 · `raps_count_total_programa` missing (REGLA 13.6)
+   - RECREACION G2 · `contenido_tecnico_crudo: {}` vacío (canon v2.0)
+   - INFRATI G3 · `raps_count_total_programa` missing (REGLA 13.6)
+
+   Check 7 marca SIGNIFICATIVO informativo · NO bloquea. Para silenciar: regenerar matrices on-demand cuando se re-ejecuten programas (Cowork engine ~30min) · NO regenerar solo por verde cosmético del CI.
+6. **AJV regression · 2 failures DIESEL legacy pre-v3.4 · misma deuda bucket que Check 7** — `pm-0-context.json` + `pm-1-2.json` fixtures DIESEL fail vs schemas v3.4/v4.3.1. Script apunta a `runs/DIESEL-2026-04-19/` (legacy single-comp pre-canon). Cowork regeneró IMARPOR-V2/RECREACION/INFRATI pm-0-context pero AJV usa DIESEL fixtures. Aplicamos mismo principio: NO regenerar DIESEL solo por verde cosmético · es ground truth pedagógico legacy válido en su tiempo. Si en futuro DIESEL se re-ejecuta o se cambia FIXTURES path · cierra automáticamente.
+7. **Backups `.pre-wave-*` y `.pre-v*` en runs/** confunden el ls; los fixtures se eligen por path exacto sin sufijos para evitar ambigüedad
