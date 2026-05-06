@@ -1,0 +1,436 @@
+{
+  "schema_version": "v3.4",
+  "pm_id": "PM-0",
+  "pm_name": "CEFR Framework + Pedagogical Foundation · INFRATI G3 multi-comp CIERRE PROGRAMA",
+  "pm_version": "3.4.1",
+  "run_id": "INFRATI-2026-05-04",
+  "generated_date": "2026-05-06",
+  "instructor": {
+    "nombre": "Sergio Cortés Perdomo",
+    "rol": "Instructor líder · FPI SENA Bilingüismo · sector TIC infraestructura"
+  },
+  "_matriz_alineada_ref": {
+    "file": "runs/INFRATI-2026-05-04/pm-0-0-matriz-alineada-G3.json",
+    "version": "v2.0",
+    "raps_count": 2,
+    "criterios_canon_anchor": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08"
+    ]
+  },
+  "programa": {
+    "denominacion": "IMPLEMENTACIÓN DE INFRAESTRUCTURA DE TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES",
+    "sector": "TIC infraestructura · redes + servidores + cableado",
+    "tipo": "Tecnológico",
+    "rango_cefr": "A1.1 — A1.3",
+    "total_guias": 3,
+    "regla_bloques": "alineacion_1a1",
+    "cefr_subnivel_objetivo": "A1.3",
+    "ambiente_productivo": "Centros de cómputo + data centers + cableado estructurado"
+  },
+  "universo_narrativo": {
+    "ambiente_principal": "Data center corporativo · centros de cómputo + cableado estructurado + servidores rack-mounted",
+    "escenarios": [
+      "Data center MDF/IDF",
+      "Sala de servidores",
+      "Cableado estructurado planta"
+    ],
+    "personajes": [
+      {
+        "nombre": "Ingeniero senior de infraestructura",
+        "rol": "Lidera implementación TIC · 10 años experiencia · CCNA + LPIC certificado · habla inglés B1+",
+        "_anclaje_matriz": {
+          "raps_que_atraviesa": [
+            "RA1",
+            "RA5"
+          ],
+          "criterios_especificos_que_evalúa": [
+            "C07",
+            "C08"
+          ],
+          "competencias_tecnicas": [
+            "220501086",
+            "220501103"
+          ]
+        }
+      },
+      {
+        "nombre": "Técnico junior de soporte",
+        "rol": "Aprendiz en formación bilingüe técnica TIC · operacional cableado + monitoreo",
+        "_anclaje_matriz": {
+          "raps_que_atraviesa": [
+            "RA1"
+          ],
+          "criterios_especificos_que_evalúa": [
+            "C01",
+            "C02"
+          ],
+          "competencias_tecnicas": [
+            "220501086"
+          ]
+        }
+      },
+      {
+        "nombre": "Coordinador de proyecto TIC",
+        "rol": "Stakeholder · gerencia proyecto implementación · valida entregables · interacción cliente",
+        "_anclaje_matriz": {
+          "raps_que_atraviesa": [
+            "RA5"
+          ],
+          "criterios_especificos_que_evalúa": [
+            "C05",
+            "C08"
+          ],
+          "competencias_tecnicas": [
+            "220501103"
+          ]
+        }
+      }
+    ],
+    "vocabulario_sector": [
+      "rack",
+      "cableado estructurado",
+      "servidor",
+      "switch",
+      "router",
+      "patch panel",
+      "fibra óptica",
+      "monitoring"
+    ],
+    "iconografia_tone": "TIC profesional · industria 4.0 · data center moderno"
+  },
+  "cefr_subnivel_objetivo": "A1.3",
+  "principios_pedagogicos_aplicables": [
+    {
+      "principio": "Contenido técnico primario",
+      "aplicacion": "Idioma alrededor implementación TIC real · cableado estructurado · monitoreo servidores · presentar avances proyecto · realia auténtica data center · 2 competencias técnicas integradas (220501086 cableado + 220501103 servidores)",
+      "_anclaje_matriz": {
+        "cefr_progresion_canon": "A1.3 cierre",
+        "evidencias_anchor": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5",
+          "E6",
+          "E-Misión"
+        ],
+        "saberes_progresion": [
+          "RA1 DISCUTIR argumentativo",
+          "RA5 IMPLEMENTAR reflexivo"
+        ]
+      }
+    },
+    {
+      "principio": "Progresión CEFR diferenciada",
+      "aplicacion": "A1.1 G1 (RA6+RA3 receptivo+descriptivo · 220501086) → A1.2 G2 (RA2+RA4 procedural+interactivo · multi-comp) → A1.3 G3 cierre (RA1+RA5 argumentativo+reflexivo · multi-comp completo + CIERRE PROGRAMA capstone)",
+      "_anclaje_matriz": {
+        "cefr_progresion_canon": "A1.1 → A1.2 → A1.3",
+        "evidencias_anchor": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5",
+          "E6"
+        ]
+      }
+    },
+    {
+      "principio": "L1 decrece progresivamente",
+      "aplicacion": "L1 10% S1-S3 G3 (acumulado de G1+G2 · scaffold reduce) → 5% S4-S6 → 0% S7-S12 (capstone monolingüe English Zone · Bloom L4-5 argumentativo + reflexivo)",
+      "_anclaje_matriz": {
+        "cefr_progresion_canon": "A1.3 monolingüe",
+        "evidencias_anchor": [
+          "E5",
+          "E6",
+          "E-Misión"
+        ]
+      }
+    },
+    {
+      "principio": "Feedback diferenciado accuracy↔fluency",
+      "aplicacion": "Modo fluency dominante S1-S12 G3 (RA1 + RA5 · argumentativo + reflexivo · interacción avanzada · pitch capstone CIERRE PROGRAMA cross-comp)",
+      "_anclaje_matriz": {
+        "cefr_progresion_canon": "fluency A1.3 dominante",
+        "evidencias_anchor": [
+          "E4",
+          "E5",
+          "E-Misión"
+        ]
+      }
+    },
+    {
+      "principio": "Evidencia alineada al criterio",
+      "aplicacion": "E1-E6 mapean C01-C06 · E-Misión CIERRE PROGRAMA integra C07+C08 cross-comp 220501086+220501103 · capstone multi-comp end-to-end",
+      "_anclaje_matriz": {
+        "cefr_progresion_canon": "A1.3",
+        "evidencias_anchor": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5",
+          "E6",
+          "E-Misión"
+        ]
+      }
+    },
+    {
+      "principio": "Inmersión sectorial TIC + multi-comp orquestada",
+      "aplicacion": "Principio emergente sector · todo contenido lingüístico ancla en realia operacional auténtica TIC · 2 competencias técnicas (cableado + servidores) integradas cross-comp en cada actividad · NO fragmentación mono-comp",
+      "_anclaje_matriz": {
+        "cefr_progresion_canon": "A1.3 multi-comp",
+        "evidencias_anchor": [
+          "E-Misión"
+        ]
+      }
+    }
+  ],
+  "final_mission": {
+    "scenario": "CIERRE PROGRAMA INFRATI · Capstone cross-comp multi-comp · Aprendiz coordina implementación TIC end-to-end ante panel mixto · presenta plan integrando cableado estructurado (220501086) + monitoreo servidores (220501103) · pitch técnico A1.3 8min + Q&A · CIERRE programa Tecnólogo INFRATI 384h",
+    "panel_evaluador": [
+      "Director TIC corporativo",
+      "Project Manager Senior",
+      "Cliente final stakeholder",
+      "Auditor calidad proyecto"
+    ],
+    "sub_fases_abp": [
+      {
+        "fase": "Planeación",
+        "descripcion": "Aprendiz mapea proyecto end-to-end · 2 comps integradas"
+      },
+      {
+        "fase": "Diseño",
+        "descripcion": "Diagrama solución TIC bilingüe · cableado + servidores"
+      },
+      {
+        "fase": "Desempeño",
+        "descripcion": "Role-play implementación campo · interacción multi-stakeholder"
+      },
+      {
+        "fase": "Presentación",
+        "descripcion": "Pitch técnico 8min A1.3 + Q&A panel"
+      },
+      {
+        "fase": "Evaluación reflexiva",
+        "descripcion": "Auto-evaluación cross-comp + feedback peer"
+      }
+    ],
+    "_anclaje_matriz": {
+      "criterios_específicos_evaluados": [
+        "C07",
+        "C08"
+      ],
+      "saberes_movilizados": [],
+      "evidencia_capstone": "E-Misión",
+      "cierre_programa": true,
+      "cobertura_acumulada_g1_g2_g3_referencia": "matriz._cobertura_total_programa.cobertura_acumulada_g1_g2_g3 (G1=≥80% · G2=88.9% procesos · G3=100%)",
+      "competencias_tecnicas_integradas": [
+        "220501086",
+        "220501103"
+      ]
+    }
+  },
+  "_competencias_tecnicas_modo": "multi-comp",
+  "_n_competencias_tecnicas": 2,
+  "_competencias_tecnicas_codigos": [
+    "220501086",
+    "220501103"
+  ],
+  "_split_strategy_heredado": {
+    "valor_canon": "A",
+    "etiqueta_corta": "equilibrado",
+    "descripcion_completa": "A · equilibrado · Opción B canon distribución por complejidad pedagógica · G1 = RA6 (COMPRENDER receptivo) + RA3 (EXPLICAR descriptivo básico) · G2 = RA2 (PRESENTAR procedural) + RA4 (INTERCAMBIAR interactivo) · G3 = RA1 (DISCUTIR soluciones argumentativas) + RA5 (IMPLEMENTAR mejoras reflexivas) · CIERRE programa",
+    "decision_capstone": "CIERRE programa",
+    "_fuente": "parser_canon_v3.4_string",
+    "guide_id": "G3",
+    "guide_total": 3
+  },
+  "_raps_metadata": {
+    "raps_count_esta_guia": 2,
+    "raps_count_total_programa": 6,
+    "guide_id": "G3",
+    "guide_total": 3,
+    "raps_ids_esta_guia": [
+      "RA1",
+      "RA5"
+    ],
+    "raps_ids_total_programa": [
+      "RA1",
+      "RA2",
+      "RA3",
+      "RA4",
+      "RA5",
+      "RA6"
+    ]
+  },
+  "_position_programa": {
+    "guide_id": "G3",
+    "guide_total": 3,
+    "k_index": 3,
+    "es_apertura": false,
+    "es_intermedia": false,
+    "es_cierre_programa": true,
+    "es_unica_guia": false,
+    "saberes_acumulados_g_anteriores": {
+      "G1": {
+        "ra_codigos_cubiertos": [
+          "RA6",
+          "RA3"
+        ],
+        "competencias_tecnicas_activadas": [
+          "220501086"
+        ],
+        "cefr_subnivel_alcanzado": "A1.1",
+        "verbo_cognitivo_dominante_split": "COMPRENDER receptivo + EXPLICAR descriptivo básico",
+        "_fuente": "split_strategy_string"
+      },
+      "G2": {
+        "ra_codigos_cubiertos": [
+          "RA2",
+          "RA4"
+        ],
+        "competencias_tecnicas_activadas": [
+          "220501086",
+          "220501103"
+        ],
+        "cefr_subnivel_alcanzado": "A1.2",
+        "verbo_cognitivo_dominante_split": "PRESENTAR procedural + INTERCAMBIAR interactivo",
+        "_fuente": "split_strategy_string"
+      },
+      "G_anterior_más_próxima": "G2"
+    },
+    "_anclaje_matriz": {
+      "split_strategy_heredado": "@_split_strategy_heredado",
+      "raps_metadata_heredado": "@_raps_metadata",
+      "fuente_inferencia": "hybrid"
+    }
+  },
+  "evidencias_formales_traceability": {
+    "E1_S3_Reading": {
+      "criterio_especifico": "C01",
+      "rap": "RA1",
+      "instrumento": "Cuestionario No 1"
+    },
+    "E2_S4_Writing": {
+      "criterio_especifico": "C02",
+      "rap": "RA1",
+      "instrumento": "Lista de Verificación No 2"
+    },
+    "E3_S5_Listening": {
+      "criterio_especifico": "C03",
+      "rap": "RA5",
+      "instrumento": "Lista de Verificación No 3"
+    },
+    "E4_S6_Speaking": {
+      "criterio_especifico": "C04",
+      "rap": "RA5",
+      "instrumento": "Escala No 4"
+    },
+    "E5_S7_LangFunctions": {
+      "criterio_especifico": "C05",
+      "rap": [
+        "RA1",
+        "RA5"
+      ],
+      "instrumento": "Escala No 5"
+    },
+    "E6_S8_Cuestionario": {
+      "criterio_especifico": "C07",
+      "rap": [
+        "RA1",
+        "RA5"
+      ],
+      "instrumento": "Cuestionario Consolidado No 6"
+    },
+    "EMision_S12_ABP": {
+      "criterio_especifico": "C08",
+      "rap": [
+        "RA1",
+        "RA5"
+      ],
+      "instrumento": "Rúbrica ABP CIERRE PROGRAMA cross-comp"
+    }
+  },
+  "validation_checks": [
+    {
+      "id": 1,
+      "name": "matriz_alineada_ref_valid",
+      "status": "PASS"
+    },
+    {
+      "id": 2,
+      "name": "cefr_subnivel_canonical",
+      "status": "PASS"
+    },
+    {
+      "id": 3,
+      "name": "universo_narrativo_complete",
+      "status": "PASS"
+    },
+    {
+      "id": 4,
+      "name": "principios_aplicados",
+      "status": "PASS"
+    },
+    {
+      "id": 5,
+      "name": "no_duplication_matriz",
+      "status": "PASS"
+    },
+    {
+      "id": 6,
+      "name": "anti_copia_fantasma",
+      "status": "PASS"
+    },
+    {
+      "id": 7,
+      "name": "traceability_matriz_completa",
+      "status": "PASS"
+    },
+    {
+      "id": 8,
+      "name": "multi_comp_compatibility",
+      "status": "PASS",
+      "modo": "multi-comp",
+      "n_competencias": 2
+    },
+    {
+      "id": 9,
+      "name": "bloom_progression_monotonica",
+      "status": "N/A",
+      "evidence": "es_cierre_programa · REGLA 14.5 NO aplica en cierre real"
+    }
+  ],
+  "downstream_consumers": [
+    "PM-1.1",
+    "PM-1.2",
+    "PM-2.0",
+    "PM-2.x",
+    "PM-2.11",
+    "PM-3.6"
+  ],
+  "_audit": {
+    "input_source": "runs/INFRATI-2026-05-04/pm-0-0-matriz-alineada-G3.json",
+    "input_completeness": "matriz alineada G3 v2.0 multi-comp + CIERRE PROGRAMA · _cobertura_total_programa PRESENT",
+    "input_normalizations": [
+      "split_strategy STRING upstream → objeto via parse_split_strategy()",
+      "es_ultima_guia: None upstream → True (G3 of 3 = es_cierre)",
+      "_competencias_tecnicas_modo: multi-comp (2 comps array · matriz schema_version=v2.0)"
+    ],
+    "personajes_nominados_count": 0,
+    "jerga_tecnica_interna_count_aprendiz_facing": 0,
+    "rebuild_2026_05_06": "Camino B structured creation · multi-comp + CIERRE PROGRAMA · activa REGLAS 13.1-13.6 + condicionales schema 1+2+3+5"
+  },
+  "enriched": true,
+  "_block_downstream_until_gate0": false,
+  "_paradigm_note": "Camino B structured creation · multi-comp + CIERRE PROGRAMA · 4 conditional schemas activos · valida full coverage canon v3.4",
+  "_canon_authority": "PM-0 v3.4.1 + schema v3.4 (Mejoras #3+#4)"
+}

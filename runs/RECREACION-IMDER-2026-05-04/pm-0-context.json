@@ -1,0 +1,385 @@
+{
+  "schema_version": "v3.4",
+  "pm_id": "PM-0",
+  "pm_name": "CEFR Framework + Pedagogical Foundation · RECREACIÓN G2 CIERRE PROGRAMA",
+  "pm_version": "3.4.1",
+  "run_id": "RECREACION-IMDER-2026-05-04",
+  "generated_date": "2026-05-06",
+  "instructor": {
+    "nombre": "Sergio Cortés Perdomo",
+    "rol": "Instructor líder · FPI SENA Bilingüismo · sector recreativo"
+  },
+  "_matriz_alineada_ref": {
+    "file": "runs/RECREACION-IMDER-2026-05-04/pm-0-0-matriz-alineada-G2.json",
+    "version": "v1.0",
+    "raps_count": 3,
+    "criterios_canon_anchor": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08"
+    ],
+    "_nota": "Matriz alineada G2 RECREACION es v1.0 era · gap detectado sesión 4/4 cluster · _cobertura_total_programa MISSING en G2 cierre · regenerable upstream PM-0.0 v2.3"
+  },
+  "programa": {
+    "denominacion": "RECREACIÓN",
+    "sector": "recreativo · IMDER (Instituto Municipal de Recreación)",
+    "tipo": "Curso Especial",
+    "rango_cefr": "A1.1 — A1.2",
+    "total_guias": 2,
+    "regla_bloques": "absorcion_Na1",
+    "cefr_subnivel_objetivo": "A1.2",
+    "ambiente_productivo": "IMDER municipal · escenarios recreativos comunitarios"
+  },
+  "universo_narrativo": {
+    "ambiente_principal": "Escenarios recreativos IMDER municipal · canchas comunitarias · centros recreativos barriales",
+    "escenarios": [
+      "Cancha de fútbol comunitaria",
+      "Centro recreativo barrial",
+      "Parque municipal"
+    ],
+    "personajes": [
+      {
+        "nombre": "Coordinador recreativo senior",
+        "rol": "Lidera programación recreativa IMDER · 8 años experiencia · habla inglés A2 funcional",
+        "_anclaje_matriz": {
+          "raps_que_atraviesa": [
+            "RA4",
+            "RA5",
+            "RA6"
+          ],
+          "criterios_especificos_que_evalúa": [
+            "C04",
+            "C05",
+            "C06"
+          ]
+        }
+      },
+      {
+        "nombre": "Promotor recreativo aprendiz",
+        "rol": "Aprendiz en formación bilingüe técnica recreativa · operacional canchas",
+        "_anclaje_matriz": {
+          "raps_que_atraviesa": [
+            "RA4",
+            "RA5",
+            "RA6"
+          ],
+          "criterios_especificos_que_evalúa": [
+            "C04",
+            "C05"
+          ]
+        }
+      }
+    ],
+    "vocabulario_sector": [
+      "recreación",
+      "comunitario",
+      "esparcimiento",
+      "IMDER",
+      "lúdico"
+    ],
+    "iconografia_tone": "recreativo · comunitario · inclusivo"
+  },
+  "cefr_subnivel_objetivo": "A1.2",
+  "principios_pedagogicos_aplicables": [
+    {
+      "principio": "Contenido técnico primario",
+      "aplicacion": "El idioma alrededor de operaciones recreativas IMDER reales · liderar actividades · gestionar grupos · comunicar reglas · NO contenido inventado · realia auténtica del sector recreativo comunitario",
+      "_anclaje_matriz": {
+        "cefr_progresion_canon": "A1.1 → A1.2",
+        "evidencias_anchor": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5",
+          "E6",
+          "E-Misión"
+        ],
+        "saberes_progresion": [
+          "RA4",
+          "RA5",
+          "RA6"
+        ]
+      }
+    },
+    {
+      "principio": "Progresión CEFR diferenciada",
+      "aplicacion": "A1.1 entrada G1 (RA1-RA3 · vocabulario básico recreativo) → A1.2 G2 cierre (RA4-RA6 · interacción comunicativa avanzada A1.2 + capstone CIERRE PROGRAMA mission integradora)",
+      "_anclaje_matriz": {
+        "cefr_progresion_canon": "A1.1 → A1.2",
+        "evidencias_anchor": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5",
+          "E6"
+        ],
+        "saberes_progresion": [
+          "G1 cubrió RA1+RA2+RA3",
+          "G2 cubre RA4+RA5+RA6 + CIERRE"
+        ]
+      }
+    },
+    {
+      "principio": "L1 decrece progresivamente",
+      "aplicacion": "L1 25% S1-S3 G2 (RA4 scaffold transición G1) → 15% S4-S6 (RA5 productivo) → 5% S7-S9 (RA6 interactivo) → 0% S10-S12 (capstone CIERRE PROGRAMA monolingüe)",
+      "_anclaje_matriz": {
+        "cefr_progresion_canon": "A1.2 progresivo",
+        "evidencias_anchor": [
+          "E1",
+          "E2",
+          "E3",
+          "E-Misión"
+        ]
+      }
+    },
+    {
+      "principio": "Feedback diferenciado accuracy↔fluency",
+      "aplicacion": "Modo accuracy S1-S6 (RA4 + RA5 · vocabulario recreativo + estructuras procedurales) · modo fluency S7-S12 (RA6 + capstone · interacción comunitaria · pitch CIERRE PROGRAMA)",
+      "_anclaje_matriz": {
+        "cefr_progresion_canon": "accuracy A1.2 → fluency A1.2",
+        "evidencias_anchor": [
+          "E4",
+          "E5",
+          "E-Misión"
+        ]
+      }
+    },
+    {
+      "principio": "Evidencia alineada al criterio",
+      "aplicacion": "E1-E6 mapean a C01-C06 criterios sistema · E-Misión cierra C07+C08 capstone integrador G1+G2 · CIERRE PROGRAMA",
+      "_anclaje_matriz": {
+        "cefr_progresion_canon": "A1.2",
+        "evidencias_anchor": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5",
+          "E6",
+          "E-Misión"
+        ]
+      }
+    }
+  ],
+  "final_mission": {
+    "scenario": "CIERRE PROGRAMA RECREACIÓN · Coordinador recreativo aprendiz pitch trilingüe ante comité IMDER · plan integrador 6 actividades cubriendo competencia recreativa completa G1+G2 · scenario auténtico convocatoria comunitaria con stakeholders barriales",
+    "panel_evaluador": [
+      "Director IMDER",
+      "Coordinador General Recreativo",
+      "Líder Comunitario"
+    ],
+    "sub_fases_abp": [
+      {
+        "fase": "Planeación",
+        "descripcion": "Aprendiz mapea programa recreativo integrado G1+G2"
+      },
+      {
+        "fase": "Diseño",
+        "descripcion": "Prepara materiales bilingües · agenda · checklist"
+      },
+      {
+        "fase": "Desempeño",
+        "descripcion": "Ejecuta role-play comunidad recreativa interactiva"
+      },
+      {
+        "fase": "Presentación",
+        "descripcion": "Pitch 8min · Q&A panel"
+      },
+      {
+        "fase": "Evaluación reflexiva",
+        "descripcion": "Auto-evaluación + feedback peer"
+      }
+    ],
+    "_anclaje_matriz": {
+      "criterios_específicos_evaluados": [
+        "C07",
+        "C08"
+      ],
+      "saberes_movilizados": [],
+      "evidencia_capstone": "E-Misión",
+      "cierre_programa": true,
+      "cobertura_acumulada_g1_g2_g3_referencia": "G1 cubrió RA1+RA2+RA3 (A1.1) · G2 cubre RA4+RA5+RA6 (A1.2) · CIERRE programa integra todo"
+    }
+  },
+  "_competencias_tecnicas_modo": "single-comp-v2.0",
+  "_n_competencias_tecnicas": 1,
+  "_competencias_tecnicas_codigos": [
+    "234567890"
+  ],
+  "_split_strategy_heredado": {
+    "valor_canon": "A",
+    "etiqueta_corta": "equilibrado",
+    "descripcion_completa": "A · equilibrado · Guía 1 = RA1+RA2+RA3 · Guía 2 = RA4+RA5+RA6",
+    "decision_capstone": "Guía 2 = RA4+RA5+RA6",
+    "_fuente": "parser_canon_v3.4_string",
+    "guide_id": "G2",
+    "guide_total": 2
+  },
+  "_raps_metadata": {
+    "raps_count_esta_guia": 3,
+    "raps_count_total_programa": 6,
+    "guide_id": "G2",
+    "guide_total": 2,
+    "raps_ids_esta_guia": [
+      "RA4",
+      "RA5",
+      "RA6"
+    ],
+    "raps_ids_total_programa": [
+      "RA1",
+      "RA2",
+      "RA3",
+      "RA4",
+      "RA5",
+      "RA6"
+    ]
+  },
+  "_position_programa": {
+    "guide_id": "G2",
+    "guide_total": 2,
+    "k_index": 2,
+    "es_apertura": false,
+    "es_intermedia": false,
+    "es_cierre_programa": true,
+    "es_unica_guia": false,
+    "saberes_acumulados_g_anteriores": {
+      "G1": {
+        "ra_codigos_cubiertos": [
+          "RA1",
+          "RA2",
+          "RA3"
+        ],
+        "cefr_subnivel_alcanzado": "A1.1",
+        "verbo_cognitivo_dominante_split": "COMPRENDER + IDENTIFICAR receptivo recreativo básico",
+        "_fuente": "split_strategy_string"
+      },
+      "G_anterior_más_próxima": "G1"
+    },
+    "_anclaje_matriz": {
+      "split_strategy_heredado": "@_split_strategy_heredado",
+      "raps_metadata_heredado": "@_raps_metadata",
+      "fuente_inferencia": "split_strategy_string"
+    }
+  },
+  "evidencias_formales_traceability": {
+    "E1_S3_Reading": {
+      "criterio_especifico": "C01",
+      "rap": "RA4",
+      "instrumento": "Cuestionario No 1"
+    },
+    "E2_S4_Writing": {
+      "criterio_especifico": "C02",
+      "rap": "RA5",
+      "instrumento": "Lista de Verificación No 2"
+    },
+    "E3_S5_Listening": {
+      "criterio_especifico": "C03",
+      "rap": "RA5",
+      "instrumento": "Lista de Verificación No 3"
+    },
+    "E4_S6_Speaking": {
+      "criterio_especifico": "C04",
+      "rap": "RA6",
+      "instrumento": "Escala No 4"
+    },
+    "E5_S7_LangFunctions": {
+      "criterio_especifico": "C05",
+      "rap": "RA6",
+      "instrumento": "Escala No 5"
+    },
+    "E6_S8_Cuestionario": {
+      "criterio_especifico": "C06",
+      "rap": [
+        "RA4",
+        "RA5",
+        "RA6"
+      ],
+      "instrumento": "Cuestionario Consolidado No 6"
+    },
+    "EMision_S12_ABP": {
+      "criterio_especifico": "C08",
+      "rap": "RA6",
+      "instrumento": "Rúbrica ABP CIERRE PROGRAMA"
+    }
+  },
+  "validation_checks": [
+    {
+      "id": 1,
+      "name": "matriz_alineada_ref_valid",
+      "status": "PASS"
+    },
+    {
+      "id": 2,
+      "name": "cefr_subnivel_canonical",
+      "status": "PASS"
+    },
+    {
+      "id": 3,
+      "name": "universo_narrativo_complete",
+      "status": "PASS"
+    },
+    {
+      "id": 4,
+      "name": "principios_aplicados",
+      "status": "PASS"
+    },
+    {
+      "id": 5,
+      "name": "no_duplication_matriz",
+      "status": "PASS"
+    },
+    {
+      "id": 6,
+      "name": "anti_copia_fantasma",
+      "status": "PASS"
+    },
+    {
+      "id": 7,
+      "name": "traceability_matriz_completa",
+      "status": "PASS"
+    },
+    {
+      "id": 8,
+      "name": "multi_comp_compatibility",
+      "status": "N/A",
+      "evidence": "single-comp-v2.0"
+    },
+    {
+      "id": 9,
+      "name": "bloom_progression_monotonica",
+      "status": "N/A",
+      "evidence": "es_cierre_programa · REGLA 14.5 NO aplica en cierre"
+    }
+  ],
+  "downstream_consumers": [
+    "PM-1.1",
+    "PM-1.2",
+    "PM-2.0",
+    "PM-2.x",
+    "PM-2.11",
+    "PM-3.6"
+  ],
+  "_audit": {
+    "input_source": "runs/RECREACION-IMDER-2026-05-04/pm-0-0-matriz-alineada-G2.json",
+    "input_completeness": "matriz alineada G2 v1.0 era · _cobertura_total_programa MISSING (drift documentado sesión 4/4 cluster)",
+    "input_normalizations": [
+      "split_strategy STRING upstream → objeto via parse_split_strategy() canon",
+      "es_ultima_guia: None upstream → True (G2 of 2 = es_cierre)",
+      "_competencias_tecnicas_modo: single-comp-v2.0 (matriz schema_version=v1.0 era)"
+    ],
+    "personajes_nominados_count": 0,
+    "jerga_tecnica_interna_count_aprendiz_facing": 0,
+    "rebuild_2026_05_06": "Camino B structured creation · scaffolded canon-conforme · CIERRE PROGRAMA + REGLA 13.3 active"
+  },
+  "enriched": true,
+  "_block_downstream_until_gate0": false,
+  "_paradigm_note": "Camino B structured creation · single-comp v2.0 + CIERRE PROGRAMA + multi-guía conditional schemas activos",
+  "_canon_authority": "PM-0 v3.4.1 + schema v3.4 (Mejoras #3+#4)"
+}
