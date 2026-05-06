@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/gfpi-f-134-row.schema.json",
+  "title": "GFPI-F-134 Row — Canon V04 · 6 filas tripartitas",
+  "description": "Canon V04 oficial SENA (2026-05-02 Wave 5.D PM-2.11 v3.3). Schema NEW from scratch · creado en Hito 4 (d) sub-task 4 (CC) post audit doc Cowork. Cada fila representa 1 sub_bloque pedagógico (APERTURA · APROPIACIÓN per RAP · TRANSFERENCIA). Emitido por PM-2.11 v3.3 Row Assembler en field gfpi_f134_v04_rows[] · consumido por PM-3.7 V04 (xlsx renderer). Estructura runtime canon ground truth: runs/IMARPOR-CC-2026-04-30-V2/pm-2-11.json (6 filas tripartitas verificadas). Coordinado con CC F2.8 schema drift CI Hito 4 (d) sub-task 4.",
+  "type": "object",
+  "required": [
+    "_orden",
+    "_bloque_id",
+    "_tipo_bloque",
+    "_sub_bloque_titulo",
+    "_sesiones_anchor",
+    "_cefr_subnivel",
+    "_anclaje_matriz_bloque_heredado",
+    "C1_competencia",
+    "C2_rap",
+    "C4_saberes_conceptos",
+    "C5_saberes_proceso",
+    "C6_criterios_evaluacion",
+    "C7_actividades_aprendizaje",
+    "_C7_total",
+    "C8_horas_directo",
+    "C9_horas_independiente",
+    "C10_evidencias",
+    "_C10_total",
+    "C11_estrategias_didacticas",
+    "C12_ambiente",
+    "C13_materiales_formacion",
+    "C14_instructores_responsables",
+    "C15_observaciones",
+    "_criterios_por_actividad_bloque"
+  ],
+  "properties": {
+    "_orden": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Orden de la fila en el array · 1=APERTURA · N=TRANSFERENCIA"
+    },
+    "_bloque_id": {
+      "type": "string",
+      "pattern": "^B(0|[0-9]+|T)(_[A-Z_]+)?(_RA[0-9]+)?$",
+      "description": "ID bloque · APERTURA=B0_APERTURA · APROPIACIÓN=B<n>_APROPIACION_RA<m> · TRANSFERENCIA=BT_TRANSFERENCIA"
+    },
+    "_tipo_bloque": {
+      "type": "string",
+      "enum": ["APERTURA", "APROPIACIÓN", "TRANSFERENCIA", "APROPIACION"],
+      "description": "Discriminator V04 · 3 valores canon. Runtime legacy puede emitir 'APROPIACION' sin tilde · drift fixture documentado."
+    },
+    "_sub_bloque_titulo": { "type": "string", "minLength": 5 },
+    "_sesiones_anchor": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^S[0-9]+$" },
+      "minItems": 1,
+      "description": "Sesiones que esta fila ancla (ej. ['S1', 'S2'])"
+    },
+    "_cefr_subnivel": {
+      "type": "string",
+      "pattern": "^(A1\\.[1-3]|A2\\.[0-2]|B1\\.[0-2])$"
+    },
+    "_anclaje_matriz_bloque_heredado": {
+      "type": "object",
+      "description": "Trazabilidad heredada upstream pm-1-1.bloques._anclaje_matriz_bloque",
+      "required": ["raps_que_atraviesa"],
+      "properties": {
+        "raps_que_atraviesa": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^RA[0-9]+$" }
+        },
+        "competencias_tecnicas": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[0-9]{9}$" },
+          "description": "Multi-comp · códigos heredados upstream"
+        },
+        "competencias_tecnicas_integradas": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[0-9]{9}$" },
+          "description": "Solo TRANSFERENCIA + multi-comp + CIERRE PROGRAMA"
+        },
+        "cierre_programa": { "type": "boolean" },
+        "saberes_que_modela": { "type": "array", "items": { "type": "string" } },
+        "criterios_que_evalua": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "C1_competencia": {
+      "type": "string",
+      "minLength": 30,
+      "description": "Columna 1 GFPI-F-134 · enunciado oficial competencia SENA"
+    },
+    "C2_rap": {
+      "type": "string",
+      "minLength": 30,
+      "description": "Columna 2 GFPI-F-134 · enunciado oficial RAP"
+    },
+    "C4_saberes_conceptos": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Columna 4 · saberes conceptuales (C3 NO emitido · heredado de C2)"
+    },
+    "C5_saberes_proceso": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Columna 5 · saberes de proceso"
+    },
+    "C6_criterios_evaluacion": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Columna 6 · criterios de evaluación"
+    },
+    "C7_actividades_aprendizaje": {
+      "type": "array",
+      "description": "Columna 7 · plantilla canon Sergio V+O+C · 1 línea por actividad",
+      "items": {
+        "type": "object",
+        "required": ["numero", "verbo_obj_cond"],
+        "properties": {
+          "numero": { "type": "string", "description": "Número actividad (ej. '1', '2', '3.1')" },
+          "verbo_obj_cond": { "type": "string", "minLength": 20, "description": "V+O+C concatenado" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "_C7_total": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "v3.1 NEW · contador de actividades en la fila"
+    },
+    "C8_horas_directo": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Columna 8 · horas presenciales directas"
+    },
+    "C9_horas_independiente": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Columna 9 · horas trabajo autónomo"
+    },
+    "C10_evidencias": {
+      "type": "array",
+      "description": "Columna 10 · plantilla canon Sergio · 3 líneas por evidencia",
+      "items": {
+        "type": "object",
+        "required": ["evidencia_id", "instrumento", "linea_3"],
+        "properties": {
+          "evidencia_id": {
+            "type": "string",
+            "pattern": "^(E[1-6]|EMision)$",
+            "description": "Código evidencia (E1-E6 estándar · EMision para Final Mission)"
+          },
+          "instrumento": { "type": "string" },
+          "linea_3": { "type": "string", "minLength": 10 }
+        },
+        "additionalProperties": true
+      }
+    },
+    "_C10_total": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "v3.1 NEW · contador de evidencias en la fila"
+    },
+    "C11_estrategias_didacticas": {
+      "type": "array",
+      "description": "Columna 11 v3.1 NEW canon · estrategia POR actividad (no por bloque · resuelve drift v2.6 monolítico)",
+      "items": {
+        "type": "object",
+        "required": ["actividad_numero", "estrategia"],
+        "properties": {
+          "actividad_numero": { "type": "string" },
+          "estrategia": { "type": "string", "minLength": 20 }
+        },
+        "additionalProperties": true
+      }
+    },
+    "C12_ambiente": {
+      "type": "string",
+      "description": "Columna 12 · ambiente formación (aula · taller · laboratorio · etc.)"
+    },
+    "C13_materiales_formacion": {
+      "type": "string",
+      "description": "Columna 13 · materiales formación"
+    },
+    "C14_instructores_responsables": {
+      "type": "string",
+      "description": "Columna 14 · instructores responsables"
+    },
+    "C15_observaciones": {
+      "type": "string",
+      "description": "Columna 15 · observaciones libres"
+    },
+    "_criterios_por_actividad_bloque": {
+      "type": "array",
+      "description": "v3.3 NEW · heredancia mixta criterios per AC desde Wave B regenerar · trazabilidad downstream",
+      "items": { "type": "object", "additionalProperties": true }
+    }
+  },
+  "allOf": [
+    {
+      "description": "APERTURA · _bloque_id pattern B0_APERTURA",
+      "if": { "properties": { "_tipo_bloque": { "const": "APERTURA" } }, "required": ["_tipo_bloque"] },
+      "then": { "properties": { "_bloque_id": { "pattern": "^B0_APERTURA" } } }
+    },
+    {
+      "description": "TRANSFERENCIA · _bloque_id pattern BT_TRANSFERENCIA",
+      "if": { "properties": { "_tipo_bloque": { "const": "TRANSFERENCIA" } }, "required": ["_tipo_bloque"] },
+      "then": { "properties": { "_bloque_id": { "pattern": "^BT_TRANSFERENCIA" } } }
+    },
+    {
+      "description": "APROPIACIÓN · _anclaje_matriz_bloque_heredado.raps_que_atraviesa minItems 1",
+      "if": {
+        "properties": {
+          "_tipo_bloque": { "enum": ["APROPIACIÓN", "APROPIACION"] }
+        },
+        "required": ["_tipo_bloque"]
+      },
+      "then": {
+        "properties": {
+          "_anclaje_matriz_bloque_heredado": {
+            "properties": {
+              "raps_que_atraviesa": { "type": "array", "minItems": 1 }
+            },
+            "required": ["raps_que_atraviesa"]
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": true
+}

@@ -1,0 +1,405 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fpi-sena-factory/v4/schemas/pm-1-2.schema.json",
+  "title": "PM-1.2 — Scope & Sequence + Curación de Fuentes (v4.0)",
+  "_status": "PARTIAL-CANON-NEEDS-REVALIDATION",
+  "_warning": "Este schema fue derivado parcialmente del canon (gate enriched:true, source_assignment, curated_sources flexibles 2-5) pero NO ha sido re-validado contra el canon completo del pipeline post-v4.1. Las SOTs reales son: (1) master-prompts/PM-1.2 — Scope & Sequence — Desarrollo por Bloque.md (los 4 bloques canónicos: Bloque 0 / A / B / C + 9 reglas + ficha curación) y (2) runs/MGV-2026-04-20/pm-1-2.json (canon operacional). Esta sesión solo añadió Curso Especial al enum tipo, no auditó la cobertura completa del schema. Pendiente de re-derivación desde el canon real.",
+  "_re_derive_pending": true,
+  "_re_derive_sources": [
+    "master-prompts/PM-1.2 — Scope & Sequence — Desarrollo por Bloque.md (4 bloques canónicos + 9 reglas)",
+    "runs/MGV-2026-04-20/pm-1-2.json (canon operacional de facto, al menos 1 de los 6)",
+    "runs/DIESEL-2026-04-19/pm-1-2.json (canon operacional alterno)"
+  ],
+  "description": "Primer artefacto de Fase 1 que produce Scope & Sequence, enriquece identification/guide_design_dna/content_core/integrative_task/evaluation_matrix, emite columnas 1-5 de GFPI-F-134 y cura 2-5 fuentes auténticas con asignación obligatoria a artefactos destino. Refactor v4.0: (a) curated_sources flexibles 2-5 en vez de fijo 3, (b) cada fuente declara origin (system_curated | instructor_provided), (c) source_assignment obligatorio mapea cada id de fuente a un artefacto destino, (d) enriched:true es el gate que autoriza Fase 2. v4.1 (2026-04-26): tipo enum admite Curso Especial; intensidad/horas/sesiones flexibles (no const 60/48/12/8) para soportar guías no-estándar de PM-1.1 v2.7.",
+  "type": "object",
+  "required": [
+    "pm_id",
+    "run_id",
+    "model",
+    "generated_at",
+    "guide",
+    "cefr_level",
+    "status",
+    "enriched",
+    "identification",
+    "guide_design_dna",
+    "content_core",
+    "integrative_task",
+    "evaluation_matrix",
+    "gfpi_f134_cols_1_5",
+    "curated_sources",
+    "source_assignment"
+  ],
+  "properties": {
+    "pm_id": {
+      "type": "string",
+      "const": "PM-1.2"
+    },
+    "run_id": { "$ref": "common/run-id.schema.json" },
+    "model": { "type": "string", "minLength": 3 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "guide": {
+      "type": "string",
+      "description": "Identificador de la guía dentro del programa (ej. G1, G2, G1.1)"
+    },
+    "cefr_level": { "$ref": "common/cefr-level.schema.json" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "pending_review", "approved", "locked"]
+    },
+    "enriched": {
+      "type": "boolean",
+      "const": true,
+      "description": "Gate v4.0: debe ser true para autorizar Fase 2. Si pm-1-2 no está enriquecido, la pipeline no avanza a pm-2-0."
+    },
+    "presentacion": {
+      "type": "string",
+      "minLength": 50,
+      "description": "Texto de presentación de la guía al aprendiz (narrativa breve)"
+    },
+    "identification": {
+      "type": "object",
+      "required": [
+        "programa",
+        "tipo",
+        "guia",
+        "macrotheme",
+        "intensidad_horas",
+        "horas_directa",
+        "horas_autonoma",
+        "sesiones",
+        "cefr"
+      ],
+      "properties": {
+        "programa": { "type": "string", "minLength": 5 },
+        "tipo": { "type": "string", "enum": ["Técnico", "Tecnológico", "Curso Especial"], "description": "v4.1: admite Curso Especial." },
+        "ficha": { "type": "string" },
+        "guia": { "type": "string" },
+        "macrotheme": { "type": "string", "minLength": 3 },
+        "intensidad_horas": { "type": "integer", "minimum": 1, "description": "v4.1: hereda de pm-1-1.horas_por_bloque. Estándar 60h; admite 30-90h en variantes legítimas (micro-guías o guías largas)." },
+        "horas_directa": { "type": "integer", "minimum": 1, "description": "v4.1: típicamente 80% de intensidad_horas." },
+        "horas_autonoma": { "type": "integer", "minimum": 0, "description": "v4.1: típicamente 20% de intensidad_horas." },
+        "sesiones": { "type": "integer", "minimum": 1, "description": "v4.1: número de sesiones de la guía. Estándar 8; admite menos si intensidad_horas < 60." },
+        "cefr": { "$ref": "common/cefr-level.schema.json" }
+      },
+      "additionalProperties": false
+    },
+    "guide_design_dna": {
+      "type": "object",
+      "required": ["nombre_conceptual", "enfoque", "entendimientos_perdurables"],
+      "properties": {
+        "nombre_conceptual": { "type": "string", "minLength": 5 },
+        "enfoque": { "type": "string", "minLength": 20 },
+        "entendimientos_perdurables": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 15 },
+          "minItems": 3,
+          "maxItems": 6
+        }
+      },
+      "additionalProperties": false
+    },
+    "content_core": {
+      "type": "object",
+      "required": [
+        "technical_topics",
+        "communicative_functions",
+        "language_functions_in_context",
+        "key_vocabulary"
+      ],
+      "properties": {
+        "technical_topics": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 3
+        },
+        "communicative_functions": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 3,
+          "maxItems": 8,
+          "description": "Funciones F1..Fn que se trabajarán comunicativamente en S5"
+        },
+        "language_functions_in_context": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["structure", "example"],
+            "properties": {
+              "structure": { "type": "string", "minLength": 3 },
+              "example": { "type": "string", "minLength": 5 }
+            },
+            "additionalProperties": false
+          },
+          "minItems": 3
+        },
+        "key_vocabulary": {
+          "type": "array",
+          "minItems": 20,
+          "maxItems": 30,
+          "description": "Vocabulario técnico target de la guía (mínimo 20, máximo 30)",
+          "items": {
+            "type": "object",
+            "required": ["numero", "term", "category", "context"],
+            "properties": {
+              "numero": { "type": "integer", "minimum": 1 },
+              "term": { "type": "string", "minLength": 2 },
+              "category": { "type": "string", "minLength": 3 },
+              "context": { "type": "string", "minLength": 5 }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "integrative_task": {
+      "type": "object",
+      "required": ["nombre", "descripcion", "entregable_escrito", "entregable_oral"],
+      "properties": {
+        "nombre": { "type": "string", "minLength": 5 },
+        "descripcion": { "type": "string", "minLength": 30 },
+        "entregable_escrito": { "type": "string", "minLength": 10 },
+        "entregable_oral": { "type": "string", "minLength": 10 }
+      },
+      "additionalProperties": false
+    },
+    "evaluation_matrix": {
+      "type": "array",
+      "minItems": 3,
+      "description": "Matriz sintética de evaluación previa a GFPI-F-134 (criterios alto nivel)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "criterio": { "type": "string" },
+          "descriptor": { "type": "string" },
+          "evidencia": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "gfpi_f134_cols_1_5": {
+      "type": "object",
+      "description": "Columnas 1-5 de GFPI-F-134 emitidas por pm-1-2. Columnas 6-11 las pobla pm-3-1.",
+      "required": [
+        "competencia",
+        "resultado_aprendizaje",
+        "saberes_conceptos_principios",
+        "saberes_proceso",
+        "criterios_evaluacion"
+      ],
+      "properties": {
+        "competencia": {
+          "type": "object",
+          "required": ["codigo", "nombre"],
+          "properties": {
+            "codigo": {
+              "type": "string",
+              "minLength": 3,
+              "description": "Código SOFÍA Plus o 'PENDIENTE' mientras se confirma con diseño curricular"
+            },
+            "nombre": { "type": "string", "minLength": 30 },
+            "contexto": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "resultado_aprendizaje": {
+          "type": "object",
+          "required": ["codigo", "descripcion"],
+          "properties": {
+            "codigo": {
+              "type": "string",
+              "pattern": "^[0-9]{6,12}$",
+              "description": "Código SOFÍA Plus del RAP (numérico)"
+            },
+            "descripcion": { "type": "string", "minLength": 30 }
+          },
+          "additionalProperties": false
+        },
+        "saberes_conceptos_principios": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 6,
+          "maxItems": 12
+        },
+        "saberes_proceso": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 4,
+          "maxItems": 10
+        },
+        "criterios_evaluacion": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 3,
+          "maxItems": 8
+        },
+        "source_pm": { "type": "string", "const": "PM-1.2" },
+        "macrotheme": { "type": "string" },
+        "cefr_level": { "$ref": "common/cefr-level.schema.json" },
+        "program_type": { "type": "string", "enum": ["Técnico", "Tecnológico", "Curso Especial"], "description": "v4.1: admite Curso Especial." }
+      },
+      "additionalProperties": false
+    },
+    "curated_sources": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 5,
+      "description": "Fuentes auténticas curadas (2-5). Cada fuente debe declarar origin y ser consumida por source_assignment.",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "origin",
+          "rol",
+          "titulo",
+          "autor",
+          "publicacion",
+          "url",
+          "genero",
+          "verification_status",
+          "resumen",
+          "vocabulario_extraible",
+          "funciones_comunicativas",
+          "estructuras_gramaticales",
+          "hots",
+          "notas_adaptacion"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^src-[A-Z]$",
+            "description": "Identificador corto: src-A, src-B, src-C, src-D, src-E"
+          },
+          "origin": {
+            "type": "string",
+            "enum": ["system_curated", "instructor_provided"],
+            "description": "system_curated: fuente seleccionada/verificada por el motor LG Factory; instructor_provided: fuente aportada por el instructor (manual upload)"
+          },
+          "rol": {
+            "type": "string",
+            "description": "Rol pedagógico asignado (Principal reading, Secondary listening, etc.) — legible humano; la asignación formal vive en source_assignment"
+          },
+          "titulo": { "type": "string", "minLength": 5 },
+          "autor": { "type": "string" },
+          "publicacion": { "type": "string" },
+          "fecha": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "genero": { "type": "string" },
+          "verification_status": {
+            "type": "string",
+            "enum": ["verified_live", "verified_archived", "pending", "replaced"],
+            "description": "Estado máquina de verificación. Prose descriptivo va en verification_notes."
+          },
+          "verification_notes": {
+            "type": "string",
+            "description": "Narrativa humana del proceso de verificación (método, evidencia encontrada, observaciones)"
+          },
+          "resumen": { "type": "string", "minLength": 40 },
+          "vocabulario_extraible": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 5
+          },
+          "funciones_comunicativas": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          },
+          "estructuras_gramaticales": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          },
+          "hots": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1,
+            "description": "Preguntas/tareas HOTS que habilita la fuente"
+          },
+          "notas_adaptacion": {
+            "type": "object",
+            "required": ["mantener", "simplificar_a1", "potencial_visual"],
+            "properties": {
+              "mantener": { "type": "string", "minLength": 10 },
+              "simplificar_a1": { "type": "string", "minLength": 10 },
+              "potencial_visual": { "type": "string", "minLength": 10 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "source_assignment": {
+      "type": "object",
+      "description": "Mapeo obligatorio: cada key es un artefacto destino; el value es el id de una fuente declarada en curated_sources. reading y listening son obligatorios (alimentan E1 y E3). writing, final_mission y cuestionario son opcionales pero recomendados.",
+      "required": ["reading", "listening"],
+      "properties": {
+        "reading": {
+          "type": "string",
+          "pattern": "^src-[A-Z]$",
+          "description": "Fuente que alimenta el Master Anchor de S2 (PM-2.3) — Evidencia E1"
+        },
+        "listening": {
+          "type": "string",
+          "pattern": "^src-[A-Z]$",
+          "description": "Fuente que alimenta el Auditory Anchor de S4 (PM-2.6) — Evidencia E3"
+        },
+        "writing": {
+          "type": "string",
+          "pattern": "^src-[A-Z]$",
+          "description": "Fuente modelo para la tarea de escritura de S3 (PM-2.4) — Evidencia E2"
+        },
+        "final_mission": {
+          "type": "string",
+          "pattern": "^src-[A-Z]$",
+          "description": "Fuente ancla para la Misión Final integradora (S6½-S8)"
+        },
+        "cuestionario": {
+          "type": "string",
+          "pattern": "^src-[A-Z]$",
+          "description": "Fuente referente para el Cuestionario Consolidado S6 (PM-4.2) — Evidencia E6"
+        }
+      },
+      "additionalProperties": false
+    },
+    "curated_sources_verification_log": {
+      "type": "object",
+      "description": "Log de verificación consolidado de fuentes (método, fecha, estado de originales, reemplazos)",
+      "required": ["method", "date"],
+      "properties": {
+        "method": {
+          "type": "string",
+          "description": "Cómo se verificó (WebFetch, WebSearch, manual lookup, etc.)"
+        },
+        "date": {
+          "type": "string",
+          "description": "Fecha de la verificación (YYYY-MM-DD o ISO date-time)"
+        },
+        "original_sources_status": {
+          "type": "object",
+          "additionalProperties": { "type": "string" },
+          "description": "Mapa id-original → estado descriptivo (CONFIRMED / NOT FOUND / REPLACED)"
+        },
+        "replacement_confidence": {
+          "type": "string",
+          "description": "Evaluación cualitativa de la confianza en las fuentes de reemplazo"
+        }
+      },
+      "additionalProperties": true
+    },
+    "instructor_notes": {
+      "type": "object",
+      "description": "Notas operativas libres para el instructor (keys arbitrarias, values string). No es un campo narrativo único — es un bolsillo de contexto.",
+      "additionalProperties": { "type": "string" }
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "description": "Guarda-rail: todo id declarado en source_assignment debe existir en curated_sources. La validación estructural verifica el pattern src-[A-E]; un validador externo (CHECK 3) verifica la existencia cruzada.",
+      "$comment": "Cross-reference enforcement lives in CHECK 3 of the validator; schema enforces only the pattern here."
+    }
+  ]
+}

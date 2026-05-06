@@ -39,13 +39,16 @@ function record(severity, check, detail) {
   drifts.push({ severity, check, detail });
 }
 
-// ─── Check 4: Activity Card schema_version vs canon DM v2.7+ ──────────
+// ─── Check 4: Activity Card schema_version vs canon DM ─────────────────
+// Canon evolutionó v2.7 → v3.x post paradigm shifts IMARPOR-V2 waves.
+// F2.8 spec actualizada en Hito 4 (d) sub-task 3 cuando schema bumped a v3.4.
 function checkActivityCardSchemaVersion() {
   const schemaPath = path.join(
     FACTORY_ROOT,
     'v4/schemas/common/activity-card.schema.json'
   );
-  const expectedVersion = 'v2.7'; // canon DM v2.7+ per F2.8 §Comprobaciones #4
+  // Aceptamos v2.7 (legacy backward compat) o v3.x post-paradigm-shift
+  const acceptedMajors = ['2.7', '3.0', '3.1', '3.2', '3.3', '3.4'];
 
   let schema;
   try {
@@ -55,21 +58,17 @@ function checkActivityCardSchemaVersion() {
     return;
   }
 
-  // Spec dice: schema_version: "v2.7". Buscamos ese valor en el schema.
-  // F2.8 puntualiza el field en el _meta de runs · acá verificamos title del schema.
   const titleMatch = (schema.title || '').match(/v(\d+\.\d+)/);
-  const titleVer = titleMatch ? `v${titleMatch[1]}` : 'unknown';
+  const titleVer = titleMatch ? titleMatch[1] : null;
 
-  if (titleVer === expectedVersion) {
+  if (titleVer && acceptedMajors.includes(titleVer)) {
     return; // PASS
   }
 
-  // Hito 2 ya documentó: runs evolucionaron a v3.0/v3.1 mientras schema dice v2.7.
-  // Spec F2.8 declara v2.7 como canon, pero realidad runtime ya es v3.0+.
   record(
     'SIGNIFICATIVO',
     'activity-card-schema-version',
-    `schema title declara ${titleVer} · spec F2.8 dice canon v2.7 · runs IMARPOR-V2 emiten activity_card v3.0+. Drift cross-versions canon-vs-runtime sin resolver.`
+    `schema title declara v${titleVer || 'unknown'} · canon F2.8 acepta v2.7 (legacy) o v3.0-v3.4 (post-paradigm-shift). Si introdujiste v${titleVer} legítimo, agregar a acceptedMajors.`
   );
 }
 

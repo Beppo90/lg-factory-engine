@@ -1,32 +1,40 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "fpi-sena-factory/v4/schemas/common/activity-card.schema.json",
-  "title": "Activity Card — Canon 6 Bloques v2.7",
-  "description": "Anatomía obligatoria de toda actividad del sistema. Uso: pm-2-x (actividades origen), pm-3-1 (resumen Col 6 GFPI-F-134), pm-3-2-sX (expansión facilitator-facing), pm-3-6 (learner-facing), pm-3-4 (workbook mirror). 6 bloques en orden fijo: (1) headline V+O+C, (2) narrativa bilingüe ES/EN, (3) paso a paso, (4) entregable, (5) evidencia, (6) activity_footer. Decisión v2.7 sellada el 2026-04-21 Dry-Run Pedagógico.",
+  "title": "Activity Card — Canon Aprendiz-Facing v3.4",
+  "description": "Anatomía canónica de actividad post 5 paradigm shifts cumulative AC v3.0→v3.4 (2026-05-02/03). Reemplaza v2.7 6-Bloques pre-aprendiz-facing (preservado como .legacy-v2.7-pre-aprendiz-facing). Bumps cumulative: v3.0 UNA dimensión por card · descripcion multi-párrafo + material_apoyo[] + numero_actividad acumulado · v3.1 criterios_evaluacion[] obligatorio · v3.2 descripcion_aprendiz + recursos_aprendiz aprendiz-facing · v3.3 deprecation soft recursos_aprendiz + materiales_aprendiz_inline + worksheets_aprendiz_anexo · v3.4 _anclaje_pedagogico_pm0_pre_pm32 hook PM-3.2 capa 1. Uso: pm-2-x (actividades origen), pm-3-1 (resumen Col 6 GFPI-F-134), pm-3-2-sX (expansión facilitator-facing), pm-3-6 (learner-facing), pm-3-4 (workbook mirror). Coordinado con CC F2.8 schema drift CI Hito 4 (d) sub-task 3.",
   "type": "object",
   "required": [
-    "activity_id",
     "headline_voc",
     "narrativa_bilingue",
     "paso_a_paso",
     "entregable",
     "evidencia",
-    "activity_footer"
+    "activity_footer",
+    "descripcion_aprendiz",
+    "criterios_evaluacion",
+    "numero_actividad"
   ],
   "properties": {
     "activity_id": {
       "type": "string",
       "pattern": "^A[0-9]+(\\.[0-9]+)?$",
-      "description": "Identificador único de actividad dentro de la guía (ej. A1, A3.2, A28)"
+      "description": "Identificador único v2.7 (legacy) · v3.0 prefiere numero_actividad acumulado"
+    },
+    "numero_actividad": {
+      "type": "string",
+      "pattern": "^[0-9]+(\\.[0-9]+)?$",
+      "description": "v3.0 NEW · numeración acumulada cross-sesión (ej. 1, 2, 3.1, 3.2)"
     },
     "headline_voc": {
       "type": "object",
-      "description": "Bloque 1 — Headline V+O+C. Hereda $ref de voc-descriptor pero añade 'dimension_primaria' (la dimensión dominante para el headline).",
+      "description": "Bloque 1 v2.7 · Headline V+O+C. dimension_primaria + verbo + objeto + condicion.",
       "required": ["dimension_primaria", "verbo", "objeto", "condicion"],
       "properties": {
         "dimension_primaria": {
           "type": "string",
-          "enum": ["cognitiva", "procedimental", "actitudinal"]
+          "enum": ["cognitiva", "procedimental", "actitudinal"],
+          "description": "v3.0 · UNA dimensión dominante por card"
         },
         "verbo": { "type": "string", "minLength": 3 },
         "objeto": { "type": "string", "minLength": 5 },
@@ -36,155 +44,152 @@
     },
     "narrativa_bilingue": {
       "type": "object",
-      "description": "Bloque 2 — Texto narrativo descriptivo en ES (instructor reference) + EN (student-facing, técnico simplificado al nivel CEFR de la guía)",
+      "description": "Bloque 2 v2.7 · ES instructor reference + EN student-facing técnico simplificado al CEFR",
       "required": ["es", "en"],
       "properties": {
-        "es": {
-          "type": "string",
-          "minLength": 30,
-          "description": "Narrativa en español — explica intención pedagógica de la actividad"
-        },
-        "en": {
-          "type": "string",
-          "minLength": 30,
-          "description": "Narrativa en inglés técnico al CEFR de la guía — leíble por el aprendiz"
-        }
+        "es": { "type": "string", "minLength": 30 },
+        "en": { "type": "string", "minLength": 30 }
       },
       "additionalProperties": false
     },
     "paso_a_paso": {
       "type": "array",
-      "description": "Bloque 3 — Instrucciones secuenciales para el aprendiz. Canon v2.7: granularidad 5-7 pasos óptima.",
+      "description": "Bloque 3 v2.7 · 3-10 pasos secuenciales",
       "minItems": 3,
       "maxItems": 10,
-      "items": {
-        "type": "object",
-        "required": ["numero", "instruccion"],
-        "properties": {
-          "numero": { "type": "integer", "minimum": 1 },
-          "instruccion": { "type": "string", "minLength": 10 },
-          "duracion_min": {
-            "type": "integer",
-            "minimum": 1,
-            "description": "Duración estimada del paso en minutos"
-          },
-          "modalidad": {
-            "type": "string",
-            "enum": ["individual", "parejas", "pequeño grupo", "plenaria"]
-          }
-        },
-        "additionalProperties": false
-      }
+      "items": { "type": "string", "minLength": 10 }
     },
     "entregable": {
       "type": "object",
-      "description": "Bloque 4 — Producto tangible esperado al cierre de la actividad",
-      "required": ["descripcion", "formato"],
-      "properties": {
-        "descripcion": {
-          "type": "string",
-          "minLength": 20,
-          "description": "Qué debe entregar el aprendiz"
-        },
-        "formato": {
-          "type": "string",
-          "enum": [
-            "Texto escrito",
-            "Diálogo oral",
-            "Presentación",
-            "Lista/Tabla",
-            "Mapa mental",
-            "Formulario/Reporte",
-            "Dramatización/Roleplay",
-            "Demostración práctica",
-            "Audio grabado",
-            "Video corto",
-            "Otro"
-          ]
-        },
-        "extension": {
-          "type": "string",
-          "description": "Extensión mínima/máxima (ej. '80-120 palabras', '2-3 minutos', '5 turnos de diálogo')"
-        }
-      },
-      "additionalProperties": false
+      "description": "Bloque 4 v2.7 · qué produce el aprendiz",
+      "additionalProperties": true
     },
     "evidencia": {
       "type": "object",
-      "description": "Bloque 5 — Conexión con evidencia. Si es_formal=true, debe llenar codigo_evidencia y criterio_observable.",
-      "required": ["es_formal"],
-      "properties": {
-        "es_formal": {
-          "type": "boolean",
-          "description": "true = alimenta una de las 6 evidencias formales; false = actividad formativa sin valor sumativo"
-        },
-        "codigo_evidencia": {
-          "type": "string",
-          "enum": ["E1", "E2", "E3", "E4", "E5", "E6", "N/A"]
-        },
-        "criterio_observable": {
-          "type": "string",
-          "minLength": 20,
-          "description": "Descriptor observable alineado a instrumento (Lista de Chequeo / Rúbrica / Cuestionario)"
-        }
-      },
-      "additionalProperties": false,
-      "allOf": [
-        {
-          "if": { "properties": { "es_formal": { "const": true } } },
-          "then": {
-            "required": ["codigo_evidencia", "criterio_observable"],
-            "properties": {
-              "codigo_evidencia": { "not": { "const": "N/A" } }
-            }
-          }
-        }
-      ]
+      "description": "Bloque 5 v2.7+ · v3.0 agrega field 'nombre' descriptivo",
+      "additionalProperties": true
     },
     "activity_footer": {
       "type": "object",
-      "description": "Bloque 6 — Metadatos canónicos. Obligatorio en TODAS las renderizaciones de actividad (pm-3-1, pm-3-2, pm-3-4, pm-3-6).",
-      "required": [
-        "arquetipo",
-        "sesion",
-        "fase_sena",
-        "bloom_level",
-        "duracion_total_min",
-        "pm_origen"
-      ],
+      "description": "Bloque 6 v2.7 · footer derivado upstream PM-3.1 / PM-3.2-sX / PM-4.1",
+      "additionalProperties": true
+    },
+    "descripcion_aprendiz": {
+      "type": "string",
+      "minLength": 400,
+      "maxLength": 1500,
+      "description": "v3.2 NEW OBLIGATORIO · canon SENA aprendiz-facing · tono impersonal · cero personajes nominados · arquetipos visibles · 80-150 palabras · patrón panorama→orientación→equipos→práctica→cierre"
+    },
+    "criterios_evaluacion": {
+      "type": "array",
+      "minItems": 1,
+      "description": "v3.1 NEW OBLIGATORIO · alimenta tabla Sección 4 PM-3.6 GFPI-F-135",
+      "items": {
+        "type": "object",
+        "required": ["criterio", "indicador"],
+        "properties": {
+          "criterio": { "type": "string", "minLength": 10 },
+          "indicador": { "type": "string", "minLength": 10 }
+        },
+        "additionalProperties": true
+      }
+    },
+    "recursos_aprendiz": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "v3.2 NEW · v3.3 DEPRECATION SOFT · bullets tangibles preparados por instructor · migración pendiente a PM-3.2 Playbook · mantener hasta cierre migración"
+    },
+    "material_apoyo": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "v3.0 NEW OPCIONAL · materiales de apoyo de la actividad"
+    },
+    "materiales_aprendiz_inline": {
+      "type": "array",
+      "description": "v3.3 NEW OPCIONAL · scaffolds cortos embebibles después de descripcion_aprendiz",
+      "items": {
+        "type": "object",
+        "required": ["tipo", "contenido"],
+        "properties": {
+          "tipo": {
+            "type": "string",
+            "enum": ["pregunta_reflexiva", "kwl_bilingue", "checklist", "plantilla_1_cuadrante"]
+          },
+          "contenido": { "type": "string", "minLength": 20 }
+        },
+        "additionalProperties": true
+      }
+    },
+    "worksheets_aprendiz_anexo": {
+      "type": "array",
+      "description": "v3.3 NEW OPCIONAL · recursos largos render como ANEXO numerado · referenciado desde la actividad",
+      "items": {
+        "type": "object",
+        "required": ["id_anexo", "titulo", "tipo_recurso", "contenido_renderizable", "cardinality"],
+        "properties": {
+          "id_anexo": { "type": "string", "pattern": "^A[0-9]+$" },
+          "titulo": { "type": "string", "minLength": 5 },
+          "titulo_en": { "type": "string" },
+          "tipo_recurso": {
+            "type": "string",
+            "enum": ["template_blank", "catalogo", "texto_paralelo", "diagrama", "rúbrica", "otro"]
+          },
+          "contenido_renderizable": { "type": "string", "minLength": 50 },
+          "cardinality": {
+            "type": "string",
+            "enum": ["1_por_aprendiz", "1_por_equipo", "1_por_clase"]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "_anclaje_pedagogico_pm0_pre_pm32": {
+      "type": "object",
+      "description": "v3.4 NEW OPCIONAL · hook PM-3.2 v3.0 capa 1 PEDAGOGICAL ANCHORING · pre-anclaje para evitar doble carga subagente PM-3.2",
       "properties": {
-        "arquetipo": {
+        "principios_pm0_pre": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^§5\\.[0-9]+(\\.[0-9]+)?$" }
+        },
+        "siop_components_pre": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "lesson_preparation",
+              "building_background",
+              "comprehensible_input",
+              "strategies",
+              "interaction",
+              "practice_application",
+              "lesson_delivery",
+              "review_assessment"
+            ]
+          }
+        },
+        "ubd_stage_pre": {
           "type": "string",
-          "description": "Uno de los 52 arquetipos canónicos del sistema (catálogo en master-prompts/activity-archetypes.md)"
+          "enum": ["Stage1_Desired_Results", "Stage2_Evidence", "Stage3_Learning_Plan"]
         },
-        "sesion": {
-          "type": "integer",
-          "minimum": 1,
-          "maximum": 8
-        },
-        "fase_sena": {
-          "$ref": "sena-fase.schema.json"
-        },
-        "bloom_level": {
-          "$ref": "bloom-level.schema.json"
-        },
-        "duracion_total_min": {
-          "type": "integer",
-          "minimum": 15,
-          "maximum": 180
-        },
-        "pm_origen": {
+        "krashen_input_pre": {
           "type": "string",
-          "pattern": "^PM-[0-9]+(\\.[0-9]+)?$",
-          "description": "PM que originó la actividad (ej. PM-2.3, PM-2.8)"
-        },
-        "tecnica_didactica": {
-          "type": "string",
-          "description": "Técnica didáctica específica del bloque (taxonomía en PM-3.1 §11.4)"
+          "minLength": 30,
+          "description": "i+1 brief · descripción de comprehensible input ajustado al CEFR"
         }
       },
-      "additionalProperties": false
+      "additionalProperties": true
+    },
+    "_anclaje_tecnico_competencia": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[0-9]{9}$" },
+      "minItems": 1,
+      "description": "OPCIONAL · heredado de PM-1.2 v4.3 cuando multi-comp · códigos competencias técnicas que la actividad moviliza"
+    },
+    "_anclaje_matriz_heredado": {
+      "type": "object",
+      "description": "Trazabilidad heredada de pm-1-1 / pm-1-2 / pm-0-0-matriz",
+      "additionalProperties": true
     }
   },
-  "additionalProperties": false
+  "additionalProperties": true
 }
