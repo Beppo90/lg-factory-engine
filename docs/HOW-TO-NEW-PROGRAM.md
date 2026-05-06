@@ -229,11 +229,10 @@ Esperado si fixture pre-canon. Decisión Sergio canon 2026-05-06: "**ground trut
 |---|---|
 | DM (decision log + jerarquía canónica) | `master-prompts/DOCUMENTO MAESTRO ...md` v3.29 |
 | Anti-patrones documentados | DM §ANTI-PATRONES + memory snapshots `feedback_*.md` |
-| Auditor anti-drift 6-pasos | memory `feedback_pm00_v21_post_audit_3_high.md` |
-| Disciplina bumps incrementales 3-iter | memory `feedback_pm00_v22_segunda_iteracion_med.md` |
+| Auditor anti-drift 6-pasos + disciplina bumps incrementales 3-iter | memory `feedback_pm00_paradigm_shift_v2_a_v23_completo.md` |
 | F2.8 schema-drift CI spec | `english-engine-lab/specs/schema-drift.spec.md` (7 checks) |
-| Pattern schema replacement con backup legacy | memory `feedback_pattern-schema-replacement-con-backup-legacy.md` |
-| Validación bidireccional cross-LLM | memory `project_sesion-2026-05-06-snapshot.md` |
+| Pattern schema replacement con backup legacy | memory `feedback_pm0_schema_v331_canonization.md` (canonizado en Mejora #4) |
+| Validación bidireccional cross-LLM | memory `feedback_cluster_cascade_pm0_pm11_pm12_2026_05_04_05.md` |
 | Skill fpi-sena-fase2 (Phase 2 orquestador) | `.claude/skills/fpi-sena-fase2/` (13 subagentes) |
 
 ---
