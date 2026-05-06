@@ -1,7 +1,29 @@
-# PM-1.x — Program Configuration Template
-**Tipo:** Plantilla de instanciación del sistema FPI SENA  
-**Instrucción:** Completar una copia de este documento por cada programa técnico o tecnológico nuevo. Renombrar como `PM-1.[código-programa] — [Nombre del programa].md`  
-**Referencia obligatoria:** PM-0 — CEFR Framework & FPI SENA Pedagogical Foundation  
+---
+status: deprecated
+deprecated_date: 2026-05-07
+superseded_by: "docs/HOW-TO-NEW-PROGRAM.md + apps/input-form/ (english-engine-lab) + pm-0-context.json + pm-1-1.json"
+version: 1.0 → deprecated
+---
+
+> [!warning] ⚠️ DEPRECATED 2026-05-07 · NO USAR PARA PROGRAMAS NUEVOS
+>
+> Este template ha sido **DEPRECATED**. La instanciación de programas nuevos ahora se hace via:
+>
+> 1. **Form web** (`apps/input-form/` en english-engine-lab) → genera `pm-0-0-input.json` + `pm-1-1-input.json` validados contra schema canon (`form-schema-pm0-pm11.json`)
+> 2. **`docs/HOW-TO-NEW-PROGRAM.md`** describe el paso-a-paso completo del pipeline (Phase 0 → Phase 4) con ejemplo runtime INFRATI multi-comp
+>
+> Este archivo se preserva como **canon histórico legacy**. **No usar para instanciar programas nuevos.**
+>
+> **Razón deprecation:** pre-paradigm shift PM-0.0 v2.0 (multi-comp + fusión bidireccional ESP · 2026-05-04) · post-Mejoras #3+#4 PM-0 v3.4.1 (REGLA 14 mid-program awareness · 2026-05-05). Single source of truth migró de markdown template a JSON canon (`pm-0-context.json` v3.4 + `pm-1-1.json` v2.9 + `pm-1-2.json` v4.3.1).
+>
+> **References cross-master** ("PM-1.x correspondiente" en PM-0, PM-3.2, PM-4.1) son semánticamente compatibles con esta deprecation · refieren a "info propia de cada programa" cuyo storage migró de markdown a JSON canon. Update opcional de esas references es deuda pequeña, no bloqueante.
+
+---
+
+# PM-1.x — Program Configuration Template (LEGACY · pre-paradigm-shift v2.0)
+**Tipo:** Plantilla de instanciación del sistema FPI SENA (DEPRECATED · ver header)
+**Instrucción legacy:** Completar una copia de este documento por cada programa técnico o tecnológico nuevo. Renombrar como `PM-1.[código-programa] — [Nombre del programa].md`
+**Referencia obligatoria:** PM-0 — CEFR Framework & FPI SENA Pedagogical Foundation
 **Versión plantilla:** 1.0 — 2026-04-19
 
 > [!warning] AVISO PARA EL LLM — Ejemplos de referencia
