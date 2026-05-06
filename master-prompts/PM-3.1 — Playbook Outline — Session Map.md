@@ -10,8 +10,8 @@
 |-------|-------|
 | **Código** | PM-3.1 |
 | **Nombre** | Playbook Outline — Session Map |
-| **Versión** | 2.6 |
-| **Last Verified** | 2026-04-20 (v2.6 promueve `pm0_alignment_by_session` de extensión local MGV a canon; BUG-PM31-001 cerrado en DM §11 historial v2.6) |
+| **Versión** | 2.7 |
+| **Last Verified** | 2026-05-07 (v2.7 cierra MED bump del audit Fase A · alinea Outline con PM-3.2 v3.0 paradigm shift 2 capas Pedagogical Anchoring + Practical Implementation · NEW §12 documenta heredancia downstream · v2.6 promovió `pm0_alignment_by_session` canon · BUG-PM31-001 cerrado en DM §11) |
 | **Destinatario** | Instructor (documento interno, NO para el aprendiz) |
 | **Función** | Distribuir los 9 worksheets de la Fase 2 + el Cuestionario (PM-4.2) en sesiones de clase realistas, con tiempos, agrupaciones, materiales, logística **y pre-carga canónica de pm0_alignment_by_session** |
 | **Analogía** | Es el "guion de rodaje" de la guía — convierte los materiales ya escritos en un plan de implementación sesión por sesión |
@@ -707,7 +707,90 @@ Si alguna validación falla, el run debe corregir el Build-Out (no el Outline) �
 
 ---
 
+## §12 — ALINEACIÓN PM-3.2 v3.0 PARADIGM SHIFT 2 CAPAS (NEW v2.7 · 2026-05-07)
+
+> [!info] MED bump audit Fase A · cierre drift documental pre-paradigm shift PM-3.2 v3.0 (2026-05-03)
+>
+> PM-3.2 v3.0 introdujo paradigm shift 2 capas (CAPA 1 PEDAGOGICAL ANCHORING + CAPA 2 PRACTICAL IMPLEMENTATION) · resuelve anti-patrón #18 (PM-3.6 saltando enrichment ad-hoc · pierde anclaje sistemático PM-0). PM-3.1 v2.6 quedó pre-paradigm · Outline campos producía sin awareness explícito de qué Capa downstream consume cada field. **§12 cierra ese drift documental.**
+
+### §12.1 — Outline campos alimentan CAPA 1 PEDAGOGICAL ANCHORING de PM-3.2
+
+PM-3.2 v3.0 CAPA 1 ancla cada actividad con:
+- Principios §5.x PM-0 explícitos (e.g., §5.1 Krashen i+1 · §5.4 Sheltered)
+- SIOP components (8 enum: lesson_preparation · building_background · comprehensible_input · strategies · interaction · practice_application · lesson_delivery · review_assessment)
+- UbD stage (Stage 1 Desired Results · Stage 2 Evidence · Stage 3 Learning Plan)
+- Krashen i+1 brief (input hypothesis specific brief)
+
+**Outline campos heredados upstream** (PM-3.1 → PM-3.2 CAPA 1 hooks):
+- `pm0_alignment_by_session.[Sn].grammar_groups_active[]` → seed para SIOP `comprehensible_input`
+- `pm0_alignment_by_session.[Sn].cefr_descriptor_focus[]` → seed para Krashen i+1 brief
+- `pm0_alignment_by_session.[Sn].pedagogical_shift_hooks[]` → seed para UbD Stage 1/2 Evidence
+- `pm0_alignment_by_session.[Sn].traceability_seed` → anchor §5.x PM-0 referenciable
+- `logistics_box.estrategia.tecnica_didactica` → seed SIOP `strategies` específica
+
+**Disciplina canon:** Outline NO genera contenido CAPA 1 directamente · provee SEED structurado · PM-3.2 v3.0 elabora anchoring per actividad.
+
+### §12.2 — Outline campos alimentan CAPA 2 PRACTICAL IMPLEMENTATION de PM-3.2
+
+PM-3.2 v3.0 CAPA 2 (legacy v2.6 preservado) genera Teacher Talk samples + timeline minutos + checklist materiales. **Outline provee scaffold logístico:**
+
+- `logistics_box.ambiente` → seed para CAPA 2 `setup_section`
+- `logistics_box.tiempo_total_min` + `tiempo_por_bloque[]` → seed para CAPA 2 timeline distribution
+- `logistics_box.materiales[]` → seed para CAPA 2 checklist materiales
+- `plan_b_contingencia` (REGLA 7) → seed para CAPA 2 `troubleshooting_section`
+- `agrupacion[]` por bloque → seed para CAPA 2 transitions narrative
+
+**Disciplina canon:** Outline NO genera Teacher Talk · CAPA 2 lo elabora · pero Outline provee logística structurada que CAPA 2 consume literal (NO reinventa).
+
+### §12.3 — Validación heredancia upstream-downstream PM-3.1 → PM-3.2
+
+NEW validation_check sugerido (para PM-2.11 Check 14 extension · pendiente):
+
+```python
+def check_pm31_to_pm32_heredancia(pm31_output, pm32_outputs):
+    """Verifica que PM-3.2 v3.0 CAPA 1+2 hereda Outline scaffolds (NO reinventa)."""
+    failures = []
+    for s_id in range(1, 9):
+        outline_session = pm31_output.get('pm0_alignment_by_session', [])[s_id-1]
+        build_out = pm32_outputs.get(f's{s_id}', {})
+
+        # CAPA 1 anchoring
+        if outline_session.get('grammar_groups_active') and not build_out.get('capa_1_pedagogical_anchoring', {}).get('siop_components'):
+            failures.append(f's{s_id} · grammar_groups_active heredado · CAPA 1 SIOP NO emitido')
+
+        # CAPA 2 practical
+        if outline_session.get('logistics_box', {}).get('ambiente') and not build_out.get('capa_2_practical_implementation', {}).get('setup_section'):
+            failures.append(f's{s_id} · ambiente heredado · CAPA 2 setup_section NO emitido')
+
+    return {
+        'name': 'pm31_to_pm32_heredancia_v3',
+        'status': 'PASS' if len(failures) == 0 else 'FAIL',
+        'failures': failures
+    }
+```
+
+### §12.4 — Trade-off: Outline v2.7 NO requiere paradigm shift
+
+**Refactor consistency only.** PM-3.1 v2.7 mantiene 100% backward compat con runtime existente IMARPOR-V2 + DIESEL + MGV. La diferencia v2.6 → v2.7 es **documental** (alinea expectativas PM-3.2 v3.0 downstream) · NO funcional. Subagente Python `subagente_pm_3_1_outline.py` NO requiere refactor.
+
+**Cuando se ejecute:** PM-3.1 v2.7 es invocable directamente · runtime PM-3.2 v3.0 ya espera estos campos heredados · alineación se verifica empíricamente cuando se hace cascade Phase 3 completa post-Phase 2.
+
+---
+
 ## CHANGELOG
+
+### v2.7 — 2026-05-07 — MED bump audit Fase A · alineación PM-3.2 v3.0 paradigm shift 2 capas
+
+- **Trigger:** PM Card audit Fase A (2026-05-05) flagged drift documental MED · PM-3.1 v2.6 last_verified 2026-04-20 pre-PM-3.2 v3.0 paradigm shift 2 capas (2026-05-03 · 13 días drift).
+- **Cierre:** NEW §12 (4 sub-secciones) documenta alineación Outline → CAPA 1 PEDAGOGICAL ANCHORING + CAPA 2 PRACTICAL IMPLEMENTATION downstream.
+  - §12.1 · Outline campos alimentan CAPA 1 anchoring (SIOP · UbD · Krashen seeds)
+  - §12.2 · Outline campos alimentan CAPA 2 practical (logística · timeline · materials)
+  - §12.3 · validation_check NEW sugerido `pm31_to_pm32_heredancia_v3` (extensión PM-2.11 Check 14)
+  - §12.4 · Trade-off · refactor consistency only · NO paradigm shift · backward compat 100%
+- **Disciplina canon:** Outline NO genera contenido CAPA 1/2 directamente · provee SEED structurado · PM-3.2 v3.0 elabora downstream sin reinventar.
+- **Aplicabilidad:** PM-3.1 v2.7 invocable directamente · cascade Phase 3 verifica empíricamente cuando aplique.
+- **DM bump:** v3.28 → v3.29 (entrada bumps MED+LOW PM-3.1 + PM-4.1).
+- **Memory snapshot:** `memory/feedback_pm31_pm41_bumps_med_low_2026_05_07.md`
 
 ### v2.5.1 — 2026-04-20 — Cierre BUG-PM31-001 (run MGV-2026-04-20 G1)
 

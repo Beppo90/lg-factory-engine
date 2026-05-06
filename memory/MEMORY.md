@@ -16,6 +16,10 @@
 
 ## Entries (cronológico inverso · más reciente primero)
 
+### 2026-05-07 · Bumps MED+LOW audit Fase A · cierre 100% (1 snapshot)
+
+- [PM-3.1 v2.7 + PM-4.1 v2.7 · bumps MED+LOW audit Fase A cierre](feedback_pm31_pm41_bumps_med_low_2026_05_07.md) — 2 deudas audit Fase A cerradas · PM-3.1 MED bump (NEW §12 · alineación Outline → PM-3.2 v3.0 paradigm 2 capas · 4 sub-secciones SIOP+UbD+Krashen seeds + logística CAPA 2) + PM-4.1 LOW bump (NEW §11 · consumo `criterios_evaluacion[]` AC v3.x heredado · 5 sub-secciones + `_criterios_origen` field) · pattern NEW "heredancia explícita upstream→downstream con `_criterios_origen`" · refactor consistency only · backward compat 100%
+
 ### 2026-05-06 · Cleanup deudas viejas (#30 + #31) + Hito 4 (e) runtime regen (2 snapshots)
 
 - [Deudas viejas #30 + #31 cerradas · skill packaging + IMARPOR probe gaps](feedback_deudas_viejas_30_31_cierre_2026_05_06.md) — 3 skills empaquetados `.skill` (fpi-sena-fase1/2/3) · script reusable `package_skill.sh` · GAP 1 regex relajada (run-id v3) · GAP 2 ya resuelto · GAP 3 cerrado para pm-0-context (schemas downstream EN PROGRESO via CC sub-tasks 2-4)

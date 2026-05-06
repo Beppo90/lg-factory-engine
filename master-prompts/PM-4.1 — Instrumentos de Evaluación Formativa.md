@@ -7,8 +7,8 @@
 ## FRONTMATTER
 
 ```yaml
-version: 2.6.5
-last_verified: 2026-04-21
+version: 2.7
+last_verified: 2026-05-07
 phase: 3
 name: "Instrumentos de Evaluación Formativa — Derivador"
 type: "instrument-generator"
@@ -17,7 +17,14 @@ feeds_into: [PM-3.1, PM-3.6, GFPI-F-135]
 previous_versions:
   - 2.0 (2026-04-13)
   - 2.6.4 (2026-04-20)
+  - 2.6.5 (2026-04-21)
 changelog:
+  - 2.7 (2026-05-07):
+      - LOW bump audit Fase A · canon refresh post-Activity Card v3.x con `criterios_evaluacion[]` derivados (canonizado 2026-05-02). Master era el más viejo del sistema activo (16 días drift documental).
+      - NEW §11 · documenta consumo `criterios_evaluacion[]` heredado desde Activity Cards v3.x · PM-4.1 ya NO deriva criterios ad-hoc · los CONSUME literal desde upstream.
+      - NEW validation_check sugerido (inline §11.4) · `criterios_heredancia_ac_v3x` · verifica que cada instrumento tiene `_criterios_origen` apuntando a Activity Card específica.
+      - NO requiere paradigm shift · refactor consistency only · backward compat 100%.
+      - Reduce alucinación criterios · canoniza heredancia explícita upstream→PM-4.1.
   - 2.6.5 (2026-04-21):
       - Nota arquitectónica: los criterios de PM-4.1 son la fuente ÚNICA de verdad también a nivel de RENDER (no solo de datos). El módulo canónico que los renderiza en el DOCX FINAL es `runs/[RUN-ID]/scripts/lib/render_seccion4_evidencias.js` — ver PM-3.6 REGLA 20.
       - Canon Shared Renderer Pattern (v2.6.5) activo — ningún generador DOCX puede tener una copia inline del render de Sección 4. Esto cierra la clase de bugs donde parches v2.6.4 entraban al review pero no al FINAL (o viceversa).
@@ -518,9 +525,113 @@ El Instrumento No. 6 (Cuestionario Consolidado S6) es un instrumento especializa
 | Relación | Prompt | Descripción |
 |----------|--------|-------------|
 | **Depende de** | PM-2.11 | Activity Cards de todos los PM-2.x ensambladas en GFPI-F-134 |
-| **Depende de** | PM-2.3, PM-2.4, PM-2.6, PM-2.8, PM-2.9, PM-2.10 | Especificaciones de actividades y evidencias en Activity Cards |
+| **Depende de** | PM-2.3, PM-2.4, PM-2.6, PM-2.8, PM-2.9, PM-2.10 | Especificaciones de actividades y evidencias en Activity Cards · v3.x con `criterios_evaluacion[]` derivados (NEW v2.7) |
 | **Coordina con** | PM-4.2 | PM-4.2 especializa el Instrumento No. 6 |
 | **Se ubica en** | GFPI-F-135 Sección 3.3 | Evaluación formativa |
+
+---
+
+## §11 — CONSUMO `criterios_evaluacion[]` HEREDADO DESDE ACTIVITY CARDS v3.x (NEW v2.7 · 2026-05-07)
+
+> [!info] LOW bump audit Fase A · canon refresh post-Activity Card v3.x
+>
+> Activity Card v3.0+ canonizó `criterios_evaluacion[]` derivados (2026-05-02 · cascade Wave B · 30 cards regeneradas con criterios_evaluacion heredados). PM-4.1 v2.6.5 quedó pre-canon · documentaba derivación ad-hoc de criterios sin awareness explícito de upstream Activity Cards heredancia. **§11 cierra ese drift documental.**
+
+### §11.1 — Heredancia upstream Activity Cards v3.x → PM-4.1 v2.7
+
+Cada Activity Card v3.x (5 evidencias formales: PM-2.3 · PM-2.4 · PM-2.6 · PM-2.8 · PM-2.9) ahora incluye `criterios_evaluacion[]` con estructura:
+
+```jsonc
+{
+  "activity_id": "A12",
+  "criterios_evaluacion": [
+    {
+      "criterio": "Identifica vocabulario portuario clave (parts of ships) en lectura",
+      "indicador": "Aprendiz reconoce ≥80% términos UNIT 1 en cuestionario · 5 ítems · 1 pt c/u"
+    },
+    {
+      "criterio": "Aplica contexto técnico para inferir significado",
+      "indicador": "Aprendiz justifica 2/3 inferencias léxicas usando realia portuaria"
+    }
+  ]
+}
+```
+
+PM-4.1 v2.7 **CONSUME estos criterios LITERAL** (NO genera ad-hoc) cuando construye los 6 instrumentos. Cada instrumento declara `_criterios_origen` apuntando a la Activity Card específica:
+
+```jsonc
+{
+  "instrumento_id": "INST-01",
+  "tipo": "Lista de Chequeo No 1",
+  "evidencia": "E1 Reading Comprehension",
+  "criterios": [
+    /* literal de pm-2-3.activity_cards[Ax].criterios_evaluacion[] */
+  ],
+  "_criterios_origen": {
+    "fuente_pm": "PM-2.3",
+    "activity_card_id": "A12",
+    "ac_version": "v3.x",
+    "heredancia_directa": true
+  }
+}
+```
+
+### §11.2 — Disciplina canon · NO alucinación
+
+**PROHIBIDO en PM-4.1 v2.7:**
+- ❌ Inventar criterios para un instrumento sin upstream Activity Card cita
+- ❌ Reformular criterios de Activity Card "para que suenen mejor" en el instrumento
+- ❌ Eliminar criterios de Activity Card cuando se construye instrumento (deben aparecer todos)
+
+**OBLIGATORIO en PM-4.1 v2.7:**
+- ✅ Cada criterio del instrumento debe trazar 1:1 a Activity Card específica via `_criterios_origen`
+- ✅ Si Activity Card upstream NO tiene `criterios_evaluacion[]` (legacy AC v2.7-): documentar gap explícitamente · NO inventar
+- ✅ Texto literal preservado · solo formato visual (puede agregarse numeración · checkbox · etc.)
+
+### §11.3 — Backward compat · Activity Cards legacy v2.7 sin `criterios_evaluacion[]`
+
+Cuando AC upstream es legacy v2.7 (pre-2026-05-02 · sin `criterios_evaluacion[]` derivados):
+- PM-4.1 v2.7 emite warning · documenta `_criterios_origen.heredancia_directa: false`
+- Genera criterios best-effort desde `evidencia.criterio_evaluacion` legacy
+- Marca instrumento como `_status: "legacy_ac_v2.7_pre_v3x"` · alerta para regeneración futura
+
+Esto preserva operación con runtimes legacy (DIESEL · MGV · IMARPOR-CC v1) sin romper. Cuando esos runs se regeneren con AC v3.x · PM-4.1 v2.7 producirá heredancia plena.
+
+### §11.4 — Validation check sugerido · `criterios_heredancia_ac_v3x` (BLOQUEANTE futuro)
+
+```python
+def check_criterios_heredancia_ac_v3x(pm41_output, ac_inputs):
+    """Verifica heredancia explícita criterios upstream → PM-4.1."""
+    failures = []
+    for inst in pm41_output.get('instrumentos', []):
+        if not inst.get('_criterios_origen'):
+            failures.append(f"{inst['instrumento_id']} · _criterios_origen MISSING")
+            continue
+        origen = inst['_criterios_origen']
+        if origen.get('ac_version', '').startswith('v3.') and not origen.get('heredancia_directa'):
+            failures.append(f"{inst['instrumento_id']} · AC v3.x upstream pero heredancia_directa=false (debe ser true)")
+        # Cross-check criterios literal
+        ac = ac_inputs.get(origen.get('fuente_pm'), {}).get(origen.get('activity_card_id'), {})
+        ac_criterios = [c['criterio'] for c in ac.get('criterios_evaluacion', [])]
+        inst_criterios = [c['criterio'] for c in inst.get('criterios', [])]
+        for c in ac_criterios:
+            if c not in inst_criterios:
+                failures.append(f"{inst['instrumento_id']} · criterio AC '{c[:50]}' NO presente en instrumento")
+    return {
+        'name': 'criterios_heredancia_ac_v3x',
+        'status': 'PASS' if len(failures) == 0 else 'FAIL',
+        'failures': failures
+    }
+```
+
+### §11.5 — Aplicabilidad cross-PM downstream
+
+PM-4.1 v2.7 alimenta:
+- `pm-3-6.seccion_4_planteamiento_evidencias.filas_evidencia[].criterios` (REGLA 18 PM-3.6 · DOBLE-PRESENCIA preservada)
+- `runs/[RUN-ID]/scripts/lib/render_seccion4_evidencias.js` (Canon Shared Renderer Pattern v2.6.5)
+- Paquete físico instrumentos para instructor (impreso · 5 pts c/u formativos)
+
+**Trade-off · refactor consistency only:** PM-4.1 v2.7 mantiene 100% backward compat con runtime existente. Diferencia v2.6.5 → v2.7 es **documental** (canon refresh post-AC v3.x) · NO funcional. Subagente Python `subagente_pm_4_1_*.py` NO requiere refactor inmediato · puede consumir AC v3.x criterios cuando aplique.
 
 ---
 
