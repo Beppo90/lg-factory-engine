@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "fpi-sena-factory/v4/schemas/common/run-id.schema.json",
   "title": "Run ID — Identificador de Ejecución",
-  "description": "Formato PROGRAM-YYYY-MM-DD. Ej: DIESEL-2026-04-19, MGV-2026-04-20.",
+  "description": "Formato canon: PROGRAM[-MODIFIER]-YYYY[-MM-DD][-Vn]. PROGRAM letras mayúsculas + dígitos (ej DIESEL · MGV · IMARPOR · INFRATI · INGBAS1 · INGBAS4). MODIFIER opcional alfanumérico (ej CC · IMDER · rework · AGRO · V2). YYYY obligatorio · MM-DD opcional (legacy programs como INGBAS solo tienen año). Vn opcional · iteración. Ej válidos: DIESEL-2026-04-19 · IMARPOR-CC-2026-04-30-V2 · IMARPOR-rework-2026-04-25 · RECREACION-IMDER-2026-05-04 · INFRATI-2026-05-04 · INGBAS4-2026 · INGBAS1-AGRO-2026. v3 (2026-05-06): cierra GAP 1 IMARPOR probe (2026-04-25) · soporta sub-modificadores + dates degraded + PROGRAM con dígitos.",
   "type": "string",
-  "pattern": "^[A-Z]+-[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+  "pattern": "^[A-Z][A-Z0-9]*(-[A-Za-z0-9]+)?-[0-9]{4}(-[0-9]{2}-[0-9]{2})?(-V[0-9]+)?$"
 }
