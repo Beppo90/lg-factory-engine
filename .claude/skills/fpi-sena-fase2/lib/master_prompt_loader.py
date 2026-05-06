@@ -15,7 +15,7 @@ Versiones canónicas vigentes (al 2026-05-05 · post Mejoras #3+#4 PM-0 + cluste
   PM-2.2  == 3.1    (Wave 1.A)
   PM-2.3 a PM-2.10 == 3.0  (Pilots + Waves 2-4 · Activity Card v3.0)
   PM-2.11 == 3.3    (Wave 5.D · GFPI-F-134 V04)
-  PM-4.1  == 2.6.5
+  PM-4.1  == 2.7    (audit Fase A backlog · bump 2026-05-07 Cowork)
   PM-4.2  == 3.0    (Wave 4.A · canon)
 
 Bumps recientes:
@@ -53,8 +53,8 @@ VERSIONES_VIGENTES = {
     "PM-2.9": "3.0",
     "PM-2.10": "3.0",
     "PM-2.11": "3.3",
-    # Phase 4 · pre-existente
-    "PM-4.1": "2.6.5",
+    # Phase 4 · pre-existente · PM-4.1 bumped 2026-05-07 (audit Fase A backlog)
+    "PM-4.1": "2.7",
     "PM-4.2": "3.0"
 }
 
