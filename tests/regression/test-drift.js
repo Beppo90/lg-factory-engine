@@ -3,7 +3,7 @@
 // Pilar 4 · test-drift — implementa F2.8 schema-drift CI check.
 // Spec: english-engine-lab/specs/schema-drift.spec.md
 //
-// 4 checks declarados en F2.8 + 2 auxiliares (Hito 3 fase B.2 · 6 checks):
+// 4 checks declarados en F2.8 + 3 auxiliares (Hito 4 (g) · 7 checks):
 //   1. Master prompt frontmatter version vs skill VERSIONES_VIGENTES   ✓
 //      (parser soporta --- ... --- delimited y ```yaml embedded)
 //   2. Enums registry.yaml ⊆ enums schemas v4                           ✓
@@ -16,6 +16,10 @@
 //   6. Schema fields v2.0 NEW declarados en master vs presencia en v4/  ✓ aux
 //      (cluster cascade Cowork canonizó schemas en master-prompts ·
 //      v4/schemas/ pendiente de sync · ver HANDOFF-2026-05-05.md §3)
+//   7. Runtime fixtures · drift semántico canon-vs-fixture              ✓ aux
+//      (cierra el otro lado de validación bidireccional 2-LLM ·
+//      detecta drift que Cowork validation runtime sesión 4/4 documentó:
+//      fixtures legacy pre-canon NO emiten campos canon vigente)
 //
 // Severidades F2.8:
 //   CRITICAL       bloquea merge (D-001/002/003 son CRITICAL)
@@ -477,8 +481,81 @@ function checkSchemaFieldsV2New() {
   }
 }
 
+// ─── Check 7: Runtime fixtures · drift semántico canon-vs-fixture ──────
+// Codifica las 3 reglas que Cowork validation runtime sesión 4/4 detectó
+// manualmente (audits/VALIDATION-RUNTIME-CLUSTER-2026-05-05.md). Cierra
+// el otro lado de validación bidireccional cross-LLM:
+//   - Check 6 (CC): detecta drift master → schemas
+//   - Check 7 (CC): detecta drift master → runtime fixtures (semántico)
+//   - Validation runtime (Cowork): manual papel-y-lápiz (este es su CI)
+//
+// Severity SIGNIFICATIVO · regenerable Hito 4 opción (e) Cowork engine.
+// NO CRITICAL: fixtures legacy pre-canon válidos en su tiempo.
+const RUNTIME_FIXTURE_RULES = [
+  {
+    path: 'runs/RECREACION-IMDER-2026-05-04/pm-0-0-matriz-alineada-G2.json',
+    label: 'RECREACION G2 · matriz última guía multi-guía',
+    rules: [
+      {
+        name: 'cobertura_total_programa_in_last_guide',
+        check: (m) => '_cobertura_total_programa' in m,
+        msg: 'última guía multi-guía debe emit _cobertura_total_programa (REGLA 13.3 PM-0)',
+      },
+      {
+        name: 'raps_count_total_programa_emitted',
+        check: (m) => 'raps_count_total_programa' in m,
+        msg: 'multi-guía debe emit raps_count_total_programa (REGLA 13.6 PM-0)',
+      },
+      {
+        name: 'contenido_tecnico_crudo_populated',
+        check: (m) => {
+          const ctc = m.contenido_tecnico_crudo;
+          if (!ctc || typeof ctc !== 'object') return false;
+          const hasSingle = typeof ctc.competencia_tecnica_codigo === 'string' && ctc.competencia_tecnica_codigo.length > 0;
+          const hasMulti = Array.isArray(ctc.competencias) && ctc.competencias.length > 0;
+          return hasSingle || hasMulti;
+        },
+        msg: 'contenido_tecnico_crudo debe tener competencia_tecnica_codigo (single-comp) o competencias[] (multi-comp v2.0)',
+      },
+    ],
+  },
+  {
+    path: 'runs/INFRATI-2026-05-04/pm-0-0-matriz-alineada-G3.json',
+    label: 'INFRATI G3 · matriz multi-comp + CIERRE PROGRAMA',
+    rules: [
+      {
+        name: 'raps_count_total_programa_emitted',
+        check: (m) => 'raps_count_total_programa' in m,
+        msg: 'multi-guía debe emit raps_count_total_programa (REGLA 13.6 PM-0)',
+      },
+    ],
+  },
+];
+
+function checkRuntimeFixtures() {
+  for (const fixture of RUNTIME_FIXTURE_RULES) {
+    const fullPath = path.join(FACTORY_ROOT, fixture.path);
+    let matrix;
+    try {
+      matrix = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+    } catch (err) {
+      record('MENOR', 'runtime-fixture', `${fixture.label}: cannot read fixture (${err.message})`);
+      continue;
+    }
+    for (const rule of fixture.rules) {
+      if (!rule.check(matrix)) {
+        record(
+          'SIGNIFICATIVO',
+          'runtime-fixture',
+          `${fixture.label} · ${rule.name}: ${rule.msg}. Regenerable Hito 4 opción (e) Cowork engine.`
+        );
+      }
+    }
+  }
+}
+
 function main() {
-  console.log('test-drift · F2.8 schema drift detection (Hito 3 fase B.2 · 6 checks)');
+  console.log('test-drift · F2.8 schema drift detection (Hito 4 g · 7 checks · validación bidireccional CC)');
   console.log('');
 
   checkActivityCardSchemaVersion();
@@ -487,10 +564,11 @@ function main() {
   checkEnumReglaBloques();
   checkFinalMissionScenarioAllOf();
   checkSchemaFieldsV2New();
+  checkRuntimeFixtures();
   checkDriftMatrixSync();
 
   if (drifts.length === 0) {
-    console.log('✓ PASS · 0 drifts detectados (6/6 checks PASS)');
+    console.log('✓ PASS · 0 drifts detectados (7/7 checks PASS)');
     process.exit(0);
   }
 
