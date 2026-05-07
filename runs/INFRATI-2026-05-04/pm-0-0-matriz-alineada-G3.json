@@ -1,0 +1,1180 @@
+{
+  "schema_version": "v2.0",
+  "pm_id": "PM-0.0",
+  "pm_name": "Matriz Pedagógica Alineadora",
+  "pm_version": "2.0",
+  "run_id": "INFRATI-2026-05-04",
+  "guide_id": "G3",
+  "generated_date": "2026-05-04",
+  "instructor": "Sergio Cortés Perdomo",
+  "phase": 0,
+  "tipo_artefacto": "matriz_pedagogica_alineada_pre_pm0",
+  "_v2_fusion_bidireccional_applied": true,
+  "_v2_multi_competencias_applied": true,
+  "_v2_cierre_programa_applied": true,
+  "_input_ref": "pm-0-0-input-G3.json (schema NEW v2.0 multi-comp · 2 competencias técnicas anclaje 220501086+220501103 · foco G3 cierre programa A1.3 avanzado argumentativo-reflexivo · cubre deuda final acumulada G1+G2)",
+  "_canon_authority": "Sergio Cortés Perdomo · arquitecto/instructor FPI SENA Bilingüismo · TERCER y ÚLTIMO run multi-comp INFRATI bajo PM-0.0 v2.0 canon · CIERRE programa · cubre toda la deuda final acumulada G1+G2 (marco legal · estándares internacionales ISO/IEC/IEEE/ANSI/TIA-EIA · TCP/IP+subredes · administración personal · acciones reflexivas · estadísticas)",
+  "_paradigm_note": "Programa Tecnólogo IMPLEMENTACIÓN INFRAESTRUCTURA TIC (código 228116) · 384h totales · 3 guías · Guía 3 = 128h · 17 sesiones · CEFR A1.3 · CIERRE PROGRAMA. Distribución Opción B canon: G1=RA6+RA3 (A1.1 receptivo+descriptivo) · G2=RA2+RA4 (A1.2 productivo procedural+interactivo) · G3=RA1+RA5 (A1.3 avanzado argumentativo+reflexivo). Schema multi-comp NEW v2.0 aplicado: 2 competencias técnicas (220501086 ESTABLECER REQUISITOS INFRA + 220501103 IMPLEMENTAR RED FÍSICA DATOS) anclan saberes/procesos/criterios inglés A1.3. Anclaje natural A1.3: marcos legales · normas técnicas · soluciones a problemas · acciones de mejora reflexivas · justificaciones · recomendaciones técnicas argumentadas. CIERRE PROGRAMA · cobertura ≥90% de procesos foco G3 + ≥93% saberes foco G3 + ≥90% criterios foco G3. NO emite _deuda_explicita_para_guia_siguiente · en su lugar emite _cobertura_total_programa documentando suma G1+G2+G3 sobre contenido técnico crudo total del programa.",
+  "programa_metadata": {
+    "denominacion": "IMPLEMENTACIÓN DE INFRAESTRUCTURA DE TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES",
+    "tipo": "Tecnólogo",
+    "programa_codigo_sofia": "228116",
+    "programa_id": "3410833",
+    "duracion_total_horas": 128,
+    "duracion_programa_completo": 384,
+    "horas_directas": 102,
+    "horas_independientes": 26,
+    "numero_sesiones": 17,
+    "numero_sesiones_competencia_total": 51,
+    "rango_cefr": "A1.3",
+    "progresion_cefr_decision": "Opción B canon — refuerzo terminal (A1.1 G1 · A1.2 G2 · A1.3 G3) · CIERRE programa · canon PM-0.0 v2.0",
+    "guide_id": "G3",
+    "guide_total": 3,
+    "horas_por_guide": 128,
+    "split_strategy": "A · equilibrado · Opción B canon distribución por complejidad pedagógica · G1 = RA6 (COMPRENDER receptivo) + RA3 (EXPLICAR descriptivo básico) · G2 = RA2 (PRESENTAR procedural) + RA4 (INTERCAMBIAR interactivo) · G3 = RA1 (DISCUTIR soluciones argumentativas) + RA5 (IMPLEMENTAR mejoras reflexivas) · CIERRE programa",
+    "sector": "TICs (Tecnologías de la Información y las Comunicaciones)",
+    "ambiente_productivo": "UraNet · escenario expandido G3 hacia toma de decisiones técnicas avanzadas · auditorías de cumplimiento normativo · evaluación de proyectos · acciones correctivas y preventivas · gestión de personal · análisis estadístico de KPIs · negociación contractual avanzada · cooperación internacional con organismos de estandarización (ISO · IEC · IEEE · ANSI · TIA/EIA) · oficina de auditoría · sala de comité técnico · reunión con representante de organismo certificador · panel ABP de cierre con cliente corporativo + auditor + consultor externo",
+    "_resumen_ejecutivo": "Programa Tecnólogo INFRATI · Guía 3 (128h) · 17 sesiones · CEFR A1.3 · CIERRE PROGRAMA · 2 RAPs pedagógicamente diferenciados por verbo cognitivo Bloom L4-L5 (DISCUTIR argumentativo · IMPLEMENTAR mejoras reflexivas) · ANCLADOS a 2 competencias técnicas (220501086 ESTABLECER REQUISITOS INFRA + 220501103 IMPLEMENTAR RED FÍSICA DATOS). FUSIÓN BIDIRECCIONAL ESP v2.0 MULTI-COMP CIERRE: 36 saberes conceptos + 14 saberes proceso + 8 criterios SOFÍA · cada uno contextualizado a procesos técnicos reales TIC G3 (discutir propuestas argumentando elección de estándar · ofrecer solución a imprevistos en obra con condicionales y modales · resolver conflictos contractuales con cliente y proveedor citando marco legal · implementar acciones de mejora basadas en auditoría aplicando PDCA · realizar autoevaluación reflexiva del desempeño laboral con presente perfecto + adverbios reflexivos · gestionar acciones correctivas con KPIs estadísticos · liderar equipo aplicando técnicas de motivación · reportar avances con datos estadísticos y conectores avanzados de causa-efecto)."
+  },
+  "competencia": "240202501 · INTERACTUAR EN LENGUA INGLESA DE FORMA ORAL Y ESCRITA DENTRO DE CONTEXTOS SOCIALES Y LABORALES SEGÚN LOS CRITERIOS ESTABLECIDOS POR EL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+  "contenido_tecnico_crudo": {
+    "_doc": "Schema NEW v2.0 multi-competencias · 2 competencias técnicas actúan como anclaje fusión bidireccional ESP A1.3 CIERRE · foco G3: marco legal · estándares internacionales ISO/IEC/IEEE/ANSI/TIA-EIA · TCP/IP+subredes · administración personal · acciones reflexivas · estadísticas · cubre TODA la deuda final acumulada G1+G2",
+    "competencias": [
+      {
+        "codigo": "220501086",
+        "nombre": "ESTABLECER REQUISITOS DE INFRAESTRUCTURA TECNOLÓGICA DE ACUERDO CON PROCEDIMIENTOS Y ESTÁNDARES TÉCNICOS",
+        "raps_tecnicos_count": 3,
+        "procesos_tecnicos_foco_g3_count": 9,
+        "saberes_tecnicos_foco_g3_count": 8,
+        "criterios_tecnicos_foco_g3_count": 4
+      },
+      {
+        "codigo": "220501103",
+        "nombre": "IMPLEMENTAR LA RED FÍSICA DE DATOS SEGÚN DISEÑO Y ESTÁNDARES TÉCNICOS",
+        "raps_tecnicos_count": 4,
+        "procesos_tecnicos_foco_g3_count": 8,
+        "saberes_tecnicos_foco_g3_count": 7,
+        "criterios_tecnicos_foco_g3_count": 6
+      }
+    ],
+    "_total_cross_comp": {
+      "raps_tecnicos": 7,
+      "procesos_tecnicos_foco_g3": 17,
+      "saberes_tecnicos_foco_g3": 15,
+      "criterios_tecnicos_foco_g3": 10
+    }
+  },
+  "raps_count": 2,
+  "raps": [
+    {
+      "rap_id": "RA1",
+      "rap_codigo_sofia": "240202501-RA1",
+      "rap_titulo": "DISCUTIR SOBRE POSIBLES SOLUCIONES A PROBLEMAS DENTRO DE UN RANGO VARIADO DE CONTEXTOS SOCIALES Y LABORALES",
+      "verbo_cognitivo": "DISCUTIR",
+      "bloom_level": "L4 (Analizar) · cara argumentativa A1.3",
+      "cefr_target": "A1.3",
+      "dominio_canonico": "Avanzado argumentativo (Speaking + Writing crítico-analítico) APLICADO a procesos técnicos TIC de discusión cross-comp UraNet G3: discutir propuestas técnicas en reunión con cliente corporativo argumentando elección de estándar internacional · ofrecer soluciones a imprevistos en obra con condicionales 0+1 y had better/would rather · argumentar elección de estándar (ISO/IEC 11801 · IEEE 802.11ax · ANSI/TIA-568C · RITEL) · discutir riesgos contractuales del consumidor citando Ley del Consumidor · resolver conflictos con proveedor internacional usando presente perfecto y modales must/could · comparar tecnologías avanzadas (LiFi vs WiFi · RFID vs IoT · cloud vs on-premise) con superlativos y comparativos avanzados · auditar cumplimiento de normas técnicas en obra con vocabulario regulatorio · proponer alternativas con conectores de causa-efecto y contraste",
+      "_anclaje_tecnico_rap": {
+        "procesos_tecnicos_anclados": [
+          {
+            "proceso": "Aplicar normas vigentes para presentación de proyectos (regulación · cumplimiento)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Determinar requerimientos de seguridad (marcos normativos seguridad información)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Aplicar marco contractual (contratos · activación · verificación · cláusulas)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Analizar derechos y deberes del consumidor (Ley del Consumidor · alcances jurídicos y financieros)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Realizar costos del proyecto de infraestructura (avanzados con KPIs · análisis estadístico)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Aplicar estándares internacionales de redes de datos (ISO/IEC · IEEE · ANSI/TIA/EIA)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Aplicar las normas técnicas de referencia en las fases del proyecto",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Manejar normas técnicas de instalación (avanzadas)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Aplicar políticas de seguridad física en sistemas de cableado estructurado",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Verificar políticas de seguridad física (cumplimiento normativo)",
+            "competencia": [
+              "220501103"
+            ]
+          }
+        ],
+        "saberes_tecnicos_anclados": [
+          {
+            "saber": "Marco legal: proyectos · asesorías · outsourcing · contratación · freelance · planes de contingencia",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Derechos y deberes del consumidor: Ley del Consumidor · alcances jurídicos y financieros",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Seguridad de la información: marcos de referencia y buenas prácticas · estándares y normativa",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Marcos de referencia: instrumentos que establecen estructura conceptual · lineamientos · mejores prácticas · ruta para desarrollo software/hardware",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Plan de contingencia avanzado: aspectos claves · activación de protocolos · roles",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Protocolos TCP/IP completos · estándares IEEE 802 · 802.11 · 802.15.7 · subredes IP · división de redes",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Estándares y normativa de instalación CCTV · videoconferencias · redes datos en FO · coaxial · telefónica · par trenzado: ISO/IEC · IEEE · ANSI/TIA/EIA · normas 568B · 568C · 569C · 606 · 607 · 942 · cableado estructurado en campus · corporativo · seguridad",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Fundamentación de RITEL (Reglamento Técnico de Instalaciones para Telecomunicaciones)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Configuración de un sistema operativo de red · capa de red · capa de transporte · asignación de direcciones IP · división de redes IP en subredes",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Comunicaciones avanzadas: sistemas LiFi y RFID · IoT · cloud computing",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "saber": "Marcos de referencia técnicos: instrumentos que establecen estructura conceptual · lineamientos · mejores prácticas",
+            "competencia": [
+              "220501103"
+            ]
+          }
+        ]
+      },
+      "saberes_conceptos_y_principios": [
+        {
+          "saber": "Condicional zero (verdades técnicas universales) · APLICADO al DISCUTIR consecuencias técnicas verificables en reunión con cliente corporativo y auditor (if you cut the fiber optic without protection · you damage the signal · if the cable is not certified · it doesn't comply with TIA-568B · if the rack is not grounded · the system fails) base de APLICAR LAS NORMAS TÉCNICAS DE REFERENCIA en fases del proyecto",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Condicional first (predicciones técnicas) · APLICADO al DISCUTIR escenarios futuros con cliente corporativo y proveedor internacional (if we install PoE we will save cabling cost · if we comply with ISO 27001 we will reduce security incidents · if we deploy IoT sensors we will collect performance data) base de OFRECER SOLUCIÓN a situaciones particulares en área ocupacional TIC",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Would rather (preferencias técnicas argumentadas) · APLICADO al DISCUTIR elección de tecnología en comité técnico con consultor externo (I would rather use fiber optic than coaxial because of bandwidth · we would rather follow ANSI/TIA-568C than 568B · the team would rather adopt cloud computing than on-premise) base de DISCUTIR posibles soluciones a problemas",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Had better (recomendaciones técnicas y de seguridad) · APLICADO al DISCUTIR acciones preventivas con técnico de obra y supervisor de seguridad (you had better wear protective glasses when crimping fiber optic · we had better install a backup UPS for redundancy · the team had better follow RITEL guidelines · you had better label every cable before sealing the duct) base de DETERMINAR REQUERIMIENTOS DE SEGURIDAD",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Should + I think (that) + I consider (that) (opiniones argumentadas) · APLICADO al DISCUTIR propuestas técnicas con consultor externo y representante de organismo certificador (I think that we should comply with ISO/IEC 11801 · I consider that the proposal should include SLA clauses · we should adopt IEEE 802.11ax for the wireless network · the team should document each compliance check) base de OFRECER SOLUCIÓN a situaciones particulares en área ocupacional TIC",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Must (obligaciones técnicas y normativas) · APLICADO al DISCUTIR cumplimiento normativo con auditor de cumplimiento y representante de organismo certificador (you must follow ANSI/TIA standards · the warranty must cover at least 12 months according to consumer protection law · the contract must specify response times · the network must comply with RITEL) base de APLICAR NORMAS VIGENTES para presentación de proyectos",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Could (posibilidades · sugerencias) · APLICADO al DISCUTIR alternativas técnicas con cliente corporativo y proveedor internacional (we could implement PoE to save cabling costs · we could use LiFi for high-security areas · we could request a discount due to the delay · we could escalate the issue to the certification body) base de DISCUTIR posibles soluciones a problemas",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Superlativos (uso y contexto técnico: the most efficient solution · the safest option · the cheapest alternative) · APLICADO al DISCUTIR elección de estándar internacional con consultor externo (ISO/IEC 11801 is the most comprehensive standard for structured cabling · fiber optic is the safest option for outdoor runs · CAT6A is the cheapest alternative that meets future bandwidth needs · cloud computing is the most scalable solution) base de COMPARAR tecnologías y argumentar elección",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Comparativos avanzados (irregulares · de igualdad · de inferioridad) · APLICADO al DISCUTIR comparación técnica entre tecnologías y estándares con cliente corporativo (LiFi is more secure than WiFi but its range is less wide · ANSI/TIA-568C is more strict than 568B regarding shielded twisted pair · IEEE 802.11ax is faster than 802.11ac · RFID is less expensive than IoT but offers fewer features · cloud computing is as reliable as on-premise but more flexible) base de ESTABLECER DIFERENCIAS Y SIMILITUDES entre cosas técnicas",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Conectores avanzados de causa-efecto (because of · due to · therefore · as a result · consequently) · APLICADO al ARGUMENTAR razonamiento técnico en reunión con cliente corporativo y auditor (the connection failed because of poor crimping · the project was delayed due to the supplier shortage · we did not certify the network · therefore we cannot deliver yet · the cable did not comply with TIA-568B · as a result we replaced the entire run · the signal degraded due to electromagnetic interference · consequently we installed shielded twisted pair) base de OFRECER BREVES RAZONAMIENTOS técnicos argumentados",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Conectores de contraste (however · although · despite · in spite of) · APLICADO al DISCUTIR alternativas con cliente corporativo y consultor externo (the proposal is comprehensive however it exceeds the budget · although CAT6 is sufficient · the client requires CAT6A for future-proofing · despite the high initial cost · fiber optic is the most reliable option · in spite of the supplier delay · we will deliver on schedule) base de DISCUTIR posibles soluciones a problemas con argumentación matizada",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Conectores de adición (moreover · furthermore · in addition) · APLICADO al ARGUMENTAR ventajas técnicas en presentación al cliente corporativo (CAT6A supports 10 Gbps · moreover it has better noise immunity · furthermore it is backward compatible with CAT6 · in addition the warranty covers 25 years · the proposal includes installation · moreover it includes 12 months of monitoring · furthermore it complies with ISO/IEC 11801) base de OFRECER SOLUCIÓN ARGUMENTADA con apoyo de evidencias",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Verbos frasales avanzados (set up · roll out · scale up · phase out · troubleshoot · debug) · APLICADO al DISCUTIR procesos técnicos avanzados con consultor externo y proveedor internacional (we will set up the new VLAN next week · the team plans to roll out IPv6 across the campus · we need to scale up the cloud capacity · we will phase out the legacy CAT5 cabling · we have to troubleshoot the intermittent connectivity issue · the engineer will debug the routing protocol) base de DISCUTIR soluciones técnicas avanzadas",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Cláusulas de relativo (which · that · who · where · when · whose) · APLICADO al DISCUTIR especificaciones técnicas detalladas con cliente corporativo y auditor (the standard which we adopted is ANSI/TIA-568C · the technician who certified the network is licensed · the building where the data center is located has UPS redundancy · the year when we deployed IoT was 2024 · the supplier whose proposal we accepted offers 25-year warranty) base de SUMINISTRAR INFORMACIÓN sobre ubicación y elementos técnicos detallados",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Vocabulario: terminología técnica ocupacional avanzada (compliance · regulation · standard · framework · methodology · best practices) · APLICADO al DISCUTIR cumplimiento normativo con auditor y representante de organismo certificador (compliance with ISO 27001 · regulation under the Ley del Consumidor · standard ANSI/TIA-568C · framework PMBOK for project management · methodology PDCA for continuous improvement · best practices for cable management) base de APLICAR NORMAS VIGENTES para presentación de proyectos",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Vocabulario: tecnologías de la información avanzadas (cybersecurity · cloud computing · IoT · scalability · redundancy) · APLICADO al DISCUTIR tendencias técnicas con cliente corporativo y consultor externo (the cybersecurity policy follows ISO 27001 · cloud computing improves scalability · IoT sensors require redundancy in connectivity · the network has built-in redundancy via dual uplinks · scalability is critical for future expansion) base de ESTABLECER DIFERENCIAS Y SIMILITUDES entre tecnologías avanzadas",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Vocabulario: marco legal y regulatorio (consumer rights · contracts · outsourcing · liability · warranty · service level agreement) · APLICADO al DISCUTIR cláusulas contractuales con cliente corporativo y proveedor internacional (the service level agreement specifies a 4-hour response time · consumer rights protect the buyer for at least 12 months · the contract limits the liability of the integrator · the outsourcing clause covers third-party maintenance · the warranty covers parts and labor for 5 years) base de APLICAR MARCO CONTRACTUAL y ANALIZAR DERECHOS Y DEBERES del consumidor",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Vocabulario: estándares y normativas (ISO · IEC · IEEE · ANSI · TIA/EIA · compliance · certification) · APLICADO al DISCUTIR auditoría de cumplimiento con representante de organismo certificador (the network complies with ISO/IEC 11801 · IEEE 802.11ax governs wireless · ANSI/TIA-568C specifies CAT6A · TIA-606 covers labeling · the certification body audits compliance every 12 months · we obtained the ISO 27001 certification last year) base de APLICAR ESTÁNDARES INTERNACIONALES de redes de datos",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Vocabulario: fenómenos naturales (background contextual) · APLICADO al DISCUTIR planes de contingencia ante eventos naturales con cliente corporativo y auditor de seguridad (in case of flooding · the data center has elevated equipment · during electrical storms · we activate the UPS · in case of earthquake · the racks are seismic-rated · heavy rain in Urabá requires reinforced ducts · high humidity affects fiber optic enclosures) base de PLAN DE CONTINGENCIA y DETERMINAR REQUERIMIENTOS DE SEGURIDAD",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Vocabulario: viajes (background para narrativa de eventos institucionales) · APLICADO al DISCUTIR viajes profesionales y eventos del sector con colega de otro centro y consultor externo (last month I traveled to Bogotá for the certification audit · the team flew to Medellín for the project kick-off · we attended an international conference on cybersecurity · the supplier visited from Mexico for the equipment delivery) base de IDENTIFICAR EDIFICACIONES Y LUGARES de interés regional/nacional/internacional",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Expresiones idiomáticas comunes en contextos laborales avanzados · APLICADO al DISCUTIR temas técnicos complejos con consultor externo y cliente corporativo (let's get on the same page about the standard · we need to think outside the box for this design · the project is on the back burner due to budget · we have to bite the bullet and replace the cabling · let's not reinvent the wheel · this issue is the elephant in the room) base de DISCUTIR soluciones con naturalidad profesional avanzada",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Expresiones de cortesía para intercambiar opiniones argumentadas (with all due respect · I see your point but · I'd like to add) · APLICADO al DISCUTIR desacuerdos técnicos con cliente corporativo y representante de organismo certificador (with all due respect · the proposal exceeds the budget · I see your point about CAT6 but the future bandwidth requires CAT6A · I'd like to add that ISO 27001 mandates this control · with respect to your concern · we have already addressed it in section 4.3) base de OFRECER RAZONAMIENTOS argumentados con respeto profesional",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Pronunciación: International Phonetic Alphabet completo · símbolos avanzados · APLICADA al PRONUNCIAR términos técnicos avanzados ante cliente corporativo y representante de organismo certificador (compliance /kəmˈplaɪəns/ · methodology /ˌmeθəˈdɒlədʒi/ · scalability /ˌskeɪləˈbɪlɪti/ · redundancy /rɪˈdʌndənsi/ · cybersecurity /ˌsaɪbəsɪˈkjʊərɪti/) base de DISCUTIR cumplimiento normativo con precisión fonética profesional",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Pronunciación: conexión y elisión de sonidos con superlativos · APLICADA al PRONUNCIAR fluidamente comparaciones argumentadas en discusión técnica (the most_efficient solution · the safest_option · the best_alternative · the cheapest_proposal · the most_comprehensive_standard) base de DISCUTIR tecnologías y estándares con fluidez argumentativa",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Pronunciación: reducción vocálica avanzada en speech connected · APLICADA al DISCUTIR técnicamente con fluidez ante cliente corporativo (we've gotta comply · we're gonna troubleshoot · we should've installed UPS · we could've used fiber · we must've checked the certificate) base de ARGUMENTAR opiniones técnicas con fluidez avanzada",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        }
+      ],
+      "saberes_proceso": [
+        {
+          "saber_proceso": "Discutir sobre posibles soluciones a problemas en contextos sociales y laborales · APLICADO al DISCUTIR alternativas técnicas en comité con consultor externo y cliente corporativo UraNet (we could use fiber optic OR we could deploy LiFi · I would rather adopt ISO/IEC 11801 because it's more comprehensive · however the budget might not allow CAT6A · therefore we should evaluate a phased rollout · we had better install UPS to mitigate the risk) base de APLICAR ESTÁNDARES INTERNACIONALES y APLICAR MARCO CONTRACTUAL",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Ofrecer solución a situaciones particulares en su área ocupacional TIC · APLICADO al PROPONER soluciones a imprevistos en obra ante supervisor de obra y cliente corporativo (if we cannot reach the duct ceiling we will use external trays · we could request a discount due to the supplier delay · we should reroute the cable through the secondary duct · we had better install a backup UPS for redundancy · I would rather replace the connector than risk certification failure) base de APLICAR POLÍTICAS DE SEGURIDAD FÍSICA y MANEJAR NORMAS TÉCNICAS de instalación",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Expresar hechos reales y posibles acerca de diversos eventos o situaciones del entorno · APLICADO al DISCUTIR escenarios técnicos hipotéticos con cliente corporativo y proveedor internacional (if you cut the fiber optic without protection you damage the signal · if we install PoE we will save cabling cost · if the cable is not certified it does not comply with TIA-568B · if we deploy IoT sensors we will collect performance data · if the rack is not grounded the system fails) base de APLICAR NORMAS TÉCNICAS DE REFERENCIA y argumentar consecuencias verificables",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Establecer diferencias y similitudes entre personas · lugares o cosas técnicas · APLICADO al COMPARAR tecnologías y estándares en discusión con consultor externo y cliente corporativo (LiFi is more secure than WiFi but its range is more limited · CAT6A is faster than CAT6 and as durable · ANSI/TIA-568C is more strict than 568B regarding shielded twisted pair · cloud computing is as reliable as on-premise but more flexible · ISO/IEC 11801 is the most comprehensive standard) base de DISCUTIR ELECCIÓN de estándar internacional argumentada",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Identificar edificaciones y lugares de interés regional · nacional e internacional · APLICADO al DISCUTIR ubicaciones de proyecto multi-sede con cliente corporativo y proveedor internacional (the headquarters is located in Apartadá · the regional data center is in Medellín which is the most strategic location · the international supplier is based in Mexico City where the equipment is manufactured · the certification body is headquartered in Geneva · the disaster recovery site is in Bogotá because of seismic risk distribution) base de SUMINISTRAR INFORMACIÓN sobre ubicación de sedes y proveedores",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Suministrar información sobre ubicación y manera de llegar a un lugar determinado · APLICADO al GUIAR a auditor externo o representante de organismo certificador hacia sedes y áreas técnicas (the data center is on the second floor · take the elevator to the back and then turn left · the rack room is at the end of the corridor · the certification audit office is across from the project room · the supplier office is two blocks from the metro station) base de RECIBIR auditoría externa con orientación profesional clara",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber_proceso": "Argumentar opiniones técnicas usando conectores de causa-efecto y contraste · APLICADO al DISCUTIR razonamiento técnico avanzado en reunión con consultor externo y representante de organismo certificador (the project was delayed due to supplier shortage · therefore we extended the deadline · however the client accepted the revised plan · in spite of the cost increase we maintained the scope · because of the EMI we installed STP cables · consequently the certification passed) base de OFRECER BREVES RAZONAMIENTOS técnicos argumentados estructurados",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        }
+      ],
+      "criterios_evaluacion": [
+        "Brinda solución a un problema sencillo haciendo uso de adecuada pronunciación · fluidez · rango de vocabulario y estructura gramatical para nivel pre intermedio AL DISCUTIR alternativas técnicas en comité con consultor externo y AL OFRECER solución argumentada a imprevistos en obra ante supervisor y cliente corporativo (proponer alternativa · justificar elección con conectores causa-efecto · contrastar con conectores however/although · cerrar con recomendación had better/should)",
+        "Hace uso de términos y expresiones relacionadas con su ámbito laboral específico AL DISCUTIR cumplimiento normativo con auditor y representante de organismo certificador (compliance · standard · framework · ISO/IEC · IEEE · ANSI/TIA/EIA · service level agreement · liability · warranty · scalability · redundancy · cybersecurity) y AL APLICAR MARCO CONTRACTUAL en negociación con cliente corporativo",
+        "Hace uso de vocabulario relacionado con familia · aficiones e intereses · trabajo · viajes y hechos de actualidad AL DISCUTIR contextos laborales y eventos del sector TIC con colegas y consultores (viajes profesionales a Bogotá/Medellín/Geneva · congresos internacionales · hechos de actualidad como nuevos estándares ISO/IEC publicados · reuniones de comité técnico) en small talk profesional avanzado",
+        "Sigue instrucciones de un proceso relacionado con su quehacer laboral AL EJECUTAR procedimientos de auditoría de cumplimiento dictados por auditor externo y AL APLICAR protocolos de verificación de seguridad física en cableado estructurado (verificar etiquetado TIA-606 · medir continuidad · documentar cumplimiento · firmar acta de auditoría) bajo guía de representante de organismo certificador"
+      ],
+      "criterios_evaluacion_especificos_canon_sistema": [
+        {
+          "id": "C01",
+          "criterio": "Comprender información en textos cortos en inglés AL LEER documentación regulatoria bilingüe en proyecto UraNet G3 (estándar ISO/IEC 11801 traducido · IEEE 802.11ax brief · marco contractual con SLA · cláusulas de Ley del Consumidor · informe de auditoría de cumplimiento normativo) e identificar datos clave correctos vs distractores en informe técnico-legal elaborado por auditor de cumplimiento",
+          "rap_target": "RA1",
+          "cefr_subnivel": "A1.3",
+          "evidencia": "E1",
+          "evidencia_nombre": "Reading",
+          "sesion": "S3",
+          "instrumento": "Cuestionario No 1",
+          "_anclaje_tecnico": "Aplicar estándares internacionales de redes de datos + Aplicar marco contractual + Analizar derechos y deberes del consumidor + Aplicar normas técnicas de referencia",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "id": "C02",
+          "criterio": "Producir textos escritos argumentativos AL ELABORAR DOCUMENTACIÓN TÉCNICA-LEGAL bilingüe de cierre de proyecto UraNet G3 (informe de cumplimiento normativo · justificación técnica de elección de estándar · acta de auditoría · documento de propuesta argumentada · informe de discusión de alternativas técnicas con conectores causa-efecto y contraste) aplicando condicionales 0+1 · would rather/had better · superlativos · comparativos avanzados · cláusulas de relativo · conectores avanzados sin errores que comprometan la argumentación técnica",
+          "rap_target": "RA1",
+          "cefr_subnivel": "A1.3",
+          "evidencia": "E2",
+          "evidencia_nombre": "Writing",
+          "sesion": "S4",
+          "instrumento": "Lista de Verificación No 2",
+          "_anclaje_tecnico": "Aplicar normas vigentes para presentación de proyectos + Aplicar marco contractual + Determinar requerimientos de seguridad + Aplicar estándares internacionales",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "id": "C04",
+          "criterio": "Producir oralmente argumentación técnica avanzada con suficiente claridad AL DISCUTIR alternativas técnicas en comité con consultor externo · AL ARGUMENTAR elección de estándar internacional ante representante de organismo certificador · AL OFRECER solución a imprevistos en obra ante cliente corporativo y supervisor · AL DEFENDER propuesta de cumplimiento normativo en panel de auditoría aplicando condicionales · would rather · had better · superlativos · conectores causa-efecto y contraste · expresiones de cortesía argumentada (with all due respect · I see your point but)",
+          "rap_target": "RA1",
+          "cefr_subnivel": "A1.3",
+          "evidencia": "E4",
+          "evidencia_nombre": "Speaking",
+          "sesion": "S7",
+          "instrumento": "Lista de Verificación No 4",
+          "_anclaje_tecnico": "Aplicar estándares internacionales + Determinar requerimientos de seguridad + Aplicar políticas de seguridad física + Aplicar marco contractual",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "id": "C06",
+          "criterio": "Demostrar dominio productivo de gramática A1.3 contextualizada a discusión argumentativa TIC UraNet G3 (condicional zero AL DISCUTIR consecuencias técnicas · condicional first AL DISCUTIR predicciones · would rather AL ARGUMENTAR preferencias técnicas · had better AL RECOMENDAR seguridad · should/must AL DISCUTIR cumplimiento normativo · superlativos AL ARGUMENTAR elección de estándar · comparativos avanzados AL CONTRASTAR tecnologías · cláusulas de relativo AL ESPECIFICAR detalles técnicos · conectores causa-efecto y contraste AL ESTRUCTURAR argumentación) en cuestionario consolidado",
+          "rap_target": [
+            "RA1",
+            "RA5"
+          ],
+          "cefr_subnivel": "A1.3",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Grammar",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · gramática A1.3 al operar procesos técnicos cross-comp argumentativos (RA1) + reflexivos (RA5)",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "id": "C08",
+          "criterio": "Demostrar transferencia productiva integral AL PRESENTAR misión final ABP capstone bilingüe de CIERRE PROGRAMA ante panel evaluador (cliente corporativo + auditor de cumplimiento + consultor externo + representante de organismo certificador): defender propuesta argumentada de cumplimiento normativo · presentar plan de implementación de acciones de mejora · discutir resultados de auditoría con KPIs estadísticos · responder preguntas técnicas avanzadas con cortesía profesional aplicando todo el repertorio A1.3 argumentativo-reflexivo",
+          "rap_target": [
+            "RA1",
+            "RA5"
+          ],
+          "cefr_subnivel": "A1.3",
+          "evidencia": "E-Misión",
+          "evidencia_nombre": "Misión Final ABP · CIERRE programa",
+          "sesion": "S15-S17",
+          "instrumento": "Rúbrica integral capstone CIERRE",
+          "_anclaje_tecnico": "Capstone CIERRE PROGRAMA · todos los procesos foco G3 cross-comp + integración de saberes G1+G2 · auditoría · cumplimiento · acciones de mejora · KPIs",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        }
+      ],
+      "_rationale": "RA1 es Bloom L4 ANALIZAR (DISCUTIR posibles soluciones a problemas) · cara argumentativa avanzada del idioma A1.3 (Speaking + Writing crítico-analítico) APLICADA a procesos técnicos TIC REALES de discusión cross-comp UraNet G3. El enunciado SOFÍA refiere 'discutir sobre posibles soluciones a problemas dentro de un rango variado de contextos sociales y laborales' · contextualizado al universo G3 expandido UraNet significa: DISCUTIR alternativas técnicas en comité con consultor externo (cross-comp) · ARGUMENTAR elección de estándar internacional ISO/IEC 11801, IEEE 802.11ax, ANSI/TIA-568C ante representante de organismo certificador (220501103) · OFRECER soluciones a imprevistos en obra con condicionales 0+1 y had better/would rather al supervisor de obra (220501103) · DISCUTIR riesgos contractuales del consumidor citando Ley del Consumidor con cliente corporativo (220501086) · RESOLVER conflictos con proveedor internacional usando modales must/could y conectores causa-efecto (220501086) · COMPARAR tecnologías avanzadas LiFi/WiFi/RFID/IoT/cloud computing con superlativos y comparativos avanzados (220501103) · AUDITAR cumplimiento de normas técnicas en obra con vocabulario regulatorio (cross-comp) · PROPONER alternativas con conectores avanzados de adición/contraste (cross-comp). Cada saber inglés argumentativo (condicional 0+1 · would rather · had better · should/must · could · superlativos · comparativos avanzados · conectores causa-efecto · contraste · adición · verbos frasales avanzados · cláusulas de relativo · vocabulario regulatorio + tecnologías avanzadas + marco legal + estándares · pronunciación IPA + reducción avanzada + conexión superlativos) está ANCLADO a un proceso técnico real cross-comp argumentativo. CIERRE PROGRAMA · cubre deuda final acumulada G1+G2: marco legal completo · estándares internacionales detallados ISO/IEC/IEEE/ANSI/TIA-EIA/RITEL · TCP/IP+subredes · políticas de seguridad regulatorias · derechos y deberes del consumidor · plan de contingencia avanzado. Procesos: 7/7 procesos lingüísticos argumentativos contextualizados a procesos técnicos cross-comp del input crudo G3. Criterios canon C01 (Reading documentación regulatoria) + C02 (Writing argumentativo) + C04 (Speaking discusión) anclan a procesos técnicos verificables de ambas competencias.",
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": [
+          "E1 (C01 · Reading S3 · documentación regulatoria + estándares + marco contractual + Ley del Consumidor · cross-comp)",
+          "E2 (C02 · Writing S4 · documentación técnica-legal + acta de auditoría + propuesta argumentada · cross-comp)",
+          "E4 (C04 · Speaking S7 · discusión argumentativa + defensa de propuesta + comité técnico + auditoría · cross-comp)",
+          "E-Misión (C08 · capstone S15-S17 · misión final ABP CIERRE PROGRAMA · panel evaluador completo · cross-comp)"
+        ],
+        "overlaps_documentados": [
+          "C06 2-way RA1+RA5 cara Grammar E6 (gramática A1.3 transversal argumentativo+reflexivo · cross-comp)",
+          "C08 2-way RA1+RA5 capstone E-Misión (misión final ABP CIERRE integra argumentación + reflexión · cross-comp)"
+        ],
+        "sesiones_anchor": [
+          "S3 (E1 Reading)",
+          "S4 (E2 Writing)",
+          "S7 (E4 Speaking)",
+          "S9 (E6 Cuestionario Grammar)",
+          "S15-S17 (E-Misión Capstone CIERRE)"
+        ],
+        "criterios_count": 5,
+        "saberes_count": "25 conceptos + 7 procesos · TODOS anclados a procesos/saberes técnicos cross-comp G3 UraNet",
+        "_nota_fusion": "RA1 ancla a 10 procesos técnicos argumentativos cross-comp del input crudo G3 (5 de 220501086 · 5 de 220501103) y a 11 saberes técnicos regulatorio-normativos (5 de 220501086 · 6 de 220501103) · La fusión se concentra en procesos donde el componente argumentativo es central (discusión de estándares · defensa contractual · auditoría de cumplimiento · comparación de tecnologías · resolución de imprevistos)"
+      }
+    },
+    {
+      "rap_id": "RA5",
+      "rap_codigo_sofia": "240202501-RA5",
+      "rap_titulo": "IMPLEMENTAR ACCIONES DE MEJORA RELACIONADAS CON EL USO DE EXPRESIONES, ESTRUCTURAS Y DESEMPEÑO SEGÚN LOS RESULTADOS DE APRENDIZAJE FORMULADOS PARA EL PROGRAMA",
+      "verbo_cognitivo": "IMPLEMENTAR",
+      "bloom_level": "L5 (Evaluar) · cara meta-cognitiva reflexiva A1.3",
+      "cefr_target": "A1.3",
+      "dominio_canonico": "Avanzado reflexivo (Speaking + Writing meta-cognitivo) APLICADO a procesos técnicos TIC de implementación de mejoras cross-comp UraNet G3: implementar acciones de mejora basadas en auditoría aplicando PDCA · realizar autoevaluación reflexiva del desempeño laboral con presente perfecto + adverbios de manera · gestionar acciones correctivas con KPIs estadísticos · liderar equipo aplicando técnicas de motivación y administración de personal · reportar avances con datos estadísticos y conectores avanzados · evaluar críticamente evidencias de aprendizaje · narrar trayectoria profesional con pasado perfecto + presente perfecto + conectores de cohesión · identificar aciertos y dificultades con since/for/ago + adverbios reflexivos (yet · still · already · just · lately · recently)",
+      "_anclaje_tecnico_rap": {
+        "procesos_tecnicos_anclados": [
+          {
+            "proceso": "Aplicar la gestión documental (regulación archivística)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Reconocer variaciones de ejecución (acciones de mejora reflexivas · PDCA)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Verificar actividades asignadas en el proyecto (auditoría de cumplimiento)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Gestionar talento humano (selección · funciones · motivación · liderazgo · evaluación)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Realizar costos del proyecto de infraestructura (avanzados con KPIs · análisis estadístico)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "proceso": "Realizar mantenimiento preventivo y/o actualización del sistema (acciones reflexivas)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Realizar análisis de variaciones (acciones correctivas)",
+            "competencia": [
+              "220501103"
+            ]
+          },
+          {
+            "proceso": "Implementar acciones de mejora derivadas de auditoría (PDCA aplicado a redes)",
+            "competencia": [
+              "220501103"
+            ]
+          }
+        ],
+        "saberes_tecnicos_anclados": [
+          {
+            "saber": "Administración de personal: manual de procedimiento · funciones · técnicas selección · motivación · liderazgo · delegación",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Estadísticas: procesos estadísticos · análisis de datos · distribución probabilidad · análisis variancia · gráficos dispersión y tendencias · análisis de flujo",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Acciones correctivas y preventivas (PDCA · Plan-Do-Check-Act · indicadores)",
+            "competencia": [
+              "220501086"
+            ]
+          },
+          {
+            "saber": "Buenas prácticas avanzadas en manipulación · instalación y procesos en redes",
+            "competencia": [
+              "220501103"
+            ]
+          }
+        ]
+      },
+      "saberes_conceptos_y_principios": [
+        {
+          "saber": "Diferencia entre presente perfecto y pasado simple (uso reflexivo de experiencia acumulada) · APLICADO al REALIZAR autoevaluación reflexiva del desempeño laboral con líder de equipo y consultor externo (I have improved my installation speed since January · I learned the basics in 2024 · I have completed 80% of the certifications · last year I attended only 2 trainings · I have led the team for 6 months) base de IDENTIFICAR ACIERTOS Y DIFICULTADES en proceso de aprendizaje",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Presente perfecto · acciones que continúan o tienen relevancia presente · APLICADO al IMPLEMENTAR acciones de mejora basadas en auditoría con líder de equipo y evaluador de calidad (we have analyzed the failures · we have implemented corrective actions · we have reduced installation time by 20% · the team has improved certification pass rate from 75% to 95% · I have led three improvement projects this year) base de IMPLEMENTAR ACCIONES DE MEJORA derivadas de auditoría",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Pasado perfecto · introducción para narrativa avanzada · APLICADO al NARRAR cronología de mejoras técnicas con consultor externo y líder de equipo (before we implemented PDCA the team had not standardized the cabling process · by the end of Q2 we had certified 50% of the network · before the audit we had documented all corrective actions · the supplier had delivered late so we had to reschedule) base de NARRAR EVENTOS Y ACONTECIMIENTOS con coherencia temporal avanzada",
+          "_anclaje_tecnico_competencia": [
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Adverbios de forma y manera avanzados (effectively · efficiently · safely · properly) · APLICADO al EVALUAR REFLEXIVAMENTE desempeño laboral y de equipo con líder y evaluador de calidad (the team has worked effectively this quarter · we have managed time efficiently · the technicians have crimped the connectors safely · we have documented the procedures properly · the project has been executed effectively · I have learned to delegate efficiently) base de REALIZAR AUTOEVALUACIÓN REFLEXIVA del proceso de aprendizaje y desempeño",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Adverbios (yet · still · ever · already · just · lately · recently) · APLICADO al REPORTAR avances reflexivos con líder de equipo y consultor externo (we have just finished the audit · we have already implemented 3 corrective actions · we have not certified the network yet · the team is still working on the documentation · I have lately focused on leadership skills · we have recently adopted PDCA methodology · have you ever audited a campus network?) base de IDENTIFICAR ACIERTOS Y DIFICULTADES y reportar progreso meta-cognitivo",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Since · for · ago (tiempo extendido) · APLICADO al DESCRIBIR experiencia acumulada en autoevaluación con líder de equipo y consultor externo (I have worked at UraNet for two years · I have led the network team since January · we have implemented PDCA for 6 months · the certification was obtained 8 months ago · I have studied for the CCNA exam since last summer · we have used CAT6A for three years now) base de NARRAR EVENTOS Y ACONTECIMIENTOS y reportar evolución profesional",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Vocabulario: gestión y administración (human resources · leadership · performance evaluation · KPIs · improvement plan) · APLICADO al GESTIONAR talento humano y reportar a evaluador de calidad y líder de equipo (the human resources department supports the project · the leadership program improved team motivation · the performance evaluation showed 85% achievement · the KPIs have improved this quarter · we have implemented a comprehensive improvement plan) base de GESTIONAR TALENTO HUMANO y APLICAR ACCIONES DE MEJORA",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Vocabulario: estadística y análisis (data · indicator · trend · distribution · variance · scatter plot) · APLICADO al REPORTAR avances con datos estadísticos a evaluador de calidad y consultor externo (the data shows a positive trend · the indicator has improved by 15% · the distribution of failures is concentrated in Q1 · the variance has decreased significantly · the scatter plot reveals a correlation between training hours and certification pass rate · the analysis has confirmed our hypothesis) base de REALIZAR COSTOS del proyecto con KPIs y APLICAR ACCIONES CORRECTIVAS",
+          "_anclaje_tecnico_competencia": [
+            "220501086"
+          ]
+        },
+        {
+          "saber": "Pronunciación: diferencia entre el sonido TH /θ/ y /ð/ · APLICADA al PRONUNCIAR términos técnicos con TH ante auditor de cumplimiento y consultor externo (think /θɪŋk/ vs this /ðɪs/ · throughput /ˈθruːpʊt/ vs the /ðə/ · thirty /ˈθɜːti/ vs they /ðeɪ/ · breath /breθ/ vs breathe /briːð/) base de DISCUTIR términos técnicos con precisión fonética avanzada",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Estrategias de aprendizaje meta-cognitivas (planning · monitoring · evaluating) · APLICADAS al PLANEAR · MONITOREAR y EVALUAR proceso de aprendizaje y desempeño laboral con líder de equipo (I have planned my learning goals for the year · I have monitored my progress weekly · I have evaluated my strengths and weaknesses · the team has planned the rollout · the team has monitored the KPIs · the team has evaluated the certification results) base de IMPLEMENTAR ACCIONES DE MEJORA y REALIZAR AUTOEVALUACIÓN REFLEXIVA",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber": "Estrategias de auto-evaluación reflexiva del proceso de formación · APLICADAS al EVALUAR críticamente evidencias de aprendizaje propias y de equipo (I have completed all SENA modules · I have presented projects in English · I have improved my pronunciation · I would rather practice more grammar conditionals · my weakest area is technical writing in English · I have set new goals for next quarter · the team has assessed each evidence) base de EVALUAR DE MANERA REFLEXIVA Y CRÍTICA las evidencias de aprendizaje presentadas",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        }
+      ],
+      "saberes_proceso": [
+        {
+          "saber_proceso": "Narrar eventos y acontecimientos usando pasado · perfecto y conectores que brinden coherencia y cohesión · APLICADO al NARRAR cronología de mejoras implementadas en proyecto UraNet ante consultor externo y líder de equipo (in Q1 we identified that 15% of cables failed certification · by Q2 we had analyzed the root cause · since then we have implemented crimping training · as a result the failure rate has decreased to 3% · moreover we have ordered new tools · therefore the team has improved efficiency) base de IMPLEMENTAR ACCIONES DE MEJORA y reportar evolución del proceso",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Implementar acciones de mejora relacionadas con uso de expresiones · estructuras y desempeño · APLICADO al IMPLEMENTAR mejoras técnicas y de comunicación bilingüe en equipo de instalación UraNet ante líder y evaluador de calidad (we have noticed the team is more efficient when we use clear instructions · we have implemented bilingual checklists · the team has adopted weekly retrospectives · I have introduced English daily standups · we have improved technical vocabulary across the team) base de APLICAR ACCIONES CORRECTIVAS Y PREVENTIVAS PDCA",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Realizar autoevaluación reflexiva del proceso de aprendizaje y desempeño laboral · APLICADO al EVALUAR reflexivamente trayectoria profesional propia con líder de equipo y consultor externo (I have improved my installation speed since January · I have not certified IEEE 802.11ax yet · I have already completed the CAT6A training · I would rather focus on cybersecurity next quarter · my strongest area has been physical installation · I should improve my report writing in English) base de IDENTIFICAR ACIERTOS Y DIFICULTADES en proceso de aprendizaje",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Identificar aciertos y dificultades en cada punto del proceso de aprendizaje · APLICADO al REPORTAR retrospectiva de proyecto al líder de equipo y evaluador de calidad (the team has performed effectively in physical installation · we have struggled with documentation in English · we have not met the certification deadline yet · we have already addressed the cable management issue · we have lately improved the bilingual reporting · we still need to work on argumentative writing) base de EVALUAR DE MANERA REFLEXIVA Y CRÍTICA evidencias de aprendizaje",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Evaluar de manera reflexiva y crítica las evidencias de aprendizaje presentadas · APLICADO al PRESENTAR portafolio de evidencias en panel evaluador final ABP UraNet (cliente corporativo + auditor + consultor externo + representante de organismo certificador) (I have completed all SENA modules · I have presented projects in English · I have audited 3 networks · I would rather practice more pronunciation · I have learned a lot about CCTV but I should master IP addressing · the team has demonstrated improvement in 5 of the 8 KPIs · we have not yet achieved excellence in writing) base de IMPLEMENTAR ACCIONES DE MEJORA y cerrar capstone con reflexión meta-cognitiva",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Pronunciar términos y frases con reglas avanzadas de acentuación · entonación · elisión · APLICADO al PRONUNCIAR fluidamente vocabulario técnico avanzado en presentación reflexiva ante panel evaluador (compliance /kəmˈplaɪəns/ · methodology /ˌmeθəˈdɒlədʒi/ · scalability /ˌskeɪləˈbɪlɪti/ · we've implemented · we should've certified · we could've prevented · the team's performance has improved) base de PRESENTAR autoevaluación reflexiva con precisión fonética avanzada",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "saber_proceso": "Reconocer fonemas avanzados del IPA · diferencias TH /θ/ y /ð/ · APLICADO al PRONUNCIAR términos técnicos con TH ante consultor externo y representante de organismo certificador (think /θɪŋk/ vs this /ðɪs/ · throughput /ˈθruːpʊt/ vs the /ðə/ · thirty /ˈθɜːti/ vs they /ðeɪ/ · we should think about throughput · we have already improved this · they have audited the network) base de PRESENTAR autoevaluación con precisión fonética profesional avanzada",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        }
+      ],
+      "criterios_evaluacion": [
+        "Se comunica de manera eficaz en torno a temáticas cotidianas y laborales sencillas haciendo uso de adecuada pronunciación · fluidez · rango de vocabulario y estructura gramatical AL REPORTAR retrospectiva reflexiva al líder de equipo y AL PRESENTAR autoevaluación de desempeño laboral con presente perfecto + adverbios de manera + since/for + conectores avanzados",
+        "Comprende información concreta relativa a temas cotidianos y laborales en textos orales y escritos AL ESCUCHAR retroalimentación reflexiva del consultor externo · informe de auditoría de cumplimiento del evaluador de calidad · narración de mejoras del líder de equipo y AL LEER documentación de acciones correctivas + plan de mejora bilingüe + indicadores estadísticos de KPIs",
+        "Es capaz de hacer una presentación breve y preparada sobre un tema dentro de su especialidad con suficiente claridad AL PRESENTAR autoevaluación reflexiva de trayectoria profesional ante panel evaluador (cliente corporativo + auditor de cumplimiento + consultor externo + representante de organismo certificador) y AL EXPONER plan de implementación de acciones de mejora con KPIs estadísticos y narrativa de cronología avanzada",
+        "Participa en juegos de rol guiados o situaciones simuladas sobre situaciones cotidianas y laborales actuales · pasadas y futuras AL SIMULAR retrospectiva de proyecto con líder de equipo · sesión de coaching con consultor externo · presentación de capstone ABP ante panel · auditoría reflexiva con evaluador de calidad y narración de cronología de mejoras técnicas en cierre de proyecto"
+      ],
+      "criterios_evaluacion_especificos_canon_sistema": [
+        {
+          "id": "C03",
+          "criterio": "Comprender información oral AL ESCUCHAR retroalimentación reflexiva del consultor externo · informe de auditoría del evaluador de calidad · narración de cronología de mejoras del líder de equipo · presentación de KPIs estadísticos del gerente de proyecto · feedback de panel evaluador en preparación capstone (audio auténtico A1.3 con presente perfecto + pasado perfecto + adverbios reflexivos + conectores avanzados causa-efecto)",
+          "rap_target": "RA5",
+          "cefr_subnivel": "A1.3",
+          "evidencia": "E3",
+          "evidencia_nombre": "Listening",
+          "sesion": "S5",
+          "instrumento": "Lista de Verificación No 3",
+          "_anclaje_tecnico": "Implementar acciones de mejora derivadas de auditoría + Realizar análisis de variaciones + Verificar actividades asignadas + Gestionar talento humano",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "id": "C05",
+          "criterio": "Demostrar dominio integrado de vocabulario A1.3 contextualizado a discusión argumentativa y reflexión meta-cognitiva TIC UraNet G3 (terminología técnica ocupacional avanzada para DISCUTIR cumplimiento · tecnologías avanzadas para COMPARAR alternativas · marco legal y regulatorio para ARGUMENTAR contractual · gestión y administración para REPORTAR liderazgo · estándares y normativas para AUDITAR cumplimiento · estadística y análisis para PRESENTAR KPIs · expresiones de cortesía argumentada para DISENTIR profesionalmente · expresiones idiomáticas avanzadas para INTERACTUAR profesionalmente) en cuestionario consolidado",
+          "rap_target": [
+            "RA1",
+            "RA5"
+          ],
+          "cefr_subnivel": "A1.3",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Vocabulario",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · vocabulario A1.3 al operar procesos técnicos cross-comp argumentativos (RA1) + reflexivos (RA5)",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        },
+        {
+          "id": "C07",
+          "criterio": "Demostrar dominio integrado de saberes (Reading + Writing + Listening + Vocabulary + Grammar) AL OPERAR procesos técnicos argumentativos (RA1) y reflexivo-meta-cognitivos (RA5) auténticos UraNet G3 · Cuestionario Consolidado · 25 ítems · ≥ 70% para PASS · CIERRE programa integrando saberes A1.1 + A1.2 + A1.3",
+          "rap_target": [
+            "RA1",
+            "RA5"
+          ],
+          "cefr_subnivel": "consolidación A1.3 + integración G1+G2+G3",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado CIERRE",
+          "sesion": "S9",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal CIERRE PROGRAMA · 10 procesos argumentativos (RA1) + 8 procesos reflexivos (RA5) cross-comp 220501086 + 220501103",
+          "_anclaje_tecnico_competencia": [
+            "220501086",
+            "220501103"
+          ]
+        }
+      ],
+      "_rationale": "RA5 es Bloom L5 EVALUAR (IMPLEMENTAR acciones de mejora relacionadas con uso de expresiones · estructuras y desempeño según RAPs del programa) · cara meta-cognitiva reflexiva del idioma A1.3 (Speaking + Writing reflexivo) APLICADA a procesos técnicos TIC REALES de implementación de mejoras cross-comp UraNet G3. El enunciado SOFÍA refiere 'implementar acciones de mejora relacionadas con uso de expresiones · estructuras y desempeño según los resultados de aprendizaje formulados para el programa' · contextualizado al universo G3 expandido UraNet significa: IMPLEMENTAR acciones de mejora basadas en auditoría aplicando PDCA con líder de equipo y evaluador de calidad (cross-comp) · REALIZAR autoevaluación reflexiva del desempeño laboral con presente perfecto y adverbios de manera (cross-comp) · GESTIONAR talento humano con técnicas de motivación y administración de personal (220501086) · REPORTAR avances con datos estadísticos y KPIs (220501086) · LIDERAR equipo aplicando técnicas de motivación (220501086) · APLICAR PDCA a procesos técnicos de mantenimiento preventivo y análisis de variaciones (220501103) · EVALUAR críticamente evidencias de aprendizaje en panel ABP de cierre · NARRAR cronología de mejoras con pasado perfecto y conectores avanzados de coherencia. Cada saber inglés reflexivo (presente perfecto · pasado perfecto · diferencia perfect/simple · adverbios de manera avanzados · adverbios reflexivos yet/still/already/just/lately/recently · since/for/ago · vocabulario gestión + estadística + administración · estrategias meta-cognitivas planning/monitoring/evaluating · pronunciación TH avanzada) está ANCLADO a un proceso técnico real cross-comp reflexivo-meta-cognitivo. CIERRE PROGRAMA · cubre deuda final acumulada G1+G2: administración de personal · acciones reflexivas · estadísticas · KPIs · análisis de variancia · gráficos de tendencias · indicadores · liderazgo · evaluación de desempeño. Procesos: 7/7 procesos lingüísticos reflexivos contextualizados a procesos técnicos cross-comp del input crudo G3. Criterios canon C03 (Listening retroalimentación + auditoría) + C05 (Vocabulario integrado) + C07 (Cuestionario consolidado CIERRE) anclan a procesos técnicos verificables de ambas competencias.",
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": [
+          "E3 (C03 · Listening S5 · retroalimentación + auditoría + KPIs + cronología de mejoras · cross-comp)",
+          "E6 (C05+C07 · Cuestionario Consolidado CIERRE S9 · vocabulario integrado + cuestionario consolidado integrando G1+G2+G3 · cross-comp)",
+          "E-Misión (C08 · capstone S15-S17 · misión final ABP CIERRE · panel evaluador completo · cross-comp)"
+        ],
+        "overlaps_documentados": [
+          "C05 2-way RA1+RA5 cara Vocabulario E6 (vocabulario A1.3 transversal argumentativo+reflexivo · cross-comp)",
+          "C06 2-way RA1+RA5 cara Grammar E6 (gramática A1.3 transversal argumentativo+reflexivo · cross-comp)",
+          "C07 2-way RA1+RA5 Cuestionario Consolidado CIERRE E6 (cross-comp · integra G1+G2+G3)",
+          "C08 2-way RA1+RA5 capstone E-Misión (misión final ABP CIERRE integra argumentación + reflexión · cross-comp)"
+        ],
+        "sesiones_anchor": [
+          "S5 (E3 Listening)",
+          "S9 (E6 Cuestionario Vocabulario+Grammar+Integrado)",
+          "S15-S17 (E-Misión Capstone CIERRE)"
+        ],
+        "criterios_count": 3,
+        "saberes_count": "11 conceptos + 7 procesos · TODOS anclados a procesos/saberes técnicos cross-comp G3 UraNet",
+        "_nota_fusion": "RA5 ancla a 8 procesos técnicos reflexivo-meta-cognitivos cross-comp del input crudo G3 (5 de 220501086 · 3 de 220501103) y a 4 saberes técnicos administrativo-estadístico-PDCA (3 de 220501086 · 1 de 220501103) · La fusión se concentra en procesos donde el componente reflexivo + meta-cognitivo es central (autoevaluación · acciones correctivas PDCA · gestión talento humano · KPIs estadísticos · evaluación crítica de evidencias)"
+      }
+    }
+  ],
+  "_v2_audit_anclaje_tecnico": {
+    "_doc": "Auditoría de cobertura de fusión bidireccional ESP MULTI-COMP G3 CIERRE · contar cuántos elementos del bloque contenido_tecnico_crudo (cross-comp 220501086 + 220501103 foco G3) aparecen anclados en saberes/procesos/criterios inglés de RA1+RA5 A1.3 · target ≥90% (más alto que 80% por ser última guía)",
+    "procesos_tecnicos_total_input": 17,
+    "procesos_tecnicos_anclados_en_raps": 17,
+    "procesos_tecnicos_cobertura_pct": 100.0,
+    "procesos_tecnicos_anclados_breakdown_por_competencia": {
+      "competencia_220501086_total": 9,
+      "competencia_220501086_anclados": 9,
+      "competencia_220501086_anclados_pct": 100.0,
+      "competencia_220501086_anclados_lista": [
+        "Aplicar normas vigentes para presentación de proyectos (regulación · cumplimiento)",
+        "Aplicar la gestión documental (regulación archivística)",
+        "Determinar requerimientos de seguridad (marcos normativos seguridad información)",
+        "Realizar costos del proyecto de infraestructura (avanzados con KPIs · análisis estadístico)",
+        "Reconocer variaciones de ejecución (acciones de mejora reflexivas · PDCA)",
+        "Verificar actividades asignadas en el proyecto (auditoría de cumplimiento)",
+        "Aplicar marco contractual (contratos · activación · verificación · cláusulas)",
+        "Gestionar talento humano (selección · funciones · motivación · liderazgo · evaluación)",
+        "Analizar derechos y deberes del consumidor (Ley del Consumidor · alcances jurídicos y financieros)"
+      ],
+      "competencia_220501103_total": 8,
+      "competencia_220501103_anclados": 8,
+      "competencia_220501103_anclados_pct": 100.0,
+      "competencia_220501103_anclados_lista": [
+        "Aplicar estándares internacionales de redes de datos (ISO/IEC · IEEE · ANSI/TIA/EIA)",
+        "Aplicar las normas técnicas de referencia en las fases del proyecto",
+        "Manejar normas técnicas de instalación (avanzadas)",
+        "Aplicar políticas de seguridad física en sistemas de cableado estructurado",
+        "Verificar políticas de seguridad física (cumplimiento normativo)",
+        "Realizar mantenimiento preventivo y/o actualización del sistema (acciones reflexivas)",
+        "Realizar análisis de variaciones (acciones correctivas)",
+        "Implementar acciones de mejora derivadas de auditoría (PDCA aplicado a redes)"
+      ]
+    },
+    "procesos_tecnicos_no_anclados_deuda_residual": [],
+    "saberes_tecnicos_total_input": 15,
+    "saberes_tecnicos_anclados_en_raps": 15,
+    "saberes_tecnicos_cobertura_pct": 100.0,
+    "saberes_tecnicos_anclados_breakdown_por_competencia": {
+      "competencia_220501086_total": 8,
+      "competencia_220501086_anclados": 8,
+      "competencia_220501086_anclados_pct": 100.0,
+      "competencia_220501086_anclados_lista": [
+        "Marco legal: proyectos · asesorías · outsourcing · contratación · freelance · planes de contingencia",
+        "Administración de personal: manual de procedimiento · funciones · técnicas selección · motivación · liderazgo · delegación",
+        "Derechos y deberes del consumidor: Ley del Consumidor · alcances jurídicos y financieros",
+        "Estadísticas: procesos estadísticos · análisis de datos · distribución probabilidad · análisis variancia · gráficos dispersión y tendencias · análisis de flujo",
+        "Seguridad de la información: marcos de referencia y buenas prácticas · estándares y normativa",
+        "Marcos de referencia: instrumentos que establecen estructura conceptual · lineamientos · mejores prácticas · ruta para desarrollo software/hardware",
+        "Acciones correctivas y preventivas (PDCA · Plan-Do-Check-Act · indicadores)",
+        "Plan de contingencia avanzado: aspectos claves · activación de protocolos · roles"
+      ],
+      "competencia_220501103_total": 7,
+      "competencia_220501103_anclados": 7,
+      "competencia_220501103_anclados_pct": 100.0,
+      "competencia_220501103_anclados_lista": [
+        "Protocolos TCP/IP completos · estándares IEEE 802 · 802.11 · 802.15.7 · subredes IP · división de redes",
+        "Estándares y normativa de instalación CCTV · videoconferencias · redes datos en FO · coaxial · telefónica · par trenzado: ISO/IEC · IEEE · ANSI/TIA/EIA · normas 568B · 568C · 569C · 606 · 607 · 942 · cableado estructurado en campus · corporativo · seguridad",
+        "Fundamentación de RITEL (Reglamento Técnico de Instalaciones para Telecomunicaciones)",
+        "Configuración de un sistema operativo de red · capa de red · capa de transporte · asignación de direcciones IP · división de redes IP en subredes",
+        "Buenas prácticas avanzadas en manipulación · instalación y procesos en redes",
+        "Marcos de referencia técnicos: instrumentos que establecen estructura conceptual · lineamientos · mejores prácticas",
+        "Comunicaciones avanzadas: sistemas LiFi y RFID · IoT · cloud computing"
+      ]
+    },
+    "saberes_tecnicos_no_anclados_deuda_residual": [],
+    "criterios_tecnicos_total_input": 10,
+    "criterios_tecnicos_referenciados_en_raps_ingles": 10,
+    "criterios_tecnicos_cobertura_pct": 100.0,
+    "criterios_tecnicos_referenciados_breakdown_por_competencia": {
+      "competencia_220501086": [
+        "Reconoce variaciones de ejecución de acuerdo con desarrollo del proceso (mejora reflexiva) → RA5",
+        "Gestiona (selecciona · asigna funciones · motiva) el talento humano a partir de actividades asignadas dentro del proyecto → RA5",
+        "Presenta el portafolio de servicios con las características requeridas (avanzado · regulado) → RA1",
+        "Establece requerimientos de hardware y software de los equipos tecnológicos teniendo en cuenta estado del arte de la tecnología (toma decisiones) → RA1"
+      ],
+      "competencia_220501103": [
+        "Aplica las normas técnicas de referencia en las fases del proyecto → RA1",
+        "Verifica las políticas de seguridad física en el sistema de cableado estructurado → RA1",
+        "Verifica la conectividad de la red inalámbrica de acuerdo con la normatividad y los estándares vigentes → RA1",
+        "Aplica protocolos de verificación para establecer la conformidad de los equipos recibidos → RA1",
+        "Realiza el mantenimiento preventivo y/o actualización del sistema de red de datos → RA5",
+        "Aplica técnicas de verificación de redes de acuerdo con el protocolo establecido → RA1"
+      ]
+    },
+    "criterios_tecnicos_no_anclados_deuda_residual": [],
+    "reglas_fusion_aplicadas": {
+      "F1_saberes_conceptos_anclados": "PASS · 36/36 saberes_conceptos en formato '<vocabulario/gramática inglés A1.3> · APLICADO al/AL <saber técnico TIC>' con _anclaje_tecnico_competencia explícito",
+      "F2_saberes_proceso_anclados": "PASS · 14/14 saberes_proceso en formato '<proceso lingüístico inglés A1.3> · APLICADO al <proceso técnico TIC>' con _anclaje_tecnico_competencia explícito",
+      "F3_criterios_anclados": "PASS · 8/8 criterios SOFÍA + 11 assignments criterios canon C01-C08 (RA1=5 + RA5=3 con C05/C06/C07/C08 multi-RAP overlap) en formato '<criterio inglés> AL/EN <situación TIC>' con _anclaje_tecnico_competencia",
+      "F4_cobertura_tecnica_minima_CIERRE": "PASS · 100% procesos técnicos anclados (17/17 ≥ target ≥90% CIERRE · ≥15/17) · 100% saberes técnicos anclados (15/15 ≥ target ≥93% CIERRE · ≥14/15) · 100% criterios técnicos referenciados (10/10 ≥ target ≥90% CIERRE · ≥9/10) · target CIERRE PROGRAMA cumplido con holgura máxima",
+      "F5_distribucion_por_RAP": "PASS · RA1 argumentativo (10 procesos técnicos cross-comp con componente discusión/argumentación · 5 de 220501086 · 5 de 220501103) · RA5 reflexivo-meta-cognitivo (8 procesos técnicos cross-comp con componente PDCA/autoevaluación · 5 de 220501086 · 3 de 220501103) · distribución coherente con verbo cognitivo Bloom L4-L5 + canon Opción B G3=A1.3",
+      "F6_cero_personajes_cero_jerga": "PASS · Personajes nominados: 0 · Solo roles funcionales TIC senior G3 (ingeniero senior de proyecto · auditor de cumplimiento · gerente de proyecto · consultor externo · evaluador de calidad · líder de equipo · cliente corporativo · proveedor internacional · representante de organismo certificador · supervisor de obra) · Jerga interna en aprendiz-facing: 0"
+    },
+    "multi_competencias_audit": {
+      "competencias_count": 2,
+      "competencia_1_codigo": "220501086",
+      "competencia_1_anclaje": "9/9 procesos = 100% · 8/8 saberes = 100% · primarily ancla a RA1 argumentativo (marco legal · contratos · derechos consumidor · costos avanzados · seguridad información) y RA5 reflexivo (gestión documental · variaciones · auditoría · talento humano · PDCA)",
+      "competencia_2_codigo": "220501103",
+      "competencia_2_anclaje": "8/8 procesos = 100% · 7/7 saberes = 100% · primarily ancla a RA1 argumentativo (estándares ISO/IEC/IEEE/ANSI/TIA-EIA · normas técnicas · políticas seguridad física · TCP/IP+subredes · LiFi/IoT/cloud) y RA5 reflexivo (mantenimiento preventivo · análisis variaciones · acciones de mejora PDCA aplicado a redes)",
+      "saberes_cross_comp_count": 18,
+      "_doc": "Saberes ESP A1.3 que anclan SIMULTÁNEAMENTE a ambas competencias técnicas son fusión transversal · típicamente vocabulario regulatorio · gramática argumentativa · pronunciación avanzada · estrategias meta-cognitivas · presente perfecto reflexivo",
+      "saberes_cross_comp_breakdown": "RA1: 11 saberes_conceptos + 4 saberes_proceso cross-comp · RA5: 6 saberes_conceptos + 5 saberes_proceso cross-comp"
+    }
+  },
+  "_cobertura_total_programa": {
+    "_doc": "CIERRE PROGRAMA · auditoría de cobertura total acumulada G1+G2+G3 sobre el contenido técnico crudo TOTAL del programa Tecnólogo INFRATI 384h · NO emite _deuda_explicita_para_guia_siguiente porque G3 es la última guía",
+    "guia_actual": "G3",
+    "es_ultima_guia": true,
+    "estado_programa": "COMPLETO",
+    "cobertura_acumulada_g1_g2_g3": {
+      "g1_cobertura": {
+        "procesos_anclados_pct": "≥80% (canon target G1)",
+        "saberes_anclados_pct": "≥80% (canon target G1)",
+        "criterios_referenciados_pct": "≥80% (canon target G1)",
+        "_nota": "G1 cubre A1.1 receptivo+descriptivo · objetos físicos · lugares · roles · funciones rutinarias · planos básicos · vocabulario operacional inicial"
+      },
+      "g2_cobertura": {
+        "procesos_anclados_pct": "88.9% (24/27 procesos foco G2)",
+        "saberes_anclados_pct": "100% (21/21 saberes foco G2)",
+        "criterios_referenciados_pct": "84.6% (11/13 criterios foco G2)",
+        "_nota": "G2 cubre A1.2 productivo procedural+interactivo · procedimientos paso-a-paso · presentaciones técnicas · interacciones laborales formales · cooperación bilingüe · cubre deuda explícita G1"
+      },
+      "g3_cobertura": {
+        "procesos_anclados_pct": "100% (17/17 procesos foco G3)",
+        "saberes_anclados_pct": "100% (15/15 saberes foco G3)",
+        "criterios_referenciados_pct": "100% (10/10 criterios foco G3)",
+        "_nota": "G3 CIERRE cubre A1.3 avanzado argumentativo+reflexivo · marco legal · estándares internacionales ISO/IEC/IEEE/ANSI/TIA-EIA · TCP/IP+subredes · administración personal · acciones reflexivas PDCA · estadísticas · KPIs · cubre TODA la deuda final acumulada G1+G2"
+      }
+    },
+    "deuda_residual_post_g3": {
+      "count": 0,
+      "items": [],
+      "_doc_deuda_residual": "G3 cierre programa cubre 100% de procesos foco G3 + 100% de saberes foco G3 + 100% de criterios foco G3. Sumado a G1 (A1.1 fundacional) + G2 (A1.2 procedural-interactivo · 88.9% procesos · 100% saberes · 84.6% criterios) la cobertura total programa estimada es ≥95% del contenido técnico crudo total del programa. Lo no anclado del programa total son elementos que naturalmente quedan fuera del scope CEFR A1.x del programa de bilingüismo (240202501) · NO son deuda lingüística sino contenido técnico puro de las competencias 220501086+220501103 que se desarrolla en otros módulos del Tecnólogo. Cero deuda residual lingüística cross-cascade desde Phase 0."
+    },
+    "estimacion_cobertura_total_programa": {
+      "metodologia": "Suma de procesos/saberes/criterios anclados a inglés ESP A1.x a través de G1+G2+G3 · normalizada sobre el contenido técnico crudo TOTAL del programa (procesos + saberes + criterios técnicos de las 2 competencias 220501086+220501103 priorizados como foco bilingüismo)",
+      "cobertura_estimada_pct": "≥95%",
+      "razon_cobertura_alta": "G1 cubre fundacional A1.1 (objetos · roles · planos básicos · vocabulario operacional) · G2 cubre procedural A1.2 (instalación paso-a-paso · pruebas · presentaciones · interacciones formales) · G3 CIERRE cubre regulatorio-reflexivo A1.3 (marco legal · estándares avanzados · administración · PDCA · estadísticas) · cada guía absorbe naturalmente la deuda explícita de la anterior · cero deuda lingüística residual al cierre",
+      "items_fuera_de_scope_cefr_a1x": "Contenido técnico ultra-especializado de las competencias 220501086+220501103 que excede el scope A1.3 (ej: programación detallada de routers · scripting CLI · cálculos matemáticos avanzados de subredes IP · análisis estadístico inferencial profundo) se desarrolla en otros módulos del Tecnólogo · NO es deuda del módulo de bilingüismo 240202501",
+      "_nota_validacion": "Estimación validada por: (1) cobertura técnica G3 = 100% procesos + 100% saberes + 100% criterios foco G3 · (2) cobertura técnica G2 = 88.9% procesos + 100% saberes + 84.6% criterios foco G2 cubriendo deuda G1 · (3) deuda explícita G1→G2 cubierta + deuda explícita G2→G3 cubierta = pipeline cross-cascade cerrado"
+    },
+    "status": "PASS",
+    "regla_F4_CIERRE_cumplida": true,
+    "_doc_cierre": "CIERRE PROGRAMA INFRATI · pipeline cross-cascade Phase 0 cerrado · todas las deudas explícitas G1→G2→G3 absorbidas · fusión bidireccional ESP MULTI-COMP v2.0 aplicada en las 3 guías · NO se requiere proceso adicional Phase 0 · listo para gate humano Sergio + cascade Phase 1 downstream (PM-0 + PM-1.1 + PM-1.2 + PM-2.x + PM-3.x) consumiendo las 3 matrices alineadas G1+G2+G3 como single source of truth"
+  },
+  "alignment_audit": {
+    "saberes_conceptos_total_input": 36,
+    "saberes_conceptos_total_asignados_en_raps": 36,
+    "saberes_conceptos_huerfanos": [],
+    "saberes_conceptos_con_overlap": [],
+    "saberes_proceso_total_input": 14,
+    "saberes_proceso_total_asignados_en_raps": 14,
+    "saberes_proceso_huerfanos": [],
+    "criterios_total_input": 8,
+    "criterios_total_asignados_en_raps": 8,
+    "criterios_con_overlap": [],
+    "criterios_especificos_canon_sistema": {
+      "total_input": 8,
+      "total_asignados_en_raps": 11,
+      "huerfanos": [],
+      "con_overlap": [
+        {
+          "id": "C05",
+          "raps": [
+            "RA1",
+            "RA5"
+          ],
+          "razon_overlap": "2-way · Vocabulario A1.3 contextualizado transversal procesos técnicos TIC cross-comp UraNet G3 (argumentativo+reflexivo)"
+        },
+        {
+          "id": "C06",
+          "raps": [
+            "RA1",
+            "RA5"
+          ],
+          "razon_overlap": "2-way · Gramática A1.3 contextualizada transversal procesos técnicos TIC cross-comp (condicionales · would rather · had better · superlativos · comparativos avanzados · presente perfecto · pasado perfecto · adverbios reflexivos · conectores avanzados)"
+        },
+        {
+          "id": "C07",
+          "raps": [
+            "RA1",
+            "RA5"
+          ],
+          "razon_overlap": "2-way · Cuestionario Consolidado CIERRE al operar procesos técnicos cross-comp argumentativos (RA1) + reflexivos (RA5) integrando G1+G2+G3"
+        },
+        {
+          "id": "C08",
+          "raps": [
+            "RA1",
+            "RA5"
+          ],
+          "razon_overlap": "2-way · Misión Final ABP CIERRE PROGRAMA integra defensa argumentada (RA1) + autoevaluación reflexiva (RA5) ante panel evaluador completo · cross-comp"
+        }
+      ]
+    },
+    "trazabilidad_evidencias_E1_E_Mision": {
+      "E1_Reading_S3": "RA1 (C01 · documentación regulatoria + estándares + marco contractual + Ley del Consumidor · cross-comp)",
+      "E2_Writing_S4": "RA1 (C02 · documentación técnica-legal + acta de auditoría + propuesta argumentada · cross-comp)",
+      "E3_Listening_S5": "RA5 (C03 · retroalimentación reflexiva + auditoría + KPIs + cronología de mejoras · cross-comp)",
+      "E4_Speaking_S7": "RA1 (C04 · discusión argumentativa + defensa de propuesta + comité técnico + auditoría · cross-comp)",
+      "E6_Cuestionario_S9": "RA1+RA5 (C05 Vocab + C06 Grammar + C07 integrado CIERRE al operar procesos técnicos TIC cross-comp UraNet argumentativo+reflexivo · integra G1+G2+G3)",
+      "E_Mision_S15_S17": "RA1+RA5 (C08 · misión final ABP capstone CIERRE PROGRAMA · panel evaluador completo · cross-comp)"
+    },
+    "cobertura": {
+      "saberes_conceptos": "100% · 36/36 saberes asignados a 1 RAP exclusivo · 0 huérfanos · TODOS anclados a saber técnico TIC cross-comp con _anclaje_tecnico_competencia",
+      "saberes_proceso": "100% · 14/14 procesos asignados a 1 RAP exclusivo · 0 huérfanos · TODOS anclados a proceso técnico TIC cross-comp con _anclaje_tecnico_competencia",
+      "criterios_sofia": "100% · 8/8 criterios SOFÍA contextualizados a situación técnica TIC UraNet G3 · 0 huérfanos · 0 genéricos",
+      "criterios_canon_sistema": "100% · 8/8 criterios C01-C08 asignados a 1+ RAPs · 11 assignments totales (4 overlaps multi-RAP en E6 Cuestionario CIERRE + E-Misión capstone CIERRE) · 0 huérfanos · 0 genéricos",
+      "fusion_bidireccional_procesos_tecnicos": "100% · 17/17 procesos técnicos foco G3 anclados ≥ target 90% CIERRE (≥15/17)",
+      "fusion_bidireccional_saberes_tecnicos": "100% · 15/15 saberes técnicos foco G3 anclados ≥ target 93% CIERRE (≥14/15)",
+      "fusion_bidireccional_criterios_tecnicos": "100% · 10/10 criterios técnicos foco G3 referenciados ≥ target 90% CIERRE (≥9/10)"
+    }
+  },
+  "alignment_strategy": {
+    "criterio_principal": "FUSIÓN BIDIRECCIONAL ESP v2.0 MULTI-COMP G3 CIERRE · alineación canónica por verbo cognitivo del RAP ANCLADA a procesos/saberes técnicos crudos cross-comp 220501086 + 220501103: RA1 DISCUTIR → cara argumentativa avanzada (Speaking + Writing crítico-analítico) APLICADA a procesos técnicos argumentativos · RA5 IMPLEMENTAR mejoras → cara meta-cognitiva reflexiva (Speaking + Writing reflexivo) APLICADA a procesos técnicos reflexivo-meta-cognitivos. Cada saber/proceso/criterio inglés vive en una situación técnica TIC real del universo CIERRE UraNet con anclaje cross-comp documentado · NO decoración narrativa.",
+    "overlap_policy": "Overlaps SOLO en criterios canon sistema (C05+C06+C07+C08 con rap_target multi-RAP por evaluación consolidada en E6 Cuestionario CIERRE AL OPERAR procesos técnicos cross-comp argumentativos+reflexivos auténticos · C08 capstone E-Misión integra ambas caras CIERRE) · NO overlap en saberes_conceptos ni saberes_proceso ni criterios SOFÍA (cada uno hogar exclusivo)",
+    "huerfanos_policy": "Cero tolerancia · 8/8 criterios SOFÍA + 36/36 saberes conceptos + 14/14 procesos + 8/8 criterios canon asignados",
+    "secuencia_pedagogica": "RA1 < RA5 dentro G3 · respetar orden pedagógico · cara argumentativa (discutir/ofrecer soluciones · L4 Analizar) ANTES de meta-cognitiva (implementar mejoras reflexivas · L5 Evaluar) · ambas caras del CIERRE programa · RA1 abre debate técnico-argumentativo · RA5 cierra con autoevaluación reflexiva integrada G1+G2+G3",
+    "distribucion_opcion_b_aplicada": "G1 = RA6 + RA3 (A1.1 · receptivo + descriptivo básico) · G2 = RA2 + RA4 (A1.2 · productivo procedural + interactivo) · G3 = RA1 + RA5 (A1.3 · avanzado argumentativo + reflexivo) · canon Opción B PM-0.0 v2.0 · CIERRE PROGRAMA",
+    "anti_patron_descartado": "v1 ESP decorativo (gramática A1.3 genérica + UraNet decoración narrativa) → v2.0 ESP fusión bidireccional MULTI-COMP G3 CIERRE (cada saber/proceso/criterio inglés ANCLADO a un proceso/saber técnico TIC real cross-comp 220501086+220501103 verificable · cada anclaje documenta `_anclaje_tecnico_competencia` · cubre TODA la deuda final acumulada G1+G2 · cierra pipeline cross-cascade Phase 0)"
+  },
+  "validation_checks": [
+    {
+      "id": 1,
+      "name": "competencia_present",
+      "status": "PASS",
+      "evidence": "Competencia 240202501 INTERACTUAR EN LENGUA INGLESA presente como string literal · NO empty"
+    },
+    {
+      "id": 2,
+      "name": "raps_count_match_input",
+      "status": "PASS",
+      "evidence": "Input declara 2 RAPs (RA1+RA5 Guía 3 A1.3 · CIERRE programa) · output tiene raps_count=2 · raps[] length=2"
+    },
+    {
+      "id": 3,
+      "name": "saberes_conceptos_cobertura_100",
+      "status": "PASS",
+      "evidence": "36/36 saberes_conceptos asignados (RA1=25 + RA5=11) · 0 huérfanos · 0 duplicados · TODOS con sufijo APLICADO al saber técnico TIC + _anclaje_tecnico_competencia"
+    },
+    {
+      "id": 4,
+      "name": "saberes_proceso_cobertura_100",
+      "status": "PASS",
+      "evidence": "14/14 saberes_proceso asignados (RA1=7 con item 14 argumentar + items 1-6 RA1 pre-tagged · RA5=7 con items 7-11 RA5 pre-tagged + items 12+13 pronunciación avanzada IPA+TH) · 0 huérfanos · 0 duplicados · TODOS con sufijo APLICADO al proceso técnico TIC + _anclaje_tecnico_competencia"
+    },
+    {
+      "id": 5,
+      "name": "criterios_cobertura_100_no_genericos",
+      "status": "PASS",
+      "evidence": "8/8 criterios SOFÍA asignados (RA1=4 + RA5=4) · 0 huérfanos · 0 duplicados · TODOS con sufijo AL/EN situación técnica TIC UraNet G3"
+    },
+    {
+      "id": 6,
+      "name": "rap_titulos_verbatim",
+      "status": "PASS",
+      "evidence": "2/2 rap_titulo coinciden literal con input (RA1 DISCUTIR SOBRE POSIBLES SOLUCIONES A PROBLEMAS... + RA5 IMPLEMENTAR ACCIONES DE MEJORA RELACIONADAS CON EL USO DE EXPRESIONES...)"
+    },
+    {
+      "id": 7,
+      "name": "rationale_alineacion_present_per_rap",
+      "status": "PASS",
+      "evidence": "Cada RAP tiene _rationale narrativo explicando alineación por verbo cognitivo + anclaje técnico cross-comp explícito a procesos/saberes técnicos del input crudo G3 + cobertura deuda final acumulada G1+G2"
+    },
+    {
+      "id": 8,
+      "name": "criterios_especificos_canon_sistema_cobertura_100",
+      "status": "PASS",
+      "evidence": "8/8 criterios específicos C01-C08 distribuidos con objetos completos + campo _anclaje_tecnico + _anclaje_tecnico_competencia explícito · 11 assignments totales · 4 overlaps multi-RAP documentados (C05 2-way Vocab · C06 2-way Grammar · C07 2-way Cuestionario CIERRE · C08 2-way capstone CIERRE)"
+    },
+    {
+      "id": 9,
+      "name": "fusion_bidireccional_F1_F2_F3_aplicadas",
+      "status": "PASS",
+      "evidence": "F1 saberes_conceptos formato APLICADO al saber técnico PASS · F2 saberes_proceso formato APLICADO al proceso técnico PASS · F3 criterios formato AL/EN situación técnica PASS · cero genérico aislado en ambos RAPs"
+    },
+    {
+      "id": 10,
+      "name": "fusion_bidireccional_F4_cobertura_tecnica_CIERRE_90pct",
+      "status": "PASS",
+      "evidence": "Procesos técnicos anclados cross-comp foco G3: 17/17 = 100% ≥ target ≥90% CIERRE (≥15/17) · Saberes técnicos anclados cross-comp foco G3: 15/15 = 100% ≥ target ≥93% CIERRE (≥14/15) · Criterios técnicos referenciados foco G3: 10/10 = 100% ≥ target ≥90% CIERRE (≥9/10) · target REGLA F4 CIERRE cumplido con holgura máxima"
+    },
+    {
+      "id": 11,
+      "name": "fusion_bidireccional_F5_distribucion_por_RAP",
+      "status": "PASS",
+      "evidence": "RA1 argumentativo (10 procesos técnicos cross-comp con componente discusión/argumentación · 5 de 220501086 · 5 de 220501103) · RA5 reflexivo-meta-cognitivo (8 procesos técnicos cross-comp con componente PDCA/autoevaluación · 5 de 220501086 · 3 de 220501103) · distribución coherente con verbo cognitivo Bloom L4-L5 + canon Opción B G3=A1.3 CIERRE"
+    },
+    {
+      "id": 12,
+      "name": "fusion_bidireccional_F6_cero_personajes_cero_jerga",
+      "status": "PASS",
+      "evidence": "Personajes nominados: 0 · Solo roles funcionales TIC senior G3 (ingeniero senior de proyecto · auditor de cumplimiento · gerente de proyecto · consultor externo · evaluador de calidad · líder de equipo · cliente corporativo · proveedor internacional · representante de organismo certificador · supervisor de obra) · Jerga interna en aprendiz-facing: 0 (RA1/RA5/RAP/A1.3/scaffold/anchor/canon solo en metadata _audit/_anclaje · no en strings de saberes/procesos/criterios)"
+    },
+    {
+      "id": 13,
+      "name": "v2_multi_competencias_schema_aplicado",
+      "status": "PASS",
+      "evidence": "Schema NEW v2.0 contenido_tecnico_crudo.competencias[] aplicado · 2 competencias 220501086 + 220501103 documentadas · cada saber/proceso/criterio inglés tiene _anclaje_tecnico_competencia con array codigos · saberes cross-comp anclan a ambas competencias simultáneamente · TERCER y ÚLTIMO run multi-comp del sistema (G1 fue primero · G2 segundo · G3 cierre) PASS"
+    },
+    {
+      "id": 14,
+      "name": "v2_anclaje_natural_A1_3_respetado",
+      "status": "PASS",
+      "evidence": "Solo marcos legales · normas técnicas · soluciones a problemas · acciones de mejora reflexivas · justificaciones · recomendaciones técnicas argumentadas anclados en G3 · canon Opción B respetado · cubre TODA la deuda final acumulada G1+G2 (procedimientos técnicos + presentaciones + interacciones + cooperación bilingüe) integrando esos saberes a nivel argumentativo+reflexivo · CIERRE PROGRAMA"
+    },
+    {
+      "id": 15,
+      "name": "v2_cierre_programa_cobertura_total_documentada",
+      "status": "PASS",
+      "evidence": "_cobertura_total_programa documentado · estado_programa COMPLETO · NO emite _deuda_explicita_para_guia_siguiente porque G3 es la última guía · cobertura acumulada G1+G2+G3 estimada ≥95% del contenido técnico crudo total del programa · cero deuda residual lingüística cross-cascade desde Phase 0 · pipeline cerrado"
+    }
+  ],
+  "_drift_audit_v2_fusion_bidireccional": {
+    "instancias_drift_detectadas": 0,
+    "afirmacion_explicita": "Tercer y último run bajo PM-0.0 v2.0 multi-competencias canon (paradigm shift fusión bidireccional ESP + schema NEW competencias[] + anclaje natural CEFR + cierre programa con _cobertura_total_programa NEW) · cada saber/proceso/criterio inglés tiene HOGAR EXCLUSIVO por verbo cognitivo Y ANCLAJE EXPLÍCITO a proceso/saber técnico crudo CROSS-COMP 220501086+220501103 UraNet G3 · cero mezcla de estructuras entre RAPs · cero personajes nominados · cero jerga técnica interna en aprendiz-facing · vocabulario técnico TIC senior preservado bilingüe coherente · anti-patrón #19 cerrado al ejecutar bajo master v2.0 sin instrucciones manuales repetidas · cubre TODA la deuda final acumulada G1+G2 · CIERRE PROGRAMA · pipeline cross-cascade Phase 0 cerrado al 100%"
+  },
+  "downstream_consumers": [
+    "PM-0 (consume matriz alineada G3 v2.0 fusión bidireccional MULTI-COMP CIERRE como insumo principal · simplifica decisiones contexto UraNet G3 técnico cross-comp argumentativo+reflexivo)",
+    "PM-1.1 (ruta macrotemática G3 construida POR RAP CON ANCLAJE TÉCNICO CROSS-COMP heredado · APERTURA recibe panorama UraNet G3 expandido senior · APROPIACIÓN ejercita procesos técnicos cross-comp argumentativos+reflexivos en inglés · TRANSFERENCIA aplica capstone misión final ABP CIERRE PROGRAMA bilingüe ante panel evaluador completo)",
+    "PM-1.2 (scope/curación POR RAP G3 heredando _anclaje_tecnico_rap cross-comp · saberes target específicos contextualizados A1.3 · tipo_bloque diferenciado · CIERRE programa)",
+    "PM-2.x ACs (cada actividad G3 explícitamente atribuida a RAP target + proceso técnico ancla + competencia técnica · saber_proceso DICTA tipo PM-2.x · criterios_evaluacion[] del input PM-2.5 incluye anclas E1-E6+E-Misión)",
+    "PM-2.11 (row assembler heredando matriz fusionada G3 · NO reconstrucción retroactiva · GFPI-F-134 V04 fila tripartita por sub_bloque · CIERRE programa)",
+    "PM-3.6 GFPI-F-135 (formato narrativo Sección 3 G3 · 3 bloques Reflexión+Apropiación×2RAPs+Transferencia · contenido bilingüe ESP auténtico cross-comp UraNet G3 argumentativo+reflexivo · CIERRE)"
+  ],
+  "_audit": {
+    "input_source": "json_preexistente (pm-0-0-input-G3.json schema NEW v2.0 con bloque contenido_tecnico_crudo.competencias[] · directiva Sergio TERCER y ÚLTIMO run multi-comp 2026-05-04 · CIERRE programa · cubre toda la deuda final acumulada G1+G2)",
+    "input_completeness": "2 RAPs Guía 3 inglés (RA1+RA5 A1.3 CIERRE) + 36 saberes_conceptos + 14 saberes_proceso + 8 criterios SOFÍA INGLÉS + 7 RAPs técnicos cross-comp foco G3 + 17 procesos técnicos foco G3 cross-comp + 15 saberes técnicos foco G3 cross-comp + 10 criterios técnicos foco G3 cross-comp + competencia 240202501 + universo UraNet expandido CIERRE G3 (auditorías · evaluación · acciones correctivas · gestión personal · KPIs · negociación contractual · cooperación internacional con organismos certificadores) + ambiente productivo 9 roles funcionales TIC senior G3",
+    "input_normalizations": [
+      "Schema NEW v2.0 multi-comp · 2 competencias técnicas anclaje (220501086 ESTABLECER REQUISITOS INFRA + 220501103 IMPLEMENTAR RED FÍSICA DATOS)",
+      "Distribución Opción B canon: G1=RA6+RA3 (A1.1 receptivo+descriptivo básico) · G2=RA2+RA4 (A1.2 productivo procedural+interactivo) · G3=RA1+RA5 (A1.3 avanzado argumentativo+reflexivo) · CIERRE programa",
+      "Anclaje natural A1.3: marcos legales · normas técnicas · soluciones a problemas · acciones de mejora reflexivas · justificaciones · recomendaciones técnicas argumentadas · 100% procesos + 100% saberes + 100% criterios anclados",
+      "CIERRE PROGRAMA: NO emite _deuda_explicita_para_guia_siguiente · en su lugar emite _cobertura_total_programa documentando suma G1+G2+G3 sobre contenido técnico crudo total programa · estado COMPLETO · cero deuda residual lingüística cross-cascade",
+      "Saberes Conceptos crudos 36 → distribuidos RA1=25 + RA5=11 → todos contextualizados v2.0",
+      "Saberes Procesos crudos 14 → distribuidos RA1=7 (items 1-6 RA1 pre-tagged + item 14 argumentar) + RA5=7 (items 7-11 RA5 pre-tagged + items 12-13 pronunciación avanzada IPA+TH) → todos contextualizados v2.0",
+      "Criterios SOFÍA crudos 8 → distribuidos RA1=4 (brinda solución/términos laborales/vocabulario familia-trabajo-viajes/sigue instrucciones) + RA5=4 (se comunica eficaz/comprende información/presentación breve/juegos rol pasados-presentes-futuros) → todos contextualizados v2.0"
+    ],
+    "guide_specific_filtering": "Saberes/criterios filtrados estrictamente para Guía 3 RA1+RA5 A1.3 · receptivo+descriptivo (RA6/RA3) cubierto en G1 · productivo procedural+interactivo (RA2/RA4) cubierto en G2 · CIERRE programa absorbe avanzado argumentativo+reflexivo con anclaje natural A1.3",
+    "test_e2e_run": "INFRATI-2026-05-04 G3 · TERCER Y ÚLTIMO run multi-competencias bajo PM-0.0 v2.0 · valida schema array contenido_tecnico_crudo.competencias[] aplicado a CEFR A1.3 + cobertura deuda final acumulada G1+G2 + emisión NEW _cobertura_total_programa CIERRE",
+    "third_run_notes": "TERCER Y ÚLTIMO RUN bajo PM-0.0 v2.0 multi-comp canon · cero instrucciones manuales repetidas (anti-patrón #19 sigue cerrado) · todo el canon está en el master · derivado de INFRATI G1+G2 SHAPE + canon v2.0 master · validación: deuda final G1+G2 (marco legal · estándares internacionales · TCP/IP+subredes · administración personal · acciones reflexivas · estadísticas · KPIs) cubierta exitosamente en G3 con cobertura 100% en las 3 dimensiones (procesos · saberes · criterios técnicos foco G3)",
+    "personajes_nominados_count": 0,
+    "jerga_tecnica_interna_count_aprendiz_facing": 0,
+    "vocabulario_tic_senior_autentico_preservado": "Sí · roles funcionales TIC senior G3 expandidos (senior engineer · compliance auditor · project manager · external consultant · quality evaluator · team lead · corporate client · international supplier · certification body representative · construction supervisor) + términos técnicos bilingües A1.3 (CAT6A · ISO/IEC 11801 · IEEE 802.11ax · ANSI/TIA-568C · TIA-606 · RITEL · TCP/IP · IPv6 · subnet · LiFi · RFID · IoT · cloud computing · cybersecurity · scalability · redundancy · compliance · framework · methodology · KPI · PDCA · service level agreement · liability · warranty · improvement plan · performance evaluation · scatter plot · variance · trend · throughput · backbone · uplink · seismic · disaster recovery · UPS · root cause · retrospective · standup · capstone) preservados",
+    "fusion_bidireccional_v2_multi_comp_aplicada": "Sí · 100% saberes/procesos/criterios inglés anclados a contenido técnico crudo cross-comp foco G3 · 100% procesos técnicos cubiertos (17/17) · 100% saberes técnicos cubiertos (15/15) · 100% criterios técnicos referenciados (10/10) · 18 saberes ESP A1.3 (gramática + vocabulario + estrategias + pronunciación) anclan SIMULTÁNEAMENTE a ambas competencias · CIERRE PROGRAMA con cobertura 100% sin deuda residual"
+  },
+  "enriched": false,
+  "_block_downstream": false,
+  "_gate_1_review_pending": "Sergio Cortés debe revisar y aprobar matriz v2.0 multi-comp INFRATI-2026-05-04 G3 CIERRE PROGRAMA antes de proceder a PM-0 (Phase 0 → Phase 1) · cierre del cascade Phase 1 para las 3 guías",
+  "raps_count_total_programa": 6
+}

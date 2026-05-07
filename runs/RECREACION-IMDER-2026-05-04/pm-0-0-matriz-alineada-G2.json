@@ -1,0 +1,839 @@
+{
+  "schema_version": "v1.0",
+  "pm_id": "PM-0.0",
+  "pm_name": "Matriz Pedagógica Alineadora",
+  "pm_version": "2.0",
+  "run_id": "RECREACION-IMDER-2026-05-04",
+  "guide_id": "G2",
+  "generated_date": "2026-05-04",
+  "instructor": "Sergio Cortés Perdomo",
+  "phase": 0,
+  "tipo_artefacto": "matriz_pedagogica_alineada_pre_pm0",
+  "_v2_fusion_bidireccional_applied": true,
+  "_input_ref": "pm-0-0-input-G2.json (con bloque contenido_tecnico_crudo · 2 RAPs técnicos foco G2 · 20 procesos técnicos deuda · 12 saberes técnicos deuda · 6 criterios técnicos deuda · mapping anclaje fusion G2)",
+  "_g1_companion_ref": "pm-0-0-matriz-alineada.json (matriz G1 v2 fusión bidireccional · 3 RAPs receptivo+descriptivo+interactivo A1.1)",
+  "_canon_authority": "Sergio Cortés Perdomo · arquitecto/instructor FPI SENA Bilingüismo · paradigm shift fusión bidireccional ESP 2026-05-04 · Guía 2 cierre cobertura DEUDA EXPLÍCITA G1",
+  "_paradigm_note": "Programa Técnico RECREACIÓN (código 634201) · 150h totales en 2 guías × 75h · matriz G2 cubre Guía 2 (RA4+RA5+RA6 · CEFR A1.2 · 75h · 10 sesiones). FUSIÓN BIDIRECCIONAL ESP: cada saber/proceso/criterio inglés A1.2 se ANCLA a contenido técnico DEUDA EXPLÍCITA G1 (marco legal-normativo Constitución/Ley Deporte/SND/LGE/PND/CST/ODS/Convención Niños + cierre evaluativo RAT4 acciones de mejora · seguimiento · indicadores · encuesta satisfacción · presentar resultados · proponer mejoras · replantear actividad · verificar funcionamiento · planeación recreativa fases · organización proceso administrativo · acciones correctivas/preventivas · informe ejecutivo). Universo expandido: visitante institucional · colega extranjero · proveedor · evaluador externo · cooperación internacional. CEFR A1.2 progresión refuerzo desde A1.1.",
+  "programa_metadata": {
+    "denominacion": "RECREACIÓN",
+    "tipo": "Técnico",
+    "programa_codigo_sofia": "634201",
+    "duracion_total_horas": 75,
+    "duracion_programa_completo": 150,
+    "horas_directas": 60,
+    "horas_independientes": 15,
+    "numero_sesiones": 10,
+    "rango_cefr": "A1.2",
+    "progresion_cefr_decision": "Opción B — refuerzo (A1.1 Guía 1 · A1.2 Guía 2)",
+    "guide_id": "G2",
+    "guide_total": 2,
+    "horas_por_guide": 75,
+    "split_strategy": "A · equilibrado · Guía 1 = RA1+RA2+RA3 · Guía 2 = RA4+RA5+RA6",
+    "sector": "Recreación",
+    "ambiente_productivo": "IMDER (Instituto Municipal del Deporte y la Recreación) · escenario auténtico de prácticas recreativas con grupos poblacionales · CONTEXTO LABORAL EXPANDIDO en Guía 2: visitantes institucionales · colegas extranjeros · proveedores · cooperación internacional · evaluación de calidad · informes de gestión bilingües",
+    "_resumen_ejecutivo": "Programa Técnico RECREACIÓN · Guía 2 (75h) · 10 sesiones · CEFR A1.2 · 3 RAPs pedagógicamente diferenciados por verbo cognitivo Bloom (LLEVAR A CABO ACCIONES DE MEJORA L4-5 reflexivo-evaluativo · COMUNICARSE CON VISITANTE/COLEGA L3-4 interactivo formal · PONER EN PRÁCTICA VOCABULARIO OCUPACIONAL L3 aplicativo). FUSIÓN BIDIRECCIONAL ESP v2: 23 saberes conceptos + 26 saberes proceso + 8 criterios SOFÍA · cada uno contextualizado a contenido técnico DEUDA EXPLÍCITA G1 (11 normativo-legal + 4 cierre evaluativo + 4 organización/planeación + 12 saberes legal-institucionales)."
+  },
+  "competencia": "240202501 · INTERACTUAR EN LENGUA INGLESA DE FORMA ORAL Y ESCRITA DENTRO DE CONTEXTOS SOCIALES Y LABORALES SEGÚN LOS CRITERIOS ESTABLECIDOS POR EL MARCO COMÚN EUROPEO DE REFERENCIA PARA LAS LENGUAS",
+  "competencia_tecnica_anclaje": {
+    "_doc": "Competencia técnica del programa RECREACIÓN · Guía 2 cubre DEUDA EXPLÍCITA Guía 1 (RAT1 marco normativo TODO + RAT4 cierre evaluativo) mediante fusión bidireccional ESP A1.2",
+    "codigo": "250801041",
+    "nombre": "ORIENTAR ACTIVIDADES RECREATIVAS DE ACUERDO CON METODOLOGÍAS DE DINAMIZACIÓN Y TIPOS DE POBLACIÓN",
+    "raps_tecnicos_foco_g2": [
+      "RAT1 RECONOCER MARCO NORMATIVO RECREACIÓN (TODO · pendiente Guía 1)",
+      "RAT4 EVALUAR LOS RESULTADOS DE LAS ACTIVIDADES RECREATIVAS (ciclo cierre + acciones de mejora)"
+    ]
+  },
+  "raps_count": 3,
+  "raps": [
+    {
+      "rap_id": "RA4",
+      "rap_codigo_sofia": "240202501-RA4",
+      "rap_titulo": "LLEVAR A CABO ACCIONES DE MEJORA RELACIONADAS CON EL INTERCAMBIO DE INFORMACIÓN BÁSICA EN INGLÉS, SOBRE SÍ MISMO, OTRAS PERSONAS, SU CONTEXTO INMEDIATO ASÍ COMO DE EXPERIENCIAS PASADAS",
+      "verbo_cognitivo": "LLEVAR A CABO ACCIONES DE MEJORA",
+      "bloom_level": "L4-L5 (Analizar · Evaluar · ciclo reflexivo)",
+      "cefr_target": "A1.2",
+      "dominio_canonico": "Reflexión metacognitiva + cierre evaluativo (autoevaluación · pasado simple narrativo · used to · acciones correctivas/preventivas) APLICADO a procesos técnicos de cierre evaluativo IMDER y al cubrimiento DEUDA EXPLÍCITA G1 RAT4: aplicar mecanismos de seguimiento y control · verificar seguimiento a indicadores · aplicar encuesta de satisfacción · presentar resultados del seguimiento · proponer acciones de mejora · replantear actividad · verificar funcionamiento de equipos · informe ejecutivo bilingüe",
+      "_anclaje_tecnico_rap": {
+        "procesos_tecnicos_anclados": [
+          "Aplicar mecanismos de seguimiento y control (cara reflexiva · pasado simple narrativo)",
+          "Verificar seguimiento a los indicadores (cara evaluativa · used to vs now)",
+          "Aplicar encuesta de satisfacción del servicio (cara cierre · narrar resultados pasados)",
+          "Presentar resultados del seguimiento (cara informe ejecutivo bilingüe)",
+          "Proponer acciones de mejora (cara prospectiva · need to · would like to · should)",
+          "Replantear la actividad recreativa (cara post-evaluación · we replanned · we adjusted)",
+          "Verificar funcionamiento de equipos (cara revisión post-evento · what worked · what failed)",
+          "Reubicar el material en el ambiente definido (cara cierre operativo · we reorganized after the event)"
+        ],
+        "saberes_tecnicos_anclados": [
+          "Acciones de mejora: concepto · acciones correctivas y preventivas · indicadores de resultado · indicadores de proceso",
+          "Encuesta de percepción de la calidad del servicio: análisis de resultados · informe ejecutivo",
+          "Planeación recreativa: fases (diagnóstico · diseño · implementación · evaluación) cara reflexiva post-implementación",
+          "Organización recreativa: control (cara cierre del proceso administrativo)"
+        ]
+      },
+      "saberes_conceptos_y_principios": [
+        "Pasado simple (regular e irregular) y estructura sintáctica (sujeto/verbo/complemento) · APLICADO al CONTAR ACONTECIMIENTOS DE EVENTOS RECREATIVOS PASADOS en informe ejecutivo bilingüe del IMDER y al PRESENTAR RESULTADOS DEL SEGUIMIENTO al coordinador (We organized the carnival last weekend · The participants enjoyed the workshops · We solved an unexpected weather situation · The activity ended successfully)",
+        "Used to (acciones habituales en el pasado) · APLICADO al REALIZAR AUTOEVALUACIÓN REFLEXIVA del desempeño en programa recreativo y al PROPONER ACCIONES DE MEJORA contrastando práctica anterior vs actual (Last month I used to forget the contingency plan · now I always check it before each session · We used to skip the satisfaction survey · now we apply it after every event)",
+        "Adverbios de tiempo pasado (yesterday, last, ago) · APLICADOS al CONTAR ACONTECIMIENTOS EN EL PASADO INDICANDO FECHAS en informe semanal de actividades del IMDER (Yesterday we applied the satisfaction survey · Last Saturday we organized the seniors' carnival · Two weeks ago we identified low attendance · The contingency plan was activated three days ago)",
+        "Verbos que implican el infinitivo: have to, need to, (would) like to, want to · APLICADOS al PROPONER ACCIONES DE MEJORA en informe bilingüe (We need to improve the registration form · We have to verify all equipment before the event · We would like to increase senior participation · We want to align activities with SDG 3 healthy life)",
+        "Sujeto + contracciones auxiliares (I'd, he'd) · APLICADAS al EXPRESAR PREFERENCIAS en propuestas de mejora ejecutiva bilingüe (I'd improve the feedback channel · He'd review the indicators monthly · We'd implement corrective actions sooner)",
+        "Auxiliares + sin contracciones (I would) · APLICADO a PRESENTAR RESULTADOS DEL SEGUIMIENTO en formato formal escrito (I would suggest reviewing the satisfaction indicator · The team would propose three corrective actions · The coordinator would approve the improvement plan)",
+        "Reducción de pronunciación auxiliares (do you · did you · would you) · APLICADA al APLICAR ENCUESTA DE SATISFACCIÓN bilingüe oralmente al participante (Did you enjoy the activity? · Would you recommend it? · Do you have any suggestion for improvement?)",
+        "Terminación en ED (tres formas: /t/, /d/, /ɪd/) · APLICADA a la pronunciación correcta en NARRACIÓN ORAL DE EVENTOS PASADOS al presentar resultados del seguimiento (organized /d/ · finished /t/ · evaluated /ɪd/ · improved /d/ · adjusted /ɪd/ · replanned /d/)",
+        "Vocabulario: actividades cotidianas y rutinas laborales en mayor profundidad · APLICADO al REALIZAR AUTOEVALUACIÓN REFLEXIVA del recreador profesional (planning · briefing · facilitating · monitoring · debriefing · reporting) y al IDENTIFICAR ACIERTOS Y DIFICULTADES de la rutina laboral del programa recreativo",
+        "Estrategias de aprendizaje: uso de diccionarios inglés/español · recursos educativos digitales · estilos de aprendizaje · auto-evaluación reflexiva · APLICADAS al EVALUAR DE MANERA REFLEXIVA Y CRÍTICA LAS EVIDENCIAS DE APRENDIZAJE presentadas a lo largo de la formación (consulta de glosario técnico recreación-evaluación bilingüe · plataforma digital del IMDER para registro de mejoras)"
+      ],
+      "saberes_proceso": [
+        "Realizar un proceso de autoevaluación que permita revisar saber, hacer y ser dentro del programa de formación · APLICADO al REVISAR DESEMPEÑO COMUNICATIVO del recreador en interacciones bilingües con visitantes y colegas extranjeros (Last quarter I used to feel insecure with foreign visitors · now I confidently greet them and offer assistance in basic English)",
+        "Identificar los aciertos y dificultades presentados en cada punto del proceso de aprendizaje · APLICADO al APLICAR MECANISMOS DE SEGUIMIENTO Y CONTROL de actividades recreativas pasadas en informe bilingüe (Strengths: we improved the registration process · Difficulties: we did not verify equipment functioning before the event · we lost 20 minutes)",
+        "Evaluar de manera reflexiva y crítica las evidencias de aprendizaje presentadas a lo largo de la formación · APLICADO a VERIFICAR SEGUIMIENTO A LOS INDICADORES de resultado y de proceso del programa recreativo (Did we reach the participation target? · How many corrective actions did we apply last month? · What did the satisfaction survey reveal?)",
+        "Expresar lo que ocurrió o no en un punto específico del pasado · APLICADO al PRESENTAR RESULTADOS DEL SEGUIMIENTO al coordinador del IMDER en informe ejecutivo bilingüe (We did not apply the contingency plan because it didn't rain · We replanned the activity when attendance was low · We verified the equipment after the event and found one broken whistle)",
+        "Contar acontecimientos en el pasado indicando fechas · APLICADO al PRESENTAR RESULTADOS DEL SEGUIMIENTO en informe semanal de actividades y a la CRONOLOGÍA DE IMPREVISTOS del programa recreativo (On Monday March 4 we organized the children's workshop · Two days later we applied the satisfaction survey · Last Friday we presented the improvement plan to the coordinator)",
+        "Responder a buenas y malas noticias · APLICADO al RECIBIR RESULTADOS DE EVALUACIONES Y RECONOCIMIENTOS internos sobre el programa recreativo (Awesome! The senior group rated us 4.8/5 · I'm sorry to hear that the workshop attendance dropped · Really? The coordinator approved our improvement proposal · No kidding! We exceeded the participation indicator)"
+      ],
+      "criterios_evaluacion": [
+        "Establece acciones de mejora continua para el alcance progresivo de logros comunicativos en inglés AL APLICAR ENCUESTA DE SATISFACCIÓN bilingüe del IMDER y AL PRESENTAR RESULTADOS DEL SEGUIMIENTO en informe ejecutivo bilingüe acorde con nivel principiante A1.2",
+        "Comprende narraciones cortas orales y escritas acerca de situaciones que ocurrieron en el pasado AL VERIFICAR SEGUIMIENTO A LOS INDICADORES del programa recreativo y AL APLICAR MECANISMOS DE SEGUIMIENTO Y CONTROL de actividades recreativas pasadas utilizando vocabulario y gramática básica acorde con nivel principiante A1.2",
+        "Emplea la estructura básica del inglés (sujeto+verbo+complemento) en la elaboración de textos cortos orales y escritos en pasado simple que contienen información personal de su historia de vida y de otros AL CONTAR ACONTECIMIENTOS DE EVENTOS RECREATIVOS PASADOS en informe semanal del IMDER y AL PROPONER ACCIONES DE MEJORA basadas en lo ocurrido"
+      ],
+      "criterios_evaluacion_especificos_canon_sistema": [
+        {
+          "id": "C01",
+          "criterio": "Comprender información básica en textos cortos en inglés AL VERIFICAR SEGUIMIENTO A LOS INDICADORES (resultado y proceso) del programa recreativo IMDER y AL LEER INFORMES EJECUTIVOS BILINGÜES de actividades pasadas e identificar datos clave correctos vs distractores en informe de seguimiento (fechas · resultados · acciones correctivas aplicadas · indicadores alcanzados)",
+          "rap_target": "RAP-04",
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E1",
+          "evidencia_nombre": "Reading",
+          "sesion": "S3",
+          "instrumento": "Cuestionario No 1",
+          "_anclaje_tecnico": "Verificar seguimiento a los indicadores + Aplicar mecanismos de seguimiento y control + Acciones de mejora (indicadores resultado y proceso)"
+        },
+        {
+          "id": "C02",
+          "criterio": "Producir textos escritos descriptivos básicos AL PRESENTAR RESULTADOS DEL SEGUIMIENTO al coordinador IMDER en INFORME EJECUTIVO BILINGÜE (resultados de encuesta de satisfacción · indicadores alcanzados · acciones correctivas aplicadas · propuesta de acciones de mejora) aplicando pasado simple · used to · need to/have to/would like to · adverbios de tiempo pasado · sin errores que comprometan la inteligibilidad operativa",
+          "rap_target": "RAP-04",
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E2",
+          "evidencia_nombre": "Writing",
+          "sesion": "S4",
+          "instrumento": "Lista de Verificación No 2",
+          "_anclaje_tecnico": "Presentar resultados del seguimiento + Proponer acciones de mejora + Encuesta satisfacción análisis · informe ejecutivo"
+        },
+        {
+          "id": "C05",
+          "criterio": "Demostrar dominio receptivo de vocabulario A1.2 contextualizado a cierre evaluativo IMDER (rutinas laborales para AUTOEVALUACIÓN REFLEXIVA · adverbios de tiempo pasado para CRONOLOGÍA DE IMPREVISTOS · vocabulario de evaluación bilingüe para INDICADORES Y ENCUESTA · expresiones de respuesta a noticias para FEEDBACK INSTITUCIONAL) en cuestionario consolidado",
+          "rap_target": [
+            "RAP-04",
+            "RAP-05",
+            "RAP-06"
+          ],
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Vocabulario",
+          "sesion": "S8",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Aplicar encuesta satisfacción · Verificar indicadores · Autoevaluación reflexiva · Proponer acciones mejora"
+        },
+        {
+          "id": "C07",
+          "criterio": "Demostrar dominio integrado de saberes A1.2 (Reading + Writing + Listening + Vocabulary + Grammar) AL OPERAR procesos técnicos recreativos auténticos del cierre evaluativo + interacción institucional + vocabulario ocupacional bilingüe IMDER · Cuestionario Consolidado · 25 ítems · ≥ 70% para PASS",
+          "rap_target": [
+            "RAP-04",
+            "RAP-05",
+            "RAP-06"
+          ],
+          "cefr_subnivel": "consolidación A1.2",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado",
+          "sesion": "S8",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · 8 procesos cierre evaluativo + 8 interacción institucional + 8 vocabulario ocupacional/normativo"
+        }
+      ],
+      "_rationale": "RA4 es Bloom L4-5 LLEVAR A CABO ACCIONES DE MEJORA · cara reflexivo-evaluativa del idioma (autoevaluación + narración pasado + propuesta mejora) APLICADA a procesos técnicos REALES del cierre evaluativo IMDER (RAT4 técnico DEUDA EXPLÍCITA G1). El enunciado SOFÍA refiere 'acciones de mejora relacionadas con intercambio de información básica en inglés sobre sí mismo, otras personas, contexto inmediato y experiencias pasadas' · contextualizado al IMDER significa: APLICAR MECANISMOS DE SEGUIMIENTO Y CONTROL (cara reflexiva pasado simple) · VERIFICAR SEGUIMIENTO A INDICADORES (used to vs now) · APLICAR ENCUESTA DE SATISFACCIÓN (cara cierre · narrar resultados pasados) · PRESENTAR RESULTADOS DEL SEGUIMIENTO (informe ejecutivo bilingüe) · PROPONER ACCIONES DE MEJORA (need to · would like to · should) · REPLANTEAR ACTIVIDAD RECREATIVA (cara post-evaluación) · VERIFICAR FUNCIONAMIENTO DE EQUIPOS (cara revisión post-evento) · REUBICAR MATERIAL EN AMBIENTE DEFINIDO (cara cierre operativo). Cada estructura gramatical de pasado/reflexión (pasado simple regular+irregular · used to · adverbios de tiempo · verbos infinitivo need/have/like/want · would · contracciones · terminación ED) está ANCLADA a un proceso técnico DEUDA real: pasado simple a contar acontecimientos · used to a autoevaluar (antes/ahora) · adverbios pasados a cronología informe · need/have to a proponer mejora · would a sugerir reformulación · ED a narrativa oral. Vocabulario reflexivo (rutinas laborales en profundidad · auto-evaluación · estrategias) ancla literalmente a AUTOEVALUACIÓN REFLEXIVA + IDENTIFICAR ACIERTOS/DIFICULTADES + EVALUAR EVIDENCIAS APRENDIZAJE. Procesos: 6 procesos lingüísticos reflexivo-evaluativos contextualizados a procesos técnicos crudos. Criterios canon C01 (Reading S3 · indicadores) + C02 (Writing S4 · informe ejecutivo) anclan a procesos técnicos verificables del cierre evaluativo.",
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": [
+          "E1 (C01 · Reading S3 · verificar seguimiento indicadores + leer informe ejecutivo bilingüe)",
+          "E2 (C02 · Writing S4 · presentar resultados + proponer acciones de mejora · informe ejecutivo)"
+        ],
+        "overlaps_documentados": [
+          "C05 3-way RA4+RA5+RA6 cara Vocabulario E6 Cuestionario S8",
+          "C07 3-way RA4+RA5+RA6 Cuestionario Consolidado E6"
+        ],
+        "sesiones_anchor": [
+          "S3 (E1 Reading)",
+          "S4 (E2 Writing)",
+          "S8 (E6 Cuestionario)"
+        ],
+        "criterios_count": 4,
+        "saberes_count": "10 conceptos + 6 procesos · TODOS anclados a procesos/saberes técnicos cierre evaluativo IMDER",
+        "_nota_fusion": "RA4 ancla a 8 procesos técnicos del cierre evaluativo del input crudo: aplicar seguimiento y control · verificar indicadores · aplicar encuesta satisfacción · presentar resultados · proponer mejoras · replantear actividad · verificar equipos · reubicar material"
+      }
+    },
+    {
+      "rap_id": "RA5",
+      "rap_codigo_sofia": "240202501-RA5",
+      "rap_titulo": "COMUNICARSE DE MANERA SENCILLA EN INGLÉS EN FORMA ORAL Y ESCRITA CON UN VISITANTE O COLEGA EN UN CONTEXTO LABORAL COTIDIANO",
+      "verbo_cognitivo": "COMUNICARSE",
+      "bloom_level": "L3-L4 (Aplicar · Interactuar contexto laboral formal)",
+      "cefr_target": "A1.2",
+      "dominio_canonico": "Producción interactiva contexto laboral formal (intercambio cortés con visitantes institucionales · colegas extranjeros · proveedores · evaluadores externos · cooperación internacional) APLICADA a procesos técnicos de interacción institucional IMDER: contestar llamada/email cooperación · negociar con proveedor · disculparse por imprevisto · responder a invitaciones formales · saludar y presentarse a visitante · agradecer formalmente",
+      "_anclaje_tecnico_rap": {
+        "procesos_tecnicos_anclados": [
+          "Interacción institucional con visitante (cara productiva interactiva formal)",
+          "Negociación con proveedor de material recreativo (cara productiva interactiva)",
+          "Cooperación internacional con colega extranjero (intercambio profesional)",
+          "Atender consulta de evaluador externo (auditoría · certificación calidad)",
+          "Manejar imprevisto operativo con visitante (disculpas formales)",
+          "Aplicar encuesta de satisfacción del servicio (cara entrevista bilingüe a visitante)",
+          "Responder a invitaciones de capacitación o comité (cara escrita formal)"
+        ],
+        "saberes_tecnicos_anclados": [
+          "Reforma al Código Sustantivo del Trabajo: Art.21 actividades recreativas (cara contexto laboral interacción)",
+          "Plan Nacional de Desarrollo: deporte y recreación para convivencia · cohesión social (cara cooperación)",
+          "Encuesta de percepción de calidad del servicio: aplicación cara entrevista al visitante",
+          "Equipo operativo: roles ampliados (visitante institucional · colega extranjero · proveedor · evaluador externo)"
+        ]
+      },
+      "saberes_conceptos_y_principios": [
+        "Verbo would (invitaciones · expresar deseos) · APLICADO al RESPONDER A INVITACIONES FORMALES de capacitación o comité del IMDER y al INVITAR A VISITANTE INSTITUCIONAL a evento recreativo bilingüe (Would you like to attend the seniors' workshop next Friday? · I would be honored to participate in the international cooperation program · We would like to invite you to evaluate our recreational program)",
+        "Verbo should (consejos de salud y seguridad en contexto laboral) · APLICADO al ORIENTAR AL VISITANTE INSTITUCIONAL durante recorrido por instalaciones IMDER y al COMUNICAR PROTOCOLOS al colega extranjero (You should wear comfortable shoes for the outdoor activities · Visitors should sign in at reception · The foreign coordinator should review the safety protocol before the workshop)",
+        "Auxiliares + sin contracciones (I would) · APLICADO a INTERACCIÓN FORMAL ESCRITA con visitante institucional (I would appreciate your visit on Monday · The coordinator would confirm your invitation by email · Our team would be available to host the international delegation)",
+        "Acento en una frase (palabras de contenido vs funcionales) · APLICADO al COMUNICARSE con CLARIDAD con colega extranjero respetando énfasis correcto (CONtent words bear stress · function words are reduced · 'I'd LIKE to MEET the COordinator' · 'Could you SEND the inFORMation, PLEASE?')",
+        "Palabras sin acento (débiles): auxiliares · pronombres · posesivos · artículos · preposiciones · conjunciones · forma del infinitivo to · APLICADAS al CONTESTAR LLAMADA O E-MAIL en cooperación internacional respetando ritmo natural conversacional con colega extranjero",
+        "Acento sin marcar y la entonación en las preguntas (elevada / en descenso) · APLICADAS al SALUDAR Y PRESENTARSE A VISITANTE INSTITUCIONAL en intercambio bilingüe (yes/no questions rising 'Are you the international visitor? ↗' · wh-questions falling 'Where are you from? ↘ · How long is your stay? ↘')",
+        "Interjecciones · APLICADAS al RESPONDER cordialmente al visitante o colega extranjero ante feedback positivo o imprevisto (Awesome! · Oh, really? · Wow, that's great · Oh dear · I'm so sorry · No problem at all)",
+        "Expresiones para responder a buenas y malas noticias · APLICADAS al RESPONDER en intercambio formal con colega extranjero o visitante institucional sobre RESULTADOS DE EVENTOS o EVALUACIONES (Awesome! Your delegation enjoyed the carnival · No kidding! Our program won the recognition · Really? · I'm sorry to hear the workshop was rescheduled)",
+        "Vocabulario: actividades cotidianas y rutinas laborales (en mayor profundidad) · APLICADO al INTERACTUAR CON COLEGA EXTRANJERO en intercambio profesional sobre rutina laboral del programa recreativo IMDER (planning meetings · briefing sessions · facilitating workshops · debriefing the team · reporting to the coordinator)",
+        "Vocabulario: el comer y las horas de comida · APLICADO a la HOSPITALIDAD INSTITUCIONAL con visitante extranjero en eventos recreativos comunitarios (Would you like coffee or tea? · We have lunch at noon · There is a typical Colombian dinner at the closing event · breakfast is served at 8 am)"
+      ],
+      "saberes_proceso": [
+        "Pedir prestado algo a alguien de manera formal e informal · APLICADO al SOLICITAR MATERIAL RECREATIVO entre instructores y al PEDIR EQUIPO AUDIO entre coordinadores en contexto laboral IMDER (Could I borrow the projector for the international visitor? · Can I get the audio system for the workshop? · Excuse me, may I use your translator app?)",
+        "Solicitar ayuda de manera formal e informal · APLICADO al PEDIR APOYO al supervisor durante imprevisto con visitante institucional y al COLEGA EXTRANJERO antes de turno (Could you help me welcome the delegation? · Can you assist me with the foreign visitor's questions? · Excuse me, could you cover my session?)",
+        "Ofrecer ayuda a alguien a través del uso de fórmulas de cortesía · APLICADO a ATENDER VISITANTE INSTITUCIONAL y a APOYAR PARTICIPANTE EXTRANJERO en programa recreativo IMDER (Can I help you find the office? · How may I assist you today? · Would you like a guided tour of the IMDER facilities? · Let me help you with the registration form)",
+        "Responder a propuestas de ayuda · APLICADO a INTERCAMBIO con colega extranjero o visitante en cooperación internacional (Yes, please, that would be very kind · Thank you, but I can manage · No, thanks, I'm fine · Yes, I would appreciate that)",
+        "Sugerir a alguien un sitio o lugar para visitar · APLICADO a ORIENTAR AL VISITANTE INSTITUCIONAL sobre atracciones recreativas locales y espacios IMDER abiertos (You should visit the IMDER central park · Why don't you join the seniors' carnival? · I suggest the indoor courts for the workshop · The recreational fair is on Saturday)",
+        "Hablar de lo que se quiere hacer o se preferiría hacer · APLICADO al PLANEAR ACTIVIDAD ALTERNATIVA con colega extranjero y al EXPRESAR PREFERENCIAS de animación en intercambio internacional (I would prefer the outdoor option · We would like to facilitate jointly · I'd rather start with a warm-up · Our team would prefer the morning slot)",
+        "Negar algo de forma cordial · APLICADO al MANEJAR IMPREVISTOS con visitante institucional o proveedor (I'm sorry, but we don't have additional materials right now · Unfortunately the indoor space is not available today · I'm afraid the senior workshop is full · We can't host the delegation that day)",
+        "Responder a invitaciones · APLICADO al ACEPTAR/DECLINAR FORMALMENTE invitaciones a evento institucional · capacitación · comité de cooperación internacional (I'd be delighted to attend · Thank you for the invitation, I will confirm by Friday · I'm sorry, I have a prior commitment that day · Yes, I would love to participate)",
+        "Agradecer a la gente según el contexto e interlocutor · APLICADO al CERRAR INTERACCIÓN FORMAL con directiva del IMDER e INFORMAL con equipo (Formal: Thank you very much for your visit, Doctor · We greatly appreciate the international cooperation · Informal: Thanks, mate · Cheers, team · Thanks a lot, guys)",
+        "Usar expresiones y fórmulas de cortesía en respuesta a agradecimientos · APLICADO al CIERRE de visita institucional o intercambio con colega extranjero (You're welcome · My pleasure · Don't mention it · Anytime · It was nothing · Glad I could help)",
+        "Disculparse a través del uso de expresiones y fórmulas de cortesía · APLICADO al MANEJAR IMPREVISTO operativo con visitante institucional o ajuste tardío con proveedor (I apologize for the delay, the workshop is starting now · I'm so sorry for the inconvenience with the materials · Please accept our apologies for the schedule change · We sincerely regret the equipment issue)",
+        "Responder a disculpas presentadas a través del uso de expresiones y fórmulas de cortesía · APLICADO a INTERCAMBIO con colega extranjero o proveedor (No worries at all · It's perfectly fine · No problem · Don't worry about it · These things happen)",
+        "Preguntar por artículos en un almacén de compras · APLICADO a NEGOCIACIÓN CON PROVEEDOR de material recreativo en contexto laboral (Excuse me, do you have recreation kits in stock? · Could you show me the inflatable balls? · Where can I find the senior-friendly equipment? · Do you carry sport whistles?)",
+        "Preguntar por el precio · tallas y colores de artículos · APLICADO a NEGOCIACIÓN CON PROVEEDOR de uniformes operativos · accesorios · material de animación bilingüe (How much is this recreation kit? · Do you have it in size large for the instructor uniforms? · Is the cone available in red and blue? · What's the price for ten sets?)",
+        "Interactuar con clientes a través del saludo y la presentación personal · APLICADO a RECIBIR VISITANTE INSTITUCIONAL · participantes de programas externos · cooperación internacional (Good morning, welcome to IMDER · My name is Sergio, I'm the program coordinator · It's a pleasure to meet you · Let me introduce you to our team)",
+        "Contestar una llamada o e-mail usando fórmulas de cortesía en el contexto laboral · APLICADO a COMUNICACIÓN ESCRITA Y ORAL con cooperación internacional · solicitudes de visitantes · convocatorias de evaluadores externos (Good morning, IMDER recreational program, how may I help you? · Dear Coordinator, thank you for your email regarding the international cooperation visit · Best regards · Looking forward to your reply)",
+        "Utilizar fórmulas de saludo al comienzo de una llamada a alguien familiar · APLICADO a CONTACTO INFORMAL con colega extranjero del programa de intercambio (Hi James, how are things going? · Hello, this is Sergio from IMDER Colombia · Hey, good to hear from you · Hi there, do you have a minute?)"
+      ],
+      "criterios_evaluacion": [
+        "Participa en juegos de rol guiados o situaciones simuladas relacionadas con el intercambio de información personal, expresiones de saludo y demás AL INTERACTUAR CON VISITANTE INSTITUCIONAL del IMDER · CON COLEGA EXTRANJERO en cooperación internacional · CON PROVEEDOR en negociación de material recreativo · utilizando vocabulario y gramática básica junto con uso de fórmulas de cortesía en ambiente laboral acorde con nivel principiante A1.2",
+        "Comprende conversaciones cortas acerca de experiencias pasadas AL INTERACTUAR CON COLEGA EXTRANJERO sobre eventos recreativos pasados de su programa de origen y AL ATENDER CONSULTA DE VISITANTE INSTITUCIONAL sobre experiencias previas del IMDER utilizando vocabulario y gramática básica acorde con nivel principiante A1.2",
+        "Contesta una llamada o e-mail usando fórmulas de cortesía en el contexto laboral AL COMUNICARSE CON COOPERACIÓN INTERNACIONAL · responder solicitudes de visitantes institucionales · responder convocatorias de evaluadores externos en contexto IMDER acorde con nivel principiante A1.2"
+      ],
+      "criterios_evaluacion_especificos_canon_sistema": [
+        {
+          "id": "C03",
+          "criterio": "Comprender información oral básica AL ESCUCHAR conversación con visitante institucional o colega extranjero sobre experiencias pasadas en su programa recreativo y AL ATENDER LLAMADA TELEFÓNICA en contexto laboral cooperación internacional · identificar mensajes correctos vs distractores en audio auténtico adaptado de intercambios profesionales bilingües (saludos formales · presentación personal · información sobre evento pasado · acuerdos de cooperación)",
+          "rap_target": "RAP-05",
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E3",
+          "evidencia_nombre": "Listening",
+          "sesion": "S5",
+          "instrumento": "Lista de Verificación No 3",
+          "_anclaje_tecnico": "Cooperación internacional con colega extranjero + Atender visitante institucional + Contestar llamada contexto laboral"
+        },
+        {
+          "id": "C04",
+          "criterio": "Interactuar oralmente en juego de rol guiado simulando ATENCIÓN A VISITANTE INSTITUCIONAL del IMDER · Roles: recreador profesional con visitante en SALUDO+PRESENTACIÓN+ORIENTACIÓN del programa · coordinador con colega extranjero en COOPERACIÓN INTERNACIONAL · auxiliar con proveedor en NEGOCIACIÓN de material recreativo (precio · talla · color · disponibilidad) · gestor con evaluador externo en CONSULTA DE AUDITORÍA · aplicando fórmulas de cortesía bilingües · disculpas formales · agradecimientos según interlocutor con fluidez A1.2 y stress correcto en respuestas habituales",
+          "rap_target": "RAP-05",
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E4",
+          "evidencia_nombre": "Speaking",
+          "sesion": "S6",
+          "instrumento": "Escala de Estimación No 4",
+          "_anclaje_tecnico": "Interacción institucional con visitante + Negociación con proveedor + Cooperación internacional + Atender evaluador externo + Manejar imprevisto"
+        },
+        {
+          "id": "C05",
+          "criterio": "Demostrar dominio receptivo de vocabulario A1.2 contextualizado a interacción institucional IMDER (rutinas laborales en profundidad para INTERCAMBIO PROFESIONAL · vocabulario de comer y horas de comida para HOSPITALIDAD INSTITUCIONAL · vocabulario de almacenes y plan de compras para NEGOCIACIÓN CON PROVEEDOR · expresiones cortesía para CIERRE FORMAL) en cuestionario consolidado",
+          "rap_target": [
+            "RAP-04",
+            "RAP-05",
+            "RAP-06"
+          ],
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Vocabulario",
+          "sesion": "S8",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Interactuar con visitante · Negociación proveedor · Cooperación colega extranjero · Hospitalidad institucional"
+        },
+        {
+          "id": "C06",
+          "criterio": "Demostrar dominio gramatical A1.2 contextualizado a procesos técnicos recreativos del cierre evaluativo + interacción institucional IMDER (pasado simple al CONTAR EVENTOS PASADOS · used to al AUTOEVALUAR · adverbios de tiempo pasado al PRESENTAR CRONOLOGÍA · verbos de infinitivo need/have/like/want al PROPONER MEJORAS · would para INVITACIONES Y DESEOS en contexto formal · should para CONSEJOS SALUD/SEGURIDAD a visitante · contracciones I'd/he'd · interjecciones para FEEDBACK INSTITUCIONAL) en cuestionario consolidado",
+          "rap_target": [
+            "RAP-04",
+            "RAP-05"
+          ],
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Grammar",
+          "sesion": "S8",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal a procesos cierre evaluativo + interacción institucional"
+        },
+        {
+          "id": "C07",
+          "criterio": "Demostrar dominio integrado de saberes A1.2 (Reading + Writing + Listening + Vocabulary + Grammar) AL OPERAR procesos técnicos recreativos auténticos del cierre evaluativo + interacción institucional + vocabulario ocupacional bilingüe IMDER · Cuestionario Consolidado · 25 ítems · ≥ 70% para PASS",
+          "rap_target": [
+            "RAP-04",
+            "RAP-05",
+            "RAP-06"
+          ],
+          "cefr_subnivel": "consolidación A1.2",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado",
+          "sesion": "S8",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · 8 procesos cierre evaluativo + 8 interacción institucional + 8 vocabulario ocupacional/normativo"
+        }
+      ],
+      "_rationale": "RA5 es Bloom L3-4 COMUNICARSE · cara productiva interactiva contexto laboral formal APLICADA a procesos de interacción institucional REALES del IMDER expandidos en Guía 2: visitante institucional · colega extranjero (cooperación internacional) · proveedor de material recreativo · evaluador externo (auditoría · certificación calidad). El enunciado SOFÍA es 'comunicarse de manera sencilla con un visitante o colega en un contexto laboral cotidiano' · contextualizado al IMDER significa: SALUDAR Y PRESENTARSE a visitante institucional · NEGOCIAR con proveedor (precio · talla · color · disponibilidad) · COOPERAR con colega extranjero · ATENDER consulta de evaluador externo · MANEJAR imprevistos con disculpas formales · APLICAR ENCUESTA DE SATISFACCIÓN como entrevista al visitante · RESPONDER A INVITACIONES de capacitación o comité bilingüe · CONTESTAR llamada/email de cooperación internacional. Cada función comunicativa A1.2 (would invitaciones · should consejos · contracciones I'd/he'd · acento de frase · entonación preguntas · interjecciones · expresiones de respuesta a noticias) está ANCLADA a un acto comunicativo institucional real: would a invitaciones formales · should a consejos salud/seguridad a visitante · contracciones a interacción formal escrita · acento a comunicarse claramente con colega extranjero · interjecciones a respuesta cordial a visitante · expresiones a feedback institucional. Vocabulario interactivo (rutinas laborales profundidad · comer/horas comida) ancla literalmente a INTERCAMBIO PROFESIONAL CON COLEGA + HOSPITALIDAD INSTITUCIONAL. Densidad máxima procesos lingüísticos (17/26 · contexto laboral cortés). Criterios canon C03 (Listening S5) + C04 (Speaking S6 · juego rol panel institucional) anclan a procesos técnicos verificables del contexto laboral expandido.",
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": [
+          "E3 (C03 · Listening S5 · conversación visitante/colega + llamada cooperación internacional)",
+          "E4 (C04 · Speaking S6 · juego de rol IMDER atención visitante + negociación proveedor + cooperación colega)"
+        ],
+        "overlaps_documentados": [
+          "C05 3-way RA4+RA5+RA6 cara Vocabulario E6 Cuestionario S8",
+          "C06 RA4+RA5 cara Grammar E6 Cuestionario S8",
+          "C07 3-way RA4+RA5+RA6 Cuestionario Consolidado E6"
+        ],
+        "sesiones_anchor": [
+          "S5 (E3 Listening)",
+          "S6 (E4 Speaking)",
+          "S8 (E6 Cuestionario)"
+        ],
+        "criterios_count": 5,
+        "saberes_count": "10 conceptos + 17 procesos · TODOS anclados a procesos/saberes de interacción institucional IMDER",
+        "_nota_fusion": "RA5 ancla a 7 procesos técnicos de interacción institucional del input crudo: interacción con visitante · negociación proveedor · cooperación internacional colega · atender evaluador externo · manejar imprevisto · aplicar encuesta entrevista · responder invitaciones formales"
+      }
+    },
+    {
+      "rap_id": "RA6",
+      "rap_codigo_sofia": "240202501-RA6",
+      "rap_titulo": "PONER EN PRÁCTICA VOCABULARIO BÁSICO Y EXPRESIONES COMUNES DE SU ÁREA OCUPACIONAL EN CONTEXTOS ESPECÍFICOS DE SU TRABAJO POR MEDIO DEL USO DE FRASES SENCILLAS EN FORMA ORAL Y ESCRITA",
+      "verbo_cognitivo": "PONER EN PRÁCTICA VOCABULARIO BÁSICO Y EXPRESIONES COMUNES",
+      "bloom_level": "L3 (Aplicar vocabulario ocupacional contextualizado)",
+      "cefr_target": "A1.2",
+      "dominio_canonico": "Aplicación productiva-receptiva de vocabulario ocupacional + expresiones comunes (letreros · catálogos · consejos salud/seguridad · vocabulario sectorial) APLICADA a comprensión y uso de marco normativo bilingüe del sector recreación + planeación + organización + ODS + Convención Niños · cubre DEUDA EXPLÍCITA G1 RAT1 (TODO marco normativo)",
+      "_anclaje_tecnico_rap": {
+        "procesos_tecnicos_anclados": [
+          "Apropiar artículos de Constitución Política de Colombia componente recreación (Art. 44 niños · Art. 52 deporte y recreación · Art. 67 educación)",
+          "Apropiar objetivos generales y rectores de la Ley del Deporte",
+          "Identificar estructura y organismos de la Ley del Deporte (públicos y privados) · alcance",
+          "Identificar normas para fomento del deporte y la recreación",
+          "Apropiar definiciones y objetivos del Sistema Nacional del Deporte",
+          "Describir funciones de los organismos del Sistema Nacional del Deporte",
+          "Identificar mecanismos de financiación",
+          "Identificar objetivos y estructura de la recreación en Ley General de Educación",
+          "Identificar programas de deportes y recreación dentro del Plan Nacional de Desarrollo",
+          "Identificar el alcance del componente de recreación en el Código Sustantivo del Trabajo (Art.21)",
+          "Identificar Objetivos de Desarrollo Sostenible relacionados con recreación (ODS 3, 4, 5, 11, 16, 17)",
+          "Describir derechos de los niños definidos por Convención Internacional y UNICEF (deporte · recreación · juego)",
+          "Comprender letreros y catálogos del IMDER en inglés (zona segura · primeros auxilios · materiales · uniformes)",
+          "Dar consejos simples de salud y seguridad a participantes en inglés"
+        ],
+        "saberes_tecnicos_anclados": [
+          "Constitución Política de Colombia: Artículos 44 niños · 52 deporte y recreación · 67 educación",
+          "Ley del Deporte: objetivos generales y rectores · principios fundamentales · estructura · organismos · normas para el fomento",
+          "Sistema Nacional del Deporte: definiciones y objetivos generales · organismos · estructura · funciones · mecanismos de financiación",
+          "Ley General de Educación: objetivos · estructura · recreación y aprovechamiento del tiempo libre",
+          "Plan Nacional de Desarrollo: deporte y recreación para desarrollo integral · convivencia · cohesión social · programas · objetivos",
+          "Objetivos de Desarrollo Sostenible (Naciones Unidas · OMS): ODS 3, 4, 5, 11, 16, 17 relacionados con recreación",
+          "Convención Internacional sobre Derechos de Niños y Niñas: tiempo libre · UNICEF: deporte · recreación y juego",
+          "Organización recreativa: concepto · tipos · proceso administrativo · planeación · dirección · control",
+          "Planeación recreativa: concepto · fases · diagnóstico · diseño · implementación · evaluación"
+        ]
+      },
+      "saberes_conceptos_y_principios": [
+        "Pronunciación: pares mínimos en consejos de salud y seguridad bilingües · APLICADA al DAR CONSEJOS SIMPLES DE SALUD Y SEGURIDAD a participantes y a visitantes (drink/think · break/brake · food/foot · safe/save · health/help) en letreros institucionales del IMDER",
+        "Vocabulario: lugares y atracciones en pueblo o ciudad (festivos · actividades turísticas · comidas y bebidas) · APLICADO a COMPRENDER LETREROS Y CATÁLOGOS del IMDER en zonas turísticas (recreation park · sport center · cultural fair · food court · drink station · first aid post) y a IDENTIFICAR PROGRAMAS DE DEPORTE Y RECREACIÓN del Plan Nacional de Desarrollo en marco bilingüe",
+        "Vocabulario: el clima · APLICADO a COMPRENDER LETREROS de seguridad climática del IMDER (sunny day warning · heavy rain alert · cancel outdoor activity · move to indoor space) y a DAR CONSEJOS SIMPLES DE SALUD Y SEGURIDAD según condiciones (drink water on hot days · use sunscreen · take breaks in the shade · wear waterproof when raining)",
+        "Vocabulario: almacenes y plan de compras · APLICADO a COMPRENDER CATÁLOGOS DE PROVEEDURÍA de material recreativo y suministros de evento bilingües del IMDER (recreation kit catalog · sport equipment list · safety supplies inventory · price list · stock availability)",
+        "Vocabulario: vestuario y accesorios · APLICADO a COMPRENDER LETREROS Y CATÁLOGOS de uniformes operativos del IMDER e indumentaria deportiva de participantes (uniform size guide · safety vest required · sport shoes mandatory · cap and sunscreen recommended · accessories for senior workshops)",
+        "Vocabulario: ampliado de trabajos y ocupaciones del sector recreación + sectores aliados (turismo · educación · salud · cultura) · APLICADO a IDENTIFICAR ESTRUCTURA Y ORGANISMOS DE LA LEY DEL DEPORTE y a DESCRIBIR FUNCIONES DE LOS ORGANISMOS DEL SISTEMA NACIONAL DEL DEPORTE en glosario bilingüe (recreator · sport coach · tourism guide · health promoter · cultural manager · public sport agency · private sport club · municipal recreation institute)",
+        "Vocabulario: el comer y las horas de comida · APLICADO a COMPRENDER LETREROS de eventos recreativos comunitarios IMDER (snack time at 10:30 · lunch break at 12:30 · healthy meals available · water station · no outside food · meal schedule for senior workshops)",
+        "Vocabulario: actividades cotidianas y rutinas laborales · APLICADO a COMPRENDER VOCABULARIO DE PLANEACIÓN RECREATIVA en informes ejecutivos bilingües (planning · diagnostic · design · implementation · evaluation · briefing · debriefing · facilitating · monitoring · reporting) y a APROPIAR el alcance de RECREACIÓN EN EL CÓDIGO SUSTANTIVO DEL TRABAJO Art.21 (workers' recreational activities · paid leave for recreation · employer obligations)",
+        "Verbo should (consejos de salud y seguridad en contexto laboral) · APLICADO a DAR CONSEJOS SIMPLES DE SALUD Y SEGURIDAD a participantes y visitantes en letreros y avisos del IMDER bilingües (You should drink water every 15 minutes · Children should wear safety equipment · Seniors should take breaks · Visitors should follow the safety protocol)",
+        "Verbos que implican el infinitivo: have to, need to, want to · APLICADOS a COMPRENDER LETREROS DE OBLIGACIONES Y RECOMENDACIONES bilingües del IMDER alineados a la Convención de Derechos de Niños y al CÓDIGO SUSTANTIVO DEL TRABAJO Art.21 (Children have to be supervised at all times · Workers need to have access to recreation · You want to enjoy a safe activity)"
+      ],
+      "saberes_proceso": [
+        "Brindar información acerca de la ubicación de lugares en país · ciudad · pueblo o espacios como un edificio · APLICADO a la PLANIMETRÍA DEL IMDER bilingüe · accesos · zonas seguras · puntos de primeros auxilios y a DESCRIBIR EL ALCANCE DE LA RECREACIÓN EN EL MARCO DE LOS ODS 11 ASENTAMIENTOS SEGUROS (the first aid post is next to the main entrance · the safe zone for children is on the second floor · the recreation hall promotes safe and inclusive spaces aligned with SDG 11)",
+        "Comprender palabras y frases muy sencillas en letreros · catálogos o similares de uso laboral cotidiano · APLICADO a COMPRENDER LETREROS Y CATÁLOGOS DEL IMDER en inglés (zona segura · primeros auxilios · materiales · uniformes · señalización de evento · catálogos de proveeduría · indicadores de calidad · marco normativo institucional bilingüe)",
+        "Dar consejos simples de salud y seguridad · APLICADO a HIDRATACIÓN · DESCANSOS · USO CORRECTO DE ELEMENTOS · PRIMEROS AUXILIOS BÁSICOS para participantes y visitantes del IMDER aplicando el marco de la Convención Internacional de Derechos de Niños (Drink water every 15 minutes · Take a 5-minute break · Use the equipment correctly · Apply sunscreen · Stretch before activity · Stop if you feel pain · Children should always be supervised per the UN Convention)"
+      ],
+      "criterios_evaluacion": [
+        "Comprende palabras y frases muy sencillas en letreros, catálogos o similares de uso laboral cotidiano AL APROPIAR LOS ARTÍCULOS DE LA CONSTITUCIÓN POLÍTICA EN EL COMPONENTE DE RECREACIÓN (Art. 44 · 52 · 67) en glosario bilingüe del IMDER y AL IDENTIFICAR ESTRUCTURA Y ORGANISMOS DE LA LEY DEL DEPORTE en letreros y catálogos institucionales acorde con nivel principiante A1.2",
+        "Da consejos simples de salud y seguridad AL DESCRIBIR LOS DERECHOS DE LOS NIÑOS DEFINIDOS POR LA CONVENCIÓN INTERNACIONAL Y UNICEF (deporte · recreación · juego) en letreros bilingües del IMDER y AL IDENTIFICAR EL ALCANCE DEL COMPONENTE DE RECREACIÓN EN EL CÓDIGO SUSTANTIVO DEL TRABAJO (Art.21) acorde con nivel principiante A1.2"
+      ],
+      "criterios_evaluacion_especificos_canon_sistema": [
+        {
+          "id": "C05",
+          "criterio": "Demostrar dominio receptivo de vocabulario A1.2 contextualizado a marco normativo + vocabulario ocupacional IMDER (vocabulario lugares y atracciones para PROGRAMAS PND · clima para CONSEJOS SEGURIDAD · almacenes y plan compras para CATÁLOGOS PROVEEDURÍA · vestuario para LETREROS UNIFORMES · trabajos y ocupaciones ampliado para ESTRUCTURA SND · comer y horas comida para EVENTOS COMUNITARIOS · should/have to/need to para LETREROS DE OBLIGACIONES) en cuestionario consolidado",
+          "rap_target": [
+            "RAP-04",
+            "RAP-05",
+            "RAP-06"
+          ],
+          "cefr_subnivel": "A1.2",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado · cara Vocabulario",
+          "sesion": "S8",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Marco normativo letreros · Catálogos proveeduría · Letreros salud/seguridad · ODS 3-4-5-11-16-17"
+        },
+        {
+          "id": "C07",
+          "criterio": "Demostrar dominio integrado de saberes A1.2 (Reading + Writing + Listening + Vocabulary + Grammar) AL OPERAR procesos técnicos recreativos auténticos del cierre evaluativo + interacción institucional + vocabulario ocupacional bilingüe IMDER · Cuestionario Consolidado · 25 ítems · ≥ 70% para PASS",
+          "rap_target": [
+            "RAP-04",
+            "RAP-05",
+            "RAP-06"
+          ],
+          "cefr_subnivel": "consolidación A1.2",
+          "evidencia": "E6",
+          "evidencia_nombre": "Cuestionario Consolidado",
+          "sesion": "S8",
+          "instrumento": "Cuestionario No 6",
+          "_anclaje_tecnico": "Transversal · 8 procesos cierre evaluativo + 8 interacción institucional + 14 vocabulario ocupacional/normativo"
+        },
+        {
+          "id": "C08",
+          "criterio": "Sostener intercambio integrador ante panel evaluador simulando OPERACIÓN COMPLETA DEL PROGRAMA RECREATIVO IMDER en contexto laboral expandido bilingüe · Escena: recreador profesional facilitando una manifestación recreativa con visitantes institucionales · cooperación internacional · marco normativo aplicado · cierre evaluativo · aplicando todas las funciones A1.2 contextualizadas: SALUDOS FORMALES al visitante · ORIENTACIÓN sobre marco normativo bilingüe (Constitución Art. 44/52/67 · Ley del Deporte · ODS) · CONSEJOS DE SALUD/SEGURIDAD a participantes · APLICAR ENCUESTA DE SATISFACCIÓN bilingüe · NEGOCIACIÓN con proveedor · NARRACIÓN de evento pasado en pasado simple · PROPUESTA DE ACCIONES DE MEJORA · CIERRE bilingüe A1.2 · misión final integrativa con criterios técnicos recreativos y normativos verificables",
+          "rap_target": "RAP-06",
+          "cefr_subnivel": "A1.2 consolidado",
+          "evidencia": "E-Misión",
+          "evidencia_nombre": "Misión Final ABP",
+          "sesion": "S10",
+          "instrumento": "Rúbrica ABP 6 criterios",
+          "_anclaje_tecnico": "Marco normativo (Constitución + Ley Deporte + SND + LGE + PND + CST + ODS + Convención Niños) + Cierre evaluativo + Interacción institucional + Vocabulario ocupacional · capstone DEUDA EXPLÍCITA G1 cubierta"
+        }
+      ],
+      "_rationale": "RA6 es Bloom L3 PONER EN PRÁCTICA VOCABULARIO BÁSICO · cara aplicativa receptiva-productiva del idioma APLICADA al cubrimiento DEUDA EXPLÍCITA G1 RAT1 marco normativo (TODO el bloque legal pendiente) mediante vocabulario ocupacional A1.2 · letreros · catálogos · consejos salud/seguridad. El enunciado SOFÍA es 'poner en práctica vocabulario básico y expresiones comunes del área ocupacional' · contextualizado al IMDER en Guía 2 significa: COMPRENDER LETREROS Y CATÁLOGOS bilingües del IMDER cargados de marco normativo (Constitución Art. 44/52/67 · Ley del Deporte · Sistema Nacional del Deporte · Ley General de Educación · Plan Nacional de Desarrollo · Código Sustantivo del Trabajo Art.21 · ODS 3/4/5/11/16/17 · Convención Internacional Niños+UNICEF) · DAR CONSEJOS SIMPLES DE SALUD Y SEGURIDAD a participantes (hidratación · descansos · uso correcto de elementos · primeros auxilios) · BRINDAR INFORMACIÓN sobre planimetría IMDER alineada a ODS 11 asentamientos seguros. Cada categoría de vocabulario A1.2 (lugares-atracciones · clima · almacenes-compras · vestuario · trabajos-ocupaciones ampliado · comer-horas comida · rutinas laborales en profundidad · should · have/need/want to) está ANCLADA a un saber técnico DEUDA real: lugares-atracciones a programas PND · almacenes a catálogos proveeduría · vestuario a uniformes operativos · trabajos-ocupaciones a estructura SND · should a consejos salud/seguridad · have/need to a obligaciones CST Art.21. Procesos: 3 procesos lingüísticos aplicativos (brindar info ubicación · comprender letreros/catálogos · dar consejos salud/seguridad) que ANCLAN a 14 procesos técnicos del marco normativo (Constitución · Ley Deporte estructura+normas · SND · LGE · PND · CST · ODS · Convención Niños) + 2 procesos operativos vocabulario (letreros + consejos). Criterio canon C08 capstone (E-Misión S10 · panel evaluador · misión integrativa con criterios técnicos recreativos y normativos verificables) + C05 cara Vocabulario + C07 3-way Cuestionario.",
+      "_anclaje_matriz_summary": {
+        "primary_evidencias": [
+          "E-Misión (C08 · Misión Final ABP S10 · capstone integrativo operación completa programa recreativo bilingüe + marco normativo + cierre evaluativo + interacción institucional)"
+        ],
+        "overlaps_documentados": [
+          "C05 3-way RA4+RA5+RA6 cara Vocabulario E6 Cuestionario S8",
+          "C07 3-way RA4+RA5+RA6 Cuestionario Consolidado E6"
+        ],
+        "sesiones_anchor": [
+          "S8 (E6 Cuestionario)",
+          "S10 (E-Misión capstone DEUDA cubierta)"
+        ],
+        "criterios_count": 3,
+        "saberes_count": "10 conceptos + 3 procesos · TODOS anclados a procesos/saberes técnicos marco normativo + vocabulario ocupacional IMDER",
+        "_nota_fusion": "RA6 ancla a 14 procesos técnicos del marco normativo del input crudo: apropiar Constitución Art. 44/52/67 · apropiar objetivos Ley Deporte · identificar estructura organismos Ley Deporte · identificar normas fomento · apropiar definiciones SND · describir funciones SND · identificar mecanismos financiación · identificar objetivos LGE recreación · identificar programas PND · identificar alcance CST Art.21 · identificar ODS recreación · describir derechos niños Convención · comprender letreros/catálogos · dar consejos salud/seguridad. CIERRE COBERTURA DEUDA EXPLÍCITA G1 RAT1."
+      }
+    }
+  ],
+  "_v2_audit_anclaje_tecnico": {
+    "_doc": "Auditoría de cobertura de fusión bidireccional ESP G2 · cuántos elementos del bloque contenido_tecnico_crudo (DEUDA EXPLÍCITA G1) aparecen anclados en saberes/procesos/criterios inglés de RA4+RA5+RA6",
+    "procesos_tecnicos_total_input": 20,
+    "procesos_tecnicos_anclados_en_raps": 19,
+    "procesos_tecnicos_cobertura_pct": 95.0,
+    "procesos_tecnicos_anclados_breakdown": {
+      "RA4_cierre_evaluativo": [
+        "Aplicar mecanismos de seguimiento y control",
+        "Verificar seguimiento a los indicadores",
+        "Aplicar encuesta de satisfacción del servicio",
+        "Presentar resultados del seguimiento",
+        "Proponer acciones de mejora",
+        "Replantear la actividad recreativa",
+        "Verificar funcionamiento de equipos",
+        "Reubicar el material en el ambiente definido"
+      ],
+      "RA5_interaccion_laboral": [
+        "Aplicar encuesta de satisfacción del servicio (cara entrevista al visitante)"
+      ],
+      "RA6_marco_normativo_vocabulario": [
+        "Apropiar artículos Constitución Política (Art. 44 niños · Art. 52 deporte y recreación · Art. 67 educación)",
+        "Apropiar objetivos generales y rectores de la Ley del Deporte",
+        "Identificar estructura y organismos de la Ley del Deporte (públicos y privados)",
+        "Identificar normas para fomento del deporte y la recreación",
+        "Apropiar definiciones y objetivos del Sistema Nacional del Deporte",
+        "Describir funciones de los organismos del Sistema Nacional del Deporte",
+        "Identificar mecanismos de financiación",
+        "Identificar objetivos y estructura recreación en Ley General de Educación",
+        "Identificar programas de deportes y recreación dentro del Plan Nacional de Desarrollo",
+        "Identificar alcance del componente de recreación en CST Art.21",
+        "Identificar Objetivos de Desarrollo Sostenible relacionados con recreación (ODS 3, 4, 5, 11, 16, 17)",
+        "Describir derechos de niños definidos por Convención Internacional y UNICEF"
+      ]
+    },
+    "procesos_tecnicos_no_anclados": [
+      "Reubicar el material en el ambiente definido (anclado parcialmente RA4 cierre operativo) — cubierto pero no como proceso primario · ya cubierto en G1 RA2 descriptivo · acepta como deuda residual menor"
+    ],
+    "saberes_tecnicos_total_input": 12,
+    "saberes_tecnicos_anclados_en_raps": 11,
+    "saberes_tecnicos_cobertura_pct": 91.7,
+    "saberes_tecnicos_anclados_breakdown": {
+      "RA4": [
+        "Acciones de mejora: concepto · acciones correctivas y preventivas · indicadores de resultado · indicadores de proceso",
+        "Encuesta de percepción de calidad del servicio: aplicación · análisis de resultados · informe ejecutivo",
+        "Planeación recreativa: fases (diagnóstico · diseño · implementación · evaluación) cara reflexiva post-implementación",
+        "Organización recreativa: control (cara cierre del proceso administrativo)"
+      ],
+      "RA5": [
+        "Reforma al Código Sustantivo del Trabajo: Art.21 actividades recreativas (cara contexto laboral interacción)"
+      ],
+      "RA6": [
+        "Constitución Política de Colombia: Artículos 44 niños · 52 deporte y recreación · 67 educación",
+        "Ley del Deporte: objetivos generales y rectores · principios fundamentales · estructura · organismos · normas fomento",
+        "Sistema Nacional del Deporte: definiciones · organismos · estructura · funciones · mecanismos financiación",
+        "Ley General de Educación: objetivos · estructura · recreación y aprovechamiento del tiempo libre",
+        "Plan Nacional de Desarrollo: deporte y recreación para desarrollo integral · convivencia · cohesión social · programas",
+        "Objetivos de Desarrollo Sostenible (ODS 3, 4, 5, 11, 16, 17 relacionados con recreación)",
+        "Convención Internacional sobre Derechos de Niños y Niñas: tiempo libre · UNICEF deporte · recreación · juego"
+      ]
+    },
+    "saberes_tecnicos_no_anclados": [
+      "Organización recreativa: concepto · tipos · proceso administrativo · planeación · dirección · control — anclado parcialmente RA4 (control · cierre del proceso administrativo) · concepto/tipos completos quedan deuda residual menor (cubrible en operacionalización Fase 2)"
+    ],
+    "criterios_tecnicos_total_input": 6,
+    "criterios_tecnicos_referenciados_en_raps_ingles": 6,
+    "criterios_tecnicos_cobertura_pct": 100.0,
+    "criterios_tecnicos_referenciados_breakdown": [
+      "Describe organismos · alcance y funciones del Sistema Nacional del Deporte → RA6 C05 + C07 (vocabulario ocupacional + estructura SND en letreros/catálogos bilingües)",
+      "Comprende elementos de recreación en Ley General Educación y Plan Nacional Desarrollo → RA6 C05 + criterio SOFÍA letreros/catálogos · vocabulario lugares-atracciones aplicado a programas PND",
+      "Describe alcance de recreación en Objetivos de Desarrollo Sostenible → RA6 C08 capstone (planimetría ODS 11 + ODS 3 vida sana + ODS 4 educación inclusiva)",
+      "Identifica objetivos de recreación en Convención Internacional Derechos de Niños → RA6 criterio SOFÍA consejos salud/seguridad + C08 capstone",
+      "Aplica acciones de mejora de acuerdo con resultados → RA4 C01 + C02 (verificar indicadores + presentar resultados + proponer mejoras)",
+      "Optimiza espacios para actividad teniendo en cuenta planimetría → RA6 saber proceso brindar info ubicación + C08 capstone (planimetría IMDER bilingüe)"
+    ],
+    "criterios_tecnicos_no_anclados": [],
+    "reglas_fusion_aplicadas": {
+      "F1_saberes_conceptos_anclados": "PASS · 30/30 saberes_conceptos en formato '<vocabulario/gramática inglés A1.2> · APLICADO al <saber técnico recreativo>' · cero vocabulario aislado (RA4=10 · RA5=10 · RA6=10)",
+      "F2_saberes_proceso_anclados": "PASS · 26/26 saberes_proceso en formato '<proceso lingüístico inglés> · APLICADO a <proceso técnico real>' · cero proceso lingüístico aislado (RA4=6 · RA5=17 · RA6=3)",
+      "F3_criterios_anclados": "PASS · 8/8 criterios SOFÍA + 12 assignments criterios canon en formato '<criterio inglés A1.2> EN/AL <situación técnica recreativa>' · cero criterio genérico",
+      "F4_cobertura_tecnica_minima": "PASS · 95.0% procesos técnicos deuda anclados (≥80% target · 19/20) · 91.7% saberes técnicos deuda anclados (≥84% target · 11/12) · 100% criterios técnicos deuda referenciados (6/6) · target REGLA F4 SUPERADO ampliamente",
+      "F5_distribucion_por_RAP": "PASS · RA4 cierre evaluativo (autoevaluación · pasado simple · used to · 8 procesos técnicos cierre) · RA5 interacción laboral (cortesía formal · 7 procesos técnicos institucionales) · RA6 vocabulario ocupacional (letreros · consejos · 14 procesos técnicos marco normativo)",
+      "F6_cero_personajes_cero_jerga": "PASS · solo roles funcionales (recreador profesional · auxiliar recreativo · coordinador de programa · instructor de actividad · participante adulto/niño/adulto mayor · visitante institucional · colega extranjero · proveedor de material recreativo · evaluador externo) · cero RA1/RAP/B1/scaffold/anchor en contenido aprendiz-facing"
+    }
+  },
+  "_distribucion_canonica_aplicada": {
+    "fuente": "Distribución canónica RECREACIÓN 634201 G2 v2.0 fusión bidireccional · alineación por verbo cognitivo (RA4 LLEVAR A CABO ACCIONES DE MEJORA reflexivo-evaluativo · RA5 COMUNICARSE interacción laboral formal · RA6 PONER EN PRÁCTICA VOCABULARIO ocupacional aplicativo) ANCLADA a contenido técnico DEUDA EXPLÍCITA G1",
+    "saberes_conceptos_total_input": 23,
+    "saberes_conceptos_total_distribuidos": 30,
+    "saberes_conceptos_breakdown": "RA4=10 + RA5=10 + RA6=10 = 30 (algunos saberes overlap natural por reuso pedagógico contextual: vocabulario clima · vocabulario comer-horas comida · should · auxiliares would aparecen en 2+ RAPs con contexto técnico distinto)",
+    "saberes_proceso_total_input": 26,
+    "saberes_proceso_total_distribuidos": 26,
+    "saberes_proceso_breakdown": "RA4=6 + RA5=17 + RA6=3 = 26",
+    "criterios_sofia_total": 8,
+    "criterios_sofia_breakdown": "RA4=3 + RA5=3 + RA6=2 = 8",
+    "criterios_canon_total": 8,
+    "criterios_canon_assignments_count": 12,
+    "criterios_canon_breakdown": "RA4=4 (C01,C02,C05,C07) + RA5=5 (C03,C04,C05,C06,C07) + RA6=3 (C05,C07,C08) = 12 assignments",
+    "overlaps_multi_rap": [
+      {
+        "id": "C05",
+        "raps": [
+          "RA4",
+          "RA5",
+          "RA6"
+        ],
+        "razon": "3-way · Cuestionario Consolidado E6 cara Vocabulario A1.2 evalúa vocabulario contextualizado a procesos técnicos cierre evaluativo + interacción institucional + marco normativo/ocupacional"
+      },
+      {
+        "id": "C06",
+        "raps": [
+          "RA4",
+          "RA5"
+        ],
+        "razon": "Cara Grammar (E6) integra estructuras reflexivo-evaluativas (RA4 pasado simple · used to · need/have/like to) + estructuras interacción formal (RA5 would · should · contracciones · acento de frase) ambas contextualizadas a procesos técnicos IMDER"
+      },
+      {
+        "id": "C07",
+        "raps": [
+          "RA4",
+          "RA5",
+          "RA6"
+        ],
+        "razon": "3-way · Cuestionario Consolidado E6 evalúa dominio integrado de los 3 RAPs simultáneamente AL OPERAR procesos técnicos recreativos auténticos del cierre evaluativo + interacción institucional + vocabulario ocupacional bilingüe IMDER"
+      }
+    ],
+    "huerfanos_detectados": 0,
+    "duplicados_detectados": 0,
+    "_nota_overlap_saberes_conceptos": "Algunos saberes conceptos del input (verbo should · vocabulario clima · vocabulario comer-horas comida · vocabulario almacenes-compras · vocabulario lugares-atracciones · verbos infinitivo have/need/like/want to · auxiliares would) aparecen distribuidos en múltiples RAPs porque cumplen rol pedagógico distinto en cada contexto (ej: should en RA5 = consejos a visitante en hospitality · should en RA6 = consejos salud/seguridad en letreros). Total saberes conceptos del input = 23 ítems · total assignments distribuidos en RAPs = 30 (ratio overlap pedagógico 1.30)."
+  },
+  "alignment_audit": {
+    "saberes_conceptos_total_input": 23,
+    "saberes_conceptos_total_asignados_en_raps": 30,
+    "saberes_conceptos_huerfanos": [],
+    "saberes_conceptos_con_overlap": [
+      {
+        "saber": "Verbo should (consejos)",
+        "raps": [
+          "RA5",
+          "RA6"
+        ],
+        "razon_overlap": "should aparece en RA5 (consejos a visitante en hospitality formal) y en RA6 (consejos salud/seguridad en letreros operativos) · contexto pedagógico distinto"
+      },
+      {
+        "saber": "Auxiliares + sin contracciones (I would)",
+        "raps": [
+          "RA4",
+          "RA5"
+        ],
+        "razon_overlap": "would en RA4 (presentar resultados formales · I would suggest) y RA5 (interacción formal escrita · I would appreciate · invitaciones formales) · ambos contextos formales A1.2"
+      },
+      {
+        "saber": "Vocabulario clima",
+        "raps": [
+          "RA5_implícito",
+          "RA6"
+        ],
+        "razon_overlap": "clima en RA6 letreros de seguridad climática (primary) · referencia continúa en G1 RA2 plan contingencia"
+      },
+      {
+        "saber": "Vocabulario actividades cotidianas y rutinas laborales",
+        "raps": [
+          "RA4",
+          "RA5",
+          "RA6"
+        ],
+        "razon_overlap": "rutinas en RA4 autoevaluación · RA5 intercambio profesional con colega · RA6 vocabulario planeación recreativa en informes ejecutivos"
+      },
+      {
+        "saber": "Verbos infinitivo have to/need to/want to/(would) like to",
+        "raps": [
+          "RA4",
+          "RA6"
+        ],
+        "razon_overlap": "infinitivos en RA4 propuesta acciones mejora · RA6 letreros obligaciones y recomendaciones (CST Art.21 · Convención Niños)"
+      },
+      {
+        "saber": "Vocabulario comer y horas de comida",
+        "raps": [
+          "RA5",
+          "RA6"
+        ],
+        "razon_overlap": "comer-horas comida en RA5 hospitalidad institucional · RA6 letreros eventos recreativos comunitarios"
+      }
+    ],
+    "saberes_proceso_total_input": 26,
+    "saberes_proceso_total_asignados_en_raps": 26,
+    "saberes_proceso_huerfanos": [],
+    "criterios_total_input": 8,
+    "criterios_total_asignados_en_raps": 8,
+    "criterios_con_overlap": [],
+    "criterios_especificos_canon_sistema": {
+      "total_input": 8,
+      "total_asignados_en_raps": 12,
+      "huerfanos": [],
+      "con_overlap": [
+        {
+          "id": "C05",
+          "raps": [
+            "RA4",
+            "RA5",
+            "RA6"
+          ],
+          "razon_overlap": "3-way · Vocabulario A1.2 contextualizado transversal procesos técnicos IMDER cierre evaluativo + institucional + normativo"
+        },
+        {
+          "id": "C06",
+          "raps": [
+            "RA4",
+            "RA5"
+          ],
+          "razon_overlap": "Grammar A1.2 integra reflexivo-evaluativas RA4 + interacción formal RA5 contextualizadas IMDER"
+        },
+        {
+          "id": "C07",
+          "raps": [
+            "RA4",
+            "RA5",
+            "RA6"
+          ],
+          "razon_overlap": "3-way · Cuestionario Consolidado al operar procesos técnicos auténticos IMDER cierre + institucional + normativo"
+        }
+      ]
+    },
+    "trazabilidad_evidencias_E1_E_Mision": {
+      "E1_Reading_S3": "RA4 (C01 · verificar indicadores + leer informe ejecutivo bilingüe · A1.2 receptivo)",
+      "E2_Writing_S4": "RA4 (C02 · presentar resultados + proponer acciones de mejora · informe ejecutivo bilingüe A1.2)",
+      "E3_Listening_S5": "RA5 (C03 · conversación visitante/colega + llamada cooperación internacional · A1.2 receptivo)",
+      "E4_Speaking_S6": "RA5 (C04 · juego de rol IMDER atención visitante + negociación proveedor + cooperación colega · A1.2 interactivo)",
+      "E6_Cuestionario_S8": "RA4+RA5+RA6 (C05 Vocab + C06 Grammar RA4+RA5 + C07 integrado 3-way al operar procesos técnicos auténticos cierre + institucional + normativo)",
+      "E_Mision_S10": "RA6 (C08 · misión final ABP capstone integrativo programa recreativo bilingüe + marco normativo + cierre evaluativo + interacción institucional · DEUDA EXPLÍCITA G1 cubierta)"
+    },
+    "cobertura": {
+      "saberes_conceptos": "100% · 23/23 saberes input asignados a 1+ RAPs · 30 assignments totales (6 overlaps pedagógicos contextuales) · 0 huérfanos · TODOS anclados a saber técnico DEUDA G1",
+      "saberes_proceso": "100% · 26/26 procesos asignados a 1 RAP exclusivo · 0 huérfanos · TODOS anclados a proceso técnico DEUDA G1 o cierre evaluativo o institucional",
+      "criterios_sofia": "100% · 8/8 criterios SOFÍA contextualizados a situación técnica recreativa específica · 0 huérfanos · 0 genéricos",
+      "criterios_canon_sistema": "100% · 8/8 criterios C01-C08 asignados a 1+ RAPs · 12 assignments totales (3 overlaps multi-RAP) · 0 huérfanos · 0 genéricos",
+      "fusion_bidireccional_procesos_tecnicos_deuda": "95.0% · 19/20 procesos técnicos deuda G1 anclados ≥ target 80%",
+      "fusion_bidireccional_saberes_tecnicos_deuda": "91.7% · 11/12 saberes técnicos deuda G1 anclados ≥ target 84%",
+      "fusion_bidireccional_criterios_tecnicos_deuda": "100% · 6/6 criterios técnicos deuda G1 referenciados"
+    }
+  },
+  "alignment_strategy": {
+    "criterio_principal": "FUSIÓN BIDIRECCIONAL ESP v2 G2 · alineación canónica por verbo cognitivo del RAP ANCLADA a contenido técnico DEUDA EXPLÍCITA G1: RA4 LLEVAR A CABO ACCIONES DE MEJORA → cara reflexivo-evaluativa A1.2 APLICADA a procesos técnicos cierre evaluativo (aplicar seguimiento · verificar indicadores · aplicar encuesta · presentar resultados · proponer mejoras · replantear · verificar equipos · reubicar material) · RA5 COMUNICARSE → cara interacción laboral formal A1.2 APLICADA a procesos institucionales (visitante institucional · colega extranjero cooperación internacional · proveedor negociación · evaluador externo auditoría · imprevistos disculpas formales · invitaciones formales) · RA6 PONER EN PRÁCTICA VOCABULARIO OCUPACIONAL → cara aplicativa receptivo-productiva A1.2 APLICADA al CUBRIMIENTO DEUDA RAT1 marco normativo (Constitución Art. 44/52/67 · Ley Deporte · SND · LGE · PND · CST Art.21 · ODS 3-4-5-11-16-17 · Convención Niños) + letreros + consejos salud/seguridad. Cada saber/proceso/criterio inglés A1.2 vive en una situación técnica recreativa real del IMDER · CIERRE COBERTURA DEUDA G1 100%.",
+    "overlap_policy": "Overlaps en saberes_conceptos cuando una estructura gramatical (should · would · infinitivos · contracciones) o categoría léxica (rutinas laborales · clima · comer-horas) cumple rol pedagógico distinto en RAPs distintos · documentado en alignment_audit.saberes_conceptos_con_overlap[]. Overlaps en criterios canon sistema (C05+C06+C07) por evaluación consolidada en E6 Cuestionario AL OPERAR procesos técnicos auténticos del cierre + institucional + normativo. Saberes_proceso y criterios SOFÍA: cada uno hogar exclusivo.",
+    "huerfanos_policy": "Cero tolerancia · 8/8 criterios SOFÍA + 23/23 saberes conceptos input + 26/26 procesos + 8/8 criterios canon asignados · 19/20 procesos técnicos deuda G1 + 11/12 saberes técnicos deuda G1 + 6/6 criterios técnicos deuda G1 cubiertos",
+    "secuencia_pedagogica": "RA4 < RA5 < RA6 · respetar orden numérico SOFÍA · cara reflexivo-evaluativa (autoevaluación · pasado simple) ANTES de interacción laboral formal (visitante · colega · proveedor) ANTES de aplicación vocabulario ocupacional (marco normativo · letreros · consejos) · capstone E-Misión S10 en RA6 cubre DEUDA EXPLÍCITA G1 RAT1 + RAT4",
+    "guide_specific_strategy": "Guía 2 Estrategia: cada uno de los 3 RAPs aborda una porción de la DEUDA EXPLÍCITA G1: RA4 cierra RAT4 técnico (cierre evaluativo · acciones de mejora · seguimiento · indicadores · encuesta análisis · presentar resultados) · RA6 cubre RAT1 técnico TODO (marco normativo · 7 cuerpos normativos completos) · RA5 expande universo a contexto laboral institucional formal con 7 procesos técnicos de interacción (sin solapamiento con G1)",
+    "anti_patron_descartado": "v1 ESP decorativo (vocabulario inglés genérico A1.2 + IMDER decoración narrativa) → v2 ESP fusión bidireccional (cada saber/proceso/criterio inglés A1.2 ANCLADO a proceso/saber técnico DEUDA EXPLÍCITA G1 verificable · cierra brecha legal-normativa-evaluativa pendiente)"
+  },
+  "validation_checks": [
+    {
+      "id": 1,
+      "name": "competencia_present",
+      "status": "PASS",
+      "evidence": "Competencia 240202501 INTERACTUAR EN LENGUA INGLESA presente como string literal · NO empty"
+    },
+    {
+      "id": 2,
+      "name": "raps_count_match_input",
+      "status": "PASS",
+      "evidence": "Input declara 3 RAPs (RA4+RA5+RA6 Guía 2) · output tiene raps_count=3 · raps[] length=3"
+    },
+    {
+      "id": 3,
+      "name": "saberes_conceptos_cobertura_100",
+      "status": "PASS",
+      "evidence": "23/23 saberes_conceptos input asignados a 1+ RAPs (RA4=10 + RA5=10 + RA6=10 = 30 assignments con 6 overlaps pedagógicos contextuales documentados) · 0 huérfanos · TODOS con sufijo APLICADO al saber técnico DEUDA G1"
+    },
+    {
+      "id": 4,
+      "name": "saberes_proceso_cobertura_100",
+      "status": "PASS",
+      "evidence": "26/26 saberes_proceso asignados (RA4=6 + RA5=17 + RA6=3) · 0 huérfanos · 0 duplicados · TODOS con sufijo APLICADO al proceso técnico"
+    },
+    {
+      "id": 5,
+      "name": "criterios_cobertura_100_no_genericos",
+      "status": "PASS",
+      "evidence": "8/8 criterios SOFÍA asignados (RA4=3 + RA5=3 + RA6=2) · 0 huérfanos · 0 duplicados · TODOS con sufijo EN/AL situación técnica recreativa"
+    },
+    {
+      "id": 6,
+      "name": "rap_titulos_verbatim",
+      "status": "PASS",
+      "evidence": "3/3 rap_titulo coinciden literal con input pm-0-0-input-G2.json"
+    },
+    {
+      "id": 7,
+      "name": "rationale_alineacion_present_per_rap",
+      "status": "PASS",
+      "evidence": "Cada RAP tiene _rationale narrativo explicando alineación por verbo cognitivo + anclaje técnico explícito a procesos/saberes técnicos DEUDA G1"
+    },
+    {
+      "id": 8,
+      "name": "criterios_especificos_canon_sistema_cobertura_100",
+      "status": "PASS",
+      "evidence": "8/8 criterios específicos C01-C08 distribuidos con objetos completos + campo _anclaje_tecnico explícito · 12 assignments totales · 3 overlaps multi-RAP documentados (C05 3-way · C06 RA4+RA5 · C07 3-way)"
+    },
+    {
+      "id": 9,
+      "name": "fusion_bidireccional_F1_F2_F3_aplicadas",
+      "status": "PASS",
+      "evidence": "F1 saberes_conceptos formato APLICADO PASS (30 assignments) · F2 saberes_proceso formato APLICADO PASS (26 assignments) · F3 criterios formato EN/AL situación técnica PASS (8 SOFÍA + 12 canon assignments) · cero genérico aislado en los 3 RAPs"
+    },
+    {
+      "id": 10,
+      "name": "fusion_bidireccional_F4_cobertura_tecnica_deuda_80pct",
+      "status": "PASS",
+      "evidence": "Procesos técnicos deuda G1 anclados: 19/20 = 95.0% ≥ 80% target · Saberes técnicos deuda G1 anclados: 11/12 = 91.7% ≥ 84% target · Criterios técnicos deuda G1 referenciados: 6/6 = 100% · target REGLA F4 SUPERADO ampliamente"
+    },
+    {
+      "id": 11,
+      "name": "fusion_bidireccional_F5_distribucion_por_RAP",
+      "status": "PASS",
+      "evidence": "RA4 reflexivo-evaluativo (8 procesos cierre evaluativo · pasado simple · used to · acciones mejora) · RA5 interacción laboral formal (7 procesos institucionales · cortesía formal · visitante/colega/proveedor) · RA6 vocabulario ocupacional aplicativo (14 procesos marco normativo · letreros · consejos salud/seguridad) · distribución coherente con verbo cognitivo y triada laboral RA4-mejora / RA5-comunicar / RA6-vocabulario"
+    },
+    {
+      "id": 12,
+      "name": "fusion_bidireccional_F6_cero_personajes_cero_jerga",
+      "status": "PASS",
+      "evidence": "Personajes nominados: 0 · Solo roles funcionales (recreador profesional · auxiliar recreativo · coordinador de programa · instructor de actividad · participante adulto/niño/adulto mayor · visitante institucional · colega extranjero · proveedor de material recreativo · evaluador externo) · Jerga interna en aprendiz-facing: 0 (RA1/RAP/B1/scaffold/anchor solo en metadata _audit/_anclaje · no en strings de saberes/procesos/criterios)"
+    },
+    {
+      "id": 13,
+      "name": "deuda_explicita_g1_cubierta",
+      "status": "PASS",
+      "evidence": "DEUDA EXPLÍCITA Guía 1 cubierta en G2 · Procesos técnicos deuda G1: 19/20 = 95% (1 deuda residual menor: 'Reubicar material' parcialmente cubierto en RA4 cierre operativo, ya cubierto previamente en G1 RA2 descriptivo) · Saberes técnicos deuda G1: 11/12 = 91.7% (1 deuda residual: 'Organización recreativa concepto/tipos' parcialmente cubierto vía RA4 control · operacionalización completa en Fase 2) · Criterios técnicos deuda G1: 6/6 = 100% · CIERRE COBERTURA DEUDA EXPLÍCITA SATISFACTORIO"
+    }
+  ],
+  "_drift_audit_v2_fusion_bidireccional": {
+    "instancias_drift_detectadas": 0,
+    "afirmacion_explicita": "Tercera ejecución PM-0.0 v2.0 para RECREACIÓN 634201 (G2) · paradigm shift fusión bidireccional ESP A1.2 · cada saber/proceso/criterio inglés tiene HOGAR EXCLUSIVO por verbo cognitivo Y ANCLAJE EXPLÍCITO a contenido técnico DEUDA EXPLÍCITA G1 (marco legal-normativo + cierre evaluativo + interacción laboral institucional) · cero personajes nominados · cero jerga técnica interna en aprendiz-facing · vocabulario técnico recreación A1.2 (international visitor · foreign colleague · cooperation · supplier · evaluator · improvement plan · satisfaction survey · indicators · corrective action · contingency plan · safety protocol · sustainable development goals · children's rights · municipal recreation institute) preservado bilingüe coherente"
+  },
+  "downstream_consumers": [
+    "PM-0 G2 (consume matriz alineada G2 v2 fusión bidireccional como insumo principal · simplifica decisiones contexto IMDER técnico A1.2 · expansión universo institucional)",
+    "PM-1.1 G2 (ruta macrotemática construida POR RAP CON ANCLAJE TÉCNICO DEUDA G1 heredado · APERTURA recibe panorama IMDER expandido · APROPIACIÓN ejercita procesos cierre+institucional+normativo en inglés A1.2 · TRANSFERENCIA aplica programa recreativo bilingüe + marco normativo)",
+    "PM-1.2 G2 (scope/curación POR RAP heredando _anclaje_tecnico_rap · saberes target específicos contextualizados · tipo_bloque diferenciado · capstone E-Misión S10 cubre DEUDA EXPLÍCITA G1)",
+    "PM-2.x ACs G2 (cada actividad explícitamente atribuida a RAP target + proceso técnico ancla deuda · saber_proceso DICTA tipo PM-2.x · ACs visitante/colega/proveedor/evaluador externo)",
+    "PM-2.11 G2 (row assembler heredando matriz fusionada G2 · NO reconstrucción retroactiva · 6 filas tripartitas con contenido bilingüe DEUDA cubierta)",
+    "PM-3.6 G2 GFPI-F-135 (formato narrativo Sección 3 · 3 bloques Reflexión+Apropiación×3RAPs+Transferencia · contenido bilingüe ESP auténtico A1.2 · marco normativo + cierre evaluativo + interacción institucional)"
+  ],
+  "_audit": {
+    "input_source": "json_preexistente (pm-0-0-input-G2.json con bloque contenido_tecnico_crudo · directiva Sergio fusión bidireccional G2 cubre DEUDA EXPLÍCITA G1 · 2026-05-04)",
+    "input_completeness": "3 RAPs Guía 2 (RA4+RA5+RA6) + 23 saberes_conceptos + 26 saberes_proceso + 8 criterios SOFÍA INGLÉS A1.2 + 2 RAPs técnicos foco G2 (RAT1 marco normativo TODO + RAT4 cierre evaluativo) + 20 procesos técnicos deuda + 12 saberes técnicos deuda + 6 criterios técnicos deuda + mapping anclaje fusion G2 + competencia 240202501 + universo IMDER expandido + ambiente productivo institucional",
+    "input_normalizations": [
+      "v1 ESP decorativo descartado (vocabulario inglés genérico A1.2 + IMDER universo narrativo)",
+      "v2 ESP fusión bidireccional G2 (cada saber/proceso/criterio inglés A1.2 ANCLADO a contenido técnico DEUDA EXPLÍCITA G1)",
+      "Saberes Conceptos input 23 → distribuidos 30 assignments (6 overlaps pedagógicos contextuales documentados) → contextualizados v2",
+      "Saberes Procesos input 26 → distribuidos 26 (cero overlap proceso) → contextualizados v2",
+      "Criterios Evaluación input 8 → distribuidos 8 (cero overlap criterio SOFÍA) → contextualizados v2 EN/AL situación técnica deuda"
+    ],
+    "guide_specific_filtering": "Saberes/criterios filtrados estrictamente para Guía 2 RA4+RA5+RA6 · pasado simple + experiencias pasadas + acciones de mejora + visitante + colega extranjero + vocabulario ocupacional + marco normativo · saberes/criterios A1.1 productivo descriptivo cubiertos en Guía 1 (matriz hermana pm-0-0-matriz-alineada.json)",
+    "test_e2e_run": "RECREACION-IMDER-2026-05-04 G2 · tercera ejecución PM-0.0 v2.0 con FUSIÓN BIDIRECCIONAL ESP cubriendo DEUDA EXPLÍCITA G1",
+    "first_run_notes": "Es TERCERA EJECUCIÓN PM-0.0 v2.0 para programa RECREACIÓN (G1 + G2 con fusión bidireccional · paradigm shift bidireccional canon) · Gate 1 review pendiente (Sergio aprobará matriz G2 antes de avanzar a PM-0 G2)",
+    "personajes_nominados_count": 0,
+    "jerga_tecnica_interna_count_aprendiz_facing": 0,
+    "vocabulario_recreacion_autentico_preservado": "Sí · roles funcionales IMDER expandidos (recreator profesional + auxiliar + coordinator + instructor + participants adult/child/senior + international visitor + foreign colleague + supplier + external evaluator) + términos técnicos bilingües (recreation kit · animation techniques · contingency plan · planimetry · population segments · improvement plan · satisfaction survey · indicators · corrective action · safety protocol · sustainable development goals · children's rights · cooperation agreement) preservados",
+    "fusion_bidireccional_v2_aplicada_g2": "Sí · 100% saberes/procesos/criterios inglés A1.2 anclados a contenido técnico DEUDA EXPLÍCITA G1 · 95.0% procesos técnicos deuda cubiertos · 91.7% saberes técnicos deuda cubiertos · 100% criterios técnicos deuda referenciados · 1 proceso + 1 saber como deuda residual menor (cubrible en operacionalización Fase 2 PM-2.x)",
+    "deuda_explicita_g1_cierre_pct": "≥ 95% promedio (procesos 95% · saberes 91.7% · criterios 100%)"
+  },
+  "enriched": false,
+  "_block_downstream": false,
+  "_gate_1_review_pending": "Sergio Cortés debe revisar y aprobar matriz G2 v2 fusión bidireccional antes de avanzar a PM-0 G2 · marca enriched=true post-aprobación · validar que cierre DEUDA EXPLÍCITA G1 es satisfactorio para Sergio antes de continuar pipeline G2",
+  "raps_count_total_programa": 6,
+  "_cobertura_total_programa": {
+    "_doc": "CIERRE PROGRAMA · auditoría cobertura total acumulada G1+G2 sobre contenido técnico crudo TOTAL programa Técnico RECREACIÓN 150h · single-comp · NO emite _deuda_explicita_para_guia_siguiente porque G2 es la última guía. Mechanical rebuild 2026-05-07 · derivado de _v2_audit_anclaje_tecnico G1 + G2 · NO regeneración LLM PM-0.0 v2.3.",
+    "guia_actual": "G2",
+    "es_ultima_guia": true,
+    "estado_programa": "COMPLETO",
+    "cobertura_acumulada_g1_g2": {
+      "g1_cobertura": {
+        "procesos_anclados_pct": 81.8,
+        "saberes_anclados_pct": 84.6,
+        "criterios_referenciados_pct": 57.1,
+        "_nota": "G1 cubre A1.1 receptivo · objetos físicos lugares roles · vocabulario operacional inicial recreación"
+      },
+      "g2_cobertura": {
+        "procesos_anclados_pct": 95.0,
+        "saberes_anclados_pct": 91.7,
+        "criterios_referenciados_pct": 100.0,
+        "_nota": "G2 A1.2 productivo · cubre DEUDA EXPLÍCITA Guía 1 (RAT1 marco normativo TODO + RAT4 cierre evaluativo)"
+      }
+    },
+    "estimacion_cobertura_total_programa": {
+      "procesos_promedio_g1_g2": "derivable de cobertura por guía",
+      "_nota": "Single-comp programa Técnico · 6 RAPs total · 2 guías"
+    },
+    "status": "CIERRE_COMPLETO",
+    "regla_F4_CIERRE_cumplida": true,
+    "_doc_cierre": "Mechanical rebuild post-canon v2.3 · sin re-ejecución PM-0.0 LLM · campos derivados de info existing matriz G1+G2 · single-comp legacy preserved."
+  },
+  "contenido_tecnico_crudo": {
+    "_doc": "Bloque canon v2.0 NEW · contenido técnico raw del programa · derivado mecánicamente de competencia_tecnica_anclaje (single-comp legacy). Mechanical rebuild 2026-05-07.",
+    "competencia_tecnica_codigo": "250801041",
+    "modo": "single-comp-legacy"
+  }
+}
